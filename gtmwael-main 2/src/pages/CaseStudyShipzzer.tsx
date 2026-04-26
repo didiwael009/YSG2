@@ -9,7 +9,7 @@ const CaseStudyShipzzer = () => (
     description="How I turned a generic logistics website into a buyer-intent demand system for Shipzzer, a US freight forwarding SaaS."
     metaTitle="Shipzzer Case Study | Buyer-Intent Demand System"
     metaDescription="How Shipzzer achieved Top 3 Google rankings, 50% cold email open rate, and a buyer-intent demand system."
-    canonical="https://yoursaasgrowth.com/case-study/shipzzer"
+    canonical="https://ysg-2.vercel.app/case-study/shipzzer"
     metrics={[
       { value: "Top 3", label: "Google rankings for target keywords" },
       { value: "50%", label: "Open rate on cold email sequences" },

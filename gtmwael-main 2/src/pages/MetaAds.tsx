@@ -126,8 +126,8 @@ const MetaAds = () => {
         name: leadForm.name,
         email: leadForm.email,
       });
-    } catch (err) {
-      console.error("Failed to save lead:", err);
+    } catch {
+      // Keep the download flow working even if the optional lead backend is unavailable.
     }
     setSubmitted(true);
   };

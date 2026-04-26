@@ -20,11 +20,12 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
     { label: "Meta Ads", to: "/services/meta-ads" },
     { label: "Cold Email", to: "/services/cold-email" },
     { label: "Landing Pages", to: "/services/landing-page" },
-    { label: "Community", to: "/services/community-management" },
+    { label: "Community", to: "/creative/community-management" },
   ];
 
   const pages = [
     { label: "Creative Folio", to: "/creative" },
+    { label: "Case Studies", to: "/case-studies" },
     { label: "Pricing", to: "/pricing" },
     { label: "Resume", to: "/resume" },
   ];

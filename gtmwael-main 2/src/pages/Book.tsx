@@ -55,40 +55,9 @@ const Book = () => {
     };
     window.addEventListener("message", handleMessage);
 
-    // SEO
-    const prevTitle = document.title;
-    document.title = "Book a Free 20-min SaaS Audit | Yoursaasgrowth";
-    const setMeta = (name: string, content: string) => {
-      let tag = document.head.querySelector<HTMLMetaElement>(`meta[name="${name}"]`);
-      if (!tag) {
-        tag = document.createElement("meta");
-        tag.setAttribute("name", name);
-        document.head.appendChild(tag);
-      }
-      tag.setAttribute("content", content);
-      return tag;
-    };
-    const desc = setMeta(
-      "description",
-      "Book a free 20-minute SaaS audit. Fix messaging, landing pages, and tracking before scaling ads."
-    );
-    const robots = setMeta("robots", "noindex, follow");
-    let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
-    const prevCanonical = canonical?.getAttribute("href") ?? null;
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-    canonical.setAttribute("href", "https://yoursaasgrowth.com/book");
-
     return () => {
       window.removeEventListener("message", handleMessage);
-      document.title = prevTitle;
-      desc.remove();
-      robots.remove();
       preconnects.forEach((l) => l.remove());
-      if (prevCanonical && canonical) canonical.setAttribute("href", prevCanonical);
     };
   }, []);
 

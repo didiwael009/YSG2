@@ -39,7 +39,7 @@ const Resume = () => {
                   <ContactItem icon={<Mail className="w-3.5 h-3.5" />} text="wael.aouididi@gmail.com" />
                   <ContactItem icon={<Phone className="w-3.5 h-3.5" />} text="+216 22 560 310" />
                   <ContactItem icon={<MapPin className="w-3.5 h-3.5" />} text="Tunis, Tunisia" />
-                  <ContactItem icon={<Globe className="w-3.5 h-3.5" />} text="yoursaasgrowth.com" href="https://yoursaasgrowth.com" />
+                  <ContactItem icon={<Globe className="w-3.5 h-3.5" />} text="ysg-2.vercel.app" href="https://ysg-2.vercel.app" />
                   <ContactItem icon={<Linkedin className="w-3.5 h-3.5" />} text="linkedin.com/in/aouididi-wael" href="https://www.linkedin.com/in/aouididi-wael-81b7037a/" />
                 </div>
               </div>

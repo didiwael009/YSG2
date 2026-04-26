@@ -1,16 +1,9 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /preview/
+Disallow: /test/
+Disallow: /draft/
 
-Sitemap: https://yoursaasgrowth.com/sitemap.xml
+Sitemap: https://ysg-2.vercel.app/sitemap.xml
