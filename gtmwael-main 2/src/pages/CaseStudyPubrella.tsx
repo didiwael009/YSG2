@@ -1,6 +1,6 @@
 import GrowthCaseStudyPage from "@/components/case-study/GrowthCaseStudyPage";
-import beforeImage from "@/assets/pubrella-before.png";
-import afterImage from "@/assets/pubrella-after.png";
+import beforeImage from "@/assets/pubrella-before.jpg";
+import afterImage from "@/assets/pubrella-after.jpg";
 
 const Framework = () => (
   <section className="py-20 md:py-28">

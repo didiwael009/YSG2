@@ -1,6 +1,6 @@
-import tiktokCover from "@/assets/tiktok-cover.png";
-import youtubeCover from "@/assets/youtube-cover.png";
-import saasCover from "@/assets/saas-video-cover.png";
+import tiktokCover from "@/assets/tiktok-cover.jpg";
+import youtubeCover from "@/assets/youtube-cover.jpg";
+import saasCover from "@/assets/saas-video-cover.jpg";
 import type { VideoProject } from "@/components/VideoGrid";
 
 export const videoProjects: VideoProject[] = [

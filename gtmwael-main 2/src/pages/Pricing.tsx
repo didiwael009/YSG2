@@ -64,6 +64,8 @@ const offers = [
   },
 ];
 
+type Offer = (typeof offers)[number];
+
 const faqs = [
   {
     q: "Do I need to start with the Diagnostic?",
@@ -109,8 +111,8 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 
 /* ── Offer Card ───────────────────────────────────── */
 
-function OfferCard({ offer }: { offer: typeof offers[0] }) {
-  const isFeatured = (offer as any).featured;
+function OfferCard({ offer }: { offer: Offer }) {
+  const isFeatured = "featured" in offer && offer.featured === true;
   return (
     <div className={`rounded-2xl p-6 md:p-8 flex flex-col h-full transition-all duration-300 relative ${
       isFeatured

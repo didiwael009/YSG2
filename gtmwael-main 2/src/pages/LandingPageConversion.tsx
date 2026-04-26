@@ -388,6 +388,7 @@ const LandingPageConversion = () => {
               <form onSubmit={handleLeadSubmit} className="space-y-4">
                 <Input
                   placeholder="Your name"
+                  aria-label="Your name"
                   value={leadForm.name}
                   onChange={(e) => setLeadForm(prev => ({ ...prev, name: e.target.value }))}
                   required
@@ -396,6 +397,7 @@ const LandingPageConversion = () => {
                 <Input
                   type="email"
                   placeholder="Your email"
+                  aria-label="Your email"
                   value={leadForm.email}
                   onChange={(e) => setLeadForm(prev => ({ ...prev, email: e.target.value }))}
                   required
@@ -403,6 +405,7 @@ const LandingPageConversion = () => {
                 />
                 <Input
                   placeholder="Company (optional)"
+                  aria-label="Company optional"
                   value={leadForm.company}
                   onChange={(e) => setLeadForm(prev => ({ ...prev, company: e.target.value }))}
                   className="bg-secondary/50 border-border h-12"
@@ -468,6 +471,7 @@ const LandingPageConversion = () => {
           <div className="relative w-full max-w-md bg-card border border-border rounded-2xl p-8 shadow-2xl">
             <button
               onClick={() => { setShowLeadModal(false); setSubmitted(false); }}
+              aria-label="Close landing page playbook form"
               className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
             >
               <X className="w-5 h-5" />
@@ -488,6 +492,7 @@ const LandingPageConversion = () => {
                 <form onSubmit={handleLeadSubmit} className="space-y-4">
                   <Input
                     placeholder="Your name"
+                    aria-label="Your name"
                     value={leadForm.name}
                     onChange={(e) => setLeadForm(prev => ({ ...prev, name: e.target.value }))}
                     required
@@ -496,6 +501,7 @@ const LandingPageConversion = () => {
                   <Input
                     type="email"
                     placeholder="Your email"
+                    aria-label="Your email"
                     value={leadForm.email}
                     onChange={(e) => setLeadForm(prev => ({ ...prev, email: e.target.value }))}
                     required

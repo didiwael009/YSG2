@@ -171,6 +171,39 @@ const buildHtml = (route) => {
     .replace(/<div id="root">[\s\S]*<\/div>\s*<\/body>/, `<div id="root">${rootContent}</div>\n  </body>`);
 };
 
+const buildNotFoundHtml = () => {
+  const route = {
+    path: "/404",
+    title: "Page Not Found | Your SaaS Growth",
+    description: "The requested page could not be found.",
+    type: "website",
+    breadcrumbs: [{ name: "404", path: "/404" }],
+  };
+  return stripHeadSeo(template)
+    .replace(
+      "</head>",
+      `
+    <title>${route.title}</title>
+    <meta name="description" content="${route.description}" />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="${SITE_URL}/404" />
+  </head>`
+    )
+    .replace(
+      /<div id="root">[\s\S]*<\/div>\s*<\/body>/,
+      `<div id="root">
+    <main data-prerender-seo>
+      <article>
+        <h1>404</h1>
+        <p>The page you requested could not be found.</p>
+        <a href="/">Return to the homepage</a>
+      </article>
+    </main>
+  </div>
+  </body>`
+    );
+};
+
 for (const route of seoRoutes) {
   const routeDir = route.path === "/" ? distDir : path.join(distDir, route.path);
   await mkdir(routeDir, { recursive: true });
@@ -205,6 +238,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 await writeFile(path.join(distDir, "sitemap.xml"), sitemap);
 await writeFile(path.join(distDir, "robots.txt"), robots);
+await writeFile(path.join(distDir, "404.html"), buildNotFoundHtml());
 await writeFile(path.join(projectRoot, "public/sitemap.xml"), sitemap);
 await writeFile(path.join(projectRoot, "public/robots.txt"), robots);
 

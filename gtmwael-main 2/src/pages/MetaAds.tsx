@@ -9,10 +9,10 @@ import { ArrowRight, Target, Users, Palette, Check, Download, Star, ExternalLink
 import { Link } from "react-router-dom";
 
 import metaAdsDashboard from "@/assets/meta-ads-dashboard.png";
-import adCreative1 from "@/assets/ad-creative-1.png";
-import adCreative2 from "@/assets/ad-creative-2.png";
-import adCreative3 from "@/assets/ad-creative-3.png";
-import adCreative4 from "@/assets/ad-creative-4.png";
+import adCreative1 from "@/assets/ad-creative-1.jpg";
+import adCreative2 from "@/assets/ad-creative-2.jpg";
+import adCreative3 from "@/assets/ad-creative-3.jpg";
+import adCreative4 from "@/assets/ad-creative-4.jpg";
 
 const bottlenecks = [
   {
@@ -489,6 +489,7 @@ const MetaAds = () => {
           <div className="relative bg-card border border-border rounded-2xl p-8 max-w-md w-full shadow-2xl shadow-black/50 animate-fade-up">
             <button 
               onClick={() => { setShowLeadModal(false); setSubmitted(false); }}
+              aria-label="Close Meta Ads playbook form"
               className="absolute top-4 right-4 text-muted-foreground hover:text-foreground transition-colors"
             >
               <X className="w-5 h-5" />
@@ -509,6 +510,7 @@ const MetaAds = () => {
                 <form onSubmit={handleLeadSubmit} className="space-y-4">
                   <Input
                     placeholder="Your name"
+                    aria-label="Your name"
                     value={leadForm.name}
                     onChange={(e) => setLeadForm(prev => ({ ...prev, name: e.target.value }))}
                     required
@@ -517,6 +519,7 @@ const MetaAds = () => {
                   <Input
                     type="email"
                     placeholder="Your email"
+                    aria-label="Your email"
                     value={leadForm.email}
                     onChange={(e) => setLeadForm(prev => ({ ...prev, email: e.target.value }))}
                     required

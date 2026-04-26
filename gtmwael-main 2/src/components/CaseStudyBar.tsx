@@ -115,6 +115,7 @@ const CaseStudyBar = () => {
             <button
               onClick={() => scroll("left")}
               disabled={!canScrollLeft}
+              aria-label="Scroll case studies left"
               className="w-10 h-10 rounded-full border border-border/40 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -122,6 +123,7 @@ const CaseStudyBar = () => {
             <button
               onClick={() => scroll("right")}
               disabled={!canScrollRight}
+              aria-label="Scroll case studies right"
               className="w-10 h-10 rounded-full border border-border/40 flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/50 transition-all disabled:opacity-30 disabled:cursor-not-allowed"
             >
               <ChevronRight className="w-5 h-5" />
