@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts loaded via index.html link tag with media="print" swap */
+
+@layer base {
+  :root {
+    /* Deep navy-purple background (like Semrush dark sections) */
+    --background: 240 30% 6%;
+    --foreground: 0 0% 98%;
+
+    /* Light cream section background for alternation */
+    --background-light: 30 30% 96%;
+    --foreground-light: 240 20% 15%;
+
+    /* Semantic light-section text tokens */
+    --heading-light: 240 20% 15%;
+    --body-light: 240 10% 40%;
+    --body-light-strong: 240 15% 25%;
+    --border-light: 240 15% 85%;
+
+    /* Glassmorphism cards with purple tint */
+    --card: 260 30% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 30% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Orange/coral CTA primary - boosted lightness for WCAG AA contrast */
+    --primary: 16 90% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Purple-tinted secondary for glass effects */
+    --secondary: 260 25% 18%;
+    --secondary-foreground: 0 0% 98%;
+
+    /* Muted purple tones */
+    --muted: 260 20% 20%;
+    --muted-foreground: 240 15% 65%;
+
+    /* Purple-blue accent for highlights/headings */
+    --accent: 250 70% 62%;
+    --accent-foreground: 240 30% 8%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Purple-tinted borders for glass effect */
+    --border: 260 20% 22%;
+    --input: 260 20% 18%;
+    --ring: 16 90% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients - blue/purple glow like Semrush */
+    --gradient-hero: linear-gradient(180deg, hsl(240 30% 4%) 0%, hsl(260 35% 10%) 50%, hsl(240 30% 4%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(260 30% 18% / 0.6) 0%, hsl(260 25% 12% / 0.4) 100%);
+    --gradient-card-light: linear-gradient(135deg, hsl(0 0% 100% / 0.9) 0%, hsl(30 20% 98% / 0.8) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(16 90% 55%) 0%, hsl(30 90% 50%) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(260 60% 50% / 0.15) 0%, transparent 70%);
+    --gradient-section-light: linear-gradient(180deg, hsl(30 30% 97%) 0%, hsl(30 25% 94%) 100%);
+    
+    /* Blue/purple glow shadows - NOT orange */
+    --shadow-card: 0 4px 24px -4px hsl(260 50% 10% / 0.4);
+    --shadow-card-light: 0 4px 24px -4px hsl(240 20% 20% / 0.1);
+    --shadow-glow: 0 0 60px hsl(260 60% 50% / 0.25);
+    --shadow-glow-accent: 0 0 40px hsl(260 50% 45% / 0.2);
+    --shadow-glow-blue: 0 0 80px hsl(250 60% 40% / 0.3);
+    
+    --font-display: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --sidebar-background: 240 30% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 16 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 25% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 260 20% 22%;
+    --sidebar-ring: 16 90% 55%;
+  }
+
+  .dark {
+    --background: 240 30% 4%;
+    --foreground: 0 0% 98%;
+    --background-light: 30 30% 96%;
+    --foreground-light: 240 20% 15%;
+    --card: 260 30% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 30% 8%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 16 90% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 260 25% 18%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 260 20% 20%;
+    --muted-foreground: 240 15% 65%;
+    --accent: 250 70% 62%;
+    --accent-foreground: 240 30% 8%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 260 20% 22%;
+    --input: 260 20% 18%;
+    --ring: 16 90% 55%;
+    --sidebar-background: 240 30% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 16 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 260 25% 18%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 260 20% 22%;
+    --sidebar-ring: 16 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    @apply bg-background text-foreground text-base leading-relaxed;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+
+  p, li, span {
+    @apply text-base;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-accent);
+  }
+
+  /* Purple-to-blue accent gradient for headlines */
+  .text-accent-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(270 70% 60%) 0%, hsl(230 80% 65%) 100%);
+  }
+
+  .bg-hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .bg-card-gradient {
+    background: var(--gradient-card);
+  }
+
+  /* Light section background (cream/beige) */
+  .bg-section-light {
+    background: var(--gradient-section-light);
+    color: hsl(var(--foreground-light));
+    
+    /* Override semantic colors for light background */
+    --foreground: var(--foreground-light);
+    --muted-foreground: 240 15% 45%;
+    --card: 0 0% 100%;
+    --card-foreground: var(--foreground-light);
+    --border: 240 10% 85%;
+  }
+
+  /* Dark section background */
+  .bg-section-dark {
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  /* Glassmorphism card for dark sections */
+  .glass-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(260 30% 30% / 0.4);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Light card for light sections */
+  .card-light {
+    background: var(--gradient-card-light);
+    backdrop-filter: blur(8px);
+    border: 1px solid hsl(240 20% 85% / 0.6);
+    box-shadow: var(--shadow-card-light);
+  }
+
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .glow-accent {
+    box-shadow: var(--shadow-glow-accent);
+  }
+
+  /* Section spacing utilities */
+  .section-padding {
+    @apply py-24 md:py-32 lg:py-40;
+  }
+
+  .section-padding-sm {
+    @apply py-16 md:py-24 lg:py-28;
+  }
+
+  /* Standardized icon container */
+  .icon-container {
+    @apply w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center transition-all duration-300;
+  }
+
+  .icon-container:hover {
+    @apply bg-primary/20 border-primary/30 shadow-lg shadow-primary/10;
+  }
+
+  .icon-container-sm {
+    @apply w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center;
+  }
+
+  .icon-container-lg {
+    @apply w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center;
+  }
+
+  /* Icon styling */
+  .icon-primary {
+    @apply w-6 h-6 text-primary;
+  }
+
+  .icon-primary-sm {
+    @apply w-5 h-5 text-primary;
+  }
+
+  .icon-primary-lg {
+    @apply w-7 h-7 text-primary;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+  .delay-500 { animation-delay: 500ms; }
+}
+
+/* Print styles for resume page */
+@media print {
+  body, html {
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  nav, .print\\:hidden {
+    display: none !important;
+  }
+  .resume-page {
+    box-shadow: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
