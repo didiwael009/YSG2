@@ -3,10 +3,10 @@ import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
 import landingZembra from "@/assets/landing-zembra.png";
-import landingShipzzer from "@/assets/landing-shipzzer.png";
-import pubrellaScreenshot from "@/assets/pubrella-screenshot.png";
+import landingShipzzer from "@/assets/landing-shipzzer.jpg";
+import pubrellaScreenshot from "@/assets/pubrella-screenshot.jpg";
 import landingScreenplay from "@/assets/screenplay-hero-screenshot.png";
-import landingBottlenexus from "@/assets/landing-bottlenexus.png";
+import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
 import icCenterHero from "@/assets/ic-center-hero.png";
 
 const caseStudies = [
@@ -148,8 +148,11 @@ const CaseStudyBar = () => {
                   <img
                     src={study.image}
                     alt={`${study.client} case study`}
+                    width={320}
+                    height={200}
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
+                    decoding="async"
                   />
                   {/* Achievement badge */}
                   <div className="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg">

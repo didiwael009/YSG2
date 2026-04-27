@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Target, Zap, Check, Star, Globe, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
-import landingBottlenexus from "@/assets/landing-bottlenexus.png";
+import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
 import bottlenexusLogo from "@/assets/bottlenexus-logo.svg";
 import { CALENDLY_URL } from "@/lib/constants";
 

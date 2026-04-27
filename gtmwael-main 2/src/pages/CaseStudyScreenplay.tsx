@@ -1,5 +1,5 @@
 import GrowthCaseStudyPage from "@/components/case-study/GrowthCaseStudyPage";
-import oldLanding from "@/assets/screenplay-old-landing.png";
+import oldLanding from "@/assets/screenplay-old-landing.jpg";
 import newLanding from "@/assets/screenplay-hero-screenshot.png";
 import oldUpload from "@/assets/screenplay-old-pricing.webp";
 import oldCasting from "@/assets/screenplay-old-casting.webp";

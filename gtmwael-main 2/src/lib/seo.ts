@@ -1,7 +1,7 @@
 export const SITE_URL = "https://ysg-2.vercel.app";
 export const BRAND_NAME = "Your SaaS Growth";
 export const AUTHOR_NAME = "Wael Aouididi";
-export const DEFAULT_OG_IMAGE = "/favicon.png";
+export const DEFAULT_OG_IMAGE = "/og-default.png";
 
 export type SeoRoute = {
   path: string;
@@ -183,7 +183,7 @@ export const seoRoutes: SeoRoute[] = [
     type: "case-study",
     priority: 0.75,
     changefreq: "monthly",
-    image: "/assets/pubrella-after.png",
+    image: "/assets/pubrella-after.jpg",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Pubrella", path: "/case-study/pubrella" }],
     links: [
       { label: "Landing page conversion service", path: "/services/landing-page" },
@@ -218,7 +218,7 @@ export const seoRoutes: SeoRoute[] = [
     type: "case-study",
     priority: 0.55,
     changefreq: "monthly",
-    image: "/assets/landing-bottlenexus.png",
+    image: "/assets/landing-bottlenexus.jpg",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "BottleNexus", path: "/case-study/bottlenexus" }],
   },
   {

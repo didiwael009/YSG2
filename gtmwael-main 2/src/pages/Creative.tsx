@@ -4,11 +4,11 @@ import Navigation from "@/components/Navigation";
 import VideoGrid from "@/components/VideoGrid";
 import { videoProjects } from "@/lib/video-data";
 import { CALENDLY_URL } from "@/lib/constants";
-import landingClarrio from "@/assets/landing-clarrio.png";
+import landingClarrio from "@/assets/landing-clarrio.jpg";
 import landingZembra from "@/assets/landing-zembra.png";
-import landingBottlenexus from "@/assets/landing-bottlenexus.png";
-import landingShipzzer from "@/assets/landing-shipzzer.png";
-import landingPubwrite from "@/assets/landing-pubwrite.png";
+import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
+import landingShipzzer from "@/assets/landing-shipzzer.jpg";
+import landingPubwrite from "@/assets/landing-pubwrite.jpg";
 
 const rebrandingProjects = [
   {

@@ -6,12 +6,12 @@ import { Input } from "@/components/ui/input";
 import Navigation from "@/components/Navigation";
 import ScreenplaySlider from "@/components/ScreenplaySlider";
 import AnimateIn from "@/components/AnimateIn";
-import landingClarrio from "@/assets/landing-clarrio.png";
+import landingClarrio from "@/assets/landing-clarrio.jpg";
 import landingZembra from "@/assets/landing-zembra.png";
-import landingBottlenexus from "@/assets/landing-bottlenexus.png";
-import landingShipzzer from "@/assets/landing-shipzzer.png";
-import landingPubwrite from "@/assets/landing-pubwrite.png";
-import pubrellaScreenshot from "@/assets/pubrella-screenshot.png";
+import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
+import landingShipzzer from "@/assets/landing-shipzzer.jpg";
+import landingPubwrite from "@/assets/landing-pubwrite.jpg";
+import pubrellaScreenshot from "@/assets/pubrella-screenshot.jpg";
 import playbookCover from "@/assets/landing-page-playbook-3d.png";
 import playbookPreview1 from "@/assets/playbook-preview-1.png";
 import playbookPreview2 from "@/assets/playbook-preview-2.png";
@@ -143,8 +143,11 @@ const LandingPageConversion = () => {
                 <img
                   src={playbookCover}
                   alt="Landing Page Playbook 2026 — Free download"
+                  width={1024}
+                  height={1024}
                   className="relative w-64 md:w-80 lg:w-96 h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500 cursor-pointer"
                   onClick={openLeadModal}
+                  decoding="async"
                 />
               </div>
             </AnimateIn>
@@ -224,7 +227,11 @@ const LandingPageConversion = () => {
                     <img
                       src={preview.img}
                       alt={preview.label}
+                      width={800}
+                      height={600}
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="p-5">
@@ -347,7 +354,11 @@ const LandingPageConversion = () => {
                       <img
                         src={project.cover}
                         alt={project.title}
+                        width={960}
+                        height={600}
                         className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="p-5 space-y-2">

@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 
-import cmShipzzerCollage from "@/assets/cm-shipzzer-collage.png";
+import cmShipzzerCollage from "@/assets/cm-shipzzer-collage.jpg";
 import cmShipzzerRow from "@/assets/cm-shipzzer-row.png";
-import cmShipzzerInvoices from "@/assets/cm-shipzzer-invoices.png";
+import cmShipzzerInvoices from "@/assets/cm-shipzzer-invoices.jpg";
 import cmShipzzerTracking from "@/assets/cm-shipzzer-tracking.png";
-import cmShipzzerRepair from "@/assets/cm-shipzzer-repair.png";
+import cmShipzzerRepair from "@/assets/cm-shipzzer-repair.jpg";
 import cmClarrio1 from "@/assets/cm-clarrio-1.png";
 import cmClarrio2 from "@/assets/cm-clarrio-2.png";
-import cmFoodcost from "@/assets/cm-foodcost.png";
-import cmPublrella1 from "@/assets/cm-pubrella-1.png";
-import cmPublrella2 from "@/assets/cm-pubrella-2.png";
+import cmFoodcost from "@/assets/cm-foodcost.jpg";
+import cmPublrella1 from "@/assets/cm-pubrella-1.jpg";
+import cmPublrella2 from "@/assets/cm-pubrella-2.jpg";
 
 const clients = [
   {
