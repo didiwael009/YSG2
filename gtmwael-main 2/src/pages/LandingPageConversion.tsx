@@ -4,6 +4,7 @@ import { ExternalLink, Star, Download, Check, X, Search, LayoutTemplate, ArrowRi
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import ScreenplaySlider from "@/components/ScreenplaySlider";
 import AnimateIn from "@/components/AnimateIn";
 import landingClarrio from "@/assets/landing-clarrio.jpg";
@@ -473,6 +474,7 @@ const LandingPageConversion = () => {
           </div>
         </div>
       </section>
+      <Footer />
 
       {/* ══════════════════════════════════════════════
           LEAD CAPTURE MODAL (from hero/preview CTA)

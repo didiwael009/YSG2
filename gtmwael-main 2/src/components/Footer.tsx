@@ -30,6 +30,14 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
     { label: "Resume", to: "/resume" },
   ];
 
+  const useCases = [
+    { label: "All Use Cases", to: "/case-studies" },
+    { label: "Shipzzer", to: "/case-study/shipzzer" },
+    { label: "Screenplay", to: "/case-study/screenplay" },
+    { label: "Zembra", to: "/case-study/zembra" },
+    { label: "Pubrella", to: "/case-study/pubrella" },
+  ];
+
   const socials = [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/aouididi-wael-81b7037a/", icon: <Linkedin className="w-4 h-4" /> },
     { label: "Behance", href: "https://www.behance.net/waelaouididi/", icon: <BehanceIcon /> },
@@ -56,7 +64,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
           </div>
         )}
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 max-w-5xl mx-auto">
           {/* Services */}
           <div>
             <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Services</h3>
@@ -79,6 +87,20 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
                 <li key={p.to}>
                   <Link to={p.to} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Use Cases */}
+          <div>
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Use Cases</h3>
+            <ul className="space-y-2.5">
+              {useCases.map((u) => (
+                <li key={u.to}>
+                  <Link to={u.to} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    {u.label}
                   </Link>
                 </li>
               ))}

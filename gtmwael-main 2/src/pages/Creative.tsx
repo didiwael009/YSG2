@@ -1,6 +1,7 @@
 import { Sparkles, ExternalLink, Play, Palette } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 import VideoGrid from "@/components/VideoGrid";
 import { videoProjects } from "@/lib/video-data";
 import { CALENDLY_URL } from "@/lib/constants";
@@ -192,6 +193,7 @@ const Creative = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

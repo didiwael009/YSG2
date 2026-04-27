@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 import cmShipzzerCollage from "@/assets/cm-shipzzer-collage.jpg";
 import cmShipzzerRow from "@/assets/cm-shipzzer-row.png";
@@ -166,6 +167,7 @@ const CommunityManagement = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
