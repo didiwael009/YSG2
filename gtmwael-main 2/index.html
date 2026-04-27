@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Analytics: delayed until user intent or idle time to protect mobile TBT -->
+    <!-- Analytics: delayed until user intent or after the LCP window to protect mobile rendering -->
     <script>
       (function(){
         var gtmLoaded = false;
@@ -37,18 +37,16 @@
           loadClarity();
         }
 
-        function scheduleIdleLoad() {
-          if ('requestIdleCallback' in window) {
-            window.requestIdleCallback(loadAnalytics, {timeout: 9000});
-          } else {
+        function scheduleDelayedLoad() {
+          window.addEventListener('load', function(){
             setTimeout(loadAnalytics, 9000);
-          }
+          }, {once:true});
         }
 
         events.forEach(function(e){
           window.addEventListener(e, loadAnalytics, {once:true, passive:true});
         });
-        scheduleIdleLoad();
+        scheduleDelayedLoad();
       })();
     </script>
     <script>
@@ -83,7 +81,14 @@
     <meta name="twitter:image" content="https://ysg-2.vercel.app/og-default.png" />
     
     <link rel="canonical" href="https://ysg-2.vercel.app/" />
-    <link rel="preload" as="image" href="/hero-portrait.webp" fetchpriority="high" />
+    <link
+      rel="preload"
+      as="image"
+      href="/hero-portrait-256.webp"
+      imagesrcset="/hero-portrait-256.webp 256w, /hero-portrait-320.webp 320w, /hero-portrait-420.webp 420w, /hero-portrait.webp 595w"
+      imagesizes="(min-width: 1024px) 420px, (min-width: 768px) 288px, 256px"
+      fetchpriority="high"
+    />
     <style>
       /* Critical above-the-fold CSS - inlined to eliminate render-blocking */
       *,*::before,*::after{box-sizing:border-box;margin:0}

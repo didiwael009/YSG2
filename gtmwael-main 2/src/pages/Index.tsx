@@ -34,26 +34,26 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <SectionDivider variant="glow" />
-      <DeferredLazySection fallbackHeight={760} rootMargin="900px 0px">
+      <DeferredLazySection fallbackHeight={760} rootMargin="300px 0px">
         <ExperienceSection />
       </DeferredLazySection>
-      <DeferredLazySection fallbackHeight={420} rootMargin="700px 0px">
+      <DeferredLazySection fallbackHeight={420} rootMargin="200px 0px">
         <CaseStudyBar />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-light" />
-      <DeferredLazySection fallbackHeight={540} rootMargin="650px 0px">
+      <DeferredLazySection fallbackHeight={540} rootMargin="250px 0px">
         <TestimonialSection />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-dark" />
-      <DeferredLazySection fallbackHeight={820} rootMargin="650px 0px">
+      <DeferredLazySection fallbackHeight={820} rootMargin="250px 0px">
         <GTMSystemSection />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-light" />
-      <DeferredLazySection fallbackHeight={720} rootMargin="650px 0px">
+      <DeferredLazySection fallbackHeight={720} rootMargin="250px 0px">
         <ServicesSection />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-dark" />
-      <DeferredLazySection fallbackHeight={360} rootMargin="700px 0px">
+      <DeferredLazySection fallbackHeight={360} rootMargin="250px 0px">
         <Footer />
       </DeferredLazySection>
     </main>

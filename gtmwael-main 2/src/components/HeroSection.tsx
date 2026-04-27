@@ -1,6 +1,6 @@
 import { PrimaryCTA, SecondaryCTA } from "@/components/HeroCTA";
-const founderImage = "/hero-portrait.webp";
-const heroSrcSet = "/hero-portrait.webp 420w, /hero-portrait.webp 288w, /hero-portrait.webp 256w";
+const founderImage = "/hero-portrait-256.webp";
+const heroSrcSet = "/hero-portrait-256.webp 256w, /hero-portrait-320.webp 320w, /hero-portrait-420.webp 420w, /hero-portrait.webp 595w";
 const heroSizes = "(min-width: 1024px) 420px, (min-width: 768px) 288px, 256px";
 import zembraLogo from "@/assets/zembra-logo.svg";
 import bottlenexusLogo from "@/assets/bottlenexus-logo-white.svg";
@@ -46,7 +46,7 @@ const HeroSection = () => {
                  href="https://www.upwork.com/freelancers/~0141da0e8c48042461"
                  target="_blank"
                  rel="noopener noreferrer"
-                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 animate-fade-up opacity-0 group hover:brightness-110 transition-all"
+                 className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 md:animate-fade-up md:opacity-0 group hover:brightness-110 transition-all"
                  style={{ animationDelay: '50ms', animationFillMode: 'forwards', background: 'linear-gradient(135deg, #14a800, #3c8224)' }}
                >
                  <svg viewBox="0 0 24 24" fill="#fff" className="w-3.5 h-3.5 flex-shrink-0">
@@ -59,25 +59,25 @@ const HeroSection = () => {
 
                <h1 className="font-display font-bold tracking-[-0.03em] mb-4 text-left">
                <span 
-                  className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-foreground leading-[1] animate-fade-up opacity-0 cursor-default transition-all duration-300 ease-out hover:tracking-[-0.01em] hover:brightness-110 relative group"
+                  className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-foreground leading-[1] md:animate-fade-up md:opacity-0 cursor-default transition-all duration-300 ease-out hover:tracking-[-0.01em] hover:brightness-110 relative group"
                   style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
                 >
                   <span className="absolute inset-0 bg-[hsl(260_50%_45%/0.2)] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110" />
                   Not enough signups?
                 </span>
                 <span 
-                  className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-gradient leading-[1] mt-1.5 animate-fade-up opacity-0 cursor-default"
+                  className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-gradient leading-[1] mt-1.5 md:animate-fade-up md:opacity-0 cursor-default"
                   style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}
                 >
                   I find what's broken — and fix it.
                 </span>
               </h1>
               
-              <p className="text-sm md:text-base text-muted-foreground mb-4 leading-[1.45] max-w-[55ch] animate-fade-up opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
+              <p className="text-sm md:text-base text-muted-foreground mb-4 leading-[1.45] max-w-[55ch] md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
                 I help SaaS teams fix unclear positioning, rebuild key pages, and improve conversion before scaling traffic.
               </p>
               
-              <div className="flex flex-col sm:flex-row items-center gap-2.5 animate-fade-up opacity-0" style={{ animationDelay: '350ms', animationFillMode: 'forwards' }}>
+              <div className="flex flex-col sm:flex-row items-center gap-2.5 md:animate-fade-up md:opacity-0" style={{ animationDelay: '350ms', animationFillMode: 'forwards' }}>
                 <PrimaryCTA href="/book">
                   Book a 20-min GTM Audit
                 </PrimaryCTA>
@@ -87,7 +87,7 @@ const HeroSection = () => {
               </div>
 
               {/* Proof cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-6 animate-fade-up opacity-0" style={{ animationDelay: '450ms', animationFillMode: 'forwards' }}>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-6 md:animate-fade-up md:opacity-0" style={{ animationDelay: '450ms', animationFillMode: 'forwards' }}>
                 {[
                   { stat: "4×", desc: "Revenue growth", tag: "ZEMBRA · B2B" },
                   { stat: "+300%", desc: "CVR lift", tag: "LANDING · CRO" },
@@ -104,7 +104,7 @@ const HeroSection = () => {
               </div>
 
               {/* Logo strip */}
-              <div className="mt-8 animate-fade-up opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
+              <div className="mt-8 md:animate-fade-up md:opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
                 <p className="text-[10px] text-muted-foreground/60 uppercase tracking-widest mb-3">Trusted by founders at</p>
                 <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8 md:gap-10 overflow-x-auto scrollbar-hide pb-2 -mb-2">
                   {logos.map((logo, index) => (
@@ -131,7 +131,7 @@ const HeroSection = () => {
 
             {/* Founder image - z-3, free-floating with editorial overlap */}
             <div 
-              className="order-1 lg:order-2 relative z-[3] flex-shrink-0 animate-fade-up opacity-0 lg:-ml-16"
+              className="order-1 lg:order-2 relative z-[3] flex-shrink-0 md:animate-fade-up md:opacity-0 lg:-ml-16"
               style={{ animationDelay: '150ms', animationFillMode: 'forwards', overflow: 'visible' }}
             >
               {/* Purple radial glow behind head */}
