@@ -2,14 +2,14 @@ import { ReactNode, useEffect, useRef, useState } from "react";
 
 interface DeferredSectionProps {
   children: ReactNode;
+  idleDelay?: number;
   fallbackHeight?: number;
-  rootMargin?: string;
 }
 
 const DeferredSection = ({
   children,
+  idleDelay = 7000,
   fallbackHeight = 240,
-  rootMargin = "600px 0px",
 }: DeferredSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [shouldRender, setShouldRender] = useState(false);
@@ -17,25 +17,26 @@ const DeferredSection = ({
   useEffect(() => {
     if (shouldRender) return;
 
-    const node = ref.current;
-    if (!node || !("IntersectionObserver" in window)) {
+    const render = () => setShouldRender(true);
+    const scrollEvents = ["scroll", "wheel", "touchmove", "keydown"];
+
+    if (typeof window === "undefined") {
       setShouldRender(true);
       return;
     }
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShouldRender(true);
-          observer.disconnect();
-        }
-      },
-      { rootMargin }
-    );
+    const timeoutId = window.setTimeout(render, idleDelay);
+    const cleanup = () => {
+      scrollEvents.forEach((eventName) => window.removeEventListener(eventName, render));
+      window.clearTimeout(timeoutId);
+    };
 
-    observer.observe(node);
-    return () => observer.disconnect();
-  }, [rootMargin, shouldRender]);
+    scrollEvents.forEach((eventName) => {
+      window.addEventListener(eventName, render, { once: true, passive: true });
+    });
+
+    return cleanup;
+  }, [idleDelay, shouldRender]);
 
   return (
     <div ref={ref} style={shouldRender ? undefined : { minHeight: fallbackHeight }}>

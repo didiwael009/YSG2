@@ -17,13 +17,13 @@ const LazyFallback = () => <div className="min-h-[200px]" />;
 const DeferredLazySection = ({
   children,
   fallbackHeight,
-  rootMargin,
+  idleDelay,
 }: {
   children: ReactNode;
   fallbackHeight?: number;
-  rootMargin?: string;
+  idleDelay?: number;
 }) => (
-  <DeferredSection fallbackHeight={fallbackHeight} rootMargin={rootMargin}>
+  <DeferredSection fallbackHeight={fallbackHeight} idleDelay={idleDelay}>
     <Suspense fallback={<LazyFallback />}>{children}</Suspense>
   </DeferredSection>
 );
@@ -34,26 +34,26 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <SectionDivider variant="glow" />
-      <DeferredLazySection fallbackHeight={760} rootMargin="300px 0px">
+      <DeferredLazySection fallbackHeight={760} idleDelay={8000}>
         <ExperienceSection />
       </DeferredLazySection>
-      <DeferredLazySection fallbackHeight={420} rootMargin="200px 0px">
+      <DeferredLazySection fallbackHeight={420} idleDelay={8500}>
         <CaseStudyBar />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-light" />
-      <DeferredLazySection fallbackHeight={540} rootMargin="250px 0px">
+      <DeferredLazySection fallbackHeight={540} idleDelay={9000}>
         <TestimonialSection />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-dark" />
-      <DeferredLazySection fallbackHeight={820} rootMargin="250px 0px">
+      <DeferredLazySection fallbackHeight={820} idleDelay={9500}>
         <GTMSystemSection />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-light" />
-      <DeferredLazySection fallbackHeight={720} rootMargin="250px 0px">
+      <DeferredLazySection fallbackHeight={720} idleDelay={10000}>
         <ServicesSection />
       </DeferredLazySection>
       <SectionDivider variant="curve-to-dark" />
-      <DeferredLazySection fallbackHeight={360} rootMargin="250px 0px">
+      <DeferredLazySection fallbackHeight={360} idleDelay={10500}>
         <Footer />
       </DeferredLazySection>
     </main>
