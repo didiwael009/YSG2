@@ -92,22 +92,6 @@ const Navigation = () => {
       ticking = true;
       requestAnimationFrame(() => {
         setIsScrolled(window.scrollY > 50);
-        
-        const sections = ["services", "how-it-works", "experience"];
-        let foundActive = "";
-        
-        for (const section of [...sections].reverse()) {
-          const element = document.getElementById(section);
-          if (element) {
-            const rect = element.getBoundingClientRect();
-            if (rect.top <= window.innerHeight / 2) {
-              foundActive = section;
-              break;
-            }
-          }
-        }
-        
-        setActiveSection(foundActive);
         ticking = false;
       });
     };
@@ -116,12 +100,38 @@ const Navigation = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (location.pathname !== "/" || !("IntersectionObserver" in window)) return;
+
+    const sections = ["services", "how-it-works", "experience"];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleEntry = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visibleEntry?.target.id) {
+          setActiveSection(visibleEntry.target.id);
+        }
+      },
+      {
+        rootMargin: "-35% 0px -45% 0px",
+        threshold: [0, 0.1, 0.25, 0.5],
+      }
+    );
+
+    sections.forEach((section) => {
+      const element = document.getElementById(section);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [location.pathname]);
+
   const handleLinkClick = (href: string) => {
     const element = document.querySelector(href);
     if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top: elementPosition - offset, behavior: "smooth" });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 

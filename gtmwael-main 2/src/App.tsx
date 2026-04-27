@@ -1,8 +1,4 @@
 import { lazy, Suspense } from "react";
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import SeoManager from "./components/SeoManager";
@@ -28,43 +24,35 @@ const Resume = lazy(() => import("./pages/Resume"));
 const Book = lazy(() => import("./pages/Book"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
-const queryClient = new QueryClient();
-
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <SeoManager />
-        <Suspense fallback={<div className="min-h-screen bg-background" />}>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/creative" element={<Creative />} />
-            <Route path="/services/cold-email" element={<ColdEmail />} />
-            <Route path="/services/meta-ads" element={<MetaAds />} />
-            <Route path="/case-studies" element={<CaseStudies />} />
-            <Route path="/case-study/write-your-book" element={<CaseStudyWriteYourBook />} />
-            <Route path="/case-study/growapp" element={<CaseStudyGrowapp />} />
-            <Route path="/case-study/zembra" element={<CaseStudyZembra />} />
-            <Route path="/case-study/pubrella" element={<CaseStudyPubrella />} />
-            <Route path="/case-study/shipzzer" element={<CaseStudyShipzzer />} />
-            <Route path="/case-study/screenplay" element={<CaseStudyScreenplay />} />
-            <Route path="/case-study/bottlenexus" element={<CaseStudyBottlenexus />} />
-            <Route path="/case-study/ic-center" element={<CaseStudyICCenter />} />
-            <Route path="/creative/community-management" element={<CommunityManagement />} />
-            <Route path="/services/landing-page" element={<LandingPageConversion />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/book" element={<Book />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <BrowserRouter>
+    <ScrollToTop />
+    <SeoManager />
+    <Suspense fallback={<div className="min-h-screen bg-background" />}>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/creative" element={<Creative />} />
+        <Route path="/services/cold-email" element={<ColdEmail />} />
+        <Route path="/services/meta-ads" element={<MetaAds />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/case-study/write-your-book" element={<CaseStudyWriteYourBook />} />
+        <Route path="/case-study/growapp" element={<CaseStudyGrowapp />} />
+        <Route path="/case-study/zembra" element={<CaseStudyZembra />} />
+        <Route path="/case-study/pubrella" element={<CaseStudyPubrella />} />
+        <Route path="/case-study/shipzzer" element={<CaseStudyShipzzer />} />
+        <Route path="/case-study/screenplay" element={<CaseStudyScreenplay />} />
+        <Route path="/case-study/bottlenexus" element={<CaseStudyBottlenexus />} />
+        <Route path="/case-study/ic-center" element={<CaseStudyICCenter />} />
+        <Route path="/creative/community-management" element={<CommunityManagement />} />
+        <Route path="/services/landing-page" element={<LandingPageConversion />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/book" element={<Book />} />
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Suspense>
+  </BrowserRouter>
 );
 
 export default App;

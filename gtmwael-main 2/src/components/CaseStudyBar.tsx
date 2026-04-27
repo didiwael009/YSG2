@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -68,26 +68,36 @@ const caseStudies = [
 
 const CaseStudyBar = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const frameRef = useRef<number>();
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const checkScroll = () => {
+  const checkScroll = useCallback(() => {
     if (!scrollRef.current) return;
     const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
     setCanScrollLeft(scrollLeft > 4);
     setCanScrollRight(scrollLeft < scrollWidth - clientWidth - 4);
-  };
+  }, []);
+
+  const scheduleCheckScroll = useCallback(() => {
+    if (frameRef.current) return;
+    frameRef.current = requestAnimationFrame(() => {
+      frameRef.current = undefined;
+      checkScroll();
+    });
+  }, [checkScroll]);
 
   useEffect(() => {
     checkScroll();
     const el = scrollRef.current;
-    el?.addEventListener("scroll", checkScroll);
-    window.addEventListener("resize", checkScroll);
+    el?.addEventListener("scroll", scheduleCheckScroll, { passive: true });
+    window.addEventListener("resize", scheduleCheckScroll);
     return () => {
-      el?.removeEventListener("scroll", checkScroll);
-      window.removeEventListener("resize", checkScroll);
+      el?.removeEventListener("scroll", scheduleCheckScroll);
+      window.removeEventListener("resize", scheduleCheckScroll);
+      if (frameRef.current) cancelAnimationFrame(frameRef.current);
     };
-  }, []);
+  }, [checkScroll, scheduleCheckScroll]);
 
   const scroll = (dir: "left" | "right") => {
     scrollRef.current?.scrollBy({

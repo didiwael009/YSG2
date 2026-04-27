@@ -1,7 +1,8 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, type ReactNode } from "react";
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import SectionDivider from "@/components/SectionDivider";
+import DeferredSection from "@/components/DeferredSection";
 
 // Lazy load below-the-fold sections
 const ExperienceSection = lazy(() => import("@/components/ExperienceSection"));
@@ -13,25 +14,48 @@ const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 const LazyFallback = () => <div className="min-h-[200px]" />;
+const DeferredLazySection = ({
+  children,
+  fallbackHeight,
+  rootMargin,
+}: {
+  children: ReactNode;
+  fallbackHeight?: number;
+  rootMargin?: string;
+}) => (
+  <DeferredSection fallbackHeight={fallbackHeight} rootMargin={rootMargin}>
+    <Suspense fallback={<LazyFallback />}>{children}</Suspense>
+  </DeferredSection>
+);
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
       <HeroSection />
-      <Suspense fallback={<LazyFallback />}>
-        <SectionDivider variant="glow" />
+      <SectionDivider variant="glow" />
+      <DeferredLazySection fallbackHeight={760} rootMargin="900px 0px">
         <ExperienceSection />
+      </DeferredLazySection>
+      <DeferredLazySection fallbackHeight={420} rootMargin="700px 0px">
         <CaseStudyBar />
-        <SectionDivider variant="curve-to-light" />
+      </DeferredLazySection>
+      <SectionDivider variant="curve-to-light" />
+      <DeferredLazySection fallbackHeight={540} rootMargin="650px 0px">
         <TestimonialSection />
-        <SectionDivider variant="curve-to-dark" />
+      </DeferredLazySection>
+      <SectionDivider variant="curve-to-dark" />
+      <DeferredLazySection fallbackHeight={820} rootMargin="650px 0px">
         <GTMSystemSection />
-        <SectionDivider variant="curve-to-light" />
+      </DeferredLazySection>
+      <SectionDivider variant="curve-to-light" />
+      <DeferredLazySection fallbackHeight={720} rootMargin="650px 0px">
         <ServicesSection />
-        <SectionDivider variant="curve-to-dark" />
+      </DeferredLazySection>
+      <SectionDivider variant="curve-to-dark" />
+      <DeferredLazySection fallbackHeight={360} rootMargin="700px 0px">
         <Footer />
-      </Suspense>
+      </DeferredLazySection>
     </main>
   );
 };

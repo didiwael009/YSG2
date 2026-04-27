@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useRef, useCallback } from "react";
+import { useState } from "react";
 import { ArrowRight, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -12,22 +12,6 @@ interface HeroCTAProps {
 export const PrimaryCTA = ({ href, children, className }: HeroCTAProps) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isPressed, setIsPressed] = useState(false);
-  const [offset, setOffset] = useState({ x: 0, y: 0 });
-  const buttonRef = useRef<HTMLAnchorElement>(null);
-
-  const handleMouseMove = useCallback((e: React.MouseEvent) => {
-    if (!buttonRef.current || isLoading) return;
-    const rect = buttonRef.current.getBoundingClientRect();
-    const centerX = rect.left + rect.width / 2;
-    const centerY = rect.top + rect.height / 2;
-    const deltaX = (e.clientX - centerX) / rect.width;
-    const deltaY = (e.clientY - centerY) / rect.height;
-    setOffset({ x: deltaX * 2, y: deltaY * 2 });
-  }, [isLoading]);
-
-  const handleMouseLeave = useCallback(() => {
-    setOffset({ x: 0, y: 0 });
-  }, []);
 
   const handleClick = (e: React.MouseEvent) => {
     if (isLoading) {
@@ -50,11 +34,8 @@ export const PrimaryCTA = ({ href, children, className }: HeroCTAProps) => {
 
   return (
     <a
-      ref={buttonRef}
       href={href}
       onClick={handleClick}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
       className={cn(
         "group relative inline-flex items-center justify-center gap-2 h-12 rounded-lg px-8 text-base font-bold",
         "bg-primary text-primary-foreground",
@@ -66,15 +47,12 @@ export const PrimaryCTA = ({ href, children, className }: HeroCTAProps) => {
         className
       )}
       style={{
-        transform: `translate(${offset.x}px, ${offset.y}px) ${isPressed ? 'scale(0.97)' : 'scale(1)'}`,
+        transform: isPressed ? "scale(0.97)" : "scale(1)",
       }}
     >
       {/* Intensified glow on hover */}
       <span 
         className="absolute inset-0 rounded-lg bg-primary/40 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110"
-        style={{
-          transform: `translate(${offset.x * 2}px, ${offset.y * 2}px)`,
-        }}
       />
       
       {isLoading ? (

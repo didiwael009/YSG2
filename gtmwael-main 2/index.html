@@ -1,37 +1,63 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) - deferred until first user interaction -->
+    <!-- Analytics: delayed until user intent or idle time to protect mobile TBT -->
     <script>
       (function(){
-        var loaded = false;
+        var gtmLoaded = false;
+        var clarityLoaded = false;
+        var events = ['pointerdown','click','touchstart','keydown'];
+
         function loadGTM() {
-          if (loaded) return;
-          loaded = true;
+          if (gtmLoaded) return;
+          gtmLoaded = true;
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
+          window.gtag('js', new Date());
+          window.gtag('config', 'G-JNYD5FQTVT');
+
           var s = document.createElement('script');
           s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JNYD5FQTVT';
           s.async = true;
           document.head.appendChild(s);
-          s.onload = function() {
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-JNYD5FQTVT');
-          };
         }
-        ['scroll','click','touchstart','keydown'].forEach(function(e){
-          window.addEventListener(e, loadGTM, {once:true, passive:true});
+
+        function loadClarity() {
+          if (clarityLoaded) return;
+          clarityLoaded = true;
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+          })(window, document, "clarity", "script", "w6e41wrf43");
+        }
+
+        function loadAnalytics() {
+          loadGTM();
+          loadClarity();
+        }
+
+        function scheduleIdleLoad() {
+          if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(loadAnalytics, {timeout: 9000});
+          } else {
+            setTimeout(loadAnalytics, 9000);
+          }
+        }
+
+        events.forEach(function(e){
+          window.addEventListener(e, loadAnalytics, {once:true, passive:true});
         });
-        // Fallback: load after 5s if no interaction
-        setTimeout(loadGTM, 5000);
+        scheduleIdleLoad();
       })();
     </script>
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "w6e41wrf43");
+    <script>
+      /*
+        Backward-compatible gtag queue for events fired before the analytics
+        loader runs. The network script is still delayed above.
+      */
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function(){window.dataLayer.push(arguments);};
     </script>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/favicon.png" />
