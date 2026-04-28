@@ -3,51 +3,119 @@ export type BlogFaq = {
   answer: string;
 };
 
-export type BlogComparisonRow = {
-  element: string;
-  google: string;
-  meta: string;
-};
-
-export type BlogCard = {
+export type RelatedPost = {
+  label: string;
   title: string;
-  body: string;
+  description: string;
+  href: string;
 };
 
-export type BlogSection =
+export type BlogBlock =
   | {
+      type: "intro";
       id: string;
-      title: string;
-      intro?: string[];
-      type: "split";
-      cards: BlogCard[];
+      label: string;
+      headline: string;
+      paragraphs: string[];
     }
   | {
-      id: string;
-      title: string;
-      intro?: string[];
-      type: "cards";
-      cards: BlogCard[];
+      type: "paragraphs";
+      paragraphs: string[];
+      lead?: boolean;
+      dropcap?: boolean;
     }
   | {
+      type: "quote";
+      text: string;
+    }
+  | {
+      type: "section";
       id: string;
+      label: string;
       title: string;
-      intro?: string[];
+      paragraphs: string[];
+    }
+  | {
+      type: "split-note";
+      items: {
+        title: string;
+        body: string;
+        emphasis?: boolean;
+      }[];
+    }
+  | {
+      type: "visual-break";
+      title: string;
+      items: {
+        title: string;
+        bullets: string[];
+      }[];
+    }
+  | {
+      type: "inline-cta";
+      title: string;
+      body: string;
+      button: string;
+    }
+  | {
+      type: "numbered-list";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      items: {
+        title: string;
+        body: string;
+      }[];
+    }
+  | {
+      type: "dark-checklist";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      items: {
+        title: string;
+        body: string;
+      }[];
+    }
+  | {
       type: "example";
-      cards: BlogCard[];
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      items: {
+        title: string;
+        body: string;
+        emphasis?: boolean;
+      }[];
     }
   | {
+      type: "comparison-table";
       id: string;
+      label: string;
       title: string;
-      intro?: string[];
-      type: "table";
-      rows: BlogComparisonRow[];
+      paragraph: string;
+      rows: {
+        element: string;
+        google: string;
+        meta: string;
+      }[];
     }
   | {
-      id: string;
+      type: "mid-cta";
       title: string;
-      intro?: string[];
+      body: string;
+      button: string;
+    }
+  | {
       type: "takeaway";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      subheading: string;
       checklist: string[];
     };
 
@@ -60,18 +128,15 @@ export type BlogPost = {
   description: string;
   excerpt: string;
   author: string;
+  authorBio: string;
   publishedAt: string;
+  modifiedAt: string;
   readTime: string;
+  ogImage: string;
   primaryKeyword: string;
   secondaryKeywords: string[];
-  heroNote: {
-    label: string;
-    body: string;
-  };
-  intro: string[];
-  thesis: string;
   toc: { label: string; id: string }[];
-  sections: BlogSection[];
+  blocks: BlogBlock[];
   faq: BlogFaq[];
   source: {
     label: string;
@@ -83,6 +148,7 @@ export type BlogPost = {
     body: string;
     button: string;
   };
+  relatedPosts: RelatedPost[];
 };
 
 export const blogPosts: BlogPost[] = [
@@ -93,12 +159,16 @@ export const blogPosts: BlogPost[] = [
     title: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
     metaTitle: "Stop Sending Ads to One SaaS Landing Page",
     description:
-      "Learn why one SaaS landing page fails across Google and Meta Ads, and how to match each page to visitor intent.",
+      "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match the visitor's intent instead of forcing both channels into one generic page.",
     excerpt:
       "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match the visitor's intent instead of forcing both channels into one generic page.",
     author: "Wael Aouididi",
+    authorBio:
+      "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale paid traffic.",
     publishedAt: "2026-04-27",
+    modifiedAt: "2026-04-27",
     readTime: "11 min read",
+    ogImage: "/og-default.png",
     primaryKeyword: "SaaS landing page",
     secondaryKeywords: [
       "Google Ads landing page",
@@ -107,60 +177,57 @@ export const blogPosts: BlogPost[] = [
       "SaaS growth",
       "paid ads strategy",
     ],
-    heroNote: {
-      label: "Core principle",
-      body: "Build trust before traffic. Traffic sent to a broken foundation is burned budget.",
-    },
-    intro: [
-      "A SaaS founder launches Google Ads and Meta Ads, then sends both campaigns to the same SaaS landing page.",
-      "Google converts better. Meta looks weak. The founder blames the platform.",
-      "But often, the real problem is not the channel. It is message mismatch.",
-      "Google and Meta visitors do not arrive with the same mindset. They did not come from the same moment. They are not asking the same question.",
-    ],
-    thesis:
-      "For SaaS founders, the landing page is not just a destination. It is where paid traffic either turns into pipeline or disappears.",
     toc: [
-      {
-        label: "Google Ads Captures Demand. Meta Ads Creates Demand.",
-        id: "google-ads-captures-demand-meta-ads-creates-demand",
-      },
-      {
-        label: "Why One SaaS Landing Page Fails Across Google and Meta",
-        id: "why-one-saas-landing-page-fails-across-google-and-meta",
-      },
-      {
-        label: "What a Google Ads Landing Page Should Do for SaaS",
-        id: "what-a-google-ads-landing-page-should-do-for-saas",
-      },
-      {
-        label: "What a Meta Ads Landing Page Should Do for SaaS",
-        id: "what-a-meta-ads-landing-page-should-do-for-saas",
-      },
-      {
-        label: "SaaS Example: CRM for Small Sales Teams",
-        id: "saas-example-crm-for-small-sales-teams",
-      },
-      {
-        label: "Google Ads Landing Page vs Meta Ads Landing Page",
-        id: "google-ads-landing-page-vs-meta-ads-landing-page",
-      },
-      { label: "Founder Takeaway", id: "founder-takeaway" },
+      { label: "Opening idea", id: "opening" },
+      { label: "Google vs Meta", id: "google-meta" },
+      { label: "Why one page fails", id: "same-page-fails" },
+      { label: "Google page checklist", id: "google-page" },
+      { label: "Meta page checklist", id: "meta-page" },
+      { label: "CRM example", id: "crm-example" },
+      { label: "Comparison table", id: "comparison" },
+      { label: "Founder takeaway", id: "takeaway" },
       { label: "FAQ", id: "faq" },
     ],
-    sections: [
+    blocks: [
       {
-        id: "google-ads-captures-demand-meta-ads-creates-demand",
-        title: "Google Ads Captures Demand. Meta Ads Creates Demand.",
-        type: "split",
-        intro: [
-          "A good SaaS landing page starts with understanding intent.",
-          "Google Ads and Meta Ads are not just different platforms. They are different moments in the buyer journey.",
+        type: "intro",
+        id: "opening",
+        label: "Core principle",
+        headline: "Build trust before traffic. Traffic sent to a broken foundation is burned budget.",
+        paragraphs: [
+          "A SaaS founder launches Google Ads and Meta Ads, then sends both campaigns to the same SaaS landing page. On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
         ],
-        cards: [
+      },
+      {
+        type: "paragraphs",
+        lead: true,
+        dropcap: true,
+        paragraphs: [
+          "Google converts better. Meta looks weak. The founder blames the platform, the audience, or the creative. But often, the real problem is not the channel. It is message mismatch.",
+          "Google and Meta visitors do not arrive with the same mindset. They did not come from the same moment, they are not asking the same question, and they do not need the same amount of context before taking action.",
+          "For SaaS founders, the landing page is not just a destination after the click. It is the handoff between attention and trust. If that handoff is weak, paid traffic either turns into pipeline or disappears quietly inside your analytics dashboard.",
+        ],
+      },
+      { type: "quote", text: "Traffic sent to a broken foundation is burned budget." },
+      {
+        type: "section",
+        id: "google-meta",
+        label: "Strategy",
+        title: "Google Ads Captures Demand. Meta Ads Creates Demand.",
+        paragraphs: [
+          "A good SaaS landing page starts with understanding intent. The same product can need a completely different opening message depending on whether the visitor searched for the problem or discovered it while scrolling.",
+          "Google Ads and Meta Ads are not just different platforms. They are different moments in the buyer journey. One channel catches existing demand. The other often has to create the demand before it can convert it.",
+          "That is why message match matters more than most SaaS founders think. If your ad speaks to one level of awareness and your page speaks to another, the visitor feels friction even if the product is relevant.",
+        ],
+      },
+      {
+        type: "split-note",
+        items: [
           {
             title: "Google Ads = demand capture",
             body:
               "Someone searches for best CRM for small sales teams, AI meeting notes software, logistics management software, or project management tool for agencies. They already know they have a problem. Your Google Ads landing page should confirm they are in the right place and make the next step easy.",
+            emphasis: true,
           },
           {
             title: "Meta Ads = demand creation",
@@ -170,35 +237,58 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        id: "why-one-saas-landing-page-fails-across-google-and-meta",
+        type: "section",
+        id: "same-page-fails",
+        label: "Strategy",
         title: "Why One SaaS Landing Page Fails Across Google and Meta",
-        type: "split",
-        intro: [
-          "One landing page cannot serve two different levels of intent equally well.",
-          "A Google visitor wants speed. A Meta visitor needs context. When you send both users to the same SaaS landing page, one side usually suffers.",
+        paragraphs: [
+          "One landing page cannot serve two different levels of intent equally well. You can keep the same product, the same design system, and the same brand, but the order of information has to change.",
+          "A Google visitor wants speed because they already raised their hand. A Meta visitor needs context because you interrupted them. When you send both users to the same SaaS landing page, one side usually suffers.",
+          "This is also why a campaign can look like a media-buying problem when it is actually a landing page problem. Before you judge the channel, check whether the page matches the visitor's state of mind.",
         ],
-        cards: [
+      },
+      {
+        type: "visual-break",
+        title: "Different intent, different page job",
+        items: [
           {
             title: "Google visitors want confirmation",
-            body:
-              "They are thinking: Is this what I searched for? Can this solve my problem? Can I see proof? What do I do next?",
+            bullets: [
+              "Is this what I searched for?",
+              "Can this solve my problem?",
+              "Can I see proof?",
+              "What do I do next?",
+            ],
           },
           {
             title: "Meta visitors need context",
-            body:
-              "They are thinking: Why am I here? Is this relevant to me? What problem is this solving? Why should I trust this company? Is this worth my time?",
+            bullets: [
+              "Why am I here?",
+              "Is this relevant to me?",
+              "What problem is this solving?",
+              "Why should I trust this company?",
+              "Is this worth my time?",
+            ],
           },
         ],
       },
       {
-        id: "what-a-google-ads-landing-page-should-do-for-saas",
+        type: "inline-cta",
+        title: "Quick diagnostic",
+        body:
+          "If your Google traffic converts and Meta traffic dies, do not blame Meta first. Check the landing page message match.",
+        button: "Get audit",
+      },
+      {
+        type: "numbered-list",
+        id: "google-page",
+        label: "Strategy",
         title: "What a Google Ads Landing Page Should Do for SaaS",
-        type: "cards",
-        intro: [
-          "A strong Google Ads landing page should be clear, fast, and tightly matched to the search query.",
-          "The visitor has intent. Do not make them work too hard.",
+        paragraphs: [
+          "A strong Google Ads landing page should be clear, fast, and tightly matched to the search query. The visitor is not looking for a brand manifesto. They are trying to confirm whether your product solves the problem they already know they have.",
+          "The visitor has intent. Do not make them work too hard. The page should reduce doubt, show proof early, and move them toward the next step without forcing them through a long education sequence.",
         ],
-        cards: [
+        items: [
           {
             title: "Use a keyword-matched headline",
             body:
@@ -237,59 +327,62 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        id: "what-a-meta-ads-landing-page-should-do-for-saas",
+        type: "dark-checklist",
+        id: "meta-page",
+        label: "Strategy",
         title: "What a Meta Ads Landing Page Should Do for SaaS",
-        type: "cards",
-        intro: [
-          "A Meta Ads landing page needs more patience.",
-          "This visitor did not search for you. Your page must continue the conversation started by the ad.",
+        paragraphs: [
+          "A Meta Ads landing page needs more patience. The visitor did not search for you, so the page has to earn attention before it can ask for action.",
+          "This visitor did not search for you. Your page must continue the conversation started by the ad and make the problem feel relevant enough to keep reading.",
         ],
-        cards: [
+        items: [
           {
-            title: "Keep visual continuity from ad to page",
+            title: "Keep visual continuity from ad to page.",
             body:
               "If your ad uses a specific message, creative, pain point, or visual style, the landing page should continue it.",
           },
           {
-            title: "Educate the visitor on the problem",
+            title: "Educate the visitor on the problem.",
             body:
               "Meta traffic often needs problem awareness. Before selling the product, explain the pain clearly.",
           },
           {
-            title: "Use more storytelling",
+            title: "Use more storytelling.",
             body:
               "Explain the old way, why it breaks, what changes with your product, what the better workflow looks like, and how teams use it in real life.",
           },
           {
-            title: "Add more social proof",
+            title: "Add more social proof.",
             body:
               "Cold traffic needs specific proof: testimonials, screenshots, short customer stories, founder credibility, before-and-after workflows, and use cases.",
           },
           {
-            title: "Handle objections",
+            title: "Handle objections.",
             body:
               "Answer doubts about setup, team adoption, company size, trials, and implementation before the sales call.",
           },
           {
-            title: "Use a softer CTA",
+            title: "Use a softer CTA.",
             body:
               "A smaller first step like See the Workflow, Watch the Demo, or Get the Free Checklist can create a better path to pipeline for colder visitors.",
           },
         ],
       },
       {
-        id: "saas-example-crm-for-small-sales-teams",
-        title: "SaaS Example: CRM for Small Sales Teams",
         type: "example",
-        intro: [
-          "Let us say a B2B SaaS company sells a CRM for small sales teams.",
-          "The offer is the same. The landing page should not be.",
+        id: "crm-example",
+        label: "Example",
+        title: "SaaS Example: CRM for Small Sales Teams",
+        paragraphs: [
+          "Let us say a B2B SaaS company sells a CRM for small sales teams. The product is identical across both channels, but the visitor's mental starting point is not.",
+          "The offer is the same. The landing page should not be. The Google page should help a ready buyer compare and act. The Meta page should make the pain visible before asking for commitment.",
         ],
-        cards: [
+        items: [
           {
             title: "Google Ads page",
             body:
               "Search: CRM for small sales team. The headline can be Simple CRM Software for Small Sales Teams. The page should quickly show pipeline management, follow-up reminders, email tracking, easy setup, pricing or demo CTA, and customer proof from small teams.",
+            emphasis: true,
           },
           {
             title: "Meta Ads page",
@@ -299,9 +392,12 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        id: "google-ads-landing-page-vs-meta-ads-landing-page",
+        type: "comparison-table",
+        id: "comparison",
+        label: "Compare",
         title: "Google Ads Landing Page vs Meta Ads Landing Page",
-        type: "table",
+        paragraph:
+          "If you want to improve conversion without rebuilding the full site, start by changing the page sequence. You can also review the Google landing page checklist and compare it with the Meta landing page checklist before creating separate variants.",
         rows: [
           { element: "Visitor mindset", google: "Searching for a solution", meta: "Interrupted while scrolling" },
           { element: "Main job", google: "Confirm intent quickly", meta: "Create interest and trust" },
@@ -314,14 +410,23 @@ export const blogPosts: BlogPost[] = [
         ],
       },
       {
-        id: "founder-takeaway",
-        title: "Founder Takeaway",
+        type: "mid-cta",
+        title: "Before you rebuild the full funnel, audit the page sequence.",
+        body:
+          "Most leaks come from the wrong headline, proof order, CTA timing, or traffic-source mismatch.",
+        button: "Book audit",
+      },
+      {
         type: "takeaway",
-        intro: [
+        id: "takeaway",
+        label: "Founder note",
+        title: "Founder Takeaway",
+        paragraphs: [
           "The goal is not to choose Google Ads or Meta Ads. The goal is to design the post-click experience around intent.",
           "A good paid ads strategy does not end at the click. The click is only the handoff. Your landing page has to finish the job.",
           "Before you increase ad spend, audit the page you are sending traffic to. If the message is unclear, more traffic will only make the leak more expensive.",
         ],
+        subheading: "Before you scale paid ads, check the foundation.",
         checklist: [
           "Is the headline clear?",
           "Does the page match the visitor's intent?",
@@ -336,32 +441,32 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Should SaaS companies use different landing pages for Google Ads and Meta Ads?",
         answer:
-          "Yes. In most cases, Google Ads and Meta Ads should use different landing pages because the visitor intent is different. Google visitors are actively searching. Meta visitors usually need more education and trust before they convert.",
+          "Yes. Different intent usually needs a different landing page. Google visitors are actively searching, while Meta visitors usually need more education and trust before they convert.",
       },
       {
         question: "What makes a good SaaS landing page?",
         answer:
-          "A good SaaS landing page has a clear headline, strong value proposition, relevant proof, simple CTA, fast load speed, and messaging that matches the traffic source.",
+          "A good SaaS landing page matches the visitor's intent. It also needs a clear headline, strong value proposition, relevant proof, simple CTA, fast load speed, and focused messaging.",
       },
       {
         question: "Is Meta Ads good for B2B SaaS?",
         answer:
-          "Meta Ads can work for B2B SaaS when the offer, creative, and landing page are built for demand creation. It usually works better with education, proof, and softer CTAs than with a direct demo ask only.",
+          "Yes, Meta Ads can work for B2B SaaS. It usually performs better when the creative and landing page educate the visitor, build trust, and use a softer CTA than a direct demo ask.",
       },
       {
         question: "What is the biggest SaaS landing page mistake?",
         answer:
-          "The biggest mistake is sending every traffic source to the same generic page. Different channels bring different levels of awareness, so the landing page should match the visitor's mindset.",
+          "The biggest mistake is using one generic page for every traffic source. Different channels bring different levels of awareness, so the page should match the visitor's mindset.",
       },
       {
         question: "What should a Google Ads landing page include for SaaS?",
         answer:
-          "A Google Ads landing page for SaaS should include a keyword-matched headline, clear value proposition, trust signals, fast-loading design, limited navigation, and a visible CTA or form.",
+          "A Google Ads landing page should include a keyword-matched headline. It should also show a clear value proposition, trust signals, fast-loading design, limited navigation, and a visible CTA or form.",
       },
       {
         question: "What should a Meta Ads landing page include for SaaS?",
         answer:
-          "A Meta Ads landing page for SaaS should include visual continuity from the ad, problem education, storytelling, social proof, objection handling, and a softer CTA for colder visitors.",
+          "A Meta Ads landing page should build belief before asking for action. It should include visual continuity from the ad, problem education, storytelling, social proof, objection handling, and a softer CTA.",
       },
     ],
     source: {
@@ -376,6 +481,26 @@ export const blogPosts: BlogPost[] = [
         "If the message is unclear, more traffic will only make the leak more expensive.",
       button: "Book a 20-min Landing Page Audit",
     },
+    relatedPosts: [
+      {
+        label: "Landing pages",
+        title: "Landing page service",
+        description: "Fix the page before scaling traffic.",
+        href: "/services/landing-page",
+      },
+      {
+        label: "Case study",
+        title: "Shipzzer",
+        description: "See SaaS growth work.",
+        href: "/case-study/shipzzer",
+      },
+      {
+        label: "Case study",
+        title: "Zembra",
+        description: "Revenue growth and positioning.",
+        href: "/case-study/zembra",
+      },
+    ],
   },
 ];
 

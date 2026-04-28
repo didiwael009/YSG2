@@ -1,3 +1,5 @@
+import { blogPosts, getBlogPostByPath } from "./blog";
+
 export const SITE_URL = "https://ysg-2.vercel.app";
 export const BRAND_NAME = "Your SaaS Growth";
 export const AUTHOR_NAME = "Wael Aouididi";
@@ -68,7 +70,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/blog/saas-landing-page-google-meta-ads",
     title: "Stop Sending Ads to One SaaS Landing Page",
-    description: "Learn why one SaaS landing page fails across Google and Meta Ads, and how to match each page to visitor intent.",
+    description: "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match the visitor's intent instead of forcing both channels into one generic page.",
     type: "article",
     priority: 0.75,
     changefreq: "monthly",
@@ -88,27 +90,27 @@ export const seoRoutes: SeoRoute[] = [
     faq: [
       {
         question: "Should SaaS companies use different landing pages for Google Ads and Meta Ads?",
-        answer: "Yes. In most cases, Google Ads and Meta Ads should use different landing pages because the visitor intent is different. Google visitors are actively searching. Meta visitors usually need more education and trust before they convert.",
+        answer: "Yes. Different intent usually needs a different landing page. Google visitors are actively searching, while Meta visitors usually need more education and trust before they convert.",
       },
       {
         question: "What makes a good SaaS landing page?",
-        answer: "A good SaaS landing page has a clear headline, strong value proposition, relevant proof, simple CTA, fast load speed, and messaging that matches the traffic source.",
+        answer: "A good SaaS landing page matches the visitor's intent. It also needs a clear headline, strong value proposition, relevant proof, simple CTA, fast load speed, and focused messaging.",
       },
       {
         question: "Is Meta Ads good for B2B SaaS?",
-        answer: "Meta Ads can work for B2B SaaS when the offer, creative, and landing page are built for demand creation. It usually works better with education, proof, and softer CTAs than with a direct demo ask only.",
+        answer: "Yes, Meta Ads can work for B2B SaaS. It usually performs better when the creative and landing page educate the visitor, build trust, and use a softer CTA than a direct demo ask.",
       },
       {
         question: "What is the biggest SaaS landing page mistake?",
-        answer: "The biggest mistake is sending every traffic source to the same generic page. Different channels bring different levels of awareness, so the landing page should match the visitor's mindset.",
+        answer: "The biggest mistake is using one generic page for every traffic source. Different channels bring different levels of awareness, so the page should match the visitor's mindset.",
       },
       {
         question: "What should a Google Ads landing page include for SaaS?",
-        answer: "A Google Ads landing page for SaaS should include a keyword-matched headline, clear value proposition, trust signals, fast-loading design, limited navigation, and a visible CTA or form.",
+        answer: "A Google Ads landing page should include a keyword-matched headline. It should also show a clear value proposition, trust signals, fast-loading design, limited navigation, and a visible CTA or form.",
       },
       {
         question: "What should a Meta Ads landing page include for SaaS?",
-        answer: "A Meta Ads landing page for SaaS should include visual continuity from the ad, problem education, storytelling, social proof, objection handling, and a softer CTA for colder visitors.",
+        answer: "A Meta Ads landing page should build belief before asking for action. It should include visual continuity from the ad, problem education, storytelling, social proof, objection handling, and a softer CTA.",
       },
     ],
   },
@@ -304,7 +306,31 @@ export const getCanonicalUrl = (path: string) => {
   return `${SITE_URL}${normalizedPath === "/" ? "" : normalizedPath}`;
 };
 
+const blogPostToSeoRoute = (post: (typeof blogPosts)[number]): SeoRoute => ({
+  path: post.path,
+  title: post.metaTitle,
+  description: post.description,
+  type: "article",
+  priority: 0.75,
+  changefreq: "monthly",
+  image: post.ogImage,
+  publishedAt: post.publishedAt,
+  breadcrumbs: [
+    { name: "Blog", path: "/blog" },
+    { name: post.category, path: post.path },
+  ],
+  excerpt: post.excerpt,
+  links: post.relatedPosts.map((related) => ({ label: related.title, path: related.href })),
+  faq: post.faq,
+});
+
 export const getSeoRoute = (path: string) => {
   const normalizedPath = path === "/" ? "/" : path.replace(/\/+$/, "");
-  return seoRoutes.find((route) => route.path === normalizedPath) ?? seoRoutes[0];
+  const staticRoute = seoRoutes.find((route) => route.path === normalizedPath);
+  if (staticRoute) return staticRoute;
+
+  const blogPost = getBlogPostByPath(normalizedPath);
+  if (blogPost) return blogPostToSeoRoute(blogPost);
+
+  return seoRoutes[0];
 };

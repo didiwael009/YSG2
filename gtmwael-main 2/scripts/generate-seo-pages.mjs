@@ -6,7 +6,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, "..");
 const distDir = path.join(projectRoot, "dist");
 const seoSourcePath = path.join(projectRoot, "src/lib/seo.ts");
+const blogSourcePath = path.join(projectRoot, "src/lib/blog.ts");
 const source = await readFile(seoSourcePath, "utf8");
+const blogSource = await readFile(blogSourcePath, "utf8");
 
 const getConst = (name) => {
   const match = source.match(new RegExp(`export const ${name} = "([^"]+)"`));
@@ -22,7 +24,34 @@ const DEFAULT_OG_IMAGE = getConst("DEFAULT_OG_IMAGE");
 const routeMatch = source.match(/export const seoRoutes: SeoRoute\[\] = (\[[\s\S]*?\]);/);
 if (!routeMatch) throw new Error("Could not read seoRoutes from src/lib/seo.ts");
 
-const seoRoutes = Function(`"use strict"; return (${routeMatch[1]});`)();
+const staticSeoRoutes = Function(`"use strict"; return (${routeMatch[1]});`)();
+
+const blogMatch = blogSource.match(/export const blogPosts: BlogPost\[\] = (\[[\s\S]*?\]);/);
+if (!blogMatch) throw new Error("Could not read blogPosts from src/lib/blog.ts");
+
+const blogPosts = Function(`"use strict"; return (${blogMatch[1]});`)();
+const blogSeoRoutes = blogPosts.map((post) => ({
+  path: post.path,
+  title: post.metaTitle,
+  description: post.description,
+  type: "article",
+  priority: 0.75,
+  changefreq: "monthly",
+  image: post.ogImage,
+  publishedAt: post.publishedAt,
+  breadcrumbs: [
+    { name: "Blog", path: "/blog" },
+    { name: post.category, path: post.path },
+  ],
+  excerpt: post.excerpt,
+  links: post.relatedPosts.map((related) => ({ label: related.title, path: related.href })),
+  faq: post.faq,
+}));
+
+const seoRoutes = [
+  ...staticSeoRoutes,
+  ...blogSeoRoutes.filter((route) => !staticSeoRoutes.some((staticRoute) => staticRoute.path === route.path)),
+];
 const template = await readFile(path.join(distDir, "index.html"), "utf8");
 const lastmod = new Date().toISOString().slice(0, 10);
 

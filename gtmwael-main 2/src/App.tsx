@@ -20,7 +20,7 @@ const CaseStudyICCenter = lazy(() => import("./pages/CaseStudyICCenter"));
 const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
 const LandingPageConversion = lazy(() => import("./pages/LandingPageConversion"));
 const Blog = lazy(() => import("./pages/Blog"));
-const BlogSaasLandingPageAds = lazy(() => import("./pages/BlogSaasLandingPageAds"));
+const BlogArticle = lazy(() => import("./pages/BlogArticle"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Resume = lazy(() => import("./pages/Resume"));
 const Book = lazy(() => import("./pages/Book"));
@@ -48,7 +48,7 @@ const App = () => (
         <Route path="/creative/community-management" element={<CommunityManagement />} />
         <Route path="/services/landing-page" element={<LandingPageConversion />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/saas-landing-page-google-meta-ads" element={<BlogSaasLandingPageAds />} />
+        <Route path="/blog/:slug" element={<BlogArticle />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/book" element={<Book />} />
