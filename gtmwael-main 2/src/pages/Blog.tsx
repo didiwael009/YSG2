@@ -2,17 +2,7 @@ import { ArrowRight, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-
-const posts = [
-  {
-    label: "Landing Pages",
-    title: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
-    description:
-      "Why one SaaS landing page fails across Google and Meta Ads, and how to match each page to visitor intent before increasing ad spend.",
-    href: "/blog/saas-landing-page-google-meta-ads",
-    readTime: "11 min read",
-  },
-];
+import { blogPosts } from "@/lib/blog";
 
 const Blog = () => {
   return (
@@ -25,7 +15,7 @@ const Blog = () => {
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
               Blog
             </p>
-            <h1 className="font-display max-w-4xl text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
+            <h1 className="font-display max-w-4xl text-5xl font-bold leading-[1.05] md:text-7xl">
               SaaS Growth Articles
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
@@ -38,25 +28,25 @@ const Blog = () => {
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-6">
             <div className="grid gap-6 lg:grid-cols-2">
-              {posts.map((post) => (
+              {blogPosts.map((post) => (
                 <Link
-                  key={post.href}
-                  to={post.href}
+                  key={post.path}
+                  to={post.path}
                   className="group rounded-2xl border border-border/60 bg-card/70 p-7 shadow-lg shadow-background/20 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-primary/10"
                 >
                   <div className="mb-6 flex items-center justify-between gap-4">
                     <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-                      {post.label}
+                      {post.category}
                     </p>
                     <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/15 text-primary">
                       <FileText className="h-5 w-5" />
                     </span>
                   </div>
-                  <h2 className="font-display text-2xl font-semibold leading-snug tracking-tight">
+                  <h2 className="font-display text-2xl font-semibold leading-snug">
                     {post.title}
                   </h2>
                   <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                    {post.description}
+                    {post.excerpt}
                   </p>
                   <div className="mt-7 flex items-center justify-between border-t border-border/60 pt-6">
                     <span className="text-sm text-muted-foreground">{post.readTime}</span>
