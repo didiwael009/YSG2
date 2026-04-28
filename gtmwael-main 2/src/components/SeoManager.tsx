@@ -43,6 +43,10 @@ const setJsonLd = (id: string, data: unknown) => {
   element.textContent = JSON.stringify(data);
 };
 
+const removeJsonLd = (id: string) => {
+  document.getElementById(id)?.remove();
+};
+
 const cleanImageUrl = (image?: string) => {
   const path = image && !image.startsWith("/assets/") ? image : DEFAULT_OG_IMAGE;
   return path.startsWith("http") ? path : `${SITE_URL}${path}`;
@@ -61,7 +65,7 @@ const SeoManager = () => {
     setMeta('meta[name="robots"]', "content", "index, follow, max-image-preview:large");
     setMeta('meta[property="og:title"]', "content", route.title);
     setMeta('meta[property="og:description"]', "content", route.description);
-    setMeta('meta[property="og:type"]', "content", route.type === "case-study" ? "article" : "website");
+    setMeta('meta[property="og:type"]', "content", route.type === "case-study" || route.type === "article" ? "article" : "website");
     setMeta('meta[property="og:url"]', "content", canonical);
     setMeta('meta[property="og:image"]', "content", image);
     setMeta('meta[property="og:site_name"]', "content", BRAND_NAME);
@@ -96,9 +100,10 @@ const SeoManager = () => {
       publisher: { "@type": "Organization", name: BRAND_NAME },
     };
 
+    const isArticle = route.type === "case-study" || route.type === "article";
     const webPage = {
       "@context": "https://schema.org",
-      "@type": route.type === "case-study" ? "Article" : "WebPage",
+      "@type": isArticle ? "Article" : "WebPage",
       headline: route.title,
       name: route.title,
       description: route.description,
@@ -107,6 +112,7 @@ const SeoManager = () => {
       author: { "@type": "Person", name: AUTHOR_NAME },
       publisher: { "@type": "Organization", name: BRAND_NAME },
       mainEntityOfPage: canonical,
+      ...(route.publishedAt ? { datePublished: route.publishedAt, dateModified: route.publishedAt } : {}),
     };
 
     const breadcrumbs = {
@@ -127,6 +133,22 @@ const SeoManager = () => {
     setJsonLd("jsonld-website", website);
     setJsonLd("jsonld-page", webPage);
     setJsonLd("jsonld-breadcrumbs", breadcrumbs);
+    if (route.faq?.length) {
+      setJsonLd("jsonld-faq", {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: route.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: item.answer,
+          },
+        })),
+      });
+    } else {
+      removeJsonLd("jsonld-faq");
+    }
   }, [location.pathname]);
 
   return null;

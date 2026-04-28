@@ -26,6 +26,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
   const pages = [
     { label: "Creative Folio", to: "/creative" },
     { label: "Case Studies", to: "/case-studies" },
+    { label: "Blog", to: "/blog" },
     { label: "Pricing", to: "/pricing" },
     { label: "Resume", to: "/resume" },
   ];

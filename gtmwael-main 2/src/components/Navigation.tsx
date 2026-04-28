@@ -41,6 +41,7 @@ const services = [
 ];
 
 const navLinks = [
+  { label: "Blog", href: "/blog", isPage: true },
   { label: "Pricing", href: "/pricing", isPage: true },
   { label: "Folio", href: "/creative", isPage: true },
 ];

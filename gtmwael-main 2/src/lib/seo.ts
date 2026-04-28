@@ -7,13 +7,15 @@ export type SeoRoute = {
   path: string;
   title: string;
   description: string;
-  type: "website" | "service" | "case-study" | "portfolio" | "profile" | "booking";
+  type: "website" | "service" | "case-study" | "portfolio" | "profile" | "booking" | "blog" | "article";
   priority: number;
   changefreq: "weekly" | "monthly";
   image?: string;
   breadcrumbs?: { name: string; path: string }[];
   excerpt?: string;
   links?: { label: string; path: string }[];
+  publishedAt?: string;
+  faq?: { question: string; answer: string }[];
 };
 
 export const seoRoutes: SeoRoute[] = [
@@ -28,6 +30,7 @@ export const seoRoutes: SeoRoute[] = [
     excerpt: "A conversion-focused SaaS growth portfolio for founders who need clearer positioning, stronger acquisition, and better conversion.",
     links: [
       { label: "SaaS growth case studies", path: "/case-studies" },
+      { label: "SaaS growth blog", path: "/blog" },
       { label: "Cold email service", path: "/services/cold-email" },
       { label: "Landing page conversion service", path: "/services/landing-page" },
       { label: "Book a GTM audit", path: "/book" },
@@ -46,6 +49,67 @@ export const seoRoutes: SeoRoute[] = [
       { label: "Screenplay product funnel case study", path: "/case-study/screenplay" },
       { label: "Zembra rebrand case study", path: "/case-study/zembra" },
       { label: "Pubrella CRO case study", path: "/case-study/pubrella" },
+    ],
+  },
+  {
+    path: "/blog",
+    title: "SaaS Growth Blog | Your SaaS Growth",
+    description: "Practical SaaS growth articles on landing pages, paid ads strategy, conversion optimization, cold email, and GTM execution.",
+    type: "blog",
+    priority: 0.8,
+    changefreq: "weekly",
+    breadcrumbs: [{ name: "Blog", path: "/blog" }],
+    links: [
+      { label: "SaaS landing page article", path: "/blog/saas-landing-page-google-meta-ads" },
+      { label: "Landing page conversion service", path: "/services/landing-page" },
+      { label: "Meta ads service", path: "/services/meta-ads" },
+    ],
+  },
+  {
+    path: "/blog/saas-landing-page-google-meta-ads",
+    title: "Stop Sending Ads to One SaaS Landing Page",
+    description: "Learn why one SaaS landing page fails across Google and Meta Ads, and how to match each page to visitor intent.",
+    type: "article",
+    priority: 0.75,
+    changefreq: "monthly",
+    image: "/og-default.png",
+    publishedAt: "2026-04-27",
+    breadcrumbs: [
+      { name: "Blog", path: "/blog" },
+      { name: "SaaS Landing Page Ads", path: "/blog/saas-landing-page-google-meta-ads" },
+    ],
+    excerpt: "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match the visitor's intent instead of forcing both channels into one generic page.",
+    links: [
+      { label: "Landing page conversion service", path: "/services/landing-page" },
+      { label: "Meta ads service", path: "/services/meta-ads" },
+      { label: "Pubrella landing page CRO case study", path: "/case-study/pubrella" },
+      { label: "Book a landing page audit", path: "/book" },
+    ],
+    faq: [
+      {
+        question: "Should SaaS companies use different landing pages for Google Ads and Meta Ads?",
+        answer: "Yes. In most cases, Google Ads and Meta Ads should use different landing pages because the visitor intent is different. Google visitors are actively searching. Meta visitors usually need more education and trust before they convert.",
+      },
+      {
+        question: "What makes a good SaaS landing page?",
+        answer: "A good SaaS landing page has a clear headline, strong value proposition, relevant proof, simple CTA, fast load speed, and messaging that matches the traffic source.",
+      },
+      {
+        question: "Is Meta Ads good for B2B SaaS?",
+        answer: "Meta Ads can work for B2B SaaS when the offer, creative, and landing page are built for demand creation. It usually works better with education, proof, and softer CTAs than with a direct demo ask only.",
+      },
+      {
+        question: "What is the biggest SaaS landing page mistake?",
+        answer: "The biggest mistake is sending every traffic source to the same generic page. Different channels bring different levels of awareness, so the landing page should match the visitor's mindset.",
+      },
+      {
+        question: "What should a Google Ads landing page include for SaaS?",
+        answer: "A Google Ads landing page for SaaS should include a keyword-matched headline, clear value proposition, trust signals, fast-loading design, limited navigation, and a visible CTA or form.",
+      },
+      {
+        question: "What should a Meta Ads landing page include for SaaS?",
+        answer: "A Meta Ads landing page for SaaS should include visual continuity from the ad, problem education, storytelling, social proof, objection handling, and a softer CTA for colder visitors.",
+      },
     ],
   },
   {

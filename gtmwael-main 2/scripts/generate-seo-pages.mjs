@@ -87,7 +87,7 @@ const buildJsonLd = (route) => {
     },
     {
       "@context": "https://schema.org",
-      "@type": route.type === "case-study" ? "Article" : "WebPage",
+      "@type": route.type === "case-study" || route.type === "article" ? "Article" : "WebPage",
       headline: route.title,
       name: route.title,
       description: route.description,
@@ -96,20 +96,38 @@ const buildJsonLd = (route) => {
       author: { "@type": "Person", name: AUTHOR_NAME },
       publisher: { "@type": "Organization", name: BRAND_NAME },
       mainEntityOfPage: canonical,
-      dateModified: lastmod,
+      ...(route.publishedAt
+        ? { datePublished: route.publishedAt, dateModified: route.publishedAt }
+        : { dateModified: lastmod }),
     },
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: breadcrumbs,
     },
+    ...(route.faq?.length
+      ? [
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: route.faq.map((item) => ({
+              "@type": "Question",
+              name: item.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: item.answer,
+              },
+            })),
+          },
+        ]
+      : []),
   ];
 };
 
 const buildHead = (route) => {
   const canonical = getCanonicalUrl(route.path);
   const image = cleanImageUrl(route.image);
-  const type = route.type === "case-study" ? "article" : "website";
+  const type = route.type === "case-study" || route.type === "article" ? "article" : "website";
   return `
     <title>${escapeHtml(route.title)}</title>
     <meta name="description" content="${escapeHtml(route.description)}" />
@@ -162,6 +180,46 @@ const routeContent = {
         heading: "How the work is evaluated",
         body: "Each case study explains the starting problem, what was rebuilt, visual proof where available, and the business or funnel outcome that made the work valuable.",
       },
+    ],
+  },
+  "/blog": {
+    intro: "Practical SaaS growth articles on landing pages, paid ads strategy, conversion optimization, cold email, and GTM execution.",
+    sections: [
+      {
+        heading: "Latest SaaS growth article",
+        body: "The first article explains why Google Ads and Meta Ads traffic should not usually be sent to the same SaaS landing page, because the visitor intent and trust path are different.",
+      },
+      {
+        heading: "Topics covered",
+        body: "The blog focuses on SaaS landing pages, paid traffic, conversion optimization, demand creation, demand capture, and practical founder decisions before scaling acquisition.",
+      },
+    ],
+    links: [
+      { label: "Read the SaaS landing page article", path: "/blog/saas-landing-page-google-meta-ads" },
+      { label: "Review landing page conversion service", path: "/services/landing-page" },
+      { label: "Explore SaaS case studies", path: "/case-studies" },
+    ],
+  },
+  "/blog/saas-landing-page-google-meta-ads": {
+    intro: "Google Ads captures demand. Meta Ads creates demand. SaaS founders should match the landing page to the visitor's intent instead of sending both channels to one generic page.",
+    sections: [
+      {
+        heading: "Google Ads captures demand",
+        body: "Search visitors already know they have a problem and are actively comparing solutions, so the page should confirm intent quickly, show proof, and make the next step easy.",
+      },
+      {
+        heading: "Meta Ads creates demand",
+        body: "Social visitors are interrupted while scrolling, so the page needs more context, problem education, proof, objection handling, and often a softer call to action.",
+      },
+      {
+        heading: "Founder takeaway",
+        body: "A paid ads strategy does not end at the click. The landing page has to finish the job by matching the visitor's state of mind before more ad spend is added.",
+      },
+    ],
+    links: [
+      { label: "Landing page conversion service", path: "/services/landing-page" },
+      { label: "Meta ads service", path: "/services/meta-ads" },
+      { label: "Book a landing page audit", path: "/book" },
     ],
   },
   "/services/cold-email": {
@@ -402,7 +460,7 @@ const buildFallbackContent = (route) => {
   );
   const sections = details.sections ?? [];
   const navLinks = seoRoutes.filter((item) =>
-    ["/", "/case-studies", "/services/cold-email", "/services/landing-page", "/services/meta-ads", "/pricing", "/book"].includes(item.path)
+    ["/", "/case-studies", "/blog", "/services/cold-email", "/services/landing-page", "/services/meta-ads", "/pricing", "/book"].includes(item.path)
   );
 
   return `
