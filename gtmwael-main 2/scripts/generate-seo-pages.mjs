@@ -1,10 +1,14 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import react from "@vitejs/plugin-react-swc";
+import { createServer } from "vite";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, "..");
 const distDir = path.join(projectRoot, "dist");
+const distAssetsDir = path.join(distDir, "assets");
+const sourceAssetsDir = path.join(projectRoot, "src/assets");
 const seoSourcePath = path.join(projectRoot, "src/lib/seo.ts");
 const blogSourcePath = path.join(projectRoot, "src/lib/blog.ts");
 const source = await readFile(seoSourcePath, "utf8");
@@ -54,6 +58,72 @@ const seoRoutes = [
 ];
 const template = await readFile(path.join(distDir, "index.html"), "utf8");
 const lastmod = new Date().toISOString().slice(0, 10);
+const prerenderRoutes = new Set([
+  "/",
+  "/blog",
+  "/blog/saas-landing-page-google-meta-ads",
+  "/case-studies",
+  "/case-study/shipzzer",
+  "/case-study/zembra",
+  "/case-study/pubrella",
+  "/services/landing-page",
+  "/services/cold-email",
+  "/book",
+]);
+
+const originalConsoleError = console.error;
+const originalStderrWrite = process.stderr.write.bind(process.stderr);
+const originalStdoutWrite = process.stdout.write.bind(process.stdout);
+const writeUnlessKnownNoise = (writer) => (chunk, ...args) => {
+  const message = String(chunk);
+  if (message.includes("The build was canceled")) {
+    return true;
+  }
+
+  return writer(chunk, ...args);
+};
+
+process.stdout.write = writeUnlessKnownNoise(originalStdoutWrite);
+process.stderr.write = (chunk, ...args) => {
+  return writeUnlessKnownNoise(originalStderrWrite)(chunk, ...args);
+};
+
+console.error = (...args) => {
+  const message = args.map((arg) => (arg instanceof Error ? arg.stack || arg.message : String(arg))).join("\n");
+  const knownSsrNoise =
+    message.includes("WebSocket server error") ||
+    message.includes("listen EPERM") ||
+    message.includes("useLayoutEffect does nothing on the server") ||
+    message.includes("React does not recognize the `fetchPriority` prop") ||
+    message.includes("The build was canceled");
+
+  if (!knownSsrNoise) {
+    originalConsoleError(...args);
+  }
+};
+
+const vite = await createServer({
+  root: projectRoot,
+  configFile: false,
+  appType: "custom",
+  logLevel: "error",
+  plugins: [react()],
+  resolve: {
+    alias: [
+      { find: "@", replacement: path.join(projectRoot, "src") },
+      {
+        find: /^react-router$/,
+        replacement: path.join(projectRoot, "node_modules/react-router/dist/development/index.mjs"),
+      },
+      {
+        find: /^react-router-dom$/,
+        replacement: path.join(projectRoot, "node_modules/react-router-dom/dist/index.mjs"),
+      },
+    ],
+  },
+  server: { middlewareMode: true, hmr: false },
+});
+const { render } = await vite.ssrLoadModule("/src/entry-prerender.tsx");
 
 const escapeHtml = (value) =>
   String(value)
@@ -527,8 +597,26 @@ const buildFallbackContent = (route) => {
   `;
 };
 
-const buildHtml = (route) => {
-  const rootContent = buildFallbackContent(route);
+const materializeSsrAssetPaths = async (html) => {
+  const assetRefs = [...html.matchAll(/\/src\/assets\/([^"')\s<>]+)/g)].map((match) => match[1]);
+  const uniqueAssets = [...new Set(assetRefs)];
+
+  await Promise.all(
+    uniqueAssets.map(async (filename) => {
+      const sourceFile = path.join(sourceAssetsDir, filename);
+      const outputFile = path.join(distAssetsDir, filename);
+      await mkdir(path.dirname(outputFile), { recursive: true });
+      await copyFile(sourceFile, outputFile);
+    })
+  );
+
+  return html.replaceAll("/src/assets/", "/assets/");
+};
+
+const buildHtml = async (route) => {
+  const rootContent = prerenderRoutes.has(route.path)
+    ? await materializeSsrAssetPaths(await render(route.path))
+    : buildFallbackContent(route);
   return stripHeadSeo(template)
     .replace("</head>", `${buildHead(route)}\n  </head>`)
     .replace(/<div id="root">[\s\S]*<\/div>\s*<\/body>/, `<div id="root">${rootContent}</div>\n  </body>`);
@@ -570,7 +658,7 @@ const buildNotFoundHtml = () => {
 for (const route of seoRoutes) {
   const routeDir = route.path === "/" ? distDir : path.join(distDir, route.path);
   await mkdir(routeDir, { recursive: true });
-  await writeFile(path.join(routeDir, "index.html"), buildHtml(route));
+  await writeFile(path.join(routeDir, "index.html"), await buildHtml(route));
 }
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -604,5 +692,10 @@ await writeFile(path.join(distDir, "robots.txt"), robots);
 await writeFile(path.join(distDir, "404.html"), buildNotFoundHtml());
 await writeFile(path.join(projectRoot, "public/sitemap.xml"), sitemap);
 await writeFile(path.join(projectRoot, "public/robots.txt"), robots);
+await vite.close();
+await new Promise((resolve) => setTimeout(resolve, 50));
+console.error = originalConsoleError;
+process.stderr.write = originalStderrWrite;
+process.stdout.write = originalStdoutWrite;
 
 console.log(`Generated SEO HTML, sitemap, and robots for ${seoRoutes.length} routes.`);

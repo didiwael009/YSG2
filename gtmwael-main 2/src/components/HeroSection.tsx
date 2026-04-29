@@ -156,7 +156,7 @@ const HeroSection = () => {
                 alt="Wael Aouididi, fractional growth lead for b2b companies" 
                 width={420}
                 height={520}
-                fetchPriority="high"
+                {...({ fetchpriority: "high" } as Record<string, string>)}
                 decoding="async"
                 className="relative z-[1] w-64 md:w-72 lg:w-[420px] h-auto block select-none"
                 style={{

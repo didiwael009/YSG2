@@ -9,6 +9,7 @@ const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 // import { supabase } from "@/integrations/supabase/client";
 
 const hasSupabaseConfig = Boolean(SUPABASE_URL && SUPABASE_PUBLISHABLE_KEY);
+const browserStorage = typeof window !== "undefined" ? window.localStorage : undefined;
 
 const disabledSupabaseClient = {
   from: () => ({
@@ -22,7 +23,7 @@ const disabledSupabaseClient = {
 export const supabase = hasSupabaseConfig
   ? createClient<Database>(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
       auth: {
-        storage: localStorage,
+        storage: browserStorage,
         persistSession: true,
         autoRefreshToken: true,
       },
