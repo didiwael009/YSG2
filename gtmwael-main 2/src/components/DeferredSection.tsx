@@ -12,7 +12,9 @@ const DeferredSection = ({
   fallbackHeight = 240,
 }: DeferredSectionProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const [shouldRender, setShouldRender] = useState(false);
+  const [shouldRender, setShouldRender] = useState(
+    () => typeof window === "undefined" || !!document.getElementById("root")?.hasChildNodes()
+  );
 
   useEffect(() => {
     if (shouldRender) return;
