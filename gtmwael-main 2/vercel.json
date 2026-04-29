@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.yoursaasgrowth.com"
+        }
+      ],
+      "destination": "https://yoursaasgrowth.com/$1",
+      "permanent": true
+    }
+  ]
+}

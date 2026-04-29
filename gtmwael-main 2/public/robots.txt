@@ -6,4 +6,4 @@ Disallow: /preview/
 Disallow: /test/
 Disallow: /draft/
 
-Sitemap: https://ysg-2.vercel.app/sitemap.xml
+Sitemap: https://yoursaasgrowth.com/sitemap.xml

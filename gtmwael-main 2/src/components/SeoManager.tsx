@@ -101,14 +101,16 @@ const SeoManager = () => {
     };
 
     const isArticle = route.type === "case-study" || route.type === "article";
+    const isHome = route.path === "/";
     const webPage = {
       "@context": "https://schema.org",
-      "@type": isArticle ? "Article" : "WebPage",
+      "@type": isHome ? "ProfessionalService" : isArticle ? "Article" : "WebPage",
       headline: route.title,
       name: route.title,
       description: route.description,
       url: canonical,
       image,
+      ...(isHome ? { areaServed: "Global", founder: { "@type": "Person", name: AUTHOR_NAME }, provider: { "@type": "Person", name: AUTHOR_NAME } } : {}),
       author: { "@type": "Person", name: AUTHOR_NAME },
       publisher: { "@type": "Organization", name: BRAND_NAME },
       mainEntityOfPage: canonical,

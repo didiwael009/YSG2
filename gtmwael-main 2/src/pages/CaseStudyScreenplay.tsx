@@ -33,7 +33,7 @@ const CaseStudyScreenplay = () => (
     description="How I reframed Screenplay Performance Studio into a step-by-step workflow users could understand, follow, and complete."
     metaTitle="Screenplay Performance Studio Case Study | Guided Product Funnel"
     metaDescription="How Screenplay Performance Studio was reframed from a confusing AI audio tool into a guided product funnel."
-    canonical="https://ysg-2.vercel.app/case-study/screenplay"
+    canonical="https://yoursaasgrowth.com/case-study/screenplay"
     metrics={[
       { value: "Clear", label: "Product story from AI tool to workflow" },
       { value: "5 steps", label: "Upload, Casting, Perform, Paywall, Export" },

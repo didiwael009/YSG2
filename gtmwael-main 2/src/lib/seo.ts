@@ -1,6 +1,6 @@
 import { blogPosts, getBlogPostByPath } from "./blog";
 
-export const SITE_URL = "https://ysg-2.vercel.app";
+export const SITE_URL = "https://yoursaasgrowth.com";
 export const BRAND_NAME = "Your SaaS Growth";
 export const AUTHOR_NAME = "Wael Aouididi";
 export const DEFAULT_OG_IMAGE = "/og-default.png";

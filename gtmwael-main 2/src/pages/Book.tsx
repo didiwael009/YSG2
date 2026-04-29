@@ -120,6 +120,13 @@ const Book = () => {
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-center text-sm text-muted-foreground">
+            Want proof first?{" "}
+            <a href="/case-studies" className="text-primary font-semibold hover:text-primary/80 transition-colors">
+              View SaaS growth case studies
+            </a>
+            .
+          </p>
         </div>
       </section>
 

@@ -1,4 +1,4 @@
-import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
+import { access, copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import react from "@vitejs/plugin-react-swc";
@@ -70,6 +70,7 @@ const prerenderRoutes = new Set([
   "/services/cold-email",
   "/book",
 ]);
+const ogAssetRoutes = new Set();
 
 const originalConsoleError = console.error;
 const originalStderrWrite = process.stderr.write.bind(process.stderr);
@@ -134,8 +135,43 @@ const escapeHtml = (value) =>
 
 const getCanonicalUrl = (routePath) => `${SITE_URL}${routePath === "/" ? "" : routePath}`;
 
+const fileExists = async (filePath) => {
+  try {
+    await access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
+const prepareOgAssets = async () => {
+  const routeImages = seoRoutes
+    .map((route) => route.image)
+    .filter((image) => typeof image === "string" && image.startsWith("/assets/"));
+
+  await Promise.all(
+    [...new Set(routeImages)].map(async (imagePath) => {
+      const filename = imagePath.replace(/^\/assets\//, "");
+      const sourceFile = path.join(sourceAssetsDir, filename);
+      const outputFile = path.join(distAssetsDir, filename);
+
+      if (await fileExists(sourceFile)) {
+        await mkdir(path.dirname(outputFile), { recursive: true });
+        await copyFile(sourceFile, outputFile);
+        ogAssetRoutes.add(imagePath);
+        return;
+      }
+
+      if (await fileExists(outputFile)) {
+        ogAssetRoutes.add(imagePath);
+      }
+    })
+  );
+};
+
 const cleanImageUrl = (image) => {
-  const imagePath = image && !image.startsWith("/assets/") ? image : DEFAULT_OG_IMAGE;
+  const imagePath =
+    image && (!image.startsWith("/assets/") || ogAssetRoutes.has(image)) ? image : DEFAULT_OG_IMAGE;
   return imagePath.startsWith("http") ? imagePath : `${SITE_URL}${imagePath}`;
 };
 
@@ -153,6 +189,7 @@ const stripHeadSeo = (html) =>
 const buildJsonLd = (route) => {
   const canonical = getCanonicalUrl(route.path);
   const image = cleanImageUrl(route.image);
+  const isHome = route.path === "/";
   const breadcrumbs = [
     { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
     ...(route.breadcrumbs ?? []).map((crumb, index) => ({
@@ -184,7 +221,20 @@ const buildJsonLd = (route) => {
       description: "SaaS GTM strategy, conversion, cold email, SEO, Meta ads, and growth execution by Wael Aouididi.",
       publisher: { "@type": "Organization", name: BRAND_NAME },
     },
-    {
+    isHome
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ProfessionalService",
+          name: BRAND_NAME,
+          description: route.description,
+          url: canonical,
+          image,
+          areaServed: "Global",
+          founder: { "@type": "Person", name: AUTHOR_NAME },
+          provider: { "@type": "Person", name: AUTHOR_NAME },
+          mainEntityOfPage: canonical,
+        }
+      : {
       "@context": "https://schema.org",
       "@type": route.type === "case-study" || route.type === "article" ? "Article" : "WebPage",
       headline: route.title,
@@ -655,6 +705,8 @@ const buildNotFoundHtml = () => {
     );
 };
 
+await prepareOgAssets();
+
 for (const route of seoRoutes) {
   const routeDir = route.path === "/" ? distDir : path.join(distDir, route.path);
   await mkdir(routeDir, { recursive: true });
@@ -698,4 +750,44 @@ console.error = originalConsoleError;
 process.stderr.write = originalStderrWrite;
 process.stdout.write = originalStdoutWrite;
 
+const verifyRouteHtml = async (routePath) => {
+  const htmlFile = routePath === "/" ? path.join(distDir, "index.html") : path.join(distDir, routePath, "index.html");
+  const html = await readFile(htmlFile, "utf8");
+  const sameDomainLinks = [...html.matchAll(/<a\b[^>]*href="([^"]+)"/gi)].filter((match) => {
+    const href = match[1];
+    return href.startsWith("/") || href.startsWith(SITE_URL);
+  });
+  const route = seoRoutes.find((item) => item.path === routePath);
+  const visibleFaqCount = (html.match(/<h[2-4][^>]*>[^<]*(Frequently Asked Questions|FAQ|Should SaaS|What makes|Is Meta Ads|What is the biggest|What should a Google|What should a Meta)/gi) ?? []).length;
+
+  return {
+    route: routePath,
+    file: path.relative(projectRoot, htmlFile),
+    h1: (html.match(/<h1\b/gi) ?? []).length,
+    paragraphs: (html.match(/<p\b/gi) ?? []).length,
+    internalLinks: sameDomainLinks.length,
+    jsonLd: /<script\b[^>]*type="application\/ld\+json"/i.test(html),
+    faqExpected: Boolean(route?.faq?.length),
+    faqVisible: route?.faq?.length ? visibleFaqCount > 0 || route.faq.every((item) => html.includes(escapeHtml(item.question))) : "n/a",
+    renderer: prerenderRoutes.has(routePath) ? "React SSR" : "fallback",
+  };
+};
+
+const priorityVerification = await Promise.all([...prerenderRoutes].map(verifyRouteHtml));
+
 console.log(`Generated SEO HTML, sitemap, and robots for ${seoRoutes.length} routes.`);
+console.log("SEO prerender verification:");
+for (const item of priorityVerification) {
+  console.log(
+    [
+      `route=${item.route}`,
+      `file=${item.file}`,
+      `h1=${item.h1}`,
+      `p=${item.paragraphs}`,
+      `internal_links=${item.internalLinks}`,
+      `json_ld=${item.jsonLd ? "yes" : "no"}`,
+      `faq=${item.faqExpected ? (item.faqVisible ? "yes" : "missing") : "n/a"}`,
+      `renderer=${item.renderer}`,
+    ].join(" | ")
+  );
+}
