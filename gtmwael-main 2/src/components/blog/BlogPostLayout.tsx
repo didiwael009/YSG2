@@ -353,11 +353,18 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
   const progressRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const page = document.documentElement;
-      const max = page.scrollHeight - page.clientHeight;
-      const progress = max > 0 ? (page.scrollTop / max) * 100 : 0;
-      if (progressRef.current) progressRef.current.style.width = `${progress}%`;
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const page = document.documentElement;
+        const max = page.scrollHeight - page.clientHeight;
+        const progress = max > 0 ? (page.scrollTop / max) * 100 : 0;
+        if (progressRef.current) progressRef.current.style.width = `${progress}%`;
+        ticking = false;
+      });
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });

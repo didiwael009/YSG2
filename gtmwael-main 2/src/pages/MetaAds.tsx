@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -120,6 +119,7 @@ const MetaAds = () => {
   const handleLeadSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      const { supabase } = await import("@/integrations/supabase/client");
       await supabase.from("playbook_leads").insert({
         name: leadForm.name,
         email: leadForm.email,

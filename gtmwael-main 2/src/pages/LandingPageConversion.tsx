@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { supabase } from "@/integrations/supabase/client";
 import { ExternalLink, Star, Download, Check, X, Search, LayoutTemplate, ArrowRight, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -64,6 +63,7 @@ const LandingPageConversion = () => {
   const handleLeadSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
+      const { supabase } = await import("@/integrations/supabase/client");
       await supabase.from("playbook_leads").insert({
         name: leadForm.name,
         email: leadForm.email,

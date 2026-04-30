@@ -88,16 +88,22 @@ const Navigation = () => {
 
   useEffect(() => {
     let ticking = false;
+    let lastScrolled = window.scrollY > 50;
+    setIsScrolled(lastScrolled);
+
     const handleScroll = () => {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(() => {
-        setIsScrolled(window.scrollY > 50);
+        const nextScrolled = window.scrollY > 50;
+        if (nextScrolled !== lastScrolled) {
+          lastScrolled = nextScrolled;
+          setIsScrolled(nextScrolled);
+        }
         ticking = false;
       });
     };
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 

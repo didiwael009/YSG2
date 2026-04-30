@@ -33,6 +33,9 @@
         }
 
         function loadAnalytics() {
+          events.forEach(function(e){
+            window.removeEventListener(e, loadAnalytics);
+          });
           loadGTM();
           loadClarity();
         }
