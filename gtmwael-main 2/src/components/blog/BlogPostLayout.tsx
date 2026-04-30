@@ -403,6 +403,18 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
                   </span>
                 </div>
               </div>
+              {post.featuredImage ? (
+                <figure className="overflow-hidden rounded-[26px] border border-white/10 bg-white/[0.06] p-3 shadow-[0_28px_90px_rgba(0,0,0,0.32)]">
+                  <img
+                    src={post.featuredImage.src}
+                    alt={post.featuredImage.alt}
+                    width={1200}
+                    height={630}
+                    className="aspect-[1200/630] w-full rounded-[20px] object-cover"
+                    fetchpriority="high"
+                  />
+                </figure>
+              ) : null}
             </div>
           </header>
 

@@ -62,6 +62,7 @@ const prerenderRoutes = new Set([
   "/",
   "/blog",
   "/blog/saas-landing-page-google-meta-ads",
+  "/blog/saas-traffic-but-no-signups",
   "/case-studies",
   "/case-study/shipzzer",
   "/case-study/zembra",
