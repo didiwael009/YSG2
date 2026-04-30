@@ -45,6 +45,9 @@ export type BlogBlock =
     }
   | {
       type: "visual-break";
+      id?: string;
+      label?: string;
+      heading?: boolean;
       title: string;
       items: {
         title: string;
@@ -123,6 +126,7 @@ export type BlogPost = {
   slug: string;
   path: string;
   category: string;
+  breadcrumbTitle?: string;
   title: string;
   metaTitle: string;
   description: string;
@@ -510,6 +514,7 @@ export const blogPosts: BlogPost[] = [
     slug: "saas-traffic-but-no-signups",
     path: "/blog/saas-traffic-but-no-signups",
     category: "SaaS CRO",
+    breadcrumbTitle: "SaaS Traffic But No Signups",
     title: "Why Your SaaS Website Gets Traffic But No Signups",
     metaTitle: "SaaS Traffic But No Signups? Here's Why",
     description:
@@ -634,6 +639,9 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "visual-break",
+        id: "conversion-leak-framework",
+        label: "Framework",
+        heading: true,
         title: "The 4-part SaaS conversion leak framework",
         items: [
           {

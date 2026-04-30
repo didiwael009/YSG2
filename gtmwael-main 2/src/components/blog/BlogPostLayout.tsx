@@ -126,10 +126,23 @@ const renderBlock = (block: BlogBlock, index: number) => {
 
     case "visual-break":
       return (
-        <div key={`${block.type}-${index}`} className="my-12 border-y border-[#11111f]/10 py-6">
-          <div className="mb-5 text-[13px] font-black uppercase tracking-[0.08em] text-primary">
-            {block.title}
-          </div>
+        <section
+          key={`${block.type}-${index}`}
+          id={block.id}
+          className="my-12 scroll-mt-28 border-y border-[#11111f]/10 py-6"
+        >
+          {block.heading ? (
+            <>
+              <SectionLabel>{block.label ?? "Framework"}</SectionLabel>
+              <h2 className="mb-5 mt-0 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[46px]">
+                {block.title}
+              </h2>
+            </>
+          ) : (
+            <div className="mb-5 text-[13px] font-black uppercase tracking-[0.08em] text-primary">
+              {block.title}
+            </div>
+          )}
           <div className="grid gap-8 md:grid-cols-2">
             {block.items.map((item) => (
               <div key={item.title}>
@@ -142,7 +155,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       );
 
     case "inline-cta":
@@ -476,7 +489,9 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
                         className="border-b border-[#11111f]/10 py-5"
                       >
                         <summary className="cursor-pointer list-none text-lg font-black text-[#171421]">
-                          {item.question}
+                          <h3 className="inline text-lg font-black text-[#171421]">
+                            {item.question}
+                          </h3>
                         </summary>
                         <p className="mb-0 mt-3 max-w-[760px] text-[16.5px] leading-[1.65] text-[#5d5668]">
                           {item.answer}

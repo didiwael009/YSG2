@@ -317,7 +317,7 @@ const blogPostToSeoRoute = (post: (typeof blogPosts)[number]): SeoRoute => ({
   publishedAt: post.publishedAt,
   breadcrumbs: [
     { name: "Blog", path: "/blog" },
-    { name: post.category, path: post.path },
+    { name: post.breadcrumbTitle ?? post.title, path: post.path },
   ],
   excerpt: post.excerpt,
   links: post.relatedPosts.map((related) => ({ label: related.title, path: related.href })),
