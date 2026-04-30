@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Target, Zap, Check, Star, Globe, BarChart3 } from "lucide-react";
 import { Link } from "react-router-dom";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
 import bottlenexusLogo from "@/assets/bottlenexus-logo.svg";
 import { CALENDLY_URL } from "@/lib/constants";
@@ -83,7 +84,7 @@ const CaseStudyBottlenexus = () => {
               <span className="text-sm text-muted-foreground ml-2">bottlenexus.com</span>
             </div>
             <div className="p-2">
-              <img src={landingBottlenexus} alt="BottleNexus landing page" className="w-full rounded-lg" />
+              <ResponsiveImage src={landingBottlenexus} alt="BottleNexus landing page" className="w-full rounded-lg" loading="lazy" decoding="async" sizes="100vw" />
             </div>
           </div>
         </div>

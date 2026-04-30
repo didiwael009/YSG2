@@ -2,6 +2,7 @@ import { useEffect, type ReactNode } from "react";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import { Button } from "@/components/ui/button";
 import { CALENDLY_URL } from "@/lib/constants";
 import { ArrowRight, Check, X } from "lucide-react";
@@ -206,7 +207,14 @@ const GrowthCaseStudyPage = ({
                       <strong className="text-sm text-foreground">{side.title}</strong>
                     </div>
                     <div className="overflow-hidden rounded-xl border border-border bg-white">
-                      <img src={side.image} alt={side.alt} className="h-[380px] w-full object-cover object-top" loading="lazy" />
+                      <ResponsiveImage
+                        src={side.image}
+                        alt={side.alt}
+                        className="h-[380px] w-full object-cover object-top"
+                        loading="lazy"
+                        decoding="async"
+                        sizes="(min-width: 1024px) 45vw, 100vw"
+                      />
                     </div>
                     <ul className="mt-5 grid gap-3">
                       {side.points.map((point) => (

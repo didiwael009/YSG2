@@ -1,4 +1,5 @@
 import { Play, Eye, TrendingUp, Sparkles } from "lucide-react";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 export interface VideoProject {
   title: string;
@@ -19,7 +20,7 @@ const VideoGrid = ({ projects }: { projects: VideoProject[] }) => {
       {/* Vertical card */}
       <a href={vertical.link} target="_blank" rel="noopener noreferrer" className="md:col-span-4 group cursor-pointer">
         <div className="relative aspect-[9/16] rounded-3xl overflow-hidden bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20">
-          <img src={vertical.cover} alt={vertical.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+          <ResponsiveImage src={vertical.cover} alt={vertical.title} loading="lazy" decoding="async" sizes="(min-width: 768px) 33vw, 100vw" className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
           <div className="absolute inset-0 p-6 flex flex-col justify-between">
             <span className="inline-block w-fit px-3 py-1 rounded-full bg-background/80 backdrop-blur-sm text-xs font-semibold text-foreground">
@@ -62,7 +63,7 @@ function HorizontalVideoCard({
   return (
     <a href={project.link} target="_blank" rel="noopener noreferrer" className="group flex-1 cursor-pointer block">
       <div className="relative h-full min-h-[280px] rounded-3xl overflow-hidden bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20">
-        <img src={project.cover} alt={project.title} loading="lazy" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
+        <ResponsiveImage src={project.cover} alt={project.title} loading="lazy" decoding="async" sizes="(min-width: 768px) 50vw, 100vw" className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/30" />
         <div className="absolute inset-0 p-8 flex flex-col md:flex-row md:items-center gap-6">
           <div className="flex-1">

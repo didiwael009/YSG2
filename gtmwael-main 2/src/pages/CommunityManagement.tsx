@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 import cmShipzzerCollage from "@/assets/cm-shipzzer-collage.jpg";
 import cmShipzzerRow from "@/assets/cm-shipzzer-row.png";
@@ -106,16 +107,16 @@ const CommunityManagement = () => {
                 <div className="space-y-6">
                   {/* Wide collage images */}
                   <div className="rounded-2xl overflow-hidden border border-border/30">
-                    <img src={client.images[0].src} alt={client.images[0].alt} className="w-full h-auto" loading="lazy" />
+                    <ResponsiveImage src={client.images[0].src} alt={client.images[0].alt} className="w-full h-auto" loading="lazy" decoding="async" sizes="100vw" />
                   </div>
                   <div className="rounded-2xl overflow-hidden border border-border/30">
-                    <img src={client.images[1].src} alt={client.images[1].alt} className="w-full h-auto" loading="lazy" />
+                    <ResponsiveImage src={client.images[1].src} alt={client.images[1].alt} className="w-full h-auto" loading="lazy" decoding="async" sizes="100vw" />
                   </div>
                   {/* Square grid */}
                   <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
                     {client.images.slice(2).map((img, i) => (
                       <div key={i} className="rounded-2xl overflow-hidden border border-border/30 aspect-square">
-                        <img src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" />
+                        <ResponsiveImage src={img.src} alt={img.alt} className="w-full h-full object-cover" loading="lazy" decoding="async" sizes="(min-width: 640px) 33vw, 100vw" />
                       </div>
                     ))}
                   </div>
@@ -124,23 +125,23 @@ const CommunityManagement = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl">
                   {client.images.map((img, i) => (
                     <div key={i} className="rounded-2xl overflow-hidden border border-border/30 aspect-[3/4]">
-                      <img src={img.src} alt={img.alt} className="w-full h-full object-cover object-top" loading="lazy" />
+                      <ResponsiveImage src={img.src} alt={img.alt} className="w-full h-full object-cover object-top" loading="lazy" decoding="async" sizes="(min-width: 640px) 50vw, 100vw" />
                     </div>
                   ))}
                 </div>
               ) : client.name === "Clarrio.ai" ? (
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="rounded-2xl overflow-hidden border border-border/30 aspect-square">
-                    <img src={client.images[0].src} alt={client.images[0].alt} className="w-full h-full object-cover" loading="lazy" />
+                    <ResponsiveImage src={client.images[0].src} alt={client.images[0].alt} className="w-full h-full object-cover" loading="lazy" decoding="async" sizes="(min-width: 768px) 50vw, 100vw" />
                   </div>
                   <div className="rounded-2xl overflow-hidden border border-border/30 aspect-square md:aspect-auto">
-                    <img src={client.images[1].src} alt={client.images[1].alt} className="w-full h-full object-cover" loading="lazy" />
+                    <ResponsiveImage src={client.images[1].src} alt={client.images[1].alt} className="w-full h-full object-cover" loading="lazy" decoding="async" sizes="(min-width: 768px) 50vw, 100vw" />
                   </div>
                 </div>
               ) : (
                 <div className="max-w-lg">
                   <div className="rounded-2xl overflow-hidden border border-border/30 aspect-square">
-                    <img src={client.images[0].src} alt={client.images[0].alt} className="w-full h-full object-cover" loading="lazy" />
+                    <ResponsiveImage src={client.images[0].src} alt={client.images[0].alt} className="w-full h-full object-cover" loading="lazy" decoding="async" sizes="(min-width: 640px) 512px, 100vw" />
                   </div>
                 </div>
               )}

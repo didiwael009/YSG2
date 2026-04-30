@@ -1,6 +1,7 @@
 import { Quote, ExternalLink } from "lucide-react";
 import { useState, useEffect } from "react";
 import AnimateIn from "./AnimateIn";
+import ResponsiveImage from "@/components/ResponsiveImage";
 const khoubeibPhoto = "/khoubeib-96.webp";
 
 const testimonials = [
@@ -65,13 +66,14 @@ const TestimonialSection = () => {
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-border-light relative z-10">
                 <div className="flex items-center gap-3 transition-opacity duration-500" key={`header-${active}`}>
                   {t.photo ? (
-                    <img
+                    <ResponsiveImage
                       src={t.photo}
                       alt={t.name}
                       width={48}
                       height={48}
                       loading="lazy"
                       decoding="async"
+                      sizes="48px"
                       className="w-12 h-12 rounded-full object-cover border-2 border-primary/30"
                     />
                   ) : (

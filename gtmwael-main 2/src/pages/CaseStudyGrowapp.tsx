@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, TrendingDown, Target, Zap, Check, Star } from "lucide-react";
 import { Link } from "react-router-dom";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import growappLogo from "@/assets/growapp-logo.jpeg";
 import growappDashboard from "@/assets/growapp-meta-dashboard.png";
 
@@ -33,9 +34,10 @@ const CaseStudyGrowapp = () => {
           </Link>
           
           <div className="flex items-center gap-4 mb-6">
-            <img 
+            <ResponsiveImage
               src={growappLogo} 
               alt="Growapp" 
+              sizes="48px"
               className="w-12 h-12 rounded-xl object-cover"
             />
             <div className="inline-block px-3 py-1 bg-cyan-400/10 text-cyan-400 text-sm font-medium rounded-full">
@@ -123,9 +125,12 @@ const CaseStudyGrowapp = () => {
             
             {/* Dashboard content */}
             <div className="p-2">
-              <img 
+              <ResponsiveImage
                 src={growappDashboard} 
                 alt="Meta Ads Manager dashboard showing Growapp campaigns with £3-£7 CPL" 
+                loading="lazy"
+                decoding="async"
+                sizes="100vw"
                 className="w-full rounded-lg"
               />
             </div>
@@ -344,9 +349,10 @@ const CaseStudyGrowapp = () => {
               "Wael turned our Meta Ads around completely. We went from burning budget on £30+ leads to getting qualified trials at £3–£7. The sales team finally has enough pipeline to work with."
             </p>
             <footer className="flex items-center justify-center gap-4">
-              <img 
+              <ResponsiveImage
                 src={growappLogo} 
                 alt="Growapp" 
+                sizes="48px"
                 className="w-12 h-12 rounded-full object-cover"
               />
               <div className="text-left">

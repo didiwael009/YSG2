@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Monitor, AppWindow } from "lucide-react";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import landingScreenplay from "@/assets/landing-screenplay.webp";
 import screenplayDashboard from "@/assets/screenplay-dashboard.png";
 
@@ -44,10 +45,12 @@ const ScreenplaySlider = () => {
             style={{ transform: active === "dashboard" ? "translateX(-100%)" : "translateX(0)" }}
           >
             {tabs.map((tab) => (
-              <img
+              <ResponsiveImage
                 key={tab.id}
                 src={tab.src}
                 alt={tab.alt}
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                decoding="async"
                 className="w-full h-auto block flex-shrink-0"
               />
             ))}

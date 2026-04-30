@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ScreenplaySlider from "@/components/ScreenplaySlider";
 import AnimateIn from "@/components/AnimateIn";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import landingClarrio from "@/assets/landing-clarrio.jpg";
 import landingZembra from "@/assets/landing-zembra.png";
 import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
@@ -141,7 +142,7 @@ const LandingPageConversion = () => {
             <AnimateIn delay={200} className="flex-shrink-0">
               <div className="relative">
                 <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full scale-75" />
-                <img
+                <ResponsiveImage
                   src={playbookCover}
                   alt="Landing Page Playbook 2026 — Free download"
                   width={1024}
@@ -149,6 +150,7 @@ const LandingPageConversion = () => {
                   className="relative w-64 md:w-80 lg:w-96 h-auto drop-shadow-2xl hover:scale-105 transition-transform duration-500 cursor-pointer"
                   onClick={openLeadModal}
                   decoding="async"
+                  sizes="(min-width: 1024px) 384px, (min-width: 768px) 320px, 256px"
                 />
               </div>
             </AnimateIn>
@@ -225,7 +227,7 @@ const LandingPageConversion = () => {
               <AnimateIn key={i} delay={150 + i * 100}>
                 <div className="rounded-2xl border border-border/50 overflow-hidden bg-card/30 hover:border-primary/30 transition-all duration-300 group">
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img
+                    <ResponsiveImage
                       src={preview.img}
                       alt={preview.label}
                       width={800}
@@ -233,6 +235,7 @@ const LandingPageConversion = () => {
                       className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                       loading="lazy"
                       decoding="async"
+                      sizes="(min-width: 768px) 33vw, 100vw"
                     />
                   </div>
                   <div className="p-5">
@@ -352,7 +355,7 @@ const LandingPageConversion = () => {
                 >
                   <div className="rounded-2xl border border-border/50 overflow-hidden bg-card/30 hover:border-primary/30 transition-all duration-300">
                     <div className="aspect-[16/10] overflow-hidden">
-                      <img
+                      <ResponsiveImage
                         src={project.cover}
                         alt={project.title}
                         width={960}
@@ -360,6 +363,7 @@ const LandingPageConversion = () => {
                         className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
                         decoding="async"
+                        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                       />
                     </div>
                     <div className="p-5 space-y-2">

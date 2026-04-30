@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import VideoGrid from "@/components/VideoGrid";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import { videoProjects } from "@/lib/video-data";
 import { CALENDLY_URL } from "@/lib/constants";
 import landingClarrio from "@/assets/landing-clarrio.jpg";
@@ -103,10 +104,12 @@ const Creative = () => {
             className="group block mb-8"
           >
             <div className="relative aspect-[16/9] rounded-3xl overflow-hidden bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20">
-              <img 
+              <ResponsiveImage
                 src={rebrandingProjects[0].cover} 
                 alt={rebrandingProjects[0].title}
                 loading="lazy"
+                decoding="async"
+                sizes="100vw"
                 className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
@@ -134,10 +137,12 @@ const Creative = () => {
                 className="group"
               >
                 <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl mb-4">
-                  <img 
+                  <ResponsiveImage
                     src={page.cover} 
                     alt={page.title}
                     loading="lazy"
+                    decoding="async"
+                    sizes="(min-width: 768px) 50vw, 100vw"
                     className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20" />

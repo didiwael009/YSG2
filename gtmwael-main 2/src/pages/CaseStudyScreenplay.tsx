@@ -1,4 +1,5 @@
 import GrowthCaseStudyPage from "@/components/case-study/GrowthCaseStudyPage";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import oldLanding from "@/assets/screenplay-old-landing.jpg";
 import newLanding from "@/assets/screenplay-hero-screenshot.png";
 import oldUpload from "@/assets/screenplay-old-pricing.webp";
@@ -18,7 +19,14 @@ const Slider = ({ title, images }: { title: string; images: { label: string; src
             <figcaption className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-primary">
               {image.label}
             </figcaption>
-            <img src={image.src} alt={image.label} className="h-[420px] w-full rounded-xl border border-border bg-white object-contain object-top" loading="lazy" />
+            <ResponsiveImage
+              src={image.src}
+              alt={image.label}
+              className="h-[420px] w-full rounded-xl border border-border bg-white object-contain object-top"
+              loading="lazy"
+              decoding="async"
+              sizes="(min-width: 768px) 54vw, 86vw"
+            />
           </figure>
         ))}
       </div>

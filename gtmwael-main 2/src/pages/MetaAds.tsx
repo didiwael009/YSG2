@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, Target, Users, Palette, Check, Download, Star, ExternalLink, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 import metaAdsDashboard from "@/assets/meta-ads-dashboard.png";
 import adCreative1 from "@/assets/ad-creative-1.jpg";
@@ -230,10 +231,12 @@ const MetaAds = () => {
                   
                   {/* Dashboard content */}
                   <div className="p-2">
-                    <img 
+                    <ResponsiveImage
                       src={metaAdsDashboard} 
                       alt="Meta Ads Manager Dashboard showing campaign performance" 
                       className="w-full rounded-lg"
+                      sizes="(min-width: 1024px) 50vw, 100vw"
+                      decoding="async"
                     />
                   </div>
                 </div>
@@ -350,10 +353,13 @@ const MetaAds = () => {
           {/* Dashboard Screenshot */}
           <div className="mb-16">
             <div className="bg-card/30 border border-border rounded-2xl p-4 overflow-hidden">
-              <img 
+              <ResponsiveImage
                 src={metaAdsDashboard} 
                 alt="Meta Ads Manager Dashboard showing campaign performance" 
                 className="w-full rounded-xl"
+                loading="lazy"
+                decoding="async"
+                sizes="100vw"
               />
             </div>
           </div>
@@ -428,10 +434,13 @@ const MetaAds = () => {
                 key={index} 
                 className="bg-card/30 border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-colors aspect-[4/5]"
               >
-                <img 
+                <ResponsiveImage
                   src={creative.src} 
                   alt={creative.alt} 
                   className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  decoding="async"
+                  sizes="(min-width: 768px) 25vw, 50vw"
                 />
               </div>
             ))}

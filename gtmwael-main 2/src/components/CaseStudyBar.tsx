@@ -1,6 +1,7 @@
 import { useRef, useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import ResponsiveImage from "@/components/ResponsiveImage";
 
 import landingZembra from "@/assets/landing-zembra.png";
 import landingShipzzer from "@/assets/landing-shipzzer.jpg";
@@ -155,7 +156,7 @@ const CaseStudyBar = () => {
               <div className="rounded-2xl border border-border/30 bg-card/60 backdrop-blur-sm overflow-hidden hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5">
                 {/* Thumbnail */}
                 <div className="relative w-full h-[180px] sm:h-[200px] overflow-hidden">
-                  <img
+                  <ResponsiveImage
                     src={study.image}
                     alt={`${study.client} case study`}
                     width={320}
@@ -163,6 +164,7 @@ const CaseStudyBar = () => {
                     className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
+                    sizes="(min-width: 768px) 320px, 280px"
                   />
                   {/* Achievement badge */}
                   <div className="absolute top-3 right-3 px-3 py-1.5 rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-lg">

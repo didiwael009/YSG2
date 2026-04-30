@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, TrendingUp, Target, Zap, Check, Star, Layout, MousePointerClick, MessageSquare, Layers } from "lucide-react";
 import { Link } from "react-router-dom";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import icCenterHero from "@/assets/ic-center-hero.png";
 import icCenterFullLanding from "@/assets/ic-center-full-landing.png";
 import { CALENDLY_URL } from "@/lib/constants";
@@ -85,7 +86,7 @@ const CaseStudyICCenter = () => {
                 <span className="text-sm text-muted-foreground ml-2">IC Center — Hero Section</span>
               </div>
               <div className="p-2">
-                <img src={icCenterHero} alt="IC Center landing page hero section" className="w-full rounded-lg" />
+                <ResponsiveImage src={icCenterHero} alt="IC Center landing page hero section" className="w-full rounded-lg" loading="lazy" decoding="async" sizes="100vw" />
               </div>
             </div>
 
@@ -100,7 +101,7 @@ const CaseStudyICCenter = () => {
                 <span className="text-sm text-muted-foreground ml-2">IC Center — Full Landing Page</span>
               </div>
               <div className="p-2">
-                <img src={icCenterFullLanding} alt="IC Center full landing page" className="w-full rounded-lg" />
+                <ResponsiveImage src={icCenterFullLanding} alt="IC Center full landing page" className="w-full rounded-lg" loading="lazy" decoding="async" sizes="100vw" />
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { ArrowRight, type LucideIcon } from "lucide-react";
 import { Link } from "react-router-dom";
+import ResponsiveImage from "@/components/ResponsiveImage";
 import { Button } from "@/components/ui/button";
 
 /* =========================================================================
@@ -203,7 +204,14 @@ export const BrowserFrame = ({
       )}
     </div>
     <div className="bg-white overflow-hidden" style={{ maxHeight: height }}>
-      <img src={src} alt={alt} loading="lazy" className="w-full h-auto block" />
+      <ResponsiveImage
+        src={src}
+        alt={alt}
+        loading="lazy"
+        decoding="async"
+        sizes="(min-width: 1024px) 50vw, 100vw"
+        className="w-full h-auto block"
+      />
     </div>
   </figure>
 );
