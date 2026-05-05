@@ -61,8 +61,7 @@ const lastmod = new Date().toISOString().slice(0, 10);
 const prerenderRoutes = new Set([
   "/",
   "/blog",
-  "/blog/saas-landing-page-google-meta-ads",
-  "/blog/saas-traffic-but-no-signups",
+  ...blogPosts.map((post) => post.path),
   "/case-studies",
   "/case-study/shipzzer",
   "/case-study/zembra",
