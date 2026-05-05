@@ -21,6 +21,11 @@
   ],
   "redirects": [
     {
+      "source": "/(.*)/",
+      "destination": "/$1",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
