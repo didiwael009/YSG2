@@ -16,6 +16,8 @@ const ResponsiveImage = ({ src, sizes = "100vw", width, height, ...props }: Resp
       sizes={responsive ? sizes : undefined}
       width={width ?? responsive?.width}
       height={height ?? responsive?.height}
+      loading="lazy"
+      decoding="async"
       {...props}
     />
   );
