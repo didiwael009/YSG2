@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ArrowRight, Target, Users, Palette, Check, Download, Star, ExternalLink, X } from "lucide-react";
+import { ArrowRight, Target, Users, Palette, Check, Download, Star, ExternalLink, X, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import ResponsiveImage from "@/components/ResponsiveImage";
 
@@ -103,6 +103,45 @@ const creatives = [
   { src: adCreative2, alt: "Concept creative - product showcase" },
   { src: adCreative3, alt: "Split comparison creative" },
   { src: adCreative4, alt: "Story ad creative - vertical format" },
+];
+
+const videoReferences = [
+  {
+    title: "One Great Book startup ad",
+    handle: "@wael.metaads",
+    status: "Featured",
+    format: "Main Shorts reference",
+    youtubeUrl: "https://youtube.com/shorts/775cuQpyzd8?feature=share",
+    thumbnail: "https://img.youtube.com/vi/775cuQpyzd8/hqdefault.jpg",
+    likes: "+11M",
+    followers: "+12K",
+    accent: "from-orange-500/24 via-orange-950/35 to-amber-950/35",
+    border: "border-orange-300/20",
+  },
+  {
+    title: "UGC script teardown",
+    handle: "@wael.metaads",
+    status: "Active",
+    format: "Shorts reference 2",
+    youtubeUrl: "https://youtube.com/shorts/HnxBXKyFiQI",
+    thumbnail: "https://img.youtube.com/vi/HnxBXKyFiQI/hqdefault.jpg",
+    likes: "+5M",
+    followers: "+18K",
+    accent: "from-violet-500/24 via-purple-950/35 to-fuchsia-950/35",
+    border: "border-violet-300/20",
+  },
+  {
+    title: "Creative rotation 101",
+    handle: "@wael.metaads",
+    status: "Active",
+    format: "Shorts reference 3",
+    youtubeUrl: "https://youtube.com/shorts/PGUHcI72MdU?feature=share",
+    thumbnail: "https://img.youtube.com/vi/PGUHcI72MdU/hqdefault.jpg",
+    likes: "+2M",
+    followers: "+4K",
+    accent: "from-cyan-500/20 via-sky-950/35 to-blue-950/35",
+    border: "border-cyan-300/20",
+  },
 ];
 
 const MetaAds = () => {
@@ -253,6 +292,110 @@ const MetaAds = () => {
         
         {/* Bottom gradient fade */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      </section>
+
+      {/* Creative Gallery */}
+      <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="mb-4 text-sm font-bold uppercase tracking-[0.32em] text-orange-500">Video portfolio</p>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              Vertical video that <span className="text-orange-500">scrolls win</span>
+            </h2>
+            <p className="mx-auto max-w-2xl text-lg md:text-xl leading-relaxed text-muted-foreground">
+              Three vertical formats engineered for Reels, Shorts, and TikTok. Hook in 2s, payoff in 15.
+            </p>
+          </div>
+
+          <div className="mx-auto mb-12 grid max-w-5xl gap-5 md:grid-cols-3">
+            {videoReferences.map((video) => (
+              <article
+                key={video.title}
+                className={`rounded-2xl border bg-card/40 p-4 shadow-xl shadow-black/15 ${
+                  video.status === "Featured" ? "border-orange-500/55" : "border-border"
+                }`}
+              >
+                <div className="mb-4 flex items-center justify-between gap-3">
+                  <div className="flex min-w-0 items-center gap-3">
+                    <div className="h-10 w-10 shrink-0 rounded-full border border-orange-300/20 bg-gradient-to-br from-orange-500/45 to-red-950/60" />
+                    <div className="min-w-0">
+                      <p className="text-xs text-muted-foreground">{video.handle}</p>
+                      <h3 className="truncate text-base font-bold leading-tight text-foreground">{video.title}</h3>
+                    </div>
+                  </div>
+                  <span className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide ${
+                    video.status === "Featured"
+                      ? "border-orange-500/35 bg-orange-500/10 text-orange-400"
+                      : "border-emerald-400/20 bg-emerald-400/10 text-emerald-300"
+                  }`}>
+                    <span className={`h-2 w-2 rounded-full ${video.status === "Featured" ? "bg-orange-500" : "bg-emerald-300"}`} />
+                    {video.status}
+                  </span>
+                </div>
+
+                <a
+                  href={video.youtubeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Open ${video.title} on YouTube Shorts`}
+                  className={`group relative block aspect-[9/16] max-h-[420px] overflow-hidden rounded-2xl border ${video.border} bg-gradient-to-br ${video.accent}`}
+                >
+                  <img
+                    src={video.thumbnail}
+                    alt={`${video.title} YouTube thumbnail`}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-transparent to-black/45" />
+                  <span className="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-xs font-bold text-black">
+                    Shorts
+                  </span>
+                  <span className="absolute inset-0 flex items-center justify-center">
+                    <span className="flex h-16 w-16 items-center justify-center rounded-[22px] bg-red-500 text-white shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                      <Play className="ml-1 h-8 w-8 fill-current" />
+                    </span>
+                  </span>
+                  <span className="absolute bottom-4 left-4 right-4">
+                    <span className="mb-1 block text-[11px] font-semibold uppercase tracking-[0.16em] text-white/70">
+                      {video.format}
+                    </span>
+                    <span className="block text-lg font-bold leading-tight text-white">{video.title}</span>
+                  </span>
+                </a>
+
+                <div className="mt-5 grid grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Likes</p>
+                    <p className="mt-1 text-2xl font-bold text-foreground">{video.likes}</p>
+                  </div>
+                  <div>
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Followers</p>
+                    <p className="mt-1 text-2xl font-bold text-foreground">{video.followers}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {creatives.map((creative, index) => (
+              <div 
+                key={index} 
+                className="bg-card/30 border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-colors aspect-[4/5]"
+              >
+                <ResponsiveImage
+                  src={creative.src} 
+                  alt={creative.alt} 
+                  className="w-full h-full object-cover object-top"
+                  loading="lazy"
+                  decoding="async"
+                  sizes="(min-width: 768px) 25vw, 50vw"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Why Your Spend Underperforms */}
@@ -414,34 +557,6 @@ const MetaAds = () => {
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Creative Gallery */}
-      <section className="py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Creative examples</h2>
-            <p className="text-lg text-muted-foreground">Feed, Stories, Reels formats</p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {creatives.map((creative, index) => (
-              <div 
-                key={index} 
-                className="bg-card/30 border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-colors aspect-[4/5]"
-              >
-                <ResponsiveImage
-                  src={creative.src} 
-                  alt={creative.alt} 
-                  className="w-full h-full object-cover object-top"
-                  loading="lazy"
-                  decoding="async"
-                  sizes="(min-width: 768px) 25vw, 50vw"
-                />
               </div>
             ))}
           </div>

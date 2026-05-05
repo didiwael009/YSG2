@@ -32,14 +32,40 @@ const setLink = (rel: string, href: string) => {
   element.setAttribute("href", href);
 };
 
+const getSchemaTypes = (data: unknown) => {
+  if (!data || typeof data !== "object") return [];
+  const type = (data as { "@type"?: unknown })["@type"];
+  return Array.isArray(type) ? type.filter((item): item is string => typeof item === "string") : typeof type === "string" ? [type] : [];
+};
+
+const findJsonLdByType = (data: unknown) => {
+  const targetTypes = getSchemaTypes(data);
+  if (!targetTypes.length) return null;
+
+  const scripts = document.head.querySelectorAll<HTMLScriptElement>('script[type="application/ld+json"]');
+  for (const script of scripts) {
+    try {
+      const existing = JSON.parse(script.textContent ?? "");
+      const existingTypes = getSchemaTypes(existing);
+      if (targetTypes.some((type) => existingTypes.includes(type))) return script;
+    } catch {
+      continue;
+    }
+  }
+
+  return null;
+};
+
 const setJsonLd = (id: string, data: unknown) => {
   let element = document.getElementById(id) as HTMLScriptElement | null;
+  if (!element) element = findJsonLdByType(data);
   if (!element) {
     element = document.createElement("script");
-    element.id = id;
     element.type = "application/ld+json";
     document.head.appendChild(element);
   }
+  element.id = id;
+  element.type = "application/ld+json";
   element.textContent = JSON.stringify(data);
 };
 
