@@ -144,6 +144,33 @@ const videoReferences = [
   },
 ];
 
+const staticImageReferences = [
+  {
+    slot: 1,
+    title: "Structured authority book",
+    src: "/meta-ads-references/one-great-book-structured-authority.webp",
+    alt: "One Great Book static ad showing a structured authority book concept",
+  },
+  {
+    slot: 2,
+    title: "Built from real expertise",
+    src: "/meta-ads-references/one-great-book-expertise.webp",
+    alt: "One Great Book static ad showing a founder writing from real expertise",
+  },
+  {
+    slot: 3,
+    title: "Manual notes vs outline",
+    src: "/meta-ads-references/one-great-book-manual-vs-outline.webp",
+    alt: "One Great Book static ad comparing manual notes with a clear outline",
+  },
+  {
+    slot: 4,
+    title: "Build your preview",
+    src: "/meta-ads-references/one-great-book-preview-toggle.webp",
+    alt: "One Great Book static ad showing off versus on preview positioning",
+  },
+];
+
 const MetaAds = () => {
   const [showLeadModal, setShowLeadModal] = useState(false);
   const [leadForm, setLeadForm] = useState({ name: "", email: "" });
@@ -392,6 +419,50 @@ const MetaAds = () => {
                   decoding="async"
                   sizes="(min-width: 768px) 25vw, 50vw"
                 />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Static Image References */}
+      <section className="px-6 pb-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-8 text-center">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.28em] text-primary">Static image references</p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+            {staticImageReferences.map((reference) => (
+              <div
+                key={reference.slot}
+                className={`group relative aspect-[9/16] overflow-hidden rounded-2xl border bg-card/30 ${
+                  reference.src ? "border-border" : "border-dashed border-border"
+                }`}
+              >
+                {reference.src ? (
+                  <>
+                    <img
+                      src={reference.src}
+                      alt={reference.alt}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </>
+                ) : (
+                  <>
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-orange-500/10" />
+                    <div className="absolute inset-4 rounded-xl border border-white/10 bg-background/20" />
+                    <div className="relative flex h-full flex-col items-center justify-center p-5 text-center">
+                      <span className="mb-3 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-card/70 text-sm font-bold text-muted-foreground">
+                        {reference.slot}
+                      </span>
+                      <p className="text-sm font-semibold text-foreground">Image placeholder</p>
+                      <p className="mt-1 text-xs text-muted-foreground">Vertical ad reference</p>
+                    </div>
+                  </>
+                )}
               </div>
             ))}
           </div>
