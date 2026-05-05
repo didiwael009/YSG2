@@ -68,6 +68,7 @@ const prerenderRoutes = new Set([
   "/case-study/pubrella",
   "/services/landing-page",
   "/services/cold-email",
+  "/services/meta-ads",
   "/book",
 ]);
 const ogAssetRoutes = new Set();

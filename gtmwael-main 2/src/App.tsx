@@ -12,10 +12,10 @@ import CaseStudyShipzzer from "./pages/CaseStudyShipzzer";
 import CaseStudyZembra from "./pages/CaseStudyZembra";
 import ColdEmail from "./pages/ColdEmail";
 import LandingPageConversion from "./pages/LandingPageConversion";
+import MetaAds from "./pages/MetaAds";
 
 // Lazy load non-critical route pages
 const Creative = lazy(() => import("./pages/Creative"));
-const MetaAds = lazy(() => import("./pages/MetaAds"));
 const CaseStudyWriteYourBook = lazy(() => import("./pages/CaseStudyWriteYourBook"));
 const CaseStudyGrowapp = lazy(() => import("./pages/CaseStudyGrowapp"));
 const CaseStudyScreenplay = lazy(() => import("./pages/CaseStudyScreenplay"));
@@ -35,7 +35,7 @@ export const AppRoutes = () => (
       <Route path="/" element={<Index />} />
       <Route path="/creative" element={lazyRoute(<Creative />)} />
       <Route path="/services/cold-email" element={<ColdEmail />} />
-      <Route path="/services/meta-ads" element={lazyRoute(<MetaAds />)} />
+      <Route path="/services/meta-ads" element={<MetaAds />} />
       <Route path="/case-studies" element={<CaseStudies />} />
       <Route path="/case-study/write-your-book" element={lazyRoute(<CaseStudyWriteYourBook />)} />
       <Route path="/case-study/growapp" element={lazyRoute(<CaseStudyGrowapp />)} />

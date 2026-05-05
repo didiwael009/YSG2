@@ -302,6 +302,7 @@ const MetaAds = () => {
                       alt="Meta Ads Manager Dashboard showing campaign performance" 
                       className="w-full rounded-lg"
                       sizes="(min-width: 1024px) 50vw, 100vw"
+                      loading="eager"
                       decoding="async"
                     />
                   </div>

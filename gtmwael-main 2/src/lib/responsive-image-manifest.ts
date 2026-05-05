@@ -1028,5 +1028,78 @@ export const responsiveImageManifest = {
         "bytes": 13508
       }
     ]
+  },
+  "one-great-book-expertise": {
+    "width": 941,
+    "height": 1672,
+    "originalBytes": 236332,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/one-great-book-expertise-320.webp",
+        "bytes": 17598
+      },
+      {
+        "width": 640,
+        "src": "/responsive/one-great-book-expertise-640.webp",
+        "bytes": 47622
+      }
+    ]
+  },
+  "one-great-book-manual-vs-outline": {
+    "width": 1122,
+    "height": 1402,
+    "originalBytes": 138954,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/one-great-book-manual-vs-outline-320.webp",
+        "bytes": 11796
+      },
+      {
+        "width": 640,
+        "src": "/responsive/one-great-book-manual-vs-outline-640.webp",
+        "bytes": 29024
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/one-great-book-manual-vs-outline-1024.webp",
+        "bytes": 48960
+      }
+    ]
+  },
+  "one-great-book-preview-toggle": {
+    "width": 941,
+    "height": 1672,
+    "originalBytes": 113640,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/one-great-book-preview-toggle-320.webp",
+        "bytes": 14446
+      },
+      {
+        "width": 640,
+        "src": "/responsive/one-great-book-preview-toggle-640.webp",
+        "bytes": 31008
+      }
+    ]
+  },
+  "one-great-book-structured-authority": {
+    "width": 941,
+    "height": 1672,
+    "originalBytes": 169996,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/one-great-book-structured-authority-320.webp",
+        "bytes": 15376
+      },
+      {
+        "width": 640,
+        "src": "/responsive/one-great-book-structured-authority-640.webp",
+        "bytes": 36416
+      }
+    ]
   }
 } as const satisfies Record<string, ResponsiveImageEntry>;
