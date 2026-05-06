@@ -20,6 +20,33 @@ const SectionLabel = ({ children }: { children: string }) => (
   </span>
 );
 
+const renderInlineText = (text: string) => {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+
+  return parts.map((part, index) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (!match) return part;
+
+    const [, label, href] = match;
+    const className =
+      "font-semibold text-[#171421] underline decoration-primary/40 decoration-2 underline-offset-4 hover:text-primary";
+
+    if (href.startsWith("/")) {
+      return (
+        <Link key={`${href}-${index}`} to={href} className={className}>
+          {label}
+        </Link>
+      );
+    }
+
+    return (
+      <a key={`${href}-${index}`} href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {label}
+      </a>
+    );
+  });
+};
+
 const Paragraphs = ({
   paragraphs,
   lead = false,
@@ -41,7 +68,7 @@ const Paragraphs = ({
             : ""
         }`}
       >
-        {paragraph}
+        {renderInlineText(paragraph)}
       </p>
     ))}
   </>
@@ -117,7 +144,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
                 {item.title}
               </h3>
               <p className="mb-0 max-w-[760px] text-[16.5px] leading-[1.68] text-[#4d4658]">
-                {item.body}
+                {renderInlineText(item.body)}
               </p>
             </div>
           ))}
@@ -149,7 +176,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
                 <strong className="mb-3 block text-lg text-[#14111f]">{item.title}</strong>
                 <ul className="m-0 max-w-[760px] list-disc pl-5 text-[15.5px] leading-[1.75] text-[#514b5d]">
                   {item.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
+                    <li key={bullet}>{renderInlineText(bullet)}</li>
                   ))}
                 </ul>
               </div>
@@ -197,8 +224,8 @@ const renderBlock = (block: BlogBlock, index: number) => {
                   <h3 className="mb-2 mt-0 font-display text-[21px] font-bold leading-tight text-[#11101a]">
                     {item.title}
                   </h3>
-              <p className="mb-0 max-w-[760px] text-[17px] leading-[1.68] text-[#4d4658]">
-                    {item.body}
+                  <p className="mb-0 max-w-[760px] text-[17px] leading-[1.68] text-[#4d4658]">
+                    {renderInlineText(item.body)}
                   </p>
                 </div>
               </div>
@@ -232,7 +259,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
                 <strong className="font-black">
                   {String(itemIndex + 1).padStart(2, "0")} - {item.title}
                 </strong>{" "}
-                {item.body}
+                {renderInlineText(item.body)}
               </div>
             ))}
           </div>
@@ -254,7 +281,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
                   {item.title}
                 </h3>
                 <p className="mb-0 max-w-[760px] text-[16.5px] leading-[1.68] text-[#4d4658]">
-                  {item.body}
+                  {renderInlineText(item.body)}
                 </p>
               </div>
             ))}
@@ -300,10 +327,10 @@ const renderBlock = (block: BlogBlock, index: number) => {
                         <strong className="text-[#15121f]">{row.element}</strong>
                       </td>
                       <td className="break-words border-t border-[#11111f]/10 p-4 align-top text-[#494353]">
-                        {row.google}
+                        {renderInlineText(row.google)}
                       </td>
                       <td className="break-words border-t border-[#11111f]/10 p-4 align-top text-[#494353]">
-                        {row.meta}
+                        {renderInlineText(row.meta)}
                       </td>
                     </tr>
                   ))}
@@ -351,7 +378,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
           </h3>
           <ul className="m-0 list-disc pl-5 text-base leading-[1.75] text-[#493c36]">
             {block.checklist.map((item) => (
-              <li key={item}>{item}</li>
+              <li key={item}>{renderInlineText(item)}</li>
             ))}
           </ul>
         </section>
