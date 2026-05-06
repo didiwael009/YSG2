@@ -22,7 +22,7 @@ Read it before editing:
 - Built HTML should contain real text content, not only `<div id="root"></div>`.
 - Every SEO-critical page needs one H1.
 - Every SEO-critical page needs unique meta title and meta description.
-- Canonical URLs must use `https://yoursaasgrowth.com`.
+- Canonical URLs must use `https://www.yoursaasgrowth.com`.
 - Public routes should have matching SEO metadata.
 - Blog posts are managed from `src/lib/blog.ts`.
 - Do not create separate React pages manually for each blog post.

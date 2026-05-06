@@ -9,7 +9,7 @@ const CaseStudyZembra = () => (
     description="How I transformed a technical Reviews API into a data-intelligence platform for AI/ML buyers — with positioning, site rebuild, and GTM alignment."
     metaTitle="Zembra Case Study | SaaS Rebrand & Outbound Revamp"
     metaDescription="How Zembra drove 4x revenue growth through a SaaS rebrand, website rebuild, and outbound revamp."
-    canonical="https://yoursaasgrowth.com/case-study/zembra"
+    canonical="https://www.yoursaasgrowth.com/case-study/zembra"
     metrics={[
       { value: "4×", label: "Revenue growth in 8 months" },
       { value: "Full", label: "Rebrand from tech API to data platform" },

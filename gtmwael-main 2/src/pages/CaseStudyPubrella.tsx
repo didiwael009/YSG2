@@ -45,7 +45,7 @@ const CaseStudyPubrella = () => (
     description="How I transformed a confusing SaaS landing page into a high-converting demand capture system — with messaging clarity, friction removal, and CTA optimization."
     metaTitle="Pubrella Case Study | Landing Page CRO"
     metaDescription="How Pubrella tripled landing page conversion through positioning, messaging clarity, friction removal, and CRO."
-    canonical="https://yoursaasgrowth.com/case-study/pubrella"
+    canonical="https://www.yoursaasgrowth.com/case-study/pubrella"
     metrics={[
       { value: "3×", label: "Visit-to-signup conversion increase" },
       { value: "Clear", label: "Value prop from confusion to instant understanding" },
