@@ -996,7 +996,7 @@ export const blogPosts: BlogPost[] = [
     title: "AI Conversion Rate Optimization for SaaS: What Actually Works",
     metaTitle: "AI Conversion Rate Optimization for SaaS",
     description:
-      "AI Conversion Rate Optimization can improve SaaS demo requests, trial activation, and trial-to-paid conversion, but only when the funnel foundation is already strong.",
+      "AI Conversion Rate Optimization helps SaaS teams improve demos, activation, and trial-to-paid when the funnel foundation is strong.",
     excerpt:
       "Most SaaS teams add AI tools before their funnel is ready. Here is where AI Conversion Rate Optimization works, where it fails, and the sequence to follow.",
     author: "Wael Aouididi",
@@ -1039,8 +1039,15 @@ export const blogPosts: BlogPost[] = [
         headline:
           "AI Conversion Rate Optimization amplifies what already works. It does not rescue a funnel that is unclear, untrusted, or hard to use.",
         paragraphs: [
-          "Most SaaS teams trying to improve conversion rates with AI make the same mistake: they add AI tools before their funnel is ready for them.",
+          "Most SaaS teams trying to improve conversion rates with AI make the same mistake: they add AI tools before their funnel is ready for them. If the landing page is unclear, start with the [landing page conversion service](/services/landing-page) before adding another AI layer.",
         ],
+      },
+      {
+        type: "inline-cta",
+        title: "Audit the funnel before adding AI.",
+        body:
+          "If traffic is arriving but conversion is weak, diagnose the landing page, proof, CTA path, and onboarding flow first.",
+        button: "Book audit",
       },
       {
         type: "paragraphs",

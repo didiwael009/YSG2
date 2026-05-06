@@ -237,7 +237,7 @@ const buildJsonLd = (route) => {
         }
       : {
       "@context": "https://schema.org",
-      "@type": route.type === "case-study" || route.type === "article" ? "Article" : "WebPage",
+      "@type": route.type === "article" ? "BlogPosting" : route.type === "case-study" ? "Article" : "WebPage",
       headline: route.title,
       name: route.title,
       description: route.description,

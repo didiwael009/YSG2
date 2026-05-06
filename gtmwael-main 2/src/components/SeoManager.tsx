@@ -130,7 +130,7 @@ const SeoManager = () => {
     const isHome = route.path === "/";
     const webPage = {
       "@context": "https://schema.org",
-      "@type": isHome ? "ProfessionalService" : isArticle ? "Article" : "WebPage",
+      "@type": isHome ? "ProfessionalService" : route.type === "article" ? "BlogPosting" : isArticle ? "Article" : "WebPage",
       headline: route.title,
       name: route.title,
       description: route.description,

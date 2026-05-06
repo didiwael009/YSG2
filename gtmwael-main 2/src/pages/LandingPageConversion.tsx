@@ -463,6 +463,15 @@ const LandingPageConversion = () => {
               <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-6 max-w-3xl mx-auto leading-tight">
                 If your landing page confuses visitors, nothing else will fix your funnel.
               </h2>
+              <p className="mx-auto mb-8 max-w-2xl text-sm leading-relaxed text-muted-foreground md:text-base">
+                Related reading:{" "}
+                <a
+                  href="/blog/ai-conversion-rate-optimization-saas"
+                  className="font-semibold text-primary underline underline-offset-4"
+                >
+                  AI Conversion Rate Optimization for SaaS
+                </a>
+              </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button variant="hero" size="xl" onClick={openLeadModal}>
                   <Download className="mr-2 h-5 w-5" />
