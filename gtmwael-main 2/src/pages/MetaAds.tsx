@@ -113,8 +113,6 @@ const videoReferences = [
     format: "Main Shorts reference",
     youtubeUrl: "https://youtube.com/shorts/775cuQpyzd8?feature=share",
     thumbnail: "https://img.youtube.com/vi/775cuQpyzd8/hqdefault.jpg",
-    likes: "+11M",
-    followers: "+12K",
     accent: "from-orange-500/24 via-orange-950/35 to-amber-950/35",
     border: "border-orange-300/20",
   },
@@ -125,8 +123,6 @@ const videoReferences = [
     format: "Shorts reference 2",
     youtubeUrl: "https://youtube.com/shorts/HnxBXKyFiQI",
     thumbnail: "https://img.youtube.com/vi/HnxBXKyFiQI/hqdefault.jpg",
-    likes: "+5M",
-    followers: "+18K",
     accent: "from-violet-500/24 via-purple-950/35 to-fuchsia-950/35",
     border: "border-violet-300/20",
   },
@@ -137,8 +133,6 @@ const videoReferences = [
     format: "Shorts reference 3",
     youtubeUrl: "https://youtube.com/shorts/PGUHcI72MdU?feature=share",
     thumbnail: "https://img.youtube.com/vi/PGUHcI72MdU/hqdefault.jpg",
-    likes: "+2M",
-    followers: "+4K",
     accent: "from-cyan-500/20 via-sky-950/35 to-blue-950/35",
     border: "border-cyan-300/20",
   },
@@ -392,16 +386,6 @@ const MetaAds = () => {
                   </span>
                 </a>
 
-                <div className="mt-5 grid grid-cols-2 gap-4">
-                  <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Likes</p>
-                    <p className="mt-1 text-2xl font-bold text-foreground">{video.likes}</p>
-                  </div>
-                  <div>
-                    <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-muted-foreground">Followers</p>
-                    <p className="mt-1 text-2xl font-bold text-foreground">{video.followers}</p>
-                  </div>
-                </div>
               </article>
             ))}
           </div>
