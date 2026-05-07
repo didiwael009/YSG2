@@ -25,7 +25,7 @@ Remove duplicated manual blog route from seoRoutes in a controlled separate task
 - [ ] Then allow one small controlled code change
 - [ ] Investigate Vite SSR cleanup noise only if it affects deployment
 - [ ] Later remove duplicated manual blog SEO route from seoRoutes
-- [ ] Later improve BlogPosting schema for blog articles
+- [x] Improve BlogPosting schema for blog articles
 - [ ] Later verify OG image fallback behavior
 
 ## Do not touch now

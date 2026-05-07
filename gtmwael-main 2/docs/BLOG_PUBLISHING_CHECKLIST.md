@@ -7,7 +7,7 @@ This checklist supports the automated guardrails. The real publishing gate is `n
 - `slug` is short, lowercase, and date-free.
 - `path` is exactly `/blog/{slug}`.
 - `title`, `h1`, `metaTitle`, and `description` are unique.
-- `metaTitle` is 60 characters or fewer.
+- `metaTitle` should be 60 characters or fewer when possible; the automated hard limit is 65 characters.
 - `description` is 120-155 characters.
 - `primaryKeyword` appears in the title or meta title, H1, and first 100 words.
 - `searchIntent` states the one clear intent the article serves.
@@ -25,10 +25,16 @@ This checklist supports the automated guardrails. The real publishing gate is `n
 - One self-referencing canonical URL.
 - Open Graph tags.
 - Twitter Card tags.
-- `BlogPosting` JSON-LD.
+- Exactly one `BlogPosting` JSON-LD block.
+- `BlogPosting.publisher.name` is `Your SaaS Growth`.
+- `BlogPosting.publisher.logo.url` is `https://www.yoursaasgrowth.com/favicon.png`.
+- `BlogPosting.url` and `mainEntityOfPage.@id` match the canonical URL.
 - `FAQPage` JSON-LD only when visible FAQ content exists.
+- FAQ schema questions and answers match the visible FAQ copy exactly.
 - `BreadcrumbList` JSON-LD.
 - Robots defaults to `index, follow`.
+- Markdown internal links render as real HTML anchors.
+- Only one crawlable "In this article" table of contents is visible.
 
 ## Human Editorial Review
 

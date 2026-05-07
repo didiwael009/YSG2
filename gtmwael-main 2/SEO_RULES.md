@@ -45,8 +45,13 @@ Read it before editing:
 - `blogPosts` should be the single source of truth for blog articles.
 - Every blog post should automatically be included in prerender routes.
 - Every blog post should automatically be included in sitemap generation.
-- Every blog post should have title, description, path, published date, modified date if available, internal links, CTA, and FAQ when useful.
-- Blog schema should use `BlogPosting` when possible.
+- Every blog post must have slug, path, title, H1, meta title, description, primary keyword, search intent, published date, modified date, author, featured image, featured image alt text, internal links, related posts, CTA, and FAQ when useful.
+- Blog schema must use `BlogPosting`.
+- Blog posts must not rely on manual canonical URLs. Canonicals are generated from `https://www.yoursaasgrowth.com/blog/{slug}`.
+- BlogPosting schema must include author, publisher, publisher logo, dates, image, URL, and `mainEntityOfPage`.
+- FAQPage schema must only exist when visible FAQ content exists, and schema answers must match visible answers exactly.
+- Blog posts must output one crawlable table of contents and no raw markdown links in rendered HTML.
+- `npm run build` must run `scripts/seo-check.mjs` after prerendering.
 
 ## Testing after SEO changes
 
@@ -62,6 +67,8 @@ Then verify:
 - generated HTML has one H1
 - generated HTML has real body text
 - JSON-LD exists when expected
+- blog posts have exactly one `BlogPosting` schema
+- visible FAQ content has exactly one matching `FAQPage` schema
 - canonical URLs are correct
 
 ## Do not do
