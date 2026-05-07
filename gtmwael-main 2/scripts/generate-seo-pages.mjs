@@ -37,12 +37,14 @@ const blogPosts = Function(`"use strict"; return (${blogMatch[1]});`)();
 const blogSeoRoutes = blogPosts.map((post) => ({
   path: post.path,
   title: post.metaTitle,
+  socialTitle: post.title,
   description: post.description,
   type: "article",
   priority: 0.75,
   changefreq: "monthly",
   image: post.ogImage,
   publishedAt: post.publishedAt,
+  modifiedAt: post.modifiedAt,
   breadcrumbs: [
     { name: "Blog", path: "/blog" },
     { name: post.breadcrumbTitle ?? post.title, path: post.path },
@@ -190,6 +192,7 @@ const stripHeadSeo = (html) =>
 const buildJsonLd = (route) => {
   const canonical = getCanonicalUrl(route.path);
   const image = cleanImageUrl(route.image);
+  const socialTitle = route.socialTitle ?? route.title;
   const isHome = route.path === "/";
   const breadcrumbs = [
     { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
@@ -200,6 +203,8 @@ const buildJsonLd = (route) => {
       item: getCanonicalUrl(crumb.path),
     })),
   ];
+
+  const articlePublisher = route.type === "article" ? "YourSaaSGrowth" : BRAND_NAME;
 
   return [
     {
@@ -238,16 +243,16 @@ const buildJsonLd = (route) => {
       : {
       "@context": "https://schema.org",
       "@type": route.type === "article" ? "BlogPosting" : route.type === "case-study" ? "Article" : "WebPage",
-      headline: route.title,
+      headline: socialTitle,
       name: route.title,
       description: route.description,
       url: canonical,
       image,
       author: { "@type": "Person", name: AUTHOR_NAME },
-      publisher: { "@type": "Organization", name: BRAND_NAME },
-      mainEntityOfPage: canonical,
+      publisher: { "@type": "Organization", name: articlePublisher },
+      mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
       ...(route.publishedAt
-        ? { datePublished: route.publishedAt, dateModified: route.publishedAt }
+        ? { datePublished: route.publishedAt, dateModified: route.modifiedAt ?? route.publishedAt }
         : { dateModified: lastmod }),
     },
     {
@@ -278,20 +283,21 @@ const buildHead = (route) => {
   const canonical = getCanonicalUrl(route.path);
   const image = cleanImageUrl(route.image);
   const type = route.type === "case-study" || route.type === "article" ? "article" : "website";
+  const socialTitle = route.socialTitle ?? route.title;
   return `
     <title>${escapeHtml(route.title)}</title>
     <meta name="description" content="${escapeHtml(route.description)}" />
     <meta name="author" content="${escapeHtml(AUTHOR_NAME)}" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="${canonical}" />
-    <meta property="og:title" content="${escapeHtml(route.title)}" />
+    <meta property="og:title" content="${escapeHtml(socialTitle)}" />
     <meta property="og:description" content="${escapeHtml(route.description)}" />
     <meta property="og:type" content="${type}" />
     <meta property="og:url" content="${canonical}" />
     <meta property="og:image" content="${image}" />
     <meta property="og:site_name" content="${escapeHtml(BRAND_NAME)}" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="${escapeHtml(route.title)}" />
+    <meta name="twitter:title" content="${escapeHtml(socialTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(route.description)}" />
     <meta name="twitter:image" content="${image}" />
     ${buildJsonLd(route)

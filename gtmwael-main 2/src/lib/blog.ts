@@ -996,7 +996,7 @@ export const blogPosts: BlogPost[] = [
     title: "AI Conversion Rate Optimization for SaaS: What Actually Works",
     metaTitle: "AI Conversion Rate Optimization for SaaS",
     description:
-      "AI Conversion Rate Optimization helps SaaS teams improve demos, activation, and trial-to-paid when the funnel foundation is strong.",
+      "Learn where AI conversion rate optimization helps SaaS funnels, where it fails, and what to fix before adding AI personalization, chatbots, or funnel tools.",
     excerpt:
       "Most SaaS teams add AI tools before their funnel is ready. Here is where AI Conversion Rate Optimization works, where it fails, and the sequence to follow.",
     author: "Wael Aouididi",
@@ -1039,7 +1039,7 @@ export const blogPosts: BlogPost[] = [
         headline:
           "AI Conversion Rate Optimization amplifies what already works. It does not rescue a funnel that is unclear, untrusted, or hard to use.",
         paragraphs: [
-          "Most SaaS teams trying to improve conversion rates with AI make the same mistake: they add AI tools before their funnel is ready for them. If the landing page is unclear, start with the [landing page conversion service](/services/landing-page) before adding another AI layer.",
+          "Most SaaS teams trying to improve conversion rates with AI make the same mistake: they add AI tools before their funnel is ready for them. If the landing page is unclear, start with the [landing page conversion service](/services/landing-page) before adding another AI layer; if lead follow-up is the leak, the [cold email engine](/services/cold-email) should be fixed before automation.",
         ],
       },
       {
@@ -1139,7 +1139,7 @@ export const blogPosts: BlogPost[] = [
           {
             title: "Personalized landing pages match the message to the visitor",
             body:
-              "A SaaS landing page that converts at 3% across all traffic may hide major differences by segment. AI personalization can detect source, firmographic signals, or behavior and adjust the headline, proof point, and CTA. Tools like [Mutiny](https://www.mutinyhq.com/) are often used for this kind of website personalization. The base page still needs clear positioning first.",
+              "A SaaS landing page with one blended conversion rate across all traffic may hide major differences by segment. AI personalization can detect source, firmographic signals, or behavior and adjust the headline, proof point, and CTA. Tools like [Mutiny](https://www.mutinyhq.com/) are often used for this kind of website personalization. The base page still needs clear positioning first; the logic is similar to the intent split in [Google Ads vs Meta Ads landing pages](/blog/saas-landing-page-google-meta-ads).",
           },
           {
             title: "AI sales qualification routes the right leads faster",
@@ -1233,8 +1233,8 @@ export const blogPosts: BlogPost[] = [
         label: "Numbers",
         title: "AI Conversion Rate Optimization vs. Positioning: What the Numbers Show",
         paragraphs: [
-          "Here is the honest version of what AI CRO usually does to your numbers.",
-          "A page converting at 1% with weak positioning might improve to 1.2% or 1.4% with AI personalization. A page converting at 8% with strong positioning might improve to 9.5% or 11% with the same type of AI layer.",
+          "Here is the honest version of what AI CRO usually does to your numbers, using hypothetical examples rather than universal benchmarks.",
+          "Hypothetical example: a page converting at 1% with weak positioning might improve only slightly with AI personalization because the core message is still unclear. A page converting at 8% with strong positioning has more room to compound because each personalized variant starts from a clearer baseline.",
           "The compounding value of AI is much higher when the baseline is already solid. This is why teams with strong fundamentals report meaningful ROI from AI tools, while teams with weak fundamentals report that AI does not work.",
           "AI does not determine whether your funnel works. It determines how fast a working funnel scales.",
         ],
@@ -1284,15 +1284,15 @@ export const blogPosts: BlogPost[] = [
         type: "example",
         id: "examples",
         label: "Examples",
-        title: "Three Real-World AI Conversion Rate Optimization Examples",
+        title: "Three Hypothetical AI Conversion Rate Optimization Examples",
         paragraphs: [
-          "These examples show the same principle: AI helps when it accelerates a clear path. It fails when it is layered over confusion.",
+          "These hypothetical examples show the same principle: AI helps when it accelerates a clear path. It fails when it is layered over confusion. For sourced project outcomes, review the [SaaS growth case studies](/case-studies) and the [Growapp Meta ads case study](/case-study/growapp).",
         ],
         items: [
           {
             title: "Onboarding completion lifts trial-to-paid",
             body:
-              "A B2B SaaS product had 12 manual onboarding steps. Users abandoned during integration setup. An AI onboarding assistant asked about workflow, auto-configured the workspace, and reminded users about incomplete steps. Onboarding completion rose from 42% to 74%, and trial-to-paid improved because the AI made a logical path faster.",
+              "Hypothetical example: a B2B SaaS product has a long manual onboarding flow and users abandon during integration setup. An AI onboarding assistant asks about workflow, auto-configures the workspace, and reminds users about incomplete steps. Trial-to-paid improves only if the AI makes a logical path faster.",
             emphasis: true,
           },
           {

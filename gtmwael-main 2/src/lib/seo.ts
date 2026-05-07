@@ -8,6 +8,7 @@ export const DEFAULT_OG_IMAGE = "/og-default.png";
 export type SeoRoute = {
   path: string;
   title: string;
+  socialTitle?: string;
   description: string;
   type: "website" | "service" | "case-study" | "portfolio" | "profile" | "booking" | "blog" | "article";
   priority: number;
@@ -17,6 +18,7 @@ export type SeoRoute = {
   excerpt?: string;
   links?: { label: string; path: string }[];
   publishedAt?: string;
+  modifiedAt?: string;
   faq?: { question: string; answer: string }[];
 };
 
@@ -262,12 +264,14 @@ export const getCanonicalUrl = (path: string) => {
 const blogPostToSeoRoute = (post: (typeof blogPosts)[number]): SeoRoute => ({
   path: post.path,
   title: post.metaTitle,
+  socialTitle: post.title,
   description: post.description,
   type: "article",
   priority: 0.75,
   changefreq: "monthly",
   image: post.ogImage,
   publishedAt: post.publishedAt,
+  modifiedAt: post.modifiedAt,
   breadcrumbs: [
     { name: "Blog", path: "/blog" },
     { name: post.breadcrumbTitle ?? post.title, path: post.path },

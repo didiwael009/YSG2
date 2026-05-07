@@ -15,7 +15,7 @@ const formatDate = (date: string) =>
   }).format(new Date(`${date}T00:00:00`));
 
 const SectionLabel = ({ children }: { children: string }) => (
-  <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
+  <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary" role="presentation">
     {children}
   </span>
 );
@@ -98,7 +98,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
           </p>
           {block.paragraphs.map((paragraph) => (
             <p key={paragraph} className="mb-0 max-w-none text-xl font-bold leading-[1.55] text-[#211b31]">
-              {paragraph}
+              {renderInlineText(paragraph)}
             </p>
           ))}
         </section>
@@ -452,6 +452,7 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
                     height={630}
                     className="aspect-[1200/630] w-full rounded-[20px] object-cover"
                     fetchpriority="high"
+                    decoding="async"
                   />
                 </figure>
               ) : null}
@@ -481,26 +482,6 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
               </aside>
 
               <div className="min-w-0">
-                <nav
-                  aria-label="Mobile article contents"
-                  className="mb-8 rounded-[20px] border border-[#11111f]/10 bg-[#fbfbfe] p-5 lg:hidden"
-                >
-                  <div className="mb-3 text-[11px] font-black uppercase tracking-[0.08em] text-[#777287]">
-                    In this article
-                  </div>
-                  <div className="grid gap-2">
-                    {post.toc.map((item) => (
-                      <a
-                        key={item.id}
-                        href={`#${item.id}`}
-                        className="text-[13px] font-semibold text-[#554f63] hover:text-primary"
-                      >
-                        {item.label}
-                      </a>
-                    ))}
-                  </div>
-                </nav>
-
                 {post.blocks.map(renderBlock)}
 
                 <section id="faq" className="mt-16 scroll-mt-28">

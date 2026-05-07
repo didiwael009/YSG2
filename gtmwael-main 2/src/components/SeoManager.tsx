@@ -85,18 +85,19 @@ const SeoManager = () => {
     const route = getSeoRoute(location.pathname);
     const canonical = getCanonicalUrl(route.path);
     const image = cleanImageUrl(route.image);
+    const socialTitle = route.socialTitle ?? route.title;
 
     document.title = route.title;
     setMeta('meta[name="description"]', "content", route.description);
     setMeta('meta[name="robots"]', "content", "index, follow, max-image-preview:large");
-    setMeta('meta[property="og:title"]', "content", route.title);
+    setMeta('meta[property="og:title"]', "content", socialTitle);
     setMeta('meta[property="og:description"]', "content", route.description);
     setMeta('meta[property="og:type"]', "content", route.type === "case-study" || route.type === "article" ? "article" : "website");
     setMeta('meta[property="og:url"]', "content", canonical);
     setMeta('meta[property="og:image"]', "content", image);
     setMeta('meta[property="og:site_name"]', "content", BRAND_NAME);
     setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
-    setMeta('meta[name="twitter:title"]', "content", route.title);
+    setMeta('meta[name="twitter:title"]', "content", socialTitle);
     setMeta('meta[name="twitter:description"]', "content", route.description);
     setMeta('meta[name="twitter:image"]', "content", image);
     setLink("canonical", canonical);
@@ -128,19 +129,20 @@ const SeoManager = () => {
 
     const isArticle = route.type === "case-study" || route.type === "article";
     const isHome = route.path === "/";
+    const articlePublisher = route.type === "article" ? "YourSaaSGrowth" : BRAND_NAME;
     const webPage = {
       "@context": "https://schema.org",
       "@type": isHome ? "ProfessionalService" : route.type === "article" ? "BlogPosting" : isArticle ? "Article" : "WebPage",
-      headline: route.title,
+      headline: socialTitle,
       name: route.title,
       description: route.description,
       url: canonical,
       image,
       ...(isHome ? { areaServed: "Global", founder: { "@type": "Person", name: AUTHOR_NAME }, provider: { "@type": "Person", name: AUTHOR_NAME } } : {}),
       author: { "@type": "Person", name: AUTHOR_NAME },
-      publisher: { "@type": "Organization", name: BRAND_NAME },
-      mainEntityOfPage: canonical,
-      ...(route.publishedAt ? { datePublished: route.publishedAt, dateModified: route.publishedAt } : {}),
+      publisher: { "@type": "Organization", name: articlePublisher },
+      mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+      ...(route.publishedAt ? { datePublished: route.publishedAt, dateModified: route.modifiedAt ?? route.publishedAt } : {}),
     };
 
     const breadcrumbs = {
