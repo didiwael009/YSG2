@@ -17,8 +17,8 @@ export type SeoRoute = {
   breadcrumbs?: { name: string; path: string }[];
   excerpt?: string;
   links?: { label: string; path: string }[];
-  publishedAt?: string;
-  modifiedAt?: string;
+  datePublished?: string;
+  dateModified?: string;
   faq?: { question: string; answer: string }[];
 };
 
@@ -270,8 +270,8 @@ const blogPostToSeoRoute = (post: (typeof blogPosts)[number]): SeoRoute => ({
   priority: 0.75,
   changefreq: "monthly",
   image: post.ogImage,
-  publishedAt: post.publishedAt,
-  modifiedAt: post.modifiedAt,
+  datePublished: post.datePublished,
+  dateModified: post.dateModified,
   breadcrumbs: [
     { name: "Blog", path: "/blog" },
     { name: post.breadcrumbTitle ?? post.title, path: post.path },

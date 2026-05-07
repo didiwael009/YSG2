@@ -10,6 +10,11 @@ export type RelatedPost = {
   href: string;
 };
 
+export type InternalLink = {
+  href: string;
+  label: string;
+};
+
 export type BlogBlock =
   | {
       type: "intro";
@@ -128,19 +133,19 @@ export type BlogPost = {
   category: string;
   breadcrumbTitle?: string;
   title: string;
+  h1: string;
   metaTitle: string;
   description: string;
+  searchIntent: string;
   excerpt: string;
   author: string;
   authorBio: string;
-  publishedAt: string;
-  modifiedAt: string;
+  datePublished: string;
+  dateModified: string;
   readTime: string;
   ogImage: string;
-  featuredImage?: {
-    src: string;
-    alt: string;
-  };
+  featuredImage: string;
+  featuredImageAlt: string;
   primaryKeyword: string;
   secondaryKeywords: string[];
   toc: { label: string; id: string }[];
@@ -156,7 +161,9 @@ export type BlogPost = {
     body: string;
     button: string;
   };
+  internalLinks: InternalLink[];
   relatedPosts: RelatedPost[];
+  pillarPage?: string;
 };
 
 export const blogPosts: BlogPost[] = [
@@ -165,18 +172,23 @@ export const blogPosts: BlogPost[] = [
     path: "/blog/saas-landing-page-google-meta-ads",
     category: "Paid Ads Strategy",
     title: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
+    h1: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
     metaTitle: "Stop Sending Ads to One SaaS Landing Page",
     description:
-      "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match the visitor's intent instead of forcing both channels into one generic page.",
+      "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match intent instead of forcing both channels into one generic page.",
+    searchIntent:
+      "SaaS founders and marketers comparing Google Ads and Meta Ads landing page strategy for better paid traffic conversion.",
     excerpt:
       "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match the visitor's intent instead of forcing both channels into one generic page.",
     author: "Wael Aouididi",
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale paid traffic.",
-    publishedAt: "2026-04-27",
-    modifiedAt: "2026-04-27",
+    datePublished: "2026-04-27",
+    dateModified: "2026-04-27",
     readTime: "11 min read",
     ogImage: "/og-default.png",
+    featuredImage: "/og-default.png",
+    featuredImageAlt: "SaaS landing page strategy for Google Ads and Meta Ads traffic",
     primaryKeyword: "SaaS landing page",
     secondaryKeywords: [
       "Google Ads landing page",
@@ -203,7 +215,7 @@ export const blogPosts: BlogPost[] = [
         label: "Core principle",
         headline: "Build trust before traffic. Traffic sent to a broken foundation is burned budget.",
         paragraphs: [
-          "A SaaS founder launches Google Ads and Meta Ads, then sends both campaigns to the same SaaS landing page. On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
+          "A SaaS founder launches Google Ads and Meta Ads, then sends both campaigns to the same [SaaS landing page](/services/landing-page). On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
         ],
       },
       {
@@ -489,6 +501,12 @@ export const blogPosts: BlogPost[] = [
         "If the message is unclear, more traffic will only make the leak more expensive.",
       button: "Book a 20-min Landing Page Audit",
     },
+    internalLinks: [
+      { href: "/services/landing-page", label: "Landing page service" },
+      { href: "/services/meta-ads", label: "Meta ads service" },
+      { href: "/case-study/shipzzer", label: "Shipzzer" },
+      { href: "/case-study/zembra", label: "Zembra" },
+    ],
     relatedPosts: [
       {
         label: "Landing pages",
@@ -509,6 +527,7 @@ export const blogPosts: BlogPost[] = [
         href: "/case-study/zembra",
       },
     ],
+    pillarPage: "/services/landing-page",
   },
   {
     slug: "saas-traffic-but-no-signups",
@@ -516,22 +535,23 @@ export const blogPosts: BlogPost[] = [
     category: "SaaS CRO",
     breadcrumbTitle: "SaaS Traffic But No Signups",
     title: "Why Your SaaS Website Gets Traffic But No Signups",
+    h1: "SaaS Traffic But No Signups? Here's Why",
     metaTitle: "SaaS Traffic But No Signups? Here's Why",
     description:
-      "Getting SaaS traffic but no signups? Diagnose weak messaging, CTA friction, missing proof, and broken conversion paths.",
+      "Getting SaaS traffic but no signups? Diagnose weak messaging, CTA friction, missing proof, and broken conversion paths fast.",
+    searchIntent:
+      "SaaS founders diagnosing why organic, paid, or referral website traffic is not converting into demos, trials, or signups.",
     excerpt:
       "Traffic is not a win if nobody signs up. This is the classic SaaS traffic but no signups problem: demand is arriving, but the page is not turning attention into action.",
     author: "Wael Aouididi",
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
-    publishedAt: "2026-04-30",
-    modifiedAt: "2026-04-30",
+    datePublished: "2026-04-30",
+    dateModified: "2026-04-30",
     readTime: "13 min read",
     ogImage: "/og-default.png",
-    featuredImage: {
-      src: "/og-default.png",
-      alt: "SaaS website traffic but no signups conversion leaks",
-    },
+    featuredImage: "/og-default.png",
+    featuredImageAlt: "SaaS website traffic but no signups conversion leaks",
     primaryKeyword: "SaaS traffic but no signups",
     secondaryKeywords: [
       "SaaS website conversion",
@@ -562,7 +582,7 @@ export const blogPosts: BlogPost[] = [
         label: "Conversion leak",
         headline: "Traffic is not a win if nobody signs up.",
         paragraphs: [
-          "A lot of SaaS founders look at the wrong problem first. They see visits going up, signups staying flat, and assume the answer is more SEO, more ads, more outbound, or more content.",
+          "A lot of SaaS founders look at the wrong problem first. They see visits going up, signups staying flat, and assume the answer is more SEO, more ads, more outbound, or more content. Often, the first fix is a sharper [SaaS landing page audit](/services/landing-page).",
           "This is the classic SaaS traffic but no signups problem: demand is arriving, but the page is not turning attention into action.",
         ],
       },
@@ -967,6 +987,11 @@ export const blogPosts: BlogPost[] = [
         "I help SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic. Anyone can make promises. In a 15-minute call, you’ll know quickly whether I understand the problem.",
       button: "Book a 20-min SaaS CRO Audit",
     },
+    internalLinks: [
+      { href: "/services/landing-page", label: "SaaS landing page audit" },
+      { href: "/blog/saas-landing-page-google-meta-ads", label: "Google Ads vs Meta Ads landing pages" },
+      { href: "/case-studies", label: "SaaS growth case studies" },
+    ],
     relatedPosts: [
       {
         label: "Service",
@@ -987,6 +1012,7 @@ export const blogPosts: BlogPost[] = [
         href: "/case-studies",
       },
     ],
+    pillarPage: "/services/landing-page",
   },
   {
     slug: "ai-conversion-rate-optimization-saas",
@@ -994,22 +1020,23 @@ export const blogPosts: BlogPost[] = [
     category: "SaaS CRO",
     breadcrumbTitle: "AI Conversion Rate Optimization",
     title: "AI Conversion Rate Optimization for SaaS: What Actually Works",
+    h1: "AI Conversion Rate Optimization for SaaS: What Actually Works",
     metaTitle: "AI Conversion Rate Optimization for SaaS",
     description:
-      "Learn where AI conversion rate optimization helps SaaS funnels, where it fails, and what to fix before adding AI personalization, chatbots, or funnel tools.",
+      "Learn where AI conversion rate optimization helps SaaS funnels, where it fails and what to fix before adding AI personalization, chatbots, or funnel tools.",
+    searchIntent:
+      "SaaS founders and marketers evaluating where AI conversion rate optimization can improve demos, activation, onboarding, and trial-to-paid conversion.",
     excerpt:
       "Most SaaS teams add AI tools before their funnel is ready. Here is where AI Conversion Rate Optimization works, where it fails, and the sequence to follow.",
     author: "Wael Aouididi",
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders fix positioning, landing pages, onboarding, and conversion leaks before scaling acquisition.",
-    publishedAt: "2026-05-06",
-    modifiedAt: "2026-05-06",
+    datePublished: "2026-05-06",
+    dateModified: "2026-05-06",
     readTime: "14 min read",
     ogImage: "/og-default.png",
-    featuredImage: {
-      src: "/og-default.png",
-      alt: "AI Conversion Rate Optimization for SaaS funnel strategy",
-    },
+    featuredImage: "/og-default.png",
+    featuredImageAlt: "AI Conversion Rate Optimization for SaaS funnel strategy",
     primaryKeyword: "AI Conversion Rate Optimization",
     secondaryKeywords: [
       "AI conversion rate",
@@ -1366,6 +1393,13 @@ export const blogPosts: BlogPost[] = [
         "In a focused 20-minute GTM audit, I can review your landing page, onboarding flow, and conversion metrics so you leave with a clear diagnosis and a prioritized fix list.",
       button: "Book a 20-min GTM Audit",
     },
+    internalLinks: [
+      { href: "/services/landing-page", label: "Landing page conversion service" },
+      { href: "/services/cold-email", label: "Cold email engine" },
+      { href: "/case-studies", label: "SaaS growth case studies" },
+      { href: "/case-study/growapp", label: "Growapp Meta ads case study" },
+      { href: "/blog/saas-landing-page-google-meta-ads", label: "Google Ads vs Meta Ads landing pages" },
+    ],
     relatedPosts: [
       {
         label: "Service",
@@ -1386,6 +1420,7 @@ export const blogPosts: BlogPost[] = [
         href: "/blog/saas-landing-page-google-meta-ads",
       },
     ],
+    pillarPage: "/services/landing-page",
   },
 ];
 

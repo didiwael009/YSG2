@@ -142,7 +142,7 @@ const SeoManager = () => {
       author: { "@type": "Person", name: AUTHOR_NAME },
       publisher: { "@type": "Organization", name: articlePublisher },
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
-      ...(route.publishedAt ? { datePublished: route.publishedAt, dateModified: route.modifiedAt ?? route.publishedAt } : {}),
+      ...(route.datePublished ? { datePublished: route.datePublished, dateModified: route.dateModified ?? route.datePublished } : {}),
     };
 
     const breadcrumbs = {

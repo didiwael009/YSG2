@@ -43,8 +43,8 @@ const blogSeoRoutes = blogPosts.map((post) => ({
   priority: 0.75,
   changefreq: "monthly",
   image: post.ogImage,
-  publishedAt: post.publishedAt,
-  modifiedAt: post.modifiedAt,
+  datePublished: post.datePublished,
+  dateModified: post.dateModified,
   breadcrumbs: [
     { name: "Blog", path: "/blog" },
     { name: post.breadcrumbTitle ?? post.title, path: post.path },
@@ -251,8 +251,8 @@ const buildJsonLd = (route) => {
       author: { "@type": "Person", name: AUTHOR_NAME },
       publisher: { "@type": "Organization", name: articlePublisher },
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
-      ...(route.publishedAt
-        ? { datePublished: route.publishedAt, dateModified: route.modifiedAt ?? route.publishedAt }
+      ...(route.datePublished
+        ? { datePublished: route.datePublished, dateModified: route.dateModified ?? route.datePublished }
         : { dateModified: lastmod }),
     },
     {

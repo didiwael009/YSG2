@@ -1,0 +1,219 @@
+import { existsSync, readFileSync } from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const projectRoot = path.resolve(__dirname, "..");
+const distDir = path.join(projectRoot, "dist");
+const SITE_URL = "https://www.yoursaasgrowth.com";
+
+const read = (file) => readFileSync(path.join(projectRoot, file), "utf8");
+const blogSource = read("src/lib/blog.ts");
+const seoSource = read("src/lib/seo.ts");
+
+const blogMatch = blogSource.match(/export const blogPosts: BlogPost\[\] = (\[[\s\S]*?\]);/);
+if (!blogMatch) throw new Error("Could not read blogPosts from src/lib/blog.ts");
+
+const routeMatch = seoSource.match(/export const seoRoutes: SeoRoute\[\] = (\[[\s\S]*?\]);/);
+if (!routeMatch) throw new Error("Could not read seoRoutes from src/lib/seo.ts");
+
+const blogPosts = Function(`"use strict"; return (${blogMatch[1]});`)();
+const staticRoutes = Function(`"use strict"; return (${routeMatch[1]});`)();
+const allRoutes = new Set([
+  ...staticRoutes.map((route) => route.path),
+  ...blogPosts.map((post) => post.path),
+  "/wael-growth-playbook-2026.pdf",
+  "/wael-landing-page-playbook-2026.pdf",
+]);
+
+const errors = [];
+const warnings = [];
+
+const addError = (post, message) => errors.push(`${post.slug}: ${message}`);
+const addWarning = (post, message) => warnings.push(`${post.slug}: ${message}`);
+const canonicalFor = (post) => `${SITE_URL}/blog/${post.slug}`;
+const htmlPathFor = (post) => path.join(distDir, "blog", post.slug, "index.html");
+const normalize = (value) => String(value ?? "").toLowerCase().replace(/\s+/g, " ").trim();
+const stripMarkdown = (value) => String(value ?? "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1");
+const stripTags = (value) =>
+  String(value ?? "")
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&#x27;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/\s+/g, " ")
+    .trim();
+
+const words = (value) => stripTags(stripMarkdown(value)).split(/\s+/).filter(Boolean);
+const firstWords = (value, count) => words(value).slice(0, count).join(" ");
+const includesKeyword = (value, keyword) => normalize(stripMarkdown(value)).includes(normalize(keyword));
+const countMatches = (value, regex) => (String(value).match(regex) ?? []).length;
+const firstMatch = (value, regex) => String(value).match(regex)?.[1] ?? "";
+
+const blockText = (block) => {
+  if (!block || typeof block !== "object") return "";
+  const parts = [];
+  for (const [key, value] of Object.entries(block)) {
+    if (["id", "type", "label"].includes(key)) continue;
+    if (typeof value === "string") parts.push(value);
+    if (Array.isArray(value)) {
+      for (const item of value) {
+        if (typeof item === "string") parts.push(item);
+        else if (item && typeof item === "object") parts.push(blockText(item));
+      }
+    }
+  }
+  return parts.join(" ");
+};
+
+const getMarkdownLinks = (value) =>
+  [...String(value ?? "").matchAll(/\[[^\]]+\]\((\/[^)]+)\)/g)].map((match) => match[1]);
+
+const collectPostLinks = (post) => {
+  const values = [
+    post.excerpt,
+    ...(post.blocks ?? []).map(blockText),
+    post.source?.body,
+    post.cta?.body,
+    ...(post.relatedPosts ?? []).map((item) => item.href),
+    ...(post.internalLinks ?? []).map((item) => item.href),
+  ];
+  return values.flatMap((value) => (typeof value === "string" && value.startsWith("/") ? [value] : getMarkdownLinks(value)));
+};
+
+const parseJsonLd = (html) =>
+  [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap((match) => {
+    try {
+      return [JSON.parse(match[1])];
+    } catch {
+      return [];
+    }
+  });
+
+const requireField = (post, field) => {
+  if (!post[field]) addError(post, `missing ${field}`);
+};
+
+const sitemapPath = path.join(projectRoot, "public", "sitemap.xml");
+const sitemap = existsSync(sitemapPath) ? readFileSync(sitemapPath, "utf8") : "";
+if (!sitemap) errors.push("sitemap: missing public/sitemap.xml");
+
+for (const post of blogPosts) {
+  [
+    "slug",
+    "title",
+    "h1",
+    "metaTitle",
+    "description",
+    "primaryKeyword",
+    "searchIntent",
+    "datePublished",
+    "dateModified",
+    "author",
+    "featuredImage",
+    "featuredImageAlt",
+  ].forEach((field) => requireField(post, field));
+
+  if (post.path !== `/blog/${post.slug}`) addError(post, `path must be /blog/{slug}; found ${post.path}`);
+  if (post.metaTitle && post.metaTitle.length > 60) addError(post, `meta title over 60 characters (${post.metaTitle.length})`);
+  if (post.description && (post.description.length < 120 || post.description.length > 155)) {
+    addError(post, `meta description must be 120-155 characters (${post.description.length})`);
+  }
+  if (post.primaryKeyword) {
+    if (!includesKeyword(post.title, post.primaryKeyword) && !includesKeyword(post.metaTitle, post.primaryKeyword)) {
+      addError(post, "primary keyword missing from title/metaTitle");
+    }
+    if (!includesKeyword(post.h1, post.primaryKeyword)) addError(post, "primary keyword missing from H1");
+    const sourceFirst100 = firstWords([post.h1, post.excerpt, ...(post.blocks ?? []).map(blockText)].join(" "), 100);
+    if (!includesKeyword(sourceFirst100, post.primaryKeyword)) addError(post, "primary keyword missing from first 100 words");
+  }
+  if (!post.featuredImageAlt?.trim()) addError(post, "missing featured image alt text");
+  if (!Array.isArray(post.internalLinks) || post.internalLinks.length === 0) addError(post, "missing internalLinks");
+  if (!Array.isArray(post.relatedPosts) || post.relatedPosts.length === 0) addError(post, "missing relatedPosts");
+
+  const links = collectPostLinks(post);
+  if (post.pillarPage) {
+    const first150Source = firstWords([post.h1, post.excerpt, ...(post.blocks ?? []).map(blockText)].join(" "), 150);
+    const first150Links = [post.h1, post.excerpt, ...(post.blocks?.slice(0, 2) ?? []).map(blockText)].flatMap(getMarkdownLinks);
+    if (!first150Source || !first150Links.includes(post.pillarPage)) {
+      addError(post, `missing pillar link ${post.pillarPage} in first 150 words`);
+    }
+  }
+  for (const href of links.filter((href) => href.startsWith("/"))) {
+    const cleanHref = href.split("#")[0].replace(/\/+$/, "") || "/";
+    if (!allRoutes.has(cleanHref)) addError(post, `broken internal link: ${href}`);
+  }
+
+  const htmlPath = htmlPathFor(post);
+  if (!existsSync(htmlPath)) {
+    addError(post, `missing prerendered HTML at ${path.relative(projectRoot, htmlPath)}`);
+    continue;
+  }
+
+  const html = readFileSync(htmlPath, "utf8");
+  const articleHtml = firstMatch(html, /<article[\s\S]*?>([\s\S]*?)<\/article>/i);
+  const canonicalTags = [...html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map((match) => match[1]);
+  const metaDescriptions = [...html.matchAll(/<meta name="description" content="([^"]*)"/g)].map((match) => match[1]);
+  const schemas = parseJsonLd(html);
+  const schemaTypes = schemas.map((schema) => schema["@type"]);
+  const blogSchema = schemas.find((schema) => schema["@type"] === "BlogPosting");
+  const faqSchema = schemas.find((schema) => schema["@type"] === "FAQPage");
+  const breadcrumbSchema = schemas.find((schema) => schema["@type"] === "BreadcrumbList");
+  const visibleFaq = Array.isArray(post.faq) && post.faq.length > 0 && post.faq.every((item) => html.includes(item.question) && html.includes(item.answer));
+
+  if (countMatches(html, /<title>/gi) !== 1) addError(post, "expected exactly one title tag");
+  if (metaDescriptions.length !== 1) addError(post, `expected one meta description, found ${metaDescriptions.length}`);
+  if (canonicalTags.length !== 1) addError(post, `expected one canonical tag, found ${canonicalTags.length}`);
+  if (canonicalTags[0] !== canonicalFor(post)) addError(post, `canonical mismatch: ${canonicalTags[0] || "missing"}`);
+  if (/noindex/i.test(firstMatch(html, /<meta name="robots" content="([^"]*)"/i))) addError(post, "blog post has noindex");
+  if (countMatches(html, /<h1\b/gi) !== 1) addError(post, `expected one H1, found ${countMatches(html, /<h1\b/gi)}`);
+  if (stripTags(articleHtml).split(/\s+/).filter(Boolean).length < 250) addError(post, "no substantial article body in prerendered HTML");
+
+  ["og:title", "og:description", "og:type", "og:url", "og:image"].forEach((property) => {
+    if (!html.includes(`property="${property}"`)) addError(post, `missing ${property}`);
+  });
+  ["twitter:card", "twitter:title", "twitter:description", "twitter:image"].forEach((name) => {
+    if (!html.includes(`name="${name}"`)) addError(post, `missing ${name}`);
+  });
+
+  if (!blogSchema) addError(post, "missing BlogPosting schema");
+  if (schemaTypes.includes("Article") && !schemaTypes.includes("BlogPosting")) addError(post, "wrong schema type: Article used for blog post");
+  if (blogSchema?.["@type"] !== "BlogPosting") addError(post, "wrong schema type");
+  if (!breadcrumbSchema) addError(post, "missing BreadcrumbList schema");
+  if (!blogSchema?.author?.name) addError(post, "BlogPosting missing author");
+  if (!blogSchema?.publisher?.name) addError(post, "BlogPosting missing publisher");
+  if (!blogSchema?.datePublished) addError(post, "BlogPosting missing datePublished");
+  if (!blogSchema?.dateModified) addError(post, "BlogPosting missing dateModified");
+  if (!blogSchema?.image) addError(post, "BlogPosting missing image");
+  if (!blogSchema?.url) addError(post, "BlogPosting missing url");
+  if (!blogSchema?.mainEntityOfPage) addError(post, "BlogPosting missing mainEntityOfPage");
+  if (visibleFaq && !faqSchema) addError(post, "visible FAQ but no FAQPage schema");
+  if (faqSchema && !visibleFaq) addError(post, "FAQPage schema exists but visible FAQ does not match");
+  if (faqSchema?.mainEntity?.length !== (post.faq?.length ?? 0)) addError(post, "FAQPage schema item count does not match visible FAQ");
+  for (const item of faqSchema?.mainEntity ?? []) {
+    if (!item.name || !item.acceptedAnswer?.text) addError(post, "FAQ schema item missing Question or acceptedAnswer text");
+  }
+  if (!html.includes(`alt="${post.featuredImageAlt}"`)) addError(post, "featured image alt not rendered");
+  if (/\[[^\]]+\]\(\/[^)]+\)/.test(articleHtml)) addError(post, "raw markdown internal link rendered in article HTML");
+
+  const sitemapLoc = `<loc>${canonicalFor(post)}</loc>`;
+  const sitemapMatches = countMatches(sitemap, new RegExp(sitemapLoc.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g"));
+  if (sitemapMatches !== 1) addError(post, `article URL must appear once in sitemap, found ${sitemapMatches}`);
+  if (sitemap.includes(`${SITE_URL}/blog/${post.slug}/`)) addError(post, "trailing slash duplicate in sitemap");
+  if (sitemap.includes(`https://yoursaasgrowth.com/blog/${post.slug}`)) addError(post, "non-www URL in sitemap");
+
+  if (!html.includes("fetchpriority=\"high\"")) addWarning(post, "featured image is not marked fetchpriority=high");
+  if (!html.includes("decoding=\"async\"")) addWarning(post, "featured image is not marked decoding=async");
+}
+
+for (const warning of warnings) console.warn(`SEO warning: ${warning}`);
+
+if (errors.length) {
+  console.error(`SEO check failed with ${errors.length} issue(s):`);
+  for (const error of errors) console.error(`- ${error}`);
+  process.exit(1);
+}
+
+console.log(`SEO check passed for ${blogPosts.length} blog post(s).`);

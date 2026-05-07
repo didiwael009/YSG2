@@ -5,8 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/generate-responsive-images.mjs && vite build && node scripts/generate-seo-pages.mjs",
+    "build": "node scripts/generate-responsive-images.mjs && vite build && node scripts/generate-seo-pages.mjs && node scripts/seo-check.mjs",
+    "build:seo": "npm run build",
     "optimize:images": "node scripts/generate-responsive-images.mjs",
+    "seo:check": "node scripts/seo-check.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview"

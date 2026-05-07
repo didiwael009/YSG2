@@ -193,7 +193,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
         >
           <div>
             <strong className="mb-1 block text-[17px] text-[#1d1722]">{block.title}</strong>
-            <p className="mb-0 text-[15.5px] leading-[1.55] text-[#514339]">{block.body}</p>
+            <p className="mb-0 text-[15.5px] leading-[1.55] text-[#514339]">{renderInlineText(block.body)}</p>
           </div>
           <Button variant="hero" size="sm" asChild>
             <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
@@ -423,7 +423,7 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
               <div>
                 <SectionLabel>{post.category}</SectionLabel>
                 <h1 className="max-w-[850px] font-display text-[42px] font-black leading-[0.96] text-white md:text-[68px]">
-                  {post.title}
+                  {post.h1}
                 </h1>
                 <p className="mt-7 max-w-[650px] text-[19px] leading-[1.55] text-[#cec8dd]">
                   {post.excerpt}
@@ -433,29 +433,27 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
                     By {post.author}
                   </span>
                   <time
-                    dateTime={post.publishedAt}
+                    dateTime={post.datePublished}
                     className="rounded-full border border-white/10 bg-white/[0.055] px-3 py-2 text-xs font-extrabold text-[#e5dfef]"
                   >
-                    {formatDate(post.publishedAt)}
+                    {formatDate(post.datePublished)}
                   </time>
                   <span className="rounded-full border border-white/10 bg-white/[0.055] px-3 py-2 text-xs font-extrabold text-[#e5dfef]">
                     {post.readTime}
                   </span>
                 </div>
               </div>
-              {post.featuredImage ? (
-                <figure className="overflow-hidden rounded-[26px] border border-white/10 bg-white/[0.06] p-3 shadow-[0_28px_90px_rgba(0,0,0,0.32)]">
-                  <img
-                    src={post.featuredImage.src}
-                    alt={post.featuredImage.alt}
-                    width={1200}
-                    height={630}
-                    className="aspect-[1200/630] w-full rounded-[20px] object-cover"
-                    fetchpriority="high"
-                    decoding="async"
-                  />
-                </figure>
-              ) : null}
+              <figure className="overflow-hidden rounded-[26px] border border-white/10 bg-white/[0.06] p-3 shadow-[0_28px_90px_rgba(0,0,0,0.32)]">
+                <img
+                  src={post.featuredImage}
+                  alt={post.featuredImageAlt}
+                  width={1200}
+                  height={630}
+                  className="aspect-[1200/630] w-full rounded-[20px] object-cover"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </figure>
             </div>
           </header>
 
