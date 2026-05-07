@@ -78,6 +78,15 @@ const cleanImageUrl = (image?: string) => {
   return path.startsWith("http") ? path : `${SITE_URL}${path}`;
 };
 
+const publisherOrganization = {
+  "@type": "Organization",
+  name: BRAND_NAME,
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/favicon.png`,
+  },
+};
+
 const SeoManager = () => {
   const location = useLocation();
 
@@ -124,12 +133,11 @@ const SeoManager = () => {
       name: BRAND_NAME,
       url: SITE_URL,
       description: "SaaS GTM strategy, conversion, cold email, SEO, Meta ads, and growth execution by Wael Aouididi.",
-      publisher: { "@type": "Organization", name: BRAND_NAME },
+      publisher: publisherOrganization,
     };
 
     const isArticle = route.type === "case-study" || route.type === "article";
     const isHome = route.path === "/";
-    const articlePublisher = route.type === "article" ? "YourSaaSGrowth" : BRAND_NAME;
     const webPage = {
       "@context": "https://schema.org",
       "@type": isHome ? "ProfessionalService" : route.type === "article" ? "BlogPosting" : isArticle ? "Article" : "WebPage",
@@ -140,7 +148,7 @@ const SeoManager = () => {
       image,
       ...(isHome ? { areaServed: "Global", founder: { "@type": "Person", name: AUTHOR_NAME }, provider: { "@type": "Person", name: AUTHOR_NAME } } : {}),
       author: { "@type": "Person", name: AUTHOR_NAME },
-      publisher: { "@type": "Organization", name: articlePublisher },
+      publisher: publisherOrganization,
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
       ...(route.datePublished ? { datePublished: route.datePublished, dateModified: route.dateModified ?? route.datePublished } : {}),
     };

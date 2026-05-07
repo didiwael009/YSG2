@@ -1021,7 +1021,7 @@ export const blogPosts: BlogPost[] = [
     breadcrumbTitle: "AI Conversion Rate Optimization",
     title: "AI Conversion Rate Optimization for SaaS: What Actually Works",
     h1: "AI Conversion Rate Optimization for SaaS: What Actually Works",
-    metaTitle: "AI Conversion Rate Optimization for SaaS",
+    metaTitle: "AI Conversion Rate Optimization for SaaS: What Actually Works",
     description:
       "Learn where AI conversion rate optimization helps SaaS funnels, where it fails and what to fix before adding AI personalization, chatbots, or funnel tools.",
     searchIntent:

@@ -194,6 +194,14 @@ const buildJsonLd = (route) => {
   const image = cleanImageUrl(route.image);
   const socialTitle = route.socialTitle ?? route.title;
   const isHome = route.path === "/";
+  const publisherOrganization = {
+    "@type": "Organization",
+    name: BRAND_NAME,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/favicon.png`,
+    },
+  };
   const breadcrumbs = [
     { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
     ...(route.breadcrumbs ?? []).map((crumb, index) => ({
@@ -203,8 +211,6 @@ const buildJsonLd = (route) => {
       item: getCanonicalUrl(crumb.path),
     })),
   ];
-
-  const articlePublisher = route.type === "article" ? "YourSaaSGrowth" : BRAND_NAME;
 
   return [
     {
@@ -225,7 +231,7 @@ const buildJsonLd = (route) => {
       name: BRAND_NAME,
       url: SITE_URL,
       description: "SaaS GTM strategy, conversion, cold email, SEO, Meta ads, and growth execution by Wael Aouididi.",
-      publisher: { "@type": "Organization", name: BRAND_NAME },
+      publisher: publisherOrganization,
     },
     isHome
       ? {
@@ -249,7 +255,7 @@ const buildJsonLd = (route) => {
       url: canonical,
       image,
       author: { "@type": "Person", name: AUTHOR_NAME },
-      publisher: { "@type": "Organization", name: articlePublisher },
+      publisher: publisherOrganization,
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
       ...(route.datePublished
         ? { datePublished: route.datePublished, dateModified: route.dateModified ?? route.datePublished }

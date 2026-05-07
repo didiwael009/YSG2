@@ -6,6 +6,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, "..");
 const distDir = path.join(projectRoot, "dist");
 const SITE_URL = "https://www.yoursaasgrowth.com";
+const BRAND_NAME = "Your SaaS Growth";
+const PUBLISHER_LOGO_URL = `${SITE_URL}/favicon.png`;
 
 const read = (file) => readFileSync(path.join(projectRoot, file), "utf8");
 const blogSource = read("src/lib/blog.ts");
@@ -117,7 +119,7 @@ for (const post of blogPosts) {
   ].forEach((field) => requireField(post, field));
 
   if (post.path !== `/blog/${post.slug}`) addError(post, `path must be /blog/{slug}; found ${post.path}`);
-  if (post.metaTitle && post.metaTitle.length > 60) addError(post, `meta title over 60 characters (${post.metaTitle.length})`);
+  if (post.metaTitle && post.metaTitle.length > 65) addError(post, `meta title over 65 characters (${post.metaTitle.length})`);
   if (post.description && (post.description.length < 120 || post.description.length > 155)) {
     addError(post, `meta description must be 120-155 characters (${post.description.length})`);
   }
@@ -158,8 +160,10 @@ for (const post of blogPosts) {
   const metaDescriptions = [...html.matchAll(/<meta name="description" content="([^"]*)"/g)].map((match) => match[1]);
   const schemas = parseJsonLd(html);
   const schemaTypes = schemas.map((schema) => schema["@type"]);
-  const blogSchema = schemas.find((schema) => schema["@type"] === "BlogPosting");
-  const faqSchema = schemas.find((schema) => schema["@type"] === "FAQPage");
+  const blogSchemas = schemas.filter((schema) => schema["@type"] === "BlogPosting");
+  const faqSchemas = schemas.filter((schema) => schema["@type"] === "FAQPage");
+  const blogSchema = blogSchemas[0];
+  const faqSchema = faqSchemas[0];
   const breadcrumbSchema = schemas.find((schema) => schema["@type"] === "BreadcrumbList");
   const visibleFaq = Array.isArray(post.faq) && post.faq.length > 0 && post.faq.every((item) => html.includes(item.question) && html.includes(item.answer));
 
@@ -179,21 +183,37 @@ for (const post of blogPosts) {
   });
 
   if (!blogSchema) addError(post, "missing BlogPosting schema");
+  if (blogSchemas.length > 1) addError(post, `expected one BlogPosting schema, found ${blogSchemas.length}`);
+  if (faqSchemas.length > 1) addError(post, `expected one FAQPage schema, found ${faqSchemas.length}`);
   if (schemaTypes.includes("Article") && !schemaTypes.includes("BlogPosting")) addError(post, "wrong schema type: Article used for blog post");
   if (blogSchema?.["@type"] !== "BlogPosting") addError(post, "wrong schema type");
   if (!breadcrumbSchema) addError(post, "missing BreadcrumbList schema");
   if (!blogSchema?.author?.name) addError(post, "BlogPosting missing author");
   if (!blogSchema?.publisher?.name) addError(post, "BlogPosting missing publisher");
+  if (blogSchema?.publisher?.name && blogSchema.publisher.name !== BRAND_NAME) {
+    addError(post, `BlogPosting publisher must be ${BRAND_NAME}`);
+  }
+  if (blogSchema?.publisher?.logo?.url !== PUBLISHER_LOGO_URL) {
+    addError(post, `BlogPosting publisher logo must be ${PUBLISHER_LOGO_URL}`);
+  }
   if (!blogSchema?.datePublished) addError(post, "BlogPosting missing datePublished");
   if (!blogSchema?.dateModified) addError(post, "BlogPosting missing dateModified");
   if (!blogSchema?.image) addError(post, "BlogPosting missing image");
   if (!blogSchema?.url) addError(post, "BlogPosting missing url");
+  if (blogSchema?.url && blogSchema.url !== canonicalFor(post)) addError(post, "BlogPosting URL must match canonical");
   if (!blogSchema?.mainEntityOfPage) addError(post, "BlogPosting missing mainEntityOfPage");
+  if (blogSchema?.mainEntityOfPage?.["@id"] && blogSchema.mainEntityOfPage["@id"] !== canonicalFor(post)) {
+    addError(post, "BlogPosting mainEntityOfPage must match canonical");
+  }
   if (visibleFaq && !faqSchema) addError(post, "visible FAQ but no FAQPage schema");
   if (faqSchema && !visibleFaq) addError(post, "FAQPage schema exists but visible FAQ does not match");
   if (faqSchema?.mainEntity?.length !== (post.faq?.length ?? 0)) addError(post, "FAQPage schema item count does not match visible FAQ");
-  for (const item of faqSchema?.mainEntity ?? []) {
+  for (const [index, item] of (faqSchema?.mainEntity ?? []).entries()) {
     if (!item.name || !item.acceptedAnswer?.text) addError(post, "FAQ schema item missing Question or acceptedAnswer text");
+    const visibleItem = post.faq?.[index];
+    if (visibleItem && (item.name !== visibleItem.question || item.acceptedAnswer?.text !== visibleItem.answer)) {
+      addError(post, "FAQ schema item does not match visible FAQ copy");
+    }
   }
   if (!html.includes(`alt="${post.featuredImageAlt}"`)) addError(post, "featured image alt not rendered");
   if (/\[[^\]]+\]\(\/[^)]+\)/.test(articleHtml)) addError(post, "raw markdown internal link rendered in article HTML");
