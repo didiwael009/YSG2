@@ -1,4 +1,4 @@
-import { ArrowRight, BarChart2, CheckCircle2, LayoutTemplate, Mail, MessageSquare, Search, Target, TrendingUp, Zap } from "lucide-react";
+import { ArrowRight, BarChart2, CheckCircle2, LayoutTemplate, Mail, MessageSquare, Target, TrendingUp, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateIn from "@/components/AnimateIn";
 import Footer from "@/components/Footer";
@@ -123,24 +123,28 @@ const proofItems = [
     tag: "Rebrand + Outbound GTM",
     result: "4× revenue growth in 8 months",
     body: "The product had traction but unclear positioning and a cold email system that was not converting. I repositioned the offer, rebuilt the outreach infrastructure, and aligned GTM execution.",
+    path: "/case-study/zembra",
   },
   {
     company: "Shipzzer",
     tag: "SEO + Cold Email",
-    result: "Top 3 Google rankings · 50% open rate · 7% reply rate",
+    result: "Top 3 rankings · 50% open rate · 7% reply rate",
     body: "A B2B SaaS platform in freight forwarding with weak search visibility and unclear ICP messaging. I restructured the positioning, built cold email sequences, and developed SEO foundations.",
+    path: "/case-study/shipzzer",
   },
   {
     company: "Pubrella",
     tag: "Landing Page CRO",
     result: "3× visit-to-signup conversion",
     body: "Started with positioning and brand messaging. Then traffic with clean tracking. Then analytics-led CRO. The refreshed landing page and trust-first approach tripled conversion.",
+    path: "/case-study/pubrella",
   },
   {
     company: "GrowApp",
     tag: "Full GTM Launch",
     result: "Bootstrapped SaaS — zero to AppSumo launch",
     body: "A product I built and launched from zero — including product marketing, landing page, AppSumo launch execution, and the full acquisition system.",
+    path: "/case-study/growapp",
   },
 ];
 
@@ -158,11 +162,9 @@ const SaasMarketingAgency = () => {
       <Navigation />
 
       {/* ══════════════════════════════════════════════
-          1. HERO
+          1. HERO — dark
       ══════════════════════════════════════════════ */}
-      <section className="relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent" />
+      <section className="relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32 bg-[radial-gradient(circle_at_15%_0%,rgba(124,60,255,0.28),transparent_35%),radial-gradient(circle_at_85%_5%,rgba(255,91,31,0.18),transparent_30%),linear-gradient(135deg,#090713_0%,#170920_46%,#070711_100%)]">
         <div className="container relative z-10 mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             <div className="flex-1 max-w-xl">
@@ -172,12 +174,12 @@ const SaasMarketingAgency = () => {
                 </p>
               </AnimateIn>
               <AnimateIn delay={150}>
-                <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.05] mb-6">
+                <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6">
                   SaaS Marketing Agency Alternative for B2B Founders
                 </h1>
               </AnimateIn>
               <AnimateIn delay={200}>
-                <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                <p className="text-lg text-[#cec8dd] mb-8 leading-relaxed">
                   Most B2B SaaS founders do not need a bigger marketing team first. They need a sharper message, a clearer landing page, a stronger offer, and a conversion path that does not leak trust before the demo call.
                 </p>
               </AnimateIn>
@@ -188,7 +190,7 @@ const SaasMarketingAgency = () => {
                     "Connect landing pages, ads, email, and CRO as one system",
                     "Turn attention into qualified pipeline",
                   ].map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-foreground/90">
+                    <li key={item} className="flex items-start gap-3 text-white/90">
                       <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                       <span>{item}</span>
                     </li>
@@ -203,7 +205,7 @@ const SaasMarketingAgency = () => {
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
                   </Button>
-                  <Button variant="outline" size="xl" className="border-border hover:border-muted-foreground/50" asChild>
+                  <Button variant="outline" size="xl" className="border-white/20 text-white hover:bg-white/10" asChild>
                     <Link to="/case-studies">View SaaS case studies</Link>
                   </Button>
                 </div>
@@ -211,9 +213,9 @@ const SaasMarketingAgency = () => {
             </div>
 
             <AnimateIn delay={200} className="flex-shrink-0 w-full lg:w-auto">
-              <div className="relative">
+              <div className="relative lg:max-w-md">
                 <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full scale-75" />
-                <div className="relative rounded-3xl border border-border/60 bg-card/70 p-4 shadow-2xl shadow-primary/10 lg:max-w-md">
+                <figure className="relative overflow-hidden rounded-[26px] border border-white/10 bg-white/[0.06] p-3 shadow-[0_28px_90px_rgba(0,0,0,0.32)]">
                   <img
                     src="/saas-marketing-agency-alternative-wael-aouididi.webp"
                     alt="Wael Aouididi SaaS marketing agency alternative for B2B founders"
@@ -221,9 +223,9 @@ const SaasMarketingAgency = () => {
                     height={630}
                     decoding="async"
                     fetchPriority="high"
-                    className="aspect-[1200/630] w-full rounded-2xl object-cover"
+                    className="aspect-[1200/630] w-full rounded-[20px] object-cover"
                   />
-                </div>
+                </figure>
               </div>
             </AnimateIn>
           </div>
@@ -231,23 +233,23 @@ const SaasMarketingAgency = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          2. WHY AGENCIES FAIL
+          2. WHY AGENCIES FAIL — light
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
+      <section className="rounded-t-[32px] bg-white py-20 md:py-28 shadow-[0_-36px_90px_rgba(0,0,0,0.25)]">
         <div className="container mx-auto px-6">
-          <AnimateIn delay={100} className="max-w-2xl mb-16">
-            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+          <AnimateIn delay={100} className="max-w-2xl mb-14">
+            <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
               The Real Problem
-            </p>
-            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-5">
+            </span>
+            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-[#11101a] leading-[1.02] mb-5">
               Why Most SaaS Marketing Agencies Fail Early-Stage Founders
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed">
+            <p className="text-[#4d4658] text-lg leading-relaxed">
               Most agencies start with a channel. SEO agency? More content. Paid ads? More campaigns. Cold email? More sequences. That sounds useful until you realise the real problem is not the channel.
             </p>
           </AnimateIn>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mb-12">
             {[
               { label: "Vague positioning", body: "Your homepage does not explain the product fast enough for a busy buyer." },
               { label: "No trust before the CTA", body: "Your demo CTA appears before the buyer understands the value." },
@@ -257,60 +259,62 @@ const SaasMarketingAgency = () => {
               { label: "Tactics without a system", body: "More ads. More emails. More posts. More tools. But pipeline still feels random." },
             ].map((item, i) => (
               <AnimateIn key={item.label} delay={150 + i * 60}>
-                <div className="rounded-2xl border border-border/50 bg-card/50 p-6 h-full hover:border-primary/30 transition-colors duration-300">
-                  <p className="text-sm font-black uppercase tracking-widest text-primary mb-2">{item.label}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.body}</p>
+                <div className="rounded-2xl border border-[#11111f]/10 bg-[#fbfbfe] p-6 h-full hover:border-primary/30 hover:shadow-[0_8px_30px_rgba(124,60,255,0.08)] transition-all duration-300">
+                  <p className="text-[11px] font-black uppercase tracking-[0.09em] text-primary mb-2">{item.label}</p>
+                  <p className="text-[#4d4658] text-sm leading-relaxed">{item.body}</p>
                 </div>
               </AnimateIn>
             ))}
           </div>
 
-          <AnimateIn delay={500} className="mt-10 max-w-2xl">
-            <p className="text-foreground/80 text-lg leading-relaxed border-l-4 border-primary pl-5">
-              That is why I do not start by asking: which channel should we scale? I start by asking: <strong className="text-foreground">why would a serious buyer trust this enough to take the next step?</strong>
-            </p>
+          <AnimateIn delay={500} className="max-w-2xl">
+            <blockquote className="rounded-r-[24px] border-l-[5px] border-primary bg-[#11111f] px-8 py-7 font-display text-xl font-black leading-tight text-white shadow-[0_24px_70px_rgba(7,7,17,0.16)]">
+              I do not start by asking which channel to scale. I start by asking: why would a serious buyer trust this enough to take the next step?
+            </blockquote>
           </AnimateIn>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════
-          3. WHO THIS IS FOR
+          3. WHO IT'S FOR — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
             <AnimateIn delay={100}>
-              <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+              <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
                 Best Fit
-              </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-5 leading-tight">
+              </span>
+              <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-white leading-[1.02] mb-5">
                 Who This Is For
               </h2>
-              <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              <p className="text-[#cec8dd] text-lg leading-relaxed mb-5">
                 This is for B2B SaaS founders and small teams who already have something real but cannot turn attention into consistent pipeline.
               </p>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-[#cec8dd] leading-relaxed">
                 You do not need a 40-slide strategy deck. You need the right problems fixed in the right order.
               </p>
             </AnimateIn>
 
             <AnimateIn delay={200}>
-              <div className="rounded-3xl border border-border/60 bg-card/50 p-7 space-y-3">
-                <p className="text-sm font-black uppercase tracking-widest text-primary mb-4">You may be a good fit if:</p>
-                {fitItems.map((item) => (
-                  <div key={item} className="flex items-start gap-3">
-                    <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-foreground/90 leading-relaxed">{item}</span>
-                  </div>
-                ))}
-                <div className="pt-4">
-                  <Button variant="hero" size="lg" className="group w-full" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                      Book a 20-min GTM Audit
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </a>
-                  </Button>
+              <div className="rounded-[26px] bg-[linear-gradient(135deg,#171021,#0d0d1a)] border border-white/10 p-7 shadow-[0_24px_70px_rgba(7,7,17,0.22)]">
+                <span className="mb-4 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
+                  You may be a good fit if:
+                </span>
+                <div className="space-y-3 mb-6">
+                  {fitItems.map((item) => (
+                    <div key={item} className="flex items-start gap-3 border-b border-white/10 pb-3 last:border-0 last:pb-0">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-[#e2ddf0] text-sm leading-relaxed">{item}</span>
+                    </div>
+                  ))}
                 </div>
+                <Button variant="hero" size="lg" className="group w-full" asChild>
+                  <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    Book a 20-min GTM Audit
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
               </div>
             </AnimateIn>
           </div>
@@ -318,27 +322,27 @@ const SaasMarketingAgency = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          4. HOW IT WORKS
+          4. HOW IT WORKS — light
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
+      <section className="bg-white py-20 md:py-28">
         <div className="container mx-auto px-6">
-          <AnimateIn delay={100} className="text-center mb-16 max-w-2xl mx-auto">
-            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+          <AnimateIn delay={100} className="text-center mb-14 max-w-2xl mx-auto">
+            <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
               The Process
-            </p>
-            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground">
+            </span>
+            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-[#11101a] leading-[1.02]">
               How the Engagement Works
             </h2>
           </AnimateIn>
 
-          <div className="max-w-3xl mx-auto border-t border-border/50">
+          <div className="max-w-3xl mx-auto border-t border-[#11111f]/10">
             {engagementSteps.map((step, i) => (
               <AnimateIn key={step.number} delay={150 + i * 80}>
-                <div className="grid grid-cols-[64px_1fr] gap-6 border-b border-border/50 py-8">
+                <div className="grid grid-cols-[64px_1fr] gap-6 border-b border-[#11111f]/10 py-8">
                   <div className="text-[13px] font-black tracking-widest text-primary pt-1">{step.number}</div>
                   <div>
-                    <h3 className="font-display text-xl font-bold text-foreground mb-2">{step.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{step.body}</p>
+                    <h3 className="font-display text-xl font-bold text-[#11101a] mb-2">{step.title}</h3>
+                    <p className="text-[#4d4658] leading-relaxed text-[15.5px]">{step.body}</p>
                   </div>
                 </div>
               </AnimateIn>
@@ -348,31 +352,31 @@ const SaasMarketingAgency = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          5. WHAT I FIX
+          5. WHAT I FIX — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
-          <AnimateIn delay={100} className="text-center mb-16">
-            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+          <AnimateIn delay={100} className="text-center mb-14">
+            <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
               The Work
-            </p>
-            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
+            </span>
+            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-white leading-[1.02] mb-4">
               What I Fix Before Scaling Traffic
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              Positioning affects the landing page. The landing page affects paid ads. Paid ads affect analytics. Analytics affects CRO. CRO affects pipeline. When these are fixed as a system, growth compounds.
+            <p className="text-[#cec8dd] max-w-xl mx-auto leading-relaxed">
+              Positioning affects the landing page. The landing page affects paid ads. Paid ads affect analytics. Analytics affects CRO. CRO affects pipeline. Fixed as a system, growth compounds.
             </p>
           </AnimateIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
             {fixItems.map((item, i) => (
               <AnimateIn key={item.title} delay={150 + i * 70}>
-                <div className="rounded-2xl border border-border/50 bg-card/50 p-7 h-full flex flex-col hover:border-primary/30 transition-colors duration-300">
-                  <div className="w-11 h-11 rounded-xl bg-primary/15 flex items-center justify-center mb-5">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-7 h-full flex flex-col hover:border-primary/40 hover:bg-white/[0.07] transition-all duration-300">
+                  <div className="w-11 h-11 rounded-xl bg-primary/20 flex items-center justify-center mb-5">
                     <item.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <h3 className="font-display text-lg font-bold text-foreground mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed flex-1">{item.body}</p>
+                  <h3 className="font-display text-lg font-bold text-white mb-3">{item.title}</h3>
+                  <p className="text-[#cec8dd] text-sm leading-relaxed flex-1">{item.body}</p>
                   {item.link && (
                     <Link
                       to={item.link.path}
@@ -390,102 +394,41 @@ const SaasMarketingAgency = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          6. WHY DIFFERENT
+          6. PROOF — light
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
-        <div className="container mx-auto px-6 max-w-4xl">
-          <AnimateIn delay={100}>
-            <div className="rounded-3xl bg-[linear-gradient(135deg,#171021,#0d0d1a)] p-8 md:p-12 text-white">
-              <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
-                Why Different
-              </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl text-white mb-6 leading-tight">
-                Why This Is Different From a Typical B2B SaaS Marketing Agency
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="border border-white/10 rounded-2xl p-6">
-                  <p className="text-xs font-black uppercase tracking-widest text-white/40 mb-3">Typical Agency</p>
-                  <ul className="space-y-2 text-[#cfc9dc] text-sm leading-relaxed">
-                    {[
-                      "One person for content",
-                      "One person for ads",
-                      "One person for design",
-                      "One account manager between you and the work",
-                      "Works best when GTM is already clear",
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <span className="text-white/30 mt-0.5">—</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="border border-primary/40 rounded-2xl p-6 bg-primary/5">
-                  <p className="text-xs font-black uppercase tracking-widest text-primary mb-3">What I Do</p>
-                  <ul className="space-y-2 text-[#e2ddf0] text-sm leading-relaxed">
-                    {[
-                      "One person connecting positioning, pages, acquisition, CRO, and outreach",
-                      "Operator context — I have built and scaled SaaS products",
-                      "Fix the foundation before adding traffic",
-                      "Direct execution, no account managers",
-                      "Right for early-stage teams that need a system",
-                    ].map((item) => (
-                      <li key={item} className="flex items-start gap-2">
-                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              <p className="text-[#cfc9dc] text-sm leading-relaxed">
-                That is the gap I fill — as a practical SaaS growth partner, not a generic vendor. If you want to see how this translates into a full{" "}
-                <Link to="/blog/landing-page-optimization-best-practices-2026" className="text-primary underline underline-offset-4 font-semibold">
-                  SaaS marketing plan
-                </Link>
-                , that breakdown is available separately.
-              </p>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          7. PROOF
-      ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
+      <section className="bg-white py-20 md:py-28">
         <div className="container mx-auto px-6">
-          <AnimateIn delay={100} className="text-center mb-16">
-            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+          <AnimateIn delay={100} className="text-center mb-14">
+            <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
               Real Work
-            </p>
-            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-4">
+            </span>
+            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-[#11101a] leading-[1.02] mb-4">
               Proof and Experience
             </h2>
-            <p className="text-muted-foreground max-w-xl mx-auto leading-relaxed">
-              I am not a generic marketer trying to "serve SaaS." I have built and scaled SaaS products myself. I bring operator context. Not just B2B SaaS marketing agency theory.
+            <p className="text-[#4d4658] max-w-xl mx-auto leading-relaxed">
+              I have built and scaled SaaS products myself. I bring operator context. Not just B2B SaaS marketing agency theory.
             </p>
           </AnimateIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto mb-10">
             {proofItems.map((item, i) => (
               <AnimateIn key={item.company} delay={150 + i * 80}>
-                <div className="rounded-2xl border border-border/50 bg-card/50 p-7 h-full hover:border-primary/30 transition-colors duration-300">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="font-display text-xl font-bold text-foreground">{item.company}</span>
-                    <span className="text-xs font-semibold text-primary bg-primary/10 border border-primary/20 px-3 py-1 rounded-full">
+                <div className="rounded-2xl border border-[#11111f]/10 bg-[#fbfbfe] p-7 h-full hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)] transition-all duration-300">
+                  <div className="flex items-start justify-between mb-3 gap-3">
+                    <span className="font-display text-xl font-bold text-[#11101a]">{item.company}</span>
+                    <span className="text-[11px] font-black uppercase tracking-widest text-primary bg-primary/10 border border-primary/20 px-3 py-1 rounded-full whitespace-nowrap">
                       {item.tag}
                     </span>
                   </div>
                   <p className="text-sm font-black text-primary mb-3">{item.result}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{item.body}</p>
+                  <p className="text-[#4d4658] text-sm leading-relaxed">{item.body}</p>
                 </div>
               </AnimateIn>
             ))}
           </div>
 
-          <AnimateIn delay={500} className="text-center mt-10">
-            <Button variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary/10" asChild>
+          <AnimateIn delay={500} className="text-center">
+            <Button variant="outline" size="lg" className="border-[#11111f]/20 text-[#11101a] hover:border-primary/40 hover:text-primary" asChild>
               <Link to="/case-studies">
                 View all case studies
                 <ArrowRight className="ml-2 h-4 w-4" />
@@ -496,99 +439,136 @@ const SaasMarketingAgency = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          8. THE METHOD
+          7. WHY DIFFERENT + METHOD — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
-        <div className="container mx-auto px-6 max-w-3xl">
+      <section className="py-24 md:py-32 bg-background">
+        <div className="container mx-auto px-6 max-w-4xl">
+
+          {/* Why different */}
+          <AnimateIn delay={100} className="mb-20">
+            <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
+              Why Different
+            </span>
+            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-white leading-[1.02] mb-8">
+              Why This Is Different From a Typical B2B SaaS Marketing Agency
+            </h2>
+            <div className="grid md:grid-cols-2 gap-5">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+                <p className="text-[11px] font-black uppercase tracking-widest text-white/40 mb-4">Typical Agency</p>
+                <ul className="space-y-3">
+                  {[
+                    "One person for content, one for ads, one for design",
+                    "Account manager between you and the real work",
+                    "Works best when GTM is already figured out",
+                    "Channel-first thinking",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-[#cec8dd] text-sm leading-relaxed">
+                      <span className="text-white/25 mt-0.5 font-bold flex-shrink-0">—</span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="rounded-2xl border border-primary/30 bg-primary/5 p-6">
+                <p className="text-[11px] font-black uppercase tracking-widest text-primary mb-4">What I Do</p>
+                <ul className="space-y-3">
+                  {[
+                    "One person connecting positioning, pages, acquisition, CRO, and outreach",
+                    "Direct execution — no account managers",
+                    "Fix the foundation before adding traffic",
+                    "System-first thinking",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-[#e2ddf0] text-sm leading-relaxed">
+                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </AnimateIn>
+
+          {/* Method */}
           <AnimateIn delay={100}>
-            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+            <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
               The Method
-            </p>
-            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-5 leading-tight">
+            </span>
+            <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-white leading-[1.02] mb-5">
               Fix Trust Before Scaling Traffic
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10">
-              Most founders want more leads. That is understandable. But before adding more traffic, I look for the trust gaps that stop people from converting. The sequence is:
+            <p className="text-[#cec8dd] text-lg leading-relaxed mb-10 max-w-2xl">
+              Before adding more traffic, I look for the trust gaps that stop people from converting. The sequence is:
             </p>
-          </AnimateIn>
-
-          <div className="space-y-3 mb-10">
-            {methodSteps.map((step, i) => (
-              <AnimateIn key={step} delay={150 + i * 60}>
-                <div className="flex items-center gap-5 rounded-2xl border border-border/50 bg-card/50 px-6 py-4 hover:border-primary/30 transition-colors duration-300">
-                  <span className="text-[13px] font-black tracking-widest text-primary min-w-[32px]">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="font-display font-bold text-foreground">{step}</span>
-                </div>
-              </AnimateIn>
-            ))}
-          </div>
-
-          <AnimateIn delay={500}>
-            <p className="text-muted-foreground leading-relaxed border-l-4 border-primary pl-5">
-              This is slower than saying "let's launch ads tomorrow." But it prevents wasted budget. Growth works better when the foundation can hold the traffic.
-            </p>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          9. WHEN NOT TO HIRE ME
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 relative">
-        <div className="container mx-auto px-6 max-w-3xl">
-          <AnimateIn delay={100}>
-            <div className="rounded-2xl border border-border/60 bg-card/30 p-7 md:p-9">
-              <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">Honest Filter</p>
-              <h2 className="font-display font-bold text-2xl md:text-3xl text-foreground mb-5">
-                When You Should Not Hire Me
-              </h2>
-              <ul className="space-y-3 text-muted-foreground leading-relaxed">
-                {[
-                  "You want a hands-off vendor who disappears for a month and sends a report.",
-                  "You want generic content at volume.",
-                  "You want someone to \"just run ads\" without touching the page, offer, or tracking.",
-                  "You believe traffic alone will fix weak positioning.",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="text-border mt-1 font-bold">—</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-5 text-foreground/80 leading-relaxed text-sm">
-                This works best when the founder is willing to fix the uncomfortable parts: the message, the page, the offer, the proof, and the conversion path. That is where the leverage is.
-              </p>
+            <div className="border-t border-white/10">
+              {methodSteps.map((step, i) => (
+                <AnimateIn key={step} delay={150 + i * 60}>
+                  <div className="flex items-center gap-6 border-b border-white/10 py-5 hover:bg-white/[0.02] transition-colors duration-200 px-2 rounded-lg">
+                    <span className="text-[13px] font-black tracking-widest text-primary min-w-[36px]">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-display font-bold text-white">{step}</span>
+                  </div>
+                </AnimateIn>
+              ))}
             </div>
           </AnimateIn>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════
-          10. FAQ
+          8. WHEN NOT TO HIRE + FAQ — light
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative" id="faq">
+      <section className="bg-white py-20 md:py-28" id="faq">
         <div className="container mx-auto px-6 max-w-3xl">
-          <AnimateIn delay={100} className="mb-12">
-            <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">FAQ</p>
-            <h2 className="font-display font-bold text-3xl md:text-4xl text-foreground">
+
+          {/* When not to hire */}
+          <AnimateIn delay={100} className="mb-16">
+            <div className="rounded-[24px] border border-[#11111f]/10 bg-[#f9f8fc] p-7 md:p-9">
+              <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
+                Honest Filter
+              </span>
+              <h2 className="font-display font-bold text-2xl md:text-3xl text-[#11101a] mb-5">
+                When You Should Not Hire Me
+              </h2>
+              <ul className="space-y-3">
+                {[
+                  "You want a hands-off vendor who disappears for a month and sends a report.",
+                  "You want generic content at volume.",
+                  "You want someone to \"just run ads\" without touching the page, offer, or tracking.",
+                  "You believe traffic alone will fix weak positioning.",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-[#4d4658] text-[15px] leading-relaxed">
+                    <span className="text-[#11111f]/25 font-bold mt-0.5 flex-shrink-0">—</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-5 text-[#4d4658] leading-relaxed text-sm border-l-[3px] border-primary pl-4">
+                This works best when the founder is willing to fix the uncomfortable parts: the message, the page, the offer, the proof, and the conversion path. That is where the leverage is.
+              </p>
+            </div>
+          </AnimateIn>
+
+          {/* FAQ */}
+          <AnimateIn delay={100} className="mb-10">
+            <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">FAQ</span>
+            <h2 className="font-display font-bold text-3xl md:text-[46px] text-[#11101a] leading-[1.02]">
               Frequently Asked Questions
             </h2>
           </AnimateIn>
 
-          <div className="border-t border-border/50">
+          <div className="border-t border-[#11111f]/10">
             {faqItems.map((item, index) => (
               <AnimateIn key={item.question} delay={100 + index * 40}>
                 <details
                   open={index === 0}
-                  className="border-b border-border/50 py-5 group"
+                  className="border-b border-[#11111f]/10 py-5"
                 >
-                  <summary className="cursor-pointer list-none text-base font-bold text-foreground flex items-center justify-between gap-4">
-                    <h3 className="inline font-bold text-foreground">{item.question}</h3>
+                  <summary className="cursor-pointer list-none flex items-center justify-between gap-4">
+                    <h3 className="text-base font-black text-[#171421]">{item.question}</h3>
                     <Zap className="w-4 h-4 text-primary flex-shrink-0 opacity-60" />
                   </summary>
-                  <p className="mt-3 text-muted-foreground leading-relaxed text-[15px]">{item.answer}</p>
+                  <p className="mt-3 text-[#5d5668] leading-relaxed text-[15.5px]">{item.answer}</p>
                 </details>
               </AnimateIn>
             ))}
@@ -597,22 +577,22 @@ const SaasMarketingAgency = () => {
       </section>
 
       {/* ══════════════════════════════════════════════
-          11. FINAL CTA
+          9. FINAL CTA — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 relative">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
           <AnimateIn delay={100}>
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 via-accent/10 to-primary/20 border border-primary/20 p-12 md:p-16 text-center">
-              <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+            <div className="relative rounded-3xl overflow-hidden bg-[radial-gradient(ellipse_at_top_left,rgba(124,60,255,0.25),transparent_50%),radial-gradient(ellipse_at_bottom_right,rgba(255,91,31,0.15),transparent_50%),linear-gradient(135deg,#0f0a1a,#170920)] border border-primary/20 p-12 md:p-16 text-center shadow-[0_28px_80px_rgba(7,7,17,0.4)]">
+              <span className="mb-4 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
                 Ready to Find the Real Growth Bottleneck?
-              </p>
-              <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-foreground mb-5 max-w-3xl mx-auto leading-tight">
+              </span>
+              <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-white mb-5 max-w-3xl mx-auto leading-tight">
                 Anyone can make promises.
               </h2>
-              <p className="text-muted-foreground mb-3 max-w-xl mx-auto leading-relaxed">
+              <p className="text-[#cec8dd] mb-3 max-w-xl mx-auto leading-relaxed">
                 In a 20-minute GTM Audit, you will know quickly whether I understand your problem.
               </p>
-              <p className="text-muted-foreground mb-8 max-w-xl mx-auto leading-relaxed text-sm">
+              <p className="text-[#cec8dd]/70 mb-10 max-w-xl mx-auto leading-relaxed text-sm">
                 Bring your website, your current funnel, and the channel you are trying to scale. I will tell you what is wrong, what to fix first, and whether more traffic is actually the next move.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -622,7 +602,7 @@ const SaasMarketingAgency = () => {
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </a>
                 </Button>
-                <Button variant="outline" size="xl" className="border-border hover:border-muted-foreground/50" asChild>
+                <Button variant="outline" size="xl" className="border-white/20 text-white hover:bg-white/10" asChild>
                   <Link to="/case-studies">View case studies</Link>
                 </Button>
               </div>
