@@ -21,6 +21,7 @@ export type SeoRoute = {
   dateModified?: string;
   faq?: { question: string; answer: string }[];
   schemaType?: "Service";
+  serviceTypeName?: string;
 };
 
 export const seoRoutes: SeoRoute[] = [
@@ -113,11 +114,12 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/saas-marketing-agency",
-    title: "SaaS Marketing Agency Alternative for B2B Founders | Your SaaS Growth",
+    title: "SaaS Marketing Agency Alternative for B2B Founders | YSG",
     description: "I help B2B SaaS founders fix positioning, landing pages, CRO, ads, and outreach — so traffic turns into qualified pipeline.",
     socialTitle: "SaaS Marketing Agency Alternative for B2B Founders",
     type: "service",
     schemaType: "Service",
+    serviceTypeName: "SaaS GTM Strategy for B2B Founders",
     priority: 0.9,
     changefreq: "monthly",
     image: "/saas-marketing-agency-alternative-wael-aouididi.webp",
@@ -126,9 +128,9 @@ export const seoRoutes: SeoRoute[] = [
     breadcrumbs: [{ name: "SaaS Marketing Agency Alternative", path: "/saas-marketing-agency" }],
     excerpt: "A SaaS marketing agency alternative for B2B founders who need positioning, landing pages, CRO, ads, outreach, and analytics fixed as one growth system.",
     links: [
-      { label: "SaaS landing page strategy", path: "/services/landing-page" },
-      { label: "Cold email for SaaS", path: "/services/cold-email" },
-      { label: "Meta Ads for SaaS", path: "/services/meta-ads" },
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "Conversion rate optimisation", path: "/conversion-rate-optimisation-specialist" },
       { label: "SaaS growth case studies", path: "/case-studies" },
       { label: "Book a 20-min GTM Audit", path: "/book" },
     ],
@@ -177,11 +179,12 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/cold-email-for-saas",
-    title: "Cold Email for SaaS: Outreach That Supports Pipeline | Your SaaS Growth",
+    title: "Cold Email for SaaS: Outreach & Pipeline System | YSG",
     socialTitle: "Cold Email for SaaS: Outreach Strategy That Supports Pipeline",
     description: "I build cold email systems for B2B SaaS founders — targeting, infrastructure, offer angle, sequences, and follow-up that generate replies.",
     type: "service",
     schemaType: "Service",
+    serviceTypeName: "Cold Email Outreach for B2B SaaS",
     priority: 0.9,
     changefreq: "monthly",
     image: "/cold-email-for-saas-outreach-strategy-wael-aouididi.webp",
@@ -220,11 +223,12 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/landing-page-for-saas",
-    title: "Landing Page for SaaS: Strategy, Messaging, and CRO | Your SaaS Growth",
+    title: "Landing Page for SaaS: Messaging, Strategy & CRO | YSG",
     socialTitle: "Landing Page for SaaS: Strategy, Messaging, and CRO",
     description: "I restructure SaaS landing pages so visitors understand the offer, trust the product, and book a demo — before they leave.",
     type: "service",
     schemaType: "Service",
+    serviceTypeName: "SaaS Landing Page Strategy and CRO",
     priority: 0.9,
     changefreq: "monthly",
     image: "/saas-landing-page-strategy-messaging-cro-wael-aouididi.webp",
@@ -259,11 +263,12 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/conversion-rate-optimisation-specialist",
-    title: "Conversion Rate Optimisation Specialist for SaaS | Your SaaS Growth",
+    title: "Conversion Rate Optimisation Specialist for SaaS | YSG",
     socialTitle: "Conversion Rate Optimisation Specialist for SaaS Companies",
     description: "I audit SaaS conversion paths and fix what stops demos from booking — clarity, trust, CTA friction, proof, and funnel leaks.",
     type: "service",
     schemaType: "Service",
+    serviceTypeName: "Conversion Rate Optimisation for B2B SaaS",
     priority: 0.9,
     changefreq: "monthly",
     image: "/saas-conversion-rate-optimisation-specialist-wael-aouididi.webp",

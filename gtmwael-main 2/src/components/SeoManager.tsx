@@ -151,7 +151,7 @@ const SeoManager = () => {
       ...(route.schemaType === "Service"
         ? {
             provider: { "@type": "Person", name: AUTHOR_NAME, url: SITE_URL, sameAs: SITE_URL },
-            serviceType: "SaaS GTM Strategy and Growth Consulting",
+            serviceType: route.serviceTypeName ?? "SaaS GTM Strategy and Growth Consulting",
             areaServed: "Worldwide",
             audience: { "@type": "Audience", audienceType: "B2B SaaS Founders" },
           }
