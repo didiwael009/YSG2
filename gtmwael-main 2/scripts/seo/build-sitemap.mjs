@@ -7,7 +7,7 @@ ${seoRoutes
   .map(
     (route) => `  <url>
     <loc>${getCanonicalUrl(siteUrl, route.path)}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <lastmod>${route.dateModified ?? route.datePublished ?? lastmod}</lastmod>
     <changefreq>${route.changefreq}</changefreq>
     <priority>${route.priority.toFixed(2)}</priority>
   </url>`

@@ -1101,5 +1101,27 @@ export const responsiveImageManifest = {
         "bytes": 36416
       }
     ]
+  },
+  "saas-marketing-agency-alternative-wael-aouididi": {
+    "width": 1200,
+    "height": 630,
+    "originalBytes": 27596,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/saas-marketing-agency-alternative-wael-aouididi-320.webp",
+        "bytes": 2984
+      },
+      {
+        "width": 640,
+        "src": "/responsive/saas-marketing-agency-alternative-wael-aouididi-640.webp",
+        "bytes": 7808
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/saas-marketing-agency-alternative-wael-aouididi-1024.webp",
+        "bytes": 13538
+      }
+    ]
   }
 } as const satisfies Record<string, ResponsiveImageEntry>;

@@ -20,6 +20,7 @@ export type SeoRoute = {
   datePublished?: string;
   dateModified?: string;
   faq?: { question: string; answer: string }[];
+  schemaType?: "Service";
 };
 
 export const seoRoutes: SeoRoute[] = [
@@ -108,6 +109,70 @@ export const seoRoutes: SeoRoute[] = [
       { label: "Pubrella landing page CRO case study", path: "/case-study/pubrella" },
       { label: "Screenplay funnel case study", path: "/case-study/screenplay" },
       { label: "Book a landing page audit", path: "/book" },
+    ],
+  },
+  {
+    path: "/saas-marketing-agency",
+    title: "SaaS Marketing Agency Alternative for B2B Founders",
+    description: "I help B2B SaaS founders fix positioning, landing pages, CRO, ads, and outreach — so traffic turns into qualified pipeline.",
+    socialTitle: "SaaS Marketing Agency Alternative for B2B Founders",
+    type: "service",
+    schemaType: "Service",
+    priority: 1,
+    changefreq: "monthly",
+    image: "/saas-marketing-agency-alternative-wael-aouididi.webp",
+    datePublished: "2026-05-16",
+    dateModified: "2026-05-16",
+    breadcrumbs: [{ name: "SaaS Marketing Agency Alternative", path: "/saas-marketing-agency" }],
+    excerpt: "A SaaS marketing agency alternative for B2B founders who need positioning, landing pages, CRO, ads, outreach, and analytics fixed as one growth system.",
+    links: [
+      { label: "SaaS landing page strategy", path: "/services/landing-page" },
+      { label: "Cold email for SaaS", path: "/services/cold-email" },
+      { label: "Meta Ads for SaaS", path: "/services/meta-ads" },
+      { label: "SaaS growth case studies", path: "/case-studies" },
+      { label: "Book a 20-min GTM Audit", path: "/book" },
+    ],
+    faq: [
+      {
+        question: "What does a SaaS marketing agency do?",
+        answer:
+          "A SaaS marketing agency typically helps software companies with channels like SEO, paid ads, content, email, CRO, and demand generation. The problem is that many agencies treat these as separate services. For early-stage SaaS companies, the bigger need is often a connected GTM system — positioning, landing pages, conversion path, analytics, and acquisition working together.",
+      },
+      {
+        question: "Are you a SaaS marketing agency?",
+        answer:
+          "Not in the traditional sense. I work more like a fractional SaaS growth lead. I help founders diagnose what is blocking growth, fix the core conversion assets, and connect GTM execution across landing pages, CRO, ads, outreach, SEO content, and analytics.",
+      },
+      {
+        question: "When should a SaaS founder hire a marketing agency?",
+        answer:
+          "You should hire a SaaS marketing agency when you already have clear positioning, a proven offer, working conversion paths, reliable tracking, and enough budget to scale execution. If those pieces are not clear yet, you likely need a GTM and conversion diagnosis first.",
+      },
+      {
+        question: "What should I fix before spending more on SaaS marketing services?",
+        answer:
+          "Start with positioning, landing page clarity, CTA hierarchy, proof, analytics, and conversion friction. If these are weak, more traffic usually creates more waste — not more pipeline.",
+      },
+      {
+        question: "Do you offer SaaS marketing services?",
+        answer:
+          "Yes. I help with SaaS positioning, GTM strategy, landing pages, CRO, Meta Ads, cold email, LinkedIn outreach, analytics, and SEO content as part of a wider growth system.",
+      },
+      {
+        question: "Do you help with SEO for SaaS?",
+        answer:
+          "Yes, but SEO is not a standalone service. I use it as part of a wider SaaS growth system — to capture intent and support trust and pipeline, not just rankings.",
+      },
+      {
+        question: "Do you help with paid ads?",
+        answer:
+          "Yes. I help with Meta Ads and paid acquisition strategy, especially where ads need better landing pages, stronger offers, clearer tracking, and better conversion paths.",
+      },
+      {
+        question: "Do you help with cold email?",
+        answer:
+          "Yes. I help with the full cold email process: targeting, domain setup, deliverability, personalisation, sequences, follow-up copy, and testing.",
+      },
     ],
   },
   {

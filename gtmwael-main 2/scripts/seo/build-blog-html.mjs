@@ -26,7 +26,7 @@ export const createHtmlBuilder = ({
     );
     const sections = details.sections ?? [];
     const navLinks = seoRoutes.filter((item) =>
-      ["/", "/case-studies", "/blog", "/services/cold-email", "/services/landing-page", "/services/meta-ads", "/pricing", "/book"].includes(item.path)
+      ["/", "/case-studies", "/blog", "/saas-marketing-agency", "/services/cold-email", "/services/landing-page", "/services/meta-ads", "/pricing", "/book"].includes(item.path)
     );
 
     return `

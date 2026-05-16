@@ -11,6 +11,13 @@ import {
 
 const services = [
   {
+    title: "SaaS Marketing Agency Alternative",
+    description: "Connected GTM execution for B2B SaaS founders who need trust before traffic.",
+    icon: BriefcaseBusiness,
+    href: "/saas-marketing-agency",
+    isPage: true,
+  },
+  {
     title: "Cold Emailing",
     description: "Outbound that opens qualified conversations without spam or poor-quality lists.",
     icon: Mail,

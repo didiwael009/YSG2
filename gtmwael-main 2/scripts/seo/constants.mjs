@@ -20,6 +20,7 @@ export const prerenderRoutePaths = [
   "/case-study/zembra",
   "/case-study/pubrella",
   "/services/landing-page",
+  "/saas-marketing-agency",
   "/services/cold-email",
   "/services/meta-ads",
   "/book",
@@ -134,6 +135,25 @@ export const routeContent = {
         heading: "Relevant proof",
         body: "Pubrella focused on conversion rate improvement, Screenplay focused on guided product flow, and Shipzzer focused on buyer-intent page structure.",
       },
+    ],
+  },
+  "/saas-marketing-agency": {
+    intro: "A SaaS marketing agency alternative for B2B founders who need positioning, landing pages, CRO, ads, outreach, and analytics fixed as one growth system.",
+    sections: [
+      {
+        heading: "Fix trust before traffic",
+        body: "Most B2B SaaS founders do not need a bigger marketing team first. They need a sharper message, a clearer landing page, a stronger offer, and a conversion path that does not leak trust before the demo call.",
+      },
+      {
+        heading: "Connected SaaS GTM execution",
+        body: "The work connects positioning, landing pages, CRO, analytics, cold email, paid ads, and the full path from first visit to qualified pipeline.",
+      },
+    ],
+    links: [
+      { label: "SaaS landing page strategy", path: "/services/landing-page" },
+      { label: "Cold email for SaaS", path: "/services/cold-email" },
+      { label: "Meta Ads for SaaS", path: "/services/meta-ads" },
+      { label: "Book a 20-min GTM Audit", path: "/book" },
     ],
   },
   "/creative/community-management": {

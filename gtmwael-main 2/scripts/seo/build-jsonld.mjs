@@ -58,6 +58,33 @@ export const buildJsonLd = ({ route, siteUrl, brandName, authorName, lastmod, cl
           provider: { "@type": "Person", name: authorName },
           mainEntityOfPage: canonical,
         }
+      : route.schemaType === "Service"
+      ? {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "@id": `${canonical}#service`,
+          name: socialTitle,
+          description: route.description,
+          url: canonical,
+          image,
+          provider: {
+            "@type": "Person",
+            name: authorName,
+            url: siteUrl,
+            sameAs: siteUrl,
+          },
+          serviceType: "SaaS GTM Strategy and Growth Consulting",
+          areaServed: "Worldwide",
+          audience: {
+            "@type": "Audience",
+            audienceType: "B2B SaaS Founders",
+          },
+          mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+          publisher: publisherOrganization,
+          ...(route.datePublished
+            ? { datePublished: route.datePublished, dateModified: route.dateModified ?? route.datePublished }
+            : { dateModified: lastmod }),
+        }
       : {
           "@context": "https://schema.org",
           "@type": route.type === "article" ? "BlogPosting" : route.type === "case-study" ? "Article" : "WebPage",

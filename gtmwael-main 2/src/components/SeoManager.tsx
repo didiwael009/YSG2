@@ -140,13 +140,22 @@ const SeoManager = () => {
     const isHome = route.path === "/";
     const webPage = {
       "@context": "https://schema.org",
-      "@type": isHome ? "ProfessionalService" : route.type === "article" ? "BlogPosting" : isArticle ? "Article" : "WebPage",
+      "@type": isHome ? "ProfessionalService" : route.schemaType === "Service" ? "Service" : route.type === "article" ? "BlogPosting" : isArticle ? "Article" : "WebPage",
+      ...(route.schemaType === "Service" ? { "@id": `${canonical}#service` } : {}),
       headline: socialTitle,
       name: route.title,
       description: route.description,
       url: canonical,
       image,
       ...(isHome ? { areaServed: "Global", founder: { "@type": "Person", name: AUTHOR_NAME }, provider: { "@type": "Person", name: AUTHOR_NAME } } : {}),
+      ...(route.schemaType === "Service"
+        ? {
+            provider: { "@type": "Person", name: AUTHOR_NAME, url: SITE_URL, sameAs: SITE_URL },
+            serviceType: "SaaS GTM Strategy and Growth Consulting",
+            areaServed: "Worldwide",
+            audience: { "@type": "Audience", audienceType: "B2B SaaS Founders" },
+          }
+        : {}),
       author: { "@type": "Person", name: AUTHOR_NAME },
       publisher: publisherOrganization,
       mainEntityOfPage: { "@type": "WebPage", "@id": canonical },

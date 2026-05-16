@@ -13,6 +13,7 @@ import CaseStudyZembra from "./pages/CaseStudyZembra";
 import ColdEmail from "./pages/ColdEmail";
 import LandingPageConversion from "./pages/LandingPageConversion";
 import MetaAds from "./pages/MetaAds";
+import SaasMarketingAgency from "./pages/SaasMarketingAgency";
 
 // Lazy load non-critical route pages
 const Creative = lazy(() => import("./pages/Creative"));
@@ -47,6 +48,7 @@ export const AppRoutes = () => (
       <Route path="/case-study/ic-center" element={lazyRoute(<CaseStudyICCenter />)} />
       <Route path="/creative/community-management" element={lazyRoute(<CommunityManagement />)} />
       <Route path="/services/landing-page" element={<LandingPageConversion />} />
+      <Route path="/saas-marketing-agency" element={<SaasMarketingAgency />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogArticle />} />
       <Route path="/pricing" element={lazyRoute(<Pricing />)} />

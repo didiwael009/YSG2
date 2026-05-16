@@ -17,6 +17,7 @@ const UpworkIcon = () => (
 
 const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
   const services = [
+    { label: "SaaS Marketing", to: "/saas-marketing-agency" },
     { label: "Meta Ads", to: "/services/meta-ads" },
     { label: "Cold Email", to: "/services/cold-email" },
     { label: "Landing Pages", to: "/services/landing-page" },
