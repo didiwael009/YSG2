@@ -378,7 +378,7 @@ const SaasMarketingAgency = () => {
         </section>
       </main>
 
-      <Footer />
+      <Footer hideCTA />
     </div>
   );
 };
