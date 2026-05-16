@@ -10,16 +10,32 @@ const BRAND_NAME = "Your SaaS Growth";
 const PUBLISHER_LOGO_URL = `${SITE_URL}/favicon.png`;
 
 const read = (file) => readFileSync(path.join(projectRoot, file), "utf8");
-const blogSource = read("src/lib/blog.ts");
+const blogIndexSource = read("src/content/blog/index.ts");
 const seoSource = read("src/lib/seo.ts");
 
-const blogMatch = blogSource.match(/export const blogPosts: BlogPost\[\] = (\[[\s\S]*?\]);/);
-if (!blogMatch) throw new Error("Could not read blogPosts from src/lib/blog.ts");
+const readBlogPosts = () => {
+  const importEntries = [...blogIndexSource.matchAll(/import \{ (\w+) \} from "\.\/articles\/([^"]+)";/g)].map(
+    ([, exportName, filename]) => ({ exportName, filename })
+  );
+  const arrayMatch = blogIndexSource.match(/export const blogPosts: BlogPost\[\] = \[([\s\S]*?)\];/);
+  if (!arrayMatch) throw new Error("Could not read blogPosts from src/content/blog/index.ts");
+
+  const importMap = new Map(importEntries.map((entry) => [entry.exportName, entry.filename]));
+  const postNames = [...arrayMatch[1].matchAll(/(\w+),/g)].map(([, name]) => name);
+  return postNames.map((name) => {
+    const filename = importMap.get(name);
+    if (!filename) throw new Error(`Could not resolve blog article import for ${name}`);
+    const articleSource = read(`src/content/blog/articles/${filename}.ts`);
+    const articleMatch = articleSource.match(/export const \w+: BlogPost = ([\s\S]*?)\s*;\s*$/);
+    if (!articleMatch) throw new Error(`Could not read blog article ${filename}`);
+    return Function(`"use strict"; return (${articleMatch[1]});`)();
+  });
+};
 
 const routeMatch = seoSource.match(/export const seoRoutes: SeoRoute\[\] = (\[[\s\S]*?\]);/);
 if (!routeMatch) throw new Error("Could not read seoRoutes from src/lib/seo.ts");
 
-const blogPosts = Function(`"use strict"; return (${blogMatch[1]});`)();
+const blogPosts = readBlogPosts();
 const staticRoutes = Function(`"use strict"; return (${routeMatch[1]});`)();
 const allRoutes = new Set([
   ...staticRoutes.map((route) => route.path),

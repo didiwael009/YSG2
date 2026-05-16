@@ -10,9 +10,31 @@ const distDir = path.join(projectRoot, "dist");
 const distAssetsDir = path.join(distDir, "assets");
 const sourceAssetsDir = path.join(projectRoot, "src/assets");
 const seoSourcePath = path.join(projectRoot, "src/lib/seo.ts");
-const blogSourcePath = path.join(projectRoot, "src/lib/blog.ts");
+const blogIndexPath = path.join(projectRoot, "src/content/blog/index.ts");
+const blogArticlesDir = path.join(projectRoot, "src/content/blog/articles");
 const source = await readFile(seoSourcePath, "utf8");
-const blogSource = await readFile(blogSourcePath, "utf8");
+const blogIndexSource = await readFile(blogIndexPath, "utf8");
+
+const readBlogPosts = async () => {
+  const importEntries = [...blogIndexSource.matchAll(/import \{ (\w+) \} from "\.\/articles\/([^"]+)";/g)].map(
+    ([, exportName, filename]) => ({ exportName, filename })
+  );
+  const arrayMatch = blogIndexSource.match(/export const blogPosts: BlogPost\[\] = \[([\s\S]*?)\];/);
+  if (!arrayMatch) throw new Error("Could not read blogPosts from src/content/blog/index.ts");
+
+  const importMap = new Map(importEntries.map((entry) => [entry.exportName, entry.filename]));
+  const postNames = [...arrayMatch[1].matchAll(/(\w+),/g)].map(([, name]) => name);
+  const posts = [];
+  for (const name of postNames) {
+    const filename = importMap.get(name);
+    if (!filename) throw new Error(`Could not resolve blog article import for ${name}`);
+    const articleSource = await readFile(path.join(blogArticlesDir, `${filename}.ts`), "utf8");
+    const articleMatch = articleSource.match(/export const \w+: BlogPost = ([\s\S]*?)\s*;\s*$/);
+    if (!articleMatch) throw new Error(`Could not read blog article ${filename}`);
+    posts.push(Function(`"use strict"; return (${articleMatch[1]});`)());
+  }
+  return posts;
+};
 
 const getConst = (name) => {
   const match = source.match(new RegExp(`export const ${name} = "([^"]+)"`));
@@ -30,10 +52,7 @@ if (!routeMatch) throw new Error("Could not read seoRoutes from src/lib/seo.ts")
 
 const staticSeoRoutes = Function(`"use strict"; return (${routeMatch[1]});`)();
 
-const blogMatch = blogSource.match(/export const blogPosts: BlogPost\[\] = (\[[\s\S]*?\]);/);
-if (!blogMatch) throw new Error("Could not read blogPosts from src/lib/blog.ts");
-
-const blogPosts = Function(`"use strict"; return (${blogMatch[1]});`)();
+const blogPosts = await readBlogPosts();
 const blogSeoRoutes = blogPosts.map((post) => ({
   path: post.path,
   title: post.metaTitle,
