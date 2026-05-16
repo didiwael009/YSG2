@@ -11,7 +11,10 @@ import CaseStudyPubrella from "./pages/CaseStudyPubrella";
 import CaseStudyShipzzer from "./pages/CaseStudyShipzzer";
 import CaseStudyZembra from "./pages/CaseStudyZembra";
 import ColdEmail from "./pages/ColdEmail";
+import ColdEmailForSaas from "./pages/ColdEmailForSaas";
+import ConversionRateOptimisationSpecialist from "./pages/ConversionRateOptimisationSpecialist";
 import LandingPageConversion from "./pages/LandingPageConversion";
+import LandingPageForSaas from "./pages/LandingPageForSaas";
 import MetaAds from "./pages/MetaAds";
 import SaasMarketingAgency from "./pages/SaasMarketingAgency";
 
@@ -49,6 +52,9 @@ export const AppRoutes = () => (
       <Route path="/creative/community-management" element={lazyRoute(<CommunityManagement />)} />
       <Route path="/services/landing-page" element={<LandingPageConversion />} />
       <Route path="/saas-marketing-agency" element={<SaasMarketingAgency />} />
+      <Route path="/cold-email-for-saas" element={<ColdEmailForSaas />} />
+      <Route path="/landing-page-for-saas" element={<LandingPageForSaas />} />
+      <Route path="/conversion-rate-optimisation-specialist" element={<ConversionRateOptimisationSpecialist />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogArticle />} />
       <Route path="/pricing" element={lazyRoute(<Pricing />)} />

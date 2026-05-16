@@ -21,6 +21,9 @@ export const prerenderRoutePaths = [
   "/case-study/pubrella",
   "/services/landing-page",
   "/saas-marketing-agency",
+  "/cold-email-for-saas",
+  "/landing-page-for-saas",
+  "/conversion-rate-optimisation-specialist",
   "/services/cold-email",
   "/services/meta-ads",
   "/book",
@@ -135,6 +138,60 @@ export const routeContent = {
         heading: "Relevant proof",
         body: "Pubrella focused on conversion rate improvement, Screenplay focused on guided product flow, and Shipzzer focused on buyer-intent page structure.",
       },
+    ],
+  },
+  "/cold-email-for-saas": {
+    intro: "A cold email system for B2B SaaS founders — domain setup, deliverability, ICP targeting, offer framing, personalisation, sequences, and follow-up that generate qualified pipeline.",
+    sections: [
+      {
+        heading: "Why SaaS cold email fails",
+        body: "The channel works. The execution is usually broken in one of five places: weak targeting, broken infrastructure, vague offer angle, no real personalisation, and no follow-up logic. Fix all five and cold email becomes a predictable pipeline channel.",
+      },
+      {
+        heading: "What I handle end to end",
+        body: "Domain setup and DNS configuration, inbox warm-up, ICP definition and list building, personalisation frameworks, three-to-five email sequences with follow-up logic that adds a new angle rather than just checking in.",
+      },
+    ],
+    links: [
+      { label: "SaaS GTM strategy", path: "/saas-marketing-agency" },
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+      { label: "Book a 20-min Cold Email Diagnosis", path: "/book" },
+    ],
+  },
+  "/landing-page-for-saas": {
+    intro: "A SaaS landing page strategy and CRO service for B2B founders whose page is getting traffic but not converting demos — covering hero clarity, proof, CTA hierarchy, objection handling, and mobile friction.",
+    sections: [
+      {
+        heading: "Why SaaS landing pages fail",
+        body: "The landing page is the conversion point for every channel. Ads send traffic there. Cold email sends replies there. SEO sends organic visitors there. If the page does not convert, every channel becomes more expensive and less predictable.",
+      },
+      {
+        heading: "What gets fixed",
+        body: "Hero clarity so the first scroll answers who this is for and why it matters. CTA hierarchy that earns the demo request before asking for it. Proof that earns trust at the right moments. Objection handling woven into the right positions. Mobile friction identified and removed.",
+      },
+    ],
+    links: [
+      { label: "SaaS GTM strategy", path: "/saas-marketing-agency" },
+      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "Book a 20-min SaaS Landing Page Diagnosis", path: "/book" },
+    ],
+  },
+  "/conversion-rate-optimisation-specialist": {
+    intro: "A SaaS conversion rate optimisation service for B2B founders with traffic but weak demos — auditing messaging clarity, proof, CTA structure, funnel friction, and analytics visibility across the full conversion path.",
+    sections: [
+      {
+        heading: "Why SaaS conversion problems are not button-colour problems",
+        body: "SaaS buyers do not impulse-buy. The conversion problem in B2B SaaS is almost always a trust problem — visitors need to understand the offer fast, see proof that earns belief, and feel safe taking the next step.",
+      },
+      {
+        heading: "What the audit covers",
+        body: "Full conversion path review: homepage, landing pages, demo flow, confirmation, and any paid or outbound traffic landing pages. A prioritised fix list — not a 40-page report. Execution included.",
+      },
+    ],
+    links: [
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+      { label: "SaaS GTM strategy", path: "/saas-marketing-agency" },
+      { label: "Book a 20-min GTM Audit", path: "/book" },
     ],
   },
   "/saas-marketing-agency": {
