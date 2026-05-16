@@ -18,10 +18,10 @@ const UpworkIcon = () => (
 const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
   const services = [
     { label: "SaaS Marketing", to: "/saas-marketing-agency" },
+    { label: "Cold Email for SaaS", to: "/cold-email-for-saas" },
+    { label: "Landing Page for SaaS", to: "/landing-page-for-saas" },
+    { label: "CRO Specialist", to: "/conversion-rate-optimisation-specialist" },
     { label: "Meta Ads", to: "/services/meta-ads" },
-    { label: "Cold Email", to: "/services/cold-email" },
-    { label: "Landing Pages", to: "/services/landing-page" },
-    { label: "Community", to: "/creative/community-management" },
   ];
 
   const pages = [
