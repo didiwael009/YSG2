@@ -16,6 +16,7 @@ import ConversionRateOptimisationSpecialist from "./pages/ConversionRateOptimisa
 import LandingPageConversion from "./pages/LandingPageConversion";
 import LandingPageForSaas from "./pages/LandingPageForSaas";
 import MetaAds from "./pages/MetaAds";
+import MetaAdsForSaas from "./pages/MetaAdsForSaas";
 import SaasMarketingAgency from "./pages/SaasMarketingAgency";
 
 // Lazy load non-critical route pages
@@ -29,6 +30,13 @@ const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Resume = lazy(() => import("./pages/Resume"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const SaasMarketingPlan = lazy(() => import("./pages/SaasMarketingPlan"));
+const OptimizeSaasLandingPage = lazy(() => import("./pages/OptimizeSaasLandingPage"));
+const GoogleAdsVsMetaAdsSaas = lazy(() => import("./pages/GoogleAdsVsMetaAdsSaas"));
+const SaasColdEmailStrategy = lazy(() => import("./pages/SaasColdEmailStrategy"));
+const B2bSaasMarketingStrategy = lazy(() => import("./pages/B2bSaasMarketingStrategy"));
+const LandingPageForLeadGeneration = lazy(() => import("./pages/LandingPageForLeadGeneration"));
+const LinkedinOutreachForSaas = lazy(() => import("./pages/LinkedinOutreachForSaas"));
 const RouteFallback = () => <div className="min-h-screen bg-background" />;
 const lazyRoute = (element: ReactNode) => (
   <Suspense fallback={<RouteFallback />}>{element}</Suspense>
@@ -55,11 +63,19 @@ export const AppRoutes = () => (
       <Route path="/cold-email-for-saas" element={<ColdEmailForSaas />} />
       <Route path="/landing-page-for-saas" element={<LandingPageForSaas />} />
       <Route path="/conversion-rate-optimisation-specialist" element={<ConversionRateOptimisationSpecialist />} />
+      <Route path="/meta-ads-for-saas" element={<MetaAdsForSaas />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogArticle />} />
       <Route path="/pricing" element={lazyRoute(<Pricing />)} />
       <Route path="/resume" element={lazyRoute(<Resume />)} />
       <Route path="/book" element={<Book />} />
+      <Route path="/saas-marketing-plan" element={lazyRoute(<SaasMarketingPlan />)} />
+      <Route path="/optimize-saas-landing-page" element={lazyRoute(<OptimizeSaasLandingPage />)} />
+      <Route path="/google-ads-vs-meta-ads-saas" element={lazyRoute(<GoogleAdsVsMetaAdsSaas />)} />
+      <Route path="/saas-cold-email-strategy" element={lazyRoute(<SaasColdEmailStrategy />)} />
+      <Route path="/b2b-saas-marketing-strategy" element={lazyRoute(<B2bSaasMarketingStrategy />)} />
+      <Route path="/landing-page-for-lead-generation" element={lazyRoute(<LandingPageForLeadGeneration />)} />
+      <Route path="/linkedin-outreach-for-saas" element={lazyRoute(<LinkedinOutreachForSaas />)} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={lazyRoute(<NotFound />)} />
     </Routes>

@@ -365,7 +365,7 @@ const ColdEmailForSaas = () => {
           <AnimateIn delay={200}>
             <p className="text-[#cec8dd] text-lg leading-relaxed max-w-2xl">
               When one element is weak, the whole system underperforms. When all elements are aligned — targeting, infrastructure, offer, personalisation, sequence, and a strong{" "}
-              <Link to="/landing-page-for-saas/" className="text-primary hover:underline">
+              <Link to="/landing-page-for-saas" className="text-primary hover:underline">
                 SaaS landing page
               </Link>{" "}
               as the destination — the channel produces consistent, qualified pipeline.

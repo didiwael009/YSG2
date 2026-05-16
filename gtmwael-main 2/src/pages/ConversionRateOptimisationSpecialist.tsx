@@ -363,11 +363,11 @@ const ConversionRateOptimisationSpecialist = () => {
                       {step.number === "03" ? (
                         <>
                           I help rewrite and restructure the core conversion assets. This connects directly to the{" "}
-                          <Link to="/landing-page-for-saas/" className="text-primary hover:underline">
+                          <Link to="/landing-page-for-saas" className="text-primary hover:underline">
                             SaaS landing page
                           </Link>{" "}
                           work and, where relevant, the messaging used in{" "}
-                          <Link to="/cold-email-for-saas/" className="text-primary hover:underline">
+                          <Link to="/cold-email-for-saas" className="text-primary hover:underline">
                             cold email for SaaS
                           </Link>{" "}
                           — because conversion problems often run across all channels at once.
@@ -520,7 +520,7 @@ const ConversionRateOptimisationSpecialist = () => {
                   </a>
                 </Button>
                 <Button variant="outline" size="xl" className="border-white/20 text-white hover:bg-white/10" asChild>
-                  <Link to="/landing-page-for-saas/">SaaS landing page strategy</Link>
+                  <Link to="/landing-page-for-saas">SaaS landing page strategy</Link>
                 </Button>
               </div>
             </div>

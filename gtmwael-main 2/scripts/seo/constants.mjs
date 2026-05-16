@@ -26,7 +26,15 @@ export const prerenderRoutePaths = [
   "/conversion-rate-optimisation-specialist",
   "/services/cold-email",
   "/services/meta-ads",
+  "/meta-ads-for-saas",
   "/book",
+  "/saas-marketing-plan",
+  "/optimize-saas-landing-page",
+  "/google-ads-vs-meta-ads-saas",
+  "/saas-cold-email-strategy",
+  "/b2b-saas-marketing-strategy",
+  "/landing-page-for-lead-generation",
+  "/linkedin-outreach-for-saas",
 ];
 
 export const routeContent = {
@@ -211,6 +219,145 @@ export const routeContent = {
       { label: "Cold email for SaaS", path: "/services/cold-email" },
       { label: "Meta Ads for SaaS", path: "/services/meta-ads" },
       { label: "Book a 20-min GTM Audit", path: "/book" },
+    ],
+  },
+  "/meta-ads-for-saas": {
+    intro: "Meta Ads for B2B SaaS founders — tracking, audiences, creative testing, and landing page alignment fixed as one paid acquisition system.",
+    sections: [
+      {
+        heading: "Why Meta Ads fail for SaaS",
+        body: "Most SaaS paid campaigns underperform because tracking is broken, audiences are too broad, creative has fatigued, or the landing page does not match the ad angle. Fixing one of these in isolation does not move the numbers.",
+      },
+      {
+        heading: "What the system covers",
+        body: "Pixel and CAPI setup, lookalike audiences built from real buyer data, anti-fatigue creative refresh cycles, and landing page alignment so the ad and the page tell the same story.",
+      },
+    ],
+    links: [
+      { label: "SaaS GTM strategy", path: "/saas-marketing-agency" },
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+      { label: "Book a 20-min Meta Ads Audit", path: "/book" },
+    ],
+  },
+  "/saas-marketing-plan": {
+    intro: "A practical SaaS marketing plan framework for B2B founders covering positioning, acquisition channels, landing pages, cold email, paid ads, and conversion in one connected system.",
+    sections: [
+      {
+        heading: "Why most SaaS marketing plans fail",
+        body: "The most common mistake is treating each channel as a separate plan. SEO is disconnected from the landing page. Cold email is disconnected from positioning. Ads are disconnected from conversion. A working SaaS marketing plan connects all channels around one clear offer and one clear buyer.",
+      },
+      {
+        heading: "The order that works for early-stage B2B SaaS",
+        body: "Start with positioning clarity. Then fix the landing page. Then add one acquisition channel at a time — either cold email or paid ads first. Once one channel converts reliably, layer the second. SEO content supports both.",
+      },
+    ],
+    links: [
+      { label: "SaaS marketing agency alternative", path: "/saas-marketing-agency" },
+      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
+    ],
+  },
+  "/optimize-saas-landing-page": {
+    intro: "A practical guide to SaaS landing page optimisation — hero clarity, proof placement, CTA hierarchy, mobile friction removal, and conversion path fixes that increase demo bookings.",
+    sections: [
+      {
+        heading: "Start with the hero section",
+        body: "If the first scroll does not answer who this is for, what problem it solves, and what the next step is, everything below it is wasted. The hero is the highest-leverage section for conversion improvement.",
+      },
+      {
+        heading: "Proof, CTA, and friction",
+        body: "Place proof near the decision point — not just at the bottom. Match the CTA label to the buyer's actual next step. Remove form fields that exist for your CRM convenience, not for the user's conversion journey.",
+      },
+    ],
+    links: [
+      { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
+      { label: "Conversion rate optimisation specialist", path: "/conversion-rate-optimisation-specialist" },
+    ],
+  },
+  "/google-ads-vs-meta-ads-saas": {
+    intro: "Google Ads captures demand. Meta Ads creates it. For B2B SaaS founders choosing between paid channels, the decision depends on where your buyers are in the awareness journey.",
+    sections: [
+      {
+        heading: "Google Ads for SaaS",
+        body: "Search captures buyers who already know they have a problem and are comparing solutions. Landing pages for Google traffic can move faster to the CTA because the visitor has pre-qualified intent.",
+      },
+      {
+        heading: "Meta Ads for SaaS",
+        body: "Social reaches buyers before they are actively searching. The landing page needs more context, education, and softer proof before asking for a demo. Retargeting is where Meta delivers most of its value for SaaS.",
+      },
+    ],
+    links: [
+      { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+    ],
+  },
+  "/saas-cold-email-strategy": {
+    intro: "A complete SaaS cold email strategy guide — ICP targeting, domain setup, deliverability, offer framing, sequences, and follow-up logic that generates qualified replies, not noise.",
+    sections: [
+      {
+        heading: "Targeting is where SaaS cold email wins or loses",
+        body: "The biggest cold email mistake is targeting job titles instead of buyers with a specific, time-sensitive problem. A tight ICP with a specific trigger generates 10x the reply rate of a broad list with generic copy.",
+      },
+      {
+        heading: "Infrastructure and deliverability come before the first send",
+        body: "Sending from the primary domain without warm-up or proper DNS is the fastest way to destroy deliverability. A secondary sending domain, configured and warmed up correctly, keeps outbound separate from transactional email.",
+      },
+    ],
+    links: [
+      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+    ],
+  },
+  "/b2b-saas-marketing-strategy": {
+    intro: "A B2B SaaS marketing strategy framework for founders — positioning, demand creation, demand capture, conversion, and the order in which to build the GTM system for early pipeline.",
+    sections: [
+      {
+        heading: "Fix positioning before choosing channels",
+        body: "Most B2B SaaS marketing strategy problems start before the channels. The offer is unclear, the ICP is too broad, and the landing page cannot convert any traffic reliably. Channel selection before these are fixed just burns budget faster.",
+      },
+      {
+        heading: "Demand creation vs demand capture",
+        body: "Cold email and Meta Ads create demand by reaching buyers before they are searching. Google Ads and SEO capture demand from buyers who are already looking. A working B2B SaaS marketing strategy uses both layers in sequence, not simultaneously.",
+      },
+    ],
+    links: [
+      { label: "SaaS marketing agency alternative", path: "/saas-marketing-agency" },
+      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
+    ],
+  },
+  "/landing-page-for-lead-generation": {
+    intro: "How to build a SaaS landing page for lead generation — offer clarity, trust signals, form friction, and the conversion path structure that qualifies leads before the demo call.",
+    sections: [
+      {
+        heading: "The difference between a lead generation page and a homepage",
+        body: "A homepage serves many audiences. A lead generation landing page serves one: a buyer from a specific channel with a specific intent. Every element on the page should narrow focus, not broaden it.",
+      },
+      {
+        heading: "What qualifies the lead before the form",
+        body: "The best lead generation pages do the qualification work in the copy — before the form appears. If the offer clarity, proof, and CTA copy are right, you get fewer form submissions but more qualified ones.",
+      },
+    ],
+    links: [
+      { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
+      { label: "Conversion rate optimisation specialist", path: "/conversion-rate-optimisation-specialist" },
+    ],
+  },
+  "/linkedin-outreach-for-saas": {
+    intro: "LinkedIn outreach strategy for B2B SaaS founders — profile positioning, connection messaging, content as warm-up, and how to run LinkedIn alongside cold email for more qualified conversations.",
+    sections: [
+      {
+        heading: "LinkedIn works as a trust layer, not a volume channel",
+        body: "LinkedIn outreach at high volume produces low reply rates and can damage your profile. The channel works best as a targeted trust-builder: reach 20-50 ideal buyers per week, warm them with content, then connect with a relevant message.",
+      },
+      {
+        heading: "Running LinkedIn and cold email together",
+        body: "The same buyer approached by email and LinkedIn with a consistent message responds at higher rates than either channel alone. LinkedIn view creates familiarity. Email provides the direct ask. Together they work better than separately.",
+      },
+    ],
+    links: [
+      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "SaaS marketing agency alternative", path: "/saas-marketing-agency" },
     ],
   },
   "/creative/community-management": {

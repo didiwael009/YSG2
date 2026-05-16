@@ -74,7 +74,7 @@ const removeJsonLd = (id: string) => {
 };
 
 const cleanImageUrl = (image?: string) => {
-  const path = image && !image.startsWith("/assets/") ? image : DEFAULT_OG_IMAGE;
+  const path = image ?? DEFAULT_OG_IMAGE;
   return path.startsWith("http") ? path : `${SITE_URL}${path}`;
 };
 
@@ -176,7 +176,31 @@ const SeoManager = () => {
       ],
     };
 
+    const person = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: AUTHOR_NAME,
+      url: SITE_URL,
+      jobTitle: "SaaS GTM Strategist",
+      description: "B2B SaaS growth strategist helping founders fix positioning, landing pages, cold email, paid ads, and conversion as one connected GTM system.",
+      sameAs: [
+        "https://www.linkedin.com/in/aouididi-wael-81b7037a/",
+        "https://www.behance.net/waelaouididi/",
+        "https://www.upwork.com/freelancers/~0141da0e8c48042461",
+      ],
+      knowsAbout: [
+        "SaaS GTM Strategy",
+        "B2B Marketing",
+        "Cold Email",
+        "Landing Page Conversion",
+        "Conversion Rate Optimisation",
+        "Meta Ads",
+        "SaaS Positioning",
+      ],
+    };
+
     setJsonLd("jsonld-organization", organization);
+    setJsonLd("jsonld-person", person);
     setJsonLd("jsonld-website", website);
     setJsonLd("jsonld-page", webPage);
     setJsonLd("jsonld-breadcrumbs", breadcrumbs);
