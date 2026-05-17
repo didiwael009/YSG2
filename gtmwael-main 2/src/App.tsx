@@ -18,8 +18,16 @@ import LandingPageForSaas from "./pages/LandingPageForSaas";
 import MetaAds from "./pages/MetaAds";
 import MetaAdsForSaas from "./pages/MetaAdsForSaas";
 import SaasMarketingAgency from "./pages/SaasMarketingAgency";
+// SEO-critical article pages — direct imports so renderToString can prerender them
+import SaasMarketingPlan from "./pages/SaasMarketingPlan";
+import B2bSaasMarketingStrategy from "./pages/B2bSaasMarketingStrategy";
+import OptimizeSaasLandingPage from "./pages/OptimizeSaasLandingPage";
+import GoogleAdsVsMetaAdsSaas from "./pages/GoogleAdsVsMetaAdsSaas";
+import SaasColdEmailStrategy from "./pages/SaasColdEmailStrategy";
+import LandingPageForLeadGeneration from "./pages/LandingPageForLeadGeneration";
+import LinkedinOutreachForSaas from "./pages/LinkedinOutreachForSaas";
 
-// Lazy load non-critical route pages
+// Lazy load non-critical / non-prerendered pages only
 const Creative = lazy(() => import("./pages/Creative"));
 const CaseStudyWriteYourBook = lazy(() => import("./pages/CaseStudyWriteYourBook"));
 const CaseStudyGrowapp = lazy(() => import("./pages/CaseStudyGrowapp"));
@@ -30,13 +38,6 @@ const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Resume = lazy(() => import("./pages/Resume"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-const SaasMarketingPlan = lazy(() => import("./pages/SaasMarketingPlan"));
-const OptimizeSaasLandingPage = lazy(() => import("./pages/OptimizeSaasLandingPage"));
-const GoogleAdsVsMetaAdsSaas = lazy(() => import("./pages/GoogleAdsVsMetaAdsSaas"));
-const SaasColdEmailStrategy = lazy(() => import("./pages/SaasColdEmailStrategy"));
-const B2bSaasMarketingStrategy = lazy(() => import("./pages/B2bSaasMarketingStrategy"));
-const LandingPageForLeadGeneration = lazy(() => import("./pages/LandingPageForLeadGeneration"));
-const LinkedinOutreachForSaas = lazy(() => import("./pages/LinkedinOutreachForSaas"));
 const RouteFallback = () => <div className="min-h-screen bg-background" />;
 const lazyRoute = (element: ReactNode) => (
   <Suspense fallback={<RouteFallback />}>{element}</Suspense>
@@ -69,13 +70,13 @@ export const AppRoutes = () => (
       <Route path="/pricing" element={lazyRoute(<Pricing />)} />
       <Route path="/resume" element={lazyRoute(<Resume />)} />
       <Route path="/book" element={<Book />} />
-      <Route path="/saas-marketing-plan" element={lazyRoute(<SaasMarketingPlan />)} />
-      <Route path="/optimize-saas-landing-page" element={lazyRoute(<OptimizeSaasLandingPage />)} />
-      <Route path="/google-ads-vs-meta-ads-saas" element={lazyRoute(<GoogleAdsVsMetaAdsSaas />)} />
-      <Route path="/saas-cold-email-strategy" element={lazyRoute(<SaasColdEmailStrategy />)} />
-      <Route path="/b2b-saas-marketing-strategy" element={lazyRoute(<B2bSaasMarketingStrategy />)} />
-      <Route path="/landing-page-for-lead-generation" element={lazyRoute(<LandingPageForLeadGeneration />)} />
-      <Route path="/linkedin-outreach-for-saas" element={lazyRoute(<LinkedinOutreachForSaas />)} />
+      <Route path="/saas-marketing-plan" element={<SaasMarketingPlan />} />
+      <Route path="/optimize-saas-landing-page" element={<OptimizeSaasLandingPage />} />
+      <Route path="/google-ads-vs-meta-ads-saas" element={<GoogleAdsVsMetaAdsSaas />} />
+      <Route path="/saas-cold-email-strategy" element={<SaasColdEmailStrategy />} />
+      <Route path="/b2b-saas-marketing-strategy" element={<B2bSaasMarketingStrategy />} />
+      <Route path="/landing-page-for-lead-generation" element={<LandingPageForLeadGeneration />} />
+      <Route path="/linkedin-outreach-for-saas" element={<LinkedinOutreachForSaas />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={lazyRoute(<NotFound />)} />
     </Routes>
