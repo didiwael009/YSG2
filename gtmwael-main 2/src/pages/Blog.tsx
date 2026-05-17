@@ -27,6 +27,35 @@ const Blog = () => {
 
         <section className="py-16 md:py-24">
           <div className="container mx-auto px-6">
+            {/* Pinned guide — standalone page outside /blog/* routing */}
+            <div className="mb-6">
+              <Link
+                to="/saas-marketing-plan"
+                className="group flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl border border-primary/30 bg-primary/5 p-7 shadow-lg shadow-background/20 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60"
+              >
+                <div className="flex-1">
+                  <div className="mb-3 flex items-center gap-3">
+                    <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
+                      SaaS GTM
+                    </p>
+                    <span className="rounded-full bg-primary/15 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-primary">
+                      Guide
+                    </span>
+                  </div>
+                  <h2 className="font-display text-2xl font-semibold leading-snug mb-3">
+                    SaaS Marketing Plan: A Practical Framework for Founders
+                  </h2>
+                  <p className="text-base leading-relaxed text-muted-foreground">
+                    Most SaaS marketing plans are built backwards — channel first, strategy second. This framework covers the six-step order that actually works: positioning, landing page, conversion path, tracking, then channels.
+                  </p>
+                </div>
+                <span className="inline-flex items-center gap-2 text-sm font-semibold text-primary whitespace-nowrap flex-shrink-0">
+                  Read guide
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </span>
+              </Link>
+            </div>
+
             <div className="grid gap-6 lg:grid-cols-2">
               {blogPosts.map((post) => (
                 <Link
