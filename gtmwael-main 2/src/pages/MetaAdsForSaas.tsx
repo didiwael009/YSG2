@@ -9,7 +9,7 @@ import { CALENDLY_URL } from "@/lib/constants";
 const failureReasons = [
   {
     label: "The offer angle is wrong for cold traffic",
-    body: "Meta Ads reach people who are not actively searching for your product. "Book a demo" is a high-commitment ask from a stranger. Cold traffic needs a lower-friction entry point — a specific outcome, a specific pain, a reason to stop scrolling that does not require immediate trust.",
+    body: "Meta Ads reach people who are not actively searching for your product. 'Book a demo' is a high-commitment ask from a stranger. Cold traffic needs a lower-friction entry point — a specific outcome, a specific pain, a reason to stop scrolling that does not require immediate trust.",
   },
   {
     label: "The creative does not earn attention",
@@ -118,7 +118,7 @@ const faqItems = [
 ];
 
 const notForItems = [
-  "You want someone to "just run ads" while leaving the landing page, offer, and tracking untouched. That approach produces spend without insight.",
+  "You want someone to 'just run ads' while leaving the landing page, offer, and tracking untouched. That approach produces spend without insight.",
   "You are not willing to fix the landing page. Paid traffic amplifies what is on the page. If the page is weak, more spend makes it more expensive to find out.",
   "Your ACV is too low to make paid acquisition economically viable. For very low-ACV SaaS products, cold email and organic channels usually produce better pipeline economics at early stage.",
 ];
@@ -194,7 +194,7 @@ export default function MetaAdsForSaas() {
                   "The product solves a problem that a specific audience recognises without having to search for it.",
                   "The ACV is high enough to justify paid acquisition costs — for most B2B SaaS products, several thousand pounds in ARR per customer, unless the funnel is highly efficient or product-led.",
                   "The landing page and conversion path are already working with organic or outbound traffic.",
-                  "There is a clear lower-friction entry point beyond "book a demo" — a specific outcome, a free audit, a short trial, or a relevant lead magnet.",
+                  "There is a clear lower-friction entry point beyond 'book a demo' — a specific outcome, a free audit, a short trial, or a relevant lead magnet.",
                   "Tracking and pixel events are configured correctly before the first pound is spent.",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
