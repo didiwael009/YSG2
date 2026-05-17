@@ -222,21 +222,26 @@ export const routeContent = {
     ],
   },
   "/meta-ads-for-saas": {
-    intro: "Meta Ads for B2B SaaS founders — tracking, audiences, creative testing, and landing page alignment fixed as one paid acquisition system.",
+    intro: "I help B2B SaaS founders run Meta Ads that convert — with the right offer angle, creative, landing page, tracking, and retargeting path built as one connected system.",
     sections: [
       {
-        heading: "Why Meta Ads fail for SaaS",
-        body: "Most SaaS paid campaigns underperform because tracking is broken, audiences are too broad, creative has fatigued, or the landing page does not match the ad angle. Fixing one of these in isolation does not move the numbers.",
+        heading: "Why SaaS Meta Ads fail",
+        body: "Most SaaS Meta Ads fail because founders blame the platform, the audience, or the budget — when the real problem is earlier. The offer angle is wrong for cold traffic. The creative does not earn attention. The landing page is not built for paid traffic. Tracking is incomplete. There is no retargeting path. Fix all five and the channel works.",
       },
       {
-        heading: "What the system covers",
-        body: "Pixel and CAPI setup, lookalike audiences built from real buyer data, anti-fatigue creative refresh cycles, and landing page alignment so the ad and the page tell the same story.",
+        heading: "What I fix before scaling spend",
+        body: "Offer angle for cold traffic, creative testing with cost-per-result decisions, landing page alignment to the exact ad angle, pixel and CAPI tracking configuration, and a structured retargeting path from awareness to conversion — connected to the full GTM system, not running in isolation.",
+      },
+      {
+        heading: "Proof",
+        body: "GrowApp: CPL dropped from £30+ to £3–7, 847 trial requests in 6 months. DTC Skincare: ROAS went from 1.2 to 3.1, CPA dropped from £42 to £23. Zembra: aligned paid and outbound with repositioned messaging contributing to 4X revenue growth.",
       },
     ],
     links: [
       { label: "SaaS GTM strategy", path: "/saas-marketing-agency" },
-      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
-      { label: "Book a 20-min Meta Ads Audit", path: "/book" },
+      { label: "SaaS landing page", path: "/landing-page-for-saas" },
+      { label: "Google Ads vs Meta Ads for SaaS", path: "/google-ads-vs-meta-ads-saas" },
+      { label: "Book a 15-minute Meta Ads diagnosis", path: "/book" },
     ],
   },
   "/saas-marketing-plan": {
