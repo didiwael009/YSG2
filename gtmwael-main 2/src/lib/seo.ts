@@ -447,17 +447,50 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/b2b-saas-marketing-strategy",
-    title: "B2B SaaS Marketing Strategy for Founders | YSG",
-    description: "A B2B SaaS marketing strategy framework — positioning, demand creation, demand capture, conversion, and the order in which founders should build their GTM system.",
+    title: "B2B SaaS Marketing Strategy: Fix This Before Scaling",
+    socialTitle: "B2B SaaS Marketing Strategy: What to Fix Before Scaling Traffic",
+    description: "B2B SaaS teams often scale before strategy is clear. Fix ICP, positioning, buyer journey, channels, and conversion before adding traffic.",
     type: "article",
-    priority: 0.75,
+    schemaType: "Article",
+    priority: 0.8,
     changefreq: "monthly",
-    datePublished: "2026-05-16",
+    image: "/b2b-saas-marketing-strategy-framework-wael-aouididi.webp",
+    datePublished: "2026-05-17",
+    dateModified: "2026-05-17",
     breadcrumbs: [{ name: "B2B SaaS Marketing Strategy", path: "/b2b-saas-marketing-strategy" }],
     links: [
-      { label: "SaaS marketing agency alternative", path: "/saas-marketing-agency" },
-      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
-      { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
+      { label: "SaaS GTM strategy", path: "/saas-marketing-agency" },
+      { label: "SaaS marketing plan", path: "/saas-marketing-plan" },
+      { label: "SaaS landing page", path: "/landing-page-for-saas" },
+      { label: "SaaS conversion rate optimisation", path: "/conversion-rate-optimisation-specialist" },
+      { label: "cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
+    ],
+    faq: [
+      {
+        question: "What is a B2B SaaS marketing strategy?",
+        answer: "A B2B SaaS marketing strategy is the set of decisions that connects ICP, positioning, buyer journey, channel selection, conversion path, and pipeline measurement into a system that turns the right attention into qualified pipeline. It is not a channel plan — it is the thinking that makes channel execution worth doing.",
+      },
+      {
+        question: "How do you create a B2B SaaS marketing strategy?",
+        answer: "Start with ICP and positioning — not channels. Map the buyer journey to understand what stage of awareness your buyers are in. Choose channels that match buyer intent. Fix the conversion path. Set up tracking that connects marketing to pipeline. Add follow-up to close the gap between interest and decision.",
+      },
+      {
+        question: "What channels work best for B2B SaaS?",
+        answer: "It depends on the ICP, buyer awareness stage, ACV, and sales motion. Cold email works best for narrow ICPs with painful, specific problems. SEO works best when buyers actively search for the problem or category. Paid ads work best once the conversion path is validated. LinkedIn works best when trust and education matter.",
+      },
+      {
+        question: "What is the difference between a SaaS marketing strategy and a GTM strategy?",
+        answer: "A GTM strategy defines the overall commercial approach: who you are selling to, how you will reach them, and how the sales motion works. A marketing strategy is focused on how marketing creates demand and pipeline within that direction.",
+      },
+      {
+        question: "How long does a B2B SaaS marketing strategy take to work?",
+        answer: "Cold email can produce pipeline within weeks if ICP, offer, and infrastructure are right. SEO typically takes six to twelve months to compound meaningfully. Paid ads need two to three months minimum to generate optimisation data. Fixing the foundations — positioning, landing page, conversion path — produces results across every channel simultaneously.",
+      },
+      {
+        question: "Should early-stage SaaS founders focus on SEO, ads, or outbound first?",
+        answer: "For most early-stage B2B SaaS founders, cold email is the highest-leverage starting point. It provides fast feedback on positioning and offer, requires no paid spend, and produces qualified conversations quickly when the ICP is specific. SEO should run in parallel as a medium-term investment. Paid ads make sense once the conversion path is validated.",
+      },
     ],
   },
   {
