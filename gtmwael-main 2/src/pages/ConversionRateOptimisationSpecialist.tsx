@@ -166,7 +166,9 @@ const ConversionRateOptimisationSpecialist = () => {
                   If your SaaS has traffic but not enough demos, the problem is usually not the channel. It is the conversion path.
                 </p>
                 <p className="text-[#cec8dd] mb-8 leading-relaxed">
-                  I help B2B SaaS founders find where trust breaks — then fix the messaging, proof, CTA structure, and funnel friction stopping visitors from taking the next step. Not button-colour testing. Real diagnosis, then execution.
+                  I help B2B SaaS founders find where trust breaks — then fix the messaging, proof, CTA structure, and funnel friction stopping visitors from taking the next step. Not button-colour testing. Real diagnosis, then execution. CRO sits at the centre of any working{" "}
+                  <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS marketing strategy</Link>{" "}
+                  — because stronger conversion makes every acquisition channel more effective.
                 </p>
               </AnimateIn>
               <AnimateIn delay={250}>
@@ -364,7 +366,7 @@ const ConversionRateOptimisationSpecialist = () => {
                         <>
                           I help rewrite and restructure the core conversion assets. This connects directly to the{" "}
                           <Link to="/landing-page-for-saas" className="text-primary hover:underline">
-                            SaaS landing page
+                            SaaS landing page optimization
                           </Link>{" "}
                           work and, where relevant, the messaging used in{" "}
                           <Link to="/cold-email-for-saas" className="text-primary hover:underline">

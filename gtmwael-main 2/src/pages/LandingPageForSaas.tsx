@@ -258,7 +258,11 @@ const LandingPageForSaas = () => {
               Why SaaS Landing Pages Fail
             </h2>
             <p className="text-[#4d4658] text-lg leading-relaxed">
-              The landing page is the conversion point for every channel. Ads send traffic there. Cold email sends replies there. SEO sends organic visitors there. If the page does not convert, every channel becomes more expensive and less predictable.
+              The landing page is the conversion point for every channel.{" "}
+              <Link to="/meta-ads-for-saas" className="text-primary hover:underline">Meta Ads for SaaS</Link>{" "}
+              sends paid traffic there. Cold email sends replies there. SEO sends organic visitors there. If the page does not convert, every channel becomes more expensive and less predictable. That is where focused{" "}
+              <Link to="/conversion-rate-optimisation-specialist" className="text-primary hover:underline">SaaS conversion rate optimisation</Link>{" "}
+              makes the difference.
             </p>
           </AnimateIn>
 
@@ -295,10 +299,12 @@ const LandingPageForSaas = () => {
                 Who This Service Is For
               </h2>
               <p className="text-[#cec8dd] text-lg leading-relaxed mb-5">
-                This is for B2B SaaS founders whose landing page is not doing its job.
+                This is for B2B SaaS founders whose landing page is not doing its job — whether you are running paid ads, outbound, or organic traffic to it.
               </p>
               <p className="text-[#cec8dd] leading-relaxed">
-                You do not need a redesign first. You need a diagnosis. That is what I fix.
+                You do not need a redesign first. You need a diagnosis. That is what I fix. If you are working on a broader{" "}
+                <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS GTM strategy</Link>,
+                {" "}fixing the landing page first makes every other channel more effective.
               </p>
             </AnimateIn>
 

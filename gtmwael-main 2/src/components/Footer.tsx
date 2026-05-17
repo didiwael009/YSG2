@@ -21,7 +21,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
     { label: "Cold Email for SaaS", to: "/cold-email-for-saas" },
     { label: "Landing Page for SaaS", to: "/landing-page-for-saas" },
     { label: "CRO Specialist", to: "/conversion-rate-optimisation-specialist" },
-    { label: "Meta Ads", to: "/services/meta-ads" },
+    { label: "Meta Ads for SaaS", to: "/meta-ads-for-saas" },
   ];
 
   const pages = [

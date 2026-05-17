@@ -366,9 +366,12 @@ const ColdEmailForSaas = () => {
             <p className="text-[#cec8dd] text-lg leading-relaxed max-w-2xl">
               When one element is weak, the whole system underperforms. When all elements are aligned — targeting, infrastructure, offer, personalisation, sequence, and a strong{" "}
               <Link to="/landing-page-for-saas" className="text-primary hover:underline">
-                SaaS landing page
+                SaaS landing page for outbound traffic
               </Link>{" "}
-              as the destination — the channel produces consistent, qualified pipeline.
+              as the destination — the channel produces consistent, qualified pipeline. For founders building a full acquisition system, cold email fits inside a broader{" "}
+              <Link to="/saas-marketing-agency" className="text-primary hover:underline">
+                SaaS GTM strategy
+              </Link>.
             </p>
           </AnimateIn>
         </div>

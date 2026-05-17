@@ -91,24 +91,25 @@ const fixItems = [
     icon: LayoutTemplate,
     title: "Landing Page Clarity",
     body: "A SaaS landing page is not a design asset. I restructure the page so visitors understand the offer, the value, the proof, and the CTA before they leave.",
-    link: { label: "SaaS landing page strategy", path: "/services/landing-page" },
+    link: { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
   },
   {
     icon: TrendingUp,
     title: "CRO and Conversion Path",
     body: "SaaS CRO is not button-colour testing. I look for confusion, doubt, weak proof, CTA friction, mobile issues, form friction, and broken steps between first visit and demo booking.",
+    link: { label: "SaaS conversion rate optimisation", path: "/conversion-rate-optimisation-specialist" },
   },
   {
     icon: Target,
     title: "Paid Ads and Message Match",
     body: "Ads do not work in isolation. Before recommending more spend, I check whether the ad angle, audience intent, landing page, CTA, tracking, and follow-up path are strong enough to convert.",
-    link: { label: "Meta Ads for SaaS", path: "/services/meta-ads" },
+    link: { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
   },
   {
     icon: Mail,
     title: "Cold Email and Outreach",
     body: "Cold email is not just a sequence. I help with targeting, deliverability, personalisation, offer angle, and reply handling — achieving around 50% open rates and 7% reply rates across SaaS campaigns.",
-    link: { label: "Cold email for SaaS", path: "/services/cold-email" },
+    link: { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
   },
   {
     icon: BarChart2,
