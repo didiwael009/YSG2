@@ -4,9 +4,9 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
     slug: "landing-page-optimization-best-practices-2026",
     path: "/blog/landing-page-optimization-best-practices-2026",
     category: "SaaS CRO",
-    title: "Landing Page Optimization Best Practices 2026",
-    h1: "Landing Page Optimization Best Practices 2026",
-    metaTitle: "Landing Page Optimization Best Practices 2026",
+    title: "SaaS Landing Page Optimization Best Practices 2026",
+    h1: "SaaS Landing Page Optimization Best Practices 2026",
+    metaTitle: "SaaS Landing Page Optimization Best Practices 2026",
     description:
       "Learn landing page optimization best practices for 2026. Improve conversions with better messaging, CTAs, forms, trust signals, mobile UX, and testing.",
     searchIntent:

@@ -6,7 +6,7 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
     category: "Paid Ads Strategy",
     title: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
     h1: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
-    metaTitle: "Stop Sending Ads to One SaaS Landing Page",
+    metaTitle: "Google Ads vs Meta Ads: SaaS Landing Page Strategy",
     description:
       "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match intent instead of forcing both channels into one generic page.",
     searchIntent:

@@ -5,7 +5,7 @@ export const saasTrafficButNoSignups: BlogPost = {
     path: "/blog/saas-traffic-but-no-signups",
     category: "SaaS CRO",
     breadcrumbTitle: "SaaS Traffic But No Signups",
-    title: "Why Your SaaS Website Gets Traffic But No Signups",
+    title: "SaaS Traffic But No Signups? Here's Why",
     h1: "SaaS Traffic But No Signups? Here's Why",
     metaTitle: "SaaS Traffic But No Signups? Here's Why",
     description:

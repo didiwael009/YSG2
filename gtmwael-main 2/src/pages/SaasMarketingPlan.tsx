@@ -71,7 +71,7 @@ export default function SaasMarketingPlan() {
               </p>
 
               {/* 6-step order */}
-              <div className="rounded-xl border border-border bg-card/60 p-6 mb-8">
+              <div id="order" className="rounded-xl border border-border bg-card/60 p-6 mb-8">
                 <p className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
                   The SaaS Marketing Plan Order
                 </p>
@@ -97,14 +97,58 @@ export default function SaasMarketingPlan() {
                 </p>
               </div>
 
-              <Button variant="hero" size="lg" className="group" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                  Book a 20-min GTM Audit
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
+              {/* Visual flow: SaaS marketing plan order */}
+              <div className="mt-8 flex flex-wrap items-center gap-2 text-sm font-medium">
+                {["Positioning", "Landing Page", "Conversion Path", "Tracking", "Acquisition", "Follow-up"].map((step, i, arr) => (
+                  <div key={step} className="flex items-center gap-2">
+                    <span className="rounded-lg bg-primary/10 px-3 py-1.5 text-primary">{step}</span>
+                    {i < arr.length - 1 && <span className="text-muted-foreground">→</span>}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-8">
+                <Button variant="hero" size="lg" className="group" asChild>
+                  <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    Book a 20-min GTM Audit
+                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
+              </div>
             </div>
           </AnimateIn>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════
+          TABLE OF CONTENTS
+      ══════════════════════════════════════════════ */}
+      <section className="py-8 bg-white border-y border-[#11111f]/10">
+        <div className="container px-4">
+          <div className="max-w-3xl mx-auto">
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">Contents</p>
+            <nav className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1.5 text-sm">
+              {[
+                { href: "#order", label: "The SaaS Marketing Plan Order" },
+                { href: "#how-to-use", label: "How to Use This Framework" },
+                { href: "#why-plans-fail", label: "Why Most SaaS Marketing Plans Fail" },
+                { href: "#step-1", label: "Step 1 — Nail the Positioning First" },
+                { href: "#step-2", label: "Step 2 — Fix the Landing Page" },
+                { href: "#step-3", label: "Step 3 — Build the Conversion Path" },
+                { href: "#step-4", label: "Step 4 — Make Tracking Visible" },
+                { href: "#step-5", label: "Step 5 — Choose the Right Channels" },
+                { href: "#step-6", label: "Step 6 — Build a Follow-Up System" },
+                { href: "#mistakes", label: "Common Mistakes" },
+                { href: "#diagnosis", label: "Quick Diagnosis" },
+                { href: "#template", label: "One-Page Template" },
+                { href: "#faq", label: "FAQ" },
+              ].map((item) => (
+                <a key={item.href} href={item.href} className="text-muted-foreground hover:text-primary transition-colors">
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
         </div>
       </section>
 
@@ -117,7 +161,7 @@ export default function SaasMarketingPlan() {
             <div className="max-w-3xl mx-auto">
 
               {/* How to use */}
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
+              <h2 id="how-to-use" className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
                 How to Use This Framework
               </h2>
               <p className="text-[#4d4658] mb-4 leading-relaxed">
@@ -144,7 +188,7 @@ export default function SaasMarketingPlan() {
               </p>
 
               {/* Why plans fail */}
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
+              <h2 id="why-plans-fail" className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
                 Why Most SaaS Marketing Plans Fail
               </h2>
               <p className="text-[#4d4658] mb-4 leading-relaxed">
@@ -198,7 +242,7 @@ export default function SaasMarketingPlan() {
             <div className="max-w-3xl mx-auto space-y-14">
 
               {/* Step 1 */}
-              <div>
+              <div id="step-1">
                 <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 1</p>
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
                   Nail the Positioning First
@@ -273,7 +317,7 @@ export default function SaasMarketingPlan() {
               </div>
 
               {/* Step 2 */}
-              <div>
+              <div id="step-2">
                 <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 2</p>
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
                   Fix the Landing Page Before Scaling Traffic
@@ -337,7 +381,7 @@ export default function SaasMarketingPlan() {
             <div className="max-w-3xl mx-auto space-y-14">
 
               {/* Step 3 */}
-              <div>
+              <div id="step-3">
                 <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 3</p>
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
                   Build the Conversion Path
@@ -401,7 +445,7 @@ export default function SaasMarketingPlan() {
               </div>
 
               {/* Step 4 */}
-              <div>
+              <div id="step-4">
                 <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 4</p>
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
                   Make Tracking Visible
@@ -489,7 +533,7 @@ export default function SaasMarketingPlan() {
             <div className="max-w-3xl mx-auto space-y-14">
 
               {/* Step 5 */}
-              <div>
+              <div id="step-5">
                 <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 5</p>
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
                   Choose the Right Acquisition Channels
@@ -505,7 +549,7 @@ export default function SaasMarketingPlan() {
                   <div>
                     <h3 className="font-display text-lg font-bold mb-3 text-[#11101a]">SEO and Content</h3>
                     <p className="text-[#4d4658] leading-relaxed">
-                      SEO compounds over time and works best for SaaS products where buyers actively search for solutions — which is most B2B SaaS in established categories. The mistake most founders make is targeting broad keywords too early. Start with specific, buyer-intent queries. Content works when it matches that intent: practical frameworks, teardowns, and guides a qualified buyer would bookmark. Generic keyword-stuffed articles do not compound. Useful ones do.
+                      SEO compounds over time and works best for SaaS products where buyers actively search for solutions — which is most B2B SaaS in established categories. The mistake most founders make is targeting broad keywords too early. Start with specific, buyer-intent queries. Content works when it matches that intent: practical frameworks, teardowns, and guides a qualified buyer would bookmark. Generic keyword-stuffed articles do not compound. Useful ones do. Google's <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">helpful content guidance</a> is a useful filter here: create content for people first, not just search engines.
                     </p>
                   </div>
 
@@ -563,7 +607,7 @@ export default function SaasMarketingPlan() {
               </div>
 
               {/* Step 6 */}
-              <div>
+              <div id="step-6">
                 <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 6</p>
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
                   Build a Follow-Up System
@@ -627,7 +671,7 @@ export default function SaasMarketingPlan() {
             <div className="max-w-3xl mx-auto space-y-14">
 
               {/* Common mistakes */}
-              <div>
+              <div id="mistakes">
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-6 text-foreground">
                   Common SaaS Marketing Plan Mistakes
                 </h2>
@@ -667,7 +711,7 @@ export default function SaasMarketingPlan() {
               </div>
 
               {/* Quick diagnosis */}
-              <div>
+              <div id="diagnosis">
                 <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
                   Quick Diagnosis
                 </h2>
@@ -721,7 +765,7 @@ export default function SaasMarketingPlan() {
       <section className="py-16 bg-white border-y border-[#11111f]/10">
         <div className="container px-4">
           <AnimateIn>
-            <div className="max-w-3xl mx-auto">
+            <div id="template" className="max-w-3xl mx-auto">
               <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
                 The One-Page SaaS Marketing Plan Template
               </h2>

@@ -20,7 +20,7 @@ export type SeoRoute = {
   datePublished?: string;
   dateModified?: string;
   faq?: { question: string; answer: string }[];
-  schemaType?: "Service";
+  schemaType?: "Service" | "Article";
   serviceTypeName?: string;
 };
 

@@ -202,7 +202,7 @@ const SaasMarketingAgency = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="hero" size="xl" className="group" asChild>
                     <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                      Book a 20-min GTM Audit
+                      Book a 15-minute SaaS growth diagnosis
                       <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </a>
                   </Button>
@@ -545,7 +545,11 @@ const SaasMarketingAgency = () => {
                 ))}
               </ul>
               <p className="mt-5 text-[#4d4658] leading-relaxed text-sm border-l-[3px] border-primary pl-4">
-                This works best when the founder is willing to fix the uncomfortable parts: the message, the page, the offer, the proof, and the conversion path. That is where the leverage is.
+                This works best when the founder is willing to fix the uncomfortable parts: the message, the page, the offer, the proof, and the conversion path. That is where the leverage is. If you want to understand the full picture before we talk, the{" "}
+                <Link to="/b2b-saas-marketing-strategy" className="text-primary hover:underline">B2B SaaS marketing strategy</Link>{" "}
+                guide and the{" "}
+                <Link to="/saas-marketing-plan" className="text-primary hover:underline">SaaS marketing plan</Link>{" "}
+                cover the foundation in detail.
               </p>
             </div>
           </AnimateIn>

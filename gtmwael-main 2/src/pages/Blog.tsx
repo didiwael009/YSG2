@@ -16,11 +16,10 @@ const Blog = () => {
               Blog
             </p>
             <h1 className="font-display max-w-4xl text-5xl font-bold leading-[1.05] md:text-7xl">
-              SaaS Growth Articles
+              SaaS Growth, GTM, and CRO Guides
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground md:text-xl">
-              Practical notes on SaaS landing pages, paid ads strategy, conversion optimization,
-              cold email, and GTM systems for founders who want fewer leaks before more traffic.
+              Practical guides for B2B SaaS founders who need clearer positioning, stronger landing pages, better conversion paths, and acquisition that turns into pipeline.
             </p>
           </div>
         </section>

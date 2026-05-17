@@ -98,6 +98,16 @@ export default function B2bSaasMarketingStrategy() {
                 <span className="font-semibold text-foreground mr-2">Strategy order:</span>
                 ICP → Positioning → Buyer Journey → Channel Fit → Conversion Path → Pipeline Measurement
               </div>
+
+              {/* Visual flow */}
+              <div className="mt-8 flex flex-wrap items-center gap-2 text-sm font-medium">
+                {["ICP", "Positioning", "Buyer Journey", "Channel Mix", "Conversion Path", "Pipeline"].map((step, i, arr) => (
+                  <div key={step} className="flex items-center gap-2">
+                    <span className="rounded-lg bg-primary/10 px-3 py-1.5 text-primary">{step}</span>
+                    {i < arr.length - 1 && <span className="text-muted-foreground">→</span>}
+                  </div>
+                ))}
+              </div>
             </div>
           </AnimateIn>
         </div>

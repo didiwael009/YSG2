@@ -995,6 +995,94 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "cold-email-for-saas-webp": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 54416,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/cold-email-for-saas-webp-320.webp",
+        "bytes": 3494
+      },
+      {
+        "width": 640,
+        "src": "/responsive/cold-email-for-saas-webp-640.webp",
+        "bytes": 9712
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/cold-email-for-saas-webp-1024.webp",
+        "bytes": 19750
+      }
+    ]
+  },
+  "landing-page-for-saas": {
+    "width": 1854,
+    "height": 848,
+    "originalBytes": 62692,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/landing-page-for-saas-320.webp",
+        "bytes": 3032
+      },
+      {
+        "width": 640,
+        "src": "/responsive/landing-page-for-saas-640.webp",
+        "bytes": 9122
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/landing-page-for-saas-1024.webp",
+        "bytes": 18536
+      }
+    ]
+  },
+  "b2b-saas-marketing-strategy-framework-wael-aouididi": {
+    "width": 1376,
+    "height": 768,
+    "originalBytes": 638458,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/b2b-saas-marketing-strategy-framework-wael-aouididi-320.webp",
+        "bytes": 3640
+      },
+      {
+        "width": 640,
+        "src": "/responsive/b2b-saas-marketing-strategy-framework-wael-aouididi-640.webp",
+        "bytes": 8586
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/b2b-saas-marketing-strategy-framework-wael-aouididi-1024.webp",
+        "bytes": 14648
+      }
+    ]
+  },
+  "cold-email-for-saas-outreach-strategy-wael-aouididi": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 54416,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/cold-email-for-saas-outreach-strategy-wael-aouididi-320.webp",
+        "bytes": 3494
+      },
+      {
+        "width": 640,
+        "src": "/responsive/cold-email-for-saas-outreach-strategy-wael-aouididi-640.webp",
+        "bytes": 9712
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/cold-email-for-saas-outreach-strategy-wael-aouididi-1024.webp",
+        "bytes": 19750
+      }
+    ]
+  },
   "hero-portrait": {
     "width": 595,
     "height": 734,
@@ -1026,6 +1114,72 @@ export const responsiveImageManifest = {
         "width": 1024,
         "src": "/responsive/khoubeib-96-1024.webp",
         "bytes": 13508
+      }
+    ]
+  },
+  "landing-page-for-saas-freelancer": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 59100,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/landing-page-for-saas-freelancer-320.webp",
+        "bytes": 4498
+      },
+      {
+        "width": 640,
+        "src": "/responsive/landing-page-for-saas-freelancer-640.webp",
+        "bytes": 12094
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/landing-page-for-saas-freelancer-1024.webp",
+        "bytes": 23770
+      }
+    ]
+  },
+  "meta-ads-for-saas": {
+    "width": 1935,
+    "height": 813,
+    "originalBytes": 63262,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/meta-ads-for-saas-320.webp",
+        "bytes": 3382
+      },
+      {
+        "width": 640,
+        "src": "/responsive/meta-ads-for-saas-640.webp",
+        "bytes": 9790
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/meta-ads-for-saas-1024.webp",
+        "bytes": 19216
+      }
+    ]
+  },
+  "meta-ads-for-saas-creative-funnel-conversion-wael-aouididi": {
+    "width": 1935,
+    "height": 813,
+    "originalBytes": 63262,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/meta-ads-for-saas-creative-funnel-conversion-wael-aouididi-320.webp",
+        "bytes": 3382
+      },
+      {
+        "width": 640,
+        "src": "/responsive/meta-ads-for-saas-creative-funnel-conversion-wael-aouididi-640.webp",
+        "bytes": 9790
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/meta-ads-for-saas-creative-funnel-conversion-wael-aouididi-1024.webp",
+        "bytes": 19216
       }
     ]
   },
@@ -1102,25 +1256,113 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "saas-conversion-rate-optimisation-specialist-wael-aouididi": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 59100,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/saas-conversion-rate-optimisation-specialist-wael-aouididi-320.webp",
+        "bytes": 4498
+      },
+      {
+        "width": 640,
+        "src": "/responsive/saas-conversion-rate-optimisation-specialist-wael-aouididi-640.webp",
+        "bytes": 12094
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/saas-conversion-rate-optimisation-specialist-wael-aouididi-1024.webp",
+        "bytes": 23770
+      }
+    ]
+  },
+  "saas-landing-page-strategy-messaging-cro-wael-aouididi": {
+    "width": 1854,
+    "height": 848,
+    "originalBytes": 62692,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/saas-landing-page-strategy-messaging-cro-wael-aouididi-320.webp",
+        "bytes": 3032
+      },
+      {
+        "width": 640,
+        "src": "/responsive/saas-landing-page-strategy-messaging-cro-wael-aouididi-640.webp",
+        "bytes": 9122
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/saas-landing-page-strategy-messaging-cro-wael-aouididi-1024.webp",
+        "bytes": 18536
+      }
+    ]
+  },
+  "saas-marketing-agency-alternative": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 52206,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/saas-marketing-agency-alternative-320.webp",
+        "bytes": 3318
+      },
+      {
+        "width": 640,
+        "src": "/responsive/saas-marketing-agency-alternative-640.webp",
+        "bytes": 9430
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/saas-marketing-agency-alternative-1024.webp",
+        "bytes": 19802
+      }
+    ]
+  },
   "saas-marketing-agency-alternative-wael-aouididi": {
-    "width": 1200,
-    "height": 630,
-    "originalBytes": 27596,
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 52206,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/saas-marketing-agency-alternative-wael-aouididi-320.webp",
-        "bytes": 2984
+        "bytes": 3318
       },
       {
         "width": 640,
         "src": "/responsive/saas-marketing-agency-alternative-wael-aouididi-640.webp",
-        "bytes": 7808
+        "bytes": 9430
       },
       {
         "width": 1024,
         "src": "/responsive/saas-marketing-agency-alternative-wael-aouididi-1024.webp",
-        "bytes": 13538
+        "bytes": 19802
+      }
+    ]
+  },
+  "saas-marketing-plan-framework-founders-wael-aouididi": {
+    "width": 1376,
+    "height": 768,
+    "originalBytes": 533148,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/saas-marketing-plan-framework-founders-wael-aouididi-320.webp",
+        "bytes": 3814
+      },
+      {
+        "width": 640,
+        "src": "/responsive/saas-marketing-plan-framework-founders-wael-aouididi-640.webp",
+        "bytes": 10024
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/saas-marketing-plan-framework-founders-wael-aouididi-1024.webp",
+        "bytes": 17460
       }
     ]
   }
