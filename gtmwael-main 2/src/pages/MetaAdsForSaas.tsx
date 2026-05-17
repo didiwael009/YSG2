@@ -75,7 +75,7 @@ export default function MetaAdsForSaas() {
               </p>
 
               {/* Hero stats */}
-              <div className="flex flex-wrap gap-10 mb-10">
+              <div className="flex flex-wrap gap-x-10 gap-y-4 mb-10">
                 {heroStats.map((s) => (
                   <div key={s.label}>
                     <p className="text-4xl font-bold text-foreground tracking-tight">{s.value}</p>
@@ -413,7 +413,7 @@ export default function MetaAdsForSaas() {
                   </Link>
                 </div>
                 <div className="rounded-lg border border-border overflow-hidden">
-                  <div className="grid grid-cols-3 bg-background px-4 py-2.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider border-b border-border">
+                  <div className="grid grid-cols-[1fr_80px_80px] bg-background px-3 py-2.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider border-b border-border">
                     <span>Metric</span><span className="text-center">Before</span><span className="text-right">After</span>
                   </div>
                   {[
@@ -421,7 +421,7 @@ export default function MetaAdsForSaas() {
                     ["Trial requests (6 months)", "—", "847"],
                     ["Warm traffic CPV", "—", "£0.20–£0.35"],
                   ].map(([metric, before, after]) => (
-                    <div key={metric} className="grid grid-cols-3 px-4 py-3 text-sm border-b border-border last:border-0">
+                    <div key={metric} className="grid grid-cols-[1fr_80px_80px] px-3 py-3 text-sm border-b border-border last:border-0">
                       <span className="text-foreground">{metric}</span>
                       <span className="text-center text-muted-foreground">{before}</span>
                       <span className="text-right text-primary font-medium">{after}</span>
@@ -437,14 +437,14 @@ export default function MetaAdsForSaas() {
               <div className="mb-8">
                 <p className="font-semibold text-foreground mb-3">DTC Skincare — AOV £48, £15k/mo spend</p>
                 <div className="rounded-lg border border-border overflow-hidden">
-                  <div className="grid grid-cols-3 bg-background px-4 py-2.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider border-b border-border">
+                  <div className="grid grid-cols-[1fr_80px_80px] bg-background px-3 py-2.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider border-b border-border">
                     <span>Metric</span><span className="text-center">Before</span><span className="text-right">After</span>
                   </div>
                   {[
                     ["ROAS (Meta 7-day click)", "1.2", "3.1"],
                     ["CPA", "£42", "£23"],
                   ].map(([metric, before, after]) => (
-                    <div key={metric} className="grid grid-cols-3 px-4 py-3 text-sm border-b border-border last:border-0">
+                    <div key={metric} className="grid grid-cols-[1fr_80px_80px] px-3 py-3 text-sm border-b border-border last:border-0">
                       <span className="text-foreground">{metric}</span>
                       <span className="text-center text-muted-foreground">{before}</span>
                       <span className="text-right text-primary font-medium">{after}</span>

@@ -151,7 +151,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 opacity-100 translate-y-0"
+      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 opacity-100 translate-y-0 max-w-[calc(100vw-16px)]"
     >
       <div 
         className={`flex items-center bg-card/80 backdrop-blur-xl rounded-full px-2 py-2 border border-border/50 shadow-lg shadow-background/30 ${
@@ -186,7 +186,7 @@ const Navigation = () => {
                 Services
               </NavigationMenuTrigger>
               <NavigationMenuContent className="data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out">
-                <ul className="w-[320px] p-3 bg-popover border border-border rounded-xl shadow-xl">
+                <ul className="w-[320px] max-w-[calc(100vw-24px)] p-3 bg-popover border border-border rounded-xl shadow-xl">
                   {services.map((service) => (
                     <li key={service.title}>
                       {service.isPage ? (
@@ -248,7 +248,7 @@ const Navigation = () => {
                 Case Studies
               </NavigationMenuTrigger>
               <NavigationMenuContent className="data-[state=open]:animate-dropdown-in data-[state=closed]:animate-dropdown-out">
-                <ul className="w-[340px] p-3 bg-popover border border-border rounded-xl shadow-xl">
+                <ul className="w-[340px] max-w-[calc(100vw-24px)] p-3 bg-popover border border-border rounded-xl shadow-xl">
                   {caseStudies.map((study) => (
                     <li key={study.href}>
                       <Link
@@ -275,40 +275,39 @@ const Navigation = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="w-px h-4 bg-border/50 mx-1" />
+        {/* Blog / Pricing / Folio — hidden on mobile to keep the pill nav within viewport width */}
+        <div className="hidden sm:flex items-center">
+          <div className="w-px h-4 bg-border/50 mx-1" />
+          {navLinks.map((link, index) => {
+            const isActive = !link.isPage && activeSection === link.href.slice(1);
+            const isLast = index === navLinks.length - 1;
 
-        {/* Other nav links */}
-        {navLinks.map((link, index) => {
-          const isActive = !link.isPage && activeSection === link.href.slice(1);
-          const isLast = index === navLinks.length - 1;
-          
-          return (
-            <div key={link.href} className="flex items-center">
-              {link.isPage ? (
-                <Link
-                  to={link.href}
-                  className="px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium transition-all duration-300 text-muted-foreground hover:text-primary whitespace-nowrap"
-                >
-                  {link.label}
-                </Link>
-              ) : (
-                <button
-                  onClick={() => handleLinkClick(link.href)}
-                  className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
-                    isActive
-                      ? "text-foreground"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
-                >
-                  {link.label}
-                </button>
-              )}
-              {!isLast && (
-                <div className="w-px h-4 bg-border/50 mx-1" />
-              )}
-            </div>
-          );
-        })}
+            return (
+              <div key={link.href} className="flex items-center">
+                {link.isPage ? (
+                  <Link
+                    to={link.href}
+                    className="px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium transition-all duration-300 text-muted-foreground hover:text-primary whitespace-nowrap"
+                  >
+                    {link.label}
+                  </Link>
+                ) : (
+                  <button
+                    onClick={() => handleLinkClick(link.href)}
+                    className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                      isActive
+                        ? "text-foreground"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
+                  >
+                    {link.label}
+                  </button>
+                )}
+                {!isLast && <div className="w-px h-4 bg-border/50 mx-1" />}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );
