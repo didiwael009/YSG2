@@ -357,17 +357,50 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/saas-marketing-plan",
-    title: "SaaS Marketing Plan: GTM Strategy for B2B Founders | YSG",
-    description: "A practical SaaS marketing plan framework for B2B founders — positioning, channels, landing pages, cold email, paid ads, and conversion in one system.",
+    title: "SaaS Marketing Plan: A Practical Framework for Founders",
+    socialTitle: "SaaS Marketing Plan: A Practical Framework for Founders",
+    description: "Most SaaS marketing plans start with channels. This framework starts with positioning, conversion, and trust — then adds traffic.",
     type: "article",
-    priority: 0.75,
+    schemaType: "Article",
+    priority: 0.8,
     changefreq: "monthly",
-    datePublished: "2026-05-16",
+    image: "/saas-marketing-plan-framework-founders-wael-aouididi.webp",
+    datePublished: "2026-05-17",
+    dateModified: "2026-05-17",
     breadcrumbs: [{ name: "SaaS Marketing Plan", path: "/saas-marketing-plan" }],
     links: [
       { label: "SaaS marketing agency alternative", path: "/saas-marketing-agency" },
-      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
-      { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
+      { label: "SaaS landing page", path: "/landing-page-for-saas" },
+      { label: "SaaS conversion rate optimisation", path: "/conversion-rate-optimisation-specialist" },
+      { label: "cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
+      { label: "B2B SaaS marketing strategy", path: "/b2b-saas-marketing-strategy" },
+    ],
+    faq: [
+      {
+        question: "What should a SaaS marketing plan include?",
+        answer: "A SaaS marketing plan should include: a clear ICP definition, a positioning statement that explains why a specific buyer would choose this product over alternatives, a landing page and conversion path that earns trust, basic tracking so decisions are based on data, a primary acquisition channel with a 90-day goal, and a follow-up system. Plans that skip the first three and jump straight to channels tend to produce expensive, inconclusive results.",
+      },
+      {
+        question: "How long should a SaaS marketing plan be?",
+        answer: "Long enough to be useful, short enough to be used. A one-page framework with honest answers is more valuable than a 40-slide deck that nobody acts on. The goal is clarity about what to fix first and in what order — not comprehensiveness.",
+      },
+      {
+        question: "When should an early-stage SaaS founder start investing in marketing?",
+        answer: "As early as possible — but in the right order. Positioning and landing page work should happen before significant acquisition spend. Cold email can start earlier because it provides fast feedback on positioning and offer angle. Paid ads and SEO make more sense once the conversion path is validated.",
+      },
+      {
+        question: "Should a SaaS marketing plan include SEO?",
+        answer: "Yes, for most SaaS products. SEO compounds over time and produces qualified organic traffic that supports trust. But SEO is a medium-term channel — it rarely produces meaningful results in under six months. It should be part of the plan, but not the only channel for a founder who needs pipeline now.",
+      },
+      {
+        question: "What is the difference between a SaaS marketing plan and a SaaS GTM strategy?",
+        answer: "A GTM strategy defines the overall approach: who you are selling to, how you will reach them, and what the commercial model looks like. A marketing plan is the execution layer: which specific channels, activities, and timelines will be used to generate pipeline. The GTM strategy should exist before the marketing plan is built.",
+      },
+      {
+        question: "How do I know if my SaaS marketing plan is working?",
+        answer: "Measure pipeline, not activity. The right metrics are demos booked, trials started, and qualified pipeline created — not email open rates, page views, or social followers. If activity is high but pipeline is flat, the problem is usually positioning, landing page, or conversion path — not channel execution.",
+      },
     ],
   },
   {
