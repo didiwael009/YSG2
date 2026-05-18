@@ -27,15 +27,17 @@ import SaasColdEmailStrategy from "./pages/SaasColdEmailStrategy";
 import LandingPageForLeadGeneration from "./pages/LandingPageForLeadGeneration";
 import LinkedinOutreachForSaas from "./pages/LinkedinOutreachForSaas";
 
+// SEO-critical case studies and pricing — direct imports so renderToString can prerender them
+import CaseStudyWriteYourBook from "./pages/CaseStudyWriteYourBook";
+import CaseStudyGrowapp from "./pages/CaseStudyGrowapp";
+import CaseStudyScreenplay from "./pages/CaseStudyScreenplay";
+import CaseStudyBottlenexus from "./pages/CaseStudyBottlenexus";
+import CaseStudyICCenter from "./pages/CaseStudyICCenter";
+import Pricing from "./pages/Pricing";
+
 // Lazy load non-critical / non-prerendered pages only
 const Creative = lazy(() => import("./pages/Creative"));
-const CaseStudyWriteYourBook = lazy(() => import("./pages/CaseStudyWriteYourBook"));
-const CaseStudyGrowapp = lazy(() => import("./pages/CaseStudyGrowapp"));
-const CaseStudyScreenplay = lazy(() => import("./pages/CaseStudyScreenplay"));
-const CaseStudyBottlenexus = lazy(() => import("./pages/CaseStudyBottlenexus"));
-const CaseStudyICCenter = lazy(() => import("./pages/CaseStudyICCenter"));
 const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
-const Pricing = lazy(() => import("./pages/Pricing"));
 const Resume = lazy(() => import("./pages/Resume"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const RouteFallback = () => <div className="min-h-screen bg-background" />;
@@ -50,14 +52,14 @@ export const AppRoutes = () => (
       <Route path="/services/cold-email" element={<ColdEmail />} />
       <Route path="/services/meta-ads" element={<MetaAds />} />
       <Route path="/case-studies" element={<CaseStudies />} />
-      <Route path="/case-study/write-your-book" element={lazyRoute(<CaseStudyWriteYourBook />)} />
-      <Route path="/case-study/growapp" element={lazyRoute(<CaseStudyGrowapp />)} />
+      <Route path="/case-study/write-your-book" element={<CaseStudyWriteYourBook />} />
+      <Route path="/case-study/growapp" element={<CaseStudyGrowapp />} />
       <Route path="/case-study/zembra" element={<CaseStudyZembra />} />
       <Route path="/case-study/pubrella" element={<CaseStudyPubrella />} />
       <Route path="/case-study/shipzzer" element={<CaseStudyShipzzer />} />
-      <Route path="/case-study/screenplay" element={lazyRoute(<CaseStudyScreenplay />)} />
-      <Route path="/case-study/bottlenexus" element={lazyRoute(<CaseStudyBottlenexus />)} />
-      <Route path="/case-study/ic-center" element={lazyRoute(<CaseStudyICCenter />)} />
+      <Route path="/case-study/screenplay" element={<CaseStudyScreenplay />} />
+      <Route path="/case-study/bottlenexus" element={<CaseStudyBottlenexus />} />
+      <Route path="/case-study/ic-center" element={<CaseStudyICCenter />} />
       <Route path="/creative/community-management" element={lazyRoute(<CommunityManagement />)} />
       <Route path="/services/landing-page" element={<LandingPageConversion />} />
       <Route path="/saas-marketing-agency" element={<SaasMarketingAgency />} />
@@ -67,7 +69,7 @@ export const AppRoutes = () => (
       <Route path="/meta-ads-for-saas" element={<MetaAdsForSaas />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogArticle />} />
-      <Route path="/pricing" element={lazyRoute(<Pricing />)} />
+      <Route path="/pricing" element={<Pricing />} />
       <Route path="/resume" element={lazyRoute(<Resume />)} />
       <Route path="/book" element={<Book />} />
       <Route path="/saas-marketing-plan" element={<SaasMarketingPlan />} />

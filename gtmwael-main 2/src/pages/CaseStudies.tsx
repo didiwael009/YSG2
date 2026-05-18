@@ -156,6 +156,61 @@ const CaseStudies = () => {
           </div>
         </section>
 
+        <section className="py-16 md:py-20">
+          <div className="container mx-auto px-6">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
+              How the work connects
+            </p>
+            <h2 className="font-display max-w-3xl text-3xl font-bold leading-tight tracking-tight md:text-5xl">
+              Every case study maps back to a repeatable GTM system
+            </h2>
+            <p className="mt-6 max-w-4xl text-lg leading-relaxed text-muted-foreground">
+              Each project starts from the same diagnostic: what is the highest-leverage problem stopping this SaaS from generating qualified pipeline? The answer shapes everything — whether the work starts with positioning, a landing page rebuild, cold email infrastructure, or paid traffic alignment.
+            </p>
+            <p className="mt-4 max-w-4xl text-base leading-relaxed text-muted-foreground">
+              Shipzzer needed SEO architecture and a cold outbound engine. Screenplay needed funnel clarity before users could complete a workflow. Zembra needed repositioning before the messaging could drive revenue. Pubrella needed conversion fixes before more traffic would produce better results. Different starting points, one connected approach.
+            </p>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {(
+                [
+                  {
+                    to: "/saas-marketing-agency",
+                    label: "GTM strategy and positioning",
+                    description: "Align messaging, channels, and conversion around one clear buyer and offer before scaling spend.",
+                  },
+                  {
+                    to: "/landing-page-for-saas",
+                    label: "SaaS landing page strategy",
+                    description: "Fix the conversion point that sits at the end of every acquisition channel — organic, paid, or outbound.",
+                  },
+                  {
+                    to: "/conversion-rate-optimisation-specialist",
+                    label: "SaaS CRO service",
+                    description: "Diagnose and fix conversion gaps across the full funnel path with a prioritised action list.",
+                  },
+                  {
+                    to: "/cold-email-for-saas",
+                    label: "Cold email for SaaS",
+                    description: "Build a repeatable outbound system with proper infrastructure, sequencing, and qualified pipeline weekly.",
+                  },
+                ] as { to: string; label: string; description: string }[]
+              ).map((item) => (
+                <Link
+                  key={item.to}
+                  to={item.to}
+                  className="group rounded-2xl border border-border/60 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60"
+                >
+                  <h3 className="font-display text-base font-semibold group-hover:text-primary">{item.label}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-primary">
+                    Learn more <ArrowRight className="h-3 w-3" />
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="border-y border-border/60 bg-card/30 py-20">
           <div className="container mx-auto px-6">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-primary">
