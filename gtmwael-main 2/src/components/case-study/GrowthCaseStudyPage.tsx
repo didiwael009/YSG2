@@ -8,7 +8,7 @@ import { CALENDLY_URL } from "@/lib/constants";
 import { ArrowRight, Check, X } from "lucide-react";
 
 type Metric = { value: string; label: string };
-type TextBlock = { icon: string; title: string; description: string };
+type TextBlock = { icon: string; title: string; description: ReactNode };
 type ProofSide = { label: string; title: string; image: string; alt: string; points: string[] };
 type Result = { number: string; title: string; description: string };
 
@@ -38,6 +38,10 @@ type Props = {
   ctaTitle: string;
   ctaLabel: string;
   ctaSubtext: string;
+  /** Text/JSX rendered above the CTA title — used for money-page back-links */
+  ctaPreamble?: ReactNode;
+  /** If provided, the CTA button links internally via <Link> instead of Calendly */
+  ctaHref?: string;
 };
 
 const useDocumentMeta = (title: string, description: string, canonical: string) => {
@@ -109,6 +113,8 @@ const GrowthCaseStudyPage = ({
   ctaTitle,
   ctaLabel,
   ctaSubtext,
+  ctaPreamble,
+  ctaHref,
 }: Props) => {
   useDocumentMeta(metaTitle, metaDescription, canonical);
 
@@ -274,12 +280,22 @@ const GrowthCaseStudyPage = ({
 
         <section className="py-20 text-center md:py-28">
           <div className="container mx-auto max-w-3xl px-6">
+            {ctaPreamble && (
+              <p className="mb-6 text-base leading-relaxed text-muted-foreground">{ctaPreamble}</p>
+            )}
             <h2 className="font-display text-3xl font-bold leading-tight tracking-tight md:text-5xl">{ctaTitle}</h2>
             <Button className="mt-8" variant="hero" size="lg" asChild>
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                {ctaLabel}
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </a>
+              {ctaHref ? (
+                <Link to={ctaHref}>
+                  {ctaLabel}
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </Link>
+              ) : (
+                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                  {ctaLabel}
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </a>
+              )}
             </Button>
             <p className="mt-4 text-sm text-muted-foreground">{ctaSubtext}</p>
           </div>

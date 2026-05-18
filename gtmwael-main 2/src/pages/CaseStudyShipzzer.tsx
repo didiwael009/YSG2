@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import GrowthCaseStudyPage from "@/components/case-study/GrowthCaseStudyPage";
 import beforeImage from "@/assets/shipzzer-old-landing.webp";
 import afterImage from "@/assets/shipzzer-new-landing.webp";
@@ -26,26 +27,46 @@ const CaseStudyShipzzer = () => (
       {
         icon: "🎯",
         title: "Positioning audit",
-        description:
-          "Shifted messaging from logistics features to operational outcomes: faster customs clearance, lower freight costs, and real-time visibility.",
+        description: (
+          <>
+            Shifted messaging from logistics features to operational outcomes: faster customs clearance, lower freight costs, and real-time visibility.{" "}
+            This is the core of the{" "}
+            <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS GTM strategy service</Link>.
+          </>
+        ),
       },
       {
         icon: "🔍",
         title: "SEO architecture by buyer intent",
-        description:
-          "Mapped pages to search intent stages. Built content for awareness, consideration, and decision keywords. Secured Top 3 rankings.",
+        description: (
+          <>
+            Mapped pages to search intent stages. Built content for awareness, consideration, and decision keywords. Secured Top 3 rankings.{" "}
+            The approach behind this is covered in the{" "}
+            <Link to="/b2b-saas-marketing-strategy" className="text-primary hover:underline">B2B SaaS marketing strategy guide</Link>.
+          </>
+        ),
       },
       {
         icon: "📧",
         title: "Cold email engine",
-        description:
-          "Segmented ICP lists, wrote high-intent sequences, and optimized deliverability. Achieved 50% open rate and 7% reply rate.",
+        description: (
+          <>
+            Segmented ICP lists, wrote high-intent sequences, and optimized deliverability. Achieved 50% open rate and 7% reply rate.{" "}
+            See the full{" "}
+            <Link to="/cold-email-for-saas" className="text-primary hover:underline">cold email for SaaS service</Link> for how this is built.
+          </>
+        ),
       },
       {
         icon: "📊",
         title: "On-brand messaging system",
-        description:
-          "Unified value proposition across website, email, and landing pages. Built a messaging framework the team could scale.",
+        description: (
+          <>
+            Unified value proposition across website, email, and landing pages. Built a messaging framework the team could scale.{" "}
+            This connects to the{" "}
+            <Link to="/landing-page-for-saas" className="text-primary hover:underline">SaaS landing page strategy service</Link>.
+          </>
+        ),
       },
     ]}
     proofIntro="Before: broad logistics messaging with no clear ICP. After: container-depot-specific positioning, clear CTA hierarchy, and SEO-ready structure."
@@ -81,8 +102,16 @@ const CaseStudyShipzzer = () => (
         description: "Positioning, SEO, and outbound aligned under one narrative.",
       },
     ]}
+    ctaPreamble={
+      <>
+        If you want to understand what this kind of system covers, start with the{" "}
+        <Link to="/cold-email-for-saas" className="text-primary hover:underline">cold email for SaaS service</Link> or the{" "}
+        <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS GTM strategy page</Link>.
+      </>
+    }
     ctaTitle="If your SaaS has value but no demand system, let's talk."
     ctaLabel="Book a 20-min GTM Audit"
+    ctaHref="/book"
     ctaSubtext="Free strategic audit. No pitch. No slides. Just actionable fixes you can implement this week."
   />
 );

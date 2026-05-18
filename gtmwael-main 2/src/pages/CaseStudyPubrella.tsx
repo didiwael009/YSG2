@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import GrowthCaseStudyPage from "@/components/case-study/GrowthCaseStudyPage";
 import beforeImage from "@/assets/pubrella-before.jpg";
 import afterImage from "@/assets/pubrella-after.jpg";
@@ -62,26 +63,46 @@ const CaseStudyPubrella = () => (
       {
         icon: "🎯",
         title: "Messaging clarity audit",
-        description:
-          "Rewrote the hero section, value proposition, and feature descriptions to eliminate confusion.",
+        description: (
+          <>
+            Rewrote the hero section, value proposition, and feature descriptions to eliminate confusion.{" "}
+            This is the core of the{" "}
+            <Link to="/landing-page-for-saas" className="text-primary hover:underline">SaaS landing page strategy service</Link>.
+          </>
+        ),
       },
       {
         icon: "🔍",
         title: "Friction removal",
-        description:
-          "Identified and eliminated conversion blockers: unclear CTAs, missing trust signals, cognitive overload, and unnecessary fields.",
+        description: (
+          <>
+            Identified and eliminated conversion blockers: unclear CTAs, missing trust signals, cognitive overload, and unnecessary fields.{" "}
+            See the full{" "}
+            <Link to="/conversion-rate-optimisation-specialist" className="text-primary hover:underline">SaaS conversion rate optimisation service</Link>.
+          </>
+        ),
       },
       {
         icon: "🏆",
         title: "Trust signal architecture",
-        description:
-          "Added social proof, testimonials, case study previews, security badges, and credibility markers at strategic friction points.",
+        description: (
+          <>
+            Added social proof, testimonials, case study previews, security badges, and credibility markers at strategic friction points.{" "}
+            This is part of the{" "}
+            <Link to="/conversion-rate-optimisation-specialist" className="text-primary hover:underline">SaaS CRO audit and execution service</Link>.
+          </>
+        ),
       },
       {
         icon: "📊",
         title: "CTA hierarchy & flow optimization",
-        description:
-          "Restructured the page flow with one primary CTA, clear visual hierarchy, and progressive disclosure.",
+        description: (
+          <>
+            Restructured the page flow with one primary CTA, clear visual hierarchy, and progressive disclosure.{" "}
+            The full framework is covered in the{" "}
+            <Link to="/landing-page-for-saas" className="text-primary hover:underline">SaaS landing page service</Link>.
+          </>
+        ),
       },
     ]}
     proofIntro="Before: confusing messaging, competing CTAs, no trust signals, high cognitive load. After: clear value prop, single CTA path, trust-building architecture, friction removed."
@@ -118,8 +139,16 @@ const CaseStudyPubrella = () => (
         description: "Framework can be replicated across other pages and campaigns.",
       },
     ]}
+    ctaPreamble={
+      <>
+        If you want to understand what this audit covers, see the{" "}
+        <Link to="/conversion-rate-optimisation-specialist" className="text-primary hover:underline">SaaS conversion rate optimisation service</Link> or the{" "}
+        <Link to="/landing-page-for-saas" className="text-primary hover:underline">SaaS landing page strategy page</Link>.
+      </>
+    }
     ctaTitle="If your landing page gets traffic but doesn't convert, let's fix it."
-    ctaLabel="Book a 20-min Landing Page Audit"
+    ctaLabel="Book a 20-min GTM Audit"
+    ctaHref="/book"
     ctaSubtext="Free conversion audit. No pitch. No slides. Just actionable CRO fixes you can implement this week."
   />
 );

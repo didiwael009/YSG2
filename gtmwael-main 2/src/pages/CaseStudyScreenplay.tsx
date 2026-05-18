@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 import GrowthCaseStudyPage from "@/components/case-study/GrowthCaseStudyPage";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import oldLanding from "@/assets/screenplay-old-landing.jpg";
@@ -114,6 +116,31 @@ const CaseStudyScreenplay = () => (
             { label: "Perform", src: newStudio },
           ]}
         />
+        <section className="border-y border-border/60 bg-card/40 py-16">
+          <div className="container mx-auto max-w-4xl px-6">
+            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-primary">Related services</p>
+            <ul className="grid gap-4 sm:grid-cols-2">
+              {(
+                [
+                  { to: "/landing-page-for-saas", label: "SaaS landing page strategy service" },
+                  { to: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation service" },
+                  { to: "/saas-marketing-agency", label: "SaaS GTM strategy and positioning" },
+                  { to: "/book", label: "Book a 20-min GTM Audit" },
+                ] as { to: string; label: string }[]
+              ).map(({ to, label }) => (
+                <li key={to}>
+                  <Link
+                    to={to}
+                    className="flex items-center gap-3 rounded-2xl border border-border/60 bg-card/70 p-5 text-sm font-semibold transition-colors hover:border-primary/40 hover:text-primary"
+                  >
+                    <ArrowRight className="h-4 w-4 flex-none text-primary" />
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
       </>
     }
     results={[
@@ -135,6 +162,7 @@ const CaseStudyScreenplay = () => (
     ]}
     ctaTitle="If your SaaS product has value but users don’t get it, let’s fix the path."
     ctaLabel="Book a 20-min GTM Audit"
+    ctaHref="/book"
     ctaSubtext="Free strategic audit. No pitch. No slides. Just actionable fixes you can implement this week."
   />
 );

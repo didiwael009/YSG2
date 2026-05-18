@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import GrowthCaseStudyPage from "@/components/case-study/GrowthCaseStudyPage";
 import beforeImage from "@/assets/zembra-old-website.webp";
 import afterImage from "@/assets/landing-zembra.png";
@@ -26,20 +27,35 @@ const CaseStudyZembra = () => (
       {
         icon: "🎯",
         title: "Full SaaS rebrand",
-        description:
-          "Repositioned Zembra from a technical API into a data intelligence platform for AI/ML buyers. New brand identity, messaging framework, and value proposition.",
+        description: (
+          <>
+            Repositioned Zembra from a technical API into a data intelligence platform for AI/ML buyers. New brand identity, messaging framework, and value proposition.{" "}
+            See how this works as a service:{" "}
+            <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS GTM strategy and positioning</Link>.
+          </>
+        ),
       },
       {
         icon: "🌐",
         title: "Website rebuild",
-        description:
-          "Redesigned the entire site with outcome-driven messaging, clear buyer journeys, and conversion-optimized landing pages.",
+        description: (
+          <>
+            Redesigned the entire site with outcome-driven messaging, clear buyer journeys, and conversion-optimized landing pages.{" "}
+            This is part of the{" "}
+            <Link to="/landing-page-for-saas" className="text-primary hover:underline">SaaS landing page strategy service</Link>.
+          </>
+        ),
       },
       {
         icon: "📧",
         title: "Outbound email engine",
-        description:
-          "Built cold email sequences targeting AI/ML teams, data scientists, and product leaders, segmented by use case.",
+        description: (
+          <>
+            Built cold email sequences targeting AI/ML teams, data scientists, and product leaders, segmented by use case.{" "}
+            See the full{" "}
+            <Link to="/cold-email-for-saas" className="text-primary hover:underline">cold email for SaaS service</Link>.
+          </>
+        ),
       },
       {
         icon: "📊",
@@ -87,8 +103,15 @@ const CaseStudyZembra = () => (
         description: "AI/ML buyers could finally see what problem Zembra solved and why it mattered.",
       },
     ]}
+    ctaPreamble={
+      <>
+        If you want to understand what this kind of work covers, start with the{" "}
+        <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS GTM strategy page</Link>.
+      </>
+    }
     ctaTitle="If your SaaS has value but the market can't see it, let's talk."
     ctaLabel="Book a 20-min GTM Audit"
+    ctaHref="/book"
     ctaSubtext="Free strategic audit. No pitch. No slides. Just actionable positioning and messaging fixes you can implement this week."
   />
 );
