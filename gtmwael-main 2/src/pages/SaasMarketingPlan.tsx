@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowRight, BarChart2, CheckCircle2, LayoutTemplate, Mail, MessageSquare, Target, TrendingUp } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateIn from "@/components/AnimateIn";
 import Footer from "@/components/Footer";
@@ -39,95 +39,133 @@ const faqItems = [
   },
 ];
 
+const planSteps = [
+  { label: "Positioning", icon: MessageSquare },
+  { label: "Landing page", icon: LayoutTemplate },
+  { label: "Conversion path", icon: TrendingUp },
+  { label: "Tracking", icon: BarChart2 },
+  { label: "Acquisition", icon: Target },
+  { label: "Follow-up", icon: Mail },
+];
+
 export default function SaasMarketingPlan() {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
 
       {/* ══════════════════════════════════════════════
-          HERO — dark
+          HERO — dark branded guide
       ══════════════════════════════════════════════ */}
-      <section className="pt-28 pb-16 bg-background">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
-                SaaS Growth Framework
-              </p>
-              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight text-foreground">
-                SaaS Marketing Plan: A Practical Framework for Founders
-              </h1>
-              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                Most SaaS marketing plans are built backwards.
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                They start with channels: which ads to run, which content to publish, which outreach sequences to write. Then founders wonder why the plan is not producing pipeline.
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                The channel is rarely the problem.
-              </p>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                The problem is that most SaaS marketing plans skip the steps that make channels work: positioning, landing page clarity, conversion path, and trust. Without those foundations, more traffic produces more evidence that something is broken — not more demos.
-              </p>
-
-              {/* 6-step order */}
-              <div id="order" className="rounded-xl border border-border bg-card/60 p-6 mb-8">
-                <p className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
-                  The SaaS Marketing Plan Order
+      <section className="relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32 bg-[radial-gradient(circle_at_15%_0%,rgba(124,60,255,0.28),transparent_35%),radial-gradient(circle_at_85%_5%,rgba(255,91,31,0.18),transparent_30%),linear-gradient(135deg,#090713_0%,#170920_46%,#070711_100%)]">
+        <div className="container relative z-10 mx-auto px-6">
+          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <div className="flex-1 max-w-xl">
+              <AnimateIn delay={100}>
+                <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
+                  SaaS Growth Framework
                 </p>
-                <ol className="space-y-2">
+              </AnimateIn>
+              <AnimateIn delay={150}>
+                <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6">
+                  SaaS Marketing Plan: A Practical Framework for Founders
+                </h1>
+              </AnimateIn>
+              <AnimateIn delay={200}>
+                <div className="space-y-4 text-[#cec8dd] leading-relaxed">
+                  <p className="text-lg text-white/90">
+                    Most SaaS marketing plans are built backwards.
+                  </p>
+                  <p>
+                    They start with channels: which ads to run, which content to publish, which outreach sequences to write. Then founders wonder why the plan is not producing pipeline.
+                  </p>
+                  <p>
+                    The problem is that most SaaS marketing plans skip the steps that make channels work: positioning, landing page clarity, conversion path, and trust.
+                  </p>
+                </div>
+              </AnimateIn>
+              <AnimateIn delay={250}>
+                <ul className="space-y-3 my-8">
                   {[
-                    "Positioning",
-                    "Landing page",
-                    "Conversion path",
-                    "Tracking",
-                    "Acquisition channels",
-                    "Follow-up",
-                  ].map((step, i) => (
-                    <li key={step} className="flex items-center gap-3 text-sm text-muted-foreground">
-                      <span className="text-[11px] font-black text-primary min-w-[24px]">
-                        {String(i + 1).padStart(2, "0")}
-                      </span>
-                      <span>{step}</span>
+                    "Build the foundation before scaling traffic",
+                    "Connect positioning, landing page, conversion path, and tracking",
+                    "Choose channels only after the page can hold attention",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-white/90">
+                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span>{item}</span>
                     </li>
                   ))}
-                </ol>
-                <p className="text-xs text-muted-foreground mt-4 border-t border-border pt-4">
-                  If you skip the first four, SEO, ads, and cold email will only amplify the leak.
-                </p>
-              </div>
-
-              {/* Visual flow: SaaS marketing plan order */}
-              <div className="mt-8 flex flex-wrap items-center gap-2 text-sm font-medium">
-                {["Positioning", "Landing Page", "Conversion Path", "Tracking", "Acquisition", "Follow-up"].map((step, i, arr) => (
-                  <div key={step} className="flex items-center gap-2">
-                    <span className="rounded-lg bg-primary/10 px-3 py-1.5 text-primary">{step}</span>
-                    {i < arr.length - 1 && <span className="text-muted-foreground">→</span>}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-8">
-                <Button variant="hero" size="lg" className="group" asChild>
-                  <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                    Book a 20-min GTM Audit
-                    <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                  </a>
-                </Button>
-              </div>
+                </ul>
+              </AnimateIn>
+              <AnimateIn delay={300}>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button variant="hero" size="xl" className="group" asChild>
+                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                      Book a 20-min GTM Audit
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="xl" className="border-white/20 text-white hover:bg-white/10" asChild>
+                    <a href="#order">View framework</a>
+                  </Button>
+                </div>
+              </AnimateIn>
             </div>
-          </AnimateIn>
+
+            <AnimateIn delay={200} className="flex-shrink-0 w-full lg:w-auto">
+              <div className="relative lg:max-w-md">
+                <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full scale-75" />
+                <div className="relative rounded-[26px] border border-white/10 bg-white/[0.06] p-3 shadow-[0_28px_90px_rgba(0,0,0,0.32)]">
+                  <img
+                    src="/saas-marketing-plan-framework-founders-wael-aouididi.webp"
+                    alt="SaaS marketing plan framework for founders"
+                    width={1200}
+                    height={630}
+                    decoding="async"
+                    fetchpriority="high"
+                    className="aspect-[1200/630] w-full rounded-[20px] object-cover"
+                  />
+                  <div id="order" className="mt-3 rounded-[20px] border border-white/10 bg-[#0f0a1a]/90 p-5">
+                    <p className="text-[11px] font-black uppercase tracking-[0.12em] text-primary mb-4">
+                      The SaaS Marketing Plan Order
+                    </p>
+                    <ol className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {planSteps.map((step, i) => {
+                        const Icon = step.icon;
+                        return (
+                          <li key={step.label} className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] p-3">
+                            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/15 text-primary">
+                              <Icon className="h-4 w-4" />
+                            </span>
+                            <div>
+                              <span className="block text-[10px] font-black tracking-widest text-white/35">
+                                {String(i + 1).padStart(2, "0")}
+                              </span>
+                              <span className="text-sm font-semibold text-white">{step.label}</span>
+                            </div>
+                          </li>
+                        );
+                      })}
+                    </ol>
+                    <p className="text-xs text-white/50 mt-4 border-t border-white/10 pt-4">
+                      If you skip the first four, SEO, ads, and cold email will only amplify the leak.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AnimateIn>
+          </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════
           TABLE OF CONTENTS
       ══════════════════════════════════════════════ */}
-      <section className="py-8 bg-white border-y border-[#11111f]/10">
-        <div className="container px-4">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-3">Contents</p>
-            <nav className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-1.5 text-sm">
+      <section className="rounded-t-[32px] bg-white py-10 shadow-[0_-36px_90px_rgba(0,0,0,0.25)]">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-5xl rounded-2xl border border-[#11111f]/10 bg-[#f9f8fc] p-6 md:p-8">
+            <p className="text-xs font-black uppercase tracking-widest text-primary mb-4">Contents</p>
+            <nav className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-sm">
               {[
                 { href: "#order", label: "The SaaS Marketing Plan Order" },
                 { href: "#how-to-use", label: "How to Use This Framework" },
@@ -143,7 +181,7 @@ export default function SaasMarketingPlan() {
                 { href: "#template", label: "One-Page Template" },
                 { href: "#faq", label: "FAQ" },
               ].map((item) => (
-                <a key={item.href} href={item.href} className="text-muted-foreground hover:text-primary transition-colors">
+                <a key={item.href} href={item.href} className="text-[#4d4658] hover:text-primary transition-colors">
                   {item.label}
                 </a>
               ))}
@@ -155,8 +193,8 @@ export default function SaasMarketingPlan() {
       {/* ══════════════════════════════════════════════
           HOW TO USE + WHY PLANS FAIL — light
       ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-white border-y border-[#11111f]/10">
-        <div className="container px-4">
+      <section className="py-20 md:py-28 bg-white border-y border-[#11111f]/10">
+        <div className="container mx-auto px-6">
           <AnimateIn>
             <div className="max-w-3xl mx-auto">
 
@@ -503,14 +541,14 @@ export default function SaasMarketingPlan() {
       {/* ══════════════════════════════════════════════
           MID-PAGE CTA
       ══════════════════════════════════════════════ */}
-      <section className="py-12 bg-background">
-        <div className="container px-4">
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
           <AnimateIn>
-            <div className="max-w-3xl mx-auto rounded-2xl border border-primary/20 bg-primary/5 p-7 md:p-9 text-center">
-              <p className="text-sm font-semibold text-foreground mb-2">
+            <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-primary/20 bg-[radial-gradient(ellipse_at_top_left,rgba(124,60,255,0.25),transparent_50%),linear-gradient(135deg,#0f0a1a,#170920)] p-8 text-center shadow-[0_28px_80px_rgba(7,7,17,0.35)] md:p-10">
+              <p className="text-sm font-semibold text-white mb-2">
                 If your positioning is clear and your landing page is solid, the next thing blocking pipeline is usually the conversion path or the tracking.
               </p>
-              <p className="text-muted-foreground text-sm mb-6">
+              <p className="text-[#cec8dd] text-sm mb-6">
                 In a 20-minute GTM Audit I will show you which step is the real bottleneck.
               </p>
               <Button variant="hero" size="lg" className="group" asChild>
@@ -901,17 +939,18 @@ export default function SaasMarketingPlan() {
       {/* ══════════════════════════════════════════════
           FINAL CTA — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-card border-t border-border">
-        <div className="container px-4">
+      <section className="py-24 md:py-32 bg-background">
+        <div className="container mx-auto px-6">
           <AnimateIn>
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
+            <div className="relative rounded-3xl overflow-hidden bg-[radial-gradient(ellipse_at_top_left,rgba(124,60,255,0.25),transparent_50%),radial-gradient(ellipse_at_bottom_right,rgba(255,91,31,0.15),transparent_50%),linear-gradient(135deg,#0f0a1a,#170920)] border border-primary/20 p-12 md:p-16 text-center shadow-[0_28px_80px_rgba(7,7,17,0.4)]">
+              <span className="mb-4 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">Ready to fix the order?</span>
+              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-white max-w-3xl mx-auto leading-tight">
                 Ready to Build a SaaS Marketing Plan That Actually Produces Pipeline?
               </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-[#cec8dd] mb-4 leading-relaxed max-w-2xl mx-auto">
                 If you have been running channels without consistent results, the problem is almost always in the foundations — not the tactics.
               </p>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-[#cec8dd]/75 mb-8 leading-relaxed max-w-2xl mx-auto">
                 In a 20-minute GTM Audit, I will tell you what is actually blocking growth and what to fix first. Bring your current marketing setup, your conversion numbers, and the channel you are most focused on. We will find the bottleneck.
               </p>
               <Button variant="hero" size="lg" className="group" asChild>
@@ -920,7 +959,7 @@ export default function SaasMarketingPlan() {
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
-              <p className="text-xs text-muted-foreground/60 mt-4">
+              <p className="text-xs text-white/45 mt-5">
                 Also see:{" "}
                 <Link to="/saas-marketing-agency" className="hover:text-primary transition-colors">
                   SaaS marketing agency alternative
