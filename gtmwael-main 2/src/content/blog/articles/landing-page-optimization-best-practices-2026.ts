@@ -17,7 +17,7 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
     datePublished: "2026-05-08",
-    dateModified: "2026-05-08",
+    dateModified: "2026-05-18",
     readTime: "14 min read",
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",

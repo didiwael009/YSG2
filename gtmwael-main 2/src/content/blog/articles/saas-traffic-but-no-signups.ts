@@ -18,7 +18,7 @@ export const saasTrafficButNoSignups: BlogPost = {
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
     datePublished: "2026-04-30",
-    dateModified: "2026-04-30",
+    dateModified: "2026-05-18",
     readTime: "13 min read",
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",

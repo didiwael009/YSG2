@@ -17,7 +17,7 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale paid traffic.",
     datePublished: "2026-04-27",
-    dateModified: "2026-04-27",
+    dateModified: "2026-05-18",
     readTime: "11 min read",
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",

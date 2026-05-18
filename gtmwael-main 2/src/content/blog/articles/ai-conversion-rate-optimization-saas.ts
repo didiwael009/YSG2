@@ -18,7 +18,7 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders fix positioning, landing pages, onboarding, and conversion leaks before scaling acquisition.",
     datePublished: "2026-05-06",
-    dateModified: "2026-05-06",
+    dateModified: "2026-05-18",
     readTime: "14 min read",
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",
