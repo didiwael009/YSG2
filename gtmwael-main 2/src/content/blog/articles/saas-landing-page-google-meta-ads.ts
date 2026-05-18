@@ -3,12 +3,12 @@ import type { BlogPost } from "../types";
 export const saasLandingPageGoogleMetaAds: BlogPost = {
     slug: "saas-landing-page-google-meta-ads",
     path: "/blog/saas-landing-page-google-meta-ads",
-    category: "Paid Ads Strategy",
-    title: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
-    h1: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
-    metaTitle: "Google Ads vs Meta Ads: SaaS Landing Page Strategy",
+    category: "Meta Ads for SaaS",
+    title: "Google Ads vs Meta Ads for SaaS: Landing Page Strategy That Matches Intent",
+    h1: "Google Ads vs Meta Ads for SaaS: Why Your Landing Page Needs to Match Intent",
+    metaTitle: "Google Ads vs Meta Ads for SaaS: Landing Page Strategy",
     description:
-      "Google Ads captures demand. Meta Ads creates demand. Your SaaS landing page should match intent instead of forcing both channels into one generic page.",
+      "Google Ads captures demand. Meta Ads creates demand. Match your SaaS landing page intent to the channel — separate pages for each source convert better.",
     searchIntent:
       "SaaS founders and marketers comparing Google Ads and Meta Ads landing page strategy for better paid traffic conversion.",
     excerpt:
@@ -22,13 +22,12 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",
     featuredImageAlt: "SaaS landing page strategy for Google Ads and Meta Ads traffic",
-    primaryKeyword: "SaaS landing page",
+    primaryKeyword: "google ads vs meta ads for saas",
     secondaryKeywords: [
-      "Google Ads landing page",
-      "Meta Ads landing page",
-      "conversion optimization",
-      "SaaS growth",
-      "paid ads strategy",
+      "meta ads landing page saas",
+      "google ads landing page saas",
+      "saas paid ads strategy",
+      "landing page message match",
     ],
     toc: [
       { label: "Opening idea", id: "opening" },
@@ -48,7 +47,7 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
         label: "Core principle",
         headline: "Build trust before traffic. Traffic sent to a broken foundation is burned budget.",
         paragraphs: [
-          "A SaaS founder launches Google Ads and Meta Ads, then sends both campaigns to the same [SaaS landing page](/landing-page-for-saas). On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
+          "The most common Google Ads vs Meta Ads for SaaS mistake is not the channel choice — it is what happens after the click. A founder launches both campaigns and sends them to the same [SaaS landing page](/landing-page-for-saas). On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
         ],
       },
       {

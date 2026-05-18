@@ -104,8 +104,8 @@ export const routeContent = {
       },
     ],
     links: [
-      { label: "Landing page conversion service", path: "/services/landing-page" },
-      { label: "Meta ads service", path: "/services/meta-ads" },
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+      { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
       { label: "Book a landing page audit", path: "/book" },
     ],
   },
