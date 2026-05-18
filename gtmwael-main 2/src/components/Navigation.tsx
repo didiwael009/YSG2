@@ -167,6 +167,7 @@ const Navigation = () => {
               aria-label="Home"
             >
               <Home className="w-4 h-4" />
+              <span className="sr-only">Home</span>
             </Link>
             <div className="w-px h-4 bg-border/50 mx-1" />
           </>
