@@ -3,13 +3,13 @@ import type { BlogPost } from "../types";
 export const saasProductVideo: BlogPost = {
   slug: "saas-product-video",
   path: "/blog/saas-product-video",
-  category: "SaaS Video",
+  category: "Meta Ads for SaaS",
   breadcrumbTitle: "SaaS Product Video",
-  title: "SaaS Product Video: How to Test Your Product Moment Before Production",
+  title: "SaaS Product Video: Test Your Product Moment Before Production",
   h1: "SaaS Product Video: How to Test Your Product Moment Before Production",
-  metaTitle: "SaaS Product Video: Test Your Message Before Production",
+  metaTitle: "SaaS Product Video: Validate Before Production",
   description:
-    "Most SaaS product videos fail because the message is wrong, not the production. Here's how to validate your product moment before spending on video.",
+    "Most SaaS product videos fail because the message is wrong, not the production. Here is how to validate your product moment before spending on video.",
   searchIntent:
     "Informational and practical. SaaS founders want to understand how to create and use a SaaS product video to explain the product, test ad angles, and improve landing page conversion.",
   excerpt:
@@ -525,6 +525,7 @@ export const saasProductVideo: BlogPost = {
     { href: "/meta-ads-for-saas", label: "Meta Ads for SaaS" },
     { href: "/saas-marketing-plan", label: "SaaS marketing plan" },
     { href: "/b2b-saas-marketing-strategy", label: "B2B SaaS marketing strategy" },
+    { href: "/saas-marketing-agency", label: "SaaS GTM strategy and positioning" },
   ],
   relatedPosts: [
     {
