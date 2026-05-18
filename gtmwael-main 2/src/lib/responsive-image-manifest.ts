@@ -1365,5 +1365,27 @@ export const responsiveImageManifest = {
         "bytes": 17460
       }
     ]
+  },
+  "saas-product-video-html-demo-obs-workflow": {
+    "width": 1200,
+    "height": 630,
+    "originalBytes": 33210,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/saas-product-video-html-demo-obs-workflow-320.webp",
+        "bytes": 3496
+      },
+      {
+        "width": 640,
+        "src": "/responsive/saas-product-video-html-demo-obs-workflow-640.webp",
+        "bytes": 8166
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/saas-product-video-html-demo-obs-workflow-1024.webp",
+        "bytes": 14486
+      }
+    ]
   }
 } as const satisfies Record<string, ResponsiveImageEntry>;
