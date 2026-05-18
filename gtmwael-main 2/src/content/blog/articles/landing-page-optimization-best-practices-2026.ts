@@ -3,12 +3,12 @@ import type { BlogPost } from "../types";
 export const landingPageOptimizationBestPractices2026: BlogPost = {
     slug: "landing-page-optimization-best-practices-2026",
     path: "/blog/landing-page-optimization-best-practices-2026",
-    category: "SaaS CRO",
+    category: "SaaS Landing Pages",
     title: "SaaS Landing Page Optimization Best Practices 2026",
     h1: "SaaS Landing Page Optimization Best Practices 2026",
     metaTitle: "SaaS Landing Page Optimization Best Practices 2026",
     description:
-      "Learn landing page optimization best practices for 2026. Improve conversions with better messaging, CTAs, forms, trust signals, mobile UX, and testing.",
+      "SaaS landing page optimization in 2026 is not about button colors. Fix clarity, trust, proof, friction, and CTA hierarchy before scaling traffic.",
     searchIntent:
       "B2B SaaS founders and growth teams looking for practical landing page optimization best practices for 2026 to improve qualified conversions.",
     excerpt:
@@ -22,12 +22,13 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",
     featuredImageAlt: "SaaS landing page optimization best practices for 2026",
-    primaryKeyword: "landing page optimization best practices 2026",
+    primaryKeyword: "saas landing page optimization",
     secondaryKeywords: [
-      "conversion rate improvement best practices",
-      "landing page conversion rate optimization",
-      "SaaS landing page optimization",
-      "CRO best practices 2026",
+      "landing page optimization best practices 2026",
+      "saas landing page best practices",
+      "landing page conversion rate saas",
+      "saas cro best practices",
+      "optimize saas landing page",
     ],
     toc: [
       { label: "Short answer", id: "short-answer" },
@@ -145,7 +146,7 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
         type: "section",
         id: "saas-best-practices",
         label: "Best practices",
-        title: "Landing Page Optimization Best Practices for SaaS Teams in 2026",
+        title: "SaaS Landing Page Optimization Best Practices for 2026",
         paragraphs: [
           "The best SaaS landing pages answer the buyer's first questions before asking for commitment. What is this? Who is it for? What outcome do I get? Why should I believe it? What happens after I click?",
           "That is the structure behind the sections below. Demo pages, trial pages, and paid search pages all need different execution, but they share one principle: build trust before traffic.",

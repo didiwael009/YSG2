@@ -5,11 +5,11 @@ export const saasTrafficButNoSignups: BlogPost = {
     path: "/blog/saas-traffic-but-no-signups",
     category: "SaaS CRO",
     breadcrumbTitle: "SaaS Traffic But No Signups",
-    title: "SaaS Traffic But No Signups? Here's Why",
-    h1: "SaaS Traffic But No Signups? Here's Why",
-    metaTitle: "SaaS Traffic But No Signups? Here's Why",
+    title: "SaaS Traffic But No Signups? Here Is Why and How to Fix It",
+    h1: "SaaS Traffic But No Signups? Here Is Why and How to Fix It",
+    metaTitle: "SaaS Traffic But No Signups? Here Is Why and How to Fix It",
     description:
-      "Getting SaaS traffic but no signups? Diagnose weak messaging, CTA friction, missing proof, and broken conversion paths fast.",
+      "Traffic is not the problem. If your SaaS gets visitors but no signups, it is clarity, trust, CTA friction, or conversion path. Here is how to fix it.",
     searchIntent:
       "SaaS founders diagnosing why organic, paid, or referral website traffic is not converting into demos, trials, or signups.",
     excerpt:
@@ -23,13 +23,13 @@ export const saasTrafficButNoSignups: BlogPost = {
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",
     featuredImageAlt: "SaaS website traffic but no signups conversion leaks",
-    primaryKeyword: "SaaS traffic but no signups",
+    primaryKeyword: "saas traffic but no signups",
     secondaryKeywords: [
-      "SaaS website conversion",
-      "SaaS CRO audit",
-      "landing page conversion",
-      "SaaS signups",
-      "conversion leaks",
+      "saas website no conversions",
+      "saas landing page not converting",
+      "saas conversion rate fix",
+      "saas cro audit",
+      "why saas traffic doesnt convert",
     ],
     toc: [
       { label: "Traffic is not the problem yet", id: "traffic-not-problem" },
