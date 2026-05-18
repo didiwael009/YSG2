@@ -1,4 +1,4 @@
-import { ArrowRight, BarChart2, CheckCircle2, LayoutTemplate, Mail, MessageSquare, Target, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateIn from "@/components/AnimateIn";
 import Footer from "@/components/Footer";
@@ -45,126 +45,79 @@ export default function B2bSaasMarketingStrategy() {
       <Navigation />
 
       {/* ══════════════════════════════════════════════
-          HERO — editorial dark guide
+          HERO — dark
       ══════════════════════════════════════════════ */}
-      <section className="relative overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32 bg-[radial-gradient(circle_at_15%_0%,rgba(124,60,255,0.28),transparent_35%),radial-gradient(circle_at_85%_5%,rgba(255,91,31,0.18),transparent_30%),linear-gradient(135deg,#090713_0%,#170920_46%,#070711_100%)]">
-        <div className="container relative z-10 mx-auto px-6">
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            <div className="flex-1 max-w-xl">
-              <AnimateIn delay={100}>
-                <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
-                  B2B SaaS Growth
+      <section className="pt-28 pb-16 bg-background">
+        <div className="container px-4">
+          <AnimateIn>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
+                B2B SaaS Growth
+              </p>
+              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight text-foreground">
+                B2B SaaS Marketing Strategy: What to Fix Before Scaling Traffic
+              </h1>
+              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                Most B2B SaaS teams do not fail because they picked the wrong channel.
+              </p>
+              <p className="text-muted-foreground mb-4 leading-relaxed">
+                They fail because they scale before the strategy is clear. They run ads before the positioning is sharp. They publish content before knowing what buyers actually search for. They send cold emails before the ICP is tight. They redesign the website before understanding why visitors do not convert.
+              </p>
+              <p className="text-muted-foreground mb-8 leading-relaxed">
+                A B2B SaaS marketing strategy should not start with "which channel should we use?" It should start with: <strong className="text-foreground">what needs to be true before any channel can produce pipeline?</strong>
+              </p>
+
+              {/* Quick Answer */}
+              <div className="rounded-xl border border-border bg-card/60 p-6 mb-8">
+                <p className="text-sm font-semibold text-foreground mb-1">Quick Answer</p>
+                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                  A B2B SaaS marketing strategy is the system of decisions that connects the right buyer to the right message through the right channel — and converts that attention into qualified pipeline. It must answer six questions:
                 </p>
-              </AnimateIn>
-              <AnimateIn delay={150}>
-                <h1 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6">
-                  B2B SaaS Marketing Strategy: What to Fix Before Scaling Traffic
-                </h1>
-              </AnimateIn>
-              <AnimateIn delay={200}>
-                <div className="space-y-4 text-[#cec8dd] leading-relaxed">
-                  <p className="text-lg text-white/90">
-                    Most B2B SaaS teams do not fail because they picked the wrong channel.
-                  </p>
-                  <p>
-                    They fail because they scale before the strategy is clear. They run ads before the positioning is sharp. They publish content before knowing what buyers actually search for. They send cold emails before the ICP is tight. They redesign the website before understanding why visitors do not convert.
-                  </p>
-                  <p>
-                    A B2B SaaS marketing strategy should not start with "which channel should we use?" It should start with: <strong className="text-white">what needs to be true before any channel can produce pipeline?</strong>
-                  </p>
-                </div>
-              </AnimateIn>
-              <AnimateIn delay={250}>
-                <ul className="space-y-3 my-8">
+                <ol className="space-y-2">
                   {[
-                    "Fix ICP and positioning before choosing channels",
-                    "Map the buyer journey and trust gaps before adding spend",
-                    "Connect channel fit to conversion path and pipeline measurement",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-white/90">
-                      <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                    ["Who is the best-fit buyer?", "ICP, role, trigger, and urgency"],
+                    ["Why would they choose this product?", "Positioning over every alternative"],
+                    ["Where are they in their awareness?", "Buyer journey stage and trust gap"],
+                    ["Which channel reaches them best?", "Based on intent, not preference"],
+                    ["What happens after they click?", "Conversion path and demo flow"],
+                    ["How do we know it is working?", "Pipeline metrics, not activity metrics"],
+                  ].map(([q, a], i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
+                      <span className="text-primary font-bold flex-shrink-0 min-w-[20px]">{i + 1}.</span>
+                      <span><strong className="text-foreground">{q}</strong> — {a}</span>
                     </li>
                   ))}
-                </ul>
-              </AnimateIn>
-              <AnimateIn delay={300}>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button variant="hero" size="xl" className="group" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                      Book a 20-min GTM Audit
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </a>
-                  </Button>
-                  <Button variant="outline" size="xl" className="border-white/20 text-white hover:bg-white/10" asChild>
-                    <a href="#quick-answer">Read quick answer</a>
-                  </Button>
-                </div>
-              </AnimateIn>
-            </div>
-
-            <AnimateIn delay={200} className="flex-shrink-0 w-full lg:w-auto">
-              <div className="relative lg:max-w-md">
-                <div className="absolute inset-0 bg-primary/20 blur-[80px] rounded-full scale-75" />
-                <div className="relative rounded-[26px] border border-white/10 bg-white/[0.06] p-3 shadow-[0_28px_90px_rgba(0,0,0,0.32)]">
-                  <img
-                    src="/b2b-saas-marketing-strategy-framework-wael-aouididi.webp"
-                    alt="B2B SaaS marketing strategy framework by Wael Aouididi"
-                    width={1200}
-                    height={630}
-                    decoding="async"
-                    fetchpriority="high"
-                    className="aspect-[1200/630] w-full rounded-[20px] object-cover"
-                  />
-                  <div id="quick-answer" className="mt-3 rounded-[20px] border border-white/10 bg-[#0f0a1a]/90 p-5">
-                    <p className="text-[11px] font-black uppercase tracking-[0.12em] text-primary mb-3">
-                      Quick Answer
-                    </p>
-                    <p className="text-sm text-[#cec8dd] mb-4 leading-relaxed">
-                      A B2B SaaS marketing strategy is the system of decisions that connects the right buyer to the right message through the right channel — and converts that attention into qualified pipeline. It must answer six questions:
-                    </p>
-                    <ol className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      {[
-                        { q: "Who is the best-fit buyer?", a: "ICP, role, trigger, and urgency", icon: Target },
-                        { q: "Why would they choose this product?", a: "Positioning over every alternative", icon: MessageSquare },
-                        { q: "Where are they in their awareness?", a: "Buyer journey stage and trust gap", icon: LayoutTemplate },
-                        { q: "Which channel reaches them best?", a: "Based on intent, not preference", icon: TrendingUp },
-                        { q: "What happens after they click?", a: "Conversion path and demo flow", icon: BarChart2 },
-                        { q: "How do we know it is working?", a: "Pipeline metrics, not activity metrics", icon: Mail },
-                      ].map((step, i) => {
-                        const Icon = step.icon;
-                        return (
-                          <li key={step.q} className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.04] p-3">
-                            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary/15 text-primary">
-                              <Icon className="h-4 w-4" />
-                            </span>
-                            <div>
-                              <span className="block text-[10px] font-black tracking-widest text-white/35">
-                                {String(i + 1).padStart(2, "0")}
-                              </span>
-                              <span className="block text-sm font-semibold leading-snug text-white">{step.q}</span>
-                              <span className="mt-1 block text-xs leading-snug text-white/50">{step.a}</span>
-                            </div>
-                          </li>
-                        );
-                      })}
-                    </ol>
-                    <p className="text-xs text-white/50 mt-4 border-t border-white/10 pt-4">
-                      If any of these six are vague, the strategy is not ready. Channels will underperform until the answers are clear.
-                    </p>
-                  </div>
-                </div>
+                </ol>
+                <p className="text-xs text-muted-foreground mt-4 border-t border-border pt-4">
+                  If any of these six are vague, the strategy is not ready. Channels will underperform until the answers are clear.
+                </p>
               </div>
-            </AnimateIn>
-          </div>
+
+              {/* Strategy order */}
+              <div className="rounded-lg border border-border bg-card/40 px-5 py-4 text-sm text-muted-foreground">
+                <span className="font-semibold text-foreground mr-2">Strategy order:</span>
+                ICP → Positioning → Buyer Journey → Channel Fit → Conversion Path → Pipeline Measurement
+              </div>
+
+              {/* Visual flow */}
+              <div className="mt-8 flex flex-wrap items-center gap-2 text-sm font-medium">
+                {["ICP", "Positioning", "Buyer Journey", "Channel Mix", "Conversion Path", "Pipeline"].map((step, i, arr) => (
+                  <div key={step} className="flex items-center gap-2">
+                    <span className="rounded-lg bg-primary/10 px-3 py-1.5 text-primary">{step}</span>
+                    {i < arr.length - 1 && <span className="text-muted-foreground">→</span>}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </AnimateIn>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════════
           WHAT IT IS + WHY FAILS — light
       ══════════════════════════════════════════════ */}
-      <section className="rounded-t-[32px] bg-white py-20 md:py-28 shadow-[0_-36px_90px_rgba(0,0,0,0.25)]">
-        <div className="container mx-auto px-6">
+      <section className="py-16 bg-white border-y border-[#11111f]/10">
+        <div className="container px-4">
           <AnimateIn>
             <div className="max-w-3xl mx-auto space-y-12">
 
@@ -344,14 +297,14 @@ export default function B2bSaasMarketingStrategy() {
       {/* ══════════════════════════════════════════════
           MID-PAGE CTA
       ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-12 bg-white border-y border-[#11111f]/10">
+        <div className="container px-4">
           <AnimateIn>
-            <div className="relative mx-auto max-w-4xl overflow-hidden rounded-3xl border border-primary/20 bg-[radial-gradient(ellipse_at_top_left,rgba(124,60,255,0.25),transparent_50%),linear-gradient(135deg,#0f0a1a,#170920)] p-8 text-center shadow-[0_28px_80px_rgba(7,7,17,0.35)] md:p-10">
-              <p className="text-sm font-semibold text-white mb-2">
+            <div className="max-w-3xl mx-auto rounded-2xl border border-primary/20 bg-primary/5 p-7 md:p-9 text-center">
+              <p className="text-sm font-semibold text-[#11101a] mb-2">
                 If your positioning is clear but pipeline still feels random, the bottleneck is probably in the buyer journey, channel fit, or conversion path.
               </p>
-              <p className="text-[#cec8dd] text-sm mb-6">
+              <p className="text-[#4d4658] text-sm mb-6">
                 In a 20-minute GTM Audit I will help you find which one is blocking growth.
               </p>
               <Button variant="hero" size="lg" className="group" asChild>
@@ -699,18 +652,17 @@ export default function B2bSaasMarketingStrategy() {
       {/* ══════════════════════════════════════════════
           FINAL CTA — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 bg-background">
-        <div className="container mx-auto px-6">
+      <section className="py-16 bg-card border-t border-border">
+        <div className="container px-4">
           <AnimateIn>
-            <div className="relative rounded-3xl overflow-hidden bg-[radial-gradient(ellipse_at_top_left,rgba(124,60,255,0.25),transparent_50%),radial-gradient(ellipse_at_bottom_right,rgba(255,91,31,0.15),transparent_50%),linear-gradient(135deg,#0f0a1a,#170920)] border border-primary/20 p-12 md:p-16 text-center shadow-[0_28px_80px_rgba(7,7,17,0.4)]">
-              <span className="mb-4 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">Ready to find the leak?</span>
-              <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-5 text-white max-w-3xl mx-auto leading-tight">
+            <div className="max-w-2xl mx-auto text-center">
+              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
                 Ready to Find What Is Blocking Pipeline?
               </h2>
-              <p className="text-[#cec8dd] mb-4 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-muted-foreground mb-4 leading-relaxed">
                 Most B2B SaaS teams do not need more random marketing activity. They need to know which part of the system is actually broken.
               </p>
-              <p className="text-[#cec8dd]/75 mb-8 leading-relaxed max-w-2xl mx-auto">
+              <p className="text-muted-foreground mb-8 leading-relaxed">
                 In a 20-minute GTM audit, I will review your positioning, landing page, acquisition channel, and conversion path — then tell you what to fix first.
               </p>
               <Button variant="hero" size="lg" className="group" asChild>
@@ -719,7 +671,7 @@ export default function B2bSaasMarketingStrategy() {
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
-              <p className="text-xs text-white/45 mt-5">
+              <p className="text-xs text-muted-foreground/60 mt-4">
                 Also see:{" "}
                 <Link to="/saas-marketing-agency" className="hover:text-primary transition-colors">
                   SaaS GTM strategy

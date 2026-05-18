@@ -191,7 +191,7 @@ const ColdEmailForSaas = () => {
                     width={1200}
                     height={630}
                     decoding="async"
-                    fetchpriority="high"
+                    fetchPriority="high"
                     className="aspect-[1200/630] w-full rounded-[20px] object-cover"
                   />
                 </figure>
