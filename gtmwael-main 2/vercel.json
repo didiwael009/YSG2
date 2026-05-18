@@ -29,7 +29,7 @@
         }
       ],
       "destination": "https://www.yoursaasgrowth.com/$1",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/(.*)",
@@ -40,7 +40,7 @@
         }
       ],
       "destination": "https://www.yoursaasgrowth.com/$1",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/(.+)/",
