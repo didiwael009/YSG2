@@ -201,8 +201,8 @@ export default function MetaAdsForSaas() {
               </ul>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 If those conditions are not in place, Meta Ads will produce data on why they are not working — but not pipeline. Fix the foundation first, then scale the channel. For a direct comparison of when to use Meta versus Google, see{" "}
-                <Link to="/google-ads-vs-meta-ads-saas" className="text-primary hover:underline">
-                  Google Ads vs Meta Ads for SaaS
+                <Link to="/blog/saas-landing-page-google-meta-ads" className="text-primary hover:underline">
+                  Google Ads vs Meta Ads SaaS landing page strategy
                 </Link>.
               </p>
 
@@ -533,7 +533,7 @@ export default function MetaAdsForSaas() {
                   <h3 className="font-semibold text-foreground mb-2">Do Meta Ads work for B2B SaaS?</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Yes, but with conditions. Meta Ads work for B2B SaaS when the product solves a problem a specific audience recognises, the ACV justifies paid acquisition costs, the landing page and tracking are ready, and there is a lower-friction entry point beyond a cold demo request. Without these conditions, the channel produces data on why it is not working — not pipeline. For a full comparison, see{" "}
-                    <Link to="/google-ads-vs-meta-ads-saas" className="text-primary hover:underline">Google Ads vs Meta Ads for SaaS</Link>.
+                    <Link to="/blog/saas-landing-page-google-meta-ads" className="text-primary hover:underline">Google Ads vs Meta Ads SaaS landing page strategy</Link>.
                   </p>
                 </div>
 
@@ -548,8 +548,8 @@ export default function MetaAdsForSaas() {
                   <h3 className="font-semibold text-foreground mb-2">Should I use Meta Ads or Google Ads for SaaS?</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Google Ads capture active intent — people searching for a solution. Meta Ads create demand by reaching people before they search. For most early-stage SaaS products, Google Ads convert better at lower volume. Meta Ads scale better once creative, offer, and retargeting are working. The full breakdown is in the{" "}
-                    <Link to="/google-ads-vs-meta-ads-saas" className="text-primary hover:underline">Google Ads vs Meta Ads for SaaS</Link>
-                    {" "}comparison.
+                    <Link to="/blog/saas-landing-page-google-meta-ads" className="text-primary hover:underline">Google Ads vs Meta Ads SaaS landing page strategy</Link>
+                    {" "}article.
                   </p>
                 </div>
 

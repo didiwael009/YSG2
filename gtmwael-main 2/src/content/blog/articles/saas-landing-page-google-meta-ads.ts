@@ -48,7 +48,7 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
         label: "Core principle",
         headline: "Build trust before traffic. Traffic sent to a broken foundation is burned budget.",
         paragraphs: [
-          "A SaaS founder launches Google Ads and Meta Ads, then sends both campaigns to the same [SaaS landing page](/services/landing-page). On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
+          "A SaaS founder launches Google Ads and Meta Ads, then sends both campaigns to the same [SaaS landing page](/landing-page-for-saas). On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
         ],
       },
       {
@@ -266,7 +266,7 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
         type: "mid-cta",
         title: "Before you rebuild the full funnel, audit the page sequence.",
         body:
-          "Most leaks come from the wrong headline, proof order, CTA timing, or traffic-source mismatch.",
+          "Most leaks come from the wrong headline, proof order, CTA timing, or traffic-source mismatch. For [SaaS conversion rate optimisation](/conversion-rate-optimisation-specialist), fixing the post-click page is usually the highest-leverage step before increasing spend.",
         button: "Book audit",
       },
       {
@@ -277,7 +277,7 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
         paragraphs: [
           "The goal is not to choose Google Ads or Meta Ads. The goal is to design the post-click experience around intent.",
           "A good paid ads strategy does not end at the click. The click is only the handoff. Your landing page has to finish the job.",
-          "Before you increase ad spend, audit the page you are sending traffic to. If the message is unclear, more traffic will only make the leak more expensive.",
+          "Before you increase ad spend, audit the page you are sending traffic to. If the message is unclear, more traffic will only make the leak more expensive. If you are building the full acquisition system, the [SaaS marketing plan](/saas-marketing-plan) framework covers the right order.",
         ],
         subheading: "Before you scale paid ads, check the foundation.",
         checklist: [
@@ -335,17 +335,19 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
       button: "Book a 20-min Landing Page Audit",
     },
     internalLinks: [
-      { href: "/services/landing-page", label: "Landing page service" },
-      { href: "/services/meta-ads", label: "Meta ads service" },
+      { href: "/landing-page-for-saas", label: "SaaS landing page" },
+      { href: "/meta-ads-for-saas", label: "Meta Ads for SaaS" },
+      { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
+      { href: "/saas-marketing-plan", label: "SaaS marketing plan" },
       { href: "/case-study/shipzzer", label: "Shipzzer" },
       { href: "/case-study/zembra", label: "Zembra" },
     ],
     relatedPosts: [
       {
         label: "Landing pages",
-        title: "Landing page service",
+        title: "SaaS landing page",
         description: "Fix the page before scaling traffic.",
-        href: "/services/landing-page",
+        href: "/landing-page-for-saas",
       },
       {
         label: "Case study",
@@ -360,5 +362,5 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
         href: "/case-study/zembra",
       },
     ],
-    pillarPage: "/services/landing-page",
+    pillarPage: "/landing-page-for-saas",
   };

@@ -50,7 +50,7 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
         label: "Short answer",
         headline: "Landing page optimization best practices 2026: fix clarity, trust, friction, and proof before scaling traffic.",
         paragraphs: [
-          "For SaaS teams, landing page optimization best practices 2026 are simple: make the offer clear, match the visitor's intent, put proof near the CTA, reduce form friction, and make mobile fast. If the page leaks trust, a [SaaS landing page audit](/services/landing-page) usually beats buying more traffic.",
+          "For SaaS teams, landing page optimization best practices 2026 are simple: make the offer clear, match the visitor's intent, put proof near the CTA, reduce form friction, and make mobile fast. If the page leaks trust, a [SaaS landing page](/landing-page-for-saas) audit usually beats buying more traffic.",
         ],
       },
       {
@@ -134,7 +134,7 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
         paragraphs: [
           "The Your SaaS Growth lens is practical: do not optimize the page as a design artifact. Diagnose the page as a trust system. A SaaS landing page has to show the right buyer they are in the right place, make the promised outcome feel credible, and make the next step feel safe.",
           "Start with five questions: Is the offer clear? Is the visitor source matched? Is the proof close enough to the CTA? Is the form asking for too much too soon? Are you measuring qualified pipeline or only raw conversion rate?",
-          "This is why [SaaS CRO strategy](/services/landing-page) starts with message, proof, and conversion path before layout polish. The page is not selling everything in one visit. It is selling the next step.",
+          "This is why [SaaS conversion rate optimisation](/conversion-rate-optimisation-specialist) starts with message, proof, and conversion path before layout polish. The page is not selling everything in one visit. It is selling the next step.",
         ],
       },
       {
@@ -230,7 +230,7 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
         label: "SaaS pages",
         title: "Paid Search Landing Pages",
         paragraphs: [
-          "Paid search traffic is expensive because the intent is explicit. That makes message match non-negotiable. A keyword about SaaS onboarding software should not land on a generic productivity homepage.",
+          "Paid search traffic is expensive because the intent is explicit. That makes message match non-negotiable. A keyword about SaaS onboarding software should not land on a generic productivity homepage. If you are also running [Meta Ads for SaaS](/meta-ads-for-saas), note that paid social traffic needs a different page approach — demand creation rather than demand capture.",
         ],
         items: [
           {
@@ -414,17 +414,19 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
       button: "Book a 15-minute SaaS landing page review",
     },
     internalLinks: [
-      { href: "/", label: "Your SaaS Growth" },
-      { href: "/services/landing-page", label: "SaaS landing page audit" },
-      { href: "/blog/saas-traffic-but-no-signups", label: "Why your SaaS traffic is not converting" },
+      { href: "/landing-page-for-saas", label: "SaaS landing page" },
+      { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
+      { href: "/meta-ads-for-saas", label: "Meta Ads for SaaS" },
+      { href: "/saas-marketing-plan", label: "SaaS marketing plan" },
+      { href: "/blog/saas-traffic-but-no-signups", label: "SaaS traffic but no signups" },
       { href: "/book", label: "Book a 15-minute SaaS landing page review" },
     ],
     relatedPosts: [
       {
         label: "Service",
-        title: "SaaS landing page audit",
+        title: "SaaS landing page",
         description: "Fix positioning, proof, CTA hierarchy, and conversion leaks before scaling traffic.",
-        href: "/services/landing-page",
+        href: "/landing-page-for-saas",
       },
       {
         label: "Blog",
@@ -439,5 +441,5 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
         href: "/blog/saas-landing-page-google-meta-ads",
       },
     ],
-    pillarPage: "/services/landing-page",
+    pillarPage: "/landing-page-for-saas",
   };

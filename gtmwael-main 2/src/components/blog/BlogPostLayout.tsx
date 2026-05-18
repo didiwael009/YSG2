@@ -350,7 +350,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
           <div>
             <strong className="mb-2 block text-xl leading-tight">{block.title}</strong>
             <p className="mb-0 max-w-[520px] text-[15.5px] leading-[1.55] text-[#cfc9dc]">
-              {block.body}
+              {renderInlineText(block.body)}
             </p>
           </div>
           <Button variant="hero" size="sm" asChild>

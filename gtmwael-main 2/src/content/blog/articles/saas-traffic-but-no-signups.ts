@@ -53,7 +53,7 @@ export const saasTrafficButNoSignups: BlogPost = {
         label: "Conversion leak",
         headline: "Traffic is not a win if nobody signs up.",
         paragraphs: [
-          "A lot of SaaS founders look at the wrong problem first. They see visits going up, signups staying flat, and assume the answer is more SEO, more ads, more outbound, or more content. Often, the first fix is a sharper [SaaS landing page audit](/services/landing-page).",
+          "A lot of SaaS founders look at the wrong problem first. They see visits going up, signups staying flat, and assume the answer is more SEO, more ads, more outbound, or more content. Often, the first fix is a sharper [SaaS landing page](/landing-page-for-saas) audit. For a broader view of where to start, the [B2B SaaS marketing strategy](/b2b-saas-marketing-strategy) guide covers the right sequence.",
           "This is the classic SaaS traffic but no signups problem: demand is arriving, but the page is not turning attention into action.",
         ],
       },
@@ -391,7 +391,7 @@ export const saasTrafficButNoSignups: BlogPost = {
         paragraphs: [
           "You do not need a CRO audit the first week your website goes live.",
           "You need one when enough people are visiting the site for the pattern to matter, but the next step is still weak.",
-          "Get a SaaS CRO audit when organic traffic is growing but trials or demos stay flat, paid campaigns get clicks but landing pages do not convert, visitors reach pricing then disappear, people click the CTA but do not finish the form, sales keeps hearing “I did not understand what you do,” your homepage, product page, and pricing page all tell slightly different stories, or you are about to spend more on SEO or ads and want to fix the page first.",
+          "Get a [SaaS conversion rate optimisation](/conversion-rate-optimisation-specialist) audit when organic traffic is growing but trials or demos stay flat, paid campaigns get clicks but landing pages do not convert, visitors reach pricing then disappear, people click the CTA but do not finish the form, sales keeps hearing “I did not understand what you do,” your homepage, product page, and pricing page all tell slightly different stories, or you are about to spend more on SEO or ads and want to fix the page first.",
           "A useful audit should not hand you vague advice like “improve the user experience.” It should show the exact leak: the message that creates confusion, the proof that is missing, the CTA that asks too much, the form step that loses people, or the analytics gap that hides the real problem.",
         ],
       },
@@ -404,7 +404,7 @@ export const saasTrafficButNoSignups: BlogPost = {
           "Build trust before traffic. That is the point.",
           "SEO and paid ads work better when the page is clear, credible, and conversion-ready. More traffic helps only when visitors understand the offer, believe the claim, and know what to do next.",
           "If you have SaaS traffic but no signups, do not start by publishing more content or increasing ad spend.",
-          "Start by finding the trust and clarity gaps that stop visitors from taking action.",
+          "Start by finding the trust and clarity gaps that stop visitors from taking action. For a framework on the right order of fixes, see the [SaaS marketing plan](/saas-marketing-plan).",
         ],
         subheading: "Before investing in more traffic, fix the foundation:",
         checklist: [
@@ -459,16 +459,19 @@ export const saasTrafficButNoSignups: BlogPost = {
       button: "Book a 20-min SaaS CRO Audit",
     },
     internalLinks: [
-      { href: "/services/landing-page", label: "SaaS landing page audit" },
+      { href: "/landing-page-for-saas", label: "SaaS landing page" },
+      { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
+      { href: "/saas-marketing-plan", label: "SaaS marketing plan" },
+      { href: "/b2b-saas-marketing-strategy", label: "B2B SaaS marketing strategy" },
       { href: "/blog/saas-landing-page-google-meta-ads", label: "Google Ads vs Meta Ads landing pages" },
       { href: "/case-studies", label: "SaaS growth case studies" },
     ],
     relatedPosts: [
       {
         label: "Service",
-        title: "SaaS landing page audit",
+        title: "SaaS landing page",
         description: "Fix clarity, proof, CTA hierarchy, and conversion leaks before scaling traffic.",
-        href: "/services/landing-page",
+        href: "/landing-page-for-saas",
       },
       {
         label: "Blog",
@@ -483,5 +486,5 @@ export const saasTrafficButNoSignups: BlogPost = {
         href: "/case-studies",
       },
     ],
-    pillarPage: "/services/landing-page",
+    pillarPage: "/landing-page-for-saas",
   };

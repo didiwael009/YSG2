@@ -15,7 +15,7 @@ const faqItems = [
   {
     question: "Should I fix the landing page before running ads?",
     answer:
-      "Yes, in almost every case. Paid traffic amplifies what is already on the page. If the page has weak messaging, vague proof, or friction in the demo flow, more ad spend makes those problems more expensive — not less visible. Fix the page first, then scale the channel.",
+      "Yes, in almost every case. Paid traffic amplifies what is already on the page. If the page has weak messaging, vague proof, or friction in the demo flow, more ad spend makes those problems more expensive — not less visible. Fix the page first, then scale the channel. For a detailed comparison of how Google Ads and Meta Ads need different landing page approaches, see the Google Ads vs Meta Ads SaaS landing page article.",
   },
   {
     question: "How long should a SaaS landing page be?",
@@ -301,10 +301,15 @@ const LandingPageForSaas = () => {
               <p className="text-[#cec8dd] text-lg leading-relaxed mb-5">
                 This is for B2B SaaS founders whose landing page is not doing its job — whether you are running paid ads, outbound, or organic traffic to it.
               </p>
-              <p className="text-[#cec8dd] leading-relaxed">
+              <p className="text-[#cec8dd] leading-relaxed mb-4">
                 You do not need a redesign first. You need a diagnosis. That is what I fix. If you are working on a broader{" "}
                 <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS GTM strategy</Link>,
                 {" "}fixing the landing page first makes every other channel more effective.
+              </p>
+              <p className="text-[#cec8dd] leading-relaxed">
+                If you are getting traffic but not demos, the{" "}
+                <Link to="/blog/saas-traffic-but-no-signups" className="text-primary hover:underline">SaaS traffic but no signups guide</Link>{" "}
+                explains the most common causes before you book an audit.
               </p>
             </AnimateIn>
 
@@ -497,7 +502,16 @@ const LandingPageForSaas = () => {
                     <h3 className="text-base font-black text-[#171421]">{item.question}</h3>
                     <Zap className="w-4 h-4 text-primary flex-shrink-0 opacity-60" />
                   </summary>
-                  <p className="mt-3 text-[#5d5668] leading-relaxed text-[15.5px]">{item.answer}</p>
+                  <p className="mt-3 text-[#5d5668] leading-relaxed text-[15.5px]">
+                    {item.question === "Should I fix the landing page before running ads?" ? (
+                      <>
+                        Yes, in almost every case. Paid traffic amplifies what is already on the page. If the page has weak messaging, vague proof, or friction in the demo flow, more ad spend makes those problems more expensive — not less visible. Fix the page first, then scale the channel. For a detailed comparison of how Google Ads and Meta Ads need different landing page approaches, see the{" "}
+                        <Link to="/blog/saas-landing-page-google-meta-ads" className="text-primary hover:underline">Google Ads vs Meta Ads SaaS landing page article</Link>.
+                      </>
+                    ) : (
+                      item.answer
+                    )}
+                  </p>
                 </details>
               </AnimateIn>
             ))}

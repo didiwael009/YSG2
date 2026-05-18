@@ -30,7 +30,7 @@ const faqItems = [
   {
     question: "Do you help with landing page copy as well as strategy?",
     answer:
-      "Yes. The audit includes rewriting where needed. Strategy without execution is not useful at this stage. See the full SaaS landing page service for more detail on what that looks like in practice.",
+      "Yes. The audit includes rewriting where needed. Strategy without execution is not useful at this stage. See the full SaaS landing page service for more detail on what that looks like in practice. If you want to understand the AI layer, see the AI conversion rate optimization for SaaS guide before buying tools.",
   },
   {
     question: "Can you improve conversion without a full redesign?",
@@ -317,7 +317,9 @@ const ConversionRateOptimisationSpecialist = () => {
               What I Audit
             </h2>
             <p className="text-[#4d4658] leading-relaxed">
-              I review the full conversion path — not just the landing page in isolation.
+              I review the full conversion path — not just the landing page in isolation. For a diagnosis of why SaaS traffic is not converting, the{" "}
+              <Link to="/blog/saas-traffic-but-no-signups" className="text-primary hover:underline">SaaS traffic but no signups guide</Link>{" "}
+              covers the most common causes.
             </p>
           </AnimateIn>
 
@@ -487,7 +489,17 @@ const ConversionRateOptimisationSpecialist = () => {
                     <h3 className="text-base font-black text-[#171421]">{item.question}</h3>
                     <Zap className="w-4 h-4 text-primary flex-shrink-0 opacity-60" />
                   </summary>
-                  <p className="mt-3 text-[#5d5668] leading-relaxed text-[15.5px]">{item.answer}</p>
+                  <p className="mt-3 text-[#5d5668] leading-relaxed text-[15.5px]">
+                    {item.question === "Do you help with landing page copy as well as strategy?" ? (
+                      <>
+                        Yes. The audit includes rewriting where needed. Strategy without execution is not useful at this stage. See the full SaaS landing page service for more detail on what that looks like in practice. If you want to understand the AI layer, see the{" "}
+                        <Link to="/blog/ai-conversion-rate-optimization-saas" className="text-primary hover:underline">AI conversion rate optimization for SaaS guide</Link>{" "}
+                        before buying tools.
+                      </>
+                    ) : (
+                      item.answer
+                    )}
+                  </p>
                 </details>
               </AnimateIn>
             ))}

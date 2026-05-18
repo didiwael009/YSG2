@@ -52,7 +52,7 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
         headline:
           "AI Conversion Rate Optimization amplifies what already works. It does not rescue a funnel that is unclear, untrusted, or hard to use.",
         paragraphs: [
-          "Most SaaS teams trying to improve conversion rates with AI make the same mistake: they add AI tools before their funnel is ready for them. If the landing page is unclear, start with the [landing page conversion service](/services/landing-page) before adding another AI layer; if lead follow-up is the leak, the [cold email engine](/services/cold-email) should be fixed before automation.",
+          "Most SaaS teams trying to improve conversion rates with AI make the same mistake: they add AI tools before their funnel is ready for them. If the landing page is unclear, start with [SaaS landing page](/landing-page-for-saas) work before adding another AI layer; if lead follow-up is the leak, [cold email for SaaS](/cold-email-for-saas) should be fixed before automation.",
         ],
       },
       {
@@ -165,7 +165,7 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
         type: "inline-cta",
         title: "Before adding an AI layer, check the page it sits on.",
         body:
-          "If your landing page is unclear, fix the offer, proof, and CTA hierarchy first. Our [landing page conversion service](/services/landing-page) is built around that sequence.",
+          "If your landing page is unclear, fix the offer, proof, and CTA hierarchy first. The [SaaS landing page](/landing-page-for-saas) service is built around that sequence. For the full picture, [SaaS conversion rate optimisation](/conversion-rate-optimisation-specialist) covers the end-to-end conversion path.",
         button: "Book audit",
       },
       {
@@ -328,7 +328,7 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
         paragraphs: [
           "Most SaaS teams do not have an AI problem. They have a fundamentals problem that AI makes more visible.",
           "Fix the positioning, proof, CTA hierarchy, conversion path, and value delivery first. Add AI second.",
-          "That is the sequence that produces durable conversion improvement, not temporary lift followed by disappointment when the tool does not perform as sold.",
+          "That is the sequence that produces durable conversion improvement, not temporary lift followed by disappointment when the tool does not perform as sold. The right sequence is covered in the [B2B SaaS marketing strategy](/b2b-saas-marketing-strategy) guide.",
         ],
         subheading: "Before you add another AI tool, fix these first:",
         checklist: [
@@ -380,8 +380,10 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
       button: "Book a 20-min GTM Audit",
     },
     internalLinks: [
-      { href: "/services/landing-page", label: "Landing page conversion service" },
-      { href: "/services/cold-email", label: "Cold email engine" },
+      { href: "/landing-page-for-saas", label: "SaaS landing page" },
+      { href: "/cold-email-for-saas", label: "Cold email for SaaS" },
+      { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
+      { href: "/b2b-saas-marketing-strategy", label: "B2B SaaS marketing strategy" },
       { href: "/case-studies", label: "SaaS growth case studies" },
       { href: "/case-study/growapp", label: "Growapp Meta ads case study" },
       { href: "/blog/saas-landing-page-google-meta-ads", label: "Google Ads vs Meta Ads landing pages" },
@@ -389,9 +391,9 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
     relatedPosts: [
       {
         label: "Service",
-        title: "Landing page conversion service",
+        title: "SaaS landing page",
         description: "Fix positioning, proof, CTA hierarchy, and conversion leaks before scaling traffic.",
-        href: "/services/landing-page",
+        href: "/landing-page-for-saas",
       },
       {
         label: "Blog",
@@ -406,5 +408,5 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
         href: "/blog/saas-landing-page-google-meta-ads",
       },
     ],
-    pillarPage: "/services/landing-page",
+    pillarPage: "/landing-page-for-saas",
   };
