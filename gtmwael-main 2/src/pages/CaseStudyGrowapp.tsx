@@ -70,7 +70,7 @@ const CaseStudyGrowapp = () => {
       {/* The Win */}
       <section className="py-16 px-4 bg-card/50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">The Win</h2>
+          <h2 className="text-3xl font-bold mb-8">GrowApp Campaign Results</h2>
           
           <div className="space-y-6">
             <div className="flex items-start gap-4">
@@ -109,7 +109,7 @@ const CaseStudyGrowapp = () => {
       {/* The Proof */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-center">The Proof</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">GrowApp Meta Ads Proof</h2>
           <p className="text-muted-foreground mb-8 text-center">Real Meta Ads Manager dashboard showing Growapp campaign performance</p>
           
           <div className="bg-card/80 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl shadow-black/50 overflow-hidden mb-12">
@@ -188,7 +188,7 @@ const CaseStudyGrowapp = () => {
       {/* What I Did */}
       <section className="py-16 px-4 bg-card/50">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12">What I Did</h2>
+          <h2 className="text-3xl font-bold mb-12">What I Built for GrowApp</h2>
           
           {/* Step 1 */}
           <div className="mb-12">
@@ -263,7 +263,7 @@ const CaseStudyGrowapp = () => {
       {/* What This Unlocked */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">What This Unlocked</h2>
+          <h2 className="text-3xl font-bold mb-8">What GrowApp Unlocked</h2>
           
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-card border border-border rounded-xl p-6">

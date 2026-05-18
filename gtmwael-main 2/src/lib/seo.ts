@@ -303,7 +303,7 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/meta-ads-for-saas",
-    title: "Meta Ads for SaaS: Creative, Funnel, and Conversion",
+    title: "Meta Ads for SaaS | B2B Lead Generation | YSG",
     socialTitle: "Meta Ads for SaaS: Creative, Funnel, and Conversion",
     description: "I help B2B SaaS founders run Meta Ads that convert — with the right offer angle, creative, landing page, tracking, and retargeting path.",
     type: "service",
@@ -357,7 +357,7 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/saas-marketing-plan",
-    title: "SaaS Marketing Plan: A Practical Framework for Founders",
+    title: "SaaS Marketing Plan for B2B Founders | Framework | YSG",
     socialTitle: "SaaS Marketing Plan: A Practical Framework for Founders",
     description: "Most SaaS marketing plans start with channels. This framework starts with positioning, conversion, and trust — then adds traffic.",
     type: "article",
@@ -634,7 +634,7 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/case-study/growapp",
-    title: "Growapp Meta Ads Case Study",
+    title: "GrowApp Meta Ads Case Study: £30K+ MRR SaaS | YSG",
     description: "A SaaS Meta ads case study covering trial offer positioning, tracking, campaign structure, and lower cost per lead.",
     type: "case-study",
     priority: 0.6,

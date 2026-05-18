@@ -7,7 +7,7 @@ export const saasTrafficButNoSignups: BlogPost = {
     breadcrumbTitle: "SaaS Traffic But No Signups",
     title: "SaaS Traffic But No Signups? Here Is Why and How to Fix It",
     h1: "SaaS Traffic But No Signups? Here Is Why and How to Fix It",
-    metaTitle: "SaaS Traffic But No Signups? Here Is Why and How to Fix It",
+    metaTitle: "SaaS Gets Traffic but No Signups? Causes and Fixes",
     description:
       "Traffic is not the problem. If your SaaS gets visitors but no signups, it is clarity, trust, CTA friction, or conversion path. Here is how to fix it.",
     searchIntent:

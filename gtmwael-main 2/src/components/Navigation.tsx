@@ -18,24 +18,24 @@ const services = [
     isPage: true,
   },
   {
-    title: "Cold Emailing",
+    title: "Cold Email for SaaS",
     description: "Outbound that opens qualified conversations without spam or poor-quality lists.",
     icon: Mail,
-    href: "/services/cold-email",
+    href: "/cold-email-for-saas",
     isPage: true,
   },
   {
-    title: "Meta Ads (FB/IG)",
+    title: "Meta Ads for SaaS",
     description: "Creatives and targeting oriented toward rapid testing to achieve a viable CPA before discarding the channel.",
     icon: Target,
-    href: "/services/meta-ads",
+    href: "/meta-ads-for-saas",
     isPage: true,
   },
   {
-    title: "Landing Page – Conversion",
+    title: "SaaS Landing Page Strategy",
     description: "Message, structure and proof: achieve clarity before thinking about design.",
     icon: FileText,
-    href: "/services/landing-page",
+    href: "/landing-page-for-saas",
     isPage: true,
   },
   {
@@ -164,7 +164,7 @@ const Navigation = () => {
             <Link
               to="/"
               className="px-3 py-1.5 text-muted-foreground hover:text-primary transition-colors"
-              title="Back to Home"
+              aria-label="Home"
             >
               <Home className="w-4 h-4" />
             </Link>

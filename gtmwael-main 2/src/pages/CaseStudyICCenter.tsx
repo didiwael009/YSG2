@@ -61,7 +61,7 @@ const CaseStudyICCenter = () => {
       {/* The Win */}
       <section className="py-16 px-4 bg-card/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">The Win</h2>
+          <h2 className="text-3xl font-bold mb-6">How IC Center Converted</h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
             IC Center needed a landing page that would convert cold traffic into booked consultations. I built the full page from scratch — strategy-first messaging, scroll-optimized layout, and conversion-focused design — creating a funnel that moves visitors from problem-aware to action-ready in one scroll.
           </p>
@@ -71,7 +71,7 @@ const CaseStudyICCenter = () => {
       {/* The Proof */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-center">The Proof</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">IC Center Landing Page Proof</h2>
           <p className="text-muted-foreground mb-8 text-center">Landing page designed and built for IC Center</p>
 
           <div className="space-y-8">
@@ -111,7 +111,7 @@ const CaseStudyICCenter = () => {
       {/* What I Did */}
       <section className="py-16 px-4 bg-card/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">What I Did</h2>
+          <h2 className="text-3xl font-bold mb-8">What I Built for IC Center</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { icon: Layout, title: "Landing Page Build", desc: "Designed and developed a full conversion-focused landing page from scratch — structure, copy hierarchy, and visual flow." },
@@ -132,7 +132,7 @@ const CaseStudyICCenter = () => {
       {/* What This Unlocked */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">What This Unlocked</h2>
+          <h2 className="text-3xl font-bold mb-8">What IC Center Gained</h2>
           <div className="space-y-4">
             {[
               "Conversion-optimized landing page turning cold traffic into leads",

@@ -313,7 +313,7 @@ const CaseStudyWriteYourBook = () => {
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/30 rounded-2xl p-8">
-            <h2 className="text-xl font-bold mb-4">One-Sentence Version</h2>
+            <h2 className="text-xl font-bold mb-4">Write Your Book Campaign in One Sentence</h2>
             <p className="text-lg">
               I make scroll-stopping video ads and set up clean tracking so you know what's working—in one "Write Your Book" funnel, I delivered <span className="text-primary font-semibold">317 landing-page views at £0.22 each</span> with a <span className="text-primary font-semibold">2.86% CTR</span> and <span className="text-primary font-semibold">£0.19 cost per link click</span>.
             </p>
@@ -361,7 +361,7 @@ const CaseStudyWriteYourBook = () => {
       <section className="py-16 px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold mb-4">Client's review</h2>
+            <h2 className="text-2xl font-bold mb-4">Write Your Book Client Review</h2>
             <div className="flex items-center justify-center gap-1 mb-2">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="w-6 h-6 fill-orange-400 text-orange-400" />

@@ -629,7 +629,7 @@ export default function B2bSaasMarketingStrategy() {
         <div className="container px-4">
           <AnimateIn>
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-8 text-[#11101a]">FAQ</h2>
+              <h2 className="font-display text-2xl md:text-3xl font-bold mb-8 text-[#11101a]">B2B SaaS Strategy FAQ</h2>
               <div className="space-y-6">
                 {faqItems.map((item) => (
                   <div key={item.question} className="border-b border-[#11111f]/10 pb-6 last:border-0 last:pb-0">

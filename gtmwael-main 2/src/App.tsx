@@ -27,18 +27,18 @@ import SaasColdEmailStrategy from "./pages/SaasColdEmailStrategy";
 import LandingPageForLeadGeneration from "./pages/LandingPageForLeadGeneration";
 import LinkedinOutreachForSaas from "./pages/LinkedinOutreachForSaas";
 
-// SEO-critical case studies and pricing — direct imports so renderToString can prerender them
+// SEO-critical pages — direct imports so renderToString can prerender them
 import CaseStudyWriteYourBook from "./pages/CaseStudyWriteYourBook";
 import CaseStudyGrowapp from "./pages/CaseStudyGrowapp";
 import CaseStudyScreenplay from "./pages/CaseStudyScreenplay";
 import CaseStudyBottlenexus from "./pages/CaseStudyBottlenexus";
 import CaseStudyICCenter from "./pages/CaseStudyICCenter";
 import Pricing from "./pages/Pricing";
+import Creative from "./pages/Creative";
+import Resume from "./pages/Resume";
 
 // Lazy load non-critical / non-prerendered pages only
-const Creative = lazy(() => import("./pages/Creative"));
 const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
-const Resume = lazy(() => import("./pages/Resume"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const RouteFallback = () => <div className="min-h-screen bg-background" />;
 const lazyRoute = (element: ReactNode) => (
@@ -48,7 +48,7 @@ const lazyRoute = (element: ReactNode) => (
 export const AppRoutes = () => (
     <Routes>
       <Route path="/" element={<Index />} />
-      <Route path="/creative" element={lazyRoute(<Creative />)} />
+      <Route path="/creative" element={<Creative />} />
       <Route path="/services/cold-email" element={<ColdEmail />} />
       <Route path="/services/meta-ads" element={<MetaAds />} />
       <Route path="/case-studies" element={<CaseStudies />} />
@@ -70,7 +70,7 @@ export const AppRoutes = () => (
       <Route path="/blog" element={<Blog />} />
       <Route path="/blog/:slug" element={<BlogArticle />} />
       <Route path="/pricing" element={<Pricing />} />
-      <Route path="/resume" element={lazyRoute(<Resume />)} />
+      <Route path="/resume" element={<Resume />} />
       <Route path="/book" element={<Book />} />
       <Route path="/saas-marketing-plan" element={<SaasMarketingPlan />} />
       <Route path="/optimize-saas-landing-page" element={<OptimizeSaasLandingPage />} />

@@ -398,7 +398,7 @@ const ConversionRateOptimisationSpecialist = () => {
               Real Work
             </span>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-[#11101a] leading-[1.02] mb-4">
-              Proof and Experience
+              CRO Results and Client Proof
             </h2>
             <p className="text-[#4d4658] max-w-xl mx-auto leading-relaxed">
               I have audited and rebuilt conversion paths across multiple B2B SaaS products as both an operator and a consultant.
@@ -444,7 +444,7 @@ const ConversionRateOptimisationSpecialist = () => {
                 Honest Filter
               </span>
               <h2 className="font-display font-bold text-2xl md:text-3xl text-white mb-5">
-                Who This Is Not For
+                Who the CRO Service Is Not Right For
               </h2>
               <ul className="space-y-3">
                 {[
@@ -474,7 +474,7 @@ const ConversionRateOptimisationSpecialist = () => {
           <AnimateIn delay={100} className="mb-10">
             <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">FAQ</span>
             <h2 className="font-display font-bold text-3xl md:text-[46px] text-[#11101a] leading-[1.02]">
-              Frequently Asked Questions
+              SaaS CRO FAQ
             </h2>
           </AnimateIn>
 

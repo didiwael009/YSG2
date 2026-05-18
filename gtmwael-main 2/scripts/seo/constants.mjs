@@ -17,6 +17,8 @@ export const prerenderRoutePaths = [
   "/blog",
   "/case-studies",
   "/case-study/shipzzer",
+  "/creative",
+  "/resume",
   "/case-study/screenplay",
   "/case-study/bottlenexus",
   "/case-study/growapp",

@@ -287,7 +287,7 @@ const SaasMarketingAgency = () => {
                 Best Fit
               </span>
               <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-white leading-[1.02] mb-5">
-                Who This Is For
+                Is This GTM Service Right for You?
               </h2>
               <p className="text-[#cec8dd] text-lg leading-relaxed mb-5">
                 This is for B2B SaaS founders and small teams who already have something real but cannot turn attention into consistent pipeline.
@@ -404,7 +404,7 @@ const SaasMarketingAgency = () => {
               Real Work
             </span>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-[#11101a] leading-[1.02] mb-4">
-              Proof and Experience
+              GTM Results and Client Proof
             </h2>
             <p className="text-[#4d4658] max-w-xl mx-auto leading-relaxed">
               I have built and scaled SaaS products myself. I bring operator context. Not just B2B SaaS marketing agency theory.
@@ -558,7 +558,7 @@ const SaasMarketingAgency = () => {
           <AnimateIn delay={100} className="mb-10">
             <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">FAQ</span>
             <h2 className="font-display font-bold text-3xl md:text-[46px] text-[#11101a] leading-[1.02]">
-              Frequently Asked Questions
+              SaaS Marketing Agency FAQ
             </h2>
           </AnimateIn>
 

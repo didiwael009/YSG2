@@ -61,7 +61,7 @@ const CaseStudyBottlenexus = () => {
       {/* The Win */}
       <section className="py-16 px-4 bg-card/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">The Win</h2>
+          <h2 className="text-3xl font-bold mb-6">How BottleNexus Won</h2>
           <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl">
             BottleNexus was launching a wine marketplace connecting producers with buyers. They needed everything — brand positioning, a conversion-focused landing page, and a go-to-market strategy to acquire their first users. I built the full system from scratch, giving them a launch-ready platform with clear messaging and acquisition funnels.
           </p>
@@ -71,7 +71,7 @@ const CaseStudyBottlenexus = () => {
       {/* The Proof */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-4 text-center">The Proof</h2>
+          <h2 className="text-3xl font-bold mb-4 text-center">BottleNexus Project Proof</h2>
           <p className="text-muted-foreground mb-8 text-center">Landing page designed and built for BottleNexus</p>
 
           <div className="bg-card/80 backdrop-blur-xl rounded-2xl border border-border/50 shadow-2xl shadow-black/50 overflow-hidden">
@@ -93,7 +93,7 @@ const CaseStudyBottlenexus = () => {
       {/* What I Did */}
       <section className="py-16 px-4 bg-card/30">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">What I Did</h2>
+          <h2 className="text-3xl font-bold mb-8">What I Built for BottleNexus</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
               { icon: Globe, title: "Visual Identity & Brand System", desc: "Created the full brand identity — logo, color system, typography, and brand guidelines — from scratch for the wine marketplace." },
@@ -114,7 +114,7 @@ const CaseStudyBottlenexus = () => {
       {/* What This Unlocked */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">What This Unlocked</h2>
+          <h2 className="text-3xl font-bold mb-8">What This Unlocked for BottleNexus</h2>
           <div className="space-y-4">
             {[
               "Launch-ready platform with professional brand identity",

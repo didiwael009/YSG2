@@ -6,7 +6,7 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
     category: "SaaS Landing Pages",
     title: "SaaS Landing Page Optimization Best Practices 2026",
     h1: "SaaS Landing Page Optimization Best Practices 2026",
-    metaTitle: "SaaS Landing Page Optimization Best Practices 2026",
+    metaTitle: "SaaS Landing Page Best Practices 2026: Optimization Guide",
     description:
       "SaaS landing page optimization in 2026 is not about button colors. Fix clarity, trust, proof, friction, and CTA hierarchy before scaling traffic.",
     searchIntent:

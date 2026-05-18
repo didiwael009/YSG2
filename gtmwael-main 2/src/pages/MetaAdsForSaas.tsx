@@ -399,7 +399,7 @@ export default function MetaAdsForSaas() {
         <div className="container px-4">
           <AnimateIn>
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">Proof and Experience</h2>
+              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4">Meta Ads Results and Proof</h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
                 11 active accounts. Results across campaigns include a 38% lift in conversion rate and a 26% reduction in CPA. These are not averages — they are outcomes from fixing tracking, targeting, and creative as a connected system before scaling spend.
               </p>
@@ -499,7 +499,7 @@ export default function MetaAdsForSaas() {
         <div className="container px-4">
           <AnimateIn>
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-6">Who This Is Not For</h2>
+              <h2 className="font-display text-2xl md:text-3xl font-bold mb-6">Who Meta Ads Is Not Right For</h2>
               <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
                 <p>
                   Do not hire me if you want someone to "just run ads" while leaving the landing page, offer, and tracking untouched. That approach produces spend without insight.
@@ -526,7 +526,7 @@ export default function MetaAdsForSaas() {
         <div className="container px-4">
           <AnimateIn>
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-10">FAQ</h2>
+              <h2 className="font-display text-2xl md:text-3xl font-bold mb-10">Meta Ads FAQ</h2>
               <div className="space-y-6">
 
                 <div className="border-b border-border pb-6">

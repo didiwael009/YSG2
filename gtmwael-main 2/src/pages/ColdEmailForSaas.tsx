@@ -248,7 +248,7 @@ const ColdEmailForSaas = () => {
                 Best Fit
               </span>
               <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-white leading-[1.02] mb-5">
-                Who This Is For
+                Is Cold Email Right for You?
               </h2>
               <p className="text-[#cec8dd] text-lg leading-relaxed mb-5">
                 This is for B2B SaaS founders and small teams who need outbound to support pipeline — not just activity metrics.
@@ -387,7 +387,7 @@ const ColdEmailForSaas = () => {
               Real Work
             </span>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-[#11101a] leading-[1.02] mb-4">
-              Proof and Experience
+              Cold Email Results and Proof
             </h2>
             <p className="text-[#4d4658] max-w-xl mx-auto leading-relaxed">
               I have run cold email as a founder and as a consultant — which means efficiency and precision matter more than volume.
@@ -433,7 +433,7 @@ const ColdEmailForSaas = () => {
                 Honest Filter
               </span>
               <h2 className="font-display font-bold text-2xl md:text-3xl text-white mb-5">
-                Who This Is Not For
+                Who Cold Email Is Not Right For
               </h2>
               <ul className="space-y-3">
                 {[
@@ -464,7 +464,7 @@ const ColdEmailForSaas = () => {
           <AnimateIn delay={100} className="mb-10">
             <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">FAQ</span>
             <h2 className="font-display font-bold text-3xl md:text-[46px] text-[#11101a] leading-[1.02]">
-              Frequently Asked Questions
+              Cold Email FAQ
             </h2>
           </AnimateIn>
 

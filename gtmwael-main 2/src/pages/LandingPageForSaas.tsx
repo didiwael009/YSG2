@@ -411,7 +411,7 @@ const LandingPageForSaas = () => {
               Real Work
             </span>
             <h2 className="font-display font-bold text-3xl md:text-4xl lg:text-[46px] text-[#11101a] leading-[1.02] mb-4">
-              Proof and Experience
+              Landing Page Results and Proof
             </h2>
             <p className="text-[#4d4658] max-w-xl mx-auto leading-relaxed">
               I have restructured landing pages across multiple B2B SaaS products, both as a consultant and as a founder who needed his own pages to convert.
@@ -457,7 +457,7 @@ const LandingPageForSaas = () => {
                 Honest Filter
               </span>
               <h2 className="font-display font-bold text-2xl md:text-3xl text-white mb-5">
-                Who This Is Not For
+                Who This Landing Page Service Is Not For
               </h2>
               <ul className="space-y-3">
                 {[
@@ -487,7 +487,7 @@ const LandingPageForSaas = () => {
           <AnimateIn delay={100} className="mb-10">
             <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">FAQ</span>
             <h2 className="font-display font-bold text-3xl md:text-[46px] text-[#11101a] leading-[1.02]">
-              Frequently Asked Questions
+              SaaS Landing Page FAQ
             </h2>
           </AnimateIn>
 
