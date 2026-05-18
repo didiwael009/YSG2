@@ -17,7 +17,7 @@ export const saasProductVideo: BlogPost = {
   author: "Wael Aouididi",
   authorBio:
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
-  datePublished: "2025-07-01",
+  datePublished: "2026-05-18",
   dateModified: "2026-05-18",
   readTime: "12 min read",
   ogImage: "/saas-product-video-html-demo-obs-workflow.webp",
