@@ -1,692 +1,431 @@
-import { ArrowRight, CheckCircle2 } from "lucide-react";
-import { Link } from "react-router-dom";
-import AnimateIn from "@/components/AnimateIn";
-import Footer from "@/components/Footer";
-import Navigation from "@/components/Navigation";
-import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import BlogPostLayout from "@/components/blog/BlogPostLayout";
+import type { BlogPost } from "@/content/blog/types";
 
-const faqItems = [
-  {
-    question: "What is a B2B SaaS marketing strategy?",
-    answer:
-      "A B2B SaaS marketing strategy is the set of decisions that connects ICP, positioning, buyer journey, channel selection, conversion path, and pipeline measurement into a system that turns the right attention into qualified pipeline. It is not a channel plan — it is the thinking that makes channel execution worth doing.",
+const b2bSaasMarketingStrategyPost: BlogPost = {
+  slug: "b2b-saas-marketing-strategy",
+  path: "/b2b-saas-marketing-strategy",
+  category: "B2B SaaS Growth",
+  breadcrumbTitle: "B2B SaaS Marketing Strategy",
+  title: "B2B SaaS Marketing Strategy: What to Fix Before Scaling Traffic",
+  h1: "B2B SaaS Marketing Strategy: What to Fix Before Scaling Traffic",
+  metaTitle: "B2B SaaS Marketing Strategy: What to Fix Before Scaling Traffic",
+  description:
+    "Most B2B SaaS teams do not fail because they picked the wrong channel. Fix ICP, positioning, buyer journey, and conversion before scaling traffic.",
+  searchIntent: "Founder wants a practical B2B SaaS marketing strategy before scaling channels.",
+  excerpt:
+    "Most B2B SaaS teams do not fail because they picked the wrong channel. They fail because they scale before ICP, positioning, buyer journey, conversion path, and measurement are clear.",
+  author: "Wael Aouididi",
+  authorBio:
+    "Wael Aouididi helps B2B SaaS founders fix positioning, landing pages, conversion paths, paid acquisition, cold email, and analytics before scaling traffic.",
+  datePublished: "2026-05-17",
+  dateModified: "2026-05-17",
+  readTime: "16 min read",
+  ogImage: "/b2b-saas-marketing-strategy-framework-wael-aouididi.webp",
+  featuredImage: "/b2b-saas-marketing-strategy-framework-wael-aouididi.webp",
+  featuredImageAlt: "B2B SaaS marketing strategy framework by Wael Aouididi",
+  primaryKeyword: "b2b saas marketing strategy",
+  secondaryKeywords: [
+    "saas marketing strategy",
+    "saas growth strategy",
+    "b2b saas marketing plan",
+    "saas marketing funnel",
+    "b2b saas growth strategy",
+  ],
+  toc: [
+    { label: "Opening idea", id: "opening-idea" },
+    { label: "What strategy is", id: "what-it-is" },
+    { label: "Why strategies fail", id: "why-strategies-fail" },
+    { label: "ICP", id: "icp" },
+    { label: "Positioning", id: "positioning" },
+    { label: "Buyer journey", id: "buyer-journey" },
+    { label: "Channel fit", id: "channel-fit" },
+    { label: "Conversion path", id: "conversion-path" },
+    { label: "Mistakes", id: "mistakes" },
+    { label: "FAQ", id: "faq" },
+  ],
+  blocks: [
+    {
+      type: "intro",
+      id: "opening-idea",
+      label: "Core principle",
+      headline: "Build trust before traffic. A B2B SaaS marketing strategy starts before channel selection.",
+      paragraphs: [
+        "The strategy should answer what needs to be true before any channel can produce qualified pipeline: who the buyer is, why they should care, what they need to trust, and what happens after they click.",
+      ],
+    },
+    {
+      type: "paragraphs",
+      lead: true,
+      dropcap: true,
+      paragraphs: [
+        "Most B2B SaaS teams do not fail because they picked the wrong channel. They fail because they scale before the strategy is clear.",
+        "They run ads before the positioning is sharp. They publish content before knowing what buyers actually search for. They send cold emails before the ICP is tight. They redesign the website before understanding why visitors do not convert.",
+        "A B2B SaaS marketing strategy should not start with 'which channel should we use?' It should start with: what needs to be true before any channel can produce pipeline?",
+      ],
+    },
+    {
+      type: "quote",
+      text: "Traffic does not create trust. It tests whether your positioning, page, proof, offer, and follow-up are strong enough to turn attention into pipeline.",
+    },
+    {
+      type: "numbered-list",
+      id: "what-it-is",
+      label: "Definition",
+      title: "What a B2B SaaS Marketing Strategy Actually Is",
+      paragraphs: [
+        "A B2B SaaS marketing strategy is not a content calendar, channel list, or quarterly activity plan. It is the set of decisions that connects the right buyer to the right message through the right channel and converts that attention into qualified pipeline.",
+      ],
+      items: [
+        {
+          title: "ICP",
+          body: "Who the best-fit buyer is, what changed recently, and why the problem is urgent now.",
+        },
+        {
+          title: "Positioning",
+          body: "Why this product over every alternative the buyer already understands.",
+        },
+        {
+          title: "Buyer journey",
+          body: "Where the buyer is in awareness and what proof or education they need next.",
+        },
+        {
+          title: "Channel fit",
+          body: "Which channel reaches this buyer at the right intent level.",
+        },
+        {
+          title: "Conversion path",
+          body: "What happens after the click, reply, visit, or referral.",
+        },
+        {
+          title: "Pipeline measurement",
+          body: "Which activities create qualified demos, trials, opportunities, and revenue.",
+        },
+      ],
+    },
+    {
+      type: "dark-checklist",
+      id: "why-strategies-fail",
+      label: "Failure points",
+      title: "Why Most B2B SaaS Marketing Strategies Fail",
+      paragraphs: [
+        "Most failures are quiet. Activity looks healthy: emails are sent, content is published, ads are running. But pipeline stays flat or random.",
+        "These are strategy failures, not tactic failures.",
+      ],
+      items: [
+        {
+          title: "ICP is too broad",
+          body: "'B2B companies' is not an ICP. When the ICP is vague, every downstream decision becomes vague too.",
+        },
+        {
+          title: "Positioning is generic",
+          body: "The website explains what the product does, but not why a specific buyer should choose it over alternatives.",
+        },
+        {
+          title: "Website built around features",
+          body: "Visitors see capabilities, but cannot identify their own painful situation in the copy.",
+        },
+        {
+          title: "Channels chosen by popularity",
+          body: "The team copies what another company is doing instead of matching channel to buyer intent.",
+        },
+        {
+          title: "Ads sent to weak pages",
+          body: "Paid traffic lands on a page with no ICP signal, specific proof, or low-friction next step.",
+        },
+        {
+          title: "SEO written for traffic, not pipeline",
+          body: "Broad articles attract the wrong audience. Traffic grows, but demos do not.",
+        },
+        {
+          title: "No tracking between traffic and revenue",
+          body: "The team knows visitors and clicks, but not which channel creates qualified pipeline.",
+        },
+      ],
+    },
+    {
+      type: "example",
+      id: "icp",
+      label: "Step 1",
+      title: "Define the ICP Narrowly Enough to Matter",
+      paragraphs: [
+        "A useful ICP is not a demographic. It is a description of a specific person in a specific situation experiencing a specific problem with enough urgency to act on it.",
+      ],
+      items: [
+        {
+          title: "Weak ICP",
+          body: "B2B companies that need better analytics.",
+        },
+        {
+          title: "Better ICP",
+          body: "Seed-stage SaaS founders with 5,000+ monthly visitors who cannot see which landing pages, CTAs, or campaigns are creating demo bookings — and are about to increase paid spend without knowing if the funnel can convert it.",
+          emphasis: true,
+        },
+      ],
+    },
+    {
+      type: "numbered-list",
+      id: "positioning",
+      label: "Step 2",
+      title: "Clarify the Positioning Before Choosing Channels",
+      paragraphs: [
+        "Channels only amplify what is already clear or already unclear. Strong positioning makes every channel easier because the buyer understands the problem, the outcome, and the reason to act.",
+      ],
+      items: [
+        {
+          title: "Cold email reply rates improve",
+          body: "The message connects a specific problem to a specific outcome for a specific buyer.",
+        },
+        {
+          title: "SEO attracts better-fit traffic",
+          body: "Content is written for a clear searcher and a clear commercial path.",
+        },
+        {
+          title: "Paid ads waste less spend",
+          body: "The page continues the conversation the ad started instead of resetting context.",
+        },
+        {
+          title: "Demos close more cleanly",
+          body: "The buyer understands the value before the call, so sales is not starting from zero.",
+        },
+      ],
+    },
+    {
+      type: "visual-break",
+      id: "buyer-journey",
+      heading: true,
+      label: "Step 3",
+      title: "Map the Buyer Journey Before Building the Channel Mix",
+      items: [
+        {
+          title: "Problem aware",
+          bullets: [
+            "The buyer knows the workflow is broken but may not know the category.",
+            "Use educational content, founder-led posts, cold email angles, and comparison pages.",
+          ],
+        },
+        {
+          title: "Solution aware",
+          bullets: [
+            "The buyer knows tools or services exist and is comparing options.",
+            "Use landing pages, case studies, alternatives pages, product proof, and demos.",
+          ],
+        },
+        {
+          title: "Vendor aware",
+          bullets: [
+            "The buyer is deciding whether to trust you specifically.",
+            "Use proof, implementation detail, pricing context, founder credibility, and risk reversal.",
+          ],
+        },
+        {
+          title: "Decision ready",
+          bullets: [
+            "The buyer needs momentum and a clear next step.",
+            "Use booking flows, follow-up, objection handling, and sales enablement.",
+          ],
+        },
+      ],
+    },
+    {
+      type: "visual-break",
+      id: "channel-fit",
+      heading: true,
+      label: "Step 4",
+      title: "Choose Channels Based on Buyer Intent",
+      items: [
+        {
+          title: "Cold email",
+          bullets: [
+            "Strong when the ICP is narrow and painful enough to identify.",
+            "Best for fast feedback on positioning, offer, and urgency.",
+            "Weak when the list is broad and the message is generic.",
+          ],
+        },
+        {
+          title: "SEO and content",
+          bullets: [
+            "Strong when buyers search for the problem, category, or alternatives.",
+            "Best for compounding trust and capturing intent.",
+            "Weak when content chases broad traffic that cannot become pipeline.",
+          ],
+        },
+        {
+          title: "Paid ads",
+          bullets: [
+            "Strong after the conversion path is validated.",
+            "Best when the page has strong message match and proof.",
+            "Weak when sent to a generic homepage or unclear offer.",
+          ],
+        },
+        {
+          title: "LinkedIn and partnerships",
+          bullets: [
+            "Strong when education and trust matter before direct demand.",
+            "Best when the founder has a sharp point of view.",
+            "Weak when posts sound like category filler.",
+          ],
+        },
+      ],
+    },
+    {
+      type: "numbered-list",
+      id: "conversion-path",
+      label: "Step 5",
+      title: "Fix the Conversion Path Before Scaling Traffic",
+      paragraphs: [
+        "The conversion path is where strategy becomes money. It includes the page, CTA, form, calendar, confirmation page, reminder emails, sales handoff, and follow-up.",
+      ],
+      items: [
+        {
+          title: "Match the page to the channel",
+          body: "A cold visitor from Meta needs more context than a high-intent visitor from Google.",
+        },
+        {
+          title: "Make one next step obvious",
+          body: "The more competing CTAs you add, the easier it is for the buyer to delay.",
+        },
+        {
+          title: "Reduce form and booking friction",
+          body: "Ask only what the team needs to qualify and continue the conversation.",
+        },
+        {
+          title: "Connect tracking to pipeline",
+          body: "Measure qualified demos, trials, opportunities, and revenue by source.",
+        },
+      ],
+    },
+    {
+      type: "inline-cta",
+      title: "Before you scale the channel, audit the system.",
+      body: "Most B2B SaaS growth leaks are not in the ad account or the blog calendar. They are in the ICP, message, proof, page, CTA, and follow-up.",
+      button: "Book audit",
+    },
+    {
+      type: "dark-checklist",
+      id: "mistakes",
+      label: "Avoid these",
+      title: "B2B SaaS Marketing Strategy Mistakes",
+      paragraphs: [
+        "The strategic mistake is usually not doing too little. It is doing too many disconnected things before the foundation is clear.",
+      ],
+      items: [
+        {
+          title: "Starting with SEO before the ICP is clear",
+          body: "This creates traffic that cannot convert because the audience is too broad.",
+        },
+        {
+          title: "Running ads before the page earns trust",
+          body: "Paid spend accelerates the leak when the page lacks proof, relevance, or a clear CTA.",
+        },
+        {
+          title: "Using outbound to broad lists",
+          body: "Low reply rates often come from poor targeting, not just bad copy.",
+        },
+        {
+          title: "Confusing content volume with strategy",
+          body: "Publishing more does not help if each piece has no role in the buyer journey.",
+        },
+        {
+          title: "Tracking activity instead of pipeline",
+          body: "The strategy is working only when the right attention becomes qualified pipeline.",
+        },
+      ],
+    },
+    {
+      type: "takeaway",
+      id: "takeaway",
+      label: "Founder takeaway",
+      title: "The Strategy Is the Sequence",
+      paragraphs: [
+        "The best B2B SaaS marketing strategy is often less glamorous than founders expect. It is a clear order of decisions: ICP, positioning, buyer journey, channel fit, conversion path, measurement, follow-up.",
+        "Get that sequence right and every channel gets easier. Skip it and every channel gets more expensive.",
+      ],
+      subheading: "Use this decision order",
+      checklist: [
+        "Who is the narrowest painful ICP?",
+        "Why would they choose this product now?",
+        "What do they need to believe before taking action?",
+        "Which channel reaches them at that belief stage?",
+        "What page and CTA should continue the conversation?",
+        "Which pipeline metric proves the strategy is working?",
+      ],
+    },
+  ],
+  faq: [
+    {
+      question: "What is a B2B SaaS marketing strategy?",
+      answer:
+        "A B2B SaaS marketing strategy is the set of decisions that connects ICP, positioning, buyer journey, channel selection, conversion path, and pipeline measurement into a system that turns the right attention into qualified pipeline. It is not a channel plan — it is the thinking that makes channel execution worth doing.",
+    },
+    {
+      question: "How do you create a B2B SaaS marketing strategy?",
+      answer:
+        "Start with ICP and positioning — not channels. Map the buyer journey to understand what stage of awareness your buyers are in. Choose channels that match buyer intent. Fix the conversion path. Set up tracking that connects marketing to pipeline. Add follow-up to close the gap between interest and decision.",
+    },
+    {
+      question: "What channels work best for B2B SaaS?",
+      answer:
+        "It depends on the ICP, buyer awareness stage, ACV, and sales motion. Cold email works best for narrow ICPs with painful, specific problems. SEO works best when buyers actively search for the problem or category. Paid ads work best once the conversion path is validated. LinkedIn works best when trust and education matter.",
+    },
+    {
+      question: "What is the difference between a SaaS marketing strategy and a GTM strategy?",
+      answer:
+        "A GTM strategy defines the overall commercial approach. A marketing strategy focuses on how marketing creates demand and pipeline within that direction.",
+    },
+    {
+      question: "How long does a B2B SaaS marketing strategy take to work?",
+      answer:
+        "Cold email can produce pipeline within weeks if ICP, offer, and infrastructure are right. SEO typically takes six to twelve months to compound meaningfully. Paid ads need two to three months minimum to generate optimisation data. Fixing the foundations — positioning, landing page, conversion path — produces results across every channel simultaneously.",
+    },
+    {
+      question: "Should early-stage SaaS founders focus on SEO, ads, or outbound first?",
+      answer:
+        "For most early-stage B2B SaaS founders, cold email is the highest-leverage starting point. It provides fast feedback on positioning and offer, requires no paid spend, and produces qualified conversations quickly when the ICP is specific. SEO should run in parallel as a medium-term investment. Paid ads make sense once the conversion path is validated.",
+    },
+  ],
+  source: {
+    label: "Google helpful content guidance",
+    url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+    body:
+      "Google's helpful content guidance reinforces the same principle for SaaS strategy: create useful content for people first, not empty activity for search engines",
   },
-  {
-    question: "How do you create a B2B SaaS marketing strategy?",
-    answer:
-      "Start with ICP and positioning — not channels. Map the buyer journey to understand what stage of awareness your buyers are in. Choose channels that match buyer intent. Fix the conversion path. Set up tracking that connects marketing to pipeline. Add follow-up to close the gap between interest and decision.",
+  cta: {
+    title: "Find what is blocking pipeline before scaling traffic.",
+    body:
+      "I will review your ICP, positioning, buyer journey, landing page, channel mix, and tracking so you know what to fix first.",
+    button: "Book a 20-min GTM Audit",
   },
-  {
-    question: "What channels work best for B2B SaaS?",
-    answer:
-      "It depends on the ICP, buyer awareness stage, ACV, and sales motion. Cold email works best for narrow ICPs with painful, specific problems. SEO works best when buyers actively search for the problem or category. Paid ads work best once the conversion path is validated. LinkedIn works best when trust and education matter. The right channel is the one that reaches the specific buyer at the stage where they are most likely to act.",
-  },
-  {
-    question: "What is the difference between a SaaS marketing strategy and a GTM strategy?",
-    answer:
-      "A GTM strategy defines the overall commercial approach: who you are selling to, how you will reach them, and how the sales motion works. A marketing strategy is focused on how marketing creates demand and pipeline within that direction. The GTM strategy sets direction. The marketing strategy executes the demand generation piece.",
-  },
-  {
-    question: "How long does a B2B SaaS marketing strategy take to work?",
-    answer:
-      "Cold email can produce pipeline within weeks if ICP, offer, and infrastructure are right. SEO typically takes six to twelve months to compound meaningfully. Paid ads need two to three months minimum to generate optimisation data. Fixing the foundations — positioning, landing page, conversion path — produces results across every channel simultaneously.",
-  },
-  {
-    question: "Should early-stage SaaS founders focus on SEO, ads, or outbound first?",
-    answer:
-      "For most early-stage B2B SaaS founders, cold email is the highest-leverage starting point. It provides fast feedback on positioning and offer, requires no paid spend, and produces qualified conversations quickly when the ICP is specific. SEO should run in parallel as a medium-term investment. Paid ads make sense once the conversion path is validated. See the SaaS GTM strategy page for how this plays out in practice.",
-  },
-];
+  internalLinks: [
+    { href: "/saas-marketing-agency", label: "SaaS marketing agency alternative" },
+    { href: "/saas-marketing-plan", label: "SaaS marketing plan" },
+    { href: "/landing-page-for-saas", label: "SaaS landing page" },
+    { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
+    { href: "/cold-email-for-saas", label: "cold email for SaaS" },
+    { href: "/meta-ads-for-saas", label: "Meta Ads for SaaS" },
+  ],
+  relatedPosts: [
+    {
+      label: "Plan",
+      title: "SaaS Marketing Plan",
+      description: "Turn strategy into a practical execution order founders can use.",
+      href: "/saas-marketing-plan",
+    },
+    {
+      label: "CRO",
+      title: "Conversion Rate Optimisation Specialist",
+      description: "Fix the conversion leaks that make channels look weaker than they are.",
+      href: "/conversion-rate-optimisation-specialist",
+    },
+    {
+      label: "Paid Ads",
+      title: "Meta Ads for SaaS",
+      description: "Use paid traffic only after the page and proof can hold attention.",
+      href: "/meta-ads-for-saas",
+    },
+  ],
+  pillarPage: "/saas-marketing-agency",
+};
 
 export default function B2bSaasMarketingStrategy() {
-  return (
-    <div className="ysg-editorial-page min-h-screen bg-[#070711] text-white">
-      <Navigation />
-
-      {/* ══════════════════════════════════════════════
-          HERO — dark
-      ══════════════════════════════════════════════ */}
-      <section className="pt-28 pb-16 bg-background">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-sm font-medium text-primary uppercase tracking-wider mb-4">
-                B2B SaaS Growth
-              </p>
-              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 leading-tight text-foreground">
-                B2B SaaS Marketing Strategy: What to Fix Before Scaling Traffic
-              </h1>
-              <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
-                Most B2B SaaS teams do not fail because they picked the wrong channel.
-              </p>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                They fail because they scale before the strategy is clear. They run ads before the positioning is sharp. They publish content before knowing what buyers actually search for. They send cold emails before the ICP is tight. They redesign the website before understanding why visitors do not convert.
-              </p>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                A B2B SaaS marketing strategy should not start with "which channel should we use?" It should start with: <strong className="text-foreground">what needs to be true before any channel can produce pipeline?</strong>
-              </p>
-
-              {/* Quick Answer */}
-              <div className="rounded-xl border border-border bg-card/60 p-6 mb-8">
-                <p className="text-sm font-semibold text-foreground mb-1">Quick Answer</p>
-                <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
-                  A B2B SaaS marketing strategy is the system of decisions that connects the right buyer to the right message through the right channel — and converts that attention into qualified pipeline. It must answer six questions:
-                </p>
-                <ol className="space-y-2">
-                  {[
-                    ["Who is the best-fit buyer?", "ICP, role, trigger, and urgency"],
-                    ["Why would they choose this product?", "Positioning over every alternative"],
-                    ["Where are they in their awareness?", "Buyer journey stage and trust gap"],
-                    ["Which channel reaches them best?", "Based on intent, not preference"],
-                    ["What happens after they click?", "Conversion path and demo flow"],
-                    ["How do we know it is working?", "Pipeline metrics, not activity metrics"],
-                  ].map(([q, a], i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                      <span className="text-primary font-bold flex-shrink-0 min-w-[20px]">{i + 1}.</span>
-                      <span><strong className="text-foreground">{q}</strong> — {a}</span>
-                    </li>
-                  ))}
-                </ol>
-                <p className="text-xs text-muted-foreground mt-4 border-t border-border pt-4">
-                  If any of these six are vague, the strategy is not ready. Channels will underperform until the answers are clear.
-                </p>
-              </div>
-
-              {/* Strategy order */}
-              <div className="rounded-lg border border-border bg-card/40 px-5 py-4 text-sm text-muted-foreground">
-                <span className="font-semibold text-foreground mr-2">Strategy order:</span>
-                ICP → Positioning → Buyer Journey → Channel Fit → Conversion Path → Pipeline Measurement
-              </div>
-
-              {/* Visual flow */}
-              <div className="mt-8 flex flex-wrap items-center gap-2 text-sm font-medium">
-                {["ICP", "Positioning", "Buyer Journey", "Channel Mix", "Conversion Path", "Pipeline"].map((step, i, arr) => (
-                  <div key={step} className="flex items-center gap-2">
-                    <span className="rounded-lg bg-primary/10 px-3 py-1.5 text-primary">{step}</span>
-                    {i < arr.length - 1 && <span className="text-muted-foreground">→</span>}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          WHAT IT IS + WHY FAILS — light
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-white border-y border-[#11111f]/10">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto space-y-12">
-
-              {/* What it actually is */}
-              <div>
-                <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
-                  What a B2B SaaS Marketing Strategy Actually Is
-                </h2>
-                <p className="text-[#4d4658] mb-4 leading-relaxed">
-                  A B2B SaaS marketing strategy is not a channel plan. It is not a content calendar. It is not a list of tactics sorted by quarter.
-                </p>
-                <p className="text-[#4d4658] mb-4 leading-relaxed">It is the set of decisions that connects:</p>
-                <ul className="space-y-2 mb-5 pl-1">
-                  {[
-                    ["ICP", "who the best-fit buyer is"],
-                    ["Positioning", "why this product over every alternative"],
-                    ["Offer", "what you are asking the buyer to do and why now"],
-                    ["Buyer journey", "where they are in their awareness and what they need at each stage"],
-                    ["Conversion path", "what happens between first contact and a closed deal"],
-                    ["Acquisition channels", "where this buyer already looks or listens"],
-                    ["Analytics", "what signals show that marketing is creating pipeline"],
-                    ["Follow-up", "how momentum is maintained between interest and decision"],
-                  ].map(([label, body]) => (
-                    <li key={label} className="flex items-start gap-3 text-sm text-[#4d4658] leading-relaxed">
-                      <span className="text-primary mt-1 flex-shrink-0">→</span>
-                      <span><strong className="text-[#11101a]">{label}</strong> — {body}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-[#4d4658] leading-relaxed">
-                  Its job is not to create marketing activity. Its job is to turn the right attention into qualified pipeline. The difference between a strategy and a plan matters. The{" "}
-                  <Link to="/saas-marketing-plan" className="text-primary hover:underline">SaaS marketing plan</Link>{" "}
-                  is the execution layer — which channels, which timelines, which specific activities. The strategy is the thinking that makes the plan worth executing. Without a clear strategy, the best marketing plan produces activity without direction.
-                </p>
-              </div>
-
-              {/* Why strategies fail */}
-              <div>
-                <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
-                  Why Most B2B SaaS Marketing Strategies Fail
-                </h2>
-                <p className="text-[#4d4658] mb-6 leading-relaxed">
-                  Most B2B SaaS marketing strategies fail not because founders are careless — but because the failure happens silently. Activity looks healthy. Emails are sent. Content is published. Ads are running. But pipeline stays flat or random.
-                </p>
-                <div className="space-y-4">
-                  {[
-                    { label: "ICP is too broad", body: '"B2B companies" is not an ICP. "SMBs" is not an ICP. "Operations teams" is still too broad. When the ICP is vague, every downstream decision — messaging, channel, content, offer — is also vague.' },
-                    { label: "Positioning is too generic", body: "The website explains what the product does but not why a specific buyer should choose it over alternatives they are already using. The message could apply to any competitor in the category." },
-                    { label: "Website built around features, not buyer pain", body: "The homepage explains capabilities. Visitors cannot identify their own problem in the copy, so they do not see themselves as the buyer." },
-                    { label: "Channels chosen by popularity, not intent match", body: "A founder reads that LinkedIn works for B2B SaaS and starts posting. Another sees a competitor running Meta Ads and copies the approach. Neither decision is based on where their specific ICP actually is." },
-                    { label: "Ads sent to weak pages", body: "Paid traffic lands on a homepage or feature page with no ICP signal, no specific proof, and a high-friction CTA. The ads produce clicks that do not convert." },
-                    { label: "SEO content written for traffic, not pipeline", body: "Articles are published for broad keywords that attract the wrong audience. Traffic grows but demos do not." },
-                    { label: "Cold email sent to bad-fit lists", body: "The targeting is too broad, the message is generic, and the offer does not connect a specific problem to a specific outcome. Reply rates stay low and the team learns very little because the targeting was wrong from the start." },
-                    { label: "No tracking between traffic and revenue", body: "The team knows how many visitors came and how many opened the email. Nobody knows which channel created qualified pipeline." },
-                    { label: "No follow-up system after demos", body: "Interested prospects fall out of the funnel between the first conversation and the decision because nobody maintained the momentum." },
-                  ].map((item) => (
-                    <div key={item.label} className="p-4 rounded-lg border border-[#11111f]/10 bg-[#f9f8fc]">
-                      <p className="font-semibold text-[#11101a] mb-1.5">{item.label}</p>
-                      <p className="text-sm text-[#4d4658] leading-relaxed">{item.body}</p>
-                    </div>
-                  ))}
-                </div>
-                <p className="text-[#4d4658] mt-5 leading-relaxed text-sm">
-                  Each of these is a strategy failure — not a tactics failure. Fixing them requires a different order of operations, not more activity.
-                </p>
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          STEPS 1–2 — dark
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-background">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto space-y-14">
-
-              {/* Step 1 */}
-              <div>
-                <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 1</p>
-                <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
-                  Define the ICP Narrowly Enough to Matter
-                </h2>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  This is where most B2B SaaS marketing strategies break down first.
-                </p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  A useful ICP is not a demographic. It is a description of a specific person in a specific situation experiencing a specific problem with enough urgency to act on it.
-                </p>
-                <div className="rounded-lg border border-border bg-card/60 p-5 mb-6">
-                  <p className="text-sm font-semibold text-foreground mb-3">A useful ICP has:</p>
-                  <ul className="space-y-2">
-                    {[
-                      ["Role", "the specific job title and decision-making authority"],
-                      ["Industry", "the vertical or category where the problem is most acute"],
-                      ["Company stage", "size, funding, or maturity that creates the right conditions"],
-                      ["Trigger event", "what changed recently that makes this problem urgent now"],
-                      ["Painful workflow", "the specific broken process the product fixes"],
-                      ["Current alternative", "what they are doing instead and why it is failing"],
-                      ["Buying urgency", "what forces a decision rather than indefinite delay"],
-                    ].map(([label, body]) => (
-                      <li key={label} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                        <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                        <span><strong className="text-foreground">{label}</strong> — {body}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="grid sm:grid-cols-2 gap-4 mb-5">
-                  <div className="rounded-lg border border-border bg-card/50 p-5">
-                    <p className="text-xs font-black uppercase tracking-widest text-muted-foreground mb-3">Weak ICP</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">B2B companies that need better analytics.</p>
-                  </div>
-                  <div className="rounded-lg border border-primary/30 bg-primary/5 p-5">
-                    <p className="text-xs font-black uppercase tracking-widest text-primary mb-3">Better ICP</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">
-                      Seed-stage SaaS founders with 5,000+ monthly visitors who cannot see which landing pages, CTAs, or campaigns are creating demo bookings — and are about to increase paid spend without knowing if the funnel can convert it.
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-muted-foreground leading-relaxed">
-                  The second version makes every downstream decision easier. The messaging writes itself. The SEO keywords become obvious. The cold email targeting is specific enough to build a list. The landing page knows exactly who it is speaking to. If the ICP is not this specific, sharpen it before moving to the next step. Everything else depends on it.
-                </p>
-              </div>
-
-              {/* Step 2 */}
-              <div>
-                <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 2</p>
-                <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
-                  Clarify the Positioning Before Choosing Channels
-                </h2>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Channels only amplify what is already clear or already unclear. This is the foundation of any{" "}
-                  <Link to="/saas-marketing-agency" className="text-primary hover:underline">SaaS GTM strategy</Link>{" "}
-                  — and the step most founders skip.
-                </p>
-                <p className="text-muted-foreground mb-4 leading-relaxed">Strong positioning makes every channel work better:</p>
-                <ul className="space-y-2 mb-6 pl-1">
-                  {[
-                    "Cold email reply rates go up because the message connects a specific problem to a specific outcome",
-                    "SEO content ranks for the right queries because it is written for a specific searcher",
-                    "Paid ads convert because the landing page continues the conversation the ad started",
-                    "Demos close at higher rates because the buyer already understood the value before getting on the call",
-                  ].map((item) => (
-                    <li key={item} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                      <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="text-muted-foreground mb-4 leading-relaxed">
-                  Weak positioning makes every channel expensive. The ads get clicks but not demos. The cold email gets opens but not replies. The SEO gets traffic but not qualified visitors. Each channel appears not to work, so the founder tries another one.
-                </p>
-                <blockquote className="border-l-4 border-primary pl-5 py-2 mb-5">
-                  <p className="text-foreground font-semibold leading-relaxed">
-                    Why would this specific buyer choose this product over every other option available to them right now?
-                  </p>
-                  <p className="text-sm text-muted-foreground mt-2">
-                    That includes direct competitors, category alternatives, and the option of doing nothing. If the answer is not clear and specific, the positioning is not ready. Fix it before choosing a channel.
-                  </p>
-                </blockquote>
-                <p className="text-muted-foreground leading-relaxed">
-                  For a practical framework to sharpen positioning as part of a broader plan, the{" "}
-                  <Link to="/saas-marketing-plan" className="text-primary hover:underline">SaaS marketing plan</Link>{" "}
-                  covers the step-by-step execution.
-                </p>
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          MID-PAGE CTA
-      ══════════════════════════════════════════════ */}
-      <section className="py-12 bg-white border-y border-[#11111f]/10">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto rounded-2xl border border-primary/20 bg-primary/5 p-7 md:p-9 text-center">
-              <p className="text-sm font-semibold text-[#11101a] mb-2">
-                If your positioning is clear but pipeline still feels random, the bottleneck is probably in the buyer journey, channel fit, or conversion path.
-              </p>
-              <p className="text-[#4d4658] text-sm mb-6">
-                In a 20-minute GTM Audit I will help you find which one is blocking growth.
-              </p>
-              <Button variant="hero" size="lg" className="group" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                  Book a 20-min GTM Audit
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          STEP 3 — dark
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-background">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 3</p>
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
-                Map the Buyer Journey and Trust Gaps
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                This is where a B2B SaaS marketing strategy becomes genuinely strategic — and where most marketing plans stop short.
-              </p>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Different buyers are at different stages of awareness. The content, channel, and conversion path that works for a decision-ready buyer will not work for someone who does not yet know the problem exists.
-              </p>
-
-              {/* Buyer journey table */}
-              <div className="overflow-x-auto rounded-xl border border-border mb-6">
-                <table className="w-full min-w-[520px] text-sm">
-                  <thead>
-                    <tr className="border-b border-border bg-card/60">
-                      <th className="px-4 py-3 text-left font-semibold text-foreground">Buyer stage</th>
-                      <th className="px-4 py-3 text-left font-semibold text-foreground">What they need</th>
-                      <th className="px-4 py-3 text-left font-semibold text-foreground">Trust gap to fix</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      ["Problem unaware", "Education", "They do not see the problem yet"],
-                      ["Problem aware", "Diagnosis", "They do not know what is causing it"],
-                      ["Solution aware", "Options and comparison", "They do not know which approach fits"],
-                      ["Vendor aware", "Proof and specifics", "They do not trust you enough yet"],
-                      ["Decision ready", "Risk reduction", "They need confidence to act now"],
-                    ].map(([stage, need, gap], i) => (
-                      <tr key={stage} className={`border-b border-border last:border-0 ${i % 2 === 0 ? "" : "bg-card/30"}`}>
-                        <td className="px-4 py-3 font-medium text-foreground whitespace-nowrap">{stage}</td>
-                        <td className="px-4 py-3 text-muted-foreground">{need}</td>
-                        <td className="px-4 py-3 text-muted-foreground">{gap}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-
-              <div className="space-y-4">
-                {[
-                  { stage: "Problem unaware", detail: "buyers are not searching for a solution — reach them through LinkedIn content, community participation, and founder-led thought leadership where they already spend time." },
-                  { stage: "Problem aware", detail: 'buyers are asking diagnostic questions like "why is my landing page not converting" — SEO content that answers these earns trust at exactly the right moment.' },
-                  { stage: "Solution aware", detail: "buyers are evaluating options — comparison pages, case studies, and proof-led content convert here." },
-                  { stage: "Vendor aware", detail: "buyers know your product exists and are checking whether to trust it — the landing page, proof section, and objection handling make or break this stage." },
-                  { stage: "Decision ready", detail: "buyers need one final reason to act — a clear next step, a risk reducer, or a specific answer to a remaining objection closes the gap." },
-                ].map((item) => (
-                  <div key={item.stage} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                    <span className="text-primary mt-1 flex-shrink-0">→</span>
-                    <span><strong className="text-foreground">{item.stage}</strong> {item.detail}</span>
-                  </div>
-                ))}
-              </div>
-
-              <p className="text-muted-foreground mt-6 leading-relaxed">
-                The strategic question: <strong className="text-foreground">where is your ICP in this journey, and does your marketing meet them there?</strong> Using the wrong approach for the wrong stage is why most B2B SaaS marketing produces traffic without pipeline. This is also where trust gaps live — in the messaging, the proof, the CTA, the follow-up. The strategy needs to identify and fix them before spending more on acquisition.
-              </p>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          STEP 4 — light
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-white border-y border-[#11111f]/10">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 4</p>
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
-                Choose Channels Based on Buyer Intent
-              </h2>
-              <p className="text-[#4d4658] mb-8 leading-relaxed">
-                Channel selection is where most B2B SaaS marketing strategies get made by opinion rather than logic. The right channel is not the most popular one, the one a competitor uses, or the one the founder is most comfortable with. It is the one that reaches the specific ICP at the specific stage of awareness where they are most likely to act.
-              </p>
-
-              <div className="space-y-5">
-                {[
-                  {
-                    title: "Cold Email",
-                    when: "The ICP is narrow, the problem is painful but not actively searched, and the offer is specific enough to earn a reply.",
-                    risk: "When the targeting is wrong, reply rates stay low and the team learns very little because the data is too noisy to act on.",
-                    use: "Fast feedback on positioning and messaging. For most early-stage SaaS founders with a tight ICP, it is the highest-leverage starting channel.",
-                    link: { label: "cold email for SaaS", to: "/cold-email-for-saas" },
-                  },
-                  {
-                    title: "SEO and Content",
-                    when: "Buyers already search for the problem, the category, the alternative, or the workflow.",
-                    risk: "Starting too broad. Generic keyword traffic does not convert. Intent-matched content does.",
-                    use: "Long-term compounding qualified traffic. Start with specific, problem-aware queries where competition is lower and buyer intent is higher.",
-                    externalLink: { label: "helpful content guidance", href: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content" },
-                  },
-                  {
-                    title: "Paid Ads",
-                    when: "The offer, landing page, tracking, and follow-up are already validated.",
-                    risk: "Running paid ads before the landing page converts is an expensive way to discover a conversion problem. Paid ads amplify what is already there — working or not.",
-                    use: "Scaling what is already converting. Not for diagnosing a broken funnel.",
-                    link: { label: "Meta Ads for SaaS", to: "/meta-ads-for-saas" },
-                  },
-                  {
-                    title: "LinkedIn and Founder-Led Content",
-                    when: "The buyer needs education, trust, and repeated exposure before they are ready to talk.",
-                    risk: "It is a slow channel. It will not produce pipeline in the first 30 days.",
-                    use: "Building positioning, proof, and founder-led demand creation. Particularly effective for reaching decision-makers who are not actively searching yet.",
-                  },
-                  {
-                    title: "Partnerships",
-                    when: "Your buyer already trusts another ecosystem player — agencies, consultants, software vendors, communities, or integration partners.",
-                    risk: "Partnerships take time to build and depend on alignment between both parties.",
-                    use: "Trust transfer at scale. For early-stage SaaS in an established ecosystem, one strong partnership can outperform months of cold outreach.",
-                  },
-                ].map((channel) => (
-                  <div key={channel.title} className="rounded-xl border border-[#11111f]/10 bg-[#f9f8fc] p-5">
-                    <p className="font-display font-bold text-[#11101a] mb-3">{channel.title}</p>
-                    <div className="space-y-2 text-sm">
-                      <p className="text-[#4d4658] leading-relaxed"><strong className="text-[#11101a]">Best when:</strong> {channel.when}</p>
-                      <p className="text-[#4d4658] leading-relaxed"><strong className="text-[#11101a]">Risk:</strong> {channel.risk}</p>
-                      <p className="text-[#4d4658] leading-relaxed">
-                        <strong className="text-[#11101a]">Use it for:</strong> {channel.use}
-                        {channel.link && (
-                          <> See <Link to={channel.link.to} className="text-primary hover:underline">{channel.link.label}</Link> for what a system that produces real replies looks like.</>
-                        )}
-                        {channel.externalLink && (
-                          <> As Google's <a href={channel.externalLink.href} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{channel.externalLink.label}</a> puts it: write for people first, not just search engines.</>
-                        )}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-6 rounded-lg border border-primary/20 bg-primary/5 px-5 py-4 text-sm text-[#4d4658]">
-                <strong className="text-[#11101a]">The sequencing principle:</strong> start with the channel that reaches the most qualified buyer with the least infrastructure. For most early-stage B2B SaaS founders, that is cold email first, SEO in parallel, paid ads once the conversion path is validated.
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          STEP 5 — dark
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-background">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xs font-black uppercase tracking-widest text-primary mb-2">Step 5</p>
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
-                Fix the Conversion Path and Measure What Matters
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                A B2B SaaS marketing strategy without a working conversion path is a demand generation programme that benefits whoever the visitor finds next.
-              </p>
-              <p className="text-muted-foreground mb-5 leading-relaxed">
-                The conversion path includes everything between first contact and a closed deal. Most founders think about the landing page in isolation. The strategy needs to cover:
-              </p>
-              <ul className="space-y-2 mb-6 pl-1">
-                {[
-                  ["Landing page clarity", "does the page earn trust fast enough?"],
-                  ["CTA hierarchy", "does the page ask for the right thing at the right moment?"],
-                  ["Proof", "is it specific enough to be believed?"],
-                  ["Objection handling", "are the top buyer objections answered before the demo?"],
-                  ["Demo flow", "does the booking process reduce friction or add it?"],
-                  ["Follow-up", "is there a system between the booking and the demo, and between the demo and the decision?"],
-                ].map(([label, body]) => (
-                  <li key={label} className="flex items-start gap-3 text-sm text-muted-foreground leading-relaxed">
-                    <span className="text-primary mt-1 flex-shrink-0">→</span>
-                    <span><strong className="text-foreground">{label}</strong> — {body}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                For a detailed breakdown of what breaks in the conversion path and how to fix it, the{" "}
-                <Link to="/landing-page-for-saas" className="text-primary hover:underline">SaaS landing page</Link>{" "}
-                and{" "}
-                <Link to="/conversion-rate-optimisation-specialist" className="text-primary hover:underline">SaaS conversion rate optimisation</Link>{" "}
-                services cover the execution.
-              </p>
-
-              <h3 className="font-display text-xl font-bold mb-4 text-foreground">
-                Measure pipeline, not marketing activity
-              </h3>
-              <div className="grid sm:grid-cols-2 gap-4">
-                <div className="rounded-lg border border-border bg-card/50 p-5">
-                  <p className="text-xs font-black uppercase tracking-widest text-muted-foreground mb-3">Feel good but do not show pipeline</p>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    Impressions, clicks, open rates, pageviews, social followers, content published, emails sent.
-                  </p>
-                </div>
-                <div className="rounded-lg border border-primary/30 bg-primary/5 p-5">
-                  <p className="text-xs font-black uppercase tracking-widest text-primary mb-3">Actually show whether it is working</p>
-                  <ul className="space-y-1.5">
-                    {[
-                      "Qualified demo bookings per channel",
-                      "Trial signups per channel",
-                      "Demo show rate",
-                      "Landing page conversion rate",
-                      "Cost per qualified conversation",
-                      "Pipeline generated by channel",
-                      "Channel-to-close attribution",
-                    ].map((item) => (
-                      <li key={item} className="text-sm text-muted-foreground leading-relaxed flex items-start gap-2">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          FRAMEWORK TABLE — light
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-white border-y border-[#11111f]/10">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-[#11101a]">
-                The B2B SaaS Marketing Strategy Framework
-              </h2>
-              <p className="text-[#4d4658] mb-6 leading-relaxed">
-                Use this as a working reference. Every row is a strategic decision that needs an honest answer before the next one is made.
-              </p>
-
-              <div className="overflow-x-auto rounded-xl border border-[#11111f]/10 mb-6">
-                <table className="w-full min-w-[420px] text-sm">
-                  <thead>
-                    <tr className="border-b border-[#11111f]/10 bg-[#f9f8fc]">
-                      <th className="px-4 py-3 text-left font-semibold text-[#11101a] w-1/3">Strategy layer</th>
-                      <th className="px-4 py-3 text-left font-semibold text-[#11101a]">Question to answer</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {[
-                      ["ICP", "Who is the best-fit buyer — role, industry, stage, trigger?"],
-                      ["Problem", "What painful problem do they already feel and cannot ignore?"],
-                      ["Positioning", "Why this product over every alternative available right now?"],
-                      ["Buyer stage", "Where is the ICP in their awareness — and what do they need there?"],
-                      ["Trust gap", "What stops them from converting at each stage of the journey?"],
-                      ["Channel", "Where does this buyer already look, listen, or search?"],
-                      ["Conversion path", "What happens between first contact and a qualified demo?"],
-                      ["Tracking", "Which signals show that marketing is creating pipeline — not just activity?"],
-                      ["Follow-up", "How is momentum maintained between interest and decision?"],
-                    ].map(([layer, question], i) => (
-                      <tr key={layer} className={`border-b border-[#11111f]/10 last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#f9f8fc]"}`}>
-                        <td className="px-4 py-3 font-medium text-[#11101a] whitespace-nowrap">{layer}</td>
-                        <td className="px-4 py-3 text-[#4d4658]">{question}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-[#4d4658] text-sm leading-relaxed">
-                If any row has a vague answer, that row is the strategy gap. Fix the gap before adding spend to the channel.
-              </p>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          MISTAKES — dark
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-background">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-6 text-foreground">
-                Common B2B SaaS Marketing Strategy Mistakes
-              </h2>
-              <div className="space-y-4">
-                {[
-                  { label: "Starting with channels", body: "Choosing SEO, ads, or cold email before ICP, positioning, and conversion path are clear means every channel is working against a weak foundation." },
-                  { label: "Copying competitors", body: "What works for a competitor with different positioning, different ICP, different ACV, and different stage will not necessarily work for you. Strategy is contextual." },
-                  { label: "Targeting too broad an ICP", body: "Broad targeting means broad messaging, which means weak conversion at every stage. Narrow the ICP until it feels uncomfortably specific — that is usually where the real opportunity is." },
-                  { label: "Treating SEO as a traffic channel only", body: "SEO should produce qualified visitors who are one step away from needing what you sell. Generic traffic from broad keywords does not convert. Intent-matched content does." },
-                  { label: "Treating paid ads as a magic fix", body: "Paid ads amplify what is already there. If the positioning, landing page, and offer are weak, paid ads produce expensive clicks that confirm what is broken." },
-                  { label: "Running outbound before the offer is clear", body: "Cold email with a vague offer produces low reply rates and bad data. A specific offer to a specific ICP produces replies and useful feedback simultaneously." },
-                  { label: "Ignoring the conversion path", body: "Demand generation without a working conversion path creates pipeline for whoever the visitor finds next. Fix the path before scaling demand." },
-                  { label: "Measuring activity instead of pipeline", body: "The strategy is working when it produces qualified conversations — not when it produces impressions, clicks, or open rates." },
-                ].map((item) => (
-                  <div key={item.label} className="p-5 rounded-lg border border-border bg-card/50">
-                    <p className="font-semibold text-foreground mb-2">{item.label}</p>
-                    <p className="text-sm text-muted-foreground leading-relaxed">{item.body}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          FAQ — light
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-white border-y border-[#11111f]/10" id="faq">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-3xl mx-auto">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-8 text-[#11101a]">B2B SaaS Strategy FAQ</h2>
-              <div className="space-y-6">
-                {faqItems.map((item) => (
-                  <div key={item.question} className="border-b border-[#11111f]/10 pb-6 last:border-0 last:pb-0">
-                    <p className="font-semibold text-[#11101a] mb-2 leading-snug">{item.question}</p>
-                    <p className="text-sm text-[#4d4658] leading-relaxed">{item.answer}</p>
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-10 rounded-lg border border-[#11111f]/10 bg-[#f9f8fc] px-6 py-5 text-sm text-[#4d4658]">
-                Not ready for an audit yet? Start with the{" "}
-                <Link to="/saas-marketing-plan" className="text-primary hover:underline">SaaS marketing plan framework</Link>{" "}
-                — it covers the practical execution layer behind this strategy.
-              </div>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════
-          FINAL CTA — dark
-      ══════════════════════════════════════════════ */}
-      <section className="py-16 bg-card border-t border-border">
-        <div className="container px-4">
-          <AnimateIn>
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="font-display text-2xl md:text-3xl font-bold mb-4 text-foreground">
-                Ready to Find What Is Blocking Pipeline?
-              </h2>
-              <p className="text-muted-foreground mb-4 leading-relaxed">
-                Most B2B SaaS teams do not need more random marketing activity. They need to know which part of the system is actually broken.
-              </p>
-              <p className="text-muted-foreground mb-8 leading-relaxed">
-                In a 20-minute GTM audit, I will review your positioning, landing page, acquisition channel, and conversion path — then tell you what to fix first.
-              </p>
-              <Button variant="hero" size="lg" className="group" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                  Book a 20-min GTM Audit
-                  <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
-              <p className="text-xs text-muted-foreground/60 mt-4">
-                Also see:{" "}
-                <Link to="/saas-marketing-agency" className="hover:text-primary transition-colors">
-                  SaaS GTM strategy
-                </Link>
-                {" "}·{" "}
-                <Link to="/saas-marketing-plan" className="hover:text-primary transition-colors">
-                  SaaS marketing plan
-                </Link>
-              </p>
-            </div>
-          </AnimateIn>
-        </div>
-      </section>
-
-      <Footer hideCTA />
-    </div>
-  );
+  return <BlogPostLayout post={b2bSaasMarketingStrategyPost} />;
 }
