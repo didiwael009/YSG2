@@ -41,7 +41,7 @@ const faqItems = [
 
 export default function B2bSaasMarketingStrategy() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="ysg-editorial-page min-h-screen bg-[#070711] text-white">
       <Navigation />
 
       {/* ══════════════════════════════════════════════
