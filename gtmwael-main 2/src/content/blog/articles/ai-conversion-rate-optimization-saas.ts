@@ -7,7 +7,7 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
     breadcrumbTitle: "AI Conversion Rate Optimization",
     title: "AI Conversion Rate Optimization for SaaS: What Actually Works",
     h1: "AI Conversion Rate Optimization for SaaS: What Actually Works",
-    metaTitle: "AI CRO for SaaS: What Works and What to Fix First",
+    metaTitle: "AI Conversion Rate Optimization for SaaS: What to Fix First",
     description:
       "Most SaaS teams add AI CRO tools before the funnel is ready. Here is where AI conversion rate optimization works, where it fails, and what to do first.",
     searchIntent:

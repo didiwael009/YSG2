@@ -41,7 +41,7 @@ const CaseStudyScreenplay = () => (
     client="Screenplay Performance Studio"
     title="From confusing AI tool to guided product funnel"
     description="How I reframed Screenplay Performance Studio into a step-by-step workflow users could understand, follow, and complete."
-    metaTitle="Screenplay Performance Studio Case Study | Guided Product Funnel"
+    metaTitle="Screenplay Performance Studio Case Study | Guided Funnel"
     metaDescription="How Screenplay Performance Studio was reframed from a confusing AI audio tool into a guided product funnel."
     canonical="https://www.yoursaasgrowth.com/case-study/screenplay"
     metrics={[

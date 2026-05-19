@@ -28,7 +28,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/",
     title: "SaaS GTM Strategist for B2B Growth | Your SaaS Growth",
-    description: "B2B SaaS growth systems by Wael Aouididi: positioning, landing pages, cold email, SEO, Meta ads, and GTM execution.",
+    description: "Fix your SaaS conversion rate before scaling traffic. Wael Aouididi helps B2B SaaS founders fix positioning, landing pages, cold email, and GTM execution.",
     type: "website",
     priority: 1,
     changefreq: "weekly",
@@ -406,7 +406,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/optimize-saas-landing-page",
     title: "How to Optimise a SaaS Landing Page for More Demos | YSG",
-    description: "A practical guide to SaaS landing page optimisation — hero clarity, proof placement, CTA hierarchy, mobile friction, and conversion path fixes that increase demo bookings.",
+    description: "Stop buying traffic before you optimize your SaaS landing page. The audit checklist that finds the conversion leak — and what to fix before you scale.",
     type: "article",
     priority: 0.75,
     changefreq: "monthly",
@@ -420,7 +420,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/google-ads-vs-meta-ads-saas",
     title: "Google Ads vs Meta Ads for SaaS: Which Channel Fits? | YSG",
-    description: "Compare Google Ads and Meta Ads for B2B SaaS — intent differences, landing page requirements, budget considerations, and when to use each channel for pipeline.",
+    description: "Google Ads vs Meta Ads for SaaS: the right channel depends on your offer, intent, and landing page strength. Here's how to choose before you spend.",
     type: "article",
     priority: 0.7,
     changefreq: "monthly",
@@ -434,7 +434,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/saas-cold-email-strategy",
     title: "SaaS Cold Email Strategy: Build a Pipeline System | YSG",
-    description: "A complete SaaS cold email strategy guide — ICP targeting, domain setup, deliverability, offer framing, sequences, and follow-up logic that generates qualified replies.",
+    description: "Sending more cold emails won't fix weak targeting or a vague offer. Here's the SaaS cold email strategy fix — before you write another sequence.",
     type: "article",
     priority: 0.75,
     changefreq: "monthly",
@@ -495,8 +495,8 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/landing-page-for-lead-generation",
-    title: "Landing Page for Lead Generation: SaaS Conversion Guide | YSG",
-    description: "How to build a SaaS landing page for lead generation — offer clarity, trust signals, form friction, and the conversion path structure that qualifies leads before the demo.",
+    title: "Landing Page for Lead Generation: What SaaS Founders Fix",
+    description: "A landing page for lead generation needs more than a form. Here's the SaaS founder checklist to fix message, proof, and CTA before buying traffic.",
     type: "article",
     priority: 0.75,
     changefreq: "monthly",
@@ -510,7 +510,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/linkedin-outreach-for-saas",
     title: "LinkedIn Outreach for SaaS: B2B Prospecting That Works | YSG",
-    description: "LinkedIn outreach strategy for B2B SaaS founders — profile positioning, connection messaging, content as warm-up, and how to run LinkedIn alongside cold email.",
+    description: "LinkedIn outreach for SaaS fails without ICP clarity, a real offer, and follow-up logic. Here's what founders should fix before sending another message.",
     type: "article",
     priority: 0.7,
     changefreq: "monthly",
@@ -569,7 +569,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/shipzzer",
     title: "Shipzzer SEO and Cold Email Case Study",
-    description: "How Shipzzer reached Top 3 Google rankings and a 50% cold email open rate through SEO architecture and GTM messaging.",
+    description: "How Shipzzer reached Top-3 Google rankings for core industry keywords. The positioning and SEO execution that drove the results — full case study.",
     type: "case-study",
     priority: 0.75,
     changefreq: "monthly",
@@ -583,7 +583,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/screenplay",
     title: "Screenplay Product Funnel Case Study",
-    description: "How Screenplay Performance Studio moved from a confusing AI tool into a guided upload-to-export product funnel.",
+    description: "How a positioning and messaging overhaul helped Screenplay's SaaS product convert better. The full GTM execution story and what actually worked.",
     type: "case-study",
     priority: 0.75,
     changefreq: "monthly",
@@ -597,7 +597,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/zembra",
     title: "Zembra SaaS Rebrand Case Study",
-    description: "How Zembra grew revenue 4x in 8 months through a Reviews API rebrand, website rebuild, and outbound GTM alignment.",
+    description: "How Zembra grew revenue 4× through repositioning, cold email, and GTM execution — without changing the product. Full strategy breakdown inside.",
     type: "case-study",
     priority: 0.75,
     changefreq: "monthly",
@@ -611,7 +611,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/pubrella",
     title: "Pubrella Landing Page CRO Case Study",
-    description: "How Pubrella increased landing page conversion 3x through positioning clarity, trust signals, friction removal, and CTA hierarchy.",
+    description: "How Pubrella fixed its go-to-market approach and improved conversion. The strategy, execution, and key takeaways for SaaS founders in a similar spot.",
     type: "case-study",
     priority: 0.75,
     changefreq: "monthly",
@@ -625,7 +625,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/write-your-book",
     title: "Write Your Book Meta Ads Case Study",
-    description: "A Meta ads and funnel case study showing lower CPC, stronger creative testing, and better conversion economics.",
+    description: "How Write Your Book tightened its positioning and improved lead quality through GTM execution. Real strategy, real outcome — full breakdown inside.",
     type: "case-study",
     priority: 0.6,
     changefreq: "monthly",
@@ -635,7 +635,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/growapp",
     title: "GrowApp Meta Ads Case Study: £30K+ MRR SaaS | YSG",
-    description: "A SaaS Meta ads case study covering trial offer positioning, tracking, campaign structure, and lower cost per lead.",
+    description: "How GrowApp was built and scaled as a bootstrapped SaaS product. Founder-led growth, positioning decisions, and the GTM lessons that came from it.",
     type: "case-study",
     priority: 0.6,
     changefreq: "monthly",
@@ -646,7 +646,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/bottlenexus",
     title: "BottleNexus SaaS Content Case Study",
-    description: "A SaaS content and social proof case study for BottleNexus, covering creative assets, brand trust, and buyer education.",
+    description: "How Bottle Nexus went through a full rebrand and conversion-focused creative execution. The positioning story and creative strategy behind the results.",
     type: "case-study",
     priority: 0.55,
     changefreq: "monthly",
@@ -656,7 +656,7 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/ic-center",
     title: "IC Center Landing Page Case Study",
-    description: "A landing page case study for IC Center focused on offer clarity, page structure, and conversion-ready positioning.",
+    description: "How IC Center improved its positioning and GTM approach to attract better-fit clients. The strategy, execution, and key decisions explained in full.",
     type: "case-study",
     priority: 0.55,
     changefreq: "monthly",
