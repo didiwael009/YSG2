@@ -21,6 +21,13 @@ export type SeoRoute = {
   dateModified?: string;
   faq?: { question: string; answer: string }[];
   schemaType?: "Service" | "Article";
+  schemaHeadline?: string;
+  schemaDescription?: string;
+  schemaDatePublished?: string;
+  schemaDateModified?: string;
+  schemaIncludeGlobal?: boolean;
+  schemaBreadcrumbs?: { name: string; path: string }[] | false;
+  schemaFaq?: { question: string; answer: string }[] | false;
   serviceTypeName?: string;
 };
 
@@ -408,6 +415,12 @@ export const seoRoutes: SeoRoute[] = [
     title: "How to Optimise a SaaS Landing Page for More Demos | YSG",
     description: "Stop buying traffic before you optimize your SaaS landing page. The audit checklist that finds the conversion leak — and what to fix before you scale.",
     type: "article",
+    schemaType: "Article",
+    schemaHeadline: "How to Optimise a SaaS Landing Page for More Demo Bookings",
+    schemaDatePublished: "2026-01-01",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: false,
     priority: 0.75,
     changefreq: "monthly",
     datePublished: "2026-05-16",
@@ -422,6 +435,12 @@ export const seoRoutes: SeoRoute[] = [
     title: "Google Ads vs Meta Ads for SaaS: Which Channel Fits? | YSG",
     description: "Google Ads vs Meta Ads for SaaS: the right channel depends on your offer, intent, and landing page strength. Here's how to choose before you spend.",
     type: "article",
+    schemaType: "Article",
+    schemaHeadline: "Google Ads vs Meta Ads for SaaS: Which Channel Fits Your Stage?",
+    schemaDatePublished: "2026-01-01",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: false,
     priority: 0.7,
     changefreq: "monthly",
     datePublished: "2026-05-16",
@@ -436,6 +455,12 @@ export const seoRoutes: SeoRoute[] = [
     title: "SaaS Cold Email Strategy: Build a Pipeline System | YSG",
     description: "Sending more cold emails won't fix weak targeting or a vague offer. Here's the SaaS cold email strategy fix — before you write another sequence.",
     type: "article",
+    schemaType: "Article",
+    schemaHeadline: "SaaS Cold Email Strategy: Build a Pipeline System, Not a Blast Campaign",
+    schemaDatePublished: "2026-01-01",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: false,
     priority: 0.75,
     changefreq: "monthly",
     datePublished: "2026-05-16",
@@ -498,6 +523,12 @@ export const seoRoutes: SeoRoute[] = [
     title: "Landing Page for Lead Generation: What SaaS Founders Fix",
     description: "A landing page for lead generation needs more than a form. Here's the SaaS founder checklist to fix message, proof, and CTA before buying traffic.",
     type: "article",
+    schemaType: "Article",
+    schemaHeadline: "Landing Page for Lead Generation: The SaaS Conversion Guide",
+    schemaDatePublished: "2026-01-01",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: false,
     priority: 0.75,
     changefreq: "monthly",
     datePublished: "2026-05-16",
@@ -512,6 +543,12 @@ export const seoRoutes: SeoRoute[] = [
     title: "LinkedIn Outreach for SaaS: B2B Prospecting That Works | YSG",
     description: "LinkedIn outreach for SaaS fails without ICP clarity, a real offer, and follow-up logic. Here's what founders should fix before sending another message.",
     type: "article",
+    schemaType: "Article",
+    schemaHeadline: "LinkedIn Outreach for SaaS: B2B Prospecting That Starts Conversations",
+    schemaDatePublished: "2026-01-01",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: false,
     priority: 0.7,
     changefreq: "monthly",
     datePublished: "2026-05-16",
@@ -625,8 +662,17 @@ export const seoRoutes: SeoRoute[] = [
   {
     path: "/case-study/write-your-book",
     title: "Write Your Book Meta Ads Case Study",
-    description: "How Write Your Book tightened its positioning and improved lead quality through GTM execution. Real strategy, real outcome — full breakdown inside.",
+    description: "How a creative angle change cut Write Your Book’s cost per landing page view to £0.22 and lifted CTR to 2.86%. Full Meta Ads case study.",
     type: "case-study",
+    schemaType: "Article",
+    schemaHeadline: "Write Your Book Meta Ads Case Study: £0.22 Per Landing Page View",
+    schemaDatePublished: "2026-01-01",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: [
+      { name: "Case Studies", path: "/case-studies" },
+      { name: "Write Your Book", path: "/case-study/write-your-book" },
+    ],
     priority: 0.6,
     changefreq: "monthly",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Write Your Book", path: "/case-study/write-your-book" }],

@@ -5,11 +5,11 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
     path: "/blog/ai-conversion-rate-optimization-saas",
     category: "SaaS CRO",
     breadcrumbTitle: "AI Conversion Rate Optimization",
-    title: "AI Conversion Rate Optimization for SaaS: What Actually Works",
+    title: "AI Conversion Rate Optimization for SaaS: What Works",
     h1: "AI Conversion Rate Optimization for SaaS: What Actually Works",
-    metaTitle: "AI Conversion Rate Optimization for SaaS: What to Fix First",
+    metaTitle: "AI Conversion Rate Optimization for SaaS: What Works",
     description:
-      "Most SaaS teams add AI CRO tools before the funnel is ready. Here is where AI conversion rate optimization works, where it fails, and what to do first.",
+      "AI conversion rate optimization for SaaS works best after the funnel basics are solid. Fix positioning, proof, and CTAs before adding tools.",
     searchIntent:
       "SaaS founders and marketers evaluating where AI conversion rate optimization can improve demos, activation, onboarding, and trial-to-paid conversion.",
     excerpt:
@@ -19,6 +19,16 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders fix positioning, landing pages, onboarding, and conversion leaks before scaling acquisition.",
     datePublished: "2026-05-06",
     dateModified: "2026-05-18",
+    schemaType: "Article",
+    schemaHeadline: "AI Conversion Rate Optimization for SaaS: What Actually Works",
+    schemaDescription:
+      "Learn where AI conversion rate optimization helps SaaS funnels, where it fails, and what to fix before adding AI personalization, chatbots, or funnel tools.",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: [
+      { name: "Blog", path: "/blog" },
+      { name: "AI Conversion Rate Optimization for SaaS", path: "/blog/ai-conversion-rate-optimization-saas" },
+    ],
     readTime: "14 min read",
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",

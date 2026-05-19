@@ -102,9 +102,13 @@ const collectPostLinks = (post) => {
 };
 
 const parseJsonLd = (html) =>
-  [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].flatMap((match) => {
+  [...html.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].flatMap((match) => {
     try {
-      return [JSON.parse(match[1])];
+      const parsed = JSON.parse(match[1]);
+      if (parsed && typeof parsed === "object" && Array.isArray(parsed["@graph"])) {
+        return parsed["@graph"];
+      }
+      return [parsed];
     } catch {
       return [];
     }
@@ -175,10 +179,9 @@ for (const post of blogPosts) {
   const canonicalTags = [...html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map((match) => match[1]);
   const metaDescriptions = [...html.matchAll(/<meta name="description" content="([^"]*)"/g)].map((match) => match[1]);
   const schemas = parseJsonLd(html);
-  const schemaTypes = schemas.map((schema) => schema["@type"]);
-  const blogSchemas = schemas.filter((schema) => schema["@type"] === "BlogPosting");
+  const articleSchemas = schemas.filter((schema) => schema["@type"] === "Article" || schema["@type"] === "BlogPosting");
   const faqSchemas = schemas.filter((schema) => schema["@type"] === "FAQPage");
-  const blogSchema = blogSchemas[0];
+  const articleSchema = articleSchemas[0];
   const faqSchema = faqSchemas[0];
   const breadcrumbSchema = schemas.find((schema) => schema["@type"] === "BreadcrumbList");
   const visibleFaq = Array.isArray(post.faq) && post.faq.length > 0 && post.faq.every((item) => html.includes(item.question) && html.includes(item.answer));
@@ -198,28 +201,28 @@ for (const post of blogPosts) {
     if (!html.includes(`name="${name}"`)) addError(post, `missing ${name}`);
   });
 
-  if (!blogSchema) addError(post, "missing BlogPosting schema");
-  if (blogSchemas.length > 1) addError(post, `expected one BlogPosting schema, found ${blogSchemas.length}`);
+  if (articleSchemas.length > 1) addError(post, `expected one Article schema, found ${articleSchemas.length}`);
   if (faqSchemas.length > 1) addError(post, `expected one FAQPage schema, found ${faqSchemas.length}`);
-  if (schemaTypes.includes("Article") && !schemaTypes.includes("BlogPosting")) addError(post, "wrong schema type: Article used for blog post");
-  if (blogSchema?.["@type"] !== "BlogPosting") addError(post, "wrong schema type");
+  const expectedArticleType = post.schemaType === "Article" ? "Article" : "BlogPosting";
+  if (!articleSchema) addError(post, `missing ${expectedArticleType} schema`);
+  if (articleSchema?.["@type"] !== expectedArticleType) addError(post, "wrong schema type");
   if (!breadcrumbSchema) addError(post, "missing BreadcrumbList schema");
-  if (!blogSchema?.author?.name) addError(post, "BlogPosting missing author");
-  if (!blogSchema?.publisher?.name) addError(post, "BlogPosting missing publisher");
-  if (blogSchema?.publisher?.name && blogSchema.publisher.name !== BRAND_NAME) {
-    addError(post, `BlogPosting publisher must be ${BRAND_NAME}`);
+  if (!articleSchema?.author?.name) addError(post, `${expectedArticleType} missing author`);
+  if (!articleSchema?.publisher?.name) addError(post, `${expectedArticleType} missing publisher`);
+  if (articleSchema?.publisher?.name && articleSchema.publisher.name !== BRAND_NAME) {
+    addError(post, `${expectedArticleType} publisher must be ${BRAND_NAME}`);
   }
-  if (blogSchema?.publisher?.logo?.url !== PUBLISHER_LOGO_URL) {
-    addError(post, `BlogPosting publisher logo must be ${PUBLISHER_LOGO_URL}`);
+  if (articleSchema?.publisher?.logo?.url !== PUBLISHER_LOGO_URL) {
+    addError(post, `${expectedArticleType} publisher logo must be ${PUBLISHER_LOGO_URL}`);
   }
-  if (!blogSchema?.datePublished) addError(post, "BlogPosting missing datePublished");
-  if (!blogSchema?.dateModified) addError(post, "BlogPosting missing dateModified");
-  if (!blogSchema?.image) addError(post, "BlogPosting missing image");
-  if (!blogSchema?.url) addError(post, "BlogPosting missing url");
-  if (blogSchema?.url && blogSchema.url !== canonicalFor(post)) addError(post, "BlogPosting URL must match canonical");
-  if (!blogSchema?.mainEntityOfPage) addError(post, "BlogPosting missing mainEntityOfPage");
-  if (blogSchema?.mainEntityOfPage?.["@id"] && blogSchema.mainEntityOfPage["@id"] !== canonicalFor(post)) {
-    addError(post, "BlogPosting mainEntityOfPage must match canonical");
+  if (!articleSchema?.datePublished) addError(post, `${expectedArticleType} missing datePublished`);
+  if (!articleSchema?.dateModified) addError(post, `${expectedArticleType} missing dateModified`);
+  if (!articleSchema?.image) addError(post, `${expectedArticleType} missing image`);
+  if (!articleSchema?.url) addError(post, `${expectedArticleType} missing url`);
+  if (articleSchema?.url && articleSchema.url !== canonicalFor(post)) addError(post, `${expectedArticleType} URL must match canonical`);
+  if (!articleSchema?.mainEntityOfPage) addError(post, `${expectedArticleType} missing mainEntityOfPage`);
+  if (articleSchema?.mainEntityOfPage?.["@id"] && articleSchema.mainEntityOfPage["@id"] !== canonicalFor(post)) {
+    addError(post, `${expectedArticleType} mainEntityOfPage must match canonical`);
   }
   if (visibleFaq && !faqSchema) addError(post, "visible FAQ but no FAQPage schema");
   if (faqSchema && !visibleFaq) addError(post, "FAQPage schema exists but visible FAQ does not match");

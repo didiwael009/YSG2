@@ -136,6 +136,14 @@ export type BlogPost = {
   h1: string;
   metaTitle: string;
   description: string;
+  schemaType?: "Article";
+  schemaHeadline?: string;
+  schemaDescription?: string;
+  schemaDatePublished?: string;
+  schemaDateModified?: string;
+  schemaIncludeGlobal?: boolean;
+  schemaBreadcrumbs?: { name: string; path: string }[] | false;
+  schemaFaq?: BlogFaq[] | false;
   searchIntent: string;
   excerpt: string;
   author: string;

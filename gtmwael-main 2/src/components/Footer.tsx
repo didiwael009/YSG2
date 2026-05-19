@@ -33,7 +33,6 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
   ];
 
   const useCases = [
-    { label: "All Use Cases", to: "/case-studies" },
     { label: "Shipzzer", to: "/case-study/shipzzer" },
     { label: "Screenplay", to: "/case-study/screenplay" },
     { label: "Zembra", to: "/case-study/zembra" },
@@ -59,7 +58,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
             </p>
             <Button variant="hero" size="lg" className="group" asChild>
               <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
-                Get Your Free GTM Audit
+                Book a Call
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>

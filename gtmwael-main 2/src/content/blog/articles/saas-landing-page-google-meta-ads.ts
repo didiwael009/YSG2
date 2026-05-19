@@ -4,11 +4,11 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
     slug: "saas-landing-page-google-meta-ads",
     path: "/blog/saas-landing-page-google-meta-ads",
     category: "Meta Ads for SaaS",
-    title: "Google Ads vs Meta Ads for SaaS: Landing Page Strategy That Matches Intent",
+    title: "Google Ads vs Meta Ads for SaaS: Landing Page Strategy",
     h1: "Google Ads vs Meta Ads for SaaS: Why Your Landing Page Needs to Match Intent",
     metaTitle: "Google Ads vs Meta Ads for SaaS: Landing Page Strategy",
     description:
-      "Google Ads captures demand. Meta Ads creates demand. Match your SaaS landing page intent to the channel — separate pages for each source convert better.",
+      "Google Ads and Meta Ads attract different intent, so SaaS teams need different landing pages. Match the page to the channel before scaling spend.",
     searchIntent:
       "SaaS founders and marketers comparing Google Ads and Meta Ads landing page strategy for better paid traffic conversion.",
     excerpt:
@@ -16,10 +16,20 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
     author: "Wael Aouididi",
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale paid traffic.",
-    datePublished: "2026-04-27",
-    dateModified: "2026-05-18",
-    readTime: "11 min read",
-    ogImage: "/og-default.png",
+  datePublished: "2026-04-27",
+  dateModified: "2026-05-18",
+  schemaType: "Article",
+  schemaHeadline: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page",
+  schemaDescription:
+    "Learn why Google Ads and Meta Ads traffic need different landing pages, how intent changes page structure, and what to fix before scaling paid spend.",
+  schemaDateModified: "2026-05-19",
+  schemaIncludeGlobal: false,
+  schemaBreadcrumbs: [
+    { name: "Blog", path: "/blog" },
+    { name: "Stop Sending Google Ads and Meta Ads Traffic to the Same SaaS Landing Page", path: "/blog/saas-landing-page-google-meta-ads" },
+  ],
+  readTime: "11 min read",
+  ogImage: "/og-default.png",
     featuredImage: "/og-default.png",
     featuredImageAlt: "SaaS landing page strategy for Google Ads and Meta Ads traffic",
     primaryKeyword: "google ads vs meta ads for saas",

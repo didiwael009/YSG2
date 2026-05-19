@@ -18,6 +18,8 @@ export const buildHead = ({ route, siteUrl, brandName, authorName, lastmod, clea
   const image = cleanImageUrl(route.image);
   const type = route.type === "case-study" || route.type === "article" ? "article" : "website";
   const socialTitle = route.socialTitle ?? route.title;
+  const schema = buildJsonLd({ route, siteUrl, brandName, authorName, lastmod, cleanImageUrl });
+  const schemaJson = JSON.stringify(schema).replaceAll("<", "\\u003c");
   return `
     <title>${escapeHtml(route.title)}</title>
     <meta name="description" content="${escapeHtml(route.description)}" />
@@ -34,8 +36,6 @@ export const buildHead = ({ route, siteUrl, brandName, authorName, lastmod, clea
     <meta name="twitter:title" content="${escapeHtml(socialTitle)}" />
     <meta name="twitter:description" content="${escapeHtml(route.description)}" />
     <meta name="twitter:image" content="${image}" />
-    ${buildJsonLd({ route, siteUrl, brandName, authorName, lastmod, cleanImageUrl })
-      .map((schema) => `<script type="application/ld+json">${JSON.stringify(schema)}</script>`)
-      .join("\n    ")}
+    <script type="application/ld+json" id="jsonld-graph">${schemaJson}</script>
   `;
 };

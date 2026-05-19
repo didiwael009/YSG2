@@ -18,6 +18,16 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
     datePublished: "2026-05-08",
     dateModified: "2026-05-18",
+    schemaType: "Article",
+    schemaHeadline: "Landing Page Optimization Best Practices 2026",
+    schemaDescription:
+      "Learn landing page optimization best practices for 2026. Improve conversion rates with better messaging, CTAs, forms, trust signals, mobile UX, and testing.",
+    schemaDateModified: "2026-05-19",
+    schemaIncludeGlobal: false,
+    schemaBreadcrumbs: [
+      { name: "Blog", path: "/blog" },
+      { name: "Landing Page Optimization Best Practices 2026", path: "/blog/landing-page-optimization-best-practices-2026" },
+    ],
     readTime: "14 min read",
     ogImage: "/og-default.png",
     featuredImage: "/og-default.png",

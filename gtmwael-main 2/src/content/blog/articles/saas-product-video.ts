@@ -5,11 +5,11 @@ export const saasProductVideo: BlogPost = {
   path: "/blog/saas-product-video",
   category: "Meta Ads for SaaS",
   breadcrumbTitle: "SaaS Product Video",
-  title: "SaaS Product Video: Test Your Product Moment Before Production",
+  title: "SaaS Product Video: Test Before Production",
   h1: "SaaS Product Video: How to Test Your Product Moment Before Production",
-  metaTitle: "SaaS Product Video: Validate Before Production",
+  metaTitle: "SaaS Product Video: Test Before Production",
   description:
-    "Most SaaS product videos fail because the message is wrong, not the production. Here is how to validate your product moment before spending on video.",
+    "A SaaS product video should prove the product moment before you invest in production. Test the message first, then scale the format.",
   searchIntent:
     "Informational and practical. SaaS founders want to understand how to create and use a SaaS product video to explain the product, test ad angles, and improve landing page conversion.",
   excerpt:
@@ -19,6 +19,14 @@ export const saasProductVideo: BlogPost = {
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-05-18",
   dateModified: "2026-05-18",
+  schemaType: "Article",
+  schemaHeadline: "SaaS Product Video: How to Test Your Product Moment Before Production",
+  schemaDateModified: "2026-05-19",
+  schemaIncludeGlobal: false,
+  schemaBreadcrumbs: [
+    { name: "Blog", path: "/blog" },
+    { name: "SaaS Product Video", path: "/blog/saas-product-video" },
+  ],
   readTime: "12 min read",
   ogImage: "/saas-product-video-html-demo-obs-workflow.webp",
   featuredImage: "/saas-product-video-html-demo-obs-workflow.webp",

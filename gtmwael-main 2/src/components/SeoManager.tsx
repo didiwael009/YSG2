@@ -32,33 +32,10 @@ const setLink = (rel: string, href: string) => {
   element.setAttribute("href", href);
 };
 
-const getSchemaTypes = (data: unknown) => {
-  if (!data || typeof data !== "object") return [];
-  const type = (data as { "@type"?: unknown })["@type"];
-  return Array.isArray(type) ? type.filter((item): item is string => typeof item === "string") : typeof type === "string" ? [type] : [];
-};
-
-const findJsonLdByType = (data: unknown) => {
-  const targetTypes = getSchemaTypes(data);
-  if (!targetTypes.length) return null;
-
-  const scripts = document.head.querySelectorAll<HTMLScriptElement>('script[type="application/ld+json"]');
-  for (const script of scripts) {
-    try {
-      const existing = JSON.parse(script.textContent ?? "");
-      const existingTypes = getSchemaTypes(existing);
-      if (targetTypes.some((type) => existingTypes.includes(type))) return script;
-    } catch {
-      continue;
-    }
-  }
-
-  return null;
-};
+const serializeJsonLd = (data: unknown) => JSON.stringify(data).replaceAll("<", "\\u003c");
 
 const setJsonLd = (id: string, data: unknown) => {
   let element = document.getElementById(id) as HTMLScriptElement | null;
-  if (!element) element = findJsonLdByType(data);
   if (!element) {
     element = document.createElement("script");
     element.type = "application/ld+json";
@@ -66,11 +43,7 @@ const setJsonLd = (id: string, data: unknown) => {
   }
   element.id = id;
   element.type = "application/ld+json";
-  element.textContent = JSON.stringify(data);
-};
-
-const removeJsonLd = (id: string) => {
-  document.getElementById(id)?.remove();
+  element.textContent = serializeJsonLd(data);
 };
 
 const cleanImageUrl = (image?: string) => {
@@ -81,6 +54,7 @@ const cleanImageUrl = (image?: string) => {
 const publisherOrganization = {
   "@type": "Organization",
   name: BRAND_NAME,
+  url: SITE_URL,
   logo: {
     "@type": "ImageObject",
     url: `${SITE_URL}/favicon.png`,
@@ -95,6 +69,7 @@ const SeoManager = () => {
     const canonical = getCanonicalUrl(route.path);
     const image = cleanImageUrl(route.image);
     const socialTitle = route.socialTitle ?? route.title;
+    const includeGlobal = route.schemaIncludeGlobal !== false;
 
     document.title = route.title;
     setMeta('meta[name="description"]', "content", route.description);
@@ -111,104 +86,104 @@ const SeoManager = () => {
     setMeta('meta[name="twitter:image"]', "content", image);
     setLink("canonical", canonical);
 
-    const organization = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      name: BRAND_NAME,
-      url: SITE_URL,
-      founder: {
-        "@type": "Person",
-        name: AUTHOR_NAME,
-      },
-      sameAs: [
-        "https://www.linkedin.com/in/aouididi-wael-81b7037a/",
-        "https://www.behance.net/waelaouididi/",
-        "https://www.upwork.com/freelancers/~0141da0e8c48042461",
-      ],
-    };
-
-    const website = {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      name: BRAND_NAME,
-      url: SITE_URL,
-      description: "SaaS GTM strategy, conversion, cold email, SEO, Meta ads, and growth execution by Wael Aouididi.",
-      publisher: publisherOrganization,
-    };
-
-    const isArticle = route.type === "case-study" || route.type === "article";
     const isHome = route.path === "/";
-    const webPage = {
-      "@context": "https://schema.org",
-      "@type": isHome ? "ProfessionalService" : route.schemaType === "Service" ? "Service" : route.type === "article" ? "BlogPosting" : isArticle ? "Article" : "WebPage",
-      ...(route.schemaType === "Service" ? { "@id": `${canonical}#service` } : {}),
-      headline: socialTitle,
-      name: route.title,
-      description: route.description,
-      url: canonical,
-      image,
-      ...(isHome ? { areaServed: "Global", founder: { "@type": "Person", name: AUTHOR_NAME }, provider: { "@type": "Person", name: AUTHOR_NAME } } : {}),
-      ...(route.schemaType === "Service"
+    const graph: unknown[] = [];
+
+    if (includeGlobal) {
+      graph.push(
+        {
+          "@type": "Organization",
+          name: BRAND_NAME,
+          url: SITE_URL,
+          founder: {
+            "@type": "Person",
+            name: AUTHOR_NAME,
+          },
+          sameAs: [
+            "https://www.linkedin.com/in/aouididi-wael-81b7037a/",
+            "https://www.behance.net/waelaouididi/",
+            "https://www.upwork.com/freelancers/~0141da0e8c48042461",
+          ],
+        },
+        {
+          "@type": "WebSite",
+          name: BRAND_NAME,
+          url: SITE_URL,
+          description: "SaaS GTM strategy, conversion, cold email, SEO, Meta ads, and growth execution by Wael Aouididi.",
+          publisher: publisherOrganization,
+        }
+      );
+    }
+
+    graph.push(
+      isHome
         ? {
+            "@type": "ProfessionalService",
+            name: BRAND_NAME,
+            description: route.description,
+            url: canonical,
+            image,
+            areaServed: "Global",
+            founder: { "@type": "Person", name: AUTHOR_NAME },
+            provider: { "@type": "Person", name: AUTHOR_NAME },
+            mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+          }
+        : route.schemaType === "Service"
+        ? {
+            "@type": "Service",
+            "@id": `${canonical}#service`,
+            name: socialTitle,
+            description: route.schemaDescription ?? route.description,
+            url: canonical,
+            image,
             provider: { "@type": "Person", name: AUTHOR_NAME, url: SITE_URL, sameAs: SITE_URL },
             serviceType: route.serviceTypeName ?? "SaaS GTM Strategy and Growth Consulting",
             areaServed: "Worldwide",
             audience: { "@type": "Audience", audienceType: "B2B SaaS Founders" },
+            mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+            publisher: publisherOrganization,
+            ...(route.datePublished ? { datePublished: route.datePublished, dateModified: route.dateModified ?? route.datePublished } : {}),
           }
-        : {}),
-      author: { "@type": "Person", name: AUTHOR_NAME },
-      publisher: publisherOrganization,
-      mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
-      ...(route.datePublished ? { datePublished: route.datePublished, dateModified: route.dateModified ?? route.datePublished } : {}),
-    };
+        : {
+            "@type": route.schemaType === "Article" ? "Article" : route.type === "article" ? "BlogPosting" : route.type === "case-study" ? "Article" : "WebPage",
+            headline: route.schemaHeadline ?? socialTitle,
+            name: route.title,
+            description: route.schemaDescription ?? route.description,
+            url: canonical,
+            image,
+            author: { "@type": "Person", name: AUTHOR_NAME, url: SITE_URL },
+            publisher: publisherOrganization,
+            mainEntityOfPage: { "@type": "WebPage", "@id": canonical },
+            ...(route.schemaDatePublished || route.datePublished
+              ? {
+                  datePublished: route.schemaDatePublished ?? route.datePublished,
+                  dateModified: route.schemaDateModified ?? route.dateModified ?? route.datePublished,
+                }
+              : {}),
+          }
+    );
 
-    const breadcrumbs = {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
-        ...(route.breadcrumbs ?? []).map((crumb, index) => ({
-          "@type": "ListItem",
-          position: index + 2,
-          name: crumb.name,
-          item: getCanonicalUrl(crumb.path),
-        })),
-      ],
-    };
+    const breadcrumbsSource = route.schemaBreadcrumbs === false ? null : route.schemaBreadcrumbs ?? route.breadcrumbs;
+    if (breadcrumbsSource?.length) {
+      graph.push({
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+          ...breadcrumbsSource.map((crumb, index) => ({
+            "@type": "ListItem",
+            position: index + 2,
+            name: crumb.name,
+            item: getCanonicalUrl(crumb.path),
+          })),
+        ],
+      });
+    }
 
-    const person = {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      name: AUTHOR_NAME,
-      url: SITE_URL,
-      jobTitle: "SaaS GTM Strategist",
-      description: "B2B SaaS growth strategist helping founders fix positioning, landing pages, cold email, paid ads, and conversion as one connected GTM system.",
-      sameAs: [
-        "https://www.linkedin.com/in/aouididi-wael-81b7037a/",
-        "https://www.behance.net/waelaouididi/",
-        "https://www.upwork.com/freelancers/~0141da0e8c48042461",
-      ],
-      knowsAbout: [
-        "SaaS GTM Strategy",
-        "B2B Marketing",
-        "Cold Email",
-        "Landing Page Conversion",
-        "Conversion Rate Optimisation",
-        "Meta Ads",
-        "SaaS Positioning",
-      ],
-    };
-
-    setJsonLd("jsonld-organization", organization);
-    setJsonLd("jsonld-person", person);
-    setJsonLd("jsonld-website", website);
-    setJsonLd("jsonld-page", webPage);
-    setJsonLd("jsonld-breadcrumbs", breadcrumbs);
-    if (route.faq?.length) {
-      setJsonLd("jsonld-faq", {
-        "@context": "https://schema.org",
+    const faqSource = route.schemaFaq === false ? null : route.schemaFaq ?? route.faq;
+    if (faqSource?.length) {
+      graph.push({
         "@type": "FAQPage",
-        mainEntity: route.faq.map((item) => ({
+        mainEntity: faqSource.map((item) => ({
           "@type": "Question",
           name: item.question,
           acceptedAnswer: {
@@ -217,9 +192,15 @@ const SeoManager = () => {
           },
         })),
       });
-    } else {
-      removeJsonLd("jsonld-faq");
     }
+
+    document.querySelectorAll('script[type="application/ld+json"][id^="jsonld-"]').forEach((node) => {
+      if ((node as HTMLScriptElement).id !== "jsonld-graph") node.remove();
+    });
+    setJsonLd("jsonld-graph", {
+      "@context": "https://schema.org",
+      "@graph": graph,
+    });
   }, [location.pathname]);
 
   return null;
