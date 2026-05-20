@@ -198,20 +198,6 @@ const SaasMarketingAgency = () => {
                   ))}
                 </ul>
               </AnimateIn>
-              <AnimateIn delay={280}>
-                <div className="flex flex-wrap gap-6 mb-8">
-                  {[
-                    { stat: "4×", label: "revenue growth (Zembra)" },
-                    { stat: "3×", label: "conversion lift (Pubrella)" },
-                    { stat: "50%", label: "cold email open rate" },
-                  ].map(({ stat, label }) => (
-                    <div key={label} className="flex items-baseline gap-2">
-                      <span className="font-display text-2xl font-black text-primary">{stat}</span>
-                      <span className="text-white/60 text-xs leading-tight max-w-[80px]">{label}</span>
-                    </div>
-                  ))}
-                </div>
-              </AnimateIn>
               <AnimateIn delay={300}>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button variant="hero" size="xl" className="group" asChild>
@@ -293,7 +279,7 @@ const SaasMarketingAgency = () => {
       {/* ══════════════════════════════════════════════
           3. WHO IT'S FOR — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 bg-background rounded-t-[32px] shadow-[0_-36px_90px_rgba(0,0,0,0.20)]">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
             <AnimateIn delay={100}>
@@ -350,19 +336,12 @@ const SaasMarketingAgency = () => {
             </h2>
           </AnimateIn>
 
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-3xl mx-auto border-t border-[#11111f]/10">
             {engagementSteps.map((step, i) => (
               <AnimateIn key={step.number} delay={150 + i * 80}>
-                <div className="grid grid-cols-[64px_1fr] gap-6 py-8">
-                  <div className="flex flex-col items-center">
-                    <div className="w-9 h-9 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-[11px] font-black tracking-widest text-primary flex-shrink-0">
-                      {step.number}
-                    </div>
-                    {i < engagementSteps.length - 1 && (
-                      <div className="w-px flex-1 bg-[#11111f]/10 mt-2" />
-                    )}
-                  </div>
-                  <div className="pb-8">
+                <div className="grid grid-cols-[64px_1fr] gap-6 border-b border-[#11111f]/10 py-8">
+                  <div className="text-[13px] font-black tracking-widest text-primary pt-1">{step.number}</div>
+                  <div>
                     <h3 className="font-display text-xl font-bold text-[#11101a] mb-2">{step.title}</h3>
                     <p className="text-[#4d4658] leading-relaxed text-[15.5px]">{step.body}</p>
                   </div>
@@ -376,7 +355,7 @@ const SaasMarketingAgency = () => {
       {/* ══════════════════════════════════════════════
           5. WHAT I FIX — dark
       ══════════════════════════════════════════════ */}
-      <section className="py-24 md:py-32 bg-background rounded-t-[32px] shadow-[0_-36px_90px_rgba(0,0,0,0.20)]">
+      <section className="py-24 md:py-32 bg-background">
         <div className="container mx-auto px-6">
           <AnimateIn delay={100} className="text-center mb-14">
             <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
@@ -442,11 +421,8 @@ const SaasMarketingAgency = () => {
                       {item.tag}
                     </span>
                   </div>
-                  <p className="text-lg font-black text-primary mb-3 border-l-[3px] border-primary pl-3">{item.result}</p>
-                  <p className="text-[#4d4658] text-sm leading-relaxed mb-4">{item.body}</p>
-                  <Link to={item.path} className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline">
-                    View case study <ArrowRight className="w-3 h-3" />
-                  </Link>
+                  <p className="text-sm font-black text-primary mb-3">{item.result}</p>
+                  <p className="text-[#4d4658] text-sm leading-relaxed">{item.body}</p>
                 </div>
               </AnimateIn>
             ))}
@@ -478,8 +454,8 @@ const SaasMarketingAgency = () => {
               Why This Is Different From a Typical B2B SaaS Marketing Agency
             </h2>
             <div className="grid md:grid-cols-2 gap-5">
-              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 opacity-70">
-                <p className="text-[11px] font-black uppercase tracking-widest text-white/30 mb-4 line-through">Typical Agency</p>
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
+                <p className="text-[11px] font-black uppercase tracking-widest text-white/40 mb-4">Typical Agency</p>
                 <ul className="space-y-3">
                   {[
                     "One person for content, one for ads, one for design",
@@ -494,7 +470,7 @@ const SaasMarketingAgency = () => {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-2xl border border-primary/40 bg-primary/10 p-6 shadow-[0_0_40px_rgba(124,60,255,0.12)]">
+              <div className="rounded-2xl border border-primary/30 bg-primary/5 p-6">
                 <p className="text-[11px] font-black uppercase tracking-widest text-primary mb-4">What I Do</p>
                 <ul className="space-y-3">
                   {[
