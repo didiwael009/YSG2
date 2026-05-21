@@ -5,11 +5,11 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
     path: "/blog/ai-conversion-rate-optimization-saas",
     category: "SaaS CRO",
     breadcrumbTitle: "AI Conversion Rate Optimization",
-    title: "AI Conversion Rate Optimization for SaaS: What Works",
+    title: "AI Conversion Rate Optimization for SaaS: Fix First",
     h1: "AI Conversion Rate Optimization for SaaS: What Actually Works",
-    metaTitle: "AI Conversion Rate Optimization for SaaS: What Works",
+    metaTitle: "AI Conversion Rate Optimization for SaaS: Fix First",
     description:
-      "AI conversion rate optimization for SaaS works best after the funnel basics are solid. Fix positioning, proof, and CTAs before adding tools.",
+      "AI CRO works after the funnel basics are clear. Learn what SaaS teams should fix before adding AI personalization, chatbots, or funnel tools.",
     searchIntent:
       "SaaS founders and marketers evaluating where AI conversion rate optimization can improve demos, activation, onboarding, and trial-to-paid conversion.",
     excerpt:
