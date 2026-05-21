@@ -426,27 +426,27 @@ export const seoRoutes: SeoRoute[] = [
       {
         question: "How do I know if my SaaS landing page needs optimisation?",
         answer:
-          "If the page receives qualified traffic but demo bookings are weak or inconsistent, the page needs work. Look for visitors landing and leaving without scrolling past the hero, high mobile bounce rates, a low CTA click rate relative to your traffic source, or a demo booking rate that feels out of proportion to spend.",
+          "If your page receives qualified traffic but demo bookings are weak or inconsistent, the page needs work. Specific signals: visitors landing and leaving without scrolling past the hero, high mobile bounce rates, a low CTA click rate relative to your traffic source, or a demo booking rate that feels disproportionate to spend. Any of these individually is enough to run through the audit checklist. The exact right numbers depend on your traffic source, ICP, and offer, but the pattern is what matters: qualified traffic in, no conversions out.",
       },
       {
         question: "What is the most common SaaS landing page conversion mistake?",
         answer:
-          "Leading with features instead of outcomes. The headline describes the product category instead of the specific result a named buyer gets. The visitor reads it, does not feel recognised as the target, and leaves.",
+          "Leading with features instead of outcomes. The headline describes the product category instead of the specific result a named buyer gets. The visitor reads it, does not feel recognised as the target, and leaves. Every other optimisation is secondary to getting the hero message right.",
       },
       {
         question: "Should I use the same landing page for paid ads and SEO traffic?",
         answer:
-          "Not always. Paid visitors often need more context, more proof, and a softer first ask. Search visitors often arrive further along in the decision process. A dedicated paid landing page with message match to the ad will usually outperform a shared page.",
+          "Not always. Paid traffic, especially from Meta Ads, arrives with a different state of mind than organic search traffic. Paid visitors often need more context, more proof, and a softer first ask. Search visitors often arrive further along in the decision process. The same page can serve both if it is well-structured, but a dedicated paid landing page with message match to the ad will almost always outperform a shared page.",
       },
       {
         question: "How long should a SaaS landing page be?",
         answer:
-          "Long enough to earn the conversion, short enough to hold attention. For most B2B SaaS demo request pages, five to seven clear sections is the right range: hero, problem, what you fix, proof, process or deliverables, and CTA.",
+          "Long enough to earn the conversion, short enough to hold attention. For most B2B SaaS demo request pages, five to seven clear sections is the right range: hero, problem, what you fix, proof, process or deliverables, and CTA. Length matters less than whether each section earns the next scroll.",
       },
       {
         question: "What is a good conversion rate for a SaaS demo request page?",
         answer:
-          "Context matters: traffic source, ICP specificity, offer type, ACV, and buying urgency all affect conversion rates. For warm SaaS traffic, 2-5% can be a useful benchmark range, but the right number depends on your setup. Below roughly 1% from qualified traffic usually signals a messaging, trust, or friction problem worth diagnosing before scaling acquisition.",
+          "Context matters: traffic source, ICP specificity, offer type, ACV, and buying urgency all affect conversion rates. For warm SaaS traffic, 2-5% can be a useful benchmark range, but the right number depends on your specific setup. Below roughly 1% from qualified traffic almost always signals a messaging, trust, or friction problem worth diagnosing before scaling any acquisition channel.",
       },
     ],
     priority: 0.75,
@@ -477,22 +477,22 @@ export const seoRoutes: SeoRoute[] = [
       {
         question: "Is Google Ads or Meta Ads better for B2B SaaS?",
         answer:
-          "Neither is universally better. Google Ads works better when buyers are already searching for a solution — it captures existing demand. Meta Ads works better when buyers are not yet searching and need to be made aware of the problem or category.",
+          "Neither is universally better. Google Ads works better when buyers are already searching for a solution — it captures existing demand. Meta Ads works better when buyers are not yet searching and need to be made aware of the problem or category. The right starting point depends on whether your ICP searches for solutions like yours and whether search volume is sufficient to run a meaningful campaign.",
       },
       {
         question: "How much budget do I need to test Google Ads for SaaS?",
         answer:
-          "A practical starting budget is often around $2,000-3,000 per month to get enough signal to optimise. Below that, clicks are usually too few to identify which keywords and ads are working and which are wasting budget.",
+          "A practical starting budget is often around $2,000-3,000 per month to get enough signal to optimise. Below that, clicks are usually too few to identify which keywords and ads are working and which are wasting budget. If that minimum is not available, Meta Ads offers more creative testing options at lower CPMs and may be a better starting point.",
       },
       {
         question: "Can I run Google Ads and Meta Ads at the same time for SaaS?",
         answer:
-          "Yes, but only after at least one channel is optimised. Running both from day one on a limited budget produces weak signal from both.",
+          "Yes, but only after at least one channel is optimised. Running both from day one on a limited budget produces weak signal from both. Start with the channel that best fits the current ICP and offer, get it working, then layer in the second — ideally using Meta to retarget audiences built from Google traffic.",
       },
       {
         question: "What landing page do I need for Google Ads vs Meta Ads?",
         answer:
-          "They are different. Google traffic needs a short, intent-matched page. Meta traffic needs more context, education, and proof before asking for the demo.",
+          "They are different. A Google Ads landing page should confirm the search query intent immediately, move fast to the CTA, and keep the page short and direct. A Meta Ads landing page needs to build context, educate the visitor about the problem, and use a softer first ask. The same page rarely serves both well.",
       },
     ],
     priority: 0.7,
@@ -534,27 +534,27 @@ export const seoRoutes: SeoRoute[] = [
       {
         question: "How many cold emails should I send per day for SaaS outreach?",
         answer:
-          "Start conservatively, watch bounce rates, spam complaints, replies, and domain health, then increase slowly. A tight list with strong targeting beats a huge spray-and-pray list every time.",
+          "Start conservatively, monitor bounce rates, spam complaints, replies, and domain health, then increase slowly. Specific daily caps depend on inbox age, sender reputation, and current mailbox provider rules, all of which change. The pattern that works for most early-stage SaaS teams is the same regardless of the exact numbers: a well-targeted list of a few hundred contacts per month outperforms a spray-and-pray approach at 5,000+.",
       },
       {
         question: "What is a good cold email reply rate for B2B SaaS?",
         answer:
-          "Reply-rate benchmarks vary by ICP, offer, market, data quality, and deliverability. Generic campaigns often sit in the low single digits. Tight targeting and a real offer angle should perform materially better.",
+          "Reply-rate benchmarks vary heavily by ICP, offer, market, data quality, and deliverability. Generic campaigns often sit in the low single digits. A tight, personalised campaign, verified list, properly warmed domain, real offer angle, should perform materially better. The point is less about hitting a specific percentage and more about whether the system is working: if qualified replies are flat or declining, the leak needs to be diagnosed before sending more volume.",
       },
       {
         question: "Do I need a separate domain for cold email?",
         answer:
-          "Yes. Sending cold email from your primary domain puts your main email reputation at risk. A secondary sending domain, correctly configured and warmed up, keeps outbound isolated.",
+          "Yes. Sending cold email from your primary domain puts your main email reputation at risk. If deliverability drops or the domain gets flagged, it affects every email from that domain, including transactional emails, product notifications, and support replies. A secondary sending domain, correctly configured and warmed up, keeps outbound isolated.",
       },
       {
         question: "How long should a B2B cold email sequence be?",
         answer:
-          "Three to five emails works best for most B2B SaaS outreach. The first email identifies the problem, the follow-ups add new angles, and the final email gives a clear close or break-up framing.",
+          "Three to five emails for most B2B SaaS outreach. The first email identifies the problem and makes a low-friction ask. Follow-up emails add new angles or proof points, not \"just checking in\" reminders. The final email is a clear close or break-up framing. Long sequences with no new argument per email tend to raise spam complaints; very short sequences leave replies on the table.",
       },
       {
         question: "What is the difference between cold email and email marketing?",
         answer:
-          "Cold email is outbound outreach to people who have not opted in. Email marketing is permission-based communication to subscribers. The infrastructure, legal requirements, and best practices for each are different.",
+          "Cold email is outbound outreach to people who have not opted in to hear from you. It is one-to-one in tone, highly targeted, and focused on starting a conversation, not broadcasting a message. Email marketing is permission-based, sent to subscribers who have opted in, and typically used for nurture, product updates, and retention. The technical infrastructure, legal requirements, and best practices for each are different.",
       },
     ],
   },
@@ -622,27 +622,27 @@ export const seoRoutes: SeoRoute[] = [
       {
         question: "What is a lead generation landing page for SaaS?",
         answer:
-          "A lead generation landing page for SaaS is a focused page designed to capture qualified contact information from visitors coming from a specific traffic source. Unlike a homepage, it serves one audience, one offer, and one conversion action. It removes navigation and distractions to keep attention on the primary CTA.",
+          "A lead generation landing page for SaaS is a focused page designed to capture qualified contact information from visitors coming from a specific traffic source. Unlike a homepage, it serves one audience, one offer, and one conversion action. It removes navigation and distractions to keep attention on the primary CTA, typically a demo request, trial signup, or consultation booking.",
       },
       {
         question: "How is a lead page different from a product page?",
         answer:
-          "A product page explains what the product does — features, use cases, integrations, and pricing. A lead page exists to convert one specific type of visitor into a lead for one specific next step. Product pages support evaluation. Lead pages support conversion.",
+          "A product page explains what the product does: its features, use cases, integrations, and pricing. A lead page exists to convert one specific type of visitor into a lead for one specific next step. Product pages support evaluation. Lead pages support conversion. They serve different moments in the buyer journey and should be built separately.",
       },
       {
         question: "What should a SaaS lead page headline say?",
         answer:
-          "The headline should name the specific problem your ICP is trying to solve — not describe your product. A headline that names a recognisable frustration earns the scroll. A headline that describes a product category does not.",
+          "The headline should name the specific problem your ICP is trying to solve, not describe your product. Visitors from paid or outbound traffic have already seen your ad or email. The page headline confirms they are in the right place. A headline that names a recognisable frustration earns the scroll. A headline that describes a product category does not.",
       },
       {
         question: "How do I reduce friction on a SaaS lead generation form?",
         answer:
-          "Remove fields that exist for CRM purposes rather than the visitor's journey. Name and email is sufficient for most B2B SaaS demo requests. Add a maximum of one qualification question if lead scoring requires it. Remove phone number fields unless your sales team calls before demos.",
+          "Remove fields that exist for CRM purposes rather than the visitor's journey. Name and email is sufficient for most B2B SaaS demo requests. Add a maximum of one qualification question if lead scoring requires it. Remove phone number fields unless your sales team calls before demos. Every additional field costs you submissions, so the question is whether the qualification value outweighs the conversion cost.",
       },
       {
         question: "What is a good conversion rate for a SaaS lead generation page?",
         answer:
-          "Context matters: traffic source, offer type, ICP specificity, ACV, and buying urgency all affect conversion rates. For warm, targeted SaaS paid traffic, 3-8% can be a useful benchmark range, but the right number depends on your specific setup. Below 1% from qualified paid traffic is a signal to diagnose message, proof, or friction before increasing spend. See the SaaS CRO specialist page for how conversion diagnosis works.",
+          "Context matters: traffic source, offer type, ICP specificity, ACV, and buying urgency all affect conversion rates. For warm, targeted SaaS paid traffic, 3-8% can be a useful benchmark range, but the right number depends on your specific setup. Pages receiving broad awareness traffic will convert lower. Below 1% from any qualified paid traffic is a signal to diagnose the message, proof, or friction before increasing spend.",
       },
     ],
     priority: 0.75,
@@ -672,17 +672,17 @@ export const seoRoutes: SeoRoute[] = [
       {
         question: "How many LinkedIn connection requests should I send per week for SaaS outreach?",
         answer:
-          "LinkedIn adjusts limits based on account type, history, and policy, so the operating principle is to stay well within whatever the current cap appears to be for your account. In practice, 20–40 highly targeted connections per week produces better results than pushing volume. Quality of targeting matters more than raw volume on LinkedIn.",
+          "Treat the limit as variable because LinkedIn adjusts thresholds based on account type, history, and policy, and stay well within whatever the current cap appears to be for your account. In practice, 20-40 highly targeted connections per week produces better results than pushing volume. Quality of targeting matters more than volume on LinkedIn. A connection from someone who matches your ICP precisely is worth ten connections from people who roughly match a job title filter.",
       },
       {
         question: "Should I use LinkedIn or cold email for B2B SaaS outreach?",
         answer:
-          "Both, used together. LinkedIn alone has connection limits that cap reach. Cold email alone misses the trust signals that LinkedIn content and profile visibility create. The combination — where LinkedIn warms the prospect before email arrives — generally outperforms either channel in isolation.",
+          "Both, used together. LinkedIn alone has connection limits that cap reach. Cold email alone misses the trust signals that LinkedIn content and profile visibility create. The combination, where LinkedIn warms the prospect before email arrives, generally outperforms either channel in isolation.",
       },
       {
         question: "What should I say in a LinkedIn connection request for SaaS?",
         answer:
-          "Reference something specific about the person or their company. One observation, one connection to a relevant problem, no CTA. The connection request earns the right to continue the conversation — it does not pitch the product.",
+          "Reference something specific about the person or their company. One observation, one connection to a relevant problem, no CTA. The connection request earns the right to continue the conversation; it does not pitch the product. Keep it under three sentences. If you cannot be specific, do not send it yet.",
       },
       {
         question: "Does LinkedIn outreach work without Sales Navigator?",
@@ -692,7 +692,7 @@ export const seoRoutes: SeoRoute[] = [
       {
         question: "How do I warm up a LinkedIn profile before outreach?",
         answer:
-          "Publish two to three pieces of content relevant to your ICP's problems over 3–4 weeks before starting connection-based outreach. Engage genuinely with posts from people in your target audience — comments that add a specific observation, not generic agreement.",
+          "Publish two to three pieces of content relevant to your ICP's problems over 3-4 weeks before starting connection-based outreach. Engage genuinely with posts from people in your target audience: comments that add a specific observation, not generic agreement. This builds profile visibility and demonstrates expertise before a connection request arrives. A prospect who has seen your content once is more likely to accept and respond.",
       },
     ],
     priority: 0.7,
