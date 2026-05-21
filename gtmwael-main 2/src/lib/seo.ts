@@ -498,6 +498,7 @@ export const seoRoutes: SeoRoute[] = [
     priority: 0.7,
     changefreq: "monthly",
     datePublished: "2026-05-16",
+    dateModified: "2026-05-19",
     links: [
       { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
       { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
@@ -516,7 +517,7 @@ export const seoRoutes: SeoRoute[] = [
     schemaDatePublished: "2026-05-19",
     schemaDateModified: "2026-05-19",
     schemaIncludeGlobal: false,
-    schemaBreadcrumbs: false,
+    schemaBreadcrumbs: [{ name: "SaaS Cold Email Strategy", path: "/saas-cold-email-strategy" }],
     priority: 0.75,
     changefreq: "monthly",
     image: "/cold-email-for-saas-outreach-strategy-wael-aouididi.webp",
