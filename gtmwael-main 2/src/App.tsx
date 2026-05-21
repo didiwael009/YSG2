@@ -1,5 +1,5 @@
 import { lazy, Suspense, type ReactNode } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import SeoManager from "./components/SeoManager";
 import Index from "./pages/Index";
@@ -10,12 +10,9 @@ import CaseStudies from "./pages/CaseStudies";
 import CaseStudyPubrella from "./pages/CaseStudyPubrella";
 import CaseStudyShipzzer from "./pages/CaseStudyShipzzer";
 import CaseStudyZembra from "./pages/CaseStudyZembra";
-import ColdEmail from "./pages/ColdEmail";
 import ColdEmailForSaas from "./pages/ColdEmailForSaas";
 import ConversionRateOptimisationSpecialist from "./pages/ConversionRateOptimisationSpecialist";
-import LandingPageConversion from "./pages/LandingPageConversion";
 import LandingPageForSaas from "./pages/LandingPageForSaas";
-import MetaAds from "./pages/MetaAds";
 import MetaAdsForSaas from "./pages/MetaAdsForSaas";
 import SaasMarketingAgency from "./pages/SaasMarketingAgency";
 // SEO-critical article pages — direct imports so renderToString can prerender them
@@ -49,8 +46,8 @@ export const AppRoutes = () => (
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/creative" element={<Creative />} />
-      <Route path="/services/cold-email" element={<ColdEmail />} />
-      <Route path="/services/meta-ads" element={<MetaAds />} />
+      <Route path="/services/cold-email" element={<Navigate to="/cold-email-for-saas" replace />} />
+      <Route path="/services/meta-ads" element={<Navigate to="/meta-ads-for-saas" replace />} />
       <Route path="/case-studies" element={<CaseStudies />} />
       <Route path="/case-study/write-your-book" element={<CaseStudyWriteYourBook />} />
       <Route path="/case-study/growapp" element={<CaseStudyGrowapp />} />
@@ -61,7 +58,7 @@ export const AppRoutes = () => (
       <Route path="/case-study/bottlenexus" element={<CaseStudyBottlenexus />} />
       <Route path="/case-study/ic-center" element={<CaseStudyICCenter />} />
       <Route path="/creative/community-management" element={lazyRoute(<CommunityManagement />)} />
-      <Route path="/services/landing-page" element={<LandingPageConversion />} />
+      <Route path="/services/landing-page" element={<Navigate to="/landing-page-for-saas" replace />} />
       <Route path="/saas-marketing-agency" element={<SaasMarketingAgency />} />
       <Route path="/cold-email-for-saas" element={<ColdEmailForSaas />} />
       <Route path="/landing-page-for-saas" element={<LandingPageForSaas />} />

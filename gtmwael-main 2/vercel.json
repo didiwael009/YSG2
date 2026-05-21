@@ -21,6 +21,21 @@
   ],
   "redirects": [
     {
+      "source": "/services/cold-email",
+      "destination": "/cold-email-for-saas",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/meta-ads",
+      "destination": "/meta-ads-for-saas",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/landing-page",
+      "destination": "/landing-page-for-saas",
+      "statusCode": 301
+    },
+    {
       "source": "/(.+)/",
       "has": [
         {

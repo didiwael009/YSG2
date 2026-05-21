@@ -27,13 +27,10 @@ export const prerenderRoutePaths = [
   "/case-study/zembra",
   "/case-study/pubrella",
   "/pricing",
-  "/services/landing-page",
   "/saas-marketing-agency",
   "/cold-email-for-saas",
   "/landing-page-for-saas",
   "/conversion-rate-optimisation-specialist",
-  "/services/cold-email",
-  "/services/meta-ads",
   "/meta-ads-for-saas",
   "/book",
   "/saas-marketing-plan",
@@ -60,7 +57,7 @@ export const routeContent = {
     ],
     links: [
       { label: "Explore SaaS growth case studies", path: "/case-studies" },
-      { label: "Review SaaS landing page conversion work", path: "/services/landing-page" },
+      { label: "Review SaaS landing page conversion work", path: "/landing-page-for-saas" },
       { label: "Book a 20-minute SaaS GTM audit", path: "/book" },
     ],
   },
@@ -91,7 +88,7 @@ export const routeContent = {
     ],
     links: [
       { label: "Read the SaaS landing page article", path: "/blog/saas-landing-page-google-meta-ads" },
-      { label: "Review landing page conversion service", path: "/services/landing-page" },
+      { label: "Review landing page conversion service", path: "/landing-page-for-saas" },
       { label: "Explore SaaS case studies", path: "/case-studies" },
     ],
   },
@@ -115,45 +112,6 @@ export const routeContent = {
       { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
       { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
       { label: "Book a landing page audit", path: "/book" },
-    ],
-  },
-  "/services/cold-email": {
-    intro: "A cold email service for B2B SaaS teams that need cleaner targeting, stronger messaging, deliverability basics, and qualified conversations without spam.",
-    sections: [
-      {
-        heading: "What the cold email system covers",
-        body: "The system includes ICP segmentation, list logic, offer framing, sequence writing, deliverability setup, testing, and weekly iteration on the data.",
-      },
-      {
-        heading: "Relevant proof",
-        body: "Shipzzer used the approach to reach a 50% open rate and 7% reply rate, while Zembra used outbound as part of a broader rebrand and GTM alignment project.",
-      },
-    ],
-  },
-  "/services/meta-ads": {
-    intro: "Meta ads strategy for SaaS and B2B offers where creative testing, tracking, retargeting, and buyer signals matter more than broad campaign volume.",
-    sections: [
-      {
-        heading: "Campaign foundations",
-        body: "The service focuses on offer clarity, creative angles, tracking quality, audience structure, landing page fit, and disciplined campaign decisions.",
-      },
-      {
-        heading: "When this service fits",
-        body: "Meta ads are most useful when the offer has a clear promise, a conversion path, and enough creative variation to test what the market responds to.",
-      },
-    ],
-  },
-  "/services/landing-page": {
-    intro: "A SaaS landing page conversion service for teams that have traffic or product value but need sharper messaging, proof, structure, and CTA hierarchy.",
-    sections: [
-      {
-        heading: "Conversion work included",
-        body: "The work covers hero message clarity, offer positioning, proof placement, objections, page flow, form friction, and stronger calls to action.",
-      },
-      {
-        heading: "Relevant proof",
-        body: "Pubrella focused on conversion rate improvement, Screenplay focused on guided product flow, and Shipzzer focused on buyer-intent page structure.",
-      },
     ],
   },
   "/cold-email-for-saas": {
@@ -223,9 +181,9 @@ export const routeContent = {
       },
     ],
     links: [
-      { label: "SaaS landing page strategy", path: "/services/landing-page" },
-      { label: "Cold email for SaaS", path: "/services/cold-email" },
-      { label: "Meta Ads for SaaS", path: "/services/meta-ads" },
+      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
+      { label: "Cold email for SaaS", path: "/cold-email-for-saas" },
+      { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
       { label: "Book a 20-min GTM Audit", path: "/book" },
     ],
   },
@@ -558,7 +516,7 @@ export const routeContent = {
       },
     ],
     links: [
-      { label: "Review landing page conversion service", path: "/services/landing-page" },
+      { label: "Review landing page conversion service", path: "/landing-page-for-saas" },
       { label: "View more SaaS case studies", path: "/case-studies" },
     ],
   },

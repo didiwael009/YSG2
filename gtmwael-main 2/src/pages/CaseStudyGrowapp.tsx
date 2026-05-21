@@ -26,7 +26,7 @@ const CaseStudyGrowapp = () => {
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           <Link 
-            to="/services/meta-ads" 
+            to="/meta-ads-for-saas" 
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors mb-8"
           >
             <ArrowLeft className="w-4 h-4" />
@@ -371,7 +371,7 @@ const CaseStudyGrowapp = () => {
           <p className="text-lg text-muted-foreground mb-8">Let's build a GTM system that actually converts.</p>
           
           <Button variant="hero" size="xl" asChild>
-            <Link to="/services/meta-ads#audit">Get Your Free GTM Audit</Link>
+            <Link to="/meta-ads-for-saas#audit">Get Your Free GTM Audit</Link>
           </Button>
         </div>
       </section>

@@ -44,8 +44,8 @@ export const seoRoutes: SeoRoute[] = [
     links: [
       { label: "SaaS growth case studies", path: "/case-studies" },
       { label: "SaaS growth blog", path: "/blog" },
-      { label: "Cold email service", path: "/services/cold-email" },
-      { label: "Landing page conversion service", path: "/services/landing-page" },
+      { label: "Cold email service", path: "/cold-email-for-saas" },
+      { label: "Landing page conversion service", path: "/landing-page-for-saas" },
       { label: "Book a GTM audit", path: "/book" },
     ],
   },
@@ -74,49 +74,8 @@ export const seoRoutes: SeoRoute[] = [
     breadcrumbs: [{ name: "Blog", path: "/blog" }],
     links: [
       { label: "SaaS landing page article", path: "/blog/saas-landing-page-google-meta-ads" },
-      { label: "Landing page conversion service", path: "/services/landing-page" },
-      { label: "Meta ads service", path: "/services/meta-ads" },
-    ],
-  },
-  {
-    path: "/services/cold-email",
-    title: "Cold Email Engine for B2B SaaS | Your SaaS Growth",
-    description: "Build a B2B SaaS cold email system with ICP segmentation, deliverability, message testing, and qualified pipeline generation.",
-    type: "service",
-    priority: 0.85,
-    changefreq: "monthly",
-    breadcrumbs: [{ name: "Services", path: "/" }, { name: "Cold Email", path: "/services/cold-email" }],
-    links: [
-      { label: "Shipzzer cold email case study", path: "/case-study/shipzzer" },
-      { label: "Zembra outbound revamp case study", path: "/case-study/zembra" },
-      { label: "Book a cold email audit", path: "/book" },
-    ],
-  },
-  {
-    path: "/services/meta-ads",
-    title: "Meta Ads for SaaS Growth | Your SaaS Growth",
-    description: "Meta ads strategy for SaaS and B2B offers: tracking, buyer signals, creative testing, retargeting, and CPA-focused optimization.",
-    type: "service",
-    priority: 0.8,
-    changefreq: "monthly",
-    breadcrumbs: [{ name: "Services", path: "/" }, { name: "Meta Ads", path: "/services/meta-ads" }],
-    links: [
-      { label: "Growapp Meta ads case study", path: "/case-study/growapp" },
-      { label: "Download the Meta ads playbook", path: "/wael-growth-playbook-2026.pdf" },
-    ],
-  },
-  {
-    path: "/services/landing-page",
-    title: "SaaS Landing Page Conversion Service | Your SaaS Growth",
-    description: "Improve SaaS landing page conversion with sharper positioning, clearer page structure, stronger proof, and CTA hierarchy.",
-    type: "service",
-    priority: 0.85,
-    changefreq: "monthly",
-    breadcrumbs: [{ name: "Services", path: "/" }, { name: "Landing Page Conversion", path: "/services/landing-page" }],
-    links: [
-      { label: "Pubrella landing page CRO case study", path: "/case-study/pubrella" },
-      { label: "Screenplay funnel case study", path: "/case-study/screenplay" },
-      { label: "Book a landing page audit", path: "/book" },
+      { label: "Landing page conversion service", path: "/landing-page-for-saas" },
+      { label: "Meta ads service", path: "/meta-ads-for-saas" },
     ],
   },
   {
@@ -762,8 +721,8 @@ export const seoRoutes: SeoRoute[] = [
     image: "/assets/shipzzer-new-landing.webp",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Shipzzer", path: "/case-study/shipzzer" }],
     links: [
-      { label: "Cold email service", path: "/services/cold-email" },
-      { label: "Landing page conversion service", path: "/services/landing-page" },
+      { label: "Cold email service", path: "/cold-email-for-saas" },
+      { label: "Landing page conversion service", path: "/landing-page-for-saas" },
     ],
   },
   {
@@ -776,7 +735,7 @@ export const seoRoutes: SeoRoute[] = [
     image: "/assets/landing-screenplay.webp",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Screenplay", path: "/case-study/screenplay" }],
     links: [
-      { label: "Landing page conversion service", path: "/services/landing-page" },
+      { label: "Landing page conversion service", path: "/landing-page-for-saas" },
       { label: "Book a funnel audit", path: "/book" },
     ],
   },
@@ -790,7 +749,7 @@ export const seoRoutes: SeoRoute[] = [
     image: "/assets/landing-zembra.png",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Zembra", path: "/case-study/zembra" }],
     links: [
-      { label: "Cold email service", path: "/services/cold-email" },
+      { label: "Cold email service", path: "/cold-email-for-saas" },
       { label: "Book a rebrand audit", path: "/book" },
     ],
   },
@@ -804,7 +763,7 @@ export const seoRoutes: SeoRoute[] = [
     image: "/assets/pubrella-after.jpg",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Pubrella", path: "/case-study/pubrella" }],
     links: [
-      { label: "Landing page conversion service", path: "/services/landing-page" },
+      { label: "Landing page conversion service", path: "/landing-page-for-saas" },
       { label: "Book a landing page audit", path: "/book" },
     ],
   },
@@ -825,7 +784,7 @@ export const seoRoutes: SeoRoute[] = [
     priority: 0.6,
     changefreq: "monthly",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Write Your Book", path: "/case-study/write-your-book" }],
-    links: [{ label: "Meta ads service", path: "/services/meta-ads" }],
+    links: [{ label: "Meta ads service", path: "/meta-ads-for-saas" }],
   },
   {
     path: "/case-study/growapp",
@@ -836,7 +795,7 @@ export const seoRoutes: SeoRoute[] = [
     changefreq: "monthly",
     image: "/assets/growapp-meta-dashboard.png",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "Growapp", path: "/case-study/growapp" }],
-    links: [{ label: "Meta ads service", path: "/services/meta-ads" }],
+    links: [{ label: "Meta ads service", path: "/meta-ads-for-saas" }],
   },
   {
     path: "/case-study/bottlenexus",
