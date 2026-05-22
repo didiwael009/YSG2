@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle2, FileText, Layout, MessageSquare, Shield, Smartphone, Zap } from "lucide-react";
+import { ArrowRight, CheckCircle2, ExternalLink, FileText, Layout, MessageSquare, Shield, Smartphone, Star, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimateIn from "@/components/AnimateIn";
 import Footer from "@/components/Footer";
@@ -148,12 +148,14 @@ const proofItems = [
     tag: "Hero + Proof Rebuild",
     result: "Contributed to 4× revenue growth",
     body: "The page had no clear ICP signal and generic proof. Repositioned the hero, rebuilt the proof section, and aligned the page with the outbound traffic flow.",
+    href: "/case-study/zembra",
   },
   {
     company: "Shipzzer",
     tag: "ICP Messaging + SEO",
     result: "Top-3 organic rankings · Stronger ICP clarity",
     body: "Reworked the messaging for freight-forwarding operators, then aligned the page with the broader GTM strategy and SEO foundations.",
+    href: "/case-study/shipzzer",
   },
   {
     company: "GrowApp",
@@ -166,6 +168,29 @@ const proofItems = [
     tag: "Rebrand + Paid Acquisition",
     result: "Paid traffic with a conversion-ready destination",
     body: "Full creative rebrand, landing page restructure, and paid acquisition support — connecting ad creative to a conversion-ready page for the first time.",
+  },
+];
+
+const projectReferences = [
+  {
+    name: "Pubrella",
+    result: "3× visit → signup conversion",
+    body: "Full SaaS rebrand, positioning, brand messaging, and conversion-focused landing page restructure.",
+    href: "https://pubrella.com/",
+    caseStudyHref: "/case-study/pubrella",
+  },
+  {
+    name: "Screenplay Performance Studio",
+    result: "Landing page + funnel + product UI/UX",
+    body: "Moved the interactive demo into the hero, rewrote the headline around the emotional product moment, and restructured the funnel from hero to proof to CTA.",
+    href: "https://screenplayperformancestudio.com/landing.html",
+    caseStudyHref: "/case-study/screenplay",
+  },
+  {
+    name: "Clarrio.ai",
+    result: "Structured demo funnel",
+    body: "Healthcare AI messaging and conversion flow direction, focused on explaining the offer clearly enough to earn the demo.",
+    href: "https://clarrio.ai",
   },
 ];
 
@@ -418,6 +443,22 @@ const LandingPageForSaas = () => {
             </p>
           </AnimateIn>
 
+          <AnimateIn delay={140} className="mx-auto mb-8 max-w-3xl">
+            <div className="rounded-2xl border border-primary/20 bg-primary/5 p-7 md:p-8">
+              <div className="mb-4 flex items-center gap-3">
+                <div className="flex gap-0.5">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                  ))}
+                </div>
+                <span className="text-xs font-black uppercase tracking-widest text-primary">Pubrella · Early-stage GTM</span>
+              </div>
+              <blockquote className="text-[#11101a] text-lg leading-relaxed">
+                "Wael acted as a growth partner. We started with positioning, brand messaging and copy; then traffic with clean tracking; then analytics-led CRO. With this trust-traffic-analytics approach and a refreshed landing, our visit to signup conversion improved by about 3×."
+              </blockquote>
+            </div>
+          </AnimateIn>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto mb-10">
             {proofItems.map((item, i) => (
               <AnimateIn key={item.company} delay={150 + i * 80}>
@@ -430,7 +471,42 @@ const LandingPageForSaas = () => {
                   </div>
                   <p className="text-sm font-black text-primary mb-3">{item.result}</p>
                   <p className="text-[#4d4658] text-sm leading-relaxed">{item.body}</p>
+                  {item.href && (
+                    <Link
+                      to={item.href}
+                      className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline"
+                    >
+                      Read {item.company} case study
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  )}
                 </div>
+              </AnimateIn>
+            ))}
+          </div>
+
+          <div className="mx-auto mb-10 grid max-w-5xl grid-cols-1 gap-5 lg:grid-cols-3">
+            {projectReferences.map((project, i) => (
+              <AnimateIn key={project.name} delay={220 + i * 70}>
+                <a
+                  href={project.caseStudyHref ?? project.href}
+                  target={project.caseStudyHref ? undefined : "_blank"}
+                  rel={project.caseStudyHref ? undefined : "noopener noreferrer"}
+                  className="group block h-full rounded-2xl border border-[#11111f]/10 bg-[#fbfbfe] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)]"
+                >
+                  <div className="mb-3 flex items-start justify-between gap-4">
+                    <h3 className="font-display text-xl font-bold text-[#11101a]">{project.name}</h3>
+                    <ExternalLink className="h-4 w-4 flex-shrink-0 text-primary opacity-60 transition-opacity group-hover:opacity-100" />
+                  </div>
+                  <p className="mb-3 text-sm font-black text-primary">{project.result}</p>
+                  <p className="text-sm leading-relaxed text-[#4d4658]">{project.body}</p>
+                  {project.caseStudyHref && (
+                    <span className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:underline">
+                      Read {project.name.split(" ")[0]} case study
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </span>
+                  )}
+                </a>
               </AnimateIn>
             ))}
           </div>

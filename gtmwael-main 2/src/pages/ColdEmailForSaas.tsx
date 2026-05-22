@@ -110,12 +110,14 @@ const proofItems = [
     tag: "Full Cold Email System",
     result: "~50% open rate · 7% reply rate · 4× revenue growth",
     body: "Built and ran the full cold email infrastructure from scratch — domains, warm-up, list segmentation, offer angle, personalisation framework, and sequence logic. Aligned the outbound system with positioning and the landing page.",
+    href: "/case-study/zembra",
   },
   {
     company: "Shipzzer",
     tag: "Niche ICP Sequencing",
     result: "Top 3 rankings · Targeted freight-forwarding outbound",
     body: "Built targeted cold email sequences for freight-forwarding operators — a niche audience with specific pain language that generic sequences miss entirely. Connected outbound to the broader GTM strategy.",
+    href: "/case-study/shipzzer",
   },
   {
     company: "GrowApp",
@@ -394,6 +396,35 @@ const ColdEmailForSaas = () => {
             </p>
           </AnimateIn>
 
+          <AnimateIn delay={140} className="mx-auto mb-8 max-w-5xl">
+            <div className="grid gap-5 lg:grid-cols-[0.85fr_1.15fr]">
+              <div className="rounded-2xl border border-primary/25 bg-primary/5 p-7">
+                <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-widest text-primary">
+                  Warm-up reality
+                </span>
+                <p className="font-display text-2xl font-black leading-tight text-[#11101a]">
+                  Plan for up to 2 months before any volume push.
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-[#4d4658]">
+                  Reputation comes first. I avoid shortcuts that burn domains, damage deliverability, and make future outbound harder.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-[#11111f]/10 bg-[#fbfbfe] p-7">
+                <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-widest text-primary">
+                  Redacted email format
+                </span>
+                <div className="font-mono text-sm leading-relaxed text-[#4d4658]">
+                  <p className="mb-3">
+                    <span className="font-bold text-[#11101a]">Subject:</span> {"{{trigger}}"} at {"{{company}}"}
+                  </p>
+                  <p>Noticed {"{{specific signal}}"}. Teams in {"{{peer group}}"} hit {"{{problem}}"} when {"{{context}}"}.</p>
+                  <p className="mt-3">I help them get {"{{outcome}}"} without {"{{unwanted tradeoff}}"}.</p>
+                  <p className="mt-3">Worth a quick look? If yes, I will send the 2-line approach. If not, I will close the loop.</p>
+                </div>
+              </div>
+            </div>
+          </AnimateIn>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto mb-10">
             {proofItems.map((item, i) => (
               <AnimateIn key={item.company} delay={150 + i * 80}>
@@ -406,6 +437,15 @@ const ColdEmailForSaas = () => {
                   </div>
                   <p className="text-sm font-black text-primary mb-3">{item.result}</p>
                   <p className="text-[#4d4658] text-sm leading-relaxed">{item.body}</p>
+                  {item.href && (
+                    <Link
+                      to={item.href}
+                      className="mt-5 inline-flex items-center gap-2 text-sm font-bold text-primary hover:underline"
+                    >
+                      Read {item.company} case study
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  )}
                 </div>
               </AnimateIn>
             ))}

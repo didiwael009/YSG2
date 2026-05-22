@@ -50,6 +50,29 @@ const adCreatives = [
   { src: adCreative4, alt: "Story ad creative — vertical format" },
 ];
 
+const staticImageReferences = [
+  {
+    title: "Structured authority book",
+    src: "/meta-ads-references/one-great-book-structured-authority.webp",
+    alt: "One Great Book static ad showing a structured authority book concept",
+  },
+  {
+    title: "Built from real expertise",
+    src: "/meta-ads-references/one-great-book-expertise.webp",
+    alt: "One Great Book static ad showing a founder writing from real expertise",
+  },
+  {
+    title: "Manual notes vs outline",
+    src: "/meta-ads-references/one-great-book-manual-vs-outline.webp",
+    alt: "One Great Book static ad comparing manual notes with a clear outline",
+  },
+  {
+    title: "Build your preview",
+    src: "/meta-ads-references/one-great-book-preview-toggle.webp",
+    alt: "One Great Book static ad showing off versus on preview positioning",
+  },
+];
+
 export default function MetaAdsForSaas() {
   return (
     <div className="min-h-screen bg-background">
@@ -299,6 +322,31 @@ export default function MetaAdsForSaas() {
                 ))}
               </div>
               <p className="text-xs text-muted-foreground mt-4">Static formats: square feed ads and vertical story formats used in active campaigns.</p>
+
+              <div className="mt-10 border-t border-border pt-8">
+                <p className="mb-5 text-sm font-medium text-primary uppercase tracking-wider">Static image references</p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  {staticImageReferences.map((reference) => (
+                    <div
+                      key={reference.title}
+                      className="group overflow-hidden rounded-xl border border-border bg-background/50 transition-colors hover:border-primary/30"
+                    >
+                      <div className="aspect-[9/16] overflow-hidden">
+                        <img
+                          src={reference.src}
+                          alt={reference.alt}
+                          loading="lazy"
+                          decoding="async"
+                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-3">
+                        <p className="text-sm font-semibold leading-snug text-foreground">{reference.title}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </AnimateIn>
         </div>
@@ -462,6 +510,12 @@ export default function MetaAdsForSaas() {
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   Aligned paid and outbound acquisition with repositioned messaging and a rebuilt landing page. When the offer angle, ad creative, and conversion path speak the same language, paid acquisition stops feeling random. The broader GTM execution contributed to 4X revenue growth.
                 </p>
+                <Link
+                  to="/case-study/zembra"
+                  className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-primary hover:underline"
+                >
+                  Read Zembra case study <ArrowRight className="h-3 w-3" />
+                </Link>
               </div>
 
               {/* Client review */}
