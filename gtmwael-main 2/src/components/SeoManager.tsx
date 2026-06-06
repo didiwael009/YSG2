@@ -73,7 +73,11 @@ const SeoManager = () => {
 
     document.title = route.title;
     setMeta('meta[name="description"]', "content", route.description);
-    setMeta('meta[name="robots"]', "content", "index, follow, max-image-preview:large");
+    setMeta(
+      'meta[name="robots"]',
+      "content",
+      route.noindex ? "noindex, follow" : "index, follow, max-image-preview:large"
+    );
     setMeta('meta[property="og:title"]', "content", socialTitle);
     setMeta('meta[property="og:description"]', "content", route.description);
     setMeta('meta[property="og:type"]', "content", route.type === "case-study" || route.type === "article" ? "article" : "website");

@@ -11,31 +11,24 @@ import {
 
 const services = [
   {
-    title: "SaaS Marketing Agency Alternative",
-    description: "Connected GTM execution for B2B SaaS founders who need trust before traffic.",
-    icon: BriefcaseBusiness,
-    href: "/saas-marketing-agency",
-    isPage: true,
-  },
-  {
     title: "Cold Email for SaaS",
-    description: "Outbound that opens qualified conversations without spam or poor-quality lists.",
+    description: "Portfolio service page with outreach references, workflows, and execution examples.",
     icon: Mail,
-    href: "/cold-email-for-saas",
+    href: "/services/cold-email",
     isPage: true,
   },
   {
     title: "Meta Ads for SaaS",
-    description: "Creatives and targeting oriented toward rapid testing to achieve a viable CPA before discarding the channel.",
+    description: "Portfolio service page with paid social references, creative tests, and dashboards.",
     icon: Target,
-    href: "/meta-ads-for-saas",
+    href: "/services/meta-ads",
     isPage: true,
   },
   {
-    title: "SaaS Landing Page Strategy",
-    description: "Message, structure and proof: achieve clarity before thinking about design.",
+    title: "Landing Page Conversion",
+    description: "Portfolio service page with page rebuilds, UX references, and conversion examples.",
     icon: FileText,
-    href: "/landing-page-for-saas",
+    href: "/services/landing-page",
     isPage: true,
   },
   {

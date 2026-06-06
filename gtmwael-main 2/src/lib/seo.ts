@@ -29,6 +29,7 @@ export type SeoRoute = {
   schemaBreadcrumbs?: { name: string; path: string }[] | false;
   schemaFaq?: { question: string; answer: string }[] | false;
   serviceTypeName?: string;
+  noindex?: boolean;
 };
 
 export const seoRoutes: SeoRoute[] = [
@@ -77,6 +78,57 @@ export const seoRoutes: SeoRoute[] = [
       { label: "Landing page conversion service", path: "/landing-page-for-saas" },
       { label: "Meta ads service", path: "/meta-ads-for-saas" },
     ],
+  },
+  {
+    path: "/services/cold-email",
+    title: "Cold Email Portfolio Service | Your SaaS Growth",
+    description: "Cold email portfolio page showing Wael Aouididi's outreach references, skills, workflows, and examples for SaaS and growth projects.",
+    type: "portfolio",
+    priority: 0.35,
+    changefreq: "monthly",
+    noindex: true,
+    breadcrumbs: [{ name: "Services", path: "/services/cold-email" }],
+    excerpt: "A non-indexed portfolio service page for cold email references, skills, and execution examples.",
+    links: [
+      { label: "SEO-optimized cold email for SaaS page", path: "/cold-email-for-saas" },
+      { label: "SaaS growth case studies", path: "/case-studies" },
+      { label: "Book a call", path: "/book" },
+    ],
+    schemaIncludeGlobal: false,
+  },
+  {
+    path: "/services/meta-ads",
+    title: "Meta Ads Portfolio Service | Your SaaS Growth",
+    description: "Meta Ads portfolio page showing Wael Aouididi's creative testing references, paid social skills, dashboards, and campaign examples.",
+    type: "portfolio",
+    priority: 0.35,
+    changefreq: "monthly",
+    noindex: true,
+    breadcrumbs: [{ name: "Services", path: "/services/meta-ads" }],
+    excerpt: "A non-indexed portfolio service page for Meta Ads references, creative testing skills, and campaign examples.",
+    links: [
+      { label: "SEO-optimized Meta Ads for SaaS page", path: "/meta-ads-for-saas" },
+      { label: "SaaS growth case studies", path: "/case-studies" },
+      { label: "Book a call", path: "/book" },
+    ],
+    schemaIncludeGlobal: false,
+  },
+  {
+    path: "/services/landing-page",
+    title: "Landing Page Portfolio Service | Your SaaS Growth",
+    description: "Landing page portfolio page showing Wael Aouididi's conversion references, SaaS page rebuilds, UX examples, and design skills.",
+    type: "portfolio",
+    priority: 0.35,
+    changefreq: "monthly",
+    noindex: true,
+    breadcrumbs: [{ name: "Services", path: "/services/landing-page" }],
+    excerpt: "A non-indexed portfolio service page for landing page references, conversion work, and design examples.",
+    links: [
+      { label: "SEO-optimized landing page for SaaS page", path: "/landing-page-for-saas" },
+      { label: "SaaS growth case studies", path: "/case-studies" },
+      { label: "Book a call", path: "/book" },
+    ],
+    schemaIncludeGlobal: false,
   },
   {
     path: "/saas-marketing-agency",
@@ -819,7 +871,7 @@ export const seoRoutes: SeoRoute[] = [
   },
 ];
 
-export const indexableRoutes = seoRoutes.filter((route) => !route.path.includes("*"));
+export const indexableRoutes = seoRoutes.filter((route) => !route.path.includes("*") && !route.noindex);
 
 export const getCanonicalUrl = (path: string) => {
   const normalizedPath = path === "/" ? "/" : path.replace(/\/+$/, "");

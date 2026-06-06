@@ -20,11 +20,12 @@ export const buildHead = ({ route, siteUrl, brandName, authorName, lastmod, clea
   const socialTitle = route.socialTitle ?? route.title;
   const schema = buildJsonLd({ route, siteUrl, brandName, authorName, lastmod, cleanImageUrl });
   const schemaJson = JSON.stringify(schema).replaceAll("<", "\\u003c");
+  const robots = route.noindex ? "noindex, follow" : "index, follow, max-image-preview:large";
   return `
     <title>${escapeHtml(route.title)}</title>
     <meta name="description" content="${escapeHtml(route.description)}" />
     <meta name="author" content="${escapeHtml(authorName)}" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="robots" content="${robots}" />
     <link rel="canonical" href="${canonical}" />
     <meta property="og:title" content="${escapeHtml(socialTitle)}" />
     <meta property="og:description" content="${escapeHtml(route.description)}" />

@@ -15,6 +15,9 @@ export const blogArticlesDir = path.join(projectRoot, "src/content/blog/articles
 export const prerenderRoutePaths = [
   "/",
   "/blog",
+  "/services/cold-email",
+  "/services/meta-ads",
+  "/services/landing-page",
   "/case-studies",
   "/case-study/shipzzer",
   "/creative",
