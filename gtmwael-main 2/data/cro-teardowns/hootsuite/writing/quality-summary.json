@@ -1,0 +1,128 @@
+{
+  "slug": "hootsuite",
+  "generatedAt": "2026-06-07T21:30:26.273Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 92,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 0,
+      "remainingIssues": [],
+      "sectionCostUsd": 0.025095
+    },
+    {
+      "sectionId": "02-at-a-glance",
+      "finalVersion": 2,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 1,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "Final sentence implies intent ('Hootsuite expanded the scope... rather than condensing') based solely on a count ratio, without evidence of what the headings contained or why they were added"
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "Paragraph 1 uses 'can be read as' to hedge an interpretation that is already explicit in the evidence ('audience signal changed')",
+        "The phrase 'visitor profile Hootsuite chose to address' adds no company-specific detail beyond the evidence note",
+        "Paragraph 4 contains speculative interpretation ('may suggest Hootsuite expanded the scope') without labelling it clearly as inference",
+        "The section does not use the company proper noun 'Hootsuite' in the first 40 words, only at word 2 and then not again until word 115"
+      ],
+      "sectionCostUsd": 0.051497999999999995
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 5,
+      "remainingIssues": [
+        "The phrase 'beginner-friendly and benefit-driven' in paragraph 1 is an interpretation not explicitly labelled as such",
+        "The phrase 'may suggest repositioning toward enterprise or data-driven buyers' in paragraph 3 is interpretive but appropriately hedged",
+        "Final paragraph uses 'may reflect' twice in succession, which weakens the prose rhythm",
+        "No company-specific proper noun appears in the opening 40 words (Hootsuite first appears at word 60)",
+        "The observation about 'streamlined conversion path' in the final paragraph is not directly traceable to specific evidence"
+      ],
+      "sectionCostUsd": 0.02763299999999999
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 1,
+      "finalScore": 92,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 0,
+      "remainingIssues": [],
+      "sectionCostUsd": 0.029730000000000006
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "'The shift can be read as an expansion from a trial-focused funnel to one accommodating multiple user intents' — this interpretation is hedged but could be strengthened by explicitly stating it is one possible reading among others",
+        "'The homepage appears to have moved from featuring discrete stories and trend reports to positioning itself as a comprehensive solution' — this conclusion is not hedged and reads as fact rather than interpretation"
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "Paragraph 2 opens with a vague cluster observation ('The removed CTAs cluster around self-service exploration') without grounding the reader in the specific removed items first",
+        "Phrase 'engage-and-qualify' is pattern-naming without a direct evidence anchor explaining what observable change supports this label",
+        "Paragraph 4 uses 'appears to have moved' without hedging the interpretation—this is a conclusion drawn from H2 evidence but not labelled as interpretive",
+        "The term 'browse-and-convert' is not defined or tied to a specific removed CTA in the evidence"
+      ],
+      "sectionCostUsd": 0.027510000000000007
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "The section includes one sentence that could appear word-for-word in another teardown: 'The H1 is one of the highest-leverage positioning decisions on the page.'",
+        "The hedging phrase 'can be read as' appears once and 'may reflect' appears once, both are meaningful hedges but could be tracked for frequency",
+        "Minor specificity loss in the final paragraph: 'if your own homepage has been drifting' is slightly generic"
+      ],
+      "sectionCostUsd": 0.026249999999999996
+    }
+  ],
+  "averageScore": 89.3,
+  "passCount": 6,
+  "failCount": 0,
+  "skippedCount": 0,
+  "totalRewriteLoops": 1,
+  "weakSections": [],
+  "allRiskFlags": [
+    "Final sentence implies intent ('Hootsuite expanded the scope... rather than condensing') based solely on a count ratio, without evidence of what the headings contained or why they were added",
+    "'The shift can be read as an expansion from a trial-focused funnel to one accommodating multiple user intents' — this interpretation is hedged but could be strengthened by explicitly stating it is one possible reading among others",
+    "'The homepage appears to have moved from featuring discrete stories and trend reports to positioning itself as a comprehensive solution' — this conclusion is not hedged and reads as fact rather than interpretation"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 94,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [],
+  "seoScore": 80,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Title exceeds 60 characters (currently 52 with 'Hootsuite Homepage Teardown: Jan 2023 to Jun 2026' — actually within limit, no fix needed here).",
+    "Meta description is 149 characters but ends with an ellipsis '…' which may render poorly in SERPs. Replace ellipsis with a complete sentence or rephrase to end cleanly within 155 characters.",
+    "Primary keyword 'Hootsuite homepage CRO teardown' appears only once in the article body (in metadata). Add at least one natural mention in the intro or conclusion to strengthen keyword-content alignment.",
+    "The article uses 'Jun 2026' but was generated on 2026-06-07 — ensure the 'current' snapshot date is accurate and not a placeholder from the future (this may confuse readers if published before June 2026).",
+    "No H1 is present in the Markdown. The first heading '# How Hootsuite rewrote its homepage over 3 years' should be validated as the page's H1 in the CMS, and it should match or closely echo the SEO title for consistency."
+  ]
+}

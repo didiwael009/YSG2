@@ -1,0 +1,268 @@
+{
+  "slug": "hootsuite",
+  "companyName": "Hootsuite",
+  "companyUrl": "https://www.hootsuite.com",
+  "category": "CRO Teardown",
+  "title": "Hootsuite Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Hootsuite rewrote its homepage over 3 years",
+  "metaTitle": "Hootsuite Homepage CRO Teardown — Jan 2023 to Jun 2026",
+  "description": "A CRO teardown of Hootsuite's homepage from Jan 2023 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Hootsuite's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2023 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-07",
+  "readTime": "9 min read",
+  "featuredImage": "/cro-teardowns/hootsuite/selected/2023-01.webp",
+  "featuredImageAlt": "Hootsuite homepage — Jan 2023",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-01.webp"
+    },
+    {
+      "month": "2023-04",
+      "label": "Apr 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-04.webp"
+    },
+    {
+      "month": "2023-07",
+      "label": "Jul 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-07.webp"
+    },
+    {
+      "month": "2023-10",
+      "label": "Oct 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-10.webp"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2024-01.webp"
+    },
+    {
+      "month": "2025-04",
+      "label": "Apr 2025",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2025-04.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Jun 2026",
+      "note": "7 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "15 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Grow your reach and get more business with social media. Let's do this.",
+      "after": "Drive real business impact with the world’s deepest social intelligence and management platform",
+      "note": "The shift from casual outcome language to formal capability framing can be read as a move toward upmarket positioning. This is observation, not confirmed strategy."
+    },
+    {
+      "element": "Meta description",
+      "before": "Save time and grow on social with Hootsuite, your all-in-one social media scheduler, manager, and analytics secret weapon. Give it a try for free!",
+      "after": "Hootsuite is a social media management tool that brings scheduling, content creation, analytics, and social listening to one place.",
+      "note": "Free-trial urgency and exclamatory language removed. The new description reads as a neutral product category statement — more consistent with a platform positioning than a trial-conversion tool."
+    },
+    {
+      "element": "Page title",
+      "before": "Social Media Marketing and Management Tool - Hootsuite",
+      "after": "Social Media Marketing and Management Tool | Hootsuite"
+    }
+  ],
+  "h2Added": [
+    "See risk, prove impact, and spot opportunity",
+    "What can Hootsuite do for you?",
+    "See what’s trending on social media right now",
+    "Save time, simplify, and grow faster on social media",
+    "Boost engagement, reach, and follower count with less effort",
+    "Respond to social media messages and comments in one place",
+    "Stay ahead of the latest trends and boost your chances of going viral",
+    "Beat your competitors to the next big thing",
+    "Turn passionate employee advocates into engagement and reach",
+    "Why Hootsuite?",
+    "Hootsuite is G2's #1 best software product for 2026",
+    "See how brands grow with Hootsuite",
+    "Follow us on social. It's where we thrive.",
+    "Unlock insights tailored to your business",
+    "Privacy Preference Center"
+  ],
+  "h2Removed": [
+    "Social media trends 2023 is finally here!",
+    "Manage social media in one place",
+    "How a 1930’s pecan candy company is turning heads on TikTok",
+    "What our customers are saying about us"
+  ],
+  "ctaAdded": [
+    "Try it now",
+    "Start your free trial",
+    "Request a demo",
+    "Learn more",
+    "Explore integrations",
+    "Read the full case study",
+    "Read more on LinkedIn",
+    "Become an affiliate",
+    "Contact us",
+    "Reputation management"
+  ],
+  "ctaRemoved": [
+    "See all customer stories",
+    "See all industries",
+    "Become a partner",
+    "Start free trial",
+    "Start Your Free 30-day Trial",
+    "Compare plans",
+    "Read the trends",
+    "Explore All Features",
+    "Read the case study",
+    "Compare Plans"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2023-01",
+      "label": "Jan 2023 — original state",
+      "period": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-01.webp",
+      "heading": "The original: growth-outcome messaging",
+      "annotations": [
+        "H1 opens with: \"Grow your reach and get more business with social media. Let's do this.\" — accessible benefit language aimed at a broad audience.",
+        "Visible section headings include: \"Social media trends 2023 is finally here!\", \"Manage social media in one place\", \"How a 1930’s pecan candy company is turning heads on TikTok\".",
+        "Navigation includes: \"Why Hootsuite\", \"Publish and schedule\", \"Engage customers\", \"Monitor activity\" — workflow-action framing.",
+        "Section headings later removed include: \"Social media trends 2023 is finally here!\" and \"Manage social media in one place\"."
+      ]
+    },
+    {
+      "id": "analysis-2023-07",
+      "label": "Jul 2023 — mid-transition",
+      "period": "Jul 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-07.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 85.7% — one of the larger layout changes in the dataset.",
+        "H1 in this snapshot: \"Save time and get REAL results on social media.Hootsuite makes it easy.\".",
+        "New section headings appearing: \"Knowledge is power\", \"Loved by Hootsuite\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/current-live.webp",
+      "heading": "Today: platform-first positioning",
+      "annotations": [
+        "H1 now reads: \"Drive real business impact with the world’s deepest social intelligence and management platform\" — formal capability framing, consistent with platform-level positioning.",
+        "New section headings include: \"See risk, prove impact, and spot opportunity\", \"What can Hootsuite do for you?\", \"See what’s trending on social media right now\".",
+        "Navigation now includes product categories like: \"Reputation management\", \"Social listening\", \"Brand monitoring\".",
+        "Third-party validation visible in section headings: \"Hootsuite is G2's #1 best software product for 2026\".",
+        "CTAs no longer present include: \"See all customer stories\", \"See all industries\", \"Become a partner\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The shift from \"Grow your reach and get more business with social media. Let...\" to \"Drive real business impact with the world’s deepest social i...\" can be read as moving from accessible outcome language to formal capability framing. Casual, action-oriented headlines tend to attract self-serve users. Formal, capability-led headlines tend to attract buyers who need to justify a purchase internally.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "The switch from workflow-action labels like \"Publish and schedule\", \"Engage customers\", \"Monitor activity\" to product-category labels like \"Reputation management\", \"Social listening\", \"Brand monitoring\" signals a different user mental model. Action-based navigation suits individual users who know what task they want to do. Category-based navigation suits teams evaluating a platform against a vendor shortlist.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "15 section headings were added and 4 removed between Jan 2023 and Jun 2026. New headings include \"See risk, prove impact, and spot opportunity\" and \"What can Hootsuite do for you?\". Headings that disappeared include \"Social media trends 2023 is finally here!\" and \"Manage social media in one place\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Superlatives raise expectations across your entire funnel",
+      "body": "Claims like \"Drive real business impact with the world’s deepest social intelligenc...\" raise the bar for everything downstream — including the product experience, onboarding, and support. If the homepage signals category leadership and the product experience signals a self-serve tool, the mismatch may create friction at the trial-to-paid stage. This is not a caution against ambitious claims — it is a note that the rest of the funnel must match them.",
+      "tag": "CRO Risk"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 7 snapshots spanning roughly 3 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

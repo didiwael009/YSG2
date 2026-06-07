@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 2 opens with a vague cluster observation ('The removed CTAs cluster around self-service exploration') without grounding the reader in the specific removed items first",
+    "Phrase 'engage-and-qualify' is pattern-naming without a direct evidence anchor explaining what observable change supports this label",
+    "Paragraph 4 uses 'appears to have moved' without hedging the interpretation—this is a conclusion drawn from H2 evidence but not labelled as interpretive",
+    "The term 'browse-and-convert' is not defined or tied to a specific removed CTA in the evidence"
+  ],
+  "requiredFixes": [
+    "In paragraph 2, replace 'The removed CTAs cluster around self-service exploration' with a sentence that names at least two specific removed CTAs before summarizing the cluster pattern",
+    "Replace 'engage-and-qualify' with a phrase that describes the observable change (e.g., 'a mix of relationship and content CTAs') and then label the strategic interpretation separately"
+  ],
+  "riskFlags": [
+    "'The shift can be read as an expansion from a trial-focused funnel to one accommodating multiple user intents' — this interpretation is hedged but could be strengthened by explicitly stating it is one possible reading among others",
+    "'The homepage appears to have moved from featuring discrete stories and trend reports to positioning itself as a comprehensive solution' — this conclusion is not hedged and reads as fact rather than interpretation"
+  ],
+  "seoNotes": [
+    "Positive: 'Hootsuite' appears in the first 13 words, satisfying the SEO anchor requirement",
+    "Positive: Company-specific proper nouns ('G2,' 'TikTok') and quoted CTAs throughout improve search relevance for this specific teardown",
+    "Neutral: Section could benefit from one more named page element in the opening paragraph (e.g., 'hero CTA' or 'footer link') to increase specificity"
+  ],
+  "rewriteInstruction": "Strengthen paragraph 2 by opening with two specific removed CTAs before summarizing the cluster. Replace pattern labels like 'engage-and-qualify' and 'browse-and-convert' with observable descriptions (e.g., 'a mix of demo requests and affiliate links' vs. 'explore and trial prompts'), then add a sentence labelling the strategic interpretation. In paragraph 4, hedge the conclusion about comprehensive positioning ('this pattern is consistent with…' rather than 'appears to have moved').",
+  "dimensionScores": {
+    "evidenceAccuracy": 28,
+    "clarity": 18,
+    "specificity": 14,
+    "seoUsefulness": 10,
+    "croUsefulness": 12,
+    "riskControl": 6
+  },
+  "effectivePassThreshold": 85
+}

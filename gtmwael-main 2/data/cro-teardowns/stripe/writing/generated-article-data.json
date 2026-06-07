@@ -1,0 +1,240 @@
+{
+  "slug": "stripe",
+  "companyName": "Stripe",
+  "companyUrl": "https://stripe.com",
+  "category": "CRO Teardown",
+  "title": "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
+  "h1": "How Stripe rewrote its homepage over 4 years",
+  "metaTitle": "Stripe Homepage CRO Teardown — Oct 2022 to Jun 2026",
+  "description": "A CRO teardown of Stripe's homepage from Oct 2022 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Stripe's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Oct 2022 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-07",
+  "readTime": "9 min read",
+  "featuredImage": "/cro-teardowns/stripe/selected/2022-10.webp",
+  "featuredImageAlt": "Stripe homepage — Oct 2022",
+  "fromLabel": "Oct 2022",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2022-10",
+      "label": "Oct 2022",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2022-10.webp"
+    },
+    {
+      "month": "2023-04",
+      "label": "Apr 2023",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2023-04.webp"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2024-01.webp"
+    },
+    {
+      "month": "2026-04",
+      "label": "Apr 2026",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2026-04.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/stripe/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Oct 2022 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 4 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "6 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Global Payments",
+      "after": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. Accept payments and scale faster.",
+      "after": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Stripe | Payment Processing Platform for the Internet",
+      "after": "Stripe | Financial Infrastructure to Grow Your Revenue"
+    }
+  ],
+  "h2Added": [
+    "Flexible solutions for every business model.",
+    "The backbone of global commerce",
+    "Powering businesses of all sizes.",
+    "Reliable, extensible infrastructure for every stack.",
+    "What’s happening"
+  ],
+  "h2Removed": [
+    "Unified platform",
+    "Designed for developers",
+    "Why Stripe",
+    "Global scale"
+  ],
+  "ctaAdded": [
+    "Get started",
+    "Sign up with Google",
+    "Watch now",
+    "Read the story",
+    "Read the guide",
+    "Explore no-code",
+    "Read the letter",
+    "Get the data",
+    "Watch video",
+    "Learn how"
+  ],
+  "ctaRemoved": [
+    "Contact Sales",
+    "Become a Partner",
+    "get financing",
+    "Start with payments",
+    "Read the docs",
+    "Explore partners",
+    "Sign up instantly",
+    "Request an invite",
+    "Payments Online payments",
+    "Checkout Pre-built payments page"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2022-10",
+      "label": "Oct 2022 — original state",
+      "period": "Oct 2022",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2022-10.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Global Payments\" — direct product statement.",
+        "Visible section headings include: \"Unified platform\", \"Designed for developers\", \"Why Stripe\".",
+        "Navigation includes: \"Pricing\", \"Sign in\", \"Payments Online payments\", \"Checkout Pre-built payments page\" — product category framing.",
+        "Section headings later removed include: \"Unified platform\" and \"Designed for developers\"."
+      ]
+    },
+    {
+      "id": "analysis-2023-04",
+      "label": "Apr 2023 — mid-transition",
+      "period": "Apr 2023",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2023-04.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 88.1% — one of the larger layout changes in the dataset.",
+        "New section headings appearing: \"Enterprise reinvention\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/stripe/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.\" — updated value proposition.",
+        "New section headings include: \"Flexible solutions for every business model.\", \"The backbone of global commerce\", \"Powering businesses of all sizes.\".",
+        "CTAs no longer present include: \"Contact Sales\", \"Become a Partner\", \"get financing\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"Global Payments\" to \"Financial infrastructure to grow your revenue. Accept paymen...\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Payments Online payments\", \"Checkout Pre-built payments page\", \"Elements Customizable payments UIs\" to \"Guide me\", \"Start now\", \"Contact sales\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "5 section headings were added and 4 removed between Oct 2022 and Jun 2026. New headings include \"Flexible solutions for every business model.\" and \"The backbone of global commerce\". Headings that disappeared include \"Unified platform\" and \"Designed for developers\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 5 snapshots spanning roughly 4 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

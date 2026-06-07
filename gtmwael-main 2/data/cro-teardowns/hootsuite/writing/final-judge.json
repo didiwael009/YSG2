@@ -1,0 +1,21 @@
+{
+  "overallScore": 94,
+  "pass": true,
+  "evidenceAccuracy": 14,
+  "riskControl": 9,
+  "croUsefulness": 15,
+  "clarity": 18,
+  "sectionCoherence": 10,
+  "weakSections": [],
+  "unsupportedClaims": [],
+  "riskFlags": [],
+  "requiredFixes": [],
+  "optionalImprovements": [
+    "Section 05 final sentence reads slightly conclusive ('The homepage appears to have moved from featuring discrete stories...') — while the pattern is observable, adding 'This observed pattern suggests' would maintain the interpretive frame used elsewhere",
+    "Section 02 could explicitly state that the 4:15 ratio observation is interpretive ('may suggest expansion') earlier in the sentence to maintain consistency with hedging discipline throughout"
+  ],
+  "rerunRecommendations": [],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.032235,
+  "generatedAt": "2026-06-07T21:43:29.959Z"
+}

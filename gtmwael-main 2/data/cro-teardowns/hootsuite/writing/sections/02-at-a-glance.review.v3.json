@@ -1,0 +1,39 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Opening sentence is mechanically padded: 'changed across seven observed snapshots' restates the evidence without narrative purpose.",
+    "Second sentence lists three data points in a row with no connective tissue or interpretation.",
+    "Final sentence contains two hedging phrases ('may suggest' and 'though the evidence does not distinguish') that add no meaningful interpretive layer—verbal tics, not purposeful qualification.",
+    "No company-specific proper noun (Hootsuite) appears in the first 40 words, weakening SEO.",
+    "The phrase 'iterative testing' is not grounded in any evidence item—introduces a concept not present in the data.",
+    "Generic final clause could appear in any teardown: 'strategic intent and iterative testing' is pattern-naming, not evidence-anchored observation.",
+    "No single paragraph contains a quoted phrase, dated change, or named page element—fails required check #1.",
+    "The draft lists what changed but does not contextualise the numbers for a scanning reader (the stated goal)—lacks narrative or implication."
+  ],
+  "requiredFixes": [
+    "Insert 'Hootsuite' in the first 20 words to anchor SEO relevance.",
+    "Remove the filler opening ('changed across seven observed snapshots')—start with the most significant change: the headline rewrite.",
+    "Cut or rework the final hedging clause—either label a specific interpretive gap with precision or remove the phrase entirely.",
+    "Eliminate 'iterative testing' unless evidence supports it. Replace with an observation tied to the magnitude of the changes (15 added, 4 removed, etc.).",
+    "Add one sentence that explains what 'audience signal changed' might mean for a scanning reader—even if labelled as interpretation."
+  ],
+  "riskFlags": [
+    "'Iterative testing' implies a process not evidenced in the data—introduces a factual claim not supported.",
+    "'Strategic intent' versus 'iterative testing' is a false dichotomy not grounded in evidence—speculative framing."
+  ],
+  "seoNotes": [
+    "Company name (Hootsuite) does not appear in the first 40 words—misses early SEO signal.",
+    "The phrase 'homepage changed' is generic; 'Hootsuite rewrote its homepage headline' would be stronger and more specific."
+  ],
+  "rewriteInstruction": "Start with the headline rewrite and name Hootsuite in the first sentence. Contextualise the magnitude of the section-heading changes (15 added, 4 removed) with a single interpretive sentence that explains what this volume of change signals—label it as interpretation. Cut the final hedging clause or replace it with a specific, meaningful qualification tied to the evidence (e.g., snapshots capture end states, not decision rationale). Remove any reference to 'iterative testing' or 'strategic intent' unless you can tie it to a specific evidence item. Add one concrete detail (a date, a number, a named element) to ground at least one paragraph in observable fact.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "clarity": 12,
+    "specificity": 7,
+    "seoUsefulness": 5,
+    "croUsefulness": 8,
+    "riskControl": 7
+  },
+  "effectivePassThreshold": 85
+}

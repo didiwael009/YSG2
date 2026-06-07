@@ -1,0 +1,385 @@
+TITLE: Stripe | Payment Processing Platform for the Internet
+META DESCRIPTION: Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. Accept payments and scale faster.
+
+H1:
+  - Global Payments
+  - Revenue and Financial Management
+  - Banking-as-a-Service
+  - Use Cases
+  - Integrations & Custom Solutions
+  - Get started
+  - Guides
+  - Financial infrastructure for the internet
+  - A fully integrated suite of payments products
+  - The world’s most powerful and easy-to-use APIs
+  - Tools for every stack
+  - Prebuilt integrations
+  - A technology-first approach to payments and finance
+  - Close to the metal
+  - Fastest-improving platform
+  - Battle-tested reliability
+  - Intelligent optimizations
+  - The backbone for internet business
+  - 250M+
+  - 90%
+  - 135+
+  - 35+
+  - Ready to get started?
+  - Always know what you pay
+  - Start your integration
+  - Products
+  - Developers
+  - Resources
+  - Company
+
+H2:
+  - Unified platform
+  - Designed for developers
+  - Why Stripe
+  - Global scale
+
+H3:
+
+CTAS / BUTTONS:
+  - Products
+  - Solutions
+  - Developers
+  - Resources
+  - Pricing
+  - Sign in
+  - Back
+  - Global Payments Accept payments online, in person, or through your platform.
+  - Revenue and Financial Management Automate revenue collection and finance.
+  - Banking-as-a-Service Embed financial services in your platform or product.
+  - Payments Online payments
+  - Checkout Pre-built payments page
+  - Elements Customizable payments UIs
+  - Payment Links No-code payments
+  - Radar Fraud & risk management
+  - Connect Payments for platforms
+  - Billing Subscription management
+  - Invoicing Online invoices
+  - Terminal In-person payments
+  - Tax Sales tax & VAT automation
+  - Revenue Recognition Accounting automation
+  - Sigma Custom reports
+  - Data Pipeline Data warehouse sync
+  - Financial Connections Linked financial account data
+  - Identity Online identity verification
+  - Atlas Startup incorporation
+  - Climate Carbon removal
+  - Capital Business financing
+  - Issuing Card creation
+  - Treasury Banking-as-a-service
+  - Ecommerce
+  - SaaS
+  - Marketplaces
+  - Embedded Finance
+  - Platforms
+  - Creator Economy
+  - Crypto
+  - Enterprise
+  - App Marketplace
+  - Professional Services
+  - Partner Ecosystem
+  - Documentation
+  - Prebuilt checkout
+  - Libraries and SDKs
+  - Plugins
+  - Accept Online Payments
+  - Manage Subscriptions
+  - Send Payments
+  - Full API Reference
+  - API Status
+  - API Changelog
+  - Build a Stripe App
+  - Support Center
+  - Support Plans
+  - Guides
+  - Customer Stories
+  - Blog
+  - Annual Conference
+  - Contact Sales
+  - Jobs
+  - Newsroom
+  - Stripe Press
+  - Become a Partner
+  - Global Businesses
+  - Documentation Start integrating Stripe’s products and tools
+  - Code samples
+  - Accept online payments
+  - Manage subscriptions
+  - Send payments
+  - Set up in-person payments
+  - Start now
+  - Contact sales
+  - online and in-person retailers
+  - subscriptions businesses
+  - software platforms and marketplaces
+  - beat fraud
+  - send invoices
+  - issue virtual and physical cards
+  - reduce friction at checkout
+  - get financing
+  - manage business spend
+  - Start with payments
+  - Read the docs
+  - See libraries
+  - Explore partners
+  - direct integrations
+  - hundreds of features
+  - 99.99%+
+  - billions
+  - startups to Fortune 500s
+  - Stripe Payments
+  - Pricing details
+  - API reference
+  - United States
+  - Sign up instantly
+  - Australia
+  - Austria
+  - Belgium
+  - Brazil
+  - Bulgaria
+  - Canada
+  - Croatia
+  - Cyprus
+  - Czech Republic
+  - Denmark
+  - Estonia
+  - Finland
+  - France
+  - Germany
+  - Gibraltar
+  - Greece
+  - Hong Kong
+  - Hungary
+  - India
+  - Ireland
+  - Italy
+  - Japan
+  - Latvia
+  - Liechtenstein
+  - Lithuania
+  - Luxembourg
+  - Malaysia
+  - Malta
+  - Mexico
+  - Netherlands
+  - New Zealand
+  - Norway
+  - Poland
+  - Portugal
+  - Romania
+  - Singapore
+  - Slovakia
+  - Slovenia
+  - Spain
+  - Sweden
+  - Switzerland
+  - Thailand
+  - United Arab Emirates
+  - United Kingdom
+  - Request an invite
+  - English (United States)
+  - Deutsch
+  - English (United Kingdom)
+  - Español (América Latina)
+  - Español (España)
+  - Français (France)
+  - Français (Canada)
+  - Bahasa Indonesia
+  - Italiano
+  - 日本語
+  - Nederlands
+  - Português (Brasil)
+  - Svenska
+  - ไทย
+  - 简体中文
+  - Atlas
+  - Billing
+  - Capital
+  - Checkout
+  - Climate
+  - Connect
+  - Corporate Card
+  - Data Pipeline
+  - Elements
+  - Financial Connections
+  - Identity
+  - Invoicing
+  - Issuing
+  - Link
+  - Payments
+  - Payment Links
+  - Payouts
+  - Radar
+  - Revenue Recognition
+  - Sigma
+  - Tax
+  - Terminal
+  - Treasury
+  - API Reference
+  - Privacy & Terms
+  - Licenses
+  - COVID-19
+  - Sitemap
+  - Cookie settings
+
+NAV LINKS:
+  - Pricing
+  - Sign in
+  - Payments Online payments
+  - Checkout Pre-built payments page
+  - Elements Customizable payments UIs
+  - Payment Links No-code payments
+  - Radar Fraud & risk management
+  - Connect Payments for platforms
+  - Billing Subscription management
+  - Invoicing Online invoices
+  - Terminal In-person payments
+  - Tax Sales tax & VAT automation
+  - Revenue Recognition Accounting automation
+  - Sigma Custom reports
+  - Data Pipeline Data warehouse sync
+  - Financial Connections Linked financial account data
+  - Identity Online identity verification
+  - Atlas Startup incorporation
+  - Climate Carbon removal
+  - Capital Business financing
+  - Issuing Card creation
+  - Treasury Banking-as-a-service
+  - Ecommerce
+  - SaaS
+  - Marketplaces
+  - Embedded Finance
+  - Platforms
+  - Creator Economy
+  - Crypto
+  - Enterprise
+  - App Marketplace
+  - Professional Services
+  - Partner Ecosystem
+  - Documentation
+  - Prebuilt checkout
+  - Libraries and SDKs
+  - Plugins
+  - Accept Online Payments
+  - Manage Subscriptions
+  - Send Payments
+  - Full API Reference
+  - API Status
+  - API Changelog
+  - Build a Stripe App
+  - Support Center
+  - Support Plans
+  - Guides
+  - Customer Stories
+  - Blog
+  - Annual Conference
+  - Contact Sales
+  - Jobs
+  - Newsroom
+  - Stripe Press
+  - Become a Partner
+  - Global Businesses
+  - Documentation Start integrating Stripe’s products and tools
+  - Code samples
+  - Accept online payments
+  - Manage subscriptions
+  - Send payments
+  - Set up in-person payments
+  - Sign up instantly
+  - Australia
+  - Austria
+  - Belgium
+  - Brazil
+  - Bulgaria
+  - Canada
+  - Croatia
+  - Cyprus
+  - Czech Republic
+  - Denmark
+  - Estonia
+  - Finland
+  - France
+  - Germany
+  - Gibraltar
+  - Greece
+  - Hong Kong
+  - Hungary
+  - India
+  - Ireland
+  - Italy
+  - Japan
+  - Latvia
+  - Liechtenstein
+  - Lithuania
+  - Luxembourg
+  - Malaysia
+  - Malta
+  - Mexico
+  - Netherlands
+  - New Zealand
+  - Norway
+  - Poland
+  - Portugal
+  - Romania
+  - Singapore
+  - Slovakia
+  - Slovenia
+  - Spain
+  - Sweden
+  - Switzerland
+  - Thailand
+  - United Arab Emirates
+  - United Kingdom
+  - United States
+  - Request an invite
+  - Deutsch
+  - English (United States)
+  - English (United Kingdom)
+  - Español (América Latina)
+  - Español (España)
+  - Français (France)
+  - Français (Canada)
+  - Bahasa Indonesia
+  - Italiano
+  - 日本語
+  - Nederlands
+  - Português (Brasil)
+  - Svenska
+  - ไทย
+  - 简体中文
+  - Atlas
+  - Billing
+  - Capital
+  - Checkout
+  - Climate
+  - Connect
+  - Corporate Card
+  - Data Pipeline
+  - Elements
+  - Financial Connections
+  - Identity
+  - Invoicing
+  - Issuing
+  - Link
+  - Payments
+  - Payment Links
+  - Payouts
+  - Radar
+  - Revenue Recognition
+  - Sigma
+  - Tax
+  - Terminal
+  - Treasury
+  - API Reference
+  - Privacy & Terms
+  - Licenses
+  - COVID-19
+  - Sitemap
+  - Cookie settings
+
+BODY TEXT:
+Stripe | Payment Processing Platform for the Internet Products Solutions Developers Resources Pricing Sign in Back Products Global Payments Accept payments online, in person, or through your platform. Revenue and Financial Management Automate revenue collection and finance. Banking-as-a-Service Embed financial services in your platform or product. Solutions Developers Resources Pricing Global Payments Payments Online payments Checkout Pre-built payments page Elements Customizable payments UIs Payment Links No-code payments Radar Fraud & risk management Connect Payments for platforms Billing Subscription management Invoicing Online invoices Terminal In-person payments Revenue and Financial Management Billing Subscription management Invoicing Online invoices Tax Sales tax & VAT automation Revenue Recognition Accounting automation Sigma Custom reports Data Pipeline Data warehouse sync Financial Connections Linked financial account data Identity Online identity verification Atlas Startup incorporation Climate Carbon removal Banking-as-a-Service Connect Payments for platforms Capital Business financing Issuing Card creation Treasury Banking-as-a-service Use Cases Ecommerce SaaS Marketplaces Embedded Finance Platforms Creator Economy Crypto Enterprise Integrations & Custom Solutions App Marketplace Professional Services Partner Ecosystem Documentation Get started Prebuilt checkout Libraries and SDKs Plugins Guides Accept Online Payments Manage Subscriptions Send Payments Full API Reference API Status API Changelog Build a Stripe App Support Center Support Plans Guides Customer Stories Blog Annual Conference Contact Sales Jobs Newsroom Stripe Press Become a Partner Sign in Global Payments Accept payments online, in person, or through your platform. Revenue and Financial Management Automate revenue collection and finance. Banking-as-a-Service Embed financial services in your platform or product. Payments Online payments Checkout Pre-built payments page Elements Customizable payments UIs Payment Links No-code payments Radar Fraud & risk management Connect Payments for platforms Billing Subscription management Invoicing Online invoices Terminal In-person payments Billing Subscription management Invoicing Online invoices Tax Sales tax & VAT automation Revenue Recognition Accounting automation Sigma Custom reports Data Pipeline Data warehouse sync Financial Connections Linked financial account data Identity Online identity verification Atlas Startup incorporation Climate Carbon removal Connect Payments for platforms Capital Business financing Issuing Card creation Treasury Banking-as-a-service Use Cases Ecommerce SaaS Marketplaces Embedded Finance Platforms Creator Economy Crypto Global Businesses Integrations & Custom Solutions App Marketplace Professional Services Partner Ecosystem Documentation Start integrating Stripe’s products and tools Get started Prebuilt checkout Libraries and SDKs Plugins Code samples Guides Accept online payments Manage subscriptions Send payments Set up in-person payments Full API Reference API Status API Changelog Build a Stripe App Support Center Support Plans Guides Customer Stories Blog Annual Conference Contact Sales Jobs Newsroom Stripe Press Become a Partner Financial infrastructure for the internet Financial infrastructure for the internet Financial infrastructure for the internet Millions of companies of all sizes—from startups to Fortune 500s—use Stripe’s software and APIs to accept payments, send payouts, and manage their businesses online. Start now Contact sales Rocket Rides Search Today Gross volume $3,528,198.72 1:00 PM August 18 $2,931,556.34 1:00 PM 12:00 AM Now 11:59 PM Balance $553,257.51 Available to pay out View detail Payouts $102,633.07 Expected today View detail Reports summary Last 4 weeks July 18 - August 18 Compared to previous period Customize Gross volume +4.6% $4,542,345.45 $4,062,124.33 Jul 18 Aug 18 Net volume from sales +4.2% $4,180,332.54 $3,732,991.10 Jul 18 Aug 18 Dispute activity -1.9% 0.36% 0.37% Jul 18 Aug 18 Increment Magazine $14 per quarter Or pay with card Email Card Information Number MM / YY CVC Country or region United States ZIP Pay Cancel Chase Freedom (•••• 1234) 27 Fredrick Ave Brothers OR Billing John Appleseed 27 Fredrick Ave Brothers, OR 97712 United States Contact j.appleseed@example.com +1 (458) 555-2863 Pay total $65.00 Mousedown/⌘ FF/Rewind Right/left Stretch Up/down Amplitude -/+ Zoom P Pause/play 1 Red on/off 2 Blue on/off 3 Yellow on/off 4 Purple on/off Unified platform A fully integrated suite of payments products We bring together everything that’s required to build websites and apps that accept payments and send payouts globally. Stripe’s products power payments for online and in-person retailers, subscriptions businesses, software platforms and marketplaces, and everything in between. We also help companies beat fraud, send invoices, issue virtual and physical cards, reduce friction at checkout, get financing, manage business spend, and much more. Start with payments Fleet Jane Diaz Micaela Ballew Thomas Degry Invoice from Slack Invoice from One Medical Invoice from Udacity Billed to Jenny Rosen $750.00 due Aug 1, 2020 $199.00 due Jan 1, 2021 $399.00 due Sep 1, 2020 Card Card Card Bank Card number MM / YY CVC Pay invoice Wilkie Purely functional Product details What do you get when you combine round lenses, slim temple arms, and a keyhole bridge? A good-looking frame named Haskell. Made from hand-polished cellulose acetate Akulon-coated screws for durability Reviews Recommended Percey Rye Tortoise Durand Crystal Felix Chamomile Fade Cancel Chase Freedom (•••• 1234) 27 Fredrick Ave Brothers OR Billing John Appleseed 27 Fredrick Ave Brothers, OR 97712 United States Contact j.appleseed@example.com +1 (458) 555-2863 Pay total $250.00 Your cart 2 items The Bigger Carry-On Color: Navy 1 $245.00 The Luggage Tag Color: Sand 1 $25.00 Total $270.00 Checkout Cancel Chase Freedom (•••• 1234) 27 Fredrick Ave Brothers OR Shipping John Appleseed 27 Fredrick Ave Brothers, OR 97712 United States Method 3–Day 3-4 Business Days Contact j.appleseed@example.com +1 (458) 555-2863 Pay total $270.00 Your Cart 2 items 1 × Invisible Shield $25.00 Edit Remove 1 × Body Hero Wash $18.00 Edit Remove Estimated total $43.00 Checkout Cancel Chase Freedom (•••• 1234) 27 Fredrick Ave Brothers OR Shipping John Appleseed 27 Fredrick Ave Brothers, OR 97712 United States Method 3–Day 3-4 Business Days Contact j.appleseed@example.com +1 (458) 555-2863 Pay total $43.00 Designed for developers The world’s most powerful and easy-to-use APIs We agonize over the right abstractions so your teams don’t need to stitch together disparate systems or spend months integrating payments functionality. Read the docs Tools for every stack We offer client and server libraries in everything from React and PHP to .NET and iOS. See libraries Prebuilt integrations Use integrations for systems like Shopify, WooCommerce, NetSuite, and more. Explore partners ~ NORMAL server.js 100% ☰ 0/1 ln : 1 $ Why Stripe A technology-first approach to payments and finance Close to the metal From direct integrations with card networks and banks to checkout flows in the browser, we operate on and optimize at every level of the financial stack. Fastest-improving platform We release hundreds of features and improvements each year to help you stay ahead of industry shifts. (On average, we deploy our production API 16x per day.) Battle-tested reliability Our systems operate with 99.99%+ uptime and are highly scalable and redundant. Stripe is certified to the highest compliance standards. Intelligent optimizations Our machine learning models train on billions of data points and help increase revenue across conversion, fraud, revenue recovery, and more. Global scale The backbone for internet business For ambitious companies around the world, Stripe makes moving money as simple, borderless, and programmable as the rest of the internet. Our teams are based in dozens of offices around the world and we process hundreds of billions of dollars each year for startups to Fortune 500s. 250M+ API requests per day, peaking at 13,000 requests a second. 90% of U.S. adults have bought from businesses using Stripe. 135+ currencies and payment methods supported. 35+ countries with local acquiring, optimizing acceptance rates. Ready to get started? Explore Stripe Payments, or create an account instantly and start accepting payments. You can also contact us to design a custom package for your business. Start now Contact sales Always know what you pay Integrated per-transaction pricing with no hidden fees. Pricing details Start your integration Get up and running with Stripe in as little as 10 minutes. API reference United States Sign up instantly Australia Austria Belgium Brazil Bulgaria Canada Croatia Cyprus Czech Republic Denmark Estonia Finland France Germany Gibraltar Greece Hong Kong Hungary India Ireland Italy Japan Latvia Liechtenstein Lithuania Luxembourg Malaysia Malta Mexico Netherlands New Zealand Norway Poland Portugal Romania Singapore Slovakia Slovenia Spain Sweden Switzerland Thailand United Arab Emirates United Kingdom United States Request an invite English (United States) Deutsch English (United States) English (United Kingdom) Español (América Latina) Español (España) Français (France) Français (Canada) Bahasa Indonesia Italiano 日本語 Nederlands Português (Brasil) Svenska ไทย 简体中文 © 2022 Stripe, Inc. Products Atlas Billing Capital Checkout Climate Connect Corporate Card Data Pipeline Elements Financial Connections Identity Invoicing Issuing Link Payments Payment Links Payouts Pricing Radar Revenue Recognition Sigma Tax Terminal Treasury Use Cases Ecommerce SaaS Marketplaces Embedded Finance Platforms Creator Economy Crypto Global Businesses Integrations & Custom Solutions App Marketplace Partner Ecosystem Professional Services Developers Documentation API Reference API Status API Changelog Build a Stripe App Resources Support Center Support Plans Guides Customer Stories Blog Annual Conference Privacy & Terms Licenses COVID-19 Sitemap Cookie settings Company Jobs Newsroom Stripe Press Become a Partner

@@ -1,5 +1,5 @@
 import { lazy, Suspense, type ReactNode } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import SeoManager from "./components/SeoManager";
 // Homepage is eager so the prerender hydration has no async boundary
@@ -37,7 +37,15 @@ const Pricing = lazy(() => import("./pages/Pricing"));
 const Creative = lazy(() => import("./pages/Creative"));
 const Resume = lazy(() => import("./pages/Resume"));
 const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
+const CroTeardownIndex = lazy(() => import("./pages/CroTeardownIndex"));
+const CroTeardownArticle = lazy(() => import("./pages/CroTeardownArticle"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+
+/** Redirects /cro-teardown/:slug → /cro-teardowns/:slug (legacy singular → plural) */
+const RedirectSlug = ({ prefix }: { prefix: string }) => {
+  const { slug } = useParams<{ slug: string }>();
+  return <Navigate to={`${prefix}/${slug ?? ""}`} replace />;
+};
 
 const RouteFallback = () => <div className="min-h-screen bg-background" />;
 const lazyRoute = (element: ReactNode) => (
@@ -78,6 +86,12 @@ export const AppRoutes = () => (
       <Route path="/b2b-saas-marketing-strategy" element={lazyRoute(<B2bSaasMarketingStrategy />)} />
       <Route path="/landing-page-for-lead-generation" element={lazyRoute(<LandingPageForLeadGeneration />)} />
       <Route path="/linkedin-outreach-for-saas" element={lazyRoute(<LinkedinOutreachForSaas />)} />
+      {/* CRO teardowns hub — plural canonical */}
+      <Route path="/cro-teardowns" element={lazyRoute(<CroTeardownIndex />)} />
+      <Route path="/cro-teardowns/:slug" element={lazyRoute(<CroTeardownArticle />)} />
+      {/* Legacy singular redirects (keep until old URLs age out of index) */}
+      <Route path="/cro-teardown" element={<Navigate to="/cro-teardowns" replace />} />
+      <Route path="/cro-teardown/:slug" element={<RedirectSlug prefix="/cro-teardowns" />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
       <Route path="*" element={lazyRoute(<NotFound />)} />
     </Routes>

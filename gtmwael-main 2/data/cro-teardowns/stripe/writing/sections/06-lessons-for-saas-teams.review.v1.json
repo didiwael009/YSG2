@@ -1,0 +1,28 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "Hedging phrase 'can be read as' appears three times, exceeding the two-instance threshold and triggering the hard cap at 85",
+    "Final sentence in paragraph 4 ('as it demonstrates how sustained focus...') adds interpretation not directly supported by the evidence and could be trimmed",
+    "First 40 words do not contain the company proper noun 'Stripe', only the generic term 'Your H1'—SEO signal opportunity missed"
+  ],
+  "requiredFixes": [
+    "Remove or replace at least one instance of 'can be read as' to avoid mechanical hedging—consider direct observation language: 'The pattern of what gets added and removed shows how a team is re-prioritizing...'",
+    "Insert 'Stripe' or 'Stripe's homepage' in the opening sentence to anchor SEO and company-specificity within the first 40 words"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "No company proper noun appears in the first 40 words; opening with 'Stripe's H1 evolved...' would improve search relevance for brand-specific teardown queries",
+    "Section includes exact quoted evidence ('Global Payments', 'Financial infrastructure to grow your revenue', 'Guide me', etc.) which aids indexing for specific copy changes"
+  ],
+  "rewriteInstruction": "Reduce the three instances of 'can be read as' to one or zero by using direct observation language where the evidence clearly supports it. Insert 'Stripe' or 'Stripe's homepage' in the opening sentence to satisfy the SEO proper-noun rule. Trim the final interpretive clause in paragraph 4 ('as it demonstrates how sustained focus...') to keep the lesson anchored to the observable 5-snapshot, 4-year pattern without adding unsupported theory about 'sustained focus'. Each fix is minor; the draft is already near publication quality.",
+  "dimensionScores": {
+    "evidenceAccuracy": 30,
+    "clarity": 18,
+    "specificity": 15,
+    "seoUsefulness": 7,
+    "croUsefulness": 14,
+    "riskControl": 10
+  },
+  "effectivePassThreshold": 85
+}

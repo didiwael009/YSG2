@@ -1,0 +1,39 @@
+[
+  {
+    "id": "analysis-2022-10",
+    "label": "Oct 2022 — original state",
+    "period": "Oct 2022",
+    "screenshotPath": "/cro-teardowns/stripe/selected/2022-10.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Global Payments\" — direct product statement.",
+      "Visible section headings include: \"Unified platform\", \"Designed for developers\", \"Why Stripe\".",
+      "Navigation includes: \"Pricing\", \"Sign in\", \"Payments Online payments\", \"Checkout Pre-built payments page\" — product category framing.",
+      "Section headings later removed include: \"Unified platform\" and \"Designed for developers\"."
+    ]
+  },
+  {
+    "id": "analysis-2023-04",
+    "label": "Apr 2023 — mid-transition",
+    "period": "Apr 2023",
+    "screenshotPath": "/cro-teardowns/stripe/selected/2023-04.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: 88.1% — one of the larger layout changes in the dataset.",
+      "New section headings appearing: \"Enterprise reinvention\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/stripe/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.\" — updated value proposition.",
+      "New section headings include: \"Flexible solutions for every business model.\", \"The backbone of global commerce\", \"Powering businesses of all sizes.\".",
+      "CTAs no longer present include: \"Contact Sales\", \"Become a Partner\", \"get financing\"."
+    ]
+  }
+]

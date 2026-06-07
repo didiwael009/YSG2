@@ -1,0 +1,50 @@
+{
+  "seoScore": 85,
+  "pass": true,
+  "titleScore": 13,
+  "metaDescriptionScore": 12,
+  "headingStructureScore": 14,
+  "searchIntentScore": 18,
+  "keywordUseScore": 8,
+  "readabilityScore": 14,
+  "internalLinkingScore": 6,
+  "internalLinkingSuggestions": [
+    "In the '01-intro' section, after mentioning 'the shift from casual, outcome-focused language... to formal capability framing,' link to a related article on upmarket positioning strategies for SaaS homepages.",
+    "In the 'Messaging Evolution' section, when discussing 'moving from high-volume trial acquisition toward qualifier-driven traffic,' link to content about SaaS funnel optimization or lead qualification strategies.",
+    "In the 'CTA and Navigation Evolution' section, when noting 'a move from browse-and-convert to engage-and-qualify,' link to a guide on multi-intent homepage design or conversion path optimization.",
+    "In the 'Lessons for SaaS Teams' section, after the point about workflow-action vs. product-category navigation labels, link to a teardown or guide on SaaS navigation best practices.",
+    "Add a CTA at the end of the article linking to a collection page of all CRO teardowns or a related resource on homepage messaging frameworks."
+  ],
+  "faqSuggestions": [
+    "Why did Hootsuite change its homepage headline from casual to formal language?",
+    "What does Hootsuite's homepage evolution tell us about enterprise SaaS positioning?",
+    "How did Hootsuite's navigation structure change between 2023 and 2026?",
+    "What CTA strategies did Hootsuite shift away from on its homepage?",
+    "How many section headings did Hootsuite add to its homepage over three years?",
+    "What is the difference between action-based and category-based navigation for SaaS homepages?"
+  ],
+  "contentGapNotes": [
+    "The article does not discuss whether competitor homepages in the social media management category underwent similar evolutions during the same period.",
+    "No mention of how the visual design or imagery changed alongside the messaging — only structural and textual elements are covered.",
+    "The article does not address whether these changes correlate with known business events (funding rounds, leadership changes, product launches) at Hootsuite.",
+    "There is no analysis of whether the homepage word count increased, decreased, or stayed consistent across the snapshots.",
+    "The teardown does not speculate on or reference common CRO frameworks (Jobs-to-be-Done, value proposition canvas, etc.) that might explain the observed changes."
+  ],
+  "requiredFixes": [
+    "The title is 52 characters, which is good, but consider testing a variation that includes 'SaaS' or '2023-2026' explicitly to differentiate from competitor teardowns (e.g., 'Hootsuite Homepage CRO Teardown: 2023–2026 Evolution').",
+    "The meta description is 152 characters, which is excellent. However, the ellipsis ('…') should be removed or replaced with a complete phrase to avoid truncation ambiguity in SERPs.",
+    "The primary keyword 'Hootsuite homepage CRO teardown' appears in the title and intro, but should be used at least once more in a mid-article heading or the conclusion to reinforce topical relevance.",
+    "The secondary keyword 'SaaS homepage CRO teardown' appears once in the intro but is not naturally integrated elsewhere. Consider using it in the 'Lessons for SaaS Teams' section heading or body."
+  ],
+  "optionalImprovements": [
+    "Consider breaking the 'Lessons for SaaS Teams' section into discrete H3 subheadings (e.g., 'H1 Positioning: Outcome vs. Capability,' 'Navigation Labels: Action vs. Category') to improve scannability and SEO granularity.",
+    "The article could benefit from a brief 'Methodology' subsection explaining how snapshots were captured and compared, which would add credibility and satisfy searchers looking for rigor.",
+    "Add a visual element (chart, table, or timeline graphic) summarizing the headline evolution or CTA changes — this would improve dwell time and social shareability.",
+    "The conclusion is strong but could be enhanced with a forward-looking question or prompt (e.g., 'What will Hootsuite's homepage look like in 2027?') to encourage engagement or return visits.",
+    "Consider adding a 'Related Teardowns' section at the end with links to similar companies (Buffer, Sprout Social, Later) to increase session depth and internal link equity.",
+    "The article uses passive observation language ('can be read as') extensively, which is appropriate for objectivity, but a single summary table of 'observed changes' vs. 'possible strategic intent' could make the analysis more digestible."
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.027972000000000004,
+  "generatedAt": "2026-06-07T21:43:57.474Z"
+}

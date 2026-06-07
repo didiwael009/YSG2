@@ -14,9 +14,11 @@ import {
 import { createOgAssetManager } from "./build-og-assets.mjs";
 import {
   createBlogSeoRoutes,
+  createCroTeardownSeoRoutes,
   getConst,
   mergeSeoRoutes,
   readBlogPosts,
+  readCroTeardownPosts,
   readStaticSeoRoutes,
   suppressKnownSsrNoise,
 } from "./utils.mjs";
@@ -30,7 +32,10 @@ const DEFAULT_OG_IMAGE = getConst(source, "DEFAULT_OG_IMAGE");
 const staticSeoRoutes = readStaticSeoRoutes(source);
 const blogPosts = await readBlogPosts();
 const blogSeoRoutes = createBlogSeoRoutes(blogPosts);
-const seoRoutes = mergeSeoRoutes(staticSeoRoutes, blogSeoRoutes);
+// CRO teardown index is already in staticSeoRoutes; articles are dynamic
+const croTeardownPosts = await readCroTeardownPosts();
+const croTeardownSeoRoutes = createCroTeardownSeoRoutes(croTeardownPosts);
+const seoRoutes = mergeSeoRoutes(staticSeoRoutes, blogSeoRoutes, croTeardownSeoRoutes);
 const template = await readFile(path.join(distDir, "index.html"), "utf8");
 const lastmod = new Date().toISOString().slice(0, 10);
 const prerenderRoutes = new Set([...prerenderRoutePaths, ...blogPosts.map((post) => post.path)]);

@@ -1,0 +1,65 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Stripe",
+  "companyUrl": "https://stripe.com",
+  "articleTitle": "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
+  "h1": "How Stripe rewrote its homepage over 4 years",
+  "fromLabel": "Oct 2022",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 5,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 6,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "cta-changes": {
+    "added": [
+      "Get started",
+      "Sign up with Google",
+      "Watch now",
+      "Read the story",
+      "Read the guide",
+      "Explore no-code",
+      "Read the letter",
+      "Get the data",
+      "Watch video",
+      "Learn how"
+    ],
+    "removed": [
+      "Contact Sales",
+      "Become a Partner",
+      "get financing",
+      "Start with payments",
+      "Read the docs",
+      "Explore partners",
+      "Sign up instantly",
+      "Request an invite",
+      "Payments Online payments",
+      "Checkout Pre-built payments page"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Flexible solutions for every business model.",
+      "The backbone of global commerce",
+      "Powering businesses of all sizes.",
+      "Reliable, extensible infrastructure for every stack.",
+      "What’s happening"
+    ],
+    "removed": [
+      "Unified platform",
+      "Designed for developers",
+      "Why Stripe",
+      "Global scale"
+    ]
+  }
+}

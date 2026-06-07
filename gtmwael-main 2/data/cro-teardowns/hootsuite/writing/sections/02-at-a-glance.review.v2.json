@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 1 uses 'can be read as' to hedge an interpretation that is already explicit in the evidence ('audience signal changed')",
+    "The phrase 'visitor profile Hootsuite chose to address' adds no company-specific detail beyond the evidence note",
+    "Paragraph 4 contains speculative interpretation ('may suggest Hootsuite expanded the scope') without labelling it clearly as inference",
+    "The section does not use the company proper noun 'Hootsuite' in the first 40 words, only at word 2 and then not again until word 115"
+  ],
+  "requiredFixes": [
+    "Remove or rephrase 'which can be read as a shift in the visitor profile Hootsuite chose to address' — the evidence note already states 'audience signal changed,' so no hedging is needed; either quote the note directly or omit the redundant interpretation",
+    "Relabel the final sentence speculation: change 'The 4:15 ratio... may suggest Hootsuite expanded the scope' to 'The 4:15 ratio indicates a net gain of 11 H2 headings' (observable) then add 'which could indicate...' if interpretation is retained"
+  ],
+  "riskFlags": [
+    "Final sentence implies intent ('Hootsuite expanded the scope... rather than condensing') based solely on a count ratio, without evidence of what the headings contained or why they were added"
+  ],
+  "seoNotes": [
+    "Company name 'Hootsuite' appears at word 2, meeting early-signal requirement",
+    "Proper noun does not reappear until word 115, reducing keyword density for a scan-oriented section",
+    "Phrase 'homepage teardown' or 'CRO teardown' absent — section assumes reader already knows context"
+  ],
+  "rewriteInstruction": "Remove the 'can be read as' hedge in paragraph 1 — the evidence note 'audience signal changed' is already interpretive, so either quote it directly or omit. In the final sentence, replace the speculative 'may suggest Hootsuite expanded the scope' with observable language: 'The net addition of 11 H2 headings indicates more structural content blocks in June 2026 than in January 2023.' If you retain an inference about expansion vs. condensation, label it explicitly ('one reading of this ratio is...'). Add one more use of 'Hootsuite' in the middle paragraphs to maintain keyword presence for SEO. Otherwise the draft is clean, evidence-grounded, and meets the quick-reference goal.",
+  "dimensionScores": {
+    "evidenceAccuracy": 28,
+    "clarity": 18,
+    "specificity": 14,
+    "seoUsefulness": 8,
+    "croUsefulness": 13,
+    "riskControl": 7
+  },
+  "effectivePassThreshold": 85
+}

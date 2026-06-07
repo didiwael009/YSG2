@@ -1,6 +1,6 @@
 import { access, readFile } from "node:fs/promises";
 import path from "node:path";
-import { blogArticlesDir, blogIndexPath } from "./constants.mjs";
+import { blogArticlesDir, blogIndexPath, croTeardownArticlesDir, croTeardownIndexPath } from "./constants.mjs";
 
 // Small shared helpers for parsing source config and keeping generated HTML safe.
 export const escapeHtml = (value) =>
@@ -84,10 +84,90 @@ export const createBlogSeoRoutes = (blogPosts) =>
     faq: post.faq,
   }));
 
-export const mergeSeoRoutes = (staticSeoRoutes, blogSeoRoutes) => [
-  ...staticSeoRoutes,
-  ...blogSeoRoutes.filter((route) => !staticSeoRoutes.some((staticRoute) => staticRoute.path === route.path)),
-];
+export const mergeSeoRoutes = (staticSeoRoutes, ...additionalRouteLists) => {
+  const combined = [...staticSeoRoutes];
+  for (const routes of additionalRouteLists) {
+    for (const route of routes) {
+      if (!combined.some((r) => r.path === route.path)) combined.push(route);
+    }
+  }
+  return combined;
+};
+
+// ─── CRO teardown post reader ─────────────────────────────────────────────────
+
+/**
+ * Reads CRO teardown article files from src/content/cro-teardown/articles/.
+ * Mirrors readBlogPosts() but handles the CroTeardownPost shape.
+ *
+ * Uses a greedy regex to handle embedded semicolons inside articleBody strings.
+ */
+export const readCroTeardownPosts = async () => {
+  const indexSource = await readFile(croTeardownIndexPath, "utf8");
+
+  const importEntries = [
+    ...indexSource.matchAll(/import \{ (\w+) \} from "\.\/articles\/([^"]+)";/g),
+  ].map(([, exportName, filename]) => ({ exportName, filename }));
+
+  const arrayMatch = indexSource.match(
+    /export const croTeardownPosts:\s*CroTeardownPost\[\]\s*=\s*\[([\s\S]*?)\]/
+  );
+  if (!arrayMatch) throw new Error("Could not read croTeardownPosts from src/content/cro-teardown/index.ts");
+
+  const importMap = new Map(importEntries.map((e) => [e.exportName, e.filename]));
+  const postNames = [...arrayMatch[1].matchAll(/(\w+)/g)].map(([, name]) => name);
+
+  const posts = [];
+  for (const name of postNames) {
+    const filename = importMap.get(name);
+    if (!filename) throw new Error(`Could not resolve CRO teardown import for ${name}`);
+
+    const articleSource = await readFile(
+      path.join(croTeardownArticlesDir, `${filename}.ts`),
+      "utf8"
+    );
+
+    // Greedy match: captures the full object literal even when articleBody
+    // contains semicolons embedded inside the string value.
+    const articleMatch = articleSource.match(
+      /export const \w+:\s*CroTeardownPost\s*=\s*(\{[\s\S]+\});\s*$/
+    );
+    if (!articleMatch) throw new Error(`Could not parse CRO teardown article: ${filename}.ts`);
+
+    posts.push(Function(`"use strict"; return (${articleMatch[1]});`)());
+  }
+
+  return posts;
+};
+
+/**
+ * Converts CRO teardown posts to SeoRoute objects for the build pipeline.
+ * Article pages use /cro-teardowns/:slug/ (trailing slash canonical).
+ */
+export const createCroTeardownSeoRoutes = (posts) =>
+  posts.map((post) => ({
+    path: `/cro-teardowns/${post.slug}/`,
+    title: post.metaTitle,
+    socialTitle: post.title,
+    description: post.description,
+    type: "article",
+    priority: 0.6,
+    changefreq: "monthly",
+    image: post.featuredImage,
+    datePublished: post.datePublished,
+    dateModified: post.publishedAt ?? post.datePublished,
+    breadcrumbs: [
+      { name: "CRO Teardowns", path: "/cro-teardowns" },
+      { name: post.companyName, path: `/cro-teardowns/${post.slug}/` },
+    ],
+    excerpt: post.excerpt,
+    schemaType: "Article",
+    schemaHeadline: post.h1,
+    schemaDescription: post.description,
+    schemaDatePublished: post.datePublished,
+    schemaDateModified: post.publishedAt ?? post.datePublished,
+    schemaIncludeGlobal: true,
+  }));
 
 export const suppressKnownSsrNoise = () => {
   const originalConsoleError = console.error;

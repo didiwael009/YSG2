@@ -995,28 +995,6 @@ export const responsiveImageManifest = {
       }
     ]
   },
-  "cold-email-for-saas-webp": {
-    "width": 1672,
-    "height": 941,
-    "originalBytes": 54416,
-    "variants": [
-      {
-        "width": 320,
-        "src": "/responsive/cold-email-for-saas-webp-320.webp",
-        "bytes": 3494
-      },
-      {
-        "width": 640,
-        "src": "/responsive/cold-email-for-saas-webp-640.webp",
-        "bytes": 9712
-      },
-      {
-        "width": 1024,
-        "src": "/responsive/cold-email-for-saas-webp-1024.webp",
-        "bytes": 19750
-      }
-    ]
-  },
   "landing-page-for-saas": {
     "width": 1854,
     "height": 848,
@@ -1083,6 +1061,292 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "cold-email-for-saas": {
+    "width": 1672,
+    "height": 941,
+    "originalBytes": 54416,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/cold-email-for-saas-320.webp",
+        "bytes": 3494
+      },
+      {
+        "width": 640,
+        "src": "/responsive/cold-email-for-saas-640.webp",
+        "bytes": 9712
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/cold-email-for-saas-1024.webp",
+        "bytes": 19750
+      }
+    ]
+  },
+  "2023-01": {
+    "width": 1440,
+    "height": 5749,
+    "originalBytes": 432108,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2023-01-320.webp",
+        "bytes": 33048
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2023-01-640.webp",
+        "bytes": 90008
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2023-01-1024.webp",
+        "bytes": 140336
+      }
+    ]
+  },
+  "2023-04": {
+    "width": 1440,
+    "height": 8137,
+    "originalBytes": 434166,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2023-04-320.webp",
+        "bytes": 27628
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2023-04-640.webp",
+        "bytes": 85160
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2023-04-1024.webp",
+        "bytes": 142178
+      }
+    ]
+  },
+  "2023-07": {
+    "width": 1440,
+    "height": 4858,
+    "originalBytes": 368020,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2023-07-320.webp",
+        "bytes": 27036
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2023-07-640.webp",
+        "bytes": 76668
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2023-07-1024.webp",
+        "bytes": 125174
+      }
+    ]
+  },
+  "2023-10": {
+    "width": 1440,
+    "height": 5556,
+    "originalBytes": 443718,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2023-10-320.webp",
+        "bytes": 32896
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2023-10-640.webp",
+        "bytes": 93968
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2023-10-1024.webp",
+        "bytes": 149226
+      }
+    ]
+  },
+  "2024-01": {
+    "width": 1440,
+    "height": 13157,
+    "originalBytes": 561106,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2024-01-320.webp",
+        "bytes": 35722
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2024-01-640.webp",
+        "bytes": 111798
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2024-01-1024.webp",
+        "bytes": 188260
+      }
+    ]
+  },
+  "2025-04": {
+    "width": 1440,
+    "height": 9625,
+    "originalBytes": 743098,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2025-04-320.webp",
+        "bytes": 51884
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2025-04-640.webp",
+        "bytes": 131902
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2025-04-1024.webp",
+        "bytes": 255728
+      }
+    ]
+  },
+  "2025-10": {
+    "width": 1440,
+    "height": 9995,
+    "originalBytes": 758866,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2025-10-320.webp",
+        "bytes": 51686
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2025-10-640.webp",
+        "bytes": 133036
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2025-10-1024.webp",
+        "bytes": 254094
+      }
+    ]
+  },
+  "2026-04": {
+    "width": 1440,
+    "height": 14601,
+    "originalBytes": 778682,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2026-04-320.webp",
+        "bytes": 42754
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2026-04-640.webp",
+        "bytes": 118224
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2026-04-1024.webp",
+        "bytes": 233488
+      }
+    ]
+  },
+  "current-live": {
+    "width": 1440,
+    "height": 14739,
+    "originalBytes": 782478,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/current-live-320.webp",
+        "bytes": 43826
+      },
+      {
+        "width": 640,
+        "src": "/responsive/current-live-640.webp",
+        "bytes": 118634
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/current-live-1024.webp",
+        "bytes": 236874
+      }
+    ]
+  },
+  "2022-10": {
+    "width": 1440,
+    "height": 6774,
+    "originalBytes": 356676,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2022-10-320.webp",
+        "bytes": 24638
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2022-10-640.webp",
+        "bytes": 73158
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2022-10-1024.webp",
+        "bytes": 122562
+      }
+    ]
+  },
+  "2024-07": {
+    "width": 1440,
+    "height": 13174,
+    "originalBytes": 557798,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2024-07-320.webp",
+        "bytes": 35764
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2024-07-640.webp",
+        "bytes": 111836
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2024-07-1024.webp",
+        "bytes": 190454
+      }
+    ]
+  },
+  "2025-01": {
+    "width": 1440,
+    "height": 13246,
+    "originalBytes": 557126,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2025-01-320.webp",
+        "bytes": 35850
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2025-01-640.webp",
+        "bytes": 111884
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2025-01-1024.webp",
+        "bytes": 191166
+      }
+    ]
+  },
   "hero-portrait": {
     "width": 595,
     "height": 734,
@@ -1139,28 +1403,6 @@ export const responsiveImageManifest = {
       }
     ]
   },
-  "meta-ads-for-saas": {
-    "width": 1935,
-    "height": 813,
-    "originalBytes": 63262,
-    "variants": [
-      {
-        "width": 320,
-        "src": "/responsive/meta-ads-for-saas-320.webp",
-        "bytes": 3382
-      },
-      {
-        "width": 640,
-        "src": "/responsive/meta-ads-for-saas-640.webp",
-        "bytes": 9790
-      },
-      {
-        "width": 1024,
-        "src": "/responsive/meta-ads-for-saas-1024.webp",
-        "bytes": 19216
-      }
-    ]
-  },
   "meta-ads-for-saas-creative-funnel-conversion-wael-aouididi": {
     "width": 1935,
     "height": 813,
@@ -1179,6 +1421,28 @@ export const responsiveImageManifest = {
       {
         "width": 1024,
         "src": "/responsive/meta-ads-for-saas-creative-funnel-conversion-wael-aouididi-1024.webp",
+        "bytes": 19216
+      }
+    ]
+  },
+  "meta-ads-for-saas": {
+    "width": 1935,
+    "height": 813,
+    "originalBytes": 63262,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/meta-ads-for-saas-320.webp",
+        "bytes": 3382
+      },
+      {
+        "width": 640,
+        "src": "/responsive/meta-ads-for-saas-640.webp",
+        "bytes": 9790
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/meta-ads-for-saas-1024.webp",
         "bytes": 19216
       }
     ]
@@ -1300,28 +1564,6 @@ export const responsiveImageManifest = {
       }
     ]
   },
-  "saas-marketing-agency-alternative": {
-    "width": 1536,
-    "height": 1024,
-    "originalBytes": 52206,
-    "variants": [
-      {
-        "width": 320,
-        "src": "/responsive/saas-marketing-agency-alternative-320.webp",
-        "bytes": 3318
-      },
-      {
-        "width": 640,
-        "src": "/responsive/saas-marketing-agency-alternative-640.webp",
-        "bytes": 9430
-      },
-      {
-        "width": 1024,
-        "src": "/responsive/saas-marketing-agency-alternative-1024.webp",
-        "bytes": 19802
-      }
-    ]
-  },
   "saas-marketing-agency-alternative-wael-aouididi": {
     "width": 1536,
     "height": 1024,
@@ -1340,6 +1582,28 @@ export const responsiveImageManifest = {
       {
         "width": 1024,
         "src": "/responsive/saas-marketing-agency-alternative-wael-aouididi-1024.webp",
+        "bytes": 19802
+      }
+    ]
+  },
+  "saas-marketing-agency-alternative": {
+    "width": 1536,
+    "height": 1024,
+    "originalBytes": 52206,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/saas-marketing-agency-alternative-320.webp",
+        "bytes": 3318
+      },
+      {
+        "width": 640,
+        "src": "/responsive/saas-marketing-agency-alternative-640.webp",
+        "bytes": 9430
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/saas-marketing-agency-alternative-1024.webp",
         "bytes": 19802
       }
     ]

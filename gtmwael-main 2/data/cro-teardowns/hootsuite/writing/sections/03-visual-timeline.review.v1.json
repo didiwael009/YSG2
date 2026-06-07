@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'beginner-friendly and benefit-driven' in paragraph 1 is an interpretation not explicitly labelled as such",
+    "The phrase 'may suggest repositioning toward enterprise or data-driven buyers' in paragraph 3 is interpretive but appropriately hedged",
+    "Final paragraph uses 'may reflect' twice in succession, which weakens the prose rhythm",
+    "No company-specific proper noun appears in the opening 40 words (Hootsuite first appears at word 60)",
+    "The observation about 'streamlined conversion path' in the final paragraph is not directly traceable to specific evidence"
+  ],
+  "requiredFixes": [
+    "Move 'Hootsuite' into the first sentence to satisfy SEO requirements — e.g., 'Hootsuite's January 2023 homepage opened with...'",
+    "Label the 'beginner-friendly and benefit-driven' characterization as interpretive — add 'which can be read as' or similar hedge",
+    "Strengthen the final paragraph by anchoring the CTA observation to evidence: state which CTAs are absent, cite the new headings that occupy that real estate, then offer the streamlined-path interpretation as labelled inference"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Negative: Company name does not appear in the first 40 words; first mention is at word ~60",
+    "Positive: All three snapshot periods are named with dates in the opening phrases of each paragraph",
+    "Positive: Quoted H1 text in all three periods provides unique, indexable content"
+  ],
+  "rewriteInstruction": "Insert 'Hootsuite' before 'homepage' in the opening sentence to meet SEO requirements. In paragraph 1, label the 'beginner-friendly and benefit-driven' phrase as interpretive (e.g., 'framing that can be read as...'). In the final paragraph, restructure the CTA observation: first state which CTAs were removed (quote from evidence), then note which new section headings now occupy homepage real estate (quote from evidence), then offer the 'streamlined conversion path' interpretation as a labelled hypothesis. Vary the hedging language in the final paragraph to avoid repeating 'may reflect' and 'may suggest' in close succession.",
+  "dimensionScores": {
+    "evidenceAccuracy": 28,
+    "clarity": 18,
+    "specificity": 15,
+    "seoUsefulness": 7,
+    "croUsefulness": 13,
+    "riskControl": 7
+  },
+  "effectivePassThreshold": 85
+}

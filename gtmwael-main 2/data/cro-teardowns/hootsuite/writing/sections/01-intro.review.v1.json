@@ -1,0 +1,22 @@
+{
+  "score": 92,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Company name 'Hootsuite' appears in first sentence (within first 12 words), meeting SEO requirement",
+    "Specific date range 'January 2023 and June 2026' provides temporal context early",
+    "Primary headline quote included in opening paragraph provides keyword-rich evidence anchor"
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 30,
+    "clarity": 19,
+    "specificity": 15,
+    "seoUsefulness": 10,
+    "croUsefulness": 13,
+    "riskControl": 10
+  },
+  "effectivePassThreshold": 85
+}

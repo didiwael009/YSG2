@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 2 uses 'observed shift' redundantly with 'may suggest' in paragraph 1—both hedge the same interpretation",
+    "Final sentence in paragraph 3 ('The pattern across both H2 and CTA changes points toward...') aggregates evidence but does not label it as interpretation",
+    "The phrase 'consistent with a strategy prioritizing education and social proof' in paragraph 2 is interpretive but not hedged",
+    "Minor padding: 'which appeared in zero CTAs in the October 2022 snapshot' adds redundant qualifier"
+  ],
+  "requiredFixes": [
+    "Label the final sentence in paragraph 3 with interpretive language (e.g., 'This pattern can be read as...') to avoid presenting an inference as fact",
+    "Replace 'is consistent with a strategy prioritizing' in paragraph 2 with 'may suggest a strategy prioritizing' or similar hedge"
+  ],
+  "riskFlags": [
+    "Unlabelled interpretation: 'is consistent with a strategy prioritizing education and social proof over immediate product selection' (paragraph 2)",
+    "Unlabelled interpretation: 'The pattern across both H2 and CTA changes points toward broader audience targeting' (paragraph 3)"
+  ],
+  "seoNotes": [
+    "Positive: 'Stripe' appears in first sentence, within the first 20 words",
+    "Positive: Specific dated range ('October 2022 and June 2026') appears early, anchoring the teardown timeframe",
+    "Positive: Quoted headings and CTAs provide search-friendly, company-specific phrases"
+  ],
+  "rewriteInstruction": "Label the two unlabelled interpretations in paragraphs 2 and 3. In paragraph 2, replace 'is consistent with a strategy' with 'may suggest a strategy' or 'can be read as indicating a strategy.' In paragraph 3, change 'The pattern across both H2 and CTA changes points toward' to 'This pattern can be read as a move toward' or similar hedged phrasing. Remove or integrate the redundant qualifier 'which appeared in zero CTAs in the October 2022 snapshot' (the absence is already clear from context). Ensure every interpretive claim is explicitly marked as such.",
+  "dimensionScores": {
+    "evidenceAccuracy": 29,
+    "clarity": 18,
+    "specificity": 15,
+    "seoUsefulness": 10,
+    "croUsefulness": 13,
+    "riskControl": 3
+  },
+  "effectivePassThreshold": 85
+}

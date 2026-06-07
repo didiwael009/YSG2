@@ -1,0 +1,38 @@
+{
+  "score": 82,
+  "pass": false,
+  "issues": [
+    "Opening sentence uses passive construction ('underwent') and buries the company name after 'Stripe's homepage between October 2022 and June 2026' — SEO signal delayed",
+    "Paragraph 1 includes speculative examples ('developer-focused to business-focused messaging, from startup to enterprise positioning, or another audience pivot') that are not present in the evidence and add no analytical value",
+    "The phrase 'can be read as' appears once in the final paragraph, which is within the acceptable threshold but still represents interpretive hedging",
+    "Bullet point about meta description and title changes acknowledges the absence of specific wording but includes the observation anyway, creating a non-actionable statement",
+    "Final sentence introduces a CTA stability claim ('action-layer remained relatively stable') that is an interpretation not explicitly supported by the evidence — the evidence shows 10 added and 10 removed, but does not characterize this as stability",
+    "The section does not clearly achieve the goal of 'contextualising the summary-card numbers' — it mostly restates them with minor commentary rather than providing narrative context"
+  ],
+  "requiredFixes": [
+    "Move 'Stripe' to within the first 8 words of the opening sentence to improve SEO signal",
+    "Remove speculative audience-segment examples from the first bullet point — replace with a factual statement that the evidence confirms a signal change but does not specify the nature of that change",
+    "Delete or consolidate the bullet point about meta description and title changes — if the specific wording is not in the evidence, the observation adds no value to a reader",
+    "Replace the interpretation 'action-layer remained relatively stable' with a factual observation: '10 CTAs were added and 10 removed, resulting in no net change in CTA count'",
+    "Add at least one sentence that provides narrative context for why a reader scanning the article would care about these numbers — for example, connecting the headline rewrite to the navigation overhaul as part of a coordinated change"
+  ],
+  "riskFlags": [
+    "The claim that the 'action-layer remained relatively stable' is an unlabelled interpretation — the evidence shows equal CTA additions and removals but does not characterize the meaning of that pattern",
+    "First bullet speculates on audience pivot types (developer vs. business, startup vs. enterprise) without evidence, creating invented examples that could mislead the reader about what the data contains"
+  ],
+  "seoNotes": [
+    "Company name 'Stripe' does not appear in the first 40 words — it appears at word 1 but is immediately followed by a long prepositional phrase ('between October 2022 and June 2026') that delays the main clause",
+    "No proper noun in the opening 8 words reduces headline scan value for a reader arriving from search",
+    "The phrase 'homepage teardown' does not appear in the section, missing an opportunity to reinforce the article's search intent"
+  ],
+  "rewriteInstruction": "Move the company name and the core observation into the first 10 words (e.g., 'Stripe fully rewrote its homepage headline between October 2022 and June 2026'). Remove all speculative examples about audience segments that are not in the evidence. Delete the meta/title bullet or rewrite it to state only what changed (that they changed) without lamenting the absence of detail. Replace the 'action-layer remained stable' interpretation with a neutral factual statement about CTA churn. Add one sentence that explains why these four summary-card metrics together matter — for example, that the headline, structure, and navigation all changed in concert, signaling a deliberate repositioning rather than isolated tweaks. Ensure every bullet anchors to a specific evidence item and avoid hedging unless the interpretive gap is genuinely meaningful.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "clarity": 16,
+    "specificity": 12,
+    "seoUsefulness": 6,
+    "croUsefulness": 13,
+    "riskControl": 10
+  },
+  "effectivePassThreshold": 85
+}

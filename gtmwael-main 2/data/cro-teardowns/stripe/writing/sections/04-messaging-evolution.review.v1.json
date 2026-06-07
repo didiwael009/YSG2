@@ -1,0 +1,22 @@
+{
+  "score": 93,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Company name 'Stripe' appears in the first 40 words, satisfying SEO requirement",
+    "Multiple quoted value propositions provide searchable long-tail content",
+    "Specific timeline references (October 2022, June 2026) anchor the article in time"
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 30,
+    "clarity": 19,
+    "specificity": 15,
+    "seoUsefulness": 10,
+    "croUsefulness": 14,
+    "riskControl": 5
+  },
+  "effectivePassThreshold": 85
+}

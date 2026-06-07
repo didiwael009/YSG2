@@ -1,4 +1,6 @@
 import { blogPosts, getBlogPostByPath } from "./blog";
+import { getCroTeardownBySlug } from "./cro-teardown";
+import type { CroTeardownPost } from "./cro-teardown";
 
 export const SITE_URL = "https://www.yoursaasgrowth.com";
 export const BRAND_NAME = "Your SaaS Growth";
@@ -869,6 +871,17 @@ export const seoRoutes: SeoRoute[] = [
     image: "/assets/ic-center-hero.png",
     breadcrumbs: [{ name: "Case Studies", path: "/case-studies" }, { name: "IC Center", path: "/case-study/ic-center" }],
   },
+  {
+    path: "/cro-teardowns",
+    title: "SaaS CRO Teardowns | Homepage Conversion Analysis",
+    socialTitle: "SaaS CRO Teardowns | YourSaaSGrowth",
+    description: "Evidence-based SaaS homepage teardowns showing how messaging, trust, CTA structure, and conversion paths change before scaling traffic.",
+    type: "website",
+    priority: 0.7,
+    changefreq: "weekly",
+    breadcrumbs: [{ name: "CRO Teardowns", path: "/cro-teardowns" }],
+    schemaIncludeGlobal: true,
+  },
 ];
 
 export const indexableRoutes = seoRoutes.filter((route) => !route.path.includes("*") && !route.noindex);
@@ -898,6 +911,30 @@ const blogPostToSeoRoute = (post: (typeof blogPosts)[number]): SeoRoute => ({
   faq: post.faq,
 });
 
+const croTeardownToSeoRoute = (post: CroTeardownPost): SeoRoute => ({
+  path: `/cro-teardowns/${post.slug}/`,
+  title: post.metaTitle,
+  socialTitle: post.title,
+  description: post.description,
+  type: "article",
+  priority: 0.6,
+  changefreq: "monthly",
+  image: post.featuredImage,
+  datePublished: post.datePublished,
+  dateModified: post.publishedAt ?? post.datePublished,
+  breadcrumbs: [
+    { name: "CRO Teardowns", path: "/cro-teardowns" },
+    { name: post.companyName, path: `/cro-teardowns/${post.slug}/` },
+  ],
+  excerpt: post.excerpt,
+  schemaType: "Article",
+  schemaHeadline: post.h1,
+  schemaDescription: post.description,
+  schemaDatePublished: post.datePublished,
+  schemaDateModified: post.publishedAt ?? post.datePublished,
+  schemaIncludeGlobal: true,
+});
+
 const notFoundRoute: SeoRoute = {
   path: "*",
   title: "Page Not Found | Your SaaS Growth",
@@ -912,6 +949,12 @@ export const getSeoRoute = (path: string) => {
   const normalizedPath = path === "/" ? "/" : path.replace(/\/+$/, "");
   const staticRoute = seoRoutes.find((route) => route.path === normalizedPath);
   if (staticRoute) return staticRoute;
+
+  if (normalizedPath.startsWith("/cro-teardowns/")) {
+    const slug = normalizedPath.slice("/cro-teardowns/".length);
+    const post = getCroTeardownBySlug(slug);
+    if (post) return croTeardownToSeoRoute(post);
+  }
 
   const blogPost = getBlogPostByPath(normalizedPath);
   if (blogPost) return blogPostToSeoRoute(blogPost);

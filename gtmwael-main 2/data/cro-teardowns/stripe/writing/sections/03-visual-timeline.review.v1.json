@@ -1,0 +1,30 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Hedging phrase 'can be read as' appears once but is mechanical rather than meaningful — the phrase adds no interpretive value beyond what the evidence already shows",
+    "The phrase 'may suggest' in paragraph 2 is hedging language that could be tightened or removed",
+    "Paragraph 2 contains interpretive language ('consistent with iterative testing or staged rollout') that goes beyond the evidence provided",
+    "Minor specificity issue: 'the visible interface' in paragraph 3 is slightly vague — could specify 'homepage' or 'primary navigation'"
+  ],
+  "requiredFixes": [
+    "Replace 'categorization that can be read as product-first rather than outcome-first' with direct observation: 'product-category framing in navigation and headings'",
+    "Remove or justify the interpretation 'consistent with iterative testing or staged rollout' — the evidence shows incremental changes but does not support claims about testing strategy"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Company name 'Stripe' appears in first 8 words — strong SEO signal",
+    "Specific dated snapshots (October 2022, April 2023, June 2026) provide temporal SEO value",
+    "Direct quotes from H1 elements anchor the narrative to searchable page copy"
+  ],
+  "rewriteInstruction": "Remove the mechanical hedging phrase 'can be read as' from paragraph 1 and replace with direct observation. In paragraph 2, either remove the interpretation about 'iterative testing or staged rollout' or reframe it as a neutral observation ('changes appeared across multiple months'). Tighten 'may suggest' to a more direct construction. Specify 'homepage' instead of 'the visible interface' in the final sentence. Every other element is well-grounded and achieves the section goal effectively.",
+  "dimensionScores": {
+    "evidenceAccuracy": 28,
+    "clarity": 18,
+    "specificity": 14,
+    "seoUsefulness": 10,
+    "croUsefulness": 13,
+    "riskControl": 5
+  },
+  "effectivePassThreshold": 85
+}

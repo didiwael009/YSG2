@@ -1,0 +1,29 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'These changes can be read as a deliberate repositioning' is hedged but does not specify what evidence supports the 'repositioning' interpretation beyond structural volume.",
+    "The final paragraph contains the phrase 'separated from assumptions about intent or outcome' which is meta-commentary on method rather than evidence-anchored preview.",
+    "The second paragraph uses 'suggesting the page architecture was rebuilt rather than incrementally adjusted' — this is an interpretation that could be stated more directly or omitted."
+  ],
+  "requiredFixes": [
+    "Replace 'These changes can be read as a deliberate repositioning' with a more precise observation: 'The breadth of these changes—headline rewrite, navigation overhaul, and section restructuring—occurred across the same period' to stay closer to the evidence without interpreting motive.",
+    "Revise the final sentence to preview specific sections or observations rather than describe methodology: 'The analysis below tracks shifts in the headline frame, navigation labels, and section hierarchy, using only the visible text and structure captured in each snapshot.'"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Company name 'Stripe' appears in the first 10 words, meeting the proper-noun SEO requirement.",
+    "The opening sentence includes concrete date anchors ('October 2022 and June 2026') and a measurable change ('33-word value proposition'), both useful for search intent around CRO case studies.",
+    "The phrase 'homepage messaging' appears early, aligning with likely query terms."
+  ],
+  "rewriteInstruction": "Tighten the second and third paragraphs by removing interpretive phrases ('can be read as', 'suggesting') and replacing them with direct evidence statements. In the final paragraph, replace the methodological aside ('separated from assumptions') with a concrete preview of what the reader will see in subsequent sections—e.g., specific navigation labels, section heading changes, or layout shifts. Ensure every sentence anchors to a named element or quoted phrase from the evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 28,
+    "clarity": 18,
+    "specificity": 15,
+    "seoUsefulness": 10,
+    "croUsefulness": 12,
+    "riskControl": 10
+  },
+  "effectivePassThreshold": 85
+}

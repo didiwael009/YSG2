@@ -1,0 +1,28 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 7,
+    "h2Added": 15,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [],
+  "generatedAt": "2026-06-07T20:32:13.427Z",
+  "postSummary": {
+    "title": "Hootsuite Homepage Teardown: Jan 2023 to Jun 2026",
+    "h1": "How Hootsuite rewrote its homepage over 3 years",
+    "readTime": "9 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 5,
+    "snapshotCount": 7
+  }
+}

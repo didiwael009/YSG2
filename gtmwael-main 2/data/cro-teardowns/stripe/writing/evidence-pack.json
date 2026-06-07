@@ -1,0 +1,135 @@
+{
+  "slug": "stripe",
+  "companyName": "Stripe",
+  "companyUrl": "https://stripe.com",
+  "fromMonth": "2022-10",
+  "toMonth": "current",
+  "fromLabel": "Oct 2022",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-07T22:54:54.726Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2022-10",
+      "label": "Oct 2022",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2022-10.webp",
+      "timestamp": "20221115005341",
+      "originalUrl": "https://stripe.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2023-04",
+      "label": "Apr 2023",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2023-04.webp",
+      "timestamp": "20230515065708",
+      "originalUrl": "https://stripe.com",
+      "similarityToPrev": 0.8813,
+      "comparedTo": "2022-10"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2024-01.webp",
+      "timestamp": "20240215004334",
+      "originalUrl": "https://stripe.com",
+      "similarityToPrev": 0.9355,
+      "comparedTo": "2023-04"
+    },
+    {
+      "month": "2026-04",
+      "label": "Apr 2026",
+      "screenshotPath": "/cro-teardowns/stripe/selected/2026-04.webp",
+      "timestamp": "20260515002728",
+      "originalUrl": "https://stripe.com",
+      "similarityToPrev": 0.9038,
+      "comparedTo": "2024-01"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/stripe/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://stripe.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Flexible solutions for every business model.",
+      "The backbone of global commerce",
+      "Powering businesses of all sizes.",
+      "Reliable, extensible infrastructure for every stack.",
+      "What’s happening"
+    ],
+    "h2Removed": [
+      "Unified platform",
+      "Designed for developers",
+      "Why Stripe",
+      "Global scale"
+    ],
+    "ctaAdded": [
+      "Get started",
+      "Sign up with Google",
+      "Watch now",
+      "Read the story",
+      "Read the guide",
+      "Explore no-code",
+      "Read the letter",
+      "Get the data",
+      "Watch video",
+      "Learn how"
+    ],
+    "ctaRemoved": [
+      "Contact Sales",
+      "Become a Partner",
+      "get financing",
+      "Start with payments",
+      "Read the docs",
+      "Explore partners",
+      "Sign up instantly",
+      "Request an invite",
+      "Payments Online payments",
+      "Checkout Pre-built payments page"
+    ],
+    "navAdded": [
+      "Guide me",
+      "Start now",
+      "Contact sales",
+      "Stripe for enterprises",
+      "Stripe for startups",
+      "Stripe for platforms"
+    ],
+    "navRemoved": [
+      "Payments Online payments",
+      "Checkout Pre-built payments page",
+      "Elements Customizable payments UIs",
+      "Payment Links No-code payments",
+      "Radar Fraud & risk management",
+      "Connect Payments for platforms",
+      "Billing Subscription management",
+      "Invoicing Online invoices"
+    ],
+    "headlines": [
+      {
+        "from": "Global Payments",
+        "to": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+        "fromMonth": "2022-10",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. Accept payments and scale faster.",
+        "to": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement.",
+        "fromMonth": "2022-10",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Hootsuite",
+  "companyUrl": "https://www.hootsuite.com",
+  "articleTitle": "Hootsuite Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Hootsuite rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 7,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 7,
+    "h2Added": 15,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "analysis-blocks": [
+    {
+      "id": "analysis-2023-01",
+      "label": "Jan 2023 — original state",
+      "period": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-01.webp",
+      "heading": "The original: growth-outcome messaging",
+      "annotations": [
+        "H1 opens with: \"Grow your reach and get more business with social media. Let's do this.\" — accessible benefit language aimed at a broad audience.",
+        "Visible section headings include: \"Social media trends 2023 is finally here!\", \"Manage social media in one place\", \"How a 1930’s pecan candy company is turning heads on TikTok\".",
+        "Navigation includes: \"Why Hootsuite\", \"Publish and schedule\", \"Engage customers\", \"Monitor activity\" — workflow-action framing.",
+        "Section headings later removed include: \"Social media trends 2023 is finally here!\" and \"Manage social media in one place\"."
+      ]
+    },
+    {
+      "id": "analysis-2023-07",
+      "label": "Jul 2023 — mid-transition",
+      "period": "Jul 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-07.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 85.7% — one of the larger layout changes in the dataset.",
+        "H1 in this snapshot: \"Save time and get REAL results on social media.Hootsuite makes it easy.\".",
+        "New section headings appearing: \"Knowledge is power\", \"Loved by Hootsuite\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/current-live.webp",
+      "heading": "Today: platform-first positioning",
+      "annotations": [
+        "H1 now reads: \"Drive real business impact with the world’s deepest social intelligence and management platform\" — formal capability framing, consistent with platform-level positioning.",
+        "New section headings include: \"See risk, prove impact, and spot opportunity\", \"What can Hootsuite do for you?\", \"See what’s trending on social media right now\".",
+        "Navigation now includes product categories like: \"Reputation management\", \"Social listening\", \"Brand monitoring\".",
+        "Third-party validation visible in section headings: \"Hootsuite is G2's #1 best software product for 2026\".",
+        "CTAs no longer present include: \"See all customer stories\", \"See all industries\", \"Become a partner\"."
+      ]
+    }
+  ]
+}

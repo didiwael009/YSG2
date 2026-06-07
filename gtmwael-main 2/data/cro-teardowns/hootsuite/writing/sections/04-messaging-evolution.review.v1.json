@@ -1,0 +1,21 @@
+{
+  "score": 92,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Company name (Hootsuite) appears in paragraph 2, not in first 40 words — but proper nouns 'January 2023' and 'June 2026' anchor the opening immediately to this specific analysis",
+    "Meta description change is quoted verbatim, creating useful long-tail search value for readers comparing Hootsuite's messaging over time"
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 30,
+    "clarity": 20,
+    "specificity": 15,
+    "seoUsefulness": 9,
+    "croUsefulness": 15,
+    "riskControl": 10
+  },
+  "effectivePassThreshold": 85
+}

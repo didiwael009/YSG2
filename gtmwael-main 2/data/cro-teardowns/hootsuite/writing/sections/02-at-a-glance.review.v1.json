@@ -1,0 +1,37 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Opening sentence ('changed most visibly') is unsupported—evidence shows what changed, not what changed 'most visibly'",
+    "Final paragraph offers a summary interpretation ('reworked not only top-level messaging but also the underlying structure') that is generic and not tied to specific evidence items",
+    "The phrase 'Taken together' signals a synthetic conclusion not anchored to a discrete evidence point",
+    "Bullet list mechanically repeats summary-card phrasing ('described in the data as', 'referred to as') without adding context or narrative value",
+    "No company-specific proper noun in the first 40 words beyond 'Hootsuite'—SEO utility is limited",
+    "Several sentences could appear word-for-word in a different company's teardown (e.g., the final sentence about 'top-level messaging' and 'underlying structure')"
+  ],
+  "requiredFixes": [
+    "Remove or rewrite the opening sentence to avoid the unsupported claim that these changes were 'most visible'—state only that these elements changed",
+    "Delete the final paragraph or rewrite it to reference a specific evidence item (e.g., the mid-transition snapshot, the ratio of added vs. removed H2s)",
+    "Replace mechanical bullet repetitions with narrative context—e.g., explain what 'audience signal changed' likely refers to (a shift from one user type to another) if you can infer it from evidence, or omit the phrase",
+    "Add at least one company-specific detail in the opening 40 words (e.g., a navigation label, a headline fragment, or a date anchor)"
+  ],
+  "riskFlags": [
+    "'changed most visibly' implies a ranking (visibility hierarchy) not present in the evidence—only structural counts are provided",
+    "'Taken together, the visible changes suggest Hootsuite reworked…' is an interpretive leap presented as a conclusion rather than a labelled reading"
+  ],
+  "seoNotes": [
+    "Company name appears in the first sentence, but no other proper nouns or date anchors appear in the first 40 words",
+    "Section reads more like a data summary than a narrative useful for a searcher looking for CRO insights",
+    "No mention of what the homepage does or what Hootsuite offers—context is absent for a reader unfamiliar with the brand"
+  ],
+  "rewriteInstruction": "Begin with a concrete, evidence-anchored observation: state the date range and snapshot count, then name one specific change (e.g., headline rewrite or navigation overhaul) using a quoted phrase or label from the evidence. Replace the bullet list with a short narrative paragraph that contextualises the three summary-card categories (headline, H2s, navigation) without mechanical repetition. Drop the 'Taken together' conclusion or replace it with a single, specific observation tied to the mid-transition snapshot or the 15-added-vs-4-removed ratio. Ensure every sentence could not appear word-for-word in a different company's teardown by anchoring each to Hootsuite-specific evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "clarity": 15,
+    "specificity": 8,
+    "seoUsefulness": 6,
+    "croUsefulness": 9,
+    "riskControl": 5
+  },
+  "effectivePassThreshold": 85
+}

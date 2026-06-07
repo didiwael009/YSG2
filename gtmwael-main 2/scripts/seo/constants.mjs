@@ -11,6 +11,8 @@ export const sourceAssetsDir = path.join(projectRoot, "src/assets");
 export const seoSourcePath = path.join(projectRoot, "src/lib/seo.ts");
 export const blogIndexPath = path.join(projectRoot, "src/content/blog/index.ts");
 export const blogArticlesDir = path.join(projectRoot, "src/content/blog/articles");
+export const croTeardownIndexPath = path.join(projectRoot, "src/content/cro-teardown/index.ts");
+export const croTeardownArticlesDir = path.join(projectRoot, "src/content/cro-teardown/articles");
 
 export const prerenderRoutePaths = [
   "/",

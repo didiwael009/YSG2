@@ -1,0 +1,46 @@
+{
+  "sectionId": "02-at-a-glance",
+  "companyName": "Stripe",
+  "companyUrl": "https://stripe.com",
+  "articleTitle": "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
+  "h1": "How Stripe rewrote its homepage over 4 years",
+  "fromLabel": "Oct 2022",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 5,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 6,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Oct 2022 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 4 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "6 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}

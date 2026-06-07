@@ -1,0 +1,28 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 5,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 6,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [],
+  "generatedAt": "2026-06-07T22:54:54.739Z",
+  "postSummary": {
+    "title": "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
+    "h1": "How Stripe rewrote its homepage over 4 years",
+    "readTime": "9 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 4,
+    "snapshotCount": 5
+  }
+}

@@ -1,0 +1,440 @@
+/**
+ * publish-article.ts — Phase 4F deterministic publisher.
+ *
+ * Reads the pipeline outputs for a given slug and writes the final TypeScript
+ * content file into the website source tree, then registers it in index.ts.
+ *
+ * CLI:
+ *   npm run cro-teardown:publish -- --slug hootsuite
+ *   npm run cro-teardown:publish -- --slug hootsuite --dry-run
+ *   npm run cro-teardown:publish -- --slug hootsuite --force
+ *
+ * Quality gates (all three must pass unless --force):
+ *   • finalJudgePass === true
+ *   • seoPass === true
+ *   • unsupportedClaims.length === 0
+ *
+ * DETERMINISTIC — zero API calls. No LLM is invoked.
+ *
+ * Output files:
+ *   src/content/cro-teardown/articles/[slug].ts   (written unless --dry-run)
+ *   src/content/cro-teardown/index.ts              (updated unless --dry-run)
+ *   data/cro-teardowns/[slug]/writing/publish-report.json (always written)
+ */
+
+import * as fs   from 'node:fs';
+import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import type { FinalJudgeResult } from './final-judge.js';
+import type { SeoAuditResult }   from './seo-auditor.js';
+
+// ─── Types ────────────────────────────────────────────────────────────────────
+
+interface CliArgs {
+  slug:   string;
+  dryRun: boolean;
+  force:  boolean;
+}
+
+interface PublishReport {
+  publishedAt:       string;
+  slug:              string;
+  dryRun:            boolean;
+  forced:            boolean;
+  qualityGates: {
+    finalJudgePass:    boolean;
+    finalJudgeScore:   number;
+    seoPass:           boolean;
+    seoScore:          number;
+    unsupportedClaims: string[];
+  };
+  blockedReasons:    string[];
+  articlePath:       string;
+  indexUpdated:      boolean;
+  internalLinkSuggestionsAdded: string[];
+  fieldsOverridden:  string[];
+}
+
+// ─── Internal link suggestions ────────────────────────────────────────────────
+// These are confirmed real routes in the app, contextually relevant to
+// CRO teardown articles. Added when internalLinkingScore < 8.
+
+const INTERNAL_LINK_SUGGESTIONS: string[] = [
+  '/conversion-rate-optimisation-specialist',
+  '/landing-page-for-saas',
+  '/saas-marketing-agency',
+];
+
+const INTERNAL_LINK_SCORE_THRESHOLD = 8;
+
+// ─── CLI parser ───────────────────────────────────────────────────────────────
+
+function parseCli(argv: string[]): CliArgs {
+  const args = argv.slice(2);
+  let slug  = '';
+  let dryRun = false;
+  let force  = false;
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--slug' && args[i + 1]) {
+      slug = args[++i];
+    } else if (args[i] === '--dry-run') {
+      dryRun = true;
+    } else if (args[i] === '--force') {
+      force = true;
+    }
+  }
+
+  if (!slug) {
+    console.error('Usage: publish-article.ts --slug <slug> [--dry-run] [--force]');
+    process.exit(1);
+  }
+
+  return { slug, dryRun, force };
+}
+
+// ─── TypeScript literal serialiser ───────────────────────────────────────────
+
+/**
+ * Converts a JSON-safe value to a TypeScript object-literal string.
+ * - Strings: JSON.stringify (double-quoted, properly escaped)
+ * - Objects: unquoted identifier keys, one per line
+ * - Arrays: one item per line
+ * - null/undefined filtered at object level
+ */
+function toTsValue(val: unknown, depth = 0): string {
+  const pad   = '  '.repeat(depth);
+  const inner = '  '.repeat(depth + 1);
+
+  if (val === null) return 'null';
+  if (val === undefined) return 'undefined';
+  if (typeof val === 'string') return JSON.stringify(val);
+  if (typeof val === 'number' || typeof val === 'boolean') return String(val);
+
+  if (Array.isArray(val)) {
+    if (val.length === 0) return '[]';
+    const items = val.map(v => `${inner}${toTsValue(v, depth + 1)}`).join(',\n');
+    return `[\n${items},\n${pad}]`;
+  }
+
+  if (typeof val === 'object') {
+    const obj = val as Record<string, unknown>;
+    const entries = Object.entries(obj)
+      .filter(([, v]) => v !== undefined)
+      .map(([k, v]) => `${inner}${k}: ${toTsValue(v, depth + 1)}`);
+    if (entries.length === 0) return '{}';
+    return `{\n${entries.join(',\n')},\n${pad}}`;
+  }
+
+  return JSON.stringify(val);
+}
+
+// ─── Slug → identifier ────────────────────────────────────────────────────────
+
+/** 'some-company' → 'someCompany' */
+function slugToVarName(slug: string): string {
+  return slug.replace(/-([a-z])/g, (_, c: string) => c.toUpperCase());
+}
+
+// ─── Article TypeScript generator ────────────────────────────────────────────
+
+function generateArticleTs(opts: {
+  varName:          string;
+  data:             Record<string, unknown>;
+  articleBody:      string;
+  publishedAt:      string;
+  internalLinkSuggestions?: string[];
+  finalJudgeScore:  number;
+  seoScore:         number;
+}): string {
+  const { varName, data, articleBody, publishedAt, finalJudgeScore, seoScore } = opts;
+
+  const post: Record<string, unknown> = {
+    ...data,
+    articleBody,
+    ...(opts.internalLinkSuggestions?.length
+      ? { internalLinkSuggestions: opts.internalLinkSuggestions }
+      : {}),
+    publishedAt,
+  };
+
+  const slug = String(data.slug ?? varName);
+
+  return `/**
+ * ${varName}.ts — Phase 4F published content file.
+ *
+ * Published    : ${publishedAt}
+ * Final judge  : ${finalJudgeScore}/100 ✓
+ * SEO score    : ${seoScore}/100 ✓
+ *
+ * Source files used:
+ *   data/cro-teardowns/${slug}/writing/generated-article-data.json
+ *   data/cro-teardowns/${slug}/writing/article-final.md
+ *   data/cro-teardowns/${slug}/writing/seo.json
+ *
+ * To regenerate article content:
+ *   npm run cro-teardown:compose -- --slug ${slug} --mode standard --force
+ *   npm run cro-teardown:publish -- --slug ${slug}
+ */
+
+import type { CroTeardownPost } from "../types";
+
+export const ${varName}: CroTeardownPost = ${toTsValue(post, 0)};
+`;
+}
+
+// ─── Index.ts updater ────────────────────────────────────────────────────────
+
+/**
+ * Adds the import and array entry to index.ts if not already present.
+ * Returns true if the file was modified.
+ */
+function updateIndexTs(opts: {
+  indexPath: string;
+  slug:      string;
+  varName:   string;
+  dryRun:    boolean;
+}): boolean {
+  const { indexPath, slug, varName, dryRun } = opts;
+
+  let src = fs.readFileSync(indexPath, 'utf-8');
+  let modified = false;
+
+  // ── 1. Import line ──────────────────────────────────────────────────────────
+  const importLine = `import { ${varName} } from "./articles/${slug}";`;
+  if (!src.includes(importLine)) {
+    // Insert before the first export statement
+    const exportIdx = src.search(/^export\b/m);
+    if (exportIdx === -1) {
+      src = importLine + '\n' + src;
+    } else {
+      src = src.slice(0, exportIdx) + importLine + '\n' + src.slice(exportIdx);
+    }
+    modified = true;
+  }
+
+  // ── 2. Array entry ──────────────────────────────────────────────────────────
+  // Matches: croTeardownPosts: CroTeardownPost[] = [...];
+  const arrayMatch = src.match(
+    /(export const croTeardownPosts:\s*CroTeardownPost\[\]\s*=\s*\[)([^\]]*?)(\];)/s,
+  );
+  if (arrayMatch) {
+    const [, prefix, content, suffix] = arrayMatch;
+    const existing = content.split(',').map(s => s.trim()).filter(Boolean);
+    if (!existing.includes(varName)) {
+      const updated = [...existing, varName].join(', ');
+      src = src.replace(arrayMatch[0], `${prefix}${updated}${suffix}`);
+      modified = true;
+    }
+  }
+
+  if (modified && !dryRun) {
+    fs.writeFileSync(indexPath, src, 'utf-8');
+  }
+
+  return modified;
+}
+
+// ─── Quality gate check ───────────────────────────────────────────────────────
+
+function checkQualityGates(
+  judge: FinalJudgeResult | null,
+  seo:   SeoAuditResult   | null,
+  force: boolean,
+): { blocked: boolean; reasons: string[] } {
+  const reasons: string[] = [];
+
+  if (!judge) {
+    reasons.push('final-judge.json not found — run Phase 4D first');
+  } else {
+    if (!judge.pass) {
+      reasons.push(`Final judge FAIL — score ${judge.overallScore}/100 (need ≥ 90)`);
+    }
+    if (judge.unsupportedClaims.length > 0) {
+      reasons.push(
+        `${judge.unsupportedClaims.length} unsupported claim(s): ${judge.unsupportedClaims.slice(0, 2).join('; ')}`,
+      );
+    }
+  }
+
+  if (!seo) {
+    reasons.push('seo-audit.json not found — run Phase 4D first');
+  } else if (!seo.pass) {
+    reasons.push(`SEO audit FAIL — score ${seo.seoScore}/100 (need ≥ 80)`);
+  }
+
+  const blocked = reasons.length > 0 && !force;
+  return { blocked, reasons };
+}
+
+// ─── Main ─────────────────────────────────────────────────────────────────────
+
+async function main(): Promise<void> {
+  const cli = parseCli(process.argv);
+  const { slug, dryRun, force } = cli;
+
+  const projectRoot  = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+  const writingDir   = path.join(projectRoot, 'data', 'cro-teardowns', slug, 'writing');
+  const contentDir   = path.join(projectRoot, 'src', 'content', 'cro-teardown', 'articles');
+  const indexPath    = path.join(projectRoot, 'src', 'content', 'cro-teardown', 'index.ts');
+  const reportPath   = path.join(writingDir, 'publish-report.json');
+
+  const varName = slugToVarName(slug);
+
+  console.log(`\n📦  Phase 4F — Publish Article`);
+  console.log(`    slug    : ${slug}`);
+  console.log(`    varName : ${varName}`);
+  console.log(`    dryRun  : ${dryRun}`);
+  console.log(`    force   : ${force}`);
+  console.log('');
+
+  // ── Load quality gate files ─────────────────────────────────────────────────
+  const judgePath = path.join(writingDir, 'final-judge.json');
+  const seoPath   = path.join(writingDir, 'seo-audit.json');
+
+  const judge = fs.existsSync(judgePath)
+    ? (JSON.parse(fs.readFileSync(judgePath, 'utf-8')) as FinalJudgeResult)
+    : null;
+
+  const seoAudit = fs.existsSync(seoPath)
+    ? (JSON.parse(fs.readFileSync(seoPath, 'utf-8')) as SeoAuditResult)
+    : null;
+
+  // ── Quality gate check ──────────────────────────────────────────────────────
+  const { blocked, reasons } = checkQualityGates(judge, seoAudit, force);
+
+  if (blocked) {
+    console.error('🚫  Publish blocked — quality gates not met:');
+    for (const r of reasons) console.error(`    • ${r}`);
+    console.error('\n    Run with --force to publish anyway.');
+    process.exit(1);
+  }
+
+  if (reasons.length > 0 && force) {
+    console.warn('⚠️   Publishing with --force despite quality gate issues:');
+    for (const r of reasons) console.warn(`    • ${r}`);
+    console.warn('');
+  }
+
+  // ── Load article data ───────────────────────────────────────────────────────
+  const dataPath    = path.join(writingDir, 'generated-article-data.json');
+  const articlePath = path.join(writingDir, 'article-final.md');
+  const seoJsonPath = path.join(writingDir, 'seo.json');
+
+  if (!fs.existsSync(dataPath)) {
+    console.error(`❌  generated-article-data.json not found at ${dataPath}`);
+    console.error('    Run Phase 4A first: npm run cro-teardown:generate-data -- --slug ' + slug);
+    process.exit(1);
+  }
+
+  if (!fs.existsSync(articlePath)) {
+    console.error(`❌  article-final.md not found at ${articlePath}`);
+    console.error('    Run Phase 4C first: npm run cro-teardown:compose -- --slug ' + slug);
+    process.exit(1);
+  }
+
+  const structuredData = JSON.parse(fs.readFileSync(dataPath, 'utf-8')) as Record<string, unknown>;
+  const articleBody    = fs.readFileSync(articlePath, 'utf-8');
+  const seoData        = fs.existsSync(seoJsonPath)
+    ? (JSON.parse(fs.readFileSync(seoJsonPath, 'utf-8')) as Record<string, string>)
+    : null;
+
+  // ── Decide what to override ─────────────────────────────────────────────────
+  // Keep structured data description/excerpt as-is — they're the complete
+  // versions. The seo.json metaDescription is SERP-truncated ("…" ending).
+  // We do update metaTitle if seo.json has a version (they match for Hootsuite).
+  const fieldsOverridden: string[] = [];
+
+  if (seoData?.title && seoData.title !== structuredData.metaTitle) {
+    structuredData.metaTitle = seoData.title;
+    fieldsOverridden.push('metaTitle');
+  }
+
+  // ── Internal link suggestions ───────────────────────────────────────────────
+  const internalLinkingScore = seoAudit?.internalLinkingScore ?? INTERNAL_LINK_SCORE_THRESHOLD;
+  const internalLinkSuggestionsAdded: string[] =
+    internalLinkingScore < INTERNAL_LINK_SCORE_THRESHOLD
+      ? INTERNAL_LINK_SUGGESTIONS
+      : [];
+
+  // ── Generate TypeScript content ─────────────────────────────────────────────
+  const publishedAt = new Date().toISOString();
+
+  const articleTs = generateArticleTs({
+    varName,
+    data:                    structuredData,
+    articleBody,
+    publishedAt,
+    internalLinkSuggestions: internalLinkSuggestionsAdded,
+    finalJudgeScore:         judge?.overallScore ?? 0,
+    seoScore:                seoAudit?.seoScore ?? 0,
+  });
+
+  // ── Write article file ──────────────────────────────────────────────────────
+  const articleOutputPath = path.join(contentDir, `${slug}.ts`);
+
+  if (dryRun) {
+    console.log(`🔍  [dry-run] Would write: ${path.relative(projectRoot, articleOutputPath)}`);
+    console.log(`    First 400 chars of generated file:\n`);
+    console.log(articleTs.slice(0, 400) + '…\n');
+  } else {
+    fs.mkdirSync(contentDir, { recursive: true });
+    fs.writeFileSync(articleOutputPath, articleTs, 'utf-8');
+    console.log(`✅  Wrote: ${path.relative(projectRoot, articleOutputPath)}`);
+  }
+
+  // ── Update index.ts ─────────────────────────────────────────────────────────
+  const indexUpdated = updateIndexTs({ indexPath, slug, varName, dryRun });
+
+  if (dryRun) {
+    console.log(`🔍  [dry-run] index.ts: ${indexUpdated ? 'would update (import/array)' : 'no change needed'}`);
+  } else {
+    console.log(`${indexUpdated ? '✅  Updated' : 'ℹ️   No change to'}: ${path.relative(projectRoot, indexPath)}`);
+  }
+
+  // ── Write publish report ────────────────────────────────────────────────────
+  const report: PublishReport = {
+    publishedAt,
+    slug,
+    dryRun,
+    forced: force && reasons.length > 0,
+    qualityGates: {
+      finalJudgePass:    judge?.pass            ?? false,
+      finalJudgeScore:   judge?.overallScore    ?? 0,
+      seoPass:           seoAudit?.pass         ?? false,
+      seoScore:          seoAudit?.seoScore     ?? 0,
+      unsupportedClaims: judge?.unsupportedClaims ?? [],
+    },
+    blockedReasons:              reasons,
+    articlePath:                 path.relative(projectRoot, articleOutputPath),
+    indexUpdated,
+    internalLinkSuggestionsAdded,
+    fieldsOverridden,
+  };
+
+  fs.mkdirSync(writingDir, { recursive: true });
+  fs.writeFileSync(reportPath, JSON.stringify(report, null, 2), 'utf-8');
+  console.log(`📄  Report: ${path.relative(projectRoot, reportPath)}`);
+
+  // ── Summary ─────────────────────────────────────────────────────────────────
+  console.log('');
+  console.log('─'.repeat(60));
+  console.log(dryRun ? '📋  DRY RUN complete — no files written' : '🚀  Publish complete');
+  console.log(`    Final judge : ${judge?.overallScore ?? '?'}/100 ${judge?.pass ? '✓' : '✗'}`);
+  console.log(`    SEO score   : ${seoAudit?.seoScore ?? '?'}/100 ${seoAudit?.pass ? '✓' : '✗'}`);
+  console.log(`    Article     : ${path.relative(projectRoot, articleOutputPath)}`);
+  if (internalLinkSuggestionsAdded.length > 0) {
+    console.log(`    Internal links added (${internalLinkSuggestionsAdded.length}): ${internalLinkSuggestionsAdded.join(', ')}`);
+  }
+  console.log('─'.repeat(60));
+}
+
+// ─── Entry guard ──────────────────────────────────────────────────────────────
+
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch(err => {
+    console.error('\n❌  publish-article failed:', err instanceof Error ? err.message : err);
+    process.exit(1);
+  });
+}

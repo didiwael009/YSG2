@@ -1,0 +1,46 @@
+{
+  "sectionId": "02-at-a-glance",
+  "companyName": "Hootsuite",
+  "companyUrl": "https://www.hootsuite.com",
+  "articleTitle": "Hootsuite Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Hootsuite rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 7,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 7,
+    "h2Added": 15,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Jun 2026",
+      "note": "7 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "15 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}

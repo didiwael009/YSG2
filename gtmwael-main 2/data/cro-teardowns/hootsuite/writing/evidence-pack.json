@@ -1,0 +1,165 @@
+{
+  "slug": "hootsuite",
+  "companyName": "Hootsuite",
+  "companyUrl": "https://www.hootsuite.com",
+  "fromMonth": "2023-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-07T20:32:13.413Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-01.webp",
+      "timestamp": "20230215015358",
+      "originalUrl": "https://www.hootsuite.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2023-04",
+      "label": "Apr 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-04.webp",
+      "timestamp": "20230515032206",
+      "originalUrl": "https://www.hootsuite.com",
+      "similarityToPrev": 0.932,
+      "comparedTo": "2023-01"
+    },
+    {
+      "month": "2023-07",
+      "label": "Jul 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-07.webp",
+      "timestamp": "20230815061341",
+      "originalUrl": "https://www.hootsuite.com",
+      "similarityToPrev": 0.8572,
+      "comparedTo": "2023-04"
+    },
+    {
+      "month": "2023-10",
+      "label": "Oct 2023",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2023-10.webp",
+      "timestamp": "20231115004540",
+      "originalUrl": "https://www.hootsuite.com",
+      "similarityToPrev": 0.8793,
+      "comparedTo": "2023-07"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2024-01.webp",
+      "timestamp": "20240215015453",
+      "originalUrl": "https://www.hootsuite.com",
+      "similarityToPrev": 0.9161,
+      "comparedTo": "2023-10"
+    },
+    {
+      "month": "2025-04",
+      "label": "Apr 2025",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/2025-04.webp",
+      "timestamp": "20250515003642",
+      "originalUrl": "https://www.hootsuite.com",
+      "similarityToPrev": 0.9339,
+      "comparedTo": "2024-01"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/hootsuite/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.hootsuite.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "See risk, prove impact, and spot opportunity",
+      "What can Hootsuite do for you?",
+      "See what’s trending on social media right now",
+      "Save time, simplify, and grow faster on social media",
+      "Boost engagement, reach, and follower count with less effort",
+      "Respond to social media messages and comments in one place",
+      "Stay ahead of the latest trends and boost your chances of going viral",
+      "Beat your competitors to the next big thing",
+      "Turn passionate employee advocates into engagement and reach",
+      "Why Hootsuite?",
+      "Hootsuite is G2's #1 best software product for 2026",
+      "See how brands grow with Hootsuite",
+      "Follow us on social. It's where we thrive.",
+      "Unlock insights tailored to your business",
+      "Privacy Preference Center"
+    ],
+    "h2Removed": [
+      "Social media trends 2023 is finally here!",
+      "Manage social media in one place",
+      "How a 1930’s pecan candy company is turning heads on TikTok",
+      "What our customers are saying about us"
+    ],
+    "ctaAdded": [
+      "Try it now",
+      "Start your free trial",
+      "Request a demo",
+      "Learn more",
+      "Explore integrations",
+      "Read the full case study",
+      "Read more on LinkedIn",
+      "Become an affiliate",
+      "Contact us",
+      "Reputation management"
+    ],
+    "ctaRemoved": [
+      "See all customer stories",
+      "See all industries",
+      "Become a partner",
+      "Start free trial",
+      "Start Your Free 30-day Trial",
+      "Compare plans",
+      "Read the trends",
+      "Explore All Features",
+      "Read the case study",
+      "Compare Plans"
+    ],
+    "navAdded": [
+      "Reputation management",
+      "Social listening",
+      "Brand monitoring",
+      "Crisis management",
+      "Review management",
+      "Market research",
+      "Audience insights",
+      "Product research"
+    ],
+    "navRemoved": [
+      "Publish and schedule",
+      "Engage customers",
+      "Monitor activity",
+      "Advertise content",
+      "Analyze results",
+      "See all customer stories",
+      "Higher education",
+      "See all industries"
+    ],
+    "headlines": [
+      {
+        "from": "Grow your reach and get more business with social media. Let's do this.",
+        "to": "Drive real business impact with the world’s deepest social intelligence and management platform",
+        "fromMonth": "2023-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Save time and grow on social with Hootsuite, your all-in-one social media scheduler, manager, and analytics secret weapon. Give it a try for free!",
+        "to": "Hootsuite is a social media management tool that brings scheduling, content creation, analytics, and social listening to one place.",
+        "fromMonth": "2023-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

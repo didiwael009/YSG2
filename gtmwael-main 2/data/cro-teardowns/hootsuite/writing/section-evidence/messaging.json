@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "Grow your reach and get more business with social media. Let's do this.",
+    "after": "Drive real business impact with the world’s deepest social intelligence and management platform",
+    "note": "The shift from casual outcome language to formal capability framing can be read as a move toward upmarket positioning. This is observation, not confirmed strategy."
+  },
+  {
+    "element": "Meta description",
+    "before": "Save time and grow on social with Hootsuite, your all-in-one social media scheduler, manager, and analytics secret weapon. Give it a try for free!",
+    "after": "Hootsuite is a social media management tool that brings scheduling, content creation, analytics, and social listening to one place.",
+    "note": "Free-trial urgency and exclamatory language removed. The new description reads as a neutral product category statement — more consistent with a platform positioning than a trial-conversion tool."
+  },
+  {
+    "element": "Page title",
+    "before": "Social Media Marketing and Management Tool - Hootsuite",
+    "after": "Social Media Marketing and Management Tool | Hootsuite"
+  }
+]

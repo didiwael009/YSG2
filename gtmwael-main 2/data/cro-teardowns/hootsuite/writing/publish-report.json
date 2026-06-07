@@ -1,0 +1,24 @@
+{
+  "publishedAt": "2026-06-07T21:58:33.815Z",
+  "slug": "hootsuite",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 94,
+    "seoPass": true,
+    "seoScore": 85,
+    "unsupportedClaims": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/hootsuite.ts",
+  "indexUpdated": false,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

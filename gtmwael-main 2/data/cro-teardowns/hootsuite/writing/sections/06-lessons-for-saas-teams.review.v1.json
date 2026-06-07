@@ -1,0 +1,27 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The section includes one sentence that could appear word-for-word in another teardown: 'The H1 is one of the highest-leverage positioning decisions on the page.'",
+    "The hedging phrase 'can be read as' appears once and 'may reflect' appears once, both are meaningful hedges but could be tracked for frequency",
+    "Minor specificity loss in the final paragraph: 'if your own homepage has been drifting' is slightly generic"
+  ],
+  "requiredFixes": [
+    "Remove or replace the generic sentence 'The H1 is one of the highest-leverage positioning decisions on the page.' with a Hootsuite-specific observation, such as tying the H1 shift to the navigation change or the section heading pattern documented in the evidence."
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Company name 'Hootsuite' appears in the second paragraph at word position ~45–50, slightly outside the ideal first-40-words window",
+    "Specific quoted elements ('Grow your reach', 'Publish and schedule', 'Reputation management') appear early and provide strong semantic SEO signals"
+  ],
+  "rewriteInstruction": "Replace the sentence 'The H1 is one of the highest-leverage positioning decisions on the page.' with a company-specific observation that ties the H1 shift to another documented change in the Hootsuite evidence — such as the navigation evolution or the section heading pattern. This will eliminate the only generic sentence and anchor every paragraph to this specific teardown. Also consider moving 'Hootsuite' into the first 40 words by restructuring the opening paragraph to name the company earlier.",
+  "dimensionScores": {
+    "evidenceAccuracy": 30,
+    "clarity": 20,
+    "specificity": 10,
+    "seoUsefulness": 8,
+    "croUsefulness": 15,
+    "riskControl": 10
+  },
+  "effectivePassThreshold": 85
+}

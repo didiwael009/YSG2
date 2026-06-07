@@ -1,0 +1,65 @@
+{
+  "sectionId": "01-intro",
+  "companyName": "Stripe",
+  "companyUrl": "https://stripe.com",
+  "articleTitle": "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
+  "h1": "How Stripe rewrote its homepage over 4 years",
+  "fromLabel": "Oct 2022",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 5,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 6,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Oct 2022 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 4 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "6 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Global Payments",
+      "after": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. Accept payments and scale faster.",
+      "after": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Stripe | Payment Processing Platform for the Internet",
+      "after": "Stripe | Financial Infrastructure to Grow Your Revenue"
+    }
+  ]
+}

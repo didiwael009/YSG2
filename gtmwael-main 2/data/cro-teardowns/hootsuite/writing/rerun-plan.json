@@ -1,0 +1,38 @@
+{
+  "createdAt": "2026-06-07T21:42:23.642Z",
+  "slug": "hootsuite",
+  "source": {
+    "finalJudgePass": true,
+    "seoPass": true,
+    "finalJudgeScore": 94,
+    "seoScore": 80
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "01-intro",
+      "reasons": [
+        "Primary keyword 'Hootsuite homepage CRO teardown' appears only once in the article body (in metadata). Add at least one natural mention in the intro or conclusion to strengthen keyword-content alignme"
+      ],
+      "priority": "low",
+      "source": "seo-audit"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "Title exceeds 60 characters (currently 52 with 'Hootsuite Homepage Teardown: Jan 2023 to Jun 2026' — actually within limit, no fix needed here).",
+      "reason": "self-corrected"
+    },
+    {
+      "issue": "Meta description is 149 characters but ends with an ellipsis '…' which may render poorly in SERPs. Replace ellipsis with a complete sentence or rephrase to end cleanly within 155 characters.",
+      "reason": "metadata field in seo.json, not section content"
+    },
+    {
+      "issue": "The article uses 'Jun 2026' but was generated on 2026-06-07 — ensure the 'current' snapshot date is accurate and not a placeholder from the future (this may confuse readers if published before June 20",
+      "reason": "snapshot date metadata issue, not section content"
+    },
+    {
+      "issue": "No H1 is present in the Markdown. The first heading '# How Hootsuite rewrote its homepage over 3 years' should be validated as the page's H1 in the CMS, and it should match or closely echo the SEO tit",
+      "reason": "CMS configuration, not section content"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "publishedAt": "2026-06-07T23:03:18.841Z",
+  "slug": "stripe",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 91,
+    "seoPass": true,
+    "seoScore": 81,
+    "unsupportedClaims": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/stripe.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

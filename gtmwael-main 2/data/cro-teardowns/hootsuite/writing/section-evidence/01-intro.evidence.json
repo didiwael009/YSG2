@@ -1,0 +1,65 @@
+{
+  "sectionId": "01-intro",
+  "companyName": "Hootsuite",
+  "companyUrl": "https://www.hootsuite.com",
+  "articleTitle": "Hootsuite Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Hootsuite rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 7,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 7,
+    "h2Added": 15,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Jun 2026",
+      "note": "7 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "15 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Grow your reach and get more business with social media. Let's do this.",
+      "after": "Drive real business impact with the world’s deepest social intelligence and management platform",
+      "note": "The shift from casual outcome language to formal capability framing can be read as a move toward upmarket positioning. This is observation, not confirmed strategy."
+    },
+    {
+      "element": "Meta description",
+      "before": "Save time and grow on social with Hootsuite, your all-in-one social media scheduler, manager, and analytics secret weapon. Give it a try for free!",
+      "after": "Hootsuite is a social media management tool that brings scheduling, content creation, analytics, and social listening to one place.",
+      "note": "Free-trial urgency and exclamatory language removed. The new description reads as a neutral product category statement — more consistent with a platform positioning than a trial-conversion tool."
+    },
+    {
+      "element": "Page title",
+      "before": "Social Media Marketing and Management Tool - Hootsuite",
+      "after": "Social Media Marketing and Management Tool | Hootsuite"
+    }
+  ]
+}

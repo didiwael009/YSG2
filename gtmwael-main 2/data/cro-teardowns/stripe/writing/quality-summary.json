@@ -1,0 +1,136 @@
+{
+  "slug": "stripe",
+  "generatedAt": "2026-06-07T22:59:50.754Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "The phrase 'These changes can be read as a deliberate repositioning' is hedged but does not specify what evidence supports the 'repositioning' interpretation beyond structural volume.",
+        "The final paragraph contains the phrase 'separated from assumptions about intent or outcome' which is meta-commentary on method rather than evidence-anchored preview.",
+        "The second paragraph uses 'suggesting the page architecture was rebuilt rather than incrementally adjusted' — this is an interpretation that could be stated more directly or omitted."
+      ],
+      "sectionCostUsd": 0.021879000000000003
+    },
+    {
+      "sectionId": "02-at-a-glance",
+      "finalVersion": 3,
+      "finalScore": 83,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The phrase 'suggest a deliberate redesign effort rather than incremental drift' implies causal intent without evidence distinguishing planned vs. emergent changes."
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "The phrase 'which can be read as coordinated repositioning' in the final paragraph is a mechanical hedge rather than a meaningful interpretive qualifier—the evidence already supports a multi-layer change pattern without needing the 'can be read as' construction.",
+        "The bullet point about CTA churn ('10 additions and 10 removals') is accurate but offers no observable signal beyond arithmetic—it does not advance the reader's understanding of what changed or why it matters for CRO analysis.",
+        "The second sentence of the final paragraph ('changes to the top-level message, menu structure, and page organization suggest a deliberate redesign effort rather than incremental drift') edges toward interpretive territory without a clear evidence anchor—nothing in the summary-cards explicitly distinguishes 'deliberate redesign' from 'incremental drift' timing.",
+        "The opening sentence does not include the company name within the first 40 words (it appears at word 2, which is good), but it could be strengthened by embedding the URL or a product-category signal earlier for SEO crawlers."
+      ],
+      "sectionCostUsd": 0.086811
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "Paragraph 2 misinterprets the visual similarity metric — 88.1% is presented as continuity when the evidence indicates it represents significant change"
+      ],
+      "remainingIssueCount": 5,
+      "remainingIssues": [
+        "Paragraph 1: 'This structure can be read as product-led positioning' — hedged interpretation not labelled as such, uses mechanical phrasing",
+        "Paragraph 2: '88.1% visual similarity' is inverted — the evidence states this was 'one of the larger layout changes', so similarity should be lower, not higher. Draft misinterprets the metric.",
+        "Paragraph 2: 'This mid-transition state may suggest testing or phased rollout' — plausible interpretation, but not labelled explicitly as inference",
+        "Paragraph 4: 'consistent with a repositioning from developer tool to business infrastructure platform' — interpretive claim not labelled as such; could be stronger with explicit attribution",
+        "Minor: 'can be read as' appears once but is mechanical rather than covering a genuine interpretive gap"
+      ],
+      "sectionCostUsd": 0.027270000000000003
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 1,
+      "finalScore": 92,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 0,
+      "remainingIssues": [],
+      "sectionCostUsd": 0.027692999999999995
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The phrase 'pivot toward accessibility over technical depth' implies strategic intent and direction without sufficient labeling as interpretation",
+        "The claim that removal of CTAs 'may reflect a narrowing of the homepage's functional scope' assumes functions were eliminated rather than relocated"
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "The phrase 'pivot toward accessibility over technical depth' interprets a possible strategic shift without labeling it as interpretation",
+        "The sentence 'This pattern can be read as lowering friction for new users' hedges appropriately, but the following clause 'may reflect a narrowing of the homepage's functional scope' introduces an unlabeled interpretation about business strategy",
+        "The final sentence in paragraph 2 uses 'is consistent with' to introduce an interpretation about editorial strategy, but does not explicitly label this as speculative",
+        "The final paragraph's conclusion 'may reflect a shift from product taxonomy and developer tools toward business outcomes' is appropriately hedged, but the following sentence 'is consistent with streamlining the homepage for self-service acquisition rather than multi-stakeholder engagement' makes a strategic claim about intent without sufficient labeling"
+      ],
+      "sectionCostUsd": 0.028482000000000007
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 1,
+      "finalScore": 87,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Hedging phrase 'can be read as' appears three times, exceeding the two-instance threshold and triggering the hard cap at 85",
+        "Final sentence in paragraph 4 ('as it demonstrates how sustained focus...') adds interpretation not directly supported by the evidence and could be trimmed",
+        "First 40 words do not contain the company proper noun 'Stripe', only the generic term 'Your H1'—SEO signal opportunity missed"
+      ],
+      "sectionCostUsd": 0.024255000000000027
+    }
+  ],
+  "averageScore": 87.7,
+  "passCount": 5,
+  "failCount": 1,
+  "skippedCount": 0,
+  "totalRewriteLoops": 2,
+  "weakSections": [],
+  "allRiskFlags": [
+    "The phrase 'suggest a deliberate redesign effort rather than incremental drift' implies causal intent without evidence distinguishing planned vs. emergent changes.",
+    "Paragraph 2 misinterprets the visual similarity metric — 88.1% is presented as continuity when the evidence indicates it represents significant change",
+    "The phrase 'pivot toward accessibility over technical depth' implies strategic intent and direction without sufficient labeling as interpretation",
+    "The claim that removal of CTAs 'may reflect a narrowing of the homepage's functional scope' assumes functions were eliminated rather than relocated"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 92,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Visual Timeline section: The phrase \"both later removed\" introduces temporal sequencing not explicitly supported by the evidence. The evidence shows these H2s were removed between Oct 2022 and Jun 2026, but does not establish they were visible in Oct 2022 specifically. Rewrite to: \"...section headings that were removed during this period include 'Unified platform' and 'Designed for developers.'\""
+  ],
+  "seoScore": 84,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "The title 'Stripe Homepage Teardown: Oct 2022 to Jun 2026' contains a future date (Jun 2026). If this is intentional speculative analysis, clarify immediately in the intro. If it's an error, correct to current/past date to avoid credibility damage.",
+    "Add primary keyword 'Stripe homepage CRO teardown' earlier in the first paragraph — it currently appears only in metadata, not in the opening 150 words where search engines weight it most heavily",
+    "The H1 'How Stripe rewrote its homepage over 4 years' differs from the page title. Align these or explain the strategic difference — mismatched H1/title can dilute keyword focus",
+    "Section '## At a Glance' uses H2, but '## 01-intro' is not formatted as a heading in the rendered article. Ensure consistent heading hierarchy or remove section ID prefixes that create confusion"
+  ]
+}
