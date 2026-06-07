@@ -278,6 +278,14 @@
   .delay-500 { animation-delay: 500ms; }
 }
 
+/* Accessibility: disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+
 /* Print styles for resume page */
 @media print {
   body, html {

@@ -898,6 +898,16 @@ const blogPostToSeoRoute = (post: (typeof blogPosts)[number]): SeoRoute => ({
   faq: post.faq,
 });
 
+const notFoundRoute: SeoRoute = {
+  path: "*",
+  title: "Page Not Found | Your SaaS Growth",
+  description: "The page you are looking for does not exist.",
+  type: "website",
+  priority: 0,
+  changefreq: "monthly",
+  noindex: true,
+};
+
 export const getSeoRoute = (path: string) => {
   const normalizedPath = path === "/" ? "/" : path.replace(/\/+$/, "");
   const staticRoute = seoRoutes.find((route) => route.path === normalizedPath);
@@ -906,5 +916,5 @@ export const getSeoRoute = (path: string) => {
   const blogPost = getBlogPostByPath(normalizedPath);
   if (blogPost) return blogPostToSeoRoute(blogPost);
 
-  return seoRoutes[0];
+  return notFoundRoute;
 };
