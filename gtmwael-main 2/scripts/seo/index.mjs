@@ -38,7 +38,13 @@ const croTeardownSeoRoutes = createCroTeardownSeoRoutes(croTeardownPosts);
 const seoRoutes = mergeSeoRoutes(staticSeoRoutes, blogSeoRoutes, croTeardownSeoRoutes);
 const template = await readFile(path.join(distDir, "index.html"), "utf8");
 const lastmod = new Date().toISOString().slice(0, 10);
-const prerenderRoutes = new Set([...prerenderRoutePaths, ...blogPosts.map((post) => post.path)]);
+const prerenderRoutes = new Set([
+  ...prerenderRoutePaths,
+  ...blogPosts.map((post) => post.path),
+  // CRO teardown hub and individual article pages — full React SSR required
+  "/cro-teardowns",
+  ...croTeardownPosts.map((post) => `/cro-teardowns/${post.slug}/`),
+]);
 const restoreConsole = suppressKnownSsrNoise();
 
 const vite = await createServer({

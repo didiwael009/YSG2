@@ -16,6 +16,8 @@ export interface DimensionScores {
   seoUsefulness: number;
   croUsefulness: number;
   riskControl: number;
+  /** Phase 4M: CRO/GTM depth — buyer psychology, conversion implication, founder takeaway. */
+  analysisDepth?: number;
 }
 
 export interface CriticResult {
@@ -98,14 +100,18 @@ export function parseCriticResponse(raw: string): CriticResult {
     const ds = obj.dimensionScores as Record<string, unknown>;
     const toInt = (v: unknown, max: number): number =>
       typeof v === 'number' ? Math.round(Math.max(0, Math.min(max, v))) : 0;
-    dimensionScores = {
-      evidenceAccuracy: toInt(ds.evidenceAccuracy, 30),
-      clarity:          toInt(ds.clarity,          20),
+    const baseScores: DimensionScores = {
+      evidenceAccuracy: toInt(ds.evidenceAccuracy, 25),
+      clarity:          toInt(ds.clarity,          15),
       specificity:      toInt(ds.specificity,       15),
       seoUsefulness:    toInt(ds.seoUsefulness,     10),
-      croUsefulness:    toInt(ds.croUsefulness,     15),
+      croUsefulness:    toInt(ds.croUsefulness,     10),
       riskControl:      toInt(ds.riskControl,       10),
     };
+    if (typeof ds.analysisDepth !== 'undefined') {
+      baseScores.analysisDepth = toInt(ds.analysisDepth, 15);
+    }
+    dimensionScores = baseScores;
   }
 
   const result: CriticResult = {

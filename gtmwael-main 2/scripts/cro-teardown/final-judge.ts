@@ -54,12 +54,20 @@ export interface FinalJudgeResult {
   clarity: number;
   /** Section coherence: 0–10 */
   sectionCoherence: number;
+  /** Phase 4M: CRO/GTM depth — buyer psychology, conversion implication, proof burden: 0–15 */
+  analysisDepth?: number;
+  /** Phase 4M: SaaS founder usefulness — practical takeaways, stage-specific fixes: 0–10 */
+  founderUsefulness?: number;
   weakSections: string[];
   unsupportedClaims: string[];
   riskFlags: string[];
   requiredFixes: string[];
   optionalImprovements: string[];
   rerunRecommendations: string[];
+  /** Phase 4M: Sections flagged as generic — could apply to any SaaS homepage. */
+  genericInsightWarnings?: string[];
+  /** Phase 4M: Sections missing a practical SaaS founder takeaway. */
+  missingFounderTakeawayWarnings?: string[];
   model: string;
   costUsd: number;
   generatedAt: string;
@@ -212,14 +220,18 @@ function parseJudgeResponse(
   const evidenceAccuracy = toInt(obj.evidenceAccuracy, 15);
   const riskControl      = toInt(obj.riskControl, 10);
   const unsupportedClaims = asStringArray(obj.unsupportedClaims);
+  const analysisDepth    = typeof obj.analysisDepth !== 'undefined' ? toInt(obj.analysisDepth, 15) : undefined;
+  const founderUsefulness = typeof obj.founderUsefulness !== 'undefined' ? toInt(obj.founderUsefulness, 10) : undefined;
 
   const pass =
     overallScore >= JUDGE_PASS_SCORE &&
     evidenceAccuracy >= 12 &&
     riskControl >= 8 &&
-    unsupportedClaims.length === 0;
+    unsupportedClaims.length === 0 &&
+    (analysisDepth === undefined || analysisDepth >= 10) &&
+    (founderUsefulness === undefined || founderUsefulness >= 7);
 
-  return {
+  const result: FinalJudgeResult = {
     overallScore,
     pass,
     evidenceAccuracy,
@@ -237,6 +249,16 @@ function parseJudgeResponse(
     costUsd,
     generatedAt: new Date().toISOString(),
   };
+
+  if (analysisDepth !== undefined)    result.analysisDepth    = analysisDepth;
+  if (founderUsefulness !== undefined) result.founderUsefulness = founderUsefulness;
+
+  const genericWarnings = asStringArray(obj.genericInsightWarnings);
+  const takeawayWarnings = asStringArray(obj.missingFounderTakeawayWarnings);
+  if (genericWarnings.length > 0)   result.genericInsightWarnings          = genericWarnings;
+  if (takeawayWarnings.length > 0)  result.missingFounderTakeawayWarnings  = takeawayWarnings;
+
+  return result;
 }
 
 // ─── System prompt ────────────────────────────────────────────────────────────
@@ -245,7 +267,7 @@ const JUDGE_SYSTEM =
 `You are a senior editorial judge for CRO teardown articles about SaaS homepages.
 Output ONLY valid JSON. No text before or after the JSON object.
 
-Your role: Evaluate the FULL ARTICLE for evidence accuracy, risk control, CRO usefulness, clarity, and section coherence.
+Your role: Evaluate the FULL ARTICLE for evidence accuracy, risk control, CRO depth, GTM depth, SaaS founder usefulness, clarity, and section coherence.
 
 SCORING RUBRIC — score each dimension, then give a holistic overallScore (0–100):
 • evidenceAccuracy  (0–15): Does every factual claim in the article trace to the provided evidence?
@@ -262,20 +284,36 @@ SCORING RUBRIC — score each dimension, then give a holistic overallScore (0–
 • sectionCoherence  (0–10): Do the sections form a coherent, readable article (not just 6 isolated blocks)?
   PENALISE -3 if sections repeat the same observations without building on them.
   PENALISE -2 if the opening does not set up what follows.
+• analysisDepth     (0–15): Does the article go beyond surface description? Does it explain conversion
+  implications, buyer psychology, proof burdens, and CTA/funnel signals — not just what changed?
+  PENALISE -4 per analytical section that only describes visible changes without explaining their
+  conversion or buyer-psychology implications.
+  PENALISE -3 per section that could apply to any generic SaaS homepage without company-specific anchoring.
+  HARD CAP: If the majority of analytical sections are descriptive-only, cap overallScore at 85.
+• founderUsefulness (0–10): Does a SaaS founder reading this article walk away with at least 3 specific,
+  practical observations they can apply to their own page?
+  PENALISE -3 if lessons are generic ("test your CTAs", "know your audience") without company-specific anchoring.
+  PENALISE -3 if no section explains when NOT to copy the analysed company's approach.
+
+DEPTH HARD RULE:
+If analysisDepth < 10 OR founderUsefulness < 7, overallScore is capped at 88 and pass is false.
+A descriptive article cannot pass the judge even if it is accurate and well-written.
 
 HARD RULES:
 • Do NOT claim access to internal strategy, A/B test data, or conversion rates.
 • Do NOT invent keyword difficulty or search volume figures.
 • If a claim is in the article but NOT in the EVIDENCE, it is an unsupportedClaim.
 • If requiredFixes is non-empty, rerunRecommendations must name which section(s) to rerun.
-• overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty → pass: true.
+• overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty
+  AND analysisDepth >= 10 AND founderUsefulness >= 7 → pass: true.
 • Any other combination → pass: false.
 
 CALIBRATION:
-• 90–100: Publication-ready. Every claim sourced. Interpretations labelled. Cohesive read.
-• 80–89:  Passes with notes. One or two claims need tightening.
-• 70–79:  Needs specific fixes. At least one section should be rerun.
-• Below 70: Significant problems. Multiple sections need rewrites.`;
+• 90–100: Publication-ready. Every claim sourced. Interpretations labelled. Real CRO depth.
+  Buyer psychology present. Founder takeaways specific and actionable. Cohesive read.
+• 80–89:  Passes with notes. One or two sections need more depth or tightening.
+• 70–79:  Needs specific fixes. Analysis is too shallow or generic. At least one section should be rerun.
+• Below 70: Significant problems. Multiple sections need rewrites or are mostly descriptive.`;
 
 // ─── Main exported function ───────────────────────────────────────────────────
 
@@ -314,7 +352,14 @@ ${articleText}
 ---
 
 Score each rubric dimension. Then give a holistic overallScore (0–100).
-Apply pass logic: overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty.
+Apply pass logic: overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty AND analysisDepth >= 10 AND founderUsefulness >= 7.
+
+DEPTH CHECK — answer before scoring:
+1. Do the analytical sections (messaging, visual timeline, CTA) go beyond describing visible changes to explain conversion implications and buyer psychology?
+2. Is a buyer audience identified for each major messaging change (who the old vs new message likely served)?
+3. Are there at least 3 practical takeaways a SaaS founder can apply to their own page?
+4. Does any section address when NOT to copy the analysed company's approach?
+5. Does any section feel generic — as if it could apply to any SaaS homepage without editing?
 
 Required JSON shape:
 {
@@ -325,12 +370,16 @@ Required JSON shape:
   "croUsefulness": <0–15>,
   "clarity": <0–20>,
   "sectionCoherence": <0–10>,
+  "analysisDepth": <0–15>,
+  "founderUsefulness": <0–10>,
   "weakSections": ["<section ID or title>"],
   "unsupportedClaims": ["<quote the exact phrase from the article that is not in the evidence>"],
   "riskFlags": ["<interpretation presented as fact, or causation claim>"],
   "requiredFixes": ["<specific, actionable fix>"],
   "optionalImprovements": ["<nice-to-have improvement>"],
-  "rerunRecommendations": ["<section ID to rerun — only if requiredFixes is non-empty>"]
+  "rerunRecommendations": ["<section ID to rerun — only if requiredFixes is non-empty>"],
+  "genericInsightWarnings": ["<section that feels generic — could apply to any SaaS homepage>"],
+  "missingFounderTakeawayWarnings": ["<section that lacks a practical SaaS founder takeaway>"]
 }`;
 
   const costBefore = tracker.totalCostUsd;
