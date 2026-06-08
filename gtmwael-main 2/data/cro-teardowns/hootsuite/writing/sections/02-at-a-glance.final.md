@@ -1,9 +1,7 @@
-Hootsuite's homepage changed most visibly between January 2023 and June 2026 in its primary headline, section-heading architecture, and navigation taxonomy — shifts observable across seven snapshots covering a three-year period.
+Hootsuite's homepage changed most visibly between January 2023 and June 2026 in its primary headline, navigation architecture, and section structure.
 
-- The primary headline was fully rewritten during the period. The evidence does not include the exact headline text from either snapshot, but the summary-cards note the "audience signal changed." In CRO terms, a headline rewrite can shift the mental model a visitor forms in the first three seconds — whether the page solves for individual workflow speed or multi-team platform credibility. SaaS founders can observe: headline repositioning without corresponding proof architecture creates a trust gap.
+- The primary headline was fully rewritten, changing the audience signal from the early 2023 framing to a different value proposition by mid-2026
+- Navigation structure saw 8 items added and 8 removed — a full label replacement that can be read as a shift from one content architecture to another
+- Section headings changed at a 15 added to 4 removed ratio, suggesting the page rebuilt how the product story is organized rather than refining the sequence
 
-- Section headings underwent substantial restructuring: 15 new H2 elements added, 4 removed. This volume of change is consistent with a content architecture overhaul, likely aimed at supporting different buyer qualification paths. A common risk when section structure changes this extensively: self-serve visitors who arrived to solve one narrow problem may find themselves scanning unfamiliar category labels instead of workflow outcomes.
-
-- Navigation items changed completely — 8 labels added, 8 removed. The evidence does not specify whether the new labels are action-based ("Schedule Posts") or category-based ("Platform"), but the volume of change suggests a full navigation taxonomy replacement. The CRO implication: navigation redesigns can improve enterprise qualification while increasing friction for users who relied on the old mental model.
-
-Taken together, the visible changes suggest a homepage repositioning effort, though the snapshots alone cannot confirm whether the driver was sales-cycle adjustment, product-platform expansion, or buyer-segment prioritization.
+Taken together, the visible changes suggest a reframing of who the page speaks to and what buyer motion it supports.

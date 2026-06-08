@@ -1,0 +1,42 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 1 exceeds 90 words without a distinct second idea (95 words)",
+    "Paragraph 2 claims navigation changes are 'harder to isolate from evidence' but evidence shows 5 nav items added, 8 removed — this is factually incorrect",
+    "Paragraph 2 misrepresents 'Natively integrated AI Agent' and 'AI-powered Insights' as navigation items when they are listed as CTAs in the evidence",
+    "No company proper noun appears in the first 40 words — SEO weakness",
+    "Paragraph 2 introduces 'category awareness' and 'formal evaluation' concepts with no evidence anchor — these are generic SaaS observations that could apply to any company",
+    "The phrase 'better ticket resolution' appears as a hypothetical buyer need but no evidence shows this was an old CTA or H2 — it is invented",
+    "Section does not address which navigation items were added/removed despite the SECTION GOAL explicitly requiring this",
+    "No discussion of what trust the page must build before each ask, as required by SECTION GOAL"
+  ],
+  "requiredFixes": [
+    "Compress paragraph 1 to under 90 words by removing either the 'bifurcated funnel' interpretation or the 'friction direction' clause — one idea per paragraph",
+    "Replace paragraph 2 entirely: use the actual nav-changes evidence (5 added, 8 removed items) instead of claiming the data is 'harder to isolate'",
+    "Add Intercom's name in the first sentence to anchor SEO and company specificity",
+    "Remove the 'better ticket resolution' hypothetical — stick to what the evidence shows visitors saw",
+    "Add analysis of what trust each new CTA requires: 'Contact sales' assumes trust in rep time investment; 'Fin AI Agent' assumes visitor knows what Fin is; 'Start free trial' assumes product is self-serve learnable",
+    "Identify a buyer audience for the old vs new CTA strategy — e.g., 'outcome CTAs likely served early-stage SaaS founders; product-label CTAs serve mid-market buyers comparing platforms'"
+  ],
+  "riskFlags": [
+    "'That works when the visitor is comparing platforms in a formal evaluation' — causation claim with no supporting evidence",
+    "'friction reduces for lower-tier buyers' — conversion impact claim with no data"
+  ],
+  "seoNotes": [
+    "No company proper noun in first 40 words — violates seoUsefulness rubric",
+    "Section does not identify the company until implied reference in final sentence"
+  ],
+  "rewriteInstruction": "Rewrite to address both CTA and navigation changes using the provided evidence. Start with Intercom's name in sentence one. Compress paragraph 1 to under 90 words. Replace paragraph 2 with analysis of the 5 nav items added and 8 removed, using their actual labels if available in the full evidence set. Add a paragraph on trust burden: what must a visitor believe before clicking 'Fin AI Agent' vs 'Get started'? Identify a buyer audience shift (who did outcome CTAs serve vs product-label CTAs?). Remove all hypothetical buyer needs not present in the evidence ('better ticket resolution'). Ensure every analytical claim traces to a specific CTA or nav label in the evidence. Target 280–310 words.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "clarity": 7,
+    "specificity": 10,
+    "seoUsefulness": 4,
+    "croUsefulness": 7,
+    "riskControl": 4,
+    "analysisDepth": 6,
+    "editorialQuality": 5
+  },
+  "effectivePassThreshold": 85
+}

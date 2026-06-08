@@ -1,0 +1,75 @@
+{
+  "slug": "intercom",
+  "generatedAt": "2026-06-08T11:09:36.762Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 1,
+      "finalScore": 79,
+      "passed": false,
+      "loopsUsed": 0,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'reduces first-screen cognitive load for self-serve buyers' — causal claim about visitor cognition without testing data",
+        "'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — conversion outcome claim without evidence",
+        "'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation of strategic intent"
+      ],
+      "remainingIssueCount": 11,
+      "remainingIssues": [
+        "Paragraph 1: 'reduces first-screen cognitive load for self-serve buyers' — claim not supported by evidence; no testing data provided",
+        "Paragraph 1: 'may underserve enterprise visitors' — unsupported interpretation not flagged as speculation",
+        "Paragraph 2: 'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — causal claim about conversion outcomes without data",
+        "Paragraph 3: 'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation presented as probable fact",
+        "Paragraph 1 word count: ~95 words — exceeds 90-word guideline without introducing a distinct second idea",
+        "Paragraph 2 word count: ~90 words — borderline, no clear second idea justifying the length",
+        "The section restates the self-serve→enterprise shift pattern in paragraph 1 ('may underserve enterprise visitors') that belongs in the Messaging section",
+        "The section restates proof burden in paragraph 2 ('creates a heavier burden for cold traffic') that belongs in the Messaging section",
+        "Paragraph 3: 'filters rather than converts' — repeats CTA friction direction analysis that belongs in the CTA section",
+        "Multiple paragraphs lack explicit buyer psychology identification beyond generic 'self-serve' vs 'enterprise' labels",
+        "No company-specific proper noun appears in the first 40 words of the section"
+      ],
+      "sectionCostUsd": 0.042036000000000004
+    }
+  ],
+  "averageScore": 79,
+  "passCount": 0,
+  "failCount": 1,
+  "skippedCount": 0,
+  "totalRewriteLoops": 0,
+  "weakSections": [
+    "03-visual-timeline"
+  ],
+  "allRiskFlags": [
+    "'reduces first-screen cognitive load for self-serve buyers' — causal claim about visitor cognition without testing data",
+    "'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — conversion outcome claim without evidence",
+    "'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation of strategic intent"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 92,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [],
+  "seoScore": 85,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Meta description is 153 characters including ellipsis — good, but the ellipsis suggests truncation. Rewrite to use the full 155-character budget intentionally without trailing punctuation that implies cut-off content",
+    "The H1 'How Intercom rewrote its homepage over 3 years' does not include the primary keyword 'CRO teardown' — consider revising to 'Intercom Homepage CRO Teardown: How They Rewrote Messaging Over 3 Years' or similar",
+    "Section '02-at-a-glance' has title 'At a Glance' but this should be formatted as ## heading in the markdown for proper H2 structure",
+    "Add a conclusion section with a clear H2 (e.g., '## Key Takeaways from Intercom's Homepage Evolution') to provide closure and reinforce primary keyword"
+  ],
+  "articleWordCount": 1482,
+  "repetitionWarnings": [
+    "\"self-serve vs enterprise shift\" appears in 3 sections (max 2): 03-visual-timeline, 05-cta-navigation-evolution, 06-lessons-for-saas-teams",
+    "\"proof burden\" appears in 3 sections (max 1): 01-intro, 04-messaging-evolution, 06-lessons-for-saas-teams"
+  ],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~96w): \"Intercom's homepage underwent a complete rewrite between January…\"",
+    "[01-intro] Paragraph exceeds 90 words (~103w): \"The repositioning signal is direct: Intercom moved from…\"",
+    "[03-visual-timeline] Paragraph exceeds 90 words (~94w): \"**June 2026** reframed the opening to \"The only…\"",
+    "[05-cta-navigation-evolution] Paragraph exceeds 90 words (~95w): \"Intercom replaced outcome-driven CTAs with product-taxonomy CTAs. The…\"",
+    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~103w): \"Intercom replaced action-based navigation with product-category labels (\"Custom…\"",
+    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~120w): \"The headline shifted from \"Support customers at exactly…\"",
+    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~101w): \"Five section headings were added and one removed…\""
+  ],
+  "overLengthWarning": null
+}

@@ -58,6 +58,16 @@ export interface FinalJudgeResult {
   analysisDepth?: number;
   /** Phase 4M: SaaS founder usefulness — practical takeaways, stage-specific fixes: 0–10 */
   founderUsefulness?: number;
+  /** Phase 4N: Concision — no repeated conclusions, one idea per paragraph, no padding: 0–10 */
+  concision?: number;
+  /** Phase 4N: Editorial sharpness — section boundaries respected, no cross-section repetition: 0–10 */
+  editorialSharpness?: number;
+  /** Phase 4N: Sections or paragraphs that repeat the same conclusion. */
+  repetitionWarnings?: string[];
+  /** Phase 4N: Sections whose analysis bleeds into another section's territory. */
+  sectionOverlapWarnings?: string[];
+  /** Phase 4N: Full article word count (body only, excluding frontmatter). */
+  articleWordCount?: number;
   weakSections: string[];
   unsupportedClaims: string[];
   riskFlags: string[];
@@ -222,6 +232,9 @@ function parseJudgeResponse(
   const unsupportedClaims = asStringArray(obj.unsupportedClaims);
   const analysisDepth    = typeof obj.analysisDepth !== 'undefined' ? toInt(obj.analysisDepth, 15) : undefined;
   const founderUsefulness = typeof obj.founderUsefulness !== 'undefined' ? toInt(obj.founderUsefulness, 10) : undefined;
+  const concision        = typeof obj.concision !== 'undefined' ? toInt(obj.concision, 10) : undefined;
+  const editorialSharpness = typeof obj.editorialSharpness !== 'undefined' ? toInt(obj.editorialSharpness, 10) : undefined;
+  const articleWordCount = typeof obj.articleWordCount === 'number' ? Math.round(obj.articleWordCount) : undefined;
 
   const pass =
     overallScore >= JUDGE_PASS_SCORE &&
@@ -229,7 +242,8 @@ function parseJudgeResponse(
     riskControl >= 8 &&
     unsupportedClaims.length === 0 &&
     (analysisDepth === undefined || analysisDepth >= 10) &&
-    (founderUsefulness === undefined || founderUsefulness >= 7);
+    (founderUsefulness === undefined || founderUsefulness >= 7) &&
+    (concision === undefined || concision >= 7);
 
   const result: FinalJudgeResult = {
     overallScore,
@@ -250,13 +264,20 @@ function parseJudgeResponse(
     generatedAt: new Date().toISOString(),
   };
 
-  if (analysisDepth !== undefined)    result.analysisDepth    = analysisDepth;
-  if (founderUsefulness !== undefined) result.founderUsefulness = founderUsefulness;
+  if (analysisDepth !== undefined)     result.analysisDepth     = analysisDepth;
+  if (founderUsefulness !== undefined) result.founderUsefulness  = founderUsefulness;
+  if (concision !== undefined)         result.concision          = concision;
+  if (editorialSharpness !== undefined) result.editorialSharpness = editorialSharpness;
+  if (articleWordCount !== undefined)  result.articleWordCount   = articleWordCount;
 
   const genericWarnings = asStringArray(obj.genericInsightWarnings);
   const takeawayWarnings = asStringArray(obj.missingFounderTakeawayWarnings);
+  const repetitionWarn  = asStringArray(obj.repetitionWarnings);
+  const overlapWarn     = asStringArray(obj.sectionOverlapWarnings);
   if (genericWarnings.length > 0)   result.genericInsightWarnings          = genericWarnings;
   if (takeawayWarnings.length > 0)  result.missingFounderTakeawayWarnings  = takeawayWarnings;
+  if (repetitionWarn.length > 0)    result.repetitionWarnings              = repetitionWarn;
+  if (overlapWarn.length > 0)       result.sectionOverlapWarnings          = overlapWarn;
 
   return result;
 }
@@ -294,10 +315,25 @@ SCORING RUBRIC — score each dimension, then give a holistic overallScore (0–
   practical observations they can apply to their own page?
   PENALISE -3 if lessons are generic ("test your CTAs", "know your audience") without company-specific anchoring.
   PENALISE -3 if no section explains when NOT to copy the analysed company's approach.
+• concision         (0–10): Is the article free of repeated conclusions, padding, and over-long paragraphs?
+  Count the number of times the same analytical conclusion appears (self-serve→enterprise shift,
+  proof burden, CTA friction direction, casual→formal framing). Each should appear at most once.
+  PENALISE -3 per conclusion that appears in 2 or more sections with the same thrust.
+  PENALISE -2 per paragraph that exceeds 90 words without introducing a new idea.
+  PENALISE -2 per closing paragraph that summarises what its section just said.
+  HARD CAP: If the same conclusion appears in 3 or more sections, concision is capped at 4 and overallScore is capped at 85.
+• editorialSharpness (0–10): Do sections respect their stated roles and not bleed into each other?
+  PENALISE -3 if the Lessons section restates analysis from Messaging or Visual Timeline without converting it to action.
+  PENALISE -2 if two analytical sections describe the same observable change (e.g., both messaging and visual timeline discuss the headline shift without differentiation).
+  PENALISE -3 if the article word count exceeds 1,900 words.
 
 DEPTH HARD RULE:
 If analysisDepth < 10 OR founderUsefulness < 7, overallScore is capped at 88 and pass is false.
 A descriptive article cannot pass the judge even if it is accurate and well-written.
+
+CONCISION HARD RULE:
+If the article body exceeds 1,900 words, overallScore is capped at 87 and pass is false.
+If the same analytical conclusion (self-serve→enterprise, proof burden, CTA friction) appears in 3 or more sections, overallScore is capped at 85 and pass is false.
 
 HARD RULES:
 • Do NOT claim access to internal strategy, A/B test data, or conversion rates.
@@ -305,7 +341,7 @@ HARD RULES:
 • If a claim is in the article but NOT in the EVIDENCE, it is an unsupportedClaim.
 • If requiredFixes is non-empty, rerunRecommendations must name which section(s) to rerun.
 • overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty
-  AND analysisDepth >= 10 AND founderUsefulness >= 7 → pass: true.
+  AND analysisDepth >= 10 AND founderUsefulness >= 7 AND concision >= 7 → pass: true.
 • Any other combination → pass: false.
 
 CALIBRATION:
@@ -352,7 +388,7 @@ ${articleText}
 ---
 
 Score each rubric dimension. Then give a holistic overallScore (0–100).
-Apply pass logic: overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty AND analysisDepth >= 10 AND founderUsefulness >= 7.
+Apply pass logic: overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty AND analysisDepth >= 10 AND founderUsefulness >= 7 AND concision >= 7.
 
 DEPTH CHECK — answer before scoring:
 1. Do the analytical sections (messaging, visual timeline, CTA) go beyond describing visible changes to explain conversion implications and buyer psychology?
@@ -360,6 +396,14 @@ DEPTH CHECK — answer before scoring:
 3. Are there at least 3 practical takeaways a SaaS founder can apply to their own page?
 4. Does any section address when NOT to copy the analysed company's approach?
 5. Does any section feel generic — as if it could apply to any SaaS homepage without editing?
+
+CONCISION CHECK — answer before scoring:
+6. Count how many sections mention the self-serve→enterprise shift. (Target: 1)
+7. Count how many sections mention proof burden. (Target: 1)
+8. Count how many sections mention CTA friction direction. (Target: 1)
+9. Are there any paragraphs that exceed 90 words without introducing a new idea?
+10. Does the Lessons section restate analysis from Messaging or Visual Timeline instead of converting it into new action?
+11. What is the approximate word count of the article body (excluding frontmatter)?
 
 Required JSON shape:
 {
@@ -372,6 +416,9 @@ Required JSON shape:
   "sectionCoherence": <0–10>,
   "analysisDepth": <0–15>,
   "founderUsefulness": <0–10>,
+  "concision": <0–10>,
+  "editorialSharpness": <0–10>,
+  "articleWordCount": <integer word count of article body, excluding frontmatter>,
   "weakSections": ["<section ID or title>"],
   "unsupportedClaims": ["<quote the exact phrase from the article that is not in the evidence>"],
   "riskFlags": ["<interpretation presented as fact, or causation claim>"],
@@ -379,7 +426,9 @@ Required JSON shape:
   "optionalImprovements": ["<nice-to-have improvement>"],
   "rerunRecommendations": ["<section ID to rerun — only if requiredFixes is non-empty>"],
   "genericInsightWarnings": ["<section that feels generic — could apply to any SaaS homepage>"],
-  "missingFounderTakeawayWarnings": ["<section that lacks a practical SaaS founder takeaway>"]
+  "missingFounderTakeawayWarnings": ["<section that lacks a practical SaaS founder takeaway>"],
+  "repetitionWarnings": ["<analytical conclusion that appears in multiple sections (self-serve→enterprise, proof burden, CTA friction)>"],
+  "sectionOverlapWarnings": ["<section that restates another section's analysis without converting it to action>"]
 }`;
 
   const costBefore = tracker.totalCostUsd;
@@ -389,7 +438,7 @@ Required JSON shape:
       model:     judgeModel,
       system:    JUDGE_SYSTEM,
       messages:  [{ role: 'user', content: userPrompt }],
-      maxTokens: 2048,
+      maxTokens: 4096, // Phase 4N: extra judge fields (concision, editorialSharpness, repetitionWarnings, sectionOverlapWarnings, articleWordCount)
     }),
     { onRetry: (a, e, d) => onLog(`Judge retry ${a}`, false, `${e.message} (${d}ms)`) },
   );

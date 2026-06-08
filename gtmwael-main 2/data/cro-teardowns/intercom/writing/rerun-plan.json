@@ -1,0 +1,63 @@
+{
+  "createdAt": "2026-06-08T10:58:25.088Z",
+  "slug": "intercom",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": true,
+    "finalJudgeScore": 76,
+    "seoScore": 85
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "03-visual-timeline",
+      "reasons": [
+        "Judge rerun recommendation: 03-visual-timeline",
+        "Visual similarity dropped to 71% from the prior snapshot",
+        "Identified as weak section by final judge",
+        "Visual Timeline, para 2: 'pattern sometimes associated with enterprise buyer evaluation workflows' — implies causation without evidence"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "reasons": [
+        "Judge rerun recommendation: 06-lessons-for-saas-teams",
+        "Identified as weak section by final judge",
+        "Lessons: The self-serve vs enterprise shift appears in all three paragraphs — consolidate to a single mention or differentiate the angle in each paragraph.",
+        "The primary keyword 'Intercom homepage CRO teardown' appears only once in the body (in the intro). Integrate it naturally in at least one more section, such as the conclusion or 'Lessons for SaaS Team"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Visual Timeline, para 1: 'structure that can be read as lowering first-screen processing' — interpretation not labelled as inference",
+        "Messaging Evolution, para 3: 'That shift can be read as targeting searches where buyers are evaluating AI capability' — interpretation not clearly labelled as inference",
+        "Visual Timeline: Label all buyer psychology interpretations as inference (e.g., 'This structure may signal...' or 'One interpretation is...'). Remove the 71% visual similarity claim — not in evidence.",
+        "Messaging Evolution: Add explicit inference framing for 'targeting searches where buyers are evaluating AI capability' — the evidence does not contain search intent data."
+      ],
+      "priority": "medium",
+      "source": "final-judge"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "The meta description is 153 characters (within limit) but ends with an ellipsis '…' which suggests truncation. Rewrite to use the full 155-character budget without trailing punctuation that implies in",
+      "reason": "metadata field in seo.json, not section content"
+    },
+    {
+      "issue": "Section headings use H2-equivalent weight but are not marked as H2 in the markdown. Confirm '## At a Glance', '## Visual Timeline', etc. render as proper H2 tags in the CMS to preserve heading hierarc",
+      "reason": "CMS configuration, not section content"
+    },
+    {
+      "issue": "Section 05-cta-navigation-evolution (medium priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    },
+    {
+      "issue": "Section 01-intro (low priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    }
+  ]
+}

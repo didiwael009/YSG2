@@ -1,36 +1,45 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 78,
+  "pass": false,
   "issues": [
-    "Paragraph 2 includes an unsupported interpretation: 'which can slow decision-making when the visitor isn't sure which path matches their need' — no evidence shows this outcome occurred",
-    "Paragraph 3 contains a subtle causation suggestion: 'whether the CTA friction increase is justified or just adds scroll distance without conversion payoff' — frames H2 additions as causing friction without evidence",
-    "Final paragraph includes an unlabelled interpretation: 'visitors who qualify for self-serve may wonder if they should book a demo instead' — this is buyer psychology inference, not observed behavior",
-    "Minor hedging: 'can work if' and 'may' appear three times, but all instances are meaningful and not mechanical"
+    "Paragraph 1 exceeds 90 words (93 words) without a distinct second idea justifying the length",
+    "Paragraph 2 exceeds 90 words (92 words) without a distinct second idea justifying the length",
+    "First paragraph lacks company-specific proper noun in the opening 40 words — 'Hootsuite' appears nowhere in the first sentence",
+    "Paragraph 2 uses vague phrasing 'appears to prioritise' without grounding in a specific dated change or quoted evidence element",
+    "The phrase 'can be read as a bifurcated funnel' is interpretive language that lacks a risk label",
+    "Analysis of CTA duplication as 'cognitive load' is not traced to a specific evidence item showing visitor confusion or A/B test data",
+    "Navigation analysis claims 'now must navigate deeper' but evidence shows only that CTAs were removed/added, not site structure depth",
+    "SaaS founder takeaway in paragraph 3 is generic — the observation about labeling CTAs applies to any dual-CTA homepage, not specific to Hootsuite's evidence"
   ],
   "requiredFixes": [
-    "In paragraph 2, replace 'which can slow decision-making when the visitor isn't sure which path matches their need' with a labeled interpretation: 'This shift — from outcome-oriented to capability-oriented navigation — can be read as a move toward comprehensiveness over conversion clarity, though the impact on buyer journey speed isn't directly measurable from the archive.'",
-    "In paragraph 3, replace 'whether the CTA friction increase is justified or just adds scroll distance without conversion payoff' with: 'Whether these additional trust-building sections reduce bounce or simply add scroll distance would require session recording or funnel analytics.'",
-    "In final paragraph, add an explicit interpretation label before 'visitors who qualify for self-serve may wonder...': 'One conversion risk — not directly observable from static snapshots — is that visitors who qualify for self-serve may wonder...'"
+    "Split paragraph 1 into two paragraphs: one for the CTA change observation (old→new CTAs), one for the bifurcated funnel implication",
+    "Split paragraph 2 into two paragraphs: one for navigation label changes, one for the pre-conversion friction analysis",
+    "Add 'Hootsuite' or a quoted CTA label in the first sentence to meet SEO proper-noun requirement",
+    "Replace 'appears to prioritise' with a specific dated change: e.g., 'Between [date] and [date], Hootsuite removed \"Start free trial\" from top-level nav and added \"Explore integrations\"'",
+    "Label the bifurcated funnel interpretation: 'This dual-CTA structure can be read as targeting two buyer segments'",
+    "Tie the cognitive load claim to a specific evidence item: mention that both 'Start your free trial' AND 'Request a demo' appear in the added list, creating two competing conversion paths",
+    "Replace 'now must navigate deeper' with evidence-grounded phrasing: 'The new nav includes \"Explore integrations\" and \"Contact us\" — neither of which is a direct signup path — while removing \"Start free trial\" and \"Compare plans\" from top-level nav'",
+    "Make the SaaS founder takeaway more specific to Hootsuite's evidence: reference the exact CTA labels in the evidence ('Request a demo' + 'Start your free trial') and note that neither includes buyer-segment microcopy in the provided data"
   ],
   "riskFlags": [
-    "Paragraph 2: 'which can slow decision-making' is an outcome claim without supporting evidence",
-    "Paragraph 3: 'whether the CTA friction increase is justified' implies a causal link (H2 additions → friction increase) not proven by the evidence",
-    "Paragraph 4: 'visitors who qualify for self-serve may wonder if they should book a demo instead' is buyer psychology inference presented as likely outcome"
+    "'increases cognitive load' is stated as fact without visitor research or A/B test data to support the causal claim",
+    "'must now choose between two conversion paths before they understand which buyer segment they belong to' implies a visitor mental state not present in the evidence",
+    "'This may help buying committees justify a purchase decision' is a causal speculation without supporting data"
   ],
   "seoNotes": [
-    "POSITIVE: 'Hootsuite' appears in first 15 words",
-    "POSITIVE: Company-specific evidence ('Start free trial', 'Request a demo', 'G2's #1 best software product for 2026') anchors every paragraph",
-    "POSITIVE: Section is keyword-rich for 'CTA evolution' and 'SaaS homepage conversion' searchers"
+    "NEGATIVE: No company-specific proper noun in the first 40 words — 'Hootsuite' does not appear until the third paragraph",
+    "POSITIVE: Section uses specific CTA labels from evidence ('Request a demo', 'Start your free trial', 'Explore integrations')"
   ],
-  "rewriteInstruction": "Strengthen risk control by labeling three interpretive inferences: (1) In paragraph 2, flag the 'slow decision-making' claim as an interpretation, not an observed outcome. (2) In paragraph 3, separate the 'CTA friction increase' observation from the 'scroll distance vs conversion payoff' speculation — mark the latter as unmeasurable from static evidence. (3) In paragraph 4, prepend the 'visitors may wonder' sentence with 'One conversion risk — not directly observable from snapshots — is that'. These three edits will move the section from 88 to 92+ by eliminating unlabelled outcome claims while preserving the strong buyer psychology and conversion architecture analysis already present.",
+  "rewriteInstruction": "Split the first two paragraphs at the 50-word mark to bring each under 90 words. Add 'Hootsuite' in the first sentence (e.g., 'Hootsuite's old homepage offered…'). Replace 'appears to prioritise' with a dated change from the evidence ('Between Jan 2023 and Jun 2026, Hootsuite removed X and added Y'). Label every interpretation with 'can be read as' or 'may signal' to clarify risk. Tie the cognitive load claim to the specific evidence item: both 'Request a demo' and 'Start your free trial' appear in the added CTA list. In paragraph 2, identify which buyer audience the old nav served (self-serve users who want to compare plans and start a trial immediately) vs the new nav (buying committees who need to explore integrations and contact sales). Anchor the SaaS founder takeaway to Hootsuite's exact CTA labels: note that neither 'Request a demo' nor 'Start your free trial' includes buyer-segment microcopy in the evidence, and explain that adding a single line under each button (e.g., 'For small teams' vs 'For enterprises') would reduce the self-selection burden. Remove the unsupported causal claim 'increases cognitive load' unless you can trace it to a specific evidence item showing visitor confusion.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "clarity": 15,
-    "specificity": 15,
-    "seoUsefulness": 10,
-    "croUsefulness": 9,
-    "riskControl": 4,
-    "analysisDepth": 15
+    "evidenceAccuracy": 18,
+    "clarity": 7,
+    "specificity": 11,
+    "seoUsefulness": 7,
+    "croUsefulness": 7,
+    "riskControl": 5,
+    "analysisDepth": 8,
+    "editorialQuality": 5
   },
   "effectivePassThreshold": 85
 }

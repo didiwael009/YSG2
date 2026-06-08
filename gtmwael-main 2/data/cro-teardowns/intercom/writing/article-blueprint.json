@@ -1,0 +1,28 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 5,
+    "h2Removed": 1,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 5,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [],
+  "generatedAt": "2026-06-08T10:40:12.779Z",
+  "postSummary": {
+    "title": "Intercom Homepage Teardown: Jan 2023 to Jun 2026",
+    "h1": "How Intercom rewrote its homepage over 3 years",
+    "readTime": "9 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 5,
+    "snapshotCount": 4
+  }
+}

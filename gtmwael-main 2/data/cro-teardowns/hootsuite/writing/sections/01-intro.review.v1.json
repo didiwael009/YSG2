@@ -1,28 +1,40 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 73,
+  "pass": false,
   "issues": [
-    "The phrase 'Whether this shift increases conversions depends entirely on which buyer segment Hootsuite prioritized' is a hedge that adds no specificity — it states the obvious without evidence anchor.",
-    "Minor: 'runs through the entire page architecture' is unverified — the evidence shows headline + meta + H2/nav changes, but does not confirm every architectural layer was affected."
+    "Paragraph 2 exceeds 90 words (93 words total)",
+    "Paragraph 2 previews conclusions that belong in other sections: self-serve→enterprise shift (messaging section), proof burden (messaging section), CTA friction (CTA section)",
+    "The phrase 'can be read as' appears once, which is acceptable, but 'is observable' is a redundant hedging phrase serving the same function",
+    "Paragraph 2 lacks specificity — the three conclusions ('heavier proof burden', 'CTA path appears to serve longer sales cycles', 'messaging assumes visitor understands category') are not anchored to specific evidence items from this section",
+    "No buyer psychology analysis in paragraph 1 — it is purely descriptive of changes",
+    "No conversion implication tied to a specific evidence item in paragraph 1"
   ],
   "requiredFixes": [
-    "Replace the final sentence of paragraph 2 ('Whether this shift increases conversions depends entirely on...') with a specific observation tied to the evidence: e.g., 'The evidence available here — headline, meta description, and navigation — does not indicate which buyer segment drove the change or whether Hootsuite tested both messaging frames.'"
+    "Remove or move the three conclusions in paragraph 2 ('heavier proof burden', 'CTA path serves longer sales cycles', 'messaging assumes category understanding') — these belong in their respective sections (messaging, CTA, messaging)",
+    "Compress paragraph 2 to under 90 words by removing the three preview conclusions — replace with a single forward-looking sentence that names the sections without summarizing their findings",
+    "Add one conversion implication or buyer psychology observation tied to the headline or meta description change in paragraph 1",
+    "Anchor the 'self-serve to enterprise' interpretation to a specific phrase from the evidence (e.g., 'Drive real business impact' vs 'Let's do this') rather than stating it as a floating observation"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "Paragraph 2: 'the page now carries a heavier proof burden' — this is stated as fact but is not supported by evidence in this section (no proof elements are cited)",
+    "Paragraph 2: 'the CTA path appears to serve longer sales cycles' — no CTA evidence is present in this section's evidence block",
+    "Paragraph 2: 'the messaging assumes the visitor already understands the product category' — this is interpretation without a specific phrase anchor"
+  ],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in the first 8 words — strong SEO anchor.",
-    "Headline change is quoted verbatim in paragraph 1 — good for snippet harvesting.",
-    "Date range 'January 2023 and June 2026' appears early — temporal specificity aids search intent matching."
+    "Positive: 'Hootsuite' appears in the first sentence",
+    "Positive: The date range 'January 2023 and June 2026' appears early, useful for searchers looking for recent teardowns",
+    "Negative: No variation of 'CRO teardown' or 'homepage teardown' appears in the first 40 words — the phrase 'homepage teardown' first appears in the final sentence"
   ],
-  "rewriteInstruction": "Replace the final sentence of paragraph 2 with a more evidence-grounded observation. Instead of 'Whether this shift increases conversions depends entirely on which buyer segment Hootsuite prioritized during this period,' write: 'The evidence available — headline, meta description, and navigation overhaul — does not reveal which buyer segment Hootsuite prioritized or whether the company tested both messaging frames before committing to the formal tone.' This keeps the risk control while removing the generic hedge.",
+  "rewriteInstruction": "Remove the three preview conclusions in paragraph 2 ('heavier proof burden', 'CTA path serves longer sales cycles', 'category assumption') — they belong in their respective sections. Replace with one sentence that names the sections to come without summarizing findings. In paragraph 1, add one conversion implication tied to the headline or meta change (e.g., how the shift from 'Let's do this' to 'Drive real business impact' may affect visitor self-selection). Compress paragraph 2 to under 90 words. Anchor the 'self-serve to enterprise' observation to a specific phrase pair from the evidence.",
   "dimensionScores": {
-    "evidenceAccuracy": 24,
-    "clarity": 15,
-    "specificity": 15,
-    "seoUsefulness": 10,
-    "croUsefulness": 9,
-    "riskControl": 10,
-    "analysisDepth": 15
+    "evidenceAccuracy": 15,
+    "clarity": 8,
+    "specificity": 10,
+    "seoUsefulness": 7,
+    "croUsefulness": 6,
+    "riskControl": 4,
+    "analysisDepth": 5,
+    "editorialQuality": 3
   },
   "effectivePassThreshold": 85
 }

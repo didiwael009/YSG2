@@ -1,0 +1,24 @@
+{
+  "publishedAt": "2026-06-08T11:10:36.157Z",
+  "slug": "intercom",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 92,
+    "seoPass": true,
+    "seoScore": 85,
+    "unsupportedClaims": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/intercom.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

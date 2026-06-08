@@ -1,0 +1,34 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "First paragraph uses 'the company' as subject instead of 'Hootsuite' — weakens SEO and specificity in opening 40 words",
+    "Paragraph 2 uses 'can be read as' without identifying a specific interpretive gap — appears mechanical rather than meaningful hedging",
+    "Paragraph 3 contains a subtle overstatement: 'adds navigation steps for users who arrived ready to convert' implies conversion drop-off without data",
+    "Final paragraph contains founder takeaway but does not identify which buyer audience the microcopy would serve most (self-serve SMBs vs enterprise committees)"
+  ],
+  "requiredFixes": [
+    "Replace 'the company removed' with 'Hootsuite removed' in paragraph 1 to place the proper noun within the first 40 words",
+    "In paragraph 2, replace 'can be read as' with direct statement: 'The dual-CTA structure targets two buyer segments' — the evidence (two different CTAs) supports this without hedging",
+    "In paragraph 3, replace 'which is consistent with an enterprise sales motion but adds navigation steps' with 'which signals an enterprise sales motion and increases click depth' — removes the unsupported implication that ready-to-convert users will drop off"
+  ],
+  "riskFlags": [
+    "Paragraph 3: 'adds navigation steps for users who arrived ready to convert' — implies conversion friction without measurement data"
+  ],
+  "seoNotes": [
+    "NEGATIVE: Company name 'Hootsuite' does not appear in the first 40 words; first sentence uses 'the company' as subject",
+    "POSITIVE: Section uses specific CTA labels from evidence ('Start Your Free 30-day Trial', 'Request a demo') which may match long-tail search queries"
+  ],
+  "rewriteInstruction": "Place 'Hootsuite' as the subject of the first sentence instead of 'the company'. Remove the mechanical 'can be read as' hedge in paragraph 2 — the evidence (two distinct CTAs) directly supports the dual-segment targeting claim. In paragraph 3, replace 'adds navigation steps for users who arrived ready to convert' with 'increases click depth before trial signup' to avoid implying conversion drop-off without data. In the final paragraph, compress the founder takeaway to under 90 words and specify which buyer segment benefits most from the microcopy addition (e.g., 'This microcopy would particularly serve self-serve SMB visitors who lack the context to choose between trial and demo').",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "clarity": 9,
+    "specificity": 13,
+    "seoUsefulness": 7,
+    "croUsefulness": 9,
+    "riskControl": 7,
+    "analysisDepth": 10,
+    "editorialQuality": 10
+  },
+  "effectivePassThreshold": 85
+}

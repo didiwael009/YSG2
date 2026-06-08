@@ -1,41 +1,45 @@
 {
-  "score": 73,
+  "score": 62,
   "pass": false,
   "issues": [
-    "Paragraph 1 is purely descriptive with no conversion implication or buyer psychology.",
-    "Bullet 1 mentions 'audience signal' but does not identify which buyer audiences old vs. new headlines targeted.",
-    "Bullet 2 describes architectural overhaul but does not explain conversion implication or buyer psychology of restructuring.",
-    "Bullet 3 uses 'mental model' and 'qualify' language but provides no buyer psychology or conversion analysis.",
-    "Final paragraph interprets 'shift in buyer profile or competitive positioning' without any evidence anchor — this is speculation.",
-    "No SaaS founder takeaway is present.",
-    "No conversion implication analysis (what these changes mean for drop-off, clarity, or visitor action) is present.",
-    "Multiple sentences could apply word-for-word to any SaaS homepage teardown (e.g., entire final paragraph).",
-    "Specificity is weak: no quoted headline, no named navigation item, no dated snapshot is referenced."
+    "Section is purely descriptive with no CRO/GTM analysis — triggers hard cap at 72",
+    "No conversion implication present — no analysis of what these changes mean for visitor action or drop-off",
+    "No buyer psychology — no identification of who the headline shift targets or what decision stage",
+    "No SaaS founder takeaway — no actionable observation a SaaS team could study",
+    "Final paragraph is filler — summarizes what was just said instead of ending with insight",
+    "Generic observation: 'rebuilt rather than optimised' could apply to any website with large change volume",
+    "No company-specific evidence quoted — no phrase from snapshots, no dated element, no named component",
+    "Headline rewrite is described but audience is not identified (old vs new target)",
+    "No proper noun in first 40 words — fails SEO specificity rule",
+    "Word count ~110 words — significantly under target range for At a Glance section (typically 220–280)"
   ],
   "requiredFixes": [
-    "Add at least one quoted phrase from a headline or navigation item to anchor the analysis in Hootsuite-specific evidence.",
-    "Identify which buyer audience segment the old vs. new headline likely targeted (e.g., SMB vs. enterprise, social media managers vs. marketing directors).",
-    "Add conversion implication for at least one change: does the navigation overhaul reduce or increase cognitive load? Does the section-heading restructure help or hinder a buyer's ability to self-qualify?",
-    "Add a practical SaaS founder takeaway — what can a founder learn from Hootsuite's approach to navigation or messaging hierarchy?",
-    "Remove or support the final sentence's interpretation about 'shift in buyer profile or competitive positioning' — this is not grounded in the provided evidence."
+    "Add conversion implication: what does a headline rewrite + navigation overhaul mean for visitor comprehension or qualification?",
+    "Add buyer psychology: who did the old headline likely serve vs the new one? (e.g., self-serve vs enterprise, generalist vs specialist)",
+    "Quote at least one specific phrase from the headline change to anchor the 'audience signal' claim",
+    "Replace closing summary with a founder takeaway — e.g., what volume of navigation change signals a GTM pivot vs iterative testing",
+    "Remove or replace 'rebuilt rather than optimised' with evidence-specific observation (e.g., navigation label change pattern, section-type shift)",
+    "Add Hootsuite to first sentence to meet SEO proper-noun rule",
+    "Expand to 220–280 words to meet section target and provide CRO depth"
   ],
   "riskFlags": [
-    "Final paragraph infers 'shift in buyer profile or competitive positioning' without evidence — this is interpretive speculation not labelled as such.",
-    "Phrase 'likely to address' in final paragraph implies causation without data."
+    "'may reflect a repositioning' is hedged but still speculative without evidence of what the old vs new headline said",
+    "'suggesting the page moved from one content architecture to another' is interpretive but not labeled as such"
   ],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in the first 10 words, satisfying proper-noun requirement.",
-    "Section is descriptive but lacks the depth a reader searching 'Hootsuite CRO teardown' would expect — no actionable insight or conversion analysis."
+    "NEGATIVE: No company proper noun in first 40 words — fails SEO specificity rule",
+    "NEGATIVE: Section reads like a summary card expansion, not a narrative a reader would search for"
   ],
-  "rewriteInstruction": "Rewrite the section to include: (1) at least one quoted headline phrase or named navigation item from Hootsuite's snapshots; (2) identification of which buyer audience the old vs. new headline or navigation likely targeted (e.g., SMB social media managers vs. enterprise marketing teams); (3) a conversion implication for at least one change (e.g., does the navigation overhaul increase or reduce cognitive load? does the section-heading restructure help a buyer self-qualify faster?); (4) a practical SaaS founder takeaway — what can a founder learn from Hootsuite's approach to messaging hierarchy or navigation taxonomy? Remove or ground the final sentence's speculation about 'buyer profile shift' — either cite a specific change that supports it or label it as interpretation. The goal is to transform this from a descriptive inventory into a CRO-focused narrative that teaches a SaaS founder something actionable about homepage messaging and navigation strategy.",
+  "rewriteInstruction": "Expand to 220–280 words. Open with 'Hootsuite's homepage…' to meet SEO rule. Quote a specific phrase from the headline rewrite (if available in snapshots) to anchor the 'audience signal' claim. Add conversion implication: what does a navigation overhaul + section architecture change mean for visitor qualification or drop-off? Add buyer psychology: who did the old navigation likely serve vs the new (e.g., feature explorers vs task-driven teams)? Replace the closing summary paragraph with a SaaS founder takeaway — e.g., when navigation item churn exceeds 80%, it typically signals a GTM pivot rather than iterative CRO. Remove 'rebuilt rather than optimised' unless you can tie it to a specific evidence pattern (e.g., section type shift from feature list to outcome scenarios). Ensure every analytical claim traces to the evidence cards.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "clarity": 12,
-    "specificity": 5,
-    "seoUsefulness": 7,
+    "evidenceAccuracy": 20,
+    "clarity": 8,
+    "specificity": 7,
+    "seoUsefulness": 5,
     "croUsefulness": 4,
-    "riskControl": 4,
-    "analysisDepth": 5
+    "riskControl": 7,
+    "analysisDepth": 3,
+    "editorialQuality": 8
   },
   "effectivePassThreshold": 85
 }

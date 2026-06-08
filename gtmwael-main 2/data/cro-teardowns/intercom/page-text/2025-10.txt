@@ -1,0 +1,36 @@
+TITLE: The AI customer service company
+META DESCRIPTION: Fin is the leading AI Agent for customer service delivering the highest quality answers and handling the most complex queries. Employ Fin on any helpdesk or the Intercom Suite today.
+
+H1:
+  - Intercom is the AI customer service company
+
+H2:
+  - Fin
+  - Intercom Suite
+
+H3:
+
+CTAS / BUTTONS:
+  - Contact sales
+  - Sign in
+  - View demo
+  - Start free trial
+  - Terms
+  - Privacy
+  - Security
+  - Your Privacy Choices
+  - Website Terms of Use
+  - Privacy Policy
+  - Cookie Policy
+
+NAV LINKS:
+  - Contact sales
+  - Sign in
+  - View demo
+  - Start free trial
+  - Terms
+  - Privacy
+  - Security
+
+BODY TEXT:
+Contact salesSign inView demoStart free trialIntercom is the AI customer service companyFinFin on your existing helpdeskFin AI Agent works with any helpdesk to resolve even the most complex queries, on every channel.Explore FinIntercom SuiteFin + HelpdeskOne seamless customer service suite that delivers faster response times, more efficient agents, and a single consolidated view of customer service.Explore Intercom SuiteContact salesSign inView demoTermsPrivacySecurityYour Privacy Choices This site employs cookies and other technologies that we and our third party vendors use to monitor and record personal information about you and your interactions with the site (including content viewed, cursor movements, screen recordings, and chat contents) for the purposes described in our Cookie Policy. By continuing to visit our site, you agree to our Website Terms of Use, Privacy Policy and Cookie Policy.

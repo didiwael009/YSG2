@@ -1281,6 +1281,28 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "2026-01": {
+    "width": 1440,
+    "height": 960,
+    "originalBytes": 93150,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2026-01-320.webp",
+        "bytes": 5730
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2026-01-640.webp",
+        "bytes": 15724
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2026-01-1024.webp",
+        "bytes": 30126
+      }
+    ]
+  },
   "2022-10": {
     "width": 1440,
     "height": 6774,

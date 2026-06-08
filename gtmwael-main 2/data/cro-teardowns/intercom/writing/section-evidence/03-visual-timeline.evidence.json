@@ -1,0 +1,64 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Intercom",
+  "companyUrl": "https://www.intercom.com",
+  "articleTitle": "Intercom Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Intercom rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 5,
+    "h2Removed": 1,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 5,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "analysis-blocks": [
+    {
+      "id": "analysis-2023-01",
+      "label": "Jan 2023 — original state",
+      "period": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/intercom/selected/2023-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Support customers at exactly the right moment\" — direct product statement.",
+        "Visible section headings include: \"A better customer experience across support, marketing, and sales\".",
+        "Navigation includes: \"Contact Sales\", \"Sign in\", \"Custom Bots\" — product category framing.",
+        "Section headings later removed include: \"A better customer experience across support, marketing, and sales\"."
+      ]
+    },
+    {
+      "id": "analysis-2025-10",
+      "label": "Oct 2025 — mid-transition",
+      "period": "Oct 2025",
+      "screenshotPath": "/cro-teardowns/intercom/selected/2025-10.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 71.0% — one of the larger layout changes in the dataset.",
+        "H1 in this snapshot: \"Intercom is the AI customer service company\".",
+        "New section headings appearing: \"Fin\", \"Intercom Suite\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/intercom/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"The only helpdesk designed for the AI Agent era\" — updated value proposition.",
+        "New section headings include: \"A complete solution for AI and human agents\", \"A fully-featured AI-powered helpdesk\", \"A true partner with deep domain expertise\".",
+        "CTAs no longer present include: \"Download the report\", \"Contact Sales\", \"Watch now\"."
+      ]
+    }
+  ]
+}

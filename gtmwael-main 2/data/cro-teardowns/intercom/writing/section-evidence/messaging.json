@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "Support customers at exactly the right moment",
+    "after": "The only helpdesk designed for the AI Agent era",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Intercom helps over 25,000 global organizations deliver better customer support via personalized conversations and automated support.",
+    "after": "The only helpdesk with a natively integrated AI Agent. Deliver perfect customer experiences with the highest-performing platform. Start your free trial today.",
+    "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+  },
+  {
+    "element": "Page title",
+    "before": "Making Internet Business Personal | Intercom",
+    "after": "Intercom | The only helpdesk designed for the AI Agent era"
+  }
+]

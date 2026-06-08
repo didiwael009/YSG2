@@ -1,0 +1,122 @@
+{
+  "slug": "intercom",
+  "companyName": "Intercom",
+  "companyUrl": "https://www.intercom.com",
+  "fromMonth": "2023-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-08T10:40:12.768Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/intercom/selected/2023-01.webp",
+      "timestamp": "20230215072249",
+      "originalUrl": "https://www.intercom.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2025-10",
+      "label": "Oct 2025",
+      "screenshotPath": "/cro-teardowns/intercom/selected/2025-10.webp",
+      "timestamp": "20251115014355",
+      "originalUrl": "https://www.intercom.com",
+      "similarityToPrev": 0.7104,
+      "comparedTo": "2023-01"
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/intercom/selected/2026-01.webp",
+      "timestamp": "20260215054432",
+      "originalUrl": "https://www.intercom.com",
+      "similarityToPrev": 0.9383,
+      "comparedTo": "2025-10"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/intercom/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.intercom.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "A complete solution for AI and human agents",
+      "A fully-featured AI-powered helpdesk",
+      "A true partner with deep domain expertise",
+      "Transparent pricing",
+      "Perfect customer experiences, powered by Intercom"
+    ],
+    "h2Removed": [
+      "A better customer experience across support, marketing, and sales"
+    ],
+    "ctaAdded": [
+      "Contact sales",
+      "Start free trial",
+      "Learn more",
+      "Contact Press",
+      "Log in",
+      "Fin AI Agent",
+      "Fully-featured helpdesk",
+      "Natively integrated AI Agent",
+      "AI-powered Insights",
+      "Self-improving system"
+    ],
+    "ctaRemoved": [
+      "Download the report",
+      "Contact Sales",
+      "Watch now",
+      "Get started",
+      "Start growing business non-stop",
+      "Start using next-generation support today",
+      "Start converting customers faster",
+      "Read story",
+      "See all stories",
+      "Watch a Demo"
+    ],
+    "navAdded": [
+      "Fin",
+      "Log in",
+      "Contact sales",
+      "Start free trial",
+      "Fin AI Agent"
+    ],
+    "navRemoved": [
+      "Contact Sales",
+      "Sign in",
+      "Custom Bots",
+      "Mobile apps",
+      "Apps and integrations",
+      "E-commerce",
+      "Financial services",
+      "Education"
+    ],
+    "headlines": [
+      {
+        "from": "Support customers at exactly the right moment",
+        "to": "The only helpdesk designed for the AI Agent era",
+        "fromMonth": "2023-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Intercom helps over 25,000 global organizations deliver better customer support via personalized conversations and automated support.",
+        "to": "The only helpdesk with a natively integrated AI Agent. Deliver perfect customer experiences with the highest-performing platform. Start your free trial today.",
+        "fromMonth": "2023-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "score": 52,
+  "pass": false,
+  "issues": [
+    "Section is entirely descriptive — no conversion implication, no buyer psychology, no trust/proof analysis anywhere in the draft.",
+    "First paragraph (50 words) is purely a paraphrase of summary-card data with no CRO insight.",
+    "Bullet points restate card values verbatim ('5 added · 1 removed' → 'five new H2 elements added and one removed') without adding context.",
+    "No company-specific evidence beyond the summary cards — no quoted phrase, no dated change, no named page element appears in the text.",
+    "No buyer audience identified. The phrase 'from one framing to another' is empty — no evidence identifies what 'one framing' or 'another' were.",
+    "No SaaS founder takeaway. The closing sentence ('deliberate compositional change rather than incremental refinement') is a distinction without a difference for a CRO reader.",
+    "Hedging phrase 'indicating a meaningful restructure' and 'suggesting the page now emphasises' are mechanical, not tied to any evidence beyond the counts themselves.",
+    "Every sentence in this section could appear word-for-word in a teardown of any SaaS company that changed its navigation and headings.",
+    "The section does not achieve its stated goal: there is no narrative contextualising the numbers, only a restatement of them."
+  ],
+  "requiredFixes": [
+    "Remove the first paragraph entirely — it adds no information beyond the summary cards already visible to the reader.",
+    "Replace bullet points with narrative that identifies WHAT changed (quote a headline, name a nav item, specify a heading) using the company-specific evidence.",
+    "Add one conversion implication: what does headline rewrite or nav overhaul mean for visitor action (click-through, drop-off, segment filtering)?",
+    "Add one buyer psychology observation: who does the new structure target (enterprise, self-serve, support buyer, sales buyer)?",
+    "Add one SaaS founder takeaway: what can a founder learn from the direction of these changes (e.g., portfolio consolidation, product-led→sales-led shift)?",
+    "Replace 'from one framing to another' with actual evidence: quote the old headline and the new headline, or describe the audience signal shift using specific evidence items."
+  ],
+  "riskFlags": [
+    "'indicating a meaningful restructure' — what makes it meaningful is not supported by evidence; the claim rests only on the count (8 removed, 5 added).",
+    "'suggesting the page now emphasises different capability areas or buyer entry points' — no evidence supports this interpretation; the section headings are not named or quoted."
+  ],
+  "seoNotes": [
+    "POSITIVE: 'Intercom' appears in the first 10 words.",
+    "NEGATIVE: No specific product name, feature name, or headline phrase appears in the section — search value is low because the section could rank for any SaaS teardown, not this one."
+  ],
+  "rewriteInstruction": "Rewrite the section to include: (1) one quoted headline or named nav item from the evidence (not just 'rewritten' or 'overhauled'), (2) one conversion implication (e.g., nav consolidation may reduce visitor choice paralysis or force funnel through demo), (3) one buyer psychology observation (e.g., headline shift targets enterprise decision-maker vs. support team end-user), and (4) one SaaS founder takeaway (e.g., what the structural changes reveal about Intercom's GTM shift). Remove the opening paragraph and the closing summary sentence. Every observation must trace to a specific evidence item beyond the summary-card counts. Compress to 150–200 words. Do not describe what changed — explain what the change may mean for conversion or buyer segmentation.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "clarity": 8,
+    "specificity": 5,
+    "seoUsefulness": 5,
+    "croUsefulness": 2,
+    "riskControl": 5,
+    "analysisDepth": 2,
+    "editorialQuality": 5
+  },
+  "effectivePassThreshold": 85
+}

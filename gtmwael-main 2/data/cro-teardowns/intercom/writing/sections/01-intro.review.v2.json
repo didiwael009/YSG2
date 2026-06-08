@@ -1,0 +1,31 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "First paragraph lacks a conversion implication — it describes changes but does not explain what the shift may mean for visitor behavior or drop-off",
+    "The phrase 'proof burden' appears here but is designated for the messaging section, creating cross-section repetition risk",
+    "Second paragraph's final sentence is a preview list, but it does not provide a reason to continue beyond summarizing section names"
+  ],
+  "requiredFixes": [
+    "Add a conversion implication to the first paragraph: explain what the headline shift from task-based outcome to AI category claim may mean for visitor qualification or bounce (e.g., old headline likely converted support ops teams looking for execution tools; new headline may filter for AI-readiness evaluators, narrowing the top of funnel)",
+    "Remove 'proof burden' language from the second paragraph and reserve it for the messaging section where it will receive full analysis",
+    "Replace the preview list in the final sentence with a single-sentence reason to continue that ties to the reader's goal (e.g., 'This teardown isolates the messaging decisions and navigation changes a SaaS founder can study for category repositioning signals')"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Company name 'Intercom' appears in the first six words, satisfying the proper-noun requirement",
+    "The first sentence anchors the article to a specific time period and observable change, useful for search intent around Intercom homepage analysis"
+  ],
+  "rewriteInstruction": "First paragraph: after describing the headline shift and navigation changes, add one sentence explaining the conversion implication — what the move from task-based to AI-category framing may mean for visitor qualification or bounce. Second paragraph: remove the 'proof burden' phrase (reserve it for the messaging section). Final sentence: replace the preview list with a single sentence that gives the reader a study-focused reason to continue (e.g., 'This teardown isolates the messaging and navigation decisions a SaaS founder can study for category repositioning'). Trim the first paragraph to 90 words or split it into two focused ideas.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 10,
+    "specificity": 15,
+    "seoUsefulness": 10,
+    "croUsefulness": 8,
+    "riskControl": 10,
+    "analysisDepth": 5,
+    "editorialQuality": 5
+  },
+  "effectivePassThreshold": 85
+}

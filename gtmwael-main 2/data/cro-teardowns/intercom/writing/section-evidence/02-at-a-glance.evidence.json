@@ -1,0 +1,46 @@
+{
+  "sectionId": "02-at-a-glance",
+  "companyName": "Intercom",
+  "companyUrl": "https://www.intercom.com",
+  "articleTitle": "Intercom Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Intercom rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 5,
+    "h2Removed": 1,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 5,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Jun 2026",
+      "note": "4 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 1 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "5 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}

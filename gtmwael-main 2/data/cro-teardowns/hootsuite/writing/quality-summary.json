@@ -1,45 +1,50 @@
 {
   "slug": "hootsuite",
-  "generatedAt": "2026-06-08T09:38:46.116Z",
+  "generatedAt": "2026-06-08T10:29:26.059Z",
   "mode": "standard",
   "sections": [
     {
       "sectionId": "01-intro",
-      "finalVersion": 1,
+      "finalVersion": 2,
       "finalScore": 88,
       "passed": true,
-      "loopsUsed": 0,
+      "loopsUsed": 1,
       "riskFlagCount": 0,
       "riskFlags": [],
-      "remainingIssueCount": 2,
+      "remainingIssueCount": 3,
       "remainingIssues": [
-        "The phrase 'Whether this shift increases conversions depends entirely on which buyer segment Hootsuite prioritized' is a hedge that adds no specificity — it states the obvious without evidence anchor.",
-        "Minor: 'runs through the entire page architecture' is unverified — the evidence shows headline + meta + H2/nav changes, but does not confirm every architectural layer was affected."
+        "The second paragraph ('The rest of this teardown examines...') is transitional padding with no evidence anchor — it describes what the article will do but does not preview a major finding or conversion implication tied to the evidence.",
+        "The section does not include a practical SaaS founder takeaway — it identifies a positioning shift but does not suggest what a founder might study or apply from this change.",
+        "The phrase 'may affect how quickly a visitor decides the page is for them' is a conversion implication, but it is stated generically without tying it to a specific buyer segment or decision stage (e.g., solo marketers vs. agency teams, free-trial seekers vs. procurement evaluators)."
       ],
-      "sectionCostUsd": 0.025233
+      "sectionCostUsd": 0.072021
     },
     {
       "sectionId": "02-at-a-glance",
       "finalVersion": 3,
-      "finalScore": 78,
+      "finalScore": 68,
       "passed": false,
       "loopsUsed": 2,
       "riskFlagCount": 2,
       "riskFlags": [
-        "'headline repositioning without corresponding proof architecture creates a trust gap' — presented as a causal claim without evidence that Hootsuite's proof architecture did or did not change",
-        "'navigation redesigns can improve enterprise qualification while increasing friction' — not labelled as interpretation; reads as a general claim applied to Hootsuite without evidence of enterprise focus or friction measurement"
+        "'audience signal changed' — interpretation without quoting the headline text or labeling as inference",
+        "'shift from one content architecture to another' — causal language without showing what the old vs new navigation labels were"
       ],
-      "remainingIssueCount": 7,
+      "remainingIssueCount": 11,
       "remainingIssues": [
-        "First paragraph purely descriptive — lists changes with no conversion or buyer psychology implication",
-        "Headline bullet uses 'can be read as' equivalent phrasing ('In CRO terms... can shift') without identifying which buyer audience benefited from the change",
-        "Section-headings bullet introduces 'self-serve visitors' as a risk without evidence that Hootsuite targets self-serve buyers or that the old headings served that segment",
-        "Navigation bullet states 'The evidence does not specify whether the new labels are action-based or category-based' — this admission of missing evidence weakens the analytical payoff",
-        "Final paragraph hedges extensively ('cannot confirm') and offers three possible drivers without grounding any in Hootsuite-specific evidence",
-        "No specific company evidence quoted in any bullet — all analysis is keyed to summary-card metadata, not actual page elements",
-        "Missing founder takeaway: no practical observation a SaaS founder can study or apply"
+        "Section is purely descriptive with no conversion implication, buyer psychology, trust analysis, or SaaS founder takeaway",
+        "Final paragraph 'Taken together, the visible changes suggest...' is generic — could appear word-for-word in any SaaS homepage teardown",
+        "No company-specific proper noun appears in the first 40 words (first proper noun 'Hootsuite' is at word 1, but no evidence-specific phrase until later)",
+        "Each bullet point restates the summary-card data without adding CRO insight, buyer psychology, or conversion implication",
+        "Section exceeds target word range for a contextualising quick-reference (should be tighter)",
+        "No identified buyer audience — who did the old vs new headline serve?",
+        "No conversion implication — what does a 'full label replacement' mean for visitor action or drop-off?",
+        "'can be read as' appears once, used as mechanical hedge rather than covering real interpretive gap",
+        "Navigation change described as 'full label replacement...shift from one content architecture to another' but no practical takeaway for SaaS founders",
+        "Section heading ratio '15 added to 4 removed' described as 'rebuilt how the product story is organized' but no analysis of what that rebuild implies for conversion",
+        "Paragraph 3 (final) restates conclusions from paragraph 2 bullets in vaguer wording ('reframing of who the page speaks to' repeats 'audience signal changed')"
       ],
-      "sectionCostUsd": 0.108039
+      "sectionCostUsd": 0.11996699999999996
     },
     {
       "sectionId": "03-visual-timeline",
@@ -47,18 +52,18 @@
       "finalScore": 88,
       "passed": true,
       "loopsUsed": 0,
-      "riskFlagCount": 2,
+      "riskFlagCount": 1,
       "riskFlags": [
-        "'The first-screen conversion clarity likely remains high for users seeking a workflow tool' — conversion outcome claim without data, though hedged with 'likely'",
-        "'optimized for self-serve buyers' implies design intent not documented in evidence"
+        "'reducing first-screen cognitive load' — mechanism inferred, not evidenced."
       ],
-      "remainingIssueCount": 3,
+      "remainingIssueCount": 4,
       "remainingIssues": [
-        "Phrase 'optimized for self-serve buyers' implies intent/design goal not present in evidence — evidence shows structure, not optimization target",
-        "Phrase 'credibility: action-framing is fast to comprehend but may not signal enterprise depth' is an unlabelled interpretation",
-        "Minor padding in 'The visual hierarchy appears designed for scanners' — the observation about hierarchy is supported, but 'appears designed for' adds interpretive layer without label"
+        "Paragraph 1: 'reducing first-screen cognitive load for users who arrived looking for a specific social media workflow' — this conversion mechanism is implied, not demonstrated by the evidence.",
+        "Paragraph 3: 'The tradeoff is buyer sophistication' — this framing introduces a conclusion that belongs in the messaging/positioning section, creating boundary bleed.",
+        "Paragraph 3 exceeds 90 words (approximately 105 words), violating editorial compression standard.",
+        "The section does not include a practical SaaS founder takeaway — no observable lesson for a SaaS team studying this evolution."
       ],
-      "sectionCostUsd": 0.03524100000000002
+      "sectionCostUsd": 0.037329
     },
     {
       "sectionId": "04-messaging-evolution",
@@ -70,81 +75,98 @@
       "riskFlags": [],
       "remainingIssueCount": 0,
       "remainingIssues": [],
-      "sectionCostUsd": 0.043572
+      "sectionCostUsd": 0.04548299999999997
     },
     {
       "sectionId": "05-cta-navigation-evolution",
-      "finalVersion": 1,
+      "finalVersion": 2,
       "finalScore": 88,
       "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 3,
+      "loopsUsed": 1,
+      "riskFlagCount": 1,
       "riskFlags": [
-        "Paragraph 2: 'which can slow decision-making' is an outcome claim without supporting evidence",
-        "Paragraph 3: 'whether the CTA friction increase is justified' implies a causal link (H2 additions → friction increase) not proven by the evidence",
-        "Paragraph 4: 'visitors who qualify for self-serve may wonder if they should book a demo instead' is buyer psychology inference presented as likely outcome"
+        "Paragraph 3: 'adds navigation steps for users who arrived ready to convert' — implies conversion friction without measurement data"
       ],
       "remainingIssueCount": 4,
       "remainingIssues": [
-        "Paragraph 2 includes an unsupported interpretation: 'which can slow decision-making when the visitor isn't sure which path matches their need' — no evidence shows this outcome occurred",
-        "Paragraph 3 contains a subtle causation suggestion: 'whether the CTA friction increase is justified or just adds scroll distance without conversion payoff' — frames H2 additions as causing friction without evidence",
-        "Final paragraph includes an unlabelled interpretation: 'visitors who qualify for self-serve may wonder if they should book a demo instead' — this is buyer psychology inference, not observed behavior",
-        "Minor hedging: 'can work if' and 'may' appear three times, but all instances are meaningful and not mechanical"
+        "First paragraph uses 'the company' as subject instead of 'Hootsuite' — weakens SEO and specificity in opening 40 words",
+        "Paragraph 2 uses 'can be read as' without identifying a specific interpretive gap — appears mechanical rather than meaningful hedging",
+        "Paragraph 3 contains a subtle overstatement: 'adds navigation steps for users who arrived ready to convert' implies conversion drop-off without data",
+        "Final paragraph contains founder takeaway but does not identify which buyer audience the microcopy would serve most (self-serve SMBs vs enterprise committees)"
       ],
-      "sectionCostUsd": 0.03875099999999998
+      "sectionCostUsd": 0.08173799999999998
     },
     {
       "sectionId": "06-lessons-for-saas-teams",
       "finalVersion": 1,
-      "finalScore": 88,
+      "finalScore": 87,
       "passed": true,
       "loopsUsed": 0,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "Paragraph 1: 'This hurts conversion when a visitor arrives expecting platform-grade features' — unsupported causal claim about conversion impact.",
-        "Paragraph 2: 'the added cognitive load may cost you users' — unsupported causal claim about user loss.",
-        "Paragraph 4: 'the mismatch may surface as drop-off during onboarding or at the trial-to-paid conversion point' — unsupported causal claim about specific funnel stages."
-      ],
-      "remainingIssueCount": 4,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 5,
       "remainingIssues": [
-        "First paragraph contains an unsupported claim: 'This hurts conversion when a visitor arrives expecting platform-grade features but encounters a CTA path, proof structure, or navigation built for individual users.' No evidence provided about actual CTA path, proof structure changes, or conversion impact.",
-        "Second paragraph uses 'conversion implication' phrase but then makes unsupported claim: 'the added cognitive load may cost you users who would have converted under clearer wayfinding.' No evidence of cognitive load measurement or conversion cost.",
-        "Fourth paragraph makes a causal claim about drop-off: 'the mismatch may surface as drop-off during onboarding or at the trial-to-paid conversion point.' No evidence provided about onboarding or trial-to-paid metrics.",
-        "Minor: 'can be read as' appears once, within acceptable threshold but approaching mechanical usage."
+        "Paragraph 1 ('Hootsuite's headline shifted...') exceeds 90 words (approximately 115 words) without introducing a distinct second idea",
+        "Paragraph 2 ('The navigation labels moved...') exceeds 90 words (approximately 105 words) without introducing a distinct second idea",
+        "The phrase 'can be read as' does not appear, but equivalent hedging ('The pattern:' used as a mechanical transition) appears three times across three paragraphs",
+        "Minor SEO issue: 'Hootsuite' appears in first paragraph but not in first 40 words — first mention is at approximately word 2",
+        "Paragraph 1 uses 'proof burden' — a concept that was likely already covered in the messaging section, creating potential repetition across sections"
       ],
-      "sectionCostUsd": 0.042312000000000016
+      "sectionCostUsd": 0.038978999999999986
     }
   ],
-  "averageScore": 87,
+  "averageScore": 85.2,
   "passCount": 5,
   "failCount": 1,
   "skippedCount": 0,
-  "totalRewriteLoops": 2,
+  "totalRewriteLoops": 4,
   "weakSections": [
     "02-at-a-glance"
   ],
   "allRiskFlags": [
-    "'headline repositioning without corresponding proof architecture creates a trust gap' — presented as a causal claim without evidence that Hootsuite's proof architecture did or did not change",
-    "'navigation redesigns can improve enterprise qualification while increasing friction' — not labelled as interpretation; reads as a general claim applied to Hootsuite without evidence of enterprise focus or friction measurement",
-    "'The first-screen conversion clarity likely remains high for users seeking a workflow tool' — conversion outcome claim without data, though hedged with 'likely'",
-    "'optimized for self-serve buyers' implies design intent not documented in evidence",
-    "Paragraph 2: 'which can slow decision-making' is an outcome claim without supporting evidence",
-    "Paragraph 3: 'whether the CTA friction increase is justified' implies a causal link (H2 additions → friction increase) not proven by the evidence",
-    "Paragraph 4: 'visitors who qualify for self-serve may wonder if they should book a demo instead' is buyer psychology inference presented as likely outcome",
-    "Paragraph 1: 'This hurts conversion when a visitor arrives expecting platform-grade features' — unsupported causal claim about conversion impact.",
-    "Paragraph 2: 'the added cognitive load may cost you users' — unsupported causal claim about user loss.",
-    "Paragraph 4: 'the mismatch may surface as drop-off during onboarding or at the trial-to-paid conversion point' — unsupported causal claim about specific funnel stages."
+    "'audience signal changed' — interpretation without quoting the headline text or labeling as inference",
+    "'shift from one content architecture to another' — causal language without showing what the old vs new navigation labels were",
+    "'reducing first-screen cognitive load' — mechanism inferred, not evidenced.",
+    "Paragraph 3: 'adds navigation steps for users who arrived ready to convert' — implies conversion friction without measurement data"
   ],
   "sectionErrors": [],
-  "finalJudgeScore": 94,
-  "finalJudgePass": true,
-  "finalRequiredFixes": [],
-  "seoScore": 81,
+  "finalJudgeScore": 76,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Section 03 (Visual Timeline): Label 'reducing first-screen cognitive load' as interpretation, not observed fact. Evidence shows headline and nav changes, not cognitive load measurement.",
+    "Section 03 (Visual Timeline): Label 'may feel more credible to enterprise evaluators while becoming less scannable for self-serve visitors' as interpretation. No A/B test data on credibility or scannability in evidence.",
+    "Section 05 (CTA): Label 'which may create a self-selection burden' as interpretation. No user testing or conversion data supports this causal claim.",
+    "Section 06 (Lessons): Remove or label all conversion outcome claims: 'reduces initial resistance', 'may increase drop-off', 'reduce friction', 'may confuse users'. None of these have supporting data in the evidence.",
+    "Section 06 (Lessons): The entire section restates analysis from sections 04 and 05 (headline shift, nav shift, section heading audit) without converting it into new action. Rewrite to offer practical founder experiments, not restatements of the analysis already presented.",
+    "Overall concision: The self-serve→enterprise shift appears explicitly in sections 01, 03, 04, 05, and 06 (5 times). Reduce to 1-2 mentions maximum. The proof burden concept appears in sections 04 and 06 (2 times, acceptable). CTA friction direction appears in sections 05 and 06 (2 times, borderline).",
+    "Section 06, paragraph 1: 95 words, introduces proof burden concept already covered in section 04. Either remove or convert to new action.",
+    "Section 06, paragraph 2: 102 words, restates navigation analysis from section 05 without adding new founder takeaway beyond 'test this by tracking clicks'.",
+    "Section 06, paragraph 3: 98 words, restates section heading change already described in section 02 and 03. Convert to specific audit method or remove."
+  ],
+  "seoScore": 85,
   "seoPass": true,
   "seoRequiredFixes": [
-    "The meta description is 153 characters including ellipsis, which is acceptable, but 'Jun 2026' is a future date that may confuse readers if published before that date. Clarify whether this is speculative or change the date to present tense.",
-    "The primary keyword 'Hootsuite homepage CRO teardown' appears only once in the article body (in metadata discussion). Use it naturally 2-3 more times in the body text, especially in the intro and one mid-article section.",
-    "The article has long paragraphs in the 'Messaging Evolution' and 'Lessons for SaaS Teams' sections that exceed 5-6 lines. Break these into shorter chunks (3-4 sentences max per paragraph) for better scannability.",
-    "The 'Visual Timeline' section has three consecutive paragraphs of 150+ words each. Insert subheadings (H3s) to break up this section: 'Jan 2023: Outcome-Focused Simplicity,' 'Jul 2023: Incremental Complexity,' 'Jun 2026: Platform-First Framing.'"
-  ]
+    "The meta description is 152 characters including the ellipsis, which is good, but the truncation ('…') suggests the description was cut mid-sentence. Rewrite to end cleanly within 155 characters without needing an ellipsis.",
+    "The article uses section identifiers like '01-intro' and '02-at-a-glance' as literal headings in the markdown. These should be converted to descriptive H2 headings for better scannability and SEO (e.g., '## Introduction' or '## Overview of Changes').",
+    "Add at least one internal link with anchor text that includes a target keyword (e.g., 'homepage CRO teardown' linking to a related article or resource hub).",
+    "The 'Lessons for SaaS Teams' section is dense with long paragraphs. Break into shorter paragraphs (3–4 sentences max) and consider adding bullet points for the three main patterns discussed."
+  ],
+  "articleWordCount": 1593,
+  "repetitionWarnings": [
+    "\"casual→formal / outcome→capability framing shift\" appears in 2 sections (max 1): 01-intro, 06-lessons-for-saas-teams",
+    "\"self-serve vs enterprise shift\" appears in 4 sections (max 2): 01-intro, 03-visual-timeline, 05-cta-navigation-evolution, 06-lessons-for-saas-teams",
+    "\"proof burden\" appears in 2 sections (max 1): 04-messaging-evolution, 06-lessons-for-saas-teams"
+  ],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~134w): \"Hootsuite's homepage was fully rewritten between January 2023…\"",
+    "[03-visual-timeline] Paragraph exceeds 90 words (~91w): \"**Jan 2023** opened with \"Grow your reach and…\"",
+    "[03-visual-timeline] Paragraph exceeds 90 words (~96w): \"**Jul 2023** marks the largest layout shift in…\"",
+    "[03-visual-timeline] Paragraph exceeds 90 words (~103w): \"**Jun 2026** repositions the homepage around \"Drive real…\"",
+    "[04-messaging-evolution] Paragraph exceeds 90 words (~105w): \"The old headline — \"Grow your reach and…\"",
+    "[04-messaging-evolution] Paragraph exceeds 90 words (~97w): \"The old meta description — \"Save time and…\"",
+    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~140w): \"Hootsuite's headline shifted from \"Grow your reach and…\"",
+    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~134w): \"The navigation labels moved from \"Publish and schedule,\"…\"",
+    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~131w): \"Across 7 snapshots, 15 section headings were added…\""
+  ],
+  "overLengthWarning": null
 }

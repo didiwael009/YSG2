@@ -1,40 +1,44 @@
 {
-  "score": 78,
+  "score": 68,
   "pass": false,
   "issues": [
-    "First paragraph purely descriptive — lists changes with no conversion or buyer psychology implication",
-    "Headline bullet uses 'can be read as' equivalent phrasing ('In CRO terms... can shift') without identifying which buyer audience benefited from the change",
-    "Section-headings bullet introduces 'self-serve visitors' as a risk without evidence that Hootsuite targets self-serve buyers or that the old headings served that segment",
-    "Navigation bullet states 'The evidence does not specify whether the new labels are action-based or category-based' — this admission of missing evidence weakens the analytical payoff",
-    "Final paragraph hedges extensively ('cannot confirm') and offers three possible drivers without grounding any in Hootsuite-specific evidence",
-    "No specific company evidence quoted in any bullet — all analysis is keyed to summary-card metadata, not actual page elements",
-    "Missing founder takeaway: no practical observation a SaaS founder can study or apply"
+    "Section is purely descriptive with no conversion implication, buyer psychology, trust analysis, or SaaS founder takeaway",
+    "Final paragraph 'Taken together, the visible changes suggest...' is generic — could appear word-for-word in any SaaS homepage teardown",
+    "No company-specific proper noun appears in the first 40 words (first proper noun 'Hootsuite' is at word 1, but no evidence-specific phrase until later)",
+    "Each bullet point restates the summary-card data without adding CRO insight, buyer psychology, or conversion implication",
+    "Section exceeds target word range for a contextualising quick-reference (should be tighter)",
+    "No identified buyer audience — who did the old vs new headline serve?",
+    "No conversion implication — what does a 'full label replacement' mean for visitor action or drop-off?",
+    "'can be read as' appears once, used as mechanical hedge rather than covering real interpretive gap",
+    "Navigation change described as 'full label replacement...shift from one content architecture to another' but no practical takeaway for SaaS founders",
+    "Section heading ratio '15 added to 4 removed' described as 'rebuilt how the product story is organized' but no analysis of what that rebuild implies for conversion",
+    "Paragraph 3 (final) restates conclusions from paragraph 2 bullets in vaguer wording ('reframing of who the page speaks to' repeats 'audience signal changed')"
   ],
   "requiredFixes": [
-    "Replace opening paragraph with a narrative that includes conversion implication: what these changes may mean for visitor qualification or friction, grounded in Hootsuite's likely buyer profile (enterprise social-media teams, agencies, etc.)",
-    "In headline bullet, identify which buyer audience the 'audience signal changed' likely targeted — e.g., from solo creators to enterprise teams, or vice versa — and state this is an interpretation based on volume of changes",
-    "Remove or reframe the self-serve visitor risk in section-headings bullet unless evidence elsewhere confirms Hootsuite targets self-serve; otherwise replace with a buyer-segment observation tied to Hootsuite's known market (enterprise, agency, etc.)",
-    "In navigation bullet, remove the 'evidence does not specify' disclaimer and either interpret the taxonomy change based on context (e.g., enterprise platform shift) or omit the action-vs-category distinction entirely",
-    "Add at least one Hootsuite-specific proper noun or quoted element in the body (e.g., a navigation label, a page section name, a product feature) to anchor the analysis",
-    "Add a founder takeaway: what SaaS teams can observe about headline–proof alignment, navigation taxonomy changes, or content architecture risks when repositioning"
+    "Add one conversion implication: what does a headline rewrite from early 2023 to mid-2026 mean for visitor comprehension or drop-off at the top of the page?",
+    "Identify a buyer audience: who did the early 2023 headline likely serve vs the mid-2026 headline? (e.g., 'early headline targets agencies managing multi-client workflows; 2026 headline shifts toward in-house brand teams')",
+    "Replace final paragraph with a practical SaaS founder takeaway anchored to Hootsuite's evidence — e.g., 'The 15:4 heading addition ratio shows Hootsuite added proof depth rather than trimming feature count — a signal that buyer education burden increased'",
+    "Remove or replace generic closing sentence 'Taken together, the visible changes suggest a reframing of who the page speaks to and what buyer motion it supports' — this could appear in any teardown",
+    "Tighten word count to 150–180 words (currently ~185 words, but density is low because no CRO insight is present)"
   ],
   "riskFlags": [
-    "'headline repositioning without corresponding proof architecture creates a trust gap' — presented as a causal claim without evidence that Hootsuite's proof architecture did or did not change",
-    "'navigation redesigns can improve enterprise qualification while increasing friction' — not labelled as interpretation; reads as a general claim applied to Hootsuite without evidence of enterprise focus or friction measurement"
+    "'audience signal changed' — interpretation without quoting the headline text or labeling as inference",
+    "'shift from one content architecture to another' — causal language without showing what the old vs new navigation labels were"
   ],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in first 12 words — meets SEO usefulness threshold",
-    "Section lacks any quoted page element or specific label — limits long-tail keyword opportunity"
+    "Positive: 'Hootsuite' appears in first sentence",
+    "Negative: No evidence-specific phrase in first 40 words — reader searching for 'Hootsuite homepage teardown' sees only generic description until bullet points"
   ],
-  "rewriteInstruction": "Rewrite the opening paragraph to include a conversion or buyer-psychology implication (e.g., what this volume of change may signal about Hootsuite's market repositioning or buyer-segment shift). In the headline bullet, identify which buyer audience the 'audience signal changed' likely served — tie this to Hootsuite's known market (enterprise social-media teams, agencies, etc.) and label it as an interpretation. Remove the self-serve visitor risk unless evidence elsewhere confirms that segment; replace with a Hootsuite-specific buyer observation. Cut the 'evidence does not specify' disclaimer in the navigation bullet — either interpret the taxonomy change or omit the action-vs-category distinction. Add at least one quoted or named page element (a navigation label, section heading, or product feature) to anchor the analysis. Add a founder takeaway: a practical observation about headline–proof alignment, navigation taxonomy risks, or content architecture trade-offs during repositioning. Label interpretive claims explicitly and remove any phrasing that implies causation without data.",
+  "rewriteInstruction": "Rewrite to add one conversion implication (what does the headline rewrite or navigation overhaul mean for visitor action?) and one buyer psychology observation (who did the old vs new headline serve?). Replace the final generic paragraph with a practical SaaS founder takeaway anchored to Hootsuite's 15:4 heading ratio or 8:8 navigation swap — e.g., 'The 15:4 heading addition ratio suggests Hootsuite increased proof depth rather than trimming features, a signal that the buyer education burden grew between 2023 and 2026.' Remove interpretive claims ('audience signal changed', 'shift from one content architecture to another') unless you quote the actual headline text or navigation labels. Compress to 160–180 words by cutting the final summary paragraph and embedding its insight into the bullet points.",
   "dimensionScores": {
     "evidenceAccuracy": 20,
-    "clarity": 13,
+    "clarity": 8,
     "specificity": 8,
-    "seoUsefulness": 8,
-    "croUsefulness": 6,
+    "seoUsefulness": 7,
+    "croUsefulness": 4,
     "riskControl": 7,
-    "analysisDepth": 6
+    "analysisDepth": 4,
+    "editorialQuality": 5
   },
   "effectivePassThreshold": 85
 }

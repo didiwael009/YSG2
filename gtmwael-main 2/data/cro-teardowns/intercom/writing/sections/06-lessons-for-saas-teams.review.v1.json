@@ -1,0 +1,34 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 2 repeats the 'proof burden' analysis that belongs in the messaging section, not lessons",
+    "Paragraph 2 contains an unlabelled interpretation: 'the old headline asks the visitor to imagine a better moment, the new one asks them to believe a category claim' — this psychology claim is not explicitly labelled as interpretation",
+    "Minor SEO opportunity: 'Intercom' appears only once in the first 40 words; could name the company earlier for search clarity",
+    "Paragraph 1 lacks explicit buyer psychology — it describes the navigation change and gives a founder test, but does not state which buyer type (enterprise vs self-serve) the old vs new navigation likely served"
+  ],
+  "requiredFixes": [
+    "Remove or compress the 'proof burden' sentence in paragraph 2 — that conclusion belongs in the messaging section, not in lessons",
+    "Label the headline psychology interpretation in paragraph 2 as 'can be read as' or 'suggests' to control risk",
+    "Add one sentence in paragraph 1 that identifies the buyer audience shift implied by the navigation change (e.g., 'The new category labels suggest a shift toward enterprise buyers comparing components, while action labels served visitors ready to execute a workflow')"
+  ],
+  "riskFlags": [
+    "Unlabelled interpretation in paragraph 2: 'the old headline asks the visitor to imagine a better moment, the new one asks them to believe a category claim' — this is a psychology claim presented as fact"
+  ],
+  "seoNotes": [
+    "Company name 'Intercom' appears in the first sentence, which meets SEO usefulness threshold",
+    "First 40 words include 'Intercom', 'navigation', 'Custom Bots', 'Fin', 'Contact Sales' — strong proper-noun density for search relevance"
+  ],
+  "rewriteInstruction": "Remove the 'proof burden' sentence from paragraph 2 (that analysis belongs in messaging, not lessons). Label the headline psychology claim in paragraph 2 as 'can be read as' to control interpretive risk. In paragraph 1, add one sentence identifying which buyer audience the old vs new navigation likely served (e.g., 'The old action labels served self-serve users ready to execute; the new category labels serve enterprise buyers comparing platform components'). Keep all other structure and evidence anchors intact.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 10,
+    "specificity": 15,
+    "seoUsefulness": 10,
+    "croUsefulness": 10,
+    "riskControl": 7,
+    "analysisDepth": 8,
+    "editorialQuality": 3
+  },
+  "effectivePassThreshold": 85
+}

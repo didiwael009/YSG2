@@ -5,18 +5,19 @@
   "requiredFixes": [],
   "riskFlags": [],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in first sentence, supporting SEO discoverability",
-    "Section explicitly analyzes shift from conversion-focused to SEO-focused meta description, demonstrating awareness of search vs conversion tension"
+    "Company name 'Hootsuite' appears in first 40 words (position ~24), meeting SEO targeting requirement",
+    "Section successfully integrates evidence (quoted phrases) which may improve topical relevance for long-tail 'Hootsuite headline change' queries"
   ],
   "rewriteInstruction": "",
   "dimensionScores": {
     "evidenceAccuracy": 25,
-    "clarity": 15,
+    "clarity": 10,
     "specificity": 15,
     "seoUsefulness": 10,
     "croUsefulness": 10,
     "riskControl": 10,
-    "analysisDepth": 15
+    "analysisDepth": 10,
+    "editorialQuality": 10
   },
   "effectivePassThreshold": 85
 }

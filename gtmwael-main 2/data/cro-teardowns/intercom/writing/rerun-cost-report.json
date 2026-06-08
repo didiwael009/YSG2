@@ -1,0 +1,92 @@
+{
+  "slug": "intercom",
+  "section": "rerun",
+  "calls": [
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "writer",
+      "inputTokens": 2350,
+      "outputTokens": 317,
+      "inputCostUsd": 0.007050000000000001,
+      "outputCostUsd": 0.0047550000000000005,
+      "totalCostUsd": 0.011805000000000001,
+      "timestamp": "2026-06-08T10:58:35.677Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "critic-v1",
+      "inputTokens": 3296,
+      "outputTokens": 1528,
+      "inputCostUsd": 0.009888,
+      "outputCostUsd": 0.02292,
+      "totalCostUsd": 0.032808,
+      "timestamp": "2026-06-08T10:59:08.390Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "writer",
+      "inputTokens": 2396,
+      "outputTokens": 441,
+      "inputCostUsd": 0.007188,
+      "outputCostUsd": 0.006614999999999999,
+      "totalCostUsd": 0.013803,
+      "timestamp": "2026-06-08T10:59:22.351Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "critic-v1",
+      "inputTokens": 3423,
+      "outputTokens": 812,
+      "inputCostUsd": 0.010269,
+      "outputCostUsd": 0.01218,
+      "totalCostUsd": 0.022449,
+      "timestamp": "2026-06-08T10:59:42.370Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "writer",
+      "inputTokens": 2149,
+      "outputTokens": 301,
+      "inputCostUsd": 0.006447,
+      "outputCostUsd": 0.004515,
+      "totalCostUsd": 0.010962,
+      "timestamp": "2026-06-08T10:59:52.646Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "critic-v1",
+      "inputTokens": 2949,
+      "outputTokens": 869,
+      "inputCostUsd": 0.008846999999999999,
+      "outputCostUsd": 0.013035,
+      "totalCostUsd": 0.021882,
+      "timestamp": "2026-06-08T11:00:11.698Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "final-judge",
+      "inputTokens": 5043,
+      "outputTokens": 1979,
+      "inputCostUsd": 0.015129,
+      "outputCostUsd": 0.029684999999999996,
+      "totalCostUsd": 0.04481399999999999,
+      "timestamp": "2026-06-08T11:00:55.189Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "seo-auditor",
+      "inputTokens": 2796,
+      "outputTokens": 1330,
+      "inputCostUsd": 0.008388,
+      "outputCostUsd": 0.01995,
+      "totalCostUsd": 0.028338,
+      "timestamp": "2026-06-08T11:01:25.021Z"
+    }
+  ],
+  "totalInputTokens": 24402,
+  "totalOutputTokens": 7577,
+  "totalCostUsd": 0.18686099999999997,
+  "budgetUsd": 1,
+  "budgetExceeded": false,
+  "generatedAt": "2026-06-08T11:01:25.026Z"
+}

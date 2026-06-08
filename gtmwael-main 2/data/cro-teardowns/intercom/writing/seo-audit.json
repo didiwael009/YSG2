@@ -1,0 +1,53 @@
+{
+  "seoScore": 85,
+  "pass": true,
+  "titleScore": 13,
+  "metaDescriptionScore": 12,
+  "headingStructureScore": 14,
+  "searchIntentScore": 18,
+  "keywordUseScore": 9,
+  "readabilityScore": 13,
+  "internalLinkingScore": 6,
+  "internalLinkingSuggestions": [
+    "In the 'Messaging Evolution' section, link 'category-defining claim' to a methodology article about positioning frameworks or category creation for SaaS",
+    "In the 'CTA and Navigation Evolution' section, link 'product-taxonomy CTAs' to a related teardown or guide analyzing CTA strategies",
+    "In 'Lessons for SaaS Teams', link 'action-based navigation' to a navigation best practices article or related case study",
+    "In the intro, link 'primary headline shifted' to a guide on writing effective SaaS headlines or headline testing methodology",
+    "In 'Lessons for SaaS Teams', link 'trial-to-paid transition' to conversion optimization content about trial experience"
+  ],
+  "faqSuggestions": [
+    "Why did Intercom change its homepage headline from outcome-focused to category-focused?",
+    "What does Intercom's navigation restructuring tell us about their target audience shift?",
+    "How can SaaS companies decide between action-based and product-category CTAs?",
+    "What are the risks of using superlative claims like 'the only' in homepage headlines?",
+    "How do you know when to reposition your SaaS homepage around a new category?",
+    "What is the difference between outcome-driven and product-taxonomy CTAs?"
+  ],
+  "contentGapNotes": [
+    "No mention of what metrics Intercom might have used to validate these changes (even speculatively, e.g., 'teams making changes of this magnitude typically track...')",
+    "Missing discussion of how the visual design changes (mentioned as 71% similarity drop) relate to the messaging shifts",
+    "No analysis of what happened to the removed CTAs — did they move elsewhere on the page, or were those conversion paths abandoned entirely?",
+    "The article doesn't address mobile experience or how these changes might affect mobile visitors differently",
+    "No speculation about competitive pressure or market timing that might have driven the AI-first repositioning",
+    "Missing practical framework for when a SaaS team should consider similar headline repositioning"
+  ],
+  "requiredFixes": [
+    "Meta description is 153 characters including ellipsis — good, but the ellipsis suggests truncation. Rewrite to use the full 155-character budget intentionally without trailing punctuation that implies cut-off content",
+    "The H1 'How Intercom rewrote its homepage over 3 years' does not include the primary keyword 'CRO teardown' — consider revising to 'Intercom Homepage CRO Teardown: How They Rewrote Messaging Over 3 Years' or similar",
+    "Section '02-at-a-glance' has title 'At a Glance' but this should be formatted as ## heading in the markdown for proper H2 structure",
+    "Add a conclusion section with a clear H2 (e.g., '## Key Takeaways from Intercom's Homepage Evolution') to provide closure and reinforce primary keyword"
+  ],
+  "optionalImprovements": [
+    "Title could be shortened for better mobile display — 'Intercom Homepage Teardown: Jan 2023 to Jun 2026' is 49 characters (good) but consider front-loading value: 'Intercom Homepage CRO Teardown (2023-2026): 4 Snapshots Analyzed'",
+    "Add a sentence in the intro explicitly stating what a 'CRO teardown' is for readers unfamiliar with the format — helps match search intent for informational queries",
+    "The 'Visual Timeline' section could benefit from subheadings (H3s) for each snapshot date to improve scanability",
+    "Consider adding a brief methodology note explaining how snapshots were captured and compared — adds credibility",
+    "The article mentions '4 snapshots' but only details three dates (Jan 2023, Oct 2025, Jun 2026) — either add the fourth or reconcile the count",
+    "Add bold text to key takeaways in the 'Lessons for SaaS Teams' section to improve scanability for time-pressed readers",
+    "Include a brief comparative table in 'At a Glance' showing old vs new headline, old vs new CTA count, etc. — visual anchors improve engagement",
+    "The phrase 'observable across four snapshots' appears multiple times — vary language to avoid repetition"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.026649000000000006,
+  "generatedAt": "2026-06-08T11:09:36.759Z"
+}

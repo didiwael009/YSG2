@@ -1,0 +1,62 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Intercom",
+  "companyUrl": "https://www.intercom.com",
+  "articleTitle": "Intercom Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Intercom rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 5,
+    "h2Removed": 1,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 5,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "cta-changes": {
+    "added": [
+      "Contact sales",
+      "Start free trial",
+      "Learn more",
+      "Contact Press",
+      "Log in",
+      "Fin AI Agent",
+      "Fully-featured helpdesk",
+      "Natively integrated AI Agent",
+      "AI-powered Insights",
+      "Self-improving system"
+    ],
+    "removed": [
+      "Download the report",
+      "Contact Sales",
+      "Watch now",
+      "Get started",
+      "Start growing business non-stop",
+      "Start using next-generation support today",
+      "Start converting customers faster",
+      "Read story",
+      "See all stories",
+      "Watch a Demo"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "A complete solution for AI and human agents",
+      "A fully-featured AI-powered helpdesk",
+      "A true partner with deep domain expertise",
+      "Transparent pricing",
+      "Perfect customer experiences, powered by Intercom"
+    ],
+    "removed": [
+      "A better customer experience across support, marketing, and sales"
+    ]
+  }
+}

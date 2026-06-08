@@ -1,0 +1,45 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 1 contains a phrase ('structure that can be read as lowering first-screen processing') that is interpretive but lacks traceability to buyer behavior evidence",
+    "Paragraph 2 claims 'enterprise buyer evaluation workflows' without evidence that enterprise buyers drove the change",
+    "Paragraph 3 claims 'risks disorienting users' without evidence of user disorientation or drop-off",
+    "Paragraph 3 closing sentence ('SaaS teams moving from...') is a generic lesson that could appear in any teardown and does not trace to Intercom-specific evidence",
+    "No buyer psychology analysis for who the 2023 workflow-led structure served vs. who the 2026 category-led structure targets",
+    "Section contains two instances of interpretive hedging ('can be read as', 'sometimes associated with') without clarifying the gap being hedged",
+    "Final paragraph introduces 'above-the-fold demo or sign-up CTA' expectation without evidence that such CTAs existed or were expected by visitors",
+    "No founder takeaway tied to a specific evidence item — the closing sentence is a generic pattern observation"
+  ],
+  "requiredFixes": [
+    "Remove 'lowering first-screen processing' claim in paragraph 1 — evidence shows navigation and headings changed but does not show cognitive load measurement",
+    "Remove or reframe 'enterprise buyer evaluation workflows' in paragraph 2 — no evidence identifies buyer segment or evaluation stage for the Oct 2025 change",
+    "Remove 'risks disorienting users' claim in paragraph 3 — evidence shows CTA removal but does not show user confusion or drop-off",
+    "Rewrite paragraph 3 closing sentence to tie the lesson to a specific Intercom evidence item — e.g., 'Intercom's removal of \"Download the report\" and \"Contact Sales\" CTAs forces visitors to read positioning before encountering a conversion path, a structure that...'",
+    "Add buyer psychology analysis: identify who the 2023 'Support customers at exactly the right moment' message likely served (e.g., support managers with a deployment task) vs. who 'The only helpdesk designed for the AI Agent era' targets (e.g., VP/C-level evaluating AI vendor strategy)",
+    "Add conversion implication for the Oct 2025 shift to 'Fin' and 'Intercom Suite' section headings — what does leading with product names instead of capability labels mean for visitor comprehension?",
+    "Clarify or remove hedging phrases: explain what gap 'can be read as' is covering in paragraph 1, or replace with direct observation"
+  ],
+  "riskFlags": [
+    "Paragraph 1: 'structure that can be read as lowering first-screen processing' — interpretation not labelled as inference and not traceable to buyer behavior evidence",
+    "Paragraph 2: 'pattern sometimes associated with enterprise buyer evaluation workflows' — implies causation without evidence that enterprise buyers drove the change",
+    "Paragraph 3: 'risks disorienting users expecting an above-the-fold demo or sign-up CTA' — claims a user expectation and a risk (disorientation) without evidence of either"
+  ],
+  "seoNotes": [
+    "Company name 'Intercom' appears in the first 10 words (positive)",
+    "Section includes specific dated snapshots (Jan 2023, Oct 2025, Jun 2026) which anchor the narrative for search context (positive)",
+    "Generic closing sentence ('SaaS teams moving from task-led to category-led headlines...') dilutes company-specific SEO value (negative)"
+  ],
+  "rewriteInstruction": "Remove all unsupported risk or buyer-segment claims (enterprise workflows, user disorientation, above-the-fold CTA expectation). Replace paragraph 2 analysis with a conversion implication for leading with 'Fin' and 'Intercom Suite' section headings instead of capability descriptions — what does this structure ask visitors to know before they can evaluate the product? Add buyer psychology to paragraph 1 and paragraph 3: identify who the 2023 workflow message likely served vs. who the 2026 AI Agent era claim targets, and explain what 'A true partner with deep domain expertise' as a first-screen heading means for trust burden or evaluation stage filtering. Replace the generic closing sentence with a founder takeaway tied to a specific Intercom evidence item, such as the removal of 'Download the report' or the addition of 'Intercom Suite' as a section heading. Cut paragraph 3 to under 90 words by removing the generic SaaS pattern observation. Clarify or remove 'can be read as' hedging in paragraph 1 — either explain what interpretive gap you are covering or state the observation directly.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "clarity": 8,
+    "specificity": 9,
+    "seoUsefulness": 8,
+    "croUsefulness": 5,
+    "riskControl": 4,
+    "analysisDepth": 5,
+    "editorialQuality": 6
+  },
+  "effectivePassThreshold": 85
+}

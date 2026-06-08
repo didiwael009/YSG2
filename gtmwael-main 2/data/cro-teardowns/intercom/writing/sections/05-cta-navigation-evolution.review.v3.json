@@ -1,0 +1,37 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 1 ends with 'creating drop-off at the moment of choice' — unlabelled interpretation of buyer psychology",
+    "Paragraph 2 contains one unlabelled causal interpretation: 'product CTAs filter for informed buyers, but they may also filter out high-intent visitors who lack context' — no hedging language present",
+    "Paragraph 3 includes 'may reduce social proof discoverability' without labelling it as an interpretation",
+    "Section does not include the company name 'Intercom' in the first 40 words"
+  ],
+  "requiredFixes": [
+    "Add explicit hedging to the drop-off claim in paragraph 1: 'creating drop-off at the moment of choice' → 'which can be read as increasing friction at the moment of choice'",
+    "Label the filtering claim in paragraph 2 as interpretation: 'The conversion implication: product CTAs filter for informed buyers' → 'This pattern suggests product CTAs filter for informed buyers'",
+    "Add hedging to paragraph 3: 'Removing \"See all stories\" may reduce social proof discoverability' is already hedged with 'may' but should be clearer: 'Removing \"See all stories\" can be read as reducing social proof discoverability'",
+    "Insert 'Intercom' in the first sentence: 'Intercom replaced outcome-driven CTAs with product-taxonomy CTAs.'"
+  ],
+  "riskFlags": [
+    "'creating drop-off at the moment of choice' — unlabelled causal claim",
+    "'product CTAs filter for informed buyers, but they may also filter out high-intent visitors' — interpretive claim without hedging",
+    "'may reduce social proof discoverability' — light hedging but could be clearer"
+  ],
+  "seoNotes": [
+    "Company name 'Intercom' does not appear in first 40 words — reader may not know which teardown this is until mid-paragraph",
+    "Section opens with strong specificity: quoted CTAs anchor the analysis immediately"
+  ],
+  "rewriteInstruction": "Add explicit interpretive hedging to three claims: (1) 'creating drop-off at the moment of choice' → 'which can be read as increasing friction at the moment of choice'; (2) 'The conversion implication: product CTAs filter for informed buyers' → 'This pattern suggests product CTAs filter for informed buyers'; (3) strengthen hedging in paragraph 3 around social proof discoverability. Insert 'Intercom' in the opening sentence to meet SEO threshold. All other analysis is strong: buyer psychology is present (self-serve vs enterprise paths, mid-evaluation buyers), conversion implications are clear (friction, filtering), and the founder takeaway is actionable and specific.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 10,
+    "specificity": 15,
+    "seoUsefulness": 7,
+    "croUsefulness": 10,
+    "riskControl": 7,
+    "analysisDepth": 10,
+    "editorialQuality": 10
+  },
+  "effectivePassThreshold": 85
+}

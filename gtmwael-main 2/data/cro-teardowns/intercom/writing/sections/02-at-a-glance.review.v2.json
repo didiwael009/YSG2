@@ -1,0 +1,46 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Paragraph 2 ('When a SaaS company rewrites its H1...') is generic — could appear word-for-word in any SaaS teardown without company-specific anchor.",
+    "Paragraph 3 ('Fewer nav options can reduce choice paralysis...') contains two unlabelled interpretations: 'reduce choice paralysis' and 'enterprise buyers scanning for specific capabilities may not find their entry point' — neither traces to evidence.",
+    "Paragraph 3 final sentence ('Navigation pruning often signals...') is a generic pattern claim with no Intercom-specific evidence anchor.",
+    "Paragraph 4 is purely descriptive with no conversion implication or buyer psychology — it restates the card note verbatim.",
+    "Final paragraph ('Collectively, the evidence shows...') is a closing summary that restates what the section just said instead of ending it.",
+    "No conversion implication beyond the generic 'who self-qualifies to stay' in paragraph 2.",
+    "No buyer psychology identifying who the old vs new headline served — only abstract 'audience signal changed'.",
+    "No SaaS founder takeaway — no practical observation a founder can study or apply.",
+    "Company-specific proper noun 'Intercom' does not appear in the first 40 words (appears at word 1, but the SEO signal is in the second paragraph, which is generic)."
+  ],
+  "requiredFixes": [
+    "Replace paragraph 2 with a company-specific observation tied to Intercom's headline evidence — quote the old and new H1 phrases if available, or describe what changed (e.g., job-title shift, feature→outcome shift).",
+    "In paragraph 3, label both interpretations ('This could reduce choice paralysis...' and 'Enterprise buyers may interpret fewer nav items as...').",
+    "Delete or rewrite paragraph 3 final sentence to trace back to Intercom's specific nav changes — name which items were removed or added if evidence exists.",
+    "Rewrite paragraph 4 to include a conversion implication (e.g., 'New H2 elements may guide visitors to different CTAs') or buyer psychology (e.g., 'The shift from feature H2s to use-case H2s may target mid-market ops buyers').",
+    "Delete the final paragraph or replace it with a single-sentence founder takeaway tied to one piece of Intercom evidence.",
+    "Add one sentence identifying the buyer audience for the headline change — who did the old headline serve vs the new one (e.g., 'support agents' vs 'customer success directors')."
+  ],
+  "riskFlags": [
+    "'can alter who self-qualifies to stay on the page and who bounces' — unlabelled interpretation, no evidence that Intercom observed this effect.",
+    "'reduce choice paralysis' — unlabelled interpretation, no evidence of visitor behaviour data.",
+    "'enterprise buyers scanning for specific capabilities may not find their entry point' — unlabelled interpretation, no evidence of enterprise buyer behaviour.",
+    "'Navigation pruning often signals a move from portfolio sprawl to a unified platform narrative' — causal pattern claim with no Intercom-specific evidence anchor."
+  ],
+  "seoNotes": [
+    "Company-specific proper noun 'Intercom' appears in the first sentence, which is good for SEO.",
+    "However, paragraph 2 is generic and could apply to any SaaS company — reduces SEO differentiation.",
+    "No company-specific feature name, product name, or dated change appears in the first 40 words beyond 'Intercom' and date range."
+  ],
+  "rewriteInstruction": "Ground every paragraph in Intercom-specific evidence. Replace paragraph 2 with a concrete observation about Intercom's headline change — quote the old and new H1 phrases if available, or describe the shift (e.g., role-based→outcome-based). In paragraph 3, label both choice-paralysis and enterprise-buyer interpretations as interpretations ('This could...' / 'may be read as...'). Replace the generic 'Navigation pruning often signals' sentence with a specific observation about which Intercom nav items were removed or added. Rewrite paragraph 4 to include a conversion implication (e.g., how new H2s may guide visitors to different CTAs) or buyer psychology (e.g., which buyer role the new H2s target). Delete the final summary paragraph and replace it with a single-sentence founder takeaway tied to one piece of Intercom evidence. Add one sentence identifying the buyer audience for the headline change — who did the old headline serve vs the new one. Ensure no paragraph could appear word-for-word in a different company's teardown.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "clarity": 8,
+    "specificity": 5,
+    "seoUsefulness": 7,
+    "croUsefulness": 4,
+    "riskControl": 4,
+    "analysisDepth": 5,
+    "editorialQuality": 5
+  },
+  "effectivePassThreshold": 85
+}

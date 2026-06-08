@@ -2,32 +2,32 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "Phrase 'optimized for self-serve buyers' implies intent/design goal not present in evidence — evidence shows structure, not optimization target",
-    "Phrase 'credibility: action-framing is fast to comprehend but may not signal enterprise depth' is an unlabelled interpretation",
-    "Minor padding in 'The visual hierarchy appears designed for scanners' — the observation about hierarchy is supported, but 'appears designed for' adds interpretive layer without label"
+    "Paragraph 1: 'reducing first-screen cognitive load for users who arrived looking for a specific social media workflow' — this conversion mechanism is implied, not demonstrated by the evidence.",
+    "Paragraph 3: 'The tradeoff is buyer sophistication' — this framing introduces a conclusion that belongs in the messaging/positioning section, creating boundary bleed.",
+    "Paragraph 3 exceeds 90 words (approximately 105 words), violating editorial compression standard.",
+    "The section does not include a practical SaaS founder takeaway — no observable lesson for a SaaS team studying this evolution."
   ],
   "requiredFixes": [
-    "Replace 'optimized for self-serve buyers who need to confirm a capability match quickly' with 'may serve self-serve buyers seeking capability confirmation' or similar hedged framing to avoid implying documented design intent",
-    "Label the credibility tradeoff explicitly: 'This configuration presents a credibility tradeoff: action-framing...' or 'A plausible interpretation: action-framing...' to distinguish observation from inference"
+    "Paragraph 3: compress to under 90 words by removing the 'tradeoff is buyer sophistication' sentence (which repeats the messaging section's conclusion) and ending after the third-party proof observation.",
+    "Add one sentence framing what a SaaS founder can study: e.g., 'For SaaS teams, this evolution shows a navigation structure change preceding headline repositioning — the platform capabilities appeared in the nav before the H1 adopted platform language.'"
   ],
   "riskFlags": [
-    "'The first-screen conversion clarity likely remains high for users seeking a workflow tool' — conversion outcome claim without data, though hedged with 'likely'",
-    "'optimized for self-serve buyers' implies design intent not documented in evidence"
+    "'reducing first-screen cognitive load' — mechanism inferred, not evidenced."
   ],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in word 11, meets the 40-word requirement",
-    "Strong use of dated period labels ('Jan 2023', 'Jul 2023', 'Jun 2026') aids search relevance for timeline queries",
-    "Specific quoted headlines ('Grow your reach...', 'Save time and get REAL results...') provide unique searchable phrases"
+    "Company name 'Hootsuite' appears in the first 40 words (second sentence), meeting SEO usefulness standard.",
+    "Dated snapshot labels ('Jan 2023', 'Jul 2023', 'Jun 2026') provide chronological structure useful for search intent around homepage evolution."
   ],
-  "rewriteInstruction": "Address the two unlabelled interpretations: (1) change 'optimized for self-serve buyers who need to confirm a capability match quickly' to 'may serve self-serve buyers seeking capability confirmation' to avoid implying documented design intent, and (2) add an explicit label before the credibility tradeoff observation ('This configuration presents a credibility tradeoff:' or 'A plausible interpretation:'). These are the only fixes needed to reach 90+. The section already includes strong conversion implications (first-screen clarity analysis), buyer psychology (self-serve vs enterprise evaluators), and actionable SaaS takeaways (the platform-level messaging observation). Evidence grounding is strong throughout — every claim traces to a specific headline, nav label, or section heading from the evidence blocks.",
+  "rewriteInstruction": "Remove the 'tradeoff is buyer sophistication' sentence from paragraph 3 (this conclusion belongs in messaging section). Compress paragraph 3 to under 90 words by ending after the G2 proof observation. Add one sentence identifying a structural lesson for SaaS teams — e.g., the sequence in which navigation categories changed relative to headline repositioning, or the timing of third-party proof appearing in section headings. Ensure the final version stays within the visual timeline's job: documenting what changed and when, with conversion implications tied to each dated snapshot.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "clarity": 15,
-    "specificity": 15,
+    "evidenceAccuracy": 22,
+    "clarity": 9,
+    "specificity": 14,
     "seoUsefulness": 10,
-    "croUsefulness": 10,
-    "riskControl": 5,
-    "analysisDepth": 13
+    "croUsefulness": 9,
+    "riskControl": 7,
+    "analysisDepth": 8,
+    "editorialQuality": 9
   },
   "effectivePassThreshold": 85
 }

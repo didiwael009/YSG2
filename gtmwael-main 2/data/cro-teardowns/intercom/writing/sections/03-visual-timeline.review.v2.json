@@ -1,0 +1,48 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 1 'may reduce first-screen friction' is an unlabelled interpretation — no evidence anchor for friction reduction claim",
+    "Paragraph 2 'That structure may fit enterprise buyers' is an unlabelled interpretation — no evidence that enterprise buyers prefer category claims",
+    "Paragraph 2 'can increase drop-off for self-serve users' is a conversion-impact claim without data",
+    "Paragraph 3 'can work for buying committees but may disorient users' is a conversion-impact claim without data",
+    "Phrase 'creates qualification burden if the visitor is still comparing category options' is generic — could apply to any SaaS homepage without company-specific anchor",
+    "No founder takeaway or actionable observation explicitly stated — analysis remains at pattern level",
+    "Paragraph 1 word count: ~98 words (exceeds 90-word guideline)",
+    "Paragraph 2 word count: ~96 words (exceeds 90-word guideline)",
+    "Paragraph 3 word count: ~93 words (exceeds 90-word guideline)",
+    "Section repeats self-serve vs enterprise shift conclusion — this belongs in messaging section, not visual timeline",
+    "No buyer audience is identified for the messaging changes (who 'Custom Bots' vs 'AI Agent era' targets specifically)"
+  ],
+  "requiredFixes": [
+    "Label interpretation in paragraph 1: change 'which may reduce first-screen friction' to 'which can be read as lowering first-screen friction' or remove the claim",
+    "Label interpretation in paragraph 2: change 'That structure may fit enterprise buyers' to 'A pattern sometimes associated with enterprise positioning'",
+    "Remove or label conversion-impact claims: 'can increase drop-off' and 'may disorient users' require data or must be rephrased as 'a structure that risks disorienting'",
+    "Add buyer-audience identification: who specifically would recognize 'Custom Bots' as a category entry point vs who 'AI Agent era' targets",
+    "Compress all three paragraphs to under 90 words each — each currently exceeds the editorial guideline",
+    "Add one founder takeaway: what a SaaS team can learn from the structural progression (e.g., 'Teams moving from product-led to category-led homepages face a trade-off: category claims filter for evaluation-stage buyers but require visitors to process positioning before encountering proof')"
+  ],
+  "riskFlags": [
+    "'may reduce first-screen friction' — unlabelled interpretation with no evidence anchor",
+    "'creates qualification burden' — unlabelled interpretation",
+    "'That structure may fit enterprise buyers' — unlabelled interpretation with no evidence",
+    "'can increase drop-off for self-serve users' — conversion-impact claim without data",
+    "'can work for buying committees but may disorient users' — conversion-impact claim without data"
+  ],
+  "seoNotes": [
+    "Company name 'Intercom' appears in first 40 words — meets SEO threshold",
+    "Section includes specific proper nouns: 'Fin', 'Intercom Suite', 'Custom Bots' — good for search relevance"
+  ],
+  "rewriteInstruction": "Compress each paragraph to under 90 words by removing transitional padding ('which may', 'but it can', 'rather than'). Label all interpretations: replace 'may reduce friction' with 'a structure that can be read as lowering friction' and 'may fit enterprise buyers' with 'a pattern sometimes associated with'. Remove conversion-impact claims ('can increase drop-off', 'may disorient') or rephrase as structural observations ('a structure that risks'). Move self-serve vs enterprise distinction to messaging section — visual timeline should focus on what changed and the immediate structural implication, not buyer-segment conclusions. Add one founder takeaway at the end: what a SaaS team can learn from the structural progression (e.g., 'Teams moving from task-led to category-led headlines face a trade-off: category claims filter for evaluation-stage visitors but require processing before encountering proof'). Identify buyer audience for each messaging change: who would recognize 'Custom Bots' vs who 'AI Agent era' targets. Ensure no paragraph restates the previous paragraph's conclusion in different wording.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "clarity": 7,
+    "specificity": 10,
+    "seoUsefulness": 9,
+    "croUsefulness": 6,
+    "riskControl": 4,
+    "analysisDepth": 14,
+    "editorialQuality": 10
+  },
+  "effectivePassThreshold": 85
+}

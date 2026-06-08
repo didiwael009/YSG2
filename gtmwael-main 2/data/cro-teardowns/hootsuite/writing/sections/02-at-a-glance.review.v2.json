@@ -2,37 +2,44 @@
   "score": 78,
   "pass": false,
   "issues": [
-    "Opening paragraph contains a speculative conclusion ('can be read as an attempt to realign the page with a different buyer segment or sales motion') not anchored to specific evidence — the summary-cards do not include buyer segment signals.",
-    "Second bullet uses a hypothetical example ('A headline that speaks to small business social media managers…') without grounding it in the actual Jan 2023 or Jun 2026 headline text — no quoted headline appears in the evidence.",
-    "Second bullet contains an unsupported causal claim: 'if the new headline increases abstraction without matching proof elements further down the page, cognitive load rises and drop-off risk increases' — no proof-element evidence is provided.",
-    "Fourth bullet states 'These observed shifts suggest Hootsuite may have been moving upmarket' — this is an interpretive leap not labelled as speculation and not tied to a specific evidence anchor (e.g., a quoted headline or nav label).",
-    "No actual headline, H2, or navigation label text is quoted — the draft discusses changes without showing the reader what changed.",
-    "Final sentence ('navigation that helps one buyer type self-qualify may confuse another who expected a simpler entry point') is generic SaaS commentary that could apply to any homepage teardown."
+    "Paragraph 2 exceeds 90 words (103 words) without a distinct second idea",
+    "Paragraph 3 exceeds 90 words (91 words) without a distinct second idea",
+    "Paragraph 2 lacks company-specific evidence — no quoted phrase, dated change, or named page element anchors the 'audience signal changed' claim",
+    "Paragraph 4 is purely descriptive — restates card data without conversion implication or buyer psychology",
+    "Final paragraph introduces GTM pivot conclusion without evidence anchor from this section's data",
+    "Generic phrasing appears 3 times: 'this type of headline change', 'this level of churn', 'this magnitude of structural change' — all could apply to any company",
+    "No proper noun or company name in first 40 words (first mention at word 1)",
+    "Hedging phrase 'can be read as' appears twice, once mechanically (paragraph 2)",
+    "Paragraph 3 restates the navigation churn fact from paragraph 3's opening in its closing sentence",
+    "Section exceeds target compression — 5 paragraphs for context that could be delivered in 3"
   ],
   "requiredFixes": [
-    "Quote at least one actual headline, H2, or navigation label from the evidence to ground the analysis in observable page text.",
-    "Remove or clearly label as interpretation the conclusion that Hootsuite 'may have been moving upmarket' — or tie it to a specific quoted element (e.g., a nav label that names enterprise use cases).",
-    "Remove the unsupported causal claim about cognitive load and drop-off risk in the second bullet, or reframe it as a CRO hypothesis ('a common risk in homepage repositioning is…').",
-    "Replace the hypothetical small-business / enterprise headline example with a description anchored to the actual headline change noted in the evidence."
+    "Cut paragraph 2 to under 90 words by removing one of the two buyer scenarios (self-serve or enterprise) — present the conversion implication through one lens only",
+    "Cut paragraph 3 to under 90 words by removing the closing restatement ('the page may become more credible...') which repeats the action-vs-category navigation contrast already established",
+    "Paragraph 4: add one conversion or psychology observation — e.g., 'A 15→4 ratio suggests consolidation around fewer proof points, which may improve scan speed for time-pressed buyers but reduce discovery for exploratory visitors'",
+    "Replace 'can be read as' in paragraph 2 with direct observation or remove the hedge — the evidence already states 'audience signal changed', no interpretation needed",
+    "Move final paragraph's GTM pivot conclusion to the messaging section where strategic shift belongs, or delete it entirely — this section's job is to contextualise card numbers, not conclude on GTM direction"
   ],
   "riskFlags": [
-    "Second bullet contains an unlabelled causal claim: 'if the new headline increases abstraction without matching proof elements further down the page, cognitive load rises and drop-off risk increases' — no data or evidence supports this conversion outcome.",
-    "Opening paragraph states changes 'can be read as an attempt to realign the page with a different buyer segment or sales motion' — this interpretation is not clearly labelled and the evidence does not include buyer-segment signals.",
-    "Fourth bullet claims 'These observed shifts suggest Hootsuite may have been moving upmarket' — this is an interpretive conclusion not tied to a specific quoted element or labelled as speculation."
+    "Paragraph 2: 'this type of headline change can increase cognitive load' — unsupported causal claim; no evidence provided that cognitive load increased",
+    "Paragraph 3: 'the page may become more credible to enterprise evaluators while feeling heavier for self-serve users' — directional conversion claim without data",
+    "Final paragraph: 'the visible pattern typically signals a GTM pivot' — causal interpretation presented as pattern rule, not labelled as interpretation"
   ],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in the first sentence — meets SEO proper-noun requirement.",
-    "Section lacks quoted page elements (headlines, nav labels, H2s) that would provide long-tail search value for readers looking for Hootsuite-specific messaging changes."
+    "Company name 'Hootsuite' appears at word 1 (strong)",
+    "No proper noun in first 40 words after the opening — first re-mention is 'Hootsuite' implied by 'the page' references",
+    "Section contains search-useful phrases: 'headline rewritten', 'navigation overhaul', 'content structure' — all discoverable terms"
   ],
-  "rewriteInstruction": "Anchor every analytical statement to a specific piece of Hootsuite evidence: quote at least one headline, H2, or navigation label so the reader sees what actually changed. Remove the unsupported causal claim about cognitive load and drop-off risk in the second bullet, or reframe it as a CRO hypothesis ('a common risk when headline abstraction increases…'). Label the 'moving upmarket' interpretation explicitly as speculation ('the evidence is consistent with an upmarket shift, though…') or tie it to a quoted nav label that names enterprise workflows. Replace the hypothetical small-business / enterprise headline example with a description of the actual headline change. Ensure the SaaS founder takeaway is specific to Hootsuite's observed changes, not generic SaaS navigation advice.",
+  "rewriteInstruction": "Cut the draft to 180 words maximum. Remove paragraph 4 entirely (it only restates card data). In paragraph 2, choose ONE buyer scenario (self-serve OR enterprise) and deliver the conversion implication in 60 words. In paragraph 3, delete the closing restatement about credibility vs heaviness — end the paragraph after defining action-based vs category-based navigation. Move the final paragraph's GTM pivot conclusion to the messaging section or delete it. Replace 'can be read as' with a direct observation. Ensure every remaining paragraph includes either a conversion implication or a buyer psychology observation, not just a restatement of the summary card number.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "clarity": 13,
-    "specificity": 8,
+    "evidenceAccuracy": 18,
+    "clarity": 6,
+    "specificity": 9,
     "seoUsefulness": 7,
-    "croUsefulness": 7,
+    "croUsefulness": 6,
     "riskControl": 4,
-    "analysisDepth": 9
+    "analysisDepth": 5,
+    "editorialQuality": 3
   },
   "effectivePassThreshold": 85
 }

@@ -1,0 +1,38 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 2 contains an unsupported causation claim: 'repositioning a homepage under competitive pressure' — no evidence documents competitive pressure as the driver",
+    "Paragraph 2 states 'changes what the rest of the page must deliver' without buyer psychology or conversion implication — this is a descriptive observation, not analysis",
+    "No conversion implication present: the draft describes what changed but does not address what the change may mean for visitor action, drop-off, or decision stage",
+    "No buyer psychology analysis: the draft does not identify who the old vs new headline targets or what mental state/decision stage is served",
+    "Generic phrase 'SaaS founders can study when repositioning a homepage' could appear in any teardown article without modification",
+    "Paragraph 2 closes with a preview list ('messaging rewrite, navigation restructuring…') that adds no evidence or analysis — pure structural padding"
+  ],
+  "requiredFixes": [
+    "Remove the unsupported phrase 'under competitive pressure' from paragraph 2 — no evidence documents this",
+    "Add a conversion implication for at least one change: What might the new headline do to visitor continuation or drop-off? What decision stage does 'AI Agent era' address vs 'right moment'?",
+    "Add buyer psychology for the headline shift: Who is the 'AI Agent era' headline likely targeting vs 'Support customers at exactly the right moment'? Early adopters? IT buyers? Support ops teams?",
+    "Delete the closing preview list in paragraph 2 — it pads word count without adding evidence or analysis",
+    "Replace or augment 'changes what the rest of the page must deliver' with a specific conversion or trust observation — e.g., what proof burden does 'the only helpdesk' create for a visitor?"
+  ],
+  "riskFlags": [
+    "Causation claim: 'repositioning a homepage under competitive pressure' — no evidence documents competitive pressure as a driver"
+  ],
+  "seoNotes": [
+    "Company name 'Intercom' appears in the first 3 words — strong SEO anchor",
+    "Period '2023 to 2026' appears in the first sentence — time-specific signal for search"
+  ],
+  "rewriteInstruction": "Remove 'under competitive pressure' (unsupported). Add one conversion implication: what does the headline shift from outcome-timing to AI-category ownership mean for visitor continuation or proof burden? Add buyer psychology: identify who 'AI Agent era' likely targets vs 'right moment' (e.g., IT buyers, early adopters, support ops teams). Delete the closing preview list. Replace or augment 'changes what the rest of the page must deliver' with a specific trust or proof observation — for example, what evidence must the page now provide to support 'the only helpdesk' claim? Expand paragraph 1 with one analytical sentence that ties a documented change to a conversion or buyer-decision implication.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "clarity": 9,
+    "specificity": 12,
+    "seoUsefulness": 10,
+    "croUsefulness": 5,
+    "riskControl": 7,
+    "analysisDepth": 5,
+    "editorialQuality": 10
+  },
+  "effectivePassThreshold": 85
+}

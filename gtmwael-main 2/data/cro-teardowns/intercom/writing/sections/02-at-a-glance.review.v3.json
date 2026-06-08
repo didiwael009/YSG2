@@ -1,0 +1,40 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Purely descriptive section with minimal CRO analysis or buyer psychology",
+    "Generic observations that could apply to any homepage teardown without company-specific anchoring",
+    "No conversion implication beyond surface-level speculation about 'self-qualify' and 'choice paralysis'",
+    "Missing SaaS founder takeaway or actionable observation",
+    "No buyer audience identified for the headline change beyond vague 'audience signal'",
+    "Second paragraph exceeds 90 words without distinct second idea",
+    "Section reads as a restatement of the summary-card data rather than contextual narrative",
+    "No evidence of 'compositional restructuring' is provided — conclusion is interpretive but unlabelled"
+  ],
+  "requiredFixes": [
+    "Add at least one paragraph analyzing what the headline rewrite tells us about buyer psychology — who the old headline likely served vs. the new one (cite exact H1 copy from evidence if available, or state it is not provided)",
+    "Replace generic phrasing ('may affect who self-qualifies') with a conversion implication tied to a specific buyer stage or mental state",
+    "Anchor navigation change to a buyer journey observation: which buyer type benefits from fewer choices, which is harmed by missing product-category links",
+    "Add a SaaS founder takeaway: what can a founder learn from Intercom's approach to headline or navigation consolidation",
+    "Label the final interpretive claim ('compositional restructuring, not incremental refinement') as interpretation, or remove it if no evidence supports the distinction"
+  ],
+  "riskFlags": [
+    "'compositional restructuring, not incremental refinement' — interpretive conclusion not labelled as such, and not grounded in specific evidence beyond change counts"
+  ],
+  "seoNotes": [
+    "POSITIVE: 'Intercom' appears in first sentence",
+    "NEGATIVE: No company-specific proper noun (e.g., 'Intercom's Messenger' or 'Fin AI') appears in the opening 40 words to differentiate this teardown from a generic homepage audit"
+  ],
+  "rewriteInstruction": "Ground every observation in specific evidence from the data or state what is missing. Replace vague phrases like 'audience signal changed' with an analysis of who the old vs. new headline likely served (if H1 copy is not provided, note this gap). Anchor the navigation change to a buyer journey stage — explain which buyer type benefits from fewer choices and which loses a necessary entry point. Add a SaaS founder takeaway: what can a founder learn from Intercom's headline or navigation choices? Label the 'compositional restructuring' claim as interpretation or remove it. Cut the final paragraph — it summarizes what the section already said. Keep the section under 250 words and ensure every paragraph includes buyer psychology or conversion implication, not just change description.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "clarity": 8,
+    "specificity": 8,
+    "seoUsefulness": 7,
+    "croUsefulness": 5,
+    "riskControl": 7,
+    "analysisDepth": 5,
+    "editorialQuality": 8
+  },
+  "effectivePassThreshold": 85
+}

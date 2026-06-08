@@ -1,8 +1,7 @@
-Hootsuite's homepage changed most visibly between January 2023 and June 2026 in its primary headline, section headings, and navigation structure.
+Hootsuite's homepage changed most visibly between January 2023 and June 2026 in its primary headline, navigation architecture, and content structure.
 
-- The primary headline was fully rewritten, changing the audience signal the page projects to visitors arriving from search, paid, or direct traffic.
-- Section headings saw 15 new H2 elements added and 4 removed, representing a major content architecture overhaul that restructured how the page presents value and proof to different buyer segments.
-- Navigation items changed completely, with 8 labels added and 8 removed, altering the mental model visitors use to orient themselves and qualify whether the platform matches their needs.
-- The meta description was rewritten at least once during the period, changing the promise visitors read in search results before deciding to click through.
+- The primary headline was fully rewritten, shifting the audience signal in a way that may reflect a repositioning of buyer target or use-case framing.
+- Navigation structure saw a complete overhaul: 8 items added and 8 removed, indicating a fundamental change in how the product surface is organised for visitors.
+- Section headings changed dramatically — 15 added and 4 removed — suggesting the page moved from one content architecture to another, not incremental tweaks.
 
-Taken together, the visible changes suggest Hootsuite rebuilt the page's messaging hierarchy and navigation taxonomy, likely to address a shift in buyer profile or competitive positioning, though the exact business trigger cannot be inferred from the snapshots alone.
+Collectively, the evidence shows a homepage that was rebuilt rather than optimised.

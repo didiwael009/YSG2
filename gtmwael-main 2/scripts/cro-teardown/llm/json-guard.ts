@@ -18,6 +18,8 @@ export interface DimensionScores {
   riskControl: number;
   /** Phase 4M: CRO/GTM depth — buyer psychology, conversion implication, founder takeaway. */
   analysisDepth?: number;
+  /** Phase 4N: Editorial quality — compression, non-repetition, one-idea-per-paragraph. */
+  editorialQuality?: number;
 }
 
 export interface CriticResult {
@@ -74,8 +76,12 @@ function asStringArray(v: unknown): string[] {
 export function parseCriticResponse(raw: string): CriticResult {
   const jsonStr = extractJsonString(raw);
   if (!jsonStr) {
+    const last500 = raw.length > 500 ? raw.slice(-500) : '';
     throw new Error(
-      `Could not extract JSON from critic response.\nFirst 500 chars:\n${raw.slice(0, 500)}`,
+      `Could not extract JSON from critic response.\n` +
+      `Total length: ${raw.length} chars\n` +
+      `First 500:\n${raw.slice(0, 500)}\n` +
+      `Last 500:\n${last500}`,
     );
   }
 
@@ -110,6 +116,9 @@ export function parseCriticResponse(raw: string): CriticResult {
     };
     if (typeof ds.analysisDepth !== 'undefined') {
       baseScores.analysisDepth = toInt(ds.analysisDepth, 15);
+    }
+    if (typeof ds.editorialQuality !== 'undefined') {
+      baseScores.editorialQuality = toInt(ds.editorialQuality, 10);
     }
     dimensionScores = baseScores;
   }

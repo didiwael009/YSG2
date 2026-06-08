@@ -1,0 +1,38 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 1: 'conversion psychology from task-fit to platform evaluation' is interpretive but not labeled as interpretation",
+    "Paragraph 2: 'appears to serve upper-funnel visitors' is interpretive but not labeled",
+    "Paragraph 3: 'may read as positioning rather than value' is interpretive but not labeled",
+    "No explicit buyer audience identification for the old message beyond 'self-serve buyers'—lacks segment detail (SMB, product team, support team?)",
+    "The phrase 'can be read as' appears once in the evidence note but not in the draft itself; however, three unlabeled interpretations function as equivalents"
+  ],
+  "requiredFixes": [
+    "Label interpretive claims explicitly: prefix 'conversion psychology from task-fit to platform evaluation' with 'This framing shift can be interpreted as...' or equivalent",
+    "Label 'appears to serve upper-funnel visitors' with 'This change can be read as serving...' or 'may signal intent to...'",
+    "Identify a more specific buyer segment for the old message: Was it support ops teams, product managers, SMB self-serve buyers, or CS teams? The evidence mentions '25,000 global organizations'—does that imply enterprise or SMB scale?"
+  ],
+  "riskFlags": [
+    "Paragraph 1: 'shifts the conversion psychology' is stated as fact without labeling as interpretation",
+    "Paragraph 2: 'appears to serve upper-funnel visitors' is interpretive but presented as observation",
+    "Paragraph 3: 'may read as positioning rather than value' is hedged but the prior sentence creates proof burden as fact without data"
+  ],
+  "seoNotes": [
+    "Company name 'Intercom' appears in word 21 (first paragraph, second sentence)—not within first 40 words",
+    "Section includes specific quoted phrases ('Support customers at exactly the right moment', 'The only helpdesk designed for the AI Agent era') which aids topical relevance",
+    "Meta description analysis explicitly ties to search visitor behavior, which adds SEO context"
+  ],
+  "rewriteInstruction": "Label all three interpretive claims ('conversion psychology from task-fit to platform evaluation', 'appears to serve upper-funnel visitors', 'may read as positioning rather than value') with explicit hedging language such as 'This shift can be interpreted as...' or 'may signal...'. Tighten paragraph 3 to under 90 words by removing one clause or splitting into two sentences. Specify the buyer segment for the old message more precisely—support ops, CS team, product-led SMB buyers, or enterprise support directors—using context clues from the '25,000 global organizations' claim in the old meta description. Add company name 'Intercom' within the first 30 words of paragraph 1 to meet SEO threshold.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 10,
+    "specificity": 15,
+    "seoUsefulness": 7,
+    "croUsefulness": 10,
+    "riskControl": 4,
+    "analysisDepth": 10,
+    "editorialQuality": 7
+  },
+  "effectivePassThreshold": 85
+}

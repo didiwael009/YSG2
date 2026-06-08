@@ -165,6 +165,11 @@ interface QualitySummary {
   seoPass?:            boolean;
   finalRequiredFixes?: string[];
   seoRequiredFixes?:   string[];
+  // ── Phase 4N fields ────────────────────────────────────────────────────────
+  articleWordCount?:    number;
+  repetitionWarnings?:  string[];
+  editorialWarnings?:   string[];
+  overLengthWarning?:   string | null;
 }
 
 function buildQualitySummary(
@@ -175,6 +180,7 @@ function buildQualitySummary(
   sectionErrors: Array<{ section: string; error: string }>,
   judgeResult?: FinalJudgeResult | null,
   seoResult?:   SeoAuditResult   | null,
+  assemblerResult?: { wordCount: number; repetitionWarnings: string[]; editorialWarnings: string[]; overLengthWarning: string | null } | null,
 ): QualitySummary {
   const scored = results.filter(r => r.finalScore !== null);
   const averageScore =
@@ -223,6 +229,12 @@ function buildQualitySummary(
     base.seoScore         = seoResult.seoScore;
     base.seoPass          = seoResult.pass;
     base.seoRequiredFixes = seoResult.requiredFixes;
+  }
+  if (assemblerResult) {
+    base.articleWordCount   = assemblerResult.wordCount;
+    base.repetitionWarnings = assemblerResult.repetitionWarnings;
+    base.editorialWarnings  = assemblerResult.editorialWarnings;
+    base.overLengthWarning  = assemblerResult.overLengthWarning;
   }
 
   return base;
@@ -350,6 +362,18 @@ async function main(): Promise<void> {
     );
     if (assemblerResult.sectionsMissing.length > 0) {
       console.log(`  ⚠ Sections missing from article: ${assemblerResult.sectionsMissing.join(', ')}`);
+    }
+    if (assemblerResult.overLengthWarning) {
+      console.log(`  ⚠ ${assemblerResult.overLengthWarning}`);
+    }
+    for (const w of assemblerResult.repetitionWarnings) {
+      console.log(`  ⚠ Repetition: ${w}`);
+    }
+    if (assemblerResult.editorialWarnings.length > 0) {
+      console.log(`  ⚠ Editorial: ${assemblerResult.editorialWarnings.length} over-long paragraph(s)`);
+      for (const w of assemblerResult.editorialWarnings) {
+        console.log(`    • ${w}`);
+      }
     }
     appendRunLog(logPath, {
       step: 'assemble article-final.md',
@@ -497,7 +521,7 @@ async function main(): Promise<void> {
   // ── Persist reports ───────────────────────────────────────────────────────────
   const quality = buildQualitySummary(
     cli.slug, cli.mode, results, skipped, sectionErrors,
-    judgeResult, seoAuditResult,
+    judgeResult, seoAuditResult, assemblerResult,
   );
   saveJson(qualityPath, quality);
   saveJson(costPath,    tracker.toReport(cli.slug, cli.onlySection ?? 'all'));
