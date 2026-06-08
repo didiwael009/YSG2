@@ -1,22 +1,30 @@
 {
-  "score": 93,
+  "score": 88,
   "pass": true,
-  "issues": [],
-  "requiredFixes": [],
+  "issues": [
+    "Paragraph 2 uses 'appears to serve' without labeling it as interpretive inference",
+    "Phrase 'growth-stage companies comparing billing engines' introduces specificity not directly anchored in the evidence",
+    "Paragraph 3 contains 'may address the objection' — hedging is appropriate but occurs multiple times across the section",
+    "Minor: 'CFO or finance operator' persona is inferred, not named in evidence"
+  ],
+  "requiredFixes": [
+    "In paragraph 2, replace 'appears to serve' with 'can be read as serving' to label the inference explicitly",
+    "In paragraph 3, add 'This interpretation assumes...' before the objection analysis to strengthen risk control"
+  ],
   "riskFlags": [],
   "seoNotes": [
-    "Company name 'Stripe' appears in the first 40 words, satisfying SEO requirement",
-    "Multiple quoted value propositions provide searchable long-tail content",
-    "Specific timeline references (October 2022, June 2026) anchor the article in time"
+    "Company name 'Stripe' appears in first 15 words — strong SEO anchor",
+    "Section uses company-specific messaging quotes throughout, supporting keyword relevance for '[company] headline change' searches"
   ],
-  "rewriteInstruction": "",
+  "rewriteInstruction": "Strengthen interpretive labeling in paragraph 2 ('appears to serve' → 'can be read as serving') and add one explicit interpretive frame at the start of paragraph 3 ('This interpretation assumes…') to reinforce risk control. The section meets the SECTION GOAL and includes conversion implication, buyer psychology, and founder takeaway — no structural rewrite needed, only two targeted hedging improvements.",
   "dimensionScores": {
-    "evidenceAccuracy": 30,
-    "clarity": 19,
+    "evidenceAccuracy": 23,
+    "clarity": 14,
     "specificity": 15,
     "seoUsefulness": 10,
-    "croUsefulness": 14,
-    "riskControl": 5
+    "croUsefulness": 10,
+    "riskControl": 7,
+    "analysisDepth": 15
   },
   "effectivePassThreshold": 85
 }

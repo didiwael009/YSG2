@@ -1,22 +1,28 @@
 {
-  "score": 92,
+  "score": 88,
   "pass": true,
-  "issues": [],
-  "requiredFixes": [],
+  "issues": [
+    "The phrase 'Whether this shift increases conversions depends entirely on which buyer segment Hootsuite prioritized' is a hedge that adds no specificity — it states the obvious without evidence anchor.",
+    "Minor: 'runs through the entire page architecture' is unverified — the evidence shows headline + meta + H2/nav changes, but does not confirm every architectural layer was affected."
+  ],
+  "requiredFixes": [
+    "Replace the final sentence of paragraph 2 ('Whether this shift increases conversions depends entirely on...') with a specific observation tied to the evidence: e.g., 'The evidence available here — headline, meta description, and navigation — does not indicate which buyer segment drove the change or whether Hootsuite tested both messaging frames.'"
+  ],
   "riskFlags": [],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in first sentence (within first 12 words), meeting SEO requirement",
-    "Specific date range 'January 2023 and June 2026' provides temporal context early",
-    "Primary headline quote included in opening paragraph provides keyword-rich evidence anchor"
+    "Company name 'Hootsuite' appears in the first 8 words — strong SEO anchor.",
+    "Headline change is quoted verbatim in paragraph 1 — good for snippet harvesting.",
+    "Date range 'January 2023 and June 2026' appears early — temporal specificity aids search intent matching."
   ],
-  "rewriteInstruction": "",
+  "rewriteInstruction": "Replace the final sentence of paragraph 2 with a more evidence-grounded observation. Instead of 'Whether this shift increases conversions depends entirely on which buyer segment Hootsuite prioritized during this period,' write: 'The evidence available — headline, meta description, and navigation overhaul — does not reveal which buyer segment Hootsuite prioritized or whether the company tested both messaging frames before committing to the formal tone.' This keeps the risk control while removing the generic hedge.",
   "dimensionScores": {
-    "evidenceAccuracy": 30,
-    "clarity": 19,
+    "evidenceAccuracy": 24,
+    "clarity": 15,
     "specificity": 15,
     "seoUsefulness": 10,
-    "croUsefulness": 13,
-    "riskControl": 10
+    "croUsefulness": 9,
+    "riskControl": 10,
+    "analysisDepth": 15
   },
   "effectivePassThreshold": 85
 }

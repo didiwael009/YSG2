@@ -2,28 +2,31 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "The phrase 'These changes can be read as a deliberate repositioning' is hedged but does not specify what evidence supports the 'repositioning' interpretation beyond structural volume.",
-    "The final paragraph contains the phrase 'separated from assumptions about intent or outcome' which is meta-commentary on method rather than evidence-anchored preview.",
-    "The second paragraph uses 'suggesting the page architecture was rebuilt rather than incrementally adjusted' — this is an interpretation that could be stated more directly or omitted."
+    "Paragraph 2 is largely descriptive — it lists changes (navigation, meta description, page title) without conversion implication or buyer psychology until the very end.",
+    "The phrase 'reflects observable movement' in paragraph 3 is vague analytical padding — 'observable' adds no information, and 'movement' is generic.",
+    "Paragraph 3 contains 'may better qualify enterprise buyers' — a conversion implication — but does not explain why cognitive load would improve qualification or what the alternative hypothesis might be.",
+    "No founder takeaway is explicitly stated. The closing sentence promises breakdowns but does not offer a single actionable observation a SaaS founder could apply."
   ],
   "requiredFixes": [
-    "Replace 'These changes can be read as a deliberate repositioning' with a more precise observation: 'The breadth of these changes—headline rewrite, navigation overhaul, and section restructuring—occurred across the same period' to stay closer to the evidence without interpreting motive.",
-    "Revise the final sentence to preview specific sections or observations rather than describe methodology: 'The analysis below tracks shifts in the headline frame, navigation labels, and section hierarchy, using only the visible text and structure captured in each snapshot.'"
+    "Paragraph 2: After listing the meta description change, add one sentence explaining what dropping 'scale faster' may signal about buyer journey stage or intent — e.g., 'The removal of outcome language may indicate a shift from late-stage evaluation (where promises matter) to earlier discovery (where category clarity matters more).'",
+    "Paragraph 3: Replace 'reflects observable movement' with a direct statement — e.g., 'Stripe shifted from functional product positioning to platform positioning.'",
+    "Paragraph 3: Expand the cognitive load point — explain why a longer headline might improve enterprise qualification (e.g., 'The expanded headline creates more cognitive load but may filter out visitors seeking a narrow payments tool, leaving enterprise buyers who recognize the multi-product language as a signal of platform maturity')."
   ],
   "riskFlags": [],
   "seoNotes": [
-    "Company name 'Stripe' appears in the first 10 words, meeting the proper-noun SEO requirement.",
-    "The opening sentence includes concrete date anchors ('October 2022 and June 2026') and a measurable change ('33-word value proposition'), both useful for search intent around CRO case studies.",
-    "The phrase 'homepage messaging' appears early, aligning with likely query terms."
+    "Positive: 'Stripe' appears in the first eight words.",
+    "Positive: The headline change is quoted in full in paragraph 1, giving the section strong keyword density for 'Stripe homepage' and 'financial infrastructure'.",
+    "Positive: The section references five snapshots and a four-year period in the opening sentence, signaling longitudinal analysis depth to searchers."
   ],
-  "rewriteInstruction": "Tighten the second and third paragraphs by removing interpretive phrases ('can be read as', 'suggesting') and replacing them with direct evidence statements. In the final paragraph, replace the methodological aside ('separated from assumptions') with a concrete preview of what the reader will see in subsequent sections—e.g., specific navigation labels, section heading changes, or layout shifts. Ensure every sentence anchors to a named element or quoted phrase from the evidence.",
+  "rewriteInstruction": "Paragraph 2 lists several changes but waits until the end to interpret them. Move the interpretation forward: immediately after stating the meta description dropped 'scale faster,' explain what that signals (e.g., shift from outcome-promise to category-clarity, or from late-stage to early-stage messaging). In paragraph 3, replace 'reflects observable movement' with a direct claim ('Stripe shifted from...'). Expand the cognitive load sentence to explain *why* a longer headline might improve enterprise qualification (e.g., filters out narrow-use-case visitors, signals platform maturity). Add one sentence at the end that gives a SaaS founder a takeaway they can apply (e.g., 'For SaaS teams messaging a platform, this shift shows how expanding a headline's scope can segment buyers by sophistication — at the cost of early-stage clarity').",
   "dimensionScores": {
-    "evidenceAccuracy": 28,
-    "clarity": 18,
+    "evidenceAccuracy": 25,
+    "clarity": 13,
     "specificity": 15,
     "seoUsefulness": 10,
-    "croUsefulness": 12,
-    "riskControl": 10
+    "croUsefulness": 9,
+    "riskControl": 10,
+    "analysisDepth": 6
   },
   "effectivePassThreshold": 85
 }

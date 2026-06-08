@@ -1,8 +1,11 @@
-Stripe fully rewrote its homepage headline between October 2022 and June 2026, alongside structural changes to navigation and section organization across five snapshots.
+Stripe's homepage changed most visibly between October 2022 and June 2026 in its primary headline, navigation structure, and section architecture — with every major orientation element rewritten at least once across five snapshots.
 
-- The primary headline was fully rewritten with a documented change in audience signal, though the evidence does not preserve the specific before-and-after wording or identify which audience attributes shifted.
-- Section headings saw 5 additions and 4 removals, indicating the homepage body was reorganized at least once during the period—the summary card labels this as "significant structure changes."
-- Navigation items changed substantially: 6 were added and 8 were removed, resulting in a net reduction of 2 menu options by June 2026.
-- The CTA layer saw equal churn—10 additions and 10 removals—producing no net change in total CTA count, though the individual buttons and their placements may have shifted.
+- The primary headline was fully rewritten, with the evidence noting "Audience signal changed" — the old headline may have served self-serve developers looking for API clarity, while the new one appears to target business decision-makers evaluating payment infrastructure at scale.
 
-The headline rewrite and navigation overhaul occurred within the same four-year window, which can be read as coordinated repositioning rather than isolated tweaks: changes to the top-level message, menu structure, and page organization suggest a deliberate redesign effort rather than incremental drift. Taken together, the visible changes show Stripe altered the homepage's structural and messaging layers while maintaining a consistent number of calls-to-action.
+- Navigation saw eight items removed and six added, a net reduction of two top-level choices that can be read as consolidation of Stripe's product portfolio presentation — fewer top-level menu options may help enterprise buyers compare platform capabilities without hunting, but can also hide developer-specific entry points that technical users expect to find immediately.
+
+- Section headings changed with five additions and four removals, indicating the page was restructured rather than incrementally refined — the evidence shows "Significant structure changes" that go beyond visual polish.
+
+- The meta description and title tag both changed, altering the search-result promise that determines whether a visitor clicks through from Google in the first place.
+
+Taken together, the visible changes suggest Stripe's homepage evolved from a developer-first entry point to a platform-credibility page, with each snapshot reflecting a materially different information architecture rather than iterative optimization of a stable template.

@@ -2,32 +2,35 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "Paragraph 2 opens with a vague cluster observation ('The removed CTAs cluster around self-service exploration') without grounding the reader in the specific removed items first",
-    "Phrase 'engage-and-qualify' is pattern-naming without a direct evidence anchor explaining what observable change supports this label",
-    "Paragraph 4 uses 'appears to have moved' without hedging the interpretation—this is a conclusion drawn from H2 evidence but not labelled as interpretive",
-    "The term 'browse-and-convert' is not defined or tied to a specific removed CTA in the evidence"
+    "Paragraph 2 includes an unsupported interpretation: 'which can slow decision-making when the visitor isn't sure which path matches their need' — no evidence shows this outcome occurred",
+    "Paragraph 3 contains a subtle causation suggestion: 'whether the CTA friction increase is justified or just adds scroll distance without conversion payoff' — frames H2 additions as causing friction without evidence",
+    "Final paragraph includes an unlabelled interpretation: 'visitors who qualify for self-serve may wonder if they should book a demo instead' — this is buyer psychology inference, not observed behavior",
+    "Minor hedging: 'can work if' and 'may' appear three times, but all instances are meaningful and not mechanical"
   ],
   "requiredFixes": [
-    "In paragraph 2, replace 'The removed CTAs cluster around self-service exploration' with a sentence that names at least two specific removed CTAs before summarizing the cluster pattern",
-    "Replace 'engage-and-qualify' with a phrase that describes the observable change (e.g., 'a mix of relationship and content CTAs') and then label the strategic interpretation separately"
+    "In paragraph 2, replace 'which can slow decision-making when the visitor isn't sure which path matches their need' with a labeled interpretation: 'This shift — from outcome-oriented to capability-oriented navigation — can be read as a move toward comprehensiveness over conversion clarity, though the impact on buyer journey speed isn't directly measurable from the archive.'",
+    "In paragraph 3, replace 'whether the CTA friction increase is justified or just adds scroll distance without conversion payoff' with: 'Whether these additional trust-building sections reduce bounce or simply add scroll distance would require session recording or funnel analytics.'",
+    "In final paragraph, add an explicit interpretation label before 'visitors who qualify for self-serve may wonder...': 'One conversion risk — not directly observable from static snapshots — is that visitors who qualify for self-serve may wonder...'"
   ],
   "riskFlags": [
-    "'The shift can be read as an expansion from a trial-focused funnel to one accommodating multiple user intents' — this interpretation is hedged but could be strengthened by explicitly stating it is one possible reading among others",
-    "'The homepage appears to have moved from featuring discrete stories and trend reports to positioning itself as a comprehensive solution' — this conclusion is not hedged and reads as fact rather than interpretation"
+    "Paragraph 2: 'which can slow decision-making' is an outcome claim without supporting evidence",
+    "Paragraph 3: 'whether the CTA friction increase is justified' implies a causal link (H2 additions → friction increase) not proven by the evidence",
+    "Paragraph 4: 'visitors who qualify for self-serve may wonder if they should book a demo instead' is buyer psychology inference presented as likely outcome"
   ],
   "seoNotes": [
-    "Positive: 'Hootsuite' appears in the first 13 words, satisfying the SEO anchor requirement",
-    "Positive: Company-specific proper nouns ('G2,' 'TikTok') and quoted CTAs throughout improve search relevance for this specific teardown",
-    "Neutral: Section could benefit from one more named page element in the opening paragraph (e.g., 'hero CTA' or 'footer link') to increase specificity"
+    "POSITIVE: 'Hootsuite' appears in first 15 words",
+    "POSITIVE: Company-specific evidence ('Start free trial', 'Request a demo', 'G2's #1 best software product for 2026') anchors every paragraph",
+    "POSITIVE: Section is keyword-rich for 'CTA evolution' and 'SaaS homepage conversion' searchers"
   ],
-  "rewriteInstruction": "Strengthen paragraph 2 by opening with two specific removed CTAs before summarizing the cluster. Replace pattern labels like 'engage-and-qualify' and 'browse-and-convert' with observable descriptions (e.g., 'a mix of demo requests and affiliate links' vs. 'explore and trial prompts'), then add a sentence labelling the strategic interpretation. In paragraph 4, hedge the conclusion about comprehensive positioning ('this pattern is consistent with…' rather than 'appears to have moved').",
+  "rewriteInstruction": "Strengthen risk control by labeling three interpretive inferences: (1) In paragraph 2, flag the 'slow decision-making' claim as an interpretation, not an observed outcome. (2) In paragraph 3, separate the 'CTA friction increase' observation from the 'scroll distance vs conversion payoff' speculation — mark the latter as unmeasurable from static evidence. (3) In paragraph 4, prepend the 'visitors may wonder' sentence with 'One conversion risk — not directly observable from snapshots — is that'. These three edits will move the section from 88 to 92+ by eliminating unlabelled outcome claims while preserving the strong buyer psychology and conversion architecture analysis already present.",
   "dimensionScores": {
-    "evidenceAccuracy": 28,
-    "clarity": 18,
-    "specificity": 14,
+    "evidenceAccuracy": 20,
+    "clarity": 15,
+    "specificity": 15,
     "seoUsefulness": 10,
-    "croUsefulness": 12,
-    "riskControl": 6
+    "croUsefulness": 9,
+    "riskControl": 4,
+    "analysisDepth": 15
   },
   "effectivePassThreshold": 85
 }

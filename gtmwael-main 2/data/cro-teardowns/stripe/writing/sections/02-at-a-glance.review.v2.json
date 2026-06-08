@@ -1,38 +1,42 @@
 {
-  "score": 82,
+  "score": 78,
   "pass": false,
   "issues": [
-    "Opening sentence uses passive construction ('underwent') and buries the company name after 'Stripe's homepage between October 2022 and June 2026' — SEO signal delayed",
-    "Paragraph 1 includes speculative examples ('developer-focused to business-focused messaging, from startup to enterprise positioning, or another audience pivot') that are not present in the evidence and add no analytical value",
-    "The phrase 'can be read as' appears once in the final paragraph, which is within the acceptable threshold but still represents interpretive hedging",
-    "Bullet point about meta description and title changes acknowledges the absence of specific wording but includes the observation anyway, creating a non-actionable statement",
-    "Final sentence introduces a CTA stability claim ('action-layer remained relatively stable') that is an interpretation not explicitly supported by the evidence — the evidence shows 10 added and 10 removed, but does not characterize this as stability",
-    "The section does not clearly achieve the goal of 'contextualising the summary-card numbers' — it mostly restates them with minor commentary rather than providing narrative context"
+    "Paragraph 2 contains unsupported causal and conversion claims: 'directly affects whether a new visitor understands relevance within three seconds' has no evidence anchor for the three-second threshold or conversion impact.",
+    "The phrase 'decision paralysis for business buyers' introduces a psychological claim with no supporting evidence from the snapshots.",
+    "The phrase 'may add friction for technical users who arrived looking for a specific API' is speculative and not traced to visitor behavior data.",
+    "Paragraph 3 claims 'Stripe treated the homepage as a variable surface' — a characterization not supported by evidence of intent or strategy.",
+    "The phrase 'product portfolio sprawl' does not appear in the evidence and introduces an external judgment.",
+    "Section lacks any quoted headline text, navigation item name, or section heading label — all company-specific evidence is available but unused.",
+    "No buyer audience is explicitly named in relation to the old vs. new messaging — the evidence notes 'Audience signal changed' but the draft does not identify who.",
+    "The phrase 'can be read as' appears once, but the entire second paragraph is filled with speculative modal verbs ('may reflect', 'may add', 'can reduce') that hedge without tracing back to specific evidence items.",
+    "No conversion implication is tied to a specific page element — all psychological claims are generic (decision paralysis, friction, relevance windows)."
   ],
   "requiredFixes": [
-    "Move 'Stripe' to within the first 8 words of the opening sentence to improve SEO signal",
-    "Remove speculative audience-segment examples from the first bullet point — replace with a factual statement that the evidence confirms a signal change but does not specify the nature of that change",
-    "Delete or consolidate the bullet point about meta description and title changes — if the specific wording is not in the evidence, the observation adds no value to a reader",
-    "Replace the interpretation 'action-layer remained relatively stable' with a factual observation: '10 CTAs were added and 10 removed, resulting in no net change in CTA count'",
-    "Add at least one sentence that provides narrative context for why a reader scanning the article would care about these numbers — for example, connecting the headline rewrite to the navigation overhaul as part of a coordinated change"
+    "Replace 'directly affects whether a new visitor understands relevance within three seconds' with a statement grounded in evidence: describe what the headline change WAS (e.g., from X to Y) and what that shift signals, without claiming conversion impact.",
+    "Remove or rewrite 'decision paralysis for business buyers' and 'friction for technical users' unless you can trace these observations to specific navigation item names or section headings in the evidence.",
+    "Add at least one quoted phrase or named element from the snapshots (e.g., a headline fragment, a navigation item, a section heading) to anchor the analysis in company-specific evidence.",
+    "Identify the buyer audience shift explicitly: who did the old headline serve, and who does the new one target? The evidence notes 'Audience signal changed' — use that.",
+    "Remove the phrase 'product portfolio sprawl' or replace with evidence-based language (e.g., 'the net reduction from 8 removed and 6 added navigation items')."
   ],
   "riskFlags": [
-    "The claim that the 'action-layer remained relatively stable' is an unlabelled interpretation — the evidence shows equal CTA additions and removals but does not characterize the meaning of that pattern",
-    "First bullet speculates on audience pivot types (developer vs. business, startup vs. enterprise) without evidence, creating invented examples that could mislead the reader about what the data contains"
+    "'directly affects whether a new visitor understands relevance within three seconds' — unsupported conversion claim and invented threshold.",
+    "'decision paralysis' and 'friction' are psychological constructs introduced without evidence.",
+    "'Stripe treated the homepage as a variable surface' — intent claim with no supporting evidence of strategy or decision-making."
   ],
   "seoNotes": [
-    "Company name 'Stripe' does not appear in the first 40 words — it appears at word 1 but is immediately followed by a long prepositional phrase ('between October 2022 and June 2026') that delays the main clause",
-    "No proper noun in the opening 8 words reduces headline scan value for a reader arriving from search",
-    "The phrase 'homepage teardown' does not appear in the section, missing an opportunity to reinforce the article's search intent"
+    "Company name 'Stripe' appears in the first 12 words — strong SEO anchor.",
+    "No specific headline text or navigation item is quoted, reducing long-tail keyword value for readers searching for Stripe's actual messaging."
   ],
-  "rewriteInstruction": "Move the company name and the core observation into the first 10 words (e.g., 'Stripe fully rewrote its homepage headline between October 2022 and June 2026'). Remove all speculative examples about audience segments that are not in the evidence. Delete the meta/title bullet or rewrite it to state only what changed (that they changed) without lamenting the absence of detail. Replace the 'action-layer remained stable' interpretation with a neutral factual statement about CTA churn. Add one sentence that explains why these four summary-card metrics together matter — for example, that the headline, structure, and navigation all changed in concert, signaling a deliberate repositioning rather than isolated tweaks. Ensure every bullet anchors to a specific evidence item and avoid hedging unless the interpretive gap is genuinely meaningful.",
+  "rewriteInstruction": "Rewrite to anchor every analytical claim in a specific piece of evidence. Paragraph 1 is acceptable. In paragraph 2, replace the three-second claim and decision-paralysis language with a description of what the headline change and navigation consolidation WERE (use actual item names or headline fragments if available in the snapshots), then state what that shift signals for buyer audience — avoid causal or conversion-impact claims. In paragraph 3, name at least one removed or added navigation item to make the portfolio-consolidation observation specific to Stripe. Add a buyer-audience identification: who did the old structure serve, and who does the new one target? Remove 'product portfolio sprawl' and replace with evidence-based language. Ensure at least one quoted phrase or named page element appears in the section to meet the specificity requirement.",
   "dimensionScores": {
-    "evidenceAccuracy": 23,
-    "clarity": 16,
-    "specificity": 12,
-    "seoUsefulness": 6,
-    "croUsefulness": 13,
-    "riskControl": 10
+    "evidenceAccuracy": 15,
+    "clarity": 13,
+    "specificity": 8,
+    "seoUsefulness": 9,
+    "croUsefulness": 6,
+    "riskControl": 4,
+    "analysisDepth": 8
   },
   "effectivePassThreshold": 85
 }

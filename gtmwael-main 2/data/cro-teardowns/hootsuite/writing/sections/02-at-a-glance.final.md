@@ -1,9 +1,9 @@
-Hootsuite's homepage underwent continuous revision across 7 snapshots captured between Jan 2023 and Jun 2026, with the primary headline rewritten to target a different audience segment. The summary card describes this as an "audience signal changed," which can be read as a shift in the visitor profile Hootsuite chose to address in its opening message.
+Hootsuite's homepage changed most visibly between January 2023 and June 2026 in its primary headline, section-heading architecture, and navigation taxonomy — shifts observable across seven snapshots covering a three-year period.
 
-The content architecture changed substantially across the period:
+- The primary headline was fully rewritten during the period. The evidence does not include the exact headline text from either snapshot, but the summary-cards note the "audience signal changed." In CRO terms, a headline rewrite can shift the mental model a visitor forms in the first three seconds — whether the page solves for individual workflow speed or multi-team platform credibility. SaaS founders can observe: headline repositioning without corresponding proof architecture creates a trust gap.
 
-- 15 new H2 section headings appeared while 4 were removed, a net addition of 11 structural content blocks
-- 8 navigation items were added and 8 removed, meaning the entire top-level navigation was replaced rather than incrementally adjusted
-- 10 CTA elements were added and 10 removed, indicating that calls-to-action were repositioned or rewritten rather than simply appended
+- Section headings underwent substantial restructuring: 15 new H2 elements added, 4 removed. This volume of change is consistent with a content architecture overhaul, likely aimed at supporting different buyer qualification paths. A common risk when section structure changes this extensively: self-serve visitors who arrived to solve one narrow problem may find themselves scanning unfamiliar category labels instead of workflow outcomes.
 
-At least one mid-transition snapshot exists in the dataset, meaning the homepage did not jump directly from its January 2023 state to its June 2026 configuration. The 4:15 ratio of removed-to-added H2 headings may suggest Hootsuite expanded the scope of topics covered on the homepage rather than condensing or streamlining its messaging.
+- Navigation items changed completely — 8 labels added, 8 removed. The evidence does not specify whether the new labels are action-based ("Schedule Posts") or category-based ("Platform"), but the volume of change suggests a full navigation taxonomy replacement. The CRO implication: navigation redesigns can improve enterprise qualification while increasing friction for users who relied on the old mental model.
+
+Taken together, the visible changes suggest a homepage repositioning effort, though the snapshots alone cannot confirm whether the driver was sales-cycle adjustment, product-platform expansion, or buyer-segment prioritization.

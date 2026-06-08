@@ -2,32 +2,30 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "Paragraph 2 uses 'observed shift' redundantly with 'may suggest' in paragraph 1—both hedge the same interpretation",
-    "Final sentence in paragraph 3 ('The pattern across both H2 and CTA changes points toward...') aggregates evidence but does not label it as interpretation",
-    "The phrase 'consistent with a strategy prioritizing education and social proof' in paragraph 2 is interpretive but not hedged",
-    "Minor padding: 'which appeared in zero CTAs in the October 2022 snapshot' adds redundant qualifier"
+    "Paragraph 2: 'The CRO implication is that the page now carries a heavier burden' is an interpretive leap not explicitly grounded in evidence—no snapshot data confirms this burden was realized or measured",
+    "Paragraph 3: 'This can reduce perceived friction for casual visitors' introduces a visitor segment ('casual visitors') not present in the evidence",
+    "Paragraph 3: 'requires either smart onboarding or a well-staffed SDR team' is speculation about Stripe's internal operations, not observable from homepage evidence"
   ],
   "requiredFixes": [
-    "Label the final sentence in paragraph 3 with interpretive language (e.g., 'This pattern can be read as...') to avoid presenting an inference as fact",
-    "Replace 'is consistent with a strategy prioritizing' in paragraph 2 with 'may suggest a strategy prioritizing' or similar hedge"
+    "Paragraph 2: Replace 'The CRO implication is that the page now carries a heavier burden' with 'The evidence suggests the page may now need to serve a broader buying committee, which would require...' to mark the interpretation clearly",
+    "Paragraph 3: Remove or qualify 'casual visitors'—specify which visitor behavior this refers to, or replace with 'visitors exploring without immediate purchase intent' tied to the content CTAs observed"
   ],
   "riskFlags": [
-    "Unlabelled interpretation: 'is consistent with a strategy prioritizing education and social proof over immediate product selection' (paragraph 2)",
-    "Unlabelled interpretation: 'The pattern across both H2 and CTA changes points toward broader audience targeting' (paragraph 3)"
+    "Paragraph 2: 'That requires more proof of business outcomes, customer logos in relevant verticals, and use-case clarity' states requirements as fact without evidence these elements were added or tested"
   ],
   "seoNotes": [
-    "Positive: 'Stripe' appears in first sentence, within the first 20 words",
-    "Positive: Specific dated range ('October 2022 and June 2026') appears early, anchoring the teardown timeframe",
-    "Positive: Quoted headings and CTAs provide search-friendly, company-specific phrases"
+    "Positive: 'Stripe' appears in paragraph 1, sentence 3 within the first 40 words of analysis",
+    "Positive: Company-specific CTAs ('Get started,' 'Contact Sales,' 'Request an invite') anchor the analysis to this teardown"
   ],
-  "rewriteInstruction": "Label the two unlabelled interpretations in paragraphs 2 and 3. In paragraph 2, replace 'is consistent with a strategy' with 'may suggest a strategy' or 'can be read as indicating a strategy.' In paragraph 3, change 'The pattern across both H2 and CTA changes points toward' to 'This pattern can be read as a move toward' or similar hedged phrasing. Remove or integrate the redundant qualifier 'which appeared in zero CTAs in the October 2022 snapshot' (the absence is already clear from context). Ensure every interpretive claim is explicitly marked as such.",
+  "rewriteInstruction": "Tighten paragraph 2's 'CRO implication' sentence to label it as interpretation, not observed fact. In paragraph 3, remove the unsupported 'casual visitors' segment and the speculation about SDR teams—replace with observable homepage behavior (e.g., 'visitors who engage with content CTAs before signup'). Ensure every analytical claim traces to a specific CTA or H2 change from the evidence list.",
   "dimensionScores": {
-    "evidenceAccuracy": 29,
-    "clarity": 18,
+    "evidenceAccuracy": 20,
+    "clarity": 14,
     "specificity": 15,
     "seoUsefulness": 10,
-    "croUsefulness": 13,
-    "riskControl": 3
+    "croUsefulness": 10,
+    "riskControl": 7,
+    "analysisDepth": 12
   },
   "effectivePassThreshold": 85
 }

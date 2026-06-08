@@ -1,33 +1,38 @@
 {
-  "score": 83,
+  "score": 78,
   "pass": false,
   "issues": [
-    "The phrase 'which can be read as coordinated repositioning' in the final paragraph is a mechanical hedge rather than a meaningful interpretive qualifier—the evidence already supports a multi-layer change pattern without needing the 'can be read as' construction.",
-    "The bullet point about CTA churn ('10 additions and 10 removals') is accurate but offers no observable signal beyond arithmetic—it does not advance the reader's understanding of what changed or why it matters for CRO analysis.",
-    "The second sentence of the final paragraph ('changes to the top-level message, menu structure, and page organization suggest a deliberate redesign effort rather than incremental drift') edges toward interpretive territory without a clear evidence anchor—nothing in the summary-cards explicitly distinguishes 'deliberate redesign' from 'incremental drift' timing.",
-    "The opening sentence does not include the company name within the first 40 words (it appears at word 2, which is good), but it could be strengthened by embedding the URL or a product-category signal earlier for SEO crawlers."
+    "Paragraph 2: 'self-serve developers looking for API clarity' and 'business decision-makers evaluating payment infrastructure at scale' are invented buyer personas not present in the evidence; evidence only states 'Audience signal changed'",
+    "Paragraph 3: 'enterprise buyers compare platform capabilities' and 'technical users expect to find immediately' are unsupported audience claims",
+    "Paragraph 3: 'can be read as consolidation' is mechanical hedging that does not cover a meaningful interpretive gap — the evidence shows only a net count change",
+    "Paragraph 5: 'developer-first entry point to a platform-credibility page' is an unsupported interpretation; evidence does not characterize the old or new page in these terms",
+    "Paragraph 5: 'each snapshot reflecting a materially different information architecture rather than iterative optimization' is a causal interpretation without evidence of the design intent or process",
+    "No company-specific proper noun (Stripe) appears in the first 40 words"
   ],
   "requiredFixes": [
-    "Remove or replace the 'which can be read as coordinated repositioning' phrase in the final paragraph—state the observable pattern directly: 'The headline rewrite and navigation overhaul occurred within the same four-year window, alongside structural changes to section headings.'",
-    "Delete or reframe the CTA bullet point to focus on what is observable: either note that the evidence does not preserve CTA text/placement details, or remove the bullet entirely if it adds no CRO-relevant signal.",
-    "In the final paragraph, replace 'suggest a deliberate redesign effort rather than incremental drift' with language grounded in the evidence—e.g., 'the simultaneous changes to headline, navigation, and section structure indicate multi-layer revision within the documented period.'"
+    "Remove or attribute all buyer-persona claims in paragraph 2 ('self-serve developers,' 'business decision-makers') — evidence only states 'Audience signal changed'; rewrite to say: 'The evidence notes the audience signal changed, though the specific old and new target personas are not specified in the snapshot data'",
+    "Replace paragraph 3's enterprise/technical-user claims with evidence-grounded observation: 'Navigation saw eight items removed and six added — a net reduction that simplifies the top-level menu, though the evidence does not specify which buyer type benefited or which entry points were hidden'",
+    "Remove the 'developer-first to platform-credibility' framing in paragraph 5 unless it can be tied to a specific quoted phrase or dated change in the evidence",
+    "Move 'Stripe' into the first sentence: 'Stripe's homepage changed most visibly…' → 'Between October 2022 and June 2026, Stripe's homepage…' to satisfy SEO proper-noun requirement"
   ],
   "riskFlags": [
-    "The phrase 'suggest a deliberate redesign effort rather than incremental drift' implies causal intent without evidence distinguishing planned vs. emergent changes."
+    "Paragraph 2: 'self-serve developers' and 'business decision-makers' are invented personas not present in evidence",
+    "Paragraph 3: 'enterprise buyers' and 'technical users' are unsupported audience claims",
+    "Paragraph 5: 'developer-first entry point to a platform-credibility page' is an unsupported characterization of before/after state"
   ],
   "seoNotes": [
-    "Positive: 'Stripe' appears in the first sentence (word 2), meeting the proper-noun requirement.",
-    "Positive: The section includes specific time anchors ('October 2022 and June 2026') and quantitative details ('5 snapshots', '6 added · 8 removed') that help crawlers understand the content scope.",
-    "Opportunity: The opening sentence could embed the company URL or a product-category phrase ('payment infrastructure provider Stripe') to strengthen entity recognition."
+    "Negative: No company-specific proper noun (Stripe) appears in the first 40 words; first mention is at word 1 but the sentence structure buries it",
+    "Positive: Date range and change type ('headline,' 'navigation,' 'section architecture') appear early, matching likely search intent"
   ],
-  "rewriteInstruction": "Revise the final paragraph to remove the 'can be read as' hedge and the 'deliberate redesign effort' interpretation—state the multi-layer change pattern as an observable fact anchored to the evidence. Either delete the CTA bullet point or reframe it to note that equal churn (10 additions, 10 removals) masks individual button changes not preserved in the summary-card data. Ensure every interpretive phrase traces directly to a summary-card metric or note. The section is close to threshold but needs tighter evidence discipline in the closing synthesis.",
+  "rewriteInstruction": "Rewrite to eliminate all invented buyer personas (self-serve developers, business decision-makers, enterprise buyers, technical users) and replace with evidence-grounded observations tied to the snapshot data. For paragraph 2, state only that the audience signal changed per the evidence, and note that the specific old/new personas are not visible in the snapshot metadata. For paragraph 3, describe the navigation net reduction without claiming which buyer type benefited. For paragraph 5, remove the 'developer-first to platform-credibility' framing unless you can anchor it to a specific quoted element from the evidence. Add one sentence to paragraph 4 explaining what a meta-description change means for click-through from Google (conversion implication). Move 'Stripe' earlier in the opening sentence to satisfy the SEO proper-noun rule. Retain the structural observations (five snapshots, net changes) as these are accurate.",
   "dimensionScores": {
-    "evidenceAccuracy": 27,
-    "clarity": 18,
-    "specificity": 14,
-    "seoUsefulness": 9,
-    "croUsefulness": 9,
-    "riskControl": 6
+    "evidenceAccuracy": 10,
+    "clarity": 13,
+    "specificity": 10,
+    "seoUsefulness": 7,
+    "croUsefulness": 6,
+    "riskControl": 4,
+    "analysisDepth": 10
   },
   "effectivePassThreshold": 85
 }

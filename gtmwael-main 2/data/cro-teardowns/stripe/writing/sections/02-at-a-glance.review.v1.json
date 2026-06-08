@@ -1,39 +1,40 @@
 {
-  "score": 72,
+  "score": 68,
   "pass": false,
   "issues": [
-    "Fourth bullet point claims meta description and page title changed but provides no evidence anchor — this is filler padding",
-    "Opening sentence is generic and could appear in any SaaS teardown with similar summary-card numbers",
-    "Phrase 'incrementally adjusted' in final paragraph is interpretive but unlabelled — reader doesn't know this is the analyst's conclusion",
-    "No company-specific proper noun (Stripe) in the first 40 words; 'Stripe's' appears at word 1 but the next 39 words are generic date/change commentary",
-    "Final paragraph contains two interpretive phrases ('rewritten rather than incrementally adjusted', 'structural changes... rather than isolated tweaks') with no hedging or attribution — these are conclusions presented as observable fact",
-    "Bullet 1 unnecessarily signals absence of evidence ('not provided in the evidence') — this is meta-commentary that should be omitted",
-    "The section does not contextualise *why* these numbers matter or what pattern they reveal — it restates the card values without narrative interpretation"
+    "Entire section is purely descriptive with no conversion implication, buyer psychology, or trust analysis",
+    "No company-specific proper noun appears in first 40 words (SEO penalty)",
+    "Paragraph 2 (bullet list) contains no analysis — just restates the summary cards",
+    "Final paragraph uses vague interpretation ('major structural pivot') without linking to conversion impact or buyer decision stage",
+    "No SaaS founder takeaway — nothing a founder could study or apply",
+    "Missing buyer audience identification — no mention of who the old vs new headlines/navigation served",
+    "No conversion implication — does not address what these changes may mean for visitor action or drop-off",
+    "Section could apply to any enterprise SaaS company homepage with structural changes"
   ],
   "requiredFixes": [
-    "Remove fourth bullet entirely — it restates summary-card absence without adding context",
-    "Rewrite opening sentence to contain a company-specific observable: e.g., 'Stripe replaced its October 2022 headline targeting developers with messaging aimed at [audience X] by June 2026' (if known), or anchor to a specific H2 change",
-    "Label the final paragraph's interpretation explicitly: 'This pattern *suggests* a homepage rewrite' or 'These changes *can be read as* a structural overhaul'",
-    "Add one sentence that explains what 'audience signal changed' means in context — does this refer to developer → CFO, SMB → enterprise, or something else? If unknown, state the interpretive gap",
-    "Cut the meta-commentary in bullet 1 ('though the specific before-and-after text is not provided') — either cite the evidence or omit the claim"
+    "Add conversion implication in paragraph 1: what does a fully rewritten headline + navigation overhaul mean for visitor comprehension on arrival?",
+    "Insert buyer psychology: who did the removed navigation labels likely serve vs. the added labels? (e.g., technical buyers vs. business decision-makers)",
+    "Replace bullet list with analytical prose: why would Stripe remove 8 nav items and add 6? What product portfolio or GTM shift does that signal?",
+    "Add SaaS founder takeaway: 'For SaaS teams rethinking homepage IA, Stripe's 8-removed-6-added navigation pattern suggests [specific implication]'",
+    "Move 'Stripe' to first 15 words to satisfy SEO specificity requirement",
+    "Final paragraph must connect 'major structural pivot' to a buyer outcome or conversion friction point — e.g., does new IA reduce choice paralysis for multi-product platforms?"
   ],
   "riskFlags": [
-    "'Collectively, the evidence shows a homepage that was rewritten rather than incrementally adjusted' — presented as fact, but this is an interpretation of the change pattern",
-    "'with structural changes affecting... rather than isolated tweaks' — causal/pattern claim without hedging language"
+    "Final sentence claims 'materially different content hierarchy and visitor entry experience' but does not cite evidence of what the old vs new hierarchy prioritised"
   ],
   "seoNotes": [
-    "Company name appears at word 1, but the next 39 words are generic (date range, abstract change categories) — no Stripe-specific detail until past word 40",
-    "No long-tail keyword signal (e.g., 'Stripe homepage headline', 'Stripe navigation redesign') in the opening 50 words",
-    "Section reads like internal documentation rather than a narrative a searcher would find useful"
+    "Company name 'Stripe' does not appear until word 1 — good for brand signal but no proper noun in first 40 words for CRO teardown SEO context",
+    "Section lacks secondary keyword opportunities (e.g., 'B2B SaaS navigation', 'homepage IA', 'conversion-focused headline')"
   ],
-  "rewriteInstruction": "Ground the opening sentence in a single, specific observable change (e.g., a quoted headline fragment, a named navigation item, or a dated H2 shift) rather than a generic summary of the card values. Remove the fourth bullet point entirely — it adds no evidence. Label all interpretive conclusions in the final paragraph ('This pattern suggests...', 'These changes can be read as...') to distinguish observation from inference. Add one sentence explaining what 'audience signal changed' means — if the evidence doesn't specify, acknowledge the gap explicitly. Your goal is to tell the reader *what happened* in company-specific terms, not to restate the summary-card numbers in paragraph form.",
+  "rewriteInstruction": "Rewrite to add conversion and buyer psychology analysis. Paragraph 1 should state what a fully rewritten headline + navigation overhaul means for visitor comprehension on arrival (e.g., does it reduce time-to-relevance or shift positioning?). Bullet section must become prose that interprets the 8-removed-6-added navigation pattern — what product portfolio or GTM shift does that signal, and which buyer persona does it serve? Final paragraph must connect 'major structural pivot' to a conversion outcome: does the new IA reduce choice paralysis for multi-product platforms, or does it signal a shift from developer-first to business-buyer-first messaging? Add a SaaS founder takeaway: 'For SaaS teams managing product portfolio sprawl, Stripe's navigation consolidation pattern suggests [specific implication].' Move 'Stripe' to the first 15 words for SEO. Every observation must trace to the evidence and include a conversion or buyer-decision implication.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "clarity": 15,
-    "specificity": 7,
-    "seoUsefulness": 5,
-    "croUsefulness": 10,
-    "riskControl": 4
+    "evidenceAccuracy": 25,
+    "clarity": 12,
+    "specificity": 10,
+    "seoUsefulness": 4,
+    "croUsefulness": 2,
+    "riskControl": 7,
+    "analysisDepth": 5
   },
   "effectivePassThreshold": 85
 }

@@ -2,31 +2,32 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "The phrase 'beginner-friendly and benefit-driven' in paragraph 1 is an interpretation not explicitly labelled as such",
-    "The phrase 'may suggest repositioning toward enterprise or data-driven buyers' in paragraph 3 is interpretive but appropriately hedged",
-    "Final paragraph uses 'may reflect' twice in succession, which weakens the prose rhythm",
-    "No company-specific proper noun appears in the opening 40 words (Hootsuite first appears at word 60)",
-    "The observation about 'streamlined conversion path' in the final paragraph is not directly traceable to specific evidence"
+    "Phrase 'optimized for self-serve buyers' implies intent/design goal not present in evidence — evidence shows structure, not optimization target",
+    "Phrase 'credibility: action-framing is fast to comprehend but may not signal enterprise depth' is an unlabelled interpretation",
+    "Minor padding in 'The visual hierarchy appears designed for scanners' — the observation about hierarchy is supported, but 'appears designed for' adds interpretive layer without label"
   ],
   "requiredFixes": [
-    "Move 'Hootsuite' into the first sentence to satisfy SEO requirements — e.g., 'Hootsuite's January 2023 homepage opened with...'",
-    "Label the 'beginner-friendly and benefit-driven' characterization as interpretive — add 'which can be read as' or similar hedge",
-    "Strengthen the final paragraph by anchoring the CTA observation to evidence: state which CTAs are absent, cite the new headings that occupy that real estate, then offer the streamlined-path interpretation as labelled inference"
+    "Replace 'optimized for self-serve buyers who need to confirm a capability match quickly' with 'may serve self-serve buyers seeking capability confirmation' or similar hedged framing to avoid implying documented design intent",
+    "Label the credibility tradeoff explicitly: 'This configuration presents a credibility tradeoff: action-framing...' or 'A plausible interpretation: action-framing...' to distinguish observation from inference"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "'The first-screen conversion clarity likely remains high for users seeking a workflow tool' — conversion outcome claim without data, though hedged with 'likely'",
+    "'optimized for self-serve buyers' implies design intent not documented in evidence"
+  ],
   "seoNotes": [
-    "Negative: Company name does not appear in the first 40 words; first mention is at word ~60",
-    "Positive: All three snapshot periods are named with dates in the opening phrases of each paragraph",
-    "Positive: Quoted H1 text in all three periods provides unique, indexable content"
+    "Company name 'Hootsuite' appears in word 11, meets the 40-word requirement",
+    "Strong use of dated period labels ('Jan 2023', 'Jul 2023', 'Jun 2026') aids search relevance for timeline queries",
+    "Specific quoted headlines ('Grow your reach...', 'Save time and get REAL results...') provide unique searchable phrases"
   ],
-  "rewriteInstruction": "Insert 'Hootsuite' before 'homepage' in the opening sentence to meet SEO requirements. In paragraph 1, label the 'beginner-friendly and benefit-driven' phrase as interpretive (e.g., 'framing that can be read as...'). In the final paragraph, restructure the CTA observation: first state which CTAs were removed (quote from evidence), then note which new section headings now occupy homepage real estate (quote from evidence), then offer the 'streamlined conversion path' interpretation as a labelled hypothesis. Vary the hedging language in the final paragraph to avoid repeating 'may reflect' and 'may suggest' in close succession.",
+  "rewriteInstruction": "Address the two unlabelled interpretations: (1) change 'optimized for self-serve buyers who need to confirm a capability match quickly' to 'may serve self-serve buyers seeking capability confirmation' to avoid implying documented design intent, and (2) add an explicit label before the credibility tradeoff observation ('This configuration presents a credibility tradeoff:' or 'A plausible interpretation:'). These are the only fixes needed to reach 90+. The section already includes strong conversion implications (first-screen clarity analysis), buyer psychology (self-serve vs enterprise evaluators), and actionable SaaS takeaways (the platform-level messaging observation). Evidence grounding is strong throughout — every claim traces to a specific headline, nav label, or section heading from the evidence blocks.",
   "dimensionScores": {
-    "evidenceAccuracy": 28,
-    "clarity": 18,
+    "evidenceAccuracy": 20,
+    "clarity": 15,
     "specificity": 15,
-    "seoUsefulness": 7,
-    "croUsefulness": 13,
-    "riskControl": 7
+    "seoUsefulness": 10,
+    "croUsefulness": 10,
+    "riskControl": 5,
+    "analysisDepth": 13
   },
   "effectivePassThreshold": 85
 }

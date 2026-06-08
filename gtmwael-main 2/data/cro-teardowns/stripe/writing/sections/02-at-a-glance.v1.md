@@ -1,8 +1,8 @@
-Stripe's homepage changed most visibly between October 2022 and June 2026 in its primary headline, section headings, and navigation structure.
+Stripe's homepage changed most visibly between October 2022 and June 2026 in its primary headline, navigation structure, and section architecture.
 
-- The primary headline was fully rewritten, with the summary card noting a change in "audience signal" — the exact wording shifted, though the specific before-and-after text is not provided in the evidence.
-- Section headings saw significant structural change: 5 H2 headings were added and 4 were removed across the five snapshots, indicating the homepage body was reorganized at least once during the period.
-- Navigation was overhauled, with 6 items added and 8 removed, resulting in a net reduction of 2 menu options by June 2026.
-- The meta description and page title both changed, though the specifics of those revisions are not detailed in the evidence.
+- The primary headline was fully rewritten during the period, changing the audience signal visitors encounter on arrival.
+- Navigation items shifted from eight removed labels to six added labels, representing a complete rethinking of how the top-level menu surfaces product and platform categories.
+- Section headings saw five additions and four removals, indicating the page moved through multiple content structures rather than minor refinements.
+- The meta description and title tag both changed, altering how the page appears in search results and what promise visitors read before clicking through.
 
-Collectively, the evidence shows a homepage that was rewritten rather than incrementally adjusted, with structural changes affecting the headline, body sections, and top-level navigation rather than isolated tweaks to individual CTAs or imagery.
+Taken together, the visible changes suggest Stripe moved the homepage through at least one major structural pivot rather than incremental optimisation, with each snapshot reflecting a materially different content hierarchy and visitor entry experience.

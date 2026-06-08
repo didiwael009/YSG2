@@ -1,39 +1,40 @@
 {
-  "score": 74,
+  "score": 78,
   "pass": false,
   "issues": [
-    "Opening sentence is mechanically padded: 'changed across seven observed snapshots' restates the evidence without narrative purpose.",
-    "Second sentence lists three data points in a row with no connective tissue or interpretation.",
-    "Final sentence contains two hedging phrases ('may suggest' and 'though the evidence does not distinguish') that add no meaningful interpretive layer—verbal tics, not purposeful qualification.",
-    "No company-specific proper noun (Hootsuite) appears in the first 40 words, weakening SEO.",
-    "The phrase 'iterative testing' is not grounded in any evidence item—introduces a concept not present in the data.",
-    "Generic final clause could appear in any teardown: 'strategic intent and iterative testing' is pattern-naming, not evidence-anchored observation.",
-    "No single paragraph contains a quoted phrase, dated change, or named page element—fails required check #1.",
-    "The draft lists what changed but does not contextualise the numbers for a scanning reader (the stated goal)—lacks narrative or implication."
+    "First paragraph purely descriptive — lists changes with no conversion or buyer psychology implication",
+    "Headline bullet uses 'can be read as' equivalent phrasing ('In CRO terms... can shift') without identifying which buyer audience benefited from the change",
+    "Section-headings bullet introduces 'self-serve visitors' as a risk without evidence that Hootsuite targets self-serve buyers or that the old headings served that segment",
+    "Navigation bullet states 'The evidence does not specify whether the new labels are action-based or category-based' — this admission of missing evidence weakens the analytical payoff",
+    "Final paragraph hedges extensively ('cannot confirm') and offers three possible drivers without grounding any in Hootsuite-specific evidence",
+    "No specific company evidence quoted in any bullet — all analysis is keyed to summary-card metadata, not actual page elements",
+    "Missing founder takeaway: no practical observation a SaaS founder can study or apply"
   ],
   "requiredFixes": [
-    "Insert 'Hootsuite' in the first 20 words to anchor SEO relevance.",
-    "Remove the filler opening ('changed across seven observed snapshots')—start with the most significant change: the headline rewrite.",
-    "Cut or rework the final hedging clause—either label a specific interpretive gap with precision or remove the phrase entirely.",
-    "Eliminate 'iterative testing' unless evidence supports it. Replace with an observation tied to the magnitude of the changes (15 added, 4 removed, etc.).",
-    "Add one sentence that explains what 'audience signal changed' might mean for a scanning reader—even if labelled as interpretation."
+    "Replace opening paragraph with a narrative that includes conversion implication: what these changes may mean for visitor qualification or friction, grounded in Hootsuite's likely buyer profile (enterprise social-media teams, agencies, etc.)",
+    "In headline bullet, identify which buyer audience the 'audience signal changed' likely targeted — e.g., from solo creators to enterprise teams, or vice versa — and state this is an interpretation based on volume of changes",
+    "Remove or reframe the self-serve visitor risk in section-headings bullet unless evidence elsewhere confirms Hootsuite targets self-serve; otherwise replace with a buyer-segment observation tied to Hootsuite's known market (enterprise, agency, etc.)",
+    "In navigation bullet, remove the 'evidence does not specify' disclaimer and either interpret the taxonomy change based on context (e.g., enterprise platform shift) or omit the action-vs-category distinction entirely",
+    "Add at least one Hootsuite-specific proper noun or quoted element in the body (e.g., a navigation label, a page section name, a product feature) to anchor the analysis",
+    "Add a founder takeaway: what SaaS teams can observe about headline–proof alignment, navigation taxonomy changes, or content architecture risks when repositioning"
   ],
   "riskFlags": [
-    "'Iterative testing' implies a process not evidenced in the data—introduces a factual claim not supported.",
-    "'Strategic intent' versus 'iterative testing' is a false dichotomy not grounded in evidence—speculative framing."
+    "'headline repositioning without corresponding proof architecture creates a trust gap' — presented as a causal claim without evidence that Hootsuite's proof architecture did or did not change",
+    "'navigation redesigns can improve enterprise qualification while increasing friction' — not labelled as interpretation; reads as a general claim applied to Hootsuite without evidence of enterprise focus or friction measurement"
   ],
   "seoNotes": [
-    "Company name (Hootsuite) does not appear in the first 40 words—misses early SEO signal.",
-    "The phrase 'homepage changed' is generic; 'Hootsuite rewrote its homepage headline' would be stronger and more specific."
+    "Company name 'Hootsuite' appears in first 12 words — meets SEO usefulness threshold",
+    "Section lacks any quoted page element or specific label — limits long-tail keyword opportunity"
   ],
-  "rewriteInstruction": "Start with the headline rewrite and name Hootsuite in the first sentence. Contextualise the magnitude of the section-heading changes (15 added, 4 removed) with a single interpretive sentence that explains what this volume of change signals—label it as interpretation. Cut the final hedging clause or replace it with a specific, meaningful qualification tied to the evidence (e.g., snapshots capture end states, not decision rationale). Remove any reference to 'iterative testing' or 'strategic intent' unless you can tie it to a specific evidence item. Add one concrete detail (a date, a number, a named element) to ground at least one paragraph in observable fact.",
+  "rewriteInstruction": "Rewrite the opening paragraph to include a conversion or buyer-psychology implication (e.g., what this volume of change may signal about Hootsuite's market repositioning or buyer-segment shift). In the headline bullet, identify which buyer audience the 'audience signal changed' likely served — tie this to Hootsuite's known market (enterprise social-media teams, agencies, etc.) and label it as an interpretation. Remove the self-serve visitor risk unless evidence elsewhere confirms that segment; replace with a Hootsuite-specific buyer observation. Cut the 'evidence does not specify' disclaimer in the navigation bullet — either interpret the taxonomy change or omit the action-vs-category distinction. Add at least one quoted or named page element (a navigation label, section heading, or product feature) to anchor the analysis. Add a founder takeaway: a practical observation about headline–proof alignment, navigation taxonomy risks, or content architecture trade-offs during repositioning. Label interpretive claims explicitly and remove any phrasing that implies causation without data.",
   "dimensionScores": {
     "evidenceAccuracy": 20,
-    "clarity": 12,
-    "specificity": 7,
-    "seoUsefulness": 5,
-    "croUsefulness": 8,
-    "riskControl": 7
+    "clarity": 13,
+    "specificity": 8,
+    "seoUsefulness": 8,
+    "croUsefulness": 6,
+    "riskControl": 7,
+    "analysisDepth": 6
   },
   "effectivePassThreshold": 85
 }

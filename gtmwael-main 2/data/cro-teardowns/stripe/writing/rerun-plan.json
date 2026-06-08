@@ -1,47 +1,39 @@
 {
-  "createdAt": "2026-06-07T23:00:12.625Z",
+  "createdAt": "2026-06-08T09:45:04.310Z",
   "slug": "stripe",
   "source": {
-    "finalJudgePass": false,
+    "finalJudgePass": true,
     "seoPass": true,
-    "finalJudgeScore": 92,
-    "seoScore": 84
+    "finalJudgeScore": 94,
+    "seoScore": 82
   },
   "sectionsToRerun": [
     {
-      "sectionId": "03-visual-timeline",
+      "sectionId": "01-intro",
       "reasons": [
-        "Judge rerun recommendation: 03-visual-timeline"
+        "Primary keyword 'Stripe homepage CRO teardown' appears only once in the body (in metadata discussion context) — integrate it naturally into the introduction or first H2",
+        "No clear H1 distinction — the markdown shows '# How Stripe rewrote its homepage over 4 years' but this differs from the title 'Stripe Homepage Teardown: Oct 2022 to Jun 2026' — align them or ensure th"
       ],
-      "priority": "high",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "reasons": [
-        "The visible architecture included section headings like \"Unified platform\" and \"Designed for developers,\" both later removed",
-        "Visual Timeline section: The phrase \"both later removed\" introduces temporal sequencing not explicitly supported by the evidence. The evidence shows these H2s were removed between Oct 2022 and Jun 202"
-      ],
-      "priority": "high",
-      "source": "final-judge"
+      "priority": "low",
+      "source": "seo-audit"
     },
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "though the optimal length for hero copy remains context-dependent"
+        "Paragraphs in 'Messaging Evolution' and 'Lessons for SaaS Teams' sections exceed 150 words — break into smaller chunks (3-4 sentences max) for scannability"
       ],
-      "priority": "medium",
-      "source": "final-judge"
+      "priority": "low",
+      "source": "seo-audit"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "The H1 'How Stripe rewrote its homepage over 4 years' differs from the page title. Align these or explain the strategic difference — mismatched H1/title can dilute keyword focus",
+      "issue": "Title is 50 characters — good length, but consider adding a modifier for uniqueness: 'Stripe Homepage Teardown: Oct 2022 to Jun 2026 (CRO Analysis)' to differentiate from potential competitor analyses",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Section 01-intro (low priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
+      "issue": "Meta description ends with ellipsis '…' which may appear unfinished in SERPs — complete the sentence or rephrase to end cleanly within 155 characters",
+      "reason": "metadata field in seo.json, not section content"
     }
   ]
 }

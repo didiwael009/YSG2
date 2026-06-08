@@ -1,32 +1,38 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 78,
+  "pass": false,
   "issues": [
-    "Paragraph 1 uses 'can be read as' to hedge an interpretation that is already explicit in the evidence ('audience signal changed')",
-    "The phrase 'visitor profile Hootsuite chose to address' adds no company-specific detail beyond the evidence note",
-    "Paragraph 4 contains speculative interpretation ('may suggest Hootsuite expanded the scope') without labelling it clearly as inference",
-    "The section does not use the company proper noun 'Hootsuite' in the first 40 words, only at word 2 and then not again until word 115"
+    "Opening paragraph contains a speculative conclusion ('can be read as an attempt to realign the page with a different buyer segment or sales motion') not anchored to specific evidence — the summary-cards do not include buyer segment signals.",
+    "Second bullet uses a hypothetical example ('A headline that speaks to small business social media managers…') without grounding it in the actual Jan 2023 or Jun 2026 headline text — no quoted headline appears in the evidence.",
+    "Second bullet contains an unsupported causal claim: 'if the new headline increases abstraction without matching proof elements further down the page, cognitive load rises and drop-off risk increases' — no proof-element evidence is provided.",
+    "Fourth bullet states 'These observed shifts suggest Hootsuite may have been moving upmarket' — this is an interpretive leap not labelled as speculation and not tied to a specific evidence anchor (e.g., a quoted headline or nav label).",
+    "No actual headline, H2, or navigation label text is quoted — the draft discusses changes without showing the reader what changed.",
+    "Final sentence ('navigation that helps one buyer type self-qualify may confuse another who expected a simpler entry point') is generic SaaS commentary that could apply to any homepage teardown."
   ],
   "requiredFixes": [
-    "Remove or rephrase 'which can be read as a shift in the visitor profile Hootsuite chose to address' — the evidence note already states 'audience signal changed,' so no hedging is needed; either quote the note directly or omit the redundant interpretation",
-    "Relabel the final sentence speculation: change 'The 4:15 ratio... may suggest Hootsuite expanded the scope' to 'The 4:15 ratio indicates a net gain of 11 H2 headings' (observable) then add 'which could indicate...' if interpretation is retained"
+    "Quote at least one actual headline, H2, or navigation label from the evidence to ground the analysis in observable page text.",
+    "Remove or clearly label as interpretation the conclusion that Hootsuite 'may have been moving upmarket' — or tie it to a specific quoted element (e.g., a nav label that names enterprise use cases).",
+    "Remove the unsupported causal claim about cognitive load and drop-off risk in the second bullet, or reframe it as a CRO hypothesis ('a common risk in homepage repositioning is…').",
+    "Replace the hypothetical small-business / enterprise headline example with a description anchored to the actual headline change noted in the evidence."
   ],
   "riskFlags": [
-    "Final sentence implies intent ('Hootsuite expanded the scope... rather than condensing') based solely on a count ratio, without evidence of what the headings contained or why they were added"
+    "Second bullet contains an unlabelled causal claim: 'if the new headline increases abstraction without matching proof elements further down the page, cognitive load rises and drop-off risk increases' — no data or evidence supports this conversion outcome.",
+    "Opening paragraph states changes 'can be read as an attempt to realign the page with a different buyer segment or sales motion' — this interpretation is not clearly labelled and the evidence does not include buyer-segment signals.",
+    "Fourth bullet claims 'These observed shifts suggest Hootsuite may have been moving upmarket' — this is an interpretive conclusion not tied to a specific quoted element or labelled as speculation."
   ],
   "seoNotes": [
-    "Company name 'Hootsuite' appears at word 2, meeting early-signal requirement",
-    "Proper noun does not reappear until word 115, reducing keyword density for a scan-oriented section",
-    "Phrase 'homepage teardown' or 'CRO teardown' absent — section assumes reader already knows context"
+    "Company name 'Hootsuite' appears in the first sentence — meets SEO proper-noun requirement.",
+    "Section lacks quoted page elements (headlines, nav labels, H2s) that would provide long-tail search value for readers looking for Hootsuite-specific messaging changes."
   ],
-  "rewriteInstruction": "Remove the 'can be read as' hedge in paragraph 1 — the evidence note 'audience signal changed' is already interpretive, so either quote it directly or omit. In the final sentence, replace the speculative 'may suggest Hootsuite expanded the scope' with observable language: 'The net addition of 11 H2 headings indicates more structural content blocks in June 2026 than in January 2023.' If you retain an inference about expansion vs. condensation, label it explicitly ('one reading of this ratio is...'). Add one more use of 'Hootsuite' in the middle paragraphs to maintain keyword presence for SEO. Otherwise the draft is clean, evidence-grounded, and meets the quick-reference goal.",
+  "rewriteInstruction": "Anchor every analytical statement to a specific piece of Hootsuite evidence: quote at least one headline, H2, or navigation label so the reader sees what actually changed. Remove the unsupported causal claim about cognitive load and drop-off risk in the second bullet, or reframe it as a CRO hypothesis ('a common risk when headline abstraction increases…'). Label the 'moving upmarket' interpretation explicitly as speculation ('the evidence is consistent with an upmarket shift, though…') or tie it to a quoted nav label that names enterprise workflows. Replace the hypothetical small-business / enterprise headline example with a description of the actual headline change. Ensure the SaaS founder takeaway is specific to Hootsuite's observed changes, not generic SaaS navigation advice.",
   "dimensionScores": {
-    "evidenceAccuracy": 28,
-    "clarity": 18,
-    "specificity": 14,
-    "seoUsefulness": 8,
-    "croUsefulness": 13,
-    "riskControl": 7
+    "evidenceAccuracy": 15,
+    "clarity": 13,
+    "specificity": 8,
+    "seoUsefulness": 7,
+    "croUsefulness": 7,
+    "riskControl": 4,
+    "analysisDepth": 9
   },
   "effectivePassThreshold": 85
 }

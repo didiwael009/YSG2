@@ -997,5 +997,743 @@
     "ok": true,
     "detail": "score 85/100 — PASS ✓ — $0.0280",
     "ts": "2026-06-07T21:43:57.478Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-08T09:17:42.469Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:17:42.472Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1803 in / 318 out — $0.0102",
+    "ts": "2026-06-08T09:17:52.462Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0285",
+    "ts": "2026-06-08T09:18:08.983Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:18:08.984Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-at-a-glance.evidence.json",
+    "ts": "2026-06-08T09:18:08.985Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:18:08.986Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1837 in / 235 out — $0.0375",
+    "ts": "2026-06-08T09:18:16.521Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "Could not extract JSON from critic response.\nFirst 500 chars:\n```json\n{\n  \"score\": 68,\n  \"pass\": false,\n  \"issues\": [\n    \"Paragraph 1: 'audience signal changed from one framing to another' is vague and not anchored to specific evidence — what framing to what framing?\",\n    \"Paragraph 2: 'grew in depth or changed its persuasion sequence' is speculative interpretation not labelled as such\",\n    \"Paragraph 3: 'rethinking of how the page categorises or labels product entry points' is generic — no specific nav items named\",\n    \"Paragraph 5 (final graf): 'livi",
+    "ts": "2026-06-08T09:18:42.351Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-08T09:18:42.352Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:18:42.353Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2227 in / 528 out — $0.0743",
+    "ts": "2026-06-08T09:18:56.902Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "Could not extract JSON from critic response.\nFirst 500 chars:\n```json\n{\n  \"score\": 88,\n  \"pass\": true,\n  \"issues\": [\n    \"Final paragraph introduces 'cognitive load' concept without evidence anchor — the phrase 'adds cognitive load to the first screen' is an unsupported interpretation\",\n    \"Phrase 'appears to favour buyers who read deeply' in final paragraph lacks evidence tie — no data about visitor behaviour or scanning patterns provided\",\n    \"Second paragraph uses 'may reflect a shift toward selling trust' — interpretation not explicitly grounded in e",
+    "ts": "2026-06-08T09:19:15.542Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-08T09:19:15.545Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:19:15.552Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1893 in / 560 out — $0.1093",
+    "ts": "2026-06-08T09:19:31.912Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "Could not extract JSON from critic response.\nFirst 500 chars:\n```json\n{\n  \"score\": 92,\n  \"pass\": true,\n  \"issues\": [],\n  \"requiredFixes\": [],\n  \"riskFlags\": [],\n  \"seoNotes\": [\n    \"Company name 'Hootsuite' appears in the first 40 words with specific headline evidence\",\n    \"Section anchors on quoted evidence throughout, strong for entity-specific search intent\"\n  ],\n  \"analysisDepthWarnings\": [],\n  \"rewriteInstruction\": \"\",\n  \"dimensionScores\": {\n    \"evidenceAccuracy\": 25,\n    \"clarity\": 15,\n    \"specificity\": 15,\n    \"seoUsefulness\": 10,\n    \"croUsefuln",
+    "ts": "2026-06-08T09:19:53.677Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-08T09:19:53.690Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:19:53.695Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1996 in / 649 out — $0.1485",
+    "ts": "2026-06-08T09:20:14.207Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.1702",
+    "ts": "2026-06-08T09:20:33.253Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:20:33.262Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-08T09:20:33.265Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:20:33.267Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2158 in / 901 out — $0.1902",
+    "ts": "2026-06-08T09:20:59.276Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "Could not extract JSON from critic response.\nFirst 500 chars:\n```json\n{\n  \"score\": 88,\n  \"pass\": true,\n  \"issues\": [\n    \"Paragraph 3: 'version-control your homepage copy in a structured way' is generic advice that does not trace to a specific evidence item beyond the observation that headings changed\",\n    \"Paragraph 4: 'audit the gap between your homepage promise and your day-one product experience' is generic advice not grounded in Hootsuite-specific evidence\",\n    \"Minor hedging excess: 'can lower friction' and 'can increase credibility' in paragraph 1",
+    "ts": "2026-06-08T09:21:15.256Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 1789 words",
+    "ts": "2026-06-08T09:21:15.273Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Hootsuite homepage CRO teardown",
+    "ts": "2026-06-08T09:21:15.275Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:21:15.279Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 94/100 — PASS ✓ — $0.0430",
+    "ts": "2026-06-08T09:21:51.828Z"
+  },
+  {
+    "step": "SEO auditor [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:21:51.830Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 84/100 — PASS ✓ — $0.0302",
+    "ts": "2026-06-08T09:22:19.904Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-08T09:26:48.834Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:26:48.835Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1803 in / 303 out — $0.0100",
+    "ts": "2026-06-08T09:26:57.751Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0278",
+    "ts": "2026-06-08T09:27:14.491Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:27:14.494Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-at-a-glance.evidence.json",
+    "ts": "2026-06-08T09:27:14.496Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:27:14.497Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1837 in / 231 out — $0.0368",
+    "ts": "2026-06-08T09:27:21.943Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "Could not extract JSON from critic response.\nFirst 500 chars:\n```json\n{\n  \"score\": 68,\n  \"pass\": false,\n  \"issues\": [\n    \"Opening sentence lacks company-specific evidence anchor (no quoted phrase, dated change, or named element)\",\n    \"Paragraph 1 ('audience signal changed') is entirely generic — no evidence of what the old/new audience was\",\n    \"Paragraph 2 ('reframed how the page presents product capabilities') is interpretive padding with no buyer psychology or conversion implication\",\n    \"Paragraph 3 ('shift in product taxonomy or buyer journey') co",
+    "ts": "2026-06-08T09:27:49.754Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-08T09:27:49.756Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:27:49.756Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2227 in / 546 out — $0.0767",
+    "ts": "2026-06-08T09:28:04.564Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "Could not extract JSON from critic response.\nFirst 500 chars:\n```json\n{\n  \"score\": 88,\n  \"pass\": true,\n  \"issues\": [\n    \"Paragraph 2 contains interpretive phrase 'may signal an attempt to add credibility' without labelling the interpretation explicitly\",\n    \"The phrase 'may be introducing more conceptual framing' in paragraph 2 is an unlabelled interpretation\",\n    \"Final paragraph uses 'appears to favour' — acceptable hedging but borders on mechanical usage given context\",\n    \"No founder-specific takeaway in final paragraph — CRO tradeoff observation i",
+    "ts": "2026-06-08T09:28:20.641Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-08T09:28:20.643Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:28:20.644Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1893 in / 520 out — $0.1099",
+    "ts": "2026-06-08T09:28:36.127Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.1275",
+    "ts": "2026-06-08T09:28:50.303Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:28:50.304Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-08T09:28:50.305Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:28:50.306Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1996 in / 639 out — $0.1431",
+    "ts": "2026-06-08T09:29:10.633Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.1647",
+    "ts": "2026-06-08T09:29:26.598Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:29:26.600Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-08T09:29:26.607Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:29:26.645Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2158 in / 1206 out — $0.1893",
+    "ts": "2026-06-08T09:29:54.048Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 92/100 — PASS ✓ — $0.2212",
+    "ts": "2026-06-08T09:30:22.146Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 92/100 — PASS",
+    "ts": "2026-06-08T09:30:22.147Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 2498 words",
+    "ts": "2026-06-08T09:30:22.164Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Hootsuite homepage CRO teardown",
+    "ts": "2026-06-08T09:30:22.168Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:30:22.173Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 92/100 — PASS ✓ — $0.0475",
+    "ts": "2026-06-08T09:31:02.051Z"
+  },
+  {
+    "step": "SEO auditor [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:31:02.060Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 83/100 — PASS ✓ — $0.0296",
+    "ts": "2026-06-08T09:31:28.815Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-08T09:32:54.103Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:32:54.105Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1803 in / 289 out — $0.0097",
+    "ts": "2026-06-08T09:33:03.370Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0252",
+    "ts": "2026-06-08T09:33:15.161Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:33:15.164Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-at-a-glance.evidence.json",
+    "ts": "2026-06-08T09:33:15.166Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:33:15.167Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1837 in / 228 out — $0.0342",
+    "ts": "2026-06-08T09:33:23.046Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 73/100 — FAIL — $0.0566",
+    "ts": "2026-06-08T09:33:44.985Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-08T09:33:44.987Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "2921 in / 370 out — $0.0709",
+    "ts": "2026-06-08T09:33:54.746Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0951",
+    "ts": "2026-06-08T09:34:19.639Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-08T09:34:19.642Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "3149 in / 357 out — $0.1099",
+    "ts": "2026-06-08T09:34:30.762Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.1333",
+    "ts": "2026-06-08T09:34:56.648Z"
+  },
+  {
+    "section": "02-at-a-glance",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-08T09:34:56.650Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-08T09:34:56.652Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:34:56.653Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2227 in / 569 out — $0.1485",
+    "ts": "2026-06-08T09:35:13.491Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.1685",
+    "ts": "2026-06-08T09:35:29.270Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:35:29.273Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-08T09:35:29.274Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:35:29.276Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1893 in / 685 out — $0.1845",
+    "ts": "2026-06-08T09:35:49.935Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 92/100 — PASS ✓ — $0.2121",
+    "ts": "2026-06-08T09:36:21.151Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 92/100 — PASS",
+    "ts": "2026-06-08T09:36:21.153Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-08T09:36:21.158Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:36:21.166Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "1996 in / 641 out — $0.2277",
+    "ts": "2026-06-08T09:36:41.429Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.2508",
+    "ts": "2026-06-08T09:37:01.205Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:37:01.212Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-08T09:37:01.222Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:37:01.226Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2158 in / 767 out — $0.2688",
+    "ts": "2026-06-08T09:37:24.281Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.2931",
+    "ts": "2026-06-08T09:37:43.812Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-08T09:37:43.816Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 2486 words",
+    "ts": "2026-06-08T09:37:43.827Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Hootsuite homepage CRO teardown",
+    "ts": "2026-06-08T09:37:43.831Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:37:43.835Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 94/100 — PASS ✓ — $0.0432",
+    "ts": "2026-06-08T09:38:18.139Z"
+  },
+  {
+    "step": "SEO auditor [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-08T09:38:18.141Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 81/100 — PASS ✓ — $0.0321",
+    "ts": "2026-06-08T09:38:46.102Z"
   }
 ]

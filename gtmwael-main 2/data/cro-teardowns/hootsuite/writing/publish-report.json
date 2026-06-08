@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-07T21:58:33.815Z",
+  "publishedAt": "2026-06-08T09:45:16.676Z",
   "slug": "hootsuite",
   "dryRun": false,
   "forced": false,
@@ -7,7 +7,7 @@
     "finalJudgePass": true,
     "finalJudgeScore": 94,
     "seoPass": true,
-    "seoScore": 85,
+    "seoScore": 81,
     "unsupportedClaims": []
   },
   "blockedReasons": [],

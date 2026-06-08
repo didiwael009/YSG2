@@ -1,21 +1,23 @@
 {
   "overallScore": 94,
   "pass": true,
-  "evidenceAccuracy": 14,
-  "riskControl": 9,
+  "evidenceAccuracy": 15,
+  "riskControl": 10,
   "croUsefulness": 15,
-  "clarity": 18,
+  "clarity": 19,
   "sectionCoherence": 10,
   "weakSections": [],
   "unsupportedClaims": [],
   "riskFlags": [],
   "requiredFixes": [],
   "optionalImprovements": [
-    "Section 05 final sentence reads slightly conclusive ('The homepage appears to have moved from featuring discrete stories...') — while the pattern is observable, adding 'This observed pattern suggests' would maintain the interpretive frame used elsewhere",
-    "Section 02 could explicitly state that the 4:15 ratio observation is interpretive ('may suggest expansion') earlier in the sentence to maintain consistency with hedging discipline throughout"
+    "The 'At a Glance' section notes 'The evidence does not include the exact headline text from either snapshot' — this creates minor reader confusion when the intro and later sections do quote the full headlines. Consider removing this caveat or clarifying that summary evidence differs from full evidence.",
+    "The Visual Timeline section could benefit from one more sentence explicitly stating whether the iterative changes correlated with any visible product feature expansion (if evidence existed), to strengthen the platform-depth narrative."
   ],
   "rerunRecommendations": [],
   "model": "claude-sonnet-4-5",
-  "costUsd": 0.032235,
-  "generatedAt": "2026-06-07T21:43:29.959Z"
+  "costUsd": 0.04323899999999997,
+  "generatedAt": "2026-06-08T09:38:18.136Z",
+  "analysisDepth": 15,
+  "founderUsefulness": 10
 }

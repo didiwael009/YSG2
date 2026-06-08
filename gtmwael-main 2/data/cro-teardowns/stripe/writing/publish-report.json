@@ -1,18 +1,18 @@
 {
-  "publishedAt": "2026-06-07T23:03:18.841Z",
+  "publishedAt": "2026-06-08T09:45:16.978Z",
   "slug": "stripe",
   "dryRun": false,
   "forced": false,
   "qualityGates": {
     "finalJudgePass": true,
-    "finalJudgeScore": 91,
+    "finalJudgeScore": 94,
     "seoPass": true,
-    "seoScore": 81,
+    "seoScore": 82,
     "unsupportedClaims": []
   },
   "blockedReasons": [],
   "articlePath": "src/content/cro-teardown/articles/stripe.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",

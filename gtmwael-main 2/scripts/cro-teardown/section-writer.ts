@@ -696,7 +696,7 @@ export async function writeSectionLoop(
         model: criticModel,
         system: CRITIC_SYSTEM,
         messages: [{ role: 'user', content: buildCriticPrompt(sectionId, evidence, draft, minScore) }],
-        maxTokens: 1024,
+        maxTokens: 4096, // Phase 4M: larger JSON schema (analysisDepthWarnings + verbose rewriteInstruction on low-score sections)
       }),
       { onRetry: (a, e, d) => onLog(`Critic retry ${a}`, false, `${e.message} (${d}ms)`) },
     );

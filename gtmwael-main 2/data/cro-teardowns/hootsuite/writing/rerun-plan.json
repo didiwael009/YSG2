@@ -1,17 +1,26 @@
 {
-  "createdAt": "2026-06-07T21:42:23.642Z",
+  "createdAt": "2026-06-08T09:38:46.115Z",
   "slug": "hootsuite",
   "source": {
     "finalJudgePass": true,
     "seoPass": true,
     "finalJudgeScore": 94,
-    "seoScore": 80
+    "seoScore": 81
   },
   "sectionsToRerun": [
     {
       "sectionId": "01-intro",
       "reasons": [
-        "Primary keyword 'Hootsuite homepage CRO teardown' appears only once in the article body (in metadata). Add at least one natural mention in the intro or conclusion to strengthen keyword-content alignme"
+        "The primary keyword 'Hootsuite homepage CRO teardown' appears only once in the article body (in metadata discussion). Use it naturally 2-3 more times in the body text, especially in the intro and one "
+      ],
+      "priority": "low",
+      "source": "seo-audit"
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "The article has long paragraphs in the 'Messaging Evolution' and 'Lessons for SaaS Teams' sections that exceed 5-6 lines. Break these into shorter chunks (3-4 sentences max per paragraph) for better s",
+        "The 'Visual Timeline' section has three consecutive paragraphs of 150+ words each. Insert subheadings (H3s) to break up this section: 'Jan 2023: Outcome-Focused Simplicity,' 'Jul 2023: Incremental Com"
       ],
       "priority": "low",
       "source": "seo-audit"
@@ -19,20 +28,8 @@
   ],
   "skippedIssues": [
     {
-      "issue": "Title exceeds 60 characters (currently 52 with 'Hootsuite Homepage Teardown: Jan 2023 to Jun 2026' — actually within limit, no fix needed here).",
-      "reason": "self-corrected"
-    },
-    {
-      "issue": "Meta description is 149 characters but ends with an ellipsis '…' which may render poorly in SERPs. Replace ellipsis with a complete sentence or rephrase to end cleanly within 155 characters.",
+      "issue": "The meta description is 153 characters including ellipsis, which is acceptable, but 'Jun 2026' is a future date that may confuse readers if published before that date. Clarify whether this is speculat",
       "reason": "metadata field in seo.json, not section content"
-    },
-    {
-      "issue": "The article uses 'Jun 2026' but was generated on 2026-06-07 — ensure the 'current' snapshot date is accurate and not a placeholder from the future (this may confuse readers if published before June 20",
-      "reason": "snapshot date metadata issue, not section content"
-    },
-    {
-      "issue": "No H1 is present in the Markdown. The first heading '# How Hootsuite rewrote its homepage over 3 years' should be validated as the page's H1 in the CMS, and it should match or closely echo the SEO tit",
-      "reason": "CMS configuration, not section content"
     }
   ]
 }
