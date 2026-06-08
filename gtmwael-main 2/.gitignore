@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .env
+.env.*
+*.env.save
+.env.save
