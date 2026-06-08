@@ -81,9 +81,21 @@ export const createHtmlBuilder = ({
   };
 
   const buildHtml = async (route) => {
-    const rootContent = prerenderRoutes.has(route.path)
-      ? await materializeSsrAssetPaths(await render(route.path))
-      : buildFallbackContent(route);
+    let rootContent;
+    if (prerenderRoutes.has(route.path)) {
+      let rendered = await render(route.path);
+      // <!--$!--> is React 18's marker for a failed Suspense boundary.
+      // This happens when React.lazy() hasn't resolved yet (timing race on the
+      // first few routes). Wait briefly and retry once so those routes get a
+      // full SSR render instead of the empty Suspense fallback.
+      if (rendered.includes("<!--$!-->")) {
+        await new Promise((resolve) => setTimeout(resolve, 400));
+        rendered = await render(route.path);
+      }
+      rootContent = await materializeSsrAssetPaths(rendered);
+    } else {
+      rootContent = buildFallbackContent(route);
+    }
     return stripHeadSeo(template)
       .replace("</head>", `${buildHead({ route, ...headContext })}\n  </head>`)
       .replace(/<div id="root">[\s\S]*<\/div>\s*<\/body>/, `<div id="root">${rootContent}</div>\n  </body>`);
