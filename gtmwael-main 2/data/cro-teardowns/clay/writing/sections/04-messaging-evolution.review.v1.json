@@ -1,0 +1,35 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The final question 'Does your homepage still speak to the end user when your revenue model now depends on department-level buyers?' is generic advice that could appear in any B2B SaaS teardown — not anchored to Clay's specific evidence",
+    "The opening of H3 block 1 ('The original homepage spoke to someone doing manual prospecting work themselves') is interpretive rather than evidence-first; it should lead with the quoted meta description, then interpret",
+    "H3 block 2 opening ('targets the person responsible for go-to-market infrastructure across a team') is an assumption not directly traceable to the evidence — the headline and meta description do not explicitly confirm this buyer role",
+    "Section lacks word count efficiency — approximately 210 words when the target is 140–200"
+  ],
+  "requiredFixes": [
+    "Replace the final generic question with a specific, runnable test tied to Clay's evidence: 'Open your meta description. Count how many words describe a user pain (like 'million tab opening') vs. platform capability (like '150+ data sources'). If pain language dominates but your revenue comes from multi-seat deals, you may be attracting the wrong visitor.'",
+    "Anchor H3 block 2 opening to quoted evidence first: Start with 'The current headline reads **\"Go to market with unique data — and the ability to act on it\"**' before interpreting who it targets",
+    "Trim 10–15 words: Remove 'This is language for someone comparing data vendors and workflow platforms, not someone looking to speed up their own prospecting' — the contrast is already clear from the quotes"
+  ],
+  "riskFlags": [
+    "The claim 'The page now expects a longer evaluation process involving multiple stakeholders' is a causal inference not supported by the evidence. The evidence shows CTA changes, but does not confirm sales cycle length or stakeholder count.",
+    "The phrase 'signals that Clay is optimizing for deals that require business case validation' assumes strategic intent without evidence. Reframe as conditional: 'If Clay is optimizing for deals that require business case validation, the CTA shift is consistent with that goal.'"
+  ],
+  "seoNotes": [
+    "POSITIVE: The ## heading contains 'Clay' and 'audience shift', which are searchable. 'GTM leadership' is a bonus term.",
+    "POSITIVE: Each H3 sub-block uses plain, scannable language ('Who the old page served' / 'Who the new page serves').",
+    "NEGATIVE: The section does not include the term 'messaging' or 'positioning' in the ## heading, despite the section ID being '04-messaging-evolution'. Consider: 'Clay messaging shift: from individual practitioners to GTM leadership'."
+  ],
+  "rewriteInstruction": "Anchor each H3 block opening to quoted evidence before interpreting. In block 1, start with the meta description quote, then explain who it serves. In block 2, start with the headline quote. In block 3, replace the final generic question with a specific, runnable test: 'Open your meta description. Count pain-language words vs. platform-capability words. If pain dominates but your revenue is multi-seat, you may be attracting the wrong visitor.' Trim 10–15 words by removing redundant contrast phrases. Reframe causal claims ('The page now expects...') as conditional ('If Clay expects..., the CTA shift is consistent').",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 12,
+    "plainLanguage": 20,
+    "scannability": 14,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

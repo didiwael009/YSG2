@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The draft uses 'sales-assisted enterprise conversion' without a plain-language definition in the same sentence — this is expert jargon that needs immediate translation",
+    "The section exceeds the 90-word cap significantly (approximately 108 words by count)",
+    "The causal claim 'signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion' could be more conditional — the evidence shows correlation, not confirmed causation"
+  ],
+  "requiredFixes": [
+    "Reduce word count from ~108 to 90 words maximum — cut the final phrase 'and when that shift makes sense for your own product' (already implied by 'teardown walks through')",
+    "Add plain-language definition immediately after 'sales-assisted enterprise conversion' — e.g., 'sales-assisted enterprise conversion (deals that require a demo and multi-stakeholder approval)' or integrate the definition into the sentence structure"
+  ],
+  "riskFlags": [
+    "The phrase 'signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion' presents correlation as causation without a condition — safer phrasing: 'consistent with a shift' or 'suggesting Clay moved from'"
+  ],
+  "seoNotes": [
+    "POSITIVE: The H1 contains 'Clay', 'Homepage Teardown', 'Viral Spreadsheet Tool', 'Enterprise GTM Platform' — excellent keyword density",
+    "POSITIVE: The opening sentence directly answers the search query with company name, timeframe, and core shift",
+    "POSITIVE: The H1 format matches the recommended structure from seo-intent analysis",
+    "NEUTRAL: The draft could benefit from including 'messaging' or 'positioning' in the H1 for additional search coverage, but current keywords are strong"
+  ],
+  "rewriteInstruction": "Trim to 90 words by removing the final dependent clause ('and when that shift makes sense for your own product'). Immediately after the phrase 'sales-assisted enterprise conversion', add a plain-language parenthetical or integrate the definition into the sentence (e.g., 'enterprise sales that require demos and multi-stakeholder approval'). Change 'signaling a shift' to 'consistent with a shift' or 'suggesting Clay moved' to avoid presenting correlation as confirmed causation. Preserve all verbatim quotes in bold. Keep the opening sentence structure — it directly answers the search query.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 16,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

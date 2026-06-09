@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "H3 heading 'What changed' is not searchable — contains no company name or topic term (CTA, conversion, path, trial, demo)",
+    "H3 heading 'Who this filters out' is not searchable — contains no company name or topic term",
+    "Opening sentence uses 'one CTA' but evidence shows 10 CTAs were removed, not just 'Request access'",
+    "Second H3 block ('Who this filters out') makes a claim about losing visitors without grounding it in evidence or conditional framing — reads as outcome prediction",
+    "The phrase 'friction points' in the opening is abstract/evaluative without plain-language explanation"
+  ],
+  "requiredFixes": [
+    "Change H3 'What changed' to include a searchable term: 'Clay's CTA shift: access request to trial-or-demo choice' or 'What changed in Clay's trial and demo CTAs'",
+    "Change H3 'Who this filters out' to include a searchable term: 'Who the new CTA path filters out' or 'Clay's CTA choice and the visitors it may lose'",
+    "Rewrite opening sentence to acknowledge the full set of removed CTAs: 'Clay went from a menu of ten CTAs — **\"Request access\"**, **\"Watch video\"**, **\"Get template\"**, **\"Explore documentation\"** — to two primary paths: **\"Start free trial\"** and **\"Get a demo\"**.'"
+  ],
+  "riskFlags": [
+    "Second H3 block opens with 'This change may lose visitors' — presents outcome as likely without data or conditional structure ('if X, then Y')",
+    "The claim 'Most early-stage companies cannot' in the final block is an unsupported generalization not traceable to Clay evidence"
+  ],
+  "seoNotes": [
+    "Section heading 'Clay's conversion path: from gated access to dual-track funnel' is strong — includes company name and searchable terms (conversion, path)",
+    "Two of three H3 subheadings lack searchable terms, reducing discoverability for readers scanning for CTA-specific guidance",
+    "The final H3 heading 'Audit your own page' is action-oriented but does not include Clay's name or a topic anchor — missed opportunity for 'Clay CTA audit' or similar"
+  ],
+  "rewriteInstruction": "Three targeted fixes required. (1) Update both non-compliant H3 headings to include at least one searchable term — company name, CTA, trial, demo, conversion, or funnel. (2) Rewrite the opening sentence to reflect the evidence: Clay removed ten CTAs (list the key ones), not 'one CTA'. (3) Add a conditional frame to the second H3 block opening: 'This change may lose visitors *if* they arrive expecting to browse templates or watch videos before deciding'. This prevents the claim from reading as an outcome prediction.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 18,
+    "scannability": 14,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

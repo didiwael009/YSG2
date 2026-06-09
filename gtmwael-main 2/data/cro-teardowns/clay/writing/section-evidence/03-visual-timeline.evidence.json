@@ -1,0 +1,83 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Clay",
+  "companyUrl": "https://www.clay.com",
+  "articleTitle": "Clay Homepage Teardown: Jul 2021 to Jun 2026",
+  "h1": "How Clay rewrote its homepage over 5 years",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 8,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "analysis-blocks": [
+    {
+      "id": "analysis-2021-07",
+      "label": "Jul 2021 — original state",
+      "period": "Jul 2021",
+      "screenshotPath": "/cro-teardowns/clay/selected/2021-07.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Clay\" — direct product statement.",
+        "Visible section headings include: \"This spreadsheet fills itself.\", \"Why Clay?\", \"Hear from our users — Finding customers\".",
+        "Navigation includes: \"All templates\", \"Find new customers\", \"Prioritize inbound leads\", \"Understand your communities\" — product category framing.",
+        "Section headings later removed include: \"This spreadsheet fills itself.\" and \"Hear from our users — Finding customers\"."
+      ]
+    },
+    {
+      "id": "analysis-2025-01",
+      "label": "Jan 2025 — mid-transition",
+      "period": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/clay/selected/2025-01.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 85.8% — one of the larger layout changes in the dataset.",
+        "H1 in this snapshot: \"Go to market with unique data—and the ability to act on it\".",
+        "New section headings appearing: \"Boost your enrichment coverage—including unique data your competitors miss\", \"Turn data into action with flexible, iterable workflows\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/clay/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Go to market with unique data — and the ability to act on it\" — updated value proposition.",
+        "New section headings include: \"Every GTM data point imaginable, in one place\", \"AI that’s contextual, consistent, and scalable\", \"Orchestrate and act on your data, at scale\".",
+        "CTAs no longer present include: \"Request access\", \"Watch video3 min\", \"Get template->\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Clay",
+      "after": "Go to market with unique data — and the ability to act on it",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "No more million tab opening and manual copy pasting. Automate your prospecting, enrich your customers, and unify your customer data. Fast.",
+      "after": "Access 150+ premium data sources and AI research agents in one platform, then automate growth workflows to turn insights into revenue.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Clay | This spreadsheet fills itself",
+      "after": "Clay | Go to market with unique data—and the ability to act on it"
+    }
+  ]
+}

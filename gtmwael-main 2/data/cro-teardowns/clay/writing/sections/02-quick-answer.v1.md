@@ -1,0 +1,3 @@
+## Quick answer
+
+Clay replaced its viral product-mechanism headline **"This spreadsheet fills itself"** with an outcome-focused platform message: **"Go to market with unique data — and the ability to act on it."** This positioning assumes visitors are already evaluating data infrastructure platforms for their GTM teams, not individuals looking for a spreadsheet hack. If your homepage still drives conversions from practitioners who discover your product through templates or social proof, this shift removes the hooks that made Clay's early growth possible.

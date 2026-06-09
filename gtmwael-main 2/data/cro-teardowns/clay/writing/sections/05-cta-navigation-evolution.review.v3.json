@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "H3 heading 'Clay removed template CTAs: who that path served' is unclear and not scannable — 'who that path served' is ambiguous and not action-oriented",
+    "Paragraph 2 (H3 block 2 body) is 63 words — exceeds the 60-word limit for H3 blocks",
+    "The final test could be more specific to Clay's evidence — it generalizes to 'if you made the same shift' rather than anchoring to Clay's exact evolution",
+    "Minor rhythm issue: all three H3 block opening sentences follow the same pattern (subject-verb-object with CTA quotes)"
+  ],
+  "requiredFixes": [
+    "Rewrite H3 heading 2 to be scannable and searchable: replace 'who that path served' with a concrete descriptor like 'Clay removed template CTAs and documentation links' or 'Template CTAs disappeared: what visitors lost'",
+    "Trim H3 block 2 body to 60 words or under — condense 'Visitors who want to browse a working example before committing to a trial no longer have that option above the fold' to 'Visitors who want a working example before committing now lose that option above the fold' (saves 6 words)"
+  ],
+  "riskFlags": [
+    "Final test says 'you are betting that your headline and feature descriptions alone will convince visitors to start a trial' — this is a causal claim about conversion without data. Should be conditioned: 'you are betting... IF your headline and feature descriptions can carry the full persuasion load'",
+    "H3 block 2 implies removal is a loss ('no longer have that option') without stating the possible trade-off or strategic reason — sounds mildly editorializing rather than audit-neutral"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Clay', 'CTA', and 'conversion' — strong searchable terms",
+    "H3 heading 1 contains 'Clay' and 'CTAs' — searchable",
+    "H3 heading 3 contains 'CTA' and 'Clay' — searchable",
+    "H3 heading 2 lacks searchable terms — 'who that path served' is not a search phrase",
+    "All verbatim CTAs are correctly bold-quoted"
+  ],
+  "rewriteInstruction": "Rewrite H3 heading 2 to be scannable and contain searchable terms (e.g. 'Clay removed template and documentation CTAs'). Trim the body of H3 block 2 to 60 words by condensing the final sentence. In the final test, add a condition to the causal claim: change 'you are betting that your headline and feature descriptions alone will convince visitors' to 'you are betting that your headline and feature descriptions can carry the full persuasion load — test whether that is true by measuring trial starts before and after adding an explore-without-signup option'. Vary the sentence structure in at least one H3 block opening to avoid rhythm monotony.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 11,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

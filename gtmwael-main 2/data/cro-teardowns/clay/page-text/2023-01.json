@@ -1,0 +1,50 @@
+{
+  "title": "Clay - Prospect Differently",
+  "metaDescription": "Clay simplifies your prospecting by bringing together 50+ data sources (access included!) to instantly build highly targeted lead lists from scratch.",
+  "h1": [
+    "Build creative outbound campaigns in minutes."
+  ],
+  "h2": [
+    "Find leads by combining any of Clay's 50+ built-in data providers.",
+    "Target the right leads, at the right time.",
+    "Build automations with all of your favorite outbound tools.",
+    "Jump start with templates",
+    "What our community is saying",
+    "Start molding your dream campaigns 🤲"
+  ],
+  "h3": [],
+  "ctas": [
+    "Join the kiln! (Get access)",
+    "Find leads from LinkedIn\n      \n      \n    Watch livedemo",
+    "Enrich your Hubspot CRM\n      \n      \n    Watch livedemo",
+    "10+ more templates",
+    "& 10+ more sources",
+    "�?� No HubSpot found",
+    "& 50+ more enrichments",
+    "& 200+ more sources",
+    "New Chrome extension✨",
+    "Watch video",
+    "Get the Extension",
+    "you should too",
+    "Get access",
+    "Log in",
+    "Guides",
+    "Integrations",
+    "Pricing",
+    "Chat with us",
+    "Get support on Slack",
+    "Meet Clay",
+    "Careers",
+    "Privacy policy",
+    "Terms of service",
+    "Hudson Christie",
+    "SalesSource, enrich, and qualify your outbound leads.",
+    "CommunityMatch engaged members across platforms to users.",
+    "Changelog",
+    "Blog",
+    "Documentation",
+    "Request access"
+  ],
+  "navLinks": [],
+  "bodyText": "__wm.rw(0); The Wayback Machine - https://web.archive.org/web/20230411003123/https://www.clay.com/ //<![CDATA[ __wm.bt(775,27,25,2,\"web\",\"https://www.clay.com/\",\"20230411003123\",1996,\"https://web-static.archive.org/_static/\",[\"https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3\",\"https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv\"], false); __wm.rw(1); //]]> body { font-size: 1.1111111111111112vw; } /* Max Font Size */ @media screen and (min-width:1440px) { body {font-size: 1rem;} } /* Min Font Size */ @media screen and (max-width:991px) { body {font-size: 1rem;} } /* Snippet gets rid of top margin on first element in any rich text*/ .w-richtext>:first-child { margin-top: 0; } /* Snippet gets rid of bottom margin on last element in any rich text*/ .w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child { margin-bottom: 0; } /* Snippet makes all link elements listed below to inherit color from their parent */ a, .w-nav-link, .w-dropdown-btn, .w-dropdown-toggle, .w-dropdown-link { color: inherit; } /* Snippet prevents all click and hover interaction with an element */ .clickable-off { pointer-events: none; } /* Snippet enables all click and hover interaction with an element */ .clickable-on{ pointer-events: auto; } /* Snippet enables you to add class of div-square which creates and maintains a 1:1 dimension of a div.*/ .div-square::after { content: \"\"; display: block; padding-bottom: 100%; } /*Hide focus outline for main content element*/ main:focus-visible { outline: -webkit-focus-ring-color auto 0px; } /* Make sure containers never lose their center alignment*/ .container-medium, .container-small, .container-large { margin-right: auto !important; margin-left: auto !important; } /*Reset selects, buttons, and links styles*/ .w-input, .w-select, a { color: inherit; text-decoration: inherit; font-size: inherit; } /*Apply \"...\" after 4 lines of text */ .text-style-4lines { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 4; -webkit-box-orient: vertical; } /*Apply \"...\" after 3 lines of text */ .text-style-3lines { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 3; -webkit-box-orient: vertical; } /*Apply \"...\" after 2 lines of text */ .text-style-2lines { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 2; -webkit-box-orient: vertical; } } .nav_dd-link-2 .border, .nav_dd-link-text { font-weight: normal !important; } .skeleton-box , .skeleton-video-wrapper { background: linear-gradient( 120deg, #e5e5e5 30%, #f2f2f2 38%, #f2f2f2 40%, #e5e5e5 48% ); background-size: 200% 100%; background-position: 100% 0; animation: load 2s infinite; } @keyframes load { 100% { background-position:-100% 0; } } .blog-rich-text h2 { margin-bottom: 0rem; font-size: 1.75rem; } .changelog-rich-text h3{ font-size: 1.75rem !important; } @media only screen and (min-width: 991px) and (max-width: 1440px) { html {font-size: 1.11111111vw} } Build creative outbound campaigns in minutes.C"
+}

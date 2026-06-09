@@ -404,8 +404,9 @@ export async function runStrategicShiftDetector(
     }),
   );
 
-  const costUsd = computeCallCost(model, response.inputTokens, response.outputTokens);
-  tracker.add(model, response.inputTokens, response.outputTokens);
+  const callCost = computeCallCost(model, 'strategic-shift', response.inputTokens, response.outputTokens);
+  tracker.add(callCost);
+  const costUsd = callCost.totalCostUsd;
 
   // ── Parse and validate ────────────────────────────────────────────────────
   const rawJson = extractJson(response.content);

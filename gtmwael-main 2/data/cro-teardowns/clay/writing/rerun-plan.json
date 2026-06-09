@@ -1,0 +1,88 @@
+{
+  "createdAt": "2026-06-09T22:43:52.866Z",
+  "slug": "clay",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": true,
+    "finalJudgeScore": 73,
+    "seoScore": 84
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: 02-quick-answer — remove unsupported test recommendation claim",
+        "Judge rerun recommendation: 04-messaging-evolution — remove unsupported audience inference and add conditional framing to causation claims",
+        "## Clay homepage positioning: how the headline changed from 2021 to 2026",
+        "## Should you copy Clay's homepage shift? When enterprise positioning works and when it doesn't",
+        "it only works when visitors arrive with that knowledge already in place — unsupported causal claim, no data linking positioning choice to visitor knowledge requirement",
+        "this shift trades education for aspiration — causal claim without conditional framing or evidence that the trade occurred",
+        "These visitors are evaluating platform capabilities — claim about visitor intent, not description of page messaging",
+        "Copy this if your current homepage attracts users who cannot authorize the contract value you now require — implied conversion outcome without data",
+        "Remove unsupported audience claim: 'The 2021 page spoke to individual salespeople and marketers doing manual prospecting work.' The evidence shows WHAT was said (meta description copy), not WHO the in",
+        "Remove unsupported visitor intent claim: 'these visitors are evaluating platform capabilities'. Replace with page architecture observation: 'The page now frames Clay as a platform with features to com",
+        "Remove unsupported timeline claim: 'Clay made this shift after five years.' Evidence shows the period is Jul 2021 → Jun 2026 but does not confirm when the shift occurred within that window. Replace wi",
+        "Remove unsupported distribution claim: 'That language change may cost you word-of-mouth distribution' — no evidence provided that Clay measured or experienced distribution impact. Replace with conditi",
+        "Add conditional framing to causation claim in opening paragraph: Change 'signaling a shift' to 'consistent with a shift' or 'suggesting Clay moved from'.",
+        "Add condition to causal claim in ## Clay homepage positioning section: Change 'it only works when visitors arrive with that knowledge already in place' to 'this pattern assumes visitors arrive with th",
+        "Add condition to trade-off claim: Change 'this shift trades education for aspiration' to 'this shift may trade education for aspiration IF visitors arrive without category knowledge.'",
+        "Remove evaluation intent claim in ## Clay homepage audience shift section: Change 'These visitors are evaluating platform capabilities' to 'The page now frames Clay as a platform buyers evaluate on ca",
+        "Expand keyword use in body text: 'Clay homepage CRO teardown' appears only in title/meta/intro. Add 1–2 natural mentions in mid-body sections (e.g., 'This CRO teardown of Clay's homepage reveals...' i",
+        "Clarify the 'Quick answer' section language: 'If your homepage still converts practitioners through templates or self-serve exploration, test this shift on a /enterprise subdomain before replacing you",
+        "Add a sentence or callout near the headline acknowledging the time span and data freshness: '5-year snapshot from archived homepages and publicly available statements' — ensures readers know the basis"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "reasons": [
+        "Judge rerun recommendation: 06-lessons-for-saas-teams — remove invented metric threshold and unsupported distribution claim, add conditional framing to conversion predictions",
+        "test this shift on a /enterprise subdomain before replacing your main funnel — framed as direct takeaway from Clay's evidence but the evidence only shows Clay's changes, not a test recommendation",
+        "Remove invented metric threshold: 'If it is under 20%, you do not yet have the traffic mix this move requires.' No evidence supports the 20% threshold. Replace with: 'If most visitors arrive from indi",
+        "Reframe final Quick Answer recommendation: Change 'test this shift on a /enterprise subdomain before replacing your main funnel' to 'the safer version: test this shift on a /enterprise subdomain to va"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "you are betting that your headline and feature descriptions alone will convince visitors to start a trial — causal claim about conversion without data",
+        "Visitors who want to browse a working example before committing to a trial no longer have that option above the fold — implies removal is a loss without stating possible trade-off"
+      ],
+      "priority": "medium",
+      "source": "final-judge"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "The 2021 page spoke to individual salespeople and marketers doing manual prospecting work.",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "these visitors are evaluating platform capabilities",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Clay made this shift after five years.",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "That language change may cost you word-of-mouth distribution",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "What percentage come from companies with 50+ employees? If it is under 20%, you do not yet have the traffic mix this move requires.",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "## Quick answer: Clay homepage",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion — presents correlation as causation without condition",
+      "reason": "cannot map to a specific section — may require manual review"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Causal claim 'it only works when visitors arrive with that knowledge already in place' is presented as fact without conditional framing",
+    "Causal claim 'this shift trades education for aspiration' lacks conditional qualifier",
+    "Term 'category positioning' used without immediate plain-language definition in the same sentence",
+    "H3 heading 'Why it matters' contains no searchable terms (company name, homepage, positioning, messaging, CTA, conversion)",
+    "H3 heading 'What it costs' contains no searchable terms",
+    "Paragraph 2 in 'Why it matters' (45 words) could appear in any company teardown — no Clay-specific evidence anchors",
+    "Final test is generic ('open your homepage...count how many section headings') rather than specific to Clay's evidence",
+    "Section reads strategist-to-strategist in 'Why it matters' block"
+  ],
+  "requiredFixes": [
+    "Add conditional framing to 'it only works when...' — change to 'This positioning typically works when visitors arrive with that knowledge, though other factors (brand awareness, paid intent signals) can substitute'",
+    "Rewrite 'this shift trades education for aspiration' as 'If a visitor arrives from a generic search or referral without category knowledge, this shift may trade education for aspiration'",
+    "Attach plain-language definition to 'category positioning' immediately: 'This is category positioning — when a company stops explaining what the category is and starts claiming a specific place within it'",
+    "Revise H3 'Why it matters' to include searchable term: 'Why Clay's positioning shift matters'",
+    "Revise H3 'What it costs' to include searchable term: 'What this messaging change costs Clay'",
+    "Anchor paragraph 2 of 'Why it matters' with Clay-specific evidence — reference the removed section headings by name or quote a visible current element",
+    "Replace generic final test with Clay-specific version: 'Test: open Clay's current homepage. The four removed section headings (**'This spreadsheet fills itself'**, **'Why Clay?'**, **'Hear from our users'**, **'Finding customers'**) all explained category function. Count how many current section headings do the same. Zero? You are now targeting category-aware visitors only.'"
+  ],
+  "riskFlags": [
+    "'it only works when visitors arrive with that knowledge already in place' — unsupported causal claim, no data linking positioning choice to visitor knowledge requirement",
+    "'this shift trades education for aspiration' — causal claim without conditional framing or evidence that the trade occurred",
+    "'If visitors arrive without knowing what data enrichment tools do...this shift trades education for aspiration' — causal statement lacks condition attachment (if X, then Y only under condition Z)"
+  ],
+  "seoNotes": [
+    "Section heading 'Clay homepage positioning: how the headline changed from 2021 to 2026' contains company name and 'positioning' — good for search",
+    "H3 headings 'Why it matters' and 'What it costs' lack searchable terms — missed opportunity for long-tail queries like 'Clay messaging change' or 'Clay homepage positioning shift'",
+    "Draft uses exact quoted phrases from evidence in bold — helps Google identify primary source material"
+  ],
+  "rewriteInstruction": "Revise all three H3 sub-blocks to pass the plain-language and scannability tests. In 'Why it matters', add Clay-specific evidence anchors (quote removed section headings or current visible elements) to every paragraph so no paragraph could appear in another company's teardown. Replace 'category positioning' with inline plain-language definition in the same sentence. Change all causal claims ('it only works when', 'this shift trades') to conditional statements ('This positioning typically works when...', 'If a visitor arrives from X, this shift may trade...'). Revise H3 headings to include searchable terms: 'Why Clay's positioning shift matters' and 'What this messaging change costs Clay'. Rewrite the final test to be Clay-specific: reference the four removed section headings by name and ask the founder to count current headings that explain category function. The test should take under five minutes and be runnable today.",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 12,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

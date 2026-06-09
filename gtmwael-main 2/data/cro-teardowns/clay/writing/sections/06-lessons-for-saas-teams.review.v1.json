@@ -1,0 +1,54 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Section heading is clever-only with no searchable terms — missing 'Clay', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "Multiple causal claims lack grounding in provided evidence ('This is maturity signaling', 'the page now assumes buyers already know what Clay is')",
+    "Generic paragraph in 'Who should copy this' — no specific Clay evidence anchors, could appear in any enterprise positioning teardown",
+    "Generic paragraph in 'Who should NOT copy this' — no Clay-specific anchoring, reads like SaaS playbook advice",
+    "H3 'The pattern' paragraph exceeds 60 words (approximately 68 words)",
+    "H3 'Who should NOT copy this' paragraph exceeds 60 words (approximately 63 words)",
+    "Final test references 'their traffic composition had already changed' without evidence showing Clay's traffic composition data",
+    "Word count approximately 280 words — exceeds 260-word ceiling by ~20 words",
+    "No verbatim Clay quotes bolded — all references are paraphrased instead of quoted directly",
+    "Claim 'the page now assumes buyers already know what Clay is' not traceable to evidence — meta description still defines what Clay does",
+    "Claim about procurement and IT justification not supported by evidence"
+  ],
+  "requiredFixes": [
+    "Change section heading to include 'Clay' and 'homepage' or 'positioning' — e.g. 'Should you copy Clay's homepage shift to enterprise positioning?'",
+    "Replace 'This is maturity signaling' with evidence-based language — e.g. 'The evidence shows Clay removed product mechanism explanations ('spreadsheet fills itself') and added infrastructure language ('150+ premium data sources')'",
+    "Anchor 'Who should copy this' paragraph to Clay-specific evidence — reference Clay's actual shift from **'Request access'** and **'Get template->'** to **'Get a demo'** and **'Read more about Clay Enterprise'**",
+    "Anchor 'Who should NOT copy this' paragraph to Clay evidence — quote the old navigation items **'All templates'**, **'Find new customers'**, which Clay removed",
+    "Reduce 'The pattern' paragraph to under 60 words by removing unsupported speculation about what the page 'assumes'",
+    "Reduce 'Who should NOT copy this' paragraph to under 60 words",
+    "Replace traffic composition claim with evidence-based test — e.g. 'Open your CRM. If fewer than 30% of demo requests come from companies with 200+ employees, you lack the enterprise pipeline Clay had when they made this shift.'",
+    "Cut section to 260 words maximum — remove speculative sentences",
+    "Bold every verbatim quote from Clay's homepage — **'Request access'**, **'This spreadsheet fills itself.'**, **'Get a demo'**, etc.",
+    "Remove or condition the claim 'buyers already know what Clay is' — the new meta description still explains what Clay does: **'Access 150+ premium data sources and AI research agents in one platform'**"
+  ],
+  "riskFlags": [
+    "'This is maturity signaling: the page now assumes buyers already know what Clay is' — unsupported causal claim about intent, no evidence showing what the page assumes",
+    "'need to justify the purchase to procurement and IT' — no evidence in provided data about procurement or IT involvement",
+    "'Clay could make this shift because their traffic composition had already changed' — evidence does not include traffic composition data",
+    "'killing both motions' — outcome claim without data showing what happens when companies copy this prematurely",
+    "'the page now assumes buyers already know what Clay is' contradicts evidence that new meta description still defines Clay's functionality"
+  ],
+  "seoNotes": [
+    "Section heading misses major SEO opportunity — 'Should SaaS companies copy Clay's homepage strategy?' lacks searchable brand + topic terms",
+    "Missing bolded verbatim quotes reduces snippet-ability for Google featured snippets",
+    "H3 headings are generic ('The pattern', 'Who should copy this') instead of searchable question format",
+    "Section exceeds word count budget, reducing scannability",
+    "No specific Clay element names in H3 headings — missed opportunity for long-tail search terms like 'Clay CTA strategy' or 'Clay enterprise positioning'"
+  ],
+  "rewriteInstruction": "Rewrite with Clay-specific evidence in every paragraph. Change section heading to 'Should you copy Clay's homepage shift to enterprise positioning?' Anchor 'The pattern' to quoted elements: Clay replaced **'This spreadsheet fills itself.'** with **'Every GTM data point imaginable, in one place'** and swapped **'Request access'** + **'Get template->'** for **'Get a demo'** + **'Read more about Clay Enterprise'**. In 'Who should copy this', reference Clay's actual CTA shift as the test case. In 'Who should NOT copy this', quote the removed navigation items (**'All templates'**, **'Find new customers'**) that Clay deleted. Replace all speculation about what Clay 'assumes' or 'signals' with observable changes from evidence. Cut to 260 words by removing unsupported causal claims. Bold every verbatim quote. Final test must reference Clay's specific shift (CTA removal, navigation overhaul) not generic traffic analytics.",
+  "dimensionScores": {
+    "evidenceAccuracy": 12,
+    "specificity": 7,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

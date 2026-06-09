@@ -1,0 +1,3 @@
+## Quick answer: Clay homepage
+
+Clay replaced its viral product headline **"This spreadsheet fills itself"** with an outcome-focused platform message: **"Go to market with unique data — and the ability to act on it."** The meta description shifted from pain-point language ("No more million tab opening") to data infrastructure positioning ("Access 150+ premium data sources and AI research agents"). If your homepage still converts practitioners through templates or self-serve exploration, test this shift on a /enterprise subdomain before replacing your main funnel.

@@ -1,0 +1,78 @@
+TITLE: Clay | This spreadsheet fills itself
+META DESCRIPTION: No more million tab opening and manual copy pasting. Automate your prospecting, enrich your customers, and unify your customer data. Fast.
+
+H1:
+  - Clay
+
+H2:
+  - This spreadsheet fills itself.
+  - Why Clay?
+  - Hear from our users — Finding customers
+  - Pulling structured data from any website as easily as copy paste.
+  - Flexible beyond your wildest dreams.
+  - Some things we're thinking about
+  - Get started today
+  - Product
+  - Contact
+  - Company
+
+H3:
+  - Enrich existing leads and creatively find new ones
+  - Stream in any data from the web and super- target your prospecting
+  - Sync data to and from your existing tools and improve customer operations
+  - The brilliant team at Bulletin creatively built a table to automatically grow both sides of their ecommerce marketplace.
+  - Try it yourself
+  - Discover the people and companies starring your Github repos
+  - Stream in signups and enrich to prioritize onboardings
+  - Identify Shopify stores in a list of ecommerce sites and pull key metrics
+  - Cross-check new leads against your CRM to avoid that double outreach
+  - Map your team's shared LinkedIn network to optimize your prospecting
+  - Stream in Typeform signups and rank respondents by company size
+  - The History of Spreadsheets, and a Glimpse of Their Future
+  - User Research in your Niche Communities (Without Breaking Trust)
+  - Finally… Search your Team’s Shared LinkedIn Network
+
+CTAS / BUTTONS:
+  - Clay
+  - Templates
+  - All templates
+  - Find new customers
+  - Prioritize inbound leads
+  - Understand your communities
+  - Docs
+  - Changelog
+  - About
+  - Jobs
+  - Log in
+  - Request access
+  - Close
+  - Watch video3 min
+  - About the technology ->
+  - Get template->
+  - Explore documentation->
+  - The History of Spreadsheets, and a Glimpse of Their Future
+  - User Research in your Niche Communities (Without Breaking Trust)
+  - Finally… Search your Team’s Shared LinkedIn Network
+  - Log In
+  - Documentation
+  - Chat with us
+  - Tweet with us
+  - Mission
+  - Privacy policy
+  - Terms of service
+  - Hudson Christie.
+
+NAV LINKS:
+  - All templates
+  - Find new customers
+  - Prioritize inbound leads
+  - Understand your communities
+  - Docs
+  - Changelog
+  - About
+  - Jobs
+  - Log in
+  - Request access
+
+BODY TEXT:
+ClayTemplatesAll templatesFind new customersPrioritize inbound leadsUnderstand your communitiesDocsChangelogAboutJobsLog inRequest access CloseThis spreadsheet fills itself.Automate your prospecting, enrich your customers, and unify your customer data. Fast.Watch video 3 minRequest access CloseThis spreadsheet fills itself.Automate your prospecting, enrich your customers, and unify your customer data. Fast.Watch video 3 minRequest accessWhy Clay?About the technology ->Enrich existing leads and creatively find new onesStream in any data from the web and super- target your prospectingSync data to and from your existing tools and improve customer operations Hear from our users — Finding customersThe brilliant team at Bulletin creatively built a table to automatically grow both sides of their ecommerce marketplace. "Clay saved us so much manual work and is helping us streamline our growth workflows across the board. From finding and qualifying new leads, to better understanding and engaging with existing users. It's pretty wild."Ali Kriegsman, Co-Founder and COO, BulletinTry it yourselfDiscover the people and companies starring your Github reposGet template->Stream in signups and enrich to prioritize onboardingsGet template->Identify Shopify stores in a list of ecommerce sites and pull key metrics Get template->Pulling structured data from any website as easily as copy paste.No more copying and pasting from countless tabs or writing custom scrapers. Whether lists of people and companies from directories, search engines or any website, Clay already understands the web.Try it yourselfCross-check new leads against your CRM to avoid that double outreachGet template->Map your team's shared LinkedIn network to optimize your prospectingGet template->Stream in Typeform signups and rank respondents by company sizeGet template->Flexible beyond your wildest dreams.For the tinkerers and developers, integrate with your SaaS apps, internal APIs and databases, and easily extend Clay with custom code that runs right in your tablesExplore documentation->Some things we're thinking aboutThe Clay TeamDec 4, 2020The History of Spreadsheets, and a Glimpse of Their FutureMapping the ways that the core idea behind spreadsheets—to help people technically solve problems without knowing how to code—is now being realized in more powerful ways than ever before.The Clay TeamNov 3, 2020User Research in your Niche Communities (Without Breaking Trust)It starts with understanding who to approach with precision - based on deep insights into your individual community members - and then, doing so with humanity, humility, and curiosity.The Clay TeamDec 1, 2020Finally… Search your Team’s Shared LinkedIn NetworkThey say that the ability to focus on the right people and companies daily is what separates those who build faster. With LinkedIn, prospecting is knowing where to put your effort, starting with lead scoring and mapping your team’s shared network connections.Get started todayHow do you want to use Clay?Tracking inbound leadsSourcing outbound leadsCreating workflow automationsBuilding wild thingsJoin our Beta. It's free.Thank you for joining Clay's waitlist! We'll be in touch.Oops! Something went wrong while submitting the form.ProductLog InTemplatesDocumentationChangelogContactChat with usTweet with usCompanyJobsMissionPrivacy policyTerms of service© Clay Labs 2020 Copyright. Born in Brooklyn. Claymation illustrations by Hudson Christie.

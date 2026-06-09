@@ -1,0 +1,3 @@
+# Clay Homepage Teardown: How a Viral Spreadsheet Tool Repositioned as an Enterprise GTM Platform
+
+Between July 2021 and June 2026, Clay replaced its product mechanism headline — **"This spreadsheet fills itself"** — with an outcome-focused platform message: **"Go to market with unique data — and the ability to act on it."** The company removed template exploration CTAs and added **"Get a demo"** and **"Clay Enterprise"** calls-to-action, signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion. This teardown walks through the messaging, navigation, and funnel changes that accompany a move from individual practitioner tool to department-level data infrastructure — and when that shift makes sense for your own product.

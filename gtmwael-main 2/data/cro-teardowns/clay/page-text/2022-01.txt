@@ -1,0 +1,57 @@
+TITLE: Clay - Create live lists of people, without a line of code.
+META DESCRIPTION: Clay's spreadsheet helps you find, enrich and act on people and company data from any source - without a line of code. Get started for free, today.
+
+H1:
+  - Create live lists of people for
+  - your
+
+H2:
+  - How Clay works
+  - Superpowers for your workflows
+  - Why teamslove Clay
+  - Why Clay?
+  - Start building workflows in minutes.
+
+H3:
+  - Find. Stream in data from anywhere
+  - Enrich. Magically select ideal attributes
+  - Act. Prioritize and score your data
+  - Connect. Lookup and sync with your stack
+
+CTAS / BUTTONS:
+  - Start your 14-day free trial
+  - Download our Chrome extension to easily scrape any data and export it straight to Clay
+  - Growth Enrich users with ideal attributes and internal data to identify product qualified leads.
+  - Community Track engaged members across Twitter, Github, Slack and match them to your users.
+  - Sales Build your TAM of target leads, cross check against your CRM and find contacts to create accounts.
+  - Recruiting Create lists of candidates based on companies, skills, titles, tenure and add them to your ATS.
+  - Tell us What would make your heart sing?
+  - Log in
+  - Docs
+  - Integrations
+  - Pricing
+  - Chat with us
+  - Tweet with us
+  - Slack with us
+  - Meet Clay
+  - Careers
+  - Privacy policy
+  - Terms of service
+  - Hudson Christie
+  - Sales Source, enrich, and qualify your outbound leads.
+  - Recruiting Create custom lists of candidates and sync to ATS.
+  - User signups Enrich signups and identify product qualified leads.
+  - Community Match engaged members across platforms to users.
+  - Mainstreet Learn how Mainstreet uses Clay to prioritize thousands of inbound signups.
+  - Leopard Discover how Leopard uses Clay to build the strongest community of women engineers.
+  - Cypress Keep your eyes peeled for a new case study coming soon.
+  - Changelog
+  - Contact Sales
+  - Request access
+  - Features
+  - Start free trial
+
+NAV LINKS:
+
+BODY TEXT:
+Create live lists of people forCreate live lists of people foryouryourmarketing.Clay helps you find, enrich and act on data from any source - without a line of code.Start your 14-day free trial✓ No credit card required 2 min demoTrusted by teams atHow Clay worksLet go of the manual work, messy data sets, and siloed tools in your stack.Stream in Webflow waitlist signupsStream in signups from SegmentFind. Stream in data from anywhere Easily pull in data from your CRM, signup form, LinkedIn, Github, or any platform via webhook.Add Clearbit to identify individualsAdd Builtwith to search their stack Enrich. Magically select ideal attributesAdd data using apps like Builtwith, tools like Mixpanel or Clay scrapers for keyword search or open roles.Filter for companies with 10+ engineersFilter for teams with open talent rolesAct. Prioritize and score your dataProgram Clay to automatically surface ideal leads using qualifying formulas, filters, or deduplication.Grant access from Customer.ioAdd or update right in your HubspotConnect. Lookup and sync with your stackClose the loop by sending data to a CRM, Slack, or any HTTP endpoint to make your own magic.Pull structured data from any websiteEver find data on a website you wish you could play with? Download our Chrome extension to easily scrape any data and export it straight to ClayWatch videoConnect Clay with anythingSuperpowers for your workflowsGrowthEnrich users with ideal attributes and internal data to identify product qualified leads.CommunityTrack engaged members across Twitter, Github, Slack and match them to your users.SalesBuild your TAM of target leads, cross check against your CRM and find contacts to create accounts.PartnershipsPrioritize companies with custom data and find the perfect point of contact.COMING SOONRecruiting Create lists of candidates based on companies, skills, titles, tenure and add them to your ATS.Tell usWhat would make your heart sing?Why teamslove Clay I tell every growth leader in my community to check out Clay. We built a custom sign up enrichment system, calling data from different databases, qualifying and updating our Hubspot, without needing any help from our engineers.Vincent Plassard, Growth at Reveal & Founder at Growth LetterI can't tell you how much time Clay has saved our growth and revenue teams. We've been early users for a while and have consistently used it to find quality leads and contacts to power the growth of our marketplace.Ali Kriegsman, Co-Founder and Chief Operating Officer, BulletinI'd been exploring low code tools to automate our internal operations for a while before finding Clay. It's been such a superpower for our sales operations and recruiting teams. Varun Anand, Building Employee Benefits, Newfront InsuranceSlide 2 of 3.Why Clay?Find qualified leads fastBusiness-to-consumer ecosystem advisor niche market series A financing metrics network effects investor customer android. Paradigm shift gen-z pitch monetization startup network.Prioritize with confidenceBusiness-to-consumer ecosystem advisor niche market series A financing metrics network effects investor customer android. Paradigm shift gen-z pitch monetization startup network.Keep data fresh in every toolBusiness-to-consumer ecosystem advisor niche market series A financing metrics network effects investor customer android. Paradigm shift gen-z pitch monetization startup network.Start building workflows in minutes. Get access for free👇What's in your spreadsheet? 👀Sales leads 🖖Candidates 👤User signups 🪴Community members 🦋I don't know yet 🌀 ✓ No credit card requiredSent wonderfully, we'll be in touch soon!Oh rats! Please try again.Close ProductLog inDocsIntegrationsPricingContactChat with usTweet with usSlack with usCompanyMeet ClayCareersPrivacy policyTerms of service© Clay Labs 2021 Copyright. Born in Brooklyn. Claymation illustrations by the wonderful Hudson Christie.Use CasesSalesSource, enrich, and qualify your outbound leads.RecruitingCreate custom lists of candidates and sync to ATS.User signupsEnrich signups and identify product qualified leads.CommunityMatch engaged members across platforms to users.Case StudiesMainstreetLearn how Mainstreet uses Clay to prioritize thousands of inbound signups.LeopardDiscover how Leopard uses Clay to build the strongest community of women engineers. CypressKeep your eyes peeled for a new case study coming soon.IntegrationsChangelogDocsPricingMeet ClayCareersContact SalesLog inRequest accessUse CasesSalesSource, enrich, and qualify your outbound leads.RecruitingCreate custom lists of candidates and sync to ATS.User signupsEnrich signups and identify product qualified leads.CommunityMatch engaged members across platforms to users.Case StudiesMainstreetLearn how Mainstreet uses Clay to prioritize thousands of inbound signups.LeopardDiscover how Leopard uses Clay to build the strongest community of women engineers. CypressKeep your eyes peeled for a new case study coming soon.Use CasesFeaturesIntegrationsChangelogProductMeet ClayCareersAboutDocsLog inStart free trial

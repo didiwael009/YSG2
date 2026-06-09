@@ -297,8 +297,9 @@ export async function runSeoIntentPlanner(
     }),
   );
 
-  const costUsd = computeCallCost(model, response.inputTokens, response.outputTokens);
-  tracker.add(model, response.inputTokens, response.outputTokens);
+  const callCost = computeCallCost(model, 'seo-intent', response.inputTokens, response.outputTokens);
+  tracker.add(callCost);
+  const costUsd = callCost.totalCostUsd;
 
   // ── Parse ─────────────────────────────────────────────────────────────────
   const rawJson = extractJson(response.content);

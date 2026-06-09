@@ -1,0 +1,56 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Section word count is ~180 words (exactly at upper limit, but content density is low for three H3 blocks)",
+    "H3 heading 'Clay's CTA shift opens the funnel' lacks searchable terms — no company name, no 'CTA', 'homepage', 'conversion'",
+    "H3 heading 'Who loses a path in' is clever-only with zero searchable terms",
+    "H3 heading 'Check your own CTA friction' is generic advice — lacks company name anchor",
+    "Paragraph 1 (H3-1 body) is ~65 words — exceeds 60-word cap",
+    "H3-2 body contains unsupported outcome claim: 'you may be losing them at the CTA stage' — no data on conversion impact",
+    "H3-2 body contains causal claim without condition: 'The page stopped offering a low-commitment exploration path' states outcome as fact without 'if [visitor type]' qualifier",
+    "H3-2 opener addresses 'people who want to see a working template' but provides no evidence that this segment existed or mattered to Clay",
+    "H3-3 final test is generic ('count how many visitors leave') — not a specific, runnable <5min test anchored to Clay's evidence",
+    "Multiple paragraphs are portable — H3-2 entire block and H3-3 could appear in any SaaS teardown",
+    "Plain language violation: 'intent' used without definition (line 1, H3-1)",
+    "Plain language violation: 'CTA stage' used without plain-language explanation (line 1, H3-2)",
+    "Forbidden term 'intent signal' appears implicitly as 'filter intent' (line 1, H3-1) — counts as expert jargon without definition"
+  ],
+  "requiredFixes": [
+    "Rewrite H3-1 heading to include 'Clay' and 'CTA' or 'conversion' — e.g. 'Clay's primary CTAs drop all gates'",
+    "Rewrite H3-2 heading to include searchable terms — e.g. 'Clay removes template CTAs: who loses access'",
+    "Rewrite H3-3 heading to anchor to Clay — e.g. 'Test: does your CTA set match Clay's post-2021 shift?'",
+    "Break H3-1 body into two sentences to drop below 60 words",
+    "Remove or condition the claim 'you may be losing them at the CTA stage' — no conversion data supports this",
+    "Add condition to 'The page stopped offering a low-commitment exploration path' — e.g. 'for visitors who want to see a template before signing up'",
+    "Replace H3-3 final test with a specific, runnable action — e.g. 'Open your homepage. Count how many CTAs above the fold require zero email. If the answer is zero, you're asking for commitment before giving context — like Clay in 2021.'",
+    "Rewrite H3-2 to anchor to Clay's specific evidence — e.g. which template CTAs were removed, what they offered, what replaced them",
+    "Define 'intent' in H3-1 — e.g. 'without needing gated entry to filter who's serious (intent)'",
+    "Define 'CTA stage' in H3-2 or replace with plain language — e.g. 'at the point where they decide whether to click'"
+  ],
+  "riskFlags": [
+    "UNSUPPORTED OUTCOME: 'you may be losing them at the CTA stage' — no data on conversion impact or visitor loss",
+    "UNSUPPORTED CAUSATION: 'This signals confidence: the page now bets that messaging alone qualifies visitors' — no evidence that messaging quality changed or that this was the intent",
+    "UNSUPPORTED SEGMENT CLAIM: 'People who want to see a working template before starting a trial' — no data that this segment existed, converted, or mattered to Clay",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'The page stopped offering a low-commitment exploration path' — states as universal fact, no qualifier for visitor type or context",
+    "INVENTED STRATEGIC INTENT: 'without needing gated entry or template browsing to filter intent' — no evidence this was the filtering strategy or that it changed for this reason"
+  ],
+  "seoNotes": [
+    "NEGATIVE: Section heading 'Clay's conversion path: from gated access to open trial' contains company name and 'conversion' — GOOD",
+    "NEGATIVE: H3-1 heading 'Clay's CTA shift opens the funnel' lacks 'CTA' as searchable term (appears only in possessive form, not standalone)",
+    "NEGATIVE: H3-2 and H3-3 headings lack company name and topic terms",
+    "POSITIVE: Section heading includes 'conversion path' which is searchable",
+    "NEGATIVE: Overall heading structure will not support featured snippet or PAA extraction — headings are too abstract"
+  ],
+  "rewriteInstruction": "This section violates multiple hard caps: it contains unsupported outcome claims (cap at 60), uses expert jargon without definitions (cap plainLanguage at 5), and has portable paragraphs that could appear in any SaaS teardown. Rewrite with these priorities: (1) Anchor every paragraph to Clay's specific CTA evidence — quote the exact CTAs added and removed, name what they asked for, describe what path they opened or closed. (2) Remove all outcome claims ('you may be losing them', 'signals confidence') unless you can trace them to conversion data in the evidence. (3) Rewrite all three H3 headings to include 'Clay' and a searchable term ('CTA', 'trial', 'demo'). (4) Replace the H3-2 block entirely — it currently invents a visitor segment with no evidence. Instead, describe what the removed CTAs (like 'Get template->') actually offered and what the new CTAs ('Start building for free') ask for. (5) Rewrite the H3-3 final test to be specific and runnable in under five minutes, anchored to Clay's evidence — e.g. 'Open your homepage. Count how many CTAs above the fold let someone explore without signing up. Clay went from two (templates, documentation) to zero. If you're doing the same, you're betting on message-only qualification.' (6) Define any expert term (intent, CTA stage, friction) in plain language the first time it appears, then never use it again. (7) Break the 65-word paragraph in H3-1 into two sentences. (8) Eliminate all causal claims without attached conditions — every 'this caused' or 'this signals' must ship with 'if [context]' or be cut.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 5,
+    "plainLanguage": 8,
+    "scannability": 6,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

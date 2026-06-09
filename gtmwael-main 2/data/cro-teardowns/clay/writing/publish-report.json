@@ -1,0 +1,43 @@
+{
+  "publishedAt": "2026-06-09T22:47:03.024Z",
+  "slug": "clay",
+  "dryRun": false,
+  "forced": true,
+  "qualityGates": {
+    "finalJudgePass": false,
+    "finalJudgeScore": 82,
+    "seoPass": true,
+    "seoScore": 87,
+    "unsupportedClaims": [
+      "The company removed template exploration CTAs and added 'Get a demo' and 'Clay Enterprise' calls-to-action, signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion.",
+      "If visitors arrive without knowing what data enrichment tools do — for example, from a search for 'spreadsheet automation' or a referral from a productivity blog — this shift trades education for aspiration.",
+      "The original homepage spoke to someone doing manual prospecting work themselves.",
+      "This is language for someone comparing data vendors and workflow platforms, not someone looking to speed up their own prospecting.",
+      "Does your homepage still speak to the end user when your revenue model now depends on department-level buyers?",
+      "This change may lose visitors who want to browse templates or watch an explainer video before deciding anything.",
+      "Clay can make that bet. Most early-stage companies cannot — they still depend on the homepage to explain what the product does and why it matters.",
+      "Clay moved from 'Request access' to 'Get a demo' — that shift only works when inbound volume can support a sales team.",
+      "The evidence: if your demo requests already mention competitor names unprompted, buyers are comparing platforms before they arrive.",
+      "Clay could swap 'Get template->' for 'Read more about Clay Enterprise' because their inbound requests had already shifted to enterprise evaluation language."
+    ]
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [
+    "Final judge FAIL — score 82/100 (need ≥ 90)",
+    "10 unsupported claim(s): The company removed template exploration CTAs and added 'Get a demo' and 'Clay Enterprise' calls-to-action, signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion.; If visitors arrive without knowing what data enrichment tools do — for example, from a search for 'spreadsheet automation' or a referral from a productivity blog — this shift trades education for aspiration."
+  ],
+  "articlePath": "src/content/cro-teardown/articles/clay.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

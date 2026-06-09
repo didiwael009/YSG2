@@ -1,0 +1,39 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "The term 'category positioning' is used without a plain-language definition, violating the plain-language requirement.",
+    "Two causal/outcome claims lack conditional framing: 'dropping the category explanation may reduce conversion' and 'you may be targeting buyers who already know you — and losing everyone else'.",
+    "The 'What it costs' H3 block (paragraph 2) is 63 words, exceeding the 60-word limit for H3 body paragraphs.",
+    "The section heading is missing the company name 'Clay' — it only says 'Clay's homepage positioning', which is acceptable, but could be stronger for search.",
+    "The 'What it costs' section makes a conversion claim ('may reduce conversion') without supporting data from the evidence.",
+    "The final test is somewhat generic — it could apply to many companies, not just Clay."
+  ],
+  "requiredFixes": [
+    "Add a plain-language definition immediately after 'category positioning' in the 'Why it matters' section. Example: 'This is category positioning — staking a claim in an established market — the page now treats...'",
+    "Reframe both outcome claims in 'What it costs' with explicit conditions. Example: 'If your homepage depends on non-branded search AND your traffic includes visitors unfamiliar with your category, dropping the explanation may reduce conversion.'",
+    "Split the 63-word paragraph in 'What it costs' into two shorter paragraphs or trim to under 60 words.",
+    "Make the final test more specific to Clay's evidence. Example: 'Test: open your homepage and count how many of Clay's removed phrases ('This spreadsheet fills itself') would help a first-time visitor. If you find three or more category-explanation phrases missing, you may be Clay-ing your own homepage.'"
+  ],
+  "riskFlags": [
+    "'dropping the category explanation may reduce conversion' — outcome claim without data or conditional framing",
+    "'you may be targeting buyers who already know you — and losing everyone else' — causal claim without condition attached",
+    "'The page stopped teaching the category and started claiming it' — metaphorical phrasing that could be read as causal without evidence of intent"
+  ],
+  "seoNotes": [
+    "Section heading includes 'Clay', 'homepage', 'positioning', and 'headline' — strong searchable terms present.",
+    "The H3 headings ('What changed', 'Why it matters', 'What it costs') are generic and could benefit from more specific terms like 'Clay headline evolution' or 'positioning shift impact'.",
+    "Meta-level: the section successfully quotes verbatim headlines in bold, meeting SEO snippet-ability requirements."
+  ],
+  "rewriteInstruction": "Trim the 'What it costs' paragraph to under 60 words or split it. Add a plain-language definition for 'category positioning' immediately after first use (e.g., '— staking a claim in an established market —'). Reframe both outcome claims with explicit conditions: 'If [your traffic profile matches X], then [this change] may [outcome].' Replace the final test with a Clay-specific version that references the removed phrase 'This spreadsheet fills itself' or another element from the evidence. Ensure no causal claim stands without a condition attached.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 11,
+    "plainLanguage": 12,
+    "scannability": 9,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

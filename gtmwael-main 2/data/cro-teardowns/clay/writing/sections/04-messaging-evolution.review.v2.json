@@ -1,0 +1,43 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The opening sentence of the first H3 ('The 2021 page spoke to individual salespeople and marketers doing manual prospecting work') is not directly traceable to the evidence — it is an inference about WHO, when the evidence provides only WHAT (the meta description copy). The inference is reasonable but not quoted.",
+    "The phrase 'language for someone personally frustrated by repetitive tasks' is an interpretive claim about emotional state, not evidence-based.",
+    "The final test is well-constructed but slightly generic — it could be made more Clay-specific by referencing the actual CTAs that changed (e.g. 'template exploration' → 'demo').",
+    "Word count is approximately 190 words — within target.",
+    "All verbatim quotes are correctly bolded.",
+    "All three H3 sub-blocks are present.",
+    "Section heading contains 'Clay homepage' and 'audience' — searchable.",
+    "Paragraph lengths: H3-1: ~55 words (pass), H3-2: ~50 words (pass), H3-3: ~75 words (OVER — penalise).",
+    "No forbidden jargon terms repeated.",
+    "No expert terms used without immediate plain-language definition.",
+    "The practical takeaway in the final H3 is delivered in the last two sentences, not the first two — this violates the 'early takeaway' requirement."
+  ],
+  "requiredFixes": [
+    "Move the practical test ('Open your homepage and count...') to the FIRST sentence of the final H3 block, not the last. The current structure buries the founder takeaway.",
+    "Shorten the final H3 paragraph to under 60 words. Current count: ~75 words. Split into two shorter paragraphs or tighten the test description.",
+    "Replace 'spoke to individual salespeople and marketers doing manual prospecting work' with evidence-grounded language: 'The 2021 page addressed someone doing manual prospecting — the meta description promised [quote].' This removes the unsupported audience inference.",
+    "Remove or reframe 'language for someone personally frustrated by repetitive tasks' — this is an emotional inference not traceable to the evidence. Replace with: 'pain-point language targeting individual workflow friction.'"
+  ],
+  "riskFlags": [
+    "The claim 'The 2021 page spoke to individual salespeople and marketers' is an audience inference not directly supported by quoted copy. The evidence shows WHAT was said, not WHO the intended buyer was. While the inference is reasonable, it is not traceable.",
+    "The phrase 'these visitors are evaluating platform capabilities' is a claim about visitor intent, not a description of the page's messaging. Reframe as: 'The page now frames Clay as a platform buyers evaluate on capability, not a tool users adopt on impulse.'"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Clay homepage' + 'audience shift' + 'GTM platform' — strong searchable terms.",
+    "H3 subheadings are plain and descriptive ('Who the old page served') — good for Google featured snippet extraction.",
+    "The section delivers a clear before/after contrast in under 200 words — excellent for position-zero targeting."
+  ],
+  "rewriteInstruction": "Move the practical test to the opening of the final H3 block ('Test: Open your homepage and count...'). Then add one sentence explaining what the test reveals before describing Clay's shift. Shorten the final paragraph to under 60 words by removing redundant phrasing ('paths for immediate self-serve exploration' / 'paths for sales-assisted evaluation' — collapse to one list). In the first H3, replace the audience inference ('spoke to individual salespeople and marketers') with evidence-first phrasing ('The 2021 page addressed someone doing [task] — the meta description promised [quote]'). Remove the unsupported emotional claim ('language for someone personally frustrated') and replace with 'pain-point language targeting workflow friction.' These fixes will tighten scannability and eliminate interpretive overreach while preserving the strong structure.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

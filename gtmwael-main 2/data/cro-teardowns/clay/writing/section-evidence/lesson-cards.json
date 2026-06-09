@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Clay replaced \"This spreadsheet fills itself\" with a GTM workflow promise",
+    "category": "Positioning",
+    "body": "The original H1 **\"This spreadsheet fills itself\"** positioned Clay as a productivity tool. The new headline **\"Go to market with unique data — and the ability to act on it\"** shifts the frame to go-to-market strategy execution. This suggests Clay is moving upmarket — targeting teams who buy workflow platforms, not individuals looking for a clever spreadsheet hack."
+  },
+  {
+    "number": "02",
+    "title": "Clay removed 8 navigation items including \"Find new customers\" and \"Prioritize inbound leads\"",
+    "category": "Navigation",
+    "body": "The old navigation included use-case labels like **\"Find new customers\"**, **\"Prioritize inbound leads\"**, and **\"Understand your communities\"**. All eight were removed. The new structure likely consolidates these into product-led sections. This pattern suggests Clay is betting that visitors already understand their problem — the navigation no longer needs to recruit them into a category."
+  },
+  {
+    "number": "03",
+    "title": "\"Every GTM data point imaginable\" is a competitive differentiation claim, not a feature list",
+    "category": "Messaging",
+    "body": "New section headings include **\"Every GTM data point imaginable, in one place\"** and **\"AI that's contextual, consistent, and scalable\"**. These are not capability descriptions — they are positioning statements. The language signals that Clay is no longer competing on \"easier data enrichment\" but on breadth and AI quality. This is a move toward platform-level differentiation."
+  },
+  {
+    "number": "04",
+    "title": "Clay's meta description went from 23 words to 20 — and dropped all emotional language",
+    "category": "Messaging",
+    "body": "The old description opened with **\"No more million tab opening and manual copy pasting\"** — a pain-first hook. The new version is **\"Access 150+ premium data sources and AI research agents in one platform\"** — clinical and feature-forward. This likely indicates a shift in traffic strategy: less SEO chasing \"how do I automate prospecting\" queries, more direct navigation from buyers who already know Clay exists."
+  }
+]

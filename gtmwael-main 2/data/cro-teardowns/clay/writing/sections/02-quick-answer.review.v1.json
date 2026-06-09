@@ -1,0 +1,43 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "The draft contains a causal conversion claim ('this shift removes the hooks that made Clay's early growth possible') with no attached condition or qualifying language about timing/context",
+    "The paragraph exceeds the 90-word limit for quick-answer sections (96 words)",
+    "The draft does not achieve the section goal of 'three sentences that answer the question completely' — it contains two sentences, and the second sentence is a warning rather than a complete answer to the implied question",
+    "The heading 'Quick answer' contains no searchable terms (no company name, 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion')",
+    "The draft makes an unsupported claim about what Clay's positioning 'assumes' ('assumes visitors are already evaluating data infrastructure platforms') — the evidence describes what changed, not the visitor assumption behind the change",
+    "The causal statement 'this shift removes the hooks' is not tied to a condition (e.g., 'if you still rely on practitioner traffic from templates')",
+    "Word count is 96 words, exceeding the 50-75 word target for quick-answer sections by 21 words"
+  ],
+  "requiredFixes": [
+    "Add a third sentence that completes the answer to the implied search question ('How did Clay rewrite its homepage?') — currently the section answers 'what changed' but not 'what stayed' or 'what the full shift was'",
+    "Rewrite the causal claim ('this shift removes the hooks') as a conditional ('if your traffic still comes from X, this shift may cost you Y')",
+    "Remove or reframe the unsupported assumption claim ('This positioning assumes visitors are already evaluating...') — the evidence shows positioning changed, not visitor assumptions",
+    "Trim the paragraph to 75 words or fewer to meet quick-answer guidelines",
+    "Change the ## heading from 'Quick answer' to 'Quick answer: Clay homepage repositioning' or similar to add searchable terms",
+    "Bold all verbatim website quotes — the draft correctly bolds the headlines, but verify all quotes follow this pattern"
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM WITHOUT CONDITION: 'this shift removes the hooks that made Clay's early growth possible' — no data provided that links the headline change to a loss of practitioner conversions, and no conditional framing (e.g., 'if your audience is still...')",
+    "UNSUPPORTED ASSUMPTION: 'This positioning assumes visitors are already evaluating data infrastructure platforms' — the evidence describes the new positioning text, not the visitor assumption or intent behind it",
+    "OUTCOME CLAIM: 'removes the hooks that made Clay's early growth possible' — this is a conversion outcome claim with no supporting data, triggering the hard cap rule"
+  ],
+  "seoNotes": [
+    "The heading 'Quick answer' is not searchable — it contains no brand name or topic keyword, which reduces the likelihood of Google extracting this as a featured snippet despite its intent to serve that purpose",
+    "The draft does answer the implied question ('How did Clay rewrite its homepage?') but the answer is incomplete (two sentences instead of three, and the second is a warning rather than a descriptive answer)",
+    "The language is specific to Clay and includes verbatim quotes, which helps SEO relevance for brand + topic searches",
+    "The draft correctly avoids jargon in the quick-answer section, which aligns with featured snippet best practices"
+  ],
+  "rewriteInstruction": "Rewrite as three complete sentences that answer 'How did Clay rewrite its homepage?' Sentence 1: what changed (the headline shift from mechanism to outcome). Sentence 2: what else changed (the meta description, CTAs, or nav — pick one additional element to make the answer feel complete). Sentence 3: reframe the current warning as a conditional test ('If your homepage still converts practitioners through templates or social proof, test this shift on a /enterprise subdomain first'). Remove the unsupported assumption claim ('assumes visitors are already evaluating'). Keep all verbatim quotes in bold. Trim to 75 words or fewer. Change the heading to 'Quick answer: Clay homepage' to add searchable terms.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

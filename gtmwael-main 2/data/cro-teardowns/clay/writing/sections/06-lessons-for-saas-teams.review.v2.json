@@ -1,0 +1,35 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Section heading is searchable but generic — could specify 'Clay homepage' for stronger SEO",
+    "The phrase 'the pattern' in H3 #1 opening is slightly template-y, though not a hard violation",
+    "H3 #2 'Who should copy this' paragraph is 74 words — exceeds the 60-word cap by 14",
+    "H3 #3 'Who should NOT copy this' paragraph is 63 words — exceeds the 60-word cap by 3"
+  ],
+  "requiredFixes": [
+    "Split the second H3 paragraph into two: deliver the 'if you already removed your waitlist' takeaway in the first two sentences, then move the competitor-mention evidence into a second, shorter paragraph",
+    "Split the third H3 paragraph: deliver the 'do not copy if templates still listed' takeaway in the first two sentences, then move the viral distribution consequence into a second paragraph under 60 words"
+  ],
+  "riskFlags": [
+    "The claim 'that shift only works when inbound volume can support a sales team' implies causation but the evidence shows correlation only — Clay made the shift, we observe the CTA change, but no direct volume data supports the necessity claim",
+    "The statement 'Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends' is a prediction of outcome without attached condition or evidence from Clay's own experience"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Clay' and 'homepage' — strong for search intent around company-specific teardowns",
+    "Each H3 heading uses plain search terms: 'pattern', 'who should copy', 'who should NOT copy', 'test before you copy' — all likely to match queries from founders researching positioning shifts",
+    "The final H3 'The test before you copy' is especially strong for conversion — founders searching for actionable advice will land here",
+    "Bolded verbatim quotes throughout support snippet extraction for Google results"
+  ],
+  "rewriteInstruction": "Split the second and third H3 paragraphs to meet the 60-word cap. In H3 #2, deliver the 'if you already removed your waitlist' takeaway in sentences 1–2, then break to a new paragraph for the competitor-mention evidence. In H3 #3, deliver the 'do not copy if templates still listed' takeaway in sentences 1–2, then break to a new paragraph for the viral distribution consequence. Soften the two causal claims flagged in riskFlags by adding conditions: change 'that shift only works when' to 'Clay's shift required' and change 'will reduce pipeline' to 'risks reducing pipeline if [condition]'. The section is otherwise strong — specific, scannable, and anchored to Clay's evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 9,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

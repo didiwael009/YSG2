@@ -1,0 +1,148 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "Clay",
+  "companyUrl": "https://www.clay.com",
+  "articleTitle": "Clay Homepage Teardown: Jul 2021 to Jun 2026",
+  "h1": "How Clay rewrote its homepage over 5 years",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 8,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2021 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "8 added · 6 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Clay",
+      "after": "Go to market with unique data — and the ability to act on it",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "No more million tab opening and manual copy pasting. Automate your prospecting, enrich your customers, and unify your customer data. Fast.",
+      "after": "Access 150+ premium data sources and AI research agents in one platform, then automate growth workflows to turn insights into revenue.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Clay | This spreadsheet fills itself",
+      "after": "Clay | Go to market with unique data—and the ability to act on it"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Clay evolved from a viral tool positioned as 'the spreadsheet that fills itself' to an enterprise GTM platform by replacing product mechanism messaging with outcome-oriented data infrastructure positioning and removing self-serve exploration CTAs in favor of demo-gated enterprise sales motions.",
+    "old_positioning_frame": "A novel spreadsheet automation tool that eliminates manual prospecting through self-filling functionality",
+    "new_positioning_frame": "A comprehensive go-to-market data infrastructure platform combining 150+ data sources, AI research agents, and workflow orchestration for revenue generation",
+    "buyer_shift": "Individual practitioners seeking to automate repetitive prospecting work → GTM leadership evaluating data infrastructure and revenue operations platforms",
+    "funnel_shift": "Bottom-funnel activation (immediate hands-on tool exploration via templates and self-serve access) → Mid-funnel evaluation (demo-led enterprise sales process requiring business case validation)",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Clay",
+        "new": "Go to market with unique data — and the ability to act on it",
+        "meaning": "The shift from brand-name-only H1 to outcome-focused positioning suggests Clay is no longer relying on existing brand recognition to communicate value, instead targeting buyers who evaluate based on business outcomes rather than product novelty."
+      },
+      {
+        "element": "Meta description",
+        "old": "No more million tab opening and manual copy pasting. Automate your prospecting, enrich your customers, and unify your customer data. Fast.",
+        "new": "Access 150+ premium data sources and AI research agents in one platform, then automate growth workflows to turn insights into revenue.",
+        "meaning": "The replacement of pain-point language ('million tab opening') with platform infrastructure language ('150+ premium data sources') signals a shift from individual productivity tool to enterprise data platform category, positioning against data vendors and workflow orchestration systems rather than spreadsheet alternatives."
+      },
+      {
+        "element": "Primary CTAs",
+        "old": "Request access · Watch video3 min · Get template-> · Explore documentation->",
+        "new": "Get a demo · Start free trial · Start building for free · Read case study · Read more about Clay Enterprise",
+        "meaning": "The removal of 'Request access' and template exploration CTAs in favor of 'Get a demo' and 'Clay Enterprise' suggests a deliberate shift from product-led-growth viral mechanics to sales-assisted enterprise conversion, consistent with longer sales cycles and higher contract values."
+      },
+      {
+        "element": "Navigation",
+        "old": "All templates · Find new customers · Prioritize inbound leads · Understand your communities",
+        "new": "ProductProduct · Use CasesUse Cases · SolutionsSolutions · ResourcesResources · CompanyCompany · PricingPricing",
+        "meaning": "The replacement of use-case-specific templates with enterprise software navigation hierarchy (Product/Solutions/Resources) points to a shift from viral distribution through copyable templates to structured enterprise buyer education and multi-stakeholder evaluation."
+      },
+      {
+        "element": "Section headings",
+        "old": "This spreadsheet fills itself. · Flexible beyond your wildest dreams.",
+        "new": "Every GTM data point imaginable, in one place · AI that's contextual, consistent, and scalable · Backed by enterprise-grade security and scale",
+        "meaning": "The move from product mechanism ('spreadsheet fills itself') and flexibility claims to data infrastructure ('GTM data point'), AI capabilities, and enterprise requirements ('security and scale') is consistent with selling to IT/RevOps buyers who evaluate platforms on integration, governance, and scalability rather than individual user delight."
+      }
+    ],
+    "copy_this_if": "Your product has achieved strong bottom-up adoption with individual users but revenue expansion requires selling multi-seat licenses to department leadership, and your current messaging attracts users who cannot authorize budget for your actual pricing tier.",
+    "do_not_copy_this_if": "You still rely on viral social proof and word-of-mouth distribution from practitioner communities, as removing self-serve exploration paths before establishing enterprise sales infrastructure will create a dead zone where neither motion converts effectively.",
+    "safer_version_for_early_stage_saas": "Test a bifurcated homepage with persistent 'Start free trial' CTA alongside new 'Talk to sales' option, or create a dedicated /enterprise subdomain for platform positioning while maintaining product mechanism messaging on the main homepage until enterprise pipeline proves predictable.",
+    "risk_if_copied": "Premature removal of self-serve conversion paths before establishing enterprise sales capacity and case studies will reduce total pipeline volume without corresponding increase in contract value, particularly if your brand does not yet command inbound demo requests from qualified enterprise buyers.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-09T22:31:00.652Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": {
+      "model": "claude-sonnet-4-5",
+      "role": 1637,
+      "inputTokens": 1123,
+      "inputCostUsd": 0.0033690000000000005,
+      "outputCostUsd": null,
+      "totalCostUsd": null,
+      "timestamp": "2026-06-09T22:31:00.650Z"
+    }
+  },
+  "seo-intent": {
+    "primary_keyword": "Clay homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, product leader, or growth marketer who is either (1) considering a pivot from product-led to enterprise sales motion, or (2) trying to understand how to reposition a viral, self-serve tool as an enterprise platform without losing brand momentum. They want to see the strategic reasoning behind Clay's shifts, not just the cosmetic changes.",
+    "recommended_h1_format": "How [Company] Repositioned From 'Self-Serve Spreadsheet' to Enterprise GTM Platform — A 5-Year Homepage Teardown",
+    "secondary_keywords": [
+      "Clay CRO teardown enterprise repositioning",
+      "how Clay changed homepage positioning sales motion",
+      "Clay homepage evolution viral to enterprise",
+      "Clay product-led to enterprise sales transition",
+      "Clay data infrastructure messaging strategy"
+    ],
+    "content_angle": "Frame this as a **strategic repositioning case study**, not a design audit. The searcher wants to understand the *why* behind Clay's shift from mechanism-driven ('this spreadsheet fills itself') to outcome-driven ('go to market with unique data'). Focus on: (1) the signal that forced the pivot (market, revenue, customer feedback), (2) how removing self-serve CTAs and adding 'Get a demo' reflects a shift in unit economics and buyer profile, (3) how the navigation changes (from 'Find new customers' to 'Use Cases') signal a move from breadth to depth, and (4) whether this move is replicable for other viral SaaS products. Position it as a decision framework, not a teardown.",
+    "what_the_searcher_wants": "Permission and a playbook to make a similar pivot themselves — or validation that their instinct to move upmarket is the right call. They want to see the before/after data or reasoning that Clay used, so they can apply it to their own product.",
+    "what_to_avoid": "Do NOT treat this as a simple design or CRO optimization (A/B test results, conversion rate lifts). This is not about button colors or form fields. Avoid generic GTM commentary ('enterprise sales is good' / 'product-led is bad'). Most critically: do not miss the *tension* between keeping the viral brand DNA while adopting enterprise positioning — this is the real insight. If you just list changes without explaining the strategic trade-offs, the article will feel like a feature diff, not a strategy lesson.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-09T22:31:09.025Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": {
+      "model": "claude-haiku-4-5-20251001",
+      "role": 1216,
+      "inputTokens": 599,
+      "inputCostUsd": 0.00047920000000000005,
+      "outputCostUsd": null,
+      "totalCostUsd": null,
+      "timestamp": "2026-06-09T22:31:09.025Z"
+    }
+  }
+}

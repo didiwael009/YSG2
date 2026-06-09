@@ -1,0 +1,30 @@
+{
+  "score": 92,
+  "pass": true,
+  "issues": [
+    "The section is 72 words, which exceeds the 50–75 word target by 2 words (minor but flagged for awareness)",
+    "The final sentence introduces a conditional recommendation ('test this shift on a /enterprise subdomain') that is not directly traceable to the evidence — the evidence states a 'safer_version_for_early_stage_saas' in strategic-shift, but the draft presents it as if Clay's own evidence suggests this approach",
+    "Heading is 'Quick answer: Clay homepage' — contains company name but lacks a topic term like 'positioning', 'messaging', or 'conversion' that would improve searchability"
+  ],
+  "requiredFixes": [],
+  "riskFlags": [
+    "The final recommendation ('test this shift on a /enterprise subdomain before replacing your main funnel') is framed as a direct takeaway from Clay's evidence, but the evidence only shows Clay's own changes, not a test recommendation. This should be reframed as 'the safer version suggested by the strategic analysis' or removed to stay within the 75-word cap."
+  ],
+  "seoNotes": [
+    "Heading contains company name ('Clay') and 'homepage', meeting searchability minimum",
+    "The heading could be stronger with a topic term like 'Clay homepage positioning shift' or 'Clay homepage messaging evolution' to capture more specific search intent",
+    "The three-sentence structure is well-suited for featured snippet extraction",
+    "The section successfully frontloads the company name and the core change (headline + meta description) in the first two sentences"
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

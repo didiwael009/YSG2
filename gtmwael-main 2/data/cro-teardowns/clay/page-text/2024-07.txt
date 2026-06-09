@@ -1,0 +1,217 @@
+TITLE: Clay - Uplevel your data enrichment. Scale personalized outreach.
+META DESCRIPTION: Implement your creative growth ideas to build pipeline for your sales team. First, maximize your data coverage with 75+ enrichment tools and our AI agent. Then, use AI to craft the perfect outreach.
+
+H1:
+  - Scale personalized outreach with better data enrichment
+
+H2:
+  - Import or create a targeted list
+  - Access 75+ enrichment tools with Clay to increase your data coverage
+  - Replace manual research workflows with our AI agent
+  - With a solid data foundation, automate personalized outreach
+  - What our customers say about us...
+  - Clay connects you with 75+ data providers
+  - Backed by enterprise-grade security and scale
+  - Learn with our resources
+  - FAQ
+  - Start molding your dream campaigns today
+  - Footer Menu
+
+H3:
+  - Use 75+ enrichment tools to get the best data coverage possible
+  - Replace your manual research with our AI agent
+  - With a solid data foundation, automate your outreach
+  - SOC 2
+  - GDPR
+  - CCPA
+  - ISO 27001 (coming soon)
+  - Clay University
+  - Go-to-market blog
+  - Integrations
+  - Templates
+  - Clay Experts
+  - Clay’s Chrome Extension
+  - What is Clay?
+  - Step 1: Basic Data Enrichment & Cleaning
+  - Step 2: AI Data Enrichment
+  - Step 3: Automated Outreach
+  - What kinds of companies use Clay?
+  - Who on my team should use Clay?
+  - What tools does Clay replace for me?
+  - What common use cases can I accomplish in Clay?
+  - Product
+  - Blog
+  - Tools
+  - Support
+  - Company
+  - Legal
+
+CTAS / BUTTONS:
+  - Skip to main
+  - Product
+  - TAM sourcing Build targeted lead lists using 10+ sources and AI
+  - Automated inbound Connect to your webforms and auto-enrich and score leads
+  - Automated outbound Build, enrich, score, and message leads in seconds
+  - CRM syncing & hygiene Connect to and auto-update your CRM as a source of truth
+  - Intent data Track job changes, new hires, promotions, and more
+  - Integrations Access 50+ databases to get the most comprehensive coverage of information
+  - Multi-provider data enrichment Search multiple providers sequentially to maximize data quality and coverage
+  - AI research agent Ask our agent to search websites and find all the answer to your questions
+  - Personalized copywriting Use our AI email builder to write & send personalized emails that convert
+  - Templates
+  - Chrome extension
+  - Changelog
+  - Security
+  - Solutions
+  - RevOps Prospect, enrich, and clean your CRM automatically
+  - SDRs Grow pipeline faster by targeting and enriching your prospects in seconds
+  - Enterprise Build the data foundation for any GTM workflow
+  - How Verkada’s growth team uses Clay to launch targeted ABM campaigns across LinkedIn, email, and direct mail
+  - How Anthropic uses Clay to 3x their enrichment coverage—with no manual work
+  - Resources
+  - University Learn how to use Clay with our best resources
+  - Templates Jumpstart your outbound campaigns with our top templates
+  - Experts Need help scaling your outbound? Hire a Clay expert
+  - Blog Read our best guides for outbound, from email setup to AI copywriting
+  - Claybooks Build powerful workflows with Clay and other tools
+  - Slack community Join our Slack for live support and a community of 15K+ sales experts!
+  - Getting started
+  - Creators
+  - Live events
+  - Integration partners
+  - FAQ
+  - YouTube
+  - Headcount finder
+  - WHOIS lookup
+  - Job board
+  - Headcount directory
+  - Company
+  - Careers Learn about our team – and apply to join us
+  - Customer stories Read about how our biggest customers use (& love) Clay
+  - LinkedIn
+  - Enterprise
+  - Pricing
+  - Start building — for free
+  - Login
+  - Sign up
+  - 4.9 rating
+  - 15k+ growth community
+  - 150+ testimonials
+  - Start building for free
+  - Import/create a lead list
+  - Enrich your data with 75+ tools
+  - Use our AI research agent
+  - Scale your outreach
+  - Start 14 day Pro trial
+  - Explore enrichments for free
+  - Meet Claygent
+  - Try AI messaging
+  - Explore 75+ enrichments for free
+  - Try our AI messaging for free
+  - Previous
+  - Next
+  - Clay.com
+  - Browse all integrations
+  - Talk to a GTM Engineer
+  - Trust Center
+  - Read post
+  - Get started today
+  - Explore our blog
+  - Get access to Clay integrations
+  - Visit Clay templates
+  - Explore Clay Experts
+  - Explore the Chrom extension
+  - What is Clay?
+  - What kinds of companies use Clay?
+  - Who on my team should use Clay?
+  - What tools does Clay replace for me?
+  - What common use cases can I accomplish in Clay?
+  - Build lists
+  - Enrich data
+  - do unstructured research
+  - draft messages
+  - Try it – it's free
+  - University
+  - Integrations
+  - AI for Sales Prospecting
+  - Why good CRM data matters
+  - Google Maps lead generation in 5 easy steps
+  - Outbound Sales Automation
+  - AI Lead Generation
+  - Email Finder
+  - Headcount Finder
+  - Credits Calculator
+  - Lookup WHOIS Info
+  - CPM Calculator
+  - Margin Calculator
+  - Headcount Directory
+  - Glossary
+  - Dossier
+  - Job Board
+  - Send us an email
+  - Join Slack
+  - Status
+  - Customer Stories
+  - Wall of Love
+  - Careers
+  - Creators Program
+  - Integrate with Clay
+  - Privacy Policy
+  - Terms of Service
+  - Do not sell my data
+  - Cookie preferences
+  - Preferences
+  - Deny
+  - Accept all cookies
+  - Reject all cookies
+  - Allow all cookies
+  - Confirm my preferences and close
+
+NAV LINKS:
+  - TAM sourcingBuild targeted lead lists using 10+ sources and AI
+  - Automated inboundConnect to your webforms and auto-enrich and score leads
+  - Automated outboundBuild, enrich, score, and message leads in seconds
+  - CRM syncing & hygieneConnect to and auto-update your CRM as a source of truth
+  - Intent dataTrack job changes, new hires, promotions, and more
+  - IntegrationsAccess 50+ databases to get the most comprehensive coverage of information
+  - Multi-provider data enrichmentSearch multiple providers sequentially to maximize data quality and coverage
+  - AI research agentAsk our agent to search websites and find all the answer to your questions
+  - Personalized copywritingUse our AI email builder to write & send personalized emails that convert
+  - Templates
+  - Chrome extension
+  - Changelog
+  - Security
+  - RevOpsProspect, enrich, and clean your CRM automatically
+  - SDRsGrow pipeline faster by targeting and enriching your prospects in seconds
+  - EnterpriseBuild the data foundation for any GTM workflow
+  - How Verkada’s growth team uses Clay to launch targeted ABM campaigns across LinkedIn, email, and direct mail
+  - How Anthropic uses Clay to 3x their enrichment coverage—with no manual work
+  - UniversityLearn how to use Clay with our best resources
+  - TemplatesJumpstart your outbound campaigns with our top templates
+  - ExpertsNeed help scaling your outbound? Hire a Clay expert
+  - BlogRead our best guides for outbound, from email setup to AI copywriting
+  - ClaybooksBuild powerful workflows with Clay and other tools
+  - Slack communityJoin our Slack for live support and a community of 15K+ sales experts!
+  - Getting started
+  - Creators
+  - Live events
+  - Integration partners
+  - FAQ
+  - YouTube
+  - Headcount finder
+  - WHOIS lookup
+  - Job board
+  - Headcount directory
+  - CareersLearn about our team – and apply to join us
+  - Customer storiesRead about how our biggest customers use (& love) Clay
+  - LinkedIn
+  - Enterprise
+  - Pricing
+  - Start building — for free
+  - Build lists
+  - Enrich data
+  - do unstructured research
+  - draft messages
+
+BODY TEXT:
+Skip to mainProductrecurring workflowsTAM sourcingBuild targeted lead lists using 10+ sources and AIAutomated inboundConnect to your webforms and auto-enrich and score leadsAutomated outboundBuild, enrich, score, and message leads in secondsCRM syncing & hygieneConnect to and auto-update your CRM as a source of truthIntent dataTrack job changes, new hires, promotions, and moreFeaturesIntegrationsAccess 50+ databases to get the most comprehensive coverage of informationMulti-provider data enrichmentSearch multiple providers sequentially to maximize data quality and coverageAI research agentAsk our agent to search websites and find all the answer to your questionsPersonalized copywritingUse our AI email builder to write & send personalized emails that convertQuick linksTemplatesChrome extensionChangelogSecuritySolutionsClay forRevOpsProspect, enrich, and clean your CRM automaticallySDRsGrow pipeline faster by targeting and enriching your prospects in secondsEnterpriseBuild the data foundation for any GTM workflowcustomer solutionsHow Verkada’s growth team uses Clay to launch targeted ABM campaigns across LinkedIn, email, and direct mailHow Anthropic uses Clay to 3x their enrichment coverage—with no manual work Resourcesrecurring workflowsUniversityLearn how to use Clay with our best resourcesTemplatesJumpstart your outbound campaigns with our top templatesExpertsNeed help scaling your outbound? Hire a Clay expertBlogRead our best guides for outbound, from email setup to AI copywritingClaybooksBuild powerful workflows with Clay and other toolsSlack communityJoin our Slack for live support and a community of 15K+ sales experts!Additional helpGetting startedCreatorsLive eventsIntegration partnersFAQYouTubetoolsHeadcount finderWHOIS lookupJob boardHeadcount directoryCompanyour companyCareersLearn about our team – and apply to join usCustomer storiesRead about how our biggest customers use (& love) ClaySocial mediaLinkedInYouTubeEnterprisePricingStart building — for freeLoginSign upScale personalized outreach with better data enrichmentHelp your RevOps & growth teams implement any outreach idea. First, maximize data coverage with 75+ enrichment tools & our AI agent with just your Clay account. Then, use AI to craft relevant outreach at scale.4.9 rating15k+ growth community150+ testimonialsStart building for freeImport / build a lead listScale personalized outreachEnrich your leads with 75+ data providersUse our AI research agentTrusted by more than 100,000 leading GTM teams of all sizesVerkada"Clay is a central part of our outbound campaign program. It’s helped us fully automate lead enrichment that previously required expensive and time consuming manual research."Director of GrowthDavide GriecoNotion"Clay saves us hours a week that we previously spent researching and vetting companies that applied to our startup program."Head of Growth ProgramsJosh KimVanta"Clay should be an essential pillar of every company's GTM stack, enabling outbound built on the highest quality data foundation possible."CROStevie CaseAnthropic"Clay is a game changer for marketing, data, and operations. We have tripled our enrichment rate with Clay’s combination of data providers vs. our previous solution."Head of SalesAdam WallHow it worksImport/create a lead listEnrich your data with 75+ toolsUse our AI research agentScale your outreachList buildingImport or create a targeted listSync a list of leads from your CRM, or prospect from scratch to build targeted lead lists. We have 10+ built-in sources to help you find companies, people, and open jobs.Start 14 day Pro trialStart from your CRM / prospect from 10+ sources / import a listSalesforceHubspotCloseTypeformLoxoCompanies & peopleGoogle mapsOcean.ioGitHub stargazersStoreleadsImport company listImport people listImport jobs listImport Chrome ext. listRecruiting sales managersConsolidated data enrichmentAccess 75+ enrichment tools with Clay to increase your data coverageClay gives you access to 75+ enrichment tools in one credit-based marketplace: search multiple sources at once for any data point. We often triple data coverage and quality on contact info, firmographics, and more.Explore enrichments for free AI research agentReplace manual research workflows with our AI agentOur AI web scraper also helps automate manual, unstructured SDR research. Use it to visit a list of domains and find case studies, determine SOC-II compliance, or any creative idea.Meet Claygent Automate your outreachWith a solid data foundation, automate personalized outreachOur AI messaging tool can use your data to craft 1-1 personalized messages to any prospect.Try AI messaging List buildingImport or create a targeted listSync a list of leads from your CRM, or prospect from scratch to build targeted lead lists. We have 10+ built-in sources to help you find companies, people, and open jobs.Start 14 day Pro trialStart from your CRM / prospect from 10+ sources / import a listSalesforceHubspotCloseTypeformLoxoCompanies & peopleGoogle mapsOcean.ioGitHub stargazersStoreleadsCompany listPeople listJobs listChrome ext. listRecruiting managersBasic data enrichmentUse 75+ enrichment tools to get the best data coverage possibleWe consolidate 75+ data enrichment tools in one credit-based marketplace, so you can search multiple sources at once. We often triple data coverage and quality on contact info, firmographics, and more.Explore 75+ enrichments for free AI research agentReplace your manual research with our AI agentOur AI research agent can automate manual SDR research. Use it to visit a list of domains and find case studies, determine SOC-II compliance, or more.Meet Claygent Automate your outreachWith a solid data foundation, automate your outreachOur AI messaging tool can use your data to craft 1-1 personalized messages to any prospect.Try our AI messaging for free What our customers say about us...PreviousNextClay's innate multi-source data enrichment paired with customized GPT prompts offers powerful combination of AI and data orchestration for GTM teams.Keith JonesGTM Systems Lead, OpenAIClay should be an essential pillar of every company's GTM stack, enabling outbound built on the highest quality data foundation possible. Now you can automate hours of manual research so sales teams can focus on selling.Stevie CaseCRO, VantaClay is a game changer for marketing, data, and operations. We have tripled our enrichment rate with Clay’s combination of data providers vs. our previous solution. We're using the best aggregate results across a waterfall of data sources, and implementing complex workflow logic even beyond enrichment—of course powered by AI. Clay makes it easy to use AI for GTM initiatives, unlocking new workflows that were infeasible before.Adam WallHead of Sales Operations, AnthropicClay is a central part of our outbound campaign program. It’s helped us fully automate lead enrichment that previously required expensive and time consuming manual research. We can use the hours we've saved on manual work for more interesting, creative, and important tasks, like coming up with new outreach ideas or nurturing relationships with prospects.Davide GriecoDirector of Growth, VerkadaClay saves us hours a week that we previously spent researching and vetting companies that applied to our startup program. Our auto-approval rate has jumped to ~40%—with no manual work needed.Josh KimHead of Growth Programs, NotionI love using and working with Clay.com because its extensive customization options allow it to seamlessly integrate into various systems, making it an essential part of our tech stack. Their hands-on customer support ensures we build out flows in the most efficient way possible, enhancing our overall productivity and effectiveness.David BulmerSales Ops, RampDemand generation at scale needs to be programmatic, automated and high quality. Clay helps us make that happen by cutting down manual work and maximizing human touches for millions of leads each month. Clay helps us create accurate outreach that protects our brand as we outbound intelligently.Tommy WangChief Business Officer, ClickUpNot having Clay would hugely reduce our ability to run good outbound campaigns. We wouldn’t be calling people as much, because it’s hard to get good phone numbers. We wouldn’t be emailing as much, because we’d be likely to bounce or go to spam. With Clay, we have a reliable source of data enrichment and can run dynamic, multi-touch outreach sequences.Julien ReimanHead of Sales, BasetenScaling inefficient SDR work isn’t possible without an infinite flow of capital. Clay helps automate mundane tasks like contact data enrichment, including pulling signals and triggers, so SDRs can focus their time on prioritized selling and spend their days more effectively. It evolves the SDR role and aligns it with better with marketing paths for more upward career momentum.Kris RudegraapCEO, SendosoClay connects you with 75+ data providers Browse all integrationsBacked by enterprise-grade security and scaleTalk to a GTM EngineerSOC 2We are SOC 2 Type II compliant. Request our SOC 2 in our Trust CenterGDPR Go to market anywhere in the world — let us handle compliance with local laws.CCPASupport your customer base with opt out and DNC support.ISO 27001 (coming soon)Securely connect your CRM and other systems.Learn with our resourcesCheck out Clay University, read our GTM blog, or try out our top templates to transform your growth ideas into outreach in minutes.Clay UniversityMaster Clay in a few core lessons. Uplevel your data enrichment, craft better outbound messages, and book more meetings.Read postGet started todayGo-to-market blogOur best content on growing your GTM motion, from outbound sales automation to AI lead generation.Read postExplore our blogIntegrationsBrowse through all the integrations you can connect to Clay in seconds and discover what you can do!Read postGet access to Clay integrationsTemplatesPower your outbound campaigns with our best templates.Read postVisit Clay templatesClay ExpertsHire a Clay Enterprise expert or find a Clay partner to help with your next project. Read postExplore Clay ExpertsClay’s Chrome ExtensionClay’s Chrome Extension makes it wicked easy to find leads almost anywhere on the internet.Read postExplore the Chrom extensionFAQWhat is Clay?Clay helps go-to-market teams uplevel their data enrichment and automate personalized outreach. You can start with a list of leads, either prospected through Clay or from your own CRM, and follow the steps below.Step 1: Basic Data Enrichment & CleaningClay combines 75+ data enrichment tools into one marketplace, resulting in superior data coverage and quality—on anything from contact information to company firmographics. Our customers have tripled data coverage vs. providers like Zoominfo while cutting costs by a magnitude of ten or twenty.Step 2: AI Data EnrichmentWe enable you to use AI to do research that previously required manual SDR work, including reading and analyzing webpages, PDFs, and Google searches for specific information.Step 3: Automated OutreachOnce you’ve nailed your data enrichment, you can use AI to craft relevant, compelling messaging based on that data. Everything syncs back to your CRM, allowing your team to go from campaign idea to execution in seconds.What kinds of companies use Clay?We serve GTM teams of all sizes, ranging from large enterprise companies to SMBs, startups, solo founders, outbound agencies, and more. We have thousands of users and hundreds of paying customers, including Ramp, Pave, Verkada, and more.Who on my team should use Clay?Here are a few typically successful team setups we’ve seen with Clay.At enterprise companies:GTM leaders decide the criteria for lead enrichment, segmentation, and outreachA GTM operations team member implements the above criteria into Clay. (Clay is the team’s “enrichment layer,” which syncs to the CRM to keep data live and accurate).SDRs do not interface directly with Clay. Instead, they benefit from already-curated leads, enriched data, personalizations in their CRMs.For example, one client’s SDRs simply click a button in Salesforce to fetch enriched data from Clay, including relevant a company summary, relevant contacts, and a draft message.At startups, a growth lead often implements Clay and runs all of the company’s outreach single-handedly. Once the company reaches some level of volume, these startups hire a sales team member to help with live conversations.At outbound agencies, one founder often sets up and runs Clay campaigns on behalf of many clients.What tools does Clay replace for me?Clay can replace your prospecting, data enrichment, and AI message drafting tools. We don’t replace email sending tools or CRMs (we integrate with them!)Many people run successful campaigns using just Clay, an email sending tool, and a CRM.You can continue to use any tools you have subscriptions to in Clay.What common use cases can I accomplish in Clay?Build lists from CSVs or 10+ prospecting sources including free access to companies, people, and open jobs data.Enrich data with 75+ enrichment tools for superior data quality and coverage as compared to relying on just one tool.Use AI to scrape websites, do unstructured research that previously required SDRs, and draft messages.Teams commonly also use Clay to automate outbound lead generation campaigns, CRM enrichment, inbound lead scoring and outreach, and more.Start molding your dream campaigns todayStart your 14-day Pro trial today. No credit card required.Try it – it's freeFooter MenuProductLoginUniversityIntegrationsPricingChangelogBlogAI for Sales ProspectingWhy good CRM data mattersGoogle Maps lead generation in 5 easy stepsOutbound Sales AutomationAI Lead GenerationToolsEmail FinderHeadcount FinderCredits CalculatorChrome extensionLookup WHOIS InfoCPM CalculatorMargin CalculatorHeadcount DirectoryGlossaryDossierJob BoardSupportSend us an emailJoin SlackFAQStatusCompanyCustomer StoriesWall of LoveCareersCreators ProgramIntegrate with ClayLegalPrivacy PolicyTerms of ServiceDo not sell my dataCookie preferences© Clay 2024 / Uplevel your data enrichment. Scale personalized outreach.We and our third-party partners collect information on our website using cookies, pixel tags, or other similar tracking technologies. We use strictly necessary cookies to make our Services available to you, and we ask for your permission to use analytics cookies and advertising cookies. By clicking "Accept All Cookies" you agree to the use of all cookies on Clay’s websites. To find out more about how we use cookies please read our Privacy Policy for more information.PreferencesDenyAccept all cookiesPrivacy Preference CenterWhen you visit websites, they may store or retrieve data in your browser. This storage is often necessary for the basic functionality of the website. The storage may be used for marketing, analytics, and personalization of the site, such as storing your preferences. Privacy is important to us, so you have the option of disabling certain types of storage that may not be necessary for the basic functioning of the website. Blocking categories may impact your experience on the website.Reject all cookiesAllow all cookiesManage Consent Preferences by CategoryEssentialAlways ActiveThese items are required to enable basic website functionality.AnalyticsEssentialThese items help the website operator understand how its website performs, how visitors interact with the site, and whether there may be technical issues. This storage type usually doesn’t collect information that identifies a visitor.PersonalizationEssentialThese items allow the website to remember choices you make (such as your user name, language, or the region you are in) and provide enhanced, more personal features. For example, a website may provide you with local weather reports or traffic news by storing data about your current location.AdvertisingEssentialThese items are used to deliver advertising that is more relevant to you and your interests. They may also be used to limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. Advertising networks usually place them with the website operator’s permission.Confirm my preferences and close

@@ -1,0 +1,47 @@
+{
+  "seoScore": 87,
+  "pass": true,
+  "titleScore": 13,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 14,
+  "searchIntentScore": 19,
+  "keywordUseScore": 9,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
+  "internalLinkingSuggestions": [
+    "Link 'category positioning' concept to a primer or framework article on positioning shifts in SaaS if one exists in the knowledge base",
+    "Link 'demo requests' mention to an article on sales-assisted vs. self-serve conversion funnels if available",
+    "Link the 'enterprise subdomain' suggestion to an article on multi-funnel homepage strategies for SaaS",
+    "Add internal link from 'GTM leadership' section to related content on B2B buyer journey mapping",
+    "Consider linking the 'dual-track funnel' concept to broader CRO conversion strategy content"
+  ],
+  "faqSuggestions": [
+    "When should a SaaS company remove product explanation from its homepage?",
+    "How do you know when to shift from self-serve to enterprise sales positioning?",
+    "What's the difference between mechanism messaging and outcome-focused headlines?",
+    "Should you remove template CTAs when building enterprise revenue?",
+    "How do you test a shift from practitioner-focused to buyer-focused homepage messaging?"
+  ],
+  "contentGapNotes": [
+    "The article does not address how long the transition typically takes or whether Clay experimented with hybrid messaging during the shift (A/B test data)",
+    "No mention of how traffic sources changed (organic vs. paid vs. direct) alongside the messaging shift, which could validate the audience repositioning claim",
+    "Missing analysis of whether the old practitioner-focused messaging is preserved elsewhere (separate landing pages, docs site) or completely abandoned",
+    "No discussion of how the homepage change affected product onboarding or activation metrics for existing users vs. new enterprise prospects",
+    "Limited guidance on metrics to monitor when making this shift (demo request quality, conversion rate by buyer persona, time-to-close)"
+  ],
+  "requiredFixes": [
+    "The meta description in the article body states 'Access 150+ premium data sources and AI research agents in one platform' but the header metadata shows different wording. Verify which is the actual current meta description and ensure consistency",
+    "The intro section cites a headline as 'Every GTM data point imaginable, in one place' in the 'Should you copy' section, but the main teardown cites 'Go to market with unique data — and the ability to act on it.' Clarify which is the actual current headline or explain the discrepancy",
+    "The article uses primary keyword 'Clay homepage CRO teardown' sparingly in the body (mostly in headers). Strengthen natural keyword integration in the opening paragraph and 'Quick answer' section"
+  ],
+  "optionalImprovements": [
+    "Add a subsection or callout comparing click-through rates or engagement metrics between the old and new homepage layouts (if data exists) to strengthen the 'what it costs' claims",
+    "Include a sidebar or table summarizing the old vs. new messaging, CTAs, and navigation side-by-side for faster scanning",
+    "Add a specific CTA at the end pointing readers to a CRO template or homepage audit checklist tied to the lessons offered",
+    "Expand 'Audit your own page' sections with a downloadable checklist or worksheet to increase utility and internal link opportunities",
+    "Consider adding a brief 'Limitations' section acknowledging that Clay's transition may not work for all SaaS categories (e.g., product-led tools with lower ACV)"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.005763200000000024,
+  "generatedAt": "2026-06-09T22:46:36.249Z"
+}

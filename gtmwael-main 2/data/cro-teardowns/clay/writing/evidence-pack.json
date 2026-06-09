@@ -1,0 +1,142 @@
+{
+  "slug": "clay",
+  "companyName": "Clay",
+  "companyUrl": "https://www.clay.com",
+  "fromMonth": "2021-07",
+  "toMonth": "current",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-09T22:30:25.154Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2021-07",
+      "label": "Jul 2021",
+      "screenshotPath": "/cro-teardowns/clay/selected/2021-07.webp",
+      "timestamp": "20211026201806",
+      "originalUrl": "https://www.clay.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/clay/selected/2024-07.webp",
+      "timestamp": "20241017204727",
+      "originalUrl": "https://www.clay.com",
+      "similarityToPrev": 0.9444,
+      "comparedTo": "2021-07"
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/clay/selected/2025-01.webp",
+      "timestamp": "20250417222254",
+      "originalUrl": "https://www.clay.com",
+      "similarityToPrev": 0.858,
+      "comparedTo": "2024-07"
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/clay/selected/2026-01.webp",
+      "timestamp": "20260411041923",
+      "originalUrl": "https://www.clay.com",
+      "similarityToPrev": 0.9243,
+      "comparedTo": "2025-01"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/clay/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.clay.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Every GTM data point imaginable, in one place",
+      "AI that’s contextual, consistent, and scalable",
+      "Orchestrate and act on your data, at scale",
+      "Turn data into action with flexible, iterable workflows",
+      "Backed by enterprise-grade security and scale",
+      "What our customers say about us...",
+      "Turn your growth ideas into reality today",
+      "Go to market with unique data—and the ability to act on it"
+    ],
+    "h2Removed": [
+      "This spreadsheet fills itself.",
+      "Hear from our users — Finding customers",
+      "Pulling structured data from any website as easily as copy paste.",
+      "Flexible beyond your wildest dreams.",
+      "Some things we're thinking about",
+      "Get started today"
+    ],
+    "ctaAdded": [
+      "Get a demo",
+      "Start free trial",
+      "Sign up",
+      "Start building for free",
+      "Read case study",
+      "Read more about Clay Enterprise",
+      "Contact us",
+      "Get started lesson",
+      "Product Product",
+      "Use Cases Use Cases"
+    ],
+    "ctaRemoved": [
+      "Request access",
+      "Watch video3 min",
+      "Get template->",
+      "Explore documentation->",
+      "All templates",
+      "Find new customers",
+      "Prioritize inbound leads",
+      "Understand your communities",
+      "About the technology ->",
+      "Chat with us"
+    ],
+    "navAdded": [
+      "Back",
+      "ProductProduct",
+      "Use CasesUse Cases",
+      "SolutionsSolutions",
+      "ResourcesResources",
+      "CompanyCompany",
+      "PricingPricing",
+      "Get a demo"
+    ],
+    "navRemoved": [
+      "All templates",
+      "Find new customers",
+      "Prioritize inbound leads",
+      "Understand your communities",
+      "Docs",
+      "Changelog",
+      "About",
+      "Jobs"
+    ],
+    "headlines": [
+      {
+        "from": "Clay",
+        "to": "Go to market with unique data — and the ability to act on it",
+        "fromMonth": "2021-07",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "No more million tab opening and manual copy pasting. Automate your prospecting, enrich your customers, and unify your customer data. Fast.",
+        "to": "Access 150+ premium data sources and AI research agents in one platform, then automate growth workflows to turn insights into revenue.",
+        "fromMonth": "2021-07",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

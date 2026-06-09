@@ -1,0 +1,70 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Clay",
+  "companyUrl": "https://www.clay.com",
+  "articleTitle": "Clay Homepage Teardown: Jul 2021 to Jun 2026",
+  "h1": "How Clay rewrote its homepage over 5 years",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 8,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "cta-changes": {
+    "added": [
+      "Get a demo",
+      "Start free trial",
+      "Sign up",
+      "Start building for free",
+      "Read case study",
+      "Read more about Clay Enterprise",
+      "Contact us",
+      "Get started lesson",
+      "Product Product",
+      "Use Cases Use Cases"
+    ],
+    "removed": [
+      "Request access",
+      "Watch video3 min",
+      "Get template->",
+      "Explore documentation->",
+      "All templates",
+      "Find new customers",
+      "Prioritize inbound leads",
+      "Understand your communities",
+      "About the technology ->",
+      "Chat with us"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Every GTM data point imaginable, in one place",
+      "AI that’s contextual, consistent, and scalable",
+      "Orchestrate and act on your data, at scale",
+      "Turn data into action with flexible, iterable workflows",
+      "Backed by enterprise-grade security and scale",
+      "What our customers say about us...",
+      "Turn your growth ideas into reality today",
+      "Go to market with unique data—and the ability to act on it"
+    ],
+    "removed": [
+      "This spreadsheet fills itself.",
+      "Hear from our users — Finding customers",
+      "Pulling structured data from any website as easily as copy paste.",
+      "Flexible beyond your wildest dreams.",
+      "Some things we're thinking about",
+      "Get started today"
+    ]
+  }
+}

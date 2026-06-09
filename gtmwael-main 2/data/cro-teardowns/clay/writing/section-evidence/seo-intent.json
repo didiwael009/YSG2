@@ -1,0 +1,28 @@
+{
+  "primary_keyword": "Clay homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, product leader, or growth marketer who is either (1) considering a pivot from product-led to enterprise sales motion, or (2) trying to understand how to reposition a viral, self-serve tool as an enterprise platform without losing brand momentum. They want to see the strategic reasoning behind Clay's shifts, not just the cosmetic changes.",
+  "recommended_h1_format": "How [Company] Repositioned From 'Self-Serve Spreadsheet' to Enterprise GTM Platform — A 5-Year Homepage Teardown",
+  "secondary_keywords": [
+    "Clay CRO teardown enterprise repositioning",
+    "how Clay changed homepage positioning sales motion",
+    "Clay homepage evolution viral to enterprise",
+    "Clay product-led to enterprise sales transition",
+    "Clay data infrastructure messaging strategy"
+  ],
+  "content_angle": "Frame this as a **strategic repositioning case study**, not a design audit. The searcher wants to understand the *why* behind Clay's shift from mechanism-driven ('this spreadsheet fills itself') to outcome-driven ('go to market with unique data'). Focus on: (1) the signal that forced the pivot (market, revenue, customer feedback), (2) how removing self-serve CTAs and adding 'Get a demo' reflects a shift in unit economics and buyer profile, (3) how the navigation changes (from 'Find new customers' to 'Use Cases') signal a move from breadth to depth, and (4) whether this move is replicable for other viral SaaS products. Position it as a decision framework, not a teardown.",
+  "what_the_searcher_wants": "Permission and a playbook to make a similar pivot themselves — or validation that their instinct to move upmarket is the right call. They want to see the before/after data or reasoning that Clay used, so they can apply it to their own product.",
+  "what_to_avoid": "Do NOT treat this as a simple design or CRO optimization (A/B test results, conversion rate lifts). This is not about button colors or form fields. Avoid generic GTM commentary ('enterprise sales is good' / 'product-led is bad'). Most critically: do not miss the *tension* between keeping the viral brand DNA while adopting enterprise positioning — this is the real insight. If you just list changes without explaining the strategic trade-offs, the article will feel like a feature diff, not a strategy lesson.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-09T22:31:09.025Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": {
+    "model": "claude-haiku-4-5-20251001",
+    "role": 1216,
+    "inputTokens": 599,
+    "inputCostUsd": 0.00047920000000000005,
+    "outputCostUsd": null,
+    "totalCostUsd": null,
+    "timestamp": "2026-06-09T22:31:09.025Z"
+  }
+}

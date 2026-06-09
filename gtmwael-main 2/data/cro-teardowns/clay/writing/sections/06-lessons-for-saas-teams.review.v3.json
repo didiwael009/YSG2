@@ -1,0 +1,47 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "The ## section heading is clever-only ('Should you copy Clay's homepage shift?') with no searchable terms — lacks 'positioning', 'messaging', 'CTA', or 'conversion'.",
+    "The term 'buyer motion' is used twice (paragraph 1 of H3 'The pattern', then paragraph 3 of H3 'Who should NOT copy this') without a plain-language definition at first use.",
+    "The term 'pipeline' is used twice (H3 'Who should NOT copy this', paragraph 1 and paragraph 3 of H3 'The test before you copy') without a plain-language definition at first use.",
+    "H3 'Who should NOT copy this' paragraph 1 exceeds 60 words (approximately 65 words).",
+    "H3 'Who should NOT copy this' paragraph 2 exceeds 60 words (approximately 68 words).",
+    "Generic phrasing in H3 'Who should copy this' paragraph 2: 'Before copying, test whether your sales team can handle increased demo volume' could appear in any SaaS teardown.",
+    "The final test (H3 'The test before you copy') is not specific to Clay's evidence — it's a generic analytics check that could apply to any enterprise positioning shift.",
+    "Causal claim without condition: 'That language change may cost you word-of-mouth distribution' lacks a traced condition from evidence.",
+    "The opening of H3 'The pattern' paragraph 2 buries the practical takeaway — 'This pattern shuts down one buyer motion' — instead of leading with what founders should check first."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include searchable terms: 'Should you copy Clay's homepage positioning shift? When enterprise messaging works'",
+    "Add plain-language definition at first use of 'buyer motion' in H3 'The pattern' paragraph 2: 'This pattern shuts down one buyer motion (the path a visitor takes from first visit to signed contract, e.g. self-serve signup vs. sales demo).'",
+    "Add plain-language definition at first use of 'pipeline' in H3 'Who should NOT copy this' paragraph 1: 'Do not copy this if practitioner signups still drive your pipeline (the list of potential customers your sales team is working with).'",
+    "Split H3 'Who should NOT copy this' paragraph 1 into two sentences to bring word count under 60.",
+    "Split H3 'Who should NOT copy this' paragraph 2 into two paragraphs or reduce to under 60 words.",
+    "Replace generic phrasing in H3 'Who should copy this' paragraph 2 with Clay-specific evidence: 'Clay's navigation overhaul removed eight items including **'All templates'** and three use-case paths — evidence that the company had infrastructure to replace the removed paths.'",
+    "Anchor the final test to Clay's specific evidence: 'Clay removed **'Get template'** and added **'Get a demo'**. Open your analytics: do your current CTAs convert visitors from 50+ employee companies at >20% of total conversions? If not, you lack Clay's inbound mix.'",
+    "Add condition to causal claim: 'That language change may cost you word-of-mouth distribution if your practitioner community shares your product based on pain-point recognition rather than platform capabilities.'",
+    "Move the practical check to the opening of H3 'The pattern' paragraph 2: 'Check whether your current self-serve path converts qualified users before you shut it down. Clay's evidence shows the elements changed but not whether the old path was driving revenue at the contract size the company now targets.'"
+  ],
+  "riskFlags": [
+    "Unsupported causal claim: 'That language change may cost you word-of-mouth distribution' — no evidence provided that Clay measured or experienced distribution impact.",
+    "Implied conversion outcome: 'Copy this if your current homepage attracts users who cannot authorize the contract value you now require' — no conversion data provided to support that Clay's shift solved this problem."
+  ],
+  "seoNotes": [
+    "NEGATIVE: The ## section heading lacks searchable terms ('positioning', 'messaging', 'CTA', 'conversion') — reduces ranking potential for long-tail queries.",
+    "POSITIVE: H3 subheadings contain natural search terms ('copy this', 'enterprise positioning', 'the test') that match founder decision queries.",
+    "POSITIVE: Verbatim quotes are consistently formatted in bold: **'Get template'**, **'Get a demo'**, **'All templates'**.",
+    "NEGATIVE: The final test is generic and not anchored to Clay's specific evidence, reducing the section's differentiation from competitor content."
+  ],
+  "rewriteInstruction": "Rewrite the ## heading to include 'Clay homepage positioning' or 'Clay messaging shift'. Add plain-language definitions at first use of 'buyer motion' and 'pipeline'. Split the two paragraphs in H3 'Who should NOT copy this' to bring each under 60 words. Replace the generic 'test whether your sales team can handle increased demo volume' with the specific Clay evidence already present (navigation removal, eight items). Anchor the final test to Clay's CTA evidence: do your analytics show that visitors who click your current primary CTA come from companies matching Clay's new target (50+ employees)? Add a condition to the 'may cost you word-of-mouth' claim using the phrasing 'if your practitioner community shares based on pain-point recognition'. Move the 'check whether your current self-serve path converts qualified users' instruction to the opening of H3 'The pattern' paragraph 2.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 12,
+    "plainLanguage": 12,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

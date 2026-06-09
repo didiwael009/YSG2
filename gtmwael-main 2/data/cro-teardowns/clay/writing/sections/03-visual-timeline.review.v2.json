@@ -1,0 +1,46 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "HARD CAP TRIGGERED: Unsupported causal claim ('removing the category explanation may reduce conversion') without data → total capped at 70, then adjusted to 72 for minor strengths",
+    "Paragraph 1 in 'Why it matters' exceeds 60 words (approximately 63 words)",
+    "Paragraph 2 in 'Why it matters' is 41 words — acceptable but stacks three abstract concepts without plain-language anchor",
+    "The term 'category positioning' appears WITHOUT an immediate plain-language definition in the same sentence — it is defined in the second sentence, which violates the rubric",
+    "The 'What it costs' H3 block opens with a conditional causal claim ('removing the category explanation may reduce conversion') that has no data anchor in the evidence",
+    "Generic paragraph detected: 'If your homepage depends on non-branded search or referrals from general startup content...' could appear in any company's teardown",
+    "The founder test is well-anchored but the setup paragraph is generic SaaS commentary",
+    "Section heading is searchable (contains 'Clay', 'homepage', 'positioning') — passes",
+    "All verbatim quotes are in **bold quotes** — passes",
+    "Word count approximately 185 words — within 140–200 range — passes",
+    "H3 subheadings present: 'What changed', 'Why it matters', 'What it costs' — three required blocks present — passes"
+  ],
+  "requiredFixes": [
+    "Define 'category positioning' in the SAME sentence where it first appears. Example: 'This is category positioning — staking a claim in an established market rather than explaining what the market is — when a company assumes visitors already understand the category.'",
+    "Remove or rewrite the causal claim 'removing the category explanation may reduce conversion' — the evidence contains no conversion data. Replace with a conditional framing: 'If your non-branded traffic does not already know what data enrichment is, this shift trades category education for aspiration signaling.'",
+    "Shorten the first paragraph in 'Why it matters' to under 60 words. Current count: approximately 63 words.",
+    "Replace the generic opener in 'What it costs' with a Clay-specific anchor. Example: 'Clay's 2021 homepage included four section headings that explained the category. The current version includes zero. If your traffic mix resembles Clay's early state — mostly non-branded search and referral — this trade may cost you uncommitted visitors.'",
+    "Remove the phrase 'general startup content' — it is vague and not anchored to Clay's evidence. Replace with a specific traffic scenario drawn from the evidence (e.g., 'visitors arriving from a 'data enrichment tools' search')."
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM WITHOUT DATA: 'removing the category explanation may reduce conversion among visitors who do not yet know what problem you solve' — the evidence contains no conversion metrics, A/B test results, or traffic data to support this outcome claim",
+    "CONDITIONAL MISSING: 'This is category positioning — when a company stakes a claim in an established market' — the draft does not explain WHEN this is appropriate or under what conditions it works, making it read like a universal truth",
+    "GENERIC TRAFFIC ASSUMPTION: 'If your homepage depends on non-branded search or referrals from general startup content' — the evidence does not describe Clay's traffic sources, so this conditional is invented"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains 'Clay', 'homepage', 'positioning', and a date range — highly searchable",
+    "POSITIVE: The draft uses 'headline', 'category positioning', and 'conversion' — all terms a searcher might use",
+    "NEUTRAL: The H3 headings ('What changed', 'Why it matters', 'What it costs') are not independently searchable but serve scannability",
+    "NEGATIVE: The phrase 'category positioning' appears without a plain-language synonym in the same sentence, which may reduce readability for founders unfamiliar with the term"
+  ],
+  "rewriteInstruction": "The draft is anchored to Clay's evidence in the 'What changed' block but drifts into generic SaaS commentary in 'Why it matters' and 'What it costs'. First, define 'category positioning' in the same sentence where it appears — add a plain-language explanation immediately after the em dash. Second, remove the unsupported causal claim about conversion; replace it with a conditional observation tied to Clay's specific removed phrases (the four section headings that explained the category). Third, shorten the first paragraph in 'Why it matters' to under 60 words by cutting the second sentence into a new paragraph or merging it into the explanation of category positioning. Fourth, replace the generic traffic scenario ('non-branded search or referrals from general startup content') with a specific anchor from Clay's evidence — for example, 'visitors arriving from a search for data enrichment tools' or 'referrals from a blog post about spreadsheet automation'. Finally, ensure the founder test remains specific and runnable in under five minutes, anchored to Clay's removed phrases. The goal is to make every paragraph traceable to THIS company's timeline, not a template that fits any SaaS homepage.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 12,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}
