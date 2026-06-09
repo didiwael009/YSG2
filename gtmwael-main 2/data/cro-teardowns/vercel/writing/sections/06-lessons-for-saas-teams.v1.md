@@ -2,16 +2,16 @@
 
 ### The pattern
 
-Vercel made small, consistent changes in the same direction over five years. No single snapshot shows a dramatic redesign — the headline changed, navigation shifted toward AI positioning, and section headings were gradually swapped. The pattern is **incremental repositioning**: every update reinforced a narrowing of who the page speaks to and what it assumes they already know.
+Vercel made 12 small changes that all pointed in the same direction: from product-led onboarding page to platform-led category page. The lesson is not any single headline or CTA. The lesson is that small, consistent changes in the same direction — when each change is aligned to the same positioning shift — compound into a brand-level transformation without a single risky redesign.
 
 ### Who should copy this
 
-This works when your company name already completes a category sentence before the visitor arrives. If developers already know "Vercel is the deployment platform" from community presence, you can afford to shift messaging toward a new layer — like AI tooling — without losing visitors who have never heard of you. The test is: can a stranger guess what your product does from your brand name alone?
+You can copy this if your brand already owns recognition in a category that is shifting. Vercel could afford to move from **"Develop. Preview. Ship."** to **"Build and deploy on the AI Cloud"** because developers already knew what Vercel was before they landed on the page. If your URL completes the sentence "the leading [category] platform" in your buyer's head, you have the brand strength this requires.
 
 ### Who should NOT copy this
 
-If your homepage still does the work of explaining what your product is — especially if you depend on non-branded search or cold paid traffic — removing that explanation will cost you qualified pipeline. Visitors who arrive without context will leave before they understand the category. The headline "Build and deploy on the AI Cloud" only works if "Vercel" already means "deployment platform" in the reader's mind.
+If your homepage still needs to explain what your product does — or if most of your traffic comes from non-branded search and paid ads — this approach will cost you pipeline. When visitors arrive not knowing your category or your differentiation, a page built for recognition instead of explanation will feel vague. They will leave before they understand what you sell.
 
 ### The test before you copy
 
-Open an incognito window. Visit your homepage as if you have never heard of your company. Can you explain what the product does in one sentence after reading only the headline and navigation? If no, you cannot afford to remove category framing yet. Vercel earned that right through years of developer community presence.
+Open Google Analytics. Filter your homepage traffic to non-branded organic and paid sources only. If that segment represents more than 40% of your homepage visitors, your page still needs to do explanation work. Vercel's approach works when brand-driven traffic dominates. Until then, clarity beats aspiration.

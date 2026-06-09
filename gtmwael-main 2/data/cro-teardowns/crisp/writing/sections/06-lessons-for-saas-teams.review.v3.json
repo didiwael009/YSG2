@@ -1,36 +1,58 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 68,
+  "pass": false,
   "issues": [
-    "The phrase 'buyer journey' appears without plain-language definition — expert term used without immediate explanation",
-    "Paragraph 2 of H3 block 'Who should copy this' exceeds 60 words (approximately 65 words)",
-    "The phrase 'positioning mismatch' in H3 block 'Who should NOT copy this' is an expert term used without plain-language definition in the same sentence",
-    "The ## section heading lacks the company name 'Crisp' — though it does contain 'SaaS' and 'homepage navigation', making it searchable but suboptimal for brand SEO"
+    "The term 'category' appears 8 times without plain-language definition — expert jargon overuse",
+    "The term 'hero' appears 4 times without plain-language definition — expert jargon overuse",
+    "The term 'identity-focused positioning' appears once without immediate plain-language definition",
+    "The term 'filter' is used as jargon ('allowing the top of the page to filter') without plain-language explanation",
+    "The opening sentence contains unsupported causation: 'narrowing your headline works and when it backfires' implies conversion outcomes not in evidence",
+    "Paragraph 1 (The pattern) is approximately 68 words — exceeds 60-word limit for H3 block",
+    "Paragraph 2 (Who should copy this) is approximately 62 words — exceeds 60-word limit",
+    "Paragraph 3 (Who should NOT copy this) is approximately 68 words — exceeds 60-word limit",
+    "Multiple causal claims without conditions: 'this approach may work' (no data), 'could reduce visitor clarity' (no evidence), 'may leave if' (speculative)",
+    "Navigation items and section headings are not in **bold quotes** — formatting violation",
+    "Generic paragraph in 'Who should NOT copy this' — the phrase 'Visitors who land without knowing your product category may leave if the headline does not orient them within three seconds' could appear in any SaaS teardown",
+    "Section heading lacks the word 'Crisp' — searchable terms are present but company name is missing",
+    "No verbatim quoted phrases from the homepage (headlines, CTAs) appear in the section",
+    "Word count approximately 230 words — within range but dense",
+    "The final test does not reference Crisp's specific evidence — it's generic analytics advice"
   ],
   "requiredFixes": [
-    "Add plain-language definition for 'buyer journey' in H3 block 'Who should NOT copy this' — e.g., 'further along the buyer journey (closer to making a purchase decision) than the person who actually landed on it'",
-    "Split the second paragraph of 'Who should copy this' at the sentence break after 'live chat software is.' to keep both paragraphs under 60 words",
-    "Define 'positioning mismatch' inline — e.g., 'That is not an aesthetic problem — it is a positioning mismatch (your page talks to experts when beginners arrive)'"
+    "Replace every instance of 'hero' after the first with 'top section' or 'headline area'",
+    "Replace every instance of 'category' after the first with 'product type' or 'what-it-does phrase'",
+    "Add plain-language definition immediately after 'identity-focused positioning' — e.g. 'identity-focused positioning (writing for who you want instead of what you do)'",
+    "Remove or rewrite the causation claim 'when narrowing your headline works and when it backfires' — the evidence shows changes but not conversion outcomes",
+    "Break paragraph 1 into two: move the second sentence ('The pattern suggests...') into its own paragraph",
+    "Trim paragraph 2 to under 60 words by removing 'The narrower headline assumes the visitor already knows what type of product you sell'",
+    "Trim paragraph 3 to under 60 words by removing the three-second speculation",
+    "Add **bold quotes** around '8 navigation items' and '6 new section headings' in paragraph 1",
+    "Add **bold quotes** around '8 navigation options' in paragraph 3",
+    "Rewrite the final test to reference Crisp's specific move: 'Open Crisp's 2022 snapshot vs. 2026. Count how many of the 8 new nav items explain what Crisp does. If your site has fewer explainer nav options and cold traffic dominates, test category clarity in the headline first.'"
   ],
   "riskFlags": [
-    "The claim 'That only works if visitors already understand what the product does before the page loads' is presented as causal without qualification — should add condition like 'This strategy typically works best when...' or 'This pattern usually requires...'",
-    "The statement 'adding 8 unlabeled navigation items may fragment attention' uses 'may' appropriately but could be stronger with an attached condition about visitor state"
+    "Unsupported causation: 'when narrowing your headline works and when it backfires' — no conversion or bounce-rate data in evidence",
+    "Speculative claim: 'this approach may work' — no performance data provided",
+    "Speculative claim: 'could reduce visitor clarity' — no visitor behavior data in evidence",
+    "Speculative claim: 'may leave if the headline does not orient them within three seconds' — invented metric with no evidence",
+    "Generic behavioral assumption: 'Visitors who land without knowing your product category may leave' — could appear in any teardown, not specific to Crisp"
   ],
   "seoNotes": [
-    "The ## heading 'Should SaaS companies copy Crisp's homepage navigation strategy? When adding complexity works' is searchable but misses brand name 'Crisp' at the start — consider 'Crisp homepage navigation: when adding complexity works for SaaS' for stronger brand association",
-    "H3 headings are plain-language and scannable: 'The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy' — excellent decision-tree structure for Google featured snippets",
-    "The section effectively targets 'SaaS homepage navigation' and 'Crisp chat' through natural integration",
-    "Final H3 block delivers a specific, time-bound test anchored to Crisp evidence (count H2s, compare to Crisp's removal of 3) — highly actionable for founders"
+    "POSITIVE: Section heading contains searchable terms 'homepage positioning', 'headline', 'narrowing'",
+    "NEGATIVE: Section heading is missing 'Crisp' — reduces branded search value",
+    "NEGATIVE: No verbatim quoted homepage text appears in the section — misses opportunity for exact-match snippet capture",
+    "POSITIVE: H3 headings are clear and actionable ('Who should copy this', 'Who should NOT copy this', 'The test before you copy')",
+    "NEGATIVE: The final test is generic analytics advice — does not tie back to Crisp's specific changes, reducing topical relevance"
   ],
-  "rewriteInstruction": "Add plain-language definitions inline for 'buyer journey' and 'positioning mismatch' using the parenthetical technique from your best sections. Split the 65-word paragraph in 'Who should copy this' at the natural sentence break. Soften the causal claim 'That only works if' by adding a condition marker like 'This strategy typically works best when' or 'This pattern usually requires'. Consider moving 'Crisp' to the start of the ## heading for stronger brand SEO: 'Crisp homepage navigation strategy: when adding complexity works for SaaS companies'. All fixes preserve the excellent decision-tree structure and specific evidence anchoring.",
+  "rewriteInstruction": "This section fires multiple hard caps: jargon overuse (hero 4x, category 8x after first use), unsupported causation in the heading ('works'/'backfires'), and three paragraphs over 60 words. Strip all expert terms after their first use — replace 'hero' with 'top section' or 'headline area', replace 'category' with 'product type'. Remove the causation claim from the heading; replace with a neutral descriptor like 'How Crisp narrowed its headline and expanded its navigation'. Break the first H3 block into two paragraphs. Remove all speculative claims ('may work', 'could reduce', 'may leave'). Add **bold quotes** around all navigation and section-heading counts. Anchor the final test to Crisp's evidence: tell the founder to open the two snapshots side by side and count how many of the 8 new nav items explain what Crisp does, then compare that to their own site. The section must work for a founder who has never heard the term 'hero section' and is skimming on a phone.",
   "dimensionScores": {
-    "evidenceAccuracy": 24,
-    "specificity": 15,
-    "plainLanguage": 16,
-    "scannability": 13,
-    "searchableHeadings": 8,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 4
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 4,
+    "scannability": 6,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

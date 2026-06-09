@@ -174,14 +174,16 @@ export function computeDiff(
     metaDescs.push({ from: fromText.metaDescription.trim(), to: toText.metaDescription.trim(), fromMonth, toMonth });
   }
 
-  // H2 / H3 — short-circuit obvious noise (numbers, percentages only)
+  // H2 / H3 — filter noise: must be > 4 chars AND at least 3 words to avoid
+  // fragmented headings like "Scale your", "without compromising", "Build"
+  const minWords = (s: string) => s.split(/\s+/).filter(Boolean).length >= 3;
   const h2 = setDiff(
-    (fromText.h2 ?? []).filter(s => s.length > 4),
-    (toText.h2 ?? []).filter(s => s.length > 4),
+    (fromText.h2 ?? []).filter(s => s.length > 4 && minWords(s)),
+    (toText.h2 ?? []).filter(s => s.length > 4 && minWords(s)),
   );
   const h3 = setDiff(
-    (fromText.h3 ?? []).filter(s => s.length > 4),
-    (toText.h3 ?? []).filter(s => s.length > 4),
+    (fromText.h3 ?? []).filter(s => s.length > 4 && minWords(s)),
+    (toText.h3 ?? []).filter(s => s.length > 4 && minWords(s)),
   );
 
   // CTAs and nav — apply noise filters before diffing, then sort action CTAs first

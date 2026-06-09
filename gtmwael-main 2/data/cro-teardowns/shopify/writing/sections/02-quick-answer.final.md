@@ -1,0 +1,3 @@
+## Quick answer: Shopify homepage shift
+
+Shopify replaced its category-defining headline **"The platform commerce is built on"** with **"Be the next AI all-star"**. The page title changed from **"Start a Business, Grow Your Business"** to **"The All-in-One Commerce Platform for Businesses"**. The meta description added AI as a benefit claim while keeping the phrase **"Get more than ecommerce software with tools to manage every part of your business"** unchanged.

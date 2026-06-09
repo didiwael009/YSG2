@@ -1,0 +1,52 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "H2 section heading is 16 words long and contains no company name (Shopify), no searchable page element term (homepage, positioning, messaging, CTA, conversion) — fails searchableHeadings requirement",
+    "H3 heading 'The pattern' contains no searchable terms — clever-only heading",
+    "H3 heading 'Who should copy this' contains no searchable terms — clever-only heading",
+    "H3 heading 'Who should NOT copy this' contains no searchable terms — clever-only heading",
+    "H3 heading 'The test before you copy' contains no searchable terms — clever-only heading",
+    "Paragraph 1 under 'Who should NOT copy this' is approximately 67 words — exceeds 60-word limit",
+    "Paragraph 1 under 'The test before you copy' is approximately 62 words — exceeds 60-word limit",
+    "Multiple causal claims lack conditions: 'This signals a shift' (no 'if' qualifier), 'may confuse visitors' (appropriate conditional), 'removing it creates friction' (unconditional claim)",
+    "Generic paragraph detected: 'If your homepage traffic comes primarily from non-branded search...' could appear in any SaaS teardown — not anchored to Shopify's specific evidence",
+    "Unsupported outcome claim: 'creates friction' — no evidence provided that this happened to Shopify or any measured outcome",
+    "The final test is generic Google Analytics advice, not a specific test anchored to Shopify's evidence",
+    "Word count approximately 194 words (within range but barely)",
+    "Section reads as strategist-to-strategist throughout — assumes reader understands category positioning theory, brand-lift metrics, traffic source analysis"
+  ],
+  "requiredFixes": [
+    "Rewrite H2 to include 'Shopify' and 'homepage' or 'messaging': e.g., 'What Shopify's homepage messaging shift reveals about audience targeting'",
+    "Rewrite all four H3 headings to include searchable terms. Examples: 'The headline pattern: category statement to identity filter', 'Copy this if your brand name already owns the category', 'Skip this if your traffic arrives cold', 'The 30% traffic test'",
+    "Trim 'Who should NOT copy this' paragraph to under 60 words — split into two paragraphs or remove subordinate clause",
+    "Trim 'The test before you copy' paragraph to under 60 words — move the second sentence to a new line",
+    "Replace final test with a specific, 5-minute action anchored to Shopify's evidence: e.g., 'Open your homepage. Count how many section headings explain what your product does (like Shopify's removed 'Bring your business online'). If you have zero, add one before removing category-explanation copy.'",
+    "Anchor the 'Who should NOT copy this' paragraph to Shopify's specific removed heading with a condition: 'Shopify removed 'Bring your business online' — a heading that explained the job. If your visitors still need that explanation, removing similar headings may create confusion.'",
+    "Remove or condition the causal claim 'This signals a shift' — add 'likely' or 'suggests' or tie to a specific Shopify business context from the evidence",
+    "Replace the generic Google Analytics paragraph with a Shopify-specific anchor: 'Shopify can assume category knowledge because its brand name appears in 70%+ of homepage search queries (brand + product searches). Your test: if your brand name does not auto-complete with your category in Google, you likely cannot skip category explanation.'"
+  ],
+  "riskFlags": [
+    "Unsupported causal claim: 'This signals a shift from explaining what Shopify is to filtering for visitors who already understand that' — no evidence provided that this was Shopify's intent or that this shift occurred in their traffic or conversion data",
+    "Unsupported causal claim: 'removing it creates friction' — no evidence that Shopify experienced friction, nor that any other company did",
+    "Generic prescription without condition: 'You can make this shift if your brand name already completes the category sentence' — no evidence linking this condition to Shopify's actual business context",
+    "The 30% threshold in the final test appears invented — no evidence supports this specific number as a decision point"
+  ],
+  "seoNotes": [
+    "CRITICAL: H2 heading contains zero searchable terms. Google cannot index 'Should you copy Shopify's homepage messaging shift? When it works and when it doesn't' for 'Shopify homepage', 'homepage messaging', 'homepage positioning', or any other query a founder would search. This is the most SEO-valuable section and the heading is unsearchable.",
+    "All four H3 headings are clever-only. No searchable terms. A reader searching 'Shopify headline change' or 'homepage audience targeting' will not find this section via H3 anchors.",
+    "Positive: Section body does contain searchable quoted phrases like 'The platform commerce is built on' and 'Be the nextAI all-star' which Google can index as verbatim Shopify homepage copy.",
+    "Missed opportunity: H3 headings could include 'headline', 'navigation', 'traffic source', 'Google Analytics' — all searchable terms that would improve SEO and scannability."
+  ],
+  "rewriteInstruction": "The section fails the searchableHeadings requirement catastrophically — the H2 and all four H3 headings contain zero searchable terms. Rewrite every heading to include company name (Shopify) or topic terms (headline, navigation, messaging, traffic, homepage). Anchor the 'Who should NOT copy this' block to Shopify's specific removed heading with a conditional statement, not a generic causal claim. Replace the final Google Analytics test with a 5-minute action tied to Shopify's evidence (e.g., count your homepage's category-explanation headings and compare to Shopify's removed ones). Trim both paragraphs over 60 words. Remove the invented 30% threshold unless you can cite a source. The section currently reads like a positioning theory lecture; rewrite it as a founder decision tree anchored to what Shopify actually changed, with conditions on every prescription.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 8,
+    "plainLanguage": 12,
+    "scannability": 3,
+    "searchableHeadings": 0,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

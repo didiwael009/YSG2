@@ -76,10 +76,12 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
               <div className="min-w-0 space-y-16">
 
                 {/* 1. Summary cards */}
-                <SummaryCards cards={post.summaryCards} />
+                <section id="summary" className="scroll-mt-28">
+                  <SummaryCards cards={post.summaryCards} />
+                </section>
 
                 {/* 2. Visual timeline */}
-                <ScreenshotTimeline snapshots={post.snapshots} />
+                <ScreenshotTimeline snapshots={post.snapshots} companyName={post.companyName} />
 
                 {/* 3. Screenshot analysis */}
                 <section id="analysis" className="scroll-mt-28 space-y-12">

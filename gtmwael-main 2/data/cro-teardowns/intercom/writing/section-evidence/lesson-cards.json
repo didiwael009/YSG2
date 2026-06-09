@@ -1,27 +1,22 @@
 [
   {
-    "title": "Your H1 signals which buyer you are targeting",
-    "body": "The headline changed from \"Support customers at exactly the right moment\" to \"The only helpdesk designed for the AI Agent era\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+    "title": "\"Support customers\" speaks to a practitioner; \"the only helpdesk\" speaks to a buyer",
+    "body": "\"Support customers at exactly the right moment\" addressed the person running support conversations. \"The only helpdesk designed for the AI Agent era\" addresses the person choosing which vendor to buy. The language shift from outcome to category ownership targets a different decision-maker — and a different point in the buying process.",
     "tag": "Messaging"
   },
   {
-    "title": "Navigation is a positioning statement",
-    "body": "Navigation items changed from \"Contact Sales\", \"Sign in\", \"Custom Bots\" to \"Fin\", \"Log in\", \"Contact sales\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
-    "tag": "Navigation"
-  },
-  {
-    "title": "Section headings reveal what the team thinks buyers care about",
-    "body": "5 section headings were added and 1 removed between Jan 2023 and Jun 2026. New headings include \"A complete solution for AI and human agents\" and \"A fully-featured AI-powered helpdesk\". Headings that disappeared include \"A better customer experience across support, marketing, and sales\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+    "title": "\"The only\" is procurement language — it answers a shortlist question, not a capability question",
+    "body": "Claiming to be \"the only\" helpdesk for the AI Agent era works when a buyer is already comparing vendors and needs a differentiator. It doesn't work as discovery language — a visitor who hasn't decided they need an AI helpdesk won't find the claim meaningful. Check whether your homepage is written for comparison-stage buyers or still needs to convert visitors who haven't yet decided to buy.",
     "tag": "CRO"
   },
   {
-    "title": "Superlatives raise expectations across your entire funnel",
-    "body": "Claims like \"The only helpdesk designed for the AI Agent era\" raise the bar for everything downstream — including the product experience, onboarding, and support. If the homepage signals category leadership and the product experience signals a self-serve tool, the mismatch may create friction at the trial-to-paid stage. This is not a caution against ambitious claims — it is a note that the rest of the funnel must match them.",
-    "tag": "CRO Risk"
+    "title": "Removing download and demo CTAs assumes buyers arrive decision-ready",
+    "body": "\"Download the report\", \"Watch a Demo\", and \"Watch now\" were removed. What replaced them: \"Start free trial\" and \"Contact sales\" — two paths that assume the visitor is already in evaluation mode. Cutting mid-funnel nurture CTAs reduces drop-off from choice paralysis, but only works if your traffic arrives pre-qualified. If it doesn't, you've removed the on-ramp.",
+    "tag": "CRO"
   },
   {
-    "title": "Incremental changes compound into a brand shift",
-    "body": "Across 4 snapshots spanning roughly 3 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+    "title": "Page title went from brand philosophy to category ownership — a 3-year ICP shift",
+    "body": "\"Making Internet Business Personal\" was an identity statement about Intercom's mission. \"The only helpdesk designed for the AI Agent era\" is a vendor differentiation claim. The three-year trajectory from practitioner outcome → AI company → category owner maps a deliberate move upmarket. Each step narrowed the buyer the page was optimized to convert.",
     "tag": "Strategy"
   }
 ]

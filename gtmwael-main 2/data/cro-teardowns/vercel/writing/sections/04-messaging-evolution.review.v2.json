@@ -1,33 +1,47 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 71,
+  "pass": false,
   "issues": [
-    "Final H3 takeaway test is somewhat generic — 'Open your homepage. Does your H1 name what your product does' could appear in many teardowns",
-    "H3 block 2 paragraph length is ~66 words (exceeds 60-word target)",
-    "Second sentence of final H3 contains causal claim without condition: 'The new headline assumes you already know what AI Cloud means' — no evidence that assumption was intentional strategy vs. outcome of iterative copy edits"
+    "Paragraph 1 (H3-1 body): 50 words — acceptable, but opening sentence is generic template ('The original page spoke to developers who...')",
+    "Paragraph 2 (H3-2 body): 73 words — EXCEEDS 60-word cap by 13 words",
+    "Paragraph 3 (H3-3 body): 95 words — EXCEEDS 60-word cap by 35 words",
+    "Section total: ~218 words — EXCEEDS 200-word cap by 18 words",
+    "H3-1 opening sentence: 'The original page spoke to developers who already understood frontend deployment workflows' — could appear word-for-word in any deployment tool teardown (generic SaaS commentary)",
+    "H3-2: Second sentence introduces causal inference ('This suggests the page now targets visitors who need to justify...') without evidence tracing to a documented strategy shift",
+    "H3-3: Final test is partially specific but opens with a generic instruction ('Count the capability categories in your own headline') before arriving at the Vercel-anchored observation",
+    "Plain language check: 'comparison-stage buyer' appears once without definition (expert term requires immediate plain-language explanation in same sentence)",
+    "Specificity: H3-1 paragraph contains zero company-specific anchors beyond the quoted headline — the analysis ('assumed familiarity with those three stages') could describe any dev tool",
+    "Opening sentence rhythm: First three sentences are all ~15–18 words, similar structure (subject-verb-object declarative)",
+    "Searchable heading: ## heading contains 'Vercel' and 'messaging' — meets requirement"
   ],
   "requiredFixes": [
-    "Make the final H3 takeaway test more specific to Vercel's evidence: replace 'Does your H1 name what your product does' with a test anchored to the workflow-to-infrastructure contrast (e.g. 'Count how many words in your H1 describe a workflow step vs. a capability category')",
-    "Trim H3 block 2 to 60 words or split into two shorter paragraphs",
-    "Attach a condition to the 'assumes you already know' claim in final H3 — e.g. 'The new headline assumes you already know what AI Cloud means — which works IF visitors arrive from brand search or technical content, but may skip the explanation step if cold search traffic remains high'"
+    "H3-2 body paragraph: reduce from 73 words to ≤60 words — cut the final sentence ('This suggests...') or move it to H3-3",
+    "H3-3 body paragraph: reduce from 95 words to ≤60 words — split into two blocks or tighten the test instruction",
+    "Section word count: reduce from ~218 to ≤200 words (cut 18+ words)",
+    "H3-1 opening: replace generic template ('The original page spoke to developers who...') with a specific observation anchored to the evidence (e.g., open with the three-verb structure as the interesting finding)",
+    "H3-2 second sentence: remove or reframe the causal claim ('This suggests the page now targets...') — replace with a neutral observation tied to the quoted evidence (e.g., 'The meta description now lists three capability categories instead of one outcome')",
+    "H3-1 body: add at least one company-specific anchor beyond the quoted headline — reference the meta description evidence or tie the 'three stages' observation to Vercel's documented workflow vocabulary",
+    "H3-3 test instruction: move the generic opener ('Count the capability categories...') to a conditional clause and lead with the Vercel-specific finding (e.g., 'Vercel's new meta lists three categories. If your headline does the same, you may be...')",
+    "Plain language: define 'comparison-stage buyer' immediately after first use (e.g., 'comparison-stage buyer — someone evaluating multiple platforms')"
   ],
   "riskFlags": [
-    "Final H3 contains causal claim 'The new headline assumes you already know' without evidence that this was an intentional positioning choice vs. an artifact of copy evolution"
+    "H3-2: 'This suggests the page now targets visitors who need to justify a platform choice beyond deployment speed' — causal inference about targeting intent, not supported by evidence (no documented strategy, user research, or A/B test data provided)",
+    "H3-3: 'your page may be speaking to a comparison-stage buyer, not someone still learning' — causal claim about headline structure determining buyer stage, presented without condition or evidence of outcome"
   ],
   "seoNotes": [
-    "Section heading contains company name (Vercel), topic terms (messaging), and searchable phrases (developer workflow, AI infrastructure)",
-    "All three H3 subheadings contain searchable year markers (2021, 2026) and specific topic terms (frontend developers, deployment tools, AI cloud infrastructure)",
-    "Draft correctly quotes all verbatim website elements in bold — headline, meta description, page title fragments"
+    "## heading is searchable: contains 'Vercel' + 'messaging' + 'homepage' — good",
+    "H3 headings use plain search terms ('Who the old page served', 'Who the new page served', 'What changed') — acceptable but not optimized for query match (e.g., 'homepage messaging' or 'headline shift' would rank better)",
+    "Section does not define or explain 'AI Cloud' — missed opportunity for semantic SEO (Google may not parse this as infrastructure positioning without context)"
   ],
-  "rewriteInstruction": "Trim the second H3 paragraph to 60 words or split it. Attach a conditional clause to the 'assumes you already know' claim in the final H3 (e.g. 'which works IF visitors arrive from brand search'). Replace the final takeaway test with something more specific to Vercel's workflow-to-infrastructure shift — instead of the generic 'Does your H1 name what your product does', try 'Count how many words in your H1 describe a workflow step (like Preview, Ship) vs. a capability category (like infrastructure, frameworks).' This anchors the test to the evidence and makes it runnable in under five minutes.",
+  "rewriteInstruction": "Reduce all three H3 body paragraphs to ≤60 words each. Cut section total to ≤200 words. Remove the causal claim in H3-2 ('This suggests the page now targets...') and replace with a neutral observation tied to the quoted evidence. In H3-1, replace the generic opening ('The original page spoke to...') with a specific finding anchored to the three-verb structure. Add at least one more company-specific anchor in H3-1 beyond the headline quote (reference the meta description or tie the 'three stages' claim to Vercel's documented workflow terms). In H3-3, lead with the Vercel-specific observation (the meta description lists three categories) before giving the founder test. Define 'comparison-stage buyer' inline when first used. Vary sentence length in the opening three sentences — the current draft uses three similar 15–18 word declaratives in a row. The final test is acceptable but should open with the Vercel finding, not the generic instruction.",
   "dimensionScores": {
-    "evidenceAccuracy": 22,
-    "specificity": 12,
-    "plainLanguage": 20,
-    "scannability": 12,
-    "searchableHeadings": 10,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 4
+    "evidenceAccuracy": 15,
+    "specificity": 8,
+    "plainLanguage": 14,
+    "scannability": 3,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 4,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

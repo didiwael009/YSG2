@@ -1,0 +1,47 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Section heading is searchable but lacks company name (Shopify); includes 'CTA' but misses an opportunity to name the company for SEO",
+    "H3 heading 'What changed' is not searchable — too generic, could apply to any teardown",
+    "H3 heading 'Shopify CTAs no longer serve category researchers' uses jargon term 'category researchers' without plain-language definition",
+    "Paragraph 2 in H3 block 2 is 81 words, exceeds 60-word limit by 21 words",
+    "Causal claim 'this shift suggests a mismatch between visitor intent and page assumption' has no attached condition — when does this mismatch fire? Always? Only for non-branded traffic?",
+    "Term 'product knowledge' appears without definition; what does 'product knowledge' mean to a founder?",
+    "Founder takeaway in H3 block 3 is specific and runnable, but opens with instruction rather than delivering the takeaway in first sentence",
+    "Word count approximately 165 words — within range",
+    "All verbatim quotes are in **bold quotes** — correct",
+    "All three H3 subheadings are present — correct structure",
+    "Paragraph 1 (H3 block 1): approximately 40 words — acceptable",
+    "Paragraph 1 (H3 block 2): approximately 81 words — violation",
+    "Paragraph 2 (H3 block 3): approximately 44 words — acceptable"
+  ],
+  "requiredFixes": [
+    "Revise section heading to include 'Shopify' for searchability: 'Shopify CTA shift: from education to purchase intent' → 'Shopify CTAs: homepage shift from education to purchase intent'",
+    "Replace H3 heading 'What changed' with searchable term: 'Four education CTAs removed, two purchase-focused CTAs added'",
+    "Split 81-word paragraph in H3 block 2 into two paragraphs at natural break (after 'Those are gone.')",
+    "Add condition to causal claim: 'this shift suggests a mismatch' → 'if your non-branded traffic arrives via queries like 'what is ecommerce platform', this shift creates a mismatch'",
+    "Define 'product knowledge' in plain language: 'assumes product knowledge' → 'assumes visitors already know what an ecommerce platform does and how to use it'",
+    "Reorder H3 block 3 to deliver takeaway in first sentence: move 'Shopify went from four to zero' to open the block"
+  ],
+  "riskFlags": [
+    "Causal claim 'this shift suggests a mismatch between visitor intent and page assumption' lacks attached condition — when does this fire? Always? Only for specific traffic sources?",
+    "Claim 'The page no longer gives paths to people still learning' is strong but evidence only shows CTAs removed, not that zero educational paths exist on the entire page"
+  ],
+  "seoNotes": [
+    "Section heading includes searchable term 'CTA' but misses opportunity to include 'Shopify' for brand + topic searchability",
+    "H3 heading 'What changed' is a missed SEO opportunity — too generic, not searchable",
+    "H3 heading 'Shopify CTAs no longer serve category researchers' includes brand name but uses jargon term that reduces search discoverability"
+  ],
+  "rewriteInstruction": "Revise the section heading to include 'Shopify' and 'homepage' for searchability. Replace the first H3 heading 'What changed' with a specific, searchable heading that names what was added and removed. Split the 81-word paragraph in H3 block 2 into two paragraphs. Add a condition to the causal claim about traffic mismatch so it reads 'if [condition], then [consequence]'. Replace 'product knowledge' with plain language that explains what visitors need to know. Reorder H3 block 3 so the first sentence delivers the takeaway ('Shopify went from four education CTAs to zero'), then follow with the audit instructions. Define 'category researchers' in plain language or replace with a term like 'visitors still learning what an ecommerce platform does'.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 15,
+    "plainLanguage": 14,
+    "scannability": 9,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -12,8 +12,8 @@
     "metaChanged": true,
     "titleChanged": true,
     "snapshotCount": 5,
-    "h2Added": 12,
-    "h2Removed": 2,
+    "h2Added": 0,
+    "h2Removed": 1,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -21,18 +21,19 @@
     "visualOnly": false,
     "hasMidTransition": true
   },
+  "primaryKeyword": "Vercel landing page",
   "cta-changes": {
     "added": [
       "Explore Enterprise",
       "AI Cloud",
-      "AI GatewayOne endpoint, all your models",
-      "SandboxIsolated, safe code execution",
-      "Vercel AgentAn agent that knows your stack",
-      "AI SDKThe AI Toolkit for TypeScript",
-      "v0Build applications with AI",
-      "CI/CDHelping teams ship 6× faster",
-      "Content DeliveryFast, scalable, and reliable",
-      "Fluid ComputeServers, in serverless form"
+      "AI Gateway One endpoint, all your models",
+      "Sandbox Isolated, safe code execution",
+      "Vercel Agent An agent that knows your stack",
+      "AI SDK The AI Toolkit for TypeScript",
+      "v0 Build applications with AI",
+      "CI/CD Helping teams ship 6× faster",
+      "Content Delivery Fast, scalable, and reliable",
+      "Fluid Compute Servers, in serverless form"
     ],
     "removed": [
       "Contact",
@@ -48,23 +49,9 @@
     ]
   },
   "h2-changes": {
-    "added": [
-      "Scale your",
-      "without compromising",
-      "Get Started",
-      "Build",
-      "Scale",
-      "Secure",
-      "Resources",
-      "Learn",
-      "Frameworks",
-      "Use Cases",
-      "Company",
-      "Community"
-    ],
+    "added": [],
     "removed": [
-      "Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.",
-      "Clone Template"
+      "Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work."
     ]
   }
 }

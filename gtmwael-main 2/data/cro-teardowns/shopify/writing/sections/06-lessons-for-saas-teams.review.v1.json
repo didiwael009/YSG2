@@ -1,33 +1,52 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 62,
+  "pass": false,
   "issues": [
-    "Word count ~220 — on the high end of 150–240, but acceptable",
-    "Opening could be punchier — 'brand-led repositioning' is mechanism-heavy in first breath",
-    "Phrase 'procurement-stage buyer' appears once without anchor in evidence",
-    "Final founder test (Search Console audit) is strong but the 40% threshold is invented"
+    "Multiple causal outcome claims without data: 'cost you conversions', 'will leave the moment', 'broken funnel'",
+    "Generic paragraphs that could appear in any teardown: entire 'Who should copy this' H3 block contains zero Shopify-specific evidence",
+    "Forbidden term 'aspirational positioning' used without plain-language definition",
+    "Forbidden term 'identity recruitment' used without plain-language definition",
+    "Section heading lacks searchable terms — 'Should SaaS companies copy Shopify's homepage strategy? When it works and when it doesn't' is clever-only, missing 'messaging', 'positioning', 'CTA', etc.",
+    "The Pattern H3 block: 72 words — exceeds 60-word limit",
+    "Who should NOT copy this H3 block: 73 words — exceeds 60-word limit",
+    "Section is 229 words — within target range",
+    "Bold quotes missing: 'The platform commerce is built on' and 'Be the nextAI all-star' appear without bold formatting",
+    "Practical takeaway buried in 'The test before you copy' — appears in sentence 3, not first two sentences",
+    "Zero quoted headline changes, nav items, or section headings from the evidence appear in the draft",
+    "The entire section could be reused for any SaaS company with strong brand recognition — no Shopify-specific anchoring"
   ],
   "requiredFixes": [
-    "Remove or hedge the '40%' threshold in the Search Console test — no evidence supports that specific number. Replace with: 'If most of your homepage traffic comes from non-branded queries, removing category explanation...'",
-    "Consider opening with the paradox instead of the mechanism name: 'Shopify removed category explanation from its headline. That move only works if...' Then name 'brand-led repositioning' in sentence two."
+    "Add bold quotes around every verbatim headline: **'The platform commerce is built on'** and **'Be the nextAI all-star'**",
+    "Replace generic traffic advice in 'Who should copy this' with specific Shopify evidence: quote the actual nav changes ('Start your business' → 'Website Builder') or section heading shifts",
+    "Remove or define 'identity recruitment' — replace with plain language like 'the page now targets a specific type of founder' with immediate definition",
+    "Remove 'aspirational positioning' or define it in the same sentence",
+    "Rewrite 'The Pattern' H3 block to under 60 words",
+    "Rewrite 'Who should NOT copy this' H3 block to under 60 words",
+    "Move practical takeaway in 'The test before you copy' to the first sentence",
+    "Replace at least one generic paragraph with evidence-anchored analysis: quote a removed section heading ('Bring your business online') and explain what its removal signals",
+    "Change section heading to include searchable terms: 'Shopify homepage positioning strategy' or 'Should you copy Shopify's messaging shift?'"
   ],
   "riskFlags": [
-    "'procurement-stage buyer' — this term appears without evidence anchor; hedge or remove",
-    "The 40% threshold is unsupported — this is a invented metric, not grounded in Shopify's evidence"
+    "CAUSAL CLAIM WITHOUT DATA: 'removing the product explanation will cost you conversions' — no conversion data provided in evidence",
+    "CAUSAL CLAIM WITHOUT DATA: 'Visitors who arrive without knowing what you do will leave the moment they sense the page assumes prior knowledge' — no bounce rate or exit data in evidence",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'The result is not aspirational positioning — it is a confused visitor and a broken funnel' — no attached condition or qualifier",
+    "UNSUPPORTED OUTCOME CLAIM: 'cost you conversions' appears without any conversion metric from the evidence"
   ],
   "seoNotes": [
-    "Meta-pattern naming ('brand-led repositioning') is strong for internal linking and topic authority",
-    "The phrase 'category ownership' could be bolded if it becomes a recurring term across teardowns"
+    "Section heading is clever-only — 'Should SaaS companies copy Shopify's homepage strategy?' contains company name but lacks topic keyword like 'positioning', 'messaging', 'conversion', or 'CTA'",
+    "No quoted headline changes appear in the draft despite evidence providing two full headlines — missed SEO opportunity to rank for 'Shopify homepage headline' searches",
+    "H3 subheadings are generic ('The pattern', 'Who should copy this') — replacing with 'When brand-driven positioning works for SaaS homepages' would add searchable keyword density",
+    "Zero nav item changes are quoted despite evidence showing 8 added and 8 removed — missed long-tail SEO opportunity"
   ],
-  "rewriteInstruction": "Remove the invented 40% threshold from the Search Console test — replace with a directional instruction ('If most of your traffic...') that does not imply a specific cutoff. Tighten the opening: lead with the paradox (headline removed category explanation) before naming the mechanism (brand-led repositioning). The section is substantively strong but needs two precision fixes to pass 90.",
+  "rewriteInstruction": "This section fires three hard caps: unsupported conversion outcome claims cap the score at 60, zero Shopify-specific evidence in two H3 blocks violates the specificity requirement, and forbidden jargon without definitions violates plain-language rules. Rewrite by anchoring every H3 block to quoted evidence: open 'The Pattern' by contrasting the actual headlines (**'The platform commerce is built on'** vs **'Be the nextAI all-star'**), then explain what that shift reveals about audience targeting. In 'Who should copy this', replace the generic brand-recognition advice with Shopify's nav changes ('Start your business' → 'Website Builder') and state what those labels assume about the visitor. In 'Who should NOT copy this', remove all causal conversion claims ('will cost you conversions', 'broken funnel') unless you add a condition ('if your traffic is 70%+ non-branded search'). Replace 'identity recruitment' and 'aspirational positioning' with plain explanations. Trim both long paragraphs to under 60 words by cutting the abstract commentary. Move the practical takeaway in the final H3 to the opening sentence. Change the section heading to include 'Shopify homepage positioning' or 'messaging shift' for searchability.",
   "dimensionScores": {
-    "evidenceAccuracy": 22,
-    "riskControl": 8,
-    "specificity": 14,
-    "clarity": 8,
-    "entryPointOriginality": 13,
-    "mechanismNaming": 10,
-    "founderSharpness": 13
+    "evidenceAccuracy": 5,
+    "specificity": 3,
+    "plainLanguage": 10,
+    "scannability": 6,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

@@ -1,43 +1,44 @@
 {
-  "score": 82,
+  "score": 68,
   "pass": false,
   "issues": [
-    "The opening sentence claims 'The old page spoke to someone who had never run a store' — an interpretation presented as confirmed fact, not hedged. The evidence shows language change, not verified buyer intent.",
-    "The phrase 'That is not a tone refresh. That is a different conversation with a different decision-maker at a different stage' is stated as certainty when it is an inference from messaging changes.",
-    "The tradeoff ('What it costs: every founder still working a day job...') is present but appears late in para 3 rather than woven into the mechanism discussion.",
-    "The founder test is present as the last sentence but lacks specificity — it describes what to look for ('if your H1 could plausibly appear in a founder's search query') without naming a single concrete action the founder performs to test it.",
-    "The draft claims 'The old language served discovery-stage traffic: people searching how to sell online' — this is an invented example not present in the evidence.",
-    "The draft claims 'people comparing Shopify to BigCommerce or Adobe Commerce with a scope document already written' — no evidence of competitive context or buyer behavior is provided.",
-    "Word count is approximately 265 words, exceeding the 220-word max for analytical sections."
+    "The headline 'Be the nextAI all-star' is quoted incorrectly — evidence shows 'Be the nextAI all-star' but this appears to be a transcription error; verify against actual snapshot",
+    "Second H3 paragraph makes unsupported causal claim: 'assumes familiarity with the product category and jumps straight to competitive differentiation' — no evidence shows this was the intent",
+    "Third H3 makes unsupported causal claim: 'suggests Shopify now relies more on brand awareness before the homepage load' — no evidence supports this channel strategy inference",
+    "Third H3 makes unsupported causal claim: 'from search, word-of-mouth, or paid channels that pre-qualify intent' — no evidence of channel mix or pre-qualification strategy",
+    "Final question is generic founder takeaway, not a specific runnable test anchored to Shopify's evidence",
+    "Paragraph 2 in second H3 block is 62 words (over 60-word limit)",
+    "Multiple outcome/causation claims without attached conditions",
+    "Generic paragraph: the entire third H3 block could appear word-for-word in any SaaS teardown"
   ],
   "requiredFixes": [
-    "Hedge the opening sentence: 'The old page appears to have spoken to someone who had never run a store' or 'The language change suggests a shift from aspiring entrepreneurs to established businesses.'",
-    "Hedge the declaration in para 2: 'This pattern suggests a different conversation...' rather than 'That is a different conversation...'",
-    "Remove the invented search query example 'how to sell online' — the evidence does not include search behavior data.",
-    "Remove the competitive comparison to BigCommerce and Adobe Commerce — no evidence supports this claim.",
-    "Move the tradeoff sentence earlier — ideally into para 2, immediately after establishing the mechanism (ICP narrowing / qualification filter).",
-    "Make the founder test concrete: 'Open your homepage and paste your H1 into Google. If the top results are beginners asking questions, you are still in discovery. If the results are vendor comparison posts or RFP templates, you have moved to procurement.'",
-    "Cut 45+ words to reach 220-word target. Para 2 has padding ('That is not a tone refresh') that could be removed without losing the insight."
+    "Remove or reframe all causal claims about Shopify's strategy (channel mix, pre-qualification, competitive positioning intent) — the evidence shows only text changes, not strategic intent",
+    "Add conditions to every causal statement: instead of 'This suggests Shopify now relies more on brand awareness', write 'If Shopify's traffic is coming from branded search or referrals, this headline change makes sense because...'",
+    "Replace the generic final question with a specific 5-minute test: 'Open your homepage in an incognito window. Can a first-time visitor understand what you do in 3 seconds, or does your headline assume they already know?'",
+    "Shorten second H3 paragraph to under 60 words — split into two paragraphs or cut the meta description detail",
+    "Verify the headline quote 'Be the nextAI all-star' against the actual snapshot — this appears malformed",
+    "Anchor the third H3 block to Shopify-specific evidence: quote the exact navigation changes (8 added, 8 removed) or section heading changes (5 added, 8 removed) to ground the 'what this means' interpretation"
   ],
   "riskFlags": [
-    "'The old page spoke to someone who had never run a store' — stated as fact, no hedge.",
-    "'That is a different conversation with a different decision-maker at a different stage' — causal claim without hedge.",
-    "'The old language served discovery-stage traffic: people searching how to sell online' — invented behavioral example not in evidence.",
-    "'people comparing Shopify to BigCommerce or Adobe Commerce with a scope document already written' — invented competitive scenario not in evidence."
+    "UNSUPPORTED CAUSATION: 'assumes familiarity with the product category and jumps straight to competitive differentiation' — no evidence of intent or competitive positioning strategy",
+    "UNSUPPORTED CAUSATION: 'suggests Shopify now relies more on brand awareness before the homepage load' — no traffic source or acquisition data provided",
+    "UNSUPPORTED CAUSATION: 'from search, word-of-mouth, or paid channels that pre-qualify intent' — no channel mix evidence",
+    "OUTCOME CLAIM: 'This framing assumed the visitor didn't yet know what Shopify was' — assumption presented as fact without evidence"
   ],
   "seoNotes": [
-    "The section correctly identifies the category claim shift in the page title and its implications for organic positioning.",
-    "The founder test could be strengthened to include an actionable SEO audit step (e.g., 'paste your H1 into Google and note whether the SERP features are informational or transactional')."
+    "POSITIVE: Section heading contains 'Shopify' and 'messaging' (searchable terms)",
+    "POSITIVE: All three H3 subheadings are present as required for analytical sections",
+    "NEGATIVE: H3 subheadings are generic ('Who the old page served', 'Who the new page serves') — could add topic terms like 'audience', 'positioning', or 'messaging frame' for better scannability"
   ],
-  "rewriteInstruction": "Retain the core mechanism (ICP narrowing via language shift from aspiring to established merchants) and the entry point (finding: Shopify stopped recruiting beginners). Hedge the opening: 'appears to have spoken to' rather than 'spoke to'. Remove all invented examples: delete 'people searching how to sell online', delete the BigCommerce/Adobe Commerce comparison, delete 'scope document already written'. Move the tradeoff sentence into para 2 immediately after naming the mechanism. Make the founder test concrete and actionable: specify that the founder should paste their H1 into Google and examine the SERP to determine whether results are discovery-stage (how-to content) or procurement-stage (vendor comparisons). Cut to 220 words by removing padding in para 2 ('That is not a tone refresh. That is a different conversation...') — state the finding once, directly.",
+  "rewriteInstruction": "Strip out all unsupported causal claims about Shopify's strategic intent. Replace outcome language ('assumes', 'suggests', 'relies on') with conditional phrasing ('if traffic is branded, this works because...'). Anchor the third H3 block to the concrete evidence: quote the nav/section changes (8 nav items added/removed, 5 section headings added/8 removed) and connect those to the messaging shift instead of inventing a channel strategy. Replace the generic final question with a specific 5-minute test tied to Shopify's evidence: 'Open your homepage. Does the headline work for someone who's never heard of you, or does it assume brand familiarity like Shopify's new 'AI all-star' framing does?' Fix the headline quote if it's malformed. Shorten the second H3 paragraph to under 60 words.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "riskControl": 4,
-    "specificity": 12,
-    "clarity": 7,
-    "entryPointOriginality": 13,
-    "mechanismNaming": 10,
-    "founderSharpness": 11
+    "evidenceAccuracy": 5,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 9,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

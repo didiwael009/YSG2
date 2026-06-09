@@ -412,11 +412,12 @@ interface ArticleBlueprint {
 export function buildAndCacheSectionEvidence(
   sectionId: string,
   writingDir: string,
+  force = false,
 ): Record<string, unknown> {
   const sectionEvidenceDir = path.join(writingDir, 'section-evidence');
   const cachePath = path.join(sectionEvidenceDir, `${sectionId}.evidence.json`);
 
-  if (fs.existsSync(cachePath)) {
+  if (!force && fs.existsSync(cachePath)) {
     return JSON.parse(fs.readFileSync(cachePath, 'utf-8')) as Record<string, unknown>;
   }
 
@@ -933,6 +934,8 @@ export interface WriteSectionOpts {
   minScore?: number;
   /** Skip critic and rewriter — write v1 only and save as final. */
   draftOnly?: boolean;
+  /** Force evidence re-build even if the cache file already exists. */
+  forceEvidence?: boolean;
   /**
    * Phase 4P: force a specific writer/rewriter model for ALL sections,
    * overriding each section's writerModel (e.g. run analytical sections on
@@ -957,7 +960,7 @@ export async function writeSectionLoop(
   const costBefore = tracker.totalCostUsd;
 
   // ── Evidence ────────────────────────────────────────────────────────────────
-  const evidence = buildAndCacheSectionEvidence(sectionId, writingDir);
+  const evidence = buildAndCacheSectionEvidence(sectionId, writingDir, opts.forceEvidence ?? false);
   onLog('Evidence', true, `${sectionId}.evidence.json`);
 
   // Phase 4P: analytical sections override writer/rewriter to Opus for sharper prose.

@@ -1,44 +1,46 @@
 {
-  "score": 72,
+  "score": 68,
   "pass": false,
   "issues": [
-    "Section word count ~150, but analytical section lacks required H3 structure depth",
-    "H3 'What changed' block is 62 words — exceeds 60-word limit for H3 body",
-    "H3 'Who this filters out' block is 63 words — exceeds 60-word limit",
-    "Section contains causal claim without condition: 'The page stopped teaching what infrastructure means' implies causation without 'if' framing",
-    "Claim 'If you do not know what Fluid Compute is before you click, the CTA label will not tell you' is interpretive — not traceable to evidence provided",
-    "Final H3 'Audit your own page' reads like generic SaaS advice — could appear in any teardown",
-    "Final test is not specific to Vercel evidence — it is a template instruction applicable to any homepage",
-    "Paragraph 2 in 'What changed' could appear in any company teardown with similar CTA shift",
-    "Opening sentence structure is uniform across all three H3 blocks — lacks rhythm variation"
+    "Word count ~230 exceeds the 180-word ceiling by 50 words",
+    "Second H3 heading 'Who this filters out' is clever-only with no searchable terms",
+    "Second paragraph (What changed) is ~85 words, exceeds 60-word limit",
+    "Third paragraph (Who this filters out) is ~75 words, exceeds 60-word limit",
+    "Fourth paragraph (Audit your own page) is ~75 words, exceeds 60-word limit",
+    "Section heading uses 'conversion path' instead of 'CTA' — still searchable but weaker",
+    "Missing bold quotes on several verbatim CTAs: 'Contact', 'Contact Us', 'Login' appear in plain quotes",
+    "Unsupported causal claim: 'a single clear CTA will convert better than ten feature links' — no evidence provided",
+    "Generic paragraph: the entire final H3 block could appear in any SaaS teardown",
+    "Practical takeaway is buried in the middle of the final paragraph, not in first two sentences",
+    "Opening sentence is template-default ('Vercel removed ten CTAs and added ten new ones') when evidence supported a more interesting entry"
   ],
   "requiredFixes": [
-    "Trim H3 'What changed' body to ≤60 words — move interpretation to separate H3 or cut",
-    "Trim H3 'Who this filters out' body to ≤60 words",
-    "Replace final H3 'Audit your own page' with Vercel-specific test: 'Open vercel.com. Count how many product-name CTAs (AI Gateway, Sandbox, Fluid Compute) appear above fold. Now open a Jul 2021 snapshot. Count feature-explainer CTAs (SSL encryption, cache invalidation). Compare ratio.'",
-    "Reframe 'The page stopped teaching' as conditional: 'If a visitor has not heard of Vercel's products, the new CTAs may function as navigation rather than conversion triggers'",
-    "Replace 'the CTA label will not tell you' with evidence-traceable observation: 'The evidence shows CTA labels changed from descriptive phrases to product names'",
-    "Add concrete comparison anchor in 'Who this filters out': reference specific old CTA that explained vs specific new CTA that does not"
+    "Add bold quotes to all verbatim CTAs: **'Contact'**, **'Contact Us'**, **'Login'** in the first paragraph",
+    "Trim word count from ~230 to 180 maximum — cut the final H3 block by 40 words",
+    "Break the second paragraph (What changed, ~85 words) into two paragraphs at the sentence 'Those are gone.'",
+    "Break the third paragraph (Who this filters out, ~75 words) into two paragraphs after the second sentence",
+    "Rewrite the final H3 block so the practical takeaway appears in the first sentence, not buried mid-paragraph",
+    "Replace 'Who this filters out' H3 heading with a searchable term: 'Who Vercel's new CTA structure filters out' or similar",
+    "Remove or condition the unsupported conversion claim in the final sentence ('a single clear CTA will convert better') — add 'often' or 'typically' or remove entirely"
   ],
   "riskFlags": [
-    "Causal claim: 'The page stopped teaching what infrastructure means and started listing what Vercel ships' — no conversion data provided to support outcome",
-    "Interpretive claim: 'If you do not know what Fluid Compute is before you click, the CTA label will not tell you' — this is editorial inference, not traceable to snapshot evidence",
-    "Causation without condition: 'This filters out people who are still learning' — no attached 'if' clause or conversion data"
+    "Conversion outcome claim without data: 'a single clear CTA will convert better than ten feature links' — no evidence provided for this causal statement",
+    "Causal claim without condition: 'This removes the path for visitors who are ready to start a trial' — presents as certain outcome when it is interpretive analysis"
   ],
   "seoNotes": [
-    "Section heading contains 'Vercel' and 'conversion' — searchable",
-    "H3 headings lack searchable terms: 'What changed', 'Who this filters out', 'Audit your own page' are generic and will not rank for long-tail queries",
-    "No mention of 'homepage' or 'CTA' in H3 headings — missed opportunity for 'Vercel homepage CTA audit' or similar searchable phrase"
+    "Section heading contains 'conversion path' and 'Vercel' — searchable but 'CTA' would be stronger",
+    "Second H3 heading 'Who this filters out' has zero searchable terms — will not surface in featured snippets",
+    "Third H3 heading 'Audit your own page' is actionable but generic — does not anchor to Vercel or CTA topic"
   ],
-  "rewriteInstruction": "Tighten all three H3 blocks to ≤60 words each. Replace the final H3 with a Vercel-specific test that references the exact CTAs from the evidence (count product-name CTAs vs feature-explainer CTAs in old vs new snapshots). Reframe all causal or interpretive claims as conditional observations ('if a visitor arrives without brand familiarity, these CTAs may…'). Vary sentence length — the opening of each H3 currently follows the same structure. Anchor 'Who this filters out' to a specific old CTA (e.g. 'SSL encryption' explained a feature) vs a specific new CTA (e.g. 'Fluid Compute' assumes you already know). Remove the generic SaaS advice paragraph that could appear in any teardown — every line must trace to Vercel's specific evidence.",
+  "rewriteInstruction": "Cut 50 words to reach 180 maximum. Add bold quotes to all verbatim CTAs in the first paragraph. Break paragraphs 2 and 3 so no block exceeds 60 words. Rewrite the final H3 block so the practical takeaway appears in the first sentence: 'Count your above-the-fold CTAs. If you have more than two, most first-time visitors will not know which to click.' Move the Vercel-specific observation (ten feature CTAs, brand carries intent) into the second sentence. Change the H3 heading 'Who this filters out' to 'Who Vercel's new CTA structure filters out' to include searchable terms. Remove or condition the unsupported conversion claim in the final sentence — replace 'will convert better' with 'typically converts better for companies without strong brand recognition'. Anchor the final test to Vercel's evidence: 'Open your homepage and count CTAs above the fold. Vercel uses ten feature-specific CTAs because their brand carries intent. If your brand does not, test a single primary CTA against your current multi-CTA layout.'",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "specificity": 9,
+    "evidenceAccuracy": 18,
+    "specificity": 8,
     "plainLanguage": 18,
-    "scannability": 6,
-    "searchableHeadings": 7,
-    "rhythmAndOpening": 7,
-    "founderTakeaway": 0
+    "scannability": 3,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

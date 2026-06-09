@@ -1,3 +1,3 @@
-## Quick answer: Vercel homepage shift
+## Quick answer: Vercel homepage messaging changes
 
-Vercel replaced its developer workflow tagline (**"Develop. Preview. Ship."**) with a cloud infrastructure value proposition (**"Build and deploy on the AI Cloud."**). The new headline names the product category but removes the three-step workflow frame that appeared in the original version. Visitors who don't already know what Vercel does will need to scroll or navigate elsewhere to find a workflow explanation.
+Vercel replaced **"Develop.Preview.Ship."** with **"Build and deploy on the AI Cloud."**, reframed its meta description from "best frontend developer experience" to "frameworks, workflows, and infrastructure," and overhauled its navigation with 8 items added and 8 removed. The pattern shows a shift from workflow-focused language to product-and-infrastructure framing. The evidence spans 5 snapshots and includes major content architecture changes — 12 section headings added, 2 removed — signaling a structural rewrite of how the page presents its pitch.

@@ -1,43 +1,46 @@
 {
-  "score": 78,
+  "score": 72,
   "pass": false,
   "issues": [
-    "Second paragraph in 'What changed' block is 62 words — exceeds 60-word cap for body paragraphs",
-    "First paragraph in 'Why it matters' block is 66 words — exceeds 60-word cap",
-    "Second paragraph in 'Why it matters' block is 44 words — acceptable but contributes to block density",
-    "'What it costs' block is 68 words total in a single paragraph — exceeds 60-word cap and buries the practical takeaway",
-    "Causal claim 'That increases the work the page must do below the fold' lacks conditional framing — unsupported causation",
-    "Outcome claim 'removing the product explanation means they must figure out what you do from the rest of the page' is too absolute without condition",
-    "Generic phrase 'This approach works when most visitors arrive through branded search' could appear in any SaaS teardown",
-    "The opening of 'What changed' follows template structure ('The original headline read X. The current headline reads Y.') when evidence could support a more interesting entry about the workflow-to-category shift"
+    "CAUSAL CLAIM WITHOUT CONDITION: 'this type of headline may cost clarity' — states an outcome without attaching measurable condition or threshold",
+    "CAUSAL CLAIM: 'If most of your traffic arrives without brand recognition, this type of headline may cost clarity' — presents conversion consequence without data",
+    "BURIED TAKEAWAY: The practical test appears at the end of the third H3, not in the first two sentences",
+    "PARAGRAPH LENGTH VIOLATION: H3 'Why it matters' = ~78 words",
+    "PARAGRAPH LENGTH VIOLATION: H3 'What it costs' = ~95 words",
+    "GENERIC CONTENT: The entire 'Why it matters' paragraph could appear in any teardown of a headline shift from descriptive to category-branded",
+    "GENERIC CONTENT: The 'What it costs' comparison framework ('Compare the two headlines on comprehension') is not anchored to Vercel-specific evidence",
+    "MISSING BOLD QUOTES: 'the AI Cloud' appears multiple times without bold formatting when referring to the company's exact phrase",
+    "WORD COUNT: Section is ~195 words — at upper limit but acceptable"
   ],
   "requiredFixes": [
-    "Break the 62-word paragraph in 'What changed' into two paragraphs at the meta description sentence",
-    "Split the 66-word 'Why it matters' opening paragraph after 'It skips the product explanation.'",
-    "Break the 68-word 'What it costs' block into two paragraphs: deliver the takeaway in the first 1-2 sentences, then provide the test instructions",
-    "Reframe 'That increases the work the page must do below the fold' with a conditional: 'If your traffic still includes cold visitors, that increases...'",
-    "Add condition to 'removing the product explanation means they must figure out what you do': 'For cold traffic, removing the product explanation means...'",
-    "Replace 'This approach works when most visitors arrive through branded search' with Vercel-specific framing anchored to their category position or ranking evidence"
+    "Remove or condition the causal claim: 'this type of headline may cost clarity' must become 'this type of headline creates a clarity gap IF the visitor does not recognize the category term AND has no prior brand exposure'",
+    "Move the practical test ('count how many words in your headline require prior knowledge') to the FIRST TWO SENTENCES of the 'What it costs' H3 block",
+    "Reduce 'Why it matters' paragraph to under 60 words — cut the generic explanation and anchor to Vercel's specific positioning shift",
+    "Reduce 'What it costs' paragraph to under 60 words — remove the comparative framework introduction and lead with the test",
+    "Add bold quotes around every instance of 'the AI Cloud' when quoting from the headline",
+    "Rewrite 'Why it matters' to include at least one Vercel-specific detail from the evidence (e.g., navigation changes, meta description shift, or timeline context)"
   ],
   "riskFlags": [
-    "'That increases the work the page must do below the fold' — causal claim without conditional framing or evidence that this actually happened to Vercel",
-    "'removing the product explanation means they must figure out what you do from the rest of the page' — absolute causation without condition attached",
-    "'This approach works when most visitors arrive through branded search' — generic strategy claim not anchored to Vercel's specific evidence"
+    "UNSUPPORTED OUTCOME: 'this type of headline may cost clarity' — no conversion data or user testing evidence provided",
+    "UNSUPPORTED CAUSATION: 'If most of your traffic arrives without brand recognition, this type of headline may cost clarity' — presents a conversion consequence without measurement",
+    "INVENTED INFERENCE: 'the company expects visitors to arrive with context' — no strategy documentation or attribution provided in evidence",
+    "CONDITION MISSING: The phrase 'may cost clarity' needs an attached IF-condition with measurable threshold (e.g., 'if >60% of traffic is non-branded search')"
   ],
   "seoNotes": [
-    "Heading contains company name ('Vercel'), topic term ('homepage positioning'), and change frame ('headline changed') — strong searchability",
-    "Body text includes searchable phrase 'frontend deployment platform' with context that it is a ranking term",
-    "Meta description change is quoted in full, providing useful reference for SEO comparison searches"
+    "POSITIVE: Section heading contains 'Vercel', 'homepage', and 'positioning' — all searchable terms",
+    "POSITIVE: Exact headline quotes appear in the draft, making it findable for brand + headline queries",
+    "NEGATIVE: The phrase 'what it costs' is vague for search — 'conversion risk' or 'clarity gap' would be more searchable",
+    "NEGATIVE: H3 subheadings ('What changed', 'Why it matters', 'What it costs') contain no company name or searchable topic terms"
   ],
-  "rewriteInstruction": "Break all paragraphs over 60 words into two blocks. Move the practical takeaway in 'What it costs' to the opening sentence: start with 'To check if your homepage can afford this approach...' then follow with the test. Add conditionals to both causal claims: 'If your traffic includes cold visitors, that increases...' and 'For visitors unfamiliar with your brand, removing the product explanation means...'. Replace the generic branded-search sentence with a Vercel-specific anchor: reference their category ranking, their brand recognition in the developer community, or a specific traffic pattern observable from the evidence. Rewrite the opening of 'What changed' to lead with the workflow-to-category shift as the most interesting finding, then support it with the headline quotes.",
+  "rewriteInstruction": "Lead the 'What it costs' H3 block with the practical test in the first sentence: 'Count how many words in your headline require prior knowledge of your company or category. Vercel's went from zero to five.' Then add one sentence explaining the clarity gap IF the condition is met (traffic source, visitor type). Cut the 'Why it matters' paragraph to under 60 words by removing the generic explanation ('positions as the place where something already-understood happens') and replacing it with a Vercel-specific observation from the evidence — such as the nav shift from product categories ('Templates', 'Integrations') to outcome language, or the meta description change. Remove all instances of causal claims without attached conditions. Bold-quote every instance of 'the AI Cloud' when referring to the exact headline phrase. Ensure no paragraph exceeds 60 words except the intro (which is absent here).",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
-    "specificity": 10,
+    "evidenceAccuracy": 10,
+    "specificity": 8,
     "plainLanguage": 18,
-    "scannability": 6,
-    "searchableHeadings": 10,
+    "scannability": 3,
+    "searchableHeadings": 7,
     "rhythmAndOpening": 8,
-    "founderTakeaway": 5
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

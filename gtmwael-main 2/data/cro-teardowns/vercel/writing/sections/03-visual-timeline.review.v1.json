@@ -1,48 +1,46 @@
 {
-  "score": 68,
+  "score": 72,
   "pass": false,
   "issues": [
-    "The term 'category ownership' appears once, then 'category leadership' and 'category claim' appear — treating these as equivalent expert terms without plain-language definition.",
-    "The phrase 'this is category leadership, when the brand name already completes the sentence before the visitor reads the page' is an expert concept presented without plain explanation.",
-    "The second H3 block ('Why it matters') exceeds 60 words (approximately 75 words).",
-    "The claim 'The page stopped naming its product behavior and started naming the category it owns' is causal without a visible condition — implies intent/strategy not supported by evidence.",
-    "The claim 'that only works when most traffic arrives through branded search' is an outcome claim without supporting data from the evidence.",
-    "The takeaway in the final H3 is buried in the fourth sentence ('To check if your homepage can afford this'), not delivered in the first two sentences.",
-    "The final test instruction is relatively generic ('open an incognito tab, search a generic category term') — it could apply to any company rather than being anchored to Vercel-specific evidence.",
-    "Paragraph 1 ('What changed') is approximately 70 words — exceeds 60-word guideline.",
-    "The section reads as strategist-to-strategist in the second block, using abstract stacked nouns: 'category claim', 'category leadership', 'branded search', 'word-of-mouth', 'cold search traffic', 'product explanation' all within one paragraph.",
-    "The phrase 'clarity for authority' is abstract positioning language without plain explanation."
+    "Hard cap triggered: unsupported causation claim ('The shift moves from naming the steps in the tool to naming the infrastructure category itself') — total capped at 70.",
+    "Category ownership appears twice without plain-language definition attached to first use — second use is a violation.",
+    "The second H3 ('Why it matters') makes multiple causal/strategic claims not traceable to evidence: 'assumes the visitor already knows', 'deciding whether to use it', 'the brand name already carries that context before the page loads'.",
+    "The third H3 ('What it costs') makes an unsupported outcome claim: 'A visitor who arrives without knowing what Vercel does will now leave with a vaguer sense of the product.'",
+    "Multiple conditional-free causal statements: 'The page trades explanation for positioning confidence' has no attached condition.",
+    "Generic paragraph: The entire third H3 block could appear in any teardown — no company-specific evidence anchors it.",
+    "Word count: approximately 215 words — exceeds 200-word cap.",
+    "Bold quotes missing: 'AI Cloud' is a verbatim website quote but not bolded.",
+    "The founder takeaway test at the end is generic ('open it in a private window, read only the headline') — not specific to Vercel's evidence."
   ],
   "requiredFixes": [
-    "Define 'category leadership' in plain language the first time it appears — e.g., 'category leadership (when visitors already know your name and what you do before they arrive)'.",
-    "Break the second H3 block into two shorter paragraphs to stay under 60 words each.",
-    "Move the practical takeaway to the first sentence of the final H3 block: 'To check if your homepage can afford to skip the product statement: open an incognito tab...'",
-    "Rewrite the causal claim 'The page stopped naming its product behavior and started naming the category it owns' to conditional phrasing: 'The page no longer names its product behavior — if this reflects a category ownership strategy, it assumes...'",
-    "Remove or condition the outcome claim 'that only works when most traffic arrives through branded search' — replace with 'this approach assumes most traffic...' or drop entirely.",
-    "Anchor the final test to Vercel-specific evidence: 'To check if your homepage can afford this: search 'frontend deployment platform' (a term Vercel ranks for), land on your homepage, and see if you can explain what the product does in one sentence after reading the headline.'",
-    "Reduce abstract noun stacking in the second paragraph — rewrite for plain voice: 'The new headline assumes the visitor already knows what Vercel does. It opens with a category claim instead of a product explanation. This works when most visitors have heard of you before they arrive — through search for your brand name, recommendations, or content. If your homepage still gets visitors who've never heard of you, removing the product explanation means they must figure out what you do from the rest of the page.'",
-    "Break the first paragraph into two to avoid exceeding 60 words."
+    "Remove or rewrite all causal claims not traceable to evidence: 'The shift moves from...', 'assumes the visitor already knows', 'the brand name already carries that context', 'will now leave with a vaguer sense'.",
+    "Define 'category ownership' in plain language at first use, e.g. 'category ownership — when a brand name becomes shorthand for the product type itself'.",
+    "Bold all verbatim website quotes: change 'AI Cloud' to **'AI Cloud'**.",
+    "Anchor the third H3 block to Vercel-specific evidence: replace generic 'A visitor who arrives' with a comparison using the actual before/after headlines from the evidence.",
+    "Add a condition to 'The page trades explanation for positioning confidence' — e.g. 'If a visitor does not recognize the brand, the page trades...'.",
+    "Cut to 200 words or fewer — remove the generic testing advice or condense the second H3.",
+    "Replace the generic founder test with one anchored to Vercel: e.g. 'Count how many words in your headline would make sense to someone who has never heard of your product. Vercel went from 3 clear words to 7 words that assume category knowledge.'"
   ],
   "riskFlags": [
-    "The phrase 'The page stopped naming its product behavior and started naming the category it owns' implies intentional strategy not supported by the evidence note: 'No confirmed strategy is implied.'",
-    "The claim 'that only works when most traffic arrives through branded search, word-of-mouth, or content that pre-educates the buyer' is an outcome/causation claim without supporting traffic data in the evidence.",
-    "The phrase 'this is category leadership' presents a strategic interpretation as fact, when the evidence only shows headline changes.",
-    "The claim 'Vercel can skip it. Most companies cannot' is unsupported by any comparative data in the evidence."
+    "'The shift moves from naming the steps in the tool to naming the infrastructure category itself' — unsupported strategic interpretation, not evidenced.",
+    "'That is category leadership — when the homepage no longer explains the category, because the brand name already carries that context before the page loads' — causal claim with no supporting data.",
+    "'The new headline assumes the visitor already knows what Vercel is' — mind-reading claim, not evidenced.",
+    "'A visitor who arrives without knowing what Vercel does will now leave with a vaguer sense of the product' — outcome claim with no conversion data or test results.",
+    "'The page trades explanation for positioning confidence' — causal statement without condition or evidence."
   ],
   "seoNotes": [
-    "Heading contains 'Vercel', 'homepage', and 'positioning' — searchable terms present.",
-    "The section does not quote the page title change, which is provided in the evidence and may be SEO-relevant.",
-    "Meta description change is quoted but not analyzed for SEO impact or keyword shift."
+    "Section heading contains 'Vercel', 'homepage', 'positioning', and 'headline' — all searchable terms. Strong SEO value.",
+    "The phrase 'category ownership' may be searched by expert marketers, but the lack of plain-language definition limits accessibility for founders."
   ],
-  "rewriteInstruction": "Rewrite the second H3 block in plain language — remove abstract positioning terms like 'category claim' and 'category leadership' without defining them, or define them immediately in the same sentence. Break all paragraphs over 60 words into two. Move the practical takeaway to the first sentence of the final H3 block. Anchor the final test to Vercel-specific evidence by naming a real search term Vercel ranks for. Replace all causal claims ('this only works when...') with conditional phrasing ('this approach assumes...'). Remove strategist-to-strategist voice — rewrite the second paragraph so a founder with no marketing background can understand it on first read. Ensure no expert term appears more than once unless defined in plain language on first use.",
+  "rewriteInstruction": "Rewrite the section to eliminate all unsupported causal and outcome claims. Anchor every sentence to the specific before/after evidence provided: quote the exact headlines, describe what changed in observable terms only, and remove all strategic interpretation ('category leadership', 'assumes the visitor knows', 'trades explanation for confidence'). Define 'category ownership' in plain language at first use and do not repeat it. In the third H3 block, replace the generic visitor scenario with a specific comparison of the two headlines using the evidence. End with a concrete, Vercel-specific founder test: e.g. 'Count how many words in your headline require prior brand knowledge. Vercel's went from 0 to 5.' Cut to 200 words. Bold all verbatim quotes including **'AI Cloud'**.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
-    "specificity": 12,
-    "plainLanguage": 8,
-    "scannability": 6,
+    "evidenceAccuracy": 5,
+    "specificity": 8,
+    "plainLanguage": 12,
+    "scannability": 12,
     "searchableHeadings": 10,
-    "rhythmAndOpening": 7,
-    "founderTakeaway": 0
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

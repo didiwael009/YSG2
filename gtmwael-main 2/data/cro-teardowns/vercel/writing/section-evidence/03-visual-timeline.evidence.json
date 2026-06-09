@@ -12,8 +12,8 @@
     "metaChanged": true,
     "titleChanged": true,
     "snapshotCount": 5,
-    "h2Added": 12,
-    "h2Removed": 2,
+    "h2Added": 0,
+    "h2Removed": 1,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -21,6 +21,7 @@
     "visualOnly": false,
     "hasMidTransition": true
   },
+  "primaryKeyword": "Vercel landing page",
   "analysis-blocks": [
     {
       "id": "analysis-2021-07",
@@ -32,7 +33,7 @@
         "H1 opens with: \"Develop.Preview.Ship.\" — direct product statement.",
         "Visible section headings include: \"Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.\", \"Clone Template\".",
         "Navigation includes: \"Templates\", \"Integrations\", \"Analytics\", \"Customers\" — product category framing.",
-        "Section headings later removed include: \"Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.\" and \"Clone Template\"."
+        "Section headings later removed include: \"Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.\"."
       ]
     },
     {
@@ -55,7 +56,6 @@
       "heading": "Today: updated positioning",
       "annotations": [
         "H1 now reads: \"Build and deploy on the AI Cloud.\" — updated value proposition.",
-        "New section headings include: \"Scale your\", \"without compromising\", \"Get Started\".",
         "CTAs no longer present include: \"Contact\", \"Contact Us\", \"Login\"."
       ]
     }

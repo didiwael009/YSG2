@@ -13,7 +13,7 @@
     "titleChanged": true,
     "snapshotCount": 3,
     "h2Added": 5,
-    "h2Removed": 8,
+    "h2Removed": 7,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -21,6 +21,7 @@
     "visualOnly": false,
     "hasMidTransition": false
   },
+  "primaryKeyword": "Shopify landing page",
   "analysis-blocks": [
     {
       "id": "analysis-2021-07",

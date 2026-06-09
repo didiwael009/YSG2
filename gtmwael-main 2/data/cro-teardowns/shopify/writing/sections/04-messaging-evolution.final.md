@@ -1,7 +1,15 @@
-## Shopify replaced a trust signal with an aspiration signal that excludes most of their historical acquisition funnel
+## Shopify's messaging shift: who the homepage speaks to now
 
-**"The platform commerce is built on"** is evidence. **"Be the next AI all-star"** is recruitment. The first headline functions as category proof — it tells a prospect evaluating commerce platforms that this is the infrastructure layer. The second is a qualification filter via aspiration signaling: it tells a prospect chasing competitive advantage that this platform is for operators, not researchers. The meta description made the same move — **"start a business or grow an existing one"** became **"Build or grow your business fast with AI"** — dropping the invitation to start entirely.
+### Who the old page served
 
-The pattern is consistent with ICP narrowing through category language. The old page title — **"Start a Business, Grow Your Business"** — served pre-revenue founders and established operators equally. The new one — **"The All-in-One Commerce Platform for Businesses"** — signals procurement-stage infrastructure evaluation. The visible language shift — from inviting people to start a business to comparing platform features — is consistent with procurement-stage framing rather than discovery-stage framing.
+The 2021 page spoke to someone deciding whether to start selling online. The headline — **"The platform commerce is built on"** — explained what Shopify is. The meta description invited you to **"start a business or grow an existing one."** A visitor could land on this page knowing nothing about ecommerce platforms and still understand what they were looking at.
 
-Open your homepage. If your H1 could recruit both pre-revenue founders and established businesses — like Shopify's old version — paste it into Google and check whether the top results are discovery content or procurement comparison grids. Who shows up in those results tells you which buyer your page is currently optimized for.
+### Who the new page serves
+
+The 2026 page speaks to someone who already knows what Shopify is. The headline — **"Be the nextAI all-star"** — skips the category explanation entirely. The meta description now says **"Build or grow your business fast with AI"**, positioning speed and AI capability as the reason to choose Shopify rather than explaining what the platform does.
+
+### What this means for the sales process
+
+The new page expects visitors who are comparing options, not learning what the product does. If traffic includes cold paid ads or non-branded search, the new headline risks confusion — the visitor must already know what an ecommerce platform does before the page makes sense.
+
+Open shopify.com in incognito and count how many seconds it takes to understand what Shopify sells if you have never heard of it.

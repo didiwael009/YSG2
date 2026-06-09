@@ -1,13 +1,17 @@
-## How Vercel's CTA strategy shifted from feature explanation to product naming
+## Vercel's CTA and navigation changes
 
 ### What changed
 
-Vercel replaced 10 older CTAs with 10 new ones. The old labels explained infrastructure features: **"SSL encryption"**, **"asset compression"**, **"cache invalidation"**, **"global edge network"**. The new labels are product names: **"AI Gateway"**, **"Sandbox"**, **"Vercel Agent"**, **"Fluid Compute"**, **"CI/CD"**. Each new CTA includes a tagline — **"One endpoint, all your models"** — but the emphasis shifted from explaining what infrastructure does to listing what Vercel ships.
+Vercel removed ten CTAs and added ten new ones. The old homepage included **"Contact"**, **"Contact Us"**, and **"Login"** — standard navigation for buyers ready to evaluate or access the product.
 
-### Who this filters out
+Those are gone. The new CTAs point to product features: **"AI Cloud"**, **"Vercel Agent"**, **"CI/CD"**, **"Fluid Compute"**. The path no longer funnels visitors toward a single conversion point.
 
-If a visitor has not heard of Vercel's products, the new CTAs may function as navigation rather than conversion triggers. The old **"SSL encryption"** CTA told you what the platform handles. The new **"Fluid Compute"** CTA assumes you already know what that means and arrived looking for it. That works when your brand already explains the category before the visitor lands on the page.
+### Who Vercel's new CTA structure filters out
+
+This removes the path for visitors who are ready to start a trial or talk to sales but need guidance on where to go next.
+
+Someone landing on the page cold now has to choose from multiple feature-specific CTAs without a clear "start here" option. The new structure assumes the visitor already knows which part of Vercel's platform they need.
 
 ### Audit your own page
 
-Open vercel.com. Count how many product-name CTAs appear above the fold: **"AI Gateway"**, **"Sandbox"**, **"Fluid Compute"**. Now open the Jul 2021 snapshot. Count feature-explainer CTAs: **"SSL encryption"**, **"cache invalidation"**. The ratio flipped. Run the same count on your own homepage. If your traffic comes from non-branded search, every CTA needs to work without prior product knowledge.
+Count your above-the-fold CTAs. If you have more than two, most first-time visitors will not know which to click. Vercel uses ten feature-specific CTAs because their brand carries intent — visitors arrive already knowing what Vercel does. If your brand does not carry that recognition, test a single primary CTA against your current multi-CTA layout.

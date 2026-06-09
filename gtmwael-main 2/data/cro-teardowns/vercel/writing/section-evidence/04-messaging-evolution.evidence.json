@@ -12,8 +12,8 @@
     "metaChanged": true,
     "titleChanged": true,
     "snapshotCount": 5,
-    "h2Added": 12,
-    "h2Removed": 2,
+    "h2Added": 0,
+    "h2Removed": 1,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -21,6 +21,7 @@
     "visualOnly": false,
     "hasMidTransition": true
   },
+  "primaryKeyword": "Vercel landing page",
   "messaging": [
     {
       "element": "Primary headline (H1)",
@@ -53,8 +54,8 @@
     },
     {
       "label": "Section headings",
-      "value": "12 added · 2 removed",
-      "note": "Major content architecture overhaul"
+      "value": "0 added · 1 removed",
+      "note": "Minor structure adjustments"
     },
     {
       "label": "Navigation",

@@ -1,13 +1,13 @@
-## Vercel's messaging shift: from developer workflow to AI infrastructure
+## Vercel's messaging shift: who the homepage speaks to now
 
-### Who the 2021 Vercel homepage served: frontend developers choosing deployment tools
+### Who the old page served
 
-The 2021 headline read **"Develop. Preview. Ship."** — three steps in a developer's daily workflow. The meta description promised **"the best frontend developer experience"** and named **"end-user performance"** as the core benefit. This is language for someone choosing between deployment platforms, not someone buying cloud infrastructure.
+The original page spoke to developers who already understood frontend deployment workflows. The headline **"Develop. Preview. Ship."** assumed familiarity with those three stages. The meta description promised **"the best frontend developer experience"** — vocabulary aimed at someone choosing between deployment tools.
 
-### Who the 2026 Vercel homepage serves: teams evaluating AI cloud infrastructure
+### Who the new page serves
 
-The 2026 headline reads **"Build and deploy on the AI Cloud."** The meta description now lists **"frameworks, workflows, and infrastructure"** — three categories of capability, not workflow steps. The page title adds **"the best web experiences"** as the outcome. This suggests Vercel is addressing teams who need infrastructure that handles AI workloads, not just a tool that deploys frontend code.
+The new page addresses buyers evaluating infrastructure platforms across multiple capabilities. **"Build and deploy on the AI Cloud"** frames Vercel as infrastructure, not a single-purpose tool. The meta description lists **"frameworks, workflows, and infrastructure"** — three capability categories instead of one developer outcome. This suggests the page now targets visitors who need to justify a platform choice beyond deployment speed.
 
-### What changed in how Vercel expects visitors to arrive
+### What changed in the homepage structure
 
-The original headline named the product category in three words. The new headline assumes you already know what "AI Cloud" means in the context of web deployment. If Vercel now depends on brand search or referrals from technical content — rather than cold search traffic — this works. If not, the headline may be skipping the explanation step too early. Open your homepage. Does your H1 name what your product does, or does it assume the visitor already knows?
+The old headline contained three verbs describing a workflow. The new headline contains two capability nouns: **"AI Cloud"** and the implied infrastructure behind "build and deploy." Count the capability categories in your own headline. If you list three or more — like Vercel's new meta description does with frameworks, workflows, and infrastructure — your page may be speaking to a comparison-stage buyer, not someone still learning what your product does. Does your headline assume the visitor already knows your category?

@@ -1,6 +1,6 @@
 import type { SnapshotEntry } from "@/lib/cro-teardown";
 
-const ScreenshotTimeline = ({ snapshots }: { snapshots: SnapshotEntry[] }) => (
+const ScreenshotTimeline = ({ snapshots, companyName }: { snapshots: SnapshotEntry[]; companyName: string }) => (
   <section id="timeline" className="scroll-mt-28">
     <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
       Visual timeline
@@ -30,7 +30,7 @@ const ScreenshotTimeline = ({ snapshots }: { snapshots: SnapshotEntry[] }) => (
               <div className="relative overflow-hidden rounded-[14px] border border-[#11111f]/10 bg-[#f0eef8] shadow-[0_4px_20px_rgba(7,7,17,0.07)] transition-shadow duration-200 group-hover:shadow-[0_8px_32px_rgba(7,7,17,0.14)]">
                 <img
                   src={snap.screenshotPath}
-                  alt={`Hootsuite homepage — ${snap.label}`}
+                  alt={`${companyName} homepage — ${snap.label}`}
                   width={1440}
                   height={900}
                   loading="lazy"

@@ -1,52 +1,50 @@
 {
-  "seoScore": 83,
+  "seoScore": 85,
   "pass": true,
-  "titleScore": 12,
+  "titleScore": 13,
   "metaDescriptionScore": 14,
   "headingStructureScore": 13,
   "searchIntentScore": 18,
   "keywordUseScore": 9,
   "readabilityScore": 14,
-  "internalLinkingScore": 3,
+  "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "Link from 'ICP narrowing' discussion to a related article on audience segmentation or buyer persona definition",
-    "Link from 'Google Search Console' reference to a guide on interpreting branded vs. non-branded traffic ratios",
-    "Link from 'A/B test analysis' (secondary keyword) to case studies on messaging A/B tests or conversion testing methodology",
-    "Link from 'identity-first messaging' to an article on brand positioning frameworks or messaging strategy",
-    "Add contextual links within the CTA analysis section to internal content on CTA design or conversion funnel optimization"
+    "Link from 'SaaS homepage CRO teardown' mention in intro to related SaaS teardowns (e.g., other platform homepage audits) in a 'See similar analyses' section at the end",
+    "Link 'homepage A/B test analysis' phrase to any internal guide on A/B testing methodology or CRO best practices the blog may host",
+    "Link 'conversion optimisation' in the quick-answer section to a foundational CRO primer or glossary if available",
+    "Add a 'Browse other teardowns' section with internal navigation to competitor or adjacent SaaS homepage audits"
   ],
   "faqSuggestions": [
-    "What changed in Shopify's homepage headline between 2021 and 2026?",
-    "Why did Shopify shift from explaining what it does to recruiting an identity?",
-    "How do you know if your homepage messaging is too aspirational for your audience?",
-    "What's the difference between category ownership messaging and identity recruitment?",
-    "When should SaaS companies remove exploratory CTAs from their homepage?",
-    "How much branded vs. non-branded traffic do you need to reposition your homepage messaging?",
-    "What does ICP narrowing look like on a homepage?"
+    "How did Shopify's homepage changes affect its conversion rate or business outcomes?",
+    "What does 'Be the next AI all-star' mean, and why did Shopify choose this messaging?",
+    "When should a SaaS company remove educational CTAs from its homepage?",
+    "How do you measure whether your homepage headline still serves your audience?",
+    "What is the difference between a category-defining headline and a visitor-assumption headline?",
+    "Did Shopify A/B test this homepage redesign before launch?"
   ],
   "contentGapNotes": [
-    "Article does not address *how to measure* the impact of these homepage changes on conversion rate, trial signups, or pipeline velocity—only the strategic reasoning. Searchers may want quantitative outcomes.",
-    "No discussion of competitor homepages or how this positioning compares to other e-commerce or no-code platforms—limits ability to contextualize the shift within the category.",
-    "Missing guidance on *how to audit your own homepage* for similar shifts—the article mentions 'open your analytics' and 'open your CTA list' but doesn't provide a structured template or framework.",
-    "No coverage of *when this strategy backfired* or examples of brands that repositioned too aggressively and lost volume—only shows the upside.",
-    "Timeline context is missing: what product launches, market conditions, or competitive moves happened between Jul 2021 and Jun 2026 that might explain the shift beyond pure CRO strategy?",
-    "Article doesn't address *mobile homepage behavior* or section-by-section changes—treats homepage as monolithic."
+    "Article does not discuss *why* Shopify made these changes — was there an earnings call, product shift, or competitive pressure that prompted the 2026 redesign? Adding context would strengthen the 'lessons for SaaS teams' section",
+    "No mention of conversion rate, bounce rate, or engagement metrics pre- and post-redesign — article assumes the changes are strategic without showing impact data (which aligns with hard rules, but noting the gap)",
+    "Article does not address how Shopify handles different traffic segments on the current homepage (e.g., separate landing pages for cold traffic vs. brand traffic), which is a natural question given the teardown's conclusion",
+    "Missing analysis of how the new 'AI all-star' messaging aligns with Shopify's product roadmap or feature releases between 2021 and 2026",
+    "No discussion of mobile vs. desktop differences in the homepage redesign — both snapshots may have different approaches",
+    "Article could benefit from a section on how Shopify's navigation restructuring affected information architecture and user task flows"
   ],
   "requiredFixes": [
-    "Fix typo in H2: 'Be the nextAI all-star' should have a space ('Be the next AI all-star')",
-    "Clarify the phrase 'every founder still working a day job who lands on this page now sees a platform positioned for someone else'—this is opinionated and assumes visitor intent; soften to 'may perceive' or cite user research",
-    "In the CTA section: '**Start for free,** **Get a stunning store,** **Compare Shopify.**' — these need context. Are these the *only* CTAs on the 2026 homepage? Clarify whether there are still exploratory CTAs elsewhere or if they are truly removed.",
-    "Metric claim: 'Open your Google Search Console. If more than 40% of your homepage traffic comes from non-branded queries' — this threshold (40%) is not sourced or explained. Either cite research or remove the number to avoid false specificity."
+    "Verify the meta description is under 155 characters when rendered; current version appears close to limit and may be truncated in SERPs",
+    "Ensure the H1 'How Shopify rewrote its homepage over 5 years' is the only H1 on the page — currently there is also 'Shopify Homepage Teardown: How the Platform Rewrote Its Message Over 5 Years' which appears to duplicate the main heading concept",
+    "The article claims Shopify 'replaced ten educational CTAs with ten product-focused ones' but does not show before/after screenshots or explicit CTA counts — either add visual evidence or soften the claim (e.g., 'approximately ten')",
+    "Ensure all secondary keywords are used at least once naturally in body text; 'homepage A/B test analysis' and 'SaaS conversion optimisation case study' appear underutilized in the article copy"
   ],
   "optionalImprovements": [
-    "Add a visual comparison table or side-by-side screenshot callout showing the headline, section headings, and CTAs from 2021 vs. 2026—the article references a 'visual timeline' in sectionsIncluded but no visual is embedded",
-    "Include a brief subsection on *how to test* whether your audience is ready for aspiration positioning—offer a mini-audit checklist (e.g., brand awareness score, audience intent signals)",
-    "Expand the 'Do not copy this' section with a checklist: 'Before adopting Shopify's messaging strategy, verify...' to make the risk-reward more actionable",
-    "Add an estimated read time or word count marker for time-pressed readers (article says '3 snapshots · 8 min read' at top, but no section progression markers below)",
-    "Include a single example of a SaaS company that *successfully* executed this transition and one that *failed*—would strengthen the 'when this works' narrative",
-    "Consider breaking the long fourth paragraph of the intro into two—opens with 'Between July 2021...' and spans ~120 words without a natural pause point"
+    "Add a 'Key takeaway' or 'TL;DR' box after the intro to help scanners quickly decide if the article serves their intent",
+    "Include 1–2 side-by-side comparison screenshots of the 2021 vs. 2026 homepages to visually reinforce the messaging evolution (improves readability and engagement)",
+    "Expand the '5-minute homepage audit' section into a reusable checklist that readers can download — this adds value and may increase shareability",
+    "Link the phrase 'SaaS teams' or 'SaaS companies' in section headers to an internal SaaS marketing resource or glossary to improve internal linking naturally",
+    "Consider adding a 'Tools used to capture these snapshots' note (e.g., Wayback Machine, manual screenshots) to build credibility and transparency",
+    "Break up the longest paragraph in the 'Why it matters' section under 'Shopify homepage positioning' — it runs 5+ sentences and could benefit from a bullet point or subheading"
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.006625600000000009,
-  "generatedAt": "2026-06-09T07:25:49.041Z"
+  "costUsd": 0.006714400000000009,
+  "generatedAt": "2026-06-09T18:53:03.089Z"
 }

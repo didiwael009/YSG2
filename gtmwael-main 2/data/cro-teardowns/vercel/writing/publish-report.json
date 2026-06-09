@@ -1,21 +1,23 @@
 {
-  "publishedAt": "2026-06-09T12:48:22.716Z",
+  "publishedAt": "2026-06-09T19:11:20.487Z",
   "slug": "vercel",
   "dryRun": false,
-  "forced": true,
+  "forced": false,
   "qualityGates": {
     "finalJudgePass": true,
-    "finalJudgeScore": 93,
-    "seoPass": false,
-    "seoScore": 0,
+    "finalJudgeScore": 92,
+    "seoPass": true,
+    "seoScore": 85,
     "unsupportedClaims": []
   },
-  "blockedReasons": [
-    "seo-audit.json not found — run Phase 4D first"
-  ],
+  "blockedReasons": [],
   "articlePath": "src/content/cro-teardown/articles/vercel.ts",
   "indexUpdated": false,
-  "internalLinkSuggestionsAdded": [],
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
   "fieldsOverridden": [
     "metaTitle"
   ]

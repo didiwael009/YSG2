@@ -3,24 +3,24 @@
     "number": "01",
     "title": "Vercel replaced \"Develop.Preview.Ship.\" with \"Build and deploy on the AI Cloud.\"",
     "category": "Positioning",
-    "body": "The original headline **\"Develop.Preview.Ship.\"** spoke to developers who already understood the product workflow. The new headline **\"Build and deploy on the AI Cloud.\"** signals a category shift — Vercel now positions itself as infrastructure for AI applications, not just a deployment platform. This suggests the target buyer may now include teams building AI products who need hosting, not just frontend developers optimising workflows."
+    "body": "The original headline described a workflow. The new headline names a category: **\"the AI Cloud\"**. This shift suggests Vercel is positioning itself as infrastructure for a specific era, not just a deployment tool. The change likely signals a move from product-led messaging to category-ownership framing—anchoring the brand to AI rather than developer workflow alone."
   },
   {
     "number": "02",
-    "title": "8 navigation items removed including \"Contact Us\" and \"Login\" — a friction-to-trial change",
+    "title": "Vercel removed \"Contact Us\" and \"Login\" from navigation — that is a conversion path decision",
     "category": "Navigation",
-    "body": "Vercel removed **\"Contact Us\"**, **\"Contact\"**, and **\"Login\"** from navigation while adding **\"Explore Enterprise\"**, **\"AI Gateway\"**, and **\"Vercel Agent\"**. This likely signals a shift from sales-assist to product-led trial. Removing login from top-level navigation suggests existing users now arrive through direct URLs or documentation, while the homepage focuses on new visitor education and category definition around AI infrastructure."
+    "body": "Both CTAs served low-intent visitors: **\"Contact Us\"** for enterprise inquiries, **\"Login\"** for returning users. Removing them from primary navigation suggests Vercel is optimising for a different entry point—likely self-service sign-up or product exploration. The change may indicate a shift toward product-led growth over sales-assisted funnels, or simply a cleaner navigation hierarchy for new visitors."
   },
   {
     "number": "03",
-    "title": "The meta description dropped \"best frontend developer experience\" for \"frameworks, workflows, and infrastructure\"",
-    "category": "Messaging",
-    "body": "The original meta description promised the **\"best frontend developer experience\"** — a competitive claim. The new version says Vercel **\"gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.\"** This removes the superlative and adds three concrete nouns. It suggests Vercel now wants to be discovered by buyers searching for platform components, not teams comparing developer experience quality."
+    "title": "8 new navigation items added — all AI-specific product names, not generic categories",
+    "category": "Strategy",
+    "body": "The new menu includes **\"AI Gateway\"**, **\"Sandbox\"**, **\"Vercel Agent\"**, **\"AI SDK\"**, and **\"v0\"**. These are branded product names, not category labels like the earlier **\"Templates\"** or **\"Integrations\"**. This approach suggests Vercel is building a portfolio of discrete AI tools rather than positioning as a single platform. It also increases navigation complexity, which may signal confidence in a more sophisticated buyer."
   },
   {
     "number": "04",
-    "title": "12 new section headings appeared while only 2 were removed — this is expansion, not simplification",
-    "category": "Strategy",
-    "body": "Vercel added 12 section headings including **\"Build\"**, **\"Scale\"**, **\"Secure\"**, **\"Frameworks\"**, and **\"Use Cases\"** while removing just 2. This is not homepage reduction — it is a site architecture expansion. The removed heading **\"Clone Template\"** was a single-action CTA; the new headings are navigation categories. This suggests Vercel shifted from a product demo page to a platform ecosystem site with multiple entry points."
+    "title": "Vercel removed the H2 \"obsessive focus on end-user performance\" — what replaced it matters",
+    "category": "Messaging",
+    "body": "The 2021 subheading promised **\"the best developer experience with an obsessive focus on end-user performance\"**. That line is gone. The current page does not lead with performance as the primary value prop. This suggests Vercel's messaging now prioritises AI capability over speed. The removal points to a repositioning: the team likely believes buyers are comparing AI infrastructure options, not performance benchmarks."
   }
 ]

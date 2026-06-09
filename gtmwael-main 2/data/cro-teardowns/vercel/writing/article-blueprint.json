@@ -4,8 +4,8 @@
     "metaChanged": true,
     "titleChanged": true,
     "snapshotCount": 5,
-    "h2Added": 12,
-    "h2Removed": 2,
+    "h2Added": 0,
+    "h2Removed": 1,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -14,15 +14,15 @@
     "hasMidTransition": true
   },
   "warnings": [],
-  "generatedAt": "2026-06-09T11:27:09.734Z",
+  "generatedAt": "2026-06-09T18:42:17.381Z",
   "postSummary": {
     "title": "Vercel Homepage Teardown: Jul 2021 to Jun 2026",
     "h1": "How Vercel rewrote its homepage over 5 years",
-    "readTime": "9 min read",
+    "readTime": "8 min read",
     "summaryCardCount": 4,
     "messagingChangeCount": 3,
     "analysisBlockCount": 3,
-    "lessonCardCount": 4,
+    "lessonCardCount": 3,
     "snapshotCount": 5
   }
 }

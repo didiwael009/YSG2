@@ -1,13 +1,13 @@
-## Crisp's messaging shift: from startup tool to AI platform comparison
+## Crisp's messaging shifted from trial-urgency to platform comparison
 
 ### Who the old page served
 
-The 2022 page spoke to founders shopping for their first customer communication tool. The page title called out **"Startups & SMB's"** and the meta description ended with **"14 Days free trial. No credit-card required. Try now."** The urgency language suggests visitors who need convincing to start a trial, not people already familiar with the category.
+The old page spoke to small-business owners who needed to be convinced that customer messaging software was worth trying. The page title claimed Crisp was the **"#1 Business Messaging Platform For Startups & SMB's"** and the meta description stacked three urgency signals in one sentence: **"14 Days free trial. No credit-card required. Try now!"**
 
 ### Who the new page serves
 
-The current page speaks to teams comparing AI-powered support platforms. The positioning shifted from **"Business Messaging Platform for Startups & SMB's"** to **"the ultimate all-in-one AI-powered multichannel messaging platform."** The headline now reads **"Augment your customer experience. AI made to support your team & customers."** If the visitor is already comparing vendors, this language filters for feature-comparison shoppers rather than category learners.
+The new page assumes the visitor already knows what a customer support platform does. The headline now reads **"Augment your customer experience. AI made to support your team & customers."** The page title drops the startup qualifier and claims **"The AI Customer Support Platform for Every Business."** The meta description removes all trial language.
 
 ### What this means for the sales process
 
-The trial urgency language is gone. The page now leads with platform capabilities and AI differentiation rather than ease-of-starting signals. Open your homepage in incognito and count how many CTAs require zero commitment versus CTAs that gate everything behind signup. If all require signup, you are filtering for high-intent visitors only.
+Does your homepage still assume the visitor needs convincing — or are you writing for someone who already knows what they want? Crisp's shift suggests the company expects visitors who will explore the platform or request a demo before committing. The page no longer front-loads trial urgency, which may signal a move toward a sales-assisted process for a portion of inbound traffic.

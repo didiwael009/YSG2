@@ -127,17 +127,38 @@ const EXTRACT_PAGE_TEXT_SCRIPT = `(() => {
   function clean(s) { return (s || '').replace(/\\s+/g, ' ').trim(); }
   function unique(arr) { return Array.from(new Set(arr.filter(Boolean))); }
 
+  // Walk child nodes and join block-level elements with a space to avoid
+  // words merging (e.g. "Be the nextAI all-star" from adjacent span/div nodes).
+  function getText(el) {
+    var BLOCK = /^(DIV|P|H[1-6]|LI|TD|TH|SECTION|ARTICLE|HEADER|FOOTER|ASIDE|MAIN|NAV|BLOCKQUOTE|PRE|FIGURE|FIGCAPTION|FORM|FIELDSET|LEGEND|DETAILS|SUMMARY|DL|DT|DD|OL|UL)$/;
+    var parts = [];
+    function walk(node) {
+      if (node.nodeType === 3) { // text node
+        var t = node.nodeValue || '';
+        if (t.replace(/\\s/g, '')) parts.push(t);
+      } else if (node.nodeType === 1) {
+        var tag = node.tagName || '';
+        var isBlock = BLOCK.test(tag);
+        if (isBlock && parts.length && parts[parts.length - 1] !== ' ') parts.push(' ');
+        Array.prototype.forEach.call(node.childNodes, walk);
+        if (isBlock && parts.length && parts[parts.length - 1] !== ' ') parts.push(' ');
+      }
+    }
+    walk(el);
+    return clean(parts.join(''));
+  }
+
   var title = document.title || '';
   var metaEl = document.querySelector('meta[name="description"]');
   var metaDescription = metaEl ? (metaEl.getAttribute('content') || '') : '';
 
-  var h1 = unique(Array.from(bodyClone.querySelectorAll('h1')).map(function(el) { return clean(el.textContent); }));
-  var h2 = unique(Array.from(bodyClone.querySelectorAll('h2')).map(function(el) { return clean(el.textContent); }));
-  var h3 = unique(Array.from(bodyClone.querySelectorAll('h3')).map(function(el) { return clean(el.textContent); }));
+  var h1 = unique(Array.from(bodyClone.querySelectorAll('h1')).map(function(el) { return getText(el); }));
+  var h2 = unique(Array.from(bodyClone.querySelectorAll('h2')).map(function(el) { return getText(el); }));
+  var h3 = unique(Array.from(bodyClone.querySelectorAll('h3')).map(function(el) { return getText(el); }));
 
   var ctas = unique(
     Array.from(bodyClone.querySelectorAll('button, a[href], [role="button"]'))
-      .map(function(el) { return clean(el.textContent); })
+      .map(function(el) { return getText(el); })
       .filter(function(t) { return t.length > 0 && t.length < 120; })
   );
 

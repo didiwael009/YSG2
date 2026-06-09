@@ -2,29 +2,35 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "The phrase 'That filters out early-stage traffic entirely — which only works if your paid acquisition, content, or brand already does the qualification upstream' is an interpretation presented as confirmed fact without hedging, though the underlying logic is reasonable.",
-    "Word count is approximately 210 words — slightly over the 200-word target for analytical sections, though not egregious enough to trigger the hard cap."
+    "Missing bold formatting on 'Explore ways to sell' and 'Learn more about Shopify' in paragraph 1",
+    "Missing bold formatting on 'explore ways to sell' in paragraph 2",
+    "H3 heading 'What changed' is not searchable — lacks company name or topic term beyond the section heading",
+    "H3 heading 'Who this filters out' is not searchable — lacks company name or topic term",
+    "H3 heading 'Audit your own page' is not searchable — lacks company name or topic term",
+    "Final takeaway test is generic ('count how many CTAs say learn/explore') rather than specific to Shopify evidence (e.g. 'Open your homepage and count CTAs that require zero commitment vs. feature-specific CTAs like Shopify now uses')"
   ],
   "requiredFixes": [
-    "Add precise hedging to the claim about upstream qualification requirement: change 'which only works if your paid acquisition, content, or brand already does the qualification upstream' to 'which suggests they may be relying on upstream channels to pre-qualify traffic' or similar.",
-    "Trim 10–15 words to hit the 200-word target. Consider condensing the second sentence of paragraph one: 'But the replaced set assumes the visitor already knows they want Shopify' could become 'The replacement set assumes known intent.'"
+    "Add bold formatting to all verbatim website quotes: 'Explore ways to sell', 'Learn more about Shopify', 'explore ways to sell' (second instance)",
+    "Make H3 headings searchable by adding context. Examples: 'What changed: Education CTAs removed', 'Who this filters: Category-comparison shoppers', 'Audit: Count your education vs action CTAs'",
+    "Make final test more specific to Shopify's evidence — reference the feature-specific CTAs (Website Builder, Shop App) as the benchmark, not just generic 'action CTAs'"
   ],
   "riskFlags": [
-    "The claim 'which only works if your paid acquisition, content, or brand already does the qualification upstream' states a conditional requirement as fact without evidence that Shopify actually has this upstream infrastructure in place."
+    "'This path no longer serves people who are still comparing categories' — This is a causal claim about who is filtered out, but the evidence only shows CTAs removed, not visitor behavior or conversion data. Soften to 'This path assumes visitors have already compared categories' or add conditional framing."
   ],
   "seoNotes": [
-    "Strong SEO: section title contains entity name + specific tactic ('removed every exploratory CTA'), making it highly quotable and specific to Shopify.",
-    "The named mechanism 'qualification filter' is a searchable term that adds semantic value for programmatic discoverability."
+    "Section heading 'Shopify's CTA shift: from education to instant signup' contains company name and 'CTA' — strong searchability",
+    "H3 subheadings lack searchable terms — they read well for engaged readers but offer no anchor for Google snippet extraction",
+    "No meta-level keyword waste — section stays tight on CTA evolution topic"
   ],
-  "rewriteInstruction": "The draft is very strong but needs two small precision fixes. First, the claim about upstream qualification being necessary is currently stated as fact when it is an inference from the evidence — add a hedge (e.g., 'which suggests' or 'likely requires'). Second, one sentence in the middle lacks hedging entirely: 'That filters out early-stage traffic entirely' is an interpretation of the likely effect, not a documented outcome, so mark it as such ('appears to filter' or 'would filter'). Finally, trim 10 words to hit the 200-word target — the opening could be tighter. The mechanism naming, tradeoff, founder test, and entry point are all excellent; this is just about risk precision.",
+  "rewriteInstruction": "The draft is strong but has three fixable issues. First, apply bold formatting to ALL verbatim website quotes — 'Explore ways to sell', 'Learn more about Shopify', and 'explore ways to sell' (second instance) must be **'bold-quoted'**. Second, make the H3 subheadings searchable by adding context that works for Google and skimmers: 'What changed: Education CTAs removed', 'Who this filters: Category-comparison shoppers', 'Audit: Count your education vs action CTAs'. Third, anchor the final test to Shopify's specific shift — instead of generic 'action CTAs', reference the feature-specific CTAs like Website Builder and Shop App as the benchmark. Finally, soften the causal claim in paragraph 2 ('This path no longer serves...') to conditional framing ('This path assumes visitors have already compared categories' or 'If a visitor is still comparing Shopify to custom sites, this path offers no entry point').",
   "dimensionScores": {
-    "evidenceAccuracy": 24,
-    "riskControl": 6,
+    "evidenceAccuracy": 23,
     "specificity": 15,
-    "clarity": 9,
-    "entryPointOriginality": 14,
-    "mechanismNaming": 10,
-    "founderSharpness": 15
+    "plainLanguage": 20,
+    "scannability": 14,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

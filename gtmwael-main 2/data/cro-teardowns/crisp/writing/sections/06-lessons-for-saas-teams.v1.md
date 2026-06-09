@@ -2,16 +2,16 @@
 
 ### The pattern
 
-Crisp's evolution shows what happens when a company stops writing for first-time visitors and starts writing for buyers who already understand the category. The page removed explanations and added specificity — a move that only works when the brand no longer depends on the homepage to educate strangers.
+Crisp's evolution shows **progressive narrowing**: the company started with broad category explanation — what a customer messaging platform does — and moved toward addressing specific pain points for visitors who already understand the category. The page stopped teaching and started filtering. That only works when the company can rely on brand awareness or non-homepage entry points to do the teaching elsewhere.
 
 ### Who should copy this
 
-If your product name already completes the sentence "tools like [your product]" in buyer conversations, you have the recognition this requires. If your signup volume stays stable when you remove category explanations from paid ad copy, your brand is doing that work before the page loads. This shift makes sense when you are optimizing for decision speed, not discovery.
+If your analytics show that most homepage visitors arrive from branded search, navigate from product-specific landing pages, or come through content that already explained the category, you have permission to narrow. If your competitors are household names and visitors compare you to them by default, you can skip the "what is this?" stage. If your URL or domain name makes the category obvious, the page can focus on differentiation instead of definition.
 
 ### Who should NOT copy this
 
-If you still depend on non-branded search, cold paid traffic, or visitors who arrive without knowing what your product does, removing context will cost you qualified signups. Most SaaS companies cannot afford to assume understanding — their homepage is the first time a visitor learns the category. Copying this pattern without the brand recognition behind it turns clarity into vagueness.
+If your homepage receives cold paid traffic, non-branded search, or referrals from general business media, removing category context will cost you qualified leads. Visitors who land without knowing what you do will bounce or misunderstand your positioning. If you are still building category awareness, an identity-focused headline reads as vague or evasive. You will lose pipeline to competitors who explain the category clearly, even if their messaging is less polished.
 
 ### The test before you copy
 
-Check your homepage analytics for the percentage of visitors arriving from branded search versus non-branded search. If more than half come from non-branded terms or paid channels, your page still needs to explain the category before it can position within it.
+Open Google Analytics. Filter your homepage traffic by source. What percentage arrives from branded search versus non-branded, paid, or referral? If more than 40% of your homepage visitors come from cold channels, your page still needs to explain the category before it can filter for fit.

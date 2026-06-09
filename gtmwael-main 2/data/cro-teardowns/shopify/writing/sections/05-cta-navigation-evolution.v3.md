@@ -1,7 +1,13 @@
-## Ten CTAs became one — and ten became zero
+## Shopify's CTA shift: from education to purchase intent
 
-2021: ten primary CTAs across the homepage. **"Start your business,"** **"Start free trial,"** **"Explore more examples,"** **"Explore ways to sell,"** **"Explore how to market your business,"** **"Explore how to manage your business,"** **"Learn more about Shopify,"** **"Contact support,"** **"Explore the Shopify Experts Marketplace,"** and **"Contact."** By 2026, the page opens with **"Start for free"** and removes every exploration-stage ask. What remains are product-feature CTAs—**"Sidekick,"** **"Website Builder,"** **"Customer Accounts"**—positioned as discovery, not conversion gates. Removing mid-funnel education CTAs can reduce choice paralysis for visitors who arrive with purchase intent, but it also exits comparison shoppers before they engage with proof or category education.
+### What changed
 
-The single trial CTA, paired with the removed education paths, filters for visitors who already know what Shopify does. Without traffic data, this can be read as a bet on inbound traffic arriving via branded search or retargeting—visitors who skip the "why commerce platform" stage entirely. The old page served early-stage founders still evaluating category fit; the new page targets merchants ready to launch or migrate immediately.
+Shopify removed four education-focused CTAs: **"Explore more examples"**, **"Explore ways to sell"**, **"Explore how to market your business"**, and **"Learn more about Shopify"**. The new CTAs skip research paths — **"Start for free"** and **"Get a stunning store"** both assume you are ready to create an account.
 
-The tradeoff: speed vs qualification. For Shopify, this works if paid ads and organic search handle category education upstream. If a meaningful portion of inbound traffic includes platform switchers or cold visitors who need proof before trial, the homepage now exits them before engagement. **So what?** A SaaS founder should audit homepage CTA count against traffic temperature—if 40%+ of visitors arrive via generic keywords or third-party comparison content, a single trial CTA may exit them before they understand the category fit.
+### Shopify CTAs no longer serve category researchers
+
+The page no longer gives paths to people still learning what an ecommerce platform does. The old **"Explore ways to sell"** and **"Explore how to market your business"** CTAs let visitors research selling channels and marketing tools before committing. Those are gone. If your traffic arrives via non-branded search or educational queries — check Search Console for terms like "what is ecommerce platform" — this shift suggests a mismatch between visitor intent and page assumption.
+
+### Audit your own page
+
+Count CTAs that include "explore," "learn," or "discover." Shopify went from four to zero. Open Google Analytics, filter the last 30 days of non-branded organic traffic, and check whether your primary CTA assumes product knowledge those search queries signal visitors do not yet have.

@@ -1,46 +1,45 @@
 {
-  "score": 72,
+  "score": 73,
   "pass": false,
   "issues": [
-    "The ## section heading is clever-only with no searchable terms — 'how the headline repositioned' is not a topic term a Google searcher would use",
-    "H3 'What changed' paragraph is 62 words — exceeds 60-word limit",
-    "H3 'Why it matters' delivers no practical takeaway in the first two sentences — opens with causation claim about visitor assumptions instead",
-    "H3 'What the homepage no longer explains' is 71 words total — exceeds 60-word limit and buries the founder test",
-    "The final H3 block contains a causal statement without an attached condition: 'the headline assumes that decision is already made' — no 'if [visitor type]' attached",
-    "The section contains causation claims without supporting data: 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' — no evidence of traffic source or visitor intent provided",
-    "The final test is not specific to Crisp's evidence — 'count how many times AI appears before the page names a specific customer support problem' could appear in any AI product teardown",
-    "The H3 'What the homepage no longer explains' heading is not searchable — no topic term or company name",
-    "Sentence length variance is low — most sentences in H3 blocks are 15–20 words, very similar rhythm throughout"
+    "Section contains two causal claims without conditions: 'the new headline may filter them out' (conditional language present but no test condition attached) and 'If category terms outnumber explanatory terms' is a weak conditional that implies causation without evidence.",
+    "The term 'category' appears 6 times but is used as expert jargon without plain-language explanation — readers unfamiliar with B2B SaaS 'category creation' strategy will not understand what 'names a category' means in practical terms.",
+    "Paragraph 1 under 'What changed' is 85 words — exceeds the 60-word limit for analytical section body paragraphs.",
+    "Paragraph 1 under 'Why it matters' is 72 words — exceeds the 60-word limit.",
+    "Paragraph 1 under 'What it costs' is 73 words — exceeds the 60-word limit.",
+    "The practical takeaway in 'What it costs' is buried in the third sentence ('Open your homepage and count...') — violates the rule that takeaway must appear in the first two sentences of the H3 block.",
+    "Generic SaaS commentary present: 'The page no longer explains what problem Crisp solves' and 'If visitors arrive unfamiliar with AI support as a category' could appear in any B2B SaaS teardown with 'Crisp' replaced by another company name.",
+    "The opening sentence is template-default structure ('The 2022 headline opened with... The 2026 headline reads...') when the evidence supports a more interesting entry point: the paradox that a customer experience platform removed the word 'human' and replaced it with 'AI'.",
+    "Section word count is approximately 220 words — exceeds the 140–200 word target by 20 words."
   ],
   "requiredFixes": [
-    "Change ## heading to include 'Crisp homepage' AND a searchable topic term such as 'positioning' or 'messaging' (e.g. 'Crisp homepage: how positioning shifted from human touch to AI automation')",
-    "Split H3 'What changed' paragraph into two: first paragraph covers headline change only (under 60 words), second paragraph covers meta description change (under 60 words)",
-    "Rewrite H3 'Why it matters' opening to deliver the practical takeaway in the first sentence: 'This change makes the page work only for visitors who already decided to adopt AI support. If your visitor has not made that decision, the headline skips the case for automation and jumps straight to implementation.'",
-    "Attach a condition to the causation claim in H3 'Why it matters': change 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' to 'If Crisp's traffic is dominated by bottom-of-funnel buyers comparing AI tools, this works. If traffic includes mid-funnel buyers still evaluating automation, the page skips the case they need.'",
-    "Make the final test specific to Crisp's evidence: 'Open the current Crisp homepage. The 2026 version repeats 'AI' in the H1 ('Augment your customer experience. AI made to support your team & customers'), the first section heading, and the subhead — before naming a single customer support problem. Count how many AI mentions appear before the first named problem (late reply times, missed chats, repetitive questions). If AI appears 3+ times first, your page assumes the visitor already decided to adopt AI.'",
-    "Change H3 'What the homepage no longer explains' heading to a searchable version: 'What Crisp's homepage no longer argues'",
-    "Vary sentence length in H3 'Why it matters' — currently all sentences are 15–20 words. Insert one short sentence (under 10 words) and one longer sentence (25+ words) to create rhythm."
+    "Add plain-language definition the first time 'category' is used — e.g. 'names a technology category (a broad product type that buyers already recognize, like CRM or live chat)'.",
+    "Remove or rephrase the causal claim 'the new headline may filter them out' — replace with observable condition: 'If a visitor does not already know what an AI support platform does, the new headline gives them no reason to stay'.",
+    "Break the 85-word paragraph under 'What changed' into two paragraphs at the sentence starting 'The page no longer explains...'.",
+    "Break the 72-word paragraph under 'Why it matters' into two paragraphs at the sentence starting 'The old page included...'.",
+    "Break the 73-word paragraph under 'What it costs' into two paragraphs at the sentence starting 'The new homepage assumes...'.",
+    "Move the practical takeaway ('Open your homepage and count...') to the first sentence of the 'What it costs' H3 block.",
+    "Anchor the 'Why it matters' paragraph more specifically to Crisp — reference the exact removed section heading and explain what it told visitors in concrete terms, not abstract 'product explanation'.",
+    "Rewrite the opening sentence to lead with the paradox: a customer experience platform that removed 'human touch' and replaced it with 'AI' — this is the most interesting finding in the evidence."
   ],
   "riskFlags": [
-    "CAUSATION WITHOUT DATA: 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' — no traffic source data, no visitor intent data, no conversion funnel data provided in evidence",
-    "CAUSAL STATEMENT WITHOUT CONDITION: 'the headline assumes that decision is already made' — no attached 'if [visitor type]' condition",
-    "UNSUPPORTED CLAIM: 'If a visitor has not yet decided to adopt AI, the page offers no argument for why they should' — the evidence does not include full page body copy, only headlines and section headings. Cannot confirm the page 'offers no argument' without body copy evidence"
+    "'the new headline may filter them out before they understand the product' — causal outcome claim with no data showing visitors left or conversion dropped.",
+    "'If category terms outnumber explanatory terms' — implies a test condition that will reveal a problem, but no evidence supports this ratio as a conversion factor."
   ],
   "seoNotes": [
-    "NEGATIVE: The ## section heading 'how the headline repositioned between 2022 and 2026' is not searchable — no one searches 'how headline repositioned'. Replace with 'Crisp homepage positioning' or 'Crisp messaging shift'",
-    "NEGATIVE: The H3 'What the homepage no longer explains' is not searchable — no topic term, no company name",
-    "POSITIVE: The ## heading includes the company name 'Crisp' and a date range, which helps with long-tail search visibility",
-    "POSITIVE: The section uses the exact verbatim headline quotes in bold, which helps with brand-name + feature searches"
+    "Section heading includes 'Crisp homepage positioning' — good for search visibility.",
+    "The term 'AI category' in the heading may attract search traffic for 'AI customer support' queries.",
+    "Verbatim quotes like 'Give your customer experience a human touch' are correctly formatted in bold quotes — supports featured snippet extraction."
   ],
-  "rewriteInstruction": "Rewrite the section to fix five problems: (1) Change the ## heading to include 'Crisp homepage' AND a searchable topic term like 'positioning' or 'messaging shift'. (2) Deliver the practical takeaway in the first sentence of H3 'Why it matters' — state what the change means for the visitor, not what Crisp assumes. (3) Attach a condition to the causation claim: 'If Crisp's traffic is mostly [visitor type], this works. If traffic includes [other visitor type], the page skips [what they need].' (4) Make the final test specific to Crisp's evidence — quote the exact H1 and section headings from the 2026 screenshot, then tell the founder to count AI mentions before the first named problem. (5) Vary sentence length in H3 'Why it matters' by inserting one short sentence (under 10 words) and one longer sentence (25+ words).",
+  "rewriteInstruction": "Open with the paradox that makes this section interesting: a customer experience platform that removed 'human touch' and replaced it with 'AI'. Break all three H3 body blocks into paragraphs under 60 words each. Define 'category' the first time it appears — explain that it means 'a broad product type buyers already recognize, like CRM or email marketing'. Move the practical test ('Open your homepage and count...') to the first sentence of the final H3 block. Remove the causal claim about filtering visitors — replace with a conditional: 'If a visitor does not already know what an AI support platform does, the new headline gives them no reason to stay'. Anchor the 'Why it matters' block to the specific removed section heading and explain in concrete terms what it told visitors (not abstract 'product explanation'). Cut 20 words to reach the 140–200 word target — remove redundant phrasing in the final H3 block.",
   "dimensionScores": {
-    "evidenceAccuracy": 13,
+    "evidenceAccuracy": 15,
     "specificity": 10,
-    "plainLanguage": 16,
+    "plainLanguage": 12,
     "scannability": 6,
-    "searchableHeadings": 2,
-    "rhythmAndOpening": 7,
-    "founderTakeaway": 3
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

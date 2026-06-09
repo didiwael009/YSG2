@@ -1,19 +1,13 @@
-## Vercel homepage positioning: how the headline changed between 2021 and 2026
+## Vercel homepage positioning: how the headline changed from 2021 to 2026
 
 ### What changed
 
-The original headline read **"Develop.Preview.Ship."** — a three-word product workflow. The current headline reads **"Build and deploy on the AI Cloud."** 
-
-The meta description shifted from **"Deploy web projects with the best frontend developer experience and highest end-user performance"** to **"Vercel gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web."** The headline no longer names the product workflow. It names the category instead.
+The headline moved from naming a workflow to naming an infrastructure category. The 2021 version read **"Develop.Preview.Ship."** — three verbs describing steps a developer takes. The current version reads **"Build and deploy on the AI Cloud."** Five of those seven words assume the visitor already recognizes what "the AI Cloud" means as a deployment destination.
 
 ### Why it matters
 
-The new headline assumes the visitor already knows what Vercel does. It skips the product explanation. This approach works when most visitors arrive through branded search — people searching "Vercel" directly — or through recommendations and content that mention the company before the visitor lands on the page. 
-
-If your homepage still gets visitors who've never heard of you, removing the product explanation means they must figure out what you do from the rest of the page. That increases the work the page must do below the fold.
+The new headline no longer explains what Vercel does. It positions Vercel as the place where something already-understood happens. This shift suggests the company expects visitors to arrive with context — either from the brand name, from a referral, or from prior exposure. A visitor who has never heard of Vercel may now read the headline and leave without understanding the product category.
 
 ### What it costs
 
-To check if your homepage can afford this approach: search **"frontend deployment platform"** (a term Vercel ranks for), land on your homepage in an incognito tab, and see if you can explain what the product does in one sentence after reading only the headline. 
-
-If you cannot, your homepage still needs the product statement in the headline. Vercel can skip it because their brand name now carries the category explanation. Most companies cannot make that assumption yet.
+Compare the two headlines on comprehension. **"Develop.Preview.Ship."** contains three actions that make sense without any product knowledge. **"Build and deploy on the AI Cloud."** assumes the visitor knows what "the AI Cloud" is and why it differs from other hosting options. If most of your traffic arrives without brand recognition, this type of headline may cost clarity. To check: count how many words in your headline require prior knowledge of your company or category. Vercel's went from zero to five.

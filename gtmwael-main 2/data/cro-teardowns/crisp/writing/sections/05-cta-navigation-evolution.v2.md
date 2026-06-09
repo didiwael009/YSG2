@@ -1,13 +1,13 @@
-## How Crisp's CTAs shifted from free trial to AI agent, 2022–2026
+## Crisp's CTA shift: from generic trial to AI-specific entry points
 
-### Crisp replaced trial CTAs with AI-first buttons
+### From generic trial CTAs to AI-specific entry points
 
-Crisp removed **"Get Started"** and **"Try Crisp for free"** and replaced them with **"Get your AI Agent"** and **"Start Free Trial"**. The company added **"Request a demo"**, removed it, then added **"Book a demo"** back. A new mid-page CTA appeared: **"HugoYour best AI support agent teammate."**
+The homepage replaced **"Get Started"** and **"Try Crisp for free"** with **"Get your AI Agent"** and **"Start Free Trial"**. Five new CTAs now route to feature pages before signup: **"Learn more on the Crisp AI Chatbot"**, **"See all messaging channels"**, **"Learn more on Crisp Knowledge Base"**, plus separate CTAs for workflows and the inbox. The old **"Request a demo"** became **"Book a demo"**.
 
-### Why Crisp's new CTA path assumes category knowledge
+### The friction cost of feature-first CTAs
 
-The homepage removed the H2 **"Meet the business messaging platform that gathers customer support, sales, and marketing"** — the only line that explained what category Crisp belongs to. The new CTAs push visitors toward claiming an AI agent or starting a trial immediately. Visitors who arrive from broad search terms like "customer messaging platform" may encounter friction if they do not already know what Crisp does.
+If a visitor arrives ready to start a trial — from a referral, a review site, or word-of-mouth — the new path requires stopping at a feature page first. The **"Get your AI Agent"** CTA links to an AI explainer, not account creation. The **"See all messaging channels"** button opens a product tour. This adds steps between intent and signup for visitors who already know they want Crisp.
 
-### Test whether your CTAs match visitor intent
+### Test whether education CTAs help or hurt signup rate
 
-Open Crisp's current homepage. Count the CTAs before the first H2 that explains what the platform does. Compare to your own page. If your homepage leads with **"Start free trial"** but most traffic comes from category searches, the CTA may ask for commitment before the visitor understands what they are committing to.
+Open your homepage and list every CTA that routes to a feature page instead of signup. Crisp added five. If you did the same, compare your trial start rate before and after. Check whether visitors who click those CTAs ever reach signup — or whether they read and leave.

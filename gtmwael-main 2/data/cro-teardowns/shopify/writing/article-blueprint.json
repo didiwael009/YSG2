@@ -5,7 +5,7 @@
     "titleChanged": true,
     "snapshotCount": 3,
     "h2Added": 5,
-    "h2Removed": 8,
+    "h2Removed": 7,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -16,7 +16,7 @@
   "warnings": [
     "Only 2 snapshots available — no mid-transition analysis block will be generated."
   ],
-  "generatedAt": "2026-06-09T05:24:29.764Z",
+  "generatedAt": "2026-06-09T18:42:08.544Z",
   "postSummary": {
     "title": "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
     "h1": "How Shopify rewrote its homepage over 5 years",

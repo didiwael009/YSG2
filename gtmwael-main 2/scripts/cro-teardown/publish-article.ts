@@ -340,6 +340,19 @@ async function main(): Promise<void> {
     ? (JSON.parse(fs.readFileSync(seoJsonPath, 'utf-8')) as Record<string, string>)
     : null;
 
+  // ── Override lesson cards with LLM-generated version if available ─────────
+  // Phase 4C writes brand-specific cards to section-evidence/lesson-cards.json.
+  // These replace the static generic cards from article-blueprint.ts so every
+  // published article has unique, brand-specific lesson cards.
+  const lessonCardsPath = path.join(writingDir, 'section-evidence', 'lesson-cards.json');
+  if (fs.existsSync(lessonCardsPath)) {
+    const llmCards = JSON.parse(fs.readFileSync(lessonCardsPath, 'utf-8'));
+    if (Array.isArray(llmCards) && llmCards.length > 0) {
+      structuredData.lessonCards = llmCards;
+      console.log(`✅  Loaded ${llmCards.length} LLM-generated lesson cards from section-evidence/lesson-cards.json`);
+    }
+  }
+
   // ── Decide what to override ─────────────────────────────────────────────────
   // Keep structured data description/excerpt as-is — they're the complete
   // versions. The seo.json metaDescription is SERP-truncated ("…" ending).

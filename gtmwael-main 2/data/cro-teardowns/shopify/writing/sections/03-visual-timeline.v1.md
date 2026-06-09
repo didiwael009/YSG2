@@ -1,7 +1,13 @@
-## Shopify stopped recruiting beginners
+## Shopify homepage positioning: how the headline changed between 2021 and 2026
 
-**"The platform commerce is built on"** worked for anyone. You did not need to know what commerce platform meant. You did not need to believe in anything. The 2021 headline named what the product was — infrastructure — and invited you to use it. The current headline, **"Be the nextAI all-star,"** only works if you already believe AI matters, that you want to be an all-star, and that those two things belong in the same sentence. That is not a copy refresh. It is an assumption shift — the homepage now treats AI fluency as table stakes and positions Shopify as the tool for people who are already leaning in.
+### What changed
 
-The old section headings reinforced this: **"Bring your business online"** and **"Take the best path forward"** spoke to people deciding whether to start. The new headings — **"Your brand has entered the chat"** and **"Meet your secret weapon, Sidekick"** — speak to people who have already started and are choosing tools. The psychological mechanism is aspiration positioning: the page no longer explains the category; it recruits an identity. That trades discovery-stage visitors for buyers who have already accepted the frame.
+The 2021 homepage opened with **"The platform commerce is built on"** — a product claim that explained what Shopify is. The current homepage opens with **"Be the nextAI all-star"** — a statement that assumes you already know. The page no longer introduces the product category. It recruits people who already understand what Shopify does.
 
-Open your homepage. If your headline requires the visitor to already believe in the trend you are riding, count how much organic traffic comes from queries that include that trend term. If it is under 15%, your positioning is ahead of your distribution.
+### Why it matters
+
+The new homepage expects visitors to arrive with context. It does not explain "platform" or "commerce." This is category leadership — when a brand is so widely recognized that the homepage can skip the explanation and move straight to aspiration. Most SaaS companies do not have that luxury. Their visitors arrive cold, often from generic search terms, and need the category anchor before they can evaluate the product.
+
+### What it costs
+
+Visitors who land without knowing what Shopify is may not stay long enough to figure it out. The headline no longer orients them. To check if your homepage has this problem: open it in a private browser window and ask someone unfamiliar with your product what the company sells. If they hesitate or guess wrong, your headline may be doing identity work before it does category work.

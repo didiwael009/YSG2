@@ -1,41 +1,40 @@
 {
-  "score": 72,
+  "score": 78,
   "pass": false,
   "issues": [
-    "Opening is pure CONTRAST entry ('The language change suggests a shift from X to Y') when the most interesting aspect is the PARADOX: Shopify replaced a trust signal with an aspiration signal that excludes most of their historical audience — this tension is buried in paragraph 2 instead of leading.",
-    "Mechanism is named late and vaguely ('ICP narrowing') rather than upfront with precision — the actual mechanism is 'qualification filter via aspiration signaling' or 'category repositioning from enabler to performance platform.'",
-    "Hedging is mechanical: 'suggests' appears 3 times, 'appears to have' once — every interpretive move is hedged identically, signaling writer self-protection rather than precision.",
-    "The tradeoff is present but labeled structurally ('What it costs:') rather than woven as content — this is a formatting signal, not prose integration.",
-    "The founder test is strong and specific, but it is not anchored to the evidence shown — the test is about Google results, but the evidence is about homepage language. The connection is implied, not explicit.",
-    "Word count is approximately 245 words, exceeding the 240-word max for analytical sections."
+    "H1 'Be the nextAI all-star' appears in evidence as verbatim quote but is not formatted in **bold quotes** in the draft",
+    "Causal claim 'the new headline may confuse more visitors than it converts' lacks supporting evidence or condition structure",
+    "Paragraph 3 (final H3 block) exceeds 60 words (~85 words)",
+    "Generic phrasing 'Open your homepage in an incognito window' could appear in any teardown",
+    "The section relies on implied causation ('this framing works because') without evidence of traffic sources or conversion data",
+    "Word count approximately 210 words — exceeds 200-word target by ~10 words"
   ],
   "requiredFixes": [
-    "Reopen with the PARADOX: 'Shopify replaced a trust signal with an aspiration signal that excludes most of their historical acquisition funnel' — make this the first sentence, not the contrast between old/new audience.",
-    "Name the mechanism in sentence 2 or 3: 'qualification filter via aspiration signaling' or 'category repositioning from enabler to performance platform' — not buried as 'ICP narrowing' in the middle of paragraph 2.",
-    "Remove the 'What it costs:' label. Integrate the tradeoff as a sentence: 'The cost: every founder still working a day job now sees a platform positioned for someone else' — no structural marker.",
-    "Anchor the founder test explicitly to the evidence: 'Open your homepage. If your H1 could recruit both pre-revenue founders and established businesses — like Shopify's old 'Start a Business, Grow Your Business' — paste it into Google and check whether...' Make the test trace back to the headline change shown.",
-    "Cut 25+ words to reach 220-word target. Primary candidates: the entire first half of the opening sentence ('The language change suggests a shift from aspiring entrepreneurs to established businesses') — this is setup, not insight. Start with the finding.",
-    "Reduce hedging precision: keep ONE 'suggests' where causal inference is genuinely uncertain (e.g., whether the shift was intentional). Remove the other two — 'The old headline functioned as...' and 'The new one is an aspiration signal' are observations, not inferences."
+    "Format the H1 quote 'Be the nextAI all-star' in **bold quotes** per evidence formatting rules",
+    "Rewrite the causal claim 'may confuse more visitors than it converts' to conditional language: 'If traffic includes cold paid ads, the new headline risks confusion — the visitor must already know what an ecommerce platform does'",
+    "Split the final H3 paragraph into two parts: (1) the traffic-source observation in 2 sentences, (2) the founder test as a standalone sentence",
+    "Replace 'Open your homepage in an incognito window' with a Shopify-specific test: 'Open shopify.com in incognito. Count how many seconds it takes to understand what Shopify sells if you have never heard of it'",
+    "Trim 10–15 words to reach 200-word target — consider condensing the meta description explanation in H3.2"
   ],
   "riskFlags": [
-    "'The language change suggests a shift' — this is a finding (what changed), not an inference. Findings do not require hedging. The hedge signals unnecessary caution.",
-    "'Shopify appears to have traded reach for qualification' — appropriate hedge, but 'appears to have' + 'suggests' (used 3x total) creates mechanical repetition.",
-    "'your trial-start volume will reflect that shift whether you intended it or not' — this implies a conversion outcome (trial volume) without data. The claim is hedged with 'will reflect,' but the outcome itself is speculative."
+    "Causal claim without evidence: 'the new headline may confuse more visitors than it converts' — no conversion data provided",
+    "Implied strategy attribution: 'expects visitors who are comparing options' — evidence note explicitly states 'No confirmed strategy is implied'",
+    "Traffic-source assumption: 'If Shopify's traffic is coming primarily from branded search' — no traffic data in evidence"
   ],
   "seoNotes": [
-    "Section opens with a company-specific finding ('Shopify stopped recruiting beginners'), which is good for unique angle and shareability.",
-    "The phrase 'ICP narrowing' and 'qualification filter' are practitioner terms that may drive long-tail search from operators researching homepage messaging strategy.",
-    "The founder test references a Google search tactic, which may attract readers searching for 'how to test homepage messaging' or 'homepage positioning audit.'"
+    "Section heading contains company name 'Shopify' and searchable term 'messaging' — good for search visibility",
+    "H3 subheadings use plain language ('Who the old page served') but lack searchable modifiers like 'homepage messaging' or 'positioning'",
+    "The phrase 'what this means for the sales process' could be strengthened with 'homepage conversion' or 'visitor intent' for search indexing"
   ],
-  "rewriteInstruction": "Lead with the paradox, not the contrast: open with 'Shopify replaced a trust signal with an aspiration signal that excludes most of their historical acquisition funnel.' Name the mechanism (qualification filter via aspiration signaling OR category repositioning) by sentence 3. Remove the 'What it costs:' label and integrate the tradeoff as a single prose sentence. Anchor the founder test explicitly to the headline evidence shown: 'If your H1 could recruit both pre-revenue and established buyers — like Shopify's old version — paste it into Google and check whether the top results are discovery content or procurement grids.' Reduce hedging to one precise use where causal uncertainty is real; remove hedges from factual observations. Cut to 220 words by removing setup phrases in the opening and tightening the middle paragraph.",
+  "rewriteInstruction": "Tighten the final H3 block to meet the 60-word paragraph cap by splitting it into two parts: first, a 2-sentence observation about traffic-source fit using conditional language ('If traffic includes cold ads, the new headline risks confusion'); second, a standalone Shopify-specific test ('Open shopify.com in incognito and count how many seconds it takes to understand what Shopify sells'). Format 'Be the nextAI all-star' in **bold quotes**. Replace the generic incognito-window instruction with a Shopify-anchored version. Remove any implied causation about confusion and conversion — reframe as conditional risk. Trim 10 words to reach 200-word target by condensing the meta description explanation in H3.2.",
   "dimensionScores": {
-    "evidenceAccuracy": 23,
-    "riskControl": 4,
-    "specificity": 13,
-    "clarity": 8,
-    "entryPointOriginality": 7,
-    "mechanismNaming": 6,
-    "founderSharpness": 11
+    "evidenceAccuracy": 18,
+    "specificity": 11,
+    "plainLanguage": 19,
+    "scannability": 8,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

@@ -1,40 +1,35 @@
 {
-  "score": 78,
-  "pass": false,
+  "score": 88,
+  "pass": true,
   "issues": [
-    "Word count violation: section is ~75 words, exceeding the 50–75 target when section goal specifies three sentences (currently four sentences)",
-    "Final sentence makes an unsupported causal claim about visitor behavior ('will need to scroll') without evidence of user testing or analytics",
-    "Second sentence contains an interpretation ('removes the three-step workflow frame') that could be tightened to pure observation",
-    "Heading contains company name and 'homepage' — passes searchability test",
-    "All website quotes properly bolded — passes formatting test",
-    "No jargon violations detected",
-    "Paragraph length: ~75 words — within 90-word cap but high for a quick answer"
+    "Word count is approximately 92 words, exceeding the 50–75 word target by 17 words",
+    "The phrase 'product-and-infrastructure framing' is abstract strategist language without a plain explanation",
+    "Final sentence buries a structural insight in passive construction that could be more direct",
+    "Opening sentence attempts to pack all three changes into one 35-word sentence, reducing scannability"
   ],
   "requiredFixes": [
-    "Remove or reframe the final sentence ('Visitors who don't already know...') — this is a prediction about user behavior without supporting evidence",
-    "Compress to exactly three sentences as specified in section goal",
-    "Replace 'removes the three-step workflow frame' with direct observation: 'The original headline used a three-step workflow format; the new headline does not'",
-    "Target 50–65 words to leave room for featured snippet extraction"
+    "Trim to 75 words maximum — remove 'The evidence spans 5 snapshots and' (redundant with snapshot count context)",
+    "Replace 'product-and-infrastructure framing' with plain language: 'language that names the product category (AI Cloud) and what it includes (frameworks, workflows, infrastructure)'",
+    "Tighten final clause: change 'signaling a structural rewrite of how the page presents its pitch' to 'a structural rewrite of the pitch'"
   ],
   "riskFlags": [
-    "UNSUPPORTED CLAIM: 'Visitors who don't already know what Vercel does will need to scroll or navigate elsewhere' — no user testing, analytics, or scroll-depth data provided to support this behavioral prediction",
-    "MILD INTERPRETATION: 'removes the three-step workflow frame' — while accurate, this interprets the change rather than describing it neutrally"
+    "The pattern shows a shift... — this is interpretive but acceptable because it is explicitly framed as 'pattern' not 'strategy' or 'goal', and the evidence (before/after text) is directly quoted"
   ],
   "seoNotes": [
-    "POSITIVE: Heading contains 'Vercel homepage' — strong for search intent",
-    "POSITIVE: All key elements quoted verbatim — good for entity extraction",
-    "NEUTRAL: Four sentences may reduce featured snippet probability vs. tighter three-sentence format",
-    "POSITIVE: First sentence directly answers implied search query ('what changed on Vercel's homepage')"
+    "Heading contains company name (Vercel), topic term (homepage), and subtopic (messaging changes) — strong for featured snippet",
+    "Three-sentence structure matches Google's featured snippet preference",
+    "Bolded quotes (**'Develop.Preview.Ship.'**, **'Build and deploy on the AI Cloud.'**) are correctly formatted",
+    "Opening sentence front-loads the most searchable change (headline rewrite) before navigation changes"
   ],
-  "rewriteInstruction": "Compress to exactly three sentences totaling 50–65 words. Remove the final sentence about visitor behavior (unsupported prediction). Keep the structure: (1) what changed, (2) what the original contained that the new version does not, (3) a neutral observation about information architecture difference. Replace 'removes the three-step workflow frame' with 'The original headline presented a three-step workflow; the new headline presents a cloud infrastructure category.' Preserve all bolded quotes. Do not predict user behavior or scroll patterns.",
+  "rewriteInstruction": "Trim to 75 words by removing redundant evidence-counting ('The evidence spans 5 snapshots and'). Replace 'product-and-infrastructure framing' with a plain explanation in the same breath: 'language that names what Vercel is (AI Cloud) and what it includes (frameworks, workflows, infrastructure)'. Tighten the final clause from 'signaling a structural rewrite of how the page presents its pitch' to 'a structural rewrite of the pitch'. The three-sentence structure and bolded quotes are correct — preserve them.",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
+    "evidenceAccuracy": 25,
     "specificity": 15,
-    "plainLanguage": 20,
+    "plainLanguage": 16,
     "scannability": 12,
     "searchableHeadings": 10,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 0
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

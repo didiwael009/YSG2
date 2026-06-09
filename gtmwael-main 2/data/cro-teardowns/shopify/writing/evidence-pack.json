@@ -6,7 +6,7 @@
   "toMonth": "current",
   "fromLabel": "Jul 2021",
   "toLabel": "Jun 2026",
-  "generatedAt": "2026-06-09T05:24:29.751Z",
+  "generatedAt": "2026-06-09T18:42:08.532Z",
   "warnings": [
     "Only 2 snapshots available — no mid-transition analysis block will be generated."
   ],
@@ -57,14 +57,13 @@
       "Empowering independent business owners everywhere",
       "Get the help you need, every step of the way",
       "Start your business journey with Shopify",
-      "More resources",
       "Change your country or region."
     ],
     "ctaAdded": [
       "Start for free",
       "Get a stunning store",
       "Compare Shopify",
-      "SidekickYour commerce-obsessed AI assistant.",
+      "Sidekick Your commerce-obsessed AI assistant.",
       "Website Builder",
       "Customer Accounts",
       "AI Chats",

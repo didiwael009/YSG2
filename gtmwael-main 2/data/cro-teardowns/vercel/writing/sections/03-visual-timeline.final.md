@@ -1,21 +1,13 @@
-## Vercel homepage positioning: how the headline changed between 2021 and 2026
-
-Here's what moved between the two snapshots.
+## Vercel homepage positioning: how the headline changed from 2021 to 2026
 
 ### What changed
 
-The original headline named a workflow: **"Develop.Preview.Ship."** The new headline names a category: **"Build and deploy on the AI Cloud."**
-
-The meta description followed the same pattern. It moved from **"Deploy web projects with the best frontend developer experience and highest end-user performance"** to **"Vercel gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web."** The homepage no longer explains what the product does in the headline. It assumes you already know.
+The headline dropped all product explanation. The 2021 version read **"Develop.Preview.Ship."** — three verbs a developer could understand without prior context. The current version reads **"Build and deploy on the AI Cloud."** The phrase **"the AI Cloud"** now carries the entire category definition, with no supporting explanation visible above the fold.
 
 ### Why it matters
 
-The new headline works only if the visitor arrives already familiar with Vercel. It skips the product explanation.
+The page no longer tells a first-time visitor what Vercel is. This shift is consistent with the navigation changes: earlier versions included **"Templates"**, **"Integrations"**, and **"Analytics"** — labels that signal product categories. The current navigation and meta description (now: "frameworks, workflows, and infrastructure") suggest the company expects visitors to arrive already knowing they need a deployment platform.
 
-The product explanation is no longer in the headline — it has moved to section headings, visuals, and body copy. Whether that matches how your visitors arrive is worth checking.
+### What it costs
 
-### What it requires
-
-To check if your homepage uses this same structure: open your homepage in an incognito tab and read only the headline. Can you explain what the product does in one sentence from the headline alone?
-
-If you cannot, the product statement is not in the headline — it has moved somewhere else on the page. That is not automatically a problem, but it is a deliberate trade worth knowing about.
+Count how many words in your headline require prior knowledge of your company or category. Vercel's went from zero to five. This creates a clarity gap if the visitor does not recognize the category term and has no prior brand exposure — common when most traffic arrives from non-branded search or cold paid channels.

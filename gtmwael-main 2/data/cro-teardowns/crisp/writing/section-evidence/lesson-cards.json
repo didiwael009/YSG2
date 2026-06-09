@@ -1,26 +1,26 @@
 [
   {
     "number": "01",
-    "title": "Crisp replaced \"Give your customer experience a human touch\" with an AI-first headline",
+    "title": "Crisp replaced \"Give your customer experience a human touch\" with an AI positioning statement",
     "category": "Positioning",
-    "body": "The original H1 **\"Give your customer experience a human touch\"** positioned the product around warmth and personal service. The new version — **\"Augment your customer experience. AI made to support your team & customers.\"** — leads with AI capability instead. This suggests the team is now targeting buyers who prioritise automation over human interaction, or who already accept AI as table stakes."
+    "body": "The original headline **\"Give your customer experience a human touch\"** framed Crisp as a product for personal connection. The new headline **\"Augment your customer experience. AI made to support your team & customers\"** signals a different buyer: teams looking to scale support with automation, not startups prioritising warmth. This shift suggests the company is targeting a higher-volume, efficiency-focused segment — likely buyers who already expect AI in their stack."
   },
   {
     "number": "02",
-    "title": "The new meta description dropped \"14 Days free trial. No credit-card required. Try now!\" entirely",
+    "title": "The meta description dropped \"14 Days free trial. No credit-card required. Try now!\" — that is a sales-motion change",
     "category": "Funnel",
-    "body": "The 2022 meta description used urgency language and multiple CTAs. The current version reads as a category definition: **\"Crisp is the ultimate all-in-one AI-powered multichannel messaging platform\"**. No trial mention. No exclamation marks. This likely signals a shift away from chasing search-driven trial signups toward attracting buyers who already know they need a platform and are comparing vendors."
+    "body": "The original meta description used urgency tactics (**\"14 Days free trial. No credit-card required. Try now!\"**) and exclamatory language. The new version removes all trial urgency and reads as a neutral category definition. This points to a shift away from instant trial sign-ups toward longer evaluation cycles — buyers who need to understand the platform before committing, not self-serve experimenters clicking through from search."
   },
   {
     "number": "03",
-    "title": "Crisp added \"Build your perfect AI Agent in 4 steps\" as a section heading — feature specificity replaced platform breadth",
+    "title": "6 new section headings focus on AI workflow steps, not the all-in-one pitch",
     "category": "Messaging",
-    "body": "The old homepage included section headings like **\"Meet the business messaging platform that gathers customer support, sales, and marketing\"** — broad capability claims. The new structure foregrounds **\"Build your perfect AI Agent in 4 steps\"** and **\"Let your users search for answers themselves\"**. These headings assume the reader already understands what an AI agent is and wants implementation detail, not category education."
+    "body": "The original page used headings like **\"Meet the business messaging platform that gathers customer support, sales, and marketing\"** — broad, category-defining language. The new structure includes **\"Build your perfect AI Agent in 4 steps\"**, **\"Centralize all your inbound messages\"**, and **\"Craft tailor-made automated internal workflows\"**. This suggests the team now assumes buyers care more about implementation specifics than category education — likely a sign they are competing in a crowded space where the concept no longer needs explaining."
   },
   {
     "number": "04",
-    "title": "6 section headings added and 3 removed points to a structural, not cosmetic, repositioning",
-    "category": "Strategy",
-    "body": "Crisp did not tweak copy — the team rewrote the homepage architecture. The removed headings focused on **\"customer engagement\"** and **\"all together\"** platform messaging. The added headings emphasise AI agents, multichannel inboxes, and self-service knowledge bases. This volume of structural change suggests the company is filtering for a different buyer: someone evaluating AI support tools, not generic SMB messaging platforms."
+    "title": "8 navigation items added and \"Get Started\" removed from CTAs — Crisp is filtering casual visitors",
+    "category": "Navigation",
+    "body": "The navigation expanded significantly (8 new items) while the primary CTA shifted from **\"Get Started\"** to **\"Start Free Trial\"** and **\"Book a demo\"**. Removing generic CTAs like **\"Get Started\"** and **\"Learn More\"** in favour of explicit next steps suggests Crisp expects visitors to arrive with intent. The expanded navigation likely serves buyers who need to explore specific features before converting — not first-time visitors still deciding if they need a messaging platform."
   }
 ]

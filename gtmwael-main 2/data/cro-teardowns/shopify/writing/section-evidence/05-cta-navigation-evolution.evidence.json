@@ -13,7 +13,7 @@
     "titleChanged": true,
     "snapshotCount": 3,
     "h2Added": 5,
-    "h2Removed": 8,
+    "h2Removed": 7,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -21,12 +21,13 @@
     "visualOnly": false,
     "hasMidTransition": false
   },
+  "primaryKeyword": "Shopify landing page",
   "cta-changes": {
     "added": [
       "Start for free",
       "Get a stunning store",
       "Compare Shopify",
-      "SidekickYour commerce-obsessed AI assistant.",
+      "Sidekick Your commerce-obsessed AI assistant.",
       "Website Builder",
       "Customer Accounts",
       "AI Chats",
@@ -62,7 +63,6 @@
       "Empowering independent business owners everywhere",
       "Get the help you need, every step of the way",
       "Start your business journey with Shopify",
-      "More resources",
       "Change your country or region."
     ]
   }

@@ -1,47 +1,47 @@
 {
-  "score": 71,
+  "score": 68,
   "pass": false,
   "issues": [
-    "Opening sentence invents unsupported claim: 'You did not need to know what commerce platform meant' — no evidence provided for this visitor psychology interpretation.",
-    "Phrase 'That is not a copy refresh. It is an assumption shift' presents interpretation as confirmed fact without hedge.",
-    "Claim that old headline 'worked for anyone' is unsupported inference about audience reach.",
-    "Phrase 'AI fluency as table stakes' interprets intent without evidence — no data on visitor AI knowledge or Shopify's targeting strategy.",
-    "Statement 'the page no longer explains the category' is a finding but presented with causal certainty when only structural change is documented.",
-    "Paragraph 2 claim that old headings 'spoke to people deciding whether to start' vs new headings 'speak to people who have already started' — stages attributed without evidence of visitor stage distribution or intent data.",
-    "Named mechanism 'aspiration positioning' is solid but the interpretation it anchors ('recruits an identity') lacks hedge.",
-    "Founder test uses specific metric (15%) that appears invented — no grounding in this company's evidence.",
-    "Word count approximately 240 — exceeds 220 maximum for analytical sections."
+    "The H1 quote 'Be the nextAI all-star' does not match the evidence, which shows 'Be the nextAI all-star' with unusual formatting — the draft should preserve exact formatting or flag the inconsistency",
+    "The term 'category leadership' is used without a plain-language definition in the same sentence",
+    "The term 'aspiration' appears without immediate clarification",
+    "The phrase 'identity work' and 'category work' are expert shorthand used without explanation",
+    "Paragraph 2 ('Why it matters') is 79 words — exceeds the 60-word limit",
+    "Paragraph 3 ('What it costs') is 67 words — exceeds the 60-word limit",
+    "Multiple unsupported causal claims: 'This is category leadership' (no evidence that Shopify's internal strategy is category leadership), 'may not stay long enough' (outcome claim without data), 'your headline may be doing identity work before it does category work' (causal diagnosis without evidence)",
+    "The second paragraph ('Why it matters') could appear word-for-word in a teardown of any SaaS brand that shifted to aspirational messaging",
+    "The third paragraph opens with 'Visitors who land without knowing what Shopify is may not stay long enough' — an outcome claim about visitor behavior with zero supporting data",
+    "The founder takeaway is generic ('ask someone unfamiliar with your product what the company sells') rather than specific to Shopify's evidence (e.g. 'count how many words in your H1 assume category familiarity')"
   ],
   "requiredFixes": [
-    "Add hedge to opening: 'The 2021 headline named what the product was — infrastructure — and could be read as inviting a wider audience range.' (Remove 'worked for anyone' — no evidence.)",
-    "Hedge interpretation in sentence 3: 'The current headline may signal an assumption shift — the homepage can be read as treating AI fluency...'",
-    "Remove invented visitor psychology claim: 'You did not need to know what commerce platform meant' — no data supports this.",
-    "Hedge stage attribution in paragraph 2: 'The old headings can be read as addressing discovery-stage concerns, while the new headings appear to address...'",
-    "Replace invented 15% metric in founder test with evidence-anchored version: 'If your headline requires the visitor to already believe in the trend you are riding, open your analytics and compare branded vs. non-branded traffic split — if most visitors arrive knowing your name already, the positioning may be self-selecting for existing believers.'",
-    "Cut to 220 words maximum — trim filler phrases ('That is not a copy refresh') and consolidate redundant explanation."
+    "Remove or rewrite the causal claim 'This is category leadership' — the evidence shows a headline change, not a confirmed strategic positioning shift",
+    "Add a plain-language definition for 'category leadership' in the same sentence where it first appears, e.g. '(when a brand is so well-known it can skip explaining what it does)'",
+    "Remove or support the outcome claim 'Visitors who land without knowing what Shopify is may not stay long enough to figure it out' — no bounce rate, session duration, or conversion data is provided",
+    "Shorten paragraph 2 ('Why it matters') to under 60 words by removing the generic SaaS commentary ('Most SaaS companies do not have that luxury...')",
+    "Shorten paragraph 3 ('What it costs') to under 60 words by front-loading the actionable test and removing speculation about what 'may' happen",
+    "Replace generic founder test with a specific one anchored to Shopify's evidence, e.g. 'Open your homepage and count how many nouns in your H1 require prior category knowledge. If the answer is more than one, test a version that explains the category first.'",
+    "Rewrite paragraph 2 to anchor specifically to Shopify's evidence — remove sentences that could appear in any SaaS teardown"
   ],
   "riskFlags": [
-    "'worked for anyone' — unsupported audience claim",
-    "'You did not need to know what commerce platform meant' — invented visitor psychology",
-    "'That is not a copy refresh. It is an assumption shift' — interpretation presented as fact",
-    "'AI fluency as table stakes' — intent attribution without evidence",
-    "'spoke to people deciding whether to start' vs 'speak to people who have already started' — stage attribution without visitor data",
-    "'15%' threshold in founder test — appears invented, not grounded in Shopify evidence"
+    "UNSUPPORTED CAUSATION: 'This is category leadership' — the evidence shows a headline change, not a documented strategic intent or market position analysis",
+    "OUTCOME CLAIM WITHOUT DATA: 'Visitors who land without knowing what Shopify is may not stay long enough to figure it out' — no session duration, bounce rate, or abandonment data provided",
+    "UNSUPPORTED CAUSATION: 'your headline may be doing identity work before it does category work' — diagnostic claim about visitor cognition without supporting research or testing data",
+    "INVENTED CONTEXT: 'Most SaaS companies do not have that luxury. Their visitors arrive cold, often from generic search terms' — generic industry commentary not tied to Shopify's evidence"
   ],
   "seoNotes": [
-    "Section opens with concrete finding ('Shopify stopped recruiting beginners') — strong semantic anchor.",
-    "Multiple verbatim quotes properly formatted in bold — good for entity recognition.",
-    "No keyword stuffing or generic SaaS filler — stays tight to company evidence."
+    "POSITIVE: Section heading contains 'Shopify homepage positioning' and 'headline' — both searchable terms",
+    "POSITIVE: All three H3 subheadings are present and functional",
+    "NEGATIVE: The H1 quote formatting issue ('nextAI' vs 'next' + 'AI') may confuse readers trying to verify the claim against a live page"
   ],
-  "rewriteInstruction": "Rewrite to eliminate unsupported visitor psychology claims and add precise hedges where interpretation occurs. Remove the opening claim about what visitors 'did not need to know' — no evidence supports this. Hedge the 'assumption shift' and 'AI fluency as table stakes' interpretations with 'can be read as' or equivalent. In paragraph 2, hedge the stage attribution ('old headings can be read as addressing discovery concerns'). Replace the invented 15% metric in the founder test with an evidence-anchored instruction: 'compare branded vs. non-branded traffic split in your analytics to see if your positioning is ahead of your distribution.' Cut 20 words to hit 220 maximum — trim 'That is not a copy refresh' and condense redundant explanation. Keep the named mechanism ('aspiration positioning') and the tradeoff (discovery-stage visitors vs. committed buyers) — both are solid. The structure is strong; the issue is overconfident interpretation and word count bloat.",
+  "rewriteInstruction": "Rewrite this section to eliminate all unsupported causal claims and generic SaaS commentary. Anchor every sentence to Shopify's specific evidence: the exact headline wording, the removed section headings ('Bring your business online', 'Take the best path forward'), and the navigation changes. Remove the phrase 'This is category leadership' unless you can trace it to evidence. Shorten paragraphs 2 and 3 to under 60 words each by cutting speculation about what 'may' happen. Define 'category leadership' in plain language the first time it appears (e.g. 'when a brand is well-known enough to skip explaining what it does'). Replace the generic founder test ('ask someone unfamiliar') with a specific, five-minute action tied to the evidence (e.g. 'Count how many words in your H1 assume the visitor already knows your product category. Shopify went from zero assumption words in 2021 to three in 2026. If your count is above one and you are not a household name, test a version that names the category first'). Remove the entire second half of paragraph 2 starting with 'Most SaaS companies...' — it is generic filler that could appear in any teardown.",
   "dimensionScores": {
-    "evidenceAccuracy": 13,
-    "riskControl": 3,
-    "specificity": 12,
-    "clarity": 10,
-    "entryPointOriginality": 13,
-    "mechanismNaming": 9,
-    "founderSharpness": 11
+    "evidenceAccuracy": 10,
+    "specificity": 7,
+    "plainLanguage": 8,
+    "scannability": 6,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

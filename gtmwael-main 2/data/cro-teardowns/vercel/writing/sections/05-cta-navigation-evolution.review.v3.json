@@ -1,0 +1,41 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section word count is approximately 190 words, exceeding the 180-word cap",
+    "The term 'conversion-focused' appears without plain-language definition",
+    "H3 'What changed' paragraph is approximately 45 words but could be more specific about timing",
+    "H3 'What Vercel's CTA shift requires from visitors' contains a causal claim ('filters out anyone') without attached condition",
+    "The section lacks specificity about which snapshot introduced which changes",
+    "Opening sentence uses abstract phrasing ('conversion-focused CTAs') that could benefit from plain language",
+    "No bold quotes are used for CTA text despite evidence providing exact CTA copy",
+    "The phrase 'conversion path to product catalog' in the ## heading is clever but not immediately plain"
+  ],
+  "requiredFixes": [
+    "Add bold quotes around all CTA text: **'Contact'**, **'Contact Us'**, **'Login'**, **'AI Cloud'**, **'Vercel Agent'**, **'CI/CD'**, **'Fluid Compute'**",
+    "Reduce word count to 180 maximum — current draft is approximately 190 words",
+    "Rewrite opening sentence to define 'conversion-focused' in plain language: 'Vercel replaced CTAs that pushed visitors toward a sale — Contact, Contact Us, Login — with ten product-feature links'",
+    "Add condition to the causal claim in H3 block 2: 'This structure filters out anyone who needs the page to suggest the next step IF they arrive without knowing which feature they need'",
+    "Add date anchor to H3 block 1: specify which snapshot removed the old CTAs (e.g., 'By [date], Vercel had removed...')"
+  ],
+  "riskFlags": [
+    "'filters out anyone who needs the page to suggest the next step' — causal claim about visitor behavior without supporting data or attached condition",
+    "'This structure may work when visitors arrive already knowing which part of the platform they need' — presents a hypothesis as conditional but lacks evidence anchor"
+  ],
+  "seoNotes": [
+    "Heading contains company name (Vercel) and searchable term (CTA) — strong for SEO",
+    "Heading structure could be improved: 'Vercel homepage CTA evolution' would be more direct than 'conversion path to product catalog'",
+    "H3 'What changed' is generic — 'Old CTAs vs. new feature links' would be more searchable"
+  ],
+  "rewriteInstruction": "Trim to 180 words maximum by condensing H3 block 2 (remove the hypothesis sentence about when the structure works). Add bold quotes around every CTA mentioned. Rewrite the opening sentence to include a plain-language definition: 'Vercel replaced CTAs designed to push visitors toward a sale with ten product-feature links.' Anchor the change to a specific snapshot date in the first H3 block. In the second H3 block, attach a condition to the causal claim: 'filters out visitors IF they arrive without knowing which feature solves their problem.' Consider renaming H3 'What changed' to something more specific like 'Contact CTAs disappeared, feature links multiplied' to improve scannability and search visibility.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 12,
+    "plainLanguage": 14,
+    "scannability": 12,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

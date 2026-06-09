@@ -1,0 +1,44 @@
+{
+  "score": 62,
+  "pass": false,
+  "issues": [
+    "Violates 75-word cap (section is ~85 words)",
+    "Makes unsupported outcome claim: 'may lose those visitors before they scroll' — no bounce rate or conversion data in evidence",
+    "Makes unsupported causation claim: 'removing the category explanation may lose those visitors' — no A/B test data or attribution chain in evidence",
+    "Second sentence makes causal inference ('assumes visitors already understand') that cannot be traced to the evidence — this is interpretation presented as fact",
+    "Third sentence is a generic conditional warning that could appear in any teardown where a category explanation was removed",
+    "Not optimized for featured snippet extraction — contains a conditional warning clause that Google rarely features",
+    "Missing company name in searchable heading — heading is 'Quick answer' with no search terms"
+  ],
+  "requiredFixes": [
+    "Cut to 75 words maximum — current draft is ~85 words",
+    "Remove unsupported outcome claim 'may lose those visitors before they scroll' — replace with observable evidence only",
+    "Rewrite second sentence to report what changed, not what the company 'assumes' — trace to evidence: headline moved from category claim to identity appeal",
+    "Delete the entire third conditional sentence ('If your company still depends...') — it is generic SaaS commentary with zero anchor to Shopify evidence",
+    "Add company name 'Shopify' to the ## heading to make it searchable (e.g., 'Quick answer: Shopify homepage shift')",
+    "Restructure to three factual sentences that answer 'what changed' using only traceable evidence — no predictions, no conditionals, no generic warnings"
+  ],
+  "riskFlags": [
+    "HARD CAP TRIGGERED: Unsupported conversion outcome claim ('may lose those visitors') without data → cap total at 60",
+    "Causal claim without condition: 'removing the category explanation may lose those visitors' — presented as outcome, not hypothesis",
+    "Interpretive claim presented as fact: 'assumes visitors already understand' — this is analyst inference, not traceable to evidence",
+    "Generic paragraph: final sentence could appear word-for-word in a teardown of Webflow, HubSpot, or any SaaS that removed category positioning"
+  ],
+  "seoNotes": [
+    "Heading 'Quick answer' has no searchable terms — add company name or topic keyword",
+    "Section structure (claim → interpretation → conditional warning) is not optimized for featured snippet — Google prefers direct three-sentence answers with no conditionals",
+    "Draft length exceeds optimal featured snippet range (50–75 words) by ~10 words",
+    "Positive: Both verbatim quotes are properly formatted in bold"
+  ],
+  "rewriteInstruction": "Rewrite as three factual sentences, 50–75 words total. Sentence 1: Report the headline change using both verbatim quotes in bold. Sentence 2: Report one other observable change (meta description or page title). Sentence 3: State what remains constant or what was added (if anything). Remove all interpretation ('assumes', 'positioning'), all outcome predictions ('may lose visitors'), and all generic conditional warnings ('If your company...'). Trace every claim to the evidence. Add 'Shopify' to the ## heading. Make it sound like a journalist reporting changes, not a strategist advising founders.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

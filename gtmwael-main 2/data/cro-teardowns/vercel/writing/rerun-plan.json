@@ -1,38 +1,22 @@
 {
-  "createdAt": "2026-06-09T12:47:59.742Z",
+  "createdAt": "2026-06-09T19:11:03.012Z",
   "slug": "vercel",
   "source": {
     "finalJudgePass": true,
     "seoPass": true,
-    "finalJudgeScore": 93,
-    "seoScore": 0
+    "finalJudgeScore": 92,
+    "seoScore": 85
   },
   "sectionsToRerun": [
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 04-messaging-evolution: Add explicit founder takeaway at end of 'What changed in how Vercel expects visitors to arrive' H3 block",
-        "Should SaaS companies copy Vercel's homepage strategy?",
-        "The final H3 block 'The test before you copy' needs a more specific runnable test. Currently says 'Count how many words in your H1 assume the visitor already knows your category' but does not specify "
+        "Add a disclaimer after the 'Should SaaS companies copy Vercel's homepage strategy?' section clarifying that the article does not claim conversion rate improvements or ranking changes resulted from the",
+        "In the 'Who should NOT copy this' section, add a sentence acknowledging that Vercel's brand authority (funded, public recognition) may allow messaging clarity trade-offs that smaller SaaS companies ca",
+        "Clarify the meta description: 'frameworks, workflows, and infrastructure' — explain what these three categories represent in Vercel's product positioning, or the meta description will feel vague to re"
       ],
-      "priority": "high",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "reasons": [
-        "Judge rerun recommendation: 06-lessons-for-saas-teams: Strengthen the final test in 'The test before you copy' H3 block with specific threshold or action"
-      ],
-      "priority": "high",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "reasons": [
-        "Add explicit founder takeaways at the end of each H3 analytical block. Currently only 'How Vercel's CTA strategy shifted' has a clear actionable takeaway ('Audit your own page'). Other H3 blocks end w"
-      ],
-      "priority": "medium",
-      "source": "final-judge"
+      "priority": "low",
+      "source": "seo-audit"
     }
   ],
   "skippedIssues": []

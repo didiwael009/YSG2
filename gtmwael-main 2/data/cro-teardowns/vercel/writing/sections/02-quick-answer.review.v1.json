@@ -1,38 +1,44 @@
 {
-  "score": 62,
+  "score": 58,
   "pass": false,
   "issues": [
-    "Outcome claim without data: 'This positioning assumes visitors already understand what Vercel does' — no evidence provided for visitor knowledge state",
-    "Causal prescription without condition attachment: 'Companies whose visitors arrive without knowing the product category should not remove the workflow explanation' — presents as universal rule without qualifying condition",
-    "Word count violation: approximately 62 words total, but third sentence alone is ~35 words and reads as generic advice",
-    "Generic paragraph: final sentence could appear in any SaaS teardown — contains zero Vercel-specific evidence",
-    "Missing searchable terms in heading: 'Quick answer' contains no company name, 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
-    "Unsupported causation: 'assumes visitors already understand' claims a user mental state without evidence trace"
+    "HARD CAP TRIGGERED: Unsupported causation claim about visitor loss caps total at 60",
+    "Word count is ~72 words, exceeding the 50–75 target slightly but within tolerance",
+    "Core messaging change ('Develop.Preview.Ship.' → 'Build and deploy on the AI Cloud.') is quoted from evidence BUT lacks bold formatting",
+    "Second sentence makes an unsupported assumption claim: 'This assumes visitors already understand what Vercel does'",
+    "Third sentence contains an unsupported outcome claim: 'may lose visitors who need the page to explain what the product is'",
+    "The section does not answer the question the article title poses: 'How Vercel rewrote its homepage over 5 years'",
+    "The section treats a single headline change as representative of a 5-year, 5-snapshot evolution with 12 H2s added, 2 removed, 8 nav items added/removed",
+    "Heading contains company name (Vercel is implied by context) but lacks explicit searchable terms like 'homepage', 'messaging', or 'positioning'",
+    "Opening treats the change as directional (developer-first → AI positioning) without acknowledging the evidence note: 'No confirmed strategy is implied'",
+    "The draft could appear in any company's teardown that shifted from workflow language to AI positioning — lacks Vercel-specific grounding beyond the quoted headlines"
   ],
   "requiredFixes": [
-    "Remove or rewrite final sentence ('Companies whose visitors arrive...') — this is generic SaaS advice with no anchor to Vercel evidence",
-    "Add company name to heading: change '## Quick answer' to '## Quick answer: Vercel homepage' or similar searchable variant",
-    "Replace causation claim ('This positioning assumes...') with observable fact anchored to evidence, e.g. 'The new headline names the product category (AI Cloud) but drops the workflow explanation (Develop. Preview. Ship.)'",
-    "Attach condition to any prescriptive statement, or remove prescription entirely and stay descriptive"
+    "Bold-quote the verbatim headlines: **'Develop.Preview.Ship.'** and **'Build and deploy on the AI Cloud.'**",
+    "Remove or reframe the assumption claim ('This assumes visitors already understand...') — the evidence does not support inferring visitor knowledge state",
+    "Remove or reframe the outcome claim ('may lose visitors who need...') — no conversion data or user research provided to support this",
+    "Anchor the answer to the 5-year scope: the headline changed, the meta description reframed from 'best frontend developer experience' to 'frameworks, workflows, and infrastructure', and the navigation was overhauled (8 added, 8 removed)",
+    "Make the heading more searchable: change 'Quick answer' to 'Quick answer: Vercel homepage messaging changes' or 'Quick answer: Vercel homepage evolution'"
   ],
   "riskFlags": [
-    "Unsupported visitor knowledge claim: 'assumes visitors already understand what Vercel does' — no evidence for visitor state",
-    "Causal prescription: 'should not remove the workflow explanation' — presents as rule without attached condition or data anchor",
-    "Hard cap triggered: unsupported outcome claim caps total score at 60"
+    "CAUSATION CLAIM: 'Companies without that baseline recognition may lose visitors' — no conversion data, no user research, no A/B test results in evidence",
+    "ASSUMPTION CLAIM: 'This assumes visitors already understand what Vercel does' — the evidence provides no data on visitor knowledge state or intent signals",
+    "SCOPE MISMATCH: The answer focuses on one headline change; the evidence shows a 5-year evolution with major content architecture changes (12 H2s added, 2 removed), navigation overhaul (8 added, 8 removed), and meta description reframing"
   ],
   "seoNotes": [
-    "Heading lacks searchable terms — 'Quick answer' alone will not rank for target query terms",
-    "Draft does include company name and both quoted headlines in body, which supports snippet extraction",
-    "Three-sentence structure fits featured snippet format"
+    "NEGATIVE: Heading 'Quick answer' contains no searchable terms (company name, 'homepage', 'messaging', 'positioning', 'CTA', 'conversion')",
+    "POSITIVE: Answer structure is concise and could work for featured snippet extraction if causation claim is removed",
+    "NEGATIVE: Answer does not reflect the article title scope ('How Vercel rewrote its homepage over 5 years') — focuses only on headline change, not the broader rewrite",
+    "MISSED OPPORTUNITY: Meta description change ('best frontend developer experience' → 'frameworks, workflows, and infrastructure') is not mentioned, yet it is a searchable, quotable change"
   ],
-  "rewriteInstruction": "Stay entirely descriptive. Open with the observable change: Vercel replaced a workflow tagline with a cloud infrastructure value proposition. Second sentence: describe what disappeared and what appeared, using bold quotes for both headlines. Third sentence: anchor one specific implication to the evidence — e.g. 'The new headline names the product category but removes the three-step workflow frame, which means visitors who don't already know Vercel's function will need to scroll or navigate elsewhere to understand it.' Remove all prescriptive advice ('companies should...') and all claims about what Vercel assumes or intends. Add company name or searchable topic term to heading.",
+  "rewriteInstruction": "Rewrite to answer the question the article title poses: how did Vercel rewrite its homepage over 5 years? Open with the most significant change traceable to evidence — the headline shifted from **'Develop.Preview.Ship.'** to **'Build and deploy on the AI Cloud.'**, the meta description reframed from 'best frontend developer experience' to 'frameworks, workflows, and infrastructure', and the navigation was overhauled with 8 items added and 8 removed. Second sentence: state what this pattern shows (workflow-focused language → product-and-infrastructure framing). Third sentence: note that the evidence includes 5 snapshots and major content architecture changes (12 section headings added, 2 removed), signaling a shift in how the page structures its pitch. Remove all assumption claims about visitor knowledge state. Remove all outcome claims about losing visitors. Keep to 50–75 words. Bold-quote all verbatim website text. Make the heading searchable by adding 'Vercel homepage' or 'messaging'.",
   "dimensionScores": {
-    "evidenceAccuracy": 5,
-    "specificity": 8,
+    "evidenceAccuracy": 8,
+    "specificity": 6,
     "plainLanguage": 18,
     "scannability": 12,
-    "searchableHeadings": 5,
-    "rhythmAndOpening": 9,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 5,
     "founderTakeaway": 5
   },
   "effectivePassThreshold": 85

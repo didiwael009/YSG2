@@ -1,39 +1,46 @@
 {
-  "score": 76,
+  "score": 68,
   "pass": false,
   "issues": [
-    "The draft makes an unsupported causal claim: 'a choice that changes who the page speaks to and what outcome it promises' — the evidence shows what changed but does not confirm intention or outcome.",
-    "The phrase 'marks a clear repositioning' asserts strategy without evidence. The note explicitly states 'No confirmed strategy is implied.'",
-    "The final sentence promises to 'show what changed, what those changes signal' — but 'signal' implies interpretation beyond what the evidence supports.",
-    "Introduction exceeds 90 words (approximately 115 words).",
-    "The opening sentence does not directly answer the search query 'Crisp chat homepage teardown' — it describes one change but does not name the biggest shift.",
-    "Generic phrasing: 'how to check whether your homepage is still aligned with the buyer you're trying to reach' — could appear in any homepage teardown."
+    "Unsupported outcome claim: 'That shift signals a move from emotional differentiation to capability claims' — evidence shows only headline text change, no data on differentiation strategy or outcome.",
+    "Causal claim without condition: 'you'll know when to anchor your homepage on product capability instead of buyer identity' — no evidence supports this as a transferable decision framework.",
+    "Paragraph length 146 words — exceeds 90-word cap for intro by 56 words.",
+    "Strategist-to-strategist jargon: 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity' — all used without plain-language definitions.",
+    "Generic closing sentence: 'how to test whether your own audience will reward that trade' could appear in any SaaS teardown.",
+    "Invented interpretation: 'enterprise evaluation criteria' — evidence does not mention enterprise buyers or their criteria.",
+    "Invented interpretation: 'fits enterprise evaluation criteria' — no data traces to enterprise positioning.",
+    "Missing searchable term in heading: 'repositioned' is not in the target list (homepage, positioning, messaging, CTA, conversion) and 'Crisp chat' is only the keyword, not necessarily sufficient alone."
   ],
   "requiredFixes": [
-    "Remove or condition the claim 'a choice that changes who the page speaks to and what outcome it promises' — replace with observable fact: 'The shift replaces human-first language with AI-augmented support language.'",
-    "Replace 'marks a clear repositioning' with 'replaces the positioning frame' or 'shifts the messaging frame' to avoid asserting unconfirmed strategy.",
-    "Revise final sentence to remove generic buyer-alignment language. Replace with specific, runnable test tied to Crisp's evidence: e.g., 'This teardown shows what changed in the headline, meta description, and page title — and how to audit whether your homepage headline addresses a problem or describes your product.'",
-    "Cut introduction to 90 words or fewer. Remove redundant phrasing (e.g., 'The shift marks' + 'The page also shifted' can be consolidated).",
-    "Rewrite opening sentence to answer the search query directly: state the biggest shift first, not one specific element change."
+    "Remove or qualify the causal claim 'That shift signals a move from emotional differentiation to capability claims' — evidence shows only text change, not strategy or outcome.",
+    "Cut paragraph to 90 words maximum — currently 146 words.",
+    "Replace 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity' with plain-language equivalents or remove entirely.",
+    "Rewrite closing sentence to anchor on Crisp-specific evidence, not generic 'test whether your own audience will reward that trade'.",
+    "Add searchable term to heading: include 'homepage' or 'messaging' explicitly (not just 'repositioned').",
+    "Remove invented claim about 'enterprise evaluation criteria' — no evidence supports enterprise buyer focus."
   ],
   "riskFlags": [
-    "CAUSAL CLAIM WITHOUT CONDITION: 'a choice that changes who the page speaks to' — no evidence confirms audience impact.",
-    "OUTCOME CLAIM: 'what those changes signal' — interpretation is not supported by evidence notes.",
-    "STRATEGY ASSERTION: 'marks a clear repositioning' — evidence note explicitly says 'No confirmed strategy is implied.'"
+    "HARD CAP TRIGGERED: Unsupported outcome claim 'signals a move from emotional differentiation to capability claims' without data → total capped at 60.",
+    "HARD CAP TRIGGERED: Additional unsupported outcome claim 'fits enterprise evaluation criteria' → reinforces cap at 60.",
+    "Causal statement 'you'll know when to anchor your homepage on product capability instead of buyer identity' lacks attached condition (e.g. 'if your ICP matches Crisp's shift').",
+    "Invented interpretation: 'enterprise evaluation criteria' — evidence contains no mention of enterprise buyers or their criteria.",
+    "Invented interpretation: 'startup-friendly positioning' — evidence mentions 'startups' in meta description but does not confirm positioning strategy."
   ],
   "seoNotes": [
-    "POSITIVE: Heading includes 'Crisp Chat Homepage Teardown' and 'Messaging Platform' — searchable terms present.",
-    "POSITIVE: Company name and primary keyword ('Crisp chat') appear in the first sentence.",
-    "NEGATIVE: Opening sentence does not directly answer the search query — it describes one change rather than naming the biggest shift (which per evidence is the headline rewrite + AI repositioning + navigation overhaul)."
+    "Positive: Heading includes primary keyword 'Crisp chat' in natural context.",
+    "Positive: Heading includes topic terms 'homepage' and 'repositioned' (though 'repositioned' is not in target list).",
+    "Negative: Heading at 16 words is long — may truncate in SERPs.",
+    "Positive: First sentence answers search query (what changed at Crisp between dates).",
+    "Negative: Keyword 'Crisp chat' appears only once — could appear more naturally in body."
   ],
-  "rewriteInstruction": "Rewrite to 90 words or fewer. Open with a direct answer to the search query: state the biggest shift (headline rewrite + AI repositioning) in the first sentence. Remove all causal claims ('changes who the page speaks to', 'marks a clear repositioning', 'what those changes signal'). Replace with observable facts: what text changed, when, and what the new language emphasizes. Replace the generic final sentence with a specific test: e.g., 'how to check whether your homepage headline addresses a buyer problem or describes your product category.' Consolidate redundant phrasing. Ensure every claim traces to the evidence without asserting strategy or outcome.",
+  "rewriteInstruction": "Start over. First sentence: name Crisp, the period, and the single most visible change (headline rewrite). Cut the paragraph to 75–85 words. Remove all strategist terms: 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity'. Replace with plain descriptions of what the words literally say ('human touch' became 'AI-powered support'). Do not claim the shift 'signals' a strategy or outcome — stick to observable text changes. End with a one-sentence Crisp-specific takeaway, not a generic testing prompt. Add 'homepage' to the heading if 'repositioned' is kept, or replace 'repositioned' with 'homepage messaging shift' to ensure searchability.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
+    "evidenceAccuracy": 5,
     "specificity": 10,
-    "plainLanguage": 18,
-    "scannability": 10,
-    "searchableHeadings": 10,
-    "rhythmAndOpening": 8,
+    "plainLanguage": 8,
+    "scannability": 8,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 10,
     "founderTakeaway": 0
   },
   "effectivePassThreshold": 85

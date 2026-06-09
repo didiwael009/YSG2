@@ -1,48 +1,53 @@
 {
-  "score": 71,
+  "score": 68,
   "pass": false,
   "issues": [
-    "The headline 'Augment your customer experience. AI made to support your team & customers.' is missing bold quotes around the second sentence — only the first is bolded",
-    "Paragraph 1 ('What changed') is ~70 words — exceeds 60-word limit",
-    "Paragraph 2 ('Why it matters') is ~80 words — exceeds 60-word limit",
-    "Paragraph 3 ('What it costs') is ~85 words — exceeds 60-word limit",
-    "The phrase 'The page now speaks to buyers one decision deeper in the category' is a causal claim without supporting evidence — there is no data showing buyer stage or decision depth",
-    "The claim 'It may confuse visitors who are still comparing live chat platforms' is speculative conversion outcome without data",
-    "The phrase 'The page stopped framing the product as a way to preserve something human' is interpretive — the evidence shows a headline change, not a documented strategic reframe",
-    "The final test ('remove the word describing your category') is generic and could appear in any teardown — not anchored to Crisp-specific evidence",
-    "The opening sentence uses abstract nouns stacked together: 'product claim about style, not capability' — three abstract nouns in sequence",
-    "No mention of the meta description change, which is present in the evidence and supports the positioning shift observation",
-    "The section is 196 words — within limit but at the upper bound"
+    "Forbidden term 'category ownership' appears once — not penalised but flagged for awareness.",
+    "Forbidden term 'aspiration positioning' appears once — not penalised but flagged for awareness.",
+    "H3 'Why it matters' contains unsupported causal claim: 'This is positioning shift — when a company stops explaining its category and starts claiming ownership of a new one.' Evidence shows headline change only; no strategy document or confirmation that Crisp intended to 'claim ownership' of a new category.",
+    "H3 'Why it matters' contains unsupported causal claim: 'The visitor must now arrive believing that AI customer support is a real, mature category worth evaluating.' No visitor research, bounce rate data, or session recording evidence supports this requirement.",
+    "H3 'What it costs' contains outcome claim without data: 'Anyone arriving without prior belief in AI customer support will bounce before understanding what Crisp actually does.' No bounce rate, session duration, or conversion data provided to support this prediction.",
+    "H3 'What it costs' contains causal statement without condition: 'If they land on the page still asking 'what is this?', the headline will not answer that question.' This is presented as certainty rather than conditional ('may not answer').",
+    "Section heading 'Crisp homepage positioning: how the headline changed from 'human touch' to AI agent' is searchable (contains 'Crisp', 'homepage', 'positioning').",
+    "H3 'What changed' paragraph is 73 words — exceeds 60-word guideline.",
+    "H3 'Why it matters' paragraph is 79 words — exceeds 60-word guideline.",
+    "H3 'What it costs' paragraph is 71 words — exceeds 60-word guideline.",
+    "All three H3 blocks exceed 60 words, reducing scannability.",
+    "Founder takeaway is present in H3 'What it costs' but appears in sentence 3, not the first two sentences.",
+    "The opening sentence of H3 'What changed' is descriptive but does not reflect the most interesting finding — the shift from explanation to expectation.",
+    "Section contains generic commentary that could appear in other teardowns: 'This is positioning shift — when a company stops explaining its category and starts claiming ownership of a new one.' This sentence defines a concept rather than analysing Crisp's specific evidence.",
+    "Section contains generic commentary: 'If not, you are trading explanation for aspiration — and that only pays off when your brand already does the explanation work.' This could apply to any SaaS company.",
+    "Total word count: approximately 230 words — exceeds 200-word upper limit by 30 words."
   ],
   "requiredFixes": [
-    "Bold both sentences of the current headline: **'Augment your customer experience. AI made to support your team & customers.'**",
-    "Break paragraph 1 into two parts at the sentence starting 'The page stopped framing...' to get both under 60 words",
-    "Break paragraph 2 into two parts at the sentence starting 'It may confuse visitors...' to get both under 60 words",
-    "Break paragraph 3 into two parts at the sentence starting 'If a visitor does not yet believe...' to get both under 60 words",
-    "Remove or rewrite the claim 'The page now speaks to buyers one decision deeper in the category' — no evidence supports this buyer-stage diagnosis",
-    "Remove or condition the claim 'It may confuse visitors who are still comparing live chat platforms' with 'if [condition]' or remove the conversion implication entirely",
-    "Replace the final test with a Crisp-specific action: 'Open the current Crisp homepage and count how many times 'AI' appears before any explanation of what the platform does. If the count is above 3, the page assumes AI literacy.'",
-    "Rewrite the opening clause 'a product claim about style, not capability' to avoid three stacked abstract nouns — use concrete language instead"
+    "Remove or rewrite all unsupported causal claims in H3 'Why it matters'. Replace 'The visitor must now arrive believing…' with conditional phrasing: 'If a visitor arrives without prior familiarity with AI support platforms, the headline may leave them unclear on what Crisp does.'",
+    "Remove outcome prediction in H3 'What it costs' ('Anyone arriving without prior belief… will bounce'). Replace with conditional: 'A visitor unfamiliar with AI support may leave unclear on what Crisp does.'",
+    "Move the practical takeaway in H3 'What it costs' to the first two sentences. Current test instruction appears in sentence 3.",
+    "Reduce all three H3 paragraphs to 60 words or under. Current: 73, 79, 71 words respectively.",
+    "Remove generic commentary sentence: 'This is positioning shift — when a company stops explaining its category and starts claiming ownership of a new one.' Replace with Crisp-specific observation anchored to the evidence.",
+    "Remove generic sentence: 'If not, you are trading explanation for aspiration — and that only pays off when your brand already does the explanation work.' Make the founder test more specific to Crisp's evidence.",
+    "Reduce total section word count from ~230 to 140–200 words."
   ],
   "riskFlags": [
-    "'The page now speaks to buyers one decision deeper in the category' — no evidence of buyer stage or decision sequencing in the data",
-    "'It may confuse visitors who are still comparing live chat platforms' — speculative conversion outcome without data",
-    "'The page stopped framing the product as a way to preserve something human' — this reads as a strategic interpretation, not a traceable observation from the evidence"
+    "UNSUPPORTED CAUSAL CLAIM: 'This is positioning shift — when a company stops explaining its category and starts claiming ownership of a new one.' Evidence shows headline change only; no strategy confirmation.",
+    "UNSUPPORTED OUTCOME CLAIM: 'Anyone arriving without prior belief in AI customer support will bounce before understanding what Crisp actually does.' No bounce rate or session data provided.",
+    "UNSUPPORTED CAUSAL CLAIM: 'The visitor must now arrive believing that AI customer support is a real, mature category worth evaluating.' No visitor research evidence.",
+    "CAUSAL STATEMENT WITHOUT CONDITION: 'If they land on the page still asking 'what is this?', the headline will not answer that question.' Presented as certainty, not conditional."
   ],
   "seoNotes": [
-    "The ## heading includes 'Crisp homepage positioning' and 'headline' — both searchable terms, plus the company name — strong for search intent",
-    "The draft does not reference the meta description change, which contains the keyword shift from 'Business Messaging Platform' to 'AI Customer Support Platform' — a missed SEO angle",
-    "The section does not mention the page title change from '#1 Business Messaging Platform For Startups & SMB's' to 'The AI Customer Support Platform for Every Business' — this is a category repositioning signal that would strengthen the section and add searchable keywords"
+    "Section heading is searchable: contains 'Crisp', 'homepage', 'positioning' — good for Google visibility.",
+    "H3 headings ('What changed', 'Why it matters', 'What it costs') are generic and non-searchable — consider adding topic terms like 'headline' or 'messaging'.",
+    "Bold quotes applied correctly to all verbatim website text."
   ],
-  "rewriteInstruction": "You are rewriting the 'What changed' section of a Crisp homepage teardown. The current draft exceeds the 60-word paragraph limit in all three H3 blocks, contains speculative conversion claims ('may confuse visitors', 'speaks to buyers one decision deeper') without supporting data, and ends with a generic test that could appear in any teardown. Fix: (1) Break each paragraph into two sub-paragraphs to get under 60 words. (2) Replace 'The page now speaks to buyers one decision deeper' with a conditional observation tied to the evidence: 'If a visitor does not yet know they need AI support tools, the headline no longer explains why they might.' (3) Replace the final test with a Crisp-specific action: 'Open the current Crisp homepage and count how many times AI appears before the page explains what customer support problem it solves. If the count is 3+, the page assumes the visitor already decided to adopt AI.' (4) Add one sentence referencing the meta description shift from 'Business Messaging Platform for Startups & SMB's' to 'AI-powered multichannel messaging platform' — it reinforces the positioning change and adds a searchable keyword. (5) Bold both sentences of the current headline. (6) Remove abstract noun stacks like 'product claim about style, not capability' — use concrete phrasing instead.",
+  "rewriteInstruction": "Rewrite all three H3 blocks to 60 words or under. Remove the unsupported causal claims in 'Why it matters' (no evidence Crisp intended to 'claim category ownership') and the outcome prediction in 'What it costs' (no bounce data). Replace with conditional phrasing: 'If a visitor arrives unfamiliar with AI support platforms, the headline may leave them unclear.' Move the founder test to the first two sentences of 'What it costs'. Remove the two generic sentences ('This is positioning shift…' and 'If not, you are trading explanation for aspiration…') and replace with Crisp-specific observations anchored to the quoted evidence. Cut total section to 140–200 words. Each H3 block must deliver its takeaway in the opening two sentences.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
-    "specificity": 11,
-    "plainLanguage": 14,
+    "evidenceAccuracy": 5,
+    "specificity": 7,
+    "plainLanguage": 16,
     "scannability": 3,
-    "searchableHeadings": 10,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 0
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

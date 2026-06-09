@@ -1,7 +1,15 @@
-## Shopify's homepage stopped explaining what it is and started recruiting who you want to be
+## Shopify's homepage headline: from category claim to identity statement
 
-The 2021 headline named what the product was: **"The platform commerce is built on."** The current headline — **"Be the nextAI all-star"** — only works if the visitor already believes AI matters in commerce, wants to identify as an all-star, and sees those two claims as connected. This is aspiration positioning: the page recruits an identity instead of explaining a category.
+### What changed
 
-The section headings follow the same pattern. **"Bring your business online"** and **"Take the best path forward"** addressed discovery-stage concerns — whether to start, which direction to choose. The new headings — **"Your brand has entered the chat"** and **"Meet your secret weapon, Sidekick"** — address tool selection for visitors who have already started. The shift suggests Shopify now assumes AI fluency and ambition are baseline visitor attributes rather than outcomes to promise.
+In 2021, Shopify opened with **"The platform commerce is built on"** — a statement that names the product category before making any other claim. The current homepage leads with **"Be the nextAI all-star"** — a statement about who the visitor might become. The category reference disappeared entirely.
 
-The homepage trades accessibility — reaching visitors who don't yet know if AI matters — for alignment with visitors who already identify as ambitious and AI-forward. Shopify's shift suggests they have the branded traffic to support this. Open your analytics. If more than 60% of your homepage traffic is non-branded search or paid cold traffic, positioning that assumes pre-existing belief may be ahead of your audience.
+### Why it matters
+
+The new headline assumes the visitor already knows Shopify sells e-commerce software. This shift reflects category leadership (a brand so familiar it can skip explaining what it does and focus on who the buyer becomes).
+
+If a visitor arrives without recognizing the brand, an identity-focused headline like this one risks leaving them uncertain about what product they are looking at.
+
+### What it costs
+
+The current page trades category clarity for identity appeal — a trade-off that works only if the visitor already knows what Shopify sells. Open your homepage in an incognito window and count how many section headings or subheadings name your product category in the first screenful. Shopify removed all three category-naming headings between 2021 and 2026: **"Bring your business online"**, **"Take the best path forward"**, and **"With you wherever you're going"** are gone.

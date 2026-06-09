@@ -1,3 +1,3 @@
 ## Quick answer
 
-Crisp shifted from positioning itself as a messaging platform for startups and SMBs to an AI-powered customer support platform for every business. This positioning assumes visitors already understand what a customer support platform does and why AI matters in that context. Companies still introducing their category to visitors may lose clarity by leading with AI before explaining what the product actually replaces.
+Crisp replaced a human-centered value proposition (**"Give your customer experience a human touch"**) with an AI-augmented support message (**"Augment your customer experience. AI made to support your team & customers"**). This positioning assumes visitors already understand what customer messaging platforms do and are now evaluating AI-enabled tools. Companies whose visitors still need to understand the product category before comparing features should not use AI-first positioning as their homepage anchor.

@@ -1,37 +1,45 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 71,
+  "pass": false,
   "issues": [
-    "The final H3 block ('What this means for the sales process') makes an unsupported causal claim: 'The shift from workflow description to category claim suggests Vercel expects visitors to arrive with context.' The evidence shows only what changed, not why or what Vercel expects.",
-    "The phrase 'intentionally or not' in the final H3 implies Vercel may have made a strategic mistake without evidence supporting that interpretation.",
-    "The term 'category claim' appears twice without a plain-language definition on first use.",
-    "The opening sentence of the first H3 ('Who the old page served') does not deliver the practical takeaway in the first two sentences — it describes the audience before explaining what the takeaway is.",
-    "The final test ('Open your homepage in an incognito window...') is runnable but generic — it could appear in any company's teardown about headline clarity."
+    "Paragraph 1 (H3 'Who the old page served') is 51 words — acceptable but close to cap",
+    "Paragraph 2 (H3 'Who the new page serves') is 48 words — acceptable",
+    "Paragraph 3 (H3 'What this means for the sales process') is 63 words — VIOLATES 60-word cap",
+    "Section word count is approximately 162 words — within 140–200 range",
+    "Missing bold quotes around 'frameworks, workflows, and infrastructure' — appears in plain quotes only",
+    "Generic multi-company paragraph: 'If your headline does the same, check what your visitor knows before they land. A multi-capability headline works when buyers arrive already comparing platforms.' — could appear in any teardown",
+    "Causal claim without condition: 'A multi-capability headline works when buyers arrive already comparing platforms' — implies conversion outcome without data",
+    "Final takeaway is generic audit instruction ('Does your page assume the visitor knows what category you compete in?') instead of a specific 5-minute test anchored to Vercel's evidence",
+    "Heading includes 'Vercel' and 'messaging' — meets searchable requirement",
+    "All three required H3 sub-blocks present",
+    "H3 'What this means for the sales process' buries the takeaway — question appears in sentence 3, not sentences 1–2"
   ],
   "requiredFixes": [
-    "Remove or condition the causal claim in the final H3: change 'suggests Vercel expects visitors to arrive with context' to 'filters for visitors who already recognize the platform type' (which is observable from the evidence).",
-    "Delete 'intentionally or not' — the evidence does not support intent assessment.",
-    "On first use of 'category claim', add a plain-language definition in the same sentence: 'category claim — naming the type of product rather than describing what it does'.",
-    "Move the practical takeaway to the first sentence of 'Who the old page served': start with what the reader should notice (workflow-stage language vs. benefit language), then anchor it to Vercel's specific evidence."
+    "Shorten final H3 paragraph from 63 words to under 60 words",
+    "Change plain quotes around 'frameworks, workflows, and infrastructure' to **bold quotes**",
+    "Remove generic multi-company sentence: 'If your headline does the same, check what your visitor knows before they land.' Replace with Vercel-specific observation",
+    "Rewrite causal claim 'A multi-capability headline works when buyers arrive already comparing platforms' to conditional phrasing: 'A multi-capability headline may work IF your traffic arrives already comparing platforms'",
+    "Replace generic audit question ('Does your page assume...') with specific 5-minute test: 'Open your homepage meta description. Count how many capability categories it lists. If you list 3+, check Google Search Console: what % of your traffic arrives on branded vs. category terms?'",
+    "Move the practical takeaway to sentences 1–2 of the final H3 block"
   ],
   "riskFlags": [
-    "The shift from workflow description to category claim suggests Vercel expects visitors to arrive with context. — This is a causation claim ('suggests Vercel expects') without direct evidence of intent or visitor behavior.",
-    "'intentionally or not' implies Vercel may have made an unintended mistake — no evidence supports this."
+    "Causal conversion claim without data: 'A multi-capability headline works when buyers arrive already comparing platforms' — no evidence provided that this headline structure drives conversion",
+    "Unsupported outcome claim: 'The page now speaks to visitors evaluating platform capabilities' — infers visitor behaviour from headline text without traffic data or survey evidence"
   ],
   "seoNotes": [
-    "The ## heading contains 'Vercel', 'homepage', and 'messaging' — fully searchable.",
-    "The H3 subheadings ('Who the old page served', 'Who the new page serves', 'What this means for the sales process') are readable but lack searchable terms like 'developer', 'AI platform', or 'positioning' — moderate SEO weakness.",
-    "The section does not use keyword-stuffed language, which is good for readability and avoids over-optimization penalties."
+    "Section heading includes 'Vercel' and 'messaging' — meets searchable requirement",
+    "Draft correctly quotes verbatim headline changes",
+    "Meta description quoted but not in bold — violates formatting requirement"
   ],
-  "rewriteInstruction": "Remove the unsupported causal claim about what Vercel 'expects' and replace it with an observable effect ('filters for visitors who...'). Delete 'intentionally or not'. Define 'category claim' on first use. Reorder the first H3 to lead with the practical takeaway (what the reader should notice about workflow-stage language) before anchoring it to Vercel's evidence. Make the final test more specific: instead of 'Open your homepage in an incognito window', suggest a test anchored to Vercel's specific shift — e.g., 'Replace your headline with a three-stage workflow phrase (like 'Develop. Preview. Ship.') and compare clarity to your current category-naming headline.'",
+  "rewriteInstruction": "Shorten the final H3 paragraph to under 60 words. Move the practical takeaway to the first sentence. Replace the generic audit question with a specific 5-minute test anchored to Vercel's evidence: count how many capability categories the meta description lists, then check what percentage of traffic arrives on branded vs. category search terms. Remove the generic sentence 'If your headline does the same...' — it could appear in any company's teardown. Add conditional phrasing to the causal claim about multi-capability headlines: 'may work IF your traffic arrives already comparing platforms'. Change plain quotes around 'frameworks, workflows, and infrastructure' to **bold quotes**. The section must remain Vercel-specific throughout — zero sentences that could appear word-for-word in a different company's teardown.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "specificity": 13,
-    "plainLanguage": 17,
-    "scannability": 15,
-    "searchableHeadings": 8,
-    "rhythmAndOpening": 10,
-    "founderTakeaway": 5
+    "evidenceAccuracy": 18,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 8,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

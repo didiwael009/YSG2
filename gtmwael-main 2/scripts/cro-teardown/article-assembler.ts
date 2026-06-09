@@ -180,6 +180,28 @@ export function assembleArticle(opts: AssemblerOpts): AssemblerResult {
     sectionBodies[sectionId] = content;
   }
 
+  // ── Detect duplicate H2 headings ──────────────────────────────────────────
+  // A duplicate H2 means two sections produced the same heading text, which
+  // causes confusing repeated section titles in the published article.
+  const headingTexts = blocks
+    .map(b => b.split('\n')[0])
+    .filter(line => line.startsWith('## '));
+  const seenHeadings = new Set<string>();
+  const duplicateHeadings: string[] = [];
+  for (const h of headingTexts) {
+    const normalised = h.trim().toLowerCase();
+    if (seenHeadings.has(normalised)) {
+      duplicateHeadings.push(h.trim());
+    } else {
+      seenHeadings.add(normalised);
+    }
+  }
+  if (duplicateHeadings.length > 0) {
+    console.warn(`⚠️   Duplicate H2 headings detected — review sections before publishing:`);
+    for (const d of duplicateHeadings) console.warn(`    • ${d}`);
+    console.warn('    Duplicate headings are a sign that two writers generated the same section or the cross-section pass merged sections incorrectly.');
+  }
+
   // ── Build the full document ────────────────────────────────────────────────
   const headerLines: string[] = [];
   headerLines.push(`# ${h1}`);

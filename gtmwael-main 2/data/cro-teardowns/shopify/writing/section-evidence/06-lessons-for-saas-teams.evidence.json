@@ -13,7 +13,7 @@
     "titleChanged": true,
     "snapshotCount": 3,
     "h2Added": 5,
-    "h2Removed": 8,
+    "h2Removed": 7,
     "ctaAdded": 10,
     "ctaRemoved": 10,
     "navAdded": 8,
@@ -21,26 +21,31 @@
     "visualOnly": false,
     "hasMidTransition": false
   },
+  "primaryKeyword": "Shopify landing page",
   "lesson-cards": [
     {
-      "title": "Your H1 signals which buyer you are targeting",
-      "body": "The headline changed from \"The platform commerce is built on\" to \"Be the nextAI all-star\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
-      "tag": "Messaging"
+      "number": "01",
+      "title": "Shopify replaced \"The platform commerce is built on\" with \"Be the next AI all-star\"",
+      "category": "Messaging",
+      "body": "The original headline positioned Shopify as infrastructure. The new headline positions the *buyer* as a future success story. This shift likely signals a move from product-focused messaging to identity-focused messaging — the page now recruits people who want to be seen as innovators, not just people who need ecommerce tools. The meta description reinforces this: **\"Build or grow your business fast with AI\"** now appears before any mention of ecommerce software."
     },
     {
-      "title": "Navigation is a positioning statement",
-      "body": "Navigation items changed from \"Start your business\", \"Business name generator\", \"Web address\" to \"Website Builder\", \"Domains\", \"Customer Accounts\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
-      "tag": "Navigation"
+      "number": "02",
+      "title": "10 \"Explore\" and \"Start your business\" CTAs removed — 10 \"Start for free\" and feature-specific CTAs added",
+      "category": "Navigation",
+      "body": "Shopify removed every CTA that contained **\"Explore\"** or **\"Start your business\"**. The new CTAs are action-oriented and feature-specific: **\"Get a stunning store\"**, **\"Website Builder\"**, **\"AI Chats\"**. This suggests a shift from discovery-friendly navigation (good for researchers) to conversion-optimised navigation (good for buyers who already know they want Shopify). The page now filters more aggressively — it assumes you are here to start, not to learn."
     },
     {
-      "title": "Section headings reveal what the team thinks buyers care about",
-      "body": "5 section headings were added and 8 removed between Jul 2021 and Jun 2026. New headings include \"store they line up for\" and \"Your brand has entered the chat\". Headings that disappeared include \"Bring your business online\" and \"Take the best path forward\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
-      "tag": "CRO"
+      "number": "03",
+      "title": "\"Your brand has entered the chat\" and \"Meet your secret weapon, Sidekick\" are not ecommerce section headings",
+      "category": "Positioning",
+      "body": "The original section headings were operational: **\"Bring your business online\"**, **\"Take the best path forward\"**. The new headings are cultural: **\"Your brand has entered the chat\"**, **\"store they line up for\"**. These are not instructions — they are aspiration statements. The page no longer explains what Shopify does in every heading. Instead, it describes the world you join when you use it. This is a brand-first content structure, not a product-first one."
     },
     {
-      "title": "Incremental changes compound into a brand shift",
-      "body": "Across 3 snapshots spanning roughly 5 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
-      "tag": "Strategy"
+      "number": "04",
+      "title": "Shopify overhauled 16 navigation items and 12 section headings — the evolution signals a sales-motion change",
+      "category": "Strategy",
+      "body": "When a company changes this much surface area — 16 CTAs, 12 section headings, the H1, the meta description — it is not a refresh. It is a repositioning. The original page served people starting a business for the first time. The new page serves people who already identify as builders or entrepreneurs and want to move fast. The evidence suggests Shopify may be optimising for higher-intent traffic and accepting lower conversion rates from casual visitors."
     }
   ],
   "summary-cards": [
@@ -56,7 +61,7 @@
     },
     {
       "label": "Section headings",
-      "value": "5 added · 8 removed",
+      "value": "5 added · 7 removed",
       "note": "Major content architecture overhaul"
     },
     {

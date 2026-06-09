@@ -1,22 +1,22 @@
 [
   {
-    "title": "Your H1 signals which buyer you are targeting",
-    "body": "The headline changed from \"Global Payments\" to \"Financial infrastructure to grow your revenue. Accept paymen...\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+    "title": "A two-word headline qualifies fast; a 34-word headline builds a bigger promise",
+    "body": "\"Global Payments\" told a visitor exactly what Stripe sold in two words — fast qualification, narrow scope. The current headline runs 34 words and names payments, financial services, and revenue models across company lifecycle stages. The tradeoff: a broader promise attracts a wider buyer, but requires significantly more proof below the fold to hold attention.",
     "tag": "Messaging"
   },
   {
-    "title": "Navigation is a positioning statement",
-    "body": "Navigation items changed from \"Payments Online payments\", \"Checkout Pre-built payments page\", \"Elements Customizable payments UIs\" to \"Guide me\", \"Start now\", \"Contact sales\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
-    "tag": "Navigation"
-  },
-  {
-    "title": "Section headings reveal what the team thinks buyers care about",
-    "body": "5 section headings were added and 4 removed between Oct 2022 and Jun 2026. New headings include \"Flexible solutions for every business model.\" and \"The backbone of global commerce\". Headings that disappeared include \"Unified platform\" and \"Designed for developers\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+    "title": "Removing \"Designed for developers\" is a signal about who you're optimizing for",
+    "body": "\"Designed for developers\" was a section heading in 2022; it's gone by 2026. That removal — alongside new headings like \"The backbone of global commerce\" — suggests the page shifted from technical differentiation to business-outcome framing. If developers are still your primary buyer, removing that signal may lose them before they scroll.",
     "tag": "CRO"
   },
   {
-    "title": "Incremental changes compound into a brand shift",
-    "body": "Across 5 snapshots spanning roughly 4 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+    "title": "Replacing explicit CTAs with a single \"Get started\" removes buyer self-segmentation",
+    "body": "\"Contact Sales\" and \"Become a Partner\" were visible forks that let visitors route themselves. Replacing them with a unified \"Get started\" reduces decision friction but removes self-segmentation. The qualification work moves downstream — into onboarding or SDR follow-up — which only scales if your post-signup process can handle the mix.",
+    "tag": "Navigation"
+  },
+  {
+    "title": "\"Financial infrastructure\" competes differently than \"payments platform\"",
+    "body": "The old page title named a category: \"Payment Processing Platform for the Internet.\" The new one names an outcome: \"Financial Infrastructure to Grow Your Revenue.\" That shift moves Stripe from a checkout comparison (vs. Braintree, PayPal) into a platform evaluation (vs. Adyen, treasury vendors). Same product, different competitive set — and different buyers reading the page.",
     "tag": "Strategy"
   }
 ]

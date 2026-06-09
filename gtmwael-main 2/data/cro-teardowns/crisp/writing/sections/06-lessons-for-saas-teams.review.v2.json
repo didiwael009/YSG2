@@ -1,42 +1,44 @@
 {
-  "score": 72,
+  "score": 71,
   "pass": false,
   "issues": [
-    "No verbatim quotes from the homepage are in **bold quotes** — required formatting missing throughout",
-    "Section heading is clever-only ('Should SaaS companies copy Crisp's homepage strategy?') and lacks searchable terms like 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion' combined with the company name",
-    "Paragraph 1 ('The pattern' block) is ~77 words — exceeds 60-word limit",
-    "Paragraph 2 ('Who should copy this' block) is ~67 words — exceeds 60-word limit",
-    "Paragraph 3 ('Who should NOT copy this' block) is ~61 words — exceeds 60-word limit",
-    "Multiple causal claims lack conditions: 'likely because the visitor arriving at the page changed' (no evidence for causation), 'Crisp can afford to add navigation complexity because...' (causation without attached condition)",
-    "Generic SaaS commentary present: 'The test is not traffic volume' and 'The risk is not aesthetic' could appear in any teardown",
-    "Final test ('The test before you copy' block) is not specific enough — asks founder to 'check whether your current headings still define the tool category' without anchoring to Crisp's specific evidence (which H2s were removed, what they said)"
+    "Section heading is 'clever-only' with no searchable terms — missing 'Crisp', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "Multiple conversion/causation claims without data: 'may cost pipeline' (H3#3), 'will leave or misunderstand' (H3#3), 'you cannot afford to narrow yet' (H3#4)",
+    "Causal statements without attached conditions: 'you remove context without replacing it' appears as certainty, not conditional",
+    "H3#3 paragraph 2 exceeds 60 words (approximately 68 words)",
+    "H3#1 buries the practical takeaway — opening sentence is a data summary, not a decision insight",
+    "Generic paragraphs not anchored to Crisp specifics: H3#2 paragraph 2 reads like general advice ('If your product category is already clear from your domain name...'), H3#3 paragraph 2 ('Visitors who land without knowing what your product does will leave...'), H3#4 opening ('Open your analytics. Filter homepage visits...')",
+    "Word count approximately 280 — exceeds 260-word maximum"
   ],
   "requiredFixes": [
-    "Add the company name 'Crisp' to the ## section heading and include a searchable term: e.g. 'Crisp homepage navigation strategy: when adding complexity works'",
-    "Break each H3 block into two shorter paragraphs (30–40 words each) to meet the 60-word scannability limit",
-    "Remove or condition all causal claims: replace 'likely because the visitor arriving at the page changed' with 'The timing coincides with [specific brand signal from evidence], which suggests...'",
-    "Rewrite the final test to be specific and runnable: 'Open your homepage. Count H2 headings that include the words 'what is' or define your tool category. If you count 3+, you still need them — Crisp removed exactly 3.'",
-    "Remove generic commentary that could appear in any teardown: cut 'The test is not traffic volume' and 'The risk is not aesthetic' — replace with Crisp-specific detail from the evidence"
+    "Rewrite section heading to include 'Crisp' + 'homepage' or 'positioning' (e.g., 'Crisp homepage positioning: When narrowing your headline works and when it backfires')",
+    "Remove or condition all unsupported causation claims: 'may cost pipeline' → 'could reduce visitor clarity if [condition]'; 'will leave' → 'may leave if they cannot identify the product category within 3 seconds'",
+    "Shorten H3#3 paragraph 2 to under 60 words by splitting or trimming",
+    "Move practical insight to the opening of H3#1: start with 'This pattern signals a trade-off: narrower hero, deeper navigation' before reciting the data",
+    "Anchor generic paragraphs to Crisp evidence: H3#2 should reference Crisp's domain ('crisp.chat') or branded search volume; H3#3 should cite specific Crisp nav additions by name or count; H3#4 should reference Crisp's actual traffic mix if known, or frame as conditional ('If your traffic resembles Crisp's branded mix...')",
+    "Cut 20–30 words to reach 260-word target"
   ],
   "riskFlags": [
-    "'likely because the visitor arriving at the page changed' — causation claim with no evidence that visitor profile changed",
-    "'Crisp can afford to add navigation complexity because the page no longer has to explain the tool type itself' — causation without condition or evidence",
-    "'you may have the brand recognition this requires' — outcome claim not traceable to provided evidence"
+    "'copying Crisp's approach may cost pipeline' — conversion outcome claim without data",
+    "'Visitors who land without knowing what your product does will leave or misunderstand your positioning' — behavioral certainty without evidence",
+    "'you cannot afford to narrow yet' — absolute claim without supporting threshold data",
+    "'you remove context without replacing it' — causal statement presented as certainty, not conditional"
   ],
   "seoNotes": [
-    "NEGATIVE: Section heading lacks the company name and any searchable topic term — will not rank for 'Crisp homepage' or related queries",
-    "POSITIVE: H3 subheadings ('The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy') provide clear decision-support structure",
-    "NEGATIVE: No verbatim homepage quotes in bold — missed opportunity to show Google the page analyzes real evidence"
+    "Section heading fails searchability test — contains no brand name, no 'homepage', no 'positioning', no 'messaging', no 'CTA', no 'conversion'",
+    "H3 headings are functional ('The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy') but not independently searchable — consider inserting 'Crisp' or 'homepage' into at least two H3s",
+    "Positive: repeated mention of 'homepage' and 'navigation' inside body paragraphs supports semantic relevance",
+    "Positive: numbered evidence (**6 new section headings**, **8 navigation items**) creates scannable anchor points"
   ],
-  "rewriteInstruction": "Add 'Crisp' and 'homepage navigation' to the section heading. Break every paragraph over 60 words into two shorter blocks. Remove all causal claims ('because', 'likely because') unless you attach a condition ('if X, then Y'). Replace generic phrases ('The test is not traffic volume', 'The risk is not aesthetic') with specific Crisp evidence — quote the exact nav items added or H2s removed. Rewrite the final test to be a 5-minute action anchored to Crisp's numbers: 'Count your H2s that define the tool category. Crisp removed exactly 3. If you still have 3+, keep them.' Every claim must trace to the provided evidence or be cut.",
+  "rewriteInstruction": "Rewrite the section heading to include 'Crisp homepage' or 'Crisp positioning'. In H3#1, open with the strategic insight ('This pattern signals a trade-off between hero clarity and navigation depth') before listing the data. Remove all unsupported causation claims ('may cost pipeline', 'will leave', 'cannot afford') — replace with conditional phrasing tied to observable conditions ('if visitors cannot identify your product category in 3 seconds' or 'if your nav has fewer than 5 options'). Anchor every generic paragraph to Crisp specifics: in H3#2, reference 'crisp.chat' or branded search; in H3#3, name the 8 nav items added; in H3#4, cite Crisp's traffic mix or frame as 'if your traffic resembles Crisp's'. Shorten H3#3 paragraph 2 to under 60 words by splitting after 'positioning.' Cut 20 words total to reach 260. Ensure each H3 block delivers its practical takeaway in the first sentence, not buried after setup.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "specificity": 10,
+    "evidenceAccuracy": 10,
+    "specificity": 8,
     "plainLanguage": 18,
-    "scannability": 6,
-    "searchableHeadings": 3,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 5
+    "scannability": 9,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

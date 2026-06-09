@@ -2,44 +2,45 @@
   "score": 68,
   "pass": false,
   "issues": [
-    "Final H3 block contains unsupported causation claim: 'This suggests Crisp may now rely more on demos or sales conversations than instant self-serve signups' — no evidence provided for sales process change",
-    "Forbidden term 'buyer' used 4 times in plain text (not as quote) without plain-language explanation — violates jargon rule",
-    "Second paragraph in H3 'Who the new page serves' is 65 words, exceeds 60-word limit for analytical section body paragraphs",
-    "Final H3 'What this means for the sales process' makes outcome claims without data: 'may now rely more on demos' is speculative inference",
-    "Final test question is generic ('Does your homepage assume...') instead of specific runnable test anchored to Crisp's evidence",
-    "Paragraph 1 of 'Who the new page serves' could appear in any SaaS teardown: 'speaks to buyers who already know they need a customer support platform' — not specific to Crisp",
-    "Section contains causal statement without attached condition: 'The focus shifted to platform capabilities' presented as fact without 'if X' qualifier"
+    "Final paragraph contains unsupported causal claim: 'less friction to start the trial, more friction to understand whether Crisp fits' — no trial friction data or visitor understanding metrics provided in evidence",
+    "Outcome claim in final paragraph: 'The page no longer tries to close a self-serve signup on the spot' — implies conversion intent change without supporting data",
+    "Second H3 paragraph exceeds 60 words (approximately 65 words)",
+    "Third H3 paragraph exceeds 60 words (approximately 75 words)",
+    "Final H3 block buries the takeaway — practical insight appears only in the last sentence, not the first two",
+    "Generic commentary: 'This is vocabulary for a buyer who needs to be convinced to start' could appear in any SaaS teardown",
+    "Generic commentary: 'This reads like positioning for a buyer who is comparing vendors' is boilerplate category analysis",
+    "Causal statement without condition: 'less friction to start the trial, more friction to understand' — no 'if [condition]' attached",
+    "Section heading lacks company name ('Crisp messaging shifted' vs. 'Crisp's messaging shifted' — passes by minimal margin but weak for search)",
+    "Word count approximately 185 words — within acceptable range but on high end"
   ],
   "requiredFixes": [
-    "Remove or support the claim 'This suggests Crisp may now rely more on demos or sales conversations' — no evidence in the dataset for sales process changes",
-    "Replace 'buyers' with plain-language descriptions: 'founders', 'teams shopping for', 'people evaluating' — or define it once and use pronouns thereafter",
-    "Split second paragraph of 'Who the new page serves' into two paragraphs at 'The meta description...' to respect 60-word limit",
-    "Replace final generic question with specific test: 'Open your homepage in incognito. Count how many CTAs require zero commitment (free trial, demo request). If all require signup, you are filtering for high-intent visitors only.'",
-    "Anchor 'Who the new page serves' opening to Crisp-specific evidence: quote the exact positioning shift ('AI-powered multichannel' vs 'Business Messaging Platform') instead of generic 'buyers who already know'",
-    "Remove exclamation marks from evidence quotes — they are editorial additions not present in source: '14 Days free trial. No credit-card required. Try now' should end with period",
-    "Add condition to causal shift statement: 'The focus shifted to platform capabilities — IF the new buyer is comparing vendors, this language filters for feature-comparison shoppers'"
+    "Remove or rewrite the final paragraph's causal claims ('less friction to start... more friction to understand') — no trial friction data exists in evidence",
+    "Remove 'The page no longer tries to close a self-serve signup on the spot' — this is an outcome claim without conversion data",
+    "Split the second H3 paragraph into two sentences or remove generic qualifier ('This reads like positioning for...')",
+    "Split the third H3 paragraph into two paragraphs — first paragraph delivers the takeaway in first two sentences, second paragraph provides context",
+    "Move the practical takeaway ('Does your homepage still assume...') to the opening of the third H3 block, not the end",
+    "Replace 'This is vocabulary for a buyer who needs to be convinced' with Crisp-specific observation (e.g., 'The 2022 meta description stacked three urgency signals in one sentence')",
+    "Replace 'This reads like positioning for a buyer who is comparing vendors' with evidence-anchored observation (e.g., 'The new title drops the startup qualifier and claims every business')"
   ],
   "riskFlags": [
-    "HARD CAP TRIGGERED: Unsupported causation claim 'This suggests Crisp may now rely more on demos or sales conversations' — total capped at 70",
-    "Speculative inference presented as fact: 'The page now expects visitors who are further along' — no visitor data or intent signal evidence provided",
-    "Outcome claim without data: 'The urgency language is gone' stated as fact but not tied to conversion impact or visitor behaviour",
-    "Causal statement without condition: 'The focus shifted to platform capabilities and AI differentiation' — no 'if X, then Y' structure"
+    "HARD CAP TRIGGER: Unsupported outcome claim ('The page no longer tries to close a self-serve signup') without conversion data — caps total at 60",
+    "Causal claim without data: 'less friction to start the trial, more friction to understand whether Crisp fits' — penalise -10",
+    "Causal statement without condition: 'less friction... more friction' — penalise -3"
   ],
   "seoNotes": [
-    "POSITIVE: Section heading contains company name 'Crisp' and topic term 'messaging' — searchable",
-    "POSITIVE: All verbatim quotes properly formatted in bold quotes",
-    "NEGATIVE: Section heading does not contain 'homepage' despite being homepage teardown — missed SEO anchor",
-    "NEGATIVE: Final H3 'What this means for the sales process' lacks searchable terms — too abstract for Google snippet harvest"
+    "Section heading 'How Crisp's messaging shifted its audience' contains company name and topic term 'messaging' — passes searchability but could be stronger with 'homepage' added",
+    "H3 headings are plain and searchable ('Who the old page served', 'Who the new page serves') — good for featured snippet potential",
+    "All verbatim quotes are properly bolded — good for scan value"
   ],
-  "rewriteInstruction": "Remove all unsupported causation claims about sales process or buyer journey changes — stick to what the text literally says. Replace 'buyer' language with concrete roles: 'founders shopping for their first tool' vs 'teams comparing AI features'. Split the 65-word paragraph. Replace the final generic question with a specific 5-minute test: 'Open your homepage in incognito and count CTAs that require zero commitment vs. CTAs that gate everything behind signup. If all require signup, you are filtering for high-intent only.' Anchor the second H3 opening to Crisp's exact phrase shift ('Business Messaging Platform for Startups' → 'AI-powered multichannel platform') instead of abstract buyer-stage language. Add 'if X' conditions to all shift statements: 'IF the new visitor is comparing vendors, this language filters for feature shoppers.' Remove exclamation marks from quoted evidence. Final word count should stay within 140–200.",
+  "rewriteInstruction": "This section fired the hard cap by making an unsupported outcome claim about signup intent. Remove all conversion-outcome language ('no longer tries to close', 'less friction', 'more friction'). The third H3 block must open with the founder takeaway in the first sentence — not bury it at the end. Cut the generic buyer-stage commentary ('vocabulary for a buyer who needs to be convinced', 'positioning for a buyer who is comparing') and replace with Crisp-specific observations anchored to quoted evidence. Example: 'The 2022 meta description stacked three urgency signals — free trial, no credit card, try now — in a single sentence. The 2026 version removes all three.' Split the second and third H3 paragraphs so no block exceeds 60 words. The final test question is good but must appear first, not last.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
-    "specificity": 9,
-    "plainLanguage": 8,
-    "scannability": 9,
+    "evidenceAccuracy": 7,
+    "specificity": 10,
+    "plainLanguage": 16,
+    "scannability": 6,
     "searchableHeadings": 7,
-    "rhythmAndOpening": 7,
-    "founderTakeaway": 0
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

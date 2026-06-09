@@ -1,35 +1,59 @@
 {
-  "overallScore": 92,
-  "pass": true,
-  "evidenceAccuracy": 25,
-  "plainLanguage": 18,
-  "scannability": 14,
-  "searchableHeadings": 10,
-  "specificity": 15,
-  "rhythmAndOpening": 10,
-  "founderTakeaway": 0,
+  "overallScore": 72,
+  "pass": false,
+  "evidenceAccuracy": 18,
+  "plainLanguage": 16,
+  "scannability": 11,
+  "searchableHeadings": 7,
+  "specificity": 11,
+  "rhythmAndOpening": 6,
+  "founderTakeaway": 3,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
-  "weakSections": [],
-  "unsupportedClaims": [],
-  "riskFlags": [],
+  "weakSections": [
+    "## Quick answer",
+    "## Crisp's messaging shifted from trial-urgency to platform comparison",
+    "## Crisp's CTA shift: from generic trial to AI-specific entry points"
+  ],
+  "unsupportedClaims": [
+    "The page title shifted from '#1 Business Messaging Platform For Startups & SMB's' to 'The AI Customer Support Platform for Every Business.'",
+    "The old page title claimed Crisp was the '#1 Business Messaging Platform For Startups & SMB's'",
+    "The page title drops the startup qualifier and claims 'The AI Customer Support Platform for Every Business.'",
+    "Crisp added 8 navigation items",
+    "Crisp added five"
+  ],
+  "riskFlags": [
+    "CONVERSION PREDICTION: 'the new headline may filter them out before they understand the product' — no visitor behavior data or conversion metrics provided",
+    "CAUSAL CLAIM WITHOUT DATA: 'If category terms outnumber explanatory terms, test a headline that leads with the problem you solve' — presents testing advice as if outcome is certain",
+    "STRATEGY ASSERTION: 'which may signal a move toward a sales-assisted process' — no evidence about sales process changes provided",
+    "CONVERSION PREDICTION: 'This adds steps between intent and signup for visitors who already know they want Crisp' — no funnel data or drop-off metrics provided",
+    "CAUSAL CLAIM: 'copying this pattern could reduce visitor clarity' — presented as fact rather than conditional observation",
+    "CAUSAL CLAIM: 'narrowing the hero without expanding the nav removes context without replacing it' — no A/B test data or user research provided"
+  ],
   "requiredFixes": [
-    "Add founder takeaways to each H3 block — currently no H3 blocks end with 'Test this on your page' or similar practical observation",
-    "Add a specific runnable test to the final section anchored to Crisp evidence — the current final paragraph describes a general audit, not a specific test"
+    "Remove all three page title claims from 'Quick answer' section — evidence provides only headline and meta description changes, NOT page title changes",
+    "Replace '8 navigation items' with '8 new nav options' throughout — evidence shows navAdded count of 8, not total navigation count",
+    "In CTA section, specify 'five new feature-routing CTAs' instead of 'Crisp added five' — clarify what the count refers to",
+    "Reframe '## Quick answer' to remove page title claims entirely — stick to headline and meta description only",
+    "Add conditional framing to all conversion predictions: change 'may filter them out' to 'may filter out visitors who arrive unfamiliar with the category' with explicit 'if' condition",
+    "Replace 'which may signal' with 'which could suggest, if matched with sales team expansion data' in messaging section"
   ],
   "optionalImprovements": [
-    "Section 'Crisp homepage: how the headline repositioned between 2022 and 2026' could benefit from slightly shorter paragraphs — the 'What the homepage no longer explains' subsection has a 4-sentence paragraph that could be split for better scannability",
-    "Consider adding rhythm variation in the opening sentences of analytical sections — three consecutive sections open with 'The [X] page' pattern"
+    "Add word counts to scannability: several paragraphs exceed 60 words (e.g., 'Why it matters' paragraph is 71 words)",
+    "Break the final test section into two H3 blocks: 'Who should copy this' and 'The test before you copy' to improve scannability",
+    "Add explicit founder takeaway to 'What changed' subsection under positioning analysis",
+    "Vary sentence rhythm in 'Quick answer' section — three sentences all follow same structure pattern"
   ],
   "rerunRecommendations": [
-    "05-cta-navigation-evolution — regenerate final subsection 'The test before you copy' to include a specific, evidence-anchored runnable test rather than a general H2 count audit"
+    "02-quick-answer — rewrite entire section removing page title claims",
+    "05-cta-navigation-evolution — clarify navigation count language and add conditional framing to conversion predictions"
   ],
   "model": "claude-sonnet-4-5",
-  "costUsd": 0.04344300000000001,
-  "generatedAt": "2026-06-09T17:32:28.072Z",
+  "costUsd": 0.03219000000000005,
+  "generatedAt": "2026-06-09T19:01:21.458Z",
   "repetitionWarnings": [
-    "The phrase 'assumes category knowledge' or 'assumes the visitor already knows' appears in 4+ sections — while accurate, consider varying the expression to maintain rhythm"
+    "The observation 'assumes visitors already know what [category] does' appears in three sections (positioning, messaging, CTA) without varying the analytical frame"
   ]
 }

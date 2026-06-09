@@ -1,9 +1,13 @@
-## Shopify stopped recruiting beginners
+## Shopify's messaging shift: who the homepage speaks to now
 
-The old page spoke to someone who had never run a store. **"Start a Business, Grow Your Business"** is a value proposition for entrepreneurs who need permission, not procurement teams who need platform specs. The new page speaks to someone who already has a business and is evaluating commerce infrastructure: **"The All-in-One Commerce Platform for Businesses"** is a category claim, not an invitation.
+### Who the old page served
 
-The shift is visible in every buyer-facing surface. The meta description dropped **"start a business"** entirely and added **"Build or grow your business fast with AI."** The primary headline moved from **"The platform commerce is built on"** — a trust signal for first-time founders — to **"Be the next AI all-star"** — an aspiration signal for operators chasing competitive advantage. That is not a tone refresh. That is a different conversation with a different decision-maker at a different stage.
+The 2021 page spoke to someone deciding whether to start an online business. The headline — **"The platform commerce is built on"** — offered a category definition. The meta description invited you to **"start a business or grow an existing one."** This framing assumed the visitor didn't yet know what Shopify was or whether they needed it.
 
-This is ICP narrowing. Shopify traded reach for qualification. The old language served discovery-stage traffic: people searching "how to sell online." The new language serves consideration-stage buyers: people comparing Shopify to BigCommerce or Adobe Commerce with a scope document already written. What it costs: every founder still working a day job who lands on this page now sees a platform built for someone else.
+### Who the new page serves
 
-Open your homepage. If your H1 could plausibly appear in a founder's search query, you are still talking to discovery. If it reads like a Gartner category label, you have moved to procurement — and your trial-start volume will reflect that shift whether you intended it or not.
+The 2026 page speaks to someone who already knows what Shopify is and wants to know if it's keeping up. The headline — **"Be the nextAI all-star"** — assumes familiarity with the product category and jumps straight to competitive differentiation. The meta description now says **"Build or grow your business fast with AI"**, positioning speed and AI capability as the reason to choose Shopify over an alternative.
+
+### What this means for the sales process
+
+The new page expects visitors who are comparing options, not learning what ecommerce platforms do. This suggests Shopify now relies more on brand awareness before the homepage load — from search, word-of-mouth, or paid channels that pre-qualify intent. Does your homepage assume the visitor already knows what you do?

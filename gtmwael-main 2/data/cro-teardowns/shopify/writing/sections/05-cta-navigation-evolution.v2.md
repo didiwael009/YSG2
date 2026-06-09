@@ -1,5 +1,13 @@
-## Ten CTAs became ten — but every label shifted from education to action
+## Shopify homepage CTA evolution: education to commitment
 
-Ten CTAs became ten different CTAs. The labels shifted from educational entry points — **"Start your business"**, **"Explore more examples"**, **"Explore ways to sell"** — to product-specific action — **"Start for free"**, **"Get a stunning store"**, **"Website Builder"**, **"Shop App"**. The page removed every "learn more" and "explore" variant, replacing them with feature-specific trial entry points and tool names that assume you already know what Shopify does.
+### Education CTAs disappeared
 
-The new CTA set shifts from nurturing consideration to capturing intent. If mid-funnel CTAs like **"Explore ways to sell"** were converting cold traffic into trials, removing them may have increased trial quality at the cost of trial volume. If they were bloating the funnel with unqualified signups, product-specific CTAs like **"Website Builder"** let qualified visitors self-select faster. The tradeoff: speed vs qualification — faster for the ready, invisible for the curious. Count your mid-funnel asks. If your **"Learn how it works"** drives 20% of trial starts from cold traffic, you cannot afford to remove it. If it drives 5% from warm traffic that would convert anyway, cut it and watch trial quality climb.
+Shopify removed four exploration-focused CTAs: **"Explore more examples"**, **"Explore ways to sell"**, **"Explore how to market your business"**, and **"Learn more about Shopify"**. All four let visitors research without committing. The new CTAs skip that step — **"Start for free"** and **"Get a stunning store"** both assume you are ready to build.
+
+### Category researchers hit friction
+
+The page no longer serves people still learning what an ecommerce platform does. If you landed asking "what can Shopify help me do?", the old page gave you paths to explore selling channels, marketing tools, and business management features. Now you are expected to already know. Visitors comparing categories — not just vendors — may leave if your traffic comes from non-branded search or educational queries.
+
+### Audit your own page
+
+Count how many of your CTAs include "explore," "learn," or "discover." Shopify went from four to zero. If your traffic skews non-branded, that removal may signal too-fast commitment. Check whether your primary CTA matches the question your typical visitor arrives with — or asks them to commit before they understand what they are committing to.

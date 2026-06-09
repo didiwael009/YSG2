@@ -28,13 +28,13 @@ H3:
   - Support
   - Choose a region & language
 
-CTAS / BUTTONS:
+CTAs:
   - Skip to Content
-  - Get started fastYou could be selling by tomorrow.
-  - Switch to ShopifyGet more customers. Make more sales.
-  - Trusted by enterprise brandsNo matter your size, complexity, or ambition.
-  - World's best checkoutProven to convert better.
-  - SidekickYour commerce-obsessed AI assistant.
+  - Get started fast You could be selling by tomorrow.
+  - Switch to Shopify Get more customers. Make more sales.
+  - Trusted by enterprise brands No matter your size, complexity, or ambition.
+  - World's best checkout Proven to convert better.
+  - Sidekick Your commerce-obsessed AI assistant.
   - Website Builder
   - Themes
   - Domains
@@ -59,10 +59,10 @@ CTAS / BUTTONS:
   - Checkout
   - Payments
   - Taxes
-  - Commerce for AgentsBuild with our agent tools
-  - Shopify App StoreLargest commerce ecosystem
-  - Shopify.devDev docs, CLI, and more
-  - Shopify Editions150+ updates to Shopify, twice a year.
+  - Commerce for Agents Build with our agent tools
+  - Shopify App Store Largest commerce ecosystem
+  - Shopify.dev Dev docs, CLI, and more
+  - Shopify Editions 150+ updates to Shopify, twice a year.
   - Sidekick Pulse
   - Product Network
   - Full dev MCP support
@@ -167,11 +167,11 @@ CTAS / BUTTONS:
   - Your Privacy Choices
 
 NAV LINKS:
-  - Get started fastYou could be selling by tomorrow.
-  - Switch to ShopifyGet more customers. Make more sales.
-  - Trusted by enterprise brandsNo matter your size, complexity, or ambition.
-  - World's best checkoutProven to convert better.
-  - SidekickYour commerce-obsessed AI assistant.
+  - Get started fast You could be selling by tomorrow.
+  - Switch to Shopify Get more customers. Make more sales.
+  - Trusted by enterprise brands No matter your size, complexity, or ambition.
+  - World's best checkout Proven to convert better.
+  - Sidekick Your commerce-obsessed AI assistant.
   - Website Builder
   - Themes
   - Domains
@@ -196,10 +196,10 @@ NAV LINKS:
   - Checkout
   - Payments
   - Taxes
-  - Commerce for AgentsBuild with our agent tools
-  - Shopify App StoreLargest commerce ecosystem
-  - Shopify.devDev docs, CLI, and more
-  - Shopify Editions150+ updates to Shopify, twice a year.
+  - Commerce for Agents Build with our agent tools
+  - Shopify App Store Largest commerce ecosystem
+  - Shopify.dev Dev docs, CLI, and more
+  - Shopify Editions 150+ updates to Shopify, twice a year.
   - Sidekick Pulse
   - Product Network
   - Full dev MCP support
@@ -208,5 +208,5 @@ NAV LINKS:
   - Start for free
   - Log in
 
-BODY TEXT:
-Skip to ContentWhy ShopifyBackGet started fastYou could be selling by tomorrow.Switch to ShopifyGet more customers. Make more sales.Trusted by enterprise brandsNo matter your size, complexity, or ambition.Built into every storeWorld's best checkoutProven to convert better.SidekickYour commerce-obsessed AI assistant.ProductsBackBuild your websiteWebsite BuilderThemesDomainsCustomer AccountsSidekickSell anywhereOnlineAI ChatsPoint of SaleShop AppSocial & MarketplacesGlobalB2BAcross MarketsMarketing & analyticsAdvertising & CampaignsEmail & Customer ChatDiscountsAnalyticsRun your businessOrders & InventoryShippingFinances & FundingWorkflow AutomationGet paidCheckoutPaymentsTaxesCustomize & extend ShopifyCommerce for AgentsBuild with our agent toolsShopify App StoreLargest commerce ecosystemShopify.devDev docs, CLI, and moreNon-stop innovationShopify Editions150+ updates to Shopify, twice a year.Latest updatesSidekick PulseProduct NetworkFull dev MCP supportPricingEnterpriseStart for freeLog inLog inStart for freeBe the nextAI all-starBe the nextstore they line up forAI all-star household name solo-preneur category creator global empire store they line up for big thing Dream big and build fast on Shopify. The world’s best commerce platform.Start for freeWhy we build ShopifyWhy we build ShopifySell everywhere people shop. Online and in person. Across AI and on social. Locally and globally. stevemadden.com ornotbike.com glossier.com houseplant.com kotn.com eastfork.com monos.com stanley1913.com shopyowie.com ftcsf.com onlyny.com jp.bonaventura.shopYour brand has entered the chatYour products get discovered across AI channels. Shoppers check out right in the chat. You keep track of every order. All powered by Agentic Storefronts.Sell more in more placesGet a stunning store that's built to sell. Design fast with AI. Pick a prebuilt theme. Or go totally custom.Sell on every channelPut your products where shoppers search, shop, and scroll with multichannel integration.Sell face to faceSell in person and keep online and in-store sales in sync with Shopify POS.Sell to 250M+ shoppers with ShopAutomatically show up on the Shop app. Reach millions of pre-verified shoppers.Grow around the worldBuy now🇺🇸Order for $125.00Buy now🇺🇸Order for $125.00Buy now🇺🇸Order for $125.00Buy now🇺🇸Order for $125.00Buy now🇺🇸Order for $125.00Buy now🇺🇸Order for $125.00Sell across bordersTake the complexity out of international selling with Shopify Markets. Deliver products faster and more affordably with built-in shipping tools.For anyone from entrepreneurs to enterpriseGet started fastJackie Prince launched Guests on Earth out of her home. Now it's a $4M+ business.Grow as big as you wantOur Place grew from a one-product shop into a cookware empire.Raise the barIconic toymaker Mattel sells direct to shoppers all around the world. All powered by Shopify.Pick a plan that fitsMeet your secret weapon, SidekickYour very own commerce AISpot opportunities for growth and automate tedious tasks with Sidekick. Built right into your Shopify admin.What winning looks likeHear how brands use Sidekick to build faster and smarter.Customize everything with appsThe Shopify App Store has 21,000+ commerce apps for whatever specialized features your business might need.Hyperdriven by AI. Commerce to the core.Shopify's Universal Commerce Protocol and APIs, tools, and primitives give devs the power to build agentic commerce experiences that businesses are looking for.Hydrogen: Shopify’s headless commerce frameworkBuild custom storefrontsBuild for AIBuild appsshopify.devThere’s no better place for you to buildThe world’s best-converting checkoutHigher conversions15%High-intent shoppers250M+Shopify Checkout with Shop Pay converts up to 50% higher than guest checkout and exposes your brand to hundreds of millions of buyers.Based on external study with a Big Three global consulting firm in April, 2023.Rock steady. Blazing fast.Your Shopify store runs strong, even during your most epic product drops.Shopify Capital has given us the funding we need to stock up on inventory and grow rapidly.Jessica WiseCEO, Hell BabesShopify has your backIf your business needs a boost, Shopify Capital is here to lend a hand.$5B US loaned out so farInvested in Shopify merchantsLoans up to $5M USAmounts tailored to meet your needs0% equityNo stakes taken—everBuild fast on Shopify01Add your first product02Customize your store03Set up paymentsTake your shotShopifyWhat is Shopify?Shopify EditionsCareersInvestorsNewsroomSustainabilityEcosystemDeveloper DocsTheme StoreApp StorePartnersAffiliatesResourcesBlogCompare ShopifyGuidesCoursesFree ToolsChangelogSupportShopify Help CenterCommunity ForumHire a PartnerService StatusUSA | EnglishArgentinaEspañol|EnglishAustraliaEnglishAustriaDeutsch|EnglishBelarusRussian|EnglishBelgiumNederlands|German|Français|EnglishBrazilPortuguês|EnglishBulgariaBulgarian|EnglishCanadaEnglish|FrançaisChileEspañol|EnglishColombiaEspañol|EnglishCroatiaHrvatski|EnglishCzech RepublicČeština|EnglishDenmarkDansk|EnglishFinlandSuomi|EnglishFranceFrançais|EnglishGermanyDeutsch|EnglishGreeceGreek|EnglishHong Kong SAR繁體中文|EnglishHungaryHungarian|EnglishIndiaHindi|EnglishIndonesiaIndonesian|EnglishIrelandEnglishIsraelEnglishItalyItaliano|EnglishJapan日本語Korea한국어|EnglishLithuaniaLithuanian|EnglishMalaysiaEnglish|Bahasa MelayuMexicoEspañol|EnglishNetherlandsNederlands|EnglishNew ZealandEnglishNigeriaEnglishNorwayNorge|EnglishPakistanEnglishPeruEspañol|EnglishPhilippinesEnglishPolandPolski|EnglishPortugalPortuguês|EnglishRomaniaRomanian|EnglishSingaporeEnglishSlovakiaSlovenčina|EnglishSloveniaSlovenščina|EnglishSouth AfricaEnglishSpainEspañol|EnglishSwedenSvenska|EnglishSwitzerlandDeutsch|Français|Italiano|EnglishTaiwan繁體中文|EnglishThailandไทย|EnglishTürkiyeTürkçe|EnglishUAEEnglishUKEnglishUSAEnglish|Español (Intl.)|简体中文VietnamTiếng Việt|EnglishUSA | EnglishChoose a region & languageArgentinaEspañol|EnglishAustraliaEnglishAustriaDeutsch|EnglishBelarusRussian|EnglishBelgiumNederlands|German|Français|EnglishBrazilPortuguês|EnglishBulgariaBulgarian|EnglishCanadaEnglish|FrançaisChileEspañol|EnglishColombiaEspañol|EnglishCroatiaHrvatski|EnglishCzech RepublicČeština|EnglishDenmarkDansk|EnglishFinlandSuomi|EnglishFranceFrançais|EnglishGermanyDeutsch|EnglishGreeceGreek|EnglishHong Kong SAR繁體中文|EnglishHungaryHungarian|EnglishIndiaHindi|EnglishIndonesiaIndonesian|EnglishIrelandEnglishIsraelEnglishItalyItaliano|EnglishJapan日本語Korea한국어|EnglishLithuaniaLithuanian|EnglishMalaysiaEnglish|Bahasa MelayuMexicoEspañol|EnglishNetherlandsNederlands|EnglishNew ZealandEnglishNigeriaEnglishNorwayNorge|EnglishPakistanEnglishPeruEspañol|EnglishPhilippinesEnglishPolandPolski|EnglishPortugalPortuguês|EnglishRomaniaRomanian|EnglishSingaporeEnglishSlovakiaSlovenčina|EnglishSloveniaSlovenščina|EnglishSouth AfricaEnglishSpainEspañol|EnglishSwedenSvenska|EnglishSwitzerlandDeutsch|Français|Italiano|EnglishTaiwan繁體中文|EnglishThailandไทย|EnglishTürkiyeTürkçe|EnglishUAEEnglishUKEnglishUSAEnglish|Español (Intl.)|简体中文VietnamTiếng Việt|EnglishTerms of ServiceLegalPrivacy PolicySitemapYour Privacy Choices
+BODY TEXT (first 2000 chars):
+Skip to Content Why Shopify Back Get started fast You could be selling by tomorrow. Switch to Shopify Get more customers. Make more sales. Trusted by enterprise brands No matter your size, complexity, or ambition. Built into every store World's best checkout Proven to convert better. Sidekick Your commerce-obsessed AI assistant. Products Back Build your website Website Builder Themes Domains Customer Accounts Sidekick Sell anywhere Online AI Chats Point of Sale Shop App Social & Marketplaces Global B2B Across Markets Marketing & analytics Advertising & Campaigns Email & Customer Chat Discounts Analytics Run your business Orders & Inventory Shipping Finances & Funding Workflow Automation Get paid Checkout Payments Taxes Customize & extend Shopify Commerce for Agents Build with our agent tools Shopify App Store Largest commerce ecosystem Shopify.dev Dev docs, CLI, and more Non-stop innovation Shopify Editions 150+ updates to Shopify, twice a year. Latest updates Sidekick Pulse Product Network Full dev MCP support Pricing Enterprise Start for free Log in Log in Start for free Be the nextAI all-star Be the next store they line up for AIall-star householdname solo-preneur categorycreator globalempire storetheylineupfor bigthing Dream big and build fast on Shopify. The world’s best commerce platform. Start for free Why we build Shopify Why we build Shopify Sell everywhere people shop.Online and in person.Across AI and on social.Locally and globally. stevemadden.com ornotbike.com glossier.com houseplant.com kotn.com eastfork.com monos.com stanley1913.com shopyowie.com ftcsf.com onlyny.com jp.bonaventura.shop Your brand has entered the chat Your products get discovered across AI channels. Shoppers check out right in the chat. You keep track of every order. All powered by Agentic Storefronts. Sell more in more places Get a stunning store that's built to sell. Design fast with AI. Pick a prebuilt theme. Or go totally custom. Sell on every channel Put your products where shopp

@@ -1,21 +1,17 @@
-## Should you copy Vercel's homepage positioning shift? When incremental repositioning works
+## What SaaS teams can learn from Vercel's homepage evolution
 
 ### The pattern
 
-Vercel made small, consistent changes in the same direction over five years. No single snapshot shows a dramatic redesign — the headline changed, navigation shifted toward AI positioning, and section headings were gradually swapped. The pattern is **incremental repositioning**: every update reinforced a narrowing of who the page speaks to and what it assumes they already know.
+No single change here was dramatic. Yet the final homepage looks nothing like the start. Vercel added 12 new section headings and removed 2. The navigation was completely overhauled — 8 new items, 8 removed. The headline changed from **"Develop. Preview. Ship."** to **"Build and deploy on the AI Cloud."** Small, consistent changes in the same direction compound into a brand-level transformation.
 
 ### Who should copy this
 
-This works when your company name already completes a category sentence before the visitor arrives. The test Vercel passed: a developer who had never heard of them could still guess "deployment platform" from context by 2021, so the 2026 headline **"Build and deploy on the AI Cloud."** added a layer instead of replacing the foundation.
-
-If developers already know "Vercel is the deployment platform" from community presence, you can afford to shift messaging toward a new layer — **if your traffic is mostly branded search or direct, and conversion rates stay stable** — without losing visitors who have never heard of you.
+You can copy this if your brand already owns category recognition. If a stranger can guess what your product does from the URL alone, you have the advantage Vercel relies on. Test: if your buyers search your company name plus "alternative" or "vs [competitor]," they already know the category. That is the threshold this approach requires.
 
 ### Who should NOT copy this
 
-If your homepage still does the work of explaining what your product is — especially if you depend on non-branded search or cold paid traffic — removing that explanation **may** cost you qualified pipeline **if your traffic sources shift toward cold audiences**.
-
-When Vercel used **"Develop. Preview. Ship."** in Jul 2021, the three-verb structure gave context. By Jun 2026, **"Build and deploy on the AI Cloud."** assumes you already know what Vercel deploys. That assumption only holds if the brand name already carries the category.
+If most homepage visitors arrive via non-branded search or paid ads, this approach may cost you pipeline. When visitors land not knowing your category, a page built for recognition instead of explanation will feel vague. Example: Vercel's nav now includes **"AI Cloud"** — a label that assumes you already know what Vercel is.
 
 ### The test before you copy
 
-Visit your homepage as a cold visitor. Can you explain what the product does after reading only the headline? Vercel's Jun 2026 headline (**"Build and deploy on the AI Cloud."**) works only because the brand name already completed "deployment platform" in developers' minds. If your headline needs to do that work, you're not ready for this pattern yet.
+Open Google Analytics. Filter homepage traffic to non-branded organic and paid sources only. If most of your traffic comes from searches like "deployment platform" or "static site hosting" rather than "Vercel," your page still needs to explain what you do. Clarity beats aspiration until brand-driven traffic dominates.

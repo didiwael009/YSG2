@@ -1,23 +1,173 @@
 {
   "slug": "vercel",
-  "generatedAt": "2026-06-09T12:47:59.742Z",
+  "generatedAt": "2026-06-09T19:11:03.013Z",
   "mode": "standard",
-  "sections": [],
-  "averageScore": null,
-  "passCount": 0,
-  "failCount": 0,
-  "skippedCount": 6,
-  "totalRewriteLoops": 0,
-  "weakSections": [],
-  "allRiskFlags": [],
-  "sectionErrors": [],
-  "finalJudgeScore": 93,
-  "finalJudgePass": true,
-  "finalRequiredFixes": [
-    "Add explicit founder takeaways at the end of each H3 analytical block. Currently only 'How Vercel's CTA strategy shifted' has a clear actionable takeaway ('Audit your own page'). Other H3 blocks end with questions or observations but no clear 'you should check X' statement.",
-    "The final H3 block 'The test before you copy' needs a more specific runnable test. Currently says 'Count how many words in your H1 assume the visitor already knows your category' but does not specify what number indicates readiness or what to do with the count."
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "Phrase 'signal about who Vercel is now selling to' — this is an interpretive claim about sales strategy, not traceable to evidence. The evidence shows messaging changes, not confirmed ICP shifts."
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Word count is ~95 words, exceeding the 90-word cap by 5 words",
+        "Phrase 'what those changes signal about who Vercel is now selling to' implies causation without attached condition",
+        "Final sentence uses generic template language ('how to apply the same lens to your own homepage') instead of making the intro specific to Vercel's story"
+      ],
+      "sectionCostUsd": 0.028194
+    },
+    {
+      "sectionId": "02-quick-answer",
+      "finalVersion": 2,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 1,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The pattern shows a shift... — this is interpretive but acceptable because it is explicitly framed as 'pattern' not 'strategy' or 'goal', and the evidence (before/after text) is directly quoted"
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "Word count is approximately 92 words, exceeding the 50–75 word target by 17 words",
+        "The phrase 'product-and-infrastructure framing' is abstract strategist language without a plain explanation",
+        "Final sentence buries a structural insight in passive construction that could be more direct",
+        "Opening sentence attempts to pack all three changes into one 35-word sentence, reducing scannability"
+      ],
+      "sectionCostUsd": 0.06888000000000001
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 3,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'This shift is consistent with the navigation changes' — implies causation or coordinated strategy without evidence",
+        "'This creates a clarity gap if the visitor does not recognize the category term' — outcome claim without conversion data or user testing evidence",
+        "'common when most traffic arrives from non-branded search or cold paid channels' — traffic composition claim not supported by provided evidence"
+      ],
+      "remainingIssueCount": 7,
+      "remainingIssues": [
+        "Paragraph 2 in 'Why it matters' exceeds 60 words (approximately 62 words)",
+        "Causal claim without condition: 'This shift is consistent with...' implies causation without evidence of strategic intent",
+        "Causal claim: 'This creates a clarity gap if...' presents outcome without supporting data",
+        "Final H3 'What it costs' delivers takeaway as a test instruction, not as an insight followed by a test",
+        "Generic phrasing: 'This shift is consistent with' could appear in any company teardown",
+        "The opening sentence rhythm is repetitive: three consecutive short declarative sentences with similar structure",
+        "H3 heading 'What it costs' is not searchable — lacks company name or topic terms (positioning, messaging, homepage, etc.)"
+      ],
+      "sectionCostUsd": 0.13049699999999997
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 3,
+      "finalScore": 71,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "Causal conversion claim without data: 'A multi-capability headline works when buyers arrive already comparing platforms' — no evidence provided that this headline structure drives conversion",
+        "Unsupported outcome claim: 'The page now speaks to visitors evaluating platform capabilities' — infers visitor behaviour from headline text without traffic data or survey evidence"
+      ],
+      "remainingIssueCount": 11,
+      "remainingIssues": [
+        "Paragraph 1 (H3 'Who the old page served') is 51 words — acceptable but close to cap",
+        "Paragraph 2 (H3 'Who the new page serves') is 48 words — acceptable",
+        "Paragraph 3 (H3 'What this means for the sales process') is 63 words — VIOLATES 60-word cap",
+        "Section word count is approximately 162 words — within 140–200 range",
+        "Missing bold quotes around 'frameworks, workflows, and infrastructure' — appears in plain quotes only",
+        "Generic multi-company paragraph: 'If your headline does the same, check what your visitor knows before they land. A multi-capability headline works when buyers arrive already comparing platforms.' — could appear in any teardown",
+        "Causal claim without condition: 'A multi-capability headline works when buyers arrive already comparing platforms' — implies conversion outcome without data",
+        "Final takeaway is generic audit instruction ('Does your page assume the visitor knows what category you compete in?') instead of a specific 5-minute test anchored to Vercel's evidence",
+        "Heading includes 'Vercel' and 'messaging' — meets searchable requirement",
+        "All three required H3 sub-blocks present",
+        "H3 'What this means for the sales process' buries the takeaway — question appears in sentence 3, not sentences 1–2"
+      ],
+      "sectionCostUsd": 0.12448499999999998
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 3,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "'filters out anyone who needs the page to suggest the next step' — causal claim about visitor behavior without supporting data or attached condition",
+        "'This structure may work when visitors arrive already knowing which part of the platform they need' — presents a hypothesis as conditional but lacks evidence anchor"
+      ],
+      "remainingIssueCount": 8,
+      "remainingIssues": [
+        "Section word count is approximately 190 words, exceeding the 180-word cap",
+        "The term 'conversion-focused' appears without plain-language definition",
+        "H3 'What changed' paragraph is approximately 45 words but could be more specific about timing",
+        "H3 'What Vercel's CTA shift requires from visitors' contains a causal claim ('filters out anyone') without attached condition",
+        "The section lacks specificity about which snapshot introduced which changes",
+        "Opening sentence uses abstract phrasing ('conversion-focused CTAs') that could benefit from plain language",
+        "No bold quotes are used for CTA text despite evidence providing exact CTA copy",
+        "The phrase 'conversion path to product catalog' in the ## heading is clever but not immediately plain"
+      ],
+      "sectionCostUsd": 0.117228
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 3,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 2,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The claim 'If most homepage visitors arrive via non-branded search or paid ads, they land without knowing your category' is a general principle not traced to Vercel's evidence — allowable as conditional advice, but borders on generic SaaS commentary"
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "The ## section heading is clever-only with no searchable terms — 'Should SaaS companies copy Vercel's homepage strategy? When it works and when it doesn't' lacks 'Vercel', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion' as standalone search terms",
+        "H3 'Who should NOT copy this' paragraph is 67 words (over 60-word limit)",
+        "The final test instruction could be more specific — it asks the reader to 'add one clarity-first label' but doesn't anchor to Vercel's specific evidence about which removed clarity label worked"
+      ],
+      "sectionCostUsd": 0.14226300000000008
+    }
   ],
-  "articleWordCount": 1185,
+  "averageScore": 81.8,
+  "passCount": 3,
+  "failCount": 3,
+  "skippedCount": 0,
+  "totalRewriteLoops": 9,
+  "weakSections": [
+    "03-visual-timeline",
+    "04-messaging-evolution",
+    "05-cta-navigation-evolution"
+  ],
+  "allRiskFlags": [
+    "Phrase 'signal about who Vercel is now selling to' — this is an interpretive claim about sales strategy, not traceable to evidence. The evidence shows messaging changes, not confirmed ICP shifts.",
+    "The pattern shows a shift... — this is interpretive but acceptable because it is explicitly framed as 'pattern' not 'strategy' or 'goal', and the evidence (before/after text) is directly quoted",
+    "'This shift is consistent with the navigation changes' — implies causation or coordinated strategy without evidence",
+    "'This creates a clarity gap if the visitor does not recognize the category term' — outcome claim without conversion data or user testing evidence",
+    "'common when most traffic arrives from non-branded search or cold paid channels' — traffic composition claim not supported by provided evidence",
+    "Causal conversion claim without data: 'A multi-capability headline works when buyers arrive already comparing platforms' — no evidence provided that this headline structure drives conversion",
+    "Unsupported outcome claim: 'The page now speaks to visitors evaluating platform capabilities' — infers visitor behaviour from headline text without traffic data or survey evidence",
+    "'filters out anyone who needs the page to suggest the next step' — causal claim about visitor behavior without supporting data or attached condition",
+    "'This structure may work when visitors arrive already knowing which part of the platform they need' — presents a hypothesis as conditional but lacks evidence anchor",
+    "The claim 'If most homepage visitors arrive via non-branded search or paid ads, they land without knowing your category' is a general principle not traced to Vercel's evidence — allowable as conditional advice, but borders on generic SaaS commentary"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 92,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [],
+  "seoScore": 85,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Add a disclaimer after the 'Should SaaS companies copy Vercel's homepage strategy?' section clarifying that the article does not claim conversion rate improvements or ranking changes resulted from these changes — only that the messaging pattern shifted",
+    "In the 'Who should NOT copy this' section, add a sentence acknowledging that Vercel's brand authority (funded, public recognition) may allow messaging clarity trade-offs that smaller SaaS companies cannot afford",
+    "Clarify the meta description: 'frameworks, workflows, and infrastructure' — explain what these three categories represent in Vercel's product positioning, or the meta description will feel vague to readers unfamiliar with Vercel's current product suite"
+  ],
+  "articleWordCount": 1045,
   "repetitionWarnings": [],
   "editorialWarnings": [],
   "overLengthWarning": null

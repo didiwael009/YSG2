@@ -1,28 +1,46 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 72,
+  "pass": false,
   "issues": [
-    "The phrase 'aspiration positioning' is not a widely recognized conversion principle — consider replacing with 'identity recruitment' or 'aspirational identity positioning', which are more standard terms in CRO literature",
-    "The founder test, while specific and actionable, could be slightly more anchored to the exact evidence pattern (the shift from category-explanation to identity-recruitment)",
-    "Word count is approximately 195 words — within budget but on the higher end for a section with this much conceptual density"
+    "HARD CAP TRIGGERED: Unsupported causal claim ('This shift reflects category leadership') → total capped at 70, then adjusted to 72 for minor strengths",
+    "The term 'category leadership' appears without plain-language definition",
+    "Second H3 block ('Why it matters') uses 'category leadership' as a causal explanation without evidence linking the headline change to market position",
+    "The phrase 'This shift reflects category leadership' makes a strategy attribution claim unsupported by the evidence",
+    "Third H3 ('What it costs') buries the founder takeaway — the specific test appears in sentence 3, not sentences 1–2",
+    "The opening sentence is 68 words (intro paragraph exempt up to 90, so this passes, but it is dense)",
+    "H3 heading 'Why it matters' contains no searchable terms — generic heading could appear in any teardown",
+    "H3 heading 'What it costs' contains no searchable terms — generic heading could appear in any teardown",
+    "Paragraph 2 in 'Why it matters' could appear in a different company's teardown — it is generic SaaS commentary about identity-focused headlines",
+    "The final test instruction is specific and good, but arrives too late in the block to satisfy the 'first two sentences' requirement"
   ],
   "requiredFixes": [
-    "Replace 'aspiration positioning' with 'identity recruitment' — a more precise and recognized conversion mechanism term that better captures the psychological shift from explaining category to recruiting self-concept"
+    "Remove or rewrite the sentence 'This shift reflects category leadership (a brand so familiar it can skip explaining what it does and focus on who the buyer becomes)' — this is a causal claim unsupported by evidence. Replace with a conditional observation: 'A headline like this works when the visitor already knows the brand.'",
+    "Add a plain-language definition to 'category leadership' on first use, or remove the term entirely and use plain language: 'a brand so well-known visitors already know what it sells'",
+    "Move the founder test to the first two sentences of the 'What it costs' H3 block: 'Open your homepage in an incognito window and count how many section headings or subheadings name your product category in the first screenful. Shopify removed all three category-naming headings between 2021 and 2026: [list]. The current page trades category clarity for identity appeal — a trade-off that works only if the visitor already knows what Shopify sells.'",
+    "Rewrite the 'Why it matters' H3 heading to include a searchable term: 'Why category-free headlines are a trade-off' or 'Why Shopify dropped its product category from the headline'",
+    "Rewrite the 'What it costs' H3 heading to include a searchable term: 'What Shopify gave up: category clarity' or 'The clarity cost of identity messaging'",
+    "Rewrite the second paragraph in 'Why it matters' to anchor it to Shopify-specific evidence or remove it entirely — currently it reads like generic SaaS commentary"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "CAUSAL CLAIM: 'This shift reflects category leadership' — the evidence shows a headline change, not market research or a strategy memo confirming leadership-driven positioning",
+    "The sentence 'This shift reflects category leadership' treats the change as evidence of a strategic decision, but the evidence JSON explicitly states: 'No confirmed strategy is implied'",
+    "The phrase 'a trade-off that works only if' is a conditional, which is acceptable, but the prior sentence ('This shift reflects') makes an unconditional causal claim"
+  ],
   "seoNotes": [
-    "The opening sentence structure ('stopped explaining... started recruiting') creates a strong semantic contrast that could perform well in featured snippet extraction",
-    "The section maintains company name (Shopify) and specific feature name (Sidekick) throughout, supporting topical authority signals"
+    "POSITIVE: The ## section heading includes 'Shopify', 'homepage', and 'headline' — all searchable terms",
+    "NEGATIVE: Two of three H3 headings ('Why it matters', 'What it costs') are generic and contain no searchable terms — lost opportunity for long-tail search visibility",
+    "POSITIVE: The section uses verbatim quoted headlines in bold, which helps Google parse the content as evidence-based analysis",
+    "NEUTRAL: The section is short (approximately 160 words), which is within the 140–200 target range"
   ],
-  "rewriteInstruction": "Replace the phrase 'aspiration positioning' in paragraph 1 with 'identity recruitment' to use standard conversion terminology. The rest of the section is publication-ready — the entry point is a genuine finding (not a lazy contrast), the mechanism is present (though the term needs correction), the tradeoff is woven naturally into the final paragraph, and the founder test is specific and actionable.",
+  "rewriteInstruction": "Remove the causal claim 'This shift reflects category leadership' and replace it with a conditional observation tied to evidence: 'A headline like this works when visitors already know the brand.' Define or eliminate the term 'category leadership' — use plain language like 'a brand so well-known visitors already know what it sells.' Move the founder test (incognito window + count category headings) to the first two sentences of the final H3 block. Rewrite the H3 headings 'Why it matters' and 'What it costs' to include searchable terms: for example, 'Why Shopify dropped its product category from the headline' and 'The clarity cost of identity messaging.' Anchor the second paragraph in 'Why it matters' to Shopify-specific evidence or delete it — it currently reads like generic SaaS advice that could appear in any teardown.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "riskControl": 10,
-    "specificity": 15,
-    "clarity": 10,
-    "entryPointOriginality": 14,
-    "mechanismNaming": 8,
-    "founderSharpness": 14
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 10,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

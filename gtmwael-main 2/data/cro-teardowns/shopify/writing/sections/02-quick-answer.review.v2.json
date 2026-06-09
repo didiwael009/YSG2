@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Word count is approximately 62 words — within target range but at lower end for featured snippet optimization",
+    "The heading 'Shopify homepage shift' is generic and could be more searchable — lacks explicit terms like 'positioning', 'messaging', or 'conversion'",
+    "The opening sentence stacks two changes without a bridging insight — reads as factual inventory rather than an analytical frame",
+    "Minor rhythm issue: all three sentences follow similar structure (company did X, Y changed to Z)"
+  ],
+  "requiredFixes": [
+    "Revise heading to include searchable term: consider 'Shopify homepage messaging shift' or 'Shopify homepage positioning change' to improve search visibility",
+    "Add one more sentence (8–13 words) to reach optimal featured snippet length of 70–75 words — consider summarizing the strategic direction (category leader → AI benefit claim) to give Google more extraction surface"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Positive: All three brand touchpoints (headline, title, meta) are covered in order of visibility priority",
+    "Positive: Company name appears in heading for search relevance",
+    "Opportunity: Heading could be strengthened with explicit topic term ('messaging', 'positioning') to capture more search variants",
+    "Featured snippet risk: At 62 words, section is slightly short — Google prefers 65–80 words for paragraph snippets"
+  ],
+  "rewriteInstruction": "Add 8–13 words as a fourth sentence that frames the strategic direction of the shift — something like 'The changes moved Shopify from category-defining language to AI-benefit positioning.' This bridges the factual inventory into a micro-insight and pushes word count into optimal featured snippet range. Also revise the heading from 'Shopify homepage shift' to 'Shopify homepage messaging shift' to include the searchable term 'messaging'. Keep all three existing sentences intact — they are evidence-anchored and specific.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

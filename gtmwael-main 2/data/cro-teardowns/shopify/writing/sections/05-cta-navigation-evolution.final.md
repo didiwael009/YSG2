@@ -1,5 +1,13 @@
-## Shopify removed every exploratory CTA
+## Shopify's CTA shift: from education to instant signup
 
-Ten CTAs out. Ten CTAs in. But the replaced set assumes the visitor already knows they want Shopify. **"Explore more examples"** served consideration-stage traffic — visitors comparing what commerce looks like across categories. **"Explore ways to sell"** served discovery — people uncertain which channels matter for their business. **"Learn more about Shopify"** served informational intent. All three gone. What replaced them: **"Start for free,"** **"Get a stunning store,"** **"Compare Shopify."** Every new CTA assumes the visitor is already in procurement mode. This is a qualification filter — a friction increase that trades mid-funnel volume for late-funnel intent signal.
+### What changed
 
-The cost is visible in who this path cannot serve anymore: a founder researching "how to start selling online" who lands on the homepage will not find an answer. They will find a signup form. That filters out early-stage traffic entirely — which only works if your paid acquisition, content, or brand already does the qualification upstream. Open your CTA list. If more than half require zero commitment to click, you are still serving discovery traffic — and a page that only serves procurement-stage intent may leave mid-funnel visitors without a path to continue.
+Shopify replaced ten educational CTAs with ten product-focused ones. The old homepage invited visitors to **"Explore ways to sell"** and **"Learn more about Shopify"**. The new one asks for immediate action: **"Start for free"** and **"Get a stunning store"**. Every "explore" or "learn more" button is gone. What replaced them: feature-specific CTAs like **"Website Builder"**, **"Shop App"**, and **"Social & Marketplaces"**.
+
+### Who this filters out
+
+This path no longer serves people who are still comparing categories — someone deciding between a marketplace listing, a custom site, or a platform like Shopify. Those visitors needed the "explore ways to sell" educational content. The new CTAs assume you already know Shopify is the answer and you are choosing between Shopify's features, not between Shopify and something else entirely.
+
+### Audit your own page
+
+Open your homepage and count how many CTAs say "learn," "explore," or "discover." Then count how many say "start," "get," or "try." If the education CTAs outnumber the action CTAs but your traffic is mostly branded search or referrals, you may be adding friction where your visitors no longer need it.

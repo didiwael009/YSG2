@@ -1,13 +1,13 @@
-## Crisp's homepage CTA path: from free trial to AI agent, 2022–2026
+## Crisp's CTA shift: from generic trial to AI-specific entry points
 
-### What changed
+### From generic trial CTAs to AI-specific entry points
 
-Crisp now prioritises AI agent CTAs over free-trial buttons. The company removed **"Get Started"** and **"Try Crisp for free"**, replacing them with **"Get your AI Agent"** and **"Start Free Trial"**. A new mid-page CTA appeared: **"HugoYour best AI support agent teammate."** The company added **"Request a demo"**, then removed it, then added **"Book a demo"** back.
+The homepage replaced **"Get Started"** and **"Try Crisp for free"** with **"Get your AI Agent"** and **"Start Free Trial"**. Five new CTAs now route to feature pages before signup: **"Learn more on the Crisp AI Chatbot"**, **"See all messaging channels"**, **"Learn more on Crisp Knowledge Base"**, plus separate CTAs for workflows and the inbox. The old **"Request a demo"** became **"Book a demo"**.
 
-### Who this filters out
+### The friction cost of feature-first CTAs
 
-The homepage removed the H2 **"Meet the business messaging platform that gathers customer support, sales, and marketing"** — the only line that explained what category Crisp belongs to. The new CTA path assumes category knowledge because the explainer headline was removed. Visitors who arrive without knowing what Crisp does now see **"Get your AI Agent"** before any statement of what the platform is.
+If a visitor arrives ready to start a trial — from a referral, a review site, or word-of-mouth — the new path requires stopping at a feature page first. The **"Get your AI Agent"** CTA links to an AI explainer, not account creation. The **"See all messaging channels"** button opens a product tour. This adds steps between intent and signup for visitors who already know they want Crisp.
 
-### Audit your own page
+### Test whether education CTAs help or hurt signup rate
 
-Open Crisp's Jun 2026 homepage. Note that **"Get your AI Agent"** appears before any H2 explaining what Crisp does. If your homepage CTAs assume category knowledge, count how many above-the-fold CTAs require zero explanation. That count signals whether your page still serves first-time visitors or only buyers already comparing vendors.
+Open your homepage and list every CTA that routes to a feature page instead of signup. Crisp added five. If you did the same, compare your trial start rate before and after. Check whether visitors who click those CTAs ever reach signup — or whether they read and leave.

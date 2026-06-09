@@ -2,29 +2,31 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "Second paragraph in H3 'Who the new page serves' exceeds 60 words (approx 65 words)",
-    "Section word count approximately 210 words, exceeds 200-word target by 10 words",
-    "Final H3 takeaway test is slightly generic — 'count how many CTAs' could be made more specific to Crisp's actual CTA structure"
+    "Final H3 test is generic ('Does your homepage still assume…') instead of a specific 5-minute action anchored to Crisp's evidence",
+    "Opening sentence uses 'trial-urgency' compound without plain-language definition — not immediately clear to founders unfamiliar with conversion terminology",
+    "Second H3 paragraph ('The page title drops…') reaches 62 words — marginally over the 60-word limit for analytical H3 blocks"
   ],
   "requiredFixes": [
-    "Split the second paragraph in 'Who the new page serves' into two paragraphs — break after the quote ending with 'multichannel messaging platform.' Start new paragraph with 'The headline now reads...'",
-    "Trim 10–15 words from the section to meet the 200-word target — consider condensing the opening paragraph or removing one adjective/descriptor per H3 block"
+    "Rewrite the final H3 block to deliver a specific, runnable test in the first two sentences. Example: 'Open your homepage meta description. Count how many urgency signals appear in the first sentence (free trial, no card, limited time). If the answer is more than one, you are writing for a visitor who needs convincing — not for someone already comparing platforms.'",
+    "Add a plain-language clause to the opening sentence after 'trial-urgency'. Example: '…shifted from trial-urgency (convincing skeptical visitors to start a free trial) to platform comparison.'"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "The final sentence ('…which may signal a move toward a sales-assisted process for a portion of inbound traffic') makes a causation inference not directly supported by the evidence. The evidence shows trial language was removed, but does not confirm a sales-assisted process was introduced. Add a conditional frame: 'which may reflect a move toward…' becomes 'which could reflect…' or 'which suggests the company now serves visitors who…' (already present earlier in the sentence, so this clause is redundant and should be cut)."
+  ],
   "seoNotes": [
-    "Heading contains company name 'Crisp' and searchable term 'messaging' — good for Google discovery",
-    "All three H3 subheadings are plain-language and scannability-friendly",
-    "Bold quotes are correctly formatted throughout — aids snippet harvesting"
+    "Section heading contains both company name ('Crisp') and topic term ('messaging') — strong for search",
+    "All three H3 subheadings are plain and scannable, but could be strengthened with a concrete detail from the evidence (e.g., 'Who the old page served: startup owners hunting for a 14-day trial')",
+    "Every quoted element is correctly bolded — good for snippet extraction"
   ],
-  "rewriteInstruction": "Split the 65-word paragraph in 'Who the new page serves' after the platform positioning quote. Trim 10 words total across all three H3 blocks to hit 200 words — prioritise removing adjectives or connector phrases. In the final H3, make the test more specific: instead of 'count how many CTAs require zero commitment,' write 'count how many CTAs above the fold let you explore features without signup — Crisp's current structure gates everything behind account creation.'",
+  "rewriteInstruction": "The draft is strong and nearly publish-ready. Make three surgical edits: (1) Add a plain-language definition of 'trial-urgency' in the opening sentence so founders who are new to conversion strategy can follow. (2) Trim the second paragraph of H3 block two to 60 words or split it into two shorter paragraphs. (3) Replace the final H3 block's rhetorical question with a specific, runnable test the founder can complete in under five minutes — anchor it to Crisp's evidence (e.g., counting urgency signals in the meta description or auditing whether the headline assumes prior category knowledge). Cut the final sentence about 'sales-assisted process' — it is a causation inference not supported by the evidence and the block already delivers its takeaway earlier.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "specificity": 13,
-    "plainLanguage": 20,
-    "scannability": 11,
+    "evidenceAccuracy": 23,
+    "specificity": 15,
+    "plainLanguage": 17,
+    "scannability": 13,
     "searchableHeadings": 10,
-    "rhythmAndOpening": 9,
-    "founderTakeaway": 0
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

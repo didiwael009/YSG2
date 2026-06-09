@@ -1,0 +1,37 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The ## heading is 'clever-only' — contains no searchable terms (company name, homepage, positioning, messaging, CTA, conversion)",
+    "H3 heading 'Copy this if your brand name already owns the category' uses 'category ownership' concept without plain-language definition",
+    "Paragraph 1 in H3.1 is ~65 words (exceeds 60-word limit)",
+    "The phrase 'meta-pattern' appears without plain-language translation",
+    "Some causal claims lack explicit conditions (e.g., 'This shift... only works when' lacks a counter-condition for when it fails)"
+  ],
+  "requiredFixes": [
+    "Change ## heading to include searchable terms — e.g., 'Should SaaS companies copy Shopify's homepage messaging strategy?' or 'When Shopify's homepage positioning works (and when it doesn't)'",
+    "Trim H3.1 paragraph 1 to 60 words or split into two paragraphs — move 'This shift from explaining...' to start a new paragraph",
+    "Replace 'meta-pattern' with plain language — e.g., 'the underlying shift' or 'the core change'"
+  ],
+  "riskFlags": [
+    "The claim 'It only works when your brand does the explaining before the visitor arrives' is causal but lacks supporting data from the evidence — no conversion metrics or visitor behavior data provided",
+    "The statement 'You likely have the brand recognition this requires if a stranger can guess what your product does from your company name alone' is presented as a test but has no evidence anchor in Shopify's data"
+  ],
+  "seoNotes": [
+    "Positive: Four H3 blocks present, each with company-specific quoted elements",
+    "Positive: Final H3 is a specific, runnable audit test anchored to Shopify evidence",
+    "Negative: ## heading misses major SEO opportunity — no 'Shopify', 'homepage', or topic term in heading",
+    "Positive: H3 headings contain searchable phrases ('messaging pattern', 'brand name', 'homepage traffic', 'homepage audit')"
+  ],
+  "rewriteInstruction": "Change the ## heading to include 'Shopify' plus 'homepage' or a topic term like 'messaging' or 'positioning'. Trim the first paragraph under H3.1 to 60 words or split it. Replace 'meta-pattern' with everyday language. Add a plain-language clause to 'category ownership' concept in H3.2 (e.g., 'if your brand name already signals what you do — like Mailchimp for email or Calendly for scheduling'). All other elements meet threshold.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 17,
+    "scannability": 12,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

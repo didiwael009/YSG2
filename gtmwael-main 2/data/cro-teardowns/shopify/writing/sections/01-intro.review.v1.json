@@ -1,29 +1,43 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 68,
+  "pass": false,
   "issues": [
-    "Word count approximately 102 words — exceeds the 55–90 word target by 12 words",
-    "The phrase 'identity recruitment' is used but not anchored clearly to a conversion principle — it functions as mechanism-naming but reads slightly invented",
-    "Final sentence is strong but slightly padded: 'be able to identify' could be tighter as 'see'"
+    "Paragraph exceeds 90-word limit (approximately 103 words)",
+    "Causal claim without data: 'That shift signals a change in who the page is written for' — evidence shows text change, not audience targeting data",
+    "Causal claim without condition: 'the original spoke to businesses evaluating commerce platforms' — no evidence shows original audience was platform evaluators",
+    "Unsupported interpretation: 'speaks to founders chasing a category identity' — no evidence in data supports this audience characterization",
+    "Generic paragraph 2: 'By the end of this teardown, you'll know how to check whether your own homepage is still serving the visitor who lands on it' — could appear in any teardown",
+    "Jargon without definition: 'category identity' used without plain-language explanation",
+    "Opening sentence buries the lead — headline change is most interesting but buried in interpretation rather than presented as data point"
   ],
   "requiredFixes": [
-    "Trim to 90 words max. Cut 'By the end,' and compress the final sentence to: 'You will see whether your homepage sells to the buyer you have, or the buyer you want.'",
-    "Anchor 'identity recruitment' more explicitly: rephrase to 'identity recruitment — inviting the buyer to step into a new role' or similar, so the mechanism label is immediately clear"
+    "Cut paragraph to 90 words maximum — remove the closing 'By the end of this teardown' sentence entirely (generic, not specific to Shopify evidence)",
+    "Rewrite second sentence to remove unsupported audience claim. Replace 'That shift signals a change in who the page is written for' with evidence-only statement: 'The original headline positioned Shopify as infrastructure; the current version positions the user'",
+    "Remove 'chasing a category identity' — no evidence supports this interpretation. Replace with observable description of headline's subject",
+    "Add plain-language definition after any expert term, or remove term entirely",
+    "Bold the quoted headline text: **'Be the nextAI all-star'** appears unbolded in draft"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "HARD CAP TRIGGERED: Conversion outcome claim without data — 'That shift signals a change in who the page is written for' assumes targeting intent not present in evidence",
+    "Unsupported causation: 'spoke to businesses evaluating commerce platforms' — evidence shows headline text only, not audience segment data",
+    "Unsupported interpretation: 'speaks to founders chasing a category identity' — no qualitative or quantitative data supports this audience characterization",
+    "Generic advice paragraph violates specificity requirement — closing sentence applicable to any company teardown"
+  ],
   "seoNotes": [
-    "Strong company name and date range placement in opening sentence — clean SEO signal",
-    "Headline quotes are bold and verbatim — good for featured snippet potential"
+    "Heading contains company name (Shopify) and searchable terms (Homepage, Message) — meets searchability requirement",
+    "Opening sentence answers search query (what changed on Shopify homepage) in first 15 words — strong for featured snippet",
+    "Specific date range (July 2021, June 2026) in opening improves search relevance for recency queries",
+    "Quoted headline text provides exact-match searchable content"
   ],
-  "rewriteInstruction": "Trim 12 words to hit the 90-word ceiling. The draft is strong but over-budget. Remove 'By the end,' and tighten the last sentence to 'You will see whether your homepage sells to the buyer you have, or the buyer you want.' Clarify 'identity recruitment' by adding a brief anchor phrase ('inviting the buyer to step into a new role') so the mechanism reads as a named principle, not a neologism. The entry is excellent — contrast anchored to a real shift — but the word count violation and slight mechanism fuzziness prevent a 90+.",
+  "rewriteInstruction": "Cut to 85 words. Remove the entire closing sentence ('By the end of this teardown...'). Rewrite the second sentence to describe ONLY what changed in the text itself — not who it 'speaks to' or what audience it targets, since no visitor data appears in the evidence. Replace 'spoke to businesses evaluating commerce platforms' and 'speaks to founders chasing a category identity' with neutral descriptions of what the headlines SAY, not who they target. Example: 'The original headline named the product category (commerce platform). The current headline addresses the reader directly and mentions AI.' This keeps you anchored to observable text changes. Finally, ensure all verbatim quotes appear in **bold quotes** per house style.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "riskControl": 10,
-    "specificity": 15,
-    "clarity": 6,
-    "entryPointOriginality": 14,
-    "mechanismNaming": 8,
-    "founderSharpness": 10
+    "evidenceAccuracy": 8,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

@@ -1,77 +1,71 @@
 {
   "slug": "crisp",
-  "generatedAt": "2026-06-09T17:32:42.927Z",
+  "generatedAt": "2026-06-09T19:01:39.580Z",
   "mode": "standard",
   "sections": [
     {
       "sectionId": "01-intro",
       "finalVersion": 1,
-      "finalScore": 76,
+      "finalScore": 68,
       "passed": false,
       "loopsUsed": 0,
-      "riskFlagCount": 3,
+      "riskFlagCount": 5,
       "riskFlags": [
-        "CAUSAL CLAIM WITHOUT CONDITION: 'a choice that changes who the page speaks to' — no evidence confirms audience impact.",
-        "OUTCOME CLAIM: 'what those changes signal' — interpretation is not supported by evidence notes.",
-        "STRATEGY ASSERTION: 'marks a clear repositioning' — evidence note explicitly says 'No confirmed strategy is implied.'"
+        "HARD CAP TRIGGERED: Unsupported outcome claim 'signals a move from emotional differentiation to capability claims' without data → total capped at 60.",
+        "HARD CAP TRIGGERED: Additional unsupported outcome claim 'fits enterprise evaluation criteria' → reinforces cap at 60.",
+        "Causal statement 'you'll know when to anchor your homepage on product capability instead of buyer identity' lacks attached condition (e.g. 'if your ICP matches Crisp's shift').",
+        "Invented interpretation: 'enterprise evaluation criteria' — evidence contains no mention of enterprise buyers or their criteria.",
+        "Invented interpretation: 'startup-friendly positioning' — evidence mentions 'startups' in meta description but does not confirm positioning strategy."
       ],
-      "remainingIssueCount": 6,
+      "remainingIssueCount": 8,
       "remainingIssues": [
-        "The draft makes an unsupported causal claim: 'a choice that changes who the page speaks to and what outcome it promises' — the evidence shows what changed but does not confirm intention or outcome.",
-        "The phrase 'marks a clear repositioning' asserts strategy without evidence. The note explicitly states 'No confirmed strategy is implied.'",
-        "The final sentence promises to 'show what changed, what those changes signal' — but 'signal' implies interpretation beyond what the evidence supports.",
-        "Introduction exceeds 90 words (approximately 115 words).",
-        "The opening sentence does not directly answer the search query 'Crisp chat homepage teardown' — it describes one change but does not name the biggest shift.",
-        "Generic phrasing: 'how to check whether your homepage is still aligned with the buyer you're trying to reach' — could appear in any homepage teardown."
+        "Unsupported outcome claim: 'That shift signals a move from emotional differentiation to capability claims' — evidence shows only headline text change, no data on differentiation strategy or outcome.",
+        "Causal claim without condition: 'you'll know when to anchor your homepage on product capability instead of buyer identity' — no evidence supports this as a transferable decision framework.",
+        "Paragraph length 146 words — exceeds 90-word cap for intro by 56 words.",
+        "Strategist-to-strategist jargon: 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity' — all used without plain-language definitions.",
+        "Generic closing sentence: 'how to test whether your own audience will reward that trade' could appear in any SaaS teardown.",
+        "Invented interpretation: 'enterprise evaluation criteria' — evidence does not mention enterprise buyers or their criteria.",
+        "Invented interpretation: 'fits enterprise evaluation criteria' — no data traces to enterprise positioning.",
+        "Missing searchable term in heading: 'repositioned' is not in the target list (homepage, positioning, messaging, CTA, conversion) and 'Crisp chat' is only the keyword, not necessarily sufficient alone."
       ],
-      "sectionCostUsd": 0.034895999999999996
+      "sectionCostUsd": 0.03723
     },
     {
       "sectionId": "02-quick-answer",
       "finalVersion": 2,
-      "finalScore": 71,
-      "passed": false,
+      "finalScore": 95,
+      "passed": true,
       "loopsUsed": 1,
-      "riskFlagCount": 2,
-      "riskFlags": [
-        "CAUSAL INFERENCE: 'The new framing assumes visitors already know what customer support platforms do' — this is a claim about visitor knowledge state and strategic intent, not documented in evidence. No data provided about buyer journey stage or A/B test results tied to knowledge assumptions.",
-        "FACTUAL MISATTRIBUTION: The draft presents the page title as if it were the meta description, creating a factual error that would confuse readers cross-checking the evidence."
-      ],
-      "remainingIssueCount": 5,
-      "remainingIssues": [
-        "Word count is ~85 words, exceeding the 75-word ceiling for quick-answer sections by ~10 words",
-        "Final clause 'assumes visitors already know what customer support platforms do, rather than explaining what the product replaces' is interpretive commentary not traceable to evidence — this is a strategic inference about buyer knowledge state, not a documented change",
-        "Meta description quote mismatch: draft quotes '#1 Business Messaging Platform For Startups & SMB's' as if it were the meta description, but evidence shows this is the page title. The actual before meta starts with 'Discover our Business Messaging Platform...'",
-        "The phrase 'with no trial language' is accurate but adds interpretation — evidence shows trial urgency was removed, but framing this as an assumption about buyer knowledge is a causal leap",
-        "Section structure: three full sentences run together without break; for featured snippet optimisation, a tighter two-sentence answer followed by one explanatory sentence would scan better"
-      ],
-      "sectionCostUsd": 0.06927900000000001
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 0,
+      "remainingIssues": [],
+      "sectionCostUsd": 0.07399500000000002
     },
     {
       "sectionId": "03-visual-timeline",
       "finalVersion": 3,
-      "finalScore": 72,
+      "finalScore": 73,
       "passed": false,
       "loopsUsed": 2,
-      "riskFlagCount": 3,
+      "riskFlagCount": 2,
       "riskFlags": [
-        "CAUSATION WITHOUT DATA: 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' — no traffic source data, no visitor intent data, no conversion funnel data provided in evidence",
-        "CAUSAL STATEMENT WITHOUT CONDITION: 'the headline assumes that decision is already made' — no attached 'if [visitor type]' condition",
-        "UNSUPPORTED CLAIM: 'If a visitor has not yet decided to adopt AI, the page offers no argument for why they should' — the evidence does not include full page body copy, only headlines and section headings. Cannot confirm the page 'offers no argument' without body copy evidence"
+        "'the new headline may filter them out before they understand the product' — causal outcome claim with no data showing visitors left or conversion dropped.",
+        "'If category terms outnumber explanatory terms' — implies a test condition that will reveal a problem, but no evidence supports this ratio as a conversion factor."
       ],
       "remainingIssueCount": 9,
       "remainingIssues": [
-        "The ## section heading is clever-only with no searchable terms — 'how the headline repositioned' is not a topic term a Google searcher would use",
-        "H3 'What changed' paragraph is 62 words — exceeds 60-word limit",
-        "H3 'Why it matters' delivers no practical takeaway in the first two sentences — opens with causation claim about visitor assumptions instead",
-        "H3 'What the homepage no longer explains' is 71 words total — exceeds 60-word limit and buries the founder test",
-        "The final H3 block contains a causal statement without an attached condition: 'the headline assumes that decision is already made' — no 'if [visitor type]' attached",
-        "The section contains causation claims without supporting data: 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' — no evidence of traffic source or visitor intent provided",
-        "The final test is not specific to Crisp's evidence — 'count how many times AI appears before the page names a specific customer support problem' could appear in any AI product teardown",
-        "The H3 'What the homepage no longer explains' heading is not searchable — no topic term or company name",
-        "Sentence length variance is low — most sentences in H3 blocks are 15–20 words, very similar rhythm throughout"
+        "Section contains two causal claims without conditions: 'the new headline may filter them out' (conditional language present but no test condition attached) and 'If category terms outnumber explanatory terms' is a weak conditional that implies causation without evidence.",
+        "The term 'category' appears 6 times but is used as expert jargon without plain-language explanation — readers unfamiliar with B2B SaaS 'category creation' strategy will not understand what 'names a category' means in practical terms.",
+        "Paragraph 1 under 'What changed' is 85 words — exceeds the 60-word limit for analytical section body paragraphs.",
+        "Paragraph 1 under 'Why it matters' is 72 words — exceeds the 60-word limit.",
+        "Paragraph 1 under 'What it costs' is 73 words — exceeds the 60-word limit.",
+        "The practical takeaway in 'What it costs' is buried in the third sentence ('Open your homepage and count...') — violates the rule that takeaway must appear in the first two sentences of the H3 block.",
+        "Generic SaaS commentary present: 'The page no longer explains what problem Crisp solves' and 'If visitors arrive unfamiliar with AI support as a category' could appear in any B2B SaaS teardown with 'Crisp' replaced by another company name.",
+        "The opening sentence is template-default structure ('The 2022 headline opened with... The 2026 headline reads...') when the evidence supports a more interesting entry point: the paradox that a customer experience platform removed the word 'human' and replaced it with 'AI'.",
+        "Section word count is approximately 220 words — exceeds the 140–200 word target by 20 words."
       ],
-      "sectionCostUsd": 0.14630999999999994
+      "sectionCostUsd": 0.14573999999999998
     },
     {
       "sectionId": "04-messaging-evolution",
@@ -79,106 +73,122 @@
       "finalScore": 88,
       "passed": true,
       "loopsUsed": 1,
-      "riskFlagCount": 0,
-      "riskFlags": [],
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The final sentence ('…which may signal a move toward a sales-assisted process for a portion of inbound traffic') makes a causation inference not directly supported by the evidence. The evidence shows trial language was removed, but does not confirm a sales-assisted process was introduced. Add a conditional frame: 'which may reflect a move toward…' becomes 'which could reflect…' or 'which suggests the company now serves visitors who…' (already present earlier in the sentence, so this clause is redundant and should be cut)."
+      ],
       "remainingIssueCount": 3,
       "remainingIssues": [
-        "Second paragraph in H3 'Who the new page serves' exceeds 60 words (approx 65 words)",
-        "Section word count approximately 210 words, exceeds 200-word target by 10 words",
-        "Final H3 takeaway test is slightly generic — 'count how many CTAs' could be made more specific to Crisp's actual CTA structure"
+        "Final H3 test is generic ('Does your homepage still assume…') instead of a specific 5-minute action anchored to Crisp's evidence",
+        "Opening sentence uses 'trial-urgency' compound without plain-language definition — not immediately clear to founders unfamiliar with conversion terminology",
+        "Second H3 paragraph ('The page title drops…') reaches 62 words — marginally over the 60-word limit for analytical H3 blocks"
       ],
-      "sectionCostUsd": 0.07615500000000003
+      "sectionCostUsd": 0.07853100000000002
     },
     {
       "sectionId": "05-cta-navigation-evolution",
-      "finalVersion": 3,
-      "finalScore": 78,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 3,
+      "finalVersion": 2,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 1,
+      "riskFlagCount": 2,
       "riskFlags": [
-        "Causal claim without condition: 'The new CTA path assumes category knowledge because the explainer headline was removed' — no evidence proves causation",
-        "Outcome claim without data: 'That count signals whether your page still serves first-time visitors' — no conversion data or user research cited",
-        "The H2 removal is stated as fact but the evidence does not show what replaced it or when the change occurred relative to the CTA additions"
+        "H3 block 2: 'This adds steps between intent and signup' is a causal statement presented as fact, not conditioned on visitor type or intent source — needs 'for visitors who already know they want Crisp' moved to the same sentence or qualified with 'may add'",
+        "H3 block 3: 'Check whether visitors who click those CTAs ever reach signup — or whether they read and leave' implies a binary outcome without acknowledging partial conversions or delayed signup"
       ],
-      "remainingIssueCount": 8,
+      "remainingIssueCount": 3,
       "remainingIssues": [
-        "Section word count is approximately 195 words, exceeding the 120–180 target by 15 words",
-        "The H2 'Meet the business messaging platform...' removal is stated as fact but appears in the 'removed' list — no date or snapshot attribution confirms WHEN it was removed or what replaced it",
-        "The claim 'The new CTA path assumes category knowledge because the explainer headline was removed' is a causal interpretation not supported by the evidence; the evidence shows removals and additions but does not prove assumption of category knowledge",
-        "Second H3 block ('Who this filters out') uses 'category knowledge' twice without plain-language definition on first use",
-        "The phrase 'That count signals whether your page still serves first-time visitors' is a causal claim without a condition",
-        "The H2 section heading lacks the word 'homepage' or 'conversion' — uses only 'CTA path', which is less searchable",
-        "Paragraph 1 under 'What changed' is approximately 65 words, exceeding the 60-word cap",
-        "The final audit instruction is generic ('count how many above-the-fold CTAs require zero explanation') and could apply to any SaaS teardown"
+        "H2 section heading is clever-only ('CTA shift') without 'homepage', 'conversion', or explicit CTA topic term visible to search",
+        "H3 block 2 buries the practical takeaway — opens with a conditional scenario rather than stating the friction cost upfront",
+        "Final test is slightly generic — 'compare your trial start rate' could appear in any CTA teardown, though the Crisp anchor ('Crisp added five') provides some specificity"
       ],
-      "sectionCostUsd": 0.12994500000000003
+      "sectionCostUsd": 0.07559099999999996
     },
     {
       "sectionId": "06-lessons-for-saas-teams",
       "finalVersion": 3,
-      "finalScore": 88,
-      "passed": true,
+      "finalScore": 68,
+      "passed": false,
       "loopsUsed": 2,
-      "riskFlagCount": 2,
+      "riskFlagCount": 5,
       "riskFlags": [
-        "The claim 'That only works if visitors already understand what the product does before the page loads' is presented as causal without qualification — should add condition like 'This strategy typically works best when...' or 'This pattern usually requires...'",
-        "The statement 'adding 8 unlabeled navigation items may fragment attention' uses 'may' appropriately but could be stronger with an attached condition about visitor state"
+        "Unsupported causation: 'when narrowing your headline works and when it backfires' — no conversion or bounce-rate data in evidence",
+        "Speculative claim: 'this approach may work' — no performance data provided",
+        "Speculative claim: 'could reduce visitor clarity' — no visitor behavior data in evidence",
+        "Speculative claim: 'may leave if the headline does not orient them within three seconds' — invented metric with no evidence",
+        "Generic behavioral assumption: 'Visitors who land without knowing your product category may leave' — could appear in any teardown, not specific to Crisp"
       ],
-      "remainingIssueCount": 4,
+      "remainingIssueCount": 15,
       "remainingIssues": [
-        "The phrase 'buyer journey' appears without plain-language definition — expert term used without immediate explanation",
-        "Paragraph 2 of H3 block 'Who should copy this' exceeds 60 words (approximately 65 words)",
-        "The phrase 'positioning mismatch' in H3 block 'Who should NOT copy this' is an expert term used without plain-language definition in the same sentence",
-        "The ## section heading lacks the company name 'Crisp' — though it does contain 'SaaS' and 'homepage navigation', making it searchable but suboptimal for brand SEO"
+        "The term 'category' appears 8 times without plain-language definition — expert jargon overuse",
+        "The term 'hero' appears 4 times without plain-language definition — expert jargon overuse",
+        "The term 'identity-focused positioning' appears once without immediate plain-language definition",
+        "The term 'filter' is used as jargon ('allowing the top of the page to filter') without plain-language explanation",
+        "The opening sentence contains unsupported causation: 'narrowing your headline works and when it backfires' implies conversion outcomes not in evidence",
+        "Paragraph 1 (The pattern) is approximately 68 words — exceeds 60-word limit for H3 block",
+        "Paragraph 2 (Who should copy this) is approximately 62 words — exceeds 60-word limit",
+        "Paragraph 3 (Who should NOT copy this) is approximately 68 words — exceeds 60-word limit",
+        "Multiple causal claims without conditions: 'this approach may work' (no data), 'could reduce visitor clarity' (no evidence), 'may leave if' (speculative)",
+        "Navigation items and section headings are not in **bold quotes** — formatting violation",
+        "Generic paragraph in 'Who should NOT copy this' — the phrase 'Visitors who land without knowing your product category may leave if the headline does not orient them within three seconds' could appear in any SaaS teardown",
+        "Section heading lacks the word 'Crisp' — searchable terms are present but company name is missing",
+        "No verbatim quoted phrases from the homepage (headlines, CTAs) appear in the section",
+        "Word count approximately 230 words — within range but dense",
+        "The final test does not reference Crisp's specific evidence — it's generic analytics advice"
       ],
-      "sectionCostUsd": 0.12799800000000006
+      "sectionCostUsd": 0.14057699999999995
     }
   ],
-  "averageScore": 78.8,
-  "passCount": 2,
-  "failCount": 4,
+  "averageScore": 80,
+  "passCount": 3,
+  "failCount": 3,
   "skippedCount": 0,
-  "totalRewriteLoops": 8,
+  "totalRewriteLoops": 7,
   "weakSections": [
     "01-intro",
-    "02-quick-answer",
     "03-visual-timeline",
-    "05-cta-navigation-evolution"
+    "06-lessons-for-saas-teams"
   ],
   "allRiskFlags": [
-    "CAUSAL CLAIM WITHOUT CONDITION: 'a choice that changes who the page speaks to' — no evidence confirms audience impact.",
-    "OUTCOME CLAIM: 'what those changes signal' — interpretation is not supported by evidence notes.",
-    "STRATEGY ASSERTION: 'marks a clear repositioning' — evidence note explicitly says 'No confirmed strategy is implied.'",
-    "CAUSAL INFERENCE: 'The new framing assumes visitors already know what customer support platforms do' — this is a claim about visitor knowledge state and strategic intent, not documented in evidence. No data provided about buyer journey stage or A/B test results tied to knowledge assumptions.",
-    "FACTUAL MISATTRIBUTION: The draft presents the page title as if it were the meta description, creating a factual error that would confuse readers cross-checking the evidence.",
-    "CAUSATION WITHOUT DATA: 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' — no traffic source data, no visitor intent data, no conversion funnel data provided in evidence",
-    "CAUSAL STATEMENT WITHOUT CONDITION: 'the headline assumes that decision is already made' — no attached 'if [visitor type]' condition",
-    "UNSUPPORTED CLAIM: 'If a visitor has not yet decided to adopt AI, the page offers no argument for why they should' — the evidence does not include full page body copy, only headlines and section headings. Cannot confirm the page 'offers no argument' without body copy evidence",
-    "Causal claim without condition: 'The new CTA path assumes category knowledge because the explainer headline was removed' — no evidence proves causation",
-    "Outcome claim without data: 'That count signals whether your page still serves first-time visitors' — no conversion data or user research cited",
-    "The H2 removal is stated as fact but the evidence does not show what replaced it or when the change occurred relative to the CTA additions",
-    "The claim 'That only works if visitors already understand what the product does before the page loads' is presented as causal without qualification — should add condition like 'This strategy typically works best when...' or 'This pattern usually requires...'",
-    "The statement 'adding 8 unlabeled navigation items may fragment attention' uses 'may' appropriately but could be stronger with an attached condition about visitor state"
+    "HARD CAP TRIGGERED: Unsupported outcome claim 'signals a move from emotional differentiation to capability claims' without data → total capped at 60.",
+    "HARD CAP TRIGGERED: Additional unsupported outcome claim 'fits enterprise evaluation criteria' → reinforces cap at 60.",
+    "Causal statement 'you'll know when to anchor your homepage on product capability instead of buyer identity' lacks attached condition (e.g. 'if your ICP matches Crisp's shift').",
+    "Invented interpretation: 'enterprise evaluation criteria' — evidence contains no mention of enterprise buyers or their criteria.",
+    "Invented interpretation: 'startup-friendly positioning' — evidence mentions 'startups' in meta description but does not confirm positioning strategy.",
+    "'the new headline may filter them out before they understand the product' — causal outcome claim with no data showing visitors left or conversion dropped.",
+    "'If category terms outnumber explanatory terms' — implies a test condition that will reveal a problem, but no evidence supports this ratio as a conversion factor.",
+    "The final sentence ('…which may signal a move toward a sales-assisted process for a portion of inbound traffic') makes a causation inference not directly supported by the evidence. The evidence shows trial language was removed, but does not confirm a sales-assisted process was introduced. Add a conditional frame: 'which may reflect a move toward…' becomes 'which could reflect…' or 'which suggests the company now serves visitors who…' (already present earlier in the sentence, so this clause is redundant and should be cut).",
+    "H3 block 2: 'This adds steps between intent and signup' is a causal statement presented as fact, not conditioned on visitor type or intent source — needs 'for visitors who already know they want Crisp' moved to the same sentence or qualified with 'may add'",
+    "H3 block 3: 'Check whether visitors who click those CTAs ever reach signup — or whether they read and leave' implies a binary outcome without acknowledging partial conversions or delayed signup",
+    "Unsupported causation: 'when narrowing your headline works and when it backfires' — no conversion or bounce-rate data in evidence",
+    "Speculative claim: 'this approach may work' — no performance data provided",
+    "Speculative claim: 'could reduce visitor clarity' — no visitor behavior data in evidence",
+    "Speculative claim: 'may leave if the headline does not orient them within three seconds' — invented metric with no evidence",
+    "Generic behavioral assumption: 'Visitors who land without knowing your product category may leave' — could appear in any teardown, not specific to Crisp"
   ],
   "sectionErrors": [],
-  "finalJudgeScore": 92,
-  "finalJudgePass": true,
+  "finalJudgeScore": 72,
+  "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Add founder takeaways to each H3 block — currently no H3 blocks end with 'Test this on your page' or similar practical observation",
-    "Add a specific runnable test to the final section anchored to Crisp evidence — the current final paragraph describes a general audit, not a specific test"
+    "Remove all three page title claims from 'Quick answer' section — evidence provides only headline and meta description changes, NOT page title changes",
+    "Replace '8 navigation items' with '8 new nav options' throughout — evidence shows navAdded count of 8, not total navigation count",
+    "In CTA section, specify 'five new feature-routing CTAs' instead of 'Crisp added five' — clarify what the count refers to",
+    "Reframe '## Quick answer' to remove page title claims entirely — stick to headline and meta description only",
+    "Add conditional framing to all conversion predictions: change 'may filter them out' to 'may filter out visitors who arrive unfamiliar with the category' with explicit 'if' condition",
+    "Replace 'which may signal' with 'which could suggest, if matched with sales team expansion data' in messaging section"
   ],
-  "seoScore": 81,
+  "seoScore": 84,
   "seoPass": true,
   "seoRequiredFixes": [
-    "Add a screenshot, wayback link, or explicit date reference so readers can verify the 2026 homepage claims independently. The article asks readers to 'open the current Crisp homepage' but does not provide a way to validate that the claims match what they see.",
-    "Clarify in the intro whether this is a descriptive analysis or a normative recommendation. The tone shifts between 'here is what Crisp did' and 'here is what you should do' — be explicit about whether the Crisp strategy is presented as a best practice or as a cautionary case study.",
-    "Add a disclaimer or caveat that the article does not claim the headline change caused conversion improvements. The current framing ('what those changes signal') is appropriate, but the 'lessons for SaaS teams' section risks implying causation without data."
+    "In the 'Quick answer' section, rewrite the opening to lead with the primary keyword ('Crisp homepage CRO teardown') more explicitly — currently it leads with the change itself rather than framing this as a case study worth learning from",
+    "Add a sentence or callout in 'Quick answer' that clarifies the time scope (Jul 2022 to Jun 2026 = 4 years, 3 snapshots) — currently buried in the meta line, not in body text",
+    "Expand the 'Who should NOT copy this' section with a concrete example (e.g., a hypothetical SaaS with <40% branded search traffic) to increase clarity and actionability",
+    "Add a one-sentence transition or thesis statement after the intro that explicitly signals what the reader will learn by the end (currently the intro is strong but the 'so what' for the reader is implied rather than stated)"
   ],
-  "articleWordCount": 1208,
+  "articleWordCount": 1148,
   "repetitionWarnings": [],
   "editorialWarnings": [
-    "[01-intro] Paragraph exceeds 90 words (~116w): \"Between July 2022 and June 2026, Crisp chat…\""
+    "[01-intro] Paragraph exceeds 90 words (~111w): \"Between July 2022 and June 2026, Crisp chat…\""
   ],
   "overLengthWarning": null
 }

@@ -1,0 +1,3 @@
+## Quick answer
+
+Shopify replaced its category-defining headline **"The platform commerce is built on"** with an identity-focused message: **"Be the next AI all-star"**. This positioning assumes visitors already understand what Shopify does before they arrive on the page. If your company still depends on homepage traffic from people comparing categories or researching what your product type is, removing the category explanation may lose those visitors before they scroll.

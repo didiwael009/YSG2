@@ -1,7 +1,17 @@
-## Do not copy this unless your URL already completes the category sentence
+## Should SaaS companies copy Shopify's homepage strategy? When it works and when it doesn't
 
-This is brand-led repositioning — when a company stops explaining what it does and starts recruiting who the buyer should become. That only works if the visitor already knows what the platform is before the headline loads. Shopify's URL completes the sentence "Shopify is a ___" in the buyer's head before the page renders. **"Be the next AI all-star"** lands because the category question is already answered. A company without that recognition who copies this headline structure does not get category ambiguity. They get bounce.
+### The pattern
 
-The prerequisite here is not "strong brand." It is pre-existing category ownership in the buyer's working memory. If your company name does not auto-complete a category sentence when a procurement-stage buyer types it into Google, identity-first messaging creates a proof gap you cannot close with a demo CTA. You are asking the buyer to self-identify before you have told them what they are identifying for.
+Shopify's evolution shows **brand-driven positioning**: when the company name already carries the category, the homepage can stop explaining what the product does and start filtering for the right buyer. The page shifted from teaching the category to recruiting a specific identity. This is not better messaging — it is a different job entirely, and it only works when the brand already does the educational work before the visitor arrives.
 
-The tradeoff of the entire evolution: Shopify traded discovery volume for buyer intent signal, which works when your brand already owns inbound category search. Open your Google Search Console. If more than 40% of your homepage traffic comes from non-branded queries, removing category explanation from your H1 costs you qualified pipeline, not just tire-kickers.
+### Who should copy this
+
+You can afford this move if your company name completes the sentence "I need a [category]" without additional context. If strangers recognize your logo in a LinkedIn ad, or if your URL alone signals what you sell, you have the brand recognition this requires. Category leaders and companies with strong inbound traffic from branded search can shift from explanation to identity without losing qualified pipeline.
+
+### Who should NOT copy this
+
+If your homepage still depends on non-branded search, cold paid traffic, or referrals from content that does not mention your category, removing the product explanation will cost you conversions. Visitors who arrive without knowing what you do will leave the moment they sense the page assumes prior knowledge. The result is not "aspirational positioning" — it is a confused visitor and a broken funnel.
+
+### The test before you copy
+
+Open Google Analytics. Filter your homepage traffic by source. If more than 30% arrives from non-branded search, paid social, or display ads, your visitors do not yet know what your product does before they land. That means your homepage still needs to explain the category, not assume it.
