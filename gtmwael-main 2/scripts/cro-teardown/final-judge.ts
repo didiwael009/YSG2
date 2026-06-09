@@ -44,29 +44,30 @@ export interface FinalJudgeOpts {
 export interface FinalJudgeResult {
   overallScore: number;
   pass: boolean;
-  /** Evidence accuracy: 0–15 */
+  /** V5: Every claim traces to evidence: 0–25 */
   evidenceAccuracy: number;
-  /** Risk control: 0–10 */
+  /** V5: Plain explainer voice, no jargon: 0–20 */
+  plainLanguage: number;
+  /** V5: H3 subheadings in analytical sections, ≤60-word paragraphs: 0–15 */
+  scannability: number;
+  /** V5: ## headings contain company name or searchable topic: 0–10 */
+  searchableHeadings: number;
+  /** V5: Anchored to THIS company, not generic SaaS: 0–15 */
+  specificity: number;
+  /** V5: Sentence length varies, opening fits evidence: 0–10 */
+  rhythmAndOpening: number;
+  /** V5: Practical takeaway per H3, runnable test at end: 0–5 */
+  founderTakeaway: number;
+  /** Legacy alias kept for consumers that read riskControl */
   riskControl: number;
-  /** CRO usefulness: 0–15 */
+  /** Legacy alias kept for consumers that read croUsefulness */
   croUsefulness: number;
-  /** Clarity: 0–20 */
+  /** Legacy alias kept for consumers that read clarity */
   clarity: number;
-  /** Section coherence: 0–10 */
+  /** Legacy alias kept for consumers that read sectionCoherence */
   sectionCoherence: number;
-  /** Phase 4M: CRO/GTM depth — buyer psychology, conversion implication, proof burden: 0–15 */
-  analysisDepth?: number;
-  /** Phase 4M: SaaS founder usefulness — practical takeaways, stage-specific fixes: 0–10 */
-  founderUsefulness?: number;
-  /** Phase 4N: Concision — no repeated conclusions, one idea per paragraph, no padding: 0–10 */
-  concision?: number;
-  /** Phase 4N: Editorial sharpness — section boundaries respected, no cross-section repetition: 0–10 */
-  editorialSharpness?: number;
-  /** Phase 4N: Sections or paragraphs that repeat the same conclusion. */
   repetitionWarnings?: string[];
-  /** Phase 4N: Sections whose analysis bleeds into another section's territory. */
   sectionOverlapWarnings?: string[];
-  /** Phase 4N: Full article word count (body only, excluding frontmatter). */
   articleWordCount?: number;
   weakSections: string[];
   unsupportedClaims: string[];
@@ -74,9 +75,7 @@ export interface FinalJudgeResult {
   requiredFixes: string[];
   optionalImprovements: string[];
   rerunRecommendations: string[];
-  /** Phase 4M: Sections flagged as generic — could apply to any SaaS homepage. */
   genericInsightWarnings?: string[];
-  /** Phase 4M: Sections missing a practical SaaS founder takeaway. */
   missingFounderTakeawayWarnings?: string[];
   model: string;
   costUsd: number;
@@ -226,14 +225,17 @@ function salvageJudgeObject(text: string): Record<string, unknown> | null {
   return {
     overallScore,
     evidenceAccuracy:   num('evidenceAccuracy'),
-    riskControl:        num('riskControl'),
-    croUsefulness:      num('croUsefulness'),
-    clarity:            num('clarity'),
-    sectionCoherence:   num('sectionCoherence'),
-    analysisDepth:      num('analysisDepth'),
-    founderUsefulness:  num('founderUsefulness'),
-    concision:          num('concision'),
-    editorialSharpness: num('editorialSharpness'),
+    plainLanguage:      num('plainLanguage'),
+    scannability:       num('scannability'),
+    searchableHeadings: num('searchableHeadings'),
+    specificity:        num('specificity'),
+    rhythmAndOpening:   num('rhythmAndOpening'),
+    founderTakeaway:    num('founderTakeaway'),
+    // legacy aliases
+    riskControl:        0,
+    croUsefulness:      0,
+    clarity:            0,
+    sectionCoherence:   0,
     articleWordCount:   num('articleWordCount'),
     unsupportedClaims:  unsupportedEmpty ? [] : ['<judge JSON salvage — claims field unparseable>'],
     weakSections: [], riskFlags: [], requiredFixes: [],
@@ -267,25 +269,29 @@ function parseJudgeResponse(
   }
 
   const overallScore      = toInt(obj.overallScore, 100);
-  const evidenceAccuracy  = toInt(obj.evidenceAccuracy, 20);
-  const riskControl       = toInt(obj.riskControl, 15);
+  const evidenceAccuracy  = toInt(obj.evidenceAccuracy, 25);
   const unsupportedClaims = asStringArray(obj.unsupportedClaims);
 
-  // v3 pass: score threshold + evidence accuracy + risk control + no unsupported claims
+  // V5 pass: score threshold + no unsupported claims
   const pass =
     overallScore >= JUDGE_PASS_SCORE &&
-    evidenceAccuracy >= 15 &&
-    riskControl >= 11 &&
     unsupportedClaims.length === 0;
 
   const result: FinalJudgeResult = {
     overallScore,
     pass,
     evidenceAccuracy,
-    riskControl,
-    croUsefulness:    toInt(obj.mechanismQuality ?? obj.croUsefulness,  15),
-    clarity:          toInt(obj.clarity,          15),
-    sectionCoherence: toInt(obj.sectionCoherence, 15),
+    plainLanguage:      toInt(obj.plainLanguage,      20),
+    scannability:       toInt(obj.scannability,       15),
+    searchableHeadings: toInt(obj.searchableHeadings, 10),
+    specificity:        toInt(obj.specificity,        15),
+    rhythmAndOpening:   toInt(obj.rhythmAndOpening,   10),
+    founderTakeaway:    toInt(obj.founderTakeaway,      5),
+    // legacy aliases — not scored in V5 but kept for downstream consumers
+    riskControl:      0,
+    croUsefulness:    0,
+    clarity:          0,
+    sectionCoherence: 0,
     weakSections:        asStringArray(obj.weakSections),
     unsupportedClaims,
     riskFlags:           asStringArray(obj.riskFlags),
@@ -297,9 +303,6 @@ function parseJudgeResponse(
     generatedAt: new Date().toISOString(),
   };
 
-  // v3 optional fields
-  const founderSharpness = typeof obj.founderSharpness !== 'undefined' ? toInt(obj.founderSharpness, 20) : undefined;
-  if (founderSharpness !== undefined) result.founderUsefulness = founderSharpness; // map to existing field
   const repetitionWarn = asStringArray(obj.repetitionWarnings);
   if (repetitionWarn.length > 0) result.repetitionWarnings = repetitionWarn;
 
@@ -313,55 +316,53 @@ const JUDGE_SYSTEM =
 Output ONLY valid JSON. No text before or after the JSON object.
 JSON SAFETY: Use SINGLE quotes inside JSON string values. Never put a raw double-quote inside a JSON string.
 
-Your role: Evaluate the FULL ARTICLE for evidence accuracy, risk control, mechanism quality, founder sharpness, clarity, and section coherence.
+Your role: Evaluate the FULL ARTICLE against the V5 rubric below.
 
 SCORING RUBRIC — score each dimension, then give a holistic overallScore (0–100):
 
-• evidenceAccuracy (0–20)
-  Every factual claim traces to the provided evidence. No invented stats, percentages, thresholds, or dates.
-  PENALISE -4 per claim that introduces a fact not in the evidence.
-  PENALISE -8 per conversion metric, A/B test result, revenue claim, or invented threshold.
+• evidenceAccuracy (0–25)
+  Every factual claim traces to the compressed evidence provided. No invented stats, percentages,
+  thresholds, or dates.
+  PENALISE -5 per claim that introduces a specific fact (number, date, metric) not in the evidence.
+  PENALISE -10 per conversion metric, A/B test result, revenue claim, or invented threshold.
   HARD CAP: Any unsupported factual claim → cap total at 70.
 
-• riskControl (0–15)
-  Interpretations are hedged precisely — once per inference, not once per sentence.
-  No causation claims. No conversion-outcome predictions. No intent attribution.
-  PENALISE -3 per unlabelled interpretation presented as confirmed fact.
-  PENALISE -5 per claim that a change "improved," "drove," or "caused" any outcome.
-  PENALISE -3 per prediction about conversion volume, trial starts, or revenue.
-  PENALISE -3 per sentence that asserts company strategy or intent without evidence.
-  HARD CAP: Any conversion outcome claim → cap total at 65.
+• plainLanguage (0–20)
+  Plain explainer voice throughout. No marketing jargon ("synergies," "holistic," "leverage"),
+  no consultant-speak, no passive voice hiding agency.
+  Short, declarative sentences. Explain the CRO concept in plain terms before applying it.
+  PENALISE -4 per paragraph dense with unexplained jargon.
+  PENALISE -3 per sentence that buries the finding in abstraction.
 
-• mechanismQuality (0–15)
-  Each analytical section (03, 04, 05, 06) names a GTM, buyer-psychology, or conversion principle.
-  Real terminology: "qualification filter," "category claim," "intent signal," "buyer stage mismatch,"
-  "identity recruitment," "aspiration signaling," "procurement-stage targeting."
-  PENALISE -5 per analytical section with no named mechanism — only observations.
-  PENALISE -3 per vague mechanism ("a shift in targeting" instead of a named principle).
+• scannability (0–15)
+  Analytical sections use H3 subheadings that label WHAT is being shown.
+  Paragraphs are ≤60 words. No wall-of-text blocks.
+  PENALISE -3 per analytical section with no H3 subheadings.
+  PENALISE -2 per paragraph that exceeds 60 words without a structural break.
 
-• founderSharpness (0–20)
-  Each analytical section (03, 04, 05, 06) must contain ALL THREE as CONTENT (not as labeled tags):
-  (a) A TRADEOFF — two things in tension, one sentence. Not labeled "The tradeoff:". Just stated.
-  (b) A FOUNDER TEST — the last sentence. A specific condition or audit they can run RIGHT NOW on
-      their own homepage. Not generic. Anchored to what this evidence showed.
-  (c) No prediction of conversion outcomes — the test is an observation prompt, not a forecast.
-  PENALISE -5 per analytical section missing a tradeoff.
-  PENALISE -5 per analytical section with no founder test as last sentence.
-  PENALISE -4 per founder test that is generic ("test your CTAs") with no evidence anchor.
+• searchableHeadings (0–10)
+  Every ## section heading contains the company name OR a searchable topic phrase
+  (e.g., "Shopify homepage CTA copy" not just "CTA Analysis").
+  PENALISE -3 per ## heading that is generic and contains neither the company name nor a specific topic.
 
-• clarity (0–15)
-  Writing is punchy, varied rhythm, no padding. Short sentence. Then a longer explanatory one.
-  PENALISE -2 per filler sentence with no evidence anchor.
-  PENALISE -3 if multiple sections open with identical rhythm (all bold declarative, no variety).
+• specificity (0–15)
+  Analysis is anchored to THIS company's specific evidence — not generic SaaS best-practice recitations.
+  Every analytical paragraph should cite at least one piece of specific evidence (a headline change,
+  a removed nav item, a new CTA label).
+  PENALISE -4 per paragraph that reads like generic SaaS advice with no company-specific anchor.
+  PENALISE -3 per section where the company name could be swapped for any competitor without changing the point.
 
-• sectionCoherence (0–15)
-  Sections form a building argument — not 5 isolated islands.
-  Each section owns one job and does not repeat another section's core conclusion.
-  PENALISE -4 per conclusion that appears in 3+ sections with the same thrust
-    (e.g., "brand-led repositioning" framing repeated in 03, 04, AND 06).
-  PENALISE -3 if the Lessons section restates analysis without converting it to action.
-  PENALISE -2 per paragraph that a reader could skip without losing information.
-  HARD CAP: Same analytical conclusion in 3+ sections → cap overallScore at 82.
+• rhythmAndOpening (0–10)
+  Sentence length varies — short punchy sentences alternate with longer explanatory ones.
+  Article opening fits the evidence (does not make claims the evidence cannot support).
+  PENALISE -3 if all sections open with the same rhythm (all bold statements, no variety).
+  PENALISE -4 if the opening paragraph asserts a conclusion not directly supported by the evidence summary.
+
+• founderTakeaway (0–5)
+  Each H3 block ends with a practical observation the founder can apply to their own homepage.
+  The final section ends with a runnable test — a specific thing to check or change.
+  PENALISE -1 per H3 block with no founder-facing takeaway.
+  PENALISE -2 if the final runnable test is generic ("test your CTA") with no evidence anchor.
 
 MECHANISM NAMES ARE NOT UNSUPPORTED CLAIMS:
 Named interpretive frameworks applied to the evidence are ALLOWED and REQUIRED by the writing system:
@@ -382,15 +383,15 @@ HARD RULES:
 • If requiredFixes is non-empty, rerunRecommendations must name which section(s) to rerun.
 
 PASS CRITERIA:
-overallScore >= 90 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty → pass: true.
+overallScore >= 90 AND unsupportedClaims empty → pass: true.
 Any other combination → pass: false.
 
 CALIBRATION:
-• 90–100: Publication-ready. Every claim sourced. Named mechanism in every section. Tradeoff and
-          founder test woven into every analytical section. No repeated conclusions. Varied rhythm.
-• 80–89:  Passes with notes. 1–2 fixable issues.
-• 70–79:  Needs fixes. Missing mechanisms, repeated conclusions, or unsupported claims.
-• Below 70: Hard cap fired. Unsupported claims or conversion-outcome predictions present.`;
+• 90–100: Publication-ready. Every claim sourced. Plain voice throughout. H3 structure present.
+          Headings searchable. Analysis company-specific. Rhythm varied. Founder takeaways present.
+• 80–89:  Strong but 1–2 fixable issues (a generic heading, a jargon-heavy paragraph).
+• 70–79:  Needs fixes. Generic sections, jargon, or unsupported claims present.
+• Below 70: Hard cap fired. Unsupported factual claims present.`;
 
 // ─── Main exported function ───────────────────────────────────────────────────
 
@@ -428,38 +429,45 @@ FULL ARTICLE:
 ${articleText}
 ---
 
-Score each rubric dimension. Apply pass logic: overallScore >= 85 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty.
+Score each V5 rubric dimension. Apply pass logic: overallScore >= 90 AND unsupportedClaims empty.
 
 EVIDENCE CHECK — answer before scoring:
 1. Is any specific metric, percentage threshold, or conversion rate cited that is NOT in the evidence above? List the exact phrase.
 2. Does any sentence predict a conversion outcome ("trial-start volume will...", "this will cost you pipeline") without data? List the exact phrase.
 3. Does any sentence assert company intent or internal strategy ("Shopify decided to...", "their strategy was...")? List the exact phrase.
 
-MECHANISM CHECK — answer before scoring:
-4. Does each analytical section (03, 04, 05, 06) name a GTM, buyer-psychology, or conversion principle with real terminology?
-5. Which sections have only observations with no named mechanism?
+PLAIN LANGUAGE CHECK — answer before scoring:
+4. Are there paragraphs dense with unexplained jargon or consultant-speak? List the section and phrase.
+5. Does the article explain CRO concepts in plain terms before applying them?
 
-FOUNDER-SHARPNESS CHECK — answer before scoring:
-6. Does each analytical section (03, 04, 05, 06) contain a tradeoff woven into the prose (two things in tension, one sentence — NOT labeled)?
-7. Is the last sentence of each analytical section a specific, actionable founder test anchored to this evidence?
-8. Which sections fail either check?
+SCANNABILITY CHECK — answer before scoring:
+6. Do analytical sections have H3 subheadings? Which sections are missing them?
+7. Are there paragraphs exceeding 60 words? Count them.
 
-COHERENCE CHECK — answer before scoring:
-9. Count how many sections contain the "brand-led repositioning / category ownership" conclusion. (Target: 1, in 03 or 06)
-10. Count how many sections mention CTA friction direction. (Target: 1, in 05)
-11. Are there any paragraphs that exceed 90 words without introducing a new idea?
+SEARCHABLE HEADINGS CHECK — answer before scoring:
+8. Do all ## headings contain the company name or a specific searchable topic phrase?
+9. List any ## heading that is generic (no company name, no specific topic).
+
+SPECIFICITY CHECK — answer before scoring:
+10. Is each analytical paragraph anchored to specific evidence from this company?
+11. Which paragraphs read like generic SaaS advice that could apply to any homepage?
+
+FOUNDER TAKEAWAY CHECK — answer before scoring:
+12. Does each H3 block end with a practical takeaway for a SaaS founder?
+13. Does the final section end with a specific runnable test anchored to this evidence?
 
 Required JSON shape:
 {
   "overallScore": <0–100>,
-  "pass": <boolean — overallScore >= 85 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty>,
-  "evidenceAccuracy": <0–20>,
-  "riskControl": <0–15>,
-  "mechanismQuality": <0–15>,
-  "founderSharpness": <0–20>,
-  "clarity": <0–15>,
-  "sectionCoherence": <0–15>,
-  "weakSections": ["<section ID>"],
+  "pass": <boolean — overallScore >= 90 AND unsupportedClaims empty>,
+  "evidenceAccuracy": <0–25>,
+  "plainLanguage": <0–20>,
+  "scannability": <0–15>,
+  "searchableHeadings": <0–10>,
+  "specificity": <0–15>,
+  "rhythmAndOpening": <0–10>,
+  "founderTakeaway": <0–5>,
+  "weakSections": ["<section ID or heading>"],
   "unsupportedClaims": ["<exact phrase from article that is not in the evidence>"],
   "riskFlags": ["<interpretation presented as fact, causation claim, or conversion prediction>"],
   "requiredFixes": ["<specific, actionable fix>"],
