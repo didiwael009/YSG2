@@ -348,7 +348,17 @@ async function main(): Promise<void> {
   if (fs.existsSync(lessonCardsPath)) {
     const llmCards = JSON.parse(fs.readFileSync(lessonCardsPath, 'utf-8'));
     if (Array.isArray(llmCards) && llmCards.length > 0) {
-      structuredData.lessonCards = llmCards;
+      // Normalise field names: lesson-cards.json may use `category` instead of `tag`
+      // (the TypeScript type requires `tag`). Map it here so published .ts files are
+      // always type-correct without needing every upstream generator to know the type.
+      structuredData.lessonCards = llmCards.map((card: Record<string, unknown>) => {
+        if ('category' in card && !('tag' in card)) {
+          const { category, number: _n, ...rest } = card;
+          return { ...rest, tag: category };
+        }
+        const { number: _n, ...rest } = card;
+        return rest;
+      });
       console.log(`✅  Loaded ${llmCards.length} LLM-generated lesson cards from section-evidence/lesson-cards.json`);
     }
   }

@@ -1,26 +1,22 @@
 [
   {
-    "number": "01",
     "title": "Vercel replaced \"Develop.Preview.Ship.\" with \"Build and deploy on the AI Cloud.\"",
-    "category": "Positioning",
-    "body": "The original headline described a workflow. The new headline names a category: **\"the AI Cloud\"**. This shift suggests Vercel is positioning itself as infrastructure for a specific era, not just a deployment tool. The change likely signals a move from product-led messaging to category-ownership framing—anchoring the brand to AI rather than developer workflow alone."
+    "body": "The original headline described a workflow. The new headline names a category: **\"the AI Cloud\"**. This shift suggests Vercel is positioning itself as infrastructure for a specific era, not just a deployment tool. The change likely signals a move from product-led messaging to category-ownership framing—anchoring the brand to AI rather than developer workflow alone.",
+    "tag": "Positioning"
   },
   {
-    "number": "02",
     "title": "Vercel removed \"Contact Us\" and \"Login\" from navigation — that is a conversion path decision",
-    "category": "Navigation",
-    "body": "Both CTAs served low-intent visitors: **\"Contact Us\"** for enterprise inquiries, **\"Login\"** for returning users. Removing them from primary navigation suggests Vercel is optimising for a different entry point—likely self-service sign-up or product exploration. The change may indicate a shift toward product-led growth over sales-assisted funnels, or simply a cleaner navigation hierarchy for new visitors."
+    "body": "Both CTAs served low-intent visitors: **\"Contact Us\"** for enterprise inquiries, **\"Login\"** for returning users. Removing them from primary navigation suggests Vercel is optimising for a different entry point—likely self-service sign-up or product exploration. The change may indicate a shift toward product-led growth over sales-assisted funnels, or simply a cleaner navigation hierarchy for new visitors.",
+    "tag": "Navigation"
   },
   {
-    "number": "03",
     "title": "8 new navigation items added — all AI-specific product names, not generic categories",
-    "category": "Strategy",
-    "body": "The new menu includes **\"AI Gateway\"**, **\"Sandbox\"**, **\"Vercel Agent\"**, **\"AI SDK\"**, and **\"v0\"**. These are branded product names, not category labels like the earlier **\"Templates\"** or **\"Integrations\"**. This approach suggests Vercel is building a portfolio of discrete AI tools rather than positioning as a single platform. It also increases navigation complexity, which may signal confidence in a more sophisticated buyer."
+    "body": "The new menu includes **\"AI Gateway\"**, **\"Sandbox\"**, **\"Vercel Agent\"**, **\"AI SDK\"**, and **\"v0\"**. These are branded product names, not category labels like the earlier **\"Templates\"** or **\"Integrations\"**. This approach suggests Vercel is building a portfolio of discrete AI tools rather than positioning as a single platform. It also increases navigation complexity, which may signal confidence in a more sophisticated buyer.",
+    "tag": "Strategy"
   },
   {
-    "number": "04",
     "title": "Vercel removed the H2 \"obsessive focus on end-user performance\" — what replaced it matters",
-    "category": "Messaging",
-    "body": "The 2021 subheading promised **\"the best developer experience with an obsessive focus on end-user performance\"**. That line is gone. The current page does not lead with performance as the primary value prop. This suggests Vercel's messaging now prioritises AI capability over speed. The removal points to a repositioning: the team likely believes buyers are comparing AI infrastructure options, not performance benchmarks."
+    "body": "The 2021 subheading promised **\"the best developer experience with an obsessive focus on end-user performance\"**. That line is gone. The current page does not lead with performance as the primary value prop. This suggests Vercel's messaging now prioritises AI capability over speed. The removal points to a repositioning: the team likely believes buyers are comparing AI infrastructure options, not performance benchmarks.",
+    "tag": "Messaging"
   }
 ]
