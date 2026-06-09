@@ -1,0 +1,47 @@
+[
+  {
+    "month": "2022-07",
+    "slotStart": "2022-07",
+    "slotEnd": "2022-12",
+    "timestamp": "20221015103710",
+    "originalUrl": "https://crisp.chat/en/",
+    "screenshotPath": "/cro-teardowns/crisp/archive-monthly/2022-07.webp",
+    "selectedPath": "/cro-teardowns/crisp/selected/2022-07.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "2023-07",
+    "slotStart": "2023-07",
+    "slotEnd": "2023-12",
+    "timestamp": "20231017170036",
+    "originalUrl": "https://crisp.chat/en/",
+    "screenshotPath": "/cro-teardowns/crisp/archive-monthly/2023-07.webp",
+    "selectedPath": "/cro-teardowns/crisp/selected/2023-07.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "current",
+    "slotStart": "current",
+    "slotEnd": "current",
+    "timestamp": null,
+    "originalUrl": "https://crisp.chat/en/",
+    "screenshotPath": "/cro-teardowns/crisp/archive-monthly/current-live.webp",
+    "selectedPath": "/cro-teardowns/crisp/selected/current-live.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  }
+]

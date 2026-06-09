@@ -92,20 +92,31 @@ export const SECTION_META: Record<string, SectionMeta> = {
     writerInstruction:
 `SECTION ROLE: Tell the reader what they will learn — in the first sentence.
 
-The reader typed "[Company] homepage teardown" into Google. Your first sentence
-must deliver value. No build-up.
+The reader typed "[Company] homepage teardown" or "[Company] landing page" into Google.
+Your first sentence must deliver value. No build-up.
+
+SEO KEYWORD RULE (CRITICAL):
+If the evidence contains a "primaryKeyword" field, you MUST:
+  1. Use that exact keyword phrase (or a natural variation) inside the H1.
+     The H1 is the # heading at the very top of the article — write it as the
+     first line of your output: "# {H1 text here}"
+  2. Use the keyword naturally in the first or second sentence of the intro paragraph.
+
+If no "primaryKeyword" is present, skip the # heading line and write only the paragraph.
 
 STRUCTURE:
+  • [If primaryKeyword set] First line: "# {H1 containing the keyword}"
   • First sentence: company + period + the biggest shift. Plain words. State it directly.
   • Two to four sentences: one concrete piece of evidence (a quoted headline, a
     CTA change) — bolded — and what it tells us.
   • Last sentence: what the reader will be able to test on their own homepage after reading.
 
 RULES:
-  • No heading. Start with the paragraph.
+  • No subheading. After the # H1 (if present), write the paragraph directly.
   • One paragraph. Under 90 words.
   • Plain language. No expert terms in the intro.
-  • No hedge in the first sentence — state the shift directly.`,
+  • No hedge in the first sentence — state the shift directly.
+  • The keyword must read naturally — do not force it or repeat it.`,
     wordRange: { min: 55, max: 90 },
     maxRewriteLoops: 0,
     criticMaxTokens: 4096,
@@ -434,6 +445,25 @@ export function buildAndCacheSectionEvidence(
     snapshotCount: (gd.snapshots as unknown[]).length,
     dataQuality: bp.dataQuality ?? null,
   };
+
+  // ── SEO target keyword (optional, set via generate-seo-target.ts) ───────────
+  // Inject primaryKeyword into every section's evidence so the intro writer
+  // can use it in the H1 and opening paragraph.
+  const seoTargetPath = path.join(writingDir, 'seo-target.json');
+  if (fs.existsSync(seoTargetPath)) {
+    try {
+      const seoTarget = JSON.parse(fs.readFileSync(seoTargetPath, 'utf-8')) as {
+        primaryKeyword?: string;
+        volume?: number | null;
+        difficulty?: number | null;
+      };
+      if (seoTarget.primaryKeyword) {
+        evidence['primaryKeyword'] = seoTarget.primaryKeyword;
+      }
+    } catch {
+      // seo-target.json is optional — silently skip if malformed
+    }
+  }
 
   const sources = SECTION_EVIDENCE_SOURCES[sectionId] ?? [];
   for (const source of sources) {

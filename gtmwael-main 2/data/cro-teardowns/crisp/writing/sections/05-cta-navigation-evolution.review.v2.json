@@ -1,0 +1,44 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Section is 172 words, exceeds 180-word cap by ~8%",
+    "H2 heading is clever-only ('CTAs shifted from free trial to AI agent') — missing 'Crisp homepage' or 'CTA' as searchable term anchor",
+    "First H3 block (56 words) buries the analytical finding — opens with a list of removed/added CTAs instead of the takeaway",
+    "Second H3 block makes an unsupported causal claim: 'may encounter friction if they do not already know what Crisp does' — no bounce rate, exit rate, or user behavior data in evidence",
+    "Second H3 block uses conditional phrasing ('may encounter friction') but the claim is still outcome-oriented without supporting data",
+    "Generic paragraph detected: H3 block 3, sentence 2–3 ('Compare to your own page. If your homepage leads with...') could appear in any CTA teardown",
+    "Final test is somewhat generic — 'count CTAs before first H2' is runnable but not anchored to Crisp's specific trade-off (AI-first vs. category explainer)",
+    "No bold quotes around verbatim CTA text in H3 block 1: 'Get Started', 'Try Crisp for free', 'Get your AI Agent', 'Start Free Trial', 'Request a demo', 'Book a demo', 'HugoYour best AI support agent teammate.' — all appear in plain quotes",
+    "H3 block 2 makes a design assumption ('visitors who arrive from broad search terms') without evidence of traffic composition or keyword data"
+  ],
+  "requiredFixes": [
+    "Change H2 to include 'Crisp' and 'homepage' or 'CTA': e.g. 'Crisp's homepage CTA path: from free trial to AI agent, 2022–2026'",
+    "Wrap all verbatim CTA text in **bold quotes**: **'Get Started'**, **'Try Crisp for free'**, **'Get your AI Agent'**, etc.",
+    "Rewrite H3 block 1 opening to lead with the finding: 'Crisp's homepage now prioritises AI agent CTAs over free-trial buttons. The company removed **'Get Started'** and **'Try Crisp for free'**, replacing them with...'",
+    "Remove or qualify the causal claim in H3 block 2: either delete 'may encounter friction' or reframe as 'the new CTA path assumes the visitor already knows Crisp's category' (observation, not outcome)",
+    "Anchor the final test to Crisp's specific trade-off: 'Open Crisp's Jun 2026 homepage. Note that **'Get your AI Agent'** appears before any H2 explaining what Crisp does. If your homepage CTAs assume category knowledge, count how many above-the-fold CTAs require zero explanation.'",
+    "Delete or rewrite the generic sentence 'Compare to your own page. If your homepage leads with...' to tie back to Crisp's evidence",
+    "Trim section to 180 words or under"
+  ],
+  "riskFlags": [
+    "Causal/outcome claim without data: 'Visitors who arrive from broad search terms... may encounter friction if they do not already know what Crisp does' — no bounce rate, exit rate, or keyword data provided",
+    "Design assumption without evidence: 'most traffic comes from category searches' — evidence does not include traffic composition or top landing keywords"
+  ],
+  "seoNotes": [
+    "H2 heading lacks the company name ('Crisp') and does not anchor a searchable term like 'homepage' or 'CTA evolution' — reduces heading discoverability",
+    "Section references 'AI agent' and 'free trial' CTA patterns, which are searchable terms, but the H2 does not capture them in a way Google would index as a standalone answer",
+    "No meta description or title tag guidance — section does not help the article rank for 'Crisp homepage CTA' or 'SaaS CTA evolution'"
+  ],
+  "rewriteInstruction": "Rewrite the section to achieve an 85+ score. First, correct the H2 to include 'Crisp' and 'homepage' (e.g. 'Crisp's homepage CTA path: from free trial to AI agent'). Second, wrap every verbatim CTA quote in **bold quotes**. Third, rewrite H3 block 1 to open with the finding ('Crisp now prioritises AI agent CTAs') before listing the evidence. Fourth, remove the unsupported friction claim in H3 block 2 — state only what the evidence shows: 'The new CTA path assumes category knowledge because the explainer H2 was removed.' Fifth, anchor the final test to Crisp's specific trade-off: 'Open Crisp's Jun 2026 homepage and note that **'Get your AI Agent'** appears before any category explainer. If your homepage does the same, count how many CTAs above the fold require zero explanation.' Sixth, delete the generic sentence 'Compare to your own page.' Seventh, trim to 180 words.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

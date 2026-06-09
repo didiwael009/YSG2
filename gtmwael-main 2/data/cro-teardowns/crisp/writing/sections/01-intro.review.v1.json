@@ -1,0 +1,40 @@
+{
+  "score": 76,
+  "pass": false,
+  "issues": [
+    "The draft makes an unsupported causal claim: 'a choice that changes who the page speaks to and what outcome it promises' — the evidence shows what changed but does not confirm intention or outcome.",
+    "The phrase 'marks a clear repositioning' asserts strategy without evidence. The note explicitly states 'No confirmed strategy is implied.'",
+    "The final sentence promises to 'show what changed, what those changes signal' — but 'signal' implies interpretation beyond what the evidence supports.",
+    "Introduction exceeds 90 words (approximately 115 words).",
+    "The opening sentence does not directly answer the search query 'Crisp chat homepage teardown' — it describes one change but does not name the biggest shift.",
+    "Generic phrasing: 'how to check whether your homepage is still aligned with the buyer you're trying to reach' — could appear in any homepage teardown."
+  ],
+  "requiredFixes": [
+    "Remove or condition the claim 'a choice that changes who the page speaks to and what outcome it promises' — replace with observable fact: 'The shift replaces human-first language with AI-augmented support language.'",
+    "Replace 'marks a clear repositioning' with 'replaces the positioning frame' or 'shifts the messaging frame' to avoid asserting unconfirmed strategy.",
+    "Revise final sentence to remove generic buyer-alignment language. Replace with specific, runnable test tied to Crisp's evidence: e.g., 'This teardown shows what changed in the headline, meta description, and page title — and how to audit whether your homepage headline addresses a problem or describes your product.'",
+    "Cut introduction to 90 words or fewer. Remove redundant phrasing (e.g., 'The shift marks' + 'The page also shifted' can be consolidated).",
+    "Rewrite opening sentence to answer the search query directly: state the biggest shift first, not one specific element change."
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM WITHOUT CONDITION: 'a choice that changes who the page speaks to' — no evidence confirms audience impact.",
+    "OUTCOME CLAIM: 'what those changes signal' — interpretation is not supported by evidence notes.",
+    "STRATEGY ASSERTION: 'marks a clear repositioning' — evidence note explicitly says 'No confirmed strategy is implied.'"
+  ],
+  "seoNotes": [
+    "POSITIVE: Heading includes 'Crisp Chat Homepage Teardown' and 'Messaging Platform' — searchable terms present.",
+    "POSITIVE: Company name and primary keyword ('Crisp chat') appear in the first sentence.",
+    "NEGATIVE: Opening sentence does not directly answer the search query — it describes one change rather than naming the biggest shift (which per evidence is the headline rewrite + AI repositioning + navigation overhaul)."
+  ],
+  "rewriteInstruction": "Rewrite to 90 words or fewer. Open with a direct answer to the search query: state the biggest shift (headline rewrite + AI repositioning) in the first sentence. Remove all causal claims ('changes who the page speaks to', 'marks a clear repositioning', 'what those changes signal'). Replace with observable facts: what text changed, when, and what the new language emphasizes. Replace the generic final sentence with a specific test: e.g., 'how to check whether your homepage headline addresses a buyer problem or describes your product category.' Consolidate redundant phrasing. Ensure every claim traces to the evidence without asserting strategy or outcome.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

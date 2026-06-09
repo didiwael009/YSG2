@@ -1,45 +1,20 @@
 {
-  "publishedAt": "2026-06-09T12:01:12.150Z",
+  "publishedAt": "2026-06-09T12:48:22.716Z",
   "slug": "vercel",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
-    "finalJudgePass": false,
-    "finalJudgeScore": 72,
+    "finalJudgePass": true,
+    "finalJudgeScore": 93,
     "seoPass": false,
     "seoScore": 0,
-    "unsupportedClaims": [
-      "After reading this teardown, you will know how to check whether your homepage still matches the way buyers now talk about your category.",
-      "The new headline does not contain a workflow explanation — that framing is gone from the primary headline entirely.",
-      "The homepage no longer explains what the product does in the headline.",
-      "The product explanation is no longer in the headline — it has moved to section headings, visuals, and body copy.",
-      "That is not automatically a problem, but it is a deliberate trade worth knowing about.",
-      "three steps in a developer's daily workflow",
-      "categories that appear in deployment tool comparisons rather than infrastructure procurement",
-      "categories that appear in content aimed at teams evaluating platform-level decisions",
-      "If your traffic comes primarily through brand search or referral, the headline may not need to explain the category.",
-      "If it comes through non-branded search, that explanation is no longer in the headline.",
-      "If a visitor has not heard of Vercel's products, the new CTAs may function as navigation rather than conversion triggers.",
-      "That assumes your brand name already carries the category explanation before the visitor lands.",
-      "If your traffic comes from non-branded search, every CTA needs to work without prior product knowledge.",
-      "Five snapshots over five years show updates in one direction.",
-      "Vercel made small, consistent updates in the same direction across 5 snapshots over roughly 5 years.",
-      "This is incremental repositioning: small updates in the same direction that compound into a brand shift.",
-      "Each change narrowed who the page speaks to and what it assumes they already know.",
-      "This pattern assumes your company name already carries the category explanation before the visitor lands.",
-      "The test: if a stranger can guess what your product does from your URL alone, you have the brand recognition this requires.",
-      "that only makes sense if visitors already know 'Vercel deploys things.'",
-      "If your homepage still explains what your product is, you likely depend on visitors who have never heard of you.",
-      "If your traffic shifts toward cold audiences who do not recognize your brand, a headline that assumes category knowledge may not explain the product to them."
-    ]
+    "unsupportedClaims": []
   },
   "blockedReasons": [
-    "Final judge FAIL — score 72/100 (need ≥ 90)",
-    "22 unsupported claim(s): After reading this teardown, you will know how to check whether your homepage still matches the way buyers now talk about your category.; The new headline does not contain a workflow explanation — that framing is gone from the primary headline entirely.",
     "seo-audit.json not found — run Phase 4D first"
   ],
   "articlePath": "src/content/cro-teardown/articles/vercel.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [],
   "fieldsOverridden": [
     "metaTitle"

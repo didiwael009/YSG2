@@ -1,0 +1,46 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "The ## section heading is clever-only with no searchable terms — 'how the headline repositioned' is not a topic term a Google searcher would use",
+    "H3 'What changed' paragraph is 62 words — exceeds 60-word limit",
+    "H3 'Why it matters' delivers no practical takeaway in the first two sentences — opens with causation claim about visitor assumptions instead",
+    "H3 'What the homepage no longer explains' is 71 words total — exceeds 60-word limit and buries the founder test",
+    "The final H3 block contains a causal statement without an attached condition: 'the headline assumes that decision is already made' — no 'if [visitor type]' attached",
+    "The section contains causation claims without supporting data: 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' — no evidence of traffic source or visitor intent provided",
+    "The final test is not specific to Crisp's evidence — 'count how many times AI appears before the page names a specific customer support problem' could appear in any AI product teardown",
+    "The H3 'What the homepage no longer explains' heading is not searchable — no topic term or company name",
+    "Sentence length variance is low — most sentences in H3 blocks are 15–20 words, very similar rhythm throughout"
+  ],
+  "requiredFixes": [
+    "Change ## heading to include 'Crisp homepage' AND a searchable topic term such as 'positioning' or 'messaging' (e.g. 'Crisp homepage: how positioning shifted from human touch to AI automation')",
+    "Split H3 'What changed' paragraph into two: first paragraph covers headline change only (under 60 words), second paragraph covers meta description change (under 60 words)",
+    "Rewrite H3 'Why it matters' opening to deliver the practical takeaway in the first sentence: 'This change makes the page work only for visitors who already decided to adopt AI support. If your visitor has not made that decision, the headline skips the case for automation and jumps straight to implementation.'",
+    "Attach a condition to the causation claim in H3 'Why it matters': change 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' to 'If Crisp's traffic is dominated by bottom-of-funnel buyers comparing AI tools, this works. If traffic includes mid-funnel buyers still evaluating automation, the page skips the case they need.'",
+    "Make the final test specific to Crisp's evidence: 'Open the current Crisp homepage. The 2026 version repeats 'AI' in the H1 ('Augment your customer experience. AI made to support your team & customers'), the first section heading, and the subhead — before naming a single customer support problem. Count how many AI mentions appear before the first named problem (late reply times, missed chats, repetitive questions). If AI appears 3+ times first, your page assumes the visitor already decided to adopt AI.'",
+    "Change H3 'What the homepage no longer explains' heading to a searchable version: 'What Crisp's homepage no longer argues'",
+    "Vary sentence length in H3 'Why it matters' — currently all sentences are 15–20 words. Insert one short sentence (under 10 words) and one longer sentence (25+ words) to create rhythm."
+  ],
+  "riskFlags": [
+    "CAUSATION WITHOUT DATA: 'That shift suggests the page now targets buyers who arrive already comparing AI support tools' — no traffic source data, no visitor intent data, no conversion funnel data provided in evidence",
+    "CAUSAL STATEMENT WITHOUT CONDITION: 'the headline assumes that decision is already made' — no attached 'if [visitor type]' condition",
+    "UNSUPPORTED CLAIM: 'If a visitor has not yet decided to adopt AI, the page offers no argument for why they should' — the evidence does not include full page body copy, only headlines and section headings. Cannot confirm the page 'offers no argument' without body copy evidence"
+  ],
+  "seoNotes": [
+    "NEGATIVE: The ## section heading 'how the headline repositioned between 2022 and 2026' is not searchable — no one searches 'how headline repositioned'. Replace with 'Crisp homepage positioning' or 'Crisp messaging shift'",
+    "NEGATIVE: The H3 'What the homepage no longer explains' is not searchable — no topic term, no company name",
+    "POSITIVE: The ## heading includes the company name 'Crisp' and a date range, which helps with long-tail search visibility",
+    "POSITIVE: The section uses the exact verbatim headline quotes in bold, which helps with brand-name + feature searches"
+  ],
+  "rewriteInstruction": "Rewrite the section to fix five problems: (1) Change the ## heading to include 'Crisp homepage' AND a searchable topic term like 'positioning' or 'messaging shift'. (2) Deliver the practical takeaway in the first sentence of H3 'Why it matters' — state what the change means for the visitor, not what Crisp assumes. (3) Attach a condition to the causation claim: 'If Crisp's traffic is mostly [visitor type], this works. If traffic includes [other visitor type], the page skips [what they need].' (4) Make the final test specific to Crisp's evidence — quote the exact H1 and section headings from the 2026 screenshot, then tell the founder to count AI mentions before the first named problem. (5) Vary sentence length in H3 'Why it matters' by inserting one short sentence (under 10 words) and one longer sentence (25+ words).",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 10,
+    "plainLanguage": 16,
+    "scannability": 6,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

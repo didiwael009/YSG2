@@ -1,0 +1,40 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Word count violation: draft is ~85 words, exceeds 75-word cap for quick-answer section",
+    "Third sentence contains unsupported causal claim: 'may lose clarity by leading with AI' — no evidence provided that visitors were lost or that clarity declined",
+    "Third sentence is generic advice that could appear in any AI-positioning teardown, not anchored to Crisp's specific evidence",
+    "No bold quotes used for verbatim website copy ('messaging platform', 'AI-powered customer support platform') — required fix",
+    "Second sentence makes an assumption claim ('This positioning assumes visitors already understand...') without evidence of visitor comprehension or testing",
+    "Third sentence uses conditional causal language ('may lose clarity') but the condition is vague ('companies still introducing their category') and not tied to Crisp's evidence"
+  ],
+  "requiredFixes": [
+    "Reduce word count to 50–75 words (currently ~85)",
+    "Wrap all verbatim website copy in **bold quotes**: **'Give your customer experience a human touch'**, **'Augment your customer experience. AI made to support your team & customers.'**, **'#1 Business Messaging Platform For Startups & SMB's'**, **'The AI Customer Support Platform for Every Business'**",
+    "Remove or reframe the assumption claim in sentence 2 ('This positioning assumes...') — no evidence provided about visitor understanding",
+    "Remove or condition the causal advice in sentence 3 ('may lose clarity') — currently reads as universal advice, not grounded in Crisp's specific evidence",
+    "Anchor sentence 3 to Crisp's specific changes (e.g., removal of free-trial urgency, shift from startup/SMB to 'every business') rather than generic AI-positioning advice"
+  ],
+  "riskFlags": [
+    "Sentence 2: 'This positioning assumes visitors already understand what a customer support platform does' — assumption claim without visitor data or comprehension evidence",
+    "Sentence 3: 'may lose clarity by leading with AI before explaining what the product actually replaces' — causal claim without conversion data, testing results, or clarity metrics"
+  ],
+  "seoNotes": [
+    "Positive: Section heading includes company name ('Crisp') and searchable term ('homepage')",
+    "Positive: Draft mentions 'AI-powered customer support platform' which aligns with primary keyword intent",
+    "Negative: No verbatim quotes bolded — reduces snippet extraction likelihood",
+    "Negative: Word count exceeds Google's typical featured snippet length preference (40–60 words)"
+  ],
+  "rewriteInstruction": "Trim to 50–75 words. Lead with the factual change: headline, meta description, and page title all shifted from startup/SMB messaging platform to AI customer support platform for every business. Use **bold quotes** around all verbatim copy ('Give your customer experience a human touch' → 'Augment your customer experience. AI made to support your team & customers'). Anchor the third sentence to Crisp's specific evidence: note that the new meta removed free-trial urgency and exclamatory language, shifting to neutral category definition. Delete the generic advice about 'companies still introducing their category' — that claim has no grounding in Crisp's evidence and could appear in any AI teardown. Keep it factual: what changed, what disappeared, what arrived.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

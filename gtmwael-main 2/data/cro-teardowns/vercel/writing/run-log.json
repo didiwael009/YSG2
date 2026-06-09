@@ -1430,5 +1430,85 @@
     "ok": false,
     "detail": "score 72/100 — FAIL — $0.0488",
     "ts": "2026-06-09T11:59:00.836Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T12:47:12.439Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T12:47:12.441Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T12:47:12.441Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T12:47:12.442Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T12:47:12.442Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T12:47:12.442Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-09T12:47:12.445Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": true,
+    "detail": "4 cards, 0 warning(s) — $0.0178",
+    "ts": "2026-06-09T12:47:27.648Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0178",
+    "ts": "2026-06-09T12:47:27.649Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 1185 words",
+    "ts": "2026-06-09T12:47:27.655Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Vercel homepage CRO teardown",
+    "ts": "2026-06-09T12:47:27.657Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T12:47:27.661Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 93/100 — PASS ✓ — $0.0376",
+    "ts": "2026-06-09T12:47:59.738Z"
   }
 ]

@@ -1,0 +1,48 @@
+{
+  "score": 71,
+  "pass": false,
+  "issues": [
+    "The headline 'Augment your customer experience. AI made to support your team & customers.' is missing bold quotes around the second sentence — only the first is bolded",
+    "Paragraph 1 ('What changed') is ~70 words — exceeds 60-word limit",
+    "Paragraph 2 ('Why it matters') is ~80 words — exceeds 60-word limit",
+    "Paragraph 3 ('What it costs') is ~85 words — exceeds 60-word limit",
+    "The phrase 'The page now speaks to buyers one decision deeper in the category' is a causal claim without supporting evidence — there is no data showing buyer stage or decision depth",
+    "The claim 'It may confuse visitors who are still comparing live chat platforms' is speculative conversion outcome without data",
+    "The phrase 'The page stopped framing the product as a way to preserve something human' is interpretive — the evidence shows a headline change, not a documented strategic reframe",
+    "The final test ('remove the word describing your category') is generic and could appear in any teardown — not anchored to Crisp-specific evidence",
+    "The opening sentence uses abstract nouns stacked together: 'product claim about style, not capability' — three abstract nouns in sequence",
+    "No mention of the meta description change, which is present in the evidence and supports the positioning shift observation",
+    "The section is 196 words — within limit but at the upper bound"
+  ],
+  "requiredFixes": [
+    "Bold both sentences of the current headline: **'Augment your customer experience. AI made to support your team & customers.'**",
+    "Break paragraph 1 into two parts at the sentence starting 'The page stopped framing...' to get both under 60 words",
+    "Break paragraph 2 into two parts at the sentence starting 'It may confuse visitors...' to get both under 60 words",
+    "Break paragraph 3 into two parts at the sentence starting 'If a visitor does not yet believe...' to get both under 60 words",
+    "Remove or rewrite the claim 'The page now speaks to buyers one decision deeper in the category' — no evidence supports this buyer-stage diagnosis",
+    "Remove or condition the claim 'It may confuse visitors who are still comparing live chat platforms' with 'if [condition]' or remove the conversion implication entirely",
+    "Replace the final test with a Crisp-specific action: 'Open the current Crisp homepage and count how many times 'AI' appears before any explanation of what the platform does. If the count is above 3, the page assumes AI literacy.'",
+    "Rewrite the opening clause 'a product claim about style, not capability' to avoid three stacked abstract nouns — use concrete language instead"
+  ],
+  "riskFlags": [
+    "'The page now speaks to buyers one decision deeper in the category' — no evidence of buyer stage or decision sequencing in the data",
+    "'It may confuse visitors who are still comparing live chat platforms' — speculative conversion outcome without data",
+    "'The page stopped framing the product as a way to preserve something human' — this reads as a strategic interpretation, not a traceable observation from the evidence"
+  ],
+  "seoNotes": [
+    "The ## heading includes 'Crisp homepage positioning' and 'headline' — both searchable terms, plus the company name — strong for search intent",
+    "The draft does not reference the meta description change, which contains the keyword shift from 'Business Messaging Platform' to 'AI Customer Support Platform' — a missed SEO angle",
+    "The section does not mention the page title change from '#1 Business Messaging Platform For Startups & SMB's' to 'The AI Customer Support Platform for Every Business' — this is a category repositioning signal that would strengthen the section and add searchable keywords"
+  ],
+  "rewriteInstruction": "You are rewriting the 'What changed' section of a Crisp homepage teardown. The current draft exceeds the 60-word paragraph limit in all three H3 blocks, contains speculative conversion claims ('may confuse visitors', 'speaks to buyers one decision deeper') without supporting data, and ends with a generic test that could appear in any teardown. Fix: (1) Break each paragraph into two sub-paragraphs to get under 60 words. (2) Replace 'The page now speaks to buyers one decision deeper' with a conditional observation tied to the evidence: 'If a visitor does not yet know they need AI support tools, the headline no longer explains why they might.' (3) Replace the final test with a Crisp-specific action: 'Open the current Crisp homepage and count how many times AI appears before the page explains what customer support problem it solves. If the count is 3+, the page assumes the visitor already decided to adopt AI.' (4) Add one sentence referencing the meta description shift from 'Business Messaging Platform for Startups & SMB's' to 'AI-powered multichannel messaging platform' — it reinforces the positioning change and adds a searchable keyword. (5) Bold both sentences of the current headline. (6) Remove abstract noun stacks like 'product claim about style, not capability' — use concrete phrasing instead.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 11,
+    "plainLanguage": 14,
+    "scannability": 3,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,45 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Final H3 block contains unsupported causation claim: 'This suggests Crisp may now rely more on demos or sales conversations than instant self-serve signups' — no evidence provided for sales process change",
+    "Forbidden term 'buyer' used 4 times in plain text (not as quote) without plain-language explanation — violates jargon rule",
+    "Second paragraph in H3 'Who the new page serves' is 65 words, exceeds 60-word limit for analytical section body paragraphs",
+    "Final H3 'What this means for the sales process' makes outcome claims without data: 'may now rely more on demos' is speculative inference",
+    "Final test question is generic ('Does your homepage assume...') instead of specific runnable test anchored to Crisp's evidence",
+    "Paragraph 1 of 'Who the new page serves' could appear in any SaaS teardown: 'speaks to buyers who already know they need a customer support platform' — not specific to Crisp",
+    "Section contains causal statement without attached condition: 'The focus shifted to platform capabilities' presented as fact without 'if X' qualifier"
+  ],
+  "requiredFixes": [
+    "Remove or support the claim 'This suggests Crisp may now rely more on demos or sales conversations' — no evidence in the dataset for sales process changes",
+    "Replace 'buyers' with plain-language descriptions: 'founders', 'teams shopping for', 'people evaluating' — or define it once and use pronouns thereafter",
+    "Split second paragraph of 'Who the new page serves' into two paragraphs at 'The meta description...' to respect 60-word limit",
+    "Replace final generic question with specific test: 'Open your homepage in incognito. Count how many CTAs require zero commitment (free trial, demo request). If all require signup, you are filtering for high-intent visitors only.'",
+    "Anchor 'Who the new page serves' opening to Crisp-specific evidence: quote the exact positioning shift ('AI-powered multichannel' vs 'Business Messaging Platform') instead of generic 'buyers who already know'",
+    "Remove exclamation marks from evidence quotes — they are editorial additions not present in source: '14 Days free trial. No credit-card required. Try now' should end with period",
+    "Add condition to causal shift statement: 'The focus shifted to platform capabilities — IF the new buyer is comparing vendors, this language filters for feature-comparison shoppers'"
+  ],
+  "riskFlags": [
+    "HARD CAP TRIGGERED: Unsupported causation claim 'This suggests Crisp may now rely more on demos or sales conversations' — total capped at 70",
+    "Speculative inference presented as fact: 'The page now expects visitors who are further along' — no visitor data or intent signal evidence provided",
+    "Outcome claim without data: 'The urgency language is gone' stated as fact but not tied to conversion impact or visitor behaviour",
+    "Causal statement without condition: 'The focus shifted to platform capabilities and AI differentiation' — no 'if X, then Y' structure"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains company name 'Crisp' and topic term 'messaging' — searchable",
+    "POSITIVE: All verbatim quotes properly formatted in bold quotes",
+    "NEGATIVE: Section heading does not contain 'homepage' despite being homepage teardown — missed SEO anchor",
+    "NEGATIVE: Final H3 'What this means for the sales process' lacks searchable terms — too abstract for Google snippet harvest"
+  ],
+  "rewriteInstruction": "Remove all unsupported causation claims about sales process or buyer journey changes — stick to what the text literally says. Replace 'buyer' language with concrete roles: 'founders shopping for their first tool' vs 'teams comparing AI features'. Split the 65-word paragraph. Replace the final generic question with a specific 5-minute test: 'Open your homepage in incognito and count CTAs that require zero commitment vs. CTAs that gate everything behind signup. If all require signup, you are filtering for high-intent only.' Anchor the second H3 opening to Crisp's exact phrase shift ('Business Messaging Platform for Startups' → 'AI-powered multichannel platform') instead of abstract buyer-stage language. Add 'if X' conditions to all shift statements: 'IF the new visitor is comparing vendors, this language filters for feature shoppers.' Remove exclamation marks from quoted evidence. Final word count should stay within 140–200.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 9,
+    "plainLanguage": 8,
+    "scannability": 9,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

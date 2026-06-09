@@ -1,0 +1,45 @@
+{
+  "score": 73,
+  "pass": false,
+  "issues": [
+    "Causal claim without condition: 'The page no longer explains what customer support automation *is* — only what Crisp's version *does*. A visitor who has not yet decided to adopt AI finds no reason to stay.' — unsupported outcome claim",
+    "Causal claim without condition: 'If a visitor does not yet know they need AI in their support stack, the headline no longer explains why they might.' — causal statement lacks conditional framing",
+    "Third H3 heading 'What it costs' uses conversion-outcome language ('costs') without data",
+    "Paragraph in 'What it matters' sub-block exceeds 60 words (approximately 68 words)",
+    "Paragraph in 'What it costs' sub-block exceeds 60 words (approximately 62 words)",
+    "Generic SaaS commentary: 'The page no longer explains what customer support automation *is*' — could appear in any AI tool teardown",
+    "Section heading lacks company name in primary position — 'Crisp' appears mid-heading, not opening",
+    "Founder takeaway test is not specific to Crisp evidence — uses generic 'count how many times AI appears' instead of anchoring to actual Crisp homepage structure"
+  ],
+  "requiredFixes": [
+    "Reframe 'A visitor who has not yet decided to adopt AI finds no reason to stay' as conditional: 'If a visitor has not yet decided to adopt AI, the page offers no argument for why they should — only a description of what Crisp's AI does.'",
+    "Add condition to 'If a visitor does not yet know they need AI in their support stack, the headline no longer explains why they might' → 'If a visitor has not yet decided AI belongs in their support workflow, the headline assumes that decision is already made.'",
+    "Replace 'What it costs' heading with evidence-anchored alternative: 'What the homepage no longer explains'",
+    "Split 68-word paragraph in 'Why it matters' into two blocks — deliver the takeaway in the first two sentences",
+    "Split 62-word paragraph in 'What it costs' into two blocks or trim to under 60 words",
+    "Anchor the final test to Crisp-specific evidence: 'Open the current Crisp homepage. The 2026 version uses 'AI' in the H1, the subhead, and the first section heading. Count how many times 'AI' appears before the page names a specific customer support problem (late reply times, missed chats, repetitive questions). If AI appears 3+ times before a named problem, the page assumes the visitor already decided to adopt AI.'",
+    "Move 'Crisp' to the opening of the section heading: 'Crisp homepage: how the headline repositioned between 2022 and 2026'"
+  ],
+  "riskFlags": [
+    "Unsupported outcome claim: 'A visitor who has not yet decided to adopt AI finds no reason to stay' — no bounce rate, time-on-page, or conversion data provided",
+    "Causal statement without condition: 'The page no longer explains what customer support automation *is*' — assumes universal visitor knowledge state without evidence",
+    "Conversion-cost claim in H3 heading 'What it costs' — implies pipeline or conversion loss without supporting data"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Crisp homepage positioning' and 'headline' — searchable, but 'Crisp' is not in the opening position",
+    "All three H3 sub-blocks are present (What changed / Why it matters / What it costs) — structural completeness supports scannability",
+    "Bold quotes are correctly applied to all verbatim homepage text (**'Give your customer experience a human touch'**, etc.)",
+    "Word count approximately 195 words — within 140–200 target range"
+  ],
+  "rewriteInstruction": "Rewrite the 'Why it matters' and 'What it costs' sub-blocks to eliminate unsupported outcome claims and add conditional framing. Replace 'A visitor who has not yet decided to adopt AI finds no reason to stay' with 'If a visitor has not yet decided to adopt AI, the page offers no argument for why they should.' Split the 68-word paragraph in 'Why it matters' so the practical takeaway appears in the first two sentences. Anchor the final test to Crisp-specific evidence: instead of 'count how many times AI appears', name the actual elements (H1, subhead, first section heading) and specify what problem the page should name (late reply times, missed chats, repetitive questions). Change the H3 heading 'What it costs' to 'What the homepage no longer explains' to remove the unsupported conversion-cost implication. Move 'Crisp' to the opening of the section heading.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,7 +1,7 @@
 ---
 title: "Vercel Homepage Teardown: Jul 2021 to Jun 2026"
 slug: vercel
-generatedAt: 2026-06-09T11:58:26.663Z
+generatedAt: 2026-06-09T12:47:27.651Z
 sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "06-lessons-for-saas-teams"]
 ---
 # How Vercel rewrote its homepage over 5 years

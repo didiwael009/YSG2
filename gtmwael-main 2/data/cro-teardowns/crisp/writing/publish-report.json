@@ -1,0 +1,24 @@
+{
+  "publishedAt": "2026-06-09T17:33:36.280Z",
+  "slug": "crisp",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 92,
+    "seoPass": true,
+    "seoScore": 81,
+    "unsupportedClaims": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/crisp.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

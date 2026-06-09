@@ -1,0 +1,53 @@
+{
+  "seoScore": 81,
+  "pass": true,
+  "titleScore": 12,
+  "metaDescriptionScore": 13,
+  "headingStructureScore": 13,
+  "searchIntentScore": 18,
+  "keywordUseScore": 8,
+  "readabilityScore": 14,
+  "internalLinkingScore": 3,
+  "internalLinkingSuggestions": [
+    "Link from 'homepage CRO teardown' in the intro to a general SaaS homepage optimization guide or CRO methodology article",
+    "Link from 'buyer journey' mentions to an article on SaaS buyer persona mapping or sales funnel stages",
+    "Link from 'A/B testing' concept (implied in CTA section) to a dedicated testing framework article if one exists",
+    "Link from 'navigation strategy' section to an article on SaaS information architecture or IA best practices",
+    "Add a 'Related teardowns' section at the end linking to other SaaS homepage analyses (e.g., competitor teardowns)"
+  ],
+  "faqSuggestions": [
+    "What does Crisp's homepage change from 2022 to 2026 tell us about targeting AI buyers?",
+    "How can I tell if my homepage assumes too much category knowledge?",
+    "When should a SaaS company remove 'what is' explainers from their homepage?",
+    "Does removing free trial urgency language improve conversion rates?",
+    "How many times should AI appear in a headline before naming a customer problem?",
+    "What does it mean when a homepage shifts from 'human touch' to 'AI augmentation'?",
+    "Should I add more navigation items if my product is more complex?"
+  ],
+  "contentGapNotes": [
+    "The article lacks quantitative data: no conversion rate changes, no traffic metrics, no engagement data are mentioned. Consider noting whether these changes correlate with any known business outcomes (though do not claim causation).",
+    "No discussion of how the shift affects mobile or viewport-specific CRO decisions — Crisp's navigation and headline may render differently on mobile, which could affect intent matching.",
+    "Missing analysis of competitor positioning: does the shift from 'startup tool' to 'AI platform' mirror broader category movement, or is Crisp unique? Competitive context would strengthen the 'lessons for SaaS teams' section.",
+    "The article does not address how the meta description change ('no trial language') might affect click-through rate in search results — this is an implied CRO lever but not analyzed.",
+    "No mention of pricing page alignment: did Crisp's pricing page shift to match the AI-first positioning? Homepage-to-pricing consistency is a conversion factor.",
+    "The article assumes readers can access the live 2026 Crisp homepage to 'open in incognito and count CTAs' — but provides no archived screenshots or wayback links for verification.",
+    "Missing guidance on how long a repositioning cycle should take or whether 4 years is typical for messaging shifts in SaaS."
+  ],
+  "requiredFixes": [
+    "Add a screenshot, wayback link, or explicit date reference so readers can verify the 2026 homepage claims independently. The article asks readers to 'open the current Crisp homepage' but does not provide a way to validate that the claims match what they see.",
+    "Clarify in the intro whether this is a descriptive analysis or a normative recommendation. The tone shifts between 'here is what Crisp did' and 'here is what you should do' — be explicit about whether the Crisp strategy is presented as a best practice or as a cautionary case study.",
+    "Add a disclaimer or caveat that the article does not claim the headline change caused conversion improvements. The current framing ('what those changes signal') is appropriate, but the 'lessons for SaaS teams' section risks implying causation without data."
+  ],
+  "optionalImprovements": [
+    "Expand the 'Quick answer' section to include a single-sentence summary of the implied CRO lesson (e.g., 'Crisp's shift assumes visitors are already convinced of AI; your page should test whether yours are').",
+    "In the 'Who this filters out' subsection, add a side-by-side comparison table showing old vs. new H1, H2, CTAs, and meta descriptions for visual clarity.",
+    "Consider adding a 'Methodology' paragraph explaining how the 4-year timeline was chosen, which snapshots were analyzed, and any limitations (e.g., only homepage, not full funnel).",
+    "In the audit instructions (e.g., 'count how many times AI appears'), provide a worked example or concrete threshold (e.g., 'if AI appears more than 3 times before a named problem, consider adding a problem statement').",
+    "Add a brief section on what Crisp's navigation additions (Plugins, Status, etc.) might signal about product maturity or market positioning shifts — this is implied but not explicitly connected to the messaging strategy.",
+    "Consider hyperlinking the secondary keywords (e.g., 'SaaS homepage CRO teardown') in the article body if they appear naturally, to create internal SEO signals.",
+    "Add a 'Key takeaway' callout box summarizing the core insight for skimmers (e.g., 'Repositioning from startup tool to AI platform assumes category awareness — audit whether your visitors have that awareness before copying this strategy')."
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.007406400000000035,
+  "generatedAt": "2026-06-09T17:32:42.917Z"
+}

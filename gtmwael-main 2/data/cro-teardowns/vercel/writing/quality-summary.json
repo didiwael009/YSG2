@@ -1,6 +1,6 @@
 {
   "slug": "vercel",
-  "generatedAt": "2026-06-09T11:59:00.841Z",
+  "generatedAt": "2026-06-09T12:47:59.742Z",
   "mode": "standard",
   "sections": [],
   "averageScore": null,
@@ -11,16 +11,11 @@
   "weakSections": [],
   "allRiskFlags": [],
   "sectionErrors": [],
-  "finalJudgeScore": 72,
-  "finalJudgePass": false,
+  "finalJudgeScore": 93,
+  "finalJudgePass": true,
   "finalRequiredFixes": [
-    "Section 03: Remove all statements about where 'the product explanation moved to' — the evidence shows what changed in the headline, not where explanations moved. Remove 'deliberate trade' framing (intent attribution). Add a named mechanism (e.g., 'qualification filter,' 'category claim shift').",
-    "Section 04: Remove 'categories that appear in deployment tool comparisons' and 'content aimed at teams evaluating platform-level decisions' — both are unsupported context claims. The evidence shows vocabulary change only. Add a named mechanism (e.g., 'ICP narrowing,' 'buyer stage mismatch').",
-    "Section 05: Remove all conversion-outcome predictions ('may function as navigation,' 'assumes you already know,' 'needs to work without prior product knowledge'). State only what changed in CTA labels. Add a named mechanism (e.g., 'identity recruitment,' 'aspiration signaling').",
-    "Section 06: Remove all intent attribution ('Vercel made small, consistent updates in the same direction,' 'Each change narrowed who the page speaks to'). State only the pattern visible in the evidence (headline changed, 12 H2s added, 2 removed, 10 CTAs replaced). Add a named mechanism (e.g., 'incremental repositioning' is acceptable IF not paired with intent claims).",
-    "All sections: Remove every sentence that predicts conversion outcomes tied to traffic source or visitor familiarity ('If your traffic comes from non-branded search...' appears 3 times). Replace with IF–THEN structural observations that do not predict conversion volume.",
-    "All sections: Add a tradeoff statement to each analytical section (03, 04, 05, 06) — woven into prose, not labeled. Currently missing from all four.",
-    "All sections: Ensure the last sentence of each analytical section (03, 04, 05, 06) is a specific founder test anchored to this evidence. Currently only section 03 and 04 have partial tests; 05 and 06 lack actionable final sentences."
+    "Add explicit founder takeaways at the end of each H3 analytical block. Currently only 'How Vercel's CTA strategy shifted' has a clear actionable takeaway ('Audit your own page'). Other H3 blocks end with questions or observations but no clear 'you should check X' statement.",
+    "The final H3 block 'The test before you copy' needs a more specific runnable test. Currently says 'Count how many words in your H1 assume the visitor already knows your category' but does not specify what number indicates readiness or what to do with the count."
   ],
   "articleWordCount": 1185,
   "repetitionWarnings": [],

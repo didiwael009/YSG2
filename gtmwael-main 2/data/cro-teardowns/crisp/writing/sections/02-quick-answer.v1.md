@@ -1,0 +1,3 @@
+## Quick answer
+
+Crisp shifted from positioning itself as a messaging platform for startups and SMBs to an AI-powered customer support platform for every business. This positioning assumes visitors already understand what a customer support platform does and why AI matters in that context. Companies still introducing their category to visitors may lose clarity by leading with AI before explaining what the product actually replaces.

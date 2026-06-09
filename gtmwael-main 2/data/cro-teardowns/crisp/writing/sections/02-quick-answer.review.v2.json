@@ -1,0 +1,36 @@
+{
+  "score": 71,
+  "pass": false,
+  "issues": [
+    "Word count is ~85 words, exceeding the 75-word ceiling for quick-answer sections by ~10 words",
+    "Final clause 'assumes visitors already know what customer support platforms do, rather than explaining what the product replaces' is interpretive commentary not traceable to evidence — this is a strategic inference about buyer knowledge state, not a documented change",
+    "Meta description quote mismatch: draft quotes '#1 Business Messaging Platform For Startups & SMB's' as if it were the meta description, but evidence shows this is the page title. The actual before meta starts with 'Discover our Business Messaging Platform...'",
+    "The phrase 'with no trial language' is accurate but adds interpretation — evidence shows trial urgency was removed, but framing this as an assumption about buyer knowledge is a causal leap",
+    "Section structure: three full sentences run together without break; for featured snippet optimisation, a tighter two-sentence answer followed by one explanatory sentence would scan better"
+  ],
+  "requiredFixes": [
+    "Correct the meta description quote: change '\"#1 Business Messaging Platform For Startups & SMB's\" with free-trial urgency' to accurately quote the before meta ('Discover our Business Messaging Platform for Startups & SMB's. 14 Days free trial...') or clearly label that you are quoting the page title, not the meta",
+    "Remove the final interpretive clause 'The new framing assumes visitors already know what customer support platforms do, rather than explaining what the product replaces' — this is strategic inference with no evidence anchor. Replace with a neutral observation: 'The meta description dropped free-trial urgency and feature lists.'",
+    "Trim to 75 words or fewer by consolidating the two quoted changes into tighter parallel structure: 'Crisp's homepage headline changed from [before] to [after], and the page title shifted from [before] to [after]. The meta description dropped free-trial urgency and feature enumeration.'"
+  ],
+  "riskFlags": [
+    "CAUSAL INFERENCE: 'The new framing assumes visitors already know what customer support platforms do' — this is a claim about visitor knowledge state and strategic intent, not documented in evidence. No data provided about buyer journey stage or A/B test results tied to knowledge assumptions.",
+    "FACTUAL MISATTRIBUTION: The draft presents the page title as if it were the meta description, creating a factual error that would confuse readers cross-checking the evidence."
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading 'Quick answer' is functional but not harmful; the section itself is optimised for extraction with quoted before/after snippets.",
+    "NEGATIVE: The 85-word count reduces snippet extraction likelihood — Google favours concise, sub-60-word answers for featured snippets. Trim to two tight sentences.",
+    "POSITIVE: Bold quotes on verbatim homepage text make the section scannable and visually distinct for SERP previews."
+  ],
+  "rewriteInstruction": "Rewrite in exactly two sentences, maximum 60 words total. First sentence: state the headline change with bold-quoted before/after. Second sentence: state the page title change with bold-quoted before/after, then note in plain language that the meta description dropped free-trial urgency and feature lists. Remove all interpretive commentary about buyer knowledge, assumptions, or what the product 'replaces'. Ensure every quoted string exactly matches the evidence provided — do not conflate page title and meta description. The goal is a neutral, factual answer optimised for Google featured snippet extraction.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 12,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

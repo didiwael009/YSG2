@@ -1,0 +1,66 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Crisp",
+  "companyUrl": "https://crisp.chat/en/",
+  "articleTitle": "Crisp Homepage Teardown: Jul 2022 to Jun 2026",
+  "h1": "How Crisp rewrote its homepage over 4 years",
+  "fromLabel": "Jul 2022",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 6,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Crisp chat",
+  "cta-changes": {
+    "added": [
+      "Start Free Trial",
+      "Get your AI Agent",
+      "See all messaging channels",
+      "Learn more on Crisp Knowledge Base",
+      "Learn more on the Crisp AI Chatbot",
+      "Learn more",
+      "Book a demo",
+      "Download Crisp for macOS",
+      "Get started for free",
+      "HugoYour best AI support agent teammate."
+    ],
+    "removed": [
+      "Get Started",
+      "Learn More",
+      "Try Crisp for free",
+      "Request a demo",
+      "Shared InboxGet more work done, together",
+      "NewConnect Stripe and Crisp in a breeze",
+      "Use Crisp for free",
+      "See their testimonials",
+      "Français (France)",
+      "Deutsch (Deutschland)"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Build your perfect AI Agent in 4 steps",
+      "Centralize all your inbound messages",
+      "Let your users search for answers themselves",
+      "Craft tailor-made automated internal workflows",
+      "Built for customer support, marketing, and sales teams. All together.",
+      "10,000 companies have already made the move"
+    ],
+    "removed": [
+      "Meet the business messaging platform that gathers customer support, sales, and marketing",
+      "Built for customer support, marketing, and sales. All together.",
+      "Ready to improve your customer engagement?"
+    ]
+  }
+}

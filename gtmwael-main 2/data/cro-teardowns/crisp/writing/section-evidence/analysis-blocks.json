@@ -1,0 +1,26 @@
+[
+  {
+    "id": "analysis-2022-07",
+    "label": "Jul 2022 — original state",
+    "period": "Jul 2022",
+    "screenshotPath": "/cro-teardowns/crisp/selected/2022-07.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Give your customer experience a human touch\" — direct product statement.",
+      "Visible section headings include: \"Meet the business messaging platform that gathers customer support, sales, and marketing\", \"Built for customer support, marketing, and sales. All together.\", \"Ready to improve your customer engagement?\".",
+      "Section headings later removed include: \"Meet the business messaging platform that gathers customer support, sales, and marketing\" and \"Built for customer support, marketing, and sales. All together.\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/crisp/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Augment your customer experience. AI made to support your team & customers.\" — updated value proposition.",
+      "New section headings include: \"Build your perfect AI Agent in 4 steps\", \"Centralize all your inbound messages\", \"Let your users search for answers themselves\".",
+      "CTAs no longer present include: \"Get Started\", \"Learn More\", \"Try Crisp for free\"."
+    ]
+  }
+]

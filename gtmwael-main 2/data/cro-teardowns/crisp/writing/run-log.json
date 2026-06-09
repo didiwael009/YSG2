@@ -1,0 +1,476 @@
+[
+  {
+    "step": "Build evidence pack",
+    "ok": true,
+    "detail": "3 snapshots, diff computed",
+    "ts": "2026-06-09T17:23:34.988Z"
+  },
+  {
+    "step": "Build article blueprint",
+    "ok": true,
+    "detail": "2 analysis blocks, 3 lessons",
+    "ts": "2026-06-09T17:23:34.989Z"
+  },
+  {
+    "step": "Validate CroTeardownPost shape",
+    "ok": true,
+    "detail": "all required fields present",
+    "ts": "2026-06-09T17:23:34.989Z"
+  },
+  {
+    "step": "Save evidence-pack.json",
+    "ok": true,
+    "ts": "2026-06-09T17:23:34.989Z"
+  },
+  {
+    "step": "Save article-blueprint.json",
+    "ok": true,
+    "ts": "2026-06-09T17:23:34.989Z"
+  },
+  {
+    "step": "Save section-evidence/",
+    "ok": true,
+    "detail": "5 files",
+    "ts": "2026-06-09T17:23:34.990Z"
+  },
+  {
+    "step": "Save generated-article-data.json",
+    "ok": true,
+    "detail": "full CroTeardownPost object",
+    "ts": "2026-06-09T17:23:34.990Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-09T17:23:46.702Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:23:46.703Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3183 in / 187 out — $0.0124",
+    "ts": "2026-06-09T17:23:53.100Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 76/100 — FAIL — $0.0349",
+    "ts": "2026-06-09T17:24:12.640Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": false,
+    "detail": "score 76/100 — did not reach 85",
+    "ts": "2026-06-09T17:24:12.641Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-09T17:24:12.644Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:24:12.644Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3198 in / 80 out — $0.0457",
+    "ts": "2026-06-09T17:24:17.456Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.0675",
+    "ts": "2026-06-09T17:24:36.611Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-09T17:24:36.613Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4120 in / 119 out — $0.0817",
+    "ts": "2026-06-09T17:24:40.395Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 71/100 — FAIL — $0.1042",
+    "ts": "2026-06-09T17:25:03.036Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 71/100 — did not reach 85",
+    "ts": "2026-06-09T17:25:03.037Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-09T17:25:03.039Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:25:03.039Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3566 in / 310 out — $0.1195",
+    "ts": "2026-06-09T17:25:14.425Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 71/100 — FAIL — $0.1494",
+    "ts": "2026-06-09T17:25:41.479Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-09T17:25:41.480Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "5101 in / 321 out — $0.1695",
+    "ts": "2026-06-09T17:25:52.597Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 73/100 — FAIL — $0.1982",
+    "ts": "2026-06-09T17:26:17.883Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-09T17:26:17.884Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "5042 in / 347 out — $0.2185",
+    "ts": "2026-06-09T17:26:29.735Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.2505",
+    "ts": "2026-06-09T17:26:59.359Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 72/100 — did not reach 85",
+    "ts": "2026-06-09T17:26:59.362Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-09T17:26:59.365Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:26:59.366Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3234 in / 286 out — $0.2645",
+    "ts": "2026-06-09T17:27:09.192Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 68/100 — FAIL — $0.2914",
+    "ts": "2026-06-09T17:27:39.214Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-09T17:27:39.216Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4626 in / 291 out — $0.3097",
+    "ts": "2026-06-09T17:27:49.043Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v2",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.3266",
+    "ts": "2026-06-09T17:28:01.240Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Final v2",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-09T17:28:01.242Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-09T17:28:01.246Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:28:01.247Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2895 in / 306 out — $0.3399",
+    "ts": "2026-06-09T17:28:11.545Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.3652",
+    "ts": "2026-06-09T17:28:35.013Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-09T17:28:35.015Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4218 in / 311 out — $0.3826",
+    "ts": "2026-06-09T17:28:43.458Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 68/100 — FAIL — $0.4114",
+    "ts": "2026-06-09T17:29:11.102Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-09T17:29:11.103Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "4451 in / 313 out — $0.4294",
+    "ts": "2026-06-09T17:29:19.890Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.4566",
+    "ts": "2026-06-09T17:29:45.976Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-09T17:29:45.978Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-09T17:29:45.980Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:29:45.981Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2787 in / 306 out — $0.4695",
+    "ts": "2026-06-09T17:29:57.017Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 58/100 — FAIL — $0.5011",
+    "ts": "2026-06-09T17:30:32.819Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-09T17:30:32.820Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4503 in / 348 out — $0.5199",
+    "ts": "2026-06-09T17:30:43.801Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.5441",
+    "ts": "2026-06-09T17:31:05.732Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-09T17:31:05.733Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "4125 in / 424 out — $0.5628",
+    "ts": "2026-06-09T17:31:15.109Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.5846",
+    "ts": "2026-06-09T17:31:33.994Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Final v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-09T17:31:33.996Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-09T17:31:34.008Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": true,
+    "detail": "4 cards, 0 warning(s) — $0.0175",
+    "ts": "2026-06-09T17:31:49.141Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0175",
+    "ts": "2026-06-09T17:31:49.142Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 1208 words",
+    "ts": "2026-06-09T17:31:49.149Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Crisp homepage CRO teardown",
+    "ts": "2026-06-09T17:31:49.152Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:31:49.154Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 92/100 — PASS ✓ — $0.0434",
+    "ts": "2026-06-09T17:32:28.073Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T17:32:28.075Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 81/100 — PASS ✓ — $0.0074",
+    "ts": "2026-06-09T17:32:42.920Z"
+  }
+]

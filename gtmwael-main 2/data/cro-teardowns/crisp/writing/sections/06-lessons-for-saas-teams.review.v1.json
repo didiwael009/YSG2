@@ -1,0 +1,60 @@
+{
+  "score": 58,
+  "pass": false,
+  "issues": [
+    "Opening section paragraph is 62 words — exceeds 60-word limit",
+    "H3 'Who should copy this' paragraph is 71 words — exceeds 60-word limit",
+    "H3 'Who should NOT copy this' paragraph is 67 words — exceeds 60-word limit",
+    "Section makes multiple causal/outcome claims unsupported by evidence: 'removed explanations and added specificity', 'removing context will cost you qualified signups', 'your brand is doing that work before the page loads'",
+    "Zero verbatim quotes from Crisp's actual homepage — no **bold quoted** headlines, CTAs, or section headings",
+    "All four H3 blocks could appear word-for-word in any SaaS teardown — completely generic",
+    "No specific Crisp evidence anchors any paragraph (no dated changes, no named page elements, no quoted phrases)",
+    "Section reads like a textbook chapter on brand maturity, not a Crisp-specific analysis",
+    "Opening paragraph is pure interpretation with zero traceable evidence",
+    "Final test is generic advice ('check analytics for branded vs non-branded') — not specific to Crisp's evolution",
+    "Section heading lacks company name 'Crisp' — only appears in the question clause",
+    "Term 'category' appears 6 times without definition or plain-language explanation",
+    "Conversion outcome claim 'will cost you qualified signups' without attached condition or data",
+    "Causal claim 'This shift makes sense when you are optimizing for decision speed' — no evidence Crisp optimized for decision speed",
+    "Word count approximately 190 words — within range but content is entirely generic"
+  ],
+  "requiredFixes": [
+    "Anchor every paragraph to specific Crisp evidence: quote actual headlines that changed (Jul 2022 vs Jun 2026), name specific section headings added/removed, cite the 6 H2 added and 3 H2 removed",
+    "Add **bold quotes** around every verbatim Crisp page element mentioned",
+    "Replace generic 'removed explanations and added specificity' with quoted before/after headlines showing the actual change",
+    "Cut all four H3 block bodies to under 60 words each",
+    "Replace 'category' jargon (6 uses) with plain terms: 'what the product does', 'the type of tool', 'live chat software'",
+    "Remove unsupported causal claims: 'will cost you qualified signups', 'your brand is doing that work', 'turns clarity into vagueness'",
+    "Rewrite final test to be Crisp-specific: reference one of the actual changes (e.g. '8 nav items added') and give a 5-minute test anchored to that evidence",
+    "Add company name 'Crisp' to the ## section heading for searchability",
+    "Rewrite opening paragraph to start with a specific Crisp finding (e.g. 'Crisp added 8 navigation items between Jul 2022 and Jun 2026 while...')",
+    "Make each H3 block impossible to copy-paste into a different company's teardown by naming specific Crisp page elements in every paragraph"
+  ],
+  "riskFlags": [
+    "HARD CAP TRIGGERED: Multiple unsupported outcome claims → total capped at 60",
+    "Causal claim without condition: 'removing context will cost you qualified signups' — no 'if X condition' attached",
+    "Causal claim without data: 'This shift makes sense when you are optimizing for decision speed' — no evidence Crisp measured decision speed",
+    "Invented fact: 'The page removed explanations and added specificity' — evidence shows H2 added/removed but does not specify 'explanations' vs 'specificity'",
+    "Outcome claim: 'will cost you qualified signups' — no conversion data provided",
+    "Interpretation presented as fact: 'stops writing for first-time visitors and starts writing for buyers who already understand the category' — no evidence of audience intent shift"
+  ],
+  "seoNotes": [
+    "Section heading is question-format (good for featured snippets) but buries company name 'Crisp' in dependent clause — weak for 'Crisp homepage' search",
+    "H3 headings are generic role-based ('Who should copy this') with zero search terms — no 'Crisp', 'homepage', 'messaging', 'positioning'",
+    "Zero use of primary keyword 'Crisp chat' in entire section",
+    "Section contains common search pattern 'should copy' but lacks brand anchor",
+    "No mention of 'live chat', 'customer support software', or any category term a searcher would use",
+    "Generic advice format will not rank for branded queries like 'Crisp homepage analysis' or 'Crisp messaging strategy'"
+  ],
+  "rewriteInstruction": "This section currently reads like a generic SaaS brand-maturity textbook chapter with zero Crisp-specific anchors. HARD RESET required. Start by identifying the single most interesting contrast in Crisp's actual evidence (e.g. they added 8 nav items while most companies simplify navigation, or they removed 3 H2 section headings while adding 6 others). Open with that specific finding using a **bold quoted** before/after element. In each H3 block, quote one actual Crisp page change (headline, CTA, nav item, section heading) and tie the lesson to that quoted evidence. Replace all instances of 'category' with plain terms like 'what live chat software does'. Cut every paragraph to under 60 words by removing the abstract setup sentences. The final H3 test must reference one specific Crisp change (e.g. 'Count how many of your homepage H2 headings explain what the product does versus what it enables — Crisp shifted from 3 explainer H2s to 6 outcome-focused H2s'). Add 'Crisp' to the ## heading. Every sentence must be impossible to copy-paste into a Intercom or Zendesk teardown.",
+  "dimensionScores": {
+    "evidenceAccuracy": 0,
+    "specificity": 0,
+    "plainLanguage": 8,
+    "scannability": 3,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

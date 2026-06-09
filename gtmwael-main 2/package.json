@@ -12,7 +12,13 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "cro-teardown:cost-breakdown": "tsx scripts/cro-teardown/cost-breakdown.ts"
+    "cro-teardown": "tsx scripts/cro-teardown/index.ts",
+    "cro-teardown:select": "tsx scripts/cro-teardown/select.ts",
+    "cro-teardown:generate-data": "tsx scripts/cro-teardown/generate-article-data.ts",
+    "cro-teardown:compose": "tsx scripts/cro-teardown/compose-all-sections.ts",
+    "cro-teardown:publish": "tsx scripts/cro-teardown/publish-article.ts",
+    "cro-teardown:cost-breakdown": "tsx scripts/cro-teardown/cost-breakdown.ts",
+    "cro-teardown:seo-target": "tsx scripts/cro-teardown/generate-seo-target.ts"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",

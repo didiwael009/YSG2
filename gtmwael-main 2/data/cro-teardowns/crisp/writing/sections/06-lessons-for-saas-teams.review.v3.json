@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'buyer journey' appears without plain-language definition — expert term used without immediate explanation",
+    "Paragraph 2 of H3 block 'Who should copy this' exceeds 60 words (approximately 65 words)",
+    "The phrase 'positioning mismatch' in H3 block 'Who should NOT copy this' is an expert term used without plain-language definition in the same sentence",
+    "The ## section heading lacks the company name 'Crisp' — though it does contain 'SaaS' and 'homepage navigation', making it searchable but suboptimal for brand SEO"
+  ],
+  "requiredFixes": [
+    "Add plain-language definition for 'buyer journey' in H3 block 'Who should NOT copy this' — e.g., 'further along the buyer journey (closer to making a purchase decision) than the person who actually landed on it'",
+    "Split the second paragraph of 'Who should copy this' at the sentence break after 'live chat software is.' to keep both paragraphs under 60 words",
+    "Define 'positioning mismatch' inline — e.g., 'That is not an aesthetic problem — it is a positioning mismatch (your page talks to experts when beginners arrive)'"
+  ],
+  "riskFlags": [
+    "The claim 'That only works if visitors already understand what the product does before the page loads' is presented as causal without qualification — should add condition like 'This strategy typically works best when...' or 'This pattern usually requires...'",
+    "The statement 'adding 8 unlabeled navigation items may fragment attention' uses 'may' appropriately but could be stronger with an attached condition about visitor state"
+  ],
+  "seoNotes": [
+    "The ## heading 'Should SaaS companies copy Crisp's homepage navigation strategy? When adding complexity works' is searchable but misses brand name 'Crisp' at the start — consider 'Crisp homepage navigation: when adding complexity works for SaaS' for stronger brand association",
+    "H3 headings are plain-language and scannable: 'The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy' — excellent decision-tree structure for Google featured snippets",
+    "The section effectively targets 'SaaS homepage navigation' and 'Crisp chat' through natural integration",
+    "Final H3 block delivers a specific, time-bound test anchored to Crisp evidence (count H2s, compare to Crisp's removal of 3) — highly actionable for founders"
+  ],
+  "rewriteInstruction": "Add plain-language definitions inline for 'buyer journey' and 'positioning mismatch' using the parenthetical technique from your best sections. Split the 65-word paragraph in 'Who should copy this' at the natural sentence break. Soften the causal claim 'That only works if' by adding a condition marker like 'This strategy typically works best when' or 'This pattern usually requires'. Consider moving 'Crisp' to the start of the ## heading for stronger brand SEO: 'Crisp homepage navigation strategy: when adding complexity works for SaaS companies'. All fixes preserve the excellent decision-tree structure and specific evidence anchoring.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 15,
+    "plainLanguage": 16,
+    "scannability": 13,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

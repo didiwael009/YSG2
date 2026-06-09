@@ -1,0 +1,44 @@
+{
+  "createdAt": "2026-06-09T17:32:42.926Z",
+  "slug": "crisp",
+  "source": {
+    "finalJudgePass": true,
+    "seoPass": true,
+    "finalJudgeScore": 92,
+    "seoScore": 81
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "Judge rerun recommendation: 05-cta-navigation-evolution — regenerate final subsection 'The test before you copy' to include a specific, evidence-anchored runnable test rather tha"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "reasons": [
+        "Add founder takeaways to each H3 block — currently no H3 blocks end with 'Test this on your page' or similar practical observation"
+      ],
+      "priority": "medium",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Add a screenshot, wayback link, or explicit date reference so readers can verify the 2026 homepage claims independently. The article asks readers to 'open the current Crisp homepage' but does not prov",
+        "Clarify in the intro whether this is a descriptive analysis or a normative recommendation. The tone shifts between 'here is what Crisp did' and 'here is what you should do' — be explicit about whether",
+        "Add a disclaimer or caveat that the article does not claim the headline change caused conversion improvements. The current framing ('what those changes signal') is appropriate, but the 'lessons for Sa"
+      ],
+      "priority": "low",
+      "source": "seo-audit"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "Add a specific runnable test to the final section anchored to Crisp evidence — the current final paragraph describes a general audit, not a specific test",
+      "reason": "cannot map to a specific section — may require manual review"
+    }
+  ]
+}

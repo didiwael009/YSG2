@@ -1,0 +1,47 @@
+{
+  "sectionId": "06-lessons-for-saas-teams",
+  "companyName": "Crisp",
+  "companyUrl": "https://crisp.chat/en/",
+  "articleTitle": "Crisp Homepage Teardown: Jul 2022 to Jun 2026",
+  "h1": "How Crisp rewrote its homepage over 4 years",
+  "fromLabel": "Jul 2022",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 6,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Crisp chat",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2022 → Jun 2026",
+      "note": "3 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "6 added · 3 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}

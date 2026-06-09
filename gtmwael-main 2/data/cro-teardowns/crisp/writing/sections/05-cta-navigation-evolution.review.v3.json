@@ -1,0 +1,45 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section word count is approximately 195 words, exceeding the 120–180 target by 15 words",
+    "The H2 'Meet the business messaging platform...' removal is stated as fact but appears in the 'removed' list — no date or snapshot attribution confirms WHEN it was removed or what replaced it",
+    "The claim 'The new CTA path assumes category knowledge because the explainer headline was removed' is a causal interpretation not supported by the evidence; the evidence shows removals and additions but does not prove assumption of category knowledge",
+    "Second H3 block ('Who this filters out') uses 'category knowledge' twice without plain-language definition on first use",
+    "The phrase 'That count signals whether your page still serves first-time visitors' is a causal claim without a condition",
+    "The H2 section heading lacks the word 'homepage' or 'conversion' — uses only 'CTA path', which is less searchable",
+    "Paragraph 1 under 'What changed' is approximately 65 words, exceeding the 60-word cap",
+    "The final audit instruction is generic ('count how many above-the-fold CTAs require zero explanation') and could apply to any SaaS teardown"
+  ],
+  "requiredFixes": [
+    "Trim section to 180 words maximum by condensing the second H3 block",
+    "Add snapshot or date attribution to the H2 removal claim: specify WHEN 'Meet the business messaging platform...' was removed",
+    "Replace 'assumes category knowledge' with evidence-grounded phrasing: 'The homepage no longer explains what category Crisp belongs to above the fold' (observation, not interpretation)",
+    "Define 'category knowledge' on first use: 'category knowledge (understanding what product category a company belongs to)'",
+    "Rewrite 'That count signals...' to include a condition: 'If most CTAs above the fold require prior product knowledge, your page may not serve first-time visitors'",
+    "Revise H2 to include 'homepage' or 'conversion': e.g. 'Crisp homepage CTA evolution: from free trial to AI agent, 2022–2026'",
+    "Split the 65-word 'What changed' paragraph into two: one for CTA replacements, one for demo CTA churn",
+    "Make the final audit instruction Crisp-specific: 'Open Crisp's Jun 2026 homepage and compare the H2 count before and after the fold to the CTA count. If CTAs outnumber explainer H2s, you are filtering out discovery-stage visitors.'"
+  ],
+  "riskFlags": [
+    "Causal claim without condition: 'The new CTA path assumes category knowledge because the explainer headline was removed' — no evidence proves causation",
+    "Outcome claim without data: 'That count signals whether your page still serves first-time visitors' — no conversion data or user research cited",
+    "The H2 removal is stated as fact but the evidence does not show what replaced it or when the change occurred relative to the CTA additions"
+  ],
+  "seoNotes": [
+    "H2 section heading contains company name ('Crisp') and topic term ('CTA'), improving searchability",
+    "H3 subheadings are plain and functional but lack searchable long-tail terms like 'homepage audit' or 'CTA strategy'",
+    "The section references specific CTA text in bold quotes, which supports featured-snippet harvesting"
+  ],
+  "rewriteInstruction": "Trim to 180 words by condensing the second H3 block to two sentences. Attribute the H2 removal to a snapshot or date range ('Between Jul 2022 and Jun 2026, Crisp removed...'). Replace 'assumes category knowledge' with 'no longer explains what category Crisp belongs to above the fold' — an observation, not an interpretation. Define 'category knowledge' on first use in parentheses. Add a condition to the final sentence of H3 block two: 'If most CTAs require prior product knowledge, your page may not serve discovery-stage visitors.' Revise the H2 to 'Crisp homepage CTA evolution: from free trial to AI agent, 2022–2026' to improve searchability. Split the 65-word paragraph in H3 block one into two shorter paragraphs. Rewrite the final audit instruction to be Crisp-specific: 'Open Crisp's Jun 2026 homepage. Count H2 explainer headings above the fold, then count CTAs. If CTAs outnumber explainers, you are filtering out first-time visitors who need context.' This anchors the test to the evidence and makes it runnable in under five minutes.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 11,
+    "plainLanguage": 14,
+    "scannability": 9,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

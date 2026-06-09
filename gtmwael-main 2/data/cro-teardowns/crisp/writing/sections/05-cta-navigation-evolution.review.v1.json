@@ -1,0 +1,48 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Second paragraph of 'Who this filters out' exceeds 60 words (~75 words)",
+    "H3 heading 'What changed' lacks searchable terms (no company name, no topic term like 'CTA' or 'conversion')",
+    "H3 heading 'Who this filters out' lacks searchable terms",
+    "H3 heading 'Audit your own page' lacks searchable terms",
+    "Causal claim 'you are betting on visitors who don't need an explanation' lacks supporting evidence or condition qualifier",
+    "Causal claim 'now hit friction earlier' lacks supporting data",
+    "Generic paragraph: 'The new path assumes you already know what a customer messaging platform does' could appear in any messaging platform teardown",
+    "Generic paragraph: entire 'Audit your own page' block could appear in any SaaS teardown",
+    "Section heading is clever-only ('conversion path changed') — not searchable",
+    "Word count approximately 185 words, exceeding 180-word cap"
+  ],
+  "requiredFixes": [
+    "Replace section heading with searchable version: 'How Crisp's CTAs shifted from free trial to AI agent, 2022–2026'",
+    "Replace H3 'What changed' with 'Crisp replaced trial CTAs with AI-first buttons'",
+    "Replace H3 'Who this filters out' with 'Why Crisp's new CTA path assumes category knowledge'",
+    "Replace H3 'Audit your own page' with 'Test whether your CTAs match visitor intent'",
+    "Break second paragraph of 'Who this filters out' into two paragraphs at 'Visitors who need...'",
+    "Anchor 'Who this filters out' section to Crisp-specific evidence: mention removed H2 'Meet the business messaging platform that gathers customer support, sales, and marketing' to show category explanation was deleted",
+    "Replace 'now hit friction earlier' with conditional: 'may encounter friction if they arrive from broad search terms like customer messaging platform'",
+    "Replace generic 'Audit your own page' with Crisp-specific test: 'Open Crisp's current homepage. Count the CTAs before the first H2 that explains what the platform does. Compare to your own page.'",
+    "Trim section to under 180 words"
+  ],
+  "riskFlags": [
+    "Claim 'now hit friction earlier' presents a causal outcome without supporting conversion data or user research",
+    "Claim 'you are betting on visitors who don't need an explanation' is presented as fact, not conditional analysis",
+    "Claim 'breaks the standard positioning pattern entirely' regarding Hugo CTA is unsupported — no evidence defines what 'standard positioning pattern' means or how this breaks it"
+  ],
+  "seoNotes": [
+    "Section heading 'How Crisp's conversion path changed from 2022 to 2026' contains company name but misses topic term — 'CTA' or 'conversion funnel' would improve searchability",
+    "H3 headings are all clever/abstract — no searchable terms like 'CTA', 'call-to-action', 'trial button', 'demo request'",
+    "No internal link opportunities (e.g. to a CTA audit checklist or trial-vs-demo guidance)"
+  ],
+  "rewriteInstruction": "Rewrite with searchable headings that include 'CTA' or 'call-to-action'. Anchor every claim to Crisp's specific evidence: quote the removed H2 'Meet the business messaging platform...' to show category explanation was deleted, making the AI-first CTA shift riskier. Replace all causal claims ('now hit friction', 'you are betting') with conditional phrasing ('may encounter friction if...', 'this works best when...'). Make the final H3 test Crisp-specific: 'Open Crisp's June 2026 homepage, count CTAs before the first category explainer, then audit your own.' Cut generic SaaS commentary ('people comparing live chat tools') and tie observations to Crisp's named elements. Break the 75-word paragraph. Trim to under 180 words.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 7,
+    "searchableHeadings": 1,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

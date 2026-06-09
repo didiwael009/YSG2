@@ -1,22 +1,26 @@
 [
   {
-    "title": "Your H1 signals which buyer you are targeting",
-    "body": "The headline changed from \"Develop.Preview.Ship.\" to \"Build and deploy on the AI Cloud.\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
-    "tag": "Messaging"
+    "number": "01",
+    "title": "Vercel replaced \"Develop.Preview.Ship.\" with \"Build and deploy on the AI Cloud.\"",
+    "category": "Positioning",
+    "body": "The original headline **\"Develop.Preview.Ship.\"** spoke to developers who already understood the product workflow. The new headline **\"Build and deploy on the AI Cloud.\"** signals a category shift — Vercel now positions itself as infrastructure for AI applications, not just a deployment platform. This suggests the target buyer may now include teams building AI products who need hosting, not just frontend developers optimising workflows."
   },
   {
-    "title": "Navigation is a positioning statement",
-    "body": "Navigation items changed from \"Integrations\", \"Analytics\", \"Contact\" to \"AI Cloud\", \"AI SDKThe AI Toolkit for TypeScript\", \"v0Build applications with AI\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
-    "tag": "Navigation"
+    "number": "02",
+    "title": "8 navigation items removed including \"Contact Us\" and \"Login\" — a friction-to-trial change",
+    "category": "Navigation",
+    "body": "Vercel removed **\"Contact Us\"**, **\"Contact\"**, and **\"Login\"** from navigation while adding **\"Explore Enterprise\"**, **\"AI Gateway\"**, and **\"Vercel Agent\"**. This likely signals a shift from sales-assist to product-led trial. Removing login from top-level navigation suggests existing users now arrive through direct URLs or documentation, while the homepage focuses on new visitor education and category definition around AI infrastructure."
   },
   {
-    "title": "Section headings reveal what the team thinks buyers care about",
-    "body": "12 section headings were added and 2 removed between Jul 2021 and Jun 2026. New headings include \"Scale your\" and \"without compromising\". Headings that disappeared include \"Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.\" and \"Clone Template\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
-    "tag": "CRO"
+    "number": "03",
+    "title": "The meta description dropped \"best frontend developer experience\" for \"frameworks, workflows, and infrastructure\"",
+    "category": "Messaging",
+    "body": "The original meta description promised the **\"best frontend developer experience\"** — a competitive claim. The new version says Vercel **\"gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.\"** This removes the superlative and adds three concrete nouns. It suggests Vercel now wants to be discovered by buyers searching for platform components, not teams comparing developer experience quality."
   },
   {
-    "title": "Incremental changes compound into a brand shift",
-    "body": "Across 5 snapshots spanning roughly 5 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
-    "tag": "Strategy"
+    "number": "04",
+    "title": "12 new section headings appeared while only 2 were removed — this is expansion, not simplification",
+    "category": "Strategy",
+    "body": "Vercel added 12 section headings including **\"Build\"**, **\"Scale\"**, **\"Secure\"**, **\"Frameworks\"**, and **\"Use Cases\"** while removing just 2. This is not homepage reduction — it is a site architecture expansion. The removed heading **\"Clone Template\"** was a single-action CTA; the new headings are navigation categories. This suggests Vercel shifted from a product demo page to a platform ecosystem site with multiple entry points."
   }
 ]

@@ -1,0 +1,42 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "No verbatim quotes from the homepage are in **bold quotes** — required formatting missing throughout",
+    "Section heading is clever-only ('Should SaaS companies copy Crisp's homepage strategy?') and lacks searchable terms like 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion' combined with the company name",
+    "Paragraph 1 ('The pattern' block) is ~77 words — exceeds 60-word limit",
+    "Paragraph 2 ('Who should copy this' block) is ~67 words — exceeds 60-word limit",
+    "Paragraph 3 ('Who should NOT copy this' block) is ~61 words — exceeds 60-word limit",
+    "Multiple causal claims lack conditions: 'likely because the visitor arriving at the page changed' (no evidence for causation), 'Crisp can afford to add navigation complexity because...' (causation without attached condition)",
+    "Generic SaaS commentary present: 'The test is not traffic volume' and 'The risk is not aesthetic' could appear in any teardown",
+    "Final test ('The test before you copy' block) is not specific enough — asks founder to 'check whether your current headings still define the tool category' without anchoring to Crisp's specific evidence (which H2s were removed, what they said)"
+  ],
+  "requiredFixes": [
+    "Add the company name 'Crisp' to the ## section heading and include a searchable term: e.g. 'Crisp homepage navigation strategy: when adding complexity works'",
+    "Break each H3 block into two shorter paragraphs (30–40 words each) to meet the 60-word scannability limit",
+    "Remove or condition all causal claims: replace 'likely because the visitor arriving at the page changed' with 'The timing coincides with [specific brand signal from evidence], which suggests...'",
+    "Rewrite the final test to be specific and runnable: 'Open your homepage. Count H2 headings that include the words 'what is' or define your tool category. If you count 3+, you still need them — Crisp removed exactly 3.'",
+    "Remove generic commentary that could appear in any teardown: cut 'The test is not traffic volume' and 'The risk is not aesthetic' — replace with Crisp-specific detail from the evidence"
+  ],
+  "riskFlags": [
+    "'likely because the visitor arriving at the page changed' — causation claim with no evidence that visitor profile changed",
+    "'Crisp can afford to add navigation complexity because the page no longer has to explain the tool type itself' — causation without condition or evidence",
+    "'you may have the brand recognition this requires' — outcome claim not traceable to provided evidence"
+  ],
+  "seoNotes": [
+    "NEGATIVE: Section heading lacks the company name and any searchable topic term — will not rank for 'Crisp homepage' or related queries",
+    "POSITIVE: H3 subheadings ('The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy') provide clear decision-support structure",
+    "NEGATIVE: No verbatim homepage quotes in bold — missed opportunity to show Google the page analyzes real evidence"
+  ],
+  "rewriteInstruction": "Add 'Crisp' and 'homepage navigation' to the section heading. Break every paragraph over 60 words into two shorter blocks. Remove all causal claims ('because', 'likely because') unless you attach a condition ('if X, then Y'). Replace generic phrases ('The test is not traffic volume', 'The risk is not aesthetic') with specific Crisp evidence — quote the exact nav items added or H2s removed. Rewrite the final test to be a 5-minute action anchored to Crisp's numbers: 'Count your H2s that define the tool category. Crisp removed exactly 3. If you still have 3+, keep them.' Every claim must trace to the provided evidence or be cut.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

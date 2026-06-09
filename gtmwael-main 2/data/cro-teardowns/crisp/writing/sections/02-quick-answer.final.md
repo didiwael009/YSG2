@@ -1,0 +1,3 @@
+## Quick answer
+
+Crisp's homepage headline changed from **"Give your customer experience a human touch"** to **"Augment your customer experience. AI made to support your team & customers."** — and the meta description shifted from **"#1 Business Messaging Platform For Startups & SMB's"** with free-trial urgency to **"The AI Customer Support Platform for Every Business"** with no trial language. The new framing assumes visitors already know what customer support platforms do, rather than explaining what the product replaces.

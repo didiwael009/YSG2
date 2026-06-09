@@ -1,0 +1,35 @@
+{
+  "overallScore": 92,
+  "pass": true,
+  "evidenceAccuracy": 25,
+  "plainLanguage": 18,
+  "scannability": 14,
+  "searchableHeadings": 10,
+  "specificity": 15,
+  "rhythmAndOpening": 10,
+  "founderTakeaway": 0,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [],
+  "unsupportedClaims": [],
+  "riskFlags": [],
+  "requiredFixes": [
+    "Add founder takeaways to each H3 block — currently no H3 blocks end with 'Test this on your page' or similar practical observation",
+    "Add a specific runnable test to the final section anchored to Crisp evidence — the current final paragraph describes a general audit, not a specific test"
+  ],
+  "optionalImprovements": [
+    "Section 'Crisp homepage: how the headline repositioned between 2022 and 2026' could benefit from slightly shorter paragraphs — the 'What the homepage no longer explains' subsection has a 4-sentence paragraph that could be split for better scannability",
+    "Consider adding rhythm variation in the opening sentences of analytical sections — three consecutive sections open with 'The [X] page' pattern"
+  ],
+  "rerunRecommendations": [
+    "05-cta-navigation-evolution — regenerate final subsection 'The test before you copy' to include a specific, evidence-anchored runnable test rather than a general H2 count audit"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.04344300000000001,
+  "generatedAt": "2026-06-09T17:32:28.072Z",
+  "repetitionWarnings": [
+    "The phrase 'assumes category knowledge' or 'assumes the visitor already knows' appears in 4+ sections — while accurate, consider varying the expression to maintain rhythm"
+  ]
+}

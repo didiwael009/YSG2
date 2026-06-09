@@ -1,0 +1,3 @@
+# Crisp Chat Homepage Teardown: How the Messaging Platform Repositioned Around AI
+
+Between July 2022 and June 2026, Crisp chat replaced its homepage headline **"Give your customer experience a human touch"** with **"Augment your customer experience. AI made to support your team & customers."** The page title shifted from **"#1 Business Messaging Platform For Startups & SMB's"** to **"The AI Customer Support Platform for Every Business"** — and trial urgency language was removed from the meta description. This teardown maps what changed across three snapshots and what each shift may tell us about the buyer the page is now written for.

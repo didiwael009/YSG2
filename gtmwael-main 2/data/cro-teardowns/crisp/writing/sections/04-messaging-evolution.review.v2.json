@@ -1,0 +1,30 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Second paragraph in H3 'Who the new page serves' exceeds 60 words (approx 65 words)",
+    "Section word count approximately 210 words, exceeds 200-word target by 10 words",
+    "Final H3 takeaway test is slightly generic — 'count how many CTAs' could be made more specific to Crisp's actual CTA structure"
+  ],
+  "requiredFixes": [
+    "Split the second paragraph in 'Who the new page serves' into two paragraphs — break after the quote ending with 'multichannel messaging platform.' Start new paragraph with 'The headline now reads...'",
+    "Trim 10–15 words from the section to meet the 200-word target — consider condensing the opening paragraph or removing one adjective/descriptor per H3 block"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Heading contains company name 'Crisp' and searchable term 'messaging' — good for Google discovery",
+    "All three H3 subheadings are plain-language and scannability-friendly",
+    "Bold quotes are correctly formatted throughout — aids snippet harvesting"
+  ],
+  "rewriteInstruction": "Split the 65-word paragraph in 'Who the new page serves' after the platform positioning quote. Trim 10 words total across all three H3 blocks to hit 200 words — prioritise removing adjectives or connector phrases. In the final H3, make the test more specific: instead of 'count how many CTAs require zero commitment,' write 'count how many CTAs above the fold let you explore features without signup — Crisp's current structure gates everything behind account creation.'",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 13,
+    "plainLanguage": 20,
+    "scannability": 11,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}
