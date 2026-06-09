@@ -1,0 +1,25 @@
+{
+  "score": 93,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Opening subhead (\"What Intercom Built Before It Claimed the Category\") is strong and specific — distinguishes this section from generic SaaS advice.",
+    "Section uses bolded evidence quotes effectively — improves scannability and reinforces that claims are grounded in specific changes."
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 10,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 10,
+    "editorialQuality": 0,
+    "founderSharpness": 18,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

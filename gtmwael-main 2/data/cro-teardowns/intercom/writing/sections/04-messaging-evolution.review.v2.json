@@ -1,0 +1,33 @@
+{
+  "score": 89,
+  "pass": true,
+  "issues": [
+    "Section is 199 words — within target range but close to upper limit",
+    "The phrase 'can be read as' appears once in paragraph 2, introducing hedging that could be more direct",
+    "Paragraph 2 is approximately 95 words — exceeds 90-word guideline but introduces two distinct ideas (meta description reinforcement + vocabulary analysis)",
+    "Minor bold quote inconsistency: 'helps' and 'the only' in paragraph 2 are quoted but not from the evidence verbatim — they are extracted fragments rather than full website quotes"
+  ],
+  "requiredFixes": [
+    "Replace 'can be read as a change in who the page expects to convert' with a direct claim: 'This is a shift in who the page expects to convert' or 'Intercom now targets...' to eliminate hedging",
+    "Consider breaking paragraph 2 at 'Vocabulary like...' to create two distinct analytical beats and respect the 90-word guideline"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Draft correctly identifies meta description update as a positioning shift, grounded in evidence",
+    "The observation about 'designed for the AI Agent era' vocabulary is tied to specific quoted language — good SEO awareness"
+  ],
+  "rewriteInstruction": "Replace the hedging phrase 'can be read as a change in who the page expects to convert' with a direct claim about buyer shift (e.g., 'This targets a different buyer'). Consider splitting paragraph 2 after the meta description sentence to create two tighter paragraphs under 90 words each. Ensure all website quotes are bolded exactly as they appear in the evidence. The tradeoff and takeaway are strong — preserve them.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "clarity": 8,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 9,
+    "analysisDepth": 9,
+    "editorialQuality": 5,
+    "founderSharpness": 19,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

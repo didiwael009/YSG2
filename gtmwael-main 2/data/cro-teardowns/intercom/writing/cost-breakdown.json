@@ -1,0 +1,279 @@
+{
+  "slug": "intercom",
+  "totalCost": 4.4564,
+  "totalCalls": 165,
+  "totalWasteEstimate": 2.2885,
+  "byRole": {
+    "writer": {
+      "calls": 52,
+      "cost": 1.52174,
+      "percent": 34.1
+    },
+    "critic": {
+      "calls": 65,
+      "cost": 1.45943,
+      "percent": 32.7
+    },
+    "rewriter": {
+      "calls": 17,
+      "cost": 0.56201,
+      "percent": 12.6
+    },
+    "finalJudge": {
+      "calls": 14,
+      "cost": 0.61819,
+      "percent": 13.9
+    },
+    "seoAudit": {
+      "calls": 17,
+      "cost": 0.29503,
+      "percent": 6.6
+    }
+  },
+  "bySection": [
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "totalCost": 0.6957,
+      "writerCost": 0.274,
+      "criticCost": 0.296,
+      "rewriterCost": 0.1257,
+      "calls": 23,
+      "rewriteCount": 3,
+      "finalScore": 88,
+      "pass": true
+    },
+    {
+      "sectionId": "all",
+      "totalCost": 0.68237,
+      "writerCost": 0.36487,
+      "criticCost": 0.17699,
+      "rewriterCost": 0.14051,
+      "calls": 15,
+      "rewriteCount": 2,
+      "finalScore": null,
+      "pass": null
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "totalCost": 0.6499,
+      "writerCost": 0.2698,
+      "criticCost": 0.314,
+      "rewriterCost": 0.0661,
+      "calls": 33,
+      "rewriteCount": 4,
+      "finalScore": 88,
+      "pass": true
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "totalCost": 0.5707,
+      "writerCost": 0.221,
+      "criticCost": 0.2307,
+      "rewriterCost": 0.119,
+      "calls": 22,
+      "rewriteCount": 4,
+      "finalScore": 88,
+      "pass": true
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "totalCost": 0.4797,
+      "writerCost": 0.2718,
+      "criticCost": 0.1372,
+      "rewriterCost": 0.0707,
+      "calls": 15,
+      "rewriteCount": 1,
+      "finalScore": 92,
+      "pass": true
+    },
+    {
+      "sectionId": "01-intro",
+      "totalCost": 0.2101,
+      "writerCost": 0.0505,
+      "criticCost": 0.1463,
+      "rewriterCost": 0.0133,
+      "calls": 15,
+      "rewriteCount": 1,
+      "finalScore": 88,
+      "pass": true
+    },
+    {
+      "sectionId": "02-at-a-glance",
+      "totalCost": 0.141,
+      "writerCost": 0.0332,
+      "criticCost": 0.0811,
+      "rewriterCost": 0.0267,
+      "calls": 6,
+      "rewriteCount": 2,
+      "finalScore": null,
+      "pass": null
+    }
+  ],
+  "expensiveCalls": [
+    {
+      "role": "writer",
+      "sectionId": "all",
+      "model": "claude-opus-4-5",
+      "inputTokens": 2016,
+      "outputTokens": 1469,
+      "cost": 0.14042,
+      "reason": "initial writer"
+    },
+    {
+      "role": "rewriter",
+      "sectionId": "06-lessons-for-saas-teams",
+      "model": "claude-sonnet-4-5",
+      "inputTokens": 3949,
+      "outputTokens": 328,
+      "cost": 0.0838,
+      "reason": "rewriter v2 (loop 1)"
+    },
+    {
+      "role": "writer",
+      "sectionId": "05-cta-navigation-evolution",
+      "model": "claude-sonnet-4-5",
+      "inputTokens": 2018,
+      "outputTokens": 271,
+      "cost": 0.0807,
+      "reason": "initial writer"
+    },
+    {
+      "role": "rewriter",
+      "sectionId": "all",
+      "model": "claude-opus-4-5",
+      "inputTokens": 3480,
+      "outputTokens": 298,
+      "cost": 0.07455,
+      "reason": "rewriter v3 (loop 2)"
+    },
+    {
+      "role": "rewriter",
+      "sectionId": "05-cta-navigation-evolution",
+      "model": "claude-sonnet-4-5",
+      "inputTokens": 3361,
+      "outputTokens": 274,
+      "cost": 0.071,
+      "reason": "rewriter v2 (loop 1)"
+    }
+  ],
+  "wasteSignals": [
+    {
+      "type": "critic_truncation",
+      "sectionId": "01-intro",
+      "estimatedWasteCost": 0.032,
+      "note": "1 critic JSON truncation(s) — response cut before closing brace. Tokens consumed but output unparseable. Fixed by Phase 4N reliability patch."
+    },
+    {
+      "type": "critic_truncation",
+      "sectionId": "03-visual-timeline",
+      "estimatedWasteCost": 0.128,
+      "note": "4 critic JSON truncation(s) — response cut before closing brace. Tokens consumed but output unparseable. Fixed by Phase 4N reliability patch."
+    },
+    {
+      "type": "critic_truncation",
+      "sectionId": "05-cta-navigation-evolution",
+      "estimatedWasteCost": 0.032,
+      "note": "1 critic JSON truncation(s) — response cut before closing brace. Tokens consumed but output unparseable. Fixed by Phase 4N reliability patch."
+    },
+    {
+      "type": "critic_truncation",
+      "sectionId": "04-messaging-evolution",
+      "estimatedWasteCost": 0.032,
+      "note": "1 critic JSON truncation(s) — response cut before closing brace. Tokens consumed but output unparseable. Fixed by Phase 4N reliability patch."
+    },
+    {
+      "type": "rewrite_loop",
+      "sectionId": "02-at-a-glance",
+      "estimatedWasteCost": 0.1078,
+      "note": "2 rewrite loop(s) for section \"02-at-a-glance\" — section still failed critic after all loops. Rewriter+critic cost incurred without quality improvement."
+    },
+    {
+      "type": "rewrite_loop",
+      "sectionId": "03-visual-timeline",
+      "estimatedWasteCost": 0.28507,
+      "note": "4 rewrite loops needed for section \"03-visual-timeline\" to pass. 3 excess loop(s) represent avoidable cost if writer prompt produced a better first draft."
+    },
+    {
+      "type": "rewrite_loop",
+      "sectionId": "05-cta-navigation-evolution",
+      "estimatedWasteCost": 0.26227,
+      "note": "4 rewrite loops needed for section \"05-cta-navigation-evolution\" to pass. 3 excess loop(s) represent avoidable cost if writer prompt produced a better first draft."
+    },
+    {
+      "type": "rewrite_loop",
+      "sectionId": "06-lessons-for-saas-teams",
+      "estimatedWasteCost": 0.28113,
+      "note": "3 rewrite loops needed for section \"06-lessons-for-saas-teams\" to pass. 2 excess loop(s) represent avoidable cost if writer prompt produced a better first draft."
+    },
+    {
+      "type": "rewrite_loop",
+      "sectionId": "all",
+      "estimatedWasteCost": 0.3175,
+      "note": "2 rewrite loop(s) for section \"all\" — section still failed critic after all loops. Rewriter+critic cost incurred without quality improvement."
+    },
+    {
+      "type": "repeated_judge",
+      "sectionId": null,
+      "estimatedWasteCost": 0.52269,
+      "note": "Final judge called 14 times (2 passed). 13 unnecessary judge call(s) on incomplete or failing article states — judge should run only once after all sections converge."
+    },
+    {
+      "type": "redundant_seo_audit",
+      "sectionId": null,
+      "estimatedWasteCost": 0.28804,
+      "note": "SEO audit called 17 times (once per assembly). Only the final audit matters — intermediate audits on incomplete articles produce no actionable signal."
+    }
+  ],
+  "recommendations": [
+    {
+      "idea": "Run final judge and SEO audit only once — after all sections converge — not after every intermediate assembly.",
+      "estimatedSavings": "~$0.811 on this run (18% of total)",
+      "risk": "low",
+      "reason": "Final judge was called 14 times, SEO audit 17 times. Only the last call of each produced the published result."
+    },
+    {
+      "idea": "For structurally constrained sections (02-at-a-glance, intro), set max-rewrite-loops=0 or use a lighter critic — they are capped by evidence density, not writing quality.",
+      "estimatedSavings": "~$0.070 per run for at-a-glance + intro (skip rewrite loops on evidence-thin sections)",
+      "risk": "low",
+      "reason": "02-at-a-glance cycled through 2 full rewrite loops and finished at 68/100. The score is limited by sparse evidence (4 snapshots), not fixable by iteration. The rewriter cost is pure overhead."
+    },
+    {
+      "idea": "Cap critic maxTokens at 4096 for intro/at-a-glance sections; keep 8192 only for analytical sections (messaging, CTA, lessons).",
+      "estimatedSavings": "~$0.090 by preventing truncations on lightweight sections",
+      "risk": "low",
+      "reason": "4 truncation event(s) consumed tokens without producing usable JSON. Most occurred on simpler sections that don't need verbose critic output."
+    },
+    {
+      "idea": "Reduce default max-rewrite-loops from 2 to 1. Sections that pass need 0–1 loops; sections limited by evidence quality never converge regardless of loop count.",
+      "estimatedSavings": "~$0.752 on rewrite overhead (second loop rarely improves score beyond first loop)",
+      "risk": "medium",
+      "reason": "Sections like 05-cta and 02-at-a-glance ran 2 full loops. 05-cta passed on loop 2 (would have needed it), but 02-at-a-glance didn't improve. A 1-loop default with selective 2-loop opt-in would reduce waste without impacting pass rates."
+    },
+    {
+      "idea": "Use claude-haiku for writer calls and reserve claude-sonnet for critic and rewriter only. Writers just expand evidence — cheaper model is sufficient.",
+      "estimatedSavings": "~$1.293 (haiku is ~20× cheaper than sonnet for equivalent output length)",
+      "risk": "medium",
+      "reason": "Writer calls produced first drafts that almost always failed critic (critic catches quality issues regardless of writer model). A cheaper writer model + sonnet critic preserves quality while cutting writer cost by ~85%."
+    },
+    {
+      "idea": "Run SEO audit with claude-haiku (structured scoring task, doesn't require analytical depth of sonnet).",
+      "estimatedSavings": "~$0.251 (haiku is sufficient for structured rubric-based scoring)",
+      "risk": "low",
+      "reason": "SEO audit applies a fixed rubric — the task is pattern matching and scoring, not open-ended reasoning. Haiku handles structured scoring tasks reliably."
+    },
+    {
+      "idea": "Consolidate to 4 analytical sections (merge intro+at-a-glance, merge visual-timeline+messaging) to reduce total section count from 6 to 4.",
+      "estimatedSavings": "~$0.126 by eliminating 2 section writer+critic cycles per run",
+      "risk": "high",
+      "reason": "A 4-section structure eliminates the two weakest sections (intro scores with minimal evidence-specific insight; at-a-glance is structurally constrained by snapshot count). Quality impact unknown until tested."
+    }
+  ],
+  "meta": {
+    "finalJudgeScore": 82,
+    "finalJudgePass": false,
+    "seoScore": 83,
+    "seoPass": true,
+    "articleWordCount": 958,
+    "generatedAt": "2026-06-08T22:58:58.018Z"
+  }
+}

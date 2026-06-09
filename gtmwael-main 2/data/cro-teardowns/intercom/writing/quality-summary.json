@@ -1,75 +1,129 @@
 {
   "slug": "intercom",
-  "generatedAt": "2026-06-08T11:09:36.762Z",
+  "generatedAt": "2026-06-08T22:57:33.198Z",
   "mode": "standard",
   "sections": [
     {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Word count approximately 79 words — within the 60–90 target range, but at the lower end; could add one more specific evidence anchor to strengthen density",
+        "The phrase 'what each shift may signal for founders' is slightly vague — 'signal' softens what could be a sharper promise",
+        "No conversion implication present — the section describes the shift but does not hint at what this repositioning might mean for visitor action or drop-off (though this is borderline acceptable for an intro)"
+      ],
+      "sectionCostUsd": 0.029082
+    },
+    {
       "sectionId": "03-visual-timeline",
       "finalVersion": 1,
-      "finalScore": 79,
-      "passed": false,
+      "finalScore": 88,
+      "passed": true,
       "loopsUsed": 0,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "'reduces first-screen cognitive load for self-serve buyers' — causal claim about visitor cognition without testing data",
-        "'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — conversion outcome claim without evidence",
-        "'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation of strategic intent"
-      ],
-      "remainingIssueCount": 11,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 3,
       "remainingIssues": [
-        "Paragraph 1: 'reduces first-screen cognitive load for self-serve buyers' — claim not supported by evidence; no testing data provided",
-        "Paragraph 1: 'may underserve enterprise visitors' — unsupported interpretation not flagged as speculation",
-        "Paragraph 2: 'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — causal claim about conversion outcomes without data",
-        "Paragraph 3: 'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation presented as probable fact",
-        "Paragraph 1 word count: ~95 words — exceeds 90-word guideline without introducing a distinct second idea",
-        "Paragraph 2 word count: ~90 words — borderline, no clear second idea justifying the length",
-        "The section restates the self-serve→enterprise shift pattern in paragraph 1 ('may underserve enterprise visitors') that belongs in the Messaging section",
-        "The section restates proof burden in paragraph 2 ('creates a heavier burden for cold traffic') that belongs in the Messaging section",
-        "Paragraph 3: 'filters rather than converts' — repeats CTA friction direction analysis that belongs in the CTA section",
-        "Multiple paragraphs lack explicit buyer psychology identification beyond generic 'self-serve' vs 'enterprise' labels",
-        "No company-specific proper noun appears in the first 40 words of the section"
+        "Second paragraph opens with 'In January 2023' — a temporal connector, not a bold claim. The assigned opening move is 'bold-claim' but the section's first beat is descriptive chronology.",
+        "Phrase 'embeds a bold assumption' is interpretive but not explicitly labelled as interpretation — minor risk control issue.",
+        "Word count appears to be ~160 words — comfortably within target range, but opening could be punchier to fully honour the assigned move."
       ],
-      "sectionCostUsd": 0.042036000000000004
+      "sectionCostUsd": 0.077829
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 1,
+      "finalScore": 92,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 0,
+      "remainingIssues": [],
+      "sectionCostUsd": 0.081852
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 3,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 2,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "'This reduces drop-off from choice paralysis' — causal claim with no evidence of actual drop-off change",
+        "'filters out visitors who needed nurture before committing' — presented as fact, not interpretation"
+      ],
+      "remainingIssueCount": 10,
+      "remainingIssues": [
+        "Opening paragraph: 'This reduces drop-off from choice paralysis' is a causal claim unsupported by evidence — no data on drop-off reduction",
+        "Opening paragraph: 'filters out visitors who needed nurture before committing' is an interpretation presented as fact without hedge",
+        "Second paragraph: 'This can be read as' is hedging language (acceptable here, covering a real interpretive gap about buyer segment shift)",
+        "Second paragraph: 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page—possibly into product-led onboarding or outbound sequences' is speculative; no evidence provided for where education relocated",
+        "Word count approximately 185 words — within target range",
+        "All website quotes properly bolded",
+        "Tradeoff present and explicitly named: 'two-click conversion paths in exchange for losing visitors who would have downloaded a report or watched a demo before booking a call'",
+        "Founder takeaway present as closing question — valid format",
+        "Opening executes 'concrete-number' move with 'Ten CTAs removed. Ten added.' — excellent execution of assigned move",
+        "No paragraphs exceed 90 words (para 1: ~85 words, para 2: ~100 words — para 2 introduces distinct ideas about buyer segment shift and education relocation, justifying length)"
+      ],
+      "sectionCostUsd": 0.271374
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 5,
+      "remainingIssues": [
+        "Opening sentence is direct but does not execute a 'counterintuitive-warning' move—it reads as a standard prohibition rather than a counterintuitive insight (e.g., 'Most SaaS teams copy successful homepages at the wrong stage' would be more counterintuitive).",
+        "Paragraph 2 (81 words) and Paragraph 3 (88 words) are both near the 90-word threshold and could be tightened for punchier compression.",
+        "The phrase 'What made this viable for Intercom appears to be' is hedging language that could be sharper ('Intercom can make this bet because...').",
+        "No explicit buyer psychology stated—who is tolerant vs. intolerant of the mismatch? (e.g., enterprise buyers vs. SMB self-serve trialists)",
+        "Section word count is 180 words (target range 200–250)—slightly under target but within acceptable bounds."
+      ],
+      "sectionCostUsd": 0.08181300000000002
     }
   ],
-  "averageScore": 79,
-  "passCount": 0,
-  "failCount": 1,
+  "averageScore": 88.8,
+  "passCount": 5,
+  "failCount": 0,
   "skippedCount": 0,
-  "totalRewriteLoops": 0,
-  "weakSections": [
-    "03-visual-timeline"
-  ],
+  "totalRewriteLoops": 2,
+  "weakSections": [],
   "allRiskFlags": [
-    "'reduces first-screen cognitive load for self-serve buyers' — causal claim about visitor cognition without testing data",
-    "'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — conversion outcome claim without evidence",
-    "'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation of strategic intent"
+    "'This reduces drop-off from choice paralysis' — causal claim with no evidence of actual drop-off change",
+    "'filters out visitors who needed nurture before committing' — presented as fact, not interpretation"
   ],
   "sectionErrors": [],
-  "finalJudgeScore": 92,
-  "finalJudgePass": true,
-  "finalRequiredFixes": [],
-  "seoScore": 85,
+  "finalJudgeScore": 82,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Section 06 ('Why Most Founders Should Not Copy This Homepage Yet') fails the tradeoff requirement. While it discusses proof burden, it does not contain an explicitly named marketing tradeoff formatted as '[X] in exchange for [Y]' or 'The tradeoff: [X] vs [Y].' The sentence 'The tradeoff: a category claim in exchange for a higher proof burden and narrower buyer tolerance for inconsistency' appears AFTER the main analysis, not integrated into it.",
+    "Proof burden appears in three distinct sections: Intro (paragraph 3), Section 06 (throughout), implicitly in the CTA section discussion of filtering. This exceeds the concision target of 1. Consolidate to a single mention or differentiate each use.",
+    "Self-serve→enterprise shift appears in at least two sections: CTA section ('shift away from SMB self-serve users') and implicitly in messaging evolution (practitioner→platform buyer). Consolidate.",
+    "Article lacks a visual timeline section (section 03) which was listed in sectionsIncluded but is missing from the article body. Either remove from sectionsIncluded or add the section."
+  ],
+  "seoScore": 83,
   "seoPass": true,
   "seoRequiredFixes": [
-    "Meta description is 153 characters including ellipsis — good, but the ellipsis suggests truncation. Rewrite to use the full 155-character budget intentionally without trailing punctuation that implies cut-off content",
-    "The H1 'How Intercom rewrote its homepage over 3 years' does not include the primary keyword 'CRO teardown' — consider revising to 'Intercom Homepage CRO Teardown: How They Rewrote Messaging Over 3 Years' or similar",
-    "Section '02-at-a-glance' has title 'At a Glance' but this should be formatted as ## heading in the markdown for proper H2 structure",
-    "Add a conclusion section with a clear H2 (e.g., '## Key Takeaways from Intercom's Homepage Evolution') to provide closure and reinforce primary keyword"
+    "Primary keyword 'Intercom homepage CRO teardown' appears only once in the body (in meta description and title). Incorporate naturally at least once more in the opening paragraph or first subheading to signal topical relevance.",
+    "Secondary keywords are underrepresented in body text. Ensure 'Intercom homepage redesign', 'SaaS homepage CRO teardown', and 'homepage A/B test analysis' appear naturally at least once each in relevant sections.",
+    "The article claims to analyze 'four snapshots' but never explicitly labels or dates them (Jan 2023, Oct 2025, Jun 2026, etc.) in a scannable table or timeline. Add a visual or textual reference anchor for readers to track the changes.",
+    "Meta description is 155 characters—at the limit. Trim slightly to ensure it displays fully across all devices without truncation.",
+    "No H1 tag explicitly present in the article structure. The title 'How Intercom rewrote its homepage over 3 years' should be the H1; ensure semantic HTML reflects this."
   ],
-  "articleWordCount": 1482,
-  "repetitionWarnings": [
-    "\"self-serve vs enterprise shift\" appears in 3 sections (max 2): 03-visual-timeline, 05-cta-navigation-evolution, 06-lessons-for-saas-teams",
-    "\"proof burden\" appears in 3 sections (max 1): 01-intro, 04-messaging-evolution, 06-lessons-for-saas-teams"
-  ],
+  "articleWordCount": 958,
+  "repetitionWarnings": [],
   "editorialWarnings": [
-    "[01-intro] Paragraph exceeds 90 words (~96w): \"Intercom's homepage underwent a complete rewrite between January…\"",
-    "[01-intro] Paragraph exceeds 90 words (~103w): \"The repositioning signal is direct: Intercom moved from…\"",
-    "[03-visual-timeline] Paragraph exceeds 90 words (~94w): \"**June 2026** reframed the opening to \"The only…\"",
-    "[05-cta-navigation-evolution] Paragraph exceeds 90 words (~95w): \"Intercom replaced outcome-driven CTAs with product-taxonomy CTAs. The…\"",
-    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~103w): \"Intercom replaced action-based navigation with product-category labels (\"Custom…\"",
-    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~120w): \"The headline shifted from \"Support customers at exactly…\"",
-    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~101w): \"Five section headings were added and one removed…\""
+    "[05-cta-navigation-evolution] Paragraph exceeds 90 words (~100w): \"The homepage now assumes buyers arrive decision-ready. This…\""
   ],
   "overLengthWarning": null
 }

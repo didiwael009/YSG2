@@ -1,53 +1,56 @@
 {
-  "seoScore": 85,
+  "seoScore": 83,
   "pass": true,
   "titleScore": 13,
-  "metaDescriptionScore": 12,
-  "headingStructureScore": 14,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 12,
   "searchIntentScore": 18,
-  "keywordUseScore": 9,
-  "readabilityScore": 13,
-  "internalLinkingScore": 6,
+  "keywordUseScore": 8,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "In the 'Messaging Evolution' section, link 'category-defining claim' to a methodology article about positioning frameworks or category creation for SaaS",
-    "In the 'CTA and Navigation Evolution' section, link 'product-taxonomy CTAs' to a related teardown or guide analyzing CTA strategies",
-    "In 'Lessons for SaaS Teams', link 'action-based navigation' to a navigation best practices article or related case study",
-    "In the intro, link 'primary headline shifted' to a guide on writing effective SaaS headlines or headline testing methodology",
-    "In 'Lessons for SaaS Teams', link 'trial-to-paid transition' to conversion optimization content about trial experience"
+    "Link 'category ownership' section to a related article on positioning strategy or competitive differentiation in SaaS",
+    "Link 'platform buyers vs practitioners' insight to an article on buyer persona segmentation or sales-led vs self-serve GTM",
+    "Link 'CTA consolidation' discussion to a resource on homepage conversion funnel architecture or CTA testing frameworks",
+    "Link 'proof stack' concept to an internal guide on building conviction through product experience or onboarding coherence",
+    "Add contextual link from 'mid-market or enterprise buyers' to an article on enterprise vs SMB homepage strategies"
   ],
   "faqSuggestions": [
-    "Why did Intercom change its homepage headline from outcome-focused to category-focused?",
-    "What does Intercom's navigation restructuring tell us about their target audience shift?",
-    "How can SaaS companies decide between action-based and product-category CTAs?",
-    "What are the risks of using superlative claims like 'the only' in homepage headlines?",
-    "How do you know when to reposition your SaaS homepage around a new category?",
-    "What is the difference between outcome-driven and product-taxonomy CTAs?"
+    "What changed in Intercom's homepage headline between 2023 and 2026?",
+    "Why did Intercom shift from 'support software' messaging to 'AI Agent era' positioning?",
+    "How did Intercom's target buyer change based on homepage evolution?",
+    "Should SaaS companies make bold category claims on their homepage?",
+    "How many CTAs should a SaaS homepage have based on the Intercom example?",
+    "What is the difference between practitioner-focused and platform-buyer-focused homepage messaging?",
+    "How do you know if your homepage is targeting the right buyer persona?",
+    "What proof is needed before making 'only' or 'only one' claims on a homepage?"
   ],
   "contentGapNotes": [
-    "No mention of what metrics Intercom might have used to validate these changes (even speculatively, e.g., 'teams making changes of this magnitude typically track...')",
-    "Missing discussion of how the visual design changes (mentioned as 71% similarity drop) relate to the messaging shifts",
-    "No analysis of what happened to the removed CTAs — did they move elsewhere on the page, or were those conversion paths abandoned entirely?",
-    "The article doesn't address mobile experience or how these changes might affect mobile visitors differently",
-    "No speculation about competitive pressure or market timing that might have driven the AI-first repositioning",
-    "Missing practical framework for when a SaaS team should consider similar headline repositioning"
+    "The article does not show or describe the actual visual changes (color, layout, imagery, form design) across the four snapshots—only messaging and structural changes. A section on visual design evolution would strengthen the teardown.",
+    "No analysis of traffic, bounce rate, or conversion rate changes associated with these homepage shifts. The article assumes the changes were positive but offers no data-driven evidence.",
+    "Missing analysis of how secondary navigation, footer, or below-fold sections evolved. The focus is narrowly on headline, H2s, and CTAs.",
+    "No mention of mobile vs desktop homepage differences or how responsive design may have evolved across the three-year period.",
+    "The article does not address Intercom's audience segmentation or personalization—whether different buyer personas see different homepage variants.",
+    "No coverage of SEO performance changes (rankings, organic traffic, keyword targeting) that may have resulted from messaging shifts.",
+    "The 'proof stack' concept is introduced but not fully developed—what specific proof points (case studies, customer logos, product screenshots, trust badges) did Intercom add to the page?"
   ],
   "requiredFixes": [
-    "Meta description is 153 characters including ellipsis — good, but the ellipsis suggests truncation. Rewrite to use the full 155-character budget intentionally without trailing punctuation that implies cut-off content",
-    "The H1 'How Intercom rewrote its homepage over 3 years' does not include the primary keyword 'CRO teardown' — consider revising to 'Intercom Homepage CRO Teardown: How They Rewrote Messaging Over 3 Years' or similar",
-    "Section '02-at-a-glance' has title 'At a Glance' but this should be formatted as ## heading in the markdown for proper H2 structure",
-    "Add a conclusion section with a clear H2 (e.g., '## Key Takeaways from Intercom's Homepage Evolution') to provide closure and reinforce primary keyword"
+    "Primary keyword 'Intercom homepage CRO teardown' appears only once in the body (in meta description and title). Incorporate naturally at least once more in the opening paragraph or first subheading to signal topical relevance.",
+    "Secondary keywords are underrepresented in body text. Ensure 'Intercom homepage redesign', 'SaaS homepage CRO teardown', and 'homepage A/B test analysis' appear naturally at least once each in relevant sections.",
+    "The article claims to analyze 'four snapshots' but never explicitly labels or dates them (Jan 2023, Oct 2025, Jun 2026, etc.) in a scannable table or timeline. Add a visual or textual reference anchor for readers to track the changes.",
+    "Meta description is 155 characters—at the limit. Trim slightly to ensure it displays fully across all devices without truncation.",
+    "No H1 tag explicitly present in the article structure. The title 'How Intercom rewrote its homepage over 3 years' should be the H1; ensure semantic HTML reflects this."
   ],
   "optionalImprovements": [
-    "Title could be shortened for better mobile display — 'Intercom Homepage Teardown: Jan 2023 to Jun 2026' is 49 characters (good) but consider front-loading value: 'Intercom Homepage CRO Teardown (2023-2026): 4 Snapshots Analyzed'",
-    "Add a sentence in the intro explicitly stating what a 'CRO teardown' is for readers unfamiliar with the format — helps match search intent for informational queries",
-    "The 'Visual Timeline' section could benefit from subheadings (H3s) for each snapshot date to improve scanability",
-    "Consider adding a brief methodology note explaining how snapshots were captured and compared — adds credibility",
-    "The article mentions '4 snapshots' but only details three dates (Jan 2023, Oct 2025, Jun 2026) — either add the fourth or reconcile the count",
-    "Add bold text to key takeaways in the 'Lessons for SaaS Teams' section to improve scanability for time-pressed readers",
-    "Include a brief comparative table in 'At a Glance' showing old vs new headline, old vs new CTA count, etc. — visual anchors improve engagement",
-    "The phrase 'observable across four snapshots' appears multiple times — vary language to avoid repetition"
+    "Add a one-sentence definition of 'CRO teardown' early in the intro for readers unfamiliar with the format.",
+    "Include a visual timeline or side-by-side comparison table showing the headline evolution (Jan 2023 → Oct 2025 → Jun 2026) to improve scanability.",
+    "Strengthen the opening excerpt: 'Between January 2023 and June 2026, Intercom moved from selling support software to claiming a category of one' is strong but could benefit from being called out as a key insight/callout box.",
+    "In the 'Why Most Founders Should Not Copy This Homepage Yet' section, add a bulleted checklist (e.g., 'Do you have product proof for your claim?' 'Is your onboarding aligned with your headline?') to make the advice actionable.",
+    "Consider adding a 'Key Takeaway for Your Homepage' callout box at the end of each major section to reinforce lessons.",
+    "The phrase 'So what?' appears three times as a transition—vary the language to avoid repetition and improve flow.",
+    "Add a brief 'About this analysis' note: methodology (how snapshots were collected), date of analysis, and any limitations (e.g., mobile variants not analyzed)."
   ],
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.026649000000000006,
-  "generatedAt": "2026-06-08T11:09:36.759Z"
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.006996800000000025,
+  "generatedAt": "2026-06-08T22:57:33.183Z"
 }

@@ -2,41 +2,40 @@
   "score": 78,
   "pass": false,
   "issues": [
-    "Paragraph 1 exceeds 90 words without a distinct second idea (95 words)",
-    "Paragraph 2 claims navigation changes are 'harder to isolate from evidence' but evidence shows 5 nav items added, 8 removed — this is factually incorrect",
-    "Paragraph 2 misrepresents 'Natively integrated AI Agent' and 'AI-powered Insights' as navigation items when they are listed as CTAs in the evidence",
-    "No company proper noun appears in the first 40 words — SEO weakness",
-    "Paragraph 2 introduces 'category awareness' and 'formal evaluation' concepts with no evidence anchor — these are generic SaaS observations that could apply to any company",
-    "The phrase 'better ticket resolution' appears as a hypothetical buyer need but no evidence shows this was an old CTA or H2 — it is invented",
-    "Section does not address which navigation items were added/removed despite the SECTION GOAL explicitly requiring this",
-    "No discussion of what trust the page must build before each ask, as required by SECTION GOAL"
+    "Opening sentence does not execute the assigned 'concrete-number' move — it states a number but immediately pivots to abstraction ('yet the page became more decisive') rather than landing the number as the first beat",
+    "First paragraph, second sentence: 149 words — exceeds 90-word guideline without introducing a distinct second idea; the list of old CTAs could be compressed",
+    "'This can be read as' appears in paragraph 2 — hedging phrase count: 1 (acceptable, but the hedge covers interpretation that could be stated more directly)",
+    "No explicitly formatted tradeoff using '[X] in exchange for [Y]' or 'The tradeoff: [X] vs [Y]' — the phrase 'The tradeoff: speed vs qualification' appears but is not unpacked in the required exchange format",
+    "Section is 169 words — within target range for this section type",
+    "Takeaway is present ('The founder question isn't whether two CTAs are correct — it's whether your traffic quality and sales capacity match a page that offers precisely two doors') but lacks a named marketing tradeoff in full exchange format",
+    "All website quotes are properly bolded",
+    "Paragraph 2 includes a conversion implication (qualifying intent earlier) and buyer psychology (assumes visitors arrive educated or will self-select into sales)",
+    "Generic risk: 'the page now assumes visitors arrive educated or will self-select into sales' — this interpretation is not directly supported by the evidence (evidence shows CTAs changed, not visitor education level or sales qualification process)"
   ],
   "requiredFixes": [
-    "Compress paragraph 1 to under 90 words by removing either the 'bifurcated funnel' interpretation or the 'friction direction' clause — one idea per paragraph",
-    "Replace paragraph 2 entirely: use the actual nav-changes evidence (5 added, 8 removed items) instead of claiming the data is 'harder to isolate'",
-    "Add Intercom's name in the first sentence to anchor SEO and company specificity",
-    "Remove the 'better ticket resolution' hypothetical — stick to what the evidence shows visitors saw",
-    "Add analysis of what trust each new CTA requires: 'Contact sales' assumes trust in rep time investment; 'Fin AI Agent' assumes visitor knows what Fin is; 'Start free trial' assumes product is self-serve learnable",
-    "Identify a buyer audience for the old vs new CTA strategy — e.g., 'outcome CTAs likely served early-stage SaaS founders; product-label CTAs serve mid-market buyers comparing platforms'"
+    "Rewrite the opening sentence to execute the 'concrete-number' move: lead with the number as the first beat, e.g., 'Twenty CTA swaps. Ten added, ten removed — but only two primary paths remain.' Then pivot to analysis.",
+    "Compress the first paragraph's second sentence — the long list of old CTAs dilutes punch. Suggest: 'The earlier homepage scattered intent across **\"Get started,\"** **\"Watch a Demo,\"** and outcome-specific hooks; the current version consolidates to **\"Start free trial\"** and **\"Contact sales.\"**'",
+    "Reformat the tradeoff as a full exchange: 'The tradeoff: speed to conversion in exchange for fewer unqualified leads' or 'The tradeoff: simplified choice in exchange for losing mid-funnel nurtured visitors.'",
+    "Remove or support the claim 'the page now assumes visitors arrive educated' — evidence shows CTA removal, not visitor education level. Rephrase as: 'Removing **\"Watch a Demo\"** and **\"Download the report\"** can be read as a bet that visitors arrive ready to choose, or that mid-funnel nurture now happens off-page.'"
   ],
   "riskFlags": [
-    "'That works when the visitor is comparing platforms in a formal evaluation' — causation claim with no supporting evidence",
-    "'friction reduces for lower-tier buyers' — conversion impact claim with no data"
+    "'the page now assumes visitors arrive educated or will self-select into sales' — this is an interpretive claim about visitor state and sales process that is not directly supported by the CTA change evidence; rephrase with hedging or remove"
   ],
   "seoNotes": [
-    "No company proper noun in first 40 words — violates seoUsefulness rubric",
-    "Section does not identify the company until implied reference in final sentence"
+    "Section uses concrete CTA names in bold quotes — good for skimmability and SEO entity reinforcement"
   ],
-  "rewriteInstruction": "Rewrite to address both CTA and navigation changes using the provided evidence. Start with Intercom's name in sentence one. Compress paragraph 1 to under 90 words. Replace paragraph 2 with analysis of the 5 nav items added and 8 removed, using their actual labels if available in the full evidence set. Add a paragraph on trust burden: what must a visitor believe before clicking 'Fin AI Agent' vs 'Get started'? Identify a buyer audience shift (who did outcome CTAs serve vs product-label CTAs?). Remove all hypothetical buyer needs not present in the evidence ('better ticket resolution'). Ensure every analytical claim traces to a specific CTA or nav label in the evidence. Target 280–310 words.",
+  "rewriteInstruction": "Open with the concrete number as the first beat — no pivot to abstraction in the same sentence. Compress the first paragraph's CTA list to avoid padding. Reformat the tradeoff as a full exchange ('[X] in exchange for [Y]'). Remove or hedge the unsupported claim about visitor education level — the evidence shows CTA removal, not visitor psychology. The takeaway is strong but needs the tradeoff fix to pass the founderSharpness threshold. Target: tighten to 150 words, preserve the founder question, and ensure the opening executes the assigned 'concrete-number' move without immediate abstraction.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
+    "evidenceAccuracy": 20,
     "clarity": 7,
-    "specificity": 10,
-    "seoUsefulness": 4,
-    "croUsefulness": 7,
-    "riskControl": 4,
-    "analysisDepth": 6,
-    "editorialQuality": 5
+    "specificity": 13,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 7,
+    "analysisDepth": 8,
+    "editorialQuality": 3,
+    "founderSharpness": 13,
+    "distinctiveness": 2
   },
   "effectivePassThreshold": 85
 }

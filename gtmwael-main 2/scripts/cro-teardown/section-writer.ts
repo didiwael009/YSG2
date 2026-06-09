@@ -34,12 +34,37 @@ export interface SectionMeta {
    * Injected into both prompts when present.
    */
   forbiddenPhrases?: string[];
+  /**
+   * Rec 2: Override the CLI --max-rewrite-loops for evidence-capped sections.
+   * When set, this value takes precedence over the CLI flag.
+   * 0 = write v1 and accept it; no rewrite loop regardless of critic score.
+   */
+  maxRewriteLoops?: number;
+  /**
+   * Rec 3: Override critic maxTokens for lightweight sections.
+   * Analytical sections keep 8192; thin sections use 4096 to prevent truncation waste.
+   */
+  criticMaxTokens?: number;
+  /**
+   * Phase 4P: the intended first beat of the section (claim / contrast / number / warning).
+   * Used by the critic's distinctiveness check to reward divergence across sections,
+   * and documented for the cross-section cohesion pass.
+   */
+  openingMove?: string;
+  /**
+   * Phase 4P: per-section writer/rewriter model override.
+   * Analytical sections use Opus for sharper prose; the critic stays on its own
+   * (cheaper) model. When unset, falls back to getModel('writer').
+   */
+  writerModel?: string;
 }
 
-/** Canonical run order for Phase 4C compose-all-sections. */
+/**
+ * Canonical run order — 5-section architecture (Phase 4N+).
+ * 02-at-a-glance dropped: evidence-capped section, not worth iterating.
+ */
 export const SECTION_ORDER: readonly string[] = [
   '01-intro',
-  '02-at-a-glance',
   '03-visual-timeline',
   '04-messaging-evolution',
   '05-cta-navigation-evolution',
@@ -49,147 +74,136 @@ export const SECTION_ORDER: readonly string[] = [
 /** H2 heading to prepend in the assembled article. null = no heading (intro). */
 export const SECTION_HEADINGS: Record<string, string | null> = {
   '01-intro':                    null,
-  '02-at-a-glance':              '## At a Glance',
-  '03-visual-timeline':          '## Visual Timeline',
-  '04-messaging-evolution':      '## Messaging Evolution',
-  '05-cta-navigation-evolution': '## CTA and Navigation Evolution',
-  '06-lessons-for-saas-teams':   '## Lessons for SaaS Teams',
+  '03-visual-timeline':          '## The Belief Shift',
+  '04-messaging-evolution':      '## The Buyer Shift',
+  '05-cta-navigation-evolution': '## The Funnel Shift',
+  '06-lessons-for-saas-teams':   '## The Marketing Maturity Lesson',
 };
 
 export const SECTION_META: Record<string, SectionMeta> = {
-  // ── Phase 4C canonical ────────────────────────────────────────────────────
+  // ── Phase 4C canonical — 5-section architecture (Phase 4N+) ─────────────────
   '01-intro': {
     title: 'Introduction',
+    openingMove: 'company-and-period',
     goalDescription:
-      'Opens the article, introduces the company and period, previews the major changes, and gives the reader a clear reason to continue.',
+      'One punchy paragraph that names the company, the time period, and the single clearest shift — framed as a marketing story, not a redesign recap. No analysis yet.',
     writerInstruction:
-`THIS SECTION'S JOB: Orient the reader. Name the company, the period, the scale of change, and the single clearest repositioning signal. Lead into what the rest of the article covers.
-THIS SECTION DOES NOT: analyse messaging, explain CTA mechanics, or state lessons — those belong in later sections.
+`SECTION ROLE: Hook the reader. Set up the story.
 
-Write 2 paragraphs. Cover: which company, the period, and the major observable changes detected (headline rewrite, navigation restructuring, section additions). End with a sentence that sets up what the rest of the article investigates. Keep each paragraph under 90 words.`,
-    wordRange: { min: 150, max: 220 },
+Write ONE paragraph — no more, no less. Cover exactly three things:
+  1. Company name and time period (e.g., "Between Jan 2023 and Jun 2026, Intercom…")
+  2. The single clearest marketing shift — the claim or identity that changed most visibly
+  3. One sentence that tells the reader what this article will reveal
+
+Rules:
+  • Lead with the company name. No hedge in the first sentence — state the shift directly.
+  • No page elements (H1, nav, CTA labels) mentioned here. They belong in analysis sections.
+  • No heading — do NOT output a ## line. Start with the paragraph directly.
+  • Under 90 words total.`,
+    wordRange: { min: 55, max: 90 },
+    // evidence-capped: one pass sufficient, no rewrite loop needed
+    maxRewriteLoops: 0,
+    criticMaxTokens: 4096,
   },
-  '02-at-a-glance': {
-    title: 'At a Glance',
-    goalDescription:
-      'Quick-reference narrative contextualising the summary-card numbers for a reader who is scanning the article.',
-    writerInstruction:
-`THIS SECTION'S JOB: Give the reader a fast orientation to the three most observable changes. Names elements, dates, and magnitudes. Cautious language only.
-THIS SECTION DOES NOT: explain what the changes mean for buyers, analyse messaging strategy, or draw lessons — those belong in sections 03–06.
 
-Write using this exact structure — do not deviate:
-
-OPENING SENTENCE (mandatory):
-Name the company, state the date range, and name the single most significant observed change.
-Example pattern: "[Company]'s homepage changed most visibly between [from] and [to] in its [element], [element], and [element]."
-
-BODY (3 bullet points maximum — use markdown "- "):
-Each bullet must:
-  • Reference one specific observed fact from the evidence
-  • Name the exact page element it describes — H1, CTA text, meta description, nav item, H2 heading, or snapshot date
-  • Not interpret intent, strategy, or outcome
-  • Stay under 40 words
-
-CLOSING SENTENCE (mandatory):
-One cautious synthesis sentence. Maximum 25 words.
-Allowed openers: "Taken together, the visible changes suggest…" / "These observed shifts can be read as…" / "Collectively, the evidence shows…"
-
-Total length: 110–160 words. Do not exceed 160 words.`,
-    wordRange: { min: 110, max: 160 },
-    forbiddenPhrases: [
-      'iterative testing',
-      'conversion lift',
-      'improved performance',
-      'strategic overhaul',
-      'growth strategy',
-      'internal strategy',
-      'this shows',
-      'this proves',
-      'this improved',
-      'this strategy',
-    ],
-  },
   '03-visual-timeline': {
-    title: 'Visual Timeline',
+    title: 'The Belief Shift',
+    openingMove: 'bold-claim',
+    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Narrative walkthrough of what changed across the visual snapshots — structural, visual, and textual shifts at each stage — with analysis of what each change implies for first-screen conversion clarity and buyer comprehension.',
+      'What belief is the homepage now asking visitors to accept — and what did it ask before? Lead with the claim, then prove it.',
     writerInstruction:
-`THIS SECTION'S JOB: Walk through what changed visually and structurally across the snapshots. For each change, state one conversion implication. One paragraph per snapshot era.
-THIS SECTION DOES NOT: explain headline wording in depth (that is messaging evolution), draw final lessons (that is section 06), or repeat the self-serve→enterprise conclusion — state it once here if relevant, then do not repeat it in other sections.
+`SECTION ROLE: Name the belief shift. Show it. Explain what it costs.
 
-Write 3 paragraphs — one per major snapshot era. Each paragraph:
-  • Names the snapshot date and quotes specific headline or section-heading text from the evidence
-  • States how the visual hierarchy changed — what the page asks the visitor to notice first
-  • States one conversion implication (first-screen clarity, buyer type fit, or CTA discoverability)
-  • Stays under 90 words
+STRUCTURE — follow this order exactly:
+  1. ## HEADING — MUST be the very first line of your output. Name the specific shift for THIS company, 6–12 words (e.g., "From outcome promise to category ownership bet"). Never a generic title.
+  2. OPENING MOVE — CLAIM FIRST: your first body sentence after the heading is a bold, unhedged statement of the belief shift. No "appears to," no "can be read as" in that opening sentence. State what the page now asks the reader to believe.
+  3. EVIDENCE — quote the old and new headline / section-heading text, bolded. Name the period. What visibly changed?
+  4. INTERPRETATION — what belief is the page now asking visitors to accept? What market assumption does it embed? Hedged here.
+  5. TRADEOFF — name one explicitly: "outcome promise vs category claim" or "confidence vs overclaiming."
+  6. **So what?** — LABELLED. One founder-facing question: should THEIR homepage make a category claim now, and what's the prerequisite?
 
-Use cautious language: "can be read as", "may suggest", "appears to".
-Do not claim changes caused any outcome.`,
-    wordRange: { min: 190, max: 280 },
+2–3 short paragraphs (body, excluding heading). Each under 90 words.
+This section does NOT identify buyers — that's the next section's job.`,
+    wordRange: { min: 140, max: 220 },
+    criticMaxTokens: 8192,
   },
+
   '04-messaging-evolution': {
-    title: 'Messaging Evolution',
+    title: 'The Buyer Shift',
+    openingMove: 'contrast',
+    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Analysis of how the headline, meta description, and core copy shifted — including who the old vs new message likely served, what objections the new message may address, and what proof burden it creates.',
+      'Who does the page now appear to be written for, and who did it serve before? Open on the contrast itself, not a thesis statement.',
     writerInstruction:
-`THIS SECTION'S JOB: Analyse the headline and meta description changes — who each message served, what proof burden the new message creates. This is where the self-serve→enterprise analysis belongs if applicable. State it once and completely here.
-THIS SECTION DOES NOT: describe visual layout (that is section 03), explain CTAs (that is section 05), or repeat the proof-burden conclusion in multiple paragraphs — say it once.
+`SECTION ROLE: Name the buyer shift. Show the evidence. Name the tradeoff.
 
-Write 3 paragraphs. Each paragraph under 90 words. Quote actual before/after text from the evidence.
+STRUCTURE — follow this order exactly:
+  1. ## HEADING — MUST be the very first line of your output. Name the buyer shift for THIS company, 6–12 words (e.g., "The page stopped talking to the team lead"). Never generic.
+  2. OPENING MOVE — CONTRAST FIRST: your first body sentences put the two readers side by side, NOT a thesis sentence. Two short sentences — who the old page spoke to, then who the new page speaks to. Example shape: "The old page spoke to the person doing the work. The new one speaks to the person signing the contract." Make the contrast concrete to THIS company's evidence before you interpret anything.
+  3. EVIDENCE — quote meta-description changes, headline vocabulary shifts, CTA / navigation labels, all bolded. What in the language signals a different buyer?
+  4. INTERPRETATION — what decision stage does the page now target? What does the changed vocabulary suggest about the buying committee? Hedged.
+  5. TRADEOFF — name it: "self-serve vs sales-led" or "breadth vs focus."
+  6. CLOSE — fold the founder takeaway into your LAST sentence. Do NOT use a bold "So what?" label here. End on a question the founder must answer about their own page: who is it currently written for, and is that the buyer who converts?
 
-Paragraph 1 — the headline shift: quote the old and new headline. State who the old message likely served vs who the new message likely serves.
-Paragraph 2 — the meta description shift: quote it. State what changed about urgency, category framing, or call-to-action intent.
-Paragraph 3 — the proof burden: what must the page now demonstrate to make the new headline credible? One SaaS founder takeaway as the final sentence.
-
-Do not claim changes caused growth or conversion improvements.
-Use cautious language: "can be read as", "may suggest", "likely served", "appears to".`,
-    wordRange: { min: 210, max: 300 },
+2–3 short paragraphs (body, excluding heading). Each under 90 words.
+State the self-serve→enterprise shift HERE if applicable — do not repeat it elsewhere.`,
+    wordRange: { min: 140, max: 220 },
+    criticMaxTokens: 8192,
     forbiddenPhrases: [
       'this increased conversions',
       'this drove growth',
-      'Stripe decided',
-      'Hootsuite decided',
-      'their strategy was',
       'A/B tested',
       'this proved',
       'this improved performance',
     ],
   },
+
   '05-cta-navigation-evolution': {
-    title: 'CTA and Navigation Evolution',
+    title: 'The Funnel Shift',
+    openingMove: 'concrete-number',
+    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Analysis of which calls-to-action and navigation items were added and removed — including what funnel motion they signal, whether CTA friction increased or decreased, and what trust the page must build before each ask.',
+      'How did the conversion path change, and what does fewer/different CTAs signal about the expected buyer journey? Open on the number, not the analysis.',
     writerInstruction:
-`THIS SECTION'S JOB: Analyse the CTA set and navigation taxonomy changes. State the CTA friction direction once. State one navigation insight once. One SaaS founder takeaway at the end.
-THIS SECTION DOES NOT: repeat the self-serve→enterprise conclusion (stated in messaging), restate proof burden (stated in messaging), or draw broad lessons (that is section 06).
+`SECTION ROLE: Name the funnel shift. Show the CTA evidence. Name the friction tradeoff.
 
-Write 3 paragraphs. Each paragraph under 90 words. Quote actual CTA text and navigation labels from the evidence.
+STRUCTURE — follow this order exactly:
+  1. ## HEADING — MUST be the very first line of your output. Name the funnel change for THIS company, 6–12 words (e.g., "Fewer CTAs, higher intent required"). Never generic.
+  2. OPENING MOVE — NUMBER FIRST: your first body sentence states the concrete change as a count or before/after. Example shape: "Four primary CTAs became two." or "The page removed every mid-funnel ask and kept two." No interpretation in that first sentence — the number IS the hook. Then explain.
+  3. EVIDENCE — name the old CTA set vs new CTA set, labels bolded. What was removed, what replaced it?
+  4. INTERPRETATION — what does this signal about expected buyer-journey length? Who does the path now serve — and who does it filter out? Hedged.
+  5. TRADEOFF — name it: "speed vs qualification" or "proof vs friction."
+  6. CLOSE — fold the takeaway into your LAST sentence. Do NOT use a bold "So what?" label here. End on: how many entry points does the founder's own homepage offer, and does that match their traffic quality and sales capacity?
 
-Paragraph 1 — CTA evolution: what CTAs were added or removed. Does this suggest a self-serve, sales-led, or bifurcated funnel? Did friction increase or decrease?
-Paragraph 2 — Navigation evolution: what labels were added or removed. Does the new structure help buyers self-segment, or does it add cognitive load?
-Paragraph 3 — one SaaS founder takeaway about CTA architecture or navigation structure, tied to the specific evidence above.
-
-Use cautious interpretive language throughout. Do not claim changes drove conversion.`,
-    wordRange: { min: 190, max: 270 },
+2 tight paragraphs (body, excluding heading). Each under 90 words.
+State CTA-friction direction ONCE here — do not repeat in the lessons section.`,
+    wordRange: { min: 120, max: 200 },
+    criticMaxTokens: 8192,
   },
+
   '06-lessons-for-saas-teams': {
-    title: 'Lessons for SaaS Teams',
+    title: 'The Marketing Maturity Lesson',
+    openingMove: 'counterintuitive-warning',
+    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Three to four practical lessons SaaS founders can study from this homepage evolution — each converting analysis from earlier sections into an actionable observation with a when-not-to-copy condition.',
+      'What is the meta-pattern of this evolution, and when should founders NOT copy it? Open on the warning, not the pattern.',
     writerInstruction:
-`THIS SECTION'S JOB: Convert the analysis from sections 03–05 into practical observations. Each lesson must add something new — not restate what messaging, visual timeline, or CTA sections already said.
-THIS SECTION DOES NOT: re-explain the self-serve→enterprise shift (already stated in section 04), restate the proof burden (already stated in section 04), or redescribe visual changes (already stated in section 03). If a paragraph restates an earlier section's conclusion, delete it.
+`SECTION ROLE: Name the pattern. Give one concrete study. Give one sharp warning.
 
-Write 3 lessons — one focused paragraph per lesson, each under 90 words.
+STRUCTURE — follow this order exactly:
+  1. ## HEADING — MUST be the very first line of your output. Name the lesson for THIS company, 6–12 words (e.g., "What founders should check before copying this"). Never generic.
+  2. OPENING MOVE — WARNING FIRST: your first body sentence is the counterintuitive caution, NOT the pattern summary. One sharp sentence that tells the founder what NOT to copy from this company before you tell them what to admire. Example shape: "Do not copy this homepage. Not yet — and here is the condition you have to meet first." This inverts the reader's expectation and earns the rest of the section.
+  3. DIRECT CLAIM — name the overall pattern this evolution represents. One bold sentence.
+  4. EVIDENCE — one specific, concrete observable from THIS company that illustrates the pattern. A NEW angle or synthesis — not a repeat of earlier sections.
+  5. INTERPRETATION — what does this pattern cost the company in buyer access or positioning risk? What prerequisite made it viable for THEM specifically? Hedged.
+  6. TRADEOFF — the meta tradeoff of the whole evolution. May be a combination: "category claim in exchange for a higher proof burden and longer buyer journey."
+  7. **So what?** — LABELLED. The sharpest founder takeaway: a TEST or CONDITION they must check on their own homepage before doing what this company did. Not generic advice.
 
-Each lesson MUST include ALL FOUR of the following in compressed form:
-  (1) PATTERN — the specific pattern, named and tied to this company's evidence (one sentence)
-  (2) CRO MECHANISM — what it costs or gains in visitor attention, trust, or action (one sentence)
-  (3) FIX — a concrete alternative a SaaS founder can apply (one sentence)
-  (4) WHEN NOT TO COPY — the condition under which copying this change would backfire (one sentence)
-
-Use cautious language. Do not claim lessons prove conversion improved.`,
-    wordRange: { min: 260, max: 390 },
+3 short paragraphs (body, excluding heading). Each under 90 words.
+Do NOT restate the belief shift, buyer shift, or funnel shift — add something new.`,
+    wordRange: { min: 150, max: 240 },
+    criticMaxTokens: 8192,
   },
   // ── Phase 4B legacy IDs (kept for compose-section.ts backward compat) ────
   '02-timeline': {
@@ -319,116 +333,120 @@ export function buildAndCacheSectionEvidence(
 // ─── Prompt builders ──────────────────────────────────────────────────────────
 
 export const WRITER_SYSTEM =
-`You are a factual, evidence-driven SaaS CRO analyst writing one section of a teardown article about a SaaS company's homepage evolution. Your writing voice is Wael Aouididi: direct, practical, SaaS-specific, CRO-aware, GTM-aware — no fake certainty, no invented metrics, no generic marketing filler.
+`You are writing one section of a CRO teardown article for startup SaaS founders.
 
-HARD RULES — inviolable:
-1. Use ONLY the evidence in the user message. Do not add facts, metrics, or claims not present in the evidence.
-2. Do NOT claim any change improved conversion, increased revenue, caused growth, or produced any measurable outcome.
-3. Do NOT claim to know the company's internal strategy or intent.
-4. Separate observed facts from interpretation. When interpreting, use:
-   "can be read as" / "may suggest" / "is consistent with" / "observed" / "may reflect" /
-   "appears to" / "from visible evidence" / "likely" / "the page seems to".
-5. Keep paragraphs short: 2–4 sentences each.
-6. Write only the section body. No markdown headers.
-7. No generic filler ("in today's competitive landscape", "increasingly important", etc.) unless tied directly to evidence.
-8. Quote actual text from the evidence when relevant.
+Your reader is a busy SaaS founder. They want to know what shifted, what it signals, and whether to care. They don't want a report. They want a sharp take.
 
-CRO/GTM DEPTH LAYER — REQUIRED for all analytical sections:
-Every analytical paragraph must include at least THREE of these six depth dimensions:
+VOICE
+Write like Joanna Wiebe: direct, punchy, founder-facing. Not academic. Lead with the claim. Back it with evidence. Short sentences, then a longer explanatory one, then short again. Active voice. No throat-clearing.
 
-  (A) OBSERVED CHANGE    — what specifically changed; quote exact text or name the element
-  (B) CONVERSION IMPLICATION — what this may mean for visitor action, attention, or drop-off
-  (C) BUYER PSYCHOLOGY   — what mental state, decision stage, or buyer type this targets
-  (D) TRUST/PROOF IMPLICATION — what trust gap this may close or what proof burden it creates
-  (E) CTA/FUNNEL IMPLICATION — whether this affects the conversion path, funnel motion, or sales cycle
-  (F) SAAS FOUNDER TAKEAWAY — one observation a SaaS founder can study for their own page
+SECTION STRUCTURE — follow this order every time:
+  1. HEADING (## )     First line of your response. Punchy, case-specific — 6–12 words. Do NOT use generic titles like "The Belief Shift." Name what actually happened for this company.
+  2. DIRECT CLAIM      1–2 sentences. State the shift boldly. No hedge on the opening sentence.
+  3. EVIDENCE          What changed — quote specific text, name specific elements, date where possible. One paragraph.
+  4. INTERPRETATION    What it may mean for positioning, buyer profile, or sales motion. Use "appears to" / "can be read as" / "may suggest." One paragraph. Hedged throughout.
+  5. TRADEOFF          One or two sentences. Name it explicitly. Format: "The tradeoff: [X] in exchange for [Y]." Pick from the named tradeoffs below.
+  6. SO WHAT?          End with "**So what?**" (bold label), then 1–2 sentences — a founder-facing takeaway specific enough to act on or rule out for their own homepage.
 
-ANTI-GENERIC RULE — mandatory:
-If a paragraph could appear word-for-word in a teardown of a DIFFERENT company, it is not acceptable.
-Every analytical paragraph must be anchored to this specific company's observable evidence.
+NAMED TRADEOFFS — pick the most accurate one:
+  clarity vs credibility
+  self-serve vs sales-led
+  speed vs qualification
+  outcome promise vs category claim
+  proof vs friction
+  breadth vs focus
+  confidence vs overclaiming
 
-EVIDENCE-SAFETY RULES — inviolable:
-Never write: "this increased conversions" / "Hootsuite did this because" / "Stripe decided to" /
-"A/B tested" / "this drove revenue" / "based on their strategy" / "this improved performance".
-Always write: "can be read as" / "may suggest" / "appears to" / "from visible evidence" / "likely" / "is consistent with".
+FORMATTING RULE — mandatory for scannability:
+When quoting verbatim text from the company's website — headlines, CTA labels, navigation items, section headings, meta description text — ALWAYS bold it: **"quoted text"**.
+Examples:
+  ✓ The headline shifted from **"Support customers at exactly the right moment"** to **"The only helpdesk designed for the AI Agent era."**
+  ✓ CTAs changed from **"Get started"** and **"Watch a Demo"** to **"Start free trial"** and **"Contact sales."**
+  ✗ The headline shifted from "Support customers..." — plain quotes only, no bold. Wrong.
+This applies to every single piece of quoted website text in every section, without exception.
+
+HARD RULES:
+1. Use ONLY the evidence provided. No invented facts, metrics, dates, or claims.
+2. Never claim a change improved conversion, increased revenue, or drove any outcome.
+3. Never claim company intent or internal strategy.
+4. No paragraph over 90 words.
+5. No bullet lists unless the section instruction explicitly allows them.
+6. Every paragraph anchored to THIS company's evidence. Generic = rewrite.
+
+DO NOT:
+  × Lecture. Not "It is important to understand that..." or "This demonstrates the value of..."
+  × Over-explain. Make the point. Stop.
+  × Repeat insights from other sections.
+  × Use page elements as topic headings. They are evidence only.
+  × Catalogue every change in chronological order. Synthesise.
 
 EDITORIAL COMPRESSION — mandatory:
-Each section has ONE job. Do not re-explain a conclusion another section already made.
-These conclusions may appear only ONCE across the entire article:
-  • casual→formal framing / outcome language→capability language → state once (in messaging or visual timeline, not both)
-  • self-serve vs enterprise buyer shift → state once (in messaging OR lessons, not in every section)
-  • proof burden created by new messaging → state once (in messaging)
-  • CTA friction increase or decrease → state once (in the CTA section)
-  • upmarket repositioning signal → state once
+Each section has ONE job. These conclusions appear ONLY ONCE across the entire article:
+  • Belief/category claim shift → The Belief Shift section only
+  • Self-serve vs enterprise buyer identification → The Buyer Shift section only
+  • CTA friction direction → The Funnel Shift section only
+  • Upmarket repositioning signal → state once, in the most relevant section
 
-Compression rules:
-  • Paragraphs must stay under 90 words. One idea per paragraph. If two ideas fit in one paragraph, that is two paragraphs that need to be cut.
-  • If a sentence restates what the previous sentence implied, delete it.
-  • If you find yourself writing "as mentioned above" or "as noted earlier" — that is a repetition. Delete the paragraph.
-  • Do not write a transitional paragraph that summarises what you just said. End the section, not your summary of it.
-
-EXAMPLES — the difference between shallow and deep CRO writing:
-
-BAD (surface description — fails the depth test):
-"The homepage became more enterprise-focused."
-
-BETTER (buyer psychology + conversion implication):
-"The old headline reduces cognitive load for a self-serve user: it promises a simple outcome in
-plain language. The new headline asks the visitor to believe a larger platform claim. That framing
-can work for bigger buyers, but only if the page quickly backs it with proof, use cases, and a CTA
-path that matches a longer sales cycle."
-
-BAD (surface observation — fails the funnel test):
-"Navigation changed from actions to product categories."
-
-BETTER (buyer psychology + CTA/funnel implication):
-"Action-based navigation labels help users who know the task they came to complete. Category-based
-labels help buying committees compare platform capabilities. The CRO tradeoff is clarity versus
-qualification: the page may become more credible to enterprise buyers while feeling heavier for
-self-serve users who arrived looking for a specific workflow."`;
+EVIDENCE-SAFETY — inviolable:
+Never write: "this increased conversions" / "[company] decided to" / "A/B tested" /
+"this drove revenue" / "based on their strategy" / "this improved performance".
+Always write: "can be read as" / "may suggest" / "appears to" / "from visible evidence" / "is consistent with".`;
 
 
 // Critic system prompt — threshold is stated in the user prompt so this stays cacheable.
 const CRITIC_SYSTEM =
 `You are a strict editorial critic for CRO teardown articles about SaaS homepages.
 Output ONLY valid JSON. No text before or after the JSON object.
+JSON SAFETY: When you quote text from the draft inside any string value (issues, requiredFixes, etc.),
+use SINGLE quotes — 'like this'. Never put a raw double-quote character inside a JSON string value;
+it breaks the parse. Refer to the draft's bold quotes by their words, not by reproducing **"..."** verbatim.
 
 SCORING RUBRIC — score each dimension separately, then sum to 100:
 • evidenceAccuracy  (max 25): Every claim traces to the provided evidence. No invented stats.
   PENALISE -5 per phrase that implies a fact not present in the evidence.
-• clarity           (max 10): Clear sentences, purposeful, no padding.
-  PENALISE -3 per filler sentence with no evidence anchor; -2 per redundant or padded phrase.
+• riskControl       (max 10): Interpretations labelled. No causation claims. No conversion-lift claims.
+  PENALISE -3 per unlabelled interpretation; -10 per causation claim.
 • specificity       (max 15): Tied to THIS company's evidence — not generic SaaS commentary.
   PENALISE -5 per paragraph that could apply word-for-word to a different company's teardown.
   HARD WARNING: If this section could apply to any generic website without changing a word, specificity is capped at 5.
-• seoUsefulness     (max 10): Useful for a reader searching CRO teardowns.
-  PENALISE -3 if no company-specific proper noun appears in the first 40 words.
-• croUsefulness     (max 10): Actionable, observable signal — not vague pattern-naming.
-  PENALISE -4 per lesson or observation not traceable to a specific evidence item.
-• riskControl       (max 10): Interpretations labelled. No causation claims. No conversion-lift claims.
-  PENALISE -3 per unlabelled interpretation; -10 per causation claim.
-• analysisDepth     (max 10): Section goes beyond surface description — includes conversion implication,
-  buyer psychology, trust/proof analysis, or SaaS founder takeaway.
-  PENALISE -5 if the section is purely descriptive (no conversion implication, no buyer psychology, no trust analysis).
-  PENALISE -3 if the section is generic — observations that could apply to any SaaS homepage.
-  PENALISE -3 if no founder takeaway or actionable observation for a SaaS team is present.
+• founderSharpness  (max 20): Does the section give a founder something they can ACT on?
+  This replaces vague "CRO depth" scoring. It requires ALL of:
+  (a) A direct claim — not "it seems that" as the opening. A bold statement of what shifted.
+  (b) A named marketing tradeoff — explicitly stated as "[X] in exchange for [Y]" or "The tradeoff: [X] vs [Y]".
+  (c) A "So what?" — a founder-facing takeaway (may be labelled "**So what?**" or natural last sentence).
+  PENALISE -8 if no named tradeoff is present.
+  PENALISE -7 if no founder takeaway is present at all.
+  PENALISE -5 if the section reads like a lecture — explains without claiming. Signs: 3+ consecutive analytical sentences without a direct claim, no tension, no tradeoff.
+  PENALISE -3 if the takeaway is generic ("test your CTAs", "know your audience") with no evidence anchor.
+  NOTE: The takeaway may be a bold "**So what?**" label OR folded into the closing sentence — BOTH are valid. Do not penalise a section for using a natural closing takeaway instead of the bold label; the section instruction decides which form is required.
+• distinctiveness   (max 5): Does the section's OPENING execute its assigned opening move (see ASSIGNED OPENING MOVE in the user prompt)? This rewards variety across the article — sections should NOT all open the same way.
+  Award 5 if the opening clearly executes the assigned move (claim / contrast / number / warning).
+  Award 2–3 if the opening is competent but generic (e.g., another bold declarative when a contrast or number was assigned).
+  Award 0 if the opening ignores the assigned move entirely.
+  This is a REWARD dimension — do not penalise creative execution that still honours the assigned move.
+• clarity           (max 10): Clear sentences, punchy, no padding. Varied sentence length.
+  PENALISE -3 per filler sentence with no evidence anchor; -2 per redundant or padded phrase.
+  PENALISE -2 if all sentences are roughly the same length (monotone — no punch).
+• analysisDepth     (max 10): Section explains conversion implications and buyer psychology — not just what changed.
+  PENALISE -5 if purely descriptive (no buyer psychology, no conversion implication).
+  PENALISE -3 if generic — observations that could apply to any SaaS homepage.
   PENALISE -3 if a messaging change is described but no buyer audience is identified.
-  HARD CAP: If this section could apply to any generic website without changing a word, analysisDepth is capped at 5.
-• editorialQuality  (max 10): Section respects its stated role. Does not repeat conclusions from other sections.
-  Each paragraph has one idea. No paragraph exceeds 90 words. No transitional padding.
-  PENALISE -4 if the section repeats a conclusion that belongs in a different section (self-serve→enterprise shift,
-  proof burden, CTA friction — each may appear only once across the article).
-  PENALISE -3 per paragraph that restates the previous paragraph's conclusion in different wording.
-  PENALISE -2 per paragraph that exceeds 90 words without a distinct second idea justifying the length.
-  PENALISE -3 if a closing paragraph summarises what the section just said instead of ending it.
+• editorialQuality  (max 5): Section respects its stated role. No over-long paragraphs. No conclusion-restating.
+  PENALISE -3 if section repeats a conclusion that belongs in a different section.
+  PENALISE -2 per paragraph that restates the previous paragraph in different wording.
+  PENALISE -2 per paragraph that exceeds 90 words without a distinct second idea.
+
+(Dimensions sum to 100: 25 + 10 + 15 + 20 + 5 + 10 + 10 + 5.)
 
 HARD CAPS — apply before summing:
 • Any unsupported factual claim → cap total at 70
 • Any conversion improvement claim without data → cap total at 60
-• More than one generic filler phrase (no evidence anchor) → cap total at 75
+• No named tradeoff present (except 01-intro) → cap total at 75
+• No founder takeaway present at all — neither a bold "So what?" nor a folded closing takeaway (except 01-intro) → cap total at 75
+• Section reads like a lecture throughout → cap founderSharpness at 6
 • Section is purely descriptive with no CRO/GTM analysis → cap total at 72
-• "can be read as" or equivalent appearing more than twice in the same section → cap total at 85
-• Section word count exceeds 310 words → cap editorialQuality at 5
+• "can be read as" or equivalent appearing more than 3 times in the same section → cap total at 85
+• Section word count exceeds 240 words (except 06-lessons: 250) → cap editorialQuality at 5
 
 CALIBRATION — this is mandatory, not optional:
 • 90–100: Publication-ready. Issues, requiredFixes, and riskFlags must all be genuinely empty.
@@ -470,7 +488,7 @@ CONTEXT:
 SECTION EVIDENCE (use only this — do not invent anything):
 ${JSON.stringify(evidence, null, 2)}
 
-Write the section body now. No heading. No title. Start directly with the first sentence.`;
+Write the section now. Unless the section instruction says otherwise, start with a ## heading on the first line, then write the body directly below it.`;
 }
 
 export function buildCriticPrompt(
@@ -480,10 +498,13 @@ export function buildCriticPrompt(
   minScore: number,
 ): string {
   const meta = getSectionMeta(sectionId);
+  const openingMoveBlock = meta.openingMove
+    ? `\nASSIGNED OPENING MOVE: "${meta.openingMove}" — the section's first beat should execute this move (see the distinctiveness dimension). Sections across the article are intentionally assigned DIFFERENT moves so the piece does not read templated.`
+    : '';
   return `Score and diagnose this ${meta.title} section draft.
 
 SECTION ID: ${sectionId}
-PASS THRESHOLD: ${minScore}
+PASS THRESHOLD: ${minScore}${openingMoveBlock}
 
 SECTION GOAL (evaluate whether the draft achieves this):
 ${meta.goalDescription}
@@ -501,8 +522,13 @@ REQUIRED CHECKS — answer each before scoring:
 10. Does the section include a practical SAAS FOUNDER TAKEAWAY — something a SaaS founder can study?
 11. Is any analytical paragraph purely descriptive, with no conversion or psychology implication?
 12. EDITORIAL COMPRESSION: Does any paragraph exceed 90 words? State approximate word count and whether the extra length introduces a distinct second idea.
-13. REPETITION CHECK: Does the section state a conclusion that belongs in a different section? Check: self-serve→enterprise shift (belongs in messaging/04), proof burden (belongs in messaging/04), CTA friction direction (belongs in CTA/05). One flag per violation.
-14. WORD COUNT: Approximate word count. Is it within the target range?
+13. REPETITION / SCOPE: Does the section state a conclusion that belongs in a different section (self-serve→enterprise shift, proof burden, CTA friction direction)? If so, include it as an item in "issues" with the note "(belongs in section XX)". Do not dedicate a separate output field to this.
+14. WORD COUNT: Is the section within the target range? If over or under, include a note in "issues".
+15. BOLD QUOTES CHECK: Every verbatim quote from the company's website (headlines, CTAs, navigation labels, section headings, meta descriptions) must be bolded: **"quoted text"**. If any website quote appears with plain quotes only (no bold), this is a required fix.
+16. TRADEOFF CHECK (skip for 01-intro): Is there an explicitly named marketing tradeoff — formatted as "[X] in exchange for [Y]" or "The tradeoff: [X] vs [Y]"? If absent, this is a required fix.
+17. TAKEAWAY CHECK (skip for 01-intro): Does the section end with a founder-facing takeaway — either a labelled "**So what?**" OR folded into the closing sentence as a founder action/question? BOTH forms are valid; the section instruction decides which is required. Only flag as a required fix if NO takeaway is present in either form.
+18. DISTINCTIVENESS CHECK (skip for 01-intro): Does the opening execute the ASSIGNED OPENING MOVE above (claim / contrast / number / warning)? Score the distinctiveness dimension accordingly. This rewards variety — do not penalise an opening that honours its assigned move just because it differs from the other sections.
+19. LECTURE CHECK: Does the section open with bold claims and short punchy sentences, or does it open with hedging and long analytical paragraphs? If 3+ consecutive sentences are analytical explanation with no direct claim, tradeoff, or takeaway, flag as lecture-style.
 
 SECTION EVIDENCE (ground truth):
 ${JSON.stringify(evidence, null, 2)}
@@ -525,18 +551,16 @@ Output the JSON object now. Required shape:
   "riskFlags": ["<claim that is unsupported or too causal>"],
   "seoNotes": ["<SEO observation, positive or negative>"],
   "analysisDepthWarnings": ["<paragraph that is purely descriptive or missing buyer psychology / conversion implication>"],
-  "repetitionWarnings": ["<conclusion that appears more than once (self-serve→enterprise, proof burden, CTA friction)>"],
-  "wordCountWarning": "<empty string if within range, else 'OVER: ~N words (max M)' or 'UNDER: ~N words (min M)'>",
   "rewriteInstruction": "<one-paragraph instruction for the rewriter — empty string only if score >= 90>",
   "dimensionScores": {
     "evidenceAccuracy": <0–25>,
-    "clarity": <0–10>,
-    "specificity": <0–15>,
-    "seoUsefulness": <0–10>,
-    "croUsefulness": <0–10>,
     "riskControl": <0–10>,
+    "specificity": <0–15>,
+    "founderSharpness": <0–20>,
+    "distinctiveness": <0–5>,
+    "clarity": <0–10>,
     "analysisDepth": <0–10>,
-    "editorialQuality": <0–10>
+    "editorialQuality": <0–5>
   }
 }`;
 }
@@ -663,6 +687,10 @@ export async function writeSectionLoop(
   opts: WriteSectionOpts,
 ): Promise<WriteSectionResult> {
   const { sectionId, writingDir, sectionsDir, maxRewriteLoops, tracker, onLog } = opts;
+  // Rec 2: per-section override for evidence-capped sections (e.g. 01-intro: maxRewriteLoops=0)
+  const effectiveMaxLoops = getSectionMeta(sectionId).maxRewriteLoops ?? maxRewriteLoops;
+  // Rec 3: per-section critic token cap (lightweight sections: 4096, analytical: 8192)
+  const criticMaxTokens = getSectionMeta(sectionId).criticMaxTokens ?? 8192;
   const minScore = opts.minScore ?? CRITIC_PASS_SCORE;
   const draftOnly = opts.draftOnly ?? false;
   const costBefore = tracker.totalCostUsd;
@@ -671,9 +699,12 @@ export async function writeSectionLoop(
   const evidence = buildAndCacheSectionEvidence(sectionId, writingDir);
   onLog('Evidence', true, `${sectionId}.evidence.json`);
 
-  const writerModel   = getModel('writer');
+  // Phase 4P: analytical sections override writer/rewriter to Opus for sharper prose.
+  // The critic deliberately stays on its own (cheaper) model — quality gate, not generation.
+  const sectionWriterModel = getSectionMeta(sectionId).writerModel;
+  const writerModel   = sectionWriterModel ?? getModel('writer');
   const criticModel   = getModel('critic');
-  const rewriterModel = getModel('rewriter');
+  const rewriterModel = sectionWriterModel ?? getModel('rewriter');
 
   // ── Writer ──────────────────────────────────────────────────────────────────
   onLog(`Writer [${writerModel}]`, true, 'calling API…');
@@ -727,7 +758,7 @@ export async function writeSectionLoop(
         model: criticModel,
         system: CRITIC_SYSTEM,
         messages: [{ role: 'user', content: buildCriticPrompt(sectionId, evidence, draft, minScore) }],
-        maxTokens: 8192, // Phase 4N: extra output fields (repetitionWarnings, overExplanation, longParagraph, wordCountWarning, editorialQuality)
+        maxTokens: criticMaxTokens, // Rec 3: per-section override (lightweight: 4096, analytical: 8192)
       }),
       { onRetry: (a, e, d) => onLog(`Critic retry ${a}`, false, `${e.message} (${d}ms)`) },
     );
@@ -751,7 +782,7 @@ export async function writeSectionLoop(
 
   lastCritic = await runCritic(currentDraft, currentVersion);
 
-  while (!lastCritic.pass && loopsUsed < maxRewriteLoops) {
+  while (!lastCritic.pass && loopsUsed < effectiveMaxLoops) {
     const rewritePrompt = buildRewriterPrompt(
       sectionId, evidence, currentDraft, lastCritic, minScore,
     );
@@ -762,7 +793,7 @@ export async function writeSectionLoop(
 
     loopsUsed++;
     const nextVer = currentVersion + 1;
-    onLog(`Rewriter [loop ${loopsUsed}/${maxRewriteLoops}]`, true, `→ v${nextVer}`);
+    onLog(`Rewriter [loop ${loopsUsed}/${effectiveMaxLoops}]`, true, `→ v${nextVer}`);
 
     const rwResp = await withRetry(
       () => callLLM({

@@ -1,42 +1,38 @@
 {
-  "createdAt": "2026-06-08T10:58:25.088Z",
+  "createdAt": "2026-06-08T22:57:33.196Z",
   "slug": "intercom",
   "source": {
     "finalJudgePass": false,
     "seoPass": true,
-    "finalJudgeScore": 76,
-    "seoScore": 85
+    "finalJudgeScore": 82,
+    "seoScore": 83
   },
   "sectionsToRerun": [
     {
-      "sectionId": "03-visual-timeline",
+      "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 03-visual-timeline",
-        "Visual similarity dropped to 71% from the prior snapshot",
-        "Identified as weak section by final judge",
-        "Visual Timeline, para 2: 'pattern sometimes associated with enterprise buyer evaluation workflows' — implies causation without evidence"
-      ],
-      "priority": "high",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "reasons": [
-        "Judge rerun recommendation: 06-lessons-for-saas-teams",
-        "Identified as weak section by final judge",
-        "Lessons: The self-serve vs enterprise shift appears in all three paragraphs — consolidate to a single mention or differentiate the angle in each paragraph.",
-        "The primary keyword 'Intercom homepage CRO teardown' appears only once in the body (in the intro). Integrate it naturally in at least one more section, such as the conclusion or 'Lessons for SaaS Team"
+        "Judge rerun recommendation: 04-messaging-evolution OR 05-cta-navigation-evolution: Consolidate the self-serve→enterprise observation into ONE section and remove or clearly differ",
+        "Section 06 ('Why Most Founders Should Not Copy This Homepage Yet') fails the tradeoff requirement. While it discusses proof burden, it does not contain an explicitly named marketing tradeoff formatted",
+        "Primary keyword 'Intercom homepage CRO teardown' appears only once in the body (in meta description and title). Incorporate naturally at least once more in the opening paragraph or first subheading to",
+        "The article claims to analyze 'four snapshots' but never explicitly labels or dates them (Jan 2023, Oct 2025, Jun 2026, etc.) in a scannable table or timeline. Add a visual or textual reference anchor"
       ],
       "priority": "high",
       "source": "both"
     },
     {
-      "sectionId": "04-messaging-evolution",
+      "sectionId": "06-lessons-for-saas-teams",
       "reasons": [
-        "Visual Timeline, para 1: 'structure that can be read as lowering first-screen processing' — interpretation not labelled as inference",
-        "Messaging Evolution, para 3: 'That shift can be read as targeting searches where buyers are evaluating AI capability' — interpretation not clearly labelled as inference",
-        "Visual Timeline: Label all buyer psychology interpretations as inference (e.g., 'This structure may signal...' or 'One interpretation is...'). Remove the 71% visual similarity claim — not in evidence.",
-        "Messaging Evolution: Add explicit inference framing for 'targeting searches where buyers are evaluating AI capability' — the evidence does not contain search intent data."
+        "Judge rerun recommendation: 06-lessons-for-saas-teams: Add an explicitly formatted tradeoff statement early in the section, not just at the end.",
+        "Identified as weak section by final judge"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "reasons": [
+        "03-visual-timeline (missing)",
+        "Article lacks a visual timeline section (section 03) which was listed in sectionsIncluded but is missing from the article body. Either remove from sectionsIncluded or add the section."
       ],
       "priority": "medium",
       "source": "final-judge"
@@ -44,12 +40,16 @@
   ],
   "skippedIssues": [
     {
-      "issue": "The meta description is 153 characters (within limit) but ends with an ellipsis '…' which suggests truncation. Rewrite to use the full 155-character budget without trailing punctuation that implies in",
+      "issue": "Full article: Reduce proof burden mentions to a single section or clearly differentiate each mention's angle.",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Meta description is 155 characters—at the limit. Trim slightly to ensure it displays fully across all devices without truncation.",
       "reason": "metadata field in seo.json, not section content"
     },
     {
-      "issue": "Section headings use H2-equivalent weight but are not marked as H2 in the markdown. Confirm '## At a Glance', '## Visual Timeline', etc. render as proper H2 tags in the CMS to preserve heading hierarc",
-      "reason": "CMS configuration, not section content"
+      "issue": "No H1 tag explicitly present in the article structure. The title 'How Intercom rewrote its homepage over 3 years' should be the H1; ensure semantic HTML reflects this.",
+      "reason": "cannot map to a specific section — may require manual review"
     },
     {
       "issue": "Section 05-cta-navigation-evolution (medium priority)",

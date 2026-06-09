@@ -335,6 +335,15 @@ CONCISION HARD RULE:
 If the article body exceeds 1,900 words, overallScore is capped at 87 and pass is false.
 If the same analytical conclusion (self-serve→enterprise, proof burden, CTA friction) appears in 3 or more sections, overallScore is capped at 85 and pass is false.
 
+FOUNDER-SHARPNESS HARD RULES (new — check these before scoring):
+Each analytical section (03, 04, 05, 06) must contain ALL THREE:
+  (a) A direct opening claim — not a hedge, not "it appears that" as sentence 1.
+  (b) A named marketing tradeoff — explicitly "[X] in exchange for [Y]" or "The tradeoff: [X] vs [Y]."
+  (c) A "So what?" — founder-facing takeaway, either labelled "**So what?**" or clearly the last sentence.
+  HARD CAP: If ANY analytical section is missing a named tradeoff → cap overallScore at 82 and pass: false.
+  HARD CAP: If ANY analytical section is missing a "So what?" → cap overallScore at 82 and pass: false.
+  HARD CAP: If ANY analytical section reads like a lecture (analytical explanation throughout, no claims, no tension) → cap overallScore at 80 and pass: false.
+
 HARD RULES:
 • Do NOT claim access to internal strategy, A/B test data, or conversion rates.
 • Do NOT invent keyword difficulty or search volume figures.
@@ -346,10 +355,10 @@ HARD RULES:
 
 CALIBRATION:
 • 90–100: Publication-ready. Every claim sourced. Interpretations labelled. Real CRO depth.
-  Buyer psychology present. Founder takeaways specific and actionable. Cohesive read.
-• 80–89:  Passes with notes. One or two sections need more depth or tightening.
-• 70–79:  Needs specific fixes. Analysis is too shallow or generic. At least one section should be rerun.
-• Below 70: Significant problems. Multiple sections need rewrites or are mostly descriptive.`;
+  Buyer psychology present. Named tradeoffs in every section. "So what?" present in every section. Cohesive read.
+• 80–89:  Passes with notes. Minor tradeoff or So what gaps.
+• 70–79:  Needs fixes. Analysis shallow, generic, or missing tradeoffs/So what in multiple sections.
+• Below 70: Significant problems. Multiple sections read like lectures or are purely descriptive.`;
 
 // ─── Main exported function ───────────────────────────────────────────────────
 
@@ -390,20 +399,25 @@ ${articleText}
 Score each rubric dimension. Then give a holistic overallScore (0–100).
 Apply pass logic: overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty AND analysisDepth >= 10 AND founderUsefulness >= 7 AND concision >= 7.
 
+FOUNDER-SHARPNESS CHECK — answer first (these are the new hard gates):
+1. Does each analytical section (03, 04, 05, 06) open with a direct claim — not a hedge?
+2. Does each analytical section contain a named marketing tradeoff ("[X] vs [Y]" or "in exchange for")?
+3. Does each analytical section end with a clear "So what?" for the founder?
+4. Does any section read like a lecture — explaining without claiming, no tension, no tradeoff?
+Name which sections fail each check.
+
 DEPTH CHECK — answer before scoring:
-1. Do the analytical sections (messaging, visual timeline, CTA) go beyond describing visible changes to explain conversion implications and buyer psychology?
-2. Is a buyer audience identified for each major messaging change (who the old vs new message likely served)?
-3. Are there at least 3 practical takeaways a SaaS founder can apply to their own page?
-4. Does any section address when NOT to copy the analysed company's approach?
-5. Does any section feel generic — as if it could apply to any SaaS homepage without editing?
+5. Do the analytical sections go beyond describing visible changes to explain conversion implications and buyer psychology?
+6. Is a buyer audience identified for each major messaging change?
+7. Are there at least 3 practical founder takeaways specific enough to act on?
+8. Does any section address when NOT to copy the analysed company's approach?
 
 CONCISION CHECK — answer before scoring:
-6. Count how many sections mention the self-serve→enterprise shift. (Target: 1)
-7. Count how many sections mention proof burden. (Target: 1)
-8. Count how many sections mention CTA friction direction. (Target: 1)
-9. Are there any paragraphs that exceed 90 words without introducing a new idea?
-10. Does the Lessons section restate analysis from Messaging or Visual Timeline instead of converting it into new action?
-11. What is the approximate word count of the article body (excluding frontmatter)?
+9. Count how many sections mention the self-serve→enterprise shift. (Target: 1)
+10. Count how many sections mention proof burden. (Target: 1)
+11. Count how many sections mention CTA friction direction. (Target: 1)
+12. Are there any paragraphs that exceed 90 words without introducing a new idea?
+13. What is the approximate word count of the article body (excluding frontmatter)? (Target: 900–1,200)
 
 Required JSON shape:
 {

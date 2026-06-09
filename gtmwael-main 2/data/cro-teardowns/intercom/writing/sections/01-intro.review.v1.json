@@ -1,38 +1,32 @@
 {
-  "score": 78,
-  "pass": false,
+  "score": 88,
+  "pass": true,
   "issues": [
-    "Paragraph 2 contains an unsupported causation claim: 'repositioning a homepage under competitive pressure' — no evidence documents competitive pressure as the driver",
-    "Paragraph 2 states 'changes what the rest of the page must deliver' without buyer psychology or conversion implication — this is a descriptive observation, not analysis",
-    "No conversion implication present: the draft describes what changed but does not address what the change may mean for visitor action, drop-off, or decision stage",
-    "No buyer psychology analysis: the draft does not identify who the old vs new headline targets or what mental state/decision stage is served",
-    "Generic phrase 'SaaS founders can study when repositioning a homepage' could appear in any teardown article without modification",
-    "Paragraph 2 closes with a preview list ('messaging rewrite, navigation restructuring…') that adds no evidence or analysis — pure structural padding"
+    "Word count approximately 79 words — within the 60–90 target range, but at the lower end; could add one more specific evidence anchor to strengthen density",
+    "The phrase 'what each shift may signal for founders' is slightly vague — 'signal' softens what could be a sharper promise",
+    "No conversion implication present — the section describes the shift but does not hint at what this repositioning might mean for visitor action or drop-off (though this is borderline acceptable for an intro)"
   ],
   "requiredFixes": [
-    "Remove the unsupported phrase 'under competitive pressure' from paragraph 2 — no evidence documents this",
-    "Add a conversion implication for at least one change: What might the new headline do to visitor continuation or drop-off? What decision stage does 'AI Agent era' address vs 'right moment'?",
-    "Add buyer psychology for the headline shift: Who is the 'AI Agent era' headline likely targeting vs 'Support customers at exactly the right moment'? Early adopters? IT buyers? Support ops teams?",
-    "Delete the closing preview list in paragraph 2 — it pads word count without adding evidence or analysis",
-    "Replace or augment 'changes what the rest of the page must deliver' with a specific conversion or trust observation — e.g., what proof burden does 'the only helpdesk' create for a visitor?"
+    "Replace 'what each shift may signal for founders' with a sharper, evidence-anchored promise. For example: 'what Intercom gave up, who it excluded, and what founders can learn from the tradeoffs' — this ties directly to the headline evidence and the stated 'trades buyer breadth for category ownership' frame.",
+    "Add one conversion or funnel hint to the closing sentence — for example, insert 'and how the new funnel narrows entry points' before the em-dash. This anchors the promise in the evidence (10 CTAs removed/added, navigation overhauled) and satisfies the conversion implication check without bloating the paragraph."
   ],
-  "riskFlags": [
-    "Causation claim: 'repositioning a homepage under competitive pressure' — no evidence documents competitive pressure as a driver"
-  ],
+  "riskFlags": [],
   "seoNotes": [
-    "Company name 'Intercom' appears in the first 3 words — strong SEO anchor",
-    "Period '2023 to 2026' appears in the first sentence — time-specific signal for search"
+    "The opening sentence uses 'claiming a category of one' — this is a strong SEO-friendly framing that positions the article as a strategic teardown, not a design critique",
+    "The phrase 'AI Agent era' is quoted verbatim from the headline — good for keyword relevance and search intent matching"
   ],
-  "rewriteInstruction": "Remove 'under competitive pressure' (unsupported). Add one conversion implication: what does the headline shift from outcome-timing to AI-category ownership mean for visitor continuation or proof burden? Add buyer psychology: identify who 'AI Agent era' likely targets vs 'right moment' (e.g., IT buyers, early adopters, support ops teams). Delete the closing preview list. Replace or augment 'changes what the rest of the page must deliver' with a specific trust or proof observation — for example, what evidence must the page now provide to support 'the only helpdesk' claim? Expand paragraph 1 with one analytical sentence that ties a documented change to a conversion or buyer-decision implication.",
+  "rewriteInstruction": "Sharpen the closing sentence to anchor the article's promise in conversion and buyer implications, not just topic breadth. Replace 'what each shift may signal for founders' with a specific, evidence-backed promise — for example, 'what Intercom excluded, how the new funnel narrows entry, and what founders can lift from the tradeoffs'. Add one conversion or funnel hint before the em-dash (e.g., 'and how 10 CTAs were replaced to compress the funnel') to satisfy the conversion implication check and reward readers with a CRO-specific hook. Keep total word count under 90.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
+    "evidenceAccuracy": 25,
     "clarity": 9,
-    "specificity": 12,
-    "seoUsefulness": 10,
-    "croUsefulness": 5,
-    "riskControl": 7,
-    "analysisDepth": 5,
-    "editorialQuality": 10
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 6,
+    "editorialQuality": 5,
+    "founderSharpness": 18,
+    "distinctiveness": 5
   },
   "effectivePassThreshold": 85
 }

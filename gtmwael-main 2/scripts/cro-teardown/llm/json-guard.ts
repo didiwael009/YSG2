@@ -20,6 +20,10 @@ export interface DimensionScores {
   analysisDepth?: number;
   /** Phase 4N: Editorial quality — compression, non-repetition, one-idea-per-paragraph. */
   editorialQuality?: number;
+  /** Phase 4O: Founder sharpness — direct claim + named tradeoff + actionable takeaway. */
+  founderSharpness?: number;
+  /** Phase 4P: Distinctiveness — opening executes its assigned opening move (variety). */
+  distinctiveness?: number;
 }
 
 export interface CriticResult {
@@ -119,6 +123,12 @@ export function parseCriticResponse(raw: string): CriticResult {
     }
     if (typeof ds.editorialQuality !== 'undefined') {
       baseScores.editorialQuality = toInt(ds.editorialQuality, 10);
+    }
+    if (typeof ds.founderSharpness !== 'undefined') {
+      baseScores.founderSharpness = toInt(ds.founderSharpness, 20);
+    }
+    if (typeof ds.distinctiveness !== 'undefined') {
+      baseScores.distinctiveness = toInt(ds.distinctiveness, 5);
     }
     dimensionScores = baseScores;
   }

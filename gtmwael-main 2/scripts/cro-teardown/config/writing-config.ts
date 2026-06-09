@@ -10,7 +10,7 @@ export const MODELS = {
   critic:     'claude-sonnet-4-5',
   rewriter:   'claude-sonnet-4-5',
   judge:      'claude-opus-4-5',    // used by final-judge.ts (flagship mode)
-  seoAuditor: 'claude-sonnet-4-5',  // used by seo-auditor.ts (all modes)
+  seoAuditor: 'claude-haiku-4-5-20251001',   // Rec 6: structured rubric scoring — haiku is sufficient
 } as const;
 
 export type ModelRole = keyof typeof MODELS;
@@ -19,7 +19,7 @@ export type ModelRole = keyof typeof MODELS;
 export const MODEL_PRICING: Record<string, { inputPerMTok: number; outputPerMTok: number }> = {
   'claude-sonnet-4-5': { inputPerMTok: 3.00,  outputPerMTok: 15.00 },
   'claude-opus-4-5':   { inputPerMTok: 15.00, outputPerMTok: 75.00 },
-  'claude-haiku-3-5':  { inputPerMTok: 0.80,  outputPerMTok: 4.00 },
+  'claude-haiku-4-5-20251001':  { inputPerMTok: 0.80,  outputPerMTok: 4.00 },
 };
 
 /**
@@ -51,12 +51,12 @@ export const SEO_PASS_SCORE = 80;
  */
 export const SECTION_EVIDENCE_SOURCES: Record<string, string[]> = {
   // ── Phase 4C canonical IDs (compose-all-sections) ──────────────────────────
+  // 5-section architecture (02-at-a-glance dropped — evidence-capped section)
   '01-intro':                    ['summary-cards', 'messaging'],
-  '02-at-a-glance':              ['summary-cards'],
-  '03-visual-timeline':          ['analysis-blocks'],
-  '04-messaging-evolution':      ['messaging'],
+  '03-visual-timeline':          ['analysis-blocks', 'messaging'],    // belief shift: visual + message evidence combined
+  '04-messaging-evolution':      ['messaging', 'summary-cards'],       // buyer shift: message framing + proof style
   '05-cta-navigation-evolution': ['cta-changes', 'h2-changes'],
-  '06-lessons-for-saas-teams':   ['lesson-cards'],
+  '06-lessons-for-saas-teams':   ['lesson-cards', 'summary-cards'],
   // ── Phase 4B legacy IDs (compose-section — backward compat) ────────────────
   '02-timeline': ['summary-cards'],
   '03-analysis': ['analysis-blocks'],

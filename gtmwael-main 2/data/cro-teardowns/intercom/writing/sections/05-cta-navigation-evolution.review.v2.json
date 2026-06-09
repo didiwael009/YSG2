@@ -2,41 +2,39 @@
   "score": 78,
   "pass": false,
   "issues": [
-    "Paragraph 1 (96 words) exceeds 90-word limit without a distinct second idea justifying the length",
-    "Paragraph 2 (124 words) exceeds 90-word limit and restates trust/proof burden conclusions that belong in messaging section",
-    "The phrase 'can be read as' appears once but adds no meaningful interpretive coverage — it's a verbal tic",
-    "The trust burden analysis in paragraph 2 repeats the proof burden theme that belongs in the messaging evolution section",
-    "Paragraph 3 states navigation items were added but evidence shows no detail on what those items are — this is an unsupported claim",
-    "The conclusion about 'product categories rather than buyer jobs' is interpretive but not labelled as such",
-    "The section does not identify a specific buyer audience shift — it uses broad categories (enterprise, mid-market, early-stage) without tying them to specific evidence",
-    "The founder takeaway is generic — it could apply to any SaaS company replacing action CTAs with product CTAs"
+    "Section word count is approximately 152 words — within the 200–240 target range, but density could be improved.",
+    "Opening sentence does execute the assigned 'concrete-number' move ('Ten CTAs removed. Ten added.'), but the punch is diluted by immediately following with a third claim about primary paths.",
+    "The phrase 'This can be read as' appears once — just under the threshold, but is a hedging tic that softens the analysis.",
+    "Paragraph 2 opens with 'Removing…' and then immediately hedges the interpretation; no direct claim precedes the hedge.",
+    "The takeaway question ('How many entry points…') is present and founder-facing, but it is generic — the same question could appear in any CTA teardown. It does not anchor to Intercom's specific evidence (e.g., the outcome-specific hooks that were removed, or the shift from nurture to feature pages).",
+    "No buyer audience is explicitly identified. The section describes what changed (CTAs, nurture paths) but does not name who the old multi-CTA structure served vs. who the two-door structure targets (e.g., self-serve users who needed more touchpoints vs. enterprise buyers with shorter eval cycles).",
+    "The tradeoff is present and formatted correctly, but it is abstract: 'simplified choice in exchange for losing visitors who needed one more touch.' The evidence shows specific nurture CTAs removed (Download report, Watch Demo) and specific feature pages added (Fin AI Agent, AI-powered Insights) — the tradeoff could name these concretely."
   ],
   "requiredFixes": [
-    "Split paragraph 1 at the sentence starting 'That architecture can be read as' to bring it under 90 words",
-    "Cut paragraph 2 to under 90 words by removing the trust burden comparison — that analysis belongs in the messaging section, not here",
-    "Remove or rephrase 'can be read as' in paragraph 1 — either commit to the interpretation or cut the hedge",
-    "In paragraph 3, remove the claim that 'the added set likely mirrors product categories' — the evidence does not support this inference",
-    "Add a conversion implication to paragraph 1: what does a bifurcated funnel mean for visitor drop-off or segmentation?",
-    "Replace the generic founder takeaway with a company-specific observation tied to Intercom's CTA evidence"
+    "Add a direct claim BEFORE the hedge in paragraph 2. Example: 'The homepage now assumes buyers arrive decision-ready.' Then follow with the interpretation: 'This can be read as…'",
+    "Name a buyer audience explicitly. Who did the multi-CTA structure serve (e.g., SMB self-serve users needing education), and who does the two-door structure target (e.g., mid-market buyers with shorter cycles, enterprise buyers expecting a sales conversation)?",
+    "Make the takeaway Intercom-specific. Replace the generic 'How many entry points' question with a takeaway that anchors to the evidence — e.g., 'Intercom's shift from nurture CTAs (report, demo) to feature CTAs (Fin AI Agent, AI-powered Insights) suggests mid-funnel education moved off-page. Does your homepage consolidate CTAs because your traffic is pre-qualified, or because you've moved education into product-led or outbound touches?'",
+    "Sharpen the tradeoff with concrete evidence. Replace 'one more touch' with the specific nurture CTAs removed (report, demo) and note the feature pages added. Example: 'The tradeoff: two-click conversion paths in exchange for losing visitors who would have downloaded a report or watched a demo before booking a call.'"
   ],
   "riskFlags": [
-    "Paragraph 2: 'Product-label CTAs likely serve mid-market buyers comparing platforms; outcome CTAs served early-stage founders' — this is an unlabelled interpretation with no evidence trace",
-    "Paragraph 3: 'the new structure likely mirrors product categories rather than buyer jobs' — interpretive claim not labelled as such"
+    "The phrase 'This can be read as a bet that visitors arrive ready to choose' is hedged appropriately, but the alternative ('or that mid-funnel education now happens off-page') is stated as fact without evidence showing where education moved (e.g., product-led onboarding, drip campaigns, SDR outreach). The section should label this as an interpretation."
   ],
   "seoNotes": [
-    "Positive: 'Intercom's CTA set' appears in the first 5 words",
-    "Negative: No secondary keyword or long-tail phrase present (e.g., 'CTA friction', 'self-serve trial CTA')"
+    "The opening ('Ten CTA swaps, two doors remain') is punchy and executes the concrete-number move effectively — strong for engagement.",
+    "The section references specific CTAs by name, which reinforces topical relevance for CTA and conversion path queries."
   ],
-  "rewriteInstruction": "Compress paragraph 1 to under 90 words by cutting the hedge phrase and moving the funnel bifurcation observation into a crisp second sentence. Remove the entire trust burden comparison from paragraph 2 (it belongs in messaging) and replace it with a CTA-specific conversion implication: what happens when a cold visitor clicks a product-label CTA vs an outcome CTA? In paragraph 3, cut the unsupported claim about product categories and replace it with a specific observation about what navigation removal signals (e.g., removing 'See all stories' may reduce social proof discovery). End with a founder takeaway tied to Intercom's specific CTA evidence, not a generic SaaS pattern.",
+  "rewriteInstruction": "Retain the punchy opening ('Ten CTAs removed. Ten added.') but sharpen paragraph 1 by adding a conversion implication immediately after the description — e.g., 'The earlier Intercom homepage scattered intent across [CTAs]; the current version consolidates to two doors, which reduces drop-off from choice paralysis but increases the risk of losing visitors who need one more touch.' In paragraph 2, open with a direct claim BEFORE hedging: 'The homepage now assumes buyers arrive decision-ready' — then follow with the interpretation. Name a buyer audience explicitly: who did the multi-CTA structure serve (e.g., SMB self-serve users needing nurture) vs. who does the two-door structure target (e.g., mid-market buyers with shorter cycles). Make the tradeoff concrete by naming the specific nurture CTAs removed (report, demo) and the feature pages added (Fin AI Agent, AI-powered Insights). Replace the generic takeaway question with an Intercom-specific takeaway that anchors to the evidence: 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page — does your homepage consolidate CTAs because your traffic is pre-qualified, or because you've moved education into product-led or outbound touches?' Aim for 200–220 words with every sentence carrying evidence or analysis.",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
-    "clarity": 7,
-    "specificity": 10,
-    "seoUsefulness": 8,
-    "croUsefulness": 7,
-    "riskControl": 4,
+    "evidenceAccuracy": 23,
+    "clarity": 8,
+    "specificity": 12,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 8,
     "analysisDepth": 7,
-    "editorialQuality": 4
+    "editorialQuality": 5,
+    "founderSharpness": 11,
+    "distinctiveness": 4
   },
   "effectivePassThreshold": 85
 }

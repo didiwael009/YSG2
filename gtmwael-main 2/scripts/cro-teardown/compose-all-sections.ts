@@ -44,11 +44,13 @@ import * as path from 'node:path';
 import * as process from 'node:process';
 
 import { CostTracker } from './llm/token-cost.js';
+import { getModel } from './llm/model-router.js';
 import {
   SECTION_ORDER,
   writeSectionLoop,
   type WriteSectionResult,
 } from './section-writer.js';
+import { runCrossSectionPass } from './cross-section-pass.js';
 import { assembleArticle } from './article-assembler.js';
 import { generateSeo } from './seo-generator.js';
 import { runFinalJudge, type FinalJudgeResult } from './final-judge.js';
@@ -345,6 +347,37 @@ async function main(): Promise<void> {
     }
   }
 
+  // ── Phase 4P: cross-section cohesion + variety pass (Opus) ───────────────────
+  // Runs after all sections have a .final.md, before assembly. One whole-article
+  // call varies duplicated openings and adds light transitions. Fail-safe: any
+  // integrity violation keeps the original section (see cross-section-pass.ts).
+  // Skipped in draft mode (cost) and auto-skipped when fewer than 2 sections exist.
+  if (cli.mode !== 'draft') {
+    console.log(`\n${div}`);
+    try {
+      const crossLog = (step: string, ok: boolean, detail?: string): void => {
+        console.log(`  ${ok ? '✓' : '⚠'} ${step}${detail ? ` — ${detail}` : ''}`);
+        appendRunLog(logPath, { section: '_cross-section', step, ok, detail: detail ?? '' });
+      };
+      const crossResult = await runCrossSectionPass({
+        slug: cli.slug,
+        sectionsDir,
+        sectionOrder: [...SECTION_ORDER],
+        tracker,
+        model: getModel('judge'),   // Opus: reads the whole article at once
+        onLog: crossLog,
+      });
+      for (const w of crossResult.integrityWarnings) {
+        console.log(`  ⚠ Cohesion integrity: ${w}`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Cross-section pass failed (non-fatal): ${msg}`);
+      appendRunLog(logPath, { section: '_cross-section', step: 'CROSS-SECTION ERROR', ok: false, detail: msg });
+      // Non-fatal: fall through to assembly with the per-section finals untouched.
+    }
+  }
+
   // ── Assemble article ─────────────────────────────────────────────────────────
   console.log(`\n${div}`);
   console.log(`  Assembling article-final.md…`);
@@ -430,7 +463,7 @@ async function main(): Promise<void> {
 
   // ── Phase 4D: SEO audit ───────────────────────────────────────────────────────
   let seoAuditResult: SeoAuditResult | null = null;
-  if (!cli.skipSeoAudit && seoData) {
+  if (!cli.skipSeoAudit && seoData && assemblerResult && assemblerResult.sectionsMissing.length === 0) {
     try {
       seoAuditResult = await runSeoAudit({
         slug:       cli.slug,

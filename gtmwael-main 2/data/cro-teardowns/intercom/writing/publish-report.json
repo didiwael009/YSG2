@@ -1,18 +1,20 @@
 {
-  "publishedAt": "2026-06-08T11:10:36.157Z",
+  "publishedAt": "2026-06-08T23:00:31.559Z",
   "slug": "intercom",
   "dryRun": false,
-  "forced": false,
+  "forced": true,
   "qualityGates": {
-    "finalJudgePass": true,
-    "finalJudgeScore": 92,
+    "finalJudgePass": false,
+    "finalJudgeScore": 82,
     "seoPass": true,
-    "seoScore": 85,
+    "seoScore": 83,
     "unsupportedClaims": []
   },
-  "blockedReasons": [],
+  "blockedReasons": [
+    "Final judge FAIL — score 82/100 (need ≥ 90)"
+  ],
   "articlePath": "src/content/cro-teardown/articles/intercom.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",

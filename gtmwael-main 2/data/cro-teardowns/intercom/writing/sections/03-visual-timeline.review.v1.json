@@ -1,48 +1,31 @@
 {
-  "score": 79,
-  "pass": false,
+  "score": 88,
+  "pass": true,
   "issues": [
-    "Paragraph 1: 'reduces first-screen cognitive load for self-serve buyers' — claim not supported by evidence; no testing data provided",
-    "Paragraph 1: 'may underserve enterprise visitors' — unsupported interpretation not flagged as speculation",
-    "Paragraph 2: 'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — causal claim about conversion outcomes without data",
-    "Paragraph 3: 'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation presented as probable fact",
-    "Paragraph 1 word count: ~95 words — exceeds 90-word guideline without introducing a distinct second idea",
-    "Paragraph 2 word count: ~90 words — borderline, no clear second idea justifying the length",
-    "The section restates the self-serve→enterprise shift pattern in paragraph 1 ('may underserve enterprise visitors') that belongs in the Messaging section",
-    "The section restates proof burden in paragraph 2 ('creates a heavier burden for cold traffic') that belongs in the Messaging section",
-    "Paragraph 3: 'filters rather than converts' — repeats CTA friction direction analysis that belongs in the CTA section",
-    "Multiple paragraphs lack explicit buyer psychology identification beyond generic 'self-serve' vs 'enterprise' labels",
-    "No company-specific proper noun appears in the first 40 words of the section"
+    "Second paragraph opens with 'In January 2023' — a temporal connector, not a bold claim. The assigned opening move is 'bold-claim' but the section's first beat is descriptive chronology.",
+    "Phrase 'embeds a bold assumption' is interpretive but not explicitly labelled as interpretation — minor risk control issue.",
+    "Word count appears to be ~160 words — comfortably within target range, but opening could be punchier to fully honour the assigned move."
   ],
   "requiredFixes": [
-    "Remove or label 'reduces first-screen cognitive load for self-serve buyers' — no testing evidence supports this claim",
-    "Add explicit hedging to 'may underserve enterprise visitors' → 'could be interpreted as underserving' or cite evidence",
-    "Label 'That change may reflect a longer sales cycle' as speculation: 'One reading:' or 'This pattern suggests' with explicit uncertainty",
-    "Cut paragraph 1 to ~85 words by removing either the cognitive-load claim or the enterprise-visitor speculation",
-    "Remove self-serve→enterprise shift observation from paragraph 1 (belongs in Messaging section)",
-    "Remove proof-burden observation from paragraph 2 (belongs in Messaging section)",
-    "Remove 'filters rather than converts' from paragraph 3 (belongs in CTA section)",
-    "Add 'Intercom' to the first sentence to satisfy SEO usefulness requirement"
+    "Revise the opening two sentences to open with a direct claim that executes the 'bold-claim' move. Example: 'Intercom shifted from selling a benefit to declaring a category winner. The homepage no longer asks visitors to evaluate features — it asks them to accept that AI agents define the next decade of customer service, and Intercom owns that decade.' Then introduce the evidence chronologically."
   ],
-  "riskFlags": [
-    "'reduces first-screen cognitive load for self-serve buyers' — causal claim about visitor cognition without testing data",
-    "'may work for buyers who already recognise the brand but creates a heavier burden for cold traffic' — conversion outcome claim without evidence",
-    "'That change may reflect a longer sales cycle where the homepage filters rather than converts' — unlabelled interpretation of strategic intent"
-  ],
+  "riskFlags": [],
   "seoNotes": [
-    "No company-specific proper noun ('Intercom') in the first 40 words — reduces SEO discoverability",
-    "Section opens with a date rather than a company or product name — missed opportunity for keyword density"
+    "Section heading uses strong keyword anchors: 'only helpdesk for AI', 'category ownership' — both align with competitive positioning searches.",
+    "Quotes from H1 are bolded correctly and tie to search intent around 'AI customer service' and 'AI Agent era'."
   ],
-  "rewriteInstruction": "Rewrite to remove all cross-section repetition: eliminate the self-serve→enterprise observation (paragraph 1), the proof-burden claim (paragraph 2), and the filters-vs-converts conclusion (paragraph 3) — those belong in Messaging and CTA sections. Replace each with a visual-timeline-specific observation: what structural or layout element changed, and what that change implies for first-screen comprehension or visual hierarchy. Add explicit hedging to all buyer-psychology claims ('One reading:', 'This pattern could signal'). Cut paragraph 1 to 85 words by removing the cognitive-load claim. Add 'Intercom' to the opening sentence. Ensure every paragraph includes a buyer audience identification (not just 'self-serve' or 'enterprise' — name the visitor state: evaluating competitors, renewing a contract, researching AI helpdesk category). End with a one-sentence founder takeaway that extracts a reusable pattern from the three-year visual evolution.",
+  "rewriteInstruction": "The section passes the threshold but loses points on distinctiveness because it does not open with a bold claim as assigned — it opens with chronological description. Revise the first two sentences to lead with a direct claim about the belief shift (e.g., 'Intercom stopped selling a product benefit and started declaring a category winner'), then unpack the evidence. The tradeoff is well-named, the takeaway is present and founder-facing, and the evidence is specific and accurate. Simply tighten the opening to honour the assigned move and the section will reach 90+.",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
-    "clarity": 8,
-    "specificity": 12,
-    "seoUsefulness": 7,
-    "croUsefulness": 7,
-    "riskControl": 4,
-    "analysisDepth": 13,
-    "editorialQuality": 10
+    "evidenceAccuracy": 25,
+    "clarity": 9,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 9,
+    "analysisDepth": 10,
+    "editorialQuality": 5,
+    "founderSharpness": 18,
+    "distinctiveness": 2
   },
   "effectivePassThreshold": 85
 }

@@ -2,33 +2,34 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "Paragraph 2 repeats the 'proof burden' analysis that belongs in the messaging section, not lessons",
-    "Paragraph 2 contains an unlabelled interpretation: 'the old headline asks the visitor to imagine a better moment, the new one asks them to believe a category claim' — this psychology claim is not explicitly labelled as interpretation",
-    "Minor SEO opportunity: 'Intercom' appears only once in the first 40 words; could name the company earlier for search clarity",
-    "Paragraph 1 lacks explicit buyer psychology — it describes the navigation change and gives a founder test, but does not state which buyer type (enterprise vs self-serve) the old vs new navigation likely served"
+    "Opening sentence is direct but does not execute a 'counterintuitive-warning' move—it reads as a standard prohibition rather than a counterintuitive insight (e.g., 'Most SaaS teams copy successful homepages at the wrong stage' would be more counterintuitive).",
+    "Paragraph 2 (81 words) and Paragraph 3 (88 words) are both near the 90-word threshold and could be tightened for punchier compression.",
+    "The phrase 'What made this viable for Intercom appears to be' is hedging language that could be sharper ('Intercom can make this bet because...').",
+    "No explicit buyer psychology stated—who is tolerant vs. intolerant of the mismatch? (e.g., enterprise buyers vs. SMB self-serve trialists)",
+    "Section word count is 180 words (target range 200–250)—slightly under target but within acceptable bounds."
   ],
   "requiredFixes": [
-    "Remove or compress the 'proof burden' sentence in paragraph 2 — that conclusion belongs in the messaging section, not in lessons",
-    "Label the headline psychology interpretation in paragraph 2 as 'can be read as' or 'suggests' to control risk",
-    "Add one sentence in paragraph 1 that identifies the buyer audience shift implied by the navigation change (e.g., 'The new category labels suggest a shift toward enterprise buyers comparing components, while action labels served visitors ready to execute a workflow')"
+    "Revise opening to execute the assigned 'counterintuitive-warning' move: lead with a counterintuitive insight about when category claims backfire, not a flat prohibition.",
+    "Add explicit buyer psychology: identify which buyer segment is most intolerant of homepage-to-product mismatch (e.g., 'enterprise buyers evaluating AI-native claims expect AI-native onboarding; SMB trialists may tolerate more friction').",
+    "Replace 'What made this viable for Intercom appears to be' with a direct claim: 'Intercom can make this bet because...'"
   ],
-  "riskFlags": [
-    "Unlabelled interpretation in paragraph 2: 'the old headline asks the visitor to imagine a better moment, the new one asks them to believe a category claim' — this is a psychology claim presented as fact"
-  ],
+  "riskFlags": [],
   "seoNotes": [
-    "Company name 'Intercom' appears in the first sentence, which meets SEO usefulness threshold",
-    "First 40 words include 'Intercom', 'navigation', 'Custom Bots', 'Fin', 'Contact Sales' — strong proper-noun density for search relevance"
+    "Section title 'Why Most Founders Should Not Copy This Homepage Yet' is SEO-friendly and likely to attract founder search intent.",
+    "The phrase 'earned audacity' is memorable and could become a quotable pull-quote for social sharing."
   ],
-  "rewriteInstruction": "Remove the 'proof burden' sentence from paragraph 2 (that analysis belongs in messaging, not lessons). Label the headline psychology claim in paragraph 2 as 'can be read as' to control interpretive risk. In paragraph 1, add one sentence identifying which buyer audience the old vs new navigation likely served (e.g., 'The old action labels served self-serve users ready to execute; the new category labels serve enterprise buyers comparing platform components'). Keep all other structure and evidence anchors intact.",
+  "rewriteInstruction": "Open with a counterintuitive insight that executes the assigned 'warning' move—something like 'Most SaaS teams copy successful homepages at precisely the wrong stage of maturity.' Then anchor the rest of the section to that insight. Add explicit buyer psychology: name which visitor segment (enterprise evaluators, SMB trialists, etc.) is most intolerant of homepage-to-product mismatch. Replace 'appears to be' hedging with a direct claim. Tighten paragraphs 2 and 3 to improve punch—aim for 75–85 words each, not 88. Expand total word count to 210–230 by adding one concrete example of a 'mismatch' scenario (e.g., headline promises AI agent, trial shows traditional ticket UI). Ensure the tradeoff and takeaway remain intact.",
   "dimensionScores": {
     "evidenceAccuracy": 25,
-    "clarity": 10,
-    "specificity": 15,
-    "seoUsefulness": 10,
-    "croUsefulness": 10,
-    "riskControl": 7,
-    "analysisDepth": 8,
-    "editorialQuality": 3
+    "clarity": 9,
+    "specificity": 14,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 7,
+    "editorialQuality": 5,
+    "founderSharpness": 16,
+    "distinctiveness": 2
   },
   "effectivePassThreshold": 85
 }

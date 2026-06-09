@@ -161,8 +161,20 @@ export function assembleArticle(opts: AssemblerOpts): AssemblerResult {
       continue;
     }
 
-    const heading = SECTION_HEADINGS[sectionId] ?? `## ${sectionId}`;
-    const block = heading ? `${heading}\n\n${content}` : content;
+    // Writer may generate its own heading as the first line (## ).
+    // If so, extract it and use it directly — static SECTION_HEADINGS becomes the fallback only.
+    let heading: string | null;
+    let body = content;
+    if (content.startsWith('## ')) {
+      const nlIdx = content.indexOf('\n');
+      heading = nlIdx >= 0 ? content.slice(0, nlIdx).trim() : content.trim();
+      body    = nlIdx >= 0 ? content.slice(nlIdx + 1).trimStart() : '';
+    } else {
+      // null = intentionally no heading (e.g. 01-intro); undefined = unknown section → use ID as fallback
+      const rawHeading = SECTION_HEADINGS[sectionId];
+      heading = rawHeading === undefined ? `## ${sectionId}` : rawHeading;
+    }
+    const block = heading ? `${heading}\n\n${body}` : body;
     blocks.push(block);
     sectionsIncluded.push(sectionId);
     sectionBodies[sectionId] = content;

@@ -1,0 +1,5 @@
+## Ten CTAs Out, Two Primary Paths In
+
+Ten action prompts disappeared. Intercom stripped away **"Download the report,"** **"Watch now,"** **"Get started,"** **"Watch a Demo,"** and five outcome-specific entry points like **"Start converting customers faster."** What replaced them: **"Start free trial"** and **"Contact sales."** The page also added feature-specific links—**"Fin AI Agent,"** **"AI-powered Insights"**—but these read as navigation, not conversion paths. The primary funnel narrowed to two doors: self-qualify, or talk to sales.
+
+This compression appears to filter for readiness. The old page offered something for everyone—report readers, demo watchers, story browsers. The new page assumes visitors already know what they need and are deciding how to buy it. Mid-funnel nurture content vanished from the homepage entirely. The tradeoff: speed vs qualification—faster paths for ready buyers, fewer handholds for the uncertain. If your homepage still offers four or five CTAs of varying commitment, ask whether that matches your traffic quality or just delays the decision you're asking visitors to make.

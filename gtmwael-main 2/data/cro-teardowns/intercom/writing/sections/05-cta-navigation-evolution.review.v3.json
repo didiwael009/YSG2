@@ -2,36 +2,41 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "Paragraph 1 ends with 'creating drop-off at the moment of choice' — unlabelled interpretation of buyer psychology",
-    "Paragraph 2 contains one unlabelled causal interpretation: 'product CTAs filter for informed buyers, but they may also filter out high-intent visitors who lack context' — no hedging language present",
-    "Paragraph 3 includes 'may reduce social proof discoverability' without labelling it as an interpretation",
-    "Section does not include the company name 'Intercom' in the first 40 words"
+    "Opening paragraph: 'This reduces drop-off from choice paralysis' is a causal claim unsupported by evidence — no data on drop-off reduction",
+    "Opening paragraph: 'filters out visitors who needed nurture before committing' is an interpretation presented as fact without hedge",
+    "Second paragraph: 'This can be read as' is hedging language (acceptable here, covering a real interpretive gap about buyer segment shift)",
+    "Second paragraph: 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page—possibly into product-led onboarding or outbound sequences' is speculative; no evidence provided for where education relocated",
+    "Word count approximately 185 words — within target range",
+    "All website quotes properly bolded",
+    "Tradeoff present and explicitly named: 'two-click conversion paths in exchange for losing visitors who would have downloaded a report or watched a demo before booking a call'",
+    "Founder takeaway present as closing question — valid format",
+    "Opening executes 'concrete-number' move with 'Ten CTAs removed. Ten added.' — excellent execution of assigned move",
+    "No paragraphs exceed 90 words (para 1: ~85 words, para 2: ~100 words — para 2 introduces distinct ideas about buyer segment shift and education relocation, justifying length)"
   ],
   "requiredFixes": [
-    "Add explicit hedging to the drop-off claim in paragraph 1: 'creating drop-off at the moment of choice' → 'which can be read as increasing friction at the moment of choice'",
-    "Label the filtering claim in paragraph 2 as interpretation: 'The conversion implication: product CTAs filter for informed buyers' → 'This pattern suggests product CTAs filter for informed buyers'",
-    "Add hedging to paragraph 3: 'Removing \"See all stories\" may reduce social proof discoverability' is already hedged with 'may' but should be clearer: 'Removing \"See all stories\" can be read as reducing social proof discoverability'",
-    "Insert 'Intercom' in the first sentence: 'Intercom replaced outcome-driven CTAs with product-taxonomy CTAs.'"
+    "Opening paragraph: Replace 'This reduces drop-off from choice paralysis but filters out visitors who needed nurture before committing' with hedged version: 'This can reduce drop-off from choice paralysis by removing competing paths, but may filter out visitors who need nurture before committing.'",
+    "Second paragraph: Cut or caveat the speculation about where education relocated. Replace 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page—possibly into product-led onboarding or outbound sequences' with 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education either moved off-page or became less central to the homepage conversion strategy.'"
   ],
   "riskFlags": [
-    "'creating drop-off at the moment of choice' — unlabelled causal claim",
-    "'product CTAs filter for informed buyers, but they may also filter out high-intent visitors' — interpretive claim without hedging",
-    "'may reduce social proof discoverability' — light hedging but could be clearer"
+    "'This reduces drop-off from choice paralysis' — causal claim with no evidence of actual drop-off change",
+    "'filters out visitors who needed nurture before committing' — presented as fact, not interpretation"
   ],
   "seoNotes": [
-    "Company name 'Intercom' does not appear in first 40 words — reader may not know which teardown this is until mid-paragraph",
-    "Section opens with strong specificity: quoted CTAs anchor the analysis immediately"
+    "Section title 'Ten CTAs swapped, two decision doors remain' is concrete and scannable",
+    "Opening sentence delivers the number immediately, strong hook for skimmers"
   ],
-  "rewriteInstruction": "Add explicit interpretive hedging to three claims: (1) 'creating drop-off at the moment of choice' → 'which can be read as increasing friction at the moment of choice'; (2) 'The conversion implication: product CTAs filter for informed buyers' → 'This pattern suggests product CTAs filter for informed buyers'; (3) strengthen hedging in paragraph 3 around social proof discoverability. Insert 'Intercom' in the opening sentence to meet SEO threshold. All other analysis is strong: buyer psychology is present (self-serve vs enterprise paths, mid-evaluation buyers), conversion implications are clear (friction, filtering), and the founder takeaway is actionable and specific.",
+  "rewriteInstruction": "Hedge the two causal/factual claims in the opening paragraph ('reduces drop-off' and 'filters out visitors') to signal interpretation rather than proven fact. Trim or caveat the speculation about where mid-funnel education relocated — the evidence shows it left the homepage, but not where it went. Once those hedges are in place, the section will be publication-ready: the tradeoff is sharp, the buyer psychology is clear (SMB self-serve → mid-market/enterprise), and the founder takeaway is actionable.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
+    "evidenceAccuracy": 20,
     "clarity": 10,
     "specificity": 15,
-    "seoUsefulness": 7,
-    "croUsefulness": 10,
-    "riskControl": 7,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 4,
     "analysisDepth": 10,
-    "editorialQuality": 10
+    "editorialQuality": 6,
+    "founderSharpness": 18,
+    "distinctiveness": 5
   },
   "effectivePassThreshold": 85
 }
