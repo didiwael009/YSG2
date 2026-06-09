@@ -1,20 +1,18 @@
 {
-  "publishedAt": "2026-06-09T05:51:53.753Z",
+  "publishedAt": "2026-06-09T07:40:59.769Z",
   "slug": "shopify",
   "dryRun": false,
-  "forced": true,
+  "forced": false,
   "qualityGates": {
-    "finalJudgePass": false,
-    "finalJudgeScore": 78,
+    "finalJudgePass": true,
+    "finalJudgeScore": 91,
     "seoPass": true,
-    "seoScore": 82,
+    "seoScore": 83,
     "unsupportedClaims": []
   },
-  "blockedReasons": [
-    "Final judge FAIL — score 78/100 (need ≥ 90)"
-  ],
+  "blockedReasons": [],
   "articlePath": "src/content/cro-teardown/articles/shopify.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",

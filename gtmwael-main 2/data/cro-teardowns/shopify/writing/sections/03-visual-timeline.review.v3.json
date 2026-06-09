@@ -1,0 +1,28 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'aspiration positioning' is not a widely recognized conversion principle — consider replacing with 'identity recruitment' or 'aspirational identity positioning', which are more standard terms in CRO literature",
+    "The founder test, while specific and actionable, could be slightly more anchored to the exact evidence pattern (the shift from category-explanation to identity-recruitment)",
+    "Word count is approximately 195 words — within budget but on the higher end for a section with this much conceptual density"
+  ],
+  "requiredFixes": [
+    "Replace 'aspiration positioning' with 'identity recruitment' — a more precise and recognized conversion mechanism term that better captures the psychological shift from explaining category to recruiting self-concept"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "The opening sentence structure ('stopped explaining... started recruiting') creates a strong semantic contrast that could perform well in featured snippet extraction",
+    "The section maintains company name (Shopify) and specific feature name (Sidekick) throughout, supporting topical authority signals"
+  ],
+  "rewriteInstruction": "Replace the phrase 'aspiration positioning' in paragraph 1 with 'identity recruitment' to use standard conversion terminology. The rest of the section is publication-ready — the entry point is a genuine finding (not a lazy contrast), the mechanism is present (though the term needs correction), the tradeoff is woven naturally into the final paragraph, and the founder test is specific and actionable.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "riskControl": 10,
+    "specificity": 15,
+    "clarity": 10,
+    "entryPointOriginality": 14,
+    "mechanismNaming": 8,
+    "founderSharpness": 14
+  },
+  "effectivePassThreshold": 85
+}

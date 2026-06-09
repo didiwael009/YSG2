@@ -1,0 +1,7 @@
+## Shopify's homepage stopped explaining what it is and started recruiting who you want to be
+
+The shift from category to identity shows first in the headline. The 2021 version named what the product was: **"The platform commerce is built on."** The current headline — **"Be the next AI all-star"** — only works if the visitor already believes AI matters in commerce, wants to identify as an all-star, and sees those two claims as connected. This is aspiration positioning: the page recruits an identity instead of explaining a category.
+
+The section headings follow the same pattern. **"Bring your business online"** and **"Take the best path forward"** addressed discovery-stage concerns — whether to start, which direction to choose. The new headings — **"Your brand has entered the chat"** and **"Meet your secret weapon, Sidekick"** — address tool selection for visitors who have already started. The shift suggests Shopify now assumes AI fluency and ambition are baseline visitor attributes rather than outcomes to promise.
+
+The homepage trades accessibility — reaching visitors who don't yet know if AI matters — for alignment with visitors who already identify as ambitious and AI-forward. Shopify's shift suggests they have the branded traffic to support this. Open your analytics. If a significant share of your homepage traffic is non-branded search or paid cold traffic, positioning that assumes pre-existing belief may be ahead of where your audience currently is.

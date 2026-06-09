@@ -1,9 +1,9 @@
-## The page stopped talking to the store starter
+## Shopify stopped recruiting beginners
 
-The old page spoke to someone building their first business. The new one speaks to someone building with AI.
+The old page spoke to someone who had never run a store. **"Start a Business, Grow Your Business"** is a value proposition for entrepreneurs who need permission, not procurement teams who need platform specs. The new page speaks to someone who already has a business and is evaluating commerce infrastructure: **"The All-in-One Commerce Platform for Businesses"** is a category claim, not an invitation.
 
-The headline shift is the sharpest signal: **"The platform commerce is built on"** became **"Be the nextAI all-star."** The meta description changed from **"Try Shopify free and start a business or grow an existing one"** to **"Try Shopify free. Build or grow your business fast with AI."** The page title moved from **"Start a Business, Grow Your Business"** to **"The All-in-One Commerce Platform for Businesses."** Every change replaces beginner language with capability language. "Start a business" exits. "AI all-star" and "all-in-one platform" enter.
+The shift is visible in every buyer-facing surface. The meta description dropped **"start a business"** entirely and added **"Build or grow your business fast with AI."** The primary headline moved from **"The platform commerce is built on"** — a trust signal for first-time founders — to **"Be the next AI all-star"** — an aspiration signal for operators chasing competitive advantage. That is not a tone refresh. That is a different conversation with a different decision-maker at a different stage.
 
-This appears consistent with targeting a buyer who already runs something and wants to scale it with new tools, rather than someone choosing their first platform. The vocabulary suggests confidence over education. The tradeoff: **breadth vs focus** — a tighter lens on growth-stage merchants who care about AI tooling, at the cost of the founding narrative that built trust with first-timers.
+This is ICP narrowing. Shopify traded reach for qualification. The old language served discovery-stage traffic: people searching "how to sell online." The new language serves consideration-stage buyers: people comparing Shopify to BigCommerce or Adobe Commerce with a scope document already written. What it costs: every founder still working a day job who lands on this page now sees a platform built for someone else.
 
-If your homepage still says "start," ask whether your best customers are actually starters — or whether they're switching from something that stopped working.
+Open your homepage. If your H1 could plausibly appear in a founder's search query, you are still talking to discovery. If it reads like a Gartner category label, you have moved to procurement — and your trial-start volume will reflect that shift whether you intended it or not.

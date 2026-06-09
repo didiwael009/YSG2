@@ -1,9 +1,7 @@
-## From platform claim to AI-powered outcome promise
+## Shopify's homepage stopped explaining what it is and started recruiting who you want to be
 
-Where the July 2021 homepage opened with **"The platform commerce is built on"** — a category ownership statement anchored in scale and foundation — the June 2026 version pivoted to **"Be the nextAI all-star"**, a promise that positions the product as the mechanism for breakout success. The meta description now leads with **"Build or grow your business fast with AI"** instead of the former **"Try Shopify free and start a business or grow an existing one."**
+The 2021 headline named what the product was: **"The platform commerce is built on."** The current headline — **"Be the nextAI all-star"** — only works if the visitor already believes AI matters in commerce, wants to identify as an all-star, and sees those two claims as connected. This is aspiration positioning: the page recruits an identity instead of explaining a category.
 
-This can be read as a move from credibility-based positioning (we are the infrastructure layer) to an outcome-forward claim that embeds AI as the differentiator. The new headline assumes the visitor wants to become exceptional, not simply operational, and that AI is now table stakes for that ambition. It trades category authority for aspiration.
+The section headings follow the same pattern. **"Bring your business online"** and **"Take the best path forward"** addressed discovery-stage concerns — whether to start, which direction to choose. The new headings — **"Your brand has entered the chat"** and **"Meet your secret weapon, Sidekick"** — address tool selection for visitors who have already started. The new headlines only function for visitors who already have AI fluency and brand-led ambition — not visitors who need those outcomes promised to them.
 
-**The tradeoff:** credibility vs overclaiming. A platform claim is defensible but low-ceiling. An outcome promise paired with AI raises the bar — and the skepticism.
-
-**So what?** If you're rewriting your headline, ask: does your visitor believe AI is the unlock, or do they need to believe in *you* first? Outcome promises work when the visitor already knows what success looks like. If they don't, the claim floats.
+The homepage trades accessibility — reaching visitors who don't yet know if AI matters — for alignment with visitors who already identify as ambitious and AI-forward. That trade is only viable if the brand already owns the category in the buyer's working memory before the page loads. Open your analytics. If a significant share of your homepage traffic is non-branded search or paid cold traffic, positioning that assumes pre-existing belief may be ahead of where your audience currently is.

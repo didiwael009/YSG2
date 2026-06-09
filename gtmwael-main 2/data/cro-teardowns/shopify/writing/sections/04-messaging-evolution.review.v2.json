@@ -1,39 +1,41 @@
 {
-  "score": 78,
+  "score": 72,
   "pass": false,
   "issues": [
-    "Paragraph 2 exceeds 90 words (~105 words) without introducing a distinct second idea — it restates the headline contrast already established in paragraph 1",
-    "The phrase 'This can be read as targeting aspiring solopreneurs rather than experienced operators shopping on capability' is hedged interpretation without a meaningful gap — it's a mechanical tic, not a real uncertainty",
-    "Paragraph 2 is repetitive: the headline contrast is stated in paragraph 1, then re-explained in paragraph 2 with additional phrasing but no new evidence or implication",
-    "The meta description change is introduced but not analysed — the section notes the punctuation shift is 'minor' but does not explain what conversion or psychology implication it carries, leaving the evidence strand dangling",
-    "The section does not identify a specific buyer audience shift — it uses 'aspiring solopreneurs' and 'experienced operators' as labels but does not ground them in decision stage, mental state, or conversion path",
-    "Word count: ~195 words (target 200–230). This is within range but the compression is uneven — paragraph 2 is bloated while the meta description strand is under-analysed"
+    "Opening is pure CONTRAST entry ('The language change suggests a shift from X to Y') when the most interesting aspect is the PARADOX: Shopify replaced a trust signal with an aspiration signal that excludes most of their historical audience — this tension is buried in paragraph 2 instead of leading.",
+    "Mechanism is named late and vaguely ('ICP narrowing') rather than upfront with precision — the actual mechanism is 'qualification filter via aspiration signaling' or 'category repositioning from enabler to performance platform.'",
+    "Hedging is mechanical: 'suggests' appears 3 times, 'appears to have' once — every interpretive move is hedged identically, signaling writer self-protection rather than precision.",
+    "The tradeoff is present but labeled structurally ('What it costs:') rather than woven as content — this is a formatting signal, not prose integration.",
+    "The founder test is strong and specific, but it is not anchored to the evidence shown — the test is about Google results, but the evidence is about homepage language. The connection is implied, not explicit.",
+    "Word count is approximately 245 words, exceeding the 240-word max for analytical sections."
   ],
   "requiredFixes": [
-    "Compress paragraph 2 to ~60 words maximum. Remove the restatement of the headline contrast (already covered in paragraph 1). Focus the paragraph on the meta description change and its conversion implication, OR delete the meta description evidence strand entirely if it carries no analytical weight",
-    "Replace 'This can be read as targeting aspiring solopreneurs rather than experienced operators shopping on capability' with a direct claim: 'The new headline targets aspiring solopreneurs — first-time founders or pre-revenue side-hustlers — not experienced operators shopping on capability.' Remove the hedge unless you can justify the interpretive gap with a specific piece of missing evidence",
-    "Add buyer psychology to the meta description observation: who does the AI-speed framing ('Build or grow your business fast with AI') likely appeal to, and what decision stage does it address? If the meta description change carries no distinct implication, cut it entirely and dedicate the word budget to deepening the headline analysis",
-    "Specify the buyer audience shift: are 'aspiring solopreneurs' pre-product, pre-revenue, or pre-commitment? What mental state does 'Be the nextAI all-star' address that 'The platform commerce is built on' did not?"
+    "Reopen with the PARADOX: 'Shopify replaced a trust signal with an aspiration signal that excludes most of their historical acquisition funnel' — make this the first sentence, not the contrast between old/new audience.",
+    "Name the mechanism in sentence 2 or 3: 'qualification filter via aspiration signaling' or 'category repositioning from enabler to performance platform' — not buried as 'ICP narrowing' in the middle of paragraph 2.",
+    "Remove the 'What it costs:' label. Integrate the tradeoff as a sentence: 'The cost: every founder still working a day job now sees a platform positioned for someone else' — no structural marker.",
+    "Anchor the founder test explicitly to the evidence: 'Open your homepage. If your H1 could recruit both pre-revenue founders and established businesses — like Shopify's old 'Start a Business, Grow Your Business' — paste it into Google and check whether...' Make the test trace back to the headline change shown.",
+    "Cut 25+ words to reach 220-word target. Primary candidates: the entire first half of the opening sentence ('The language change suggests a shift from aspiring entrepreneurs to established businesses') — this is setup, not insight. Start with the finding.",
+    "Reduce hedging precision: keep ONE 'suggests' where causal inference is genuinely uncertain (e.g., whether the shift was intentional). Remove the other two — 'The old headline functioned as...' and 'The new one is an aspiration signal' are observations, not inferences."
   ],
   "riskFlags": [
-    "The phrase 'it may pull in readers who haven't qualified themselves as serious buyers' implies a causal conversion outcome (trial volume increases, conversion dilutes) without data to support it — this is speculative and should be hedged more explicitly or removed"
+    "'The language change suggests a shift' — this is a finding (what changed), not an inference. Findings do not require hedging. The hedge signals unnecessary caution.",
+    "'Shopify appears to have traded reach for qualification' — appropriate hedge, but 'appears to have' + 'suggests' (used 3x total) creates mechanical repetition.",
+    "'your trial-start volume will reflect that shift whether you intended it or not' — this implies a conversion outcome (trial volume) without data. The claim is hedged with 'will reflect,' but the outcome itself is speculative."
   ],
   "seoNotes": [
-    "The section uses exact quoted phrases from the evidence (bolded correctly), which supports keyword density and editorial credibility",
-    "The closing question ('are you naming the category or naming the person') is a strong semantic anchor for founder-oriented search intent"
+    "Section opens with a company-specific finding ('Shopify stopped recruiting beginners'), which is good for unique angle and shareability.",
+    "The phrase 'ICP narrowing' and 'qualification filter' are practitioner terms that may drive long-tail search from operators researching homepage messaging strategy.",
+    "The founder test references a Google search tactic, which may attract readers searching for 'how to test homepage messaging' or 'homepage positioning audit.'"
   ],
-  "rewriteInstruction": "Compress paragraph 2 to 60 words or fewer. Remove the restatement of the headline contrast (already covered in paragraph 1). Either cut the meta description evidence strand entirely (if it carries no analytical weight) or replace it with a conversion implication: does the AI-speed framing ('Build or grow your business fast with AI') accelerate the trial decision for a specific buyer stage? Replace the hedge 'This can be read as' with a direct claim: 'The new headline targets aspiring solopreneurs — first-time founders or pre-revenue side-hustlers — not experienced operators shopping on capability.' Specify the buyer psychology: are these solopreneurs pre-product, pre-revenue, or pre-commitment? What mental state does identity framing ('Be the nextAI all-star') address that category leadership ('The platform commerce is built on') did not? Remove or explicitly hedge the causal claim about trial volume and conversion dilution unless you can anchor it to a specific piece of evidence. The section is structurally sound but bloated and repetitive — tighten the compression and deepen the buyer psychology to meet the 85 threshold.",
+  "rewriteInstruction": "Lead with the paradox, not the contrast: open with 'Shopify replaced a trust signal with an aspiration signal that excludes most of their historical acquisition funnel.' Name the mechanism (qualification filter via aspiration signaling OR category repositioning) by sentence 3. Remove the 'What it costs:' label and integrate the tradeoff as a single prose sentence. Anchor the founder test explicitly to the headline evidence shown: 'If your H1 could recruit both pre-revenue and established buyers — like Shopify's old version — paste it into Google and check whether the top results are discovery content or procurement grids.' Reduce hedging to one precise use where causal uncertainty is real; remove hedges from factual observations. Cut to 220 words by removing setup phrases in the opening and tightening the middle paragraph.",
   "dimensionScores": {
     "evidenceAccuracy": 23,
-    "clarity": 6,
-    "specificity": 12,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 7,
-    "analysisDepth": 6,
-    "editorialQuality": 5,
-    "founderSharpness": 14,
-    "distinctiveness": 5
+    "riskControl": 4,
+    "specificity": 13,
+    "clarity": 8,
+    "entryPointOriginality": 7,
+    "mechanismNaming": 6,
+    "founderSharpness": 11
   },
   "effectivePassThreshold": 85
 }

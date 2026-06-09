@@ -1,0 +1,39 @@
+{
+  "score": 76,
+  "pass": false,
+  "issues": [
+    "Mechanical hedging: 'can be read as' appears 4 times across 3 paragraphs, signaling protective writing rather than precise inference labeling",
+    "Entry point is template CONTRAST (old vs new headline) when a stronger FINDING was available: Shopify moved from category explanation to identity recruitment",
+    "The opening announces structure ('The 2021 headline... The current headline...') rather than making the most interesting move first",
+    "Hedging is applied to FINDINGS: 'could be read as inviting' and 'can be read as addressing' describe what the text says, not what it implies — these are facts, not inferences",
+    "Word count approximately 230, exceeding the 220-word cap for analytical sections",
+    "The tradeoff is present but buried in clause form ('trades accessibility for alignment') rather than given a full sentence with tension visible",
+    "The founder test is present and specific, but the setup phrase 'if most visitors arrive already knowing your name' is generic — not anchored to what THIS evidence showed about Shopify's actual traffic"
+  ],
+  "requiredFixes": [
+    "Remove 2 instances of 'can be read as' — hedge only the inference (assumption change, aspiration positioning), not the description of what text says",
+    "Rewrite opening to lead with the FINDING: 'Shopify's homepage stopped explaining what it is and started recruiting who you want to be' — then show the headline evidence as support",
+    "Cut 30 words to reach 200-word target: trim 'and could be read as inviting a wider audience range' (observation, not insight) and condense the section heading comparison",
+    "Expand the tradeoff into a full sentence: 'The homepage trades accessibility — reaching visitors who don't yet know if AI matters — for alignment with visitors who already identify as ambitious and AI-forward.'",
+    "Anchor the founder test to Shopify's evidence: add 'Shopify's shift suggests they have the branded traffic to support this' before 'Open your analytics' — this ties the test to what the company actually did"
+  ],
+  "riskFlags": [
+    "'the homepage may now be treating AI fluency and ambition as baseline visitor attributes' — hedge is appropriate, but the inference itself is weak: the headline could also be a top-of-funnel hook to create aspiration, not assume it",
+    "'the page recruits an identity instead of explaining a category' — presented as confirmed mechanism, but no evidence shows intent or that identity recruitment is the actual mechanism vs. brand refresh or stylistic shift"
+  ],
+  "seoNotes": [
+    "Draft does not reference the meta description change, which is part of the provided evidence and shows parallel shift from 'start a business or grow' to 'Build or grow your business fast with AI'",
+    "Page title change from '14-Day Free Trial' to 'All-in-One Commerce Platform' is not mentioned, though it signals category claim evolution"
+  ],
+  "rewriteInstruction": "Lead with the finding, not the contrast: open with 'Shopify's homepage stopped explaining what it is and started recruiting who you want to be.' Then deploy the headline evidence as support. Remove mechanical hedging: hedge the inference ('this shift suggests Shopify assumes...'), not the description of what the text says ('the headline says X' is a fact). Expand the tradeoff to a full sentence showing both sides in tension. Anchor the founder test to what Shopify's evidence implies about their traffic mix, then give the audit. Cut to 200 words by trimming the weak clause 'could be read as inviting a wider audience range' and condensing the section heading list. The mechanism (aspiration positioning / identity recruitment) is strong — keep it, but make clear it's inferred from the shift, not stated strategy.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "riskControl": 4,
+    "specificity": 12,
+    "clarity": 10,
+    "entryPointOriginality": 7,
+    "mechanismNaming": 8,
+    "founderSharpness": 13
+  },
+  "effectivePassThreshold": 85
+}

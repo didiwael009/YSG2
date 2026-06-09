@@ -5,38 +5,28 @@
     {
       "model": "claude-sonnet-4-5",
       "role": "cross-section",
-      "inputTokens": 2026,
-      "outputTokens": 1456,
-      "inputCostUsd": 0.006078,
-      "outputCostUsd": 0.021840000000000002,
-      "totalCostUsd": 0.027918000000000002,
-      "timestamp": "2026-06-09T05:49:01.765Z"
+      "inputTokens": 2077,
+      "outputTokens": 1547,
+      "inputCostUsd": 0.0062309999999999996,
+      "outputCostUsd": 0.023205,
+      "totalCostUsd": 0.029436,
+      "timestamp": "2026-06-09T07:39:54.263Z"
     },
     {
       "model": "claude-sonnet-4-5",
       "role": "final-judge",
-      "inputTokens": 5198,
-      "outputTokens": 3515,
-      "inputCostUsd": 0.015594,
-      "outputCostUsd": 0.052725,
-      "totalCostUsd": 0.068319,
-      "timestamp": "2026-06-09T05:50:11.312Z"
-    },
-    {
-      "model": "claude-haiku-4-5-20251001",
-      "role": "seo-auditor",
-      "inputTokens": 2504,
-      "outputTokens": 1231,
-      "inputCostUsd": 0.0020032,
-      "outputCostUsd": 0.004924,
-      "totalCostUsd": 0.0069272000000000005,
-      "timestamp": "2026-06-09T05:50:26.808Z"
+      "inputTokens": 4856,
+      "outputTokens": 2543,
+      "inputCostUsd": 0.014568000000000001,
+      "outputCostUsd": 0.038145,
+      "totalCostUsd": 0.052712999999999996,
+      "timestamp": "2026-06-09T07:40:48.211Z"
     }
   ],
-  "totalInputTokens": 9728,
-  "totalOutputTokens": 6202,
-  "totalCostUsd": 0.1031642,
+  "totalInputTokens": 6933,
+  "totalOutputTokens": 4090,
+  "totalCostUsd": 0.082149,
   "budgetUsd": 3,
   "budgetExceeded": false,
-  "generatedAt": "2026-06-09T05:50:26.817Z"
+  "generatedAt": "2026-06-09T07:40:48.222Z"
 }

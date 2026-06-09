@@ -1,36 +1,43 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 82,
+  "pass": false,
   "issues": [
-    "Opening line is thesis-style: 'The old page spoke to someone building their first business. The new one speaks to someone building with AI.' This reads as summary rather than executing the contrast move — should open with the headline shift itself (assigned opening: contrast).",
-    "Meta description change quoted but not bolded — **'Try Shopify free and start a business or grow an existing one'** appears in plain quotes only. Required fix: all website verbatim quotes must be bolded.",
-    "Page title change quoted but not bolded — **'Start a Business, Grow Your Business'** and **'The All-in-One Commerce Platform for Businesses'** appear in plain quotes only.",
-    "Phrase 'This appears consistent with targeting a buyer who already runs something...' is cautious hedging. The section has already shown the evidence (beginner language out, capability language in); the interpretation could be stated directly.",
-    "Word count slightly over target (approx 165 words vs 150–180 target) — within acceptable range but no second distinct idea in final paragraph to justify length.",
-    "Section name is '04-messaging-evolution' but draft does not identify old vs new buyer AUDIENCE explicitly beyond 'someone building their first business' vs 'someone building with AI' — buyer psychology is present but could be sharper (e.g., first-time founder vs growth-stage merchant who switched platforms)."
+    "The opening sentence claims 'The old page spoke to someone who had never run a store' — an interpretation presented as confirmed fact, not hedged. The evidence shows language change, not verified buyer intent.",
+    "The phrase 'That is not a tone refresh. That is a different conversation with a different decision-maker at a different stage' is stated as certainty when it is an inference from messaging changes.",
+    "The tradeoff ('What it costs: every founder still working a day job...') is present but appears late in para 3 rather than woven into the mechanism discussion.",
+    "The founder test is present as the last sentence but lacks specificity — it describes what to look for ('if your H1 could plausibly appear in a founder's search query') without naming a single concrete action the founder performs to test it.",
+    "The draft claims 'The old language served discovery-stage traffic: people searching how to sell online' — this is an invented example not present in the evidence.",
+    "The draft claims 'people comparing Shopify to BigCommerce or Adobe Commerce with a scope document already written' — no evidence of competitive context or buyer behavior is provided.",
+    "Word count is approximately 265 words, exceeding the 220-word max for analytical sections."
   ],
   "requiredFixes": [
-    "Bold all website verbatim quotes: **'Try Shopify free and start a business or grow an existing one'** → **\"Try Shopify free and start a business or grow an existing one\"** (and same for page title quotes).",
-    "Rewrite opening to execute the contrast move: lead with the headline shift itself, not a thesis. Example: '**\"The platform commerce is built on\"** became **\"Be the nextAI all-star.\"** — open with this contrast, then unpack the implications.'",
-    "Replace 'This appears consistent with targeting a buyer...' with a direct claim. The evidence has already been shown; state the shift clearly."
+    "Hedge the opening sentence: 'The old page appears to have spoken to someone who had never run a store' or 'The language change suggests a shift from aspiring entrepreneurs to established businesses.'",
+    "Hedge the declaration in para 2: 'This pattern suggests a different conversation...' rather than 'That is a different conversation...'",
+    "Remove the invented search query example 'how to sell online' — the evidence does not include search behavior data.",
+    "Remove the competitive comparison to BigCommerce and Adobe Commerce — no evidence supports this claim.",
+    "Move the tradeoff sentence earlier — ideally into para 2, immediately after establishing the mechanism (ICP narrowing / qualification filter).",
+    "Make the founder test concrete: 'Open your homepage and paste your H1 into Google. If the top results are beginners asking questions, you are still in discovery. If the results are vendor comparison posts or RFP templates, you have moved to procurement.'",
+    "Cut 45+ words to reach 220-word target. Para 2 has padding ('That is not a tone refresh') that could be removed without losing the insight."
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "'The old page spoke to someone who had never run a store' — stated as fact, no hedge.",
+    "'That is a different conversation with a different decision-maker at a different stage' — causal claim without hedge.",
+    "'The old language served discovery-stage traffic: people searching how to sell online' — invented behavioral example not in evidence.",
+    "'people comparing Shopify to BigCommerce or Adobe Commerce with a scope document already written' — invented competitive scenario not in evidence."
+  ],
   "seoNotes": [
-    "Section references meta description and page title changes — both SEO-critical elements. This is valuable for founder takeaway.",
-    "Meta description shortening is noted but not analysed for character count or SERP display implications — minor missed opportunity."
+    "The section correctly identifies the category claim shift in the page title and its implications for organic positioning.",
+    "The founder test could be strengthened to include an actionable SEO audit step (e.g., 'paste your H1 into Google and note whether the SERP features are informational or transactional')."
   ],
-  "rewriteInstruction": "Open with the headline shift itself (contrast move): lead with the **\"The platform commerce is built on\"** → **\"Be the nextAI all-star\"** change, then unpack the buyer shift. Bold all website quotes (meta description, page title). Replace 'This appears consistent with' with a direct claim — the evidence supports a clear interpretation. Tighten final paragraph: the founder takeaway is strong but could land harder if the preceding sentence is trimmed. Aim for 150–165 words total. Ensure old vs new buyer audiences are explicitly named (e.g., 'first-time founder' vs 'growth-stage merchant switching platforms').",
+  "rewriteInstruction": "Retain the core mechanism (ICP narrowing via language shift from aspiring to established merchants) and the entry point (finding: Shopify stopped recruiting beginners). Hedge the opening: 'appears to have spoken to' rather than 'spoke to'. Remove all invented examples: delete 'people searching how to sell online', delete the BigCommerce/Adobe Commerce comparison, delete 'scope document already written'. Move the tradeoff sentence into para 2 immediately after naming the mechanism. Make the founder test concrete and actionable: specify that the founder should paste their H1 into Google and examine the SERP to determine whether results are discovery-stage (how-to content) or procurement-stage (vendor comparisons). Cut to 220 words by removing padding in para 2 ('That is not a tone refresh. That is a different conversation...') — state the finding once, directly.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "clarity": 9,
-    "specificity": 15,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 10,
-    "analysisDepth": 9,
-    "editorialQuality": 3,
-    "founderSharpness": 15,
-    "distinctiveness": 2
+    "evidenceAccuracy": 15,
+    "riskControl": 4,
+    "specificity": 12,
+    "clarity": 7,
+    "entryPointOriginality": 13,
+    "mechanismNaming": 10,
+    "founderSharpness": 11
   },
   "effectivePassThreshold": 85
 }

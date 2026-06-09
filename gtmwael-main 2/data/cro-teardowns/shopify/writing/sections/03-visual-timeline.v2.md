@@ -1,0 +1,7 @@
+## Shopify's homepage now assumes you already want to be an AI business
+
+The 2021 headline named what the product was — **"The platform commerce is built on"** — and could be read as inviting a wider audience range. The current headline, **"Be the nextAI all-star,"** only works if the visitor already believes AI matters in commerce, wants to identify as an all-star, and sees those two claims as connected. That shift can be read as an assumption change: the homepage may now be treating AI fluency and ambition as baseline visitor attributes rather than outcomes to promise.
+
+The section headings follow the same pattern. **"Bring your business online"** and **"Take the best path forward"** can be read as addressing discovery-stage concerns — whether to start, which direction to choose. The new headings — **"Your brand has entered the chat"** and **"Meet your secret weapon, Sidekick"** — appear to address tool selection for visitors who have already started. The mechanism is aspiration positioning: the page recruits an identity instead of explaining a category. That trades accessibility for alignment with a specific buyer self-concept.
+
+Open your analytics. Compare branded vs. non-branded traffic share. If most visitors arrive already knowing your name, positioning that assumes pre-existing belief may align with your distribution. If most traffic is cold, the headline may be ahead of the audience.

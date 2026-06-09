@@ -1,6 +1,6 @@
 import type { LessonCard } from "@/lib/cro-teardown";
 
-const LessonCards = ({ lessons }: { lessons: LessonCard[] }) => (
+const LessonCards = ({ lessons, companyName }: { lessons: LessonCard[]; companyName: string }) => (
   <section id="lessons" className="scroll-mt-28">
     <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
       What SaaS teams can study
@@ -9,7 +9,7 @@ const LessonCards = ({ lessons }: { lessons: LessonCard[] }) => (
       Patterns worth borrowing
     </h2>
     <p className="mb-8 text-[15px] leading-[1.6] text-[#5b5468]">
-      These are observations and inferences — not confirmed strategy from Hootsuite.
+      These are observations and inferences — not confirmed strategy from {companyName}.
     </p>
 
     <div className="border-t border-[#11111f]/10">

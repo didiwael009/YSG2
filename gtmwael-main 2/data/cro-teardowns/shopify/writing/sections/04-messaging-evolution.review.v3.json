@@ -1,40 +1,46 @@
 {
-  "score": 78,
+  "score": 72,
   "pass": false,
   "issues": [
-    "Word count ~160 words — significantly under the target range for a messaging evolution section (target ~200–240 words)",
-    "No named buyer audience for the old headline beyond 'a merchant comparing platforms' — lacks specificity about WHO that merchant is (enterprise operator? multi-channel seller? scale-up?)",
-    "Second paragraph opens with a restatement of the contrast already established in paragraph 1 — 'assumes the reader is already selling' vs 'targets pre-revenue side-hustlers' echoes the 'comparing platforms' vs 'deciding whether they belong' frame without adding new evidence",
-    "Meta description interpretation ('AI-speed language appeals to readers who fear being late or left behind') is not labelled as interpretation — presented as fact",
-    "No conversion implication tied to the page title change — the title shift from **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** to **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'** is present in the evidence but not analysed",
-    "Closing question ('are you naming the category or naming the person') is a strong takeaway but lacks an evidence anchor — does not tie back to a specific Shopify change that demonstrates the risk or benefit of either approach"
+    "Opening sentence makes an unsupported inference about exclusion ('excludes most of their historical acquisition funnel') — no evidence provided that the new headline excludes anyone, let alone 'most' of any measurable group",
+    "Phrase 'this is ICP narrowing dressed as category repositioning' asserts strategic intent without evidence — no data shows this was deliberate narrowing vs. messaging experiment",
+    "Claim 'The cost: every founder still working a day job who lands on this page now sees a platform positioned for someone else' is causal outcome attribution without conversion data",
+    "'Your trial-start volume will reflect that shift' predicts conversion outcome — forbidden without A/B data",
+    "No named mechanism present — observations about headlines changing, but no principle identified (e.g., 'aspiration filter,' 'stage mismatch,' 'qualification mechanism')",
+    "Hedging is insufficient — multiple interpretive claims presented as fact ('functions as category proof,' 'tells a prospect chasing competitive advantage,' 'serves procurement-stage buyers')",
+    "Tradeoff is implied but not stated as content — two things in tension are suggested but never named in one sentence",
+    "Entry point makes a claim in the headline that is not supported by evidence ('excludes most of their historical acquisition funnel')"
   ],
   "requiredFixes": [
-    "Expand to target word count (~200–240 words) by analysing the page title change: **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** → **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'**. This shift removes trial urgency and adopts category-ownership language — what buyer segment does that serve, and what conversion risk does it introduce?",
-    "Label the meta description interpretation: 'The meta description shift can be read as an urgency reframe...' OR 'This may signal that Shopify is targeting...' — do not present buyer psychology as observed fact",
-    "Identify a specific buyer audience for the old headline — not just 'a merchant comparing platforms'. Who is platform-shopping? (e.g., multi-channel sellers evaluating checkout UX, enterprise operators auditing compliance, dropshippers comparing app ecosystems)",
-    "Anchor the closing takeaway to a specific Shopify evidence item — e.g., 'Shopify made this shift and lost category clarity in the page title; if you move to aspirational framing, ensure your navigation or subhead retains the category signal for qualified buyers.'"
+    "Remove or heavily hedge the opening claim about exclusion — no evidence shows WHO is excluded or that 'most' of any funnel is affected. Replace with a factual observation: 'Shopify replaced a category-proof headline with an identity-recruitment headline.'",
+    "Remove all causal outcome claims: 'The cost: every founder...' and 'Your trial-start volume will reflect...' — these predict conversion effects without data. Replace with a buyer-stage observation: 'The new headline may signal to pre-revenue founders that the platform is built for established operators.'",
+    "Name a mechanism explicitly — e.g., 'This is a qualification filter via aspiration signaling' is close but needs to be identified as a named principle, not just described. Add: 'This pattern — replacing category proof with identity recruitment — is a qualification filter.'",
+    "State the tradeoff as content in one sentence: 'The trade: reach vs. intent. A category-proof headline serves everyone evaluating commerce platforms; an aspiration headline serves only operators who see themselves as competitive.'",
+    "Add one hedge per unsupported inference: 'functions as' → 'can function as'; 'tells a prospect' → 'may signal to prospects'; 'serves procurement-stage buyers' → 'appears positioned for procurement-stage buyers.'",
+    "Rewrite the founder test to remove conversion prediction. Replace: 'Open your homepage. If your H1 attempts both category proof and identity recruitment, check your analytics: do most trial starts come from discovery content or from procurement grids? The signal your headline sends will determine which cohort self-selects.'"
   ],
   "riskFlags": [
-    "'AI-speed language appeals to readers who fear being late or left behind' — presents buyer psychology as fact without labelling as interpretation",
-    "'That can widen the trial funnel while making it harder to pre-qualify serious buyers from explorers' — implies a conversion outcome (trial funnel widening) without data support"
+    "'excludes most of their historical acquisition funnel' — no funnel data provided",
+    "'The cost: every founder still working a day job who lands on this page now sees a platform positioned for someone else' — causal claim about perception without user research",
+    "'Your trial-start volume will reflect that shift whether you intended it or not' — predicts conversion outcome without A/B data",
+    "'This is ICP narrowing dressed as category repositioning' — asserts strategic intent without evidence",
+    "'functions as category proof' — presented as fact, should be hedged ('can function as')",
+    "'tells a prospect chasing competitive advantage' — mind-reading, should be hedged ('may signal to')",
+    "'serves procurement-stage buyers' — stage attribution without buyer research, should be hedged"
   ],
   "seoNotes": [
-    "Page title analysis is missing — the shift from **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** to **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'** is a significant SEO and conversion signal change (trial urgency removed, category ownership added) but is not discussed",
-    "Meta description shortening (from ~160 characters to ~140 characters) is noted but not analysed for SEO implications — does the shorter length sacrifice keyword coverage or click appeal?"
+    "Section does quote verbatim headlines in bold quotes correctly — no SEO penalty",
+    "Meta description change is noted but not analyzed for keyword shifts (e.g., 'start a business' removed) — missed SEO angle"
   ],
-  "rewriteInstruction": "Expand the section to target word count by analysing the page title change: **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** → **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'**. This is a second messaging shift present in the evidence — it removes trial urgency and adopts category-ownership language. What buyer does that serve? What conversion risk does it introduce (e.g., does removing 'free trial' from the title reduce click-through from search, or does 'All-in-One Commerce Platform' attract more qualified enterprise searchers)? Label the meta description interpretation as 'can be read as' or 'may signal'. Identify a specific buyer audience for the old headline — not just 'a merchant comparing platforms' but WHO is platform-shopping (multi-channel seller, enterprise operator, dropshipper). Anchor the closing takeaway to a specific Shopify change: 'Shopify made this shift and lost [X] in the page title; if you adopt aspirational framing, ensure your [navigation / subhead / title tag] retains the category signal for qualified buyers.' The tradeoff and closing question are strong — preserve them.",
+  "rewriteInstruction": "The section makes unsupported causal claims and lacks a named mechanism. Start by removing the exclusion claim from the opening — no evidence shows WHO is excluded. Replace with a factual contrast: 'Shopify replaced category proof with identity recruitment.' Name the mechanism explicitly: 'This is a qualification filter — the new headline selects for operators who see themselves as competitive, not researchers evaluating infrastructure.' Hedge every inference about buyer perception: 'can function as,' 'may signal,' 'appears positioned for.' Remove all conversion predictions ('Your trial-start volume will reflect...'). State the tradeoff as content in one sentence: 'The trade: a category-proof headline serves all evaluators; an aspiration headline serves only those who self-identify as all-stars.' Rewrite the founder test to remove outcome prediction: 'Open your homepage. If your H1 combines category proof and aspiration, check your analytics: what % of trial starts come from discovery content vs. procurement grids? Your headline determines which cohort self-selects.' Word count is acceptable (~215). Fix these issues and the section will pass.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "clarity": 9,
+    "evidenceAccuracy": 12,
+    "riskControl": 2,
     "specificity": 10,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 4,
-    "analysisDepth": 8,
-    "editorialQuality": 5,
-    "founderSharpness": 12,
-    "distinctiveness": 5
+    "clarity": 8,
+    "entryPointOriginality": 8,
+    "mechanismNaming": 6,
+    "founderSharpness": 9
   },
   "effectivePassThreshold": 85
 }

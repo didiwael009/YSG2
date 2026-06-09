@@ -10,20 +10,20 @@ import { CRITIC_PASS_SCORE } from '../config/writing-config.js';
 // ─── Types ────────────────────────────────────────────────────────────────────
 
 export interface DimensionScores {
+  /** max 25 — every claim traces to evidence */
   evidenceAccuracy: number;
-  clarity: number;
-  specificity: number;
-  seoUsefulness: number;
-  croUsefulness: number;
+  /** max 10 — hedging precision; no causation */
   riskControl: number;
-  /** Phase 4M: CRO/GTM depth — buyer psychology, conversion implication, founder takeaway. */
-  analysisDepth?: number;
-  /** Phase 4N: Editorial quality — compression, non-repetition, one-idea-per-paragraph. */
-  editorialQuality?: number;
-  /** Phase 4O: Founder sharpness — direct claim + named tradeoff + actionable takeaway. */
+  /** max 15 — anchored to THIS company, not generic SaaS */
+  specificity: number;
+  /** max 15 — opening reflects what evidence makes interesting, not a default template */
+  entryPointOriginality?: number;
+  /** max 10 — names a GTM/psychology/conversion principle, not just observations */
+  mechanismNaming?: number;
+  /** max 15 — tradeoff + founder test as woven content, not labels */
   founderSharpness?: number;
-  /** Phase 4P: Distinctiveness — opening executes its assigned opening move (variety). */
-  distinctiveness?: number;
+  /** max 10 — punchy, varied rhythm, no padding */
+  clarity: number;
 }
 
 export interface CriticResult {
@@ -112,23 +112,18 @@ export function parseCriticResponse(raw: string): CriticResult {
       typeof v === 'number' ? Math.round(Math.max(0, Math.min(max, v))) : 0;
     const baseScores: DimensionScores = {
       evidenceAccuracy: toInt(ds.evidenceAccuracy, 25),
-      clarity:          toInt(ds.clarity,          15),
-      specificity:      toInt(ds.specificity,       15),
-      seoUsefulness:    toInt(ds.seoUsefulness,     10),
-      croUsefulness:    toInt(ds.croUsefulness,     10),
       riskControl:      toInt(ds.riskControl,       10),
+      specificity:      toInt(ds.specificity,        15),
+      clarity:          toInt(ds.clarity,            10),
     };
-    if (typeof ds.analysisDepth !== 'undefined') {
-      baseScores.analysisDepth = toInt(ds.analysisDepth, 15);
+    if (typeof ds.entryPointOriginality !== 'undefined') {
+      baseScores.entryPointOriginality = toInt(ds.entryPointOriginality, 15);
     }
-    if (typeof ds.editorialQuality !== 'undefined') {
-      baseScores.editorialQuality = toInt(ds.editorialQuality, 10);
+    if (typeof ds.mechanismNaming !== 'undefined') {
+      baseScores.mechanismNaming = toInt(ds.mechanismNaming, 10);
     }
     if (typeof ds.founderSharpness !== 'undefined') {
-      baseScores.founderSharpness = toInt(ds.founderSharpness, 20);
-    }
-    if (typeof ds.distinctiveness !== 'undefined') {
-      baseScores.distinctiveness = toInt(ds.distinctiveness, 5);
+      baseScores.founderSharpness = toInt(ds.founderSharpness, 15);
     }
     dimensionScores = baseScores;
   }

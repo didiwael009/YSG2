@@ -944,5 +944,698 @@
     "ok": true,
     "detail": "score 82/100 — PASS ✓ — $0.0069",
     "ts": "2026-06-09T05:50:26.811Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-09T07:19:41.764Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:19:41.766Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3016 in / 132 out — $0.0110",
+    "ts": "2026-06-09T07:19:47.603Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0283",
+    "ts": "2026-06-09T07:20:00.314Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-09T07:20:00.315Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-09T07:20:00.317Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:20:00.318Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3383 in / 319 out — $0.0433",
+    "ts": "2026-06-09T07:20:12.027Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 71/100 — FAIL — $0.0704",
+    "ts": "2026-06-09T07:20:37.242Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-09T07:20:37.245Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4778 in / 306 out — $0.0894",
+    "ts": "2026-06-09T07:20:49.758Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 76/100 — FAIL — $0.1150",
+    "ts": "2026-06-09T07:21:14.551Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-09T07:21:14.553Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "4622 in / 301 out — $0.1334",
+    "ts": "2026-06-09T07:21:25.507Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.1678",
+    "ts": "2026-06-09T07:22:02.489Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Final v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-09T07:22:02.491Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-09T07:22:02.492Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:22:02.493Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3295 in / 357 out — $0.1831",
+    "ts": "2026-06-09T07:22:14.897Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 82/100 — FAIL — $0.2094",
+    "ts": "2026-06-09T07:22:38.036Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-09T07:22:38.037Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4698 in / 301 out — $0.2281",
+    "ts": "2026-06-09T07:22:47.036Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.2562",
+    "ts": "2026-06-09T07:23:15.666Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-09T07:23:15.667Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "4740 in / 305 out — $0.2750",
+    "ts": "2026-06-09T07:23:25.013Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.3046",
+    "ts": "2026-06-09T07:23:52.718Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 72/100 — did not reach 85",
+    "ts": "2026-06-09T07:23:52.722Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-09T07:23:52.724Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:23:52.725Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3074 in / 280 out — $0.3180",
+    "ts": "2026-06-09T07:24:03.567Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.3372",
+    "ts": "2026-06-09T07:24:23.016Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-09T07:24:23.016Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-09T07:24:23.018Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:24:23.019Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3392 in / 291 out — $0.3518",
+    "ts": "2026-06-09T07:24:36.046Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.3702",
+    "ts": "2026-06-09T07:24:50.125Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-09T07:24:50.126Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "5 sections — calling API…",
+    "ts": "2026-06-09T07:24:50.135Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": false,
+    "detail": "rejected — heading changed: \"## Shopify replaced a trust signal with an aspiration signal that excludes most of their historical acquisition funnel\" → \"null\"",
+    "ts": "2026-06-09T07:25:05.266Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 05-cta-navigation-evolution",
+    "ok": false,
+    "detail": "rejected — heading changed: \"## Shopify removed every exploratory CTA\" → \"null\"",
+    "ts": "2026-06-09T07:25:05.268Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 06-lessons-for-saas-teams",
+    "ok": false,
+    "detail": "rejected — heading changed: \"## Do not copy this unless your URL already completes the category sentence\" → \"null\"",
+    "ts": "2026-06-09T07:25:05.270Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 7 rejected — $0.0276",
+    "ts": "2026-06-09T07:25:05.271Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "5 sections, 993 words",
+    "ts": "2026-06-09T07:25:05.279Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Shopify homepage CRO teardown",
+    "ts": "2026-06-09T07:25:05.280Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:25:05.283Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 68/100 — FAIL — $0.0392",
+    "ts": "2026-06-09T07:25:35.449Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:25:35.451Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 83/100 — PASS ✓ — $0.0066",
+    "ts": "2026-06-09T07:25:49.159Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:31:49.945Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:31:49.946Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:31:49.947Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:31:49.947Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:31:49.947Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "5 sections — calling API…",
+    "ts": "2026-06-09T07:31:49.948Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~100w) after edit",
+    "ts": "2026-06-09T07:32:16.865Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 05-cta-navigation-evolution",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~109w) after edit",
+    "ts": "2026-06-09T07:32:16.866Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 06-lessons-for-saas-teams",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~93w) after edit",
+    "ts": "2026-06-09T07:32:16.867Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 4 rejected — $0.0287",
+    "ts": "2026-06-09T07:32:16.869Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "5 sections, 1031 words",
+    "ts": "2026-06-09T07:32:16.874Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Shopify homepage CRO teardown",
+    "ts": "2026-06-09T07:32:16.876Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:32:16.878Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0318",
+    "ts": "2026-06-09T07:32:36.176Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:33:47.908Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:33:47.910Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:33:47.910Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:33:47.910Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:33:47.911Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "5 sections — calling API…",
+    "ts": "2026-06-09T07:33:47.913Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 03-visual-timeline",
+    "ok": false,
+    "detail": "rejected — dropped or altered bold quote: **\"Be the nextAI all-star\"**",
+    "ts": "2026-06-09T07:34:03.990Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~99w) after edit",
+    "ts": "2026-06-09T07:34:03.991Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 05-cta-navigation-evolution",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~109w) after edit",
+    "ts": "2026-06-09T07:34:03.991Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 06-lessons-for-saas-teams",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~103w) after edit",
+    "ts": "2026-06-09T07:34:03.992Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 6 rejected — $0.0293",
+    "ts": "2026-06-09T07:34:03.992Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "5 sections, 1037 words",
+    "ts": "2026-06-09T07:34:03.995Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Shopify homepage CRO teardown",
+    "ts": "2026-06-09T07:34:03.996Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:34:03.998Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0303",
+    "ts": "2026-06-09T07:34:24.699Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:36:24.739Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:36:24.740Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:36:24.740Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:36:24.741Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:36:24.741Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "5 sections — calling API…",
+    "ts": "2026-06-09T07:36:24.742Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": false,
+    "detail": "rejected — heading changed: \"## Shopify replaced a trust signal with an aspiration signal that excludes most of their historical acquisition funnel\" → \"null\"",
+    "ts": "2026-06-09T07:36:51.100Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 05-cta-navigation-evolution",
+    "ok": false,
+    "detail": "rejected — heading changed: \"## Shopify removed every exploratory CTA\" → \"null\"",
+    "ts": "2026-06-09T07:36:51.102Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 06-lessons-for-saas-teams",
+    "ok": false,
+    "detail": "rejected — heading changed: \"## Do not copy this unless your URL already completes the category sentence\" → \"null\"",
+    "ts": "2026-06-09T07:36:51.103Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 7 rejected — $0.0285",
+    "ts": "2026-06-09T07:36:51.104Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "5 sections, 1054 words",
+    "ts": "2026-06-09T07:36:51.107Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Shopify homepage CRO teardown",
+    "ts": "2026-06-09T07:36:51.108Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:36:51.110Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0523",
+    "ts": "2026-06-09T07:37:37.051Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:39:38.340Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:39:38.341Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:39:38.342Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:39:38.342Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-09T07:39:38.342Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "5 sections — calling API…",
+    "ts": "2026-06-09T07:39:38.344Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~104w) after edit",
+    "ts": "2026-06-09T07:39:54.268Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 05-cta-navigation-evolution",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~111w) after edit",
+    "ts": "2026-06-09T07:39:54.271Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 06-lessons-for-saas-teams",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~100w) after edit",
+    "ts": "2026-06-09T07:39:54.272Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 4 rejected — $0.0294",
+    "ts": "2026-06-09T07:39:54.273Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "5 sections, 1053 words",
+    "ts": "2026-06-09T07:39:54.278Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Shopify homepage CRO teardown",
+    "ts": "2026-06-09T07:39:54.279Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-09T07:39:54.282Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 91/100 — PASS ✓ — $0.0527",
+    "ts": "2026-06-09T07:40:48.215Z"
   }
 ]

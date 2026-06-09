@@ -115,7 +115,7 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                 />
 
                 {/* 6. Lessons */}
-                <LessonCards lessons={post.lessonCards} />
+                <LessonCards lessons={post.lessonCards} companyName={post.companyName} />
 
                 {/* 7. Full CRO analysis — AI-authored prose (Phase 4C/4F), styled editorially (Phase 4J) */}
                 {post.articleBody && (

@@ -1,34 +1,47 @@
 {
-  "score": 87,
-  "pass": true,
+  "score": 71,
+  "pass": false,
   "issues": [
-    "Paragraph 2 opens with 'This can be read as' — mechanical hedging that weakens the claim established in paragraph 1",
-    "The phrase 'It trades category authority for aspiration' in paragraph 2 is asserted without showing how aspiration manifests in the new headline beyond the word 'star'",
-    "Paragraph 2 is approximately 95 words — exceeds 90-word threshold and does not introduce a distinct second idea; the entire paragraph is a single interpretive move",
-    "The takeaway question 'does your visitor believe AI is the unlock, or do they need to believe in *you* first?' introduces a dichotomy not explicitly traced to the evidence — the draft does not show visitor signals or funnel position that would determine this choice",
-    "Section word count is approximately 220 words — within target range but on the high end given the density of the evidence"
+    "Opening sentence invents unsupported claim: 'You did not need to know what commerce platform meant' — no evidence provided for this visitor psychology interpretation.",
+    "Phrase 'That is not a copy refresh. It is an assumption shift' presents interpretation as confirmed fact without hedge.",
+    "Claim that old headline 'worked for anyone' is unsupported inference about audience reach.",
+    "Phrase 'AI fluency as table stakes' interprets intent without evidence — no data on visitor AI knowledge or Shopify's targeting strategy.",
+    "Statement 'the page no longer explains the category' is a finding but presented with causal certainty when only structural change is documented.",
+    "Paragraph 2 claim that old headings 'spoke to people deciding whether to start' vs new headings 'speak to people who have already started' — stages attributed without evidence of visitor stage distribution or intent data.",
+    "Named mechanism 'aspiration positioning' is solid but the interpretation it anchors ('recruits an identity') lacks hedge.",
+    "Founder test uses specific metric (15%) that appears invented — no grounding in this company's evidence.",
+    "Word count approximately 240 — exceeds 220 maximum for analytical sections."
   ],
   "requiredFixes": [
-    "Paragraph 2: Remove the opening 'This can be read as' and lead with a direct claim. Example: 'The shift moves Shopify from credibility-based positioning (we are infrastructure) to an outcome-forward claim embedding AI as the differentiator.'",
-    "Paragraph 2: Compress to under 90 words. The interpretive move ('credibility → outcome') and the assumption statement ('The new headline assumes the visitor wants to become exceptional') can be combined into a single punchy assertion.",
-    "Takeaway: Ground the dichotomy ('AI unlock vs belief in you') in the evidence. Reference the meta description shift ('fast with AI' vs 'start a business') or the H1 contrast ('platform' vs 'all-star') to show which frame serves which visitor state."
+    "Add hedge to opening: 'The 2021 headline named what the product was — infrastructure — and could be read as inviting a wider audience range.' (Remove 'worked for anyone' — no evidence.)",
+    "Hedge interpretation in sentence 3: 'The current headline may signal an assumption shift — the homepage can be read as treating AI fluency...'",
+    "Remove invented visitor psychology claim: 'You did not need to know what commerce platform meant' — no data supports this.",
+    "Hedge stage attribution in paragraph 2: 'The old headings can be read as addressing discovery-stage concerns, while the new headings appear to address...'",
+    "Replace invented 15% metric in founder test with evidence-anchored version: 'If your headline requires the visitor to already believe in the trend you are riding, open your analytics and compare branded vs. non-branded traffic split — if most visitors arrive knowing your name already, the positioning may be self-selecting for existing believers.'",
+    "Cut to 220 words maximum — trim filler phrases ('That is not a copy refresh') and consolidate redundant explanation."
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "'worked for anyone' — unsupported audience claim",
+    "'You did not need to know what commerce platform meant' — invented visitor psychology",
+    "'That is not a copy refresh. It is an assumption shift' — interpretation presented as fact",
+    "'AI fluency as table stakes' — intent attribution without evidence",
+    "'spoke to people deciding whether to start' vs 'speak to people who have already started' — stage attribution without visitor data",
+    "'15%' threshold in founder test — appears invented, not grounded in Shopify evidence"
+  ],
   "seoNotes": [
-    "Meta description comparison is quoted accurately and shows a measurable shortening (from 34 to 29 words) — useful for readers tracking character-count optimization"
+    "Section opens with concrete finding ('Shopify stopped recruiting beginners') — strong semantic anchor.",
+    "Multiple verbatim quotes properly formatted in bold — good for entity recognition.",
+    "No keyword stuffing or generic SaaS filler — stays tight to company evidence."
   ],
-  "rewriteInstruction": "Paragraph 2 needs compression and a stronger opening. Replace 'This can be read as' with a direct claim that the shift moves from credibility to outcome. Combine the interpretive move and the assumption statement into one tight assertion (target 70–75 words). In the takeaway, anchor the 'AI unlock vs belief in you' dichotomy to the evidence: reference the meta description's 'fast with AI' claim or the H1's 'all-star' framing to show which serves early-stage vs advanced visitors. The tradeoff is sharp; the takeaway should match that clarity.",
+  "rewriteInstruction": "Rewrite to eliminate unsupported visitor psychology claims and add precise hedges where interpretation occurs. Remove the opening claim about what visitors 'did not need to know' — no evidence supports this. Hedge the 'assumption shift' and 'AI fluency as table stakes' interpretations with 'can be read as' or equivalent. In paragraph 2, hedge the stage attribution ('old headings can be read as addressing discovery concerns'). Replace the invented 15% metric in the founder test with an evidence-anchored instruction: 'compare branded vs. non-branded traffic split in your analytics to see if your positioning is ahead of your distribution.' Cut 20 words to hit 220 maximum — trim 'That is not a copy refresh' and condense redundant explanation. Keep the named mechanism ('aspiration positioning') and the tradeoff (discovery-stage visitors vs. committed buyers) — both are solid. The structure is strong; the issue is overconfident interpretation and word count bloat.",
   "dimensionScores": {
-    "evidenceAccuracy": 24,
-    "clarity": 7,
-    "specificity": 15,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 10,
-    "analysisDepth": 9,
-    "editorialQuality": 0,
-    "founderSharpness": 17,
-    "distinctiveness": 5
+    "evidenceAccuracy": 13,
+    "riskControl": 3,
+    "specificity": 12,
+    "clarity": 10,
+    "entryPointOriginality": 13,
+    "mechanismNaming": 9,
+    "founderSharpness": 11
   },
   "effectivePassThreshold": 85
 }

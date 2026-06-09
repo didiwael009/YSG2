@@ -1,25 +1,29 @@
 {
-  "score": 92,
+  "score": 88,
   "pass": true,
-  "issues": [],
-  "requiredFixes": [],
+  "issues": [
+    "Word count approximately 102 words — exceeds the 55–90 word target by 12 words",
+    "The phrase 'identity recruitment' is used but not anchored clearly to a conversion principle — it functions as mechanism-naming but reads slightly invented",
+    "Final sentence is strong but slightly padded: 'be able to identify' could be tighter as 'see'"
+  ],
+  "requiredFixes": [
+    "Trim to 90 words max. Cut 'By the end,' and compress the final sentence to: 'You will see whether your homepage sells to the buyer you have, or the buyer you want.'",
+    "Anchor 'identity recruitment' more explicitly: rephrase to 'identity recruitment — inviting the buyer to step into a new role' or similar, so the mechanism label is immediately clear"
+  ],
   "riskFlags": [],
   "seoNotes": [
-    "Section correctly reproduces both headline variants with bold quotes, establishing SEO-relevant keyword context early",
-    "Mention of 'page title, meta description, navigation structure' signals comprehensive scope without diluting focus"
+    "Strong company name and date range placement in opening sentence — clean SEO signal",
+    "Headline quotes are bold and verbatim — good for featured snippet potential"
   ],
-  "rewriteInstruction": "",
+  "rewriteInstruction": "Trim 12 words to hit the 90-word ceiling. The draft is strong but over-budget. Remove 'By the end,' and tighten the last sentence to 'You will see whether your homepage sells to the buyer you have, or the buyer you want.' Clarify 'identity recruitment' by adding a brief anchor phrase ('inviting the buyer to step into a new role') so the mechanism reads as a named principle, not a neologism. The entry is excellent — contrast anchored to a real shift — but the word count violation and slight mechanism fuzziness prevent a 90+.",
   "dimensionScores": {
     "evidenceAccuracy": 25,
-    "clarity": 10,
-    "specificity": 15,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
     "riskControl": 10,
-    "analysisDepth": 9,
-    "editorialQuality": 5,
-    "founderSharpness": 18,
-    "distinctiveness": 5
+    "specificity": 15,
+    "clarity": 6,
+    "entryPointOriginality": 14,
+    "mechanismNaming": 8,
+    "founderSharpness": 10
   },
   "effectivePassThreshold": 85
 }

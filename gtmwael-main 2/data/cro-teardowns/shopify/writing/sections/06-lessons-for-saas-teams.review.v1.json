@@ -1,25 +1,33 @@
 {
-  "score": 93,
+  "score": 88,
   "pass": true,
-  "issues": [],
-  "requiredFixes": [],
-  "riskFlags": [],
-  "seoNotes": [
-    "Opening subheading ('Do not copy Shopify's homepage unless your brand can already finish the sentence') is distinctive and may attract long-tail search interest from founders evaluating homepage strategies.",
-    "The Google incognito window test in the closing takeaway is a concrete action that could drive social shares and backlinks."
+  "issues": [
+    "Word count ~220 — on the high end of 150–240, but acceptable",
+    "Opening could be punchier — 'brand-led repositioning' is mechanism-heavy in first breath",
+    "Phrase 'procurement-stage buyer' appears once without anchor in evidence",
+    "Final founder test (Search Console audit) is strong but the 40% threshold is invented"
   ],
-  "rewriteInstruction": "",
+  "requiredFixes": [
+    "Remove or hedge the '40%' threshold in the Search Console test — no evidence supports that specific number. Replace with: 'If most of your homepage traffic comes from non-branded queries, removing category explanation...'",
+    "Consider opening with the paradox instead of the mechanism name: 'Shopify removed category explanation from its headline. That move only works if...' Then name 'brand-led repositioning' in sentence two."
+  ],
+  "riskFlags": [
+    "'procurement-stage buyer' — this term appears without evidence anchor; hedge or remove",
+    "The 40% threshold is unsupported — this is a invented metric, not grounded in Shopify's evidence"
+  ],
+  "seoNotes": [
+    "Meta-pattern naming ('brand-led repositioning') is strong for internal linking and topic authority",
+    "The phrase 'category ownership' could be bolded if it becomes a recurring term across teardowns"
+  ],
+  "rewriteInstruction": "Remove the invented 40% threshold from the Search Console test — replace with a directional instruction ('If most of your traffic...') that does not imply a specific cutoff. Tighten the opening: lead with the paradox (headline removed category explanation) before naming the mechanism (brand-led repositioning). The section is substantively strong but needs two precision fixes to pass 90.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "clarity": 10,
-    "specificity": 15,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 10,
-    "analysisDepth": 10,
-    "editorialQuality": 5,
-    "founderSharpness": 20,
-    "distinctiveness": 5
+    "evidenceAccuracy": 22,
+    "riskControl": 8,
+    "specificity": 14,
+    "clarity": 8,
+    "entryPointOriginality": 13,
+    "mechanismNaming": 10,
+    "founderSharpness": 13
   },
   "effectivePassThreshold": 85
 }

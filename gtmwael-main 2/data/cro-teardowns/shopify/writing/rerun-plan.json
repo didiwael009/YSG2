@@ -1,55 +1,42 @@
 {
-  "createdAt": "2026-06-09T05:50:26.816Z",
+  "createdAt": "2026-06-09T07:40:48.221Z",
   "slug": "shopify",
   "source": {
-    "finalJudgePass": false,
+    "finalJudgePass": true,
     "seoPass": true,
-    "finalJudgeScore": 78,
-    "seoScore": 82
+    "finalJudgeScore": 91,
+    "seoScore": 83
   },
   "sectionsToRerun": [
     {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Metric claim: 'Open your Google Search Console. If more than 40% of your homepage traffic comes from non-branded queries' — this threshold (40%) is not sourced or explained. Either cite research or re"
+      ],
+      "priority": "low",
+      "source": "seo-audit"
+    },
+    {
       "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "Judge rerun recommendation: Section 04 — messaging evolution: Rewrite to include a bold tradeoff statement and a founder-specific 'So what?' that names a decision trigger (e.g., ",
-        "Judge rerun recommendation: Section 05 — CTA evolution: Rewrite to replace generic advice with Shopify-specific CTA behavior analysis and a named tradeoff",
-        "Identified as weak section by final judge",
-        "Section 04: The 'So what?' is too generic ('ask whether your best customers are starters') — anchor it to a specific decision: when to drop beginner language based on visitor composition or trial coho",
-        "Section 05: Replace the generic 'count your mid-funnel asks' with a Shopify-specific observation — e.g., 'If your CTA set includes both feature-specific and exploratory CTAs, measure trial starts per ",
-        "Section 06: This section reads as a summary lecture rather than a distinct analytical contribution. Either convert it to a pure Lessons section (action-oriented, no repetition of prior analysis) or cu"
+        "In the CTA section: '**Start for free,** **Get a stunning store,** **Compare Shopify.**' — these need context. Are these the *only* CTAs on the 2026 homepage? Clarify whether there are still explorato"
       ],
-      "priority": "high",
-      "source": "final-judge"
+      "priority": "low",
+      "source": "seo-audit"
     },
     {
       "sectionId": "06-lessons-for-saas-teams",
       "reasons": [
-        "Judge rerun recommendation: Section 06 — lessons: Either convert this to a pure action-list section (no repetition of prior analysis) or reframe it as the 'earned recognition pre"
+        "Clarify the phrase 'every founder still working a day job who lands on this page now sees a platform positioned for someone else'—this is opinionated and assumes visitor intent; soften to 'may perceiv"
       ],
-      "priority": "high",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "01-intro",
-      "reasons": [
-        "Article structure: The 'earned category recognition' insight in Section 06 should anchor the entire analysis. Consider moving it to Section 03 or the intro, then using it as a lens for interpreting al"
-      ],
-      "priority": "medium",
-      "source": "final-judge"
+      "priority": "low",
+      "source": "seo-audit"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "All analytical sections: Elevate the tradeoff statements to their own line or bold formatting — they are currently embedded in prose and not scannable",
+      "issue": "Fix typo in H2: 'Be the nextAI all-star' should have a space ('Be the next AI all-star')",
       "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Section 03-visual-timeline (medium priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
-    },
-    {
-      "issue": "Section 04-messaging-evolution (medium priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]
 }

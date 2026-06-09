@@ -266,33 +266,26 @@ function parseJudgeResponse(
     }
   }
 
-  const overallScore     = toInt(obj.overallScore, 100);
-  const evidenceAccuracy = toInt(obj.evidenceAccuracy, 15);
-  const riskControl      = toInt(obj.riskControl, 10);
+  const overallScore      = toInt(obj.overallScore, 100);
+  const evidenceAccuracy  = toInt(obj.evidenceAccuracy, 20);
+  const riskControl       = toInt(obj.riskControl, 15);
   const unsupportedClaims = asStringArray(obj.unsupportedClaims);
-  const analysisDepth    = typeof obj.analysisDepth !== 'undefined' ? toInt(obj.analysisDepth, 15) : undefined;
-  const founderUsefulness = typeof obj.founderUsefulness !== 'undefined' ? toInt(obj.founderUsefulness, 10) : undefined;
-  const concision        = typeof obj.concision !== 'undefined' ? toInt(obj.concision, 10) : undefined;
-  const editorialSharpness = typeof obj.editorialSharpness !== 'undefined' ? toInt(obj.editorialSharpness, 10) : undefined;
-  const articleWordCount = typeof obj.articleWordCount === 'number' ? Math.round(obj.articleWordCount) : undefined;
 
+  // v3 pass: score threshold + evidence accuracy + risk control + no unsupported claims
   const pass =
     overallScore >= JUDGE_PASS_SCORE &&
-    evidenceAccuracy >= 12 &&
-    riskControl >= 8 &&
-    unsupportedClaims.length === 0 &&
-    (analysisDepth === undefined || analysisDepth >= 10) &&
-    (founderUsefulness === undefined || founderUsefulness >= 7) &&
-    (concision === undefined || concision >= 7);
+    evidenceAccuracy >= 15 &&
+    riskControl >= 11 &&
+    unsupportedClaims.length === 0;
 
   const result: FinalJudgeResult = {
     overallScore,
     pass,
     evidenceAccuracy,
     riskControl,
-    croUsefulness:    toInt(obj.croUsefulness,    15),
-    clarity:          toInt(obj.clarity,          20),
-    sectionCoherence: toInt(obj.sectionCoherence, 10),
+    croUsefulness:    toInt(obj.mechanismQuality ?? obj.croUsefulness,  15),
+    clarity:          toInt(obj.clarity,          15),
+    sectionCoherence: toInt(obj.sectionCoherence, 15),
     weakSections:        asStringArray(obj.weakSections),
     unsupportedClaims,
     riskFlags:           asStringArray(obj.riskFlags),
@@ -304,20 +297,11 @@ function parseJudgeResponse(
     generatedAt: new Date().toISOString(),
   };
 
-  if (analysisDepth !== undefined)     result.analysisDepth     = analysisDepth;
-  if (founderUsefulness !== undefined) result.founderUsefulness  = founderUsefulness;
-  if (concision !== undefined)         result.concision          = concision;
-  if (editorialSharpness !== undefined) result.editorialSharpness = editorialSharpness;
-  if (articleWordCount !== undefined)  result.articleWordCount   = articleWordCount;
-
-  const genericWarnings = asStringArray(obj.genericInsightWarnings);
-  const takeawayWarnings = asStringArray(obj.missingFounderTakeawayWarnings);
-  const repetitionWarn  = asStringArray(obj.repetitionWarnings);
-  const overlapWarn     = asStringArray(obj.sectionOverlapWarnings);
-  if (genericWarnings.length > 0)   result.genericInsightWarnings          = genericWarnings;
-  if (takeawayWarnings.length > 0)  result.missingFounderTakeawayWarnings  = takeawayWarnings;
-  if (repetitionWarn.length > 0)    result.repetitionWarnings              = repetitionWarn;
-  if (overlapWarn.length > 0)       result.sectionOverlapWarnings          = overlapWarn;
+  // v3 optional fields
+  const founderSharpness = typeof obj.founderSharpness !== 'undefined' ? toInt(obj.founderSharpness, 20) : undefined;
+  if (founderSharpness !== undefined) result.founderUsefulness = founderSharpness; // map to existing field
+  const repetitionWarn = asStringArray(obj.repetitionWarnings);
+  if (repetitionWarn.length > 0) result.repetitionWarnings = repetitionWarn;
 
   return result;
 }
@@ -327,78 +311,83 @@ function parseJudgeResponse(
 const JUDGE_SYSTEM =
 `You are a senior editorial judge for CRO teardown articles about SaaS homepages.
 Output ONLY valid JSON. No text before or after the JSON object.
+JSON SAFETY: Use SINGLE quotes inside JSON string values. Never put a raw double-quote inside a JSON string.
 
-Your role: Evaluate the FULL ARTICLE for evidence accuracy, risk control, CRO depth, GTM depth, SaaS founder usefulness, clarity, and section coherence.
+Your role: Evaluate the FULL ARTICLE for evidence accuracy, risk control, mechanism quality, founder sharpness, clarity, and section coherence.
 
 SCORING RUBRIC — score each dimension, then give a holistic overallScore (0–100):
-• evidenceAccuracy  (0–15): Does every factual claim in the article trace to the provided evidence?
-  PENALISE -3 per claim that introduces a fact not in the evidence.
-  PENALISE -5 per conversion metric, A/B test result, or revenue claim without data.
-• riskControl       (0–10): Are interpretations consistently labelled? No causation claims? No conversion-lift claims?
-  PENALISE -3 per unlabelled interpretation presented as fact.
-  PENALISE -5 per claim that a change "improved", "increased", "drove" any outcome.
-• croUsefulness     (0–15): Does the article give SaaS practitioners something they can study?
-  PENALISE -4 per section that is generic and not anchored to this company's specific evidence.
-• clarity           (0–20): Is the writing clear, purposeful, and free of padding?
+
+• evidenceAccuracy (0–20)
+  Every factual claim traces to the provided evidence. No invented stats, percentages, thresholds, or dates.
+  PENALISE -4 per claim that introduces a fact not in the evidence.
+  PENALISE -8 per conversion metric, A/B test result, revenue claim, or invented threshold.
+  HARD CAP: Any unsupported factual claim → cap total at 70.
+
+• riskControl (0–15)
+  Interpretations are hedged precisely — once per inference, not once per sentence.
+  No causation claims. No conversion-outcome predictions. No intent attribution.
+  PENALISE -3 per unlabelled interpretation presented as confirmed fact.
+  PENALISE -5 per claim that a change "improved," "drove," or "caused" any outcome.
+  PENALISE -3 per prediction about conversion volume, trial starts, or revenue.
+  PENALISE -3 per sentence that asserts company strategy or intent without evidence.
+  HARD CAP: Any conversion outcome claim → cap total at 65.
+
+• mechanismQuality (0–15)
+  Each analytical section (03, 04, 05, 06) names a GTM, buyer-psychology, or conversion principle.
+  Real terminology: "qualification filter," "category claim," "intent signal," "buyer stage mismatch,"
+  "identity recruitment," "aspiration signaling," "procurement-stage targeting."
+  PENALISE -5 per analytical section with no named mechanism — only observations.
+  PENALISE -3 per vague mechanism ("a shift in targeting" instead of a named principle).
+
+• founderSharpness (0–20)
+  Each analytical section (03, 04, 05, 06) must contain ALL THREE as CONTENT (not as labeled tags):
+  (a) A TRADEOFF — two things in tension, one sentence. Not labeled "The tradeoff:". Just stated.
+  (b) A FOUNDER TEST — the last sentence. A specific condition or audit they can run RIGHT NOW on
+      their own homepage. Not generic. Anchored to what this evidence showed.
+  (c) No prediction of conversion outcomes — the test is an observation prompt, not a forecast.
+  PENALISE -5 per analytical section missing a tradeoff.
+  PENALISE -5 per analytical section with no founder test as last sentence.
+  PENALISE -4 per founder test that is generic ("test your CTAs") with no evidence anchor.
+
+• clarity (0–15)
+  Writing is punchy, varied rhythm, no padding. Short sentence. Then a longer explanatory one.
+  PENALISE -2 per filler sentence with no evidence anchor.
+  PENALISE -3 if multiple sections open with identical rhythm (all bold declarative, no variety).
+
+• sectionCoherence (0–15)
+  Sections form a building argument — not 5 isolated islands.
+  Each section owns one job and does not repeat another section's core conclusion.
+  PENALISE -4 per conclusion that appears in 3+ sections with the same thrust
+    (e.g., "brand-led repositioning" framing repeated in 03, 04, AND 06).
+  PENALISE -3 if the Lessons section restates analysis without converting it to action.
   PENALISE -2 per paragraph that a reader could skip without losing information.
-  PENALISE -3 per filler phrase not tied to evidence.
-• sectionCoherence  (0–10): Do the sections form a coherent, readable article (not just 6 isolated blocks)?
-  PENALISE -3 if sections repeat the same observations without building on them.
-  PENALISE -2 if the opening does not set up what follows.
-• analysisDepth     (0–15): Does the article go beyond surface description? Does it explain conversion
-  implications, buyer psychology, proof burdens, and CTA/funnel signals — not just what changed?
-  PENALISE -4 per analytical section that only describes visible changes without explaining their
-  conversion or buyer-psychology implications.
-  PENALISE -3 per section that could apply to any generic SaaS homepage without company-specific anchoring.
-  HARD CAP: If the majority of analytical sections are descriptive-only, cap overallScore at 85.
-• founderUsefulness (0–10): Does a SaaS founder reading this article walk away with at least 3 specific,
-  practical observations they can apply to their own page?
-  PENALISE -3 if lessons are generic ("test your CTAs", "know your audience") without company-specific anchoring.
-  PENALISE -3 if no section explains when NOT to copy the analysed company's approach.
-• concision         (0–10): Is the article free of repeated conclusions, padding, and over-long paragraphs?
-  Count the number of times the same analytical conclusion appears (self-serve→enterprise shift,
-  proof burden, CTA friction direction, casual→formal framing). Each should appear at most once.
-  PENALISE -3 per conclusion that appears in 2 or more sections with the same thrust.
-  PENALISE -2 per paragraph that exceeds 90 words without introducing a new idea.
-  PENALISE -2 per closing paragraph that summarises what its section just said.
-  HARD CAP: If the same conclusion appears in 3 or more sections, concision is capped at 4 and overallScore is capped at 85.
-• editorialSharpness (0–10): Do sections respect their stated roles and not bleed into each other?
-  PENALISE -3 if the Lessons section restates analysis from Messaging or Visual Timeline without converting it to action.
-  PENALISE -2 if two analytical sections describe the same observable change (e.g., both messaging and visual timeline discuss the headline shift without differentiation).
-  PENALISE -3 if the article word count exceeds 1,900 words.
+  HARD CAP: Same analytical conclusion in 3+ sections → cap overallScore at 82.
 
-DEPTH HARD RULE:
-If analysisDepth < 10 OR founderUsefulness < 7, overallScore is capped at 88 and pass is false.
-A descriptive article cannot pass the judge even if it is accurate and well-written.
-
-CONCISION HARD RULE:
-If the article body exceeds 1,900 words, overallScore is capped at 87 and pass is false.
-If the same analytical conclusion (self-serve→enterprise, proof burden, CTA friction) appears in 3 or more sections, overallScore is capped at 85 and pass is false.
-
-FOUNDER-SHARPNESS HARD RULES (new — check these before scoring):
-Each analytical section (03, 04, 05, 06) must contain ALL THREE:
-  (a) A direct opening claim — not a hedge, not "it appears that" as sentence 1.
-  (b) A named marketing tradeoff — explicitly "[X] in exchange for [Y]" or "The tradeoff: [X] vs [Y]."
-  (c) A "So what?" — founder-facing takeaway, either labelled "**So what?**" or clearly the last sentence.
-  HARD CAP: If ANY analytical section is missing a named tradeoff → cap overallScore at 82 and pass: false.
-  HARD CAP: If ANY analytical section is missing a "So what?" → cap overallScore at 82 and pass: false.
-  HARD CAP: If ANY analytical section reads like a lecture (analytical explanation throughout, no claims, no tension) → cap overallScore at 80 and pass: false.
+MECHANISM NAMES ARE NOT UNSUPPORTED CLAIMS:
+Named interpretive frameworks applied to the evidence are ALLOWED and REQUIRED by the writing system:
+  "qualification filter," "category claim," "ICP narrowing," "aspiration positioning,"
+  "procurement-stage framing," "identity recruitment," "buyer stage mismatch."
+These are labeled interpretations — they are hedges, not facts. Do NOT list them as unsupportedClaims.
+An unsupportedClaim is a SPECIFIC FACT (a number, a date, a metric, a named event) that is NOT in the evidence.
 
 HARD RULES:
-• Do NOT claim access to internal strategy, A/B test data, or conversion rates.
-• Do NOT invent keyword difficulty or search volume figures.
-• If a claim is in the article but NOT in the EVIDENCE, it is an unsupportedClaim.
+• Any invented metric (percentage threshold, conversion rate, search volume figure) → unsupportedClaim.
+• Any sentence predicting a specific conversion outcome ("trial starts will...", "this will improve...") → riskFlag.
+• Any sentence asserting specific company intent ("Shopify decided to...", "their strategy was...") → riskFlag.
+• Conditional observations ("this pattern only works if X") are ALLOWED — they are not predictions.
+• Observations about page architecture ("the page cannot serve X visitor") are ALLOWED — they describe structure.
 • If requiredFixes is non-empty, rerunRecommendations must name which section(s) to rerun.
-• overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty
-  AND analysisDepth >= 10 AND founderUsefulness >= 7 AND concision >= 7 → pass: true.
-• Any other combination → pass: false.
+
+PASS CRITERIA:
+overallScore >= 85 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty → pass: true.
+Any other combination → pass: false.
 
 CALIBRATION:
-• 90–100: Publication-ready. Every claim sourced. Interpretations labelled. Real CRO depth.
-  Buyer psychology present. Named tradeoffs in every section. "So what?" present in every section. Cohesive read.
-• 80–89:  Passes with notes. Minor tradeoff or So what gaps.
-• 70–79:  Needs fixes. Analysis shallow, generic, or missing tradeoffs/So what in multiple sections.
-• Below 70: Significant problems. Multiple sections read like lectures or are purely descriptive.`;
+• 90–100: Publication-ready. Every claim sourced. Named mechanism in every section. Tradeoff and
+          founder test woven into every analytical section. No repeated conclusions. Varied rhythm.
+• 80–89:  Passes with notes. 1–2 fixable issues.
+• 70–79:  Needs fixes. Missing mechanisms, repeated conclusions, or unsupported claims.
+• Below 70: Hard cap fired. Unsupported claims or conversion-outcome predictions present.`;
 
 // ─── Main exported function ───────────────────────────────────────────────────
 
@@ -436,53 +425,44 @@ FULL ARTICLE:
 ${articleText}
 ---
 
-Score each rubric dimension. Then give a holistic overallScore (0–100).
-Apply pass logic: overallScore >= 90 AND evidenceAccuracy >= 12 AND riskControl >= 8 AND unsupportedClaims empty AND analysisDepth >= 10 AND founderUsefulness >= 7 AND concision >= 7.
+Score each rubric dimension. Apply pass logic: overallScore >= 85 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty.
 
-FOUNDER-SHARPNESS CHECK — answer first (these are the new hard gates):
-1. Does each analytical section (03, 04, 05, 06) open with a direct claim — not a hedge?
-2. Does each analytical section contain a named marketing tradeoff ("[X] vs [Y]" or "in exchange for")?
-3. Does each analytical section end with a clear "So what?" for the founder?
-4. Does any section read like a lecture — explaining without claiming, no tension, no tradeoff?
-Name which sections fail each check.
+EVIDENCE CHECK — answer before scoring:
+1. Is any specific metric, percentage threshold, or conversion rate cited that is NOT in the evidence above? List the exact phrase.
+2. Does any sentence predict a conversion outcome ("trial-start volume will...", "this will cost you pipeline") without data? List the exact phrase.
+3. Does any sentence assert company intent or internal strategy ("Shopify decided to...", "their strategy was...")? List the exact phrase.
 
-DEPTH CHECK — answer before scoring:
-5. Do the analytical sections go beyond describing visible changes to explain conversion implications and buyer psychology?
-6. Is a buyer audience identified for each major messaging change?
-7. Are there at least 3 practical founder takeaways specific enough to act on?
-8. Does any section address when NOT to copy the analysed company's approach?
+MECHANISM CHECK — answer before scoring:
+4. Does each analytical section (03, 04, 05, 06) name a GTM, buyer-psychology, or conversion principle with real terminology?
+5. Which sections have only observations with no named mechanism?
 
-CONCISION CHECK — answer before scoring:
-9. Count how many sections mention the self-serve→enterprise shift. (Target: 1)
-10. Count how many sections mention proof burden. (Target: 1)
-11. Count how many sections mention CTA friction direction. (Target: 1)
-12. Are there any paragraphs that exceed 90 words without introducing a new idea?
-13. What is the approximate word count of the article body (excluding frontmatter)? (Target: 900–1,200)
+FOUNDER-SHARPNESS CHECK — answer before scoring:
+6. Does each analytical section (03, 04, 05, 06) contain a tradeoff woven into the prose (two things in tension, one sentence — NOT labeled)?
+7. Is the last sentence of each analytical section a specific, actionable founder test anchored to this evidence?
+8. Which sections fail either check?
+
+COHERENCE CHECK — answer before scoring:
+9. Count how many sections contain the "brand-led repositioning / category ownership" conclusion. (Target: 1, in 03 or 06)
+10. Count how many sections mention CTA friction direction. (Target: 1, in 05)
+11. Are there any paragraphs that exceed 90 words without introducing a new idea?
 
 Required JSON shape:
 {
   "overallScore": <0–100>,
-  "pass": <boolean>,
-  "evidenceAccuracy": <0–15>,
-  "riskControl": <0–10>,
-  "croUsefulness": <0–15>,
-  "clarity": <0–20>,
-  "sectionCoherence": <0–10>,
-  "analysisDepth": <0–15>,
-  "founderUsefulness": <0–10>,
-  "concision": <0–10>,
-  "editorialSharpness": <0–10>,
-  "articleWordCount": <integer word count of article body, excluding frontmatter>,
-  "weakSections": ["<section ID or title>"],
-  "unsupportedClaims": ["<quote the exact phrase from the article that is not in the evidence>"],
-  "riskFlags": ["<interpretation presented as fact, or causation claim>"],
+  "pass": <boolean — overallScore >= 85 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty>,
+  "evidenceAccuracy": <0–20>,
+  "riskControl": <0–15>,
+  "mechanismQuality": <0–15>,
+  "founderSharpness": <0–20>,
+  "clarity": <0–15>,
+  "sectionCoherence": <0–15>,
+  "weakSections": ["<section ID>"],
+  "unsupportedClaims": ["<exact phrase from article that is not in the evidence>"],
+  "riskFlags": ["<interpretation presented as fact, causation claim, or conversion prediction>"],
   "requiredFixes": ["<specific, actionable fix>"],
-  "optionalImprovements": ["<nice-to-have improvement>"],
-  "rerunRecommendations": ["<section ID to rerun — only if requiredFixes is non-empty>"],
-  "genericInsightWarnings": ["<section that feels generic — could apply to any SaaS homepage>"],
-  "missingFounderTakeawayWarnings": ["<section that lacks a practical SaaS founder takeaway>"],
-  "repetitionWarnings": ["<analytical conclusion that appears in multiple sections (self-serve→enterprise, proof burden, CTA friction)>"],
-  "sectionOverlapWarnings": ["<section that restates another section's analysis without converting it to action>"]
+  "optionalImprovements": ["<nice-to-have>"],
+  "rerunRecommendations": ["<section ID to rerun — only if requiredFixes non-empty>"],
+  "repetitionWarnings": ["<analytical conclusion that appears in 3+ sections>"]
 }`;
 
   const costBefore = tracker.totalCostUsd;
