@@ -47,15 +47,22 @@ function nonEmpty(s: string | null | undefined): s is string {
 }
 
 function setDiff(a: string[], b: string[]): { added: string[]; removed: string[] } {
-  const sa = new Set(a);
-  const sb = new Set(b);
-  return { added: b.filter(x => !sa.has(x)), removed: a.filter(x => !sb.has(x)) };
+  // Case-insensitive comparison: "Contact Sales" and "contact sales" are the same
+  // logical label. We compare on lowercased keys but keep the original casing from
+  // each array in the output so article prose can quote the text accurately.
+  const saKeys = new Map(a.map(x => [x.trim().toLowerCase(), x]));
+  const sbKeys = new Map(b.map(x => [x.trim().toLowerCase(), x]));
+  return {
+    added:   [...sbKeys.entries()].filter(([k]) => !saKeys.has(k)).map(([, v]) => v),
+    removed: [...saKeys.entries()].filter(([k]) => !sbKeys.has(k)).map(([, v]) => v),
+  };
 }
 
 // ─── CTA / nav noise filters ──────────────────────────────────────────────────
 
-/** Language selectors, legal boilerplate, app-store badges, raw URLs */
-const NOISE_RE = /english|french|german|spanish|portuguese|italian|legal|privacy|accessibility|cookie|©|app store|google play|https?:/i;
+/** Language selectors, legal boilerplate, app-store badges, raw URLs, footer nav */
+const NOISE_RE =
+  /english|french|german|spanish|portuguese|italian|legal|privacy|accessibility|cookie|©|app store|google play|https?:|sitemap|back to top|scroll to top|select region|select language|change.*country|change.*region/i;
 
 /** Accessibility skip-navigation links: "Skip to content", "Skip to main", etc. */
 const SKIP_LINK_RE = /^skip\s+to\b/i;

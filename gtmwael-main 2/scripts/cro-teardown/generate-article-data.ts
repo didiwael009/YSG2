@@ -332,8 +332,20 @@ async function main(): Promise<void> {
       // Writing it here would cause the LLM generator to be silently skipped.
       saveJson(path.join(sectionEvidenceDir, 'h2-changes.json'), { added: ev.h2Added, removed: ev.h2Removed });
       saveJson(path.join(sectionEvidenceDir, 'cta-changes.json'), { added: ev.ctaAdded, removed: ev.ctaRemoved });
-      outputPaths['section-evidence/'] = `data/cro-teardowns/${cli.slug}/writing/section-evidence/ (5 files)`;
-      log('Save section-evidence/', true, '5 files');
+
+      // Layer 1 — normalized-page-text.json
+      // Saves the { from, to } normalized views produced by normalizePageTextPair().
+      // Each view has { raw, normalized: { strategicNav, primaryCtas, utilityLinks, sectionHeadings } }.
+      // Downstream steps (strategic-shift-detector, seo-intent-planner) and section
+      // evidence builder load this to get clean strategic signals without noise.
+      saveJson(path.join(sectionEvidenceDir, 'normalized-page-text.json'), {
+        from: pack.normalizedFrom,
+        to:   pack.normalizedTo,
+        generatedAt: new Date().toISOString(),
+      });
+
+      outputPaths['section-evidence/'] = `data/cro-teardowns/${cli.slug}/writing/section-evidence/ (6 files)`;
+      log('Save section-evidence/', true, '6 files (incl. normalized-page-text.json)');
 
       // generated-article-data.json — the full CroTeardownPost as JSON
       saveJson(path.join(writingDir, 'generated-article-data.json'), blueprint.post);

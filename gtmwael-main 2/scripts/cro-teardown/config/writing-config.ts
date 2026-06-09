@@ -52,12 +52,21 @@ export const SEO_PASS_SCORE = 80;
 export const SECTION_EVIDENCE_SOURCES: Record<string, string[]> = {
   // ── Phase 4C canonical IDs (compose-all-sections) ──────────────────────────
   // 6-section architecture (V5): adds 02-quick-answer between intro and belief shift
-  '01-intro':                    ['summary-cards', 'messaging'],
-  '02-quick-answer':             ['summary-cards', 'messaging'],       // featured-snippet block — needs full overview
-  '03-visual-timeline':          ['analysis-blocks', 'messaging'],    // belief shift: visual + message evidence combined
-  '04-messaging-evolution':      ['messaging', 'summary-cards'],       // buyer shift: message framing + proof style
+  //
+  // Layer 3 (strategic-shift) is injected into sections that require a thesis
+  // anchor: intro, quick answer, messaging evolution, and lessons.
+  // Visual timeline and CTA/nav sections work from factual diff data — thesis
+  // is less critical there and adds token cost without clear benefit.
+  // seo-intent is injected into intro and quick-answer: these sections carry the
+  // primary keyword in H1, meta-description hook, and opening sentence frame.
+  // Messaging-evolution also benefits from knowing the intent angle (commercial vs
+  // informational shifts how copy is framed). Other sections are factual/visual.
+  '01-intro':                    ['summary-cards', 'messaging', 'strategic-shift', 'seo-intent'],
+  '02-quick-answer':             ['summary-cards', 'messaging', 'strategic-shift', 'seo-intent'],
+  '03-visual-timeline':          ['analysis-blocks', 'messaging'],
+  '04-messaging-evolution':      ['messaging', 'summary-cards', 'strategic-shift', 'seo-intent'],
   '05-cta-navigation-evolution': ['cta-changes', 'h2-changes'],
-  '06-lessons-for-saas-teams':   ['lesson-cards', 'summary-cards'],
+  '06-lessons-for-saas-teams':   ['lesson-cards', 'summary-cards', 'strategic-shift'],
   // ── Phase 4B legacy IDs (compose-section — backward compat) ────────────────
   '02-timeline': ['summary-cards'],
   '03-analysis': ['analysis-blocks'],

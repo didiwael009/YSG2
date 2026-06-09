@@ -28,6 +28,7 @@ import { fileURLToPath } from 'node:url';
 
 import type { FinalJudgeResult } from './final-judge.js';
 import type { SeoAuditResult }   from './seo-auditor.js';
+import { validateConsistency }   from './consistency-validator.js';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -48,6 +49,11 @@ interface PublishReport {
     seoPass:           boolean;
     seoScore:          number;
     unsupportedClaims: string[];
+  };
+  consistencyCheck: {
+    valid:    boolean;
+    errors:   string[];
+    warnings: string[];
   };
   blockedReasons:    string[];
   articlePath:       string;
@@ -381,6 +387,29 @@ async function main(): Promise<void> {
       ? INTERNAL_LINK_SUGGESTIONS
       : [];
 
+  // ── Layer 2: Data consistency validation ─────────────────────────────────────
+  // Checks that count claims in article-final.md match diff JSON ground truth.
+  // Hard errors block publication unless --force. Warnings are always logged.
+  const consistencyResult = validateConsistency({ writingDir, slug });
+
+  if (consistencyResult.warnings.length > 0) {
+    console.warn('\n⚠️   Consistency warnings:');
+    for (const w of consistencyResult.warnings) console.warn(`    • ${w}`);
+  }
+
+  if (!consistencyResult.valid) {
+    console.error('\n❌  Consistency validation failed:');
+    for (const e of consistencyResult.errors) console.error(`    • ${e}`);
+    if (!force) {
+      console.error('\n    Run with --force to publish anyway.');
+      process.exit(1);
+    } else {
+      console.warn('⚠️   --force: publishing despite consistency errors above.');
+    }
+  } else {
+    console.log(`✅  Consistency validation passed`);
+  }
+
   // ── Generate TypeScript content ─────────────────────────────────────────────
   const publishedAt = new Date().toISOString();
 
@@ -428,6 +457,11 @@ async function main(): Promise<void> {
       seoPass:           seoAudit?.pass         ?? false,
       seoScore:          seoAudit?.seoScore     ?? 0,
       unsupportedClaims: judge?.unsupportedClaims ?? [],
+    },
+    consistencyCheck: {
+      valid:    consistencyResult.valid,
+      errors:   consistencyResult.errors,
+      warnings: consistencyResult.warnings,
     },
     blockedReasons:              reasons,
     articlePath:                 path.relative(projectRoot, articleOutputPath),

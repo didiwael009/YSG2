@@ -10,6 +10,7 @@
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { computeDiff, loadPageText, type DiffResult, type PageText } from './diff.js';
+import { normalizePageTextPair, type NormalizedResult } from './normalize-page-text.js';
 import { formatMonthLabel, formatPeriodLabel } from './config/writing-config.js';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -51,6 +52,13 @@ export interface EvidencePack {
   originalUrl: string;
   generatedAt: string;
   warnings: string[];
+  /**
+   * Layer 1 normalized views of the from/to page text.
+   * Separates strategic signals from utility/noise for use by the article writer
+   * and downstream LLM steps (strategic-shift-detector, seo-intent-planner).
+   */
+  normalizedFrom: NormalizedResult;
+  normalizedTo: NormalizedResult;
 }
 
 // ─── Loader ───────────────────────────────────────────────────────────────────
@@ -198,6 +206,12 @@ export async function buildEvidencePack(opts: {
   const fromLabel = formatPeriodLabel(fromEntry.month, generatedAt);
   const toLabel = formatPeriodLabel(toEntry.month, generatedAt);
 
+  // ── 9. Layer 1 — Normalize from/to page text ──────────────────────────────
+  // Runs after the diff so it does not affect diff counts.
+  // Produces { raw, normalized: { strategicNav, primaryCtas, utilityLinks, sectionHeadings } }
+  // for use by downstream LLM steps (strategic-shift-detector, seo-intent-planner).
+  const { from: normalizedFrom, to: normalizedTo } = normalizePageTextPair(fromText, toText);
+
   return {
     slug,
     companyName,
@@ -215,5 +229,7 @@ export async function buildEvidencePack(opts: {
     originalUrl,
     generatedAt,
     warnings,
+    normalizedFrom,
+    normalizedTo,
   };
 }

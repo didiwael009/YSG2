@@ -50,7 +50,9 @@ import {
   writeSectionLoop,
   type WriteSectionResult,
 } from './section-writer.js';
-import { generateLessonCards } from './generate-lesson-cards.js';
+import { generateLessonCards }          from './generate-lesson-cards.js';
+import { runStrategicShiftDetector }    from './strategic-shift-detector.js';
+import { runSeoIntentPlanner }          from './seo-intent-planner.js';
 import { runCrossSectionPass } from './cross-section-pass.js';
 import { assembleArticle } from './article-assembler.js';
 import { generateSeo } from './seo-generator.js';
@@ -294,6 +296,76 @@ async function main(): Promise<void> {
   if (cli.skipCrossSection)  console.log(`  Cross-sect : skipped (--skip-cross-section)`);
   if (cli.rerunFailed)    console.log(`  Rerun mode : enabled (max ${cli.maxRerunSections} sections)`);
   console.log(div + '\n');
+
+  // ── Layer 3: Strategic shift detector ────────────────────────────────────────
+  // Runs before the section writer loop so all six sections share a common thesis.
+  // Output: section-evidence/strategic-shift.json
+  // Skipped in draft mode, single-section runs, and when file already exists (unless --force).
+  if (cli.mode !== 'draft' && !cli.onlySection) {
+    console.log(`\n${div}`);
+    console.log(`  Layer 3 — Strategic shift detector`);
+    try {
+      const shiftLog = (step: string, ok: boolean, detail?: string): void => {
+        console.log(`  ${ok ? '✓' : '⚠'} ${step}${detail ? ` — ${detail}` : ''}`);
+        appendRunLog(logPath, { section: '_strategic-shift', step, ok, detail: detail ?? '' });
+      };
+      const shiftResult = await runStrategicShiftDetector({
+        slug:       cli.slug,
+        writingDir,
+        tracker,
+        force:      cli.force,
+        onLog:      shiftLog,
+      });
+      if (!shiftResult.skipped) {
+        console.log(`  ✓ strategic-shift.json — confidence: ${shiftResult.shift.confidence_level}  $${shiftResult.costUsd.toFixed(4)}`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Strategic shift detector failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_strategic-shift', error: msg });
+      appendRunLog(logPath, { section: '_strategic-shift', step: 'STRATEGIC SHIFT ERROR', ok: false, detail: msg });
+      // Non-fatal: pipeline continues. Section writers will lack the thesis but can still run.
+    }
+  }
+
+  // ── Layer 4: SEO intent planner ──────────────────────────────────────────────
+  // Runs after strategic shift so the thesis is available when picking the
+  // SEO angle. Output: section-evidence/seo-intent.json
+  // Also auto-writes seo-target.json when no manual keyword has been set.
+  // Skipped in draft mode, single-section runs, and when file already exists (unless --force).
+  if (cli.mode !== 'draft' && !cli.onlySection) {
+    console.log(`\n${div}`);
+    console.log(`  Layer 4 — SEO intent planner`);
+    try {
+      const seoLog = (step: string, ok: boolean, detail?: string): void => {
+        console.log(`  ${ok ? '✓' : '⚠'} ${step}${detail ? ` — ${detail}` : ''}`);
+        appendRunLog(logPath, { section: '_seo-intent', step, ok, detail: detail ?? '' });
+      };
+      const seoIntentResult = await runSeoIntentPlanner({
+        slug:       cli.slug,
+        writingDir,
+        tracker,
+        force:      cli.force,
+        onLog:      seoLog,
+      });
+      if (!seoIntentResult.skipped) {
+        console.log(
+          `  ✓ seo-intent.json — keyword: "${seoIntentResult.intent.primary_keyword}"` +
+          `  confidence: ${seoIntentResult.intent.confidence_level}` +
+          `  $${seoIntentResult.costUsd.toFixed(4)}`,
+        );
+        if (seoIntentResult.wroteTarget) {
+          console.log(`  ✓ seo-target.json auto-written (override with --keyword)`);
+        }
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ SEO intent planner failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_seo-intent', error: msg });
+      appendRunLog(logPath, { section: '_seo-intent', step: 'SEO INTENT ERROR', ok: false, detail: msg });
+      // Non-fatal: section writers fall back to evidence-pack keywords as before.
+    }
+  }
 
   // ── Section loop ─────────────────────────────────────────────────────────────
   for (const sectionId of sectionsToRun) {

@@ -19,6 +19,8 @@
     "cro-teardown:publish": "tsx scripts/cro-teardown/publish-article.ts",
     "cro-teardown:cost-breakdown": "tsx scripts/cro-teardown/cost-breakdown.ts",
     "cro-teardown:seo-target": "tsx scripts/cro-teardown/generate-seo-target.ts",
+    "cro-teardown:seo-intent": "tsx scripts/cro-teardown/seo-intent-planner.ts",
+    "cro-teardown:strategic-shift": "tsx scripts/cro-teardown/strategic-shift-detector.ts",
     "cro-teardown:qa": "tsx scripts/cro-teardown/qa-validator.ts",
     "cro-teardown:fix-text": "tsx scripts/cro-teardown/fix-page-text-extraction.ts",
     "cro-teardown:rebuild-evidence": "tsx scripts/cro-teardown/rebuild-evidence.ts"
