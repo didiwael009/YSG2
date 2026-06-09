@@ -1,0 +1,43 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Second paragraph in 'What changed' block is 62 words — exceeds 60-word cap for body paragraphs",
+    "First paragraph in 'Why it matters' block is 66 words — exceeds 60-word cap",
+    "Second paragraph in 'Why it matters' block is 44 words — acceptable but contributes to block density",
+    "'What it costs' block is 68 words total in a single paragraph — exceeds 60-word cap and buries the practical takeaway",
+    "Causal claim 'That increases the work the page must do below the fold' lacks conditional framing — unsupported causation",
+    "Outcome claim 'removing the product explanation means they must figure out what you do from the rest of the page' is too absolute without condition",
+    "Generic phrase 'This approach works when most visitors arrive through branded search' could appear in any SaaS teardown",
+    "The opening of 'What changed' follows template structure ('The original headline read X. The current headline reads Y.') when evidence could support a more interesting entry about the workflow-to-category shift"
+  ],
+  "requiredFixes": [
+    "Break the 62-word paragraph in 'What changed' into two paragraphs at the meta description sentence",
+    "Split the 66-word 'Why it matters' opening paragraph after 'It skips the product explanation.'",
+    "Break the 68-word 'What it costs' block into two paragraphs: deliver the takeaway in the first 1-2 sentences, then provide the test instructions",
+    "Reframe 'That increases the work the page must do below the fold' with a conditional: 'If your traffic still includes cold visitors, that increases...'",
+    "Add condition to 'removing the product explanation means they must figure out what you do': 'For cold traffic, removing the product explanation means...'",
+    "Replace 'This approach works when most visitors arrive through branded search' with Vercel-specific framing anchored to their category position or ranking evidence"
+  ],
+  "riskFlags": [
+    "'That increases the work the page must do below the fold' — causal claim without conditional framing or evidence that this actually happened to Vercel",
+    "'removing the product explanation means they must figure out what you do from the rest of the page' — absolute causation without condition attached",
+    "'This approach works when most visitors arrive through branded search' — generic strategy claim not anchored to Vercel's specific evidence"
+  ],
+  "seoNotes": [
+    "Heading contains company name ('Vercel'), topic term ('homepage positioning'), and change frame ('headline changed') — strong searchability",
+    "Body text includes searchable phrase 'frontend deployment platform' with context that it is a ranking term",
+    "Meta description change is quoted in full, providing useful reference for SEO comparison searches"
+  ],
+  "rewriteInstruction": "Break all paragraphs over 60 words into two blocks. Move the practical takeaway in 'What it costs' to the opening sentence: start with 'To check if your homepage can afford this approach...' then follow with the test. Add conditionals to both causal claims: 'If your traffic includes cold visitors, that increases...' and 'For visitors unfamiliar with your brand, removing the product explanation means...'. Replace the generic branded-search sentence with a Vercel-specific anchor: reference their category ranking, their brand recognition in the developer community, or a specific traffic pattern observable from the evidence. Rewrite the opening of 'What changed' to lead with the workflow-to-category shift as the most interesting finding, then support it with the headline quotes.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,90 @@
+{
+  "overallScore": 72,
+  "pass": false,
+  "evidenceAccuracy": 12,
+  "riskControl": 9,
+  "croUsefulness": 8,
+  "clarity": 13,
+  "sectionCoherence": 10,
+  "weakSections": [
+    "03-visual-timeline",
+    "04-messaging-evolution",
+    "05-cta-navigation-evolution",
+    "06-lessons-for-saas-teams"
+  ],
+  "unsupportedClaims": [
+    "After reading this teardown, you will know how to check whether your homepage still matches the way buyers now talk about your category.",
+    "The new headline does not contain a workflow explanation — that framing is gone from the primary headline entirely.",
+    "The homepage no longer explains what the product does in the headline.",
+    "The product explanation is no longer in the headline — it has moved to section headings, visuals, and body copy.",
+    "That is not automatically a problem, but it is a deliberate trade worth knowing about.",
+    "three steps in a developer's daily workflow",
+    "categories that appear in deployment tool comparisons rather than infrastructure procurement",
+    "categories that appear in content aimed at teams evaluating platform-level decisions",
+    "If your traffic comes primarily through brand search or referral, the headline may not need to explain the category.",
+    "If it comes through non-branded search, that explanation is no longer in the headline.",
+    "If a visitor has not heard of Vercel's products, the new CTAs may function as navigation rather than conversion triggers.",
+    "That assumes your brand name already carries the category explanation before the visitor lands.",
+    "If your traffic comes from non-branded search, every CTA needs to work without prior product knowledge.",
+    "Five snapshots over five years show updates in one direction.",
+    "Vercel made small, consistent updates in the same direction across 5 snapshots over roughly 5 years.",
+    "This is incremental repositioning: small updates in the same direction that compound into a brand shift.",
+    "Each change narrowed who the page speaks to and what it assumes they already know.",
+    "This pattern assumes your company name already carries the category explanation before the visitor lands.",
+    "The test: if a stranger can guess what your product does from your URL alone, you have the brand recognition this requires.",
+    "that only makes sense if visitors already know 'Vercel deploys things.'",
+    "If your homepage still explains what your product is, you likely depend on visitors who have never heard of you.",
+    "If your traffic shifts toward cold audiences who do not recognize your brand, a headline that assumes category knowledge may not explain the product to them."
+  ],
+  "riskFlags": [
+    "After reading this teardown, you will know how to check whether your homepage still matches the way buyers now talk about your category. — prediction about reader outcome",
+    "The new headline works only if the visitor arrives already familiar with Vercel. — conversion-outcome prediction",
+    "Whether that matches how your visitors arrive is worth checking. — unlabelled interpretation presented as confirmed fact",
+    "If you cannot, the product statement is not in the headline — it has moved somewhere else on the page. — intent attribution without evidence",
+    "That is not automatically a problem, but it is a deliberate trade worth knowing about. — intent attribution ('deliberate trade')",
+    "The vocabulary named workflow steps and developer experience — categories that appear in deployment tool comparisons rather than infrastructure procurement. — unsupported context claim",
+    "categories that appear in content aimed at teams evaluating platform-level decisions. — unsupported context claim",
+    "The vocabulary shifted from individual developer tooling to infrastructure and AI — categories that appear in content aimed at teams evaluating platform-level decisions. — unsupported context claim",
+    "If your traffic comes primarily through brand search or referral, the headline may not need to explain the category. — conversion-outcome prediction",
+    "If a visitor has not heard of Vercel's products, the new CTAs may function as navigation rather than conversion triggers. — conversion-outcome prediction",
+    "The old 'SSL encryption' CTA told you what the platform handles. — intent attribution",
+    "The new 'Fluid Compute' CTA assumes you already know what that means and arrived looking for it. — intent attribution",
+    "That assumes your brand name already carries the category explanation before the visitor lands. — intent attribution",
+    "If your traffic comes from non-branded search, every CTA needs to work without prior product knowledge. — conversion-outcome prediction",
+    "Vercel made small, consistent updates in the same direction across 5 snapshots over roughly 5 years. — intent attribution ('made small, consistent updates in the same direction')",
+    "Each change narrowed who the page speaks to and what it assumes they already know. — intent attribution",
+    "This pattern assumes your company name already carries the category explanation before the visitor lands. — intent attribution",
+    "that only makes sense if visitors already know 'Vercel deploys things.' — conversion-outcome prediction",
+    "If your homepage still explains what your product is, you likely depend on visitors who have never heard of you. — conversion-outcome prediction",
+    "If your traffic shifts toward cold audiences who do not recognize your brand, a headline that assumes category knowledge may not explain the product to them. — conversion-outcome prediction"
+  ],
+  "requiredFixes": [
+    "Section 03: Remove all statements about where 'the product explanation moved to' — the evidence shows what changed in the headline, not where explanations moved. Remove 'deliberate trade' framing (intent attribution). Add a named mechanism (e.g., 'qualification filter,' 'category claim shift').",
+    "Section 04: Remove 'categories that appear in deployment tool comparisons' and 'content aimed at teams evaluating platform-level decisions' — both are unsupported context claims. The evidence shows vocabulary change only. Add a named mechanism (e.g., 'ICP narrowing,' 'buyer stage mismatch').",
+    "Section 05: Remove all conversion-outcome predictions ('may function as navigation,' 'assumes you already know,' 'needs to work without prior product knowledge'). State only what changed in CTA labels. Add a named mechanism (e.g., 'identity recruitment,' 'aspiration signaling').",
+    "Section 06: Remove all intent attribution ('Vercel made small, consistent updates in the same direction,' 'Each change narrowed who the page speaks to'). State only the pattern visible in the evidence (headline changed, 12 H2s added, 2 removed, 10 CTAs replaced). Add a named mechanism (e.g., 'incremental repositioning' is acceptable IF not paired with intent claims).",
+    "All sections: Remove every sentence that predicts conversion outcomes tied to traffic source or visitor familiarity ('If your traffic comes from non-branded search...' appears 3 times). Replace with IF–THEN structural observations that do not predict conversion volume.",
+    "All sections: Add a tradeoff statement to each analytical section (03, 04, 05, 06) — woven into prose, not labeled. Currently missing from all four.",
+    "All sections: Ensure the last sentence of each analytical section (03, 04, 05, 06) is a specific founder test anchored to this evidence. Currently only section 03 and 04 have partial tests; 05 and 06 lack actionable final sentences."
+  ],
+  "optionalImprovements": [
+    "Section 02: The phrase 'The new headline does not contain a workflow explanation — that framing is gone from the primary headline entirely' is redundant. One clause suffices.",
+    "Section 04: The final founder test ('Open your homepage. Does your H1 name what your product does, or does it assume the visitor already knows?') is generic. Anchor it to the specific vocabulary shift in the evidence (workflow verbs → infrastructure nouns).",
+    "Section 06: The test 'Count how many words in your H1 assume the visitor already knows your category' is vague. Specify what 'assume' means in observable terms (e.g., 'Count category-naming nouns vs. workflow-explaining verbs')."
+  ],
+  "rerunRecommendations": [
+    "03-visual-timeline",
+    "04-messaging-evolution",
+    "05-cta-navigation-evolution",
+    "06-lessons-for-saas-teams"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.048818999999999994,
+  "generatedAt": "2026-06-09T11:59:00.834Z",
+  "founderUsefulness": 10,
+  "repetitionWarnings": [
+    "The conclusion that Vercel's headline 'assumes visitors already know the category' appears in sections 03, 04, 05, and 06 — expressed as 'assumes you already know,' 'assumes the visitor already knows,' 'assumes your brand name already carries the category explanation,' and 'assumes category knowledge.' This is the same analytical thrust in 4 sections.",
+    "The framing that 'the product explanation is no longer in the headline' appears in sections 02, 03, and 04 — expressed as 'does not contain a workflow explanation,' 'no longer explains what the product does,' and 'skips the product explanation.' Collapse into one section.",
+    "The traffic-source conditional ('If your traffic comes from non-branded search...') appears in sections 04, 05, and 06 — three times with minor wording variation. This is repetition of the same test condition."
+  ]
+}

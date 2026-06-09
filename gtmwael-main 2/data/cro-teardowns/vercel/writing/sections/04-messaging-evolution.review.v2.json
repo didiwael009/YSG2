@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Final H3 takeaway test is somewhat generic — 'Open your homepage. Does your H1 name what your product does' could appear in many teardowns",
+    "H3 block 2 paragraph length is ~66 words (exceeds 60-word target)",
+    "Second sentence of final H3 contains causal claim without condition: 'The new headline assumes you already know what AI Cloud means' — no evidence that assumption was intentional strategy vs. outcome of iterative copy edits"
+  ],
+  "requiredFixes": [
+    "Make the final H3 takeaway test more specific to Vercel's evidence: replace 'Does your H1 name what your product does' with a test anchored to the workflow-to-infrastructure contrast (e.g. 'Count how many words in your H1 describe a workflow step vs. a capability category')",
+    "Trim H3 block 2 to 60 words or split into two shorter paragraphs",
+    "Attach a condition to the 'assumes you already know' claim in final H3 — e.g. 'The new headline assumes you already know what AI Cloud means — which works IF visitors arrive from brand search or technical content, but may skip the explanation step if cold search traffic remains high'"
+  ],
+  "riskFlags": [
+    "Final H3 contains causal claim 'The new headline assumes you already know' without evidence that this was an intentional positioning choice vs. an artifact of copy evolution"
+  ],
+  "seoNotes": [
+    "Section heading contains company name (Vercel), topic terms (messaging), and searchable phrases (developer workflow, AI infrastructure)",
+    "All three H3 subheadings contain searchable year markers (2021, 2026) and specific topic terms (frontend developers, deployment tools, AI cloud infrastructure)",
+    "Draft correctly quotes all verbatim website elements in bold — headline, meta description, page title fragments"
+  ],
+  "rewriteInstruction": "Trim the second H3 paragraph to 60 words or split it. Attach a conditional clause to the 'assumes you already know' claim in the final H3 (e.g. 'which works IF visitors arrive from brand search'). Replace the final takeaway test with something more specific to Vercel's workflow-to-infrastructure shift — instead of the generic 'Does your H1 name what your product does', try 'Count how many words in your H1 describe a workflow step (like Preview, Ship) vs. a capability category (like infrastructure, frameworks).' This anchors the test to the evidence and makes it runnable in under five minutes.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 12,
+    "plainLanguage": 20,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

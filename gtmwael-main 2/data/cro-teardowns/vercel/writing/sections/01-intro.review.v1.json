@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Section exceeds 90-word intro cap (approximately 95 words)",
+    "Final sentence makes a promise about future sections ('After reading this teardown, you will know...') rather than completing the standalone intro",
+    "Minor: The phrase 'spoke to a workflow' is slightly abstract — could be 'described a three-step workflow' for more precision"
+  ],
+  "requiredFixes": [
+    "Cut 5–10 words to reach 85–90 word target. Consider removing the forward-looking final sentence and ending with the meta description contrast or a single concrete observation.",
+    "Replace 'After reading this teardown, you will know how to check whether your homepage still matches the way buyers now talk about your category' with a specific observation anchored to Vercel's evidence — e.g. 'Five snapshots show the shift from workflow-first positioning to infrastructure-and-AI framing.'"
+  ],
+  "riskFlags": [
+    "The claim 'The new one positions the company around infrastructure and AI' is interpretive but acceptable because it directly paraphrases the visible headline text ('AI Cloud'). No penalty applied, but ensure this framing is traceable to evidence, not assumed strategy."
+  ],
+  "seoNotes": [
+    "Heading does not contain 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion' — it relies on 'Vercel' alone for searchability. Consider adding a searchable topic term.",
+    "The intro answers the search query in the first sentence and names the company, period, and biggest shift — strong SEO structure.",
+    "Meta description changes are quoted in full, which helps Google readers scan for specifics."
+  ],
+  "rewriteInstruction": "Trim to 85–90 words by cutting the forward-looking final sentence. Replace it with a concrete observation anchored to the evidence — e.g. 'Five snapshots capture the transition from developer workflow to AI infrastructure framing.' Ensure every claim traces to quoted text or the summary cards. Keep the opening sentence intact — it answers the search query cleanly. Tighten 'spoke to a workflow' to 'described a three-step workflow' for precision.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 12,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

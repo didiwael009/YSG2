@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "Develop.Preview.Ship.",
+    "after": "Build and deploy on the AI Cloud.",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Deploy web projects with the best frontend developer experience and highest end-user performance.",
+    "after": "Vercel gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.",
+    "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+  },
+  {
+    "element": "Page title",
+    "before": "Develop. Preview. Ship. For the best frontend teams – Vercel",
+    "after": "Vercel: Build and deploy the best web experiences with the AI Cloud"
+  }
+]

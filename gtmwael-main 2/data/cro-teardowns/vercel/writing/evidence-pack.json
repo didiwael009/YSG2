@@ -1,0 +1,142 @@
+{
+  "slug": "vercel",
+  "companyName": "Vercel",
+  "companyUrl": "https://vercel.com",
+  "fromMonth": "2021-07",
+  "toMonth": "current",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-09T11:27:09.721Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2021-07",
+      "label": "Jul 2021",
+      "screenshotPath": "/cro-teardowns/vercel/selected/2021-07.webp",
+      "timestamp": "20211015213135",
+      "originalUrl": "https://vercel.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/vercel/selected/2023-01.webp",
+      "timestamp": "20230415055237",
+      "originalUrl": "https://vercel.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/vercel/selected/2024-01.webp",
+      "timestamp": "20240415015242",
+      "originalUrl": "https://vercel.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/vercel/selected/2025-01.webp",
+      "timestamp": "20250414021209",
+      "originalUrl": "https://vercel.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/vercel/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://vercel.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Scale your",
+      "without compromising",
+      "Get Started",
+      "Build",
+      "Scale",
+      "Secure",
+      "Resources",
+      "Learn",
+      "Frameworks",
+      "Use Cases",
+      "Company",
+      "Community"
+    ],
+    "h2Removed": [
+      "Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.",
+      "Clone Template"
+    ],
+    "ctaAdded": [
+      "Explore Enterprise",
+      "AI Cloud",
+      "AI GatewayOne endpoint, all your models",
+      "SandboxIsolated, safe code execution",
+      "Vercel AgentAn agent that knows your stack",
+      "AI SDKThe AI Toolkit for TypeScript",
+      "v0Build applications with AI",
+      "CI/CDHelping teams ship 6× faster",
+      "Content DeliveryFast, scalable, and reliable",
+      "Fluid ComputeServers, in serverless form"
+    ],
+    "ctaRemoved": [
+      "Contact",
+      "Contact Us",
+      "Login",
+      "global edge network",
+      "Scale dynamically",
+      "Import your repo",
+      "SSL encryption",
+      "asset compression",
+      "cache invalidation",
+      "millions of pages"
+    ],
+    "navAdded": [
+      "AI Cloud",
+      "AI SDKThe AI Toolkit for TypeScript",
+      "v0Build applications with AI",
+      "CI/CDHelping teams ship 6× faster",
+      "ObservabilityTrace every step",
+      "BotIDInvisible CAPTCHA",
+      "CustomersTrusted by the best teams",
+      "BlogThe latest posts and changes"
+    ],
+    "navRemoved": [
+      "Integrations",
+      "Analytics",
+      "Contact",
+      "Login",
+      "Create React App",
+      "Gatsby",
+      "Nuxt.js",
+      "Vue"
+    ],
+    "headlines": [
+      {
+        "from": "Develop.Preview.Ship.",
+        "to": "Build and deploy on the AI Cloud.",
+        "fromMonth": "2021-07",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Deploy web projects with the best frontend developer experience and highest end-user performance.",
+        "to": "Vercel gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.",
+        "fromMonth": "2021-07",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

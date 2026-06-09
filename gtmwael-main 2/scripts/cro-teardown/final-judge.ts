@@ -366,7 +366,8 @@ SCORING RUBRIC — score each dimension, then give a holistic overallScore (0–
 MECHANISM NAMES ARE NOT UNSUPPORTED CLAIMS:
 Named interpretive frameworks applied to the evidence are ALLOWED and REQUIRED by the writing system:
   "qualification filter," "category claim," "ICP narrowing," "aspiration positioning,"
-  "procurement-stage framing," "identity recruitment," "buyer stage mismatch."
+  "procurement-stage framing," "identity recruitment," "buyer stage mismatch,"
+  "incremental repositioning," "category claim shift," "workflow abstraction."
 These are labeled interpretations — they are hedges, not facts. Do NOT list them as unsupportedClaims.
 An unsupportedClaim is a SPECIFIC FACT (a number, a date, a metric, a named event) that is NOT in the evidence.
 
@@ -375,11 +376,13 @@ HARD RULES:
 • Any sentence predicting a specific conversion outcome ("trial starts will...", "this will improve...") → riskFlag.
 • Any sentence asserting specific company intent ("Shopify decided to...", "their strategy was...") → riskFlag.
 • Conditional observations ("this pattern only works if X") are ALLOWED — they are not predictions.
+• Hedged observations using "may", "appears to", "assumes" are ALLOWED — they are not unsupported claims.
 • Observations about page architecture ("the page cannot serve X visitor") are ALLOWED — they describe structure.
+• Vocabulary register inferences ("the 2021 copy named workflow steps") are ALLOWED — they describe text.
 • If requiredFixes is non-empty, rerunRecommendations must name which section(s) to rerun.
 
 PASS CRITERIA:
-overallScore >= 85 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty → pass: true.
+overallScore >= 90 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty → pass: true.
 Any other combination → pass: false.
 
 CALIBRATION:

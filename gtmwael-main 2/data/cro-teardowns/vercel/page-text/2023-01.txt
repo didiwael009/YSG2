@@ -1,0 +1,92 @@
+TITLE: Vercel: Develop. Preview. Ship. For the best frontend teams
+META DESCRIPTION: Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
+
+H1:
+  - Develop.Preview.Ship.
+
+H2:
+  - Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
+  - Product
+  - Explore
+  - Company
+
+H3:
+  - Develop
+  - Preview
+  - Ship
+
+CTAS / BUTTONS:
+  - Skip to content
+  - Features
+  - Docs
+  - Templates
+  - Integrations
+  - Customers
+  - Enterprise
+  - Pricing
+  - Contact
+  - Login
+  - Sign Up
+  - Start Deploying
+  - Get a Demo
+  - Trusted by the best frontend teams
+  - GitHub
+  - GitLab
+  - Bitbucket
+  - NewCommenting on Preview Deployments is now available →Commenting is now available →
+  - NewMonitoring is now available for Pro and Enterprise customers →Now available for Pro and Enterprise customers →
+  - Infrastructure
+  - Previews
+  - Edge Functions
+  - Analytics
+  - Next.js
+  - Turbo
+  - CLI & API
+  - Changelog
+  - Experts
+  - Guides
+  - Help
+  - About
+  - Blog
+  - Careers
+  - Contact Us
+  - Next.js Conf
+  - Open Source
+  - Partners
+  - Security
+  - Privacy Policy
+  - Legal
+
+NAV LINKS:
+  - Docs
+  - Templates
+  - Integrations
+  - Customers
+  - Enterprise
+  - Pricing
+  - Contact
+  - Login
+  - Sign Up
+  - Infrastructure
+  - Previews
+  - Edge Functions
+  - Analytics
+  - Next.js
+  - Turbo
+  - CLI & API
+  - Changelog
+  - Experts
+  - Guides
+  - Help
+  - About
+  - Blog
+  - Careers
+  - Contact Us
+  - Next.js Conf
+  - Open Source
+  - Partners
+  - Security
+  - Privacy Policy
+
+BODY TEXT:
+Skip to contentFeaturesDocsTemplatesIntegrationsCustomersEnterprisePricingContactLoginSign UpDevelop.Preview.Ship.Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.Start DeployingGet a DemoTrusted by the best frontend teamsExplore the Vercel way1DevelopBuild when inspiration strikesFree developers from time-consuming, unnecessary processes that slow your work, so you and your team can focus on creating.index.js123export default function({ data }) { }localhost:3000The complete toolkit for the WebEverything you need to build your site exactly how you imagine, from automatic API handling to built-in image and performance optimizations.Easy integration with your backendConnect your pages to any data source, headless CMS, or API and make it work in everyone’s dev environment.End-to-end testing on LocalhostFrom caching to Serverless Functions, all our cloud primitives work perfectly on localhost.Works with 30+ Frameworks2PreviewIterate with your teamMake frontend development a collaborative experience with automatic Preview Deployments for every code change, by seamlessly integrating with GitHub, GitLab, and Bitbucket.bash▲ ~ e-commerce-site/ git pushvercelbotdeployed to Preview just nowPush to deployEvery deploy automatically generates a shareable live preview site that stays up-to-date with your changes.vercel bot commented 3 minutes agoThe latest updates on your project. Learn more about Vercel for Git NameStatusPreviewUpdatedstore✅ Ready (Inspect)Visit PreviewOct 25, 2022 at 12:37 PMsite🔄 Building (Inspect)Oct 25, 2022 at 12:39 PMadmin✅ Ready (Inspect)Visit PreviewOct 25, 2022 at 12:41 PMHere’s my deploy preview for the page update: https://shop-git-new-button.vercel.appRauno — Design Engineering TeamAutomatic Previews for every branchEach new branch receives a live, production-like URL that everyone on your team can visit.shop-git-new-button.vercel.appGreta — Product Marketing Team Collaborative reviews on UIComment directly on components, layouts, copy, and more in real context and real time, integrated seamlessly with GitHub and Slack.NewCommenting on Preview Deployments is now available →Commenting is now available →3ShipDelight every visitorSpeed is critical to customers — and SEONext.js and Vercel work together to deliver the best performance for your end users, while maintaining best-in-class SEO practices.Built on cutting-edge serverless technology, Vercel can withstand any traffic spike, with automatic failover and global replication of assets.Global Edge NetworkYour site, fast everywhere. Deploy content around the world and update it in 300ms.First-party monitoring and observabilityAnalyze logs, understand traffic and usage, and easily optimize your applications, without extra tooling or code.NewMonitoring is now available for Pro and Enterprise customers →Now available for Pro and Enterprise customers →90Cities41B+Requests Per Week10PBData Served99.99%Guaranteed UptimeBegin Your Vercel JourneyProductInfrastructurePreviewsEdge FunctionsAnalyticsNext.jsTurboEnterpriseCLI & APIChangelogExploreDocsPricingCustomersIntegrationsTemplatesExpertsGuidesHelp�?KCompanyAboutBlogCareersContact UsNext.js ConfOpen SourcePartnersSecurityPrivacy PolicyLegal© 2023 Vercel Inc.

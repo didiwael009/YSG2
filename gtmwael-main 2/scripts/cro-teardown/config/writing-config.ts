@@ -51,8 +51,9 @@ export const SEO_PASS_SCORE = 80;
  */
 export const SECTION_EVIDENCE_SOURCES: Record<string, string[]> = {
   // ── Phase 4C canonical IDs (compose-all-sections) ──────────────────────────
-  // 5-section architecture (02-at-a-glance dropped — evidence-capped section)
+  // 6-section architecture (V5): adds 02-quick-answer between intro and belief shift
   '01-intro':                    ['summary-cards', 'messaging'],
+  '02-quick-answer':             ['summary-cards', 'messaging'],       // featured-snippet block — needs full overview
   '03-visual-timeline':          ['analysis-blocks', 'messaging'],    // belief shift: visual + message evidence combined
   '04-messaging-evolution':      ['messaging', 'summary-cards'],       // buyer shift: message framing + proof style
   '05-cta-navigation-evolution': ['cta-changes', 'h2-changes'],

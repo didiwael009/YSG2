@@ -1,0 +1,242 @@
+TITLE: Vercel: Build and deploy the best web experiences with the AI Cloud
+META DESCRIPTION: Vercel gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.
+
+H1:
+  - Build and deploy on the AI Cloud.
+
+H2:
+  - Scale your
+  - without compromising
+  - Get Started
+  - Build
+  - Scale
+  - Secure
+  - Resources
+  - Learn
+  - Frameworks
+  - SDKs
+  - Use Cases
+  - Company
+  - Community
+
+H3:
+
+CTAS / BUTTONS:
+  - Skip to content
+  - Products
+  - AI Cloud
+  - AI GatewayOne endpoint, all your models
+  - SandboxIsolated, safe code execution
+  - Vercel AgentAn agent that knows your stack
+  - AI SDKThe AI Toolkit for TypeScript
+  - v0Build applications with AI
+  - CI/CDHelping teams ship 6× faster
+  - Content DeliveryFast, scalable, and reliable
+  - Fluid ComputeServers, in serverless form
+  - WorkflowLong-running workflows at scale
+  - ObservabilityTrace every step
+  - Security
+  - Bot ManagementScalable bot protection
+  - BotIDInvisible CAPTCHA
+  - Platform SecurityDDoS Protection, Firewall
+  - Web Application FirewallGranular, custom protection
+  - Resources
+  - CustomersTrusted by the best teams
+  - BlogThe latest posts and changes
+  - ChangelogSee what shipped
+  - PressRead the latest news
+  - EventsJoin us at an event
+  - DocsVercel documentation
+  - AcademyLinear courses to level up
+  - Knowledge BaseFind help quickly
+  - CommunityJoin the conversation
+  - Next.jsThe native Next.js platform
+  - NuxtThe progressive web framework
+  - SvelteThe web’s efficient UI framework
+  - TurborepoSpeed with Enterprise scale
+  - Solutions
+  - AI AppsDeploy at the speed of AI
+  - Composable CommercePower storefronts that convert
+  - Marketing SitesLaunch campaigns fast
+  - Multi-tenant PlatformsScale apps with one codebase
+  - Web AppsShip features, not infrastructure
+  - MarketplaceExtend and automate workflows
+  - TemplatesJumpstart app development
+  - Partner FinderGet help from solution partners
+  - Platform EngineersAutomate away repetition
+  - Design EngineersDeploy for every idea
+  - Enterprise
+  - Pricing
+  - Ask AI
+  - Log In
+  - Sign Up
+  - Dashboard
+  - DeployStart Deploying
+  - Get a Demo
+  - Start Deploying
+  - Talk to an Expert
+  - Explore Enterprise
+  - Templates
+  - Supported frameworks
+  - Marketplace
+  - Domains
+  - Next.js on Vercel
+  - Turborepo
+  - v0
+  - Content delivery network
+  - Fluid compute
+  - CI/CD
+  - Observability
+  - AI GatewayNew
+  - Vercel AgentNew
+  - Platform security
+  - Web Application Firewall
+  - Bot management
+  - BotID
+  - SandboxNew
+  - Customers
+  - Articles
+  - Startups
+  - Solution partners
+  - Docs
+  - Blog
+  - Changelog
+  - Knowledge Base
+  - Academy
+  - Community
+  - Next.js
+  - Nuxt
+  - Svelte
+  - Nitro
+  - Turbo
+  - AI SDK
+  - Workflow SDKNew
+  - Flags SDK
+  - Chat SDK
+  - Streamdown AINew
+  - Composable commerce
+  - Multi-tenant platforms
+  - Web apps
+  - Marketing sites
+  - Platform engineers
+  - Design engineers
+  - About
+  - Careers
+  - Help
+  - Press
+  - Legal
+  - Privacy Policy
+  - Open source program
+  - Events
+  - Shipped on Vercel
+  - GitHub
+  - LinkedIn
+  - X
+  - YouTube
+  - Loading status…
+
+NAV LINKS:
+  - AI Cloud
+  - AI GatewayOne endpoint, all your models
+  - SandboxIsolated, safe code execution
+  - Vercel AgentAn agent that knows your stack
+  - AI SDKThe AI Toolkit for TypeScript
+  - v0Build applications with AI
+  - CI/CDHelping teams ship 6× faster
+  - Content DeliveryFast, scalable, and reliable
+  - Fluid ComputeServers, in serverless form
+  - WorkflowLong-running workflows at scale
+  - ObservabilityTrace every step
+  - Security
+  - Bot ManagementScalable bot protection
+  - BotIDInvisible CAPTCHA
+  - Platform SecurityDDoS Protection, Firewall
+  - Web Application FirewallGranular, custom protection
+  - CustomersTrusted by the best teams
+  - BlogThe latest posts and changes
+  - ChangelogSee what shipped
+  - PressRead the latest news
+  - EventsJoin us at an event
+  - DocsVercel documentation
+  - AcademyLinear courses to level up
+  - Knowledge BaseFind help quickly
+  - CommunityJoin the conversation
+  - Next.jsThe native Next.js platform
+  - NuxtThe progressive web framework
+  - SvelteThe web’s efficient UI framework
+  - TurborepoSpeed with Enterprise scale
+  - AI AppsDeploy at the speed of AI
+  - Composable CommercePower storefronts that convert
+  - Marketing SitesLaunch campaigns fast
+  - Multi-tenant PlatformsScale apps with one codebase
+  - Web AppsShip features, not infrastructure
+  - MarketplaceExtend and automate workflows
+  - TemplatesJumpstart app development
+  - Partner FinderGet help from solution partners
+  - Platform EngineersAutomate away repetition
+  - Design EngineersDeploy for every idea
+  - Enterprise
+  - Pricing
+  - Log In
+  - Sign Up
+  - Dashboard
+  - Templates
+  - Supported frameworks
+  - Marketplace
+  - Domains
+  - Next.js on Vercel
+  - Turborepo
+  - v0
+  - Content delivery network
+  - Fluid compute
+  - CI/CD
+  - Observability
+  - AI GatewayNew
+  - Vercel AgentNew
+  - Platform security
+  - Web Application Firewall
+  - Bot management
+  - BotID
+  - SandboxNew
+  - Customers
+  - Articles
+  - Startups
+  - Solution partners
+  - Docs
+  - Blog
+  - Changelog
+  - Knowledge Base
+  - Academy
+  - Community
+  - Next.js
+  - Nuxt
+  - Svelte
+  - Nitro
+  - Turbo
+  - AI SDK
+  - Workflow SDKNew
+  - Flags SDK
+  - Chat SDK
+  - Streamdown AINew
+  - Composable commerce
+  - Multi-tenant platforms
+  - Web apps
+  - Marketing sites
+  - Platform engineers
+  - Design engineers
+  - About
+  - Careers
+  - Help
+  - Press
+  - Legal
+  - Privacy Policy
+  - Open source program
+  - Events
+  - Shipped on Vercel
+  - GitHub
+  - LinkedIn
+  - X
+  - YouTube
+
+BODY TEXT:
+Skip to contentProductsAI CloudAI GatewayOne endpoint, all your modelsSandboxIsolated, safe code executionVercel AgentAn agent that knows your stackAI SDKThe AI Toolkit for TypeScriptv0Build applications with AICore PlatformCI/CDHelping teams ship 6× fasterContent DeliveryFast, scalable, and reliableFluid ComputeServers, in serverless formWorkflowLong-running workflows at scaleObservabilityTrace every stepSecurityBot ManagementScalable bot protectionBotIDInvisible CAPTCHAPlatform SecurityDDoS Protection, FirewallWeb Application FirewallGranular, custom protectionResourcesCompanyCustomersTrusted by the best teamsBlogThe latest posts and changesChangelogSee what shippedPressRead the latest newsEventsJoin us at an eventLearnDocsVercel documentationAcademyLinear courses to level upKnowledge BaseFind help quicklyCommunityJoin the conversationOpen SourceNext.jsThe native Next.js platformNuxtThe progressive web frameworkSvelteThe web’s efficient UI frameworkTurborepoSpeed with Enterprise scaleSolutionsUse CasesAI AppsDeploy at the speed of AIComposable CommercePower storefronts that convertMarketing SitesLaunch campaigns fastMulti-tenant PlatformsScale apps with one codebaseWeb AppsShip features, not infrastructureToolsMarketplaceExtend and automate workflowsTemplatesJumpstart app developmentPartner FinderGet help from solution partnersUsersPlatform EngineersAutomate away repetitionDesign EngineersDeploy for every ideaEnterprisePricingAsk AIAsk AILog InSign UpSign UpDashboardBuild and deploy on the AI Cloud.Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.DeployStart DeployingGet a DemoBuild and deploy on the AI Cloud.Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.DeployStart DeployingGet a DemoDevelop with your favorite tools Launch globally, instantly Keep pushing Scale yourEnterprisewithout compromisingSecurityReady to deploy? Start building with a free account. Speak to an expert for your Pro or Enterprise needs.Start DeployingTalk to an ExpertExplore Vercel Enterprise with an interactive product tour, trial, or a personalized demo.Explore EnterpriseGet StartedTemplatesSupported frameworksMarketplaceDomainsBuildNext.js on VercelTurborepov0ScaleContent delivery networkFluid computeCI/CDObservabilityAI GatewayNewVercel AgentNewSecurePlatform securityWeb Application FirewallBot managementBotIDSandboxNewResourcesPricingCustomersEnterpriseArticlesStartupsSolution partnersLearnDocsBlogChangelogKnowledge BaseAcademyCommunityFrameworksNext.jsNuxtSvelteNitroTurboSDKsAI SDKWorkflow SDKNewFlags SDKChat SDKStreamdown AINewUse CasesComposable commerceMulti-tenant platformsWeb appsMarketing sitesPlatform engineersDesign engineersCompanyAboutCareersHelpPressLegalPrivacy PolicyCommunityOpen source programEventsShipped on VercelGitHubLinkedIn XYouTubeLoading status…Select a display theme:systemlightdark

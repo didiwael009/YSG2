@@ -50,6 +50,7 @@ import {
   writeSectionLoop,
   type WriteSectionResult,
 } from './section-writer.js';
+import { generateLessonCards } from './generate-lesson-cards.js';
 import { runCrossSectionPass } from './cross-section-pass.js';
 import { assembleArticle } from './article-assembler.js';
 import { generateSeo } from './seo-generator.js';
@@ -70,6 +71,7 @@ interface CliArgs {
   force: boolean;
   skipFinalJudge: boolean;
   skipSeoAudit: boolean;
+  skipCrossSection: boolean;
   rerunFailed: boolean;
   maxRerunSections: number;
   /** Force all section writers/rewriters to this model (e.g. claude-sonnet-4-5). null = per-section defaults. */
@@ -109,6 +111,7 @@ function parseArgs(argv: string[]): CliArgs {
     // In draft mode or single-section mode, judge steps are skipped by default.
     skipFinalJudge:   flags.has('skip-final-judge') || mode === 'draft',
     skipSeoAudit:     flags.has('skip-seo-audit')   || mode === 'draft',
+    skipCrossSection: flags.has('skip-cross-section'),
     // Phase 4E: selective rerun after judge/SEO
     rerunFailed:      flags.has('rerun-failed'),
     maxRerunSections: parseInt(args['max-rerun-sections'] ?? '3', 10),
@@ -286,8 +289,9 @@ async function main(): Promise<void> {
   console.log(`  Budget     : $${cli.maxCostUsd}`);
   console.log(`  Max loops  : ${cli.maxRewriteLoops}`);
   console.log(`  Force      : ${cli.force ? 'yes — regenerating all' : 'no — skipping existing finals'}`);
-  if (cli.skipFinalJudge) console.log(`  Judge      : skipped (--skip-final-judge)`);
-  if (cli.skipSeoAudit)   console.log(`  SEO audit  : skipped (--skip-seo-audit)`);
+  if (cli.skipFinalJudge)    console.log(`  Judge      : skipped (--skip-final-judge)`);
+  if (cli.skipSeoAudit)      console.log(`  SEO audit  : skipped (--skip-seo-audit)`);
+  if (cli.skipCrossSection)  console.log(`  Cross-sect : skipped (--skip-cross-section)`);
   if (cli.rerunFailed)    console.log(`  Rerun mode : enabled (max ${cli.maxRerunSections} sections)`);
   console.log(div + '\n');
 
@@ -351,12 +355,57 @@ async function main(): Promise<void> {
     }
   }
 
+  // ── Lesson cards (V5 phase) ───────────────────────────────────────────────────
+  // Generates 4 company-specific "Patterns worth borrowing" cards via LLM.
+  // Writes to section-evidence/lesson-cards.json — same schema the React template
+  // already consumes, so no template changes needed downstream.
+  // Skipped in draft mode, single-section runs, and when file already exists (unless --force).
+  if (cli.mode !== 'draft' && !cli.onlySection) {
+    console.log(`\n${div}`);
+    const lessonCardsPath = path.join(writingDir, 'section-evidence', 'lesson-cards.json');
+    if (!cli.force && fs.existsSync(lessonCardsPath)) {
+      console.log(`  ↩ Skipping lesson cards — lesson-cards.json exists (pass --force to regenerate)`);
+    } else {
+      try {
+        const cardsLog = (step: string, ok: boolean, detail?: string): void => {
+          console.log(`  ${ok ? '✓' : '⚠'} ${step}${detail ? ` — ${detail}` : ''}`);
+          appendRunLog(logPath, { section: '_lesson-cards', step, ok, detail: detail ?? '' });
+        };
+        const cardsResult = await generateLessonCards({
+          slug: cli.slug,
+          writingDir,
+          tracker,
+          onLog: cardsLog,
+        });
+        console.log(
+          `  ✓ lesson-cards.json — ${cardsResult.cards.length} cards  $${cardsResult.costUsd.toFixed(4)}`,
+        );
+        appendRunLog(logPath, {
+          step: 'lesson-cards done',
+          ok: true,
+          detail: `${cardsResult.cards.length} cards — $${cardsResult.costUsd.toFixed(4)}`,
+        });
+      } catch (err) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error(`  ⚠ Lesson cards generation failed (non-fatal): ${msg}`);
+        sectionErrors.push({ section: '_lesson-cards', error: msg });
+        appendRunLog(logPath, {
+          section: '_lesson-cards',
+          step: 'LESSON CARDS ERROR',
+          ok: false,
+          detail: msg,
+        });
+        // Non-fatal: pipeline continues with any pre-existing lesson-cards.json (or without cards).
+      }
+    }
+  }
+
   // ── Phase 4P: cross-section cohesion + variety pass (Opus) ───────────────────
   // Runs after all sections have a .final.md, before assembly. One whole-article
   // call varies duplicated openings and adds light transitions. Fail-safe: any
   // integrity violation keeps the original section (see cross-section-pass.ts).
   // Skipped in draft mode (cost) and auto-skipped when fewer than 2 sections exist.
-  if (cli.mode !== 'draft') {
+  if (cli.mode !== 'draft' && !cli.skipCrossSection) {
     console.log(`\n${div}`);
     try {
       const crossLog = (step: string, ok: boolean, detail?: string): void => {

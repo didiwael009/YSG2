@@ -1,0 +1,3 @@
+## Quick answer: Vercel homepage shift
+
+Vercel replaced its developer workflow tagline (**"Develop. Preview. Ship."**) with a cloud infrastructure value proposition (**"Build and deploy on the AI Cloud."**). The new headline names the product category but removes the three-step workflow frame that appeared in the original version. Visitors who don't already know what Vercel does will need to scroll or navigate elsewhere to find a workflow explanation.

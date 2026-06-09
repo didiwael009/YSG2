@@ -1,0 +1,39 @@
+[
+  {
+    "id": "analysis-2021-07",
+    "label": "Jul 2021 — original state",
+    "period": "Jul 2021",
+    "screenshotPath": "/cro-teardowns/vercel/selected/2021-07.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Develop.Preview.Ship.\" — direct product statement.",
+      "Visible section headings include: \"Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.\", \"Clone Template\".",
+      "Navigation includes: \"Templates\", \"Integrations\", \"Analytics\", \"Customers\" — product category framing.",
+      "Section headings later removed include: \"Vercel combines the best developer experience with an obsessive focus on end-user performance. Our platform enables frontend teams to do their best work.\" and \"Clone Template\"."
+    ]
+  },
+  {
+    "id": "analysis-2023-01",
+    "label": "Jan 2023 — mid-transition",
+    "period": "Jan 2023",
+    "screenshotPath": "/cro-teardowns/vercel/selected/2023-01.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: unknown — a moderate visual change.",
+      "New section headings appearing: \"Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.\", \"Product\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/vercel/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Build and deploy on the AI Cloud.\" — updated value proposition.",
+      "New section headings include: \"Scale your\", \"without compromising\", \"Get Started\".",
+      "CTAs no longer present include: \"Contact\", \"Contact Us\", \"Login\"."
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "score": 70,
+  "pass": false,
+  "issues": [
+    "§2 ('Who should copy this') paragraph 1 is ~80 words — exceeds 60-word scannability limit",
+    "§3 ('Who should NOT copy this') paragraph 1 is ~75 words — exceeds 60-word scannability limit",
+    "The ## heading lacks searchable terms — 'homepage strategy' appears, but 'copy' and 'when it works' are clever-only framing",
+    "§2 contains causal outcome claim WITHOUT condition: 'you can afford to shift messaging toward a new layer' — no 'if' clause attached to the pipeline/conversion risk",
+    "§3 contains causal outcome claim WITHOUT attached data: 'removing that explanation will cost you qualified pipeline' — no conversion metric or evidence from Vercel's own data",
+    "Generic SaaS commentary detected in §2 ('can a stranger guess what your product does from your brand name alone?') — this sentence could appear in any teardown",
+    "Generic SaaS commentary detected in §3 ('Visitors who arrive without context will leave before they understand the category') — not anchored to Vercel's specific evidence",
+    "Final H3 test is not anchored to Vercel's specific evidence — 'Open an incognito window' is generic founder advice, not a test derived from Vercel's changes",
+    "No bold quotes (**\"bold quotes\"**) around verbatim website elements: 'Develop.Preview.Ship.' should be **\"Develop. Preview. Ship.\"** and 'Build and deploy on the AI Cloud' should be **\"Build and deploy on the AI Cloud.\"**"
+  ],
+  "requiredFixes": [
+    "Break §2 first paragraph into two blocks: end first block after 'what it assumes they already know.' Start new paragraph with 'This works when...'",
+    "Break §3 first paragraph into two blocks: end first block after 'cost you qualified pipeline.' Start new paragraph with 'Visitors who arrive...'",
+    "Rewrite ## heading to include 'Vercel' + 'homepage' + a searchable topic term. Example: 'Should you copy Vercel's homepage positioning shift? When incremental repositioning works'",
+    "Add condition to §2 causal claim: 'you can afford to shift messaging toward a new layer — **if your traffic is mostly branded search or direct, and conversion rates stay stable** — without losing visitors who have never heard of you.'",
+    "Remove or condition §3 pipeline claim: either cite Vercel data (if available) or rewrite as 'removing that explanation **may** cost you qualified pipeline **if your traffic sources shift toward cold audiences**.'",
+    "Anchor §2 'stranger guess' sentence to Vercel: 'The test Vercel passed: a developer who had never heard of them could still guess 'deployment platform' from context by 2021, so the 2026 headline **\"Build and deploy on the AI Cloud.\"** added a layer instead of replacing the foundation.'",
+    "Anchor §3 'visitors who arrive without context' to Vercel: 'When Vercel used **\"Develop. Preview. Ship.\"** in Jul 2021, the three-verb structure gave context. By Jun 2026, **\"Build and deploy on the AI Cloud.\"** assumes you already know what Vercel deploys.'",
+    "Rewrite final test to anchor to Vercel's specific evidence: 'Visit your homepage as a cold visitor. Can you explain what the product does after reading only the headline? Vercel's Jun 2026 headline (**\"Build and deploy on the AI Cloud.\"**) works only because the brand name already completed 'deployment platform' in developers' minds. If your headline needs to do that work, you're not ready for this pattern yet.'",
+    "Wrap all verbatim website text in **\"bold quotes\"**: **\"Develop. Preview. Ship.\"** and **\"Build and deploy on the AI Cloud.\"**"
+  ],
+  "riskFlags": [
+    "Causal outcome claim in §2 ('you can afford to shift messaging') lacks attached condition or conversion metric",
+    "Causal outcome claim in §3 ('will cost you qualified pipeline') lacks supporting data from Vercel or conversion evidence",
+    "§3 second sentence ('Visitors who arrive without context will leave') is a generic behavioral claim not traced to Vercel's evidence"
+  ],
+  "seoNotes": [
+    "The ## heading misses SEO opportunity — no company name in the heading, and 'copy Vercel's homepage strategy' buries searchable terms behind a question frame",
+    "H3 headings are adequately searchable: 'The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy' — but none include 'Vercel' or 'homepage', limiting keyword density",
+    "Section is ~240 words — within 180–260 target, good for SEO balance",
+    "High keyword relevance if ## heading is fixed to include 'Vercel' + 'homepage' + a topic term like 'positioning' or 'messaging'"
+  ],
+  "rewriteInstruction": "Break the two longest paragraphs (§2 first para, §3 first para) into two blocks each to meet the 60-word scannability limit. Rewrite the ## heading to include 'Vercel' and 'homepage' plus a searchable topic term ('positioning shift' or 'messaging strategy'). Wrap every verbatim website quote in **\"bold quotes\"**. Anchor the generic SaaS commentary to Vercel's specific evidence: replace 'can a stranger guess what your product does' with a reference to Vercel's Jul 2021 vs Jun 2026 headlines, and replace 'Visitors who arrive without context' with a direct comparison of how the two headlines gave (or withheld) category context. Add conditions to both causal claims (§2 'you can afford to shift' and §3 'will cost you pipeline') — e.g. 'if your traffic is mostly branded' or 'if conversion rates hold steady'. Rewrite the final H3 test to anchor to Vercel's specific evidence: instead of generic 'Open an incognito window' advice, make it a test derived from the headline comparison (Jul 2021 vs Jun 2026) so the founder can assess whether their own headline gives category context or assumes it.",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 7,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

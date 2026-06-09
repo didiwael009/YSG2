@@ -1,0 +1,39 @@
+{
+  "score": 62,
+  "pass": false,
+  "issues": [
+    "Outcome claim without data: 'This positioning assumes visitors already understand what Vercel does' — no evidence provided for visitor knowledge state",
+    "Causal prescription without condition attachment: 'Companies whose visitors arrive without knowing the product category should not remove the workflow explanation' — presents as universal rule without qualifying condition",
+    "Word count violation: approximately 62 words total, but third sentence alone is ~35 words and reads as generic advice",
+    "Generic paragraph: final sentence could appear in any SaaS teardown — contains zero Vercel-specific evidence",
+    "Missing searchable terms in heading: 'Quick answer' contains no company name, 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "Unsupported causation: 'assumes visitors already understand' claims a user mental state without evidence trace"
+  ],
+  "requiredFixes": [
+    "Remove or rewrite final sentence ('Companies whose visitors arrive...') — this is generic SaaS advice with no anchor to Vercel evidence",
+    "Add company name to heading: change '## Quick answer' to '## Quick answer: Vercel homepage' or similar searchable variant",
+    "Replace causation claim ('This positioning assumes...') with observable fact anchored to evidence, e.g. 'The new headline names the product category (AI Cloud) but drops the workflow explanation (Develop. Preview. Ship.)'",
+    "Attach condition to any prescriptive statement, or remove prescription entirely and stay descriptive"
+  ],
+  "riskFlags": [
+    "Unsupported visitor knowledge claim: 'assumes visitors already understand what Vercel does' — no evidence for visitor state",
+    "Causal prescription: 'should not remove the workflow explanation' — presents as rule without attached condition or data anchor",
+    "Hard cap triggered: unsupported outcome claim caps total score at 60"
+  ],
+  "seoNotes": [
+    "Heading lacks searchable terms — 'Quick answer' alone will not rank for target query terms",
+    "Draft does include company name and both quoted headlines in body, which supports snippet extraction",
+    "Three-sentence structure fits featured snippet format"
+  ],
+  "rewriteInstruction": "Stay entirely descriptive. Open with the observable change: Vercel replaced a workflow tagline with a cloud infrastructure value proposition. Second sentence: describe what disappeared and what appeared, using bold quotes for both headlines. Third sentence: anchor one specific implication to the evidence — e.g. 'The new headline names the product category but removes the three-step workflow frame, which means visitors who don't already know Vercel's function will need to scroll or navigate elsewhere to understand it.' Remove all prescriptive advice ('companies should...') and all claims about what Vercel assumes or intends. Add company name or searchable topic term to heading.",
+  "dimensionScores": {
+    "evidenceAccuracy": 5,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 12,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

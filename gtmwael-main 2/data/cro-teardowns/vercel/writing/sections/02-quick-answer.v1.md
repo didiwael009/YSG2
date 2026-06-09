@@ -1,0 +1,3 @@
+## Quick answer
+
+Vercel's homepage shifted from a developer workflow tagline (**"Develop. Preview. Ship."**) to a cloud infrastructure value proposition (**"Build and deploy on the AI Cloud."**). This positioning assumes visitors already understand what Vercel does and are evaluating it as a deployment platform. Companies whose visitors arrive without knowing the product category should not remove the workflow explanation from their homepage.

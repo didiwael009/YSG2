@@ -1,0 +1,42 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "The ## section heading is clever-only ('When incremental repositioning works') and lacks searchable terms — no 'Vercel', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion' appears in the heading itself.",
+    "The third H3 block ('Who should NOT copy this') contains causal claims without sufficient condition framing: 'removing that explanation may cost you qualified pipeline if your traffic sources shift' treats pipeline impact as a predictable outcome, but the evidence does not trace this causation.",
+    "The term 'incremental repositioning' appears twice (once in the ## heading, once in 'The pattern' H3 block) without a plain-language definition on first use.",
+    "The 'Who should NOT copy this' H3 block (third paragraph) is approximately 72 words — exceeds 60-word cap.",
+    "The final test ('Visit your homepage as a cold visitor...') is generic and could appear in any SaaS teardown — it is not anchored to a specific Vercel evidence element the founder can replicate in under five minutes.",
+    "Section word count is approximately 285 words — exceeds the 180–260 word target by roughly 25 words.",
+    "The opening of 'The pattern' H3 block states 'No single snapshot shows a dramatic redesign' but this is interpretive commentary, not a direct trace to evidence. The evidence shows snapshot count and changes, but does not label any change as 'dramatic' or 'not dramatic'."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include 'Vercel' and at least one searchable topic term (e.g., 'Should you copy Vercel's homepage messaging shift?').",
+    "Define 'incremental repositioning' in plain language on first use in 'The pattern' H3 block (e.g., 'incremental repositioning — small, consistent changes in the same direction').",
+    "Shorten the third H3 block ('Who should NOT copy this') from 72 words to under 60 words.",
+    "Rewrite the final test in 'The test before you copy' to anchor to Vercel's specific evidence: e.g., 'Count how many words in your H1 assume the visitor already knows your category. Vercel's Jun 2026 headline uses zero category-explaining words. If your H1 needs three or more, you are not ready for this pattern.'",
+    "Remove or reframe the causal claim in 'Who should NOT copy this': replace 'removing that explanation may cost you qualified pipeline if your traffic sources shift' with a condition-first structure (e.g., 'If your traffic shifts toward cold audiences who do not recognize your brand, a headline that assumes category knowledge may fail to convert them').",
+    "Trim the section to under 260 words by removing the interpretive sentence 'No single snapshot shows a dramatic redesign' in 'The pattern' H3 block (not traced to evidence)."
+  ],
+  "riskFlags": [
+    "Causal claim: 'removing that explanation may cost you qualified pipeline if your traffic sources shift' — the evidence does not trace pipeline impact or traffic source composition changes.",
+    "Interpretive claim: 'No single snapshot shows a dramatic redesign' — the evidence does not label changes as dramatic or non-dramatic; this is editorial commentary.",
+    "The phrase 'this works when your company name already completes a category sentence' is not traced to evidence — it is strategic inference, not a documented finding."
+  ],
+  "seoNotes": [
+    "The ## section heading lacks searchable terms entirely — 'When incremental repositioning works' will not rank for 'Vercel homepage', 'Vercel messaging', or 'Vercel positioning'. This is the most SEO-valuable section per the goal, but the heading does not support that goal.",
+    "H3 subheadings ('The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy') are generic and do not contain 'Vercel' or topic terms — missed SEO opportunity for long-tail queries.",
+    "The section does bold-quote verbatim elements correctly: **'Develop. Preview. Ship.'**, **'Build and deploy on the AI Cloud.'** — this supports snippet extraction."
+  ],
+  "rewriteInstruction": "Rewrite the ## heading to include 'Vercel' and a searchable topic term (e.g., 'Should you copy Vercel's homepage messaging shift?'). Define 'incremental repositioning' in plain language on first use. Shorten the third H3 block to under 60 words by removing the interpretive claim about 'qualified pipeline'. Replace the final test with a specific, Vercel-anchored action: 'Count how many words in your H1 assume the visitor already knows your category. Vercel's Jun 2026 headline uses zero. If your H1 needs three or more, you are not ready.' Trim the section to under 260 words by cutting the unsupported 'No single snapshot shows a dramatic redesign' sentence. Reframe the causal claim in 'Who should NOT copy this' to lead with the condition: 'If your traffic shifts toward cold audiences, a headline that assumes category knowledge may fail to convert them.'",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 12,
+    "plainLanguage": 14,
+    "scannability": 9,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

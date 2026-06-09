@@ -60,20 +60,22 @@ export interface SectionMeta {
 }
 
 /**
- * Canonical run order — 5-section architecture (Phase 4N+).
- * 02-at-a-glance dropped: evidence-capped section, not worth iterating.
+ * Canonical run order — 6-section architecture (V5).
+ * Adds 02-quick-answer (featured-snippet block) between intro and belief shift.
  */
 export const SECTION_ORDER: readonly string[] = [
   '01-intro',
+  '02-quick-answer',
   '03-visual-timeline',
   '04-messaging-evolution',
   '05-cta-navigation-evolution',
   '06-lessons-for-saas-teams',
 ] as const;
 
-/** H2 heading to prepend in the assembled article. null = no heading (intro). */
+/** H2 heading fallback for the assembler. null = no heading (intro). Writer output takes precedence. */
 export const SECTION_HEADINGS: Record<string, string | null> = {
   '01-intro':                    null,
+  '02-quick-answer':             '## Quick answer',
   '03-visual-timeline':          '## The Belief Shift',
   '04-messaging-evolution':      '## The Buyer Shift',
   '05-cta-navigation-evolution': '## The Funnel Shift',
@@ -81,131 +83,162 @@ export const SECTION_HEADINGS: Record<string, string | null> = {
 };
 
 export const SECTION_META: Record<string, SectionMeta> = {
-  // ── Phase 4C canonical — 5-section architecture (Phase 4V+) ─────────────────
+  // ── Phase 4C canonical — 6-section architecture (V5 plain-explainer voice) ───
   '01-intro': {
     title: 'Introduction',
     goalDescription:
-      'One paragraph. Names the company, period, and single clearest shift. ' +
-      'Reads like the first line of a Win Report — specific enough that the reader ' +
-      'knows exactly what they are about to learn and why it matters to them.',
+      'One paragraph that answers the search query in the first sentence. Names the ' +
+      'company, the period, and the single biggest shift. Plain language only.',
     writerInstruction:
-`SECTION ROLE: Make the reader need to know what happened.
+`SECTION ROLE: Tell the reader what they will learn — in the first sentence.
 
-BEFORE YOU WRITE — find in the evidence:
-  • What changed most visibly between the first and last snapshot?
-  • Is there anything surprising, counterintuitive, or ironic about that change?
-  • What is the one thing a SaaS founder would immediately want to understand?
+The reader typed "[Company] homepage teardown" into Google. Your first sentence
+must deliver value. No build-up.
 
-ENTRY OPTIONS — pick the one your evidence supports:
-  FINDING   → "[Company] rewrote its homepage headline three times in four years.
-               By the end, it was selling a different product to a different buyer."
-  PARADOX   → "[Company] had [X]. And then it removed all of it."
-  CONTRAST  → "In [year], [Company]'s homepage said [X]. Today it says [Y].
-               This teardown maps what shifted, and what it may signal."
-
-REQUIRED BEATS (in any order):
-  1. Company name and period — in the first sentence
-  2. The single clearest shift — stated directly, not teased
-  3. One sentence that tells the founder what they will be able to test on their
-     own homepage after reading this
+STRUCTURE:
+  • First sentence: company + period + the biggest shift. Plain words. State it directly.
+  • Two to four sentences: one concrete piece of evidence (a quoted headline, a
+    CTA change) — bolded — and what it tells us.
+  • Last sentence: what the reader will be able to test on their own homepage after reading.
 
 RULES:
-  • No heading — do NOT output a ## line. Start with the paragraph directly.
-  • One paragraph only. Under 90 words.
-  • No page elements (H1, nav, CTA labels) mentioned here — they belong in analysis.
-  • No hedge in the first sentence. State the shift directly.`,
+  • No heading. Start with the paragraph.
+  • One paragraph. Under 90 words.
+  • Plain language. No expert terms in the intro.
+  • No hedge in the first sentence — state the shift directly.`,
     wordRange: { min: 55, max: 90 },
     maxRewriteLoops: 0,
     criticMaxTokens: 4096,
   },
 
+  '02-quick-answer': {
+    title: 'Quick Answer',
+    goalDescription:
+      'Three sentences that answer the question completely. Optimised for Google ' +
+      'featured snippet extraction. Plain language. No jargon.',
+    writerInstruction:
+`SECTION ROLE: Answer the search question in three sentences.
+
+A reader who reads only this block must walk away with the full thesis.
+
+STRUCTURE — exactly three sentences:
+  Sentence 1: What [Company] changed. (What → what, stated plainly.)
+  Sentence 2: What this positioning assumes is already true — state the condition,
+              NOT why it "worked." No causation. No "because they own mindshare."
+              Example form: "This positioning assumes visitors already know what [X] does."
+  Sentence 3: Who should NOT copy this and why — describe the company that lacks
+              that condition, in one sentence.
+
+RULES:
+  • Heading: "## Quick answer" (lowercase "answer").
+  • Plain language only. No expert terms.
+  • Maximum 75 words across all three sentences.
+  • NEVER say "this works because", "this succeeded because", "they own mindshare",
+    "visitors arrive knowing", "will cost you conversions", "will cost you traffic."
+  • State conditions, not outcomes. "This works if X is true" is OK.
+    "This worked" or "this will cost you" is NOT OK.`,
+    wordRange: { min: 50, max: 75 },
+    maxRewriteLoops: 1,
+    criticMaxTokens: 4096,
+    forbiddenPhrases: [
+      'this works for them because',
+      'works for them because',
+      'this worked because',
+      'this succeeded',
+      'own mindshare',
+      'visitors arrive knowing',
+      'will cost you conversions',
+      'will cost you qualified traffic',
+      'will cost you traffic',
+      'mindshare with',
+      'brand recognition they have',
+    ],
+  },
+
   '03-visual-timeline': {
     title: 'The Belief Shift',
-    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Names the belief the homepage now asks visitors to accept — and what it ' +
-      'asked before. Identifies the psychological mechanism. Names the tradeoff. ' +
-      'Ends with a founder test they can run today.',
+      'What the new homepage asks visitors to believe. Three H3 sub-blocks. ' +
+      'Searchable heading. Plain explainer voice.',
     writerInstruction:
-`SECTION ROLE: Show what the homepage now asks visitors to BELIEVE — not just what it says.
+`SECTION ROLE: Show what the homepage now expects the visitor to already believe.
 
-BEFORE YOU WRITE — interrogate the evidence:
-  • What assumption about the market does the new homepage embed?
-    (e.g. "visitors already know they need this category" / "AI is table stakes")
-  • What did the OLD homepage assume about the visitor?
-  • Is the shift from a PRODUCT CLAIM to a CATEGORY CLAIM? Or from OUTCOME to IDENTITY?
-  • Is there anything ironic or counterintuitive about what got removed?
+The ## heading must contain searchable terms (e.g. "Shopify homepage positioning:
+how the headline changed between 2021 and 2026"). No clever-only headings.
 
-ENTRY OPTIONS — pick the one your evidence supports:
-  FINDING      → Lead with what the page now requires the visitor to already believe.
-                 "To respond to [Company]'s current headline, you have to already
-                  believe that [X]. The 2023 version made no such demand."
-  PARADOX      → Lead with what the company gave up. "The old headline worked for
-                  anyone who wanted [X]. The new one only works if you accept [Y]."
-  MECHANISM    → Name the GTM pattern first. "There is a positioning move called
-                  [mechanism name]. [Company]'s homepage shows every signal of it."
-  CONTRAST     → Old headline vs new headline in two sentences. Then interrogate the gap.
+STRUCTURE — three H3 sub-blocks, in this order:
 
-REQUIRED BEATS:
-  1. A specific quoted headline or heading change — bolded, dated
-  2. The named mechanism: what GTM or buyer-psychology pattern is this?
-     (e.g. "category claim," "identity recruitment," "market assumption shift,"
-     "aspiration positioning," "credibility-to-outcome pivot")
-  3. What the new positioning ASSUMES about the visitor — stated as an assumption,
-     hedged only once
-  4. The tradeoff — one sentence, not labeled: what this gains vs what it gives up
-  5. Founder test — last sentence: a specific condition they can check right now
+  ### What changed
+  ≤60 words. Quote the old headline (bolded) and the new headline (bolded).
+  State the shift in plain words. No jargon.
 
-2–3 paragraphs. Each under 90 words.
-DO NOT identify buyers here — that is the next section's job.`,
-    wordRange: { min: 140, max: 220 },
+  ### Why it matters
+  ≤60 words. What does the new homepage now assume the visitor already knows or
+  believes? Plain language only. If you need to name a concept (e.g. "category
+  leadership"), define it in the same sentence: "this is category leadership —
+  when buyers already know what your company does before they land on the page."
+
+  ### What it costs
+  ≤60 words. Name what this targeting change gives up — concrete, not abstract.
+  End with a specific test the founder can run on their own page TODAY.
+  Make the test runnable in under five minutes.
+
+ENTRY POINT: read the evidence first, then decide what is most interesting about it.
+Open ### What changed with that — a finding, a paradox, or a concrete contrast.
+Do not default to a generic "the headline shifted from X to Y" opener if the
+evidence makes something more interesting.
+
+DO NOT identify buyers here — that is the next section.`,
+    wordRange: { min: 140, max: 200 },
     criticMaxTokens: 8192,
+    forbiddenPhrases: [
+      'this approach succeeds',
+      'this works if your brand',
+      'this works for companies',
+      'this pattern succeeds',
+      'succeeds if your',
+      'non-branded traffic exceeds',
+      'exceeds 40%',
+      'exceeds 30%',
+      'exceeds 50%',
+      'if your traffic exceeds',
+      'removing this will cost',
+      'will cost conversions',
+      'will cost you',
+      'visitors typically leave',
+      'visitors leave before',
+      'they may leave before',
+    ],
   },
 
   '04-messaging-evolution': {
     title: 'The Buyer Shift',
-    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Names who the page now appears to be written for, who it was written for ' +
-      'before, and what specific language changes signal that shift. Names the ' +
-      'buyer stage and decision context the new page targets.',
+      'Who the page now targets vs. who it used to target. Three H3 sub-blocks. ' +
+      'Searchable heading. Concrete buyer descriptions, no buyer-stage jargon.',
     writerInstruction:
-`SECTION ROLE: Name the buyer. Show the language evidence. Name what changed in the selling motion.
+`SECTION ROLE: Show who the new page is for, in plain language.
 
-BEFORE YOU WRITE — interrogate the evidence:
-  • Who does the OLD vocabulary serve? (beginners, team leads, growth operators, procurement...)
-  • Who does the NEW vocabulary serve? (different stage? different committee member? different awareness level?)
-  • What specific words EXITED that signal the old buyer? What ENTERED that signal the new one?
-  • What decision stage does the new language target?
-    (awareness / consideration / procurement / expansion)
-  • Is there a buying-committee shift? (end user → economic buyer, team lead → CTO...)
+The ## heading should include "messaging" or "audience" plus the company name.
 
-ENTRY OPTIONS — pick the one your evidence supports:
-  CONTRAST      → Two buyers, two sentences. "The old page spoke to [buyer A].
-                   The new one speaks to [buyer B]." Then show the language evidence.
-  PRACTITIONER  → What only someone who has done B2B sales would notice.
-                  "No company rewrites 'Start your business' to 'All-in-one platform'
-                   to serve the same buyer. That is a different sales conversation."
-  OBJECTION     → Surface the question the founder reader is already forming.
-                  "The obvious question: who exactly is [Company] talking to now?"
-  MECHANISM     → Name the sales-motion shift first.
-                  "This is a motion change — from product-led to sales-assisted.
-                   The language shift is the evidence."
+STRUCTURE — three H3 sub-blocks:
 
-REQUIRED BEATS:
-  1. Old buyer vs new buyer — named specifically, not as "different audience"
-  2. Specific quoted language changes — meta description, H1, CTA labels, nav items — bolded
-  3. Named mechanism: what selling motion, buyer stage, or decision context does this serve?
-     (e.g. "procurement-stage buyer," "category-aware evaluator," "expansion motion,"
-     "demo-first sales cycle," "ICP narrowing")
-  4. What this targeting change COSTS — who is now underserved by the page
-  5. Founder test — last sentence: "Who is YOUR homepage currently written for —
-     and is that the buyer who actually shows up to sales calls?"
-     (make it specific to what this evidence showed, not generic)
+  ### Who the old page served
+  ≤60 words. Describe the old buyer concretely — "the small-business owner setting
+  up their first online store," not "the discovery-stage buyer." Quote one or two
+  pieces of old vocabulary that prove it — bolded.
 
-2–3 paragraphs. Each under 90 words.
-State the self-serve→enterprise shift HERE if applicable — do not repeat it in other sections.`,
-    wordRange: { min: 140, max: 220 },
+  ### Who the new page serves
+  ≤60 words. Describe the new buyer concretely. Quote new vocabulary — bolded.
+  What stage of the buying process do they appear to be in? Plain words.
+
+  ### What this means for the sales process
+  ≤60 words. Plain-language description of how this changes what happens after the
+  visitor lands — does the page expect a sales call, a self-serve signup, or
+  something else? End with a question the founder should ask about their own page.
+
+State the self-serve → sales-led shift HERE if it applies. Do not restate it elsewhere.`,
+    wordRange: { min: 140, max: 200 },
     criticMaxTokens: 8192,
     forbiddenPhrases: [
       'this increased conversions',
@@ -213,98 +246,83 @@ State the self-serve→enterprise shift HERE if applicable — do not repeat it 
       'A/B tested',
       'this proved',
       'this improved performance',
+      'procurement-stage',
+      'discovery-stage',
+      'qualification filter',
+      'language for buyers who control',
+      'this is language for',
+      'this vocabulary signals that buyers',
+      'removing category explanations may cost',
+      'removing this explanation will cost',
+      'will cost you qualified',
+      'removing that explanation',
     ],
   },
 
   '05-cta-navigation-evolution': {
     title: 'The Funnel Shift',
-    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Shows how the conversion path changed. Names the friction-to-commitment ' +
-      'ratio shift. Explains who this path now serves and who it filters out.',
+      'How the CTA path changed. Three H3 blocks. Audit-style. Concrete, plain, scannable.',
     writerInstruction:
-`SECTION ROLE: Show the funnel architecture change. Name what it filters. Name the cost.
+`SECTION ROLE: Show what changed in the conversion path. Make it auditable.
 
-BEFORE YOU WRITE — interrogate the evidence:
-  • Did the CTA set EXPAND or CONTRACT? (more options vs fewer, more friction vs less)
-  • What STAGE of the buyer journey did removed CTAs serve?
-    (awareness / consideration / trial intent / direct purchase)
-  • What do the ADDED CTAs assume the visitor already knows or believes?
-  • Is there a signal about expected sales cycle length in these changes?
-  • What type of visitor does this new path FILTER OUT vs CAPTURE?
+The ## heading should include "CTA" or "conversion path" plus the company name.
 
-ENTRY OPTIONS — pick the one your evidence supports:
-  FINDING      → Lead with the count or the most striking single removal.
-                 "Every mid-funnel CTA disappeared. What replaced them assumes
-                  the visitor already knows what they want."
-  PARADOX      → Lead with what seems contradictory.
-                 "[Company] added more CTAs but reduced the paths to conversion."
-  PRACTITIONER → What a funnel architect would immediately notice.
-                 "Four entry points became two. That is not simplification —
-                  that is a qualification decision."
-  CONTRAST     → Old CTA set vs new, then name the funnel theory behind the change.
+STRUCTURE — three H3 sub-blocks:
 
-REQUIRED BEATS:
-  1. Specific old CTA labels vs new — bolded, the actual text
-  2. What the removed CTAs were serving (buyer stage, intent level)
-  3. Named mechanism: what funnel or sales concept explains this?
-     (e.g. "qualification filter," "intent signal," "friction-to-commitment ratio,"
-     "mid-funnel collapse," "self-selection architecture")
-  4. Who this path CANNOT serve anymore — named specifically
-  5. Founder test — last sentence: a specific audit they can run on their own CTA set
-     (e.g. "count how many of your CTAs require zero commitment — and what % of
-      trials they generate")
+  ### What changed
+  ≤60 words. State the count or the most striking single change in the first sentence.
+  Old CTAs (bolded) vs new (bolded). What was removed, what replaced it.
 
-2 tight paragraphs. Each under 90 words.
-State CTA friction direction ONCE here — do not restate in the lessons section.`,
-    wordRange: { min: 120, max: 200 },
+  ### Who this filters out
+  ≤60 words. Describe the visitor type the new path no longer serves — concretely.
+  Plain language: "people who are still researching and not ready to start a trial,"
+  not "discovery-stage visitors."
+
+  ### Audit your own page
+  ≤60 words. Give the founder one specific check they can run on their own homepage.
+  Not generic — runnable in five minutes. Anchor it to what THIS company's evidence
+  revealed about CTA changes.
+
+State CTA-friction direction ONCE here. Do not restate in lessons.`,
+    wordRange: { min: 120, max: 180 },
     criticMaxTokens: 8192,
   },
 
   '06-lessons-for-saas-teams': {
     title: 'The Marketing Maturity Lesson',
-    writerModel: 'claude-opus-4-5',
     goalDescription:
-      'Names the meta-pattern this evolution represents. Names the prerequisite ' +
-      'that made it viable for THIS company. Tells founders what to check before ' +
-      'copying it. Does not restate what was already shown in the analysis sections.',
+      'Should the founder copy this? Four H3 blocks for maximum SEO and the clearest ' +
+      'possible decision support. The most SEO-valuable section in the article.',
     writerInstruction:
-`SECTION ROLE: Name the pattern. Give the prerequisite. Name who should NOT copy this.
+`SECTION ROLE: Help the founder decide whether to copy this move.
 
-BEFORE YOU WRITE — interrogate the evidence:
-  • What is the meta-pattern? (e.g. "brand-led positioning replacing category-led,"
-    "identity recruitment replacing product education," "proof removal at scale")
-  • What does this company have that MAKES this evolution viable?
-    (brand recognition, market share, word-of-mouth, category ownership...)
-  • What would happen to a company WITHOUT that prerequisite that tried to copy this?
-  • Is there a specific risk the new positioning creates downstream?
-    (onboarding mismatch, proof burden, buyer expectation gap...)
-  • What is the ONE test a founder can run to know whether they are ready for this move?
+The ## heading is the most SEO-critical in the article. Make it explicit:
+  "Should SaaS companies copy [Company]'s homepage strategy? When it works and when it doesn't"
 
-ENTRY OPTIONS — pick the one your evidence supports:
-  WARNING      → Open with who should NOT copy this before telling anyone to admire it.
-                 "Do not copy this. Not unless [specific prerequisite] is already true."
-  MECHANISM    → Name the pattern class first — then show this company as the example.
-                 "[Pattern name] is when a market leader [description]. This is what
-                  [Company]'s evolution looks like from the outside."
-  PRACTITIONER → What a GTM advisor would tell a client who said "I want to do what
-                  [Company] did." Name the condition check before the enthusiasm.
-  PARADOX      → Name what seems like a mistake before explaining why it was not —
-                 for THEM, given what they had.
+STRUCTURE — four H3 sub-blocks, in this order:
 
-REQUIRED BEATS:
-  1. The meta-pattern — named in one sentence, not restated from earlier sections
-  2. The specific prerequisite THIS company had — concrete, not vague
-     ("Shopify's URL completes the category sentence before the headline loads"
-      is concrete. "They had strong brand awareness" is not.)
-  3. What happens to a company that copies this without the prerequisite — name it
-  4. The tradeoff of the WHOLE EVOLUTION — one sentence summing the entire arc
-  5. Founder test — last sentence: a specific, named condition to check before
-     making a similar move on their own homepage. A real test, not a platitude.
+  ### The pattern
+  ≤60 words. Name the meta-pattern this evolution shows, in plain words. NEW layer —
+  do not restate the belief shift, buyer shift, or funnel shift.
 
-3 short paragraphs. Each under 90 words.
-Do NOT restate the belief shift, buyer shift, or funnel shift — add the new layer only.`,
-    wordRange: { min: 150, max: 240 },
+  ### Who should copy this
+  ≤60 words. Describe the company that has the specific advantage this move requires.
+  Concrete: "if a stranger can guess what your product does from the URL alone,
+  you have the brand recognition this requires." Not abstract.
+
+  ### Who should NOT copy this
+  ≤60 words. The mirror image. Describe the company that does not have the advantage,
+  and what happens to them if they copy this anyway. This is the most important
+  block for SEO traffic.
+
+  ### The test before you copy
+  ≤60 words. One concrete test the founder can run RIGHT NOW. Under five minutes.
+  Anchored to what THIS company's evidence revealed.
+
+Three short paragraphs + the test block.
+Do NOT restate the belief shift, buyer shift, or funnel shift from earlier sections.`,
+    wordRange: { min: 180, max: 260 },
     criticMaxTokens: 8192,
   },
   // ── Phase 4B legacy IDs (kept for compose-section.ts backward compat) ────
@@ -435,220 +453,245 @@ export function buildAndCacheSectionEvidence(
 // ─── Prompt builders ──────────────────────────────────────────────────────────
 
 export const WRITER_SYSTEM =
-`You are writing one section of a CRO teardown article for B2B SaaS founders.
+`You are writing one section of a CRO teardown article that is published on a blog
+and reached primarily through Google search.
 
-Your reader has 90 seconds of patience. They are smart, skeptical, and have seen
-a hundred surface-level "lessons" articles. They will stop reading the moment they
-sense a template. Your job is to give them something they have not thought of before,
-backed by evidence they can verify themselves.
+Your reader is split: some are experienced SaaS marketers, some are founders still
+learning the vocabulary. Write for BOTH. That means: plain language by default,
+expert terms only when they are themselves search terms — and always followed by
+a plain-language explanation in the same sentence.
 
-─── VOICE ───────────────────────────────────────────────────────────────────────
+The reader is here to UNDERSTAND, not to admire the thinking. They will leave the
+moment they sense you are writing for other strategists.
 
-Study how Conversion Rate Experts writes their Win Reports. These are the specific
-patterns you must replicate:
+─── THE NINE RULES ────────────────────────────────────────────────────────────
 
-FINDING FIRST, EXPLANATION SECOND.
-State what happened. Then ask why. Never build to the reveal.
-Wrong: "When we look at how Intercom evolved its homepage, we can observe..."
-Right: "Intercom dropped every CTA that required zero commitment. Here is why that matters."
+1. NEVER OVERCLAIM. Hedge causation and quantity, never the facts.
 
-SHORT SENTENCE. THEN A LONGER ONE THAT EXPLAINS IT. THEN SHORT AGAIN.
-Vary rhythm like a practitioner talking, not an editor writing.
-Wrong: "The headline changed significantly over the three-year period, shifting from a product-outcome framing that addressed immediate user needs to a more category-defining claim."
-Right: "The headline changed twice. First it named what the product does. Then it named what the buyer should become."
+   BAD:  "Shopify excludes most of their historical acquisition funnel."
+         (Cannot prove "most" without traffic data.)
+   GOOD: "Shopify narrows the type of visitor the homepage is built to serve."
 
-NAME THE PSYCHOLOGICAL MECHANISM.
-CRE names "intention-action gap," "temporal discounting," "effort heuristic."
-You must name the GTM or buyer-psychology mechanism behind each observation.
-Not: "removing CTAs may have filtered for higher-intent visitors"
-Yes: "this is a qualification filter — a deliberate friction increase that trades volume for intent signal"
+   Hedge words to use when making an inference about WHY or WHAT MAY HAPPEN:
+     suggests · signals · indicates · may · likely · points to · is consistent with
 
-NEVER ANNOUNCE YOUR STRUCTURE.
-No "The tradeoff is X vs Y." No "**So what?**" No "In this section..."
-The tradeoff must be named — but as a sentence, not a label.
-The founder takeaway must land — but as the last sentence, not a section header.
-Wrong: "**So what?** Ask whether your page is doing the same."
-Right: "Ask whether your page is doing the same — before your next ad campaign does it for you."
+   Hedge the inference. Do not hedge the fact.
+     "The headline changed." (fact — never hedge this)
+     "This suggests the company is targeting a different buyer." (inference — hedge)
 
-TREAT THE READER AS SMART.
-Plant the question before the answer. "Notice what is missing from that list."
-Let them arrive one beat before you explain. Then confirm.
+2. EVERY EXPERT TERM SHIPS WITH A PLAIN-LANGUAGE TRANSLATION — once.
+   Then use the plain language only.
 
-HEDGING RULE — practitioner precision, not legal caution:
-Hedge the MECHANISM (why it works), never the FINDING (what changed).
-Wrong: "This can be read as a possible move toward..."
-Right: "The headline changed. Whether that was a deliberate repositioning or a copy refresh is not verifiable — but the effect on buyer signal is visible."
-Hedging every sentence makes you sound like you don't know what you are talking about.
-Hedge once, precisely, where the inference actually carries risk.
+   BAD: "This is procurement-stage framing. The procurement-stage buyer expects..."
+        (Term repeated, jargon without explanation.)
+   GOOD: "The page now speaks to buyers who are already comparing vendors.
+          They expect different things from the page than someone just learning what Shopify is."
 
-─── ENTRY POINT — the most important rule in this prompt ─────────────────────
+   Allowed expert terms (because they are themselves searched):
+     positioning · messaging · sales funnel · conversion · onboarding
+     buyer journey · product-led growth · sales-led growth · ICP
+     category leader · A/B test · message-market fit
 
-Before you write a word, ask: "What is the single most interesting thing in this evidence?"
+   FORBIDDEN as repeated concepts (use once with translation, then drop entirely):
+     procurement-stage · discovery-stage · qualification filter · category ownership
+     aspiration positioning · identity recruitment · intent signal · working memory
+     ICP narrowing · buyer-stage mismatch · friction-to-commitment ratio
 
-The answer determines how you open. There are six possible entry types. Choose the
-one that fits THIS evidence — not the one that fits a template:
+   These are not search terms. They are strategist-to-strategist words. Replace with
+   what they actually mean.
 
-  FINDING   — the result or shift is surprising enough to lead with baldly.
-               "Shopify removed every 'Explore' CTA. All of them."
+3. NO STACKED ABSTRACT NOUNS.
 
-  PARADOX   — the company did something counterintuitive given what they had.
-               "Intercom had a product people loved. Then it stopped talking about the product."
+   BAD:  "Aspiration positioning through category language creates procurement-stage
+          qualification."
+   GOOD: "The page stops explaining what Shopify is, and starts filtering for visitors
+          who already know."
 
-  PRACTITIONER OBSERVATION — what only someone who has done this work would notice.
-               "No sales team rewrites navigation on a whim. Eight items in, eight items out suggests a deliberate audit, not a refresh."
+   Test: if a sentence has three or more abstract nouns in a row, rewrite it as
+   something concrete — a person, an action, an outcome.
 
-  OBJECTION — surface the question the reader is already asking.
-               "The obvious question: why would a company with 25,000 customers stop talking about customer count?"
+4. NO LECTURE MODE.
 
-  CONTRAST  — old vs new in two sentences, then interrogate the gap.
-               "2021: 'The platform commerce is built on.' 2026: 'Be the next AI all-star.' That is not a copy update. That is a different value proposition for a different buyer."
+   BAD pattern:  "This is X. The prerequisite is Y. The tradeoff is Z."
+                 (Reads like a textbook chapter.)
+   GOOD pattern: "Here is what changed. Here is what it means. Here is how to check
+                  it on your own site."
 
-  MECHANISM — name the psychology first, then show the evidence that maps to it.
-               "There is a GTM pattern called category abandonment — when a market leader stops defending the category and starts recruiting an identity instead. Shopify's homepage shows every signal of it."
+   Every paragraph must give the reader a reason to keep reading. State the change,
+   then explain why it matters to THEM specifically.
 
-Do NOT default to CONTRAST every time because it is the easiest. If the most
-interesting thing is a paradox, open on the paradox. Let the evidence lead.
+5. HEADINGS MUST INCLUDE SEARCHABLE WORDS.
 
-─── MANDATORY CONTENT — every section must contain all four ─────────────────
+   The ## section heading is read by Google. Clever headings hurt rankings.
 
-1. A SPECIFIC FINDING stated directly. One sentence. No hedge on the opening claim.
-2. A NAMED MECHANISM — the psychological, GTM, or conversion principle at work.
-   Use real terminology: "qualification filter," "category claim," "intent signal,"
-   "social proof collapse," "friction-to-commitment ratio," "buyer stage mismatch."
-3. A TRADEOFF — not labeled, just named. Two things in tension. One sentence.
-   "That trades discovery-stage visitors for procurement-stage buyers."
-4. A FOUNDER TEST — the last sentence. A specific question or condition the founder
-   can check on their own homepage RIGHT NOW. Not generic advice. A real test.
-   Wrong: "Make sure your CTAs match your traffic quality."
-   Right: "Open your analytics. If more than 30% of your trial starts come from
-   a 'Learn more' click, removing that CTA costs you pipeline, not just traffic."
+   CLEVER (kill these):
+     "Do not copy this unless your URL already completes the category sentence"
+     "The page stopped talking to the team lead"
 
-─── FORMATTING ──────────────────────────────────────────────────────────────
+   SEARCHABLE (use these):
+     "Why Shopify's AI headline works for Shopify — but not for most SaaS companies"
+     "Shopify's homepage shift: from product explanation to identity message"
 
-• First line of your response: the ## heading. 6–12 words. Name the actual shift
-  for THIS company — not a generic label. Not "The Belief Shift." Not "Messaging Analysis."
-  Name what actually happened. "Shopify stopped recruiting beginners" is a heading.
-  "Messaging evolution" is not.
+   Searchable terms to include in headings when relevant:
+     [Company name] · homepage · positioning · messaging · headline · CTA
+     conversion · landing page · SaaS · AI
 
-• Bold every verbatim quote from the company's website: **"quoted text"**
-  This includes headlines, CTA labels, navigation items, section headings, meta descriptions.
-  Plain quotes with no bold = required fix.
+6. MIX SENTENCE RHYTHM. Predictable rhythm becomes invisible.
 
-• No bullet lists unless the section instruction explicitly permits them.
-• No paragraph over 90 words.
-• No subheadings within a section.
+   BAD pattern: same length and structure repeated.
+     "The page shifted from X to Y. The new headline does Z. This signals A.
+      The tradeoff is B."
 
-─── HARD RULES — inviolable ─────────────────────────────────────────────────
+   GOOD pattern: short, then long, then short.
+     "Shopify can afford to skip the category explanation.
+      Most companies cannot — their visitors arrive without knowing what the product does.
+      That is the difference between brand-led positioning and vague copy."
 
-1. Use ONLY the evidence provided. No invented stats, dates, or claims.
-2. Never claim a change improved conversion, increased revenue, or caused any outcome.
-3. Never claim company intent: not "Shopify decided to," not "their strategy was to."
-4. Every paragraph anchored to THIS company's specific evidence.
-   If the paragraph could appear in a teardown of a different company, rewrite it.
-5. Never use: "this increased conversions" / "A/B tested" / "this drove revenue" /
-   "based on their strategy" / "this improved performance."
-6. Use: "from visible evidence" / "the pattern is consistent with" /
-   "this functions as" / "the effect is observable even if the intent is not."
+7. STATE THE PRACTICAL LESSON EARLY. Do not bury it.
 
-─── COMPRESSION — mandatory ──────────────────────────────────────────────────
+   Each H3 sub-block should make the takeaway clear within its first two sentences.
+   The reader should not have to read 500 words to find out what they should do.
 
-Each section has ONE job. Make the point. Stop.
-The following conclusions appear only ONCE across the entire article:
-  • Category claim / belief shift → first analytical section only
-  • Self-serve vs enterprise buyer identification → buyer section only
-  • CTA friction direction → funnel section only
-Do not restate in lessons what was already shown in analysis.`;
+   GOOD: "The lesson is not 'write a more aspirational headline.' The lesson is:
+          only remove the category explanation when your brand already does that work
+          before the page loads."
+
+   Quotable, useful, early.
+
+8. WRITE FOR THE READER WHO IS STILL LEARNING — without losing authority.
+
+   The expert reader can skip past the explanation. The learning reader needs it.
+   You serve both with: "Expert term — and what it means."
+
+   "This is category leadership: when buyers already know what your company does
+    before they land on the page."
+
+9. ATTACH A CONDITION TO EVERY CAUSAL STATEMENT.
+
+   BAD:  "This will cost qualified pipeline."
+   GOOD: "This may cost qualified pipeline if your homepage still depends on
+          non-branded search or cold paid traffic."
+
+   Confident, not reckless.
+
+─── THE SELF-CHECK — RUN BEFORE YOU SUBMIT ──────────────────────────────────
+
+Before producing your final output, mentally walk this checklist on your own draft.
+Rewrite any line that fails.
+
+  [ ] Did I use any term from the FORBIDDEN list more than once?
+      → If yes, replace the second use with plain language.
+
+  [ ] Are there sentences with three or more abstract nouns in a row?
+      → If yes, rewrite with concrete subjects (a person, an action, an outcome).
+
+  [ ] Did I make any "this caused X" claim without attaching a condition?
+      → If yes, add "if [specific condition]" or hedge with "may" / "suggests".
+
+  [ ] Is any paragraph over 60 words?
+      → If yes, split it. (Intro: 90-word cap. All other sections: 60-word cap.)
+
+  [ ] Does the ## section heading contain at least one searchable term?
+      → If no, rewrite it with company name, "homepage", or "positioning" in it.
+
+  [ ] Does every H3 sub-block deliver its takeaway in the first two sentences?
+      → If no, move the lesson up.
+
+  [ ] Did I state any company intent ("Shopify decided to...")?
+      → If yes, rewrite as observation ("the page shifted from X to Y").
+
+─── HARD RULES — never violate ──────────────────────────────────────────────
+
+1. Use ONLY the evidence provided. No invented stats, dates, headlines, or claims.
+2. Never claim a change improved conversion or caused a measurable outcome.
+3. Never claim company intent.
+4. Bold every verbatim website quote: **"quoted text"** — applies to headlines,
+   CTA labels, navigation items, section headings, meta descriptions.
+5. No bullet lists unless explicitly permitted by the section instruction.
+
+─── COMPRESSION — these conclusions appear ONCE in the article ──────────────
+
+  • Category claim / belief shift  → Belief Shift section only
+  • Self-serve vs sales-led buyer  → Buyer Shift section only
+  • CTA friction direction         → Funnel Shift section only
+
+Do not restate in the lessons section what was already shown in analysis.`;
 
 
 // Critic system prompt — threshold is stated in the user prompt so this stays cacheable.
 const CRITIC_SYSTEM =
-`You are a strict editorial critic for CRO teardown articles about SaaS homepages.
+`You are a strict editorial critic for SEO-optimised CRO teardown articles.
+The audience is split between expert marketers and founders still learning.
+The article must work for both.
+
 Output ONLY valid JSON. No text before or after the JSON object.
-JSON SAFETY: When you quote text from the draft inside any string value (issues, requiredFixes, etc.),
-use SINGLE quotes — 'like this'. Never put a raw double-quote character inside a JSON string value;
-it breaks the parse. Refer to the draft's bold quotes by their words, not by reproducing **"..."** verbatim.
+JSON SAFETY: When you quote text from the draft inside any string value,
+use SINGLE quotes — 'like this'. Never put a raw double-quote inside a JSON string value.
 
 SCORING RUBRIC — score each dimension, then sum to 100:
 
 • evidenceAccuracy (max 25)
-  Every claim traces to the provided evidence. No invented stats, dates, or company names.
-  PENALISE -5 per phrase that implies a fact not in the evidence.
-  PENALISE -10 per any claim of conversion outcome, revenue impact, or A/B test.
+  Every claim traces to the provided evidence. No invented facts.
+  PENALISE -5 per claim not traceable to evidence.
+  PENALISE -10 per outcome/causation claim ("this caused", "this increased").
+  PENALISE -3 per causal statement without an attached condition
+    (e.g. "This will cost pipeline" without "if [condition]").
   HARD CAP: any unsupported factual claim → cap total at 70.
 
-• riskControl (max 10)
-  Interpretations are appropriately hedged. No causation claimed. No intent attributed.
-  BUT: hedging must be precise — one hedge per inference, not a hedge per sentence.
-  PENALISE -3 per unlabelled interpretation presented as confirmed fact.
-  PENALISE -4 if hedging is mechanical ("can be read as" appearing 3+ times) — this
-  signals the writer is protecting themselves, not informing the reader.
-  PENALISE -3 if a finding (what changed) is hedged — findings are facts, not inferences.
+• plainLanguage (max 20)
+  The section avoids strategist-to-strategist jargon. Expert terms appear at most
+  once and ship with a plain-language explanation in the same sentence.
+  PENALISE -4 per use of these terms AFTER their first appearance:
+    procurement-stage · discovery-stage · qualification filter · category ownership
+    aspiration positioning · identity recruitment · intent signal · working memory
+    ICP narrowing · buyer-stage mismatch · friction-to-commitment ratio
+  PENALISE -3 per sentence with 3+ abstract nouns stacked together.
+  PENALISE -4 if any expert term is used without an immediate plain-language definition.
+  HARD CAP: if any forbidden term appears 3+ times → cap total at 65.
+
+• scannability (max 15)
+  Section works for a Google reader who skims.
+  PENALISE -4 per paragraph over 60 words (intro exempt, capped at 90).
+  PENALISE -5 if an analytical section (03/04/05/06) is missing its H3 subheadings.
+  PENALISE -3 per H3 block whose body exceeds 60 words.
+  PENALISE -3 if the practical takeaway is buried — not in the first two sentences of an H3 block.
+
+• searchableHeadings (max 10)
+  Headings contain searchable terms.
+  PENALISE -5 if the ## section heading is "clever-only" with no search terms
+    (e.g. "The page stopped talking to the team lead").
+  PENALISE -3 if the heading lacks the company name OR a topic term
+    ("homepage", "positioning", "messaging", "CTA", "conversion").
 
 • specificity (max 15)
   Section is anchored to THIS company's evidence. Zero generic SaaS commentary.
-  PENALISE -5 per paragraph that could appear word-for-word in a different company's teardown.
-  HARD CAP: if the section could apply to any website without changing a word → cap at 5.
+  PENALISE -5 per paragraph that could appear in a different company's teardown.
 
-• entryPointOriginality (max 15)
-  The opening reflects WHAT THE EVIDENCE MAKES INTERESTING — not a default template.
-  The writer had six entry types to choose from (finding / paradox / practitioner /
-  objection / contrast / mechanism). The correct choice depends on the evidence.
-  PENALISE -8 if the writer defaulted to CONTRAST when a more interesting entry was available.
-    Signs of lazy contrast: opening with "Old headline: X / New headline: Y" when
-    the paradox, mechanism, or finding was far more compelling.
-  PENALISE -6 if the opening is generic (could open any teardown section).
-  PENALISE -4 if the opening announces its structure ("In this section we will examine...").
-  REWARD: if the opening type is a genuine match to the most interesting aspect of
-  the evidence, no deduction — even if it is a contrast. The test is FIT, not novelty.
+• rhythmAndOpening (max 10)
+  Sentence length varies. The opening reflects what the evidence makes most interesting,
+  not a template default.
+  PENALISE -3 if all sentences are roughly the same length.
+  PENALISE -4 if the opening is a generic template ("The headline shifted from X to Y")
+    when the evidence supported a more interesting entry (a paradox, a finding, a contrast).
 
-• mechanismNaming (max 10)
-  The section names the psychological, GTM, or conversion principle behind the observation.
-  "Qualification filter," "category claim," "intent signal," "buyer stage mismatch,"
-  "identity recruitment," "proof removal at scale" — real terminology, not paraphrase.
-  PENALISE -6 if no mechanism is named — only observations, no principle.
-  PENALISE -3 if the mechanism is vague ("a shift in targeting") rather than named.
-  EXEMPT: 01-intro (no mechanism required).
+• founderTakeaway (max 5)
+  Each H3 sub-block delivers its takeaway early — first two sentences.
+  The section ends with a specific, runnable test the founder can do in <5 min.
+  PENALISE -3 if the final test is generic ("audit your CTAs") instead of specific
+    ("count how many primary CTAs above the fold require zero commitment").
 
-• founderSharpness (max 15)
-  Does the section give a founder something specific they can test or decide?
-  This requires ALL THREE — check for CONTENT, not for labeled tags:
-  (a) A TRADEOFF — two things in tension, named in one sentence. Not labeled "The tradeoff:".
-      Just a sentence that makes both sides visible.
-  (b) A FOUNDER TEST — the last sentence. A specific condition, question, or audit
-      they can run on their own homepage RIGHT NOW. Not generic ("know your audience").
-      Specific: "open your analytics and look at what % of trial starts come from
-      your highest-friction CTA."
-  (c) The test is ANCHORED to what this evidence showed — not a floating principle.
-  PENALISE -7 if no tradeoff present (except 01-intro).
-  PENALISE -6 if no founder test present (except 01-intro).
-  PENALISE -4 if the founder test is generic, unanchored to the evidence.
-  PENALISE -3 if either is labeled with a bold header rather than woven in.
-
-• clarity (max 10)
-  Punchy. Varied sentence rhythm. No padding. Short sentence. Then a longer explanatory one.
-  PENALISE -3 per filler sentence with no evidence anchor.
-  PENALISE -3 if all sentences are roughly the same length (monotone — no punch).
-  PENALISE -2 per phrase that announces rather than shows ("this demonstrates that...").
-
-HARD CAPS — apply before summing:
+HARD CAPS:
   Any conversion outcome claim without data → cap total at 60
-  No named mechanism (except intro) → cap total at 75
-  No tradeoff present (except intro) → cap total at 75
-  No founder test present (except intro) → cap total at 75
-  Opening is pure template / could open any teardown → cap entryPointOriginality at 3
-  Section is purely descriptive — no mechanism, no buyer psychology → cap total at 65
-  "can be read as" or equivalent appears 3+ times → cap riskControl at 4
-  Word count exceeds section max (220 / 200 / 240 for analytical sections) → cap total at 80
+  Section is missing H3 subheads (analytical sections only) → cap total at 75
+  Section reads like strategist-to-strategist throughout → cap plainLanguage at 5
 
 CALIBRATION:
-  90–100: Publication-ready. Real insight, original entry, named mechanism, specific
-          founder test, no padding. Reserve this band — do NOT award for accurate-but-flat.
-  80–89:  Passes. Has 1–2 fixable issues. requiredFixes must have ≥1 entry.
-  70–79:  Needs a rewrite. Usually a template entry point or missing mechanism.
-  Below 70: A hard cap fired or the section is mostly generic description.
+  90–100: Ready to publish. Plain explainer voice, scannable, specific, no jargon overuse.
+  80–89:  Passes with fixable issues. requiredFixes ≥1.
+  70–79:  Needs rewrite — usually jargon overuse or buried takeaway.
+  Below 70: A hard cap fired or it reads like a textbook chapter.
 
-VARIANCE RULE: If you assign the same score to two or more sections, re-read each
-and justify explicitly — or vary the score.
+VARIANCE RULE: if two sections get the same score, justify it or vary it.
 
 requiredFixes must never be empty if score < 90.
 rewriteInstruction must never be empty if score < 90.`;
@@ -688,8 +731,8 @@ export function buildCriticPrompt(
   minScore: number,
 ): string {
   const meta = getSectionMeta(sectionId);
-  const isIntro = sectionId === '01-intro';
-  const introExempt = isIntro ? '\n   EXEMPT: 01-intro.' : '';
+  const isIntro = sectionId === '01-intro' || sectionId === '02-quick-answer';
+  const analyticalSection = !isIntro;
 
   return `Score and diagnose this ${meta.title} section draft.
 
@@ -703,11 +746,14 @@ REQUIRED CHECKS — answer each before scoring:
 1. Is every paragraph anchored to THIS company's specific evidence (quoted phrases, dated changes, named elements)?
 2. Does the section achieve the stated SECTION GOAL above?
 3. Are there any paragraphs that could appear word-for-word in a teardown of a different company?
-4. Is the hedging PRECISE — one hedge per inference where the inference actually carries risk? Or is it mechanical ("can be read as" appearing 3+ times, hedging every sentence)?
-5. ENTRY POINT: Which of the six entry types was used (finding / paradox / practitioner / objection / contrast / mechanism)? Was it the best fit for the most interesting aspect of this evidence, or a default CONTRAST when a stronger move was available?
-6. MECHANISM: Is a named GTM, buyer-psychology, or conversion principle present (e.g., "qualification filter," "category claim," "intent signal," "buyer stage mismatch")? Or only observations with no named principle?${introExempt}
-7. TRADEOFF: Is a tradeoff woven into the prose as content — two things in tension, one sentence — NOT labeled as "The tradeoff:"?${introExempt}
-8. FOUNDER TEST: Is the LAST SENTENCE a specific, actionable test the founder can run on their own homepage right now? Not generic advice ("know your audience") — a real condition or audit ("open your analytics and check what % of trials come from your lowest-friction CTA").${introExempt}
+4. PLAIN LANGUAGE: Are any of the following terms used more than once (second use = required fix)?
+   procurement-stage · discovery-stage · qualification filter · category ownership · aspiration positioning
+   identity recruitment · intent signal · working memory · ICP narrowing · buyer-stage mismatch · friction-to-commitment ratio
+   Also flag: any expert term used WITHOUT an immediate plain-language definition.
+5. H3 SUBHEADINGS: ${analyticalSection ? `This is an analytical section — the required H3 sub-blocks MUST be present. List which H3 headings are present and which are missing.` : 'Not required for intro/quick-answer sections.'}
+6. SEARCHABLE HEADING: Does the ## section heading contain the company name, "homepage", "positioning", "messaging", "CTA", or "conversion"? Or is it a clever-only heading with no searchable terms?
+7. PARAGRAPH LENGTH: Are there any paragraphs over ${isIntro ? '90' : '60'} words? State approximate count per paragraph. Flag each violation.
+8. FOUNDER TAKEAWAY: ${analyticalSection ? `Does each H3 sub-block deliver its practical takeaway in the first two sentences? Is the final H3 block a specific, runnable test (under five minutes), anchored to this company's evidence?` : 'Not applicable for intro/quick-answer.'}
 9. BOLD QUOTES: Is every verbatim website quote (headlines, CTAs, nav items, section headings, meta descriptions) in **"bold quotes"**? Plain quotes only = required fix.
 10. WORD COUNT: Is the section within ${meta.wordRange.min}–${meta.wordRange.max} words? State approximate count. Flag if over.
 
@@ -734,12 +780,12 @@ Output the JSON object now. Required shape:
   "rewriteInstruction": "<one-paragraph instruction for the rewriter — empty string only if score >= 90>",
   "dimensionScores": {
     "evidenceAccuracy": <0–25>,
-    "riskControl": <0–10>,
+    "plainLanguage": <0–20>,
+    "scannability": <0–15>,
+    "searchableHeadings": <0–10>,
     "specificity": <0–15>,
-    "entryPointOriginality": <0–15>,
-    "mechanismNaming": <0–10>,
-    "founderSharpness": <0–15>,
-    "clarity": <0–10>
+    "rhythmAndOpening": <0–10>,
+    "founderTakeaway": <0–5>
   }
 }`;
 }

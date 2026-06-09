@@ -1,0 +1,39 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The ## heading is clever-only ('When incremental repositioning works and when it doesn't') with no searchable terms — missing 'Vercel', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "Expert term 'incremental repositioning' is used twice (paragraph 1 and implied throughout) without a plain-language definition attached to its first use",
+    "Paragraph 1 under 'The pattern' is 67 words — exceeds 60-word limit",
+    "The final test is specific but not truly <5 minutes runnable — 'count how many words assume category knowledge' requires interpretation of what 'category-explaining' means, not a clear binary checklist"
+  ],
+  "requiredFixes": [
+    "Add 'Vercel' or 'homepage' to the ## heading — e.g. 'Should SaaS companies copy Vercel's homepage strategy? When incremental repositioning works'",
+    "Define 'incremental repositioning' inline at first use: 'This is incremental repositioning — small updates that point in the same direction and compound into a brand shift — rather than a single overhaul'",
+    "Split the 67-word paragraph under 'The pattern' into two chunks — break after 'compound into a brand shift'",
+    "Make the final test more concrete: 'Open your homepage. Highlight every word in your H1 that explains what category you are in (e.g. 'project management', 'deployment platform'). If you highlighted 3+ words, you are not ready for this pattern.'"
+  ],
+  "riskFlags": [
+    "The phrase 'that only works if visitors already know' is a causal claim without attached data — no conversion evidence provided",
+    "The claim 'a headline that assumes category knowledge may fail to convert them' uses 'may' as hedge but still implies outcome causation without conversion data",
+    "The statement 'This works when your company name already carries the category explanation' presents a success condition without tracing it to Vercel's actual traffic or conversion metrics"
+  ],
+  "seoNotes": [
+    "Positive: H3 headings contain searchable phrases ('who should copy', 'who should NOT copy', 'test before you copy')",
+    "Positive: Section directly answers a high-intent query ('should I copy this homepage strategy')",
+    "Negative: The ## heading misses a searchable company name or topic term — loses keyword value",
+    "Positive: Each H3 block is addressable and could rank independently for long-tail queries",
+    "Positive: Bold quotes on all verbatim elements (**'Build and deploy on the AI Cloud.'** etc.) help crawlers identify quoted material"
+  ],
+  "rewriteInstruction": "Insert 'Vercel' or 'homepage' into the ## heading for searchability. Define 'incremental repositioning' inline at first use with plain language (e.g. 'small updates pointing in the same direction'). Split the 67-word paragraph under 'The pattern' after 'compound into a brand shift'. Make the final test more concrete: give the founder a binary checklist (highlight category-explaining words in H1, count them, compare to 3) instead of asking them to interpret 'assume category knowledge'. Attach a condition to the causal claim in 'Who should copy this' — change 'that only works if' to 'This pattern assumes visitors already know what Vercel deploys — if your analytics show 60%+ direct or branded search traffic, that assumption may hold.' Do not add jargon.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 15,
+    "plainLanguage": 16,
+    "scannability": 12,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

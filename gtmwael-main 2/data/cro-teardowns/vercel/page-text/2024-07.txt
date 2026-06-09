@@ -1,0 +1,174 @@
+TITLE: Vercel: Build and deploy the best web experiences with the Frontend Cloud
+META DESCRIPTION: Vercel's Frontend Cloud gives developers the frameworks, workflows, and infrastructure to build a faster, more personalized web.
+
+H1:
+  - Your complete platform for the web.
+
+H2:
+  - Git-connected Deploys
+  - Collaborative pre-production
+  - Frontend Observability
+  - Instant Rollbacks
+  - Conformance
+  - Scale your
+  - without compromising
+  - Deploy once, deliver everywhere.
+  - Bridging the best of Client and Server Rendering.
+  - All the data.
+  - Your framework,your way.
+  - Reliability you can count on.
+  - Deploy your first app in seconds.
+  - Products
+  - Resources
+  - Company
+  - Social
+
+H3:
+  - Elastic scalability
+  - Rock-solid security
+  - Global performance
+  - User-first protection
+  - Serverless Storage
+  - Start Deploying
+
+CTAS / BUTTONS:
+  - Products
+  - PreviewsHelping teams ship 6× faster
+  - AIPowering breakthroughs
+  - RenderingFast, scalable, and reliable
+  - ObservabilityTrace every step
+  - SecurityScale without compromising
+  - Next.jsThe native Next.js platform
+  - TurborepoSpeed with Enterprise scale
+  - AI SDKThe AI Toolkit for TypeScript
+  - Solutions
+  - AI AppsDeploy at the speed of AI
+  - Composable CommercePower storefronts that convert
+  - Marketing SitesLaunch campaigns fast
+  - Multi-tenant PlatformsScale apps with one codebase
+  - Web AppsShip features, not infrastructure
+  - Platform EngineersAutomate away repetition
+  - Design EngineersDeploy for every idea
+  - Resources
+  - Resource CenterToday’s best practices
+  - MarketplaceExtend and automate workflows
+  - TemplatesJumpstart app development
+  - GuidesFind help quickly
+  - CustomersTrusted by the best teams
+  - BlogThe latest posts and changes
+  - ChangelogSee what shipped
+  - Enterprise
+  - Docs
+  - Pricing
+  - Log In
+  - Contact
+  - Sign Up
+  - Get Tickets
+  - DeployStart Deploying
+  - Get a Demo
+  - AI AppsAI Apps
+  - Web AppsWeb Apps
+  - EcommerceEcommerce
+  - MarketingMarketing
+  - PlatformsPlatforms
+  - Deploy AI Apps in seconds
+  - Security
+  - More about Infrastructure
+  - Learn about Enterprise
+  - More about Rendering
+  - Discover Integrations
+  - Next.js Templates
+  - React Templates
+  - Astro Templates
+  - Svelte Templates
+  - Nuxt Templates
+  - Python Templates
+  - Start DeployingStart Deploying
+  - Talk to our Sales teamTalk to sales
+  - Get an Enterprise TrialEnterprise Trial
+  - AI
+  - Next.js
+  - Observability
+  - Previews
+  - Rendering
+  - Turbo
+  - v0
+  - Community
+  - Experts
+  - Guides
+  - Help
+  - Integrations
+  - Templates
+  - About
+  - Blog
+  - Careers
+  - Changelog
+  - Contact Us
+  - Customers
+  - Partners
+  - Privacy Policy
+  - Legal
+  - GitHub
+  - LinkedIn
+  - Twitter
+  - YouTube
+
+NAV LINKS:
+  - PreviewsHelping teams ship 6× faster
+  - AIPowering breakthroughs
+  - RenderingFast, scalable, and reliable
+  - ObservabilityTrace every step
+  - SecurityScale without compromising
+  - Next.jsThe native Next.js platform
+  - TurborepoSpeed with Enterprise scale
+  - AI SDKThe AI Toolkit for TypeScript
+  - AI AppsDeploy at the speed of AI
+  - Composable CommercePower storefronts that convert
+  - Marketing SitesLaunch campaigns fast
+  - Multi-tenant PlatformsScale apps with one codebase
+  - Web AppsShip features, not infrastructure
+  - Platform EngineersAutomate away repetition
+  - Design EngineersDeploy for every idea
+  - Resource CenterToday’s best practices
+  - MarketplaceExtend and automate workflows
+  - TemplatesJumpstart app development
+  - GuidesFind help quickly
+  - CustomersTrusted by the best teams
+  - BlogThe latest posts and changes
+  - ChangelogSee what shipped
+  - Enterprise
+  - Docs
+  - Pricing
+  - Log In
+  - Contact
+  - Sign Up
+  - AI
+  - Next.js
+  - Observability
+  - Previews
+  - Rendering
+  - Security
+  - Turbo
+  - v0
+  - Community
+  - Experts
+  - Guides
+  - Help
+  - Integrations
+  - Resources
+  - Templates
+  - About
+  - Blog
+  - Careers
+  - Changelog
+  - Contact Us
+  - Customers
+  - Partners
+  - Privacy Policy
+  - GitHub
+  - LinkedIn
+  - Twitter
+  - YouTube
+
+BODY TEXT:
+ProductsDX PlatformPreviewsHelping teams ship 6× fasterAIPowering breakthroughsManaged InfrastructureRenderingFast, scalable, and reliableObservabilityTrace every stepSecurityScale without compromisingOpen SourceNext.jsThe native Next.js platformTurborepoSpeed with Enterprise scaleAI SDKThe AI Toolkit for TypeScriptSolutionsUse CasesAI AppsDeploy at the speed of AIComposable CommercePower storefronts that convertMarketing SitesLaunch campaigns fastMulti-tenant PlatformsScale apps with one codebaseWeb AppsShip features, not infrastructureUsersPlatform EngineersAutomate away repetitionDesign EngineersDeploy for every ideaResourcesToolsResource CenterToday’s best practicesMarketplaceExtend and automate workflowsTemplatesJumpstart app developmentGuidesFind help quicklyCompanyCustomersTrusted by the best teamsBlogThe latest posts and changesChangelogSee what shippedEnterpriseDocsPricingLog InContactSign UpSign UpFull speaker lineup and schedule out now. Join us on Oct 24Get TicketsconfFull speaker lineup and schedule out now. Join us on Oct 24isGet TicketshereYour complete platform for the web.Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.DeployStart DeployingGet a DemoYour complete platform for the web.Vercel provides the developer tools and cloud infrastructure to build, scale, and secure a faster, more personalized web.DeployStart DeployingGet a Demo build times went from 7m to 40s. saw a 95% reduction in page load times. saw 24x faster builds.AI AppsAI AppsWeb AppsWeb AppsEcommerceEcommerceMarketingMarketingPlatformsPlatformsGet started using our pre-built templates. Easily stream long-running LLM responses for a better user experience with zero-config infrastructure that's always globally performant.Fast load times, zero overhead with Vercel's highly optimized infrastructure and CDN, reducing bounce rates and improving SEO. Streamline content creation & publishing with built-in previews.Deploy AI Apps in secondsGit-connected DeploysFrom localhost to https, in seconds. Deploy from Git or your CLI.▲ ~ vercel-site/ git pushEnumerating objects: 1, done.Counting objects: 100% (1/1), done.Writing objects: 100% (1/1), 72 bytes, done.Total 1 (delta 0), reused 0 (delta 0).To github.com:vercel/vercel-site.git 21326a9..81663c3 main -> mainvercel.comWhat will you ship?Collaborative pre-productionEvery deploy is remarkable. Chat with your team on real, production-grade UI, not just designs.Swapped out the button for some variants we needed.PranathiHow about this instead?I like it. Does this work with the brand tweaks @mamuso?RaunoThis looks great!Frontend ObservabilityPrivacy-friendly, lightweight Analytics. Upgrade your post-launch workflow with actionable, real-time insights.5,0004,0003,0002,0001,000Views7000+90%Clicks3500+90%7,0006,0005,0004,0003,0002,0001,000Views3981+46%Clicks2270+51%Instant RollbacksGo ahead, deploy on Friday. Instantly rollback to a working deployment.vercel-site/jvjb4ynna1d agoba5f55fUpdate bentoUpdate bento box design90vercel-site/gigj178pv10m agobx012mmFix ESLint errorFix ESLint error on query55ConformanceMove fast, don’t break things. Keep quality high while maintaining velocity with Enterprise Monorepos.ConformanceExcellent9.5Total Issues34Major Issues12Code Owners@vercel/design@vercel/eng@vercel/marketingScale yourEnterprisewithout compromisingSecurityDeploy once, deliver everywhere. When you push code to Vercel, we make it instantly available across the planet.More about InfrastructureLearn about EnterpriseNodes on the globe are sending out small pulses to indicate activityapp/users/page.tsxexport default async function Page() { const data = await sql`SELECT * from USERS`; return ( <> <h1>Users</h1> <ul> {data.map(user => ( <li key={user.id}> {user.name} </li> )} </ul> </> );}Bridging the best of Client and Server Rendering. Experience seamless integration, optimized performance, and reduced bundle sizes like never before.More about RenderingAll the data. Connect with content, commerce or database platforms.Discover Integrations Your framework,your way.Your framework, your way.Reliability you can count on.Elastic scalabilityHandle unbelievable scale without a sweat, whether you’re on Fortune 500, or it’s your launch day.Rock-solid securityInfrastructure designed to automatically mitigate DDoS attacks and protect your information.Global performanceAutomatically route traffic to over 100 edge locations around the globe, for a fast site, anywhere in the world.User-first protectionVercel automatically caches your site to ensure that even if a backend service goes down, your site stays up.Serverless StorageAccelerate development with databases for the fastest frontends.99.99% UptimeDeploy your first app in seconds.Deploy automatically from git or with our CLIWide range support for the most popular frameworksPreviews for every pushAutomatic HTTPS for all your domainsNext.js TemplatesReact TemplatesAstro TemplatesSvelte TemplatesNuxt TemplatesPython TemplatesStart DeployingStart DeployingTalk to our Sales teamTalk to salesGet an Enterprise TrialEnterprise TrialProductsAIEnterpriseNext.jsObservabilityPreviewsRenderingSecurityTurbov0ResourcesCommunityDocsExpertsGuidesHelpIntegrationsPricingResourcesTemplatesCompanyAboutBlogCareersChangelogContact UsCustomersPartnersPrivacy PolicyLegalSocialGitHubLinkedIn TwitterYouTubeSelect a display theme:systemlightdark

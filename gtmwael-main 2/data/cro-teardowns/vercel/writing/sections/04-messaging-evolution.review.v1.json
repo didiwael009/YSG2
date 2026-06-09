@@ -1,0 +1,44 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Multiple outcome claims without supporting data: 'The page now expects visitors who already know what Vercel does' — not in evidence",
+    "Causal claim without condition: 'suggests the company may now rely more on sales conversations for larger deals' — no sales data provided",
+    "Final H3 delivers a generic takeaway buried in a question, not a specific 5-minute test anchored to Vercel's evidence",
+    "H3 heading 'Who the old page served' contains no searchable terms (no company name, no topic terms)",
+    "H3 heading 'Who the new page serves' contains no searchable terms",
+    "H3 heading 'What this means for the sales process' contains no searchable terms",
+    "Generic paragraph in final H3: 'The page now expects visitors who already know what Vercel does and are evaluating it against other cloud platforms' — could appear in any SaaS teardown",
+    "Sales-process inference unsupported: 'suggests the company may now rely more on sales conversations for larger deals, rather than purely self-serve signups' — no sales motion data in evidence",
+    "Word count approximately 160 words — within range but low density given weak takeaway"
+  ],
+  "requiredFixes": [
+    "Remove or condition the claim 'The page now expects visitors who already know what Vercel does' — evidence shows headline change, not visitor knowledge level",
+    "Delete or reframe 'suggests the company may now rely more on sales conversations' — no sales funnel data provided. If keeping, add condition: 'If Vercel moved upmarket without adding explainer content, this could signal...'",
+    "Replace final paragraph with a specific Vercel-anchored test: 'Open your homepage. Count how many of Vercel's six headline words (Build, deploy, AI, Cloud, frameworks, infrastructure) appear in your H1. If fewer than two match your core value prop, your headline may be drifting from what you actually sell.'",
+    "Revise all three H3 headings to include searchable terms. Example: 'Who the 2021 Vercel homepage served: frontend developers choosing deployment tools'",
+    "Remove generic SaaS commentary in final H3. Anchor every sentence to a specific quoted phrase or dated change from the evidence."
+  ],
+  "riskFlags": [
+    "UNSUPPORTED OUTCOME CLAIM: 'The page now expects visitors who already know what Vercel does' — no visitor research or analytics data provided",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'suggests the company may now rely more on sales conversations for larger deals' — no sales motion evidence, no funnel data, pure speculation",
+    "INVENTED FACT: 'teams with backend requirements or AI integration work' — evidence shows messaging shift to AI, but does not confirm buyer profile or use case",
+    "GENERIC INFERENCE: 'Does your homepage still explain what your product does, or does it assume visitors already know?' — not grounded in any Vercel-specific finding"
+  ],
+  "seoNotes": [
+    "NEGATIVE: Section heading 'How Vercel's homepage messaging shifted from developer workflow to AI infrastructure' is strong and searchable — contains company name and two topic terms",
+    "NEGATIVE: All three H3 subheadings lack searchable terms — 'Who the old page served' will not rank for any Vercel-related query",
+    "NEGATIVE: No keyword clustering around 'Vercel homepage', 'Vercel positioning', or 'Vercel messaging' in H3s — missed opportunity for internal linking and topic authority"
+  ],
+  "rewriteInstruction": "This section invents outcomes and buyer profiles not present in the evidence. You have five quoted phrases and three dated changes. Use only those. Rewrite each H3 to (1) name the specific Vercel element that changed, (2) quote the before-and-after verbatim, (3) explain what that language shift reveals about who the page is now addressing, and (4) deliver a concrete takeaway in the first two sentences. The final H3 must end with a specific test the reader can run on their own homepage in under five minutes — anchored to a Vercel example from the evidence. Remove all speculation about sales motions, backend requirements, or visitor knowledge. Add searchable terms (company name + topic term) to every H3 heading. Cap every paragraph at 60 words. Do not invent facts.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 12,
+    "searchableHeadings": 1,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

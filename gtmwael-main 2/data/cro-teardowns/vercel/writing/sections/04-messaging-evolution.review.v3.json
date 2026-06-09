@@ -1,0 +1,37 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The final H3 block ('What this means for the sales process') makes an unsupported causal claim: 'The shift from workflow description to category claim suggests Vercel expects visitors to arrive with context.' The evidence shows only what changed, not why or what Vercel expects.",
+    "The phrase 'intentionally or not' in the final H3 implies Vercel may have made a strategic mistake without evidence supporting that interpretation.",
+    "The term 'category claim' appears twice without a plain-language definition on first use.",
+    "The opening sentence of the first H3 ('Who the old page served') does not deliver the practical takeaway in the first two sentences — it describes the audience before explaining what the takeaway is.",
+    "The final test ('Open your homepage in an incognito window...') is runnable but generic — it could appear in any company's teardown about headline clarity."
+  ],
+  "requiredFixes": [
+    "Remove or condition the causal claim in the final H3: change 'suggests Vercel expects visitors to arrive with context' to 'filters for visitors who already recognize the platform type' (which is observable from the evidence).",
+    "Delete 'intentionally or not' — the evidence does not support intent assessment.",
+    "On first use of 'category claim', add a plain-language definition in the same sentence: 'category claim — naming the type of product rather than describing what it does'.",
+    "Move the practical takeaway to the first sentence of 'Who the old page served': start with what the reader should notice (workflow-stage language vs. benefit language), then anchor it to Vercel's specific evidence."
+  ],
+  "riskFlags": [
+    "The shift from workflow description to category claim suggests Vercel expects visitors to arrive with context. — This is a causation claim ('suggests Vercel expects') without direct evidence of intent or visitor behavior.",
+    "'intentionally or not' implies Vercel may have made an unintended mistake — no evidence supports this."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Vercel', 'homepage', and 'messaging' — fully searchable.",
+    "The H3 subheadings ('Who the old page served', 'Who the new page serves', 'What this means for the sales process') are readable but lack searchable terms like 'developer', 'AI platform', or 'positioning' — moderate SEO weakness.",
+    "The section does not use keyword-stuffed language, which is good for readability and avoids over-optimization penalties."
+  ],
+  "rewriteInstruction": "Remove the unsupported causal claim about what Vercel 'expects' and replace it with an observable effect ('filters for visitors who...'). Delete 'intentionally or not'. Define 'category claim' on first use. Reorder the first H3 to lead with the practical takeaway (what the reader should notice about workflow-stage language) before anchoring it to Vercel's evidence. Make the final test more specific: instead of 'Open your homepage in an incognito window', suggest a test anchored to Vercel's specific shift — e.g., 'Replace your headline with a three-stage workflow phrase (like 'Develop. Preview. Ship.') and compare clarity to your current category-naming headline.'",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 15,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

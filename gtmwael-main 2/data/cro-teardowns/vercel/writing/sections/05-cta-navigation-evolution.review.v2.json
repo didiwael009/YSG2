@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 1 of H3 'What changed' is 82 words — exceeds 60-word guideline",
+    "Paragraph 2 of H3 'What changed' is 72 words — exceeds 60-word guideline",
+    "H3 'Who this filters out' paragraph is 76 words — exceeds 60-word guideline",
+    "The verbatim quote 'One endpoint, all your models' should appear in **bold quotes** to match the pattern for other CTA text",
+    "Minor: 'What changed' as an H3 heading is slightly generic — could be 'Vercel replaced infrastructure CTAs with product-name CTAs' for better searchability"
+  ],
+  "requiredFixes": [
+    "Break the 82-word opening paragraph into two parts: end the first sentence after 'what Vercel ships', then start a new paragraph with the CTA examples",
+    "Shorten the H3 'Who this filters out' paragraph to under 60 words by removing the explanatory sentence about brand assumptions or moving it to a separate line",
+    "Wrap 'One endpoint, all your models' in **bold quotes** to match formatting consistency with other verbatim CTA text"
+  ],
+  "riskFlags": [
+    "The claim 'the new CTAs may function as navigation rather than conversion triggers' is interpretive — not directly supported by evidence of CTA text changes alone. Consider softening to 'the new CTAs assume product familiarity' or adding 'if visitors arrive without prior context'",
+    "The statement 'That works when your brand already explains the category before the visitor lands on the page' implies a causal condition but lacks evidence from Vercel's traffic or conversion data. Attach a clearer conditional: 'This pattern fits sites where most traffic is branded or referral-based'"
+  ],
+  "seoNotes": [
+    "Positive: The ## heading includes 'Vercel' and 'CTA', making it searchable for both company name and topic term",
+    "Positive: The H3 'Audit your own page' delivers a concrete, company-specific test that founders can replicate in under five minutes",
+    "Minor opportunity: The H3 'What changed' could be more descriptive for search — e.g. 'Vercel's CTA shift: infrastructure features to product names' — but current heading is acceptable"
+  ],
+  "rewriteInstruction": "Break the 82-word and 76-word paragraphs into shorter blocks (under 60 words each) by starting a new paragraph after the first main claim in each H3 section. Wrap 'One endpoint, all your models' in **bold quotes** to match the formatting of other verbatim CTA text. Soften the causal claim about CTAs functioning as navigation by adding a conditional phrase ('if visitors arrive without prior product knowledge') to make the interpretation more evidence-anchored and less absolute.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 10,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

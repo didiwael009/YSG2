@@ -1,0 +1,34 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 2 in 'What changed' is 71 words — exceeds the 60-word cap",
+    "Paragraph 1 in 'Why it matters' is 64 words — exceeds the 60-word cap",
+    "The final H3 block ('What it costs') delivers the test in the opening sentence, but the takeaway is buried in the third sentence — should be first or second"
+  ],
+  "requiredFixes": [
+    "Split the second paragraph in 'What changed' (currently 71 words) into two sentences or break at the meta description pivot",
+    "Split the first paragraph in 'Why it matters' (currently 64 words) — move the cold traffic list to its own sentence",
+    "Move the takeaway sentence in 'What it costs' ('If you cannot, your homepage still needs the product statement in the headline') to the first or second sentence position"
+  ],
+  "riskFlags": [
+    "'this creates a problem' in 'Why it matters' is a causal claim without an attached condition — should read 'this may create a problem if...' or 'for visitors arriving via [source], this creates...'",
+    "'increases the work the page must do below the fold' is a causal outcome claim — no data provided to support this claim about increased cognitive load or time-on-page"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Vercel homepage positioning' and 'headline' — strong searchable terms",
+    "The test instruction references 'frontend deployment platform' — a real search term Vercel ranks for, which adds SEO value and specificity",
+    "Meta description change is quoted verbatim and attributed to evidence, which strengthens the section's credibility for search"
+  ],
+  "rewriteInstruction": "Split the 71-word and 64-word paragraphs to meet the 60-word cap. Add a conditional qualifier to 'this creates a problem' (e.g., 'for cold traffic, this creates...'). Remove or soften the unsupported causal claim about 'increases the work' — replace with 'the page now relies on...' or 'visitors must now piece together...'. Move the final takeaway sentence ('If you cannot...') to the first or second sentence of the 'What it costs' block so the practical implication lands early.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}
