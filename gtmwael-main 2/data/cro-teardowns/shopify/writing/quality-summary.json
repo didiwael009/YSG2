@@ -1,0 +1,38 @@
+{
+  "slug": "shopify",
+  "generatedAt": "2026-06-09T05:50:26.817Z",
+  "mode": "standard",
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
+  "failCount": 0,
+  "skippedCount": 5,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [],
+  "sectionErrors": [],
+  "finalJudgeScore": 78,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Section 03: Add an explicit tradeoff statement in the format '[X] in exchange for [Y]' — currently buried in prose as 'credibility vs overclaiming'",
+    "Section 04: The 'So what?' is too generic ('ask whether your best customers are starters') — anchor it to a specific decision: when to drop beginner language based on visitor composition or trial cohort behavior",
+    "Section 05: Replace the generic 'count your mid-funnel asks' with a Shopify-specific observation — e.g., 'If your CTA set includes both feature-specific and exploratory CTAs, measure trial starts per CTA type; Shopify appears to have bet that feature-specific CTAs convert qualified visitors faster than exploratory CTAs convert cold traffic'",
+    "Section 06: This section reads as a summary lecture rather than a distinct analytical contribution. Either convert it to a pure Lessons section (action-oriented, no repetition of prior analysis) or cut the repeated navigation/heading examples and focus exclusively on the earned-recognition precondition as a founder decision gate",
+    "All analytical sections: Elevate the tradeoff statements to their own line or bold formatting — they are currently embedded in prose and not scannable",
+    "Article structure: The 'earned category recognition' insight in Section 06 should anchor the entire analysis. Consider moving it to Section 03 or the intro, then using it as a lens for interpreting all subsequent changes"
+  ],
+  "seoScore": 82,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Add a disclaimer near the beginning clarifying that this is a qualitative design analysis, not a performance report. Readers should understand this article interprets strategic intent from visual changes, not conversion impact.",
+    "Fix the typo in the quoted headline: '\"Be the nextAI all-star\"' should be '\"Be the next AI all-star\"' (space between 'next' and 'AI').",
+    "Add SEO context to the meta description analysis: explain why the shift from 'Try Shopify free and start a business' to 'Try Shopify free. Build or grow your business fast with AI' matters for click-through rate and keyword targeting.",
+    "Strengthen the closing section by explicitly stating that the advice 'do not copy Shopify's homepage' applies to brands without established category recognition—this is currently implied but should be stated upfront to prevent misapplication."
+  ],
+  "articleWordCount": 934,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[05-cta-navigation-evolution] Paragraph exceeds 90 words (~113w): \"The new CTA set shifts from nurturing consideration…\""
+  ],
+  "overLengthWarning": null
+}

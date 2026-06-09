@@ -1,0 +1,42 @@
+{
+  "slug": "shopify",
+  "section": "all",
+  "calls": [
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "cross-section",
+      "inputTokens": 2026,
+      "outputTokens": 1456,
+      "inputCostUsd": 0.006078,
+      "outputCostUsd": 0.021840000000000002,
+      "totalCostUsd": 0.027918000000000002,
+      "timestamp": "2026-06-09T05:49:01.765Z"
+    },
+    {
+      "model": "claude-sonnet-4-5",
+      "role": "final-judge",
+      "inputTokens": 5198,
+      "outputTokens": 3515,
+      "inputCostUsd": 0.015594,
+      "outputCostUsd": 0.052725,
+      "totalCostUsd": 0.068319,
+      "timestamp": "2026-06-09T05:50:11.312Z"
+    },
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "role": "seo-auditor",
+      "inputTokens": 2504,
+      "outputTokens": 1231,
+      "inputCostUsd": 0.0020032,
+      "outputCostUsd": 0.004924,
+      "totalCostUsd": 0.0069272000000000005,
+      "timestamp": "2026-06-09T05:50:26.808Z"
+    }
+  ],
+  "totalInputTokens": 9728,
+  "totalOutputTokens": 6202,
+  "totalCostUsd": 0.1031642,
+  "budgetUsd": 3,
+  "budgetExceeded": false,
+  "generatedAt": "2026-06-09T05:50:26.817Z"
+}

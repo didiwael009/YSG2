@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 5,
+    "h2Removed": 8,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "generatedAt": "2026-06-09T05:24:29.764Z",
+  "postSummary": {
+    "title": "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
+    "h1": "How Shopify rewrote its homepage over 5 years",
+    "readTime": "8 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 2,
+    "lessonCardCount": 4,
+    "snapshotCount": 3
+  }
+}

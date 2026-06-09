@@ -1,0 +1,70 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Shopify",
+  "companyUrl": "https://www.shopify.com",
+  "articleTitle": "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
+  "h1": "How Shopify rewrote its homepage over 5 years",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 5,
+    "h2Removed": 8,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "analysis-blocks": [
+    {
+      "id": "analysis-2021-07",
+      "label": "Jul 2021 — original state",
+      "period": "Jul 2021",
+      "screenshotPath": "/cro-teardowns/shopify/selected/2021-07.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"The platform commerce is built on\" — direct product statement.",
+        "Visible section headings include: \"Bring your business online\", \"Take the best path forward\", \"With you wherever you’re going\".",
+        "Navigation includes: \"Skip to Content\", \"Start your business\", \"Business name generator\", \"Web address\" — product category framing.",
+        "Section headings later removed include: \"Bring your business online\" and \"Take the best path forward\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/shopify/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Be the nextAI all-star\" — updated value proposition.",
+        "New section headings include: \"store they line up for\", \"Your brand has entered the chat\", \"Meet your secret weapon, Sidekick\".",
+        "CTAs no longer present include: \"Start your business\", \"Start free trial\", \"Explore more examples\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "The platform commerce is built on",
+      "after": "Be the nextAI all-star",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Try Shopify free and start a business or grow an existing one. Get more than ecommerce software with tools to manage every part of your business.",
+      "after": "Try Shopify free. Build or grow your business fast with AI. Get more than ecommerce software with tools to manage every part of your business.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Start a Business, Grow Your Business - Shopify 14-Day Free Trial",
+      "after": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify"
+    }
+  ]
+}

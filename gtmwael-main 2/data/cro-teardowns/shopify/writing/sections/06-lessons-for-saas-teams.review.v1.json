@@ -1,0 +1,25 @@
+{
+  "score": 93,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Opening subheading ('Do not copy Shopify's homepage unless your brand can already finish the sentence') is distinctive and may attract long-tail search interest from founders evaluating homepage strategies.",
+    "The Google incognito window test in the closing takeaway is a concrete action that could drive social shares and backlinks."
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 10,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 10,
+    "editorialQuality": 5,
+    "founderSharpness": 20,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

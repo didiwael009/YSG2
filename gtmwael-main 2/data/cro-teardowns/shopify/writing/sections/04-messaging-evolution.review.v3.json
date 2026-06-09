@@ -1,0 +1,40 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Word count ~160 words — significantly under the target range for a messaging evolution section (target ~200–240 words)",
+    "No named buyer audience for the old headline beyond 'a merchant comparing platforms' — lacks specificity about WHO that merchant is (enterprise operator? multi-channel seller? scale-up?)",
+    "Second paragraph opens with a restatement of the contrast already established in paragraph 1 — 'assumes the reader is already selling' vs 'targets pre-revenue side-hustlers' echoes the 'comparing platforms' vs 'deciding whether they belong' frame without adding new evidence",
+    "Meta description interpretation ('AI-speed language appeals to readers who fear being late or left behind') is not labelled as interpretation — presented as fact",
+    "No conversion implication tied to the page title change — the title shift from **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** to **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'** is present in the evidence but not analysed",
+    "Closing question ('are you naming the category or naming the person') is a strong takeaway but lacks an evidence anchor — does not tie back to a specific Shopify change that demonstrates the risk or benefit of either approach"
+  ],
+  "requiredFixes": [
+    "Expand to target word count (~200–240 words) by analysing the page title change: **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** → **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'**. This shift removes trial urgency and adopts category-ownership language — what buyer segment does that serve, and what conversion risk does it introduce?",
+    "Label the meta description interpretation: 'The meta description shift can be read as an urgency reframe...' OR 'This may signal that Shopify is targeting...' — do not present buyer psychology as observed fact",
+    "Identify a specific buyer audience for the old headline — not just 'a merchant comparing platforms'. Who is platform-shopping? (e.g., multi-channel sellers evaluating checkout UX, enterprise operators auditing compliance, dropshippers comparing app ecosystems)",
+    "Anchor the closing takeaway to a specific Shopify evidence item — e.g., 'Shopify made this shift and lost category clarity in the page title; if you move to aspirational framing, ensure your navigation or subhead retains the category signal for qualified buyers.'"
+  ],
+  "riskFlags": [
+    "'AI-speed language appeals to readers who fear being late or left behind' — presents buyer psychology as fact without labelling as interpretation",
+    "'That can widen the trial funnel while making it harder to pre-qualify serious buyers from explorers' — implies a conversion outcome (trial funnel widening) without data support"
+  ],
+  "seoNotes": [
+    "Page title analysis is missing — the shift from **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** to **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'** is a significant SEO and conversion signal change (trial urgency removed, category ownership added) but is not discussed",
+    "Meta description shortening (from ~160 characters to ~140 characters) is noted but not analysed for SEO implications — does the shorter length sacrifice keyword coverage or click appeal?"
+  ],
+  "rewriteInstruction": "Expand the section to target word count by analysing the page title change: **'Start a Business, Grow Your Business - Shopify 14-Day Free Trial'** → **'Shopify: The All-in-One Commerce Platform for Businesses - Shopify'**. This is a second messaging shift present in the evidence — it removes trial urgency and adopts category-ownership language. What buyer does that serve? What conversion risk does it introduce (e.g., does removing 'free trial' from the title reduce click-through from search, or does 'All-in-One Commerce Platform' attract more qualified enterprise searchers)? Label the meta description interpretation as 'can be read as' or 'may signal'. Identify a specific buyer audience for the old headline — not just 'a merchant comparing platforms' but WHO is platform-shopping (multi-channel seller, enterprise operator, dropshipper). Anchor the closing takeaway to a specific Shopify change: 'Shopify made this shift and lost [X] in the page title; if you adopt aspirational framing, ensure your [navigation / subhead / title tag] retains the category signal for qualified buyers.' The tradeoff and closing question are strong — preserve them.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "clarity": 9,
+    "specificity": 10,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 4,
+    "analysisDepth": 8,
+    "editorialQuality": 5,
+    "founderSharpness": 12,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

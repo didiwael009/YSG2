@@ -80,7 +80,8 @@ interface ParsedSection {
  */
 function parseDelimited(text: string): Record<string, ParsedSection> {
   const out: Record<string, ParsedSection> = {};
-  const re = /<<<SECTION\s+([^\s|>]+)\s*(?:\|\s*NOTE:\s*([^>]*?))?>>>\s*\n([\s\S]*?)\n?<<<END>>>/g;
+  // Tolerant of extra angle brackets the model sometimes emits (e.g. ">>>>").
+  const re = /<{3,}SECTION\s+([^\s|>]+)\s*(?:\|\s*NOTE:\s*([^>]*?))?>{3,}\s*\n([\s\S]*?)\n?<{3,}END>{3,}/g;
   let m: RegExpExecArray | null;
   while ((m = re.exec(text)) !== null) {
     const id = m[1].trim();

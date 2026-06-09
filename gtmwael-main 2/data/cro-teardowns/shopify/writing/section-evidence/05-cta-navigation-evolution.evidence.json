@@ -1,0 +1,69 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Shopify",
+  "companyUrl": "https://www.shopify.com",
+  "articleTitle": "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
+  "h1": "How Shopify rewrote its homepage over 5 years",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 5,
+    "h2Removed": 8,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "cta-changes": {
+    "added": [
+      "Start for free",
+      "Get a stunning store",
+      "Compare Shopify",
+      "SidekickYour commerce-obsessed AI assistant.",
+      "Website Builder",
+      "Customer Accounts",
+      "AI Chats",
+      "Shop App",
+      "Social & Marketplaces",
+      "Across Markets"
+    ],
+    "removed": [
+      "Start your business",
+      "Start free trial",
+      "Explore more examples",
+      "Explore ways to sell",
+      "Explore how to market your business",
+      "Explore how to manage your business",
+      "Learn more about Shopify",
+      "Contact support",
+      "Explore the Shopify Experts Marketplace",
+      "Contact"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "store they line up for",
+      "Your brand has entered the chat",
+      "Meet your secret weapon, Sidekick",
+      "There’s no better place for you to build",
+      "Build fast on Shopify"
+    ],
+    "removed": [
+      "Bring your business online",
+      "Take the best path forward",
+      "With you wherever you’re going",
+      "Empowering independent business owners everywhere",
+      "Get the help you need, every step of the way",
+      "Start your business journey with Shopify",
+      "More resources",
+      "Change your country or region."
+    ]
+  }
+}

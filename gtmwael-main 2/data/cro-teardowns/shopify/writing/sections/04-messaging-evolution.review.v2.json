@@ -1,0 +1,39 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 2 exceeds 90 words (~105 words) without introducing a distinct second idea — it restates the headline contrast already established in paragraph 1",
+    "The phrase 'This can be read as targeting aspiring solopreneurs rather than experienced operators shopping on capability' is hedged interpretation without a meaningful gap — it's a mechanical tic, not a real uncertainty",
+    "Paragraph 2 is repetitive: the headline contrast is stated in paragraph 1, then re-explained in paragraph 2 with additional phrasing but no new evidence or implication",
+    "The meta description change is introduced but not analysed — the section notes the punctuation shift is 'minor' but does not explain what conversion or psychology implication it carries, leaving the evidence strand dangling",
+    "The section does not identify a specific buyer audience shift — it uses 'aspiring solopreneurs' and 'experienced operators' as labels but does not ground them in decision stage, mental state, or conversion path",
+    "Word count: ~195 words (target 200–230). This is within range but the compression is uneven — paragraph 2 is bloated while the meta description strand is under-analysed"
+  ],
+  "requiredFixes": [
+    "Compress paragraph 2 to ~60 words maximum. Remove the restatement of the headline contrast (already covered in paragraph 1). Focus the paragraph on the meta description change and its conversion implication, OR delete the meta description evidence strand entirely if it carries no analytical weight",
+    "Replace 'This can be read as targeting aspiring solopreneurs rather than experienced operators shopping on capability' with a direct claim: 'The new headline targets aspiring solopreneurs — first-time founders or pre-revenue side-hustlers — not experienced operators shopping on capability.' Remove the hedge unless you can justify the interpretive gap with a specific piece of missing evidence",
+    "Add buyer psychology to the meta description observation: who does the AI-speed framing ('Build or grow your business fast with AI') likely appeal to, and what decision stage does it address? If the meta description change carries no distinct implication, cut it entirely and dedicate the word budget to deepening the headline analysis",
+    "Specify the buyer audience shift: are 'aspiring solopreneurs' pre-product, pre-revenue, or pre-commitment? What mental state does 'Be the nextAI all-star' address that 'The platform commerce is built on' did not?"
+  ],
+  "riskFlags": [
+    "The phrase 'it may pull in readers who haven't qualified themselves as serious buyers' implies a causal conversion outcome (trial volume increases, conversion dilutes) without data to support it — this is speculative and should be hedged more explicitly or removed"
+  ],
+  "seoNotes": [
+    "The section uses exact quoted phrases from the evidence (bolded correctly), which supports keyword density and editorial credibility",
+    "The closing question ('are you naming the category or naming the person') is a strong semantic anchor for founder-oriented search intent"
+  ],
+  "rewriteInstruction": "Compress paragraph 2 to 60 words or fewer. Remove the restatement of the headline contrast (already covered in paragraph 1). Either cut the meta description evidence strand entirely (if it carries no analytical weight) or replace it with a conversion implication: does the AI-speed framing ('Build or grow your business fast with AI') accelerate the trial decision for a specific buyer stage? Replace the hedge 'This can be read as' with a direct claim: 'The new headline targets aspiring solopreneurs — first-time founders or pre-revenue side-hustlers — not experienced operators shopping on capability.' Specify the buyer psychology: are these solopreneurs pre-product, pre-revenue, or pre-commitment? What mental state does identity framing ('Be the nextAI all-star') address that category leadership ('The platform commerce is built on') did not? Remove or explicitly hedge the causal claim about trial volume and conversion dilution unless you can anchor it to a specific piece of evidence. The section is structurally sound but bloated and repetitive — tighten the compression and deepen the buyer psychology to meet the 85 threshold.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "clarity": 6,
+    "specificity": 12,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 7,
+    "analysisDepth": 6,
+    "editorialQuality": 5,
+    "founderSharpness": 14,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

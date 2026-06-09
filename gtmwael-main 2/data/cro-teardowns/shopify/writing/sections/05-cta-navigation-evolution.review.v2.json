@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Opening sentence executes concrete-number move weakly — 'Ten CTAs became ten' states a number but buries the lede (no net change in count, complete label shift is the real finding)",
+    "Paragraph 1 final sentence hedges with 'assume you already know' — sharper to claim directly what the shift signals",
+    "Paragraph 2 contains two conditional clauses in sequence ('If mid-funnel CTAs... If they were bloating...') — creates analytical see-saw rather than direct claim",
+    "Takeaway runs long (4 sentences) and shifts from founder action to generic testing advice — could compress to 2 sentences anchored on mid-funnel CTA audit"
+  ],
+  "requiredFixes": [
+    "Sharpen opening: 'Every CTA label changed — all ten of them.' Then state the shift from education to action. Concrete-number move should hit harder.",
+    "Replace 'assume you already know' with direct claim: 'The new labels require category awareness — they skip education entirely.'"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Section uses CTA labels verbatim (good for search intent around 'Shopify CTA strategy' or 'SaaS homepage conversion path')",
+    "Phrase 'mid-funnel CTAs' appears 3 times — useful for ranking on SaaS funnel terminology"
+  ],
+  "rewriteInstruction": "Tighten the opening number beat — the finding is not that the count stayed the same but that every label shifted category (education → product). Replace conditional clauses in paragraph 2 ('If mid-funnel CTAs were converting...') with a direct claim about what the shift signals, then name the tradeoff explicitly, then compress the takeaway to 2 sentences: audit your mid-funnel CTAs, measure their contribution to trial quality vs volume. The section has the evidence and the psychology — it just needs editorial compression and a harder opening claim.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 8,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 9,
+    "editorialQuality": 3,
+    "founderSharpness": 15,
+    "distinctiveness": 3
+  },
+  "effectivePassThreshold": 85
+}

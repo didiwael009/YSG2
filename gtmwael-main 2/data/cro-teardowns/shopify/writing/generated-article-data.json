@@ -1,0 +1,222 @@
+{
+  "slug": "shopify",
+  "companyName": "Shopify",
+  "companyUrl": "https://www.shopify.com",
+  "category": "CRO Teardown",
+  "title": "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
+  "h1": "How Shopify rewrote its homepage over 5 years",
+  "metaTitle": "Shopify Homepage CRO Teardown — Jul 2021 to Jun 2026",
+  "description": "A CRO teardown of Shopify's homepage from Jul 2021 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Shopify's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jul 2021 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-09",
+  "readTime": "8 min read",
+  "featuredImage": "/cro-teardowns/shopify/selected/2021-07.webp",
+  "featuredImageAlt": "Shopify homepage — Jul 2021",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2021-07",
+      "label": "Jul 2021",
+      "screenshotPath": "/cro-teardowns/shopify/selected/2021-07.webp"
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/shopify/selected/2025-01.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/shopify/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2021 → Jun 2026",
+      "note": "3 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 8 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "The platform commerce is built on",
+      "after": "Be the nextAI all-star",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Try Shopify free and start a business or grow an existing one. Get more than ecommerce software with tools to manage every part of your business.",
+      "after": "Try Shopify free. Build or grow your business fast with AI. Get more than ecommerce software with tools to manage every part of your business.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Start a Business, Grow Your Business - Shopify 14-Day Free Trial",
+      "after": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify"
+    }
+  ],
+  "h2Added": [
+    "store they line up for",
+    "Your brand has entered the chat",
+    "Meet your secret weapon, Sidekick",
+    "There’s no better place for you to build",
+    "Build fast on Shopify"
+  ],
+  "h2Removed": [
+    "Bring your business online",
+    "Take the best path forward",
+    "With you wherever you’re going",
+    "Empowering independent business owners everywhere",
+    "Get the help you need, every step of the way",
+    "Start your business journey with Shopify",
+    "More resources",
+    "Change your country or region."
+  ],
+  "ctaAdded": [
+    "Start for free",
+    "Get a stunning store",
+    "Compare Shopify",
+    "SidekickYour commerce-obsessed AI assistant.",
+    "Website Builder",
+    "Customer Accounts",
+    "AI Chats",
+    "Shop App",
+    "Social & Marketplaces",
+    "Across Markets"
+  ],
+  "ctaRemoved": [
+    "Start your business",
+    "Start free trial",
+    "Explore more examples",
+    "Explore ways to sell",
+    "Explore how to market your business",
+    "Explore how to manage your business",
+    "Learn more about Shopify",
+    "Contact support",
+    "Explore the Shopify Experts Marketplace",
+    "Contact"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2021-07",
+      "label": "Jul 2021 — original state",
+      "period": "Jul 2021",
+      "screenshotPath": "/cro-teardowns/shopify/selected/2021-07.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"The platform commerce is built on\" — direct product statement.",
+        "Visible section headings include: \"Bring your business online\", \"Take the best path forward\", \"With you wherever you’re going\".",
+        "Navigation includes: \"Skip to Content\", \"Start your business\", \"Business name generator\", \"Web address\" — product category framing.",
+        "Section headings later removed include: \"Bring your business online\" and \"Take the best path forward\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/shopify/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Be the nextAI all-star\" — updated value proposition.",
+        "New section headings include: \"store they line up for\", \"Your brand has entered the chat\", \"Meet your secret weapon, Sidekick\".",
+        "CTAs no longer present include: \"Start your business\", \"Start free trial\", \"Explore more examples\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"The platform commerce is built on\" to \"Be the nextAI all-star\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Start your business\", \"Business name generator\", \"Web address\" to \"Website Builder\", \"Domains\", \"Customer Accounts\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "5 section headings were added and 8 removed between Jul 2021 and Jun 2026. New headings include \"store they line up for\" and \"Your brand has entered the chat\". Headings that disappeared include \"Bring your business online\" and \"Take the best path forward\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 3 snapshots spanning roughly 5 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

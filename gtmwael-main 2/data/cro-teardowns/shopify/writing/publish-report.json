@@ -1,0 +1,26 @@
+{
+  "publishedAt": "2026-06-09T05:51:53.753Z",
+  "slug": "shopify",
+  "dryRun": false,
+  "forced": true,
+  "qualityGates": {
+    "finalJudgePass": false,
+    "finalJudgeScore": 78,
+    "seoPass": true,
+    "seoScore": 82,
+    "unsupportedClaims": []
+  },
+  "blockedReasons": [
+    "Final judge FAIL — score 78/100 (need ≥ 90)"
+  ],
+  "articlePath": "src/content/cro-teardown/articles/shopify.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

@@ -1,0 +1,7 @@
+The old headline — **"The platform commerce is built on"** — spoke to a merchant comparing platforms. The new one — **"Be the nextAI all-star"** — speaks to someone deciding whether they belong in the arena at all.
+
+**"The platform commerce is built on"** assumes the reader is already selling and shopping on capability. **"Be the nextAI all-star"** targets pre-revenue side-hustlers or first-time founders — readers who need identity permission before they evaluate features. The meta description shift from **"Try Shopify free and start a business or grow an existing one"** to **"Try Shopify free. Build or grow your business fast with AI"** reinforces the urgency frame: AI-speed language appeals to readers who fear being late or left behind, not to operators comparing checkout flows.
+
+The tradeoff: **speed vs qualification**. Aspirational framing lowers friction for browsers still deciding whether to sell online, but the page no longer signals what kind of seller Shopify is built for. That can widen the trial funnel while making it harder to pre-qualify serious buyers from explorers.
+
+The question for your own page: are you naming the category or naming the person — and does that match the buyer who converts, not just the one who clicks?

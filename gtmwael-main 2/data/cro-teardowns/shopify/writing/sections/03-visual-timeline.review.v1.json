@@ -1,0 +1,34 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "Paragraph 2 opens with 'This can be read as' — mechanical hedging that weakens the claim established in paragraph 1",
+    "The phrase 'It trades category authority for aspiration' in paragraph 2 is asserted without showing how aspiration manifests in the new headline beyond the word 'star'",
+    "Paragraph 2 is approximately 95 words — exceeds 90-word threshold and does not introduce a distinct second idea; the entire paragraph is a single interpretive move",
+    "The takeaway question 'does your visitor believe AI is the unlock, or do they need to believe in *you* first?' introduces a dichotomy not explicitly traced to the evidence — the draft does not show visitor signals or funnel position that would determine this choice",
+    "Section word count is approximately 220 words — within target range but on the high end given the density of the evidence"
+  ],
+  "requiredFixes": [
+    "Paragraph 2: Remove the opening 'This can be read as' and lead with a direct claim. Example: 'The shift moves Shopify from credibility-based positioning (we are infrastructure) to an outcome-forward claim embedding AI as the differentiator.'",
+    "Paragraph 2: Compress to under 90 words. The interpretive move ('credibility → outcome') and the assumption statement ('The new headline assumes the visitor wants to become exceptional') can be combined into a single punchy assertion.",
+    "Takeaway: Ground the dichotomy ('AI unlock vs belief in you') in the evidence. Reference the meta description shift ('fast with AI' vs 'start a business') or the H1 contrast ('platform' vs 'all-star') to show which frame serves which visitor state."
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Meta description comparison is quoted accurately and shows a measurable shortening (from 34 to 29 words) — useful for readers tracking character-count optimization"
+  ],
+  "rewriteInstruction": "Paragraph 2 needs compression and a stronger opening. Replace 'This can be read as' with a direct claim that the shift moves from credibility to outcome. Combine the interpretive move and the assumption statement into one tight assertion (target 70–75 words). In the takeaway, anchor the 'AI unlock vs belief in you' dichotomy to the evidence: reference the meta description's 'fast with AI' claim or the H1's 'all-star' framing to show which serves early-stage vs advanced visitors. The tradeoff is sharp; the takeaway should match that clarity.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "clarity": 7,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 9,
+    "editorialQuality": 0,
+    "founderSharpness": 17,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

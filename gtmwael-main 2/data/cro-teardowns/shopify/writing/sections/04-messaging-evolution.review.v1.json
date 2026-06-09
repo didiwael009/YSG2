@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Opening line is thesis-style: 'The old page spoke to someone building their first business. The new one speaks to someone building with AI.' This reads as summary rather than executing the contrast move — should open with the headline shift itself (assigned opening: contrast).",
+    "Meta description change quoted but not bolded — **'Try Shopify free and start a business or grow an existing one'** appears in plain quotes only. Required fix: all website verbatim quotes must be bolded.",
+    "Page title change quoted but not bolded — **'Start a Business, Grow Your Business'** and **'The All-in-One Commerce Platform for Businesses'** appear in plain quotes only.",
+    "Phrase 'This appears consistent with targeting a buyer who already runs something...' is cautious hedging. The section has already shown the evidence (beginner language out, capability language in); the interpretation could be stated directly.",
+    "Word count slightly over target (approx 165 words vs 150–180 target) — within acceptable range but no second distinct idea in final paragraph to justify length.",
+    "Section name is '04-messaging-evolution' but draft does not identify old vs new buyer AUDIENCE explicitly beyond 'someone building their first business' vs 'someone building with AI' — buyer psychology is present but could be sharper (e.g., first-time founder vs growth-stage merchant who switched platforms)."
+  ],
+  "requiredFixes": [
+    "Bold all website verbatim quotes: **'Try Shopify free and start a business or grow an existing one'** → **\"Try Shopify free and start a business or grow an existing one\"** (and same for page title quotes).",
+    "Rewrite opening to execute the contrast move: lead with the headline shift itself, not a thesis. Example: '**\"The platform commerce is built on\"** became **\"Be the nextAI all-star.\"** — open with this contrast, then unpack the implications.'",
+    "Replace 'This appears consistent with targeting a buyer...' with a direct claim. The evidence has already been shown; state the shift clearly."
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Section references meta description and page title changes — both SEO-critical elements. This is valuable for founder takeaway.",
+    "Meta description shortening is noted but not analysed for character count or SERP display implications — minor missed opportunity."
+  ],
+  "rewriteInstruction": "Open with the headline shift itself (contrast move): lead with the **\"The platform commerce is built on\"** → **\"Be the nextAI all-star\"** change, then unpack the buyer shift. Bold all website quotes (meta description, page title). Replace 'This appears consistent with' with a direct claim — the evidence supports a clear interpretation. Tighten final paragraph: the founder takeaway is strong but could land harder if the preceding sentence is trimmed. Aim for 150–165 words total. Ensure old vs new buyer audiences are explicitly named (e.g., 'first-time founder' vs 'growth-stage merchant switching platforms').",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 9,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 9,
+    "editorialQuality": 3,
+    "founderSharpness": 15,
+    "distinctiveness": 2
+  },
+  "effectivePassThreshold": 85
+}

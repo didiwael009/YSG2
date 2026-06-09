@@ -1,0 +1,65 @@
+{
+  "sectionId": "01-intro",
+  "companyName": "Shopify",
+  "companyUrl": "https://www.shopify.com",
+  "articleTitle": "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
+  "h1": "How Shopify rewrote its homepage over 5 years",
+  "fromLabel": "Jul 2021",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 5,
+    "h2Removed": 8,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2021 → Jun 2026",
+      "note": "3 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 8 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "The platform commerce is built on",
+      "after": "Be the nextAI all-star",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Try Shopify free and start a business or grow an existing one. Get more than ecommerce software with tools to manage every part of your business.",
+      "after": "Try Shopify free. Build or grow your business fast with AI. Get more than ecommerce software with tools to manage every part of your business.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Start a Business, Grow Your Business - Shopify 14-Day Free Trial",
+      "after": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify"
+    }
+  ]
+}

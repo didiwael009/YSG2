@@ -1,0 +1,25 @@
+{
+  "score": 92,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Section correctly reproduces both headline variants with bold quotes, establishing SEO-relevant keyword context early",
+    "Mention of 'page title, meta description, navigation structure' signals comprehensive scope without diluting focus"
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "clarity": 10,
+    "specificity": 15,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 10,
+    "analysisDepth": 9,
+    "editorialQuality": 5,
+    "founderSharpness": 18,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -72,6 +72,8 @@ interface CliArgs {
   skipSeoAudit: boolean;
   rerunFailed: boolean;
   maxRerunSections: number;
+  /** Force all section writers/rewriters to this model (e.g. claude-sonnet-4-5). null = per-section defaults. */
+  writerModel: string | null;
 }
 
 function parseArgs(argv: string[]): CliArgs {
@@ -110,6 +112,7 @@ function parseArgs(argv: string[]): CliArgs {
     // Phase 4E: selective rerun after judge/SEO
     rerunFailed:      flags.has('rerun-failed'),
     maxRerunSections: parseInt(args['max-rerun-sections'] ?? '3', 10),
+    writerModel:      args['writer-model'] ?? null,
   };
 }
 
@@ -327,6 +330,7 @@ async function main(): Promise<void> {
         maxRewriteLoops: cli.maxRewriteLoops,
         minScore:        CRITIC_PASS_SCORE,   // always use default in Phase 4C
         draftOnly:       cli.mode === 'draft',
+        ...(cli.writerModel ? { writerModelOverride: cli.writerModel } : {}),
         tracker,
         onLog:           sectionLog,
       });
@@ -364,7 +368,8 @@ async function main(): Promise<void> {
         sectionsDir,
         sectionOrder: [...SECTION_ORDER],
         tracker,
-        model: getModel('judge'),   // Opus: reads the whole article at once
+        // Opus by default; --writer-model forces it down (e.g. sonnet-only runs).
+        model: cli.writerModel ?? getModel('judge'),
         onLog: crossLog,
       });
       for (const w of crossResult.integrityWarnings) {

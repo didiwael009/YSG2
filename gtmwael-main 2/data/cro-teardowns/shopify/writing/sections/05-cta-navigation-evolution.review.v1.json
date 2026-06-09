@@ -1,0 +1,38 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 1 exceeds 90 words (approximately 95 words) — contains two distinct ideas (the CTA shift and the tradeoff) but could be compressed by cutting 'What replaced them:' and integrating the observation directly",
+    "Paragraph 2 opens with 'can be read as' — interpretive hedge that is mechanical, not meaningful (the shift from educational to intent-capture is directly observable from the evidence)",
+    "Paragraph 2 contains a founder takeaway ('Count your mid-funnel asks, then ask whether your traffic quality justifies removing them') but it is generic — could apply word-for-word to any SaaS homepage removing exploration CTAs, with no Shopify-specific evidence anchor",
+    "No conversion implication is stated explicitly — the section describes the shift and names a tradeoff but does not explain what happens to visitor drop-off, trial start rate, or qualified lead volume",
+    "Buyer psychology is implied (ready vs curious, warm vs cold traffic) but not directly stated — which persona or decision stage does each CTA set serve? The section assumes the reader will infer this",
+    "Section word count: approximately 175 words — within target range for this section type"
+  ],
+  "requiredFixes": [
+    "Paragraph 1: Compress to 85 words or fewer by cutting 'What replaced them:' and integrating the observation directly: 'Ten CTAs became ten different CTAs. The labels shifted from educational entry points — **\"Start your business\"**, **\"Explore more examples\"**, **\"Explore ways to sell\"** — to product-specific action — **\"Start for free\"**, **\"Get a stunning store\"**, **\"Website Builder\"**, **\"Shop App\"**. The page removed every 'learn more' and 'explore' variant, replacing them with feature-specific trial entry points and tool names that assume you already know what Shopify does.'",
+    "Paragraph 2: Remove 'can be read as' and replace with a direct claim: 'The new CTA set shifts from nurturing consideration to capturing intent.'",
+    "Paragraph 2: Add a Shopify-specific conversion implication anchored to the evidence — e.g., 'If mid-funnel CTAs like **\"Explore ways to sell\"** were converting cold traffic into trials, removing them may have increased trial quality at the cost of trial volume. If they were bloating the funnel with unqualified signups, product-specific CTAs like **\"Website Builder\"** let qualified visitors self-select faster.'",
+    "Paragraph 2: Anchor the generic takeaway to Shopify's evidence — e.g., 'Count your mid-funnel asks, then ask: if Shopify's **\"Explore more examples\"** drove 20% of trial starts from cold traffic, can you afford to remove it? If it drove 5% from warm traffic that would convert anyway, cut it.'"
+  ],
+  "riskFlags": [
+    "Paragraph 2: 'Shopify appears to have moved educational load off the homepage and onto content, ads, or organic search' — this is a causal claim with no supporting evidence (no data on traffic sources, ad spend, content strategy, or organic rankings). Label as interpretation or remove."
+  ],
+  "seoNotes": [
+    "Section references product-specific CTAs like **\"Website Builder\"** and **\"Shop App\"** — these are keyword-rich labels that may improve organic visibility for feature-specific searches"
+  ],
+  "rewriteInstruction": "Compress paragraph 1 to 85 words or fewer by cutting redundant transitions. Replace 'can be read as' with a direct claim in paragraph 2. Add a Shopify-specific conversion implication anchored to the removed CTAs (e.g., **\"Explore ways to sell\"**, **\"Explore more examples\"**) — what happens to trial volume or drop-off when you remove mid-funnel asks and replace them with feature-specific CTAs like **\"Website Builder\"**? Anchor the generic takeaway to Shopify's evidence: if **\"Explore more examples\"** drove X% of trial starts from cold traffic, can you afford to remove it? This will raise specificity, analysisDepth, and founderSharpness above threshold.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "clarity": 8,
+    "specificity": 10,
+    "seoUsefulness": 0,
+    "croUsefulness": 0,
+    "riskControl": 7,
+    "analysisDepth": 9,
+    "editorialQuality": 5,
+    "founderSharpness": 12,
+    "distinctiveness": 5
+  },
+  "effectivePassThreshold": 85
+}

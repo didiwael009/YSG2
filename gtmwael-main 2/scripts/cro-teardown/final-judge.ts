@@ -204,6 +204,43 @@ function asStringArray(v: unknown): string[] {
   return v.filter((x): x is string => typeof x === 'string');
 }
 
+/**
+ * Last-resort salvage when the judge emits JSON with unescaped inner quotes
+ * (our articles are dense with **"bold quotes"**, which the judge sometimes
+ * reproduces raw inside string-array fields). Recovers the scalar scores via
+ * regex and gates conservatively: `pass` can only stay true if we can VERIFY
+ * unsupportedClaims is an empty array — otherwise we assume problems exist.
+ */
+function salvageJudgeObject(text: string): Record<string, unknown> | null {
+  const num = (k: string): number | undefined => {
+    const m = text.match(new RegExp(`"${k}"\\s*:\\s*(\\d+)`));
+    return m ? parseInt(m[1], 10) : undefined;
+  };
+  const overallScore = num('overallScore');
+  if (overallScore === undefined) return null;   // nothing usable
+
+  // unsupportedClaims emptiness gates pass. Found-and-empty → []; anything else → sentinel (forces fail).
+  const uc = text.match(/"unsupportedClaims"\s*:\s*\[([\s\S]*?)\]/);
+  const unsupportedEmpty = uc ? uc[1].trim() === '' : false;
+
+  return {
+    overallScore,
+    evidenceAccuracy:   num('evidenceAccuracy'),
+    riskControl:        num('riskControl'),
+    croUsefulness:      num('croUsefulness'),
+    clarity:            num('clarity'),
+    sectionCoherence:   num('sectionCoherence'),
+    analysisDepth:      num('analysisDepth'),
+    founderUsefulness:  num('founderUsefulness'),
+    concision:          num('concision'),
+    editorialSharpness: num('editorialSharpness'),
+    articleWordCount:   num('articleWordCount'),
+    unsupportedClaims:  unsupportedEmpty ? [] : ['<judge JSON salvage — claims field unparseable>'],
+    weakSections: [], riskFlags: [], requiredFixes: [],
+    optionalImprovements: [], rerunRecommendations: [],
+  };
+}
+
 function toInt(v: unknown, max: number): number {
   return typeof v === 'number' ? Math.round(Math.max(0, Math.min(max, v))) : 0;
 }
@@ -214,16 +251,19 @@ function parseJudgeResponse(
   costUsd: number,
 ): FinalJudgeResult {
   const jsonStr = extractJson(raw);
-  if (!jsonStr) {
-    throw new Error(
-      `Could not extract JSON from judge response.\nFirst 500 chars:\n${raw.slice(0, 500)}`,
-    );
+  let obj: Record<string, unknown> | null = null;
+  if (jsonStr) {
+    try {
+      obj = JSON.parse(jsonStr) as Record<string, unknown>;
+    } catch { obj = null; }
   }
-  let obj: Record<string, unknown>;
-  try {
-    obj = JSON.parse(jsonStr) as Record<string, unknown>;
-  } catch (err) {
-    throw new Error(`Judge JSON parse error: ${String(err)}\nInput:\n${jsonStr.slice(0, 500)}`);
+  if (!obj) {
+    obj = salvageJudgeObject(raw);
+    if (!obj) {
+      throw new Error(
+        `Could not extract or salvage JSON from judge response.\nFirst 500 chars:\n${raw.slice(0, 500)}`,
+      );
+    }
   }
 
   const overallScore     = toInt(obj.overallScore, 100);

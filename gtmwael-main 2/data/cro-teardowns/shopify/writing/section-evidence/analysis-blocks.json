@@ -1,0 +1,27 @@
+[
+  {
+    "id": "analysis-2021-07",
+    "label": "Jul 2021 — original state",
+    "period": "Jul 2021",
+    "screenshotPath": "/cro-teardowns/shopify/selected/2021-07.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"The platform commerce is built on\" — direct product statement.",
+      "Visible section headings include: \"Bring your business online\", \"Take the best path forward\", \"With you wherever you’re going\".",
+      "Navigation includes: \"Skip to Content\", \"Start your business\", \"Business name generator\", \"Web address\" — product category framing.",
+      "Section headings later removed include: \"Bring your business online\" and \"Take the best path forward\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/shopify/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Be the nextAI all-star\" — updated value proposition.",
+      "New section headings include: \"store they line up for\", \"Your brand has entered the chat\", \"Meet your secret weapon, Sidekick\".",
+      "CTAs no longer present include: \"Start your business\", \"Start free trial\", \"Explore more examples\"."
+    ]
+  }
+]

@@ -678,6 +678,12 @@ export interface WriteSectionOpts {
   minScore?: number;
   /** Skip critic and rewriter — write v1 only and save as final. */
   draftOnly?: boolean;
+  /**
+   * Phase 4P: force a specific writer/rewriter model for ALL sections,
+   * overriding each section's writerModel (e.g. run analytical sections on
+   * Sonnet instead of their default Opus). Critic model is unaffected.
+   */
+  writerModelOverride?: string;
   tracker: CostTracker;
   /** Called for each step so the caller controls console output and run-log. */
   onLog: (step: string, ok: boolean, detail?: string) => void;
@@ -701,7 +707,8 @@ export async function writeSectionLoop(
 
   // Phase 4P: analytical sections override writer/rewriter to Opus for sharper prose.
   // The critic deliberately stays on its own (cheaper) model — quality gate, not generation.
-  const sectionWriterModel = getSectionMeta(sectionId).writerModel;
+  // A run-level writerModelOverride (e.g. --writer-model) trumps the per-section default.
+  const sectionWriterModel = opts.writerModelOverride ?? getSectionMeta(sectionId).writerModel;
   const writerModel   = sectionWriterModel ?? getModel('writer');
   const criticModel   = getModel('critic');
   const rewriterModel = sectionWriterModel ?? getModel('rewriter');
@@ -746,13 +753,13 @@ export async function writeSectionLoop(
   let currentDraft = writerResp.content;
   let currentVersion = 1;
   let loopsUsed = 0;
-  let lastCritic: CriticResult & { pass: boolean } = {
+  let lastCritic: CriticResult & { pass: boolean; parseFailed?: boolean } = {
     score: 0, pass: false,
     issues: [], requiredFixes: [], riskFlags: [], seoNotes: [],
     rewriteInstruction: '',
   };
 
-  const runCritic = async (draft: string, ver: number): Promise<CriticResult & { pass: boolean }> => {
+  const runCritic = async (draft: string, ver: number): Promise<CriticResult & { pass: boolean; parseFailed?: boolean }> => {
     const resp = await withRetry(
       () => callLLM({
         model: criticModel,
@@ -764,7 +771,22 @@ export async function writeSectionLoop(
     );
     tracker.add(computeCallCost(criticModel, `critic-v${ver}`, resp.inputTokens, resp.outputTokens));
 
-    const raw = parseCriticResponse(resp.content);
+    // Graceful degradation: the critic occasionally emits JSON with unescaped inner
+    // quotes (our content is dense with **"bold quotes"**). Rather than throw away an
+    // already-written draft, salvage the numeric score and keep the draft as-is.
+    let raw: CriticResult;
+    try {
+      raw = parseCriticResponse(resp.content);
+    } catch {
+      const m = resp.content.match(/"score"\s*:\s*(\d+)/);
+      const salvaged = m ? parseInt(m[1], 10) : 0;
+      onLog(`Critic v${ver}`, false, `JSON parse failed — salvaged score ${salvaged}; keeping current draft`);
+      return {
+        score: salvaged, pass: salvaged >= minScore,
+        issues: [], requiredFixes: [], riskFlags: [], seoNotes: [],
+        rewriteInstruction: '', parseFailed: true,
+      };
+    }
     const effectivePass = raw.score >= minScore;
     const result = { ...raw, pass: effectivePass };
 
@@ -782,7 +804,7 @@ export async function writeSectionLoop(
 
   lastCritic = await runCritic(currentDraft, currentVersion);
 
-  while (!lastCritic.pass && loopsUsed < effectiveMaxLoops) {
+  while (!lastCritic.pass && !lastCritic.parseFailed && loopsUsed < effectiveMaxLoops) {
     const rewritePrompt = buildRewriterPrompt(
       sectionId, evidence, currentDraft, lastCritic, minScore,
     );

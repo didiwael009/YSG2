@@ -1,0 +1,10 @@
+{
+  "name": "Shopify",
+  "slug": "shopify",
+  "url": "https://www.shopify.com",
+  "from": "2021-01",
+  "to": "2026-06",
+  "stepMonths": 6,
+  "createdAt": "2026-06-09T05:13:01.921Z",
+  "phase": 1
+}
