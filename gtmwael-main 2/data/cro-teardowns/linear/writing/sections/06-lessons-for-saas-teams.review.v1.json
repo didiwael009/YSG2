@@ -1,0 +1,50 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section heading is 23 words long and contains no searchable terms except 'Linear' and 'homepage' — the phrase 'When it works and when it doesn't' adds zero SEO value",
+    "H3 'The pattern' delivers abstract category theory instead of a practical takeaway in the first two sentences — the actionable insight is buried in sentence 3",
+    "First H3 block is 62 words (over 60-word limit for analytical section bodies)",
+    "Second H3 block ('Who should copy this') is 72 words (over 60-word limit)",
+    "Third H3 block ('Who should NOT copy this') is 66 words (over 60-word limit)",
+    "The term 'category creation' appears without plain-language explanation",
+    "The term 'forward positioning' appears without plain-language explanation",
+    "Paragraph 1 under 'The pattern' could appear in any SaaS teardown discussing category positioning — not anchored to Linear-specific evidence",
+    "No bold quotes wrapping verbatim website elements — 'AI agent' and tool names appear in plain quotes",
+    "Final test paragraph is generic audit instruction ('Search your support tickets') rather than a specific 5-minute test anchored to Linear's evidence",
+    "Section reads like strategist-to-strategist throughout — uses abstract positioning language without translating to founder action",
+    "The opening sentence ('Linear stopped selling against the existing category') states a strategic conclusion without showing the evidence that led there"
+  ],
+  "requiredFixes": [
+    "Rewrite section heading to 'Linear homepage positioning lesson: Should SaaS teams copy the AI agent strategy?' — adds keyword density and cuts filler",
+    "Rewrite 'The pattern' H3 opening to lead with the practical takeaway: 'If your product is already managing AI agent outputs in production, you can claim category ownership before competitors arrive. Linear did this by rewriting its H1 from **'The issue tracking tool you'll enjoy using'** to **'The product development system for teams and agents'** — treating AI coordination as infrastructure to buy today, not a future to prepare for.'",
+    "Add plain-language explanations: 'category creation (claiming you invented a new product type)' and 'forward positioning (describing a workflow that barely exists yet as if it's standard practice)'",
+    "Wrap all verbatim website text in **bold quotes**: **'AI agent'**, **'Cursor'**, **'GitHub Copilot'**, **'teams and agents'**",
+    "Cut paragraph 1 under 'The pattern' to 58 words by removing 'This is category creation through forward positioning: claiming the category language before competitors arrive' — this is abstract commentary, not evidence-anchored analysis",
+    "Cut 'Who should copy this' to 58 words by removing 'You have evidence that this workflow exists today in your user base' (redundant with prior sentence)",
+    "Cut 'Who should NOT copy this' to 59 words by combining the credibility warning into a single sentence",
+    "Rewrite final test to be specific and 5-minute runnable: 'Open your last 20 sales call transcripts and count how many times a buyer mentions **'AI agent'**, **'Cursor'**, **'Copilot'**, or **'Devin'** unprompted. If fewer than 2 calls (10%) include those terms, your buyers are not living in the workflow Linear is now selling to — keep your current positioning and test AI messaging on a /ai-workflows page with $500 in LinkedIn ads first.'"
+  ],
+  "riskFlags": [
+    "Sentence 1 under 'The pattern' makes a strategic conclusion ('Linear stopped selling against the existing category') without referencing the specific evidence trail — should cite the H1 change and meta description pivot explicitly",
+    "The phrase 'category that doesn't fully exist yet' is an interpretive claim not directly supported by the evidence — the evidence shows Linear repositioned, but whether the category 'doesn't exist' is analyst opinion, not fact",
+    "Sentence 'This is category creation through forward positioning' uses two expert terms back-to-back with no plain-language translation — violates accessibility for founder audience"
+  ],
+  "seoNotes": [
+    "Section heading misses opportunity for keyword density — should include 'positioning' or 'messaging' alongside 'Linear homepage'",
+    "H3 subheadings ('The pattern', 'Who should copy this') contain zero search terms — a founder Googling 'should I copy Linear homepage' will not match these headings in a SERP preview",
+    "Positive: Section structure (pattern → copy → don't copy → test) matches search intent for 'should I copy [competitor strategy]' queries",
+    "Missed opportunity: No mention of 'Jira', 'Asana', or 'issue tracking' in the body — these are high-volume comparison terms that should appear in lessons section for SEO equity"
+  ],
+  "rewriteInstruction": "Lead every H3 block with the practical takeaway in sentence 1, then support it with Linear's specific evidence (quoted headlines, dated changes). Replace abstract positioning language ('category creation', 'forward positioning') with plain explanations in the same sentence where they first appear. Cut each H3 body to 58 words by removing interpretive commentary that does not cite evidence. Wrap every verbatim website element in **bold quotes**. Rewrite the final test to be a 5-minute action using Linear's evidence as the benchmark (e.g. 'Count how many sales calls mention AI agents unprompted — if fewer than 10%, you're not ready for this positioning'). Revise the section heading to include 'positioning' or 'AI agent strategy' for search visibility. Anchor every claim to a quoted change from the evidence, not to category theory.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 6,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

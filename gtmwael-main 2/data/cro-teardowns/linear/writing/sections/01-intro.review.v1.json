@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Word count is 137 words — exceeds the 90-word hard cap for intro sections by 52%",
+    "The closing promise ('you will know whether Linear's AI-forward repositioning works because they earned it') implies the article will judge causation, which risks setting up an outcome claim the evidence cannot support",
+    "Paragraph exceeds 90 words (137 total) — violates scannability rule for intro"
+  ],
+  "requiredFixes": [
+    "Cut the section to 85–90 words maximum. The final sentence ('After reading this teardown...') can be removed entirely — the evidence list already establishes what the reader will learn",
+    "Reframe the closing promise to avoid implying outcome judgment. Replace 'you will know WHETHER Linear's AI-forward repositioning works BECAUSE they earned it' with 'you will see WHAT evidence Linear deployed to support the AI-native claim and WHERE the positioning creates friction with the legacy category'"
+  ],
+  "riskFlags": [
+    "The phrase 'works because they earned it with real customer workflows' implies the article will determine causation between customer workflows and positioning success — the evidence file contains no conversion data, customer interviews, or business metrics to support this judgment",
+    "The contrast 'works... or creates a credibility gap' sets up a binary evaluation the teardown cannot resolve with homepage snapshots alone"
+  ],
+  "seoNotes": [
+    "Heading contains company name + 'homepage teardown' + descriptive frame ('Issue Tracker Repositioned as AI Product Platform') — strong for search visibility",
+    "First sentence answers the query directly: company name, time period, and the specific change",
+    "The phrase 'AI-native product operations' appears early and matches probable search intent from the audience description"
+  ],
+  "rewriteInstruction": "Trim to 85 words by removing the final sentence. The intro already delivers: company name, time period, the headline shift, the strategic reframe (issue tracker → AI platform), the evidence types (headings, nav), and the searchable angle. The closing promise about 'whether it works' overpromises — the reader will see the positioning evidence, not a verdict on business outcomes. End after the parenthetical CTA example to keep the scope honest.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

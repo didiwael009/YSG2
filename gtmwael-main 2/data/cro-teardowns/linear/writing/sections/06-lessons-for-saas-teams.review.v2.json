@@ -1,0 +1,40 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The ## section heading is missing 'Linear' — should be 'Linear homepage positioning lesson' to include the company name for search visibility",
+    "H3 'The pattern' — paragraph 1 is ~85 words, exceeds the 60-word scannability target",
+    "H3 'Who should copy this' — paragraph is ~65 words, slightly over target",
+    "The term 'forward positioning' appears without an immediate plain-language definition in the same sentence (defined only by appositional context after em-dash)",
+    "H3 'The test before you copy' — the founder takeaway (the test) is positioned correctly but the 10% threshold and $500 ad budget are not explicitly anchored to Linear's evidence; they appear to be editorial additions"
+  ],
+  "requiredFixes": [
+    "Add 'Linear' to the ## heading: 'Linear homepage positioning lesson: Should SaaS teams copy the AI agent strategy?'",
+    "Break the first paragraph of H3 'The pattern' into two paragraphs at the em-dash — first paragraph ends at '...not a future to prepare for.' Second paragraph starts 'This is category creation...'",
+    "In H3 'The pattern', immediately after 'forward positioning' add: '(describing a workflow that barely exists yet as if it's standard practice)' — currently the definition comes after the em-dash but should be inline",
+    "In H3 'The test before you copy', add a condition to the 10% threshold and $500 budget recommendation: 'If fewer than 2 calls (10%) include those terms — a ratio we inferred from Linear's shift timing, not disclosed data — your buyers are not...' OR remove the specific numeric threshold and state 'If almost none of your calls include those terms...'"
+  ],
+  "riskFlags": [
+    "The 10% threshold and $500 LinkedIn ad budget in the final H3 are not traceable to Linear's evidence — they appear to be editorial recommendations rather than data-supported claims",
+    "The phrase 'treating AI coordination as infrastructure to buy today' is an interpretation of Linear's positioning strategy but not a direct quote or explicitly supported claim from the evidence"
+  ],
+  "seoNotes": [
+    "POSITIVE: H3 headings contain searchable terms: 'copy', 'AI agent strategy', 'test before you copy'",
+    "POSITIVE: The ## heading contains 'homepage positioning lesson' and 'AI agent strategy' — both strong search terms",
+    "MISSING: The ## heading should include 'Linear' for company-name search visibility",
+    "POSITIVE: Bold quotes are correctly applied to all verbatim elements: H1 quotes, tool names (Cursor, GitHub Copilot, Devin)",
+    "POSITIVE: The section is highly specific to Linear's evidence — no generic SaaS paragraphs detected",
+    "POSITIVE: The final H3 delivers a concrete, runnable test (open transcripts, count terms, compare to threshold) that takes under 5 minutes"
+  ],
+  "rewriteInstruction": "Add 'Linear' to the ## heading. Break the 85-word opening paragraph in H3 'The pattern' into two paragraphs at the em-dash. Inline the plain-language definition of 'forward positioning' immediately after the term (before the em-dash). In the final H3, either condition the 10% threshold as an editorial inference ('a ratio we inferred from timing, not disclosed data') or remove the specific number and state 'If almost none of your calls mention these terms'. These are scannability and evidence-traceability fixes; the section is otherwise ready.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 18,
+    "scannability": 11,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

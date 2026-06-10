@@ -1,0 +1,3 @@
+## Linear homepage positioning shift: Quick answer
+
+Linear replaced its 2020 headline **"The issue tracking tool you'll enjoy using"** with **"The product development system for teams and agents"** — shifting from a better version of a known tool to a new category built for AI-augmented workflows. This positioning assumes visitors already believe AI agents will participate in product development and are searching for systems to manage that workflow. If your buyers are still evaluating you as a faster alternative to Jira or Asana and have not yet adopted AI agents in production, this framing may create a category mismatch.

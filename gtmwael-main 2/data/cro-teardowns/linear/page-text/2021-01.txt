@@ -1,0 +1,56 @@
+TITLE: Linear – The issue tracking tool you'll enjoy using
+META DESCRIPTION: Linear helps streamline software projects, sprints, tasks, and bug tracking. It's built for high-performance teams.
+
+H1:
+  - The issue trackingtool you'll enjoy using
+
+H2:
+  - An experience you'd expect from a professional tool.
+  - Interface, streamlined.
+  - Meet your command line
+  - Build team momentum with Cycles
+  - Set direction with Roadmap
+  - Integrated with your tools
+  - Automate tracking with GitHub, Gitlab and Sentry
+  - Preview and embed full Figma designs in Linear.
+  - Get updates and create issues with Slack
+  - Loved by product people
+  - Christophe Pasquier
+  - Get started with Linear today.
+
+H3:
+  - CEO, Founder
+
+CTAS / BUTTONS:
+  - Method
+  - Changelog
+  - About us
+  - Pricing
+  - We're hiring
+  - Twitter
+  - Log in
+  - Sign up
+  - Sign up for free ->
+  - Melissa Du @melissadooo · Aug 11 @linear— We use it and love it. Fast, keyboard shortcuts, simple & clear UI.
+  - @linear
+  - Geoffrey Hayes @justHGH · Sep 21 h/t to@linear. Engineering management has never been so fun.
+  - @alfredapp
+  - Slite
+  - Status
+  - Contact Us
+  - Docs
+  - API
+  - Privacy
+  - Terms of Service
+
+NAV LINKS:
+  - Method
+  - Changelog
+  - About us
+  - Pricing
+  - We're hiring
+  - Twitter
+  - Log in
+
+BODY TEXT:
+MethodChangelogAbout usPricingWe're hiringTwitterLog inSign upLinear Release 2020.12 + Series A|See what’s new →The issue trackingtool you'll enjoy usingLinear helps streamline software projects, sprints, tasks, and bug tracking. It's built for high-performance teams.Sign up for free ->Powering the next generation of companiesAn experience you'd expect from a professional tool.Opinionated and designed for daily use.< 100msBuilt for speedSynchronized in real-time across all users. No spinners or waiting.Keyboard first designOptimized for efficiency with extensive keyboard shortcuts.For software teamsCreated by software people for software product teams.Works offlineAccess and make changes with or without internet access.Light and dark UIWe have multiple themes. Use light or dark, your choice.Multiple teamsHave all your teams in one shared workspace.Interface, streamlined.Robust. Fast to navigate. Create issues in seconds. Add priorities, labels and estimates.List and board. See your issues in either a list or board view.⌘KMeet your command lineAny action can be accessed and completed in seconds with the command menu.Build team momentum with CyclesVelocity and estimates. Track your team's workload and velocity.Automated. Cycles run on an automated schedule, so you can focus on your work.Set direction with RoadmapFocus on the big picture. Set milestones to tie projects to larger company goals and motivate your team. View all company projects in one streamlined view and easily identify what needs your attention.Integrated with your toolsLinear keeps everyone aligned and working more efficiently. Engineers, designers, and peers – all collaborating in one tool.Automate tracking with GitHub, Gitlab and SentryLinear integrates with your pull requests and Sentry issues.Preview and embed full Figma designs in Linear.Add Figma links to any issue as you work on your designs.Get updates and create issues with SlackReceive updates directly in your Slack channels and create issues from discussions.Connect with 1000+ tools using ZapierCreate new issues based on triggers from Zapier applications.Custom workflows using our APIQuery and mutate data using our GraphQL API to build custom workflows.Loved by product peopleMelissa Du @melissadooo · Aug 11@linear — We use it and love it. Fast, keyboard shortcuts, simple & clear UI.phineas @phineyes · Jun 18Quick appreciation tweet for @linear - we've been using it for the past week or so, and it's made our team SO much more productive + it syncs automatically with our GitHub repos. Haven't been excited about a product like this in a while.Xavi Magrinyà @xavimb · May 10I've been lately using @linear for tracking issues and I'm loving it. Very simple UI and lots of tricks and shortcuts for power users. If you have the chance, try it out!Paul Stamatiou @Stammy · Jun 22Started using @linear to track and organize issues for my side-project iOS Stonks app.. So much better than what I was shoehorning Notion in to doing. it's beautiful 😭 and the onboarding was great.Parker Ehret @parkerehret · May 22I’ve been using @linear for over 6 months now. It’s changed how I manage projects. It’s changed how I manage my own tasks. It’s changed what I expect from an application. It’s changed how I think about building software. Aces.Geoffrey Hayes @justHGH · Sep 21h/t to @linear. Engineering management has never been so fun.Karan Talati @ktal90 · May 7@linear has 10x'd our engineering and development speed 🙌 @alfredapp's workflows and snippets are great too 🙌Taylor @taylorcara_ · Jun 18If you haven’t tried out Linear App I would definitely recommend it for both designers and developers! It’s replaced all my current issue software 🤙🏻Eugene Yaroslavtsev @exhaze · May 13Tried out @linear today. Blazing fast ⚡️. One of those rare tools that provides just enough user interface and then just gets out of the way to let you focus on your work.Chibuzor Odai Obiora @nbyodai · Aug 3Got access to @linear might be one of the infinity stones for the software developer's infinity gauntlet. Took me all of 10 minutes to realise that there is no going back. Solid work! Kudos to the team.Melissa Du @melissadooo · Aug 11@linear — We use it and love it. Fast, keyboard shortcuts, simple & clear UI.phineas @phineyes · Jun 18Quick appreciation tweet for @linear - we've been using it for the past week or so, and it's made our team SO much more productive + it syncs automatically with our GitHub repos. Haven't been excited about a product like this in a while.Xavi Magrinyà @xavimb · May 10I've been lately using @linear for tracking issues and I'm loving it. Very simple UI and lots of tricks and shortcuts for power users. If you have the chance, try it out!Paul Stamatiou @Stammy · Jun 22Started using @linear to track and organize issues for my side-project iOS Stonks app.. So much better than what I was shoehorning Notion in to doing. it's beautiful 😭 and the onboarding was great.Parker Ehret @parkerehret · May 22I’ve been using @linear for over 6 months now. It’s changed how I manage projects. It’s changed how I manage my own tasks. It’s changed what I expect from an application. It’s changed how I think about building software. Aces.Geoffrey Hayes @justHGH · Sep 21h/t to @linear. Engineering management has never been so fun.Karan Talati @ktal90 · May 7@linear has 10x'd our engineering and development speed 🙌 @alfredapp's workflows and snippets are great too 🙌Taylor @taylorcara_ · Jun 18If you haven’t tried out Linear App I would definitely recommend it for both designers and developers! It’s replaced all my current issue software 🤙🏻Eugene Yaroslavtsev @exhaze · May 13Tried out @linear today. Blazing fast ⚡️. One of those rare tools that provides just enough user interface and then just gets out of the way to let you focus on your work.Chibuzor Odai Obiora @nbyodai · Aug 3Got access to @linear might be one of the infinity stones for the software developer's infinity gauntlet. Took me all of 10 minutes to realise that there is no going back. Solid work! Kudos to the team.Linear.fmThere was an error loading this video (otherError).Christophe PasquierCEO, FounderSlite helps remote teams share ideas, save knowledge, and work together anytime, any place. Christophe shares why he keeps organizational processes simple and ideally similar across different working teams, especially at an earlier stage. He chooses tools that encourage this and finds simple processes and automated workflows can help the team focus on more important things like longterm goals. Building with Linear since 2019/07Listen to all episodes –>Get started with Linear today.Linear keeps everyone aligned and working without friction. Engineers, designers, and peers – all collaborating in one tool. Sign up for free ->Linear - Designed in CaliforniaStatusTwitterContact UsDocsAPIPrivacyTerms of Service

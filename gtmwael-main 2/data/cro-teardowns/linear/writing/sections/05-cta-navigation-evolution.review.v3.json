@@ -1,0 +1,51 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "H3 heading 'What changed' lacks the company name and searchable terms (CTA, conversion, homepage) — it is a generic label that could appear in any teardown",
+    "H3 heading 'Who the dual-CTA structure filters out' is clever-only with no searchable terms — does not contain Linear, CTA, conversion, or homepage",
+    "The phrase 'dual-funnel structure' appears twice without a plain-language definition at first use",
+    "Causal claim 'This dual-funnel structure assumes visitors arrive knowing which path fits them' has no condition attached — it states an outcome without 'if [condition]' framing",
+    "Causal claim 'Both new CTAs require a decision — self-serve or enterprise — that assumes the visitor already understands how Linear fits their workflow' lacks a condition and is not traceable to evidence — the evidence shows CTA text changes but does not document visitor comprehension requirements",
+    "The phrase 'qualified-lead volume' is expert jargon used without a plain-language definition in the same sentence",
+    "Paragraph 2 (H3 block 2, body) is 67 words — exceeds the 60-word cap for analytical H3 blocks",
+    "Paragraph 3 (H3 block 3, body) is 77 words — exceeds the 60-word cap for analytical H3 blocks",
+    "The final audit instruction is generic ('check when conversion rate or qualified-lead volume changed') rather than a specific, runnable test anchored to Linear's evidence",
+    "The opening sentence restates the evidence flatly ('Linear replaced X with Y') instead of leading with the most interesting finding — the removal of the low-commitment path",
+    "Word count is approximately 195 words — exceeds the 120–180 target range by 15 words"
+  ],
+  "requiredFixes": [
+    "Change H3 'What changed' to include Linear and a searchable term, e.g. 'Linear replaced one CTA with two: the shift from waitlist to dual-path conversion'",
+    "Change H3 'Who the dual-CTA structure filters out' to include Linear and searchable terms, e.g. 'Linear's dual-CTA homepage now filters out undecided visitors'",
+    "Add plain-language definition at first use: 'two parallel paths (a dual-funnel structure)'",
+    "Attach condition to causal claim: 'This dual-funnel structure assumes visitors arrive knowing which path fits them — if they don't, both CTAs create friction'",
+    "Replace or remove the unsupported claim about visitor comprehension, or reframe as a testable hypothesis rather than a factual assertion",
+    "Replace 'qualified-lead volume' with 'the number of sales-ready leads' or define it inline",
+    "Split paragraph 2 into two blocks or cut to 60 words",
+    "Split paragraph 3 into two blocks or cut to 60 words",
+    "Replace final audit instruction with a specific, runnable test, e.g. 'Count how many homepage CTAs require zero account creation, zero contact form, zero commitment — if the answer is zero, you have removed Linear's old waitlist equivalent'",
+    "Rewrite the opening to lead with the most interesting insight: the removal of the low-commitment path, not the appearance of two CTAs",
+    "Cut 15+ words to meet the 180-word cap"
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM WITHOUT CONDITION: 'This dual-funnel structure assumes visitors arrive knowing which path fits them' — no 'if' framing, no evidence trace",
+    "UNSUPPORTED OUTCOME CLAIM: 'assumes the visitor already understands how Linear fits their workflow' — the evidence documents CTA text changes but does not provide data on visitor comprehension or workflow understanding",
+    "CAUSAL FRAMING: 'Linear's shift suggests they no longer need to capture undecided traffic' — this is an interpretation presented as fact, not anchored to conversion data or a stated company rationale"
+  ],
+  "seoNotes": [
+    "NEGATIVE: The ## section heading 'Linear's CTA evolution: from waitlist to dual-funnel conversion' is strong and contains both the company name and 'CTA', a searchable term",
+    "NEGATIVE: H3 headings 'What changed' and 'Who the dual-CTA structure filters out' are clever-only and do not contain searchable terms — these will not help Google understand the section content",
+    "POSITIVE: The section uses 'Linear' repeatedly and discusses 'CTA' and 'conversion' — good keyword density for the target phrase 'Linear homepage teardown'"
+  ],
+  "rewriteInstruction": "Lead with the most interesting finding: Linear removed the low-commitment waitlist path and replaced it with two high-commitment CTAs. Define 'dual-funnel structure' inline at first use. Attach conditions to all causal claims (e.g. 'if visitors don't know which path fits them, both CTAs create friction'). Remove or reframe the unsupported claim about visitor workflow understanding — the evidence shows CTA changes, not visitor behavior. Rename both H3 headings to include 'Linear' and searchable terms like 'CTA' or 'conversion'. Split the second and third H3 blocks into shorter paragraphs (60 words max). Replace the final audit instruction with a specific, runnable test: 'Count how many homepage CTAs require zero account creation, zero contact form, zero commitment — if the answer is zero, you have removed Linear's old waitlist equivalent.' Cut 15+ words to meet the 180-word cap. Ensure the practical takeaway appears in the first two sentences of each H3 block.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 12,
+    "plainLanguage": 12,
+    "scannability": 6,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,28 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 9,
+    "h2Added": 7,
+    "h2Removed": 10,
+    "ctaAdded": 10,
+    "ctaRemoved": 5,
+    "navAdded": 8,
+    "navRemoved": 5,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [],
+  "generatedAt": "2026-06-10T16:55:48.854Z",
+  "postSummary": {
+    "title": "Linear Homepage Teardown: Jan 2020 to Jun 2026",
+    "h1": "How Linear rewrote its homepage over 6 years",
+    "readTime": "9 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 4,
+    "snapshotCount": 9
+  }
+}

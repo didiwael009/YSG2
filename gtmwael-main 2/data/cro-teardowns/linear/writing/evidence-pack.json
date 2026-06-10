@@ -1,0 +1,173 @@
+{
+  "slug": "linear",
+  "companyName": "Linear",
+  "companyUrl": "https://linear.app",
+  "fromMonth": "2020-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-10T16:55:48.840Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "label": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/linear/selected/2020-01.webp",
+      "timestamp": "20200415114927",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2021-01",
+      "label": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/linear/selected/2021-01.webp",
+      "timestamp": "20210414203722",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": 0.6847,
+      "comparedTo": "2020-01"
+    },
+    {
+      "month": "2022-01",
+      "label": "Jan 2022",
+      "screenshotPath": "/cro-teardowns/linear/selected/2022-01.webp",
+      "timestamp": "20220415055714",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": 0.8134,
+      "comparedTo": "2021-01"
+    },
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/linear/selected/2023-01.webp",
+      "timestamp": "20230411072050",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": 0.5916,
+      "comparedTo": "2022-01"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/linear/selected/2024-01.webp",
+      "timestamp": "20240414033353",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": 0.9556,
+      "comparedTo": "2023-01"
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/linear/selected/2024-07.webp",
+      "timestamp": "20241014204418",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": 0.7683,
+      "comparedTo": "2024-01"
+    },
+    {
+      "month": "2025-07",
+      "label": "Jul 2025",
+      "screenshotPath": "/cro-teardowns/linear/selected/2025-07.webp",
+      "timestamp": "20251016230156",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": 0.8175,
+      "comparedTo": "2024-07"
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/linear/selected/2026-01.webp",
+      "timestamp": "20260415001548",
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": 0.532,
+      "comparedTo": "2025-07"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/linear/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://linear.app",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "A new species of product tool.Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.",
+      "Make product operations self-driving",
+      "Define the product direction",
+      "Move work forward across teams and agents",
+      "Review PRs and agent output",
+      "Understand progress at scale",
+      "Built for the future. Available today."
+    ],
+    "h2Removed": [
+      "The speed teams needBuilt to be lightning fast",
+      "Less managing, more meaning",
+      "Meet your command line",
+      "Integrated workflow designed for product teams",
+      "Design with Figma",
+      "Automatic tracking with GitHub pull requests",
+      "Get updates and create issues with Slack",
+      "Keep the team focused and momentum up with Cycles",
+      "Elevate your perspective with Projects",
+      "Get Linear Early Access"
+    ],
+    "ctaAdded": [
+      "Contact",
+      "Sign up",
+      "Get started",
+      "Contact sales",
+      "Contact us",
+      "Open app",
+      "Log in",
+      "Issue tracking is deadlinear.app/next →",
+      "My issues",
+      "Faster app launch"
+    ],
+    "ctaRemoved": [
+      "Request Early Access",
+      "About us",
+      "We're hiring!",
+      "Sign in",
+      "Terms of Service"
+    ],
+    "navAdded": [
+      "Customers",
+      "Pricing",
+      "Now",
+      "Contact",
+      "Docs",
+      "Open app",
+      "Log in",
+      "Sign up"
+    ],
+    "navRemoved": [
+      "Changelog",
+      "Twitter",
+      "About us",
+      "We're hiring!",
+      "Sign in"
+    ],
+    "headlines": [
+      {
+        "from": "The issue trackingtool you'll enjoy using",
+        "to": "The productdevelopmentsystem for teamsand agentsThe product developmentsystem for teams and agentsThe product development system for teams and agents",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Linear lets you manage software development and track bugs. Linear's streamlined design is built for speed and efficiency — helping high performing teams accomplish great things.",
+        "to": "Purpose-built for planning and building products with AI agents.",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

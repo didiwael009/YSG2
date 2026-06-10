@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Linear homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, product manager, or growth marketer who uses or competes with Linear, wants to understand how Linear repositioned itself from a developer tool to an AI-native product platform, and is evaluating whether to adopt similar positioning or competitive strategy.",
+  "recommended_h1_format": "How [Company] Repositioned From a Developer Tool to an AI Product Platform: A Homepage Teardown",
+  "secondary_keywords": [
+    "Linear homepage evolution 2020 to 2026",
+    "Linear CRO changes AI positioning",
+    "how Linear repositioned product messaging",
+    "Linear homepage redesign analysis",
+    "Linear product strategy shift homepage"
+  ],
+  "content_angle": "Focus on the STRATEGIC INTENT behind the shift—why Linear moved from 'speed and UX for developers' to 'AI-native product operations platform,' and how every element (H1, headings, CTAs, nav) was reframed to target executive buyers and AI workflows instead of individual practitioners. Show how this mirrors broader SaaS repositioning trends and whether the shift successfully broadens TAM or risks alienating the original user base.",
+  "what_the_searcher_wants": "To understand whether Linear's repositioning is working, what the business logic is behind each change, and whether they should adopt a similar strategy (or counter it) in their own positioning or marketing.",
+  "what_to_avoid": "Treating this as a surface-level design critique ('the new homepage looks flatter') rather than a strategic repositioning story. Avoid ignoring the AI angle—the core insight is that Linear is not just tweaking messaging, it's pivoting to a new buyer (executives/AI agents) and a new job-to-be-done (product ops automation). Don't miss the tension: removing 'Changelog' and 'We're hiring' signals a shift away from developer community building toward enterprise sales motions.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T16:56:40.114Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0029144
+}

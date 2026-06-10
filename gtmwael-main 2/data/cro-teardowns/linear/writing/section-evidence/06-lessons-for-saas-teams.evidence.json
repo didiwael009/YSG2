@@ -1,0 +1,94 @@
+{
+  "sectionId": "06-lessons-for-saas-teams",
+  "companyName": "Linear",
+  "companyUrl": "https://linear.app",
+  "articleTitle": "Linear Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Linear rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 9,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 9,
+    "h2Added": 7,
+    "h2Removed": 10,
+    "ctaAdded": 10,
+    "ctaRemoved": 5,
+    "navAdded": 8,
+    "navRemoved": 5,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Linear homepage teardown",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "9 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "7 added · 10 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 5 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Linear repositioned from a developer tool differentiated by speed and UX to a product management platform claiming native AI agent orchestration, replacing its 2020 H1 'The issue tracking tool you'll enjoy using' with 'The product development system for teams and agents' and shifting from practitioner-level feature headings ('Meet your command line') to executive workflow outcomes ('Make product operations self-driving').",
+    "old_positioning_frame": "A superior execution of a known category (issue tracking) — differentiated by interface speed, developer experience, and emotional appeal ('you'll enjoy using')",
+    "new_positioning_frame": "A new product category ('system for product development') purpose-built for AI-augmented workflows — positioning Linear not as better tooling but as infrastructure for a different operating model",
+    "buyer_shift": "Individual contributors and engineering leads evaluating tools based on UX and integration quality → Product and engineering directors searching for systems to coordinate human-AI product development at organizational scale",
+    "funnel_shift": "Mid-funnel exploration by users comparing Linear to Jira/GitHub Issues based on speed and design → Early-funnel category education for buyers who already believe AI agents will participate in product development and need a system to manage that future",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "The issue tracking tool you'll enjoy using",
+        "new": "The product development system for teams and agents",
+        "meaning": "Suggests a deliberate category expansion from 'tool' (implies one function among many) to 'system' (implies comprehensive infrastructure), and the addition of 'and agents' signals positioning around a workflow transformation that competitors have not yet claimed ownership of"
+      },
+      {
+        "element": "Meta description",
+        "old": "Linear lets you manage software development and track bugs. Linear's streamlined design is built for speed and efficiency — helping high performing teams accomplish great things.",
+        "new": "Purpose-built for planning and building products with AI agents.",
+        "meaning": "Indicates a complete pivot from feature-benefit messaging to thesis-driven positioning — the new description makes no mention of speed, bugs, or human team performance, instead staking a claim that Linear was architecturally designed for a workflow that barely exists in 2026, which is consistent with attempting to own a nascent category before competitors arrive"
+      },
+      {
+        "element": "Section headings",
+        "old": "The speed teams need / Built to be lightning fast | Meet your command line | Integrated workflow designed for product teams | Design with Figma",
+        "new": "Make product operations self-driving | Define the product direction | Move work forward across teams and agents | Review PRs and agent output | Understand progress at scale",
+        "meaning": "Points to a shift from selling atomic features ('Figma integration', 'command line') to selling business outcomes that assume AI agents are already embedded in the product workflow — the phrase 'agent output' is treated as a given, not a speculative future, which suggests Linear is repositioning to serve buyers who have already committed to AI-augmented product development"
+      },
+      {
+        "element": "CTA",
+        "old": "Request Early Access | Download | We're hiring!",
+        "new": "Contact | Contact sales | Get started | Open app",
+        "meaning": "Signals a transition from growth-stage company building community and hiring ('We're hiring!') to established platform serving enterprise buyers ('Contact sales') — the removal of 'Request Early Access' and addition of direct sales CTAs is consistent with moving upmarket and serving organizations with procurement processes rather than individual adopters"
+      },
+      {
+        "element": "Navigation",
+        "old": "Changelog · Twitter · We're hiring!",
+        "new": "Customers · Pricing · Now · Contact | Docs | Open app",
+        "meaning": "Indicates a shift from product-led community building (social links, hiring signal) to buyer-journey infrastructure (case studies via 'Customers', transparent pricing, sales contact) — the addition of 'Customers' as primary navigation suggests Linear now has reference customers willing to publicly associate with the AI agent narrative"
+      }
+    ],
+    "copy_this_if": "Your product is already being used to coordinate outputs from AI coding agents (Cursor, Copilot Workspace, Devin) and you have 3+ enterprise customers who will publicly describe using your tool to manage human-AI workflows in production — giving you permission to own the category language before competitors establish it",
+    "do_not_copy_this_if": "Your differentiation relies on being easier/faster/cheaper than an incumbent in an established category, or if 'AI agent' appears nowhere in your customer support tickets, sales calls, or user research — claiming to be purpose-built for a workflow your customers are not yet practicing will create a credibility gap and confuse your actual buyer",
+    "safer_version_for_early_stage_saas": "Keep your functional category anchor in the H1 but add a secondary claim about AI readiness — e.g., 'The issue tracker that connects human and AI contributions' — then test a dedicated landing page at /ai-workflows with the forward-leaning positioning, using paid search and LinkedIn to measure whether AI-forward messaging attracts qualified demos or just curiosity traffic with no budget",
+    "risk_if_copied": "Buyers evaluating you against Jira/Asana/Monday will perceive a category mismatch and assume you are over-engineered or too expensive for their current (non-AI) workflow, while buyers genuinely coordinating AI agents in production may test your product and discover it lacks the specific agent management features the positioning implied — resulting in simultaneous rejection from both the existing category and the future category you are claiming",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-10T16:56:33.700Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.024531
+  }
+}

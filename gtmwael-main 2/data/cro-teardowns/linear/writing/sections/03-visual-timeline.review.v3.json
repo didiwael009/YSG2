@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Second H3 sub-block ('How Linear's homepage now speaks to a different visitor') exceeds 60 words in its second paragraph (approximately 65 words)",
+    "Third H3 sub-block ('What this targeting shift gives up') first paragraph exceeds 60 words (approximately 62 words)",
+    "The final founder takeaway is slightly generic — 'Count how many words...' could apply to any company, though it does reference Linear's specific word counts as anchors"
+  ],
+  "requiredFixes": [
+    "Break the second paragraph of H3 sub-block 2 into two paragraphs. Split after 'No category.' to create: 'The meta description in 2020 read: **\"Linear lets you manage software development and track bugs.\"** The current version: **\"Purpose-built for planning and building products with AI agents.\"** No category.' Then start new paragraph: 'No verb that tells you what the product does. The page title followed the same path...'",
+    "Break the first paragraph of H3 sub-block 3 into two paragraphs. Split after 'their problem.' to create: 'If a visitor arrives via a generic search like \"issue tracking tool\" or \"bug tracker\", the current homepage may not signal that Linear solves their problem.' Then start new paragraph: 'The category omission filters for visitors who already recognize Linear as a contender.'"
+  ],
+  "riskFlags": [
+    "The phrase 'may not signal that Linear solves their problem' is conditional and appropriate, but ensure this reads as an observation about messaging strategy rather than a conversion outcome claim"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Linear', 'homepage', and 'positioning' — strong searchable terms",
+    "All H3 subheadings are specific to Linear and contain searchable phrases ('Linear\\'s homepage', 'targeting shift')",
+    "Bold quotes are correctly applied to all verbatim website copy throughout the section",
+    "Meta description evolution is quoted and contextualized well for search intent"
+  ],
+  "rewriteInstruction": "Split the two paragraphs flagged above at the sentence breaks indicated. The section is otherwise publication-ready — it's anchored to Linear's specific evidence, uses plain language throughout, delivers takeaways early in each H3 block, and maintains scannable rhythm. The founder test at the end is borderline generic but acceptable because it references Linear's specific word counts as calibration points. After splitting those two paragraphs, this section will pass at 90+.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 14,
+    "plainLanguage": 20,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

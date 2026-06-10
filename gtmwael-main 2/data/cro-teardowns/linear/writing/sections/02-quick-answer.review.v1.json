@@ -1,0 +1,35 @@
+{
+  "score": 82,
+  "pass": false,
+  "issues": [
+    "Final sentence makes an outcome claim ('this framing will create a category mismatch and confuse your actual buyer') without a condition or evidence — it reads as certainty rather than conditional risk",
+    "Word count is approximately 85 words, exceeding the 75-word cap stated in the SECTION GOAL by ~13%",
+    "The section heading 'Quick answer' contains no searchable terms — no company name, no 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "The final sentence shifts into advisory voice ('If your buyers...') which departs from the featured-snippet-optimized answer format specified in the goal"
+  ],
+  "requiredFixes": [
+    "Reduce word count from ~85 to 70-75 words by tightening the final sentence or removing the advisory clause entirely",
+    "Rewrite the final sentence to make the causal claim conditional: 'If your buyers are still evaluating you as a faster alternative to Jira or Asana, AND they have not yet adopted AI agents in production, this framing may create a category mismatch' — attach the outcome to a clear condition",
+    "Consider changing the section heading from 'Quick answer' to 'Linear homepage positioning shift: Quick answer' to include searchable terms (company name + 'homepage' + 'positioning')"
+  ],
+  "riskFlags": [
+    "Sentence 3 claims 'this framing will create a category mismatch and confuse your actual buyer' as a certainty — no evidence in the SECTION EVIDENCE supports this outcome, and no condition is attached (e.g., 'if X is true, then Y may happen')"
+  ],
+  "seoNotes": [
+    "The draft correctly front-loads the company name (Linear) and the core shift (tool → system, agents), which is good for featured snippet extraction",
+    "The verbatim headline quotes are in bold, which helps Google parse the before/after contrast",
+    "The section heading 'Quick answer' is not searchable — it contains none of the required terms (company name, homepage, positioning, etc.), which reduces the likelihood of this section appearing in SERPs for long-tail queries like 'Linear homepage positioning change'",
+    "The three-sentence structure is clean and the opening sentence delivers the answer immediately, which aligns with featured snippet best practices"
+  ],
+  "rewriteInstruction": "Trim the draft to 70-75 words by condensing or removing the advisory final clause. Reframe the final sentence to make the causal claim conditional (e.g., 'If your buyers have not adopted AI agents AND are still evaluating you as a Jira alternative, this framing may create a category mismatch'). Consider revising the section heading to include 'Linear' and 'homepage' for searchability. Keep the three-sentence structure and the bold quotes — those work well for featured snippet extraction.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 13,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

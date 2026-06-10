@@ -1,0 +1,52 @@
+{
+  "seoScore": 84,
+  "pass": true,
+  "titleScore": 12,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 13,
+  "searchIntentScore": 18,
+  "keywordUseScore": 9,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
+  "internalLinkingSuggestions": [
+    "Link from 'category creation language' to a guide on SaaS positioning frameworks or homepage messaging strategy",
+    "Link from 'dual-funnel conversion' section to an internal article on CTA placement testing or conversion funnel optimization",
+    "Link from 'Who should NOT copy this' to a related teardown of a SaaS tool that failed with premature AI positioning",
+    "Add a link in the intro to other CRO teardowns in the series (e.g., 'See how [competitor] approached their homepage redesign')",
+    "Link from 'enterprise shift' discussion to internal content on B2B vs. B2C homepage strategies"
+  ],
+  "faqSuggestions": [
+    "When should a SaaS startup pivot their homepage messaging from feature-based to outcome-based?",
+    "How do you test whether your audience is ready for a category-creation positioning like Linear's AI agents claim?",
+    "What are the risks of repositioning as an AI-native product before customers demand it?",
+    "How do you decide between a single CTA and dual-funnel structure on your homepage?",
+    "What metrics should you track after a major homepage repositioning like Linear's?",
+    "How does Linear's 2026 positioning strategy compare to how Notion or Retool repositioned around AI?"
+  ],
+  "contentGapNotes": [
+    "No data on Linear's actual conversion metrics before/after the repositioning — article implies outcomes but cannot claim causation. Consider adding a note on what metrics would validate this strategy.",
+    "Missing analysis of Linear's messaging on subpages (pricing, features, integrations) — did those also shift to AI-first framing, or did they stay tool-focused? This would strengthen the 'category mismatch' warning.",
+    "No mention of how Linear's target buyer profile changed in their ads, sales collateral, or pricing page — the homepage shift may not reflect the full go-to-market change.",
+    "Article does not address what happened to Linear's existing user base (developers, engineering leads) — did they get alienated, or did the company accept that trade-off?",
+    "Missing competitive context: how did Jira, GitHub, or other issue trackers respond to Linear's AI repositioning? This would ground the 'category creation' claim.",
+    "No analysis of Linear's traffic or search performance during/after the repositioning — is the new headline capturing AI-related search volume, or is it filtering out bug tracker searchers?"
+  ],
+  "requiredFixes": [
+    "Add a disclaimer early in the article (after the intro) that states: 'This analysis is based on public website snapshots and does not include Linear's internal conversion data. We cannot claim the repositioning caused any specific outcome without access to their metrics.'",
+    "Clarify what 'Jan 2020 to Jun 2026' means — the article mentions 9 snapshots but only analyzes 2 versions (2020 vs. 2026). Add a brief visual timeline or table showing the 9 snapshots and when the major shifts occurred.",
+    "In the 'Who should NOT copy this' section, expand the warning: 'If fewer than 2 calls (10%) include those terms, your buyers are not living in the workflow Linear is now selling to' — this 10% threshold needs a source or caveat that it is editorial guidance, not data-backed.",
+    "The meta description in the article metadata does not match the SEO metadata provided — verify which version is live and ensure consistency."
+  ],
+  "optionalImprovements": [
+    "Add a callout or sidebar near the headline shift section showing both versions side-by-side (2020 vs. 2026) for easier scanning.",
+    "Expand 'The test before you copy' section with a template or worksheet readers can download to audit their own sales transcripts for AI mentions.",
+    "Include a quote or case study example from a SaaS company that successfully executed a similar positioning shift (or one that failed) to deepen credibility.",
+    "Add a section on how Linear's navigation changed (implied by 'We're hiring!' and 'Contact sales' mentions) — a full comparison of nav structure would strengthen the enterprise shift argument.",
+    "Consider a subsection on SEO implications: did the removal of 'issue tracking' and 'bug tracker' keywords from the headline hurt or help Linear's organic search visibility? This would resonate with the target audience.",
+    "Add a brief mention of what the 'Make product operations self-driving' section heading implies about Linear's feature roadmap — this is implied but not explicit.",
+    "Suggest a measurement framework for readers deciding whether to test the AI positioning: 'If you copy this strategy, track X metric for Y weeks and set a Z% improvement threshold before committing fully.'"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.007077600000000017,
+  "generatedAt": "2026-06-10T17:04:26.386Z"
+}

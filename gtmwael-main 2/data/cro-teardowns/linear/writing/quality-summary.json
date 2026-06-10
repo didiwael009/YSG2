@@ -1,0 +1,183 @@
+{
+  "slug": "linear",
+  "generatedAt": "2026-06-10T17:04:26.397Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The phrase 'works because they earned it with real customer workflows' implies the article will determine causation between customer workflows and positioning success — the evidence file contains no conversion data, customer interviews, or business metrics to support this judgment",
+        "The contrast 'works... or creates a credibility gap' sets up a binary evaluation the teardown cannot resolve with homepage snapshots alone"
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Word count is 137 words — exceeds the 90-word hard cap for intro sections by 52%",
+        "The closing promise ('you will know whether Linear's AI-forward repositioning works because they earned it') implies the article will judge causation, which risks setting up an outcome claim the evidence cannot support",
+        "Paragraph exceeds 90 words (137 total) — violates scannability rule for intro"
+      ],
+      "sectionCostUsd": 0.04143
+    },
+    {
+      "sectionId": "02-quick-answer",
+      "finalVersion": 2,
+      "finalScore": 82,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "This positioning assumes visitors already believe AI agents will participate in product development — causal claim about positioning intent not directly supported by evidence",
+        "If your buyers are still evaluating you as a faster alternative to Jira or Asana... this framing may create a category mismatch — outcome claim without data showing mismatch occurred"
+      ],
+      "remainingIssueCount": 5,
+      "remainingIssues": [
+        "Paragraph exceeds 90-word limit (draft is ~95 words in a single paragraph)",
+        "Section goal requires three sentences; draft contains only two sentences",
+        "Heading is clever-only with no searchable terms — 'Quick answer' does not include 'Linear', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+        "Final conditional clause ('If your buyers are still evaluating...') introduces outcome claim ('may create a category mismatch') without clear evidence support",
+        "The term 'AI-augmented workflows' appears without plain-language definition"
+      ],
+      "sectionCostUsd": 0.08774100000000001
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 3,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 2,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The phrase 'may not signal that Linear solves their problem' is conditional and appropriate, but ensure this reads as an observation about messaging strategy rather than a conversion outcome claim"
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Second H3 sub-block ('How Linear's homepage now speaks to a different visitor') exceeds 60 words in its second paragraph (approximately 65 words)",
+        "Third H3 sub-block ('What this targeting shift gives up') first paragraph exceeds 60 words (approximately 62 words)",
+        "The final founder takeaway is slightly generic — 'Count how many words...' could apply to any company, though it does reference Linear's specific word counts as anchors"
+      ],
+      "sectionCostUsd": 0.13404000000000002
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The phrase 'The page now expects a sales conversation, not a self-serve signup' implies causation (the page design drives the sales motion) without evidence that the CTA change caused or reflected a GTM shift — safer phrasing: 'The page now shows signals consistent with an enterprise sales motion'",
+        "The claim 'This was language for someone evaluating Linear against Jira or GitHub Issues' is reasonable inference from the evidence but not explicitly confirmed by the provided data — minor risk, acceptable given the headline and meta description content"
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Paragraph 1 (H3 'Who the old page served') is 62 words — exceeds the 60-word cap by 2 words",
+        "The final H3 block ('What this means for the sales process') does not deliver a specific, runnable test anchored to Linear's evidence — it ends with a generic question applicable to any SaaS homepage",
+        "The term 'category creation language' appears without an immediate plain-language definition in the same sentence"
+      ],
+      "sectionCostUsd": 0.046431
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 3,
+      "finalScore": 68,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "CAUSAL CLAIM WITHOUT CONDITION: 'This dual-funnel structure assumes visitors arrive knowing which path fits them' — no 'if' framing, no evidence trace",
+        "UNSUPPORTED OUTCOME CLAIM: 'assumes the visitor already understands how Linear fits their workflow' — the evidence documents CTA text changes but does not provide data on visitor comprehension or workflow understanding",
+        "CAUSAL FRAMING: 'Linear's shift suggests they no longer need to capture undecided traffic' — this is an interpretation presented as fact, not anchored to conversion data or a stated company rationale"
+      ],
+      "remainingIssueCount": 11,
+      "remainingIssues": [
+        "H3 heading 'What changed' lacks the company name and searchable terms (CTA, conversion, homepage) — it is a generic label that could appear in any teardown",
+        "H3 heading 'Who the dual-CTA structure filters out' is clever-only with no searchable terms — does not contain Linear, CTA, conversion, or homepage",
+        "The phrase 'dual-funnel structure' appears twice without a plain-language definition at first use",
+        "Causal claim 'This dual-funnel structure assumes visitors arrive knowing which path fits them' has no condition attached — it states an outcome without 'if [condition]' framing",
+        "Causal claim 'Both new CTAs require a decision — self-serve or enterprise — that assumes the visitor already understands how Linear fits their workflow' lacks a condition and is not traceable to evidence — the evidence shows CTA text changes but does not document visitor comprehension requirements",
+        "The phrase 'qualified-lead volume' is expert jargon used without a plain-language definition in the same sentence",
+        "Paragraph 2 (H3 block 2, body) is 67 words — exceeds the 60-word cap for analytical H3 blocks",
+        "Paragraph 3 (H3 block 3, body) is 77 words — exceeds the 60-word cap for analytical H3 blocks",
+        "The final audit instruction is generic ('check when conversion rate or qualified-lead volume changed') rather than a specific, runnable test anchored to Linear's evidence",
+        "The opening sentence restates the evidence flatly ('Linear replaced X with Y') instead of leading with the most interesting finding — the removal of the low-commitment path",
+        "Word count is approximately 195 words — exceeds the 120–180 target range by 15 words"
+      ],
+      "sectionCostUsd": 0.127299
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 2,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 1,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The 10% threshold and $500 LinkedIn ad budget in the final H3 are not traceable to Linear's evidence — they appear to be editorial recommendations rather than data-supported claims",
+        "The phrase 'treating AI coordination as infrastructure to buy today' is an interpretation of Linear's positioning strategy but not a direct quote or explicitly supported claim from the evidence"
+      ],
+      "remainingIssueCount": 5,
+      "remainingIssues": [
+        "The ## section heading is missing 'Linear' — should be 'Linear homepage positioning lesson' to include the company name for search visibility",
+        "H3 'The pattern' — paragraph 1 is ~85 words, exceeds the 60-word scannability target",
+        "H3 'Who should copy this' — paragraph is ~65 words, slightly over target",
+        "The term 'forward positioning' appears without an immediate plain-language definition in the same sentence (defined only by appositional context after em-dash)",
+        "H3 'The test before you copy' — the founder takeaway (the test) is positioned correctly but the 10% threshold and $500 ad budget are not explicitly anchored to Linear's evidence; they appear to be editorial additions"
+      ],
+      "sectionCostUsd": 0.10260599999999992
+    }
+  ],
+  "averageScore": 83.7,
+  "passCount": 4,
+  "failCount": 2,
+  "skippedCount": 0,
+  "totalRewriteLoops": 6,
+  "weakSections": [
+    "05-cta-navigation-evolution"
+  ],
+  "allRiskFlags": [
+    "The phrase 'works because they earned it with real customer workflows' implies the article will determine causation between customer workflows and positioning success — the evidence file contains no conversion data, customer interviews, or business metrics to support this judgment",
+    "The contrast 'works... or creates a credibility gap' sets up a binary evaluation the teardown cannot resolve with homepage snapshots alone",
+    "This positioning assumes visitors already believe AI agents will participate in product development — causal claim about positioning intent not directly supported by evidence",
+    "If your buyers are still evaluating you as a faster alternative to Jira or Asana... this framing may create a category mismatch — outcome claim without data showing mismatch occurred",
+    "The phrase 'may not signal that Linear solves their problem' is conditional and appropriate, but ensure this reads as an observation about messaging strategy rather than a conversion outcome claim",
+    "The phrase 'The page now expects a sales conversation, not a self-serve signup' implies causation (the page design drives the sales motion) without evidence that the CTA change caused or reflected a GTM shift — safer phrasing: 'The page now shows signals consistent with an enterprise sales motion'",
+    "The claim 'This was language for someone evaluating Linear against Jira or GitHub Issues' is reasonable inference from the evidence but not explicitly confirmed by the provided data — minor risk, acceptable given the headline and meta description content",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'This dual-funnel structure assumes visitors arrive knowing which path fits them' — no 'if' framing, no evidence trace",
+    "UNSUPPORTED OUTCOME CLAIM: 'assumes the visitor already understands how Linear fits their workflow' — the evidence documents CTA text changes but does not provide data on visitor comprehension or workflow understanding",
+    "CAUSAL FRAMING: 'Linear's shift suggests they no longer need to capture undecided traffic' — this is an interpretation presented as fact, not anchored to conversion data or a stated company rationale",
+    "The 10% threshold and $500 LinkedIn ad budget in the final H3 are not traceable to Linear's evidence — they appear to be editorial recommendations rather than data-supported claims",
+    "The phrase 'treating AI coordination as infrastructure to buy today' is an interpretation of Linear's positioning strategy but not a direct quote or explicitly supported claim from the evidence"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 94,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [
+    "Add founder takeaway to H3 'The headline shift: what Linear's homepage no longer says'",
+    "Add founder takeaway to H3 'How Linear's homepage now speaks to a different visitor'",
+    "Add founder takeaway to H3 'Who the old page served'",
+    "Add founder takeaway to H3 'Who the new page serves'",
+    "Add founder takeaway to H3 'What this means for the sales process'",
+    "Add founder takeaway to H3 'What changed'",
+    "Add founder takeaway to H3 'Who the dual-CTA structure filters out'",
+    "Vary rhythm in H3 openings — several blocks start with 'The page...' or 'The...' pattern"
+  ],
+  "seoScore": 84,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Add a disclaimer early in the article (after the intro) that states: 'This analysis is based on public website snapshots and does not include Linear's internal conversion data. We cannot claim the repositioning caused any specific outcome without access to their metrics.'",
+    "Clarify what 'Jan 2020 to Jun 2026' means — the article mentions 9 snapshots but only analyzes 2 versions (2020 vs. 2026). Add a brief visual timeline or table showing the 9 snapshots and when the major shifts occurred.",
+    "In the 'Who should NOT copy this' section, expand the warning: 'If fewer than 2 calls (10%) include those terms, your buyers are not living in the workflow Linear is now selling to' — this 10% threshold needs a source or caveat that it is editorial guidance, not data-backed.",
+    "The meta description in the article metadata does not match the SEO metadata provided — verify which version is live and ensure consistency."
+  ],
+  "articleWordCount": 1246,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~115w): \"Linear replaced **\"The issue tracking tool you'll enjoy…\"",
+    "[02-quick-answer] Paragraph exceeds 90 words (~92w): \"Linear replaced its 2020 headline **\"The issue tracking…\""
+  ],
+  "overLengthWarning": null
+}

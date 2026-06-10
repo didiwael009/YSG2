@@ -1,0 +1,69 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Linear",
+  "companyUrl": "https://linear.app",
+  "articleTitle": "Linear Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Linear rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 9,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 9,
+    "h2Added": 7,
+    "h2Removed": 10,
+    "ctaAdded": 10,
+    "ctaRemoved": 5,
+    "navAdded": 8,
+    "navRemoved": 5,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Linear homepage teardown",
+  "cta-changes": {
+    "added": [
+      "Contact",
+      "Sign up",
+      "Get started",
+      "Contact sales",
+      "Contact us",
+      "Open app",
+      "Log in",
+      "Issue tracking is deadlinear.app/next →",
+      "My issues",
+      "Faster app launch"
+    ],
+    "removed": [
+      "Request Early Access",
+      "About us",
+      "We're hiring!",
+      "Sign in",
+      "Terms of Service"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "A new species of product tool.Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.",
+      "Make product operations self-driving",
+      "Define the product direction",
+      "Move work forward across teams and agents",
+      "Review PRs and agent output",
+      "Understand progress at scale",
+      "Built for the future. Available today."
+    ],
+    "removed": [
+      "The speed teams needBuilt to be lightning fast",
+      "Less managing, more meaning",
+      "Meet your command line",
+      "Integrated workflow designed for product teams",
+      "Design with Figma",
+      "Automatic tracking with GitHub pull requests",
+      "Get updates and create issues with Slack",
+      "Keep the team focused and momentum up with Cycles",
+      "Elevate your perspective with Projects",
+      "Get Linear Early Access"
+    ]
+  }
+}

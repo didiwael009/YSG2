@@ -1,0 +1,41 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Conversion outcome claim without data: 'visitors still researching may leave' is a causal prediction unsupported by evidence",
+    "Generic paragraph: 'If all CTAs require trial signup, demo booking, or sales contact, visitors still researching may leave. This structure may work if your brand is known enough...' — this could appear in any SaaS teardown",
+    "Causal claim without condition: 'Both CTAs now require a decision the page does not help visitors make' — no evidence that the page fails to help with this decision",
+    "Word count violation: section is ~220 words, exceeds 180-word cap",
+    "H3 'What changed' paragraph 2 is ~50 words but contains a list dump with no analytical frame",
+    "Final audit is generic: 'count CTAs above the fold' could apply to any company, not anchored to Linear's specific dual-funnel evidence",
+    "Missing plain-language definition: 'dual-funnel conversion' appears in heading but is never explained",
+    "Searchable heading includes company name and 'CTA', passes threshold"
+  ],
+  "requiredFixes": [
+    "Replace 'visitors still researching may leave' with evidence-grounded observation: 'The page no longer offers a path for visitors who want to monitor the product before committing.'",
+    "Rewrite final audit to be Linear-specific: 'Open your homepage. Does it offer a low-commitment path like Linear's old waitlist, or only high-commitment CTAs (trial, demo, sales)? If you removed a low-commitment option, when did conversion rate or qualified-lead volume change?'",
+    "Cut word count to 180 max — trim list in 'What changed' H3, consolidate 'Who the dual-CTA structure filters out' into two sentences",
+    "Remove or condition the causal claim: 'Both CTAs now require a decision' — add 'if the visitor has not yet seen a feature comparison or use-case walkthrough' or remove the claim",
+    "Define 'dual-funnel' in the opening sentence: 'Linear replaced a single call to action with two parallel paths (self-serve and enterprise) — a dual-funnel structure that assumes visitors arrive knowing which path fits them.'"
+  ],
+  "riskFlags": [
+    "'visitors still researching may leave' — conversion outcome claim with no supporting data (HARD CAP triggers: cap total at 60)",
+    "'Both CTAs now require a decision the page does not help visitors make' — causal claim without attached condition (-3 penalty)",
+    "'This structure may work if your brand is known enough that traffic arrives pre-segmented' — outcome claim without evidence"
+  ],
+  "seoNotes": [
+    "Heading includes 'Linear' and 'CTA', good for search visibility",
+    "Section could benefit from including 'homepage' or 'conversion' in H3 subheadings for internal keyword distribution"
+  ],
+  "rewriteInstruction": "Cut to 180 words max. Remove all conversion-outcome predictions ('may leave', 'may work'). Anchor every claim to quoted evidence from the data. Define 'dual-funnel' in plain language in the opening sentence. Rewrite the final audit to be Linear-specific: ask the founder to compare their own CTA structure to Linear's old waitlist vs. new dual-path, then suggest checking when conversion metrics changed if they made a similar shift. Remove the generic 'most early-stage products do not have that luxury' commentary — it reads like a SaaS textbook. Tighten 'What changed' H3 to two sentences maximum. In 'Who the dual-CTA structure filters out', replace the unsupported 'may leave' claim with a factual observation: 'The page no longer offers a path for visitors who want to monitor the product before committing.' Ensure every paragraph could not appear word-for-word in a different company's teardown.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 15,
+    "scannability": 10,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

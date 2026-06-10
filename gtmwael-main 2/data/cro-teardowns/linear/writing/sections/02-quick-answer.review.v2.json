@@ -1,0 +1,38 @@
+{
+  "score": 82,
+  "pass": false,
+  "issues": [
+    "Paragraph exceeds 90-word limit (draft is ~95 words in a single paragraph)",
+    "Section goal requires three sentences; draft contains only two sentences",
+    "Heading is clever-only with no searchable terms — 'Quick answer' does not include 'Linear', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "Final conditional clause ('If your buyers are still evaluating...') introduces outcome claim ('may create a category mismatch') without clear evidence support",
+    "The term 'AI-augmented workflows' appears without plain-language definition"
+  ],
+  "requiredFixes": [
+    "Add company name to heading: change '## Linear homepage positioning shift: Quick answer' to '## Linear homepage positioning shift' or '## Linear homepage teardown: Quick answer'",
+    "Split into three sentences to match section goal (currently two sentences)",
+    "Reduce paragraph to ≤90 words (currently ~95)",
+    "Add plain-language definition for 'AI-augmented workflows' in same sentence where it first appears (e.g., 'AI-augmented workflows — product development where AI tools write code, draft specs, or manage tasks alongside humans')",
+    "Reframe final conditional to avoid unsupported outcome claim: replace 'may create a category mismatch' with observable evidence from the data (e.g., 'Linear removed all references to speed and developer experience, signaling a focus on buyers who already use AI agents')"
+  ],
+  "riskFlags": [
+    "This positioning assumes visitors already believe AI agents will participate in product development — causal claim about positioning intent not directly supported by evidence",
+    "If your buyers are still evaluating you as a faster alternative to Jira or Asana... this framing may create a category mismatch — outcome claim without data showing mismatch occurred"
+  ],
+  "seoNotes": [
+    "Heading lacks primary keyword ('Linear homepage teardown') or secondary searchable terms — reduces featured snippet extraction likelihood",
+    "Draft does include exact quoted headlines in bold, which supports snippet extraction",
+    "Word count (~95) slightly exceeds Google's preferred snippet length of 40-60 words; tightening to 75 words would improve extraction odds"
+  ],
+  "rewriteInstruction": "Revise to exactly three sentences totaling 70-75 words. Add 'Linear' to the heading. Define 'AI-augmented workflows' inline (e.g., 'workflows where AI agents write code or manage tasks'). Replace the conditional outcome claim in the final sentence with observable evidence: instead of 'may create a category mismatch', state what Linear removed (speed claims, developer-focused headings) and what that signals about their intended buyer. Maintain bold quotes around headlines. Ensure the section answers 'what changed and why it matters' in plain language a founder can scan in 10 seconds.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 14,
+    "plainLanguage": 16,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

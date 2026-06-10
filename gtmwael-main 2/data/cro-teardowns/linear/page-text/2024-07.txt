@@ -1,0 +1,76 @@
+TITLE: Linear – Plan and build products
+META DESCRIPTION: Linear streamlines issues, projects, and roadmaps. Purpose-built for modern product development.
+
+H1:
+  - Linear is a purpose-built tool for planning and building productsLinearisapurpose-builttoolforplanningandbuildingproducts
+  - Plan and build your productPlanandbuildyourproduct
+  - Project Overview
+
+H2:
+  - Meet the system for modern software development. Streamline issues, projects, and product roadmaps.
+  - Linear is a purpose-built tool for modern product development. Streamline issues, projects, and product roadmaps.
+  - Made for modern product teams
+  - Set the product direction
+
+H3:
+  - Manage projects end-to-end
+  - Project updates
+  - Ideate and specify what to build next
+
+CTAS / BUTTONS:
+  - Skip to content →
+  - Features
+  - Method
+  - Customers
+  - Changelog
+  - Pricing
+  - Company
+  - Contact
+  - Docs
+  - Open appL
+  - Log inL
+  - Sign up
+  - Open Site Navigation Menu
+  - Close Site Navigation Menu
+  - Plan
+  - Build
+  - About
+  - Blog
+  - Security
+  - Integrations
+  - Careers
+  - Start building
+  - New: Conversations on Quality
+  - Meet our customers
+  - Purpose-built for product development
+  - Designed to move fast
+  - Crafted to perfection
+  - Project and long-term planning Set the product direction
+  - Collaborative documents
+  - Inline comments
+  - Text-to-issue commands
+
+NAV LINKS:
+  - Features
+  - Method
+  - Customers
+  - Changelog
+  - Pricing
+  - Company
+  - Contact
+  - Docs
+  - Open appL
+  - Log inL
+  - Sign up
+  - Open Site Navigation Menu
+  - Close Site Navigation Menu
+  - Plan
+  - Build
+  - About
+  - Blog
+  - Security
+  - Integrations
+  - Careers
+
+BODY TEXT:
+Skip to content →FeaturesFeaturesMethodCustomersChangelogPricingCompanyCompanyContactDocsOpen appLLog inLSign upOpen Site Navigation MenuClose Site Navigation MenuPlanBuildPricingMethodContactCustomersAboutChangelogBlogSecurityIntegrationsCareersDocsLinear is a purpose-built tool for planning and building productsLinear is a purpose-built tool for planning and building productsPlan and build your productPlan and build your productMeet the system for modern software development. Streamline issues, projects, and product roadmaps.Linear is a purpose-built tool for modern product development. Streamline issues, projects, and product roadmaps.Start buildingStart buildingNew: Conversations on QualityStart buildingNew: Conversations on QualityPowering the world’s best product teams. From next-gen startups to established enterprises.Powering the world’s best product teams. From next-gen startups to established enterprises.Meet our customersMade for modern product teamsLinear is shaped by the practices and principles that distinguish world-class product teams from the rest: relentless focus, fast execution, and a commitment to the quality of craft.Purpose-built for product developmentDesigned to move fastCrafted to perfectionProject and long-term planning Set the product directionAlign your team around a unified product timeline. Plan, manage, and track all product initiatives with Linear’s visual planning tools.Manage projects end-to-endConsolidate specs, milestones, tasks, and other documentation in one centralized location.Project OverviewPropertiesIn ProgressENGDocs & linksExplorationUser interviewsMilestonesDesign Review 100%Internal Alpha 100% of 10GA 25% of 53Project updatesCommunicate progress and project health with built-in project updates.Off trackUnexpected roadblocks forced us to take a different…Oct 27At riskProgress slowed down last week because…Oct 27On trackWe are ready to launch next ThursdaySep 8Ideate and specify what to build nextCollaborative documentsInline commentsText-to-issue commandsCollaborate onzoe ideasWrite down product ideas and work together on feature specs in realtime, multiplayer project quinn documents. Add **style** and ##structure with rich-text formatting options.

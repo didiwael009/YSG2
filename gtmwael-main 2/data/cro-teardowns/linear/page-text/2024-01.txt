@@ -1,0 +1,118 @@
+TITLE: Linear – A better way to build products
+META DESCRIPTION: Linear streamlines issues, sprints, and product roadmaps. It’s the new standard for modern software development.
+
+H1:
+  - Linear is a better way to build products
+
+H2:
+  - Unlike any tool you’ve used before
+  - Issue trackingyou’ll enjoy using
+  - Build momentum with Cycles
+  - Set direction with Roadmaps
+  - Linear workflows. Exponential results.
+  - Built for the future.Available today.
+
+H3:
+  - Built for your keyboard
+  - Breathtakingly fast
+  - Designed for modern software teams
+  - Meet your command line
+  - Create tasks in seconds, discuss issues in context, and breeze through your work in views tailored to you and your team.
+  - List and board
+  - Make it yours
+  - Cycles focus your team on what work should happen next. A healthy routine to maintain velocity and make meaningful progress.
+  - Plan visually, collaborate in cross-team projects, and make better decisions with progress insights and project updates.
+  - Project updates
+  - Focus on the big picture
+  - From customer support integrations to powerful Git automations, Linear streamlines the entire product development process.
+  - Product
+  - Company
+  - Resources
+  - Developers
+
+CTAS / BUTTONS:
+  - Skip to content →
+  - Features
+  - Method
+  - Customers
+  - Changelog
+  - Pricing
+  - Company
+  - Contact
+  - Docs
+  - Sign up
+  - Open app
+  - Log in
+  - Open Site Navigation Menu
+  - Close Site Navigation Menu
+  - About
+  - Blog
+  - Integrations
+  - Careers
+  - Linear Mobile v0.1
+  - Get started
+  - �?K Opens command line
+  - I Assign issue to me
+  - A Assign issue to
+  - S Change issue status
+  - P Set issue priority
+  - L Add issue labels
+  - ⇧D Set due date
+  - ⇧�?P Set parent issue
+  - ⇧�?O Add sub-issue
+  - C Create new issue
+  - ⌥C Create new issue from template
+  - ⇧P Move to project
+  - �?. Copy issue ID to clipboard
+  - ⇧�?. Copy git branch name to clipboard
+  - �?C Copy issues as a markdown list
+  - �?⌫ Delete issue
+  - �?F Find in view
+  - R Rename project or issue
+  - Linear Method Product Principles
+  - Issues Track your work
+  - Cycles Focus your team
+  - Roadmaps Plan your product
+  - Workflows Integrate your tools
+  - Discover integrations
+  - Sign up for free
+  - Download
+  - Linear - Designed Worldwide
+  - Linear Method
+  - About us
+  - Brand
+  - Startup Program
+  - Community
+  - DPA
+  - Privacy Policy
+  - Terms of service
+  - Report a vulnerability
+  - API
+  - Status
+  - GitHub
+  - README
+
+NAV LINKS:
+  - Method
+  - Customers
+  - Changelog
+  - Pricing
+  - Contact
+  - Docs
+  - Sign up
+  - Open app
+  - Log in
+  - Open Site Navigation Menu
+  - Close Site Navigation Menu
+  - Features
+  - About
+  - Blog
+  - Integrations
+  - Careers
+  - IssuesTrack your work
+  - CyclesFocus your team
+  - RoadmapsPlan your product
+  - WorkflowsIntegrate your tools
+
+BODY TEXT:
+Skip to content →Features MethodCustomersChangelogPricingCompany ContactDocsSign upOpen app Log inSign upOpen app Open Site Navigation MenuClose Site Navigation MenuFeaturesPricingMethodContactCustomersAboutChangelogBlogIntegrationsCareersDocsLinear Mobile v0.1Linear is a better way to build productsMeet the new standard for modern software development. Streamline issues, sprints, and product roadmaps.Get started Open app Powering the world’s best product teams. From next-gen startups to established enterprises.Unlike any tool you’ve used beforeDesigned to the last pixel and engineered with unforgiving precision, Linear combines UI elegance with world-class performance.�?KOpens command lineIAssign issue to meAAssign issue toSChange issue statusPSet issue priorityLAdd issue labels⇧DSet due date⇧�?PSet parent issue⇧�?OAdd sub-issueCCreate new issue⌥CCreate new issue from template⇧PMove to project�?.Copy issue ID to clipboard⇧�?.Copy git branch name to clipboard�?CCopy issues as a markdown list�?⌫Delete issue�?FFind in view⇧DSet due dateRRename project or issueBuilt for your keyboardFly through your tasks with rapid-fire keyboard shortcuts for everything. Literally everything.Breathtakingly fastBuilt for speed with 50ms interactions and real-time sync.Designed for modern software teamsComes with built-in workflows that create focus and routine.Linear Method Product Principles LIN-111 Walkway lightingType a command or search…Type a command or search…Issue actionsAssign to…Change status…Change priority…Add labels…Meet your command lineComplete any action in seconds with the global command menu.IssuesTrack your workCyclesFocus your teamRoadmapsPlan your productWorkflowsIntegrate your toolsIssue trackingyou’ll enjoy usingCreate tasks in seconds, discuss issues in context, and breeze through your work in views tailored to you and your team.Parent and sub-issues. Break larger tasks into smaller issues.Automated backlog. Linear will auto-close and auto-archive issues.Custom workflows. Define unique issue states for each team.Filters and custom views. See only what’s relevant for you.Discussion. Collaborate on issues without losing context.Issue templates. Guide your team to write effective issues.List and boardSwitch between list and board layout to view work from any angle.Make it yoursQuickly apply filters and operators to refine your issue lists and create custom views.Build momentum with CyclesCycles focus your team on what work should happen next. A healthy routine to maintain velocity and make meaningful progress.Automatic tracking. Any started issues are added to the current cycle.Scheduled. Unfinished work rolls over to the next cycle automatically.Fully configurable. Define start date, end date, duration, and more.Predict delays. Get warnings for at-risk cycles.Scope creep. Understand which issues are added mid-cycle.Be prepared. Schedule work in advance with upcoming cycles.Set direction with RoadmapsPlan visually, collaborate in cross-team projects, and make better decisions with progress insights and project updates.Multi-team projects. Collaborate across teams and departments.Project documents. Write project briefs and specs directly in Linear.Custom roadmaps. Organize projects across multiple roadmaps.Timeline view. Visualize the product journey ahead.Project insights. Track scope, velocity, and progress over time.Personal notifications. Stay in the loop on project activity and updates.Project updatesKeep everyone up-to-date on the health and progress of projects.Focus on the big pictureExplore every company project in one view to easily identify what needs attention.Linear workflows. Exponential results.From customer support integrations to powerful Git automations, Linear streamlines the entire product development process.Discover integrationsGitHub and GitLab. Sync PRs with issues that close automatically.Slack and Discord. Create issues and set up alerts.Sentry. Automatically create issues from code exceptions.Airbyte. Sync workspace data to external warehouses and databases.Front, Intercom, Zendesk. Keep a tight loop with your users.Figma. Streamline work across design and engineering.Built for the future.Available today.Sign up for freeOpen app DownloadLinear - Designed WorldwideProductFeaturesIntegrationsPricingChangelogDocsLinear MethodDownloadCompanyAbout usBlogCareersCustomersBrandResourcesStartup ProgramCommunityContactDPAPrivacy PolicyTerms of serviceReport a vulnerabilityDevelopersAPIStatusGitHubREADME

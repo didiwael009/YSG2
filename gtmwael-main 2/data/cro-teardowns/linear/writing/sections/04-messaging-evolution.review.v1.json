@@ -1,0 +1,34 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 1 (H3 'Who the old page served') is 62 words — exceeds the 60-word cap by 2 words",
+    "The final H3 block ('What this means for the sales process') does not deliver a specific, runnable test anchored to Linear's evidence — it ends with a generic question applicable to any SaaS homepage",
+    "The term 'category creation language' appears without an immediate plain-language definition in the same sentence"
+  ],
+  "requiredFixes": [
+    "Split the first paragraph ('Who the old page served') into two shorter paragraphs or trim 2+ words to stay under 60",
+    "Replace the final question with a specific, runnable test: 'Open your homepage. Count how many primary CTAs above the fold require a sales conversation (demo, contact, pricing call) versus zero-commitment actions (sign up, try free, download). If the ratio is 2:1 or higher, you are signaling enterprise motion — which only works if your average deal size is above $10k ACV.'",
+    "Add a plain-language definition immediately after 'category creation language' — e.g., 'category creation language (positioning that assumes the buyer is searching for a new type of solution, not comparing known alternatives)'"
+  ],
+  "riskFlags": [
+    "The phrase 'The page now expects a sales conversation, not a self-serve signup' implies causation (the page design drives the sales motion) without evidence that the CTA change caused or reflected a GTM shift — safer phrasing: 'The page now shows signals consistent with an enterprise sales motion'",
+    "The claim 'This was language for someone evaluating Linear against Jira or GitHub Issues' is reasonable inference from the evidence but not explicitly confirmed by the provided data — minor risk, acceptable given the headline and meta description content"
+  ],
+  "seoNotes": [
+    "The ## heading 'Linear's audience shift: from developer tool to AI product platform' contains 'Linear' and searchable topic terms ('audience shift', 'developer tool', 'AI product platform') — strong for search",
+    "The H3 subheadings ('Who the old page served', 'Who the new page serves', 'What this means for the sales process') are clear and scannable but do not independently contain searchable terms — acceptable for user experience, minor SEO tradeoff",
+    "The section is approximately 185 words — within the 140–200 target range"
+  ],
+  "rewriteInstruction": "This section is nearly publication-ready. Make three fixes: (1) Trim the first paragraph under 60 words or split it into two blocks. (2) Replace the final rhetorical question with a specific, runnable test the founder can do in under five minutes, anchored to Linear's evidence (e.g., counting CTA types above the fold and interpreting the ratio). (3) Add a plain-language definition immediately after 'category creation language' so a founder unfamiliar with positioning frameworks understands the term on first read. Once these fixes land, the section will score 92+.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 15,
+    "plainLanguage": 17,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

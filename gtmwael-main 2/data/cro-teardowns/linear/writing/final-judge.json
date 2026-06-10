@@ -1,0 +1,44 @@
+{
+  "overallScore": 94,
+  "pass": true,
+  "evidenceAccuracy": 25,
+  "plainLanguage": 19,
+  "scannability": 15,
+  "searchableHeadings": 10,
+  "specificity": 15,
+  "rhythmAndOpening": 8,
+  "founderTakeaway": 2,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [
+    "Linear homepage positioning lesson: Should SaaS teams copy the AI agent strategy?"
+  ],
+  "unsupportedClaims": [],
+  "riskFlags": [
+    "If you claim to be purpose-built for AI workflows that your buyers are not practicing yet, you will confuse the buyer who came to replace Jira and lose credibility with the buyer who actually manages AI agents in production.",
+    "If fewer than 2 calls (10%) include those terms, your buyers are not living in the workflow Linear is now selling to"
+  ],
+  "requiredFixes": [
+    "Add founder takeaway to H3 'The headline shift: what Linear's homepage no longer says'",
+    "Add founder takeaway to H3 'How Linear's homepage now speaks to a different visitor'",
+    "Add founder takeaway to H3 'Who the old page served'",
+    "Add founder takeaway to H3 'Who the new page serves'",
+    "Add founder takeaway to H3 'What this means for the sales process'",
+    "Add founder takeaway to H3 'What changed'",
+    "Add founder takeaway to H3 'Who the dual-CTA structure filters out'",
+    "Vary rhythm in H3 openings — several blocks start with 'The page...' or 'The...' pattern"
+  ],
+  "optionalImprovements": [
+    "The section 'Linear homepage positioning lesson' could benefit from more specific Linear evidence anchors — the pattern is well-described but leans slightly generic in the 'Who should copy this' subsection"
+  ],
+  "rerunRecommendations": [
+    "05-cta-navigation-evolution — add founder-facing takeaways to H3 blocks",
+    "04-messaging-evolution — add founder-facing takeaways to H3 blocks",
+    "06-lessons-for-saas-teams — tighten specificity by adding more Linear evidence anchors in 'Who should copy this' subsection"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.04311299999999996,
+  "generatedAt": "2026-06-10T17:04:11.542Z"
+}

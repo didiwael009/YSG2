@@ -1,0 +1,44 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Para 1 H3#1: 73 words — exceeds 60-word limit",
+    "Para 1 H3#2: 88 words — exceeds 60-word limit",
+    "Para 1 H3#3: 84 words — exceeds 60-word limit",
+    "Section heading lacks searchable terms: no 'Linear', 'homepage', 'CTA', or 'conversion' — uses abstract phrase 'conversion path'",
+    "H3#2 heading ('Who this filters out') contains no searchable terms — clever-only",
+    "H3#2 takeaway ('People who are still learning...') is buried in third sentence, not first two",
+    "Generic paragraph: H3#3 final three sentences could appear in any teardown — 'Open your homepage and count how many CTAs appear above the fold' is template language",
+    "Causal claim without data: 'Linear's dual-funnel structure works because the product is well-known enough that visitors arrive already segmented' — no evidence provided for causation or segmentation claim",
+    "Word count approximately 195 — exceeds 180-word cap by 15 words"
+  ],
+  "requiredFixes": [
+    "Break all three H3 paragraphs into 2–3 shorter blocks, each under 60 words",
+    "Revise section heading to include 'Linear', 'CTA', or 'conversion' — e.g. 'Linear's CTA evolution: from waitlist to dual-funnel'",
+    "Revise H3#2 heading to include searchable term — e.g. 'Who the dual-CTA model filters out'",
+    "Move H3#2 takeaway to first sentence: 'The new structure assumes visitors already know whether they want self-serve or sales. People still learning what Linear is....'",
+    "Make H3#3 audit specific to Linear's evidence: 'Open your homepage. Count CTAs above the fold. Do you offer both a no-commitment option (like Linear's old waitlist) AND a direct trial path? Or only high-commitment actions?'",
+    "Remove or condition the causal claim: 'Linear's dual-funnel structure assumes product awareness — the page offers no middle path for visitors still learning what the tool does'",
+    "Cut 15+ words to reach 180-word cap"
+  ],
+  "riskFlags": [
+    "Causal claim: 'Linear's dual-funnel structure works because the product is well-known enough that visitors arrive already segmented' — no data in evidence supports 'works' or 'well-known' or 'already segmented'",
+    "Unsupported assumption: 'People who are still learning what Linear is — or whether it fits their team at all — no longer have a low-commitment option' — no evidence shows who visits or what they need"
+  ],
+  "seoNotes": [
+    "Section heading 'Linear's conversion path' uses abstract phrase 'conversion path' instead of searchable 'CTA' — misses keyword opportunity",
+    "H3 heading 'Who this filters out' contains zero searchable terms — pure editorial cleverness",
+    "Body text uses 'CTA' once and 'conversion' once — good keyword presence in body compensates for weak heading"
+  ],
+  "rewriteInstruction": "Break each H3 paragraph into two blocks of 40–50 words each. Revise the section heading to 'Linear's CTA evolution: from waitlist to dual-funnel conversion'. Revise H3#2 heading to 'Who the dual-CTA structure filters out'. Move the H3#2 takeaway ('The new structure assumes...') to the opening sentence. Replace the generic audit language in H3#3 with a test anchored to Linear's evidence: 'Open your homepage and count CTAs above the fold. Do you offer both a no-commitment path (like Linear's old waitlist) and a direct trial? If all CTAs require high commitment (trial, demo, sales call), visitors still learning may bounce.' Remove the causal claim 'works because' and rewrite as a conditional: 'This structure assumes product awareness — visitors must already know whether they want self-serve or sales.' Cut 15 words anywhere to reach 180-word cap.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 3,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

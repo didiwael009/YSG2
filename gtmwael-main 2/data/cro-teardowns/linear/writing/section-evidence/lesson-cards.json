@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Linear replaced \"issue tracking tool\" with \"product development system for teams and agents\"",
+    "category": "Positioning",
+    "body": "The original H1 — **\"The issue tracking tool you'll enjoy using\"** — positioned Linear as a better version of existing tools. The current headline — **\"The product development system for teams and agents\"** — suggests a category shift. Linear is no longer competing with Jira. The new framing likely targets teams building with AI agents, not just tracking issues manually."
+  },
+  {
+    "number": "02",
+    "title": "The meta description dropped 31 words to land one message: \"Purpose-built for planning and building products with AI agents\"",
+    "category": "Messaging",
+    "body": "The original meta description listed features: **\"manage software development and track bugs\"**, **\"streamlined design\"**, **\"speed and efficiency\"**. The new version is 13 words. It names one buyer: teams using AI agents. This is not simplification — it is filtering. The shorter description signals that Linear is built for a specific workflow, not general project management."
+  },
+  {
+    "number": "03",
+    "title": "Linear removed 10 section headings about speed and simplicity, added 6 about AI workflows and scale",
+    "category": "Strategy",
+    "body": "Removed headings include **\"The speed teams need\"**, **\"Less managing, more meaning\"**, and **\"Meet your command line\"**. Added headings include **\"Make product operations self-driving\"** and **\"Review PRs and agent output\"**. The old page sold a faster tool. The new page describes a system for coordinating human and AI work. That is a product expansion, not a messaging refresh."
+  },
+  {
+    "number": "04",
+    "title": "\"Request Early Access\" disappeared — Linear is no longer signalling scarcity or exclusivity",
+    "category": "Funnel",
+    "body": "The original navigation included **\"Request Early Access\"** as a CTA. That button is gone. The current CTAs are **\"Sign up\"**, **\"Get started\"**, and **\"Contact sales\"**. Removing waitlist language suggests Linear is no longer filtering for early adopters. The shift points to a sales motion change: from controlled rollout to open signup with a sales option for larger accounts."
+  }
+]

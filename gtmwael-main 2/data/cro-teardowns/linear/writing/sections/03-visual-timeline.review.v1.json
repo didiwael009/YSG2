@@ -1,0 +1,41 @@
+{
+  "score": 77,
+  "pass": false,
+  "issues": [
+    "The term 'category expansion' is used without plain-language definition in the same sentence",
+    "H3 heading 'What it costs' contains no searchable terms and is clever-only",
+    "The section heading contains 'homepage' and 'headline' but reads as template-generic — the opening could be stronger given the evidence shows a massive repositioning shift",
+    "Paragraph 1 of 'Why it matters' is 43 words but could be tighter — the second sentence is abstract strategist language ('signals category expansion')",
+    "The final test is specific but buried in the third sentence of the H3 block instead of the first two",
+    "Word count is approximately 215 words — exceeds the 200-word cap"
+  ],
+  "requiredFixes": [
+    "Define 'category expansion' in plain language immediately after first use: 'category expansion — when a company stops competing inside its original product category and positions itself as the solution to a larger problem' → rephrase as 'The new headline positions Linear beyond issue tracking — it now competes as a way to run all of product development, not just one step in it.'",
+    "Move the practical test in 'What it costs' to the first sentence: 'Test your own headline: open it in a private browser window. Does the first sentence tell a cold visitor what your product does, or does it assume they already know?'",
+    "Replace H3 heading 'What it costs' with searchable phrasing: 'What the Linear homepage positioning shift costs in clarity'",
+    "Trim section to 200 words or fewer — remove the clause 'when a company stops competing inside its original product category and positions itself as the solution to a larger problem' after defining category expansion in plain language",
+    "Revise opening sentence to reflect the most interesting finding: Linear's headline no longer names the product category at all — start with that paradox instead of the template structure"
+  ],
+  "riskFlags": [
+    "'That distinction signals category expansion' — this is a causal interpretation ('signals') without a conditional. The evidence shows the headline changed; whether it signals intentional category expansion is analyst inference.",
+    "'The page now assumes the visitor sees Linear as more than bug tracking software' — outcome claim about what the page assumes, not directly traceable to evidence.",
+    "'If your brand does not already own that expanded category in the buyer's mind before the page loads, this framing reads as vague' — conditional is present, but 'reads as vague' is evaluative without supporting user data."
+  ],
+  "seoNotes": [
+    "Section heading contains 'Linear', 'homepage', 'positioning', and 'headline' — strong searchable terms.",
+    "H3 headings 'What changed' and 'Why it matters' are generic; 'What it costs' is clever-only with no search terms.",
+    "The phrase 'issue tracking to product development system' in the section heading mirrors likely search intent.",
+    "Word count exceeds 200 — trim to stay within CRO teardown best practice for scannability."
+  ],
+  "rewriteInstruction": "Revise the opening to anchor on the most striking evidence: Linear's headline no longer names what the product is — that's the paradox worth opening with. Define 'category expansion' in plain language or cut the term entirely. Move the practical test to the first sentence of the final H3 block. Replace the H3 heading 'What it costs' with searchable phrasing that includes 'homepage positioning' or 'Linear'. Trim to 200 words by removing the redundant definition clause after 'category expansion'. Attach conditionals to every evaluative claim (e.g. 'if the visitor does not already know Linear, this framing may read as vague'). Ensure all three H3 blocks deliver their takeaway in the first two sentences.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 13,
+    "plainLanguage": 13,
+    "scannability": 10,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

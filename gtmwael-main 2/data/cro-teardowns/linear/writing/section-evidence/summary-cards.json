@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Period covered",
+    "value": "Jan 2020 → Jun 2026",
+    "note": "9 visual snapshots compared"
+  },
+  {
+    "label": "Primary headline",
+    "value": "Fully rewritten",
+    "note": "Audience signal changed"
+  },
+  {
+    "label": "Section headings",
+    "value": "7 added · 10 removed",
+    "note": "Major content architecture overhaul"
+  },
+  {
+    "label": "Navigation",
+    "value": "8 added · 5 removed",
+    "note": "Navigation overhauled"
+  }
+]

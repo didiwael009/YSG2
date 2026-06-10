@@ -1,0 +1,49 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "The section heading is clever-only ('the headline no longer names the product category') with no searchable terms — no company name, no 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'.",
+    "The first H3 heading ('What changed') is generic and could appear in any teardown. Not anchored to Linear or a topic term.",
+    "The second H3 heading ('Why it matters') is also generic and could appear in any teardown.",
+    "The third H3 heading ('What Linear's homepage positioning shift costs in clarity') uses the forbidden term 'positioning' in the heading itself, and the phrase is awkwardly long.",
+    "The term 'positioning' appears three times in the section without a plain-language definition attached to its first use.",
+    "Paragraph 2 under 'Why it matters' is ~85 words — exceeds the 60-word cap.",
+    "The opening paragraph under 'What changed' could appear in other teardowns with minimal edits — it does not lead with the most interesting finding from the evidence.",
+    "The final test ('open it in a private browser window...') is generic and does not anchor to Linear's specific evidence or ask the founder to count/observe a specific element on their own page.",
+    "Multiple causal claims lack attached conditions: 'The page traded category clarity for positioning breadth' (no 'if' condition), 'this framing may read as abstract' (weak conditional but no hard condition), 'Visitors who search may not recognize Linear solves their problem' (claim about outcome without data).",
+    "The section does not quote the meta description change or the title tag change, both of which are core evidence for the belief shift.",
+    "Word count is approximately 175 words — within bounds but not flagged."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include 'Linear' and at least one searchable term ('homepage', 'positioning', 'messaging'). Example: 'Linear homepage positioning: from issue tracker to product development system'.",
+    "Replace the first two H3 headings with specific, searchable alternatives. Example: 'The headline shift: from 'issue tracking tool' to 'product development system'' and 'How Linear's homepage now speaks to a different visitor'.",
+    "Define 'positioning' in plain language on first use. Example: 'Linear changed its positioning (how it describes what it does and who it's for) ...'.",
+    "Break the 85-word paragraph under 'Why it matters' into two blocks, each under 60 words.",
+    "Replace the final test with a specific, runnable task anchored to Linear's evidence. Example: 'Open your homepage in a private window. Count how many words it takes before a cold visitor learns what your product does. Linear takes 11 words in 2020, zero words (category omitted) in 2026. Which visitors does your headline serve?'.",
+    "Add attached conditions to causal claims. Example: 'If the visitor arrives via a generic search (not branded), this framing may read as abstract.'.",
+    "Anchor the opening paragraph to the most interesting contrast in the evidence. Example: 'Linear's 2020 headline opened with the product category. The 2026 version never mentions it — the page now speaks to a job outcome, not a tool comparison.'.",
+    "Quote the meta description and title tag changes in at least one H3 block to support the belief shift claim."
+  ],
+  "riskFlags": [
+    "'The page traded category clarity for positioning breadth' — unsupported causal claim with no attached condition or data showing this was an intentional trade.",
+    "'Visitors who search issue tracking tool may not recognize Linear solves their problem' — outcome claim without evidence (no bounce rate, no A/B test data, no conversion impact).",
+    "'The page now assumes you already know Linear is an option' — causal claim about intent, not traceable to the evidence.",
+    "'The new one speaks to someone rethinking how their team builds products' — claim about audience segment without evidence."
+  ],
+  "seoNotes": [
+    "The section heading omits 'Linear' and lacks any searchable anchor term — unlikely to rank for any commercial query.",
+    "The meta description change (quoted in evidence but not in the draft) is a strong SEO-relevant data point and should appear in the section.",
+    "The title tag change (also quoted in evidence) is missing from the draft — this is the single most search-visible element."
+  ],
+  "rewriteInstruction": "Rewrite the section to fix the following: (1) Replace the ## heading with a searchable alternative that includes 'Linear' and a topic term like 'homepage positioning' or 'messaging shift'. (2) Replace the first two H3 headings with specific, search-friendly alternatives anchored to Linear (e.g. 'The headline shift: issue tracker to product development system'). (3) Define 'positioning' in plain language on first use and do not repeat the term more than once. (4) Break the 85-word paragraph under 'Why it matters' into two blocks, each under 60 words. (5) Quote the meta description and title tag changes in at least one H3 block to show the full scope of the belief shift. (6) Rewrite the final test to be specific and runnable in under five minutes, anchored to Linear's evidence (e.g. count how many words before your homepage states the product category). (7) Add attached conditions to all causal claims (e.g. 'If the visitor arrives via generic search, this framing may read as abstract'). (8) Open the section with the most interesting contrast from the evidence (the category omission), not a template sentence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 10,
+    "plainLanguage": 10,
+    "scannability": 8,
+    "searchableHeadings": 0,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}
