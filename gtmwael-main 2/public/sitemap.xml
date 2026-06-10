@@ -240,4 +240,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.60</priority>
   </url>
+  <url>
+    <loc>https://www.yoursaasgrowth.com/cro-teardowns/clay/</loc>
+    <lastmod>2026-06-09T22:47:03.024Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
 </urlset>

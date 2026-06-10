@@ -1083,25 +1083,47 @@ export const responsiveImageManifest = {
       }
     ]
   },
-  "2022-07": {
+  "2021-07": {
     "width": 1440,
-    "height": 7027,
-    "originalBytes": 238062,
+    "height": 7825,
+    "originalBytes": 394486,
     "variants": [
       {
         "width": 320,
-        "src": "/responsive/2022-07-320.webp",
-        "bytes": 16736
+        "src": "/responsive/2021-07-320.webp",
+        "bytes": 28716
       },
       {
         "width": 640,
-        "src": "/responsive/2022-07-640.webp",
-        "bytes": 51480
+        "src": "/responsive/2021-07-640.webp",
+        "bytes": 83592
       },
       {
         "width": 1024,
-        "src": "/responsive/2022-07-1024.webp",
-        "bytes": 99912
+        "src": "/responsive/2021-07-1024.webp",
+        "bytes": 137380
+      }
+    ]
+  },
+  "2022-01": {
+    "width": 1440,
+    "height": 6777,
+    "originalBytes": 166646,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2022-01-320.webp",
+        "bytes": 11492
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2022-01-640.webp",
+        "bytes": 33132
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2022-01-1024.webp",
+        "bytes": 64926
       }
     ]
   },
@@ -1171,25 +1193,113 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "2024-07": {
+    "width": 1440,
+    "height": 13174,
+    "originalBytes": 557798,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2024-07-320.webp",
+        "bytes": 35764
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2024-07-640.webp",
+        "bytes": 111836
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2024-07-1024.webp",
+        "bytes": 190454
+      }
+    ]
+  },
+  "2025-01": {
+    "width": 1440,
+    "height": 13246,
+    "originalBytes": 557126,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2025-01-320.webp",
+        "bytes": 35850
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2025-01-640.webp",
+        "bytes": 111884
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2025-01-1024.webp",
+        "bytes": 191166
+      }
+    ]
+  },
+  "2026-01": {
+    "width": 1440,
+    "height": 9467,
+    "originalBytes": 744260,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2026-01-320.webp",
+        "bytes": 53016
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2026-01-640.webp",
+        "bytes": 132694
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2026-01-1024.webp",
+        "bytes": 254874
+      }
+    ]
+  },
   "current-live": {
     "width": 1440,
-    "height": 14739,
-    "originalBytes": 782478,
+    "height": 9326,
+    "originalBytes": 856876,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/current-live-320.webp",
-        "bytes": 43826
+        "bytes": 57384
       },
       {
         "width": 640,
         "src": "/responsive/current-live-640.webp",
-        "bytes": 118634
+        "bytes": 143742
       },
       {
         "width": 1024,
         "src": "/responsive/current-live-1024.webp",
-        "bytes": 236874
+        "bytes": 271980
+      }
+    ]
+  },
+  "2022-07": {
+    "width": 1440,
+    "height": 7027,
+    "originalBytes": 238062,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2022-07-320.webp",
+        "bytes": 16736
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2022-07-640.webp",
+        "bytes": 51480
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2022-07-1024.webp",
+        "bytes": 99912
       }
     ]
   },
@@ -1303,72 +1413,6 @@ export const responsiveImageManifest = {
       }
     ]
   },
-  "2026-01": {
-    "width": 1440,
-    "height": 960,
-    "originalBytes": 93150,
-    "variants": [
-      {
-        "width": 320,
-        "src": "/responsive/2026-01-320.webp",
-        "bytes": 5730
-      },
-      {
-        "width": 640,
-        "src": "/responsive/2026-01-640.webp",
-        "bytes": 15724
-      },
-      {
-        "width": 1024,
-        "src": "/responsive/2026-01-1024.webp",
-        "bytes": 30126
-      }
-    ]
-  },
-  "2021-07": {
-    "width": 1440,
-    "height": 7397,
-    "originalBytes": 338088,
-    "variants": [
-      {
-        "width": 320,
-        "src": "/responsive/2021-07-320.webp",
-        "bytes": 21994
-      },
-      {
-        "width": 640,
-        "src": "/responsive/2021-07-640.webp",
-        "bytes": 68030
-      },
-      {
-        "width": 1024,
-        "src": "/responsive/2021-07-1024.webp",
-        "bytes": 120022
-      }
-    ]
-  },
-  "2025-01": {
-    "width": 1440,
-    "height": 13246,
-    "originalBytes": 557126,
-    "variants": [
-      {
-        "width": 320,
-        "src": "/responsive/2025-01-320.webp",
-        "bytes": 35850
-      },
-      {
-        "width": 640,
-        "src": "/responsive/2025-01-640.webp",
-        "bytes": 111884
-      },
-      {
-        "width": 1024,
-        "src": "/responsive/2025-01-1024.webp",
-        "bytes": 191166
-      }
-    ]
-  },
   "2022-10": {
     "width": 1440,
     "height": 6774,
@@ -1388,28 +1432,6 @@ export const responsiveImageManifest = {
         "width": 1024,
         "src": "/responsive/2022-10-1024.webp",
         "bytes": 122562
-      }
-    ]
-  },
-  "2024-07": {
-    "width": 1440,
-    "height": 13174,
-    "originalBytes": 557798,
-    "variants": [
-      {
-        "width": 320,
-        "src": "/responsive/2024-07-320.webp",
-        "bytes": 35764
-      },
-      {
-        "width": 640,
-        "src": "/responsive/2024-07-640.webp",
-        "bytes": 111836
-      },
-      {
-        "width": 1024,
-        "src": "/responsive/2024-07-1024.webp",
-        "bytes": 190454
       }
     ]
   },
