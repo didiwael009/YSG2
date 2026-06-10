@@ -979,10 +979,11 @@ export async function writeSectionLoop(
       system: WRITER_SYSTEM,
       messages: [{ role: 'user', content: buildWriterPrompt(sectionId, evidence) }],
       maxTokens: 2048,
+      cacheSystem: true,
     }),
     { onRetry: (a, e, d) => onLog(`Writer retry ${a}`, false, `${e.message} (${d}ms)`) },
   );
-  tracker.add(computeCallCost(writerModel, 'writer', writerResp.inputTokens, writerResp.outputTokens));
+  tracker.add(computeCallCost(writerModel, 'writer', writerResp.inputTokens, writerResp.outputTokens, writerResp.cacheReadTokens, writerResp.cacheCreationTokens));
   saveText(path.join(sectionsDir, `${sectionId}.v1.md`), writerResp.content);
   onLog(
     'Writer → v1',
@@ -1024,10 +1025,11 @@ export async function writeSectionLoop(
         system: CRITIC_SYSTEM,
         messages: [{ role: 'user', content: buildCriticPrompt(sectionId, evidence, draft, minScore) }],
         maxTokens: criticMaxTokens, // Rec 3: per-section override (lightweight: 4096, analytical: 8192)
+        cacheSystem: true,
       }),
       { onRetry: (a, e, d) => onLog(`Critic retry ${a}`, false, `${e.message} (${d}ms)`) },
     );
-    tracker.add(computeCallCost(criticModel, `critic-v${ver}`, resp.inputTokens, resp.outputTokens));
+    tracker.add(computeCallCost(criticModel, `critic-v${ver}`, resp.inputTokens, resp.outputTokens, resp.cacheReadTokens, resp.cacheCreationTokens));
 
     // Graceful degradation: the critic occasionally emits JSON with unescaped inner
     // quotes (our content is dense with **"bold quotes"**). Rather than throw away an
@@ -1081,10 +1083,11 @@ export async function writeSectionLoop(
         system: WRITER_SYSTEM,
         messages: [{ role: 'user', content: rewritePrompt }],
         maxTokens: 2048,
+        cacheSystem: true,
       }),
       { onRetry: (a, e, d) => onLog(`Rewriter retry ${a}`, false, `${e.message} (${d}ms)`) },
     );
-    tracker.add(computeCallCost(rewriterModel, `rewriter-v${nextVer}`, rwResp.inputTokens, rwResp.outputTokens));
+    tracker.add(computeCallCost(rewriterModel, `rewriter-v${nextVer}`, rwResp.inputTokens, rwResp.outputTokens, rwResp.cacheReadTokens, rwResp.cacheCreationTokens));
     currentDraft = rwResp.content;
     currentVersion = nextVer;
 

@@ -1,0 +1,50 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "The ## section heading contains no searchable terms — 'Should SaaS companies copy lemlist's homepage strategy?' is clever-only, missing 'lemlist homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "The term 'platform positioning' appears 3 times without a plain-language definition on first use (para 1, para 2, para 3)",
+    "H3 heading 'The pattern' contains no searchable terms and no company name",
+    "H3 heading 'Who should copy this' contains no searchable terms and no company name",
+    "H3 heading 'Who should NOT copy this' contains no searchable terms and no company name",
+    "H3 heading 'The test before you copy' contains no searchable terms and no company name",
+    "Paragraph 2 under 'Who should copy this' is approximately 75 words (exceeds 60-word limit)",
+    "Paragraph 1 under 'Who should NOT copy this' is approximately 70 words (exceeds 60-word limit)",
+    "Generic language in paragraph 2 ('Who should copy this') — 'If enterprise buyers ask' could appear in any SaaS teardown",
+    "Generic language in final test — 'Open your product analytics. Filter for customers acquired in the last 90 days' is not anchored to lemlist's specific evidence",
+    "The practical takeaway in 'The pattern' H3 block is buried in the final sentence, not delivered in the first two sentences",
+    "Section word count is approximately 245 words (within range but at upper limit)",
+    "No verbatim website quotes are formatted in **bold quotes** — all quotes appear in plain quotes only"
+  ],
+  "requiredFixes": [
+    "Change ## heading to include 'lemlist homepage' + a topic term, e.g. 'When to copy lemlist's homepage platform positioning (and when not to)'",
+    "Add plain-language definition on first use of 'platform positioning' in para 1, e.g. 'platform positioning (claiming you solve multiple workflows, not just one)'",
+    "Reformat all verbatim quotes in **bold quotes**: **'Send cold emails that get replies'** and **'The AI Outbound Platform'**",
+    "Revise H3 headings to include searchable terms. Suggested: 'Copy lemlist's platform messaging if you have multi-feature usage' (for current 'Who should copy this')",
+    "Cut paragraph 2 under 'Who should copy this' from 75 to under 60 words — remove 'If your customer success team already talks about your product as a stack or system instead of a tool, the homepage can follow.'",
+    "Cut paragraph 1 under 'Who should NOT copy this' from 70 to under 60 words — merge the two conversion-risk sentences",
+    "Anchor the final test to lemlist's specific evidence: reference the 650M+ lead database, multichannel sequences, or the specific navigation changes as the benchmark for when to shift",
+    "Move the practical takeaway in 'The pattern' to the first sentence: start with 'Only rewrite your H1 to claim a platform category after you have built multiple products that customers use together' before explaining lemlist's execution"
+  ],
+  "riskFlags": [
+    "Causal claim without attached condition: 'Platform positioning before platform usage kills the conversion path that built your business' — no evidence that lemlist experienced this or that this is universally true; should be reframed as 'Platform positioning before platform usage risks killing...' or conditioned on 'if most traffic comes from bottom-funnel searches'",
+    "Unsupported threshold: '30%' multi-feature activation threshold is not derived from lemlist's evidence and appears invented; should be removed or conditioned as 'a rough threshold might be...' with clear disclaimer it is not from lemlist data"
+  ],
+  "seoNotes": [
+    "NEGATIVE: The ## section heading misses high-value searchable terms — 'lemlist homepage' should appear in the heading for SEO value",
+    "NEGATIVE: All four H3 headings are generic and contain no company name or topic terms — missing opportunity to rank for long-tail 'lemlist homepage platform positioning' or 'when to copy lemlist messaging' searches",
+    "POSITIVE: Section structure (four H3 blocks) matches the stated SEO goal for maximum decision support",
+    "NEGATIVE: The final H3 block is not anchored to lemlist-specific evidence, reducing its value as a unique, linkable asset"
+  ],
+  "rewriteInstruction": "Revise the ## heading to include 'lemlist homepage' plus a topic term like 'platform positioning' or 'messaging strategy'. Reformat all verbatim quotes in **bold**. Add a plain-language definition the first time you use 'platform positioning' (e.g., 'claiming you solve multiple workflows instead of one'). Revise all four H3 headings to include searchable terms — at minimum, include 'lemlist' or a topic word like 'platform messaging' or 'multi-feature positioning'. Cut the two flagged paragraphs (75 words and 70 words) to under 60 words each. Anchor the final test to lemlist's specific product evidence: reference the lead database size, multichannel sequences in navigation, or the specific shift from 'cold email' to 'AI Outbound Platform' as the benchmark. Remove the invented '30%' activation threshold or clearly label it as illustrative, not derived from lemlist data. Move the practical takeaway in 'The pattern' block to the first sentence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 6,
+    "searchableHeadings": 0,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

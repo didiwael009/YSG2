@@ -1,0 +1,69 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "lemlist",
+  "companyUrl": "https://www.lemlist.com",
+  "articleTitle": "lemlist Homepage Teardown: Jul 2019 to Jun 2026",
+  "h1": "How lemlist rewrote its homepage over 7 years",
+  "fromLabel": "Jul 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 9,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "lemlist homepage",
+  "cta-changes": {
+    "added": [
+      "Get a demo",
+      "Sign up for free",
+      "Start your 30-day free trial",
+      "Start a 14-day free trial",
+      "Book a demo",
+      "Explore 500+ integrations",
+      "Get the playbook",
+      "book a personalized demo",
+      "650 M+ Lead Database",
+      "Email Finder & Verifier"
+    ],
+    "removed": [
+      "Learn more",
+      "Start your free trial now",
+      "Start now",
+      "Read the success story",
+      "Start your 14 day Free Trial",
+      "Got it!",
+      "Product tour",
+      "Success stories",
+      "Facebook community",
+      "What's new"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "From full TAM to your top accounts, run outreach that still feels 1:1",
+      "Find & enrich leads with contacts from 25+ top data providers",
+      "Use signal agents to spot high-intent leads & trigger context-based outreach",
+      "Let enrichment agents pull lead context from internal & external sources",
+      "Automate multichannel outbound across email, LinkedIn, & phone",
+      "Keep deliverability high across all your mailboxes & domains",
+      "Steal the outbound playbooks behind today’s top sales teams",
+      "Frequently Asked Questions",
+      "Turn precision outbound into a pipeline"
+    ],
+    "removed": [
+      "Your first campaignin less than 10 minutes",
+      "How B2B companies uselemlist to grow",
+      "Join the lemlist family"
+    ]
+  }
+}

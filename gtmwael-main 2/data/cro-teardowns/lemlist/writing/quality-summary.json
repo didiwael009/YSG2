@@ -1,0 +1,180 @@
+{
+  "slug": "lemlist",
+  "generatedAt": "2026-06-10T22:48:32.270Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The phrase 'The page stopped explaining how to run a single cold email campaign and started showcasing...' could be read as causal claim without condition — softening language recommended (e.g. 'The page no longer explains' or 'By 2026, the page showcases')"
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Paragraph length exceeds 90-word cap for intro section (draft is approximately 130 words)",
+        "Opening sentence delivers search-query answer but the second sentence introduces a visual observation ('The page stopped explaining...') that could be misread as causal claim",
+        "Heading is clever-only ('How a Cold Email Tool Became an AI Outbound Platform') and lacks the searchable keyword 'homepage' from the primary keyword target 'lemlist homepage teardown'"
+      ],
+      "sectionCostUsd": 0.033144
+    },
+    {
+      "sectionId": "02-quick-answer",
+      "finalVersion": 2,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The phrase 'category-defining' is a judgment not supported by evidence — the evidence shows lemlist CLAIMS the category ('AI Outbound Platform') but does not prove market acceptance or category leadership",
+        "No data connects the CTA additions (demo) or trial extension (14→30 days) to any outcome — these are surface changes without verified strategic intent"
+      ],
+      "remainingIssueCount": 6,
+      "remainingIssues": [
+        "Section exceeds the 50–75 word target at approximately 82 words",
+        "Heading is 'clever-only' with no searchable terms — contains neither company name ('lemlist'), 'homepage', 'positioning', 'messaging', 'CTA', nor 'conversion'",
+        "Final sentence is a list of surface changes without the strategic 'why' — could appear in any platform teardown",
+        "No bold quotes around the second headline quote ('The AI Outbound Platform for Relevant Outreach at Every Scale')",
+        "Opening sentence structure is dense and hard to scan — 40+ words with nested parentheticals",
+        "Lacks the 'answer the question completely' framing — does not explain what changed AND why it matters in three digestible beats"
+      ],
+      "sectionCostUsd": 0.07680000000000001
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 3,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The statement 'This is category leadership: when the homepage no longer introduces the space, because the brand or paid ads already do that work before the visitor lands' presents causation without supporting evidence — no data confirms lemlist's brand or paid ads carry this context",
+        "The claim 'this approach may filter them out before they understand what the product does' is conditional ('may'), but still implies conversion outcome without data"
+      ],
+      "remainingIssueCount": 6,
+      "remainingIssues": [
+        "The phrase 'category leadership' (third H3 block) is used without plain-language definition — appears as strategist jargon",
+        "Second H3 heading 'Why it matters' is not searchable — no company name, topic term, or keyword present",
+        "Third H3 heading 'What it costs' is not searchable — no company name, topic term, or keyword present",
+        "The statement 'This is category leadership: when the homepage no longer introduces the space' presents causation without condition or supporting evidence",
+        "Generic paragraph in third H3 block: 'If your traffic includes visitors unfamiliar with outbound platforms...' could appear in any SaaS teardown discussing category positioning",
+        "The founder test in the final H3 is specific and runnable, but the practical takeaway is not delivered in the first two sentences — it arrives only in the test instruction at the end"
+      ],
+      "sectionCostUsd": 0.10816200000000001
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 1,
+      "finalScore": 87,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The statement 'This suggests lemlist expects larger deals that require sales involvement' is slightly causal without an explicit condition, though it is softened by 'suggests' and contextualised by the demo CTA evidence"
+      ],
+      "remainingIssueCount": 6,
+      "remainingIssues": [
+        "H3 heading 'Who the old page served' is not searchable — lacks company name or topic term like 'messaging' or 'positioning'",
+        "H3 heading 'Who the new page served' is not searchable — lacks company name or topic term",
+        "H3 heading 'What this means for the sales process' is not searchable — lacks company name or topic term",
+        "First paragraph in 'Who the old page served' is 64 words (exceeds 60-word cap by 4)",
+        "Second paragraph in 'Who the new page serves' is 71 words (exceeds 60-word cap by 11)",
+        "The final H3 test is somewhat generic ('Does your homepage assume...') rather than a specific 5-minute runnable test anchored to lemlist's evidence"
+      ],
+      "sectionCostUsd": 0.037680000000000005
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 3,
+      "finalScore": 68,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "HARD CAP TRIGGERED: Unsupported factual claim 'It does not serve people still comparing tools side-by-side' — evidence shows CTA text changes only, not persona exclusion. Total capped at 70.",
+        "Causal claim without condition: 'The new structure assumes visitors are willing to wait' — no data on visitor willingness or conversion impact",
+        "Outcome claim: 'Earlier versions granted instant entry' vs 'now requires calendar step' — accurate quote comparison, but 'does not serve [segment]' is editorial invention"
+      ],
+      "remainingIssueCount": 8,
+      "remainingIssues": [
+        "Outcome claim in H3-2: 'It does not serve people still comparing tools side-by-side' — not traceable to evidence, presents as fact",
+        "Causal claim without condition in H3-2: 'The new structure assumes visitors are willing to wait' — no 'if' statement",
+        "H3-2 para 3 is 48 words but makes unsupported behavioral claim about what the structure 'assumes' and 'does not serve'",
+        "H3-3 final test is generic audit instruction ('Count your homepage's ratio') rather than specific 5-min test anchored to lemlist evidence",
+        "Section contains zero verbatim quotes in **bold quotes** — all website text appears in plain quotes",
+        "Word count approximately 155 (within range but thin for analytical section with 10 added + 10 removed CTAs)",
+        "H3-1 lists CTAs but does not explain WHAT changed or WHY it matters to the reader",
+        "H3-2 paragraph 2 could appear in any SaaS teardown — 'assumes visitors are willing to wait' is generic commentary"
+      ],
+      "sectionCostUsd": 0.099789
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 2,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 1,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The phrase 'you may have earned the right to platform positioning' introduces a causal implication (multi-feature usage → homepage change is justified) without stating the condition explicitly enough. Should read: 'If your analytics show customers activating three or more features together AND you have shipped at least five integrated capabilities, platform positioning may match buyer expectations.'",
+        "The claim 'Platform positioning before platform usage risks killing the conversion path' is a strong outcome prediction. It should be softened to 'Platform positioning before platform usage may reduce trial conversion if your primary acquisition channel is still single-use-case search traffic.'"
+      ],
+      "remainingIssueCount": 5,
+      "remainingIssues": [
+        "Paragraph 1 in H3 block 1 exceeds 60 words (approximately 68 words)",
+        "Paragraph 1 in H3 block 2 exceeds 60 words (approximately 72 words)",
+        "The term 'platform positioning' appears 3 times without variation, creating repetitive rhythm",
+        "H3 subheading 3 could be more scannable — 'single-use-case search traffic' is technical but not explained",
+        "The section heading lacks the company name — should be 'When to copy lemlist's platform positioning'"
+      ],
+      "sectionCostUsd": 0.083145
+    }
+  ],
+  "averageScore": 81.2,
+  "passCount": 3,
+  "failCount": 3,
+  "skippedCount": 0,
+  "totalRewriteLoops": 6,
+  "weakSections": [
+    "02-quick-answer",
+    "03-visual-timeline",
+    "05-cta-navigation-evolution"
+  ],
+  "allRiskFlags": [
+    "The phrase 'The page stopped explaining how to run a single cold email campaign and started showcasing...' could be read as causal claim without condition — softening language recommended (e.g. 'The page no longer explains' or 'By 2026, the page showcases')",
+    "The phrase 'category-defining' is a judgment not supported by evidence — the evidence shows lemlist CLAIMS the category ('AI Outbound Platform') but does not prove market acceptance or category leadership",
+    "No data connects the CTA additions (demo) or trial extension (14→30 days) to any outcome — these are surface changes without verified strategic intent",
+    "The statement 'This is category leadership: when the homepage no longer introduces the space, because the brand or paid ads already do that work before the visitor lands' presents causation without supporting evidence — no data confirms lemlist's brand or paid ads carry this context",
+    "The claim 'this approach may filter them out before they understand what the product does' is conditional ('may'), but still implies conversion outcome without data",
+    "The statement 'This suggests lemlist expects larger deals that require sales involvement' is slightly causal without an explicit condition, though it is softened by 'suggests' and contextualised by the demo CTA evidence",
+    "HARD CAP TRIGGERED: Unsupported factual claim 'It does not serve people still comparing tools side-by-side' — evidence shows CTA text changes only, not persona exclusion. Total capped at 70.",
+    "Causal claim without condition: 'The new structure assumes visitors are willing to wait' — no data on visitor willingness or conversion impact",
+    "Outcome claim: 'Earlier versions granted instant entry' vs 'now requires calendar step' — accurate quote comparison, but 'does not serve [segment]' is editorial invention",
+    "The phrase 'you may have earned the right to platform positioning' introduces a causal implication (multi-feature usage → homepage change is justified) without stating the condition explicitly enough. Should read: 'If your analytics show customers activating three or more features together AND you have shipped at least five integrated capabilities, platform positioning may match buyer expectations.'",
+    "The claim 'Platform positioning before platform usage risks killing the conversion path' is a strong outcome prediction. It should be softened to 'Platform positioning before platform usage may reduce trial conversion if your primary acquisition channel is still single-use-case search traffic.'"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 92,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [
+    "Opening paragraph: Change 'signaling a shift from serving individual practitioners to targeting enterprise sales teams' to 'appearing to serve enterprise sales teams' or 'consistent with targeting enterprise sales teams' — the evidence shows messaging changes, not proven buyer composition changes.",
+    "Section 'lemlist's audience shift': Change 'This suggests lemlist expects larger deals' to 'This may suggest lemlist expects larger deals' or 'This pattern is consistent with pursuing larger deals' — add conditional qualifier.",
+    "Section 'Don't copy lemlist's platform headline': Change 'you'll lose new trials without replacing them with qualified demos' to 'you risk losing new trials if qualified demos do not replace them' — convert prediction to conditional risk statement."
+  ],
+  "seoScore": 84,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Keyword density: 'lemlist homepage CRO teardown' appears only 2–3 times in the body; secondary keywords like 'SaaS homepage CRO teardown' or 'homepage redesign' are underutilized. Inject primary keyword naturally into the quick-answer section and one subsection heading.",
+    "Internal linking is almost nonexistent — add 3–5 contextual links to other teardowns or methodology articles before publication to improve topical authority and reader navigation.",
+    "Meta description could strengthen click-through by adding urgency or specificity — consider: 'lemlist's 7-year homepage shift: outcome-focused → AI platform. What this reveals about platform positioning and when it works.' (still under 155 chars)"
+  ],
+  "articleWordCount": 1209,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~120w): \"Between July 2019 and June 2026, lemlist replaced…\""
+  ],
+  "overLengthWarning": null
+}

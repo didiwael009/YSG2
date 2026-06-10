@@ -1,0 +1,29 @@
+{
+  "publishedAt": "2026-06-10T22:48:58.566Z",
+  "slug": "lemlist",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 92,
+    "seoPass": true,
+    "seoScore": 84,
+    "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/lemlist.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

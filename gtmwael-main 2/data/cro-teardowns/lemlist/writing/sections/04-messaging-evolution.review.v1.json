@@ -1,0 +1,36 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "H3 heading 'Who the old page served' is not searchable — lacks company name or topic term like 'messaging' or 'positioning'",
+    "H3 heading 'Who the new page served' is not searchable — lacks company name or topic term",
+    "H3 heading 'What this means for the sales process' is not searchable — lacks company name or topic term",
+    "First paragraph in 'Who the old page served' is 64 words (exceeds 60-word cap by 4)",
+    "Second paragraph in 'Who the new page serves' is 71 words (exceeds 60-word cap by 11)",
+    "The final H3 test is somewhat generic ('Does your homepage assume...') rather than a specific 5-minute runnable test anchored to lemlist's evidence"
+  ],
+  "requiredFixes": [
+    "Shorten the 64-word paragraph in 'Who the old page served' to 60 words or under",
+    "Shorten the 71-word paragraph in 'Who the new page serves' to 60 words or under",
+    "Make the final test more specific and runnable in under 5 minutes, anchored to lemlist's evidence (e.g., 'Count how many navigation items on your homepage are feature names vs. educational resources')"
+  ],
+  "riskFlags": [
+    "The statement 'This suggests lemlist expects larger deals that require sales involvement' is slightly causal without an explicit condition, though it is softened by 'suggests' and contextualised by the demo CTA evidence"
+  ],
+  "seoNotes": [
+    "Section heading contains 'lemlist' and 'audience' — searchable",
+    "H3 headings are not searchable and do not contain company name or key topic terms like 'messaging', 'positioning', or 'homepage'",
+    "The section uses plain language throughout and avoids jargon, which improves readability for Google featured snippet extraction"
+  ],
+  "rewriteInstruction": "Trim the two flagged paragraphs to 60 words or under without losing specificity. Replace the final test question ('Does your homepage assume...') with a concrete 5-minute action: 'Open your homepage navigation. Count how many items are feature names (like lemlist's '650 M+ Lead Database') versus educational resources (like 'Academy' or 'Product tour'). If you have more than 3 feature names and zero educational links, your page now assumes prior knowledge — test whether your conversion rate drops for cold traffic.' This anchors the takeaway directly to lemlist's navigation shift and gives the founder a measurable diagnostic.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 9,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

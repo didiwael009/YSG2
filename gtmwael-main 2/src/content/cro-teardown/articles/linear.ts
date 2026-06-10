@@ -22,10 +22,10 @@ export const linear: CroTeardownPost = {
   companyName: "Linear",
   companyUrl: "https://linear.app",
   category: "CRO Teardown",
-  title: "Linear Homepage Teardown: Jan 2020 to Jun 2026",
+  title: "Linear Homepage Teardown: How It Changed Between 2020 and 2026",
   h1: "How Linear rewrote its homepage over 6 years",
-  metaTitle: "Linear Homepage Teardown: Jan 2020 to Jun 2026",
-  description: "A CRO teardown of Linear's homepage from Jan 2020 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  metaTitle: "Linear Homepage Teardown: 2020 to 2026",
+  description: "How Linear's homepage went from developer-first to enterprise-ready in 6 years — every headline, CTA, and navigation change with what each signals.",
   excerpt: "Linear's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2020 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
@@ -284,7 +284,8 @@ export const linear: CroTeardownPost = {
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
-    "/saas-marketing-agency",
+    "/cro-teardowns/vercel",
+    "/cro-teardowns/stripe",
   ],
   publishedAt: "2026-06-10T17:04:35.958Z",
 };

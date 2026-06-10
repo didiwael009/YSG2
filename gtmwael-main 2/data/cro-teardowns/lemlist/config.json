@@ -1,0 +1,10 @@
+{
+  "name": "lemlist",
+  "slug": "lemlist",
+  "url": "https://www.lemlist.com",
+  "from": "2019-01",
+  "to": "2026-06",
+  "stepMonths": 6,
+  "createdAt": "2026-06-10T22:26:32.847Z",
+  "phase": 1
+}

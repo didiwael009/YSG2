@@ -1,0 +1,28 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 9,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [],
+  "generatedAt": "2026-06-10T22:37:50.642Z",
+  "postSummary": {
+    "title": "lemlist Homepage Teardown: Jul 2019 to Jun 2026",
+    "h1": "How lemlist rewrote its homepage over 7 years",
+    "readTime": "9 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 2,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 4,
+    "snapshotCount": 5
+  }
+}

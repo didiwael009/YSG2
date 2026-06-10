@@ -60,9 +60,11 @@ async function findSnapshotForSlot(
   const mid = addMonths(yearStr, monStr, Math.floor(windowMonths / 2));
   const midTarget = parseInt(`${mid.y}${String(mid.m).padStart(2, '0')}15`, 10);
 
+  // CDX API requires the URL without protocol prefix (e.g. "www.lemlist.com" not "https://www.lemlist.com")
+  const urlForCdx = url.replace(/^https?:\/\//, '');
   const cdxUrl =
     `https://web.archive.org/cdx/search/cdx` +
-    `?url=${encodeURIComponent(url)}` +
+    `?url=${encodeURIComponent(urlForCdx)}` +
     `&output=json` +
     `&fl=timestamp` +
     `&from=${fromDate}` +

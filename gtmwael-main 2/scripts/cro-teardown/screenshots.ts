@@ -306,8 +306,11 @@ async function attemptCapture(
     await page.screenshot({ path: pngPath, fullPage: true, type: 'png' });
 
     if (!isPng) {
-      // Convert PNG → WebP using sharp (already a project devDependency)
-      await sharp(pngPath).webp({ quality: 85 }).toFile(screenshotDest);
+      // Convert PNG → WebP via sharp. Cap height at 16 000 px (WebP max is 16 383).
+      await sharp(pngPath)
+        .resize({ height: 16_000, fit: 'inside', withoutEnlargement: true })
+        .webp({ quality: 85 })
+        .toFile(screenshotDest);
       fs.unlinkSync(pngPath);
     }
 
@@ -362,4 +365,110 @@ export async function captureCurrentPage(
   const textTxtDest = path.join(pageTextDir, 'current-live.txt');
 
   return capturePage(browser, url, screenshotDest, textJsonDest, textTxtDest, false);
+}
+
+/**
+ * Parallel-safe variant: caller provides an already-open BrowserContext.
+ * Used when multiple captures run concurrently — each worker owns its context,
+ * so recycling on error cannot affect other workers.
+ */
+export async function capturePageWithContext(
+  ctx: import('playwright').BrowserContext,
+  waybackUrl: string,
+  month: string,
+  archiveDir: string,
+  pageTextDir: string,
+  isWayback: boolean,
+): Promise<CaptureResult> {
+  const screenshotDest = path.join(archiveDir, `${month}.webp`);
+  const textJsonDest = path.join(pageTextDir, `${month}.json`);
+  const textTxtDest = path.join(pageTextDir, `${month}.txt`);
+
+  return attemptCaptureWithContext(ctx, waybackUrl, screenshotDest, textJsonDest, textTxtDest, isWayback);
+}
+
+export async function captureCurrentPageWithContext(
+  ctx: import('playwright').BrowserContext,
+  url: string,
+  archiveDir: string,
+  pageTextDir: string,
+): Promise<CaptureResult> {
+  const screenshotDest = path.join(archiveDir, 'current-live.webp');
+  const textJsonDest = path.join(pageTextDir, 'current-live.json');
+  const textTxtDest = path.join(pageTextDir, 'current-live.txt');
+
+  return attemptCaptureWithContext(ctx, url, screenshotDest, textJsonDest, textTxtDest, false);
+}
+
+async function attemptCaptureWithContext(
+  ctx: import('playwright').BrowserContext,
+  targetUrl: string,
+  screenshotDest: string,
+  textJsonDest: string,
+  textTxtDest: string,
+  isWayback: boolean,
+): Promise<CaptureResult> {
+  const RETRY_DELAYS_MS = [5_000, 12_000];
+  let lastError = '';
+
+  for (let attempt = 0; attempt <= RETRY_DELAYS_MS.length; attempt++) {
+    if (attempt > 0) {
+      const delay = RETRY_DELAYS_MS[attempt - 1];
+      log(`Retry attempt ${attempt} for ${targetUrl} (waiting ${delay}ms)`);
+      await new Promise((r) => setTimeout(r, delay));
+    }
+
+    const page = await ctx.newPage();
+    try {
+      log(`Navigating to: ${targetUrl}`);
+      await page.goto(targetUrl, { waitUntil: 'load', timeout: 60_000 });
+      await page.waitForLoadState('networkidle', { timeout: 15_000 }).catch(() => {});
+      await page.waitForTimeout(isWayback ? 2000 : 1000);
+
+      if (isWayback) {
+        await hideWaybackToolbar(page);
+        await page.waitForTimeout(500);
+      }
+
+      await dismissCookieBanners(page);
+
+      let textPathJson: string | null = null;
+      let textPathTxt: string | null = null;
+      try {
+        const text = await extractPageText(page);
+        saveJson(textJsonDest, text);
+        saveText(textTxtDest, pageTextToPlain(text));
+        textPathJson = textJsonDest;
+        textPathTxt = textTxtDest;
+        log(`Text extracted and saved to ${textJsonDest}`);
+      } catch (err) {
+        logError(`Text extraction failed for ${targetUrl}: ${err instanceof Error ? err.message : String(err)}`);
+      }
+
+      const isPng = screenshotDest.endsWith('.png');
+      const pngPath = isPng ? screenshotDest : screenshotDest.replace(/\.webp$/, '.png');
+      await page.screenshot({ path: pngPath, fullPage: true, type: 'png' });
+
+      if (!isPng) {
+        await sharp(pngPath)
+          .resize({ height: 16_000, fit: 'inside', withoutEnlargement: true })
+          .webp({ quality: 85 })
+          .toFile(screenshotDest);
+        fs.unlinkSync(pngPath);
+      }
+
+      log(`Screenshot saved to ${screenshotDest}`);
+      return { success: true, screenshotPath: screenshotDest, textPathJson, textPathTxt, error: null };
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      logError(`Capture failed for ${targetUrl}: ${message}`);
+      lastError = message;
+      const isRetryable = message.includes('net::ERR_');
+      if (!isRetryable) return { success: false, screenshotPath: null, textPathJson: null, textPathTxt: null, error: message };
+    } finally {
+      await page.close();
+    }
+  }
+
+  return { success: false, screenshotPath: null, textPathJson: null, textPathTxt: null, error: lastError };
 }

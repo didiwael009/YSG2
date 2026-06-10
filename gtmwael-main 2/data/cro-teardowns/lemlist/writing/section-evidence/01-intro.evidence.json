@@ -1,0 +1,127 @@
+{
+  "sectionId": "01-intro",
+  "companyName": "lemlist",
+  "companyUrl": "https://www.lemlist.com",
+  "articleTitle": "lemlist Homepage Teardown: Jul 2019 to Jun 2026",
+  "h1": "How lemlist rewrote its homepage over 7 years",
+  "fromLabel": "Jul 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 9,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "lemlist homepage",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2019 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "9 added · 3 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Send cold emails that get replies",
+      "after": "The AI Outbound Platform for Relevant Outreach at Every Scale",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Page title",
+      "before": "lemlist • Send cold emails that get replies",
+      "after": "lemlist | The AI Outbound Platform for Relevant Outreach at Every Scale"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "lemlist evolved from a single-feature cold email tool for individual users into an AI-powered outbound platform for enterprise sales teams by replacing its outcome-focused H1 'Send cold emails that get replies' with the category-defining 'The AI Outbound Platform for Relevant Outreach at Every Scale' and restructuring navigation from product education to a full-stack outbound toolkit (lead database, phone finder, multichannel sequences).",
+    "old_positioning_frame": "A cold email tool that helps you get replies, with education-focused navigation and a fast time-to-first-campaign promise",
+    "new_positioning_frame": "A comprehensive AI-powered outbound platform that orchestrates multichannel prospecting at scale across multiple data sources and channels",
+    "buyer_shift": "Individual practitioners or small teams seeking cold email effectiveness → Enterprise sales operations teams and RevOps leaders managing scaled outbound programs across multiple channels and reps",
+    "funnel_shift": "Mid-funnel evaluation (start a trial immediately and launch your first campaign in 10 minutes) → Top-of-funnel category education and demo-gated qualification (Get a demo, Book a demo) for larger deal cycles",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Send cold emails that get replies",
+        "new": "The AI Outbound Platform for Relevant Outreach at Every Scale",
+        "meaning": "Suggests a shift from promising a specific outcome (replies) to claiming ownership of an entire category (AI Outbound Platform), which signals a move toward serving buyers who need to understand platform capabilities rather than tool features. The addition of 'at Every Scale' points to enterprise positioning where scale is a qualification criterion."
+      },
+      {
+        "element": "Navigation",
+        "old": "Product · Product tour · Features · Success stories · Pricing · Resources · Facebook community · Academy",
+        "new": "650 M+ Lead Database · Email Finder & Verifier · Phone Number Finder · Multichannel Sequences · LinkedIn Prospecting · In-app Calling · SMS CampaignsNew · WhatsApp Prospecting",
+        "meaning": "The removal of educational navigation (Product tour, Academy, Facebook community) and replacement with specific tool capabilities suggests lemlist is now targeting buyers who already understand outbound sales methodology and need to evaluate a comprehensive toolkit rather than learn cold email basics. The prominence of the lead database size (650 M+) in navigation is consistent with enterprise procurement evaluation criteria."
+      },
+      {
+        "element": "Primary CTAs",
+        "old": "Start your free trial now · Start now · Start your 14 day Free Trial",
+        "new": "Get a demo · Book a demo · Sign up for free · Start your 30-day free trial",
+        "meaning": "The introduction of demo CTAs alongside (not replacing) free trial CTAs suggests a dual-path strategy where high-value enterprise accounts are routed to sales-assisted onboarding while self-serve remains available. The extension from 14-day to 30-day trial may indicate increased product complexity requiring longer evaluation cycles."
+      },
+      {
+        "element": "Section headings",
+        "old": "Your first campaign in less than 10 minutes · How B2B companies use lemlist to grow · Join the lemlist family",
+        "new": "Use signal agents to spot high-intent leads & trigger context-based outreach · Let enrichment agents pull lead context from internal & external sources · Keep deliverability high across all your mailboxes & domains",
+        "meaning": "The removal of time-to-value messaging (first campaign in 10 minutes) and community language (lemlist family) in favour of technical capability descriptions (signal agents, enrichment agents, deliverability management) is consistent with targeting technical buyers or RevOps roles who evaluate integration architecture and data orchestration rather than immediate usability."
+      },
+      {
+        "element": "Section headings",
+        "old": "Join the lemlist family",
+        "new": "Steal the outbound playbooks behind today's top sales teams",
+        "meaning": "The shift from community belonging language to competitive intelligence framing suggests targeting buyers motivated by competitive advantage and best-in-class benchmarking rather than peer support, which is characteristic of enterprise sales leadership rather than individual practitioners."
+      }
+    ],
+    "copy_this_if": "Your product has expanded from a single workflow tool into a multi-feature platform AND you have enterprise customers actively using 3+ features in combination AND your brand name is already associated with your original category in buyer search behaviour",
+    "do_not_copy_this_if": "You are still primarily acquiring customers through bottom-of-funnel intent searches for your original use case (e.g., 'cold email tool') and have not yet built the multi-product infrastructure to support platform positioning",
+    "safer_version_for_early_stage_saas": "Keep your outcome-focused H1 but add a single subheading that names one additional capability beyond your core feature (e.g., 'Send cold emails that get replies — now with built-in lead enrichment'), and test a secondary 'Book a demo' CTA alongside your free trial for visitors from enterprise domains or who view 3+ feature pages",
+    "risk_if_copied": "If copied prematurely, you will remove the high-intent conversion path that built your business (self-serve trial from bottom-funnel searches) before establishing brand recognition in the new category, resulting in lower trial starts without compensating demo volume, and the platform messaging will create confusion for single-use-case buyers who still represent your core acquisition channel",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-10T22:39:00.979Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.024477
+  },
+  "seo-intent": {
+    "primary_keyword": "lemlist homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, growth marketer, or revenue ops leader who uses or evaluates B2B outbound tools, and wants to understand how lemlist repositioned from a simple cold email tool to an AI-powered multi-channel platform — to assess whether similar positioning/feature expansion makes sense for their own product or to benchmark against competitor evolution.",
+    "recommended_h1_format": "How [Company] Evolved From Cold Email Tool to AI Outbound Platform: A 7-Year Homepage Teardown",
+    "secondary_keywords": [
+      "lemlist homepage evolution",
+      "lemlist CRO strategy analysis",
+      "how lemlist repositioned its messaging",
+      "lemlist homepage before and after",
+      "lemlist product positioning changes"
+    ],
+    "content_angle": "Focus on the **strategic shift in positioning**, not just design changes. The searcher wants to understand WHY lemlist moved from 'Send cold emails that get replies' (simple, outcome-focused) to 'AI Outbound Platform for Relevant Outreach at Every Scale' (capability-focused, TAM expansion). Highlight how they layered in new features (agents, multichannel, enrichment), broadened the nav to surface lead database and tools, and shifted CTAs toward enterprise (demos) alongside self-serve. The implicit question: 'Did this work, and should we do something similar?'",
+    "what_the_searcher_wants": "To learn how a successful SaaS company expanded its TAM and market positioning without alienating its existing user base, and to extract actionable lessons about when/how to shift messaging from a narrow use case to a platform play.",
+    "what_to_avoid": "Do NOT present this as a simple 'before/after' design critique or list of button changes. Do NOT assume the changes were purely cosmetic or A/B tested in isolation — dig into the *business logic* (new product lines, acquisition targets, competitive pressure). Do NOT treat feature additions as inevitable; question whether each addition (signal agents, enrichment agents, phone outreach) actually expanded appeal or if some were red herrings. Avoid generic lessons ('be clear,' 'simplify messaging') — instead, highlight the *tension* between serving power users and new segments, and how lemlist managed (or didn't) that trade-off.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-10T22:38:21.083Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0032384
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section is 152 words, within target range but dense without breathing room",
+    "H3 heading 'What changed' is generic — could appear in any teardown",
+    "H3 heading 'What the new path requires' lacks searchable terms (CTA, conversion, demo)",
+    "Second H3 block contains unsupported causal claim: 'The new structure works if the visitor already decided to evaluate lemlist specifically' — no evidence provided for this condition",
+    "Second H3 block makes outcome prediction without data: 'not if they are still comparing categories' — no conversion data to support this claim",
+    "Paragraph 2 (H3 block 2) is 64 words — exceeds 60-word cap for H3 blocks",
+    "Opening sentence is template-style ('Between X and Y, lemlist replaced A with B') — evidence supports more interesting entry (the ratio shift, the demo-first pivot)",
+    "Final audit question is comparative ('Compare that ratio to your homepage one year ago') but doesn't anchor to lemlist's specific finding — what ratio did lemlist move from/to?"
+  ],
+  "requiredFixes": [
+    "Replace 'What changed' H3 with searchable heading containing 'lemlist' + 'CTA' or 'conversion' (e.g. 'lemlist's CTA mix: the trial-to-demo ratio flip')",
+    "Replace 'What the new path requires' H3 with heading containing searchable term ('demo conversion path' or 'CTA hierarchy')",
+    "Remove or condition the causal claim in paragraph 2: 'The new structure works if...' — either delete or rewrite as 'The new structure requires visitors who...' (descriptive, not predictive)",
+    "Shorten paragraph 2 to ≤60 words by splitting into two H3 blocks or cutting the speculative clause about category comparison",
+    "Rewrite opening to reflect the most interesting finding: the direction of the shift (trial→demo), not just the fact of substitution",
+    "Anchor final audit test to lemlist's specific ratio change — state the before/after CTA counts from evidence, then ask founder to calculate their own ratio"
+  ],
+  "riskFlags": [
+    "UNSUPPORTED CAUSAL CLAIM: 'The new structure works if the visitor already decided to evaluate lemlist specifically' — no conversion data, A/B test, or attribution in evidence",
+    "UNSUPPORTED OUTCOME CLAIM: 'not if they are still comparing categories or testing tools quickly' — no data on visitor intent or conversion by stage",
+    "IMPLIED CAUSATION: 'If demo CTAs increased and self-serve CTAs dropped, check whether inbound trial volume changed' — suggests correlation without evidence that lemlist measured this"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains 'lemlist' + 'CTA' + 'conversion' — highly searchable",
+    "NEGATIVE: H3 subheadings lack search terms — 'What changed' and 'What the new path requires' are not discoverable via internal site search or Google snippet preview",
+    "POSITIVE: Verbatim CTAs are quoted and bolded throughout — supports featured snippet extraction",
+    "MISSED OPPORTUNITY: Evidence shows 10 CTAs added, 10 removed — stating the count ('lemlist swapped 10 CTAs') would strengthen searchability for 'CTA audit' queries"
+  ],
+  "rewriteInstruction": "Rewrite with three changes. (1) Replace both generic H3 headings with searchable terms: 'lemlist CTA inventory: 10 removed, 10 added' and 'The demo-first conversion path: what it requires'. (2) Remove all causal/predictive claims in paragraph 2 — describe what the new path requires (calendar step, sales conversation) without predicting when it 'works'. (3) Anchor the final audit test to lemlist's specific shift: 'lemlist moved from 3 instant-access CTAs above the fold in 2019 to 1 in 2026, with demo CTAs taking primary position. Count your own page's ratio. If you see the same shift, pull trial-start data for the same period and check whether volume dropped or held.' This grounds the test in lemlist's evidence and makes it concrete.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 9,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph length exceeds 90-word cap for intro section (draft is approximately 130 words)",
+    "Opening sentence delivers search-query answer but the second sentence introduces a visual observation ('The page stopped explaining...') that could be misread as causal claim",
+    "Heading is clever-only ('How a Cold Email Tool Became an AI Outbound Platform') and lacks the searchable keyword 'homepage' from the primary keyword target 'lemlist homepage teardown'"
+  ],
+  "requiredFixes": [
+    "Trim the draft to 85–90 words maximum — current draft runs ~130 words",
+    "Revise heading to include 'homepage' for searchability: e.g. 'lemlist Homepage Teardown: How a Cold Email Tool Became an AI Outbound Platform' or 'How lemlist Rewrote Its Homepage: Cold Email Tool to AI Outbound Platform'"
+  ],
+  "riskFlags": [
+    "The phrase 'The page stopped explaining how to run a single cold email campaign and started showcasing...' could be read as causal claim without condition — softening language recommended (e.g. 'The page no longer explains' or 'By 2026, the page showcases')"
+  ],
+  "seoNotes": [
+    "Primary keyword 'lemlist homepage' appears in meta context but not in the ## heading — reduces scannability for search-driven readers",
+    "Opening sentence correctly names company, period, and biggest shift (H1 replacement) which satisfies search intent",
+    "Both old and new H1s are in bold quotes with verbatim text, which supports credibility and snippet eligibility"
+  ],
+  "rewriteInstruction": "Trim to 85 words by condensing the navigation observation and the final sentence. Revise the ## heading to include 'homepage' for search visibility. Soften 'The page stopped explaining... and started showcasing' to a temporal observation ('By 2026, the page showcases...') to avoid implying causation without condition. Retain the two bold-quoted H1s verbatim and the specific evidence anchors (lead database, phone finder, signal-based automation, Academy, Product Tour). Keep the final sentence's tension setup — it works as a preview.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 10,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

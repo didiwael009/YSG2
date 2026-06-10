@@ -1,0 +1,42 @@
+{
+  "score": 71,
+  "pass": false,
+  "issues": [
+    "The section exceeds the 50–75 word count budget at approximately 85 words, violating the featured snippet optimization goal.",
+    "Final sentence makes a causal prediction ('this shift may remove the conversion path that built your business') without attached evidence or conditional framing — this is a hard cap trigger.",
+    "The phrase 'This positioning assumes visitors already understand outbound sales methodology' makes an inference about visitor knowledge states not supported by the evidence provided.",
+    "Generic phrase 'If you still acquire most customers through searches for your original use case' could appear in any SaaS teardown — not anchored to lemlist's specific evidence.",
+    "Second and third sentences read like strategist-to-strategist analysis rather than plain-language Google answer format.",
+    "The heading 'Quick answer' contains no searchable terms (lemlist, homepage, positioning, messaging, CTA, conversion) — clever-only heading penalty applies."
+  ],
+  "requiredFixes": [
+    "Reduce word count to 50–75 words maximum to optimize for featured snippet extraction (currently ~85 words).",
+    "Remove or reframe the causal claim 'this shift may remove the conversion path' — replace with conditional observation like 'lemlist added demo CTAs alongside trial CTAs, creating a dual-path strategy' which is traceable to evidence.",
+    "Replace 'This positioning assumes visitors already understand' with evidence-traceable observation: 'lemlist removed educational navigation (Product tour, Academy, Facebook community) and replaced it with specific tool capabilities.'",
+    "Cut the generic conditional clause 'If you still acquire most customers through searches for your original use case' — this reads as generic advice, not lemlist-specific answer.",
+    "Rewrite final sentence to be lemlist-specific, not a generic warning: e.g., 'The company extended its free trial from 14 to 30 days, signaling longer evaluation cycles.'",
+    "Add searchable term to heading: change 'Quick answer' to 'Quick answer: lemlist homepage positioning shift' to improve heading searchability."
+  ],
+  "riskFlags": [
+    "HARD CAP TRIGGER: 'this shift may remove the conversion path that built your business' is a predictive causal claim without supporting data — no conversion metrics provided in evidence to support this outcome prediction.",
+    "'This positioning assumes visitors already understand outbound sales methodology' infers visitor mental state without evidence — the evidence shows what was removed (educational nav) but does not confirm visitor understanding assumptions.",
+    "'before you've established recognition in the new category' implies brand recognition measurement not present in the evidence — this is outcome speculation."
+  ],
+  "seoNotes": [
+    "NEGATIVE: Section heading 'Quick answer' contains zero searchable terms (no company name, no topic terms like homepage/positioning/messaging). This hurts discoverability in Google's section-jump navigation.",
+    "POSITIVE: First sentence contains exact-match quoted headlines in bold, which preserves searchable phrases and supports featured snippet extraction.",
+    "NEGATIVE: At ~85 words, the section exceeds optimal featured snippet length (Google prefers 40–60 words for paragraph snippets). The third sentence should be cut entirely.",
+    "POSITIVE: The structure follows a clear before/after pattern that answers 'how did lemlist change its homepage' directly, which matches informational search intent."
+  ],
+  "rewriteInstruction": "Trim to 60 words maximum by cutting the entire third sentence (the generic conditional warning). Rewrite the second sentence to describe what lemlist DID rather than what the positioning 'assumes': replace 'This positioning assumes visitors already understand' with 'lemlist removed educational navigation (Product tour, Academy) and replaced it with tool-specific capabilities (650 M+ Lead Database, Phone Finder, LinkedIn Prospecting)'. Remove all outcome predictions ('may remove the conversion path') and replace with observable evidence: 'The company added demo CTAs alongside trial options and extended the trial from 14 to 30 days.' Change the heading from 'Quick answer' to 'Quick answer: lemlist homepage positioning' to add searchable terms. Every claim must trace to a specific before/after element in the evidence — no inferences about visitor understanding, brand recognition, or conversion impact.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 14,
+    "scannability": 12,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

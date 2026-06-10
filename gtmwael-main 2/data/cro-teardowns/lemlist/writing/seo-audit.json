@@ -1,0 +1,51 @@
+{
+  "seoScore": 84,
+  "pass": true,
+  "titleScore": 12,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 13,
+  "searchIntentScore": 18,
+  "keywordUseScore": 9,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
+  "internalLinkingSuggestions": [
+    "Link from 'platform positioning' section to a related article on SaaS product strategy or messaging frameworks",
+    "Link from 'RevOps buyer' mention to an internal guide on B2B buyer personas or sales operations workflows",
+    "Link from the CTA shift section to an internal article on conversion funnel design or demo vs. trial strategy",
+    "Link from 'A/B test analysis' keyword context to a related CRO methodology or testing framework article",
+    "Add a contextual link to another SaaS homepage teardown (e.g., competitor or similar-stage company) in the 'lemlist's platform expansion pattern' section"
+  ],
+  "faqSuggestions": [
+    "When should a SaaS company move from a free trial to a demo-first conversion model?",
+    "How do you know when your product is ready for platform positioning instead of single-feature messaging?",
+    "What metrics indicate that customers are using multiple features together as a platform?",
+    "Should you change your homepage headline based on product expansion or wait until customer behavior validates it?",
+    "How does audience maturity affect SaaS homepage messaging strategy?",
+    "What's the difference between outcome-focused and category-defining headlines, and when does each work?"
+  ],
+  "contentGapNotes": [
+    "Article lacks concrete data on lemlist's conversion rates or trial-to-paid rates before/after the shift — reader cannot assess whether the change actually improved business outcomes",
+    "No discussion of how paid ads or brand awareness evolved alongside the homepage change — the article mentions 'brand or paid ads do that work before the visitor lands' but doesn't explore this dependency",
+    "Missing analysis of mobile vs. desktop experience changes across the 7-year period, which could affect CTA placement and headline effectiveness",
+    "No mention of how the 30-day free trial extension (from 14 days) interacts with the demo-first messaging shift — these could work in tension",
+    "Limited coverage of secondary navigation, footer CTAs, or above-the-fold subheading copy — only headline and primary navigation analyzed",
+    "Article does not address how lemlist's expansion into new channels (SMS, WhatsApp, LinkedIn Prospecting) affected buyer education burden or homepage clarity",
+    "No guidance on how to measure whether your own audience shift has occurred before adopting platform messaging (e.g., keyword source analysis, customer survey data)"
+  ],
+  "requiredFixes": [
+    "Keyword density: 'lemlist homepage CRO teardown' appears only 2–3 times in the body; secondary keywords like 'SaaS homepage CRO teardown' or 'homepage redesign' are underutilized. Inject primary keyword naturally into the quick-answer section and one subsection heading.",
+    "Internal linking is almost nonexistent — add 3–5 contextual links to other teardowns or methodology articles before publication to improve topical authority and reader navigation.",
+    "Meta description could strengthen click-through by adding urgency or specificity — consider: 'lemlist's 7-year homepage shift: outcome-focused → AI platform. What this reveals about platform positioning and when it works.' (still under 155 chars)"
+  ],
+  "optionalImprovements": [
+    "Add a small data visualization or side-by-side screenshot callout comparing the 2019 vs. 2026 headlines and navigation — the article is text-dense and a visual anchor would boost scannability",
+    "Expand the 'Test: open lemlist's current homepage' audit section with a downloadable checklist or template readers can apply to their own site",
+    "Include a brief case-study table showing: old audience → new audience, old CTA → new CTA, implied conversion path change (would make the shift more immediately clear)",
+    "Consider adding a 'Red flags: when NOT to copy this approach' callout box to front-load the 'don't copy if...' section higher in the article",
+    "In the FAQ suggestions, add a question like: 'What happens to conversion rates when you remove outcome-focused messaging?' — this directly answers reader concern about risk",
+    "The article mentions '5 snapshots' in the metadata but only analyzes 2019 and 2026 — consider adding a sentence acknowledging the intermediate snapshots exist but focusing on endpoints for clarity"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.008279999999999954,
+  "generatedAt": "2026-06-10T22:48:32.261Z"
+}

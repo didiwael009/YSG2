@@ -1,0 +1,237 @@
+{
+  "slug": "lemlist",
+  "companyName": "lemlist",
+  "companyUrl": "https://www.lemlist.com",
+  "category": "CRO Teardown",
+  "title": "lemlist Homepage Teardown: Jul 2019 to Jun 2026",
+  "h1": "How lemlist rewrote its homepage over 7 years",
+  "metaTitle": "lemlist Homepage CRO Teardown — Jul 2019 to Jun 2026",
+  "description": "A CRO teardown of lemlist's homepage from Jul 2019 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "lemlist's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jul 2019 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-10",
+  "readTime": "9 min read",
+  "featuredImage": "/cro-teardowns/lemlist/selected/2019-07.webp",
+  "featuredImageAlt": "lemlist homepage — Jul 2019",
+  "fromLabel": "Jul 2019",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2019-07",
+      "label": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2019-07.webp"
+    },
+    {
+      "month": "2021-01",
+      "label": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2021-01.webp"
+    },
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2023-01.webp"
+    },
+    {
+      "month": "2023-07",
+      "label": "Jul 2023",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2023-07.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2019 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "9 added · 3 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Send cold emails that get replies",
+      "after": "The AI Outbound Platform for Relevant Outreach at Every Scale",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Page title",
+      "before": "lemlist • Send cold emails that get replies",
+      "after": "lemlist | The AI Outbound Platform for Relevant Outreach at Every Scale"
+    }
+  ],
+  "h2Added": [
+    "From full TAM to your top accounts, run outreach that still feels 1:1",
+    "Find & enrich leads with contacts from 25+ top data providers",
+    "Use signal agents to spot high-intent leads & trigger context-based outreach",
+    "Let enrichment agents pull lead context from internal & external sources",
+    "Automate multichannel outbound across email, LinkedIn, & phone",
+    "Keep deliverability high across all your mailboxes & domains",
+    "Steal the outbound playbooks behind today’s top sales teams",
+    "Frequently Asked Questions",
+    "Turn precision outbound into a pipeline"
+  ],
+  "h2Removed": [
+    "Your first campaignin less than 10 minutes",
+    "How B2B companies uselemlist to grow",
+    "Join the lemlist family"
+  ],
+  "ctaAdded": [
+    "Get a demo",
+    "Sign up for free",
+    "Start your 30-day free trial",
+    "Start a 14-day free trial",
+    "Book a demo",
+    "Explore 500+ integrations",
+    "Get the playbook",
+    "book a personalized demo",
+    "650 M+ Lead Database",
+    "Email Finder & Verifier"
+  ],
+  "ctaRemoved": [
+    "Learn more",
+    "Start your free trial now",
+    "Start now",
+    "Read the success story",
+    "Start your 14 day Free Trial",
+    "Got it!",
+    "Product tour",
+    "Success stories",
+    "Facebook community",
+    "What's new"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2019-07",
+      "label": "Jul 2019 — original state",
+      "period": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2019-07.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Send cold emails that get replies\" — direct product statement.",
+        "Visible section headings include: \"Your first campaignin less than 10 minutes\", \"How B2B companies uselemlist to grow\", \"Join the lemlist family\".",
+        "Navigation includes: \"Product\", \"Product tour\", \"Features\", \"Success stories\" — product category framing.",
+        "Section headings later removed include: \"Your first campaignin less than 10 minutes\" and \"How B2B companies uselemlist to grow\"."
+      ]
+    },
+    {
+      "id": "analysis-2021-01",
+      "label": "Jan 2021 — mid-transition",
+      "period": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2021-01.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: unknown — a moderate visual change.",
+        "H1 in this snapshot: \"Start conversations that get replies\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/current-live.webp",
+      "heading": "Today: platform-first positioning",
+      "annotations": [
+        "H1 now reads: \"The AI Outbound Platform for Relevant Outreach at Every Scale\" — formal capability framing, consistent with platform-level positioning.",
+        "New section headings include: \"From full TAM to your top accounts, run outreach that still feels 1:1\", \"Find & enrich leads with contacts from 25+ top data providers\", \"Use signal agents to spot high-intent leads & trigger context-based outreach\".",
+        "CTAs no longer present include: \"Learn more\", \"Start your free trial now\", \"Start now\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"Send cold emails that get replies\" to \"The AI Outbound Platform for Relevant Outreach at Every Scal...\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Product\", \"Product tour\", \"Features\" to \"650 M+ Lead Database\", \"Email Finder & Verifier\", \"Phone Number Finder\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "9 section headings were added and 3 removed between Jul 2019 and Jun 2026. New headings include \"From full TAM to your top accounts, run outreach that still feels 1:1\" and \"Find & enrich leads with contacts from 25+ top data providers\". Headings that disappeared include \"Your first campaignin less than 10 minutes\" and \"How B2B companies uselemlist to grow\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 5 snapshots spanning roughly 7 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

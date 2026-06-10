@@ -19,6 +19,16 @@ const ANCHOR_LABELS: Record<string, string> = {
   "/saas-marketing-agency": "SaaS marketing agency alternative",
   "/optimize-saas-landing-page": "Optimize your SaaS landing page",
   "/b2b-saas-marketing-strategy": "B2B SaaS marketing strategy",
+  // CRO teardown cross-links
+  "/cro-teardowns/shopify": "Shopify homepage teardown (2021–2026)",
+  "/cro-teardowns/hootsuite": "Hootsuite website redesign teardown",
+  "/cro-teardowns/stripe": "Stripe homepage teardown (2022–2026)",
+  "/cro-teardowns/intercom": "Intercom homepage teardown (2023–2026)",
+  "/cro-teardowns/vercel": "Vercel homepage teardown (2021–2026)",
+  "/cro-teardowns/crisp": "Crisp messaging homepage teardown",
+  "/cro-teardowns/clay": "Clay GTM tool homepage teardown",
+  "/cro-teardowns/linear": "Linear homepage teardown (2020–2026)",
+  "/cro-teardowns/lemlist": "lemlist homepage teardown (2019–2026)",
 };
 
 interface InternalLinksProps {

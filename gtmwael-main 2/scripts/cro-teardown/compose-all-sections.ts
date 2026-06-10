@@ -78,6 +78,8 @@ interface CliArgs {
   maxRerunSections: number;
   /** Force all section writers/rewriters to this model (e.g. claude-sonnet-4-5). null = per-section defaults. */
   writerModel: string | null;
+  /** Max sections composed concurrently. Sections are independent (cohesion runs after), so >1 is safe. */
+  concurrency: number;
 }
 
 function parseArgs(argv: string[]): CliArgs {
@@ -118,7 +120,34 @@ function parseArgs(argv: string[]): CliArgs {
     rerunFailed:      flags.has('rerun-failed'),
     maxRerunSections: parseInt(args['max-rerun-sections'] ?? '3', 10),
     writerModel:      args['writer-model'] ?? null,
+    // Default 3: each section runs 5–6 sequential calls internally, so 3 in flight
+    // keeps API concurrency modest while cutting wall-clock ~2–3×. Pass --concurrency 1
+    // to fall back to the original fully-sequential behaviour.
+    concurrency:      Math.max(1, parseInt(args['concurrency'] ?? '3', 10)),
   };
+}
+
+/**
+ * Runs `worker` over `items` with at most `limit` promises in flight at once.
+ * Results are returned in the original item order. A worker that throws is the
+ * worker's own responsibility to catch — this helper does not swallow rejections.
+ */
+async function mapWithConcurrency<T, R>(
+  items: T[],
+  limit: number,
+  worker: (item: T, index: number) => Promise<R>,
+): Promise<R[]> {
+  const results = new Array<R>(items.length);
+  let next = 0;
+  const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (true) {
+      const i = next++;
+      if (i >= items.length) return;
+      results[i] = await worker(items[i], i);
+    }
+  });
+  await Promise.all(runners);
+  return results;
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -290,6 +319,7 @@ async function main(): Promise<void> {
   console.log(`  Mode       : ${cli.mode}`);
   console.log(`  Budget     : $${cli.maxCostUsd}`);
   console.log(`  Max loops  : ${cli.maxRewriteLoops}`);
+  console.log(`  Concurrency: ${cli.concurrency}${cli.concurrency > 1 ? ' (sections composed in parallel)' : ' (sequential)'}`);
   console.log(`  Force      : ${cli.force ? 'yes — regenerating all' : 'no — skipping existing finals'}`);
   if (cli.skipFinalJudge)    console.log(`  Judge      : skipped (--skip-final-judge)`);
   if (cli.skipSeoAudit)      console.log(`  SEO audit  : skipped (--skip-seo-audit)`);
@@ -367,34 +397,36 @@ async function main(): Promise<void> {
     }
   }
 
-  // ── Section loop ─────────────────────────────────────────────────────────────
+  // ── Section composition (parallel, bounded) ──────────────────────────────────
+  // Sections are independent: each reads its own evidence and writes its own
+  // .final.md. Whole-article cohesion is handled afterwards by cross-section-pass,
+  // so composing them concurrently changes wall-clock only, not output.
+
+  // Phase 1 — resume filter (cheap fs checks, kept sequential).
+  const toCompose: string[] = [];
   for (const sectionId of sectionsToRun) {
     const finalPath = path.join(sectionsDir, `${sectionId}.final.md`);
-
-    // Resume check
     if (!cli.force && fs.existsSync(finalPath)) {
       console.log(`  ↩ Skipping ${sectionId} — final.md exists (pass --force to regenerate)`);
       skipped.push(sectionId);
       appendRunLog(logPath, { section: sectionId, step: 'skipped (final exists)', ok: true });
       continue;
     }
+    toCompose.push(sectionId);
+  }
 
-    // Global budget check — stop before the section, not mid-way
-    if (tracker.totalCostUsd >= cli.maxCostUsd) {
-      const msg = `Global budget $${cli.maxCostUsd} reached after ${results.length} section(s). Stopping.`;
-      console.log(`\n  ⚠ ${msg}`);
-      sectionErrors.push({ section: sectionId, error: msg });
-      appendRunLog(logPath, { section: sectionId, step: 'budget cap — skipped', ok: false, detail: msg });
-      break;
-    }
+  // Split the remaining budget across sections so the aggregate still honours the
+  // global cap even though sections no longer run strictly one-at-a-time. Each
+  // section gets its own sub-tracker; per-call budget gates fire inside it.
+  const remainingBudget = Math.max(0, cli.maxCostUsd - tracker.totalCostUsd);
+  const perSectionBudget = toCompose.length > 0 ? remainingBudget / toCompose.length : remainingBudget;
 
-    console.log(`\n${div}`);
-    console.log(`  Section: ${sectionId}`);
-    console.log(div);
-
+  // Phase 2 — compose with at most cli.concurrency sections in flight.
+  const composed = await mapWithConcurrency(toCompose, cli.concurrency, async (sectionId) => {
+    const sectionTracker = new CostTracker(perSectionBudget);
     const sectionLog = (step: string, ok: boolean, detail?: string): void => {
       const icon = ok ? '✓' : '✗';
-      console.log(`  ${icon} ${step}${detail ? ` — ${detail}` : ''}`);
+      console.log(`  ${icon} [${sectionId}] ${step}${detail ? ` — ${detail}` : ''}`);
       appendRunLog(logPath, { section: sectionId, step, ok, detail });
     };
 
@@ -407,23 +439,31 @@ async function main(): Promise<void> {
         minScore:        CRITIC_PASS_SCORE,   // always use default in Phase 4C
         draftOnly:       cli.mode === 'draft',
         ...(cli.writerModel ? { writerModelOverride: cli.writerModel } : {}),
-        tracker,
+        tracker:         sectionTracker,
         onLog:           sectionLog,
       });
-
-      results.push(result);
-
-      const scoreStr = result.finalScore !== null
-        ? `score ${result.finalScore}/100 — ${result.passed ? 'PASS ✓' : 'FAIL ✗'}`
-        : 'draft (no score)';
-      console.log(`\n  ✓ ${sectionId} done — ${scoreStr}  cost $${result.sectionCostUsd.toFixed(4)}`);
-
+      return { sectionId, result, calls: sectionTracker.getCalls(), error: null as string | null };
     } catch (err) {
       const msg = err instanceof Error ? err.message : String(err);
-      console.error(`\n  ✗ ${sectionId} FAILED: ${msg}`);
-      sectionErrors.push({ section: sectionId, error: msg });
-      appendRunLog(logPath, { section: sectionId, step: 'SECTION ERROR', ok: false, detail: msg });
-      // Continue with next section — don't abort the whole run
+      return { sectionId, result: null as WriteSectionResult | null, calls: sectionTracker.getCalls(), error: msg };
+    }
+  });
+
+  // Phase 3 — merge sub-tracker costs into the global tracker (in section order)
+  // and collect results / errors.
+  for (const c of composed) {
+    for (const call of c.calls) tracker.add(call);
+    if (c.result) {
+      results.push(c.result);
+      const scoreStr = c.result.finalScore !== null
+        ? `score ${c.result.finalScore}/100 — ${c.result.passed ? 'PASS ✓' : 'FAIL ✗'}`
+        : 'draft (no score)';
+      console.log(`\n  ✓ ${c.sectionId} done — ${scoreStr}  cost $${c.result.sectionCostUsd.toFixed(4)}`);
+    }
+    if (c.error) {
+      console.error(`\n  ✗ ${c.sectionId} FAILED: ${c.error}`);
+      sectionErrors.push({ section: c.sectionId, error: c.error });
+      appendRunLog(logPath, { section: c.sectionId, step: 'SECTION ERROR', ok: false, detail: c.error });
     }
   }
 

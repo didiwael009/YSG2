@@ -1,0 +1,3 @@
+## Quick answer
+
+lemlist replaced its outcome-focused headline **"Send cold emails that get replies"** with the category-defining **"The AI Outbound Platform for Relevant Outreach at Every Scale"** and shifted navigation from product education to a full-stack outbound toolkit. This positioning assumes visitors already understand outbound sales methodology and are comparing multi-channel platforms rather than learning what cold email tools do. If you still acquire most customers through searches for your original use case, this shift may remove the conversion path that built your business before you've established recognition in the new category.

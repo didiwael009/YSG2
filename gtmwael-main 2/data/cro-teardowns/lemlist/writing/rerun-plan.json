@@ -1,0 +1,50 @@
+{
+  "createdAt": "2026-06-10T22:48:32.268Z",
+  "slug": "lemlist",
+  "source": {
+    "finalJudgePass": true,
+    "seoPass": true,
+    "finalJudgeScore": 92,
+    "seoScore": 84
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "01-intro",
+      "reasons": [
+        "Judge rerun recommendation: 01-intro (opening paragraph only — replace the 'signaling' phrase)"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: 04-messaging-evolution (audience shift section — add conditional qualifier to 'This suggests')",
+        "The opening paragraph's phrase 'signaling a shift from serving individual practitioners to targeting enterprise sales teams' reads as fact. The evidence shows messaging changes consistent with such a ",
+        "In 'lemlist's audience shift' section: 'This suggests lemlist expects larger deals that require sales involvement' — interpretive claim without conditional qualifier. Should use 'may suggest' or 'appe",
+        "Opening paragraph: Change 'signaling a shift from serving individual practitioners to targeting enterprise sales teams' to 'appearing to serve enterprise sales teams' or 'consistent with targeting ent",
+        "Meta description could strengthen click-through by adding urgency or specificity — consider: 'lemlist's 7-year homepage shift: outcome-focused → AI platform. What this reveals about platform positioni"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "reasons": [
+        "Judge rerun recommendation: 06-lessons-for-saas-teams (final warning subsection — convert prediction to conditional)"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "Section 'lemlist's audience shift': Change 'This suggests lemlist expects larger deals' to 'This may suggest lemlist expects larger deals' or 'This pattern is consistent with pursuing larger deals' — ",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Section 05-cta-navigation-evolution (medium priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    }
+  ]
+}

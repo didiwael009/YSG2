@@ -22,10 +22,10 @@ export const hootsuite: CroTeardownPost = {
   companyName: "Hootsuite",
   companyUrl: "https://www.hootsuite.com",
   category: "CRO Teardown",
-  title: "Hootsuite Homepage Teardown: Jan 2023 to Jun 2026",
+  title: "Hootsuite Website Redesign Teardown: How It Changed Between 2023 and 2026",
   h1: "How Hootsuite rewrote its homepage over 3 years",
-  metaTitle: "Hootsuite Homepage Teardown: Jan 2023 to Jun 2026",
-  description: "A CRO teardown of Hootsuite's homepage from Jan 2023 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  metaTitle: "Hootsuite Website Redesign Teardown: 2023–2026",
+  description: "How Hootsuite's website homepage changed between 2023 and 2026 — headline rewrites, CTA strategy, and navigation overhaul. What SaaS teams can learn.",
   excerpt: "Hootsuite's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2023 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
@@ -282,7 +282,8 @@ export const hootsuite: CroTeardownPost = {
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
-    "/saas-marketing-agency",
+    "/cro-teardowns/intercom",
+    "/cro-teardowns/shopify",
   ],
   publishedAt: "2026-06-10T19:53:08.876Z",
 };

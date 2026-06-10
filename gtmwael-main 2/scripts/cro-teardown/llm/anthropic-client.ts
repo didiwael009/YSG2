@@ -61,6 +61,10 @@ export interface LLMResponse {
   content: string;
   inputTokens: number;
   outputTokens: number;
+  /** Tokens served from prompt cache (billed at 0.1× input). 0 when caching is off or a cache miss. */
+  cacheReadTokens: number;
+  /** Tokens written to prompt cache (billed at 1.25× input). Non-zero only on the first call that seeds the cache. */
+  cacheCreationTokens: number;
   model: string;
   stopReason: string;
 }
@@ -70,13 +74,23 @@ export async function callLLM(opts: {
   system: string;
   messages: Array<{ role: 'user' | 'assistant'; content: string }>;
   maxTokens?: number;
+  /**
+   * When true, the (static) system prompt is sent as a cache_control block so
+   * repeated calls that share the same system prompt within ~5 min are billed
+   * at the cache-read rate. Quality is unaffected — the model sees identical text.
+   */
+  cacheSystem?: boolean;
 }): Promise<LLMResponse> {
   const client = getClient();
+
+  const system = opts.cacheSystem
+    ? [{ type: 'text' as const, text: opts.system, cache_control: { type: 'ephemeral' as const } }]
+    : opts.system;
 
   const response = await client.messages.create({
     model: opts.model,
     max_tokens: opts.maxTokens ?? 4096,
-    system: opts.system,
+    system,
     messages: opts.messages,
   });
 
@@ -89,6 +103,8 @@ export async function callLLM(opts: {
     content,
     inputTokens: response.usage.input_tokens,
     outputTokens: response.usage.output_tokens,
+    cacheReadTokens: response.usage.cache_read_input_tokens ?? 0,
+    cacheCreationTokens: response.usage.cache_creation_input_tokens ?? 0,
     model: response.model,
     stopReason: response.stop_reason ?? 'end_turn',
   };

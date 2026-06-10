@@ -13,9 +13,9 @@ const MessagingEvolution = ({
     <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
       Messaging evolution
     </span>
-    <h2 className="mb-2 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
+    <h3 className="mb-2 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
       How the language changed
-    </h2>
+    </h3>
     <p className="mb-7 text-[15px] leading-[1.6] text-[#5b5468]">
       Verbatim text extracted from page snapshots. No paraphrasing.
     </p>

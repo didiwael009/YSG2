@@ -12,6 +12,10 @@ export interface CallCost {
   role: string;
   inputTokens: number;
   outputTokens: number;
+  /** Prompt-cache tokens read (billed at 0.1× input rate). */
+  cacheReadTokens?: number;
+  /** Prompt-cache tokens written/created (billed at 1.25× input rate). */
+  cacheCreationTokens?: number;
   inputCostUsd: number;
   outputCostUsd: number;
   totalCostUsd: number;
@@ -42,15 +46,23 @@ export function computeCallCost(
   role: string,
   inputTokens: number,
   outputTokens: number,
+  cacheReadTokens = 0,
+  cacheCreationTokens = 0,
 ): CallCost {
   const pricing = getPricing(model);
-  const inputCostUsd = (inputTokens / 1_000_000) * pricing.inputPerMTok;
+  // Anthropic prompt-cache pricing: reads at 0.1× the input rate, writes at 1.25×.
+  const cacheReadCost = (cacheReadTokens / 1_000_000) * pricing.inputPerMTok * 0.1;
+  const cacheCreationCost = (cacheCreationTokens / 1_000_000) * pricing.inputPerMTok * 1.25;
+  const inputCostUsd =
+    (inputTokens / 1_000_000) * pricing.inputPerMTok + cacheReadCost + cacheCreationCost;
   const outputCostUsd = (outputTokens / 1_000_000) * pricing.outputPerMTok;
   return {
     model,
     role,
     inputTokens,
     outputTokens,
+    cacheReadTokens,
+    cacheCreationTokens,
     inputCostUsd,
     outputCostUsd,
     totalCostUsd: inputCostUsd + outputCostUsd,
@@ -70,6 +82,11 @@ export class CostTracker {
 
   add(cost: CallCost): void {
     this._calls.push(cost);
+  }
+
+  /** Returns a shallow copy of all recorded calls (used to merge sub-trackers). */
+  getCalls(): CallCost[] {
+    return [...this._calls];
   }
 
   get totalCostUsd(): number {

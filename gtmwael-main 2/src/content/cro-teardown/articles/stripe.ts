@@ -22,10 +22,10 @@ export const stripe: CroTeardownPost = {
   companyName: "Stripe",
   companyUrl: "https://stripe.com",
   category: "CRO Teardown",
-  title: "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
+  title: "Stripe Homepage Teardown: How It Changed Between 2022 and 2026",
   h1: "How Stripe rewrote its homepage over 4 years",
-  metaTitle: "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
-  description: "A CRO teardown of Stripe's homepage from Oct 2022 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  metaTitle: "Stripe Homepage Teardown: 2022 to 2026",
+  description: "How Stripe's homepage messaging changed between 2022 and 2026 — headline rewrites, CTA shifts, and navigation overhaul. What SaaS teams can learn.",
   excerpt: "Stripe's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Oct 2022 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
@@ -256,7 +256,8 @@ export const stripe: CroTeardownPost = {
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
-    "/saas-marketing-agency",
+    "/cro-teardowns/vercel",
+    "/cro-teardowns/linear",
   ],
   publishedAt: "2026-06-10T19:53:33.306Z",
 };

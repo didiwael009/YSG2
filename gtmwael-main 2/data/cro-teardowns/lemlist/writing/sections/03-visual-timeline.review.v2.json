@@ -1,0 +1,41 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "H3 'What it costs' makes a causal claim ('lemlist removed the explanatory scaffolding') without a condition — implies direct conversion harm without qualifying the statement",
+    "The phrase 'category-aware buyers only' in the final test is a causal outcome claim without data",
+    "The word 'category' appears 6 times across 3 paragraphs — creates jargon density without plain-language variance",
+    "Second paragraph in 'Why it matters' (41 words) uses abstract noun stack: 'category membership', 'outbound platforms', 'platform language' — three specialist terms in one breath",
+    "The final test is generic ('count how many words') and could appear in any SaaS teardown; it is not anchored to lemlist-specific evidence like a removed section heading or CTA",
+    "Opening sentence is template-default ('The 2019 headline was X. By 2026, it had become Y') when the evidence supports a more interesting entry — e.g. the product-to-platform shift or the disappearance of time-to-first-campaign messaging"
+  ],
+  "requiredFixes": [
+    "Rewrite 'What it costs' H3 to add a condition: 'If your traffic includes visitors unfamiliar with outbound platforms, this approach filters them out' — remove the unqualified claim that lemlist 'removed scaffolding' as if it universally harms conversion",
+    "Replace 'you are filtering for category-aware buyers only' with a conditional observation: 'you may be filtering for visitors who already recognize the category term'",
+    "Reduce 'category' repetition: use 'product type', 'space', or 'market' as synonyms after the first use",
+    "Break the second paragraph in 'Why it matters' into two shorter units or simplify the abstract noun sequence",
+    "Anchor the final test to lemlist's specific evidence: 'Open lemlist's current homepage. The 2019 version included a section heading that promised setup time — 'Your first campaign in less than 10 minutes'. Check whether any current heading states a time-to-outcome. If none exist, the page now expects you to value platform capabilities over speed'",
+    "Rewrite the opening to reflect the most interesting finding: 'lemlist's homepage no longer explains what the product does. The 2019 headline promised replies. The 2026 version names a category — 'AI Outbound Platform' — and assumes you already know what that means.'"
+  ],
+  "riskFlags": [
+    "'lemlist removed the explanatory scaffolding' — causal claim without condition (unsupported outcome)",
+    "'this approach assumes knowledge they may not yet have' — causal inference about visitor behavior without data",
+    "'you are filtering for category-aware buyers only' — outcome claim presented as fact, not hypothesis"
+  ],
+  "seoNotes": [
+    "Section heading includes 'lemlist homepage positioning' and date range — searchable and specific",
+    "H3 headings ('What changed', 'Why it matters', 'What it costs') are generic action phrases with no searchable terms; consider 'lemlist headline evolution', 'When category names replace product explanations', 'The cost of platform-first messaging'",
+    "Bold quotes correctly applied to verbatim headlines"
+  ],
+  "rewriteInstruction": "Remove all unqualified causal claims and add conditions. Replace 'lemlist removed scaffolding' and 'you are filtering for category-aware buyers only' with conditional phrasing ('if your audience includes X, this change may Y'). Reduce 'category' repetition by using synonyms after the first mention. Break the 41-word paragraph in 'Why it matters' into two shorter units. Anchor the final test to lemlist's specific disappeared heading ('Your first campaign in less than 10 minutes') rather than a generic word-count exercise. Rewrite the opening to lead with the most interesting finding (the shift from outcome-promise to category-declaration) instead of the template 'X changed to Y' structure. Ensure each H3 delivers its takeaway in the first two sentences.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 12,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

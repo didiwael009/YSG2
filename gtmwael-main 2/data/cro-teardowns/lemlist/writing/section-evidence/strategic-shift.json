@@ -1,0 +1,41 @@
+{
+  "central_thesis": "lemlist moved from selling a single-feature cold email tool to owning the AI outbound platform category by replacing its outcome-focused H1 'Send cold emails that get replies' with 'The AI Outbound Platform for Relevant Outreach at Every Scale' and rebuilding navigation from exploratory feature links to a product breadth showcase spanning 650M+ leads, multichannel sequences, and enrichment agents.",
+  "old_positioning_frame": "A tool that solves the cold email reply problem — positioned as a solution to a specific pain point with execution speed emphasis ('Your first campaign in less than 10 minutes')",
+  "new_positioning_frame": "A comprehensive AI-powered outbound platform that orchestrates multi-channel prospecting, data enrichment, and signal-based automation — positioned as infrastructure for enterprise-scale outbound motion",
+  "buyer_shift": "Individual practitioners and small sales teams seeking to improve cold email reply rates → Sales leaders and revenue operations teams building scalable outbound systems across multiple channels and data sources",
+  "funnel_shift": "Mid-funnel product evaluation (free trial, quick setup promise, success stories) → Early awareness for category education + late-funnel enterprise buying ('Get a demo', 'Book a demo' replacing self-serve trial CTAs)",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "Send cold emails that get replies",
+      "new": "The AI Outbound Platform for Relevant Outreach at Every Scale",
+      "meaning": "Signals a shift from outcome-based positioning (get replies) to category ownership positioning (the platform), and from single-channel (cold emails) to omnichannel infrastructure (relevant outreach at scale). The addition of 'AI' suggests repositioning around emerging technology adoption waves."
+    },
+    {
+      "element": "Navigation",
+      "old": "Product · Product tour · Features · Success stories · Pricing · Resources · Facebook community · Academy",
+      "new": "650 M+ Lead Database · Email Finder & Verifier · Phone Number Finder · Multichannel Sequences · LinkedIn Prospecting · In-app Calling · SMS Campaigns · WhatsApp Prospecting",
+      "meaning": "Suggests a complete shift from exploratory navigation (helping visitors understand what the product does) to capability inventory navigation (demonstrating platform breadth to justify enterprise positioning). The removal of community/academy links may indicate a move away from practitioner education toward enterprise sales-led motion."
+    },
+    {
+      "element": "Primary CTAs",
+      "old": "Start your free trial now · Start your 14 day Free Trial · Learn more · Read the success story",
+      "new": "Get a demo · Book a demo · Sign up for free · Start your 30-day free trial · Start a 14-day free trial",
+      "meaning": "Points to a dual-funnel approach: the addition of demo CTAs alongside extended trial periods (30-day vs 14-day) is consistent with serving both enterprise buyers requiring sales-assisted evaluation and mid-market self-serve buyers, whereas the old CTAs served only self-serve exploration."
+    },
+    {
+      "element": "Section headings",
+      "old": "Your first campaign in less than 10 minutes · How B2B companies use lemlist to grow · Join the lemlist family",
+      "new": "Use signal agents to spot high-intent leads & trigger context-based outreach · Let enrichment agents pull lead context from internal & external sources · Keep deliverability high across all your mailboxes & domains",
+      "meaning": "Suggests a move from speed-to-value messaging (10 minutes) and community-building (lemlist family) to technical capability depth messaging (agents, enrichment, deliverability infrastructure). The shift from 'campaign' to 'agents' and 'playbooks' may indicate targeting buyers who think in terms of systems rather than tactical execution."
+    }
+  ],
+  "copy_this_if": "Your product roadmap has genuinely expanded from single-feature point solution to multi-module platform, you have enterprise deals that validate platform pricing, and your brand name is already associated with your original category in buyer research (so you can afford to reposition without losing existing search visibility).",
+  "do_not_copy_this_if": "You are still primarily known for and monetizing a single core feature, or your product integrations are shallow (listed in nav but not deeply built), or you lack the sales infrastructure to convert demo requests from enterprise buyers who expect white-glove onboarding.",
+  "safer_version_for_early_stage_saas": "Keep your outcome-focused H1 but add a subheading that previews platform breadth (e.g., 'Send cold emails that get replies — now with LinkedIn sequences, phone finder, and deliverability management'). Test a secondary demo CTA alongside your primary free trial CTA to gauge enterprise interest without abandoning self-serve conversion, and add one navigation dropdown showing your full feature set while keeping primary nav focused on use cases.",
+  "risk_if_copied": "Visitors who arrive seeking your original core solution (cold email tool) may bounce because the homepage no longer clearly communicates that you solve their immediate problem, while enterprise buyers may request demos only to discover your platform integrations lack the depth your navigation promises, damaging trust and wasting sales capacity.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T22:44:24.771Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.023486999999999997
+}

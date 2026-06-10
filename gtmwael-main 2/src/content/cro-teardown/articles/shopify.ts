@@ -22,10 +22,10 @@ export const shopify: CroTeardownPost = {
   companyName: "Shopify",
   companyUrl: "https://www.shopify.com",
   category: "CRO Teardown",
-  title: "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
+  title: "Shopify Homepage Teardown: How It Changed Between 2021 and 2026",
   h1: "How Shopify rewrote its homepage over 5 years",
-  metaTitle: "Shopify Homepage Teardown: Jul 2021 to Jun 2026",
-  description: "A CRO teardown of Shopify's homepage from Jul 2021 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  metaTitle: "Shopify Homepage Teardown: 2021 to 2026",
+  description: "How Shopify's homepage changed between 2021 and 2026 — headline rewrites, CTA strategy shifts, and 16 navigation changes. What SaaS teams can learn from 5 snapshots.",
   excerpt: "Shopify's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jul 2021 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
@@ -241,7 +241,8 @@ export const shopify: CroTeardownPost = {
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
-    "/saas-marketing-agency",
+    "/cro-teardowns/stripe",
+    "/cro-teardowns/hootsuite",
   ],
   publishedAt: "2026-06-10T19:31:33.716Z",
 };

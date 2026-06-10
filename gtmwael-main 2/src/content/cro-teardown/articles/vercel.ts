@@ -22,10 +22,10 @@ export const vercel: CroTeardownPost = {
   companyName: "Vercel",
   companyUrl: "https://vercel.com",
   category: "CRO Teardown",
-  title: "Vercel Homepage Teardown: Jul 2021 to Jun 2026",
+  title: "Vercel Homepage Teardown: How It Changed Between 2021 and 2026",
   h1: "How Vercel rewrote its homepage over 5 years",
-  metaTitle: "Vercel Homepage Teardown: Jul 2021 to Jun 2026",
-  description: "A CRO teardown of Vercel's homepage from Jul 2021 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  metaTitle: "Vercel Homepage Teardown: 2021 to 2026",
+  description: "How Vercel's homepage evolved from 'Develop.Preview.Ship.' to 'Build on the AI Cloud' — 5 years of headline, CTA, and navigation changes analyzed.",
   excerpt: "Vercel's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jul 2021 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
@@ -254,7 +254,8 @@ export const vercel: CroTeardownPost = {
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
-    "/saas-marketing-agency",
+    "/cro-teardowns/linear",
+    "/cro-teardowns/stripe",
   ],
   publishedAt: "2026-06-09T19:11:20.487Z",
 };

@@ -1,0 +1,237 @@
+{
+  "slug": "apollo",
+  "companyName": "apollo",
+  "companyUrl": "https://www.apollo.io",
+  "category": "CRO Teardown",
+  "title": "apollo Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How apollo rewrote its homepage over 7 years",
+  "metaTitle": "apollo Homepage CRO Teardown — Jan 2019 to Jun 2026",
+  "description": "A CRO teardown of apollo's homepage from Jan 2019 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "apollo's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2019 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-10",
+  "readTime": "8 min read",
+  "featuredImage": "/cro-teardowns/apollo/selected/2019-01.webp",
+  "featuredImageAlt": "apollo homepage — Jan 2019",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2019-01.webp"
+    },
+    {
+      "month": "2019-07",
+      "label": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2019-07.webp"
+    },
+    {
+      "month": "2020-07",
+      "label": "Jul 2020",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2020-07.webp"
+    },
+    {
+      "month": "2022-01",
+      "label": "Jan 2022",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2022-01.webp"
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2024-07.webp"
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2025-01.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/apollo/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "7 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "0 added · 2 removed",
+      "note": "Minor structure adjustments"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "No one everdrowned in revenue",
+      "after": "The AI sales platform for smarter, faster revenue growth",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Apollo accelerates the growth & success of your entire sales org with the first truly reliable, scalable sales revenue & engagement acceleration platform. Learn how you can shorten the ramp-up time for your team, so they can blow past quotas.",
+      "after": "Accelerate B2B sales with Apollo.io—an AI sales platform for prospecting, lead gen, and deal automation. Close more deals, faster, with smart data.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Apollo | Sales Revenue & Engagement Acceleration Platform",
+      "after": "AI Sales Platform | Apollo.io - Outbound, Inbound & Automation"
+    }
+  ],
+  "h2Added": [],
+  "h2Removed": [
+    "Empower your team to reach the right contacts at the right time, with the perfect message intelligently crafted at speed and scale. Apollo’s predictive prospecting, sales engagement, and actionable analytics helps your team reach its full revenue potential.",
+    "Your revenueacceleration platform"
+  ],
+  "ctaAdded": [
+    "Learn more Learn more",
+    "Get a demo",
+    "Sign up for free",
+    "Sign up with Google",
+    "Sign up with Microsoft",
+    "Get started for free",
+    "Contact Us & Sales",
+    "Book a free demo",
+    "Apollo Data",
+    "AI Assistant"
+  ],
+  "ctaRemoved": [
+    "Learn & Improve",
+    "Contact Us",
+    "Request Demo",
+    "Find & Prioritize",
+    "Scoring Engine",
+    "Enrich & Refresh",
+    "Custom Analytics",
+    "Opportunity Insights",
+    "Best-practice Reports",
+    "A/B Testing"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2019-01",
+      "label": "Jan 2019 — original state",
+      "period": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2019-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"No one everdrowned in revenue\" — direct product statement.",
+        "Visible section headings include: \"Empower your team to reach the right contacts at the right time, with the perfect message intelligently crafted at speed and scale. Apollo’s predictive prospecting, sales engagement, and actionable analytics helps your team reach its full revenue potential.\", \"Your revenueacceleration platform\".",
+        "Navigation includes: \"Product\", \"Find & Prioritize\", \"Database\", \"Targeting\" — product category framing.",
+        "Section headings later removed include: \"Empower your team to reach the right contacts at the right time, with the perfect message intelligently crafted at speed and scale. Apollo’s predictive prospecting, sales engagement, and actionable analytics helps your team reach its full revenue potential.\" and \"Your revenueacceleration platform\"."
+      ]
+    },
+    {
+      "id": "analysis-2020-07",
+      "label": "Jul 2020 — mid-transition",
+      "period": "Jul 2020",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2020-07.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 84.8% — one of the larger layout changes in the dataset.",
+        "H1 in this snapshot: \"Ready to try it out?\".",
+        "New section headings appearing: \"Land your dream customers\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/apollo/selected/current-live.webp",
+      "heading": "Today: platform-first positioning",
+      "annotations": [
+        "H1 now reads: \"The AI sales platform for smarter, faster revenue growth\" — formal capability framing, consistent with platform-level positioning.",
+        "CTAs no longer present include: \"Learn & Improve\", \"Contact Us\", \"Request Demo\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"No one everdrowned in revenue\" to \"The AI sales platform for smarter, faster revenue growth\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Product\", \"Find & Prioritize\", \"Database\" to \"Apollo Data\", \"AI Assistant\", \"Apollo MCP\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 7 snapshots spanning roughly 7 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

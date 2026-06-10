@@ -1,0 +1,3 @@
+## Quick answer: lemlist homepage positioning shift
+
+lemlist replaced its outcome-focused headline **"Send cold emails that get replies"** with the category-defining **"The AI Outbound Platform for Relevant Outreach at Every Scale"** and shifted navigation from product education (Product tour, Academy, Facebook community) to a full-stack outbound toolkit (650 M+ Lead Database, Phone Finder, LinkedIn Prospecting). The company added demo CTAs alongside trial options and extended the free trial from 14 to 30 days.

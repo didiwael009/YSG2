@@ -1,0 +1,133 @@
+{
+  "slug": "lemlist",
+  "companyName": "lemlist",
+  "companyUrl": "https://www.lemlist.com",
+  "fromMonth": "2019-07",
+  "toMonth": "current",
+  "fromLabel": "Jul 2019",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-10T22:37:50.626Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2019-07",
+      "label": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2019-07.webp",
+      "timestamp": "20191104134028",
+      "originalUrl": "https://www.lemlist.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2021-01",
+      "label": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2021-01.webp",
+      "timestamp": "20210415030119",
+      "originalUrl": "https://www.lemlist.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2023-01.webp",
+      "timestamp": "20230418165217",
+      "originalUrl": "https://www.lemlist.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2023-07",
+      "label": "Jul 2023",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2023-07.webp",
+      "timestamp": "20231015210558",
+      "originalUrl": "https://www.lemlist.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.lemlist.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 0,
+    "titleChanges": 1,
+    "h2Added": [
+      "From full TAM to your top accounts, run outreach that still feels 1:1",
+      "Find & enrich leads with contacts from 25+ top data providers",
+      "Use signal agents to spot high-intent leads & trigger context-based outreach",
+      "Let enrichment agents pull lead context from internal & external sources",
+      "Automate multichannel outbound across email, LinkedIn, & phone",
+      "Keep deliverability high across all your mailboxes & domains",
+      "Steal the outbound playbooks behind today’s top sales teams",
+      "Frequently Asked Questions",
+      "Turn precision outbound into a pipeline"
+    ],
+    "h2Removed": [
+      "Your first campaignin less than 10 minutes",
+      "How B2B companies uselemlist to grow",
+      "Join the lemlist family"
+    ],
+    "ctaAdded": [
+      "Get a demo",
+      "Sign up for free",
+      "Start your 30-day free trial",
+      "Start a 14-day free trial",
+      "Book a demo",
+      "Explore 500+ integrations",
+      "Get the playbook",
+      "book a personalized demo",
+      "650 M+ Lead Database",
+      "Email Finder & Verifier"
+    ],
+    "ctaRemoved": [
+      "Learn more",
+      "Start your free trial now",
+      "Start now",
+      "Read the success story",
+      "Start your 14 day Free Trial",
+      "Got it!",
+      "Product tour",
+      "Success stories",
+      "Facebook community",
+      "What's new"
+    ],
+    "navAdded": [
+      "650 M+ Lead Database",
+      "Email Finder & Verifier",
+      "Phone Number Finder",
+      "Multichannel Sequences",
+      "LinkedIn Prospecting",
+      "In-app Calling",
+      "SMS CampaignsNew",
+      "WhatsApp Prospecting"
+    ],
+    "navRemoved": [
+      "Product",
+      "Product tour",
+      "Features",
+      "Success stories",
+      "Resources",
+      "Facebook community",
+      "Academy",
+      "Blog"
+    ],
+    "headlines": [
+      {
+        "from": "Send cold emails that get replies",
+        "to": "The AI Outbound Platform for Relevant Outreach at Every Scale",
+        "fromMonth": "2019-07",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [],
+    "visualOnly": false
+  }
+}

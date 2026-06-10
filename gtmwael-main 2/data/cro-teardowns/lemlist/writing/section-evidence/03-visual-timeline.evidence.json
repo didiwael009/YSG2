@@ -1,0 +1,77 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "lemlist",
+  "companyUrl": "https://www.lemlist.com",
+  "articleTitle": "lemlist Homepage Teardown: Jul 2019 to Jun 2026",
+  "h1": "How lemlist rewrote its homepage over 7 years",
+  "fromLabel": "Jul 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 9,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "lemlist homepage",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2019-07",
+      "label": "Jul 2019 — original state",
+      "period": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2019-07.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Send cold emails that get replies\" — direct product statement.",
+        "Visible section headings include: \"Your first campaignin less than 10 minutes\", \"How B2B companies uselemlist to grow\", \"Join the lemlist family\".",
+        "Navigation includes: \"Product\", \"Product tour\", \"Features\", \"Success stories\" — product category framing.",
+        "Section headings later removed include: \"Your first campaignin less than 10 minutes\" and \"How B2B companies uselemlist to grow\"."
+      ]
+    },
+    {
+      "id": "analysis-2021-01",
+      "label": "Jan 2021 — mid-transition",
+      "period": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/2021-01.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: unknown — a moderate visual change.",
+        "H1 in this snapshot: \"Start conversations that get replies\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/lemlist/selected/current-live.webp",
+      "heading": "Today: platform-first positioning",
+      "annotations": [
+        "H1 now reads: \"The AI Outbound Platform for Relevant Outreach at Every Scale\" — formal capability framing, consistent with platform-level positioning.",
+        "New section headings include: \"From full TAM to your top accounts, run outreach that still feels 1:1\", \"Find & enrich leads with contacts from 25+ top data providers\", \"Use signal agents to spot high-intent leads & trigger context-based outreach\".",
+        "CTAs no longer present include: \"Learn more\", \"Start your free trial now\", \"Start now\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Send cold emails that get replies",
+      "after": "The AI Outbound Platform for Relevant Outreach at Every Scale",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Page title",
+      "before": "lemlist • Send cold emails that get replies",
+      "after": "lemlist | The AI Outbound Platform for Relevant Outreach at Every Scale"
+    }
+  ]
+}

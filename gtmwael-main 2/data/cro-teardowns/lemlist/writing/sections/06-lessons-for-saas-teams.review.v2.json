@@ -1,0 +1,37 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Paragraph 1 in H3 block 1 exceeds 60 words (approximately 68 words)",
+    "Paragraph 1 in H3 block 2 exceeds 60 words (approximately 72 words)",
+    "The term 'platform positioning' appears 3 times without variation, creating repetitive rhythm",
+    "H3 subheading 3 could be more scannable — 'single-use-case search traffic' is technical but not explained",
+    "The section heading lacks the company name — should be 'When to copy lemlist's platform positioning'"
+  ],
+  "requiredFixes": [
+    "Break the 68-word paragraph in H3 block 1 into two sentences. First sentence: product expansion evidence. Second sentence: homepage timing principle.",
+    "Break the 72-word paragraph in H3 block 2 into two parts. Move the three conditional tests into a short bulleted list or break after the first two conditionals.",
+    "Add 'lemlist' to the ## section heading: 'When to copy lemlist's homepage platform positioning (and when not to)'"
+  ],
+  "riskFlags": [
+    "The phrase 'you may have earned the right to platform positioning' introduces a causal implication (multi-feature usage → homepage change is justified) without stating the condition explicitly enough. Should read: 'If your analytics show customers activating three or more features together AND you have shipped at least five integrated capabilities, platform positioning may match buyer expectations.'",
+    "The claim 'Platform positioning before platform usage risks killing the conversion path' is a strong outcome prediction. It should be softened to 'Platform positioning before platform usage may reduce trial conversion if your primary acquisition channel is still single-use-case search traffic.'"
+  ],
+  "seoNotes": [
+    "Positive: The ## heading contains 'lemlist', 'homepage', and 'platform positioning' — all searchable terms.",
+    "Positive: H3 subheadings contain 'lemlist', 'platform messaging', 'platform headline' — good keyword distribution.",
+    "Positive: The final H3 delivers a specific, runnable test anchored to lemlist's navigation structure.",
+    "Minor issue: The section could benefit from the phrase 'lemlist homepage' appearing in the first sentence to strengthen keyword proximity."
+  ],
+  "rewriteInstruction": "Break the two longest paragraphs (H3 block 1 and H3 block 2) into shorter units. In block 1, split after the product-first principle so the lemlist example stands as its own sentence. In block 2, convert the three conditional tests into a brief bulleted list or split into two sentences after the first conditional. Soften the outcome claim in H3 block 3 by adding 'may reduce' instead of 'risks killing'. Add 'lemlist' to the section heading. Maintain the specificity and the final test — those work well.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 15,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

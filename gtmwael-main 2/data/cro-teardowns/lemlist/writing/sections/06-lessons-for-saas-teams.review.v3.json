@@ -1,0 +1,35 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "H3 heading 'Copy this if your navigation already lists 8+ tool capabilities' exceeds 60 words (64 words)",
+    "H3 heading 'Skip this if your homepage still shows product education navigation' exceeds 60 words (64 words)",
+    "Minor rhythm issue: sentences in first H3 are similar length",
+    "The phrase 'platform messaging' appears 5 times but is defined only in context, not explicitly"
+  ],
+  "requiredFixes": [
+    "Trim H3 block 2 ('Copy this if...') from 64 words to under 60 words by removing one condition or combining sentences",
+    "Trim H3 block 3 ('Skip this if...') from 64 words to under 60 words by tightening the qualifying conditions"
+  ],
+  "riskFlags": [
+    "The claim 'you may be underserving enterprise buyers' in H3 block 2 is conditional and evidence-grounded, but could be read as causal — acceptable because it uses 'may be' as a qualifier"
+  ],
+  "seoNotes": [
+    "Excellent: ## heading contains 'lemlist', 'homepage', 'platform', and 'messaging' — all searchable terms",
+    "Strong H3 variation: each H3 uses 'lemlist' plus a distinct qualifier (navigation, product expansion, audit)",
+    "Good keyword density: 'lemlist' appears 7 times, 'homepage' 4 times, 'navigation' 6 times",
+    "The final H3 'navigation audit' provides a searchable long-tail query match",
+    "Minor: could strengthen SEO by working 'positioning' into one H3 heading"
+  ],
+  "rewriteInstruction": "Trim H3 blocks 2 and 3 to under 60 words each. In block 2, consider removing the final clause ('you may be underserving enterprise buyers') and ending at 'their July 2019 positioning' — the implication is clear. In block 3, merge the two AND conditions into a single tighter sentence. Verify that every bold quote matches the evidence exactly. Otherwise the section is publication-ready.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 15,
+    "plainLanguage": 18,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "lemlist homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, growth marketer, or product strategist who is repositioning their own tool from a single-feature product to a platform, and wants to understand how lemlist successfully executed a category-shift narrative without losing existing users or confusing the market.",
+  "recommended_h1_format": "How [Company] Repositioned From a Cold Email Tool to an AI Outbound Platform: A Homepage Teardown",
+  "secondary_keywords": [
+    "lemlist homepage evolution 2019-2026",
+    "how lemlist repositioned from cold email to outbound platform",
+    "lemlist category shift CRO strategy",
+    "lemlist homepage analysis AI outbound",
+    "SaaS repositioning case study lemlist"
+  ],
+  "content_angle": "Focus on the NARRATIVE ARCHITECTURE behind the shift, not just the design changes. The searcher wants to understand: (1) how lemlist signaled category expansion without alienating its cold-email-focused original audience, (2) why they moved from outcome-focused messaging ('get replies') to capability-focused messaging ('AI outbound platform'), and (3) how they restructured navigation to showcase breadth (650M leads, multichannel, enrichment) while maintaining a clear hero action. The key insight is that this is a repositioning play, not a feature rollout—and the homepage had to communicate both platform ambition AND simplicity.",
+  "what_the_searcher_wants": "A playbook for how to expand a product's perceived category scope and TAM on the homepage without creating confusion, losing trust with existing users, or over-complicating the value prop. They want to know if this strategy is replicable for their own product expansion.",
+  "what_to_avoid": "Do NOT treat this as a simple design refresh or feature announcement. Do NOT compare it to other cold email tools (Outreach, Salesloft)—the insight is that lemlist moved OUT of that category. Do NOT focus on aesthetic changes (colors, layout, fonts) without connecting them to the strategic repositioning. Do NOT ignore the CTA multiplication (demo + free trial + sign up) as random—explain why a platform play requires more conversion pathways than a single-feature tool. Do NOT miss the removal of 'success stories' and 'how companies use lemlist'—this is intentional, and signals a shift from social proof to capability breadth.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T22:44:32.274Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0033695999999999995
+}

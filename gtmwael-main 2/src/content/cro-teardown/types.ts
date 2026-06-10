@@ -21,6 +21,7 @@ export type AnalysisBlock = {
 };
 
 export type LessonCard = {
+  number?: string;
   title: string;
   body: string;
   tag: string;

@@ -1,0 +1,45 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section contains 265 words, exceeding the 180-word maximum by 47%",
+    "Multiple paragraphs exceed 60 words (¶1: ~75 words, ¶2: ~70 words, ¶3: ~65 words)",
+    "Causal claim 'the demo gate may be filtering out buyers' lacks supporting evidence from the dataset",
+    "H3 heading 'Who this filters out' is assumption-based, not evidenced in the provided data",
+    "Generic phrasing appears: 'People who want to test the tool' could appear in any SaaS teardown",
+    "The section lacks concrete dates for when changes occurred despite 5 snapshots available",
+    "Opening sentence rhythm is flat — three independent clauses of similar length",
+    "Bold quotes missing on CTA text: 'Start a 14-day free trial' appears unbolded in paragraph 1"
+  ],
+  "requiredFixes": [
+    "Cut section to 120–180 words maximum (currently ~265 words)",
+    "Reduce each paragraph to ≤60 words: ¶1 from ~75 to ≤60, ¶2 from ~70 to ≤60, ¶3 from ~65 to ≤60",
+    "Add **bold quotes** around all verbatim CTA text including the unbolded 'Start a 14-day free trial'",
+    "Remove or qualify the causal claim 'the demo gate may be filtering out buyers' — no conversion data supports this",
+    "Replace generic phrasing 'People who want to test the tool on their own' with lemlist-specific observation from evidence",
+    "Add at least one snapshot date anchor (e.g. 'By Jun 2026' or 'Between 2019 and 2026') to ground timing claims",
+    "Rewrite H3 'Who this filters out' to reflect evidence-only observation, not assumption about buyer behavior"
+  ],
+  "riskFlags": [
+    "'the demo gate may be filtering out buyers who convert better through self-serve exploration' — outcome claim with zero conversion data in evidence",
+    "'This path assumes the buyer already knows they want a sales engagement platform' — psychological inference not supported by CTA text alone",
+    "'Visitors who are comparing tools quickly and expect instant access' — persona assumption not grounded in lemlist-specific evidence"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains 'lemlist' and 'CTA' — both searchable terms",
+    "POSITIVE: H3 'Audit your own page' may capture 'how to audit CTA' search intent",
+    "NEGATIVE: Section lacks secondary keywords like 'demo vs trial', 'self-serve conversion', or 'sales-assisted onboarding' that could expand reach",
+    "NEGATIVE: No mention of 'free trial' as standalone phrase despite it being a primary keyword opportunity"
+  ],
+  "rewriteInstruction": "Cut the section to 150 words by removing all unsupported assumptions about buyer psychology. Paragraph 1: Compress the CTA inventory to two sentences maximum, add one snapshot date, ensure all CTA text is **bold-quoted**. Paragraph 2: Replace 'Who this filters out' with an evidence-only observation — describe what the CTA path requires (demo booking vs instant access) without inferring who it repels. Paragraph 3: Keep the audit framework but make the test more specific to lemlist's pattern — e.g. 'Open your homepage. Count CTAs above the fold. How many require zero commitment (trial, freemium, tool access) vs. a meeting? Compare that ratio to lemlist's 2019 vs 2026 versions.' Remove the conversion speculation ('if trial-start rate dropped') unless you can tie it to evidence in the dataset.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 9,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

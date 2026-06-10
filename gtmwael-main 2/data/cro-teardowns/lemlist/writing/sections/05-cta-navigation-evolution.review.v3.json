@@ -1,0 +1,44 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Outcome claim in H3-2: 'It does not serve people still comparing tools side-by-side' — not traceable to evidence, presents as fact",
+    "Causal claim without condition in H3-2: 'The new structure assumes visitors are willing to wait' — no 'if' statement",
+    "H3-2 para 3 is 48 words but makes unsupported behavioral claim about what the structure 'assumes' and 'does not serve'",
+    "H3-3 final test is generic audit instruction ('Count your homepage's ratio') rather than specific 5-min test anchored to lemlist evidence",
+    "Section contains zero verbatim quotes in **bold quotes** — all website text appears in plain quotes",
+    "Word count approximately 155 (within range but thin for analytical section with 10 added + 10 removed CTAs)",
+    "H3-1 lists CTAs but does not explain WHAT changed or WHY it matters to the reader",
+    "H3-2 paragraph 2 could appear in any SaaS teardown — 'assumes visitors are willing to wait' is generic commentary"
+  ],
+  "requiredFixes": [
+    "Change all plain quotes to **bold quotes** for verbatim website text: **'Start your free trial now'**, **'Get a demo'**, etc.",
+    "Remove or condition the claim 'It does not serve people still comparing tools side-by-side' — evidence shows CTA changes, not buyer behavior or segment exclusion",
+    "Add condition to 'The new structure assumes visitors are willing to wait' → 'If lemlist's target persona has already committed to the category, the new structure...'",
+    "Replace H3-3 generic audit ('Count your homepage's ratio') with specific test: 'Open your homepage. Count instant-access CTAs above fold. If zero, open lemlist's 2019 snapshot and compare trial-start copy to your current demo CTA. Run both as A/B test for 2 weeks.'",
+    "Rewrite H3-1 opening to explain the shift's implication, not just list CTAs: 'The page moved commitment earlier. **'Start your free trial now'** required email only; **'book a personalized demo'** requires calendar access and live conversation.'",
+    "Expand H3-2 with lemlist-specific anchor: what about lemlist's product (multichannel automation, deliverability monitoring) makes demo-first logical vs. trial-first?"
+  ],
+  "riskFlags": [
+    "HARD CAP TRIGGERED: Unsupported factual claim 'It does not serve people still comparing tools side-by-side' — evidence shows CTA text changes only, not persona exclusion. Total capped at 70.",
+    "Causal claim without condition: 'The new structure assumes visitors are willing to wait' — no data on visitor willingness or conversion impact",
+    "Outcome claim: 'Earlier versions granted instant entry' vs 'now requires calendar step' — accurate quote comparison, but 'does not serve [segment]' is editorial invention"
+  ],
+  "seoNotes": [
+    "Section heading contains 'lemlist' + 'CTA' + 'conversion' — strong search term density",
+    "H3-1 heading lacks search terms — 'CTA inventory' is not a user query",
+    "H3-2 heading 'demo-first conversion path' contains search term but could add 'lemlist' for reinforcement",
+    "H3-3 'Audit your own page' is generic — no company name or topic anchor"
+  ],
+  "rewriteInstruction": "The hard cap fired because you made an unsupported claim about who the page 'does not serve.' Stick to what the evidence shows: CTA text changed from instant-access to calendar-required. Do not infer persona exclusion. Fix all plain quotes to **bold quotes** per house style. Rewrite H3-1 to open with the implication ('The page moved commitment earlier') before listing CTAs. Add a lemlist-specific anchor to H3-2 — what about their product (multichannel sequences, deliverability tools) makes demo-first logical? Remove the 'does not serve' claim or condition it ('If a visitor is still comparing tools and wants instant access, the current page...'). Replace the generic audit in H3-3 with a specific 5-min test: 'Open your homepage. Count instant-access CTAs above fold. If zero, open lemlist's 2019 snapshot, compare **'Start your free trial now'** to your current demo CTA copy, then A/B test both for two weeks.' The section is thin — you have 10 added + 10 removed CTAs but only surface four. Pick two more pairs and explain what each shift signals (commitment level, qualification intent, sales-touch expectation).",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 12,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "lemlist replaced \"Send cold emails that get replies\" with \"The AI Outbound Platform for Relevant Outreach at Every Scale\"",
+    "category": "Positioning",
+    "body": "The original headline **\"Send cold emails that get replies\"** described a single feature. The new version positions lemlist as a platform category. This shift suggests the company is targeting buyers who evaluate multi-feature systems, not single-point-solution tools. It filters out users who want simplicity and recruits teams ready to adopt a suite. The language signals enterprise maturity."
+  },
+  {
+    "number": "02",
+    "title": "Nine new section headings — all capability statements — replaced three onboarding promises",
+    "category": "Messaging",
+    "body": "The removed headings included **\"Your first campaign in less than 10 minutes\"** and **\"How B2B companies use lemlist to grow\"** — both aimed at first-time users. The new sections lead with **\"Use signal agents to spot high-intent leads\"** and **\"Find & enrich leads with contacts from 25+ top data providers\"**. This likely signals a shift from product-led acquisition to sales-led buyers who already understand outbound workflows."
+  },
+  {
+    "number": "03",
+    "title": "lemlist removed \"Start your free trial now\" and added \"Book a demo\" and \"Get a demo\"",
+    "category": "Funnel",
+    "body": "The original CTA **\"Start your free trial now\"** invited immediate self-serve activation. The new CTAs **\"Book a demo\"** and **\"Get a demo\"** suggest a longer sales cycle. This change may indicate lemlist is filtering for higher-value buyers who need implementation support. It also reduces unqualified sign-ups from users who churn after the trial without converting to paid plans."
+  },
+  {
+    "number": "04",
+    "title": "Eight navigation items removed, eight added — that is a category redefinition, not a UI refresh",
+    "category": "Navigation",
+    "body": "Removed items like **\"Product tour\"**, **\"Success stories\"**, and **\"Facebook community\"** were all self-serve discovery tools. The new structure (not detailed but inferred from evidence) likely prioritises platform capabilities over educational content. When a company swaps out half its top-level navigation, it points to a fundamental repositioning — the buyer persona and their expected entry point have both shifted."
+  }
+]

@@ -1,0 +1,147 @@
+{
+  "slug": "apollo",
+  "companyName": "apollo",
+  "companyUrl": "https://www.apollo.io",
+  "fromMonth": "2019-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-10T23:12:11.136Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2019-01.webp",
+      "timestamp": "20190404140131",
+      "originalUrl": "https://www.apollo.io",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2019-07",
+      "label": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2019-07.webp",
+      "timestamp": "20191020193204",
+      "originalUrl": "https://www.apollo.io",
+      "similarityToPrev": 0.9272,
+      "comparedTo": "2019-01"
+    },
+    {
+      "month": "2020-07",
+      "label": "Jul 2020",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2020-07.webp",
+      "timestamp": "20201016142140",
+      "originalUrl": "https://www.apollo.io",
+      "similarityToPrev": 0.8475,
+      "comparedTo": "2019-07"
+    },
+    {
+      "month": "2022-01",
+      "label": "Jan 2022",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2022-01.webp",
+      "timestamp": "20220415125519",
+      "originalUrl": "https://www.apollo.io",
+      "similarityToPrev": 0.8738,
+      "comparedTo": "2020-07"
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2024-07.webp",
+      "timestamp": "20241016160541",
+      "originalUrl": "https://www.apollo.io",
+      "similarityToPrev": 0.9466,
+      "comparedTo": "2022-01"
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/apollo/selected/2025-01.webp",
+      "timestamp": "20250414083646",
+      "originalUrl": "https://www.apollo.io",
+      "similarityToPrev": 0.9034,
+      "comparedTo": "2024-07"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/apollo/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.apollo.io",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [],
+    "h2Removed": [
+      "Empower your team to reach the right contacts at the right time, with the perfect message intelligently crafted at speed and scale. Apollo’s predictive prospecting, sales engagement, and actionable analytics helps your team reach its full revenue potential.",
+      "Your revenueacceleration platform"
+    ],
+    "ctaAdded": [
+      "Learn more Learn more",
+      "Get a demo",
+      "Sign up for free",
+      "Sign up with Google",
+      "Sign up with Microsoft",
+      "Get started for free",
+      "Contact Us & Sales",
+      "Book a free demo",
+      "Apollo Data",
+      "AI Assistant"
+    ],
+    "ctaRemoved": [
+      "Learn & Improve",
+      "Contact Us",
+      "Request Demo",
+      "Find & Prioritize",
+      "Scoring Engine",
+      "Enrich & Refresh",
+      "Custom Analytics",
+      "Opportunity Insights",
+      "Best-practice Reports",
+      "A/B Testing"
+    ],
+    "navAdded": [
+      "Apollo Data",
+      "AI Assistant",
+      "Apollo MCP",
+      "Chrome Extension",
+      "Workflow Automation",
+      "Sales LeadersSales Leaders",
+      "Sales DevelopmentSales Development",
+      "MarketersMarketers"
+    ],
+    "navRemoved": [
+      "Product",
+      "Find & Prioritize",
+      "Database",
+      "Targeting",
+      "Scoring Engine",
+      "Enrich & Refresh",
+      "Engage",
+      "Sequences"
+    ],
+    "headlines": [
+      {
+        "from": "No one everdrowned in revenue",
+        "to": "The AI sales platform for smarter, faster revenue growth",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Apollo accelerates the growth & success of your entire sales org with the first truly reliable, scalable sales revenue & engagement acceleration platform. Learn how you can shorten the ramp-up time for your team, so they can blow past quotas.",
+        "to": "Accelerate B2B sales with Apollo.io—an AI sales platform for prospecting, lead gen, and deal automation. Close more deals, faster, with smart data.",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

@@ -22,10 +22,10 @@ export const crisp: CroTeardownPost = {
   companyName: "Crisp",
   companyUrl: "https://crisp.chat/en/",
   category: "CRO Teardown",
-  title: "Crisp Homepage Teardown: Jul 2022 to Jun 2026",
+  title: "Crisp Messaging Teardown: How the Homepage Evolved Between 2022 and 2026",
   h1: "How Crisp rewrote its homepage over 4 years",
-  metaTitle: "Crisp Homepage Teardown: Jul 2022 to Jun 2026",
-  description: "A CRO teardown of Crisp's homepage from Jul 2022 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  metaTitle: "Crisp Messaging: Homepage CRO Teardown 2022–2026",
+  description: "How Crisp's homepage messaging evolved between 2022 and 2026 — from human touch to AI positioning, every headline and CTA change analyzed.",
   excerpt: "Crisp's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jul 2022 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
@@ -237,7 +237,8 @@ export const crisp: CroTeardownPost = {
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
-    "/saas-marketing-agency",
+    "/cro-teardowns/intercom",
+    "/cro-teardowns/clay",
   ],
   publishedAt: "2026-06-10T19:31:34.211Z",
 };

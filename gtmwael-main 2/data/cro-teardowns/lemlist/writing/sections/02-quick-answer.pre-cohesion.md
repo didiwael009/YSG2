@@ -1,0 +1,3 @@
+## Quick answer
+
+lemlist replaced **"Send cold emails that get replies"** with **"The AI Outbound Platform for Relevant Outreach at Every Scale"** and swapped educational nav items (Product tour, Academy) for tool-specific links like **"650 M+ Lead Database"** and **"Multichannel Sequences"**. This positioning targets buyers who compare outbound platforms rather than search for cold email help. If your site still ranks for bottom-funnel searches like "cold email tool", test whether your current visitors recognize platform-category language before removing outcome-focused messaging.

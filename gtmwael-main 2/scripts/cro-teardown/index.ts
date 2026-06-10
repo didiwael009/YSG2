@@ -12,13 +12,14 @@
  *     --from 2023-01 \
  *     --to 2026-06 \
  *     [--step-months 3]
+ *     [--concurrency 3]
  */
 
 import * as path from 'node:path';
 import * as process from 'node:process';
 import { slugify, ensureDirs, saveJson } from './utils/files.js';
 import { initLogger, log, getLogPath } from './utils/logger.js';
-import { createBrowser } from './utils/browser.js';
+import { createBrowser, createContext } from './utils/browser.js';
 import { discoverSnapshots } from './wayback.js';
 import {
   captureArchivePage,
@@ -35,6 +36,7 @@ interface CliArgs {
   from: string;
   to: string;
   stepMonths: number;
+  concurrency: number;
 }
 
 interface SnapshotRecord {
@@ -70,7 +72,7 @@ function parseArgs(argv: string[]): CliArgs {
     if (!args[key]) {
       console.error(`Missing required argument: --${key}`);
       console.error(
-        'Usage: npm run cro-teardown -- --name <name> --url <url> --from <YYYY-MM> --to <YYYY-MM> [--step-months <n>]',
+        'Usage: npm run cro-teardown -- --name <name> --url <url> --from <YYYY-MM> --to <YYYY-MM> [--step-months <n>] [--concurrency <n>]',
       );
       process.exit(1);
     }
@@ -87,13 +89,39 @@ function parseArgs(argv: string[]): CliArgs {
     process.exit(1);
   }
 
-  return { name: args.name, url: args.url, from: args.from, to: args.to, stepMonths };
+  const concurrency = args['concurrency'] ? parseInt(args['concurrency'], 10) : 3;
+  if (isNaN(concurrency) || concurrency < 1 || concurrency > 6) {
+    console.error('--concurrency must be a number between 1 and 6');
+    process.exit(1);
+  }
+
+  return { name: args.name, url: args.url, from: args.from, to: args.to, stepMonths, concurrency };
+}
+
+// ─── Concurrency helper ───────────────────────────────────────────────────────
+
+async function mapWithConcurrency<T, R>(
+  items: T[],
+  limit: number,
+  worker: (item: T, index: number) => Promise<R>,
+): Promise<R[]> {
+  const results = new Array<R>(items.length);
+  let next = 0;
+  const runners = Array.from({ length: Math.min(limit, items.length) }, async () => {
+    while (true) {
+      const i = next++;
+      if (i >= items.length) return;
+      results[i] = await worker(items[i], i);
+    }
+  });
+  await Promise.all(runners);
+  return results;
 }
 
 // ─── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const { name, url, from, to, stepMonths } = parseArgs(process.argv.slice(2));
+  const { name, url, from, to, stepMonths, concurrency } = parseArgs(process.argv.slice(2));
   const slug = slugify(name);
 
   const projectRoot = process.cwd();
@@ -104,7 +132,7 @@ async function main() {
   const logPath = initLogger(dataDir, slug);
 
   log(`Starting CRO teardown for ${name} (${slug})`);
-  log(`URL: ${url} | from: ${from} | to: ${to} | step: ${stepMonths} months`);
+  log(`URL: ${url} | from: ${from} | to: ${to} | step: ${stepMonths} months | concurrency: ${concurrency}`);
 
   const config = { name, slug, url, from, to, stepMonths, createdAt: new Date().toISOString(), phase: 1 };
   saveJson(path.join(dataDir, slug, 'config.json'), config);
@@ -117,113 +145,197 @@ async function main() {
   const found = discovered.filter((s) => s.status === 'found').length;
   const notFound = discovered.filter((s) => s.status === 'not_found').length;
   log(`Discovery complete: ${found} found, ${notFound} not_found out of ${totalSlots} slots`);
-  console.log(`Found ${found} / ${totalSlots} snapshots. Starting screenshots...\n`);
+  console.log(`Found ${found} / ${totalSlots} snapshots. Starting screenshots (concurrency: ${concurrency})...\n`);
 
   // ── Launch browser ──────────────────────────────────────────────────────
   const browser = await createBrowser();
-  await initSharedContext(browser);
   const archiveDir = path.join(publicDir, slug, 'archive-monthly');
   const pageTextDir = path.join(dataDir, slug, 'page-text');
 
-  // screenshotPath → relative to public/ (web-served)
-  // textPath       → relative to project root (data/, not web-served)
   const toScreenshotPath = (abs: string) =>
     '/' + path.relative(path.join(projectRoot, 'public'), abs).replace(/\\/g, '/');
   const toDataPath = (abs: string) =>
     '/' + path.relative(projectRoot, abs).replace(/\\/g, '/');
 
-  const records: SnapshotRecord[] = [];
+  // "not_found" slots produce records immediately — no capture needed
+  const notFoundRecords: SnapshotRecord[] = discovered
+    .filter((s) => s.status === 'not_found')
+    .map((s) => ({
+      month: s.month,
+      slotStart: s.slotStart,
+      slotEnd: s.slotEnd,
+      stepMonths: s.stepMonths,
+      timestamp: null,
+      originalUrl: url,
+      waybackUrl: null,
+      screenshotPath: null,
+      textPathJson: null,
+      textPathTxt: null,
+      status: 'not_found' as const,
+      qualityScore: null,
+      usedInArticle: false,
+      error: 'No Wayback snapshot found for this slot',
+    }));
+
+  // Only slots that actually have a wayback URL need capture
+  const toCapture = discovered.filter((s) => s.status === 'found');
+
   let screenshotsSaved = 0;
   let capturesFailed = 0;
+  let capturedRecords: SnapshotRecord[] = [];
 
   try {
-    // ── Archive screenshots ───────────────────────────────────────────────
-    for (let i = 0; i < discovered.length; i++) {
-      const snapshot = discovered[i];
-      const label = `[${String(i + 1).padStart(2)}/${totalSlots}] ${snapshot.month}`;
+    if (concurrency === 1) {
+      // ── Sequential mode (original behaviour) ─────────────────────────────
+      await initSharedContext(browser);
 
-      if (snapshot.status === 'not_found') {
-        records.push({
-          month: snapshot.month,
-          slotStart: snapshot.slotStart,
-          slotEnd: snapshot.slotEnd,
-          stepMonths: snapshot.stepMonths,
-          timestamp: null,
-          originalUrl: url,
-          waybackUrl: null,
-          screenshotPath: null,
-          textPathJson: null,
-          textPathTxt: null,
-          status: 'not_found',
-          qualityScore: null,
-          usedInArticle: false,
-          error: 'No Wayback snapshot found for this slot',
-        });
-        process.stdout.write(`  ${label} — not found\n`);
-        continue;
+      for (let i = 0; i < toCapture.length; i++) {
+        const snapshot = toCapture[i];
+        const label = `[${String(i + 1).padStart(2)}/${toCapture.length}]`;
+        process.stdout.write(`  ${label} ${snapshot.month} — capturing...`);
+
+        const result = await captureArchivePage(
+          browser,
+          snapshot.waybackUrl!,
+          snapshot.month,
+          archiveDir,
+          pageTextDir,
+        );
+
+        if (result.success) {
+          screenshotsSaved++;
+          capturedRecords.push({
+            month: snapshot.month,
+            slotStart: snapshot.slotStart,
+            slotEnd: snapshot.slotEnd,
+            stepMonths: snapshot.stepMonths,
+            timestamp: snapshot.timestamp,
+            originalUrl: url,
+            waybackUrl: snapshot.waybackUrl,
+            screenshotPath: toScreenshotPath(result.screenshotPath!),
+            textPathJson: result.textPathJson ? toDataPath(result.textPathJson) : null,
+            textPathTxt: result.textPathTxt ? toDataPath(result.textPathTxt) : null,
+            status: 'captured',
+            qualityScore: null,
+            usedInArticle: false,
+            error: null,
+          });
+          process.stdout.write(' done\n');
+        } else {
+          capturesFailed++;
+          capturedRecords.push({
+            month: snapshot.month,
+            slotStart: snapshot.slotStart,
+            slotEnd: snapshot.slotEnd,
+            stepMonths: snapshot.stepMonths,
+            timestamp: snapshot.timestamp,
+            originalUrl: url,
+            waybackUrl: snapshot.waybackUrl,
+            screenshotPath: null,
+            textPathJson: null,
+            textPathTxt: null,
+            status: 'failed',
+            qualityScore: null,
+            usedInArticle: false,
+            error: result.error,
+          });
+          process.stdout.write(` FAILED: ${result.error?.slice(0, 60)}\n`);
+        }
+
+        await new Promise((r) => setTimeout(r, 1_500));
       }
 
-      process.stdout.write(`  ${label} — capturing...`);
+      await closeSharedContext();
+    } else {
+      // ── Parallel mode ─────────────────────────────────────────────────────
+      // Each worker creates its own BrowserContext so recycling on error is safe.
+      // No shared context is initialised — captureArchivePage falls back to creating
+      // its own context per call when sharedCtx is null.
 
-      const result = await captureArchivePage(
-        browser,
-        snapshot.waybackUrl!,
-        snapshot.month,
-        archiveDir,
-        pageTextDir,
+      const parallelResults = await mapWithConcurrency(
+        toCapture,
+        concurrency,
+        async (snapshot, workerIdx) => {
+          // Each parallel worker uses a fresh isolated context (no global sharedCtx)
+          const ctx = await createContext(browser);
+          try {
+            const { capturePageWithContext } = await import('./screenshots.js');
+            const result = await capturePageWithContext(
+              ctx,
+              snapshot.waybackUrl!,
+              snapshot.month,
+              archiveDir,
+              pageTextDir,
+              true,
+            );
+
+            const status = result.success ? '✓' : '✗';
+            const detail = result.success ? 'done' : `FAILED: ${result.error?.slice(0, 50)}`;
+            console.log(`  ${status} ${snapshot.month} — ${detail}`);
+
+            return { snapshot, result };
+          } finally {
+            await ctx.close().catch(() => {});
+          }
+        },
       );
 
-      if (result.success) {
-        screenshotsSaved++;
-        records.push({
-          month: snapshot.month,
-          slotStart: snapshot.slotStart,
-          slotEnd: snapshot.slotEnd,
-          stepMonths: snapshot.stepMonths,
-          timestamp: snapshot.timestamp,
-          originalUrl: url,
-          waybackUrl: snapshot.waybackUrl,
-          screenshotPath: toScreenshotPath(result.screenshotPath!),
-          textPathJson: result.textPathJson ? toDataPath(result.textPathJson) : null,
-          textPathTxt: result.textPathTxt ? toDataPath(result.textPathTxt) : null,
-          status: 'captured',
-          qualityScore: null,
-          usedInArticle: false,
-          error: null,
-        });
-        process.stdout.write(' done\n');
-      } else {
-        capturesFailed++;
-        records.push({
-          month: snapshot.month,
-          slotStart: snapshot.slotStart,
-          slotEnd: snapshot.slotEnd,
-          stepMonths: snapshot.stepMonths,
-          timestamp: snapshot.timestamp,
-          originalUrl: url,
-          waybackUrl: snapshot.waybackUrl,
-          screenshotPath: null,
-          textPathJson: null,
-          textPathTxt: null,
-          status: 'failed',
-          qualityScore: null,
-          usedInArticle: false,
-          error: result.error,
-        });
-        process.stdout.write(` FAILED: ${result.error?.slice(0, 60)}\n`);
+      for (const { snapshot, result } of parallelResults) {
+        if (result.success) {
+          screenshotsSaved++;
+          capturedRecords.push({
+            month: snapshot.month,
+            slotStart: snapshot.slotStart,
+            slotEnd: snapshot.slotEnd,
+            stepMonths: snapshot.stepMonths,
+            timestamp: snapshot.timestamp,
+            originalUrl: url,
+            waybackUrl: snapshot.waybackUrl,
+            screenshotPath: toScreenshotPath(result.screenshotPath!),
+            textPathJson: result.textPathJson ? toDataPath(result.textPathJson) : null,
+            textPathTxt: result.textPathTxt ? toDataPath(result.textPathTxt) : null,
+            status: 'captured',
+            qualityScore: null,
+            usedInArticle: false,
+            error: null,
+          });
+        } else {
+          capturesFailed++;
+          capturedRecords.push({
+            month: snapshot.month,
+            slotStart: snapshot.slotStart,
+            slotEnd: snapshot.slotEnd,
+            stepMonths: snapshot.stepMonths,
+            timestamp: snapshot.timestamp,
+            originalUrl: url,
+            waybackUrl: snapshot.waybackUrl,
+            screenshotPath: null,
+            textPathJson: null,
+            textPathTxt: null,
+            status: 'failed',
+            qualityScore: null,
+            usedInArticle: false,
+            error: result.error,
+          });
+        }
       }
-
-      // Pause between captures to stay polite with Wayback
-      await new Promise((r) => setTimeout(r, 1_500));
     }
 
-    // ── Current live screenshot ───────────────────────────────────────────
+    // ── Current live screenshot (always sequential — just one) ────────────
     console.log('\n  Capturing current live homepage...');
-    const liveResult = await captureCurrentPage(browser, url, archiveDir, pageTextDir);
+    // For live capture, use a fresh isolated context
+    const liveCtx = await createContext(browser);
+    let liveResult;
+    try {
+      const { captureCurrentPageWithContext } = await import('./screenshots.js');
+      liveResult = await captureCurrentPageWithContext(liveCtx, url, archiveDir, pageTextDir);
+    } finally {
+      await liveCtx.close().catch(() => {});
+    }
 
     if (liveResult.success) {
       screenshotsSaved++;
-      records.push({
+      capturedRecords.push({
         month: 'current',
         slotStart: 'current',
         slotEnd: 'current',
@@ -242,7 +354,7 @@ async function main() {
       console.log('  Current live — done');
     } else {
       capturesFailed++;
-      records.push({
+      capturedRecords.push({
         month: 'current',
         slotStart: 'current',
         slotEnd: 'current',
@@ -261,10 +373,24 @@ async function main() {
       console.log(`  Current live — FAILED: ${liveResult.error?.slice(0, 60)}`);
     }
   } finally {
-    await closeSharedContext();
     await browser.close();
     log('Browser closed');
   }
+
+  // Merge records in original slot order: not_found slots interleaved with captured ones
+  const recordsByMonth = new Map(capturedRecords.map((r) => [r.month, r]));
+  const records: SnapshotRecord[] = [];
+  for (const s of discovered) {
+    if (s.status === 'not_found') {
+      records.push(notFoundRecords.find((r) => r.month === s.month)!);
+    } else {
+      const r = recordsByMonth.get(s.month);
+      if (r) records.push(r);
+    }
+  }
+  // Append current-live at end
+  const liveRecord = recordsByMonth.get('current');
+  if (liveRecord) records.push(liveRecord);
 
   // ── Save archive-snapshots.json ─────────────────────────────────────────
   const snapshotsPath = path.join(dataDir, slug, 'archive-snapshots.json');
@@ -279,6 +405,7 @@ CRO teardown Phase 1 complete
 Company:            ${name}
 URL:                ${url}
 Step:               every ${stepMonths} months
+Concurrency:        ${concurrency}
 Slots requested:    ${totalSlots}
 Snapshots found:    ${found}
 Screenshots saved:  ${screenshotsSaved}

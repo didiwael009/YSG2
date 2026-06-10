@@ -1,0 +1,42 @@
+[
+  {
+    "step": "Build evidence pack",
+    "ok": true,
+    "detail": "7 snapshots, diff computed",
+    "ts": "2026-06-10T23:12:11.149Z"
+  },
+  {
+    "step": "Build article blueprint",
+    "ok": true,
+    "detail": "3 analysis blocks, 3 lessons",
+    "ts": "2026-06-10T23:12:11.150Z"
+  },
+  {
+    "step": "Validate CroTeardownPost shape",
+    "ok": true,
+    "detail": "all required fields present",
+    "ts": "2026-06-10T23:12:11.150Z"
+  },
+  {
+    "step": "Save evidence-pack.json",
+    "ok": true,
+    "ts": "2026-06-10T23:12:11.150Z"
+  },
+  {
+    "step": "Save article-blueprint.json",
+    "ok": true,
+    "ts": "2026-06-10T23:12:11.150Z"
+  },
+  {
+    "step": "Save section-evidence/",
+    "ok": true,
+    "detail": "6 files (incl. normalized-page-text.json)",
+    "ts": "2026-06-10T23:12:11.151Z"
+  },
+  {
+    "step": "Save generated-article-data.json",
+    "ok": true,
+    "detail": "full CroTeardownPost object",
+    "ts": "2026-06-10T23:12:11.152Z"
+  }
+]

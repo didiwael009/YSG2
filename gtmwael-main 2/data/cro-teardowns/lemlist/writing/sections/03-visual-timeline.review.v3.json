@@ -1,0 +1,39 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "The phrase 'category leadership' (third H3 block) is used without plain-language definition — appears as strategist jargon",
+    "Second H3 heading 'Why it matters' is not searchable — no company name, topic term, or keyword present",
+    "Third H3 heading 'What it costs' is not searchable — no company name, topic term, or keyword present",
+    "The statement 'This is category leadership: when the homepage no longer introduces the space' presents causation without condition or supporting evidence",
+    "Generic paragraph in third H3 block: 'If your traffic includes visitors unfamiliar with outbound platforms...' could appear in any SaaS teardown discussing category positioning",
+    "The founder test in the final H3 is specific and runnable, but the practical takeaway is not delivered in the first two sentences — it arrives only in the test instruction at the end"
+  ],
+  "requiredFixes": [
+    "Add plain-language definition immediately after 'category leadership' in the third H3 block (e.g. 'This is category leadership — when a brand assumes visitors already know the product type, and the homepage skips introductions')",
+    "Revise second H3 heading to include searchable terms: replace 'Why it matters' with 'Why lemlist's new homepage messaging filters early-stage visitors'",
+    "Revise third H3 heading to include searchable terms: replace 'What it costs' with 'What lemlist's platform positioning costs if traffic is unfamiliar'",
+    "Rewrite the 'If your traffic includes...' paragraph to anchor specifically to lemlist's evidence (e.g. removed section headings, disappeared time-to-outcome messaging, specific nav changes)",
+    "Move the practical takeaway to the opening of the third H3 block: state the test or implication in the first two sentences, then support with evidence"
+  ],
+  "riskFlags": [
+    "The statement 'This is category leadership: when the homepage no longer introduces the space, because the brand or paid ads already do that work before the visitor lands' presents causation without supporting evidence — no data confirms lemlist's brand or paid ads carry this context",
+    "The claim 'this approach may filter them out before they understand what the product does' is conditional ('may'), but still implies conversion outcome without data"
+  ],
+  "seoNotes": [
+    "Section heading contains 'lemlist homepage positioning' and 'headline' — strong searchable terms present",
+    "Two of three H3 headings lack searchable terms ('Why it matters', 'What it costs') — these will not help Google understand section topics",
+    "The draft uses 'outbound platform' and 'outbound platforms' multiple times — good keyword repetition for semantic relevance"
+  ],
+  "rewriteInstruction": "Anchor the third H3 block to lemlist's specific evidence: lead with the disappeared section heading ('Your first campaign in less than 10 minutes') and removed time-to-outcome messaging as the practical cost, then explain the implication. Replace generic traffic scenarios with lemlist-specific changes (removed nav items, added platform-level section headings). Define 'category leadership' in plain language immediately after first use. Revise H3 headings to include searchable terms (company name or topic keywords like 'homepage', 'positioning', 'messaging'). Move the founder test's takeaway to the opening of the third H3 block — state the implication first, then support with evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 11,
+    "plainLanguage": 13,
+    "scannability": 12,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

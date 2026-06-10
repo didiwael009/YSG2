@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "No one everdrowned in revenue",
+    "after": "The AI sales platform for smarter, faster revenue growth",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Apollo accelerates the growth & success of your entire sales org with the first truly reliable, scalable sales revenue & engagement acceleration platform. Learn how you can shorten the ramp-up time for your team, so they can blow past quotas.",
+    "after": "Accelerate B2B sales with Apollo.io—an AI sales platform for prospecting, lead gen, and deal automation. Close more deals, faster, with smart data.",
+    "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+  },
+  {
+    "element": "Page title",
+    "before": "Apollo | Sales Revenue & Engagement Acceleration Platform",
+    "after": "AI Sales Platform | Apollo.io - Outbound, Inbound & Automation"
+  }
+]

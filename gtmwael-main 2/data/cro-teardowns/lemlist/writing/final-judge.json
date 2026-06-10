@@ -1,0 +1,40 @@
+{
+  "overallScore": 92,
+  "pass": true,
+  "evidenceAccuracy": 25,
+  "plainLanguage": 18,
+  "scannability": 14,
+  "searchableHeadings": 10,
+  "specificity": 15,
+  "rhythmAndOpening": 5,
+  "founderTakeaway": 5,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [],
+  "unsupportedClaims": [],
+  "riskFlags": [
+    "The opening paragraph's phrase 'signaling a shift from serving individual practitioners to targeting enterprise sales teams' reads as fact. The evidence shows messaging changes consistent with such a shift, but the article should treat this as interpretation, not proven causation.",
+    "In 'lemlist's audience shift' section: 'This suggests lemlist expects larger deals that require sales involvement' — interpretive claim without conditional qualifier. Should use 'may suggest' or 'appears to indicate'.",
+    "In 'When to copy lemlist's homepage platform positioning' section: 'you'll lose new trials without replacing them with qualified demos' — predictive outcome claim with no supporting data from the evidence."
+  ],
+  "requiredFixes": [
+    "Opening paragraph: Change 'signaling a shift from serving individual practitioners to targeting enterprise sales teams' to 'appearing to serve enterprise sales teams' or 'consistent with targeting enterprise sales teams' — the evidence shows messaging changes, not proven buyer composition changes.",
+    "Section 'lemlist's audience shift': Change 'This suggests lemlist expects larger deals' to 'This may suggest lemlist expects larger deals' or 'This pattern is consistent with pursuing larger deals' — add conditional qualifier.",
+    "Section 'Don't copy lemlist's platform headline': Change 'you'll lose new trials without replacing them with qualified demos' to 'you risk losing new trials if qualified demos do not replace them' — convert prediction to conditional risk statement."
+  ],
+  "optionalImprovements": [
+    "Section 'lemlist CTA inventory' — the paragraph starting 'The dominant path now requires...' is 58 words but could be split after the first sentence for better scannability.",
+    "Consider adding one more H3 in the 'Quick answer' section to create parallel structure with other analytical sections (currently has only H2).",
+    "The rhythm in 'What changed' / 'Why it matters' / 'What it costs' pattern is excellent but appears only once — consider applying this structure to one more analytical section for consistency."
+  ],
+  "rerunRecommendations": [
+    "01-intro (opening paragraph only — replace the 'signaling' phrase)",
+    "04-messaging-evolution (audience shift section — add conditional qualifier to 'This suggests')",
+    "06-lessons-for-saas-teams (final warning subsection — convert prediction to conditional)"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.02834700000000001,
+  "generatedAt": "2026-06-10T22:48:13.801Z"
+}

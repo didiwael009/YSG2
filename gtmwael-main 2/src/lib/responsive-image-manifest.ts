@@ -1129,45 +1129,45 @@ export const responsiveImageManifest = {
   },
   "2023-01": {
     "width": 1440,
-    "height": 5749,
-    "originalBytes": 432108,
+    "height": 12539,
+    "originalBytes": 530512,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2023-01-320.webp",
-        "bytes": 33048
+        "bytes": 33014
       },
       {
         "width": 640,
         "src": "/responsive/2023-01-640.webp",
-        "bytes": 90008
+        "bytes": 90102
       },
       {
         "width": 1024,
         "src": "/responsive/2023-01-1024.webp",
-        "bytes": 140336
+        "bytes": 142022
       }
     ]
   },
   "2023-07": {
-    "width": 1440,
-    "height": 7685,
-    "originalBytes": 495718,
+    "width": 1452,
+    "height": 16000,
+    "originalBytes": 726528,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2023-07-320.webp",
-        "bytes": 21470
+        "bytes": 39726
       },
       {
         "width": 640,
         "src": "/responsive/2023-07-640.webp",
-        "bytes": 77590
+        "bytes": 117068
       },
       {
         "width": 1024,
         "src": "/responsive/2023-07-1024.webp",
-        "bytes": 143026
+        "bytes": 222918
       }
     ]
   },
@@ -1283,23 +1283,23 @@ export const responsiveImageManifest = {
   },
   "2022-07": {
     "width": 1440,
-    "height": 7027,
-    "originalBytes": 238062,
+    "height": 9572,
+    "originalBytes": 484132,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2022-07-320.webp",
-        "bytes": 16736
+        "bytes": 35220
       },
       {
         "width": 640,
         "src": "/responsive/2022-07-640.webp",
-        "bytes": 51480
+        "bytes": 106776
       },
       {
         "width": 1024,
         "src": "/responsive/2022-07-1024.webp",
-        "bytes": 99912
+        "bytes": 176974
       }
     ]
   },
@@ -1413,6 +1413,72 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "2019-01": {
+    "width": 1440,
+    "height": 5712,
+    "originalBytes": 286384,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2019-01-320.webp",
+        "bytes": 17332
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2019-01-640.webp",
+        "bytes": 52044
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2019-01-1024.webp",
+        "bytes": 98362
+      }
+    ]
+  },
+  "2019-04": {
+    "width": 1440,
+    "height": 5781,
+    "originalBytes": 246486,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2019-04-320.webp",
+        "bytes": 16588
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2019-04-640.webp",
+        "bytes": 48602
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2019-04-1024.webp",
+        "bytes": 92764
+      }
+    ]
+  },
+  "2019-07": {
+    "width": 1440,
+    "height": 5781,
+    "originalBytes": 244944,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2019-07-320.webp",
+        "bytes": 16644
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2019-07-640.webp",
+        "bytes": 48960
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2019-07-1024.webp",
+        "bytes": 93106
+      }
+    ]
+  },
   "2020-01": {
     "width": 1440,
     "height": 9510,
@@ -1437,23 +1503,23 @@ export const responsiveImageManifest = {
   },
   "2021-01": {
     "width": 1440,
-    "height": 11792,
-    "originalBytes": 450350,
+    "height": 8863,
+    "originalBytes": 465344,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2021-01-320.webp",
-        "bytes": 32152
+        "bytes": 35526
       },
       {
         "width": 640,
         "src": "/responsive/2021-01-640.webp",
-        "bytes": 97502
+        "bytes": 103430
       },
       {
         "width": 1024,
         "src": "/responsive/2021-01-1024.webp",
-        "bytes": 161228
+        "bytes": 168576
       }
     ]
   },

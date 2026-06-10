@@ -32,9 +32,9 @@ const CtaEvolutionTable = ({
       <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
         CTA / button evolution
       </span>
-      <h2 className="mb-6 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
+      <h3 className="mb-6 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
         What appeared and what disappeared
-      </h2>
+      </h3>
 
       <div className="overflow-hidden rounded-[20px] border border-[#11111f]/10">
         <div className="grid md:grid-cols-2">
@@ -66,9 +66,9 @@ const CtaEvolutionTable = ({
       <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
         Section heading changes
       </span>
-      <h2 className="mb-6 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
+      <h3 className="mb-6 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
         How the content architecture shifted
-      </h2>
+      </h3>
 
       <div className="overflow-hidden rounded-[20px] border border-[#11111f]/10">
         <div className="grid md:grid-cols-2">

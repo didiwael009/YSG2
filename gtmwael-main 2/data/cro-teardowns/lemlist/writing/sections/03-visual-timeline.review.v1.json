@@ -1,0 +1,48 @@
+{
+  "score": 62,
+  "pass": false,
+  "issues": [
+    "HARD CAP TRIGGERED: unsupported conversion outcome claim → total capped at 60",
+    "The phrase 'removing the problem statement may reduce conversions from that segment' makes a conversion outcome claim without supporting data",
+    "CAUSAL CLAIM: 'That shift narrows the page's effective audience' — no evidence provided that audience narrowed",
+    "CAUSAL CLAIM: 'Visitors unfamiliar with the term may not recognize this page solves their problem' — no visitor data supports this",
+    "FORBIDDEN TERM OVERUSE: 'category positioning' appears twice (H3 'Why it matters' block, then implied repeatedly)",
+    "GENERIC PARAGRAPH: The entire 'What it costs' section could appear in any SaaS teardown about headline changes",
+    "MISSING COMPANY NAME: The ## heading lacks 'lemlist' — it has 'lemlist homepage positioning' but should be more prominent",
+    "PARAGRAPH LENGTH VIOLATION: 'Why it matters' paragraph is approximately 65 words",
+    "FOUNDER TAKEAWAY ISSUE: The final test is generic ('search Google for your own product category') rather than specific to lemlist's evidence",
+    "BOLD QUOTE VIOLATIONS: Multiple verbatim quotes lack bold formatting — 'outbound platform' appears in plain quotes throughout"
+  ],
+  "requiredFixes": [
+    "Remove or condition the claim 'removing the problem statement may reduce conversions from that segment' — no conversion data supports this",
+    "Replace 'That shift narrows the page's effective audience' with conditional language: 'That shift MAY narrow the audience IF visitors are unfamiliar with platform terminology'",
+    "Remove 'Visitors unfamiliar with the term may not recognize this page solves their problem' OR rewrite as: 'IF a visitor is unfamiliar with outbound platforms, the headline no longer explains what the product does'",
+    "Remove second use of 'category positioning' in 'Why it matters' — first appearance is fine with definition, second is jargon overuse",
+    "Rewrite 'What it costs' to anchor specifically to lemlist's evidence: reference the original problem-statement headline ('Send cold emails that get replies') and the removed section heading ('Your first campaign in less than 10 minutes')",
+    "Reduce 'Why it matters' paragraph to under 60 words — split into two paragraphs or trim",
+    "Make final test specific to lemlist: 'Open lemlist's homepage. Count how many words in the H1 explain WHAT the product does vs. what category it belongs to. If the ratio favors category over explanation, you are filtering for aware buyers only.'",
+    "Bold all verbatim website quotes: **'outbound platform'** when quoting the headline"
+  ],
+  "riskFlags": [
+    "UNSUPPORTED OUTCOME: 'removing the problem statement may reduce conversions from that segment' — no conversion data, A/B test results, or traffic analysis provided",
+    "CAUSAL WITHOUT CONDITION: 'That shift narrows the page's effective audience' — states causation as fact, not conditional possibility",
+    "CAUSAL WITHOUT CONDITION: 'Visitors unfamiliar with the term may not recognize this page solves their problem' — no visitor research or usability data supports this"
+  ],
+  "seoNotes": [
+    "POSITIVE: The ## heading includes 'lemlist homepage positioning' and a date range — searchable",
+    "NEGATIVE: The heading could be stronger with 'lemlist' more prominent at the start: 'lemlist Homepage Positioning: Headline Changes from 2019 to 2026'",
+    "POSITIVE: The section uses 'headline', 'positioning', 'homepage' — all searchable terms",
+    "NEUTRAL: No internal linking opportunities utilized (could link to other lemlist sections or external strategy references)"
+  ],
+  "rewriteInstruction": "Rewrite the section to remove all unsupported conversion claims and causal statements without attached conditions. Replace 'may reduce conversions' with a conditional: 'IF your traffic comes from non-branded search, AND IF visitors do not yet know what an outbound platform is, the new headline no longer explains the category — they must translate platform language into their problem first.' Anchor the 'What it costs' paragraph to lemlist's specific removed elements: reference the original problem-statement headline and the deleted section heading 'Your first campaign in less than 10 minutes' to show what explanatory scaffolding disappeared. Replace the final test with a lemlist-specific audit: 'Open lemlist's current homepage. Count how many words in the H1 explain what the product does (zero) vs. what category it belongs to (all ten). If the ratio favors category, you are filtering for category-aware buyers only.' Bold all verbatim quotes from the website. Split or trim the 'Why it matters' paragraph to stay under 60 words. Remove the second use of 'category positioning' — define it once, then use plain language ('assumes visitors already know the category').",
+  "dimensionScores": {
+    "evidenceAccuracy": 5,
+    "specificity": 8,
+    "plainLanguage": 12,
+    "scannability": 8,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

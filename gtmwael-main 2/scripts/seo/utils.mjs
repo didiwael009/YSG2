@@ -141,6 +141,22 @@ export const readCroTeardownPosts = async () => {
 };
 
 /**
+ * Parses the Quick Answer section from an article body to produce a FAQPage entry.
+ * Looks for the first "## Quick answer" heading and takes its following paragraph as the answer.
+ */
+const parseFaqFromArticleBody = (articleBody, companyName, fromLabel, toLabel) => {
+  if (!articleBody) return null;
+  const qaMatch = articleBody.match(/^## .*quick answer.*$/mi);
+  if (!qaMatch) return null;
+  const afterQa = articleBody.slice(articleBody.indexOf(qaMatch[0]) + qaMatch[0].length);
+  const paragraphs = afterQa.split(/\n\n+/).map((p) => p.trim()).filter((p) => p && !p.startsWith("#"));
+  if (paragraphs.length === 0) return null;
+  const answer = paragraphs[0].replace(/\*\*/g, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").slice(0, 500);
+  const question = `What changed on ${companyName}'s homepage between ${fromLabel} and ${toLabel}?`;
+  return [{ question, answer }];
+};
+
+/**
  * Converts CRO teardown posts to SeoRoute objects for the build pipeline.
  * Article pages use /cro-teardowns/:slug/ (trailing slash canonical).
  */
@@ -167,6 +183,7 @@ export const createCroTeardownSeoRoutes = (posts) =>
     schemaDatePublished: post.datePublished,
     schemaDateModified: post.publishedAt ?? post.datePublished,
     schemaIncludeGlobal: true,
+    faq: parseFaqFromArticleBody(post.articleBody, post.companyName, post.fromLabel, post.toLabel),
   }));
 
 export const suppressKnownSsrNoise = () => {
