@@ -1,0 +1,46 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "The ## section heading ('What SaaS teams can learn from Stripe's homepage positioning shift') is searchable and contains company name + topic term — passes.",
+    "H3 SUBHEADINGS: Present are 'The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy'. All four required H3 blocks are present.",
+    "PARAGRAPH LENGTH VIOLATIONS: 'The pattern' paragraph is approximately 68 words (over 60). 'Who should copy this' paragraph is approximately 72 words (over 60). 'Who should NOT copy this' paragraph is approximately 66 words (over 60).",
+    "BOLD QUOTES: All verbatim quotes are correctly formatted in **'bold quotes'** throughout.",
+    "WORD COUNT: Approximately 285 words — exceeds the 260-word cap by 25 words.",
+    "PLAIN LANGUAGE VIOLATIONS: 'category assumption' appears once (acceptable). 'category explanation' appears twice ('moving from category explanation' and 'removing the category explanation') — second use is a required fix. 'aspirational language' appears once without plain-language definition — required fix. 'category framing' appears once (acceptable but borderline).",
+    "FOUNDER TAKEAWAY: The final H3 ('The test before you copy') does deliver a specific, runnable test in the first sentence. However, it asks the founder to audit two different sites and calculate percentages — this takes more than 5 minutes.",
+    "CAUSAL CLAIMS WITHOUT CONDITIONS: 'removing the category explanation may cost qualified pipeline' — this is correctly conditioned with 'may' and 'If your homepage traffic does not arrive with that same prior knowledge', so it passes.",
+    "GENERIC PARAGRAPHS: The opening sentence of 'The pattern' ('Stripe's homepage evolution shows a company moving from category explanation to category assumption') could theoretically appear in other teardowns, but the rest of the paragraph is anchored to specific Stripe evidence.",
+    "The section DOES achieve the stated goal of providing four H3 blocks for SEO and decision support. Each block addresses a different founder question.",
+    "RHYTHM: Sentence length varies adequately. The opening reflects the evidence (the shift from explicit to assumed category knowledge) rather than a template default."
+  ],
+  "requiredFixes": [
+    "Reduce 'The pattern' paragraph from ~68 words to under 60 words. Cut the explanatory clause after the first quoted headline.",
+    "Reduce 'Who should copy this' paragraph from ~72 words to under 60 words. Break into two paragraphs or trim the nav example list.",
+    "Reduce 'Who should NOT copy this' paragraph from ~66 words to under 60 words. Trim the conditional clause or split the final sentence.",
+    "Reduce total word count from ~285 to under 260 words (cut 25+ words across all paragraphs).",
+    "Remove the SECOND use of 'category explanation' in the 'Who should NOT copy this' paragraph. Rewrite to 'removing the explicit product framing' or similar plain language.",
+    "Define 'aspirational language' inline when first used, or replace with plain language like 'big-picture language' or 'outcome-focused language without explaining the product category'.",
+    "Simplify the final test in 'The test before you copy' to take under 5 minutes. Currently it requires auditing two sites and calculating branded search percentages. Simplify to: 'Open your homepage and count how many nav items or headlines assume the visitor already knows what you do. If more than half do, check your Google Analytics: is branded search under 40% of traffic? If yes, test adding one category-defining phrase to your headline.'"
+  ],
+  "riskFlags": [
+    "The phrase 'aspirational language without category framing will read as vague rather than authoritative' makes a reader-perception claim that is not directly evidenced by the Stripe snapshots. While reasonable, it is an interpretive leap."
+  ],
+  "seoNotes": [
+    "Section heading contains 'Stripe', 'homepage', and 'positioning' — strong searchable terms.",
+    "All four H3 subheadings are founder-focused and use natural language queries ('Who should copy this', 'Who should NOT copy this') — good for featured snippet potential.",
+    "The section delivers decision support with clear conditions, which aligns with searcher intent for 'should I copy Stripe's homepage' type queries.",
+    "Word count exceeds target by ~25 words, which dilutes scannability and may hurt dwell time metrics."
+  ],
+  "rewriteInstruction": "Cut 25+ words across all paragraphs to hit the 260-word cap. Break the three middle paragraphs into shorter blocks under 60 words each — consider splitting 'Who should copy this' into two paragraphs at the test sentence. Remove the second use of 'category explanation' in paragraph three and replace with plain language like 'explicit product framing'. Define or replace 'aspirational language' with a plain-language equivalent like 'big-picture outcome language'. Simplify the final test so it takes under 5 minutes: instead of asking founders to audit two sites and calculate search percentages, have them count assumptive elements on their own homepage, check one GA metric, and run one headline test. Keep all four H3 blocks and all bold quotes intact.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 14,
+    "plainLanguage": 14,
+    "scannability": 6,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

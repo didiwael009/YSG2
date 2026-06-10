@@ -1,0 +1,42 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Section heading lacks company name — 'Hootsuite homepage' appears but heading is not optimally searchable",
+    "H3 heading 'Demo-first path changes visitor qualification' contains zero searchable terms (no company name, no 'CTA', no 'conversion', no topic anchor)",
+    "Para 2 in H3-1 is generic — could appear in any SaaS teardown about trial-to-demo shifts",
+    "H3-2 opening contains an outcome claim without data: 'The page no longer optimizes for someone ready to test the product alone — it optimizes for someone ready to talk to sales first.' This is interpretive causation, not traceable to evidence.",
+    "H3-2 body paragraph (56 words) uses abstract noun stack: 'visitor arriving', 'search', 'option', 'product', 'sales' — but the core issue is the unsupported optimization claim",
+    "Word count approximately 145 words — within range but light for an analytical section with 3 required H3 blocks",
+    "No bold quotes on CTA additions: 'Try it now', 'Start your free trial', 'Request a demo' should appear in bold to match evidence",
+    "The final test is specific and runnable, but the H3-2 block buries its takeaway — it does not appear in the first two sentences"
+  ],
+  "requiredFixes": [
+    "Add **bold quotes** around every verbatim CTA from evidence: **'Try it now'**, **'Start your free trial'**, **'Request a demo'**, **'Learn more'**, etc.",
+    "Rewrite H3-2 heading to include a searchable term: 'Demo request now appears before trial CTA' or 'Request a demo CTA moves to primary position'",
+    "Remove or condition the outcome claim in H3-2: 'The page no longer optimizes for...' — replace with observable fact: 'A visitor arriving from a social media search now encounters **Request a demo** before any self-serve trial link.'",
+    "Move the practical takeaway in H3-2 to the first sentence: 'If your homepage prioritizes demo over trial, map the click path for each — visitors who want to try alone may drop off before they find the self-serve option.' Then follow with the search scenario as supporting evidence.",
+    "Rewrite para 2 in H3-1 to anchor to Hootsuite specifics — reference the evidence list of removed CTAs or the snapshot count showing when the shift occurred"
+  ],
+  "riskFlags": [
+    "H3-2: 'The page no longer optimizes for someone ready to test the product alone — it optimizes for someone ready to talk to sales first.' This is an outcome/causation claim with no supporting conversion data or user research in the evidence.",
+    "H3-2: 'A visitor arriving from a search now sees X before Y' — this is a conditional observation, but the follow-up claim about optimization intent is unsupported."
+  ],
+  "seoNotes": [
+    "Section heading 'Hootsuite homepage CTA shift: from trial-first to demo-first conversion path' is strong — contains company name + 'CTA' + 'conversion'",
+    "H3-1 'Self-serve trial replaced with demo request' is searchable and clear",
+    "H3-2 'Demo-first path changes visitor qualification' is clever-only — no searchable anchor terms. Would not rank for 'CTA', 'demo CTA', 'trial CTA', 'conversion path'.",
+    "H3-3 'Audit your own page' is a standard closer but lacks company name — acceptable for final block"
+  ],
+  "rewriteInstruction": "This section fires a hard cap because of an unsupported outcome claim in H3-2. Start by removing the optimization intent statement ('The page no longer optimizes for…') and replace it with the observable fact: where the demo CTA now appears relative to trial CTAs. Move the practical takeaway to the first sentence of H3-2: explain the friction a trial-seeking visitor now faces. Then add bold quotes around every verbatim CTA from the evidence. Rewrite para 2 in H3-1 to reference the specific removed CTAs (e.g. **'Start Your Free 30-day Trial'**, **'Compare Plans'**) and note when the shift occurred (snapshot count or date range from evidence). Finally, rewrite the H3-2 heading to include a searchable term like 'demo CTA' or 'trial path'. The section should read as an audit of observable changes, not an interpretation of Hootsuite's intent.",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 12,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,39 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "H3 heading 'The pattern' contains no searchable terms — not specific enough for SEO",
+    "H3 heading 'Who should copy this' contains no searchable terms or company name",
+    "H3 heading 'Who should NOT copy this' contains no searchable terms or company name",
+    "Paragraph 2 ('This works when...') is 63 words — exceeds 60-word limit",
+    "Paragraph 3 ('Do not copy...') is 71 words — exceeds 60-word limit",
+    "Final test in H3 block 4 is actionable but not anchored to a specific finding from Hootsuite evidence — could be more specific about the 'branded search' threshold or reference Hootsuite's actual traffic pattern if available"
+  ],
+  "requiredFixes": [
+    "Rewrite H3 'The pattern' to include 'Hootsuite' and a searchable term like 'positioning' or 'messaging' (e.g. 'Hootsuite's positioning shift: from outcome language to category authority')",
+    "Rewrite H3 'Who should copy this' to include 'Hootsuite' or a searchable term (e.g. 'When Hootsuite's category-authority approach works for you')",
+    "Rewrite H3 'Who should NOT copy this' to include 'Hootsuite' or a searchable term (e.g. 'When Hootsuite's approach risks qualified pipeline')",
+    "Break paragraph 2 ('This works when...') into two sentences or trim to under 60 words",
+    "Break paragraph 3 ('Do not copy...') into two sentences or trim to under 60 words"
+  ],
+  "riskFlags": [
+    "Paragraph 3 contains a causation claim ('This risks qualified pipeline') without data or a visible condition marker — should be reframed as 'This may risk qualified pipeline if...' to avoid unsupported outcome language"
+  ],
+  "seoNotes": [
+    "Section heading includes 'Hootsuite homepage' and 'positioning' — strong searchability",
+    "All four H3 subheadings present, but three lack searchable terms — missed SEO opportunity for long-tail queries like 'when to use category authority positioning' or 'Hootsuite messaging strategy'",
+    "The section delivers clear decision support ('Who should copy' / 'Who should NOT') which aligns well with founder search intent",
+    "Bold quotes applied correctly to all verbatim homepage text"
+  ],
+  "rewriteInstruction": "This section is close to ready. Make H3 headings more searchable by adding 'Hootsuite' or a topic term ('positioning', 'messaging', 'traffic') to each one — right now three of four are generic decision-support labels that won't rank. Break the two longest paragraphs (H3 blocks 2 and 3) into two sentences each to stay under 60 words. Soften the causation claim in paragraph 3 by adding a visible conditional ('if your acquisition depends on cold traffic'). Finally, anchor the final test more tightly to Hootsuite's evidence — reference a specific finding from the lesson cards (e.g. the shift from action-based to category-based navigation) to make the test feel less generic.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

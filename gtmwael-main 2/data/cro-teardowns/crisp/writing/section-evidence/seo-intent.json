@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Crisp homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, product leader, or growth marketer at a B2B support/messaging platform who is evaluating whether to pivot toward AI-first positioning. They want to understand how Crisp successfully repositioned from 'human touch' to 'AI agent' without alienating existing customers, and whether this strategy would work for their own product.",
+  "recommended_h1_format": "How [Company] Repositioned From Human-First to AI-First: A Homepage Teardown",
+  "secondary_keywords": [
+    "Crisp CRO teardown AI pivot",
+    "Crisp customer support platform positioning shift",
+    "How Crisp rewrote its homepage for AI agents",
+    "Crisp messaging platform homepage evolution",
+    "AI-first repositioning case study SaaS"
+  ],
+  "content_angle": "Focus on the strategic *why* behind the repositioning — why did Crisp move from emotional 'human touch' messaging to AI capability-driven copy? Show the tension: how did they make AI the hero without making human support seem obsolete? The searcher is deciding whether their own product should follow a similar path, so emphasize the messaging architecture (what stayed, what shifted, what was added) and the business logic driving each change.",
+  "what_the_searcher_wants": "A blueprint for repositioning a support/messaging platform toward AI without cannibalizing product trust or losing the SMB audience that bought into the 'human' narrative. They want to understand the copy, UX, and positioning choices that signaled 'this is now an AI platform' while keeping support teams in the frame.",
+  "what_to_avoid": "Do not frame this as a simple 'before and after' design refresh. Avoid generic CRO language ('improved CTR,' 'cleaner UI'). Do NOT miss the deliberate strategic choice to *add* AI messaging without *removing* human support — that's the insight. Avoid treating the H1 change as cosmetic; it's a repositioning anchor. Do not assume the audience knows what Crisp is; briefly position it as a customer communication hub so the pivot makes sense.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T19:07:55.386Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0031127999999999998
+}

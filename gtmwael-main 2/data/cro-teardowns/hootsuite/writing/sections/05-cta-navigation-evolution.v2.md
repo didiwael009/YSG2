@@ -1,7 +1,13 @@
-Hootsuite's old homepage offered "Start Your Free 30-day Trial" and "Compare Plans" — both low-friction CTAs that assume the visitor already understands the product category and is ready to self-serve. Between Jan 2023 and Jun 2026, the company removed those two labels and added "Request a demo" alongside "Start your free trial."
+## Hootsuite homepage CTA shift: from self-serve trial to demo requests
 
-This dual-CTA structure can be read as targeting two buyer segments: one path for self-serve users who want immediate access, one for enterprise buyers who expect a sales conversation before sign-up. From visible evidence, both CTAs appear at similar prominence on the new page, which may create a self-selection burden for first-time visitors who must choose between two conversion paths without explicit guidance about which matches their decision authority.
+### What changed
 
-Navigation labels shifted from action verbs to category nouns. "Start free trial" and "Compare plans" were removed from top-level nav; "Explore integrations" and "Contact us" were added. The old nav served self-serve users who wanted to compare pricing and start a trial immediately. The new nav appears designed for buying committees who need to assess platform breadth — integrations, case studies, contact options — before encountering a signup CTA, which is consistent with an enterprise sales motion but adds navigation steps for users who arrived ready to convert.
+Hootsuite replaced its self-serve trial CTAs with demo and contact options. The old homepage included **"Start Your Free 30-day Trial"** and **"Compare plans"** as primary actions. The new page leads with **"Request a demo"** and **"Contact us"**. Trial CTAs still appear, but demo requests now compete for the same prominence.
 
-One SaaS founder takeaway tied to Hootsuite's evidence: when you add "Request a demo" to a page that already has "Start your free trial," neither CTA in the provided data includes buyer-segment microcopy. Adding a single line under each button — for example, "For small teams" under the trial CTA and "For enterprises" under the demo CTA — would reduce the self-selection burden and funnel visitors toward the path that matches their budget authority and expected sales cycle.
+### Who this filters out
+
+Self-serve visitors now hit a demo gate before evaluating the product. Someone comparing scheduling tools on their own time sees **"Request a demo"** before they see a way to test the tool themselves. This may filter out visitors who prefer to evaluate software independently before talking to anyone.
+
+### Audit your own page
+
+Open your homepage in private browsing. Count clicks to start a trial without entering a work email or booking a call. If that number is above two, segment your last 90 days of trial starts by traffic source — did demo-gated traffic convert at the same rate as self-serve paths?

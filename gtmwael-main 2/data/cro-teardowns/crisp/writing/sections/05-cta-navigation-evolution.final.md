@@ -1,13 +1,13 @@
-## Crisp's CTA shift: from generic trial to AI-specific entry points
+## Crisp's CTA shift: from four generic buttons to ten feature-specific CTAs
 
-### From generic trial CTAs to AI-specific entry points
+### What changed
 
-The homepage replaced **"Get Started"** and **"Try Crisp for free"** with **"Get your AI Agent"** and **"Start Free Trial"**. Five new CTAs now route to feature pages before signup: **"Learn more on the Crisp AI Chatbot"**, **"See all messaging channels"**, **"Learn more on Crisp Knowledge Base"**, plus separate CTAs for workflows and the inbox. The old **"Request a demo"** became **"Book a demo"**.
+The homepage went from four CTAs to ten. Crisp removed **"Get Started"**, **"Try Crisp for free"**, and **"Request a demo"** — all category-level labels that worked without product knowledge. The new CTAs name specific layers: **"Get your AI Agent"**, **"See all messaging channels"**, **"Download Crisp for macOS"**.
 
-### The friction cost of feature-first CTAs
+### Who this filters out
 
-If a visitor arrives ready to start a trial — from a referral, a review site, or word-of-mouth — the new path requires stopping at a feature page first. The **"Get your AI Agent"** CTA links to an AI explainer, not account creation. The **"See all messaging channels"** button opens a product tour. This adds steps between intent and signup for visitors who already know they want Crisp.
+The new structure assumes familiarity. A visitor comparing messaging platforms — not yet decided on AI agents versus live chat — now encounters **"Get your AI Agent"** and **"Learn more on Crisp Knowledge Base"** with no orientation layer. If your traffic arrives from generic searches like "customer support software," ten feature-specific CTAs with no hierarchy may force a product-layer choice before the visitor understands the category.
 
-### Test whether education CTAs help or hurt signup rate
+### Audit your own page
 
-Open your homepage and list every CTA that routes to a feature page instead of signup. Crisp added five. If you did the same, compare your trial start rate before and after. Check whether visitors who click those CTAs ever reach signup — or whether they read and leave.
+Open Crisp's 2026 homepage. List every CTA above the fold: **"Get your AI Agent"**, **"Start Free Trial"**, **"Book a demo"**. Count how many require prior knowledge of what "AI Agent" unlocks versus "messaging channels." Time: 90 seconds.

@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Intercom homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, product manager, or growth marketer who manages a multi-product platform and is considering whether to narrow positioning to a single category. They want to understand Intercom's strategic reasoning and the execution risks of radical repositioning—specifically, whether eliminating broader use-case language actually drives conversion or alienates existing customers.",
+  "recommended_h1_format": "How [Company] Narrowed Its Positioning: A Homepage Teardown of the AI Agent Era Pivot",
+  "secondary_keywords": [
+    "Intercom CRO teardown AI agent positioning",
+    "Intercom homepage evolution 2023 2026",
+    "Intercom repositioning case study",
+    "How Intercom changed its homepage messaging",
+    "Intercom category ownership strategy"
+  ],
+  "content_angle": "Focus on the STRATEGIC RISK of Intercom's bet—they eliminated 3 use cases (support, marketing, sales) from their core positioning to own a single category claim ('the only helpdesk for the AI Agent era'). Explore: Did this narrow focus improve conversion? Did it cannibalize sales motion for existing multi-use-case customers? What data might justify this high-risk repositioning? The searcher wants to know whether to replicate this aggressive narrowing or learn from potential blind spots.",
+  "what_the_searcher_wants": "To understand the business logic and execution reality behind a major positioning gamble—not just to catalog what changed, but to assess whether cutting out existing value propositions was necessary to own a new category, or whether it was a missed opportunity to own both.",
+  "what_to_avoid": "Treating this as a simple 'modernization' story (new AI language = good). This was a SUBTRACTION move disguised as modernization. The article must grapple with the tension: Intercom eliminated messaging that had worked for years (multi-use-case support) to make room for AI Agent category ownership. Don't let this be a cheerleading piece. Also avoid generic 'homepage best practices' framing—this is a bold strategic repositioning that deserves scrutiny on whether the trade-offs paid off.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T19:14:56.928Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0031111999999999997
+}

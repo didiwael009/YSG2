@@ -1,37 +1,33 @@
 {
-  "score": 78,
-  "pass": false,
+  "score": 88,
+  "pass": true,
   "issues": [
-    "Paragraph 1 of H3 'Who the new page serves' is ~70 words, exceeds 60-word limit",
-    "H3 'What this means for the sales process' contains causal claim without condition: 'the new headline risks confusion' — not supported by evidence",
-    "Causal statement 'the visitor must already know what an ecommerce platform does before the page makes sense' lacks supporting data",
-    "Word count is approximately 180 words, within acceptable range but near upper limit",
-    "Final test is generic ('count how many seconds') rather than specific to this company's evidence (e.g., 'count category-explaining phrases in the first screen')"
+    "H3 headings use 'Who X serves' pattern twice — no searchable differentiation between 'old page' and 'new page' versions",
+    "Final test instruction ('Time your own homepage') is generic — does not specify what to do with the count or what threshold matters",
+    "Opening paragraph uses 'product category' twice in three sentences — repetitive phrasing",
+    "No bold formatting on the phrase 'ecommerce' or 'online store' when quoting the 2026 page absence — inconsistent quote treatment"
   ],
   "requiredFixes": [
-    "Split the second paragraph of 'Who the new page serves' into two blocks: one for the headline shift (35 words), one for the meta description shift (35 words)",
-    "Rewrite 'the new headline risks confusion' to include a condition: 'If traffic includes cold paid ads, the new headline may confuse visitors who have never heard of Shopify'",
-    "Remove or condition the claim 'the visitor must already know' — evidence shows headline changed but does not prove comprehension failure",
-    "Make the final test specific: 'Open shopify.com in incognito and count how many words in the first screen explain what an ecommerce platform does (2021: ~15 words in headline + meta; 2026: 0 words in headline).'"
+    "Add searchable buyer qualifier to H3 headings: change 'Who the old page served' to 'Who the 2021 homepage served: category researchers' and 'Who the new page serves' to 'Who the 2026 homepage serves: brand-aware buyers'",
+    "Make final test specific and actionable: 'Visit your homepage in incognito. Count words before seeing your product category. If it exceeds 20 words and you rely on cold search traffic, you are forcing visitors to guess what you sell.'"
   ],
   "riskFlags": [
-    "CAUSAL CLAIM: 'the new headline risks confusion' — evidence shows headline changed, but does not prove confusion occurs",
-    "CAUSAL CLAIM: 'the visitor must already know what an ecommerce platform does before the page makes sense' — no usability or comprehension data provided",
-    "OUTCOME CLAIM: 'If traffic includes cold paid ads or non-branded search, the new headline risks confusion' — no conversion or bounce-rate data to support this prediction"
+    "The claim 'This approach works only if visitors arrive from brand search, referrals, or content' is stated as absolute certainty without data showing traffic sources or conversion performance by channel",
+    "The phrase 'may not work if your traffic arrives without prior knowledge' hedges appropriately but the surrounding paragraph implies causation between word count and conversion without measurement"
   ],
   "seoNotes": [
-    "POSITIVE: Section heading contains 'Shopify' and 'messaging', both searchable terms",
-    "POSITIVE: All H3 subheadings use plain language ('who the old page served', 'who the new page serves')",
-    "POSITIVE: Verbatim quotes are properly bolded throughout"
+    "Section heading includes 'Shopify homepage messaging' — strong searchable anchor",
+    "H3 subheadings lack search terms: 'old page' and 'new page' are not how users search; consider 'category positioning' or 'brand positioning' variants",
+    "The word 'ecommerce' appears only in the final paragraph — missed opportunity to reinforce primary keyword earlier when discussing what the page no longer mentions"
   ],
-  "rewriteInstruction": "This section is close but fires two penalties: one paragraph exceeds 60 words, and two causal claims lack conditions or supporting data. First, split the 70-word paragraph in 'Who the new page serves' into two blocks: one for the headline shift, one for the meta description. Second, attach conditions to both causal statements in the final H3: change 'the new headline risks confusion' to 'If traffic includes first-time visitors from paid ads, the new headline may confuse them' and remove the absolute claim 'the visitor must already know'. Third, make the final test specific and measurable: replace the vague 'count how many seconds' with 'count how many words in the first screen explain what an ecommerce platform does (2021: ~15; 2026: 0)'. These three fixes will bring the section above threshold.",
+  "rewriteInstruction": "Strengthen H3 headings with searchable buyer-stage terms (not 'old/new page'). Replace the generic final instruction ('Time your own homepage') with a specific threshold and consequence tied to Shopify's evidence (23-word count). Reduce 'product category' repetition in opening. Add one sentence in the second H3 block explaining why mentioning AI without ecommerce risks confusion for cold traffic — tie it to working memory limits or the need to establish context before aspiration.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "specificity": 15,
-    "plainLanguage": 20,
-    "scannability": 8,
-    "searchableHeadings": 10,
-    "rhythmAndOpening": 7,
+    "evidenceAccuracy": 24,
+    "specificity": 14,
+    "plainLanguage": 18,
+    "scannability": 14,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
     "founderTakeaway": 3
   },
   "effectivePassThreshold": 85

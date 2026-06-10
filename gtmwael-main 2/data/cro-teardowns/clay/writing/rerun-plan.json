@@ -1,88 +1,116 @@
 {
-  "createdAt": "2026-06-09T22:43:52.866Z",
+  "createdAt": "2026-06-10T19:16:27.182Z",
   "slug": "clay",
   "source": {
     "finalJudgePass": false,
     "seoPass": true,
-    "finalJudgeScore": 73,
-    "seoScore": 84
+    "finalJudgeScore": 72,
+    "seoScore": 87
   },
   "sectionsToRerun": [
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 02-quick-answer — remove unsupported test recommendation claim",
-        "Judge rerun recommendation: 04-messaging-evolution — remove unsupported audience inference and add conditional framing to causation claims",
-        "## Clay homepage positioning: how the headline changed from 2021 to 2026",
-        "## Should you copy Clay's homepage shift? When enterprise positioning works and when it doesn't",
-        "it only works when visitors arrive with that knowledge already in place — unsupported causal claim, no data linking positioning choice to visitor knowledge requirement",
-        "this shift trades education for aspiration — causal claim without conditional framing or evidence that the trade occurred",
-        "These visitors are evaluating platform capabilities — claim about visitor intent, not description of page messaging",
-        "Copy this if your current homepage attracts users who cannot authorize the contract value you now require — implied conversion outcome without data",
-        "Remove unsupported audience claim: 'The 2021 page spoke to individual salespeople and marketers doing manual prospecting work.' The evidence shows WHAT was said (meta description copy), not WHO the in",
-        "Remove unsupported visitor intent claim: 'these visitors are evaluating platform capabilities'. Replace with page architecture observation: 'The page now frames Clay as a platform with features to com",
-        "Remove unsupported timeline claim: 'Clay made this shift after five years.' Evidence shows the period is Jul 2021 → Jun 2026 but does not confirm when the shift occurred within that window. Replace wi",
-        "Remove unsupported distribution claim: 'That language change may cost you word-of-mouth distribution' — no evidence provided that Clay measured or experienced distribution impact. Replace with conditi",
-        "Add conditional framing to causation claim in opening paragraph: Change 'signaling a shift' to 'consistent with a shift' or 'suggesting Clay moved from'.",
-        "Add condition to causal claim in ## Clay homepage positioning section: Change 'it only works when visitors arrive with that knowledge already in place' to 'this pattern assumes visitors arrive with th",
-        "Add condition to trade-off claim: Change 'this shift trades education for aspiration' to 'this shift may trade education for aspiration IF visitors arrive without category knowledge.'",
-        "Remove evaluation intent claim in ## Clay homepage audience shift section: Change 'These visitors are evaluating platform capabilities' to 'The page now frames Clay as a platform buyers evaluate on ca",
-        "Expand keyword use in body text: 'Clay homepage CRO teardown' appears only in title/meta/intro. Add 1–2 natural mentions in mid-body sections (e.g., 'This CRO teardown of Clay's homepage reveals...' i",
-        "Clarify the 'Quick answer' section language: 'If your homepage still converts practitioners through templates or self-serve exploration, test this shift on a /enterprise subdomain before replacing you",
-        "Add a sentence or callout near the headline acknowledging the time span and data freshness: '5-year snapshot from archived homepages and publicly available statements' — ensures readers know the basis"
+        "Judge rerun recommendation: 04-messaging-evolution — contains 'The page now expects a longer evaluation process' unsupported claim",
+        "Should you copy Clay's homepage shift to enterprise positioning?",
+        "Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends — prediction of outcome without evidence or conditional framing",
+        "Remove 'This change may lose visitors' — outcome claim without data. Reframe as: 'This change assumes visitors who want to browse templates will convert through other paths.'",
+        "Remove 'their inbound requests had already shifted to enterprise evaluation language' — asserts internal data not in evidence. Reframe as: 'Clay made this shift; check whether your own inbound request",
+        "The meta description in the article body states 'Access 150+ premium data sources and AI research agents in one platform' but the header metadata shows different wording. Verify which is the actual cu",
+        "The intro section cites a headline as 'Every GTM data point imaginable, in one place' in the 'Should you copy' section, but the main teardown cites 'Go to market with unique data — and the ability to "
       ],
       "priority": "high",
       "source": "both"
     },
     {
-      "sectionId": "06-lessons-for-saas-teams",
+      "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "Judge rerun recommendation: 06-lessons-for-saas-teams — remove invented metric threshold and unsupported distribution claim, add conditional framing to conversion predictions",
-        "test this shift on a /enterprise subdomain before replacing your main funnel — framed as direct takeaway from Clay's evidence but the evidence only shows Clay's changes, not a test recommendation",
-        "Remove invented metric threshold: 'If it is under 20%, you do not yet have the traffic mix this move requires.' No evidence supports the 20% threshold. Replace with: 'If most visitors arrive from indi",
-        "Reframe final Quick Answer recommendation: Change 'test this shift on a /enterprise subdomain before replacing your main funnel' to 'the safer version: test this shift on a /enterprise subdomain to va"
+        "Judge rerun recommendation: 05-cta-navigation-evolution — contains 'This change may lose visitors' outcome claim and 'that shift only works when' causation claim",
+        "if your demo requests already mention competitor names unprompted",
+        "Clay's conversion path: from gated access to dual-track funnel",
+        "The page now expects a longer evaluation process involving multiple stakeholders — causal inference not supported by CTA change evidence alone",
+        "Open your last 30 demo requests. If fewer than half mention a competitor — invents specific threshold (30, 50%) not in evidence",
+        "Remove or reframe 'The page now expects a longer evaluation process involving multiple stakeholders' — the evidence shows CTA changes (Request access → Get a demo), but does not confirm sales cycle le",
+        "Remove 'signals that Clay is optimizing for deals that require business case validation' — this asserts intent. Reframe as: 'The CTA shift is consistent with optimizing for deals that require validati",
+        "Remove 'Open your last 30 demo requests. If fewer than half mention a competitor' — invents specific threshold. Reframe as: 'Check whether your demo requests mention competitors unprompted. If they do"
       ],
       "priority": "high",
       "source": "final-judge"
     },
     {
-      "sectionId": "05-cta-navigation-evolution",
+      "sectionId": "06-lessons-for-saas-teams",
       "reasons": [
-        "you are betting that your headline and feature descriptions alone will convince visitors to start a trial — causal claim about conversion without data",
-        "Visitors who want to browse a working example before committing to a trial no longer have that option above the fold — implies removal is a loss without stating possible trade-off"
+        "Judge rerun recommendation: 06-lessons-for-saas-teams — contains 'Most early-stage companies cannot' generalization and 'their inbound requests had already shifted' internal data",
+        "Clay's audience shift: from individual practitioners to GTM leadership"
       ],
-      "priority": "medium",
+      "priority": "high",
       "source": "final-judge"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "The 2021 page spoke to individual salespeople and marketers doing manual prospecting work.",
+      "issue": "The page now expects a longer evaluation process involving multiple stakeholders",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "these visitors are evaluating platform capabilities",
+      "issue": "signals that Clay is optimizing for deals that require business case validation",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Clay made this shift after five years.",
+      "issue": "that shift only works when inbound volume can support a sales team",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "That language change may cost you word-of-mouth distribution",
+      "issue": "Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "What percentage come from companies with 50+ employees? If it is under 20%, you do not yet have the traffic mix this move requires.",
+      "issue": "This change may lose visitors who want to browse templates",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "## Quick answer: Clay homepage",
+      "issue": "Most early-stage companies cannot",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion — presents correlation as causation without condition",
+      "issue": "Clay could swap 'Get template->' for 'Read more about Clay Enterprise' because their inbound requests had already shifted to enterprise evaluation language",
       "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "signals that Clay is optimizing for deals that require business case validation — asserts strategic intent without evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "that shift only works when inbound volume can support a sales team — presents causation as fact, not conditional observation",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "This change may lose visitors — presents outcome as likely without data",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Most early-stage companies cannot — unsupported generalization not traceable to Clay evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "their inbound requests had already shifted to enterprise evaluation language — asserts company-internal data not in evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove 'that shift only works when inbound volume can support a sales team' — presents necessity without data. Reframe as: 'This shift assumes Clay has sufficient inbound volume to support a sales tea",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove 'Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends' — prediction without evidence. Reframe as: 'Cutting self-serve e",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove 'Most early-stage companies cannot' — unsupported generalization. Reframe as: 'Clay can make that bet because [specific evidence]. Early-stage companies without [that evidence] should test this",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Section 01-intro (low priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Outcome claim 'shifted from... to...' is unsupported by evidence — no conversion data provided",
+    "Causal claim 'This positioning assumes visitors already understand...' has no evidence anchor",
+    "Advisory 'Companies still explaining what their product does... should not adopt this approach' makes unsupported causal prediction",
+    "Paragraph is 76 words — exceeds 75-word target for quick answer section",
+    "No bold quotes wrapping verbatim website copy",
+    "Generic advisory 'should not adopt this approach' could appear in any teardown",
+    "Second and third sentences read like consultant advice, not company-specific evidence summary"
+  ],
+  "requiredFixes": [
+    "Replace 'shifted from... to...' with 'Between Jan 2023 and Jun 2026, Hootsuite rewrote...' to anchor the observation in time without claiming conversion outcome",
+    "Wrap verbatim H1 quotes in **bold**: **'Grow your reach and get more business'** and **'Drive real business impact with the world's deepest social intelligence'**",
+    "Cut the second sentence entirely — it makes unsupported assumptions about visitor intent",
+    "Replace third sentence advisory with evidence-based constraint: 'The old meta description promoted free trial ('Give it a try for free!'); the new one lists features neutrally, signaling a shift away from trial-driven acquisition.'",
+    "Reduce total word count to ≤75 words by eliminating the advisory and tightening the opening"
+  ],
+  "riskFlags": [
+    "HARD CAP TRIGGERED: 'shifted from... to...' is an unsupported outcome claim (no conversion data) → cap total at 60",
+    "'This positioning assumes visitors already understand...' is causal reasoning with no evidence trace",
+    "'Companies still explaining... should not adopt this approach' predicts conversion outcome without data",
+    "No condition attached to 'should not adopt this approach' — violates conditional-only causation rule"
+  ],
+  "seoNotes": [
+    "Heading 'Quick answer' is not searchable — missing company name, topic terms ('homepage', 'positioning', 'messaging')",
+    "Draft does not include the specific before/after H1 quotes that would improve featured snippet extraction",
+    "Opening could be restructured to front-load searchable terms: 'Hootsuite homepage positioning changed...'",
+    "No meta-friendly structure (e.g., 'Between Jan 2023 and Jun 2026, Hootsuite...' establishes time scope for Google)"
+  ],
+  "rewriteInstruction": "Rewrite as three sentences totaling ≤75 words. Sentence 1: State the time range and quote both H1s in **bold** to anchor the change ('Between Jan 2023 and Jun 2026, Hootsuite replaced **'Grow your reach and get more business'** with **'Drive real business impact with the world's deepest social intelligence'**'). Sentence 2: Add one navigation or meta description evidence point in **bold** to show scope (e.g., nav changed from execution tasks to risk capabilities). Sentence 3: Note one removal that signals intent shift (e.g., free trial CTA dropped from meta description). Zero advisory language. Zero outcome claims. Every claim must trace directly to a quoted element in the evidence. Front-load 'Hootsuite homepage' for search visibility.",
+  "dimensionScores": {
+    "evidenceAccuracy": 5,
+    "specificity": 8,
+    "plainLanguage": 16,
+    "scannability": 10,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -2,41 +2,36 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "Opening paragraph: 'This reduces drop-off from choice paralysis' is a causal claim unsupported by evidence — no data on drop-off reduction",
-    "Opening paragraph: 'filters out visitors who needed nurture before committing' is an interpretation presented as fact without hedge",
-    "Second paragraph: 'This can be read as' is hedging language (acceptable here, covering a real interpretive gap about buyer segment shift)",
-    "Second paragraph: 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page—possibly into product-led onboarding or outbound sequences' is speculative; no evidence provided for where education relocated",
-    "Word count approximately 185 words — within target range",
-    "All website quotes properly bolded",
-    "Tradeoff present and explicitly named: 'two-click conversion paths in exchange for losing visitors who would have downloaded a report or watched a demo before booking a call'",
-    "Founder takeaway present as closing question — valid format",
-    "Opening executes 'concrete-number' move with 'Ten CTAs removed. Ten added.' — excellent execution of assigned move",
-    "No paragraphs exceed 90 words (para 1: ~85 words, para 2: ~100 words — para 2 introduces distinct ideas about buyer segment shift and education relocation, justifying length)"
+    "Paragraph 1 of H3 'What changed in the CTA set' is 66 words (exceeds 60-word limit)",
+    "Paragraph 2 of H3 'Who this filters out' is 62 words (exceeds 60-word limit)",
+    "The final H3 'Audit your own page' delivers a test, but it requires comparing bounce rate data — not a sub-5-minute task a founder can run immediately",
+    "The term 'solution-aware' appears without a plain-language explanation in the same sentence"
   ],
   "requiredFixes": [
-    "Opening paragraph: Replace 'This reduces drop-off from choice paralysis but filters out visitors who needed nurture before committing' with hedged version: 'This can reduce drop-off from choice paralysis by removing competing paths, but may filter out visitors who need nurture before committing.'",
-    "Second paragraph: Cut or caveat the speculation about where education relocated. Replace 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page—possibly into product-led onboarding or outbound sequences' with 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education either moved off-page or became less central to the homepage conversion strategy.'"
+    "Split the first paragraph under 'What changed in the CTA set' into two sentences to bring word count under 60",
+    "Split the second paragraph under 'Who this filters out' into two sentences to bring word count under 60",
+    "Replace the bounce-rate comparison test with a faster, specific audit: 'Open your homepage. Count CTAs that require zero commitment: download, case study, watch, demo video. Intercom dropped from three to zero. If your count is also zero, test adding one case study link to a high-traffic landing page and watch time-on-page for category comparison traffic.'",
+    "Add a plain-language definition for 'solution-aware': change 'if your traffic is already solution-aware' to 'if your traffic already knows Intercom is the solution they want'"
   ],
   "riskFlags": [
-    "'This reduces drop-off from choice paralysis' — causal claim with no evidence of actual drop-off change",
-    "'filters out visitors who needed nurture before committing' — presented as fact, not interpretation"
+    "'This filters out early-stage researchers' — descriptive filtering claim is supported, but consider softening to 'This may filter out' to avoid causal certainty",
+    "'If bounce rate climbs, you may be filtering too early' — appropriate conditional phrasing, acceptable"
   ],
   "seoNotes": [
-    "Section title 'Ten CTAs swapped, two decision doors remain' is concrete and scannable",
-    "Opening sentence delivers the number immediately, strong hook for skimmers"
+    "Section heading contains 'Intercom', 'CTA', and 'evolution' — searchable terms present",
+    "H3 'What changed in the CTA set' is clear and indexable",
+    "H3 'Who this filters out' is clear but consider adding 'visitor' or 'buyer' for search context",
+    "H3 'Audit your own page' is actionable and indexable"
   ],
-  "rewriteInstruction": "Hedge the two causal/factual claims in the opening paragraph ('reduces drop-off' and 'filters out visitors') to signal interpretation rather than proven fact. Trim or caveat the speculation about where mid-funnel education relocated — the evidence shows it left the homepage, but not where it went. Once those hedges are in place, the section will be publication-ready: the tradeoff is sharp, the buyer psychology is clear (SMB self-serve → mid-market/enterprise), and the founder takeaway is actionable.",
+  "rewriteInstruction": "The section is structurally sound and specific to Intercom's evidence. Fix four issues: (1) Split the 66-word paragraph under 'What changed in the CTA set' into two sentences. (2) Split the 62-word paragraph under 'Who this filters out' into two sentences. (3) Define 'solution-aware' in plain language immediately: 'if your traffic already knows Intercom is the solution they want'. (4) Replace the bounce-rate comparison test with a faster, runnable audit: 'Open your homepage. Count CTAs that require zero commitment. Intercom dropped from three to zero. If your count is also zero, test adding one case study link to a high-traffic landing page and watch time-on-page for category comparison traffic.' These fixes will bring scannability and founderTakeaway to full points.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "clarity": 10,
+    "evidenceAccuracy": 25,
     "specificity": 15,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 4,
-    "analysisDepth": 10,
-    "editorialQuality": 6,
-    "founderSharpness": 18,
-    "distinctiveness": 5
+    "plainLanguage": 17,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

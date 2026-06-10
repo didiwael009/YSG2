@@ -1,57 +1,51 @@
 {
-  "seoScore": 85,
+  "seoScore": 87,
   "pass": true,
   "titleScore": 13,
-  "metaDescriptionScore": 12,
+  "metaDescriptionScore": 14,
   "headingStructureScore": 14,
-  "searchIntentScore": 18,
+  "searchIntentScore": 19,
   "keywordUseScore": 9,
-  "readabilityScore": 13,
-  "internalLinkingScore": 6,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "In the '01-intro' section, after mentioning 'positioning choice that may affect how quickly a visitor decides the page is for them,' link to a resource on homepage messaging frameworks or positioning for enterprise vs. self-serve audiences.",
-    "In the 'Messaging Evolution' section, where it discusses 'proof burden,' link to a guide on social proof elements or credibility signals for SaaS homepages.",
-    "In the 'CTA and Navigation Evolution' section, after discussing dual-CTA structures, link to a case study or article on CTA optimization for multi-segment audiences.",
-    "In the 'Lessons for SaaS Teams' section, where it mentions 'bounce rate and time-on-page,' link to a guide on measuring homepage CRO metrics or running headline A/B tests.",
-    "At the end of the article, add a CTA section linking to related teardowns, a newsletter signup, or a homepage audit template."
+    "Link from 'category leadership positioning' section to a general SaaS homepage best practices guide",
+    "Link from 'Demo-first path changes visitor qualification' to conversion rate optimization methodology content",
+    "Link from 'Who should NOT copy this' to an article on non-branded traffic acquisition strategies",
+    "Add internal anchor link within 'The test before you copy' to reference earlier 'Test: does your homepage assume too much category knowledge?' section",
+    "Link from meta description discussion to a guide on writing conversion-focused meta descriptions for SaaS"
   ],
   "faqSuggestions": [
-    "Why did Hootsuite change its homepage headline from 'Let's do this' to 'world's deepest platform'?",
-    "How does navigation structure affect conversion rates on SaaS homepages?",
-    "What is the difference between outcome-focused vs. capability-focused homepage messaging?",
-    "Should SaaS companies offer both 'Start free trial' and 'Request a demo' CTAs?",
-    "How can you tell if your homepage is optimized for self-serve or enterprise buyers?",
-    "What does it mean when a company removes action verbs from navigation labels?",
-    "How do you balance credibility claims with proof burden on a homepage?"
+    "What is a CRO teardown and how do I use one to improve my homepage?",
+    "Why did Hootsuite shift from 'free trial' to 'request a demo' as its primary CTA?",
+    "How do I know if my brand has enough recognition to skip category explanation on my homepage?",
+    "What percentage of traffic should come from branded search before adopting authority-first messaging?",
+    "How do I audit whether my homepage's positioning matches my buyer's stage in the decision journey?",
+    "Should SaaS companies always lead with demo requests or can trial-first work at scale?"
   ],
   "contentGapNotes": [
-    "No discussion of visual design changes, hero image evolution, or use of product screenshots/videos across the snapshots.",
-    "No mention of how pricing page changes or plan structure might correlate with homepage messaging shifts.",
-    "Missing analysis of mobile vs. desktop differences, if snapshots captured mobile views.",
-    "No coverage of footer content, trust badges, security certifications, or customer logos that may have changed.",
-    "No discussion of page load performance or technical SEO factors that might affect conversion.",
-    "Limited mention of social proof evolution beyond section headings—no detail on testimonial format, case study placement, or customer logo changes.",
-    "No competitive context: how Hootsuite's homepage compares to Buffer, Sprout Social, or other social media management platforms during the same period."
+    "No specific data on trial conversion rates before/after the CTA change — article references checking 'the last 90 days of trial conversions' but doesn't show Hootsuite's actual lift or decline",
+    "Missing analysis of whether Hootsuite's traffic mix shifted (branded vs. non-branded) between 2023 and 2026 — the article assumes this but doesn't validate it",
+    "No discussion of how the homepage changes affected downstream metrics (demo bookings, sales cycle length, average deal size, or win rates)",
+    "Limited detail on how secondary navigation items evolved — only headline and primary CTA are dissected; subnavigation, footer, or supporting sections are not analyzed",
+    "No mention of how visual design, imagery, or layout shifted across the three-year period — only copy and messaging are addressed",
+    "Missing competitive context — article doesn't show how similar platforms (Sprout Social, Buffer, Lately) positioned their homepages in the same timeframe",
+    "No discussion of mobile vs. desktop positioning differences — changes may have been optimized for one device type"
   ],
   "requiredFixes": [
-    "The meta description is 152 characters including the ellipsis, which is good, but the truncation ('…') suggests the description was cut mid-sentence. Rewrite to end cleanly within 155 characters without needing an ellipsis.",
-    "The article uses section identifiers like '01-intro' and '02-at-a-glance' as literal headings in the markdown. These should be converted to descriptive H2 headings for better scannability and SEO (e.g., '## Introduction' or '## Overview of Changes').",
-    "Add at least one internal link with anchor text that includes a target keyword (e.g., 'homepage CRO teardown' linking to a related article or resource hub).",
-    "The 'Lessons for SaaS Teams' section is dense with long paragraphs. Break into shorter paragraphs (3–4 sentences max) and consider adding bullet points for the three main patterns discussed."
+    "Title is strong but could consider tightening to under 60 characters for optimal SERP display: current is 59 chars including spaces, which is borderline. Consider 'Hootsuite Homepage CRO Teardown 2023–2026' (44 chars) as tighter alternative",
+    "Meta description is 154 characters, which is acceptable, but the phrase 'what SaaS teams can study…' trails off with an ellipsis that may truncate oddly in some search results. Revise to: 'How Hootsuite's homepage shifted from trial-driven to demo-first positioning. Analyze 3 years of messaging, CTAs, and navigation changes for your own SaaS homepage.' (160 chars, slightly over but more benefit-focused)"
   ],
   "optionalImprovements": [
-    "The title is 52 characters, which is good, but consider adding a year or outcome-focused modifier to increase click-through appeal, e.g., 'Hootsuite Homepage Teardown: 3-Year CRO Evolution (2023–2026)' (59 characters).",
-    "The primary keyword 'Hootsuite homepage CRO teardown' appears only once in the body (in the intro). Integrate it naturally in one additional location, such as the 'At a Glance' or conclusion section.",
-    "The article lacks a explicit conclusion or summary section. Add a brief H2 'Key Takeaways' or 'Summary' section at the end to reinforce the main findings and improve scannability.",
-    "The 'Visual Timeline' section could benefit from subheadings for each snapshot year (e.g., '### January 2023', '### July 2023', '### June 2026') to improve readability and allow readers to jump to specific periods.",
-    "Consider adding a table or comparison chart summarizing the old vs. new elements (headline, CTAs, navigation labels) for quick reference.",
-    "The article mentions '7 snapshots' but only discusses three in the Visual Timeline. Either explain why only three are highlighted or add detail on the omitted snapshots.",
-    "Add schema markup (FAQPage or Article) to increase chances of rich snippet display in search results.",
-    "The intro mentions '9 min read'—ensure this is accurate based on average reading speed (200–250 words per minute). The article is ~2,100 words, which suggests 8–10 minutes is correct.",
-    "The secondary keywords ('Hootsuite homepage redesign', 'SaaS conversion optimisation case study', etc.) are underutilized. Naturally incorporate 1–2 more of these phrases in subheadings or body text.",
-    "The article would benefit from a 'What This Means for Your Homepage' or 'How to Apply These Insights' section with a bulleted action list for readers."
+    "Add a sentence or two after the Quick Answer section that explicitly restates the primary keyword ('Hootsuite homepage CRO teardown') to reinforce search relevance early",
+    "Consider adding a structured data FAQ schema block with 3–4 of the top FAQ suggestions to improve SERP appearance and click-through rate",
+    "Include a comparison table or side-by-side visual summary (e.g., Jan 2023 vs. Jun 2026 headlines, CTAs, meta descriptions) to improve scannability and shareability",
+    "Add a brief 'How to conduct your own CRO teardown' micro-section to provide immediate applicability and link anchor for future reference articles",
+    "Include one sentence early in the article estimating the time commitment to read ('7 min read' is stated but not reinforced), improving user expectation setting",
+    "Link the phrase 'seven headline revisions' to a visual timeline or downloadable snapshot collection to deepen engagement with the evidence",
+    "Consider a final 'Related Teardowns' section listing other SaaS homepage analyses to encourage internal navigation and session depth"
   ],
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.030990000000000018,
-  "generatedAt": "2026-06-08T10:29:26.042Z"
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.006714400000000009,
+  "generatedAt": "2026-06-10T19:40:50.355Z"
 }

@@ -1,0 +1,49 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "The phrase 'category leadership positioning' is used without a plain-language definition — expert term violation.",
+    "The claim 'The page stopped explaining what Stripe is' is not traceable to evidence — no annotation confirms the 2022 page included a product explanation section.",
+    "The claim 'This is category leadership positioning: when a company is so well-known it can skip the product explanation' presents causation without evidence — no data supports that brand awareness enabled this change.",
+    "The 'Why it matters' H3 contains 62 words — exceeds 60-word scannability threshold.",
+    "The 'What it costs' H3 contains 75 words — significantly exceeds 60-word scannability threshold.",
+    "The final takeaway asks three questions instead of delivering a single, specific, runnable test — fails founder-takeaway test.",
+    "The 'What it costs' sub-block does not deliver its practical takeaway in the first two sentences — the actionable insight is buried in the final question cluster.",
+    "Generic paragraph detected: 'If your homepage receives traffic from buyers unfamiliar with your category — through cold ads, non-branded search, or referrals — removing the product explanation may send them elsewhere' could appear in any SaaS teardown.",
+    "The section heading is searchable (contains 'Stripe', 'homepage', 'positioning', 'headline') — meets requirement.",
+    "Word count approximately 210 words — exceeds 200-word maximum by 10 words."
+  ],
+  "requiredFixes": [
+    "Define 'category leadership positioning' immediately after first use: 'This is category leadership positioning — when a brand is so well-known it can skip explaining what it does and speak directly to outcomes.'",
+    "Replace the unsupported claim 'The page stopped explaining what Stripe is' with evidence-traceable language: 'The page shifted from naming the product category to describing use cases.'",
+    "Remove or condition the causation claim: instead of 'when a company is so well-known it can skip', write 'Stripe's new headline assumes visitors already know what Stripe does — a positioning choice available when brand awareness is high.'",
+    "Break the 'Why it matters' paragraph into two blocks at the natural split: after 'This is category leadership positioning [+ definition].' Start a new paragraph with 'The page now addresses visitors...'",
+    "Break the 'What it costs' paragraph into two blocks. First block (under 60 words): the risk. Second block: the test.",
+    "Replace the three-question cluster with a single, specific, runnable test: 'Open your homepage in incognito mode. Cover the logo. Can a cold visitor name the problem you solve in five seconds? If not, your headline may be optimized for brand-aware visitors only.'",
+    "Move the practical takeaway to the first sentence of 'What it costs': 'If your headline assumes brand awareness, cold traffic may leave before understanding what you offer.'",
+    "Anchor the generic traffic-source list to Stripe's evidence: reference the specific nav items or CTAs removed, or omit the generic list entirely.",
+    "Trim 10–15 words to meet the 200-word cap — likely from the final H3 block."
+  ],
+  "riskFlags": [
+    "CAUSATION WITHOUT DATA: 'This is category leadership positioning: when a company is so well-known it can skip the product explanation' — no evidence links brand awareness to this homepage change.",
+    "UNSUPPORTED CLAIM: 'The page stopped explaining what Stripe is' — the 2022 annotations show section headings like 'Why Stripe' but do not confirm presence or removal of a product explainer.",
+    "OUTCOME CLAIM: 'removing the product explanation may send them elsewhere before they understand what you offer' — no conversion data or A/B test result supports this hypothetical outcome."
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains 'Stripe', 'homepage', 'positioning', 'headline' — highly searchable for branded and topic queries.",
+    "POSITIVE: H3 subheadings ('What changed', 'Why it matters', 'What it costs') are clear navigational signposts for skimmers.",
+    "NEGATIVE: The word 'positioning' appears in both the ## heading and the body — consider varying terminology in body text to capture related search queries ('messaging strategy', 'value proposition shift').",
+    "NEGATIVE: The section does not reference the date range ('2022 to 2026') in the body text — only in the heading. Adding '2022' and '2026' to the opening sentence would reinforce the temporal SEO angle."
+  ],
+  "rewriteInstruction": "Trim to 190 words. Define 'category leadership positioning' in-line immediately after first use. Replace 'The page stopped explaining what Stripe is' with 'The page shifted from naming the product category to describing use cases' — traceable to evidence. Remove the causation claim ('when a company is so well-known') or condition it ('Stripe's headline assumes visitors already know what Stripe does'). Break 'Why it matters' into two paragraphs at the natural split after the positioning definition. Break 'What it costs' into two paragraphs: (1) the risk, stated in the first sentence, under 60 words, and (2) a single, specific, runnable test: 'Open your homepage in incognito. Cover the logo. Can a cold visitor name the problem you solve in five seconds? If not, your headline assumes brand awareness.' Anchor any traffic-source references to Stripe's evidence (removed CTAs, nav changes) or cut them. Ensure all three H3 blocks stay under 60 words per paragraph.",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 10,
+    "plainLanguage": 13,
+    "scannability": 6,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

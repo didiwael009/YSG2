@@ -1,5 +1,13 @@
-## Ten CTAs swapped, two decision doors remain
+## Intercom's CTA evolution: from content gates to sales-only path
 
-Ten CTAs removed. Ten added. But the primary conversion paths collapsed from many to two. The earlier Intercom homepage scattered intent across **"Get started,"** **"Watch a Demo,"** **"Download the report,"** and outcome-specific hooks like **"Start converting customers faster"**; the current version consolidates to **"Start free trial"** and **"Contact sales."** Supporting links now route to feature pages—**"Fin AI Agent,"** **"AI-powered Insights"**—rather than offering mid-funnel content. This reduces drop-off from choice paralysis but filters out visitors who needed nurture before committing.
+### What changed in the CTA set
 
-The homepage now assumes buyers arrive decision-ready. This can be read as a shift away from SMB self-serve users who needed education toward mid-market or enterprise buyers with shorter evaluation cycles and an expectation of a sales conversation. The tradeoff: two-click conversion paths in exchange for losing visitors who would have downloaded a report or watched a demo before booking a call. Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page—possibly into product-led onboarding or outbound sequences. Does your homepage consolidate CTAs because your traffic arrives pre-qualified, or because you've relocated education elsewhere in the funnel?
+Intercom replaced ten CTAs. The old homepage offered **"Download the report"**, **"Watch now"**, and **"Read story"** — all ways to engage before committing. The new version removes those entirely. Every CTA now requires the visitor to enter a trial (**"Start free trial"**) or a sales conversation (**"Contact sales"**).
+
+### Who this filters out
+
+This filters out early-stage researchers who want to read case studies or download reports before deciding whether Intercom solves their problem. The old page let you engage without entering an evaluation. The new path works if your traffic is already solution-aware, but it offers no next step for visitors still comparing categories.
+
+### Audit your own page
+
+Open your homepage. Count CTAs that require zero commitment: download, case study, watch. Intercom dropped from three to zero. Compare your bounce rate for traffic from category comparison searches before and after testing a zero-gate CTA set. If bounce rate climbs, you may be filtering too early.

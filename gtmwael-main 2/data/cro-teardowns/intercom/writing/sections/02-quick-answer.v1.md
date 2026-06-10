@@ -1,0 +1,3 @@
+## Quick answer
+
+Intercom replaced its outcome-focused headline **"Support customers at exactly the right moment"** with the category claim **"The only helpdesk designed for the AI Agent era"** and removed all marketing and sales use-case language from its homepage. This positioning assumes visitors are already evaluating AI-first helpdesk platforms and understand what "AI Agent era" means. Companies whose buyers arrive searching for customer support software across multiple channels—or who don't yet associate your brand with AI—should not copy this approach.

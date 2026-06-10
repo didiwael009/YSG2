@@ -1,34 +1,43 @@
 {
-  "score": 87,
-  "pass": true,
+  "score": 78,
+  "pass": false,
   "issues": [
-    "Paragraph 1 ('Hootsuite's headline shifted...') exceeds 90 words (approximately 115 words) without introducing a distinct second idea",
-    "Paragraph 2 ('The navigation labels moved...') exceeds 90 words (approximately 105 words) without introducing a distinct second idea",
-    "The phrase 'can be read as' does not appear, but equivalent hedging ('The pattern:' used as a mechanical transition) appears three times across three paragraphs",
-    "Minor SEO issue: 'Hootsuite' appears in first paragraph but not in first 40 words — first mention is at approximately word 2",
-    "Paragraph 1 uses 'proof burden' — a concept that was likely already covered in the messaging section, creating potential repetition across sections"
+    "The ## section heading is clever-only ('Should SaaS companies copy Hootsuite's homepage strategy?') but lacks a searchable term like 'homepage', 'positioning', 'messaging', or 'CTA' combined with the company name",
+    "Multiple paragraphs exceed 60 words: 'Who should copy this' paragraph is ~70 words, 'Who should NOT copy this' paragraph is ~80 words, 'The test before you copy' paragraph is ~75 words",
+    "The 'copy this' and 'do NOT copy this' blocks bury the practical takeaway — they lead with conditions rather than the action or insight",
+    "The section contains an unsupported causal claim: 'When a first-time visitor lands on formal capability language... they leave. The cost is qualified pipeline from cold traffic' — no evidence provided shows bounce rate, exit data, or pipeline impact",
+    "The opening paragraph ('The pattern') could appear in any company's teardown — it is generic SaaS commentary about category authority vs. explanation, not anchored to Hootsuite's specific evidence",
+    "No verbatim website quotes are in **bold quotes** format — the single quote ('the world's deepest social intelligence') is in plain quotes with bold, not the required **\"bold quotes\"** format",
+    "The final test is not anchored to Hootsuite's specific evidence — it is a generic exercise any SaaS could run, not a test derived from what Hootsuite did"
   ],
   "requiredFixes": [
-    "Split paragraph 1 into two paragraphs: (a) the headline shift and what it signals about buyer targeting, (b) the CRO mechanism and when-not-to-copy condition. Current version runs 115 words without a paragraph break.",
-    "Split paragraph 2 into two paragraphs: (a) the navigation change and what it signals about user mental model, (b) the CRO mechanism and when-not-to-copy condition. Current version runs 105 words without a paragraph break.",
-    "Replace the mechanical 'The pattern:' transition in all three paragraphs with more direct language that integrates the observation into the sentence structure"
+    "Change the ## heading to include 'Hootsuite' and a searchable term: 'Hootsuite homepage lessons: When category-authority positioning works (and when it doesn't)'",
+    "Reformat the single verbatim quote to **\"the world's deepest social intelligence\"** (bold quotes, not plain quotes with bold)",
+    "Break all paragraphs over 60 words into shorter blocks or tighten sentence structure — target 50–60 words max",
+    "Move the practical takeaway to the first sentence of each H3 block: 'Copy this if...' should become 'This works when your brand name already completes the sentence...' so the condition IS the takeaway",
+    "Remove or condition the causal claim about pipeline cost — replace 'The cost is qualified pipeline' with 'This risks losing qualified pipeline if [condition based on evidence]' or remove entirely",
+    "Anchor 'The pattern' opening to Hootsuite's specific changes: reference the shift from 'Grow your reach...' to 'Drive real business impact...' or cite the navigation change from action-labels to category-labels",
+    "Rewrite 'The test before you copy' to anchor it to Hootsuite's evidence: 'Count how many words on your homepage explain what the product does before the first authority claim. Hootsuite's Jun 2026 version leads with **\"the world's deepest social intelligence\"** — a superlative that assumes category familiarity. If your headline does the same but your brand gets <50% branded search traffic, you've skipped the explanation step.'"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "Causal claim without data: 'When a first-time visitor lands on formal capability language... they leave. The cost is qualified pipeline from cold traffic' — no bounce rate, session duration, or conversion data provided to support this",
+    "Outcome claim without evidence: 'The cost is qualified pipeline' implies a measurable loss but no pipeline data is in the evidence"
+  ],
   "seoNotes": [
-    "Positive: 'Hootsuite' appears in the first sentence of paragraph 1",
-    "Positive: Section contains company-specific evidence in every paragraph (quoted headlines, navigation labels, section heading counts)",
-    "Minor: First mention of 'Hootsuite' is at word 2, not within first 40 words, but this is marginal"
+    "NEGATIVE: The ## heading lacks searchable terms — 'Should SaaS companies copy...' is a question format but missing 'Hootsuite', 'homepage', 'positioning', or other target keywords",
+    "POSITIVE: The H3 headings contain decision-support language ('Who should copy', 'Who should NOT copy', 'The test') which may match informational search intent",
+    "NEGATIVE: The section lacks verbatim quoted elements from Hootsuite's homepage in **bold quotes** format, reducing on-page keyword density for terms like 'social intelligence', 'social media management', etc.",
+    "POSITIVE: The four H3 structure supports scannability and may generate featured snippet opportunities if the heading is improved"
   ],
-  "rewriteInstruction": "Split paragraphs 1 and 2 into two paragraphs each to stay under the 90-word limit. Replace the mechanical 'The pattern:' transition in all three paragraphs with more integrated phrasing that flows naturally from the evidence to the observation. Verify that 'proof burden' does not duplicate a conclusion already covered in the messaging section — if it does, either remove it here or reframe it as a lessons-specific takeaway (e.g., how a founder can audit their own page for proof-burden mismatch). Keep the when-not-to-copy conditions intact; they are the strongest part of the section.",
+  "rewriteInstruction": "Anchor the opening paragraph to Hootsuite's specific evidence — quote the Jan 2023 headline ('Grow your reach...') vs. Jun 2026 headline ('Drive real business impact...') to show the shift from outcome language to authority framing. Shorten all paragraphs to 50–60 words by breaking compound sentences. Move the practical insight to the first sentence of each H3 block: start 'Who should copy this' with the condition as the takeaway, not as setup. Remove the unsupported causal claim about pipeline cost or attach a condition ('if your traffic is mostly non-branded'). Rewrite 'The test' to reference Hootsuite's specific headline or navigation change, then give a 5-minute test the founder can run (e.g. count explanation words before the first authority claim). Change the ## heading to 'Hootsuite homepage lessons: When category-authority positioning works'. Format the quoted phrase as **\"the world's deepest social intelligence\"** (bold quotes). Ensure no paragraph could appear word-for-word in a different company's teardown.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "clarity": 8,
-    "specificity": 15,
-    "seoUsefulness": 9,
-    "croUsefulness": 10,
-    "riskControl": 10,
-    "analysisDepth": 10,
-    "editorialQuality": 0
+    "evidenceAccuracy": 15,
+    "specificity": 8,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

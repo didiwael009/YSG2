@@ -1,36 +1,39 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 83,
+  "pass": false,
   "issues": [
-    "Missing bold formatting on 'Explore ways to sell' and 'Learn more about Shopify' in paragraph 1",
-    "Missing bold formatting on 'explore ways to sell' in paragraph 2",
-    "H3 heading 'What changed' is not searchable — lacks company name or topic term beyond the section heading",
-    "H3 heading 'Who this filters out' is not searchable — lacks company name or topic term",
-    "H3 heading 'Audit your own page' is not searchable — lacks company name or topic term",
-    "Final takeaway test is generic ('count how many CTAs say learn/explore') rather than specific to Shopify evidence (e.g. 'Open your homepage and count CTAs that require zero commitment vs. feature-specific CTAs like Shopify now uses')"
+    "The ## heading ('How Shopify's CTA path changed from education to activation') uses 'CTA' without first establishing the plain-language term — founders may not know what CTA means",
+    "The second H3 block ('Who this filters out') makes an unsupported causal claim: 'Someone researching should I sell online or open a store will not find their question answered here' — this outcome claim is not traced to the evidence",
+    "The second H3 block contains a causal statement without a condition: 'The page now assumes you already decided to launch an online store' — no evidence shows Shopify intended this assumption or that visitors experience it this way",
+    "The final H3 block's takeaway is buried in sentence 2–3, not delivered in the first two sentences",
+    "Word count is approximately 210 words — exceeds the 120–180 target by 30 words"
   ],
   "requiredFixes": [
-    "Add bold formatting to all verbatim website quotes: 'Explore ways to sell', 'Learn more about Shopify', 'explore ways to sell' (second instance)",
-    "Make H3 headings searchable by adding context. Examples: 'What changed: Education CTAs removed', 'Who this filters: Category-comparison shoppers', 'Audit: Count your education vs action CTAs'",
-    "Make final test more specific to Shopify's evidence — reference the feature-specific CTAs (Website Builder, Shop App) as the benchmark, not just generic 'action CTAs'"
+    "Rewrite the ## heading to spell out 'call-to-action (CTA)' on first use, or replace 'CTA' with 'conversion path' or 'button strategy' so founders do not need to translate jargon",
+    "In the second H3 block, delete or reframe the unsupported outcome claim about who will 'not find their question answered' — stick to describing what the evidence shows (removed CTAs, added CTAs) without predicting visitor experience",
+    "In the second H3 block, add a condition to any causal statement: 'The page now assumes you already decided to launch an online store — IF your traffic is predominantly branded search' or similar",
+    "Move the practical takeaway in the final H3 block to the opening: 'Open your homepage and count how many CTAs start with Learn or Explore' should be sentence 1",
+    "Trim 30 words — likely from the second H3 block, which is the longest and contains the unsupported claims"
   ],
   "riskFlags": [
-    "'This path no longer serves people who are still comparing categories' — This is a causal claim about who is filtered out, but the evidence only shows CTAs removed, not visitor behavior or conversion data. Soften to 'This path assumes visitors have already compared categories' or add conditional framing."
+    "Outcome claim without data: 'Someone researching should I sell online or open a store will not find their question answered here' — no evidence provided that this visitor type exists or that they bounce",
+    "Causal claim without condition: 'The page now assumes you already decided to launch an online store' — this is an interpretation, not a fact traceable to the evidence",
+    "Outcome claim in final sentence: 'Shopify can afford the swap because most of their homepage visitors already know what Shopify does' — no traffic data provided to support this claim"
   ],
   "seoNotes": [
-    "Section heading 'Shopify's CTA shift: from education to instant signup' contains company name and 'CTA' — strong searchability",
-    "H3 subheadings lack searchable terms — they read well for engaged readers but offer no anchor for Google snippet extraction",
-    "No meta-level keyword waste — section stays tight on CTA evolution topic"
+    "Positive: The ## heading includes 'Shopify' and 'CTA' (searchable term for marketers)",
+    "Positive: All three H3 headings are present and use plain, searchable language",
+    "Neutral: The section does not use the primary keyword ('Shopify landing page') but this is acceptable for an internal analytical section"
   ],
-  "rewriteInstruction": "The draft is strong but has three fixable issues. First, apply bold formatting to ALL verbatim website quotes — 'Explore ways to sell', 'Learn more about Shopify', and 'explore ways to sell' (second instance) must be **'bold-quoted'**. Second, make the H3 subheadings searchable by adding context that works for Google and skimmers: 'What changed: Education CTAs removed', 'Who this filters: Category-comparison shoppers', 'Audit: Count your education vs action CTAs'. Third, anchor the final test to Shopify's specific shift — instead of generic 'action CTAs', reference the feature-specific CTAs like Website Builder and Shop App as the benchmark. Finally, soften the causal claim in paragraph 2 ('This path no longer serves...') to conditional framing ('This path assumes visitors have already compared categories' or 'If a visitor is still comparing Shopify to custom sites, this path offers no entry point').",
+  "rewriteInstruction": "Rewrite the ## heading to define CTA on first use or replace it with plain language (e.g. 'How Shopify's conversion buttons changed from education to activation'). In the second H3 block, delete the unsupported outcome claim about who will 'not find their question answered' and stick to describing what the evidence shows: which CTAs were removed, which were added, and what that shift suggests (not what it causes). Add a condition to the causal statement about assumptions ('The page now assumes X — if your traffic is branded'). Move the practical takeaway in the final H3 block to sentence 1 ('Open your homepage and count...'). Trim 30 words total — the second H3 block is the longest and contains the speculative claims, so start there. Keep the rhythm varied and the opening factual.",
   "dimensionScores": {
-    "evidenceAccuracy": 23,
+    "evidenceAccuracy": 17,
     "specificity": 15,
-    "plainLanguage": 20,
-    "scannability": 14,
-    "searchableHeadings": 4,
-    "rhythmAndOpening": 9,
-    "founderTakeaway": 3
+    "plainLanguage": 16,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

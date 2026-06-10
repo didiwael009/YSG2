@@ -186,11 +186,11 @@ const AtAGlanceSection = ({ content }: { content: string }) => {
 
 // ─── Section: Visual Timeline — plain white with eyebrow label ────────────────
 
-const TimelineSection = ({ content }: { content: string }) => (
+const TimelineSection = ({ heading, content }: { heading: string; content: string }) => (
   <section className="scroll-mt-28">
     <SectionLabel>Visual timeline</SectionLabel>
     <h2 className="mb-4 mt-0 font-display text-[26px] font-bold leading-[1.1] text-[#11101a] md:text-[32px]">
-      How the homepage evolved
+      {heading}
     </h2>
     <div
       className="max-w-[700px]"
@@ -201,11 +201,11 @@ const TimelineSection = ({ content }: { content: string }) => (
 
 // ─── Section: Messaging Evolution — warm tinted card ─────────────────────────
 
-const MessagingSection = ({ content }: { content: string }) => (
+const MessagingSection = ({ heading, content }: { heading: string; content: string }) => (
   <section className="scroll-mt-28 rounded-[22px] border border-[#ffd7c5] bg-[#fff5ef] px-7 py-6">
     <SectionLabel>Messaging analysis</SectionLabel>
     <h2 className="mb-4 mt-0 font-display text-[26px] font-bold leading-[1.1] text-[#3d1a06] md:text-[32px]">
-      Messaging evolution
+      {heading}
     </h2>
     <div
       className="max-w-[700px] [&_p]:text-[#4d3520]"
@@ -216,11 +216,11 @@ const MessagingSection = ({ content }: { content: string }) => (
 
 // ─── Section: CTA & Navigation — bordered white section ───────────────────────
 
-const CtaNavSection = ({ content }: { content: string }) => (
+const CtaNavSection = ({ heading, content }: { heading: string; content: string }) => (
   <section className="scroll-mt-28 border-y border-[#11111f]/10 py-8">
     <SectionLabel>CTA &amp; navigation</SectionLabel>
     <h2 className="mb-4 mt-0 font-display text-[26px] font-bold leading-[1.1] text-[#11101a] md:text-[32px]">
-      CTA and navigation evolution
+      {heading}
     </h2>
     <div
       className="max-w-[700px]"
@@ -231,7 +231,7 @@ const CtaNavSection = ({ content }: { content: string }) => (
 
 // ─── Section: Lessons — dark card with numbered rows ─────────────────────────
 
-const LessonsSection = ({ content }: { content: string }) => {
+const LessonsSection = ({ heading, content }: { heading: string; content: string }) => {
   const lessons = content
     .split(/\n\n+/)
     .map((b) => b.trim())
@@ -241,7 +241,7 @@ const LessonsSection = ({ content }: { content: string }) => {
     <section className="scroll-mt-28 rounded-[26px] bg-[linear-gradient(135deg,#171021,#0d0d1a)] p-7 text-white shadow-[0_24px_70px_rgba(7,7,17,0.18)] md:p-8">
       <SectionLabel light>Lessons</SectionLabel>
       <h2 className="mb-2 mt-0 font-display text-[26px] font-bold leading-[1.02] text-white md:text-[32px]">
-        Lessons for SaaS teams
+        {heading}
       </h2>
       <p className="mb-8 text-[15px] leading-[1.6] text-[#b8b4c8]">
         Based on observable changes — not confirmed strategy or outcome data.
@@ -363,13 +363,13 @@ const ArticleBody = ({ markdown }: ArticleBodyProps) => {
     if (isAtAGlance(h)) {
       elements.push(<AtAGlanceSection key={h} content={section.content} />);
     } else if (isTimeline(h)) {
-      elements.push(<TimelineSection key={h} content={section.content} />);
+      elements.push(<TimelineSection key={h} heading={h} content={section.content} />);
     } else if (isMessaging(h)) {
-      elements.push(<MessagingSection key={h} content={section.content} />);
+      elements.push(<MessagingSection key={h} heading={h} content={section.content} />);
     } else if (isCtaNav(h)) {
-      elements.push(<CtaNavSection key={h} content={section.content} />);
+      elements.push(<CtaNavSection key={h} heading={h} content={section.content} />);
     } else if (isLessons(h)) {
-      elements.push(<LessonsSection key={h} content={section.content} />);
+      elements.push(<LessonsSection key={h} heading={h} content={section.content} />);
     } else {
       elements.push(
         <GenericSection

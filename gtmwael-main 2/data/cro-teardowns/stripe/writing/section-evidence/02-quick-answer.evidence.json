@@ -1,0 +1,133 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "Stripe",
+  "companyUrl": "https://stripe.com",
+  "articleTitle": "Stripe Homepage Teardown: Oct 2022 to Jun 2026",
+  "h1": "How Stripe rewrote its homepage over 4 years",
+  "fromLabel": "Oct 2022",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 5,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 6,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Stripe landing page",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Oct 2022 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 4 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "6 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Global Payments",
+      "after": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Stripe is a suite of APIs powering online payment processing and commerce solutions for internet businesses of all sizes. Accept payments and scale faster.",
+      "after": "Stripe is a financial services platform that helps all types of businesses accept payments, build flexible billing models, and manage money movement.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Stripe | Payment Processing Platform for the Internet",
+      "after": "Stripe | Financial Infrastructure to Grow Your Revenue"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Stripe moved from developer-centric payment API positioning to enterprise-ready financial infrastructure platform by replacing 'Global Payments' with a revenue-growth outcome promise and removing product-specific navigation in favor of audience segmentation paths.",
+    "old_positioning_frame": "A suite of payment processing APIs designed for developers building internet businesses",
+    "new_positioning_frame": "Comprehensive financial services platform that handles revenue operations from first transaction to enterprise scale",
+    "buyer_shift": "Developers evaluating payment integration options → Business decision-makers seeking financial infrastructure partners",
+    "funnel_shift": "Mid-funnel product evaluation (developers comparing API features) → Top-funnel strategic problem recognition (executives exploring revenue operations modernization)",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Global Payments",
+        "new": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+        "meaning": "Signals a shift from category descriptor ('payments') to outcome promise ('grow your revenue') and scope expansion beyond payments to full financial services infrastructure, suggesting Stripe is positioning for larger contract values with buyers who control broader financial operations budgets."
+      },
+      {
+        "element": "Page title",
+        "old": "Stripe | Payment Processing Platform for the Internet",
+        "new": "Stripe | Financial Infrastructure to Grow Your Revenue",
+        "meaning": "Indicates Stripe is willing to sacrifice SEO equity in 'payment processing' category searches to own 'financial infrastructure' positioning, which may signal confidence in brand recognition and intent to attract buyers searching for strategic infrastructure rather than tactical payment tools."
+      },
+      {
+        "element": "Navigation",
+        "old": "Payments Online payments | Checkout Pre-built payments page | Elements Customizable payments UIs | Payment Links No-code payments | Radar Fraud & risk management | Connect Payments for platforms",
+        "new": "Guide me | Start now | Contact sales | Stripe for enterprises | Stripe for startups | Stripe for platforms",
+        "meaning": "Suggests a move away from product-feature browsing (which serves bottom-funnel technical evaluators) toward audience-based self-segmentation, which is consistent with targeting business buyers who need guidance on which combination of products solves their use case rather than developers who know which specific API they need."
+      },
+      {
+        "element": "Section headings",
+        "old": "Unified platform | Designed for developers | Why Stripe | Global scale",
+        "new": "Flexible solutions for every business model. | The backbone of global commerce | Powering businesses of all sizes. | Reliable, extensible infrastructure for every stack.",
+        "meaning": "Points to a deliberate removal of developer-specific messaging ('Designed for developers') and replacement with business-outcome language ('every business model', 'backbone of commerce'), which may indicate Stripe is optimizing for executive buyers while trusting that developers will find technical documentation through other paths."
+      },
+      {
+        "element": "CTAs",
+        "old": "Contact Sales | Become a Partner | get financing | Start with payments | Read the docs | Explore partners",
+        "new": "Get started | Sign up with Google | Watch now | Read the story | Read the guide | Explore no-code",
+        "meaning": "Suggests a shift from transactional next steps ('Start with payments', 'Read the docs') toward educational content consumption ('Read the story', 'Read the guide') and audience segmentation ('Explore no-code'), which is consistent with serving earlier-stage consideration where buyers need to understand strategic fit before committing to technical implementation paths."
+      }
+    ],
+    "copy_this_if": "Your product category has already reached majority adoption in your target market, your brand name is widely recognized by non-technical executives, and you have evidence that product-level navigation is driving small-deal self-serve signups but not enterprise contract expansion",
+    "do_not_copy_this_if": "Developers are your primary buyer and champion within target accounts, or your brand lacks recognition with C-level executives who would need to understand what specific products you offer before trusting you with financial infrastructure responsibilities",
+    "safer_version_for_early_stage_saas": "Test adding a single audience-segmented landing page (e.g., '/for-enterprises') while preserving product-level navigation on the main homepage, then measure whether inbound demo requests from that page have higher ACV or faster close rates than requests from product pages",
+    "risk_if_copied": "Technical evaluators may bounce if they cannot quickly identify whether you offer the specific capability they need (e.g., 'Does this company handle recurring billing?' becomes harder to answer from generic 'financial infrastructure' positioning), leading to increased support volume and longer sales cycles as prospects request custom demos to understand basic product scope",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-10T19:43:20.031Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.021216
+  },
+  "seo-intent": {
+    "primary_keyword": "Stripe homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, growth marketer, or product leader who manages a B2B or B2C platform's positioning and wants to understand how Stripe shifted from developer-first to enterprise-ready messaging—and whether a similar repositioning strategy would work for their own business.",
+    "recommended_h1_format": "How [Company] Repositioned From Developer APIs to Enterprise Financial Infrastructure",
+    "secondary_keywords": [
+      "Stripe homepage evolution CRO analysis",
+      "Stripe shifted from developer-centric to enterprise positioning",
+      "Stripe homepage redesign 2023-2026 case study",
+      "How Stripe changed its value proposition messaging",
+      "Stripe audience segmentation homepage strategy"
+    ],
+    "content_angle": "Focus on the *strategic reasoning* behind Stripe's move away from product-centric navigation (Payments, Checkout, Elements) toward outcome-driven, audience-segmented pathways (enterprises, SMBs, platforms). The searcher wants to know: (1) What signal prompted the shift? (2) How does the new H1 promise different outcomes? (3) What happens to developer-first messaging? (4) Is this repositioning replicable for my own SaaS platform? Frame it as a masterclass in repositioning risk—Stripe is betting it can serve enterprises AND developers, but the homepage now leads with revenue growth, not API flexibility.",
+    "what_the_searcher_wants": "Validation or caution about whether their own B2B/B2C platform should also move up-market and shift messaging from product features to business outcomes; concrete examples of how to test audience segmentation at scale.",
+    "what_to_avoid": "Do NOT treat this as a simple before/after design comparison or list the CSS changes. Avoid assuming the change was driven by 'modernizing the look'—it wasn't. Do NOT ignore the removal of 'Designed for developers' or treat it as a minor edit; this is the core tension. Do NOT present the shift as universally positive; acknowledge the risk that Stripe may confuse its original developer audience or dilute brand clarity. Do NOT miss the role of the new 'Guide me' navigation option—this is Stripe's hedge against audience confusion.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-10T19:43:27.345Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0031648
+  }
+}

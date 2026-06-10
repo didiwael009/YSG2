@@ -2984,5 +2984,376 @@
     "ok": true,
     "detail": "score 83/100 — PASS ✓ — $0.0070",
     "ts": "2026-06-08T22:57:33.187Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-5",
+    "ts": "2026-06-10T19:14:16.847Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift validation",
+    "ok": true,
+    "detail": "confidence: high",
+    "ts": "2026-06-10T19:14:47.326Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json saved",
+    "ok": true,
+    "detail": "$0.0235",
+    "ts": "2026-06-10T19:14:47.329Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-10T19:14:47.331Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json saved",
+    "ok": true,
+    "detail": "keyword: \"Intercom homepage teardown\"  $0.0031",
+    "ts": "2026-06-10T19:14:56.933Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-target.json",
+    "ok": true,
+    "detail": "already exists — manual keyword preserved",
+    "ts": "2026-06-10T19:14:56.934Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:14:56.935Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-10T19:14:56.944Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:14:56.945Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "5026 in / 115 out — $0.0434",
+    "ts": "2026-06-10T19:15:02.921Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 71/100 — FAIL — $0.0726",
+    "ts": "2026-06-10T19:15:31.497Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-10T19:15:31.500Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "6091 in / 135 out — $0.0929",
+    "ts": "2026-06-10T19:15:35.669Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.1239",
+    "ts": "2026-06-10T19:16:05.709Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 72/100 — did not reach 85",
+    "ts": "2026-06-10T19:16:05.711Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:16:05.712Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:16:05.713Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:16:05.713Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:16:05.715Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 1041 words",
+    "ts": "2026-06-10T19:16:05.722Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Intercom homepage CRO teardown",
+    "ts": "2026-06-10T19:16:05.723Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:16:05.727Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0281",
+    "ts": "2026-06-10T19:16:21.991Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-10T19:26:50.810Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:26:50.812Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2927 in / 279 out — $0.0130",
+    "ts": "2026-06-10T19:27:02.067Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0397",
+    "ts": "2026-06-10T19:27:27.278Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-10T19:27:27.282Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4342 in / 306 out — $0.0574",
+    "ts": "2026-06-10T19:27:34.433Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.0800",
+    "ts": "2026-06-10T19:27:55.252Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-10T19:27:55.253Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "4110 in / 280 out — $0.0965",
+    "ts": "2026-06-10T19:28:01.905Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v3",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.1125",
+    "ts": "2026-06-10T19:28:14.820Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Final v3",
+    "ok": true,
+    "detail": "score 87/100 — PASS",
+    "ts": "2026-06-10T19:28:14.821Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-10T19:28:14.823Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:28:14.824Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2789 in / 283 out — $0.1252",
+    "ts": "2026-06-10T19:28:25.059Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 73/100 — FAIL — $0.1495",
+    "ts": "2026-06-10T19:28:48.067Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-10T19:28:48.068Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4084 in / 252 out — $0.1656",
+    "ts": "2026-06-10T19:28:55.285Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.1889",
+    "ts": "2026-06-10T19:29:18.236Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-10T19:29:18.238Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "3968 in / 251 out — $0.2045",
+    "ts": "2026-06-10T19:29:26.709Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.2252",
+    "ts": "2026-06-10T19:29:43.216Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-10T19:29:43.220Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-10T19:29:43.223Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:29:43.225Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3052 in / 171 out — $0.2369",
+    "ts": "2026-06-10T19:29:49.083Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.2574",
+    "ts": "2026-06-10T19:30:09.881Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": false,
+    "detail": "score 72/100 — did not reach 85",
+    "ts": "2026-06-10T19:30:09.883Z"
+  },
+  {
+    "step": "reassemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 1046 words",
+    "ts": "2026-06-10T19:30:09.905Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:30:09.909Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 94/100 — PASS ✓ — $0.0397",
+    "ts": "2026-06-10T19:30:43.296Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:30:43.298Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 85/100 — PASS ✓ — $0.0065",
+    "ts": "2026-06-10T19:30:57.525Z"
   }
 ]

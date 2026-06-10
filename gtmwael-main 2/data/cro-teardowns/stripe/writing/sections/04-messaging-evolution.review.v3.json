@@ -1,0 +1,34 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "H3 heading 'Who the old Stripe homepage would serve' lacks the company name in the ## section heading — it appears only in the subheading",
+    "The final test is slightly generic — 'Read the headline aloud' could apply to any teardown, though the Stripe-specific comparison partially rescues it",
+    "First H3 block (65 words) exceeds the 60-word cap for H3 body text",
+    "The opening sentence in H3 block 1 uses a conditional framing ('If you didn't know...') that delays the practical takeaway"
+  ],
+  "requiredFixes": [
+    "Trim the first H3 block body to 60 words or fewer — current count is approximately 65 words",
+    "Make the final test more Stripe-specific: instead of 'Read the headline aloud. Does it name what you are, or does it claim what you deliver?' try 'Count how many outcomes your headline promises before naming your category. Stripe went from zero (category label) to one (revenue growth). If your headline is a category label, rewrite it as a single outcome claim and A/B test for 2 weeks.'"
+  ],
+  "riskFlags": [
+    "The phrase 'That shift suggests Stripe now expects visitors who already understand the category' is a causal inference — the evidence shows the text changed, but does not prove Stripe's expectation or visitor knowledge level. Recommend softening to 'That shift is consistent with targeting visitors who...' or 'This pattern often appears when companies target...'"
+  ],
+  "seoNotes": [
+    "The ## section heading 'Stripe's messaging evolution: what changed between 2022 and 2026' is searchable — it contains the company name, 'messaging', and the date range",
+    "All verbatim quotes are correctly bolded with double asterisks",
+    "The section is approximately 180 words — within the 140–200 target range",
+    "H3 headings are clear but could be more search-friendly: 'Who the old Stripe homepage would serve' vs 'What Stripe's 2022 homepage targeted' (the latter includes a year, improving discoverability)"
+  ],
+  "rewriteInstruction": "Trim the first H3 block to 60 words by removing the conditional opener ('If you didn't know what Stripe did') and leading with the factual observation: 'The old headline read **'Global Payments'** — a category label, not an outcome.' Then collapse the meta description observation into the same sentence. In the final H3 block, replace the generic 'Read the headline aloud' test with a Stripe-anchored, time-boxed action: 'Count how many outcomes your headline promises before naming your category. Stripe went from zero to one. If yours is zero, rewrite it as a single outcome claim and A/B test for two weeks.' Soften the causal claim in the closing sentence to 'This pattern is consistent with targeting visitors who already understand the category' instead of 'suggests Stripe now expects.'",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 14,
+    "plainLanguage": 20,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

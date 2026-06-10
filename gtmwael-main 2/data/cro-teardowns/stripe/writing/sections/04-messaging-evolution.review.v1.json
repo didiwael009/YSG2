@@ -1,30 +1,45 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 67,
+  "pass": false,
   "issues": [
-    "Paragraph 2 uses 'appears to serve' without labeling it as interpretive inference",
-    "Phrase 'growth-stage companies comparing billing engines' introduces specificity not directly anchored in the evidence",
-    "Paragraph 3 contains 'may address the objection' — hedging is appropriate but occurs multiple times across the section",
-    "Minor: 'CFO or finance operator' persona is inferred, not named in evidence"
+    "Multiple conversion outcome claims without data: 'The page now expects a sales conversation, not immediate self-serve signup' — no evidence this is true",
+    "Causal claim without condition: 'This served visitors who needed to learn what the product category was' — assumes causation from headline text alone",
+    "Generic paragraph in H3.3: the final paragraph could appear in any SaaS teardown with minimal edits",
+    "H3.1 and H3.2 both exceed 60 words (approximately 75 and 73 respectively)",
+    "Heading lacks the company name AND a topic term — 'What this means for the sales process' contains neither 'Stripe', 'homepage', 'positioning', 'messaging', 'CTA', nor 'conversion'",
+    "Expert term used without immediate plain-language definition: 'positioning statement' appears with no explainer",
+    "Final takeaway is a generic rhetorical question, not a specific runnable test anchored to Stripe's evidence",
+    "Section reads strategist-to-strategist in places: 'vendor-comparison vocabulary', 'positioning statement', 'category labeling' all assume the reader already speaks marketing"
   ],
   "requiredFixes": [
-    "In paragraph 2, replace 'appears to serve' with 'can be read as serving' to label the inference explicitly",
-    "In paragraph 3, add 'This interpretation assumes...' before the objection analysis to strengthen risk control"
+    "Remove or condition the claim 'The page now expects a sales conversation, not immediate self-serve signup' — no evidence supports this outcome claim",
+    "Replace 'positioning statement' with plain language: 'a claim about what Stripe does for you' or similar",
+    "Rewrite H3.3 to be Stripe-specific: reference the exact headline change, the shift from 'suite of APIs' to 'financial infrastructure', or the addition of 'billing models' language",
+    "Break H3.1 and H3.2 into shorter paragraphs or trim to under 60 words each",
+    "Change the H3.3 heading to include 'Stripe' or 'messaging' or 'homepage' — e.g. 'What Stripe's messaging shift means for your homepage'",
+    "Replace the generic final question with a specific test: 'Open your homepage. Count how many times you explain what your product category is vs. how many times you compare capabilities. Stripe went from 1:0 to 0:3.'",
+    "Add plain-language definitions inline: 'positioning statement (a claim about what the product does for you)' or 'vendor-comparison vocabulary (language someone uses when choosing between options)'"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "'The page now expects a sales conversation, not immediate self-serve signup' — no CTA data, no signup flow evidence, no sales process evidence provided",
+    "'This served visitors who needed to learn what the product category was before they could evaluate' — causal claim from headline text alone, no user research or funnel data",
+    "'The language assumes the visitor is comparing platforms' — outcome assumption without evidence"
+  ],
   "seoNotes": [
-    "Company name 'Stripe' appears in first 15 words — strong SEO anchor",
-    "Section uses company-specific messaging quotes throughout, supporting keyword relevance for '[company] headline change' searches"
+    "Section heading 'from payment platform to financial infrastructure' contains searchable terms ('payment platform', 'financial infrastructure') — positive",
+    "H3.3 heading 'What this means for the sales process' lacks searchable terms — missed opportunity for 'Stripe homepage messaging' or similar",
+    "Company name appears in section heading — positive for brand search",
+    "No keyword stuffing — natural term usage"
   ],
-  "rewriteInstruction": "Strengthen interpretive labeling in paragraph 2 ('appears to serve' → 'can be read as serving') and add one explicit interpretive frame at the start of paragraph 3 ('This interpretation assumes…') to reinforce risk control. The section meets the SECTION GOAL and includes conversion implication, buyer psychology, and founder takeaway — no structural rewrite needed, only two targeted hedging improvements.",
+  "rewriteInstruction": "Anchor every paragraph to Stripe's specific evidence. Replace 'positioning statement' and 'vendor-comparison vocabulary' with plain explanations the first time they appear. Break H3.1 and H3.2 into two shorter paragraphs each, or trim to under 60 words. Rewrite H3.3 to reference Stripe's exact changes (the shift from 'suite of APIs' to 'helps all types of businesses', the addition of 'billing models' and 'money movement'). Change the H3.3 heading to include 'Stripe' or 'messaging'. Replace the final rhetorical question with a specific, runnable test: 'Open your homepage in a private window. Count how many sentences explain what your product category is. Then count how many compare your capabilities to alternatives. Stripe went from explaining the category to assuming you already know it.' Remove or condition all outcome claims ('expects a sales conversation', 'served visitors who needed to learn') — stick to what the text says, not what it causes.",
   "dimensionScores": {
-    "evidenceAccuracy": 23,
-    "clarity": 14,
-    "specificity": 15,
-    "seoUsefulness": 10,
-    "croUsefulness": 10,
-    "riskControl": 7,
-    "analysisDepth": 15
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 6,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

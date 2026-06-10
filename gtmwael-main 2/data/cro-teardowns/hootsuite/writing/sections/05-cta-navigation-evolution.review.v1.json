@@ -1,45 +1,45 @@
 {
-  "score": 78,
+  "score": 68,
   "pass": false,
   "issues": [
-    "Paragraph 1 exceeds 90 words (93 words) without a distinct second idea justifying the length",
-    "Paragraph 2 exceeds 90 words (92 words) without a distinct second idea justifying the length",
-    "First paragraph lacks company-specific proper noun in the opening 40 words — 'Hootsuite' appears nowhere in the first sentence",
-    "Paragraph 2 uses vague phrasing 'appears to prioritise' without grounding in a specific dated change or quoted evidence element",
-    "The phrase 'can be read as a bifurcated funnel' is interpretive language that lacks a risk label",
-    "Analysis of CTA duplication as 'cognitive load' is not traced to a specific evidence item showing visitor confusion or A/B test data",
-    "Navigation analysis claims 'now must navigate deeper' but evidence shows only that CTAs were removed/added, not site structure depth",
-    "SaaS founder takeaway in paragraph 3 is generic — the observation about labeling CTAs applies to any dual-CTA homepage, not specific to Hootsuite's evidence"
+    "HARD CAP TRIGGERED: Causal outcome claims without data ('That works if your brand is already shortlisted. It costs conversions if visitors are still deciding') → total capped at 70",
+    "Paragraph 1 (What changed): 79 words — exceeds 60-word limit by 19 words",
+    "Paragraph 2 (Who this filters out): 65 words — exceeds 60-word limit by 5 words",
+    "Section heading lacks searchable term: 'CTA shift' is present but 'homepage' is missing — heading reads as CTA-focused but not homepage-specific",
+    "H3 'Who this filters out' does not deliver takeaway in first two sentences — opens with abstract friction statement instead of practical insight",
+    "Final audit test is generic ('check whether your inbound traffic mix changed') — not specific to Hootsuite's evidence (e.g. no mention of demo-first positioning or trial-vs-demo balance)",
+    "Causal claim without condition: 'It costs conversions if visitors are still deciding' — no data provided to support conversion impact",
+    "Word count: approximately 185 words — exceeds 180-word maximum by 5 words",
+    "Bold quote inconsistency: 'Start Your Free 30-day Trial' is bolded but later reference 'Start free trial' (from removed list) is bolded while 'Start your free trial' (from added list) is also bolded — creates confusion about which version is which snapshot"
   ],
   "requiredFixes": [
-    "Split paragraph 1 into two paragraphs: one for the CTA change observation (old→new CTAs), one for the bifurcated funnel implication",
-    "Split paragraph 2 into two paragraphs: one for navigation label changes, one for the pre-conversion friction analysis",
-    "Add 'Hootsuite' or a quoted CTA label in the first sentence to meet SEO proper-noun requirement",
-    "Replace 'appears to prioritise' with a specific dated change: e.g., 'Between [date] and [date], Hootsuite removed \"Start free trial\" from top-level nav and added \"Explore integrations\"'",
-    "Label the bifurcated funnel interpretation: 'This dual-CTA structure can be read as targeting two buyer segments'",
-    "Tie the cognitive load claim to a specific evidence item: mention that both 'Start your free trial' AND 'Request a demo' appear in the added list, creating two competing conversion paths",
-    "Replace 'now must navigate deeper' with evidence-grounded phrasing: 'The new nav includes \"Explore integrations\" and \"Contact us\" — neither of which is a direct signup path — while removing \"Start free trial\" and \"Compare plans\" from top-level nav'",
-    "Make the SaaS founder takeaway more specific to Hootsuite's evidence: reference the exact CTA labels in the evidence ('Request a demo' + 'Start your free trial') and note that neither includes buyer-segment microcopy in the provided data"
+    "Remove or rewrite causal conversion claims: 'It costs conversions if visitors are still deciding' must become conditional ('may reduce conversion if...') or be deleted",
+    "Trim paragraph 1 (What changed) to under 60 words — cut the aside about trial label capitalization, focus on demo-vs-trial prominence shift",
+    "Trim paragraph 2 (Who this filters out) to under 60 words — remove 'That works if your brand is already shortlisted' sentence entirely, lead with the filtering insight",
+    "Revise H3 'Who this filters out' opening to deliver takeaway first: start with 'Visitors who want to self-serve now hit a demo gate' instead of abstract friction statement",
+    "Make final audit test specific: 'Open your homepage in private browsing. Count clicks to start a trial without entering work email or booking a call. If that number is >2, segment last 90 days of trial starts by traffic source — did demo-gated traffic convert at the same rate?'",
+    "Add 'homepage' to section heading: 'Hootsuite homepage CTA shift: from product exploration to demo requests'",
+    "Cut 15–20 words total to meet 180-word cap"
   ],
   "riskFlags": [
-    "'increases cognitive load' is stated as fact without visitor research or A/B test data to support the causal claim",
-    "'must now choose between two conversion paths before they understand which buyer segment they belong to' implies a visitor mental state not present in the evidence",
-    "'This may help buying committees justify a purchase decision' is a causal speculation without supporting data"
+    "'It costs conversions if visitors are still deciding' — presents outcome claim without supporting data from evidence",
+    "'That works if your brand is already shortlisted' — implies causal relationship (brand awareness → demo tolerance) without evidence",
+    "'cold paid or SEO traffic often cannot' — generalization not anchored to Hootsuite's specific traffic mix or conversion data"
   ],
   "seoNotes": [
-    "NEGATIVE: No company-specific proper noun in the first 40 words — 'Hootsuite' does not appear until the third paragraph",
-    "POSITIVE: Section uses specific CTA labels from evidence ('Request a demo', 'Start your free trial', 'Explore integrations')"
+    "Section heading 'CTA shift' is searchable but lacks 'homepage' anchor — reduce discoverability for 'Hootsuite homepage CTA' queries",
+    "H3 'What changed' is descriptive but not search-optimized — consider 'From free trial to demo request' for query matching",
+    "No internal link opportunities created — section could reference Hootsuite's demo page or trial flow but does not"
   ],
-  "rewriteInstruction": "Split the first two paragraphs at the 50-word mark to bring each under 90 words. Add 'Hootsuite' in the first sentence (e.g., 'Hootsuite's old homepage offered…'). Replace 'appears to prioritise' with a dated change from the evidence ('Between Jan 2023 and Jun 2026, Hootsuite removed X and added Y'). Label every interpretation with 'can be read as' or 'may signal' to clarify risk. Tie the cognitive load claim to the specific evidence item: both 'Request a demo' and 'Start your free trial' appear in the added CTA list. In paragraph 2, identify which buyer audience the old nav served (self-serve users who want to compare plans and start a trial immediately) vs the new nav (buying committees who need to explore integrations and contact sales). Anchor the SaaS founder takeaway to Hootsuite's exact CTA labels: note that neither 'Request a demo' nor 'Start your free trial' includes buyer-segment microcopy in the evidence, and explain that adding a single line under each button (e.g., 'For small teams' vs 'For enterprises') would reduce the self-selection burden. Remove the unsupported causal claim 'increases cognitive load' unless you can trace it to a specific evidence item showing visitor confusion.",
+  "rewriteInstruction": "Remove both causal conversion claims ('costs conversions', 'works if shortlisted') — replace with conditional observations ('may filter out visitors who prefer self-serve'). Trim paragraph 1 to 55 words by cutting the trial label capitalization detail. Trim paragraph 2 to 58 words by deleting the 'works if shortlisted' sentence. Revise H3 'Who this filters out' to open with 'Self-serve visitors now hit a demo gate before evaluating the product.' Rewrite final audit test to be Hootsuite-specific: 'Open your homepage incognito. Count clicks to trial without work email or demo booking. Compare last 90 days: did demo-first positioning change trial starts by traffic source?' Add 'homepage' to section heading. Final word count must be under 180.",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
-    "clarity": 7,
+    "evidenceAccuracy": 15,
     "specificity": 11,
-    "seoUsefulness": 7,
-    "croUsefulness": 7,
-    "riskControl": 5,
-    "analysisDepth": 8,
-    "editorialQuality": 5
+    "plainLanguage": 18,
+    "scannability": 3,
+    "searchableHeadings": 6,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

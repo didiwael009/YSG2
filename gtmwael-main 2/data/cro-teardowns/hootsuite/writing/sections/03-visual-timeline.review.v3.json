@@ -1,0 +1,42 @@
+{
+  "score": 82,
+  "pass": false,
+  "issues": [
+    "First H3 block is 79 words — exceeds 60-word cap for H3 sub-block bodies (scannability penalty).",
+    "Second H3 block contains unsupported causal claim: 'Hootsuite's brand carries that context before the visitor lands on the page' — no evidence supports this brand-reach assumption (evidenceAccuracy penalty).",
+    "Second H3 block contains another unsupported claim: 'A founder searching social media management sees the brand name in results and arrives knowing what to expect' — no search-result or visitor-intent data in evidence (evidenceAccuracy penalty).",
+    "Term 'category leadership positioning' appears without plain-language definition in the same sentence (plainLanguage penalty).",
+    "Final test takeaway is good but the instruction 'count the same way' could be more specific about what to count (founder clarity issue).",
+    "Section heading is searchable (contains 'Hootsuite', 'homepage', 'positioning') — no penalty.",
+    "All website quotes are correctly bolded — no penalty.",
+    "Word count: approximately 195 words — within 140–200 range, no penalty.",
+    "Opening sentence could be stronger: 'changed seven times' is factually accurate but not the most interesting entry point given the evidence shows a substantive positioning shift."
+  ],
+  "requiredFixes": [
+    "First H3 block body: reduce from 79 words to under 60. Move the 'assumes the visitor already knows' explanation into the second H3 block or trim it.",
+    "Second H3 block: remove or condition the claim 'Hootsuite's brand carries that context before the visitor lands on the page' — no evidence supports this. Replace with a conditional: 'If Hootsuite's brand is already known to the visitor, the new headline can skip category explanation.'",
+    "Second H3 block: remove or condition the claim 'A founder searching social media management sees the brand name in results and arrives knowing what to expect' — no search or visitor data in evidence. Replace with: 'This positioning assumes the visitor already recognizes the brand or product category.'",
+    "Second H3 block: add plain-language definition immediately after 'category leadership positioning': 'category leadership positioning — when a company stops explaining what it does and starts claiming it does it best'."
+  ],
+  "riskFlags": [
+    "UNSUPPORTED CLAIM: 'Hootsuite's brand carries that context before the visitor lands on the page' — no brand-awareness or traffic-source data in evidence.",
+    "UNSUPPORTED CLAIM: 'A founder searching social media management sees the brand name in results and arrives knowing what to expect' — no search-result or visitor-journey data in evidence.",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'This is category leadership positioning' presented as fact rather than interpretation — should be framed as 'This reads like category leadership positioning' or 'If the brand is already known, this positioning works as category leadership'."
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains 'Hootsuite', 'homepage', and 'positioning' — all searchable terms.",
+    "POSITIVE: All three H3 subheadings contain 'Hootsuite' and a topic term ('headline', 'category', 'homepage').",
+    "NEUTRAL: The opening sentence could front-load a more specific finding ('Hootsuite shifted from beginner benefit to platform depth') rather than the neutral 'changed seven times'."
+  ],
+  "rewriteInstruction": "Trim the first H3 block to under 60 words by moving the 'assumes the visitor already knows' phrase into the second block. In the second H3 block, replace both unsupported brand-awareness claims ('Hootsuite's brand carries that context' and 'A founder searching...') with conditional language: 'If the brand is already known, the new headline can skip category explanation. If not, the page risks losing non-branded visitors who need that context.' Add a plain-language definition immediately after 'category leadership positioning': 'when a company stops explaining what it does and starts claiming it does it best'. In the final test block, replace 'count the same way' with: 'Count how many words in your H1 name your product category or explain what it does. If the answer is zero and your brand is not already widely recognized, you may be skipping explanation non-branded visitors still need.'",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 15,
+    "plainLanguage": 16,
+    "scannability": 8,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

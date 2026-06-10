@@ -1,26 +1,28 @@
 {
-  "createdAt": "2026-06-08T09:45:04.310Z",
+  "createdAt": "2026-06-10T19:52:53.859Z",
   "slug": "stripe",
   "source": {
     "finalJudgePass": true,
     "seoPass": true,
-    "finalJudgeScore": 94,
-    "seoScore": 82
+    "finalJudgeScore": 92,
+    "seoScore": 85
   },
   "sectionsToRerun": [
     {
-      "sectionId": "01-intro",
-      "reasons": [
-        "Primary keyword 'Stripe homepage CRO teardown' appears only once in the body (in metadata discussion context) — integrate it naturally into the introduction or first H2",
-        "No clear H1 distinction — the markdown shows '# How Stripe rewrote its homepage over 4 years' but this differs from the title 'Stripe Homepage Teardown: Oct 2022 to Jun 2026' — align them or ensure th"
-      ],
-      "priority": "low",
-      "source": "seo-audit"
-    },
-    {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Paragraphs in 'Messaging Evolution' and 'Lessons for SaaS Teams' sections exceed 150 words — break into smaller chunks (3-4 sentences max) for scannability"
+        "Section 'Stripe homepage positioning': 'If your brand lacks recognition with business executives or developers still need to discover what specific capabilities you offer, this approach may create con",
+        "Section 'Should SaaS companies copy': 'If your homepage traffic does not arrive with that same knowledge, big-picture outcome language without category anchoring will confuse rather than convert' — co",
+        "In the 'What it costs' section, add explicit caveat: 'We observed this change; we cannot confirm Stripe saw improved or worse conversion rates. Your own traffic patterns will differ.' This prevents re",
+        "Under 'Quick answer,' the phrase 'This positioning assumes visitors already understand that Stripe processes payments' is correct but could be softened to avoid implying causality: Change to 'This pos"
+      ],
+      "priority": "medium",
+      "source": "both"
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "The meta description uses an ellipsis (…) which is 155 characters total including spaces. Verify exact character count in your CMS; if it exceeds 155, trim to 'A CRO teardown of Stripe's homepage chan"
       ],
       "priority": "low",
       "source": "seo-audit"
@@ -28,12 +30,12 @@
   ],
   "skippedIssues": [
     {
-      "issue": "Title is 50 characters — good length, but consider adding a modifier for uniqueness: 'Stripe Homepage Teardown: Oct 2022 to Jun 2026 (CRO Analysis)' to differentiate from potential competitor analyses",
+      "issue": "Section 'What it costs': 'cold traffic may leave before understanding what you offer' — prediction without supporting conversion data",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Meta description ends with ellipsis '…' which may appear unfinished in SERPs — complete the sentence or rephrase to end cleanly within 155 characters",
-      "reason": "metadata field in seo.json, not section content"
+      "issue": "Section 'Who the new path may not serve': 'The new path requires account creation before any sales conversation' — asserts workflow requirement without evidence that sales conversations are blocked",
+      "reason": "cannot map to a specific section — may require manual review"
     }
   ]
 }

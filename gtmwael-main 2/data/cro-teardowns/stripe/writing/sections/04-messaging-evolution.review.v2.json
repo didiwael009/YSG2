@@ -1,0 +1,44 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "The section interprets Stripe's messaging change as a deliberate shift 'from explaining to comparing' without evidence that this was the strategic intent. The note in the evidence explicitly says 'No confirmed strategy is implied.'",
+    "The draft repeatedly uses causal framing without attaching conditions: 'spoke to someone still learning', 'speaks to someone comparing', 'assumes you already know' — all presented as facts rather than possible interpretations.",
+    "H3 #2 heading 'Who the new page serves' violates searchability — it contains no company name or topic term (messaging, positioning, homepage).",
+    "H3 #3 heading 'What Stripe's messaging shift means for your homepage' is too long and could be more scannable.",
+    "The opening of H3 #3 ('Stripe moved from explaining the category to listing capabilities') repeats the causal claim without a condition, violating the rubric's requirement for conditional framing.",
+    "Paragraph 1 of H3 #3 is approximately 68 words, exceeding the 60-word limit for H3 body blocks.",
+    "The final founder test is good but could be more specific to Stripe's pattern (it's somewhat generic).",
+    "The section uses 'category' 5 times in 199 words, creating repetitive rhythm."
+  ],
+  "requiredFixes": [
+    "Replace all causal claims with conditional framing. Change 'The old page spoke to someone still learning' to 'The old page would work for someone still learning what Stripe does' or 'If a visitor doesn't know what payment infrastructure is, the old headline...'",
+    "Add company name or topic term to H3 #2 heading. Suggestion: 'Who the new Stripe homepage serves' or 'Stripe's new messaging targets platform shoppers'",
+    "Split the 68-word paragraph in H3 #3 into two blocks or trim to under 60 words.",
+    "Rewrite the H3 #3 opening to deliver the takeaway in sentence one without repeating the causal claim. Example: 'Check whether your homepage explains your category or compares your capabilities. Stripe's homepage shifted emphasis from the first to the second.'",
+    "Make the final founder test more specific to Stripe's pattern. Example: 'Open your homepage. Read the H1 aloud. Does it name what you are (category label) or list what you do (capability claims)? Stripe went from category to capabilities.'"
+  ],
+  "riskFlags": [
+    "The draft frames Stripe's change as a deliberate strategy ('moved from explaining to comparing') when the evidence note says 'No confirmed strategy is implied.'",
+    "The phrase 'The old page spoke to someone still learning' is presented as fact without a condition or qualifier.",
+    "The phrase 'The new page speaks to someone comparing payment platforms' is causal without supporting conversion data or visitor intent evidence.",
+    "The claim 'assumes you already know what payment infrastructure is' attributes intent to Stripe without evidence."
+  ],
+  "seoNotes": [
+    "Positive: Section heading contains 'Stripe', 'messaging', and 'comparing capabilities' — all searchable terms.",
+    "Negative: H3 #2 heading is not searchable ('Who the new page serves' has no company name or topic term).",
+    "Positive: All quoted elements are properly bolded (**bold quotes** format).",
+    "Positive: Section is 199 words, within the 140–200 range."
+  ],
+  "rewriteInstruction": "Reframe all causal claims as conditional observations. Replace 'spoke to' and 'speaks to' with 'would work for' or 'If the visitor is [type], then...'. Add 'Stripe' or 'homepage' to the H3 #2 heading. Split or trim the 68-word paragraph in H3 #3. Move the practical takeaway to sentence one of H3 #3 ('Check whether your homepage explains your category or compares capabilities') and make the final test more specific to Stripe's pattern (category label vs. capability list). Vary sentence rhythm to avoid repetition of 'category' and 'The [old/new] page' structures. Ensure every claim traces directly to the quoted evidence without implying strategic intent.",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 14,
+    "plainLanguage": 18,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

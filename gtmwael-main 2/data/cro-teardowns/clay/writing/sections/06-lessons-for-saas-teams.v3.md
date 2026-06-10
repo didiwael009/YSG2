@@ -1,25 +1,17 @@
-## Should you copy Clay's homepage shift? When enterprise positioning works and when it doesn't
+## Should SaaS companies copy Clay's homepage shift from self-serve to enterprise messaging?
 
-### The pattern
+### The Clay homepage pattern: product mechanism to platform positioning
 
-Clay replaced the viral mechanics that built its brand. Between July 2021 and June 2026, the company shifted from **"Clay"** as the H1 to **"Go to market with unique data — and the ability to act on it"**, removed the **"Get template"** CTA entirely, and added **"Get a demo"** as the primary conversion path.
+Clay replaced a product mechanism headline (**"This spreadsheet fills itself"**) with infrastructure positioning (**"Every GTM data point imaginable, in one place"**). The pattern is not messaging refinement — it is a complete rewrite of what the page says the product IS, built for a different buyer who already knows what data enrichment means.
 
-This pattern shuts down one buyer motion (the path a visitor takes from first visit to signed contract) to serve a different one — IF your current self-serve path was converting qualified users. Clay's evidence shows the elements changed but not whether the old path was driving revenue at the contract size the company now targets.
+### Who should copy Clay's homepage strategy
 
-### Who should copy this
+You can copy this if your brand already answers "what does this product do" before the visitor lands. If your URL completes the category sentence, and if you now sell contracts that individual users cannot authorize, this shift may help you speak to the buyer who controls budget instead of the user who discovered your product first.
 
-Copy this if your current homepage attracts users who cannot authorize the contract value you now require. Clay made this shift after five years.
+### Who should NOT copy Clay's self-serve removal
 
-Before copying, test whether your sales team can handle increased demo volume and whether you have case studies for the platform scale you claim. Clay's navigation overhaul removed eight items including **"All templates"** and three use-case paths — evidence that the company had infrastructure to replace the removed paths.
+Do not copy this if practitioners still share your product in Slack channels or post it on Reddit. Clay removed template exploration CTAs and use-case navigation (**"All templates"**). If viral adoption still drives your pipeline — when individual employees start using your product without management approval — removing self-serve paths before establishing predictable enterprise sales may cost you the champions inside larger accounts.
 
-### Who should NOT copy this
+### The test before you copy Clay's homepage CTA strategy
 
-Do not copy this if practitioner signups still drive your pipeline (the list of potential customers your sales team is working with). Removing self-serve paths before enterprise infrastructure (the sales team, case studies, and operational capacity needed to close large contracts) is ready creates a gap where neither motion works.
-
-Clay's meta description shifted from **"No more million tab opening and manual copy pasting"** to **"Access 150+ premium data sources and AI research agents in one platform."** That language change may cost you word-of-mouth distribution if your practitioner community shares your product based on pain-point recognition rather than platform capabilities.
-
-### The test before you copy
-
-Open your Google Analytics. Filter to homepage visitors in the last 30 days. What percentage come from companies with 50+ employees?
-
-If it is under 20%, you do not yet have the traffic mix this move requires. Clay removed eight navigation items. Check your analytics to see if most visitors arrive from individual practitioners or from companies matching your target contract size before you remove anything.
+Open your homepage. Count how many CTAs let visitors explore without talking to sales. Clay went from four exploration paths (**"Request access"** · **"Get template"** · **"Explore documentation"** · **"Watch video"**) to one (**"Start building for free"**). If three out of four of your current CTAs still invite self-serve exploration, you still depend on that motion — and cannot afford to remove it yet.

@@ -1,18 +1,22 @@
 {
-  "createdAt": "2026-06-08T22:57:33.196Z",
+  "createdAt": "2026-06-10T19:26:50.807Z",
   "slug": "intercom",
   "source": {
     "finalJudgePass": false,
     "seoPass": true,
-    "finalJudgeScore": 82,
+    "finalJudgeScore": 78,
     "seoScore": 83
   },
   "sectionsToRerun": [
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 04-messaging-evolution OR 05-cta-navigation-evolution: Consolidate the self-serve→enterprise observation into ONE section and remove or clearly differ",
-        "Section 06 ('Why Most Founders Should Not Copy This Homepage Yet') fails the tradeoff requirement. While it discusses proof burden, it does not contain an explicitly named marketing tradeoff formatted",
+        "Judge rerun recommendation: 04-messaging-evolution — remove intermediate headline claim not in evidence, add H3 subheadings",
+        "'This reduces drop-off from choice paralysis' — causal claim with no evidence of actual drop-off change",
+        "'filters out visitors who needed nurture before committing' — presented as fact, not interpretation",
+        "Remove the unsupported intermediate headline claim: 'By October 2025, it shifted to Intercom is the AI customer service company' — this specific headline is not in the evidence.",
+        "Reframe 'filters out visitors who needed nurture before committing' to interpretation: 'This architecture appears to filter out visitors who may need nurture before committing.'",
+        "Make ## headings more searchable: 'The page stopped talking to support teams and started addressing platform buyers' should include 'Intercom' or a specific topic phrase like 'Intercom meta descriptio",
         "Primary keyword 'Intercom homepage CRO teardown' appears only once in the body (in meta description and title). Incorporate naturally at least once more in the opening paragraph or first subheading to",
         "The article claims to analyze 'four snapshots' but never explicitly labels or dates them (Jan 2023, Oct 2025, Jun 2026, etc.) in a scannable table or timeline. Add a visual or textual reference anchor"
       ],
@@ -20,27 +24,55 @@
       "source": "both"
     },
     {
-      "sectionId": "06-lessons-for-saas-teams",
+      "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "Judge rerun recommendation: 06-lessons-for-saas-teams: Add an explicitly formatted tradeoff statement early in the section, not just at the end.",
-        "Identified as weak section by final judge"
+        "Judge rerun recommendation: 05-cta-navigation-evolution — remove unsupported causal claims, add H3 structure, anchor generic observations to specific CTAs",
+        "## Ten CTAs swapped, two decision doors remain",
+        "Add company-specific anchors to paragraphs 3-4 in the CTA section — these read generic ('The homepage now assumes buyers arrive decision-ready') without citing specific removed CTAs."
       ],
       "priority": "high",
       "source": "final-judge"
     },
     {
-      "sectionId": "03-visual-timeline",
+      "sectionId": "01-intro",
       "reasons": [
-        "03-visual-timeline (missing)",
-        "Article lacks a visual timeline section (section 03) which was listed in sectionsIncluded but is missing from the article body. Either remove from sectionsIncluded or add the section."
+        "Secondary keywords are underrepresented in body text. Ensure 'Intercom homepage redesign', 'SaaS homepage CRO teardown', and 'homepage A/B test analysis' appear naturally at least once each in relevan"
       ],
-      "priority": "medium",
-      "source": "final-judge"
+      "priority": "low",
+      "source": "seo-audit"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "Full article: Reduce proof burden mentions to a single section or clearly differentiate each mention's angle.",
+      "issue": "By October 2025, it shifted to 'Intercom is the AI customer service company'",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "This reduces drop-off from choice paralysis",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "filters out visitors who needed nurture before committing",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "## From 'support customers' to 'the only helpdesk for AI' — a category ownership bet",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "## The page stopped talking to support teams and started addressing platform buyers",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'The earlier Intercom homepage scattered intent across... the current version consolidates to...' — implies conversion improvement without data",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Reframe 'This reduces drop-off from choice paralysis' to a conditional observation: 'This pattern may reduce drop-off from choice paralysis if visitors arrive decision-ready.'",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add H3 subheadings to break up analytical sections. The three main ## sections lack internal structure.",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
@@ -50,14 +82,6 @@
     {
       "issue": "No H1 tag explicitly present in the article structure. The title 'How Intercom rewrote its homepage over 3 years' should be the H1; ensure semantic HTML reflects this.",
       "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Section 05-cta-navigation-evolution (medium priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
-    },
-    {
-      "issue": "Section 01-intro (low priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]
 }

@@ -1,0 +1,49 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "H3 heading 'What changed' lacks searchable keywords — not discoverable by Google",
+    "H3 heading 'Why it matters' lacks searchable keywords — not discoverable by Google",
+    "H3 heading 'What it costs' lacks searchable keywords — not discoverable by Google",
+    "Term 'category leadership positioning' appears without plain-language definition in same sentence",
+    "Term 'category explanation' used multiple times without definition",
+    "Term 'explanatory messaging' is expert jargon without plain-language anchor",
+    "Causal claim without condition: 'If visitors arrive without this context, they may struggle to understand what the page offers' — no evidence that struggle occurred",
+    "Causal claim: 'removing the explanation may cost conversions' — no conversion data in evidence",
+    "Second paragraph in 'Why it matters' (54 words) stacks abstract nouns: 'category leadership positioning', 'category', 'platform depth', 'alternatives', 'context'",
+    "Final test is generic advice ('remove your company name...show it to someone') — not anchored to Hootsuite-specific evidence or a sub-5-minute test the founder can run",
+    "Opening sentence uses template structure ('X replaced Y with Z') when evidence supported more interesting entry (e.g. the paradox that brand strength allows explanation removal)"
+  ],
+  "requiredFixes": [
+    "Replace H3 'What changed' with searchable heading containing 'headline', 'Hootsuite', or 'positioning' — example: 'Hootsuite headline: beginner benefit to platform capability'",
+    "Replace H3 'Why it matters' with searchable heading — example: 'Why Hootsuite can skip category explanation'",
+    "Replace H3 'What it costs' with searchable heading — example: 'Test: does your homepage need category explanation?'",
+    "Add plain-language definition to 'category leadership positioning' in same sentence — example: 'This is category leadership positioning (claiming first place in a market the visitor already understands) — when a company stops explaining...'",
+    "Remove or define 'explanatory messaging' — replace with 'messaging that explains what the product does' or similar plain phrase",
+    "Remove causal claim 'they may struggle to understand' OR add condition with evidence anchor — example: 'If a visitor lands from a non-branded search (no prior context), the page offers no explanation of what social media management software does'",
+    "Remove 'may cost conversions' OR rewrite as conditional observation tied to traffic mix — example: 'If non-branded search makes up >30% of homepage visits, removing the category explanation creates a gap'",
+    "Final H3 test must be Hootsuite-specific and runnable in under 5 minutes — example: 'Open Hootsuite's current homepage. Count how many words in the H1 or first section explain what the product category does. (Answer: zero.) Then open the Jan 2023 snapshot. Count again. (Answer: 'social media' appears twice in the headline.) Compare your homepage to both.'"
+  ],
+  "riskFlags": [
+    "UNSUPPORTED CAUSAL CLAIM: 'If visitors arrive without this context, they may struggle to understand what the page offers' — evidence does not include user testing, bounce rate, or visitor confusion data",
+    "UNSUPPORTED OUTCOME CLAIM: 'removing the explanation may cost conversions if non-branded traffic makes up a meaningful share' — no conversion data, traffic mix data, or A/B test results in evidence",
+    "INVENTED REASONING: 'The page no longer introduces what social media management software can do' — true observation, but the next sentence ('Instead, it compares platform depth...') is interpretive without evidence that comparison is the page's intent"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains 'Hootsuite', 'homepage', 'positioning', 'headline' — all searchable",
+    "NEGATIVE: All three H3 subheadings ('What changed', 'Why it matters', 'What it costs') are template-only — contain no searchable keywords a Google user would type",
+    "NEGATIVE: H3 subheadings do not contain 'Hootsuite', 'headline', 'messaging', 'category', or other topic terms — will not rank for long-tail queries",
+    "POSITIVE: Section includes exact quoted headlines from evidence in bold — supports 'Hootsuite headline' search queries"
+  ],
+  "rewriteInstruction": "Rewrite all three H3 subheadings to include searchable keywords: company name OR topic terms like 'headline', 'positioning', 'category', 'messaging'. Define 'category leadership positioning' in plain language within the same sentence it first appears. Remove both causal claims ('visitors may struggle', 'may cost conversions') OR rewrite as conditional observations anchored to traffic-mix evidence you do not have — safer to remove. Replace the final generic test with a Hootsuite-specific comparison: tell the founder to open both snapshots, count explanation words in each H1, then compare their own homepage to both. Rewrite the opening sentence to reflect the most interesting finding from the evidence: that brand strength allows explanation removal, or that the shift happened incrementally across seven snapshots, not as a single redesign. Avoid stacking abstract nouns in the 'Why it matters' block — break the second paragraph into two shorter sentences with concrete actors.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 13,
+    "plainLanguage": 11,
+    "scannability": 12,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

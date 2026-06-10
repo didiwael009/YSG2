@@ -1,35 +1,52 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 78,
+  "pass": false,
   "issues": [
-    "Section heading is searchable but generic — could specify 'Clay homepage' for stronger SEO",
-    "The phrase 'the pattern' in H3 #1 opening is slightly template-y, though not a hard violation",
-    "H3 #2 'Who should copy this' paragraph is 74 words — exceeds the 60-word cap by 14",
-    "H3 #3 'Who should NOT copy this' paragraph is 63 words — exceeds the 60-word cap by 3"
+    "Section heading is clever-only with no searchable terms ('When it works and when it doesn't') — missing 'Clay', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "H3 heading 'The pattern' is generic and could appear in any teardown — lacks company name or topic term",
+    "H3 heading 'Who should copy this' lacks company name or topic term for searchability",
+    "H3 heading 'Who should NOT copy this' lacks company name or topic term",
+    "H3 heading 'The test before you copy' lacks company name or searchable topic term",
+    "First paragraph under 'The pattern' contains unsupported causation claim: 'you will eventually rewrite your homepage twice' — no evidence provided for this causal prediction",
+    "Paragraph 1 under 'The pattern' is 68 words (over 60-word limit for analytical sections)",
+    "Paragraph 1 under 'Who should copy this' is 62 words (over 60-word limit)",
+    "Paragraph 1 under 'Who should NOT copy this' is 76 words (significantly over 60-word limit)",
+    "Generic phrase 'Same product, different buyer, completely rewritten page' could appear in any B2B SaaS teardown — not anchored to Clay's specific evidence",
+    "Unsupported quantitative claim '40% or more of your pipeline from self-serve signups' — this number does not appear in evidence and is presented as a threshold without justification",
+    "Causal claim 'may cost you the users who become champions' lacks conditional framing — presented as inevitable outcome",
+    "The final test introduces a new metric ('convert 40% or more') not derived from Clay's evidence or mentioned earlier in the article"
   ],
   "requiredFixes": [
-    "Split the second H3 paragraph into two: deliver the 'if you already removed your waitlist' takeaway in the first two sentences, then move the competitor-mention evidence into a second, shorter paragraph",
-    "Split the third H3 paragraph: deliver the 'do not copy if templates still listed' takeaway in the first two sentences, then move the viral distribution consequence into a second paragraph under 60 words"
+    "Rewrite ## heading to include 'Clay' and 'homepage': e.g. 'When to copy Clay's homepage shift from product-led to enterprise messaging'",
+    "Rewrite all four H3 headings to include 'Clay' or 'homepage' + topic term for SEO: e.g. 'The Clay homepage pattern: product mechanism to platform positioning'",
+    "Remove or rephrase 'you will eventually rewrite your homepage twice' — this is a causal prediction not supported by one company's five-year journey",
+    "Cut paragraph 1 under 'The pattern' to under 60 words — remove 'Same product, different buyer, completely rewritten page' (generic filler)",
+    "Cut paragraph under 'Who should copy this' to under 60 words",
+    "Cut paragraph under 'Who should NOT copy this' to under 60 words — currently 76 words",
+    "Remove or justify the '40% or more' threshold in the final test — this number does not trace to Clay's evidence",
+    "Add conditional framing to 'may cost you the users' claim: e.g. 'If viral adoption still drives your pipeline, removing self-serve paths before establishing enterprise sales may cost you...'"
   ],
   "riskFlags": [
-    "The claim 'that shift only works when inbound volume can support a sales team' implies causation but the evidence shows correlation only — Clay made the shift, we observe the CTA change, but no direct volume data supports the necessity claim",
-    "The statement 'Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends' is a prediction of outcome without attached condition or evidence from Clay's own experience"
+    "Causal prediction 'you will eventually rewrite your homepage twice' presented as inevitable outcome without supporting evidence from Clay or other companies",
+    "Unsupported quantitative threshold '40% or more of your pipeline from self-serve signups' introduced in final test without tracing to evidence",
+    "Causal claim 'may cost you the users who become champions' lacks conditional qualifier — implies certainty of negative outcome",
+    "Generic pattern claim 'Same product, different buyer, completely rewritten page' could describe hundreds of B2B SaaS companies, not anchored to Clay-specific evidence"
   ],
   "seoNotes": [
-    "Section heading contains 'Clay' and 'homepage' — strong for search intent around company-specific teardowns",
-    "Each H3 heading uses plain search terms: 'pattern', 'who should copy', 'who should NOT copy', 'test before you copy' — all likely to match queries from founders researching positioning shifts",
-    "The final H3 'The test before you copy' is especially strong for conversion — founders searching for actionable advice will land here",
-    "Bolded verbatim quotes throughout support snippet extraction for Google results"
+    "NEGATIVE: Section heading contains zero searchable terms — 'Should SaaS companies copy Clay's homepage strategy?' would rank but current heading 'When it works and when it doesn't' will not",
+    "NEGATIVE: All four H3 headings lack company name and topic terms — 'The pattern' / 'Who should copy this' / 'Who should NOT copy this' / 'The test before you copy' are not searchable",
+    "POSITIVE: Section does mention 'homepage' in the ## heading, providing minimal search relevance",
+    "OPPORTUNITY MISSED: H3 headings could target long-tail searches like 'when to remove self-serve CTA' or 'product-led to enterprise homepage' but currently use generic frames"
   ],
-  "rewriteInstruction": "Split the second and third H3 paragraphs to meet the 60-word cap. In H3 #2, deliver the 'if you already removed your waitlist' takeaway in sentences 1–2, then break to a new paragraph for the competitor-mention evidence. In H3 #3, deliver the 'do not copy if templates still listed' takeaway in sentences 1–2, then break to a new paragraph for the viral distribution consequence. Soften the two causal claims flagged in riskFlags by adding conditions: change 'that shift only works when' to 'Clay's shift required' and change 'will reduce pipeline' to 'risks reducing pipeline if [condition]'. The section is otherwise strong — specific, scannable, and anchored to Clay's evidence.",
+  "rewriteInstruction": "Rewrite all five headings to include 'Clay' and/or 'homepage' plus a topic term ('positioning', 'CTA', 'messaging', 'self-serve'). Cut the three body paragraphs under H3 blocks to 55–60 words each by removing generic commentary ('Same product, different buyer' / 'may make sense for you'). Replace the unsupported '40% or more' metric in the final test with a Clay-anchored instruction: count how many of Clay's four original exploration CTAs still exist on your page, then compare that to the one remaining on Clay's current page. Add conditional language to any claim that predicts an outcome ('If [condition], this shift may...') and remove the causal prediction 'you will eventually rewrite your homepage twice' unless you can trace it to evidence showing Clay rewrote twice or cite a pattern across multiple companies.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "specificity": 15,
-    "plainLanguage": 20,
-    "scannability": 9,
-    "searchableHeadings": 9,
-    "rhythmAndOpening": 10,
-    "founderTakeaway": 5
+    "evidenceAccuracy": 15,
+    "specificity": 12,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 1,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

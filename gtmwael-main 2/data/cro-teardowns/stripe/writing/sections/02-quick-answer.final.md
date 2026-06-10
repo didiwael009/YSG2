@@ -1,0 +1,3 @@
+## Quick answer
+
+Stripe replaced its **"Global Payments"** headline with **"Financial infrastructure to grow your revenue"** and removed product-specific navigation in favor of audience segmentation paths like **"Stripe for enterprises"** and **"Guide me."** This positioning assumes visitors already understand that Stripe processes payments and are now evaluating whether it can handle broader financial operations at scale. If your brand lacks recognition with business executives or developers still need to discover what specific capabilities you offer, this approach may create confusion about what your product actually does.

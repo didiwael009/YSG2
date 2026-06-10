@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Stripe homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, growth marketer, or product leader who manages a B2B or B2C platform's positioning and wants to understand how Stripe shifted from developer-first to enterprise-ready messaging—and whether a similar repositioning strategy would work for their own business.",
+  "recommended_h1_format": "How [Company] Repositioned From Developer APIs to Enterprise Financial Infrastructure",
+  "secondary_keywords": [
+    "Stripe homepage evolution CRO analysis",
+    "Stripe shifted from developer-centric to enterprise positioning",
+    "Stripe homepage redesign 2023-2026 case study",
+    "How Stripe changed its value proposition messaging",
+    "Stripe audience segmentation homepage strategy"
+  ],
+  "content_angle": "Focus on the *strategic reasoning* behind Stripe's move away from product-centric navigation (Payments, Checkout, Elements) toward outcome-driven, audience-segmented pathways (enterprises, SMBs, platforms). The searcher wants to know: (1) What signal prompted the shift? (2) How does the new H1 promise different outcomes? (3) What happens to developer-first messaging? (4) Is this repositioning replicable for my own SaaS platform? Frame it as a masterclass in repositioning risk—Stripe is betting it can serve enterprises AND developers, but the homepage now leads with revenue growth, not API flexibility.",
+  "what_the_searcher_wants": "Validation or caution about whether their own B2B/B2C platform should also move up-market and shift messaging from product features to business outcomes; concrete examples of how to test audience segmentation at scale.",
+  "what_to_avoid": "Do NOT treat this as a simple before/after design comparison or list the CSS changes. Avoid assuming the change was driven by 'modernizing the look'—it wasn't. Do NOT ignore the removal of 'Designed for developers' or treat it as a minor edit; this is the core tension. Do NOT present the shift as universally positive; acknowledge the risk that Stripe may confuse its original developer audience or dilute brand clarity. Do NOT miss the role of the new 'Guide me' navigation option—this is Stripe's hedge against audience confusion.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T19:43:27.345Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0031648
+}

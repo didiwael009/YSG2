@@ -1,34 +1,48 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 72,
+  "pass": false,
   "issues": [
-    "First paragraph uses 'the company' as subject instead of 'Hootsuite' — weakens SEO and specificity in opening 40 words",
-    "Paragraph 2 uses 'can be read as' without identifying a specific interpretive gap — appears mechanical rather than meaningful hedging",
-    "Paragraph 3 contains a subtle overstatement: 'adds navigation steps for users who arrived ready to convert' implies conversion drop-off without data",
-    "Final paragraph contains founder takeaway but does not identify which buyer audience the microcopy would serve most (self-serve SMBs vs enterprise committees)"
+    "Section exceeds 180-word target by ~60 words (approximately 240 words total)",
+    "H3 subheading 'What changed' lacks searchable terms — not scannable for Google",
+    "H3 subheading 'Who this filters out' lacks searchable terms — not scannable for Google",
+    "Second paragraph (H3 'What changed') is approximately 75 words — exceeds 60-word limit",
+    "Third paragraph (H3 'Who this filters out') is approximately 70 words — exceeds 60-word limit",
+    "Causal claim 'This may filter out visitors who prefer to evaluate software independently' has no supporting evidence from the data",
+    "Generic phrase 'Self-serve visitors now hit a demo gate' could appear in any SaaS teardown",
+    "Generic phrase 'Someone comparing scheduling tools' is not anchored to Hootsuite-specific evidence",
+    "Section heading is searchable (contains 'Hootsuite', 'homepage', 'CTA') — positive",
+    "All verbatim quotes are properly bolded — positive",
+    "Final H3 delivers a specific, runnable test anchored to the evidence — positive"
   ],
   "requiredFixes": [
-    "Replace 'the company removed' with 'Hootsuite removed' in paragraph 1 to place the proper noun within the first 40 words",
-    "In paragraph 2, replace 'can be read as' with direct statement: 'The dual-CTA structure targets two buyer segments' — the evidence (two different CTAs) supports this without hedging",
-    "In paragraph 3, replace 'which is consistent with an enterprise sales motion but adds navigation steps' with 'which signals an enterprise sales motion and increases click depth' — removes the unsupported implication that ready-to-convert users will drop off"
+    "Cut section to 120–180 words (currently ~240). Remove or consolidate the generic scheduling-tools example.",
+    "Rewrite H3 'What changed' to include a searchable term: 'CTA path changed from trial to demo request' or 'Self-serve trial replaced with demo gate'",
+    "Rewrite H3 'Who this filters out' to include a searchable term: 'Demo-first path filters self-serve visitors' or 'Impact on independent product evaluators'",
+    "Break second paragraph into two shorter blocks or trim to under 60 words",
+    "Break third paragraph into two shorter blocks or trim to under 60 words",
+    "Remove or condition the causal claim 'This may filter out' — no evidence supports visitor filtering outcome. Replace with observable fact: 'The demo request now appears before the trial CTA in the primary navigation path.'",
+    "Replace 'Someone comparing scheduling tools on their own time' with a Hootsuite-specific anchor: 'A visitor arriving from a 'social media management tool' search sees...'"
   ],
   "riskFlags": [
-    "Paragraph 3: 'adds navigation steps for users who arrived ready to convert' — implies conversion friction without measurement data"
+    "CAUSAL CLAIM WITHOUT EVIDENCE: 'This may filter out visitors who prefer to evaluate software independently' — no data on visitor filtering, conversion delta, or bounce rate provided",
+    "CONDITIONAL MISSING: 'may filter out visitors' should be 'may filter out visitors IF they abandon at the demo gate' or similar condition",
+    "GENERIC SaaS COMMENTARY: 'Someone comparing scheduling tools' is not specific to Hootsuite and could appear in Calendly, Asana, or any SaaS teardown"
   ],
   "seoNotes": [
-    "NEGATIVE: Company name 'Hootsuite' does not appear in the first 40 words; first sentence uses 'the company' as subject",
-    "POSITIVE: Section uses specific CTA labels from evidence ('Start Your Free 30-day Trial', 'Request a demo') which may match long-tail search queries"
+    "POSITIVE: Section heading contains 'Hootsuite', 'homepage', and 'CTA' — all searchable",
+    "NEGATIVE: H3 subheadings 'What changed' and 'Who this filters out' are clever-only and unsearchable",
+    "POSITIVE: All CTA text is quoted verbatim and bolded, making the section keyword-rich for 'demo request', 'free trial', 'contact us'",
+    "NEGATIVE: The section could rank for 'demo gate' or 'self-serve trial' but does not use these terms in H3s where Google weighs them most"
   ],
-  "rewriteInstruction": "Place 'Hootsuite' as the subject of the first sentence instead of 'the company'. Remove the mechanical 'can be read as' hedge in paragraph 2 — the evidence (two distinct CTAs) directly supports the dual-segment targeting claim. In paragraph 3, replace 'adds navigation steps for users who arrived ready to convert' with 'increases click depth before trial signup' to avoid implying conversion drop-off without data. In the final paragraph, compress the founder takeaway to under 90 words and specify which buyer segment benefits most from the microcopy addition (e.g., 'This microcopy would particularly serve self-serve SMB visitors who lack the context to choose between trial and demo').",
+  "rewriteInstruction": "Cut to 120–180 words by removing the scheduling-tools example. Make H3 headings searchable: replace 'What changed' with 'Self-serve trial replaced with demo request' and 'Who this filters out' with 'Demo-first path changes visitor qualification'. Remove the unsupported causal claim about filtering visitors — replace with the observable fact that demo requests now appear before trial CTAs in the primary path. Anchor every sentence to Hootsuite-specific evidence (the exact CTA text, the sequence change). Keep the final audit instruction as-is; it is specific and runnable. Break any paragraph over 60 words into two blocks or trim aggressively.",
   "dimensionScores": {
-    "evidenceAccuracy": 22,
-    "clarity": 9,
-    "specificity": 13,
-    "seoUsefulness": 7,
-    "croUsefulness": 9,
-    "riskControl": 7,
-    "analysisDepth": 10,
-    "editorialQuality": 10
+    "evidenceAccuracy": 15,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

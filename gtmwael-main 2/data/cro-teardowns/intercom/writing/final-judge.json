@@ -1,47 +1,41 @@
 {
-  "overallScore": 82,
-  "pass": false,
-  "evidenceAccuracy": 15,
-  "riskControl": 10,
-  "croUsefulness": 13,
-  "clarity": 18,
-  "sectionCoherence": 9,
+  "overallScore": 94,
+  "pass": true,
+  "evidenceAccuracy": 25,
+  "plainLanguage": 19,
+  "scannability": 15,
+  "searchableHeadings": 10,
+  "specificity": 15,
+  "rhythmAndOpening": 10,
+  "founderTakeaway": 0,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
   "weakSections": [
-    "03-visual-timeline (missing)",
-    "06-lessons-for-saas-teams"
+    "## Why Most Founders Should Not Copy This Homepage Yet"
   ],
   "unsupportedClaims": [],
-  "riskFlags": [],
+  "riskFlags": [
+    "The phrase 'What made this viable for Intercom appears to be the depth of their proof stack' implies an internal strategic capability not evidenced by the homepage changes shown",
+    "The sentence 'Intercom can make this bet because they have the product evidence to back it' asserts a company capability without evidence of product substance",
+    "The phrase 'A claim like \"The only helpdesk designed for the AI Agent era\" demands that every downstream touchpoint — onboarding, product experience, support — reinforces category leadership' predicts a proof burden without evidence of what those touchpoints deliver"
+  ],
   "requiredFixes": [
-    "Section 06 ('Why Most Founders Should Not Copy This Homepage Yet') fails the tradeoff requirement. While it discusses proof burden, it does not contain an explicitly named marketing tradeoff formatted as '[X] in exchange for [Y]' or 'The tradeoff: [X] vs [Y].' The sentence 'The tradeoff: a category claim in exchange for a higher proof burden and narrower buyer tolerance for inconsistency' appears AFTER the main analysis, not integrated into it.",
-    "Proof burden appears in three distinct sections: Intro (paragraph 3), Section 06 (throughout), implicitly in the CTA section discussion of filtering. This exceeds the concision target of 1. Consolidate to a single mention or differentiate each use.",
-    "Self-serve→enterprise shift appears in at least two sections: CTA section ('shift away from SMB self-serve users') and implicitly in messaging evolution (practitioner→platform buyer). Consolidate.",
-    "Article lacks a visual timeline section (section 03) which was listed in sectionsIncluded but is missing from the article body. Either remove from sectionsIncluded or add the section."
+    "Add founder-facing takeaway to ## From 'support customers' to 'the only helpdesk for AI' section",
+    "Add founder-facing takeaway to ## How Intercom's homepage messaging shifted audience section",
+    "Add founder-facing takeaway to ## Intercom's CTA evolution section",
+    "Replace speculative language in final section ('What made this viable for Intercom appears to be...') with evidence-anchored observation",
+    "Final section must end with a specific runnable test anchored to Intercom evidence, not generic funnel audit advice"
   ],
   "optionalImprovements": [
-    "The opening paragraph of Section 06 hedge-phrases the analysis ('appears to be', 'can be read as'). While permissible, sharper opening claims would strengthen founder engagement.",
-    "The CTA section could more explicitly name the audience shift (e.g., 'from support practitioners to procurement buyers' stated in one sentence).",
-    "Consider making the 'So what?' in the intro section more visually distinct with bold formatting to match other sections."
+    "The opening paragraph could benefit from shorter sentence alternation — currently four consecutive complex sentences",
+    "Consider adding one H3 subheading to the final section to break the wall of explanation"
   ],
   "rerunRecommendations": [
-    "06-lessons-for-saas-teams: Add an explicitly formatted tradeoff statement early in the section, not just at the end.",
-    "04-messaging-evolution OR 05-cta-navigation-evolution: Consolidate the self-serve→enterprise observation into ONE section and remove or clearly differentiate in the other.",
-    "Full article: Reduce proof burden mentions to a single section or clearly differentiate each mention's angle."
+    "06-lessons-for-saas-teams — rewrite to remove speculative claims about Intercom's internal capabilities and add evidence-anchored runnable test"
   ],
   "model": "claude-sonnet-4-5",
-  "costUsd": 0.03087300000000004,
-  "generatedAt": "2026-06-08T22:57:18.988Z",
-  "analysisDepth": 12,
-  "founderUsefulness": 7,
-  "concision": 5,
-  "editorialSharpness": 5,
-  "articleWordCount": 1087,
-  "repetitionWarnings": [
-    "Proof burden discussed in intro (para 3: 'That's not a feature. It's a market definition'), throughout Section 06 (entire section theme), and implicitly in CTA section ('filters out visitors who needed nurture'). Three appearances.",
-    "Self-serve→enterprise shift appears in messaging evolution ('support rep who would have signed up solo') and CTA section ('shift away from SMB self-serve users'). Two appearances with similar thrust.",
-    "Category ownership / market definition appears in intro (full section 1) and again in Section 06 ('category-defining claims'). While Section 06 focuses on proof burden, the category ownership frame repeats."
-  ],
-  "sectionOverlapWarnings": [
-    "Section 06 restates the proof burden point from the intro without converting it to new action. The intro already establishes that the category claim 'demands belief in a paradigm' and warns 'are you teaching them a vocabulary they didn't ask for?' Section 06 revisits this as 'higher proof burden' without adding a distinct founder lesson beyond 'audit your funnel for coherence.'"
-  ]
+  "costUsd": 0.039710999999999996,
+  "generatedAt": "2026-06-10T19:30:43.292Z"
 }

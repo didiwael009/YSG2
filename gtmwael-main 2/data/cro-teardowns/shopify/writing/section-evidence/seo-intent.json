@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Shopify homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS growth marketer, product strategist, or conversion optimization specialist who wants to understand how Shopify repositioned itself from a beginner-friendly small business platform to an AI-first commerce solution—and whether they should replicate this strategic shift for their own company or client.",
+  "recommended_h1_format": "How [Company] Repositioned Its Homepage From Beginner Platform to AI-Powered Commerce Leader",
+  "secondary_keywords": [
+    "Shopify homepage evolution 2021-2026",
+    "how Shopify repositioned its brand messaging",
+    "Shopify CRO strategy AI shift",
+    "Shopify homepage analysis AI integration",
+    "why Shopify removed beginner onboarding messaging"
+  ],
+  "content_angle": "Focus on the strategic REASONING behind the repositioning—why Shopify abandoned its 'help beginners start from zero' positioning in favor of outcome-driven, AI-first language. The searcher wants to understand whether this move worked (higher conversion, different audience segment capture) and whether the same strategy applies to their product. Avoid treating this as a cosmetic refresh; frame it as a deliberate beachhead shift away from the crowded SMB starter market toward ambitious, AI-native builders.",
+  "what_the_searcher_wants": "To learn whether abandoning beginner-friendly messaging in favor of outcome-driven, premium positioning increases conversion rates and attracts higher-value customers—and to assess if this playbook is replicable for their own SaaS product.",
+  "what_to_avoid": "Don't just list the visual or copy changes without analyzing the strategic intent. Avoid treating the shift as inevitable 'following an AI trend'—dig into whether Shopify was losing share in the beginner segment and winning in the ambitious-builder segment. Don't ignore the removal of onboarding friction (business name generator, stock photos); explain whether this actually reduced conversion in low-intent traffic or if Shopify accepted that tradeoff. Avoid generic CRO metrics; instead, show evidence of HOW this repositioning changed Shopify's customer mix and LTV.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T19:01:04.902Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0031208
+}

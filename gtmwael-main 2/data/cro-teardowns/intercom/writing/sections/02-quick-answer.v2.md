@@ -1,0 +1,3 @@
+## Quick answer
+
+Intercom replaced its outcome-focused headline **"Support customers at exactly the right moment"** with the category claim **"The only helpdesk designed for the AI Agent era"** (a market framing where helpdesks natively orchestrate AI bots and human agents). The company also removed the section heading **"A better customer experience across support, marketing, and sales"** and eliminated navigation items including **"Custom Bots"**, **"Mobile apps"**, and **"E-commerce"**. The homepage now leads with a single product category definition rather than multiple use-case explanations.

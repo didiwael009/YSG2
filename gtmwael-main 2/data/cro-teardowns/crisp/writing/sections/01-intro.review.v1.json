@@ -1,47 +1,38 @@
 {
-  "score": 68,
+  "score": 78,
   "pass": false,
   "issues": [
-    "Unsupported outcome claim: 'That shift signals a move from emotional differentiation to capability claims' — evidence shows only headline text change, no data on differentiation strategy or outcome.",
-    "Causal claim without condition: 'you'll know when to anchor your homepage on product capability instead of buyer identity' — no evidence supports this as a transferable decision framework.",
-    "Paragraph length 146 words — exceeds 90-word cap for intro by 56 words.",
-    "Strategist-to-strategist jargon: 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity' — all used without plain-language definitions.",
-    "Generic closing sentence: 'how to test whether your own audience will reward that trade' could appear in any SaaS teardown.",
-    "Invented interpretation: 'enterprise evaluation criteria' — evidence does not mention enterprise buyers or their criteria.",
-    "Invented interpretation: 'fits enterprise evaluation criteria' — no data traces to enterprise positioning.",
-    "Missing searchable term in heading: 'repositioned' is not in the target list (homepage, positioning, messaging, CTA, conversion) and 'Crisp chat' is only the keyword, not necessarily sufficient alone."
+    "Heading is clever-only ('Positioning Shifts') with no core search terms like 'homepage', 'messaging', 'CTA', or 'conversion'",
+    "Section exceeds 90-word budget (approximately 101 words)",
+    "Opening sentence is template-default ('replaced... rewrote... reorganized') when evidence supports a more interesting entry point: the shift from trial urgency to category explanation",
+    "Final sentence is generic framework language ('diagnostic framework to your own landing page') — could appear in any teardown",
+    "Causal claim 'why it matters' is unsupported by the evidence provided (no conversion data, no strategy confirmation)",
+    "The phrase 'category explanation' is an abstract interpretation not directly traceable to evidence"
   ],
   "requiredFixes": [
-    "Remove or qualify the causal claim 'That shift signals a move from emotional differentiation to capability claims' — evidence shows only text change, not strategy or outcome.",
-    "Cut paragraph to 90 words maximum — currently 146 words.",
-    "Replace 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity' with plain-language equivalents or remove entirely.",
-    "Rewrite closing sentence to anchor on Crisp-specific evidence, not generic 'test whether your own audience will reward that trade'.",
-    "Add searchable term to heading: include 'homepage' or 'messaging' explicitly (not just 'repositioned').",
-    "Remove invented claim about 'enterprise evaluation criteria' — no evidence supports enterprise buyer focus."
+    "Change heading to include 'Crisp' + 'homepage' or 'messaging' or 'positioning' as searchable terms. Example: 'Crisp Homepage Teardown: Jul 2022 to Jun 2026' or 'How Crisp Rewrote Its Homepage Messaging Over 4 Years'",
+    "Cut to 90 words maximum. Remove the final generic sentence ('This teardown walks through...') and replace with a specific finding: 'The navigation added 8 items without removing any — a structural signal worth examining'",
+    "Rewrite opening sentence to lead with the most interesting contrast: 'Crisp's homepage stopped selling a free trial and started explaining what AI customer support is.' Then anchor with dates and specifics",
+    "Remove or qualify 'why it matters' — the evidence shows what changed, not why it matters to conversion or pipeline"
   ],
   "riskFlags": [
-    "HARD CAP TRIGGERED: Unsupported outcome claim 'signals a move from emotional differentiation to capability claims' without data → total capped at 60.",
-    "HARD CAP TRIGGERED: Additional unsupported outcome claim 'fits enterprise evaluation criteria' → reinforces cap at 60.",
-    "Causal statement 'you'll know when to anchor your homepage on product capability instead of buyer identity' lacks attached condition (e.g. 'if your ICP matches Crisp's shift').",
-    "Invented interpretation: 'enterprise evaluation criteria' — evidence contains no mention of enterprise buyers or their criteria.",
-    "Invented interpretation: 'startup-friendly positioning' — evidence mentions 'startups' in meta description but does not confirm positioning strategy."
+    "'why it matters' — no evidence provided for impact, outcomes, or strategic intent",
+    "'category explanation' — this is an interpretation, not a quoted element or measurable change"
   ],
   "seoNotes": [
-    "Positive: Heading includes primary keyword 'Crisp chat' in natural context.",
-    "Positive: Heading includes topic terms 'homepage' and 'repositioned' (though 'repositioned' is not in target list).",
-    "Negative: Heading at 16 words is long — may truncate in SERPs.",
-    "Positive: First sentence answers search query (what changed at Crisp between dates).",
-    "Negative: Keyword 'Crisp chat' appears only once — could appear more naturally in body."
+    "Heading lacks primary keyword 'Crisp chat' or 'Crisp homepage' — low search visibility",
+    "Meta description quotes are bold-quoted correctly, supporting featured snippet potential",
+    "Company name appears in first sentence, satisfying entity SEO"
   ],
-  "rewriteInstruction": "Start over. First sentence: name Crisp, the period, and the single most visible change (headline rewrite). Cut the paragraph to 75–85 words. Remove all strategist terms: 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity'. Replace with plain descriptions of what the words literally say ('human touch' became 'AI-powered support'). Do not claim the shift 'signals' a strategy or outcome — stick to observable text changes. End with a one-sentence Crisp-specific takeaway, not a generic testing prompt. Add 'homepage' to the heading if 'repositioned' is kept, or replace 'repositioned' with 'homepage messaging shift' to ensure searchability.",
+  "rewriteInstruction": "Rewrite in 85–90 words. Lead with the most specific, interesting contrast the evidence supports: Crisp stopped emphasizing trial urgency and started positioning as an AI category. Open with that shift, then anchor it to the date range and three quoted elements (old headline, new headline, meta description change). Cut the final generic sentence entirely. Replace it with one specific, scannable fact: 'The navigation added 8 items without removing any.' Change the heading to include 'Crisp' + 'homepage' as searchable terms. Do not claim 'why it matters' unless you can trace that claim to conversion data or a named strategy document.",
   "dimensionScores": {
-    "evidenceAccuracy": 5,
-    "specificity": 10,
-    "plainLanguage": 8,
-    "scannability": 8,
-    "searchableHeadings": 7,
+    "evidenceAccuracy": 18,
+    "specificity": 12,
+    "plainLanguage": 18,
+    "scannability": 10,
+    "searchableHeadings": 5,
     "rhythmAndOpening": 10,
-    "founderTakeaway": 0
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

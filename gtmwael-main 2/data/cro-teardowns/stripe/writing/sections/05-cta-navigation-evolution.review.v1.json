@@ -1,31 +1,56 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 68,
+  "pass": false,
   "issues": [
-    "Paragraph 2: 'The CRO implication is that the page now carries a heavier burden' is an interpretive leap not explicitly grounded in evidence—no snapshot data confirms this burden was realized or measured",
-    "Paragraph 3: 'This can reduce perceived friction for casual visitors' introduces a visitor segment ('casual visitors') not present in the evidence",
-    "Paragraph 3: 'requires either smart onboarding or a well-staffed SDR team' is speculation about Stripe's internal operations, not observable from homepage evidence"
+    "Unsupported conversion outcome claim: 'removing the sales path costs qualified pipeline' — no data ties this change to pipeline loss",
+    "Causal claim without condition: 'that ordering may hurt conversion' lacks a traceable condition from the evidence",
+    "Forbidden term 'procurement requirements' used without plain-language definition",
+    "Forbidden term 'sales-assisted buyers' used without plain-language definition",
+    "Forbidden term 'activation speed' used without plain-language definition",
+    "H3 heading 'What changed' contains no searchable terms (company name, CTA, conversion, navigation)",
+    "H3 heading 'Who this filters out' contains no searchable terms",
+    "Second paragraph ('The new path may not serve...') exceeds 60 words (approx 75 words)",
+    "Generic commentary: 'Sales-assisted buyers — often from larger companies...' could appear in any SaaS teardown",
+    "Generic commentary: 'If your product requires implementation planning...' could appear in any teardown",
+    "Founder takeaway is generic ('count how many clicks') instead of specific to Stripe's evidence",
+    "Final test is not runnable in under 5 minutes — requires full navigation audit, not a single action",
+    "Opening sentence is template-driven ('Stripe removed X... added Y') when evidence supported a more interesting contrast (10 CTAs added, 10 removed — a full path replacement)",
+    "Section reads strategist-to-strategist throughout — assumes reader knows 'sales-assisted', 'procurement requirements', 'activation speed' without explanation"
   ],
   "requiredFixes": [
-    "Paragraph 2: Replace 'The CRO implication is that the page now carries a heavier burden' with 'The evidence suggests the page may now need to serve a broader buying committee, which would require...' to mark the interpretation clearly",
-    "Paragraph 3: Remove or qualify 'casual visitors'—specify which visitor behavior this refers to, or replace with 'visitors exploring without immediate purchase intent' tied to the content CTAs observed"
+    "Remove or rewrite 'removing the sales path costs qualified pipeline' — no data supports this outcome claim; attach a condition (e.g., 'if your traffic includes buyers who need pricing before signup') or delete",
+    "Remove or rewrite 'that ordering may hurt conversion' — attach a specific condition traceable to the evidence or delete the causal claim",
+    "Define 'sales-assisted buyers' in plain language on first use (e.g., 'buyers who expect to speak with a sales rep before signing up')",
+    "Define 'procurement requirements' in plain language (e.g., 'internal approval processes before they can create an account')",
+    "Define 'activation speed' in plain language (e.g., 'how fast a visitor can create an account')",
+    "Rewrite H3 'What changed' to include searchable terms: 'Stripe's CTA path: sales contact removed, self-serve signup added'",
+    "Rewrite H3 'Who this filters out' to include searchable terms: 'Who the new CTA path may exclude'",
+    "Split second paragraph into two — cut at 'Sales-assisted buyers' to bring both under 60 words",
+    "Anchor second paragraph to Stripe's specific removed CTAs — replace 'Sales-assisted buyers — often from larger companies' with 'Visitors who clicked **Contact Sales** or **Request an invite** in Oct 2022 now see...'",
+    "Rewrite final test to be specific and runnable: 'Open your homepage. Find the CTA that matches Stripe's **Get started**. Time how long it takes to reach account creation vs. a sales form. If self-serve is faster, you are filtering for activation speed.'",
+    "Rewrite opening to lead with the most interesting finding: 'Stripe replaced its entire CTA path — 10 buttons removed, 10 added. The shift moved visitors from sales qualification to instant account creation.'"
   ],
   "riskFlags": [
-    "Paragraph 2: 'That requires more proof of business outcomes, customer logos in relevant verticals, and use-case clarity' states requirements as fact without evidence these elements were added or tested"
+    "Unsupported outcome claim: 'removing the sales path costs qualified pipeline' — no conversion data or A/B test evidence provided",
+    "Causal claim without data: 'that ordering may hurt conversion for your best-fit accounts' — presents a possible outcome as certain without evidence",
+    "Generic SaaS advice: 'If your product requires implementation planning...' — not anchored to Stripe's evidence, could appear in any teardown"
   ],
   "seoNotes": [
-    "Positive: 'Stripe' appears in paragraph 1, sentence 3 within the first 40 words of analysis",
-    "Positive: Company-specific CTAs ('Get started,' 'Contact Sales,' 'Request an invite') anchor the analysis to this teardown"
+    "Section heading 'Stripe's CTA shift: from sales-assisted to self-serve activation' includes company name + CTA + conversion terms — strong",
+    "H3 'What changed' misses searchable terms — should include 'Stripe CTA' or 'conversion path'",
+    "H3 'Who this filters out' misses searchable terms — searchers will not find this with 'filters out'",
+    "Section references specific removed CTAs (**Contact Sales**, **Request an invite**, **Start with payments**) — good for long-tail search",
+    "Section does not mention 'homepage' in body text — add once for topic reinforcement"
   ],
-  "rewriteInstruction": "Tighten paragraph 2's 'CRO implication' sentence to label it as interpretation, not observed fact. In paragraph 3, remove the unsupported 'casual visitors' segment and the speculation about SDR teams—replace with observable homepage behavior (e.g., 'visitors who engage with content CTAs before signup'). Ensure every analytical claim traces to a specific CTA or H2 change from the evidence list.",
+  "rewriteInstruction": "Lead with the most surprising finding: Stripe replaced all 10 CTAs — a full path swap, not a tweak. Anchor every claim to the removed/added CTA list in the evidence. Delete the unsupported pipeline claim or attach a traceable condition ('if your traffic includes...') so it becomes a warning, not a fact. Replace strategist terms (sales-assisted, procurement requirements, activation speed) with plain explanations the first time they appear. Rewrite the H3 headings to include searchable terms: 'Stripe's CTA changes' and 'Who the new path may exclude'. Split the 75-word paragraph into two. Anchor the 'who this filters out' paragraph to the specific removed CTAs (**Contact Sales**, **Request an invite**) instead of generic SaaS buyer archetypes. Rewrite the final test to be specific and fast: 'Open your homepage. Find your primary CTA. Count how many fields or clicks separate it from account creation. If it is one click, you match Stripe's new path. If it routes to a contact form, you match the old one.' Cut any sentence that could appear in a different company's teardown.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "clarity": 14,
-    "specificity": 15,
-    "seoUsefulness": 10,
-    "croUsefulness": 10,
-    "riskControl": 7,
-    "analysisDepth": 12
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 8,
+    "scannability": 8,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

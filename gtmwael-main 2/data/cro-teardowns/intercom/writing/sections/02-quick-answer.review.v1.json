@@ -1,0 +1,41 @@
+{
+  "score": 71,
+  "pass": false,
+  "issues": [
+    "Final sentence makes a causal recommendation ('should not copy this approach') without condition or evidence trace",
+    "Word count is 76 words, exceeding the 50–75 word target for quick-answer sections",
+    "Paragraph contains a conditional outcome claim ('Companies whose buyers arrive searching for...should not copy') that lacks evidence support",
+    "The phrase 'AI Agent era' appears twice without plain-language definition",
+    "Section reads as strategist-to-strategist in the second half — uses 'positioning assumes' and 'evaluating AI-first helpdesk platforms' without translation",
+    "Generic advice in final sentence could appear in any SaaS teardown ('should not copy this approach' is not specific to Intercom's evidence)"
+  ],
+  "requiredFixes": [
+    "Remove or rewrite the final sentence ('Companies whose buyers...') — it is a causal recommendation with no evidence support and makes the section read as strategic advice rather than factual answer",
+    "Reduce word count to 50–75 words (currently ~76, but the substantive issue is the advisory sentence, not the marginal overage)",
+    "Add a plain-language definition the first time 'AI Agent era' appears, e.g.: 'The only helpdesk designed for the AI Agent era (a market framing where support software natively orchestrates AI bots and human agents)'",
+    "Replace 'This positioning assumes visitors are already evaluating AI-first helpdesk platforms and understand what AI Agent era means' with evidence-traceable observation, e.g.: 'The new headline contains no job-to-be-done language or outcome promise — just the category claim'",
+    "Anchor the second sentence to specific evidence: 'Intercom also removed the section heading **A better customer experience across support, marketing, and sales** and eliminated the nav items **Custom Bots**, **Mobile apps**, and **E-commerce**' — this makes the 'removed all' claim verifiable"
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM WITHOUT EVIDENCE: 'Companies whose buyers arrive searching for customer support software across multiple channels...should not copy this approach' — no data supports this recommendation",
+    "IMPLIED OUTCOME: 'This positioning assumes visitors are already evaluating AI-first helpdesk platforms' — this is inference about visitor intent, not traceable to evidence",
+    "GENERIC ADVICE: Final sentence could appear in any teardown and is not anchored to Intercom-specific evidence"
+  ],
+  "seoNotes": [
+    "POSITIVE: Heading contains 'Quick answer' which signals featured-snippet intent",
+    "POSITIVE: First sentence is structured as a direct answer (Subject-Verb-Object)",
+    "NEGATIVE: Word count exceeds Google's typical featured snippet length preference (50–60 words optimal)",
+    "NEUTRAL: No explicit use of 'Intercom homepage' keyword in this section, but acceptable for quick-answer format if it appears in heading above"
+  ],
+  "rewriteInstruction": "Cut the final advisory sentence entirely — it is not supported by evidence and shifts the section from factual answer to strategic recommendation. Keep the first two sentences, but add a plain-language definition of 'AI Agent era' inline (e.g., 'a market framing where helpdesks natively orchestrate AI and human agents') the first time it appears. Replace the second sentence with specific evidence: name the removed section heading ('A better customer experience across support, marketing, and sales') and at least two removed nav items (Custom Bots, Mobile apps). The goal is three factual sentences totaling 50–70 words that answer 'What did Intercom change?' with zero strategic commentary. Example structure: Sentence 1 = headline change (current is good). Sentence 2 = removed messaging elements (make specific). Sentence 3 = what this looks like on the page now (observable fact, not strategic implication).",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 12,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

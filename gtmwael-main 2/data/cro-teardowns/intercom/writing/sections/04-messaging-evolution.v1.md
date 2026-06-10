@@ -1,9 +1,13 @@
-## The page stopped talking to support teams and started addressing platform buyers
+## How Intercom's messaging shifted its target audience
 
-The old page spoke to the person managing customer conversations. The new one speaks to the person evaluating helpdesk infrastructure.
+### Who the old page served
 
-The meta description shift makes this visible. **"Intercom helps over 25,000 global organizations deliver better customer support via personalized conversations"** addressed practitioners who cared about relationship quality. **"The only helpdesk with a natively integrated AI Agent. Deliver perfect customer experiences with the highest-performing platform"** addresses buyers comparing vendor capabilities. The vocabulary moved from outcomes (better support, right moment) to architecture (natively integrated, highest-performing platform).
+The January 2023 homepage spoke to teams already using some kind of support tool and looking to improve timing or personalization. The headline promised to **"Support customers at exactly the right moment"** — language that assumes the visitor already runs customer support and wants to do it better. The meta description mentioned **"25,000 global organizations"** as social proof, not as a category anchor.
 
-The headline change reinforces this. **"Support customers at exactly the right moment"** described daily work. **"The only helpdesk designed for the AI Agent era"** positions against a competitive set. "Only" is procurement language—it answers the question "why this vendor over alternatives?" rather than "how will this help my team today?" This appears to target buyers conducting platform evaluations, not individual contributors trialing a tool.
+### Who the new page serves
 
-The tradeoff: self-serve vs sales-led. Speaking to platform buyers may filter out the support rep who would have signed up solo. If your homepage still addresses the practitioner when your best customers are now buying through procurement, the page may be converting the wrong people.
+The new page targets buyers comparing helpdesk platforms and actively evaluating AI features. The headline **"The only helpdesk designed for the AI Agent era"** assumes the visitor knows what a helpdesk is and cares about AI integration. The meta description leads with **"natively integrated AI Agent"** and ends with **"Start your free trial today"** — vocabulary for someone ready to test, not someone still learning what Intercom does.
+
+### What this means for the sales process
+
+The page now expects visitors who can self-qualify and start a trial without a demo. The earlier version left room for education; the current one filters for readiness. That works when inbound traffic already understands the category. Does your homepage assume the same level of buyer knowledge your actual visitors arrive with?

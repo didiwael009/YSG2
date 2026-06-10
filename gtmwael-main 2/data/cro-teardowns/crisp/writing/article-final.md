@@ -1,7 +1,7 @@
 ---
 title: "Crisp Homepage Teardown: Jul 2022 to Jun 2026"
 slug: crisp
-generatedAt: 2026-06-09T19:01:02.060Z
+generatedAt: 2026-06-10T19:25:50.217Z
 sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "06-lessons-for-saas-teams"]
 ---
 # How Crisp rewrote its homepage over 4 years
@@ -10,55 +10,61 @@ sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-mess
 
 ---
 
-# Crisp chat homepage evolution: how the platform repositioned from startup messaging tool to AI customer support
+# Crisp Chat Homepage Breakdown: Four Years of Positioning Shifts
 
-Between July 2022 and June 2026, Crisp chat rewrote its homepage to speak to a different buyer. The original headline promised to **"Give your customer experience a human touch"** — language aimed at startup founders looking for approachable messaging software. The current version leads with **"Augment your customer experience. AI made to support your team & customers."** That shift signals a move from emotional differentiation to capability claims, and from startup-friendly positioning to platform language that fits enterprise evaluation criteria. After reading this teardown, you'll know when to anchor your homepage on product capability instead of buyer identity — and how to test whether your own audience will reward that trade.
+Between July 2022 and June 2026, Crisp chat replaced its headline, rewrote its product description, and reorganized the entire navigation structure. The original homepage spoke to **"Startups & SMB's"** and emphasized a **"14 Days free trial"** in the meta description. The current version opens with **"Augment your customer experience. AI made to support your team & customers"** — a shift from trial urgency to category explanation. This teardown walks through what changed, why it matters, and how to apply the same diagnostic framework to your own landing page.
 
 ## Quick answer
 
 Crisp replaced its homepage headline from **"Give your customer experience a human touch"** to **"Augment your customer experience. AI made to support your team & customers."** The meta description also dropped free-trial urgency and now positions Crisp as **"the ultimate all-in-one AI-powered multichannel messaging platform."** The page title shifted from **"#1 Business Messaging Platform For Startups & SMB's"** to **"The AI Customer Support Platform for Every Business."**
 
-## Crisp homepage positioning: the shift from human touch to AI category
+## Crisp homepage positioning: how the headline changed between 2022 and 2026
 
 ### What changed
 
-The 2022 headline opened with **"Give your customer experience a human touch"** — a sentence that told you what kind of experience Crisp delivers. The 2026 headline reads **"Augment your customer experience. AI made to support your team & customers."** The page no longer explains what problem Crisp solves. It names a technology category (AI support platform) and expects you to already know why that matters.
+The 2022 headline read: **"Give your customer experience a human touch"**. The 2026 headline reads: **"Augment your customer experience. AI made to support your team & customers."**
+
+The headline changed from a promise about preserving human connection to a claim about AI capability. The category explanation — that Crisp is a messaging platform — remained in both versions, but the frame inverted.
 
 ### Why it matters
 
-The new headline names a category but does not explain what Crisp does. If visitors arrive unfamiliar with AI support as a category, the new headline may filter them out before they understand the product. The old page included section headings like **"Meet the business messaging platform that gathers customer support, sales, and marketing"** — explicit product explanation. The current page removed that line entirely.
+The new headline leads with AI as the benefit. The old headline positioned AI's opposite — the "human touch" — as what customers wanted.
+
+The meta description mirrors this shift. The 2022 version listed features and ended with **"Try now!"** The 2026 version opens with **"Crisp is the ultimate all-in-one AI-powered multichannel messaging platform"** and closes with **"leading businesses through the AI-driven revolution."** The page now assumes visitors already want AI in their support workflow.
 
 ### What it costs
 
-The old homepage told you Crisp was **"Built for customer support, marketing, and sales. All together."** The new homepage assumes you already know what an AI customer support platform does. Open your homepage and count: how many words explain what your product does versus how many name a technology category? If category terms outnumber explanatory terms, test a headline that leads with the problem you solve.
+If your target customers do not yet trust AI support, this headline skips their concern entirely. Test it by asking five customers to read the headline aloud, then finish this sentence: **"This product will help me…"** If they cannot finish it accurately, the headline may be asking them to believe something they do not yet. The page no longer reassures skeptics — it speaks to buyers already comparing AI platforms.
 
-## Crisp's messaging shifted from trial-urgency to platform comparison
+## Crisp's messaging shift: from startup trial urgency to AI platform vocabulary
 
 ### Who the old page served
 
-The old page spoke to small-business owners who needed to be convinced that customer messaging software was worth trying. The page title claimed Crisp was the **"#1 Business Messaging Platform For Startups & SMB's"** and the meta description stacked three urgency signals in one sentence: **"14 Days free trial. No credit-card required. Try now!"**
+The original page addressed founders choosing their first support tool. The page title called Crisp the **"#1 Business Messaging Platform For Startups & SMB's"**, and the meta description ended with **"14 Days free trial. No credit-card required. Try now !"** — written for someone comparing options today.
 
 ### Who the new page serves
 
-The new page assumes the visitor already knows what a customer support platform does. The headline now reads **"Augment your customer experience. AI made to support your team & customers."** The page title drops the startup qualifier and claims **"The AI Customer Support Platform for Every Business."** The meta description removes all trial language.
+The current page uses broader category language. The new title positions Crisp as **"The AI Customer Support Platform for Every Business"**, and the meta description describes a platform **"leading businesses through the AI-driven revolution"** — vocabulary that assumes the visitor already knows what customer support platforms are.
 
 ### What this means for the sales process
 
-Does your homepage still assume the visitor needs convincing — or are you writing for someone who already knows what they want? Crisp's shift suggests the company expects visitors who will explore the platform or request a demo before committing. The page no longer front-loads trial urgency, which may signal a move toward a sales-assisted process for a portion of inbound traffic.
+Open your homepage in a private tab. Count how many words in the headline assume the visitor already knows your product category. If it's more than half, you may have moved past the buyer who needs the category explained.
 
-## Crisp's CTA shift: from generic trial to AI-specific entry points
+The urgency cues are gone — no trial countdown, no exclamation marks. The page now speaks to visitors who are already familiar with the category and evaluating specific capabilities like AI integration.
 
-### From generic trial CTAs to AI-specific entry points
+## Crisp's CTA shift: from four generic buttons to ten feature-specific CTAs
 
-The homepage replaced **"Get Started"** and **"Try Crisp for free"** with **"Get your AI Agent"** and **"Start Free Trial"**. Five new CTAs now route to feature pages before signup: **"Learn more on the Crisp AI Chatbot"**, **"See all messaging channels"**, **"Learn more on Crisp Knowledge Base"**, plus separate CTAs for workflows and the inbox. The old **"Request a demo"** became **"Book a demo"**.
+### What changed
 
-### The friction cost of feature-first CTAs
+The homepage went from four CTAs to ten. Crisp removed **"Get Started"**, **"Try Crisp for free"**, and **"Request a demo"** — all category-level labels that worked without product knowledge. The new CTAs name specific layers: **"Get your AI Agent"**, **"See all messaging channels"**, **"Download Crisp for macOS"**.
 
-If a visitor arrives ready to start a trial — from a referral, a review site, or word-of-mouth — the new path requires stopping at a feature page first. The **"Get your AI Agent"** CTA links to an AI explainer, not account creation. The **"See all messaging channels"** button opens a product tour. This adds steps between intent and signup for visitors who already know they want Crisp.
+### Who this filters out
 
-### Test whether education CTAs help or hurt signup rate
+The new structure assumes familiarity. A visitor comparing messaging platforms — not yet decided on AI agents versus live chat — now encounters **"Get your AI Agent"** and **"Learn more on Crisp Knowledge Base"** with no orientation layer. If your traffic arrives from generic searches like "customer support software," ten feature-specific CTAs with no hierarchy may force a product-layer choice before the visitor understands the category.
 
-Open your homepage and list every CTA that routes to a feature page instead of signup. Crisp added five. If you did the same, compare your trial start rate before and after. Check whether visitors who click those CTAs ever reach signup — or whether they read and leave.
+### Audit your own page
+
+Open Crisp's 2026 homepage. List every CTA above the fold: **"Get your AI Agent"**, **"Start Free Trial"**, **"Book a demo"**. Count how many require prior knowledge of what "AI Agent" unlocks versus "messaging channels." Time: 90 seconds.
 
 ## Crisp homepage positioning: When narrowing your headline works and when it backfires
 

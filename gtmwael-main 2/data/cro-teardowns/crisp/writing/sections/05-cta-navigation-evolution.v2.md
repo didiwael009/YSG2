@@ -1,13 +1,17 @@
-## Crisp's CTA shift: from generic trial to AI-specific entry points
+## How Crisp's CTA strategy shifted from broad to feature-specific (2022–2026)
 
-### From generic trial CTAs to AI-specific entry points
+### From four generic CTAs to ten feature-named buttons
 
-The homepage replaced **"Get Started"** and **"Try Crisp for free"** with **"Get your AI Agent"** and **"Start Free Trial"**. Five new CTAs now route to feature pages before signup: **"Learn more on the Crisp AI Chatbot"**, **"See all messaging channels"**, **"Learn more on Crisp Knowledge Base"**, plus separate CTAs for workflows and the inbox. The old **"Request a demo"** became **"Book a demo"**.
+Crisp replaced **"Get Started"**, **"Try Crisp for free"**, and **"Request a demo"** with ten product-specific labels.
 
-### The friction cost of feature-first CTAs
+The new homepage presents **"Get your AI Agent"**, **"Start Free Trial"**, **"Book a demo"**, **"See all messaging channels"**, and **"Download Crisp for macOS"** simultaneously. Each button now names a specific product layer or feature instead of a universal entry point.
 
-If a visitor arrives ready to start a trial — from a referral, a review site, or word-of-mouth — the new path requires stopping at a feature page first. The **"Get your AI Agent"** CTA links to an AI explainer, not account creation. The **"See all messaging channels"** button opens a product tour. This adds steps between intent and signup for visitors who already know they want Crisp.
+### Which visitors the new CTA structure may exclude
 
-### Test whether education CTAs help or hurt signup rate
+If your traffic includes discovery-stage visitors — people comparing categories, not features — multiple feature-specific CTAs create a selection problem. Crisp's 2026 homepage assumes the visitor already knows which product component they need.
 
-Open your homepage and list every CTA that routes to a feature page instead of signup. Crisp added five. If you did the same, compare your trial start rate before and after. Check whether visitors who click those CTAs ever reach signup — or whether they read and leave.
+A visitor arriving from a generic search no longer sees a single orientation CTA. Instead, they encounter **"Get your AI Agent"** and **"Learn more on Crisp Knowledge Base"** above the fold without context on what differentiates them.
+
+### Audit your own page
+
+Open Crisp's 2026 homepage and count the feature-named CTAs above the fold: **"Get your AI Agent"**, **"Start Free Trial"**, **"Book a demo"**. Ask whether a visitor unfamiliar with "AI Agent" versus "messaging channels" can choose between them without scrolling.

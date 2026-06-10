@@ -1,0 +1,31 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "H3 heading 'What this means for the sales process' is not searchable — contains zero Intercom-specific terms, no 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "Final takeaway test assumes causation ('That suggests the company expects') without a conditional frame",
+    "Word count approximately 165 words — within range but on lighter side for analytical depth"
+  ],
+  "requiredFixes": [
+    "Change third H3 heading to include searchable term: 'What Intercom's messaging shift means for inbound visitors' or 'How the new positioning filters organic traffic'"
+  ],
+  "riskFlags": [
+    "'That suggests the company expects inbound traffic from branded search' — this is a causal inference without hedging language or conditional frame (e.g. 'if this shift was intentional')"
+  ],
+  "seoNotes": [
+    "Section heading lacks company name or core topic term — misses opportunity for internal anchor link visibility",
+    "Draft correctly quotes all verbatim website text in bold quotes",
+    "Strong contrast structure (old vs. new) creates natural keyword repetition for 'headline', 'meta description', 'AI Agent'"
+  ],
+  "rewriteInstruction": "Revise the third H3 heading to include 'Intercom' or a searchable term like 'homepage positioning' or 'inbound traffic'. Soften the causal claim in the final paragraph by adding a conditional frame: 'If this shift was intentional, the page now...' or 'This choice works best when visitors arrive from...' to avoid asserting unverified strategy. The rest of the section is strong — keep the structure and specificity intact.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

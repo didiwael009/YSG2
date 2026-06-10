@@ -1,54 +1,58 @@
 {
-  "score": 72,
+  "score": 68,
   "pass": false,
   "issues": [
-    "Section heading is clever-only with no searchable terms — missing 'Clay', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
-    "Multiple causal claims lack grounding in provided evidence ('This is maturity signaling', 'the page now assumes buyers already know what Clay is')",
-    "Generic paragraph in 'Who should copy this' — no specific Clay evidence anchors, could appear in any enterprise positioning teardown",
-    "Generic paragraph in 'Who should NOT copy this' — no Clay-specific anchoring, reads like SaaS playbook advice",
-    "H3 'The pattern' paragraph exceeds 60 words (approximately 68 words)",
-    "H3 'Who should NOT copy this' paragraph exceeds 60 words (approximately 63 words)",
-    "Final test references 'their traffic composition had already changed' without evidence showing Clay's traffic composition data",
-    "Word count approximately 280 words — exceeds 260-word ceiling by ~20 words",
-    "No verbatim Clay quotes bolded — all references are paraphrased instead of quoted directly",
-    "Claim 'the page now assumes buyers already know what Clay is' not traceable to evidence — meta description still defines what Clay does",
-    "Claim about procurement and IT justification not supported by evidence"
+    "HARD CAP TRIGGERED: 'upmarket shift' is strategist jargon used without plain-language definition, and 'bottom-up adoption' appears 3+ times without explanation → cap plainLanguage at 5, total capped at 70",
+    "FORBIDDEN TERM OVERUSE: 'bottom-up' appears 3 times (paragraph 1, 2, 3) after first use without definition",
+    "UNSUPPORTED CAUSAL CLAIM: 'Clay had the user base to support losing self-serve velocity' — no user base size or retention data in evidence",
+    "UNSUPPORTED CAUSAL CLAIM: 'Removing template galleries...will kill bottom-up distribution' — no conversion data provided to support this outcome",
+    "UNSUPPORTED CAUSAL CLAIM: 'Clay could remove self-serve CTAs because enterprise buyers were already arriving' — no inbound volume data in evidence",
+    "GENERIC PARAGRAPH: Paragraph 4 ('Open your analytics...') could appear in any SaaS teardown — zero Clay-specific evidence anchors",
+    "MISSING BOLD QUOTES: 'Start free' and 'Talk to sales' are not actual Clay CTA text from evidence — should use real quotes like **'Get a demo'** and **'Start building for free'**",
+    "JARGON WITHOUT DEFINITION: 'upmarket shift' used without immediate plain-language explanation",
+    "JARGON WITHOUT DEFINITION: 'bottom-up adoption' appears without ever being defined",
+    "JARGON WITHOUT DEFINITION: 'self-serve velocity' appears without explanation",
+    "HEADING NOT SEARCHABLE: Main ## heading lacks company name 'Clay' — should be 'Should SaaS companies copy Clay homepage strategy?' or similar",
+    "PARAGRAPH LENGTH VIOLATION: Paragraph 2 ('You can copy this...') is approximately 72 words, exceeds 60-word limit",
+    "PARAGRAPH LENGTH VIOLATION: Paragraph 3 ('Do not copy this...') is approximately 67 words, exceeds 60-word limit",
+    "TAKEAWAY BURIED: H3 block 'The pattern' does not deliver practical takeaway in first two sentences — opens with abstract description instead",
+    "NOT CLAY-SPECIFIC: Final test uses invented CTAs and generic analytics advice — should anchor to Clay's actual CTA changes (e.g., count if you removed template CTAs like Clay did)"
   ],
   "requiredFixes": [
-    "Change section heading to include 'Clay' and 'homepage' or 'positioning' — e.g. 'Should you copy Clay's homepage shift to enterprise positioning?'",
-    "Replace 'This is maturity signaling' with evidence-based language — e.g. 'The evidence shows Clay removed product mechanism explanations ('spreadsheet fills itself') and added infrastructure language ('150+ premium data sources')'",
-    "Anchor 'Who should copy this' paragraph to Clay-specific evidence — reference Clay's actual shift from **'Request access'** and **'Get template->'** to **'Get a demo'** and **'Read more about Clay Enterprise'**",
-    "Anchor 'Who should NOT copy this' paragraph to Clay evidence — quote the old navigation items **'All templates'**, **'Find new customers'**, which Clay removed",
-    "Reduce 'The pattern' paragraph to under 60 words by removing unsupported speculation about what the page 'assumes'",
-    "Reduce 'Who should NOT copy this' paragraph to under 60 words",
-    "Replace traffic composition claim with evidence-based test — e.g. 'Open your CRM. If fewer than 30% of demo requests come from companies with 200+ employees, you lack the enterprise pipeline Clay had when they made this shift.'",
-    "Cut section to 260 words maximum — remove speculative sentences",
-    "Bold every verbatim quote from Clay's homepage — **'Request access'**, **'This spreadsheet fills itself.'**, **'Get a demo'**, etc.",
-    "Remove or condition the claim 'buyers already know what Clay is' — the new meta description still explains what Clay does: **'Access 150+ premium data sources and AI research agents in one platform'**"
+    "Replace 'bottom-up adoption' first use with plain language: 'when individual employees start using your product without management approval'",
+    "Delete all subsequent uses of 'bottom-up' after first mention (appears 3 times total)",
+    "Replace 'upmarket shift' with 'targeting bigger companies with larger budgets' or similar",
+    "Remove or hedge 'Clay had the user base to support losing self-serve velocity' — no user base data in evidence to support this",
+    "Remove or condition 'will kill bottom-up distribution' — no conversion data supports this outcome claim",
+    "Replace invented CTAs 'Start free' and 'Talk to sales' with actual Clay CTAs from evidence: **'Start building for free'** and **'Get a demo'**",
+    "Rewrite final H3 block test to anchor to Clay-specific evidence: 'Count how many template CTAs Clay removed (evidence shows template exploration was a primary CTA in 2021, fully replaced by 2026). If you still get 40%+ signups from template shares, you cannot afford this trade yet.'",
+    "Add 'Clay' to main ## heading for SEO: 'Should SaaS companies copy Clay's homepage strategy?'",
+    "Split paragraph 2 into two blocks at sentence break after 'this shift makes sense' (currently 72 words)",
+    "Split paragraph 3 into two blocks after 'without replacing it' (currently 67 words)",
+    "Move takeaway to front of 'The pattern' block: 'If you sell to both users and executives, you will eventually rewrite your homepage twice. Clay's five-year shift shows...'"
   ],
   "riskFlags": [
-    "'This is maturity signaling: the page now assumes buyers already know what Clay is' — unsupported causal claim about intent, no evidence showing what the page assumes",
-    "'need to justify the purchase to procurement and IT' — no evidence in provided data about procurement or IT involvement",
-    "'Clay could make this shift because their traffic composition had already changed' — evidence does not include traffic composition data",
-    "'killing both motions' — outcome claim without data showing what happens when companies copy this prematurely",
-    "'the page now assumes buyers already know what Clay is' contradicts evidence that new meta description still defines Clay's functionality"
+    "UNSUPPORTED CAUSATION: 'Clay had the user base to support losing self-serve velocity' — no user count, churn rate, or velocity data in evidence",
+    "UNSUPPORTED CAUSATION: 'Removing template galleries...will kill bottom-up distribution' — no A/B test or conversion data provided",
+    "UNSUPPORTED CAUSATION: 'Clay could remove self-serve CTAs because enterprise buyers were already arriving' — no enterprise inbound volume data in evidence",
+    "INVENTED FACT: CTAs 'Start free' and 'Talk to sales' do not appear in evidence — actual CTAs were 'Start building for free' and 'Get a demo'",
+    "CONDITION MISSING: 'this shift makes sense' lacks attached condition (if current contracts average $X, if close rate is Y%, etc.)"
   ],
   "seoNotes": [
-    "Section heading misses major SEO opportunity — 'Should SaaS companies copy Clay's homepage strategy?' lacks searchable brand + topic terms",
-    "Missing bolded verbatim quotes reduces snippet-ability for Google featured snippets",
-    "H3 headings are generic ('The pattern', 'Who should copy this') instead of searchable question format",
-    "Section exceeds word count budget, reducing scannability",
-    "No specific Clay element names in H3 headings — missed opportunity for long-tail search terms like 'Clay CTA strategy' or 'Clay enterprise positioning'"
+    "NEGATIVE: Main ## heading lacks 'Clay' — loses brand + topic co-occurrence signal for 'Clay homepage' searches",
+    "POSITIVE: H3 headings contain decision-support keywords ('copy', 'who should', 'test') — high question-intent match",
+    "NEGATIVE: Section is too abstract for featured snippet extraction — no numbered list, no specific Clay evidence quoted in body",
+    "POSITIVE: Final H3 'The test before you copy' is strong how-to signal for long-tail searches"
   ],
-  "rewriteInstruction": "Rewrite with Clay-specific evidence in every paragraph. Change section heading to 'Should you copy Clay's homepage shift to enterprise positioning?' Anchor 'The pattern' to quoted elements: Clay replaced **'This spreadsheet fills itself.'** with **'Every GTM data point imaginable, in one place'** and swapped **'Request access'** + **'Get template->'** for **'Get a demo'** + **'Read more about Clay Enterprise'**. In 'Who should copy this', reference Clay's actual CTA shift as the test case. In 'Who should NOT copy this', quote the removed navigation items (**'All templates'**, **'Find new customers'**) that Clay deleted. Replace all speculation about what Clay 'assumes' or 'signals' with observable changes from evidence. Cut to 260 words by removing unsupported causal claims. Bold every verbatim quote. Final test must reference Clay's specific shift (CTA removal, navigation overhaul) not generic traffic analytics.",
+  "rewriteInstruction": "HARD CAP FIRED — rewrite from scratch. First, define every expert term on first use in the same sentence: 'bottom-up adoption' = 'when individual employees start using your product without manager approval', 'upmarket' = 'selling to larger companies with bigger budgets'. Second, delete all causal outcome claims ('will kill', 'had the user base to support') — you have no conversion, retention, or pipeline data to support them. Condition every claim: 'If your analytics show X, then removing CTAs may cost you Y.' Third, anchor every paragraph to Clay's actual evidence: quote real CTA text (**'Get a demo'** not invented 'Start free'), reference specific nav changes ('Clay removed All templates nav'), cite the meta description shift from 'million tab opening' to '150+ data sources'. Fourth, split paragraphs 2 and 3 — both exceed 60 words. Fifth, rewrite final test to be Clay-specific and runnable in under 5 minutes: 'Open your homepage. Count how many CTAs let visitors explore without talking to sales. Clay went from 4 exploration CTAs (Request access, Get template, Explore docs, Watch video) to 1 (Start building for free). If you still get 40%+ of pipeline from self-serve signups, you cannot afford to remove 3 out of 4 yet.' Sixth, move the practical takeaway to the first sentence of 'The pattern' block. Finally, add 'Clay' to the main heading.",
   "dimensionScores": {
-    "evidenceAccuracy": 12,
-    "specificity": 7,
-    "plainLanguage": 18,
-    "scannability": 6,
-    "searchableHeadings": 2,
+    "evidenceAccuracy": 10,
+    "specificity": 6,
+    "plainLanguage": 5,
+    "scannability": 8,
+    "searchableHeadings": 7,
     "rhythmAndOpening": 7,
-    "founderTakeaway": 5
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

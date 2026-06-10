@@ -791,5 +791,277 @@
     "ok": true,
     "detail": "score 87/100 — PASS ✓ — $0.0058",
     "ts": "2026-06-09T22:46:36.250Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-10T19:13:48.491Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-10T19:13:48.492Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:13:48.493Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:13:48.493Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:13:48.493Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:13:48.493Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:13:48.493Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-10T19:13:48.494Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 1208 words",
+    "ts": "2026-06-10T19:13:48.497Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Clay homepage CRO teardown",
+    "ts": "2026-06-10T19:13:48.497Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:13:48.499Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.0375",
+    "ts": "2026-06-10T19:14:15.132Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-10T19:16:27.187Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:16:27.188Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "5133 in / 299 out — $0.0199",
+    "ts": "2026-06-10T19:16:37.913Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0477",
+    "ts": "2026-06-10T19:16:57.700Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-10T19:16:57.701Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-10T19:16:57.703Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:16:57.704Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "2878 in / 260 out — $0.0602",
+    "ts": "2026-06-10T19:17:07.180Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.0840",
+    "ts": "2026-06-10T19:17:29.009Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-10T19:17:29.011Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4089 in / 289 out — $0.1006",
+    "ts": "2026-06-10T19:17:37.081Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v2",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.1193",
+    "ts": "2026-06-10T19:17:50.931Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v2",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-10T19:17:50.932Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-10T19:17:50.935Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:17:50.935Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "4035 in / 346 out — $0.1366",
+    "ts": "2026-06-10T19:18:02.154Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 68/100 — FAIL — $0.1752",
+    "ts": "2026-06-10T19:18:41.727Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-10T19:18:41.729Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "6067 in / 385 out — $0.1992",
+    "ts": "2026-06-10T19:18:56.368Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.2321",
+    "ts": "2026-06-10T19:19:25.965Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-10T19:19:26.009Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "5664 in / 385 out — $0.2549",
+    "ts": "2026-06-10T19:19:42.325Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.2912",
+    "ts": "2026-06-10T19:20:16.995Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-10T19:20:17.001Z"
+  },
+  {
+    "step": "reassemble article-final.md",
+    "ok": true,
+    "detail": "6 sections, 1206 words",
+    "ts": "2026-06-10T19:20:17.016Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:20:17.020Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 92/100 — PASS ✓ — $0.0408",
+    "ts": "2026-06-10T19:20:47.659Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-10T19:20:47.661Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 84/100 — PASS ✓ — $0.0083",
+    "ts": "2026-06-10T19:21:08.863Z"
   }
 ]

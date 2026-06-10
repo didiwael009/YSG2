@@ -1,13 +1,15 @@
-## Clay's conversion path: from gated access to open trial
+## Clay's CTA and navigation evolution: from education to commitment
 
-### Clay's CTA shift opens the funnel
+### Clay CTA changes: from "Request access" to instant trial
 
-Clay moved from **"Request access"** to **"Start free trial"** and **"Get a demo"**. The page also removed **"Get template->"** and **"All templates"**, replacing them with **"Start building for free"** and **"Contact us"**. This signals confidence: the page now bets that messaging alone qualifies visitors, without needing gated entry or template browsing to filter intent.
+The primary CTA moved from **"Request access"** to **"Start building for free"**. Clay removed mid-funnel learning options — **"Watch video"**, **"Explore documentation"**, and **"Get template"** — and added two high-commitment paths: **"Get a demo"** and **"Contact us"**. The page no longer offers a way to learn without committing.
 
-### Who loses a path in
+### Who Clay's new CTA path filters
 
-People who want to see a working template before starting a trial no longer have that option. If your audience mirrors Clay's before this shift — visitors who needed to browse use cases or see the product applied to a specific workflow — you may be losing them at the CTA stage. The page stopped offering a low-commitment exploration path.
+People who need to understand what Clay does before they try it. The old **"Watch video"** and **"Explore documentation"** buttons served visitors still deciding whether this category of tool fits their workflow. The new CTAs assume you already know you want Clay or a competitor.
 
-### Check your own CTA friction
+You are choosing which one, not learning what "enrichment platform" means.
 
-Did you remove all template or example CTAs (like Clay's **"Get template->"**) without adding a browse alternative? If your only options are "start trial" or "talk to sales," count how many visitors leave because they needed one more step to understand scope before converting.
+### Audit your own page: count zero-commitment CTAs
+
+Count how many primary CTAs on your homepage let someone learn without starting a trial or booking a call. Clay removed all of theirs. If your number is also zero and most visitors arrive from non-branded search or cold ads — check your analytics source report — you may be filtering out visitors who convert later after they understand the category.

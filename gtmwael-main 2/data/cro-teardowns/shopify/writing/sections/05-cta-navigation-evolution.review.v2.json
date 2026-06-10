@@ -1,46 +1,47 @@
 {
-  "score": 68,
+  "score": 78,
   "pass": false,
   "issues": [
-    "Paragraph 2 (H3#1) exceeds 60 words (72 words)",
-    "Paragraph 1 (H3#2) exceeds 60 words (80 words)",
-    "Multiple conversion outcome claims without supporting data: 'visitors may leave', 'too-fast commitment'",
-    "Section heading lacks company name ('Shopify') — present only in opening phrase, not in ## heading itself",
-    "H3#2 heading 'Category researchers hit friction' uses no searchable terms (no 'CTA', 'conversion', 'homepage', 'messaging', 'positioning')",
-    "Causal claim without condition: 'Now you are expected to already know' — no evidence visitors perceive this expectation",
-    "Causal claim without attached condition: 'may leave if your traffic comes from non-branded search' — outcome stated without data",
-    "Generic paragraph: H3#2 second half ('Visitors comparing categories... may leave') could appear in any SaaS teardown",
-    "Final test is somewhat generic: 'Count how many CTAs include explore/learn/discover' is good, but 'check whether your primary CTA matches the question' is vague"
+    "Section heading is clever-only ('conversion buttons changed from education to activation') with no searchable terms — missing 'Shopify', 'CTA', 'homepage', or 'conversion'",
+    "H3 heading 'What changed' is generic and could appear in any teardown",
+    "H3 heading 'Who this filters out' is generic and could appear in any teardown",
+    "Paragraph 2 ('The new path no longer...') is 67 words — exceeds 60-word limit",
+    "Paragraph 2 contains unsupported causal claim: 'removing education-focused CTAs may leave those visitors without a clear next step' — no evidence that visitors were left without a step",
+    "Paragraph 2 contains unsupported claim: 'The page now appears optimized for visitors who have already decided to launch an online store' — no data on visitor decision-state or optimization intent",
+    "Paragraph 3 contains generic advice ('count how many CTAs start with Learn or Explore') that could appear in any teardown",
+    "Final test is conditional on traffic source ('If your traffic still includes...') rather than being a specific, runnable test anchored to Shopify's evidence",
+    "Word count approximately 165 words — within range but on higher end",
+    "Opening paragraph could be stronger — leads with inventory list rather than the most interesting finding"
   ],
   "requiredFixes": [
-    "Reduce H3#1 paragraph 2 to under 60 words (currently 72)",
-    "Reduce H3#2 paragraph 1 to under 60 words (currently 80)",
-    "Add company name 'Shopify' to ## section heading for searchability",
-    "Replace 'Category researchers hit friction' with a heading containing searchable terms — e.g. 'Shopify CTAs now assume purchase intent' or 'No education CTAs left on Shopify homepage'",
-    "Attach conditions to causal claims: change 'visitors may leave' to 'visitors comparing platforms (not vendors) may leave if [condition: they arrived via non-branded search expecting category education]'",
-    "Remove or condition the phrase 'Now you are expected to already know' — no evidence shows visitor perception",
-    "Make final test more specific: replace 'check whether your primary CTA matches the question your typical visitor arrives with' with concrete action — e.g. 'Open your analytics, filter last 30 days of non-branded organic traffic, check whether your primary CTA assumes product knowledge those visitors do not yet have'",
-    "Anchor H3#2 second half to Shopify-specific evidence: replace 'Visitors comparing categories' generic statement with reference to Shopify's removed CTAs or H2s from the evidence"
+    "Rewrite section heading to include 'Shopify' AND 'CTA' or 'conversion' — e.g., 'Shopify CTA evolution: from educational paths to direct activation'",
+    "Rewrite H3 'What changed' to be specific to Shopify — e.g., 'Shopify removed educational CTAs and added product-specific activation buttons'",
+    "Rewrite H3 'Who this filters out' to be specific to Shopify's change — e.g., 'What happens when you remove 'Learn more' and 'Explore' CTAs'",
+    "Shorten paragraph 2 to under 60 words by splitting into two paragraphs or cutting speculative claims",
+    "Remove or condition the claim 'may leave those visitors without a clear next step' — either cite evidence or add 'might' with a condition",
+    "Remove or rewrite 'The page now appears optimized for visitors who have already decided' — no evidence supports this optimization intent claim",
+    "Make final test specific and runnable in under 5 minutes without conditions — e.g., 'Open your homepage. Count CTAs that require zero commitment (Learn, Compare, Explore). If you have 3+, archive the current page, remove one educational CTA, and test whether your trial-start rate changes over 2 weeks.'"
   ],
   "riskFlags": [
-    "UNSUPPORTED OUTCOME: 'visitors may leave' — no conversion data or exit rate provided",
-    "UNSUPPORTED OUTCOME: 'that removal may signal too-fast commitment' — no evidence of commitment friction or drop-off",
-    "CAUSAL CLAIM WITHOUT CONDITION: 'Now you are expected to already know' — attributes expectation without visitor research or testing data",
-    "CAUSAL CLAIM WITHOUT CONDITION: 'may leave if your traffic comes from non-branded search' — outcome stated without bounce rate, exit rate, or session duration data"
+    "Unsupported causal claim: 'removing education-focused CTAs may leave those visitors without a clear next step' — no data on visitor behavior or alternative paths",
+    "Unsupported optimization claim: 'The page now appears optimized for visitors who have already decided to launch an online store and are comparing platforms' — no evidence of visitor intent, decision-state, or optimization goal",
+    "Conditional test advice ('If your traffic comes primarily from...') assumes traffic source without evidence",
+    "Generic conversion advice ('test those educational CTAs against direct activation prompts') could apply to any company"
   ],
   "seoNotes": [
-    "NEGATIVE: Section heading 'education to commitment' lacks company name — searchers looking for 'Shopify CTA changes' or 'Shopify homepage CTAs' will not find this heading in SERP snippet or ToC scan",
-    "NEGATIVE: H3 heading 'Category researchers hit friction' contains zero searchable terms — not discoverable via in-page search for 'CTA', 'conversion', 'messaging'",
-    "POSITIVE: Opening sentence contains company name and topic terms ('Shopify', 'CTAs') — good for featured snippet extraction"
+    "Section heading lacks searchable terms — should include 'Shopify CTA' or 'Shopify conversion buttons'",
+    "H3 headings are too generic — 'What changed' and 'Who this filters out' contain no search terms",
+    "Missing opportunity to use 'Shopify homepage CTA' or 'Shopify call-to-action' in subheadings",
+    "Positive: bold quotes are correctly applied to all verbatim CTA text"
   ],
-  "rewriteInstruction": "Insert 'Shopify' into the ## heading. Shorten both over-60-word paragraphs by removing speculative outcome claims ('may leave', 'too-fast commitment') and replacing them with conditional observations: 'If your traffic skews non-branded or educational (check Search Console), this CTA shift creates a mismatch — the page now assumes purchase intent your visitors may not have.' Replace 'Category researchers hit friction' heading with 'Shopify CTAs now assume purchase intent' or similar searchable phrase. Anchor the generic 'visitors comparing categories' statement to Shopify's specific removed CTAs or H2 changes from the evidence. Make the final test concrete: 'Open Google Analytics → Acquisition → Organic Search → filter non-branded queries → check whether your primary CTA assumes knowledge those queries signal visitors do not have.' Remove the phrase 'you are expected to already know' unless you can ground it in visitor testing data. The section currently reads like a strategy brief to another marketer — rewrite in plain, conditional language a founder can action without a CRO certification.",
+  "rewriteInstruction": "Rewrite this section with three fixes: (1) Make the ## heading searchable by adding 'Shopify' and 'CTA' — consider 'Shopify CTA evolution: education to activation'. (2) Replace generic H3 headings with specific ones that name the change — e.g., 'Ten educational CTAs removed, ten activation CTAs added' and 'What removing Learn-more CTAs costs'. (3) Cut all unsupported claims about visitor intent, optimization goals, and what 'may' happen. Replace paragraph 2 with observable facts: Shopify removed educational CTAs; if your page still has 3+ Learn/Explore CTAs, you're serving a different visitor type. End with a specific, runnable test: 'Open your homepage, count CTAs starting with Learn or Explore, archive the page, remove one, test for two weeks.' No conditionals. Anchor every claim to the evidence: the CTA list shows what was added and removed, nothing more.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
-    "specificity": 9,
-    "plainLanguage": 14,
-    "scannability": 3,
+    "evidenceAccuracy": 15,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 9,
     "searchableHeadings": 2,
-    "rhythmAndOpening": 8,
+    "rhythmAndOpening": 7,
     "founderTakeaway": 2
   },
   "effectivePassThreshold": 85

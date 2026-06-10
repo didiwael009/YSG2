@@ -1,14 +1,21 @@
 {
-  "publishedAt": "2026-06-08T09:45:16.676Z",
+  "publishedAt": "2026-06-10T19:53:08.876Z",
   "slug": "hootsuite",
   "dryRun": false,
   "forced": false,
   "qualityGates": {
     "finalJudgePass": true,
-    "finalJudgeScore": 94,
+    "finalJudgeScore": 92,
     "seoPass": true,
-    "seoScore": 81,
+    "seoScore": 87,
     "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "H1 quote missing: new H1 \"Drive real business impact with the world’s deepest social i\" does not appear in article-final.md. The article should quote the current headline."
+    ]
   },
   "blockedReasons": [],
   "articlePath": "src/content/cro-teardown/articles/hootsuite.ts",

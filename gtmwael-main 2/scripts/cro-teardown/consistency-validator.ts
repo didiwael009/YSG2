@@ -46,6 +46,9 @@
 
 import * as fs   from 'node:fs';
 import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -328,6 +331,78 @@ export function validateConsistency(opts: {
       `Period label "${toLabel}" not found in article-final.md. ` +
       'The article may have been written with a different date range.',
     );
+  }
+
+  // ── Check 7: H2 template diversity ───────────────────────────────────────
+  // Compare the new article's H2 headings (normalised by removing the company
+  // name) against every already-published article.  Similarity above 60% is a
+  // hard error — at scale this creates a doorway-page footprint for Google.
+  const articlesDir = path.resolve(
+    __dirname,
+    '../../src/content/cro-teardown/articles',
+  );
+  if (fs.existsSync(articlesDir)) {
+    // Extract H2s from the new article
+    const h2Re = /^## (.+)$/gm;
+    const newH2s: string[] = [];
+    let m: RegExpExecArray | null;
+    while ((m = h2Re.exec(articleText)) !== null) newH2s.push(m[1].trim());
+
+    if (newH2s.length >= 2) {
+      // Normalise: strip company name and lowercase
+      const normalise = (h: string, company: string) =>
+        h
+          .replace(new RegExp(company, 'gi'), 'X')
+          .toLowerCase()
+          .replace(/[^a-z0-9 ]+/g, ' ')
+          .replace(/\s+/g, ' ')
+          .trim();
+
+      const normNew = newH2s.map(h => normalise(h, pack.companyName));
+
+      // Read every other published article
+      const slugFiles = fs.readdirSync(articlesDir).filter(f => f.endsWith('.ts'));
+      for (const file of slugFiles) {
+        const fileSlug = file.replace(/\.ts$/, '');
+        if (fileSlug === slug) continue; // skip self
+
+        const content = fs.readFileSync(path.join(articlesDir, file), 'utf-8');
+        // Extract company name from the file (companyName: "...")
+        const cnMatch = content.match(/companyName:\s*["']([^"']+)["']/);
+        const otherCompany = cnMatch ? cnMatch[1] : fileSlug;
+
+        // Extract H2s from published articleBody markdown
+        const bodyMatch = content.match(/articleBody:\s*"([\s\S]*?)(?<!\\)"/);
+        if (!bodyMatch) continue;
+        const otherBody = bodyMatch[1].replace(/\\n/g, '\n').replace(/\\"/g, '"');
+        const otherH2Re = /^## (.+)$/gm;
+        const otherH2s: string[] = [];
+        let om: RegExpExecArray | null;
+        while ((om = otherH2Re.exec(otherBody)) !== null) otherH2s.push(om[1].trim());
+        if (otherH2s.length < 2) continue;
+
+        const normOther = otherH2s.map(h => normalise(h, otherCompany));
+
+        // Jaccard similarity on normalised heading sets
+        const setNew   = new Set(normNew);
+        const setOther = new Set(normOther);
+        const intersection = [...setNew].filter(h => setOther.has(h)).length;
+        const union        = new Set([...normNew, ...normOther]).size;
+        const similarity   = intersection / union;
+
+        if (similarity >= 0.60) {
+          const conflicts = normNew
+            .filter(h => setOther.has(h))
+            .map(h => `"${h}"`)
+            .join(', ');
+          errors.push(
+            `H2 template similarity with ${otherCompany} article is ${Math.round(similarity * 100)}% ` +
+            `(threshold: 60%). Matching normalised headings: ${conflicts}. ` +
+            `Rewrite these headings to be company-specific before publishing.`,
+          );
+        }
+      }
+    }
   }
 
   return {

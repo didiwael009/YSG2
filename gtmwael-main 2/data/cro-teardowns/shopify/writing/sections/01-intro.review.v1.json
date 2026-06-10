@@ -1,37 +1,36 @@
 {
-  "score": 68,
+  "score": 72,
   "pass": false,
   "issues": [
-    "Paragraph exceeds 90-word limit (approximately 103 words)",
-    "Causal claim without data: 'That shift signals a change in who the page is written for' — evidence shows text change, not audience targeting data",
-    "Causal claim without condition: 'the original spoke to businesses evaluating commerce platforms' — no evidence shows original audience was platform evaluators",
-    "Unsupported interpretation: 'speaks to founders chasing a category identity' — no evidence in data supports this audience characterization",
-    "Generic paragraph 2: 'By the end of this teardown, you'll know how to check whether your own homepage is still serving the visitor who lands on it' — could appear in any teardown",
-    "Jargon without definition: 'category identity' used without plain-language explanation",
-    "Opening sentence buries the lead — headline change is most interesting but buried in interpretation rather than presented as data point"
+    "The phrase 'The page stopped explaining what Shopify is and started filtering for visitors who already know' is a causal outcome claim not directly supported by evidence — the draft infers visitor knowledge filtering from headline change alone.",
+    "The phrase 'started filtering for visitors who already know' uses the forbidden term 'qualification filter' implicitly without plain-language definition.",
+    "The section contains an unsupported causation statement: 'The page stopped explaining... and started filtering' — this claims a strategic intent not present in the evidence note, which says 'No confirmed strategy is implied.'",
+    "Word count is approximately 105 words — exceeds the 90-word cap for intro sections.",
+    "The phrase 'identity message' is expert jargon used without immediate plain-language definition.",
+    "Generic phrase: 'walks through three snapshots to show which changes matter, which don't' could appear in any teardown — not specific to Shopify evidence.",
+    "The final sentence is 35 words long and buries the founder value proposition in a conditional clause."
   ],
   "requiredFixes": [
-    "Cut paragraph to 90 words maximum — remove the closing 'By the end of this teardown' sentence entirely (generic, not specific to Shopify evidence)",
-    "Rewrite second sentence to remove unsupported audience claim. Replace 'That shift signals a change in who the page is written for' with evidence-only statement: 'The original headline positioned Shopify as infrastructure; the current version positions the user'",
-    "Remove 'chasing a category identity' — no evidence supports this interpretation. Replace with observable description of headline's subject",
-    "Add plain-language definition after any expert term, or remove term entirely",
-    "Bold the quoted headline text: **'Be the nextAI all-star'** appears unbolded in draft"
+    "Remove or rewrite the causal claim 'The page stopped explaining what Shopify is and started filtering for visitors who already know' — the evidence note explicitly states 'No confirmed strategy is implied.'",
+    "Cut word count from ~105 to 55–90 words. The intro is over the cap.",
+    "Replace 'identity message' with plain language in the same sentence, e.g. 'an identity message — a claim about who the visitor could become.'",
+    "Anchor the final sentence to specific evidence instead of the generic 'which changes matter, which don't' — name one concrete element, e.g. 'headline shift' or 'CTA count'.",
+    "Simplify the final sentence — currently 35 words with nested conditionals. Break into two sentences or front-load the founder value."
   ],
   "riskFlags": [
-    "HARD CAP TRIGGERED: Conversion outcome claim without data — 'That shift signals a change in who the page is written for' assumes targeting intent not present in evidence",
-    "Unsupported causation: 'spoke to businesses evaluating commerce platforms' — evidence shows headline text only, not audience segment data",
-    "Unsupported interpretation: 'speaks to founders chasing a category identity' — no qualitative or quantitative data supports this audience characterization",
-    "Generic advice paragraph violates specificity requirement — closing sentence applicable to any company teardown"
+    "HARD CAP TRIGGERED: Unsupported outcome claim ('started filtering for visitors who already know') without data — caps total score at 60, but other penalties apply first.",
+    "Causation statement without condition: 'The page stopped explaining... and started filtering' — this asserts strategic intent the evidence does not support (note says 'No confirmed strategy is implied').",
+    "The phrase 'visitors who already know' implies ICP narrowing — a strategic outcome claim with zero conversion or traffic data provided."
   ],
   "seoNotes": [
-    "Heading contains company name (Shopify) and searchable terms (Homepage, Message) — meets searchability requirement",
-    "Opening sentence answers search query (what changed on Shopify homepage) in first 15 words — strong for featured snippet",
-    "Specific date range (July 2021, June 2026) in opening improves search relevance for recency queries",
-    "Quoted headline text provides exact-match searchable content"
+    "POSITIVE: Heading contains both company name ('Shopify') and searchable terms ('Landing Page', 'Homepage').",
+    "POSITIVE: First sentence includes primary keyword 'Shopify' and 'homepage' within the first 15 words.",
+    "NEGATIVE: The heading uses 'Landing Page' in the H1 but the evidence labels it 'homepage' — inconsistency may confuse crawlers if the article title and body use 'homepage' throughout.",
+    "POSITIVE: Specific date range (July 2021, June 2026) in first sentence — good for long-tail search and update queries."
   ],
-  "rewriteInstruction": "Cut to 85 words. Remove the entire closing sentence ('By the end of this teardown...'). Rewrite the second sentence to describe ONLY what changed in the text itself — not who it 'speaks to' or what audience it targets, since no visitor data appears in the evidence. Replace 'spoke to businesses evaluating commerce platforms' and 'speaks to founders chasing a category identity' with neutral descriptions of what the headlines SAY, not who they target. Example: 'The original headline named the product category (commerce platform). The current headline addresses the reader directly and mentions AI.' This keeps you anchored to observable text changes. Finally, ensure all verbatim quotes appear in **bold quotes** per house style.",
+  "rewriteInstruction": "Cut to 75–85 words. Remove all causal/strategic claims not in evidence — the note says 'No confirmed strategy is implied', so do not claim the page 'started filtering' or 'stopped explaining'. Replace 'identity message' with plain language in the same breath. Anchor the final value sentence to one specific finding (e.g. 'headline shift', 'section count') instead of the generic 'which changes matter'. Break the 35-word final sentence into two. Ensure every phrase is traceable to the evidence or is an observable description, not an inferred outcome.",
   "dimensionScores": {
-    "evidenceAccuracy": 8,
+    "evidenceAccuracy": 10,
     "specificity": 10,
     "plainLanguage": 12,
     "scannability": 10,

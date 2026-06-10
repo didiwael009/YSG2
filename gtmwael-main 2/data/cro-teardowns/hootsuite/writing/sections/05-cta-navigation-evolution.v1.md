@@ -1,5 +1,13 @@
-The old homepage offered "Start Your Free 30-day Trial" and "Compare Plans" — low-friction CTAs that assume a visitor already understands the product and is ready to self-serve. The new set includes "Request a demo" alongside "Start your free trial," which can be read as a bifurcated funnel: one path for self-serve users, one for enterprise buyers who expect a sales conversation. That duplication increases cognitive load for first-time visitors who must now choose between two conversion paths before they understand which buyer segment they belong to.
+## Hootsuite's CTA shift: from product exploration to demo requests
 
-Navigation labels shifted from action verbs to category nouns. "Start free trial" and "Compare plans" were removed from top-level nav; "Explore integrations" and "Contact us" were added. The new structure appears to prioritise platform breadth over immediate conversion — visitors can now browse integrations and case studies before encountering a signup CTA. This may help buying committees justify a purchase decision, but it also creates more pre-conversion friction for users who arrived ready to start a trial and now must navigate deeper into the site to find the signup entry point.
+### What changed
 
-One SaaS founder takeaway: if you add a "Request a demo" CTA to a page that already has a free trial button, the page must help visitors self-select. Hootsuite's current page does not label which CTA is for which buyer type, which means both paths compete for attention rather than segment traffic. A line of microcopy under each button — "For teams" vs "For enterprises" — would reduce friction and funnel visitors toward the path that matches their decision authority.
+Hootsuite replaced its self-serve trial CTAs with demo and contact options. The old homepage included **"Start Your Free 30-day Trial"** and **"Compare plans"** as primary actions. The new page leads with **"Request a demo"** and **"Contact us"**. The **"Start free trial"** label was replaced with **"Start your free trial"** — but the bigger shift is that demo requests now compete with trial CTAs for prominence, where they were absent before.
+
+### Who this filters out
+
+The new path adds friction for visitors who want to test the tool themselves before talking to anyone. Someone comparing scheduling tools on their own time now sees a demo gate before they can evaluate the product. That works if your brand is already shortlisted. It costs conversions if visitors are still deciding whether Hootsuite belongs in the comparison.
+
+### Audit your own page
+
+Count how many clicks it takes a cold visitor to start using your product without talking to sales. If that number went up in the last year, check whether your inbound traffic mix changed too — more branded search and referrals can support higher friction, but cold paid or SEO traffic often cannot.

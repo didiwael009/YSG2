@@ -1,103 +1,29 @@
 {
   "slug": "clay",
-  "generatedAt": "2026-06-09T22:46:36.253Z",
+  "generatedAt": "2026-06-10T19:14:15.135Z",
   "mode": "standard",
-  "sections": [
-    {
-      "sectionId": "04-messaging-evolution",
-      "finalVersion": 1,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 2,
-      "riskFlags": [
-        "The claim 'The page now expects a longer evaluation process involving multiple stakeholders' is a causal inference not supported by the evidence. The evidence shows CTA changes, but does not confirm sales cycle length or stakeholder count.",
-        "The phrase 'signals that Clay is optimizing for deals that require business case validation' assumes strategic intent without evidence. Reframe as conditional: 'If Clay is optimizing for deals that require business case validation, the CTA shift is consistent with that goal.'"
-      ],
-      "remainingIssueCount": 4,
-      "remainingIssues": [
-        "The final question 'Does your homepage still speak to the end user when your revenue model now depends on department-level buyers?' is generic advice that could appear in any B2B SaaS teardown — not anchored to Clay's specific evidence",
-        "The opening of H3 block 1 ('The original homepage spoke to someone doing manual prospecting work themselves') is interpretive rather than evidence-first; it should lead with the quoted meta description, then interpret",
-        "H3 block 2 opening ('targets the person responsible for go-to-market infrastructure across a team') is an assumption not directly traceable to the evidence — the headline and meta description do not explicitly confirm this buyer role",
-        "Section lacks word count efficiency — approximately 210 words when the target is 140–200"
-      ],
-      "sectionCostUsd": 0.048315
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "finalVersion": 2,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 2,
-      "riskFlags": [
-        "The claim 'that shift only works when inbound volume can support a sales team' implies causation but the evidence shows correlation only — Clay made the shift, we observe the CTA change, but no direct volume data supports the necessity claim",
-        "The statement 'Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends' is a prediction of outcome without attached condition or evidence from Clay's own experience"
-      ],
-      "remainingIssueCount": 4,
-      "remainingIssues": [
-        "Section heading is searchable but generic — could specify 'Clay homepage' for stronger SEO",
-        "The phrase 'the pattern' in H3 #1 opening is slightly template-y, though not a hard violation",
-        "H3 #2 'Who should copy this' paragraph is 74 words — exceeds the 60-word cap by 14",
-        "H3 #3 'Who should NOT copy this' paragraph is 63 words — exceeds the 60-word cap by 3"
-      ],
-      "sectionCostUsd": 0.09638999999999998
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "finalVersion": 1,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 2,
-      "riskFlags": [
-        "Second H3 block opens with 'This change may lose visitors' — presents outcome as likely without data or conditional structure ('if X, then Y')",
-        "The claim 'Most early-stage companies cannot' in the final block is an unsupported generalization not traceable to Clay evidence"
-      ],
-      "remainingIssueCount": 5,
-      "remainingIssues": [
-        "H3 heading 'What changed' is not searchable — contains no company name or topic term (CTA, conversion, path, trial, demo)",
-        "H3 heading 'Who this filters out' is not searchable — contains no company name or topic term",
-        "Opening sentence uses 'one CTA' but evidence shows 10 CTAs were removed, not just 'Request access'",
-        "Second H3 block ('Who this filters out') makes a claim about losing visitors without grounding it in evidence or conditional framing — reads as outcome prediction",
-        "The phrase 'friction points' in the opening is abstract/evaluative without plain-language explanation"
-      ],
-      "sectionCostUsd": 0.033491999999999994
-    }
-  ],
-  "averageScore": 88,
-  "passCount": 3,
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
   "failCount": 0,
   "skippedCount": 6,
-  "totalRewriteLoops": 1,
+  "totalRewriteLoops": 0,
   "weakSections": [],
-  "allRiskFlags": [
-    "The claim 'The page now expects a longer evaluation process involving multiple stakeholders' is a causal inference not supported by the evidence. The evidence shows CTA changes, but does not confirm sales cycle length or stakeholder count.",
-    "The phrase 'signals that Clay is optimizing for deals that require business case validation' assumes strategic intent without evidence. Reframe as conditional: 'If Clay is optimizing for deals that require business case validation, the CTA shift is consistent with that goal.'",
-    "The claim 'that shift only works when inbound volume can support a sales team' implies causation but the evidence shows correlation only — Clay made the shift, we observe the CTA change, but no direct volume data supports the necessity claim",
-    "The statement 'Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends' is a prediction of outcome without attached condition or evidence from Clay's own experience",
-    "Second H3 block opens with 'This change may lose visitors' — presents outcome as likely without data or conditional structure ('if X, then Y')",
-    "The claim 'Most early-stage companies cannot' in the final block is an unsupported generalization not traceable to Clay evidence"
-  ],
+  "allRiskFlags": [],
   "sectionErrors": [],
-  "finalJudgeScore": 82,
+  "finalJudgeScore": 72,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Remove or condition the phrase 'signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion' in the intro. Replace with 'consistent with a shift' or 'suggesting Clay moved toward'.",
-    "Remove all specific visitor intent claims ('The original homepage spoke to someone doing manual prospecting work themselves', 'This is language for someone comparing data vendors') — these are inferences about WHO the page targets, not descriptions of WHAT the page says. Reframe as copy register observations.",
-    "Remove conversion predictions ('This change may lose visitors', 'Most early-stage companies cannot') — no data supports these outcomes.",
-    "Remove all claims about Clay's internal processes or data ('inbound volume can support a sales team', 'their inbound requests had already shifted') — not in evidence.",
-    "Add H3 subheadings to '## Clay's conversion path' section — currently missing structural breaks.",
-    "Add founder takeaway to final H3 block in '## Should you copy' section — currently ends with test instruction but no practical observation anchored to Clay's evidence."
+    "Remove or reframe 'The page now expects a longer evaluation process involving multiple stakeholders' — the evidence shows CTA changes (Request access → Get a demo), but does not confirm sales cycle length. Reframe as: 'The shift from Request access to Get a demo is consistent with a longer sales cycle, IF Clay's deal size now requires multiple stakeholders.'",
+    "Remove 'signals that Clay is optimizing for deals that require business case validation' — this asserts intent. Reframe as: 'The CTA shift is consistent with optimizing for deals that require validation, IF that is Clay's goal.'",
+    "Remove 'that shift only works when inbound volume can support a sales team' — presents necessity without data. Reframe as: 'This shift assumes Clay has sufficient inbound volume to support a sales team.'",
+    "Remove 'Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends' — prediction without evidence. Reframe as: 'Cutting self-serve exploration risks reducing pipeline if enterprise infrastructure is not yet operational.'",
+    "Remove 'This change may lose visitors' — outcome claim without data. Reframe as: 'This change assumes visitors who want to browse templates will convert through other paths.'",
+    "Remove 'Most early-stage companies cannot' — unsupported generalization. Reframe as: 'Clay can make that bet because [specific evidence]. Early-stage companies without [that evidence] should test this shift carefully.'",
+    "Remove 'Open your last 30 demo requests. If fewer than half mention a competitor' — invents specific threshold. Reframe as: 'Check whether your demo requests mention competitors unprompted. If they do not, enterprise positioning may be premature.'",
+    "Remove 'their inbound requests had already shifted to enterprise evaluation language' — asserts internal data not in evidence. Reframe as: 'Clay made this shift; check whether your own inbound requests show similar patterns before copying it.'"
   ],
-  "seoScore": 87,
-  "seoPass": true,
-  "seoRequiredFixes": [
-    "The meta description in the article body states 'Access 150+ premium data sources and AI research agents in one platform' but the header metadata shows different wording. Verify which is the actual current meta description and ensure consistency",
-    "The intro section cites a headline as 'Every GTM data point imaginable, in one place' in the 'Should you copy' section, but the main teardown cites 'Go to market with unique data — and the ability to act on it.' Clarify which is the actual current headline or explain the discrepancy",
-    "The article uses primary keyword 'Clay homepage CRO teardown' sparingly in the body (mostly in headers). Strengthen natural keyword integration in the opening paragraph and 'Quick answer' section"
-  ],
-  "articleWordCount": 1320,
+  "articleWordCount": 1208,
   "repetitionWarnings": [
     "\"self-serve vs enterprise shift\" appears in 4 sections (max 2): 01-intro, 02-quick-answer, 04-messaging-evolution, 06-lessons-for-saas-teams"
   ],

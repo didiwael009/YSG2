@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Hootsuite homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS growth marketer, product strategist, or founder at a mid-market or enterprise software company who is studying how Hootsuite repositioned upmarket from SMB to enterprise. They want to understand the positioning shift, messaging hierarchy, and go-to-market signals that enabled this transition — so they can either replicate it for their own product or avoid missing similar market opportunities.",
+  "recommended_h1_format": "How [Company] Repositioned from SMB Scheduler to Enterprise Intelligence Platform: A Homepage Teardown",
+  "secondary_keywords": [
+    "Hootsuite homepage evolution 2023 2024",
+    "how Hootsuite changed messaging to target enterprise",
+    "Hootsuite CRO teardown positioning shift",
+    "Hootsuite social listening homepage redesign",
+    "Hootsuite upmarket repositioning strategy"
+  ],
+  "content_angle": "Focus on the POSITIONING ARCHITECTURE, not just visual changes. The searcher needs to understand the deliberate strategic shift from 'time-saving tool for growth' to 'risk mitigation + ROI proof for enterprises.' Show how every element on the page (H1, nav restructure, new feature categories, CTA hierarchy) signals a different buyer persona and buying committee. This is a masterclass in repositioning, not just a design refresh.",
+  "what_the_searcher_wants": "To see a real, high-performing company execute an upmarket repositioning and understand exactly which messaging, navigation, and CTA changes telegraphed that shift to buyers — so they can apply the same framework to their own product or recognize when a competitor is moving upmarket.",
+  "what_to_avoid": "Do not treat this as a generic 'before and after' visual comparison or focus on design trends. Avoid missing the BUYER INTENT shift (from individual contributor time-savers to C-suite risk managers). Don't list changes without explaining WHY each change serves the enterprise buyer's job-to-be-done. Don't ignore the removal of SMB-focused messaging ('manage in one place,' customer stories) — these removals are as strategic as the additions.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T19:32:26.403Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0031304
+}

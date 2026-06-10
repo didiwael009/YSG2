@@ -1,23 +1,35 @@
 {
-  "score": 92,
+  "score": 88,
   "pass": true,
-  "issues": [],
-  "requiredFixes": [],
-  "riskFlags": [],
-  "seoNotes": [
-    "Company name 'Hootsuite' appears in first 40 words (position ~24), meeting SEO targeting requirement",
-    "Section successfully integrates evidence (quoted phrases) which may improve topical relevance for long-tail 'Hootsuite headline change' queries"
+  "issues": [
+    "The final H3 takeaway is not delivered in the first two sentences — it arrives in the third sentence",
+    "The final test is not specific to Hootsuite's evidence — 'does my buyer need to try the product first' is generic and could appear in any SaaS teardown",
+    "Word count is approximately 240 words, exceeding the 200-word cap by 40 words",
+    "One paragraph in H3 block 2 is approximately 65 words, exceeding the 60-word guideline"
   ],
-  "rewriteInstruction": "",
+  "requiredFixes": [
+    "Move the practical takeaway in the final H3 block to the first sentence: 'If your homepage still leads with free-trial urgency, ask: does my buyer need to try the product first, or do they need to understand our differentiation before they'll schedule a call? The page no longer pushes toward an immediate free trial.'",
+    "Replace the generic final test with a specific, runnable action anchored to Hootsuite's evidence: 'Count how many times your homepage headline and meta description mention product capabilities versus buyer outcomes. Hootsuite moved from 2 outcome phrases to 0 in three years.'",
+    "Reduce section to 200 words maximum — trim the final H3 block by removing redundant explanation after the test"
+  ],
+  "riskFlags": [
+    "The phrase 'This matches how companies sell to larger organizations' in the final H3 makes a causal claim about sales process design without evidence that Hootsuite changed its sales model",
+    "The sentence 'This language fits a small team or solo marketer' is an interpretation not directly supported by the evidence — the evidence shows casual language but does not confirm the target segment"
+  ],
+  "seoNotes": [
+    "Section heading contains both company name ('Hootsuite') and searchable topic term ('messaging'), meeting searchability requirement",
+    "All three H3 subheadings use plain language and avoid jargon",
+    "The section opening anchors immediately to specific quoted evidence, which supports featured-snippet eligibility"
+  ],
+  "rewriteInstruction": "Trim the final H3 block to under 60 words by moving the takeaway question to the first sentence and replacing the generic closer with a specific test: 'Count how many times your homepage headline and meta description mention product capabilities versus buyer outcomes. Hootsuite moved from 2 outcome phrases to 0.' Remove the sentence beginning 'This matches how companies sell to larger organizations' as it makes an unsupported causal claim. Reduce the second H3 paragraph from 65 words to under 60 by cutting the phrase 'This reads like copy written for a buyer who already knows what social management software is and' — the differentiation point stands without it. The section will then meet the 200-word target and deliver the founder takeaway in the first sentence of the final block.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "clarity": 10,
-    "specificity": 15,
-    "seoUsefulness": 10,
-    "croUsefulness": 10,
-    "riskControl": 10,
-    "analysisDepth": 10,
-    "editorialQuality": 10
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 20,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

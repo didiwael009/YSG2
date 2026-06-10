@@ -2,34 +2,32 @@
   "score": 88,
   "pass": true,
   "issues": [
-    "The final question 'Does your homepage still speak to the end user when your revenue model now depends on department-level buyers?' is generic advice that could appear in any B2B SaaS teardown — not anchored to Clay's specific evidence",
-    "The opening of H3 block 1 ('The original homepage spoke to someone doing manual prospecting work themselves') is interpretive rather than evidence-first; it should lead with the quoted meta description, then interpret",
-    "H3 block 2 opening ('targets the person responsible for go-to-market infrastructure across a team') is an assumption not directly traceable to the evidence — the headline and meta description do not explicitly confirm this buyer role",
-    "Section lacks word count efficiency — approximately 210 words when the target is 140–200"
+    "The ## section heading is missing 'homepage' or 'messaging' — contains 'Clay' but is weaker for search than it could be",
+    "Final H3 block asks a rhetorical question instead of stating a runnable test — 'Does your homepage still speak to the person doing the work, or to the person signing the contract?' is not a 5-minute action",
+    "H3 block #3 ('What this means for the sales process') buries the practical takeaway in the final sentence rather than the first two sentences"
   ],
   "requiredFixes": [
-    "Replace the final generic question with a specific, runnable test tied to Clay's evidence: 'Open your meta description. Count how many words describe a user pain (like 'million tab opening') vs. platform capability (like '150+ data sources'). If pain language dominates but your revenue comes from multi-seat deals, you may be attracting the wrong visitor.'",
-    "Anchor H3 block 2 opening to quoted evidence first: Start with 'The current headline reads **\"Go to market with unique data — and the ability to act on it\"**' before interpreting who it targets",
-    "Trim 10–15 words: Remove 'This is language for someone comparing data vendors and workflow platforms, not someone looking to speed up their own prospecting' — the contrast is already clear from the quotes"
+    "Revise the ## heading to include 'homepage' or 'messaging' for better searchability — e.g. 'Clay homepage messaging: from solo prospectors to GTM leadership'",
+    "Replace the rhetorical question in the final H3 block with a specific, runnable test — e.g. 'Open your homepage and count how many primary CTAs require no commitment (free trial, template, explore) vs. require sales engagement (demo, quote, talk to us). If the ratio is >2:1 in favor of commitment, you are filtering out bottom-funnel activation.'"
   ],
   "riskFlags": [
-    "The claim 'The page now expects a longer evaluation process involving multiple stakeholders' is a causal inference not supported by the evidence. The evidence shows CTA changes, but does not confirm sales cycle length or stakeholder count.",
-    "The phrase 'signals that Clay is optimizing for deals that require business case validation' assumes strategic intent without evidence. Reframe as conditional: 'If Clay is optimizing for deals that require business case validation, the CTA shift is consistent with that goal.'"
+    "The phrase 'The shift suggests Clay now expects longer sales cycles and multi-stakeholder approval' is a causal inference — the draft does not have evidence that Clay 'expects' this; we only know the CTA changed. Consider softening to 'The shift is consistent with longer sales cycles' or 'The shift points to a sales process that accommodates multi-stakeholder approval.'",
+    "The phrase 'positioning Clay as a platform decision, not a productivity hack' is an interpretation, not a fact — consider anchoring this to the evidence more explicitly: 'The headline positions Clay as a platform decision rather than a productivity tool, based on the shift from single-user pain language to infrastructure vocabulary.'"
   ],
   "seoNotes": [
-    "POSITIVE: The ## heading contains 'Clay' and 'audience shift', which are searchable. 'GTM leadership' is a bonus term.",
-    "POSITIVE: Each H3 sub-block uses plain, scannable language ('Who the old page served' / 'Who the new page serves').",
-    "NEGATIVE: The section does not include the term 'messaging' or 'positioning' in the ## heading, despite the section ID being '04-messaging-evolution'. Consider: 'Clay messaging shift: from individual practitioners to GTM leadership'."
+    "The ## section heading contains 'Clay' and 'audience shift' but would be stronger with 'homepage' or 'messaging' to match search intent",
+    "All three H3 headings contain searchable terms ('old page', 'new page', 'sales process') — good for scannability",
+    "The section uses exact verbatim quotes from the evidence in **bold quotes** throughout — excellent for Google snippet extraction"
   ],
-  "rewriteInstruction": "Anchor each H3 block opening to quoted evidence before interpreting. In block 1, start with the meta description quote, then explain who it serves. In block 2, start with the headline quote. In block 3, replace the final generic question with a specific, runnable test: 'Open your meta description. Count pain-language words vs. platform-capability words. If pain dominates but your revenue is multi-seat, you may be attracting the wrong visitor.' Trim 10–15 words by removing redundant contrast phrases. Reframe causal claims ('The page now expects...') as conditional ('If Clay expects..., the CTA shift is consistent').",
+  "rewriteInstruction": "The section scores well on evidence anchoring and plain language, but the final H3 block buries its takeaway and ends with a rhetorical question instead of a runnable test. Move the practical insight ('Does your homepage still speak to the person doing the work, or to the person signing the contract?') to the opening of that H3 block, then replace the rhetorical question with a specific 5-minute test the founder can do right now — e.g. counting the ratio of commitment-free CTAs to demo-gated CTAs. Also revise the ## heading to include 'homepage' or 'messaging' for better search alignment. Finally, soften the causal claim about 'expects longer sales cycles' to 'is consistent with' or 'points to' since we do not have internal strategy documentation confirming intent.",
   "dimensionScores": {
-    "evidenceAccuracy": 21,
-    "specificity": 12,
+    "evidenceAccuracy": 24,
+    "specificity": 15,
     "plainLanguage": 20,
     "scannability": 14,
-    "searchableHeadings": 9,
+    "searchableHeadings": 7,
     "rhythmAndOpening": 8,
-    "founderTakeaway": 4
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

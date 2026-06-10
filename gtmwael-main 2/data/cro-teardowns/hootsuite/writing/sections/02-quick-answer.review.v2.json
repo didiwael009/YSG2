@@ -1,0 +1,27 @@
+{
+  "score": 92,
+  "pass": true,
+  "issues": [
+    "Word count is 67 words — within spec but at the upper boundary for featured snippet extraction (Google prefers 40–60 words for answer boxes)",
+    "The phrase 'signaling a move away from trial-driven acquisition' introduces light interpretation without explicitly noting it as observational inference"
+  ],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Heading lacks searchable terms — 'Quick answer' contains neither 'Hootsuite' nor 'homepage' nor 'positioning'. Consider 'Quick answer: Hootsuite homepage repositioning summary' for H2 visibility in search.",
+    "First sentence includes the company name and time period, which strengthens featured snippet eligibility",
+    "All quoted elements are bolded correctly, improving scannability for featured snippet parsers",
+    "Three-sentence structure is optimal for Google answer box extraction"
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

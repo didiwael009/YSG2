@@ -1,36 +1,41 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 72,
+  "pass": false,
   "issues": [
-    "H3 heading 'What changed' is not searchable — contains no company name or topic term (CTA, conversion, path, trial, demo)",
-    "H3 heading 'Who this filters out' is not searchable — contains no company name or topic term",
-    "Opening sentence uses 'one CTA' but evidence shows 10 CTAs were removed, not just 'Request access'",
-    "Second H3 block ('Who this filters out') makes a claim about losing visitors without grounding it in evidence or conditional framing — reads as outcome prediction",
-    "The phrase 'friction points' in the opening is abstract/evaluative without plain-language explanation"
+    "Outcome/causation claim: 'that filter may be costing you pipeline' — no data provided to support conversion impact",
+    "H3 heading 'What changed' lacks searchable terms (company name, CTA, navigation, conversion missing)",
+    "H3 heading 'Who this filters out' lacks searchable terms",
+    "Final takeaway 'Audit your own page' is generic instruction, not a specific, runnable test anchored to Clay evidence",
+    "The causal statement 'that filter may be costing you pipeline' lacks an attached condition — should read 'if [specific condition from evidence], this may cost pipeline'",
+    "Section word count approximately 155 words — within range but verification needed",
+    "Paragraph 1 under 'Who this filters out' approximately 63 words — exceeds 60-word limit",
+    "Paragraph under 'Audit your own page' approximately 54 words — acceptable but the instruction is not specific to Clay"
   ],
   "requiredFixes": [
-    "Change H3 'What changed' to include a searchable term: 'Clay's CTA shift: access request to trial-or-demo choice' or 'What changed in Clay's trial and demo CTAs'",
-    "Change H3 'Who this filters out' to include a searchable term: 'Who the new CTA path filters out' or 'Clay's CTA choice and the visitors it may lose'",
-    "Rewrite opening sentence to acknowledge the full set of removed CTAs: 'Clay went from a menu of ten CTAs — **\"Request access\"**, **\"Watch video\"**, **\"Get template\"**, **\"Explore documentation\"** — to two primary paths: **\"Start free trial\"** and **\"Get a demo\"**.'"
+    "Remove or condition the causation claim 'that filter may be costing you pipeline' — no conversion data supports this outcome",
+    "Rewrite H3 heading 'What changed' to include searchable terms: 'Clay CTA evolution: from [old] to [new]' or similar",
+    "Rewrite H3 heading 'Who this filters out' to include searchable terms: 'Who the new CTA path filters' or 'Clay navigation and qualification shift'",
+    "Replace the final generic 'Audit your own page' instruction with a specific, runnable test anchored to Clay evidence: e.g., 'Count how many of your primary CTAs match Clay's two-path model (self-serve trial vs. sales demo). If you have educational CTAs like Clay's removed **Watch video** or **Explore documentation**, check whether your non-branded search visitors convert — Clay removed these mid-funnel options entirely.'",
+    "Break the 63-word 'Who this filters out' paragraph into two shorter blocks"
   ],
   "riskFlags": [
-    "Second H3 block opens with 'This change may lose visitors' — presents outcome as likely without data or conditional structure ('if X, then Y')",
-    "The claim 'Most early-stage companies cannot' in the final block is an unsupported generalization not traceable to Clay evidence"
+    "Causation claim without data: 'that filter may be costing you pipeline' — no conversion metrics or A/B test results provided in evidence",
+    "Causal statement lacks condition: should read 'if most visitors arrive from non-branded search or cold ads AND they need educational content, that filter may be costing you pipeline'"
   ],
   "seoNotes": [
-    "Section heading 'Clay's conversion path: from gated access to dual-track funnel' is strong — includes company name and searchable terms (conversion, path)",
-    "Two of three H3 subheadings lack searchable terms, reducing discoverability for readers scanning for CTA-specific guidance",
-    "The final H3 heading 'Audit your own page' is action-oriented but does not include Clay's name or a topic anchor — missed opportunity for 'Clay CTA audit' or similar"
+    "Main section heading 'Clay's CTA shift: from access request to instant trial' is strong — includes company name and CTA",
+    "H3 subheadings 'What changed' and 'Who this filters out' lack searchable terms — will not rank for 'Clay CTA evolution' or 'Clay navigation changes'",
+    "Final H3 'Audit your own page' is not searchable and too generic for SEO value"
   ],
-  "rewriteInstruction": "Three targeted fixes required. (1) Update both non-compliant H3 headings to include at least one searchable term — company name, CTA, trial, demo, conversion, or funnel. (2) Rewrite the opening sentence to reflect the evidence: Clay removed ten CTAs (list the key ones), not 'one CTA'. (3) Add a conditional frame to the second H3 block opening: 'This change may lose visitors *if* they arrive expecting to browse templates or watch videos before deciding'. This prevents the claim from reading as an outcome prediction.",
+  "rewriteInstruction": "This draft triggers a hard cap (unsupported outcome claim → cap at 70) and loses points for non-searchable H3 headings and a generic final takeaway. First: remove or heavily condition the pipeline claim — the evidence shows CTA changes but no conversion data. Second: rewrite all three H3 headings to include searchable terms (company name, CTA, navigation, or conversion). Third: replace the final 'Audit your own page' block with a specific, runnable test that mirrors Clay's evidence — e.g., 'Count how many primary CTAs on your page offer zero-commitment learning (like Clay's removed **Watch video** and **Explore documentation**). If that number is zero and your traffic is mostly non-branded search, test adding one educational CTA and measure bounce rate.' Fourth: break the 63-word paragraph under 'Who this filters out' into two blocks. The section is close but needs these fixes to pass 85.",
   "dimensionScores": {
-    "evidenceAccuracy": 22,
-    "specificity": 15,
+    "evidenceAccuracy": 15,
+    "specificity": 12,
     "plainLanguage": 18,
-    "scannability": 14,
+    "scannability": 9,
     "searchableHeadings": 4,
-    "rhythmAndOpening": 10,
-    "founderTakeaway": 5
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

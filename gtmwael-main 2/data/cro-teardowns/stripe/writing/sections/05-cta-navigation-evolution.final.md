@@ -1,5 +1,19 @@
-The CTA list changed fundamentally in what it asks visitors to do. The old page removed CTAs like "Contact Sales," "Become a Partner," and "Request an invite" — all of which signal qualification gates or human-mediated funnels. The new page added "Get started," "Sign up with Google," "Watch now," "Read the guide," and "Explore no-code" — a mix that appears to lower initial friction while distributing engagement across educational content. This shift is consistent with a self-serve-first posture, but the evidence also shows "Start with payments" and "Sign up instantly" were removed, suggesting Stripe may have moved away from product-specific onboarding CTAs toward a single unified "Get started" path. From a conversion perspective, this creates a tradeoff: less confusion at the entry point, but potentially more drop-off if the post-click experience doesn't quickly help visitors self-segment by use case.
+## Stripe's CTA and conversion path changes
 
-The navigation labels evolved from developer-centric abstractions to business outcome framing. The old H2s included "Designed for developers" and "Global scale" — both positioning statements that appeal to technical buyers evaluating infrastructure. The new H2s include "Flexible solutions for every business model," "Powering businesses of all sizes," and "The backbone of global commerce" — language that speaks to GTM leaders, CFOs, and executives who care about revenue architecture, not API design. The CRO implication is that the page now carries a heavier burden: it must convince a broader buying committee, not just the developer who will implement it. That requires more proof of business outcomes, customer logos in relevant verticals, and use-case clarity — all of which the page must deliver before the "Get started" CTA becomes credible to a non-technical visitor.
+Messaging wasn't the only layer Stripe rewrote — the conversion path changed too.
 
-The overall CTA architecture appears to have shifted from explicit funnel branching to implicit content-based qualification. The old page offered "Contact Sales" and "Become a Partner" as visible forks, letting visitors choose their own path. The new page funnels everyone through "Get started" but surrounds it with content CTAs like "Read the story," "Watch video," and "Get the data" — likely intended to educate and build intent before the signup moment. This can reduce perceived friction for casual visitors, but it also means the page must hold attention longer and provide enough context for a visitor to self-qualify. A SaaS founder studying this pattern should note: removing explicit sales CTAs doesn't remove the need for a sales path — it just moves the qualification burden onto content and post-signup routing, which requires either smart onboarding or a well-staffed SDR team to catch high-intent signups who bypassed self-serve.
+### What changed in Stripe's CTA path
+
+Stripe inverted its conversion path: the Oct 2022 homepage routed visitors to **"Contact Sales"** first; the Jun 2026 homepage routes them to **"Get started"** — instant account creation with zero sales conversation. Ten CTAs were removed, including **"Request an invite"** and **"Contact Sales"**. Ten were added, including **"Sign up with Google"** and **"Get started"**.
+
+### Who the new path may not serve
+
+The new path requires account creation before any sales conversation. The old path opened a sales dialog first.
+
+If your buyers need cost estimates or implementation scoping before they can create an account — often because internal approval processes require a quote — the new path may not match their workflow. Buyers from larger companies who expect to speak with a rep before signing up will not find that option on the primary CTA.
+
+### Audit your own page
+
+Open your homepage. Click your primary CTA. If it creates an account in one click, you match Stripe's new path. If it opens a contact form or meeting scheduler, you match the old one.
+
+Time this: under 5 seconds = self-serve; over 5 seconds = sales-gated. The question is not which is better — it is whether your path matches how your buyers are ready to engage.

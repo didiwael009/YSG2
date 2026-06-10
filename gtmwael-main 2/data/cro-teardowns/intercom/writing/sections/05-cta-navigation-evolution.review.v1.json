@@ -1,41 +1,43 @@
 {
-  "score": 78,
+  "score": 73,
   "pass": false,
   "issues": [
-    "Opening sentence does not execute the assigned 'concrete-number' move — it states a number but immediately pivots to abstraction ('yet the page became more decisive') rather than landing the number as the first beat",
-    "First paragraph, second sentence: 149 words — exceeds 90-word guideline without introducing a distinct second idea; the list of old CTAs could be compressed",
-    "'This can be read as' appears in paragraph 2 — hedging phrase count: 1 (acceptable, but the hedge covers interpretation that could be stated more directly)",
-    "No explicitly formatted tradeoff using '[X] in exchange for [Y]' or 'The tradeoff: [X] vs [Y]' — the phrase 'The tradeoff: speed vs qualification' appears but is not unpacked in the required exchange format",
-    "Section is 169 words — within target range for this section type",
-    "Takeaway is present ('The founder question isn't whether two CTAs are correct — it's whether your traffic quality and sales capacity match a page that offers precisely two doors') but lacks a named marketing tradeoff in full exchange format",
-    "All website quotes are properly bolded",
-    "Paragraph 2 includes a conversion implication (qualifying intent earlier) and buyer psychology (assumes visitors arrive educated or will self-select into sales)",
-    "Generic risk: 'the page now assumes visitors arrive educated or will self-select into sales' — this interpretation is not directly supported by the evidence (evidence shows CTAs changed, not visitor education level or sales qualification process)"
+    "Causal claim without data: 'a zero-nurture CTA set will cost you pipeline' — no conversion data supports this outcome claim",
+    "Causal claim without condition: 'The new page does not' and 'the page now offers no path forward' — implies absolute blocking without acknowledging other content paths may exist",
+    "H3 heading 'Who this filters out' is not searchable — contains no company name, homepage, positioning, messaging, CTA, or conversion terms",
+    "H3 heading 'What changed' is generic — could appear in any teardown",
+    "Final H3 'Audit your own page' violates scannability — body paragraph exceeds 60 words (approximately 68 words)",
+    "Founder takeaway is generic — 'Count how many CTAs let someone engage without entering your CRM' applies to any company, not anchored to Intercom-specific evidence",
+    "Missing bold quotes: 'Contact sales' and 'Start free trial' in first H3 block are not bolded, only legacy CTAs are",
+    "Section could be tighter — some sentences repeat the same point (e.g., 'None of the new ones let you leave' after already stating the CTAs changed)"
   ],
   "requiredFixes": [
-    "Rewrite the opening sentence to execute the 'concrete-number' move: lead with the number as the first beat, e.g., 'Twenty CTA swaps. Ten added, ten removed — but only two primary paths remain.' Then pivot to analysis.",
-    "Compress the first paragraph's second sentence — the long list of old CTAs dilutes punch. Suggest: 'The earlier homepage scattered intent across **\"Get started,\"** **\"Watch a Demo,\"** and outcome-specific hooks; the current version consolidates to **\"Start free trial\"** and **\"Contact sales.\"**'",
-    "Reformat the tradeoff as a full exchange: 'The tradeoff: speed to conversion in exchange for fewer unqualified leads' or 'The tradeoff: simplified choice in exchange for losing mid-funnel nurtured visitors.'",
-    "Remove or support the claim 'the page now assumes visitors arrive educated' — evidence shows CTA removal, not visitor education level. Rephrase as: 'Removing **\"Watch a Demo\"** and **\"Download the report\"** can be read as a bet that visitors arrive ready to choose, or that mid-funnel nurture now happens off-page.'"
+    "Remove or condition the pipeline cost claim: 'If your funnel depends on nurture conversions, a zero-nurture CTA set may reduce pipeline from early-stage traffic' — or remove entirely",
+    "Change H3 'Who this filters out' to 'Who Intercom's new CTA path filters out' or similar searchable heading",
+    "Bold all verbatim CTAs in first H3: **'Contact sales'** and **'Start free trial'** currently missing bold treatment",
+    "Reduce final H3 body paragraph to under 60 words — split into two sentences or remove redundancy",
+    "Make founder takeaway Intercom-specific: 'Open your homepage. Count CTAs that let someone read a case study or download a resource without entering a trial or sales path. If the count is zero, you have adopted Intercom's Jun 2026 model — test whether early-stage traffic converts or bounces.'"
   ],
   "riskFlags": [
-    "'the page now assumes visitors arrive educated or will self-select into sales' — this is an interpretive claim about visitor state and sales process that is not directly supported by the CTA change evidence; rephrase with hedging or remove"
+    "'a zero-nurture CTA set will cost you pipeline' — outcome claim with no conversion data from evidence",
+    "'the page now offers no path forward except starting an evaluation' — absolute causal statement without condition; nav or footer may offer content paths not documented",
+    "'you are filtering out early-stage traffic' — causal claim without supporting bounce rate or conversion data"
   ],
   "seoNotes": [
-    "Section uses concrete CTA names in bold quotes — good for skimmability and SEO entity reinforcement"
+    "Section heading 'Intercom's CTA shift: from content to conversion path' is searchable — contains company name and CTA term",
+    "H3 'What changed' is not searchable — generic and could rank for nothing",
+    "H3 'Who this filters out' lacks search terms entirely",
+    "H3 'Audit your own page' is generic but may catch long-tail 'audit CTA' searches"
   ],
-  "rewriteInstruction": "Open with the concrete number as the first beat — no pivot to abstraction in the same sentence. Compress the first paragraph's CTA list to avoid padding. Reformat the tradeoff as a full exchange ('[X] in exchange for [Y]'). Remove or hedge the unsupported claim about visitor education level — the evidence shows CTA removal, not visitor psychology. The takeaway is strong but needs the tradeoff fix to pass the founderSharpness threshold. Target: tighten to 150 words, preserve the founder question, and ensure the opening executes the assigned 'concrete-number' move without immediate abstraction.",
+  "rewriteInstruction": "Three fixes required. First, remove or condition all pipeline cost claims — no conversion data supports them; replace 'will cost you pipeline' with 'may reduce early-stage conversions if your funnel depends on nurture touches'. Second, make H3 headings searchable: change 'What changed' to 'Intercom removed all content CTAs' and 'Who this filters out' to 'Who the new CTA path filters out'. Third, split the final H3 body paragraph into two sentences (currently 68 words), and replace the generic founder test with an Intercom-anchored version: 'Open your homepage. Count how many CTAs let someone download a report or read a case study without entering a trial or sales call. Intercom dropped that count to zero — test whether your early-stage traffic converts or bounces under that model.' Finally, bold **'Contact sales'** and **'Start free trial'** in the first H3 block to match the bold treatment of removed CTAs.",
   "dimensionScores": {
-    "evidenceAccuracy": 20,
-    "clarity": 7,
-    "specificity": 13,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 7,
-    "analysisDepth": 8,
-    "editorialQuality": 3,
-    "founderSharpness": 13,
-    "distinctiveness": 2
+    "evidenceAccuracy": 15,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 8,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

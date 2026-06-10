@@ -2,39 +2,48 @@
   "score": 78,
   "pass": false,
   "issues": [
-    "Section heading is searchable but H3 subheadings lack searchable terms — 'What changed' and 'Who this filters out' are generic",
-    "Causal claim in H3.2 ('filters out') without condition — states outcome as fact",
-    "H3.2 'Who this filters out' makes unsupported behavioral claim about what the page 'assumes' and who it excludes",
-    "Generic paragraph in H3.2 — could appear in any SaaS teardown about adding friction",
-    "Final takeaway is too generic — 'count how many clicks' and 'check your trial start rate' could apply to any company",
-    "Word count approximately 175 words — within range but H3.2 is doing generic commentary work",
-    "H3.2 second sentence (34 words) + third sentence (28 words) could be condensed — the practical insight is diluted"
+    "The ## section heading ('How Crisp's conversion path changed from 2022 to 2026') contains the company name and a topic term, but uses 'conversion path' instead of the more searchable 'CTA' from the schema",
+    "H3 heading 'What changed' is generic and could appear in any teardown — lacks searchable specificity",
+    "H3 heading 'Who this filters out' is clever-only with no searchable terms (no 'CTA', 'navigation', 'button', 'conversion')",
+    "Paragraph 1 under 'What changed' is approximately 68 words — exceeds the 60-word limit for H3 body text",
+    "Paragraph 1 under 'Who this filters out' is approximately 62 words — exceeds the 60-word limit",
+    "The claim 'Someone comparing live chat tools for the first time now faces a choice...' is not traceable to the provided evidence — no data shows visitor behavior or confusion",
+    "The claim 'The page no longer serves people who need to explore...' is an outcome statement without supporting data",
+    "The phrase 'before understanding what Crisp does' implies causation (the CTAs prevent understanding) without evidence",
+    "The second H3 block ('Who this filters out') does not deliver a practical takeaway in the first two sentences — it presents analysis instead",
+    "The final test ('show the hero section to someone unfamiliar...') is not anchored to Crisp's specific evidence — it could apply to any company",
+    "Section word count is approximately 165 words — within range but could be tightened given the scannability penalties"
   ],
   "requiredFixes": [
-    "Rewrite H3 subheadings to include searchable terms: 'What changed' → 'Crisp replaced generic CTAs with AI-specific entry points' or similar; 'Who this filters out' → 'How the AI-specific CTAs change visitor flow' or 'The friction cost of feature-first CTAs'",
-    "Remove or reframe the causal claim in H3.2 — 'filters out' implies measured exclusion. Rewrite as conditional: 'If a visitor wants to start immediately, the new path requires...' or 'The trade-off: visitors now stop at...'",
-    "Anchor H3.2 to Crisp-specific evidence: which feature pages do the new CTAs link to? What does 'Learn more on the Crisp AI Chatbot' lead to? Make the paragraph about THIS company's specific path, not generic friction theory",
-    "Make the final audit more specific: 'Open your homepage. Count primary CTAs that lead to feature pages vs. signup. If >50% route to education first, check whether trial starts dropped after you added those paths.' Anchor it to what Crisp actually did."
+    "Change the ## heading to include 'CTA' explicitly: 'How Crisp's CTA strategy shifted from broad to feature-specific (2022–2026)'",
+    "Rewrite H3 'What changed' to be searchable and specific: 'From four generic CTAs to ten feature-named buttons'",
+    "Rewrite H3 'Who this filters out' to include a searchable term: 'Which visitors the new CTA structure excludes'",
+    "Split the 68-word paragraph under 'What changed' into two blocks — break after 'The old homepage used...' sentence",
+    "Split the 62-word paragraph under 'Who this filters out' into two blocks — break after 'The new CTAs assume...' sentence",
+    "Remove or condition the claim 'Someone comparing live chat tools for the first time now faces a choice...' — no evidence provided for visitor behavior. Reframe as observable: 'The new homepage presents **Get your AI Agent**, **Start Free Trial**, and **Book a demo** simultaneously above the fold, each naming a different product layer'",
+    "Delete 'The page no longer serves people who need to explore the full platform' — this is an outcome claim. Replace with observable: 'A visitor arriving from a generic search no longer sees a single orientation CTA'",
+    "Rewrite the second H3 opening to deliver the takeaway first: 'If your traffic includes discovery-stage visitors (people comparing categories, not features), multiple feature-specific CTAs create a selection problem. Crisp's 2026 homepage assumes...'",
+    "Anchor the final test to Crisp's evidence: 'Open Crisp's 2026 homepage. Count the feature-named CTAs above the fold (**Get your AI Agent**, **Start Free Trial**, **Book a demo**). Then ask: can a visitor unfamiliar with 'AI Agent' vs. 'messaging channels' choose between them without scrolling?'"
   ],
   "riskFlags": [
-    "'The new path assumes you need to understand' — presents assumption as fact without evidence of intent or measurement",
-    "'Who this filters out' — causal framing without data showing visitor exclusion or drop-off",
-    "'If you're ready to sign up based on word-of-mouth, the page now makes you stop' — behavioral claim without conversion data or user journey evidence"
+    "'Someone comparing live chat tools for the first time now faces a choice between AI Agent, Knowledge Base, and messaging channels before understanding what Crisp does' — no visitor behavior data or usability testing provided to support this claim",
+    "'The page no longer serves people who need to explore the full platform before choosing an entry point' — outcome/causation claim ('no longer serves') without conversion data or user research",
+    "'before understanding what Crisp does' — implies the CTA structure prevents understanding, but no evidence of comprehension issues or bounce rate is provided"
   ],
   "seoNotes": [
-    "Section heading contains 'Crisp' and 'CTA' — searchable, good",
-    "H3 subheadings are generic ('What changed', 'Who this filters out') — missed opportunity for long-tail terms like 'AI Agent CTA' or 'feature-specific call-to-action'",
-    "No mention of 'homepage' in the section body — could strengthen topical relevance"
+    "The ## heading includes 'Crisp' and a topic term ('conversion path'), meeting minimum searchability, but 'conversion path' is less common than 'CTA' in search queries",
+    "H3 headings are not optimised for search — 'What changed' and 'Who this filters out' contain no keyword value",
+    "The section would rank better if H3 headings included terms like 'CTA', 'call-to-action', 'button', 'signup', or 'free trial'"
   ],
-  "rewriteInstruction": "Rewrite H3.2 and H3.3 to anchor every sentence to Crisp's specific evidence. In H3.2, replace generic friction theory ('the page assumes', 'filters out') with conditional phrasing ('if a visitor X, the new path requires Y') and name the actual feature pages the new CTAs link to. In H3.3, replace the generic audit ('count clicks', 'check trial start rate') with a Crisp-anchored test: 'Open your homepage and list every CTA that routes to a feature page instead of signup — Crisp added five (AI Chatbot, messaging channels, Knowledge Base). If you did the same, compare your trial start rate before and after.' Make H3 subheadings searchable by adding topic terms: 'What changed' → 'From generic trial CTAs to AI-specific entry points'; 'Who this filters out' → 'The friction cost of feature-first CTAs'; 'Audit your own page' → 'Test whether education CTAs help or hurt signup rate'. Ensure the practical takeaway in H3.3 is specific enough that a founder can complete it in under five minutes using only their live homepage.",
+  "rewriteInstruction": "Tighten the section to meet scannability and evidence standards. (1) Change the ## heading to 'How Crisp's CTA strategy shifted from broad to feature-specific'. (2) Rewrite H3 'What changed' as 'From four generic CTAs to ten feature-named buttons' and split the body into two blocks under 60 words each. (3) Rewrite H3 'Who this filters out' as 'Which visitors the new CTA structure may exclude' and open with the practical takeaway: 'If your traffic includes discovery-stage visitors, multiple feature-specific CTAs create a selection problem.' Remove unsupported claims about visitor behavior ('Someone comparing live chat tools...', 'The page no longer serves...'). Replace with observable facts: list the exact CTAs from the evidence, note their simultaneous appearance above the fold, and describe the structural change only. (4) Anchor the final test to Crisp: 'Open Crisp's 2026 homepage and count the feature-named CTAs above the fold. Ask whether a visitor unfamiliar with your product tiers can choose between them without scrolling.' Keep total section length under 170 words. Every claim must trace to the provided CTA-change evidence.",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
-    "specificity": 9,
+    "evidenceAccuracy": 13,
+    "specificity": 12,
     "plainLanguage": 18,
-    "scannability": 13,
-    "searchableHeadings": 6,
-    "rhythmAndOpening": 9,
-    "founderTakeaway": 5
+    "scannability": 6,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

@@ -1,0 +1,41 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 1 (68 words) exceeds 60-word limit for analytical sections",
+    "Paragraph 2 (72 words) exceeds 60-word limit",
+    "H3.2 body contains a causal outcome claim without supporting data: 'that path may not serve buyers' → 'may cost qualified conversations' — no evidence provided that this cost actually occurred",
+    "H3.2 contains a conditional causal claim ('may cost qualified conversations') that lacks sufficient grounding — the condition is described but the cost mechanism is asserted",
+    "Opening sentence is template-default ('Stripe replaced its entire CTA path') when evidence supports more interesting entry (the inversion from sales-gate to instant-signup)",
+    "H3.3 test instruction is partially generic: 'does your product require implementation planning' is closer to a thinking prompt than a 5-minute runnable test"
+  ],
+  "requiredFixes": [
+    "Split paragraph 1 into two sentences or trim to 60 words maximum",
+    "Split paragraph 2 into two sub-paragraphs or trim to 60 words",
+    "Rewrite H3.2 to describe the path difference without claiming cost/outcome — anchor to the observed change only, e.g. 'The new path requires account creation before any sales conversation. The old path opened a sales dialog first. If your buyers need cost estimates before account creation, the new path may not match their workflow.'",
+    "Reopen with the inversion itself: 'Stripe inverted its conversion path: the Oct 2022 homepage routed visitors to **Contact Sales** first; the Jun 2026 homepage routes them to **Get started** — instant account creation with zero sales conversation.' This anchors the opening to the most specific, searchable finding.",
+    "Rewrite H3.3 test to be more concrete: 'Open your homepage. Click your primary CTA. If it creates an account in one click, you match Stripe's new path. If it opens a contact form or meeting scheduler, you match the old one. Time this: under 5 seconds = self-serve; over 5 seconds = sales-gated.'"
+  ],
+  "riskFlags": [
+    "H3.2: 'that path may not serve buyers who need pricing quotes' — implies a cost without evidence that Stripe experienced this cost",
+    "H3.2: 'a self-serve-only path may cost qualified conversations' — outcome claim with no data showing Stripe lost conversations or that the path is self-serve-only (nav may still offer sales contact elsewhere)"
+  ],
+  "seoNotes": [
+    "Positive: ## heading contains 'Stripe', 'CTA', and 'signup' — all searchable terms",
+    "Positive: H3.1 heading contains 'Stripe', 'CTA', 'sales', 'signup' — strong search coverage",
+    "Positive: All verbatim quotes are in **bold quotes** — compliant",
+    "Neutral: Section is ~150 words — within 120–180 target",
+    "Risk: H3.2 heading ('Who the new CTA path may exclude') lacks company name and is slightly abstract — would benefit from 'Stripe' insertion or more concrete phrasing like 'When Stripe's new CTA path may not fit'"
+  ],
+  "rewriteInstruction": "The draft is structurally sound but crosses two critical thresholds: (1) paragraph length violations in H3.1 and H3.2 degrade scannability, and (2) H3.2 introduces outcome claims ('may cost qualified conversations') that are not grounded in Stripe's actual experience — only in hypothetical buyer behaviour. Start by splitting or trimming both long paragraphs to 60 words max. Then rewrite H3.2 to describe the path difference neutrally: state what changed (sales-contact removed, instant-signup added), describe the workflow the old path served (sales conversation before account creation), and frame the exclusion risk as a conditional for the reader's context ('If your buyers need X before signup, test whether your path matches their workflow') — not as a cost Stripe incurred. Finally, replace the opening sentence with the inversion itself ('Stripe inverted its conversion path') to lead with the most interesting, searchable finding. The H3.3 test is close but needs one more concrete step: add a timing instruction ('under 5 seconds = self-serve') to make it genuinely runnable in under five minutes. These fixes will lift the score above 85 by removing unsupported claims, improving scannability, and sharpening the founder takeaway.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 13,
+    "plainLanguage": 20,
+    "scannability": 6,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

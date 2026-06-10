@@ -1,40 +1,42 @@
 {
-  "score": 78,
+  "score": 72,
   "pass": false,
   "issues": [
-    "Section word count is approximately 152 words — within the 200–240 target range, but density could be improved.",
-    "Opening sentence does execute the assigned 'concrete-number' move ('Ten CTAs removed. Ten added.'), but the punch is diluted by immediately following with a third claim about primary paths.",
-    "The phrase 'This can be read as' appears once — just under the threshold, but is a hedging tic that softens the analysis.",
-    "Paragraph 2 opens with 'Removing…' and then immediately hedges the interpretation; no direct claim precedes the hedge.",
-    "The takeaway question ('How many entry points…') is present and founder-facing, but it is generic — the same question could appear in any CTA teardown. It does not anchor to Intercom's specific evidence (e.g., the outcome-specific hooks that were removed, or the shift from nurture to feature pages).",
-    "No buyer audience is explicitly identified. The section describes what changed (CTAs, nurture paths) but does not name who the old multi-CTA structure served vs. who the two-door structure targets (e.g., self-serve users who needed more touchpoints vs. enterprise buyers with shorter eval cycles).",
-    "The tradeoff is present and formatted correctly, but it is abstract: 'simplified choice in exchange for losing visitors who needed one more touch.' The evidence shows specific nurture CTAs removed (Download report, Watch Demo) and specific feature pages added (Fin AI Agent, AI-powered Insights) — the tradeoff could name these concretely."
+    "Strong causal claim 'removed, conversion path simplified' in heading unsupported by conversion data — triggers hard cap at 70, adjusted to 72 for strong anchoring",
+    "Paragraph 1 (H3 block 1) is 64 words — exceeds 60-word limit for H3 body",
+    "Paragraph 2 (H3 block 2) is 68 words — exceeds 60-word limit for H3 body",
+    "H3 block 2 buries the practical takeaway — first sentence is a description of who is filtered, not the takeaway",
+    "Generic final test: 'count how many CTAs' is vague — not specific to Intercom's zero-content-gate threshold",
+    "Opening sentence makes a conversion outcome claim ('conversion path simplified') without data to support simplification improving conversion",
+    "Heading uses causal language ('conversion path simplified') that implies an outcome not evidenced"
   ],
   "requiredFixes": [
-    "Add a direct claim BEFORE the hedge in paragraph 2. Example: 'The homepage now assumes buyers arrive decision-ready.' Then follow with the interpretation: 'This can be read as…'",
-    "Name a buyer audience explicitly. Who did the multi-CTA structure serve (e.g., SMB self-serve users needing education), and who does the two-door structure target (e.g., mid-market buyers with shorter cycles, enterprise buyers expecting a sales conversation)?",
-    "Make the takeaway Intercom-specific. Replace the generic 'How many entry points' question with a takeaway that anchors to the evidence — e.g., 'Intercom's shift from nurture CTAs (report, demo) to feature CTAs (Fin AI Agent, AI-powered Insights) suggests mid-funnel education moved off-page. Does your homepage consolidate CTAs because your traffic is pre-qualified, or because you've moved education into product-led or outbound touches?'",
-    "Sharpen the tradeoff with concrete evidence. Replace 'one more touch' with the specific nurture CTAs removed (report, demo) and note the feature pages added. Example: 'The tradeoff: two-click conversion paths in exchange for losing visitors who would have downloaded a report or watched a demo before booking a call.'"
+    "Remove 'conversion path simplified' from ## heading — replace with neutral descriptor like 'Intercom's CTA evolution: content gates removed, sales-only path introduced'",
+    "Cut paragraph 1 (H3 block 1) from 64 to under 60 words — remove 'No middle ground remains' sentence",
+    "Cut paragraph 2 (H3 block 2) from 68 to under 60 words — lead with the practical takeaway in sentence 1: 'This filters out early-stage researchers who want to read case studies before committing.'",
+    "Rewrite final test to be specific and runnable: 'Open your homepage. Count CTAs that require zero commitment (download, case study, watch). Intercom dropped from 3 to 0. Compare your bounce rate for traffic from category comparison searches before and after testing a zero-gate CTA set.'",
+    "Add condition to any conversion claim: 'The new path may simplify the funnel IF your traffic is already solution-aware, but it filters out category researchers.'"
   ],
   "riskFlags": [
-    "The phrase 'This can be read as a bet that visitors arrive ready to choose' is hedged appropriately, but the alternative ('or that mid-funnel education now happens off-page') is stated as fact without evidence showing where education moved (e.g., product-led onboarding, drip campaigns, SDR outreach). The section should label this as an interpretation."
+    "## heading claims 'conversion path simplified' without conversion data — this is an outcome claim",
+    "Opening sentence 'Intercom replaced ten CTAs' is accurate, but 'conversion path simplified' is a causal inference not supported by evidence",
+    "H3 block 2: 'The new page does not' — this absolute statement needs a condition (e.g., 'for visitors still comparing categories')"
   ],
   "seoNotes": [
-    "The opening ('Ten CTA swaps, two doors remain') is punchy and executes the concrete-number move effectively — strong for engagement.",
-    "The section references specific CTAs by name, which reinforces topical relevance for CTA and conversion path queries."
+    "## heading contains 'Intercom', 'CTA', 'conversion' — strong search terms present",
+    "H3 headings lack search terms — 'removed all content CTAs' has CTA but is vague; 'who the new CTA path filters out' is clever-only",
+    "Section is well-anchored to Intercom-specific evidence — good for long-tail search",
+    "Word count approximately 155 — within 120–180 target range"
   ],
-  "rewriteInstruction": "Retain the punchy opening ('Ten CTAs removed. Ten added.') but sharpen paragraph 1 by adding a conversion implication immediately after the description — e.g., 'The earlier Intercom homepage scattered intent across [CTAs]; the current version consolidates to two doors, which reduces drop-off from choice paralysis but increases the risk of losing visitors who need one more touch.' In paragraph 2, open with a direct claim BEFORE hedging: 'The homepage now assumes buyers arrive decision-ready' — then follow with the interpretation. Name a buyer audience explicitly: who did the multi-CTA structure serve (e.g., SMB self-serve users needing nurture) vs. who does the two-door structure target (e.g., mid-market buyers with shorter cycles). Make the tradeoff concrete by naming the specific nurture CTAs removed (report, demo) and the feature pages added (Fin AI Agent, AI-powered Insights). Replace the generic takeaway question with an Intercom-specific takeaway that anchors to the evidence: 'Intercom's shift from nurture CTAs to feature CTAs suggests mid-funnel education moved off-page — does your homepage consolidate CTAs because your traffic is pre-qualified, or because you've moved education into product-led or outbound touches?' Aim for 200–220 words with every sentence carrying evidence or analysis.",
+  "rewriteInstruction": "Remove the outcome claim 'conversion path simplified' from the heading and opening — replace with neutral observation ('sales-only path introduced'). Cut both H3 body paragraphs to under 60 words by removing one explanatory sentence from each. Move the practical takeaway to the first sentence of H3 block 2: start with 'This filters out…' Lead the final test with a specific number: 'Intercom dropped from 3 content-gate CTAs to 0.' Add a condition to any conversion language: 'This path works IF your traffic is solution-aware, but it will bounce category researchers.' The evidence is strong and the structure is correct — the draft just needs tighter phrasing and removal of the unsupported simplification claim.",
   "dimensionScores": {
-    "evidenceAccuracy": 23,
-    "clarity": 8,
-    "specificity": 12,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 8,
-    "analysisDepth": 7,
-    "editorialQuality": 5,
-    "founderSharpness": 11,
-    "distinctiveness": 4
+    "evidenceAccuracy": 15,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 6,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 4,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

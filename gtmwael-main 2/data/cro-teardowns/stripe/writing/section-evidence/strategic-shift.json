@@ -1,0 +1,47 @@
+{
+  "central_thesis": "Stripe moved from developer-centric payment API positioning to enterprise-ready financial infrastructure platform by replacing 'Global Payments' with a revenue-growth outcome promise and removing product-specific navigation in favor of audience segmentation paths.",
+  "old_positioning_frame": "A suite of payment processing APIs designed for developers building internet businesses",
+  "new_positioning_frame": "Comprehensive financial services platform that handles revenue operations from first transaction to enterprise scale",
+  "buyer_shift": "Developers evaluating payment integration options → Business decision-makers seeking financial infrastructure partners",
+  "funnel_shift": "Mid-funnel product evaluation (developers comparing API features) → Top-funnel strategic problem recognition (executives exploring revenue operations modernization)",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "Global Payments",
+      "new": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+      "meaning": "Signals a shift from category descriptor ('payments') to outcome promise ('grow your revenue') and scope expansion beyond payments to full financial services infrastructure, suggesting Stripe is positioning for larger contract values with buyers who control broader financial operations budgets."
+    },
+    {
+      "element": "Page title",
+      "old": "Stripe | Payment Processing Platform for the Internet",
+      "new": "Stripe | Financial Infrastructure to Grow Your Revenue",
+      "meaning": "Indicates Stripe is willing to sacrifice SEO equity in 'payment processing' category searches to own 'financial infrastructure' positioning, which may signal confidence in brand recognition and intent to attract buyers searching for strategic infrastructure rather than tactical payment tools."
+    },
+    {
+      "element": "Navigation",
+      "old": "Payments Online payments | Checkout Pre-built payments page | Elements Customizable payments UIs | Payment Links No-code payments | Radar Fraud & risk management | Connect Payments for platforms",
+      "new": "Guide me | Start now | Contact sales | Stripe for enterprises | Stripe for startups | Stripe for platforms",
+      "meaning": "Suggests a move away from product-feature browsing (which serves bottom-funnel technical evaluators) toward audience-based self-segmentation, which is consistent with targeting business buyers who need guidance on which combination of products solves their use case rather than developers who know which specific API they need."
+    },
+    {
+      "element": "Section headings",
+      "old": "Unified platform | Designed for developers | Why Stripe | Global scale",
+      "new": "Flexible solutions for every business model. | The backbone of global commerce | Powering businesses of all sizes. | Reliable, extensible infrastructure for every stack.",
+      "meaning": "Points to a deliberate removal of developer-specific messaging ('Designed for developers') and replacement with business-outcome language ('every business model', 'backbone of commerce'), which may indicate Stripe is optimizing for executive buyers while trusting that developers will find technical documentation through other paths."
+    },
+    {
+      "element": "CTAs",
+      "old": "Contact Sales | Become a Partner | get financing | Start with payments | Read the docs | Explore partners",
+      "new": "Get started | Sign up with Google | Watch now | Read the story | Read the guide | Explore no-code",
+      "meaning": "Suggests a shift from transactional next steps ('Start with payments', 'Read the docs') toward educational content consumption ('Read the story', 'Read the guide') and audience segmentation ('Explore no-code'), which is consistent with serving earlier-stage consideration where buyers need to understand strategic fit before committing to technical implementation paths."
+    }
+  ],
+  "copy_this_if": "Your product category has already reached majority adoption in your target market, your brand name is widely recognized by non-technical executives, and you have evidence that product-level navigation is driving small-deal self-serve signups but not enterprise contract expansion",
+  "do_not_copy_this_if": "Developers are your primary buyer and champion within target accounts, or your brand lacks recognition with C-level executives who would need to understand what specific products you offer before trusting you with financial infrastructure responsibilities",
+  "safer_version_for_early_stage_saas": "Test adding a single audience-segmented landing page (e.g., '/for-enterprises') while preserving product-level navigation on the main homepage, then measure whether inbound demo requests from that page have higher ACV or faster close rates than requests from product pages",
+  "risk_if_copied": "Technical evaluators may bounce if they cannot quickly identify whether you offer the specific capability they need (e.g., 'Does this company handle recurring billing?' becomes harder to answer from generic 'financial infrastructure' positioning), leading to increased support volume and longer sales cycles as prospects request custom demos to understand basic product scope",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-10T19:43:20.031Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.021216
+}

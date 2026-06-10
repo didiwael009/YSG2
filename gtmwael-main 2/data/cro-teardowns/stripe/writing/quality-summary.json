@@ -1,141 +1,185 @@
 {
   "slug": "stripe",
-  "generatedAt": "2026-06-08T09:45:04.312Z",
+  "generatedAt": "2026-06-10T19:52:53.865Z",
   "mode": "standard",
   "sections": [
     {
       "sectionId": "01-intro",
       "finalVersion": 1,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 0,
-      "riskFlags": [],
-      "remainingIssueCount": 4,
-      "remainingIssues": [
-        "Paragraph 2 is largely descriptive — it lists changes (navigation, meta description, page title) without conversion implication or buyer psychology until the very end.",
-        "The phrase 'reflects observable movement' in paragraph 3 is vague analytical padding — 'observable' adds no information, and 'movement' is generic.",
-        "Paragraph 3 contains 'may better qualify enterprise buyers' — a conversion implication — but does not explain why cognitive load would improve qualification or what the alternative hypothesis might be.",
-        "No founder takeaway is explicitly stated. The closing sentence promises breakdowns but does not offer a single actionable observation a SaaS founder could apply."
-      ],
-      "sectionCostUsd": 0.030618
-    },
-    {
-      "sectionId": "02-at-a-glance",
-      "finalVersion": 3,
-      "finalScore": 78,
+      "finalScore": 72,
       "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 3,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
       "riskFlags": [
-        "Paragraph 2: 'self-serve developers' and 'business decision-makers' are invented personas not present in evidence",
-        "Paragraph 3: 'enterprise buyers' and 'technical users' are unsupported audience claims",
-        "Paragraph 5: 'developer-first entry point to a platform-credibility page' is an unsupported characterization of before/after state"
+        "CAUSAL CLAIM WITHOUT SUPPORT: 'These changes signal a move away from category positioning and toward outcome-based messaging' — evidence explicitly states strategy is not determinable",
+        "OUTCOME INTERPRETATION: 'signal a move' implies strategic intent that the evidence notes reject"
       ],
       "remainingIssueCount": 6,
       "remainingIssues": [
-        "Paragraph 2: 'self-serve developers looking for API clarity' and 'business decision-makers evaluating payment infrastructure at scale' are invented buyer personas not present in the evidence; evidence only states 'Audience signal changed'",
-        "Paragraph 3: 'enterprise buyers compare platform capabilities' and 'technical users expect to find immediately' are unsupported audience claims",
-        "Paragraph 3: 'can be read as consolidation' is mechanical hedging that does not cover a meaningful interpretive gap — the evidence shows only a net count change",
-        "Paragraph 5: 'developer-first entry point to a platform-credibility page' is an unsupported interpretation; evidence does not characterize the old or new page in these terms",
-        "Paragraph 5: 'each snapshot reflecting a materially different information architecture rather than iterative optimization' is a causal interpretation without evidence of the design intent or process",
-        "No company-specific proper noun (Stripe) appears in the first 40 words"
+        "Paragraph exceeds 90-word limit at approximately 95 words",
+        "Contains unsupported causal claim: 'These changes signal a move away from category positioning and toward outcome-based messaging' — the evidence notes explicitly state 'No confirmed strategy is implied' and 'Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone'",
+        "Uses expert term 'category positioning' without immediate plain-language definition",
+        "Uses expert term 'outcome-based messaging' without immediate plain-language definition",
+        "Final sentence introduces a generic test not anchored to Stripe's specific evidence",
+        "Opening sentence does not answer the search query — it describes what changed, not what the searcher will learn or why they should read"
       ],
-      "sectionCostUsd": 0.10386299999999998
+      "sectionCostUsd": 0.03186900000000001
     },
     {
-      "sectionId": "03-visual-timeline",
-      "finalVersion": 1,
-      "finalScore": 87,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 0,
-      "riskFlags": [],
-      "remainingIssueCount": 3,
-      "remainingIssues": [
-        "The phrase \"can be read as\" appears twice in close proximity (paragraph 2), approaching the hard cap threshold.",
-        "One CTA observation ('get financing' removed) lacks conversion implication — the draft notes the removal but does not explore what this signals about funnel strategy or buyer journey.",
-        "Minor specificity gap: the phrase \"executive evaluating financial infrastructure platforms\" (paragraph 1) is not directly anchored to a specific evidence item — it is a reasonable inference but not labeled as such."
-      ],
-      "sectionCostUsd": 0.03198300000000001
-    },
-    {
-      "sectionId": "04-messaging-evolution",
-      "finalVersion": 1,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 0,
-      "riskFlags": [],
-      "remainingIssueCount": 4,
-      "remainingIssues": [
-        "Paragraph 2 uses 'appears to serve' without labeling it as interpretive inference",
-        "Phrase 'growth-stage companies comparing billing engines' introduces specificity not directly anchored in the evidence",
-        "Paragraph 3 contains 'may address the objection' — hedging is appropriate but occurs multiple times across the section",
-        "Minor: 'CFO or finance operator' persona is inferred, not named in evidence"
-      ],
-      "sectionCostUsd": 0.046992000000000006
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
+      "sectionId": "02-quick-answer",
       "finalVersion": 1,
       "finalScore": 88,
       "passed": true,
       "loopsUsed": 0,
       "riskFlagCount": 1,
       "riskFlags": [
-        "Paragraph 2: 'That requires more proof of business outcomes, customer logos in relevant verticals, and use-case clarity' states requirements as fact without evidence these elements were added or tested"
+        "The claim 'this approach may create confusion about what your product actually does' is a causal prediction without supporting data — should be framed as a testable risk, not a likely outcome"
       ],
       "remainingIssueCount": 3,
       "remainingIssues": [
-        "Paragraph 2: 'The CRO implication is that the page now carries a heavier burden' is an interpretive leap not explicitly grounded in evidence—no snapshot data confirms this burden was realized or measured",
-        "Paragraph 3: 'This can reduce perceived friction for casual visitors' introduces a visitor segment ('casual visitors') not present in the evidence",
-        "Paragraph 3: 'requires either smart onboarding or a well-staffed SDR team' is speculation about Stripe's internal operations, not observable from homepage evidence"
+        "Word count is 75 words — at the absolute upper limit of the 50–75 target",
+        "Final sentence introduces a conditional claim ('may create confusion') without being traceable to specific evidence of confusion",
+        "The phrase 'This positioning assumes visitors already understand' is an interpretive leap not directly supported by quoted evidence"
       ],
-      "sectionCostUsd": 0.03154800000000002
+      "sectionCostUsd": 0.044475
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 3,
+      "finalScore": 73,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'cold traffic may leave' — no exit or bounce data in evidence; this is an outcome claim without support",
+        "'This matters most when visitors arrive through non-branded search, cold ads, or referrals' — no channel-specific data in evidence; presents a condition as fact",
+        "'your headline may be optimized for brand-aware visitors only' — inference not traceable to evidence; Stripe may serve different pages by segment"
+      ],
+      "remainingIssueCount": 8,
+      "remainingIssues": [
+        "Unsupported causal claim: 'cold traffic may leave' — no bounce rate or exit data provided in evidence",
+        "Unsupported causal claim: 'This matters most when visitors arrive through non-branded search' — no channel-specific conversion data in evidence",
+        "Generic paragraph: 'If your headline assumes brand awareness, cold traffic may leave before understanding what you offer' could appear in any teardown",
+        "Term 'category leadership positioning' used without plain-language definition in the same sentence",
+        "Expert jargon: 'category signals' appears without explanation",
+        "'What it costs' H3 block buries the practical takeaway — it does not appear in the first two sentences",
+        "Final test is specific but contains unsupported conditional ('This matters most when...') that inflates risk",
+        "Section heading is searchable but the company name is not in the H2 — it appears only as 'Stripe homepage positioning' which meets minimum threshold"
+      ],
+      "sectionCostUsd": 0.131115
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 3,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 2,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The phrase 'That shift suggests Stripe now expects visitors who already understand the category' is a causal inference — the evidence shows the text changed, but does not prove Stripe's expectation or visitor knowledge level. Recommend softening to 'That shift is consistent with targeting visitors who...' or 'This pattern often appears when companies target...'"
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "H3 heading 'Who the old Stripe homepage would serve' lacks the company name in the ## section heading — it appears only in the subheading",
+        "The final test is slightly generic — 'Read the headline aloud' could apply to any teardown, though the Stripe-specific comparison partially rescues it",
+        "First H3 block (65 words) exceeds the 60-word cap for H3 body text",
+        "The opening sentence in H3 block 1 uses a conditional framing ('If you didn't know...') that delays the practical takeaway"
+      ],
+      "sectionCostUsd": 0.11800500000000005
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 3,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "Causal claim without condition: 'the new path may not match their workflow' — whose workflow? under what circumstances?",
+        "Causal claim without condition: 'Buyers from larger companies... will not find that option' — which buyers? all enterprise? SMB with procurement?",
+        "Generic assertion: 'Buyers from larger companies who expect to speak with a rep' — not anchored to Stripe evidence, could apply to any B2B product"
+      ],
+      "remainingIssueCount": 8,
+      "remainingIssues": [
+        "Section heading is not searchable — 'CTA and conversion path changes' lacks company name in the heading itself (only in possessive form)",
+        "Second H3 heading ('Who the new path may not serve') is clever-only with no searchable terms like 'CTA', 'conversion', 'signup', or 'self-serve'",
+        "Paragraph 2 in H3-2 is 72 words — exceeds 60-word limit",
+        "H3-2 buries the practical takeaway — it starts with a restatement of the change, not the founder-actionable insight",
+        "Multiple causal claims lack attached conditions: 'the new path may not match their workflow' (what workflow?), 'Buyers from larger companies... will not find that option' (which buyers? all? some?)",
+        "Word count is approximately 195 words — exceeds 180-word cap by 15 words",
+        "Opening sentence uses two abstract noun stacks: 'conversion path' and 'account creation with zero sales conversation'",
+        "Generic SaaS commentary in H3-2: 'Buyers from larger companies who expect to speak with a rep' could appear in any B2B teardown"
+      ],
+      "sectionCostUsd": 0.13069799999999998
     },
     {
       "sectionId": "06-lessons-for-saas-teams",
-      "finalVersion": 1,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 0,
-      "riskFlags": [],
-      "remainingIssueCount": 3,
-      "remainingIssues": [
-        "Paragraph 4 uses 'can be read as' hedging once, but still within acceptable limit",
-        "The phrase 'This pattern can be read as evidence of a team running continuous iteration' is hedging a claim that is directly stated in the evidence ('Incremental changes compound')",
-        "Minor: 'If your homepage has been changing incrementally for two years but you can't articulate the through-line' is a hypothetical scenario not tied to Stripe's specific evidence"
+      "finalVersion": 3,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'removing explicit product framing may cost qualified pipeline' — outcome claim with no conversion data or A/B test evidence",
+        "'big-picture outcome language without category anchoring will confuse rather than convert' — causal claim with no supporting evidence from Stripe's data",
+        "'those same labels may read as vague rather than clear' — unsupported perception claim"
       ],
-      "sectionCostUsd": 0.03562499999999999
+      "remainingIssueCount": 11,
+      "remainingIssues": [
+        "H3 heading 'The pattern' lacks searchable terms — no company name, no topic term (homepage/positioning/messaging/CTA/conversion)",
+        "H3 heading 'Who should copy this' is clever-only with no searchable terms",
+        "H3 heading 'Who should NOT copy this' is clever-only with no searchable terms",
+        "H3 heading 'The test before you copy' lacks searchable terms",
+        "Paragraph 2 ('If a stranger can guess...') contains unsupported causal claim: 'those same labels may read as vague rather than clear' — no evidence provided",
+        "Paragraph 3 ('If you still depend...') contains unsupported outcome claim: 'removing explicit product framing may cost qualified pipeline' — no data supporting this causation",
+        "Paragraph 3 contains unsupported causal claim: 'big-picture outcome language without category anchoring will confuse rather than convert' — no conversion data provided",
+        "Final test paragraph is generic advice that could appear in any teardown — not anchored to Stripe's specific evidence pattern",
+        "Word count approximately 265 words — exceeds 260-word maximum by ~5 words",
+        "Section heading 'Should SaaS companies copy Stripe's homepage strategy?' contains company name but is question-format — less searchable than declarative",
+        "Paragraph 3 (90+ words) exceeds 60-word scannability guideline"
+      ],
+      "sectionCostUsd": 0.13827
     }
   ],
-  "averageScore": 86.2,
-  "passCount": 5,
-  "failCount": 1,
+  "averageScore": 79.5,
+  "passCount": 2,
+  "failCount": 4,
   "skippedCount": 0,
-  "totalRewriteLoops": 2,
+  "totalRewriteLoops": 8,
   "weakSections": [
-    "02-at-a-glance"
+    "01-intro",
+    "03-visual-timeline",
+    "05-cta-navigation-evolution",
+    "06-lessons-for-saas-teams"
   ],
   "allRiskFlags": [
-    "Paragraph 2: 'self-serve developers' and 'business decision-makers' are invented personas not present in evidence",
-    "Paragraph 3: 'enterprise buyers' and 'technical users' are unsupported audience claims",
-    "Paragraph 5: 'developer-first entry point to a platform-credibility page' is an unsupported characterization of before/after state",
-    "Paragraph 2: 'That requires more proof of business outcomes, customer logos in relevant verticals, and use-case clarity' states requirements as fact without evidence these elements were added or tested"
+    "CAUSAL CLAIM WITHOUT SUPPORT: 'These changes signal a move away from category positioning and toward outcome-based messaging' — evidence explicitly states strategy is not determinable",
+    "OUTCOME INTERPRETATION: 'signal a move' implies strategic intent that the evidence notes reject",
+    "The claim 'this approach may create confusion about what your product actually does' is a causal prediction without supporting data — should be framed as a testable risk, not a likely outcome",
+    "'cold traffic may leave' — no exit or bounce data in evidence; this is an outcome claim without support",
+    "'This matters most when visitors arrive through non-branded search, cold ads, or referrals' — no channel-specific data in evidence; presents a condition as fact",
+    "'your headline may be optimized for brand-aware visitors only' — inference not traceable to evidence; Stripe may serve different pages by segment",
+    "The phrase 'That shift suggests Stripe now expects visitors who already understand the category' is a causal inference — the evidence shows the text changed, but does not prove Stripe's expectation or visitor knowledge level. Recommend softening to 'That shift is consistent with targeting visitors who...' or 'This pattern often appears when companies target...'",
+    "Causal claim without condition: 'the new path may not match their workflow' — whose workflow? under what circumstances?",
+    "Causal claim without condition: 'Buyers from larger companies... will not find that option' — which buyers? all enterprise? SMB with procurement?",
+    "Generic assertion: 'Buyers from larger companies who expect to speak with a rep' — not anchored to Stripe evidence, could apply to any B2B product",
+    "'removing explicit product framing may cost qualified pipeline' — outcome claim with no conversion data or A/B test evidence",
+    "'big-picture outcome language without category anchoring will confuse rather than convert' — causal claim with no supporting evidence from Stripe's data",
+    "'those same labels may read as vague rather than clear' — unsupported perception claim"
   ],
   "sectionErrors": [],
-  "finalJudgeScore": 94,
+  "finalJudgeScore": 92,
   "finalJudgePass": true,
   "finalRequiredFixes": [],
-  "seoScore": 82,
+  "seoScore": 85,
   "seoPass": true,
   "seoRequiredFixes": [
-    "Title is 50 characters — good length, but consider adding a modifier for uniqueness: 'Stripe Homepage Teardown: Oct 2022 to Jun 2026 (CRO Analysis)' to differentiate from potential competitor analyses",
-    "Meta description ends with ellipsis '…' which may appear unfinished in SERPs — complete the sentence or rephrase to end cleanly within 155 characters",
-    "Primary keyword 'Stripe homepage CRO teardown' appears only once in the body (in metadata discussion context) — integrate it naturally into the introduction or first H2",
-    "Paragraphs in 'Messaging Evolution' and 'Lessons for SaaS Teams' sections exceed 150 words — break into smaller chunks (3-4 sentences max) for scannability",
-    "No clear H1 distinction — the markdown shows '# How Stripe rewrote its homepage over 4 years' but this differs from the title 'Stripe Homepage Teardown: Oct 2022 to Jun 2026' — align them or ensure the H1 includes the primary keyword"
-  ]
+    "In the 'What it costs' section, add explicit caveat: 'We observed this change; we cannot confirm Stripe saw improved or worse conversion rates. Your own traffic patterns will differ.' This prevents readers from interpreting the section as a predictive claim.",
+    "The meta description uses an ellipsis (…) which is 155 characters total including spaces. Verify exact character count in your CMS; if it exceeds 155, trim to 'A CRO teardown of Stripe's homepage changes from Oct 2022 to Jun 2026 — headline, CTAs, navigation, and what SaaS teams can learn.' (exactly 148 chars).",
+    "Under 'Quick answer,' the phrase 'This positioning assumes visitors already understand that Stripe processes payments' is correct but could be softened to avoid implying causality: Change to 'This positioning appeals to visitors who likely already understand Stripe processes payments' to avoid overstating the intent."
+  ],
+  "articleWordCount": 1189,
+  "repetitionWarnings": [],
+  "editorialWarnings": [],
+  "overLengthWarning": null
 }

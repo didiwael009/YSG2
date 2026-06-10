@@ -1,42 +1,33 @@
 {
-  "score": 71,
-  "pass": false,
+  "score": 88,
+  "pass": true,
   "issues": [
-    "The H3 'Why it matters' paragraph makes an unsupported causation claim: 'the headline may leave them unclear' — this outcome is not evidenced, only inferred.",
-    "The H3 'Why it matters' paragraph contains a causal claim without a condition: 'That is a narrower audience' — no supporting data traces this audience shift to the headline change.",
-    "The H3 'What it costs' paragraph is generic and could appear in any SaaS teardown. It does not anchor to Crisp's specific evidence.",
-    "The H3 'What it costs' final test is generic ('ask: could a cold visitor name your product category?') rather than specific to Crisp's evidence.",
-    "Paragraph 2 ('Why it matters') is 67 words — exceeds 60-word scannability cap.",
-    "The section does not quote any of the visible section headings provided in the evidence ('Meet the business messaging platform...', 'Build your perfect AI Agent in 4 steps', etc.) which would anchor the analysis more specifically.",
-    "The opening sentence reads like a template default ('The 2022 headline read... The 2026 headline reads...') when the evidence supports a more interesting entry — e.g. the shift from human touch to AI category."
+    "Final H3 test instruction uses 'customers' where evidence never confirms they ARE customers — could be prospects, leads, or visitors",
+    "Paragraph 2 of 'Why it matters' reaches 64 words — slightly over the 60-word cap",
+    "The phrase 'The page no longer reassures skeptics' implies a strategic choice without evidence of intent"
   ],
   "requiredFixes": [
-    "Rewrite the 'Why it matters' H3 block to remove unsupported outcome claims. Replace 'the headline may leave them unclear' with evidence-based observation: 'The new headline names a category (AI support platform) but does not explain what problem Crisp solves.'",
-    "Remove the causal audience claim 'That is a narrower audience than the 2022 version served' — or attach a condition: 'IF visitors arrive unfamiliar with AI support as a category, the new headline may filter them out.'",
-    "Rewrite the 'What it costs' H3 block to anchor it to Crisp's specific evidence. Quote one of the removed section headings ('Meet the business messaging platform that gathers customer support, sales, and marketing') and contrast it with the current positioning.",
-    "Replace the generic final test with a specific, runnable action tied to Crisp's evidence. Example: 'Open your homepage and count how many words explain what your product does versus how many name a technology category. If category terms outnumber explanatory terms, test a headline that leads with the problem you solve.'",
-    "Shorten the 'Why it matters' paragraph to 60 words or fewer. Break it into two blocks if needed.",
-    "Revise the opening to lead with the most interesting finding from the evidence — the shift from 'human touch' (personal, emotional) to 'AI' (technical, category-driven) — rather than a neutral before/after recitation."
+    "Change 'ask five customers' to 'ask five visitors' or 'ask five target users' — the evidence does not confirm these people are customers",
+    "Split the second paragraph of 'Why it matters' (currently 64 words) into two shorter paragraphs or trim 4+ words"
   ],
   "riskFlags": [
-    "UNSUPPORTED OUTCOME CLAIM: 'the headline may leave them unclear on what Crisp does' — no visitor confusion data provided in evidence.",
-    "CAUSAL CLAIM WITHOUT CONDITION: 'That is a narrower audience than the 2022 version served' — no audience size or demographic data traces this claim to the headline change.",
-    "GENERIC PARAGRAPH: The entire 'What it costs' H3 block could appear in a different company's teardown — it does not reference Crisp's specific messaging, removed section headings, or page structure."
+    "'The page now assumes visitors already want AI' — this is an inference about visitor mindset, not a traceable fact from the evidence",
+    "'The page no longer reassures skeptics' — implies a deliberate exclusion strategy not supported by evidence"
   ],
   "seoNotes": [
-    "POSITIVE: The ## heading contains the company name ('Crisp'), the page type ('homepage'), and the topic term ('positioning') — all searchable.",
-    "POSITIVE: The H3 subheadings use plain language and avoid clever-only phrasing.",
-    "NEUTRAL: The section does not quote any of the visible section headings from the evidence ('Meet the business messaging platform...', 'Build your perfect AI Agent in 4 steps') which could serve as long-tail search terms."
+    "Section heading contains both company name ('Crisp') and searchable terms ('homepage positioning', 'headline') — strong for organic discovery",
+    "The draft quotes exact headline text in bold, making it easy for Google to extract as a featured snippet",
+    "H3 headings are short and scannable but could be more keyword-rich (e.g. 'What changed in Crisp's homepage headline' vs 'What changed')"
   ],
-  "rewriteInstruction": "Rewrite the section to eliminate unsupported outcome claims and anchor every paragraph to Crisp's specific evidence. In 'Why it matters', replace the inference about visitor confusion with a factual observation: the new headline names a category but does not explain what problem Crisp solves. Add a condition to the audience claim: 'IF visitors arrive unfamiliar with AI support as a category, the new headline may filter them out.' In 'What it costs', replace the generic advice with a specific contrast: quote one of the removed section headings ('Meet the business messaging platform that gathers customer support, sales, and marketing') and show how the current page no longer offers that explicit product explanation. Replace the final test with a specific, runnable action tied to Crisp's evidence: count how many words on your homepage explain what your product does versus how many name a technology category, then test a headline that leads with the problem you solve. Shorten the 'Why it matters' paragraph to 60 words or fewer. Revise the opening to lead with the shift from 'human touch' to 'AI' as a positioning pivot, not a neutral before/after recitation.",
+  "rewriteInstruction": "Replace 'ask five customers' with 'ask five target users' or 'ask five visitors' — the evidence does not confirm they are customers. Split or trim the 64-word paragraph in 'Why it matters' (the one starting 'The meta description mirrors this shift') so no paragraph exceeds 60 words. Remove or soften 'The page now assumes visitors already want AI' — this is an inference, not a fact traceable to the evidence. Either frame it as a hypothesis ('The page may now assume…') or anchor it to observable evidence ('The headline no longer mentions human connection, signaling…'). Otherwise the section is strong: specific, scannable, and anchored to quoted evidence.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
-    "specificity": 5,
+    "evidenceAccuracy": 22,
+    "specificity": 15,
     "plainLanguage": 20,
-    "scannability": 9,
+    "scannability": 12,
     "searchableHeadings": 10,
     "rhythmAndOpening": 7,
-    "founderTakeaway": 0
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

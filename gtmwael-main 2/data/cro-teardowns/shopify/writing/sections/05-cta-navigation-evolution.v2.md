@@ -1,13 +1,13 @@
-## Shopify homepage CTA evolution: education to commitment
+## How Shopify's conversion buttons changed from education to activation
 
-### Education CTAs disappeared
+### What changed
 
-Shopify removed four exploration-focused CTAs: **"Explore more examples"**, **"Explore ways to sell"**, **"Explore how to market your business"**, and **"Learn more about Shopify"**. All four let visitors research without committing. The new CTAs skip that step — **"Start for free"** and **"Get a stunning store"** both assume you are ready to build.
+Shopify removed ten calls-to-action (CTAs) and added ten new ones. The old homepage offered **"Start your business"** and **"Explore ways to sell"** — multi-step educational paths. The new page leads with **"Start for free"** and **"Get a stunning store"** — direct activation prompts. Gone: **"Learn more about Shopify"** and **"Explore the Shopify Experts Marketplace"**. Added: **"Compare Shopify"** and product-specific buttons like **"Shop App"** and **"AI Chats"**.
 
-### Category researchers hit friction
+### Who this filters out
 
-The page no longer serves people still learning what an ecommerce platform does. If you landed asking "what can Shopify help me do?", the old page gave you paths to explore selling channels, marketing tools, and business management features. Now you are expected to already know. Visitors comparing categories — not just vendors — may leave if your traffic comes from non-branded search or educational queries.
+The new path no longer includes CTAs for visitors still deciding whether to sell online. If your traffic comes primarily from non-branded search or cold channels, removing education-focused CTAs may leave those visitors without a clear next step. The page now appears optimized for visitors who have already decided to launch an online store and are comparing platforms.
 
 ### Audit your own page
 
-Count how many of your CTAs include "explore," "learn," or "discover." Shopify went from four to zero. If your traffic skews non-branded, that removal may signal too-fast commitment. Check whether your primary CTA matches the question your typical visitor arrives with — or asks them to commit before they understand what they are committing to.
+Open your homepage and count how many CTAs start with "Learn" or "Explore." If your traffic still includes visitors from non-branded search, test those educational CTAs against direct activation prompts before removing them — you may find the educational path converts better for cold traffic than **"Start free trial"** does.

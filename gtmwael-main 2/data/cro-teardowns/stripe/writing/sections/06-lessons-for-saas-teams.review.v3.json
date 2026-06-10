@@ -1,0 +1,48 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "H3 heading 'The pattern' lacks searchable terms — no company name, no topic term (homepage/positioning/messaging/CTA/conversion)",
+    "H3 heading 'Who should copy this' is clever-only with no searchable terms",
+    "H3 heading 'Who should NOT copy this' is clever-only with no searchable terms",
+    "H3 heading 'The test before you copy' lacks searchable terms",
+    "Paragraph 2 ('If a stranger can guess...') contains unsupported causal claim: 'those same labels may read as vague rather than clear' — no evidence provided",
+    "Paragraph 3 ('If you still depend...') contains unsupported outcome claim: 'removing explicit product framing may cost qualified pipeline' — no data supporting this causation",
+    "Paragraph 3 contains unsupported causal claim: 'big-picture outcome language without category anchoring will confuse rather than convert' — no conversion data provided",
+    "Final test paragraph is generic advice that could appear in any teardown — not anchored to Stripe's specific evidence pattern",
+    "Word count approximately 265 words — exceeds 260-word maximum by ~5 words",
+    "Section heading 'Should SaaS companies copy Stripe's homepage strategy?' contains company name but is question-format — less searchable than declarative",
+    "Paragraph 3 (90+ words) exceeds 60-word scannability guideline"
+  ],
+  "requiredFixes": [
+    "Replace all four H3 headings with searchable versions containing topic terms: e.g. 'How Stripe's headline messaging evolved from category to outcome', 'When outcome-first homepage positioning works for SaaS', 'When category-first homepage messaging still converts better', 'Test your homepage's brand recognition before changing messaging'",
+    "Remove or condition the causal claim 'may cost qualified pipeline' — either cite conversion data or rewrite as 'this creates a decision point: does your traffic arrive knowing the category?'",
+    "Remove or condition 'will confuse rather than convert' — no conversion evidence supports this outcome claim",
+    "Anchor the final test to Stripe's specific evidence: instead of generic 'check Google Analytics', use 'Stripe could drop category labels because 5 nav changes over 4 years all moved toward outcome language — if your last 3 homepage changes went in different directions, test category-first first'",
+    "Cut 5–10 words to meet 260-word cap — combine sentence fragments in paragraph 3",
+    "Bold-quote the lesson-card quote 'Flexible solutions for every business model.' and other verbatim section headings if referenced in body"
+  ],
+  "riskFlags": [
+    "'removing explicit product framing may cost qualified pipeline' — outcome claim with no conversion data or A/B test evidence",
+    "'big-picture outcome language without category anchoring will confuse rather than convert' — causal claim with no supporting evidence from Stripe's data",
+    "'those same labels may read as vague rather than clear' — unsupported perception claim"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Stripe' and 'homepage strategy' — searchable but question format reduces ranking potential vs. declarative",
+    "All four H3 headings are clever-only with zero topic terms — severe SEO penalty",
+    "No H3 contains 'Stripe', 'homepage', 'positioning', 'messaging', or 'CTA' — missing primary keyword opportunities",
+    "The phrase 'Should SaaS companies copy' has search intent but is question-based rather than answer-based",
+    "Missing opportunity to use 'Stripe homepage positioning' or 'Stripe messaging strategy' in H3s"
+  ],
+  "rewriteInstruction": "Rewrite all four H3 headings to be searchable and declarative, each containing at least one topic term (homepage, positioning, messaging, CTA, conversion) plus ideally 'Stripe'. Remove the three unsupported causal/outcome claims: either delete them entirely or rewrite as conditional decision points ('if your traffic arrives cold, this creates risk' instead of 'this will cost pipeline'). Anchor the final test paragraph to Stripe's specific 4-year pattern from the evidence (5 snapshots, consistent directional changes) rather than generic Google Analytics advice. Cut paragraph 3 to under 60 words by combining the two sentences about confusion/conversion into one conditional statement. Ensure the final word count is 255 or below.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 12,
+    "plainLanguage": 18,
+    "scannability": 7,
+    "searchableHeadings": 0,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

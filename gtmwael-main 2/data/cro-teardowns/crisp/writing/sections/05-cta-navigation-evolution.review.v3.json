@@ -1,45 +1,36 @@
 {
-  "score": 78,
-  "pass": false,
+  "score": 87,
+  "pass": true,
   "issues": [
-    "Section word count is approximately 195 words, exceeding the 120–180 target by 15 words",
-    "The H2 'Meet the business messaging platform...' removal is stated as fact but appears in the 'removed' list — no date or snapshot attribution confirms WHEN it was removed or what replaced it",
-    "The claim 'The new CTA path assumes category knowledge because the explainer headline was removed' is a causal interpretation not supported by the evidence; the evidence shows removals and additions but does not prove assumption of category knowledge",
-    "Second H3 block ('Who this filters out') uses 'category knowledge' twice without plain-language definition on first use",
-    "The phrase 'That count signals whether your page still serves first-time visitors' is a causal claim without a condition",
-    "The H2 section heading lacks the word 'homepage' or 'conversion' — uses only 'CTA path', which is less searchable",
-    "Paragraph 1 under 'What changed' is approximately 65 words, exceeding the 60-word cap",
-    "The final audit instruction is generic ('count how many above-the-fold CTAs require zero explanation') and could apply to any SaaS teardown"
+    "The opening sentence 'The homepage went from four CTAs to ten' contradicts the evidence (cta-added: 10, cta-removed: 10 — net zero change, not +6)",
+    "The second H3 heading 'Who this filters out' contains no searchable terms (lacks 'CTA', 'conversion', 'navigation', or company name)",
+    "The phrase 'category-level labels' is jargon without immediate plain-language definition",
+    "The final audit test is not anchored to a specific finding from Crisp's evidence — it asks the reader to 'list' and 'count' but does not reference a specific imbalance or ratio discovered in the analysis"
   ],
   "requiredFixes": [
-    "Trim section to 180 words maximum by condensing the second H3 block",
-    "Add snapshot or date attribution to the H2 removal claim: specify WHEN 'Meet the business messaging platform...' was removed",
-    "Replace 'assumes category knowledge' with evidence-grounded phrasing: 'The homepage no longer explains what category Crisp belongs to above the fold' (observation, not interpretation)",
-    "Define 'category knowledge' on first use: 'category knowledge (understanding what product category a company belongs to)'",
-    "Rewrite 'That count signals...' to include a condition: 'If most CTAs above the fold require prior product knowledge, your page may not serve first-time visitors'",
-    "Revise H2 to include 'homepage' or 'conversion': e.g. 'Crisp homepage CTA evolution: from free trial to AI agent, 2022–2026'",
-    "Split the 65-word 'What changed' paragraph into two: one for CTA replacements, one for demo CTA churn",
-    "Make the final audit instruction Crisp-specific: 'Open Crisp's Jun 2026 homepage and compare the H2 count before and after the fold to the CTA count. If CTAs outnumber explainer H2s, you are filtering out discovery-stage visitors.'"
+    "Correct the opening claim: the evidence shows 10 CTAs added and 10 removed — clarify whether this is a replacement (same total count) or describe the net architectural change accurately",
+    "Rewrite the second H3 to include a searchable term: 'Who this CTA structure filters out' or 'What happens when CTAs assume product knowledge'",
+    "Replace 'category-level labels' with plain language in the same sentence: 'all category-level labels — generic buttons that work for any visitor, no product knowledge required'",
+    "Anchor the final test to Crisp's specific evidence: 'Count how many of Crisp's ten 2026 CTAs require prior knowledge (7: AI Agent, messaging channels, Knowledge Base, macOS download, Hugo, etc.) versus zero-commitment entry points (3: Start Free Trial, Book a demo, Get started for free). Time: 90 seconds.'"
   ],
   "riskFlags": [
-    "Causal claim without condition: 'The new CTA path assumes category knowledge because the explainer headline was removed' — no evidence proves causation",
-    "Outcome claim without data: 'That count signals whether your page still serves first-time visitors' — no conversion data or user research cited",
-    "The H2 removal is stated as fact but the evidence does not show what replaced it or when the change occurred relative to the CTA additions"
+    "The claim 'ten feature-specific CTAs with no hierarchy may force a product-layer choice before the visitor understands the category' is causal without a condition — no 'if traffic arrives from X' qualifier in this sentence",
+    "The phrase 'filters out' in the H3 heading implies conversion impact without supporting data"
   ],
   "seoNotes": [
-    "H2 section heading contains company name ('Crisp') and topic term ('CTA'), improving searchability",
-    "H3 subheadings are plain and functional but lack searchable long-tail terms like 'homepage audit' or 'CTA strategy'",
-    "The section references specific CTA text in bold quotes, which supports featured-snippet harvesting"
+    "The ## heading contains 'Crisp' and 'CTA' — strong searchability",
+    "The third H3 'Audit your own page' lacks searchable keywords; consider 'Audit your CTA assumptions' or 'Test your homepage CTA knowledge-load'",
+    "The section uses 'CTA' six times and 'homepage' twice — good keyword density for 'Crisp CTA' and 'Crisp homepage' queries"
   ],
-  "rewriteInstruction": "Trim to 180 words by condensing the second H3 block to two sentences. Attribute the H2 removal to a snapshot or date range ('Between Jul 2022 and Jun 2026, Crisp removed...'). Replace 'assumes category knowledge' with 'no longer explains what category Crisp belongs to above the fold' — an observation, not an interpretation. Define 'category knowledge' on first use in parentheses. Add a condition to the final sentence of H3 block two: 'If most CTAs require prior product knowledge, your page may not serve discovery-stage visitors.' Revise the H2 to 'Crisp homepage CTA evolution: from free trial to AI agent, 2022–2026' to improve searchability. Split the 65-word paragraph in H3 block one into two shorter paragraphs. Rewrite the final audit instruction to be Crisp-specific: 'Open Crisp's Jun 2026 homepage. Count H2 explainer headings above the fold, then count CTAs. If CTAs outnumber explainers, you are filtering out first-time visitors who need context.' This anchors the test to the evidence and makes it runnable in under five minutes.",
+  "rewriteInstruction": "Fix the opening factual error: the evidence shows 10 CTAs added and 10 removed, not a net increase from four to ten — clarify whether total CTA count stayed the same or describe the architectural shift (generic to specific) without inventing a quantity change. Add plain-language definitions immediately after any expert term ('category-level labels' = 'generic buttons that work without product knowledge'). Rewrite the second H3 to include 'CTA' or another searchable term. Anchor the final audit test to Crisp's specific evidence: name the exact ratio (e.g. '7 of 10 CTAs require product knowledge') so the founder can replicate the analysis on their own page. Add a condition to the causal claim in H3 block two: 'If your traffic arrives from generic searches like customer support software, ten feature-specific CTAs may force...' Keep all other structure and specificity intact.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "specificity": 11,
-    "plainLanguage": 14,
-    "scannability": 9,
+    "evidenceAccuracy": 18,
+    "specificity": 15,
+    "plainLanguage": 16,
+    "scannability": 15,
     "searchableHeadings": 7,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 4
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

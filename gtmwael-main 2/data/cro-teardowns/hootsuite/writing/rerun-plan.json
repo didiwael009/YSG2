@@ -1,100 +1,21 @@
 {
-  "createdAt": "2026-06-08T10:29:26.057Z",
+  "createdAt": "2026-06-10T19:40:50.370Z",
   "slug": "hootsuite",
   "source": {
-    "finalJudgePass": false,
+    "finalJudgePass": true,
     "seoPass": true,
-    "finalJudgeScore": 76,
-    "seoScore": 85
+    "finalJudgeScore": 92,
+    "seoScore": 87
   },
-  "sectionsToRerun": [
-    {
-      "sectionId": "04-messaging-evolution",
-      "reasons": [
-        "a superlative headline may increase drop-off before the visitor scrolls",
-        "'optimized for self-serve clarity — the page tells a visitor what they can do and where to start, reducing first-screen cognitive load' — conversion outcome claim without data",
-        "'may feel more credible to enterprise evaluators while becoming less scannable for self-serve visitors' — conversion outcome claim (credibility, scannability) without measurement",
-        "'outcome language reduces initial resistance but may attract lower-intent visitors' — conversion outcome claim without evidence",
-        "'a superlative headline may increase drop-off before the visitor scrolls' — drop-off claim without data",
-        "'action labels reduce friction for self-serve users' — friction reduction claim without measurement",
-        "'category labels signal platform breadth but may confuse users' — confusion/friction claim without data",
-        "Section 03 (Visual Timeline): Label 'may feel more credible to enterprise evaluators while becoming less scannable for self-serve visitors' as interpretation. No A/B test data on credibility or scanna",
-        "Section 06 (Lessons): Remove or label all conversion outcome claims: 'reduces initial resistance', 'may increase drop-off', 'reduce friction', 'may confuse users'. None of these have supporting data i"
-      ],
-      "priority": "high",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "reasons": [
-        "This dual-CTA structure can be read as targeting two buyer segments",
-        "adds navigation steps for users who arrived ready to convert",
-        "'This dual-CTA structure can be read as targeting two buyer segments' followed by 'which may create a self-selection burden' — conversion friction claim without data",
-        "Section 03 (Visual Timeline): Label 'reducing first-screen cognitive load' as interpretation, not observed fact. Evidence shows headline and nav changes, not cognitive load measurement.",
-        "Section 05 (CTA): Label 'which may create a self-selection burden' as interpretation. No user testing or conversion data supports this causal claim.",
-        "Section 06 (Lessons): The entire section restates analysis from sections 04 and 05 (headline shift, nav shift, section heading audit) without converting it into new action. Rewrite to offer practical ",
-        "Overall concision: The self-serve→enterprise shift appears explicitly in sections 01, 03, 04, 05, and 06 (5 times). Reduce to 1-2 mentions maximum. The proof burden concept appears in sections 04 and ",
-        "Section 06, paragraph 2: 102 words, restates navigation analysis from section 05 without adding new founder takeaway beyond 'test this by tracking clicks'.",
-        "Section 06, paragraph 3: 98 words, restates section heading change already described in section 02 and 03. Convert to specific audit method or remove."
-      ],
-      "priority": "high",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "reasons": [
-        "Judge rerun recommendation: 06-lessons-for-saas-teams",
-        "Identified as weak section by final judge",
-        "The 'Lessons for SaaS Teams' section is dense with long paragraphs. Break into shorter paragraphs (3–4 sentences max) and consider adding bullet points for the three main patterns discussed."
-      ],
-      "priority": "high",
-      "source": "both"
-    }
-  ],
+  "sectionsToRerun": [],
   "skippedIssues": [
     {
-      "issue": "optimized for self-serve clarity",
+      "issue": "Title is strong but could consider tightening to under 60 characters for optimal SERP display: current is 59 chars including spaces, which is borderline. Consider 'Hootsuite Homepage CRO Teardown 2023",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "reducing first-screen cognitive load",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "may feel more credible to enterprise evaluators while becoming less scannable for self-serve visitors",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "which may create a self-selection burden for first-time visitors",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "outcome language reduces initial resistance but may attract lower-intent visitors",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "action labels reduce friction for self-serve users",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "category labels signal platform breadth but may confuse users who arrived to solve one workflow problem",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "The meta description is 152 characters including the ellipsis, which is good, but the truncation ('…') suggests the description was cut mid-sentence. Rewrite to end cleanly within 155 characters witho",
+      "issue": "Meta description is 154 characters, which is acceptable, but the phrase 'what SaaS teams can study…' trails off with an ellipsis that may truncate oddly in some search results. Revise to: 'How Hootsui",
       "reason": "metadata field in seo.json, not section content"
-    },
-    {
-      "issue": "Add at least one internal link with anchor text that includes a target keyword (e.g., 'homepage CRO teardown' linking to a related article or resource hub).",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Section 01-intro (medium priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
-    },
-    {
-      "issue": "Section 02-at-a-glance (medium priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]
 }

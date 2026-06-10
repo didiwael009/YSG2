@@ -1,17 +1,17 @@
-## Should you copy Clay's homepage shift to enterprise positioning?
+## Should SaaS companies copy Clay's homepage strategy? When it works and when it doesn't
 
 ### The pattern
 
-Clay replaced product mechanism messaging with infrastructure positioning. The old headline **"This spreadsheet fills itself."** became **"Every GTM data point imaginable, in one place"**. The meta description dropped **"No more million tab opening and manual copy pasting"** for **"Access 150+ premium data sources and AI research agents in one platform."** The pattern: stop explaining how the product works, start positioning against the category you want buyers to evaluate you within.
+If you sell to both individual users and executive buyers, you will eventually rewrite your homepage twice. Clay's five-year shift shows the trade: the company removed the product mechanism explanation (**"This spreadsheet fills itself"**) and replaced it with platform infrastructure positioning (**"Every GTM data point imaginable, in one place"**). Same product, different buyer, completely rewritten page.
 
 ### Who should copy this
 
-Copy this if you already removed your waitlist. Clay moved from **"Request access"** to **"Get a demo"** — that shift only works when inbound volume can support a sales team. The evidence: if your demo requests already mention competitor names unprompted, buyers are comparing platforms before they arrive. You have the brand recognition this requires when strangers land on your page already knowing what problem you solve.
+You can copy this if your URL and brand already answer the question "what does this product do" before a visitor lands on the page. If you sell multi-seat licenses but your current homepage still attracts individual users who love the product but cannot authorize the contract size you now need to close, this shift may make sense for you.
 
 ### Who should NOT copy this
 
-Do not copy this if your navigation still lists use-case templates. Clay removed **"All templates"**, **"Find new customers"**, and **"Prioritize inbound leads"** — the viral distribution paths that built their initial user base. Cutting self-serve exploration before you have enterprise sales infrastructure operational will reduce pipeline from both ends: practitioners stop activating, but enterprise buyers are not yet requesting demos at volume.
+Do not copy this if practitioners still share your product in communities or on social platforms. Clay removed use-case navigation (**"All templates"**), template exploration CTAs, and the product mechanism headline. If you still depend on viral adoption — when individual employees start using your product without management approval — removing self-serve paths before you have predictable enterprise pipeline may cost you the users who become champions inside larger accounts.
 
 ### The test before you copy
 
-Open your last 30 demo requests. If fewer than half mention a competitor, integration requirement, or multi-seat deployment, enterprise positioning is premature. Clay could swap **"Get template->"** for **"Read more about Clay Enterprise"** because their inbound requests had already shifted to enterprise evaluation language. Check your own CRM before rewriting for buyers you do not yet attract.
+Open your homepage. Count how many CTAs let visitors explore without talking to sales. Clay went from four exploration paths (**"Request access"** · **"Get template"** · **"Explore documentation"** · **"Watch video"**) to one (**"Start building for free"**). If you still convert 40% or more of your pipeline from self-serve signups, you cannot afford to remove three out of four exploration CTAs yet.

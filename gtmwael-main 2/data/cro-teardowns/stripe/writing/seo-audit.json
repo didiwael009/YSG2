@@ -1,58 +1,49 @@
 {
-  "seoScore": 82,
+  "seoScore": 85,
   "pass": true,
-  "titleScore": 13,
-  "metaDescriptionScore": 12,
-  "headingStructureScore": 14,
+  "titleScore": 12,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 13,
   "searchIntentScore": 18,
-  "keywordUseScore": 8,
-  "readabilityScore": 11,
-  "internalLinkingScore": 6,
+  "keywordUseScore": 9,
+  "readabilityScore": 14,
+  "internalLinkingScore": 5,
   "internalLinkingSuggestions": [
-    "In section 01-intro, when discussing 'enterprise buyers managing scale', link to related content about enterprise SaaS conversion strategies or buyer personas",
-    "In 'Messaging Evolution' section, when mentioning 'A better fix for SaaS teams', link to a foundational article on SaaS homepage messaging frameworks",
-    "In 'Lessons for SaaS Teams', when discussing 'product-led motion', link to content about PLG (product-led growth) conversion funnels",
-    "In 'CTA and Navigation Evolution', when mentioning 'self-serve-first posture', link to a guide on self-serve SaaS conversion optimization",
-    "Throughout 'Lessons for SaaS Teams', each subsection could link to deeper methodology articles (e.g., 'how to audit your homepage heading structure', 'CTA architecture patterns for SaaS')"
+    "Link from 'homepage CRO teardown' section to an internal index or archive of other SaaS teardowns (Figma, Linear, Notion, etc.) to surface related teardown case studies",
+    "Add internal link in the 'Should SaaS companies copy Stripe's homepage strategy?' section to a general guide on headline testing or brand positioning frameworks if one exists in your resource library",
+    "In the 'What to check on your own homepage' callout, link to a self-audit template or checklist that teams can use to grade their own headlines — reduces bounce and increases engagement",
+    "The 'Quick answer' section would benefit from a link to a glossary entry defining 'outcome-based messaging' or 'category positioning' for readers unfamiliar with the terminology"
   ],
   "faqSuggestions": [
-    "Why did Stripe change its homepage headline from 'Global Payments' to 'Financial infrastructure to grow your revenue'?",
-    "What can SaaS companies learn from Stripe's homepage redesign?",
-    "How did Stripe's navigation structure change between 2022 and 2026?",
-    "What is the difference between product-led and platform-led homepage messaging?",
-    "Should my SaaS homepage use a short product headline or a longer outcome-focused headline?",
-    "How does Stripe's homepage CTA strategy work for enterprise vs self-serve buyers?",
-    "What section headings work best for SaaS homepage conversion?"
+    "Did Stripe's homepage changes increase sign-ups or traffic? (Clarifies you cannot predict traffic outcomes, only observe what changed and why)",
+    "How often should a SaaS company redesign its homepage headline?",
+    "Should my homepage lead with a product name or customer outcome?",
+    "What is the difference between category positioning and outcome-based messaging?",
+    "When does removing a 'Contact Sales' CTA hurt conversion instead of help it?",
+    "How do I know if my visitors already understand what my product does?"
   ],
   "contentGapNotes": [
-    "No discussion of visual design changes beyond structural layout — color, imagery, social proof placement, or trust elements not addressed despite being part of typical CRO teardowns",
-    "Mobile vs desktop experience differences not mentioned, despite responsive design being a critical conversion factor",
-    "No quantitative speculation about which changes might correlate with business outcomes (e.g., 'this shift may have supported Stripe's enterprise growth from X to Y stage')",
-    "Competitive context missing — how do these changes position Stripe against Adyen, Braintree, or other payment platforms mentioned briefly?",
-    "No analysis of form friction, signup flow changes, or post-CTA experience despite CTA evolution being a major theme",
-    "Missing discussion of social proof evolution (logos, testimonials, case studies) which often accompanies messaging pivots from developer to enterprise",
-    "No mention of page speed, Core Web Vitals, or technical SEO factors that could affect conversion independent of messaging"
+    "No analysis of how Stripe's homepage messaging changes align with their product roadmap expansion (i.e., did they actually launch new financial services capabilities between 2022–2026, or was this purely messaging repositioning?). This context would strengthen the 'why' behind the changes.",
+    "Missing data on mobile vs. desktop headline presentation — did Stripe truncate or rewrite the 30-word headline for mobile, and how did that affect clarity?",
+    "No mention of how the navigation structure changed beyond CTAs. Did the removal of product-specific nav items (e.g., 'Payments Online payments') create new content-discovery friction for visitors seeking specific features?",
+    "Article does not address multi-language or multi-region impacts. Did Stripe apply the same outcome-based messaging in non-English locales, or did they keep category positioning for regions with lower brand awareness?",
+    "No analysis of supporting content (hero imagery, social proof, value proposition sections) — did those evolve to match the headline shift, or did Stripe create a mismatch between headline and body copy?",
+    "Missing discussion of how this headline repositioning interacts with Stripe's go-to-market motion (self-serve vs. enterprise sales). The article mentions the shift removed 'Contact Sales' but does not explore whether Stripe launched a separate enterprise homepage."
   ],
   "requiredFixes": [
-    "Title is 50 characters — good length, but consider adding a modifier for uniqueness: 'Stripe Homepage Teardown: Oct 2022 to Jun 2026 (CRO Analysis)' to differentiate from potential competitor analyses",
-    "Meta description ends with ellipsis '…' which may appear unfinished in SERPs — complete the sentence or rephrase to end cleanly within 155 characters",
-    "Primary keyword 'Stripe homepage CRO teardown' appears only once in the body (in metadata discussion context) — integrate it naturally into the introduction or first H2",
-    "Paragraphs in 'Messaging Evolution' and 'Lessons for SaaS Teams' sections exceed 150 words — break into smaller chunks (3-4 sentences max) for scannability",
-    "No clear H1 distinction — the markdown shows '# How Stripe rewrote its homepage over 4 years' but this differs from the title 'Stripe Homepage Teardown: Oct 2022 to Jun 2026' — align them or ensure the H1 includes the primary keyword"
+    "In the 'What it costs' section, add explicit caveat: 'We observed this change; we cannot confirm Stripe saw improved or worse conversion rates. Your own traffic patterns will differ.' This prevents readers from interpreting the section as a predictive claim.",
+    "The meta description uses an ellipsis (…) which is 155 characters total including spaces. Verify exact character count in your CMS; if it exceeds 155, trim to 'A CRO teardown of Stripe's homepage changes from Oct 2022 to Jun 2026 — headline, CTAs, navigation, and what SaaS teams can learn.' (exactly 148 chars).",
+    "Under 'Quick answer,' the phrase 'This positioning assumes visitors already understand that Stripe processes payments' is correct but could be softened to avoid implying causality: Change to 'This positioning appeals to visitors who likely already understand Stripe processes payments' to avoid overstating the intent."
   ],
   "optionalImprovements": [
-    "Add a table of contents or jump links at the top for the 6 main sections to improve navigation and dwell time",
-    "Secondary keyword 'Stripe homepage redesign' is used once — consider natural variations like 'redesign decisions' or 'redesign strategy' in 2-3 more places",
-    "Secondary keyword 'homepage A/B test analysis' not used at all — if relevant, mention testing methodology or hypothesize what Stripe may have tested",
-    "Consider adding a visual element callout in the text (e.g., '[See comparison screenshots]') even if images aren't in this text version, to signal multimedia content",
-    "The '9 min read' estimate could be turned into a selling point in the meta description: 'A 9-minute deep-dive into Stripe's homepage evolution from Oct 2022 to Jun 2026'",
-    "Add a brief 'Methodology' callout early on explaining how snapshots were analyzed (Wayback Machine, visual similarity scores) to build credibility",
-    "The 'At a Glance' section could be reformatted as a bullet list or comparison table for faster scanning",
-    "Consider adding schema markup suggestions (Article, HowTo, or FAQPage schema) to enhance SERP appearance",
-    "Link to the live Stripe homepage and archived snapshots (if permissible) to allow readers to verify claims firsthand",
-    "Add a 'Last updated' timestamp near the top since CRO analysis is time-sensitive and freshness signals matter for this content type"
+    "Add a small table comparing the Oct 2022 and Jun 2026 versions side-by-side (Headline | CTA | Navigation structure) — improves scannability for readers skimming the article.",
+    "In the 'Who should NOT copy this' section, add a concrete example: 'For example, if you sell cybersecurity software and rely on non-branded search for 'endpoint protection tools,' removing 'endpoint protection' from your headline to say only 'Secure your infrastructure' may confuse cold visitors.'",
+    "Link the phrase 'Open your homepage in incognito mode' to a short video or screenshot walkthrough showing exactly what this audit looks like — reduces friction for readers unsure how to conduct the test.",
+    "Consider adding a 'Headlines tested by Stripe' callout or footnote if you have evidence that Stripe A/B tested these headlines; if not, clarify in a note that these are observed snapshots, not confirmed test results.",
+    "The primary keyword 'Stripe homepage CRO teardown' appears 5 times but mostly in headings. Add 1–2 natural uses in body paragraphs (e.g., 'This Stripe homepage CRO teardown spans 4 years of messaging shifts' in the intro) to improve keyword density without over-optimization.",
+    "Secondary keyword 'homepage A/B test analysis' is mentioned only once indirectly. If this is a target keyword, add one sentence like: 'While we cannot confirm these were A/B tested changes, the evidence suggests deliberate testing informed this homepage evolution.' This acknowledges the keyword without fabricating test data."
   ],
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.033011999999999986,
-  "generatedAt": "2026-06-08T09:45:04.301Z"
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.007584799999999947,
+  "generatedAt": "2026-06-10T19:52:53.847Z"
 }

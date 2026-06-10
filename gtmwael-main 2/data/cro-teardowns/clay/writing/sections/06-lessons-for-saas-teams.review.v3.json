@@ -2,45 +2,51 @@
   "score": 78,
   "pass": false,
   "issues": [
-    "The ## section heading is clever-only ('Should you copy Clay's homepage shift?') with no searchable terms — lacks 'positioning', 'messaging', 'CTA', or 'conversion'.",
-    "The term 'buyer motion' is used twice (paragraph 1 of H3 'The pattern', then paragraph 3 of H3 'Who should NOT copy this') without a plain-language definition at first use.",
-    "The term 'pipeline' is used twice (H3 'Who should NOT copy this', paragraph 1 and paragraph 3 of H3 'The test before you copy') without a plain-language definition at first use.",
-    "H3 'Who should NOT copy this' paragraph 1 exceeds 60 words (approximately 65 words).",
-    "H3 'Who should NOT copy this' paragraph 2 exceeds 60 words (approximately 68 words).",
-    "Generic phrasing in H3 'Who should copy this' paragraph 2: 'Before copying, test whether your sales team can handle increased demo volume' could appear in any SaaS teardown.",
-    "The final test (H3 'The test before you copy') is not specific to Clay's evidence — it's a generic analytics check that could apply to any enterprise positioning shift.",
-    "Causal claim without condition: 'That language change may cost you word-of-mouth distribution' lacks a traced condition from evidence.",
-    "The opening of H3 'The pattern' paragraph 2 buries the practical takeaway — 'This pattern shuts down one buyer motion' — instead of leading with what founders should check first."
+    "The ## section heading lacks the company name ('Clay') — it is a clever-only heading with no searchable term anchor",
+    "H3 heading 'The test before you copy Clay's homepage CTA strategy' exceeds 10 words and frontloads generic phrasing instead of a searchable term",
+    "The opening sentence in H3 block #1 does NOT deliver a practical takeaway — it describes a pattern instead of stating what to do",
+    "The opening sentence in H3 block #4 does NOT deliver a practical takeaway — it instructs the reader to 'open your homepage' (the test itself) instead of stating the decision the test will resolve",
+    "Paragraph 1 in H3 block #1 is ~63 words (violates 60-word cap)",
+    "Paragraph 1 in H3 block #2 is ~67 words (violates 60-word cap)",
+    "Paragraph 1 in H3 block #3 is ~73 words (violates 60-word cap)",
+    "Paragraph 1 in H3 block #4 is ~64 words (violates 60-word cap)",
+    "The term 'product mechanism' appears twice (first in H3 #1, second in ## heading evidence reference) — second use = plain language violation",
+    "The term 'infrastructure positioning' appears twice (first in H3 #1, second implied in context) — second use = plain language violation",
+    "The final H3 block delivers a test instruction but does NOT state the specific threshold or decision criteria upfront — it buries the '3 out of 4' finding in the third sentence instead of leading with it",
+    "Generic phrasing: 'your brand already answers' could appear in many teardowns",
+    "Generic phrasing: 'If viral adoption still drives your pipeline' could appear in many teardowns",
+    "Generic phrasing: 'Open your homepage. Count how many CTAs' could appear in many teardowns"
   ],
   "requiredFixes": [
-    "Rewrite the ## section heading to include searchable terms: 'Should you copy Clay's homepage positioning shift? When enterprise messaging works'",
-    "Add plain-language definition at first use of 'buyer motion' in H3 'The pattern' paragraph 2: 'This pattern shuts down one buyer motion (the path a visitor takes from first visit to signed contract, e.g. self-serve signup vs. sales demo).'",
-    "Add plain-language definition at first use of 'pipeline' in H3 'Who should NOT copy this' paragraph 1: 'Do not copy this if practitioner signups still drive your pipeline (the list of potential customers your sales team is working with).'",
-    "Split H3 'Who should NOT copy this' paragraph 1 into two sentences to bring word count under 60.",
-    "Split H3 'Who should NOT copy this' paragraph 2 into two paragraphs or reduce to under 60 words.",
-    "Replace generic phrasing in H3 'Who should copy this' paragraph 2 with Clay-specific evidence: 'Clay's navigation overhaul removed eight items including **'All templates'** and three use-case paths — evidence that the company had infrastructure to replace the removed paths.'",
-    "Anchor the final test to Clay's specific evidence: 'Clay removed **'Get template'** and added **'Get a demo'**. Open your analytics: do your current CTAs convert visitors from 50+ employee companies at >20% of total conversions? If not, you lack Clay's inbound mix.'",
-    "Add condition to causal claim: 'That language change may cost you word-of-mouth distribution if your practitioner community shares your product based on pain-point recognition rather than platform capabilities.'",
-    "Move the practical check to the opening of H3 'The pattern' paragraph 2: 'Check whether your current self-serve path converts qualified users before you shut it down. Clay's evidence shows the elements changed but not whether the old path was driving revenue at the contract size the company now targets.'"
+    "Rewrite the ## section heading to include 'Clay homepage' at the start: e.g. 'Clay homepage evolution: should you copy the shift from self-serve to enterprise messaging?'",
+    "Rewrite H3 block #1 opening to deliver the takeaway first: 'Replace your product mechanism headline only if buyers already understand your category before they land. Clay moved from **'This spreadsheet fills itself'** to **'Every GTM data point imaginable, in one place'** — a shift that assumes category fluency.'",
+    "Rewrite H3 block #4 opening to state the decision threshold first: 'If 3 out of 4 CTAs still invite self-serve exploration, you depend on that motion and cannot remove it. Test this by opening your homepage and counting CTAs that let visitors explore without talking to sales.'",
+    "Cut all four H3 block paragraphs to 60 words or under by removing subordinate clauses and compound sentences",
+    "Remove the second use of 'product mechanism' or replace with 'how-it-works headline'",
+    "Replace 'infrastructure positioning' on second use with 'platform category language'",
+    "Anchor H3 block #2 opening to Clay-specific evidence instead of abstract 'your brand' phrasing: 'Copy this if your company name completes the category sentence the way Clay's does — where 'Clay' already signals 'data enrichment tool' to inbound visitors.'",
+    "Anchor H3 block #3 opening to Clay-specific evidence: 'Do not copy this if practitioners still share your product virally. Clay removed **'All templates'** and **'Get template'** CTAs — paths that let individual employees adopt the tool without manager approval.'",
+    "Add a specific Clay-anchored constraint to the final test: 'Clay went from four exploration CTAs to one. If you still have three or more, removing them will cost pipeline before enterprise sales replaces it.'"
   ],
   "riskFlags": [
-    "Unsupported causal claim: 'That language change may cost you word-of-mouth distribution' — no evidence provided that Clay measured or experienced distribution impact.",
-    "Implied conversion outcome: 'Copy this if your current homepage attracts users who cannot authorize the contract value you now require' — no conversion data provided to support that Clay's shift solved this problem."
+    "The phrase 'this shift may help you speak to the buyer who controls budget' implies a conversion outcome without data — no evidence shows Clay's homepage shift increased enterprise conversions or pipeline quality",
+    "The phrase 'removing self-serve paths before establishing predictable enterprise sales may cost you the champions inside larger accounts' is a causal claim ('may cost') without a conditional safeguard or data anchor",
+    "The phrase 'you still depend on that motion — and cannot afford to remove it yet' is a causal claim without a conditional ('if X, then Y') or evidence that Clay measured the cost of removal"
   ],
   "seoNotes": [
-    "NEGATIVE: The ## section heading lacks searchable terms ('positioning', 'messaging', 'CTA', 'conversion') — reduces ranking potential for long-tail queries.",
-    "POSITIVE: H3 subheadings contain natural search terms ('copy this', 'enterprise positioning', 'the test') that match founder decision queries.",
-    "POSITIVE: Verbatim quotes are consistently formatted in bold: **'Get template'**, **'Get a demo'**, **'All templates'**.",
-    "NEGATIVE: The final test is generic and not anchored to Clay's specific evidence, reducing the section's differentiation from competitor content."
+    "NEGATIVE: The ## section heading omits 'Clay' and 'homepage' — a missed opportunity for the most SEO-valuable section in the article",
+    "POSITIVE: All four H3 headings contain 'Clay' or 'homepage', supporting topic clustering",
+    "POSITIVE: Bold quotes are correctly applied to all verbatim website elements (**'This spreadsheet fills itself'**, **'All templates'**, etc.)",
+    "NEGATIVE: The word count is ~290 words, exceeding the 260-word cap for this section — trim 30+ words to meet the brief"
   ],
-  "rewriteInstruction": "Rewrite the ## heading to include 'Clay homepage positioning' or 'Clay messaging shift'. Add plain-language definitions at first use of 'buyer motion' and 'pipeline'. Split the two paragraphs in H3 'Who should NOT copy this' to bring each under 60 words. Replace the generic 'test whether your sales team can handle increased demo volume' with the specific Clay evidence already present (navigation removal, eight items). Anchor the final test to Clay's CTA evidence: do your analytics show that visitors who click your current primary CTA come from companies matching Clay's new target (50+ employees)? Add a condition to the 'may cost you word-of-mouth' claim using the phrasing 'if your practitioner community shares based on pain-point recognition'. Move the 'check whether your current self-serve path converts qualified users' instruction to the opening of H3 'The pattern' paragraph 2.",
+  "rewriteInstruction": "This section scores 78 because it violates paragraph length caps (all four H3 blocks exceed 60 words), buries practical takeaways instead of leading with them, and uses jargon terms ('product mechanism', 'infrastructure positioning') more than once without plain-language alternatives. The ## heading omits 'Clay homepage' — a critical SEO miss. To pass at 85+, rewrite each H3 opening to state the decision or action in the first sentence, then support it with Clay-specific evidence. Cut all paragraphs to 60 words by removing subordinate clauses. Replace the ## heading with 'Clay homepage evolution: should you copy the shift from self-serve to enterprise messaging?' Replace jargon on second use with plain alternatives ('how-it-works headline', 'platform category language'). Anchor generic phrasing ('your brand', 'open your homepage') to Clay-specific constraints ('the way Clay's does', 'Clay went from four exploration CTAs to one'). Move the '3 out of 4' threshold to the opening sentence of H3 block #4. Trim the section to 260 words maximum.",
   "dimensionScores": {
     "evidenceAccuracy": 20,
-    "specificity": 12,
+    "specificity": 10,
     "plainLanguage": 12,
-    "scannability": 9,
+    "scannability": 3,
     "searchableHeadings": 5,
-    "rhythmAndOpening": 8,
+    "rhythmAndOpening": 6,
     "founderTakeaway": 2
   },
   "effectivePassThreshold": 85

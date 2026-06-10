@@ -1,175 +1,27 @@
 {
   "slug": "shopify",
-  "generatedAt": "2026-06-09T18:53:03.101Z",
+  "generatedAt": "2026-06-10T19:01:33.592Z",
   "mode": "standard",
-  "sections": [
-    {
-      "sectionId": "01-intro",
-      "finalVersion": 1,
-      "finalScore": 68,
-      "passed": false,
-      "loopsUsed": 0,
-      "riskFlagCount": 4,
-      "riskFlags": [
-        "HARD CAP TRIGGERED: Conversion outcome claim without data — 'That shift signals a change in who the page is written for' assumes targeting intent not present in evidence",
-        "Unsupported causation: 'spoke to businesses evaluating commerce platforms' — evidence shows headline text only, not audience segment data",
-        "Unsupported interpretation: 'speaks to founders chasing a category identity' — no qualitative or quantitative data supports this audience characterization",
-        "Generic advice paragraph violates specificity requirement — closing sentence applicable to any company teardown"
-      ],
-      "remainingIssueCount": 7,
-      "remainingIssues": [
-        "Paragraph exceeds 90-word limit (approximately 103 words)",
-        "Causal claim without data: 'That shift signals a change in who the page is written for' — evidence shows text change, not audience targeting data",
-        "Causal claim without condition: 'the original spoke to businesses evaluating commerce platforms' — no evidence shows original audience was platform evaluators",
-        "Unsupported interpretation: 'speaks to founders chasing a category identity' — no evidence in data supports this audience characterization",
-        "Generic paragraph 2: 'By the end of this teardown, you'll know how to check whether your own homepage is still serving the visitor who lands on it' — could appear in any teardown",
-        "Jargon without definition: 'category identity' used without plain-language explanation",
-        "Opening sentence buries the lead — headline change is most interesting but buried in interpretation rather than presented as data point"
-      ],
-      "sectionCostUsd": 0.034365
-    },
-    {
-      "sectionId": "02-quick-answer",
-      "finalVersion": 2,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 0,
-      "riskFlags": [],
-      "remainingIssueCount": 4,
-      "remainingIssues": [
-        "Word count is approximately 62 words — within target range but at lower end for featured snippet optimization",
-        "The heading 'Shopify homepage shift' is generic and could be more searchable — lacks explicit terms like 'positioning', 'messaging', or 'conversion'",
-        "The opening sentence stacks two changes without a bridging insight — reads as factual inventory rather than an analytical frame",
-        "Minor rhythm issue: all three sentences follow similar structure (company did X, Y changed to Z)"
-      ],
-      "sectionCostUsd": 0.06307199999999999
-    },
-    {
-      "sectionId": "03-visual-timeline",
-      "finalVersion": 2,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 1,
-      "riskFlags": [
-        "'This suggests the company expects most traffic to come from brand searches or referrals' — unsupported outcome inference. The evidence shows messaging change but does not confirm traffic-source expectations or strategic intent."
-      ],
-      "remainingIssueCount": 3,
-      "remainingIssues": [
-        "The phrase 'This suggests the company expects most traffic to come from brand searches or referrals' is a causal inference not supported by the evidence — we observe the messaging change but cannot confirm traffic source expectations",
-        "Second paragraph in 'Why it matters' H3 block is 62 words — exceeds the 60-word cap by 2 words",
-        "The opening sentence uses 'positioning' in the H2 but the first body paragraph opens with 'What changed' — a template default rather than leading with the most interesting finding"
-      ],
-      "sectionCostUsd": 0.08355000000000001
-    },
-    {
-      "sectionId": "04-messaging-evolution",
-      "finalVersion": 3,
-      "finalScore": 78,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "CAUSAL CLAIM: 'the new headline risks confusion' — evidence shows headline changed, but does not prove confusion occurs",
-        "CAUSAL CLAIM: 'the visitor must already know what an ecommerce platform does before the page makes sense' — no usability or comprehension data provided",
-        "OUTCOME CLAIM: 'If traffic includes cold paid ads or non-branded search, the new headline risks confusion' — no conversion or bounce-rate data to support this prediction"
-      ],
-      "remainingIssueCount": 5,
-      "remainingIssues": [
-        "Paragraph 1 of H3 'Who the new page serves' is ~70 words, exceeds 60-word limit",
-        "H3 'What this means for the sales process' contains causal claim without condition: 'the new headline risks confusion' — not supported by evidence",
-        "Causal statement 'the visitor must already know what an ecommerce platform does before the page makes sense' lacks supporting data",
-        "Word count is approximately 180 words, within acceptable range but near upper limit",
-        "Final test is generic ('count how many seconds') rather than specific to this company's evidence (e.g., 'count category-explaining phrases in the first screen')"
-      ],
-      "sectionCostUsd": 0.119421
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "finalVersion": 1,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 1,
-      "riskFlags": [
-        "'This path no longer serves people who are still comparing categories' — This is a causal claim about who is filtered out, but the evidence only shows CTAs removed, not visitor behavior or conversion data. Soften to 'This path assumes visitors have already compared categories' or add conditional framing."
-      ],
-      "remainingIssueCount": 6,
-      "remainingIssues": [
-        "Missing bold formatting on 'Explore ways to sell' and 'Learn more about Shopify' in paragraph 1",
-        "Missing bold formatting on 'explore ways to sell' in paragraph 2",
-        "H3 heading 'What changed' is not searchable — lacks company name or topic term beyond the section heading",
-        "H3 heading 'Who this filters out' is not searchable — lacks company name or topic term",
-        "H3 heading 'Audit your own page' is not searchable — lacks company name or topic term",
-        "Final takeaway test is generic ('count how many CTAs say learn/explore') rather than specific to Shopify evidence (e.g. 'Open your homepage and count CTAs that require zero commitment vs. feature-specific CTAs like Shopify now uses')"
-      ],
-      "sectionCostUsd": 0.034712999999999994
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "finalVersion": 3,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 2,
-      "riskFlagCount": 2,
-      "riskFlags": [
-        "The claim 'It only works when your brand does the explaining before the visitor arrives' is causal but lacks supporting data from the evidence — no conversion metrics or visitor behavior data provided",
-        "The statement 'You likely have the brand recognition this requires if a stranger can guess what your product does from your company name alone' is presented as a test but has no evidence anchor in Shopify's data"
-      ],
-      "remainingIssueCount": 5,
-      "remainingIssues": [
-        "The ## heading is 'clever-only' — contains no searchable terms (company name, homepage, positioning, messaging, CTA, conversion)",
-        "H3 heading 'Copy this if your brand name already owns the category' uses 'category ownership' concept without plain-language definition",
-        "Paragraph 1 in H3.1 is ~65 words (exceeds 60-word limit)",
-        "The phrase 'meta-pattern' appears without plain-language translation",
-        "Some causal claims lack explicit conditions (e.g., 'This shift... only works when' lacks a counter-condition for when it fails)"
-      ],
-      "sectionCostUsd": 0.13923899999999995
-    }
-  ],
-  "averageScore": 83,
-  "passCount": 4,
-  "failCount": 2,
-  "skippedCount": 0,
-  "totalRewriteLoops": 6,
-  "weakSections": [
-    "01-intro",
-    "04-messaging-evolution"
-  ],
-  "allRiskFlags": [
-    "HARD CAP TRIGGERED: Conversion outcome claim without data — 'That shift signals a change in who the page is written for' assumes targeting intent not present in evidence",
-    "Unsupported causation: 'spoke to businesses evaluating commerce platforms' — evidence shows headline text only, not audience segment data",
-    "Unsupported interpretation: 'speaks to founders chasing a category identity' — no qualitative or quantitative data supports this audience characterization",
-    "Generic advice paragraph violates specificity requirement — closing sentence applicable to any company teardown",
-    "'This suggests the company expects most traffic to come from brand searches or referrals' — unsupported outcome inference. The evidence shows messaging change but does not confirm traffic-source expectations or strategic intent.",
-    "CAUSAL CLAIM: 'the new headline risks confusion' — evidence shows headline changed, but does not prove confusion occurs",
-    "CAUSAL CLAIM: 'the visitor must already know what an ecommerce platform does before the page makes sense' — no usability or comprehension data provided",
-    "OUTCOME CLAIM: 'If traffic includes cold paid ads or non-branded search, the new headline risks confusion' — no conversion or bounce-rate data to support this prediction",
-    "'This path no longer serves people who are still comparing categories' — This is a causal claim about who is filtered out, but the evidence only shows CTAs removed, not visitor behavior or conversion data. Soften to 'This path assumes visitors have already compared categories' or add conditional framing.",
-    "The claim 'It only works when your brand does the explaining before the visitor arrives' is causal but lacks supporting data from the evidence — no conversion metrics or visitor behavior data provided",
-    "The statement 'You likely have the brand recognition this requires if a stranger can guess what your product does from your company name alone' is presented as a test but has no evidence anchor in Shopify's data"
-  ],
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
+  "failCount": 0,
+  "skippedCount": 6,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [],
   "sectionErrors": [],
-  "finalJudgeScore": 58,
+  "finalJudgeScore": 73,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "01-intro: Remove 'That shift signals a change in who the page is written for' — the evidence explicitly states 'No confirmed strategy is implied'. Replace with observable fact: 'That shift changes what the headline explains: the 2021 version named the product category, the 2026 version does not.'",
-    "01-intro: Remove 'the original spoke to businesses evaluating commerce platforms, while the current version speaks to founders chasing a category identity' — this is audience inference not supported by evidence. Replace with vocabulary observation: 'The 2021 headline used category terms (platform, commerce). The 2026 headline uses aspiration language (AI all-star).'",
-    "Replace all conversion predictions ('creates a gap', 'risks confusion', 'adding friction', 'may create confusion') with conditional observations: 'If most traffic arrives knowing what Shopify does, the new headline requires less explanation. If traffic arrives cold, the headline provides no category anchor.'",
-    "Remove invented thresholds: 'If your count is above zero', 'a stranger can guess', 'auto-complete with your category' — none of these metrics appear in Shopify evidence. Replace with Shopify-anchored test: 'Open shopify.com in incognito. Count how many words in the H1 name the product category. Shopify went from 2 (platform, commerce) to 0. Run the same count on your homepage.'",
-    "02-quick-answer: Remove 'This suggests the company expects most traffic to come from brand searches or referrals' — no traffic data in evidence. Replace with: 'The new headline assumes visitors already know what Shopify is.'",
-    "05-cta-navigation-evolution H3-02: Remove 'This path no longer serves people who are still comparing categories' — no visitor journey data. Replace with: 'The page removed CTAs that explained selling options and added CTAs that assume the visitor has already chosen Shopify.'",
-    "06-lessons H3-02: Remove 'You likely have the brand recognition this requires if a stranger can guess what your product does from your company name alone' — no brand recognition data. Replace with: 'This pattern assumes brand recognition. Shopify can assume it because the company name contains 'shop'. If your company name does not contain your product category, test whether your H1 needs to state it.'",
-    "06-lessons H3-04: Remove 'If you have zero explanation headings and your brand does not auto-complete with your category in Google search' — invented metric. Replace with: 'Count how many of your section headings explain what your product does, not just what it includes. Shopify removed all explanation headings (Bring your business online). If you have zero and your traffic mix includes non-branded search, test adding one.'"
-  ],
-  "seoScore": 85,
-  "seoPass": true,
-  "seoRequiredFixes": [
-    "Verify the meta description is under 155 characters when rendered; current version appears close to limit and may be truncated in SERPs",
-    "Ensure the H1 'How Shopify rewrote its homepage over 5 years' is the only H1 on the page — currently there is also 'Shopify Homepage Teardown: How the Platform Rewrote Its Message Over 5 Years' which appears to duplicate the main heading concept",
-    "The article claims Shopify 'replaced ten educational CTAs with ten product-focused ones' but does not show before/after screenshots or explicit CTA counts — either add visual evidence or soften the claim (e.g., 'approximately ten')",
-    "Ensure all secondary keywords are used at least once naturally in body text; 'homepage A/B test analysis' and 'SaaS conversion optimisation case study' appear underutilized in the article copy"
+    "01-intro: Remove 'That shift signals a change in who the page is written for: the original spoke to businesses evaluating commerce platforms, while the current version speaks to founders chasing a category identity.' Evidence shows headline change only, not audience segmentation data. Replace with: 'The 2021 headline named the product category directly. The 2026 headline assumes visitors already know what Shopify does.'",
+    "04-messaging-evolution 'Why it matters': Remove 'This suggests the company expects most traffic to come from brand searches or referrals.' Evidence does not include traffic-source data. Replace with: 'The new headline does not name the product category. Visitors who arrive without prior knowledge of Shopify may not understand what the page offers.'",
+    "04-messaging-evolution 'What this means for the sales process': Remove entire paragraph containing 'the visitor must already know what an ecommerce platform does before the page makes sense' and 'If traffic includes cold paid ads or non-branded search, the new headline risks confusion.' Evidence shows messaging change but no comprehension or conversion data. Replace with: 'The 2026 headline assumes category knowledge. If your homepage receives traffic from visitors unfamiliar with your product category, test whether your H1 names what you sell before describing how you sell it.'",
+    "05-cta-navigation-evolution 'Who this filters out': Remove 'This path no longer serves people who are still comparing categories.' Evidence shows CTA labels changed but no visitor behavior data. Replace with: 'The new CTAs assume visitors have already decided on a platform and are now choosing features. Educational CTAs like 'Explore ways to sell' that helped visitors compare categories are gone.'",
+    "06-lessons-for-saas-teams 'Copy this if your brand name already owns the category': Remove 'You likely have the brand recognition this requires if a stranger can guess what your product does from your company name alone.' No brand-recognition threshold provided in evidence. Replace with: 'Run this test: Open your homepage in incognito, show it to someone unfamiliar with your company, and ask them to describe what you sell. If they cannot name your product category within 5 seconds, your homepage likely still needs category-explanation copy.'",
+    "Add H3 subheadings to 'Quick answer' section — currently a single block with no internal structure",
+    "Add company name 'Shopify' to ## heading 'Should SaaS companies copy Shopify's homepage strategy?' — currently generic. Change to: 'Should SaaS companies copy Shopify's category-assumption strategy? When brand recognition replaces explanation'",
+    "06-lessons-for-saas-teams: Final H3 'The 5-minute homepage audit' lacks a specific Shopify-evidence anchor. The test described ('count explanation headings') is generic. Add: 'Shopify removed all category-explanation headings like 'Bring your business online.' Before you remove similar headings, confirm your brand name auto-completes with your category in Google search.'"
   ],
   "articleWordCount": 1140,
   "repetitionWarnings": [],

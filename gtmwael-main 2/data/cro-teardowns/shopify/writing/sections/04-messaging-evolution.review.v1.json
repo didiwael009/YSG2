@@ -1,44 +1,42 @@
 {
-  "score": 68,
+  "score": 78,
   "pass": false,
   "issues": [
-    "The headline 'Be the nextAI all-star' is quoted incorrectly — evidence shows 'Be the nextAI all-star' but this appears to be a transcription error; verify against actual snapshot",
-    "Second H3 paragraph makes unsupported causal claim: 'assumes familiarity with the product category and jumps straight to competitive differentiation' — no evidence shows this was the intent",
-    "Third H3 makes unsupported causal claim: 'suggests Shopify now relies more on brand awareness before the homepage load' — no evidence supports this channel strategy inference",
-    "Third H3 makes unsupported causal claim: 'from search, word-of-mouth, or paid channels that pre-qualify intent' — no evidence of channel mix or pre-qualification strategy",
-    "Final question is generic founder takeaway, not a specific runnable test anchored to Shopify's evidence",
-    "Paragraph 2 in second H3 block is 62 words (over 60-word limit)",
-    "Multiple outcome/causation claims without attached conditions",
-    "Generic paragraph: the entire third H3 block could appear word-for-word in any SaaS teardown"
+    "H1 quote 'Be the nextAI all-star' appears to have a spacing/formatting error ('nextAI') that does not match standard Shopify branding — verify this is the exact quote from the snapshot",
+    "Final H3 block delivers takeaway as a question, not as an actionable statement in the first two sentences",
+    "Section heading lacks company name — 'Shopify's messaging shift' is present but could be stronger as 'Shopify homepage messaging shift'",
+    "The final test ('Does your homepage assume...') is generic and applies to any B2B/SaaS company, not specific to Shopify evidence",
+    "Paragraph 1 under 'Who the old page served' is 67 words — exceeds 60-word limit",
+    "Opening sentence in 'What this means for the sales process' makes an unsupported causal claim: 'suggests Shopify now relies less on the homepage to educate cold traffic' — the evidence shows headline change, not traffic-source data or education strategy",
+    "The phrase 'cold traffic' is used without plain-language definition"
   ],
   "requiredFixes": [
-    "Remove or reframe all causal claims about Shopify's strategy (channel mix, pre-qualification, competitive positioning intent) — the evidence shows only text changes, not strategic intent",
-    "Add conditions to every causal statement: instead of 'This suggests Shopify now relies more on brand awareness', write 'If Shopify's traffic is coming from branded search or referrals, this headline change makes sense because...'",
-    "Replace the generic final question with a specific 5-minute test: 'Open your homepage in an incognito window. Can a first-time visitor understand what you do in 3 seconds, or does your headline assume they already know?'",
-    "Shorten second H3 paragraph to under 60 words — split into two paragraphs or cut the meta description detail",
-    "Verify the headline quote 'Be the nextAI all-star' against the actual snapshot — this appears malformed",
-    "Anchor the third H3 block to Shopify-specific evidence: quote the exact navigation changes (8 added, 8 removed) or section heading changes (5 added, 8 removed) to ground the 'what this means' interpretation"
+    "Verify the H1 quote is exactly 'Be the nextAI all-star' or correct to 'Be the next AI all-star' with proper spacing",
+    "Rewrite final H3 opening to deliver the takeaway in declarative form in first two sentences, before asking the reader a question",
+    "Replace final generic test with a specific, 5-minute action anchored to Shopify evidence: e.g. 'Open your homepage in incognito. Count how many words you read before you understand what category you're in. Shopify's 2026 version assumes you already know — does yours?'",
+    "Trim 'Who the old page served' paragraph 1 from 67 words to under 60 by removing one clause or splitting into two sentences",
+    "Rewrite 'suggests Shopify now relies less on the homepage to educate cold traffic' to avoid unsupported causal claim — e.g. 'This shift means the homepage no longer explains what Shopify is. That works if most visitors already know the category.'",
+    "Define 'cold traffic' immediately: 'cold traffic (visitors who arrive without prior knowledge of your product)'"
   ],
   "riskFlags": [
-    "UNSUPPORTED CAUSATION: 'assumes familiarity with the product category and jumps straight to competitive differentiation' — no evidence of intent or competitive positioning strategy",
-    "UNSUPPORTED CAUSATION: 'suggests Shopify now relies more on brand awareness before the homepage load' — no traffic source or acquisition data provided",
-    "UNSUPPORTED CAUSATION: 'from search, word-of-mouth, or paid channels that pre-qualify intent' — no channel mix evidence",
-    "OUTCOME CLAIM: 'This framing assumed the visitor didn't yet know what Shopify was' — assumption presented as fact without evidence"
+    "'This shift suggests Shopify now relies less on the homepage to educate cold traffic' — no evidence provided about traffic sources, education strategy, or what Shopify 'relies' on. This is an unsupported causal inference.",
+    "'The page appears built for visitors arriving from brand search, referrals, or content' — no traffic-source data provided in evidence. This is speculation about intent.",
+    "The final question 'Does your homepage assume visitors already understand your category' is a good prompt but the preceding sentence makes an unsubstantiated claim about Shopify's traffic strategy"
   ],
   "seoNotes": [
-    "POSITIVE: Section heading contains 'Shopify' and 'messaging' (searchable terms)",
-    "POSITIVE: All three H3 subheadings are present as required for analytical sections",
-    "NEGATIVE: H3 subheadings are generic ('Who the old page served', 'Who the new page serves') — could add topic terms like 'audience', 'positioning', or 'messaging frame' for better scannability"
+    "Section heading contains 'Shopify' and 'messaging' — searchable, but 'homepage' appears only in subtext. Consider 'Shopify homepage messaging shift' for stronger keyword density.",
+    "Meta description change is quoted but not analysed for keyword/search intent shift — missed SEO angle.",
+    "Page title change from 'Start a Business, Grow Your Business' to 'All-in-One Commerce Platform' is noted in evidence but not discussed in body — this is a major keyword strategy shift (founder-intent → category-ownership) that should be surfaced."
   ],
-  "rewriteInstruction": "Strip out all unsupported causal claims about Shopify's strategic intent. Replace outcome language ('assumes', 'suggests', 'relies on') with conditional phrasing ('if traffic is branded, this works because...'). Anchor the third H3 block to the concrete evidence: quote the nav/section changes (8 nav items added/removed, 5 section headings added/8 removed) and connect those to the messaging shift instead of inventing a channel strategy. Replace the generic final question with a specific 5-minute test tied to Shopify's evidence: 'Open your homepage. Does the headline work for someone who's never heard of you, or does it assume brand familiarity like Shopify's new 'AI all-star' framing does?' Fix the headline quote if it's malformed. Shorten the second H3 paragraph to under 60 words.",
+  "rewriteInstruction": "Remove all causal claims about Shopify's traffic strategy or what the page 'relies on' — the evidence shows only headline/meta changes, not traffic data. Define 'cold traffic' inline. Trim the first H3 paragraph to under 60 words. Rewrite the final H3 opening to state the takeaway in the first sentence (declarative, not a question). Replace the generic final test with a specific 5-minute action: 'Open your homepage in incognito and count how many words a first-time visitor reads before they understand your product category. Shopify's 2026 homepage assumes you already know. Does yours?' Verify the H1 quote spacing ('nextAI' vs 'next AI'). Consider weaving in the page-title keyword shift (founder-intent → category-ownership) as evidence of the messaging change, since it's in the data but unused.",
   "dimensionScores": {
-    "evidenceAccuracy": 5,
-    "specificity": 8,
-    "plainLanguage": 18,
+    "evidenceAccuracy": 15,
+    "specificity": 12,
+    "plainLanguage": 16,
     "scannability": 9,
     "searchableHeadings": 7,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 0
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

@@ -1,20 +1,19 @@
 {
-  "createdAt": "2026-06-09T18:53:03.100Z",
+  "createdAt": "2026-06-10T19:01:59.497Z",
   "slug": "shopify",
   "source": {
     "finalJudgePass": false,
     "seoPass": true,
-    "finalJudgeScore": 58,
+    "finalJudgeScore": 73,
     "seoScore": 85
   },
   "sectionsToRerun": [
     {
       "sectionId": "01-intro",
       "reasons": [
-        "Judge rerun recommendation: 01-intro — Remove all causation claims and audience inferences not supported by evidence.",
+        "Judge rerun recommendation: 01-intro — rewrite opening paragraph to remove audience-segmentation claim",
         "Identified as weak section by final judge",
-        "01-intro: Remove 'That shift signals a change in who the page is written for' — the evidence explicitly states 'No confirmed strategy is implied'. Replace with observable fact: 'That shift changes wha",
-        "01-intro: Remove 'the original spoke to businesses evaluating commerce platforms, while the current version speaks to founders chasing a category identity' — this is audience inference not supported b"
+        "01-intro: Remove 'That shift signals a change in who the page is written for: the original spoke to businesses evaluating commerce platforms, while the current version speaks to founders chasing a cat"
       ],
       "priority": "high",
       "source": "final-judge"
@@ -22,15 +21,15 @@
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "the new headline risks confusion",
-        "HARD CAP TRIGGER: 'That shift signals a change in who the page is written for' — causation claim contradicting evidence note 'No confirmed strategy is implied'",
-        "CONVERSION PREDICTION: 'removing the category explanation creates a gap' — outcome claim without visitor behavior data",
-        "CONVERSION PREDICTION: 'the new headline risks confusion' — outcome claim without data",
-        "CONVERSION PREDICTION: 'you may be adding friction where your visitors no longer need it' — causal outcome claim",
-        "CONVERSION PREDICTION: 'removing explanation headings may create confusion' — outcome claim",
-        "UNSUPPORTED CAUSATION: 'This suggests the company expects most traffic to come from brand searches or referrals' — treats headline change as evidence of traffic strategy",
-        "Replace all conversion predictions ('creates a gap', 'risks confusion', 'adding friction', 'may create confusion') with conditional observations: 'If most traffic arrives knowing what Shopify does, th",
-        "02-quick-answer: Remove 'This suggests the company expects most traffic to come from brand searches or referrals' — no traffic data in evidence. Replace with: 'The new headline assumes visitors alread",
+        "Judge rerun recommendation: 04-messaging-evolution — rewrite all three H3 blocks to remove causal and traffic-attribution claims",
+        "If traffic includes cold paid ads or non-branded search, the new headline risks confusion",
+        "Identified as weak section by final judge",
+        "'This suggests the company expects most traffic to come from brand searches or referrals' — conversion attribution claim without traffic data",
+        "'the new headline risks confusion' — causal claim about visitor comprehension without usability or bounce-rate data",
+        "'This path no longer serves people who are still comparing categories' — visitor-filtering claim without behavioral data",
+        "04-messaging-evolution 'Why it matters': Remove 'This suggests the company expects most traffic to come from brand searches or referrals.' Evidence does not include traffic-source data. Replace with: ",
+        "04-messaging-evolution 'What this means for the sales process': Remove entire paragraph containing 'the visitor must already know what an ecommerce platform does before the page makes sense' and 'If t",
+        "Add company name 'Shopify' to ## heading 'Should SaaS companies copy Shopify's homepage strategy?' — currently generic. Change to: 'Should SaaS companies copy Shopify's category-assumption strategy? W",
         "Ensure the H1 'How Shopify rewrote its homepage over 5 years' is the only H1 on the page — currently there is also 'Shopify Homepage Teardown: How the Platform Rewrote Its Message Over 5 Years' which ",
         "Ensure all secondary keywords are used at least once naturally in body text; 'homepage A/B test analysis' and 'SaaS conversion optimisation case study' appear underutilized in the article copy"
       ],
@@ -40,11 +39,8 @@
     {
       "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "Judge rerun recommendation: 05-cta-navigation-evolution — Remove visitor journey claims; anchor to observable CTA label changes only.",
-        "Identified as weak section by final judge",
-        "UNSUPPORTED CAUSATION: 'The new page expects visitors who are comparing options' — treats CTA change as evidence of visitor intent",
-        "05-cta-navigation-evolution H3-02: Remove 'This path no longer serves people who are still comparing categories' — no visitor journey data. Replace with: 'The page removed CTAs that explained selling ",
-        "06-lessons H3-04: Remove 'If you have zero explanation headings and your brand does not auto-complete with your category in Google search' — invented metric. Replace with: 'Count how many of your sect",
+        "Judge rerun recommendation: 05-cta-navigation-evolution — rewrite 'Who this filters out' to remove visitor-behavior claim",
+        "05-cta-navigation-evolution 'Who this filters out': Remove 'This path no longer serves people who are still comparing categories.' Evidence shows CTA labels changed but no visitor behavior data. Repla",
         "The article claims Shopify 'replaced ten educational CTAs with ten product-focused ones' but does not show before/after screenshots or explicit CTA counts — either add visual evidence or soften the cl"
       ],
       "priority": "high",
@@ -53,27 +49,11 @@
   ],
   "skippedIssues": [
     {
-      "issue": "02-quick-answer — Remove traffic strategy inference.",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "That shift signals a change in who the page is written for",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
       "issue": "This suggests the company expects most traffic to come from brand searches or referrals",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "removing the category explanation creates a gap",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "If your count is above zero and your brand is not a household name, test a version that names the category first",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "The new page expects visitors who are comparing options, not learning what the product does",
+      "issue": "the visitor must already know what an ecommerce platform does before the page makes sense",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
@@ -81,47 +61,19 @@
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "you may be adding friction where your visitors no longer need it",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "It only works when your brand does the explaining before the visitor arrives",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
       "issue": "You likely have the brand recognition this requires if a stranger can guess what your product does from your company name alone",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "If your visitors land without knowing your category, removing explanation headings may create confusion",
+      "issue": "'It only works when your brand does the explaining before the visitor arrives' — conditional presented as absolute requirement",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "your homepage likely still needs to state the category",
+      "issue": "'You likely have the brand recognition this requires if a stranger can guess what your product does from your company name alone' — brand-recognition threshold without supporting data",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "If you have zero explanation headings and your brand does not auto-complete with your category in Google search, add at least one",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "02-quick-answer",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "INVENTED THRESHOLD: 'If your count is above zero and your brand is not a household name' — creates numeric threshold not in evidence",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "INVENTED THRESHOLD: 'a stranger can guess what your product does from your company name alone' — brand recognition test not anchored to Shopify data",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "INVENTED THRESHOLD: 'your brand does not auto-complete with your category in Google search' — search metric not in evidence",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Remove invented thresholds: 'If your count is above zero', 'a stranger can guess', 'auto-complete with your category' — none of these metrics appear in Shopify evidence. Replace with Shopify-anchored ",
+      "issue": "Add H3 subheadings to 'Quick answer' section — currently a single block with no internal structure",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {

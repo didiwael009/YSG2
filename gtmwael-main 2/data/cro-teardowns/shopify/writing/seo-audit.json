@@ -1,50 +1,55 @@
 {
-  "seoScore": 85,
+  "seoScore": 84,
   "pass": true,
   "titleScore": 13,
   "metaDescriptionScore": 14,
-  "headingStructureScore": 13,
+  "headingStructureScore": 12,
   "searchIntentScore": 18,
   "keywordUseScore": 9,
   "readabilityScore": 14,
   "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "Link from 'SaaS homepage CRO teardown' mention in intro to related SaaS teardowns (e.g., other platform homepage audits) in a 'See similar analyses' section at the end",
-    "Link 'homepage A/B test analysis' phrase to any internal guide on A/B testing methodology or CRO best practices the blog may host",
-    "Link 'conversion optimisation' in the quick-answer section to a foundational CRO primer or glossary if available",
-    "Add a 'Browse other teardowns' section with internal navigation to competitor or adjacent SaaS homepage audits"
+    "Link from 'SaaS homepage CRO teardown' mention to similar teardown articles for competitors (e.g., HubSpot, Stripe, Notion homepage analyses)",
+    "Link 'A/B test analysis' phrase to internal guide on CRO testing methodology or statistical significance",
+    "Link 'homepage traffic from cold channels' concept to internal content about traffic source segmentation and UTM tracking",
+    "Link 'brand recognition' section to internal content about product positioning or category ownership",
+    "Add CTA at article end directing readers to 'See our full CRO teardown library' or similar to keep readers in site ecosystem"
   ],
   "faqSuggestions": [
-    "How did Shopify's homepage changes affect its conversion rate or business outcomes?",
-    "What does 'Be the next AI all-star' mean, and why did Shopify choose this messaging?",
-    "When should a SaaS company remove educational CTAs from its homepage?",
-    "How do you measure whether your homepage headline still serves your audience?",
-    "What is the difference between a category-defining headline and a visitor-assumption headline?",
-    "Did Shopify A/B test this homepage redesign before launch?"
+    "How did Shopify's homepage changes affect their conversion rate or trial signups?",
+    "What does 'Be the next AI all-star' actually mean for Shopify's business model or target audience?",
+    "When should I remove category-explanation copy from my SaaS homepage?",
+    "How can I tell if my homepage traffic is coming from brand searches vs. cold channels?",
+    "What are the risks of removing 'Learn more' and 'Explore' CTAs from a homepage?",
+    "How long did it take Shopify to make these homepage changes, and were they A/B tested?"
   ],
   "contentGapNotes": [
-    "Article does not discuss *why* Shopify made these changes — was there an earnings call, product shift, or competitive pressure that prompted the 2026 redesign? Adding context would strengthen the 'lessons for SaaS teams' section",
-    "No mention of conversion rate, bounce rate, or engagement metrics pre- and post-redesign — article assumes the changes are strategic without showing impact data (which aligns with hard rules, but noting the gap)",
-    "Article does not address how Shopify handles different traffic segments on the current homepage (e.g., separate landing pages for cold traffic vs. brand traffic), which is a natural question given the teardown's conclusion",
-    "Missing analysis of how the new 'AI all-star' messaging aligns with Shopify's product roadmap or feature releases between 2021 and 2026",
-    "No discussion of mobile vs. desktop differences in the homepage redesign — both snapshots may have different approaches",
-    "Article could benefit from a section on how Shopify's navigation restructuring affected information architecture and user task flows"
+    "Article does not address whether these changes were A/B tested, rolled out gradually, or launched all at once — mentions 'snapshots' but no methodology for data collection",
+    "No discussion of mobile-specific changes or whether headline/CTA shifts differ across desktop and mobile viewports",
+    "Missing analysis of navigation structure beyond menu labels — does the page hierarchy, above-the-fold real estate, or scroll depth changes correlate with the messaging shift?",
+    "No competitive context — how do other category-leaders (Wix, BigCommerce, WooCommerce) position their homepages? Is Shopify's shift industry-wide?",
+    "Article assumes 'brand does the explaining before the visitor arrives' but does not examine Shopify's paid ad creative, organic content strategy, or top referral sources that may pre-explain category",
+    "No discussion of impact on SEO — did removing category keywords from homepage hurt organic visibility for informational queries, or does brand search volume compensate?",
+    "Missing visitor intent segmentation — does the new page have separate entry points or targeting for different audience segments (entrepreneurs, agencies, enterprises)?",
+    "No mention of page performance metrics (load time, visual hierarchy changes, scroll behavior) that might explain design decisions independent of messaging"
   ],
   "requiredFixes": [
-    "Verify the meta description is under 155 characters when rendered; current version appears close to limit and may be truncated in SERPs",
-    "Ensure the H1 'How Shopify rewrote its homepage over 5 years' is the only H1 on the page — currently there is also 'Shopify Homepage Teardown: How the Platform Rewrote Its Message Over 5 Years' which appears to duplicate the main heading concept",
-    "The article claims Shopify 'replaced ten educational CTAs with ten product-focused ones' but does not show before/after screenshots or explicit CTA counts — either add visual evidence or soften the claim (e.g., 'approximately ten')",
-    "Ensure all secondary keywords are used at least once naturally in body text; 'homepage A/B test analysis' and 'SaaS conversion optimisation case study' appear underutilized in the article copy"
+    "Title is 52 characters (under 60) — acceptable. However, consider whether 'Jul 2021 to Jun 2026' dates in title help search intent or crowd keyword. Test removing dates to prioritize 'Shopify Homepage CRO Teardown' prominence, or confirm date specificity is a brand requirement.",
+    "Meta description is 148 characters (under 155) — acceptable. Verify 'CRO teardown' appears in description; it does. No fix required, but note that meta description emphasizes 'what changed' over 'what you can learn' — consider A/B testing language like '...and 6 lessons for SaaS teams' to boost CTR.",
+    "Article lacks an explicit H1 tag hierarchy issue: First heading is H1 ('How Shopify rewrote its homepage over 5 years'), second major section heading is an H2 ('Shopify Landing Page Teardown...'), but this is redundant with H1. Recommend promoting one and demoting the other to avoid confusion. Suggest keeping H1 as-is and changing 'Shopify Landing Page Teardown' section to H2.",
+    "Primary keyword 'Shopify homepage CRO teardown' appears in title and meta description but only 2–3 times in body text. Recommend adding 1–2 natural uses in opening paragraph or a dedicated keyword callout near the top to improve keyword prominence without over-optimization."
   ],
   "optionalImprovements": [
-    "Add a 'Key takeaway' or 'TL;DR' box after the intro to help scanners quickly decide if the article serves their intent",
-    "Include 1–2 side-by-side comparison screenshots of the 2021 vs. 2026 homepages to visually reinforce the messaging evolution (improves readability and engagement)",
-    "Expand the '5-minute homepage audit' section into a reusable checklist that readers can download — this adds value and may increase shareability",
-    "Link the phrase 'SaaS teams' or 'SaaS companies' in section headers to an internal SaaS marketing resource or glossary to improve internal linking naturally",
-    "Consider adding a 'Tools used to capture these snapshots' note (e.g., Wayback Machine, manual screenshots) to build credibility and transparency",
-    "Break up the longest paragraph in the 'Why it matters' section under 'Shopify homepage positioning' — it runs 5+ sentences and could benefit from a bullet point or subheading"
+    "Add a brief 'TLDR' or bulleted summary at the top (after quick-answer) for scanners who want to skim findings before deep-dive.",
+    "Consider adding a small visual timeline or comparison table showing 2021 vs. 2026 headline, CTA, and section heading side-by-side for faster comprehension.",
+    "Strengthen internal linking by adding at least 2–3 contextual links to related CRO, SaaS positioning, or homepage optimization content within the body (currently none).",
+    "Add a 'Methodology' or 'How we audited this' section explaining when snapshots were taken, any tools used, and how readers can replicate the audit — increases credibility and search intent satisfaction.",
+    "Expand 'Should SaaS companies copy Shopify's strategy?' section with a 2–3 sentence discussion of when this strategy might backfire (e.g., new product category, low brand awareness) to balance the advice.",
+    "Consider adding a 'Related teardowns' module at the end linking to other B2B SaaS or e-commerce homepage teardowns, if they exist — boosts internal linking score and keeps readers engaged.",
+    "Include a note on 'When Shopify made this change' — was it gradual or immediate? This context helps readers understand urgency and informs their own rollout strategy.",
+    "Add 1–2 sentences acknowledging limitations of the analysis (e.g., 'We cannot measure conversion impact without access to Shopify's analytics') to build trust and transparency."
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.006714400000000009,
-  "generatedAt": "2026-06-09T18:53:03.089Z"
+  "costUsd": 0.007912799999999998,
+  "generatedAt": "2026-06-10T19:07:06.836Z"
 }

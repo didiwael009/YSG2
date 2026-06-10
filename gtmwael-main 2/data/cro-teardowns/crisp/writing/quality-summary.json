@@ -1,189 +1,32 @@
 {
   "slug": "crisp",
-  "generatedAt": "2026-06-09T19:01:39.580Z",
+  "generatedAt": "2026-06-10T19:08:30.167Z",
   "mode": "standard",
-  "sections": [
-    {
-      "sectionId": "01-intro",
-      "finalVersion": 1,
-      "finalScore": 68,
-      "passed": false,
-      "loopsUsed": 0,
-      "riskFlagCount": 5,
-      "riskFlags": [
-        "HARD CAP TRIGGERED: Unsupported outcome claim 'signals a move from emotional differentiation to capability claims' without data → total capped at 60.",
-        "HARD CAP TRIGGERED: Additional unsupported outcome claim 'fits enterprise evaluation criteria' → reinforces cap at 60.",
-        "Causal statement 'you'll know when to anchor your homepage on product capability instead of buyer identity' lacks attached condition (e.g. 'if your ICP matches Crisp's shift').",
-        "Invented interpretation: 'enterprise evaluation criteria' — evidence contains no mention of enterprise buyers or their criteria.",
-        "Invented interpretation: 'startup-friendly positioning' — evidence mentions 'startups' in meta description but does not confirm positioning strategy."
-      ],
-      "remainingIssueCount": 8,
-      "remainingIssues": [
-        "Unsupported outcome claim: 'That shift signals a move from emotional differentiation to capability claims' — evidence shows only headline text change, no data on differentiation strategy or outcome.",
-        "Causal claim without condition: 'you'll know when to anchor your homepage on product capability instead of buyer identity' — no evidence supports this as a transferable decision framework.",
-        "Paragraph length 146 words — exceeds 90-word cap for intro by 56 words.",
-        "Strategist-to-strategist jargon: 'emotional differentiation', 'capability claims', 'platform language', 'enterprise evaluation criteria', 'buyer identity' — all used without plain-language definitions.",
-        "Generic closing sentence: 'how to test whether your own audience will reward that trade' could appear in any SaaS teardown.",
-        "Invented interpretation: 'enterprise evaluation criteria' — evidence does not mention enterprise buyers or their criteria.",
-        "Invented interpretation: 'fits enterprise evaluation criteria' — no data traces to enterprise positioning.",
-        "Missing searchable term in heading: 'repositioned' is not in the target list (homepage, positioning, messaging, CTA, conversion) and 'Crisp chat' is only the keyword, not necessarily sufficient alone."
-      ],
-      "sectionCostUsd": 0.03723
-    },
-    {
-      "sectionId": "02-quick-answer",
-      "finalVersion": 2,
-      "finalScore": 95,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 0,
-      "riskFlags": [],
-      "remainingIssueCount": 0,
-      "remainingIssues": [],
-      "sectionCostUsd": 0.07399500000000002
-    },
-    {
-      "sectionId": "03-visual-timeline",
-      "finalVersion": 3,
-      "finalScore": 73,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 2,
-      "riskFlags": [
-        "'the new headline may filter them out before they understand the product' — causal outcome claim with no data showing visitors left or conversion dropped.",
-        "'If category terms outnumber explanatory terms' — implies a test condition that will reveal a problem, but no evidence supports this ratio as a conversion factor."
-      ],
-      "remainingIssueCount": 9,
-      "remainingIssues": [
-        "Section contains two causal claims without conditions: 'the new headline may filter them out' (conditional language present but no test condition attached) and 'If category terms outnumber explanatory terms' is a weak conditional that implies causation without evidence.",
-        "The term 'category' appears 6 times but is used as expert jargon without plain-language explanation — readers unfamiliar with B2B SaaS 'category creation' strategy will not understand what 'names a category' means in practical terms.",
-        "Paragraph 1 under 'What changed' is 85 words — exceeds the 60-word limit for analytical section body paragraphs.",
-        "Paragraph 1 under 'Why it matters' is 72 words — exceeds the 60-word limit.",
-        "Paragraph 1 under 'What it costs' is 73 words — exceeds the 60-word limit.",
-        "The practical takeaway in 'What it costs' is buried in the third sentence ('Open your homepage and count...') — violates the rule that takeaway must appear in the first two sentences of the H3 block.",
-        "Generic SaaS commentary present: 'The page no longer explains what problem Crisp solves' and 'If visitors arrive unfamiliar with AI support as a category' could appear in any B2B SaaS teardown with 'Crisp' replaced by another company name.",
-        "The opening sentence is template-default structure ('The 2022 headline opened with... The 2026 headline reads...') when the evidence supports a more interesting entry point: the paradox that a customer experience platform removed the word 'human' and replaced it with 'AI'.",
-        "Section word count is approximately 220 words — exceeds the 140–200 word target by 20 words."
-      ],
-      "sectionCostUsd": 0.14573999999999998
-    },
-    {
-      "sectionId": "04-messaging-evolution",
-      "finalVersion": 2,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 1,
-      "riskFlags": [
-        "The final sentence ('…which may signal a move toward a sales-assisted process for a portion of inbound traffic') makes a causation inference not directly supported by the evidence. The evidence shows trial language was removed, but does not confirm a sales-assisted process was introduced. Add a conditional frame: 'which may reflect a move toward…' becomes 'which could reflect…' or 'which suggests the company now serves visitors who…' (already present earlier in the sentence, so this clause is redundant and should be cut)."
-      ],
-      "remainingIssueCount": 3,
-      "remainingIssues": [
-        "Final H3 test is generic ('Does your homepage still assume…') instead of a specific 5-minute action anchored to Crisp's evidence",
-        "Opening sentence uses 'trial-urgency' compound without plain-language definition — not immediately clear to founders unfamiliar with conversion terminology",
-        "Second H3 paragraph ('The page title drops…') reaches 62 words — marginally over the 60-word limit for analytical H3 blocks"
-      ],
-      "sectionCostUsd": 0.07853100000000002
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "finalVersion": 2,
-      "finalScore": 88,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 2,
-      "riskFlags": [
-        "H3 block 2: 'This adds steps between intent and signup' is a causal statement presented as fact, not conditioned on visitor type or intent source — needs 'for visitors who already know they want Crisp' moved to the same sentence or qualified with 'may add'",
-        "H3 block 3: 'Check whether visitors who click those CTAs ever reach signup — or whether they read and leave' implies a binary outcome without acknowledging partial conversions or delayed signup"
-      ],
-      "remainingIssueCount": 3,
-      "remainingIssues": [
-        "H2 section heading is clever-only ('CTA shift') without 'homepage', 'conversion', or explicit CTA topic term visible to search",
-        "H3 block 2 buries the practical takeaway — opens with a conditional scenario rather than stating the friction cost upfront",
-        "Final test is slightly generic — 'compare your trial start rate' could appear in any CTA teardown, though the Crisp anchor ('Crisp added five') provides some specificity"
-      ],
-      "sectionCostUsd": 0.07559099999999996
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "finalVersion": 3,
-      "finalScore": 68,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 5,
-      "riskFlags": [
-        "Unsupported causation: 'when narrowing your headline works and when it backfires' — no conversion or bounce-rate data in evidence",
-        "Speculative claim: 'this approach may work' — no performance data provided",
-        "Speculative claim: 'could reduce visitor clarity' — no visitor behavior data in evidence",
-        "Speculative claim: 'may leave if the headline does not orient them within three seconds' — invented metric with no evidence",
-        "Generic behavioral assumption: 'Visitors who land without knowing your product category may leave' — could appear in any teardown, not specific to Crisp"
-      ],
-      "remainingIssueCount": 15,
-      "remainingIssues": [
-        "The term 'category' appears 8 times without plain-language definition — expert jargon overuse",
-        "The term 'hero' appears 4 times without plain-language definition — expert jargon overuse",
-        "The term 'identity-focused positioning' appears once without immediate plain-language definition",
-        "The term 'filter' is used as jargon ('allowing the top of the page to filter') without plain-language explanation",
-        "The opening sentence contains unsupported causation: 'narrowing your headline works and when it backfires' implies conversion outcomes not in evidence",
-        "Paragraph 1 (The pattern) is approximately 68 words — exceeds 60-word limit for H3 block",
-        "Paragraph 2 (Who should copy this) is approximately 62 words — exceeds 60-word limit",
-        "Paragraph 3 (Who should NOT copy this) is approximately 68 words — exceeds 60-word limit",
-        "Multiple causal claims without conditions: 'this approach may work' (no data), 'could reduce visitor clarity' (no evidence), 'may leave if' (speculative)",
-        "Navigation items and section headings are not in **bold quotes** — formatting violation",
-        "Generic paragraph in 'Who should NOT copy this' — the phrase 'Visitors who land without knowing your product category may leave if the headline does not orient them within three seconds' could appear in any SaaS teardown",
-        "Section heading lacks the word 'Crisp' — searchable terms are present but company name is missing",
-        "No verbatim quoted phrases from the homepage (headlines, CTAs) appear in the section",
-        "Word count approximately 230 words — within range but dense",
-        "The final test does not reference Crisp's specific evidence — it's generic analytics advice"
-      ],
-      "sectionCostUsd": 0.14057699999999995
-    }
-  ],
-  "averageScore": 80,
-  "passCount": 3,
-  "failCount": 3,
-  "skippedCount": 0,
-  "totalRewriteLoops": 7,
-  "weakSections": [
-    "01-intro",
-    "03-visual-timeline",
-    "06-lessons-for-saas-teams"
-  ],
-  "allRiskFlags": [
-    "HARD CAP TRIGGERED: Unsupported outcome claim 'signals a move from emotional differentiation to capability claims' without data → total capped at 60.",
-    "HARD CAP TRIGGERED: Additional unsupported outcome claim 'fits enterprise evaluation criteria' → reinforces cap at 60.",
-    "Causal statement 'you'll know when to anchor your homepage on product capability instead of buyer identity' lacks attached condition (e.g. 'if your ICP matches Crisp's shift').",
-    "Invented interpretation: 'enterprise evaluation criteria' — evidence contains no mention of enterprise buyers or their criteria.",
-    "Invented interpretation: 'startup-friendly positioning' — evidence mentions 'startups' in meta description but does not confirm positioning strategy.",
-    "'the new headline may filter them out before they understand the product' — causal outcome claim with no data showing visitors left or conversion dropped.",
-    "'If category terms outnumber explanatory terms' — implies a test condition that will reveal a problem, but no evidence supports this ratio as a conversion factor.",
-    "The final sentence ('…which may signal a move toward a sales-assisted process for a portion of inbound traffic') makes a causation inference not directly supported by the evidence. The evidence shows trial language was removed, but does not confirm a sales-assisted process was introduced. Add a conditional frame: 'which may reflect a move toward…' becomes 'which could reflect…' or 'which suggests the company now serves visitors who…' (already present earlier in the sentence, so this clause is redundant and should be cut).",
-    "H3 block 2: 'This adds steps between intent and signup' is a causal statement presented as fact, not conditioned on visitor type or intent source — needs 'for visitors who already know they want Crisp' moved to the same sentence or qualified with 'may add'",
-    "H3 block 3: 'Check whether visitors who click those CTAs ever reach signup — or whether they read and leave' implies a binary outcome without acknowledging partial conversions or delayed signup",
-    "Unsupported causation: 'when narrowing your headline works and when it backfires' — no conversion or bounce-rate data in evidence",
-    "Speculative claim: 'this approach may work' — no performance data provided",
-    "Speculative claim: 'could reduce visitor clarity' — no visitor behavior data in evidence",
-    "Speculative claim: 'may leave if the headline does not orient them within three seconds' — invented metric with no evidence",
-    "Generic behavioral assumption: 'Visitors who land without knowing your product category may leave' — could appear in any teardown, not specific to Crisp"
-  ],
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
+  "failCount": 0,
+  "skippedCount": 6,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [],
   "sectionErrors": [],
   "finalJudgeScore": 72,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Remove all three page title claims from 'Quick answer' section — evidence provides only headline and meta description changes, NOT page title changes",
-    "Replace '8 navigation items' with '8 new nav options' throughout — evidence shows navAdded count of 8, not total navigation count",
-    "In CTA section, specify 'five new feature-routing CTAs' instead of 'Crisp added five' — clarify what the count refers to",
-    "Reframe '## Quick answer' to remove page title claims entirely — stick to headline and meta description only",
-    "Add conditional framing to all conversion predictions: change 'may filter them out' to 'may filter out visitors who arrive unfamiliar with the category' with explicit 'if' condition",
-    "Replace 'which may signal' with 'which could suggest, if matched with sales team expansion data' in messaging section"
-  ],
-  "seoScore": 84,
-  "seoPass": true,
-  "seoRequiredFixes": [
-    "In the 'Quick answer' section, rewrite the opening to lead with the primary keyword ('Crisp homepage CRO teardown') more explicitly — currently it leads with the change itself rather than framing this as a case study worth learning from",
-    "Add a sentence or callout in 'Quick answer' that clarifies the time scope (Jul 2022 to Jun 2026 = 4 years, 3 snapshots) — currently buried in the meta line, not in body text",
-    "Expand the 'Who should NOT copy this' section with a concrete example (e.g., a hypothetical SaaS with <40% branded search traffic) to increase clarity and actionability",
-    "Add a one-sentence transition or thesis statement after the intro that explicitly signals what the reader will learn by the end (currently the intro is strong but the 'so what' for the reader is implied rather than stated)"
+    "Opening paragraph: Remove 'signals a move from emotional differentiation to capability claims' OR rewrite as 'The shift from 'human touch' language to 'AI support' language moves the headline from emotional framing to category naming.'",
+    "Opening paragraph: Remove 'platform language that fits enterprise evaluation criteria' OR replace with evidence-based observation: 'language that names a technology category instead of a buyer identity.'",
+    "Opening paragraph: Remove 'you'll know when to anchor your homepage on product capability instead of buyer identity' OR rewrite as 'you'll see how one company traded buyer-identity language for category-naming language — and what that trade assumes about your visitor.'",
+    "Section 'What it costs': Remove 'the new headline may filter them out before they understand the product' OR rewrite as 'the new headline assumes visitors already understand what an AI support platform does. If they don't, the page no longer explains it.'",
+    "Section 'What it costs': Remove 'If category terms outnumber explanatory terms, test a headline that leads with the problem you solve' OR rewrite as 'Count how many words name a technology category versus how many explain what your product does. Crisp moved from explanation to category naming.'",
+    "Section 'What this means for the sales process': Remove 'which may signal a move toward a sales-assisted process for a portion of inbound traffic' OR rewrite as 'which suggests the page now expects visitors who will explore before committing.'",
+    "Section 'The friction cost of feature-first CTAs': Rewrite 'This adds steps between intent and signup' as 'For visitors who already know they want Crisp, this adds steps between intent and signup.'",
+    "Section 'Test whether education CTAs help or hurt signup rate': Rewrite 'Check whether visitors who click those CTAs ever reach signup — or whether they read and leave' as 'Track whether visitors who click those CTAs convert at the same rate as visitors who clicked the old direct-trial CTAs.'",
+    "Section heading '## Crisp homepage positioning: When narrowing your headline works and when it backfires': Remove 'when it works and when it backfires' — no conversion data supports this claim. Rewrite as '## Crisp homepage positioning: What narrowing the headline assumes about your visitor'",
+    "Section 'Who should copy this': Remove 'this approach may work' OR rewrite as 'this approach assumes your domain already signals your category.'",
+    "Section 'Who should NOT copy this': Remove 'could reduce visitor clarity' OR rewrite as 'the narrower headline removes category explanation — which means the page cannot serve visitors who don't already know what type of product you sell.'",
+    "Section 'Who should NOT copy this': Remove 'may leave if the headline does not orient them within three seconds' — invented time threshold. Rewrite as 'may leave if the headline does not orient them quickly.'",
+    "Section 'Who should NOT copy this': Remove 'Visitors who land without knowing your product category may leave' OR integrate it into a company-specific observation: 'Crisp's new headline assumes visitors already know what an AI support platform does. If your homepage receives non-branded traffic, that assumption may not hold.'"
   ],
   "articleWordCount": 1148,
   "repetitionWarnings": [],

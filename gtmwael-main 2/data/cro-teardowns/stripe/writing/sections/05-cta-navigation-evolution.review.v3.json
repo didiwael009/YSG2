@@ -1,0 +1,45 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section heading is not searchable — 'CTA and conversion path changes' lacks company name in the heading itself (only in possessive form)",
+    "Second H3 heading ('Who the new path may not serve') is clever-only with no searchable terms like 'CTA', 'conversion', 'signup', or 'self-serve'",
+    "Paragraph 2 in H3-2 is 72 words — exceeds 60-word limit",
+    "H3-2 buries the practical takeaway — it starts with a restatement of the change, not the founder-actionable insight",
+    "Multiple causal claims lack attached conditions: 'the new path may not match their workflow' (what workflow?), 'Buyers from larger companies... will not find that option' (which buyers? all? some?)",
+    "Word count is approximately 195 words — exceeds 180-word cap by 15 words",
+    "Opening sentence uses two abstract noun stacks: 'conversion path' and 'account creation with zero sales conversation'",
+    "Generic SaaS commentary in H3-2: 'Buyers from larger companies who expect to speak with a rep' could appear in any B2B teardown"
+  ],
+  "requiredFixes": [
+    "Rewrite section heading to include 'Stripe' as standalone noun: 'Stripe CTA evolution: contact sales to instant signup'",
+    "Rewrite H3-2 heading to include searchable term: 'Who the self-serve CTA path excludes' or 'When instant signup creates friction'",
+    "Split paragraph 2 in H3-2 (currently 72 words) into two paragraphs at the sentence break after 'workflow.'",
+    "Move the practical insight to the first sentence of H3-2: 'If your approval process requires a quote before account creation, this path will create friction.'",
+    "Add conditions to causal claims: 'If your buyers need cost estimates BEFORE internal approval, the new path may block them' instead of 'may not match their workflow'",
+    "Cut 15 words to reach 180-word cap — remove redundant phrasing in H3-1 ('Ten CTAs were removed... Ten were added')",
+    "Anchor H3-2 to Stripe-specific evidence: which removed CTA served procurement buyers? 'Contact Sales' → quote path. Make that explicit."
+  ],
+  "riskFlags": [
+    "Causal claim without condition: 'the new path may not match their workflow' — whose workflow? under what circumstances?",
+    "Causal claim without condition: 'Buyers from larger companies... will not find that option' — which buyers? all enterprise? SMB with procurement?",
+    "Generic assertion: 'Buyers from larger companies who expect to speak with a rep' — not anchored to Stripe evidence, could apply to any B2B product"
+  ],
+  "seoNotes": [
+    "Section heading lacks standalone company name — 'Stripe's CTA' is possessive, not a standalone noun phrase Google indexes strongly",
+    "H3-2 heading is clever-only ('Who the new path may not serve') — misses opportunity for 'self-serve CTA', 'instant signup', 'sales-gated conversion'",
+    "H3-3 heading ('Audit your own page') is good founder-facing language but zero search value — consider 'Test your CTA path in 5 seconds'",
+    "Positive: H3-1 contains 'CTA path' which is searchable"
+  ],
+  "rewriteInstruction": "Tighten to 180 words. Rewrite the section heading to include 'Stripe' as a standalone noun, not possessive. Rewrite H3-2 heading to include 'self-serve' or 'instant signup'. Move the practical insight (approval-process friction) to the first sentence of H3-2. Split the 72-word paragraph after 'workflow.' Anchor the enterprise-buyer claim to Stripe's removed 'Contact Sales' CTA — make it explicit that procurement-stage buyers lost their entry point. Add conditions to every causal claim: instead of 'may not match their workflow', write 'if your approval process requires a quote before signup, this path will block procurement buyers'. Cut the redundant CTA-count phrasing in H3-1 ('Ten removed... Ten added' → 'The page dropped ten CTAs and added ten'). The final test is strong — keep it. The goal is to make every paragraph traceable to Stripe's specific evidence and every causal claim conditional.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 10,
+    "plainLanguage": 16,
+    "scannability": 8,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

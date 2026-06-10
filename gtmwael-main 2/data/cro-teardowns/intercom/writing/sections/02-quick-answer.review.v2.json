@@ -1,0 +1,43 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "The section uses 'market framing' — a high-abstraction strategist term — without a plain-language definition in the same sentence",
+    "The section exceeds 75-word target (currently ~85 words), making it less suitable for featured snippet extraction",
+    "The parenthetical definition '(a market framing where helpdesks natively orchestrate AI bots and human agents)' is itself jargon-heavy and does not use plain language",
+    "The phrase 'natively orchestrate' is expert-level technical positioning language that requires translation for founder audience",
+    "The section does not fully achieve the SECTION GOAL of 'three sentences that answer the question completely' — it provides four dense elements in a single complex sentence rather than a clean three-sentence structure",
+    "The heading 'Quick answer' is generic and contains no searchable terms (company name, 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion')",
+    "Word count violation: 85 words exceeds the 50–75 word target for Google featured snippet optimization",
+    "The draft could work for multiple companies if you swapped out the quoted strings — the structure 'Company replaced X with Y and removed Z' is templated rather than anchored to what makes THIS change interesting"
+  ],
+  "requiredFixes": [
+    "Replace 'market framing' with plain language or define it immediately in the same breath — e.g., 'a category claim' or 'a new product category definition'",
+    "Cut word count to 50–75 words by removing redundant elements — the navigation item list can be shortened to '...and removed eight navigation items including Custom Bots and E-commerce'",
+    "Rewrite the parenthetical to use plain language: instead of 'a market framing where helpdesks natively orchestrate AI bots and human agents', try 'a category where helpdesks combine AI bots and human support in one system'",
+    "Restructure into exactly three sentences that each deliver one complete thought, rather than front-loading multiple changes into the opening sentence",
+    "Change the ## heading to include searchable terms: 'Quick answer: Intercom homepage positioning shift' or 'What changed on Intercom's homepage'",
+    "Remove or simplify 'natively orchestrate' — use 'combine' or 'manage' instead"
+  ],
+  "riskFlags": [
+    "The phrase 'The homepage now leads with a single product category definition rather than multiple use-case explanations' implies a strategic outcome (singular focus = intentional) that is not directly supported by evidence — the evidence shows WHAT changed, not WHY or whether the singularity was intentional",
+    "No causal claims present, but the summary tone suggests Intercom executed a coherent plan when the evidence only confirms surface-level changes"
+  ],
+  "seoNotes": [
+    "NEGATIVE: The ## heading 'Quick answer' contains zero searchable terms — no company name, no 'homepage', no topic keywords. This section will not rank independently if excerpted.",
+    "POSITIVE: The section quotes specific headline text in bold, which is good for snippet extraction and establishes factual grounding.",
+    "NEGATIVE: At 85 words, the section exceeds the optimal 50–75 word range for featured snippet extraction — Google typically pulls shorter, tighter answers for the featured box.",
+    "NEGATIVE: The structure does not cleanly answer a single question — it lists multiple changes without a unifying 'so what' that a searcher can extract as a standalone answer."
+  ],
+  "rewriteInstruction": "Rewrite this section into exactly three sentences totaling 50–75 words. Sentence 1: state the single most important change (headline shift from outcome to category claim). Sentence 2: name one structural change that reinforces the shift (section heading removal). Sentence 3: deliver the 'so what' in plain language (the homepage now defines a category instead of listing use cases). Remove the parenthetical definition entirely or replace it with a five-word plain-language phrase. Do not use 'market framing', 'natively orchestrate', or any term that requires a marketing strategy background to parse. Change the ## heading to 'What changed on Intercom's homepage' so it contains searchable terms. Cut all navigation item specifics — just say 'removed eight navigation items'. The goal is a tight, extractable answer that works as a standalone Google snippet.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 12,
+    "plainLanguage": 10,
+    "scannability": 10,
+    "searchableHeadings": 0,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

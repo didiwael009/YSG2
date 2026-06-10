@@ -1,33 +1,41 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 78,
+  "pass": false,
   "issues": [
-    "Paragraph 1: 'reducing first-screen cognitive load for users who arrived looking for a specific social media workflow' — this conversion mechanism is implied, not demonstrated by the evidence.",
-    "Paragraph 3: 'The tradeoff is buyer sophistication' — this framing introduces a conclusion that belongs in the messaging/positioning section, creating boundary bleed.",
-    "Paragraph 3 exceeds 90 words (approximately 105 words), violating editorial compression standard.",
-    "The section does not include a practical SaaS founder takeaway — no observable lesson for a SaaS team studying this evolution."
+    "The term 'category leadership positioning' appears without an immediate plain-language definition in the same sentence — it is explained in the next sentence, which violates the rubric requirement for immediate definition.",
+    "The phrase 'category context' and 'category explanation' appear later without re-definition, creating a second and third use of expert framing.",
+    "The final H3 block ('What it costs') buries the founder takeaway — the practical test appears in the third sentence, not the first two as required.",
+    "The opening sentence of the section is template-generic ('The original headline opened with... The current headline reads...') when the evidence supports a more interesting entry (the shift from beginner-friendly benefit to expert capability language).",
+    "The claim 'The page now optimizes for visitors who already know they need this type of tool' is a causal outcome statement without data showing visitor behaviour or conversion metrics.",
+    "Paragraph 1 under 'Why it matters' is approximately 75 words — exceeds the 60-word cap for analytical section paragraphs.",
+    "Paragraph 1 under 'What it costs' is approximately 80 words — exceeds the 60-word cap."
   ],
   "requiredFixes": [
-    "Paragraph 3: compress to under 90 words by removing the 'tradeoff is buyer sophistication' sentence (which repeats the messaging section's conclusion) and ending after the third-party proof observation.",
-    "Add one sentence framing what a SaaS founder can study: e.g., 'For SaaS teams, this evolution shows a navigation structure change preceding headline repositioning — the platform capabilities appeared in the nav before the H1 adopted platform language.'"
+    "Move 'category leadership positioning' definition into the same sentence where the term first appears. Example: 'This is category leadership positioning — when a company stops explaining what the category is and starts claiming first place within it — the page now optimizes for...'",
+    "Reduce 'Why it matters' first paragraph to under 60 words. Break it into two shorter blocks if needed.",
+    "Reduce 'What it costs' first paragraph to under 60 words. Move the founder test to the opening sentence.",
+    "Rewrite the section opening to lead with the most interesting finding from the evidence — the shift from beginner-accessible benefit language to expert capability framing — rather than a before-and-after template.",
+    "Remove or condition the claim 'The page now optimizes for visitors who already know they need this type of tool' — no visitor behaviour data supports this. Replace with: 'The page is written for visitors who already know they need this type of tool' (describes the messaging, not the outcome)."
   ],
   "riskFlags": [
-    "'reducing first-screen cognitive load' — mechanism inferred, not evidenced."
+    "'The page now optimizes for visitors who already know they need this type of tool' — outcome claim without visitor data.",
+    "'Visitors arriving without category context... may not understand what the page offers' — causal claim without conversion or comprehension data. Needs conditioning: 'If visitors arrive without category context, they may struggle to understand...'",
+    "'category leadership positioning' appears as an expert term without immediate plain-language definition in the same sentence."
   ],
   "seoNotes": [
-    "Company name 'Hootsuite' appears in the first 40 words (second sentence), meeting SEO usefulness standard.",
-    "Dated snapshot labels ('Jan 2023', 'Jul 2023', 'Jun 2026') provide chronological structure useful for search intent around homepage evolution."
+    "The ## heading contains 'Hootsuite', 'homepage', 'positioning', and 'headline' — strong searchable terms.",
+    "The H3 headings ('What changed', 'Why it matters', 'What it costs') are generic structure headings with no searchable terms — acceptable for sub-blocks but worth noting.",
+    "The section uses exact quoted headlines in bold, which is excellent for snippet potential."
   ],
-  "rewriteInstruction": "Remove the 'tradeoff is buyer sophistication' sentence from paragraph 3 (this conclusion belongs in messaging section). Compress paragraph 3 to under 90 words by ending after the G2 proof observation. Add one sentence identifying a structural lesson for SaaS teams — e.g., the sequence in which navigation categories changed relative to headline repositioning, or the timing of third-party proof appearing in section headings. Ensure the final version stays within the visual timeline's job: documenting what changed and when, with conversion implications tied to each dated snapshot.",
+  "rewriteInstruction": "Open with the most interesting contrast the evidence reveals: Hootsuite moved from beginner-friendly benefit language to expert capability framing. In 'Why it matters', define 'category leadership positioning' in the same sentence where it first appears, then break the paragraph into two blocks under 60 words each. In 'What it costs', move the founder test to the opening sentence so the takeaway is immediate. Replace the outcome claim 'The page now optimizes for visitors' with 'The page is written for visitors' — describe the messaging choice, not an unproven conversion result. Add a condition to the claim about visitor confusion: 'If visitors arrive without category context, they may struggle...' rather than stating it as fact. Ensure no expert term appears more than once without re-definition.",
   "dimensionScores": {
-    "evidenceAccuracy": 22,
-    "clarity": 9,
+    "evidenceAccuracy": 18,
     "specificity": 14,
-    "seoUsefulness": 10,
-    "croUsefulness": 9,
-    "riskControl": 7,
-    "analysisDepth": 8,
-    "editorialQuality": 9
+    "plainLanguage": 13,
+    "scannability": 6,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

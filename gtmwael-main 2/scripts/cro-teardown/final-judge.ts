@@ -125,10 +125,27 @@ interface Blueprint {
   warnings?: string[];
 }
 
+interface NormalizedText {
+  raw?: {
+    title?: string;
+    metaDescription?: string;
+    h1?: string[];
+    h2?: string[];
+    h3?: string[];
+  };
+}
+
+interface NormalizedPageText {
+  from?: NormalizedText;
+  to?: NormalizedText;
+}
+
 function buildCompressedEvidence(writingDir: string): Record<string, unknown> {
-  const epPath = path.join(writingDir, 'evidence-pack.json');
-  const bpPath = path.join(writingDir, 'article-blueprint.json');
-  const qsPath = path.join(writingDir, 'quality-summary.json');
+  const epPath   = path.join(writingDir, 'evidence-pack.json');
+  const bpPath   = path.join(writingDir, 'article-blueprint.json');
+  const qsPath   = path.join(writingDir, 'quality-summary.json');
+  // normalized-page-text is what writers receive — judge must see a superset
+  const normPath = path.join(writingDir, 'section-evidence', 'normalized-page-text.json');
 
   const ep = fs.existsSync(epPath)
     ? (JSON.parse(fs.readFileSync(epPath, 'utf-8')) as EvidencePack)
@@ -142,7 +159,18 @@ function buildCompressedEvidence(writingDir: string): Record<string, unknown> {
     ? (JSON.parse(fs.readFileSync(qsPath, 'utf-8')) as QualitySummary)
     : null;
 
+  const norm = fs.existsSync(normPath)
+    ? (JSON.parse(fs.readFileSync(normPath, 'utf-8')) as NormalizedPageText)
+    : null;
+
   const ds = ep?.diffSummary;
+
+  // Page title changes — seen by writers via normalized text, previously invisible to judge
+  const titleFrom = norm?.from?.raw?.title ?? null;
+  const titleTo   = norm?.to?.raw?.title   ?? null;
+  const pageTitles = (titleFrom || titleTo)
+    ? [{ from: titleFrom ?? '', to: titleTo ?? '' }]
+    : [];
 
   return {
     company:       ep?.companyName ?? 'unknown',
@@ -153,6 +181,8 @@ function buildCompressedEvidence(writingDir: string): Record<string, unknown> {
     // Primary copy changes (before/after — most important evidence)
     headlines:    ds?.headlines?.slice(0, 3) ?? [],
     metaDescs:    ds?.metaDescs?.slice(0, 3) ?? [],
+    // Page title changes — writers see this via normalized-page-text; judge must too
+    pageTitles,
 
     // Structural changes (counts + top examples)
     h2Added:      ds?.h2Added?.slice(0, 10) ?? [],
@@ -165,6 +195,10 @@ function buildCompressedEvidence(writingDir: string): Record<string, unknown> {
 
     navAdded:     ds?.navAdded?.slice(0, 8) ?? [],
     navRemoved:   ds?.navRemoved?.slice(0, 8) ?? [],
+
+    // H3 snapshot (structural context writers have)
+    h3From: norm?.from?.raw?.h3?.slice(0, 8) ?? [],
+    h3To:   norm?.to?.raw?.h3?.slice(0, 8)   ?? [],
 
     // Data quality
     dataQuality: bp.dataQuality ?? null,

@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Word count is 75 words — at the absolute upper limit of the 50–75 target",
+    "Final sentence introduces a conditional claim ('may create confusion') without being traceable to specific evidence of confusion",
+    "The phrase 'This positioning assumes visitors already understand' is an interpretive leap not directly supported by quoted evidence"
+  ],
+  "requiredFixes": [
+    "Tighten to 65–70 words by trimming the conditional clause in sentence 3 or splitting it into a simpler warning",
+    "Replace 'This positioning assumes visitors already understand' with a more evidence-grounded observation like 'The new headline skips category definition' or 'Stripe no longer explains it processes payments in the H1'"
+  ],
+  "riskFlags": [
+    "The claim 'this approach may create confusion about what your product actually does' is a causal prediction without supporting data — should be framed as a testable risk, not a likely outcome"
+  ],
+  "seoNotes": [
+    "Section heading 'Quick answer' is not searchable — does not contain 'Stripe', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'. However, this is the standard section label for featured snippet optimization, so the penalty is waived.",
+    "The three-sentence structure is optimized for featured snippet extraction",
+    "Both old and new headlines are quoted verbatim in bold, which preserves searchability for users scanning for exact phrases"
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 14,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

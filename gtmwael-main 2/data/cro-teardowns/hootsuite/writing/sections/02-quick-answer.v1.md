@@ -1,0 +1,3 @@
+## Quick answer
+
+Hootsuite shifted from a time-saving scheduler for small business growth to a strategic intelligence platform for enterprise buyers managing brand risk and competitive insights. This positioning assumes visitors already understand basic social media management and are now comparing vendors based on ROI proof and risk mitigation capabilities. Companies still explaining what their product does or relying on free trial conversion should not adopt this approach — their visitors need feature clarity before strategic framing.

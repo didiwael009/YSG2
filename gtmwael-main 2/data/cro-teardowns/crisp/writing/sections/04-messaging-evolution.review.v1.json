@@ -1,46 +1,45 @@
 {
-  "score": 68,
+  "score": 78,
   "pass": false,
   "issues": [
-    "Final paragraph contains unsupported causal claim: 'less friction to start the trial, more friction to understand whether Crisp fits' — no trial friction data or visitor understanding metrics provided in evidence",
-    "Outcome claim in final paragraph: 'The page no longer tries to close a self-serve signup on the spot' — implies conversion intent change without supporting data",
-    "Second H3 paragraph exceeds 60 words (approximately 65 words)",
-    "Third H3 paragraph exceeds 60 words (approximately 75 words)",
-    "Final H3 block buries the takeaway — practical insight appears only in the last sentence, not the first two",
-    "Generic commentary: 'This is vocabulary for a buyer who needs to be convinced to start' could appear in any SaaS teardown",
-    "Generic commentary: 'This reads like positioning for a buyer who is comparing vendors' is boilerplate category analysis",
-    "Causal statement without condition: 'less friction to start the trial, more friction to understand' — no 'if [condition]' attached",
-    "Section heading lacks company name ('Crisp messaging shifted' vs. 'Crisp's messaging shifted' — passes by minimal margin but weak for search)",
-    "Word count approximately 185 words — within acceptable range but on high end"
+    "Final paragraph makes an unsupported causal claim: 'The new page appears built for a longer buying cycle' — no evidence of demos, approvals, or integration planning in the data",
+    "Final question 'Does your homepage still speak to the buyer who wants to start today?' is generic and could appear in any SaaS teardown",
+    "The phrase 'platform-level tools' is jargon without plain-language definition",
+    "The phrase 'vendor documentation' is unanchored — no evidence that the page reads like documentation",
+    "H3 heading 'Who the old page served' could be stronger for search — lacks company name or specific positioning term",
+    "H3 heading 'Who the new page serves' could be stronger for search — lacks company name or specific positioning term",
+    "Final H3 block does not deliver a specific, runnable test anchored to Crisp's evidence — the question is generic",
+    "Section opens with a generic template 'from startups to every business' when the evidence supported a more interesting contrast (urgency vs. category ownership, or trial activation vs. platform evaluation)",
+    "Second paragraph in 'Who the new page serves' is 63 words — slightly over the 60-word cap",
+    "The final paragraph's claim about 'longer buying cycle' is outcome/causation without data — triggers -10 penalty"
   ],
   "requiredFixes": [
-    "Remove or rewrite the final paragraph's causal claims ('less friction to start... more friction to understand') — no trial friction data exists in evidence",
-    "Remove 'The page no longer tries to close a self-serve signup on the spot' — this is an outcome claim without conversion data",
-    "Split the second H3 paragraph into two sentences or remove generic qualifier ('This reads like positioning for...')",
-    "Split the third H3 paragraph into two paragraphs — first paragraph delivers the takeaway in first two sentences, second paragraph provides context",
-    "Move the practical takeaway ('Does your homepage still assume...') to the opening of the third H3 block, not the end",
-    "Replace 'This is vocabulary for a buyer who needs to be convinced' with Crisp-specific observation (e.g., 'The 2022 meta description stacked three urgency signals in one sentence')",
-    "Replace 'This reads like positioning for a buyer who is comparing vendors' with evidence-anchored observation (e.g., 'The new title drops the startup qualifier and claims every business')"
+    "Remove or reframe 'The new page appears built for a longer buying cycle that includes demos, internal approvals, and integration planning' — no evidence of these stages in the data. Replace with a traceable observation: 'The urgency cues are gone — no trial countdown, no exclamation marks — and the page now uses platform vocabulary that assumes the reader already understands the category.'",
+    "Replace final generic question with a specific, runnable test: 'Open your homepage in a private tab. Count how many words in the headline assume the visitor already knows your product category. If it's more than half, you may have moved past the trial-ready buyer.'",
+    "Define 'platform-level tools' in plain language immediately: 'operations leaders at established companies who need platform-level tools (multi-channel inboxes, integrations, admin controls)'",
+    "Replace 'vendor documentation' with evidence-based description: 'The page now uses neutral product category language — no urgency, no trial emphasis — consistent with a buyer who is evaluating multiple vendors over weeks.'",
+    "Add company name to H3 headings for search: 'Who Crisp's old homepage served' and 'Who Crisp's new homepage serves'",
+    "Rewrite opening sentence to reflect the most interesting finding: 'Crisp's homepage moved from trial-activation urgency to category-neutral platform language — a shift that realigns the page with a different stage of the buying process.'"
   ],
   "riskFlags": [
-    "HARD CAP TRIGGER: Unsupported outcome claim ('The page no longer tries to close a self-serve signup') without conversion data — caps total at 60",
-    "Causal claim without data: 'less friction to start the trial, more friction to understand whether Crisp fits' — penalise -10",
-    "Causal statement without condition: 'less friction... more friction' — penalise -3"
+    "'The new page appears built for a longer buying cycle that includes demos, internal approvals, and integration planning' — this is a causal outcome claim with zero evidence in the data. The evidence shows removal of urgency cues and category vocabulary change, not proof of a longer cycle.",
+    "'Does your homepage still speak to the buyer who wants to start today?' — this question is not anchored to Crisp's specific evidence and could appear in any teardown."
   ],
   "seoNotes": [
-    "Section heading 'How Crisp's messaging shifted its audience' contains company name and topic term 'messaging' — passes searchability but could be stronger with 'homepage' added",
-    "H3 headings are plain and searchable ('Who the old page served', 'Who the new page serves') — good for featured snippet potential",
-    "All verbatim quotes are properly bolded — good for scan value"
+    "The ## section heading 'Crisp's messaging shift: from startups to every business' is searchable — contains company name and topic term 'messaging'",
+    "H3 subheadings lack company name and could be stronger for internal linking and featured snippets: 'Who Crisp's old homepage served' would be more searchable",
+    "The section correctly uses bold quotes for all verbatim website text",
+    "Word count is approximately 160 words — within the 140–200 target range"
   ],
-  "rewriteInstruction": "This section fired the hard cap by making an unsupported outcome claim about signup intent. Remove all conversion-outcome language ('no longer tries to close', 'less friction', 'more friction'). The third H3 block must open with the founder takeaway in the first sentence — not bury it at the end. Cut the generic buyer-stage commentary ('vocabulary for a buyer who needs to be convinced', 'positioning for a buyer who is comparing') and replace with Crisp-specific observations anchored to quoted evidence. Example: 'The 2022 meta description stacked three urgency signals — free trial, no credit card, try now — in a single sentence. The 2026 version removes all three.' Split the second and third H3 paragraphs so no block exceeds 60 words. The final test question is good but must appear first, not last.",
+  "rewriteInstruction": "Remove the unsupported causal claim about 'longer buying cycle' and replace with evidence-traceable observation: the page removed urgency cues and adopted category-neutral platform vocabulary. Replace the generic final question with a specific, runnable test anchored to Crisp's evidence (e.g., count how many headline words assume category knowledge). Define 'platform-level tools' in plain language immediately. Add company name to H3 subheadings for search ('Who Crisp's old homepage served'). Rewrite the opening sentence to lead with the most interesting finding — the shift from trial-activation urgency to category ownership language — rather than the template 'from X to Y' default. Ensure the final H3 block delivers a practical takeaway in the first two sentences and ends with a specific test the reader can run in under five minutes.",
   "dimensionScores": {
-    "evidenceAccuracy": 7,
-    "specificity": 10,
-    "plainLanguage": 16,
-    "scannability": 6,
-    "searchableHeadings": 7,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 2
+    "evidenceAccuracy": 10,
+    "specificity": 12,
+    "plainLanguage": 14,
+    "scannability": 12,
+    "searchableHeadings": 6,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

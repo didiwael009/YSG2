@@ -1,29 +1,54 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 72,
+  "pass": false,
   "issues": [
-    "Paragraph 4 uses 'can be read as' hedging once, but still within acceptable limit",
-    "The phrase 'This pattern can be read as evidence of a team running continuous iteration' is hedging a claim that is directly stated in the evidence ('Incremental changes compound')",
-    "Minor: 'If your homepage has been changing incrementally for two years but you can't articulate the through-line' is a hypothetical scenario not tied to Stripe's specific evidence"
+    "The ## heading is clever-only with no searchable terms — 'Should SaaS companies copy Stripe's homepage strategy' lacks company name + topic term pairing",
+    "Opening paragraph uses forbidden term 'maturity-driven positioning' without plain-language definition",
+    "Forbidden term 'category ownership' appears without definition",
+    "Paragraph 1 ('The pattern') is 62 words — exceeds 60-word cap",
+    "Multiple causal claims lack attached conditions: 'removing the category explanation will cost you qualified pipeline' appears without 'if [condition]' qualifier in same sentence",
+    "The phrase 'Visitors will bounce because they cannot figure out what you sell' is an outcome claim without data",
+    "H3 block 'Who should copy this' delivers takeaway in sentence 3 ('The test:'), not first two sentences",
+    "H3 block 'Who should NOT copy this' has causal claim in sentence 1 without conditional framing in the same sentence",
+    "Verbatim quote 'Global Payments' is not in **bold quotes** format",
+    "Verbatim quote 'Financial infrastructure to grow your revenue. Accept paymen...' is not in **bold quotes** format",
+    "Multiple paragraphs could appear in different company teardowns — no Stripe-specific anchoring in 'Who should copy this' or 'Who should NOT copy this' blocks",
+    "Word count approximately 220 words — within range but could be tighter",
+    "Final H3 test is generic ('Check your homepage traffic sources') rather than specific to Stripe evidence"
   ],
   "requiredFixes": [
-    "In paragraph 4, replace 'can be read as evidence of a team running continuous iteration' with a direct statement: 'The evidence shows continuous iteration rather than big-bang launches' — the lesson-card body already states this pattern explicitly, so hedging is unnecessary."
+    "Change ## heading to include 'Stripe' + 'homepage' or 'positioning' — e.g. 'What SaaS teams can learn from Stripe's homepage evolution'",
+    "First use of 'maturity-driven positioning' must ship with plain-language definition in same sentence",
+    "First use of 'category ownership' must ship with plain-language definition in same sentence",
+    "Shorten 'The pattern' paragraph to under 60 words",
+    "Rewrite causal claims to include condition in same sentence: 'If you remove the category explanation before you have brand recognition, you will lose qualified pipeline'",
+    "Anchor 'Who should copy this' to Stripe evidence: quote the actual headline change, reference specific nav labels",
+    "Anchor 'Who should NOT copy this' to Stripe evidence: reference what Stripe could afford to remove because of prior brand status",
+    "Put all verbatim Stripe quotes in **bold quotes** format",
+    "Move practical takeaway to first two sentences in each H3 block",
+    "Final test must reference Stripe-specific evidence: 'Count how many Stripe homepage elements assume you already know what Stripe does — then audit your own page for the same pattern'"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "UNSUPPORTED OUTCOME CLAIM: 'removing the category explanation will cost you qualified pipeline' — no conversion data provided",
+    "UNSUPPORTED CAUSATION: 'Visitors will bounce because they cannot figure out what you sell' — no bounce rate data in evidence",
+    "CAUSAL WITHOUT CONDITION (same sentence): 'removing the category explanation will cost you qualified pipeline' lacks 'if [condition]' attachment in same sentence",
+    "CAUSAL WITHOUT CONDITION: 'Aspirational language without category context reads as vague' lacks conditional framing"
+  ],
   "seoNotes": [
-    "Positive: Company name 'Stripe' appears in the first 10 words",
-    "Positive: Specific evidence anchors throughout (headline text quoted, navigation labels named, heading titles listed)",
-    "Positive: Each paragraph opens with a company-specific change, making the section useful for searchers looking for Stripe CRO lessons"
+    "NEGATIVE: ## heading lacks searchable terms — 'Should SaaS companies copy' is clever-only, no company name or topic keyword",
+    "POSITIVE: H3 headings contain pattern words like 'copy', 'test', 'who should' — these match search intent",
+    "NEGATIVE: Section lacks specific Stripe evidence anchors — no quoted headlines, nav items, or dated changes in H3 blocks",
+    "NEGATIVE: Generic advice dominates — 'check your traffic sources' could appear in any teardown"
   ],
-  "rewriteInstruction": "Remove the 'can be read as' hedge in paragraph 4 and replace with a direct statement — the lesson-card already describes the pattern as fact. Tighten the hypothetical scenario in the same paragraph to tie more closely to the Stripe evidence (e.g., 'Stripe's iteration pattern shows the risk of drift if changes aren't tied to a positioning anchor, as evidenced by the category shift from developer tool to enterprise platform').",
+  "rewriteInstruction": "Rewrite with three fixes: (1) Change the ## heading to 'What SaaS teams can learn from Stripe's homepage positioning shift' so it contains 'Stripe' + 'homepage' + 'positioning'. (2) Anchor every H3 block to specific Stripe evidence — quote the Oct 2022 headline vs Jun 2026 headline, name the nav items that disappeared, reference the section headings that changed. No paragraph should be transferable to a different company's teardown. (3) Reframe all causal claims with conditional language in the same sentence: 'If you remove category explanation before you have X% branded traffic, you risk losing pipeline'. Move the practical takeaway to the first two sentences of each H3 block. Final test must be Stripe-specific: 'Open Stripe's Jun 2026 homepage and count how many elements assume prior knowledge — headlines, nav labels, section intros. Then audit your own page for the same pattern.' Apply **bold quotes** to all verbatim Stripe text. Strip forbidden terms unless accompanied by plain-language definitions in the same sentence.",
   "dimensionScores": {
-    "evidenceAccuracy": 24,
-    "clarity": 14,
-    "specificity": 15,
-    "seoUsefulness": 10,
-    "croUsefulness": 10,
-    "riskControl": 10,
-    "analysisDepth": 15
+    "evidenceAccuracy": 15,
+    "specificity": 6,
+    "plainLanguage": 12,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

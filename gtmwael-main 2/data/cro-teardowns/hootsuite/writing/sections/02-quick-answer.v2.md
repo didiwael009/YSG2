@@ -1,0 +1,3 @@
+## Quick answer
+
+Between Jan 2023 and Jun 2026, Hootsuite replaced **"Grow your reach and get more business"** with **"Drive real business impact with the world's deepest social intelligence"**. Navigation shifted from execution tasks (**"Publish and schedule"**, **"Engage customers"**) to risk capabilities (**"Reputation management"**, **"Crisis management"**, **"Social listening"**). The old meta description promoted a free trial (**"Give it a try for free!"**); the new one lists features neutrally, signaling a move away from trial-driven acquisition.

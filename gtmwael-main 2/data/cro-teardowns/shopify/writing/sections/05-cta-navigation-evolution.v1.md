@@ -1,13 +1,13 @@
-## Shopify's CTA shift: from education to instant signup
+## How Shopify's CTA path changed from education to activation
 
 ### What changed
 
-Shopify replaced ten educational CTAs with ten product-focused ones. The old homepage invited visitors to **"Explore ways to sell"** and **"Learn more about Shopify"**. The new one asks for immediate action: **"Start for free"** and **"Get a stunning store"**. Every "explore" or "learn more" button is gone. What replaced them: feature-specific CTAs like **"Website Builder"**, **"Shop App"**, and **"Social & Marketplaces"**.
+Shopify removed ten CTAs and replaced them with ten new ones. The old homepage invited visitors to **"Start your business"** and **"Explore ways to sell"** — multi-step paths with educational stops. The new page leads with **"Start for free"** and **"Get a stunning store"** — direct activation prompts. Gone: **"Learn more about Shopify"** and **"Explore the Shopify Experts Marketplace"**. Added: **"Compare Shopify"** and product-specific CTAs like **"Shop App"** and **"AI Chats"**.
 
 ### Who this filters out
 
-This path no longer serves people who are still comparing categories — someone deciding between a marketplace listing, a custom site, or a platform like Shopify. Those visitors needed the "explore ways to sell" educational content. The new CTAs assume you already know Shopify is the answer and you are choosing between Shopify's features, not between Shopify and something else entirely.
+The new path no longer serves people who landed to understand what Shopify is or whether it fits their business model. Someone researching "should I sell online or open a store" will not find their question answered here. The page now assumes you already decided to launch an online store — you are comparing platforms, not deciding whether to start.
 
 ### Audit your own page
 
-Open your homepage and count how many CTAs say "learn," "explore," or "discover." Then count how many say "start," "get," or "try." If the education CTAs outnumber the action CTAs but your traffic is mostly branded search or referrals, you may be adding friction where your visitors no longer need it.
+Open your homepage. Count how many CTAs start with "Learn" or "Explore." If your traffic still includes cold visitors from non-branded search, those CTAs may be converting better than **"Start free trial"** — test before you remove them. Shopify can afford the swap because most of their homepage visitors already know what Shopify does.

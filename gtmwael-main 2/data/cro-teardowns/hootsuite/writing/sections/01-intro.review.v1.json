@@ -1,40 +1,40 @@
 {
-  "score": 73,
+  "score": 78,
   "pass": false,
   "issues": [
-    "Paragraph 2 exceeds 90 words (93 words total)",
-    "Paragraph 2 previews conclusions that belong in other sections: self-serve→enterprise shift (messaging section), proof burden (messaging section), CTA friction (CTA section)",
-    "The phrase 'can be read as' appears once, which is acceptable, but 'is observable' is a redundant hedging phrase serving the same function",
-    "Paragraph 2 lacks specificity — the three conclusions ('heavier proof burden', 'CTA path appears to serve longer sales cycles', 'messaging assumes visitor understands category') are not anchored to specific evidence items from this section",
-    "No buyer psychology analysis in paragraph 1 — it is purely descriptive of changes",
-    "No conversion implication tied to a specific evidence item in paragraph 1"
+    "The draft contains a causal claim without a conditional frame: 'suggests the company is targeting a different type of buyer' — this is inference presented as near-fact, not traceable to the evidence provided.",
+    "The phrase 'targeting a different type of buyer' is strategist jargon not immediately defined in plain language.",
+    "Word count is approximately 105 words, exceeding the 90-word cap for intro sections.",
+    "The opening sentence states Hootsuite 'replaced its homepage headline three times' but the evidence shows only two versions (before/after), not three distinct replacements.",
+    "The final clause 'how to tell whether your own homepage is speaking to the right stage of the buyer journey' uses the expert term 'buyer journey' without plain-language explanation and introduces a concept ('stage') not justified by the evidence.",
+    "The phrase 'stage of the buyer journey' is jargon that assumes the reader knows the framework."
   ],
   "requiredFixes": [
-    "Remove or move the three conclusions in paragraph 2 ('heavier proof burden', 'CTA path serves longer sales cycles', 'messaging assumes category understanding') — these belong in their respective sections (messaging, CTA, messaging)",
-    "Compress paragraph 2 to under 90 words by removing the three preview conclusions — replace with a single forward-looking sentence that names the sections without summarizing their findings",
-    "Add one conversion implication or buyer psychology observation tied to the headline or meta description change in paragraph 1",
-    "Anchor the 'self-serve to enterprise' interpretation to a specific phrase from the evidence (e.g., 'Drive real business impact' vs 'Let's do this') rather than stating it as a floating observation"
+    "Remove or reframe 'suggests the company is targeting a different type of buyer' as a conditional observation: 'could signal a shift toward...' or eliminate the inference entirely.",
+    "Cut word count to 55–90 words. Current draft is ~105 words.",
+    "Correct the factual claim about 'three times' — evidence shows one documented change (before/after), not three discrete replacements.",
+    "Replace 'stage of the buyer journey' with plain language: 'whether your homepage speaks to people ready to buy vs. people still exploring options' or similar.",
+    "Ensure all verbatim quotes remain in **bold quotes** (currently correct, maintain this)."
   ],
   "riskFlags": [
-    "Paragraph 2: 'the page now carries a heavier proof burden' — this is stated as fact but is not supported by evidence in this section (no proof elements are cited)",
-    "Paragraph 2: 'the CTA path appears to serve longer sales cycles' — no CTA evidence is present in this section's evidence block",
-    "Paragraph 2: 'the messaging assumes the visitor already understands the product category' — this is interpretation without a specific phrase anchor"
+    "Causal/inference claim: 'suggests the company is targeting a different type of buyer' — no evidence traces this to Hootsuite's stated intent or measured outcome.",
+    "Factual inaccuracy: 'replaced its homepage headline three times' — evidence shows one before/after pair, not three replacements.",
+    "Unbounded causal frame: 'how to tell whether your own homepage is speaking to the right stage' — implies the article will teach stage-detection methodology not evidenced in the provided data."
   ],
   "seoNotes": [
-    "Positive: 'Hootsuite' appears in the first sentence",
-    "Positive: The date range 'January 2023 and June 2026' appears early, useful for searchers looking for recent teardowns",
-    "Negative: No variation of 'CRO teardown' or 'homepage teardown' appears in the first 40 words — the phrase 'homepage teardown' first appears in the final sentence"
+    "Heading contains company name ('Hootsuite') and searchable terms ('Homepage', 'Changed') — strong for search.",
+    "First sentence mentions 'Hootsuite', 'homepage headline', and year range — good keyword density.",
+    "The phrase 'buyer journey' may attract expert search traffic but risks alienating founders unfamiliar with the term."
   ],
-  "rewriteInstruction": "Remove the three preview conclusions in paragraph 2 ('heavier proof burden', 'CTA path serves longer sales cycles', 'category assumption') — they belong in their respective sections. Replace with one sentence that names the sections to come without summarizing findings. In paragraph 1, add one conversion implication tied to the headline or meta change (e.g., how the shift from 'Let's do this' to 'Drive real business impact' may affect visitor self-selection). Compress paragraph 2 to under 90 words. Anchor the 'self-serve to enterprise' observation to a specific phrase pair from the evidence.",
+  "rewriteInstruction": "Cut to 55–90 words. Open with the factual headline change (one replacement, not three). Quote both versions in the first two sentences. Remove the inference about 'targeting a different type of buyer' — stick to observable shifts ('casual to formal', 'outcome to capability'). Replace 'stage of the buyer journey' with plain language: 'whether your homepage speaks to people comparing tools or people still exploring what's possible'. End by naming the elements covered (headline, CTAs, meta, nav). No strategist-to-strategist framing.",
   "dimensionScores": {
     "evidenceAccuracy": 15,
-    "clarity": 8,
-    "specificity": 10,
-    "seoUsefulness": 7,
-    "croUsefulness": 6,
-    "riskControl": 4,
-    "analysisDepth": 5,
-    "editorialQuality": 3
+    "specificity": 13,
+    "plainLanguage": 14,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

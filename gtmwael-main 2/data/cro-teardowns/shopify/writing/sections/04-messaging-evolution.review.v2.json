@@ -1,40 +1,62 @@
 {
-  "score": 78,
+  "score": 73,
   "pass": false,
   "issues": [
-    "H1 'Be the nextAI all-star' appears in evidence as verbatim quote but is not formatted in **bold quotes** in the draft",
-    "Causal claim 'the new headline may confuse more visitors than it converts' lacks supporting evidence or condition structure",
-    "Paragraph 3 (final H3 block) exceeds 60 words (~85 words)",
-    "Generic phrasing 'Open your homepage in an incognito window' could appear in any teardown",
-    "The section relies on implied causation ('this framing works because') without evidence of traffic sources or conversion data",
-    "Word count approximately 210 words — exceeds 200-word target by ~10 words"
+    "Section heading is missing 'messaging' or 'positioning' — uses 'category-ownership language' instead (clever-only term)",
+    "First H3 'Who the old page served' — 77 words, exceeds 60-word limit",
+    "Second H3 'Who the new page serves' — 82 words, exceeds 60-word limit",
+    "Third H3 'What this means for the sales process' — 77 words, exceeds 60-word limit",
+    "The phrase 'founder-intent' in the section heading is not traceable to evidence and reads as strategist jargon",
+    "The term 'category-ownership language' is expert jargon without plain-language definition",
+    "Final H3 does not deliver a specific, runnable test anchored to Shopify's evidence — uses generic instruction ('Open your homepage in incognito')",
+    "Paragraph 1, H3-1: 'positioned Shopify as infrastructure everyone already uses' — unsupported causal interpretation not in evidence",
+    "Paragraph 2, H3-2: 'assumes the visitor already knows what Shopify does' — causal claim without condition",
+    "Paragraph 2, H3-2: 'speaks to ambition instead' — interpretation not supported by evidence",
+    "Paragraph 2, H3-2: 'framing Shopify as a tool for people who have already decided to sell online' — unsupported buyer-stage claim",
+    "Paragraph 3, H3-3: 'That works if most visitors already know the category' — causal statement without condition attached",
+    "Paragraph 3, H3-3: 'It does not work if your traffic arrives cold' — causal outcome claim without data",
+    "The phrase 'visitors who arrive without prior knowledge of your product' is a parenthetical definition for 'cold' — this should be inline, not parenthetical",
+    "The closing question 'Does yours?' is generic and could appear in any teardown"
   ],
   "requiredFixes": [
-    "Format the H1 quote 'Be the nextAI all-star' in **bold quotes** per evidence formatting rules",
-    "Rewrite the causal claim 'may confuse more visitors than it converts' to conditional language: 'If traffic includes cold paid ads, the new headline risks confusion — the visitor must already know what an ecommerce platform does'",
-    "Split the final H3 paragraph into two parts: (1) the traffic-source observation in 2 sentences, (2) the founder test as a standalone sentence",
-    "Replace 'Open your homepage in an incognito window' with a Shopify-specific test: 'Open shopify.com in incognito. Count how many seconds it takes to understand what Shopify sells if you have never heard of it'",
-    "Trim 10–15 words to reach 200-word target — consider condensing the meta description explanation in H3.2"
+    "Change section heading to 'Shopify homepage messaging shift: who the page now targets' — drop 'category-ownership language' or define it inline",
+    "H3-1: Break 77-word paragraph into two. Move the meta description sentence into its own paragraph",
+    "H3-2: Break 82-word paragraph into two. Separate the meta description analysis from the headline analysis",
+    "H3-3: Break 77-word paragraph into two. First paragraph: the observation. Second paragraph: the test",
+    "H3-3: Replace generic 'Open your homepage in incognito' with Shopify-specific test: 'Visit shopify.com in incognito. Count how many words before you see 'ecommerce', 'online store', or 'sell online'. The 2026 page hits 23 words. Does yours explain the category faster?'",
+    "Remove unsupported causal claim 'positioned Shopify as infrastructure everyone already uses' — replace with 'used language that named the product category'",
+    "Remove 'assumes the visitor already knows' — replace with 'does not name the product category in the headline'",
+    "Remove 'speaks to ambition instead' — not traceable to evidence",
+    "Remove 'framing Shopify as a tool for people who have already decided to sell online' — replace with 'mentions AI and speed, not ecommerce or selling'",
+    "Attach condition to 'That works if' — rewrite as 'This approach works only if visitors arrive from brand search or content that already explained the category'",
+    "Move parenthetical definition of 'cold' inline: 'traffic that arrives without prior knowledge of your product'",
+    "Remove closing 'Does yours?' — replace with the specific Shopify test above"
   ],
   "riskFlags": [
-    "Causal claim without evidence: 'the new headline may confuse more visitors than it converts' — no conversion data provided",
-    "Implied strategy attribution: 'expects visitors who are comparing options' — evidence note explicitly states 'No confirmed strategy is implied'",
-    "Traffic-source assumption: 'If Shopify's traffic is coming primarily from branded search' — no traffic data in evidence"
+    "CAUSAL CLAIM: 'positioned Shopify as infrastructure everyone already uses' — no evidence supports this interpretation",
+    "CAUSAL CLAIM: 'assumes the visitor already knows what Shopify does' — interpretation, not fact",
+    "CAUSAL CLAIM: 'speaks to ambition instead' — not supported by evidence",
+    "CAUSAL CLAIM: 'framing Shopify as a tool for people who have already decided to sell online' — buyer-stage inference without data",
+    "OUTCOME CLAIM: 'That works if most visitors already know the category' — no conversion data provided",
+    "OUTCOME CLAIM: 'It does not work if your traffic arrives cold' — causal statement without supporting evidence",
+    "GENERIC INSTRUCTION: Final test ('Open your homepage in incognito') could appear in any teardown — not anchored to Shopify's specific evidence"
   ],
   "seoNotes": [
-    "Section heading contains company name 'Shopify' and searchable term 'messaging' — good for search visibility",
-    "H3 subheadings use plain language ('Who the old page served') but lack searchable modifiers like 'homepage messaging' or 'positioning'",
-    "The phrase 'what this means for the sales process' could be strengthened with 'homepage conversion' or 'visitor intent' for search indexing"
+    "POSITIVE: Section heading includes 'Shopify homepage messaging' — two searchable terms",
+    "NEGATIVE: Section heading includes 'category-ownership language' — clever-only term with no search volume",
+    "POSITIVE: All website quotes are in bold quotes as required",
+    "POSITIVE: H3 headings use plain language ('Who the old page served', 'Who the new page served')",
+    "NEGATIVE: No H3 heading contains 'Shopify' or 'homepage' — missed opportunity for internal anchor search relevance"
   ],
-  "rewriteInstruction": "Tighten the final H3 block to meet the 60-word paragraph cap by splitting it into two parts: first, a 2-sentence observation about traffic-source fit using conditional language ('If traffic includes cold ads, the new headline risks confusion'); second, a standalone Shopify-specific test ('Open shopify.com in incognito and count how many seconds it takes to understand what Shopify sells'). Format 'Be the nextAI all-star' in **bold quotes**. Replace the generic incognito-window instruction with a Shopify-anchored version. Remove any implied causation about confusion and conversion — reframe as conditional risk. Trim 10 words to reach 200-word target by condensing the meta description explanation in H3.2.",
+  "rewriteInstruction": "Rewrite to fix length violations, remove unsupported causal claims, and anchor the final test to Shopify-specific evidence. Break each H3 body into two short paragraphs (under 60 words each). Replace 'category-ownership language' in the heading with 'messaging shift' only, or define it inline. Remove all buyer-stage inferences ('assumes the visitor already knows', 'people who have already decided to sell online'). Replace with observable facts: 'the headline does not name ecommerce or online stores', 'the meta description leads with AI and speed, not product category'. In H3-3, replace the generic incognito test with this Shopify-specific instruction: 'Visit shopify.com in incognito. Count how many words before you see 'ecommerce', 'online store', or 'sell online'. The 2026 page hits 23 words. Time your own homepage.' Deliver each H3 takeaway in the first sentence, not buried mid-paragraph. Remove the closing generic question 'Does yours?' — the specific test replaces it.",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
-    "specificity": 11,
-    "plainLanguage": 19,
-    "scannability": 8,
-    "searchableHeadings": 8,
-    "rhythmAndOpening": 9,
-    "founderTakeaway": 5
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 12,
+    "scannability": 6,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

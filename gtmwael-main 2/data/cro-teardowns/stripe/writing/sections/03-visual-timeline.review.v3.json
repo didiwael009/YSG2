@@ -1,0 +1,42 @@
+{
+  "score": 73,
+  "pass": false,
+  "issues": [
+    "Unsupported causal claim: 'cold traffic may leave' — no bounce rate or exit data provided in evidence",
+    "Unsupported causal claim: 'This matters most when visitors arrive through non-branded search' — no channel-specific conversion data in evidence",
+    "Generic paragraph: 'If your headline assumes brand awareness, cold traffic may leave before understanding what you offer' could appear in any teardown",
+    "Term 'category leadership positioning' used without plain-language definition in the same sentence",
+    "Expert jargon: 'category signals' appears without explanation",
+    "'What it costs' H3 block buries the practical takeaway — it does not appear in the first two sentences",
+    "Final test is specific but contains unsupported conditional ('This matters most when...') that inflates risk",
+    "Section heading is searchable but the company name is not in the H2 — it appears only as 'Stripe homepage positioning' which meets minimum threshold"
+  ],
+  "requiredFixes": [
+    "Remove or reframe the causal claim 'cold traffic may leave before understanding what you offer' — evidence shows only the headline text change, not visitor behavior",
+    "Remove or condition the statement 'This matters most when visitors arrive through non-branded search' — no channel data in evidence",
+    "Define 'category leadership positioning' in plain language in the same sentence where it first appears (e.g. 'This is category leadership positioning — when a brand skips explaining what it does because most visitors already know — and speaks directly to outcomes')",
+    "Move the practical test to the first two sentences of the 'What it costs' H3 block",
+    "Replace 'category signals' with plain language (e.g. 'signs that help a new visitor understand what product category you are in')"
+  ],
+  "riskFlags": [
+    "'cold traffic may leave' — no exit or bounce data in evidence; this is an outcome claim without support",
+    "'This matters most when visitors arrive through non-branded search, cold ads, or referrals' — no channel-specific data in evidence; presents a condition as fact",
+    "'your headline may be optimized for brand-aware visitors only' — inference not traceable to evidence; Stripe may serve different pages by segment"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Stripe', 'homepage', and 'positioning' — three searchable terms, strong for discovery",
+    "H3 subheadings are generic ('What changed', 'Why it matters', 'What it costs') — missed opportunity to include searchable phrases like 'headline shift', 'payment infrastructure', or 'category positioning'",
+    "First sentence contains the exact quoted headline from 2022 in bold — good for featured snippet potential"
+  ],
+  "rewriteInstruction": "Three fixes required. First: remove both causal claims about visitor behavior ('cold traffic may leave', 'This matters most when') — the evidence shows only text changes, not conversion or channel outcomes. Reframe as conditional observations: 'If a visitor does not recognize your brand, a headline that skips category explanation can create confusion.' Second: define 'category leadership positioning' in plain language in the same breath it appears — do not assume the reader knows what it means. Third: move the incognito test to the opening of the 'What it costs' H3 block so the founder takeaway lands in the first two sentences, not buried at the end. The section is specific and the evidence anchor is strong; the issue is unsupported cause-effect logic and jargon without translation.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 13,
+    "plainLanguage": 12,
+    "scannability": 12,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

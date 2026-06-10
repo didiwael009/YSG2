@@ -1,13 +1,13 @@
-## Crisp's homepage CTA path: from free trial to AI agent, 2022–2026
+## Crisp's CTA shift: from four generic buttons to ten feature-specific CTAs
 
 ### What changed
 
-Crisp now prioritises AI agent CTAs over free-trial buttons. The company removed **"Get Started"** and **"Try Crisp for free"**, replacing them with **"Get your AI Agent"** and **"Start Free Trial"**. A new mid-page CTA appeared: **"HugoYour best AI support agent teammate."** The company added **"Request a demo"**, then removed it, then added **"Book a demo"** back.
+The homepage went from four CTAs to ten. Crisp removed **"Get Started"**, **"Try Crisp for free"**, and **"Request a demo"** — all category-level labels that worked without product knowledge. The new CTAs name specific layers: **"Get your AI Agent"**, **"See all messaging channels"**, **"Download Crisp for macOS"**.
 
 ### Who this filters out
 
-The homepage removed the H2 **"Meet the business messaging platform that gathers customer support, sales, and marketing"** — the only line that explained what category Crisp belongs to. The new CTA path assumes category knowledge because the explainer headline was removed. Visitors who arrive without knowing what Crisp does now see **"Get your AI Agent"** before any statement of what the platform is.
+The new structure assumes familiarity. A visitor comparing messaging platforms — not yet decided on AI agents versus live chat — now encounters **"Get your AI Agent"** and **"Learn more on Crisp Knowledge Base"** with no orientation layer. If your traffic arrives from generic searches like "customer support software," ten feature-specific CTAs with no hierarchy may force a product-layer choice before the visitor understands the category.
 
 ### Audit your own page
 
-Open Crisp's Jun 2026 homepage. Note that **"Get your AI Agent"** appears before any H2 explaining what Crisp does. If your homepage CTAs assume category knowledge, count how many above-the-fold CTAs require zero explanation. That count signals whether your page still serves first-time visitors or only buyers already comparing vendors.
+Open Crisp's 2026 homepage. List every CTA above the fold: **"Get your AI Agent"**, **"Start Free Trial"**, **"Book a demo"**. Count how many require prior knowledge of what "AI Agent" unlocks versus "messaging channels." Time: 90 seconds.

@@ -1,29 +1,27 @@
 {
-  "createdAt": "2026-06-09T19:01:39.579Z",
+  "createdAt": "2026-06-10T19:21:21.075Z",
   "slug": "crisp",
   "source": {
     "finalJudgePass": false,
     "seoPass": true,
-    "finalJudgeScore": 72,
-    "seoScore": 84
+    "finalJudgeScore": 82,
+    "seoScore": 82
   },
   "sectionsToRerun": [
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 02-quick-answer — rewrite entire section removing page title claims",
+        "Judge rerun recommendation: 02-quick-answer — remove unsupported page title claim",
         "The page title shifted from '#1 Business Messaging Platform For Startups & SMB's' to 'The AI Customer Support Platform for Every Business.'",
-        "The old page title claimed Crisp was the '#1 Business Messaging Platform For Startups & SMB's'",
-        "The page title drops the startup qualifier and claims 'The AI Customer Support Platform for Every Business.'",
-        "CONVERSION PREDICTION: 'the new headline may filter them out before they understand the product' — no visitor behavior data or conversion metrics provided",
-        "CAUSAL CLAIM WITHOUT DATA: 'If category terms outnumber explanatory terms, test a headline that leads with the problem you solve' — presents testing advice as if outcome is certain",
-        "CAUSAL CLAIM: 'copying this pattern could reduce visitor clarity' — presented as fact rather than conditional observation",
-        "Remove all three page title claims from 'Quick answer' section — evidence provides only headline and meta description changes, NOT page title changes",
-        "Reframe '## Quick answer' to remove page title claims entirely — stick to headline and meta description only",
-        "Add conditional framing to all conversion predictions: change 'may filter them out' to 'may filter out visitors who arrive unfamiliar with the category' with explicit 'if' condition",
-        "Replace 'which may signal' with 'which could suggest, if matched with sales team expansion data' in messaging section",
-        "In the 'Quick answer' section, rewrite the opening to lead with the primary keyword ('Crisp homepage CRO teardown') more explicitly — currently it leads with the change itself rather than framing this",
-        "Expand the 'Who should NOT copy this' section with a concrete example (e.g., a hypothetical SaaS with <40% branded search traffic) to increase clarity and actionability"
+        "Identified as weak section by final judge",
+        "If category terms outnumber explanatory terms, test a headline that leads with the problem you solve.",
+        "copying this pattern could reduce visitor clarity",
+        "Remove the page title claim in the Quick Answer section — the evidence shows titleChanged: true but provides no pageTitles array content. Replace with a factual statement about what is documented.",
+        "Rewrite the Quick Answer section to eliminate the unsupported page title claim.",
+        "Break the 82-word paragraph in 'Crisp's messaging shift' (starting 'The 2022 homepage opened...') into two paragraphs.",
+        "Make the ## heading 'Crisp homepage positioning: When narrowing your headline works and when it backfires' more searchable by moving company name earlier or adding a clearer topic phrase.",
+        "Add an explicit statement that this analysis is descriptive and does not claim causation between homepage changes and business outcomes.",
+        "The H2 'Crisp Chat Homepage Breakdown: Four Years of Positioning Shifts' duplicates the H1 concept; consider renaming to clarify structure (e.g., 'The Data: What Changed Across 4 Years')."
       ],
       "priority": "high",
       "source": "both"
@@ -31,21 +29,20 @@
     {
       "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "Judge rerun recommendation: 05-cta-navigation-evolution — clarify navigation count language and add conditional framing to conversion predictions",
-        "Crisp added 8 navigation items",
-        "## Crisp's messaging shifted from trial-urgency to platform comparison",
-        "## Crisp's CTA shift: from generic trial to AI-specific entry points",
-        "CAUSAL CLAIM: 'narrowing the hero without expanding the nav removes context without replacing it' — no A/B test data or user research provided",
-        "Replace '8 navigation items' with '8 new nav options' throughout — evidence shows navAdded count of 8, not total navigation count",
-        "In CTA section, specify 'five new feature-routing CTAs' instead of 'Crisp added five' — clarify what the count refers to"
+        "Judge rerun recommendation: 05-cta-navigation-evolution — add H3 subheadings and founder takeaway to hero section block",
+        "Crisp added 8 navigation items and 6 new section headings without removing any nav links",
+        "Identified as weak section by final judge",
+        "The demo gate may filter these visitors out.",
+        "Test moving the trial CTA into the hero section and track which path your visitors choose over the next two weeks.",
+        "Fix the navigation count claim in the final section — evidence shows navAdded: 8 but navRemoved: 0, which means net gain of 8 items, not that 8 were added 'without removing any'. Rephrase to match evi"
       ],
       "priority": "high",
       "source": "final-judge"
     },
     {
-      "sectionId": "01-intro",
+      "sectionId": "03-visual-timeline",
       "reasons": [
-        "Add a one-sentence transition or thesis statement after the intro that explicitly signals what the reader will learn by the end (currently the intro is strong but the 'so what' for the reader is impli"
+        "Clarify whether the 'Jul 2022' and 'Jun 2026' snapshots are actual documented versions or reconstructed from archived pages—add a note on data sourcing."
       ],
       "priority": "low",
       "source": "seo-audit"
@@ -53,24 +50,20 @@
   ],
   "skippedIssues": [
     {
-      "issue": "Crisp added five",
+      "issue": "02-quick-answer",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "## Quick answer",
+      "issue": "this approach may work",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "STRATEGY ASSERTION: 'which may signal a move toward a sales-assisted process' — no evidence about sales process changes provided",
+      "issue": "Add H3 subheadings to the '02-quick-answer' section — currently it has none.",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "CONVERSION PREDICTION: 'This adds steps between intent and signup for visitors who already know they want Crisp' — no funnel data or drop-off metrics provided",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Section 03-visual-timeline (low priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
+      "issue": "Verify meta description character count is accurate (current count appears to be ~155 chars, at the limit). Trim if necessary to ensure no truncation in SERPs.",
+      "reason": "metadata field in seo.json, not section content"
     }
   ]
 }

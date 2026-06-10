@@ -1,33 +1,40 @@
 {
-  "score": 89,
-  "pass": true,
+  "score": 72,
+  "pass": false,
   "issues": [
-    "Section is 199 words — within target range but close to upper limit",
-    "The phrase 'can be read as' appears once in paragraph 2, introducing hedging that could be more direct",
-    "Paragraph 2 is approximately 95 words — exceeds 90-word guideline but introduces two distinct ideas (meta description reinforcement + vocabulary analysis)",
-    "Minor bold quote inconsistency: 'helps' and 'the only' in paragraph 2 are quoted but not from the evidence verbatim — they are extracted fragments rather than full website quotes"
+    "Section exceeds 200-word budget significantly (approximately 215 words)",
+    "Final H3 block 'What this means for the sales process' duplicates the third sentence from the second H3 block word-for-word, creating redundancy",
+    "Paragraph 1 in third H3 block (57 words) is acceptable but immediately followed by redundant content",
+    "Claim 'This may work if inbound traffic arrives already comparing helpdesk platforms' introduces conditional outcome without data support",
+    "The heading uses 'messaging' and 'target audience' but lacks 'Intercom' and 'homepage', reducing searchability",
+    "Second H3 opening could be stronger — leads with headline quote rather than the most interesting finding (zero to three category terms)",
+    "The founder takeaway test is generic ('ask three non-customers') rather than specific to Intercom's evidence (e.g. 'test whether visitors who land from organic search understand what a natively integrated AI Agent is')"
   ],
   "requiredFixes": [
-    "Replace 'can be read as a change in who the page expects to convert' with a direct claim: 'This is a shift in who the page expects to convert' or 'Intercom now targets...' to eliminate hedging",
-    "Consider breaking paragraph 2 at 'Vocabulary like...' to create two distinct analytical beats and respect the 90-word guideline"
+    "Remove the duplicate sentence in the third H3 block: 'The new headline uses three category terms that require pre-existing knowledge; the old headline used zero.' appears in both H3 blocks",
+    "Cut 15+ words to meet the 200-word budget — consider combining the first two sentences of H3 block 1 or removing 'vocabulary that explains'",
+    "Revise the heading to include 'Intercom' + 'homepage': e.g. 'How Intercom homepage messaging shifted from explanation to comparison'",
+    "Replace the generic founder test with one anchored to Intercom evidence: 'Ask three visitors who found you via organic search to explain what **natively integrated AI Agent** means without Googling it'",
+    "Remove or reframe 'This may work if inbound traffic arrives already comparing helpdesk platforms' — this is an outcome claim without traffic data"
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "'This may work if inbound traffic arrives already comparing helpdesk platforms — but creates friction if visitors land without knowing what Intercom does' — presents two conditional outcomes without traffic composition data or conversion metrics",
+    "'What this means for the sales process' heading implies causation (messaging shift → sales process change) without evidence linking the two"
+  ],
   "seoNotes": [
-    "Draft correctly identifies meta description update as a positioning shift, grounded in evidence",
-    "The observation about 'designed for the AI Agent era' vocabulary is tied to specific quoted language — good SEO awareness"
+    "Heading lacks 'Intercom' and 'homepage', reducing discoverability for searches like 'Intercom homepage messaging'",
+    "Heading does include 'messaging' and 'target audience' which are searchable terms, but could be stronger with brand name",
+    "Draft successfully quotes all verbatim elements in bold quotes (**'Support customers at exactly the right moment'**, etc.) which preserves searchable phrases"
   ],
-  "rewriteInstruction": "Replace the hedging phrase 'can be read as a change in who the page expects to convert' with a direct claim about buyer shift (e.g., 'This targets a different buyer'). Consider splitting paragraph 2 after the meta description sentence to create two tighter paragraphs under 90 words each. Ensure all website quotes are bolded exactly as they appear in the evidence. The tradeoff and takeaway are strong — preserve them.",
+  "rewriteInstruction": "Remove the duplicate sentence that appears in both the second and third H3 blocks. Revise the heading to include 'Intercom' and 'homepage' for searchability (e.g. 'How Intercom homepage messaging shifted from explanation to comparison'). Cut 15 words to hit the 200-word budget — consider tightening the first H3 block by combining sentences 1 and 2. Replace the generic founder test with one anchored to Intercom's specific evidence: ask visitors to define 'natively integrated AI Agent' without searching. Remove or reframe the conditional outcome claim about traffic composition ('This may work if...') unless you can tie it to traffic data from the evidence. The structure and quoting are solid; the issues are redundancy, word count, and unsupported conditionals.",
   "dimensionScores": {
-    "evidenceAccuracy": 24,
-    "clarity": 8,
-    "specificity": 15,
-    "seoUsefulness": 0,
-    "croUsefulness": 0,
-    "riskControl": 9,
-    "analysisDepth": 9,
-    "editorialQuality": 5,
-    "founderSharpness": 19,
-    "distinctiveness": 5
+    "evidenceAccuracy": 18,
+    "specificity": 12,
+    "plainLanguage": 18,
+    "scannability": 12,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

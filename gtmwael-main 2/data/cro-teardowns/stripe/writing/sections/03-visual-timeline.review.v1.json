@@ -1,30 +1,43 @@
 {
-  "score": 87,
-  "pass": true,
+  "score": 73,
+  "pass": false,
   "issues": [
-    "The phrase \"can be read as\" appears twice in close proximity (paragraph 2), approaching the hard cap threshold.",
-    "One CTA observation ('get financing' removed) lacks conversion implication — the draft notes the removal but does not explore what this signals about funnel strategy or buyer journey.",
-    "Minor specificity gap: the phrase \"executive evaluating financial infrastructure platforms\" (paragraph 1) is not directly anchored to a specific evidence item — it is a reasonable inference but not labeled as such."
+    "The phrase 'category leadership positioning' appears without a plain-language definition in the same sentence — triggers -4 penalty under plainLanguage.",
+    "The causal claim 'removing the product explanation may send them elsewhere' lacks an attached condition or supporting evidence — triggers -3 penalty under evidenceAccuracy.",
+    "Paragraph 2 in 'Why it matters' is 61 words — exceeds 60-word limit for analytical H3 blocks, triggers -3 penalty under scannability.",
+    "The phrase 'This is category leadership positioning' could appear in any teardown discussing market leaders — not specific to Stripe's evidence, triggers -5 penalty under specificity.",
+    "The final test ('open an incognito window...') is generic and could apply to any company — not anchored to Stripe's specific evidence or messaging shift, triggers partial penalty under founderTakeaway.",
+    "The term 'category leadership positioning' is an expert term used without immediate plain-language translation.",
+    "Word count is approximately 210 words — exceeds 200-word maximum."
   ],
   "requiredFixes": [
-    "Expand the CTA removal observation (\"Contact Sales\", \"Become a Partner\", \"get financing\") with a conversion implication: what does removing these paths mean for a visitor who would have clicked them? Does it reflect a shift to inbound-only sales, or a focus on product-led growth?",
-    "Label the executive buyer inference in paragraph 1 explicitly: \"A self-serve buyer scanning for payment infrastructure can likely identify the offer within seconds, but an executive evaluating financial infrastructure platforms — a buyer type not explicitly named in the evidence — may need to scroll further to understand strategic positioning.\""
+    "Define 'category leadership positioning' in plain language immediately after first use: e.g. 'This is category leadership positioning — when a company is so well-known it can skip explaining what it does and focus on outcomes instead.'",
+    "Rewrite the causal claim in 'What it costs' to add a condition: 'If [condition X is true], removing the product explanation may send them elsewhere.'",
+    "Break the 61-word paragraph in 'Why it matters' into two shorter paragraphs or trim to under 60 words.",
+    "Anchor the final test to Stripe's specific evidence: e.g. 'Test whether your headline works like Stripe's new one: does it assume category knowledge and speak to outcomes, or does it still explain what you sell?'",
+    "Remove or replace the sentence 'This is category leadership positioning: when a company...' — it reads like textbook commentary, not analysis anchored to Stripe's specific shift.",
+    "Trim total word count to 200 or below."
   ],
-  "riskFlags": [],
+  "riskFlags": [
+    "The claim 'removing the product explanation may send them elsewhere before they understand what you offer' is a causal outcome statement without supporting evidence or conversion data.",
+    "The phrase 'when a company no longer needs to explain what it does because buyers arrive already knowing' makes an assumption about buyer knowledge without evidence from the dataset.",
+    "The statement 'The page now filters for visitors evaluating how far the platform can take them' is an outcome claim without supporting evidence of traffic segmentation or visitor behavior."
+  ],
   "seoNotes": [
-    "Positive: Company proper noun (Stripe) appears in the first 15 words.",
-    "Positive: Snapshot dates (Oct 2022, Apr 2023, Jun 2026) appear throughout, anchoring the narrative to a timeline a searcher can reference.",
-    "Minor: The section does not include a product category keyword (e.g., \"payments platform\", \"financial infrastructure\") in the opening sentence, which could strengthen topical relevance for searches like 'Stripe homepage CRO analysis'."
+    "The ## heading contains 'Stripe', 'homepage', and 'positioning' — all searchable terms. Strong SEO heading.",
+    "The H3 headings ('What changed', 'Why it matters', 'What it costs') are clear and scannable, though they lack keyword density.",
+    "The section references specific verbatim quotes in bold — good for snippet potential.",
+    "Word count exceeds target by ~10 words — slight negative for page speed and scannability."
   ],
-  "rewriteInstruction": "Address the two required fixes: (1) Add a conversion implication to the CTA removal observation — explain what removing 'Contact Sales', 'Become a Partner', and 'get financing' may mean for a visitor's next action or the funnel's filtering strategy. (2) Label the executive buyer inference in paragraph 1 as an interpretation, not a fact anchored in the evidence. Optionally, reduce one instance of 'can be read as' in paragraph 2 to tighten prose. These changes will push the section above 90.",
+  "rewriteInstruction": "Trim to 200 words or below. Define 'category leadership positioning' in plain language immediately after first use — e.g. 'when a company is so well-known it can skip the product explanation'. Break the 61-word paragraph in 'Why it matters' into two blocks. Replace the generic incognito-window test with a Stripe-specific test: 'Does your headline assume category knowledge like Stripe's new one does, or does it still explain what you sell?' Remove or rewrite the sentence 'This is category leadership positioning...' to avoid textbook tone. Add a condition to the causal claim in 'What it costs': 'If your traffic includes cold visitors unfamiliar with your category, removing the product explanation may send them elsewhere.' Anchor every analytical statement to Stripe's specific evidence — no commentary that could apply to any SaaS company.",
   "dimensionScores": {
-    "evidenceAccuracy": 23,
-    "clarity": 14,
-    "specificity": 14,
-    "seoUsefulness": 9,
-    "croUsefulness": 9,
-    "riskControl": 10,
-    "analysisDepth": 13
+    "evidenceAccuracy": 19,
+    "specificity": 10,
+    "plainLanguage": 13,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

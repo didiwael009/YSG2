@@ -1,33 +1,46 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 68,
+  "pass": false,
   "issues": [
-    "H2 section heading is clever-only ('CTA shift') without 'homepage', 'conversion', or explicit CTA topic term visible to search",
-    "H3 block 2 buries the practical takeaway — opens with a conditional scenario rather than stating the friction cost upfront",
-    "Final test is slightly generic — 'compare your trial start rate' could appear in any CTA teardown, though the Crisp anchor ('Crisp added five') provides some specificity"
+    "Section uses 'discovery-stage' — a forbidden jargon term used without plain-language definition",
+    "The claim 'multiple feature-specific CTAs create a selection problem' is causal without supporting evidence from the data",
+    "Paragraph 2 in H3-1 exceeds 60 words (approximately 65 words)",
+    "Paragraph 1 in H3-2 exceeds 60 words (approximately 67 words)",
+    "Paragraph 2 in H3-2 exceeds 60 words (approximately 63 words)",
+    "H3-2 opens with a causal claim ('may exclude') without an attached condition — not grounded in Crisp-specific evidence",
+    "The phrase 'selection problem' is an abstract strategist term without definition",
+    "H3-2 could appear in any teardown about CTA proliferation — not anchored to Crisp specifics beyond quoted buttons",
+    "The final audit test in H3-3 is vague: 'Ask whether a visitor unfamiliar...' is not a runnable test under 5 minutes",
+    "Section word count approximately 190 words — exceeds the 180-word cap"
   ],
   "requiredFixes": [
-    "Revise H2 to include 'homepage' or 'conversion' — e.g. 'Crisp homepage CTA shift: from generic trial to AI-specific entry points' or 'How Crisp's CTA path changed from trial-first to education-first'",
-    "Rewrite H3 block 2 opening to state the friction cost in the first sentence, then illustrate with the conditional scenario — e.g. 'The new path adds steps for visitors who already want to sign up. If a visitor arrives ready to start a trial...'"
+    "Remove or define 'discovery-stage' in plain language (e.g. 'visitors comparing platforms, not features')",
+    "Cut paragraph 2 in H3-1 to under 60 words — split or tighten",
+    "Cut both paragraphs in H3-2 to under 60 words each",
+    "Replace the causal claim in H3-2 ('create a selection problem') with a conditional observation grounded in the evidence (e.g. 'If your traffic arrives from generic searches, ten feature-specific CTAs offer no hierarchy')",
+    "Rewrite H3-2 to anchor to Crisp-specific evidence: quote the removed generic CTAs and contrast with the added feature-specific ones",
+    "Replace the vague audit instruction in H3-3 with a specific, runnable test (e.g. 'Open Crisp's homepage. Count primary CTAs above the fold. List them. Do any explain what they unlock? Time: 90 seconds.')",
+    "Trim section to 180 words or under"
   ],
   "riskFlags": [
-    "H3 block 2: 'This adds steps between intent and signup' is a causal statement presented as fact, not conditioned on visitor type or intent source — needs 'for visitors who already know they want Crisp' moved to the same sentence or qualified with 'may add'",
-    "H3 block 3: 'Check whether visitors who click those CTAs ever reach signup — or whether they read and leave' implies a binary outcome without acknowledging partial conversions or delayed signup"
+    "'multiple feature-specific CTAs create a selection problem' — causal claim with no evidence",
+    "'may exclude' in H3-2 heading — outcome claim without data or condition",
+    "'assumes the visitor already knows which product component they need' — unsupported behavioral claim"
   ],
   "seoNotes": [
-    "Positive: H2 includes 'Crisp' and 'CTA', both searchable",
-    "Positive: H3 headings include 'AI', 'CTA', 'feature-first', 'signup rate' — all match product-tour and CTA audit queries",
-    "Negative: H2 could be stronger for search if it included 'homepage' or 'conversion' explicitly"
+    "The ## heading contains 'Crisp' and 'CTA' — searchable terms present",
+    "H3 headings lack searchable keywords: 'generic CTAs' and 'feature-named buttons' are not terms users search",
+    "The section does not reference 'homepage', 'conversion', or 'messaging' in headings — missed SEO opportunity"
   ],
-  "rewriteInstruction": "Revise the H2 section heading to include 'homepage' or 'conversion' for search visibility. In H3 block 2, move the practical takeaway to the first sentence — state the friction cost, then illustrate with the conditional scenario. Ensure the causal statement 'This adds steps' is qualified (e.g. 'for visitors who already know they want Crisp' in the same sentence). The final test is borderline generic but acceptable given the 'Crisp added five' anchor — consider tightening to 'If you added education CTAs like Crisp did, count how many clicks reach signup vs. bounce after reading' for more specificity.",
+  "rewriteInstruction": "Anchor H3-2 to the specific CTAs Crisp removed and added. Replace the causal claim ('create a selection problem') with a conditional observation tied to the evidence: 'If your traffic comes from category searches, ten feature-specific CTAs with no hierarchy may force a choice before orientation.' Cut all paragraphs to under 60 words. Replace 'discovery-stage' with 'visitors comparing platforms'. End H3-3 with a specific, timed test: 'Open Crisp's 2026 homepage. List every CTA above the fold. Count how many require prior product knowledge. Time: 90 seconds.' Trim the section to 180 words.",
   "dimensionScores": {
-    "evidenceAccuracy": 25,
-    "specificity": 13,
-    "plainLanguage": 20,
-    "scannability": 14,
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 12,
+    "scannability": 3,
     "searchableHeadings": 7,
-    "rhythmAndOpening": 7,
-    "founderTakeaway": 2
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
   },
   "effectivePassThreshold": 85
 }

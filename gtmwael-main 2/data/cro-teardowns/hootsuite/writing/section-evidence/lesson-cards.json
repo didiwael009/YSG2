@@ -1,22 +1,26 @@
 [
   {
-    "title": "\"Let’s do this\" converts browsers; \"Drive real business impact\" filters for buyers",
-    "body": "\"Grow your reach and get more business. Let’s do this.\" is casual and action-forward — it works for someone who wants to try a tool today. \"Drive real business impact with the world’s deepest social intelligence platform\" is formal and requires the visitor to already believe they need a platform, not just a scheduler. The tone shift selects for a completely different buyer stage.",
-    "tag": "Messaging"
+    "number": "01",
+    "title": "Hootsuite replaced \"Grow your reach and get more business\" with platform capability framing",
+    "category": "Positioning",
+    "body": "The H1 moved from **\"Grow your reach and get more business with social media. Let's do this.\"** to **\"Drive real business impact with the world's deepest social intelligence and management platform\"**. The shift from accessible outcome language to formal capability framing suggests a move toward upmarket positioning — readers who already know they need enterprise social infrastructure, not casual users exploring tools."
   },
   {
-    "title": "15 new section headings in 3 years — the most aggressive content expansion in this teardown set",
-    "body": "Hootsuite added 15 section headings and removed 4 — a net addition of 11. That volume of content growth is consistent with a page trying to cover more use cases and buyer personas. The risk: each new section adds scroll distance between a visitor’s intent and a conversion point. More content only helps if visitors read deeper, not just arrive.",
-    "tag": "CRO"
+    "number": "02",
+    "title": "The meta description no longer mentions a free trial or uses exclamation marks",
+    "category": "Funnel",
+    "body": "The original description ended with **\"Give it a try for free!\"** — urgency language designed for trial conversion. The current version reads: **\"Hootsuite is a social media management tool that brings scheduling, content creation, analytics, and social listening to one place.\"** The removal of trial language may signal a shift from optimising for self-serve signups to attracting demo-qualified enterprise visitors."
   },
   {
-    "title": "Removing exclamation points from the meta description signals a different audience",
-    "body": "\"Give it a try for free!\" disappeared. The replacement is a neutral product category sentence with no urgency markers. Exclamatory language in search snippets signals accessibility and low friction — it attracts trial seekers. Removing it raises the perceived formality of the product before the page even loads, which may reduce clicks from SMB buyers but increase relevance for enterprise evaluators.",
-    "tag": "Navigation"
+    "number": "03",
+    "title": "15 new section headings include \"See risk, prove impact, and spot opportunity\"",
+    "category": "Messaging",
+    "body": "Earlier headings like **\"Social media trends 2023 is finally here!\"** and **\"Manage social media in one place\"** are gone. New headings emphasise enterprise concerns: **\"See risk, prove impact, and spot opportunity\"**, **\"Beat your competitors to the next big thing\"**, **\"Turn passionate employee advocates into engagement and reach\"**. The language now speaks to stakeholders who need to justify platform spend, not individual practitioners exploring features."
   },
   {
-    "title": "Workflow verbs vs category nouns: two different navigation models for two different buyers",
-    "body": "\"Publish and schedule\", \"Engage customers\", \"Monitor activity\" are task labels — they tell a user what action to take. \"Social listening\", \"Reputation management\", \"Brand monitoring\" are category labels — they tell a buyer what capability set to evaluate. The switch signals that Hootsuite expects visitors to arrive comparing platforms, not looking for a task shortcut.",
-    "tag": "Strategy"
+    "number": "04",
+    "title": "Navigation added \"Reputation management\" and removed \"See all industries\"",
+    "category": "Navigation",
+    "body": "The current navigation includes product categories like **\"Reputation management\"**, **\"Social listening\"**, and **\"Brand monitoring\"** — capabilities that suggest buyers who need comprehensive platforms, not single-feature tools. Meanwhile, CTAs like **\"See all customer stories\"** and **\"See all industries\"** are no longer present. The removal of broad exploratory links points to a more filtered conversion path."
   }
 ]

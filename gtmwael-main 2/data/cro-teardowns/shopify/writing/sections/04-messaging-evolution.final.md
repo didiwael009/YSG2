@@ -1,15 +1,19 @@
-## Shopify's messaging shift: who the homepage speaks to now
+## Shopify homepage messaging shift: who the page now targets
 
 ### Who the old page served
 
-The 2021 page spoke to someone deciding whether to start selling online. The headline — **"The platform commerce is built on"** — explained what Shopify is. The meta description invited you to **"start a business or grow an existing one."** A visitor could land on this page knowing nothing about ecommerce platforms and still understand what they were looking at.
+The 2021 page spoke to someone deciding whether to start selling online. The headline — **"The platform commerce is built on"** — used language that named the product category. 
+
+The meta description promised **"start a business or grow an existing one"**, addressing founders at the beginning of their research.
 
 ### Who the new page serves
 
-The 2026 page speaks to someone who already knows what Shopify is. The headline — **"Be the nextAI all-star"** — skips the category explanation entirely. The meta description now says **"Build or grow your business fast with AI"**, positioning speed and AI capability as the reason to choose Shopify rather than explaining what the platform does.
+The 2026 page does not name the product category in the headline. **"Be the next AI all-star"** mentions ambition, not ecommerce or online stores. 
+
+The meta description now leads with **"Build or grow your business fast with AI"**, mentioning AI and speed but not selling, stores, or ecommerce.
 
 ### What this means for the sales process
 
-The new page expects visitors who are comparing options, not learning what the product does. If traffic includes cold paid ads or non-branded search, the new headline risks confusion — the visitor must already know what an ecommerce platform does before the page makes sense.
+The new headline no longer explains what Shopify is. This approach works only if visitors arrive from brand search, referrals, or content that already explained the category.
 
-Open shopify.com in incognito and count how many seconds it takes to understand what Shopify sells if you have never heard of it.
+It may not work if your traffic arrives without prior knowledge of your product. Visit shopify.com in incognito. Count how many words before you see "ecommerce", "online store", or "sell online". The 2026 page hits 23 words. Time your own homepage.

@@ -1,0 +1,42 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "H3 heading 'What this means for the sales process' contains no searchable terms (homepage, Crisp, messaging, positioning, CTA, conversion)",
+    "The opening paragraph (71 words) exceeds the 60-word cap",
+    "Second H3 block (52 words) buries the practical takeaway in the middle — not in first two sentences",
+    "Final H3 block makes an unsupported causal claim: 'The page now speaks to visitors who are already familiar with the category' — evidence shows vocabulary change, not visitor behaviour",
+    "The section reads as a before/after comparison with minimal specificity to Crisp's strategic context",
+    "Plain language issue: 'category language' and 'product category' used without definition — expert shorthand",
+    "Generic sentence appears: 'The urgency cues are gone — no trial countdown, no exclamation marks' could appear in any SaaS teardown"
+  ],
+  "requiredFixes": [
+    "Rewrite the opening paragraph to 60 words or fewer — extract the meta description quote into its own sentence",
+    "Change H3 heading 'What this means for the sales process' to include at least one searchable term: 'Crisp', 'homepage', 'messaging', or 'positioning'. Example: 'What this messaging shift means for Crisp's buyer pipeline'",
+    "Move the practical takeaway in the second H3 block to the first sentence: 'The current page assumes visitors already understand what customer support platforms do. The new title...'",
+    "Remove or condition the final sentence claim about visitor familiarity — the evidence shows vocabulary change only, not visitor behaviour data. Replace with: 'The page now uses vocabulary that may require prior category knowledge'",
+    "Add plain-language definition for 'category language' on first use: 'category language (the terms used to describe what type of product this is)'",
+    "Replace generic urgency observation with Crisp-specific detail: 'The meta description removed the exclamatory **'Try now !'** and **'14 Days free trial'** — replacing trial urgency with platform permanence vocabulary like **'AI-driven revolution'** and **'hypergrowth'**'"
+  ],
+  "riskFlags": [
+    "Unsupported causal claim: 'The page now speaks to visitors who are already familiar with the category' — evidence shows copy change, not visitor profile change",
+    "Implied outcome without condition: 'you may have moved past the buyer who needs the category explained' — this is conditional advice but presented as diagnostic certainty"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Crisp' and 'messaging' — searchable",
+    "Two of three H3 headings lack searchable terms — limits keyword density for 'Crisp messaging' or 'Crisp homepage' queries",
+    "The opening repeats quoted page titles and meta descriptions in bold — good for featured snippet capture",
+    "Word count approximately 185 — within target range"
+  ],
+  "rewriteInstruction": "The section passes evidence grounding but fails on scannability and searchable H3 headings. Trim the opening paragraph to 60 words by splitting the meta description quote into a standalone sentence. Change the third H3 heading to include 'Crisp' or 'homepage' or 'messaging'. Move the practical takeaway in H3 block two to the opening sentence. Remove the unsupported claim about visitor familiarity in the final paragraph — replace with conditional language ('may require' not 'speaks to'). Define 'category language' on first use. Replace the generic urgency observation with the specific quoted phrases from the meta description that were removed. The founder test at the end is strong — keep it. These fixes will bring scannability and searchableHeadings into passing range while preserving the evidence anchor.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 11,
+    "plainLanguage": 14,
+    "scannability": 6,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

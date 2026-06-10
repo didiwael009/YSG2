@@ -1,0 +1,133 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "Intercom",
+  "companyUrl": "https://www.intercom.com",
+  "articleTitle": "Intercom Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Intercom rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 5,
+    "h2Removed": 1,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 5,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Intercom homepage",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Jun 2026",
+      "note": "4 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 1 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "5 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Support customers at exactly the right moment",
+      "after": "The only helpdesk designed for the AI Agent era",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Intercom helps over 25,000 global organizations deliver better customer support via personalized conversations and automated support.",
+      "after": "The only helpdesk with a natively integrated AI Agent. Deliver perfect customer experiences with the highest-performing platform. Start your free trial today.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Making Internet Business Personal | Intercom",
+      "after": "Intercom | The only helpdesk designed for the AI Agent era"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Intercom repositioned from a multi-product customer engagement platform serving support, marketing, and sales use cases to claiming exclusive category ownership of 'AI Agent era' helpdesks by replacing its outcome-focused H1 'Support customers at exactly the right moment' with the singular category claim 'The only helpdesk designed for the AI Agent era' and eliminating all non-helpdesk positioning language from meta descriptions and section headings.",
+    "old_positioning_frame": "A versatile customer engagement platform that personalizes conversations and automates support across support, marketing, and sales functions, emphasizing timing and personalization as differentiators.",
+    "new_positioning_frame": "The singular, exclusive helpdesk purpose-built for AI Agent deployment, emphasizing native AI integration and category redefinition rather than multi-channel engagement.",
+    "buyer_shift": "Cross-functional buyers evaluating support + marketing + sales solutions → Support/CX leaders making platform-level helpdesk decisions in organizations where AI agent strategy is a C-level priority.",
+    "funnel_shift": "Mid-funnel exploration across multiple use cases ('better customer experience across support, marketing, and sales') → Top-of-funnel category education and exclusive positioning ('only helpdesk designed for the AI Agent era') targeting buyers beginning AI transformation planning.",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Support customers at exactly the right moment",
+        "new": "The only helpdesk designed for the AI Agent era",
+        "meaning": "Signals a shift from outcome-based differentiation (right moment = better timing than competitors) to categorical exclusivity claims (only = no alternatives exist), suggesting Intercom is attempting to own a newly defined product category rather than compete within an established one."
+      },
+      {
+        "element": "Meta description",
+        "old": "Intercom helps over 25,000 global organizations deliver better customer support via personalized conversations and automated support.",
+        "new": "The only helpdesk with a natively integrated AI Agent. Deliver perfect customer experiences with the highest-performing platform. Start your free trial today.",
+        "meaning": "The removal of '25,000 global organizations' social proof and 'personalized conversations' capability messaging in favor of 'only helpdesk with natively integrated AI Agent' suggests a pivot from credibility-through-adoption to credibility-through-technical-uniqueness, consistent with attempting to define a new category where prior adoption numbers become less relevant than architectural claims."
+      },
+      {
+        "element": "Section headings",
+        "old": "A better customer experience across support, marketing, and sales",
+        "new": "A complete solution for AI and human agents | A fully-featured AI-powered helpdesk | A true partner with deep domain expertise",
+        "meaning": "The elimination of 'marketing and sales' from section headings and the introduction of 'AI and human agents' framing suggests Intercom is narrowing its surface area to helpdesk/support while redefining that category around AI-human orchestration rather than channel coverage."
+      },
+      {
+        "element": "Navigation",
+        "old": "Custom Bots | Mobile apps | Apps and integrations | E-commerce",
+        "new": "Fin | Fin AI Agent",
+        "meaning": "Removing implementation-oriented nav items (Custom Bots, Mobile apps, integrations) in favor of a single branded AI product name ('Fin') repeated twice suggests a shift from showcasing platform flexibility to driving awareness of a hero product, consistent with focusing buyer attention on a singular innovation rather than a toolkit."
+      },
+      {
+        "element": "Page title",
+        "old": "Making Internet Business Personal | Intercom",
+        "new": "Intercom | The only helpdesk designed for the AI Agent era",
+        "meaning": "Replacing a brand mission statement ('Making Internet Business Personal') with a product category claim in the page title signals that Intercom is prioritizing search visibility and category ownership over brand philosophy communication, consistent with a shift toward capturing demand from buyers searching for AI helpdesk solutions rather than relationship-building philosophy."
+      }
+    ],
+    "copy_this_if": "Your product represents a genuine architectural departure in your category (e.g., native integration vs. bolt-on, fundamentally different data model) and you have the technical credibility to sustain 'only' claims under scrutiny from analyst firms, competitive sales teams, and technical buyers conducting proof-of-concept evaluations.",
+    "do_not_copy_this_if": "Your differentiation is feature-level rather than architectural, or your target buyers are already mid-evaluation comparing solutions within an established category where 'only' claims will be immediately fact-checked against visible competitors.",
+    "safer_version_for_early_stage_saas": "Replace your outcome-focused H1 with a capability claim that names the specific technical approach your product pioneers, without claiming exclusivity—test '[Your Product]: [Technical Approach] for [Job To Be Done]' (e.g., 'Vector-native helpdesk for AI-human handoffs') and measure whether technical differentiation increases qualified demo requests from ICP segments, even without 'only' language.",
+    "risk_if_copied": "If competitors can credibly dispute your 'only' claim or if buyers perceive it as marketing hyperbole rather than technical truth, the exclusivity framing will damage trust and make your brand appear less credible than a more modest, evidence-based positioning—particularly damaging in technical buyer segments where overstatement is a disqualifying signal.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-10T19:14:47.328Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.023462999999999998
+  },
+  "seo-intent": {
+    "primary_keyword": "Intercom homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, product manager, or growth marketer who manages a multi-product platform and is considering whether to narrow positioning to a single category. They want to understand Intercom's strategic reasoning and the execution risks of radical repositioning—specifically, whether eliminating broader use-case language actually drives conversion or alienates existing customers.",
+    "recommended_h1_format": "How [Company] Narrowed Its Positioning: A Homepage Teardown of the AI Agent Era Pivot",
+    "secondary_keywords": [
+      "Intercom CRO teardown AI agent positioning",
+      "Intercom homepage evolution 2023 2026",
+      "Intercom repositioning case study",
+      "How Intercom changed its homepage messaging",
+      "Intercom category ownership strategy"
+    ],
+    "content_angle": "Focus on the STRATEGIC RISK of Intercom's bet—they eliminated 3 use cases (support, marketing, sales) from their core positioning to own a single category claim ('the only helpdesk for the AI Agent era'). Explore: Did this narrow focus improve conversion? Did it cannibalize sales motion for existing multi-use-case customers? What data might justify this high-risk repositioning? The searcher wants to know whether to replicate this aggressive narrowing or learn from potential blind spots.",
+    "what_the_searcher_wants": "To understand the business logic and execution reality behind a major positioning gamble—not just to catalog what changed, but to assess whether cutting out existing value propositions was necessary to own a new category, or whether it was a missed opportunity to own both.",
+    "what_to_avoid": "Treating this as a simple 'modernization' story (new AI language = good). This was a SUBTRACTION move disguised as modernization. The article must grapple with the tension: Intercom eliminated messaging that had worked for years (multi-use-case support) to make room for AI Agent category ownership. Don't let this be a cheerleading piece. Also avoid generic 'homepage best practices' framing—this is a bold strategic repositioning that deserves scrutiny on whether the trade-offs paid off.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-10T19:14:56.928Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0031111999999999997
+  }
+}

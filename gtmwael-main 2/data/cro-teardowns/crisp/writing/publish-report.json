@@ -1,25 +1,21 @@
 {
-  "publishedAt": "2026-06-09T19:11:20.293Z",
+  "publishedAt": "2026-06-10T19:31:34.211Z",
   "slug": "crisp",
   "dryRun": false,
-  "forced": true,
+  "forced": false,
   "qualityGates": {
-    "finalJudgePass": false,
-    "finalJudgeScore": 72,
+    "finalJudgePass": true,
+    "finalJudgeScore": 92,
     "seoPass": true,
-    "seoScore": 84,
-    "unsupportedClaims": [
-      "The page title shifted from '#1 Business Messaging Platform For Startups & SMB's' to 'The AI Customer Support Platform for Every Business.'",
-      "The old page title claimed Crisp was the '#1 Business Messaging Platform For Startups & SMB's'",
-      "The page title drops the startup qualifier and claims 'The AI Customer Support Platform for Every Business.'",
-      "Crisp added 8 navigation items",
-      "Crisp added five"
-    ]
+    "seoScore": 82,
+    "unsupportedClaims": []
   },
-  "blockedReasons": [
-    "Final judge FAIL — score 72/100 (need ≥ 90)",
-    "5 unsupported claim(s): The page title shifted from '#1 Business Messaging Platform For Startups & SMB's' to 'The AI Customer Support Platform for Every Business.'; The old page title claimed Crisp was the '#1 Business Messaging Platform For Startups & SMB's'"
-  ],
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [],
   "articlePath": "src/content/cro-teardown/articles/crisp.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
