@@ -1,0 +1,42 @@
+{
+  "overallScore": 92,
+  "pass": true,
+  "evidenceAccuracy": 25,
+  "plainLanguage": 18,
+  "scannability": 15,
+  "searchableHeadings": 10,
+  "specificity": 15,
+  "rhythmAndOpening": 7,
+  "founderTakeaway": 2,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [],
+  "unsupportedClaims": [],
+  "riskFlags": [
+    "This positioning assumes visitors already know what Apollo does before they arrive",
+    "If most traffic arrives via branded search or qualified referrals, this headline works. If a meaningful share arrives from non-branded search or cold channels, it may create friction",
+    "This shift suggests Apollo now depends on brand recognition and AI-prefixed search queries rather than homepage copy to establish category fit"
+  ],
+  "requiredFixes": [
+    "Add founder-facing takeaway to H3 block 'What changed' under 'Apollo's homepage positioning' section",
+    "Add founder-facing takeaway to H3 block 'Who the old page served' under 'Apollo's messaging shift' section",
+    "Add founder-facing takeaway to H3 block 'What changed in Apollo's conversion path' under 'Apollo's CTA evolution' section"
+  ],
+  "optionalImprovements": [
+    "Opening paragraph rhythm is strong but could vary sentence length further — three consecutive medium-length sentences could be split",
+    "Section 'Why Apollo replaced its creative headline with category positioning' could include a specific Apollo evidence anchor in the first sentence (currently opens with interpretation)",
+    "The 15% threshold in 'If non-branded search represents more than 15% of homepage traffic' could be softened to avoid appearing as an unsupported claim — consider 'a meaningful share' or 'more than a small portion'"
+  ],
+  "rerunRecommendations": [
+    "Section 04-messaging-evolution: Add practical takeaway sentences to H3 blocks 'What changed' and 'Who the old page served'",
+    "Section 05-cta-navigation-evolution: Add practical takeaway sentence to H3 block 'What changed in Apollo's conversion path'"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.04368899999999998,
+  "generatedAt": "2026-06-11T10:14:29.483Z",
+  "repetitionWarnings": [
+    "The pattern 'Apollo replaced X with Y' appears in opening paragraph, Quick answer section, and headline analysis section — varied phrasing would improve rhythm"
+  ]
+}

@@ -269,6 +269,7 @@ export const clay: CroTeardownPost = {
     "/cro-teardowns/intercom",
     "/cro-teardowns/crisp",
     "/cro-teardowns/lemlist",
+    "/cro-teardowns/apollo",
   ],
   publishedAt: "2026-06-10T19:31:34.525Z",
 };

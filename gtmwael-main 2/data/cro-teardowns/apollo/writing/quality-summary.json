@@ -1,0 +1,187 @@
+{
+  "slug": "apollo",
+  "generatedAt": "2026-06-11T10:14:44.245Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "Word count is approximately 110 words, exceeding the 90-word maximum for intro sections by ~20 words",
+        "The final sentence ('After reading this teardown, you will know when to drop clever positioning for explicit category language — and when that choice costs you memorability') is meta-commentary about the article rather than answering the search query about what Apollo did",
+        "Minor: The heading uses 'How They Repositioned' which is less direct than the recommended H1 format in the SEO evidence"
+      ],
+      "sectionCostUsd": 0.04357950000000001
+    },
+    {
+      "sectionId": "02-quick-answer",
+      "finalVersion": 2,
+      "finalScore": 72,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 0,
+      "riskFlags": [],
+      "remainingIssueCount": 0,
+      "remainingIssues": [],
+      "sectionCostUsd": 0.08789250000000001
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 2,
+      "finalScore": 68,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 4,
+      "riskFlags": [
+        "Causal claim without data: 'This is category leadership — when your brand does the explanation work before someone reaches your site, meaning most visitors arrive already familiar with what you do.' No visitor familiarity data provided.",
+        "Causal claim without condition: 'If most traffic arrives via branded search or qualified referrals, this headline works.' No conversion data in evidence to support effectiveness claim.",
+        "Causal claim without condition: 'it may create friction for visitors still learning what the platform is.' No friction measurement or conversion data in evidence.",
+        "Generic strategic commentary in H3 'Why it matters' — second half could appear in any SaaS teardown without Apollo-specific anchoring."
+      ],
+      "remainingIssueCount": 15,
+      "remainingIssues": [
+        "Paragraph 1 (H3 'What changed') exceeds 60 words — approx 75 words.",
+        "Paragraph 2 (H3 'Why it matters') exceeds 60 words — approx 80 words.",
+        "Term 'category leadership' used without immediate plain-language definition in the same sentence.",
+        "Causal claim without condition: 'This is category leadership — when your brand does the explanation work before someone reaches your site' implies causation without supporting evidence from the dataset.",
+        "Causal claim without condition: 'meaning most visitors arrive already familiar with what you do' — no visitor data provided in evidence.",
+        "Causal claim: 'If most traffic arrives via branded search or qualified referrals, this headline works' — no conversion or effectiveness data in evidence.",
+        "Causal claim: 'If a meaningful share arrives from non-branded search or cold channels, it may create friction' — no friction measurement in evidence.",
+        "Section heading 'Apollo's homepage positioning' is searchable (company name + homepage + positioning).",
+        "H3 subheadings present: 'What changed', 'Why it matters', 'What it costs' — all three required sub-blocks present.",
+        "Bold quotes applied correctly to all verbatim website quotes.",
+        "Word count approx 175 words — within range.",
+        "Founder takeaway in H3 'What it costs' delivers test in first two sentences — meets requirement.",
+        "Test is specific and runnable (check analytics, compare branded vs non-branded, 15% threshold, add explainer) — meets requirement.",
+        "Generic paragraph risk: H3 'Why it matters' second half ('If most traffic arrives via branded search...') could appear in any company teardown — not anchored to Apollo-specific evidence.",
+        "No outcome/conversion data in evidence to support effectiveness claims about the headline change."
+      ],
+      "sectionCostUsd": 0.08914665000000001
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The claim 'The page now expects two types of visitors' in H3-3 implies strategic intent without attribution — the evidence shows CTAs exist but does not confirm Apollo's documented expectation or funnel design rationale"
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "H2 heading lacks company name — 'Apollo's' appears but not the full 'Apollo.io' nor 'homepage' as a standalone term searchable via Google",
+        "Final H3 block delivers takeaway in sentence 3, not sentences 1-2 — the practical test is positioned as a question at the end rather than a directive in the opening",
+        "One minor rhythm issue — all three H3 blocks open with similar 'The [old/new/current] page [verb]' structure, reducing variation"
+      ],
+      "sectionCostUsd": 0.037152000000000004
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 2,
+      "finalScore": 68,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "CAUSAL CLAIM WITHOUT DATA: 'The feature-named CTAs served visitors still deciding whether they need contact enrichment... people comparing categories of tools, not vendors within a category.' — Evidence shows only that CTAs changed labels, not which visitor segments they served or attracted.",
+        "OUTCOME CLAIM WITHOUT DATA: 'A visitor who does not yet know what sales engagement software does will find less help deciding whether Apollo solves their problem.' — No conversion data, bounce rate, or visitor-segment data provided to support this prediction.",
+        "HEADING IMPLIES FILTERING OUTCOME: 'Which visitors Apollo's new CTAs filter out' — The word 'filter out' suggests a measured conversion effect with zero supporting data."
+      ],
+      "remainingIssueCount": 10,
+      "remainingIssues": [
+        "Section word count is ~195 words, exceeding the 180-word maximum by 15 words",
+        "H3 block 2 makes an unsupported causal claim: 'served visitors still deciding... comparing categories' — evidence shows only that CTAs changed, not which visitor segments they served",
+        "H3 block 2 contains a second unsupported claim: 'A visitor who does not yet know what sales engagement software does will find less help' — this outcome claim has no trace in the evidence",
+        "The term 'filter out' in H3 heading 2 implies a conversion outcome with zero supporting data",
+        "Paragraph 1 (H3 block 1) is ~85 words, exceeding the 60-word limit by 25 words",
+        "Paragraph 2 (H3 block 2) is ~75 words, exceeding the 60-word limit by 15 words",
+        "H3 block 2 opening does NOT deliver a practical takeaway in the first two sentences — it theorises about visitor segments instead",
+        "The opening sentence is template-default ('Apollo replaced ten CTAs with ten new ones') when the evidence supported a more interesting entry (e.g. the shift from feature taxonomy to action verbs)",
+        "H3 block 2 is entirely generic — the entire paragraph could appear in any SaaS teardown discussing feature vs. action CTAs",
+        "H3 block 3 opening ('Open your homepage. Circle every CTA...') delivers the audit instruction but no insight-first takeaway before the instruction"
+      ],
+      "sectionCostUsd": 0.071574
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 2,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "H3-2: 'This move may work if...' — presents a conditional as if it causes success, but no conversion data supports the claim",
+        "H3-3: 'removing a differentiated headline risks erasing memorability' — outcome claim with no evidence tracing from Apollo's data",
+        "H3-4: 'If yes, you may have the recognition to simplify' — causal advice not grounded in Apollo's actual results"
+      ],
+      "remainingIssueCount": 10,
+      "remainingIssues": [
+        "Paragraph 1 in H3-1 is 66 words, violates 60-word cap",
+        "Paragraph 1 in H3-2 is 68 words, violates 60-word cap",
+        "Paragraph 1 in H3-3 is 61 words, violates 60-word cap",
+        "Final test paragraph (H3-4) is 107 words, far exceeds 60-word cap",
+        "Section ## heading uses 'copy Apollo's homepage strategy' but could be more specific to what changed (e.g., 'apollo AI category positioning')",
+        "H3-1 takeaway is buried in sentence 3, not delivered in first two sentences",
+        "H3-2 opens with conditional advice before stating the practical takeaway",
+        "Generic paragraph detected in H3-3: first sentence could appear in any brand-unknown company teardown",
+        "Total word count approximately 350, exceeds 260-word cap by 90 words",
+        "Final test in H3-4 has two separate tests stacked together (GSC check + category saturation search), not a single runnable action"
+      ],
+      "sectionCostUsd": 0.10047900000000001
+    }
+  ],
+  "averageScore": 77,
+  "passCount": 2,
+  "failCount": 4,
+  "skippedCount": 0,
+  "totalRewriteLoops": 4,
+  "weakSections": [
+    "02-quick-answer",
+    "03-visual-timeline",
+    "05-cta-navigation-evolution",
+    "06-lessons-for-saas-teams"
+  ],
+  "allRiskFlags": [
+    "Causal claim without data: 'This is category leadership — when your brand does the explanation work before someone reaches your site, meaning most visitors arrive already familiar with what you do.' No visitor familiarity data provided.",
+    "Causal claim without condition: 'If most traffic arrives via branded search or qualified referrals, this headline works.' No conversion data in evidence to support effectiveness claim.",
+    "Causal claim without condition: 'it may create friction for visitors still learning what the platform is.' No friction measurement or conversion data in evidence.",
+    "Generic strategic commentary in H3 'Why it matters' — second half could appear in any SaaS teardown without Apollo-specific anchoring.",
+    "The claim 'The page now expects two types of visitors' in H3-3 implies strategic intent without attribution — the evidence shows CTAs exist but does not confirm Apollo's documented expectation or funnel design rationale",
+    "CAUSAL CLAIM WITHOUT DATA: 'The feature-named CTAs served visitors still deciding whether they need contact enrichment... people comparing categories of tools, not vendors within a category.' — Evidence shows only that CTAs changed labels, not which visitor segments they served or attracted.",
+    "OUTCOME CLAIM WITHOUT DATA: 'A visitor who does not yet know what sales engagement software does will find less help deciding whether Apollo solves their problem.' — No conversion data, bounce rate, or visitor-segment data provided to support this prediction.",
+    "HEADING IMPLIES FILTERING OUTCOME: 'Which visitors Apollo's new CTAs filter out' — The word 'filter out' suggests a measured conversion effect with zero supporting data.",
+    "H3-2: 'This move may work if...' — presents a conditional as if it causes success, but no conversion data supports the claim",
+    "H3-3: 'removing a differentiated headline risks erasing memorability' — outcome claim with no evidence tracing from Apollo's data",
+    "H3-4: 'If yes, you may have the recognition to simplify' — causal advice not grounded in Apollo's actual results"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 92,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [
+    "Add founder-facing takeaway to H3 block 'What changed' under 'Apollo's homepage positioning' section",
+    "Add founder-facing takeaway to H3 block 'Who the old page served' under 'Apollo's messaging shift' section",
+    "Add founder-facing takeaway to H3 block 'What changed in Apollo's conversion path' under 'Apollo's CTA evolution' section"
+  ],
+  "seoScore": 84,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Primary keyword 'apollo homepage CRO teardown' appears only in title and meta description—not organically in body text. Add natural use in the intro or quick-answer section (e.g., 'This CRO teardown of Apollo's homepage reveals...')",
+    "Meta description claims the article covers 'what SaaS teams can study' but does not explicitly deliver a replicable framework or checklist by end of article. Either add a takeaway checklist section or adjust meta language to match actual content depth",
+    "The H1 is 'How apollo rewrote its homepage over 7 years' but the article's actual H1 is 'Apollo.io Homepage Teardown: How They Repositioned From Revenue Platform to AI Sales Leader'—conflicting hierarchy. Consolidate to one clear H1 at the top",
+    "Heading structure jumps from H2 'Apollo's homepage positioning shift: how the headline changed from 2019 to 2026' directly to H3 'What changed' without a clear intermediate H2 layer—inconsistent nesting in multiple sections"
+  ],
+  "articleWordCount": 1237,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~104w): \"Apollo.io replaced its 2019 headline **\"No one ever…\"",
+    "[06-lessons-for-saas-teams] Paragraph exceeds 90 words (~92w): \"Run this check now: open Google Search Console,…\""
+  ],
+  "overLengthWarning": null
+}

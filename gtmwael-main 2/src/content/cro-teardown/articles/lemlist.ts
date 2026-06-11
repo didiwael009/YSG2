@@ -260,6 +260,7 @@ export const lemlist: CroTeardownPost = {
     "/saas-marketing-agency",
     "/cro-teardowns/intercom",
     "/cro-teardowns/clay",
+    "/cro-teardowns/apollo",
   ],
   publishedAt: "2026-06-10T22:48:58.566Z",
 };

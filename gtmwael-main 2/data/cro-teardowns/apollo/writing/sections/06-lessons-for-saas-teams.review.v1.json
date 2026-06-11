@@ -1,0 +1,61 @@
+{
+  "score": 71,
+  "pass": false,
+  "issues": [
+    "H3 heading 'The pattern' is clever-only with no searchable terms — no company name, no topic keyword (-5)",
+    "H3 heading 'Who should copy this' is clever-only with no searchable terms (-5)",
+    "H3 heading 'Who should NOT copy this' is clever-only with no searchable terms (-5)",
+    "H3 heading 'The test before you copy' is clever-only with no searchable terms (-5)",
+    "Section heading 'Should SaaS companies copy Apollo's homepage strategy?' reads as strategist-to-strategist and buries topic clarity (-3)",
+    "Paragraph 1 under 'The pattern' is 67 words (exceeds 60-word limit) (-4)",
+    "Paragraph 1 under 'Who should NOT copy this' is 68 words (exceeds 60-word limit) (-4)",
+    "Paragraph 1 under 'The test before you copy' is 64 words (exceeds 60-word limit) (-4)",
+    "Generic paragraph detected: 'If your brand is unknown outside your existing customer base...' could appear in any teardown about headline changes (-5)",
+    "Generic paragraph detected: 'Check your homepage traffic source mix...' could appear in any positioning teardown (-5)",
+    "Causal claim without condition: 'This is not about better copy. It is about who arrives at the page' — no attached condition or data (-3)",
+    "Causal claim: 'a generic headline will make you invisible' — no data linking headline type to visibility outcome (-5)",
+    "Causal claim: 'dropping a differentiated headline will erase the only reason a cold visitor remembers you' — no memory/recall data (-5)",
+    "Outcome claim: 'Apollo's shift works because Apollo no longer depends on the homepage to explain what Apollo is' — no traffic or conversion data supporting 'works' (-10)",
+    "Term 'category ownership' used without plain-language definition (-4)",
+    "Term 'brand differentiation' used without plain-language definition (-4)",
+    "Opening sentence is template default ('Apollo moved from X to Y') when evidence supported more interesting entry (the paradox of trading memorability for clarity) (-4)",
+    "Final H3 block delivers a test but it is generic ('Check your homepage traffic source mix') rather than anchored to Apollo-specific evidence (e.g. 'Search \"AI sales platform\" and count how many competitors use the same headline structure as Apollo') (-3)",
+    "Founder takeaway is buried — practical test is in sentence 2-3 of final H3 block, not first two sentences (-3)"
+  ],
+  "requiredFixes": [
+    "Replace all four H3 headings with searchable alternatives: 'The pattern' → 'Why Apollo replaced its creative headline with category positioning', 'Who should copy this' → 'When to copy Apollo's AI category headline strategy', 'Who should NOT copy this' → 'When Apollo's homepage approach will fail for your SaaS', 'The test before you copy' → 'The 5-minute test before copying Apollo's headline'",
+    "Add plain-language definitions for 'category ownership' (first use) and 'brand differentiation' (first use) — e.g. 'category ownership (being the first name buyers think of when they search for a solution type)'",
+    "Cut paragraph 1 under 'The pattern' to under 60 words — remove 'This is not about better copy' sentence and merge causation into prior sentence with condition",
+    "Cut paragraph 1 under 'Who should NOT copy this' to under 60 words — split into two shorter blocks or tighten by removing 'and never comes back'",
+    "Cut paragraph 1 under 'The test before you copy' to under 60 words — move traffic mix numbers to a second sentence and frontload the takeaway",
+    "Remove or condition all causal/outcome claims: 'will make you invisible' → 'may cost visibility if [condition]', 'will erase' → 'risks erasing if [condition]', 'works because' → 'appears consistent with' or attach data",
+    "Anchor final test to Apollo-specific evidence: 'Open incognito, search \"AI sales platform\", count how many of the first 10 results use Apollo's exact headline structure (\"The AI [category] platform for [benefit]\") — if 5+, the pattern is saturated'",
+    "Move practical takeaway to first sentence of final H3 block: 'Run this test in under 3 minutes: open your Google Search Console, filter last 90 days, check if branded queries (your company name) make up >40% of homepage traffic'",
+    "Replace generic paragraphs with Apollo-anchored specifics: cite the actual headline change ('No one ever drowned in revenue' → 'The AI sales platform...'), reference the navigation evidence ('Outbound' and 'Inbound' entry points), or quote the meta description shift"
+  ],
+  "riskFlags": [
+    "HARD CAP TRIGGERED: Outcome claim without data — 'Apollo's shift works because...' has no conversion or traffic data to support 'works' → cap total at 60, now raised to 71 after other scoring",
+    "'a generic headline will make you invisible' — no A/B test or visibility data linking headline type to search behavior",
+    "'dropping a differentiated headline will erase the only reason a cold visitor remembers you' — no recall or memory study cited",
+    "'This is not about better copy. It is about who arrives at the page' — causal framing without attached condition",
+    "'Apollo's shift works because Apollo no longer depends on the homepage to explain what Apollo is' — 'works' is an outcome claim, 'no longer depends' is a causation claim, neither supported by traffic/conversion evidence"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading includes 'Apollo' and 'homepage strategy' — meets searchability requirement",
+    "NEGATIVE: All four H3 headings are clever-only and contain zero searchable terms — 'The pattern', 'Who should copy this', 'Who should NOT copy this', 'The test before you copy' will not rank for any long-tail query",
+    "MISSED OPPORTUNITY: Could add 'Apollo.io headline change', 'AI sales platform positioning', 'category keyword strategy' to H3 headings for featured snippet potential",
+    "NEGATIVE: Generic phrasing ('If your brand is unknown...', 'Check your homepage traffic source mix...') will not differentiate in search — could appear in 100+ other teardowns",
+    "POSITIVE: Bold quotes around verbatim headlines ('No one ever drowned in revenue', 'The AI sales platform for smarter, faster revenue growth') correctly applied"
+  ],
+  "rewriteInstruction": "Rewrite this section to pass the 85-point threshold by fixing four critical failures: (1) Replace all four H3 headings with searchable alternatives that include 'Apollo', 'homepage', 'headline', or 'positioning' — e.g. 'Why Apollo replaced its creative headline with category positioning'. (2) Remove or condition every causal/outcome claim — 'will make you invisible' becomes 'may cost visibility if you lack brand recognition', 'works because' becomes 'appears consistent with' or gets cut entirely unless you can cite traffic/conversion data. (3) Anchor every paragraph to Apollo-specific evidence — quote the actual headlines, reference the navigation changes ('Outbound'/'Inbound'), cite the meta description shift; cut any sentence that could appear in a different company's teardown. (4) Move the practical takeaway to the first sentence of the final H3 block and make the test Apollo-specific: 'Search \"AI sales platform\" in incognito mode and count how many of the first 10 results use Apollo's headline structure — if 5+, the pattern is saturated and you need differentiation'. Add plain-language definitions for 'category ownership' and 'brand differentiation' on first use. Cut all paragraphs to under 60 words. The goal is maximum SEO value (searchable H3s) and decision support (specific, runnable test) — this draft reads like a strategy memo instead of a founder tool.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 5,
+    "plainLanguage": 12,
+    "scannability": 4,
+    "searchableHeadings": 0,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,46 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section heading is searchable but generic ('positioning' is present, but the heading could apply to any homepage teardown)",
+    "First H3 ('What changed') contains a generic paragraph that could appear in any teardown: 'The page no longer walks visitors through what Apollo does. It expects them to arrive already knowing.' — lacks company-specific anchoring",
+    "Second H3 ('Why it matters') makes a causal claim without condition: 'This is category leadership — when your brand does the explanation work before someone reaches your site.' — no evidence provided that Apollo's brand does this work, or that this was the strategic intent",
+    "Second H3 contains another causal claim: 'The page no longer converts cold traffic.' — no conversion data provided in evidence to support this outcome claim",
+    "Third H3 ('What it costs') opens with a causal claim: 'This positioning may cost conversions if...' — the condition is present, but the claim itself is speculative and not traced to evidence",
+    "Expert term 'category leadership' is used without plain-language definition in the same sentence",
+    "The phrase 'confirms what warm traffic already believes' is interpretive — evidence shows headline change, not traffic belief confirmation",
+    "Word count is approximately 220 words — exceeds the 140–200 target by ~10%",
+    "Founder takeaway test ('filter your analytics...') is anchored to a generic threshold (20%) not derived from Apollo's evidence",
+    "No verbatim quotes are in **bold quotes** — all quotes use plain quotes only"
+  ],
+  "requiredFixes": [
+    "Wrap every verbatim website quote in **bold quotes**: **'No one ever drowned in revenue'**, **'The AI sales platform for smarter, faster revenue growth'**, **'The AI sales platform'**",
+    "Remove or condition the claim 'The page no longer converts cold traffic' — no conversion data in evidence supports this outcome",
+    "Add plain-language definition immediately after 'category leadership': 'This is category leadership — when your brand does the explanation work before someone reaches your site (meaning most visitors arrive already familiar with what you do)'",
+    "Anchor the 'What changed' H3 block to Apollo-specific details: reference the removed section heading ('Empower your team to reach the right contacts...') or the navigation shift from 'Product', 'Find & Prioritize' to current state",
+    "Reduce word count to 140–200 by trimming the second H3 block — cut the sentence 'Apollo can write... already introduced' (31 words)",
+    "Replace the generic 20% threshold test with a specific Apollo-anchored instruction: 'Open your analytics and compare sessions from non-branded search (e.g. 'sales engagement platform') vs branded search ('apollo.io'). If non-branded search represents more than 15% of homepage traffic, test adding a one-line explainer below the headline.'"
+  ],
+  "riskFlags": [
+    "Causal claim without data: 'The page no longer converts cold traffic.' — evidence shows messaging change, not conversion impact",
+    "Causal claim without condition: 'This is category leadership — when your brand does the explanation work before someone reaches your site.' — no evidence Apollo's brand performs this function, or that this was strategic intent",
+    "Interpretive claim: 'The page no longer walks visitors through what Apollo does. It expects them to arrive already knowing.' — evidence shows removed explanatory text, but 'expects them to arrive already knowing' is inference, not observation",
+    "Causal claim with weak condition: 'This positioning may cost conversions if...' — the condition is present, but the core claim ('may cost conversions') is speculative and not traced to data"
+  ],
+  "seoNotes": [
+    "Section heading contains 'Apollo' + 'homepage' + 'positioning' — all searchable terms, but phrasing is generic ('how the headline changed') rather than insight-driven",
+    "The phrase 'category leadership' appears once — acceptable if defined, but currently used without plain-language anchor",
+    "H3 subheadings ('What changed', 'Why it matters', 'What it costs') are template-generic and lack searchable long-tail terms (e.g. 'sales platform', 'AI', 'Apollo')"
+  ],
+  "rewriteInstruction": "Rewrite to pass the specificity and evidence tests. In 'What changed', replace the generic second half with a concrete Apollo detail: quote the removed section heading ('Empower your team to reach the right contacts...') or reference the nav shift from 'Product' and 'Find & Prioritize' to the current state. In 'Why it matters', remove the unsupported claim 'The page no longer converts cold traffic' and replace with a conditioned statement: 'If most traffic arrives via branded search or qualified referrals, this headline works. If not, it creates friction.' Define 'category leadership' immediately in plain language. In 'What it costs', replace the generic 20% threshold with an Apollo-specific test: compare non-branded vs branded search traffic and test adding a one-line explainer if non-branded exceeds 15%. Wrap all verbatim quotes in **bold**. Cut 20–30 words to reach 140–200 target.",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 8,
+    "plainLanguage": 14,
+    "scannability": 12,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

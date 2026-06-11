@@ -49,6 +49,8 @@ export interface NormalizedPageText {
     h2: string[];
     h3: string[];
   };
+  /** Whitespace-normalized body text, safe to include in LLM context. */
+  bodyText: string;
 }
 
 export interface NormalizedResult {
@@ -91,6 +93,12 @@ const IGNORED_LABELS: ReadonlySet<string> = new Set([
   'more information',
   'confirm my choices',
   'allow all',
+  // Cookie-banner dismiss buttons
+  'got it',
+  'got it!',
+  'ok',
+  'accept',
+  'i agree',
 
   // Language / region switchers
   'français',
@@ -164,6 +172,27 @@ const STRIP_ALWAYS: ReadonlyArray<RegExp> = [
   /\p{Emoji_Presentation}/u,       // emoji from social embeds
   /\s{2,}/,                        // tabs / multi-space (scraped formatting noise)
 ];
+
+// ─── Body text normalization ──────────────────────────────────────────────────
+
+/**
+ * Normalize raw bodyText before it enters LLM context.
+ *
+ * Two passes:
+ * 1. Split inline-element concatenation artifacts: a run of 3+ lowercase letters
+ *    immediately followed by an uppercase letter + 2+ lowercase letters indicates
+ *    two words that were joined without a space (e.g. "FeatureGot it!").
+ *    Word-boundary split inserts a space at that junction.
+ *    Limit: may also split camelCase product names (e.g. "TweetHunter" → "Tweet Hunter"),
+ *    which is acceptable since bodyText is LLM context, never a quoted source.
+ * 2. Collapse all runs of whitespace (tabs, newlines, double-spaces) → single space.
+ */
+function cleanBodyText(raw: string): string {
+  return raw
+    .replace(/([a-z]{3,})([A-Z][a-z]{2,})/g, '$1 $2')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
 
 // ─── Heading quality rules ────────────────────────────────────────────────────
 //
@@ -314,6 +343,7 @@ export function normalizePageText(raw: PageText): NormalizedResult {
       primaryCtas: sortedCtas,
       utilityLinks: dedupedUtility,
       sectionHeadings: { h2, h3 },
+      bodyText: cleanBodyText(raw.bodyText ?? ''),
     },
   };
 }

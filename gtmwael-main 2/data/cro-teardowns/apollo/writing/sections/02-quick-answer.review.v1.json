@@ -1,0 +1,40 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Final sentence makes a causal/outcome claim without supporting evidence — 'generic AI framing may make you forgettable' is strategic advice, not something traceable to Apollo's specific evidence",
+    "Causal statement ('This positioning assumes visitors already recognize Apollo') lacks an attached condition — should be 'if visitors do not recognize..., then...'",
+    "Word count is 94 words, exceeds the 75-word cap for quick-answer sections by 19 words",
+    "The phrase 'buyer-journey entry points' is expert jargon used without plain-language definition in the same sentence",
+    "Heading is 'Quick answer' — missing company name (Apollo) and missing a topic term like 'homepage', 'positioning', or 'messaging'"
+  ],
+  "requiredFixes": [
+    "Replace 'This positioning assumes visitors already recognize Apollo' with a conditional: 'If visitors already recognize Apollo, this positioning may work; if not, [risk]'",
+    "Remove or ground the final sentence claim about 'generic AI framing may make you forgettable' — this is strategic commentary not traceable to Apollo's evidence. Replace with a fact from the evidence, e.g., 'The meta description dropped team transformation language ('entire sales org', 'blow past quotas') for workflow terms ('prospecting', 'lead gen').'",
+    "Cut 19+ words to meet the 75-word cap. Consider removing the entire final sentence (37 words) and replacing with one 10-word sentence anchored to evidence.",
+    "Define 'buyer-journey entry points' immediately: 'buyer-journey entry points (stages like prospecting or lead qualification) such as **Outbound** and **Inbound**'",
+    "Change heading to 'How Apollo repositioned its homepage' or 'Apollo homepage positioning shift: Quick answer' to include company name + topic term"
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM: 'This positioning assumes visitors already recognize Apollo' — no evidence Apollo tested visitor recognition or that this assumption drove the change",
+    "OUTCOME CLAIM: 'generic AI framing may make you forgettable in a crowded market' — this is strategic advice, not a finding from Apollo's homepage changes",
+    "UNGROUNDED CAUSATION: 'If your company name does not appear in buyer shortlists before the homepage visit' — no evidence provided that Apollo measured shortlist presence or that this condition determined their strategy"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section includes exact quoted elements in bold: 'No one ever drowned in revenue', 'The AI sales platform for smarter, faster revenue growth', 'Outbound', 'Inbound' — good for snippet extraction",
+    "NEGATIVE: Heading 'Quick answer' is not searchable — does not contain 'Apollo', 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'",
+    "POSITIVE: First sentence structure (Company replaced X with Y and did Z) is snippet-friendly",
+    "NEGATIVE: Final sentence is strategic advice, not factual summary — reduces likelihood of featured snippet selection, which prefers objective statements"
+  ],
+  "rewriteInstruction": "Cut the final sentence entirely (it contains two unsupported causal claims about visitor recognition and market forgettability). Replace it with one factual sentence from the meta description evidence: 'The meta description shortened from 45 words emphasizing team transformation to 24 words focused on individual workflow terms like 'prospecting' and 'lead gen'.' Change the heading to 'How Apollo repositioned its homepage' to include the company name and a searchable topic term. Define 'buyer-journey entry points' in the same breath: 'buyer-journey labels (prospecting stages) like **Outbound** and **Inbound**'. This brings word count to ~72 and removes all ungrounded strategic claims while keeping the section anchored to Apollo's specific evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 15,
+    "plainLanguage": 14,
+    "scannability": 12,
+    "searchableHeadings": 3,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

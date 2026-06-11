@@ -1,0 +1,3 @@
+## Quick answer
+
+Apollo replaced its creative 2019 headline **"No one ever drowned in revenue"** with **"The AI sales platform for smarter, faster revenue growth"** and restructured navigation from feature lists to buyer-journey entry points like **"Outbound"** and **"Inbound"**. This positioning assumes visitors already recognize Apollo as a sales platform and are comparing it to other AI-enabled tools rather than discovering the category for the first time. If your company name does not appear in buyer shortlists before the homepage visit, generic AI framing may make you forgettable in a crowded market.

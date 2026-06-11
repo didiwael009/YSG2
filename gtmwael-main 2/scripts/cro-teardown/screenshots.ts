@@ -148,6 +148,24 @@ const EXTRACT_PAGE_TEXT_SCRIPT = `(() => {
     return clean(parts.join(''));
   }
 
+  // Classify a clickable element by its nearest semantic container.
+  // All <nav> and <header> descendants → nav_link (consistent with the navLinks selector).
+  // <footer> descendants → footer_link.
+  // Ancestors with a hero/banner class → hero_cta.
+  // Everything else → body_cta.
+  function classifyEl(el) {
+    var node = el.parentElement;
+    while (node && node !== bodyClone) {
+      var tag = (node.tagName || '').toUpperCase();
+      if (tag === 'NAV' || tag === 'HEADER') return 'nav_link';
+      if (tag === 'FOOTER') return 'footer_link';
+      var cls = ((node.className || '') + ' ' + (node.id || '')).toLowerCase();
+      if (/\\bhero\\b|\\bbanner\\b|\\bjumbotron\\b|\\bsplash\\b/.test(cls)) return 'hero_cta';
+      node = node.parentElement;
+    }
+    return 'body_cta';
+  }
+
   var title = document.title || '';
   var metaEl = document.querySelector('meta[name="description"]');
   var metaDescription = metaEl ? (metaEl.getAttribute('content') || '') : '';
@@ -156,10 +174,20 @@ const EXTRACT_PAGE_TEXT_SCRIPT = `(() => {
   var h2 = unique(Array.from(bodyClone.querySelectorAll('h2')).map(function(el) { return getText(el); }));
   var h3 = unique(Array.from(bodyClone.querySelectorAll('h3')).map(function(el) { return getText(el); }));
 
+  // Build typed element list: extract text + classify each clickable element.
+  var allClickable = Array.from(bodyClone.querySelectorAll('button, a[href], [role="button"]'))
+    .map(function(el) { return { el: el, text: getText(el) }; })
+    .filter(function(item) { return item.text.length > 0 && item.text.length < 120; });
+
+  var elements = allClickable.map(function(item) {
+    return { text: item.text, type: classifyEl(item.el) };
+  });
+
+  // ctas = hero_cta + body_cta only (nav and footer excluded).
   var ctas = unique(
-    Array.from(bodyClone.querySelectorAll('button, a[href], [role="button"]'))
-      .map(function(el) { return getText(el); })
-      .filter(function(t) { return t.length > 0 && t.length < 120; })
+    elements
+      .filter(function(e) { return e.type === 'hero_cta' || e.type === 'body_cta'; })
+      .map(function(e) { return e.text; })
   );
 
   var navLinks = unique(
@@ -169,7 +197,7 @@ const EXTRACT_PAGE_TEXT_SCRIPT = `(() => {
 
   var bodyText = clean(bodyClone.textContent || '');
 
-  return { title: title, metaDescription: metaDescription, h1: h1, h2: h2, h3: h3, ctas: ctas, navLinks: navLinks, bodyText: bodyText };
+  return { title: title, metaDescription: metaDescription, h1: h1, h2: h2, h3: h3, ctas: ctas, navLinks: navLinks, bodyText: bodyText, elements: elements };
 })()`;
 
 async function extractPageText(page: import('playwright').Page): Promise<PageText> {

@@ -1,0 +1,127 @@
+{
+  "sectionId": "04-messaging-evolution",
+  "companyName": "apollo",
+  "companyUrl": "https://www.apollo.io",
+  "articleTitle": "apollo Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How apollo rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 7,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 7,
+    "h2Added": 0,
+    "h2Removed": 2,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "apollo.io homepage",
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "No one everdrowned in revenue",
+      "after": "The AI sales platform for smarter, faster revenue growth",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Apollo accelerates the growth & success of your entire sales org with the first truly reliable, scalable sales revenue & engagement acceleration platform. Learn how you can shorten the ramp-up time for your team, so they can blow past quotas.",
+      "after": "Accelerate B2B sales with Apollo.io—an AI sales platform for prospecting, lead gen, and deal automation. Close more deals, faster, with smart data.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Apollo | Sales Revenue & Engagement Acceleration Platform",
+      "after": "AI Sales Platform | Apollo.io - Outbound, Inbound & Automation"
+    }
+  ],
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "7 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "0 added · 2 removed",
+      "note": "Minor structure adjustments"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Apollo.io moved from revenue acceleration platform positioning to AI sales platform category ownership by replacing its creative 2019 H1 'No one ever drowned in revenue' with explicit AI framing and restructuring its navigation from feature-based taxonomy to buyer-journey entry points ('Outbound', 'Inbound') that signal distinct use-case clarity rather than platform breadth.",
+    "old_positioning_frame": "Sales revenue & engagement acceleration platform with predictive prospecting and analytics — emphasis on team empowerment and reaching full revenue potential through intelligence at scale",
+    "new_positioning_frame": "AI sales platform for B2B prospecting, lead generation, and deal automation — emphasis on speed ('minutes', 'seconds'), smart data, and closing deals faster",
+    "buyer_shift": "Revenue leaders evaluating platform breadth and team enablement → Sales practitioners and ops leaders seeking immediate workflow automation and AI-powered time savings",
+    "funnel_shift": "Mid-funnel evaluation (demo-driven, 'learn how you can shorten ramp-up time') → Top-of-funnel capture via self-serve trial ('Sign up for free', 'Sign up with Google') alongside demo path",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "No one ever drowned in revenue",
+        "new": "The AI sales platform for smarter, faster revenue growth",
+        "meaning": "Suggests a shift from creative brand differentiation to SEO-optimized category declaration — the new H1 frontloads 'AI sales platform' which signals intent to own search behavior and reduce cognitive load for cold traffic unfamiliar with Apollo"
+      },
+      {
+        "element": "Navigation",
+        "old": "Product · Find & Prioritize · Database · Targeting · Scoring Engine · Enrich & Refresh · Engage · Sequences",
+        "new": "OutboundTurn hours of prospecting into minutes · InboundQualify and act on inbound leads in seconds · Apollo Data · AI Assistant · Apollo MCP · Integrations · Chrome Extension · Workflow Automation",
+        "meaning": "Signals a reframe from feature inventory to job-to-be-done entry points — 'Outbound' and 'Inbound' with embedded time-saving promises may indicate an attempt to accelerate self-qualification by allowing visitors to map their workflow to Apollo's structure immediately rather than learning platform architecture"
+      },
+      {
+        "element": "CTA",
+        "old": "Learn & Improve · Request a Demo · Contact us · Request Demo · Learn more · Product",
+        "new": "Learn more Learn more · Join the Community Join the Community · Get a demo · Sign up for free · Sign up with Google · Sign up with Microsoft",
+        "meaning": "The addition of 'Sign up for free' and OAuth CTAs ('Sign up with Google', 'Sign up with Microsoft') alongside 'Get a demo' is consistent with a dual-funnel strategy — serving both product-led growth motion for practitioners who can self-onboard and enterprise demo path for buying committees"
+      },
+      {
+        "element": "Meta description",
+        "old": "Apollo accelerates the growth & success of your entire sales org with the first truly reliable, scalable sales revenue & engagement acceleration platform. Learn how you can shorten the ramp-up time for your team, so they can blow past quotas.",
+        "new": "Accelerate B2B sales with Apollo.io—an AI sales platform for prospecting, lead gen, and deal automation. Close more deals, faster, with smart data.",
+        "meaning": "Points to a compression of value proposition from team transformation narrative ('entire sales org', 'shorten ramp-up time', 'blow past quotas') to individual contributor workflow efficiency ('prospecting', 'lead gen', 'deal automation') — the removal of 'first truly reliable, scalable' competitive claim and addition of 'smart data' may indicate confidence in category ownership rather than feature superiority argumentation"
+      }
+    ],
+    "copy_this_if": "Your product category is being searched for with 'AI' prefixes (e.g., 'AI sales tool', 'AI prospecting platform') and you have sufficient brand recognition that dropping creative differentiation in the H1 will not erode memorability — specifically, if your company name already appears in buyer shortlists before homepage visit",
+    "do_not_copy_this_if": "Your brand is unknown outside your existing customer base or if you compete in a saturated category where 'AI [category]' headlines are already used by 10+ competitors — in this case, the loss of creative differentiation (like Apollo's original 'No one ever drowned in revenue') may make you invisible in consideration sets",
+    "safer_version_for_early_stage_saas": "Keep a differentiated H1 that includes outcome or POV (e.g., 'Revenue intelligence for teams that hate guesswork') but test adding 'AI-powered' as a subtitle or trust badge below the fold — and test one OAuth sign-up option ('Sign up with Google') alongside demo CTA to measure PLG appetite without fully restructuring for self-serve",
+    "risk_if_copied": "If copied prematurely, the shift to generic 'AI [category]' framing may commoditize your positioning before you have distribution advantage — visitors unfamiliar with your brand may skip to the next result if the H1 does not communicate a unique belief, and the dual-funnel CTA structure requires product readiness for self-serve onboarding (activation, time-to-value under 10 minutes) or free users will churn before expansion",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-11T10:10:40.366Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.024405
+  },
+  "seo-intent": {
+    "primary_keyword": "Apollo homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "SaaS growth marketers, product managers, and founders building sales engagement or revenue acceleration platforms who want to understand how Apollo repositioned itself from a feature-rich platform to an AI-first category leader, and whether they should adopt similar positioning strategies.",
+    "recommended_h1_format": "How [Company] Repositioned Its Homepage From Revenue Platform to AI Sales Leader",
+    "secondary_keywords": [
+      "Apollo.io homepage evolution",
+      "Apollo sales platform positioning change",
+      "How Apollo repositioned to AI sales",
+      "Apollo CRO strategy 2019 to 2026",
+      "Apollo homepage redesign case study"
+    ],
+    "content_angle": "Focus on the STRATEGIC INTENT behind the repositioning, not just visual changes. The searcher wants to understand why Apollo abandoned 'No one ever drowned in revenue' (clever, brand-forward) for explicit AI framing, and how restructuring navigation from feature taxonomy ('Find & Prioritize', 'Database') to buyer-journey entry points ('Outbound', 'Inbound') creates clarity and conversion lift. Emphasize the category-ownership play: how AI framing elevated Apollo from 'a sales platform' to 'the AI sales platform.' Include the trade-off: losing creative brand voice for market-leading positioning clarity.",
+    "what_the_searcher_wants": "To learn whether repositioning toward AI (even if it means diluting brand personality) is the right move for a scaling SaaS product, and to see a real-world example of how navigation and messaging restructuring supports that shift.",
+    "what_to_avoid": "Do NOT treat this as a design teardown or visual audit. Do NOT just list the changes (H1 before/after, nav items removed). Do NOT ignore the category-leadership strategy. Avoid suggesting the change was about 'modernization' — it was about market positioning. Do NOT fail to explain why buyer-journey nav ('Outbound', 'Inbound') works better than feature-based nav for a multi-use-case platform.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-11T10:10:46.740Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0030055999999999998
+  }
+}

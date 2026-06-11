@@ -9,9 +9,10 @@ import { crisp } from "./articles/crisp";
 import { clay } from "./articles/clay";
 import { linear } from "./articles/linear";
 import { lemlist } from "./articles/lemlist";
+import { apollo } from "./articles/apollo";
 export type { CroTeardownPost, SnapshotEntry, MessagingChange, AnalysisBlock, LessonCard, SummaryCard } from "./types";
 
-export const croTeardownPosts: CroTeardownPost[] = [hootsuite, stripe, intercom, shopify, vercel, crisp, clay, linear, lemlist];
+export const croTeardownPosts: CroTeardownPost[] = [hootsuite, stripe, intercom, shopify, vercel, crisp, clay, linear, lemlist, apollo];
 
 export const getCroTeardownBySlug = (slug: string) =>
   croTeardownPosts.find((post) => post.slug === slug);

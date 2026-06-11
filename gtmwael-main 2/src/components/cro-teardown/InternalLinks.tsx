@@ -29,6 +29,7 @@ const ANCHOR_LABELS: Record<string, string> = {
   "/cro-teardowns/clay": "Clay GTM tool homepage teardown",
   "/cro-teardowns/linear": "Linear homepage teardown (2020–2026)",
   "/cro-teardowns/lemlist": "lemlist homepage teardown (2019–2026)",
+  "/cro-teardowns/apollo": "Apollo.io homepage teardown (2019–2026)",
 };
 
 interface InternalLinksProps {

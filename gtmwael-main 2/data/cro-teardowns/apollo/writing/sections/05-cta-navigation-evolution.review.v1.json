@@ -1,0 +1,48 @@
+{
+  "score": 71,
+  "pass": false,
+  "issues": [
+    "Causal claim 'The shift moves from educating visitors... to filtering for visitors who already know' has no supporting evidence for WHY the change was made",
+    "Causal claim 'The new CTAs assume the visitor already knows Apollo is a sales engagement platform' is interpretation, not traceable to evidence",
+    "Causal claim 'If most of your traffic comes from non-branded search or cold ads, feature-level CTAs may convert better' — no conversion data supports this prediction",
+    "Paragraph 1 (H3: What changed) is 81 words — exceeds 60-word limit",
+    "Paragraph 2 (H3: Who this filters out) is 65 words — exceeds 60-word limit",
+    "The opening sentence 'Apollo's conversion path narrowed' is interpretation — evidence shows CTAs were replaced, but 'narrowed' implies causation/strategy not in evidence",
+    "Final test instruction 'Count how many of your CTAs explain what happens next versus how many assume the visitor already decided' is generic — could appear in any teardown",
+    "Section contains generic SaaS commentary: 'If most of your traffic comes from non-branded search or cold ads' could appear in any company's teardown",
+    "Missing bold formatting on 'Custom Analytics', 'Opportunity Insights', 'Best-practice Reports' — evidence shows these were removed CTAs but draft omits them",
+    "H3 heading 'Who this filters out' is not searchable — no company name, no topic term (CTA, conversion, navigation)"
+  ],
+  "requiredFixes": [
+    "Remove or condition all causal claims: 'The shift moves from educating... to filtering' → 'The new CTAs require less explanation — visitors see free signup or demo, not feature names'",
+    "Cut paragraph 1 to ≤60 words: remove 'The shift moves from educating visitors about what each feature does to filtering for visitors who already know they need sales intelligence software' — this is interpretation",
+    "Cut paragraph 2 to ≤60 words: rewrite to describe WHAT the old CTAs named (features) vs WHAT the new CTAs name (signup/demo), not WHO they served",
+    "Replace final test with specific, Apollo-anchored instruction: 'Open your homepage. Circle every CTA that names a product feature (like Apollo's old Scoring Engine button). Now circle every CTA that only names an action (Get started, Book demo). If feature-named CTAs outnumber action-only CTAs, you are still in education mode — Apollo moved out of that in later snapshots.'",
+    "Revise H3 heading 'Who this filters out' to include searchable term: 'Who Apollo's new CTAs filter out' or 'CTA shift filters earlier-stage visitors'",
+    "Add company name to at least one more H3 heading for searchability"
+  ],
+  "riskFlags": [
+    "'The shift moves from educating visitors... to filtering for visitors who already know' — unsupported causation claim",
+    "'The new CTAs assume the visitor already knows Apollo is a sales engagement platform' — interpretation not traceable to evidence",
+    "'feature-level CTAs may convert better than a single Get started button' — outcome claim with no conversion data",
+    "'Apollo can compress the path because their brand does the education work before the page loads' — brand strength claim not in evidence"
+  ],
+  "seoNotes": [
+    "## heading 'How Apollo's conversion path narrowed' contains company name + 'conversion' — searchable",
+    "H3 'What changed' is weak for search — no company name, no specific topic term",
+    "H3 'Who this filters out' is clever-only — no searchable terms",
+    "H3 'Audit your own page' is generic — does not contain company name or topic anchor",
+    "Section would benefit from one H3 containing 'Apollo CTA' or 'Apollo homepage CTA'"
+  ],
+  "rewriteInstruction": "Rewrite all three H3 blocks to eliminate causation claims and compress to ≤60 words per paragraph. Describe WHAT changed (old CTAs named features, new CTAs name actions) without interpreting WHY or WHO it served. Replace generic traffic commentary ('non-branded search or cold ads') with Apollo-specific observation ('Apollo removed feature-name CTAs and kept only signup/demo'). Revise final test to be Apollo-specific: instruct founder to count feature-named vs action-only CTAs on their own page and compare to Apollo's snapshot shift. Add company name to at least one more H3 heading for searchability. Remove all unsupported claims about visitor knowledge, brand strength, or conversion outcomes.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 10,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

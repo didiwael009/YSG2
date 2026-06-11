@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Apollo homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "SaaS growth marketers, product managers, and founders building sales engagement or revenue acceleration platforms who want to understand how Apollo repositioned itself from a feature-rich platform to an AI-first category leader, and whether they should adopt similar positioning strategies.",
+  "recommended_h1_format": "How [Company] Repositioned Its Homepage From Revenue Platform to AI Sales Leader",
+  "secondary_keywords": [
+    "Apollo.io homepage evolution",
+    "Apollo sales platform positioning change",
+    "How Apollo repositioned to AI sales",
+    "Apollo CRO strategy 2019 to 2026",
+    "Apollo homepage redesign case study"
+  ],
+  "content_angle": "Focus on the STRATEGIC INTENT behind the repositioning, not just visual changes. The searcher wants to understand why Apollo abandoned 'No one ever drowned in revenue' (clever, brand-forward) for explicit AI framing, and how restructuring navigation from feature taxonomy ('Find & Prioritize', 'Database') to buyer-journey entry points ('Outbound', 'Inbound') creates clarity and conversion lift. Emphasize the category-ownership play: how AI framing elevated Apollo from 'a sales platform' to 'the AI sales platform.' Include the trade-off: losing creative brand voice for market-leading positioning clarity.",
+  "what_the_searcher_wants": "To learn whether repositioning toward AI (even if it means diluting brand personality) is the right move for a scaling SaaS product, and to see a real-world example of how navigation and messaging restructuring supports that shift.",
+  "what_to_avoid": "Do NOT treat this as a design teardown or visual audit. Do NOT just list the changes (H1 before/after, nav items removed). Do NOT ignore the category-leadership strategy. Avoid suggesting the change was about 'modernization' — it was about market positioning. Do NOT fail to explain why buyer-journey nav ('Outbound', 'Inbound') works better than feature-based nav for a multi-use-case platform.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-11T10:10:46.740Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0030055999999999998
+}

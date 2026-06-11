@@ -1,0 +1,30 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Word count is approximately 110 words, exceeding the 90-word maximum for intro sections by ~20 words",
+    "The final sentence ('After reading this teardown, you will know when to drop clever positioning for explicit category language — and when that choice costs you memorability') is meta-commentary about the article rather than answering the search query about what Apollo did",
+    "Minor: The heading uses 'How They Repositioned' which is less direct than the recommended H1 format in the SEO evidence"
+  ],
+  "requiredFixes": [
+    "Cut the section to 85–90 words maximum. The final sentence about 'after reading this teardown' is article-level framing and should be removed from the intro. The intro must only answer what Apollo changed and when.",
+    "Replace the final sentence with a concrete statement about the strategic shift, such as: 'The change reflected a bet on category ownership over brand personality — prioritizing search visibility and self-serve conversion over creative differentiation.'"
+  ],
+  "riskFlags": [],
+  "seoNotes": [
+    "Positive: The heading contains 'Apollo.io Homepage Teardown' and 'Repositioned' — both searchable terms aligned with primary and secondary keywords",
+    "Positive: First sentence names the company, period (2019 to implied present), and the biggest shift (headline replacement)",
+    "Neutral: The heading format deviates slightly from the recommended 'How Apollo Repositioned Its Homepage...' by adding 'They' — this is acceptable but less concise"
+  ],
+  "rewriteInstruction": "Cut 20–25 words to reach the 85–90 word target. Remove the final sentence ('After reading this teardown...') entirely — it is meta-commentary about the article, not evidence about Apollo. Replace it with one short sentence that states the strategic implication of the changes shown (e.g., 'The changes prioritized category ownership and self-serve conversion over creative brand voice'). Ensure every remaining sentence references Apollo's specific evidence: quoted text, named elements, or dated changes. The intro must answer the search query in full without promising what the article will teach.",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 10,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,33 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "H2 heading lacks company name — 'Apollo's' appears but not the full 'Apollo.io' nor 'homepage' as a standalone term searchable via Google",
+    "Final H3 block delivers takeaway in sentence 3, not sentences 1-2 — the practical test is positioned as a question at the end rather than a directive in the opening",
+    "One minor rhythm issue — all three H3 blocks open with similar 'The [old/new/current] page [verb]' structure, reducing variation"
+  ],
+  "requiredFixes": [
+    "Revise H2 to include 'homepage' as a standalone searchable term: 'Apollo.io homepage messaging shift: who it serves now vs. 2019'",
+    "Move the founder takeaway to the opening of the final H3 block: 'Check whether your homepage speaks to the person who will use the product daily, or only to the person who signs the contract. The Apollo.io page now expects two types of visitors...'",
+    "Vary the opening structure of at least one H3 block to avoid three consecutive 'The [X] page [verb]' patterns"
+  ],
+  "riskFlags": [
+    "The claim 'The page now expects two types of visitors' in H3-3 implies strategic intent without attribution — the evidence shows CTAs exist but does not confirm Apollo's documented expectation or funnel design rationale"
+  ],
+  "seoNotes": [
+    "H2 uses 'Apollo's messaging shift' which is partially searchable but lacks 'homepage' as a standalone term — searchers looking for 'Apollo homepage teardown' may not index this section as strongly",
+    "The section does use the company name (Apollo) 5 times and includes concrete elements ('Sign up with Google', 'blow past quotas') which aids snippet eligibility",
+    "Good use of contrast structure ('old page served X, new page serves Y') which aligns with informational search intent for before/after analysis"
+  ],
+  "rewriteInstruction": "Move the founder takeaway question to the opening sentence of H3-3 so it leads with the practical test, not the explanation. Revise the H2 to include 'homepage' as a standalone searchable term (e.g., 'Apollo.io homepage messaging shift'). Vary the opening structure of one H3 block to avoid three consecutive 'The [old/new/current] page' patterns — consider starting H3-2 with the time-savings claim instead of the descriptor. Ensure the strategic intent claim ('the page now expects two types of visitors') is softened to observable evidence ('the page offers two entry paths') unless you can cite Apollo's stated funnel strategy.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

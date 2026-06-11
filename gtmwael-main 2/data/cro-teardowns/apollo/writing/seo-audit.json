@@ -1,0 +1,51 @@
+{
+  "seoScore": 84,
+  "pass": true,
+  "titleScore": 12,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 14,
+  "searchIntentScore": 18,
+  "keywordUseScore": 9,
+  "readabilityScore": 14,
+  "internalLinkingScore": 3,
+  "internalLinkingSuggestions": [
+    "Link from 'SaaS homepage CRO teardown' section to related teardowns of competitors (HubSpot, Outreach, etc.) to establish pattern analysis authority",
+    "Link from 'When to copy Apollo's AI category headline strategy' to a guide on conducting Search Console audits for brand vs. non-branded traffic distribution",
+    "Link from 'Audit your own CTA labels' section to an internal CRO testing framework or CTA best practices article",
+    "Add contextual link to methodology article explaining how the teardown snapshots were collected and analyzed across 7 years"
+  ],
+  "faqSuggestions": [
+    "How did Apollo's homepage messaging shift to address AI adoption trends in sales software?",
+    "Should we remove our creative headline if our brand isn't widely recognized in search?",
+    "What's the difference between feature-based and action-based CTA labels, and which performs better?",
+    "How can we tell if our homepage serves executives or individual contributors?",
+    "Why did Apollo move from 'transform your sales org' messaging to 'turn hours into minutes' claims?",
+    "What percentage of homepage traffic should come from branded search before simplifying category positioning?"
+  ],
+  "contentGapNotes": [
+    "Article does not compare Apollo's homepage changes to competitor homepages during the same period (Outreach, HubSpot Sales, Salesloft) — readers may wonder if this shift was industry-wide or Apollo-specific",
+    "No discussion of mobile responsive changes or component reordering between 2019 and 2026 snapshots — only desktop/messaging focus",
+    "Missing analysis of how Apollo's AI positioning shift relates to actual product feature additions (is the AI sales platform language tied to new AI capabilities released, or purely repositioning of existing features?)",
+    "No quantitative performance data or conversion rate changes mentioned between periods — article is entirely qualitative/strategic",
+    "Limited discussion of the free-tier signup CTAs ('Sign up for free', OAuth) added over time and their impact on the sales process bottleneck",
+    "No mention of visual design evolution, hero image changes, or social proof elements (testimonials, case studies, customer logos) across the 7 snapshots"
+  ],
+  "requiredFixes": [
+    "Primary keyword 'apollo homepage CRO teardown' appears only in title and meta description—not organically in body text. Add natural use in the intro or quick-answer section (e.g., 'This CRO teardown of Apollo's homepage reveals...')",
+    "Meta description claims the article covers 'what SaaS teams can study' but does not explicitly deliver a replicable framework or checklist by end of article. Either add a takeaway checklist section or adjust meta language to match actual content depth",
+    "The H1 is 'How apollo rewrote its homepage over 7 years' but the article's actual H1 is 'Apollo.io Homepage Teardown: How They Repositioned From Revenue Platform to AI Sales Leader'—conflicting hierarchy. Consolidate to one clear H1 at the top",
+    "Heading structure jumps from H2 'Apollo's homepage positioning shift: how the headline changed from 2019 to 2026' directly to H3 'What changed' without a clear intermediate H2 layer—inconsistent nesting in multiple sections"
+  ],
+  "optionalImprovements": [
+    "Add a visual timeline or comparison table in the 'Apollo's messaging shift' section to show side-by-side 2019 vs. 2026 headlines, CTAs, and navigation labels for scanability",
+    "Include a 'Download this teardown as a PDF' or 'Save this teardown' CTA to capture email leads and reinforce value",
+    "Strengthen the secondary keyword 'SaaS conversion optimisation case study' by adding a brief case study-format section summarizing conversion lift or traffic impact (if known) or framing the entire article as a case study upfront",
+    "Add a 'Tools & templates' section suggesting how to conduct a similar teardown on your own site (e.g., Wayback Machine, Google Search Console, heatmapping tools)",
+    "Consider adding a 'Counterpoint: Why Apollo's approach may not work for you' subsection in the final section to increase credibility and address edge cases",
+    "Use bold or inline code formatting for quoted copy (e.g., `No one ever drowned in revenue`) to improve visual scanability of the many headline and CTA examples",
+    "Add a byline or author expertise note to establish credibility for the strategic recommendations"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.007009599999999949,
+  "generatedAt": "2026-06-11T10:14:44.232Z"
+}

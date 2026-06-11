@@ -1,0 +1,3 @@
+## Apollo homepage positioning shift: Quick answer
+
+Apollo replaced its creative 2019 headline **"No one ever drowned in revenue"** with **"The AI sales platform for smarter, faster revenue growth"** and restructured navigation from feature lists to buyer-journey labels — prospecting stages like **"Outbound"** and **"Inbound"**. This positioning assumes visitors already know what Apollo does before they arrive. The meta description shortened from 45 words emphasizing team transformation to 24 words focused on individual workflow terms like **"prospecting"** and **"lead gen"**.

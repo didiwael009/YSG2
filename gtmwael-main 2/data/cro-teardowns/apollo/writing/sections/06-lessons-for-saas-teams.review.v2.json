@@ -1,0 +1,47 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 1 in H3-1 is 66 words, violates 60-word cap",
+    "Paragraph 1 in H3-2 is 68 words, violates 60-word cap",
+    "Paragraph 1 in H3-3 is 61 words, violates 60-word cap",
+    "Final test paragraph (H3-4) is 107 words, far exceeds 60-word cap",
+    "Section ## heading uses 'copy Apollo's homepage strategy' but could be more specific to what changed (e.g., 'apollo AI category positioning')",
+    "H3-1 takeaway is buried in sentence 3, not delivered in first two sentences",
+    "H3-2 opens with conditional advice before stating the practical takeaway",
+    "Generic paragraph detected in H3-3: first sentence could appear in any brand-unknown company teardown",
+    "Total word count approximately 350, exceeds 260-word cap by 90 words",
+    "Final test in H3-4 has two separate tests stacked together (GSC check + category saturation search), not a single runnable action"
+  ],
+  "requiredFixes": [
+    "Cut all paragraphs to 60 words or under — currently 4 violations",
+    "Reduce total section to 180–260 words (currently ~350)",
+    "Move the practical takeaway to the first sentence of H3-1: state immediately that Apollo could drop creative differentiation because of brand recognition",
+    "Rewrite H3-3 paragraph 1 to anchor to Apollo's specific evidence — replace 'If your brand is unknown' with a direct contrast: 'Apollo's 2019 headline required visitors to decode metaphor; the 2026 headline assumes they already searched for Apollo by name'",
+    "Split the final test into two H3 blocks OR pick the single most valuable test (the GSC branded traffic check)",
+    "Rewrite H3-4 to deliver one test in <60 words with setup + action + threshold"
+  ],
+  "riskFlags": [
+    "H3-2: 'This move may work if...' — presents a conditional as if it causes success, but no conversion data supports the claim",
+    "H3-3: 'removing a differentiated headline risks erasing memorability' — outcome claim with no evidence tracing from Apollo's data",
+    "H3-4: 'If yes, you may have the recognition to simplify' — causal advice not grounded in Apollo's actual results"
+  ],
+  "seoNotes": [
+    "Positive: ## heading contains 'apollo' and 'homepage' — searchable",
+    "Positive: All H3 subheadings include 'Apollo' by name",
+    "Negative: H3-1 heading lacks a searchable keyword pair (e.g., 'headline positioning' or 'category framing')",
+    "Negative: H3-2 and H3-3 headings are long (15+ words) which may reduce scannability in SERP snippets",
+    "Positive: Section structure (four H3 blocks) matches stated SEO goal"
+  ],
+  "rewriteInstruction": "Compress every paragraph to 60 words maximum and cut total section to 240 words. Move the core takeaway to the first sentence of each H3 block: H3-1 should open with 'Apollo replaced its creative headline because it already owned brand recognition'; H3-2 should open with the GSC test instruction; H3-3 must anchor to Apollo's specific 2019 vs 2026 contrast instead of generic startup advice. Eliminate the dual test in H3-4 — keep only the GSC branded traffic check and deliver it in one 50-word paragraph with setup, action, and threshold. Replace every conditional outcome claim ('this will work if', 'may cost you visibility') with evidence-traced observation ('Apollo's shift required X, which the evidence shows through Y'). Remove all causal language that is not directly supported by the strategic-shift evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 10,
+    "plainLanguage": 17,
+    "scannability": 3,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,52 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Paragraph 1 (H3 'What changed') exceeds 60 words — approx 75 words.",
+    "Paragraph 2 (H3 'Why it matters') exceeds 60 words — approx 80 words.",
+    "Term 'category leadership' used without immediate plain-language definition in the same sentence.",
+    "Causal claim without condition: 'This is category leadership — when your brand does the explanation work before someone reaches your site' implies causation without supporting evidence from the dataset.",
+    "Causal claim without condition: 'meaning most visitors arrive already familiar with what you do' — no visitor data provided in evidence.",
+    "Causal claim: 'If most traffic arrives via branded search or qualified referrals, this headline works' — no conversion or effectiveness data in evidence.",
+    "Causal claim: 'If a meaningful share arrives from non-branded search or cold channels, it may create friction' — no friction measurement in evidence.",
+    "Section heading 'Apollo's homepage positioning' is searchable (company name + homepage + positioning).",
+    "H3 subheadings present: 'What changed', 'Why it matters', 'What it costs' — all three required sub-blocks present.",
+    "Bold quotes applied correctly to all verbatim website quotes.",
+    "Word count approx 175 words — within range.",
+    "Founder takeaway in H3 'What it costs' delivers test in first two sentences — meets requirement.",
+    "Test is specific and runnable (check analytics, compare branded vs non-branded, 15% threshold, add explainer) — meets requirement.",
+    "Generic paragraph risk: H3 'Why it matters' second half ('If most traffic arrives via branded search...') could appear in any company teardown — not anchored to Apollo-specific evidence.",
+    "No outcome/conversion data in evidence to support effectiveness claims about the headline change."
+  ],
+  "requiredFixes": [
+    "H3 'What changed': break the 75-word paragraph into two paragraphs. First paragraph covers the headline change only (approx 40 words). Second paragraph covers navigation changes (approx 35 words).",
+    "H3 'Why it matters': break the 80-word paragraph into two paragraphs. First paragraph defines category leadership in plain language (approx 40 words). Second paragraph discusses traffic implications (approx 40 words).",
+    "H3 'Why it matters': add plain-language definition of 'category leadership' immediately after first use. Example: 'This is category leadership — when prospects already know your name and what you do before they visit — meaning...'",
+    "Remove or condition all causal claims. Replace 'This is category leadership' with 'This suggests category leadership positioning' or 'This pattern appears in companies with established category leadership'. Replace 'this headline works' with 'this headline may work' or 'this headline is optimised for'. Replace 'it may create friction' with 'it could create friction' or 'test whether this creates friction'.",
+    "H3 'Why it matters': anchor second half to Apollo-specific evidence. Example: 'Apollo removed the explainer paragraph present in 2019 (**'Empower your team to reach...'**) and replaced two product-focused section headings. That level of removal suggests confidence that visitors already know the category.'",
+    "Remove sentence 'meaning most visitors arrive already familiar with what you do' — no visitor familiarity data in evidence."
+  ],
+  "riskFlags": [
+    "Causal claim without data: 'This is category leadership — when your brand does the explanation work before someone reaches your site, meaning most visitors arrive already familiar with what you do.' No visitor familiarity data provided.",
+    "Causal claim without condition: 'If most traffic arrives via branded search or qualified referrals, this headline works.' No conversion data in evidence to support effectiveness claim.",
+    "Causal claim without condition: 'it may create friction for visitors still learning what the platform is.' No friction measurement or conversion data in evidence.",
+    "Generic strategic commentary in H3 'Why it matters' — second half could appear in any SaaS teardown without Apollo-specific anchoring."
+  ],
+  "seoNotes": [
+    "Section heading 'Apollo's homepage positioning: how the headline changed from 2019 to 2026' contains company name, 'homepage', and 'positioning' — strong searchable terms.",
+    "H3 subheadings ('What changed', 'Why it matters', 'What it costs') are generic action verbs — no searchable brand or topic terms. Consider adding searchable variants like 'What changed in Apollo's headline' or 'Why Apollo's messaging shift matters'.",
+    "Draft correctly uses bold quotes for all verbatim website text — preserves scannability for Google readers.",
+    "Word count (approx 175 words) within optimal range for featured snippet eligibility."
+  ],
+  "rewriteInstruction": "Break both analytical paragraphs (H3 'What changed' and 'Why it matters') into two shorter paragraphs each — no paragraph over 60 words. Add an immediate plain-language definition of 'category leadership' in the same sentence where it first appears. Replace all causal certainty claims ('This is', 'this headline works', 'it may create friction') with conditional or observational phrasing ('This suggests', 'this headline may work if', 'test whether this creates friction'). Anchor the second half of H3 'Why it matters' to Apollo-specific evidence from the dataset — reference the removed explainer paragraph or the shift from product-focused navigation labels. Remove the sentence claiming 'most visitors arrive already familiar' — no visitor data supports this. Keep the founder test in H3 'What it costs' unchanged — it is specific and runnable.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 9,
+    "plainLanguage": 13,
+    "scannability": 6,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

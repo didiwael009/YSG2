@@ -1,0 +1,43 @@
+{
+  "createdAt": "2026-06-11T10:14:44.244Z",
+  "slug": "apollo",
+  "source": {
+    "finalJudgePass": true,
+    "seoPass": true,
+    "finalJudgeScore": 92,
+    "seoScore": 84
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: Section 04-messaging-evolution: Add practical takeaway sentences to H3 blocks 'What changed' and 'Who the old page served'",
+        "This positioning assumes visitors already know what Apollo does before they arrive",
+        "If most traffic arrives via branded search or qualified referrals, this headline works. If a meaningful share arrives from non-branded search or cold channels, it may create friction",
+        "This shift suggests Apollo now depends on brand recognition and AI-prefixed search queries rather than homepage copy to establish category fit",
+        "Add founder-facing takeaway to H3 block 'What changed' under 'Apollo's homepage positioning' section",
+        "Add founder-facing takeaway to H3 block 'Who the old page served' under 'Apollo's messaging shift' section",
+        "Primary keyword 'apollo homepage CRO teardown' appears only in title and meta description—not organically in body text. Add natural use in the intro or quick-answer section (e.g., 'This CRO teardown o",
+        "Meta description claims the article covers 'what SaaS teams can study' but does not explicitly deliver a replicable framework or checklist by end of article. Either add a takeaway checklist section or",
+        "Heading structure jumps from H2 'Apollo's homepage positioning shift: how the headline changed from 2019 to 2026' directly to H3 'What changed' without a clear intermediate H2 layer—inconsistent nesti"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "Judge rerun recommendation: Section 05-cta-navigation-evolution: Add practical takeaway sentence to H3 block 'What changed in Apollo's conversion path'",
+        "Add founder-facing takeaway to H3 block 'What changed in Apollo's conversion path' under 'Apollo's CTA evolution' section"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "The H1 is 'How apollo rewrote its homepage over 7 years' but the article's actual H1 is 'Apollo.io Homepage Teardown: How They Repositioned From Revenue Platform to AI Sales Leader'—conflicting hierar",
+      "reason": "cannot map to a specific section — may require manual review"
+    }
+  ]
+}

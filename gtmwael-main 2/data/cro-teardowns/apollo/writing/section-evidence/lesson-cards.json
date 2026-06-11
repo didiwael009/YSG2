@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Apollo replaced \"No one ever drowned in revenue\" with a platform category claim",
+    "category": "Positioning",
+    "body": "The original headline **\"No one ever drowned in revenue\"** was product-led and informal. The current **\"The AI sales platform for smarter, faster revenue growth\"** signals a shift toward category ownership. This likely indicates Apollo is competing at a different buyer stage—one where the visitor already understands what a sales platform does and is comparing options, not discovering the problem."
+  },
+  {
+    "number": "02",
+    "title": "8 navigation items removed and 8 added suggests a full rethink of the conversion path",
+    "category": "Navigation",
+    "body": "Apollo removed **\"Find & Prioritize\"**, **\"Scoring Engine\"**, **\"Enrich & Refresh\"**, and five other feature-level links. The new navigation includes **\"Apollo Data\"**, **\"AI Assistant\"**, and **\"Book a free demo\"**. This overhaul points to a move away from explaining individual features toward selling a unified platform with distinct entry points for different buyer intents."
+  },
+  {
+    "number": "03",
+    "title": "The meta description dropped a promise to \"shorten the ramp-up time\" for teams",
+    "category": "Messaging",
+    "body": "The original meta description referenced **\"shorten the ramp-up time for your team, so they can blow past quotas\"**—language that speaks to sales leaders managing onboarding friction. The current version, **\"Close more deals, faster, with smart data,\"** is more outcome-focused and neutral. This suggests Apollo may now be targeting buyers who already understand the tool and care more about results than enablement."
+  },
+  {
+    "number": "04",
+    "title": "Apollo removed section headings that explained what the product does—and added none",
+    "category": "Strategy",
+    "body": "Two section headings were removed, including **\"Empower your team to reach the right contacts at the right time, with the perfect message intelligently crafted at speed and scale.\"** Zero new headings were added. This 2-to-0 shift likely reflects a move away from education-first landing pages toward layouts that assume the visitor already knows what Apollo is and just needs proof points or a demo path."
+  }
+]

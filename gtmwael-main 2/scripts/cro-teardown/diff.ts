@@ -3,15 +3,25 @@ import * as path from 'node:path';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
+export type ElementType = 'nav_link' | 'hero_cta' | 'body_cta' | 'section_heading' | 'footer_link';
+
+export interface TypedElement {
+  text: string;
+  type: ElementType;
+}
+
 export interface PageText {
   title: string;
   metaDescription: string;
   h1: string[];
   h2: string[];
   h3: string[];
+  /** hero_cta + body_cta only (v2 scraper). Legacy v1 files may include nav items. */
   ctas: string[];
   navLinks: string[];
   bodyText: string;
+  /** Typed element list; present for scrapes after the classification fix. */
+  elements?: TypedElement[];
 }
 
 export interface TextChange {
@@ -33,10 +43,18 @@ export interface DiffResult {
   h2Removed: string[];
   h3Added: string[];
   h3Removed: string[];
+  /** Union of heroCTA + bodyCta buckets — backward-compat for evidence-pack and article schema. */
   ctaAdded: string[];
   ctaRemoved: string[];
   navAdded: string[];
   navRemoved: string[];
+  /** Per-type bucket diffs — populated when typed elements are available. */
+  heroCTAAdded: string[];
+  heroCTARemoved: string[];
+  bodyCtaAdded: string[];
+  bodyCtaRemoved: string[];
+  footerLinkAdded: string[];
+  footerLinkRemoved: string[];
   visualOnly: boolean;
 }
 
@@ -78,7 +96,7 @@ const HOMEPAGE_RE = /\bhomepage\b/i;
  * the scraper sometimes captures as interactive elements.
  */
 const UI_CHROME_RE =
-  /^(open|close)\s+navigation\b|^allow all$|^confirm my choices$|^more information$|^clear$|^apply$|^cancel$|^cookies?\s+details?$/i;
+  /^(open|close)\s+navigation\b|^allow all$|^confirm my choices$|^more information$|^clear$|^apply$|^cancel$|^cookies?\s+details?$|^got\s+it!?$|^ok$|^accept$|^i\s+agree$/i;
 
 /**
  * Social-media embed noise: @mentions and emoji presentation characters.
@@ -149,6 +167,24 @@ function cleanNav(raw: string[]): string[] {
     .filter((s, i, arr) => arr.indexOf(s) === i);
 }
 
+// ─── Backward-compat element migration ───────────────────────────────────────
+
+/**
+ * Build a typed element list from legacy PageText (no `.elements` field).
+ * Items in navLinks → nav_link; items in ctas not already in navLinks → body_cta.
+ * Hero detection requires DOM context and is not possible from text alone.
+ */
+function migrateToElements(text: PageText): TypedElement[] {
+  const navSet = new Set((text.navLinks ?? []).map(s => s.trim().toLowerCase()));
+  const elements: TypedElement[] = (text.navLinks ?? []).map(t => ({ text: t, type: 'nav_link' as ElementType }));
+  for (const t of (text.ctas ?? [])) {
+    if (!navSet.has(t.trim().toLowerCase())) {
+      elements.push({ text: t, type: 'body_cta' });
+    }
+  }
+  return elements;
+}
+
 // ─── Diff engine ──────────────────────────────────────────────────────────────
 
 export function computeDiff(
@@ -193,16 +229,31 @@ export function computeDiff(
     (toText.h3 ?? []).filter(s => s.length > 4 && minWords(s)),
   );
 
-  // CTAs and nav — apply noise filters before diffing, then sort action CTAs first
-  const cta = setDiff(cleanCtas(fromText.ctas ?? []), cleanCtas(toText.ctas ?? []));
-  const nav = setDiff(cleanNav(fromText.navLinks ?? []), cleanNav(toText.navLinks ?? []));
-  const ctaAddedSorted   = prioritizeCtas(cta.added);
-  const ctaRemovedSorted = prioritizeCtas(cta.removed);
+  // Use typed elements when available; fall back to heuristic migration for legacy JSON files.
+  const fromElements = fromText.elements ?? migrateToElements(fromText);
+  const toElements   = toText.elements   ?? migrateToElements(toText);
+
+  const byType = (els: TypedElement[], type: ElementType) =>
+    els.filter(e => e.type === type).map(e => e.text);
+
+  // Per-bucket diffs — diffs run within type only, never across buckets.
+  const heroCTA    = setDiff(cleanCtas(byType(fromElements, 'hero_cta')),   cleanCtas(byType(toElements, 'hero_cta')));
+  const bodyCta    = setDiff(cleanCtas(byType(fromElements, 'body_cta')),   cleanCtas(byType(toElements, 'body_cta')));
+  const footerLink = setDiff(cleanNav(byType(fromElements, 'footer_link')), cleanNav(byType(toElements, 'footer_link')));
+  const nav        = setDiff(cleanNav(byType(fromElements, 'nav_link')),    cleanNav(byType(toElements, 'nav_link')));
+
+  // ctaAdded/Removed = union of hero + body; backward-compat for evidence-pack + article schema.
+  const dedupeByKey = (arr: string[]) => {
+    const seen = new Set<string>();
+    return arr.filter(s => { const k = s.trim().toLowerCase(); return seen.has(k) ? false : (seen.add(k), true); });
+  };
+  const ctaAddedSorted   = prioritizeCtas(dedupeByKey([...heroCTA.added,   ...bodyCta.added]));
+  const ctaRemovedSorted = prioritizeCtas(dedupeByKey([...heroCTA.removed, ...bodyCta.removed]));
 
   const totalSignificantChanges =
     headlines.length + metaDescs.length +
     h2.added.length + h2.removed.length +
-    cta.added.length + cta.removed.length;
+    ctaAddedSorted.length + ctaRemovedSorted.length;
 
   return {
     fromMonth,
@@ -220,6 +271,12 @@ export function computeDiff(
     ctaRemoved: ctaRemovedSorted.slice(0, 10),
     navAdded: nav.added.slice(0, 8),
     navRemoved: nav.removed.slice(0, 8),
+    heroCTAAdded: heroCTA.added,
+    heroCTARemoved: heroCTA.removed,
+    bodyCtaAdded: bodyCta.added,
+    bodyCtaRemoved: bodyCta.removed,
+    footerLinkAdded: footerLink.added.slice(0, 8),
+    footerLinkRemoved: footerLink.removed.slice(0, 8),
     visualOnly: totalSignificantChanges === 0,
   };
 }

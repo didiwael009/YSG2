@@ -1,0 +1,49 @@
+{
+  "score": 68,
+  "pass": false,
+  "issues": [
+    "Section word count is ~195 words, exceeding the 180-word maximum by 15 words",
+    "H3 block 2 makes an unsupported causal claim: 'served visitors still deciding... comparing categories' — evidence shows only that CTAs changed, not which visitor segments they served",
+    "H3 block 2 contains a second unsupported claim: 'A visitor who does not yet know what sales engagement software does will find less help' — this outcome claim has no trace in the evidence",
+    "The term 'filter out' in H3 heading 2 implies a conversion outcome with zero supporting data",
+    "Paragraph 1 (H3 block 1) is ~85 words, exceeding the 60-word limit by 25 words",
+    "Paragraph 2 (H3 block 2) is ~75 words, exceeding the 60-word limit by 15 words",
+    "H3 block 2 opening does NOT deliver a practical takeaway in the first two sentences — it theorises about visitor segments instead",
+    "The opening sentence is template-default ('Apollo replaced ten CTAs with ten new ones') when the evidence supported a more interesting entry (e.g. the shift from feature taxonomy to action verbs)",
+    "H3 block 2 is entirely generic — the entire paragraph could appear in any SaaS teardown discussing feature vs. action CTAs",
+    "H3 block 3 opening ('Open your homepage. Circle every CTA...') delivers the audit instruction but no insight-first takeaway before the instruction"
+  ],
+  "requiredFixes": [
+    "HARD CAP TRIGGERED: Two conversion outcome claims without data → total capped at 60. Add 8 points from dimension scoring to reach 68.",
+    "Delete or rewrite H3 block 2 paragraph 2 sentence 2: 'A visitor who does not yet know what sales engagement software does will find less help deciding whether Apollo solves their problem.' This outcome claim has no evidence trace.",
+    "Rewrite H3 block 2 opening to remove unsupported causal claim about 'served visitors still deciding... comparing categories.' Evidence shows only CTA label changes, not visitor-stage intent.",
+    "Reduce paragraph 1 from ~85 words to ≤60 words. Current violation: 25 words over.",
+    "Reduce paragraph 2 from ~75 words to ≤60 words. Current violation: 15 words over.",
+    "Rewrite H3 block 2 to anchor every sentence to Apollo-specific evidence. Current version is 100% generic SaaS commentary.",
+    "Rewrite section opening to lead with the insight (feature taxonomy → action verbs) rather than the template default ('replaced ten CTAs with ten new ones').",
+    "Move the practical takeaway in H3 block 2 to the first sentence. Current structure buries insight under theory.",
+    "Trim section to ≤180 words (currently ~195 words, 15 over)."
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM WITHOUT DATA: 'The feature-named CTAs served visitors still deciding whether they need contact enrichment... people comparing categories of tools, not vendors within a category.' — Evidence shows only that CTAs changed labels, not which visitor segments they served or attracted.",
+    "OUTCOME CLAIM WITHOUT DATA: 'A visitor who does not yet know what sales engagement software does will find less help deciding whether Apollo solves their problem.' — No conversion data, bounce rate, or visitor-segment data provided to support this prediction.",
+    "HEADING IMPLIES FILTERING OUTCOME: 'Which visitors Apollo's new CTAs filter out' — The word 'filter out' suggests a measured conversion effect with zero supporting data."
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading contains both the company name ('Apollo') and a searchable topic term ('CTA evolution'), meeting searchability requirements.",
+    "POSITIVE: All verbatim CTA labels are correctly wrapped in bold quotes: **'Find & Prioritize'**, **'Get started for free'**, etc.",
+    "NEGATIVE: H3 heading 2 ('Which visitors Apollo's new CTAs filter out') uses passive-voice phrasing that may perform worse in search than active alternatives like 'Who Apollo's new CTAs exclude' or 'Which visitors lose guidance with action-only CTAs'.",
+    "NEUTRAL: The section uses the primary keyword 'Apollo' consistently but does not incorporate the full primary keyword 'apollo.io homepage' — acceptable for a sub-section, but a missed opportunity for exact-match targeting."
+  ],
+  "rewriteInstruction": "This section fires the unsupported-claim hard cap (→ total capped at 60) and violates paragraph-length limits twice. First, delete all outcome claims in H3 block 2 — the evidence shows only that CTA labels changed from feature names to action verbs, not which visitors those CTAs served or filtered. Rewrite H3 block 2 to describe only the observable shift (what disappeared from the labels, what appeared) without theorising about visitor segments or decision stages. Second, compress paragraph 1 from 85 words to ≤60 by removing the list recitation — name two representative old CTAs and two new ones, then state the pattern. Third, rewrite the section opening to lead with the insight (Apollo moved from feature taxonomy to action verbs) instead of the count-based default ('replaced ten CTAs with ten new ones'). Fourth, anchor H3 block 2 to Apollo-specific evidence — quote a removed CTA and explain what information it carried that the new CTAs omit. Finally, move the practical takeaway in H3 block 2 to the first sentence (e.g. 'The new CTAs assume you already know what sales engagement software does'). Trim the final section to ≤180 words total.",
+  "dimensionScores": {
+    "evidenceAccuracy": 5,
+    "specificity": 7,
+    "plainLanguage": 18,
+    "scannability": 3,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 4,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

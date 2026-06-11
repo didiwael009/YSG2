@@ -1,0 +1,31 @@
+{
+  "publishedAt": "2026-06-11T10:15:02.129Z",
+  "slug": "apollo",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 92,
+    "seoPass": true,
+    "seoScore": 84,
+    "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "H1 quote missing: old H1 \"No one everdrowned in revenue\" does not appear in article-final.md. The article should quote the old headline."
+    ]
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/apollo.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}
