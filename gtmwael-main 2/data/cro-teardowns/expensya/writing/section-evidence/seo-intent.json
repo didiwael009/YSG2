@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Expensya homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, growth marketer, or product manager building or repositioning an expense management or fintech product who wants to understand how Expensya pivoted from generic English positioning to French market-specific, UX-led messaging—and whether that playbook applies to their own geographic or audience expansion.",
+  "recommended_h1_format": "How [Company] Rewrote Its Homepage for the French Market: A CRO Teardown",
+  "secondary_keywords": [
+    "Expensya homepage evolution",
+    "Expensya CRO case study",
+    "Expensya positioning change French market",
+    "expense management SaaS homepage examples",
+    "localization vs. generic positioning SaaS"
+  ],
+  "content_angle": "Focus on the STRATEGIC DECISION behind the shift, not just the cosmetic changes. The searcher wants to understand: Why did Expensya abandon 'all companies' messaging for French-specific UX language? What does this tell us about market-specific positioning vs. broad-appeal positioning? When should a fintech SaaS localize messaging vs. stay generic? Make the 'why' clear: this is a masterclass in geographic market ownership, not just a design facelift.",
+  "what_the_searcher_wants": "Proof that narrowing positioning (from 'all companies' to 'French finance teams') can work, and a framework for deciding when to make that bet. They want to see the before/after as evidence of a winning strategy, not just curiosity.",
+  "what_to_avoid": "Do NOT frame this as a generic 'homepage redesign analysis' or focus only on visual changes (fonts, colors, layout). Do NOT assume the shift was cosmetic—explain the business logic. Do NOT ignore the removal of company-size segmentation; that's a crucial signal about who they're targeting now. Do NOT write this as a French-language article review; frame it for English-speaking SaaS marketers who need to understand the PRINCIPLE of market-specific positioning.",
+  "confidence_level": "medium",
+  "generatedAt": "2026-06-11T16:46:31.418Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0030936
+}

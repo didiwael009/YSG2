@@ -67,6 +67,7 @@ export const SECTION_EVIDENCE_SOURCES: Record<string, string[]> = {
   '04-messaging-evolution':      ['messaging', 'summary-cards', 'strategic-shift', 'seo-intent'],
   '05-cta-navigation-evolution': ['cta-changes', 'h2-changes'],
   '06-lessons-for-saas-teams':   ['lesson-cards', 'summary-cards', 'strategic-shift'],
+  '07-business-context':         ['messaging', 'summary-cards', 'strategic-shift'],
   // ── Phase 4B legacy IDs (compose-section — backward compat) ────────────────
   '02-timeline': ['summary-cards'],
   '03-analysis': ['analysis-blocks'],
@@ -129,6 +130,7 @@ export const TOC_SECTIONS: { label: string; id: string }[] = [
   { label: 'Messaging evolution', id: 'messaging' },
   { label: 'Section heading changes', id: 'headings' },
   { label: 'CTA evolution', id: 'cta-evolution' },
+  { label: 'Why it changed', id: 'business-context' },
   { label: 'What SaaS teams can study', id: 'lessons' },
 ];
 

@@ -1,0 +1,47 @@
+{
+  "central_thesis": "Expensya shifted from generic English-language automation positioning to French-language market ownership by replacing 'Automated spend management for all companies' with French UX-centered messaging ('à quoi devrait ressembler la gestion des dépenses') and removing company-size navigation segmentation in favor of finance-team-specific language.",
+  "old_positioning_frame": "Universal automation tool for business expense management, segmented by company size (Small/Mid/Large), emphasizing paperless process automation from invoice to reimbursement.",
+  "new_positioning_frame": "Modern spend management platform for French-speaking finance teams, emphasizing user experience transformation ('stress et frictions' → 'clarté et simplicité'), payment cards, and compliance.",
+  "buyer_shift": "English-speaking companies of any size seeking expense automation → French-speaking finance teams in multi-currency, multi-country organizations seeking compliance and visibility.",
+  "funnel_shift": "Early exploration stage (free trial CTA, feature discovery focus) → Sales-qualified demo stage (contact sales, demo booking, login prominence suggest existing market awareness).",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "Automated spend management for all companies",
+      "new": "Voici à quoi devrait ressembler la gestion des dépenses.",
+      "meaning": "Suggests a shift from English-language feature description to French-language vision statement that assumes market familiarity — 'this is what expense management should look like' positions the company as a standard-setter rather than a vendor explaining capabilities."
+    },
+    {
+      "element": "Meta description",
+      "old": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
+      "new": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+      "meaning": "Signals a move from process-step explanation to outcome-focused emotional positioning ('stress et frictions' vs 'clarté et simplicité'), targeting 'équipes financières modernes' rather than generic companies — is consistent with moving upmarket to buyers with existing pain rather than educating on why automation matters."
+    },
+    {
+      "element": "Navigation",
+      "old": "Small · Mid · Large · Features · Self-managed expenses · Secure dematerialization · Intelligent validation and control",
+      "new": "Solutions · Aperçu · Application mobile · Se connecter · Contacter un commercial",
+      "meaning": "Removal of size-based segmentation (Small/Mid/Large) and feature-list navigation suggests the company may no longer be positioning for broad market self-serve discovery, instead streamlining to sales-assisted pathways ('Contacter un commercial') and existing user login."
+    },
+    {
+      "element": "Primary CTAs",
+      "old": "Free trial · Discover our solutions · Find out more · Discover all integrations",
+      "new": "Réservez une démo · Learn more about this provider · Se connecter",
+      "meaning": "Replacement of 'Free trial' with 'Réservez une démo' points to a shift from self-serve product exploration to sales-qualified demo pipeline — signals potential move to enterprise contract motion rather than PLG trial conversion."
+    },
+    {
+      "element": "Section headings",
+      "old": "A solution designed for every company · Features designed to transform your expense management · Integration with your infrastructure and ecosystem",
+      "new": "Cartes de paiement & budgets · Politiques de dépenses · Multi-devises et multi-pays · Fini le casse-tête administratif, place à la conformité.",
+      "meaning": "New headings emphasize payment cards, policy enforcement, multi-currency capability, and compliance — suggests targeting of finance teams managing distributed international workforces rather than generic expense automation buyers. The compliance framing ('conformité') indicates potential focus on regulated industries or audit-concerned buyers."
+    }
+  ],
+  "copy_this_if": "Your product category is well-understood in your target geography, your brand appears in vernacular buyer conversations ('we need an Expensya-type tool'), and you have sales capacity to handle demo volume from inbound traffic.",
+  "do_not_copy_this_if": "You are establishing a new category, your brand lacks local-language search volume, or you depend on trial-to-paid conversion rather than sales-assisted deals — prescriptive vision statements assume buyers already know what good looks like.",
+  "safer_version_for_early_stage_saas": "Keep English-language feature-outcome messaging and free trial CTA, but add a single compliance-focused section ('Built for [specific regulation]') with a secondary demo CTA to test whether finance buyer segment responds to risk/audit framing before committing homepage to single-language, demo-only motion.",
+  "risk_if_copied": "Traffic from English-speaking markets or early-stage prospects seeking product education will bounce — prescriptive French-language UX claims and demo-gate will filter out exploratory buyers who lack internal consensus or budget authority, shrinking top-of-funnel volume if sales team cannot handle increased deal complexity.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-11T16:46:15.754Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.024440999999999997
+}

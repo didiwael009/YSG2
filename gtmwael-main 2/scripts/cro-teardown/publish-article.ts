@@ -346,6 +346,18 @@ async function main(): Promise<void> {
     ? (JSON.parse(fs.readFileSync(seoJsonPath, 'utf-8')) as Record<string, string>)
     : null;
 
+  // ── Load business context section if available (Phase 4C V6) ───────────────
+  // New articles have sections/07-business-context.final.md written by
+  // generate-business-context.ts. Stored as `businessContext` for BusinessContextBlock.
+  const bcPath = path.join(writingDir, 'sections', '07-business-context.final.md');
+  if (fs.existsSync(bcPath)) {
+    const bcContent = fs.readFileSync(bcPath, 'utf-8').trim();
+    if (bcContent) {
+      structuredData.businessContext = bcContent;
+      console.log(`✅  Loaded business context from sections/07-business-context.final.md`);
+    }
+  }
+
   // ── Override lesson cards with LLM-generated version if available ─────────
   // Phase 4C writes brand-specific cards to section-evidence/lesson-cards.json.
   // These replace the static generic cards from article-blueprint.ts so every

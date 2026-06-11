@@ -1,0 +1,133 @@
+TITLE: Gestion des dépenses des employés et cartes de paiement | Expensya
+META DESCRIPTION: Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.
+
+H1:
+  - Voici à quoi devrait ressembler la gestion des dépenses.
+
+H2:
+  - Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.
+  - Application mobile
+  - Cartes de paiement & budgets
+  - Intégrations
+  - Politiques de dépenses
+  - Multi-devises et multi-pays
+  - Archivage légal
+  - Analytics
+  - Quel est le lien entre technologie, UX et frais professionnels ?
+  - Comment gérez-vous vos notes de frais ?
+  - Fini le casse-tête administratif, place à la conformité.
+  - Découvrez les cartes de paiement d'Expensya.
+  - Détendez-vous, car tout fonctionne.
+  - Découvrez comment l'IA optimise les processus de dépenses et voyages professionnels.
+  - Laissez-nous vous aider.
+  - Découvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs dépenses.
+  - Des ressources sur la gestion des dépenses pour vous aider à vous lancer.
+  - Prêt à découvrir une meilleure façon de gérer les dépenses professionnelles ?
+
+H3:
+
+CTAS / BUTTONS:
+  - Consent
+  - Details
+  - [#IABV2SETTINGS#]
+  - About
+  - Show details
+  - Necessary 21
+  - 880-tzc-395.mktoweb.com 1
+  - Azure 2
+  - Learn more about this provider
+  - Cloudflare 12
+  - Cookiebot 1
+  - Google 2
+  - www.expensya.com 3
+  - Preferences 2
+  - fast.wistia.netwww.expensya.com 2
+  - Statistics 2
+  - Marketing 5
+  - Marketo 1
+  - www.expensya.com 4
+  - Unclassified 2
+  - Cross-domain consent[#BULK_CONSENT_DOMAINS_COUNT#]
+  - Cookiebot
+  - [#IABV2_LABEL_PURPOSES#]
+  - [#IABV2_LABEL_FEATURES#]
+  - [#IABV2_LABEL_PARTNERS#]
+  - OK
+  - Customize
+  - Allow selection
+  - Use necessary cookies only
+  - Réservez une démo
+  - Application
+  - Cartes de paiement & budgets
+  - Intégrations
+  - Politiques de dépenses
+  - Multi-devises et multi-pays
+  - Archivage légal
+  - Analytics
+  - Agrandir l'image
+  - En savoir plus
+  - Agrandir l’image
+  - Télécharger le guide
+  - Démarrer la démo
+  - vidéo de présentation
+  - Explorer les intégrations
+  - Regarder maintenant
+  - Bénéficiez d’un accompagnement expert
+  - Voir les formations
+  - Lire les témoignages de clients
+  - Découvrir plus
+  - Réserver une démo
+  - Nous contacter
+  - Fermer
+  - Cliquez pour activer le son
+
+NAV LINKS:
+  - En savoir plus
+  - Se connecter
+  - Contacter un commercial
+  - Support
+  - Expensya
+  - Anglais
+  - Français
+  - Solutions
+  - Aperçu
+  - Application mobile
+  - Cartes de paiement
+  - Intégrations
+  - Politiques de dépenses
+  - Medius Copilot for Expense
+  - Multi-devises et multi-pays
+  - Archivage légal
+  - Analytics
+  - Grands groupes
+  - PME
+  - Directions financières
+  - Equipes RH
+  - Travel Managers
+  - DSI
+  - Tarifs
+  - Ressources
+  - Blog
+  - Cas Clients
+  - Guides et rapports
+  - Événements et webinaires
+  - Baromètre
+  - Glossaire
+  - Partenaires
+  - Clients
+  - Centre de ressources clients
+  - Témoignages clients
+  - Service client
+  - Centre d'aide
+  - Portail développeurs
+  - Formation
+  - À propos
+  - A propos
+  - Dirigeants
+  - Actualités
+  - Offres d'emploi
+  - Contactez-nous
+  - Réserver une démo
+
+BODY TEXT:
+ConsentDetails[#IABV2SETTINGS#]AboutWe care about your privacyIn order to provide you with a user-friendly website we, and our partners, use cookies to store data about your use of our site. This data may be used to present personalized content and ads as well as analyze behavior to improve the site. By clicking below, or by continuing to use the site, you agree to our use of cookies. Learn more by reading our Privacy Policy and Cookie Policy. You may update your cookie settings below.[#GPC_BANNER_ICON#][#GPC_TOAST_TEXT#]Consent SelectionNecessary Preferences Statistics Marketing Show detailsDetailsNecessary 21 Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.880-tzc-395.mktoweb.com1__cf_bmThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.Maximum Storage Duration: 1 dayType: HTTP CookieAzure2Learn more about this providerARRAffinityUsed to distribute traffic to the website on several servers in order to optimise response times.Maximum Storage Duration: SessionType: HTTP CookieARRAffinitySameSiteUsed to distribute traffic to the website on several servers in order to optimise response times.Maximum Storage Duration: SessionType: HTTP CookieCloudflare12Learn more about this providerobject(#-#-##:#:#.#)Holds the users timezone.Maximum Storage Duration: PersistentType: HTML Local Storaget3DThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetADeThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetADuThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetAEThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetCThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetMQThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetPLThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetTDeThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetTDuThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetTEThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragetTfThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StorageCookiebot1Learn more about this providerCookieConsentStores the user's cookie consent state for the current domainMaximum Storage Duration: 1 yearType: HTTP CookieGoogle2Learn more about this providerSome of the data collected by this provider is for the purposes of personalization and measuring advertising effectiveness.rc::aThis cookie is used to distinguish between humans and bots. This is beneficial for the website, in order to make valid reports on the use of their website.Maximum Storage Duration: PersistentType: HTML Local Storagerc::cThis cookie is used to distinguish between humans and bots. Maximum Storage Duration: SessionType: HTML Local Storagewww.expensya.com3.AspNetCore.Antiforgery.#Helps prevent Cross-Site Request Forgery (CSRF) attacks.Maximum Storage Duration: SessionType: HTTP Cookie.AspNetCore.Mvc.CookieTempDataProviderPreserves the visitor's session state across page requests.Maximum Storage Duration: SessionType: HTTP CookietnsAppThis cookie is part of a bundle of cookies which serve the purpose of content delivery and presentation. The cookies keep the correct state of font, blog/picture sliders, color themes and other website settings.Maximum Storage Duration: PersistentType: HTML Local StoragePreferences 2 Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.fast.wistia.netwww.expensya.com2wistia-video-progress-# [x2]Contains a timestamp for the website’s video-content. This allows the user to resume watching without having to start over, if the user leaves the video or website. Maximum Storage Duration: PersistentType: HTML Local StorageStatistics 2 Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.fast.wistia.netwww.expensya.com2wistia [x2]Used by the website to track the visitor's use of video-content - The cookie roots from Wistia, which provides video-software to websites.Maximum Storage Duration: PersistentType: HTML Local StorageMarketing 5 Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.Marketo1Learn more about this provider_mkto_trkContains data on visitor behaviour and website interaction. This is used in context with the email marketing service Marketo.com, which allows the website to target visitors via email. Maximum Storage Duration: 2 yearsType: HTTP Cookiewww.expensya.com4_gaUsed to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.Maximum Storage Duration: 2 yearsType: HTTP Cookie_ga_#Used to send data to Google Analytics about the visitor's device and behavior. Tracks the visitor across devices and marketing channels.Maximum Storage Duration: 2 yearsType: HTTP Cookie_gcl_auUsed by Google AdSense for experimenting with advertisement efficiency across websites using their services. Maximum Storage Duration: 3 monthsType: HTTP Cookie_gcl_lsTracks the conversion rate between the user and the advertisement banners on the website - This serves to optimise the relevance of the advertisements on the website. Maximum Storage Duration: PersistentType: HTML Local StorageUnclassified 2Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.Azure2Learn more about this providerAI_buffer_1PendingMaximum Storage Duration: SessionType: HTML Local StorageAI_sentBuffer_1PendingMaximum Storage Duration: SessionType: HTML Local StorageCross-domain consent[#BULK_CONSENT_DOMAINS_COUNT#][#BULK_CONSENT_TITLE#]List of domains your consent applies to: [#BULK_CONSENT_DOMAINS#]Cookie declaration last updated on 5/20/26 by Cookiebot[#IABV2_TITLE#][#IABV2_BODY_INTRO#][#IABV2_BODY_LEGITIMATE_INTEREST_INTRO#][#IABV2_BODY_PREFERENCE_INTRO#][#IABV2_LABEL_PURPOSES#][#IABV2_BODY_PURPOSES_INTRO#][#IABV2_BODY_PURPOSES#][#IABV2_LABEL_FEATURES#][#IABV2_BODY_FEATURES_INTRO#][#IABV2_BODY_FEATURES#][#IABV2_LABEL_PARTNERS#][#IABV2_BODY_PARTNERS_INTRO#][#IABV2_BODY_PARTNERS#]AboutCookies are small text files that can be used by websites to make a user's experience more efficient.This site uses different types of cookies. Some cookies are strictly necessary for the operation of this site. These cookies may be deleted by the user in their browser settings at any time. Other cookies are used to to save information about your browsing preferences or for statistical and marketing purposes. Some cookies are placed by third party services that appear on our pages. For these types of cookies we ask for your permission. Do not sell or share my personal informationOKCustomizeAllow selectionUse necessary cookies only Nouveaux “Top Tips” dans le Centre Client – améliorez vos compétences Expensya dès maintenant ! En savoir plus Se connecter Contacter un commercial Support Terme de recherche Recherche Recherche ouverte Expensya Se connecter Anglais Français Solutions Fonctionnalités du produit Aperçu Application mobile Cartes de paiement Intégrations Politiques de dépenses Medius Copilot for Expense Multi-devises et multi-pays Archivage légal Analytics Par taille d'entreprise Grands groupes PME Par fonction Directions financières Equipes RH Travel Managers DSI Tarifs Ressources Blog Cas Clients Guides et rapports Événements et webinaires Baromètre Glossaire Partenaires Clients Centre de ressources clients Témoignages clients Service client Centre d'aide Portail développeurs Formation Se connecter À propos A propos Dirigeants Actualités Offres d'emploi Contactez-nous Français Anglais Français Réserver une démo Voici à quoi devrait ressembler la gestion des dépenses. Voici à quoi devrait ressembler la gestion des dépenses. Expensya facilite la gestion des notes de frais grâce à une solution qui donne le contrôle aux équipes finance et élimine les contraintes qui pèsent sur les collaborateurs. Réservez une démo Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses. Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses. Expensya, qui fait maintenant partie de Medius, vous permet d'automatiser et de contrôler les dépenses de votre entreprise en toute simplicité et sans que vos collaborateurs aient à s'en soucier. Vous bénéficiez d'une transparence totale sur les dépenses, afin de garder la maîtrise des coûts. Application Application Cartes de paiement & budgets Intégrations Politiques de dépenses Multi-devises et multi-pays Archivage légal Analytics Agrandir l'image Application mobile Gérez vos dépenses à partir de votre smartphone. Gérez vos dépenses à partir de votre smartphone. L'application mobile d'Expensya (Android/iOS) vous permet de gérer vos dépenses en déplacement, même hors connexion. Prenez simplement une photo d'un reçu et Expensya crée, catégorise et enregistre automatiquement une note de frais. Et ce, dans n'importe quelle devise - la conversion est automatique en fonction des paramètres de votre compte. En savoir plus Cartes de paiement & budgets Contrôlez de manière proactive les dépenses engagées par les collaborateurs. Contrôlez de manière proactive les dépenses engagées par les collaborateurs. En mettant les cartes Expensya entre les mains de vos employés (physiquement ou virtuellement), vous les laissez libres de dépenser ce dont ils ont besoin dans un cadre prédéfini, en fonction des catégories de dépense, des budgets, des types de fournisseurs et des délais. Il n'y a donc pas de doute ni de mauvaise surprise. En savoir plus Intégrations Synchronisez vos différents outils Synchronisez vos différents outils Avec des intégrations natives et des API, vous pouvez facilement connecter Expensya à vos applications de voyage habituelles, à votre banque, à vos outils de RH et de paie ainsi qu’à votre ERP pour rapprocher facilement les écritures comptables. En savoir plus Agrandir l’image Politiques de dépenses Ne laissez jamais vos employés dans le doute. Ne laissez jamais vos employés dans le doute. Intégrez vos politiques internes de voyage et de dépenses dans Expensya pour offrir à vos collaborateurs des réponses instantanées et fiables grâce à Medius Copilot for Expense. En savoir plus Multi-devises et multi-pays Une solution mondiale et sans frontières. Une solution mondiale et sans frontières. Expensya vous permet de gérer tous vos frais de déplacement et de voyage ainsi que les remboursements et les paiements des factures à partir d'une seule et même plateforme. Évitez les complexités liées à la gestion des frais professionnels transfrontaliers et en devises grâce à une solution qui s'adapte automatiquement au cadre juridique de chaque pays. En savoir plus Agrandir l'image Archivage légal Un archivage légal international des dépenses. Un archivage légal international des dépenses. Archivez légalement vos dépenses pour toutes vos filiales et accédez-y facilement. Stockez vos justificatifs de paiement numérisés et conservez vos dépenses dans un espace de stockage en ligne hautement sécurisé selon les législations en vigueur, dont la norme NF Z 42-013. En savoir plus Agrandir l'image Analytics Transformez vos insights en actions. Transformez vos insights en actions. Prenez de meilleures décisions en enrichissant la connaissance de vos dépenses grâce à des tableaux de bord et des rapports interactifs clés en main qui vous aideront à maîtriser les coûts, à prévoir les flux de trésorerie et à améliorer la précision des prévisions et des budgets. En savoir plus Previous Next Quel est le lien entre technologie, UX et frais professionnels ? Quel est le lien entre technologie, UX et frais professionnels ? Prenez le contrôle grâce à l'IA afin de réduire la charge de travail de vos employés, de renforcer la précision de vos données et d'avoir une vision claire de vos dépenses. Voici comment : Des technologies avancées comme l'IA et le Machine Learning font le travail à votre place, ce qui permet de réduire la charge qui pèse sur vos employés et d’améliorer la précision de vos données. Les collaborateurs bénéficient de règles de dépenses simples, de façon à ce qu'ils puissent accéder à ce dont ils ont besoin, tandis que vous gardez le contrôle. Avec Expensya, vous n’avez plus à vous préoccuper de la formation des utilisateurs et des administrateurs, ni des complexités de configuration et d’intégration. Comment gérez-vous vos notes de frais ? Comment gérez-vous vos notes de frais ? Regardez cette vidéo et découvrez ce que la technologie intelligente d'Expensya de Medius peut vous aider à accomplir. Fini le casse-tête administratif, place à la conformité. Fini le casse-tête administratif, place à la conformité. Découvrez l'avenir de la gestion des dépenses grâce à notre dernier livre blanc : "Numérisation des frais professionnels : Le 0 papier est-il conforme et sécurisé ?" Apprenez pourquoi la dématérialisation est un choix gagnant en termes d'efficacité et de conformité : Les avantages et les inconvénients de l'archivage numérique et son rôle dans la conformité Les principales lois et réglementations relatives à la dématérialisation des documents Les coûts cachés de l'archivage physique et comment les éviter Comment faire la transition entre le chaos des documents papier et des processus numériques fluidifiés Télécharger le guide Découvrez les cartes de paiement d'Expensya. Découvrez les cartes de paiement d'Expensya. En quelques minutes, découvrez avec notre démo interactive le fonctionnement de nos cartes de paiement. Démarrer la démo Vous voulez découvrir la solution complête ? Regardez cette vidéo de présentation. Détendez-vous, car tout fonctionne. Détendez-vous, car tout fonctionne. Soyez opérationnel en quelques heures grâce à la configuration en self-service et aux intégrations natives. En quelques clics, Expensya s’adapte à vos politiques, vos niveaux de validation, votre plan comptable, vos plafonds de dépenses et bien plus encore. Explorer les intégrations Découvrez comment l'IA optimise les processus de dépenses et voyages professionnels. Découvrez comment l'IA optimise les processus de dépenses et voyages professionnels. Explorez l'impact de l'IA sur la gestion des dépenses professionnelles dans notre webinaire exclusif. Automatisation, détection de la fraude, analyse prédictive des données et bien plus encore. Regarder maintenant Laissez-nous vous aider. Laissez-nous vous aider. Améliorez votre gestion des dépenses et vos workflows sans alourdir votre charge de travail - en faisant appel aux experts d'Expensya pour vous aider en matière d’assistance, de configuration et plus encore. Bénéficiez d’un accompagnement expert Voir les formations « Grâce à la numérisation certifiée des documents, il n'est plus nécessaire de conserver les factures. Les équipes françaises apprécient cette fonctionnalité qui leur permet de s'affranchir du papier. » Jasmin MerzCoordinadora de Ventas & Responsable Travel Management Lire les témoignages de clients Découvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs dépenses. Découvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs dépenses. Rimowa gère en temps réel les notes de frais de ses employés dans plusieurs pays grâce à la solution multilingue d'Expensya. En savoir plus OVHcloud économise 80% du temps consacré à la gestion des frais professionnels en automatisant chaque étape du processus. En savoir plus Le Crédit Agricole optimise son processus de gestion des notes de frais dans tout son réseau bancaire régional. En savoir plus Le quotidien des équipes de Kerry Logistics est radicalement transformé par la technologie OCR+ d'Expensya En savoir plus Découvrir plus Des ressources sur la gestion des dépenses pour vous aider à vous lancer. Des ressources sur la gestion des dépenses pour vous aider à vous lancer. Prêt à découvrir une meilleure façon de gérer les dépenses professionnelles ? Réserver une démo Nous contacter Solutions Application mobile Cartes de paiement Intégrations Politiques de dépenses Multi-devises et multi-pays Archivage légal Analytics Grands groupes PME Directions financières Equipes RH Travel Managers Ressources Blog Cas Clients Guides et rapports Événements et webinaires Baromètre Cas clients Enterprise A propos d'Expensya Dirigeants Offres d'emploi Partenaires Actualités Trust Center Déclaration d’accessibilité Clients Se connecter Portail développeurs Formation Service client Centre d'aide Entrer en Contact Contacter un commercial Réserver une démo Support Bureau France:33 Rue du Louvre75002 ParisFranceinfo.france@medius.com © 2026 Expensya Politique de confidentialité Cookies Lutte contre la traite des êtres humains Dispositif d'alertes professionnelles Application Fermer Medius Copilot for Expense Fermer Aperçu des reçus de dépenses Fermer Analytics Fermer Cliquez pour activer le son6:43Cliquez pour activer le son6:43

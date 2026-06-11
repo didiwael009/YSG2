@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'signals a move' in sentence 3 is borderline causal without an explicit condition — should be reframed as 'suggests' or paired with a conditional",
+    "Word count is 121 words, exceeding the 90-word cap for intro sections by 31 words",
+    "The final sentence introduces a promise ('when narrowing your positioning... strengthens conversion — and when it costs you pipeline') that sets up an outcome claim pattern; acceptable in intro but must be supported later"
+  ],
+  "requiredFixes": [
+    "Reduce word count from 121 to 90 words maximum — consider removing the explanatory clause in sentence 2 ('This is what expense management should look like') and condensing the final sentence",
+    "Replace 'signals a move' in sentence 3 with 'suggests' or add explicit condition: 'signals a move [if the company has existing market awareness]'"
+  ],
+  "riskFlags": [
+    "The closing promise ('you will know when narrowing your positioning... strengthens conversion — and when it costs you pipeline') must be supported with evidence or conditions in later sections; unsupported outcome claims elsewhere would trigger hard cap"
+  ],
+  "seoNotes": [
+    "H1 contains company name (Expensya), topic term (Homepage Teardown), and geographic angle (French SaaS) — strong for search",
+    "Opening sentence answers the search query directly: company name, period, and the single biggest shift (English automation → French UX-centered messaging)",
+    "The phrase 'when narrowing your positioning to a single geography strengthens conversion' includes a high-value secondary keyword structure (positioning + geography + conversion)"
+  ],
+  "rewriteInstruction": "Cut 31 words to meet the 90-word cap. Remove the parenthetical translation in sentence 2 — the French quotes are already bolded and the meaning is clear from context. Condense the final sentence to: 'By the end, you will know when geographic narrowing strengthens conversion and when it filters out pipeline.' Change 'signals a move' to 'suggests' in sentence 3 to avoid unsupported causation. Verify all changes preserve the direct answer to the search query in the opening sentence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

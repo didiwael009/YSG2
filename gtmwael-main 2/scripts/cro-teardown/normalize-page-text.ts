@@ -326,11 +326,13 @@ export function normalizePageText(raw: PageText): NormalizedResult {
   const sortedCtas = [...actionCtas, ...otherCtas];
 
   // ── 3. Section headings ───────────────────────────────────────────────────────
+  // Apply the same space-split pass as bodyText to catch inline-element concat
+  // artifacts (e.g. "revenueacceleration" → "revenue acceleration").
   const h2 = caseInsensitiveDedupe(
-    (raw.h2 ?? []).filter(isStrategicHeading),
+    (raw.h2 ?? []).map(s => cleanBodyText(s)).filter(isStrategicHeading),
   );
   const h3 = caseInsensitiveDedupe(
-    (raw.h3 ?? []).filter(isStrategicHeading),
+    (raw.h3 ?? []).map(s => cleanBodyText(s)).filter(isStrategicHeading),
   );
 
   // ── 4. Utility links dedup ─────────────────────────────────────────────────

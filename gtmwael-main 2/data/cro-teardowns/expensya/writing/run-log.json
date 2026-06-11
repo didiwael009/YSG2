@@ -1,0 +1,230 @@
+[
+  {
+    "step": "Build evidence pack",
+    "ok": true,
+    "detail": "2 snapshots, diff computed",
+    "ts": "2026-06-11T16:45:37.985Z"
+  },
+  {
+    "step": "Build article blueprint",
+    "ok": true,
+    "detail": "2 analysis blocks, 4 lessons",
+    "ts": "2026-06-11T16:45:37.986Z"
+  },
+  {
+    "step": "Validate CroTeardownPost shape",
+    "ok": true,
+    "detail": "all required fields present",
+    "ts": "2026-06-11T16:45:37.986Z"
+  },
+  {
+    "step": "Save evidence-pack.json",
+    "ok": true,
+    "ts": "2026-06-11T16:45:37.986Z"
+  },
+  {
+    "step": "Save article-blueprint.json",
+    "ok": true,
+    "ts": "2026-06-11T16:45:37.987Z"
+  },
+  {
+    "step": "Save section-evidence/",
+    "ok": true,
+    "detail": "6 files (incl. normalized-page-text.json)",
+    "ts": "2026-06-11T16:45:37.987Z"
+  },
+  {
+    "step": "Save generated-article-data.json",
+    "ok": true,
+    "detail": "full CroTeardownPost object",
+    "ts": "2026-06-11T16:45:37.988Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-5",
+    "ts": "2026-06-11T16:45:46.369Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift validation",
+    "ok": true,
+    "detail": "confidence: high",
+    "ts": "2026-06-11T16:46:15.754Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json saved",
+    "ok": true,
+    "detail": "$0.0244",
+    "ts": "2026-06-11T16:46:15.755Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-11T16:46:15.756Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 2 is 63 words — must be ≤60",
+    "ts": "2026-06-11T16:46:25.275Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": false,
+    "detail": "3 paragraphs — $0.0121",
+    "ts": "2026-06-11T16:46:25.276Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-11T16:46:25.277Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json saved",
+    "ok": true,
+    "detail": "keyword: \"Expensya homepage teardown\"  $0.0031",
+    "ts": "2026-06-11T16:46:31.419Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-target.json written",
+    "ok": true,
+    "detail": "\"Expensya homepage teardown\" (auto — override with --keyword)",
+    "ts": "2026-06-11T16:46:31.420Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-11T16:46:31.420Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-11T16:46:31.422Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-11T16:46:31.422Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3197 in / 199 out — $0.0195",
+    "ts": "2026-06-11T16:46:37.433Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0440",
+    "ts": "2026-06-11T16:46:51.725Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-11T16:46:51.726Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-11T16:46:51.729Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards: ⚠",
+    "ok": false,
+    "detail": "card 3: title lacks company name, quote, or number — likely generic",
+    "ts": "2026-06-11T16:47:06.728Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": false,
+    "detail": "4 cards, 1 warning(s) — $0.0192",
+    "ts": "2026-06-11T16:47:06.729Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0192",
+    "ts": "2026-06-11T16:47:06.730Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-5]",
+    "ok": true,
+    "detail": "2 sections — calling API…",
+    "ts": "2026-06-11T16:47:06.732Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": true,
+    "detail": "added transition linking to intro's positioning shift",
+    "ts": "2026-06-11T16:47:12.977Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "1 changed, 0 rejected — $0.0593",
+    "ts": "2026-06-11T16:47:12.978Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "2 sections, 343 words",
+    "ts": "2026-06-11T16:47:12.984Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Expensya homepage CRO teardown",
+    "ts": "2026-06-11T16:47:12.986Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-11T16:47:12.989Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 52/100 — FAIL — $0.0354",
+    "ts": "2026-06-11T16:47:40.091Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-11T16:47:40.093Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": false,
+    "detail": "score 68/100 — FAIL — $0.0055",
+    "ts": "2026-06-11T16:47:51.819Z"
+  }
+]

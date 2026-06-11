@@ -1,0 +1,10 @@
+{
+  "name": "Expensya",
+  "slug": "expensya",
+  "url": "https://expensya.com/",
+  "from": "2020-01",
+  "to": "2026-06",
+  "stepMonths": 3,
+  "createdAt": "2026-06-11T16:32:38.019Z",
+  "phase": 1
+}

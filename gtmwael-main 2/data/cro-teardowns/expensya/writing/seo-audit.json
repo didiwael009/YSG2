@@ -1,0 +1,48 @@
+{
+  "seoScore": 68,
+  "pass": false,
+  "titleScore": 12,
+  "metaDescriptionScore": 13,
+  "headingStructureScore": 8,
+  "searchIntentScore": 14,
+  "keywordUseScore": 7,
+  "readabilityScore": 11,
+  "internalLinkingScore": 3,
+  "internalLinkingSuggestions": [
+    "Link 'SaaS homepage CRO teardown' phrase to a foundational guide or index page listing other teardowns in the series",
+    "Link 'European fintech localization pattern' to a related article on geographic positioning strategy if one exists",
+    "Link 'spend management category' to a primer or resource on competitive landscape analysis",
+    "Add contextual link from 'A/B test analysis' mention to methodology or framework article explaining how teardowns are conducted"
+  ],
+  "faqSuggestions": [
+    "Why did Expensya switch from 'Free trial' to 'Book a demo' as a CTA?",
+    "How does switching to French-language messaging affect international user acquisition for SaaS?",
+    "What is the geographic positioning trade-off between localization and exploratory traffic?",
+    "How do regulated categories like spend management differ in homepage positioning from unregulated SaaS?",
+    "When should a SaaS company remove company-size segmentation from its homepage navigation?"
+  ],
+  "contentGapNotes": [
+    "The article mentions two snapshots but doesn't show actual visual or design comparisons—consider adding before/after imagery or side-by-side layout breakdowns",
+    "No data on conversion rate impact—while hard rules forbid certainty claims, the article could frame hypothesized friction points from the CTA change (free trial → demo booking)",
+    "Missing tactical details on how the section headings changed (what were the Oct 2020 section names?)—readers need concrete evidence to replicate the analysis",
+    "No mention of how Expensya's product scope or feature set may have evolved in parallel with messaging—positioning changes often correlate with product maturation",
+    "Absent competitive framing—how did Concur, Expensify, and Divvy's homepages evolve in the same period?",
+    "No discussion of traffic source mix—did the French-first approach shift organic search queries, paid keyword performance, or direct/referral channels?"
+  ],
+  "requiredFixes": [
+    "Expand H2 and H3 hierarchy—currently only two H2s ('How the homepage changed' and implied sections) with no subheadings. Add at least 2–3 more logical sections (e.g., 'Headline evolution', 'CTA and navigation changes', 'Messaging implications') to improve scannability and keyword targeting.",
+    "Provide concrete visual evidence or transcribed copy comparisons between Oct 2020 and Jun 2026 snapshots. The article references specific copy but doesn't show side-by-side layout or design changes, which weakens credibility for a 'teardown' format.",
+    "Clarify the sectionsIncluded note—currently shows ['01-intro', '07-business-context'], suggesting missing sections. Either expand the article to include those sections or update metadata to reflect what's actually included.",
+    "The body text is very dense with long paragraphs (esp. the second section). Break up the three-sentence paragraphs into scannable chunks with bullets or shorter sentences to improve readability score."
+  ],
+  "optionalImprovements": [
+    "Add a 'Key takeaways' section at the end summarizing the French localization trade-off for quick skimming",
+    "Include a 'What other SaaS teardowns reveal' link suggestion pointing to similar category-consolidation case studies",
+    "Strengthen keyword use by explicitly restating 'Expensya homepage CRO teardown' or 'homepage redesign' once more in the middle of the article body (currently concentrated in intro)",
+    "Add a brief methodology note explaining how snapshots were captured and why Oct 2020 and Jun 2026 were chosen as comparison points",
+    "Consider a small 'Lessons for your team' subsection that frames the Expensya pattern in terms of other regulated SaaS (fintech, healthcare, compliance tools) to broaden relevance"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.005452800000000008,
+  "generatedAt": "2026-06-11T16:47:51.817Z"
+}

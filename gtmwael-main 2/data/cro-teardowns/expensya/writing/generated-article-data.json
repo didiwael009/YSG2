@@ -1,0 +1,223 @@
+{
+  "slug": "expensya",
+  "companyName": "Expensya",
+  "companyUrl": "https://www.expensya.com/",
+  "category": "CRO Teardown",
+  "title": "Expensya Homepage Teardown: Oct 2020 to Jun 2026",
+  "h1": "How Expensya rewrote its homepage over 6 years",
+  "metaTitle": "Expensya Homepage CRO Teardown — Oct 2020 to Jun 2026",
+  "description": "A CRO teardown of Expensya's homepage from Oct 2020 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Expensya's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Oct 2020 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-11",
+  "readTime": "8 min read",
+  "featuredImage": "/cro-teardowns/expensya/selected/2020-10.webp",
+  "featuredImageAlt": "Expensya Oct 2020 homepage — 'Automated spend management for all companies'",
+  "fromLabel": "Oct 2020",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2020-10",
+      "label": "Oct 2020",
+      "screenshotPath": "/cro-teardowns/expensya/selected/2020-10.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/expensya/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Oct 2020 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "14 added · 7 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Automated spend management for all companies",
+      "after": "Voici à quoi devrait ressembler la gestion des dépenses.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
+      "after": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Automated spend management for all companies",
+      "after": "Gestion des dépenses des employés et cartes de paiement | Expensya"
+    }
+  ],
+  "h2Added": [
+    "Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.",
+    "Cartes de paiement & budgets",
+    "Politiques de dépenses",
+    "Multi-devises et multi-pays",
+    "Quel est le lien entre technologie, UX et frais professionnels ?",
+    "Comment gérez-vous vos notes de frais ?",
+    "Fini le casse-tête administratif, place à la conformité.",
+    "Découvrez les cartes de paiement d'Expensya.",
+    "Détendez-vous, car tout fonctionne.",
+    "Découvrez comment l'IA optimise les processus de dépenses et voyages professionnels.",
+    "Laissez-nous vous aider.",
+    "Découvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs dépenses.",
+    "Des ressources sur la gestion des dépenses pour vous aider à vous lancer.",
+    "Prêt à découvrir une meilleure façon de gérer les dépenses professionnelles ?"
+  ],
+  "h2Removed": [
+    "Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams",
+    "Expensya fully automates your business expenditure",
+    "A solution designed for every company",
+    "Features designed to transform your expense management",
+    "Integration with your infrastructure and ecosystem",
+    "Our customers recommend our solution",
+    "Ready to simplify your receipt and expenses management process?"
+  ],
+  "ctaAdded": [
+    "Learn more about this provider",
+    "Réservez une démo",
+    "Show details",
+    "Necessary 21",
+    "880-tzc-395.mktoweb.com 1",
+    "Azure 2",
+    "Cloudflare 12",
+    "Google 2",
+    "www.expensya.com 3",
+    "Preferences 2"
+  ],
+  "ctaRemoved": [
+    "Free trial",
+    "Discover our solutions",
+    "Find out more",
+    "Discover all integrations"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2020-10",
+      "label": "Oct 2020 — original state",
+      "period": "Oct 2020",
+      "screenshotPath": "/cro-teardowns/expensya/selected/2020-10.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Automated spend management for all companies\" — direct product statement.",
+        "Visible section headings include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\", \"Expensya fully automates your business expenditure\", \"A solution designed for every company\".",
+        "Navigation includes: \"Solutions\", \"Small\", \"Mid\", \"Large\" — product category framing.",
+        "Section headings later removed include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\" and \"Expensya fully automates your business expenditure\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/expensya/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Voici à quoi devrait ressembler la gestion des dépenses.\" — updated value proposition.",
+        "New section headings include: \"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\", \"Cartes de paiement & budgets\", \"Politiques de dépenses\".",
+        "CTAs no longer present include: \"Free trial\", \"Discover our solutions\", \"Find out more\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"Automated spend management for all companies\" to \"Voici à quoi devrait ressembler la gestion des dépenses.\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Small\", \"Mid\", \"Large\" to \"En savoir plus\", \"Se connecter\", \"Contacter un commercial\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "14 section headings were added and 7 removed between Oct 2020 and Jun 2026. New headings include \"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\" and \"Cartes de paiement & budgets\". Headings that disappeared include \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\" and \"Expensya fully automates your business expenditure\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 2 snapshots spanning roughly 6 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

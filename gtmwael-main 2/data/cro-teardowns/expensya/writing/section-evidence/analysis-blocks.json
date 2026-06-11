@@ -1,0 +1,27 @@
+[
+  {
+    "id": "analysis-2020-10",
+    "label": "Oct 2020 — original state",
+    "period": "Oct 2020",
+    "screenshotPath": "/cro-teardowns/expensya/selected/2020-10.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Automated spend management for all companies\" — direct product statement.",
+      "Visible section headings include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\", \"Expensya fully automates your business expenditure\", \"A solution designed for every company\".",
+      "Navigation includes: \"Solutions\", \"Small\", \"Mid\", \"Large\" — product category framing.",
+      "Section headings later removed include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\" and \"Expensya fully automates your business expenditure\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/expensya/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Voici à quoi devrait ressembler la gestion des dépenses.\" — updated value proposition.",
+      "New section headings include: \"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\", \"Cartes de paiement & budgets\", \"Politiques de dépenses\".",
+      "CTAs no longer present include: \"Free trial\", \"Discover our solutions\", \"Find out more\"."
+    ]
+  }
+]

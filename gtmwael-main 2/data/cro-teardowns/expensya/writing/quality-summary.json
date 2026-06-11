@@ -1,0 +1,63 @@
+{
+  "slug": "expensya",
+  "generatedAt": "2026-06-11T16:47:51.828Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The closing promise ('you will know when narrowing your positioning... strengthens conversion — and when it costs you pipeline') must be supported with evidence or conditions in later sections; unsupported outcome claims elsewhere would trigger hard cap"
+      ],
+      "remainingIssueCount": 3,
+      "remainingIssues": [
+        "The phrase 'signals a move' in sentence 3 is borderline causal without an explicit condition — should be reframed as 'suggests' or paired with a conditional",
+        "Word count is 121 words, exceeding the 90-word cap for intro sections by 31 words",
+        "The final sentence introduces a promise ('when narrowing your positioning... strengthens conversion — and when it costs you pipeline') that sets up an outcome claim pattern; acceptable in intro but must be supported later"
+      ],
+      "sectionCostUsd": 0.04399650000000001
+    }
+  ],
+  "averageScore": 88,
+  "passCount": 1,
+  "failCount": 0,
+  "skippedCount": 1,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [
+    "The closing promise ('you will know when narrowing your positioning... strengthens conversion — and when it costs you pipeline') must be supported with evidence or conditions in later sections; unsupported outcome claims elsewhere would trigger hard cap"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 52,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Remove competitor names (Concur, Expensify, Divvy) — not in evidence",
+    "Remove 'European fintech localization pattern' claim — not in evidence",
+    "Remove conversion predictions about 'costs you pipeline', 'filters exploratory traffic', 'conversion math improves' — no data supports these",
+    "Remove unsupported claim about 'embedded bank offerings' competition — not in evidence",
+    "Add H3 subheadings to 'Why the homepage changed' section to break down the analysis",
+    "Break 103-word paragraph (starts 'Between 2020 and 2026...') into shorter blocks",
+    "Break 128-word paragraph (starts 'This evolution maps...') into shorter blocks",
+    "Add founder-facing takeaway after each analytical observation",
+    "Add specific runnable test at end anchored to Expensya evidence (not generic 'trade-off' advice)",
+    "Rewrite final paragraph to anchor to Expensya-specific evidence rather than category-level generalization"
+  ],
+  "seoScore": 68,
+  "seoPass": false,
+  "seoRequiredFixes": [
+    "Expand H2 and H3 hierarchy—currently only two H2s ('How the homepage changed' and implied sections) with no subheadings. Add at least 2–3 more logical sections (e.g., 'Headline evolution', 'CTA and navigation changes', 'Messaging implications') to improve scannability and keyword targeting.",
+    "Provide concrete visual evidence or transcribed copy comparisons between Oct 2020 and Jun 2026 snapshots. The article references specific copy but doesn't show side-by-side layout or design changes, which weakens credibility for a 'teardown' format.",
+    "Clarify the sectionsIncluded note—currently shows ['01-intro', '07-business-context'], suggesting missing sections. Either expand the article to include those sections or update metadata to reflect what's actually included.",
+    "The body text is very dense with long paragraphs (esp. the second section). Break up the three-sentence paragraphs into scannable chunks with bullets or shorter sentences to improve readability score."
+  ],
+  "articleWordCount": 343,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~108w): \"Between October 2020 and June 2026, Expensya replaced…\""
+  ],
+  "overLengthWarning": null
+}

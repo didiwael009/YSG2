@@ -146,7 +146,11 @@ category twice unless the evidence makes it unavoidable.
 The four cards together should give a reader who skims ONLY this block a complete
 picture. Try to cover:
   Card 1 — the biggest visible change (usually headline or messaging)
+            If the company launched or named 3+ new features within 30 days before the
+            redesign, that's a positioning readiness signal — mention it explicitly.
   Card 2 — the navigation or CTA shift (the conversion path change)
+            Name the primary hero CTA text verbatim from the diff data (the first CTA
+            that appears above the fold in the "to" snapshot) — quote it bolded.
   Card 3 — the section-heading or structural shift (what the team prioritises now)
   Card 4 — the meta-pattern (what the evolution as a whole says)
 

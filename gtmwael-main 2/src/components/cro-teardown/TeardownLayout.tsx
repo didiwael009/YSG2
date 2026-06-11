@@ -11,6 +11,7 @@ import ScreenshotTimeline from "./ScreenshotTimeline";
 import ScreenshotAnalysisBlock from "./ScreenshotAnalysisBlock";
 import MessagingEvolution from "./MessagingEvolution";
 import CtaEvolutionTable from "./CtaEvolutionTable";
+import BusinessContextBlock from "./BusinessContextBlock";
 import LessonCards from "./LessonCards";
 import TeardownCTA from "./TeardownCTA";
 import ArticleBody from "./ArticleBody";
@@ -89,9 +90,9 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                     <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">
                       Screenshot analysis
                     </span>
-                    <h3 className="mb-2 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
+                    <h2 className="mb-2 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">
                       Biggest visible changes
-                    </h3>
+                    </h2>
                     <p className="text-[15px] leading-[1.6] text-[#5b5468]">
                       Three moments that capture the arc of the evolution.
                     </p>
@@ -108,28 +109,53 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                   toLabel={post.toLabel}
                 />
 
-                {/* 5. CTA + heading changes */}
+                {/* 5. CTA evolution */}
                 <CtaEvolutionTable
                   ctaAdded={post.ctaAdded}
                   ctaRemoved={post.ctaRemoved}
                   h2Added={post.h2Added}
                   h2Removed={post.h2Removed}
+                  mode="cta"
                 />
 
-                {/* 6. Lessons */}
-                <LessonCards lessons={post.lessonCards} companyName={post.companyName} />
+                {/* 6. Section heading changes */}
+                <CtaEvolutionTable
+                  ctaAdded={post.ctaAdded}
+                  ctaRemoved={post.ctaRemoved}
+                  h2Added={post.h2Added}
+                  h2Removed={post.h2Removed}
+                  mode="headings"
+                />
 
-                {/* 7. Full CRO analysis — AI-authored prose (Phase 4C/4F), styled editorially (Phase 4J) */}
-                {post.articleBody && (
+                {/* 7. Why it changed — business context (new articles) */}
+                {post.businessContext && (
+                  <BusinessContextBlock post={post} />
+                )}
+
+                {/* 8. Patterns worth borrowing */}
+                <section id="lessons" className="scroll-mt-28 space-y-6">
+                  <div className="rounded-[20px] bg-[#11111f] px-6 py-5">
+                    <span className="text-[11px] font-black uppercase tracking-[0.09em] text-[#ff9b6d]">
+                      Patterns worth borrowing
+                    </span>
+                    <h2 className="mt-1 font-display text-[26px] font-bold leading-[1.1] text-white md:text-[30px]">
+                      What SaaS teams can study
+                    </h2>
+                  </div>
+                  <LessonCards lessons={post.lessonCards} companyName={post.companyName} />
+                </section>
+
+                {/* Legacy article body — rendered only when businessContext is absent (old articles) */}
+                {!post.businessContext && post.articleBody && (
                   <ArticleBody markdown={post.articleBody} />
                 )}
 
-                {/* 8. Related SaaS growth resources */}
+                {/* Related SaaS growth resources */}
                 {post.internalLinkSuggestions && post.internalLinkSuggestions.length > 0 && (
                   <InternalLinks suggestions={post.internalLinkSuggestions} />
                 )}
 
-                {/* 9. Phase 4G CTA — CRO diagnosis */}
+                {/* Phase 4G CTA — CRO diagnosis */}
                 <section className="rounded-[28px] bg-[#11111f] px-8 py-10 text-white shadow-[0_24px_70px_rgba(7,7,17,0.22)]">
                   <h2 className="mb-3 font-display text-[26px] font-bold leading-[1.1] md:text-[30px]">
                     Want this kind of teardown for your SaaS?
@@ -145,7 +171,7 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                   </Button>
                 </section>
 
-                {/* 10. Final CTA */}
+                {/* Final CTA */}
                 <TeardownCTA
                   title={post.cta.title}
                   body={post.cta.body}

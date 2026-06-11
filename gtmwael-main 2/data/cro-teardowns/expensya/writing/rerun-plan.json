@@ -1,0 +1,93 @@
+{
+  "createdAt": "2026-06-11T16:47:51.826Z",
+  "slug": "expensya",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": false,
+    "finalJudgeScore": 52,
+    "seoScore": 68
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: Why the homepage changed — rewrite to remove unsupported claims, add H3 structure, anchor to Expensya evidence only, add founder takeaway",
+        "SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings",
+        "By the end of this teardown, you will know when narrowing your positioning to a single geography strengthens conversion — and when it costs you pipeline",
+        "Remove 'European fintech localization pattern' claim — not in evidence",
+        "Remove unsupported claim about 'embedded bank offerings' competition — not in evidence",
+        "Provide concrete visual evidence or transcribed copy comparisons between Oct 2020 and Jun 2026 snapshots. The article references specific copy but doesn't show side-by-side layout or design changes, w"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "reasons": [
+        "For SaaS teams building in regulated spend categories, the trade-off is clear: vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion ma",
+        "Add founder-facing takeaway after each analytical observation"
+      ],
+      "priority": "medium",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "01-intro",
+      "reasons": [
+        "Clarify the sectionsIncluded note—currently shows ['01-intro', '07-business-context'], suggesting missing sections. Either expand the article to include those sections or update metadata to reflect wh",
+        "The body text is very dense with long paragraphs (esp. the second section). Break up the three-sentence paragraphs into scannable chunks with bullets or shorter sentences to improve readability score."
+      ],
+      "priority": "low",
+      "source": "seo-audit"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "English-language players (Concur, Expensify, Divvy) competed on multi-geography automation",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Between 2020 and 2026, the European fintech localization pattern",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Why the homepage changed",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove competitor names (Concur, Expensify, Divvy) — not in evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove conversion predictions about 'costs you pipeline', 'filters exploratory traffic', 'conversion math improves' — no data supports these",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add H3 subheadings to 'Why the homepage changed' section to break down the analysis",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Break 103-word paragraph (starts 'Between 2020 and 2026...') into shorter blocks",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Break 128-word paragraph (starts 'This evolution maps...') into shorter blocks",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add specific runnable test at end anchored to Expensya evidence (not generic 'trade-off' advice)",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Rewrite final paragraph to anchor to Expensya-specific evidence rather than category-level generalization",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Section 05-cta-navigation-evolution (low priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    }
+  ]
+}

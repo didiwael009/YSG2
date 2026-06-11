@@ -51,6 +51,7 @@ import {
   type WriteSectionResult,
 } from './section-writer.js';
 import { generateLessonCards }          from './generate-lesson-cards.js';
+import { generateBusinessContext }      from './generate-business-context.js';
 import { runStrategicShiftDetector }    from './strategic-shift-detector.js';
 import { runSeoIntentPlanner }          from './seo-intent-planner.js';
 import { runCrossSectionPass } from './cross-section-pass.js';
@@ -355,6 +356,37 @@ async function main(): Promise<void> {
       sectionErrors.push({ section: '_strategic-shift', error: msg });
       appendRunLog(logPath, { section: '_strategic-shift', step: 'STRATEGIC SHIFT ERROR', ok: false, detail: msg });
       // Non-fatal: pipeline continues. Section writers will lack the thesis but can still run.
+    }
+  }
+
+  // ── Business context (07-business-context.final.md) ──────────────────────────
+  // Runs after strategic shift so the thesis is available. Writes directly to
+  // sections/07-business-context.final.md; the section loop will skip the section
+  // since the final.md already exists. Skipped in draft mode and single-section runs.
+  if (cli.mode !== 'draft' && !cli.onlySection) {
+    console.log(`\n${div}`);
+    console.log(`  Business context generator`);
+    try {
+      const bcLog = (step: string, ok: boolean, detail?: string): void => {
+        console.log(`  ${ok ? '✓' : '⚠'} ${step}${detail ? ` — ${detail}` : ''}`);
+        appendRunLog(logPath, { section: '_business-context', step, ok, detail: detail ?? '' });
+      };
+      const bcResult = await generateBusinessContext({
+        slug:        cli.slug,
+        writingDir,
+        sectionsDir,
+        tracker,
+        force:       cli.force,
+        onLog:       bcLog,
+      });
+      if (!bcResult.skipped) {
+        console.log(`  ✓ 07-business-context.final.md — $${bcResult.costUsd.toFixed(4)}`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Business context generation failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_business-context', error: msg });
+      appendRunLog(logPath, { section: '_business-context', step: 'BUSINESS CONTEXT ERROR', ok: false, detail: msg });
     }
   }
 

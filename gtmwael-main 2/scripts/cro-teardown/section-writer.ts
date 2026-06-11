@@ -60,30 +60,25 @@ export interface SectionMeta {
 }
 
 /**
- * Canonical run order — 6-section architecture (V5).
- * Adds 02-quick-answer (featured-snippet block) between intro and belief shift.
+ * Canonical run order — 2-section architecture (V6).
+ * Intro + business-context prose only. Structured analysis is handled by React
+ * components (MessagingEvolution, CtaEvolutionTable, LessonCards).
+ * 07-business-context is written by generate-business-context.ts before the
+ * section loop runs and will be skipped (final.md already exists).
  */
 export const SECTION_ORDER: readonly string[] = [
   '01-intro',
-  '02-quick-answer',
-  '03-visual-timeline',
-  '04-messaging-evolution',
-  '05-cta-navigation-evolution',
-  '06-lessons-for-saas-teams',
+  '07-business-context',
 ] as const;
 
 /** H2 heading fallback for the assembler. null = no heading (intro). Writer output takes precedence. */
 export const SECTION_HEADINGS: Record<string, string | null> = {
-  '01-intro':                    null,
-  '02-quick-answer':             '## Quick answer',
-  '03-visual-timeline':          '## The Belief Shift',
-  '04-messaging-evolution':      '## The Buyer Shift',
-  '05-cta-navigation-evolution': '## The Funnel Shift',
-  '06-lessons-for-saas-teams':   '## The Marketing Maturity Lesson',
+  '01-intro':            null,
+  '07-business-context': '## Why the homepage changed',
 };
 
 export const SECTION_META: Record<string, SectionMeta> = {
-  // ── Phase 4C canonical — 6-section architecture (V5 plain-explainer voice) ───
+  // ── Phase 4C canonical — 2-section architecture (V6) ─────────────────────────
   '01-intro': {
     title: 'Introduction',
     goalDescription:
@@ -122,219 +117,44 @@ RULES:
     criticMaxTokens: 4096,
   },
 
-  '02-quick-answer': {
-    title: 'Quick Answer',
+  '07-business-context': {
+    title: 'Why the Homepage Changed',
     goalDescription:
-      'Three sentences that answer the question completely. Optimised for Google ' +
-      'featured snippet extraction. Plain language. No jargon.',
+      'Three short paragraphs explaining the business context behind the homepage evolution. ' +
+      'Market entry context, product/competitive evolution, and industry shift. Plain language. ' +
+      'Each paragraph ≤60 words.',
     writerInstruction:
-`SECTION ROLE: Answer the search question in three sentences.
+`SECTION ROLE: Explain WHY the homepage evolved — the business context behind the changes.
 
-A reader who reads only this block must walk away with the full thesis.
+This section is written if generate-business-context.ts has not already produced the file.
+Use the evidence to infer the most likely business reasons for the homepage shifts.
 
-STRUCTURE — exactly three sentences:
-  Sentence 1: What [Company] changed. (What → what, stated plainly.)
-  Sentence 2: What this positioning assumes is already true — state the condition,
-              NOT why it "worked." No causation. No "because they own mindshare."
-              Example form: "This positioning assumes visitors already know what [X] does."
-  Sentence 3: Who should NOT copy this and why — describe the company that lacks
-              that condition, in one sentence.
+STRUCTURE — exactly three paragraphs, no H3 subheadings:
+
+  Paragraph 1 — Market entry context (≤60 words):
+  What was happening in [Company]'s market during the period covered?
+  What category were they entering or defending? Name the context plainly.
+
+  Paragraph 2 — Product/competitive evolution (≤60 words):
+  What changed in their product or competitive environment that would explain
+  the homepage shifts? Quote specific homepage changes as evidence.
+  Hedge inferences: "suggests", "points to", "is consistent with".
+
+  Paragraph 3 — Industry shift + convergence (≤60 words):
+  What broader industry trend does this evolution map to?
+  What other SaaS companies in adjacent categories made similar moves?
+  End with a single observation about what this says for SaaS teams in this space.
 
 RULES:
-  • Heading: "## Quick answer" (lowercase "answer").
-  • Plain language only. No expert terms.
-  • Maximum 75 words across all three sentences.
-  • NEVER say "this works because", "this succeeded because", "they own mindshare",
-    "visitors arrive knowing", "will cost you conversions", "will cost you traffic."
-  • State conditions, not outcomes. "This works if X is true" is OK.
-    "This worked" or "this will cost you" is NOT OK.`,
-    wordRange: { min: 50, max: 75 },
+  • H2 heading: "## Why the homepage changed"
+  • Three paragraphs only. No bullet lists. No H3 subheadings.
+  • Each paragraph ≤60 words.
+  • Plain language throughout. No jargon.
+  • Hedge every inference. Never claim causation.
+  • Use only evidence provided — no invented market context.`,
+    wordRange: { min: 120, max: 200 },
     maxRewriteLoops: 1,
     criticMaxTokens: 4096,
-    forbiddenPhrases: [
-      'this works for them because',
-      'works for them because',
-      'this worked because',
-      'this succeeded',
-      'own mindshare',
-      'visitors arrive knowing',
-      'will cost you conversions',
-      'will cost you qualified traffic',
-      'will cost you traffic',
-      'mindshare with',
-      'brand recognition they have',
-    ],
-  },
-
-  '03-visual-timeline': {
-    title: 'The Belief Shift',
-    goalDescription:
-      'What the new homepage asks visitors to believe. Three H3 sub-blocks. ' +
-      'Searchable heading. Plain explainer voice.',
-    writerInstruction:
-`SECTION ROLE: Show what the homepage now expects the visitor to already believe.
-
-The ## heading must contain searchable terms (e.g. "Shopify homepage positioning:
-how the headline changed between 2021 and 2026"). No clever-only headings.
-
-STRUCTURE — three H3 sub-blocks, in this order:
-
-  ### What changed
-  ≤60 words. Quote the old headline (bolded) and the new headline (bolded).
-  State the shift in plain words. No jargon.
-
-  ### Why it matters
-  ≤60 words. What does the new homepage now assume the visitor already knows or
-  believes? Plain language only. If you need to name a concept (e.g. "category
-  leadership"), define it in the same sentence: "this is category leadership —
-  when buyers already know what your company does before they land on the page."
-
-  ### What it costs
-  ≤60 words. Name what this targeting change gives up — concrete, not abstract.
-  End with a specific test the founder can run on their own page TODAY.
-  Make the test runnable in under five minutes.
-
-ENTRY POINT: read the evidence first, then decide what is most interesting about it.
-Open ### What changed with that — a finding, a paradox, or a concrete contrast.
-Do not default to a generic "the headline shifted from X to Y" opener if the
-evidence makes something more interesting.
-
-DO NOT identify buyers here — that is the next section.`,
-    wordRange: { min: 140, max: 200 },
-    criticMaxTokens: 8192,
-    forbiddenPhrases: [
-      'this approach succeeds',
-      'this works if your brand',
-      'this works for companies',
-      'this pattern succeeds',
-      'succeeds if your',
-      'non-branded traffic exceeds',
-      'exceeds 40%',
-      'exceeds 30%',
-      'exceeds 50%',
-      'if your traffic exceeds',
-      'removing this will cost',
-      'will cost conversions',
-      'will cost you',
-      'visitors typically leave',
-      'visitors leave before',
-      'they may leave before',
-    ],
-  },
-
-  '04-messaging-evolution': {
-    title: 'The Buyer Shift',
-    goalDescription:
-      'Who the page now targets vs. who it used to target. Three H3 sub-blocks. ' +
-      'Searchable heading. Concrete buyer descriptions, no buyer-stage jargon.',
-    writerInstruction:
-`SECTION ROLE: Show who the new page is for, in plain language.
-
-The ## heading should include "messaging" or "audience" plus the company name.
-
-STRUCTURE — three H3 sub-blocks:
-
-  ### Who the old page served
-  ≤60 words. Describe the old buyer concretely — "the small-business owner setting
-  up their first online store," not "the discovery-stage buyer." Quote one or two
-  pieces of old vocabulary that prove it — bolded.
-
-  ### Who the new page serves
-  ≤60 words. Describe the new buyer concretely. Quote new vocabulary — bolded.
-  What stage of the buying process do they appear to be in? Plain words.
-
-  ### What this means for the sales process
-  ≤60 words. Plain-language description of how this changes what happens after the
-  visitor lands — does the page expect a sales call, a self-serve signup, or
-  something else? End with a question the founder should ask about their own page.
-
-State the self-serve → sales-led shift HERE if it applies. Do not restate it elsewhere.`,
-    wordRange: { min: 140, max: 200 },
-    criticMaxTokens: 8192,
-    forbiddenPhrases: [
-      'this increased conversions',
-      'this drove growth',
-      'A/B tested',
-      'this proved',
-      'this improved performance',
-      'procurement-stage',
-      'discovery-stage',
-      'qualification filter',
-      'language for buyers who control',
-      'this is language for',
-      'this vocabulary signals that buyers',
-      'removing category explanations may cost',
-      'removing this explanation will cost',
-      'will cost you qualified',
-      'removing that explanation',
-    ],
-  },
-
-  '05-cta-navigation-evolution': {
-    title: 'The Funnel Shift',
-    goalDescription:
-      'How the CTA path changed. Three H3 blocks. Audit-style. Concrete, plain, scannable.',
-    writerInstruction:
-`SECTION ROLE: Show what changed in the conversion path. Make it auditable.
-
-The ## heading should include "CTA" or "conversion path" plus the company name.
-
-STRUCTURE — three H3 sub-blocks:
-
-  ### What changed
-  ≤60 words. State the count or the most striking single change in the first sentence.
-  Old CTAs (bolded) vs new (bolded). What was removed, what replaced it.
-
-  ### Who this filters out
-  ≤60 words. Describe the visitor type the new path no longer serves — concretely.
-  Plain language: "people who are still researching and not ready to start a trial,"
-  not "discovery-stage visitors."
-
-  ### Audit your own page
-  ≤60 words. Give the founder one specific check they can run on their own homepage.
-  Not generic — runnable in five minutes. Anchor it to what THIS company's evidence
-  revealed about CTA changes.
-
-State CTA-friction direction ONCE here. Do not restate in lessons.`,
-    wordRange: { min: 120, max: 180 },
-    criticMaxTokens: 8192,
-  },
-
-  '06-lessons-for-saas-teams': {
-    title: 'The Marketing Maturity Lesson',
-    goalDescription:
-      'Should the founder copy this? Four H3 blocks for maximum SEO and the clearest ' +
-      'possible decision support. The most SEO-valuable section in the article.',
-    writerInstruction:
-`SECTION ROLE: Help the founder decide whether to copy this move.
-
-The ## heading is the most SEO-critical in the article. Make it explicit:
-  "Should SaaS companies copy [Company]'s homepage strategy? When it works and when it doesn't"
-
-STRUCTURE — four H3 sub-blocks, in this order:
-
-  ### The pattern
-  ≤60 words. Name the meta-pattern this evolution shows, in plain words. NEW layer —
-  do not restate the belief shift, buyer shift, or funnel shift.
-
-  ### Who should copy this
-  ≤60 words. Describe the company that has the specific advantage this move requires.
-  Concrete: "if a stranger can guess what your product does from the URL alone,
-  you have the brand recognition this requires." Not abstract.
-
-  ### Who should NOT copy this
-  ≤60 words. The mirror image. Describe the company that does not have the advantage,
-  and what happens to them if they copy this anyway. This is the most important
-  block for SEO traffic.
-
-  ### The test before you copy
-  ≤60 words. One concrete test the founder can run RIGHT NOW. Under five minutes.
-  Anchored to what THIS company's evidence revealed.
-
-Three short paragraphs + the test block.
-Do NOT restate the belief shift, buyer shift, or funnel shift from earlier sections.`,
-    wordRange: { min: 180, max: 260 },
-    criticMaxTokens: 8192,
   },
   // ── Phase 4B legacy IDs (kept for compose-section.ts backward compat) ────
   '02-timeline': {

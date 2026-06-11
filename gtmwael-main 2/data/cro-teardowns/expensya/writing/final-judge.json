@@ -1,0 +1,51 @@
+{
+  "overallScore": 52,
+  "pass": false,
+  "evidenceAccuracy": 10,
+  "plainLanguage": 12,
+  "scannability": 0,
+  "searchableHeadings": 7,
+  "specificity": 10,
+  "rhythmAndOpening": 8,
+  "founderTakeaway": 0,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [
+    "Why the homepage changed"
+  ],
+  "unsupportedClaims": [
+    "English-language players (Concur, Expensify, Divvy) competed on multi-geography automation",
+    "Between 2020 and 2026, the European fintech localization pattern",
+    "SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings",
+    "vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves"
+  ],
+  "riskFlags": [
+    "By the end of this teardown, you will know when narrowing your positioning to a single geography strengthens conversion — and when it costs you pipeline",
+    "For SaaS teams building in regulated spend categories, the trade-off is clear: vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves"
+  ],
+  "requiredFixes": [
+    "Remove competitor names (Concur, Expensify, Divvy) — not in evidence",
+    "Remove 'European fintech localization pattern' claim — not in evidence",
+    "Remove conversion predictions about 'costs you pipeline', 'filters exploratory traffic', 'conversion math improves' — no data supports these",
+    "Remove unsupported claim about 'embedded bank offerings' competition — not in evidence",
+    "Add H3 subheadings to 'Why the homepage changed' section to break down the analysis",
+    "Break 103-word paragraph (starts 'Between 2020 and 2026...') into shorter blocks",
+    "Break 128-word paragraph (starts 'This evolution maps...') into shorter blocks",
+    "Add founder-facing takeaway after each analytical observation",
+    "Add specific runnable test at end anchored to Expensya evidence (not generic 'trade-off' advice)",
+    "Rewrite final paragraph to anchor to Expensya-specific evidence rather than category-level generalization"
+  ],
+  "optionalImprovements": [
+    "Add H3 subheading before 'That repositioning didn't happen in a vacuum' paragraph",
+    "Vary sentence rhythm — multiple long explanatory sentences without short punchy breaks",
+    "Opening paragraph could explain what 'setting the standard' means in CRO terms before applying"
+  ],
+  "rerunRecommendations": [
+    "Why the homepage changed — rewrite to remove unsupported claims, add H3 structure, anchor to Expensya evidence only, add founder takeaway"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.03542100000000001,
+  "generatedAt": "2026-06-11T16:47:40.089Z"
+}

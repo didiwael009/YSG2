@@ -528,7 +528,10 @@ export function buildArticleBlueprint(pack: EvidencePack): ArticleBlueprint {
 
   const firstSnapshot = pack.snapshots[0];
   const featuredImage = firstSnapshot?.screenshotPath ?? '';
-  const featuredImageAlt = `${pack.companyName} homepage — ${pack.fromLabel}`;
+  const fromH1ForAlt = pack.fromText.h1?.[0]?.trim() ?? '';
+  const featuredImageAlt = fromH1ForAlt
+    ? `${pack.companyName} ${pack.fromLabel} homepage — '${fromH1ForAlt}'`
+    : `${pack.companyName} homepage — ${pack.fromLabel}`;
 
   const readTime = estimateReadTime({
     snapshotCount: pack.snapshots.length,
