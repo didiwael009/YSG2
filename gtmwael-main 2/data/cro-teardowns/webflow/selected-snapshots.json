@@ -1,0 +1,32 @@
+[
+  {
+    "month": "2020-01",
+    "slotStart": "2020-01",
+    "slotEnd": "2020-03",
+    "timestamp": "20200218011356",
+    "originalUrl": "https://webflow.com/",
+    "screenshotPath": "/cro-teardowns/webflow/archive-monthly/2020-01.webp",
+    "selectedPath": "/cro-teardowns/webflow/selected/2020-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  },
+  {
+    "month": "current",
+    "slotStart": "current",
+    "slotEnd": "current",
+    "timestamp": null,
+    "originalUrl": "https://webflow.com/",
+    "screenshotPath": "/cro-teardowns/webflow/archive-monthly/current-live.webp",
+    "selectedPath": "/cro-teardowns/webflow/selected/current-live.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  }
+]

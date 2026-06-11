@@ -1,0 +1,110 @@
+{
+  "createdAt": "2026-06-11T17:04:21.030Z",
+  "slug": "webflow",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": false,
+    "finalJudgeScore": 45,
+    "seoScore": 76
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "01-intro",
+      "reasons": [
+        "Judge rerun recommendation: Rerun section '01-intro' — remove unsupported competitive claims, add H3 structure with Webflow-specific evidence anchors, add founder takeaways",
+        "Break paragraphs exceeding 60 words (the opening paragraph is 84 words, the second paragraph in 'Why the homepage changed' is 98 words, the final paragraph is 118 words)",
+        "Clarify search intent match: Article analyzes *why* Webflow changed, but a searcher looking for 'Webflow homepage CRO teardown' may want to *see* the changes first. Restructure to lead with what chang"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: Rerun section '07-business-context' — remove generic SaaS category creation advice, anchor every claim to Webflow evidence, add runnable test",
+        "Webflow pivoted from capability positioning toward outcome-based enterprise messaging",
+        "Webflow pivoted from capability positioning toward outcome-based enterprise messaging — asserts company strategy without evidence",
+        "Remove all competitive landscape claims (WordPress VIP, Adobe Experience Manager, 'crowded no-code space') — none of this appears in the evidence",
+        "Remove AI-native search interfaces claim — not in evidence",
+        "Strengthen keyword placement: Primary keyword 'Webflow homepage CRO teardown' appears only in title and meta description. Embed it naturally 1–2 times in body (e.g., 'This Webflow homepage CRO teardow",
+        "Add data/evidence caveat: Article makes positioning claims (e.g., 'shift toward sales-assisted team deals') without citing conversion data or Webflow's public statements. Add a note clarifying these a"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "Judge rerun recommendation: Generate missing analytical sections (headline analysis, meta description analysis, CTA evolution, section heading shift) with H3 subheadings and foun",
+        "elevating 'Contact Sales' to co-primary CTA",
+        "Remove the phrase 'elevating Contact Sales to co-primary CTA' — the evidence shows 'Contact Sales' was added, but contains no information about hierarchy or co-primary status",
+        "Add H3 subheadings analyzing specific evidence items: headline change mechanism, meta description vocabulary shift, section heading evolution",
+        "Expand H2 hierarchy: Article currently has only one content H2 ('Why the homepage changed') after the intro H1. Add at least 2–3 more structural H2s to cover: 'Headline Evolution', 'CTA & Navigation C"
+      ],
+      "priority": "high",
+      "source": "both"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "The period also saw AI-native search interfaces emerge as distribution channels",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "This maps to the broader SaaS category creation pattern: companies with proven product-market fit reposition into newly named categories to escape commoditization in saturated markets",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Why the homepage changed",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Entire article structure",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone — presents market dynamics as fact without evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "suggests Webflow pivoted — slightly hedged but still asserts strategic intent",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "This maps to the broader SaaS category creation pattern — generic SaaS advice not anchored to Webflow evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "If your brand still requires feature education, this move is premature — conversion prediction about timing",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add H3 subheadings to the 'Why the homepage changed' section to break up the analytical wall of text",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add a final section with a specific runnable test anchored to Webflow evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Replace 'forcing website platforms to differentiate' with evidence-based observation about what Webflow's page now emphasizes",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Section 06-lessons-for-saas-teams (medium priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    },
+    {
+      "issue": "Section 03-visual-timeline (low priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "slug": "webflow",
+  "generatedAt": "2026-06-11T17:04:21.031Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 1,
+      "riskFlags": [
+        "The phrase 'repositioned upmarket' is a mild strategic claim — the evidence shows CTA changes and enterprise-grade language, but does not include pricing tier data or ARR distribution to confirm upmarket movement as a completed outcome"
+      ],
+      "remainingIssueCount": 2,
+      "remainingIssues": [
+        "The phrase 'signaling a shift toward category creation' introduces strategic interpretation not directly traceable to the evidence — the evidence shows AEO was added, but does not confirm the intent was category creation vs. SEO keyword targeting",
+        "The final clause 'what that means for SaaS companies deciding whether to follow a similar path' promises strategic analysis not yet delivered in the intro, creating a mild expectation gap"
+      ],
+      "sectionCostUsd": 0.0429825
+    }
+  ],
+  "averageScore": 88,
+  "passCount": 1,
+  "failCount": 0,
+  "skippedCount": 1,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [
+    "The phrase 'repositioned upmarket' is a mild strategic claim — the evidence shows CTA changes and enterprise-grade language, but does not include pricing tier data or ARR distribution to confirm upmarket movement as a completed outcome"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 45,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Remove all competitive landscape claims (WordPress VIP, Adobe Experience Manager, 'crowded no-code space') — none of this appears in the evidence",
+    "Remove the phrase 'elevating Contact Sales to co-primary CTA' — the evidence shows 'Contact Sales' was added, but contains no information about hierarchy or co-primary status",
+    "Remove the entire SaaS category creation pattern paragraph — it is generic advice not anchored to Webflow-specific evidence",
+    "Add H3 subheadings to the 'Why the homepage changed' section to break up the analytical wall of text",
+    "Add H3 subheadings analyzing specific evidence items: headline change mechanism, meta description vocabulary shift, section heading evolution",
+    "Add founder takeaways to each analytical block",
+    "Add a final section with a specific runnable test anchored to Webflow evidence",
+    "Break paragraphs exceeding 60 words (the opening paragraph is 84 words, the second paragraph in 'Why the homepage changed' is 98 words, the final paragraph is 118 words)",
+    "Remove AI-native search interfaces claim — not in evidence",
+    "Replace 'forcing website platforms to differentiate' with evidence-based observation about what Webflow's page now emphasizes"
+  ],
+  "seoScore": 76,
+  "seoPass": false,
+  "seoRequiredFixes": [
+    "Expand H2 hierarchy: Article currently has only one content H2 ('Why the homepage changed') after the intro H1. Add at least 2–3 more structural H2s to cover: 'Headline Evolution', 'CTA & Navigation Changes', 'Messaging Themes', 'Lessons for SaaS Teams'.",
+    "Add visual evidence: Insert before/after screenshots or link to web archive snapshots. Without images, this reads as analysis essay, not teardown.",
+    "Clarify search intent match: Article analyzes *why* Webflow changed, but a searcher looking for 'Webflow homepage CRO teardown' may want to *see* the changes first. Restructure to lead with what changed, then explain why.",
+    "Strengthen keyword placement: Primary keyword 'Webflow homepage CRO teardown' appears only in title and meta description. Embed it naturally 1–2 times in body (e.g., 'This Webflow homepage CRO teardown reveals...').",
+    "Add data/evidence caveat: Article makes positioning claims (e.g., 'shift toward sales-assisted team deals') without citing conversion data or Webflow's public statements. Add a note clarifying these are inference-based observations, not confirmed metrics."
+  ],
+  "articleWordCount": 358,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~100w): \"Between January 2020 and June 2026, Webflow rewrote…\""
+  ],
+  "overLengthWarning": null
+}

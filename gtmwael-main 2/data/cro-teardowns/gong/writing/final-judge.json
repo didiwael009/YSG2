@@ -1,0 +1,54 @@
+{
+  "overallScore": 45,
+  "pass": false,
+  "evidenceAccuracy": 8,
+  "plainLanguage": 12,
+  "scannability": 5,
+  "searchableHeadings": 7,
+  "specificity": 6,
+  "rhythmAndOpening": 5,
+  "founderTakeaway": 2,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [
+    "Why the homepage changed",
+    "Opening paragraph",
+    "Overall article structure"
+  ],
+  "unsupportedClaims": [
+    "Gong entered as a conversation intelligence vendor in a sales tech landscape crowded with point solutions",
+    "By 2020, 'Revenue Intelligence' was still novel enough to warrant a dedicated navigation item",
+    "The early homepage served mid-funnel buyers discovering the category",
+    "once your category becomes RFP vocabulary, you graduate from educator to OS",
+    "Wait until discovery calls stop asking what your category means",
+    "premature infrastructure positioning confuses buyers still Googling '[category] + definition'"
+  ],
+  "riskFlags": [
+    "'This maps to the AI-era platform consolidation pattern' — presents interpretation as established fact without hedge",
+    "'The shifts documented above reflect a deliberate strategic repositioning' — asserts company intent without evidence",
+    "'Gong entered as a conversation intelligence vendor' — historical claim not in evidence",
+    "'premature infrastructure positioning confuses buyers' — causal prediction without data"
+  ],
+  "requiredFixes": [
+    "Add H3 subheadings to 'Why the homepage changed' section to break up the 3-paragraph wall of text",
+    "Remove all unsupported claims about Gong's market entry, competitive landscape, buyer funnel stage, and RFP vocabulary timing",
+    "Rewrite opening to match evidence scope — article only has 3 snapshots showing headline/meta/nav changes, not a full 6-year redesign study",
+    "Replace consultant-speak phrases ('deliberate strategic repositioning', 'AI-era platform consolidation pattern', 'graduate from educator to OS') with plain explanations of what the evidence shows",
+    "Add founder takeaway at end of 'Why the homepage changed' section anchored to specific evidence (e.g., 'Check your nav: if you still have a 'What is [category]?' link but buyers already know the term, you are paying nav real estate for education you no longer need')",
+    "Break 118-word paragraph starting with 'By 2026, Gong replaced...' into two paragraphs at natural break",
+    "Add specific runnable test at end anchored to Gong evidence (e.g., 'Pull 20 discovery call transcripts. If fewer than 3 prospects ask what your category means, test removing category education from primary nav')"
+  ],
+  "optionalImprovements": [
+    "Add rhythm variation — all sentences in final paragraph are compound/complex; insert 1-2 short declarative sentences",
+    "Consider adding H3 for the nav change observation to improve scannability",
+    "The opening could specify what evidence was analyzed (headline, meta, nav, H2s) rather than generic 'what changed'"
+  ],
+  "rerunRecommendations": [
+    "07-business-context — entire section needs rewrite to remove unsupported claims and add H3 structure"
+  ],
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.02424000000000001,
+  "generatedAt": "2026-06-11T17:03:58.345Z"
+}

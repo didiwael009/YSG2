@@ -1,0 +1,32 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'signaling a shift toward category creation' introduces strategic interpretation not directly traceable to the evidence — the evidence shows AEO was added, but does not confirm the intent was category creation vs. SEO keyword targeting",
+    "The final clause 'what that means for SaaS companies deciding whether to follow a similar path' promises strategic analysis not yet delivered in the intro, creating a mild expectation gap"
+  ],
+  "requiredFixes": [
+    "Replace 'signaling a shift toward category creation rather than category participation' with 'introducing terms like AEO that position the platform beyond traditional website builders' — keeps interpretation mild and traceable",
+    "Consider tightening the final clause to 'and whether other platforms can copy this shift' to match the evidence's copy_this_if / do_not_copy_this_if structure more closely"
+  ],
+  "riskFlags": [
+    "The phrase 'repositioned upmarket' is a mild strategic claim — the evidence shows CTA changes and enterprise-grade language, but does not include pricing tier data or ARR distribution to confirm upmarket movement as a completed outcome"
+  ],
+  "seoNotes": [
+    "The H1 contains both 'Webflow Homepage Teardown' (exact primary keyword match) and the key positioning shift ('Visual Builder to Growth Engine'), which targets both navigational and informational search intent",
+    "The opening sentence answers the search query directly: 'Webflow rewrote its homepage to target a different buyer' — immediate value for skimmers",
+    "The draft uses quoted verbatim elements ('Break the code barrier', 'Make your website a growth engine', 'AEO', 'enterprise-grade security') which improve scannability and support featured snippet eligibility",
+    "The word 'repositioned' appears twice (H1 and body), reinforcing the strategic framing the searcher expects"
+  ],
+  "rewriteInstruction": "Soften the 'category creation' interpretation to keep it anchored to observable evidence (AEO was added, enterprise-grade was added) rather than inferred intent. The rest of the intro is strong — specific, scannable, and delivers the answer in the first sentence. The draft achieves the section goal and stays in plain language throughout.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

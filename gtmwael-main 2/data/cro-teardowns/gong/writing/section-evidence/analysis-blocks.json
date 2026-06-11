@@ -1,0 +1,27 @@
+[
+  {
+    "id": "analysis-2020-01",
+    "label": "Jan 2020 — original state",
+    "period": "Jan 2020",
+    "screenshotPath": "/cro-teardowns/gong/selected/2020-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"REVENUE INTELLIGENCE\" — direct product statement.",
+      "Visible section headings include: \"Get powerful visibility into your customer interactions with\", \"Revenue Intelligence helps you fuel:\", \"So What Does this look like? Glad you asked.\".",
+      "Navigation includes: \"Log In\", \"What is RI?\", \"Overview\", \"Reveal: The RI Podcast\" — product category framing.",
+      "Section headings later removed include: \"Get powerful visibility into your customer interactions with\" and \"Revenue Intelligence helps you fuel:\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/gong/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Revenue AI Built To Predict churnPredict churn\" — updated value proposition.",
+      "New section headings include: \"Trusted by 5,000+ customers\", \"Winning GTM organizations run revenue on Gong\", \"Pitchbook is 10x more efficient with revenue AI\".",
+      "CTAs no longer present include: \"Watch Video\", \"Paul Santarelli VP of Sales\", \"Bevin Lyon VP, Customer Strategy\"."
+    ]
+  }
+]

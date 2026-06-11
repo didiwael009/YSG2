@@ -1,0 +1,115 @@
+{
+  "slug": "gong",
+  "companyName": "Gong",
+  "companyUrl": "https://www.gong.io/",
+  "fromMonth": "2020-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-11T17:01:38.129Z",
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "label": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/gong/selected/2020-01.webp",
+      "timestamp": "20200212224920",
+      "originalUrl": "https://www.gong.io/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2021-10",
+      "label": "Oct 2021",
+      "screenshotPath": "/cro-teardowns/gong/selected/2021-10.webp",
+      "timestamp": "20211115214050",
+      "originalUrl": "https://www.gong.io/",
+      "similarityToPrev": 0.8465,
+      "comparedTo": "2020-01"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/gong/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.gong.io/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Trusted by 5,000+ customers",
+      "Winning GTM organizations run revenue on Gong",
+      "Pitchbook is 10x more efficient with revenue AI",
+      "Power your revenue engine with AI — from prospecting to expansion",
+      "Gong Revenue AI OS",
+      "Trusted by high-performing revenue teams in every industry",
+      "What our raving fans say",
+      "Everyone wins with Gong",
+      "Win more with revenue AI",
+      "Privacy Preference Center"
+    ],
+    "h2Removed": [
+      "Get powerful visibility into your customer interactions with",
+      "Revenue Intelligence helps you fuel:",
+      "So What Does this look like? Glad you asked.",
+      "Skyrocket your success today"
+    ],
+    "ctaAdded": [
+      "Read the case study",
+      "Learn about our product",
+      "See Gong in action",
+      "Visit the solutions hub",
+      "View more customer stories"
+    ],
+    "ctaRemoved": [
+      "Watch Video",
+      "Paul Santarelli VP of Sales",
+      "Bevin Lyon VP, Customer Strategy",
+      "Tonni Bennett VP of Sales"
+    ],
+    "navAdded": [
+      "View Gong Labs Trends",
+      "Sign in",
+      "Gong AI",
+      "Product",
+      "Solutions",
+      "Innovation",
+      "Raving fans",
+      "Company"
+    ],
+    "navRemoved": [
+      "Log In",
+      "Overview",
+      "Reveal: The RI Podcast",
+      "Coaching Recommendations",
+      "Deal Visibility",
+      "Integrations",
+      "Security",
+      "FAQ"
+    ],
+    "headlines": [
+      {
+        "from": "REVENUE INTELLIGENCE",
+        "to": "Revenue AI Built To Predict churnPredict churn",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+        "to": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

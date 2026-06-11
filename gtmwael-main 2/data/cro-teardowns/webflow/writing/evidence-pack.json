@@ -1,0 +1,102 @@
+{
+  "slug": "webflow",
+  "companyName": "Webflow",
+  "companyUrl": "https://webflow.com/",
+  "fromMonth": "2020-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-11T17:01:39.056Z",
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "label": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/webflow/selected/2020-01.webp",
+      "timestamp": "20200218011356",
+      "originalUrl": "https://webflow.com/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/webflow/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://webflow.com/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Webflow is the agentic web marketing platform for high-performing brands",
+      "300,000+ brands move the needle with Webflow",
+      "From idea to impact, faster",
+      "Everything marketing teams love about webflow",
+      "Make your website your competitive edge"
+    ],
+    "h2Removed": [
+      "Who uses Webflow",
+      "Get up and running fast",
+      "Free until you’re ready to launch"
+    ],
+    "ctaAdded": [
+      "Get started",
+      "Contact Sales",
+      "Start for free",
+      "Explore AEO",
+      "Start building",
+      "Start publishing",
+      "Start optimizing",
+      "Read customer story",
+      "Get started — it's free",
+      "Talk to sales"
+    ],
+    "ctaRemoved": [
+      "Get started — it's free",
+      "Dell prototypes faster and more effectively.",
+      "Heco builds world-class sites for clients.",
+      "Showcase See the best sites #MadeInWebflow.",
+      "Events Connect with the community.",
+      "Live Stream Rebuilds, interviews, and more.",
+      "Templates Browse 100+ custom templates.",
+      "University Videos, guides, and mild humor.",
+      "Courses Hours of full-length video tutorials.",
+      "Ebooks In-depth guides and articles."
+    ],
+    "navAdded": [
+      "Platform →",
+      "← Back",
+      "Design",
+      "Edit content",
+      "Interactions",
+      "Collaboration",
+      "Page building",
+      "CMS"
+    ],
+    "navRemoved": [],
+    "headlines": [
+      {
+        "from": "Break the code barrier",
+        "to": "Make your website a growth engine",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
+        "to": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "slug": "gong",
+  "companyName": "Gong",
+  "companyUrl": "https://www.gong.io/",
+  "category": "CRO Teardown",
+  "title": "Gong Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Gong rewrote its homepage over 6 years",
+  "metaTitle": "Gong Homepage CRO Teardown — Jan 2020 to Jun 2026",
+  "description": "A CRO teardown of Gong's homepage from Jan 2020 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Gong's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2020 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-11",
+  "readTime": "8 min read",
+  "featuredImage": "/cro-teardowns/gong/selected/2020-01.webp",
+  "featuredImageAlt": "Gong Jan 2020 homepage — 'REVENUE INTELLIGENCE'",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "label": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/gong/selected/2020-01.webp"
+    },
+    {
+      "month": "2021-10",
+      "label": "Oct 2021",
+      "screenshotPath": "/cro-teardowns/gong/selected/2021-10.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/gong/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "3 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "10 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "REVENUE INTELLIGENCE",
+      "after": "Revenue AI Built To Predict churnPredict churn",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+      "after": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Revenue Intelligence Technology for Sales Teams | Gong.io",
+      "after": "Gong - Revenue AI OS"
+    }
+  ],
+  "h2Added": [
+    "Trusted by 5,000+ customers",
+    "Winning GTM organizations run revenue on Gong",
+    "Pitchbook is 10x more efficient with revenue AI",
+    "Power your revenue engine with AI — from prospecting to expansion",
+    "Gong Revenue AI OS",
+    "Trusted by high-performing revenue teams in every industry",
+    "What our raving fans say",
+    "Everyone wins with Gong",
+    "Win more with revenue AI",
+    "Privacy Preference Center"
+  ],
+  "h2Removed": [
+    "Get powerful visibility into your customer interactions with",
+    "Revenue Intelligence helps you fuel:",
+    "So What Does this look like? Glad you asked.",
+    "Skyrocket your success today"
+  ],
+  "ctaAdded": [
+    "Read the case study",
+    "Learn about our product",
+    "See Gong in action",
+    "Visit the solutions hub",
+    "View more customer stories"
+  ],
+  "ctaRemoved": [
+    "Watch Video",
+    "Paul Santarelli VP of Sales",
+    "Bevin Lyon VP, Customer Strategy",
+    "Tonni Bennett VP of Sales"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2020-01",
+      "label": "Jan 2020 — original state",
+      "period": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/gong/selected/2020-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"REVENUE INTELLIGENCE\" — direct product statement.",
+        "Visible section headings include: \"Get powerful visibility into your customer interactions with\", \"Revenue Intelligence helps you fuel:\", \"So What Does this look like? Glad you asked.\".",
+        "Navigation includes: \"Log In\", \"What is RI?\", \"Overview\", \"Reveal: The RI Podcast\" — product category framing.",
+        "Section headings later removed include: \"Get powerful visibility into your customer interactions with\" and \"Revenue Intelligence helps you fuel:\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/gong/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Revenue AI Built To Predict churnPredict churn\" — updated value proposition.",
+        "New section headings include: \"Trusted by 5,000+ customers\", \"Winning GTM organizations run revenue on Gong\", \"Pitchbook is 10x more efficient with revenue AI\".",
+        "CTAs no longer present include: \"Watch Video\", \"Paul Santarelli VP of Sales\", \"Bevin Lyon VP, Customer Strategy\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"REVENUE INTELLIGENCE\" to \"Revenue AI Built To Predict churnPredict churn\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Log In\", \"Overview\", \"Reveal: The RI Podcast\" to \"View Gong Labs Trends\", \"Sign in\", \"Gong AI\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "10 section headings were added and 4 removed between Jan 2020 and Jun 2026. New headings include \"Trusted by 5,000+ customers\" and \"Winning GTM organizations run revenue on Gong\". Headings that disappeared include \"Get powerful visibility into your customer interactions with\" and \"Revenue Intelligence helps you fuel:\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 3 snapshots spanning roughly 6 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

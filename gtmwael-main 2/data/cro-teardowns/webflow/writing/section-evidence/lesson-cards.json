@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Webflow replaced \"Break the code barrier\" with \"Make your website a growth engine\"",
+    "category": "Positioning",
+    "body": "The original headline positioned Webflow as a no-code tool for designers. The new headline positions it as a marketing platform for revenue-focused teams. This suggests the company is moving upmarket — targeting buyers who care about business outcomes, not creative freedom. The shift from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** is a filtering decision: it will read as more relevant to CMOs and less exciting to solo designers."
+  },
+  {
+    "number": "02",
+    "title": "\"Agentic web marketing platform\" appears in both the page title and the first H2",
+    "category": "Messaging",
+    "body": "Webflow now calls itself an **\"agentic web marketing platform\"** in the page title and again in the hero section. The term \"agentic\" is uncommon in mainstream marketing copy — it may signal a strategic bet on AI-native positioning. The repetition across title and H2 suggests the company wants search engines and skimmers to associate Webflow with automation and agent-driven workflows, not just visual design."
+  },
+  {
+    "number": "03",
+    "title": "The new meta description mentions \"AI search\" and \"AEO\" — neither appeared in 2020",
+    "category": "Strategy",
+    "body": "The updated meta description now includes **\"optimize, and rank in AI search\"** and references **\"AEO\"** (AI Engine Optimization). These terms did not exist in the 2020 version. This change likely reflects Webflow's response to the rise of AI-powered search engines like ChatGPT and Perplexed. The company is signaling to buyers that it solves a new category problem — not just SEO, but discoverability in LLM-mediated search results."
+  },
+  {
+    "number": "04",
+    "title": "Webflow removed \"Get up and running fast\" and added \"From idea to impact, faster\"",
+    "category": "Brand",
+    "body": "The original section heading **\"Get up and running fast\"** emphasized ease of use and speed to first publish. The new heading **\"From idea to impact, faster\"** emphasizes speed to business outcome. This is a semantic shift: the old frame appealed to creators who wanted to launch quickly; the new frame appeals to marketers who want to measure results. The evolution points to a buyer who already knows what they want to build."
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "score": 83,
+  "pass": false,
+  "issues": [
+    "Paragraph exceeds 90-word limit (intro is ~142 words)",
+    "Final sentence uses generic framing ('test whether your own homepage...') instead of Gong-specific takeaway",
+    "Heading contains searchable terms but misses opportunity for primary keyword inclusion",
+    "Opening sentence uses 'stopped teaching' without evidence qualifier — evidence shows navigation removal and headline change, not explicit abandonment of education",
+    "Minor rhythm issue: three consecutive sentences of similar structure in middle portion"
+  ],
+  "requiredFixes": [
+    "PARAGRAPH LENGTH: Cut the intro from ~142 words to 90 words or below. Remove the final sentence ('This article walks through...') entirely — it is a generic meta-comment that adds no Gong-specific value and makes the paragraph too long.",
+    "EVIDENCE FRAMING: Change 'Gong stopped teaching visitors what Revenue Intelligence means' to 'Gong removed its category-education navigation' or similar — the evidence shows what was removed, not a confirmed strategic intent to stop teaching.",
+    "HEADING: Add 'Jan 2020 to Jun 2026' to the heading for date-range searchability and to match the article title structure. Consider: 'Gong Homepage Teardown: Jan 2020 to Jun 2026 — From Category Education to AI Platform'"
+  ],
+  "riskFlags": [
+    "'stopped teaching' implies strategic intent beyond what the evidence confirms — evidence shows navigation removal ('What is RI?' deleted) but not explicit abandonment of all education",
+    "'started positioning itself as an operating system' — supported by 'Revenue AI OS' language, but no conversion/outcome data provided to confirm this positioning is working or intentional"
+  ],
+  "seoNotes": [
+    "Heading includes 'Gong Homepage Teardown' but misses the date range, which appears in the article title and may be part of the search query",
+    "First sentence answers the query directly with company name, period, and shift — strong SEO structure",
+    "Bold quotes applied correctly to all verbatim website text",
+    "No keyword stuffing detected; natural integration of 'Gong', 'homepage', 'Revenue Intelligence', 'category'"
+  ],
+  "rewriteInstruction": "Cut the paragraph to 90 words by removing the final sentence entirely. Reframe the opening to be less causal: instead of 'Gong stopped teaching', write 'Gong removed its category-education navigation' or 'Gong's homepage no longer opens with category explanation' — stick to what the evidence shows (elements removed, elements added). Vary sentence length: the middle three sentences are structurally similar. Consider combining two of them or breaking one into a shorter fragment. Add the date range 'Jan 2020 to Jun 2026' to the heading so it matches the article title and captures date-specific searches.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 15,
+    "plainLanguage": 20,
+    "scannability": 10,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "month": "2020-01",
+    "slotStart": "2020-01",
+    "slotEnd": "2020-03",
+    "timestamp": "20200212224920",
+    "originalUrl": "https://www.gong.io/",
+    "screenshotPath": "/cro-teardowns/gong/archive-monthly/2020-01.webp",
+    "selectedPath": "/cro-teardowns/gong/selected/2020-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  },
+  {
+    "month": "2021-10",
+    "slotStart": "2021-10",
+    "slotEnd": "2021-12",
+    "timestamp": "20211115214050",
+    "originalUrl": "https://www.gong.io/",
+    "screenshotPath": "/cro-teardowns/gong/archive-monthly/2021-10.webp",
+    "selectedPath": "/cro-teardowns/gong/selected/2021-10.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": false,
+    "similarityToPrev": 0.8465,
+    "comparedTo": "2020-01",
+    "mode": "auto"
+  },
+  {
+    "month": "current",
+    "slotStart": "current",
+    "slotEnd": "current",
+    "timestamp": null,
+    "originalUrl": "https://www.gong.io/",
+    "screenshotPath": "/cro-teardowns/gong/archive-monthly/current-live.webp",
+    "selectedPath": "/cro-teardowns/gong/selected/current-live.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  }
+]

@@ -35,6 +35,7 @@ import {
   metaDescChangeNote,
   yearsBetween,
 } from './config/writing-config.js';
+import { cleanBodyText } from './normalize-page-text.js';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -207,7 +208,7 @@ function buildAnalysisBlocks(pack: EvidencePack): AnalysisBlock[] {
   const { diff, fromText, toText, fromLabel, toLabel } = pack;
 
   // ── Block 1: baseline (from snapshot) ──────────────────────────────────────
-  const fromH1 = fromText.h1?.[0]?.trim() ?? '';
+  const fromH1 = cleanBodyText(fromText.h1?.[0]?.trim() ?? '');
   const fromSnap = pack.snapshots.find(s => s.month === pack.fromMonth);
   if (fromSnap) {
     const baselineAnnotations: string[] = [];
@@ -274,8 +275,8 @@ function buildAnalysisBlocks(pack: EvidencePack): AnalysisBlock[] {
     ];
 
     if (mtText) {
-      const mtH1 = mtText.h1?.[0]?.trim();
-      if (mtH1 && mtH1 !== (fromText.h1?.[0]?.trim() ?? '')) {
+      const mtH1 = cleanBodyText(mtText.h1?.[0]?.trim() ?? '') || undefined;
+      if (mtH1 && mtH1 !== cleanBodyText(fromText.h1?.[0]?.trim() ?? '')) {
         midAnnotations.push(`H1 in this snapshot: "${mtH1}".`);
       }
       const mtH2Added = mtText.h2?.filter(h => !fromText.h2?.includes(h)).slice(0, 2) ?? [];
@@ -303,7 +304,7 @@ function buildAnalysisBlocks(pack: EvidencePack): AnalysisBlock[] {
   }
 
   // ── Block 3: current/to snapshot ──────────────────────────────────────────
-  const toH1 = toText.h1?.[0]?.trim() ?? '';
+  const toH1 = cleanBodyText(toText.h1?.[0]?.trim() ?? '');
   const toSnap = pack.snapshots.find(s => s.month === pack.toMonth);
   if (toSnap) {
     const currentAnnotations: string[] = [];
@@ -368,8 +369,8 @@ function buildAnalysisBlocks(pack: EvidencePack): AnalysisBlock[] {
 function buildLessonCards(pack: EvidencePack, quality: DataQuality): LessonCard[] {
   const lessons: LessonCard[] = [];
   const { diff } = pack;
-  const fromH1 = pack.fromText.h1?.[0]?.trim() ?? '';
-  const toH1 = pack.toText.h1?.[0]?.trim() ?? '';
+  const fromH1 = cleanBodyText(pack.fromText.h1?.[0]?.trim() ?? '');
+  const toH1 = cleanBodyText(pack.toText.h1?.[0]?.trim() ?? '');
 
   // 1. Headline lesson (if headline changed)
   if (quality.headlineChanged && fromH1 && toH1) {
@@ -458,8 +459,8 @@ function buildTitleBlock(pack: EvidencePack, quality: DataQuality): {
 } {
   const { companyName, fromLabel, toLabel } = pack;
   const yearsSpan = yearsBetween(pack.fromMonth, pack.toMonth, pack.generatedAt);
-  const fromH1 = pack.fromText.h1?.[0]?.trim() ?? '';
-  const toH1 = pack.toText.h1?.[0]?.trim() ?? '';
+  const fromH1 = cleanBodyText(pack.fromText.h1?.[0]?.trim() ?? '');
+  const toH1 = cleanBodyText(pack.toText.h1?.[0]?.trim() ?? '');
 
   const title = quality.visualOnly
     ? `${companyName} Homepage Visual Teardown: ${fromLabel} to ${toLabel}`
@@ -528,7 +529,7 @@ export function buildArticleBlueprint(pack: EvidencePack): ArticleBlueprint {
 
   const firstSnapshot = pack.snapshots[0];
   const featuredImage = firstSnapshot?.screenshotPath ?? '';
-  const fromH1ForAlt = pack.fromText.h1?.[0]?.trim() ?? '';
+  const fromH1ForAlt = cleanBodyText(pack.fromText.h1?.[0]?.trim() ?? '');
   const featuredImageAlt = fromH1ForAlt
     ? `${pack.companyName} ${pack.fromLabel} homepage — '${fromH1ForAlt}'`
     : `${pack.companyName} homepage — ${pack.fromLabel}`;

@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 5,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "generatedAt": "2026-06-11T17:01:39.065Z",
+  "postSummary": {
+    "title": "Webflow Homepage Teardown: Jan 2020 to Jun 2026",
+    "h1": "How Webflow rewrote its homepage over 6 years",
+    "readTime": "7 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 2,
+    "lessonCardCount": 3,
+    "snapshotCount": 2
+  }
+}

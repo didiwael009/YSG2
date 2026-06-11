@@ -1,0 +1,26 @@
+[
+  {
+    "id": "analysis-2020-01",
+    "label": "Jan 2020 — original state",
+    "period": "Jan 2020",
+    "screenshotPath": "/cro-teardowns/webflow/selected/2020-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Break the code barrier\" — direct product statement.",
+      "Visible section headings include: \"Design\", \"Build\", \"Launch\".",
+      "Section headings later removed include: \"Who uses Webflow\" and \"Get up and running fast\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/webflow/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Make your website a growth engine\" — updated value proposition.",
+      "New section headings include: \"Webflow is the agentic web marketing platform for high-performing brands\", \"300,000+ brands move the needle with Webflow\", \"From idea to impact, faster\".",
+      "CTAs no longer present include: \"Get started — it's free\", \"Dell prototypes faster and more effectively.\", \"Heco builds world-class sites for clients.\"."
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "publishedAt": "2026-06-11T17:04:47.047Z",
+  "slug": "webflow",
+  "dryRun": false,
+  "forced": true,
+  "qualityGates": {
+    "finalJudgePass": false,
+    "finalJudgeScore": 45,
+    "seoPass": false,
+    "seoScore": 76,
+    "unsupportedClaims": [
+      "Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites",
+      "The period also saw AI-native search interfaces emerge as distribution channels",
+      "forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone",
+      "Webflow pivoted from capability positioning toward outcome-based enterprise messaging",
+      "elevating 'Contact Sales' to co-primary CTA",
+      "This maps to the broader SaaS category creation pattern: companies with proven product-market fit reposition into newly named categories to escape commoditization in saturated markets"
+    ]
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [
+    "Final judge FAIL — score 45/100 (need ≥ 90)",
+    "6 unsupported claim(s): Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites; The period also saw AI-native search interfaces emerge as distribution channels",
+    "SEO audit FAIL — score 76/100 (need ≥ 80)"
+  ],
+  "articlePath": "src/content/cro-teardown/articles/webflow.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/conversion-rate-optimisation-specialist",
+    "/landing-page-for-saas",
+    "/saas-marketing-agency"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

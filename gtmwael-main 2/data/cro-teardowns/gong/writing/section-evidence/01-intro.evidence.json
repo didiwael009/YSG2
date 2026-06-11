@@ -1,0 +1,133 @@
+{
+  "sectionId": "01-intro",
+  "companyName": "Gong",
+  "companyUrl": "https://www.gong.io/",
+  "articleTitle": "Gong Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Gong rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 4,
+    "ctaAdded": 5,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Gong homepage teardown",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "3 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "10 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "REVENUE INTELLIGENCE",
+      "after": "Revenue AI Built To Predict churnPredict churn",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+      "after": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Revenue Intelligence Technology for Sales Teams | Gong.io",
+      "after": "Gong - Revenue AI OS"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Gong abandoned category evangelism for 'Revenue Intelligence' in favor of OS-level platform positioning by replacing its educational H1 'REVENUE INTELLIGENCE' with the predictive capability 'Revenue AI Built To Predict churn' and eliminating all category-defining navigation ('What is RI?', 'Reveal: The RI Podcast') while introducing infrastructure language ('Revenue AI OS', 'multimodal revenue signal processing').",
+    "old_positioning_frame": "A specialized tool for sales teams to optimize conversations through a novel category called Revenue Intelligence that required explanation and education",
+    "new_positioning_frame": "An operating system-level platform for entire GTM organizations that processes revenue signals and deploys AI agents across the full customer lifecycle",
+    "buyer_shift": "VP of Sales seeking conversation intelligence and coaching insights → CRO/CFO seeking enterprise-wide revenue infrastructure and predictive GTM orchestration",
+    "funnel_shift": "Mid-funnel category education (teaching what Revenue Intelligence means) → Late-funnel platform consolidation (replacing multiple GTM tools with a unified OS)",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "REVENUE INTELLIGENCE",
+        "new": "Revenue AI Built To Predict churn",
+        "meaning": "Signals a shift from category branding to capability demonstration — the new H1 suggests Gong no longer needs to define its category and can instead lead with a specific predictive outcome that assumes buyer familiarity with the problem space."
+      },
+      {
+        "element": "Meta description",
+        "old": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+        "new": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+        "meaning": "The shift from 'sales conversations' to 'multimodal revenue signal processing' and from 'sales optimization' to 'entire GTM organization' is consistent with platform expansion — the addition of 'OS' language and technical terminology ('specialized AI agents', 'purpose-built applications') points to infrastructure positioning rather than point-solution positioning."
+      },
+      {
+        "element": "Navigation",
+        "old": "What is RI? · Overview · Reveal: The RI Podcast · Product · Coaching Recommendations · Deal Visibility · Integrations · Security",
+        "new": "View Gong Labs Trends · Gong AI · Innovation · Contact · Pricing · Book a demo · Product Overview · Gong Engage",
+        "meaning": "The removal of 'What is RI?' and 'Reveal: The RI Podcast' suggests Gong no longer invests top-level navigation real estate in category education — these were primary vehicles for teaching the Revenue Intelligence concept. The addition of 'Gong AI' as a standalone nav item and 'Gong Engage' (a product line) may indicate a shift toward multi-product platform navigation instead of single-concept education."
+      },
+      {
+        "element": "Page title",
+        "old": "Revenue Intelligence Technology for Sales Teams | Gong.io",
+        "new": "Gong - Revenue AI OS",
+        "meaning": "The removal of 'for Sales Teams' and the introduction of 'OS' language is consistent with audience expansion beyond sales — OS positioning typically signals infrastructure-level adoption that spans multiple functions and integrates with other systems."
+      },
+      {
+        "element": "Section headings",
+        "old": "Get powerful visibility into your customer interactions with · Revenue Intelligence helps you fuel: · So What Does this look like? Glad you asked. · Skyrocket your success today",
+        "new": "Trusted by 5,000+ customers · Winning GTM organizations run revenue on Gong · Pitchbook is 10x more efficient with revenue AI · Gong Revenue AI OS · Trusted by high-performing revenue teams in every industry",
+        "meaning": "The old headings read as educational and exploratory ('So What Does this look like? Glad you asked.') which is consistent with mid-funnel content for buyers learning a new category. The new headings emphasize social proof at scale ('5,000+ customers'), outcome efficiency ('10x more efficient'), and category leadership ('run revenue on Gong') — this pattern suggests messaging for buyers who are comparing established vendors rather than discovering a new category."
+      }
+    ],
+    "copy_this_if": "Your product category is now standard vocabulary in buyer RFPs and your brand name appears in analyst reports as the category reference point, allowing you to stop educating the market about the category itself and start owning the next evolution of it",
+    "do_not_copy_this_if": "Prospects still ask 'what is [your category]?' in discovery calls or your SEO traffic shows high volume for '[category name] + definition' queries — premature abandonment of category education leaves a vacuum that competitors will fill",
+    "safer_version_for_early_stage_saas": "Keep your category education H1 but add a predictive capability subheadline beneath it — test '[Category Name]: [Specific Predictive Outcome]' as a combined format that educates and demonstrates simultaneously, then measure whether demo requests come from more qualified buyers who understand the category",
+    "risk_if_copied": "If buyers don't yet know your category exists, leading with OS infrastructure language and technical terminology ('multimodal revenue signal processing') will trigger confusion and tab-closing rather than platform consideration — you'll optimize for a buying motion that doesn't yet exist in your market",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-11T17:02:37.391Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.024627000000000003
+  },
+  "seo-intent": {
+    "primary_keyword": "Gong homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, VP of Product, or growth marketer at a revenue intelligence or sales automation company who is studying how Gong repositioned from category educator to platform OS provider. They want to understand the strategic reasoning behind abandoning 'Revenue Intelligence' positioning in favor of 'Revenue AI OS' — and whether this shift is a template they should replicate or a cautionary tale to avoid.",
+    "recommended_h1_format": "How Gong Went From Revenue Intelligence Evangelist to Revenue AI OS: A [Year] Homepage Teardown",
+    "secondary_keywords": [
+      "Gong homepage redesign strategy",
+      "Revenue Intelligence to Revenue AI OS positioning shift",
+      "Gong CRO analysis category abandonment",
+      "How Gong repositioned its homepage for AI",
+      "Gong homepage evolution 2020-2026"
+    ],
+    "content_angle": "Frame this as a high-stakes repositioning case study: Gong made a deliberate, category-defining choice to stop teaching buyers 'what Revenue Intelligence is' and instead claim ownership of the entire 'Revenue AI OS' category. Show the exact mechanics of how they did this (H1 swap, nav restructuring, social proof emphasis, infrastructure language), then critically examine WHY this works for Gong (category ownership, AI hype, platform lock-in narrative) but might backfire for smaller players (category confusion, loss of educational differentiation). The searcher wants to know: 'Should my company make a similar bet, and if so, how do we execute it without losing our core audience?'",
+    "what_the_searcher_wants": "A forensic breakdown of Gong's strategic reasoning, not just a visual before/after. They want to understand: (1) Why did Gong abandon category evangelism? (2) What signals suggest this is working (or failing)? (3) What are the risks of this playbook for companies at different stages? (4) Which specific elements of this homepage shift can be applied to their own product positioning?",
+    "what_to_avoid": "Do not treat this as a purely aesthetic redesign article ('they made the hero image bigger'). Avoid generic CRO advice ('social proof converts better'). Do not ignore the strategic bet underlying these changes — that Gong is shifting from selling 'visibility into customer conversations' to selling 'a full revenue engine powered by AI.' If you don't explain why they killed 'Reveal: The RI Podcast' and 'What is RI?' navigation, you've missed the entire story. Also avoid assuming this shift is universally 'better' — for companies without Gong's brand equity, this move could be a positioning disaster.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-11T17:02:53.786Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0036568
+  }
+}

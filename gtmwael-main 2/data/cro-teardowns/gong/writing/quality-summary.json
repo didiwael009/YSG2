@@ -1,0 +1,64 @@
+{
+  "slug": "gong",
+  "generatedAt": "2026-06-11T17:04:12.292Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 83,
+      "passed": false,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "'stopped teaching' implies strategic intent beyond what the evidence confirms — evidence shows navigation removal ('What is RI?' deleted) but not explicit abandonment of all education",
+        "'started positioning itself as an operating system' — supported by 'Revenue AI OS' language, but no conversion/outcome data provided to confirm this positioning is working or intentional"
+      ],
+      "remainingIssueCount": 5,
+      "remainingIssues": [
+        "Paragraph exceeds 90-word limit (intro is ~142 words)",
+        "Final sentence uses generic framing ('test whether your own homepage...') instead of Gong-specific takeaway",
+        "Heading contains searchable terms but misses opportunity for primary keyword inclusion",
+        "Opening sentence uses 'stopped teaching' without evidence qualifier — evidence shows navigation removal and headline change, not explicit abandonment of education",
+        "Minor rhythm issue: three consecutive sentences of similar structure in middle portion"
+      ],
+      "sectionCostUsd": 0.036414
+    }
+  ],
+  "averageScore": 83,
+  "passCount": 0,
+  "failCount": 1,
+  "skippedCount": 1,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [
+    "'stopped teaching' implies strategic intent beyond what the evidence confirms — evidence shows navigation removal ('What is RI?' deleted) but not explicit abandonment of all education",
+    "'started positioning itself as an operating system' — supported by 'Revenue AI OS' language, but no conversion/outcome data provided to confirm this positioning is working or intentional"
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 45,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Add H3 subheadings to 'Why the homepage changed' section to break up the 3-paragraph wall of text",
+    "Remove all unsupported claims about Gong's market entry, competitive landscape, buyer funnel stage, and RFP vocabulary timing",
+    "Rewrite opening to match evidence scope — article only has 3 snapshots showing headline/meta/nav changes, not a full 6-year redesign study",
+    "Replace consultant-speak phrases ('deliberate strategic repositioning', 'AI-era platform consolidation pattern', 'graduate from educator to OS') with plain explanations of what the evidence shows",
+    "Add founder takeaway at end of 'Why the homepage changed' section anchored to specific evidence (e.g., 'Check your nav: if you still have a 'What is [category]?' link but buyers already know the term, you are paying nav real estate for education you no longer need')",
+    "Break 118-word paragraph starting with 'By 2026, Gong replaced...' into two paragraphs at natural break",
+    "Add specific runnable test at end anchored to Gong evidence (e.g., 'Pull 20 discovery call transcripts. If fewer than 3 prospects ask what your category means, test removing category education from primary nav')"
+  ],
+  "seoScore": 71,
+  "seoPass": false,
+  "seoRequiredFixes": [
+    "Deliver on '3 snapshots' promise: include clear before/after comparisons of Jan 2020, one intermediate year (2023?), and Jun 2026 homepage states. Currently only Jun 2026 is detailed.",
+    "Add explicit section on CTA evolution (button text, placement, copy changes) since meta description and intro both promise this element.",
+    "Include full navigation structure comparison table or side-by-side visual to substantiate the 'navigation focused on products and demos' claim.",
+    "Clarify article length and visual assets in meta description — currently suggests full teardown but reads as strategic summary only (8 min read is accurate, but 'what changed in headline, section headings, CTAs, navigation' overpromises coverage)."
+  ],
+  "articleWordCount": 333,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~109w): \"Between January 2020 and June 2026, Gong stopped…\""
+  ],
+  "overLengthWarning": null
+}

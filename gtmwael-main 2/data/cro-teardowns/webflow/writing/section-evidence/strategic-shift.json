@@ -1,0 +1,47 @@
+{
+  "central_thesis": "Webflow repositioned from a visual development tool for breaking the code barrier into an enterprise-grade agentic marketing platform by replacing its capability-focused H1 with outcome-driven 'growth engine' messaging, introducing AEO (AI Engine Optimization) as a category differentiator, and shifting CTAs from free-trial acquisition to sales-qualified lead generation.",
+  "old_positioning_frame": "A no-code design and development tool that removes technical barriers for building responsive websites",
+  "new_positioning_frame": "An enterprise marketing platform that delivers competitive business outcomes through AI search optimization and agentic automation",
+  "buyer_shift": "Designers, freelancers, and agencies seeking to build websites without code → Marketing teams and enterprises seeking to operationalize their website as a growth channel",
+  "funnel_shift": "Top-of-funnel awareness and free trial activation for individual practitioners → Mid-funnel enterprise evaluation and sales-assisted conversion for teams and departments",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "Break the code barrier",
+      "new": "Make your website a growth engine",
+      "meaning": "This shift suggests a repositioning from removing technical constraints (a capability statement) to delivering business outcomes (revenue, pipeline, performance), which is consistent with targeting economic buyers rather than end-users."
+    },
+    {
+      "element": "Meta description",
+      "old": "Build responsive websites in your browser, then launch with our world-class hosting or export your code.",
+      "new": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+      "meaning": "The introduction of 'AEO' (AI Engine Optimization), 'enterprise-grade security', and the explicit '300k teams' social proof signals a move toward category creation and enterprise credibility rather than feature education."
+    },
+    {
+      "element": "Primary CTAs",
+      "old": "Get started — it's free",
+      "new": "Contact Sales · Start for free",
+      "meaning": "Elevating 'Contact Sales' to co-primary CTA position alongside the free option suggests the company is prioritizing higher-ACV sales-assisted deals over self-serve volume, which typically indicates a shift toward enterprise revenue models."
+    },
+    {
+      "element": "Section headings",
+      "old": "Who uses Webflow · Get up and running fast · Free until you're ready to launch",
+      "new": "300,000+ brands move the needle with Webflow · From idea to impact, faster · Make your website your competitive edge",
+      "meaning": "Replacing usage-focused and time-to-value messaging with outcome language ('move the needle', 'competitive edge') and scale proof points indicates positioning for buyers who evaluate tools based on strategic business impact rather than ease of use."
+    },
+    {
+      "element": "Page title",
+      "old": "Responsive web design tool, CMS, and hosting platform | Webflow",
+      "new": "Webflow: The agentic web platform for modern businesses",
+      "meaning": "Introducing 'agentic' as a descriptor and shifting from technical feature enumeration to business-focused category naming points to an attempt to own a new category rather than compete within the existing 'website builder' space."
+    }
+  ],
+  "copy_this_if": "Your product has achieved sufficient market penetration that your brand name appears in RFPs for your original category, and you have 6+ enterprise case studies demonstrating measurable business outcomes beyond the original use case",
+  "do_not_copy_this_if": "Prospects still ask 'What does your product do?' or your sales cycles are under 30 days, indicating you are selling primarily on capability demonstration rather than strategic value",
+  "safer_version_for_early_stage_saas": "Test a split headline that bridges capability and outcome (e.g., 'Visual development that accelerates pipeline') while maintaining prominent free trial CTAs, and add one section headings that links your core capability to a measurable business metric relevant to economic buyers",
+  "risk_if_copied": "Prospects who need your original capability (visual development without code) will not recognize your product as solving their problem, and you will lose self-serve volume without having the sales infrastructure, case study library, or product depth to close enterprise deals at the velocity required to replace that revenue",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-11T17:02:33.307Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.020523
+}

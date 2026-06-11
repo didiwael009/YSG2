@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "REVENUE INTELLIGENCE",
+    "after": "Revenue AI Built To Predict churnPredict churn",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+    "after": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+    "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+  },
+  {
+    "element": "Page title",
+    "before": "Revenue Intelligence Technology for Sales Teams | Gong.io",
+    "after": "Gong - Revenue AI OS"
+  }
+]

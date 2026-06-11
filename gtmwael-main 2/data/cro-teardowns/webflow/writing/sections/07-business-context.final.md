@@ -1,0 +1,7 @@
+## Why the homepage changed
+
+That repositioning didn't happen in a vacuum. Between 2020 and 2026, Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites. The period also saw AI-native search interfaces emerge as distribution channels, forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone.
+
+The homepage evolution from **"Break the code barrier"** to **"Make your website a growth engine"** suggests Webflow pivoted from capability positioning toward outcome-based enterprise messaging. Adding **"AEO"** (AI Engine Optimization) as a feature category and elevating **"Contact Sales"** to co-primary CTA is consistent with a shift from self-serve designer acquisition toward sales-assisted team and department deals. Section headings replaced user-focused language with business-impact claims like **"move the needle"** and **"competitive edge"**.
+
+This maps to the broader SaaS category creation pattern: companies with proven product-market fit reposition into newly named categories to escape commoditization in saturated markets. For teams building website or marketing tools, this signals that distribution advantage now comes from solving for AI discoverability and proving pipeline impact — not just offering visual development. If your brand still requires feature education, this move is premature.

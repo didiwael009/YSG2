@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 4,
+    "ctaAdded": 5,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "generatedAt": "2026-06-11T17:01:38.144Z",
+  "postSummary": {
+    "title": "Gong Homepage Teardown: Jan 2020 to Jun 2026",
+    "h1": "How Gong rewrote its homepage over 6 years",
+    "readTime": "8 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 2,
+    "lessonCardCount": 4,
+    "snapshotCount": 3
+  }
+}
