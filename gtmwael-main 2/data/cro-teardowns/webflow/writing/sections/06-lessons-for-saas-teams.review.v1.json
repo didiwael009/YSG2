@@ -1,0 +1,44 @@
+{
+  "score": 84,
+  "pass": false,
+  "issues": [
+    "The ## section heading is clever-only ('stop writing for the community that built it') — it contains neither the company name 'Webflow', nor searchable terms like 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'. This triggers the -5 searchableHeadings penalty.",
+    "The H3 heading 'Persona narrowing audit' introduces the expert-adjacent phrase 'persona narrowing' without an immediate plain-language definition in the same sentence — penalty applies.",
+    "The H3 heading 'Secondary CTA demotion' uses 'demotion' as jargon framing without defining it in the heading itself, though the body recovers quickly.",
+    "The third H3 block ('Persona narrowing audit') contains an analytical paragraph that runs approximately 65 words: 'Both removed headings served a specific visitor: someone exploring whether Webflow was for people like them, or worried about cost before committing. Replacing them with...' — this exceeds the 60-word limit and triggers a scannability penalty.",
+    "The causal claim 'Demoting the free CTA signals that the page is now optimized for enterprise pipeline, not trial volume' is an unsupported causation claim presented as near-fact. The evidence supports the observation of demotion; the inference about optimization intent is analytical and should be hedged.",
+    "The claim 'adding a CTA for a coined term will create confusion, not curiosity' is an outcome claim without supporting data. No hard cap fires (it is conditional), but it reads as causal without a condition explicitly attached to it.",
+    "The word count is approximately 390–400 words, which slightly exceeds the 220–380 word ceiling. This is a borderline flag.",
+    "The phrase 'enterprise pipeline' is used in H3 block 1 without a plain-language gloss — expert readers understand it, but the rubric requires terms to be defined on first use for the founder audience."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include 'Webflow' and at least one of: 'homepage', 'CTA', 'positioning', 'messaging', or 'conversion'. Example: 'Three homepage moves from Webflow's evolution that SaaS teams can test'.",
+    "Add a plain-language definition for 'persona narrowing' in the H3 heading or its first sentence — e.g., 'Persona narrowing (tightening who the page speaks to)'.",
+    "Trim the opening analytical paragraph in H3 block 3 to under 60 words. The current paragraph (starting 'Both removed headings served...') runs approximately 65 words.",
+    "Hedge the causation claim in H3 block 1: replace 'the page is now optimized for enterprise pipeline, not trial volume' with 'this suggests the page may now be prioritised for enterprise pipeline over trial volume'.",
+    "Define 'enterprise pipeline' in plain language on first use — e.g., 'enterprise pipeline (inbound leads from larger companies with a sales process)'.",
+    "Trim total section word count to under 380 words. Cut approximately 15–20 words from the first or third H3 block."
+  ],
+  "riskFlags": [
+    "'Demoting the free CTA signals that the page is now optimized for enterprise pipeline, not trial volume' — this is a causation inference presented as fact. The evidence shows demotion; the optimization intent is analytical speculation.",
+    "'adding a CTA for a coined term will create confusion, not curiosity' — outcome claim without data. Acceptable only if framed as conditional hypothesis, which it mostly is, but the phrasing is still assertive.",
+    "'This pattern is worth testing if your self-serve conversion rate is healthy but your average deal size has stalled' — this rephrases evidence language closely but is not directly traceable to the evidence; it mirrors the strategic-shift 'copy_this_if' note, so it is permissible, but should be attributed or hedged."
+  ],
+  "seoNotes": [
+    "The ## section heading contains no searchable terms — 'Webflow', 'homepage', 'CTA', 'positioning', or 'conversion' should appear in the heading for SEO value on a teardown article.",
+    "The H3 subheadings are specific and keyword-adjacent ('Webflow moved Contact Sales', 'Explore AEO', 'Who uses Webflow') — these will index well in long-tail search if the ## heading is fixed.",
+    "The phrase 'Explore AEO' with its parenthetical definition is strong for capturing emerging AEO-adjacent search queries.",
+    "Quoting verbatim CTAs and section headings in bold throughout is good for snippet eligibility and specificity signals."
+  ],
+  "rewriteInstruction": "Make four targeted fixes without restructuring the section. First, replace the ## heading with one that contains 'Webflow' and a searchable topic term — the current heading is clever but invisible to search. Second, add a one-phrase plain-language gloss to 'persona narrowing' and 'enterprise pipeline' on first use — one sentence each, inline. Third, trim the opening analytical paragraph in H3 block 3 to under 60 words by cutting the second clause of the first sentence. Fourth, soften the two causation claims in H3 block 1 to conditional language ('this suggests' / 'if your sales motion is ready'). Total word count should land between 340–375 after these edits. Do not change the three-pattern structure, the founder tests, or the verbatim quote formatting — those are working well.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 11,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

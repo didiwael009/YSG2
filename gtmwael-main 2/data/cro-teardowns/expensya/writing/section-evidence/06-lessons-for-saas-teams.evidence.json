@@ -1,0 +1,120 @@
+{
+  "sectionId": "06-lessons-for-saas-teams",
+  "companyName": "Expensya",
+  "companyUrl": "https://www.expensya.com/en/",
+  "articleTitle": "Expensya Homepage Teardown: Oct 2020 to Jun 2026",
+  "h1": "How Expensya rewrote its homepage over 6 years",
+  "fromLabel": "Oct 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 14,
+    "h2Removed": 7,
+    "ctaAdded": 10,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Expensya homepage teardown",
+  "lesson-cards": [
+    {
+      "number": "01",
+      "title": "Expensya replaced \"Automated spend management for all companies\" with French-language messaging",
+      "category": "Positioning",
+      "body": "The original headline **\"Automated spend management for all companies\"** positioned the product as a universal automation tool. The new French headline **\"Voici à quoi devrait ressembler la gestion des dépenses\"** (This is what expense management should look like) signals a geographic repositioning. This suggests Expensya may be prioritising French-speaking markets or filtering for buyers who prefer localised solutions over English-first SaaS competitors."
+    },
+    {
+      "number": "02",
+      "title": "Removing \"Free trial\" from the CTA set is a sales-motion change, not simplification",
+      "category": "Funnel",
+      "body": "The primary CTA changed from **\"Free trial\"** to **\"Réservez une démo\"** (Book a demo). This shift moves the conversion path from self-serve trial to assisted sales. It likely indicates Expensya is targeting larger accounts or longer deal cycles where a demo qualifies intent better than a trial signup. The change filters out casual visitors and signals that buyers already know what category they need."
+    },
+    {
+      "number": "03",
+      "title": "\"Cartes de paiement & budgets\" and \"Politiques de dépenses\" are new H2s — the product expanded",
+      "category": "Messaging",
+      "body": "The new section headings **\"Cartes de paiement & budgets\"** (Payment cards & budgets) and **\"Politiques de dépenses\"** (Expense policies) did not appear in the 2020 version. These headings suggest Expensya added product capabilities beyond basic expense reporting. The prominence of these sections on the homepage indicates the team now views compliance and card issuance as core selling points, not secondary features."
+    },
+    {
+      "number": "04",
+      "title": "14 new section headings and a full language shift point to a market-focus tightening",
+      "category": "Strategy",
+      "body": "Expensya added 14 new section headings and removed 7 generic ones like **\"Equip yourself with the most comprehensive business spend and expense management solution\"**. The new headings are shorter, more specific, and entirely in French. This comprehensive content overhaul—paired with the CTA and headline changes—suggests the company decided to own a narrower market segment rather than pitch universal automation to all company sizes."
+    }
+  ],
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Oct 2020 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "14 added · 7 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Expensya replaced a broad, automation-led English-language pitch aimed at multi-segment international buyers with a French-first, finance-team-focused positioning built around compliance, payment cards, and clarity — suggesting a deliberate retreat from global horizontal growth toward owning the French-speaking mid-market finance buyer.",
+    "old_positioning_frame": "A comprehensive, fully automated spend management platform for companies of all sizes (Small, Mid, Large), competing on breadth of automation and integration depth, in English, with a self-serve free-trial funnel.",
+    "new_positioning_frame": "An intelligent expense management and payment card solution for modern finance teams in French-speaking markets, competing on simplicity, compliance, and reduced administrative friction, with a sales-led demo-booking funnel.",
+    "buyer_shift": "Broad self-serve buyers across SMB to enterprise tiers in international English-speaking markets → French-speaking finance team decision-makers (likely CFOs, finance directors) in mid-market organisations who prioritise compliance and operational clarity over raw automation.",
+    "funnel_shift": "Mid-funnel exploration served by 'Free trial' and 'Discover our solutions' CTAs enabling self-qualification across company sizes → top-of-funnel awareness and sales-qualified lead capture via 'Réservez une démo' and 'Contacter un commercial', consistent with a higher-touch, consultative sales motion.",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Automated spend management for all companies",
+        "new": "Voici à quoi devrait ressembler la gestion des dépenses.",
+        "meaning": "The switch from a functional automation claim in English to a vision-forward French statement ('Here is what expense management should look like') suggests Expensya may be repositioning from feature-led differentiation toward aspirational category definition, and the language shift signals a deliberate prioritisation of French-speaking markets over a global-English audience."
+      },
+      {
+        "element": "CTA",
+        "old": "Free trial · Discover our solutions · Find out more · Discover all integrations",
+        "new": "Réservez une démo · Contacter un commercial",
+        "meaning": "Removing 'Free trial' and adding 'Réservez une démo' and 'Contacter un commercial' is consistent with abandoning a product-led growth motion in favour of a sales-assisted conversion path, which may indicate a shift toward larger deal sizes or a buyer profile that requires guided evaluation rather than self-serve discovery."
+      },
+      {
+        "element": "Navigation",
+        "old": "Small · Mid · Large · Features · Self-managed expenses · Secure dematerialization · Intelligent validation and control",
+        "new": "En savoir plus · Se connecter · Contacter un commercial · Expensya · Anglais · Solutions · Aperçu · Application mobile",
+        "meaning": "Removing the Small/Mid/Large segmentation nav suggests Expensya may no longer be actively targeting all company sizes with equal priority — or that segment self-selection is now handled downstream in a sales conversation rather than on the homepage. The presence of a language toggle ('Anglais') suggests multi-market intent persists, but French is now the primary frame."
+      },
+      {
+        "element": "Section headings",
+        "old": "Expensya fully automates your business expenditure · A solution designed for every company · Features designed to transform your expense management · Integration with your infrastructure and ecosystem · Our customers recommend our solution",
+        "new": "Cartes de paiement & budgets · Politiques de dépenses · Multi-devises et multi-pays · Fini le casse-tête administratif, place à la conformité. · Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.",
+        "meaning": "The removal of 'every company' and 'integration with your ecosystem' headings in favour of specific product pillars (payment cards, expense policies, multi-currency) and compliance-led language points to a narrower but more specific value proposition, consistent with targeting finance professionals who are accountable for regulatory compliance and spend visibility rather than IT buyers evaluating integrations."
+      },
+      {
+        "element": "Meta description",
+        "old": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
+        "new": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+        "meaning": "Replacing a process-automation description with an emotional contrast ('stress and friction' → 'clarity and simplicity') directed at 'équipes financières modernes' suggests Expensya may be attempting to appeal to finance team identity and pain rather than IT or ops buyers evaluating workflow automation coverage."
+      }
+    ],
+    "copy_this_if": "Your product already has strong organic brand recognition in a specific language-market (e.g., your top organic traffic cohort is overwhelmingly from one country), and your sales data shows that self-serve free trials generate volume but not the deal sizes or customer profiles you want to grow.",
+    "do_not_copy_this_if": "Your current growth depends on inbound self-serve signups from multiple geographies, or your sales team does not yet have the capacity or playbook to convert demo requests at scale — removing a free-trial CTA without a functioning sales-assisted motion in place risks collapsing top-of-funnel conversion entirely.",
+    "safer_version_for_early_stage_saas": "Keep the free-trial CTA as primary, but A/B test a secondary 'Book a demo' CTA specifically within the section headings or feature blocks aimed at compliance and finance-team pain points (e.g., below a 'Politiques de dépenses' section) — this isolates whether the finance buyer segment responds to a sales-assisted path without abandoning the self-serve funnel.",
+    "risk_if_copied": "If a company removes 'Free trial' in favour of demo-only CTAs before its sales team has sufficient capacity or qualification criteria, it may see a sharp drop in top-of-funnel volume with no offsetting increase in closed revenue — particularly if the brand is not yet strong enough for buyers to proactively seek out a sales conversation.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T10:20:24.730Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.02862
+  }
+}

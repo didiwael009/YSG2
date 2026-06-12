@@ -1,48 +1,48 @@
 {
-  "score": 78,
+  "score": 81,
   "pass": false,
   "issues": [
-    "Section exceeds 200-word target at approximately 225 words (120–200 required)",
-    "H3 heading 'Product evolution: from software to embedded cards' lacks company name and is not immediately searchable",
-    "H3 heading 'Industry consolidation: expense tools absorbed into spend suites' is fully generic and lacks company name",
-    "Paragraph 1 (Market entry) is approximately 62 words — exceeds 60-word cap",
-    "Paragraph 2 (Product evolution) is approximately 58 words — acceptable but close to limit",
-    "Paragraph 3 (Industry consolidation) is approximately 68 words — exceeds 60-word cap by 8 words",
-    "Final H3 block (Quick test) is approximately 68 words — exceeds 60-word cap by 8 words",
-    "Paragraph 3 opens with generic industry observation rather than Expensya-specific finding — could appear in any teardown",
-    "The takeaway test is buried in the middle of the final paragraph rather than stated upfront in the first two sentences",
-    "Causal claim without condition: 'The timing suggests Expensya was repositioned to serve a regulatory moment' — no 'if' qualifier",
-    "Minor: second sentence of paragraph 1 contains abstract causal reasoning without immediate grounding"
+    "Section goal requires three short paragraphs ≤60 words each with NO H3 subheadings — the draft instead uses H3 sub-blocks, which contradicts the section goal format (though the rubric penalises missing H3s in analytical sections, creating a tension; the SECTION GOAL is the authoritative spec here for format).",
+    "Paragraph 1 (H3 block 1 body) is approximately 65 words — exceeds the 60-word limit for non-intro paragraphs.",
+    "Paragraph 2 (H3 block 2 body) is approximately 68 words — exceeds the 60-word limit.",
+    "Paragraph 3 (H3 block 3 body) is approximately 62 words — marginally over the 60-word limit.",
+    "Total word count is approximately 215 words — exceeds the 120–200 word ceiling stated in the section goal check.",
+    "The competitor names Ramp, Brex, and Spendesk are cited in paragraph 1 as consolidating forces, but the evidence only names them as 'notable_competitors' — no evidence states they were bundling corporate cards into single platforms at this time in a way Expensya directly responded to; this is a borderline unsupported causal inference.",
+    "The phrase 'The market was consolidating fast' in paragraph 1 reads as generic SaaS commentary that could appear in a teardown of any expense-management competitor — not anchored exclusively to Expensya's evidence.",
+    "The opening of section H3-1 ('By early 2021, Expensya had already signalled its direction') is a moderate template entry — the evidence supports a more interesting paradox entry (a company that raised $20M and rebranded to 'global' and then retreated to French-first positioning).",
+    "No financial figures or named events lack hedge language — this is compliant.",
+    "The founder takeaway in H3-3 is specific and runnable — this is a strength.",
+    "The section heading is searchable and contains the company name and topic terms — compliant.",
+    "All verbatim website quotes appear in bold quotes — compliant.",
+    "Expert term 'ICP' does not appear; no forbidden jargon terms are used — compliant.",
+    "The claim that the Medius acquisition 'placed Expensya inside a suite targeting mid-market CFOs' is supported by evidence ('positioning Expensya as part of a broader indirect spend management suite targeting mid-market CFOs') — compliant.",
+    "Causal link 'consistent with the homepage shift toward compliance language' is correctly hedged with 'consistent with' — not a hard causation claim."
   ],
   "requiredFixes": [
-    "Cut section to 200 words maximum — remove or compress generic industry context in paragraph 3",
-    "Rewrite H3 'Product evolution' to include 'Expensya' — e.g., 'Expensya product evolution: software to embedded cards'",
-    "Rewrite H3 'Industry consolidation' to anchor to Expensya specifically — e.g., 'Expensya acquisition context: consolidation pressure'",
-    "Trim paragraph 1 to 60 words or split it — current 62 words",
-    "Trim paragraph 3 to 60 words — current 68 words; remove generic market commentary",
-    "Trim final test block to 60 words — current 68 words",
-    "Rewrite paragraph 3 opening to lead with Expensya-specific finding, not generic industry trend",
-    "Move the test instruction to the first sentence of the final H3 block: 'Visit your homepage and count...' should open the paragraph",
-    "Add condition to causal claim in paragraph 1: 'The timing suggests Expensya *may have been* repositioned to serve a regulatory moment *if that mandate drove the acquisition decision*'"
+    "Trim each paragraph body to ≤60 words. Paragraph 1 (~65 words) must lose at least 6 words; paragraph 2 (~68 words) must lose at least 9 words; paragraph 3 (~62 words) must lose at least 3 words. Target total section word count of 150–190 words.",
+    "Remove or substantially hedge the claim that Ramp, Brex, and Spendesk were 'bundling corporate cards and accounts payable into single platforms' in a way that directly pressured Expensya — the evidence lists them as competitors but does not specify this competitive dynamic as a factor Expensya responded to. Replace with a factual statement traceable to the evidence (e.g., the category-context note about consolidation of standalone expense tools into AP suites).",
+    "Replace 'The market was consolidating fast' with a sentence anchored to Expensya-specific evidence — e.g., reference the Medius acquisition rationale citing European consolidation, rather than a generic market statement.",
+    "Rewrite the opening of H3-1 to lead with the paradox the evidence actually supports: Expensya raised $20M and publicly rebranded for international expansion, then its homepage ended up in French targeting a narrower finance-team buyer — that tension is the most interesting entry point, not a chronological scene-setter."
   ],
   "riskFlags": [
-    "Causal claim: 'The timing suggests Expensya was repositioned to serve a regulatory moment' — no condition attached, implies causation from correlation",
-    "Generic industry paragraph could appear in any expense-tool teardown — not anchored to Expensya's specific evidence beyond the final sentence"
+    "Claim that Ramp, Brex, and Spendesk were 'bundling corporate cards and accounts payable into single platforms' is not directly traceable to the provided evidence — the evidence mentions them only as notable competitors.",
+    "'The market was consolidating fast' is a generic editorial assertion not anchored to a specific evidence node — could trigger a -5 specificity penalty if treated as a distinct generic paragraph.",
+    "The phrase 'consistent with the homepage shift toward compliance language, payment card sections, and a demo-request funnel replacing self-serve trials' chains three simultaneous ideas — borderline 3-abstract-noun stack but acceptable given each is a concrete page element."
   ],
   "seoNotes": [
-    "Main ## heading contains 'Expensya' twice — good for search",
-    "H3 subheadings 2 and 3 lack company name — reduces internal keyword density",
-    "Section ID and heading both signal 'business context' — clear topical targeting"
+    "The ## heading 'How the Medius acquisition and France's e-invoicing mandate rewrote Expensya's homepage logic' is strong for long-tail search — contains the company name, a named event (Medius acquisition), a named regulatory driver (e-invoicing mandate), and the word 'homepage'.",
+    "The French headline **'Fini le casse-tête administratif, place à la conformité'** is correctly bolded and will render well for bilingual or French-market readers who may search Expensya French-language teardowns.",
+    "The section currently lacks a meta-readable summary sentence in the first 40 words — the opening 'By early 2021, Expensya had already signalled its direction' is not a compelling featured-snippet candidate; a finding-first opening would improve snippet eligibility."
   ],
-  "rewriteInstruction": "Cut the section to 200 words by compressing paragraph 3 (industry consolidation) to its Expensya-specific elements only — remove the generic 'Standalone expense tools were being acquired' opener and lead instead with the Medius positioning move. Rewrite all three H3 subheadings to include 'Expensya' for searchability. Move the test instruction to the opening sentence of the final H3 block so the takeaway is immediate. Trim paragraphs 1, 3, and the test block to 60 words each. Add a condition to the causal claim in paragraph 1: replace 'suggests Expensya was repositioned' with 'suggests Expensya may have been repositioned *if the mandate drove the acquisition*'. Anchor paragraph 3 to Expensya's specific positioning choice (French-only homepage, demo CTA) before mentioning the broader industry trend.",
+  "rewriteInstruction": "Rewrite the section to hit ≤60 words per paragraph and a total of 150–190 words. Keep the three H3 sub-blocks (the rubric requires them for analytical sections). Fix the opening of H3-1: lead with the paradox — Expensya raised $20M and rebranded for global scale, then its homepage ended up in French targeting a narrower compliance buyer — that contrast is what makes this interesting and is fully supported by evidence. Remove the unsupported claim about Ramp/Brex/Spendesk bundling AP; replace it with the evidence-backed point that standalone expense tools were being absorbed into AP suites (as cited in the category-context research). Replace 'The market was consolidating fast' with a sentence specific to Expensya's situation. Keep the hedge language on the $100M figure and the Medius acquisition date — those are correctly handled. Preserve the runnable founder test in H3-3, which is the strongest part of the draft.",
   "dimensionScores": {
     "evidenceAccuracy": 18,
-    "specificity": 12,
-    "plainLanguage": 18,
-    "scannability": 6,
-    "searchableHeadings": 4,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 2
+    "specificity": 11,
+    "plainLanguage": 17,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 4
   },
   "effectivePassThreshold": 85
 }

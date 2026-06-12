@@ -64,70 +64,76 @@
     }
   ],
   "strategic-shift": {
-    "central_thesis": "Webflow repositioned from a visual development tool for breaking the code barrier into an enterprise-grade agentic marketing platform by replacing its capability-focused H1 with outcome-driven 'growth engine' messaging, introducing AEO (AI Engine Optimization) as a category differentiator, and shifting CTAs from free-trial acquisition to sales-qualified lead generation.",
-    "old_positioning_frame": "A no-code design and development tool that removes technical barriers for building responsive websites",
-    "new_positioning_frame": "An enterprise marketing platform that delivers competitive business outcomes through AI search optimization and agentic automation",
-    "buyer_shift": "Designers, freelancers, and agencies seeking to build websites without code → Marketing teams and enterprises seeking to operationalize their website as a growth channel",
-    "funnel_shift": "Top-of-funnel awareness and free trial activation for individual practitioners → Mid-funnel enterprise evaluation and sales-assisted conversion for teams and departments",
+    "central_thesis": "Webflow repositioned from a developer-empowerment tool ('Break the code barrier') to a revenue-accountable marketing platform ('Make your website a growth engine'), replacing practitioner-focused capability messaging with business-outcome and AI-native category language ('agentic web platform') to target marketing leaders and enterprise buyers rather than individual web designers.",
+    "old_positioning_frame": "A no-code/low-code browser-based tool that removes technical barriers for designers and developers, competing on ease of build, code export flexibility, and free-to-start accessibility.",
+    "new_positioning_frame": "An enterprise-grade, AI-powered marketing platform that ties website performance directly to business growth outcomes — including AEO (Answer Engine Optimization), CMS, hosting, and localization — competing on revenue impact and organizational scale rather than technical empowerment.",
+    "buyer_shift": "Individual practitioners (designers, freelancers, developers prototyping) who needed to bypass engineers → marketing team leads, growth-focused CMOs, and enterprise procurement stakeholders at brands seeking measurable competitive advantage from their web presence.",
+    "funnel_shift": "Mid-funnel product exploration and self-serve trial activation ('Get started — it's free', 'Free until you're ready to launch') → top-of-funnel category authority and bottom-of-funnel enterprise pipeline generation ('Contact Sales', 'Explore AEO'), with the free tier demoted from a headline offer to a secondary CTA.",
     "main_evidence": [
       {
         "element": "H1",
         "old": "Break the code barrier",
         "new": "Make your website a growth engine",
-        "meaning": "This shift suggests a repositioning from removing technical constraints (a capability statement) to delivering business outcomes (revenue, pipeline, performance), which is consistent with targeting economic buyers rather than end-users."
-      },
-      {
-        "element": "Meta description",
-        "old": "Build responsive websites in your browser, then launch with our world-class hosting or export your code.",
-        "new": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
-        "meaning": "The introduction of 'AEO' (AI Engine Optimization), 'enterprise-grade security', and the explicit '300k teams' social proof signals a move toward category creation and enterprise credibility rather than feature education."
-      },
-      {
-        "element": "Primary CTAs",
-        "old": "Get started — it's free",
-        "new": "Contact Sales · Start for free",
-        "meaning": "Elevating 'Contact Sales' to co-primary CTA position alongside the free option suggests the company is prioritizing higher-ACV sales-assisted deals over self-serve volume, which typically indicates a shift toward enterprise revenue models."
-      },
-      {
-        "element": "Section headings",
-        "old": "Who uses Webflow · Get up and running fast · Free until you're ready to launch",
-        "new": "300,000+ brands move the needle with Webflow · From idea to impact, faster · Make your website your competitive edge",
-        "meaning": "Replacing usage-focused and time-to-value messaging with outcome language ('move the needle', 'competitive edge') and scale proof points indicates positioning for buyers who evaluate tools based on strategic business impact rather than ease of use."
+        "meaning": "The shift from 'Break the code barrier' to 'Make your website a growth engine' suggests Webflow is moving away from positioning itself as a solution to a technical problem (code as obstacle) and toward positioning the website itself as a revenue-generating asset — a frame more consistent with how a CMO or VP of Marketing evaluates software than how a designer or developer does."
       },
       {
         "element": "Page title",
         "old": "Responsive web design tool, CMS, and hosting platform | Webflow",
         "new": "Webflow: The agentic web platform for modern businesses",
-        "meaning": "Introducing 'agentic' as a descriptor and shifting from technical feature enumeration to business-focused category naming points to an attempt to own a new category rather than compete within the existing 'website builder' space."
+        "meaning": "Replacing a descriptive feature taxonomy ('design tool, CMS, hosting platform') with a coined category label ('agentic web platform') signals an attempt at category creation or capture rather than feature comparison — consistent with enterprise GTM strategies where owning a category name can shortcut procurement conversations."
+      },
+      {
+        "element": "Meta description",
+        "old": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
+        "new": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+        "meaning": "The removal of 'export your code' (a developer-centric flexibility signal) and the addition of 'rank in AI search', 'AEO', and 'Enterprise-grade security' suggests a deliberate de-emphasis of the technical practitioner audience and a re-emphasis on enterprise trust signals and emerging AI search relevance — pointing to a buyer who cares about marketing ROI and compliance, not code portability."
+      },
+      {
+        "element": "CTA",
+        "old": "Get started — it's free",
+        "new": "Contact Sales · Start for free · Get started · Explore AEO · View full schema · Start building",
+        "meaning": "Elevating 'Contact Sales' to the primary CTA position while retaining 'Start for free' as secondary may indicate Webflow is prioritizing enterprise pipeline over self-serve volume. The addition of 'Explore AEO' as a standalone CTA is consistent with attempting to capture demand around a newly coined capability category before competitors name it."
+      },
+      {
+        "element": "Section headings",
+        "old": "Who uses Webflow · Get up and running fast · Free until you're ready to launch",
+        "new": "300,000+ brands move the needle with Webflow · From idea to impact, faster · Everything marketing teams love about webflow · Make your website your competitive edge",
+        "meaning": "Removing 'Free until you're ready to launch' (a friction-reduction message for cost-sensitive individual users) and replacing it with social proof at scale ('300,000+ brands') and competitive framing ('your competitive edge') suggests the page is now written for buyers who need organizational justification and peer validation, not personal risk removal — a pattern consistent with targeting team-level or enterprise buyers."
+      },
+      {
+        "element": "Section headings (ADDED)",
+        "old": "Who uses Webflow",
+        "new": "Webflow is the agentic web marketing platform for high-performing brands",
+        "meaning": "Replacing an open, inclusive 'Who uses Webflow' framing with a declarative category claim targeted at 'high-performing brands' points to a deliberate narrowing of the addressable persona — signaling that Webflow may be willing to trade breadth of appeal for depth of resonance with premium-tier buyers."
       }
     ],
-    "copy_this_if": "Your product has achieved sufficient market penetration that your brand name appears in RFPs for your original category, and you have 6+ enterprise case studies demonstrating measurable business outcomes beyond the original use case",
-    "do_not_copy_this_if": "Prospects still ask 'What does your product do?' or your sales cycles are under 30 days, indicating you are selling primarily on capability demonstration rather than strategic value",
-    "safer_version_for_early_stage_saas": "Test a split headline that bridges capability and outcome (e.g., 'Visual development that accelerates pipeline') while maintaining prominent free trial CTAs, and add one section headings that links your core capability to a measurable business metric relevant to economic buyers",
-    "risk_if_copied": "Prospects who need your original capability (visual development without code) will not recognize your product as solving their problem, and you will lose self-serve volume without having the sales infrastructure, case study library, or product depth to close enterprise deals at the velocity required to replace that revenue",
+    "copy_this_if": "Your brand name already appears in analyst reports or industry shortlists for your category, your self-serve conversion rate is healthy but average contract value is stagnating, and your sales team reports that enterprise prospects ask 'how does this tie to revenue?' before asking 'how does this work?'",
+    "do_not_copy_this_if": "Your product still needs to prove its core workflow to first-time users — if a new visitor cannot immediately understand what your product does from the headline alone, replacing capability clarity with outcome abstraction ('growth engine', 'agentic platform') will increase bounce rates among your highest-intent prospects who are still in problem-definition mode.",
+    "safer_version_for_early_stage_saas": "Keep a capability-grounding H1 but add a single outcome-oriented subheadline beneath it — test whether adding 'so your [team] can [business outcome]' as a H2 below your existing H1 improves demo-request or trial-to-paid conversion before removing the capability frame from the H1 entirely.",
+    "risk_if_copied": "If your sales motion is not yet built to handle 'Contact Sales' as a primary CTA — including a response SLA, qualification playbook, and enterprise pricing tier — front-loading that CTA will create a pipeline of leads your team cannot convert, while simultaneously alienating the self-serve mid-market users who previously drove organic growth and word-of-mouth referrals.",
     "confidence_level": "high",
-    "generatedAt": "2026-06-11T17:02:33.307Z",
-    "model": "claude-sonnet-4-5",
-    "costUsd": 0.020523
+    "generatedAt": "2026-06-12T10:35:12.457Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.028491000000000002
   },
   "seo-intent": {
     "primary_keyword": "Webflow homepage teardown",
     "primary_intent": "informational",
-    "audience_description": "A SaaS founder, growth marketer, or product strategist who manages positioning for a developer or marketing platform tool and wants to understand how Webflow successfully repositioned from a technical capability narrative ('break the code barrier') into an outcome-driven, enterprise-grade platform story ('growth engine'). They are trying to decide whether and how to reposition their own product messaging.",
-    "recommended_h1_format": "How [Company] Repositioned Its Homepage from Developer Tool to Growth Platform — A CRO Teardown (2020–2026)",
+    "audience_description": "A SaaS growth marketer, product strategist, or founder who is curious about how Webflow repositioned itself upmarket—either to understand the repositioning playbook for their own SaaS, or to evaluate whether Webflow's shift signals a strategic move away from freelancers and toward enterprise. They want to see the reasoning behind each change, not just the surface-level differences.",
+    "recommended_h1_format": "[Company] Homepage Teardown: How It Repositioned From Developer Tool to Growth Engine",
     "secondary_keywords": [
-      "Webflow homepage evolution 2020 to 2026",
-      "how Webflow changed its positioning from code barrier to growth engine",
-      "Webflow landing page teardown agentic platform",
-      "Webflow CRO strategy outcome-driven messaging",
-      "Webflow H1 rewrite case study SaaS positioning"
+      "Webflow homepage evolution 2020-2026",
+      "how Webflow repositioned upmarket",
+      "Webflow CRO strategy teardown",
+      "Webflow messaging shift analysis",
+      "Webflow enterprise positioning strategy"
     ],
-    "content_angle": "Focus on the WHY and WHEN behind the repositioning shift, not just the WHAT changed. The searcher wants to understand: (1) What market or competitive pressure triggered the shift from capability-first ('break the code barrier') to outcome-first ('growth engine') messaging? (2) How did removing free-trial language and adding sales-qualified CTA signals a shift upmarket? (3) What evidence suggests this repositioning worked (e.g., changed audience, changed pricing tier, changed win rate)? (4) Which elements of this repositioning are replicable for their own platform, and which are Webflow-specific? The article should position this as a masterclass in how to 'grow up' your messaging as your product and ICP mature, not just a surface-level design critique.",
-    "what_the_searcher_wants": "To understand the strategic thinking and business reasoning behind Webflow's repositioning so they can evaluate whether a similar shift would work for their own SaaS platform or positioning.",
-    "what_to_avoid": "Do not treat this as a before/after design comparison or a list of what buttons moved. Do not assume the shift was purely driven by AI trends — investigate whether it was driven by market repositioning, competitor pressure, or ICP expansion. Do not ignore the timing (why Jan 2020 → Jun 2026? what inflection points occurred?). Do not miss the tension between 'agentic marketing platform' messaging and the actual user base (designers, marketers, agencies) — the article should address whether this messaging actually resonates or if it's aspirational positioning. Avoid generic SaaS positioning advice ('outcome-driven is better than capability-driven') — this article must be specific to Webflow's market and timing.",
+    "content_angle": "Frame this as a case study in upmarket repositioning—show HOW Webflow used homepage changes to signal a shift from practitioner-empowerment to business-outcome language, and WHY each change (H1 pivot, removal of 'free' messaging, addition of 'agentic' category language, nav restructuring) was necessary to move from selling to designers to selling to CMOs and marketing leaders. The searcher wants to understand the strategic *why* so they can evaluate whether to apply similar moves to their own SaaS.",
+    "what_the_searcher_wants": "Proof that a developer-first tool can successfully reposition upmarket without alienating its core audience, and a playbook they can adapt: What messaging shifts work? When do you remove free/ease-of-use language? How do you introduce new category concepts (like 'agentic') without confusing existing users?",
+    "what_to_avoid": "Treating this as a simple before-and-after comparison ('the button moved here, the color changed there'). The searcher doesn't care about cosmetic changes—they care about the *strategic reasoning* behind the repositioning. Avoid commentary that assumes the changes are obvious or inevitable. Instead, dig into the tension: why did Webflow have to remove 'free until launch' to target enterprises? What risk did that create? What does the addition of 'Contact Sales' signal about their go-to-market shift?",
     "confidence_level": "high",
-    "generatedAt": "2026-06-11T17:02:51.084Z",
+    "generatedAt": "2026-06-12T10:35:32.015Z",
     "model": "claude-haiku-4-5-20251001",
-    "costUsd": 0.003588
+    "costUsd": 0.0032112
   }
 }

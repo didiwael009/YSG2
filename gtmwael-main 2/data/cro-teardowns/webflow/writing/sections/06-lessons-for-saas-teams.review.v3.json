@@ -1,0 +1,42 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The phrase 'persona narrowing' in H3 #3 is an expert term used without an immediate plain-language definition in the same sentence.",
+    "The closing sentence of H3 #1 ('If not, promoting Contact Sales may generate a queue your team cannot convert') is slightly abstract — it names a risk but does not tell the founder what to do if the answer is no.",
+    "H3 #2's analytical paragraph contains three ideas tracked simultaneously: brand recognition as prerequisite, coined-term risk, and the distinction between borrowed vs invented language — borderline density violation.",
+    "The ## section heading is serviceable but slightly long and could be tightened; it does contain 'CTA', 'messaging', 'Webflow', and 'homepage' so searchability is met.",
+    "No paragraph strictly exceeds 60 words, but H3 #2's second analytical paragraph (~58 words) and H3 #3's second paragraph (~55 words) are at the edge.",
+    "The opening of H3 #3 states a finding (two headings removed) but does not front-load the implication within the first two sentences — the 'so what' arrives in sentence three.",
+    "'Persona narrowing' is used as a section label without a definition, violating the plain-language rule for expert terms.",
+    "The word count is approximately 370 words — within the 220–380 range, but near the ceiling."
+  ],
+  "requiredFixes": [
+    "H3 #3 heading uses 'Persona narrowing' without a definition. Rewrite the heading to plain English, e.g. 'Audience focus — Webflow removed the copy that spoke to explorers and cost-worried visitors' — or add a one-phrase definition immediately after the term in the opening sentence.",
+    "Move the implication earlier in H3 #3's opening block. The first sentence states what was removed; the second should immediately say what that signals for the founder, not describe the replacement copy. Swap sentences two and three so the takeaway lands by sentence two.",
+    "Split H3 #2's second analytical paragraph into two: one sentence on the brand-recognition prerequisite, one sentence on coined-term risk. The current paragraph asks the reader to track too many ideas at once.",
+    "The closing sentence of H3 #1's second paragraph ends with a conditional risk ('may generate a queue your team cannot convert') but does not tell the founder what to do if they answer 'no' to the qualification-playbook question. Add one concrete next step: e.g. 'If not, keep Contact Sales in the nav but keep Start for free as the above-fold primary until the playbook is ready.'"
+  ],
+  "riskFlags": [
+    "H3 #1: 'The demotion is consistent with prioritising enterprise pipeline over trial volume' — this is a causal inference not confirmed by the evidence; correctly hedged with 'consistent with' and 'though the evidence does not confirm this directly', so acceptable but flagged for awareness.",
+    "H3 #2: 'AEO...is a phrase Webflow appears to be actively defining' — the evidence supports repetition of the term but does not confirm Webflow coined it; the hedge 'appears to be' is appropriate but the claim should not be strengthened in any revision.",
+    "H3 #3: 'the page now expects visitors to arrive already informed' — this is an interpretive causation claim not directly traceable to the evidence; it is plausible but should carry a hedge like 'this suggests' rather than being stated as a conclusion."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'homepage', 'CTA', 'messaging', and 'Webflow' — strong for the primary keyword 'Webflow homepage teardown'.",
+    "H3 headings use quoted verbatim CTAs and section headings from the evidence, which may support featured-snippet eligibility for searches on Webflow CTA strategy.",
+    "The phrase 'Answer Engine Optimization' is spelled out with a plain-language definition in H3 #2 — good for long-tail AEO-related search queries that may themselves be emerging.",
+    "Section is within word count (approx. 370 words) — no thin-content risk, no over-stuffing."
+  ],
+  "rewriteInstruction": "Three targeted fixes will push this to 90+. First, replace 'Persona narrowing' in H3 #3's heading with plain English — the heading should name what Webflow did, not the strategic concept behind it. Second, reorder H3 #3's opening so the founder takeaway lands in sentence two, not sentence three — move the 'what this signals for you' line up before the description of the replacement copy. Third, split H3 #2's second analytical paragraph into two shorter units, one per idea: (a) the brand-recognition prerequisite and (b) the coined-term confusion risk. Do not change the verbatim quotes, the evidence links, or the runnable tests — those are the section's strongest assets.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,43 @@
+{
+  "score": 79,
+  "pass": false,
+  "issues": [
+    "Section exceeds 320-word limit — approximate word count is ~370 words, triggering an over-length flag.",
+    "The third H3 ('June 2026 — a polished page that may address a more specific reader') does not deliver its practical takeaway in the first two sentences — the actionable observation about non-French visitors is buried in the second paragraph.",
+    "The final runnable test is appended as a loose paragraph after the last H3 block rather than being its own labelled H3 sub-block or clearly signalled as a test — makes it easy to miss on scan.",
+    "Paragraph 2 of the first H3 block ('The layout matched that openness...') is under 60 words but introduces a second distinct idea (design layout details) separate from the messaging idea in paragraph 1 — consider merging or removing.",
+    "The second H3 heading ('Expensya messaging shift: English out, French in') is functional but does not follow the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula cleanly — the finding is the heading itself, leaving the paragraph to re-state it.",
+    "The phrase 'built for scale, not selection' in the opening uses an abstract contrast that is not grounded in the evidence — 'selection' implies an ICP-narrowing intent that is not stated in the evidence.",
+    "The closing test paragraph is not inside an H3 block, reducing scannability for skimmers.",
+    "No paragraph explicitly notes that only 2 snapshots exist (no mid-transition), which is relevant context for readers evaluating the strength of the timeline claim."
+  ],
+  "requiredFixes": [
+    "Trim the draft to 320 words or fewer — cut the second paragraph of H3-1 (layout/brand maturity detail) and condense H3-3 to a single paragraph.",
+    "Move the practical takeaway about French-only navigation to the FIRST sentence of the H3-3 block, not the second paragraph.",
+    "Wrap the final runnable test inside its own H3 subheading (e.g., '### 5-minute check: can a non-French visitor still convert?') so it is scannable and clearly separated from analysis.",
+    "Remove or reframe 'built for scale, not selection' — 'selection' implies a deliberate ICP strategy not evidenced in the data; replace with a concrete, evidence-backed contrast.",
+    "Add a one-sentence note early in the section that only 2 snapshots exist and there is no confirmed mid-point data, so the timeline shows start and end state only."
+  ],
+  "riskFlags": [
+    "'built for scale, not selection' implies a deliberate ICP-narrowing decision — this is not traceable to the evidence and edges toward a causation claim.",
+    "'if intentional, it signals a shift toward a French-speaking audience' is appropriately hedged, but the alternative ('regional SEO or localisation decision') is also unconfirmed — flag as speculative, though hedging partially mitigates.",
+    "The phrase 'a non-French visitor may find fewer obvious entry points than before' is a mild outcome inference — it is not directly confirmed by the evidence, though it is logically defensible from the removed CTAs list."
+  ],
+  "seoNotes": [
+    "The ## heading 'Expensya homepage 2020–2026: messaging and visual redesign across six years' contains the company name, 'homepage', 'messaging', and a date range — strong for long-tail search on this teardown topic.",
+    "H3 heading 'Expensya messaging shift: English out, French in' is highly specific and may attract search traffic on Expensya localisation or language strategy topics.",
+    "The section currently has no internal link anchor opportunities — consider whether a summary of key changes (headline, meta, CTAs removed) could double as structured data or a linked reference block.",
+    "The French headline and meta description quoted verbatim could help the article surface in French-language searches about Expensya if hreflang or multilingual indexing is in scope."
+  ],
+  "rewriteInstruction": "Rewrite to bring the section under 320 words while preserving all three H3 blocks plus a fourth H3 for the runnable test. Start H3-1 with the headline observation as the finding — drop the abstract 'built for scale, not selection' framing. Cut the standalone layout paragraph in H3-1 and fold any essential design detail (isometric illustration, green CTA) into one sentence within the main paragraph. Open H3-3 with the actionable finding — that a non-French visitor loses three named CTAs — in the first sentence, then explain the implication. Add a clearly labelled fourth H3 for the 5-minute test, anchored to the three removed CTAs by name. Add a single bracketed note near the top of the section acknowledging only 2 snapshots exist so readers understand the timeline covers start-state and end-state only. Maintain hedged language throughout ('may reflect', 'if intentional') — no causal claims.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 9,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 80
+}

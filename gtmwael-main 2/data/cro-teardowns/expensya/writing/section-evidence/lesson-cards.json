@@ -1,26 +1,26 @@
 [
   {
     "number": "01",
-    "title": "Expensya replaced \"Automated spend management for all companies\" with French-language messaging",
-    "category": "Positioning",
-    "body": "The original headline **\"Automated spend management for all companies\"** positioned the product as a universal automation tool. The new French headline **\"Voici à quoi devrait ressembler la gestion des dépenses\"** (This is what expense management should look like) signals a geographic repositioning. This suggests Expensya may be prioritising French-speaking markets or filtering for buyers who prefer localised solutions over English-first SaaS competitors."
+    "title": "Expensya dropped 'Automated spend management for all companies' — and replaced it with a standard",
+    "category": "Messaging",
+    "body": "The original H1 described the product. The new H1, **\"Voici à quoi devrait ressembler la gestion des dépenses.\"** — roughly 'Here is what expense management should look like' — describes an expectation. That shift suggests Expensya is no longer positioning against competitors on features; it may be positioning against the status quo itself, inviting buyers to measure their current tool against a standard Expensya sets."
   },
   {
     "number": "02",
-    "title": "Removing \"Free trial\" from the CTA set is a sales-motion change, not simplification",
+    "title": "Expensya removed 'Free trial' and replaced it with 'Réservez une démo' as the primary above-fold CTA",
     "category": "Funnel",
-    "body": "The primary CTA changed from **\"Free trial\"** to **\"Réservez une démo\"** (Book a demo). This shift moves the conversion path from self-serve trial to assisted sales. It likely indicates Expensya is targeting larger accounts or longer deal cycles where a demo qualifies intent better than a trial signup. The change filters out casual visitors and signals that buyers already know what category they need."
+    "body": "Dropping **\"Free trial\"** and surfacing **\"Réservez une démo\"** as the lead call-to-action points to a shift toward a sales-assisted conversion path. Self-serve sign-ups tend to attract people still evaluating; a demo request filters for buyers who are closer to a decision and willing to spend time with a salesperson. The removed CTAs — **\"Discover our solutions\"** and **\"Find out more\"** — also suggests the page now assumes less need for early-stage education."
   },
   {
     "number": "03",
-    "title": "\"Cartes de paiement & budgets\" and \"Politiques de dépenses\" are new H2s — the product expanded",
-    "category": "Messaging",
-    "body": "The new section headings **\"Cartes de paiement & budgets\"** (Payment cards & budgets) and **\"Politiques de dépenses\"** (Expense policies) did not appear in the 2020 version. These headings suggest Expensya added product capabilities beyond basic expense reporting. The prominence of these sections on the homepage indicates the team now views compliance and card issuance as core selling points, not secondary features."
+    "title": "14 new section headings later — Expensya's page now leads with compliance and risk, not automation",
+    "category": "Positioning",
+    "body": "The 2020 page led with **\"Expensya fully automates your business expenditure\"** and **\"A solution designed for every company.\"** The 2026 page opens its feature narrative with **\"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\"** — compliance, risk, and visibility. That ordering likely reflects what finance teams now list as their first concern, and suggests Expensya's sales conversations have shifted toward governance-oriented buyers."
   },
   {
     "number": "04",
-    "title": "14 new section headings and a full language shift point to a market-focus tightening",
+    "title": "When Expensya rewrote every English headline in French, that was a market-focus decision, not a translation",
     "category": "Strategy",
-    "body": "Expensya added 14 new section headings and removed 7 generic ones like **\"Equip yourself with the most comprehensive business spend and expense management solution\"**. The new headings are shorter, more specific, and entirely in French. This comprehensive content overhaul—paired with the CTA and headline changes—suggests the company decided to own a narrower market segment rather than pitch universal automation to all company sizes."
+    "body": "Every major surface — H1, meta description, page title, and section headings — moved from English to French between 2020 and 2026. The page title now reads **\"Gestion des dépenses des employés et cartes de paiement | Expensya\"** rather than a generic English product label. Taken together with the addition of **\"Multi-devises et multi-pays\"** as a named feature section, the overall arc suggests a deliberate narrowing toward a French-speaking European market rather than a broad global audience."
   }
 ]

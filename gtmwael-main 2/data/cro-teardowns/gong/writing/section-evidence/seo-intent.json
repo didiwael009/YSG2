@@ -1,20 +1,20 @@
 {
   "primary_keyword": "Gong homepage teardown",
   "primary_intent": "informational",
-  "audience_description": "A SaaS founder, product lead, or growth marketer who is deciding whether to pivot their messaging from category education to AI-first positioning. They want to understand the risk/reward of abandoning explanatory content in favor of prediction-focused value props, and whether Gong's shift signals a broader market trend they should follow.",
-  "recommended_h1_format": "How Gong's Homepage Teardown Reveals the Shift from Revenue Intelligence Education to AI-First Positioning",
+  "audience_description": "A SaaS founder, VP of Product, or GTM strategist who is tracking Gong's market repositioning and wants to understand how the shift from 'Revenue Intelligence' to 'Revenue AI OS' was signaled through homepage changes—to inform their own category positioning or product messaging strategy.",
+  "recommended_h1_format": "How Gong's Homepage Teardown Reveals the Shift from Revenue Intelligence to AI OS",
   "secondary_keywords": [
-    "Gong CRO teardown",
-    "how Gong repositioned its homepage",
-    "Gong Revenue AI OS positioning strategy",
-    "why Gong removed educational content from homepage",
-    "Gong homepage evolution 2020-2026"
+    "Gong revenue intelligence to AI OS positioning change",
+    "Gong homepage evolution 2020 2026",
+    "How Gong repositioned its product messaging",
+    "Gong CRO teardown: from category creator to platform play",
+    "Gong GTM repositioning strategy analysis"
   ],
-  "content_angle": "Focus on the STRATEGIC RISK of the pivot, not just the tactical changes. The searcher needs to understand: (1) Why Gong felt safe removing all educational onboarding content (market maturity signal); (2) What they gained (ownership of the AI narrative) and what they risked (lost SEO equity, alienated buyers still learning what RI is); (3) Whether this move worked (social proof, conversion signals) and for whom it would be safe to replicate. Frame it as 'the category education exit strategy' — useful for companies that successfully crossed the chasm.",
-  "what_the_searcher_wants": "A decision framework for whether to stop educating their market and start owning a higher-order narrative. They want proof that this trade-off can work, and clarity on what type of company (maturity, market position, brand strength) can afford to make it.",
-  "what_to_avoid": "Treating this as a pure design/copy audit. Do NOT focus on button colors, word choice tweaks, or CTAs without connecting them to the category exit thesis. Avoid praising the change as universally 'bold' — instead, show the prerequisites that made it viable for Gong (5,000+ customers, $3B+ valuation, 7-year category lead) that a smaller competitor would NOT have. Do not ignore the removed navigation items (Reveal podcast, Coaching Recommendations, Overview) — these were deliberate category-education scaffolding that got stripped.",
+  "content_angle": "Focus on the strategic *why* behind the repositioning—not just the aesthetic or copy changes. The searcher needs to understand whether Gong abandoned category ownership because the market matured, because AI made single-point tools commoditized, or because cross-functional GTM revenue orchestration is a bigger TAM play. Show how the homepage messaging hierarchy shifted to reflect this new business model (from educator to infrastructure provider). This is a case study in category migration, not just a design critique.",
+  "what_the_searcher_wants": "To learn whether repositioning from a single-team tool to a cross-functional platform is a viable playbook for their own SaaS company—and to see exactly how Gong telegraphed that shift so they can replicate the messaging strategy without waiting for market data.",
+  "what_to_avoid": "Do not treat this as a surface-level design teardown (color changes, layout, button placement). Avoid the trap of celebrating 'better CTAs' without interrogating whether the CTA strategy reflects a fundamental GTM shift. Do not assume the change was incremental optimization—the thesis shows it was a repositioning. Missing this will make the article feel like shallow UX critique rather than strategic business analysis.",
   "confidence_level": "high",
-  "generatedAt": "2026-06-12T08:19:35.875Z",
+  "generatedAt": "2026-06-12T10:58:43.856Z",
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.003272
+  "costUsd": 0.0030232
 }

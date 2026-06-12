@@ -60,28 +60,63 @@ export interface RunOutlineGeneratorResult {
 
 // ─── Anti-repetition corpus ───────────────────────────────────────────────────
 
+interface PublishedArticleSignals {
+  slug:             string;
+  central_thesis?:  string;
+  angle?:           string;
+  h2_headings:      string[];
+  positioning_card?: string;
+}
+
 /**
- * Loads the central_thesis from all published articles' strategic-shift.json files.
- * Used to instruct the outline generator to find a distinct angle.
+ * Loads the central_thesis, outline angle, and custom H2s from all published
+ * articles. The richer corpus lets the generator avoid repeating not just the
+ * thesis but also the framing angle and section headings across articles.
  */
-function loadPublishedTheses(dataRoot: string, excludeSlug: string): string[] {
-  const theses: string[] = [];
+function loadPublishedSignals(dataRoot: string, excludeSlug: string): PublishedArticleSignals[] {
+  const signals: PublishedArticleSignals[] = [];
   try {
     const slugDirs = fs.readdirSync(dataRoot).filter(d => d !== excludeSlug);
     for (const dir of slugDirs) {
+      const entry: PublishedArticleSignals = { slug: dir, h2_headings: [] };
+
+      // Strategic shift thesis
       const shiftPath = path.join(dataRoot, dir, 'writing', 'section-evidence', 'strategic-shift.json');
-      if (!fs.existsSync(shiftPath)) continue;
-      try {
-        const shift = JSON.parse(fs.readFileSync(shiftPath, 'utf-8')) as { central_thesis?: string };
-        if (shift.central_thesis) theses.push(shift.central_thesis);
-      } catch {
-        // skip malformed files
+      if (fs.existsSync(shiftPath)) {
+        try {
+          const shift = JSON.parse(fs.readFileSync(shiftPath, 'utf-8')) as { central_thesis?: string };
+          if (shift.central_thesis) entry.central_thesis = shift.central_thesis;
+        } catch { /* skip */ }
+      }
+
+      // Outline angle + H2 headings (only available for V6 articles)
+      const outlinePath = path.join(dataRoot, dir, 'writing', 'article-outline.json');
+      if (fs.existsSync(outlinePath)) {
+        try {
+          const outline = JSON.parse(fs.readFileSync(outlinePath, 'utf-8')) as {
+            angle?: string;
+            sections?: Array<{ custom_h2?: string | null }>;
+            at_a_glance_cards?: Array<{ label: string; value: string }>;
+          };
+          if (outline.angle) entry.angle = outline.angle;
+          entry.h2_headings = (outline.sections ?? [])
+            .map(s => s.custom_h2)
+            .filter((h): h is string => typeof h === 'string' && h.length > 0);
+          const posCard = (outline.at_a_glance_cards ?? []).find(c =>
+            c.label.toLowerCase().includes('positioning') || c.label.toLowerCase().includes('shift'),
+          );
+          if (posCard) entry.positioning_card = posCard.value;
+        } catch { /* skip */ }
+      }
+
+      if (entry.central_thesis || entry.angle || entry.h2_headings.length > 0) {
+        signals.push(entry);
       }
     }
   } catch {
     // dataRoot may not exist yet
   }
-  return theses;
+  return signals;
 }
 
 // ─── Prompt ───────────────────────────────────────────────────────────────────
@@ -105,13 +140,23 @@ function buildUserPrompt(opts: {
   shift:       Record<string, unknown>;
   visual:      Record<string, unknown> | null;
   research:    Record<string, unknown> | null;
-  theses:      string[];
+  signals:     PublishedArticleSignals[];
 }): string {
-  const { company, fromLabel, toLabel, shift, visual, research, theses } = opts;
+  const { company, fromLabel, toLabel, shift, visual, research, signals } = opts;
 
-  const antiRepetitionBlock = theses.length > 0
-    ? `\nPREVIOUSLY PUBLISHED THESES (do NOT repeat these angles):\n${theses.map((t, i) => `  ${i + 1}. ${t}`).join('\n')}`
-    : '';
+  let antiRepetitionBlock = '';
+  if (signals.length > 0) {
+    const lines: string[] = [];
+    for (const s of signals) {
+      const parts: string[] = [`[${s.slug}]`];
+      if (s.central_thesis) parts.push(`Thesis: ${s.central_thesis}`);
+      if (s.angle)          parts.push(`Angle: ${s.angle}`);
+      if (s.positioning_card) parts.push(`Positioning: ${s.positioning_card}`);
+      if (s.h2_headings.length > 0) parts.push(`H2s used: ${s.h2_headings.join(' | ')}`);
+      lines.push(parts.join(' — '));
+    }
+    antiRepetitionBlock = `\nPREVIOUSLY PUBLISHED ARTICLES (do NOT repeat these theses, angles, or H2 patterns):\n${lines.map((l, i) => `  ${i + 1}. ${l}`).join('\n')}`;
+  }
 
   return `Create a custom article outline for the ${company} CRO teardown (${fromLabel} → ${toLabel}).
 
@@ -130,11 +175,15 @@ Based on all of the above, identify:
 2. What makes this brand's story DIFFERENT from the other teardowns
 3. A custom article structure that best tells THIS brand's specific story
 
-AVAILABLE SECTION IDs (reuse these IDs — they map to existing components):
-  "01-intro"              — opening paragraph with keyword and hook
-  "07-business-context"   — why the homepage changed (business context prose)
+AVAILABLE SECTION IDs (reuse these IDs exactly — they map to existing pipeline components):
+  "01-intro"                    — opening paragraph with keyword and hook (no H2)
+  "03-visual-timeline"          — visual arc through the snapshot timeline
+  "04-messaging-evolution"      — headline, meta, and copy shifts
+  "05-cta-navigation-evolution" — CTA and navigation changes
+  "07-business-context"         — why the homepage changed (business context prose)
+  "06-lessons-for-saas-teams"   — practical patterns SaaS teams can apply
 
-Return this exact JSON shape:
+Return this exact JSON shape (include ALL 6 sections in this order):
 {
   "angle": "1-2 sentences describing the specific story angle for this brand only",
   "distinct_from": ["in 5-8 words, what makes this different from prior teardowns"],
@@ -148,12 +197,44 @@ Return this exact JSON shape:
       "marketing_lens": "positioning|design|sales-motion|icp|category|product|brand"
     },
     {
+      "id": "03-visual-timeline",
+      "custom_h2": "## [Company] homepage [time span]: from [start state] to [end state]",
+      "goal": "What the visual timeline must show about when and how the design arc shifted",
+      "word_target": 250,
+      "evidence_sources": ["analysis-blocks", "messaging", "visual-analysis"],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How [Company]'s [messaging element] shifted from [start] to [end]",
+      "goal": "What the headline and copy evolution reveals about the target buyer change",
+      "word_target": 280,
+      "evidence_sources": ["messaging", "summary-cards", "strategic-shift", "seo-intent", "visual-analysis"],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How [Company]'s CTA and navigation changed the sales motion",
+      "goal": "What CTA and nav removals/additions signal about the buyer journey shift",
+      "word_target": 240,
+      "evidence_sources": ["cta-changes", "h2-changes"],
+      "marketing_lens": "sales-motion|icp"
+    },
+    {
       "id": "07-business-context",
       "custom_h2": "## [Brand-specific heading — not 'Why the homepage changed']",
       "goal": "What this business context section must explain for this brand specifically",
       "word_target": 180,
       "evidence_sources": ["messaging", "summary-cards", "strategic-shift", "business-context-research"],
-      "marketing_lens": "positioning|design|sales-motion|icp|category|product|brand"
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from [Company]'s homepage evolution",
+      "goal": "3 specific, runnable patterns this brand's evolution teaches — not generic advice",
+      "word_target": 280,
+      "evidence_sources": ["lesson-cards", "summary-cards", "strategic-shift"],
+      "marketing_lens": "positioning|sales-motion|icp"
     }
   ],
   "at_a_glance_cards": [
@@ -187,11 +268,11 @@ Rules for at_a_glance_cards:
 - Values should be SHORT (3-6 words max) and specific to this brand
 - Notes should be 1 specific observation from the evidence
 
-Rules for sections:
-- Always include "01-intro" and "07-business-context" at minimum
-- The custom_h2 for 07-business-context must be brand-specific (mention the company name OR the specific mechanism of change)
-- example good H2: "## Why Clay stopped being a spreadsheet and became a data platform"
-- example bad H2: "## Why the homepage changed" (too generic)`;
+Rules for H2 headings:
+- Every custom_h2 (except 01-intro which is null) must mention the company name OR a specific mechanism
+- example good: "## Why Expensya abandoned English after the Medius acquisition"
+- example bad: "## Why the homepage changed" (too generic)
+- Do NOT reuse H2 patterns from the previously published articles listed above`;
 }
 
 // ─── Runner ───────────────────────────────────────────────────────────────────
@@ -245,22 +326,22 @@ export async function runOutlineGenerator(opts: {
     ? JSON.parse(fs.readFileSync(researchPath, 'utf-8')) as Record<string, unknown>
     : null;
 
-  const theses = loadPublishedTheses(dataRoot, slug);
+  const signals = loadPublishedSignals(dataRoot, slug);
 
   const company   = ep.companyName ?? slug;
   const fromLabel = ep.fromMonth   ?? 'start';
   const toLabel   = ep.toMonth     ?? 'present';
 
   onLog(`  Outline generator: building custom outline for ${company}`);
-  if (theses.length > 0) onLog(`  Anti-repetition: loaded ${theses.length} prior theses`);
+  if (signals.length > 0) onLog(`  Anti-repetition: loaded signals from ${signals.length} prior articles`);
 
   const model = getModel('writer');
 
   const response = await callLLM({
     model,
     system:    SYSTEM_PROMPT,
-    messages:  [{ role: 'user', content: buildUserPrompt({ company, fromLabel, toLabel, shift, visual, research, theses }) }],
-    maxTokens: 2048,
+    messages:  [{ role: 'user', content: buildUserPrompt({ company, fromLabel, toLabel, shift, visual, research, signals }) }],
+    maxTokens: 3000,
   });
 
   const callCost = computeCallCost(model, 'outline-generator', response.inputTokens, response.outputTokens);

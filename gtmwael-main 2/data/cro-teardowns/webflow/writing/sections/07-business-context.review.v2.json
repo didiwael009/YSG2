@@ -2,44 +2,44 @@
   "score": 78,
   "pass": false,
   "issues": [
-    "H3 'Market entry context' paragraph is 62 words, exceeds 60-word limit",
-    "H3 'Product and competitive evolution' paragraph is 61 words, exceeds 60-word limit",
-    "The main section heading lacks company name (should be 'Why Webflow's homepage changed...' or similar)",
-    "Missing bold quotes around '$330 million', '$4 billion', '$1 million', '$8 million', 'Website Experience Platform', 'Intellimize' — these are verbatim facts/names from evidence requiring formatting",
-    "The phrase 'This points to' in the third H3 is causal language without an attached condition — should be 'This is consistent with' or conditional phrasing",
-    "The fourth H3 heading is not a strategic finding block — it's the five-minute test, which should not have its own H3 heading per standard teardown format",
-    "The opening sentence is generic funding news that could appear in any SaaS teardown — not anchored to what makes THIS shift interesting",
-    "The final test instruction ('you may be filtering out the buyers who actually arrive') is generic advice, not specific to Webflow's evidence",
-    "Section structure violates the stated goal: four H3 blocks instead of three short paragraphs"
+    "Section word count is approximately 230 words — exceeds the 120–200 word cap stated in the section goal.",
+    "Paragraph 1 (H3 block 1) is approximately 65 words — exceeds the 60-word limit for non-intro paragraphs.",
+    "Paragraph 3 (H3 block 3) is approximately 80 words — significantly exceeds the 60-word limit.",
+    "The section goal specifies three short paragraphs; the draft has three H3 sub-blocks but each is too long, violating the ≤60-word paragraph rule.",
+    "The causal claim 'forced Webflow to pick a buyer' in the ## heading is not directly supported by evidence — the evidence shows correlation of events, not a confirmed causal chain. This is a minor overreach.",
+    "H3 block 3 contains two distinct ideas (layoffs redirecting to AI-first AND CTA demotion AND a founder takeaway test) — more than 2 ideas tracked simultaneously, violating the density rule.",
+    "The opening of H3 block 2 ('The homepage shifts are consistent with that pressure') buries the finding — 'consistent with' is a hedge that delays the finding rather than leading with it.",
+    "The final runnable test ('Check your own page title: does it describe what your product does, or does it claim a category?') is moderately specific but not anchored to a sub-5-minute action tied to Webflow's specific evidence (e.g., no reference to the specific before/after title language as a benchmark).",
+    "The phrase 'upmarket direction' in H3 block 2 is used without a plain-language gloss on first use — 'upmarket' is mild jargon in this context.",
+    "H3 block 3 closes with 'your homepage may be built for a buyer you have already outgrown' — this is an outcome/causation-adjacent claim without a stated condition, risking a -3 penalty.",
+    "The ## heading contains financial figures ('$140M Series B') and a named event ('Intellimize acquisition') and a percentage ('8% layoff') — these are appropriately hedged in the body text with 'reportedly' but the heading itself is not hedged, which could mislead a skimmer."
   ],
   "requiredFixes": [
-    "Trim 'Market entry context' to ≤60 words by removing either the valuation detail or the competitor sentence",
-    "Trim 'Product and competitive evolution' to ≤60 words by condensing the Intellimize description",
-    "Add company name 'Webflow' to the ## heading: 'Why Webflow's homepage changed from designer tool to enterprise platform'",
-    "Wrap all verbatim facts in **bold quotes**: **'$330 million'**, **'$4 billion'**, **'Website Experience Platform'**, **'Intellimize'**",
-    "Replace 'This points to prioritizing' with 'This is consistent with prioritizing' or add a condition: 'If enterprise contracts became the priority, removing showcase CTAs would filter for buyers, not builders'",
-    "Remove the H3 heading from the five-minute test — it should be a standalone closing paragraph, not a fourth H3 block",
-    "Restructure to match stated goal: exactly three H3 blocks (market entry, product evolution, industry shift), each ≤60 words, followed by the five-minute test as a plain closing paragraph",
-    "Rewrite the five-minute test to be specific to Webflow's evidence: 'Count primary CTAs above the fold. Webflow removed showcase links and added **Contact Sales**. If your homepage has 3+ enterprise CTAs but most traffic is self-serve, you are filtering like Webflow did — measure whether this matches your pipeline reality.'"
+    "Cut each H3 paragraph to ≤60 words. The section is ~230 words total; target 150–180 words across three H3 blocks.",
+    "Trim H3 block 3 to one idea only — choose either the layoff/AI redirect context OR the CTA demotion evidence OR the founder test. The current block tries to do all three.",
+    "Rewrite the opening of H3 block 2 to lead with the finding, not a hedge. Replace 'The homepage shifts are consistent with that pressure' with a direct statement of what changed and why it matters.",
+    "Make the final founder test more specific and runnable: instruct the reader to open their own page title in a browser tab right now and compare it against Webflow's before title ('Responsive web design tool, CMS, and hosting platform') and after title ('Webflow: The agentic web platform for modern businesses') — which one does theirs resemble?",
+    "Add a condition to 'your homepage may be built for a buyer you have already outgrown' — e.g., 'if your sales team is closing deals above $X but your homepage still leads with free-tier messaging, your homepage may be...' to avoid an unsupported causal claim.",
+    "Add a brief plain-language gloss when 'upmarket' first appears — e.g., 'targeting larger companies with bigger budgets.'"
   ],
   "riskFlags": [
-    "CAUSAL: 'This points to prioritizing predictable enterprise contracts over viral designer adoption' — the evidence shows CTA removal and addition, but does not prove causation or strategic intent",
-    "CAUSAL: 'a tradeoff visible in how the page now filters for buyers, not builders' — filtering is outcome language, but the evidence does not prove this was the intended tradeoff or that filtering occurred",
-    "IMPLIED OUTCOME: 'consistent with targeting marketing leaders rather than individual designers' — this is inference, not fact; the evidence shows headline change but does not prove target audience shift caused it"
+    "The ## heading claim 'forced Webflow to pick a buyer' implies direct causation between the funding/acquisition/layoffs and the homepage change — the evidence supports correlation and chronological proximity, not confirmed causation. This risks a -10 outcome/causation penalty.",
+    "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this figure appears in the evidence and is hedged with 'reportedly', so it passes, but readers may question whether this growth was caused by or merely coincident with the Series B.",
+    "'your homepage may be built for a buyer you have already outgrown' — this is a generalised causation claim applied to the reader without a stated condition, risking a -3 penalty under the rubric."
   ],
   "seoNotes": [
-    "Positive: Section heading contains 'homepage', 'Webflow', and both positioning terms ('designer tool', 'enterprise platform')",
-    "Positive: First H3 heading contains 'Webflow' implicitly through company context",
-    "Negative: The section heading reads slightly awkward for SEO — 'Why Webflow changed its homepage' would be more natural search phrasing",
-    "Positive: H3 headings contain searchable terms ('market entry', 'product evolution', 'industry shift')"
+    "The ## heading is strong for SEO: it contains the company name (implied via context), named financial events, and a named acquisition — these are high-specificity search terms that match informational queries about Webflow's history.",
+    "The page title before/after quoted in H3 block 2 ('Responsive web design tool, CMS, and hosting platform' and 'Webflow: The agentic web platform for modern businesses') will index well for searchers researching Webflow's positioning evolution.",
+    "The term 'AEO' from the evidence is not mentioned in this section — if the article targets 'Webflow AEO' queries, a brief reference here would strengthen topical authority.",
+    "H3 subheadings are too generic for SEO: 'What changed in Webflow's homepage messaging' and 'What Webflow's homepage changes mean for your own positioning' are functional but would benefit from including a specific term like 'CTA', 'page title', or 'enterprise' to capture long-tail variants."
   ],
-  "rewriteInstruction": "Restructure to exactly three H3 blocks as stated in the section goal, each ≤60 words. Trim Market entry context to 58 words by removing the Framer/Wix sentence. Trim Product evolution to 59 words by condensing Intellimize to 'acquired AI personalization platform Intellimize'. Add company name to the ## heading. Replace all causal 'points to' language with 'is consistent with' or add explicit conditions. Wrap all quoted facts ($330M, $4B, Website Experience Platform, Intellimize, Contact Sales, Break the code barrier, Make your website a growth engine) in **bold quotes**. Move the five-minute test outside the H3 structure as a plain closing paragraph. Rewrite the test to be Webflow-specific: 'Webflow removed showcase CTAs and added **Contact Sales**. Count your primary CTAs above the fold — if 3+ require sales contact but your traffic is self-serve, you are filtering like Webflow. Does your pipeline support that filter?' Open with a finding, not generic funding news — lead with the $1M→$8M enterprise revenue jump in one year, which is the most concrete signal of ICP shift.",
+  "rewriteInstruction": "Trim each H3 block to a single idea of ≤60 words. Block 1: keep the funding and competitive pressure context (Series B, Series C, Framer threat) but cut to 3–4 tight sentences. Block 2: lead with the finding — state directly what the page title change signals — then add the Intellimize acquisition as supporting evidence in one sentence; remove the hedge opener. Block 3: choose one focus (the CTA demotion is the strongest concrete evidence), make the causal claim conditional ('if your sales team is already closing enterprise deals but your homepage leads with free-tier CTAs...'), and replace the abstract closer with the specific runnable test: open your page title tab right now and ask whether it looks more like the 2020 Webflow title (feature list) or the 2026 title (category claim). Also soften the ## heading from 'forced' (causal) to 'shaped' or 'pushed' to avoid the -10 causation penalty, and add 'reportedly' context to the heading if financial figures are retained.",
   "dimensionScores": {
-    "evidenceAccuracy": 15,
-    "specificity": 12,
-    "plainLanguage": 16,
-    "scannability": 9,
-    "searchableHeadings": 7,
+    "evidenceAccuracy": 20,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 8,
+    "searchableHeadings": 8,
     "rhythmAndOpening": 7,
     "founderTakeaway": 3
   },

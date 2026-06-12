@@ -1,0 +1,41 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'suggests the page may now expect some visitors who have already cleared the affordability question' is a soft causal claim without an explicit condition attached — marginally acceptable but risks a -3 penalty.",
+    "The opening sentence of the first H3 ('Webflow's CTA stack grew from one entry point to several, each pointing toward a different type of buyer') is analytical but does not lead with the sharpest finding; the 'Explore AEO' insight is more surprising and would make a stronger opening.",
+    "The third paragraph in H3-1 ('Explore AEO is the most specific addition...') carries two distinct ideas — demand creation vs. capture, and homepage function — which slightly violates the two-idea-per-paragraph rule.",
+    "'Get started — it's free' appears in both the ctaAdded and ctaRemoved arrays in the evidence, meaning it was present in both snapshots. The draft treats it only as a removed/original item without acknowledging its continued presence, which is a minor framing inaccuracy.",
+    "The word count is approximately 350 words, which exceeds the 180–320 word ceiling stated in the requirements.",
+    "No paragraph clearly exceeds 90 words (hard cap safe), but the second paragraph of H3-2 (~55 words) and the founder test block (~75 words) are on the edge — the founder test block may exceed 60 words and should be checked."
+  ],
+  "requiredFixes": [
+    "Trim the section to under 320 words — the draft is approximately 350 words. The H3-2 social proof paragraph and the founder test block are the best candidates for compression.",
+    "Acknowledge that 'Get started — it's free' appears in BOTH the ctaAdded and ctaRemoved arrays — it was present in Jan 2020 AND Jun 2026. The draft currently implies it was only in the 2020 version and was removed, which misreads the evidence. Reframe it as a CTA that persisted while new CTAs were layered around it.",
+    "Move the sharpest finding — the 'Explore AEO' demand-creation observation — to the first two sentences of H3-1, then sequence the other CTAs after it. The current opening buries the most interesting insight.",
+    "Split the 'Explore AEO' paragraph into two: one on what the CTA signals about audience familiarity, one on the homepage strategy implication. Each paragraph should carry only one trackable idea.",
+    "Add an explicit condition to the causal-adjacent claim about visitors 'having already cleared the affordability question' — e.g., 'if a meaningful share of inbound visitors are already in-market, this structure makes sense; if most arrive cold, the sales CTAs may go unused.' This satisfies the rubric's condition-attachment requirement."
+  ],
+  "riskFlags": [
+    "'suggests the page may now expect some visitors who have already cleared the affordability question' — soft causal claim with no attached condition; needs an 'if [condition]' clause.",
+    "'Their removal suggests the page may no longer need to convince visitors that Webflow works in practice' — plausible but unsupported by the evidence; no data confirms visitor conviction levels changed. Flag as inference, not finding.",
+    "'Get started — it's free' framing: evidence shows this CTA in BOTH added and removed arrays, implying it existed across both snapshots. Treating it as purely a legacy/removed item is a factual misread of the evidence data."
+  ],
+  "seoNotes": [
+    "The ## heading is strong: it contains the company name ('Webflow'), the topic ('CTA and Navigation Changes'), and named CTAs verbatim ('Contact Sales', 'Talk to Sales', 'Explore AEO') — highly searchable and likely to capture long-tail queries around Webflow's homepage evolution.",
+    "H3 headings are descriptive but slightly long for featured snippet eligibility; consider trimming each to under 60 characters while preserving the search terms.",
+    "Verbatim CTA and nav item quotes are consistently bolded throughout, which aids both readability and on-page keyword density for Webflow-specific search terms.",
+    "The article title and section heading together create good internal keyword consistency around 'Webflow homepage teardown' — the primary keyword supplied in the evidence."
+  ],
+  "rewriteInstruction": "Keep the two-H3 structure and all verbatim bold quotes — they are correctly sourced and well-formatted. Make three targeted changes: (1) Correct the 'Get started — it's free' framing — the evidence shows it in both snapshots, so rewrite to show it as a persistent anchor around which new CTAs were layered, not a removed one. (2) Open H3-1 with the 'Explore AEO' finding since it is the most unexpected and specific insight; move the general CTA-stack observation to sentence three or four. (3) Cut approximately 30–40 words to land under 320 words — compress the social proof paragraph in H3-2 and tighten the founder test to one crisp instruction. Also add a brief condition clause to the affordability-question sentence so it reads as inference rather than assertion.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 14,
+    "plainLanguage": 18,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

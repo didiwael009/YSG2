@@ -1,0 +1,99 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Webflow",
+  "companyUrl": "https://webflow.com/",
+  "articleTitle": "Webflow Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Webflow rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 5,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Webflow homepage teardown",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2020-01",
+      "label": "Jan 2020 — original state",
+      "period": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/webflow/selected/2020-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Break the code barrier\" — direct product statement.",
+        "Visible section headings include: \"Design\", \"Build\", \"Launch\".",
+        "Section headings later removed include: \"Who uses Webflow\" and \"Get up and running fast\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/webflow/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Make your website a growth engine\" — updated value proposition.",
+        "New section headings include: \"Webflow is the agentic web marketing platform for high-performing brands\", \"300,000+ brands move the needle with Webflow\", \"From idea to impact, faster\".",
+        "CTAs no longer present include: \"Get started — it's free\", \"Dell prototypes faster and more effectively.\", \"Heco builds world-class sites for clients.\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Break the code barrier",
+      "after": "Make your website a growth engine",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
+      "after": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Responsive web design tool, CMS, and hosting platform | Webflow",
+      "after": "Webflow: The agentic web platform for modern businesses"
+    }
+  ],
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2020-01",
+        "design_era": "growth",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Left-aligned headline 'Break the code barrier' with subtext and blue CTA button, paired with right-aligned isometric product imagery stack.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "current-live",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Top navigation bar with logo and sign-in, followed by hero section with centered headline 'Make your website a growth engine' over full-width background imagery, with supporting subtext and blue CTA.",
+        "proof_density": "high",
+        "primary_message_type": "category",
+        "visual_sophistication": 5,
+        "brand_maturity": "enterprise-grade"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from a balanced two-column hero layout with moderate proof density to a full-width, immersive hero experience with increased visual hierarchy, more prominent navigation, and significantly denser social proof through client logos and case study imagery throughout the page.",
+    "design_evolution_label": "growth-stage-to-enterprise-platform",
+    "generatedAt": "2026-06-12T08:08:27.231Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0029848
+  }
+}

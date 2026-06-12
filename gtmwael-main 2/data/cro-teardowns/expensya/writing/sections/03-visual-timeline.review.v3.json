@@ -1,0 +1,49 @@
+{
+  "score": 79,
+  "pass": false,
+  "issues": [
+    "Section heading says '2020–2025' but the evidence clearly states the second snapshot is June 2026 — a factual error not traceable to evidence.",
+    "Section heading contains no searchable topic term beyond the company name and date range — 'homepage', 'positioning', 'messaging', or 'CTA' is absent.",
+    "Third H3 ('June 2026 — a polished page that may reach a narrower audience') repeats the CTAs already listed in the second H3, which causes the paragraph to carry more than 2 distinct ideas and buries the finding.",
+    "The third H3 body paragraph is approximately 75 words — exceeds the 60-word cap for H3 body paragraphs, triggering a scannability penalty.",
+    "The phrase 'narrowing' in the third H3 implies audience reduction as an outcome without an explicit condition ('if [condition]'), triggering a causal-without-condition penalty.",
+    "The current H1 is in French ('Voici à quoi devrait ressembler la gestion des dépenses.') and the article must serve English-language readers — the draft quotes it in bold but provides no translation, leaving the meaning opaque for non-French founders.",
+    "The meta description quote 'le logiciel intelligent de gestion des dépenses pour les équipes financières modernes' is also untranslated, same problem.",
+    "The finding in the third H3 ('a polished page that may reach a narrower audience') is not stated in the first two sentences — the first sentence lists removed CTAs again before arriving at the finding.",
+    "The closing sentence of H3 block 3 ('Whether that narrowing is intentional or incidental...') is abstract and inconclusive rather than concrete or actionable — violates the closing-sentence rule.",
+    "The second H3 block contains approximately 95 words across its paragraph — exceeds 60-word paragraph cap, which also risks triggering the 90-word scannability hard cap (check exact count).",
+    "Word count is approximately 310 words — within range but at the upper edge; the repeated CTA list inflates it unnecessarily."
+  ],
+  "requiredFixes": [
+    "Fix the section heading date: change '2020–2025' to '2020–2026' to match the evidence.",
+    "Add a searchable topic term to the ## heading — e.g. 'Expensya homepage messaging 2020–2026: from isometric automation to human-first French positioning'.",
+    "Add inline translations for both French quotes immediately after the bold quote — e.g. **'Voici à quoi devrait ressembler la gestion des dépenses.'** ('This is what spend management should look like.') — so non-French founders can follow the analysis.",
+    "Split the second H3 paragraph or trim it to under 60 words. The CTA list and the headline/meta analysis are two distinct ideas — separate them or cut the meta description detail to a single sentence.",
+    "Rewrite the third H3 so the finding appears in sentence one, not after the CTA list recap. Remove the duplicate CTA enumeration — they were already listed in H3 block two.",
+    "Replace the abstract closing sentence in H3 block 3 ('Whether that narrowing is intentional or incidental...') with a concrete, actionable observation, e.g. 'If the localisation was deliberate, expect to find a separate English-language landing page or regional domain handling non-French traffic.'",
+    "Add an explicit condition to any 'narrowing' or audience-reduction claim — e.g. 'if no English-language alternative exists, this shift removes a conversion path for non-French visitors'.",
+    "Ensure each H3 body paragraph is under 60 words. Trim or split any paragraph that exceeds this."
+  ],
+  "riskFlags": [
+    "The claim that three CTAs 'disappeared' implies intentional removal — the evidence shows they are absent in the current snapshot but does not confirm deliberate removal versus page restructuring.",
+    "The phrase 'may reach a narrower audience' edges toward an outcome claim without a stated condition — add 'if no English alternative exists' or equivalent.",
+    "The section heading implies the page is now a 'French identity' play — this is an interpretation not directly confirmed by the evidence, which notes the language shift 'may reflect a regional focus, an SEO decision, or both'."
+  ],
+  "seoNotes": [
+    "The ## heading currently reads '2020–2025' which is factually wrong and would harm credibility in search snippets — fix to '2020–2026' immediately.",
+    "The heading lacks the word 'homepage', 'messaging', or 'CTA' — adding at least one increases keyword surface for the primary query 'Expensya homepage teardown'.",
+    "The untranslated French quotes reduce the section's usefulness for English-language search readers and may increase bounce rate on this section.",
+    "The H3 subheadings ('October 2020', '2020 to 2026', 'June 2026') are date-only labels — adding a descriptive keyword phrase (e.g. 'CTA removal', 'headline shift') would improve anchor-text value for internal linking."
+  ],
+  "rewriteInstruction": "Fix the heading date to 2026, then add 'homepage messaging' or 'CTA' to the ## heading so it is searchable. Immediately after every French quote, add a bracketed English translation in plain text so non-French founders can follow the argument. Trim or split the second H3 paragraph to under 60 words by cutting the meta description detail to one sentence — the CTA removal is the stronger finding, lead with that. Rewrite the third H3 so sentence one states the finding plainly (e.g. 'The current page gives non-French visitors fewer entry points'), then cut the repeated CTA list entirely since it already appeared in H3 two. Replace the abstract closing sentence with a concrete, conditional observation about what a non-French visitor would encounter if no alternative language path exists. Ensure every audience-narrowing or conversion-path claim carries an explicit 'if [condition]' clause to avoid unsupported causal language.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 13,
+    "plainLanguage": 16,
+    "scannability": 8,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 80
+}

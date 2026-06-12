@@ -1,61 +1,111 @@
 {
-  "angle": "Expensya executed a French-market category consolidation play by abandoning international English-language positioning in favor of French-only messaging that bundles embedded payment cards with expense management, signaling a strategic retreat from global horizontal expansion to own a specific geographic vertical after its acquisition by Medius.",
+  "angle": "Expensya's homepage evolution is not a typical PLG-to-sales-led pivot — it is a company that raised $20M for international expansion, then retreated into its French-speaking heartland after being acquired for over $100M, rewriting its entire homepage identity from English automation breadth to French compliance depth to serve the CFO buyer its acquirer needed.",
   "distinct_from": [
-    "Geographic localization as strategic contraction",
-    "Software-to-fintech product bundling",
-    "Post-acquisition positioning shift",
-    "Language change as ICP signal"
+    "acquisition-driven market retreat, not organic repositioning",
+    "language as primary strategic signal",
+    "compliance replacing automation as core value prop"
   ],
   "sections": [
     {
       "id": "01-intro",
       "custom_h2": null,
-      "goal": "Establish that Expensya's homepage shift is not a typical localization play but a deliberate geographic market exit strategy, using the language change from English to French as the most visible signal of a broader strategic contraction from multi-market horizontal SaaS to French-only embedded finance platform.",
+      "goal": "Open with the paradox: Expensya raised a $20M Series B to go international, then replaced its English homepage with French-language compliance messaging — frame the teardown as a case study in how an acquisition can reverse a company's geographic ambition and force a homepage to reflect the acquirer's ICP rather than the founder's original market thesis.",
       "word_target": 80,
       "evidence_sources": [
         "summary-cards",
         "messaging",
-        "strategic-shift"
+        "strategic-shift",
+        "seo-intent"
       ],
       "marketing_lens": "positioning"
     },
     {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Expensya homepage 2020–2025: from isometric automation showcase to human-first French identity",
+      "goal": "Show how the visual arc mirrors the strategic retreat — the 2020 isometric product illustration signals a global SaaS ambition (abstract, scalable, language-neutral), while the current full-bleed portrait photography with French text overlay signals a deliberate humanisation of the brand toward a specific cultural audience; note how 'polished' brand maturity arrived alongside market narrowing, not market expansion.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Expensya's H1 shift from English automation to French aspiration redefined its target buyer",
+      "goal": "Unpack the H1 transition from 'Automated spend management for all companies' (functional, English, size-agnostic) to 'Voici à quoi devrait ressembler la gestion des dépenses' (visionary, French, identity-driven) — explain how switching from a feature claim to a category vision statement in a specific language is not just a copy tweak but a buyer-identity signal; connect to the meta description shift from process automation to emotional contrast ('stress and friction' → 'clarity and simplicity') targeting 'équipes financières modernes', and show how section headings moved from integration breadth to compliance pillars (payment cards, expense policies, multi-currency).",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Expensya removed 'Free trial' and rebuilt its funnel around the French-speaking CFO",
+      "goal": "Detail the CTA shift from 'Free trial · Discover our solutions · Find out more · Discover all integrations' to 'Réservez une démo · Contacter un commercial' — explain that removing self-serve trial access while adding a language toggle ('Anglais') reveals a deliberate contradiction: English capability is preserved but subordinated, not eliminated; also cover the nav removal of Small/Mid/Large size tiers (previously the primary self-qualification mechanism) and what it signals about moving size-based segmentation out of the homepage and into the sales conversation.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
+    },
+    {
       "id": "07-business-context",
-      "custom_h2": "## Why Expensya abandoned English and narrowed to France after the Medius acquisition",
-      "goal": "Explain how the 2023 Medius acquisition, the Swan embedded card partnership, and the French e-invoicing regulatory mandate converged to transform Expensya from a multi-market expense reporting tool into a France-focused spend management platform designed to integrate into Medius's AP automation suite rather than compete as a standalone international product.",
+      "custom_h2": "## How the Medius acquisition and France's e-invoicing mandate rewrote Expensya's homepage logic",
+      "goal": "Explain that the homepage is not the product of organic market learning but of two external forcing functions: (1) the July 2023 Medius acquisition, which repositioned Expensya as the expense layer of an AP automation suite targeting mid-market CFOs, and (2) the French e-invoicing mandate (due 2024), which made compliance-led messaging suddenly high-urgency for exactly the French-speaking finance buyers Expensya was already serving — show how these events make the compliance and payment card messaging strategically inevitable rather than optional.",
       "word_target": 180,
       "evidence_sources": [
-        "business-context-research",
+        "messaging",
+        "summary-cards",
         "strategic-shift",
-        "messaging"
+        "business-context-research"
       ],
-      "marketing_lens": "category"
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Expensya's market-retreat homepage strategy",
+      "goal": "Deliver 3 specific patterns: (1) Language as market commitment — switching your homepage language is a forcing function that signals ICP priority to prospects, internal teams, and acquirers simultaneously; use only if your top revenue cohort already speaks that language; (2) Compliance framing as CFO unlock — replacing automation breadth with compliance specificity (e.g., 'Politiques de dépenses', 'Améliorez la conformité') is a proven way to elevate the buyer from ops to finance leadership, especially when regulatory mandates create urgency; (3) The 'keep the language toggle, remove the trial' pattern — Expensya preserved English access via toggle rather than eliminating it, which allows re-expansion without a full homepage rebuild; this is a safer architecture than full-language deletion for companies still holding international optionality.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|icp"
     }
   ],
   "at_a_glance_cards": [
     {
-      "label": "Market scope",
-      "value": "Multi-country → France-only",
-      "note": "Entire homepage switched from English to French, removing international navigation"
+      "label": "Positioning shift",
+      "value": "Automation breadth → Compliance depth",
+      "note": "Section headings dropped 'every company' and 'integrations' in favour of payment cards, expense policies, and conformité"
     },
     {
-      "label": "Product positioning",
-      "value": "Expense software → Card + software bundle",
-      "note": "Added 'Cartes de paiement & budgets' as first section heading after Swan partnership"
+      "label": "Target buyer",
+      "value": "All-size self-serve → French CFO",
+      "note": "Small/Mid/Large nav tiers removed; meta copy now explicitly addresses 'équipes financières modernes'"
     },
     {
-      "label": "Buyer persona",
-      "value": "Any company size → Finance teams",
-      "note": "Removed Small/Mid/Large nav; added 'équipes financières modernes' in meta description"
+      "label": "Sales motion",
+      "value": "Free trial → Demo + sales call",
+      "note": "Free trial CTA eliminated entirely; replaced with 'Réservez une démo' and 'Contacter un commercial' in French"
     },
     {
-      "label": "Acquisition model",
-      "value": "Self-serve trial → Demo-gated sales",
-      "note": "Replaced 'Free trial' CTA with 'Réservez une démo' post-acquisition"
+      "label": "Language strategy",
+      "value": "English-primary → French-first, English toggle",
+      "note": "Homepage language switched to French while a language toggle preserves English access for international optionality"
     }
   ],
   "confidence_level": "high",
-  "generatedAt": "2026-06-12T08:09:01.821Z",
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.024228
+  "generatedAt": "2026-06-12T10:21:18.926Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.044025
 }

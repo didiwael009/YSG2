@@ -1,0 +1,47 @@
+{
+  "score": 83,
+  "pass": false,
+  "issues": [
+    "H3 heading 'Keeping the language toggle while removing the trial — Expensya preserved a way back in' buries the takeaway: the opening sentence describes architecture before stating the practical finding, violating the finding-first rule.",
+    "Paragraph 2 of the language-as-primary-frame H3 block contains two distinct ideas (the positive test condition AND the risk of pipeline collapse) — should be split or simplified.",
+    "The phrase 'top-of-funnel pipeline' in the final H3 block uses jargon without a plain-language definition in the same sentence.",
+    "Paragraph 2 in the compliance H3 block ('This shift is worth testing if your product addresses a specific regulatory requirement...') could appear in almost any B2B SaaS teardown with minimal edits — it lacks Expensya-specific anchoring.",
+    "The closing sentence of the language H3's second paragraph — 'that loss may not be recoverable quickly' — is abstract and not actionable; it does not name a concrete consequence tied to Expensya's specific evidence.",
+    "Minor causal risk: 'Naming that reason on the page makes the stakes visible' is a causal claim not directly supported by evidence — no data shows this caused any outcome for Expensya.",
+    "Word count is approximately 430–440 words, exceeding the 380-word upper limit.",
+    "No paragraph technically exceeds 90 words, but two paragraphs in H3 blocks are in the 65–75 word range, violating the 60-word H3-body limit.",
+    "The final runnable test in H3 block 03 asks 'do you have at least one easy route back in' — this is more of a reflection question than a specific runnable test anchored to Expensya's evidence."
+  ],
+  "requiredFixes": [
+    "Rewrite the opening of H3 block 03 so the takeaway — 'preserve a re-entry route when you narrow your market focus' — appears in the first sentence, before describing what Expensya did.",
+    "Split paragraph 2 of H3 block 01 into two sentences or a shorter single idea: remove either the positive test condition or the risk clause so only one concept is tracked at a time.",
+    "Replace 'top-of-funnel pipeline' in H3 block 03 with plain language: 'the stream of new leads entering your sales process' or equivalent, in the same sentence.",
+    "Anchor the compliance H3 block's second paragraph explicitly to Expensya: replace the generic 'if your product addresses a specific regulatory requirement' framing with a reference to Expensya's specific heading swap — e.g., 'Expensya's swap from automation breadth to 'Améliorez la conformité' is worth testing if...'.",
+    "Replace the abstract closing sentence 'that loss may not be recoverable quickly' with a concrete, Expensya-specific implication (e.g., 'Expensya retained the Anglais toggle precisely because French-market scale is unproven — without that toggle, re-entry would require a homepage rebuild.').",
+    "Cut approximately 60 words from the draft to bring total word count under 380. The compliance H3 block's second paragraph is the most trimable.",
+    "Rewrite the final runnable test in H3 block 03 to be specific and actionable in under 5 minutes: e.g., 'Open your homepage and confirm: if you removed your primary CTA today, does at least one secondary route (toggle, language redirect, or secondary CTA like Expensya's Anglais nav item) remain for visitors outside your primary market? If not, add one before changing the primary CTA.'",
+    "Trim any paragraph inside an H3 block that exceeds 60 words — specifically the second paragraphs in H3 blocks 01 and 03."
+  ],
+  "riskFlags": [
+    "'Naming that reason on the page makes the stakes visible' — causal claim with no supporting data from Expensya's evidence; should be hedged with 'may make' or 'is designed to make'.",
+    "'that loss may not be recoverable quickly' — outcome claim without evidence or condition; needs a condition clause or hedge.",
+    "'Removing a trial CTA without a sales team ready to convert demo requests may cause a sharp drop in leads' — this is appropriately hedged with 'may', but the condition 'if self-serve volume was the primary source' is added as a parenthetical rather than a clear conditional; restructure for clarity."
+  ],
+  "seoNotes": [
+    "The ## heading 'What SaaS teams can learn from Expensya's homepage repositioning' contains the company name and 'homepage' — passes searchable heading check.",
+    "H3 headings are specific and contain quoted evidence terms ('Politiques de dépenses', 'Améliorez la conformité', 'Anglais') which may surface in long-tail searches for Expensya-related content.",
+    "Section is over the 380-word limit at approximately 430–440 words, which may dilute keyword density and reduce scannability for search crawlers expecting a tighter section.",
+    "French-language quoted phrases within H3 headings and body copy could generate visibility for bilingual or French-market SaaS queries — a minor positive differentiator for this teardown's SEO footprint."
+  ],
+  "rewriteInstruction": "The draft is close but needs four targeted fixes before it passes. First, rewrite H3 block 03 so the practical finding ('preserve a re-entry route when narrowing market focus') appears in sentence one — currently the block opens with architectural description before reaching its point. Second, cut the draft to under 380 words by trimming the second paragraph of the compliance block and the second paragraph of the language block — each carries one idea too many. Third, replace 'top-of-funnel pipeline' with plain language in the same sentence it appears. Fourth, make the final runnable test in H3 block 03 specific: it should name a concrete 5-minute action (check your homepage for a secondary re-entry route like Expensya's Anglais toggle) rather than posing an open reflection question. Every other element — the evidence anchoring, the bold-quoted phrases, the H3 structure, the compliance block's specificity — is in good shape and should not be substantially changed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 11,
+    "plainLanguage": 15,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

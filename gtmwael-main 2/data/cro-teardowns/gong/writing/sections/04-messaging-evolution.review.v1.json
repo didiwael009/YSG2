@@ -1,0 +1,46 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section heading is clever-only: 'How Gong's H1 shifted from category noun to outcome verb — and what that reveals about its target buyer' — while it contains 'Gong' and 'H1', it lacks any of the required searchable terms: 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'. The topic term is absent.",
+    "Third H3 block — 'What the messaging shift signals about who the page is written for now' — does not deliver its takeaway in the first two sentences. The first sentence is scene-setting ('The 2020 page spoke to a practitioner'), not a finding.",
+    "Third analytical paragraph ('The 2020 page spoke to a practitioner...') contains two distinct ideas tracked simultaneously: who the old buyer was AND who the new buyer is. These are separable concepts packed into one short block without a clear FINDING → EXPLANATION structure.",
+    "The phrase 'multimodal revenue signal processing' appears in the meta description quote without any plain-language explanation attached. It is an expert/technical term used without definition.",
+    "The third paragraph opens with scene-setting rather than a finding, violating the FINDING-FIRST rule: 'The 2020 page spoke to a practitioner' is context, not a conclusion.",
+    "The closing sentence of the third analytical paragraph ('The new buyer wants a system that runs across their whole organization') is slightly concrete but the paragraph as a whole lacks the EXAMPLE beat in the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula — no specific evidence element (quote, heading, CTA) anchors the claim.",
+    "Word count is approximately 330 words — within range, but the third H3 block is thin on evidence anchoring relative to the first two.",
+    "No paragraph exceeds 60 words in the analytical blocks — scannability is generally clean, but the second H3 block's body paragraph runs approximately 62–65 words (the block containing the meta description quotes and the 'This may indicate' sentence plus the page title addition). This is a borderline violation.",
+    "The second H3 block bundles two distinct evidence elements (meta description shift AND page title shift) into a single paragraph, creating a density issue — two ideas in one paragraph."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include at least one searchable topic term. Suggested: 'Gong Homepage Messaging Evolution: How the H1 and Meta Description Signal a New Target Buyer' — this keeps 'Gong', adds 'homepage', 'messaging', and 'target buyer'.",
+    "Rewrite the opening of the third H3 block so the finding lands in sentence one. Replace 'The 2020 page spoke to a practitioner...' with the conclusion first: e.g., 'Gong's messaging has shifted from practitioner-level persuasion to executive-level infrastructure framing — and every element on the page now reflects that.' Then explain the old vs. new buyer contrast as supporting evidence.",
+    "Split the second H3 paragraph: put the meta description shift in one paragraph, the page title shift in a second. Each should be under 60 words and state its finding first.",
+    "Add a plain-language gloss immediately after 'multimodal revenue signal processing' — something like: 'multimodal revenue signal processing (pulling data from calls, emails, and CRM in one pipeline)'. The term appears inside a quoted meta description, but the article must not leave it unexplained for founder readers.",
+    "Anchor the third H3 block to at least one named evidence element — quote a specific old section heading (e.g., **'So What Does this look like? Glad you asked.'**) contrasted with a new one (e.g., **'Winning GTM organizations run revenue on Gong'**) to give the buyer-shift claim a concrete proof point rather than leaving it as an assertion.",
+    "Add the EXAMPLE beat to the third analytical paragraph so it follows FINDING → EXPLANATION → EXAMPLE → IMPLICATION. The example should be a specific quoted phrase from the evidence, not a general observation."
+  ],
+  "riskFlags": [
+    "'That shift suggests the page is no longer trying to explain what Gong does — it assumes the visitor already knows' — this is a causal/intent claim not directly traceable to evidence. The evidence note explicitly states 'No confirmed strategy is implied.' The draft should hedge with 'may suggest' or 'is consistent with the interpretation that'.",
+    "'This may indicate the page is now written for people who own the full revenue organization' — the hedge 'may indicate' is correct, but the immediately following sentence ('rather than a VP of Sales evaluating a single-team tool') presents a specific buyer contrast as established fact without a hedge. Add 'possibly' or cite the evidence note.",
+    "The founder test instructs counting 'sales' versus 'GTM/organization/revenue team' occurrences — this is a reasonable heuristic but is framed as diagnostic truth ('your messaging may still be written for a buyer your product has outgrown'). This is a mild causal claim without an attached condition. Add a condition: e.g., 'if your product now serves RevOps and CRO-level buyers, not just frontline sales managers'."
+  ],
+  "seoNotes": [
+    "The ## heading does not contain 'homepage', 'positioning', 'messaging', or 'CTA' — it will not rank for secondary keywords like 'Gong homepage messaging evolution' or 'Gong positioning teardown'. Fix is required for SEO.",
+    "The second H3 heading — 'How the meta description signals a different target buyer' — is strong for long-tail search and contains 'meta description' and 'target buyer', both likely query fragments.",
+    "The first H3 heading — 'The headline shift: from category label to specific outcome' — is decent but could be more searchable with 'Gong' in the subhead: 'Gong's headline shift: from category label to specific outcome'.",
+    "The quoted phrases from Gong's actual headlines and meta descriptions (in bold) are good for featured-snippet eligibility — the before/after structure is scannable and quotable.",
+    "The founder test at the end adds dwell-time value and makes the section actionable, which supports engagement signals."
+  ],
+  "rewriteInstruction": "Make five targeted changes without restructuring the whole section. First, rewrite the ## heading to include 'homepage' and 'messaging' as searchable terms. Second, rewrite the opening sentence of the third H3 block so the conclusion — not the setup — lands first; lead with what the shift means, then explain the old/new buyer contrast as supporting detail. Third, split the second H3 paragraph at the point where the page title evidence begins — one paragraph per evidence element, each under 60 words, each starting with a finding. Fourth, immediately after the quoted phrase 'multimodal revenue signal processing' in the meta description block, add a parenthetical plain-language gloss for founder readers who are not RevOps specialists. Fifth, add one named evidence element (a quoted old section heading contrasted with a new one) to the third H3 block so the buyer-shift claim is anchored to the page rather than asserted from inference alone. Keep all bold-quoted verbatim evidence as-is — that is the section's strongest asset.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 11,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

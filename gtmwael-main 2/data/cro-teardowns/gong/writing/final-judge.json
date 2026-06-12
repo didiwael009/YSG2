@@ -1,55 +1,64 @@
 {
-  "overallScore": 62,
+  "overallScore": 74,
   "pass": false,
-  "evidenceAccuracy": 10,
-  "plainLanguage": 14,
-  "scannability": 8,
-  "searchableHeadings": 7,
-  "specificity": 10,
-  "rhythmAndOpening": 8,
-  "founderTakeaway": 5,
+  "evidenceAccuracy": 17,
+  "plainLanguage": 16,
+  "scannability": 11,
+  "searchableHeadings": 8,
+  "specificity": 12,
+  "rhythmAndOpening": 6,
+  "founderTakeaway": 4,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "01-intro",
-    "07-business-context"
+    "05-cta-navigation-evolution",
+    "07-business-context",
+    "01-intro"
   ],
   "unsupportedClaims": [
-    "Gong raised $200 million at a $2.2 billion valuation in September 2020",
-    "$250 million at $7.25 billion just nine months later",
-    "By Q2 2021, the company had crossed 2,000 customers including three Fortune 20 accounts",
-    "Gong publicly announced the RightBound acquisition",
-    "Gartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025",
-    "Clari and Salesloft merged"
+    "'the navigation dropped \"What is RI?\" entirely' — the evidence lists nav items added and removed, but 'What is RI?' does not appear in the navRemoved list; it is not confirmed in the evidence",
+    "'Gong built an entire product category around \"Revenue Intelligence\" — then quietly removed it from the top of its own homepage' — 'quietly' implies deliberate concealment; no evidence supports this framing",
+    "'Gong built its early identity around a category it invented' — 'a category it largely invented' / 'it invented' is not supported by the evidence; the evidence describes category-definition language and '#1 revenue intelligence platform' but does not confirm Gong invented the category",
+    "'reportedly led to declines in net dollar retention' — the evidence says 'pressured Gong's per-seat pricing model and led to declines in net dollar retention'; the article strips 'reportedly' and presents this as confirmed fact in the business context section",
+    "'reaching a reported $7.25 billion valuation by mid-2021' — the evidence cites this valuation for the Series E; the article states it without the sourcing qualifier 'reportedly' in the body text, presenting it as a direct fact rather than a reported figure",
+    "The claim that named-VP CTAs were 'just occupying space' — this phrase does not appear verbatim but the framing that these CTAs were replaced because they were underperforming is implied without any click or conversion data in the evidence"
   ],
   "riskFlags": [
-    "stopped explaining what it does and started assuming you already know — no evidence about what Gong assumes or what buyers know",
-    "assumes the category is settled — assigns intention without supporting documentation",
-    "After reading this teardown, you will know how to test whether your own homepage is still teaching a category your buyers already understand — non-conditional claim about reader capability",
-    "The messaging shifts visible on the homepage didn't happen in a vacuum — they tracked Gong's growth milestones — states causation without condition",
-    "coincided with this period of rapid customer expansion — correlation stated without conditional framing",
-    "is consistent with a company that added platform capabilities beyond single-department tools — hedged but implies causation",
-    "If you have 2+ educational nav items and your category has 50+ funded competitors — introduces specific threshold (50+) not in evidence"
+    "'That is not a rebrand. It signals a deliberate move from explaining a category to claiming infrastructure ownership.' — asserts company intent without evidence; the evidence explicitly notes 'No confirmed strategy is implied'",
+    "'The page stopped teaching and started assuming' — causation claim presented as fact; the evidence shows copy changes but does not confirm the page's pedagogical intent changed",
+    "'This may suggest the page is now written for buying committees' — the 'may suggest' hedge is present but the causal chain (removing named VPs → targeting committees) is not conditioned on any supporting evidence",
+    "'This swap — from named people to named actions — suggests the page may now be built for someone who wants to evaluate on their own terms before talking to anyone' — intent attribution presented as a pattern inference without a stated condition",
+    "'a nav rebuilt for visitors who arrive knowing what Gong is' — inferred cause; no evidence confirms visitor awareness levels at the time of nav changes",
+    "'The page title shift from \"Revenue Intelligence Technology for Sales Teams\" to \"Gong - Revenue AI OS\" is consistent with a company responding to a redefined competitive ceiling' — presents a causal link between the Gartner MQ publication and the title change; the evidence does not confirm this sequence",
+    "'if it doesn't, you may have the same signal Gong had' — implies Gong used this specific Google autocomplete test as a decision signal; no evidence supports this",
+    "'the gap between the claim and the demo creates credibility damage' — conversion outcome inference not supported by any data in the evidence"
   ],
   "requiredFixes": [
-    "Remove all six unsupported factual claims (funding rounds, customer counts, acquisitions, Gartner report, merger). Every specific fact must trace to the compressed evidence.",
-    "Rewrite opening paragraph to avoid assigning intention ('stopped explaining', 'started assuming', 'assumes the category is settled'). Use observable changes only: 'The headline changed from REVENUE INTELLIGENCE to Revenue AI Built To Predict churn.'",
-    "Remove the business context section entirely or rewrite using ONLY the evidence provided (headline changes, H2 removals, nav changes). Do not import external market facts.",
-    "Replace the threshold '50+ funded competitors' in the final takeaway with a conditional observation anchored to the evidence: 'If your nav contains items that explain the category (like Gong's removed 'What is RI?'), test removing one.'",
-    "Add H3 subheadings to the business context section. Current structure has three paragraphs under one H3, violating scannability rules."
+    "Remove or clearly qualify the claim that the navigation dropped 'What is RI?' — this item does not appear in the navRemoved list in the evidence; either trace it to a confirmed nav item or remove the specific claim",
+    "Add 'reportedly' or equivalent hedging every time a specific dollar figure (Series D $200M, Series E $250M, $7.25B valuation) appears in the body text to match the evidence's own sourcing qualifiers",
+    "Rewrite the opening paragraph to remove 'That is not a rebrand' — the evidence does not confirm whether Gong classified this as a rebrand or not; replace with a conditioned inference such as 'Whether or not Gong called it a rebrand internally, the copy changes suggest...'",
+    "Remove or condition the claim that Gong 'invented' or 'largely invented' the revenue intelligence category — the evidence does not support this; replace with 'helped define' or 'was the category leader in'",
+    "In the CTA section, remove the implicit underperformance framing for named-VP CTAs — the evidence shows they were removed but provides no click or conversion data to support any performance inference; rephrase as a structural observation only",
+    "Add the condition 'if Gong's inbound traffic profile shifted toward branded or comparison-intent queries' to the claim about the page being written for visitors who 'already know what Gong is' — currently presented without this condition as required by the evidence review"
   ],
   "optionalImprovements": [
-    "The opening sentence 'tells the story of a company that stopped explaining' uses narrative framing that weakens analytical voice. Consider: 'Gong's homepage changed its headline from REVENUE INTELLIGENCE to Revenue AI Built To Predict churn between Jan 2020 and Jun 2026.'",
-    "The phrase 'multimodal revenue signal processing' appears in quotes but is not explained. Add a plain-language gloss: '...multimodal revenue signal processing (language that describes data infrastructure, not a sales tool)...'",
-    "The final H3 block ('Industry shift') introduces external market context not in the evidence. If this section remains, it must cite only the nav changes (removed items, added items) and avoid Gartner/merger claims."
+    "Vary the opening rhythm — the intro, the messaging section, and the business context section all open with a bold declarative statement followed by a list of before/after pairs; mix in a question or an observation-first structure",
+    "Clarify the rendering artifact in the headline ('Revenue AI Built To Predict churnPredict churn') for a founder audience — explain what the intended headline likely is rather than quoting the artifact verbatim without comment",
+    "The nav section acknowledges that 'actual item names are not available in the source data' — this is good epistemic honesty, but the section then makes directional inferences anyway; either remove the section or flag it more explicitly as a directional note, not an analysis",
+    "The phrase 'bottom-of-funnel actions, meaning steps a buyer takes when they are close to a decision' is a good plain-language explanation — apply the same pattern earlier in the article where CRO terms like 'buying committees' are introduced without definition",
+    "The repetition of 'the page may now be written for...' across three separate sections weakens impact; consolidate this observation into one section and vary the framing elsewhere"
   ],
   "rerunRecommendations": [
-    "01-intro — Remove all intention-assigning language. Rewrite opening to describe observable changes only.",
-    "07-business-context — Remove all three subsections OR rewrite using ONLY the compressed evidence. No external funding, customer, acquisition, or market consolidation claims."
+    "01-intro — remove unsupported 'What is RI?' nav claim and 'That is not a rebrand' intent assertion",
+    "05-cta-navigation-evolution — remove performance inference for named-VP CTAs; tighten nav analysis to confirmed evidence only",
+    "07-business-context — restore 'reportedly' qualifiers on all dollar figures and NDR claim; soften Gartner MQ causal link to title change"
   ],
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.028563000000000005,
-  "generatedAt": "2026-06-12T08:27:32.785Z"
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.05279699999999998,
+  "generatedAt": "2026-06-12T11:04:35.226Z",
+  "repetitionWarnings": [
+    "The observation 'the page may now be written for someone who already knows what Gong does' appears in substantially the same form in the intro, the messaging-evolution section, and the CTA section — three separate instances of the same core analytical conclusion"
+  ]
 }

@@ -1,19 +1,19 @@
 {
   "slug": "expensya",
   "companyName": "Expensya",
-  "companyUrl": "https://www.expensya.com/",
+  "companyUrl": "https://www.expensya.com/en/",
   "category": "CRO Teardown",
   "title": "Expensya Homepage Teardown: Oct 2020 to Jun 2026",
   "h1": "How Expensya rewrote its homepage over 6 years",
-  "metaTitle": "Expensya Homepage CRO Teardown — Oct 2020 to Jun 2026",
-  "description": "A CRO teardown of Expensya's homepage from Oct 2020 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "metaTitle": "Expensya Homepage CRO Teardown \u2014 Oct 2020 to Jun 2026",
+  "description": "A CRO teardown of Expensya's homepage from Oct 2020 to Jun 2026 \u2014 what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
   "excerpt": "Expensya's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Oct 2020 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
   "author": "Wael Aouididi",
   "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
   "datePublished": "2026-06-11",
   "readTime": "8 min read",
   "featuredImage": "/cro-teardowns/expensya/selected/2020-10.webp",
-  "featuredImageAlt": "Expensya Oct 2020 homepage — 'Automated spend management for all companies'",
+  "featuredImageAlt": "Expensya Oct 2020 homepage \u2014 'Automated spend management for all companies'",
   "fromLabel": "Oct 2020",
   "toLabel": "Jun 2026",
   "snapshots": [
@@ -31,7 +31,7 @@
   "summaryCards": [
     {
       "label": "Period covered",
-      "value": "Oct 2020 → Jun 2026",
+      "value": "Oct 2020 \u2192 Jun 2026",
       "note": "2 visual snapshots compared"
     },
     {
@@ -41,12 +41,12 @@
     },
     {
       "label": "Section headings",
-      "value": "14 added · 7 removed",
+      "value": "14 added \u00b7 7 removed",
       "note": "Major content architecture overhaul"
     },
     {
       "label": "Navigation",
-      "value": "8 added · 8 removed",
+      "value": "8 added \u00b7 8 removed",
       "note": "Navigation overhauled"
     }
   ],
@@ -54,36 +54,36 @@
     {
       "element": "Primary headline (H1)",
       "before": "Automated spend management for all companies",
-      "after": "Voici à quoi devrait ressembler la gestion des dépenses.",
+      "after": "Voici \u00e0 quoi devrait ressembler la gestion des d\u00e9penses.",
       "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
     },
     {
       "element": "Meta description",
       "before": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
-      "after": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+      "after": "Remplacez le stress et les frictions li\u00e9s \u00e0 la gestion des d\u00e9penses et des notes de frais des employ\u00e9s par la clart\u00e9 et la simplicit\u00e9 : voici Expensya, le logiciel intelligent de gestion des d\u00e9penses pour les \u00e9quipes financi\u00e8res modernes.",
       "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
     },
     {
       "element": "Page title",
       "before": "Automated spend management for all companies",
-      "after": "Gestion des dépenses des employés et cartes de paiement | Expensya"
+      "after": "Gestion des d\u00e9penses des employ\u00e9s et cartes de paiement | Expensya"
     }
   ],
   "h2Added": [
-    "Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.",
+    "Am\u00e9liorez la conformit\u00e9. R\u00e9duisez les risques. Obtenez une visibilit\u00e9 compl\u00e8te sur les d\u00e9penses.",
     "Cartes de paiement & budgets",
-    "Politiques de dépenses",
+    "Politiques de d\u00e9penses",
     "Multi-devises et multi-pays",
     "Quel est le lien entre technologie, UX et frais professionnels ?",
-    "Comment gérez-vous vos notes de frais ?",
-    "Fini le casse-tête administratif, place à la conformité.",
-    "Découvrez les cartes de paiement d'Expensya.",
-    "Détendez-vous, car tout fonctionne.",
-    "Découvrez comment l'IA optimise les processus de dépenses et voyages professionnels.",
+    "Comment g\u00e9rez-vous vos notes de frais ?",
+    "Fini le casse-t\u00eate administratif, place \u00e0 la conformit\u00e9.",
+    "D\u00e9couvrez les cartes de paiement d'Expensya.",
+    "D\u00e9tendez-vous, car tout fonctionne.",
+    "D\u00e9couvrez comment l'IA optimise les processus de d\u00e9penses et voyages professionnels.",
     "Laissez-nous vous aider.",
-    "Découvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs dépenses.",
-    "Des ressources sur la gestion des dépenses pour vous aider à vous lancer.",
-    "Prêt à découvrir une meilleure façon de gérer les dépenses professionnelles ?"
+    "D\u00e9couvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs d\u00e9penses.",
+    "Des ressources sur la gestion des d\u00e9penses pour vous aider \u00e0 vous lancer.",
+    "Pr\u00eat \u00e0 d\u00e9couvrir une meilleure fa\u00e7on de g\u00e9rer les d\u00e9penses professionnelles ?"
   ],
   "h2Removed": [
     "Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams",
@@ -96,7 +96,7 @@
   ],
   "ctaAdded": [
     "Learn more about this provider",
-    "Réservez une démo",
+    "R\u00e9servez une d\u00e9mo",
     "Show details",
     "Necessary 21",
     "880-tzc-395.mktoweb.com 1",
@@ -115,26 +115,26 @@
   "analysisBlocks": [
     {
       "id": "analysis-2020-10",
-      "label": "Oct 2020 — original state",
+      "label": "Oct 2020 \u2014 original state",
       "period": "Oct 2020",
       "screenshotPath": "/cro-teardowns/expensya/selected/2020-10.webp",
       "heading": "The original: product-led messaging",
       "annotations": [
-        "H1 opens with: \"Automated spend management for all companies\" — direct product statement.",
+        "H1 opens with: \"Automated spend management for all companies\" \u2014 direct product statement.",
         "Visible section headings include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\", \"Expensya fully automates your business expenditure\", \"A solution designed for every company\".",
-        "Navigation includes: \"Solutions\", \"Small\", \"Mid\", \"Large\" — product category framing.",
+        "Navigation includes: \"Solutions\", \"Small\", \"Mid\", \"Large\" \u2014 product category framing.",
         "Section headings later removed include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\" and \"Expensya fully automates your business expenditure\"."
       ]
     },
     {
       "id": "analysis-current",
-      "label": "Jun 2026 — current state",
+      "label": "Jun 2026 \u2014 current state",
       "period": "Jun 2026",
       "screenshotPath": "/cro-teardowns/expensya/selected/current-live.webp",
       "heading": "Today: updated positioning",
       "annotations": [
-        "H1 now reads: \"Voici à quoi devrait ressembler la gestion des dépenses.\" — updated value proposition.",
-        "New section headings include: \"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\", \"Cartes de paiement & budgets\", \"Politiques de dépenses\".",
+        "H1 now reads: \"Voici \u00e0 quoi devrait ressembler la gestion des d\u00e9penses.\" \u2014 updated value proposition.",
+        "New section headings include: \"Am\u00e9liorez la conformit\u00e9. R\u00e9duisez les risques. Obtenez une visibilit\u00e9 compl\u00e8te sur les d\u00e9penses.\", \"Cartes de paiement & budgets\", \"Politiques de d\u00e9penses\".",
         "CTAs no longer present include: \"Free trial\", \"Discover our solutions\", \"Find out more\"."
       ]
     }
@@ -142,17 +142,17 @@
   "lessonCards": [
     {
       "title": "Your H1 signals which buyer you are targeting",
-      "body": "The headline changed from \"Automated spend management for all companies\" to \"Voici à quoi devrait ressembler la gestion des dépenses.\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "body": "The headline changed from \"Automated spend management for all companies\" to \"Voici \u00e0 quoi devrait ressembler la gestion des d\u00e9penses.\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
       "tag": "Messaging"
     },
     {
       "title": "Navigation is a positioning statement",
-      "body": "Navigation items changed from \"Small\", \"Mid\", \"Large\" to \"En savoir plus\", \"Se connecter\", \"Contacter un commercial\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "body": "Navigation items changed from \"Small\", \"Mid\", \"Large\" to \"En savoir plus\", \"Se connecter\", \"Contacter un commercial\". The labels your navigation uses reveal what you think your visitor is trying to decide \u2014 and who that visitor is.",
       "tag": "Navigation"
     },
     {
       "title": "Section headings reveal what the team thinks buyers care about",
-      "body": "14 section headings were added and 7 removed between Oct 2020 and Jun 2026. New headings include \"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\" and \"Cartes de paiement & budgets\". Headings that disappeared include \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\" and \"Expensya fully automates your business expenditure\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "body": "14 section headings were added and 7 removed between Oct 2020 and Jun 2026. New headings include \"Am\u00e9liorez la conformit\u00e9. R\u00e9duisez les risques. Obtenez une visibilit\u00e9 compl\u00e8te sur les d\u00e9penses.\" and \"Cartes de paiement & budgets\". Headings that disappeared include \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\" and \"Expensya fully automates your business expenditure\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
       "tag": "CRO"
     },
     {
@@ -197,14 +197,14 @@
   ],
   "cta": {
     "title": "Want your homepage audited like this?",
-    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience \u2014 then give you a specific list of what to change and why.",
     "button": "Book a page audit"
   },
   "relatedPosts": [
     {
       "label": "SaaS CRO",
       "title": "SaaS traffic but no signups? Here's why",
-      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "description": "If your page is getting visits but not converting, the issue is usually message match \u2014 not traffic volume.",
       "href": "/blog/saas-traffic-but-no-signups"
     },
     {

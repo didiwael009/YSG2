@@ -1,21 +1,35 @@
 {
-  "createdAt": "2026-06-12T08:22:00.038Z",
+  "createdAt": "2026-06-12T11:04:55.204Z",
   "slug": "gong",
   "source": {
     "finalJudgePass": false,
-    "seoPass": false,
-    "finalJudgeScore": 62,
-    "seoScore": 72
+    "seoPass": true,
+    "finalJudgeScore": 74,
+    "seoScore": 83
   },
   "sectionsToRerun": [
     {
+      "sectionId": "01-intro",
+      "reasons": [
+        "Judge rerun recommendation: 01-intro — remove unsupported 'What is RI?' nav claim and 'That is not a rebrand' intent assertion",
+        "'reaching a reported $7.25 billion valuation by mid-2021' — the evidence cites this valuation for the Series E; the article states it without the sourcing qualifier 'reportedly' in the body text, pres",
+        "Identified as weak section by final judge",
+        "Add 'reportedly' or equivalent hedging every time a specific dollar figure (Series D $200M, Series E $250M, $7.25B valuation) appears in the body text to match the evidence's own sourcing qualifiers",
+        "Increase primary keyword density: 'Gong homepage CRO teardown' appears only twice in the body text and zero times in subheadings. Add it to at least one H2 or strategic paragraph to improve keyword re"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 07-business-context — this is the section labeled '## Why the homepage changed' and contains all seven unsupported factual claims",
-        "'This rapid upmarket shift is consistent with the homepage's move from explaining REVENUE INTELLIGENCE to assuming the category is already understood' — causal language without conditional framing",
-        "'The shift from better sales conversations to multimodal revenue signal processing, specialized AI agents points to a repositioning from departmental tool to infrastructure layer' — causal claim prese",
-        "'if the ratio flipped, your homepage messaging may need to catch up' — prescriptive outcome claim without data",
-        "Remove all funding figures, valuation amounts, customer counts, acquisition claims, and ARR figures — none appear in the compressed evidence"
+        "Judge rerun recommendation: 07-business-context — restore 'reportedly' qualifiers on all dollar figures and NDR claim; soften Gartner MQ causal link to title change",
+        "'Gong built an entire product category around \"Revenue Intelligence\" — then quietly removed it from the top of its own homepage' — 'quietly' implies deliberate concealment; no evidence supports this f",
+        "'That is not a rebrand. It signals a deliberate move from explaining a category to claiming infrastructure ownership.' — asserts company intent without evidence; the evidence explicitly notes 'No conf",
+        "'The page stopped teaching and started assuming' — causation claim presented as fact; the evidence shows copy changes but does not confirm the page's pedagogical intent changed",
+        "Rewrite the opening paragraph to remove 'That is not a rebrand' — the evidence does not confirm whether Gong classified this as a rebrand or not; replace with a conditioned inference such as 'Whether ",
+        "Remove or condition the claim that Gong 'invented' or 'largely invented' the revenue intelligence category — the evidence does not support this; replace with 'helped define' or 'was the category leade",
+        "Add the condition 'if Gong's inbound traffic profile shifted toward branded or comparison-intent queries' to the claim about the page being written for visitors who 'already know what Gong is' — curre"
       ],
       "priority": "high",
       "source": "final-judge"
@@ -23,97 +37,55 @@
     {
       "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "'The removal of What is RI? from navigation suggests Gong assumed visitors at this stage no longer needed the category explained' — asserts company intent and strategic reasoning",
-        "Rewrite '## Why the homepage changed' section to anchor ONLY to evidence in the compressed data (headline changes, nav removals, H2 shifts)",
-        "Remove assertions about company intent ('Gong assumed', 'Gong positioned') — replace with observations about page architecture ('the page removes education', 'the navigation no longer contains...')"
+        "Judge rerun recommendation: 05-cta-navigation-evolution — remove performance inference for named-VP CTAs; tighten nav analysis to confirmed evidence only",
+        "'the navigation dropped \"What is RI?\" entirely' — the evidence lists nav items added and removed, but 'What is RI?' does not appear in the navRemoved list; it is not confirmed in the evidence",
+        "The claim that named-VP CTAs were 'just occupying space' — this phrase does not appear verbatim but the framing that these CTAs were replaced because they were underperforming is implied without any c",
+        "Identified as weak section by final judge",
+        "'a nav rebuilt for visitors who arrive knowing what Gong is' — inferred cause; no evidence confirms visitor awareness levels at the time of nav changes",
+        "'the gap between the claim and the demo creates credibility damage' — conversion outcome inference not supported by any data in the evidence",
+        "Remove or clearly qualify the claim that the navigation dropped 'What is RI?' — this item does not appear in the navRemoved list in the evidence; either trace it to a confirmed nav item or remove the ",
+        "In the CTA section, remove the implicit underperformance framing for named-VP CTAs — the evidence shows they were removed but provides no click or conversion data to support any performance inference;",
+        "Clarify the scope limitation in the article: The text states 'The actual item names are not available in the source data' when discussing navigation changes. This transparency is good, but the article"
       ],
-      "priority": "medium",
-      "source": "final-judge"
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "reasons": [
-        "Add founder-facing takeaway to each H3 block anchored to the specific evidence analyzed in that block"
-      ],
-      "priority": "medium",
-      "source": "final-judge"
+      "priority": "high",
+      "source": "both"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "raised $200 million at a $2.2 billion valuation in September 2020",
+      "issue": "'Gong built its early identity around a category it invented' — 'a category it largely invented' / 'it invented' is not supported by the evidence; the evidence describes category-definition language a",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "closed a $250 million Series E at $7.25 billion nine months later",
+      "issue": "'reportedly led to declines in net dollar retention' — the evidence says 'pressured Gong's per-seat pricing model and led to declines in net dollar retention'; the article strips 'reportedly' and pres",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "crossed 2,000 customers including three Fortune 20 companies by mid-2021",
+      "issue": "07-business-context",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Gartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025",
+      "issue": "'This may suggest the page is now written for buying committees' — the 'may suggest' hedge is present but the causal chain (removing named VPs → targeting committees) is not conditioned on any support",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "ZoomInfo acquired Chorus",
+      "issue": "'This swap — from named people to named actions — suggests the page may now be built for someone who wants to evaluate on their own terms before talking to anyone' — intent attribution presented as a ",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Clari merged with Salesloft",
+      "issue": "'The page title shift from \"Revenue Intelligence Technology for Sales Teams\" to \"Gong - Revenue AI OS\" is consistent with a company responding to a redefined competitive ceiling' — presents a causal l",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Gong publicly reported $300 million ARR",
+      "issue": "'if it doesn't, you may have the same signal Gong had' — implies Gong used this specific Google autocomplete test as a decision signal; no evidence supports this",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "## Why the homepage changed",
+      "issue": "Strengthen secondary keyword integration: 'SaaS homepage CRO teardown' and 'homepage A/B test analysis' are listed as secondary keywords but do not appear in the article. Add at least one reference to",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "### Funding trajectory and enterprise push",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "### Category maturation and competitive consolidation",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "### Platform economics requirement",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "'they were comparing enterprise platforms, not discovering a new tool type' — asserts buyer behavior and stage without evidence",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Replace causal language ('is consistent with', 'points to', 'suggests') with conditional observations ('IF a company moves upmarket, homepages often...')",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Add H3 subheadings to the three analytical subsections under '## Why the homepage changed'",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Break the 81-word paragraph under '### Funding trajectory and enterprise push' into two shorter paragraphs",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Break the 78-word paragraph under '### Category maturation and competitive consolidation' into two shorter paragraphs",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Remove or contextualize the prescriptive statement 'After reading this teardown, you will know how to test whether your own homepage is still teaching a category your buyers already understand.' This ",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Section 01-intro (low priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
-    },
-    {
-      "issue": "Section 03-visual-timeline (low priority)",
+      "issue": "Section 06-lessons-for-saas-teams (low priority)",
       "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]

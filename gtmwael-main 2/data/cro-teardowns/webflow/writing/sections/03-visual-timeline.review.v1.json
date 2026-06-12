@@ -1,0 +1,46 @@
+{
+  "score": 81,
+  "pass": true,
+  "issues": [
+    "Section heading says '2020–2025' but the evidence covers Jan 2020 to Jun 2026 — the end date is wrong.",
+    "Third H3 heading says '2025' but the evidence labels this snapshot 'Jun 2026 — current state'. The year is incorrect.",
+    "The phrase 'enterprise software sites tend to look' is a generic observation not traceable to evidence — mildly generic filler.",
+    "Paragraph starting 'The most visible change...' contains approximately 65 words — exceeds the 60-word paragraph limit.",
+    "Paragraph starting 'The current page leads...' contains approximately 72 words — exceeds the 60-word paragraph limit.",
+    "The term 'proof density' is used in the final analytical paragraph without an immediate plain-language definition at first use (it is defined only implicitly via an em-dash explanation in the same sentence, which partially mitigates but is not a clean standalone definition).",
+    "No explicit causal claims detected — good — but 'The page stopped onboarding curious newcomers' is a mild causation inference not directly supported by evidence; the evidence only confirms those sections were removed.",
+    "The section heading lacks 'positioning', 'messaging', 'CTA', or 'conversion' — it uses 'homepage' which satisfies the requirement, but 'designer empowerment tool' is not a searchable term and the date range '2020–2025' is factually wrong per evidence.",
+    "The intro paragraph of H3 block 1 ('The 2020 homepage opened...') buries its finding — it describes the layout before stating what the reader should take from it."
+  ],
+  "requiredFixes": [
+    "Correct '2020–2025' in the ## heading to '2020–2026' to match the evidence (Jun 2026 is the current snapshot).",
+    "Correct the third H3 heading from '2025' to '2026' or 'Jun 2026' to match the evidence label.",
+    "Split the paragraph beginning 'The most visible change...' — it exceeds 60 words. Move the 'full-bleed' definition into its own short sentence and trim.",
+    "Split the paragraph beginning 'The current page leads...' — it exceeds 60 words. The sentence about proof density and the sentence about design era can stand alone.",
+    "In H3 block 1, reorder so the finding (what the 2020 homepage reveals about Webflow's intended audience) appears in the first sentence, not after the layout description.",
+    "Remove or replace 'enterprise software sites tend to look' — it is a generic claim not grounded in the provided evidence."
+  ],
+  "riskFlags": [
+    "'The page stopped onboarding curious newcomers' — infers intent from the removal of two section headings. The evidence confirms the headings were removed but does not confirm the strategic intent. Should be hedged: 'the page no longer surfaces onboarding-oriented headings.'",
+    "'That is not a refinement. It is a different conversation with a different reader.' — presented as fact; no evidence confirms a deliberate audience shift. Hedge with 'suggests' or 'reads as'.",
+    "The section heading date '2020–2025' is a factual error — the teardown covers to Jun 2026 per the evidence."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Webflow homepage' which satisfies the searchable heading requirement — good.",
+    "Primary keyword 'Webflow homepage teardown' does not appear in the section body or headings — consider one natural mention for on-page keyword density.",
+    "H3 headings are descriptive and readable but none contain the primary keyword or topic terms like 'positioning' or 'messaging' — moderate SEO value.",
+    "The verbatim headline quotes (**'Break the code barrier'**, **'Make your website a growth engine'**) are strong for long-tail queries around Webflow's messaging evolution.",
+    "Fixing the date from '2025' to '2026' will also correct a potential trust signal issue for readers who notice the discrepancy."
+  ],
+  "rewriteInstruction": "Fix the two date errors first (heading and third H3: 2025 → 2026). Then split the two over-60-word paragraphs — each should carry one idea only. Reorder H3 block 1 so the finding ('the 2020 page was built for someone who wanted to build their own site') appears in the opening sentence before the layout description follows. Soften 'the page stopped onboarding curious newcomers' and 'it is a different conversation' to hedged language ('reads as', 'suggests'). Remove the generic aside about enterprise software sites looking a certain way — replace with a direct observation from the evidence (e.g. contrast the 'centered-hero' layout label with the 'full-bleed' label). The founder takeaway test is specific and runnable — keep it. Word count and H3 structure are otherwise sound.",
+  "dimensionScores": {
+    "evidenceAccuracy": 19,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 10,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 80
+}

@@ -177,10 +177,23 @@ export async function runVisualAnalyzer(opts: {
     throw new Error(`No screenshot files found in ${selectedDir}`);
   }
 
-  // Use first + last (captures the arc); if only one, use it alone
-  const toAnalyze = allFiles.length === 1
-    ? [allFiles[0]]
-    : [allFiles[0], allFiles[allFiles.length - 1]];
+  // Select up to 5 evenly-spaced snapshots so the arc (including inflection points) is captured.
+  // With ≤5 files we use all of them; with more we pick first, evenly-spaced midpoints, and last.
+  const MAX_SNAPSHOTS = 5;
+  let toAnalyze: string[];
+  if (allFiles.length <= MAX_SNAPSHOTS) {
+    toAnalyze = allFiles;
+  } else {
+    const selected = new Set<string>();
+    selected.add(allFiles[0]);
+    selected.add(allFiles[allFiles.length - 1]);
+    const step = (allFiles.length - 1) / (MAX_SNAPSHOTS - 1);
+    for (let i = 1; i < MAX_SNAPSHOTS - 1; i++) {
+      selected.add(allFiles[Math.round(i * step)]);
+    }
+    // Maintain sorted order
+    toAnalyze = allFiles.filter(f => selected.has(f));
+  }
 
   onLog(`  Visual analyzer: analyzing ${toAnalyze.length} of ${allFiles.length} screenshots`);
 

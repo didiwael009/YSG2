@@ -1,0 +1,48 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "PARAGRAPH LENGTH VIOLATION: The second paragraph in H3-1 ('The new CTAs point toward evidence instead...') runs approximately 67 words — exceeds the 60-word cap for analytical paragraphs.",
+    "PARAGRAPH LENGTH VIOLATION: The third paragraph in H3-2 ('If your nav still leads with education items...') runs approximately 45 words and is fine, but the second paragraph ('Eight navigation items were removed...') runs approximately 38 words — acceptable. However the overall H3-2 body is borderline.",
+    "EVIDENCE GAP — NAMED NAV ITEMS: The second H3 block refers to 'Eight navigation items were removed and eight were added' and describes 'bottom-of-funnel actions' without naming a single specific nav item verbatim from the navAdded or navRemoved arrays. The evidence arrays contain named nav items that must be quoted to satisfy the -8 penalty rule for nav items that do not appear verbatim.",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'This suggests — if the swap was intentional — that the page is now built for someone already evaluating options' — the condition hedge is present but the implication ('not a sales rep looking for internal permission to champion the tool') extends beyond what the evidence supports; no evidence confirms buyer-stage targeting intent.",
+    "CAUSAL CLAIM WITHOUT CONDITION in H3-2: 'The pattern suggests Gong may no longer need to explain what its category is' — this is an unsupported interpretive leap; no evidence in the provided data confirms category familiarity among incoming visitors.",
+    "MISSING VERBATIM NAV ITEMS: The navAdded and navRemoved arrays are not populated in the evidence JSON (they show counts of 8 each but no actual item strings are listed). The draft therefore cannot quote them verbatim. The draft avoids inventing them, which is correct, but the analysis of nav changes is consequently thin and generic.",
+    "READABILITY — FORMULA VIOLATION in H3-2: The second paragraph ('The additions point toward bottom-of-funnel actions') uses 'bottom-of-funnel' without an immediate plain-language definition — this is an expert term used without explanation on first use.",
+    "ABSTRACT CLOSING SENTENCE in H3-2: 'it suggests the nav is now structured to move informed buyers forward rather than orient visitors who are still figuring out what the product does' — this is acceptably concrete, but the paragraph as a whole reads as a strategic memo inference rather than a grounded finding.",
+    "WORD COUNT: Approximately 310 words — within the 180–320 range, acceptable.",
+    "FOUNDER TAKEAWAY: The final test is reasonably specific ('Count the items in your own nav. How many exist to explain your product?') but is not fully anchored to Gong's specific evidence — it does not reference any of Gong's actual named additions or removals, making it slightly generic.",
+    "PLAIN LANGUAGE: 'bottom-of-funnel' is used in the analytical body without a plain-language definition on first appearance — penalty applies.",
+    "PLAIN LANGUAGE: 'internal permission to champion the tool' is a sales-motion insider phrase ('internal champion') used without explanation."
+  ],
+  "requiredFixes": [
+    "Cut or split the second paragraph in H3-1 to under 60 words — remove the interpretive tail ('not a sales rep looking for internal permission to champion the tool') or move it to its own sentence as a clearly hedged inference.",
+    "Add a plain-language definition immediately after 'bottom-of-funnel' — e.g., 'bottom-of-funnel (steps a buyer takes only when they are close to making a purchase decision)'  — or replace the phrase entirely with plain language throughout.",
+    "Name at least one specific nav item verbatim (from the navAdded or navRemoved arrays) inside H3-2. If the evidence JSON does not supply the actual strings, note this gap explicitly in the section or remove the nav-change claim entirely rather than generalising it.",
+    "Replace or ground the claim 'Gong may no longer need to explain what its category is' — this is not traceable to any item in the evidence. Either remove it or reframe it as a narrow observation about the visible CTA text, not visitor psychology.",
+    "Anchor the Founder Test more tightly to Gong's evidence — reference at least one of Gong's named removed CTAs (e.g., 'Gong removed three named-person CTAs and replaced them with five content/action CTAs — does your nav follow a similar ratio?') so the test is specific to this teardown."
+  ],
+  "riskFlags": [
+    "'This suggests — if the swap was intentional — that the page is now built for someone already evaluating options' — no evidence confirms buyer-stage intent; the hedge helps but the claim still over-interprets CTA label changes.",
+    "'The pattern suggests Gong may no longer need to explain what its category is' — unsupported; no evidence about visitor awareness levels or traffic sources is provided.",
+    "'The additions point toward bottom-of-funnel actions' — navAdded strings are not present in the evidence JSON; this characterisation cannot be verified and risks inventing meaning.",
+    "'not a sales rep looking for internal permission to champion the tool' — 'internal champion' framing is not traceable to any evidence item."
+  ],
+  "seoNotes": [
+    "POSITIVE: The ## heading 'How Gong's CTA and navigation changes signal a shift in its sales motion' contains the company name and 'CTA' and 'navigation' — strong for search.",
+    "POSITIVE: H3 headings include 'Gong's CTAs' and 'Gong's navigation changes' — both contain the brand name and topic terms, supporting long-tail search.",
+    "POSITIVE: The section title echoes the article's primary keyword ('Gong homepage teardown') theme and adds the topic modifier 'CTA and navigation evolution' — good for section-level anchor indexing.",
+    "RISK: The nav-change analysis is thin because actual nav item strings are absent from the evidence. If competitors publish teardowns that name specific nav items, this section will rank lower on specificity signals."
+  ],
+  "rewriteInstruction": "Keep the two-H3 structure and the verbatim CTA quotes in H3-1 — those are the section's strongest asset. Fix H3-1 by trimming the second paragraph to under 60 words: cut the 'internal permission to champion the tool' phrase and keep only what the evidence directly supports (named-person CTAs replaced by content-action CTAs). In H3-2, you cannot quote nav items because the evidence JSON does not supply the actual strings — so either (a) remove the nav-change analysis entirely and replace it with a deeper read of what the five added CTAs versus four removed CTAs reveal as a set, or (b) clearly flag that nav item names were unavailable and confine the analysis to the count and directional pattern only. Add a plain-language gloss for 'bottom-of-funnel' on first use. Remove or heavily hedge the claim about category familiarity — it is not in the evidence. Tighten the Founder Test so it references Gong's specific CTA ratio (3 named-person CTAs removed, 5 content-action CTAs added) as the benchmark the founder should compare against their own page.",
+  "dimensionScores": {
+    "evidenceAccuracy": 14,
+    "specificity": 10,
+    "plainLanguage": 14,
+    "scannability": 11,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

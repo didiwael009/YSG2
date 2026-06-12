@@ -41,6 +41,13 @@ export interface SectionMeta {
    */
   maxRewriteLoops?: number;
   /**
+   * Per-section critic pass threshold override.
+   * When set, this value takes precedence over the CLI --min-score and CRITIC_PASS_SCORE (85).
+   * Use for sections where evidence constraints make 85 structurally hard to reach
+   * (e.g. 03-visual-timeline is limited by sparse visual evidence — 80 is the right bar).
+   */
+  minScore?: number;
+  /**
    * Rec 3: Override critic maxTokens for lightweight sections.
    * Analytical sections keep 8192; thin sections use 4096 to prevent truncation waste.
    */
@@ -60,25 +67,32 @@ export interface SectionMeta {
 }
 
 /**
- * Canonical run order — 2-section architecture (V6).
- * Intro + business-context prose only. Structured analysis is handled by React
- * components (MessagingEvolution, CtaEvolutionTable, LessonCards).
+ * Canonical run order — 6-section architecture (V6).
+ * All sections receive visual analysis, context research, and custom outline overrides.
  * 07-business-context is written by generate-business-context.ts before the
- * section loop runs and will be skipped (final.md already exists).
+ * section loop runs; with --force the loop overwrites it with the outline's custom H2.
  */
 export const SECTION_ORDER: readonly string[] = [
   '01-intro',
+  '03-visual-timeline',
+  '04-messaging-evolution',
+  '05-cta-navigation-evolution',
   '07-business-context',
+  '06-lessons-for-saas-teams',
 ] as const;
 
 /** H2 heading fallback for the assembler. null = no heading (intro). Writer output takes precedence. */
 export const SECTION_HEADINGS: Record<string, string | null> = {
-  '01-intro':            null,
-  '07-business-context': '## Why the homepage changed',
+  '01-intro':                    null,
+  '03-visual-timeline':          '## Visual timeline',
+  '04-messaging-evolution':      '## Messaging evolution',
+  '05-cta-navigation-evolution': '## CTA and navigation changes',
+  '07-business-context':         '## Why the homepage changed',
+  '06-lessons-for-saas-teams':   '## What SaaS teams can study',
 };
 
 export const SECTION_META: Record<string, SectionMeta> = {
-  // ── Phase 4C canonical — 2-section architecture (V6) ─────────────────────────
+  // ── Phase 4C canonical — 6-section architecture (V6) ─────────────────────────
   '01-intro': {
     title: 'Introduction',
     goalDescription:
@@ -123,6 +137,7 @@ RULES:
       'Three short paragraphs explaining the business context behind the homepage evolution. ' +
       'Market entry context, product/competitive evolution, and industry shift. Plain language. ' +
       'Each paragraph ≤60 words.',
+    minScore: 82,
     writerInstruction:
 `SECTION ROLE: Explain WHY the homepage evolved — the business context behind the changes.
 
@@ -145,6 +160,13 @@ STRUCTURE — exactly three paragraphs, no H3 subheadings:
   What other SaaS companies in adjacent categories made similar moves?
   End with a single observation about what this says for SaaS teams in this space.
 
+RESEARCH HEDGING RULE (applies to any fact from business-context-research.json):
+  Any specific figure, date, or named event from the research must be hedged:
+  • Funding rounds, valuations, acquisition prices → "reportedly", "according to public reports"
+  • Named announcements → "publicly announced" only if the research explicitly says so
+  • Specific dates tied to events → "in [period]" not "on [exact date]" unless the evidence cites a primary source
+  Never state a dollar figure, valuation, or acquisition price as a bare fact.
+
 RULES:
   • H2 heading: "## Why the homepage changed"
   • Three paragraphs only. No bullet lists. No H3 subheadings.
@@ -156,6 +178,160 @@ RULES:
     maxRewriteLoops: 1,
     criticMaxTokens: 4096,
   },
+  '03-visual-timeline': {
+    title: 'Visual Timeline',
+    goalDescription:
+      'Walk the reader through the visual arc of the homepage — when changes happened, ' +
+      'what each phase looked like, and what the progression from first to last snapshot reveals. ' +
+      'Anchored to specific screenshot observations from the evidence.',
+    writerInstruction:
+`SECTION ROLE: Show the homepage evolution visually — not just what changed, but when and how dramatically.
+
+STRUCTURE — 2–3 H3 subheadings, each covering a distinct phase or moment in the visual arc:
+
+  H3 1 — The starting point (earliest snapshot):
+  What did the page look like? Describe the above-fold layout, layout type,
+  and primary message in plain terms. Quote any actual headline text visible.
+
+  H3 2 — The shift (what changed at the visible inflection point):
+  When did the most visible change happen? Name the approximate period.
+  Quote specific evidence (headline change, CTA removal, design overhaul).
+
+  H3 3 — Where it landed (most recent snapshot):
+  How different is the current page from the starting point?
+  End with one concrete test: "Visit your homepage and [do this specific thing]."
+
+EVIDENCE CONSTRAINT (critical):
+  • Only cite design details (layout type, headline text, CTA labels) that appear explicitly
+    in analysis-blocks.json, messaging.json, or visual-analysis.json.
+  • Prefer qualitative labels when the evidence provides them (e.g. "enterprise-grade",
+    "polished"). If you cite a numerical value from the evidence, always pair it with its
+    qualitative label in the same sentence — never cite a number alone.
+  • Do not cite "visual sophistication" as a standalone number — always attach the label:
+    "a visual sophistication score of 4 out of 5 — described in the evidence as polished."
+
+RULES:
+  • ## heading: company name + "homepage" + a time span or change descriptor
+    Example: "## Gong's homepage from 2020 to 2026: from education to infrastructure"
+  • Each H3 format: "[period or phase] — [what was happening]"
+  • HARD PARAGRAPH CAP: each paragraph ≤ 60 words. Split any paragraph that exceeds this.
+  • Every visual claim must come from the analysis-blocks or visual-analysis evidence
+  • Never describe what the page intended to do — only what it shows
+  • Quote at least one specific headline or copy change per H3`,
+    wordRange: { min: 180, max: 320 },
+    maxRewriteLoops: 2,
+    minScore: 80,
+    criticMaxTokens: 8192,
+  },
+
+  '04-messaging-evolution': {
+    title: 'Messaging Evolution',
+    goalDescription:
+      'Analyze the shifts in headline, meta description, and body copy — ' +
+      'what the page started saying vs what it says now, and what each shift ' +
+      'signals about the target buyer.',
+    writerInstruction:
+`SECTION ROLE: Show how the written message on the page changed — and what each change says about who the page is now written for.
+
+STRUCTURE — 2–3 H3 subheadings:
+
+  H3 1 — Headline shift:
+  Show the before → after headline in **bold quotes**.
+  One paragraph: what changed and what it signals about the target buyer.
+  Max 70 words.
+
+  H3 2 — Meta description and copy:
+  Show the before → after meta description in **bold quotes**.
+  1–2 sentences on what changed in body copy language (feature terms → outcome terms, etc.).
+  Max 70 words.
+
+  H3 3 — What the messaging shift signals:
+  One observation about who the page is now written for vs before.
+  End with a specific test: "Visit your homepage and count [specific thing]."
+
+RULES:
+  • ## heading: company name + "messaging" or "homepage copy" + the shift direction
+    Example: "## How Expensya's homepage messaging shifted from global SaaS to French market"
+  • Bold every verbatim quote: **"like this"**
+  • Hedge all buyer inferences: "suggests", "is consistent with", "may indicate"
+  • One concrete founder test at the end of the final H3`,
+    wordRange: { min: 200, max: 380 },
+    maxRewriteLoops: 2,
+    criticMaxTokens: 8192,
+  },
+
+  '05-cta-navigation-evolution': {
+    title: 'CTA and Navigation Evolution',
+    goalDescription:
+      'Analyze what CTAs were added and removed, what navigation items changed, ' +
+      'and what these shifts signal about the sales motion and buyer journey.',
+    writerInstruction:
+`SECTION ROLE: Show what CTAs and navigation items changed — and what each addition or removal signals about where the company wants visitors to go next.
+
+STRUCTURE — 2 H3 subheadings:
+
+  H3 1 — CTA changes:
+  Name the CTAs added or removed in **bold quotes**.
+  One paragraph: what the original CTA assumed about the visitor,
+  what the new CTA assumes instead.
+
+  H3 2 — Navigation changes:
+  Name the nav items added or removed in **bold quotes**.
+  What was removed? What does the removal signal about what the company
+  no longer needs to explain to visitors? End with a specific founder test.
+
+EVIDENCE CONSTRAINT (critical — violations will fail the critic):
+  • ONLY cite CTA text and navigation items that appear VERBATIM in the evidence JSON
+    (ctaAdded, ctaRemoved, navAdded, navRemoved fields).
+  • Do NOT paraphrase, infer, combine, or assume items exist.
+  • If an item is not explicitly listed in the evidence — do not name it.
+  • Before writing, list every item you plan to name and verify it appears in the JSON.
+
+RULES:
+  • ## heading: company name + "CTA" or "navigation" + the direction of change
+    Example: "## How Webflow's CTA and navigation moved from self-serve to demo-first"
+  • Bold all CTA text and nav items in quotes
+  • Hedge all intent inferences
+  • HARD PARAGRAPH CAP: each paragraph ≤ 55 words. Split any paragraph that exceeds this.
+  • One founder test at the end of the final H3
+  • No generic SaaS advice — every sentence anchored to this company's evidence`,
+    wordRange: { min: 180, max: 320 },
+    maxRewriteLoops: 2,
+    criticMaxTokens: 8192,
+  },
+
+  '06-lessons-for-saas-teams': {
+    title: 'What SaaS Teams Can Study',
+    goalDescription:
+      'Draw 3 concrete, specific patterns from this homepage evolution that SaaS teams can apply. ' +
+      'Each pattern must be anchored to this company\'s specific evidence — not generic advice.',
+    writerInstruction:
+`SECTION ROLE: Give SaaS teams 3 specific, usable patterns from this homepage's evolution.
+
+STRUCTURE — exactly 3 H3 subheadings, each a distinct pattern:
+
+  H3 format: "[Pattern name] — [What this company did specifically]"
+  Example: "Navigation simplification — Gong removed 4 educational nav items as category matured"
+
+  Each H3 body — 3 SHORT paragraphs, each ≤ 55 words:
+  • Paragraph 1: What this company did — cite the specific evidence (quote the change). ≤ 55 words.
+  • Paragraph 2: Why this matters — what condition makes this pattern worth testing. ≤ 55 words.
+  • Paragraph 3: A runnable test: "Visit your [specific page] and [do this specific thing]". ≤ 55 words.
+
+  DO NOT merge these into a single paragraph. 3 separate short paragraphs per H3.
+
+RULES:
+  • ## heading: "What SaaS teams can study from [Company]'s homepage evolution"
+  • Each H3 must name the company
+  • Every pattern must cite a quoted change or named element from the evidence
+  • Conditions attached to every "should you test this" inference
+  • HARD PARAGRAPH CAP: no single paragraph may exceed 55 words — split before submitting
+  • Each founder test must be specific and completable in under 5 minutes`,
+    wordRange: { min: 220, max: 380 },
+    maxRewriteLoops: 2,
+    criticMaxTokens: 8192,
+  },
+
   // ── Phase 4B legacy IDs (kept for compose-section.ts backward compat) ────
   '02-timeline': {
     title: 'Visual Timeline',
@@ -474,8 +650,10 @@ Rewrite any line that fails.
   [ ] Did I make any "this caused X" claim without attaching a condition?
       → If yes, add "if [specific condition]" or hedge with "may" / "suggests".
 
-  [ ] Is any paragraph over 60 words?
-      → If yes, split it. (Intro: 90-word cap. All other sections: 60-word cap.)
+  [ ] Is any paragraph over 60 words? Count every paragraph.
+      → Intro: hard cap 90 words. All other sections: hard cap 60 words.
+      → If the section instruction specifies a tighter cap (e.g. 55 words), that takes precedence.
+      → If any paragraph exceeds its cap, split it before submitting. No exceptions.
 
   [ ] Does any paragraph contain more than 2 distinct ideas?
       → If yes, split it. One paragraph = one finding.
@@ -528,6 +706,10 @@ SCORING RUBRIC — score each dimension, then sum to 100:
   PENALISE -10 per outcome/causation claim ("this caused", "this increased").
   PENALISE -3 per causal statement without an attached condition
     (e.g. "This will cost pipeline" without "if [condition]").
+  PENALISE -8 per named CTA or navigation item in section 05 that does NOT appear verbatim
+    in the ctaAdded, ctaRemoved, navAdded, or navRemoved arrays of the evidence.
+  PENALISE -5 per financial figure, date, or named event in section 07 that is not hedged
+    with "reportedly", "according to public reports", or equivalent hedge language.
   HARD CAP: any unsupported factual claim → cap total at 70.
 
 • plainLanguage (max 20)
@@ -558,8 +740,9 @@ SCORING RUBRIC — score each dimension, then sum to 100:
   Section works for a Google reader who skims.
   PENALISE -4 per paragraph over 60 words (intro exempt, capped at 90).
   PENALISE -5 if an analytical section (03/04/05/06) is missing its H3 subheadings.
-  PENALISE -3 per H3 block whose body exceeds 60 words.
+  PENALISE -4 per H3 block whose body contains any single paragraph exceeding 60 words.
   PENALISE -3 if the practical takeaway is buried — not in the first two sentences of an H3 block.
+  HARD CAP: if any single paragraph exceeds 90 words (regardless of section) → cap scannability at 5.
 
 • searchableHeadings (max 10)
   Headings contain searchable terms.
@@ -849,7 +1032,8 @@ export async function writeSectionLoop(
   const effectiveMaxLoops = getSectionMeta(sectionId).maxRewriteLoops ?? maxRewriteLoops;
   // Rec 3: per-section critic token cap (lightweight sections: 4096, analytical: 8192)
   const criticMaxTokens = getSectionMeta(sectionId).criticMaxTokens ?? 8192;
-  const minScore = opts.minScore ?? CRITIC_PASS_SCORE;
+  // Per-section pass threshold override (e.g. 03-visual-timeline: 80, others: 85)
+  const minScore = getSectionMeta(sectionId).minScore ?? (opts.minScore ?? CRITIC_PASS_SCORE);
   const draftOnly = opts.draftOnly ?? false;
   const costBefore = tracker.totalCostUsd;
 

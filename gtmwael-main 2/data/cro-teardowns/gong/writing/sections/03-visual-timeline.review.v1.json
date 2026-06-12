@@ -1,0 +1,45 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Section heading date range says '2020–2025' but the evidence toLabel is 'Jun 2026' — the heading is factually misaligned with evidence.",
+    "Third H3 heading is titled '2025–2026' but the evidence snapshot label is 'Jun 2026' with no 2025 snapshot — there is no evidence anchor for a '2025' state.",
+    "The H1 in evidence reads 'Revenue AI Built To Predict churnPredict churn' (appears to be a rendering artefact), yet the draft quotes it cleanly as 'Revenue AI Built To Predict churn' — this is a minor but traceable discrepancy worth flagging.",
+    "The closing sentence of the second H3 — 'That is a different reader being addressed entirely' — is abstract and does not deliver a concrete or actionable implication; it violates the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula by ending on interpretation rather than action.",
+    "The paragraph beginning 'The page title tells the story cleanly' contains three distinct ideas: page title change, removal of illustrated characters, removal of named testimonials, and meta description shift — four trackable concepts, exceeding the two-idea limit and violating density rules.",
+    "The practical takeaway ('Your test') is generic enough to appear in any B2B SaaS teardown — it does not reference Gong's specific evidence (e.g., the 'What is RI?' nav link or the 5,000+ customers proof point) to make it company-specific.",
+    "Word count is approximately 310 words — within range but at the upper boundary; no flag required.",
+    "No forbidden jargon terms appear more than once — clean on that dimension.",
+    "All verbatim website quotes appear to be in bold quotes — compliant.",
+    "The meta description quote 'multimodal revenue signal processing, specialized AI agents, and purpose-built applications' is traceable to evidence — no penalty.",
+    "The second H3 block does not deliver its practical takeaway in the first two sentences — it buries the implication at the end of the paragraph block."
+  ],
+  "requiredFixes": [
+    "Fix the ## heading date range from '2020–2025' to '2020–2026' to match the evidence toLabel of 'Jun 2026'.",
+    "Rename the third H3 from '2025–2026' to '2026 — current state' or similar, removing the unsupported 2025 anchor since no 2025 snapshot exists in evidence.",
+    "Split the second H3 paragraph into two: one paragraph covering the title and meta description shift, one covering the removal of the named testimonials and illustrated characters. Each paragraph should carry only two trackable ideas.",
+    "Replace the closing sentence 'That is a different reader being addressed entirely' with a concrete implication — e.g., state what the removal of individual sales testimonials signals about the intended audience (enterprise procurement teams vs. individual reps), anchored to the evidence.",
+    "Make the founder test Gong-specific: replace the generic 'does the design signal what stage of buyer you are speaking to' prompt with one that references Gong's own evidence shift — e.g., 'Go to your homepage nav. Is there a link that explains what your category IS (like Gong's old 'What is RI?' link), or does every link assume the visitor already knows what you do? If the former, you are still in education mode.'"
+  ],
+  "riskFlags": [
+    "The phrase 'That is a different reader being addressed entirely' implies a deliberate audience targeting decision — the evidence note explicitly states 'No confirmed strategy is implied.' This is a mild causation overreach and should be reframed as an observation.",
+    "The third H3 heading implies a two-year span ('2025–2026') for which only one snapshot (Jun 2026) exists in evidence — the heading implies a transition within that window that is not supported.",
+    "The draft quotes the H1 as 'Revenue AI Built To Predict churn' but the raw evidence string is 'Revenue AI Built To Predict churnPredict churn' — the cleaned version is plausible as a rendering artefact, but the discrepancy should be noted and the quote hedged or reproduced faithfully."
+  ],
+  "seoNotes": [
+    "The ## heading 'Gong homepage 2020–2025: from cinematic category launch to enterprise product OS' contains the company name and 'homepage' — searchable heading requirement is met.",
+    "The H3 headings are descriptive but not keyword-rich; adding 'Gong' or 'homepage' to at least one H3 would support internal anchor linking and long-tail search coverage.",
+    "The meta description evolution quoted in the draft surfaces the phrase 'Revenue AI OS' — this is a high-value keyword shift worth calling out more explicitly in the body for SEO context, as it matches the current page title."
+  ],
+  "rewriteInstruction": "Fix the date range in the ## heading and the third H3 to reflect 'Jun 2026' not '2025'. Split the dense second H3 paragraph into two focused paragraphs, each carrying no more than two ideas, each opening with its finding first. Replace the abstract closing line 'That is a different reader being addressed entirely' with a concrete observation tied to the evidence — e.g., what the shift from named individual sales rep testimonials to a '5,000+ customers' proof point signals about the intended audience type. Finally, rewrite the founder test so it is anchored specifically to Gong's 'What is RI?' nav link as a concrete example, giving the founder a direct, Gong-derived reference point to compare against their own homepage navigation.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 12,
+    "plainLanguage": 17,
+    "scannability": 11,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 80
+}

@@ -1,0 +1,49 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Section heading says '2020–2025' but the evidence clearly labels the end state as Jun 2026 — a factual error not traceable to the evidence.",
+    "The heading contains 'French identity' which implies a strategic conclusion (audience narrowing to French market) not directly stated in the evidence; the evidence notes only that the headline and meta changed to French, with a note that 'no confirmed strategy is implied.'",
+    "Paragraph 2 under H3-1 (~45 words) uses 'discovery-stage' phrasing implicitly — 'sizing the product for any kind of buyer' is an analytical claim not verbatim in the evidence.",
+    "The closing paragraph under H3-3 ('More polish arrived alongside a smaller target audience, not a larger one') is a causal/outcome claim — the evidence does not confirm audience size changed; this needs a hedge.",
+    "The final founder test ('Does it assume the reader already knows what your product does...') is generic — it could appear in any SaaS teardown and is not anchored to Expensya's specific evidence (e.g., the shift from English to French, or the removal of 'Free trial').",
+    "H3-3 body paragraph 1 is borderline on word count (~50 words) but the closing sentence 'More polish arrived alongside a smaller target audience, not a larger one' is abstract and causal without a supporting condition — needs 'if [condition]' or a hedge.",
+    "The section heading is 'clever-only' in part — 'human-first French identity' has no searchable terms like 'homepage', 'positioning', 'messaging', or 'CTA'; while 'Expensya homepage' is present, the rest of the heading introduces an unsupported interpretive label.",
+    "The 'The visible shift — English out, French in' H3 heading lacks a topic keyword ('messaging', 'positioning', 'CTA') beyond the implicit language reference; it reads as clever framing rather than searchable.",
+    "No paragraph explicitly states its FINDING in the first sentence for H3-1 — the first sentence describes the layout, not the finding about what the layout means.",
+    "The section is approximately 290 words — within range — but two H3 blocks bury the takeaway behind descriptive setup rather than leading with it.",
+    "The draft uses 'narrower stage' in the H3-3 heading without defining what 'stage' means here — an undefined expert term."
+  ],
+  "requiredFixes": [
+    "Fix the section heading date: change '2020–2025' to '2020–2026' to match the evidence label of Jun 2026.",
+    "Remove or hedge 'narrower stage' and 'smaller target audience' — the evidence does not confirm audience size changed; replace with 'the page now addresses a more specific reader' and add 'if this language change is intentional' as a condition.",
+    "Rewrite the closing founder test to be Expensya-specific — e.g., 'Open Expensya's current homepage, look at the headline and the three removed CTAs (Free trial, Discover our solutions, Find out more), and ask: can a first-time visitor who speaks English still take a next step — or has that path been closed?' This takes under 2 minutes and is anchored to the evidence.",
+    "Rewrite the opening sentence of H3-1 to lead with the finding, not the layout description — e.g., 'The 2020 homepage was built for scale, not selection: the headline and navigation both assumed any company could be the customer.'",
+    "Add a hedge to the 'human-first French identity' label in the section heading — or replace it with a searchable descriptor like 'messaging and visual redesign' to avoid asserting an unconfirmed strategic intent.",
+    "The H3 heading 'The visible shift — English out, French in' should include a topic keyword for scannability and SEO — e.g., 'Expensya messaging shift: English out, French in' or 'Homepage messaging: the language change'.",
+    "Split or rewrite the closing sentence of H3-3 ('More polish arrived alongside a smaller target audience, not a larger one') — it is a causal claim without supporting evidence and ends on an abstract note; replace with a concrete, conditional observation anchored to the evidence."
+  ],
+  "riskFlags": [
+    "'More polish arrived alongside a smaller target audience, not a larger one' — this implies a causal or directional claim about audience size that is not supported by the evidence; the evidence only shows language changed from English to French.",
+    "'That is not a translation. It is a different audience entirely.' — this is a strong causation/outcome claim; the evidence note explicitly says 'No confirmed strategy is implied'; needs hedging such as 'This could indicate a different target audience, or it may reflect a regional SEO or localisation decision.'",
+    "'human-first French identity' in the section heading — 'identity' implies a brand strategy conclusion not stated in the evidence.",
+    "Section heading date '2020–2025' does not match evidence ('Jun 2026') — factual error."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Expensya homepage' which is good for the primary keyword 'Expensya homepage teardown', but '2020–2025' is factually wrong and will conflict with the article title which says 'Oct 2020 to Jun 2026'.",
+    "H3 headings are largely clever-first rather than search-term-first; 'The visible shift — English out, French in' and 'June 2026 — polished brand, narrower stage' would benefit from topic terms like 'messaging', 'CTA', or 'positioning' for internal anchor discoverability.",
+    "The primary keyword 'Expensya homepage teardown' does not appear in the body text of this section — consider a natural mention for topical reinforcement.",
+    "The French headline quoted verbatim ('Voici à quoi devrait ressembler la gestion des dépenses.') is a useful differentiator for long-tail queries from French-market researchers."
+  ],
+  "rewriteInstruction": "Rewrite this section with four specific fixes applied in order. First, correct the heading date from 2020–2025 to 2020–2026 and replace 'human-first French identity' with a searchable descriptor that does not assert unconfirmed strategy ('messaging and visual redesign' works). Second, rewrite each H3 opening to lead with the finding — what the evidence reveals — before describing the layout or quoting text; the layout description should support the finding, not precede it. Third, hedge every audience-narrowing or causation claim: 'That is not a translation. It is a different audience entirely.' must become something like 'That is not a translation — if intentional, it signals a shift toward a French-speaking audience rather than a universal one.' Fourth, replace the generic closing founder test with a specific, Expensya-anchored task referencing the removed CTAs ('Free trial', 'Discover our solutions', 'Find out more') and the English-to-French headline switch — ask the founder to check whether a non-French visitor can still find a conversion path. Keep all verbatim quotes in bold-quote format. Target 260–300 words.",
+  "dimensionScores": {
+    "evidenceAccuracy": 16,
+    "specificity": 11,
+    "plainLanguage": 16,
+    "scannability": 12,
+    "searchableHeadings": 6,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 80
+}

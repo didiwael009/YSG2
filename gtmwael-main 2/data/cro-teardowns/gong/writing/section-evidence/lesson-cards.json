@@ -1,26 +1,26 @@
 [
   {
     "number": "01",
-    "title": "Gong replaced 'REVENUE INTELLIGENCE' with 'Revenue AI Built To Predict churn' — a use-case-first headline",
-    "category": "Messaging",
-    "body": "The original H1 named the product category (**\"REVENUE INTELLIGENCE\"**). The current version leads with a specific outcome: **\"Revenue AI Built To Predict churn\"**. This suggests Gong is targeting buyers who already understand their problem and are evaluating solutions, rather than prospects still learning what revenue intelligence means. The headline now filters for pipeline-stage fit."
+    "title": "Gong dropped 'REVENUE INTELLIGENCE' and replaced it with 'Revenue AI OS' — that is a category change, not a rebrand",
+    "category": "Positioning",
+    "body": "In 2020, Gong's H1 read **\"REVENUE INTELLIGENCE\"** — a category label that told buyers what the product was. By 2026, the page title had become **\"Gong - Revenue AI OS\"** and the meta description introduced **\"multimodal revenue signal processing\"** and **\"specialized AI agents.\"** This suggests Gong is no longer trying to own a category it defined — it is trying to position inside a category that is currently being defined by AI."
   },
   {
     "number": "02",
-    "title": "The hero CTA changed from 'Watch Video' to 'See Gong in action' — a demo-intent signal",
-    "category": "CRO",
-    "body": "Gong removed **\"Watch Video\"** and added **\"See Gong in action\"** as the primary above-the-fold CTA. The new phrasing signals a demo or product walkthrough, not passive content consumption. This likely reflects a shift toward buyers who are further along in evaluation — people ready to see the platform, not researchers watching explainer videos."
+    "title": "Gong replaced named VP testimonials with 'See Gong in action' — a shift from social proof to product confidence",
+    "category": "Funnel",
+    "body": "The 2020 page surfaced individual names — **\"Paul Santarelli VP of Sales\"**, **\"Bevin Lyon VP, Customer Strategy\"**, **\"Tonni Bennett VP of Sales\"** — as clickable proof points alongside a **\"Watch Video\"** CTA. All four were removed. The page now leads with **\"See Gong in action\"** and **\"Learn about our product.\"** This suggests the team believes the product now carries enough weight to convert without leaning on peer authority first."
   },
   {
     "number": "03",
-    "title": "'Trusted by 5,000+ customers' replaced 'So What Does this look like? Glad you asked.'",
+    "title": "'Trusted by 5,000+ customers' and 'Pitchbook is 10x more efficient' are new H2s — Gong moved scale proof into the page structure itself",
     "category": "Trust",
-    "body": "The original homepage included a casual, explanatory section heading: **\"So What Does this look like? Glad you asked.\"** The current version leads with **\"Trusted by 5,000+ customers\"** — a proof-of-scale statement. This suggests Gong is leaning into category leadership and social proof, rather than educating first-time visitors about what the product does."
+    "body": "In 2020, trust signals appeared as named quotes rather than section headings. By 2026, headlines like **\"Trusted by 5,000+ customers\"** and **\"Pitchbook is 10x more efficient with revenue AI\"** are baked into the content architecture. Embedding scale and outcome numbers at the heading level — not just in body copy — signals that Gong may be targeting buyers who are further along in evaluation and scanning for validation fast."
   },
   {
     "number": "04",
-    "title": "Gong's meta description now addresses 'your entire GTM organization' instead of 'sales teams'",
-    "category": "Positioning",
-    "body": "The original meta description targeted **\"sales optimization\"** and **\"sales conversations\"**. The current version says Gong **\"helps your entire GTM organization win\"** and references **\"multimodal revenue signal processing, specialized AI agents, and purpose-built applications\"**. This indicates an upmarket expansion — Gong may now be selling into revenue operations or cross-functional buying committees, not just sales leadership."
+    "title": "When Gong added 10 H2s and rewrote its meta description, the whole page stopped talking to sales reps and started talking to GTM leaders",
+    "category": "Messaging",
+    "body": "The 2020 page used headings like **\"Skyrocket your success today\"** and **\"So What Does this look like? Glad you asked.\"** — casual, rep-facing language. The 2026 page uses **\"Winning GTM organizations run revenue on Gong\"** and **\"Power your revenue engine with AI — from prospecting to expansion.\"** The tone and vocabulary shift points to an audience that approves budgets rather than one that books calls."
   }
 ]

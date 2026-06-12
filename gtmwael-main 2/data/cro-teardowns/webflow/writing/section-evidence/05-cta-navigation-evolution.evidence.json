@@ -1,0 +1,65 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Webflow",
+  "companyUrl": "https://webflow.com/",
+  "articleTitle": "Webflow Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Webflow rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 5,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Webflow homepage teardown",
+  "cta-changes": {
+    "added": [
+      "Get started",
+      "Contact Sales",
+      "Start for free",
+      "Explore AEO",
+      "Start building",
+      "Start publishing",
+      "Start optimizing",
+      "Read customer story",
+      "Get started — it's free",
+      "Talk to sales"
+    ],
+    "removed": [
+      "Get started — it's free",
+      "Dell prototypes faster and more effectively.",
+      "Heco builds world-class sites for clients.",
+      "Showcase See the best sites #MadeInWebflow.",
+      "Events Connect with the community.",
+      "Live Stream Rebuilds, interviews, and more.",
+      "Templates Browse 100+ custom templates.",
+      "University Videos, guides, and mild humor.",
+      "Courses Hours of full-length video tutorials.",
+      "Ebooks In-depth guides and articles."
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Webflow is the agentic web marketing platform for high-performing brands",
+      "300,000+ brands move the needle with Webflow",
+      "From idea to impact, faster",
+      "Everything marketing teams love about webflow",
+      "Make your website your competitive edge"
+    ],
+    "removed": [
+      "Who uses Webflow",
+      "Get up and running fast",
+      "Free until you’re ready to launch"
+    ]
+  }
+}

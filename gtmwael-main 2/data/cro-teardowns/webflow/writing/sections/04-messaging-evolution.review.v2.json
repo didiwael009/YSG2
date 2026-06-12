@@ -1,0 +1,43 @@
+{
+  "score": 84,
+  "pass": false,
+  "issues": [
+    "Section 04 cold-visitor risk paragraph (~95 words) exceeds the 90-word hard cap for scannability, which caps scannability at 5.",
+    "The phrase 'procurement conversations' in the page-title H3 is an expert term used without an immediate plain-language definition before the parenthetical — the definition arrives mid-sentence after the term, which is borderline but salvageable; however the parenthetical definition itself is clunky and reads like a footnote rather than integrated explanation.",
+    "The cold-visitor risk H3 paragraph trails into a second idea (meta description still names CMS/hosting) that is separate from the first idea (cold visitor cannot explain the product) — two distinct ideas in a paragraph that should carry one.",
+    "The cold-visitor risk H3 does not deliver its practical takeaway in the first two sentences — the finding arrives at sentence three after scene-setting.",
+    "The closing 'Founder test' is strong but asks the founder to count a ratio and then ask a question — two steps, slightly over the five-minute mental model threshold; could be tightened to a single action.",
+    "The page-title H3 paragraph is approximately 90 words — right at the hard cap boundary; should be trimmed to under 60 to satisfy the H3 body paragraph rule.",
+    "No causal or outcome claims without data detected — evidence accuracy is clean.",
+    "Bold quotes are correctly applied to all verbatim headlines and descriptions — no plain-quote violations."
+  ],
+  "requiredFixes": [
+    "Split the cold-visitor risk paragraph into two separate paragraphs: one on the risk of outcome-only language for cold visitors, one on the observation that the meta description still names product capabilities. Each paragraph must be under 60 words and lead with its finding.",
+    "Move the finding of the cold-visitor H3 to the first sentence — e.g. 'Cold visitors who arrive without prior Webflow brand exposure may not be able to explain what the product does from above-the-fold copy alone.' Then explain why, then name the evidence.",
+    "Trim the page-title H3 body paragraph to under 60 words. Remove or compress the parenthetical definition of 'procurement conversations' — either integrate it as a dash clause in the same sentence or cut the term and say 'the sign-off process' directly.",
+    "Tighten the Founder test to a single countable action: e.g. 'Count the words in your H1 and meta description that name what your product does versus what the customer achieves — if outcome words outnumber capability words, read only those two elements aloud and ask whether a cold visitor could name your product category.' Remove the two-step ask."
+  ],
+  "riskFlags": [
+    "The claim 'procurement conversations may become shorter, if the label is already recognised by the buyer' is appropriately hedged with 'may' and a condition — no penalty, but confirm the condition is specific enough for the reader.",
+    "The phrase 'The shift suggests Webflow is now writing for the buyer who approves the budget' is an inference from copy alone with no strategy document — correctly framed as a suggestion, not a confirmed cause; acceptable as written.",
+    "The cold-visitor risk paragraph states the visitor 'may leave without being able to explain what the product does' — this is a plausible inference, not data-backed, but is correctly hedged with 'may'; no penalty triggered."
+  ],
+  "seoNotes": [
+    "The ## section heading contains 'Webflow', 'Homepage', 'Messaging', 'H1', 'Meta', and 'Page Title' — strong keyword density for the primary and secondary search terms.",
+    "H3 headings all contain 'Webflow' and a topic term ('headline', 'meta description', 'page title', 'messaging shift') — good for featured snippet eligibility on comparative queries.",
+    "The article title and section heading are aligned with secondary keywords 'Webflow homepage evolution' and 'Webflow messaging shift analysis' from the seo-intent block.",
+    "The 'agentic web platform' term appears in both the draft and the page title evidence — using it in the body copy may capture emerging long-tail queries around that coined category label.",
+    "Word count is approximately 370 words — within the 200–380 range, but the required splits will push it slightly over; author should trim the page-title paragraph to maintain range compliance after fixes."
+  ],
+  "rewriteInstruction": "The draft is structurally sound and evidence-accurate, but two fixes are blocking the pass score. First, the cold-visitor risk paragraph exceeds 90 words and triggers the scannability hard cap — split it into two paragraphs of under 60 words each, and move the finding to the first sentence of the first paragraph. Second, trim the page-title H3 body to under 60 words by removing or compressing the parenthetical 'procurement conversations' definition — replace the term with plain language ('the internal sign-off process') or cut the parenthetical entirely and integrate the idea into the sentence naturally. Finally, reduce the Founder test to a single countable action rather than a two-step ask. No evidence accuracy or jargon issues need addressing — the rewrite is structural and density-focused only.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 14,
+    "plainLanguage": 17,
+    "scannability": 5,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

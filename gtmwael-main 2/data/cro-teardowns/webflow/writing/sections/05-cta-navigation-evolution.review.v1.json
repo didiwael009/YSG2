@@ -1,0 +1,51 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "The ## heading contains no searchable terms such as 'CTA', 'navigation', 'homepage', or 'Webflow' in a recognisable keyword form — it is clever-only framing built around a quote paraphrase, losing SEO value.",
+    "The claim that 'Contact Sales' leads the new CTA stack is not directly supported by the evidence — the ctaAdded array lists CTAs but provides no ordering or hierarchy data; asserting it 'leads with Contact Sales' is an unsupported ordering claim.",
+    "The phrase 'a category Webflow is actively naming' on 'Explore AEO' is a causal/strategy claim not traceable to the evidence; the evidence only confirms 'Explore AEO' was added as a CTA.",
+    "The claim 'Placing a CTA around it before demand exists is a bet on creating that demand, not capturing it' is an outcome/causation framing without a stated condition — it should be hedged with 'if visitors arrive without prior knowledge of AEO'.",
+    "The third analytical paragraph (Explore AEO) runs approximately 65 words — over the 60-word limit for non-intro paragraphs.",
+    "The fourth analytical paragraph (navigation/removals) runs approximately 70 words — over the 60-word limit.",
+    "The fifth paragraph ('That is a lot of onboarding infrastructure gone...') contains two distinct ideas tracked simultaneously: (1) the inference about visitor readiness and (2) the implication about pre-decided buyers — should be split or tightened.",
+    "The founder takeaway test uses 'teaching CTAs' and 'conversion CTAs' as categories that are not anchored to Webflow's specific evidence — it could appear verbatim in any SaaS homepage teardown.",
+    "The section is approximately 340 words — slightly over the 320-word hard ceiling stated in the brief.",
+    "'Dell prototypes faster and more effectively.' appears in ctaRemoved in the evidence but is not mentioned in the draft — a notable omission given it was social proof embedded as a CTA, which would strengthen the specificity of the argument.",
+    "The H3 heading 'How Webflow's CTA stack changed — and what each version assumed about the visitor' does not deliver its takeaway in the first two sentences of the block — the first sentence describes the old CTA, and the finding only emerges by sentence three."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## heading to include 'Webflow', 'CTA', and/or 'navigation' as searchable terms while preserving the narrative angle — e.g. 'Webflow CTA and Navigation Changes: From Free Trial to Contact Sales and Explore AEO'.",
+    "Remove or hedge the claim that 'Contact Sales' leads the new stack — the evidence gives no ordering; rewrite as 'The new stack includes Contact Sales and Talk to sales alongside Start for free' without asserting hierarchy.",
+    "Add a condition to the 'Explore AEO' paragraph: change 'Placing a CTA around it before demand exists is a bet on creating that demand' to 'If most visitors arrive without knowing what AEO means, placing this CTA is a bet on creating demand rather than capturing it'.",
+    "Cut the Explore AEO paragraph to under 60 words by removing the definition clause and linking it to the evidence more directly.",
+    "Cut the navigation/removals paragraph to under 60 words — split the removed-items list from the inference about visitor intent.",
+    "Anchor the founder takeaway test to Webflow's specific evidence: e.g. 'On your homepage, count CTAs that resemble Webflow's removed items — University, Courses, Ebooks — versus CTAs like Start for free or Contact Sales. If educational CTAs outnumber conversion CTAs, your page is still doing pre-decision work.'",
+    "Move the finding to the first sentence of the first H3 block — state the key shift (from one CTA to a multi-CTA stack sorted by intent) before explaining the old state.",
+    "Trim the overall section to under 320 words.",
+    "Consider adding a reference to the removed CTA 'Dell prototypes faster and more effectively.' as evidence that social proof anchors were also removed — this is uniquely Webflow-specific and currently omitted."
+  ],
+  "riskFlags": [
+    "'The page now expects a buyer who is already past the is this affordable? question' — causation claim with no data support; should be hedged as an inference.",
+    "'Placing a CTA around it before demand exists is a bet on creating that demand, not capturing it' — strategy/outcome claim not in evidence.",
+    "'a category Webflow is actively naming' — not traceable to the provided evidence.",
+    "Asserting CTA ordering (Contact Sales leads, Start for free is secondary) when the ctaAdded array provides no positional data."
+  ],
+  "seoNotes": [
+    "The ## heading is not searchable — 'Contact Sales' and 'Explore AEO' are not terms people search; the heading should surface 'Webflow CTA changes' or 'Webflow navigation evolution' which match likely long-tail queries.",
+    "The H3 headings are descriptive and mid-tail relevant ('Webflow's CTA stack changed', 'What Webflow added to navigation') — these are reasonable for internal anchor linking and skim-reading but could be tightened for featured-snippet eligibility.",
+    "The inline bold formatting on every CTA and nav item is good for scannability and may help Google parse structured content from the page.",
+    "The section is slightly over the recommended word count, which dilutes keyword density slightly — trimming to 300 words would improve it."
+  ],
+  "rewriteInstruction": "Rewrite this section with four targeted changes. First, replace the ## heading with a searchable version that includes 'Webflow', 'CTA', and 'navigation' — drop the clever quote paraphrase. Second, open the first H3 block with the finding (the shift from one CTA to a sorted multi-CTA stack) rather than describing the old state first. Third, hedge all ordering and strategy claims about Contact Sales and Explore AEO with explicit conditions ('if visitors arrive without knowing AEO...', 'the listed CTAs suggest...') since the evidence provides no positional or performance data. Fourth, rewrite the founder test to name Webflow's actual removed items — University, Courses, Ebooks, Templates — so the test is anchored to this teardown, not a generic audit prompt. Trim to under 310 words total, keeping each analytical paragraph under 60 words.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 12,
+    "plainLanguage": 17,
+    "scannability": 10,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

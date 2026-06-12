@@ -1,59 +1,58 @@
 {
-  "overallScore": 42,
+  "overallScore": 81,
   "pass": false,
-  "evidenceAccuracy": 5,
-  "plainLanguage": 12,
-  "scannability": 8,
-  "searchableHeadings": 7,
-  "specificity": 6,
-  "rhythmAndOpening": 3,
-  "founderTakeaway": 1,
+  "evidenceAccuracy": 21,
+  "plainLanguage": 17,
+  "scannability": 11,
+  "searchableHeadings": 8,
+  "specificity": 13,
+  "rhythmAndOpening": 8,
+  "founderTakeaway": 4,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "01-intro",
-    "07-business-context"
+    "05-cta-navigation-evolution",
+    "03-visual-timeline — heading date error",
+    "06-lessons-for-saas-teams — third block lacks distinct H3 founder test"
   ],
   "unsupportedClaims": [
-    "Medius acquired it for over $100M",
-    "France's July 2024 e-invoicing mandate",
-    "The March 2023 Swan partnership added embedded corporate cards",
-    "Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale",
-    "competing against all-in-one challengers like Ramp, Brex, and Spendesk",
-    "Standalone expense tools like Expensya were being acquired by AP automation platforms during this period"
+    "'top 20% of revenue' — the phrase 'find which country drives your top 20% of revenue' introduces a specific percentage threshold not present in the evidence",
+    "'for a sum reportedly exceeding $100M, according to sources familiar with the deal' — the evidence states 'reportedly over $100M according to sources familiar with the deal' which is acceptable sourcing, but the article restates it as near-fact rather than hedged claim; marginal but flagged",
+    "'2020–2025' in the ## heading — the evidence states the period endpoint is Jun 2026, making '2025' a factual error"
   ],
   "riskFlags": [
-    "TITLE CLAIM: 'How a SaaS Company Exited the English-Speaking Market' — the evidence shows a homepage language change, not a verified market exit strategy. No evidence confirms Expensya stopped serving English customers or closed English acquisition channels.",
-    "OPENING CLAIM: 'This teardown shows how to read a homepage shift as a deliberate market exit' — presents interpretation as methodology without hedging. The evidence does not confirm deliberate exit; it shows a language change.",
-    "CAUSATION CLAIM: 'The homepage shift wasn't gradual drift — it followed a specific acquisition and regulatory timeline' — asserts causal relationship without evidence of company intent or verified timeline.",
-    "STRATEGIC INTENT CLAIM: 'Expensya was repositioned to serve a regulatory moment rather than continue competing as an international SaaS product' — presents company strategy as fact without evidence of internal decision-making.",
-    "STRATEGIC INTENT CLAIM: 'Medius could bundle AP and expense into a unified platform' — asserts company strategy without evidence.",
-    "CONVERSION PREDICTION: 'you may be diluting conversion by staying international when a focused market would convert better' — predicts conversion outcome without data."
+    "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — asserts confirmed visitor intent from structural evidence only; should be hedged as 'this may suggest' or 'consistent with expecting'",
+    "'may cause a sharp drop in the stream of new leads entering your sales process, if self-serve volume was the primary source' — conditional framing is present but 'sharp drop' implies a specific outcome without supporting data; tighten to 'may reduce inbound volume'",
+    "'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — asserts company intent and strategic reasoning not confirmed in evidence; reframe as 'consistent with hedging against unproven French-market scale'",
+    "'whether that narrowing is intentional or incidental to a localisation decision' — acceptable hedge, not a flag",
+    "'That deadline may give buyers a concrete reason to act — rather than continue evaluating' — mild outcome prediction; acceptable with 'may' but noted"
   ],
   "requiredFixes": [
-    "CRITICAL: Remove all acquisition details not in evidence (Medius acquisition amount, specific dates, Swan partnership timing, regulatory mandate dates). The evidence contains ZERO mentions of Medius, Swan, regulatory mandates, acquisition amounts, or 2023/2024 dates.",
-    "CRITICAL: Remove or heavily hedge the 'market exit' framing. Replace title and opening with observable evidence: 'Expensya switched from English to French homepage between Oct 2020 and Jun 2026.' The evidence shows language change only — no verified exit strategy.",
-    "CRITICAL: Remove competitor names (Ramp, Brex, Spendesk) — not in evidence.",
-    "CRITICAL: Remove industry consolidation claims ('expense tools were being acquired') — not in evidence.",
-    "CRITICAL: Remove all strategic intent claims about Medius or Expensya decisions. Replace with observable evidence: 'The homepage added cartes de paiement sections and removed free trial CTAs.'",
-    "CRITICAL: Rewrite section 07 to anchor every paragraph to specific evidence from the compressed data. Currently reads as business commentary with zero traceable claims.",
-    "Add H3 subheadings to business-context section (currently has none).",
-    "Break 78-word opening paragraph into two blocks.",
-    "Add founder takeaway to each subsection under 'Why Expensya abandoned English'.",
-    "Rewrite final 'Quick test' to anchor to specific Expensya evidence changes (e.g., 'Check if your CTAs shifted from 'Free trial' to 'Book a demo' — this signals ICP narrowing')."
+    "Fix the ## heading '2020–2025' to '2020–2026' to match the evidence endpoint of Jun 2026",
+    "Replace 'top 20% of revenue' with an un-quantified phrase such as 'the single country generating the majority of your revenue' — the 20% threshold has no evidence basis",
+    "Reframe 'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — remove 'precisely because' and replace with 'consistent with hedging against' or 'which may reflect uncertainty about'",
+    "Reframe 'This suggests Expensya now expects a visitor who is ready to commit time' — add explicit hedge: 'if the page is now targeting warmer inbound leads, this pattern suggests...'",
+    "The paragraph beginning 'Removing a trial CTA without a sales team...' in section 06 exceeds 60 words and contains two compound ideas — split into two paragraphs with a structural break"
   ],
   "optionalImprovements": [
-    "Add H3 structure to opening section to explain what a 'language-change-as-repositioning' pattern looks like before applying it.",
-    "Vary sentence rhythm in business-context section — currently all declarative statements of similar length.",
-    "Make ## heading more specific: 'Why Expensya's homepage switched from English to French after Oct 2020' — includes company name and observable change."
+    "The opening section uses two H1 tags — the article starts with '# How Expensya rewrote...' and immediately follows with another '# Expensya Homepage Teardown:' — consolidate to one H1 for document structure clarity",
+    "The visual sophistication score of 4 is cited implicitly via 'held at 4' in the evidence notes but not used directly in the article — if referenced, define the scale briefly",
+    "The 'Founder test' label in section 04 and the 'Founder test' label in section 05 use the same opening phrase — vary the label or sentence rhythm to reduce repetition",
+    "Section 03 note about only two snapshots available is good practice — consider moving it to the article introduction rather than burying it under the first ## heading",
+    "The cookie-consent CTA explanation ('Necessary 21', 'Cloudflare 12', etc.) is accurate and useful — consider adding a one-sentence note earlier that CTA lists from crawl tools often include tracker artefacts, so readers understand the caveat before the section"
   ],
   "rerunRecommendations": [
-    "01-intro — rewrite to remove market-exit framing and anchor to observable language/CTA changes only",
-    "07-business-context — regenerate entirely. Current version contains zero claims traceable to evidence. Every paragraph invents external facts (acquisition details, partnerships, competitors, regulatory mandates)."
+    "03-visual-timeline — fix heading date and rerun to correct the '2020–2025' factual error",
+    "05-cta-navigation-evolution — rerun to soften intent assertions and apply conditional framing to the visitor-readiness claim",
+    "06-lessons-for-saas-teams — rerun third block to remove the 'precisely because' intent assertion and fix the over-60-word paragraph"
   ],
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.031298999999999993,
-  "generatedAt": "2026-06-12T08:27:03.333Z"
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.04771499999999995,
+  "generatedAt": "2026-06-12T10:57:25.007Z",
+  "repetitionWarnings": [
+    "The observation that 'Free trial was removed and replaced by Réservez une démo' appears in the visual timeline section, the CTA section, and the lessons section — three separate repetitions of the same structural finding without additive framing in each instance",
+    "The observation that 'every removed navigation item was in English and every added item is in French' is made in the CTA/nav section and again implied in the messaging section and the business-context section — consolidate or vary the framing"
+  ]
 }

@@ -1,58 +1,61 @@
 {
-  "overallScore": 58,
+  "overallScore": 81,
   "pass": false,
-  "evidenceAccuracy": 10,
-  "plainLanguage": 16,
-  "scannability": 8,
-  "searchableHeadings": 7,
-  "specificity": 8,
-  "rhythmAndOpening": 6,
-  "founderTakeaway": 3,
+  "evidenceAccuracy": 20,
+  "plainLanguage": 17,
+  "scannability": 11,
+  "searchableHeadings": 8,
+  "specificity": 13,
+  "rhythmAndOpening": 8,
+  "founderTakeaway": 4,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "01-intro",
+    "04-messaging-evolution",
+    "05-cta-navigation-evolution",
     "07-business-context"
   ],
   "unsupportedClaims": [
-    "raised over $330 million between 2021 and 2022, reaching a $4 billion valuation",
-    "reported enterprise revenue growth from $1 million to $8 million in 2021 alone",
-    "Framer captured designer mindshare",
-    "Wix launched Studio for agencies",
-    "The 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization",
-    "In 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development"
+    "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this specific figure ($1M to $8M, 8x) appears in the business context research evidence and is acceptable as attributed to public sources; however the phrase 'from $1M to $8M' is repeated in the article without the 'reportedly' hedge present in the evidence. Low risk but noted.",
+    "'most visitors had likely never searched before' — a frequency/volume claim about visitor search behaviour with no evidence anchor.",
+    "'placing this CTA is a bet on creating demand rather than capturing it' — framed as a confirmed strategic diagnosis rather than a conditional interpretation; no evidence confirms Webflow's intent here.",
+    "'Its removal means that reassurance no longer exists anywhere visitors can see it' — the evidence does not confirm the line does not appear elsewhere on the site; presented as definitive fact."
   ],
   "riskFlags": [
-    "This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams). — causal claim about growth model replacement without conversion or traffic data",
-    "After reading this teardown, you'll be able to identify whether your own homepage is still selling capability when it should be selling outcomes — and when that shift becomes safe to make. — forward-looking promise without evidence the framework works",
-    "The messaging changes documented above didn't happen in a vacuum — they tracked a deliberate business transformation. — assertion of company intent without internal evidence",
-    "That funding coincided with reported enterprise revenue growth — implies causation between funding and homepage changes",
-    "This points to prioritizing predictable enterprise contracts over viral designer adoption — a tradeoff visible in how the page now filters for buyers, not builders. — outcome claim about filtering without visitor or conversion data"
+    "'the internal sign-off process may become shorter if buyers already recognise the name' — conversion-outcome prediction without data, even with 'may'; implies a mechanism not in evidence.",
+    "'promoting Contact Sales may generate a queue your team cannot convert' — conversion-outcome warning presented as a risk without any evidence anchor specific to Webflow.",
+    "'Webflow appears to be actively defining, not just borrowing from the market' — asserts company intent/strategy without evidence confirming this is Webflow's stated aim.",
+    "'That shift suggests Webflow is now writing for the buyer who approves the budget, not the one who builds the pages' — causal intent claim; the evidence shows a copy change, not confirmed intent. Needs 'may suggest' or similar hedge.",
+    "'The demotion is consistent with prioritising enterprise pipeline over trial volume' — causal framing that implies confirmed strategic intent; the hedge 'though the evidence does not confirm this directly' partially softens it but the primary clause still reads as an assertion.",
+    "'AEO... is a phrase Webflow appears to be actively defining' — strategy/intent claim not traceable to evidence; the evidence shows the CTA exists, not that Webflow is 'actively defining' the term."
   ],
   "requiredFixes": [
-    "Remove all unsupported factual claims: funding amounts ($330 million, $4 billion valuation), revenue figures ($1M to $8M), layoff percentages (8%), competitor moves (Framer, Wix), acquisition details (Intellimize, 'first acquisition', AI personalization claims).",
-    "Replace business context section with analysis anchored ONLY to the compressed evidence: headline change, meta description change, CTA changes, H2 changes, H3 changes.",
-    "Rewrite intro to avoid causal claim about 'replacement of one growth model with another' — the evidence shows messaging changed, not that a growth model was replaced or that conversion patterns shifted.",
-    "Remove forward-looking promise in intro ('After reading this teardown, you'll be able to identify...') — replace with description of what the evidence shows.",
-    "Add H3 subheadings to business context section to break up analytical claims.",
-    "Ground every analytical paragraph in specific evidence from the compressed data — cite the exact headline, CTA label, H2 text, or meta description change being analyzed."
+    "In the business context section, add 'reportedly' before 'from $1M to $8M' to match the hedged language in the evidence, or remove the specific dollar figures and retain only the '8x' framing with attribution.",
+    "Replace 'most visitors had likely never searched before' with a hedged structural observation ('a visitor arriving without prior brand exposure may not recognise the term') — no frequency claim is supported by the evidence.",
+    "'Webflow appears to be actively defining' must be reframed as a structural observation: 'the CTA uses a term not yet common in search, which places it in demand-creation rather than demand-capture territory' — remove the intent attribution.",
+    "'Its removal means that reassurance no longer exists anywhere visitors can see it' must be softened: 'its removal means that reassurance is no longer visible above the fold' or 'no longer visible on the homepage as captured in the evidence.'",
+    "Soften 'the internal sign-off process may become shorter' — remove this sentence entirely or reframe as a conditional ('some enterprise buyers may already recognise category language, which can shorten evaluation cycles — though the evidence does not confirm this for Webflow specifically').",
+    "Add a hedging condition to 'That shift suggests Webflow is now writing for the buyer who approves the budget' — change to 'That shift may suggest the page is now written for a buyer accountable to revenue rather than one blocked by a technical constraint.'"
   ],
   "optionalImprovements": [
-    "Vary sentence rhythm in intro — currently heavy on long declarative sentences with similar structure.",
-    "Add H3 block analyzing the meta description shift from 'Build responsive websites in your browser' to 'Design, build, optimize, and rank in AI search' — this is major evidence not explored.",
-    "Add H3 block analyzing the page title shift from 'Responsive web design tool, CMS, and hosting platform' to 'The agentic web platform for modern businesses' — vocabulary register shift from product category to business positioning.",
-    "Break 'Market entry context' paragraph (currently 62 words) into two shorter blocks."
+    "The article has two H1-level headings at the top ('How Webflow rewrote its homepage over 6 years' and 'Webflow Homepage Teardown: How It Repositioned From Developer Tool to Growth Engine') — consolidate to one to avoid structural confusion.",
+    "The 'Founder test' in the messaging section ('Count the words in your H1...') is only loosely anchored to Webflow-specific evidence; consider replacing with a test derived directly from Webflow's observable headline word shift (capability words vs. outcome words as seen in the two actual headlines).",
+    "The repetition of the upmarket-shift thesis across the visual, messaging, CTA, and business-context sections is useful but could be tightened — each section restates the same conclusion ('the page now addresses enterprise buyers') without adding a new dimension of proof.",
+    "Consider adding a brief plain-language explanation of 'AEO' earlier in the article — it appears first in the CTA section heading before being defined, which may create friction for a cold reader.",
+    "The final runnable test in the persona-narrowing H3 ('highlight every line that reduces personal risk') is practical but generic; anchor it more tightly to Webflow by naming the specific removed phrases ('Free until you're ready to launch') as the diagnostic benchmark."
   ],
   "rerunRecommendations": [
-    "01-intro — remove causal claim and forward-looking promise; anchor opening to specific evidence",
-    "07-business-context — replace entire section with analysis anchored to compressed evidence only; remove all external facts"
+    "04-messaging-evolution — soften intent attributions and remove 'its removal means that reassurance no longer exists anywhere'",
+    "05-cta-navigation-evolution — reframe 'Webflow appears to be actively defining' and soften the 'Contact Sales queue' risk flag",
+    "07-business-context — add hedges to the $1M-to-$8M figure and remove the 'sign-off process may become shorter' conversion-outcome implication"
   ],
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.029058000000000028,
-  "generatedAt": "2026-06-12T08:22:12.414Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.0505199999999999,
+  "generatedAt": "2026-06-12T11:12:23.472Z",
   "repetitionWarnings": [
-    "The claim that the page 'filters for buyers, not builders' appears in both intro and business context section — this is an interpretation presented as conclusion in multiple places without visitor data to support it."
+    "The conclusion that 'the page now addresses enterprise buyers / CMOs rather than freelance designers' appears substantively in the visual-timeline section, the messaging section, the CTA section, and the business-context section — four of six analytical sections restate the same finding without adding new evidence dimensions.",
+    "The observation that removed sections ('Who uses Webflow', 'Free until you're ready to launch') signal a narrower audience is made in both the visual-timeline section and the persona-narrowing H3, with near-identical framing."
   ]
 }

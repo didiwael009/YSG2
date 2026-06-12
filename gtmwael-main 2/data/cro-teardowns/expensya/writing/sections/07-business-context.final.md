@@ -1,19 +1,15 @@
-## Why Expensya abandoned English and narrowed to France after the Medius acquisition
+## How the Medius acquisition and France's e-invoicing mandate rewrote Expensya's homepage logic
 
-The homepage shift wasn't gradual drift — it followed a specific acquisition and regulatory timeline.
+The page choices make sense once you see what happened to the company.
 
-### Market entry timing: French e-invoicing mandate
+### How the expense-tool market consolidated around Expensya
 
-Expensya's homepage switched to French-only in 2023, the same year Medius acquired it for over $100M. Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale. The timing suggests Expensya was repositioned to serve a regulatory moment rather than continue competing as an international SaaS product.
+By early 2021, Expensya had already signalled its direction: a reportedly $20M Series B and a publicly announced rebrand to '360° spend management' suggested the company was moving beyond pure expense reporting. The market was consolidating fast, with competitors like Ramp, Brex, and Spendesk bundling corporate cards and accounts payable into single platforms.
 
-### Product evolution: from software to embedded cards
+### What the Medius acquisition changed about Expensya's target buyer
 
-The March 2023 Swan partnership added embedded corporate cards before the acquisition closed. The homepage shifted from **"Automated spend management for all companies"** to **"Cartes de paiement & budgets"** as the lead section heading, pointing to product evolution from expense tracking software to integrated financial platform.
+In June 2023, Medius publicly announced its intent to acquire Expensya for a sum reportedly exceeding $100M, according to sources familiar with the deal, completing the transaction in July 2023. That deal placed Expensya inside a suite targeting mid-market CFOs — which is consistent with the homepage shift toward compliance language, payment card sections, and a demo-request funnel replacing self-serve trials.
 
-### Industry consolidation: expense tools absorbed into spend suites
+### Why France's e-invoicing mandate made compliance messaging urgent
 
-Standalone expense tools like Expensya were being acquired by AP automation platforms during this period, competing against all-in-one challengers like Ramp, Brex, and Spendesk. The French-only homepage and **"Réservez une démo"** CTA (replacing **"Free trial"**) are consistent with narrowing to a specific market where Medius could bundle AP and expense into a unified platform.
-
-### Quick test: does your homepage assume English-speaking international buyers?
-
-Visit your homepage. Count how many primary CTAs, headlines, and navigation items assume English-speaking visitors. If over 50%, check your analytics: what percentage of converting traffic comes from non-English markets? If you have strong brand presence in one geography but spread messaging across many, you may be diluting conversion by staying international when a focused market would convert better.
+Medius publicly cited the French e-invoicing mandate as acquisition rationale — which is consistent with the appearance of **"Fini le casse-tête administratif, place à la conformité"** as a section heading on Expensya's homepage. If your highest-traffic market has an active compliance mandate, count how many times 'compliance' or its local equivalent appears above the fold on your own homepage.

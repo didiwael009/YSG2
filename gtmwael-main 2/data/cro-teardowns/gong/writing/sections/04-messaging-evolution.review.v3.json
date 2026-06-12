@@ -1,0 +1,46 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "The ## section heading is clever-only: 'How Gong's H1 shifted from category noun to outcome verb — and what that reveals about its target buyer' contains the company name but lacks searchable topic terms like 'messaging', 'positioning', or 'homepage'.",
+    "The meta description paragraph runs approximately 95 words — well over the 60-word cap (scannability hard cap check: just under 90, so hard cap not triggered, but still a violation).",
+    "The phrase 'multimodal revenue signal processing' appears in the quoted meta description without a plain-language definition anywhere in the section — the draft quotes the jargon but never explains it to the founder audience.",
+    "The third analytical paragraph (under '### What Gong's messaging shift signals about its target buyer') contains 3 distinct ideas: (1) section heading contrast, (2) buyer profile shift, (3) named buyer roles — violating the 2-idea-per-paragraph rule.",
+    "The finding in the third H3 block does not appear in the first two sentences — the paragraph opens with section heading evidence before stating the buyer-targeting finding, burying the key insight.",
+    "The opening of section 01 H3 is a template default: 'Before: X. After: Y.' — the evidence supported a more interesting entry (e.g. the paradox that Gong dropped its own category name from its headline after years of building that category).",
+    "The word 'may' appears as a hedge in '...the page may now be written for buyers...' — acceptable, but the sentence that follows also uses 'possibly', stacking two hedges in the same clause, making it feel evasive rather than precise.",
+    "No paragraph explicitly addresses the 'OS' framing from the page title change — the evidence flags this as a critical repositioning signal ('operating system layer') but the draft only mentions it in passing within the meta description block.",
+    "Word count is approximately 370 words — within the 200–380 range, passing narrowly.",
+    "The founder test at the end is reasonably specific but is attached to the third H3 block rather than standing as its own H3, making it easy to miss on skim."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## heading to include at least one searchable topic term alongside the company name — e.g. '## How Gong's Homepage Messaging Shifted From Category Label to Revenue AI OS'.",
+    "Break the meta description paragraph into two: one paragraph quoting and contrasting the meta descriptions (under 60 words), and a separate paragraph for the page title change (under 60 words). Each should state its finding in the first sentence.",
+    "Add a one-sentence plain-language gloss immediately after the first appearance of 'multimodal revenue signal processing' — e.g. 'processing signals from calls, emails, and CRM data simultaneously'.",
+    "Split the third H3 paragraph into two: first paragraph covers the section-heading contrast (finding + explanation), second paragraph covers the buyer-profile implication (CRO/RevOps vs VP of Sales). Each paragraph should open with its finding.",
+    "Rewrite the opening of the first H3 block to lead with the most interesting finding — the paradox that Gong dropped its own category name after years of building that category — rather than a plain Before/After template.",
+    "Add a dedicated sentence or short paragraph explaining the 'OS' (operating system) framing in the page title section — this is identified in evidence as the strategic linchpin and the draft undersells it."
+  ],
+  "riskFlags": [
+    "The claim 'That shift is consistent with a page that no longer needs to explain what Gong does' is an inference not directly traceable to evidence — it should be hedged with 'may suggest' or 'is consistent with the interpretation that'.",
+    "The statement 'your messaging may still be written for a buyer your product has moved past' in the founder test implies a causal outcome without a condition — needs a condition clause, e.g. 'if your ICP has shifted but your homepage copy has not'.",
+    "Quoting 'multimodal revenue signal processing' and 'specialized AI agents' from the meta description without flagging that these are Gong's own marketing claims (not independently verified capabilities) could mislead readers about product reality."
+  ],
+  "seoNotes": [
+    "The ## heading misses the primary keyword 'Gong homepage teardown' — adding 'homepage' or 'messaging' to the heading would improve crawlability for the target keyword cluster.",
+    "The secondary keyword 'Gong Revenue AI OS positioning strategy' is naturally served by the meta description analysis — good.",
+    "The phrase 'Revenue AI OS' appears in bold quotes in context, which is positive for semantic relevance to searchers studying the Gong repositioning.",
+    "The founder test at the end creates dwell-time engagement but is not formatted in a way that Google's featured snippet algorithm can easily extract — consider a short bulleted action list for the test."
+  ],
+  "rewriteInstruction": "Fix the ## heading first — insert 'homepage messaging' or 'positioning' so it is searchable, not just clever. Then restructure the meta description block: split it into two paragraphs, each under 60 words, each opening with its finding. Add a single plain-language gloss for 'multimodal revenue signal processing' immediately after the quote. Rewrite the first H3 opening to lead with the paradox (Gong erased its own category name from its headline after years of owning that category) — this is the most interesting entry point the evidence offers and the draft ignores it in favour of a template Before/After. Split the third analytical paragraph into two: (1) section heading contrast as evidence, (2) buyer-profile implication. Make sure each paragraph's finding lands in sentence one or two, not at the end. Finally, add a short sentence explaining what 'OS' framing signals — the evidence explicitly flags this as the strategic linchpin and the draft buries it inside the meta description discussion.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 14,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

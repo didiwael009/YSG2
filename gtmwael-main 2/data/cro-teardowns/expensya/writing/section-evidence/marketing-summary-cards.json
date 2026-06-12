@@ -1,22 +1,22 @@
 [
   {
-    "label": "Market scope",
-    "value": "Multi-country → France-only",
-    "note": "Entire homepage switched from English to French, removing international navigation"
+    "label": "Positioning shift",
+    "value": "Automation breadth → Compliance depth",
+    "note": "Section headings dropped 'every company' and 'integrations' in favour of payment cards, expense policies, and conformité"
   },
   {
-    "label": "Product positioning",
-    "value": "Expense software → Card + software bundle",
-    "note": "Added 'Cartes de paiement & budgets' as first section heading after Swan partnership"
+    "label": "Target buyer",
+    "value": "All-size self-serve → French CFO",
+    "note": "Small/Mid/Large nav tiers removed; meta copy now explicitly addresses 'équipes financières modernes'"
   },
   {
-    "label": "Buyer persona",
-    "value": "Any company size → Finance teams",
-    "note": "Removed Small/Mid/Large nav; added 'équipes financières modernes' in meta description"
+    "label": "Sales motion",
+    "value": "Free trial → Demo + sales call",
+    "note": "Free trial CTA eliminated entirely; replaced with 'Réservez une démo' and 'Contacter un commercial' in French"
   },
   {
-    "label": "Acquisition model",
-    "value": "Self-serve trial → Demo-gated sales",
-    "note": "Replaced 'Free trial' CTA with 'Réservez une démo' post-acquisition"
+    "label": "Language strategy",
+    "value": "English-primary → French-first, English toggle",
+    "note": "Homepage language switched to French while a language toggle preserves English access for international optionality"
   }
 ]

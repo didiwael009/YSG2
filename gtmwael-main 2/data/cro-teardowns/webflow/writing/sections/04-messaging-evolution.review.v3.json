@@ -1,0 +1,42 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section 3 (messaging shift / cold visitor paragraph) contains two distinct ideas tracked simultaneously — the 'cold visitor clarity problem' and the 'meta description safety valve' — in adjacent paragraphs that belong to the same H3 block, violating the single-idea-per-paragraph density rule.",
+    "The page title H3 block paragraph ('The page title confirms the direction...') exceeds 60 words — approximate count is 72 words — triggering a scannability penalty.",
+    "The meta description H3 block contains two analytical paragraphs (one on meta, one on page title) under a single H3, but the page title is a distinct evidence element that arguably warrants its own H3 or a tighter merge — the current structure buries the page title finding.",
+    "The closing sentence of the third H3 block ('That suggests the product explanation has not disappeared — only moved out of the headline and into supporting copy further down the page') is a qualified observation but leans abstract and does not deliver a concrete implication or action for the founder — it trails off rather than landing.",
+    "The H3 heading 'What Webflow's messaging shift signals about who the page is now written for' is slightly redundant with the section-level heading and does not surface the specific finding (cold visitor clarity risk) that its body actually covers — the heading undersells the content.",
+    "No explicit plain-language definition is provided for 'agentic web platform' at first use — the term is quoted verbatim from the evidence and contextualised, but not directly defined for a founder-reader who may not know what 'agentic' means in a software context.",
+    "'enterprise software marketing' in paragraph 3 is a moderately abstract noun stack and could read as strategist-to-strategist without a grounding example.",
+    "The founder test is reasonably specific but could be more precisely anchored to Webflow's own evidence — e.g., referencing 'Make your website a growth engine' and 'agentic web platform' by name as the test inputs, which would make the test runnable against THIS company's page rather than feeling slightly generic."
+  ],
+  "requiredFixes": [
+    "Split the third H3 block into two paragraphs: one covering the cold visitor clarity risk (the 'growth engine' / 'agentic' problem), and a separate paragraph covering the meta description safety valve observation. Each paragraph must open with its finding in the first sentence.",
+    "Trim the page title paragraph (currently ~72 words) to under 60 words — remove the explanatory clause about enterprise procurement shortcutting or fold it into the H3 heading itself.",
+    "Add a one-sentence plain-language definition of 'agentic' the first time it appears, e.g., 'agentic — meaning AI-driven and capable of taking actions autonomously — web platform'.",
+    "Rewrite the closing sentence of the third H3 to be concrete and actionable rather than observational: instead of 'That suggests the product explanation has not disappeared', name the specific implication for a founder considering the same move (e.g., if you push capability language out of your headline, confirm it appears in the first 100 words of body copy — not buried in a footer).",
+    "Sharpen the founder test to reference Webflow's specific headline and meta description by name: 'Open Webflow's live homepage and count outcome words (growth, rank, competitive edge) versus capability words (design, build, CMS) in the H1 and meta description — then rerun the same count on your own homepage and note the ratio.'"
+  ],
+  "riskFlags": [
+    "'the internal sign-off process may become shorter if buyers already recognise the name' — this is a causal claim without a stated condition attached; it should be hedged with 'if buyers in your category are already familiar with the coined label' or similar.",
+    "'A visitor who has never heard of Webflow may leave without knowing what they would actually use it to do' — this is a plausible inference but is presented as a near-certainty; it should be hedged with 'may' or 'risks leaving' rather than stated flatly."
+  ],
+  "seoNotes": [
+    "The ## section heading contains 'Webflow', 'homepage', and 'messaging' — it is highly searchable and well-formed for the primary keyword cluster.",
+    "All three H3 headings contain 'Webflow' and a topic term ('headline', 'meta description', 'messaging shift') — good for internal anchor text and featured snippet eligibility.",
+    "The verbatim use of 'agentic web platform' and 'Make your website a growth engine' in bold quotes creates natural long-tail keyword capture for searchers investigating Webflow's current positioning language.",
+    "The section does not mention the article's primary keyword ('Webflow homepage teardown') explicitly — consider one natural inclusion in the opening paragraph or H3 body copy to reinforce topical relevance."
+  ],
+  "rewriteInstruction": "Keep the three-H3 structure but make two targeted fixes before anything else. First, split the third H3 body into two paragraphs: paragraph one covers the cold visitor clarity risk (lead with the finding — 'cold visitors may not know what Webflow does from headline alone — here is why'), paragraph two covers the meta description counterbalance (lead with 'the meta description still names CMS and hosting, which means capability language has moved down the page, not off it'). Second, trim the page title paragraph to under 60 words by cutting the enterprise procurement clause or condensing it to one short sentence. Add a one-sentence plain-language gloss for 'agentic' on first use. Replace the closing observational sentence of H3 three with a concrete implication (name what a founder should check on their own page). Tighten the founder test so it names Webflow's specific phrases as the reference point, making the test feel anchored to this teardown rather than a generic homepage audit prompt. Do not add new claims — all content must remain traceable to the provided evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

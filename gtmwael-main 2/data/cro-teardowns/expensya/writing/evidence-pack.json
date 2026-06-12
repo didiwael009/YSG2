@@ -1,14 +1,14 @@
 {
   "slug": "expensya",
   "companyName": "Expensya",
-  "companyUrl": "https://www.expensya.com/",
+  "companyUrl": "https://www.expensya.com/en/",
   "fromMonth": "2020-10",
   "toMonth": "current",
   "fromLabel": "Oct 2020",
   "toLabel": "Jun 2026",
   "generatedAt": "2026-06-11T16:45:37.978Z",
   "warnings": [
-    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+    "Only 2 snapshots available \u2014 no mid-transition analysis block will be generated."
   ],
   "snapshots": [
     {
@@ -35,20 +35,20 @@
     "metaDescChanges": 1,
     "titleChanges": 1,
     "h2Added": [
-      "Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.",
+      "Am\u00e9liorez la conformit\u00e9. R\u00e9duisez les risques. Obtenez une visibilit\u00e9 compl\u00e8te sur les d\u00e9penses.",
       "Cartes de paiement & budgets",
-      "Politiques de dépenses",
+      "Politiques de d\u00e9penses",
       "Multi-devises et multi-pays",
       "Quel est le lien entre technologie, UX et frais professionnels ?",
-      "Comment gérez-vous vos notes de frais ?",
-      "Fini le casse-tête administratif, place à la conformité.",
-      "Découvrez les cartes de paiement d'Expensya.",
-      "Détendez-vous, car tout fonctionne.",
-      "Découvrez comment l'IA optimise les processus de dépenses et voyages professionnels.",
+      "Comment g\u00e9rez-vous vos notes de frais ?",
+      "Fini le casse-t\u00eate administratif, place \u00e0 la conformit\u00e9.",
+      "D\u00e9couvrez les cartes de paiement d'Expensya.",
+      "D\u00e9tendez-vous, car tout fonctionne.",
+      "D\u00e9couvrez comment l'IA optimise les processus de d\u00e9penses et voyages professionnels.",
       "Laissez-nous vous aider.",
-      "Découvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs dépenses.",
-      "Des ressources sur la gestion des dépenses pour vous aider à vous lancer.",
-      "Prêt à découvrir une meilleure façon de gérer les dépenses professionnelles ?"
+      "D\u00e9couvrez comment ces entreprises s'appuient sur Expensya pour simplifier la gestion de leurs d\u00e9penses.",
+      "Des ressources sur la gestion des d\u00e9penses pour vous aider \u00e0 vous lancer.",
+      "Pr\u00eat \u00e0 d\u00e9couvrir une meilleure fa\u00e7on de g\u00e9rer les d\u00e9penses professionnelles ?"
     ],
     "h2Removed": [
       "Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams",
@@ -61,7 +61,7 @@
     ],
     "ctaAdded": [
       "Learn more about this provider",
-      "Réservez une démo",
+      "R\u00e9servez une d\u00e9mo",
       "Show details",
       "Necessary 21",
       "880-tzc-395.mktoweb.com 1",
@@ -100,7 +100,7 @@
     "headlines": [
       {
         "from": "Automated spend management for all companies",
-        "to": "Voici à quoi devrait ressembler la gestion des dépenses.",
+        "to": "Voici \u00e0 quoi devrait ressembler la gestion des d\u00e9penses.",
         "fromMonth": "2020-10",
         "toMonth": "current"
       }
@@ -108,7 +108,7 @@
     "metaDescs": [
       {
         "from": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
-        "to": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+        "to": "Remplacez le stress et les frictions li\u00e9s \u00e0 la gestion des d\u00e9penses et des notes de frais des employ\u00e9s par la clart\u00e9 et la simplicit\u00e9 : voici Expensya, le logiciel intelligent de gestion des d\u00e9penses pour les \u00e9quipes financi\u00e8res modernes.",
         "fromMonth": "2020-10",
         "toMonth": "current"
       }

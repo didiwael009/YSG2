@@ -1,0 +1,45 @@
+{
+  "score": 84,
+  "pass": false,
+  "issues": [
+    "Section heading contains the company name and 'CTA' — passes searchability — but 'shifted its homepage CTA to a demo-first sales motion' makes a mild causation claim that is not fully hedged.",
+    "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — this is an inference presented as a finding; it should be flagged as speculative.",
+    "The phrase 'sales motion — the sequence of steps a company uses to move a prospect toward a purchase' defines the term inline, which is good, but the term 'sales motion' is then used a second time in the Founder Takeaway without re-definition, creating a minor plain-language risk.",
+    "The nav H3 body paragraph 'Both point toward a visitor who arrives already speaking the language — literally and commercially — that Expensya now addresses' is abstract and metaphorical as a closing sentence rather than concrete or actionable — penalisable under plainLanguage readability rules.",
+    "Word count is approximately 310 words — within the 180–320 band, but tight.",
+    "The nav H3 block contains a closing sentence ('Both point toward a visitor who arrives already speaking the language — literally and commercially — that Expensya now addresses') that is abstract rather than concrete — violates the FINDING→EXPLANATION→EXAMPLE→IMPLICATION formula's final step.",
+    "The nav H3 block does not deliver its practical takeaway in the first two sentences — the first sentence is a data observation ('Eight navigation items were removed and eight added'), and the takeaway ('consistent with the homepage now being built primarily for a French-language market') arrives in the third sentence.",
+    "No paragraph exceeds 60 words on inspection, so no scannability hard cap fires — confirmed safe.",
+    "'Learn more about this provider' is listed in ctaAdded as 'Learn more about this provider' — this appears verbatim in the evidence, so no penalty.",
+    "CTA artefacts (Necessary 21, Cloudflare 12, etc.) are correctly identified and explained — this is a strength.",
+    "The closing founder test is specific and anchored to Expensya's named CTAs — passes founderTakeaway check."
+  ],
+  "requiredFixes": [
+    "In the nav H3 block, move the takeaway ('the homepage is now built primarily for a French-language market, not a broader international audience') into the first sentence. Currently it arrives third.",
+    "Replace the abstract closing sentence of the nav H3 block ('Both point toward a visitor who arrives already speaking the language — literally and commercially — that Expensya now addresses') with a concrete, actionable implication — for example: 'If your product serves one primary market, aligning your navigation language and your CTAs to that market removes a subtle friction point for every visitor who lands.'",
+    "Hedge the inference in the CTA H3 block: change 'This suggests Expensya now expects a visitor who is ready to commit time' to 'This is consistent with Expensya targeting a visitor who is ready to commit time' — making clear it is an inference from the evidence, not a stated fact.",
+    "The second use of 'sales motion' in the Founder Takeaway has no definition. Either replace it with plain language ('the step-by-step path you use to move someone toward a purchase') or drop the term and use that plain version directly."
+  ],
+  "riskFlags": [
+    "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — causal inference not directly supported by evidence; should be framed as 'consistent with' not 'suggests [intent]'.",
+    "'That pattern is consistent with the homepage now being built primarily for a French-language market' — reasonable inference but not directly confirmed by evidence; hedge is present ('consistent with') which is acceptable, but writer should not strengthen this claim in revision.",
+    "The ## heading phrase 'shifted its homepage CTA to a demo-first sales motion' implies a strategic decision was made — this is not confirmed by evidence and borders on an outcome claim; consider softening to 'replaced its self-serve CTAs with a demo request'."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Expensya', 'homepage', and 'CTA' — strong for the primary keyword 'Expensya homepage teardown'.",
+    "Both H3 headings contain 'Expensya' and topic terms ('CTA changes', 'navigation rebuild') — good for long-tail queries around 'Expensya CTA strategy' and 'Expensya navigation changes'.",
+    "French-language CTAs and H2s quoted verbatim ('Réservez une démo') may help surface the article for bilingual queries about Expensya's French market pivot.",
+    "The Founder Takeaway section uses plain, question-based phrasing that mirrors how founders search — this is a natural-language SEO asset."
+  ],
+  "rewriteInstruction": "Make three targeted fixes without restructuring the section. First, open the nav H3 block with its takeaway sentence — state immediately that the rebuild signals a French-language market focus, then give the data as evidence. Second, replace the abstract closing sentence of that H3 block with a concrete implication a founder can act on (e.g. what it means if your nav language and your target market are misaligned). Third, in the Founder Takeaway paragraph, remove the second bare use of 'sales motion' and replace it with its plain-language equivalent. No other changes needed — the CTA H3 block, the artefact explanation, the bold quoting, and the founder test are all strong.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

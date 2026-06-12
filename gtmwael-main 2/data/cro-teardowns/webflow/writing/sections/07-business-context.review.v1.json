@@ -2,50 +2,52 @@
   "score": 62,
   "pass": false,
   "issues": [
-    "Section is missing all required H3 subheadings — analytical sections must have H3 sub-blocks (hard cap: 75)",
-    "Paragraph 1 is 68 words, exceeds 60-word limit (-4)",
-    "Paragraph 2 is 64 words, exceeds 60-word limit (-4)",
-    "Paragraph 3 is 62 words, exceeds 60-word limit (-4)",
-    "Total word count ~194 words when goal states 'Three short paragraphs' each ≤60 words (target ~180 max)",
-    "The phrase 'viral mechanics' is abstract jargon not defined or explained",
-    "The phrase 'revenue concentration enterprise buyers require' is strategist-to-strategist language, not plain founder language",
-    "Final paragraph could appear word-for-word in a Notion, Airtable, or Wix teardown — not specific to Webflow",
-    "No founder takeaway or runnable test provided anywhere in the section",
-    "H3 sub-blocks are completely absent, so no takeaway can be delivered in the required location (first two sentences of each H3)",
-    "Opening sentence is factual but template-default — does not reflect what makes this story interesting (the conflict between viral designer community and enterprise revenue pressure)",
-    "Section heading 'How Webflow chose enterprise infrastructure over viral showcase' contains no searchable terms (no 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion') — clever-only heading (-5)"
+    "H3 subheadings are entirely absent — this is an analytical section and the rubric requires H3 sub-blocks to be present. Hard cap of 75 on total score applies, and scannability is capped.",
+    "Paragraph 3 contains a generic SaaS comparison ('Other SaaS companies — HubSpot, Contentful, Optimizely — made near-identical upmarket moves') that has zero grounding in the provided evidence and could appear in any upmarket-pivot teardown. This fires the specificity penalty and the evidence-accuracy penalty.",
+    "The claim 'a homepage can only serve one buyer clearly' is an unsupported causal/universal assertion not traceable to the evidence.",
+    "Paragraph 3 exceeds 60 words (approximately 72 words), violating the section goal and scannability rules.",
+    "The section goal specifies three short paragraphs ≤60 words each — paragraph 3 fails this constraint.",
+    "No H3 subheadings are present anywhere in the draft. This triggers the hard cap: scannability capped at 5, total capped at 75.",
+    "Founder takeaway is missing — no H3 sub-blocks means no early-sentence takeaway delivery, and no specific runnable test is provided.",
+    "The closing sentence ('Webflow appears to have chosen') is abstract and offers no concrete implication or actionable signal for the founder.",
+    "Word count is approximately 215 words, exceeding the 120–200 word ceiling stated in the section goal.",
+    "The phrase 'enterprise revenue still a fraction of total ARR' — 'still a fraction' is a vague characterisation not directly supported by the evidence, which only states enterprise revenue grew 8x from $1M to $8M in 2021.",
+    "'self-serve growth plateaued' is stated as a fact for Webflow but is not directly evidenced in the provided data.",
+    "HubSpot, Contentful, and Optimizely are named as comparators — none appear in the evidence. This is an invented comparative claim."
   ],
   "requiredFixes": [
-    "Add H3 subheadings to structure the section — suggested structure: '### Market entry context', '### Product and competitive evolution', '### Industry shift'",
-    "Reduce paragraph 1 from 68 words to ≤60 words (cut 8+ words)",
-    "Reduce paragraph 2 from 64 words to ≤60 words (cut 4+ words)",
-    "Reduce paragraph 3 from 62 words to ≤60 words (cut 2+ words)",
-    "Replace paragraph 3 entirely — it is generic SaaS commentary that could appear in any teardown. Anchor to Webflow-specific evidence (e.g., the 2024 layoffs, the Cloudflare partnership, or the shift from showcase CTAs to 'Contact Sales')",
-    "Revise section heading to include 'homepage' or 'positioning' — e.g., 'Why Webflow's homepage shifted from designer tool to enterprise platform'",
-    "Add a final H3 sub-block with a specific, runnable test anchored to this company's evidence (e.g., '### Five-minute test: Count how many of your homepage CTAs require zero commitment vs. sales contact')",
-    "Define or eliminate 'viral mechanics' — use plain language like 'community-driven growth through designer showcases'",
-    "Replace 'revenue concentration enterprise buyers require' with plain language like 'the predictable contract sizes enterprise deals provide'"
+    "Add three H3 subheadings — one per paragraph — each containing the company name or a topic term (e.g., 'Webflow homepage', 'positioning', 'messaging'). Without H3s this section fails the analytical section requirement.",
+    "Delete the entire HubSpot/Contentful/Optimizely sentence — it is not traceable to any evidence provided and makes the paragraph read as generic SaaS commentary.",
+    "Trim paragraph 3 to under 60 words by removing the generic comparator sentence and tightening the closing claim.",
+    "Replace the closing abstract sentence ('Webflow appears to have chosen') with a concrete, specific implication tied to Webflow's own evidence — for example, referencing the demotion of 'Get started — it's free' to secondary CTA as the homepage signal of that choice.",
+    "Add a specific runnable founder test in the final H3 block — for example: 'Check your own page title: does it describe what your product does, or does it claim a category? If it still lists features, your homepage may be optimised for a buyer you have already outgrown.'",
+    "Hedge or remove 'self-serve growth plateaued' — the evidence does not confirm this for Webflow directly. If retained, add 'reportedly' or attribute to a public source.",
+    "Cut total word count to within 120–200 words. Current draft is approximately 215 words.",
+    "The claim 'a homepage can only serve one buyer clearly' must be either removed or framed as an observation ('Webflow's changes suggest a deliberate trade-off') rather than a universal rule."
   ],
   "riskFlags": [
-    "The sentence 'The homepage shift from Break the code barrier to Make your website a growth engine is consistent with this upmarket move' implies causation (the funding required the homepage change) when the evidence only shows temporal correlation — add 'if Webflow prioritized enterprise buyers' as a condition",
-    "The phrase 'signals a deliberate repositioning' is a causal interpretation not directly supported by evidence — Webflow called it a WXP, but whether that required the homepage changes is inferred, not stated",
-    "The claim 'Framer captured the designer community Webflow originally owned' is not supported by the provided evidence — no Framer data is included in the business-context-research",
-    "The final sentence 'viral mechanics that built the brand often conflict with the revenue concentration enterprise buyers require' is a general SaaS principle stated as fact, not anchored to Webflow-specific evidence"
+    "'Other SaaS companies — HubSpot, Contentful, Optimizely — made near-identical upmarket moves when self-serve growth plateaued' — fully unsupported by evidence; these companies do not appear anywhere in the provided data.",
+    "'A homepage can only serve one buyer clearly' — stated as universal fact; no evidence supports this causal claim.",
+    "'Self-serve growth plateaued' — applied to Webflow as a stated fact but not directly evidenced; the evidence only shows enterprise revenue grew, not that self-serve declined or stalled.",
+    "'Enterprise revenue still a fraction of total ARR' — the evidence says enterprise revenue grew 8x to $8M in 2021 but does not characterise it as 'still a fraction' at the time of the homepage changes being discussed.",
+    "The Intellimize acquisition is described as 'reportedly framed as a move toward becoming a Website Experience Platform' — this is correctly hedged and consistent with evidence.",
+    "Series B and Series C figures are correctly hedged with 'reportedly' — these pass the financial figure check."
   ],
   "seoNotes": [
-    "Section heading contains no searchable terms — 'Webflow homepage', 'Webflow positioning', or 'Webflow enterprise shift' would all rank better than 'viral showcase'",
-    "The word 'homepage' appears only once in the entire section (in the phrase 'homepage shift'), which is low density for a section specifically about homepage evolution",
-    "The company name 'Webflow' appears 5 times in 194 words (~2.6% density), which is acceptable but could be higher for a company-focused teardown section"
+    "The ## heading is strong for SEO — it contains the company name (Webflow), named events (Series B, Intellimize acquisition, layoff), and is specific enough to attract informational search queries about Webflow's business history.",
+    "The page title quote (**'Webflow: The agentic web platform for modern businesses'**) is bolded and in the correct format — good for featured snippet eligibility on Webflow positioning queries.",
+    "The section does not use the primary keyword 'Webflow homepage teardown' explicitly, which is a missed internal SEO linking opportunity.",
+    "Including named events (Series B, Intellimize, 2024 layoffs) improves topical authority signals for queries like 'Webflow enterprise strategy' or 'Webflow positioning shift'."
   ],
-  "rewriteInstruction": "This section completely fails the structural requirement: analytical sections must have H3 subheadings, and this has none. Add three H3 sub-blocks as specified in the SECTION GOAL. Cut each paragraph to exactly 60 words or fewer — currently all three exceed the limit. Replace paragraph 3 entirely: it is generic SaaS market commentary that could appear in any teardown. Instead, anchor to Webflow-specific evidence like the 2024 layoffs redirecting resources to AI, the removal of showcase CTAs, or the Cloudflare infrastructure partnership. Add a final H3 with a specific five-minute test the founder can run, anchored to Webflow's evidence (e.g., count primary CTAs that require sales contact vs. zero commitment). Fix the section heading to include 'homepage' or 'positioning' so it is searchable, not just clever. Remove all causal claims not conditioned on 'if Webflow prioritized X' — the evidence shows what changed, not why. Eliminate abstract jargon like 'viral mechanics' and 'revenue concentration' — use plain language a founder would use to explain this to a colleague. Open with the conflict (designer community vs. enterprise revenue pressure) rather than a funding fact, because that conflict is what makes this story worth reading.",
+  "rewriteInstruction": "Restructure this section into three H3-headed blocks, one paragraph each, all under 60 words. Each H3 must contain 'Webflow' plus a topic term. Open each paragraph with the finding first. Delete the HubSpot/Contentful/Optimizely sentence entirely — it is not in the evidence and makes the section generic. Remove or reframe 'self-serve growth plateaued' as it is unconfirmed. Replace the abstract closing sentence with a concrete, evidence-anchored implication — point to a specific change (e.g., 'Contact Sales' replacing 'Get started — it's free' as primary CTA) rather than a general conclusion. End the final H3 block with a specific founder test tied to Webflow's own evidence: for example, ask the reader to check whether their own page title describes features or claims a category. Keep all financial figures hedged with 'reportedly'. Total word count must land between 120 and 200 words.",
   "dimensionScores": {
-    "evidenceAccuracy": 18,
+    "evidenceAccuracy": 10,
     "specificity": 8,
-    "plainLanguage": 10,
-    "scannability": 0,
-    "searchableHeadings": 5,
-    "rhythmAndOpening": 6,
-    "founderTakeaway": 0
+    "plainLanguage": 15,
+    "scannability": 5,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
   },
   "effectivePassThreshold": 85
 }

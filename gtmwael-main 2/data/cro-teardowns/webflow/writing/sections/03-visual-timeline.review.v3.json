@@ -1,0 +1,47 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section heading says '2020–2025' but evidence covers Jan 2020 to Jun 2026 — year is wrong and not traceable to evidence.",
+    "H3 heading 'The shift — from...' is missing a searchable term (no company name, no topic word like 'homepage', 'messaging', or 'CTA') and is partly clever-only.",
+    "Second H3 block paragraph runs approximately 75 words — exceeds the 60-word cap.",
+    "Third H3 block paragraph runs approximately 65 words — exceeds the 60-word cap.",
+    "Second H3 block does not deliver its takeaway in the first two sentences — it opens with a finding about the headline but the so-what (who the page is now written for) arrives late.",
+    "The phrase 'signals a shift in who the page is written for' in H3-2 is abstract; the implication is not made concrete or actionable until later in the paragraph.",
+    "Third H3 block opens with 'The current page looks substantially different, and the gap matters for any SaaS founder benchmarking their own messaging' — this is generic SaaS commentary that could appear in any teardown.",
+    "The meta description quote in H3-2 is partial: the draft quotes 'Discover the professional website platform built for your business' but the full evidence reads 'Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.' — selective truncation without ellipsis.",
+    "No explicit word count issue flagged but section is approximately 310 words — within range but close to ceiling.",
+    "The opening of H3-2 ('The headline change is the clearest marker of what moved') is a reasonable entry but does not exploit the most interesting finding — that removing a technical pain-point headline and replacing it with a business-outcome headline implies a new target reader entirely."
+  ],
+  "requiredFixes": [
+    "Correct '2020–2025' in the ## heading to '2020–2026' to match the evidence (Jan 2020 to Jun 2026).",
+    "Rename H3-2 to include a searchable term — e.g. 'Webflow homepage headline shift: from product frustration to business outcome'.",
+    "Cut H3-2 paragraph to under 60 words by removing the abstract mid-sentence ('it signals a shift in who the page is written for') and replacing it with a one-line concrete implication.",
+    "Cut H3-3 paragraph to under 60 words; remove the generic SaaS sentence ('the gap matters for any SaaS founder benchmarking their own messaging') and anchor the opening to Webflow-specific evidence instead.",
+    "Move the practical takeaway in H3-2 to the first sentence: state clearly and immediately that the headline swap signals a new target reader, then explain why.",
+    "Fix the truncated meta description quote — either quote the full before text or add an ellipsis to signal truncation: **'...Discover the professional website platform built for your business'**.",
+    "Replace the abstract closing of H3-2 ('no longer addresses someone in the early stages of evaluating whether the product fits their skill level') with a concrete implication — e.g. name the reader type who is now excluded and who is now addressed."
+  ],
+  "riskFlags": [
+    "'it signals a shift in who the page is written for' — causal framing without a stated condition; the evidence shows a headline change, not confirmed intent.",
+    "'The new section heading no longer addresses someone in the early stages of evaluating...' — this is an interpretation of audience targeting not directly traceable to the evidence; needs a hedging condition.",
+    "'adding AI search positioning where the original named none' — accurately traceable to evidence, low risk, but phrasing implies strategy intent; acceptable if kept hedged."
+  ],
+  "seoNotes": [
+    "## heading contains company name ('Webflow') and topic terms ('homepage', 'enterprise growth platform') — good for primary keyword targeting.",
+    "Primary keyword 'Webflow homepage teardown' does not appear verbatim in any H3 — consider adding it to at least one H3 for long-tail coverage.",
+    "The quoted page title 'Webflow: The agentic web platform for modern businesses' contains 'agentic' — a rising search term in the platform category; good specificity for topical authority.",
+    "The year range '2020–2025' in the current heading is a factual error that could hurt credibility with search readers who check dates."
+  ],
+  "rewriteInstruction": "Fix the ## heading year to 2026. Rename H3-2 to include 'Webflow homepage' and a topic term. In H3-2, open with the concrete finding first — the headline swap implies a new target reader — then explain the before/after in one sentence each, then give the implication in one concrete sentence. Cut both H3-2 and H3-3 paragraphs to under 60 words each by removing abstract framing and the generic SaaS-founder sentence in H3-3. Replace that generic opener in H3-3 with a Webflow-specific observation — e.g. that 'Design', 'Build', 'Launch' implied a solo builder audience, while 'high-performing brands' and 'agentic web marketing platform' imply a marketing team audience. Fix the truncated meta description quote with an ellipsis. Throughout, ensure every paragraph follows FINDING → EXPLANATION → EXAMPLE → IMPLICATION and that the finding lands in sentence one or two.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 12,
+    "plainLanguage": 17,
+    "scannability": 9,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

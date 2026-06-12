@@ -1,43 +1,40 @@
 {
-  "score": 78,
+  "score": 81,
   "pass": false,
   "issues": [
-    "Heading is clever-only with no searchable terms — lacks 'homepage', 'messaging', 'positioning', 'CTA', or 'conversion'",
-    "Opening sentence uses 'stopped explaining what it does and started assuming you already know' — this is an outcome claim about buyer knowledge/behavior without supporting evidence (no survey data, no search volume data, no support ticket analysis)",
-    "The phrase 'assumes the category is settled' is a strategic inference about Gong's intentions, not traceable to the evidence provided",
-    "The phrase 'even sharper' implies a comparative evaluation of strategic intensity that is not supported by the evidence",
-    "Final sentence is 113 words — exceeds the 90-word cap for intro paragraphs",
-    "The draft uses 'category ownership' concept without plain-language definition (implicit in 'invented' and 'settled')",
-    "The word count is approximately 145 words — significantly over the 55–90 word target range",
-    "The phrase 'stopped teaching a category your buyers already understand' makes an unsupported claim about what the reader's buyers understand"
+    "WORD COUNT VIOLATION: The single paragraph is approximately 110 words, exceeding the 90-word hard cap for intro sections and the 55–90 word target range. This triggers the scannability hard cap (paragraph >90 words → scannability capped at 5).",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'It signals a deliberate move from explaining a category to claiming infrastructure ownership' — the word 'deliberate' asserts confirmed intent. Evidence notes 'This change can be read as a deliberate update' and 'No confirmed strategy is implied.' The draft removes that hedge.",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'copying it will cost you the visitors who still need convincing' — this is an outcome prediction without a condition attached. Should be conditional: 'if [condition], copying it risks losing visitors who still need convincing.'",
+    "SECTION GOAL PARTIALLY MISSED: The goal requires naming the company, the period, and the 'single biggest shift' in the first sentence. The first sentence names the company and implies a shift but does not state the period (Jan 2020 to Jun 2026). The period appears nowhere in the draft.",
+    "EXPERT TERM WITHOUT DEFINITION: 'infrastructure ownership' is used without a plain-language explanation. Readers unfamiliar with platform-of-record strategy will not know what this means in practical terms.",
+    "BOLD QUOTE FORMAT: All verbatim quotes are correctly in bold — no violation here."
   ],
   "requiredFixes": [
-    "Rewrite the ## heading to include 'Gong homepage' or 'Gong homepage teardown' plus a topic term ('positioning', 'messaging'). Example: 'Gong Homepage Teardown: Jan 2020 to Jun 2026' or 'How Gong Rewrote Its Homepage Positioning Over 6 Years'",
-    "Remove or rephrase 'stopped explaining what it does and started assuming you already know' — this is an unsupported inference about buyer behavior. Replace with observable fact: 'removed its category-defining H1 and navigation elements'",
-    "Cut the section to 55–90 words maximum. The entire paragraph is 145 words when the requirement is 90 max",
-    "Remove 'even sharper' — this is editorial commentary, not evidence-based observation",
-    "Rewrite the final sentence to be under 30 words and make it concrete: 'This teardown shows which homepage elements signal category education vs. category ownership — and when to make the shift'",
-    "Remove or immediately define any implicit expert framing. The phrase 'category is settled' needs plain-language translation: 'buyers now recognize the term without explanation'"
+    "TRIM TO 90 WORDS OR FEWER: The paragraph is ~110 words. Cut approximately 20 words. Suggested trim: compress the list of three evidence items into one representative example, then summarise the others in a single clause.",
+    "ADD THE PERIOD to the first sentence or second sentence. The evidence states Jan 2020 to Jun 2026 across 3 snapshots — this must appear in the intro per the section goal.",
+    "HEDGE THE INTENT CLAIM: Replace 'signals a deliberate move' with 'reads as a move' or 'suggests a shift' — matching the evidence note that no confirmed strategy is implied.",
+    "ADD A CONDITION TO THE CLOSING PROMISE: Change 'copying it will cost you the visitors who still need convincing' to 'if your audience still needs category education, copying it risks losing those visitors' or equivalent conditional phrasing.",
+    "DEFINE 'INFRASTRUCTURE OWNERSHIP' IN PLAIN LANGUAGE: Add a parenthetical or clause — e.g., 'infrastructure ownership (positioning the product as the system your whole revenue team runs on, not just one tool in the stack)' — so founders without platform-strategy vocabulary understand the concept immediately."
   ],
   "riskFlags": [
-    "OUTCOME CLAIM: 'stopped explaining what it does and started assuming you already know' — no evidence provided about what Gong assumes or what buyers know",
-    "STRATEGIC INFERENCE: 'assumes the category is settled' — this assigns intention to Gong without supporting strategy documentation or public statement",
-    "CAUSAL CLAIM: 'After reading this teardown, you will know how to test whether your own homepage is still teaching a category your buyers already understand' — this is a claim about reader capability that cannot be verified and is not conditional"
+    "'signals a deliberate move' — evidence explicitly states 'No confirmed strategy is implied.' Overstates certainty about Gong's internal intent.",
+    "'copying it will cost you the visitors who still need convincing' — outcome prediction presented as fact, not as a conditional risk. No data supports the causal direction."
   ],
   "seoNotes": [
-    "NEGATIVE: Heading 'Gong Homepage Teardown: How the Revenue Intelligence Leader Abandoned Its Own Category' is clever but not optimized — 'Abandoned Its Own Category' has no search volume; better to use 'Positioning', 'Messaging', or 'Conversion'",
-    "POSITIVE: First sentence mentions 'January 2020 and June 2026' which satisfies date-range search intent",
-    "NEGATIVE: The phrase 'Revenue Intelligence Leader' is brand-voice language, not searcher language — searchers type 'Gong homepage' or 'Gong positioning', not 'Revenue Intelligence Leader'"
+    "POSITIVE: The ## heading 'How Gong Rewrote Its Homepage Over 6 Years' contains the company name ('Gong') and the topic term ('Homepage') — searchable heading requirement met.",
+    "POSITIVE: The primary keyword phrase 'homepage' and company name 'Gong' both appear in the heading and in the body, supporting the target keyword 'Gong homepage teardown'.",
+    "POSITIVE: Verbatim product names ('Revenue Intelligence', 'Revenue AI OS', 'Revenue AI Built To Predict churn') are bolded and quoted, which aids keyword-rich snippet extraction.",
+    "WATCH: The heading says '6 Years' but the evidence shows Jan 2020 to Jun 2026, which is approximately 6.5 years. This is a minor precision risk — consider '2020 to 2026' or 'six and a half years' to avoid any factual challenge."
   ],
-  "rewriteInstruction": "Cut this intro to 55–90 words and remove all outcome claims. Start with the factual finding: 'Gong replaced its category-defining H1 (REVENUE INTELLIGENCE) with a predictive capability claim (Revenue AI Built To Predict churn) and removed its education-focused navigation (What is RI? and Reveal: The RI Podcast).' Then state the period and snapshot count. End with a single-sentence practical takeaway: what the reader will learn to do. Remove 'stopped explaining', 'assumes', 'even sharper', and all strategic inferences. Make the heading searchable: add 'homepage teardown' or 'homepage positioning' instead of the clever 'Abandoned Its Own Category' frame. Every claim must trace to a quoted element or dated change in the evidence.",
+  "rewriteInstruction": "Rewrite the intro to land within 55–90 words. Keep the strong opening paradox (Gong built a category then removed it from its own homepage), but add the period (Jan 2020 to Jun 2026) in the first or second sentence to satisfy the section goal. Trim the three-item evidence list to one representative example — the H1 shift is the strongest — and fold the page title and nav changes into a single clause. Replace 'signals a deliberate move' with a hedged phrase ('reads as a move' or 'points to a shift') to match the evidence. Make the closing promise conditional: 'if your audience still needs category education, copying this move risks losing them before they convert.' Add a two-to-four-word plain-language gloss immediately after 'infrastructure ownership' so founders without platform-strategy vocabulary are not left behind.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
-    "specificity": 13,
-    "plainLanguage": 14,
-    "scannability": 8,
-    "searchableHeadings": 3,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 0
+    "evidenceAccuracy": 19,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 5,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

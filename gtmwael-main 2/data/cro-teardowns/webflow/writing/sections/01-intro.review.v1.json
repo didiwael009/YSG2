@@ -1,41 +1,35 @@
 {
-  "score": 78,
-  "pass": false,
+  "score": 88,
+  "pass": true,
   "issues": [
-    "Conversion outcome claim without data: 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no evidence provided that the old model was 'viral bottom-up adoption' or that the new model is 'sales-assisted conversion of marketing teams'.",
-    "Causal claim without condition: 'The CTA shifted from **\"Get started — it's free\"** to **\"Contact Sales\"** elevated to primary position.' — no conditional framing (e.g., 'if this signals enterprise focus') to qualify the meaning of this shift.",
-    "Paragraph exceeds 90-word limit: The draft is a single 144-word paragraph (intro sections are capped at 90 words).",
-    "Generic closing sentence: 'After reading this teardown, you'll be able to identify whether your own homepage is still selling capability when it should be selling outcomes — and when that shift becomes safe to make.' — this is generic SaaS positioning advice and could appear in any teardown.",
-    "The phrase 'growth engine' appears twice without plain-language definition on second use (first in headline quote, then in the closing prediction).",
-    "Section does not achieve the stated goal: 'One paragraph that answers the search query in the first sentence. Names the company, the period, and the single biggest shift. Plain language only.' — the first sentence does not answer the search query ('how Webflow repositioned'); it states a fact ('Webflow replaced its entire homepage messaging'). The biggest shift is not named in the first sentence."
+    "The closing sentence ('shows you how to tell whether your own homepage is still talking to a buyer you've outgrown') introduces a second idea — a promise about the reader's own situation — that dilutes the section goal of naming the single biggest shift. The intro should land the finding, not preview a methodology.",
+    "The word count is approximately 110 words, which exceeds the 55–90 word ceiling specified in the section requirements.",
+    "The phrase 'Webflow homepage evolution' appears in the closing sentence and reads slightly promotional/self-referential rather than as a clean factual close — minor rhythm issue.",
+    "The page title quotes are presented as bold but without surrounding double-quote marks inside the bold: the format used is **'text'** style in the original instruction context, but the draft uses **\"text\"** — this is acceptable per the bold-quotes rule, no penalty, confirming compliance."
   ],
   "requiredFixes": [
-    "Cut the paragraph to 90 words maximum. The intro section must be scannable in <10 seconds.",
-    "Rewrite the first sentence to answer the search query directly: state the biggest strategic shift (capability → outcome positioning) in sentence one, not sentence three.",
-    "Remove or condition the causal claim about 'replacement of one growth model with another' — the evidence does not support claims about conversion models or viral adoption metrics.",
-    "Replace the generic closing sentence with one that reflects THIS company's specific evidence (e.g., 'You'll see how Webflow introduced 'agentic' category language and AEO terminology to separate from the website builder space').",
-    "Add a plain-language definition the second time 'growth engine' appears, or remove the repetition."
+    "Trim the section to under 90 words. The closing sentence ('This teardown tracks that Webflow homepage evolution — and shows you how to tell whether your own homepage is still talking to a buyer you've outgrown') adds ~25 words and a second idea. Cut it or compress it to a half-sentence fragment appended to the prior sentence.",
+    "The closing sentence introduces a reader-outcome promise ('shows you how to tell whether your own homepage is still talking to a buyer you've outgrown') that is a second distinct idea. The section goal is: name the company, the period, and the single biggest shift. Remove or defer this promise to the body sections."
   ],
   "riskFlags": [
-    "HARD CAP TRIGGERED: Conversion outcome claim without data — 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no funnel data, conversion rate data, or customer acquisition data provided to support this claim. Total score capped at 60.",
-    "Causal claim without condition: 'The CTA shifted... to **\"Contact Sales\"** elevated to primary position.' — implies this shift caused or signals a specific business model change, but no conditional framing is attached.",
-    "Inference presented as fact: 'viral bottom-up adoption by practitioners' — the evidence does not contain data about adoption mechanics or viral coefficients."
+    "The phrase 'Webflow's homepage stopped speaking to designers and started speaking to CMOs' is a strong causal/intentional claim. The evidence notes the headline and title changed, but the evidence explicitly states 'No confirmed strategy is implied.' Consider softening to 'appears to have shifted its audience signal from designers toward CMOs' or attaching a condition.",
+    "No financial figures, named events, or dates beyond the stated period are present — no hedging violations triggered."
   ],
   "seoNotes": [
-    "POSITIVE: The H1 contains 'Webflow', 'Homepage', 'Teardown', and the strategic shift ('Developer Tool to Growth Platform') — all searchable terms.",
-    "POSITIVE: The first sentence names the company ('Webflow') and the period ('January 2020 and June 2026').",
-    "NEGATIVE: The first sentence does not answer the search query ('how Webflow repositioned') — it delays the strategic shift explanation until sentence three.",
-    "NEUTRAL: The draft uses 'growth engine' twice, which may help with semantic SEO for outcome-driven positioning queries, but the repetition without definition hurts readability."
+    "The ## heading 'Webflow Homepage Teardown: How It Repositioned From Developer Tool to Growth Engine' contains the primary keyword ('Webflow homepage teardown'), the company name, and a topic signal ('repositioned') — strong SEO heading.",
+    "The first sentence contains 'Webflow's homepage' and the implied query match is tight — good for featured snippet eligibility.",
+    "Secondary keyword 'Webflow homepage evolution 2020-2026' is partially surfaced in the body ('Webflow homepage evolution') — good organic signal without keyword stuffing.",
+    "The period ('Jan 2020' to 'Jun 2026') is named implicitly via '2020' and '2026' in the body — explicit year anchoring helps freshness signals and time-bounded search queries."
   ],
-  "rewriteInstruction": "Rewrite the intro to 85–90 words. Start with the strategic shift in sentence one: 'Between January 2020 and June 2026, Webflow repositioned its homepage from a capability-focused developer tool into an outcome-driven enterprise platform.' Then state the evidence: the H1 shift from 'Break the code barrier' to 'Make your website a growth engine', and the CTA shift to 'Contact Sales' as co-primary. Remove the unsupported claim about 'viral bottom-up adoption' and 'sales-assisted conversion of marketing teams' — the evidence does not include funnel or conversion data. End with a specific, Webflow-anchored benefit: 'You'll see how Webflow introduced AEO category language and scaled social proof to separate from the website builder space.' Keep all verbatim quotes in **bold quotes**. Stay within 90 words.",
+  "rewriteInstruction": "The draft is strong and specific — keep the evidence-anchored structure and the bold headline quotes. Make two targeted changes: (1) Cut the final sentence entirely or compress it to a short clause that stays within the 90-word ceiling. The section goal is to land the single biggest shift, not to preview the article's methodology. (2) Soften the opening claim from 'stopped speaking to designers and started speaking to CMOs' to something like 'shifted its audience signal — away from practitioners frustrated by code, toward marketing leaders accountable to revenue' — this keeps the force of the observation while staying traceable to the evidence notes, which explicitly flag that no confirmed strategy is implied. Target final word count: 75–85 words.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
-    "specificity": 12,
-    "plainLanguage": 14,
-    "scannability": 8,
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 19,
+    "scannability": 11,
     "searchableHeadings": 10,
-    "rhythmAndOpening": 6,
-    "founderTakeaway": 5
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

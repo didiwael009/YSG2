@@ -1,54 +1,48 @@
 {
-  "seoScore": 75,
-  "pass": false,
+  "seoScore": 84,
+  "pass": true,
   "titleScore": 12,
   "metaDescriptionScore": 13,
-  "headingStructureScore": 11,
-  "searchIntentScore": 16,
-  "keywordUseScore": 7,
-  "readabilityScore": 13,
-  "internalLinkingScore": 3,
+  "headingStructureScore": 14,
+  "searchIntentScore": 18,
+  "keywordUseScore": 8,
+  "readabilityScore": 14,
+  "internalLinkingScore": 5,
   "internalLinkingSuggestions": [
-    "Link 'SaaS homepage' references to a guide on SaaS homepage best practices or CRO frameworks",
-    "Link 'Medius acquisition' context to articles on SaaS consolidation trends or acquihire patterns",
-    "Link 'free trial vs demo' positioning to conversion strategy content comparing trial-gating vs demo-booking",
-    "Link 'e-invoicing mandate' to regulatory compliance content for fintech/spend management",
-    "Add a CTA linking to other CRO teardowns in the series at the end of the article"
+    "Link from the CTA shift section to a related article on SaaS demo vs. free-trial strategy",
+    "Link from the messaging evolution section to content on buyer-role targeting or persona-driven homepage design",
+    "Link from the language/localization section to guidance on homepage language strategy or international SaaS positioning",
+    "Add internal CTA at the end directing readers to other CRO teardowns in the series (e.g., link to a general CRO teardown index or methodology article)"
   ],
   "faqSuggestions": [
-    "When should a SaaS company switch from a free trial to a demo-booking CTA?",
-    "How does geographic narrowing affect SaaS homepage conversion rates?",
-    "What does a homepage look like after acquisition by a larger platform?",
-    "How does regulatory change (like e-invoicing mandates) influence product positioning on a homepage?",
-    "Should multilingual SaaS companies maintain separate homepages per region or use one global site?",
-    "What are the signs your company is exiting a market through product changes?"
+    "Should I remove my free trial CTA if I'm narrowing to a specific buyer persona?",
+    "How do I know if my homepage is written for the right buyer role?",
+    "What does it mean when a company switches its homepage to a single language?",
+    "How should I adjust my homepage when regulatory changes affect my market?",
+    "When should a SaaS homepage shift from self-serve to sales-assisted CTAs?",
+    "How does the Medius acquisition explain Expensya's homepage changes?"
   ],
   "contentGapNotes": [
-    "Article lacks side-by-side visual comparison (screenshots or annotated images) of the Oct 2020 vs Jun 2026 homepage versions — this is a core teardown element and its absence weakens the SEO value for users expecting visual analysis",
-    "No data on Expensya's actual traffic/conversion impact from these changes — article acknowledges this is speculative reading of positioning but doesn't clearly frame limitations",
-    "Missing analysis of the navigation menu structure changes between the two versions",
-    "No discussion of mobile vs desktop changes, which are critical for homepage teardowns",
-    "Lacks discussion of trust signals (testimonials, security badges, customer logos) if they existed on either version",
-    "No mention of pricing/packaging visibility changes between versions (if applicable)",
-    "Article doesn't address what happened to non-French language variants or redirect strategy, which impacts SEO (hreflang, canonical path handling)"
+    "Article does not address whether Expensya's French-only headline on the /en/ path resulted in measurable traffic or conversion changes—this outcome data would strengthen the lessons section",
+    "No discussion of how Expensya handled the transition period (e.g., did they A/B test the French headline, or was it a hard switch?) — testing methodology would add credibility to the strategic inferences",
+    "Article infers the Medius acquisition and e-invoicing mandate drove changes but does not cite any public statements from Expensya or Medius explaining the homepage rewrite — adding quoted rationale would clarify cause vs. correlation",
+    "No coverage of secondary navigation changes (e.g., footer links, resource pages, or mobile navigation) — these often reveal intent shifts alongside hero changes",
+    "Article does not analyze the removed section headings in detail (e.g., which integrations were de-emphasized, or what **'Small, Mid, Large'** segmentation was replaced with) — more granular comparison would support the persona-shift thesis"
   ],
   "requiredFixes": [
-    "Add actual screenshots or high-quality visual comparisons of both homepage versions side-by-side — without this, the article is incomplete for a 'teardown' genre and will underperform search intent",
-    "Clarify in the intro that this analysis is based on available snapshots and market signals, not confirmed internal CRO data or analytics — avoid implying certainty about conversion impact",
-    "The H2 'Why Expensya abandoned English...' makes a strong claim ('abandoned') — soften language or provide more definitive proof of deliberate market exit vs natural consolidation",
-    "H3 'Quick test: does your homepage assume English-speaking international buyers?' is actionable but disconnected from Expensya's specific teardown — either move it to a separate 'Lessons learned' section or reframe it as a direct parallel to Expensya's shift",
-    "Expand the 'sectionsIncluded' metadata — currently only includes intro and business context, but article lacks detailed CRO changes section (headline copy, CTA wording, layout, visual changes)"
+    "Primary keyword 'Expensya homepage CRO teardown' appears only twice in the article body (in the intro and once in the heading structure section). Distribute it naturally in 1–2 additional places (e.g., early in the business context section or in a lessons summary sentence) to reinforce topical relevance without over-optimization.",
+    "Secondary keyword 'SaaS homepage CRO teardown' is mentioned only once (in the final lessons section). Add it to at least one of the middle sections (e.g., 'This SaaS homepage CRO teardown reveals...') to improve keyword density for that secondary target.",
+    "The language/localization mismatch section flags a potential problem but does not recommend a specific test or fix. Replace the cautious framing ('may reflect', 'no confirmed strategy') with a concrete diagnostic: 'If you operate a localized /en/ path, test whether your hero headline language matches visitor intent by segmenting conversion data by language.'",
+    "Clarify the evidence scope: the article states '2 snapshots' but does not explicitly confirm whether these are actual Wayback Machine captures or reconstructed designs. Add a single sentence early in the visual timeline section (e.g., 'These snapshots were captured from [source] on [dates].') to establish credibility."
   ],
   "optionalImprovements": [
-    "Add a brief 'Timeline' section showing key dates: Oct 2020 (snapshot 1), Mar 2023 (Swan partnership), 2023 (Medius acquisition announced), Jul 2024 (French e-invoicing mandate), Jun 2026 (snapshot 2) — helps readers connect business events to homepage changes",
-    "Include a 'Key CRO changes' table summarizing the before/after for: headline, primary CTA, target audience, product focus, value prop — improves scannability and SEO for featured snippets",
-    "Add 1–2 sentences on how Expensya's competitor set (Ramp, Brex, Spendesk, etc.) positioned their homepages during the same period — provides context and depth",
-    "Consider adding a 'What this means for your SaaS homepage' conclusion that directly ties back to primary keyword 'SaaS homepage CRO teardown'",
-    "Expand 'Expensya's homepage shifted from... to...' passages with actual quoted copy and visual annotations for clarity",
-    "Add internal links to any related content on acquisition-driven product pivots or geographic narrowing strategies",
-    "Include a note on methodology (web archive snapshots, manual analysis) to build credibility"
+    "The intro meta-line reads '*Oct 2020 → Jun 2026 · 2 snapshots · 8 min read*' — consider adding a brief summary bullet (e.g., 'Key shift: English global messaging → French compliance-focused positioning') to set reader expectations immediately after the date line.",
+    "The 'Founder test' callouts are valuable but inconsistently named. Standardize them as '**Your homepage test:**' or '**Quick audit:**' and apply the same formatting to all three (language check, compliance check, buyer-role check) to improve scannability.",
+    "The meta description in the metadata block is strong but the article itself does not explicitly state what specific CRO changes readers will learn. Add a single sentence early in the body (after the intro teardown statement) that mirrors the meta description language: 'This teardown explores what changed in headline, section headings, CTAs, navigation, and what your team can apply.'",
+    "In the final section ('What SaaS teams can study...'), add a 1-2 sentence transition explaining why these three lessons (language, compliance framing, CTA shift) are the most actionable. This helps readers prioritize what to test first.",
+    "Consider adding a small 'How to use this teardown' callout at the very end directing readers to apply each lesson to their own homepage (e.g., 'Audit your homepage language alignment this week. Test compliance framing next. Then review your CTA mix.'). This increases practical takeaway value."
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.007523200000000008,
-  "generatedAt": "2026-06-12T08:27:22.164Z"
+  "costUsd": 0.008165600000000106,
+  "generatedAt": "2026-06-12T10:26:42.890Z"
 }

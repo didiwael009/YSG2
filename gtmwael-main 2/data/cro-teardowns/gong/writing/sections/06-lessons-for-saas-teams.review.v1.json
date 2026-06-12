@@ -1,0 +1,44 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "H3 heading 'The category graduation signal' uses the expert-flavored phrase 'category graduation signal' without an immediate plain-language definition in the heading itself — though the body explains it quickly, the heading alone may lose a non-expert skimmer.",
+    "H3 heading 'Education-to-authority funnel compression' stacks three abstract nouns ('Education-to-authority funnel compression') and uses 'funnel compression' without defining it before or alongside its use.",
+    "The phrase 'point solution' in the second H3 block is used without a plain-language definition (it appears once, so no repeat penalty, but it is jargon).",
+    "The phrase 'comprehension scaffold' and 'authority scaffold' in the third H3 block are abstract metaphors — not forbidden terms, but they require a reader to hold two abstract images simultaneously, which violates the 2-idea-per-paragraph rule at the margin.",
+    "The second H3 body paragraph ('OS or platform-of-record language only holds up...') is a mild causal claim ('may extend your sales cycle') — it is appropriately hedged with 'may', so no hard penalty, but the causal direction is not tied to a named condition beyond 'one or two' products, which is close to the -3 causal-without-condition rule.",
+    "Word count is approximately 430 words — above the 220–380 target range. Flag for trimming.",
+    "The opening of the third H3 block ('Gong removed...but it did not leave a gap') is strong, but the second sentence introduces a second idea (the sequence of replacement) while the first idea (the removal) is still being established — marginally violates the 2-ideas rule.",
+    "No paragraph exceeds 90 words (all are under 80), so no hard scannability cap is triggered, but the first H3 body block runs approximately 65 words across two sentences and should be checked against the 60-word paragraph rule."
+  ],
+  "requiredFixes": [
+    "WORD COUNT: Section is approximately 430 words — trim to under 380. The third H3 block is the most cuttable; the audit instruction can be shortened by one sentence.",
+    "PLAIN LANGUAGE — H3 heading: Rewrite 'Education-to-authority funnel compression' to a plain heading that still contains a searchable term. Suggested replacement: 'How Gong removed explanatory content without leaving a gap — and what to do before you do the same'.",
+    "PLAIN LANGUAGE — body: Define 'point solution' on first use in the second H3 block. Insert a parenthetical: 'a point solution (a single-purpose tool, not a platform)' — one phrase, no extra sentence needed.",
+    "PLAIN LANGUAGE — body: Replace 'comprehension scaffold' and 'authority scaffold' in the third H3 block with concrete nouns. Use 'explanation content' and 'proof content' respectively — these are already used elsewhere in the draft and are clearer.",
+    "PARAGRAPH LENGTH: The first paragraph of the first H3 block ('Gong's navigation once included...') runs approximately 62 words. Split after the second sentence or cut 'The page stopped teaching the category and started assuming the visitor already understood it' into its own sentence with a line break above it.",
+    "FOUNDER TAKEAWAY — specificity: The final audit instruction ('Audit your homepage in two columns...') is good but ends with 'before you consider removing anything from the explanation column' — this is slightly abstract as a closing action. Make it more specific: 'If the proof column has fewer than two named case studies with a specific metric, do not remove any section from the explanation column this quarter.'"
+  ],
+  "riskFlags": [
+    "Claim: 'the gap between the claim and the demo creates credibility damage' — this is a causal outcome claim. It is partially hedged by 'may extend your sales cycle' in the prior sentence, but 'creates credibility damage' is stated without 'may' or a hedge. Change to 'can create credibility damage with technical buyers'.",
+    "Claim: 'that shift suggests your category explanation may be ready to step back' — appropriately hedged, no penalty, but flag for review.",
+    "The 'Pitchbook is 10x more efficient with revenue AI' figure is cited twice across the section. The evidence confirms this as a verbatim section heading, so it is traceable — no penalty, but note it is Gong's own claimed metric, not third-party verified. No hedge language is required by the rubric here since it is a named section heading, not a financial figure or named event."
+  ],
+  "seoNotes": [
+    "The ## section heading — 'What SaaS teams can study from Gong's decision to retire the category it invented' — contains 'Gong' and implies homepage/positioning analysis. It is not purely clever; it contains a searchable term ('Gong') and a strong implied search intent ('what SaaS teams can learn from Gong'). This is above the searchableHeadings threshold.",
+    "H3 headings all contain 'Gong' or a specific product term ('Revenue AI OS', 'revenue intelligence'), which supports internal anchor relevance for the primary keyword 'Gong homepage teardown'.",
+    "The repeated use of verbatim quoted phrases from the page (**'What is RI?'**, **'Gong AI'**, **'Revenue AI OS'**, **'Trusted by 5,000+ customers'**) will support entity association in search, particularly for queries around Gong's positioning changes.",
+    "At ~430 words, the section is slightly long for a sub-section, which may dilute keyword density. Trimming to ~350 words will improve the ratio without losing substance."
+  ],
+  "rewriteInstruction": "The draft is close to passing but needs four targeted fixes before publish. First, trim the section to under 380 words — the third H3 block's audit instruction is the easiest cut target. Second, rename the third H3 heading from 'Education-to-authority funnel compression' to a plain-language version that still contains a searchable noun (suggested: 'How Gong removed explanatory content without leaving a gap'). Third, add a one-phrase plain-language definition for 'point solution' on first use in the second H3 block, and replace 'comprehension scaffold' / 'authority scaffold' with 'explanation content' and 'proof content' in the third block. Fourth, tighten the causal claim 'creates credibility damage' to 'can create credibility damage' — the 'may extend your sales cycle' hedge in the prior sentence does not carry forward to the following sentence grammatically. No structural rewrite is needed; the evidence anchoring, scannability, and founder takeaway structure are all sound.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 13,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

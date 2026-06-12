@@ -1,38 +1,35 @@
 {
-  "score": 72,
-  "pass": false,
+  "score": 88,
+  "pass": true,
   "issues": [
-    "The headline contains an unsupported causal claim: 'Exited the English-Speaking Market' — the evidence shows a language switch but does not confirm market exit or abandonment of English-speaking customers.",
-    "Paragraph is 135 words, exceeding the 90-word cap for intro sections.",
-    "The phrase 'how to read a homepage shift as a deliberate market exit' makes a causal claim ('deliberate market exit') not supported by the evidence — the strategic-shift object uses conditional language ('suggests', 'may reflect') rather than confirming intent.",
-    "The closing sentence ('when narrowing geography can strengthen positioning') is a generic strategic principle that could appear in any teardown, not specific to Expensya's evidence.",
-    "The draft does not answer the search query in the first sentence as required by the section goal — the query is 'Expensya homepage teardown' and the first sentence leads with 'exited the English-speaking market', which is an interpretation, not a factual summary."
+    "The final sentence ('By the end of this teardown, you will know how to spot whether your own homepage is making the same trade') is a generic promise-of-value closer that could appear in almost any teardown intro — it does not anchor to Expensya's specific trade-off.",
+    "The word count is approximately 89 words — at the very top of the 55–90 word limit. One more clause would breach the cap.",
+    "The phrase 'That is not a translation. It is a different company talking to a different buyer.' makes a mild causal/interpretive leap presented as fact rather than as an observed signal — the evidence supports 'may suggest' language, not a declarative assertion.",
+    "No period label ('Oct 2020 to Jun 2026') appears in the intro. The section goal requires the period to be named."
   ],
   "requiredFixes": [
-    "Replace the ## heading 'How a SaaS Company Exited the English-Speaking Market' with a factual, searchable heading that contains 'Expensya' and 'homepage' — e.g. 'Expensya Homepage Teardown: Oct 2020 to Jun 2026'.",
-    "Rewrite the first sentence to answer the search query factually: state the company name, the period, and the single biggest observable change (language shift + messaging reframe) without claiming 'market exit'.",
-    "Cut the paragraph to 90 words or fewer — remove the closing generic principle ('when narrowing geography can strengthen positioning') and end with a specific finding anchored to Expensya's evidence.",
-    "Remove or reframe 'deliberate market exit' — the evidence supports 'language shift' and 'positioning change', but does not confirm that Expensya abandoned English-speaking customers or deliberately exited that market."
+    "Add the period covered — 'Oct 2020 to Jun 2026' — somewhere in the paragraph. The section goal explicitly requires it, and it is currently absent.",
+    "Replace the generic closing sentence ('By the end of this teardown, you will know how to spot whether your own homepage is making the same trade') with a concrete, Expensya-specific closer — e.g. name the single biggest trade Expensya made (dropping 'Free trial' and English-first reach to own the French finance buyer) so the reader knows exactly what the teardown will examine.",
+    "Soften the declarative 'That is not a translation. It is a different company talking to a different buyer.' to signal it is an interpretation grounded in the evidence, not a confirmed strategic fact — e.g. 'That reads less like a translation and more like a different company addressing a different buyer entirely.'"
   ],
   "riskFlags": [
-    "UNSUPPORTED CAUSAL CLAIM: 'Exited the English-Speaking Market' — no evidence confirms that Expensya stopped serving English-speaking customers, closed English-language acquisition channels, or announced a market exit strategy. The evidence shows a homepage language change, not a verified business strategy shift.",
-    "UNSUPPORTED CAUSAL CLAIM: 'deliberate market exit' — the strategic-shift object uses conditional language ('suggests', 'may reflect'), indicating hypothesis rather than confirmed strategy. The draft presents this as fact.",
-    "OUTCOME CLAIM WITHOUT DATA: 'when narrowing geography can strengthen positioning' — this is a strategic principle, not a finding traceable to Expensya's evidence."
+    "'That is not a translation. It is a different company talking to a different buyer.' — stated as fact; the evidence supports this as a reasonable inference but no confirmed strategy is documented. Needs hedging per the evidence notes.",
+    "'Expensya's English homepage is gone' — stated as absolute fact; the evidence shows French is now primary but an 'Anglais' language toggle exists in the new nav, suggesting English access persists. This claim may be technically inaccurate."
   ],
   "seoNotes": [
-    "NEGATIVE: The ## heading 'How a SaaS Company Exited the English-Speaking Market' does not contain the company name 'Expensya' or the primary keyword 'homepage teardown' — will underperform in search for the target query.",
-    "POSITIVE: The first sentence does name the company and the period, satisfying part of the search intent.",
-    "NEGATIVE: The angle ('exited the English-speaking market') is not supported by the evidence and may mislead searchers who want to understand the homepage evolution, not speculate on market exit."
+    "The ## heading 'Expensya Homepage Teardown: From Global Automation Pitch to French-Market Compliance Play' is strong — contains the company name, 'homepage', 'teardown', and topical terms ('compliance', 'automation'). Good primary keyword alignment.",
+    "The H1 in the evidence ('How Expensya rewrote its homepage over 6 years') is weaker than the article heading used in the draft. The draft heading is the better SEO choice and should be preserved.",
+    "The intro does not surface any secondary keyword naturally (e.g. 'repositioning', 'localization', 'spend management software') — one organic secondary keyword mention would improve search snippet relevance without bloating word count."
   ],
-  "rewriteInstruction": "Rewrite the intro to 90 words or fewer. Start with a factual first sentence that names Expensya, the period (Oct 2020 to Jun 2026), and the single biggest observable change: the homepage switched from English feature-focused messaging to French UX-vision language. Replace 'market exit' framing with 'language and positioning shift'. Use only findings traceable to the evidence: headline change, CTA shift (free trial → demo), audience narrowing (all companies → finance teams). End with a specific preview of what the teardown will show (how to spot a positioning shift in homepage evidence), not a generic strategic principle. Change the ## heading to include 'Expensya' and 'homepage teardown'.",
+  "rewriteInstruction": "Keep the strong opening observation and the headline contrast — those are the best parts. Make two targeted fixes: (1) insert the period 'Oct 2020 to Jun 2026' early, ideally in the first sentence so the section goal is fully met; (2) replace the generic 'by the end of this teardown' closer with a one-sentence statement of the specific trade Expensya made — something like naming the CTA swap (free trial out, demo booking in) or the language pivot — so the reader knows the concrete thing they are about to learn. Also correct 'Expensya's English homepage is gone' to acknowledge the language toggle still exists (e.g. 'Expensya switched its homepage to French as the primary language'), and soften the 'different company talking to a different buyer' line to read as a supported inference rather than a confirmed fact. Total word count must stay at or below 90 words.",
   "dimensionScores": {
-    "evidenceAccuracy": 5,
+    "evidenceAccuracy": 21,
     "specificity": 12,
-    "plainLanguage": 18,
-    "scannability": 12,
-    "searchableHeadings": 2,
-    "rhythmAndOpening": 8,
-    "founderTakeaway": 5
+    "plainLanguage": 19,
+    "scannability": 14,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 3
   },
   "effectivePassThreshold": 85
 }

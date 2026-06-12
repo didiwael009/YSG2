@@ -6,10 +6,10 @@
 // ─── LLM model config (Phase 4B) ─────────────────────────────────────────────
 
 export const MODELS = {
-  writer:     'claude-sonnet-4-5',
-  critic:     'claude-sonnet-4-5',
-  rewriter:   'claude-sonnet-4-5',
-  judge:      'claude-opus-4-5',    // used by final-judge.ts (flagship mode)
+  writer:     'claude-sonnet-4-6',
+  critic:     'claude-sonnet-4-6',
+  rewriter:   'claude-sonnet-4-6',
+  judge:      'claude-opus-4-8',    // used by final-judge.ts (flagship mode)
   seoAuditor: 'claude-haiku-4-5-20251001',   // Rec 6: structured rubric scoring — haiku is sufficient
 } as const;
 
@@ -17,9 +17,12 @@ export type ModelRole = keyof typeof MODELS;
 
 /** USD per million tokens. Keep in sync with https://www.anthropic.com/pricing */
 export const MODEL_PRICING: Record<string, { inputPerMTok: number; outputPerMTok: number }> = {
-  'claude-sonnet-4-5': { inputPerMTok: 3.00,  outputPerMTok: 15.00 },
-  'claude-opus-4-5':   { inputPerMTok: 15.00, outputPerMTok: 75.00 },
+  'claude-sonnet-4-6':          { inputPerMTok: 3.00,  outputPerMTok: 15.00 },
+  'claude-opus-4-8':            { inputPerMTok: 15.00, outputPerMTok: 75.00 },
   'claude-haiku-4-5-20251001':  { inputPerMTok: 0.80,  outputPerMTok: 4.00 },
+  // legacy entries kept so old cost-report.json files still resolve
+  'claude-sonnet-4-5':          { inputPerMTok: 3.00,  outputPerMTok: 15.00 },
+  'claude-opus-4-5':            { inputPerMTok: 15.00, outputPerMTok: 75.00 },
 };
 
 /**
@@ -30,10 +33,10 @@ export const MODEL_PRICING: Record<string, { inputPerMTok: number; outputPerMTok
  * - draft     → Sonnet (judge skipped in draft mode, but entry kept for completeness)
  */
 export const JUDGE_MODEL_BY_MODE: Record<string, string> = {
-  standard: 'claude-sonnet-4-5',
-  flagship: 'claude-opus-4-5',
-  budget:   'claude-sonnet-4-5',
-  draft:    'claude-sonnet-4-5',
+  standard: 'claude-sonnet-4-6',
+  flagship: 'claude-opus-4-8',
+  budget:   'claude-sonnet-4-6',
+  draft:    'claude-sonnet-4-6',
 };
 
 /** A section passes if its critic score reaches this threshold. */
@@ -63,8 +66,8 @@ export const SECTION_EVIDENCE_SOURCES: Record<string, string[]> = {
   // informational shifts how copy is framed). Other sections are factual/visual.
   '01-intro':                    ['summary-cards', 'messaging', 'strategic-shift', 'seo-intent'],
   '02-quick-answer':             ['summary-cards', 'messaging', 'strategic-shift', 'seo-intent'],
-  '03-visual-timeline':          ['analysis-blocks', 'messaging'],
-  '04-messaging-evolution':      ['messaging', 'summary-cards', 'strategic-shift', 'seo-intent'],
+  '03-visual-timeline':          ['analysis-blocks', 'messaging', 'visual-analysis'],
+  '04-messaging-evolution':      ['messaging', 'summary-cards', 'strategic-shift', 'seo-intent', 'visual-analysis'],
   '05-cta-navigation-evolution': ['cta-changes', 'h2-changes'],
   '06-lessons-for-saas-teams':   ['lesson-cards', 'summary-cards', 'strategic-shift'],
   '07-business-context':         ['messaging', 'summary-cards', 'strategic-shift', 'business-context-research'],

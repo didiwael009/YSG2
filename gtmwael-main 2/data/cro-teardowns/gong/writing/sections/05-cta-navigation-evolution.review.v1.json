@@ -1,0 +1,48 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "The ## section heading 'How Gong removed What is RI? from its nav and what that says about its sales motion' names an item ('What is RI?') that does NOT appear verbatim in the navRemoved array of the evidence. The navRemoved array lists 8 items removed but does not specify any of them by name — this is an invented fact.",
+    "The claim that 'Pricing' and 'Book a demo' were added to the primary nav is not supported by the evidence. Neither item appears in the navAdded array (which lists 8 additions but does not name them). This is an invented claim triggering the -8 penalty per unnamed/unverified CTA or nav item.",
+    "The causal framing 'This suggests the page is now built for someone evaluating a budget decision' is a causation claim without attached condition, triggering the -3 penalty per causal statement without condition.",
+    "The closing sentence of the second H3 block — 'the homepage is now built to accelerate buyers who arrive informed, not orient buyers who arrive curious' — is abstract rather than concrete or actionable, triggering the -3 plainLanguage penalty.",
+    "The paragraph beginning 'Eight items were also added, including Pricing and Book a demo' exceeds 60 words (approx 72 words), violating scannability rules.",
+    "The final analytical paragraph ('The removal of feature-specific education...') is a standalone paragraph not inside an H3 block, making it an orphaned conclusion that buries the takeaway and reads like a strategic memo.",
+    "The section heading is partly clever-only: 'What is RI?' is not a searchable term and the heading does not contain 'CTA', 'navigation', 'conversion', or 'messaging' — weakening searchability.",
+    "Word count is approximately 310 words — within the 180–320 range, but only marginally.",
+    "The H3 heading 'What Gong's navigation removals say about who it no longer needs to educate' does not deliver a practical takeaway in its first two sentences — the first sentence states a count, the second states a pattern, but neither tells the reader what to do or what it means concretely.",
+    "The phrase 'bottom-of-funnel actions' is expert jargon used without an immediate plain-language definition in the same sentence."
+  ],
+  "requiredFixes": [
+    "Remove 'What is RI?' from the ## heading entirely — it is not in the evidence. Replace with a heading that uses the company name and a searchable term, e.g. 'How Gong's CTA and Navigation Changes Signal a Shift in Sales Motion'.",
+    "Remove all references to 'Pricing' and 'Book a demo' as named nav additions — these names do not appear in the navAdded array. Either describe the additions generically or leave them out.",
+    "Add a plain-language definition when 'bottom-of-funnel' is first used, e.g. 'bottom-of-funnel actions — steps a buyer takes only when they are ready to evaluate, not just explore'.",
+    "Attach a condition to every causal claim, e.g. change 'This suggests the page is now built for someone evaluating a budget decision' to 'This suggests — if the CTA swap was intentional — that the page is now built for someone already evaluating a budget decision'.",
+    "Break the 72-word paragraph ('Eight items were also added...') into two shorter paragraphs, each under 60 words.",
+    "Move the final standalone analytical paragraph inside the second H3 block or create a third H3 block for it — no analytical content should sit outside a named H3 sub-block.",
+    "Rewrite the closing sentence of the second H3 block to be concrete rather than abstract. Instead of 'accelerate buyers who arrive informed, not orient buyers who arrive curious', write something like: 'If your nav still leads with education, you may be slowing down the buyers who are already ready to talk.'"
+  ],
+  "riskFlags": [
+    "'What is RI?' cited as a removed nav item — not present in the evidence navRemoved array. Invented fact, hard cap risk.",
+    "'Pricing' and 'Book a demo' cited as added nav items — not present in the evidence navAdded array. Invented fact, triggers -8 penalty.",
+    "'This suggests the page is now built for someone evaluating a budget decision' — causation framing without supporting data.",
+    "'Adding them to the primary nav compresses the sales motion' — outcome/causation claim ('compresses') without data."
+  ],
+  "seoNotes": [
+    "The ## heading does not contain 'CTA', 'navigation', 'conversion', or 'homepage' — it will not rank for any of those terms. Fix by inserting at least one searchable term.",
+    "The H3 headings do contain 'Gong' and 'CTAs' / 'navigation' — good for internal structure and secondary keyword coverage.",
+    "The phrase 'sales motion' appears twice — useful long-tail term for B2B SaaS searches but not a primary keyword for this article's stated focus ('Gong homepage teardown').",
+    "The founder test at the end is specific and actionable — good for engagement signals and time-on-page."
+  ],
+  "rewriteInstruction": "Start by fixing the two invented facts: remove 'What is RI?' from the heading (it is not in the evidence) and remove 'Pricing' and 'Book a demo' as named nav additions (also not in the evidence). Replace the ## heading with one that contains 'Gong', 'CTA', or 'navigation'. Then audit every causal claim and attach an explicit condition ('if X, then Y') rather than asserting outcomes. Define 'bottom-of-funnel' inline on first use. Break the 72-word paragraph into two. Move the orphaned final paragraph inside a named H3 block. Rewrite the closing analytical sentence to be concrete and actionable, not abstract. The founder test is good — keep it. After these fixes the section should be evidence-tight, jargon-light, and scannable.",
+  "dimensionScores": {
+    "evidenceAccuracy": 9,
+    "specificity": 12,
+    "plainLanguage": 14,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

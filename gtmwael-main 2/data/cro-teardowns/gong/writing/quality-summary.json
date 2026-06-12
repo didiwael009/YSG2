@@ -1,67 +1,224 @@
 {
   "slug": "gong",
-  "generatedAt": "2026-06-12T08:27:45.359Z",
+  "generatedAt": "2026-06-12T11:04:55.205Z",
   "mode": "standard",
   "sections": [
     {
-      "sectionId": "07-business-context",
-      "finalVersion": 2,
-      "finalScore": 73,
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 81,
       "passed": false,
-      "loopsUsed": 1,
+      "loopsUsed": 0,
       "riskFlagCount": 2,
       "riskFlags": [
-        "First paragraph: 'The removal of nav items... coincided with this period of rapid customer expansion' — implies causal relationship (nav changes happened because of growth) without evidence that customer count drove the nav decision; safer phrasing: 'occurred during the same period' or 'is consistent with a company that...'",
-        "Third paragraph: 'If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one' — the 50+ threshold is not anchored to Gong's evidence and appears invented; founder test should reference Gong's specific evidence (e.g., 'If your company crossed 2,000 customers like Gong did by 2021...')"
+        "'signals a deliberate move' — evidence explicitly states 'No confirmed strategy is implied.' Overstates certainty about Gong's internal intent.",
+        "'copying it will cost you the visitors who still need convincing' — outcome prediction presented as fact, not as a conditional risk. No data supports the causal direction."
+      ],
+      "remainingIssueCount": 6,
+      "remainingIssues": [
+        "WORD COUNT VIOLATION: The single paragraph is approximately 110 words, exceeding the 90-word hard cap for intro sections and the 55–90 word target range. This triggers the scannability hard cap (paragraph >90 words → scannability capped at 5).",
+        "CAUSAL CLAIM WITHOUT CONDITION: 'It signals a deliberate move from explaining a category to claiming infrastructure ownership' — the word 'deliberate' asserts confirmed intent. Evidence notes 'This change can be read as a deliberate update' and 'No confirmed strategy is implied.' The draft removes that hedge.",
+        "CAUSAL CLAIM WITHOUT CONDITION: 'copying it will cost you the visitors who still need convincing' — this is an outcome prediction without a condition attached. Should be conditional: 'if [condition], copying it risks losing visitors who still need convincing.'",
+        "SECTION GOAL PARTIALLY MISSED: The goal requires naming the company, the period, and the 'single biggest shift' in the first sentence. The first sentence names the company and implies a shift but does not state the period (Jan 2020 to Jun 2026). The period appears nowhere in the draft.",
+        "EXPERT TERM WITHOUT DEFINITION: 'infrastructure ownership' is used without a plain-language explanation. Readers unfamiliar with platform-of-record strategy will not know what this means in practical terms.",
+        "BOLD QUOTE FORMAT: All verbatim quotes are correctly in bold — no violation here."
+      ],
+      "sectionCostUsd": 0.0459
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 3,
+      "finalScore": 74,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'This may suggest the page is now written for buying committees' — inference not traceable to evidence; evidence note explicitly disclaims implied strategy.",
+        "The meta description framing as evidence of 'moving away from category education' is directional but the evidence note says it may be an SEO update — the draft does not carry this hedge.",
+        "Quoting 'Revenue AI Built To Predict churn' when the evidence string reads 'Revenue AI Built To Predict churnPredict churn' — silent data cleaning without disclosure."
+      ],
+      "remainingIssueCount": 11,
+      "remainingIssues": [
+        "Section heading says '2020–2025' but evidence only covers Jan 2020 to Jun 2026 — the '2025' endpoint is inconsistent with the evidence label 'Jun 2026'.",
+        "The H1 in the evidence reads 'Revenue AI Built To Predict churnPredict churn' (with apparent duplication artefact) — the draft quotes it as 'Revenue AI Built To Predict churn', silently cleaning up the source data without flagging the anomaly.",
+        "The claim 'This may suggest the page is now written for buying committees' is a causal/outcome inference not directly supported by the evidence. The evidence note explicitly says 'No confirmed strategy is implied.' This risks triggering the causal-without-condition penalty.",
+        "The third H3 block ('2026 — what this means for your own homepage') conflates the visual-timeline walkthrough with the founder takeaway and packs more than 2 distinct ideas into its opening paragraph (layout change, headline change, section heading change, visual language shift — 4 ideas simultaneously).",
+        "The paragraph beginning 'The most visible change...' runs approximately 65 words — exceeds the 60-word limit.",
+        "The paragraph beginning 'Individual rep testimonials...' runs approximately 65 words — exceeds the 60-word limit.",
+        "The paragraph beginning 'If your navigation still includes...' runs approximately 95 words — exceeds the 60-word cap and may trigger the 90-word hard cap on scannability.",
+        "The term 'buying committees' is used without an immediate plain-language definition integrated into the sentence (the definition appears in an em-dash clause after the fact, which is acceptable, but the phrase 'buying committees' is introduced before the definition — borderline).",
+        "The section goal is to walk through 'when changes happened, what each phase looked like, and what the progression reveals' — there are only two snapshot phases (2020 and 2026) and the evidence explicitly flags hasMidTransition: false, but the draft does not acknowledge the gap or explain why only two points are shown. A reader may wonder what happened in between.",
+        "The meta description quote in section 02 is used to support a claim about technical-capability framing — this is a reasonable reading, but the evidence note says the shift 'may reflect a positioning adjustment or an SEO update', and the draft presents it as directional without that hedge.",
+        "The section word count is approximately 340 words — above the 320-word ceiling."
+      ],
+      "sectionCostUsd": 0.14838300000000001
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 3,
+      "finalScore": 81,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "The claim 'That shift is consistent with a page that no longer needs to explain what Gong does' is an inference not directly traceable to evidence — it should be hedged with 'may suggest' or 'is consistent with the interpretation that'.",
+        "The statement 'your messaging may still be written for a buyer your product has moved past' in the founder test implies a causal outcome without a condition — needs a condition clause, e.g. 'if your ICP has shifted but your homepage copy has not'.",
+        "Quoting 'multimodal revenue signal processing' and 'specialized AI agents' from the meta description without flagging that these are Gong's own marketing claims (not independently verified capabilities) could mislead readers about product reality."
+      ],
+      "remainingIssueCount": 10,
+      "remainingIssues": [
+        "The ## section heading is clever-only: 'How Gong's H1 shifted from category noun to outcome verb — and what that reveals about its target buyer' contains the company name but lacks searchable topic terms like 'messaging', 'positioning', or 'homepage'.",
+        "The meta description paragraph runs approximately 95 words — well over the 60-word cap (scannability hard cap check: just under 90, so hard cap not triggered, but still a violation).",
+        "The phrase 'multimodal revenue signal processing' appears in the quoted meta description without a plain-language definition anywhere in the section — the draft quotes the jargon but never explains it to the founder audience.",
+        "The third analytical paragraph (under '### What Gong's messaging shift signals about its target buyer') contains 3 distinct ideas: (1) section heading contrast, (2) buyer profile shift, (3) named buyer roles — violating the 2-idea-per-paragraph rule.",
+        "The finding in the third H3 block does not appear in the first two sentences — the paragraph opens with section heading evidence before stating the buyer-targeting finding, burying the key insight.",
+        "The opening of section 01 H3 is a template default: 'Before: X. After: Y.' — the evidence supported a more interesting entry (e.g. the paradox that Gong dropped its own category name from its headline after years of building that category).",
+        "The word 'may' appears as a hedge in '...the page may now be written for buyers...' — acceptable, but the sentence that follows also uses 'possibly', stacking two hedges in the same clause, making it feel evasive rather than precise.",
+        "No paragraph explicitly addresses the 'OS' framing from the page title change — the evidence flags this as a critical repositioning signal ('operating system layer') but the draft only mentions it in passing within the meta description block.",
+        "Word count is approximately 370 words — within the 200–380 range, passing narrowly.",
+        "The founder test at the end is reasonably specific but is attached to the third H3 block rather than standing as its own H3, making it easy to miss on skim."
+      ],
+      "sectionCostUsd": 0.193851
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 3,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "The phrase 'your page may be structured differently from where Gong has moved' implies Gong's direction is the right direction — this is a soft causation claim without data support; hedge it explicitly.",
+        "'Suggests the page may now be built for someone who wants to evaluate on their own terms' — plausible inference but presented as near-fact; add a hedging qualifier such as 'one interpretation is' or 'the pattern is consistent with'.",
+        "'Bottom-of-funnel actions... steps a buyer takes when they are close to a decision' — characterising these five CTAs as bottom-of-funnel is an unsupported interpretive claim; 'See Gong in action' and 'Learn about our product' could equally serve mid-funnel visitors."
+      ],
+      "remainingIssueCount": 9,
+      "remainingIssues": [
+        "Paragraph 2 of section 1 ('The five CTAs added...') exceeds 60 words — approximately 72 words.",
+        "Paragraph 2 of section 2 ('What the CTA data does make clear...') is approximately 65 words — exceeds 60-word limit.",
+        "The phrase 'bottom-of-funnel actions' is used with a bracketed definition, which is acceptable, but 'self-serve content' is jargon used without a plain-language definition in the same sentence.",
+        "The closing sentence of H3 block 2 ('The nav shift, in count at least, is consistent with that same direction') is abstract and not concrete or actionable — penalised under plainLanguage readability rules.",
+        "The ## section heading contains the company name and the word 'CTAs' but reads primarily as a clever/teaser headline rather than a searchable declarative — borderline but the topic term 'CTA' is present so partial credit applies.",
+        "The founder test is specific and anchored to Gong's evidence but the final instruction ('your page may be structured differently from where Gong has moved') ends on an abstract comparison rather than a concrete action.",
+        "Paragraph structure in H3 block 2 does not follow FINDING → EXPLANATION → EXAMPLE → IMPLICATION — the finding is buried after two sentences of caveat about data limitations.",
+        "The analytical paragraph in H3 block 1 tracks more than 2 distinct ideas simultaneously (named-person CTAs, Watch Video, five new CTAs, buyer self-evaluation behaviour) — penalised under plainLanguage density rules.",
+        "Nav item names are not present in the evidence, and the draft correctly acknowledges this — no penalty for that — but the H3 heading promises to reveal 'what navigation changes reveal' and then explicitly says it cannot; the heading slightly oversells what the section delivers."
+      ],
+      "sectionCostUsd": 0.13633499999999998
+    },
+    {
+      "sectionId": "07-business-context",
+      "finalVersion": 2,
+      "finalScore": 74,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 4,
+      "riskFlags": [
+        "Claim 'a category it invented' is not traceable to the evidence — the evidence says Gong used category-education language for 'a nascent concept' but does not attribute invention of the category to Gong.",
+        "'Gong's acquisition of RightBound...in December 2025' states this as fact — the evidence attributes this to 'CBInsights and company blog posts' and should be hedged with 'reportedly' in the draft.",
+        "The combined '$450M' figure does not appear as a single number in the evidence — it is the sum of a $200M Series D and a $250M Series E; presenting it as '$450M' without that context could be read as a single round.",
+        "The page title shift is described as 'consistent with a company responding to a redefined competitive ceiling' — this is a causal framing without an attached condition, which risks the -3 penalty for causal statements without conditions."
+      ],
+      "remainingIssueCount": 14,
+      "remainingIssues": [
+        "The ## heading contains '$450M in funding' but the evidence shows two separate rounds totalling $450M ($200M Series D + $250M Series E) — the figure is accurate but the heading presents it as a single number without context, which could mislead readers. More critically, '$450M' does not appear as a single figure anywhere in the evidence.",
+        "Paragraph 1 exceeds 60 words (approximate count: 72 words) — violates the SECTION GOAL and scannability rubric.",
+        "Paragraph 2 exceeds 60 words (approximate count: 76 words) — violates the SECTION GOAL and scannability rubric.",
+        "Paragraph 3 exceeds 60 words (approximate count: ~105 words) — major violation of the SECTION GOAL (≤60 words per paragraph) and triggers the scannability hard cap check (over 90 words).",
+        "The section goal states 'Three short paragraphs' with 'Each paragraph ≤60 words' — the draft has H3 subheadings, which adds structural elements beyond what the section goal specifies. However, because this is an analytical section, H3s are required by the rubric. This creates a tension the draft navigates acceptably.",
+        "The closing founder takeaway test ('search your brand name plus your category term in Google and check whether autocomplete still needs the category word') is reasonably specific and runnable in under 5 minutes — this is a positive.",
+        "Paragraph 2 contains the phrase 'net dollar retention — how much revenue Gong kept from existing customers year over year' — the plain-language definition is present, which is correct.",
+        "The sentence 'Gong raised reportedly $450M' in the H3 heading is awkward — 'reportedly' should precede the dollar amount more naturally and the $450M figure is a sum not stated in the evidence as a single combined figure.",
+        "The claim 'Gong built its early identity around a category it invented' is not directly traceable to the provided evidence — the evidence describes Gong using 'category-definition language' and educating buyers on 'a nascent concept' but does not state Gong invented the category.",
+        "The evidence states the $4.5 billion secondary transaction occurred 'in early 2026' — the heading mentions '$450M in funding' which only covers the Series D + Series E; the 2026 secondary transaction is a different financial event not included in the heading figure, so the heading figure is technically accurate but potentially incomplete context.",
+        "The Clari-Salesloft merger close date of December 2025 is used without a hedge phrase in paragraph 2 ('reportedly closed in December 2025' — the 'reportedly' is present, which is correct).",
+        "The RightBound acquisition in paragraph 3 lacks a hedge — it states 'Gong's acquisition of RightBound...in December 2025' without 'reportedly' or equivalent, but the evidence states 'according to CBInsights and company blog posts.' This is a missing hedge on a named event.",
+        "Paragraph 3 has more than 2 distinct ideas the reader must track simultaneously: (1) Gartner naming a new category, (2) page title shift, (3) RightBound acquisition, (4) founder test — this violates the plainLanguage density rule (-3).",
+        "The section word count is approximately 235–245 words, which exceeds the 120–200 word target stated in the required checks."
+      ],
+      "sectionCostUsd": 0.146421
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 1,
+      "finalScore": 87,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "Claim: 'the gap between the claim and the demo creates credibility damage' — this is a causal outcome claim. It is partially hedged by 'may extend your sales cycle' in the prior sentence, but 'creates credibility damage' is stated without 'may' or a hedge. Change to 'can create credibility damage with technical buyers'.",
+        "Claim: 'that shift suggests your category explanation may be ready to step back' — appropriately hedged, no penalty, but flag for review.",
+        "The 'Pitchbook is 10x more efficient with revenue AI' figure is cited twice across the section. The evidence confirms this as a verbatim section heading, so it is traceable — no penalty, but note it is Gong's own claimed metric, not third-party verified. No hedge language is required by the rubric here since it is a named section heading, not a financial figure or named event."
       ],
       "remainingIssueCount": 8,
       "remainingIssues": [
-        "H2 section heading contains no searchable terms — 'Why Gong's homepage changed' lacks 'homepage teardown', 'positioning', 'messaging', 'CTA', or 'conversion' — reducing discoverability",
-        "Second paragraph (Product evolution) exceeds 60-word limit at approximately 68 words — violates scannability budget for analytical context sections",
-        "Third paragraph (Industry shift) exceeds 60-word limit at approximately 75 words when measured from 'Gartner published...' through '...bounce rate on the pricing page' — violates stated section goal of ≤60 words per paragraph",
-        "Founder takeaway test is buried at the end of the third paragraph (starts at word 55+) rather than delivered in the first two sentences of its H3 block — violates founderTakeaway rubric requirement",
-        "The third paragraph contains 3+ distinct ideas tracked simultaneously: (1) Gartner MQ publication + Clari-Salesloft merger as industry context, (2) Gong's specific nav changes as company response, (3) founder test instruction — violates readability density rule",
-        "Meta description quote in second paragraph is missing the opening portion — draft says 'multimodal revenue signal processing, specialized AI agents' but evidence shows the full quote as 'Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.' — partial quote creates traceability ambiguity",
-        "Causal statement in first paragraph lacks attached condition: 'The removal of navigation items... coincided with this period of rapid customer expansion' implies causation (nav changes happened because of customer growth) without stating the condition under which this relationship holds",
-        "Second H3 subheading uses abstract 'Product evolution' rather than a searchable, specific phrase like 'From conversation tool to Revenue AI platform' that would signal the nature of the change to skimmers"
+        "H3 heading 'The category graduation signal' uses the expert-flavored phrase 'category graduation signal' without an immediate plain-language definition in the heading itself — though the body explains it quickly, the heading alone may lose a non-expert skimmer.",
+        "H3 heading 'Education-to-authority funnel compression' stacks three abstract nouns ('Education-to-authority funnel compression') and uses 'funnel compression' without defining it before or alongside its use.",
+        "The phrase 'point solution' in the second H3 block is used without a plain-language definition (it appears once, so no repeat penalty, but it is jargon).",
+        "The phrase 'comprehension scaffold' and 'authority scaffold' in the third H3 block are abstract metaphors — not forbidden terms, but they require a reader to hold two abstract images simultaneously, which violates the 2-idea-per-paragraph rule at the margin.",
+        "The second H3 body paragraph ('OS or platform-of-record language only holds up...') is a mild causal claim ('may extend your sales cycle') — it is appropriately hedged with 'may', so no hard penalty, but the causal direction is not tied to a named condition beyond 'one or two' products, which is close to the -3 causal-without-condition rule.",
+        "Word count is approximately 430 words — above the 220–380 target range. Flag for trimming.",
+        "The opening of the third H3 block ('Gong removed...but it did not leave a gap') is strong, but the second sentence introduces a second idea (the sequence of replacement) while the first idea (the removal) is still being established — marginally violates the 2-ideas rule.",
+        "No paragraph exceeds 90 words (all are under 80), so no hard scannability cap is triggered, but the first H3 body block runs approximately 65 words across two sentences and should be checked against the 60-word paragraph rule."
       ],
-      "sectionCostUsd": 0.11934840000000001
+      "sectionCostUsd": 0.060372
     }
   ],
-  "averageScore": 73,
-  "passCount": 0,
-  "failCount": 1,
+  "averageScore": 79.2,
+  "passCount": 1,
+  "failCount": 5,
   "skippedCount": 0,
-  "totalRewriteLoops": 1,
+  "totalRewriteLoops": 7,
   "weakSections": [
+    "03-visual-timeline",
+    "05-cta-navigation-evolution",
     "07-business-context"
   ],
   "allRiskFlags": [
-    "First paragraph: 'The removal of nav items... coincided with this period of rapid customer expansion' — implies causal relationship (nav changes happened because of growth) without evidence that customer count drove the nav decision; safer phrasing: 'occurred during the same period' or 'is consistent with a company that...'",
-    "Third paragraph: 'If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one' — the 50+ threshold is not anchored to Gong's evidence and appears invented; founder test should reference Gong's specific evidence (e.g., 'If your company crossed 2,000 customers like Gong did by 2021...')"
+    "'signals a deliberate move' — evidence explicitly states 'No confirmed strategy is implied.' Overstates certainty about Gong's internal intent.",
+    "'copying it will cost you the visitors who still need convincing' — outcome prediction presented as fact, not as a conditional risk. No data supports the causal direction.",
+    "'This may suggest the page is now written for buying committees' — inference not traceable to evidence; evidence note explicitly disclaims implied strategy.",
+    "The meta description framing as evidence of 'moving away from category education' is directional but the evidence note says it may be an SEO update — the draft does not carry this hedge.",
+    "Quoting 'Revenue AI Built To Predict churn' when the evidence string reads 'Revenue AI Built To Predict churnPredict churn' — silent data cleaning without disclosure.",
+    "The claim 'That shift is consistent with a page that no longer needs to explain what Gong does' is an inference not directly traceable to evidence — it should be hedged with 'may suggest' or 'is consistent with the interpretation that'.",
+    "The statement 'your messaging may still be written for a buyer your product has moved past' in the founder test implies a causal outcome without a condition — needs a condition clause, e.g. 'if your ICP has shifted but your homepage copy has not'.",
+    "Quoting 'multimodal revenue signal processing' and 'specialized AI agents' from the meta description without flagging that these are Gong's own marketing claims (not independently verified capabilities) could mislead readers about product reality.",
+    "The phrase 'your page may be structured differently from where Gong has moved' implies Gong's direction is the right direction — this is a soft causation claim without data support; hedge it explicitly.",
+    "'Suggests the page may now be built for someone who wants to evaluate on their own terms' — plausible inference but presented as near-fact; add a hedging qualifier such as 'one interpretation is' or 'the pattern is consistent with'.",
+    "'Bottom-of-funnel actions... steps a buyer takes when they are close to a decision' — characterising these five CTAs as bottom-of-funnel is an unsupported interpretive claim; 'See Gong in action' and 'Learn about our product' could equally serve mid-funnel visitors.",
+    "Claim 'a category it invented' is not traceable to the evidence — the evidence says Gong used category-education language for 'a nascent concept' but does not attribute invention of the category to Gong.",
+    "'Gong's acquisition of RightBound...in December 2025' states this as fact — the evidence attributes this to 'CBInsights and company blog posts' and should be hedged with 'reportedly' in the draft.",
+    "The combined '$450M' figure does not appear as a single number in the evidence — it is the sum of a $200M Series D and a $250M Series E; presenting it as '$450M' without that context could be read as a single round.",
+    "The page title shift is described as 'consistent with a company responding to a redefined competitive ceiling' — this is a causal framing without an attached condition, which risks the -3 penalty for causal statements without conditions.",
+    "Claim: 'the gap between the claim and the demo creates credibility damage' — this is a causal outcome claim. It is partially hedged by 'may extend your sales cycle' in the prior sentence, but 'creates credibility damage' is stated without 'may' or a hedge. Change to 'can create credibility damage with technical buyers'.",
+    "Claim: 'that shift suggests your category explanation may be ready to step back' — appropriately hedged, no penalty, but flag for review.",
+    "The 'Pitchbook is 10x more efficient with revenue AI' figure is cited twice across the section. The evidence confirms this as a verbatim section heading, so it is traceable — no penalty, but note it is Gong's own claimed metric, not third-party verified. No hedge language is required by the rubric here since it is a named section heading, not a financial figure or named event."
   ],
   "sectionErrors": [],
-  "finalJudgeScore": 62,
+  "finalJudgeScore": 74,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Remove all six unsupported factual claims (funding rounds, customer counts, acquisitions, Gartner report, merger). Every specific fact must trace to the compressed evidence.",
-    "Rewrite opening paragraph to avoid assigning intention ('stopped explaining', 'started assuming', 'assumes the category is settled'). Use observable changes only: 'The headline changed from REVENUE INTELLIGENCE to Revenue AI Built To Predict churn.'",
-    "Remove the business context section entirely or rewrite using ONLY the evidence provided (headline changes, H2 removals, nav changes). Do not import external market facts.",
-    "Replace the threshold '50+ funded competitors' in the final takeaway with a conditional observation anchored to the evidence: 'If your nav contains items that explain the category (like Gong's removed 'What is RI?'), test removing one.'",
-    "Add H3 subheadings to the business context section. Current structure has three paragraphs under one H3, violating scannability rules."
+    "Remove or clearly qualify the claim that the navigation dropped 'What is RI?' — this item does not appear in the navRemoved list in the evidence; either trace it to a confirmed nav item or remove the specific claim",
+    "Add 'reportedly' or equivalent hedging every time a specific dollar figure (Series D $200M, Series E $250M, $7.25B valuation) appears in the body text to match the evidence's own sourcing qualifiers",
+    "Rewrite the opening paragraph to remove 'That is not a rebrand' — the evidence does not confirm whether Gong classified this as a rebrand or not; replace with a conditioned inference such as 'Whether or not Gong called it a rebrand internally, the copy changes suggest...'",
+    "Remove or condition the claim that Gong 'invented' or 'largely invented' the revenue intelligence category — the evidence does not support this; replace with 'helped define' or 'was the category leader in'",
+    "In the CTA section, remove the implicit underperformance framing for named-VP CTAs — the evidence shows they were removed but provides no click or conversion data to support any performance inference; rephrase as a structural observation only",
+    "Add the condition 'if Gong's inbound traffic profile shifted toward branded or comparison-intent queries' to the claim about the page being written for visitors who 'already know what Gong is' — currently presented without this condition as required by the evidence review"
   ],
-  "seoScore": 74,
-  "seoPass": false,
+  "seoScore": 83,
+  "seoPass": true,
   "seoRequiredFixes": [
-    "Add a clear H1 that matches or closely aligns with the primary keyword 'Gong homepage CRO teardown' — the current H1 ('How Gong rewrote its homepage over 6 years') does not contain the primary keyword",
-    "Include actual visual artifacts (screenshots or descriptions with timestamps) of the three homepage snapshots so readers can verify the claims about H1, navigation, and meta description changes",
-    "Expand the 'Why Gong's homepage changed' section with a third-level heading structure (H3s) to organize the three contexts (market entry, product evolution, industry shift) more clearly",
-    "Add a dedicated section with specific CTA button text changes and their positioning changes over the 6-year span — currently, the teardown focuses only on headlines and navigation"
+    "Increase primary keyword density: 'Gong homepage CRO teardown' appears only twice in the body text and zero times in subheadings. Add it to at least one H2 or strategic paragraph to improve keyword relevance signaling.",
+    "Strengthen secondary keyword integration: 'SaaS homepage CRO teardown' and 'homepage A/B test analysis' are listed as secondary keywords but do not appear in the article. Add at least one reference to 'SaaS homepage' patterns or 'A/B testing' methodology to justify their inclusion or remove them from the metadata.",
+    "Add explicit internal linking anchors: The article references 'founder test,' 'your test,' and 'audit your homepage' but does not link to any internal resources, tools, or frameworks. Add at least 2–3 contextual internal links before publication.",
+    "Clarify the scope limitation in the article: The text states 'The actual item names are not available in the source data' when discussing navigation changes. This transparency is good, but the article should more clearly signal upfront that some details are inferred rather than confirmed, to maintain credibility."
   ],
-  "articleWordCount": 462,
+  "articleWordCount": 2024,
   "repetitionWarnings": [],
   "editorialWarnings": [
-    "[01-intro] Paragraph exceeds 90 words (~141w): \"Gong's homepage between January 2020 and June 2026…\""
+    "[01-intro] Paragraph exceeds 90 words (~112w): \"Gong built an entire product category around \"Revenue…\"",
+    "[03-visual-timeline] Paragraph exceeds 90 words (~91w): \"If your navigation still includes a link that…\"",
+    "[07-business-context] Paragraph exceeds 90 words (~108w): \"Gartner reportedly published its first Magic Quadrant for…\""
   ],
-  "overLengthWarning": null
+  "overLengthWarning": "Article is 2024 words — exceeds 1900-word hard warning"
 }

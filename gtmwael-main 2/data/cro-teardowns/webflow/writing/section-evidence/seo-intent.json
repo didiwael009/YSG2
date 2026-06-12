@@ -1,20 +1,20 @@
 {
   "primary_keyword": "Webflow homepage teardown",
   "primary_intent": "informational",
-  "audience_description": "A SaaS founder, product manager, or growth marketer at a mid-market or enterprise company who wants to understand how Webflow repositioned itself from a designer tool to an enterprise marketing platform—specifically to inform their own positioning strategy, pricing model evolution, or AI/automation narrative.",
-  "recommended_h1_format": "[Company] Homepage Teardown: How It Shifted From No-Code Builder to Enterprise Growth Platform",
+  "audience_description": "A SaaS founder, growth marketer, or product strategist who wants to understand how Webflow repositioned itself from a no-code tool for builders to a marketing-platform infrastructure play—specifically to evaluate whether a similar positioning shift could work for their own product, or to learn the signals that indicate when a platform has outgrown its original audience.",
+  "recommended_h1_format": "[Company] Homepage Teardown: How It Shifted From No-Code Tool to Growth Engine",
   "secondary_keywords": [
-    "Webflow CRO teardown 2024",
-    "How Webflow repositioned its homepage",
-    "Webflow positioning strategy evolution",
-    "Webflow enterprise homepage analysis",
-    "Webflow AEO positioning case study"
+    "Webflow CRO strategy 2024 2025",
+    "Webflow homepage evolution positioning change",
+    "How Webflow repositioned its platform",
+    "Webflow brand pivot no-code to marketing platform",
+    "Webflow agentic web marketing platform messaging"
   ],
-  "content_angle": "Focus on the strategic *why* behind the repositioning—not just the cosmetic changes. The searcher wants to understand: (1) Why Webflow abandoned the 'democratize code' narrative for 'growth engine'; (2) How the shift from 'Get started free' to 'Contact Sales' signals a move upmarket; (3) What 'AEO' positioning teaches about claiming a new category; (4) Whether this playbook applies to their own SaaS. This is about learning a repositioning playbook, not admiring design changes.",
-  "what_the_searcher_wants": "To reverse-engineer a high-stakes repositioning decision (from SMB/designer market to enterprise) so they can evaluate whether a similar strategy makes sense for their company, or to understand the signals that indicate when a product should shift its narrative and buyer.",
-  "what_to_avoid": "Avoid treating this as a visual design critique or pixel-by-pixel walkthrough. The searcher does not care that the button color changed or the layout is cleaner. They *will* bounce if you don't explain the business logic: Why did Webflow need to move upmarket? What was the growth ceiling at the designer level? How does 'AEO' solve a real buyer problem versus being marketing theater? Avoid generic praise ('great design,' 'clear messaging') without connecting it to a business outcome or positioning principle.",
+  "content_angle": "Lead with the STRATEGIC SHIFT, not the visual changes. The searcher wants to understand the *why* behind Webflow's pivot from 'democratize code' to 'ROI engine for marketing teams'—what market signals forced this, what audience they were leaving behind, and what new audience they were chasing. Show how this repositioning cascaded through every element: H1, navigation, CTAs, social proof. The article should answer: 'When should I consider a positioning pivot this dramatic, and what are the early signals?'",
+  "what_the_searcher_wants": "A case study that reveals the decision-making logic behind a major repositioning, so they can apply similar thinking to their own product strategy or recognize when their market is telling them to pivot.",
+  "what_to_avoid": "Treating this as a cosmetic redesign teardown or a generic 'what changed' list. Do NOT focus on color, typography, or layout shifts. Do NOT write this as 'Webflow's new design is more modern'—that misses the entire point. The searcher will abandon immediately if the article doesn't explain the *market context* (why did Webflow need to pivot?) and the *business outcome* (who are they now selling to and why?).",
   "confidence_level": "high",
-  "generatedAt": "2026-06-12T08:19:50.173Z",
+  "generatedAt": "2026-06-12T11:06:13.289Z",
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.003108
+  "costUsd": 0.0030768
 }

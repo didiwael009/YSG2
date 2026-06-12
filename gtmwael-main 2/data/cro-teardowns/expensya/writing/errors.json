@@ -1,4 +1,9 @@
 {
-  "errors": [],
-  "count": 0
+  "errors": [
+    {
+      "section": "_seo-audit",
+      "error": "Could not extract JSON from SEO auditor response.\nFirst 500 chars:\n```json\n{\n  \"titleScore\": 12,\n  \"metaDescriptionScore\": 13,\n  \"headingStructureScore\": 14,\n  \"searchIntentScore\": 18,\n  \"keywordUseScore\": 8,\n  \"readabilityScore\": 14,\n  \"internalLinkingScore\": 4,\n  \"seoScore\": 83,\n  \"internalLinkingSuggestions\": [\n    \"Link from the 'Founder test' callouts to a related article on homepage messaging frameworks or CTA strategy — e.g., 'See how other SaaS teams tested CTA positioning' or 'Learn more about demo-first vs. self-serve funnels'.\",\n    \"Link from the 'b"
+    }
+  ],
+  "count": 1
 }

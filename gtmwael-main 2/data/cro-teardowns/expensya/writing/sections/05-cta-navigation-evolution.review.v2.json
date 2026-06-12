@@ -1,0 +1,45 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "The ## heading 'How Expensya removed Free trial and rebuilt its funnel around the French-speaking CFO' contains 'Expensya' and a topic term but introduces the unsupported claim 'French-speaking CFO' — the evidence shows French-language nav and CTAs but never identifies the buyer persona as a CFO specifically.",
+    "The claim 'The page no longer appears to offer a way in without talking to someone first' is a mild causal/outcome assertion not directly evidenced — the evidence only shows CTA removal, not what the current page state actually offers end-to-end.",
+    "The paragraph beginning 'Eight navigation items were removed...' runs approximately 65 words in its H3 block body when combined with the following sentence — marginal but the second paragraph of that H3 block ('What the new navigation does not appear to contain...') is approximately 62 words, slightly over the 60-word cap.",
+    "The claim about 'Size-based segmentation' being absent is an invented analytical frame — the evidence lists nav items added/removed but does not describe or label any removed item as 'size-based segmentation', making this claim not directly traceable to the evidence.",
+    "The CTAs 'Necessary 21', '880-tzc-395.mktoweb.com 1', 'Azure 2', 'Cloudflare 12', 'Google 2', 'www.expensya.com 3', 'Preferences 2', 'Learn more about this provider', and 'Show details' appear in ctaAdded but are not discussed or acknowledged — the draft selectively uses only 'Réservez une démo' from the added list without noting the others are likely cookie-consent or technical artefacts, which could mislead readers.",
+    "The opening of H3 block 2 ('Eight navigation items were removed and eight added — a complete rebuild, not a light edit') delivers its finding first, which is good, but the explanation that follows contains the unsupported size-based segmentation claim.",
+    "No plain-language definition is provided for 'sales motion' — this is a specialist term used twice across the section without explanation.",
+    "The word count is approximately 295 words — within the 180–320 band, no violation.",
+    "All verbatim CTAs are in bold quotes — no violation on that check.",
+    "No forbidden jargon terms from the penalty list are used — no violation."
+  ],
+  "requiredFixes": [
+    "Remove 'French-speaking CFO' from the ## heading — the evidence does not identify the buyer as a CFO. Replace with a supported term, e.g. 'How Expensya removed Free trial and shifted its homepage CTA to a demo-first sales motion'.",
+    "Delete or reframe the 'Size-based segmentation' paragraph — it is not traceable to the evidence. Replace it with an observation that IS traceable, such as noting that all new nav items are in French whereas removed items were in English, suggesting a deliberate market focus shift.",
+    "Add a one-sentence plain-language definition the first time 'sales motion' appears, e.g. 'sales motion — meaning the sequence of steps a company uses to move a prospect toward a purchase'.",
+    "Add a brief parenthetical noting that several ctaAdded entries (cookie-consent and third-party trackers like 'Cloudflare 12', 'Preferences 2') are technical artefacts rather than commercial CTAs, so readers understand why they are excluded from the analysis and the data is not misleading.",
+    "Trim the second paragraph of the navigation H3 block to under 60 words by splitting or cutting the size-based segmentation sentence (which should be removed anyway per fix above)."
+  ],
+  "riskFlags": [
+    "'The page no longer appears to offer a way in without talking to someone first' — this is an inference about the full current page state, not directly evidenced by the CTA-change data alone.",
+    "'Size-based segmentation — letting visitors pick their company size to see relevant content — is absent from the listed nav items' — no evidence supports this framing; the nav arrays list item names only, not their function or segmentation logic.",
+    "'French-speaking CFO' in the heading — the evidence supports French-language assets but does not identify CFOs as the target persona."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Expensya' and a strong topic hook but the unsupported 'CFO' claim adds specificity the article cannot defend — replacing it with 'demo-first CTA' or 'homepage CTA' would be both more accurate and more search-relevant.",
+    "H3 headings ('What Expensya's CTA shift says about the visitor it now expects' and 'What Expensya's navigation rebuild signals about its intended audience') both contain 'Expensya' and topic terms — good for internal anchor SEO and topical relevance.",
+    "The founder test paragraph uses specific named CTAs from the evidence ('Free trial', 'Réservez une démo') which adds keyword specificity and demonstrates E-E-A-T depth.",
+    "Phrases like 'Réservez une démo' appearing verbatim may help this page surface for multilingual or international SaaS teardown queries."
+  ],
+  "rewriteInstruction": "Fix four things before resubmitting. First, change the ## heading to remove 'French-speaking CFO' — the evidence never names the buyer as a CFO; use a supported descriptor like 'demo-first homepage' instead. Second, cut the entire 'size-based segmentation' paragraph from the navigation H3 block and replace it with an observation the evidence actually supports — for example, that every removed nav item was in English and every added item is in French, which points to a deliberate geographic or language-market refocus. Third, add a plain-language gloss for 'sales motion' on its first use — one clause in brackets is enough. Fourth, add a single sentence acknowledging that most of the ctaAdded entries are cookie-consent and third-party tracker artefacts (Cloudflare, Preferences, Azure), not commercial CTAs, so readers understand why the analysis focuses only on 'Réservez une démo' and 'Learn more about this provider'. Keep the founder test as-is — it is specific, runnable, and anchored to named evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 12,
+    "plainLanguage": 16,
+    "scannability": 13,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

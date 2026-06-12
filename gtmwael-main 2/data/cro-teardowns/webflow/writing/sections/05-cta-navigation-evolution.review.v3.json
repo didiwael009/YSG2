@@ -1,0 +1,47 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "CAUSATION RISK: 'Their removal signals the homepage may no longer be optimising for that undecided visitor' is a causal inference not traceable to evidence — no condition is attached (e.g. 'if those visitors were the primary audience').",
+    "CAUSATION RISK: 'Its removal means that reassurance no longer exists anywhere visitors can see it' is presented as a definitive outcome claim, not a conditional one.",
+    "PARAGRAPH LENGTH VIOLATION: The third analytical paragraph ('Five education and community items disappeared...') runs approximately 68 words — over the 60-word cap.",
+    "PARAGRAPH LENGTH VIOLATION: The closing paragraph before the founder test ('The section heading...Its removal means...') is split across two short blocks but the second fragment ('Its removal means...they no longer have an obvious on-ramp') is an unsupported outcome claim without a condition attached.",
+    "PLAIN LANGUAGE: 'AEO' and 'Answer Engine Optimization' are defined, but the definition is embedded mid-sentence after the CTA is quoted — the definition should precede or immediately follow the first use, not trail it.",
+    "READABILITY: The second H3 block violates FINDING → EXPLANATION → EXAMPLE → IMPLICATION. The finding (nav signals audience shift) does not appear in the first two sentences — 'Five education and community items disappeared' is the opening but the interpretive finding ('homepage may no longer be optimising for that undecided visitor') is buried in sentence three.",
+    "FOUNDERTEST PARTIALLY GENERIC: The founder test references Webflow's five removed items (good specificity) but the instruction 'check whether an undecided visitor still has a learning path' is generic enough to appear in any SaaS teardown. It needs a Webflow-specific anchor (e.g. reference the specific items removed or the 'Start building / Start publishing / Start optimizing' pattern).",
+    "WORD COUNT: Approximately 310 words — within the 180–320 range, but tight at the upper bound.",
+    "BOLD QUOTES CHECK: 'Get started — it is free' appears in the removed list in evidence but also appears in the added list — the draft references it as 'original homepage carried a single entry point' which is accurate, but the dual presence (added AND removed) is not acknowledged and could confuse readers.",
+    "SCANNABILITY: The paragraph beginning 'The section heading' and the paragraph beginning 'Its removal means' are two consecutive very short paragraphs that fragment a single idea — they should be merged into one sub-60-word paragraph."
+  ],
+  "requiredFixes": [
+    "Add a condition to the causation claim: change 'Their removal signals the homepage may no longer be optimising for that undecided visitor' to 'If those education-focused visitors still arrive in volume, their removal suggests the homepage is no longer built for them — pointing instead toward someone already familiar with the platform.'",
+    "Trim the third analytical paragraph ('Five education and community items disappeared...') to under 60 words by cutting the final sentence and folding the idea into the following paragraph.",
+    "Merge the two fragment paragraphs ('The section heading...' and 'Its removal means...') into a single paragraph under 60 words with a condition attached to the outcome claim.",
+    "Rewrite the second H3 block so the interpretive finding appears in sentence one or two, following the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula.",
+    "Make the founder test more Webflow-specific: reference the specific removed items (Events, University, Courses) or the new action-verb CTA pattern (Start building, Start publishing, Start optimizing) so the test cannot appear verbatim in a different teardown.",
+    "Clarify the 'Get started — it is free' dual appearance: it is listed as both added and removed in evidence — the draft should note it was present in 2020 and a version re-appeared in 2026, or explicitly flag this anomaly rather than treating the 2020 version as the sole original."
+  ],
+  "riskFlags": [
+    "'Their removal signals the homepage may no longer be optimising for that undecided visitor' — causal inference, no condition. Penalised under evidenceAccuracy (-3).",
+    "'Its removal means that reassurance no longer exists anywhere visitors can see it' — outcome claim presented as definitive fact; no data confirms the line does not appear elsewhere on the site. Penalised under evidenceAccuracy (-5).",
+    "'If those visitors still arrive in meaningful numbers' — the condition is present but 'meaningful numbers' is unanchored to any traffic or audience data from the evidence."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name (Webflow), a CTA term, and a specific removed line — strong for long-tail search around 'Webflow CTA changes' or 'Webflow homepage evolution'.",
+    "H3 headings both contain 'Webflow' and topic terms (CTA stack, navigation changes) — good for semantic search coverage.",
+    "The term 'AEO' and 'Answer Engine Optimization' are defined inline — good for capturing emerging search demand around AEO, which aligns with Webflow's own positioning bet.",
+    "'Webflow homepage teardown' (primary keyword) is not present in the section body — consider one natural mention to reinforce topical relevance.",
+    "The specific named CTAs in bold (Contact Sales, Start for free, Explore AEO, Talk to sales) improve entity density for structured search."
+  ],
+  "rewriteInstruction": "Rewrite the second H3 block so its interpretive finding ('the page is no longer built for undecided visitors') lands in sentence one, then support it with the list of removed nav items as evidence. Merge the two fragment paragraphs about 'Free until you are ready to launch' into a single sub-60-word paragraph and attach a condition to the outcome claim ('if those freelance or budget-conscious visitors still arrive, they no longer have an obvious on-ramp'). Trim the third analytical paragraph to under 60 words. Sharpen the founder test to reference at least one of the specific removed Webflow nav items (Events, University, Courses) or the new action-verb CTA trio (Start building, Start publishing, Start optimizing) so it cannot appear in any other company's teardown. Clarify the 'Get started — it is free' dual appearance in the evidence rather than treating it as a clean before/after.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 13,
+    "plainLanguage": 16,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

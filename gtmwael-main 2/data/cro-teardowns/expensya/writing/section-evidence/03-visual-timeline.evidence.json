@@ -1,0 +1,100 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Expensya",
+  "companyUrl": "https://www.expensya.com/en/",
+  "articleTitle": "Expensya Homepage Teardown: Oct 2020 to Jun 2026",
+  "h1": "How Expensya rewrote its homepage over 6 years",
+  "fromLabel": "Oct 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 14,
+    "h2Removed": 7,
+    "ctaAdded": 10,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Expensya homepage teardown",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2020-10",
+      "label": "Oct 2020 — original state",
+      "period": "Oct 2020",
+      "screenshotPath": "/cro-teardowns/expensya/selected/2020-10.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Automated spend management for all companies\" — direct product statement.",
+        "Visible section headings include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\", \"Expensya fully automates your business expenditure\", \"A solution designed for every company\".",
+        "Navigation includes: \"Solutions\", \"Small\", \"Mid\", \"Large\" — product category framing.",
+        "Section headings later removed include: \"Equip yourself with the most comprehensive business spend and expense management solution, tailored to your needs and to those of your teams\" and \"Expensya fully automates your business expenditure\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/expensya/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Voici à quoi devrait ressembler la gestion des dépenses.\" — updated value proposition.",
+        "New section headings include: \"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\", \"Cartes de paiement & budgets\", \"Politiques de dépenses\".",
+        "CTAs no longer present include: \"Free trial\", \"Discover our solutions\", \"Find out more\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Automated spend management for all companies",
+      "after": "Voici à quoi devrait ressembler la gestion des dépenses.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
+      "after": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Automated spend management for all companies",
+      "after": "Gestion des dépenses des employés et cartes de paiement | Expensya"
+    }
+  ],
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2020-10",
+        "design_era": "growth",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Large headline with subtext, isometric product illustration on right, green CTA button and secondary link below",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "current-live",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Hero section with female portrait image on right side, French headline text overlay, blue CTA button prominently positioned",
+        "proof_density": "medium",
+        "primary_message_type": "story",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      }
+    ],
+    "visual_shift_summary": "The design shifted from an isometric illustration-led approach with centered layout to a full-bleed photography-driven hero featuring a real person, moving from abstract product visualization to human-centric narrative storytelling.",
+    "design_evolution_label": "illustration-to-photography-personalization",
+    "generatedAt": "2026-06-12T08:08:12.235Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0026944
+  }
+}

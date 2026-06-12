@@ -1,0 +1,100 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Gong",
+  "companyUrl": "https://www.gong.io/",
+  "articleTitle": "Gong Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Gong rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 4,
+    "ctaAdded": 5,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Gong homepage teardown",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2020-01",
+      "label": "Jan 2020 — original state",
+      "period": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/gong/selected/2020-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"REVENUE INTELLIGENCE\" — direct product statement.",
+        "Visible section headings include: \"Get powerful visibility into your customer interactions with\", \"Revenue Intelligence helps you fuel:\", \"So What Does this look like? Glad you asked.\".",
+        "Navigation includes: \"Log In\", \"What is RI?\", \"Overview\", \"Reveal: The RI Podcast\" — product category framing.",
+        "Section headings later removed include: \"Get powerful visibility into your customer interactions with\" and \"Revenue Intelligence helps you fuel:\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/gong/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Revenue AI Built To Predict churnPredict churn\" — updated value proposition.",
+        "New section headings include: \"Trusted by 5,000+ customers\", \"Winning GTM organizations run revenue on Gong\", \"Pitchbook is 10x more efficient with revenue AI\".",
+        "CTAs no longer present include: \"Watch Video\", \"Paul Santarelli VP of Sales\", \"Bevin Lyon VP, Customer Strategy\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "REVENUE INTELLIGENCE",
+      "after": "Revenue AI Built To Predict churnPredict churn",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+      "after": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Revenue Intelligence Technology for Sales Teams | Gong.io",
+      "after": "Gong - Revenue AI OS"
+    }
+  ],
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2020-01",
+        "design_era": "growth",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Full-bleed gradient background with large illustrated characters on right, bold headline 'REVENUE INTELLIGENCE' on left, small tagline and CTA button below.",
+        "proof_density": "none",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "current-live",
+        "design_era": "mature",
+        "layout_type": "multi-column",
+        "above_fold_structure": "Split layout with headline and CTA on left, interactive chat widget mockup on right, soft gradient background, navigation bar with logo and sign-in.",
+        "proof_density": "high",
+        "primary_message_type": "feature",
+        "visual_sophistication": 5,
+        "brand_maturity": "enterprise-grade"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from a full-bleed cinematic hero with illustrated characters and bold messaging to a cleaner, more professional multi-column layout emphasizing product interface mockups and social proof through client logos. The visual language shifted from lifestyle imagery to product-centric UI demonstration.",
+    "design_evolution_label": "growth-to-enterprise-product-focus",
+    "generatedAt": "2026-06-12T08:08:18.256Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0032416
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section heading is clever-only: 'How Webflow's H1 traded practitioner pride for CMO-grade outcome language — and what it cost' contains the company name but no searchable topic term (homepage, messaging, positioning, CTA, conversion). -3 penalty applied.",
+    "Third H3 heading — 'What Webflow's messaging shift signals about the buyer it's now targeting' — contains two distinct ideas in its body (page title analysis + risk of outcome language for cold visitors), violating the max-2-ideas-per-paragraph rule. -3 penalty applied.",
+    "The fourth paragraph ('The risk is real, though...') does not state its finding in the first two sentences — it buries the cold-visitor confusion risk after two setup sentences. -3 penalty applied.",
+    "The fourth paragraph's closing sentence ('Outcome language works when your brand already does the explaining before the page loads') is abstract and conditional rather than concrete or actionable. -3 penalty applied.",
+    "The third H3 block body runs two separate analytical paragraphs without an H3 break, making the block harder to scan. The risk paragraph should be its own H3 sub-block.",
+    "Word count is approximately 410 words (excluding heading), which exceeds the 380-word ceiling. Flag as over limit.",
+    "Paragraph 4 approximate word count: ~68 words. Exceeds 60-word limit for analytical paragraphs. -4 penalty applied to scannability.",
+    "The H3 'What Webflow's messaging shift signals about the buyer it's now targeting' does not deliver its practical takeaway in the first two sentences — it opens with page title analysis. -3 penalty applied to founderTakeaway.",
+    "The term 'procurement conversations' appears in paragraph 3 without a plain-language definition. -4 penalty applied to plainLanguage.",
+    "The causal claim 'Outcome language works when your brand already does the explaining before the page loads' is stated as a general rule without a condition tied to Webflow's specific evidence. -3 penalty applied to evidenceAccuracy."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include a searchable topic term. Suggested: 'Webflow Homepage Messaging Evolution: How the H1, Meta, and Page Title Shifted From Practitioner Tool to CMO Platform'.",
+    "Split the third H3 block into two separate H3 blocks: one for the page title / category-creation signal, and one for the cold-visitor confusion risk. Each block must state its finding in the first sentence.",
+    "Add a plain-language definition for 'procurement conversations' on first use — e.g., 'procurement conversations (the internal sign-off process enterprise buyers go through before choosing software)'.",
+    "The fourth paragraph exceeds 60 words. Cut to under 60 words or split into two paragraphs.",
+    "Rewrite the closing sentence of the risk paragraph to be concrete and actionable rather than abstract: replace 'Outcome language works when your brand already does the explaining before the page loads' with a specific, testable observation tied to Webflow's evidence.",
+    "Trim overall section to under 380 words. Currently approximately 410 words.",
+    "The causal claim about outcome language and cold visitors needs a condition attached: add 'if [condition]' framing so the risk is bounded rather than stated as universal fact."
+  ],
+  "riskFlags": [
+    "'Outcome language works when your brand already does the explaining before the page loads' — causal generalisation stated as fact, not tied to Webflow-specific evidence and missing a condition clause.",
+    "'procurement conversations get easier' — outcome claim ('get easier') without supporting data or a condition. Should be hedged: 'may shorten procurement conversations, if the category label is already recognised by the buyer'.",
+    "'may leave without understanding what the product actually does' — plausible but unsupported by evidence; should be framed as a hypothesis, not a stated consequence."
+  ],
+  "seoNotes": [
+    "The ## heading currently does not contain 'homepage', 'messaging', 'positioning', 'CTA', or 'conversion' — this will reduce the section's ability to rank for secondary keywords like 'Webflow messaging shift analysis' or 'Webflow homepage evolution'.",
+    "All three headline quotes, meta description quotes, and page title quotes are correctly formatted in bold quotes — strong for on-page SEO and reader trust.",
+    "The phrase 'rank in AI search' and 'AEO' are correctly quoted from evidence and appear in context — good for topical authority around AI search positioning content.",
+    "The secondary keyword 'Webflow homepage evolution 2020-2026' is not present in any heading or opening sentence of a paragraph — consider adding the date range to the section heading for long-tail SEO value."
+  ],
+  "rewriteInstruction": "Rewrite the section heading to include a searchable topic term (homepage, messaging, or positioning). Split the third H3 block into two separate H3 blocks — the first covering the page title's category-creation move, the second covering the cold-visitor confusion risk — and ensure each block opens with its finding in the first sentence. Add a plain-language gloss for 'procurement conversations' on first use. Cut the fourth paragraph to under 60 words. Replace the abstract closing sentence in the risk paragraph with a concrete, Webflow-specific observation. Attach a condition to every causal or risk claim (e.g. 'if a visitor arrives cold and has no prior brand exposure') so no claim reads as a universal rule. Trim total section to under 380 words.",
+  "dimensionScores": {
+    "evidenceAccuracy": 19,
+    "specificity": 13,
+    "plainLanguage": 13,
+    "scannability": 8,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

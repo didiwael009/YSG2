@@ -1,0 +1,49 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Section 03 paragraph in 'The shift' H3 ends with a causal/outcome claim: 'Removing named individual reps in favour of a customer count suggests the page is now written for procurement teams evaluating at scale' — this uses jargon ('procurement teams') without an immediate plain-language definition, and the word 'procurement' appears in a framing that reads as a confident conclusion rather than a hedged observation.",
+    "The term 'procurement teams' is used without a plain-language definition attached in the same sentence — rubric requires immediate definition on first use of expert terms.",
+    "The third paragraph in 'The shift' H3 block exceeds 60 words (approximate count: ~75 words) — scannability penalty applies.",
+    "The second paragraph in 'The shift' H3 block also exceeds 60 words (approximate count: ~65 words) — scannability penalty applies.",
+    "The section word count is approximately 335 words — over the 180–320 word ceiling.",
+    "The causal inference 'Both changes point away from explaining what the category is and toward describing a product buyers are expected to already want' is not traceable to provided evidence; the evidence notes explicitly state 'No confirmed strategy is implied' — this is an unsupported causation claim.",
+    "The finding in the 'The shift' H3 does not appear in the first two sentences — the paragraph opens with page title/meta data before delivering a finding, violating the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula check.",
+    "The '2026 — current state' H3 does not deliver a practical takeaway in its first two sentences — it describes the layout before any actionable finding.",
+    "The closing sentence of the 'The shift' H3 paragraph ('Removing named individual reps...suggests the page is now written for procurement teams evaluating at scale, not individual contributors exploring a new category') is abstract and uses jargon rather than being concrete or actionable.",
+    "Meta description quote in 'The shift' section includes 'multimodal revenue signal processing' — this is an expert/technical term quoted verbatim but not explained for the founder audience.",
+    "H1 rendering artefact explanation in '2026' block adds a parenthetical aside that breaks reading flow and is not a clean analytical paragraph structure."
+  ],
+  "requiredFixes": [
+    "Trim the section to under 320 words — cut or merge the second and third paragraphs in 'The shift' H3, each of which exceeds 60 words.",
+    "Replace the unsupported causal claim 'Both changes point away from explaining what the category is and toward describing a product buyers are expected to already want' with hedged language such as 'This may suggest...' or 'One reading is that...' — the evidence explicitly flags no confirmed strategy.",
+    "Add an immediate plain-language gloss after 'procurement teams' — e.g., 'procurement teams (the buying committees that evaluate software at scale)' — or replace the term with a plain description.",
+    "Reorder the 'The shift' H3 so the finding appears in the first sentence, not after two sentences of descriptive data (page title change, meta description change).",
+    "Rewrite the closing sentence of the 'The shift' H3 to be concrete and actionable rather than an abstract inference about audience segment strategy.",
+    "Add a brief plain-language note when quoting 'multimodal revenue signal processing' — the founder audience needs context for this technical phrase even if it is a verbatim quote.",
+    "Move the '2026 — current state' H3's practical takeaway (what this means for the reader) to its first two sentences, ahead of the layout description.",
+    "Remove or tighten the parenthetical aside about the rendering artefact in the '2026' block — either fold it into a footnote or cut it; it disrupts analytical flow."
+  ],
+  "riskFlags": [
+    "'Both changes point away from explaining what the category is and toward describing a product buyers are expected to already want' — outcome/causation claim not supported by evidence; evidence note explicitly states 'No confirmed strategy is implied.'",
+    "'Removing named individual reps in favour of a customer count suggests the page is now written for procurement teams evaluating at scale' — causal inference about audience intent not traceable to evidence; no condition attached (e.g., 'if the goal was to target procurement buyers').",
+    "The phrase 'procurement teams evaluating at scale' uses 'procurement-stage' adjacent framing that implies a confirmed strategic decision — this should be hedged."
+  ],
+  "seoNotes": [
+    "The ## heading 'Gong homepage 2020–2026: from cinematic category launch to enterprise product OS' contains the company name and 'homepage' — passes searchable heading check.",
+    "The article primary keyword 'Gong homepage teardown' is not used verbatim in any H3 heading — consider weaving it into at least one subheading or the section intro for on-page keyword density.",
+    "The meta description evolution is quoted in full — good for search context and internal linking to the broader article keyword cluster around 'Revenue AI OS'.",
+    "H3 headings ('2020 — launching a category nobody had named yet', 'The shift — from category education to product credibility', '2026 — current state') are year-anchored and descriptive, which supports featured-snippet eligibility for 'Gong homepage changes' type queries."
+  ],
+  "rewriteInstruction": "Rewrite the 'The shift' H3 to open with its finding in the first sentence — state the observable change plainly before presenting the evidence (title/meta quotes). Cap both body paragraphs in that block at 60 words each, and hedge all causal inferences with 'may suggest' or 'one reading is'. Add a one-clause plain-language definition immediately after 'procurement teams'. In the '2026' H3, move the reader-relevant takeaway to sentence one, then describe the layout. Remove the parenthetical rendering-artefact aside or convert it to a brief bracketed note. Cut to under 320 words total — the layout description in '2026' can lose 20–30 words without losing meaning.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 13,
+    "plainLanguage": 13,
+    "scannability": 8,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 80
+}

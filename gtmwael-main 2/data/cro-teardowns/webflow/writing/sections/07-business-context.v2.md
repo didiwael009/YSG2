@@ -1,17 +1,13 @@
-## Why Webflow's homepage shifted from designer tool to enterprise platform
+## How a $140M Series B, the Intellimize acquisition, and an 8% layoff forced Webflow to pick a buyer
 
-### Market entry context
+### Webflow's market position from 2020 to 2026
 
-Webflow raised over $330 million between 2021 and 2022, reaching a $4 billion valuation. That funding coincided with reported enterprise revenue growth from $1 million to $8 million in 2021 alone. The company began competing in a maturing no-code market where Framer captured designer mindshare and Wix launched Studio for agencies.
+Webflow reportedly raised a $140M Series B in 2021, valuing the company at $2.1 billion, then a further $120M Series C at $4 billion — with enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M. Meanwhile, Framer took design-led users and AI-native site builders began threatening the self-serve base from below.
 
-### Product and competitive evolution
+### What changed in Webflow's homepage messaging
 
-The 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization. The company called this move toward a "Website Experience Platform." The homepage shift from **"Break the code barrier"** to **"Make your website a growth engine"** is consistent with targeting marketing leaders rather than individual designers.
+The homepage shifts are consistent with that pressure. The page title moved from **"Responsive web design tool, CMS, and hosting platform"** to **"Webflow: The agentic web platform for modern businesses"** — dropping feature description for a category claim. The 2024 acquisition of Intellimize, reportedly framed as a move toward a "Website Experience Platform," points to the same upmarket direction.
 
-### Industry shift
+### What Webflow's homepage changes mean for your own positioning
 
-In 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development. The homepage removed showcase CTAs that promoted community work and added **"Contact Sales"** as a primary action. This points to prioritizing predictable enterprise contracts over viral designer adoption — a tradeoff visible in how the page now filters for buyers, not builders.
-
-### Five-minute test: Count your zero-commitment CTAs vs. sales-contact CTAs
-
-Open your homepage. Count how many primary CTAs let someone start without talking to sales. Then count CTAs that require contact. If most require sales contact but your brand still depends on non-enterprise traffic, you may be filtering out the buyers who actually arrive.
+The 2024 layoffs reportedly redirected resources toward AI-first features, and the homepage followed — **"Contact Sales"** rose to primary CTA while **"Get started — it's free"** was demoted to secondary. Webflow's changes suggest a deliberate trade-off rather than a universal rule. Check your own page title: does it describe what your product does, or does it claim a category? If it still lists features, your homepage may be built for a buyer you have already outgrown.

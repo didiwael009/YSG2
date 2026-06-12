@@ -1,0 +1,44 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "Section 3 (synthesis paragraph) runs approximately 68 words — exceeds the 60-word paragraph cap and triggers a scannability penalty.",
+    "The paragraph beginning 'The page title moved from...' runs approximately 72 words — exceeds the 60-word cap.",
+    "The opening of H3 block 3 ('What Expensya's messaging shift signals about its target buyer') buries the takeaway — the first sentence is a conclusion but the second continues the conclusion rather than delivering an actionable implication, making the block feel like analysis rather than a founder-facing finding.",
+    "Minor: the phrase 'aspiration positioning' does not appear, but 'aspirational category definition' appears once in the evidence — this is not used in the draft, so no penalty. No forbidden jargon terms are used, which is positive.",
+    "The H3 heading 'What Expensya's messaging shift signals about its target buyer' is slightly abstract and borderline 'clever-only' — it contains 'messaging' and 'Expensya' so it passes the searchable heading check, but it could be more concrete.",
+    "No outcome/causation hard claims detected — causal language is appropriately hedged with 'suggests', 'may indicate', 'consistent with'. No hard cap triggered.",
+    "Word count is approximately 370 words — within the 200–380 word limit, though at the high end."
+  ],
+  "requiredFixes": [
+    "Split the paragraph starting 'The page title moved from...' (approx 72 words) into two separate paragraphs — one for the page title change, one for the section heading shifts — to stay under the 60-word paragraph cap.",
+    "Trim or split the synthesis paragraph opening H3 block 3 ('The page now reads as though...') which runs approximately 68 words. The conclusion sentence and the evidence sentence should be separated.",
+    "Reorder H3 block 3 so the practical implication appears in the first sentence, not after the synthesis. Example: lead with what the combined signals mean for the founder, then explain the evidence behind it.",
+    "Add a concrete FINDING as the first sentence of H3 block 3 — currently the block opens with a summary conclusion ('The page now reads as though it is built for one specific reader') but does not state the implication for the reader until the paragraph ends. Per the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula, the implication for the founder should close the analytical paragraph, not float as a standalone summary."
+  ],
+  "riskFlags": [
+    "The phrase 'may indicate the visitor Expensya now wants to attract already operates in a French-speaking context' is appropriately hedged — no hard risk.",
+    "The claim 'may indicate the page is now written for a finance director or CFO' is hedged — acceptable.",
+    "No financial figures, named events, or dates used without hedging.",
+    "No CTA or nav items named in section 05 context here — not applicable to this section.",
+    "The phrase 'Writing the headline in French suggests the page is no longer trying to speak to every market equally' is an inference from evidence, not a causation claim — acceptable as written."
+  ],
+  "seoNotes": [
+    "The ## heading 'How Expensya's Homepage Messaging Shifted from English Automation to French Finance-Team Positioning' is strong — contains company name, 'homepage', 'messaging', and a specific topic term. Good for search.",
+    "H3 headings all contain 'Expensya' plus a specific topic ('headline shift', 'meta description shift', 'messaging shift') — good for featured snippet targeting.",
+    "The founder test at the end creates a natural long-tail query pattern ('how to audit homepage messaging for buyer specificity') which may attract additional informational traffic.",
+    "The article correctly avoids framing this as a cosmetic change — the strategic repositioning angle is preserved throughout, consistent with the SEO intent evidence.",
+    "Secondary keyword 'Expensya localization strategy SaaS' is implicitly addressed but not surfaced in any heading — consider whether one H3 could include 'localization' or 'French-market' for secondary keyword support."
+  ],
+  "rewriteInstruction": "The draft is close to passing at a high score. Make three targeted fixes: (1) Split the long paragraph in H3 block 3 that covers both the page title change and section heading changes — each idea needs its own short paragraph under 60 words. (2) Reorder H3 block 3 so the first sentence delivers the practical implication for the founder ('If your page signals a specific buyer role in its headline, title, and meta description simultaneously, the buyer has less work to do qualifying themselves'), then use the subsequent sentences to support that with Expensya's evidence. (3) Trim the opening synthesis sentence of block 3 — 'The page now reads as though it is built for one specific reader: a French-speaking finance professional accountable for compliance and spend control' is a strong conclusion but the paragraph that follows it repeats the same point at length. Cut the repetition and let the evidence do the work. Do not change the bold-quote formatting, the hedged causal language, or the founder test — all three are well-executed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 14,
+    "plainLanguage": 19,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

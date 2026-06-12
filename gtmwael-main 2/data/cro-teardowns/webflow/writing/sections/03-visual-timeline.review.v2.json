@@ -1,0 +1,47 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "H3 block 1 ('2020 — a page built for someone learning Webflow for the first time') does not deliver a practical takeaway in the first two sentences — it opens with description, not a finding or implication the founder can act on.",
+    "H3 block 2 ('The shift — ...') has no practical takeaway in the first two sentences — it opens with observation, not implication.",
+    "H3 block 3 ('Webflow 2026 — enterprise positioning replaces product walkthrough') has no practical takeaway in the first two sentences either.",
+    "The closing 'runnable test' is partially specific (it names the Webflow headline) but asks a reflective question rather than giving an instruction with a measurable output — it fails the '<5 min specific test' requirement.",
+    "The first H3 heading is clever-description only ('a page built for someone learning Webflow for the first time') with no searchable term such as 'homepage', 'messaging', or 'positioning' in the sub-heading — minor issue at H3 level but contributes to scannability penalty.",
+    "H3 block 1 body paragraph is approximately 72 words — exceeds the 60-word cap.",
+    "H3 block 3 body paragraph is approximately 62 words — marginally over the 60-word cap.",
+    "The opening sentence of the draft ('The 2020 page was built for someone encountering Webflow for the first time') repeats the H3 heading almost verbatim, wasting the first sentence rather than stating a finding.",
+    "The section does not explicitly state the page title change from 'Responsive web design tool, CMS, and hosting platform | Webflow' to 'The agentic web platform for modern businesses' in full — the before-state title is omitted, making the transition less anchored.",
+    "The meta description change — one of three confirmed messaging changes in the evidence — is entirely absent from the draft, meaning the section incompletely covers the visual/textual arc.",
+    "No section-level word count issue: draft is approximately 290 words, within the 180–320 range.",
+    "The H3 block 2 heading contains the two verbatim headline quotes, which aids scannability but makes the heading very long — not a hard penalty but a style flag."
+  ],
+  "requiredFixes": [
+    "Rewrite the opening sentence of H3 block 1 to lead with a finding (e.g., 'The 2020 Webflow homepage was a product explainer, not a business case') rather than restating the heading.",
+    "Cut H3 block 1 body to under 60 words — remove or compress the isometric imagery detail into the same sentence as the headline observation.",
+    "Add the meta description change to the timeline arc — it is in the evidence and completes the shift from 'professional website platform' to 'AEO and AI search' framing.",
+    "Add the before-state page title ('Responsive web design tool, CMS, and hosting platform | Webflow') explicitly so the reader can see both ends of the title arc, not just the current state.",
+    "Replace the closing reflective question with a specific runnable test: instruct the founder to open the Webflow homepage, read only the H1 and page title, and write down in one sentence who those two elements are written for — then compare that person to their own top customer segment.",
+    "Move the practical implication to the first two sentences of each H3 block — currently all three blocks open with description and bury (or omit) the takeaway."
+  ],
+  "riskFlags": [
+    "The phrase 'replaced language aimed at someone evaluating whether to try the product at all' implies intent and causal substitution — the evidence shows the language changed but does not confirm the strategic reason. Soften to 'the new section no longer addresses someone early in evaluation' or attach a condition.",
+    "Saying the 2020 page 'walked visitors through the product step by step' implies a UX intention not directly stated in the evidence — the evidence lists headings 'Design', 'Build', 'Launch' but does not confirm sequential intent. Flag as inference."
+  ],
+  "seoNotes": [
+    "The ## section heading ('Webflow homepage 2020–2026: from designer empowerment tool to enterprise growth platform') contains the company name, 'homepage', and a date range — strong for search.",
+    "The phrase 'agentic web marketing platform' appears in the draft as a direct quote from the evidence and matches a novel keyword cluster that may attract early search volume — good to include.",
+    "The draft does not use the primary keyword 'Webflow homepage teardown' anywhere in the body — consider one natural mention in an H3 or the closing paragraph.",
+    "The meta description change (from 'professional website platform built for your business' to 'AEO built in, trusted by over 300k teams') is a significant SEO signal shift — its omission from the draft is also a missed SEO content opportunity for this article."
+  ],
+  "rewriteInstruction": "Keep the three-block H3 structure and all the bolded quotes — those are correct. Fix three things. First, rewrite the opening sentence of each H3 block so the first sentence states a finding or implication, not a description (use the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula). Second, add one short sentence covering the meta description change — it is the third confirmed messaging shift and its omission makes the timeline feel incomplete. Third, replace the closing reflective question with a concrete five-minute instruction: tell the founder to open Webflow.com, read only the H1 and page title, write one sentence describing who those two elements address, then check whether that person matches their own top buyer — this is specific, runnable, and anchored to Webflow's evidence. Finally, trim H3 block 1 to under 60 words by merging the imagery detail into the headline sentence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 14,
+    "plainLanguage": 18,
+    "scannability": 9,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

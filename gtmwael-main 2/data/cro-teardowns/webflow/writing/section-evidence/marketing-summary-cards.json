@@ -1,22 +1,22 @@
 [
   {
-    "label": "Growth model",
-    "value": "Viral showcase → Sales-led platform",
-    "note": "Removed #MadeInWebflow showcase CTAs; added Contact Sales"
+    "label": "Positioning shift",
+    "value": "Code barrier → Revenue asset",
+    "note": "H1 moved from practitioner problem-frame to CMO outcome-frame, erasing technical empowerment language entirely"
   },
   {
     "label": "Target buyer",
     "value": "Freelance designers → Marketing leaders",
-    "note": "From 'Who uses Webflow' to 'Everything marketing teams love'"
+    "note": "'Who uses Webflow' replaced by 'high-performing brands' — a deliberate persona narrowing, not an expansion"
   },
   {
-    "label": "Category claim",
-    "value": "No-code tool → Agentic web platform",
-    "note": "Page title introduced 'agentic' terminology for AI-era positioning"
+    "label": "Sales motion",
+    "value": "Self-serve first → Enterprise pipeline first",
+    "note": "'Contact Sales' elevated to primary CTA; 'Free until you're ready to launch' section heading removed entirely"
   },
   {
-    "label": "Outcome promise",
-    "value": "Break code barrier → Growth engine",
-    "note": "H1 shifted from capability unlock to business outcome delivery"
+    "label": "Category play",
+    "value": "Tool → Agentic web platform",
+    "note": "Page title replaced feature taxonomy with a coined category label before the market adopted the term"
   }
 ]

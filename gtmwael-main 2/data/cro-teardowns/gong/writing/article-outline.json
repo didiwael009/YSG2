@@ -1,60 +1,112 @@
 {
-  "angle": "Gong shifted from evangelizing a new category ('Revenue Intelligence') to claiming ownership of enterprise revenue infrastructure ('Revenue AI OS'), removing all educational scaffolding and assuming buyers arrive already convinced they need revenue AI — a move that trades addressable market breadth for deal size and platform lock-in among enterprises already committed to the category.",
+  "angle": "Gong's homepage evolution is the story of a company that invented a category, declared victory over it, and then erased it — replacing 'Revenue Intelligence' with 'Revenue AI OS' not to explain a new concept but to claim infrastructure status before competitors could, using scale proof and named product architecture to skip the education phase entirely.",
   "distinct_from": [
-    "Category creator becomes category infrastructure owner",
-    "From teaching what RI is to assuming you know",
-    "Educational nav removal signals category maturity assumption"
+    "Category inventor who then abandoned its own category label",
+    "OS-layer claim backed by real multi-product depth",
+    "Education-to-authority funnel compression at scale",
+    "Pandemic-driven growth funding a platform identity pivot"
   ],
   "sections": [
     {
       "id": "01-intro",
       "custom_h2": null,
-      "goal": "Establish that Gong's homepage evolution reveals a strategic bet that the 'Revenue Intelligence' category no longer needs explanation — the company removed 'What is RI?', podcast links, and practitioner testimonials, replacing them with infrastructure terminology ('Revenue AI OS', 'multimodal signal processing') that assumes technical evaluation rather than category education.",
+      "goal": "Open with the paradox that defines Gong's story: the company that coined 'Revenue Intelligence' as a category is the same company that erased it from its own homepage — frame this as a deliberate infrastructure land-grab, not a rebrand, and introduce the central tension between category educator and platform-of-record claimant that the rest of the article unpacks.",
       "word_target": 80,
       "evidence_sources": [
-        "strategic-shift",
+        "summary-cards",
         "messaging",
-        "summary-cards"
+        "strategic-shift",
+        "seo-intent"
       ],
-      "marketing_lens": "category"
+      "marketing_lens": "category|positioning|brand"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Gong homepage 2020–2025: from cinematic category launch to enterprise product OS",
+      "goal": "Show the design arc as two distinct eras separated by a deliberate signal: the 2020 full-bleed gradient hero with illustrated characters and bold 'REVENUE INTELLIGENCE' lettering communicated a brand asserting a new concept into existence, while the current split-layout with interactive UI mockup and soft gradient communicates a product that expects to be evaluated, not explained — highlight how the removal of lifestyle illustration and addition of product interface screenshots mirrors the buyer shift from sales practitioner to GTM infrastructure evaluator.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Gong's H1 shifted from category noun to outcome verb — and what that reveals about its target buyer",
+      "goal": "Trace the precise linguistic pivot from 'REVENUE INTELLIGENCE' (a static noun-phrase category label requiring explanation) to 'Revenue AI Built To Predict churn' (a dynamic, outcome-specific verb construction that assumes buyer familiarity) — then connect this to the meta description swap that removed 'sales conversations' and 'sales optimization' in favor of 'entire GTM organization' and 'multimodal revenue signal processing,' demonstrating how Gong systematically rewrote every messaging layer to address CROs and RevOps leaders rather than VP of Sales practitioners.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Gong removed 'What is RI?' from its nav and what that says about its sales motion",
+      "goal": "Analyze the navigation removal of 'What is RI?' and feature-specific pages (Coaching Recommendations, Deal Visibility) as a deliberate compression of the education funnel — show how named sales VP testimonials as CTAs (Paul Santarelli, Bevin Anton, Tonni Bennett) were replaced by anonymous case-study and product-discovery CTAs, signaling a shift from peer-practitioner social proof to ROI evidence aimed at infrastructure evaluators who are authorizing budget rather than seeking practitioner validation; connect the addition of 'Pricing' and 'Book a demo' to the nav as evidence of a compressed, bottom-of-funnel-accelerated sales motion.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
     },
     {
       "id": "07-business-context",
-      "custom_h2": "## How Gong's $7.25B valuation forced it to stop teaching and start platforming",
-      "goal": "Explain that Gong's 2020-2021 hypergrowth (Series D at $2.2B, Series E at $7.25B within 9 months) and rapid customer expansion to 2,000+ accounts including Fortune 20 companies created investor pressure to demonstrate platform economics rather than point-solution adoption — the company had to prove it could capture enterprise-wide budgets through infrastructure positioning rather than continuing to educate departmental buyers on a category it had already won, especially as competitors like Clari and ZoomInfo consolidated and category growth rates normalized post-pandemic.",
+      "custom_h2": "## How $450M in funding, a SaaS downturn, and Gartner's new Magic Quadrant forced Gong to outgrow its own category",
+      "goal": "Explain the three external pressures that made erasing 'Revenue Intelligence' a strategic necessity rather than a branding preference: (1) the 2022–2023 SaaS downturn that compressed per-seat revenue intelligence budgets and exposed the fragility of a single-category positioning; (2) the Clari-Salesloft merger and ZoomInfo-Chorus consolidation that threatened to commoditize the conversation intelligence layer Gong invented; and (3) Gartner's December 2025 Magic Quadrant for Revenue Action Orchestration redefining the category ceiling — all of which made platform-of-record positioning with named product architecture (Revenue AI OS) the only defensible move at $300M+ ARR.",
       "word_target": 180,
       "evidence_sources": [
-        "business-context-research",
+        "messaging",
+        "summary-cards",
         "strategic-shift",
-        "messaging"
+        "business-context-research"
       ],
-      "marketing_lens": "positioning"
+      "marketing_lens": "category|positioning|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Gong's decision to retire the category it invented",
+      "goal": "Deliver exactly 3 specific, runnable patterns: (1) The 'category graduation signal' — how to know when your owned category has become a ceiling rather than a moat (Gong's trigger: Google autocomplete, inbound questions shifting from 'what is this' to 'how does it integrate'); (2) The 'OS naming move' — why appending 'OS' or 'platform-of-record' language only works if you have multi-product depth and scale proof to back it, and how Gong's 5,000+ customers and RightBound acquisition gave it the architecture to make the claim credible; (3) The 'education-to-authority funnel compression' — the tactical sequence Gong used to remove explanatory content (What is RI?, coaching pages, practitioner CTAs) only after replacing it with scale signals and named ROI evidence, so no comprehension gap opened during the transition.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|category"
     }
   ],
   "at_a_glance_cards": [
     {
-      "label": "Category strategy",
-      "value": "Evangelist → Infrastructure owner",
-      "note": "Removed 'What is RI?' and all educational nav"
+      "label": "Positioning shift",
+      "value": "Category inventor → Infrastructure owner",
+      "note": "Page title changed from 'Revenue Intelligence Technology' to 'Gong - Revenue AI OS,' signaling a move from category definition to platform-of-record claiming"
     },
     {
       "label": "Target buyer",
-      "value": "VP Sales → CRO + GTM Org",
-      "note": "Meta description shifted from 'sales optimization' to 'entire GTM organization'"
+      "value": "VP of Sales → CRO and RevOps",
+      "note": "Meta description removed 'sales teams' and 'sales optimization'; replaced with 'entire GTM organization' and 'multimodal revenue signal processing'"
     },
     {
-      "label": "Proof mechanism",
-      "value": "Practitioner names → Case study CTAs",
-      "note": "Removed individual VP testimonials; added quantified efficiency claims"
+      "label": "Sales motion",
+      "value": "Peer proof → ROI evidence + demo",
+      "note": "Named sales VP testimonial CTAs (Santarelli, Anton, Bennett) replaced by anonymous case-study links and a direct 'Book a demo' CTA"
     },
     {
-      "label": "Technical framing",
-      "value": "Category term → Architecture stack",
-      "note": "From 'Revenue Intelligence' to 'Revenue AI OS' with agent/signal terminology"
+      "label": "Category play",
+      "value": "Education phase declared complete",
+      "note": "'What is RI?' removed from nav entirely — Gong treats category familiarity as assumed, not as a conversion prerequisite"
     }
   ],
   "confidence_level": "high",
-  "generatedAt": "2026-06-12T08:09:22.479Z",
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.025725
+  "generatedAt": "2026-06-12T10:29:22.241Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.047714999999999994
 }

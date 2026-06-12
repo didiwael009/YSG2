@@ -1,0 +1,50 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section heading 'Three homepage moves from Webflow's evolution that SaaS teams can test' is borderline searchable but lacks 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion' as explicit terms — 'homepage moves' is weak for SEO intent.",
+    "H3 heading 'Secondary CTA demotion — Webflow moved \"Start for free\" out of the primary position without removing it' exceeds typical heading length and reads more like a sentence than a searchable subhead.",
+    "Causal/outcome claim without condition: 'The demotion suggests the page may now be prioritised for enterprise pipeline... and that only works if your sales team can handle the inbound' — the conditional is present but 'prioritised for enterprise pipeline' is still an unsupported causal inference not directly traceable to evidence (evidence says 'may indicate', not confirms).",
+    "Causal claim: 'This pattern is worth testing if your self-serve conversion rate is healthy but your average deal size has stalled' — the evidence does not state deal size stalled for Webflow; this is presented as a generalised trigger without hedging that it is inferred.",
+    "Paragraph 2 of the 'Persona narrowing' H3 block — approximately 48 words — contains two distinct ideas (copy filtering out the wrong audience AND the persona contrast between founder and CMO), which risks violating the max-2-ideas rule for an analytical paragraph.",
+    "The term 'persona narrowing' is used in the H3 heading and then defined inline — acceptable — but the definition ('tightening who the page speaks to') appears inside the same sentence as the term, which is correct. No violation here, but the term 'coined' (as in 'coined term') is used without explanation for a founder audience.",
+    "BOLD QUOTES check: All verbatim CTAs and headings appear in **bold quotes** — no violation detected.",
+    "Word count is approximately 420 words — this EXCEEDS the 220–380 word cap.",
+    "The opening of the first H3 block delivers its finding in sentence one — compliant. The second H3 opens with the company action and then explains — compliant. The third H3 opens with the defined term then its meaning — the finding is in sentence one, compliant.",
+    "The third H3's runnable test ('Go to your homepage and highlight every line that reduces personal risk') is reasonably specific and under 5 minutes — passes founderTakeaway. However the first H3's test ('Count which CTA appears first. Then ask: does your sales team have a response time target...') is strong and specific.",
+    "No forbidden jargon terms from the penalty list appear in the draft — clean on that dimension.",
+    "'AEO (Answer Engine Optimization — getting your content surfaced in AI-generated answers, not just traditional search results)' — expert term defined inline on first use. Compliant.",
+    "Paragraph 2 of the first H3 block is approximately 68 words — this EXCEEDS the 60-word paragraph limit. Scannability penalty applies.",
+    "Paragraph 1 of the third H3 block is approximately 72 words — this EXCEEDS the 60-word paragraph limit. Scannability penalty applies.",
+    "Section word count of ~420 words exceeds the 380-word maximum — requires trimming."
+  ],
+  "requiredFixes": [
+    "Trim the section to under 380 words — approximately 40–50 words must be cut. Priority cuts: shorten H3 headings, trim paragraph 2 of H3 block 1 (currently ~68 words), and compress paragraph 1 of H3 block 3 (currently ~72 words) to under 60 words each.",
+    "Revise the ## section heading to include at least one of: 'homepage', 'CTA', 'conversion', 'messaging', or 'positioning' as an explicit search term — e.g. 'Three homepage CTA and messaging moves from Webflow's evolution that SaaS teams can test'.",
+    "Split paragraph 1 of the third H3 block ('Persona narrowing — tightening who the page speaks to — is visible in two removed headings...') into two shorter paragraphs, each under 60 words, following FINDING → EXPLANATION → EXAMPLE → IMPLICATION. The current paragraph carries three ideas: the definition of narrowing, the evidence (two headings), and the implication (visitors arrive already informed).",
+    "Hedge the causal inference in H3 block 1, paragraph 2: replace 'The demotion suggests the page may now be prioritised for enterprise pipeline' with 'The demotion is consistent with prioritising enterprise pipeline, though the evidence does not confirm this directly' — or equivalent language that signals inference rather than conclusion.",
+    "Define 'coined' when used in H3 block 2 paragraph 2 ('adding a CTA for a coined term') — a founder unfamiliar with category-creation strategy may not know what 'coined term' means in this context. Add a brief parenthetical: '(a word your company invented rather than one the market already uses)'."
+  ],
+  "riskFlags": [
+    "'The demotion suggests the page may now be prioritised for enterprise pipeline over trial volume' — this is an inference; the evidence states 'may indicate' and should be written with equivalent hedging throughout, not stated as a pattern finding.",
+    "'This pattern is worth testing if your self-serve conversion rate is healthy but your average deal size has stalled' — this trigger condition is drawn from the evidence's 'copy_this_if' field but is presented as a generalised SaaS truth rather than a Webflow-specific observation. It could appear in any SaaS teardown and risks the specificity penalty.",
+    "'adding a CTA for a coined term may create confusion rather than curiosity' — outcome claim without direct evidence; should be framed as 'risks creating confusion' rather than stated as a likely outcome."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Webflow' and 'SaaS teams' but omits high-volume search modifiers like 'homepage', 'CTA', or 'conversion' — adding one of these would improve topical relevance for searchers landing on teardown-style content.",
+    "H3 headings are long and descriptive — good for voice search and featured snippets but may be truncated in SERPs if used as anchor text. Consider shortening to under 60 characters for the primary H3 labels.",
+    "The inline definition of AEO ('Answer Engine Optimization — getting your content surfaced in AI-generated answers') is a strong SEO moment — this is a rising search term and the definition adds indexable value.",
+    "The section does not use the primary keyword 'Webflow homepage teardown' in body text — one natural mention within the section would reinforce topical authority for the article's target keyword."
+  ],
+  "rewriteInstruction": "The draft is structurally sound and passes on evidence accuracy, jargon control, and founder takeaway quality — but it fails on word count (~420 words vs. 380 max) and has two paragraphs exceeding 60 words that must be split. Start by cutting paragraph 2 of H3 block 1 to under 55 words by removing the parenthetical explanation of 'enterprise pipeline' and trusting the reader. Then split paragraph 1 of H3 block 3 into two sentences max per paragraph: sentence 1 states the finding (two headings were removed), sentence 2 names them with bold quotes, new paragraph explains what replaced them and why it matters. Revise the ## heading to include 'homepage' or 'CTA' as an explicit word — not just implied by 'moves'. Finally, soften the one unsupported causal inference in H3 block 1 paragraph 2 ('The demotion suggests the page may now be prioritised') to match the hedged language in the evidence ('may indicate'). No structural rewrites needed — this is a trim-and-tighten pass.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 8,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

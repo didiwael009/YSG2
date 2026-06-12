@@ -1,0 +1,45 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Paragraph 2 of section 1 ('The five CTAs added...') exceeds 60 words — approximately 72 words.",
+    "Paragraph 2 of section 2 ('What the CTA data does make clear...') is approximately 65 words — exceeds 60-word limit.",
+    "The phrase 'bottom-of-funnel actions' is used with a bracketed definition, which is acceptable, but 'self-serve content' is jargon used without a plain-language definition in the same sentence.",
+    "The closing sentence of H3 block 2 ('The nav shift, in count at least, is consistent with that same direction') is abstract and not concrete or actionable — penalised under plainLanguage readability rules.",
+    "The ## section heading contains the company name and the word 'CTAs' but reads primarily as a clever/teaser headline rather than a searchable declarative — borderline but the topic term 'CTA' is present so partial credit applies.",
+    "The founder test is specific and anchored to Gong's evidence but the final instruction ('your page may be structured differently from where Gong has moved') ends on an abstract comparison rather than a concrete action.",
+    "Paragraph structure in H3 block 2 does not follow FINDING → EXPLANATION → EXAMPLE → IMPLICATION — the finding is buried after two sentences of caveat about data limitations.",
+    "The analytical paragraph in H3 block 1 tracks more than 2 distinct ideas simultaneously (named-person CTAs, Watch Video, five new CTAs, buyer self-evaluation behaviour) — penalised under plainLanguage density rules.",
+    "Nav item names are not present in the evidence, and the draft correctly acknowledges this — no penalty for that — but the H3 heading promises to reveal 'what navigation changes reveal' and then explicitly says it cannot; the heading slightly oversells what the section delivers."
+  ],
+  "requiredFixes": [
+    "Split paragraph 2 of H3 block 1 — isolate the list of added CTAs into one short paragraph, then make the interpretation ('this swap suggests...') its own standalone sentence or short paragraph, each under 60 words.",
+    "Rewrite the opening of H3 block 2 so the finding comes first — not the caveat about missing data. Lead with what the evidence confirms (CTA direction of travel), then acknowledge the nav-name limitation.",
+    "Cut or rephrase the closing sentence of H3 block 2 — replace 'consistent with that same direction' with a concrete implication: e.g., what a flat nav count alongside a CTA pivot typically signals about buyer journey design.",
+    "Add an immediate plain-language definition for 'self-serve content' in the same sentence it appears — e.g., 'self-serve content (pages a buyer can read without speaking to sales)'.",
+    "Trim paragraph 2 of H3 block 2 to under 60 words by removing the redundant phrase 'meaning steps a buyer takes when they are close to a decision, not still figuring out what the product does' — condense it into a clause, not a full parenthetical.",
+    "Rewrite the final sentence of the founder test to end on a concrete action, not a comparison — e.g., 'If person-to-proof skews toward person, replace one named-person CTA with a case study or demo link and note whether click-through changes within 30 days.'"
+  ],
+  "riskFlags": [
+    "The phrase 'your page may be structured differently from where Gong has moved' implies Gong's direction is the right direction — this is a soft causation claim without data support; hedge it explicitly.",
+    "'Suggests the page may now be built for someone who wants to evaluate on their own terms' — plausible inference but presented as near-fact; add a hedging qualifier such as 'one interpretation is' or 'the pattern is consistent with'.",
+    "'Bottom-of-funnel actions... steps a buyer takes when they are close to a decision' — characterising these five CTAs as bottom-of-funnel is an unsupported interpretive claim; 'See Gong in action' and 'Learn about our product' could equally serve mid-funnel visitors."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Gong', 'CTAs', and 'sales motion' — strong keyword signals for the primary query 'Gong homepage teardown' and secondary queries around Gong CTA strategy.",
+    "H3 heading 1 ('How Gong's CTAs shifted from peer endorsement to product evidence') is highly searchable and contains a clear topic signal — good for featured snippet targeting.",
+    "H3 heading 2 ('What Gong's navigation changes reveal — and what the evidence can confirm') is honest about evidence limits, which builds trust, but the nav item names not being available weakens the sub-section's topical depth for crawlers.",
+    "Verbatim CTA strings are bolded and quoted throughout — this helps entity recognition and passes the bold-quotes check cleanly."
+  ],
+  "rewriteInstruction": "Keep the evidence-grounded instinct of this draft — it correctly quotes every CTA verbatim, acknowledges data limits honestly, and avoids fabricating nav item names. Fix three structural problems: (1) split any paragraph over 60 words into two, each carrying only one idea; (2) rewrite H3 block 2 so its first sentence states the finding ('the CTA evidence points in one direction; the nav count is consistent but not confirmable') rather than leading with a caveat; (3) replace every abstract closing sentence with a concrete one — tell the reader what to do or what to watch for, not what the pattern 'reflects'. Add a plain-language gloss for 'self-serve content' in the same sentence it appears, and soften the bottom-of-funnel characterisation of the added CTAs to avoid an unsupported causal claim. The founder test is close — just end it on a concrete 30-day action, not a comparison to Gong.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 13,
+    "scannability": 9,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

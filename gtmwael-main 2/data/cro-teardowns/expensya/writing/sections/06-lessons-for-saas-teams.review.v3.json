@@ -1,0 +1,44 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section 03 ('Preserving a re-entry route') has a paragraph exceeding 60 words: the second analytical paragraph ('Removing a trial CTA without a sales team...') runs approximately 65–70 words — scannability penalty applies.",
+    "The closing sentence of H3 block 01 ('that gap is worth investigating before your next homepage refresh') is abstract and forward-drifting rather than concrete or actionable — plainLanguage penalty applies.",
+    "H3 block 03 buries its practical takeaway: the first sentence is a prescriptive instruction ('When you narrow your market focus, preserve at least one route back...') that reads as a strategic memo opener rather than a finding anchored to Expensya's evidence — plainLanguage/founderTakeaway penalty applies.",
+    "H3 block 03 contains two distinct ideas in a single paragraph (the CTA removal AND the toggle retention as evidence of unproven French-market scale) — plainLanguage density penalty applies.",
+    "The ## section heading 'What SaaS teams can study from Expensya's market-retreat homepage strategy' is partially searchable (contains 'Expensya' and 'homepage') but lacks 'positioning', 'messaging', 'CTA', or 'conversion' as a topic anchor — partial searchableHeadings penalty.",
+    "H3 block 02 repeats the phrase 'Expensya's swap from automation breadth to' which re-introduces the quoted CTA in a way that breaks the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula — the finding is not stated in the first sentence.",
+    "The word count is approximately 410–420 words, exceeding the 380-word cap — flag for trim.",
+    "The causal statement 'may collapse traffic from other regions' in H3 block 01 is not attached to a named condition from the evidence — minor evidenceAccuracy penalty.",
+    "The claim 'French-market scale is unproven' in H3 block 03 is an inference not directly traceable to the evidence — the evidence only shows the toggle was retained, not that scale is unproven — evidenceAccuracy penalty."
+  ],
+  "requiredFixes": [
+    "Trim the draft to under 380 words — remove the redundant re-statement of the Anglais toggle evidence in H3 block 03's second paragraph (it repeats the first paragraph's point).",
+    "Rewrite the opening sentence of H3 block 03 to lead with the finding ('Expensya kept the Anglais language toggle after removing Free trial and replacing it with Réservez une démo') before moving to the instruction — the takeaway must land in sentence one, not after the setup.",
+    "Split H3 block 03's second analytical paragraph into two separate sentences or move the 'French-market scale is unproven' claim to a hedged conditional ('if French-market scale is still being established') — the paragraph currently conflates two ideas and runs over 60 words.",
+    "Change the closing sentence of H3 block 01 from 'that gap is worth investigating before your next homepage refresh' to a concrete action ('check whether your top revenue country matches your homepage language in Google Analytics > Acquisition > Country').",
+    "Remove or hedge the phrase 'French-market scale is unproven' — it is an inference not supported verbatim by the evidence; replace with 'Expensya retained the Anglais toggle, suggesting the team is not yet committed to French-only traffic'.",
+    "Add a topic term ('positioning', 'messaging', or 'CTA') to the ## section heading so it carries a searchable anchor alongside the company name and 'homepage'."
+  ],
+  "riskFlags": [
+    "'French-market scale is unproven' — this is an editorial inference; the evidence shows the toggle was retained but does not state or imply scale is unproven.",
+    "'may collapse traffic from other regions' — causal framing without a named condition from the evidence; needs a conditional qualifier tied to a specific evidence element.",
+    "The implication that Expensya 'retained the Anglais toggle precisely because French-market scale is unproven' is a motivation claim; the evidence shows the toggle exists but does not explain why — this could be penalised as an unsupported causation claim."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Expensya' and 'homepage', which is good for primary keyword targeting ('Expensya homepage teardown'), but adding 'positioning' or 'messaging' would strengthen topical relevance for secondary queries.",
+    "H3 headings are specific and contain named evidence elements ('Politiques de dépenses', 'Améliorez la conformité', 'Anglais') — these are unlikely to rank independently but anchor the section for featured-snippet eligibility on the primary keyword.",
+    "The section is over the 380-word cap; trimming to ~360 words will also improve content density signals without losing the three distinct patterns."
+  ],
+  "rewriteInstruction": "Keep all three H3 blocks and their evidence anchors — the patterns are correctly identified and specific. Make four targeted changes: (1) trim the draft to under 380 words by cutting the repeated Anglais-toggle explanation in H3 block 03's second paragraph; (2) rewrite the H3 block 03 opening so the finding ('Expensya kept the Anglais toggle after removing Free trial') appears in sentence one, before the instruction; (3) replace the closing sentence of H3 block 01 with a concrete, named action a founder can take in Google Analytics; (4) hedge or remove 'French-market scale is unproven' — replace with an observation tied directly to the evidence (the toggle's presence), not to an inferred motive. Also add one searchable topic term — 'positioning', 'CTA', or 'messaging' — to the ## section heading.",
+  "dimensionScores": {
+    "evidenceAccuracy": 19,
+    "specificity": 13,
+    "plainLanguage": 14,
+    "scannability": 10,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

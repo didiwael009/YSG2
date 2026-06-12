@@ -1,0 +1,52 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "EVIDENCE ACCURACY: 'Anglais' appears as a named navigation item in the analysis, but it does NOT appear verbatim in either navAdded or navRemoved arrays in the evidence. This triggers a -8 penalty per rubric rule on named nav items not appearing verbatim in evidence arrays.",
+    "EVIDENCE ACCURACY: The claim 'Previously, visitors could self-select by company stage' implies a factual prior state (size-based navigation tiers) that is not traceable to any navRemoved item in the evidence. navRemoved contains no company-size tier labels.",
+    "EVIDENCE ACCURACY: 'Self-serve access appears to have been deprioritised entirely' is a hedged causation claim but still implies outcome without data — minor risk flag.",
+    "EVIDENCE ACCURACY: The phrase 'Size-based segmentation likely still happens — but now inside the sales conversation' is speculative and not traceable to evidence.",
+    "PLAIN LANGUAGE: No forbidden terms are used more than once — passes. However, 'self-serve' is used twice and while not a banned term, it is jargon used without a plain-language definition on first use.",
+    "PLAIN LANGUAGE: 'Size-based segmentation' is an expert term used without an immediate plain-language definition.",
+    "PARAGRAPH LENGTH: Third paragraph in H3-1 ('Removing Free trial is the sharpest signal here...') runs approximately 52 words — borderline but acceptable.",
+    "PARAGRAPH LENGTH: Second paragraph in H3-2 ('The additions include a language toggle...') runs approximately 65 words — exceeds the 60-word cap.",
+    "PARAGRAPH LENGTH: Third paragraph in H3-2 ('What is absent from the new navigation...') runs approximately 50 words — acceptable.",
+    "SCANNABILITY: The 65-word paragraph in H3-2 triggers a -4 penalty.",
+    "FOUNDER TAKEAWAY: The founder test is reasonably specific but is generic enough to apply to any SaaS company. It does not name Expensya's actual removed nav items or reference 'Réservez une démo' as the replacement mechanism. Partially penalised.",
+    "SEARCHABLE HEADING: The ## heading contains the company name 'Expensya' and references 'Free trial' and 'funnel' — passes, though 'CTA' or 'navigation' would strengthen SEO further.",
+    "BOLD QUOTES: All verbatim CTAs and nav items appear to be in bold quotes — passes.",
+    "WORD COUNT: Approximately 310 words — within the 180–320 word range.",
+    "SPECIFICITY: The second H3's opening paragraph about the language toggle is reasonably specific, but the closing paragraph about size-based segmentation is generic enough to appear in other teardowns without the named evidence to support it.",
+    "RHYTHM: Sentence lengths vary well in H3-1. H3-2 has two longer sentences stacked, slightly reducing rhythm."
+  ],
+  "requiredFixes": [
+    "REMOVE or REPLACE the reference to 'Anglais' as a named navigation item — it does not appear verbatim in the navAdded or navRemoved arrays. Either remove the claim entirely or replace it with an observation grounded only in what IS in the evidence arrays.",
+    "REMOVE the claim that 'Previously, visitors could self-select by company stage' — no navRemoved item supports the existence of company-size tier labels. Replace with a claim traceable to the actual navRemoved items or remove the paragraph.",
+    "DEFINE 'size-based segmentation' in plain language on first use — e.g., 'size-based segmentation (letting visitors pick their company size to see relevant content)'.",
+    "TRIM the 65-word paragraph in H3-2 (starting 'The additions include a language toggle') to under 60 words by splitting or cutting.",
+    "MAKE THE FOUNDER TEST MORE SPECIFIC: anchor it to Expensya's actual evidence — e.g., reference the removal of 'Free trial' and ask the founder to count how many of their current CTAs let a visitor self-serve without a sales conversation, then decide whether that matches their intended sales motion."
+  ],
+  "riskFlags": [
+    "'Anglais' is cited as a named navigation addition but does not appear in navAdded array — this is an invented fact and triggers a -8 evidence penalty.",
+    "'Previously, visitors could self-select by company stage' is not traceable to any navRemoved label in the evidence.",
+    "'Self-serve access appears to have been deprioritised entirely' implies an outcome without supporting data — should be framed as an observable change, not an inferred strategic decision.",
+    "'Size-based segmentation likely still happens inside the sales conversation' is speculation with no evidence basis."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Expensya' and 'Free trial' — good for branded search and comparison queries.",
+    "Adding 'CTA' or 'navigation' to the ## heading would improve targeting for queries like 'Expensya CTA changes' or 'Expensya homepage navigation'.",
+    "H3 headings are descriptive but not keyword-rich — consider adding 'CTA' or 'demo' to H3-1 for search targeting.",
+    "French-language CTAs in bold (e.g., 'Réservez une démo') add content specificity that may help with multilingual indexing signals."
+  ],
+  "rewriteInstruction": "Fix three things before resubmitting. First, remove all references to 'Anglais' as a navigation item — it is not in the evidence and its inclusion fires an -8 evidence penalty that drags the score below the pass threshold. Replace the language-toggle paragraph with an observation drawn only from the actual navAdded and navRemoved arrays. Second, remove or rephrase the claim about visitors previously self-selecting by company stage — no navRemoved item supports the existence of size-based tier labels, and this is a fabricated prior state. Third, trim the 65-word paragraph in H3-2 to under 60 words, define 'size-based segmentation' in plain language on first use, and rewrite the founder test so it names Expensya's specific removed CTAs ('Free trial', 'Discover our solutions') and asks the founder a question anchored to those exact items rather than a generic audit prompt.",
+  "dimensionScores": {
+    "evidenceAccuracy": 9,
+    "specificity": 10,
+    "plainLanguage": 15,
+    "scannability": 9,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

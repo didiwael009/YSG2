@@ -1,15 +1,13 @@
-## Why Gong's homepage changed
+## How reportedly $450M in funding, a SaaS downturn, and Gartner's new Magic Quadrant pushed Gong to reframe its homepage
 
-The messaging shifts visible on the homepage didn't happen in a vacuum — they tracked Gong's growth milestones.
+### Gong raised reportedly $450M while the category it built was maturing
 
-### Market entry context: Gong crossed 2,000 customers in 9 months
+Gong built its early identity around a category it invented. The page title read **"Revenue Intelligence Technology for Sales Teams | Gong.io"** — and that framing carried the company through a reportedly $200M Series D and a $250M Series E, reaching a reported $7.25 billion valuation by mid-2021. The category worked. Then the market caught up.
 
-Gong raised $200 million at a $2.2 billion valuation in September 2020, then $250 million at $7.25 billion just nine months later. By Q2 2021, the company had crossed 2,000 customers including three Fortune 20 accounts. The removal of **"What is RI?"** and **"Reveal: The RI Podcast"** from navigation between 2020 and 2026 coincided with this period of rapid customer expansion.
+### The 2022–2023 SaaS downturn and competitor consolidation changed the calculus
 
-### Product evolution: From conversation intelligence to Revenue AI OS
+Widespread sales team downsizing from 2022 into 2023 pressured Gong's per-seat pricing model and reportedly led to declines in net dollar retention — how much revenue Gong kept from existing customers year over year. ZoomInfo's acquisition of Chorus consolidated a direct competitor. The Clari-Salesloft merger, reportedly closed in December 2025, raised the stakes for what a platform had to offer. Sitting inside one category started to look like a ceiling.
 
-Between 2021 and 2024, Gong publicly announced the RightBound acquisition and launched generative AI features including Call Spotlight and Deal Spotlight, according to press releases. The homepage shift from **"REVENUE INTELLIGENCE"** to **"Revenue AI Built To Predict churn"** and the meta description change from **"better sales conversations"** to **"multimodal revenue signal processing, specialized AI agents"** is consistent with a company that added platform capabilities beyond single-department tools.
+### Gartner named a new category — and Gong's page title responded
 
-### Industry shift: Category consolidation and AI repositioning
-
-Gartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025, the same period when Clari and Salesloft merged. Gong's homepage removed **"Coaching Recommendations"** and **"Deal Visibility"** from navigation while adding **"Gong AI"** and **"Innovation"**. Open your homepage navigation in an incognito window. Count how many nav items explain what your category is versus how many assume the visitor already knows. If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one and measuring bounce rate on the pricing page.
+Gartner reportedly published its first Magic Quadrant for Revenue Action Orchestration in December 2025. The page title shift from **"Revenue Intelligence Technology for Sales Teams"** to **"Gong - Revenue AI OS"** is consistent with a company responding to a redefined competitive ceiling. Gong's acquisition of RightBound, an AI prospecting platform, in December 2025 points to the same direction: platform breadth, not category depth. To test whether your own category label is ready to retire, search your brand name plus your category term in Google and check whether autocomplete still needs the category word to identify you — if it doesn't, you may have the same signal Gong had.

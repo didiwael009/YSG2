@@ -172,6 +172,18 @@ function buildCompressedEvidence(writingDir: string): Record<string, unknown> {
     ? [{ from: titleFrom ?? '', to: titleTo ?? '' }]
     : [];
 
+  // Visual analysis — available when visual-analyzer.ts has run
+  const visualPath   = path.join(writingDir, 'section-evidence', 'visual-analysis.json');
+  const visualData   = fs.existsSync(visualPath)
+    ? (JSON.parse(fs.readFileSync(visualPath, 'utf-8')) as Record<string, unknown>)
+    : null;
+
+  // Business context research — available when context-researcher.ts has run
+  const researchPath = path.join(writingDir, 'section-evidence', 'business-context-research.json');
+  const researchData = fs.existsSync(researchPath)
+    ? (JSON.parse(fs.readFileSync(researchPath, 'utf-8')) as Record<string, unknown>)
+    : null;
+
   return {
     company:       ep?.companyName ?? 'unknown',
     url:           ep?.companyUrl ?? '',
@@ -203,6 +215,23 @@ function buildCompressedEvidence(writingDir: string): Record<string, unknown> {
     // Data quality
     dataQuality: bp.dataQuality ?? null,
     blueprintWarnings: bp.warnings ?? [],
+
+    // V6 enrichment — available for articles run through the new pipeline.
+    // Include enough detail for the judge to verify specific claims writers make
+    // (visual sophistication scores, specific key events with dates/types).
+    visualAnalysis: visualData ? {
+      design_evolution_label: visualData.design_evolution_label,
+      visual_shift_summary:   visualData.visual_shift_summary,
+      snapshots: visualData.snapshots,  // full per-snapshot scores so judge can verify numerical citations
+    } : null,
+    businessContextResearch: researchData ? {
+      company_stage_start: researchData.company_stage_start,
+      company_stage_end:   researchData.company_stage_end,
+      category_context:    researchData.category_context,
+      icp_evolution:       researchData.icp_evolution,
+      key_events:          researchData.key_events,  // full list so judge can verify specific dates/figures
+      confidence_level:    researchData.confidence_level,
+    } : null,
 
     // Section-level quality from Phase 4C
     sectionScores: qs?.sections?.map(s => ({

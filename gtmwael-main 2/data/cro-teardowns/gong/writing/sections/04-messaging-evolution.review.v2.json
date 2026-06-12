@@ -1,0 +1,48 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Meta description quote in H3-2 is altered from the evidence: the draft adds '(pulling data from calls, emails, and CRM into a single pipeline)' — this parenthetical does not appear in the evidence and is an invented addition to a verbatim quote.",
+    "Section 3 analytical paragraph contains more than 2 distinct ideas simultaneously: it introduces the practitioner-vs-executive framing, the section heading contrast, a new quoted heading, AND a buyer-evaluation conclusion — four things tracked at once.",
+    "The H3-3 paragraph exceeds 60 words (approximately 95 words) — scannability penalty applies.",
+    "The H3-2 block buries its practical takeaway — the reader must parse two quoted blocks before reaching the 'may indicate' finding. Finding does not appear in the first two sentences.",
+    "The term 'GTM' is used without a plain-language definition on first use. Expert readers know it, but the audience includes founders still learning.",
+    "'RevOps' in the founder test is used without definition — second expert term without explanation.",
+    "The H3-3 opening sentence leads with the conclusion in abstract framing ('practitioner-level persuasion to executive-level infrastructure framing') before delivering the evidence — this is a strategic-memo construction, not a plain founder-facing finding.",
+    "The word 'framing' is abstract jargon used without definition in H3-3 opening.",
+    "No hard evidence violation on the meta description quote itself, but the inserted parenthetical '(pulling data from calls, emails, and CRM into a single pipeline)' is fabricated context inside a bold-quoted verbatim — this is an evidence accuracy failure.",
+    "Word count is approximately 370 words — within range but tight against the 380 ceiling."
+  ],
+  "requiredFixes": [
+    "Remove the fabricated parenthetical '(pulling data from calls, emails, and CRM into a single pipeline)' from the meta description bold quote — it does not appear in the evidence. Quote the after-meta verbatim only.",
+    "In H3-2, move the finding ('sales conversations and sales optimization are gone, replaced by entire GTM organization') to the first sentence — before the quoted blocks, not after them.",
+    "Split H3-3 into two shorter paragraphs: one covering the section-heading contrast evidence, one covering the buyer implication. Each paragraph should track only one idea.",
+    "Add a plain-language gloss on first use of 'GTM' — e.g., 'GTM (go-to-market, meaning everyone involved in acquiring and retaining revenue)'.",
+    "Add a plain-language gloss on 'RevOps' in the founder test — e.g., 'RevOps (Revenue Operations — the team that owns the sales and marketing tech stack)'.",
+    "Rewrite the H3-3 opening sentence to lead with a concrete finding rather than an abstract framing label. Replace 'Gong's messaging has shifted from practitioner-level persuasion to executive-level infrastructure framing' with a specific observation anchored to the quoted evidence.",
+    "Trim the H3-3 analytical paragraph to under 60 words or split it — currently approximately 95 words."
+  ],
+  "riskFlags": [
+    "The draft says the meta after-copy includes '(pulling data from calls, emails, and CRM into a single pipeline)' inside a bold quote — this text does not appear in the evidence meta description and constitutes an invented fact inside a verbatim quote.",
+    "'This shift is consistent with the interpretation that the page no longer needs to explain what Gong does' — this is appropriately hedged with 'consistent with the interpretation', which is acceptable, but watch that subsequent paragraphs do not harden this into a causal claim.",
+    "'Your messaging may still be written for a buyer your product has moved past' — this is a conditional implication in the founder test, which is acceptable framing. No hard flag."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Gong', 'Homepage', 'Messaging', and 'H1' — strong keyword density for the primary search intent.",
+    "H3 headings include 'Gong's meta description changed' and 'Gong's messaging shift' — both contain the company name and topic terms, which supports internal anchor text and snippet eligibility.",
+    "The bold-quoted headline pairs (before/after) are well-structured for featured snippet extraction on queries like 'Gong homepage headline change' or 'Gong Revenue AI OS positioning'.",
+    "Secondary keyword 'Gong Revenue AI OS positioning strategy' appears naturally in the meta description analysis block — good organic placement.",
+    "The founder test at the end introduces 'RevOps' and 'CRO-level buyers' — these are secondary keyword-adjacent terms that support long-tail discoverability for the target audience."
+  ],
+  "rewriteInstruction": "Fix the fabricated parenthetical in the meta description bold quote first — that is the only hard evidence accuracy failure and it must be corrected before anything else. Then restructure H3-2 so the finding ('the page dropped sales-team language in favour of GTM-organization language') appears in sentence one, with the before/after quotes serving as evidence below it. In H3-3, split the single long paragraph into two: the first should present the section-heading contrast as a concrete observation (quote both headings, state what they signal), the second should state the buyer implication in one or two short sentences. Define GTM and RevOps on first use with a brief parenthetical — these are routine for expert readers but the audience includes founders still learning. Finally, rewrite the H3-3 opening to start with the specific observed contrast rather than an abstract label like 'practitioner-level persuasion to executive-level infrastructure framing' — lead with the quoted evidence, then name what it shows.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 13,
+    "plainLanguage": 14,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

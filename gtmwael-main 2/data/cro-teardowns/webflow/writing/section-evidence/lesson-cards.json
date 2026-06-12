@@ -1,26 +1,26 @@
 [
   {
     "number": "01",
-    "title": "Webflow replaced \"Break the code barrier\" with \"Make your website a growth engine\"",
-    "category": "Positioning",
-    "body": "The original headline spoke to designers who wanted to build without code. The new headline speaks to marketers who want business outcomes. This suggests a shift from product capability to business value. The change likely signals that Webflow is targeting teams who control budget and measure ROI, not individual practitioners exploring tools."
+    "title": "Webflow dropped 'Break the code barrier' — and stopped talking to developers entirely",
+    "category": "Messaging",
+    "body": "The original headline **\"Break the code barrier\"** frames the product as a tool for people frustrated by code — likely designers or non-engineers who still think in technical terms. The new headline **\"Make your website a growth engine\"** addresses a business outcome instead of a workflow pain. The shift suggests Webflow is now targeting marketing teams and decision-makers, not individual builders trying to avoid writing HTML."
   },
   {
     "number": "02",
-    "title": "\"Agentic web marketing platform\" appears three times — that's a category claim",
-    "category": "Messaging",
-    "body": "The new page title and opening H2 both use **\"agentic web marketing platform\"**. This phrase appears nowhere in the 2020 version. Webflow is naming a category that didn't exist six years ago. The repetition suggests this is deliberate positioning language, not a one-off experiment. It may indicate a play for category ownership in AI-era web tooling."
+    "title": "Webflow's page title now says 'agentic web platform' — that is a category claim, not a feature description",
+    "category": "Positioning",
+    "body": "The old title called Webflow a **\"Responsive web design tool, CMS, and hosting platform\"** — a feature list. The new title, **\"The agentic web platform for modern businesses\"**, names a category Webflow appears to be defining rather than joining. Paired with the added H2 **\"Webflow is the agentic web marketing platform for high-performing brands\"**, this suggests a deliberate move to own language before competitors adopt it."
   },
   {
     "number": "03",
-    "title": "The meta description now starts with \"Design, build, optimize, and rank in AI search\"",
-    "category": "Strategy",
-    "body": "The old meta description led with **\"Build responsive websites in your browser\"** — a product description. The new version opens with verbs tied to business outcomes and ends with **\"Trusted by over 300k teams\"**. This is a shift from explaining what the tool does to asserting who uses it and why. It suggests confidence in brand recognition over feature education."
+    "title": "Webflow removed 'Free until you're ready to launch' — and added 'Contact Sales' as a top CTA",
+    "category": "Funnel",
+    "body": "In 2020, the section heading **\"Free until you're ready to launch\"** lowered the barrier for solo builders and freelancers trying the product at zero cost. That heading is now gone. The current CTA set adds **\"Contact Sales\"** and **\"Talk to sales\"** alongside **\"Start for free\"**. This suggests Webflow is now qualifying for enterprise and mid-market buyers earlier in the page, rather than prioritising self-serve trial volume."
   },
   {
     "number": "04",
-    "title": "Webflow removed \"Who uses Webflow\" and added \"300,000+ brands move the needle\"",
+    "title": "Webflow removed 'Who uses Webflow' and replaced it with '300,000+ brands move the needle'",
     "category": "Trust",
-    "body": "The section heading change is subtle but meaningful. The old phrasing invited exploration. The new phrasing asserts scale and outcome. Pairing the number with **\"move the needle\"** ties credibility to results, not just adoption. This likely signals a shift from attracting curious visitors to reassuring buyers who are already qualified and comparing platforms."
+    "body": "The removed heading **\"Who uses Webflow\"** invited visitors to self-identify — a signal the team was still helping people figure out if Webflow was for them. The replacement, **\"300,000+ brands move the needle with Webflow\"**, skips that question entirely and leads with scale as social proof. This indicates the positioning has moved away from broad education toward reinforcing confidence for buyers who already expect enterprise adoption."
   }
 ]

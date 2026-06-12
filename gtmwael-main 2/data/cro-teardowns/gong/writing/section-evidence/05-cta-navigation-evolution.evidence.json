@@ -1,0 +1,60 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Gong",
+  "companyUrl": "https://www.gong.io/",
+  "articleTitle": "Gong Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Gong rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 4,
+    "ctaAdded": 5,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Gong homepage teardown",
+  "cta-changes": {
+    "added": [
+      "Read the case study",
+      "Learn about our product",
+      "See Gong in action",
+      "Visit the solutions hub",
+      "View more customer stories"
+    ],
+    "removed": [
+      "Watch Video",
+      "Paul Santarelli VP of Sales",
+      "Bevin Lyon VP, Customer Strategy",
+      "Tonni Bennett VP of Sales"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Trusted by 5,000+ customers",
+      "Winning GTM organizations run revenue on Gong",
+      "Pitchbook is 10x more efficient with revenue AI",
+      "Power your revenue engine with AI — from prospecting to expansion",
+      "Gong Revenue AI OS",
+      "Trusted by high-performing revenue teams in every industry",
+      "What our raving fans say",
+      "Everyone wins with Gong",
+      "Win more with revenue AI",
+      "Privacy Preference Center"
+    ],
+    "removed": [
+      "Get powerful visibility into your customer interactions with",
+      "Revenue Intelligence helps you fuel:",
+      "So What Does this look like? Glad you asked.",
+      "Skyrocket your success today"
+    ]
+  }
+}

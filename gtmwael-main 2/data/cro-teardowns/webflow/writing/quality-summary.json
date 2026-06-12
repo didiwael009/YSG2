@@ -1,30 +1,100 @@
 {
   "slug": "webflow",
-  "generatedAt": "2026-06-12T08:22:29.795Z",
+  "generatedAt": "2026-06-12T11:12:38.039Z",
   "mode": "standard",
   "sections": [
     {
       "sectionId": "01-intro",
       "finalVersion": 1,
-      "finalScore": 78,
-      "passed": false,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "The phrase 'Webflow's homepage stopped speaking to designers and started speaking to CMOs' is a strong causal/intentional claim. The evidence notes the headline and title changed, but the evidence explicitly states 'No confirmed strategy is implied.' Consider softening to 'appears to have shifted its audience signal from designers toward CMOs' or attaching a condition.",
+        "No financial figures, named events, or dates beyond the stated period are present — no hedging violations triggered."
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "The closing sentence ('shows you how to tell whether your own homepage is still talking to a buyer you've outgrown') introduces a second idea — a promise about the reader's own situation — that dilutes the section goal of naming the single biggest shift. The intro should land the finding, not preview a methodology.",
+        "The word count is approximately 110 words, which exceeds the 55–90 word ceiling specified in the section requirements.",
+        "The phrase 'Webflow homepage evolution' appears in the closing sentence and reads slightly promotional/self-referential rather than as a clean factual close — minor rhythm issue.",
+        "The page title quotes are presented as bold but without surrounding double-quote marks inside the bold: the format used is **'text'** style in the original instruction context, but the draft uses **\"text\"** — this is acceptable per the bold-quotes rule, no penalty, confirming compliance."
+      ],
+      "sectionCostUsd": 0.040677
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 1,
+      "finalScore": 81,
+      "passed": true,
       "loopsUsed": 0,
       "riskFlagCount": 3,
       "riskFlags": [
-        "HARD CAP TRIGGERED: Conversion outcome claim without data — 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no funnel data, conversion rate data, or customer acquisition data provided to support this claim. Total score capped at 60.",
-        "Causal claim without condition: 'The CTA shifted... to **\"Contact Sales\"** elevated to primary position.' — implies this shift caused or signals a specific business model change, but no conditional framing is attached.",
-        "Inference presented as fact: 'viral bottom-up adoption by practitioners' — the evidence does not contain data about adoption mechanics or viral coefficients."
+        "'The page stopped onboarding curious newcomers' — infers intent from the removal of two section headings. The evidence confirms the headings were removed but does not confirm the strategic intent. Should be hedged: 'the page no longer surfaces onboarding-oriented headings.'",
+        "'That is not a refinement. It is a different conversation with a different reader.' — presented as fact; no evidence confirms a deliberate audience shift. Hedge with 'suggests' or 'reads as'.",
+        "The section heading date '2020–2025' is a factual error — the teardown covers to Jun 2026 per the evidence."
+      ],
+      "remainingIssueCount": 9,
+      "remainingIssues": [
+        "Section heading says '2020–2025' but the evidence covers Jan 2020 to Jun 2026 — the end date is wrong.",
+        "Third H3 heading says '2025' but the evidence labels this snapshot 'Jun 2026 — current state'. The year is incorrect.",
+        "The phrase 'enterprise software sites tend to look' is a generic observation not traceable to evidence — mildly generic filler.",
+        "Paragraph starting 'The most visible change...' contains approximately 65 words — exceeds the 60-word paragraph limit.",
+        "Paragraph starting 'The current page leads...' contains approximately 72 words — exceeds the 60-word paragraph limit.",
+        "The term 'proof density' is used in the final analytical paragraph without an immediate plain-language definition at first use (it is defined only implicitly via an em-dash explanation in the same sentence, which partially mitigates but is not a clean standalone definition).",
+        "No explicit causal claims detected — good — but 'The page stopped onboarding curious newcomers' is a mild causation inference not directly supported by evidence; the evidence only confirms those sections were removed.",
+        "The section heading lacks 'positioning', 'messaging', 'CTA', or 'conversion' — it uses 'homepage' which satisfies the requirement, but 'designer empowerment tool' is not a searchable term and the date range '2020–2025' is factually wrong per evidence.",
+        "The intro paragraph of H3 block 1 ('The 2020 homepage opened...') buries its finding — it describes the layout before stating what the reader should take from it."
+      ],
+      "sectionCostUsd": 0.042057
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 3,
+      "finalScore": 81,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "'the internal sign-off process may become shorter if buyers already recognise the name' — this is a causal claim without a stated condition attached; it should be hedged with 'if buyers in your category are already familiar with the coined label' or similar.",
+        "'A visitor who has never heard of Webflow may leave without knowing what they would actually use it to do' — this is a plausible inference but is presented as a near-certainty; it should be hedged with 'may' or 'risks leaving' rather than stated flatly."
+      ],
+      "remainingIssueCount": 8,
+      "remainingIssues": [
+        "Section 3 (messaging shift / cold visitor paragraph) contains two distinct ideas tracked simultaneously — the 'cold visitor clarity problem' and the 'meta description safety valve' — in adjacent paragraphs that belong to the same H3 block, violating the single-idea-per-paragraph density rule.",
+        "The page title H3 block paragraph ('The page title confirms the direction...') exceeds 60 words — approximate count is 72 words — triggering a scannability penalty.",
+        "The meta description H3 block contains two analytical paragraphs (one on meta, one on page title) under a single H3, but the page title is a distinct evidence element that arguably warrants its own H3 or a tighter merge — the current structure buries the page title finding.",
+        "The closing sentence of the third H3 block ('That suggests the product explanation has not disappeared — only moved out of the headline and into supporting copy further down the page') is a qualified observation but leans abstract and does not deliver a concrete implication or action for the founder — it trails off rather than landing.",
+        "The H3 heading 'What Webflow's messaging shift signals about who the page is now written for' is slightly redundant with the section-level heading and does not surface the specific finding (cold visitor clarity risk) that its body actually covers — the heading undersells the content.",
+        "No explicit plain-language definition is provided for 'agentic web platform' at first use — the term is quoted verbatim from the evidence and contextualised, but not directly defined for a founder-reader who may not know what 'agentic' means in a software context.",
+        "'enterprise software marketing' in paragraph 3 is a moderately abstract noun stack and could read as strategist-to-strategist without a grounding example.",
+        "The founder test is reasonably specific but could be more precisely anchored to Webflow's own evidence — e.g., referencing 'Make your website a growth engine' and 'agentic web platform' by name as the test inputs, which would make the test runnable against THIS company's page rather than feeling slightly generic."
+      ],
+      "sectionCostUsd": 0.181659
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 2,
+      "finalScore": 88,
+      "passed": true,
+      "loopsUsed": 1,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'suggests the page may now expect some visitors who have already cleared the affordability question' — soft causal claim with no attached condition; needs an 'if [condition]' clause.",
+        "'Their removal suggests the page may no longer need to convince visitors that Webflow works in practice' — plausible but unsupported by the evidence; no data confirms visitor conviction levels changed. Flag as inference, not finding.",
+        "'Get started — it's free' framing: evidence shows this CTA in BOTH added and removed arrays, implying it existed across both snapshots. Treating it as purely a legacy/removed item is a factual misread of the evidence data."
       ],
       "remainingIssueCount": 6,
       "remainingIssues": [
-        "Conversion outcome claim without data: 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no evidence provided that the old model was 'viral bottom-up adoption' or that the new model is 'sales-assisted conversion of marketing teams'.",
-        "Causal claim without condition: 'The CTA shifted from **\"Get started — it's free\"** to **\"Contact Sales\"** elevated to primary position.' — no conditional framing (e.g., 'if this signals enterprise focus') to qualify the meaning of this shift.",
-        "Paragraph exceeds 90-word limit: The draft is a single 144-word paragraph (intro sections are capped at 90 words).",
-        "Generic closing sentence: 'After reading this teardown, you'll be able to identify whether your own homepage is still selling capability when it should be selling outcomes — and when that shift becomes safe to make.' — this is generic SaaS positioning advice and could appear in any teardown.",
-        "The phrase 'growth engine' appears twice without plain-language definition on second use (first in headline quote, then in the closing prediction).",
-        "Section does not achieve the stated goal: 'One paragraph that answers the search query in the first sentence. Names the company, the period, and the single biggest shift. Plain language only.' — the first sentence does not answer the search query ('how Webflow repositioned'); it states a fact ('Webflow replaced its entire homepage messaging'). The biggest shift is not named in the first sentence."
+        "The phrase 'suggests the page may now expect some visitors who have already cleared the affordability question' is a soft causal claim without an explicit condition attached — marginally acceptable but risks a -3 penalty.",
+        "The opening sentence of the first H3 ('Webflow's CTA stack grew from one entry point to several, each pointing toward a different type of buyer') is analytical but does not lead with the sharpest finding; the 'Explore AEO' insight is more surprising and would make a stronger opening.",
+        "The third paragraph in H3-1 ('Explore AEO is the most specific addition...') carries two distinct ideas — demand creation vs. capture, and homepage function — which slightly violates the two-idea-per-paragraph rule.",
+        "'Get started — it's free' appears in both the ctaAdded and ctaRemoved arrays in the evidence, meaning it was present in both snapshots. The draft treats it only as a removed/original item without acknowledging its continued presence, which is a minor framing inaccuracy.",
+        "The word count is approximately 350 words, which exceeds the 180–320 word ceiling stated in the requirements.",
+        "No paragraph clearly exceeds 90 words (hard cap safe), but the second paragraph of H3-2 (~55 words) and the founder test block (~75 words) are on the edge — the founder test block may exceed 60 words and should be checked."
       ],
-      "sectionCostUsd": 0.042490200000000006
+      "sectionCostUsd": 0.088089
     },
     {
       "sectionId": "07-business-context",
@@ -34,66 +104,103 @@
       "loopsUsed": 1,
       "riskFlagCount": 3,
       "riskFlags": [
-        "CAUSAL: 'This points to prioritizing predictable enterprise contracts over viral designer adoption' — the evidence shows CTA removal and addition, but does not prove causation or strategic intent",
-        "CAUSAL: 'a tradeoff visible in how the page now filters for buyers, not builders' — filtering is outcome language, but the evidence does not prove this was the intended tradeoff or that filtering occurred",
-        "IMPLIED OUTCOME: 'consistent with targeting marketing leaders rather than individual designers' — this is inference, not fact; the evidence shows headline change but does not prove target audience shift caused it"
+        "The ## heading claim 'forced Webflow to pick a buyer' implies direct causation between the funding/acquisition/layoffs and the homepage change — the evidence supports correlation and chronological proximity, not confirmed causation. This risks a -10 outcome/causation penalty.",
+        "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this figure appears in the evidence and is hedged with 'reportedly', so it passes, but readers may question whether this growth was caused by or merely coincident with the Series B.",
+        "'your homepage may be built for a buyer you have already outgrown' — this is a generalised causation claim applied to the reader without a stated condition, risking a -3 penalty under the rubric."
       ],
-      "remainingIssueCount": 9,
+      "remainingIssueCount": 11,
       "remainingIssues": [
-        "H3 'Market entry context' paragraph is 62 words, exceeds 60-word limit",
-        "H3 'Product and competitive evolution' paragraph is 61 words, exceeds 60-word limit",
-        "The main section heading lacks company name (should be 'Why Webflow's homepage changed...' or similar)",
-        "Missing bold quotes around '$330 million', '$4 billion', '$1 million', '$8 million', 'Website Experience Platform', 'Intellimize' — these are verbatim facts/names from evidence requiring formatting",
-        "The phrase 'This points to' in the third H3 is causal language without an attached condition — should be 'This is consistent with' or conditional phrasing",
-        "The fourth H3 heading is not a strategic finding block — it's the five-minute test, which should not have its own H3 heading per standard teardown format",
-        "The opening sentence is generic funding news that could appear in any SaaS teardown — not anchored to what makes THIS shift interesting",
-        "The final test instruction ('you may be filtering out the buyers who actually arrive') is generic advice, not specific to Webflow's evidence",
-        "Section structure violates the stated goal: four H3 blocks instead of three short paragraphs"
+        "Section word count is approximately 230 words — exceeds the 120–200 word cap stated in the section goal.",
+        "Paragraph 1 (H3 block 1) is approximately 65 words — exceeds the 60-word limit for non-intro paragraphs.",
+        "Paragraph 3 (H3 block 3) is approximately 80 words — significantly exceeds the 60-word limit.",
+        "The section goal specifies three short paragraphs; the draft has three H3 sub-blocks but each is too long, violating the ≤60-word paragraph rule.",
+        "The causal claim 'forced Webflow to pick a buyer' in the ## heading is not directly supported by evidence — the evidence shows correlation of events, not a confirmed causal chain. This is a minor overreach.",
+        "H3 block 3 contains two distinct ideas (layoffs redirecting to AI-first AND CTA demotion AND a founder takeaway test) — more than 2 ideas tracked simultaneously, violating the density rule.",
+        "The opening of H3 block 2 ('The homepage shifts are consistent with that pressure') buries the finding — 'consistent with' is a hedge that delays the finding rather than leading with it.",
+        "The final runnable test ('Check your own page title: does it describe what your product does, or does it claim a category?') is moderately specific but not anchored to a sub-5-minute action tied to Webflow's specific evidence (e.g., no reference to the specific before/after title language as a benchmark).",
+        "The phrase 'upmarket direction' in H3 block 2 is used without a plain-language gloss on first use — 'upmarket' is mild jargon in this context.",
+        "H3 block 3 closes with 'your homepage may be built for a buyer you have already outgrown' — this is an outcome/causation-adjacent claim without a stated condition, risking a -3 penalty.",
+        "The ## heading contains financial figures ('$140M Series B') and a named event ('Intellimize acquisition') and a percentage ('8% layoff') — these are appropriately hedged in the body text with 'reportedly' but the heading itself is not hedged, which could mislead a skimmer."
       ],
-      "sectionCostUsd": 0.10820640000000001
+      "sectionCostUsd": 0.12251100000000001
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 3,
+      "finalScore": 87,
+      "passed": true,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "H3 #1: 'The demotion is consistent with prioritising enterprise pipeline over trial volume' — this is a causal inference not confirmed by the evidence; correctly hedged with 'consistent with' and 'though the evidence does not confirm this directly', so acceptable but flagged for awareness.",
+        "H3 #2: 'AEO...is a phrase Webflow appears to be actively defining' — the evidence supports repetition of the term but does not confirm Webflow coined it; the hedge 'appears to be' is appropriate but the claim should not be strengthened in any revision.",
+        "H3 #3: 'the page now expects visitors to arrive already informed' — this is an interpretive causation claim not directly traceable to the evidence; it is plausible but should carry a hedge like 'this suggests' rather than being stated as a conclusion."
+      ],
+      "remainingIssueCount": 8,
+      "remainingIssues": [
+        "The phrase 'persona narrowing' in H3 #3 is an expert term used without an immediate plain-language definition in the same sentence.",
+        "The closing sentence of H3 #1 ('If not, promoting Contact Sales may generate a queue your team cannot convert') is slightly abstract — it names a risk but does not tell the founder what to do if the answer is no.",
+        "H3 #2's analytical paragraph contains three ideas tracked simultaneously: brand recognition as prerequisite, coined-term risk, and the distinction between borrowed vs invented language — borderline density violation.",
+        "The ## section heading is serviceable but slightly long and could be tightened; it does contain 'CTA', 'messaging', 'Webflow', and 'homepage' so searchability is met.",
+        "No paragraph strictly exceeds 60 words, but H3 #2's second analytical paragraph (~58 words) and H3 #3's second paragraph (~55 words) are at the edge.",
+        "The opening of H3 #3 states a finding (two headings removed) but does not front-load the implication within the first two sentences — the 'so what' arrives in sentence three.",
+        "'Persona narrowing' is used as a section label without a definition, violating the plain-language rule for expert terms.",
+        "The word count is approximately 370 words — within the 220–380 range, but near the ceiling."
+      ],
+      "sectionCostUsd": 0.183294
     }
   ],
-  "averageScore": 78,
-  "passCount": 0,
+  "averageScore": 83.8,
+  "passCount": 4,
   "failCount": 2,
   "skippedCount": 0,
-  "totalRewriteLoops": 1,
+  "totalRewriteLoops": 6,
   "weakSections": [
-    "01-intro",
     "07-business-context"
   ],
   "allRiskFlags": [
-    "HARD CAP TRIGGERED: Conversion outcome claim without data — 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no funnel data, conversion rate data, or customer acquisition data provided to support this claim. Total score capped at 60.",
-    "Causal claim without condition: 'The CTA shifted... to **\"Contact Sales\"** elevated to primary position.' — implies this shift caused or signals a specific business model change, but no conditional framing is attached.",
-    "Inference presented as fact: 'viral bottom-up adoption by practitioners' — the evidence does not contain data about adoption mechanics or viral coefficients.",
-    "CAUSAL: 'This points to prioritizing predictable enterprise contracts over viral designer adoption' — the evidence shows CTA removal and addition, but does not prove causation or strategic intent",
-    "CAUSAL: 'a tradeoff visible in how the page now filters for buyers, not builders' — filtering is outcome language, but the evidence does not prove this was the intended tradeoff or that filtering occurred",
-    "IMPLIED OUTCOME: 'consistent with targeting marketing leaders rather than individual designers' — this is inference, not fact; the evidence shows headline change but does not prove target audience shift caused it"
+    "The phrase 'Webflow's homepage stopped speaking to designers and started speaking to CMOs' is a strong causal/intentional claim. The evidence notes the headline and title changed, but the evidence explicitly states 'No confirmed strategy is implied.' Consider softening to 'appears to have shifted its audience signal from designers toward CMOs' or attaching a condition.",
+    "No financial figures, named events, or dates beyond the stated period are present — no hedging violations triggered.",
+    "'The page stopped onboarding curious newcomers' — infers intent from the removal of two section headings. The evidence confirms the headings were removed but does not confirm the strategic intent. Should be hedged: 'the page no longer surfaces onboarding-oriented headings.'",
+    "'That is not a refinement. It is a different conversation with a different reader.' — presented as fact; no evidence confirms a deliberate audience shift. Hedge with 'suggests' or 'reads as'.",
+    "The section heading date '2020–2025' is a factual error — the teardown covers to Jun 2026 per the evidence.",
+    "'the internal sign-off process may become shorter if buyers already recognise the name' — this is a causal claim without a stated condition attached; it should be hedged with 'if buyers in your category are already familiar with the coined label' or similar.",
+    "'A visitor who has never heard of Webflow may leave without knowing what they would actually use it to do' — this is a plausible inference but is presented as a near-certainty; it should be hedged with 'may' or 'risks leaving' rather than stated flatly.",
+    "'suggests the page may now expect some visitors who have already cleared the affordability question' — soft causal claim with no attached condition; needs an 'if [condition]' clause.",
+    "'Their removal suggests the page may no longer need to convince visitors that Webflow works in practice' — plausible but unsupported by the evidence; no data confirms visitor conviction levels changed. Flag as inference, not finding.",
+    "'Get started — it's free' framing: evidence shows this CTA in BOTH added and removed arrays, implying it existed across both snapshots. Treating it as purely a legacy/removed item is a factual misread of the evidence data.",
+    "The ## heading claim 'forced Webflow to pick a buyer' implies direct causation between the funding/acquisition/layoffs and the homepage change — the evidence supports correlation and chronological proximity, not confirmed causation. This risks a -10 outcome/causation penalty.",
+    "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this figure appears in the evidence and is hedged with 'reportedly', so it passes, but readers may question whether this growth was caused by or merely coincident with the Series B.",
+    "'your homepage may be built for a buyer you have already outgrown' — this is a generalised causation claim applied to the reader without a stated condition, risking a -3 penalty under the rubric.",
+    "H3 #1: 'The demotion is consistent with prioritising enterprise pipeline over trial volume' — this is a causal inference not confirmed by the evidence; correctly hedged with 'consistent with' and 'though the evidence does not confirm this directly', so acceptable but flagged for awareness.",
+    "H3 #2: 'AEO...is a phrase Webflow appears to be actively defining' — the evidence supports repetition of the term but does not confirm Webflow coined it; the hedge 'appears to be' is appropriate but the claim should not be strengthened in any revision.",
+    "H3 #3: 'the page now expects visitors to arrive already informed' — this is an interpretive causation claim not directly traceable to the evidence; it is plausible but should carry a hedge like 'this suggests' rather than being stated as a conclusion."
   ],
   "sectionErrors": [],
-  "finalJudgeScore": 58,
+  "finalJudgeScore": 81,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Remove all unsupported factual claims: funding amounts ($330 million, $4 billion valuation), revenue figures ($1M to $8M), layoff percentages (8%), competitor moves (Framer, Wix), acquisition details (Intellimize, 'first acquisition', AI personalization claims).",
-    "Replace business context section with analysis anchored ONLY to the compressed evidence: headline change, meta description change, CTA changes, H2 changes, H3 changes.",
-    "Rewrite intro to avoid causal claim about 'replacement of one growth model with another' — the evidence shows messaging changed, not that a growth model was replaced or that conversion patterns shifted.",
-    "Remove forward-looking promise in intro ('After reading this teardown, you'll be able to identify...') — replace with description of what the evidence shows.",
-    "Add H3 subheadings to business context section to break up analytical claims.",
-    "Ground every analytical paragraph in specific evidence from the compressed data — cite the exact headline, CTA label, H2 text, or meta description change being analyzed."
+    "In the business context section, add 'reportedly' before 'from $1M to $8M' to match the hedged language in the evidence, or remove the specific dollar figures and retain only the '8x' framing with attribution.",
+    "Replace 'most visitors had likely never searched before' with a hedged structural observation ('a visitor arriving without prior brand exposure may not recognise the term') — no frequency claim is supported by the evidence.",
+    "'Webflow appears to be actively defining' must be reframed as a structural observation: 'the CTA uses a term not yet common in search, which places it in demand-creation rather than demand-capture territory' — remove the intent attribution.",
+    "'Its removal means that reassurance no longer exists anywhere visitors can see it' must be softened: 'its removal means that reassurance is no longer visible above the fold' or 'no longer visible on the homepage as captured in the evidence.'",
+    "Soften 'the internal sign-off process may become shorter' — remove this sentence entirely or reframe as a conditional ('some enterprise buyers may already recognise category language, which can shorten evaluation cycles — though the evidence does not confirm this for Webflow specifically').",
+    "Add a hedging condition to 'That shift suggests Webflow is now writing for the buyer who approves the budget' — change to 'That shift may suggest the page is now written for a buyer accountable to revenue rather than one blocked by a technical constraint.'"
   ],
-  "seoScore": 71,
-  "seoPass": false,
+  "seoScore": 83,
+  "seoPass": true,
   "seoRequiredFixes": [
-    "Add actual homepage screenshots or detailed visual comparisons of the Jan 2020 and Jun 2026 versions. A CRO teardown without visuals is incomplete and reduces credibility with the target audience (growth/CRO practitioners).",
-    "Clarify the structure: The article says '2 snapshots' but only one full headline change is deeply analyzed. Expand section-by-section analysis to justify the 'teardown' format (hero, value props, social proof, CTAs, footer, etc.).",
-    "The article mentions 'sectionsIncluded: [\"01-intro\", \"07-business-context\"]' but the body only shows intro + business context. If other sections were planned (CRO insights, tactical lessons, metrics), publish them or remove the reference.",
-    "Define 'Website Experience Platform' inline or link to where this is explained — it's a claimed positioning shift but readers unfamiliar with Webflow may not understand the implication.",
-    "The '5-minute test' box at the end feels tacked on and is not connected back to Webflow's specific example. Either expand it with Webflow's own CTA audit or move it to a separate guide."
+    "Add a disclaimer or qualifier in the business context section clarifying that funding amounts and revenue figures are 'reported' or 'publicly stated'—avoid implying these are verified facts",
+    "Revise the language in 'CTA demotion' section: change 'consistent with prioritising enterprise pipeline' to 'may suggest a strategic trade-off toward enterprise'—current phrasing reads like causation",
+    "In the 'Founder test' callouts, add explicit guidance that these are observational patterns, not proven conversion drivers—readers should A/B test before implementing",
+    "Clarify that the article compares 2020 vs. 2025–2026 snapshots—the timeline jumps from '2020–2025' heading to '2025' and '2026' without naming exact comparison dates for all changes"
   ],
-  "articleWordCount": 439,
-  "repetitionWarnings": [],
+  "articleWordCount": 1928,
+  "repetitionWarnings": [
+    "\"upmarket repositioning\" appears in 2 sections (max 1): 04-messaging-evolution, 07-business-context"
+  ],
   "editorialWarnings": [
-    "[01-intro] Paragraph exceeds 90 words (~136w): \"Webflow replaced its entire homepage messaging between January…\""
+    "[01-intro] Paragraph exceeds 90 words (~106w): \"Webflow's homepage stopped speaking to designers and started…\""
   ],
-  "overLengthWarning": null
+  "overLengthWarning": "Article is 1928 words — exceeds 1900-word hard warning"
 }

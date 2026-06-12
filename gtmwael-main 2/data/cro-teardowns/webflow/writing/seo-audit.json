@@ -1,52 +1,52 @@
 {
-  "seoScore": 71,
-  "pass": false,
+  "seoScore": 83,
+  "pass": true,
   "titleScore": 12,
-  "metaDescriptionScore": 13,
-  "headingStructureScore": 9,
-  "searchIntentScore": 14,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 13,
+  "searchIntentScore": 18,
   "keywordUseScore": 8,
-  "readabilityScore": 12,
-  "internalLinkingScore": 3,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "Link 'SaaS homepage strategy' mentions to related teardown articles or a guide on homepage messaging frameworks",
-    "Link the '2024 Intellimize acquisition' reference to a broader article on no-code platform consolidation or AI in SaaS, if available",
-    "Add a CTA link at the end pointing to related CRO teardowns (e.g., Framer, Wix Studio) to establish topical authority",
-    "Link 'viral bottom-up adoption' to an internal guide or framework on product-led growth vs. sales-led growth strategies"
+    "Link from 'homepage A/B test analysis' section to a related article on testing methodologies or CRO frameworks",
+    "Add a contextual link in the 'Persona narrowing' section to an article on audience segmentation or buyer persona definition",
+    "Link 'SaaS conversion optimisation case study' mention to a dedicated case study collection or CRO best practices resource",
+    "In the business context section, link 'Series B' or 'Series C' references to an article on SaaS funding rounds and growth metrics",
+    "Add a link from the CTA strategy section to an article on primary vs. secondary button placement or conversion hierarchy"
   ],
   "faqSuggestions": [
-    "When should a SaaS company shift from 'free trial' CTAs to 'contact sales' on their homepage?",
-    "How do you know if your homepage messaging is selling capability instead of outcomes?",
-    "What does Webflow's headline change from 'Break the code barrier' to 'Make your website a growth engine' reveal about target audience shifts?",
-    "How did Webflow's $330 million funding round influence its homepage messaging strategy?",
-    "What is a Website Experience Platform, and why did Webflow adopt this positioning?"
+    "Why did Webflow change its homepage headline from 'Break the code barrier' to 'Make your website a growth engine'?",
+    "What is AEO and why did Webflow add an 'Explore AEO' CTA to its homepage?",
+    "How does removing educational CTAs like 'University' and 'Courses' affect visitor conversion?",
+    "Should SaaS companies move their 'Get started for free' CTA to a secondary position?",
+    "What does moving from feature-based to outcome-based messaging mean for homepage conversions?",
+    "How should B2B SaaS companies balance category naming with clarity on their homepage?"
   ],
   "contentGapNotes": [
-    "The article references 2 snapshots (Jan 2020 and Jun 2026) but does not show the actual homepage screenshots, comparative visuals, or detailed before/after analysis of specific sections (navigation, hero, social proof, pricing placement, etc.). This weakens the 'teardown' credibility.",
-    "No discussion of traffic, conversion rate, or engagement metrics pre/post-change — important context for a CRO teardown, even if speculative.",
-    "Missing analysis of how secondary pages (product tour, pricing, case studies) may have evolved in parallel with the homepage shift.",
-    "No mention of Webflow's target persona evolution in detail — who specifically is the 2026 buyer vs. the 2020 user, and how does copy reflect this?",
-    "The 8% layoff and AI pivot are mentioned but not connected to specific homepage copy changes (e.g., which sections were removed, which were added to reflect AI features).",
-    "No analysis of competitor homepages (Framer, Wix Studio) mentioned in context — what messaging choices did they make differently?",
-    "Missing detail on the 'Contact Sales' CTA placement, prominence, and secondary CTAs — where did it appear and what was its conversion performance context?"
+    "No discussion of scroll depth or engagement metrics—article assumes copy changes drive behavior but does not address whether visitors actually scrolled to see the new messaging",
+    "Missing analysis of mobile vs. desktop layout changes—the 'full-bleed' and layout shifts may differ between breakpoints",
+    "No mention of how the homepage performs for different traffic sources (organic, paid, direct, referral)—messaging may need to differ by audience origin",
+    "Limited guidance on how to identify when your own buyer has shifted—article suggests testing but does not provide a diagnostic framework (e.g., sales cycle length, deal size trend, churn by segment)",
+    "No data on whether the CTA demotion actually improved or harmed trial signups vs. sales pipeline—recommendations are framed as 'consistent with' strategy but causal evidence is absent",
+    "Missing context on Webflow's competitive set evolution—Framer, Wix, and other competitors are mentioned briefly but their homepage strategies are not compared"
   ],
   "requiredFixes": [
-    "Add actual homepage screenshots or detailed visual comparisons of the Jan 2020 and Jun 2026 versions. A CRO teardown without visuals is incomplete and reduces credibility with the target audience (growth/CRO practitioners).",
-    "Clarify the structure: The article says '2 snapshots' but only one full headline change is deeply analyzed. Expand section-by-section analysis to justify the 'teardown' format (hero, value props, social proof, CTAs, footer, etc.).",
-    "The article mentions 'sectionsIncluded: [\"01-intro\", \"07-business-context\"]' but the body only shows intro + business context. If other sections were planned (CRO insights, tactical lessons, metrics), publish them or remove the reference.",
-    "Define 'Website Experience Platform' inline or link to where this is explained — it's a claimed positioning shift but readers unfamiliar with Webflow may not understand the implication.",
-    "The '5-minute test' box at the end feels tacked on and is not connected back to Webflow's specific example. Either expand it with Webflow's own CTA audit or move it to a separate guide."
+    "Add a disclaimer or qualifier in the business context section clarifying that funding amounts and revenue figures are 'reported' or 'publicly stated'—avoid implying these are verified facts",
+    "Revise the language in 'CTA demotion' section: change 'consistent with prioritising enterprise pipeline' to 'may suggest a strategic trade-off toward enterprise'—current phrasing reads like causation",
+    "In the 'Founder test' callouts, add explicit guidance that these are observational patterns, not proven conversion drivers—readers should A/B test before implementing",
+    "Clarify that the article compares 2020 vs. 2025–2026 snapshots—the timeline jumps from '2020–2025' heading to '2025' and '2026' without naming exact comparison dates for all changes"
   ],
   "optionalImprovements": [
-    "Expand the intro to explicitly state what readers will learn: 'You'll see how a $4B SaaS company trades viral adoption for enterprise revenue — and when that trade works.' This clarifies search intent upfront.",
-    "Add a brief comparison table (Jan 2020 vs. Jun 2026) with headline, primary CTA, secondary CTAs, and messaging pillar — makes it scannable.",
-    "Include a 'Key Insight' callout box highlighting the core finding: the shift from selling capability (code-free design) to outcomes (growth engine).",
-    "Add a 'How to apply this' section with 2–3 diagnostic questions for SaaS teams auditing their own homepages — ties the teardown to actionable takeaways.",
-    "Strengthen the meta description by testing inclusion of 'enterprise' or 'growth' — current version is good but could signal more urgency (e.g., '...how Webflow shifted from designer tool to enterprise platform in 6 years').",
-    "Add internal metadata: suggest related keywords like 'B2B SaaS homepage strategy,' 'conversion rate optimization case study,' and 'landing page messaging frameworks' to improve topical clustering.",
-    "Clarify the timeframe 'Jan 2020 to Jun 2026' in the H1 — it's 6+ years, which is noteworthy for a CRO study but readers may wonder if this is too old to be relevant."
+    "Add a visual timeline or side-by-side headline comparison table to make the messaging evolution scannable at a glance",
+    "Include a note on why certain secondary keywords (e.g., 'homepage A/B test analysis') appear in metadata but are not explicitly targeted in H2s or body content",
+    "Expand the 'Category naming' section with an example of a coined term that failed (to provide risk context alongside the AEO success case)",
+    "Add a brief 'Webflow's current funnel' section explaining the visible signup flow (e.g., 'Contact Sales' routing, lead qualification workflow) to ground the CTA strategy in observable outcomes",
+    "Consider adding a summary table: 2020 vs. 2026 comparison of headline, primary CTA, top 3 sections, and target buyer persona—would improve scannability and SEO keyword distribution",
+    "Link the meta description promise ('what SaaS teams can study') more explicitly in a dedicated 'Key takeaways for your team' subsection before the final three lessons",
+    "Strengthen keyword use: 'SaaS homepage CRO teardown' and 'SaaS conversion optimisation case study' appear in metadata but are not prominently woven into H2s; consider an H2 like 'Why this Webflow homepage CRO teardown matters for SaaS teams'"
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.007503199999999988,
-  "generatedAt": "2026-06-12T08:22:29.789Z"
+  "costUsd": 0.007915200000000011,
+  "generatedAt": "2026-06-12T11:12:38.023Z"
 }

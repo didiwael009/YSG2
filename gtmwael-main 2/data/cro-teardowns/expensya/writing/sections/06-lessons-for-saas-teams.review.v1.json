@@ -1,0 +1,49 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "H3 heading 'Keeping the language toggle while removing the trial — Expensya preserved re-expansion optionality' is partly clever-only; 're-expansion optionality' is jargon without an immediate plain-language definition in the heading itself.",
+    "Paragraph 2 of the 'Compliance framing' H3 block ('This shift matters when regulatory pressure...') contains a causal claim — 'which may shorten sales cycles' — that is hedged with 'may' but still asserts a conversion outcome without supporting data. This approaches a hard-cap trigger.",
+    "The opening of the first H3 block ('Language as market commitment') uses 'primary frame' — an abstract noun phrase that could confuse a founder-level reader. No plain-language gloss is provided.",
+    "The second paragraph of the 'Language as market commitment' block contains two distinct ideas: (1) when to test language switching, and (2) risk of collapsing traffic. This violates the max-2-ideas-per-paragraph rule.",
+    "The phrase 'replacement pipeline ready to absorb the loss' in the first H3 is abstract and does not follow the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula cleanly.",
+    "The closing sentence of the 'Compliance framing' H3 block is partially actionable ('measure scroll depth and demo requests') but the test instruction mixes two metrics in one sentence, making it slightly dense for a 5-minute runnable test.",
+    "The third H3 heading ('Keeping the language toggle while removing the trial') buries the takeaway — the practical insight about re-expansion architecture — it does not appear in the first two sentences of the body; it appears in sentence 3.",
+    "The phrase 'low-friction path' in the final paragraph is a mild jargon term used without definition.",
+    "'full narrowing' in the final sentence is an abstract noun phrase with no concrete anchor.",
+    "Word count is approximately 430 words — over the 380-word ceiling. This is a scannability and density concern.",
+    "The ## section heading contains 'Expensya' and 'homepage' but also includes 'market-retreat' which is a coined term, not a searchable phrase. Partial credit applies but the heading leans clever."
+  ],
+  "requiredFixes": [
+    "Cut approximately 50–60 words from the draft to bring total word count within the 220–380 word ceiling. The third H3 block is the most over-written — trim the final paragraph to a single, specific test sentence.",
+    "Move the practical takeaway of the third H3 block ('This is a safer architecture than deleting English access entirely') to the first sentence of that block's body, before the evidence citation.",
+    "Split the second paragraph of the 'Language as market commitment' H3 into two sentences: one for the 'when to test' finding, one for the traffic-collapse risk. Each idea needs its own sentence or the paragraph exceeds the 2-idea rule.",
+    "Remove or rewrite the causal phrase 'which may shorten sales cycles' in the compliance H3. Replace with a conditional: 'if your product addresses a specific compliance requirement, finance leaders — who hold budget authority — have a reason to act before the next audit cycle.'",
+    "Add a plain-language gloss immediately after 'primary frame' in H3 block 1, e.g., 'primary frame (the default language a visitor sees first)'.",
+    "Replace 'low-friction path' with plain language, e.g., 'an easy route back in — a toggle, a secondary CTA, or a language redirect'.",
+    "Replace 'full narrowing' with a concrete phrase, e.g., 'committing entirely to one market or buyer type'.",
+    "Replace 'market-retreat' in the ## heading with a searchable phrase. Suggested: 'What SaaS teams can learn from Expensya's homepage repositioning'."
+  ],
+  "riskFlags": [
+    "'which may shorten sales cycles if your product genuinely addresses a compliance requirement' — causal outcome claim; hedged with 'may' but still implies a conversion result without supporting data from the evidence.",
+    "'Switching primary language before that signal exists may collapse traffic from other regions' — directional outcome claim not traceable to Expensya-specific data; presented as a general rule, not a conditional finding.",
+    "'may cause a sharp drop in leads with no offsetting pipeline to replace it' — outcome claim about removing trial CTAs; traceable to the strategic-shift evidence note but phrased as near-certain consequence rather than a risk condition."
+  ],
+  "seoNotes": [
+    "The ## heading now includes 'Expensya' and 'homepage', which supports the primary keyword 'Expensya homepage teardown'. Good.",
+    "'market-retreat' is a coined phrase unlikely to be searched — consider replacing with 'repositioning' or 'positioning strategy' which carry search volume.",
+    "H3 headings are specific and include quoted French phrases, which may attract long-tail queries from readers researching Expensya or French-market SaaS localisation strategy.",
+    "The section currently lacks any internal signal words like 'case study', 'example', or 'teardown' that would reinforce topical authority for the primary keyword cluster."
+  ],
+  "rewriteInstruction": "Trim the draft to under 380 words — the third H3 block needs the most cutting. Reorder the third H3 so its practical takeaway ('this architecture is safer than deleting English access entirely') is the very first sentence, before any evidence citation. Split the second paragraph of H3-1 into two separate ideas. Soften all causal outcome claims to explicit conditionals ('if X, then Y is more likely'). Add an immediate plain-language gloss after 'primary frame'. Replace 'market-retreat' in the section heading with 'repositioning' or 'positioning strategy' to improve searchability. Replace 'low-friction path' and 'full narrowing' with plain concrete language. The final runnable test in H3-3 should be one specific, self-contained instruction anchored to Expensya's evidence — not two metrics bundled together.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 10,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

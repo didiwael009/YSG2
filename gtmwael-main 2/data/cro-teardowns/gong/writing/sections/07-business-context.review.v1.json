@@ -1,50 +1,59 @@
 {
-  "score": 58,
+  "score": 62,
   "pass": false,
   "issues": [
-    "Section is entirely devoid of H3 subheadings despite being an analytical section (07-business-context) — hard cap at 75 triggered",
-    "Opening sentence makes a causal claim ('that velocity suggests the category had reached maturity') without evidence that 'velocity' caused 'maturity' — this is inference presented as fact",
-    "Paragraph 2 sentence 1 makes an unsupported causal claim: 'The homepage shift...is consistent with investor pressure to prove platform economics' — evidence shows funding rounds and homepage changes, not that funding caused the homepage shift",
-    "Paragraph 2 sentence 2 makes a causal claim: 'When your valuation jumps...you must show you can capture enterprise-wide budgets' — this is strategic commentary, not traceable to evidence",
-    "Paragraph 3 sentence 1: 'Gong's shift mirrors what happened across SaaS' — this is generic industry commentary with no anchor to Gong-specific evidence",
-    "Paragraph 3 sentence 2: 'Companies that won their category early now compete on platform breadth' — could appear in any teardown; not Gong-specific",
-    "All three paragraphs exceed 60 words: P1 ≈68 words, P2 ≈72 words, P3 ≈60 words (borderline)",
-    "Section contains zero bold-quoted verbatim website elements beyond the two in P2 — nav items, CTAs, and section headings from evidence are not quoted",
-    "No founder takeaway present — section ends with generic industry observation ('the homepage can no longer assume the visitor needs education') rather than a specific, runnable test anchored to Gong's evidence",
-    "Section heading is clever-only ('forced it to stop teaching and start platforming') and lacks 'Gong homepage' or any searchable topic term explicitly",
-    "Word count appears to be ≈180 words (within 120–200 range) but structure violates analytical section requirements"
+    "SECTION GOAL FAILURE: The goal requires three short paragraphs (each ≤60 words) with plain language and no H3 subheadings implied — but the draft is a flowing essay with no H3 subheadings. For an analytical section, H3 subheads are required, which caps total at 75. However, the section goal says 'three short paragraphs' (not H3 blocks), creating ambiguity. Scored as analytical section requiring H3s based on rubric rule.",
+    "H3 SUBHEADINGS MISSING: No H3 sub-blocks are present anywhere in the draft. This is an analytical section (03/04/05/06/07) and the rubric caps scannability at 75 total if H3s are absent. Hard cap fires: cap total at 75.",
+    "PARAGRAPH 1 WORD COUNT: Approximately 72 words — exceeds the 60-word limit and the section goal's ≤60 words per paragraph rule. Scannability penalty applies.",
+    "PARAGRAPH 2 WORD COUNT: Approximately 72 words — exceeds the 60-word limit. Scannability penalty applies.",
+    "PARAGRAPH 3 WORD COUNT: Approximately 70 words — exceeds the 60-word limit. Scannability penalty applies. All three paragraphs violate the section goal.",
+    "TOTAL WORD COUNT: Approximately 214 words — exceeds the 200-word upper bound stated in the section goal check.",
+    "FINAL PARAGRAPH — CAUSAL CLAIM: 'Other SaaS companies at this scale — Salesforce, HubSpot — made the same move: when the category you defined gets commoditized, you claim the layer above it.' This is generic SaaS commentary that could appear in any teardown. It is not anchored to Gong's evidence. Specificity penalty applies.",
+    "GENERIC COMPARATIVE CLAIM: The Salesforce/HubSpot comparison in paragraph 3 is entirely unsupported by the provided evidence. No evidence links Gong's decisions to Salesforce or HubSpot behaviour. This is an invented causal analogy. evidenceAccuracy penalty applies.",
+    "CAUSAL CLAIM WITHOUT DATA: 'forced Gong to outgrow its own category' in the ## heading is a strong causal claim. The evidence does not confirm causation — only correlation between external events and homepage changes. evidenceAccuracy penalty applies.",
+    "FINANCIAL FIGURE: '$450M in funding' in the heading — the evidence states Series D ($200M) + Series E ($250M) = $450M total, which is traceable. However the heading references '$450M' without 'reportedly' hedge language — penalise per rubric rule on financial figures without hedging in section 07.",
+    "VALUATION FIGURE: '$7.25 billion valuation' used in paragraph 1 without 'reportedly' or equivalent hedge on first use in the heading context — though it appears in body text with 'reported', the heading itself uses '$450M' unhedged.",
+    "FOUNDER TAKEAWAY: No H3 sub-blocks means no per-block founder takeaway is delivered. The section ends with a generic SaaS generalization ('when the category you defined gets commoditized, you claim the layer above it') — not a specific, runnable test. founderTakeaway penalty applies.",
+    "PLAIN LANGUAGE ISSUE: 'net dollar retention' is used without a plain-language definition in the same sentence. Expert term used without explanation.",
+    "PLAIN LANGUAGE ISSUE: 'platform completeness' is used as if self-evident without definition.",
+    "READABILITY — PARAGRAPH 3 BURIES FINDING: The paragraph leads with the Gartner event, then pivots to the page title change, then ends with a generic SaaS analogy. The finding is not stated in the first two sentences. Penalty applies.",
+    "CLOSING SENTENCE IS ABSTRACT/GENERIC: 'when the category you defined gets commoditized, you claim the layer above it' is a generic strategic abstraction, not a concrete or actionable closing sentence anchored to Gong's evidence. Readability penalty applies.",
+    "PARAGRAPH 3 — MULTIPLE IDEAS: Paragraph 3 tracks three distinct concepts simultaneously: Gartner MQ publication, Gong's page title change, and a Salesforce/HubSpot analogy. Exceeds the two-idea limit per analytical paragraph. Readability penalty applies."
   ],
   "requiredFixes": [
-    "Add three H3 subheadings to structure this analytical section — suggested structure: H3 'Market entry context: Gong crossed 2,000 customers in 9 months', H3 'Product evolution: From conversation intelligence to Revenue AI OS', H3 'Industry shift: Category consolidation and AI repositioning'. Each H3 block must be ≤60 words and deliver its takeaway in the first two sentences.",
-    "Remove or condition all causal claims: 'That velocity suggests' → 'That velocity coincided with'; 'is consistent with investor pressure' → 'coincided with a period when'; 'When your valuation jumps...you must' → delete entirely or rewrite as 'If your valuation jumps 3.3x in 9 months, investor expectations shift toward...'",
-    "Eliminate generic SaaS commentary in P3 — replace 'Gong's shift mirrors what happened across SaaS' with a Gong-specific observation tied to evidence (e.g., 'Between 2021 and 2024, Gong publicly announced the RightBound acquisition and launched generative AI features including 'Call Spotlight' and 'Deal Spotlight', according to press releases — both moves consistent with...')",
-    "Add bold-quoted verbatim nav items from evidence to anchor P1 or P2 — e.g., 'The removal of **'What is RI?'** and **'Reveal: The RI Podcast'** from navigation between 2020 and 2026 is consistent with a company that no longer needed to educate visitors on the category.'",
-    "Replace final sentence with a specific founder takeaway: 'Open your homepage navigation in an incognito window. Count how many nav items explain what your category is versus how many assume the visitor already knows. If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one and measuring bounce rate on the pricing page.'",
-    "Revise section heading to include 'Gong' or 'homepage' explicitly for searchability: 'How Gong's $7.25B valuation reshaped its homepage from educator to platform'",
-    "Split P2 (currently 72 words) into two blocks or move one sentence to P1 to bring all paragraphs under 60 words"
+    "Add H3 subheadings — the rubric requires them for analytical sections and caps scannability without them. Suggested H3s: '### Gong raised $450M while the category it built was maturing' / '### The 2022–2023 SaaS downturn and competitor consolidation changed the calculus' / '### Gartner named a new category ceiling — and Gong's page title responded'",
+    "Cut every paragraph to ≤60 words to meet both the section goal and scannability rules. Current paragraphs run 70–72 words each — trim by roughly 15 words per block.",
+    "Remove the Salesforce/HubSpot comparison entirely — it is not supported by the provided evidence and could appear in any SaaS teardown. Replace with a Gong-specific observation, e.g. the acquisition of RightBound in December 2025 as evidence of platform-breadth intent.",
+    "Change the ## heading to remove the causal word 'forced' or hedge it — e.g. 'How $450M in funding, a SaaS downturn, and Gartner's new Magic Quadrant pushed Gong to reframe its homepage' — or use 'reportedly' for the funding figure.",
+    "Add hedge language to '$450M' in the heading — use 'reportedly' or restructure: 'After reportedly raising $450M...'",
+    "Define 'net dollar retention' in plain language at point of use — e.g. 'net dollar retention (how much revenue Gong kept from existing customers year over year)'.",
+    "Replace the closing sentence with a specific, runnable founder test anchored to Gong's evidence — e.g. 'To test whether your own category label is ready to retire: search your brand name plus your category term in Google and check whether the autocomplete still needs the category word to identify you — if it doesn't, you may have the same signal Gong had.'",
+    "Rewrite paragraph 3 to state its finding in the first sentence and limit it to two trackable ideas. Remove the generic SaaS analogy as the closing thought."
   ],
   "riskFlags": [
-    "CAUSAL CLAIM WITHOUT DATA: 'That velocity suggests the revenue intelligence category Gong created had reached maturity' — velocity (funding pace) and maturity (category understanding) are not causally linked in the evidence; this is strategic inference",
-    "CAUSAL CLAIM WITHOUT DATA: 'The homepage consistent with investor pressure' — no evidence provided that investors requested or influenced the homepage shift",
-    "CAUSAL CLAIM WITHOUT DATA: 'When your valuation jumps...you must show you can capture enterprise-wide budgets' — this is a strategic assertion about investor expectations, not a fact traceable to evidence",
-    "OUTCOME CLAIM: 'buyers already knew what conversation intelligence meant' — evidence shows funding rounds and customer count, not buyer awareness or knowledge state",
-    "GENERIC COMMENTARY: 'Companies that won their category early now compete on platform breadth' — this could appear in any SaaS teardown and is not anchored to Gong-specific evidence"
+    "'forced Gong to outgrow its own category' — causal language not supported by evidence; the evidence shows correlation between external events and homepage changes, not confirmed causation.",
+    "'Other SaaS companies at this scale — Salesforce, HubSpot — made the same move' — completely unsupported by the provided evidence; invented comparison that could mislead readers.",
+    "'pressured Gong's per-seat model and reportedly dented net dollar retention' — 'dented' is a causal outcome claim; the evidence says 'reportedly tied to... pressured... led to declines' which is already hedged, but the draft's phrasing slightly understates the hedge.",
+    "The Clari-Salesloft merger and ZoomInfo/Chorus acquisition are cited as competitive context — traceable to evidence — but the implication that these directly caused Gong's repositioning is causal and unsupported.",
+    "Gartner MQ publication date (December 2025) is traceable to evidence with 'reportedly' — acceptable, but the causal link to Gong's page change is still an inference."
   ],
   "seoNotes": [
-    "POSITIVE: Section heading includes '$7.25B valuation' which is a unique, searchable data point tied to Gong",
-    "NEGATIVE: Heading does not explicitly include 'Gong homepage' or 'homepage teardown' — discoverability risk for users searching 'Gong homepage analysis'",
-    "POSITIVE: Meta description quotes ('better sales conversations' → 'multimodal revenue signal processing') are verbatim and bold-quoted, aiding snippet extraction",
-    "NEGATIVE: Section contains minimal verbatim quotes from nav items, CTAs, or section headings — limits snippet richness for long-tail queries like 'Gong homepage navigation changes'"
+    "POSITIVE: The ## heading contains 'Gong' and references specific named events (funding rounds, Gartner Magic Quadrant) — likely to rank for long-tail queries about Gong's business history and positioning evolution.",
+    "POSITIVE: Both page title variants are quoted in bold — **'Revenue Intelligence Technology for Sales Teams | Gong.io'** and **'Gong - Revenue AI OS'** — which creates keyword density for both old and new Gong positioning terms.",
+    "NEGATIVE: The section currently lacks H3 subheadings, which reduces crawlable heading structure. Adding H3s with terms like 'Gong funding', 'Gong Revenue AI OS', and 'revenue intelligence category' would improve semantic structure for search.",
+    "POSITIVE: Named competitors (ZoomInfo, Chorus, Clari, Salesloft) appear in paragraph 2 — creates relevance signals for competitive comparison queries.",
+    "NOTE: 'Revenue Action Orchestration' (the Gartner category name) appears in paragraph 3 via the heading reference — this is an emerging search term worth preserving in any rewrite.",
+    "NEGATIVE: Total word count (~214) slightly exceeds the 200-word section goal. Trimming to 180–195 words would keep density high without padding."
   ],
-  "rewriteInstruction": "Restructure this section with three H3 subheadings (market entry context, product evolution, industry shift). Each H3 block must be ≤60 words and deliver its takeaway in the first two sentences. Anchor every paragraph to Gong-specific evidence: quote nav items, CTAs, or section headings in **bold quotes**. Remove all causal claims ('that velocity suggests', 'is consistent with investor pressure', 'you must show') — replace with conditioned statements ('if X, then Y') or neutral observation ('this shift coincided with'). Eliminate generic SaaS commentary in P3 ('companies that won their category early') — replace with a Gong-specific event from the evidence (RightBound acquisition, generative AI product launches, Gartner recognition). End the final H3 block with a specific founder test: 'Open your homepage nav. Count educational items ('What is X?') versus evaluation items ('Pricing', 'Customers'). If you have 2+ educational nav items and 50+ competitors, test removing one and measuring pricing page bounce rate.' Revise the section heading to include 'Gong homepage' explicitly for search discoverability.",
+  "rewriteInstruction": "Rewrite the section as three tight paragraphs, each under 60 words, under three H3 subheadings that each contain 'Gong' and a searchable topic term. Each H3 block must state its finding in the first sentence. Delete the Salesforce/HubSpot comparison entirely — it has no grounding in the evidence and reads as generic SaaS commentary. Replace the closing sentence with a specific, runnable founder test: suggest searching brand name plus category term to test autocomplete dependency as a signal for when category-education language can be retired. Change 'forced' in the ## heading to a non-causal word ('pushed', 'preceded', or hedge with 'reportedly'). Add hedge language to '$450M' in the heading. Define 'net dollar retention' in plain English at point of use. Keep all verbatim page title and meta description quotes in bold. Stay within 120–200 words total. Every paragraph must track at most two ideas simultaneously and must close on a concrete, Gong-specific observation — not a generic SaaS principle.",
   "dimensionScores": {
-    "evidenceAccuracy": 10,
+    "evidenceAccuracy": 12,
     "specificity": 8,
-    "plainLanguage": 12,
+    "plainLanguage": 13,
     "scannability": 3,
-    "searchableHeadings": 5,
+    "searchableHeadings": 7,
     "rhythmAndOpening": 7,
-    "founderTakeaway": 0
+    "founderTakeaway": 1
   },
   "effectivePassThreshold": 85
 }

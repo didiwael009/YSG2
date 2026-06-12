@@ -1,0 +1,45 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section heading is clever-only with partial searchability: 'H1 shift from English automation to French aspiration redefined its target buyer' contains the company name but the term 'aspiration' is jargon-adjacent and the heading lacks explicit terms like 'messaging', 'homepage', or 'positioning' that searchers would use.",
+    "Third H3 block ('What the messaging shift signals about who Expensya is now written for') contains two paragraphs — the second paragraph (section headings evidence) exceeds 60 words at approximately 72 words.",
+    "The third H3 block's practical takeaway is NOT in the first two sentences — it is delivered only at the end of the block via the founder test, violating the 'takeaway first' rule for H3 sub-blocks.",
+    "The phrase 'may indicate' and 'may be repositioning' are appropriately hedged, but the sentence 'That is not a copy tweak' is a mild causation-adjacent assertion not directly supported by evidence — it is rhetorical framing.",
+    "The founder test is reasonably specific but is generic enough to appear in any messaging teardown — it does not reference Expensya's specific ratio shift (e.g., count feature words vs. buyer-identity words in the way Expensya shifted from 'automate every step' to naming 'équipes financières modernes').",
+    "The opening sentence of H3 block 1 delivers its finding clearly, but H3 block 3 buries its finding — the paragraph starts with evidence summary rather than leading with the conclusion about the buyer profile shift.",
+    "No use of forbidden jargon terms detected beyond first use — clean on that front.",
+    "Bold quotes are correctly applied to all verbatim website quotes — compliant.",
+    "Word count is approximately 370 words — within the 200–380 word limit but near the ceiling.",
+    "The second H3 block paragraph is approximately 95 words — this triggers the HARD CAP for scannability (any single paragraph exceeding 90 words caps scannability at 5)."
+  ],
+  "requiredFixes": [
+    "Split the second H3 block paragraph (meta description analysis) — it runs approximately 95 words, which triggers the scannability hard cap. Break it after the quote into two paragraphs: one for the quote itself and the framing shift, one for the 'équipes financières modernes' implication.",
+    "Move the practical implication to the first two sentences of H3 block 3 ('What the messaging shift signals'). Currently the block starts with evidence and ends with a takeaway — invert this so the finding comes first: who the page is now written for, then the evidence that supports it.",
+    "Make the founder test more specific to Expensya's evidence: instead of a generic feature-vs-buyer ratio check, instruct the founder to count how many words in their H1, meta description, and page title name a specific buyer role (as Expensya now names 'équipes financières modernes' and 'cartes de paiement') versus how many describe platform breadth (as Expensya previously used 'for all companies' and 'automate every step').",
+    "Revise the ## section heading to include a more searchable term. Replace 'redefined its target buyer' with a term like 'messaging shift', 'homepage positioning', or 'copy evolution' so the heading matches informational search queries. Example: 'How Expensya's Homepage Messaging Shifted from English Automation to French Finance-Team Positioning'."
+  ],
+  "riskFlags": [
+    "'That is not a copy tweak' — this is an assertion of significance not directly traceable to evidence; soften to 'This is consistent with more than a copy revision' or remove.",
+    "'It suggests the primary visitor Expensya now wants to attract already thinks in French' — reasonable inference but stated as near-fact; hedge with 'may suggest' for accuracy.",
+    "'which may indicate the page is now written for a finance director or CFO' — correctly hedged with 'may indicate', no flag needed.",
+    "The section headings paragraph in H3 block 3 cites 'Integration with your infrastructure and ecosystem' as an old heading — this is traceable to evidence. Clean."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name 'Expensya' which is good for the primary keyword 'Expensya homepage teardown', but the phrase 'French aspiration' is not a search term anyone would use — swap for 'messaging' or 'homepage positioning'.",
+    "The section covers headline, meta description, and page title changes — all three are high-signal SEO elements that searchers studying repositioning case studies will value. Good coverage.",
+    "The secondary keyword 'Expensya localization strategy SaaS' would be better served if the section briefly named the strategic implication of language-switching (French-first market focus) rather than leaving it implicit — one sentence in the intro H3 would capture this keyword angle.",
+    "Bold-quoting the French phrases is correct and will aid readability for non-French readers skimming the article — good practice maintained throughout."
+  ],
+  "rewriteInstruction": "The section is close to passing but has two structural problems to fix before resubmission. First, the meta description paragraph in H3 block 2 exceeds 90 words — split it after the closing French quote into two paragraphs: one that presents the quote and names the framing shift (process steps to emotional contrast), and a second that draws the buyer-signal implication about 'équipes financières modernes'. Second, H3 block 3 buries its finding — rewrite it so the first sentence states the conclusion (the page is now built for one reader: a French-speaking finance professional accountable for compliance), then follow with the evidence (headline, meta, title, section headings). Third, anchor the founder test tightly to Expensya's specific evidence: ask the founder to count how many words in their H1, meta description, and page title name a specific buyer role or accountability (as Expensya now does) versus how many describe platform breadth or feature coverage (as the 2020 version did). Finally, revise the ## heading to replace 'aspiration' and 'redefined its target buyer' with searchable terms like 'messaging shift', 'homepage positioning', or 'copy evolution' so it captures informational queries from founders and marketers researching repositioning case studies.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 5,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

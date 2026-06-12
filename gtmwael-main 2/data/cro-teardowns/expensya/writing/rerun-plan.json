@@ -1,19 +1,27 @@
 {
-  "createdAt": "2026-06-12T08:21:58.085Z",
+  "createdAt": "2026-06-12T10:57:43.535Z",
   "slug": "expensya",
   "source": {
     "finalJudgePass": false,
-    "seoPass": false,
-    "finalJudgeScore": 62,
-    "seoScore": 74
+    "seoPass": true,
+    "finalJudgeScore": 81,
+    "seoScore": 84
   },
   "sectionsToRerun": [
     {
       "sectionId": "01-intro",
       "reasons": [
-        "Judge rerun recommendation: 01-intro — contains multiple unsupported factual claims and lacks H3 structure",
-        "Identified as weak section by final judge",
-        "Expand the 'sectionsIncluded' field: currently only '01-intro' and '07-business-context' are listed, suggesting major sections are missing (e.g., visual design, navigation, CTAs, headline analysis, se"
+        "'top 20% of revenue' — the phrase 'find which country drives your top 20% of revenue' introduces a specific percentage threshold not present in the evidence"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "reasons": [
+        "Judge rerun recommendation: 03-visual-timeline — fix heading date and rerun to correct the '2020–2025' factual error",
+        "03-visual-timeline — heading date error",
+        "Clarify the evidence scope: the article states '2 snapshots' but does not explicitly confirm whether these are actual Wayback Machine captures or reconstructed designs. Add a single sentence early in "
       ],
       "priority": "high",
       "source": "both"
@@ -21,105 +29,57 @@
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 07-business-context — contains the majority of unsupported claims (Series B details, acquisition details, competitor names, consolidation wave comment",
-        "The company's headline shifted from 'Automated spend management for all companies' to 'Voici à quoi devrait ressembler la gestion des dépenses' — a change that signals more than localization",
-        "when narrowing geography can strengthen positioning",
-        "signals more than localization — interpretation presented as fact without evidence of intent",
-        "when narrowing geography can strengthen positioning — outcome claim without conversion data",
-        "suggests the homepage now serves a narrower audience — causal claim without visitor behavior evidence",
-        "Medius may be serving non-French markets through separate domains — speculative claim about unobserved pages",
-        "Remove causation claims about company strategy: 'signals more than localization', 'assumes visitors already know', 'when narrowing geography can strengthen positioning'",
-        "Insert actual homepage screenshots or side-by-side visual comparisons at minimum before the intro section — the article claims to be a 'teardown' but provides only text-based analysis",
-        "Verify and fix the meta description: it is 156 characters (including spaces), exceeding the 155-character soft limit by one character"
+        "'for a sum reportedly exceeding $100M, according to sources familiar with the deal' — the evidence states 'reportedly over $100M according to sources familiar with the deal' which is acceptable sourci",
+        "'may cause a sharp drop in the stream of new leads entering your sales process, if self-serve volume was the primary source' — conditional framing is present but 'sharp drop' implies a specific outcom",
+        "The language/localization mismatch section flags a potential problem but does not recommend a specific test or fix. Replace the cautious framing ('may reflect', 'no confirmed strategy') with a concret"
       ],
       "priority": "high",
       "source": "both"
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "reasons": [
-        "The old site offered a free trial and explained features to English-speaking prospects of any company size",
-        "is consistent with a shift away from self-serve trial motions toward deal-driven sales cycles — causation claim without sales motion data"
-      ],
-      "priority": "high",
-      "source": "final-judge"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "The new site assumes visitors already know what expense management should look like",
+      "issue": "'2020–2025' in the ## heading — the evidence states the period endpoint is Jun 2026, making '2025' a factual error",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Expensya closed a $20M Series B in April 2021 to fund European expansion",
+      "issue": "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — asserts confirmed visitor intent from structural evidence only; should be hedged as 'this may suggest' or",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "then integrated Swan payment cards in March 2023",
+      "issue": "'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — asserts company intent and strategic reasoning not confirmed in evidence; reframe as 'consistent with hedging",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Stockholm-based Medius acquired Expensya in July 2023 for over $100M",
+      "issue": "'whether that narrowing is intentional or incidental to a localisation decision' — acceptable hedge, not a flag",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "The French-only homepage suggests Medius may be serving non-French markets through separate domains or Medius-branded pages",
+      "issue": "'That deadline may give buyers a concrete reason to act — rather than continue evaluating' — mild outcome prediction; acceptable with 'may' but noted",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "This maps to the broader SaaS spend consolidation wave: standalone expense tools like Expensya were absorbed by AP platforms (Medius, Coupa) or outcompeted by all-in-one challengers (Ramp, Brex, Navan",
+      "issue": "Fix the ## heading '2020–2025' to '2020–2026' to match the evidence endpoint of Jun 2026",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "when doing so will cost you pipeline",
+      "issue": "Replace 'top 20% of revenue' with an un-quantified phrase such as 'the single country generating the majority of your revenue' — the 20% threshold has no evidence basis",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "if you find zero, you may have overcorrected toward simplicity and lost discovery-stage filtering",
+      "issue": "Reframe 'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — remove 'precisely because' and replace with 'consistent with hedging against' or 'which may reflect u",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "07-business-context",
+      "issue": "Reframe 'This suggests Expensya now expects a visitor who is ready to commit time' — add explicit hedge: 'if the page is now targeting warmer inbound leads, this pattern suggests...'",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "All analytical sections — missing H3 structure",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "The new site assumes visitors already know what expense management should look like — assertion about visitor knowledge not traceable to evidence",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "when doing so will cost you pipeline — conversion prediction without data",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "you may have overcorrected toward simplicity and lost discovery-stage filtering — outcome prediction without evidence",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Remove all specific facts not in evidence: $20M Series B figure, April 2021 date, Swan integration March 2023 date, Stockholm location, July 2023 acquisition date, $100M acquisition price, competitor ",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Remove conversion predictions: 'when doing so will cost you pipeline', 'you may have overcorrected toward simplicity and lost discovery-stage filtering'",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Add H3 subheadings to every analytical section — currently no H3 structure present in business-context section",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Anchor every analytical paragraph to specific evidence from Expensya — remove generic SaaS consolidation wave commentary",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Section 06-lessons-for-saas-teams (medium priority)",
+      "issue": "Section 05-cta-navigation-evolution (high priority)",
       "reason": "Exceeded --max-rerun-sections cap of 3"
     },
     {
-      "issue": "Section 03-visual-timeline (low priority)",
+      "issue": "Section 06-lessons-for-saas-teams (high priority)",
       "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]

@@ -1,46 +1,46 @@
 {
-  "createdAt": "2026-06-12T08:22:29.795Z",
+  "createdAt": "2026-06-12T11:12:38.037Z",
   "slug": "webflow",
   "source": {
     "finalJudgePass": false,
-    "seoPass": false,
-    "finalJudgeScore": 58,
-    "seoScore": 71
+    "seoPass": true,
+    "finalJudgeScore": 81,
+    "seoScore": 83
   },
   "sectionsToRerun": [
     {
-      "sectionId": "01-intro",
+      "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: 01-intro — remove causal claim and forward-looking promise; anchor opening to specific evidence",
-        "The 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization",
+        "Judge rerun recommendation: 04-messaging-evolution — soften intent attributions and remove 'its removal means that reassurance no longer exists anywhere'",
+        "'most visitors had likely never searched before' — a frequency/volume claim about visitor search behaviour with no evidence anchor.",
         "Identified as weak section by final judge",
-        "Remove forward-looking promise in intro ('After reading this teardown, you'll be able to identify...') — replace with description of what the evidence shows.",
-        "The article mentions 'sectionsIncluded: [\"01-intro\", \"07-business-context\"]' but the body only shows intro + business context. If other sections were planned (CRO insights, tactical lessons, metrics),"
+        "'That shift suggests Webflow is now writing for the buyer who approves the budget, not the one who builds the pages' — causal intent claim; the evidence shows a copy change, not confirmed intent. Need",
+        "In the business context section, add 'reportedly' before 'from $1M to $8M' to match the hedged language in the evidence, or remove the specific dollar figures and retain only the '8x' framing with att",
+        "Replace 'most visitors had likely never searched before' with a hedged structural observation ('a visitor arriving without prior brand exposure may not recognise the term') — no frequency claim is sup",
+        "Add a disclaimer or qualifier in the business context section clarifying that funding amounts and revenue figures are 'reported' or 'publicly stated'—avoid implying these are verified facts"
       ],
       "priority": "high",
       "source": "both"
     },
     {
-      "sectionId": "04-messaging-evolution",
+      "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams). — causal claim",
-        "The messaging changes documented above didn't happen in a vacuum — they tracked a deliberate business transformation. — assertion of company intent without internal evidence",
-        "Remove all unsupported factual claims: funding amounts ($330 million, $4 billion valuation), revenue figures ($1M to $8M), layoff percentages (8%), competitor moves (Framer, Wix), acquisition details ",
-        "Rewrite intro to avoid causal claim about 'replacement of one growth model with another' — the evidence shows messaging changed, not that a growth model was replaced or that conversion patterns shifte",
-        "Add H3 subheadings to business context section to break up analytical claims.",
-        "Define 'Website Experience Platform' inline or link to where this is explained — it's a claimed positioning shift but readers unfamiliar with Webflow may not understand the implication."
+        "Judge rerun recommendation: 05-cta-navigation-evolution — reframe 'Webflow appears to be actively defining' and soften the 'Contact Sales queue' risk flag",
+        "'placing this CTA is a bet on creating demand rather than capturing it' — framed as a confirmed strategic diagnosis rather than a conditional interpretation; no evidence confirms Webflow's intent here",
+        "Identified as weak section by final judge",
+        "'The demotion is consistent with prioritising enterprise pipeline over trial volume' — causal framing that implies confirmed strategic intent; the hedge 'though the evidence does not confirm this dire",
+        "'AEO... is a phrase Webflow appears to be actively defining' — strategy/intent claim not traceable to evidence; the evidence shows the CTA exists, not that Webflow is 'actively defining' the term.",
+        "'Webflow appears to be actively defining' must be reframed as a structural observation: 'the CTA uses a term not yet common in search, which places it in demand-creation rather than demand-capture ter",
+        "Revise the language in 'CTA demotion' section: change 'consistent with prioritising enterprise pipeline' to 'may suggest a strategic trade-off toward enterprise'—current phrasing reads like causation"
       ],
-      "priority": "medium",
+      "priority": "high",
       "source": "both"
     },
     {
-      "sectionId": "05-cta-navigation-evolution",
+      "sectionId": "03-visual-timeline",
       "reasons": [
-        "This points to prioritizing predictable enterprise contracts over viral designer adoption — a tradeoff visible in how the page now filters for buyers, not builders. — outcome claim about filtering wit",
-        "Replace business context section with analysis anchored ONLY to the compressed evidence: headline change, meta description change, CTA changes, H2 changes, H3 changes.",
-        "Ground every analytical paragraph in specific evidence from the compressed data — cite the exact headline, CTA label, H2 text, or meta description change being analyzed.",
-        "Clarify the structure: The article says '2 snapshots' but only one full headline change is deeply analyzed. Expand section-by-section analysis to justify the 'teardown' format (hero, value props, soci",
-        "The '5-minute test' box at the end feels tacked on and is not connected back to Webflow's specific example. Either expand it with Webflow's own CTA audit or move it to a separate guide."
+        "'Its removal means that reassurance no longer exists anywhere visitors can see it' must be softened: 'its removal means that reassurance is no longer visible above the fold' or 'no longer visible on t",
+        "Clarify that the article compares 2020 vs. 2025–2026 snapshots—the timeline jumps from '2020–2025' heading to '2025' and '2026' without naming exact comparison dates for all changes"
       ],
       "priority": "medium",
       "source": "both"
@@ -48,27 +48,15 @@
   ],
   "skippedIssues": [
     {
-      "issue": "07-business-context — replace entire section with analysis anchored to compressed evidence only; remove all external facts",
+      "issue": "07-business-context — add hedges to the $1M-to-$8M figure and remove the 'sign-off process may become shorter' conversion-outcome implication",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "raised over $330 million between 2021 and 2022, reaching a $4 billion valuation",
+      "issue": "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this specific figure ($1M to $8M, 8x) appears in the business context research evidence and is acceptable as attributed to p",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "reported enterprise revenue growth from $1 million to $8 million in 2021 alone",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Framer captured designer mindshare",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Wix launched Studio for agencies",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "In 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development",
+      "issue": "'Its removal means that reassurance no longer exists anywhere visitors can see it' — the evidence does not confirm the line does not appear elsewhere on the site; presented as definitive fact.",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
@@ -76,15 +64,27 @@
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "After reading this teardown, you'll be able to identify whether your own homepage is still selling capability when it should be selling outcomes — and when that shift becomes safe to make. — forward-l",
+      "issue": "'the internal sign-off process may become shorter if buyers already recognise the name' — conversion-outcome prediction without data, even with 'may'; implies a mechanism not in evidence.",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "That funding coincided with reported enterprise revenue growth — implies causation between funding and homepage changes",
+      "issue": "'promoting Contact Sales may generate a queue your team cannot convert' — conversion-outcome warning presented as a risk without any evidence anchor specific to Webflow.",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Section 03-visual-timeline (low priority)",
+      "issue": "'Webflow appears to be actively defining, not just borrowing from the market' — asserts company intent/strategy without evidence confirming this is Webflow's stated aim.",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Soften 'the internal sign-off process may become shorter' — remove this sentence entirely or reframe as a conditional ('some enterprise buyers may already recognise category language, which can shorte",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add a hedging condition to 'That shift suggests Webflow is now writing for the buyer who approves the budget' — change to 'That shift may suggest the page is now written for a buyer accountable to rev",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Section 06-lessons-for-saas-teams (low priority)",
       "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]

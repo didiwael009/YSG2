@@ -1,7 +1,7 @@
 {
   "sectionId": "01-intro",
   "companyName": "Expensya",
-  "companyUrl": "https://www.expensya.com/",
+  "companyUrl": "https://www.expensya.com/en/",
   "articleTitle": "Expensya Homepage Teardown: Oct 2020 to Jun 2026",
   "h1": "How Expensya rewrote its homepage over 6 years",
   "fromLabel": "Oct 2020",
@@ -64,70 +64,70 @@
     }
   ],
   "strategic-shift": {
-    "central_thesis": "Expensya shifted from generic English-language automation positioning to French-language market ownership by replacing 'Automated spend management for all companies' with French UX-centered messaging ('à quoi devrait ressembler la gestion des dépenses') and removing company-size navigation segmentation in favor of finance-team-specific language.",
-    "old_positioning_frame": "Universal automation tool for business expense management, segmented by company size (Small/Mid/Large), emphasizing paperless process automation from invoice to reimbursement.",
-    "new_positioning_frame": "Modern spend management platform for French-speaking finance teams, emphasizing user experience transformation ('stress et frictions' → 'clarté et simplicité'), payment cards, and compliance.",
-    "buyer_shift": "English-speaking companies of any size seeking expense automation → French-speaking finance teams in multi-currency, multi-country organizations seeking compliance and visibility.",
-    "funnel_shift": "Early exploration stage (free trial CTA, feature discovery focus) → Sales-qualified demo stage (contact sales, demo booking, login prominence suggest existing market awareness).",
+    "central_thesis": "Expensya replaced a broad, automation-led English-language pitch aimed at multi-segment international buyers with a French-first, finance-team-focused positioning built around compliance, payment cards, and clarity — suggesting a deliberate retreat from global horizontal growth toward owning the French-speaking mid-market finance buyer.",
+    "old_positioning_frame": "A comprehensive, fully automated spend management platform for companies of all sizes (Small, Mid, Large), competing on breadth of automation and integration depth, in English, with a self-serve free-trial funnel.",
+    "new_positioning_frame": "An intelligent expense management and payment card solution for modern finance teams in French-speaking markets, competing on simplicity, compliance, and reduced administrative friction, with a sales-led demo-booking funnel.",
+    "buyer_shift": "Broad self-serve buyers across SMB to enterprise tiers in international English-speaking markets → French-speaking finance team decision-makers (likely CFOs, finance directors) in mid-market organisations who prioritise compliance and operational clarity over raw automation.",
+    "funnel_shift": "Mid-funnel exploration served by 'Free trial' and 'Discover our solutions' CTAs enabling self-qualification across company sizes → top-of-funnel awareness and sales-qualified lead capture via 'Réservez une démo' and 'Contacter un commercial', consistent with a higher-touch, consultative sales motion.",
     "main_evidence": [
       {
         "element": "H1",
         "old": "Automated spend management for all companies",
         "new": "Voici à quoi devrait ressembler la gestion des dépenses.",
-        "meaning": "Suggests a shift from English-language feature description to French-language vision statement that assumes market familiarity — 'this is what expense management should look like' positions the company as a standard-setter rather than a vendor explaining capabilities."
+        "meaning": "The switch from a functional automation claim in English to a vision-forward French statement ('Here is what expense management should look like') suggests Expensya may be repositioning from feature-led differentiation toward aspirational category definition, and the language shift signals a deliberate prioritisation of French-speaking markets over a global-English audience."
+      },
+      {
+        "element": "CTA",
+        "old": "Free trial · Discover our solutions · Find out more · Discover all integrations",
+        "new": "Réservez une démo · Contacter un commercial",
+        "meaning": "Removing 'Free trial' and adding 'Réservez une démo' and 'Contacter un commercial' is consistent with abandoning a product-led growth motion in favour of a sales-assisted conversion path, which may indicate a shift toward larger deal sizes or a buyer profile that requires guided evaluation rather than self-serve discovery."
+      },
+      {
+        "element": "Navigation",
+        "old": "Small · Mid · Large · Features · Self-managed expenses · Secure dematerialization · Intelligent validation and control",
+        "new": "En savoir plus · Se connecter · Contacter un commercial · Expensya · Anglais · Solutions · Aperçu · Application mobile",
+        "meaning": "Removing the Small/Mid/Large segmentation nav suggests Expensya may no longer be actively targeting all company sizes with equal priority — or that segment self-selection is now handled downstream in a sales conversation rather than on the homepage. The presence of a language toggle ('Anglais') suggests multi-market intent persists, but French is now the primary frame."
+      },
+      {
+        "element": "Section headings",
+        "old": "Expensya fully automates your business expenditure · A solution designed for every company · Features designed to transform your expense management · Integration with your infrastructure and ecosystem · Our customers recommend our solution",
+        "new": "Cartes de paiement & budgets · Politiques de dépenses · Multi-devises et multi-pays · Fini le casse-tête administratif, place à la conformité. · Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.",
+        "meaning": "The removal of 'every company' and 'integration with your ecosystem' headings in favour of specific product pillars (payment cards, expense policies, multi-currency) and compliance-led language points to a narrower but more specific value proposition, consistent with targeting finance professionals who are accountable for regulatory compliance and spend visibility rather than IT buyers evaluating integrations."
       },
       {
         "element": "Meta description",
         "old": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
         "new": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
-        "meaning": "Signals a move from process-step explanation to outcome-focused emotional positioning ('stress et frictions' vs 'clarté et simplicité'), targeting 'équipes financières modernes' rather than generic companies — is consistent with moving upmarket to buyers with existing pain rather than educating on why automation matters."
-      },
-      {
-        "element": "Navigation",
-        "old": "Small · Mid · Large · Features · Self-managed expenses · Secure dematerialization · Intelligent validation and control",
-        "new": "Solutions · Aperçu · Application mobile · Se connecter · Contacter un commercial",
-        "meaning": "Removal of size-based segmentation (Small/Mid/Large) and feature-list navigation suggests the company may no longer be positioning for broad market self-serve discovery, instead streamlining to sales-assisted pathways ('Contacter un commercial') and existing user login."
-      },
-      {
-        "element": "Primary CTAs",
-        "old": "Free trial · Discover our solutions · Find out more · Discover all integrations",
-        "new": "Réservez une démo · Learn more about this provider · Se connecter",
-        "meaning": "Replacement of 'Free trial' with 'Réservez une démo' points to a shift from self-serve product exploration to sales-qualified demo pipeline — signals potential move to enterprise contract motion rather than PLG trial conversion."
-      },
-      {
-        "element": "Section headings",
-        "old": "A solution designed for every company · Features designed to transform your expense management · Integration with your infrastructure and ecosystem",
-        "new": "Cartes de paiement & budgets · Politiques de dépenses · Multi-devises et multi-pays · Fini le casse-tête administratif, place à la conformité.",
-        "meaning": "New headings emphasize payment cards, policy enforcement, multi-currency capability, and compliance — suggests targeting of finance teams managing distributed international workforces rather than generic expense automation buyers. The compliance framing ('conformité') indicates potential focus on regulated industries or audit-concerned buyers."
+        "meaning": "Replacing a process-automation description with an emotional contrast ('stress and friction' → 'clarity and simplicity') directed at 'équipes financières modernes' suggests Expensya may be attempting to appeal to finance team identity and pain rather than IT or ops buyers evaluating workflow automation coverage."
       }
     ],
-    "copy_this_if": "Your product category is well-understood in your target geography, your brand appears in vernacular buyer conversations ('we need an Expensya-type tool'), and you have sales capacity to handle demo volume from inbound traffic.",
-    "do_not_copy_this_if": "You are establishing a new category, your brand lacks local-language search volume, or you depend on trial-to-paid conversion rather than sales-assisted deals — prescriptive vision statements assume buyers already know what good looks like.",
-    "safer_version_for_early_stage_saas": "Keep English-language feature-outcome messaging and free trial CTA, but add a single compliance-focused section ('Built for [specific regulation]') with a secondary demo CTA to test whether finance buyer segment responds to risk/audit framing before committing homepage to single-language, demo-only motion.",
-    "risk_if_copied": "Traffic from English-speaking markets or early-stage prospects seeking product education will bounce — prescriptive French-language UX claims and demo-gate will filter out exploratory buyers who lack internal consensus or budget authority, shrinking top-of-funnel volume if sales team cannot handle increased deal complexity.",
+    "copy_this_if": "Your product already has strong organic brand recognition in a specific language-market (e.g., your top organic traffic cohort is overwhelmingly from one country), and your sales data shows that self-serve free trials generate volume but not the deal sizes or customer profiles you want to grow.",
+    "do_not_copy_this_if": "Your current growth depends on inbound self-serve signups from multiple geographies, or your sales team does not yet have the capacity or playbook to convert demo requests at scale — removing a free-trial CTA without a functioning sales-assisted motion in place risks collapsing top-of-funnel conversion entirely.",
+    "safer_version_for_early_stage_saas": "Keep the free-trial CTA as primary, but A/B test a secondary 'Book a demo' CTA specifically within the section headings or feature blocks aimed at compliance and finance-team pain points (e.g., below a 'Politiques de dépenses' section) — this isolates whether the finance buyer segment responds to a sales-assisted path without abandoning the self-serve funnel.",
+    "risk_if_copied": "If a company removes 'Free trial' in favour of demo-only CTAs before its sales team has sufficient capacity or qualification criteria, it may see a sharp drop in top-of-funnel volume with no offsetting increase in closed revenue — particularly if the brand is not yet strong enough for buyers to proactively seek out a sales conversation.",
     "confidence_level": "high",
-    "generatedAt": "2026-06-11T16:46:15.754Z",
-    "model": "claude-sonnet-4-5",
-    "costUsd": 0.024440999999999997
+    "generatedAt": "2026-06-12T10:20:24.730Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.02862
   },
   "seo-intent": {
     "primary_keyword": "Expensya homepage teardown",
     "primary_intent": "informational",
-    "audience_description": "A SaaS founder, growth marketer, or product manager building or repositioning an expense management or fintech product who wants to understand how Expensya pivoted from generic English positioning to French market-specific, UX-led messaging—and whether that playbook applies to their own geographic or audience expansion.",
-    "recommended_h1_format": "How [Company] Rewrote Its Homepage for the French Market: A CRO Teardown",
+    "audience_description": "A SaaS founder, growth marketer, or product strategist running a B2B fintech or operations software company who is evaluating how to reposition their product when horizontal growth plateaus. They want to understand whether narrowing positioning to a specific geography, language, and buyer persona (like Expensya did with French-speaking mid-market finance teams) is a viable path to revenue growth—and what signals indicate when that shift is necessary.",
+    "recommended_h1_format": "How [Expensya] Pivoted From Global Automation to French-Market Compliance: A Homepage Teardown",
     "secondary_keywords": [
-      "Expensya homepage evolution",
-      "Expensya CRO case study",
-      "Expensya positioning change French market",
-      "expense management SaaS homepage examples",
-      "localization vs. generic positioning SaaS"
+      "Expensya CRO strategy case study",
+      "how Expensya repositioned its homepage",
+      "Expensya localization strategy SaaS",
+      "geographic narrowing SaaS positioning example",
+      "Expensya product positioning evolution"
     ],
-    "content_angle": "Focus on the STRATEGIC DECISION behind the shift, not just the cosmetic changes. The searcher wants to understand: Why did Expensya abandon 'all companies' messaging for French-specific UX language? What does this tell us about market-specific positioning vs. broad-appeal positioning? When should a fintech SaaS localize messaging vs. stay generic? Make the 'why' clear: this is a masterclass in geographic market ownership, not just a design facelift.",
-    "what_the_searcher_wants": "Proof that narrowing positioning (from 'all companies' to 'French finance teams') can work, and a framework for deciding when to make that bet. They want to see the before/after as evidence of a winning strategy, not just curiosity.",
-    "what_to_avoid": "Do NOT frame this as a generic 'homepage redesign analysis' or focus only on visual changes (fonts, colors, layout). Do NOT assume the shift was cosmetic—explain the business logic. Do NOT ignore the removal of company-size segmentation; that's a crucial signal about who they're targeting now. Do NOT write this as a French-language article review; frame it for English-speaking SaaS marketers who need to understand the PRINCIPLE of market-specific positioning.",
-    "confidence_level": "medium",
-    "generatedAt": "2026-06-11T16:46:31.418Z",
+    "content_angle": "Focus on the strategic RATIONALE behind the pivot, not just the visual or copy changes. The searcher is trying to answer: 'Should we narrow our positioning like Expensya did?' Help them understand the risk/reward trade-off: Expensya abandoned the 'all companies' TAM to own the French finance buyer more completely. This is a deliberate retreat from horizontal to vertical. The article should answer: What signals made this pivot necessary? What did they gain (compliance authority, payment card integration, local language dominance)? What did they lose (English-speaking buyers, SMB/Enterprise segments)? This is a positioning case study, not a design teardown.",
+    "what_the_searcher_wants": "A clear pattern to recognize whether their own product is in the same position Expensya was—struggling to be 'everything to everyone'—and confidence that narrowing to a specific geography, language, and buyer persona can actually work at scale.",
+    "what_to_avoid": "Do not frame this as 'Expensya added French to their homepage.' The searcher will instantly dismiss that as irrelevant if you miss the underlying strategy. Avoid treating the change as cosmetic (color, layout, button text). Do not compare it to other SaaS teardowns that were about feature clarity or CRO optimization—this is a repositioning story, not a conversion-rate story. Do not assume the reader is French-speaking or France-focused; they are learning from a case study of geographic narrowing.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T10:20:42.769Z",
     "model": "claude-haiku-4-5-20251001",
-    "costUsd": 0.0030936
+    "costUsd": 0.0034384000000000003
   }
 }

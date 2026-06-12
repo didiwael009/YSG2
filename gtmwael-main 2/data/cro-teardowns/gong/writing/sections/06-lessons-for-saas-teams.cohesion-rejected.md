@@ -1,0 +1,13 @@
+## What SaaS teams can study from Gong's decision to retire the category it invented
+
+### The category graduation signal — Gong stopped asking "What is RI?" and started counting customers
+
+With that pressure in mind, here is what other teams can borrow. Gong removed **"What is RI?"** from its navigation entirely, replacing it with **"Gong AI"** and **"Innovation."** This shift only makes sense if your inbound audience has already moved past the "what is this?" stage — if most visitors arrive knowing what the product does and want to evaluate it, not learn about it. If you still see high traffic on your own explainer or "what is [category]?" pages, removing that content may create a gap that causes visitors to bounce before they reach any conversion path. Run this test: open your site analytics, find your most-visited educational or "what is" page, and check whether it is gaining or losing traffic over the past 12 months. Declining traffic on that page is one signal your category may no longer need explaining.
+
+### The "OS" naming move — Gong earned the right to say "Revenue AI OS" with 5,000+ customers behind it
+
+Gong's page title shifted from **"Revenue Intelligence Technology for Sales Teams | Gong.io"** to **"Gong - Revenue AI OS."** That single word — OS — claims infrastructure status, the kind of system other tools plug into. But the claim only holds if the product has multi-product depth and scale proof to back it. Gong paired the rename with **"Trusted by 5,000+ customers"** and a named ROI result: **"Pitchbook is 10x more efficient with revenue AI."** Without that evidence, "OS" reads as overclaiming. Check your own page title: if it still names a point solution but you have added products or integrations since launch, the gap between your title and your actual platform may be costing you enterprise consideration.
+
+### Education-to-authority funnel compression — Gong replaced explanatory content with scale proof before removing the explanation
+
+Gong did not simply delete its educational content. It replaced **"So What Does this look like? Glad you asked."** with **"Trusted by 5,000+ customers"** and swapped named practitioner CTAs — **"Paul Santarelli VP of Sales"** — for ROI-anchored ones like **"Read the case study."** The sequence matters: authority signals filled the space before the explanatory content left. This approach only transfers if you have published, metric-specific case studies ready to replace what you remove. Visit your homepage and count how many section headings still contain the word "how" or "what." Each one is an education placeholder — and a candidate for replacement only once you have a scale proof or named ROI result to put in its place.

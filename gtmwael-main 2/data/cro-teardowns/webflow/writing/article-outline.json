@@ -1,61 +1,109 @@
 {
-  "angle": "Webflow executed a coordinated repositioning from bottom-up viral design tool to enterprise marketing infrastructure by introducing 'agentic' AI terminology and sales-led CTAs while simultaneously removing the community showcase that had powered practitioner adoption — a high-risk maneuver that trades viral growth mechanics for enterprise deal velocity.",
+  "angle": "Webflow's homepage evolution is the story of a company that deliberately orphaned its founding community — the designers and freelancers who built it into a unicorn — to court the CMO buyer it needed to justify a $4B valuation, replacing every signal of technical empowerment and self-serve accessibility with enterprise category language before its sales motion was fully ready to catch the leads it was generating.",
   "distinct_from": [
-    "Only teardown where viral community showcase was removed",
-    "Introduction of 'agentic' AI category terminology",
-    "Explicit shift from practitioner to marketing team buyer"
+    "Sacrificing founding community to pursue enterprise CMO buyer"
   ],
   "sections": [
     {
       "id": "01-intro",
       "custom_h2": null,
-      "goal": "Establish that Webflow's homepage evolution represents a deliberate trade-off between bottom-up viral adoption (removing showcase CTAs, practitioner messaging) and enterprise sales infrastructure (Contact Sales CTA, AI terminology, outcome messaging) — not just an upmarket expansion but a replacement of one growth engine with another.",
+      "goal": "Hook on the tension between Webflow's origin as a designer-empowerment tool and its current positioning as an enterprise revenue platform — establish that this teardown is specifically about who Webflow chose to stop speaking to, not just who it started speaking to. Seed the keyword 'Webflow homepage evolution' naturally.",
       "word_target": 80,
       "evidence_sources": [
-        "strategic-shift",
+        "summary-cards",
         "messaging",
-        "summary-cards"
+        "strategic-shift",
+        "seo-intent"
       ],
-      "marketing_lens": "sales-motion"
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Webflow homepage 2020–2025: from designer empowerment tool to enterprise growth platform",
+      "goal": "Show the visual arc as a story of two distinct design languages: the 2020 isometric split-hero that spoke to a technically curious individual builder versus the 2025 full-bleed immersive layout dense with client logos and enterprise social proof. Emphasize that the visual shift mirrors the ICP shift — the page stopped looking like a product a freelancer discovers organically and started looking like a platform a CMO approves in a procurement cycle.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Webflow's H1 traded practitioner pride for CMO-grade outcome language — and what it cost",
+      "goal": "Dissect the full messaging arc: H1 from 'Break the code barrier' (problem-frame for a practitioner) to 'Make your website a growth engine' (asset-frame for a revenue owner); page title from descriptive feature taxonomy to coined category label 'agentic web platform'; meta description removal of 'export your code' as the clearest signal of deliberate practitioner de-emphasis. Connect each shift to the specific buyer persona it targets and note the implicit risk — outcome abstraction at the cost of capability clarity for first-time visitors.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Webflow demoted 'Free until you're ready to launch' to make room for 'Contact Sales' and 'Explore AEO'",
+      "goal": "Analyze the CTA stack transformation as a funnel architecture decision: 'Get started — it's free' as a single frictionless entry point versus a multi-CTA hierarchy where 'Contact Sales' appears first and 'Start for free' becomes secondary. Show that the section heading removal of 'Free until you're ready to launch' is not just copy editing — it is the erasure of the risk-removal message that made Webflow safe for cost-sensitive individual users. Highlight 'Explore AEO' as a category-capture CTA deployed before most visitors know what AEO means — a bet on demand creation over demand capture.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
     },
     {
       "id": "07-business-context",
-      "custom_h2": "## How Webflow chose enterprise infrastructure over viral showcase",
-      "goal": "Connect the removal of community showcase elements and practitioner CTAs to Webflow's documented business trajectory: the 2021-2022 unicorn funding rounds that required enterprise revenue proof, the 2024 Intellimize acquisition signaling Website Experience Platform ambitions, and the competitive pressure from Framer capturing the designer community Webflow originally owned — explaining why killing viral mechanics made strategic sense despite alienating the original ICP.",
+      "custom_h2": "## How a $140M Series B, the Intellimize acquisition, and an 8% layoff forced Webflow to pick a buyer",
+      "goal": "Connect the homepage shifts to the specific business events that made them inevitable: the 2021 unicorn valuation requiring enterprise ARR growth to justify, the 2024 Intellimize acquisition explicitly framing Webflow as a 'Website Experience Platform' for marketing leaders, and the 2024 layoffs redirecting resources to AI-first product features. Show that the homepage did not change because of a brand refresh — it changed because investor pressure and competitive threat from AI-native tools (Framer, AI site builders) forced an upmarket move that the homepage had to ratify.",
       "word_target": 180,
       "evidence_sources": [
-        "business-context-research",
-        "strategic-shift",
         "messaging",
-        "summary-cards"
+        "summary-cards",
+        "strategic-shift",
+        "business-context-research"
       ],
-      "marketing_lens": "icp"
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Webflow's decision to stop writing for the community that built it",
+      "goal": "Three specific, runnable patterns: (1) The 'secondary CTA test' — how to demote a free-tier offer without killing self-serve growth, using Webflow's 'Start for free' demotion as the case study with the strategic-shift warning about pipeline readiness as the guardrail. (2) The 'category coin before the market names it' pattern — how Webflow deployed 'Explore AEO' as a standalone CTA to own search intent for a term it was simultaneously inventing, and when this is safe versus premature. (3) The 'founding community trade-off' — Webflow's removal of 'Who uses Webflow' and 'Free until you're ready to launch' as a deliberate persona narrowing, and how to audit your own homepage for legacy signals that are actively filtering out your new target buyer.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|icp"
     }
   ],
   "at_a_glance_cards": [
     {
-      "label": "Growth model",
-      "value": "Viral showcase → Sales-led platform",
-      "note": "Removed #MadeInWebflow showcase CTAs; added Contact Sales"
+      "label": "Positioning shift",
+      "value": "Code barrier → Revenue asset",
+      "note": "H1 moved from practitioner problem-frame to CMO outcome-frame, erasing technical empowerment language entirely"
     },
     {
       "label": "Target buyer",
       "value": "Freelance designers → Marketing leaders",
-      "note": "From 'Who uses Webflow' to 'Everything marketing teams love'"
+      "note": "'Who uses Webflow' replaced by 'high-performing brands' — a deliberate persona narrowing, not an expansion"
     },
     {
-      "label": "Category claim",
-      "value": "No-code tool → Agentic web platform",
-      "note": "Page title introduced 'agentic' terminology for AI-era positioning"
+      "label": "Sales motion",
+      "value": "Self-serve first → Enterprise pipeline first",
+      "note": "'Contact Sales' elevated to primary CTA; 'Free until you're ready to launch' section heading removed entirely"
     },
     {
-      "label": "Outcome promise",
-      "value": "Break code barrier → Growth engine",
-      "note": "H1 shifted from capability unlock to business outcome delivery"
+      "label": "Category play",
+      "value": "Tool → Agentic web platform",
+      "note": "Page title replaced feature taxonomy with a coined category label before the market adopted the term"
     }
   ],
   "confidence_level": "high",
-  "generatedAt": "2026-06-12T08:09:25.448Z",
-  "model": "claude-sonnet-4-5",
-  "costUsd": 0.025137
+  "generatedAt": "2026-06-12T10:36:07.456Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.045174
 }

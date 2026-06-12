@@ -1,0 +1,48 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Section heading says '2020–2025' but evidence only covers Jan 2020 to Jun 2026 — the '2025' endpoint is inconsistent with the evidence label 'Jun 2026'.",
+    "The H1 in the evidence reads 'Revenue AI Built To Predict churnPredict churn' (with apparent duplication artefact) — the draft quotes it as 'Revenue AI Built To Predict churn', silently cleaning up the source data without flagging the anomaly.",
+    "The claim 'This may suggest the page is now written for buying committees' is a causal/outcome inference not directly supported by the evidence. The evidence note explicitly says 'No confirmed strategy is implied.' This risks triggering the causal-without-condition penalty.",
+    "The third H3 block ('2026 — what this means for your own homepage') conflates the visual-timeline walkthrough with the founder takeaway and packs more than 2 distinct ideas into its opening paragraph (layout change, headline change, section heading change, visual language shift — 4 ideas simultaneously).",
+    "The paragraph beginning 'The most visible change...' runs approximately 65 words — exceeds the 60-word limit.",
+    "The paragraph beginning 'Individual rep testimonials...' runs approximately 65 words — exceeds the 60-word limit.",
+    "The paragraph beginning 'If your navigation still includes...' runs approximately 95 words — exceeds the 60-word cap and may trigger the 90-word hard cap on scannability.",
+    "The term 'buying committees' is used without an immediate plain-language definition integrated into the sentence (the definition appears in an em-dash clause after the fact, which is acceptable, but the phrase 'buying committees' is introduced before the definition — borderline).",
+    "The section goal is to walk through 'when changes happened, what each phase looked like, and what the progression reveals' — there are only two snapshot phases (2020 and 2026) and the evidence explicitly flags hasMidTransition: false, but the draft does not acknowledge the gap or explain why only two points are shown. A reader may wonder what happened in between.",
+    "The meta description quote in section 02 is used to support a claim about technical-capability framing — this is a reasonable reading, but the evidence note says the shift 'may reflect a positioning adjustment or an SEO update', and the draft presents it as directional without that hedge.",
+    "The section word count is approximately 340 words — above the 320-word ceiling."
+  ],
+  "requiredFixes": [
+    "Fix the section heading date: change '2020–2025' to '2020–2026' to match the evidence label 'Jun 2026'.",
+    "Split the final H3 paragraph (starting 'If your navigation still includes...') into two or three shorter paragraphs, each under 60 words, each carrying one idea. The 90-word-plus single paragraph is triggering the scannability hard cap.",
+    "Add a one-sentence acknowledgement that only two snapshots are available (no mid-transition data), so readers understand the timeline is start-to-current rather than a frame-by-frame progression.",
+    "Hedge the 'buying committees' inference with language from the evidence note — e.g., 'this may suggest' is present but the explanation needs to remain tentative and attach a condition: 'if the audience has shifted to enterprise procurement groups, individual testimonials become less persuasive than aggregate social proof'.",
+    "Trim the paragraph beginning 'The most visible change...' to under 60 words by moving the meta description quote to its own sentence block or a separate sub-point.",
+    "Trim the paragraph beginning 'Individual rep testimonials...' to under 60 words.",
+    "Either quote the H1 artefact exactly as it appears in evidence ('Revenue AI Built To Predict churnPredict churn') and note it appears to be a rendering artefact, or flag the anomaly in a bracketed note — do not silently clean it up.",
+    "Reduce total word count to within 180–320 words by tightening the third H3 block, which currently does double duty as both timeline walkthrough and founder advice section."
+  ],
+  "riskFlags": [
+    "'This may suggest the page is now written for buying committees' — inference not traceable to evidence; evidence note explicitly disclaims implied strategy.",
+    "The meta description framing as evidence of 'moving away from category education' is directional but the evidence note says it may be an SEO update — the draft does not carry this hedge.",
+    "Quoting 'Revenue AI Built To Predict churn' when the evidence string reads 'Revenue AI Built To Predict churnPredict churn' — silent data cleaning without disclosure."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name ('Gong'), the word 'homepage', and a date range — strong for long-tail search on 'Gong homepage teardown' and 'Gong homepage changes'.",
+    "The page title evolution from 'Revenue Intelligence Technology for Sales Teams | Gong.io' to 'Gong - Revenue AI OS' is quoted verbatim and is keyword-rich for anyone researching Gong's positioning shift — good for search relevance.",
+    "The meta description before/after quotes include high-value AI and GTM terms ('revenue AI', 'GTM organizations', 'AI agents') that will help this article surface in searches comparing Gong's old and new positioning."
+  ],
+  "rewriteInstruction": "Keep the three-H3 structure and the strong verbatim quoting — those are working. Fix three things in order of priority. First, break the final H3 paragraph into at least two separate paragraphs, each under 60 words, so the 90-word block does not hard-cap scannability. Second, add a single sentence early in the section noting that only two snapshots anchor this timeline (2020 and 2026, no mid-point data), so readers understand the arc is start-to-current. Third, attach a condition to the buying-committees inference — something like 'if Gong's audience shifted toward enterprise procurement groups, aggregate proof like 5,000 customers becomes more persuasive than a named rep's quote' — rather than presenting it as a conclusion. Fix the heading date to 2026. Trim to under 320 words total by cutting the walkthrough of the 2026 layout (layout description belongs in section 04 or 05, not here) — one sentence on the visual shift is enough for the timeline section.",
+  "dimensionScores": {
+    "evidenceAccuracy": 19,
+    "specificity": 14,
+    "plainLanguage": 17,
+    "scannability": 5,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 80
+}
