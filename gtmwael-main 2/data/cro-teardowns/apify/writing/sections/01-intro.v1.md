@@ -1,0 +1,3 @@
+# Apify Homepage Teardown: From "Extract Data" to "39,044 Tools for Your AI"
+
+Apify's homepage once promised to do something — **"Extract data from any website"** — and now promises to supply something: **"39,044 tools for your AI."** That single swap marks a shift from competing on what the product does to competing on what its community has built. This teardown covers five snapshots from January 2020 to June 2026, and by the end you will have a concrete test to check whether your own headline is still explaining your product or already selling your ecosystem.

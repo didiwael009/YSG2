@@ -1,7 +1,7 @@
 /**
  * vercel.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-09T19:11:20.487Z
+ * Published    : 2026-06-12T17:39:14.365Z
  * Final judge  : 92/100 ✓
  * SEO score    : 85/100 ✓
  *
@@ -22,11 +22,11 @@ export const vercel: CroTeardownPost = {
   companyName: "Vercel",
   companyUrl: "https://vercel.com",
   category: "CRO Teardown",
-  title: "Vercel Homepage Teardown: How It Changed Between 2021 and 2026",
+  title: "Vercel Homepage Teardown: Jul 2021 to Jun 2026",
   h1: "How Vercel rewrote its homepage over 5 years",
-  metaTitle: "Vercel Homepage Teardown: 2021 to 2026",
-  description: "How Vercel's homepage evolved from 'Develop.Preview.Ship.' to 'Build on the AI Cloud' — 5 years of headline, CTA, and navigation changes analyzed.",
-  excerpt: "Vercel's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jul 2021 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  metaTitle: "Vercel Homepage Teardown: Jul 2021 to Jun 2026",
+  description: "A CRO teardown of Vercel's homepage from Jul 2021 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  excerpt: "Between July 2021 and June 2026, Vercel replaced its homepage three times. The headline shifted from \"Develop. Preview. Ship.\" — a workflow promise aimed at developers — to \"Build and deploy on the AI Cloud\", a platform claim that names a technology category. The navigation was rebuilt entirely, with 8 items added and 8 removed. This article walks through what changed, what those changes signal about who Vercel is now selling to, and how to apply the same lens to your own homepage.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
   datePublished: "2026-06-09",
@@ -171,28 +171,24 @@ export const vercel: CroTeardownPost = {
   ],
   lessonCards: [
     {
-      number: "01",
       title: "Vercel replaced \"Develop.Preview.Ship.\" with \"Build and deploy on the AI Cloud.\"",
-      tag: "Positioning",
       body: "The original headline described a workflow. The new headline names a category: **\"the AI Cloud\"**. This shift suggests Vercel is positioning itself as infrastructure for a specific era, not just a deployment tool. The change likely signals a move from product-led messaging to category-ownership framing—anchoring the brand to AI rather than developer workflow alone.",
+      tag: "Positioning",
     },
     {
-      number: "02",
       title: "Vercel removed \"Contact Us\" and \"Login\" from navigation — that is a conversion path decision",
-      tag: "Navigation",
       body: "Both CTAs served low-intent visitors: **\"Contact Us\"** for enterprise inquiries, **\"Login\"** for returning users. Removing them from primary navigation suggests Vercel is optimising for a different entry point—likely self-service sign-up or product exploration. The change may indicate a shift toward product-led growth over sales-assisted funnels, or simply a cleaner navigation hierarchy for new visitors.",
+      tag: "Navigation",
     },
     {
-      number: "03",
       title: "8 new navigation items added — all AI-specific product names, not generic categories",
-      tag: "Strategy",
       body: "The new menu includes **\"AI Gateway\"**, **\"Sandbox\"**, **\"Vercel Agent\"**, **\"AI SDK\"**, and **\"v0\"**. These are branded product names, not category labels like the earlier **\"Templates\"** or **\"Integrations\"**. This approach suggests Vercel is building a portfolio of discrete AI tools rather than positioning as a single platform. It also increases navigation complexity, which may signal confidence in a more sophisticated buyer.",
+      tag: "Strategy",
     },
     {
-      number: "04",
       title: "Vercel removed the H2 \"obsessive focus on end-user performance\" — what replaced it matters",
-      tag: "Messaging",
       body: "The 2021 subheading promised **\"the best developer experience with an obsessive focus on end-user performance\"**. That line is gone. The current page does not lead with performance as the primary value prop. This suggests Vercel's messaging now prioritises AI capability over speed. The removal points to a repositioning: the team likely believes buyers are comparing AI infrastructure options, not performance benchmarks.",
+      tag: "Messaging",
     },
   ],
   toc: [
@@ -252,10 +248,9 @@ export const vercel: CroTeardownPost = {
   ],
   articleBody: "---\ntitle: \"Vercel Homepage Teardown: Jul 2021 to Jun 2026\"\nslug: vercel\ngeneratedAt: 2026-06-09T19:10:16.425Z\nsectionsIncluded: [\"01-intro\", \"02-quick-answer\", \"03-visual-timeline\", \"04-messaging-evolution\", \"05-cta-navigation-evolution\", \"06-lessons-for-saas-teams\"]\n---\n# How Vercel rewrote its homepage over 5 years\n\n*Jul 2021 → Jun 2026 · 5 snapshots · 8 min read*\n\n---\n\n# How Vercel Rewrote Its Homepage Over 5 Years\n\nBetween July 2021 and June 2026, Vercel replaced its homepage three times. The headline shifted from **\"Develop. Preview. Ship.\"** — a workflow promise aimed at developers — to **\"Build and deploy on the AI Cloud\"**, a platform claim that names a technology category. The navigation was rebuilt entirely, with 8 items added and 8 removed. This article walks through what changed, what those changes signal about who Vercel is now selling to, and how to apply the same lens to your own homepage.\n\n## Quick answer: Vercel homepage messaging changes\n\nVercel replaced **\"Develop.Preview.Ship.\"** with **\"Build and deploy on the AI Cloud.\"**, reframed its meta description from \"best frontend developer experience\" to \"frameworks, workflows, and infrastructure,\" and overhauled its navigation with 8 items added and 8 removed. The pattern shows a shift from workflow-focused language to product-and-infrastructure framing. The evidence spans 5 snapshots and includes major content architecture changes — 12 section headings added, 2 removed — signaling a structural rewrite of how the page presents its pitch.\n\n## Vercel homepage positioning: how the headline changed from 2021 to 2026\n\n### What changed\n\nThe headline dropped all product explanation. The 2021 version read **\"Develop.Preview.Ship.\"** — three verbs a developer could understand without prior context. The current version reads **\"Build and deploy on the AI Cloud.\"** The phrase **\"the AI Cloud\"** now carries the entire category definition, with no supporting explanation visible above the fold.\n\n### Why it matters\n\nThe page no longer tells a first-time visitor what Vercel is. This shift is consistent with the navigation changes: earlier versions included **\"Templates\"**, **\"Integrations\"**, and **\"Analytics\"** — labels that signal product categories. The current navigation and meta description (now: \"frameworks, workflows, and infrastructure\") suggest the company expects visitors to arrive already knowing they need a deployment platform.\n\n### What it costs\n\nCount how many words in your headline require prior knowledge of your company or category. Vercel's went from zero to five. This creates a clarity gap if the visitor does not recognize the category term and has no prior brand exposure — common when most traffic arrives from non-branded search or cold paid channels.\n\n## Vercel's messaging shift: who the homepage speaks to now\n\n### Who the old page served\n\n**\"Develop. Preview. Ship.\"** — three verbs describing a deployment workflow. The original headline named the stages a developer moves through when shipping frontend code. The meta description promised **\"the best frontend developer experience\"** — vocabulary for someone already comparing deployment tools.\n\n### Who the new page serves\n\n**\"Build and deploy on the AI Cloud\"** names two capabilities and a category. The new meta description lists **\"frameworks, workflows, and infrastructure\"** — three capability types instead of one workflow outcome. The page now speaks to visitors evaluating platform capabilities, not just deployment speed.\n\n### What this means for the sales process\n\nVercel's new meta lists three categories instead of naming a single outcome. If your headline does the same, check what your visitor knows before they land. A multi-capability headline works when buyers arrive already comparing platforms. Does your page assume the visitor knows what category you compete in?\n\n## Vercel's homepage CTA shift: from conversion path to product catalog\n\n### What changed\n\nVercel replaced its conversion-focused CTAs with ten product-feature links.\n\nThe old homepage included **\"Contact\"**, **\"Contact Us\"**, and **\"Login\"** — standard paths for buyers ready to evaluate or access the product. Those are gone. The new CTAs point to features: **\"AI Cloud\"**, **\"Vercel Agent\"**, **\"CI/CD\"**, **\"Fluid Compute\"**.\n\n### What Vercel's CTA shift requires from visitors\n\nThe page no longer guides visitors toward a single action.\n\nSomeone landing on the homepage now chooses from ten feature-specific CTAs without a clear \"start here\" option. This structure may work when visitors arrive already knowing which part of the platform they need — but filters out anyone who needs the page to suggest the next step.\n\n### Audit your own page\n\nOpen your homepage in a private window. Can a first-time visitor identify the primary action in under three seconds?\n\nIf you have more than two CTAs competing for attention above the fold, remove all but one and test conversion rate over 14 days. Vercel's multi-CTA layout assumes brand recognition that most companies do not yet have.\n\n## Should SaaS companies copy Vercel's homepage strategy? When it works and when it doesn't\n\n### The pattern\n\nVercel's homepage evolution shows how incremental changes in the same direction compound into a brand-level shift. Over five years and five snapshots, 12 section headings were added, 2 removed. The navigation was completely overhauled — 8 new items, 8 removed. The headline changed from **\"Develop. Preview. Ship.\"** to **\"Build and deploy on the AI Cloud.\"** No single update was dramatic, yet the final page speaks to a completely different buyer than the first.\n\n### Who should copy this\n\nYou can copy this if strangers already know what your product does before they land on your homepage. Test: search your company name plus \"alternative\" in Google. If the results assume category knowledge, your brand carries that context. Vercel's nav now includes **\"AI Cloud\"** and **\"v0\"** — labels that only make sense if you already know what Vercel is.\n\n### Who should NOT copy this\n\nIf most homepage visitors arrive via non-branded search or paid ads, they land without knowing your category. A page built for buyers who already understand what you do will feel vague to them. Example: Vercel removed the explanation **\"Vercel combines the best developer experience with an obsessive focus on end-user performance.\"** That worked because their brand now does that work before the page loads.\n\n### The test before you copy\n\nCount how many of your nav labels assume the visitor already knows your product category — like Vercel's **\"AI Cloud\"**, **\"AI SDK\"**, or **\"v0\"**. If that number is above 2 and most of your traffic comes from searches like \"deployment platform\" rather than your company name, add one clarity-first label that completes the sentence: \"This is a _____ for _____.\"",
   internalLinkSuggestions: [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
     "/cro-teardowns/linear",
-    "/cro-teardowns/stripe",
+    "/cro-teardowns/lemlist",
+    "/cro-teardowns/intercom",
   ],
-  publishedAt: "2026-06-09T19:11:20.487Z",
+  publishedAt: "2026-06-12T17:39:14.365Z",
 };

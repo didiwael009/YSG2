@@ -1,0 +1,143 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Apify",
+  "companyUrl": "https://apify.com/",
+  "articleTitle": "Apify Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Apify rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 7,
+    "h2Removed": 2,
+    "ctaAdded": 10,
+    "ctaRemoved": 1,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Apify homepage teardown",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2020-01",
+      "label": "Jan 2020 — original state",
+      "period": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/apify/selected/2020-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Extract data from any website\" — direct product statement.",
+        "Visible section headings include: \"Turn any website into an API\", \"How can Apifyhelp your business?\", \"Products\".",
+        "Navigation includes: \"Free store\", \"Get quote\" — product category framing.",
+        "Section headings later removed include: \"Turn any website into an API\" and \"How can Apifyhelp your business?\"."
+      ]
+    },
+    {
+      "id": "analysis-2022-04",
+      "label": "Apr 2022 — mid-transition",
+      "period": "Apr 2022",
+      "screenshotPath": "/cro-teardowns/apify/selected/2022-04.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 93.5% — a moderate visual change.",
+        "H1 in this snapshot: \"The most powerful web scraping and automation platform\".",
+        "New section headings appearing: \"Hundreds of ready-to-use tools\", \"Use Apify for various use cases\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/apify/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"39,044 tools for your AI\" — updated value proposition.",
+        "New section headings include: \"Not just a web scraping API\", \"Take your Actors beyond the open web\", \"Build and deploy reliable scrapers\".",
+        "CTAs no longer present include: \"Browse all actors\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Extract data from any website",
+      "after": "39,044 tools for your AI",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Apify extracts data from websites, crawls lists of URLs and automates workflows on the web. Turn any website into an API in a few minutes!",
+      "after": "Cloud platform for web scraping, browser automation, AI agents, and data for AI. Use 39,000+ ready-made tools, code templates, or order a custom solution.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Web Scraping, Data Extraction and Automation · Apify",
+      "after": "Apify: Full-stack web scraping and data extraction platform"
+    }
+  ],
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2020-01",
+        "design_era": "growth",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Bold blue hero section with white headline 'Extract data from any website', subheading, and feature cards displaying product integrations below.",
+        "proof_density": "medium",
+        "primary_message_type": "feature",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2022-04",
+        "design_era": "growth",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Colorful gradient hero with headline 'The most powerful web scraping and automation platform', statistics badges, and customer logos, followed by tool cards.",
+        "proof_density": "high",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2024-01",
+        "design_era": "mature",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Minimal gradient hero with headline 'Build reliable web scrapers. Fast.' followed by customer logos and two-column content layout with code examples.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "2024-07",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Subtle gradient hero with large headline '39,044 tools for your AI' and grid of tool cards with alternating layouts and code examples.",
+        "proof_density": "low",
+        "primary_message_type": "category",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "current-live",
+        "design_era": "enterprise",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Error page displaying '429 Too Many Requests' message on plain white background with minimal styling.",
+        "proof_density": "none",
+        "primary_message_type": "feature",
+        "visual_sophistication": 1,
+        "brand_maturity": "enterprise-grade"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from bold blue solid backgrounds with prominent feature cards (2020) through gradient-heavy, colorful hero sections emphasizing social proof (2022), toward increasingly minimal and refined layouts with subtle gradients and content-forward design (2024). The current live state reflects a system error rather than production design.",
+    "design_evolution_label": "bold-to-minimal-growth-to-enterprise",
+    "generatedAt": "2026-06-12T13:48:07.666Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0065496
+  }
+}

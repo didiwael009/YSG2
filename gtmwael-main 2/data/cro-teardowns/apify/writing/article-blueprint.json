@@ -1,0 +1,28 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 7,
+    "h2Removed": 2,
+    "ctaAdded": 10,
+    "ctaRemoved": 1,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [],
+  "generatedAt": "2026-06-12T13:46:49.034Z",
+  "postSummary": {
+    "title": "Apify Homepage Teardown: Jan 2020 to Jun 2026",
+    "h1": "How Apify rewrote its homepage over 6 years",
+    "readTime": "9 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 4,
+    "snapshotCount": 5
+  }
+}

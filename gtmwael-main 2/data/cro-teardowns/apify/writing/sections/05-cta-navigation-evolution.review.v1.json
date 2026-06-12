@@ -1,0 +1,47 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "The ## section heading contains nav items ('Free store', 'MCP Give your AI access to Actors') that do NOT appear verbatim in the navAdded or navRemoved arrays — this triggers a -8 penalty under evidenceAccuracy.",
+    "The heading is partially clever-only: 'redefined its sales motion' is not a searchable term, and the quoted nav items are fabricated rather than evidence-backed.",
+    "The second H3 heading ('What Apify's navigation additions signal about its new target buyer') references MCP connectors as a navigation item, but 'New MCP connectors are live' appears in ctaAdded, not navAdded — this is a category misattribution.",
+    "The opening of H3 block 2 buries the practical takeaway — the finding about MCP filtering casual visitors does not appear until the second paragraph of that block, violating the FINDING-first rule.",
+    "The paragraph beginning 'The nav additions most worth noting...' runs to approximately 65 words — over the 60-word cap, triggering a scannability penalty.",
+    "The paragraph beginning 'Three different visitors...' runs to approximately 55 words — borderline but acceptable.",
+    "The 'Evidence check before writing' block is rendered inline in the draft as if it is editorial scaffolding, not body copy — this is a structural error that would appear in the published article.",
+    "The phrase 'filters out casual visitors' is a mild causal claim without an attached condition — should be hedged ('if Apify intends to narrow its audience, placing MCP in the nav may signal that').",
+    "The founder test is specific in form but weakly anchored to Apify's own evidence — it generalises to any company's nav rather than referencing Apify's specific shift from 'Browse all actors' to 'Find your Actor'.",
+    "No paragraph-level penalty for abstract closing sentence: 'your nav is doing the wrong job' is concrete and acceptable.",
+    "The section is approximately 310 words — within the 180–320 word limit, acceptable."
+  ],
+  "requiredFixes": [
+    "Remove the fabricated nav items from the ## heading ('Free store' and 'MCP Give your AI access to Actors' do not appear in navAdded or navRemoved). Replace with a heading that uses only evidence-backed terms, the company name, and a searchable topic word such as 'CTA' or 'navigation'.",
+    "Delete the inline 'Evidence check before writing' block — it is editorial scaffolding and must not appear in the published draft.",
+    "Reclassify 'New MCP connectors are live' as a CTA (it is in ctaAdded) rather than a navigation item in the H3 analysis. Rewrite that paragraph to accurately reflect what was added to nav vs. what was added as a CTA.",
+    "Move the practical finding to the first sentence of the second H3 block — the reader should know what the MCP placement signals before receiving the explanation.",
+    "Trim the paragraph beginning 'The nav additions most worth noting...' to under 60 words.",
+    "Anchor the founder test more tightly to Apify's specific evidence — reference the shift from 'Browse all actors' to 'Find your Actor' as the before/after example the founder should use as a benchmark."
+  ],
+  "riskFlags": [
+    "'Placing it in the navigation likely filters out casual visitors without a word of explanation' — causal claim without condition; hedge to 'may signal an intent to filter' or attach a condition.",
+    "The ## heading quotes nav items that do not exist in the evidence arrays — fabricated verbatim claims inside a bold-quoted heading are a hard evidenceAccuracy violation.",
+    "'New MCP connectors are live' is listed in ctaAdded, not navAdded — attributing it to navigation is a factual misclassification."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name (Apify) which is good for SEO, but the fabricated nav-item quotes dilute keyword clarity and could confuse search indexing.",
+    "H3 headings both contain 'Apify' and topic terms ('CTA changes', 'navigation additions') — these are well-structured for long-tail search.",
+    "The inline evidence block, if published, would create duplicate bold-text noise that harms scannability and may confuse crawlers parsing structured content.",
+    "The article title and primary keyword ('Apify homepage teardown') are not echoed in the ## heading — a missed opportunity for keyword reinforcement at section level."
+  ],
+  "rewriteInstruction": "Fix the ## heading first: remove the fabricated nav-item quotes and replace with a heading that contains 'Apify', a searchable topic word (CTA, navigation, or conversion), and a real finding from the evidence — for example, 'How Apify's CTA and navigation changes reveal a two-track sales motion'. Delete the inline evidence-check scaffolding block entirely. In the second H3, correct the misclassification: 'New MCP connectors are live' is a CTA, not a nav item — check the navAdded array and build the analysis around what actually changed in navigation. Move the core finding (what the nav shift signals) to the first sentence of each H3 block, not the second or third. Trim the longest paragraph to under 60 words. Finally, rewrite the founder test to anchor explicitly to Apify's own before/after shift — from 'Browse all actors' to 'Find your Actor' — so the test feels like a specific comparison rather than generic nav advice.",
+  "dimensionScores": {
+    "evidenceAccuracy": 9,
+    "specificity": 11,
+    "plainLanguage": 17,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

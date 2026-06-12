@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-10T22:48:58.566Z",
+  "publishedAt": "2026-06-12T17:39:15.286Z",
   "slug": "lemlist",
   "dryRun": false,
   "forced": false,
@@ -17,11 +17,11 @@
   },
   "blockedReasons": [],
   "articlePath": "src/content/cro-teardown/articles/lemlist.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
-    "/saas-marketing-agency"
+    "/cro-teardowns/hootsuite",
+    "/cro-teardowns/expensya",
+    "/cro-teardowns/linear"
   ],
   "fieldsOverridden": [
     "metaTitle"

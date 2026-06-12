@@ -1,0 +1,51 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "## section heading is not searchable: 'Free store' does not appear verbatim in the evidence arrays — the navRemoved array does not include 'Free store', and 'MCP Give your AI access to Actors' does not appear verbatim in ctaAdded or navAdded either. This triggers a -8 penalty under evidenceAccuracy for named CTA/nav items not appearing verbatim in the evidence.",
+    "The heading is also 'clever-only' in structure and does not contain 'homepage', 'CTA', 'navigation', or 'conversion' as searchable terms in a way a Google reader would use — it reads as a summary sentence, not a searchable heading.",
+    "Third paragraph of H3-1 exceeds 60 words (approx 62 words) — marginal violation.",
+    "The final founder test is partially generic: 'Look at your own navigation' is generic advice. It becomes specific only in the second sentence. The test should open with the specific Apify-anchored action.",
+    "Causal statement without condition in H3-1: 'That is consistent with Apify running two parallel funnels' — this is an inference presented as conclusion without a conditional hedge.",
+    "'signals a significant shift' in H3-2 is a causal/outcome claim without data to support it, triggering a -3 penalty.",
+    "The opening of H3-2 buries the finding: the paragraph opens with raw numbers ('Eight navigation items were added. Four were removed.') before stating what that means — violating the FINDING-FIRST rule.",
+    "The section is approximately 310 words — within the 180–320 word limit, but at the upper edge.",
+    "No forbidden jargon terms are used more than once — compliant.",
+    "All verbatim CTAs and nav items appear to be in bold quotes — compliant.",
+    "Both H3 subheadings are present — compliant.",
+    "'Contact sales' and 'Get a demo' both appear in ctaAdded — compliant.",
+    "'Browse all actors' appears in ctaRemoved as 'Browse all actors' (draft uses 'Browse all actors') — compliant.",
+    "'Find your Actor' and 'Browse Apify Store' both appear in ctaAdded — compliant.",
+    "'New MCP connectors are live' appears in ctaAdded — compliant.",
+    "'Read more customer stories' appears in ctaAdded — compliant."
+  ],
+  "requiredFixes": [
+    "Replace the ## section heading entirely. 'Free store' and 'MCP Give your AI access to Actors' do not appear verbatim in the evidence. Use a heading that contains 'Apify', 'CTA', 'navigation', or 'homepage' and references only verbatim evidence terms — e.g. 'How Apify's CTA and Navigation Changes Reveal a Two-Funnel Homepage Strategy'.",
+    "Rewrite the opening of H3-2 so the finding comes first: state what the nav shift means in sentence one, then give the raw numbers as support in sentence two. Current order is backwards.",
+    "Add a conditional hedge to the 'two parallel funnels' inference: replace 'that is consistent with Apify running two parallel funnels' with 'if these CTAs appear simultaneously above the fold, that may indicate Apify is running two parallel funnels rather than...' — the conditional is already partially there but needs to be tightened earlier in the sentence.",
+    "Soften 'signals a significant shift' — replace with 'suggests a deliberate rethink of who the nav is built for' or similar hedged language to avoid an unsupported causation claim.",
+    "Rewrite the founder test opening so it starts with a specific Apify-anchored action, not the generic 'Look at your own navigation'. For example: 'Compare your nav's first item against Apify's shift from **\"Browse all actors\"** to **\"Find your Actor\"** — then count how many of your own nav items assume a visitor who already knows what they want.'"
+  ],
+  "riskFlags": [
+    "'That is consistent with Apify running two parallel funnels' — inference presented without explicit condition; partially hedged but the hedge comes late.",
+    "'That volume of change signals a significant shift' — causation claim (change volume → intent signal) without supporting data.",
+    "'Placing that language prominently may signal exactly who the page is now written for' — acceptable hedge ('may signal') but verify that 'prominently' is supported by visual evidence not provided in the evidence object."
+  ],
+  "seoNotes": [
+    "The ## heading is a liability for search: it contains a misquoted nav item ('Free store') and a paraphrased CTA neither of which appears verbatim in the evidence. Google will not surface this for 'Apify homepage CTA changes' or similar queries.",
+    "H3 subheadings both contain 'Apify' and a topic term ('CTA changes', 'navigation changes') — these are good for internal anchor indexing.",
+    "The explanation of Model Context Protocol ('a standard that lets AI agents call external tools') is good plain-language SEO: it defines a rising technical term in a sentence that will surface in AI-answer snippets.",
+    "Article title 'Apify Homepage Teardown: Jan 2020 to Jun 2026' and primary keyword 'Apify homepage teardown' are not referenced in this section's heading — consider mirroring the keyword structure in the ## heading."
+  ],
+  "rewriteInstruction": "Fix the ## heading first — it contains two nav/CTA phrases that do not appear verbatim in the evidence and it has no searchable terms (no 'homepage', 'CTA', 'navigation', or 'conversion'). Use a heading that names Apify and references a searchable topic. Then rewrite the H3-2 opening paragraph so the finding leads: what does the scale of nav change mean, stated plainly in sentence one, with the raw numbers as evidence in sentence two. Soften both causal claims ('signals a significant shift', 'running two parallel funnels') with explicit conditional language. Finally, rewrite the founder test so its first sentence is a specific Apify-anchored action — not a generic 'look at your own navigation' prompt — and ends with a countable, under-five-minute task the founder can complete against their own page right now.",
+  "dimensionScores": {
+    "evidenceAccuracy": 12,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 11,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

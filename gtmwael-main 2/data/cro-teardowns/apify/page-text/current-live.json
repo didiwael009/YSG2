@@ -1,0 +1,700 @@
+{
+  "title": "Apify: Full-stack web scraping and data extraction platform",
+  "metaDescription": "Cloud platform for web scraping, browser automation, AI agents, and data for AI. Use 39,000+ ready-made tools, code templates, or order a custom solution.",
+  "h1": [
+    "39,044 tools for your AI"
+  ],
+  "h2": [
+    "Not just a web scraping API",
+    "Take your Actors beyond the open web",
+    "Build and deploy reliable scrapers",
+    "Learn.",
+    "Code.",
+    "Connect.",
+    "Publish Actors. Get paid.",
+    "Enterprise-grade solution",
+    "Easily integrateZapierGitHubGoogle SheetsPineconeany appAirbyteMCP clientsGoogle DriveSlackZapierwith Actors",
+    "It's time to run your first Actor.",
+    "Apify uses cookies"
+  ],
+  "h3": [
+    "TikTok Scraper",
+    "Google Maps Scraper",
+    "Instagram Scraper",
+    "Website Content Crawler",
+    "E-commerce Scraping Tool",
+    "Facebook Posts Scraper",
+    "Marketplace of 39,044 Actors",
+    "Build and deploy your own",
+    "Or we can build it for you",
+    "We love open source",
+    "Web Scraping Academy",
+    "Code templates",
+    "Discord community",
+    "Reach thousands of new customers",
+    "Manage Consent Preferences",
+    "Performance Cookies"
+  ],
+  "ctas": [
+    "New MCP connectors are live",
+    "New MCP connectors are live. Actors now work where you do",
+    "Find your Actor",
+    "Browse Apify Store",
+    "Read the announcement",
+    "Open-source tools",
+    "Proxies",
+    "Unblocking",
+    "Cloud deployment",
+    "Monitoring",
+    "Data processing",
+    "LlamaIndex",
+    "LangChain",
+    "Playwright",
+    "Puppeteer",
+    "Cheerio",
+    "Selenium",
+    "Scrapy",
+    "BeautifulSoup",
+    "Code templates JavaScript, TypeScript, and Python templates to quick-start your web scraping projects. Get started",
+    "Discord community Get help from the Apify developer community of more than 15,000 members. Join community",
+    "Learn more",
+    "Contact sales",
+    "Read more customer stories",
+    "Browse integrations",
+    "View SDKs",
+    "Get started",
+    "Get a demo",
+    "Read our cookie policy",
+    "Continue",
+    "Cookie settings",
+    "Allow All",
+    "Clear",
+    "Apply",
+    "Cancel",
+    "Reject all",
+    "Confirm my Choices"
+  ],
+  "navLinks": [
+    "Skip to content",
+    "Get started",
+    "Log in",
+    "Start here!Get data with ready-made web scrapers for popular websitesBrowse 39,044 Actors",
+    "Apify StorePre-built web scraping tools",
+    "ActorsBuild and run serverless programs",
+    "IntegrationsConnect with apps and services",
+    "MCPGive your AI access to Actors",
+    "Anti-blockingScrape without getting blocked",
+    "ProxyRotate scraper IP addresses",
+    "CrawleeWeb scraping and crawling library",
+    "MCP server configurationConfigure your Apify MCP server with Actors and tools for seamless integration with MCP clients.Start building",
+    "Enterprise",
+    "Startups",
+    "Universities",
+    "Nonprofits",
+    "Data for generative AI",
+    "Data for AI agents",
+    "Lead generation",
+    "Market research",
+    "View more →",
+    "Apify Professional Services",
+    "Apify Partners",
+    "DocumentationFull reference for the Apify platform",
+    "Code templatesPython, JavaScript, and TypeScript",
+    "Web scraping academyCourses for beginners and experts",
+    "Monetize your codePublish your scrapers and get paid",
+    "API reference",
+    "CLI",
+    "SDK",
+    "MCP",
+    "Crawlee",
+    "Earn from your code$1.2M paid out last month. Many developers earn over $3k.Start earning now",
+    "Help and supportAdvice and answers about Apify",
+    "Actor ideasGet inspired to build Actors",
+    "ChangelogSee what’s new on Apify",
+    "Customer storiesFind out how others use Apify",
+    "About Apify",
+    "Contact us",
+    "Blog",
+    "Live events",
+    "Partners",
+    "JobsWe're hiring!",
+    "Join our DiscordTalk to scraping experts",
+    "Pricing",
+    "Contact sales"
+  ],
+  "bodyText": "Skip to contentGet startedLog inProductBackStart here!Get data with ready-made web scrapers for popular websitesBrowse 39,044 ActorsApify platformApify StorePre-built web scraping toolsActorsBuild and run serverless programsIntegrationsConnect with apps and servicesMCPGive your AI access to ActorsAnti-blockingAnti-blockingScrape without getting blockedProxyRotate scraper IP addressesOpen sourceCrawleeWeb scraping and crawling librarySolutionsBackMCP server configurationConfigure your Apify MCP server with Actors and tools for seamless integration with MCP clients.Start buildingWeb data forEnterpriseStartupsUniversitiesNonprofitsUse casesData for generative AIData for AI agentsLead generationMarket researchView more →ConsultingApify Professional ServicesApify PartnersDevelopersBackDocumentationFull reference for the Apify platformGet startedCode templatesPython, JavaScript, and TypeScriptWeb scraping academyCourses for beginners and expertsMonetize your codePublish your scrapers and get paidLearnAPI referenceCLISDKMCPCrawleeEarn from your code$1.2M paid out last month. Many developers earn over $3k.Start earning nowResourcesBackHelp and supportAdvice and answers about ApifyActor ideasGet inspired to build ActorsChangelogSee what’s new on ApifyCustomer storiesFind out how others use ApifyCompanyAbout ApifyContact usBlogLive eventsPartnersJobsWe're hiring!Join our DiscordTalk to scraping expertsPricingContact salesContact salesLog inGet startedNewMCP connectors are liveNewMCP connectors are live. Actors now work where you do39,044 tools for your AIApify is the largest marketplace of trusted tools for AI. Get real-time web data, track competitors, generate leads, monitor social media, and integrate your apps and agents.Scrape TikTok profilesFind your ActorTikTok Scraperclockworks/tiktok-scraperExtract data from TikTok videos, hashtags, and users. Use URLs or search queries to scrape TikTok profiles, hashtags, posts, URLs, shares, followers, hearts, names, video, and music-related data. Export scraped data, run the scraper via API, schedule and monitor runs or integrate with other tools.Clockworks196K4.8(311)Google Maps Scrapercompass/crawler-google-placesExtract data from thousands of Google Maps locations and businesses, including reviews, reviewer details, images, contact info, including full name, email, and job title, opening hours, prices & more. Export data, run via API, schedule and monitor runs, or integrate with other tools.Compass454K4.8(1,486)Instagram Scraperapify/instagram-scraperScrape and download Instagram posts, profiles, places, hashtags, photos, and comments. Get data from Instagram using one or more Instagram URLs or search queries. Export scraped data, run the scraper via API, schedule and monitor runs or integrate with other tools.Apify295K4.7(447)Website Content Crawlerapify/website-content-crawlerCrawl websites and extract text content to feed AI models, LLM applications, vector databases, or RAG pipelines. The Actor supports rich formatting using Markdown, cleans the HTML, downloads files, and integrates well with 🦜🔗 LangChain, LlamaIndex, and the wider LLM ecosystem.Apify132K4.6(205)E-commerce Scraping Toolapify/e-commerce-scraping-toolScrape data from e-commerce websites with E-commerce Scraping Tool. Scrape almost any retail site in minutes, extract e-commerce data and use it to monitor price details over time or compare different e-commerce sites’ offerings.Apify11K4.5(44)Facebook Posts Scraperapify/facebook-posts-scraperExtract posts, videos, and engagement metrics from Facebook pages. Get text captions, reactions, video transcripts, images, external links, collaborators, and more from Facebook pages and profiles. Export ad data, schedule runs via API, and integrate with other tools or AI workflows.Apify79K4.6(183)Browse Apify StoreTrusted by global technology leadersNot just a web scraping APIMarketplace of 39,044 ActorsApify has Actors for scraping websites, automating the web, and feeding AI with web data.Visit Apify StoreBuild and deploy your ownHave a new use case? Start building new Actors with our code templates and extensive guides.Start buildingOr we can build it for youRely on our experts to deliver and maintain custom web scraping solutions for you.Learn moreTake your Actors beyond the open webMCP connectors securely link Actors to Notion, Slack, GitHub, and more. Read, write, and trigger workflows mid-run, with no credentials shared.Read the announcementBuild and deploy reliable scrapersOpen-source toolsProxiesUnblockingCloud deploymentMonitoringData processingWe love open sourceApify works great with both Python and JavaScript, as well as Playwright, Puppeteer, Selenium, Scrapy, and Crawlee - our own web crawling and browser automation library.JavaScriptPython1import { PuppeteerCrawler, Dataset } from \"crawlee\";2 3const crawler = new PuppeteerCrawler({4 async requestHandler({ request, page, enqueueLinks }) {5 await Dataset.pushData({6 url: request.url,7 title: await page.title(),8 });9 await enqueueLinks();10 },11});12 13await crawler.run([\"https://crawlee.dev\"]);LlamaIndexLangChainPlaywrightPuppeteerCheerioSeleniumScrapyBeautifulSoupLearn.Web Scraping AcademyClasses for beginners and experts. Learn about web scraping and automation with our free courses.Visit AcademyCode.Code templatesJavaScript, TypeScript, and Python templates to quick-start your web scraping projects.Get startedConnect.Discord communityGet help from the Apify developer community of more than 15,000 members.Join communityPublish Actors. Get paid.Reach thousands of new customersBuilding and running a SaaS is hard. Building an Actor and selling it on Apify Store is 10x easier. Get users from day one.Learn moreNo upfront costsPublishing your Actor is free of charge—the customers pay for the computing resources. New creators get $500 free platform credits.Rely on Apify infraActors scale automatically as you gain new users. You don’t need to worry about compute, storage, proxies, or authentication.Billing is on usHandling payments, taxes, and invoicing is a painful part of running a SaaS. Apify does all that and sends you a net payout every month.Enterprise-grade solutionSecure and reliable web data extraction provider for any scale.99.95% uptime. SOC2, GDPR, and CCPA compliant.Contact salesLearn moreWe looked at several providers, and Apify was the most complete, reliant solution we found. It was miles ahead of everything else we reviewed.Pranav SinghEngineering Manager at IntercomWe selected Apify because of their vast experience with web data collection to empower our sales team with fresh, unique leads.Filip PopovicCOO at GrouponOur collaboration with Apify proves that advanced IT tools leveraging AI can be the key in detecting infringements of consumer protection legislation.Marie-Paule BenassiConsumer Affairs Director at EURead more customer storiesEasily integrate ZapierGitHubGoogle SheetsPineconeany appAirbyteMCP clientsGoogle DriveSlackZapierwith ActorsBrowse integrationsView SDKsIt's time to run your first Actor.Get startedGet a demoProductApify StoreIntegrationsProxyCrawleeMCPDevelopersDocumentationCode templatesAPI referenceGet paid on ApifyResourcesBecome an affiliateCustomer storiesSubmit your ideasChangelogBrandConsultingProfessional ServicesApify PartnersSupportHelp & SupportActor ideasForumSpotlightMCP serversAPIsWhat is web scraping?Best web scraping toolsPython web scraping librariesScrapersToolsCompanyAbout ApifyContact usEventsBlogBecome an affiliateCustomer storiesChangelogJobsWe're hiring!BrandSocialsSecurityReviewsAll systems operationalImprintTerms of usePrivacy policyCookie settings© 2026 Apify Apify uses cookiesWe use cookies to improve your experience and analyze traffic. By using our website, you agree to let us store cookies on your device. Or adjust your preferences with the \"Cookie settings\" button. Read our cookie policyContinue Cookie settingsCookies enable us to store your preferences and give you a personalized website experience. We also use cookies for analytics and targeted marketing. We respect your right to privacy, so you can choose not to allow some types of cookies. Click on the category headings to learn more and change your settings. Read our cookie policyAllow All Manage Consent PreferencesStrictly Necessary CookiesAlways ActiveThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.Performance Cookies Clear checkbox label labelApply CancelConsent Leg.Interest checkbox label label checkbox label label checkbox label labelReject all Confirm my ChoicesYour Privacy [`dialog closed`]",
+  "elements": [
+    {
+      "text": "Skip to content",
+      "type": "nav_link"
+    },
+    {
+      "text": "Get started",
+      "type": "nav_link"
+    },
+    {
+      "text": "Log in",
+      "type": "nav_link"
+    },
+    {
+      "text": "Product",
+      "type": "nav_link"
+    },
+    {
+      "text": "Back",
+      "type": "nav_link"
+    },
+    {
+      "text": "Start here! Get data with ready-made web scrapers for popular websites Browse 39,044 Actors",
+      "type": "nav_link"
+    },
+    {
+      "text": "Apify Store Pre-built web scraping tools",
+      "type": "nav_link"
+    },
+    {
+      "text": "Actors Build and run serverless programs",
+      "type": "nav_link"
+    },
+    {
+      "text": "Integrations Connect with apps and services",
+      "type": "nav_link"
+    },
+    {
+      "text": "MCP Give your AI access to Actors",
+      "type": "nav_link"
+    },
+    {
+      "text": "Anti-blocking Scrape without getting blocked",
+      "type": "nav_link"
+    },
+    {
+      "text": "Proxy Rotate scraper IP addresses",
+      "type": "nav_link"
+    },
+    {
+      "text": "Crawlee Web scraping and crawling library",
+      "type": "nav_link"
+    },
+    {
+      "text": "Solutions",
+      "type": "nav_link"
+    },
+    {
+      "text": "Back",
+      "type": "nav_link"
+    },
+    {
+      "text": "Enterprise",
+      "type": "nav_link"
+    },
+    {
+      "text": "Startups",
+      "type": "nav_link"
+    },
+    {
+      "text": "Universities",
+      "type": "nav_link"
+    },
+    {
+      "text": "Nonprofits",
+      "type": "nav_link"
+    },
+    {
+      "text": "Data for generative AI",
+      "type": "nav_link"
+    },
+    {
+      "text": "Data for AI agents",
+      "type": "nav_link"
+    },
+    {
+      "text": "Lead generation",
+      "type": "nav_link"
+    },
+    {
+      "text": "Market research",
+      "type": "nav_link"
+    },
+    {
+      "text": "View more →",
+      "type": "nav_link"
+    },
+    {
+      "text": "Apify Professional Services",
+      "type": "nav_link"
+    },
+    {
+      "text": "Apify Partners",
+      "type": "nav_link"
+    },
+    {
+      "text": "Developers",
+      "type": "nav_link"
+    },
+    {
+      "text": "Back",
+      "type": "nav_link"
+    },
+    {
+      "text": "Documentation Full reference for the Apify platform",
+      "type": "nav_link"
+    },
+    {
+      "text": "Code templates Python, JavaScript, and TypeScript",
+      "type": "nav_link"
+    },
+    {
+      "text": "Web scraping academy Courses for beginners and experts",
+      "type": "nav_link"
+    },
+    {
+      "text": "Monetize your code Publish your scrapers and get paid",
+      "type": "nav_link"
+    },
+    {
+      "text": "API reference",
+      "type": "nav_link"
+    },
+    {
+      "text": "CLI",
+      "type": "nav_link"
+    },
+    {
+      "text": "SDK",
+      "type": "nav_link"
+    },
+    {
+      "text": "MCP",
+      "type": "nav_link"
+    },
+    {
+      "text": "Crawlee",
+      "type": "nav_link"
+    },
+    {
+      "text": "Earn from your code $1.2M paid out last month. Many developers earn over $3k. Start earning now",
+      "type": "nav_link"
+    },
+    {
+      "text": "Resources",
+      "type": "nav_link"
+    },
+    {
+      "text": "Back",
+      "type": "nav_link"
+    },
+    {
+      "text": "Help and support Advice and answers about Apify",
+      "type": "nav_link"
+    },
+    {
+      "text": "Actor ideas Get inspired to build Actors",
+      "type": "nav_link"
+    },
+    {
+      "text": "Changelog See what’s new on Apify",
+      "type": "nav_link"
+    },
+    {
+      "text": "Customer stories Find out how others use Apify",
+      "type": "nav_link"
+    },
+    {
+      "text": "About Apify",
+      "type": "nav_link"
+    },
+    {
+      "text": "Contact us",
+      "type": "nav_link"
+    },
+    {
+      "text": "Blog",
+      "type": "nav_link"
+    },
+    {
+      "text": "Live events",
+      "type": "nav_link"
+    },
+    {
+      "text": "Partners",
+      "type": "nav_link"
+    },
+    {
+      "text": "Jobs We're hiring!",
+      "type": "nav_link"
+    },
+    {
+      "text": "Join our Discord Talk to scraping experts",
+      "type": "nav_link"
+    },
+    {
+      "text": "Pricing",
+      "type": "nav_link"
+    },
+    {
+      "text": "Contact sales",
+      "type": "nav_link"
+    },
+    {
+      "text": "Contact sales",
+      "type": "nav_link"
+    },
+    {
+      "text": "Log in",
+      "type": "nav_link"
+    },
+    {
+      "text": "Get started",
+      "type": "nav_link"
+    },
+    {
+      "text": "New MCP connectors are live",
+      "type": "body_cta"
+    },
+    {
+      "text": "New MCP connectors are live. Actors now work where you do",
+      "type": "body_cta"
+    },
+    {
+      "text": "Find your Actor",
+      "type": "body_cta"
+    },
+    {
+      "text": "Browse Apify Store",
+      "type": "body_cta"
+    },
+    {
+      "text": "Read the announcement",
+      "type": "hero_cta"
+    },
+    {
+      "text": "Open-source tools",
+      "type": "body_cta"
+    },
+    {
+      "text": "Proxies",
+      "type": "body_cta"
+    },
+    {
+      "text": "Unblocking",
+      "type": "body_cta"
+    },
+    {
+      "text": "Cloud deployment",
+      "type": "body_cta"
+    },
+    {
+      "text": "Monitoring",
+      "type": "body_cta"
+    },
+    {
+      "text": "Data processing",
+      "type": "body_cta"
+    },
+    {
+      "text": "LlamaIndex",
+      "type": "body_cta"
+    },
+    {
+      "text": "LangChain",
+      "type": "body_cta"
+    },
+    {
+      "text": "Playwright",
+      "type": "body_cta"
+    },
+    {
+      "text": "Puppeteer",
+      "type": "body_cta"
+    },
+    {
+      "text": "Cheerio",
+      "type": "body_cta"
+    },
+    {
+      "text": "Selenium",
+      "type": "body_cta"
+    },
+    {
+      "text": "Scrapy",
+      "type": "body_cta"
+    },
+    {
+      "text": "BeautifulSoup",
+      "type": "body_cta"
+    },
+    {
+      "text": "Code templates JavaScript, TypeScript, and Python templates to quick-start your web scraping projects. Get started",
+      "type": "body_cta"
+    },
+    {
+      "text": "Discord community Get help from the Apify developer community of more than 15,000 members. Join community",
+      "type": "body_cta"
+    },
+    {
+      "text": "Learn more",
+      "type": "body_cta"
+    },
+    {
+      "text": "Contact sales",
+      "type": "body_cta"
+    },
+    {
+      "text": "Learn more",
+      "type": "body_cta"
+    },
+    {
+      "text": "Read more customer stories",
+      "type": "body_cta"
+    },
+    {
+      "text": "Browse integrations",
+      "type": "body_cta"
+    },
+    {
+      "text": "View SDKs",
+      "type": "body_cta"
+    },
+    {
+      "text": "Get started",
+      "type": "body_cta"
+    },
+    {
+      "text": "Get a demo",
+      "type": "body_cta"
+    },
+    {
+      "text": "Product",
+      "type": "footer_link"
+    },
+    {
+      "text": "Apify Store",
+      "type": "footer_link"
+    },
+    {
+      "text": "Integrations",
+      "type": "footer_link"
+    },
+    {
+      "text": "Proxy",
+      "type": "footer_link"
+    },
+    {
+      "text": "Crawlee",
+      "type": "footer_link"
+    },
+    {
+      "text": "MCP",
+      "type": "footer_link"
+    },
+    {
+      "text": "Developers",
+      "type": "footer_link"
+    },
+    {
+      "text": "Documentation",
+      "type": "footer_link"
+    },
+    {
+      "text": "Code templates",
+      "type": "footer_link"
+    },
+    {
+      "text": "API reference",
+      "type": "footer_link"
+    },
+    {
+      "text": "Get paid on Apify",
+      "type": "footer_link"
+    },
+    {
+      "text": "Resources",
+      "type": "footer_link"
+    },
+    {
+      "text": "Become an affiliate",
+      "type": "footer_link"
+    },
+    {
+      "text": "Customer stories",
+      "type": "footer_link"
+    },
+    {
+      "text": "Submit your ideas",
+      "type": "footer_link"
+    },
+    {
+      "text": "Changelog",
+      "type": "footer_link"
+    },
+    {
+      "text": "Brand",
+      "type": "footer_link"
+    },
+    {
+      "text": "Consulting",
+      "type": "footer_link"
+    },
+    {
+      "text": "Professional Services",
+      "type": "footer_link"
+    },
+    {
+      "text": "Apify Partners",
+      "type": "footer_link"
+    },
+    {
+      "text": "Support",
+      "type": "footer_link"
+    },
+    {
+      "text": "Help & Support",
+      "type": "footer_link"
+    },
+    {
+      "text": "Actor ideas",
+      "type": "footer_link"
+    },
+    {
+      "text": "Forum",
+      "type": "footer_link"
+    },
+    {
+      "text": "Spotlight",
+      "type": "footer_link"
+    },
+    {
+      "text": "MCP servers",
+      "type": "footer_link"
+    },
+    {
+      "text": "APIs",
+      "type": "footer_link"
+    },
+    {
+      "text": "What is web scraping?",
+      "type": "footer_link"
+    },
+    {
+      "text": "Best web scraping tools",
+      "type": "footer_link"
+    },
+    {
+      "text": "Python web scraping libraries",
+      "type": "footer_link"
+    },
+    {
+      "text": "Scrapers",
+      "type": "footer_link"
+    },
+    {
+      "text": "Tools",
+      "type": "footer_link"
+    },
+    {
+      "text": "Company",
+      "type": "footer_link"
+    },
+    {
+      "text": "About Apify",
+      "type": "footer_link"
+    },
+    {
+      "text": "Contact us",
+      "type": "footer_link"
+    },
+    {
+      "text": "Events",
+      "type": "footer_link"
+    },
+    {
+      "text": "Blog",
+      "type": "footer_link"
+    },
+    {
+      "text": "Become an affiliate",
+      "type": "footer_link"
+    },
+    {
+      "text": "Customer stories",
+      "type": "footer_link"
+    },
+    {
+      "text": "Changelog",
+      "type": "footer_link"
+    },
+    {
+      "text": "JobsWe're hiring!",
+      "type": "footer_link"
+    },
+    {
+      "text": "Brand",
+      "type": "footer_link"
+    },
+    {
+      "text": "All systems operational",
+      "type": "footer_link"
+    },
+    {
+      "text": "Imprint",
+      "type": "footer_link"
+    },
+    {
+      "text": "Terms of use",
+      "type": "footer_link"
+    },
+    {
+      "text": "Privacy policy",
+      "type": "footer_link"
+    },
+    {
+      "text": "Cookie settings",
+      "type": "footer_link"
+    },
+    {
+      "text": "© 2026 Apify",
+      "type": "footer_link"
+    },
+    {
+      "text": "Read our cookie policy",
+      "type": "hero_cta"
+    },
+    {
+      "text": "Continue",
+      "type": "hero_cta"
+    },
+    {
+      "text": "Cookie settings",
+      "type": "hero_cta"
+    },
+    {
+      "text": "Read our cookie policy",
+      "type": "body_cta"
+    },
+    {
+      "text": "Allow All",
+      "type": "body_cta"
+    },
+    {
+      "text": "Clear",
+      "type": "body_cta"
+    },
+    {
+      "text": "Apply",
+      "type": "body_cta"
+    },
+    {
+      "text": "Cancel",
+      "type": "body_cta"
+    },
+    {
+      "text": "Reject all",
+      "type": "body_cta"
+    },
+    {
+      "text": "Confirm my Choices",
+      "type": "body_cta"
+    }
+  ]
+}

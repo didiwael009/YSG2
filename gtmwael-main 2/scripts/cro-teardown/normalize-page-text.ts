@@ -187,7 +187,7 @@ const STRIP_ALWAYS: ReadonlyArray<RegExp> = [
  *    which is acceptable since bodyText is LLM context, never a quoted source.
  * 2. Collapse all runs of whitespace (tabs, newlines, double-spaces) → single space.
  */
-function cleanBodyText(raw: string): string {
+export function cleanBodyText(raw: string): string {
   return raw
     .replace(/([a-z]{3,})([A-Z][a-z]{2,})/g, '$1 $2')
     .replace(/\s+/g, ' ')

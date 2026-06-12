@@ -1,20 +1,18 @@
 {
-  "publishedAt": "2026-06-12T08:29:40.088Z",
+  "publishedAt": "2026-06-12T17:39:16.237Z",
   "slug": "webflow",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 58,
-    "seoPass": false,
-    "seoScore": 71,
+    "finalJudgeScore": 81,
+    "seoPass": true,
+    "seoScore": 83,
     "unsupportedClaims": [
-      "raised over $330 million between 2021 and 2022, reaching a $4 billion valuation",
-      "reported enterprise revenue growth from $1 million to $8 million in 2021 alone",
-      "Framer captured designer mindshare",
-      "Wix launched Studio for agencies",
-      "The 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization",
-      "In 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development"
+      "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this specific figure ($1M to $8M, 8x) appears in the business context research evidence and is acceptable as attributed to public sources; however the phrase 'from $1M to $8M' is repeated in the article without the 'reportedly' hedge present in the evidence. Low risk but noted.",
+      "'most visitors had likely never searched before' — a frequency/volume claim about visitor search behaviour with no evidence anchor.",
+      "'placing this CTA is a bet on creating demand rather than capturing it' — framed as a confirmed strategic diagnosis rather than a conditional interpretation; no evidence confirms Webflow's intent here.",
+      "'Its removal means that reassurance no longer exists anywhere visitors can see it' — the evidence does not confirm the line does not appear elsewhere on the site; presented as definitive fact."
     ]
   },
   "consistencyCheck": {
@@ -23,16 +21,15 @@
     "warnings": []
   },
   "blockedReasons": [
-    "Final judge FAIL — score 58/100 (need ≥ 90)",
-    "6 unsupported claim(s): raised over $330 million between 2021 and 2022, reaching a $4 billion valuation; reported enterprise revenue growth from $1 million to $8 million in 2021 alone",
-    "SEO audit FAIL — score 71/100 (need ≥ 80)"
+    "Final judge FAIL — score 81/100 (need ≥ 90)",
+    "4 unsupported claim(s): 'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this specific figure ($1M to $8M, 8x) appears in the business context research evidence and is acceptable as attributed to public sources; however the phrase 'from $1M to $8M' is repeated in the article without the 'reportedly' hedge present in the evidence. Low risk but noted.; 'most visitors had likely never searched before' — a frequency/volume claim about visitor search behaviour with no evidence anchor."
   ],
   "articlePath": "src/content/cro-teardown/articles/webflow.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
-    "/saas-marketing-agency"
+    "/cro-teardowns/hootsuite",
+    "/cro-teardowns/expensya",
+    "/cro-teardowns/linear"
   ],
   "fieldsOverridden": [
     "metaTitle"

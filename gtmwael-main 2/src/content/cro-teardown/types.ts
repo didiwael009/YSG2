@@ -25,6 +25,14 @@ export type LessonCard = {
   title: string;
   body: string;
   tag: string;
+  // Optional rich fields for the expanded card layout
+  h2?: string;
+  before?: string;
+  after?: string;
+  beforeLabel?: string;
+  afterLabel?: string;
+  signals?: string[];
+  takeaway?: string;
 };
 
 export type SummaryCard = {

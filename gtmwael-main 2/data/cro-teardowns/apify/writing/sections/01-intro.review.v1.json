@@ -1,0 +1,32 @@
+{
+  "score": 91,
+  "pass": true,
+  "issues": [
+    "The closing promise ('by the end you will have a concrete test') slightly overreaches for an intro section — the test belongs in a later section and promising it here creates a minor expectation-setting risk if the test feels generic when it arrives.",
+    "The phrase 'competing on what its community has built' implies a community-built ecosystem as established fact; the evidence supports 'third-party developers' and a marketplace model but does not explicitly confirm the tool count is community-sourced versus internally built."
+  ],
+  "requiredFixes": [
+    "Hedge 'what its community has built' — the evidence confirms a marketplace/platform model and third-party Actors, but does not explicitly state the 39,044 tools are community-sourced. Change to something like 'what its platform ecosystem has accumulated' or add 'reportedly' to avoid an unsupported causal attribution.",
+    "The closing forward-reference ('by the end you will have a concrete test') is a promise that belongs to the article structure, not the intro. Either remove it or make it conditional ('if you run this teardown to the end') to avoid over-promising in the intro."
+  ],
+  "riskFlags": [
+    "'Competing on what its community has built' — the evidence shows third-party Actors and a marketplace framing, but the source of the 39,044 tools (community vs. internal vs. curated third-party) is not confirmed in the evidence. This is a mild unsupported attribution, not a hard cap trigger, but should be hedged."
+  ],
+  "seoNotes": [
+    "The ## heading 'Apify Homepage Teardown: From Extract Data to 39,044 Tools for Your AI' is strong — it contains the company name, the primary keyword 'Homepage Teardown', and both before/after headline fragments which match secondary keyword intent ('Apify homepage redesign', 'how Apify repositioned').",
+    "Opening sentence surfaces both the before and after H1 verbatim in bold quotes, which should help the article match searchers querying either the old or new Apify headline copy.",
+    "The article title in evidence is 'Apify Homepage Teardown: Jan 2020 to Jun 2026' — the draft heading improves on this with the repositioning angle, which better matches the audience intent described in seo-intent ('How Apify repositioned from a scraping tool to an AI infrastructure platform').",
+    "Word count is approximately 82 words — within the 55–90 word target."
+  ],
+  "rewriteInstruction": "The draft is very close to publishable. Make two targeted edits: (1) Replace 'what its community has built' with a hedged phrase like 'what its platform ecosystem now hosts' to stay within what the evidence confirms. (2) Either remove the closing forward-reference to 'a concrete test' or soften it to 'later sections test whether this move applies to your product' — the current phrasing over-promises from the intro. No structural rewrite needed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 20,
+    "scannability": 15,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 10,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

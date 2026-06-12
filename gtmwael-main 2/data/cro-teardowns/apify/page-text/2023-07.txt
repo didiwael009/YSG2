@@ -1,0 +1,82 @@
+TITLE: Get fast, reliable data with Apify's web scraping tools · Apify
+META DESCRIPTION: Full-stack web scraping and automation platform. Extract data with 1,400+ ready-made tools, build your own in Node.js or Python, or get a managed solution.
+
+H1:
+  - Build reliable web scrapers. Fast.
+
+H2:
+  - Web scraping can be challenging
+  - Want to learn more?
+  - Professional services
+  - Get started now
+  - Want some cookies?
+  - Privacy preference center
+
+H3:
+  - Develop with open-source tools
+  - Deploy to Apify
+  - Take your code for a run
+  - Plug your Actor into any workflow
+  - Publish your Actors
+  - Manage consent preferences
+  - Performance Cookies
+
+CTAS / BUTTONS:
+  - Start with our code templates
+  - Learn more about Actors
+  - Learn more about Apify Proxy
+  - Learn more about Apify Storage
+  - See all integrations
+  - Browse 1,000+ Actors
+  - Web scraping academy Learn everything about the extraction of data from the web.
+  - Documentation Comprehensive docs for every part of the Apify platform.
+  - Discord Get help from the Apify community if you ever get stuck.
+  - Enterprise program
+  - Partners
+  - Contact sales
+  - Sign up for free
+  - Read more information about the cookies we use in our cookie policy
+  - Accept all
+  - Cookie settings
+  - Allow all
+  - Clear
+  - Apply
+  - Cancel
+  - Reject all
+  - Confirm my choices
+
+NAV LINKS:
+  - 📚 Get fast, reliable data for ChatGPT and LLMs
+  - Apify StoreStart web scraping with ready-made scrapers
+  - CrawleeOur reliable open-source web scraping library
+  - Code templatesGet started with templates for your scraping project
+  - ActorsRun serverless cloud programs on the Apify platform
+  - IntegrationsSeamlessly connect with other apps and services
+  - ProxyImprove your web scraping performance
+  - StorageSpecialized cloud storage for web scraping and crawling
+  - Apify CLICreate, develop, build, and run Apify actors locally
+  - Apify Enterprise
+  - Certified Partners
+  - Paid Actor developers
+  - Data for generative AI & LLM
+  - Product matching AI
+  - Universal web scrapers
+  - All use cases
+  - Success stories
+  - Help and supportGet advice and answers about the Apify platform
+  - Submit your ideasUpvote or submit actor or integration ideas
+  - Documentation
+  - About Apify
+  - Blog
+  - Web scraping course
+  - Apify platform course
+  - Discord
+  - Docs
+  - Pricing
+  - Get custom solution
+  - Log in
+  - Sign up for free
+  - Browse existing tools
+
+BODY TEXT:
+📚 Get fast, reliable data for ChatGPT and LLMs ProductApify StoreStart web scraping with ready-made scrapersCrawleeOur reliable open-source web scraping libraryCode templatesGet started with templates for your scraping projectActorsRun serverless cloud programs on the Apify platformIntegrationsSeamlessly connect with other apps and servicesProxyImprove your web scraping performanceStorageSpecialized cloud storage for web scraping and crawlingApify CLICreate, develop, build, and run Apify actors locallySolutionsDELIVERED BYApify EnterpriseCertified PartnersTAILORED FORPaid Actor developersUSE CASESData for generative AI & LLMProduct matching AIUniversal web scrapersAll use casesINSPIRATIONSuccess storiesResourcesHelp and supportGet advice and answers about the Apify platformSubmit your ideasUpvote or submit actor or integration ideasLEARNDocumentationAbout ApifyBlogWeb scraping courseApify platform courseDiscordDocsPricingGet custom solutionLog inSign up for freeBuild reliable web scrapers. Fast.Apify is the platform where developers build, deploy, and monitorweb scraping and browser automation tools.Sign up for freeBrowse existing toolspowering the world's top data-driven teams Web scraping can be challengingHeadless browsers, infrastructure scaling, sophisticated blocking.Meet the full-stack platform that makes it all easy.STEP 1Develop with open-source toolsSimplify scraping withCrawleeGive your crawlers an unfair advantage with Crawlee, our popular library for building reliable scrapers in Node.js.import { PuppeteerCrawler, Dataset } from 'crawlee';const crawler = new PuppeteerCrawler({ async requestHandler({ request, page, enqueueLinks }) { await Dataset.pushData({ url: request.url, title: await page.title(), }); await enqueueLinks(); },});await crawler.run(['https://web.archive.org/web/20230818105121/https://crawlee.dev']);Use your favorite librariesApify works great with both Python and JavaScript. Scrapy, Selenium, Playwright or Puppeteer. It's your choice.Start with our code templatesfrom scrapy.spiders import CrawlSpider, Ruleclass Scraper(CrawlSpider): name = "scraper" start_urls = ["https://web.archive.org/web/20230818105121/https://the-coolest-store.com/"] def parse_item(self, response): item = Item() item["price"] = response.css(".price_color::text").get() return itemSTEP 2Deploy to ApifyTurn your code into an Apify ActorActors are serverless microapps that are easy to develop, run, share, and integrate. The infra, proxies, and storages are ready to go.Learn more about Actorsimport { Actor } from 'apify'await Actor.init();// Add your code and deploy!Deploy to the cloudNo config required. Use a single CLI command or build directly from GitHub.> apify pushInfo: Deploying Actor 'computer-scraper' to Apify.Run: Updated version 0.0 for scraper Actor.Run: Building Actor scraperACTOR: Pushing Docker image to repository.ACTOR: Build finished.Actor build detail -> https://console.apify.com/actors#/builds/0.0.2Success: Actor was deployed to Apify cloud and built there.STEP 3Take your code for a runRun your ActorsStart from Apify Console, CLI, via API, or schedule your Actor to start at any time. It’s your call.POST/v2/acts/4cT0r1D/runsRun object{ "id": "seHnBnyCTfiEnXft", "startedAt": "2022-12-01T13:42:00.364Z", "finishedAt": null, "status": "RUNNING", "options": { "build": "version-3", "timeoutSecs": 3600, "memoryMbytes": 4096 }, "defaultKeyValueStoreId": "EiGjhZkqseHnBnyC", "defaultDatasetId": "vVh7jTthEiGjhZkq", "defaultRequestQueueId": "TfiEnXftvVh7jTth" }Never get blockedUse our large pool of datacenter and residential proxies. Rely on smart IP address rotation with human-like browser fingerprints.Learn more about Apify ProxyActor.createProxyConfiguration({ countryCode: 'US', groups: ['RESIDENTIAL'],});Store and share crawling resultsUse distributed queues of URLs to crawl. Store structured data or binary files. Export datasets in CSV, JSON, Excel or other formats.Learn more about Apify StorageGET/v2/datasets/d4T453t1D/itemsDataset items[ { "title": "myPhone 99 Super Max", "description": "Such phone, max 99, wow!", "price": 999 }, { "title": "myPad Hyper Thin", "description": "So thin it's 2D.", "price": 1499 } ]Monitor performance over timeInspect all Actor runs, their logs, and runtime costs. Listen to events and get custom automated alerts.STEP 4Plug your Actor into any workflowIntegrations. Everywhere.Connect to hundreds of apps right away using ready-made integrations, or set up your own with webhooks and our API.See all integrationsSTEP 5Publish your ActorsYou can join hundreds of developers who share their Actors on Apify Store and earn money.Google Maps Scrapercompass/crawler-google-placesExtract data from hundreds of Google Maps businesses and locations in seconds. Get Google Maps data including reviews, images, opening hours, location, popular times & more. Go beyond the limits of the official Google Places API. Download data with Google Maps extractor in JSON, CSV, Excel and more.Free39.6k usersWeb Scraperapify/web-scraperCrawls arbitrary websites using the Chrome browser and extracts data from pages using a provided JavaScript code. The actor supports both recursive crawling and lists of URLs and automatically manages concurrency for maximum performance. This is Apify's basic tool for web crawling and scraping.Free46.2k usersAmazon Product Scraperjunglee/Amazon-crawlerUse this Amazon scraper to collect data based on URL and country from the Amazon website. Extract product information without using the Amazon API, including reviews, prices, descriptions, and Amazon Standard Identification Numbers (ASINs). Download data in various structured formats.$40/month4.1k usersCheerio Scraperapify/cheerio-scraperCrawls websites using raw HTTP requests, parses the HTML with the Cheerio library, and extracts data from the pages using a Node.js code. Supports both recursive crawling and lists of URLs. This actor is a high-performance alternative to apify/web-scraper for websites that do not require JavaScript.Free2.8k usersTwitter Scraperquacker/twitter-scraperScrape tweets from any Twitter user profile. Top Twitter API alternative to scrape Twitter hashtags, threads, replies, followers, images, videos, statistics, and Twitter history. Download your data in any format, including JSON and Excel. Seamless integration with apps, reports, and databases.Free15.9k usersYoutube Scraperstreamers/youtube-scraperYouTube crawler and video scraper. Alternative YouTube API with no limits or quotas. Extract and download channel name, likes, number of views, and number of subscribers.Free171 usersPuppeteer Scraperapify/puppeteer-scraperCrawls websites with the headless Chrome and Puppeteer library using a provided server-side Node.js code. This crawler is an alternative to apify/web-scraper that gives you finer control over the process. Supports both recursive crawling and list of URLs. Supports login to website.Free2.2k usersBooking Scraperdtrungtin/booking-scraperScrape Booking with this free hotels scraper and get data about accommodation on Booking.com. You can crawl by keywords or URLs for hotel prices, ratings, reviews, stars, and scrape data from Booking.com with one click.Free3.4k usersBrowse 1,000+ ActorsWant to learn more?Master web scraping, collaborate, and find answers from our community.Web scraping academyLearn everything about the extraction of data from the web.DocumentationComprehensive docs for every part of the Apify platform.DiscordGet help from the Apify community if you ever get stuck. Professional servicesNeed someone to take a look at your web scraping or automation project? Connect with top experts through our Enterprise program or Partners.Camille RouxCo-founder at HumanCodersUsing Apify, we saved a lot of time to develop our scraping tool. No need to deploy anything. Apify is well documented. The support is nice. It was fun!Daniel ŘezníčekCo-founder at DetecioThe biggest advantage is the stability of the Apify platform and well-documented interface that allows easy integration with our internal systems.Tom LinhartLead IT Architect at Flat ZoneAs a developer, I can't imagine a better tool that balances power, flexibility, and ease of use. Apify lets me focus on core functionality, not managing infrastructure.Tomer BalanFounder at ChasersJust a few clicks needed to have a chatbot up and running on the Apify cloud at a fair price and with 24/7 support.Tyler BarringtonSoftware engineer at ShadowApify’s reliable and efficient system allows us to quickly update our content to stay in sync with the shelters so users can find their dogs fast.Contact salesGet started nowStep up your web scraping and automation.Sign up for freeSolutions Apify Store Apify Enterprise Use cases Success stories Industries New ideas Plans and pricingDevelopers Web scraping academy Apify SDK Apify CLI Open source Universal Web Scraper Web scraping with Python Web scraping templates Build paid ActorsPlatform Documentation Actors Proxy Storage Integrations Changelog Status Log in Resources Help & support Partner programs Become an affiliate For universities What is web scraping? Data for generative AI Best web scraping APIs Google Maps ScraperCompany About Blog Write for Apify Jobs Contact usJoin our developer community on DiscordCookie settingsTerms of usePrivacy policyCookie policy© 2023 Apify Want some cookies?Cookies help us improve your experience and analyze website traffic. By clicking "Accept all", you agree to let us store cookies on your device. Your settings can be changed, including withdrawing your consent at any time, by clicking the "Cookie settings" link in the footer.Read more information about the cookies we use in our cookie policy Accept allCookie settingsPrivacy preference centerWhen you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer. Read more information about the cookies we use in our cookie policyAllow all Manage consent preferencesStrictly Necessary CookiesAlways activeThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.Functional Cookies Functional Cookies These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.Performance Cookies Clear checkbox label labelApply CancelConsent Leg.Interest checkbox label label checkbox label label checkbox label labelReject all Confirm my choicesYour Privacy [`dialog closed`]

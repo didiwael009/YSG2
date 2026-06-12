@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "Extract data from any website",
+    "after": "39,044 tools for your AI",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Apify extracts data from websites, crawls lists of URLs and automates workflows on the web. Turn any website into an API in a few minutes!",
+    "after": "Cloud platform for web scraping, browser automation, AI agents, and data for AI. Use 39,000+ ready-made tools, code templates, or order a custom solution.",
+    "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+  },
+  {
+    "element": "Page title",
+    "before": "Web Scraping, Data Extraction and Automation · Apify",
+    "after": "Apify: Full-stack web scraping and data extraction platform"
+  }
+]

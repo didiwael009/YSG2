@@ -1,0 +1,425 @@
+{
+  "title": "Web Scraping, Data Extraction and Automation · Apify",
+  "metaDescription": "Apify can automate anything you can do manually in a web browser, and run it at scale. Turn any website into an API and make the web work for you!",
+  "h1": [
+    "Make the webwork for you"
+  ],
+  "h2": [
+    "Welcome to Apify",
+    "Turn any website into an API",
+    "How can Apifyhelp your business?",
+    "Products",
+    "Browse ready-made actors from the community"
+  ],
+  "h3": [
+    "Web scraping",
+    "Web automation",
+    "Web integration",
+    "Actors",
+    "Proxy",
+    "Storage",
+    "Apify SDK"
+  ],
+  "ctas": [
+    "Market research Generate insights into your market from publicly available data on the web.",
+    "Web RPA Automate repetitive tasks that your workforce performs manually in a web browser.",
+    "Price comparison Monitor your online competitors and automatically react to changes in their prices.",
+    "Lead generation Find new potential customers and collect data about them at scale.",
+    "Machine learning Generate large-scale datasets from the web for training your artificial intelligence models.",
+    "Product development Build new products and services by aggregating data from the web and automating workflows.",
+    "About Actors",
+    "About Proxy",
+    "About Storage",
+    "About Apify SDK",
+    "E-commerce",
+    "Marketing",
+    "News",
+    "Travel",
+    "Browse all"
+  ],
+  "navLinks": [
+    "Read more",
+    "Apify StoreBrowse tools published by our community and use them for your projects right away",
+    "Actor ideasVote for the actors you want to see added to Apify Store",
+    "Custom solutionsCompare the options 🤔",
+    "MarketplaceOrder an affordable web scraping solution from certified developers",
+    "EnterpriseGet a complete end-to-end solution for any scale from Apify experts",
+    "Use casesLearn how web scraping and automation can help your business grow",
+    "Success storiesGet inspired by awesome projects built with Apify",
+    "ActorsThe easy way to develop, run and share serverless cloud programs",
+    "ProxyA universal HTTP proxy to improve the performance of your web crawling bots",
+    "StatusCheck on how our systems are doing",
+    "StorageSpecialized data storages for web scraping and automation",
+    "IntegrationsConnect Apify with your favorite web apps and services",
+    "DocumentationLearn how to build your web scraping and automation solutions on Apify",
+    "Help & SupportFind answers to frequently asked questions or get in touch with Apify experts",
+    "Apify SDKUse our popular open-source library for scalable web crawling and scraping",
+    "Web scraping guideRead on to find out what web scraping is, why you should do it, and how you can get started!",
+    "Discord communityJoin our Discord server to get the latest news and find plenty of people happy to help you",
+    "Product roadmapSee what we have lined up for the future and submit your ideas",
+    "Become a partnerTeam up with Apify and start delivering web scraping and RPA solutions to your customers",
+    "Affiliate programEarn money by sending customers our way",
+    "Join MarketplaceBecome a certified Apify developer and start building solutions for our customers",
+    "About ApifyLearn about our mission to make the web more programmable",
+    "BlogProduct updates, tips and stories from the world of web scraping and automation",
+    "Terms of use",
+    "Privacy policy",
+    "CareersWe're hiring!",
+    "Contact",
+    "Pricing",
+    "Browse ready-made tools",
+    "Order custom tool",
+    "Apify for Enterprise"
+  ],
+  "bodyText": "NEWDevelopers can now make money from their actors. Read moreSolutionsReady-madeApify StoreBrowse tools published by our community and use them for your projects right awayActor ideasVote for the actors you want to see added to Apify StoreCustomCustom solutionsCompare the options 🤔 MarketplaceOrder an affordable web scraping solution from certified developersEnterpriseGet a complete end-to-end solution for any scale from Apify expertsInspirationUse casesLearn how web scraping and automation can help your business growSuccess storiesGet inspired by awesome projects built with ApifyPlatformActorsThe easy way to develop, run and share serverless cloud programsProxyA universal HTTP proxy to improve the performance of your web crawling botsStatusCheck on how our systems are doingStorageSpecialized data storages for web scraping and automationIntegrationsConnect Apify with your favorite web apps and servicesResourcesDocumentationLearn how to build your web scraping and automation solutions on ApifyHelp & SupportFind answers to frequently asked questions or get in touch with Apify expertsApify SDKUse our popular open-source library for scalable web crawling and scrapingWeb scraping guideRead on to find out what web scraping is, why you should do it, and how you can get started!Discord communityJoin our Discord server to get the latest news and find plenty of people happy to help youProduct roadmapSee what we have lined up for the future and submit your ideasBecome a partnerTeam up with Apify and start delivering web scraping and RPA solutions to your customersAffiliate programEarn money by sending customers our wayJoin MarketplaceBecome a certified Apify developer and start building solutions for our customersCompanyAbout ApifyLearn about our mission to make the web more programmableBlogProduct updates, tips and stories from the world of web scraping and automationTerms of usePrivacy policyCareersWe're hiring!ContactPricingYour browser does not support the video tag.Make the webwork for youApify can automate anything you can do manually in a web browser, and run it at scale. We're your one-stop shop for web scraping, data extraction, and web RPA.Browse ready-made toolsOrder custom toolTrusted by more than 15,000 companies from 179 countries.Looking for a complete end-to-end solution for any scale? See Apify for EnterpriseMore companiesWelcome to ApifyTurn any website into an APIApify is a software platform that enables forward-thinking companies to leverage the full potential of the web—the largest source of information ever created by humankind.Web scrapingCrawl arbitrary websites, extract structured data from them and export it to formats such as Excel, CSV or JSON.Web automationAutomate manual workflows and processes on the web, such as filling in forms or uploading files. Let robots do the grunt work.Web integrationConnect diverse web services and APIs, and let data flow between them. Add custom computing and data processing steps.How can Apifyhelp your business?Market research Generate insights into your market from publicly available data on the web.Web RPA Automate repetitive tasks that your workforce performs manually in a web browser.Price comparison Monitor your online competitors and automatically react to changes in their prices.Lead generation Find new potential customers and collect data about them at scale.Machine learning Generate large-scale datasets from the web for training your artificial intelligence models.Product development Build new products and services by aggregating data from the web and automating workflows.ProductsActorsA computing platform that makes it easy to develop, run and share serverless cloud programs.About ActorsProxyA universal HTTP proxy to hide the origin of your web scrapers, using both datacenter and residential IP addresses.About ProxyStorageSpecialized data storages to manage web scraping jobs, save their results and export them to formats like CSV, Excel or JSON.About StorageApify SDKThe world's most popular open-source Node.js library for web scraping and browser automation.About Apify SDKBrowse ready-made actors from the communityActors are cloud programs running on Apify that can scrape web pages, process data or automate workflows. Start using them in your projects right away.All actors E-commerce Marketing News TravelWeb Scraperapify/web-scraperCrawls arbitrary websites using the Chrome browser and extracts data from pages using a provided JavaScript code. The ac...apify17,744Google Search Results Scraperapify/google-search-scraperUnofficial API to enable you to scrape Google Search Engine Results Pages (SERPs). Export organic and paid results, ads,...apify9,156Google Maps Scraperdrobnikj/crawler-google-placesExtend the official Google Maps API and scrape reviews, photos, and popular times from Google Places. Google popular tim...drobnikj7,602Instagram Scraperjaroslavhejlek/instagram-scraperScrape and download Instagram posts, profiles, places, hashtags, photos, and comments. Supports search queries and URL l...jaroslavhejlek6,916Facebook Pages Scraperpocesar/facebook-pages-scraperFacebook scraping tool to crawl and extract data from Facebook Pages. Our fully updated FB scraper downloads posts, like...pocesar4,962YouTube Scraperbernardo/youtube-scraperYouTube crawler and video scraper. Alternative YouTube API with no limits or quotas. Extract and download channel name, ...bernardo1,327SEO Audit Tooldrobnikj/seo-audit-toolSearch Engine Optimization tool to carry out an SEO audit on any website. Finds broken links, missing images, and provid...drobnikj457Twitter Scrapervdrmota/twitter-scraperScrape any Twitter user profile. Extract tweets, retweets, replies, favorites, and conversation threads with no Twitter ...vdrmota896Browse allSolutions Apify Store Custom solutions Marketplace Enterprise Use cases Success stories COVID-19 APIs Plans and pricingPlatform Actors Proxy Storage Integrations Services pricing Status Sign inResources Documentation Help & support Apify SDK Web scraping guide Discord community Stack Overflow Change log Product roadmap Become a partner Affiliate program Join MarketplaceCompany About Blog Careers Terms of use Privacy policy ContactKeep in touch© 2021 Apify",
+  "elements": [
+    {
+      "text": "Read more",
+      "type": "nav_link"
+    },
+    {
+      "text": "Apify Store Browse tools published by our community and use them for your projects right away",
+      "type": "nav_link"
+    },
+    {
+      "text": "Actor ideas Vote for the actors you want to see added to Apify Store",
+      "type": "nav_link"
+    },
+    {
+      "text": "Custom solutions Compare the options 🤔",
+      "type": "nav_link"
+    },
+    {
+      "text": "Marketplace Order an affordable web scraping solution from certified developers",
+      "type": "nav_link"
+    },
+    {
+      "text": "Enterprise Get a complete end-to-end solution for any scale from Apify experts",
+      "type": "nav_link"
+    },
+    {
+      "text": "Use cases Learn how web scraping and automation can help your business grow",
+      "type": "nav_link"
+    },
+    {
+      "text": "Success stories Get inspired by awesome projects built with Apify",
+      "type": "nav_link"
+    },
+    {
+      "text": "Actors The easy way to develop, run and share serverless cloud programs",
+      "type": "nav_link"
+    },
+    {
+      "text": "Proxy A universal HTTP proxy to improve the performance of your web crawling bots",
+      "type": "nav_link"
+    },
+    {
+      "text": "Status Check on how our systems are doing",
+      "type": "nav_link"
+    },
+    {
+      "text": "Storage Specialized data storages for web scraping and automation",
+      "type": "nav_link"
+    },
+    {
+      "text": "Integrations Connect Apify with your favorite web apps and services",
+      "type": "nav_link"
+    },
+    {
+      "text": "Documentation Learn how to build your web scraping and automation solutions on Apify",
+      "type": "nav_link"
+    },
+    {
+      "text": "Help & Support Find answers to frequently asked questions or get in touch with Apify experts",
+      "type": "nav_link"
+    },
+    {
+      "text": "Apify SDK Use our popular open-source library for scalable web crawling and scraping",
+      "type": "nav_link"
+    },
+    {
+      "text": "Web scraping guide Read on to find out what web scraping is, why you should do it, and how you can get started!",
+      "type": "nav_link"
+    },
+    {
+      "text": "Discord community Join our Discord server to get the latest news and find plenty of people happy to help you",
+      "type": "nav_link"
+    },
+    {
+      "text": "Product roadmap See what we have lined up for the future and submit your ideas",
+      "type": "nav_link"
+    },
+    {
+      "text": "Become a partner Team up with Apify and start delivering web scraping and RPA solutions to your customers",
+      "type": "nav_link"
+    },
+    {
+      "text": "Affiliate program Earn money by sending customers our way",
+      "type": "nav_link"
+    },
+    {
+      "text": "Join Marketplace Become a certified Apify developer and start building solutions for our customers",
+      "type": "nav_link"
+    },
+    {
+      "text": "About Apify Learn about our mission to make the web more programmable",
+      "type": "nav_link"
+    },
+    {
+      "text": "Blog Product updates, tips and stories from the world of web scraping and automation",
+      "type": "nav_link"
+    },
+    {
+      "text": "Terms of use",
+      "type": "nav_link"
+    },
+    {
+      "text": "Privacy policy",
+      "type": "nav_link"
+    },
+    {
+      "text": "Careers We're hiring!",
+      "type": "nav_link"
+    },
+    {
+      "text": "Contact",
+      "type": "nav_link"
+    },
+    {
+      "text": "Pricing",
+      "type": "nav_link"
+    },
+    {
+      "text": "Browse ready-made tools",
+      "type": "nav_link"
+    },
+    {
+      "text": "Browse ready-made tools",
+      "type": "nav_link"
+    },
+    {
+      "text": "Order custom tool",
+      "type": "nav_link"
+    },
+    {
+      "text": "Order custom tool",
+      "type": "nav_link"
+    },
+    {
+      "text": "Apify for Enterprise",
+      "type": "nav_link"
+    },
+    {
+      "text": "More companies",
+      "type": "nav_link"
+    },
+    {
+      "text": "Market research Generate insights into your market from publicly available data on the web.",
+      "type": "body_cta"
+    },
+    {
+      "text": "Web RPA Automate repetitive tasks that your workforce performs manually in a web browser.",
+      "type": "body_cta"
+    },
+    {
+      "text": "Price comparison Monitor your online competitors and automatically react to changes in their prices.",
+      "type": "body_cta"
+    },
+    {
+      "text": "Lead generation Find new potential customers and collect data about them at scale.",
+      "type": "body_cta"
+    },
+    {
+      "text": "Machine learning Generate large-scale datasets from the web for training your artificial intelligence models.",
+      "type": "body_cta"
+    },
+    {
+      "text": "Product development Build new products and services by aggregating data from the web and automating workflows.",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Actors",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Actors",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Proxy",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Proxy",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Storage",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Storage",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Apify SDK",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Apify SDK",
+      "type": "body_cta"
+    },
+    {
+      "text": "E-commerce",
+      "type": "body_cta"
+    },
+    {
+      "text": "Marketing",
+      "type": "body_cta"
+    },
+    {
+      "text": "News",
+      "type": "body_cta"
+    },
+    {
+      "text": "Travel",
+      "type": "body_cta"
+    },
+    {
+      "text": "Browse all",
+      "type": "body_cta"
+    },
+    {
+      "text": "Browse all",
+      "type": "body_cta"
+    },
+    {
+      "text": "Apify Store",
+      "type": "footer_link"
+    },
+    {
+      "text": "Custom solutions",
+      "type": "footer_link"
+    },
+    {
+      "text": "Marketplace",
+      "type": "footer_link"
+    },
+    {
+      "text": "Enterprise",
+      "type": "footer_link"
+    },
+    {
+      "text": "Use cases",
+      "type": "footer_link"
+    },
+    {
+      "text": "Success stories",
+      "type": "footer_link"
+    },
+    {
+      "text": "COVID-19 APIs",
+      "type": "footer_link"
+    },
+    {
+      "text": "Plans and pricing",
+      "type": "footer_link"
+    },
+    {
+      "text": "Actors",
+      "type": "footer_link"
+    },
+    {
+      "text": "Proxy",
+      "type": "footer_link"
+    },
+    {
+      "text": "Storage",
+      "type": "footer_link"
+    },
+    {
+      "text": "Integrations",
+      "type": "footer_link"
+    },
+    {
+      "text": "Services pricing",
+      "type": "footer_link"
+    },
+    {
+      "text": "Status",
+      "type": "footer_link"
+    },
+    {
+      "text": "Sign in",
+      "type": "footer_link"
+    },
+    {
+      "text": "Documentation",
+      "type": "footer_link"
+    },
+    {
+      "text": "Help & support",
+      "type": "footer_link"
+    },
+    {
+      "text": "Apify SDK",
+      "type": "footer_link"
+    },
+    {
+      "text": "Web scraping guide",
+      "type": "footer_link"
+    },
+    {
+      "text": "Discord community",
+      "type": "footer_link"
+    },
+    {
+      "text": "Stack Overflow",
+      "type": "footer_link"
+    },
+    {
+      "text": "Change log",
+      "type": "footer_link"
+    },
+    {
+      "text": "Product roadmap",
+      "type": "footer_link"
+    },
+    {
+      "text": "Become a partner",
+      "type": "footer_link"
+    },
+    {
+      "text": "Affiliate program",
+      "type": "footer_link"
+    },
+    {
+      "text": "Join Marketplace",
+      "type": "footer_link"
+    },
+    {
+      "text": "About",
+      "type": "footer_link"
+    },
+    {
+      "text": "Blog",
+      "type": "footer_link"
+    },
+    {
+      "text": "Careers",
+      "type": "footer_link"
+    },
+    {
+      "text": "Terms of use",
+      "type": "footer_link"
+    },
+    {
+      "text": "Privacy policy",
+      "type": "footer_link"
+    },
+    {
+      "text": "Contact",
+      "type": "footer_link"
+    }
+  ]
+}

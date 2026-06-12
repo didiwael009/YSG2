@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Positioning shift",
+    "value": "Scraping utility → AI tool marketplace",
+    "note": "H1 dropped the scraping act entirely; tool count became the primary value signal"
+  },
+  {
+    "label": "Target buyer",
+    "value": "Data engineers → AI agent builders",
+    "note": "MCP nav entry and 'your AI' H1 language filter explicitly for LLM-era buyers"
+  },
+  {
+    "label": "Sales motion",
+    "value": "Single-track PLG → Dual PLG + enterprise",
+    "note": "'Get started' retained alongside new 'Contact sales' and 'Get a demo' CTAs on the same hero"
+  },
+  {
+    "label": "Category play",
+    "value": "Scraping tool → Platform ecosystem owner",
+    "note": "'Publish Actors. Get paid.' reframes homepage as developer-supply recruitment, not just buyer conversion"
+  }
+]

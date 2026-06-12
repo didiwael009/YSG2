@@ -1,0 +1,37 @@
+{
+  "publishedAt": "2026-06-12T17:39:16.464Z",
+  "slug": "apify",
+  "dryRun": false,
+  "forced": true,
+  "qualityGates": {
+    "finalJudgePass": false,
+    "finalJudgeScore": 81,
+    "seoPass": true,
+    "seoScore": 83,
+    "unsupportedClaims": [
+      "'The most powerful web scraping and automation platform' — attributed as the 2022 headline but the evidence does not list this as the 2022 H1; it does not appear in headlines[], pageTitles[], or any snapshot field in the compressed evidence",
+      "'Hundreds of ready-to-use tools' — cited as a new section heading but this string does not appear in h2Added or anywhere in the evidence",
+      "'Pricing' — listed as a removed nav item ('removing Free store and Pricing') but 'Pricing' does not appear in navRemoved; only 'Free store', 'Get quote', 'Docs', 'Sign in' are listed",
+      "'Actors Build and run serverless programs' — cited as an added nav item but this exact string does not appear in navAdded in the evidence"
+    ]
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [
+    "Final judge FAIL — score 81/100 (need ≥ 90)",
+    "4 unsupported claim(s): 'The most powerful web scraping and automation platform' — attributed as the 2022 headline but the evidence does not list this as the 2022 H1; it does not appear in headlines[], pageTitles[], or any snapshot field in the compressed evidence; 'Hundreds of ready-to-use tools' — cited as a new section heading but this string does not appear in h2Added or anywhere in the evidence"
+  ],
+  "articlePath": "src/content/cro-teardown/articles/apify.ts",
+  "indexUpdated": false,
+  "internalLinkSuggestionsAdded": [
+    "/cro-teardowns/linear",
+    "/cro-teardowns/lemlist",
+    "/cro-teardowns/intercom"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

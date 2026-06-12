@@ -1,40 +1,34 @@
 {
-  "publishedAt": "2026-06-12T08:29:39.651Z",
+  "publishedAt": "2026-06-12T17:39:15.759Z",
   "slug": "expensya",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 42,
-    "seoPass": false,
-    "seoScore": 75,
+    "finalJudgeScore": 81,
+    "seoPass": true,
+    "seoScore": 84,
     "unsupportedClaims": [
-      "Medius acquired it for over $100M",
-      "France's July 2024 e-invoicing mandate",
-      "The March 2023 Swan partnership added embedded corporate cards",
-      "Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale",
-      "competing against all-in-one challengers like Ramp, Brex, and Spendesk",
-      "Standalone expense tools like Expensya were being acquired by AP automation platforms during this period"
+      "'top 20% of revenue' — the phrase 'find which country drives your top 20% of revenue' introduces a specific percentage threshold not present in the evidence",
+      "'for a sum reportedly exceeding $100M, according to sources familiar with the deal' — the evidence states 'reportedly over $100M according to sources familiar with the deal' which is acceptable sourcing, but the article restates it as near-fact rather than hedged claim; marginal but flagged",
+      "'2020–2025' in the ## heading — the evidence states the period endpoint is Jun 2026, making '2025' a factual error"
     ]
   },
   "consistencyCheck": {
     "valid": true,
     "errors": [],
-    "warnings": [
-      "H1 quote missing: new H1 \"Voici à quoi devrait ressembler la gestion des dépenses.\" does not appear in article-final.md. The article should quote the current headline."
-    ]
+    "warnings": []
   },
   "blockedReasons": [
-    "Final judge FAIL — score 42/100 (need ≥ 90)",
-    "6 unsupported claim(s): Medius acquired it for over $100M; France's July 2024 e-invoicing mandate",
-    "SEO audit FAIL — score 75/100 (need ≥ 80)"
+    "Final judge FAIL — score 81/100 (need ≥ 90)",
+    "3 unsupported claim(s): 'top 20% of revenue' — the phrase 'find which country drives your top 20% of revenue' introduces a specific percentage threshold not present in the evidence; 'for a sum reportedly exceeding $100M, according to sources familiar with the deal' — the evidence states 'reportedly over $100M according to sources familiar with the deal' which is acceptable sourcing, but the article restates it as near-fact rather than hedged claim; marginal but flagged"
   ],
   "articlePath": "src/content/cro-teardown/articles/expensya.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
-    "/saas-marketing-agency"
+    "/cro-teardowns/apollo",
+    "/cro-teardowns/apify",
+    "/cro-teardowns/webflow"
   ],
   "fieldsOverridden": [
     "metaTitle"

@@ -1,0 +1,45 @@
+{
+  "score": 81,
+  "pass": true,
+  "issues": [
+    "The section heading says '2020–2024' but the final snapshot discussed is Jul 2024 and the article covers to Jun 2026 — the heading date range is misleading and inconsistent with the article title.",
+    "The Jul 2024 snapshot is presented as 'Mid-2024' in the H3 label but the evidence labels it '2024-07' — minor mismatch.",
+    "The closing founder takeaway is not inside a named H3 sub-block — it floats after the last H3, which breaks the required H3 structure for analytical sections.",
+    "The Jan 2024 snapshot ('Build reliable web scrapers. Fast.') is present in the evidence but completely absent from the draft — a notable gap in the visual arc.",
+    "The causal framing 'social proof replaces simplicity' implies a deliberate strategic swap with no evidence that simplicity was intentionally removed; this is an interpretation presented as fact.",
+    "The phrase 'Proof density dropped from high to low' uses a data field from the evidence correctly, but presenting it without qualification ('according to the snapshot data') risks reading as an editorial judgment.",
+    "No bold-quote formatting on **'Browse all actors'** — the evidence notes this CTA was removed and it is referenced implicitly but not quoted.",
+    "The phrase 'Apify recedes' is a causal/intentional framing not traceable to evidence — the evidence says the headline changed, not that Apify intentionally stepped back.",
+    "The section word count is approximately 295 words — within range, but only just."
+  ],
+  "requiredFixes": [
+    "Fix the ## heading date range: change '2020–2024' to '2020–2026' to match the article title and the evidence coverage period.",
+    "Add a fourth H3 block covering the Jan 2024 snapshot ('Build reliable web scrapers. Fast.') — its absence leaves a visible gap in the visual arc the section goal requires.",
+    "Move the closing founder takeaway into a named H3 sub-block (e.g. '### Run this check on your own homepage now') so the analytical structure is complete.",
+    "Soften 'social proof replaces simplicity' to an observation, not a causal claim — e.g. 'The 2022 hero added social proof elements where the 2020 version had none.'",
+    "Replace 'Apify recedes' with a concrete, evidence-anchored observation: e.g. 'The H1 no longer names Apify — it names the tool count.'",
+    "Add a hedge to 'Proof density dropped from high to low' — flag it as drawn from snapshot metadata rather than presenting it as editorial analysis."
+  ],
+  "riskFlags": [
+    "'Social proof replaces simplicity' — causal claim not supported by evidence; evidence shows what changed, not why.",
+    "'Apify recedes' — intentionality claim; the evidence records a headline change, not a strategic retreat.",
+    "'The page no longer explains what Apify does; it displays what the platform contains' — interpretive causation without a supporting evidence note."
+  ],
+  "seoNotes": [
+    "The ## heading 'Apify homepage 2020–2024: from bold utility hero to AI marketplace grid' contains the company name and 'homepage' — passes searchable heading check.",
+    "The date range in the heading ('2020–2024') does not match the article title ('Jan 2020 to Jun 2026') — this creates a keyword inconsistency that could confuse crawlers and readers.",
+    "H3 headings are descriptive and human-readable but do not contain secondary keyword terms like 'web scraping', 'positioning', or 'CTA' — missed opportunity for internal keyword density.",
+    "The section correctly uses bold-quote formatting on all quoted headlines and nav items visible in the draft, which supports on-page structured content signals."
+  ],
+  "rewriteInstruction": "Keep the three existing H3 blocks but make three structural repairs. First, fix the ## heading date to '2020–2026'. Second, insert a new H3 for the Jan 2024 snapshot — lead with the headline **'Build reliable web scrapers. Fast.'**, note the shift to a minimal gradient and polished brand maturity, and place the takeaway in the first sentence. Third, move the closing founder test into its own H3 sub-block so every analytical unit is named. In the 2022 block, replace 'social proof replaces simplicity' with a neutral observation ('the 2022 hero added statistics badges and customer logos that were absent in 2020'). In the 2024 block, replace 'Apify recedes' with a concrete sentence anchored to the H1 change. Throughout, keep paragraphs under 60 words and lead each H3 with the finding before the explanation.",
+  "dimensionScores": {
+    "evidenceAccuracy": 19,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 13,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 80
+}

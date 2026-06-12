@@ -167,6 +167,16 @@ RESEARCH HEDGING RULE (applies to any fact from business-context-research.json):
   • Specific dates tied to events → "in [period]" not "on [exact date]" unless the evidence cites a primary source
   Never state a dollar figure, valuation, or acquisition price as a bare fact.
 
+CITATION GUIDANCE (if citation-context is present in the evidence):
+  Use exactly 1 citation from citation-context.recommendedCitations — embedded naturally in
+  paragraph 2 or 3. Never list citations. Never force more than one.
+  Format options:
+    • "As [Author] describes in [Title], [observation]."
+    • "This is consistent with [Author]'s framework in [Title] — [observation]."
+    • "The pattern [Author] calls [concept] in [Title] is visible here: [observation]."
+  The citation should support a claim you are already making — not replace evidence with theory.
+  If no citation-context is present, skip this step entirely.
+
 RULES:
   • H2 heading: "## Why the homepage changed"
   • Three paragraphs only. No bullet lists. No H3 subheadings.
@@ -319,6 +329,16 @@ STRUCTURE — exactly 3 H3 subheadings, each a distinct pattern:
   • Paragraph 3: A runnable test: "Visit your [specific page] and [do this specific thing]". ≤ 55 words.
 
   DO NOT merge these into a single paragraph. 3 separate short paragraphs per H3.
+
+CITATION GUIDANCE (if citation-context is present in the evidence):
+  Use exactly 1 citation from citation-context.recommendedCitations — placed in one H3 body,
+  embedded in a sentence that supports a claim you are already making.
+  Format options:
+    • "As [Author] describes in [Title], [observation]."
+    • "This is consistent with [Author]'s framework in [Title] — [observation]."
+  Never list citations. Never force a citation where it reads awkwardly.
+  Never invent a citation not listed in citation-context.
+  If no citation-context is present, skip this step entirely.
 
 RULES:
   • ## heading: "What SaaS teams can study from [Company]'s homepage evolution"

@@ -1,0 +1,124 @@
+{
+  "slug": "apify",
+  "companyName": "Apify",
+  "companyUrl": "https://apify.com/",
+  "fromMonth": "2020-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-12T13:46:49.021Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "label": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/apify/selected/2020-01.webp",
+      "timestamp": "20200224140603",
+      "originalUrl": "https://apify.com/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2022-04",
+      "label": "Apr 2022",
+      "screenshotPath": "/cro-teardowns/apify/selected/2022-04.webp",
+      "timestamp": "20220512160209",
+      "originalUrl": "https://apify.com/",
+      "similarityToPrev": 0.9347,
+      "comparedTo": "2020-01"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/apify/selected/2024-01.webp",
+      "timestamp": "20240216061144",
+      "originalUrl": "https://apify.com/",
+      "similarityToPrev": 0.9564,
+      "comparedTo": "2022-04"
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/apify/selected/2024-07.webp",
+      "timestamp": "20240813174358",
+      "originalUrl": "https://apify.com/",
+      "similarityToPrev": 0.9567,
+      "comparedTo": "2024-01"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/apify/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://apify.com/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Not just a web scraping API",
+      "Take your Actors beyond the open web",
+      "Build and deploy reliable scrapers",
+      "Publish Actors. Get paid.",
+      "Easily integrateZapierGitHubGoogle SheetsPineconeany appAirbyteMCP clientsGoogle DriveSlackZapierwith Actors",
+      "It's time to run your first Actor.",
+      "Apify uses cookies"
+    ],
+    "h2Removed": [
+      "Turn any website into an API",
+      "How can Apifyhelp your business?"
+    ],
+    "ctaAdded": [
+      "Read the announcement",
+      "Contact sales",
+      "Read more customer stories",
+      "Get started",
+      "Get a demo",
+      "New MCP connectors are live",
+      "Find your Actor",
+      "Browse Apify Store",
+      "Open-source tools",
+      "Cloud deployment"
+    ],
+    "ctaRemoved": [
+      "Browse all actors"
+    ],
+    "navAdded": [
+      "Get started",
+      "Log in",
+      "Product",
+      "Back",
+      "MCP Give your AI access to Actors",
+      "Proxy Rotate scraper IP addresses",
+      "Solutions",
+      "Enterprise"
+    ],
+    "navRemoved": [
+      "Free store",
+      "Get quote",
+      "Docs",
+      "Sign in"
+    ],
+    "headlines": [
+      {
+        "from": "Extract data from any website",
+        "to": "39,044 tools for your AI",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Apify extracts data from websites, crawls lists of URLs and automates workflows on the web. Turn any website into an API in a few minutes!",
+        "to": "Cloud platform for web scraping, browser automation, AI agents, and data for AI. Use 39,000+ ready-made tools, code templates, or order a custom solution.",
+        "fromMonth": "2020-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

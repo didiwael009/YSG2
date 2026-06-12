@@ -1,0 +1,7 @@
+## Why the homepage changed
+
+Apify entered the period as a web scraping utility competing in a well-established data extraction category alongside tools like Scrapy, Octoparse, and various proxy services. The competitive frame was simple: how easily and reliably could a platform pull data from any website? The headline **"Extract data from any website"** and the page title **"Web Scraping, Data Extraction and Automation"** reflect that undifferentiated, task-defined market position.
+
+The navigation shift — removing **"Free store"** and **"Pricing"** while adding **"MCP Give your AI access to Actors"** and **"Actors Build and run serverless programs"** — suggests Apify's competitive environment expanded beyond scraping vendors toward AI infrastructure providers. The new headline **"39,044 tools for your AI"** and section heading **"Not just a web scraping API"** point to deliberate repositioning away from the scraping-utility category and toward an AI tooling marketplace identity.
+
+The broader pattern is platform consolidation around AI agent infrastructure — SaaS tools with large ecosystems repositioning their supply as agent-ready tooling rather than standalone utilities. The addition of **"Publish Actors. Get paid."** is consistent with a marketplace flywheel strategy, where third-party supply becomes the moat. For SaaS teams building in this space, the implication is that ecosystem size, not feature depth, is increasingly the credibility signal that wins AI-builder attention at the top of the funnel.

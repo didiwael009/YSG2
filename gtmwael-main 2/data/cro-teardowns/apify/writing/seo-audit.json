@@ -1,0 +1,50 @@
+{
+  "seoScore": 83,
+  "pass": true,
+  "titleScore": 12,
+  "metaDescriptionScore": 13,
+  "headingStructureScore": 14,
+  "searchIntentScore": 18,
+  "keywordUseScore": 8,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
+  "internalLinkingSuggestions": [
+    "Link from 'SaaS homepage CRO teardown' phrase to other teardowns in the series (e.g., Stripe, Figma, or Notion if available) to signal related case studies",
+    "Add internal link from 'ecosystem size, not feature depth' discussion to an article on platform flywheel strategy or marketplace metrics",
+    "Link from 'new-versus-returning visitor split' analytics discussion to internal guide on homepage segmentation strategies",
+    "Add contextual link from dual-CTA discussion to article on enterprise vs. self-serve homepage patterns"
+  ],
+  "faqSuggestions": [
+    "What changed in Apify's homepage from 2020 to 2026?",
+    "How did Apify shift from a scraping tool to an AI marketplace?",
+    "What is the 'MCP' reference in Apify's navigation?",
+    "Why did Apify replace 'Extract data from any website' with '39,044 tools for your AI'?",
+    "How should I test whether my ecosystem count belongs in my H1?",
+    "When is it safe to reference your old product identity on your homepage?",
+    "What's the risk of running dual CTAs in your hero section?"
+  ],
+  "contentGapNotes": [
+    "Article does not address how Apify's visual design language evolved (color, typography, imagery) — only messaging and layout. A brief mention of design shifts could reinforce the positioning change.",
+    "No discussion of how Apify's value proposition shifted from speed/ease-of-use (implied by 'Extract data from any website') to scale/ecosystem (39,044 tools). Explicitly naming the value shift could strengthen the positioning analysis.",
+    "Missing analysis of what happened to conversion metrics or traffic patterns across these six snapshots — the article assumes the changes were successful but provides no measurement context.",
+    "No guidance on when a SaaS team should *not* center ecosystem count in the headline (e.g., if the ecosystem is nascent or third-party quality is inconsistent).",
+    "Limited discussion of how Apify's messaging changed for different traffic sources (organic vs. paid vs. social) — the teardown focuses on organic homepage only."
+  ],
+  "requiredFixes": [
+    "Primary keyword 'Apify homepage CRO teardown' appears only in title and meta description, not naturally in body text. Add 1–2 organic mentions in the intro or conclusion (e.g., 'This CRO teardown of Apify's homepage reveals...' or 'What this Apify homepage CRO teardown shows...').",
+    "Secondary keyword 'SaaS conversion optimisation case study' is not used anywhere in the article body. Either add it once naturally in the lessons section, or remove it from the secondary keyword list.",
+    "Meta description is 156 characters; it exceeds the 155-character soft limit by 1 character. Trim to: 'A CRO teardown of Apify's homepage from Jan 2020 to Jun 2026 — changes in headline, CTAs, navigation, and what SaaS teams can learn.'",
+    "H1 is buried after a secondary H2 ('Apify Homepage Teardown: From \"Extract Data\" to \"39,044 Tools for Your AI\"' appears below 'How Apify rewrote its homepage over 6 years'). The suggested excerpt should be the first H1 on the page, not the second. Restructure so the main H1 comes immediately after intro text."
+  ],
+  "optionalImprovements": [
+    "Add 1–2 short paragraphs on why this teardown matters for the reader's own work (e.g., 'If your company is repositioning around AI infrastructure, this pattern is worth testing on your own homepage').",
+    "Include a 'Key takeaways' bullet list at the end to improve scannability and give readers a summary they can quickly reference.",
+    "Add URLs or footnotes to the competitor references ('Scrapy, Octoparse') so readers can understand the competitive landscape without leaving the page.",
+    "Consider adding a small visual timeline graphic showing the headline and section heading changes side-by-side — currently the five snapshots are described in text only.",
+    "Expand the 'Founder test' and similar callout boxes with a short actionable checklist (e.g., 'Checklist: Is your navigation catalogue-first or search-first?').",
+    "Add a brief note on the primary keyword: 'Apify homepage CRO teardown' may have lower search volume than 'Apify homepage redesign' or 'homepage CRO case study.' Consider a data-driven keyword rebalance if traffic is lower than expected."
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.007885600000000048,
+  "generatedAt": "2026-06-12T13:53:47.506Z"
+}

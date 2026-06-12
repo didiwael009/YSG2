@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-10T19:53:33.306Z",
+  "publishedAt": "2026-06-12T17:39:13.879Z",
   "slug": "stripe",
   "dryRun": false,
   "forced": false,
@@ -19,9 +19,9 @@
   "articlePath": "src/content/cro-teardown/articles/stripe.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
-    "/saas-marketing-agency"
+    "/cro-teardowns/hootsuite",
+    "/cro-teardowns/expensya",
+    "/cro-teardowns/linear"
   ],
   "fieldsOverridden": [
     "metaTitle"

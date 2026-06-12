@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-09T19:11:20.487Z",
+  "publishedAt": "2026-06-12T17:39:14.365Z",
   "slug": "vercel",
   "dryRun": false,
   "forced": false,
@@ -10,13 +10,21 @@
     "seoScore": 85,
     "unsupportedClaims": []
   },
+  "consistencyCheck": {
+    "valid": false,
+    "errors": [
+      "Section heading count mismatch: article says 12 added, diff JSON says 0 added. (excerpt: \"12 section headings\")",
+      "Section heading count mismatch: article says 8 removed, diff JSON says 1 removed. (excerpt: \"12 section headings\")"
+    ],
+    "warnings": []
+  },
   "blockedReasons": [],
   "articlePath": "src/content/cro-teardown/articles/vercel.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
-    "/saas-marketing-agency"
+    "/cro-teardowns/linear",
+    "/cro-teardowns/lemlist",
+    "/cro-teardowns/intercom"
   ],
   "fieldsOverridden": [
     "metaTitle"

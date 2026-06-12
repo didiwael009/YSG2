@@ -12,24 +12,27 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 // Canonical label map — covers all URLs the publisher can emit.
-// Extend this map when new routes are added to internalLinkSuggestions.
+// Extend this map when new teardown articles are published.
 const ANCHOR_LABELS: Record<string, string> = {
+  // CRO teardown cross-links
+  "/cro-teardowns/shopify":  "Shopify homepage teardown (2021–2026)",
+  "/cro-teardowns/hootsuite": "Hootsuite homepage teardown (2020–2026)",
+  "/cro-teardowns/stripe":   "Stripe homepage teardown (2022–2026)",
+  "/cro-teardowns/intercom": "Intercom homepage teardown (2023–2026)",
+  "/cro-teardowns/vercel":   "Vercel homepage teardown (2021–2026)",
+  "/cro-teardowns/crisp":    "Crisp homepage teardown (2020–2026)",
+  "/cro-teardowns/clay":     "Clay homepage teardown (2022–2026)",
+  "/cro-teardowns/linear":   "Linear homepage teardown (2020–2026)",
+  "/cro-teardowns/lemlist":  "lemlist homepage teardown (2019–2026)",
+  "/cro-teardowns/apollo":   "Apollo.io homepage teardown (2019–2026)",
+  "/cro-teardowns/expensya": "Expensya homepage teardown (2021–2026)",
+  "/cro-teardowns/gong":     "Gong homepage teardown (2020–2026)",
+  "/cro-teardowns/webflow":  "Webflow homepage teardown (2020–2026)",
+  "/cro-teardowns/apify":    "Apify homepage teardown (2020–2026)",
+  // Service pages (fallback)
   "/conversion-rate-optimisation-specialist": "SaaS CRO specialist",
   "/landing-page-for-saas": "SaaS landing page strategy",
   "/saas-marketing-agency": "SaaS marketing agency alternative",
-  "/optimize-saas-landing-page": "Optimize your SaaS landing page",
-  "/b2b-saas-marketing-strategy": "B2B SaaS marketing strategy",
-  // CRO teardown cross-links
-  "/cro-teardowns/shopify": "Shopify homepage teardown (2021–2026)",
-  "/cro-teardowns/hootsuite": "Hootsuite website redesign teardown",
-  "/cro-teardowns/stripe": "Stripe homepage teardown (2022–2026)",
-  "/cro-teardowns/intercom": "Intercom homepage teardown (2023–2026)",
-  "/cro-teardowns/vercel": "Vercel homepage teardown (2021–2026)",
-  "/cro-teardowns/crisp": "Crisp messaging homepage teardown",
-  "/cro-teardowns/clay": "Clay GTM tool homepage teardown",
-  "/cro-teardowns/linear": "Linear homepage teardown (2020–2026)",
-  "/cro-teardowns/lemlist": "lemlist homepage teardown (2019–2026)",
-  "/cro-teardowns/apollo": "Apollo.io homepage teardown (2019–2026)",
 };
 
 interface InternalLinksProps {
@@ -54,7 +57,7 @@ const InternalLinks = ({ suggestions }: InternalLinksProps) => {
       className="scroll-mt-28 rounded-[24px] border border-[#e4e2ec] bg-[#fbfbfe] p-6"
     >
       <h3 className="mb-4 font-display text-[20px] font-bold text-[#11101a]">
-        Related SaaS growth resources
+        More CRO teardowns
       </h3>
       <ul className="space-y-2">
         {entries.map(({ href, label }) => (

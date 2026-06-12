@@ -1,0 +1,59 @@
+{
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Bold blue hero section with white headline 'Extract data from any website', subheading, and feature cards displaying product integrations below.",
+      "proof_density": "medium",
+      "primary_message_type": "feature",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2022-04",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Colorful gradient hero with headline 'The most powerful web scraping and automation platform', statistics badges, and customer logos, followed by tool cards.",
+      "proof_density": "high",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2024-01",
+      "design_era": "mature",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Minimal gradient hero with headline 'Build reliable web scrapers. Fast.' followed by customer logos and two-column content layout with code examples.",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    },
+    {
+      "month": "2024-07",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Subtle gradient hero with large headline '39,044 tools for your AI' and grid of tool cards with alternating layouts and code examples.",
+      "proof_density": "low",
+      "primary_message_type": "category",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    },
+    {
+      "month": "current-live",
+      "design_era": "enterprise",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Error page displaying '429 Too Many Requests' message on plain white background with minimal styling.",
+      "proof_density": "none",
+      "primary_message_type": "feature",
+      "visual_sophistication": 1,
+      "brand_maturity": "enterprise-grade"
+    }
+  ],
+  "visual_shift_summary": "The design evolved from bold blue solid backgrounds with prominent feature cards (2020) through gradient-heavy, colorful hero sections emphasizing social proof (2022), toward increasingly minimal and refined layouts with subtle gradients and content-forward design (2024). The current live state reflects a system error rather than production design.",
+  "design_evolution_label": "bold-to-minimal-growth-to-enterprise",
+  "generatedAt": "2026-06-12T13:48:07.666Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0065496
+}

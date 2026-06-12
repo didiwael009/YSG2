@@ -1,0 +1,41 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "Section heading '## What SaaS teams can learn from Apify's homepage repositioning' is functional but slightly generic — 'SaaS teams' is a broad term and the heading could be more specific to the homepage/CTA/positioning topic to maximise search value.",
+    "H3 for the dual CTA block defines 'call-to-action' mid-paragraph after already using the term in the heading — the plain-language definition should precede or accompany the first use, not arrive after a second use.",
+    "Paragraph 2 of the ecosystem-count block (~65 words) slightly exceeds the 60-word limit: 'This pattern is worth testing only if...' — approximate count is 62–65 words.",
+    "Paragraph 2 of the 'Not just a web scraping API' block (~60 words) is borderline — 'This move is worth testing only if...' sits at approximately 60–62 words, risking a scannability penalty.",
+    "The dual-CTA H3 opening does not immediately state the practical takeaway in the first two sentences — the finding is clear but the implication for the founder (that the structure only works if two distinct post-click journeys exist) arrives in sentence 3, not sentence 1 or 2.",
+    "No explicit paragraph in the section reads as generic SaaS boilerplate — all three patterns trace cleanly to named Apify evidence — but the final paragraph of the dual-CTA block ('If your sales team is not resourced...') edges toward generic advisory territory without a direct Apify anchor.",
+    "Word count is approximately 370 words — within the 220–380 range but near the ceiling; any additions would breach the limit."
+  ],
+  "requiredFixes": [
+    "Trim paragraph 2 of the ecosystem-count block to under 60 words — remove or compress the phrase 'if visitors sense the count is padded or stagnant, the specificity may hurt more than a vaguer claim would' into a shorter clause to stay within the 60-word paragraph cap.",
+    "Move the dual-CTA H3 finding to the first sentence: start with 'This structure only works if both buttons lead to genuinely different post-click experiences' before explaining what Apify does — the current opening describes the evidence before stating the implication, violating the FINDING-FIRST rule.",
+    "Anchor the final advisory paragraph of the dual-CTA block to Apify specifically — add a phrase like 'Apify routes 'Get started' to a free trial and 'Contact sales' to a separate sales flow' (if supported by evidence) or remove the sales-team-resourcing sentence if it cannot be grounded in the evidence.",
+    "Move the plain-language definition of 'call-to-action' in the dual-CTA block to the H3 subheading line or the very first sentence of the body, not mid-paragraph after the term has already appeared in the heading."
+  ],
+  "riskFlags": [
+    "'The number signals a platform rather than a single product, suggesting scale that a newer competitor would need years to replicate' — causal/outcome claim not directly traceable to evidence; the evidence shows the headline change and the strategic thesis but does not confirm competitive replication timelines. Hedge with 'may signal' or 'is consistent with'.",
+    "'the specificity may hurt more than a vaguer claim would' — comparative outcome claim without data; should be flagged as conditional ('if the count appears stagnant or unverifiable') rather than stated as a general finding.",
+    "'If your sales team is not resourced to handle that volume separately, the second button may create a worse experience than none' — general SaaS advisory claim not anchored to Apify evidence; risks a specificity penalty."
+  ],
+  "seoNotes": [
+    "The ## heading includes 'Apify' and 'homepage repositioning' — both are searchable terms that align with the primary keyword 'Apify homepage teardown'; this is good.",
+    "Each H3 contains a quoted Apify-specific phrase in bold — '39,044 tools for your AI', 'Not just a web scraping API', 'Get started' and 'Contact sales' — which should support long-tail search queries for people searching for Apify CTA or messaging analysis.",
+    "The section title could be strengthened by adding 'messaging' or 'CTA' to the heading alongside 'repositioning' to capture more specific search queries (e.g. 'Apify homepage CTA lessons' or 'Apify homepage messaging changes').",
+    "At ~370 words the section is near the upper word-count boundary — if any required fixes add words, the section will need corresponding cuts to stay within limit."
+  ],
+  "rewriteInstruction": "The section is close to publishable but needs four targeted fixes before it passes cleanly. First, trim the second paragraph of the ecosystem-count block to under 60 words — it currently sits at ~63 words and will trigger a scannability penalty. Second, reorder the dual-CTA H3 body so the practical finding ('this structure only works if the two buttons lead to genuinely different experiences') appears in sentence 1, not sentence 3 — the rubric requires the finding first. Third, move the plain-language definition of 'call-to-action' to the first sentence of that block, not mid-paragraph. Fourth, either anchor the final advisory sentence about sales-team resourcing to a specific Apify evidence point, or cut it — as written it reads as generic SaaS advice with no Apify grounding. Do not change the three H3 headings, the runnable tests, or the bold-quote formatting — those are working well. Keep all word counts under 60 per analytical paragraph and the total section under 380 words.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 12,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

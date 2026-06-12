@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-10T19:53:08.876Z",
+  "publishedAt": "2026-06-12T17:39:13.600Z",
   "slug": "hootsuite",
   "dryRun": false,
   "forced": false,
@@ -21,9 +21,9 @@
   "articlePath": "src/content/cro-teardown/articles/hootsuite.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
-    "/saas-marketing-agency"
+    "/cro-teardowns/shopify",
+    "/cro-teardowns/stripe",
+    "/cro-teardowns/gong"
   ],
   "fieldsOverridden": [
     "metaTitle"

@@ -1,0 +1,45 @@
+{
+  "score": 82,
+  "pass": false,
+  "issues": [
+    "The ## section heading 'What SaaS teams can study from Apify's decision to let its community write its headline' is partially clever-only — 'let its community write its headline' is metaphorical and contains no searchable terms like 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'. The company name is present, but the topic term is missing.",
+    "H3 heading 'Ecosystem count as H1' uses a semi-technical label without immediate plain-language definition in the heading itself — though the body does explain it quickly.",
+    "H3 heading 'Category reframing' is a jargon term ('category reframing') used without an immediate plain-language definition in the same sentence where it first appears. It appears in the heading and is not defined until the body paragraph.",
+    "H3 heading 'Dual CTA structure' uses 'CTA' as an acronym without expansion — expert readers know it, but the section must work for founders still learning. No plain-language definition is provided.",
+    "The phrase 'category reframing' is a near-variant of forbidden jargon ('category ownership') and functions as abstract strategist terminology without definition at point of use in the heading.",
+    "Second paragraph of the first H3 block (~60 words) approaches the limit; third H3 analytical paragraph ('Adding a Contact sales CTA signals enterprise intent...') is approximately 62 words — marginally over the 60-word cap.",
+    "The section heading is missing a searchable topic term ('homepage', 'positioning', 'messaging', 'CTA', 'conversion') alongside the company name.",
+    "The 'Not just a web scraping API' quote in the H3 heading is correctly bold-quoted, but the term 'category reframing' in the H3 heading is not defined inline for non-expert founders.",
+    "The second H3 block's takeaway ('This is a high-risk move if your homepage still depends on non-branded search') is not delivered in the first two sentences — it appears as sentence three after the explanatory opening.",
+    "Word count is approximately 430 words — over the 220–380 word cap by roughly 50 words."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include at least one searchable term — 'homepage', 'messaging', 'positioning', 'CTA', or 'conversion' — alongside the Apify name. Example: 'What SaaS teams can learn from Apify's homepage repositioning'.",
+    "Define 'CTA' (call-to-action) in plain language on first use in the H3 heading or opening sentence of the third H3 block — e.g., 'Dual CTA (call-to-action) structure'.",
+    "Replace or define 'Category reframing' in the H3 heading with plain language — e.g., 'Naming your old identity to escape it' or add an immediate definition: 'Category reframing — telling visitors what you are no longer'.",
+    "Move the practical risk/takeaway in the second H3 block ('This is a high-risk move...') to the first or second sentence of the block — the finding must come before the explanation.",
+    "Trim the section to under 380 words. The third H3 block's second analytical paragraph ('Adding a Contact sales CTA signals enterprise intent...') runs ~62 words — cut or split it to stay under 60 words per paragraph and reduce total word count.",
+    "Verify the third H3 analytical paragraph word count and trim if over 60 words, per the scannability rubric."
+  ],
+  "riskFlags": [
+    "'The number does the work: it signals a platform, not a product, and implies competitors cannot replicate the supply quickly' — this is a mild causation claim ('signals', 'implies') without an attached condition. No evidence in the provided data supports the 'competitors cannot replicate' inference as a visitor perception finding.",
+    "'A specific number that reads as authority at 39,000 reads as fragility at 300' — this is a plausible generalisation but is not traceable to the provided evidence; it is editorial opinion presented as fact.",
+    "'If returning visitors are under 30% of your traffic, exposing this reframe to cold traffic without a controlled test may cost you more than it gains' — the 30% threshold is invented and not supported by the evidence provided."
+  ],
+  "seoNotes": [
+    "The ## section heading currently has no searchable topic terms beyond the company name — adding 'homepage', 'positioning', or 'messaging' will improve this section's ability to rank for 'Apify homepage teardown' and related queries.",
+    "The H3 headings contain verbatim quoted phrases from the evidence ('39,044 tools for your AI', 'Not just a web scraping API', 'Get started', 'Contact sales') — this is good for semantic relevance and quote-matching in search.",
+    "The section title framing ('What SaaS teams can study from...') targets a learn/study intent query pattern that is useful for long-tail SEO, but the clever metaphor 'let its community write its headline' adds no keyword value and could be replaced with a more direct phrase."
+  ],
+  "rewriteInstruction": "Make four targeted fixes without restructuring the section. First, rewrite the ## heading to include a searchable topic term alongside 'Apify' — something like 'What SaaS teams can learn from Apify's homepage repositioning'. Second, open the second H3 block with the risk finding immediately ('This works for returning visitors who already know Apify — for cold traffic, the same line may create doubt') and move the explanatory context to sentences three and four. Third, define 'CTA' in plain language on first use in the third H3 block heading or opening sentence. Fourth, trim the total word count to under 380 by cutting or compressing the third H3's second analytical paragraph — remove the invented 30% threshold from the second H3 closing test, or hedge it with 'as a rough guide' since it has no evidentiary basis. The structure, voice, and evidence anchoring are already strong; these are precision fixes, not a rewrite.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 14,
+    "plainLanguage": 14,
+    "scannability": 11,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

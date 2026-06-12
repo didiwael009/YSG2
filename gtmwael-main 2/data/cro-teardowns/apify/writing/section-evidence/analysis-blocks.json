@@ -1,0 +1,40 @@
+[
+  {
+    "id": "analysis-2020-01",
+    "label": "Jan 2020 — original state",
+    "period": "Jan 2020",
+    "screenshotPath": "/cro-teardowns/apify/selected/2020-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Extract data from any website\" — direct product statement.",
+      "Visible section headings include: \"Turn any website into an API\", \"How can Apifyhelp your business?\", \"Products\".",
+      "Navigation includes: \"Free store\", \"Get quote\" — product category framing.",
+      "Section headings later removed include: \"Turn any website into an API\" and \"How can Apifyhelp your business?\"."
+    ]
+  },
+  {
+    "id": "analysis-2022-04",
+    "label": "Apr 2022 — mid-transition",
+    "period": "Apr 2022",
+    "screenshotPath": "/cro-teardowns/apify/selected/2022-04.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: 93.5% — a moderate visual change.",
+      "H1 in this snapshot: \"The most powerful web scraping and automation platform\".",
+      "New section headings appearing: \"Hundreds of ready-to-use tools\", \"Use Apify for various use cases\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/apify/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"39,044 tools for your AI\" — updated value proposition.",
+      "New section headings include: \"Not just a web scraping API\", \"Take your Actors beyond the open web\", \"Build and deploy reliable scrapers\".",
+      "CTAs no longer present include: \"Browse all actors\"."
+    ]
+  }
+]

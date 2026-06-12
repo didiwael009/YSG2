@@ -1,0 +1,40 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The opening paragraph buries its finding slightly — the observation about 'AI system as end consumer' is clear but the headline change itself is introduced mid-paragraph rather than in the first sentence.",
+    "The H3 'How Apify's section headings reframe the platform identity' contains the finding in sentence one but the explanation runs slightly abstract — 'consistent with a platform repositioning rather than a product update' is a strategist-level close without a concrete implication for the founder.",
+    "The phrase 'AI infrastructure terms (the backend tools and data pipelines that power AI products)' is a good definition, but 'AI infrastructure' is used only once so no penalty — however 'supply-side strategy' in the final H3 heading is an expert term used without an inline plain-language definition.",
+    "Paragraph 2 (meta description H3) runs approximately 75 words — exceeds the 60-word cap for non-intro paragraphs.",
+    "The closing takeaway test is specific and anchored to Apify's evidence ('your AI', 'your scrapers', 'Publish Actors. Get paid.') — no penalty — but the test instruction is slightly over-explained and could tighten.",
+    "No causal outcome claims detected — all hedged with 'suggests', 'may be', 'is consistent with'. No hard cap triggered.",
+    "All verbatim quotes are in bold quotes — compliant.",
+    "Word count is approximately 370 words — within the 200–380 range, near the ceiling."
+  ],
+  "requiredFixes": [
+    "Trim the meta description paragraph to under 60 words. The current version runs approximately 75 words. Split into two sentences or cut the explanatory tail after 'without abandoning the old one.'",
+    "Add a plain-language gloss for 'supply-side strategy' in the H3 heading or opening sentence of that block — e.g., 'supply-side strategy (building the platform by recruiting outside developers to create tools, not building every tool internally).'",
+    "Replace the abstract closing sentence in the section-headings H3 — 'It is consistent with a platform repositioning rather than a product update' — with a concrete implication for the founder, such as: 'If you are doing the same, name the old identity explicitly in a heading so returning visitors understand the change, rather than leaving them to infer it.'"
+  ],
+  "riskFlags": [
+    "The claim 'the page is now written for buyers who think in AI infrastructure terms' is an interpretive inference — it is well-hedged by context but could be softened to 'reads as if written for...' to avoid any implied certainty about Apify's intent.",
+    "'That is an unusual move' (section headings block) is a mild unsupported comparative claim — no hard cap triggered, but adding 'among developer platforms' or a brief qualifier would strengthen it."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name ('Apify'), a topic term ('H1'), and a searchable concept ('marketplace') — passes the searchable heading check.",
+    "All four H3 headings contain 'Apify' plus a topic term ('headline', 'meta description', 'section headings', 'supply-side strategy') — good for internal anchor search and featured snippet eligibility.",
+    "The verbatim quote structure (bold, attributed) makes paragraphs eligible for Google's passage indexing on queries like 'Apify homepage copy change' or 'Apify AI repositioning'.",
+    "Secondary keyword 'Apify homepage redesign' and 'Apify repositioned to AI infrastructure' are implicitly covered by the content but not surfaced as phrases — minor gap, not a required fix at this score level."
+  ],
+  "rewriteInstruction": "Three targeted fixes needed before publish. First, cut the meta description paragraph to under 60 words — remove the trailing clause after 'without abandoning the old one' or fold it into the sentence before. Second, add a one-phrase plain-English gloss directly after 'supply-side strategy' in the final H3 heading and its opening sentence — readers unfamiliar with platform economics need to know this means 'recruiting outside developers to build the tools, not building them internally.' Third, replace the abstract closing sentence of the section-headings block ('consistent with a platform repositioning rather than a product update') with a concrete, actionable implication the founder can apply — tell them what to do if they are in the same situation, not what the move 'is consistent with.' No structural or evidence issues detected; these are precision edits, not a rewrite.",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 15,
+    "plainLanguage": 15,
+    "scannability": 11,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

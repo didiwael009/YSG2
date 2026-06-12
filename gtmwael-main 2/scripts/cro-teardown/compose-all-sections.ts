@@ -59,6 +59,7 @@ import { runContextResearcher }         from './context-researcher.js';
 import { runOutlineGenerator, type ArticleOutline } from './outline-generator.js';
 import { runMarketingCardsGenerator }   from './marketing-cards-generator.js';
 import { runCrossSectionPass } from './cross-section-pass.js';
+import { resolveCitations }   from './citation-resolver.js';
 import { assembleArticle } from './article-assembler.js';
 import { generateSeo } from './seo-generator.js';
 import { runFinalJudge, type FinalJudgeResult } from './final-judge.js';
@@ -372,6 +373,22 @@ async function main(): Promise<void> {
       sectionErrors.push({ section: '_strategic-shift', error: msg });
       appendRunLog(logPath, { section: '_strategic-shift', step: 'STRATEGIC SHIFT ERROR', ok: false, detail: msg });
       // Non-fatal: pipeline continues. Section writers will lack the thesis but can still run.
+    }
+  }
+
+  // ── Citation resolver ─────────────────────────────────────────────────────────
+  // Deterministic — no LLM call. Maps strategic-shift fields to 2-3 book citations.
+  // Writes section-evidence/citation-context.json for use by sections 06 and 07.
+  if (cli.mode !== 'draft' && !cli.onlySection) {
+    try {
+      const citations = resolveCitations({ writingDir, force: cli.force });
+      if (citations) {
+        const titles = citations.recommendedCitations.map(c => c.title).join(', ');
+        console.log(`  ✓ citation-context.json — ${citations.recommendedCitations.length} sources: ${titles}`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Citation resolver failed (non-fatal): ${msg}`);
     }
   }
 

@@ -1,0 +1,10 @@
+{
+  "name": "Apify",
+  "slug": "apify",
+  "url": "https://apify.com/",
+  "from": "2020-01",
+  "to": "2026-06",
+  "stepMonths": 3,
+  "createdAt": "2026-06-12T13:37:51.104Z",
+  "phase": 1
+}

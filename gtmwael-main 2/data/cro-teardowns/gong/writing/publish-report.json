@@ -1,20 +1,20 @@
 {
-  "publishedAt": "2026-06-12T08:29:39.867Z",
+  "publishedAt": "2026-06-12T17:39:16.004Z",
   "slug": "gong",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 62,
-    "seoPass": false,
-    "seoScore": 74,
+    "finalJudgeScore": 74,
+    "seoPass": true,
+    "seoScore": 83,
     "unsupportedClaims": [
-      "Gong raised $200 million at a $2.2 billion valuation in September 2020",
-      "$250 million at $7.25 billion just nine months later",
-      "By Q2 2021, the company had crossed 2,000 customers including three Fortune 20 accounts",
-      "Gong publicly announced the RightBound acquisition",
-      "Gartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025",
-      "Clari and Salesloft merged"
+      "'the navigation dropped \"What is RI?\" entirely' — the evidence lists nav items added and removed, but 'What is RI?' does not appear in the navRemoved list; it is not confirmed in the evidence",
+      "'Gong built an entire product category around \"Revenue Intelligence\" — then quietly removed it from the top of its own homepage' — 'quietly' implies deliberate concealment; no evidence supports this framing",
+      "'Gong built its early identity around a category it invented' — 'a category it largely invented' / 'it invented' is not supported by the evidence; the evidence describes category-definition language and '#1 revenue intelligence platform' but does not confirm Gong invented the category",
+      "'reportedly led to declines in net dollar retention' — the evidence says 'pressured Gong's per-seat pricing model and led to declines in net dollar retention'; the article strips 'reportedly' and presents this as confirmed fact in the business context section",
+      "'reaching a reported $7.25 billion valuation by mid-2021' — the evidence cites this valuation for the Series E; the article states it without the sourcing qualifier 'reportedly' in the body text, presenting it as a direct fact rather than a reported figure",
+      "The claim that named-VP CTAs were 'just occupying space' — this phrase does not appear verbatim but the framing that these CTAs were replaced because they were underperforming is implied without any click or conversion data in the evidence"
     ]
   },
   "consistencyCheck": {
@@ -25,16 +25,15 @@
     ]
   },
   "blockedReasons": [
-    "Final judge FAIL — score 62/100 (need ≥ 90)",
-    "6 unsupported claim(s): Gong raised $200 million at a $2.2 billion valuation in September 2020; $250 million at $7.25 billion just nine months later",
-    "SEO audit FAIL — score 74/100 (need ≥ 80)"
+    "Final judge FAIL — score 74/100 (need ≥ 90)",
+    "6 unsupported claim(s): 'the navigation dropped \"What is RI?\" entirely' — the evidence lists nav items added and removed, but 'What is RI?' does not appear in the navRemoved list; it is not confirmed in the evidence; 'Gong built an entire product category around \"Revenue Intelligence\" — then quietly removed it from the top of its own homepage' — 'quietly' implies deliberate concealment; no evidence supports this framing"
   ],
   "articlePath": "src/content/cro-teardown/articles/gong.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
-    "/conversion-rate-optimisation-specialist",
-    "/landing-page-for-saas",
-    "/saas-marketing-agency"
+    "/cro-teardowns/crisp",
+    "/cro-teardowns/clay",
+    "/cro-teardowns/vercel"
   ],
   "fieldsOverridden": [
     "metaTitle"

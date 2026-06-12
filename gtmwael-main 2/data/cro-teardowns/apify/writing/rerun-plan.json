@@ -1,0 +1,79 @@
+{
+  "createdAt": "2026-06-12T13:53:47.511Z",
+  "slug": "apify",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": true,
+    "finalJudgeScore": 81,
+    "seoScore": 83
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: ## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid — specifically the 2022 subsection to correct the unsupported headline quot",
+        "'The most powerful web scraping and automation platform' — attributed as the 2022 headline but the evidence does not list this as the 2022 H1; it does not appear in headlines[], pageTitles[], or any s",
+        "'If visitors sense the count is padded or stagnant, the specificity may hurt more than a vaguer claim would' — conversion prediction without data",
+        "Remove or qualify the attribution of 'The most powerful web scraping and automation platform' as the 2022 H1 — it is not in the evidence headlines array; either source it or replace with what the evid",
+        "Primary keyword 'Apify homepage CRO teardown' appears only in title and meta description, not naturally in body text. Add 1–2 organic mentions in the intro or conclusion (e.g., 'This CRO teardown of A"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "Judge rerun recommendation: ## How Apify's navigation shift from 'Free store' to 'MCP Give your AI access to Actors' redefined its sales motion — to correct the 'Pricing' nav-rem",
+        "'Hundreds of ready-to-use tools' — cited as a new section heading but this string does not appear in h2Added or anywhere in the evidence",
+        "'Pricing' — listed as a removed nav item ('removing Free store and Pricing') but 'Pricing' does not appear in navRemoved; only 'Free store', 'Get quote', 'Docs', 'Sign in' are listed",
+        "'Actors Build and run serverless programs' — cited as an added nav item but this exact string does not appear in navAdded in the evidence",
+        "## How Apify's navigation shift — 'Contact sales' / dual-CTA H3 missing founder takeaway",
+        "'If both buttons lead to the same onboarding flow, the enterprise signal is decoration' — reasonable structural observation but edges toward asserting outcome ('decoration') as fact rather than risk",
+        "Remove 'Hundreds of ready-to-use tools' as a cited section heading — it does not appear in h2Added; replace with a heading that does appear in the evidence",
+        "Remove 'Pricing' from the list of removed nav items — only 'Free store', 'Get quote', 'Docs', 'Sign in' are in navRemoved",
+        "Remove or correct 'Actors Build and run serverless programs' as a cited nav item — this string is not in navAdded; the evidence lists 'Product', 'Back', 'MCP Give your AI access to Actors', 'Proxy Rot",
+        "Add a founder-facing takeaway to the H3 block 'How Apify's CTA changes split one funnel into two' — the section ends with an observation but no actionable test for founders"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "reasons": [
+        "## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid — 2022 section"
+      ],
+      "priority": "medium",
+      "source": "final-judge"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "## Why the homepage changed — to add H3 subheadings and anchor the market-context paragraph more tightly to specific evidence items",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "## Why the homepage changed — missing H3 subheadings",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'A specific number may read as authority at 39,000 but as fragility at 300' — presents a conversion-behaviour threshold as fact without evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add H3 subheadings to the '## Why the homepage changed' section — it is a wall of analytical prose with no structural breaks",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Meta description is 156 characters; it exceeds the 155-character soft limit by 1 character. Trim to: 'A CRO teardown of Apify's homepage from Jan 2020 to Jun 2026 — changes in headline, CTAs, navigati",
+      "reason": "metadata field in seo.json, not section content"
+    },
+    {
+      "issue": "Section 01-intro (low priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    },
+    {
+      "issue": "Section 06-lessons-for-saas-teams (low priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    }
+  ]
+}

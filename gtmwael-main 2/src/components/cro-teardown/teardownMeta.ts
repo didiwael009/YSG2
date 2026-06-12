@@ -1,0 +1,16 @@
+export const TEARDOWN_CARD_META: Record<string, { label: string; title: string; description: string }> = {
+  "/cro-teardowns/shopify":   { label: "CRO Teardown", title: "Shopify homepage teardown (2021–2026)",  description: "From startup credibility signals to enterprise social proof — 5 years mapped." },
+  "/cro-teardowns/hootsuite": { label: "CRO Teardown", title: "Hootsuite homepage teardown (2020–2026)", description: "How a social media platform repositioned away from SMBs toward enterprise IT." },
+  "/cro-teardowns/stripe":    { label: "CRO Teardown", title: "Stripe homepage teardown (2022–2026)",   description: "Messaging evolution from developer tool to financial infrastructure platform." },
+  "/cro-teardowns/intercom":  { label: "CRO Teardown", title: "Intercom homepage teardown (2023–2026)", description: "The pivot from customer support chat to AI-first customer service." },
+  "/cro-teardowns/vercel":    { label: "CRO Teardown", title: "Vercel homepage teardown (2021–2026)",   description: "From frontend tooling to the platform for AI-native web apps." },
+  "/cro-teardowns/crisp":     { label: "CRO Teardown", title: "Crisp homepage teardown (2020–2026)",    description: "How a live chat tool expanded its category narrative over 6 years." },
+  "/cro-teardowns/clay":      { label: "CRO Teardown", title: "Clay homepage teardown (2022–2026)",     description: "From enrichment tool to GTM data platform — 4 years of homepage signals." },
+  "/cro-teardowns/linear":    { label: "CRO Teardown", title: "Linear homepage teardown (2020–2026)",   description: "Design-led positioning that held its ICP while the market shifted." },
+  "/cro-teardowns/lemlist":   { label: "CRO Teardown", title: "lemlist homepage teardown (2019–2026)",  description: "Cold outreach tool to multichannel sales platform — a 7-year arc." },
+  "/cro-teardowns/apollo":    { label: "CRO Teardown", title: "Apollo.io homepage teardown (2019–2026)", description: "How a data enrichment tool became a full-stack sales intelligence platform." },
+  "/cro-teardowns/expensya":  { label: "CRO Teardown", title: "Expensya homepage teardown (2021–2026)", description: "Expense management positioning shift in a crowded fintech category." },
+  "/cro-teardowns/gong":      { label: "CRO Teardown", title: "Gong homepage teardown (2020–2026)",     description: "From call recording to revenue intelligence — the category creation story." },
+  "/cro-teardowns/webflow":   { label: "CRO Teardown", title: "Webflow homepage teardown (2020–2026)",  description: "Designer tool to enterprise growth platform — and a $140M Series B in between." },
+  "/cro-teardowns/apify":     { label: "CRO Teardown", title: "Apify homepage teardown (2020–2026)",    description: "From web scraping utility to AI agent marketplace — 6 years of homepage signals." },
+};

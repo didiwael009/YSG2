@@ -15,7 +15,7 @@ import BusinessContextBlock from "./BusinessContextBlock";
 import LessonCards from "./LessonCards";
 import TeardownCTA from "./TeardownCTA";
 import ArticleBody from "./ArticleBody";
-import InternalLinks from "./InternalLinks";
+import { TEARDOWN_CARD_META } from "./teardownMeta";
 
 const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
   const progressRef = useRef<HTMLDivElement>(null);
@@ -133,43 +133,12 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                 )}
 
                 {/* 8. Patterns worth borrowing */}
-                <section id="lessons" className="scroll-mt-28 space-y-6">
-                  <div className="rounded-[20px] bg-[#11111f] px-6 py-5">
-                    <span className="text-[11px] font-black uppercase tracking-[0.09em] text-[#ff9b6d]">
-                      Patterns worth borrowing
-                    </span>
-                    <h2 className="mt-1 font-display text-[26px] font-bold leading-[1.1] text-white md:text-[30px]">
-                      What SaaS teams can study
-                    </h2>
-                  </div>
-                  <LessonCards lessons={post.lessonCards} companyName={post.companyName} />
-                </section>
+                <LessonCards lessons={post.lessonCards} companyName={post.companyName} />
 
                 {/* Legacy article body — rendered only when businessContext is absent (old articles) */}
                 {!post.businessContext && post.articleBody && (
                   <ArticleBody markdown={post.articleBody} />
                 )}
-
-                {/* Related SaaS growth resources */}
-                {post.internalLinkSuggestions && post.internalLinkSuggestions.length > 0 && (
-                  <InternalLinks suggestions={post.internalLinkSuggestions} />
-                )}
-
-                {/* Phase 4G CTA — CRO diagnosis */}
-                <section className="rounded-[28px] bg-[#11111f] px-8 py-10 text-white shadow-[0_24px_70px_rgba(7,7,17,0.22)]">
-                  <h2 className="mb-3 font-display text-[26px] font-bold leading-[1.1] md:text-[30px]">
-                    Want this kind of teardown for your SaaS?
-                  </h2>
-                  <p className="mb-6 max-w-[540px] text-[15.5px] leading-[1.6] text-[#c5bfd3]">
-                    If your homepage has traffic but weak demos, the problem may not be acquisition.
-                    It may be clarity, trust, CTA structure, or conversion path friction.
-                  </p>
-                  <Button variant="hero" asChild>
-                    <Link to="/conversion-rate-optimisation-specialist">
-                      Book a SaaS CRO diagnosis
-                    </Link>
-                  </Button>
-                </section>
 
                 {/* Final CTA */}
                 <TeardownCTA
@@ -189,29 +158,38 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                   </div>
                 </section>
 
-                {/* Related posts */}
-                <section>
-                  <h3 className="mb-5 font-display text-[28px] font-bold text-[#11111f]">
-                    Keep reading
-                  </h3>
-                  <div className="grid gap-4 md:grid-cols-3">
-                    {post.relatedPosts.map((related) => (
-                      <Link
-                        key={related.href}
-                        to={related.href}
-                        className="min-h-[130px] rounded-[20px] border border-[#11111f]/10 bg-[#fbfbfe] p-5 transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)]"
-                      >
-                        <small className="text-[11px] font-black uppercase tracking-[0.08em] text-primary">
-                          {related.label}
-                        </small>
-                        <strong className="my-2 block leading-tight text-[#11111f]">
-                          {related.title}
-                        </strong>
-                        <span className="text-sm text-[#6b6475]">{related.description}</span>
-                      </Link>
-                    ))}
-                  </div>
-                </section>
+                {/* Keep reading — dynamic teardown cross-links */}
+                {post.internalLinkSuggestions && post.internalLinkSuggestions.length > 0 && (
+                  <section>
+                    <h3 className="mb-5 font-display text-[28px] font-bold text-[#11111f]">
+                      Keep reading
+                    </h3>
+                    <div className="grid gap-4 md:grid-cols-3">
+                      {post.internalLinkSuggestions
+                        .map((path) => {
+                          const normalized = path.replace(/\/$/, "");
+                          const meta = TEARDOWN_CARD_META[normalized];
+                          return meta ? { href: normalized, ...meta } : null;
+                        })
+                        .filter((e): e is NonNullable<typeof e> => e !== null)
+                        .map((item) => (
+                          <Link
+                            key={item.href}
+                            to={item.href}
+                            className="min-h-[130px] rounded-[20px] border border-[#11111f]/10 bg-[#fbfbfe] p-5 transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)]"
+                          >
+                            <small className="text-[11px] font-black uppercase tracking-[0.08em] text-primary">
+                              {item.label}
+                            </small>
+                            <strong className="my-2 block leading-tight text-[#11111f]">
+                              {item.title}
+                            </strong>
+                            <span className="text-sm text-[#6b6475]">{item.description}</span>
+                          </Link>
+                        ))}
+                    </div>
+                  </section>
+                )}
               </div>
 
               {/* Right sidebar — audit CTA */}

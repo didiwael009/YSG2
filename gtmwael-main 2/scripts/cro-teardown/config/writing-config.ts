@@ -69,8 +69,8 @@ export const SECTION_EVIDENCE_SOURCES: Record<string, string[]> = {
   '03-visual-timeline':          ['analysis-blocks', 'messaging', 'visual-analysis'],
   '04-messaging-evolution':      ['messaging', 'summary-cards', 'strategic-shift', 'seo-intent', 'visual-analysis'],
   '05-cta-navigation-evolution': ['cta-changes', 'h2-changes'],
-  '06-lessons-for-saas-teams':   ['lesson-cards', 'summary-cards', 'strategic-shift'],
-  '07-business-context':         ['messaging', 'summary-cards', 'strategic-shift', 'business-context-research'],
+  '06-lessons-for-saas-teams':   ['lesson-cards', 'summary-cards', 'strategic-shift', 'citation-context'],
+  '07-business-context':         ['messaging', 'summary-cards', 'strategic-shift', 'business-context-research', 'citation-context'],
   // ── Phase 4B legacy IDs (compose-section — backward compat) ────────────────
   '02-timeline': ['summary-cards'],
   '03-analysis': ['analysis-blocks'],

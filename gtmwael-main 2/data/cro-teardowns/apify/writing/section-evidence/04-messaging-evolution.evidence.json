@@ -1,0 +1,192 @@
+{
+  "sectionId": "04-messaging-evolution",
+  "companyName": "Apify",
+  "companyUrl": "https://apify.com/",
+  "articleTitle": "Apify Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Apify rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 7,
+    "h2Removed": 2,
+    "ctaAdded": 10,
+    "ctaRemoved": 1,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Apify homepage teardown",
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Extract data from any website",
+      "after": "39,044 tools for your AI",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Apify extracts data from websites, crawls lists of URLs and automates workflows on the web. Turn any website into an API in a few minutes!",
+      "after": "Cloud platform for web scraping, browser automation, AI agents, and data for AI. Use 39,000+ ready-made tools, code templates, or order a custom solution.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Web Scraping, Data Extraction and Automation · Apify",
+      "after": "Apify: Full-stack web scraping and data extraction platform"
+    }
+  ],
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "7 added · 2 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 4 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Apify repositioned from a web scraping utility ('Extract data from any website') to an AI tooling marketplace ('39,044 tools for your AI'), replacing the scraping-outcome promise with a supply-side platform identity — signalling that Apify now competes for budget allocated to AI infrastructure rather than data engineering.",
+    "old_positioning_frame": "A cloud service that turns any website into an API, targeting teams that need data extracted and workflows automated — value defined by what Apify does to websites on the buyer's behalf.",
+    "new_positioning_frame": "A full-stack platform hosting 39,000+ ready-made Actors that feed AI agents and workflows, where value is defined by the size and composability of the tool ecosystem available to AI builders.",
+    "buyer_shift": "Data engineers, growth analysts, and scraping practitioners who needed web data pipelines → AI developers and AI-product teams who need pre-built, plug-and-play tools (Actors) to extend LLM agents and automate web-based tasks at scale.",
+    "funnel_shift": "Mid-funnel product evaluation — 'can Apify scrape my specific site?' — served by a self-serve free store and docs-first navigation → top-of-funnel category entry for AI builders discovering what tool ecosystem exists, plus a parallel enterprise track ('Contact sales', 'Get a demo', 'Read more customer stories') suggesting a dual mid-market and enterprise funnel.",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Extract data from any website",
+        "new": "39,044 tools for your AI",
+        "meaning": "Dropping 'from any website' — the core scraping promise — and foregrounding a specific tool count and 'your AI' as the recipient suggests Apify is repositioning the primary value proposition away from the scraping act itself and toward serving AI agents as the end consumer, which is consistent with competing in the AI infrastructure category rather than the web scraping category."
+      },
+      {
+        "element": "Meta description",
+        "old": "Apify extracts data from websites, crawls lists of URLs and automates workflows on the web. Turn any website into an API in a few minutes!",
+        "new": "Cloud platform for web scraping, browser automation, AI agents, and data for AI. Use 39,000+ ready-made tools, code templates, or order a custom solution.",
+        "meaning": "The addition of 'AI agents' and 'data for AI' alongside the legacy scraping terms, plus the explicit '39,000+ ready-made tools' count, may indicate Apify is broadening its SEO surface area to capture AI-adjacent search intent while retaining scraping keywords — pointing to a deliberate dual-audience strategy rather than a clean pivot."
+      },
+      {
+        "element": "Navigation",
+        "old": "Free store · Get quote · Pricing",
+        "new": "Get started · Apify Store Pre-built web scraping tools · Actors Build and run serverless programs · Integrations Connect with apps and services · MCP Give your AI access to Actors · Anti-blocking Scrape without getting blocked · Proxy Rotate scraper IP addresses · Crawlee Web scraping and crawling library",
+        "meaning": "Removing 'Free store' and 'Pricing' from top-level nav and replacing them with product-category labels (Actors, MCP, Anti-blocking, Proxy) signals a shift from conversion-oriented navigation toward a platform-architecture narrative — suggesting Apify wants visitors to understand product depth before price, which is consistent with a more complex or higher-ACV buying motion. The addition of 'MCP Give your AI access to Actors' is particularly notable as it points to a new technical integration layer aimed squarely at AI agent builders."
+      },
+      {
+        "element": "CTA",
+        "old": "Learn more · Browse all actors",
+        "new": "Read the announcement · Learn more · Contact sales · Read more customer stories · Get started · Get a demo · New MCP connectors are live",
+        "meaning": "The addition of 'Contact sales', 'Get a demo', and 'Read more customer stories' alongside 'Get started' suggests the page may now be serving two separate buyer journeys simultaneously — self-serve developers and enterprise buyers — which is consistent with a growth strategy that layers enterprise revenue onto an existing PLG base. 'Read the announcement' and 'New MCP connectors are live' point to a launch-moment narrative, signalling that the homepage is being used to amplify a specific product milestone rather than function purely as a static conversion page."
+      },
+      {
+        "element": "Section headings",
+        "old": "Turn any website into an API · How can Apify help your business?",
+        "new": "Not just a web scraping API · Take your Actors beyond the open web · Build and deploy reliable scrapers · Publish Actors. Get paid.",
+        "meaning": "'Not just a web scraping API' directly acknowledges and then distances from the prior identity, which suggests Apify is aware its existing audience knows it as a scraping tool and is deliberately reframing perception. 'Publish Actors. Get paid.' signals a marketplace or ecosystem revenue model, pointing to a platform strategy where third-party developers build supply — consistent with the 39,000+ tool count being a platform metric rather than an internal product count."
+      }
+    ],
+    "copy_this_if": "Your product already has a large, growing library of user-generated or third-party tools, integrations, or templates — and that ecosystem size is itself a defensible moat that competitors cannot replicate quickly — and the AI wave has created a new adjacent buyer who already understands what 'tools for AI agents' means without needing the underlying technology explained.",
+    "do_not_copy_this_if": "Your tool count or ecosystem is small, because leading with a specific number ('39,044 tools') that is unimpressive or hard to verify will undermine credibility rather than signal scale — or if your current buyers are practitioners who came specifically for the scraping capability and have no AI agent use case, since reframing around AI may create positioning confusion that increases churn before new AI buyers are acquired.",
+    "safer_version_for_early_stage_saas": "Instead of replacing your core utility headline, add a secondary subheadline or a benefit strip directly beneath the H1 that introduces the AI use case — e.g., test two variants where the H1 stays ('Extract data from any website') but the subhead alternates between 'Used by 50,000 developers' and 'Power your AI agents with live web data' — measuring scroll depth and CTA click-through on 'Get started' versus 'Contact sales' to validate whether the AI-buyer segment is large enough before committing to a full repositioning.",
+    "risk_if_copied": "If a company leads with a tool or inventory count that is either small, declining, or composed of low-quality community contributions, the numeric specificity ('39,044') that reads as authority for Apify will read as fragility for others — drawing attention to ecosystem weakness rather than strength, and signalling to enterprise buyers that the platform lacks curation, which may increase sales cycle length or push buyers toward more opinionated competitors.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T13:47:34.513Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.030159
+  },
+  "seo-intent": {
+    "primary_keyword": "Apify homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, product manager, or growth strategist at a data/AI infrastructure company who needs to understand how to reposition a developer tool from a tactical utility (web scraping) into a strategic platform play. They are deciding whether to shift their own positioning toward AI infrastructure and want to see a real case study of successful repositioning execution.",
+    "recommended_h1_format": "How [Company] Repositioned from a Scraping Tool to an AI Infrastructure Platform",
+    "secondary_keywords": [
+      "Apify CRO teardown",
+      "Apify homepage redesign 2024",
+      "how Apify repositioned to AI infrastructure",
+      "Apify landing page analysis",
+      "Apify homepage evolution strategy"
+    ],
+    "content_angle": "Focus on the strategic *why* behind each change, not just the visual or copy changes. The searcher wants to understand: (1) How Apify signalled a budget shift from 'data engineering' to 'AI infrastructure' through homepage messaging, (2) Why they moved from outcome-focused copy ('Extract data') to supply-side positioning ('39,044 tools'), (3) What metrics or internal data likely drove this repositioning decision, (4) Whether this positioning change attracted a different buyer persona or expanded TAM. Emphasize the *thinking* behind the H1 change and navigation restructuring, not just the fact that it changed.",
+    "what_the_searcher_wants": "A detailed breakdown of a successful developer platform repositioning strategy they can learn from, apply to their own company, and present to stakeholders to justify a similar pivot.",
+    "what_to_avoid": "Do not treat this as a generic 'before/after' design critique. Avoid surface-level observations like 'the new design is cleaner' or 'they added more CTAs.' Do not speculate without grounding in the data. Avoid missing the core insight: this is a *budget repositioning play*, not a UI refresh. Do not ignore the removal of 'Free store' and 'Docs' from nav — these signal a move away from self-service developer identity toward sales-driven platform model.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T13:47:50.883Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0031232
+  },
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2020-01",
+        "design_era": "growth",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Bold blue hero section with white headline 'Extract data from any website', subheading, and feature cards displaying product integrations below.",
+        "proof_density": "medium",
+        "primary_message_type": "feature",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2022-04",
+        "design_era": "growth",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Colorful gradient hero with headline 'The most powerful web scraping and automation platform', statistics badges, and customer logos, followed by tool cards.",
+        "proof_density": "high",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2024-01",
+        "design_era": "mature",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Minimal gradient hero with headline 'Build reliable web scrapers. Fast.' followed by customer logos and two-column content layout with code examples.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "2024-07",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Subtle gradient hero with large headline '39,044 tools for your AI' and grid of tool cards with alternating layouts and code examples.",
+        "proof_density": "low",
+        "primary_message_type": "category",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "current-live",
+        "design_era": "enterprise",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Error page displaying '429 Too Many Requests' message on plain white background with minimal styling.",
+        "proof_density": "none",
+        "primary_message_type": "feature",
+        "visual_sophistication": 1,
+        "brand_maturity": "enterprise-grade"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from bold blue solid backgrounds with prominent feature cards (2020) through gradient-heavy, colorful hero sections emphasizing social proof (2022), toward increasingly minimal and refined layouts with subtle gradients and content-forward design (2024). The current live state reflects a system error rather than production design.",
+    "design_evolution_label": "bold-to-minimal-growth-to-enterprise",
+    "generatedAt": "2026-06-12T13:48:07.666Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0065496
+  }
+}

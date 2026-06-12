@@ -1,0 +1,17 @@
+{
+  "added": [
+    "Read the announcement",
+    "Contact sales",
+    "Read more customer stories",
+    "Get started",
+    "Get a demo",
+    "New MCP connectors are live",
+    "Find your Actor",
+    "Browse Apify Store",
+    "Open-source tools",
+    "Cloud deployment"
+  ],
+  "removed": [
+    "Browse all actors"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Apify",
+  "companyUrl": "https://apify.com/",
+  "articleTitle": "Apify Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Apify rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 7,
+    "h2Removed": 2,
+    "ctaAdded": 10,
+    "ctaRemoved": 1,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Apify homepage teardown",
+  "cta-changes": {
+    "added": [
+      "Read the announcement",
+      "Contact sales",
+      "Read more customer stories",
+      "Get started",
+      "Get a demo",
+      "New MCP connectors are live",
+      "Find your Actor",
+      "Browse Apify Store",
+      "Open-source tools",
+      "Cloud deployment"
+    ],
+    "removed": [
+      "Browse all actors"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Not just a web scraping API",
+      "Take your Actors beyond the open web",
+      "Build and deploy reliable scrapers",
+      "Publish Actors. Get paid.",
+      "Easily integrateZapierGitHubGoogle SheetsPineconeany appAirbyteMCP clientsGoogle DriveSlackZapierwith Actors",
+      "It's time to run your first Actor.",
+      "Apify uses cookies"
+    ],
+    "removed": [
+      "Turn any website into an API",
+      "How can Apifyhelp your business?"
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "company_stage_start": "early-growth",
+  "company_stage_end": "growth",
+  "key_events": [
+    {
+      "period": "2021-Q2",
+      "type": "product-launch",
+      "summary": "Apify reportedly launched the Paid Actors program, allowing third-party developers to monetize their own Actors on the Apify Store marketplace. This marked a strategic pivot from a pure SaaS tool toward a developer marketplace model, with Apify taking a 20% commission on earnings."
+    },
+    {
+      "period": "2021-Q3",
+      "type": "other",
+      "summary": "According to public blog posts, Apify celebrated its 6th year with approximately 1,000 recurring customers and a $5M annual run rate, publicly framing its ambition around 'RPA vision' and web scraper monetization — an early signal of the marketplace positioning that would define subsequent years."
+    },
+    {
+      "period": "2022-Q3",
+      "type": "product-launch",
+      "summary": "Apify publicly launched Crawlee, an open-source successor to the Apify SDK, in August 2022. According to the launch announcement, this separated the open-source crawling library from Apify-specific platform features, reportedly serving as a developer acquisition funnel and community-building move to broaden the contributor ecosystem well beyond the paid platform."
+    },
+    {
+      "period": "2022-Q4",
+      "type": "category-shift",
+      "summary": "According to publicly available Apify content, from 2022 onward the company began focusing on data software for large language models, positioning its web-crawling infrastructure as a data source for AI/LLM training and RAG pipelines — a major category-level repositioning ahead of the ChatGPT-driven AI boom."
+    },
+    {
+      "period": "2024-Q2",
+      "type": "funding",
+      "summary": "Apify reportedly secured €2.8 million in seed funding in April 2024, led by J&T Ventures with participation from existing investor Reflex Capital, according to public sources. The stated purpose was to accelerate growth, expand marketing, and foster developer community growth — notably modest funding for a company reportedly at $13M ARR, suggesting largely bootstrapped, revenue-driven growth."
+    },
+    {
+      "period": "2024-Q3",
+      "type": "product-launch",
+      "summary": "According to public announcements, Apify launched Crawlee for Python in July 2024, extending its open-source framework to the Python/data-science community. This reportedly broadened the contributor ecosystem and positioned Apify more directly against AI/ML-focused competitors serving Python-first audiences."
+    },
+    {
+      "period": "2025-Q1",
+      "type": "rebrand",
+      "summary": "Apify publicly announced a new homepage redesign in early 2025, describing it as 'the first part of a larger rebranding effort' focused on sharper messaging for AI agents and web data use cases. The company's public self-description shifted from 'web scraping platform' toward 'web data and automation platform for AI builders,' reflecting the AI-demand tailwind."
+    },
+    {
+      "period": "2025-Q3",
+      "type": "competitor-move",
+      "summary": "AI-native competitor Firecrawl reportedly raised $14.5M in Series A funding in August 2025, according to public sources, having grown rapidly with an LLM-first markdown-output approach. This, alongside the emergence of Crawl4AI and ScrapeGraphAI, reportedly intensified competitive pressure on established players like Apify to articulate their AI differentiation more aggressively."
+    }
+  ],
+  "category_context": "The web scraping and data extraction market reportedly underwent a fundamental shift between 2020 and 2026, driven by the rise of LLMs: demand for web data to train AI models and power RAG pipelines surged, with reports suggesting 70% of generative AI models were trained on scraped web data. This created a new buyer archetype — the AI/LLM engineer — alongside intensified anti-bot defenses from Cloudflare and others, and a wave of AI-native competitors (Firecrawl, Crawl4AI, ScrapeGraphAI) that challenged incumbents like Apify, Zyte, and Bright Data to reposition around AI readiness.",
+  "icp_evolution": "According to public signals, Apify's ICP appears to have evolved from individual developers and technical SMBs using ready-made scrapers for e-commerce, lead generation, and market intelligence, toward AI/LLM engineering teams and enterprise AI builders who need web data as infrastructure for training datasets, RAG pipelines, and agentic AI systems — with the Apify Store marketplace model also increasingly targeting independent developer-entrepreneurs who monetize automation tools as a revenue stream.",
+  "notable_competitors": [
+    "Zyte (formerly Scrapinghub)",
+    "Bright Data",
+    "Firecrawl",
+    "Crawl4AI",
+    "ScrapeGraphAI",
+    "Oxylabs",
+    "Browse.ai",
+    "ScraperAPI"
+  ],
+  "confidence_level": "medium",
+  "generatedAt": "2026-06-12T13:48:58.813Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.605661
+}

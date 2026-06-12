@@ -1,0 +1,75 @@
+TITLE: Web Scraping, Data Extraction and Automation · Apify
+META DESCRIPTION: Apify can automate anything you can do manually in a web browser, and run it at scale. Turn any website into an API and make the web work for you!
+
+H1:
+  - Make the webwork for you
+
+H2:
+  - Welcome to Apify
+  - Turn any website into an API
+  - How can Apifyhelp your business?
+  - Products
+  - Browse ready-made actors from the community
+
+H3:
+  - Web scraping
+  - Web automation
+  - Web integration
+  - Actors
+  - Proxy
+  - Storage
+  - Apify SDK
+
+CTAS / BUTTONS:
+  - Market research Generate insights into your market from publicly available data on the web.
+  - Web RPA Automate repetitive tasks that your workforce performs manually in a web browser.
+  - Price comparison Monitor your online competitors and automatically react to changes in their prices.
+  - Lead generation Find new potential customers and collect data about them at scale.
+  - Machine learning Generate large-scale datasets from the web for training your artificial intelligence models.
+  - Product development Build new products and services by aggregating data from the web and automating workflows.
+  - About Actors
+  - About Proxy
+  - About Storage
+  - About Apify SDK
+  - E-commerce
+  - Marketing
+  - News
+  - Travel
+  - Browse all
+
+NAV LINKS:
+  - Read more
+  - Apify StoreBrowse tools published by our community and use them for your projects right away
+  - Actor ideasVote for the actors you want to see added to Apify Store
+  - Custom solutionsCompare the options 🤔
+  - MarketplaceOrder an affordable web scraping solution from certified developers
+  - EnterpriseGet a complete end-to-end solution for any scale from Apify experts
+  - Use casesLearn how web scraping and automation can help your business grow
+  - Success storiesGet inspired by awesome projects built with Apify
+  - ActorsThe easy way to develop, run and share serverless cloud programs
+  - ProxyA universal HTTP proxy to improve the performance of your web crawling bots
+  - StatusCheck on how our systems are doing
+  - StorageSpecialized data storages for web scraping and automation
+  - IntegrationsConnect Apify with your favorite web apps and services
+  - DocumentationLearn how to build your web scraping and automation solutions on Apify
+  - Help & SupportFind answers to frequently asked questions or get in touch with Apify experts
+  - Apify SDKUse our popular open-source library for scalable web crawling and scraping
+  - Web scraping guideRead on to find out what web scraping is, why you should do it, and how you can get started!
+  - Discord communityJoin our Discord server to get the latest news and find plenty of people happy to help you
+  - Product roadmapSee what we have lined up for the future and submit your ideas
+  - Become a partnerTeam up with Apify and start delivering web scraping and RPA solutions to your customers
+  - Affiliate programEarn money by sending customers our way
+  - Join MarketplaceBecome a certified Apify developer and start building solutions for our customers
+  - About ApifyLearn about our mission to make the web more programmable
+  - BlogProduct updates, tips and stories from the world of web scraping and automation
+  - Terms of use
+  - Privacy policy
+  - CareersWe're hiring!
+  - Contact
+  - Pricing
+  - Browse ready-made tools
+  - Order custom tool
+  - Apify for Enterprise
+
+BODY TEXT:
+NEWDevelopers can now make money from their actors. Read moreSolutionsReady-madeApify StoreBrowse tools published by our community and use them for your projects right awayActor ideasVote for the actors you want to see added to Apify StoreCustomCustom solutionsCompare the options 🤔 MarketplaceOrder an affordable web scraping solution from certified developersEnterpriseGet a complete end-to-end solution for any scale from Apify expertsInspirationUse casesLearn how web scraping and automation can help your business growSuccess storiesGet inspired by awesome projects built with ApifyPlatformActorsThe easy way to develop, run and share serverless cloud programsProxyA universal HTTP proxy to improve the performance of your web crawling botsStatusCheck on how our systems are doingStorageSpecialized data storages for web scraping and automationIntegrationsConnect Apify with your favorite web apps and servicesResourcesDocumentationLearn how to build your web scraping and automation solutions on ApifyHelp & SupportFind answers to frequently asked questions or get in touch with Apify expertsApify SDKUse our popular open-source library for scalable web crawling and scrapingWeb scraping guideRead on to find out what web scraping is, why you should do it, and how you can get started!Discord communityJoin our Discord server to get the latest news and find plenty of people happy to help youProduct roadmapSee what we have lined up for the future and submit your ideasBecome a partnerTeam up with Apify and start delivering web scraping and RPA solutions to your customersAffiliate programEarn money by sending customers our wayJoin MarketplaceBecome a certified Apify developer and start building solutions for our customersCompanyAbout ApifyLearn about our mission to make the web more programmableBlogProduct updates, tips and stories from the world of web scraping and automationTerms of usePrivacy policyCareersWe're hiring!ContactPricingYour browser does not support the video tag.Make the webwork for youApify can automate anything you can do manually in a web browser, and run it at scale. We're your one-stop shop for web scraping, data extraction, and web RPA.Browse ready-made toolsOrder custom toolTrusted by more than 15,000 companies from 179 countries.Looking for a complete end-to-end solution for any scale? See Apify for EnterpriseMore companiesWelcome to ApifyTurn any website into an APIApify is a software platform that enables forward-thinking companies to leverage the full potential of the web—the largest source of information ever created by humankind.Web scrapingCrawl arbitrary websites, extract structured data from them and export it to formats such as Excel, CSV or JSON.Web automationAutomate manual workflows and processes on the web, such as filling in forms or uploading files. Let robots do the grunt work.Web integrationConnect diverse web services and APIs, and let data flow between them. Add custom computing and data processing steps.How can Apifyhelp your business?Market research Generate insights into your market from publicly available data on the web.Web RPA Automate repetitive tasks that your workforce performs manually in a web browser.Price comparison Monitor your online competitors and automatically react to changes in their prices.Lead generation Find new potential customers and collect data about them at scale.Machine learning Generate large-scale datasets from the web for training your artificial intelligence models.Product development Build new products and services by aggregating data from the web and automating workflows.ProductsActorsA computing platform that makes it easy to develop, run and share serverless cloud programs.About ActorsProxyA universal HTTP proxy to hide the origin of your web scrapers, using both datacenter and residential IP addresses.About ProxyStorageSpecialized data storages to manage web scraping jobs, save their results and export them to formats like CSV, Excel or JSON.About StorageApify SDKThe world's most popular open-source Node.js library for web scraping and browser automation.About Apify SDKBrowse ready-made actors from the communityActors are cloud programs running on Apify that can scrape web pages, process data or automate workflows. Start using them in your projects right away.All actors E-commerce Marketing News TravelWeb Scraperapify/web-scraperCrawls arbitrary websites using the Chrome browser and extracts data from pages using a provided JavaScript code. The ac...apify17,744Google Search Results Scraperapify/google-search-scraperUnofficial API to enable you to scrape Google Search Engine Results Pages (SERPs). Export organic and paid results, ads,...apify9,156Google Maps Scraperdrobnikj/crawler-google-placesExtend the official Google Maps API and scrape reviews, photos, and popular times from Google Places. Google popular tim...drobnikj7,602Instagram Scraperjaroslavhejlek/instagram-scraperScrape and download Instagram posts, profiles, places, hashtags, photos, and comments. Supports search queries and URL l...jaroslavhejlek6,916Facebook Pages Scraperpocesar/facebook-pages-scraperFacebook scraping tool to crawl and extract data from Facebook Pages. Our fully updated FB scraper downloads posts, like...pocesar4,962YouTube Scraperbernardo/youtube-scraperYouTube crawler and video scraper. Alternative YouTube API with no limits or quotas. Extract and download channel name, ...bernardo1,327SEO Audit Tooldrobnikj/seo-audit-toolSearch Engine Optimization tool to carry out an SEO audit on any website. Finds broken links, missing images, and provid...drobnikj457Twitter Scrapervdrmota/twitter-scraperScrape any Twitter user profile. Extract tweets, retweets, replies, favorites, and conversation threads with no Twitter ...vdrmota896Browse allSolutions Apify Store Custom solutions Marketplace Enterprise Use cases Success stories COVID-19 APIs Plans and pricingPlatform Actors Proxy Storage Integrations Services pricing Status Sign inResources Documentation Help & support Apify SDK Web scraping guide Discord community Stack Overflow Change log Product roadmap Become a partner Affiliate program Join MarketplaceCompany About Blog Careers Terms of use Privacy policy ContactKeep in touch© 2021 Apify

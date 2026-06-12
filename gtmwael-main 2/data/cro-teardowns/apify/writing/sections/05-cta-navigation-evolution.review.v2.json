@@ -1,0 +1,44 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "EVIDENCE ACCURACY — 'Browse all actors' is listed in ctaRemoved, not navRemoved. The draft places it in both contexts: 'Apify's navigation now includes... and dropped Browse all actors' treats it as a nav removal, but the evidence only confirms it as a CTA removal. This is an unsupported nav-removal claim. -8 penalty.",
+    "EVIDENCE ACCURACY — 'Four navigation items were removed entirely. Eight were added.' The evidence shows navRemoved: 4 and navAdded: 8 — these numbers are accurate. No penalty here.",
+    "EVIDENCE ACCURACY — 'This suggests Apify is now running two parallel funnels' is a causal/outcome claim without a condition. No hedging like 'if Apify intends...' is attached to this specific claim. -3 penalty.",
+    "PLAIN LANGUAGE — 'Model Context Protocol, a technical layer that lets AI agents call external tools' — MCP is explained inline. No penalty. No forbidden jargon terms appear.",
+    "PARAGRAPH LENGTH — H3 block 2, paragraph 3 ('New MCP connectors are live... exactly who the page is now written for') is approximately 65 words. Exceeds 60-word limit. -4 penalty in scannability.",
+    "FOUNDER TAKEAWAY — The founder test is specific and anchored to Apify's own CTAs ('Browse all actors' vs 'Find your Actor'). However, 'Browse all actors' is not a nav item in the evidence — it is a CTA. The test references it as if it could be a nav item, which slightly misrepresents the evidence.",
+    "READABILITY — H3 block 1, paragraph 3 ('Three different visitors... single self-serve entry point') states its finding but the causal implication ('Apify is now running two parallel funnels') is asserted without a condition. Mild issue.",
+    "SCANNABILITY — No paragraph exceeds 90 words. No hard cap triggered.",
+    "WORD COUNT — Approximately 290 words. Within 180–320 range. No flag.",
+    "H3 SUBHEADINGS — Two H3 subheadings present: 'How Apify's CTA changes split one funnel into two' and 'What Apify's navigation changes signal about its new target visitor'. Both are present. No missing H3 penalty.",
+    "SEARCHABLE HEADING — ## heading contains 'Apify', 'CTA', and 'navigation'. No penalty.",
+    "BOLD QUOTES — All verbatim CTAs and nav items appear in bold quotes throughout. No violation found.",
+    "SPECIFICITY — All analysis is anchored to Apify-specific named CTAs and nav items. No generic SaaS paragraph detected."
+  ],
+  "requiredFixes": [
+    "Fix the nav-removal claim: 'Browse all actors' appears in ctaRemoved only — not navRemoved. Rewrite the second H3 opening to remove the implication that it was a navigation item that was dropped. Reference it only as a CTA removal, or hedge with 'whether it appeared in the nav or CTA layer'.",
+    "Add a condition to the funnel claim: 'This suggests Apify is now running two parallel funnels' needs a qualifying condition — e.g. 'if these CTAs are all visible above the fold simultaneously, that is a strong signal of...' — to avoid the unsupported causation penalty.",
+    "Trim the MCP paragraph to under 60 words. Currently ~65 words. Remove one sentence or split into two shorter ones to satisfy the scannability rule."
+  ],
+  "riskFlags": [
+    "'Browse all actors' is treated as a navigation item that was removed — the evidence places it only in ctaRemoved, not navRemoved. This is an unsupported factual claim about navigation and triggers the -8 penalty.",
+    "'This suggests Apify is now running two parallel funnels' is a directional outcome claim with no attached condition. Should be hedged."
+  ],
+  "seoNotes": [
+    "The ## heading — 'How Apify's CTA and navigation changes reveal a two-track sales motion' — contains the company name and topic terms. Readable as a search query fragment.",
+    "H3 headings include 'Apify's CTA changes' and 'Apify's navigation changes' — both contain the company name and topic terms, which supports internal anchor text and featured snippet targeting.",
+    "'New MCP connectors are live' and 'Model Context Protocol' are timely technical terms that may capture AI-agent developer search traffic tangentially. Worth preserving."
+  ],
+  "rewriteInstruction": "The draft is close but has one factual error that must be corrected before publishing: 'Browse all actors' is a CTA removal in the evidence, not a navigation removal. The second H3 currently treats it as a nav item that was dropped — rewrite that opening so it only references the CTA layer, not the nav. Also add a brief condition to the 'two parallel funnels' claim in H3 block 1 so it reads as an inference rather than a conclusion. Finally, trim the MCP paragraph by one sentence to bring it under 60 words. No structural rewrite needed — the voice, specificity, and founder test are strong.",
+  "dimensionScores": {
+    "evidenceAccuracy": 14,
+    "specificity": 14,
+    "plainLanguage": 19,
+    "scannability": 11,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

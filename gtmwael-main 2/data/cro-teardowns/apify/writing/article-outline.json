@@ -1,0 +1,112 @@
+{
+  "angle": "Apify's homepage evolution is the story of a company that turned its own user base into a competitive moat — transforming from a scraping utility that did the work for you into a marketplace where 39,000+ third-party Actors became the product, making the ecosystem itself the defensible asset no AI-native competitor could replicate overnight.",
+  "distinct_from": [
+    "PLG-to-enterprise pivot via third-party marketplace supply",
+    "Tool count as category ownership signal",
+    "Developer monetization as positioning strategy",
+    "Ecosystem size replacing product utility as H1"
+  ],
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Open with the specific tension: Apify's H1 once promised to do something to websites on your behalf — now it promises to give something to your AI. Establish that this is not a typical PLG-to-enterprise story but a platform-supply story where the homepage shift from 'Extract data from any website' to '39,044 tools for your AI' marks the moment Apify stopped competing on what it does and started competing on what its community built.",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid",
+      "goal": "Show the four-stage visual arc — bold blue solid hero with feature cards (2020) → colorful gradient with social proof badges (2022) → minimal code-forward layout (early 2024) → full-bleed grid of tool cards with a tool-count headline (mid 2024) — and identify the design inflection point where the layout stopped centering Apify as the actor and started centering the Actors as the product. Note how proof density dropped as ecosystem size became the primary signal of scale.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Apify's H1 replaced the scraping promise with a marketplace number — and what that reveals about its new buyer",
+      "goal": "Analyze the H1 evolution from 'Extract data from any website' (service promise to a practitioner) through 'Build reliable web scrapers. Fast.' (outcome for a builder) to '39,044 tools for your AI' (supply signal to an AI infrastructure buyer). Show how the meta description's addition of 'AI agents' and 'data for AI' alongside legacy scraping terms signals a deliberate dual-audience SEO strategy. Explain what the section heading shift — from 'Turn any website into an API' to 'Not just a web scraping API' — reveals about Apify actively managing perception distance from its own prior category, and how 'Publish Actors. Get paid.' reframes the homepage as a recruiting pitch to developer-suppliers, not just a conversion page for buyers.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Apify's navigation shift from 'Free store' to 'MCP Give your AI access to Actors' redefined its sales motion",
+      "goal": "Show that removing 'Free store' and 'Pricing' from top-level nav and replacing them with product-architecture labels (Actors, MCP, Anti-blocking, Proxy, Crawlee) signals a deliberate de-prioritization of price-first conversion in favor of platform comprehension — consistent with a higher-ACV buying motion. Highlight 'MCP Give your AI access to Actors' as the single most pointed signal: it names a technical integration layer that only AI agent builders would recognize, effectively filtering the nav for a new ICP. Then contrast the old 'Learn more / Browse all actors' CTA set with the new dual-track CTAs ('Get started' for PLG developers versus 'Contact sales' / 'Get a demo' / 'Read more customer stories' for enterprise buyers), showing Apify is now explicitly running two parallel funnels from the same homepage.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## How the Paid Actors program, Crawlee, and the LLM boom combined to make Apify's community its strongest CRO asset",
+      "goal": "Connect the business milestones directly to the homepage logic: the 2021 Paid Actors launch created the supply engine that made '39,044 tools' a credible headline rather than an empty boast; Crawlee's 2022 open-source launch broadened the contributor funnel that fed that number; the 2022 pivot toward LLM training data anticipated the AI buyer before ChatGPT made it obvious; and the 2025 rebrand announcement formalized what the homepage had already been signalling. Note that Apify's €2.8M seed round at a reported $13M ARR suggests this repositioning was revenue-validated before it was venture-funded — making the homepage shift a market-pull story, not a pitch-deck story. Flag Firecrawl's $14.5M raise as the competitive pressure that made the AI differentiation urgent.",
+      "word_target": 180,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "business-context-research"
+      ],
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Apify's decision to let its community write its headline",
+      "goal": "Deliver three specific, runnable lessons: (1) When your ecosystem count is your moat, make it your H1 — but only if the number is large, verifiable, and growing, because numeric specificity that reads as authority for Apify reads as fragility for a smaller platform; (2) 'Not just a [your old category]' is a high-risk reframing move that only works if your existing audience already knows you well enough that you can afford to distance from their mental model — test it with returning visitors before exposing it to cold traffic; (3) Running dual CTAs ('Get started' vs 'Contact sales') on the same hero is only coherent if the product naturally segments buyers at signup — if both buttons lead to the same onboarding, the enterprise signal is noise, not signal. Include the safer early-stage alternative: keep the core utility H1, add a subheadline variant testing 'Power your AI agents with live web data' against a social proof line, and measure CTA split before committing to full repositioning.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|icp"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Scraping utility → AI tool marketplace",
+      "note": "H1 dropped the scraping act entirely; tool count became the primary value signal"
+    },
+    {
+      "label": "Target buyer",
+      "value": "Data engineers → AI agent builders",
+      "note": "MCP nav entry and 'your AI' H1 language filter explicitly for LLM-era buyers"
+    },
+    {
+      "label": "Sales motion",
+      "value": "Single-track PLG → Dual PLG + enterprise",
+      "note": "'Get started' retained alongside new 'Contact sales' and 'Get a demo' CTAs on the same hero"
+    },
+    {
+      "label": "Category play",
+      "value": "Scraping tool → Platform ecosystem owner",
+      "note": "'Publish Actors. Get paid.' reframes homepage as developer-supply recruitment, not just buyer conversion"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T13:49:43.607Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.052608
+}

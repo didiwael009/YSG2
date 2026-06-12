@@ -1,0 +1,236 @@
+{
+  "slug": "apify",
+  "companyName": "Apify",
+  "companyUrl": "https://apify.com/",
+  "category": "CRO Teardown",
+  "title": "Apify Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Apify rewrote its homepage over 6 years",
+  "metaTitle": "Apify Homepage CRO Teardown — Jan 2020 to Jun 2026",
+  "description": "A CRO teardown of Apify's homepage from Jan 2020 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Apify's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2020 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-12",
+  "readTime": "9 min read",
+  "featuredImage": "/cro-teardowns/apify/selected/2020-01.webp",
+  "featuredImageAlt": "Apify Jan 2020 homepage — 'Extract data from any website'",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "label": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/apify/selected/2020-01.webp"
+    },
+    {
+      "month": "2022-04",
+      "label": "Apr 2022",
+      "screenshotPath": "/cro-teardowns/apify/selected/2022-04.webp"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/apify/selected/2024-01.webp"
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/apify/selected/2024-07.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/apify/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "7 added · 2 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 4 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Extract data from any website",
+      "after": "39,044 tools for your AI",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Apify extracts data from websites, crawls lists of URLs and automates workflows on the web. Turn any website into an API in a few minutes!",
+      "after": "Cloud platform for web scraping, browser automation, AI agents, and data for AI. Use 39,000+ ready-made tools, code templates, or order a custom solution.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Web Scraping, Data Extraction and Automation · Apify",
+      "after": "Apify: Full-stack web scraping and data extraction platform"
+    }
+  ],
+  "h2Added": [
+    "Not just a web scraping API",
+    "Take your Actors beyond the open web",
+    "Build and deploy reliable scrapers",
+    "Publish Actors. Get paid.",
+    "Easily integrateZapierGitHubGoogle SheetsPineconeany appAirbyteMCP clientsGoogle DriveSlackZapierwith Actors",
+    "It's time to run your first Actor.",
+    "Apify uses cookies"
+  ],
+  "h2Removed": [
+    "Turn any website into an API",
+    "How can Apifyhelp your business?"
+  ],
+  "ctaAdded": [
+    "Read the announcement",
+    "Contact sales",
+    "Read more customer stories",
+    "Get started",
+    "Get a demo",
+    "New MCP connectors are live",
+    "Find your Actor",
+    "Browse Apify Store",
+    "Open-source tools",
+    "Cloud deployment"
+  ],
+  "ctaRemoved": [
+    "Browse all actors"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2020-01",
+      "label": "Jan 2020 — original state",
+      "period": "Jan 2020",
+      "screenshotPath": "/cro-teardowns/apify/selected/2020-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Extract data from any website\" — direct product statement.",
+        "Visible section headings include: \"Turn any website into an API\", \"How can Apifyhelp your business?\", \"Products\".",
+        "Navigation includes: \"Free store\", \"Get quote\" — product category framing.",
+        "Section headings later removed include: \"Turn any website into an API\" and \"How can Apifyhelp your business?\"."
+      ]
+    },
+    {
+      "id": "analysis-2022-04",
+      "label": "Apr 2022 — mid-transition",
+      "period": "Apr 2022",
+      "screenshotPath": "/cro-teardowns/apify/selected/2022-04.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 93.5% — a moderate visual change.",
+        "H1 in this snapshot: \"The most powerful web scraping and automation platform\".",
+        "New section headings appearing: \"Hundreds of ready-to-use tools\", \"Use Apify for various use cases\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/apify/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"39,044 tools for your AI\" — updated value proposition.",
+        "New section headings include: \"Not just a web scraping API\", \"Take your Actors beyond the open web\", \"Build and deploy reliable scrapers\".",
+        "CTAs no longer present include: \"Browse all actors\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"Extract data from any website\" to \"39,044 tools for your AI\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Free store\", \"Get quote\", \"Docs\" to \"Get started\", \"Log in\", \"Product\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "7 section headings were added and 2 removed between Jan 2020 and Jun 2026. New headings include \"Not just a web scraping API\" and \"Take your Actors beyond the open web\". Headings that disappeared include \"Turn any website into an API\" and \"How can Apifyhelp your business?\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 5 snapshots spanning roughly 6 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

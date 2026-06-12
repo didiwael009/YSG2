@@ -1,0 +1,56 @@
+{
+  "overallScore": 81,
+  "pass": false,
+  "evidenceAccuracy": 20,
+  "plainLanguage": 17,
+  "scannability": 11,
+  "searchableHeadings": 8,
+  "specificity": 13,
+  "rhythmAndOpening": 8,
+  "founderTakeaway": 4,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [
+    "## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid — 2022 section",
+    "## Why the homepage changed — missing H3 subheadings",
+    "## How Apify's navigation shift — 'Contact sales' / dual-CTA H3 missing founder takeaway"
+  ],
+  "unsupportedClaims": [
+    "'The most powerful web scraping and automation platform' — attributed as the 2022 headline but the evidence does not list this as the 2022 H1; it does not appear in headlines[], pageTitles[], or any snapshot field in the compressed evidence",
+    "'Hundreds of ready-to-use tools' — cited as a new section heading but this string does not appear in h2Added or anywhere in the evidence",
+    "'Pricing' — listed as a removed nav item ('removing Free store and Pricing') but 'Pricing' does not appear in navRemoved; only 'Free store', 'Get quote', 'Docs', 'Sign in' are listed",
+    "'Actors Build and run serverless programs' — cited as an added nav item but this exact string does not appear in navAdded in the evidence"
+  ],
+  "riskFlags": [
+    "'A specific number may read as authority at 39,000 but as fragility at 300' — presents a conversion-behaviour threshold as fact without evidence",
+    "'If visitors sense the count is padded or stagnant, the specificity may hurt more than a vaguer claim would' — conversion prediction without data",
+    "'If both buttons lead to the same onboarding flow, the enterprise signal is decoration' — reasonable structural observation but edges toward asserting outcome ('decoration') as fact rather than risk"
+  ],
+  "requiredFixes": [
+    "Remove or qualify the attribution of 'The most powerful web scraping and automation platform' as the 2022 H1 — it is not in the evidence headlines array; either source it or replace with what the evidence does support (the 2022 snapshot description mentions a colorful gradient hero but gives no exact headline text)",
+    "Remove 'Hundreds of ready-to-use tools' as a cited section heading — it does not appear in h2Added; replace with a heading that does appear in the evidence",
+    "Remove 'Pricing' from the list of removed nav items — only 'Free store', 'Get quote', 'Docs', 'Sign in' are in navRemoved",
+    "Remove or correct 'Actors Build and run serverless programs' as a cited nav item — this string is not in navAdded; the evidence lists 'Product', 'Back', 'MCP Give your AI access to Actors', 'Proxy Rotate scraper IP addresses', 'Solutions', 'Enterprise', 'Get started', 'Log in'",
+    "Add H3 subheadings to the '## Why the homepage changed' section — it is a wall of analytical prose with no structural breaks",
+    "Add a founder-facing takeaway to the H3 block 'How Apify's CTA changes split one funnel into two' — the section ends with an observation but no actionable test for founders"
+  ],
+  "optionalImprovements": [
+    "The 2022 snapshot paragraph could note the uncertainty about the exact headline text ('the visual analysis describes a colorful gradient hero — the exact headline is not captured in the evidence') rather than quoting an unverified string",
+    "The '## Why the homepage changed' section would benefit from 2–3 H3 subheadings to match the scannability pattern of other sections",
+    "The opening paragraph is strong but the second duplicate title ('# Apify Homepage Teardown: From Extract Data to 39,044 Tools for Your AI') creates a redundant H1 — consider removing one",
+    "The 'platform consolidation around AI agent infrastructure' observation in '## Why the homepage changed' reads slightly like generic market commentary; anchoring it to a specific evidence item (e.g., the MCP nav addition) would sharpen it"
+  ],
+  "rerunRecommendations": [
+    "## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid — specifically the 2022 subsection to correct the unsupported headline quote and the 'Hundreds of ready-to-use tools' H2 citation",
+    "## How Apify's navigation shift from 'Free store' to 'MCP Give your AI access to Actors' redefined its sales motion — to correct the 'Pricing' nav-removed claim and the 'Actors Build and run serverless programs' nav-added claim",
+    "## Why the homepage changed — to add H3 subheadings and anchor the market-context paragraph more tightly to specific evidence items"
+  ],
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.043577999999999895,
+  "generatedAt": "2026-06-12T13:53:34.024Z",
+  "repetitionWarnings": [
+    "The 'two parallel conversations / two funnels' observation (buyers vs. builders) appears in the messaging-evolution section, the CTA-navigation section, and the business-context section — three distinct sections repeat the same analytical conclusion without adding new evidence each time"
+  ]
+}

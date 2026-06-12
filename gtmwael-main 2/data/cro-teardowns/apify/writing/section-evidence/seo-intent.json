@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Apify homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, product manager, or growth strategist at a data/AI infrastructure company who needs to understand how to reposition a developer tool from a tactical utility (web scraping) into a strategic platform play. They are deciding whether to shift their own positioning toward AI infrastructure and want to see a real case study of successful repositioning execution.",
+  "recommended_h1_format": "How [Company] Repositioned from a Scraping Tool to an AI Infrastructure Platform",
+  "secondary_keywords": [
+    "Apify CRO teardown",
+    "Apify homepage redesign 2024",
+    "how Apify repositioned to AI infrastructure",
+    "Apify landing page analysis",
+    "Apify homepage evolution strategy"
+  ],
+  "content_angle": "Focus on the strategic *why* behind each change, not just the visual or copy changes. The searcher wants to understand: (1) How Apify signalled a budget shift from 'data engineering' to 'AI infrastructure' through homepage messaging, (2) Why they moved from outcome-focused copy ('Extract data') to supply-side positioning ('39,044 tools'), (3) What metrics or internal data likely drove this repositioning decision, (4) Whether this positioning change attracted a different buyer persona or expanded TAM. Emphasize the *thinking* behind the H1 change and navigation restructuring, not just the fact that it changed.",
+  "what_the_searcher_wants": "A detailed breakdown of a successful developer platform repositioning strategy they can learn from, apply to their own company, and present to stakeholders to justify a similar pivot.",
+  "what_to_avoid": "Do not treat this as a generic 'before/after' design critique. Avoid surface-level observations like 'the new design is cleaner' or 'they added more CTAs.' Do not speculate without grounding in the data. Avoid missing the core insight: this is a *budget repositioning play*, not a UI refresh. Do not ignore the removal of 'Free store' and 'Docs' from nav — these signal a move away from self-service developer identity toward sales-driven platform model.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T13:47:50.883Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0031232
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "number": "01",
+    "category": "Messaging",
+    "title": "Apify replaced 'Extract data from any website' with '39,044 tools for your AI' — that is a different buyer entirely",
+    "h2": "Apify replaced a scraping promise with an AI catalogue promise.",
+    "before": "Extract data from any website",
+    "after": "39,044 tools for your AI",
+    "beforeLabel": "Original headline",
+    "afterLabel": "Current headline",
+    "body": "The original headline speaks to someone who wants to scrape. The current headline speaks to someone building an AI system who needs data inputs. The number is specific enough to feel like a catalogue, not a pitch. This suggests Apify may now be targeting AI engineers and AI teams rather than only data engineers doing one-off scraping jobs.",
+    "signals": [
+      "From task language to system language",
+      "From scraper buyer to AI builder",
+      "From generic promise to specific inventory"
+    ],
+    "takeaway": "Borrow the pattern: when the market changes, reframe the page around the new job the buyer is trying to get done."
+  },
+  {
+    "number": "02",
+    "category": "Funnel",
+    "title": "Apify added 'Find your Actor' and 'Get a demo' while removing 'Browse all actors' — two different conversion paths now coexist",
+    "h2": "Apify now supports self-serve discovery and sales conversations on the same page.",
+    "before": "Browse all actors",
+    "after": "\"Find your Actor\" + \"Get a demo\"",
+    "beforeLabel": "Earlier path",
+    "afterLabel": "Current paths",
+    "body": "\"Browse all actors\" pointed self-serve visitors toward a catalogue with no gatekeeping. Adding \"Get a demo\" and \"Contact sales\" alongside \"Find your Actor\" creates two conversion paths. This suggests Apify is trying to capture both individual users who want to explore and teams that need a sales conversation before adopting the platform.",
+    "signals": [
+      "Self-serve catalogue remains visible",
+      "Demo path captures higher-intent teams",
+      "PLG and sales-led motion coexist"
+    ],
+    "takeaway": "Borrow the pattern: if you serve both builders and teams, separate the intent without forcing one CTA to do every job."
+  },
+  {
+    "number": "03",
+    "category": "Positioning",
+    "title": "'Publish Actors. Get paid.' is a new section heading that did not exist before 2022 — Apify is now recruiting builders, not just buyers",
+    "h2": "\"Publish Actors. Get paid.\" turns Apify from a vendor into an ecosystem.",
+    "before": "Turn any website into an API",
+    "after": "Publish Actors. Get paid.",
+    "beforeLabel": "Earlier sections",
+    "afterLabel": "Newer section",
+    "body": "Earlier section headings like \"Turn any website into an API\" and \"How can Apify help your business?\" addressed people evaluating a vendor. \"Publish Actors. Get paid.\" addresses people who might build on the platform and monetise their work. That points to marketplace positioning: the store is no longer just a feature library, it is an ecosystem layer.",
+    "signals": [
+      "Buyer message expands to builder message",
+      "Catalogue becomes marketplace",
+      "Platform story becomes stronger"
+    ],
+    "takeaway": "Borrow the pattern: if third-party builders create value for the product, give them a homepage message too."
+  },
+  {
+    "number": "04",
+    "category": "Strategy",
+    "title": "Apify's meta description added 'AI agents' and 'data for AI' while keeping 'web scraping' — the six-year arc is an expansion, not a pivot",
+    "h2": "The six-year arc looks like expansion, not a hard pivot.",
+    "before": "Turn any website into an API",
+    "after": "\"AI agents\" + \"data for AI\" + \"web scraping\"",
+    "beforeLabel": "Original promise",
+    "afterLabel": "Current category stack",
+    "body": "The original meta description promised to \"turn any website into an API in a few minutes.\" The current version lists \"web scraping, browser automation, AI agents, and data for AI\" in the same sentence. Web scraping was not removed — it was repositioned as one capability inside a broader AI-data platform. Across the snapshots, the pattern suggests Apify layered new audiences on top of the existing one rather than replacing them.",
+    "signals": [
+      "Old demand is preserved",
+      "New AI use case is added",
+      "Category expands without breaking trust"
+    ],
+    "takeaway": "Borrow the pattern: do not abandon the old category if it still creates demand. Use it as proof inside the broader new narrative."
+  }
+]

@@ -1,0 +1,107 @@
+TITLE: Web Scraping, Data Extraction and Automation · Apify
+META DESCRIPTION: Apify is your one-stop shop for web scraping, data extraction, and RPA. Automate anything you can do manually in a browser.
+
+H1:
+  - The most powerful web scraping and automation platform
+
+H2:
+  - Hundreds of ready-to-use tools
+  - Turn any website into an API
+  - How Apify is already being used
+  - See what our customers say
+  - Need a special custom solution?
+  - Before we send it out
+  - Want some cookies?
+  - Privacy preference center
+
+H3:
+  - Amazon Product Scraper
+  - Instagram Profile Scraper
+  - Google Search Results Scraper
+  - Booking Scraper
+  - Collect data from any website
+  - Automate any online process
+  - Integrate with any system
+  - Never get blocked
+  - Rich developer ecosystem
+  - We're not here to crowd your inbox
+  - Manage consent preferences
+  - Performance Cookies
+
+CTAS / BUTTONS:
+  - Browse ready-made tools
+  - Get custom solution
+  - See all tools
+  - Learn more about web scraping
+  - Learn more
+  - View integrations
+  - Price comparison
+  - Market research
+  - Real estate
+  - Lead generation
+  - Switch to JSON
+  - Download full data sample
+  - View success stories
+  - Subscribe
+  - Send me full data sample
+  - Privacy Policy
+  - Read more information about the cookies we use in our cookie policy
+  - Accept all
+  - Cookie settings
+  - Allow all
+  - Clear
+  - Apply
+  - Cancel
+  - Reject all
+  - Confirm my choices
+
+NAV LINKS:
+  - We stand with Ukraine
+  - Apify StoreBrowse tools published by our community and use them for your projects right away
+  - New ideasVote for the actors you want to see added to Apify Store
+  - Use casesLearn how web scraping and automation can help your business grow
+  - Success storiesGet inspired by awesome projects built with Apify
+  - Custom solutionsGet a custom web scraping or RPA solution at any scale
+  - EnterpriseTailor-made web scraping and automation solutions with premium support
+  - FreelancersGet a custom solution from certified Apify developers
+  - E-commerce & Retail
+  - Marketing & Media
+  - Software & SaaS
+  - Telecommunications
+  - Healthcare & Pharma
+  - Manufacturing
+  - Real estate
+  - Research & Education
+  - Fintech & Insurance
+  - NGO & Government
+  - Travel & Logistics
+  - Consulting
+  - Developers' portalBuild web scrapers and RPA robots with Apify and our open-source libraries
+  - Web Scraping AcademyA comprehensive web scraping course for JavaScript with open-source tools
+  - CrawleeThe world's most popular open-source library for web scraping in JavaScript
+  - DiscordJoin our Discord community to get the latest news and find plenty of people happy to help you
+  - Open sourceWe ❤️ open source and contribute to it. See all our projects on GitHub
+  - Documentation
+  - Actors
+  - Proxy
+  - Storage
+  - Integrations
+  - Status
+  - About ApifyLearn about our mission to make the web more programmable
+  - BlogProduct updates, tips and stories from the world of web scraping and automation
+  - CareersWe're hiring!
+  - Contact us
+  - Help & SupportFind answers to frequently asked questions or get in touch with Apify experts
+  - Web scraping guideRead on to find out what web scraping is, why you should do it, and how you can get started!
+  - DocumentationLearn how to use the Apify platform, from your first steps to in-depth reference
+  - Partner programsTeam up with Apify and start delivering web scraping and RPA solutions to your customers
+  - Solution providersEarn up to 100% commission for delivering and maintaining custom end-to-end web scraping and web automation solutions.
+  - FreelancersBecome a certified Apify developer and start building solutions for our customers
+  - AffiliateEarn money by sending customers our way
+  - Pricing
+  - Get custom solution
+  - Sign up for free
+  - Browse ready-made tools
+
+BODY TEXT:
+We stand with UkraineSolutionsReady-madeApify StoreBrowse tools published by our community and use them for your projects right awayNew ideasVote for the actors you want to see added to Apify StoreInspirationUse casesLearn how web scraping and automation can help your business growSuccess storiesGet inspired by awesome projects built with ApifyCustomCustom solutionsGet a custom web scraping or RPA solution at any scaleEnterpriseTailor-made web scraping and automation solutions with premium supportFreelancersGet a custom solution from certified Apify developersIndustriesE-commerce & RetailMarketing & MediaSoftware & SaaSTelecommunicationsHealthcare & PharmaManufacturingReal estateResearch & EducationFintech & InsuranceNGO & GovernmentTravel & LogisticsConsultingDevelopersDevelopers' portalBuild web scrapers and RPA robots with Apify and our open-source librariesGetting startedWeb Scraping AcademyA comprehensive web scraping course for JavaScript with open-source toolsCrawleeThe world's most popular open-source library for web scraping in JavaScriptCommunityDiscordJoin our Discord community to get the latest news and find plenty of people happy to help youOpen sourceWe ❤️ open source and contribute to it. See all our projects on GitHubPlatformDocumentationActorsProxyStorageIntegrationsStatusResourcesCompanyAbout ApifyLearn about our mission to make the web more programmableBlogProduct updates, tips and stories from the world of web scraping and automationCareersWe're hiring!Contact usHelpHelp & SupportFind answers to frequently asked questions or get in touch with Apify expertsWeb scraping guideRead on to find out what web scraping is, why you should do it, and how you can get started!DocumentationLearn how to use the Apify platform, from your first steps to in-depth referencePartnersPartner programsTeam up with Apify and start delivering web scraping and RPA solutions to your customersSolution providersEarn up to 100% commission for delivering and maintaining custom end-to-end web scraping and web automation solutions.FreelancersBecome a certified Apify developer and start building solutions for our customersAffiliateEarn money by sending customers our wayPricingGet custom solutionSign up for freeThe most powerful web scraping and automation platformUse our flexible, ready-to-use tools to get the job done fast and accurately. Or rely on Apify experts to solve and maintain your unique use case. Browse ready-made toolsGet custom solution3.3Mweb workflows automated weekly123.9 TBdata transferred weekly218.4Mweb pages crawled weeklyMORE THAN 1,000 CUSTOMERS FROM 95 COUNTRIES TRUST APIFYHundreds of ready-to-use toolsJust enter your search terms or keywords and start extracting data for your use case. Or use fast, reliable automation tools to process data and robotize tasks.Amazon Product ScraperExtract Amazon data by category and country. Download product information without Amazon API, including prices, descriptions, images, and ratings.Vaclav Rut2,379Try this for freeInstagram Profile ScraperGet all public Instagram profile info, including followers and follows count, URLs, bio, posts, likes, counts, channel, duration, and highlight reel.Zuzka P.6,267Try this for freeGoogle Search Results ScraperSERP API to scrape Google Search Engine Results Pages. Extract organic and paid results, ads, queries, People Also Ask, prices, reviews, and ratings.Apify21,396Try this for freeBooking ScraperUnofficial Booking API to scrape unlimited accommodation data on hotel names, locations, availability, room types, reviews, stars, prices, and promotions.Tin Duong1,709Try this for freeSee all toolsTurn any website into an APICollect data from any websiteStart extracting unlimited amounts of structured data right away with our ready-to-use scraping tools or work with us to solve your unique use case. Fast, accurate results you can rely on. Learn more about web scraping Automate any online processScale processes, robotize tedious tasks, and speed up workflows with flexible automation software. Automation that lets you work faster and smarter than your competitors with less effort. Learn more Integrate with any systemExport scraped data in machine-readable formats like JSON or CSV. Apify lets you seamlessly integrate with your existing Zapier or Make workflows, or any other web app using API and webhooks. View integrations Never get blockedSmart rotation of datacenter and residential proxies, combined with industry-leading browser fingerprinting technology, makes Apify bots indistinguishable from humans. Learn more Rich developer ecosystemApify is built on solid open-source tools so don’t worry about vendor lock-in. And you can take advantage of a thriving community of Apify Freelancers and partners. Learn more How Apify is already being usedPrice comparisonMarket researchReal estateLead generationSwitch to JSONidTitleBrandPriceCurrencyInventorySellerSellerID0Apple iPhone 7, US Version, 32GB, Gold for T-Mobile (Renewed)Apple209.99USD2OM-WIRELESSAUKI2KDEW29YO1Apple iPhone X, 256GB, Silver - For Verizon (Renewed)Apple399.99USD19Synergy™A1AZK3R1FDDI1B2Apple iPhone X, 256GB, Silver - For GSM (Renewed)Apple389.99USD3OM-WIRELESSAUKI2KDEW29YO3Apple iPhone X, 256GB, Silver - For GSM (Renewed)Apple419.97USD12NetworkstoreAR1FTLUUZC24W4Apple iPhone X, 64GB, Space Gray - For GSM (Renewed)Apple344USD13BuySPRYA37VHTD60S0G3C5Apple iPhone X, US Version, 64GB, Space Gray for T-Mobile (Renewed)Apple369.99USD8OM-WIRELESSAUKI2KDEW29YO6Apple iPhone X, US Version, 64GB, Space Gray for AT&T (Renewed)Apple399.99USD1Synergy™A1AZK3R1FDDI1B7Apple iPhone X, 64GB, Space Gray - For GSM (Renewed)Apple349USD2GM DEALSAWZ5ROU8H8A6M8(Renewed) Apple iPhone X, US Version, 64GB, Silver - UnlockedApple329USD18Avant SolutionsA1ETI95IAU2WJO9Apple iPhone 7 Plus, US Version, 128GB, Gold - Unlocked (Renewed)Apple286.66USD1GM DEALSAWZ5ROU8H8A6MDownload full data sampleSee what our customers sayNON PROFITApify enabled us to scale up our data collection of potential trafficking victims and helped identify 14,874 child victims of human trafficking and 16,927 traffickers. NGOSenior Product Manager at ThornDEVELOPERAs a developer, I can't imagine a better tool that balances power, flexibility, and ease of use. Apify lets me focus on core functionality, not managing infrastructure. Tom LinhartLead IT Architect at Flat ZoneTECH STARTUPDetecio uses various technologies and Apify is amongst the most important and reliable for us. The biggest advantage is the stability of the Apify platform and well-documented interface that allows easy integration with our internal systems. Daniel ŘezníčekCo-founder at DetecioENTERPRISEWe get consistent and accurate data from our target websites and have successfully automated workflows that previously acted as bottlenecks. Fortune 500 company(Under NDA)View success storiesNeed a special custom solution?Rely on Apify to deliver a precise solution for your web scraping or automation use case. Or build it yourself and trust us to maintain it. Get custom solutionWe're not here to crowd your inboxSubscribeBut if you want cherry-picked content from the world of data extraction, you're at the right place! Sign up for the best insights, jobs, videos, events, and digests delivered every month.Solutions Apify Store Custom solutions Enterprise Use cases Success stories Industries COVID-19 APIs New ideas Plans and pricing Compare solutionsDevelopers Developers' portal Web scraping academy Apify SDK Open source Log inPlatform Documentation Actors Proxy Storage Integrations Status Services pricingResources Help & support Web scraping guide Documentation Partner programs Solution providers Freelancers Affiliate Product roadmap Change logCompany About Blog Careers Contact usJoin our developer community on DiscordCookie settingsTerms of usePrivacy policyMaster Service Agreement© 2022 Apify Before we send it outYour full nameYour email addressSend me full data sampleWe will use your information to contact you about our products and services. For more information, see our Privacy Policy. Want some cookies?Cookies help us improve your experience and analyze website traffic. By clicking "Accept all", you agree to let us store cookies on your device. Your settings can be changed, including withdrawing your consent at any time, by clicking the "Cookie settings" link in the footer.Read more information about the cookies we use in our cookie policy Accept allCookie settingsPrivacy preference centerWhen you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences or your device and is mostly used to make the site work as you expect it to. The information does not usually directly identify you, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to find out more and change our default settings. However, blocking some types of cookies may impact your experience of the site and the services we are able to offer. Read more information about the cookies we use in our cookie policyAllow all Manage consent preferencesStrictly Necessary CookiesAlways activeThese cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.Performance Cookies Performance Cookies These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.Functional Cookies Functional Cookies These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.Targeting Cookies Targeting Cookies These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.Performance Cookies Clear checkbox label labelApply CancelConsent Leg.Interest checkbox label label checkbox label label checkbox label labelReject all Confirm my choicesYour Privacy [`dialog closed`]

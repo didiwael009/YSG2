@@ -63,14 +63,25 @@ interface PublishReport {
 }
 
 // ─── Internal link suggestions ────────────────────────────────────────────────
-// These are confirmed real routes in the app, contextually relevant to
-// CRO teardown articles. Added when internalLinkingScore < 8.
+// Dynamically picks 3 other published teardown articles (excludes current slug).
+// Falls back to service pages if fewer than 3 other teardowns are published.
 
-const INTERNAL_LINK_SUGGESTIONS: string[] = [
-  '/conversion-rate-optimisation-specialist',
-  '/landing-page-for-saas',
-  '/saas-marketing-agency',
+const ALL_TEARDOWN_SLUGS: string[] = [
+  'shopify', 'hootsuite', 'stripe', 'intercom', 'vercel', 'crisp',
+  'clay', 'linear', 'lemlist', 'apollo', 'expensya', 'gong', 'webflow', 'apify',
 ];
+
+function getRelatedTeardownLinks(currentSlug: string): string[] {
+  const others = ALL_TEARDOWN_SLUGS.filter(s => s !== currentSlug);
+  // Shuffle deterministically by slug so the same article always gets the same links
+  const seed = currentSlug.split('').reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  const shuffled = [...others].sort((a, b) => {
+    const ha = (a.charCodeAt(0) * 31 + seed) % 97;
+    const hb = (b.charCodeAt(0) * 31 + seed) % 97;
+    return ha - hb;
+  });
+  return shuffled.slice(0, 3).map(s => `/cro-teardowns/${s}`);
+}
 
 const INTERNAL_LINK_SCORE_THRESHOLD = 8;
 
@@ -358,6 +369,23 @@ async function main(): Promise<void> {
     }
   }
 
+  // ── Override excerpt with AI-written intro paragraph if available ────────
+  // 01-intro.final.md is unique per brand — far better than the template excerpt
+  // from article-blueprint.ts. Extract first real paragraph (after the # heading).
+  const introPath = path.join(writingDir, 'sections', '01-intro.final.md');
+  if (fs.existsSync(introPath)) {
+    const introRaw = fs.readFileSync(introPath, 'utf-8').trim();
+    // Strip leading # heading line, then take the first non-empty paragraph
+    const introBody = introRaw.replace(/^#[^\n]*\n+/, '').trim();
+    const firstPara = introBody.split(/\n\n+/)[0]?.trim();
+    if (firstPara) {
+      // Strip markdown bold markers for plain text excerpt
+      const plainExcerpt = firstPara.replace(/\*\*([^*]+)\*\*/g, '$1');
+      structuredData.excerpt = plainExcerpt;
+      console.log(`✅  Overrode excerpt with AI-written intro paragraph from 01-intro.final.md`);
+    }
+  }
+
   // ── Override lesson cards with LLM-generated version if available ─────────
   // Phase 4C writes brand-specific cards to section-evidence/lesson-cards.json.
   // These replace the static generic cards from article-blueprint.ts so every
@@ -406,7 +434,7 @@ async function main(): Promise<void> {
   const internalLinkingScore = seoAudit?.internalLinkingScore ?? INTERNAL_LINK_SCORE_THRESHOLD;
   const internalLinkSuggestionsAdded: string[] =
     internalLinkingScore < INTERNAL_LINK_SCORE_THRESHOLD
-      ? INTERNAL_LINK_SUGGESTIONS
+      ? getRelatedTeardownLinks(slug)
       : [];
 
   // ── Layer 2: Data consistency validation ─────────────────────────────────────

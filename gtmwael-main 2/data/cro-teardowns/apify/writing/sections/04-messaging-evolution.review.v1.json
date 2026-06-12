@@ -1,0 +1,45 @@
+{
+  "score": 82,
+  "pass": false,
+  "issues": [
+    "H3 block 3 ('What the Apify messaging shift reveals...') contains a paragraph of approximately 85 words — exceeds the 60-word limit and triggers scannability penalty.",
+    "The section heading is searchable but slightly long; the H3 headings are present and named, which is good.",
+    "H3 block 1 opens with the headline journey but does not state its finding (the implication for the buyer) in the first two sentences — the finding arrives at the end of the paragraph, violating the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula.",
+    "H3 block 2 opens with quoted evidence before stating the finding — the finding ('It is expansion, not replacement') is buried at the end rather than leading.",
+    "H3 block 3 contains two distinct ideas tracked simultaneously: (1) the section-heading reframe from scraping to platform identity, and (2) the builder-recruitment pitch via 'Publish Actors. Get paid.' These should be separated into two paragraphs or two H3 blocks.",
+    "The phrase 'AI infrastructure' is used without an immediate plain-language definition on first use — it qualifies as an expert term requiring definition.",
+    "The mid-transition headline 'Build reliable web scrapers. Fast.' is cited in H3 block 1 but does not appear in the messaging evidence array — it appears only in the visual-analysis snapshot for 2024-01. This is technically traceable to evidence but is a visual snapshot observation, not a confirmed messaging element in the messaging array. Weak traceability.",
+    "No explicit word-count violation at section level — estimated ~380 words, at the upper boundary.",
+    "The final runnable test is specific and anchored to a concrete action ('count how many times the word you or your appears'), which is good, but it does not reference Apify's own page or evidence directly, making it slightly generic."
+  ],
+  "requiredFixes": [
+    "Move the core finding to the first sentence of each H3 block. H3 block 1 should open with something like: 'Apify's final headline drops the developer entirely and addresses an AI system as the end consumer — a signal that the page is now written for buyers who think in AI infrastructure terms.' Then show the headline journey as evidence.",
+    "Split H3 block 3 into two focused paragraphs or two H3 sub-blocks: one covering the section-heading reframe ('Not just a web scraping API'), and one covering the builder-recruitment signal ('Publish Actors. Get paid.'). Each paragraph currently carries two separate ideas.",
+    "Add an immediate plain-language definition for 'AI infrastructure' on first use — e.g., 'AI infrastructure (the backend tools and data pipelines that power AI products)'.",
+    "Trim H3 block 3's long paragraph to under 60 words. Move the second idea (builder recruitment) to its own paragraph.",
+    "Anchor the final founder test more tightly to Apify's evidence — e.g., 'On your own homepage, check whether 'you' refers to the same reader in every sentence. Apify's current page addresses AI systems ('your AI'), developers ('your scrapers'), and builders ('Publish Actors. Get paid.') in the same scroll — decide whether that range works for your audience size or fragments your message.'"
+  ],
+  "riskFlags": [
+    "The claim 'This suggests the page is now written for a buyer who thinks in terms of AI infrastructure, not data pipelines' is reasonably hedged with 'suggests' — acceptable.",
+    "'may indicate Apify is deliberately holding both audiences' — correctly hedged with 'may indicate'.",
+    "The mid-transition headline 'Build reliable web scrapers. Fast.' is sourced from the visual-analysis snapshot, not the messaging evidence array. If the rubric requires messaging-array traceability, this is a weak link — flag for editor review but not a hard cap trigger given the snapshot evidence exists.",
+    "No outcome or causation claims detected — no 'this caused' or 'this increased' language present. Good."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Apify', 'H1', 'scraping', and 'marketplace' — strong keyword surface for the primary term 'Apify homepage teardown'.",
+    "H3 headings include 'Apify', 'headline', 'meta description', 'SEO', and 'messaging' — good secondary keyword coverage.",
+    "The dual-audience SEO observation in H3 block 2 is a genuinely useful insight for the target searcher and aligns with the SEO intent evidence ('deliberately holding both audiences').",
+    "Word count sits near the 380-word ceiling — any expansion from required fixes will push it over. Rewriter should trim H3 block 3 before adding new content."
+  ],
+  "rewriteInstruction": "Restructure each H3 block to lead with the finding in sentence one — do not open with evidence and build to a conclusion. Split H3 block 3 into two focused units: one on the section-heading reframe ('Not just a web scraping API' as identity management) and one on the builder-recruitment signal ('Publish Actors. Get paid.' as supply-side platform strategy). Each new unit must be under 60 words. Add a brief plain-language gloss for 'AI infrastructure' on first use. Tighten the founder test to reference Apify's own page explicitly — show the reader that Apify's current homepage addresses three different 'yous' in the same scroll, then invite them to check whether their own page does the same. Keep total word count under 380.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 9,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}
