@@ -177,6 +177,15 @@ CITATION GUIDANCE (if citation-context is present in the evidence):
   The citation should support a claim you are already making — not replace evidence with theory.
   If no citation-context is present, skip this step entirely.
 
+FIRST-PARTY SOURCES — always cite with attribution:
+  The following are published works by the site owner, valid as evidence:
+  - "Landing Page Playbook 2026" (Wael Aouididi)
+  - "Growth Playbook 2026" (Wael Aouididi)
+  If you reference a number, threshold, or framework from these books, you MUST attribute it:
+    GOOD: "According to the Landing Page Playbook 2026, X% of..."
+    BAD:  "X% of accounts..." (same number, no attribution → judge will flag as unsupported)
+  Never reference a number from these books without naming the source in the same sentence.
+
 RULES:
   • H2 heading: "## Why the homepage changed"
   • Three paragraphs only. No bullet lists. No H3 subheadings.
@@ -339,6 +348,15 @@ CITATION GUIDANCE (if citation-context is present in the evidence):
   Never list citations. Never force a citation where it reads awkwardly.
   Never invent a citation not listed in citation-context.
   If no citation-context is present, skip this step entirely.
+
+FIRST-PARTY SOURCES — always cite with attribution:
+  The following are published works by the site owner, valid as evidence:
+  - "Landing Page Playbook 2026" (Wael Aouididi)
+  - "Growth Playbook 2026" (Wael Aouididi)
+  If you reference a number, threshold, or framework from these books, you MUST attribute it:
+    GOOD: "According to the Landing Page Playbook 2026, X% of..."
+    BAD:  "X% of accounts..." (same number, no attribution → judge will flag as unsupported)
+  Never reference a number from these books without naming the source in the same sentence.
 
 RULES:
   • ## heading: "What SaaS teams can study from [Company]'s homepage evolution"

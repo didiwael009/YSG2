@@ -435,6 +435,17 @@ Named interpretive frameworks applied to the evidence are ALLOWED and REQUIRED b
 These are labeled interpretations — they are hedges, not facts. Do NOT list them as unsupportedClaims.
 An unsupportedClaim is a SPECIFIC FACT (a number, a date, a metric, a named event) that is NOT in the evidence.
 
+OWNED EVIDENCE SOURCES — ALWAYS VALID:
+The following are Wael Aouididi's published works hosted at gtmwael.com. Any framework,
+principle, threshold, or metric cited as coming FROM these sources is valid evidence:
+  - Landing Page Playbook 2026 (file: wael-landing-page-playbook-2026.pdf)
+  - Growth Playbook 2026 (file: wael-growth-playbook-2026.pdf)
+Do NOT flag citations to these books as unsupportedClaims. They are first-party published
+research, not invented facts. A sentence like "according to the Landing Page Playbook 2026,
+X% of..." is valid. A sentence that states a number from the book WITHOUT attribution
+("X% of accounts...") still needs the attribution to be valid — flag only if no attribution
+to the book is present AND the number is absent from the compressed evidence.
+
 HARD RULES:
 • Any invented metric (percentage threshold, conversion rate, search volume figure) → unsupportedClaim.
 • Any sentence predicting a specific conversion outcome ("trial starts will...", "this will improve...") → riskFlag.
