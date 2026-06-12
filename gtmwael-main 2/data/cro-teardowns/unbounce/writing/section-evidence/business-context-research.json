@@ -1,0 +1,49 @@
+{
+  "company_stage_start": "growth",
+  "company_stage_end": "scale",
+  "key_events": [
+    {
+      "period": "2020-Q2",
+      "type": "funding",
+      "summary": "Unbounce publicly announced a Series A round of $38.4M led by Crest Rock Partners in June 2020, according to multiple public sources including Tracxn and CB Insights. This was reportedly the company's first major outside institutional round after a seed raise in 2011, and according to public records Crest Rock became the controlling PE backer — a shift that likely brought new growth mandates and professionalization pressure to the business."
+    },
+    {
+      "period": "2021-Q3",
+      "type": "rebrand",
+      "summary": "Unbounce publicly announced the relaunch of its product as the 'Conversion Intelligence Platform' in September 2021, according to a Globe Newswire press release, explicitly expanding its positioning beyond landing pages to a broader AI-powered marketing suite targeting SMBs. This category-creation move — coining the term 'Conversion Intelligence' — reportedly represented a deliberate attempt to differentiate from legacy landing page builder competitors and justify a wider product scope."
+    },
+    {
+      "period": "2021-Q2",
+      "type": "product-launch",
+      "summary": "Unbounce reportedly acquired Snazzy AI (an AI-powered copywriting tool built on GPT-3) in May 2021 and rebranded it as 'Smart Copy,' according to a Globe Newswire announcement. This acquisition, alongside the existing Smart Traffic and newly launched Smart Builder products, signaled a strategic pivot from a single-product landing page tool to a multi-product AI marketing suite."
+    },
+    {
+      "period": "2022-Q1",
+      "type": "product-launch",
+      "summary": "Unbounce publicly announced the acquisition of LeadsRx, a marketing attribution analytics platform, in January 2022 according to a Globe Newswire release. According to public statements from Unbounce's Chief Strategy Officer, the deal was intended to expand the 'Conversion Intelligence' platform across a wider spectrum of the marketing funnel and bring attribution capabilities to SMB customers — further broadening the company's positioning beyond landing pages."
+    },
+    {
+      "period": "2022-Q3",
+      "type": "other",
+      "summary": "Unbounce publicly announced layoffs of 47 employees (approximately 20% of its workforce) in August 2022, according to BetaKit and multiple Canadian tech outlets, citing 'economic headwinds' and a 'larger company restructuring.' The cuts reportedly affected both Unbounce and LeadsRx teams, suggesting the aggressive M&A-led expansion strategy had been curtailed under macro pressure."
+    },
+    {
+      "period": "2024-Q3",
+      "type": "other",
+      "summary": "Unbounce publicly announced a merger with Insightly, a CRM and marketing automation platform, in July 2024, according to a PR Newswire release and confirmed by Crest Rock Partners. Both companies were reportedly owned by Crest Rock Partners, which orchestrated the combination; the deal was framed as creating a unified sales-and-marketing SaaS platform targeting SMB and mid-market customers, and according to BetaKit involved 'some reductions' due to redundancies."
+    }
+  ],
+  "category_context": "The dedicated landing page builder category matured significantly between 2019 and 2024, with increasing commoditization pressure from no-code website builders (Webflow, Squarespace), broader marketing suites (HubSpot), and AI-native tools; the category saw consolidation and platform-expansion moves as pure-play builders like Unbounce, Instapage, and Leadpages all struggled to justify standalone positioning against all-in-one competitors. The rise of generative AI from 2022 onward further disrupted the copywriting and page-building workflow, forcing incumbents to rebrand around AI capabilities or risk being perceived as legacy tools.",
+  "icp_evolution": "According to public statements and product announcements, Unbounce began this period primarily targeting independent marketers and small businesses needing developer-free landing page creation; by 2021–2022 its messaging had shifted toward SMB and mid-market 'growth marketers' who needed an AI-powered full-funnel conversion platform, and by 2024 the Insightly merger indicates a further move upmarket toward SMB and mid-market companies that need aligned sales-and-marketing workflows, not just landing page tooling.",
+  "notable_competitors": [
+    "Leadpages",
+    "Instapage",
+    "ClickFunnels",
+    "Webflow",
+    "HubSpot"
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T22:06:00.161Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.38067900000000005
+}

@@ -1,0 +1,186 @@
+{
+  "slug": "unbounce",
+  "generatedAt": "2026-06-12T22:11:55.043Z",
+  "mode": "standard",
+  "sections": [
+    {
+      "sectionId": "01-intro",
+      "finalVersion": 1,
+      "finalScore": 87,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "'signals a deliberate break' — the underlying evidence note reads 'This change can be read as a deliberate update... No confirmed strategy is implied.' The draft asserts intent the evidence explicitly declines to confirm.",
+        "'toward a broader audience evaluating a full conversion platform' — the buyer shift is supported by evidence, but stating it as a direct consequence of the headline change alone is slightly over-causal; navigation and CTA changes are the fuller proof."
+      ],
+      "remainingIssueCount": 4,
+      "remainingIssues": [
+        "The phrase 'signals a deliberate break' is a mild causation claim — the evidence note on the H1 change explicitly hedges with 'can be read as' and 'No confirmed strategy is implied'. The draft states it as a deliberate act without the same hedge.",
+        "Word count is approximately 105 words, which exceeds the 55–90 word ceiling specified in the section goal check.",
+        "The closing sentence ('By the end of this teardown...') is a generic reader-promise template common to many article intros — it adds length without adding evidence-specific insight.",
+        "The sentence 'That single change signals a deliberate break from one specific type of buyer' stacks two abstract concepts (signals + deliberate break) without plain-language anchoring for the less experienced reader segment."
+      ],
+      "sectionCostUsd": 0.053156999999999996
+    },
+    {
+      "sectionId": "03-visual-timeline",
+      "finalVersion": 1,
+      "finalScore": 81,
+      "passed": true,
+      "loopsUsed": 0,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'That is a meaningful visual shift' — asserts significance without a condition or supporting data point. Rephrase as 'This suggests a shift...' or attach a condition.",
+        "The claim that the 2019 page was 'built to justify the product category' implies intent — this is not traceable to the evidence, which only shows the headline and section headings. Soften to 'the page reads as though...' or 'the copy is consistent with a page that...'",
+        "The statement 'The page looked less like a single tool and more like a suite' implies a strategic intent not confirmed in the evidence. Hedge appropriately."
+      ],
+      "remainingIssueCount": 9,
+      "remainingIssues": [
+        "Section heading says '2019–2025' but the evidence spans Jan 2019 to Jun 2026 — the end date is wrong.",
+        "The 2022 H3 block buries its takeaway: the first sentence describes a visual change, not a finding. The finding ('from explain-and-invite to show-and-assert') appears at the end of the first paragraph.",
+        "The 2022 paragraph runs approximately 65 words — over the 60-word limit for analytical paragraphs.",
+        "The H3 for the 2024–present block does not contain a searchable term (no company name, 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion') — though this penalises searchableHeadings, not the section heading.",
+        "The claim 'That is a meaningful visual shift' is an editorial assertion without a condition attached — no 'if [condition]' qualifier.",
+        "The final test is reasonably specific but not anchored to Unbounce's evidence: it instructs the reader to count capabilities on their own homepage rather than referencing Unbounce's documented shift from one-capability (2019) to five-icon feature row (2024). This weakens specificity.",
+        "The phrase 'built to justify the product category' uses implicit category-strategy jargon without a plain-language definition in the same sentence.",
+        "No H3 is present for the mid-transition Oct 2024 period identified in the evidence — the 'mid-transition' snapshot is folded into the 2024–present block without acknowledgment.",
+        "Word count is approximately 330 words — slightly over the 320-word ceiling."
+      ],
+      "sectionCostUsd": 0.0471606
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "finalVersion": 3,
+      "finalScore": 83,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "'visitors scanning for that specific ROI signal may not find it quickly — and that recognition gap may slow conversion for that audience' — this is a causal outcome claim without supporting data; it needs a condition hedge such as 'if paid search is a primary acquisition channel'",
+        "'This suggests the page is now written for a broader growth team' — the word 'suggests' is appropriately hedged, but 'broader growth team evaluating a multi-product workflow' introduces the concept of multi-product workflow evaluation without a plain-language explanation",
+        "The 'Quick test' final block implies that a zero count of channel/metric words means the founder has made the same trade as Unbounce — this is a causal equivalence claim that overstates; a hedge ('this may indicate') is needed"
+      ],
+      "remainingIssueCount": 12,
+      "remainingIssues": [
+        "Section heading 3 ('What Unbounce's messaging shift may signal about message-match risk') uses the term 'message-match' without a plain-language definition in the same sentence",
+        "Paragraph 3 (H3 block 3, first analytical paragraph) buries its finding: the first sentence is a description ('The page no longer leads with...'), and the actual implication ('recognition gap may slow conversion') appears mid-paragraph rather than in the first two sentences",
+        "H3 block 3 contains two distinct paragraphs — the first about paid search risk, the second about growth teams — making it carry two separate ideas without splitting into sub-blocks, which risks violating the 2-ideas-per-paragraph rule",
+        "The second paragraph of H3 block 3 ('The page is now more consistent with targeting growth teams...') is a generic observation that could appear in a teardown of any SaaS product that expanded its nav; it lacks a specific Unbounce anchor (e.g., quoting 'Smart Traffic' or 'A/B testing' from the nav evidence)",
+        "The phrase 'recognition gap' in H3 block 3 is abstract jargon introduced without definition",
+        "Word count is approximately 360 words — within range but close to the ceiling; acceptable",
+        "The closing sentence of H3 block 2 ('That swap removes a specific, provable metric and replaces it with a capability claim') is analytical but slightly abstract — it does not state the implication for the reader",
+        "H3 block 3 body paragraph 1 has approximately 55 words — just under the 60-word cap — acceptable, but the second paragraph at ~30 words is very short and underdeveloped",
+        "The ## heading contains the company name and messaging-related terms — passes searchable heading check",
+        "No forbidden jargon terms from the penalty list appear in the draft — passes jargon check",
+        "All verbatim website quotes use bold formatting — passes bold quotes check",
+        "The 'Quick test' H3 block is specific and runnable — passes founder takeaway check, though it could be more tightly anchored to Unbounce's exact first-50-word copy rather than asking the reader to apply it generically"
+      ],
+      "sectionCostUsd": 0.20698830000000001
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "finalVersion": 3,
+      "finalScore": 74,
+      "passed": false,
+      "loopsUsed": 2,
+      "riskFlagCount": 4,
+      "riskFlags": [
+        "## heading: 'what that did to the sales motion' — implies a confirmed causal outcome; no data in evidence supports this; risks a -10 evidenceAccuracy penalty; rewrite to 'what these changes signal about' or equivalent.",
+        "H3-2 opening: 'The removals are as telling as the additions' — generic framing, could appear in any teardown; not a hard-cap risk but weakens specificity score.",
+        "Paragraph 3 of H3-1: 'signals the page may no longer be routing every visitor toward one path' — appropriately hedged, low risk.",
+        "The section does not reference any of the 8 navAdded or 8 navRemoved items — if the SECTION GOAL requires nav analysis, this is a structural omission that affects the section goal check and specificity scoring."
+      ],
+      "remainingIssueCount": 13,
+      "remainingIssues": [
+        "Section exceeds the 320-word cap — estimated ~370 words, requiring trimming.",
+        "The term 'discovery-oriented' in H3-2 is used as jargon without an immediate plain-language definition ('they speak to someone who does not yet know what the product does' follows in the next clause but is separated by an em-dash, not a clean inline definition).",
+        "Paragraph 1 of H3-1 is approximately 75 words — exceeds the 60-word cap and triggers a scannability penalty.",
+        "Paragraph 2 of H3-1 is approximately 65 words — exceeds the 60-word cap.",
+        "The opening of H3-2 ('The removals are as telling as the additions') is a generic framing sentence that could appear in any CTA teardown — not anchored to Unbounce-specific evidence in the first sentence.",
+        "H3-2 body paragraph ('What replaced them...') is approximately 40 words — acceptable, but the takeaway is not front-loaded; it reads as a conclusion rather than a finding-first paragraph.",
+        "The Founder Test at the end partially duplicates the takeaway from H3-1 ('can a visitor ready to buy identify their path in under five seconds') — near-verbatim repetition weakens scannability and rhythmic variation.",
+        "The causal phrase 'that shift from six CTAs to ten distinct entry points signals the page may no longer be routing every visitor toward one path' is appropriately hedged with 'may', but the framing 'what that did to the sales motion' in the ## heading implies a confirmed outcome, which is not supported by the evidence.",
+        "The ## heading phrase 'what that did to the sales motion' is a causal/outcome claim without data — the evidence does not confirm what the CTA changes caused or did to any motion.",
+        "The word 'discovery-oriented' is an expert term and appears only once, but 'discovery-stage' appears zero times — however 'discovery-oriented' carries the same jargon risk and is used without a crisp inline definition before the descriptor clause.",
+        "Paragraph 3 of H3-1 (~65 words) also exceeds 60-word limit — third paragraph violation in one H3 block.",
+        "The Founder Test is partially specific (references Unbounce CTAs by name) but the test question ('can a visitor ready to buy identify their path in under five seconds') is the same question already asked in H3-1 paragraph 3 — the final block does not add a new runnable action.",
+        "No H3 for nav changes: navigation items were added and removed (8 each per evidence) but the section contains zero analysis of nav changes, failing part of the stated SECTION GOAL."
+      ],
+      "sectionCostUsd": 0.14107979999999998
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "finalVersion": 3,
+      "finalScore": 87,
+      "passed": true,
+      "loopsUsed": 2,
+      "riskFlagCount": 2,
+      "riskFlags": [
+        "'visitors may scan without committing because no single option visually dominates' — mild causation claim without a condition; needs hedging or an attached 'if' clause.",
+        "'adding those products to the nav likely overpromises the platform experience before the product has earned it' — directional claim not directly traceable to evidence; hedged with 'likely' but the 20% threshold figure is invented, not from the evidence; flag as speculative heuristic and consider labelling it explicitly as a rule-of-thumb."
+      ],
+      "remainingIssueCount": 11,
+      "remainingIssues": [
+        "Section 03 (CTA hierarchy) contains a paragraph exceeding 60 words — the analytical paragraph starting 'Unbounce's original page ran three CTAs' runs approximately 75 words, violating the 60-word paragraph cap for analytical sections.",
+        "The closing sentence of the CTA H3 block ('Demote the secondary ones before running any other test') is strong and concrete, but the analytical paragraph before it ends with a citation sentence that is slightly abstract rather than directly actionable — borderline violation of the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula.",
+        "The phrase 'may lack a single dominant path' in the CTA block is appropriately hedged, but the follow-up claim 'visitors may scan without committing because no single option visually dominates' is a mild causation claim without an attached condition — minor penalty applies.",
+        "The section heading is strong and searchable but slightly long; no hard violation.",
+        "No forbidden jargon terms appear more than once — clean pass on that check.",
+        "All verbatim website quotes are correctly formatted in bold quotes — clean pass.",
+        "Word count is approximately 380 words — at the top edge of the permitted range but within bounds.",
+        "The citation of Wael Aouididi's 'Landing Page Playbook 2026' is used correctly per citation instructions — no invention.",
+        "H3 subheadings are all present — clean pass.",
+        "Each H3 block delivers its practical takeaway within the first two sentences — clean pass.",
+        "The final runnable test ('Screenshot your homepage and count every button. If more than two share the same size and colour...') is specific and anchored to Unbounce's evidence — clean pass."
+      ],
+      "sectionCostUsd": 0.18305880000000002
+    }
+  ],
+  "averageScore": 82.4,
+  "passCount": 3,
+  "failCount": 2,
+  "skippedCount": 1,
+  "totalRewriteLoops": 6,
+  "weakSections": [
+    "05-cta-navigation-evolution"
+  ],
+  "allRiskFlags": [
+    "'signals a deliberate break' — the underlying evidence note reads 'This change can be read as a deliberate update... No confirmed strategy is implied.' The draft asserts intent the evidence explicitly declines to confirm.",
+    "'toward a broader audience evaluating a full conversion platform' — the buyer shift is supported by evidence, but stating it as a direct consequence of the headline change alone is slightly over-causal; navigation and CTA changes are the fuller proof.",
+    "'That is a meaningful visual shift' — asserts significance without a condition or supporting data point. Rephrase as 'This suggests a shift...' or attach a condition.",
+    "The claim that the 2019 page was 'built to justify the product category' implies intent — this is not traceable to the evidence, which only shows the headline and section headings. Soften to 'the page reads as though...' or 'the copy is consistent with a page that...'",
+    "The statement 'The page looked less like a single tool and more like a suite' implies a strategic intent not confirmed in the evidence. Hedge appropriately.",
+    "'visitors scanning for that specific ROI signal may not find it quickly — and that recognition gap may slow conversion for that audience' — this is a causal outcome claim without supporting data; it needs a condition hedge such as 'if paid search is a primary acquisition channel'",
+    "'This suggests the page is now written for a broader growth team' — the word 'suggests' is appropriately hedged, but 'broader growth team evaluating a multi-product workflow' introduces the concept of multi-product workflow evaluation without a plain-language explanation",
+    "The 'Quick test' final block implies that a zero count of channel/metric words means the founder has made the same trade as Unbounce — this is a causal equivalence claim that overstates; a hedge ('this may indicate') is needed",
+    "## heading: 'what that did to the sales motion' — implies a confirmed causal outcome; no data in evidence supports this; risks a -10 evidenceAccuracy penalty; rewrite to 'what these changes signal about' or equivalent.",
+    "H3-2 opening: 'The removals are as telling as the additions' — generic framing, could appear in any teardown; not a hard-cap risk but weakens specificity score.",
+    "Paragraph 3 of H3-1: 'signals the page may no longer be routing every visitor toward one path' — appropriately hedged, low risk.",
+    "The section does not reference any of the 8 navAdded or 8 navRemoved items — if the SECTION GOAL requires nav analysis, this is a structural omission that affects the section goal check and specificity scoring.",
+    "'visitors may scan without committing because no single option visually dominates' — mild causation claim without a condition; needs hedging or an attached 'if' clause.",
+    "'adding those products to the nav likely overpromises the platform experience before the product has earned it' — directional claim not directly traceable to evidence; hedged with 'likely' but the 20% threshold figure is invented, not from the evidence; flag as speculative heuristic and consider labelling it explicitly as a rule-of-thumb."
+  ],
+  "sectionErrors": [],
+  "finalJudgeScore": 72,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Remove the '20% of active accounts' threshold entirely — it is an invented metric with no basis in the evidence; replace with a qualitative observation about cross-product nav signals",
+    "Remove all references to 'Wael Aouididi' and 'Landing Page Playbook 2026' — this named source and publication do not appear in the evidence and constitute an unsupported factual claim; the point can stand without the citation",
+    "The CTA hierarchy subsection claims Unbounce 'grew from three CTAs to six' but the evidence shows 6 CTAs removed and 10 added — the article's count of 'three CTAs originally' and 'six CTAs now' does not match the evidence totals; reconcile or remove the specific count claims",
+    "The business context section asserts 'Unbounce shipped multiple distinct products and then reorganized its homepage' — reframe as an inference ('the nav additions suggest...') rather than a stated fact about internal decisions"
+  ],
+  "seoScore": 83,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "The primary keyword 'Unbounce homepage CRO teardown' appears only in the title and meta description — it should appear naturally at least once in the first 100 words of body text or in the opening H2 to strengthen keyword relevance signals",
+    "Secondary keyword 'SaaS homepage CRO teardown' is mentioned in the intro but not reinforced in the body — consider adding it once more in the 'What SaaS teams can study' section to improve topical authority",
+    "The article references 'Wael Aouididi's Landing Page Playbook 2026' but does not include a source link or publication date context — either add attribution detail or soften the reference to avoid unverified authority claims"
+  ],
+  "articleWordCount": 1911,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[01-intro] Paragraph exceeds 90 words (~102w): \"Unbounce removed the words \"ad spend\" from its…\""
+  ],
+  "overLengthWarning": "Article is 1911 words — exceeds 1900-word hard warning"
+}

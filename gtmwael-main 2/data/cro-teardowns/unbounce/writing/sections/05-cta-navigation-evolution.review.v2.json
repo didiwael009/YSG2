@@ -1,0 +1,46 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Navigation section admits it cannot name specific nav items verbatim — this is an evidence gap that makes the H3 block nearly hollow and fails the section goal of analyzing what navigation items changed.",
+    "The claim 'Unbounce currently shows at least four distinct CTAs above the fold' is a present-state factual assertion not traceable to the provided evidence, which lists added/removed CTAs historically, not a current above-the-fold count.",
+    "The opening paragraph buries its finding: the first sentence states what old CTAs did, the second states what new CTAs do — but no explicit finding sentence leads the paragraph.",
+    "Second H3 block ('How Unbounce's navigation changed') delivers almost no analytical value because it explicitly declines to name nav items, making it a placeholder rather than analysis.",
+    "The phrase 'that spread may signal a shift away from pushing every visitor toward one conversion path' is abstract and vague — it does not name the specific shift or explain what replaced it in concrete terms.",
+    "Paragraph 3 of the first H3 block ('That spread may signal...') ends with an abstract risk statement rather than a concrete or actionable implication.",
+    "Word count is approximately 310 words — within range but tight against the 320-word ceiling.",
+    "The sentence 'Eight navigation items were removed and eight were added across the period studied' is accurate per evidence but is immediately followed by a disclaimer that no specific labels can be named — this contradicts the section goal and should not appear as a sub-section.",
+    "No paragraph in the navigation H3 block delivers a practical takeaway in the first two sentences, because there is no substantive finding to deliver.",
+    "The closing founder test references 'at least four distinct CTAs above the fold' — this is a factual claim about the current live page that is not in the evidence and is not hedged."
+  ],
+  "requiredFixes": [
+    "Remove or collapse the navigation H3 block entirely, or replace it with analysis drawn from the CTA evidence that legitimately reflects navigation-adjacent signals — do not publish a sub-section that admits it cannot name any items.",
+    "Add a hedge to 'Unbounce currently shows at least four distinct CTAs above the fold' — either trace it to evidence or reframe as 'the evidence shows at least four distinct CTAs were added to the page over this period.'",
+    "Rewrite paragraph 3 of the first H3 so its closing sentence is concrete and actionable, not abstract ('the risk is...'). State what the founder should infer or do, not just a floating risk.",
+    "Restructure the first H3 so the finding comes in sentence one — for example: 'Unbounce moved from two high-commitment CTAs to at least ten, each targeting a different type of visitor.' Explanation and examples follow.",
+    "The founder test must not assert a live page state not in evidence. Reframe as: 'The evidence shows Unbounce added CTAs including [list three]. Count how many distinct CTAs your homepage carries and check whether a visitor ready to buy can identify their path in under five seconds.'"
+  ],
+  "riskFlags": [
+    "'Unbounce currently shows at least four distinct CTAs above the fold' — present-state factual claim not in the provided evidence; triggers -5 evidenceAccuracy penalty.",
+    "'One interpretation is that Unbounce no longer needed to walk first-time visitors through basics' — causal inference without a stated condition, triggers -3 evidenceAccuracy penalty.",
+    "'What replaced them...suggests the page may now be serving enterprise prospects and existing customers' — outcome/causation-adjacent claim without data; softened by 'suggests' but still a causal framing.",
+    "The navigation H3 block names the count of changes (8 added, 8 removed) as if it is analysis, but immediately admits no items can be named — this creates a false impression of evidence coverage."
+  ],
+  "seoNotes": [
+    "The ## heading 'How Unbounce's homepage CTAs shifted — from single funnel to product-specific entry points' contains the company name and 'homepage' and 'CTAs' — good for search.",
+    "Both H3 headings contain 'Unbounce' and a topic term ('CTAs', 'navigation') — these will index well as jump-link anchors.",
+    "The phrase 'from one path to many' in the H3 is weak on search value but the H3 also contains 'CTAs' so it passes minimum threshold.",
+    "Consider adding 'landing page' or 'conversion' to the ## heading to capture related queries — currently the heading does not include either term."
+  ],
+  "rewriteInstruction": "The first H3 block is structurally sound but needs its finding promoted to sentence one and its closing paragraph made concrete rather than abstract. The navigation H3 block is the critical failure: it admits it cannot name any nav items, making it analytically empty. The rewriter has two options — either drop the navigation H3 entirely and consolidate CTA analysis into a single, denser section, or replace the navigation content with CTA-evidence signals that legitimately speak to how the page's entry points changed (e.g., the removal of 'SHOW ME HOW' and 'SEE HOW UNBOUNCE CAN HELP ME' in favour of 'Request a demo' and 'Get support' signals a move from self-serve discovery to assisted sales motion). Every paragraph must lead with its finding. The founder test must not assert present-state facts not in the evidence — reframe it around what the evidence shows was added, and make the test instruction specific to Unbounce's documented CTA list. Remove or hedge 'Unbounce currently shows at least four distinct CTAs above the fold.'",
+  "dimensionScores": {
+    "evidenceAccuracy": 13,
+    "specificity": 9,
+    "plainLanguage": 17,
+    "scannability": 11,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

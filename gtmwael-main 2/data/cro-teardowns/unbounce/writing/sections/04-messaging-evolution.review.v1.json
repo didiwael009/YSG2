@@ -1,0 +1,45 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "H3 block 3 ('What the messaging shift signals about the new target buyer') buries its practical takeaway — the finding about message-match risk does not appear until sentence 3, violating the FINDING-FIRST rule.",
+    "The closing paragraph mixes the analytical finding with the founder test, making it a single overly dense block rather than a clean FINDING → EXPLANATION → EXAMPLE → IMPLICATION structure.",
+    "Paragraph 3 under H3 block 3 is approximately 85 words — exceeds the 60-word cap for analytical H3 body paragraphs; this triggers a scannability penalty.",
+    "The phrase 'build-test-optimise workflow' is expert shorthand used without a plain-language definition in the same sentence.",
+    "The H3 heading 'What the messaging shift signals about the new target buyer' is somewhat abstract — it contains no searchable anchor term like 'Unbounce', 'homepage', 'messaging', 'CTA', or 'conversion'.",
+    "The causal statement 'may not immediately recognise the page as solving their specific problem' is acceptable as hedged, but 'removes the message-match between the page and anyone arriving from a high-intent paid search query' is a mechanistic causation claim without an attached condition.",
+    "The founder test is anchored to Unbounce's evidence (counting measurable outcomes above the fold), which is good, but the instruction 'visit your own homepage' is generically worded — it could appear in any teardown without the Unbounce framing that precedes it.",
+    "No paragraph exceeds 90 words so the hard scannability cap is not triggered, but one paragraph (H3-3 body) exceeds 60 words and must be split.",
+    "The phrase 'larger addressable market' in H3-3 is jargon used without a plain-language gloss — it appears once, so no repeat penalty, but needs a definition.",
+    "Section is approximately 360 words — within the 200–380 word limit, no penalty."
+  ],
+  "requiredFixes": [
+    "Split H3-3 into two paragraphs: the first should open with the message-match risk finding (lead with 'Removing ad spend and cost-per-lead from the headline and meta description reduces how quickly a PPC visitor can confirm they are in the right place'), and the second should carry the founder test.",
+    "Add a plain-language gloss for 'build-test-optimise workflow' in H3-3 — e.g., 'a workflow where teams build pages, run tests, and improve results in one tool'.",
+    "Add a condition to the causation claim about message-match: append 'if a significant share of traffic arrives from high-intent paid search queries' so the risk is conditional, not stated as a universal outcome.",
+    "Add a plain-language gloss for 'larger addressable market' — e.g., 'a bigger pool of potential customers'.",
+    "Move the practical takeaway of H3-3 to the first two sentences of that block — currently it is buried in the closing paragraph."
+  ],
+  "riskFlags": [
+    "'removes the message-match between the page and anyone arriving from a high-intent paid search query' — stated as a direct mechanism without a condition; needs 'if [traffic share condition]' attached.",
+    "'That is a larger addressable market. But it may come at a cost' — the cost is plausible but not evidenced in the provided data; the meta description note in the evidence says the change 'may reflect a positioning adjustment or an SEO update', not a confirmed trade-off between audience breadth and conversion relevance.",
+    "The claim that the 2019 H1 was 'aimed at someone managing a paid media budget' is a reasonable inference from 'Ad Spend' language but is stated as fact rather than interpretation — should be hedged with 'suggests' or 'reads as'."
+  ],
+  "seoNotes": [
+    "The ## section heading contains 'H1', 'ROI', 'platform', and 'buyer' — it is searchable but does not contain the company name 'Unbounce' or the explicit terms 'homepage', 'messaging', or 'CTA'; adding 'Unbounce' would strengthen the heading's SEO value.",
+    "The H3 headings use plain descriptive language that could attract featured-snippet traffic for queries like 'Unbounce headline change' or 'Unbounce meta description update'.",
+    "The page title shift from 'Landing Page Software' to 'CRO platform' is correctly identified and documented — this is a strong SEO anchor detail that benefits the article's secondary keyword targets.",
+    "Verbatim quotes from the meta description and page title are bolded correctly throughout — this helps readers and search engines identify the specific changes being analysed."
+  ],
+  "rewriteInstruction": "Keep the structure and evidence — it is strong. Make three targeted fixes. First, split the third H3 block into two paragraphs: open with the message-match risk as the lead finding ('Dropping ad-spend language from the headline and meta description means a PPC visitor scanning the page has fewer signals confirming they are in the right place — if a meaningful share of Unbounce traffic arrives from paid search, that matters'), then carry the broader market point, then close with the founder test as its own standalone paragraph. Second, add immediate plain-language glosses for 'build-test-optimise workflow' and 'larger addressable market' in the same sentence each appears. Third, attach a condition to the causation claim about message-match risk so it reads as conditional, not universal. The opening two H3 blocks are near-publishable — do not restructure them.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 10,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

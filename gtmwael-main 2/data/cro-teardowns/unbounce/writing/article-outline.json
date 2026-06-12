@@ -1,0 +1,111 @@
+{
+  "angle": "Unbounce's homepage evolution is the story of a company that deliberately erased its own category to survive it — abandoning the 'landing page builder' identity it dominated in favour of a multi-product 'Conversion Intelligence Platform' as commoditisation, PE ownership, and a string of acquisitions forced it to justify a platform price tag with platform-scale messaging.",
+  "distinct_from": [
+    "PE-driven platform expansion erases founding category identity"
+  ],
+  "h1": "Unbounce dropped 'ad spend' from its H1 — and that changed everything",
+  "seo_title": "Unbounce Homepage Evolution 2019–2025: CRO Teardown",
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Open with the single most telling signal — Unbounce removing 'ad spend' from its H1 — to frame this as the story of a category-dominant tool that chose to erase its own defining label rather than be commoditised by it. Establish that this teardown tracks a PE-backed expansion arc, not a typical startup growth story, and hook readers with the question of whether abandoning your anchor keyword is a bold category play or a dangerous identity crisis.",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning|category|brand"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Unbounce homepage 2019–2025: from gradient outcome hero to polished platform showcase",
+      "goal": "Walk through the four distinct visual eras — the 2019 centered blue-gradient hero with an outcome-focused headline and zero proof density, the 2022 dark charcoal illustrated hero signalling a brand confidence leap, and the 2024–2025 light full-bleed product mockup layouts that show a platform rather than a single tool. Highlight that visual sophistication tracked the acquisition activity: the design grew more 'platform-like' precisely as Smart Copy, LeadsRx, and the Insightly merger added product nodes to justify the richer UI.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Unbounce's H1 traded a specific ROI claim for a platform promise — and who that reveals as the new buyer",
+      "goal": "Contrast the 2019 H1 'Convert More Leads and Sales From Your Ad Spend' and the section heading 'See How You Can Lower Cost-Per-Lead By Over 70%' with the current 'Launch faster. Convert more.' and 'Convert more customers with one platform' — showing that every quantified, channel-specific claim was replaced by scope language. Explain what the meta description shift from 'Ditch your other landing page software' to 'Grow your leads and sales with Unbounce' reveals: the buyer moved from a PPC manager justifying a tool swap to a growth team evaluating a workflow platform. Note the risk: removing 'ad spend' and 'cost-per-lead' from H1 and meta sacrifices paid search message-match for the promise of a larger addressable market.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Unbounce replaced 'SEE THE PLANS' with product-specific entry points — and what that did to the sales motion",
+      "goal": "Trace the CTA shift from three high-intent, single-funnel actions ('PREVIEW THE LANDING PAGE BUILDER', 'SEE THE PLANS') to a multi-path menu ('Start building for free', 'Start A/B testing', 'Learn about Concierge plans', 'Learn the basics') and connect it to the navigation expansion from a builder-preview link to a structured product suite plus vertical segments (Agencies, Ecommerce, SaaS). Argue that this signals a move from a single conversion funnel serving one buyer type to a routed experience serving PLG self-starters, platform evaluators, and enterprise concierge prospects simultaneously — and flag the trade-off that routing complexity can dilute conversion when no single CTA owns the page.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## How a $38M PE round, three acquisitions, and a merger forced Unbounce to outgrow 'landing page builder'",
+      "goal": "Explain the business forcing functions behind the homepage shifts: the 2020 Crest Rock PE round brought growth mandates that a single-tool identity could not support; the 2021 Snazzy AI acquisition (rebranded Smart Copy) and 'Conversion Intelligence Platform' rebrand created the multi-product rationale; the 2022 LeadsRx acquisition extended the funnel narrative but preceded layoffs that revealed over-expansion; and the 2024 Insightly merger completed the pivot toward a unified sales-and-marketing SMB platform. Connect each event to a specific homepage signal — e.g. AI Copywriting appearing in nav post-Smart Copy acquisition, Concierge CTA appearing as enterprise motion matured.",
+      "word_target": 180,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "business-context-research"
+      ],
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Unbounce's decision to erase its own category label",
+      "goal": "Deliver three specific, runnable patterns: (1) The 'earned erasure' rule — only drop your category keyword from H1 and meta when organic brand search volume already exceeds category keyword volume, otherwise you risk paid Quality Score collapse without the brand equity cushion Unbounce had built over a decade; (2) The acquisition-to-navigation test — each new product acquisition should earn its own nav node only when existing customers are actively using both products together, otherwise the nav signals platform breadth the product experience cannot yet deliver; (3) The dual-funnel CTA structure — when you serve both PLG and sales-assisted buyers, the page needs one dominant free-start CTA and one clearly subordinate enterprise CTA, not four parallel paths that signal indecision about who the primary buyer actually is.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|icp"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Point tool → CRO platform",
+      "note": "H1 removed 'ad spend' anchor; section headings replaced CPL metric with platform-scope language"
+    },
+    {
+      "label": "Target buyer",
+      "value": "PPC manager → growth team",
+      "note": "Vertical nav segments (Agencies, SaaS, Ecommerce) replaced single builder-preview entry point"
+    },
+    {
+      "label": "Sales motion",
+      "value": "Single funnel → routed multi-path",
+      "note": "'SEE THE PLANS' replaced by four parallel CTAs including a Concierge enterprise path"
+    },
+    {
+      "label": "Category play",
+      "value": "Builder → Conversion Intelligence",
+      "note": "2021 'Conversion Intelligence Platform' rebrand coined a new category to escape landing page commoditisation"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T22:06:41.493Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.05481
+}

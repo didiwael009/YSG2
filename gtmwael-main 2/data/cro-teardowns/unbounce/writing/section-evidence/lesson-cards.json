@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Unbounce dropped '70% lower cost-per-lead' and replaced it with 'Launch faster. Convert more.'",
+    "category": "Messaging",
+    "body": "The 2019 headline **\"Convert More Leads and Sales From Your Ad Spend\"** and a section promising **\"Lower Cost-Per-Lead By Over 70%\"** targeted buyers already running paid campaigns and focused on ROI numbers. The current **\"Launch faster. Convert more.\"** is shorter and drops the ad-spend context entirely. This likely broadens the audience beyond PPC marketers to anyone who needs landing pages built quickly."
+  },
+  {
+    "number": "02",
+    "title": "Unbounce removed 'SEE HOW UNBOUNCE CAN HELP ME' and added 'Start building for free' as the primary hero CTA",
+    "category": "Funnel",
+    "body": "The old CTAs — **\"SEE HOW UNBOUNCE CAN HELP ME\"**, **\"SHOW ME HOW\"**, **\"PREVIEW THE LANDING PAGE BUILDER\"** — all pushed visitors toward exploration before committing. The new primary CTA **\"Start building for free\"** skips the discovery step and asks for sign-up immediately. The shift suggests Unbounce may now rely on the product itself to convert, rather than an explanation layer in between."
+  },
+  {
+    "number": "03",
+    "title": "Unbounce added 'Let AI and ML do the heavy lifting' as a section heading — a phrase absent across all pre-2024 snapshots",
+    "category": "Positioning",
+    "body": "Ten new H2s were added across the period, but **\"Let AI and ML do the heavy lifting\"** and **\"Everything you need to A/B test in one place\"** represent the clearest content-architecture signal. Earlier headings like **\"Mobile-responsive landing page, popup, and sticky bar templates\"** described features. The newer headings describe outcomes and automation, suggesting the team now prioritises buyers who want results managed for them, not a toolset to operate manually."
+  },
+  {
+    "number": "04",
+    "title": "Unbounce's page title shift from 'Landing Page Software' to 'CRO platform' spans seven years — that is a category claim, not an update",
+    "category": "Strategy",
+    "body": "In 2019 the page title read **\"Landing Page Builder & Conversion Platform for Marketers | Landing Page Software\"**. By Jun 2026 it reads **\"The Best Landing Page Builder and CRO platform | Unbounce\"**. Dropping 'Software' and leading with 'Best' while adding 'CRO platform' indicates a deliberate move to compete on a broader category label. Taken alongside the headline and H2 changes, the full arc points to repositioning away from a single-tool identity toward a conversion-suite claim."
+  }
+]

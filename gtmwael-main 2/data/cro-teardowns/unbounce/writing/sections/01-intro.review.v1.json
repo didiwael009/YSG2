@@ -1,0 +1,35 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The phrase 'signals a deliberate break' is a mild causation claim — the evidence note on the H1 change explicitly hedges with 'can be read as' and 'No confirmed strategy is implied'. The draft states it as a deliberate act without the same hedge.",
+    "Word count is approximately 105 words, which exceeds the 55–90 word ceiling specified in the section goal check.",
+    "The closing sentence ('By the end of this teardown...') is a generic reader-promise template common to many article intros — it adds length without adding evidence-specific insight.",
+    "The sentence 'That single change signals a deliberate break from one specific type of buyer' stacks two abstract concepts (signals + deliberate break) without plain-language anchoring for the less experienced reader segment."
+  ],
+  "requiredFixes": [
+    "Trim the section to under 90 words. Cut or compress the closing promise sentence ('By the end of this teardown...') — it reads as filler and is the easiest reduction without losing substance.",
+    "Soften 'signals a deliberate break' to 'suggests a shift' or add a hedge like 'appears to signal' to match the evidence note that explicitly says no confirmed strategy is implied.",
+    "Replace 'deliberate break from one specific type of buyer' with plainer phrasing, e.g. 'a move away from performance marketers running paid ads toward a wider audience comparing full conversion platforms'."
+  ],
+  "riskFlags": [
+    "'signals a deliberate break' — the underlying evidence note reads 'This change can be read as a deliberate update... No confirmed strategy is implied.' The draft asserts intent the evidence explicitly declines to confirm.",
+    "'toward a broader audience evaluating a full conversion platform' — the buyer shift is supported by evidence, but stating it as a direct consequence of the headline change alone is slightly over-causal; navigation and CTA changes are the fuller proof."
+  ],
+  "seoNotes": [
+    "The ## heading 'Unbounce Homepage Teardown: From Ad Spend Tool to CRO Platform (2019–2026)' contains the primary keyword 'Unbounce homepage teardown', the date range, and a topic descriptor — strong for search.",
+    "The opening sentence names Unbounce, the specific changed element, and the directional shift — the first sentence answers the likely search query intent well.",
+    "Secondary keywords ('Unbounce CRO platform positioning change', 'Unbounce homepage evolution') are naturally supported by the phrasing in the intro, which helps topical relevance."
+  ],
+  "rewriteInstruction": "Keep the strong opening contrast (old headline vs. new headline in bold quotes) — that is the best entry point and should stay first. Make two targeted changes: (1) soften the causation language around 'deliberate break' to match the evidence hedge ('appears to signal' or 'suggests a shift away from'), and (2) cut the closing reader-promise sentence entirely to bring the word count under 90. If a closing beat is needed, replace it with a single concrete observation — for example, which specific evidence element (navigation overhaul or CTA swap) most reinforces what the headline change alone cannot prove. Do not add new claims not in the evidence.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 14,
+    "plainLanguage": 17,
+    "scannability": 14,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

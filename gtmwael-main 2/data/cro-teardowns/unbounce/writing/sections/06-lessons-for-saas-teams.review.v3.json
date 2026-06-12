@@ -1,0 +1,43 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "Section 03 (CTA hierarchy) contains a paragraph exceeding 60 words — the analytical paragraph starting 'Unbounce's original page ran three CTAs' runs approximately 75 words, violating the 60-word paragraph cap for analytical sections.",
+    "The closing sentence of the CTA H3 block ('Demote the secondary ones before running any other test') is strong and concrete, but the analytical paragraph before it ends with a citation sentence that is slightly abstract rather than directly actionable — borderline violation of the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula.",
+    "The phrase 'may lack a single dominant path' in the CTA block is appropriately hedged, but the follow-up claim 'visitors may scan without committing because no single option visually dominates' is a mild causation claim without an attached condition — minor penalty applies.",
+    "The section heading is strong and searchable but slightly long; no hard violation.",
+    "No forbidden jargon terms appear more than once — clean pass on that check.",
+    "All verbatim website quotes are correctly formatted in bold quotes — clean pass.",
+    "Word count is approximately 380 words — at the top edge of the permitted range but within bounds.",
+    "The citation of Wael Aouididi's 'Landing Page Playbook 2026' is used correctly per citation instructions — no invention.",
+    "H3 subheadings are all present — clean pass.",
+    "Each H3 block delivers its practical takeaway within the first two sentences — clean pass.",
+    "The final runnable test ('Screenshot your homepage and count every button. If more than two share the same size and colour...') is specific and anchored to Unbounce's evidence — clean pass."
+  ],
+  "requiredFixes": [
+    "Split or tighten the paragraph beginning 'Unbounce's original page ran three CTAs' in the CTA H3 block — it runs approximately 75 words, violating the 60-word analytical paragraph cap. Move the citation sentence to its own short paragraph or cut it to bring the parent paragraph under 60 words.",
+    "Attach an explicit condition to the causation claim 'visitors may scan without committing because no single option visually dominates' — e.g. add 'if visitors arrive from a single high-intent source expecting one clear next step' to make the causal logic conditional rather than stated as fact.",
+    "The analytical paragraph in the CTA block ends with the citation sentence rather than a concrete implication — reorder so the citation supports the finding earlier and the paragraph closes with a specific implication tied to Unbounce's evidence (e.g. referencing the jump from three named CTAs to six)."
+  ],
+  "riskFlags": [
+    "'visitors may scan without committing because no single option visually dominates' — mild causation claim without a condition; needs hedging or an attached 'if' clause.",
+    "'adding those products to the nav likely overpromises the platform experience before the product has earned it' — directional claim not directly traceable to evidence; hedged with 'likely' but the 20% threshold figure is invented, not from the evidence; flag as speculative heuristic and consider labelling it explicitly as a rule-of-thumb."
+  ],
+  "seoNotes": [
+    "The ## section heading contains the company name ('Unbounce') and a topic term ('category label') — passes searchableHeadings check, though 'category label' is less commonly searched than 'homepage' or 'positioning'; a marginal improvement would be to include 'homepage' or 'messaging' in the heading.",
+    "The H3 headings are descriptive and keyword-rich ('Product navigation expansion', 'CTA hierarchy', 'Category keyword removal') — these will index well as anchor targets in a long-form article.",
+    "The meta description evidence is quoted directly and correctly in the category keyword H3 — this is good for on-page relevance signals if the article targets 'Unbounce homepage teardown'.",
+    "The section avoids keyword stuffing while maintaining topical density around CRO, landing pages, and conversion — consistent with the primary keyword 'Unbounce homepage teardown'."
+  ],
+  "rewriteInstruction": "The section is close to publishable. Three targeted fixes will push it past 90. First, trim the long paragraph in the CTA H3 block to under 60 words — either cut the citation sentence into a standalone two-line paragraph or remove it entirely and fold the Aouididi reference into the finding sentence earlier. Second, add a conditional clause to the causation claim about visitors scanning without committing ('if visitors arrive expecting a single clear action'). Third, reorder the CTA analytical paragraph so it closes on a concrete Unbounce-specific implication — e.g. noting the jump from three named CTAs to six specific ones — rather than closing on the citation. No structural rewrite is needed; these are sentence-level fixes that will clear the remaining deductions.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 18,
+    "scannability": 11,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

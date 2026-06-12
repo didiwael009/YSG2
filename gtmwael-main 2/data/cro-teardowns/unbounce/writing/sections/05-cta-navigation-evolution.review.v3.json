@@ -1,0 +1,51 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Section exceeds the 320-word cap — estimated ~370 words, requiring trimming.",
+    "The term 'discovery-oriented' in H3-2 is used as jargon without an immediate plain-language definition ('they speak to someone who does not yet know what the product does' follows in the next clause but is separated by an em-dash, not a clean inline definition).",
+    "Paragraph 1 of H3-1 is approximately 75 words — exceeds the 60-word cap and triggers a scannability penalty.",
+    "Paragraph 2 of H3-1 is approximately 65 words — exceeds the 60-word cap.",
+    "The opening of H3-2 ('The removals are as telling as the additions') is a generic framing sentence that could appear in any CTA teardown — not anchored to Unbounce-specific evidence in the first sentence.",
+    "H3-2 body paragraph ('What replaced them...') is approximately 40 words — acceptable, but the takeaway is not front-loaded; it reads as a conclusion rather than a finding-first paragraph.",
+    "The Founder Test at the end partially duplicates the takeaway from H3-1 ('can a visitor ready to buy identify their path in under five seconds') — near-verbatim repetition weakens scannability and rhythmic variation.",
+    "The causal phrase 'that shift from six CTAs to ten distinct entry points signals the page may no longer be routing every visitor toward one path' is appropriately hedged with 'may', but the framing 'what that did to the sales motion' in the ## heading implies a confirmed outcome, which is not supported by the evidence.",
+    "The ## heading phrase 'what that did to the sales motion' is a causal/outcome claim without data — the evidence does not confirm what the CTA changes caused or did to any motion.",
+    "The word 'discovery-oriented' is an expert term and appears only once, but 'discovery-stage' appears zero times — however 'discovery-oriented' carries the same jargon risk and is used without a crisp inline definition before the descriptor clause.",
+    "Paragraph 3 of H3-1 (~65 words) also exceeds 60-word limit — third paragraph violation in one H3 block.",
+    "The Founder Test is partially specific (references Unbounce CTAs by name) but the test question ('can a visitor ready to buy identify their path in under five seconds') is the same question already asked in H3-1 paragraph 3 — the final block does not add a new runnable action.",
+    "No H3 for nav changes: navigation items were added and removed (8 each per evidence) but the section contains zero analysis of nav changes, failing part of the stated SECTION GOAL."
+  ],
+  "requiredFixes": [
+    "Cut section to under 320 words — trim the Founder Test to remove its duplication of the H3-1 closing question, and tighten paragraph 1 of H3-1 to under 55 words.",
+    "Rewrite the ## heading to remove 'what that did to the sales motion' — replace with a hedged, searchable phrase such as 'what Unbounce's CTA changes signal about its sales motion' to avoid an unsupported causation claim while retaining SEO value.",
+    "Add a third H3 block covering Unbounce's navigation changes (8 added, 8 removed per evidence) — the SECTION GOAL explicitly requires nav analysis and its absence is a structural gap.",
+    "Split paragraph 1 of H3-1 into two paragraphs: one covering the six removed CTAs and one covering the pattern they shared. Each should be under 55 words.",
+    "Front-load the finding in H3-2: move the insight ('the page may no longer be written for the visitor who does not yet know what the product does') to the first sentence, before the supporting evidence.",
+    "Make the Founder Test a genuinely new action — for example: 'Open your homepage and count how many CTAs are all-caps commands like 'SEE THE PLANS' versus named-task phrases like 'Start A/B testing' — the ratio tells you whether your page is pushing or guiding.' This is distinct from the five-second test already stated in H3-1.",
+    "Define 'discovery-oriented' inline and immediately — move the plain-language explanation ('someone who does not yet know what the product does') to precede or directly follow the term in the same clause, not after an em-dash."
+  ],
+  "riskFlags": [
+    "## heading: 'what that did to the sales motion' — implies a confirmed causal outcome; no data in evidence supports this; risks a -10 evidenceAccuracy penalty; rewrite to 'what these changes signal about' or equivalent.",
+    "H3-2 opening: 'The removals are as telling as the additions' — generic framing, could appear in any teardown; not a hard-cap risk but weakens specificity score.",
+    "Paragraph 3 of H3-1: 'signals the page may no longer be routing every visitor toward one path' — appropriately hedged, low risk.",
+    "The section does not reference any of the 8 navAdded or 8 navRemoved items — if the SECTION GOAL requires nav analysis, this is a structural omission that affects the section goal check and specificity scoring."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'SEE THE PLANS' (quoted), 'sales motion', and 'product-specific entry points' — these are low search-volume phrases; consider adding 'Unbounce CTA changes' or 'Unbounce homepage CTAs' for primary keyword alignment.",
+    "Both H3 headings reference Unbounce by name and use the word 'CTAs' — this is good for long-tail search.",
+    "The primary keyword 'Unbounce homepage teardown' does not appear in the section body — one natural mention would strengthen on-page keyword density for the target term.",
+    "Bold-quoted CTAs ('Start A/B testing', 'Request a demo', etc.) serve as scannable anchor text and are good for featured-snippet eligibility."
+  ],
+  "rewriteInstruction": "Rewrite this section to fix four structural problems. First, fix the ## heading — replace 'what that did to the sales motion' with 'what Unbounce's CTA changes signal about its sales motion' to remove the unsupported causation claim. Second, add a third H3 block covering Unbounce's navigation changes (8 items added, 8 removed) — without it the section fails its own stated goal. Third, cut every paragraph to under 60 words by splitting H3-1's first paragraph (currently ~75 words) into two: one on the removed CTAs, one on their shared pattern. Fourth, rewrite the Founder Test so it is a genuinely new action distinct from the five-second question already asked in H3-1 — anchor it to Unbounce's specific contrast between all-caps command CTAs ('SEE THE PLANS') and named-task CTAs ('Start A/B testing') so the test is runnable in under five minutes. Throughout, ensure every analytical paragraph leads with its finding in the first sentence, not at the end.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 12,
+    "plainLanguage": 14,
+    "scannability": 6,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

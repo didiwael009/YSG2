@@ -1,0 +1,59 @@
+{
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Centered white headline with blue gradient background, two outlined CTA buttons below, descriptive subtext in center.",
+      "proof_density": "none",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 3,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2022-10",
+      "design_era": "growth",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Dark charcoal hero with yellow illustration of person and marketing interface, white headline left-aligned, two button CTAs with contrasting colors.",
+      "proof_density": "low",
+      "primary_message_type": "feature",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2024-10",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Light background with centered tagline, icon grid below with 5 feature icons in row, large blue CTA button centered, product screenshot mockup visible.",
+      "proof_density": "low",
+      "primary_message_type": "feature",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    },
+    {
+      "month": "2025-07",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Minimal header with centered tagline, icon grid with 5 feature icons, large blue CTA button, product screenshot mockup with platform interface overlays.",
+      "proof_density": "low",
+      "primary_message_type": "feature",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    },
+    {
+      "month": "current-live",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "White header navigation, centered tagline with subtext, icon-based feature row, large blue CTA button, product screenshot with interface mockups and side annotation graphics.",
+      "proof_density": "low",
+      "primary_message_type": "feature",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    }
+  ],
+  "visual_shift_summary": "The design evolved from a simple centered-hero gradient layout (2019) to increasingly complex full-bleed compositions with illustrated elements and product mockups (2022–present), while maintaining consistent feature-first messaging and blue/white color hierarchy. Visual sophistication increased through incorporation of detailed interface screenshots, annotation graphics, and more intricate information hierarchy.",
+  "design_evolution_label": "growth-to-mature-product-showcase",
+  "generatedAt": "2026-06-12T22:05:19.676Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.006004799999999999
+}

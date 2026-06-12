@@ -1,0 +1,133 @@
+{
+  "sectionId": "01-intro",
+  "companyName": "Unbounce",
+  "companyUrl": "https://unbounce.com",
+  "articleTitle": "Unbounce Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Unbounce rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 11,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 11,
+    "h2Added": 10,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 6,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Unbounce homepage teardown",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "11 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "10 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Convert More Leads and Sales From Your Ad Spend",
+      "after": "Launch faster. Convert more.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Ditch your other landing page software. Try the best landing page builder for reducing turnaround time & converting more traffic — no coding needed.",
+      "after": "Grow your leads and sales with Unbounce. Easily create, test, and optimize landing pages, and boost conversions using AI insights—start turning traffic into customers today!",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Landing Page Builder & Conversion Platform for Marketers | Landing Page Software",
+      "after": "The Best Landing Page Builder and CRO platform | Unbounce"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Unbounce shifted from a single-tool, ad-spend ROI pitch aimed at direct-response marketers to a multi-product CRO platform narrative aimed at growth-focused teams, replacing its outcome-specific H1 ('Convert More Leads and Sales From Your Ad Spend') with a speed-plus-conversion promise ('Launch faster. Convert more.') and expanding navigation from builder-preview to a structured product suite including AI Copywriting, A/B Testing, and Smart Traffic.",
+    "old_positioning_frame": "A landing page builder that directly reduces cost-per-lead and maximises return on paid ad spend, positioned as a replacement for inferior landing page software, with no-code accessibility as a key differentiator.",
+    "new_positioning_frame": "An all-in-one CRO platform that combines landing page building, A/B testing, AI/ML optimisation, and integrations, promising speed of launch and conversion growth across the full funnel rather than a single paid-channel use case.",
+    "buyer_shift": "Performance marketers and media buyers optimising a specific paid ad channel → broader growth and marketing teams (agencies, ecommerce, SaaS, small businesses, B2B) seeking an integrated build-test-optimise workflow",
+    "funnel_shift": "Bottom-of-funnel acquisition tool justified by a single ROI metric (cost-per-lead reduction) → mid-to-upper funnel platform evaluation, with educational CTAs ('Learn the basics', 'Explore our resources') and free-start entry alongside enterprise concierge paths",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Convert More Leads and Sales From Your Ad Spend",
+        "new": "Launch faster. Convert more.",
+        "meaning": "Dropping the explicit 'ad spend' anchor suggests Unbounce may be deliberately de-coupling its identity from paid media ROI, signalling a broader audience targeting beyond PPC-focused buyers. The shorter, dual-benefit structure points to a platform-level promise rather than a channel-specific outcome."
+      },
+      {
+        "element": "Navigation",
+        "old": "Preview the Builder · en · de · es · br · Home · Features · Templates",
+        "new": "Products · Landing pages · A/B testing · Smart Traffic · AI Copywriting · Integrations · Templates · Agencies · Ecommerce · SaaS · Small businesses · B2B marketing · Service specialists",
+        "meaning": "Adding discrete product nodes (A/B Testing, Smart Traffic, AI Copywriting) alongside vertical audience segments (Agencies, Ecommerce, SaaS) is consistent with repositioning from a single builder tool to a multi-product platform with segment-specific value propositions. The removal of language selectors may also indicate a narrowing of international self-serve focus."
+      },
+      {
+        "element": "CTA",
+        "old": "PREVIEW THE LANDING PAGE BUILDER · SEE HOW UNBOUNCE CAN HELP ME · SEE THE PLANS",
+        "new": "Start building for free · Start A/B testing · Learn about Concierge plans · Learn the basics · Explore our resources · Get support",
+        "meaning": "Replacing direct-intent CTAs ('SEE THE PLANS') with product-specific entry points ('Start A/B testing') and educational paths ('Learn the basics', 'Explore our resources') suggests the page may now be serving buyers at earlier stages of platform evaluation, and that Unbounce is attempting to route different buyer types into different product experiences rather than funnelling everyone toward a single conversion."
+      },
+      {
+        "element": "Section headings",
+        "old": "See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages · Over 15,000 brands drive value with Unbounce.",
+        "new": "Convert more customers with one platform · Everything you need to A/B test in one place · Let AI and ML do the heavy lifting · Seamlessly integrate with your stack · Scale your marketing without limits",
+        "meaning": "Removing the quantified cost-per-lead claim in favour of platform-scope headings ('one platform', 'your stack', 'without limits') is consistent with a shift away from a single-metric ROI argument toward a broader capability narrative that may appeal to buyers evaluating a full martech workflow rather than a point solution."
+      },
+      {
+        "element": "Meta description",
+        "old": "Ditch your other landing page software. Try the best landing page builder for reducing turnaround time & converting more traffic — no coding needed.",
+        "new": "Grow your leads and sales with Unbounce. Easily create, test, and optimize landing pages, and boost conversions using AI insights—start turning traffic into customers today!",
+        "meaning": "The removal of the 'ditch your other software' competitor-displacement framing and the addition of 'AI insights' and 'test, and optimize' language suggests Unbounce may be moving away from direct substitution messaging toward category expansion, potentially indicating that AI-assisted CRO is now a primary differentiator rather than ease-of-switching."
+      }
+    ],
+    "copy_this_if": "Your brand is already the default answer when someone searches for your core feature (e.g. 'landing page builder'), and you have shipped at least two distinct products or feature modules that existing customers use together — meaning the platform story is grounded in real usage, not aspiration.",
+    "do_not_copy_this_if": "Your homepage is still responsible for explaining what your product does at a basic level, or your primary acquisition channel is paid search on category-intent keywords — removing the explicit category descriptor and channel-specific ROI claim from H1 and meta description risks losing Quality Score alignment and ad-to-page message match.",
+    "safer_version_for_early_stage_saas": "Keep your channel-specific ROI claim in the H1 but add a single secondary section heading that introduces one adjacent capability (e.g. 'Now with built-in A/B testing') with its own CTA. This tests whether platform-scope messaging lifts engagement without abandoning the anchor that currently converts paid traffic.",
+    "risk_if_copied": "A company without Unbounce's brand recognition that removes specific outcome language ('lower cost-per-lead', 'from your ad spend') in favour of broad platform claims ('one platform', 'without limits') may see paid search Quality Scores drop and bounce rates increase, because visitors arriving from high-intent channel keywords will not immediately recognise the page as relevant to their specific problem.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T22:04:44.254Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.027996
+  },
+  "seo-intent": {
+    "primary_keyword": "Unbounce homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS growth marketer, CRO specialist, or product marketer at a mid-market company who is evaluating whether to adopt a multi-product CRO platform (vs. single-tool builder) and wants to understand how Unbounce repositioned itself to compete in the crowded conversion optimization space. They're looking for signals about market positioning shifts and whether the platform's new narrative aligns with their team's needs.",
+    "recommended_h1_format": "How Unbounce Shifted From Ad ROI Tool to CRO Platform: A Homepage Teardown (2019–2026)",
+    "secondary_keywords": [
+      "Unbounce CRO platform positioning change",
+      "Unbounce homepage evolution landing page builder",
+      "how Unbounce repositioned its product messaging",
+      "Unbounce multi-product strategy homepage analysis",
+      "Unbounce conversion optimization platform rebranding"
+    ],
+    "content_angle": "Focus on the *strategic why* behind the shift from outcome-specific ROI messaging to speed-plus-conversion positioning. The searcher wants to understand: (1) why Unbounce moved away from the direct-response/ad-spend audience, (2) how the new multi-product narrative (AI, A/B testing, Smart Traffic) changes who they're selling to, and (3) what this signals about the broader market demand for integrated CRO platforms vs. point solutions. Show how navigation restructuring (adding vertical segments like SaaS, Ecommerce) reflects a deliberate move toward segment-specific growth plays rather than broad DRM appeal.",
+    "what_the_searcher_wants": "Evidence of a calculated competitive repositioning—not just a redesign—so they can decide if Unbounce's new platform-first, speed-first messaging is credible or reactive, and whether it signals market maturity in CRO.",
+    "what_to_avoid": "Don't treat this as a generic 'before and after' visual redesign teardown. Avoid focusing on design aesthetics, color changes, or layout improvements without connecting them to the strategic shift. Don't assume the searcher cares about Unbounce specifically—they care about what this repositioning reveals about the CRO platform market. Avoid listing changes without explaining the *job-to-be-done* behind each narrative shift (e.g., why 'launch faster' matters more than 'lower cost-per-lead' in 2026). Don't miss the significance of moving from outcome metrics ('70% CPL reduction') to capability statements ('AI and ML')—this signals a shift from proof-based to trust-based selling.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T22:05:02.161Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0036296
+  }
+}

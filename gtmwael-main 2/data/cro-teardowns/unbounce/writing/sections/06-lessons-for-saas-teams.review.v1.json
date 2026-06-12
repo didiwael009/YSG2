@@ -1,0 +1,48 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section heading is 'What SaaS teams can study from Unbounce's decision to erase its own category label' — while it contains 'Unbounce', the phrase 'erase its own category label' is borderline clever-only and lacks a clear searchable topic term like 'homepage', 'positioning', 'messaging', or 'CTA'. Minor penalty applies.",
+    "H3 heading 'The earned erasure rule — Unbounce dropped landing page builder from H1 and meta only after a decade of brand equity' contains a causation-adjacent claim ('only after a decade of brand equity') that implies a proven causal timeline not directly traceable to the evidence. The evidence shows the phrase disappeared; it does not confirm the mechanism or decade-long timeline.",
+    "Claim 'your ad costs may rise' in the first H3 block is a causal outcome claim without a hedging condition beyond 'may'. The rubric requires -3 per causal statement without an attached condition. The statement lacks a specific 'if [condition]' structure tight enough to avoid penalty.",
+    "Citation to 'Moore's whole-product model in Crossing the Chasm' is used but the evidence only suggests it as an option — the draft deploys it as though it directly explains Unbounce's nav decision. The connection is asserted, not demonstrated from the evidence.",
+    "Claim 'The Landing Page Playbook benchmark data from Wael Aouididi shows conversion rates drop when pages offer more than two equally weighted CTAs' is an outcome claim ('conversion rates drop') traceable to a permitted citation source (SRC-008), but it is presented as a direct fact rather than hedged with 'according to' or 'reportedly', which creates a minor evidence-accuracy risk.",
+    "Third H3 block states 'Six parallel paths signal uncertainty about who the primary buyer is' — this is a causal interpretation not directly stated in the evidence. The evidence notes the CTA change and describes routing different buyer types, but 'uncertainty' is an editorial inference.",
+    "Paragraph in H3 block 2 ('The risk: navigation signals a promise...') is approximately 62 words — marginally over the 60-word cap. Scannability penalty applies.",
+    "Word count is approximately 460–475 words, exceeding the 220–380 word maximum stated in required checks.",
+    "The phrase 'brand equity' is used without an immediate plain-language definition — it is an expert-adjacent term. Minor plain-language penalty.",
+    "The opening of H3 block 1 leads with evidence (the old meta description quote) before stating the finding. The FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula is not followed in the first paragraph — the finding ('earned erasure') is implied but not stated explicitly in the first two sentences."
+  ],
+  "requiredFixes": [
+    "Cut the section to under 380 words. Each H3 block should be approximately 100–110 words. Remove the Moore citation paragraph or compress it to one sentence. The current draft is ~470 words — roughly 25% over the cap.",
+    "Rewrite the opening of H3 block 1 to state the finding in the first sentence, not the quote. Example opening: 'Unbounce erased its own category keyword — landing page builder — from both H1 and meta description. It could do this because the brand already ranked without it.' Then introduce the quote as the example.",
+    "Hedge the 'ad costs may rise' statement with an explicit condition: e.g. 'if your brand does not yet appear on page one organically for your category keyword, removing that keyword from H1 risks lowering your paid search Quality Score and raising cost-per-click.'",
+    "Remove or hedge the 'six parallel paths signal uncertainty about who the primary buyer is' claim — it is an editorial inference. Rewrite as: 'Six CTAs with no clear visual hierarchy may leave visitors without an obvious next step' and attach the Aouididi benchmark as supporting evidence with 'according to' hedging.",
+    "Hedge the Aouididi benchmark claim: change 'shows conversion rates drop' to 'suggests conversion rates tend to fall' or prefix with 'According to the Landing Page Playbook benchmark data from Wael Aouididi,'.",
+    "Trim the H3 block 2 paragraph starting 'The risk: navigation signals a promise...' to under 60 words to comply with the scannability paragraph-length rule.",
+    "Add a searchable topic term to the ## section heading. Suggested revision: 'What SaaS teams can study from Unbounce's homepage positioning overhaul' — this adds 'homepage' and 'positioning' as searchable terms."
+  ],
+  "riskFlags": [
+    "'Only after a decade of brand equity' — the evidence shows the label disappeared; it does not confirm Unbounce spent a decade building brand equity before making this change. This timeline is not traceable to the provided evidence.",
+    "'Your ad costs may rise' — outcome claim. Needs an explicit if-condition and hedge language.",
+    "'Six parallel paths signal uncertainty about who the primary buyer is' — editorial inference, not stated in evidence.",
+    "'Conversion rates drop when pages offer more than two equally weighted CTAs' — benchmark cited as direct fact; should be hedged with attribution language."
+  ],
+  "seoNotes": [
+    "The ## heading currently lacks a clean searchable topic term ('homepage', 'positioning', 'CTA', 'conversion', 'messaging'). Adding one would improve both SEO and heading clarity.",
+    "H3 headings are descriptive and keyword-rich — 'A/B Testing', 'Smart Traffic', 'Unbounce' all appear, which is positive for long-tail search.",
+    "The section uses verbatim CTAs and H1 text from Unbounce in bold quotes throughout, which is good for on-page semantic relevance and quoted-phrase indexing.",
+    "Positive: the final founder test in each H3 block is actionable and specific — these create strong 'how to audit your homepage CTAs' type semantic signals useful for informational search intent."
+  ],
+  "rewriteInstruction": "Cut the section to under 380 words before any other fix — approximately 90 words per H3 block plus a minimal intro. Then restructure each H3 block to lead with the finding in sentence one (not the quote), use the quote as the example in sentence two or three, and close with the specific test. Hedge all outcome claims with explicit if-conditions ('if your brand does not yet rank organically...') and add 'according to' before the Aouididi benchmark stat. Remove the editorial inference that six CTAs signal 'uncertainty' — replace with a neutral observation about missing visual hierarchy. Revise the ## heading to include 'homepage' or 'positioning' as a searchable term alongside the Unbounce name.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 13,
+    "plainLanguage": 16,
+    "scannability": 10,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

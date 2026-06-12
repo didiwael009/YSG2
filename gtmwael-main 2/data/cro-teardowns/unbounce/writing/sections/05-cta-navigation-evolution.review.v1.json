@@ -1,0 +1,49 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "CAUSATION CLAIM (evidenceAccuracy): 'That spread signals a shift away from pushing every visitor toward a single conversion' is a causation-adjacent claim without a stated condition — no hedge like 'if this interpretation is correct' or 'which may suggest'.",
+    "CAUSATION CLAIM (evidenceAccuracy): 'The trade-off is real: when no single CTA owns the page, visitors with high intent may not self-identify quickly enough — and leave before converting' is an outcome claim with no supporting data. This risks triggering the hard cap for conversion outcome claims without data.",
+    "CAUSATION CLAIM (evidenceAccuracy): 'The removal of gallery and tutorial-style links suggests Unbounce expects visitors to arrive already knowing what a landing page builder does' — causal inference with no condition attached.",
+    "EVIDENCE ACCURACY: The nav section states 'The eight items removed — including \"Learn More\" and \"Browse Our Template Gallery\"' but the navRemoved array is not provided in the evidence; only ctaRemoved contains 'Learn More' and 'Browse Our Template Gallery'. Attributing these as navigation removals rather than CTA removals is not traceable to the evidence. This triggers a -8 penalty per the rubric for named items not appearing verbatim in the correct array.",
+    "EVIDENCE ACCURACY: 'Eight items were added, including \"Request a demo\" and \"Get support\"' — these items appear in ctaAdded, not navAdded. The navAdded array is listed in dataQuality as having 8 items but the actual navAdded values are not provided. Attributing these CTAs as navigation items is not verifiable and may be incorrect.",
+    "PARAGRAPH LENGTH (scannability): The first analytical paragraph under H3-1 is approximately 85 words — exceeds the 60-word limit. This triggers a -4 penalty.",
+    "WORD COUNT: Section is approximately 310 words — within the 180–320 range, but close to the ceiling.",
+    "PLAIN LANGUAGE: The phrase 'enterprise evaluator' is used without a plain-language definition in the same sentence.",
+    "PLAIN LANGUAGE: The phrase 'self-identify' in 'visitors with high intent may not self-identify quickly enough' is abstract and unexplained — readers new to CRO will not know what action this means.",
+    "FOUNDER TAKEAWAY: The final test is reasonably specific and anchored to the company's evidence pattern, but 'ask which buyer each one serves' is slightly abstract — it could be made more concrete by referencing Unbounce's own CTA list as the benchmark.",
+    "RHYTHM: Several sentences in the first H3 block are similar in length and structure ('X points to Y. The new set assumes Z.'), reducing rhythmic variety.",
+    "SEARCHABLE HEADING: The ## heading contains the company name and 'sales motion' but lacks the terms 'CTA', 'navigation', 'homepage', or 'conversion' — partially searchable but weaker than optimal.",
+    "BOLD QUOTES: All verbatim CTAs and nav items appear to be in bold quotes — no violation detected here.",
+    "H3 SUBHEADINGS: Both required H3 blocks are present. No missing subheadings."
+  ],
+  "requiredFixes": [
+    "Fix evidence mismatch: 'Learn More' and 'Browse Our Template Gallery' appear in ctaRemoved, not navRemoved. Do not describe them as navigation removals. Either correct the array attribution or remove these examples from the navigation paragraph. Similarly, 'Request a demo' and 'Get support' appear in ctaAdded — verify they also appear in navAdded before calling them navigation items.",
+    "Add a condition to every causal claim. Replace 'That spread signals a shift away from pushing every visitor toward a single conversion' with hedged language such as 'That spread may signal...' or 'If this pattern holds, it suggests...'. Apply the same hedge to the gallery/tutorial-link inference.",
+    "Remove or reframe the conversion outcome claim: 'visitors with high intent may not self-identify quickly enough — and leave before converting' is an outcome claim with no data. Either delete it or reframe as a hypothesis: 'the risk, untested here, is that a visitor ready to buy has no obvious fast path.'",
+    "Break the first H3 paragraph into two. It currently runs ~85 words and tracks two ideas simultaneously (what old CTAs assumed vs. what new CTAs assume). Split at 'The new set assumes something different' — make that a new paragraph.",
+    "Define 'enterprise evaluator' in plain language on first use, e.g. 'enterprise evaluator (a buyer at a large company who needs approval from multiple stakeholders before signing up)'.",
+    "Make the ## section heading more searchable. Add 'CTA' or 'navigation' or 'homepage' into the heading, e.g. 'How Unbounce replaced its homepage CTAs — from single funnel to product-specific entry points'."
+  ],
+  "riskFlags": [
+    "'visitors with high intent may not self-identify quickly enough — and leave before converting' — conversion outcome claim with zero supporting data. Risks triggering the hard cap at 60.",
+    "'The removal of gallery and tutorial-style links suggests Unbounce expects visitors to arrive already knowing what a landing page builder does' — causal inference stated without a condition. No evidence confirms what Unbounce expects.",
+    "'Learn More' and 'Browse Our Template Gallery' attributed to navRemoved — these appear in ctaRemoved in the evidence. This is a factual misattribution."
+  ],
+  "seoNotes": [
+    "The ## heading includes the company name ('Unbounce') which is good for the primary keyword, but lacks 'CTA', 'navigation', or 'homepage' — terms likely searched by the target audience. Recommend adding at least one.",
+    "Both H3 headings include 'Unbounce' and topic terms ('CTAs', 'navigation') — these are well-optimised for secondary keyword targeting within the section.",
+    "The section does not include any internal anchor opportunities (e.g. linking to a related section on messaging or headline changes) — a missed SEO interlinking signal."
+  ],
+  "rewriteInstruction": "Rewrite this section with three priorities. First, fix the evidence attribution errors: 'Learn More' and 'Browse Our Template Gallery' are in ctaRemoved, not navRemoved — do not present them as navigation items unless you can confirm they also appear in navAdded/navRemoved. Second, add conditions to every causal claim — replace declarative cause-and-effect sentences ('this signals', 'this suggests Unbounce expects') with hedged language ('this may suggest', 'one interpretation is'). Third, break the first H3 paragraph into two shorter paragraphs of no more than 55 words each, each tracking only one idea. The opening of each new paragraph should state its finding first, not build to it. Keep the founder test at the end but make the benchmark more concrete — reference the number of Unbounce CTAs above the fold as a specific comparison point rather than leaving the reader to count in the abstract.",
+  "dimensionScores": {
+    "evidenceAccuracy": 9,
+    "specificity": 12,
+    "plainLanguage": 15,
+    "scannability": 8,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

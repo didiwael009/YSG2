@@ -1,0 +1,49 @@
+{
+  "seoScore": 83,
+  "pass": true,
+  "titleScore": 12,
+  "metaDescriptionScore": 14,
+  "headingStructureScore": 13,
+  "searchIntentScore": 18,
+  "keywordUseScore": 8,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
+  "internalLinkingSuggestions": [
+    "Link from 'SaaS homepage CRO teardown' mention to other SaaS homepage teardown articles in the blog archive",
+    "Link from 'A/B testing' discussion to internal guide on A/B test setup or interpretation",
+    "Link from 'paid search Quality Score' mention to internal resource on SaaS paid marketing or Google Ads fundamentals",
+    "Link from 'category ownership' discussion to broader article on SaaS positioning or category strategy",
+    "Link from 'cross-product usage analytics' mention to internal guide on product analytics setup for SaaS teams"
+  ],
+  "faqSuggestions": [
+    "When should a SaaS company remove its category keyword from its homepage headline?",
+    "What does Unbounce's shift from 'landing page builder' to 'platform' messaging tell us about their target buyer change?",
+    "How many CTAs should a SaaS homepage have, and how should they be prioritized?",
+    "What's the relationship between organic ranking position and homepage keyword strategy?",
+    "How can SaaS teams test whether their product integration story is ready to feature in navigation?",
+    "Why did Unbounce replace specific ROI claims (like '70% cost-per-lead reduction') with platform promises?"
+  ],
+  "contentGapNotes": [
+    "The article does not address what conversion rate or traffic changes Unbounce may have observed after these redesigns (though hard rules prevent claiming causation, a note on whether the company disclosed performance impact would strengthen credibility)",
+    "No discussion of how Unbounce's target buyer persona shifted in documented interviews, customer research, or earnings calls — the inference is drawn from page changes alone",
+    "Limited coverage of whether the removal of specific ROI language ('70% cost-per-lead reduction') hurt or helped visitor-to-trial conversion in paid search channels where performance metrics drive decision-making",
+    "The article does not explore how Unbounce's navigation expansion to vertical segments (Agencies, Ecommerce, SaaS) may have affected SEO or discoverability for those buyer personas",
+    "No analysis of how the hero layout shift (from centered gradient to dark full-bleed with product mockup) may have affected mobile conversion or mobile-first indexing signals"
+  ],
+  "requiredFixes": [
+    "The primary keyword 'Unbounce homepage CRO teardown' appears only in the title and meta description — it should appear naturally at least once in the first 100 words of body text or in the opening H2 to strengthen keyword relevance signals",
+    "Secondary keyword 'SaaS homepage CRO teardown' is mentioned in the intro but not reinforced in the body — consider adding it once more in the 'What SaaS teams can study' section to improve topical authority",
+    "The article references 'Wael Aouididi's Landing Page Playbook 2026' but does not include a source link or publication date context — either add attribution detail or soften the reference to avoid unverified authority claims"
+  ],
+  "optionalImprovements": [
+    "Add a comparison table showing 2019 vs. 2024 headline, CTA count, and nav structure side-by-side for faster scanning",
+    "Include a screenshot or image carousel showing the three key homepage states (2019, 2022, 2024) — currently relying entirely on text description of visual changes",
+    "Expand the 'Quick test' and 'Founder test' callouts into a short checklist section at the end of the article to improve click-through to related tools or resources",
+    "Add a brief 'What this means for your SEO' note to the category keyword removal section — the current advice on Quality Score is sound, but tying it back to organic visibility would clarify why the trade-off matters beyond paid search",
+    "Consider adding a short paragraph on whether Unbounce's removal of specific metrics ('70% CPL reduction') signals a shift away from direct-response buyers toward brand-aware or bottom-funnel evaluators — the data supports the inference but explicit buyer stage language would sharpen the insight",
+    "Include a note on whether Unbounce's expanded product navigation (A/B testing, Smart Traffic, AI Copywriting) appears in the homepage nav for all visitor segments or only for logged-in users — this affects the SEO weight of those keywords"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.007592800000000066,
+  "generatedAt": "2026-06-12T22:11:55.031Z"
+}

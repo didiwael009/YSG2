@@ -1,0 +1,47 @@
+{
+  "score": 83,
+  "pass": false,
+  "issues": [
+    "Section heading 3 ('What Unbounce's messaging shift may signal about message-match risk') uses the term 'message-match' without a plain-language definition in the same sentence",
+    "Paragraph 3 (H3 block 3, first analytical paragraph) buries its finding: the first sentence is a description ('The page no longer leads with...'), and the actual implication ('recognition gap may slow conversion') appears mid-paragraph rather than in the first two sentences",
+    "H3 block 3 contains two distinct paragraphs — the first about paid search risk, the second about growth teams — making it carry two separate ideas without splitting into sub-blocks, which risks violating the 2-ideas-per-paragraph rule",
+    "The second paragraph of H3 block 3 ('The page is now more consistent with targeting growth teams...') is a generic observation that could appear in a teardown of any SaaS product that expanded its nav; it lacks a specific Unbounce anchor (e.g., quoting 'Smart Traffic' or 'A/B testing' from the nav evidence)",
+    "The phrase 'recognition gap' in H3 block 3 is abstract jargon introduced without definition",
+    "Word count is approximately 360 words — within range but close to the ceiling; acceptable",
+    "The closing sentence of H3 block 2 ('That swap removes a specific, provable metric and replaces it with a capability claim') is analytical but slightly abstract — it does not state the implication for the reader",
+    "H3 block 3 body paragraph 1 has approximately 55 words — just under the 60-word cap — acceptable, but the second paragraph at ~30 words is very short and underdeveloped",
+    "The ## heading contains the company name and messaging-related terms — passes searchable heading check",
+    "No forbidden jargon terms from the penalty list appear in the draft — passes jargon check",
+    "All verbatim website quotes use bold formatting — passes bold quotes check",
+    "The 'Quick test' H3 block is specific and runnable — passes founder takeaway check, though it could be more tightly anchored to Unbounce's exact first-50-word copy rather than asking the reader to apply it generically"
+  ],
+  "requiredFixes": [
+    "H3 block 3, first analytical paragraph: move the core finding ('visitors scanning for a specific ROI signal may not find it quickly') to the FIRST sentence, then follow with the explanation and the paid-search-traffic condition",
+    "Define 'message-match' inline at first use in the H3 heading or opening sentence — e.g., 'message-match (whether the page wording matches what a visitor just searched for)'",
+    "Replace the vague second paragraph of H3 block 3 with a specific Unbounce-anchored sentence — quote at least one nav item added in evidence (e.g., 'A/B testing' or 'Smart Traffic') to ground the 'integrated tools' claim in this company's actual changes",
+    "Change the closing sentence of H3 block 2 from the abstract observation ('That swap removes a specific, provable metric') to a concrete implication — e.g., state what a visitor searching for a CPL-reduction tool will or will not find on the current page",
+    "Remove or define 'recognition gap' — replace with plain language such as 'the visitor won't immediately see the specific outcome they came looking for'"
+  ],
+  "riskFlags": [
+    "'visitors scanning for that specific ROI signal may not find it quickly — and that recognition gap may slow conversion for that audience' — this is a causal outcome claim without supporting data; it needs a condition hedge such as 'if paid search is a primary acquisition channel'",
+    "'This suggests the page is now written for a broader growth team' — the word 'suggests' is appropriately hedged, but 'broader growth team evaluating a multi-product workflow' introduces the concept of multi-product workflow evaluation without a plain-language explanation",
+    "The 'Quick test' final block implies that a zero count of channel/metric words means the founder has made the same trade as Unbounce — this is a causal equivalence claim that overstates; a hedge ('this may indicate') is needed"
+  ],
+  "seoNotes": [
+    "The ## heading is strong for SEO: it contains the company name, an implied messaging topic, and a buyer-signal phrase ('new buyer') that matches informational search intent",
+    "Each H3 subheading contains 'Unbounce' and a topic term ('headline shift', 'meta description', 'messaging shift') — good keyword distribution across subheadings for featured-snippet targeting",
+    "The section does not mention the page title change (from 'Landing Page Builder & Conversion Platform for Marketers | Landing Page Software' to 'The Best Landing Page Builder and CRO platform | Unbounce') — this is in the evidence and relevant to SEO readers; a single sentence noting the title's addition of 'CRO platform' would strengthen the SEO angle",
+    "Secondary keyword 'Unbounce CRO platform positioning change' is not picked up anywhere in the H3 text — consider working 'CRO platform' into at least one subheading"
+  ],
+  "rewriteInstruction": "Keep the overall structure (four H3 blocks) and all verbatim quotes — they are accurate and well-formatted. Make four targeted changes. First, in H3 block 3, flip the paragraph so the finding leads: start with what the visitor won't find (the ROI signal), then explain the condition (if paid search drives traffic on category-intent queries), then name the risk. Second, define 'message-match' in plain language at first use — add a parenthetical like '(whether the page words match what a visitor just searched for)'. Third, replace the vague second paragraph of H3 block 3 with a sentence that quotes at least one specific nav item from the evidence — 'Smart Traffic', 'A/B testing', or 'AI Copywriting' — to anchor the 'integrated tools' claim to this company's actual changes rather than generic SaaS repositioning. Fourth, close H3 block 2 with a concrete implication rather than the abstract observation about 'removing a metric' — tell the reader what a CPL-focused visitor will experience on the current page. The Quick test is strong; just add a hedge word ('may indicate') before the equivalence claim at the end.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 12,
+    "plainLanguage": 15,
+    "scannability": 13,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

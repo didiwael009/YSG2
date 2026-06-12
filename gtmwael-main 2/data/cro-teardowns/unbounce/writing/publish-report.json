@@ -1,0 +1,37 @@
+{
+  "publishedAt": "2026-06-12T22:13:55.826Z",
+  "slug": "unbounce",
+  "dryRun": false,
+  "forced": true,
+  "qualityGates": {
+    "finalJudgePass": false,
+    "finalJudgeScore": 72,
+    "seoPass": true,
+    "seoScore": 83,
+    "unsupportedClaims": [
+      "'fewer than 20% of active accounts use two products together in the same month' — no such threshold exists in the evidence",
+      "'This is consistent with Wael Aouididi's framework in the Landing Page Playbook 2026' — named source and publication not in the evidence",
+      "'If fewer than 20% of active accounts use two products together in the same month' — invented metric threshold not in the evidence",
+      "'visual sophistication as a 3 out of 5' — the evidence states visual_sophistication: 3, but the article attributes this to an external scoring frame without noting it is the evidence's own label; however, '3 out of 5' phrasing is a direct citation so borderline; scored as minor"
+    ]
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [
+    "Final judge FAIL — score 72/100 (need ≥ 90)",
+    "4 unsupported claim(s): 'fewer than 20% of active accounts use two products together in the same month' — no such threshold exists in the evidence; 'This is consistent with Wael Aouididi's framework in the Landing Page Playbook 2026' — named source and publication not in the evidence"
+  ],
+  "articlePath": "src/content/cro-teardown/articles/unbounce.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/cro-teardowns/hootsuite",
+    "/cro-teardowns/expensya",
+    "/cro-teardowns/buffer"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

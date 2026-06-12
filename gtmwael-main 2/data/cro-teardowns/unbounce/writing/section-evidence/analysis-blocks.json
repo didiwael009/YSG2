@@ -1,0 +1,39 @@
+[
+  {
+    "id": "analysis-2019-01",
+    "label": "Jan 2019 — original state",
+    "period": "Jan 2019",
+    "screenshotPath": "/cro-teardowns/unbounce/selected/2019-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Convert More Leads and Sales From Your Ad Spend\" — direct product statement.",
+      "Visible section headings include: \"See How You Can Lower Cost-Per-Lead By Over 70%With Landing Pages\", \"Over 15,000 brands drive value with Unbounce.\", \"Mobile-responsive landing page, popup, and sticky bar templates\".",
+      "Navigation includes: \"Log In\", \"Preview the Builder\", \"en\", \"de\" — product category framing.",
+      "Section headings later removed include: \"See How You Can Lower Cost-Per-Lead By Over 70%With Landing Pages\" and \"Over 15,000 brands drive value with Unbounce.\"."
+    ]
+  },
+  {
+    "id": "analysis-2024-10",
+    "label": "Oct 2024 — mid-transition",
+    "period": "Oct 2024",
+    "screenshotPath": "/cro-teardowns/unbounce/selected/2024-10.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: 94.6% — a moderate visual change.",
+      "New section headings appearing: \"Launch faster. Convert more.\", \"Convert more customers with one platform\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/unbounce/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Launch faster. Convert more.\" — updated value proposition.",
+      "New section headings include: \"Convert more customers with one platform\", \"Launch tailored pages in a few clicks\", \"Everything you need to A/B test in one place\".",
+      "CTAs no longer present include: \"Learn More\", \"PREVIEW THE LANDING PAGE BUILDER\", \"SEE HOW UNBOUNCE CAN HELP ME\"."
+    ]
+  }
+]

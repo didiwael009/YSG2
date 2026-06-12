@@ -129,22 +129,14 @@ function bucketToSlots(
 
   for (const slot of slots) {
     const [yearStr, monStr] = slot.split('-');
-    // Window: [slotStart, slotStart + stepMonths)
-    const windowStart = parseInt(`${yearStr}${monStr.padStart(2, '0')}01000000`, 10);
     const end = addMonths(yearStr, monStr, stepMonths);
-    const windowEnd   = parseInt(
-      `${end.y}${String(end.m).padStart(2, '0')}01000000`,
-      10,
-    );
-    const midpoint = slotMidpoint(slot, stepMonths);
+    const windowStart = parseInt(`${yearStr}${monStr.padStart(2, '0')}01`, 10);
+    const windowEnd   = parseInt(`${end.y}${String(end.m).padStart(2, '0')}01`, 10);
+    const midpoint    = slotMidpoint(slot, stepMonths);
 
     const slotRows = rows.filter(r => {
       const ts = parseInt(r.timestamp.slice(0, 8), 10);
-      return ts >= parseInt(`${yearStr}${monStr.padStart(2, '0')}01`, 10) &&
-             ts <  parseInt(
-               `${end.y}${String(end.m).padStart(2, '0')}01`,
-               10,
-             );
+      return ts >= windowStart && ts < windowEnd;
     });
 
     if (slotRows.length === 0) continue;
@@ -159,8 +151,6 @@ function bucketToSlots(
 
     result.set(slot, best);
   }
-
-  void windowStart; void windowEnd; // suppress unused warnings
 
   return result;
 }

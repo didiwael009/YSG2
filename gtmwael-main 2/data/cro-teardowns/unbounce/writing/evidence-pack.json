@@ -1,0 +1,192 @@
+{
+  "slug": "unbounce",
+  "companyName": "Unbounce",
+  "companyUrl": "https://unbounce.com",
+  "fromMonth": "2019-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-12T22:03:58.862Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2019-01.webp",
+      "timestamp": "20190207141715",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2019-07",
+      "label": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2019-07.webp",
+      "timestamp": "20190801191216",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9585,
+      "comparedTo": "2019-01"
+    },
+    {
+      "month": "2021-10",
+      "label": "Oct 2021",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2021-10.webp",
+      "timestamp": "20211103083133",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9651,
+      "comparedTo": "2019-07"
+    },
+    {
+      "month": "2022-10",
+      "label": "Oct 2022",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2022-10.webp",
+      "timestamp": "20221101060141",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9564,
+      "comparedTo": "2021-10"
+    },
+    {
+      "month": "2024-04",
+      "label": "Apr 2024",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2024-04.webp",
+      "timestamp": "20240501075621",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9798,
+      "comparedTo": "2022-10"
+    },
+    {
+      "month": "2024-10",
+      "label": "Oct 2024",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2024-10.webp",
+      "timestamp": "20241101144804",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.946,
+      "comparedTo": "2024-04"
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2025-01.webp",
+      "timestamp": "20250201001529",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9761,
+      "comparedTo": "2024-10"
+    },
+    {
+      "month": "2025-04",
+      "label": "Apr 2025",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2025-04.webp",
+      "timestamp": "20250501001850",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9735,
+      "comparedTo": "2025-01"
+    },
+    {
+      "month": "2025-07",
+      "label": "Jul 2025",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2025-07.webp",
+      "timestamp": "20250802084558",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9662,
+      "comparedTo": "2025-04"
+    },
+    {
+      "month": "2025-10",
+      "label": "Oct 2025",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/2025-10.webp",
+      "timestamp": "20251102044245",
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": 0.9677,
+      "comparedTo": "2025-07"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/unbounce/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://unbounce.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Convert more customers with one platform",
+      "Launch tailored pages in a few clicks",
+      "Everything you need to A/B test in one place",
+      "Let AI and ML do the heavy lifting",
+      "Seamlessly integrate with your stack",
+      "Why marketers love Unbounce",
+      "Scale your marketing without limits",
+      "Build, test, and optimize landing pages—all in one platform",
+      "We’re with you all the way",
+      "Privacy Preference Center"
+    ],
+    "h2Removed": [
+      "See How You Can Lower Cost-Per-Lead By Over 70%With Landing Pages",
+      "Over 15,000 brands drive value with Unbounce.",
+      "Mobile-responsive landing page, popup, and sticky bar templates",
+      "Want to improve your conversions? Get started now with a 30-day trial!"
+    ],
+    "ctaAdded": [
+      "Start building for free",
+      "Start A/B testing",
+      "Learn about Concierge plans",
+      "Learn the basics",
+      "Explore our resources",
+      "Get support",
+      "Request a demo",
+      "Start my free trial",
+      "Create your page",
+      "Optimize effortlessly"
+    ],
+    "ctaRemoved": [
+      "Learn More",
+      "PREVIEW THE LANDING PAGE BUILDER",
+      "SEE HOW UNBOUNCE CAN HELP ME",
+      "SHOW ME HOW",
+      "Browse Our Template Gallery",
+      "SEE THE PLANS"
+    ],
+    "navAdded": [
+      "Agencies",
+      "Ecommerce",
+      "SaaS",
+      "Small businesses",
+      "B2B marketing",
+      "Service specialists",
+      "PPC",
+      "Social ads"
+    ],
+    "navRemoved": [
+      "Preview the Builder",
+      "en",
+      "de",
+      "es",
+      "br",
+      "Home",
+      "Features",
+      "Customers"
+    ],
+    "headlines": [
+      {
+        "from": "Convert More Leads and Sales From Your Ad Spend",
+        "to": "Launch faster. Convert more.",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Ditch your other landing page software. Try the best landing page builder for reducing turnaround time & converting more traffic — no coding needed.",
+        "to": "Grow your leads and sales with Unbounce. Easily create, test, and optimize landing pages, and boost conversions using AI insights—start turning traffic into customers today!",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

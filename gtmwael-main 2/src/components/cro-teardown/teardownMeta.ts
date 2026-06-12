@@ -15,4 +15,5 @@ export const TEARDOWN_CARD_META: Record<string, { label: string; title: string; 
   "/cro-teardowns/apify":       { label: "CRO Teardown", title: "Apify homepage teardown (2020–2026)",       description: "From web scraping utility to AI agent marketplace — 6 years of homepage signals." },
   "/cro-teardowns/buffer":      { label: "CRO Teardown", title: "Buffer homepage teardown (2019–2026)",      description: "How a social media scheduling tool evolved its messaging through the creator economy shift." },
   "/cro-teardowns/agorapulse":  { label: "CRO Teardown", title: "Agorapulse homepage teardown (2019–2026)", description: "Social media management positioning evolution across 7 years of category change." },
+  "/cro-teardowns/unbounce":    { label: "CRO Teardown", title: "Unbounce homepage teardown (2019–2026)",   description: "How a landing page builder navigated the shift from ad-focused conversion to a multi-product platform." },
 };

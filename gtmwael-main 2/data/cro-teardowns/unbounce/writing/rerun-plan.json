@@ -1,0 +1,78 @@
+{
+  "createdAt": "2026-06-12T22:11:55.042Z",
+  "slug": "unbounce",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": true,
+    "finalJudgeScore": 72,
+    "seoScore": 83
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "03-visual-timeline",
+      "reasons": [
+        "'visual sophistication as a 3 out of 5' — the evidence states visual_sophistication: 3, but the article attributes this to an external scoring frame without noting it is the evidence's own label; howe"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "06-lessons-for-saas-teams",
+      "reasons": [
+        "Judge rerun recommendation: 06-lessons-for-saas-teams — CTA hierarchy subsection (remove invented 20% threshold and Wael Aouididi citation, reconcile CTA count claims)",
+        "06-lessons-for-saas-teams — CTA hierarchy subsection",
+        "Secondary keyword 'SaaS homepage CRO teardown' is mentioned in the intro but not reinforced in the body — consider adding it once more in the 'What SaaS teams can study' section to improve topical aut"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Remove all references to 'Wael Aouididi' and 'Landing Page Playbook 2026' — this named source and publication do not appear in the evidence and constitute an unsupported factual claim; the point can s",
+        "The primary keyword 'Unbounce homepage CRO teardown' appears only in the title and meta description — it should appear naturally at least once in the first 100 words of body text or in the opening H2 ",
+        "The article references 'Wael Aouididi's Landing Page Playbook 2026' but does not include a source link or publication date context — either add attribution detail or soften the reference to avoid unve"
+      ],
+      "priority": "medium",
+      "source": "both"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "07-business-context — reframe intent assertions as hedged inferences",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'fewer than 20% of active accounts use two products together in the same month' — no such threshold exists in the evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'This is consistent with Wael Aouididi's framework in the Landing Page Playbook 2026' — named source and publication not in the evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'If fewer than 20% of active accounts use two products together in the same month' — invented metric threshold not in the evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "07-business-context — generic AI-era SaaS paragraph",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'that recognition gap may slow conversion for that audience' — mild conversion prediction without data; flagged but hedged with 'may'",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'if the count is zero, you have made the same trade Unbounce made: broader appeal, but fewer instant confirmation signals' — presents a causal mechanism as near-certain without evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'This evolution maps to a recognizable AI-era SaaS pattern: incumbents in maturing feature categories absorbing AI capabilities to justify platform-tier pricing and resist commoditization' — asserts c",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Section 05-cta-navigation-evolution (medium priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    }
+  ]
+}

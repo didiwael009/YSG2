@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Unbounce homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS growth marketer, CRO specialist, or product marketer at a mid-market company who is evaluating whether to adopt a multi-product CRO platform (vs. single-tool builder) and wants to understand how Unbounce repositioned itself to compete in the crowded conversion optimization space. They're looking for signals about market positioning shifts and whether the platform's new narrative aligns with their team's needs.",
+  "recommended_h1_format": "How Unbounce Shifted From Ad ROI Tool to CRO Platform: A Homepage Teardown (2019–2026)",
+  "secondary_keywords": [
+    "Unbounce CRO platform positioning change",
+    "Unbounce homepage evolution landing page builder",
+    "how Unbounce repositioned its product messaging",
+    "Unbounce multi-product strategy homepage analysis",
+    "Unbounce conversion optimization platform rebranding"
+  ],
+  "content_angle": "Focus on the *strategic why* behind the shift from outcome-specific ROI messaging to speed-plus-conversion positioning. The searcher wants to understand: (1) why Unbounce moved away from the direct-response/ad-spend audience, (2) how the new multi-product narrative (AI, A/B testing, Smart Traffic) changes who they're selling to, and (3) what this signals about the broader market demand for integrated CRO platforms vs. point solutions. Show how navigation restructuring (adding vertical segments like SaaS, Ecommerce) reflects a deliberate move toward segment-specific growth plays rather than broad DRM appeal.",
+  "what_the_searcher_wants": "Evidence of a calculated competitive repositioning—not just a redesign—so they can decide if Unbounce's new platform-first, speed-first messaging is credible or reactive, and whether it signals market maturity in CRO.",
+  "what_to_avoid": "Don't treat this as a generic 'before and after' visual redesign teardown. Avoid focusing on design aesthetics, color changes, or layout improvements without connecting them to the strategic shift. Don't assume the searcher cares about Unbounce specifically—they care about what this repositioning reveals about the CRO platform market. Avoid listing changes without explaining the *job-to-be-done* behind each narrative shift (e.g., why 'launch faster' matters more than 'lower cost-per-lead' in 2026). Don't miss the significance of moving from outcome metrics ('70% CPL reduction') to capability statements ('AI and ML')—this signals a shift from proof-based to trust-based selling.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T22:05:02.161Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0036296
+}

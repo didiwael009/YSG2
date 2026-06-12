@@ -1,0 +1,46 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section is approximately 420 words — exceeds the 380-word cap.",
+    "Third H3 block ('What Unbounce's messaging shift signals about message-match risk') contains two paragraphs that together exceed 60 words each: first analytical paragraph is ~75 words, second is ~55 words. First paragraph violates the 60-word per-paragraph rule.",
+    "The closing paragraph (founder takeaway / runnable test) is NOT under an H3 subheading — it floats outside any sub-block, making the section structure inconsistent.",
+    "The closing test instruction ('count how many measurable outcomes appear above the fold') is reasonably specific but anchors to a generic audit framing ('your own Unbounce-style homepage') rather than a precise, bounded action tied to this company's evidence.",
+    "The phrase 'build-test-optimise workflow' in H3-3 is an abstract noun stack (3 hyphenated concepts) without a plain-language unpacking in the same sentence — the inline definition 'a workflow where teams build pages, run tests, and improve results in one tool' appears after a dash, which partially rescues it, but the original phrase still leads.",
+    "Causal hedge is present ('may matter', 'may point to') but the claim 'that gap in relevance may matter' lacks an explicit condition — it is not stated under what condition (e.g., 'if paid search is a primary acquisition channel') the relevance gap becomes a conversion problem. A condition is implied but not stated explicitly.",
+    "The section does not reference the section-heading change from 'See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages' to platform-scope headings, which is strong evidence available in the evidence block and would strengthen the messaging-evolution argument.",
+    "No bold-quoted verbatim reference to any CTA or section heading changes within the messaging evolution analysis — the evidence includes section heading shifts that corroborate the messaging claim but are unused.",
+    "The opening of H3-3 does NOT lead with the finding in the first sentence — it leads with what was removed ('Removing... reduces...') before stating the implication, which partially satisfies FINDING-FIRST but buries the practical risk signal."
+  ],
+  "requiredFixes": [
+    "Trim the section to under 380 words. The third H3 block and the floating closing paragraph are the primary sources of overage — tighten the closing paragraph to 2 sentences and remove the redundant re-explanation of the workflow definition.",
+    "Place the founder takeaway/runnable test inside a dedicated H3 subheading (e.g., '### Quick test: count the outcome signals above your fold'). The floating paragraph breaks the required H3 sub-block structure for analytical sections.",
+    "In H3-3, add an explicit condition to the relevance-gap claim. Example: 'if a significant share of Unbounce traffic arrives via high-intent paid search queries for terms like landing page builder, this gap in specificity may slow recognition' — make the 'if' clause explicit and front-loaded.",
+    "Cut the first analytical paragraph in H3-3 to under 60 words. It currently carries two distinct ideas (relevance gap for PPC visitors AND the new target being growth teams) — split them into two short paragraphs or cut the second idea, which is already covered in H3-1.",
+    "Add a single bold-quoted section heading from the evidence to H3-3 or H3-2 to anchor the messaging-evolution argument — for example, **'See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages'** dropped in favour of **'Convert more customers with one platform'** gives concrete proof of the ROI-to-capability shift.",
+    "Reframe the closing runnable test to be more precisely bounded: instead of 'count how many measurable outcomes appear above the fold', specify 'on your homepage, count the words that name a channel (paid, organic, social) or a metric (cost-per-lead, ROAS, conversion rate) in the first 50 words of body copy — if the count is zero, you have made the same trade Unbounce made.'"
+  ],
+  "riskFlags": [
+    "'This suggests the page is no longer written for the PPC manager' — causal inference without explicit condition stated; partially hedged but condition is implicit, not explicit.",
+    "'that gap in relevance may matter' — consequence claim without a stated condition (e.g., only if paid search is the primary acquisition channel); the condition is implied but must be made explicit per rubric.",
+    "'That shift may point to a larger addressable market' — this is speculative and not directly traceable to the evidence; the evidence notes a buyer-shift hypothesis but does not confirm TAM expansion. Flag as unsupported.",
+    "The word 'signals' in H3-3 heading implies a definitive read of intent; evidence note says 'The change in framing may reflect a positioning adjustment or an SEO update' — the heading should hedge accordingly."
+  ],
+  "seoNotes": [
+    "The ## section heading contains both 'H1' (a searchable structural term) and 'ROI' and 'buyer' — it passes the searchable heading check, though 'messaging' or 'Unbounce' would strengthen it further.",
+    "The section does not use the primary keyword 'Unbounce homepage teardown' in any H3 heading — adding it to at least one H3 would improve keyword density for the target query.",
+    "The meta description shift from 'Ditch your other landing page software' to 'AI insights' is a strong SEO signal about competitive positioning that the section covers well — this is the most linkable insight in the piece and is correctly foregrounded.",
+    "The page title evolution from 'Landing Page Software' to 'CRO platform' is noted in H3-2 and is a strong secondary keyword signal — consider adding a one-sentence note that this title shift also affects how Unbounce appears in SERPs for CRO-related queries, not just landing page queries."
+  ],
+  "rewriteInstruction": "Trim to under 380 words by tightening H3-3 and the closing paragraph. Add a fourth H3 subheading to house the founder test — do not leave it floating. In H3-3, split the first paragraph at the 60-word mark: one paragraph on the PPC relevance risk (with an explicit 'if paid search drives significant traffic' condition), one short paragraph on the growth-team framing. Pull in one bold-quoted section heading from the evidence (the old CPL claim vs the new platform claim) to anchor the messaging-shift argument with a third proof point beyond H1 and meta. Rewrite the closing test to be precisely bounded: name the specific thing the founder should count, in how many words of their own copy, and what a zero score means. Keep all existing hedging language — the 'may' framing is correct given the evidence notes — but make every consequence claim conditional and explicit.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 13,
+    "plainLanguage": 16,
+    "scannability": 9,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

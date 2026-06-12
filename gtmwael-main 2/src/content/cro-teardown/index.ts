@@ -16,9 +16,10 @@ import { webflow } from "./articles/webflow";
 import { apify } from "./articles/apify";
 import { agorapulse } from "./articles/agorapulse";
 import { buffer } from "./articles/buffer";
+import { unbounce } from "./articles/unbounce";
 export type { CroTeardownPost, SnapshotEntry, MessagingChange, AnalysisBlock, LessonCard, SummaryCard } from "./types";
 
-export const croTeardownPosts: CroTeardownPost[] = [hootsuite, stripe, intercom, shopify, vercel, crisp, clay, linear, lemlist, apollo, expensya, gong, webflow, apify, agorapulse, buffer];
+export const croTeardownPosts: CroTeardownPost[] = [hootsuite, stripe, intercom, shopify, vercel, crisp, clay, linear, lemlist, apollo, expensya, gong, webflow, apify, agorapulse, buffer, unbounce];
 
 export const getCroTeardownBySlug = (slug: string) =>
   croTeardownPosts.find((post) => post.slug === slug);

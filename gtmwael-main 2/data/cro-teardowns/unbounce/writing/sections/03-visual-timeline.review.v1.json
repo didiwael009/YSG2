@@ -1,0 +1,43 @@
+{
+  "score": 81,
+  "pass": true,
+  "issues": [
+    "Section heading says '2019–2025' but the evidence spans Jan 2019 to Jun 2026 — the end date is wrong.",
+    "The 2022 H3 block buries its takeaway: the first sentence describes a visual change, not a finding. The finding ('from explain-and-invite to show-and-assert') appears at the end of the first paragraph.",
+    "The 2022 paragraph runs approximately 65 words — over the 60-word limit for analytical paragraphs.",
+    "The H3 for the 2024–present block does not contain a searchable term (no company name, 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion') — though this penalises searchableHeadings, not the section heading.",
+    "The claim 'That is a meaningful visual shift' is an editorial assertion without a condition attached — no 'if [condition]' qualifier.",
+    "The final test is reasonably specific but not anchored to Unbounce's evidence: it instructs the reader to count capabilities on their own homepage rather than referencing Unbounce's documented shift from one-capability (2019) to five-icon feature row (2024). This weakens specificity.",
+    "The phrase 'built to justify the product category' uses implicit category-strategy jargon without a plain-language definition in the same sentence.",
+    "No H3 is present for the mid-transition Oct 2024 period identified in the evidence — the 'mid-transition' snapshot is folded into the 2024–present block without acknowledgment.",
+    "Word count is approximately 330 words — slightly over the 320-word ceiling."
+  ],
+  "requiredFixes": [
+    "Fix the section heading end date from '2025' to '2026' to match the evidence label 'Jun 2026'.",
+    "In the 2022 H3 block, lead with the finding in sentence one: state 'By October 2022 the page had moved from explaining the product to showing it' before describing the visual details. Move the interpretation ('explain and invite to show and assert') to sentence one or two.",
+    "Trim the 2022 first paragraph to under 60 words — it currently runs approximately 65 words.",
+    "Add a plain-language gloss immediately after 'justify the product category', e.g. 'explain why landing pages exist and why someone should care' — so the idea lands for founders not fluent in positioning vocabulary.",
+    "Anchor the final founder test to Unbounce's own documented shift: e.g. 'Open the Jan 2019 and Jun 2026 Unbounce screenshots side by side and count how many distinct capabilities are visible above the fold in each. Unbounce moved from one to five — note whether your own homepage reflects what your product has become.'"
+  ],
+  "riskFlags": [
+    "'That is a meaningful visual shift' — asserts significance without a condition or supporting data point. Rephrase as 'This suggests a shift...' or attach a condition.",
+    "The claim that the 2019 page was 'built to justify the product category' implies intent — this is not traceable to the evidence, which only shows the headline and section headings. Soften to 'the page reads as though...' or 'the copy is consistent with a page that...'",
+    "The statement 'The page looked less like a single tool and more like a suite' implies a strategic intent not confirmed in the evidence. Hedge appropriately."
+  ],
+  "seoNotes": [
+    "The ## heading 'Unbounce homepage 2019–2025: from gradient outcome hero to polished platform showcase' is strong for SEO — it contains the company name, 'homepage', and a descriptive arc. Fix the date to 2026.",
+    "The primary keyword 'Unbounce homepage teardown' does not appear verbatim in the section heading — consider whether the article-level H1 covers this or whether one H3 should include 'teardown' or 'CRO' for long-tail capture.",
+    "Verbatim quoted headlines (**'Launch faster. Convert more.'**, **'Convert More Leads and Sales From Your Ad Spend'**) add keyword richness and are correctly bolded — good practice maintained throughout."
+  ],
+  "rewriteInstruction": "Keep the three-phase H3 structure and the bolded verbatim quotes — those are working well. Make three targeted fixes: (1) correct '2025' to '2026' in the section heading; (2) reorder the 2022 block so the interpretive finding ('the page moved from explaining the product to showing it') is sentence one, with the visual detail (dark charcoal hero, yellow illustration) following as evidence; (3) trim the 2022 first paragraph to under 60 words by cutting or splitting. Add a one-clause plain-language gloss after 'justify the product category'. Replace the generic founder test at the end with one that names Unbounce's documented shift from a single above-fold message in 2019 to a five-icon feature row by 2024, so the instruction feels like it came directly from this teardown rather than a general CRO checklist. Also soften the two intent-attribution claims ('built to justify', 'the page looked less like a single tool') to observable-evidence language.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 11,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 80
+}

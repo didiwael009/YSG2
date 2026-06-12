@@ -1,0 +1,3 @@
+# Unbounce Homepage Teardown: From Ad Spend Tool to CRO Platform (2019–2026)
+
+Unbounce removed the words "ad spend" from its main headline — and replaced a seven-word outcome with a four-word platform promise. The old headline read **"Convert More Leads and Sales From Your Ad Spend."** The new one reads **"Launch faster. Convert more."** That single change signals a deliberate break from one specific type of buyer — the performance marketer optimising paid ads — toward a broader audience evaluating a full conversion platform. By the end of this teardown, you will know exactly when that kind of headline swap makes sense for your own homepage, and when it puts your traffic at risk.

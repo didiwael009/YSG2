@@ -1,0 +1,7 @@
+## The business context behind Unbounce's redesign
+
+Those CTA and messaging shifts trace back to a deeper business change. Unbounce entered the 2019–2026 period as a recognized name in the landing page builder category, competing for direct-response marketers who justified tool spend through paid media ROI. The category was maturing, with multiple builders competing on no-code accessibility and cost-per-lead reduction. Unbounce's own meta description at the time framed the pitch as **"the best landing page builder for reducing turnaround time & converting more traffic."**
+
+The product navigation expanded from a single **"Preview the Builder"** entry point to discrete nodes including **"A/B testing," "Smart Traffic,"** and **"AI Copywriting,"** alongside vertical segments like Agencies, Ecommerce, and SaaS. This suggests Unbounce shipped multiple distinct products and then reorganized its homepage around that expanded suite — consistent with a transition from point-solution to platform narrative across the period.
+
+This evolution maps to a recognizable AI-era SaaS pattern: incumbents in maturing feature categories absorbing AI capabilities to justify platform-tier pricing and resist commoditization. The removal of **"AI insights"** friction and addition of educational CTAs like **"Learn the basics"** points to longer, multi-touch evaluation cycles. For SaaS teams building in this space, that pattern suggests category ownership alone no longer closes deals — workflow integration does.

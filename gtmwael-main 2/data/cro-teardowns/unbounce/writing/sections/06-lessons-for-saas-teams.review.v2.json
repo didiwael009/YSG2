@@ -1,0 +1,50 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "evidenceAccuracy: The citation 'According to the Landing Page Playbook benchmark data from Wael Aouididi, conversion rates tend to fall when pages offer more than two equally weighted CTAs' is a causal outcome claim ('conversion rates tend to fall') — the evidence only lists the source as a recommended citation pattern, not a verified statistic. This triggers a -10 causal/outcome penalty.",
+    "evidenceAccuracy: 'Six paths at equal visual weight may leave visitors without an obvious next step' — the evidence does not confirm equal visual weight; this is an invented visual observation not traceable to the provided evidence. -5 penalty.",
+    "plainLanguage: 'Quality Score' is used in H3-1 with a definition ('the relevance rating Google uses to set your cost-per-click') — this is acceptable at first use. No forbidden jargon terms appear more than once.",
+    "plainLanguage: The closing sentence of H3-2 — 'the page suggests breadth the product experience may not yet deliver' — is abstract rather than concrete or actionable. -3 penalty.",
+    "scannability: H3-1 body paragraph 1 is approximately 48 words — within limit. H3-1 paragraph 2 is approximately 52 words — within limit. H3-3 paragraph 2 is approximately 52 words — within limit. No 60-word violations detected.",
+    "scannability: H3-3 paragraph 2 opens with the citation claim rather than the finding — the practical takeaway is not in the first two sentences of this block. -3 penalty.",
+    "searchableHeadings: The ## heading contains 'Unbounce', 'homepage', and 'positioning' — passes.",
+    "specificity: H3-3 paragraph 2 ('conversion rates tend to fall when pages offer more than two equally weighted CTAs') is generic benchmark advice that could appear in any CRO teardown without modification. -5 penalty.",
+    "founderTakeaway: Each H3 block does deliver its takeaway early. The final runnable test ('Screenshot your homepage and count every button. If more than two share the same size and colour, you have no dominant path.') is specific and under 5 minutes — passes.",
+    "rhythmAndOpening: The opening of H3-1 is slightly template-like ('Unbounce removed its core category keyword from the headline and meta description entirely') but is grounded in specific evidence. Sentence length varies adequately across all three blocks.",
+    "wordCount: Approximate word count is 370 — within the 220–380 range.",
+    "boldQuotes: All verbatim website quotes appear in bold quotes — passes.",
+    "H3 subheadings: All three required H3 sub-blocks are present — passes.",
+    "evidenceAccuracy: The claim that 'the brand name does the explaining now' is an interpretive assertion not directly traceable to the evidence. Minor unsupported inference — -3 penalty applied under causal statement without condition.",
+    "plainLanguage: H3-2 paragraph 2 contains three abstract nouns stacked: 'breadth the product experience may not yet deliver' is not a three-abstract-noun stack but is still vague. No -3 penalty fired here but flagged.",
+    "rhythmAndOpening: Several sentences in H3-2 are roughly the same medium length (20–25 words). -2 informal note, not enough to fire the full -3 penalty."
+  ],
+  "requiredFixes": [
+    "Remove or heavily hedge the causal outcome claim in H3-3 paragraph 2: 'conversion rates tend to fall when pages offer more than two equally weighted CTAs' is not verifiable from the provided evidence. Replace with a conditional observation, e.g., 'The Landing Page Playbook flags multiple equal-weight CTAs as a pattern worth auditing — the concern is that visitors scan without committing when no single path visually dominates.'",
+    "Remove the unsupported visual claim 'Six paths at equal visual weight' — the evidence does not confirm visual parity across CTAs. Rewrite to: 'Six CTAs listed with no hierarchy in the evidence suggests the page may lack a dominant entry point — though only a live visual audit can confirm weight distribution.'",
+    "Rewrite the closing sentence of H3-2 from the abstract 'the page suggests breadth the product experience may not yet deliver' to a concrete implication, e.g., 'If fewer than 20% of active accounts use two products together monthly, adding those products to the nav likely overpromises the platform experience.'",
+    "H3-3 paragraph 2 must open with the finding, not the citation. Move the benchmark reference to support position, not opening position. The finding — that equal-weight CTAs reduce directional clarity — should be stated first in plain terms."
+  ],
+  "riskFlags": [
+    "Causal outcome claim without data: 'conversion rates tend to fall when pages offer more than two equally weighted CTAs' — the cited source (Landing Page Playbook) appears only as a recommended citation pattern in the evidence, not as a verified statistic. This reads as a fabricated data point.",
+    "Unsupported visual assertion: 'Six paths at equal visual weight' — the evidence lists CTA text strings only; no visual weight data is provided. This is an invented observation.",
+    "Interpretive overreach: 'the brand name does the explaining now' — the evidence describes what changed but does not confirm brand recognition is sufficient to replace category descriptors. This is a conclusion the evidence does not support."
+  ],
+  "seoNotes": [
+    "The ## heading ('What SaaS teams can study from Unbounce's homepage positioning overhaul') contains the company name and 'homepage positioning' — strong for long-tail search alignment with the article's primary keyword.",
+    "H3 headings include named product features ('A/B Testing', 'Smart Traffic', 'AI Copywriting') and functional terms ('CTA hierarchy', 'category keyword removal') — these create secondary keyword surface area for feature-comparison and CRO-education queries.",
+    "The Quality Score definition embedded in H3-1 improves semantic richness for paid search and CRO-related queries without creating jargon debt.",
+    "The article's primary keyword 'Unbounce homepage teardown' is not repeated in section body text — consider one natural in-body mention in the intro sentence or H3-1 for reinforcement."
+  ],
+  "rewriteInstruction": "The section is structurally sound and mostly specific, but two evidence violations are pulling the score below the pass threshold. First, strip or hedge the 'conversion rates tend to fall' claim in H3-3 — it reads as a fabricated statistic and triggers a hard evidence penalty. Replace it with a conditional observation that names the risk without asserting a measured outcome. Second, remove 'equal visual weight' — you cannot see the page's visual hierarchy from the provided evidence, so do not claim it. Third, rewrite the closing sentence of H3-2 to be concrete rather than abstract: tell the founder what to check or change, not what the page 'suggests.' Finally, restructure H3-3 paragraph 2 so the finding leads — put the benchmark reference in a supporting role, not the opening sentence. These four fixes are targeted and should lift the section above 85 without requiring a full rewrite.",
+  "dimensionScores": {
+    "evidenceAccuracy": 7,
+    "specificity": 10,
+    "plainLanguage": 16,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

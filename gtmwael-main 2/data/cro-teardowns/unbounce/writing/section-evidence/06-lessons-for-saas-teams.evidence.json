@@ -1,0 +1,121 @@
+{
+  "sectionId": "06-lessons-for-saas-teams",
+  "companyName": "Unbounce",
+  "companyUrl": "https://unbounce.com",
+  "articleTitle": "Unbounce Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Unbounce rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 11,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 11,
+    "h2Added": 10,
+    "h2Removed": 4,
+    "ctaAdded": 10,
+    "ctaRemoved": 6,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Unbounce homepage teardown",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "11 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "10 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Unbounce shifted from a single-tool, ad-spend ROI pitch aimed at direct-response marketers to a multi-product CRO platform narrative aimed at growth-focused teams, replacing its outcome-specific H1 ('Convert More Leads and Sales From Your Ad Spend') with a speed-plus-conversion promise ('Launch faster. Convert more.') and expanding navigation from builder-preview to a structured product suite including AI Copywriting, A/B Testing, and Smart Traffic.",
+    "old_positioning_frame": "A landing page builder that directly reduces cost-per-lead and maximises return on paid ad spend, positioned as a replacement for inferior landing page software, with no-code accessibility as a key differentiator.",
+    "new_positioning_frame": "An all-in-one CRO platform that combines landing page building, A/B testing, AI/ML optimisation, and integrations, promising speed of launch and conversion growth across the full funnel rather than a single paid-channel use case.",
+    "buyer_shift": "Performance marketers and media buyers optimising a specific paid ad channel → broader growth and marketing teams (agencies, ecommerce, SaaS, small businesses, B2B) seeking an integrated build-test-optimise workflow",
+    "funnel_shift": "Bottom-of-funnel acquisition tool justified by a single ROI metric (cost-per-lead reduction) → mid-to-upper funnel platform evaluation, with educational CTAs ('Learn the basics', 'Explore our resources') and free-start entry alongside enterprise concierge paths",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Convert More Leads and Sales From Your Ad Spend",
+        "new": "Launch faster. Convert more.",
+        "meaning": "Dropping the explicit 'ad spend' anchor suggests Unbounce may be deliberately de-coupling its identity from paid media ROI, signalling a broader audience targeting beyond PPC-focused buyers. The shorter, dual-benefit structure points to a platform-level promise rather than a channel-specific outcome."
+      },
+      {
+        "element": "Navigation",
+        "old": "Preview the Builder · en · de · es · br · Home · Features · Templates",
+        "new": "Products · Landing pages · A/B testing · Smart Traffic · AI Copywriting · Integrations · Templates · Agencies · Ecommerce · SaaS · Small businesses · B2B marketing · Service specialists",
+        "meaning": "Adding discrete product nodes (A/B Testing, Smart Traffic, AI Copywriting) alongside vertical audience segments (Agencies, Ecommerce, SaaS) is consistent with repositioning from a single builder tool to a multi-product platform with segment-specific value propositions. The removal of language selectors may also indicate a narrowing of international self-serve focus."
+      },
+      {
+        "element": "CTA",
+        "old": "PREVIEW THE LANDING PAGE BUILDER · SEE HOW UNBOUNCE CAN HELP ME · SEE THE PLANS",
+        "new": "Start building for free · Start A/B testing · Learn about Concierge plans · Learn the basics · Explore our resources · Get support",
+        "meaning": "Replacing direct-intent CTAs ('SEE THE PLANS') with product-specific entry points ('Start A/B testing') and educational paths ('Learn the basics', 'Explore our resources') suggests the page may now be serving buyers at earlier stages of platform evaluation, and that Unbounce is attempting to route different buyer types into different product experiences rather than funnelling everyone toward a single conversion."
+      },
+      {
+        "element": "Section headings",
+        "old": "See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages · Over 15,000 brands drive value with Unbounce.",
+        "new": "Convert more customers with one platform · Everything you need to A/B test in one place · Let AI and ML do the heavy lifting · Seamlessly integrate with your stack · Scale your marketing without limits",
+        "meaning": "Removing the quantified cost-per-lead claim in favour of platform-scope headings ('one platform', 'your stack', 'without limits') is consistent with a shift away from a single-metric ROI argument toward a broader capability narrative that may appeal to buyers evaluating a full martech workflow rather than a point solution."
+      },
+      {
+        "element": "Meta description",
+        "old": "Ditch your other landing page software. Try the best landing page builder for reducing turnaround time & converting more traffic — no coding needed.",
+        "new": "Grow your leads and sales with Unbounce. Easily create, test, and optimize landing pages, and boost conversions using AI insights—start turning traffic into customers today!",
+        "meaning": "The removal of the 'ditch your other software' competitor-displacement framing and the addition of 'AI insights' and 'test, and optimize' language suggests Unbounce may be moving away from direct substitution messaging toward category expansion, potentially indicating that AI-assisted CRO is now a primary differentiator rather than ease-of-switching."
+      }
+    ],
+    "copy_this_if": "Your brand is already the default answer when someone searches for your core feature (e.g. 'landing page builder'), and you have shipped at least two distinct products or feature modules that existing customers use together — meaning the platform story is grounded in real usage, not aspiration.",
+    "do_not_copy_this_if": "Your homepage is still responsible for explaining what your product does at a basic level, or your primary acquisition channel is paid search on category-intent keywords — removing the explicit category descriptor and channel-specific ROI claim from H1 and meta description risks losing Quality Score alignment and ad-to-page message match.",
+    "safer_version_for_early_stage_saas": "Keep your channel-specific ROI claim in the H1 but add a single secondary section heading that introduces one adjacent capability (e.g. 'Now with built-in A/B testing') with its own CTA. This tests whether platform-scope messaging lifts engagement without abandoning the anchor that currently converts paid traffic.",
+    "risk_if_copied": "A company without Unbounce's brand recognition that removes specific outcome language ('lower cost-per-lead', 'from your ad spend') in favour of broad platform claims ('one platform', 'without limits') may see paid search Quality Scores drop and bounce rates increase, because visitors arriving from high-intent channel keywords will not immediately recognise the page as relevant to their specific problem.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T22:04:44.254Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.027996
+  },
+  "citation-context": {
+    "recommendedCitations": [
+      {
+        "id": "SRC-005",
+        "title": "AI SaaS Founder Playbook",
+        "author": "Operator field reports 2025–2026",
+        "domain": "AI SaaS GTM",
+        "citationPattern": "The AI SaaS Founder Playbook describes this pattern as [observation about AI positioning or platform moat]."
+      },
+      {
+        "id": "SRC-008",
+        "title": "Landing Page Playbook 2026",
+        "author": "Wael Aouididi",
+        "domain": "CRO",
+        "citationPattern": "The Landing Page Playbook benchmark data shows [observation about CTA structure or conversion pattern]."
+      },
+      {
+        "id": "SRC-012",
+        "title": "Crossing the Chasm",
+        "author": "Geoffrey Moore",
+        "domain": "Market development",
+        "citationPattern": "Moore's whole-product model in Crossing the Chasm describes [observation about category or market expansion]."
+      }
+    ],
+    "usageInstruction": "Use 1-2 of these citations naturally — embedded in a sentence, not listed separately. Format: \"As [Author] notes in [Title], ...\" or \"This is consistent with [Author]'s framework in [Title].\" Never invent citations. Only cite sources listed here.",
+    "generatedAt": "2026-06-12T22:04:44.256Z"
+  }
+}
