@@ -1,20 +1,20 @@
 {
   "primary_keyword": "Expensya homepage teardown",
   "primary_intent": "informational",
-  "audience_description": "A SaaS founder, growth marketer, or product manager building or repositioning an expense management or fintech product who wants to understand how Expensya pivoted from generic English positioning to French market-specific, UX-led messaging—and whether that playbook applies to their own geographic or audience expansion.",
-  "recommended_h1_format": "How [Company] Rewrote Its Homepage for the French Market: A CRO Teardown",
+  "audience_description": "A SaaS founder, growth marketer, or product strategist in the B2B fintech/spend management space who wants to understand how and why Expensya pivoted from global English positioning to French-market dominance. They're trying to decide whether geographic/language-specific positioning is a viable growth lever for their own product, or to learn from a successful repositioning case.",
+  "recommended_h1_format": "How [Company] Abandoned Global Positioning for French-Market Dominance: A Homepage Teardown",
   "secondary_keywords": [
-    "Expensya homepage evolution",
-    "Expensya CRO case study",
-    "Expensya positioning change French market",
-    "expense management SaaS homepage examples",
-    "localization vs. generic positioning SaaS"
+    "Expensya homepage redesign strategy",
+    "how Expensya repositioned its SaaS product",
+    "B2B SaaS localization strategy example",
+    "Expensya CRO changes 2024 2025",
+    "geographic positioning vs global messaging SaaS"
   ],
-  "content_angle": "Focus on the STRATEGIC DECISION behind the shift, not just the cosmetic changes. The searcher wants to understand: Why did Expensya abandon 'all companies' messaging for French-specific UX language? What does this tell us about market-specific positioning vs. broad-appeal positioning? When should a fintech SaaS localize messaging vs. stay generic? Make the 'why' clear: this is a masterclass in geographic market ownership, not just a design facelift.",
-  "what_the_searcher_wants": "Proof that narrowing positioning (from 'all companies' to 'French finance teams') can work, and a framework for deciding when to make that bet. They want to see the before/after as evidence of a winning strategy, not just curiosity.",
-  "what_to_avoid": "Do NOT frame this as a generic 'homepage redesign analysis' or focus only on visual changes (fonts, colors, layout). Do NOT assume the shift was cosmetic—explain the business logic. Do NOT ignore the removal of company-size segmentation; that's a crucial signal about who they're targeting now. Do NOT write this as a French-language article review; frame it for English-speaking SaaS marketers who need to understand the PRINCIPLE of market-specific positioning.",
+  "content_angle": "Focus on the STRATEGIC THESIS — why Expensya made this counterintuitive move (narrowing to French market instead of scaling globally) and what signals in the homepage reveal this was intentional repositioning, not neglect. The searcher is asking: 'Is this a winning playbook I can apply, or a cautionary tale?' Frame it as a deliberate market-dominance strategy within a specific region, backed by CRO decisions that reduced friction for French buyers while removing complexity for non-target segments.",
+  "what_the_searcher_wants": "To understand whether narrowing positioning to a specific language and market can drive better conversion, faster CAC recovery, and stronger market leadership — or whether it's a risky move that limits scale.",
+  "what_to_avoid": "Do not treat this as a simple 'before/after redesign.' Avoid framing it as a one-time visual update or assuming the changes were driven by A/B testing alone. Do not ignore that removing company-size segmentation and English-language CTAs is a DELIBERATE exclusion, not an oversight. Do not position it as a 'best practices' teardown if the strategy is niche or high-risk — instead position it as a 'here's what changed and why it might work for a specific context' analysis. Avoid crediting design alone; this is a go-to-market repositioning.",
   "confidence_level": "medium",
-  "generatedAt": "2026-06-11T16:46:31.418Z",
+  "generatedAt": "2026-06-12T08:19:29.058Z",
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.0030936
+  "costUsd": 0.0033016
 }

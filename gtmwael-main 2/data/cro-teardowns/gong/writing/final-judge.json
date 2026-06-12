@@ -1,54 +1,55 @@
 {
-  "overallScore": 45,
+  "overallScore": 62,
   "pass": false,
-  "evidenceAccuracy": 8,
-  "plainLanguage": 12,
-  "scannability": 5,
+  "evidenceAccuracy": 10,
+  "plainLanguage": 14,
+  "scannability": 8,
   "searchableHeadings": 7,
-  "specificity": 6,
-  "rhythmAndOpening": 5,
-  "founderTakeaway": 2,
+  "specificity": 10,
+  "rhythmAndOpening": 8,
+  "founderTakeaway": 5,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "Why the homepage changed",
-    "Opening paragraph",
-    "Overall article structure"
+    "01-intro",
+    "07-business-context"
   ],
   "unsupportedClaims": [
-    "Gong entered as a conversation intelligence vendor in a sales tech landscape crowded with point solutions",
-    "By 2020, 'Revenue Intelligence' was still novel enough to warrant a dedicated navigation item",
-    "The early homepage served mid-funnel buyers discovering the category",
-    "once your category becomes RFP vocabulary, you graduate from educator to OS",
-    "Wait until discovery calls stop asking what your category means",
-    "premature infrastructure positioning confuses buyers still Googling '[category] + definition'"
+    "Gong raised $200 million at a $2.2 billion valuation in September 2020",
+    "$250 million at $7.25 billion just nine months later",
+    "By Q2 2021, the company had crossed 2,000 customers including three Fortune 20 accounts",
+    "Gong publicly announced the RightBound acquisition",
+    "Gartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025",
+    "Clari and Salesloft merged"
   ],
   "riskFlags": [
-    "'This maps to the AI-era platform consolidation pattern' — presents interpretation as established fact without hedge",
-    "'The shifts documented above reflect a deliberate strategic repositioning' — asserts company intent without evidence",
-    "'Gong entered as a conversation intelligence vendor' — historical claim not in evidence",
-    "'premature infrastructure positioning confuses buyers' — causal prediction without data"
+    "stopped explaining what it does and started assuming you already know — no evidence about what Gong assumes or what buyers know",
+    "assumes the category is settled — assigns intention without supporting documentation",
+    "After reading this teardown, you will know how to test whether your own homepage is still teaching a category your buyers already understand — non-conditional claim about reader capability",
+    "The messaging shifts visible on the homepage didn't happen in a vacuum — they tracked Gong's growth milestones — states causation without condition",
+    "coincided with this period of rapid customer expansion — correlation stated without conditional framing",
+    "is consistent with a company that added platform capabilities beyond single-department tools — hedged but implies causation",
+    "If you have 2+ educational nav items and your category has 50+ funded competitors — introduces specific threshold (50+) not in evidence"
   ],
   "requiredFixes": [
-    "Add H3 subheadings to 'Why the homepage changed' section to break up the 3-paragraph wall of text",
-    "Remove all unsupported claims about Gong's market entry, competitive landscape, buyer funnel stage, and RFP vocabulary timing",
-    "Rewrite opening to match evidence scope — article only has 3 snapshots showing headline/meta/nav changes, not a full 6-year redesign study",
-    "Replace consultant-speak phrases ('deliberate strategic repositioning', 'AI-era platform consolidation pattern', 'graduate from educator to OS') with plain explanations of what the evidence shows",
-    "Add founder takeaway at end of 'Why the homepage changed' section anchored to specific evidence (e.g., 'Check your nav: if you still have a 'What is [category]?' link but buyers already know the term, you are paying nav real estate for education you no longer need')",
-    "Break 118-word paragraph starting with 'By 2026, Gong replaced...' into two paragraphs at natural break",
-    "Add specific runnable test at end anchored to Gong evidence (e.g., 'Pull 20 discovery call transcripts. If fewer than 3 prospects ask what your category means, test removing category education from primary nav')"
+    "Remove all six unsupported factual claims (funding rounds, customer counts, acquisitions, Gartner report, merger). Every specific fact must trace to the compressed evidence.",
+    "Rewrite opening paragraph to avoid assigning intention ('stopped explaining', 'started assuming', 'assumes the category is settled'). Use observable changes only: 'The headline changed from REVENUE INTELLIGENCE to Revenue AI Built To Predict churn.'",
+    "Remove the business context section entirely or rewrite using ONLY the evidence provided (headline changes, H2 removals, nav changes). Do not import external market facts.",
+    "Replace the threshold '50+ funded competitors' in the final takeaway with a conditional observation anchored to the evidence: 'If your nav contains items that explain the category (like Gong's removed 'What is RI?'), test removing one.'",
+    "Add H3 subheadings to the business context section. Current structure has three paragraphs under one H3, violating scannability rules."
   ],
   "optionalImprovements": [
-    "Add rhythm variation — all sentences in final paragraph are compound/complex; insert 1-2 short declarative sentences",
-    "Consider adding H3 for the nav change observation to improve scannability",
-    "The opening could specify what evidence was analyzed (headline, meta, nav, H2s) rather than generic 'what changed'"
+    "The opening sentence 'tells the story of a company that stopped explaining' uses narrative framing that weakens analytical voice. Consider: 'Gong's homepage changed its headline from REVENUE INTELLIGENCE to Revenue AI Built To Predict churn between Jan 2020 and Jun 2026.'",
+    "The phrase 'multimodal revenue signal processing' appears in quotes but is not explained. Add a plain-language gloss: '...multimodal revenue signal processing (language that describes data infrastructure, not a sales tool)...'",
+    "The final H3 block ('Industry shift') introduces external market context not in the evidence. If this section remains, it must cite only the nav changes (removed items, added items) and avoid Gartner/merger claims."
   ],
   "rerunRecommendations": [
-    "07-business-context — entire section needs rewrite to remove unsupported claims and add H3 structure"
+    "01-intro — Remove all intention-assigning language. Rewrite opening to describe observable changes only.",
+    "07-business-context — Remove all three subsections OR rewrite using ONLY the compressed evidence. No external funding, customer, acquisition, or market consolidation claims."
   ],
   "model": "claude-sonnet-4-5",
-  "costUsd": 0.02424000000000001,
-  "generatedAt": "2026-06-11T17:03:58.345Z"
+  "costUsd": 0.028563000000000005,
+  "generatedAt": "2026-06-12T08:27:32.785Z"
 }

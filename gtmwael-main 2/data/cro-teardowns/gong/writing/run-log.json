@@ -212,5 +212,629 @@
     "ok": false,
     "detail": "score 71/100 — FAIL — $0.0056",
     "ts": "2026-06-11T17:04:12.275Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-5",
+    "ts": "2026-06-12T08:07:20.769Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift validation",
+    "ok": true,
+    "detail": "confidence: high",
+    "ts": "2026-06-12T08:07:51.310Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json saved",
+    "ok": true,
+    "detail": "$0.0245",
+    "ts": "2026-06-12T08:07:51.315Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:07:51.317Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 2 is 66 words — must be ≤60",
+    "ts": "2026-06-12T08:08:01.885Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 3 is 62 words — must be ≤60",
+    "ts": "2026-06-12T08:08:01.886Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": false,
+    "detail": "3 paragraphs — $0.0115",
+    "ts": "2026-06-12T08:08:01.887Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-12T08:08:01.888Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json saved",
+    "ok": true,
+    "detail": "keyword: \"Gong homepage teardown\"  $0.0032",
+    "ts": "2026-06-12T08:08:09.746Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-target.json",
+    "ok": true,
+    "detail": "already exists — manual keyword preserved",
+    "ts": "2026-06-12T08:08:09.747Z"
+  },
+  {
+    "section": "_visual-analysis",
+    "step": "  Visual analyzer: analyzing 2 of 3 screenshots",
+    "ok": true,
+    "ts": "2026-06-12T08:08:09.747Z"
+  },
+  {
+    "section": "_visual-analysis",
+    "step": "  ✓ visual-analysis.json — growth-to-enterprise-product-focus · $0.0032",
+    "ok": true,
+    "ts": "2026-06-12T08:08:18.258Z"
+  },
+  {
+    "section": "_context-research",
+    "step": "  Context researcher: researching Gong (2020-01 → current)",
+    "ok": true,
+    "ts": "2026-06-12T08:08:18.259Z"
+  },
+  {
+    "section": "_context-research",
+    "step": "  ✓ business-context-research.json — 6 events, confidence: high · $0.2880",
+    "ok": true,
+    "ts": "2026-06-12T08:09:03.968Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Gong",
+    "ok": true,
+    "ts": "2026-06-12T08:09:03.975Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded 11 prior theses",
+    "ok": true,
+    "ts": "2026-06-12T08:09:03.975Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  ✓ article-outline.json — angle: \"Gong shifted from evangelizing a new category ('Revenue Intelligence')…\" · $0.0257",
+    "ok": true,
+    "ts": "2026-06-12T08:09:22.481Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-12T08:09:22.484Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:09:22.485Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "07-business-context.evidence.json",
+    "ts": "2026-06-12T08:09:22.489Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:09:22.490Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3362 in / 174 out — $0.0134",
+    "ts": "2026-06-12T08:09:29.290Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3927 in / 318 out — $0.0173",
+    "ts": "2026-06-12T08:09:32.335Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0411",
+    "ts": "2026-06-12T08:09:58.997Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-12T08:09:58.998Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 62/100 — FAIL — $0.0492",
+    "ts": "2026-06-12T08:10:06.002Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-12T08:10:06.003Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "5219 in / 363 out — $0.0710",
+    "ts": "2026-06-12T08:10:17.732Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 71/100 — FAIL — $0.1075",
+    "ts": "2026-06-12T08:10:50.256Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 71/100 — did not reach 85",
+    "ts": "2026-06-12T08:10:50.257Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-12T08:10:50.264Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": true,
+    "detail": "4 cards, 0 warning(s) — $0.0187",
+    "ts": "2026-06-12T08:11:08.701Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0187",
+    "ts": "2026-06-12T08:11:08.701Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-5]",
+    "ok": true,
+    "detail": "2 sections — calling API…",
+    "ts": "2026-06-12T08:11:08.703Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~93w) after edit",
+    "ts": "2026-06-12T08:11:15.381Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 1 rejected — $0.0622",
+    "ts": "2026-06-12T08:11:15.382Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "2 sections, 390 words",
+    "ts": "2026-06-12T08:11:15.387Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Gong homepage CRO teardown",
+    "ts": "2026-06-12T08:11:15.389Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:11:15.394Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 38/100 — FAIL — $0.0399",
+    "ts": "2026-06-12T08:11:48.673Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:11:48.676Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0068",
+    "ts": "2026-06-12T08:12:06.594Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-5",
+    "ts": "2026-06-12T08:18:51.529Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift validation",
+    "ok": true,
+    "detail": "confidence: high",
+    "ts": "2026-06-12T08:19:19.271Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json saved",
+    "ok": true,
+    "detail": "$0.0224",
+    "ts": "2026-06-12T08:19:19.272Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:19:19.274Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 2 is 71 words — must be ≤60",
+    "ts": "2026-06-12T08:19:28.346Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": false,
+    "detail": "3 paragraphs — $0.0112",
+    "ts": "2026-06-12T08:19:28.347Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-12T08:19:28.348Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json saved",
+    "ok": true,
+    "detail": "keyword: \"Gong homepage teardown\"  $0.0033",
+    "ts": "2026-06-12T08:19:35.876Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-target.json",
+    "ok": true,
+    "detail": "already exists — manual keyword preserved",
+    "ts": "2026-06-12T08:19:35.877Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-12T08:19:35.881Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:19:35.882Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "07-business-context.evidence.json",
+    "ts": "2026-06-12T08:19:35.883Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:19:35.884Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3362 in / 232 out — $0.0143",
+    "ts": "2026-06-12T08:19:46.825Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3927 in / 326 out — $0.0174",
+    "ts": "2026-06-12T08:19:49.939Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0432",
+    "ts": "2026-06-12T08:20:14.437Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-12T08:20:14.439Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 62/100 — FAIL — $0.0533",
+    "ts": "2026-06-12T08:20:23.818Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-12T08:20:23.820Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "5506 in / 316 out — $0.0752",
+    "ts": "2026-06-12T08:20:36.681Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.1086",
+    "ts": "2026-06-12T08:21:05.219Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-12T08:21:05.221Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-12T08:21:05.224Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": true,
+    "detail": "4 cards, 0 warning(s) — $0.0171",
+    "ts": "2026-06-12T08:21:19.051Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0171",
+    "ts": "2026-06-12T08:21:19.052Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-5]",
+    "ok": true,
+    "detail": "2 sections — calling API…",
+    "ts": "2026-06-12T08:21:19.054Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": true,
+    "detail": "added transition sentence linking to prior analysis",
+    "ts": "2026-06-12T08:21:26.693Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "1 changed, 0 rejected — $0.0633",
+    "ts": "2026-06-12T08:21:26.694Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "2 sections, 416 words",
+    "ts": "2026-06-12T08:21:26.699Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Gong homepage CRO teardown",
+    "ts": "2026-06-12T08:21:26.702Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:21:26.706Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 62/100 — FAIL — $0.0271",
+    "ts": "2026-06-12T08:21:44.422Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:21:44.424Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.0069",
+    "ts": "2026-06-12T08:22:00.034Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "07-business-context.evidence.json",
+    "ts": "2026-06-12T08:25:16.736Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:25:16.737Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3927 in / 326 out — $0.0174",
+    "ts": "2026-06-12T08:25:28.748Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 58/100 — FAIL — $0.0583",
+    "ts": "2026-06-12T08:26:09.291Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-12T08:26:09.292Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "5849 in / 419 out — $0.0829",
+    "ts": "2026-06-12T08:26:23.510Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 73/100 — FAIL — $0.1193",
+    "ts": "2026-06-12T08:27:00.245Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 73/100 — did not reach 85",
+    "ts": "2026-06-12T08:27:00.246Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-5]",
+    "ok": true,
+    "detail": "2 sections — calling API…",
+    "ts": "2026-06-12T08:27:00.247Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": true,
+    "detail": "added transition sentence linking messaging changes to funding timeline",
+    "ts": "2026-06-12T08:27:08.366Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "1 changed, 0 rejected — $0.0732",
+    "ts": "2026-06-12T08:27:08.367Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "2 sections, 462 words",
+    "ts": "2026-06-12T08:27:08.371Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Gong homepage CRO teardown",
+    "ts": "2026-06-12T08:27:08.373Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:27:08.377Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 62/100 — FAIL — $0.0286",
+    "ts": "2026-06-12T08:27:32.787Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:27:32.789Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": false,
+    "detail": "score 74/100 — FAIL — $0.0055",
+    "ts": "2026-06-12T08:27:45.358Z"
   }
 ]

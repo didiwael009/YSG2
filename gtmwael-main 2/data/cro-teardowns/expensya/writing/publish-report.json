@@ -1,18 +1,20 @@
 {
-  "publishedAt": "2026-06-11T16:48:09.914Z",
+  "publishedAt": "2026-06-12T08:29:39.651Z",
   "slug": "expensya",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 52,
+    "finalJudgeScore": 42,
     "seoPass": false,
-    "seoScore": 68,
+    "seoScore": 75,
     "unsupportedClaims": [
-      "English-language players (Concur, Expensify, Divvy) competed on multi-geography automation",
-      "Between 2020 and 2026, the European fintech localization pattern",
-      "SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings",
-      "vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves"
+      "Medius acquired it for over $100M",
+      "France's July 2024 e-invoicing mandate",
+      "The March 2023 Swan partnership added embedded corporate cards",
+      "Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale",
+      "competing against all-in-one challengers like Ramp, Brex, and Spendesk",
+      "Standalone expense tools like Expensya were being acquired by AP automation platforms during this period"
     ]
   },
   "consistencyCheck": {
@@ -23,12 +25,12 @@
     ]
   },
   "blockedReasons": [
-    "Final judge FAIL — score 52/100 (need ≥ 90)",
-    "4 unsupported claim(s): English-language players (Concur, Expensify, Divvy) competed on multi-geography automation; Between 2020 and 2026, the European fintech localization pattern",
-    "SEO audit FAIL — score 68/100 (need ≥ 80)"
+    "Final judge FAIL — score 42/100 (need ≥ 90)",
+    "6 unsupported claim(s): Medius acquired it for over $100M; France's July 2024 e-invoicing mandate",
+    "SEO audit FAIL — score 75/100 (need ≥ 80)"
   ],
   "articlePath": "src/content/cro-teardown/articles/expensya.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",

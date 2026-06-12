@@ -1,51 +1,50 @@
 {
-  "seoScore": 71,
+  "seoScore": 74,
   "pass": false,
   "titleScore": 12,
   "metaDescriptionScore": 13,
   "headingStructureScore": 10,
-  "searchIntentScore": 14,
-  "keywordUseScore": 7,
+  "searchIntentScore": 16,
+  "keywordUseScore": 8,
   "readabilityScore": 12,
   "internalLinkingScore": 3,
   "internalLinkingSuggestions": [
-    "Link 'homepage positioning' or 'infrastructure positioning' to a general SaaS positioning article or framework piece",
-    "Link 'mid-funnel buyers' to a buyer-stage education article if one exists in the CRO site",
-    "Link 'A/B testing' or 'homepage testing' from the closing lesson to a testing methodology guide",
-    "Consider a contextual link to other SaaS homepage teardowns (e.g., Salesforce, HubSpot) to build topical depth",
-    "Add a 'related teardowns' or 'see how other companies evolved their messaging' internal CTA at the end"
+    "Link from the business context section to other SaaS homepage teardown articles (e.g., Hubspot, Intercom) to establish the teardown series as a resource hub",
+    "Add a contextual link to a guide on 'testing category education vs. assumption messaging' when the article suggests A/B testing removal of educational nav items",
+    "Link to a pricing page analysis article when discussing navigation changes and bounce rate measurement"
   ],
   "faqSuggestions": [
-    "When should a SaaS company stop educating buyers about their category and focus on positioning as infrastructure?",
-    "How did Gong's homepage messaging shift as the revenue intelligence market matured?",
-    "What is the difference between category education and product positioning on a homepage?",
-    "How does removing category explanation links affect homepage conversion rates for B2B SaaS?",
-    "What role did AI positioning play in Gong's 2026 homepage redesign?",
-    "Should emerging SaaS companies include 'What is [category]?' pages or links on their homepage?"
+    "When should a SaaS company stop explaining its category and assume buyer knowledge?",
+    "How did Gong's homepage messaging change to reflect AI capabilities?",
+    "What navigation items did Gong remove between 2020 and 2026, and why?",
+    "How can I tell if my homepage is over-explaining a settled category?",
+    "What is Revenue AI OS, and how did Gong position it on its homepage?"
   ],
   "contentGapNotes": [
-    "Article lacks the promised '3 snapshots' — only one snapshot (2026 state) is shown with brief references to 2020. Add visual or detailed comparison of the actual 2020, 2023(?), and 2026 homepages to deliver on the title promise.",
-    "No breakdown of specific CTA changes (button text, placement, conversion rate hints if available). 'What changed in... CTAs' is mentioned in the meta description but not covered.",
-    "Missing section navigation analysis — article promises 'navigation' changes but only briefly mentions removed 'What is RI?' link. Full nav structure comparison would strengthen the piece.",
-    "No mention of value props, section copy, or image/visual strategy changes across the 6-year span.",
-    "Article doesn't address how traffic intent likely shifted (organic search volume for 'Revenue Intelligence' vs. 'Revenue AI' — though avoiding traffic predictions).",
-    "No guidance on when/how to test the messaging shift Gong made — suggests timing but no testing framework.",
-    "Missing section on how Gong's buyer persona likely evolved (e.g., from individual contributors to RevOps leaders/executives)."
+    "No visual comparison or side-by-side screenshots of the three snapshots (Jan 2020, mid-period, Jun 2026) — the article references changes but doesn't show them, limiting its value as a 'teardown'",
+    "No explicit conversion metric analysis (e.g., CTR, demo request rate, pricing page conversion) that would validate whether the messaging shifts actually improved outcomes",
+    "Missing specific CTA button text evolution (only headlines and nav are discussed); CTAs are critical in homepage teardowns",
+    "No discussion of how the meta description or page structure changed to support SEO ranking over the 6-year period",
+    "No competitor comparison (Clari, Salesloft, other Revenue Intelligence tools) to contextualize whether Gong's pivot was defensive or offensive",
+    "The actionable test suggestion at the end is generic; no Gong-specific conclusion on whether the category education removal was successful",
+    "No coverage of how mobile vs. desktop versions may have evolved or differed in their messaging strategy"
   ],
   "requiredFixes": [
-    "Deliver on '3 snapshots' promise: include clear before/after comparisons of Jan 2020, one intermediate year (2023?), and Jun 2026 homepage states. Currently only Jun 2026 is detailed.",
-    "Add explicit section on CTA evolution (button text, placement, copy changes) since meta description and intro both promise this element.",
-    "Include full navigation structure comparison table or side-by-side visual to substantiate the 'navigation focused on products and demos' claim.",
-    "Clarify article length and visual assets in meta description — currently suggests full teardown but reads as strategic summary only (8 min read is accurate, but 'what changed in headline, section headings, CTAs, navigation' overpromises coverage)."
+    "Add a clear H1 that matches or closely aligns with the primary keyword 'Gong homepage CRO teardown' — the current H1 ('How Gong rewrote its homepage over 6 years') does not contain the primary keyword",
+    "Include actual visual artifacts (screenshots or descriptions with timestamps) of the three homepage snapshots so readers can verify the claims about H1, navigation, and meta description changes",
+    "Expand the 'Why Gong's homepage changed' section with a third-level heading structure (H3s) to organize the three contexts (market entry, product evolution, industry shift) more clearly",
+    "Add a dedicated section with specific CTA button text changes and their positioning changes over the 6-year span — currently, the teardown focuses only on headlines and navigation"
   ],
   "optionalImprovements": [
-    "Add a 'Takeaway for your team' box at the end with a 1–2 sentence testing hypothesis readers could apply to their own homepage.",
-    "Include estimated timeline of when Gong made each change (early 2021? 2023? 2025?) to help readers calibrate their own roadmap.",
-    "Consider a micro case study: 'If Gong's traffic shifted from [search volume estimate] to [new query cluster], here's what it means for positioning.' (Avoid traffic predictions; focus on intent signals.)",
-    "Add a 'Further reading' section linking to pricing page teardown, product demo flow, or other Gong CRO artifacts if covered elsewhere on the blog.",
-    "Break up the final paragraph with a bullet list of 'When to graduate from category education' signals (e.g., category appears in RFPs, competitor messaging assumes buyer knowledge, etc.)."
+    "Increase paragraph length variation and add 2–3 short bullet lists to break up dense text blocks in the business context section",
+    "Add a 'Key takeaway' callout box after the intro to reinforce the search intent and benefit statement",
+    "Consider softening absolute claims ('stopped explaining what it does') with language like 'appears to have shifted toward' or 'suggests an evolution from'",
+    "Link the article date ('Generated June 2026') more prominently in the intro to signal freshness; currently it's only in metadata",
+    "Add a brief 'What to watch next' or 'Related teardowns' section at the end pointing to articles on SaaS messaging strategy or other B2B homepage analyses",
+    "Include a methodology note explaining how the three snapshots were sourced (Wayback Machine, company archives, etc.)",
+    "Strengthen the secondary keyword 'SaaS conversion optimisation case study' by adding a Results or Lessons Learned section that distills takeaways"
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.005632799999999993,
-  "generatedAt": "2026-06-11T17:04:12.273Z"
+  "costUsd": 0.005500000000000005,
+  "generatedAt": "2026-06-12T08:27:45.356Z"
 }

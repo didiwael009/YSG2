@@ -1,92 +1,125 @@
 {
-  "createdAt": "2026-06-11T16:47:51.826Z",
+  "createdAt": "2026-06-12T08:21:58.085Z",
   "slug": "expensya",
   "source": {
     "finalJudgePass": false,
     "seoPass": false,
-    "finalJudgeScore": 52,
-    "seoScore": 68
+    "finalJudgeScore": 62,
+    "seoScore": 74
   },
   "sectionsToRerun": [
     {
-      "sectionId": "04-messaging-evolution",
+      "sectionId": "01-intro",
       "reasons": [
-        "Judge rerun recommendation: Why the homepage changed — rewrite to remove unsupported claims, add H3 structure, anchor to Expensya evidence only, add founder takeaway",
-        "SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings",
-        "By the end of this teardown, you will know when narrowing your positioning to a single geography strengthens conversion — and when it costs you pipeline",
-        "Remove 'European fintech localization pattern' claim — not in evidence",
-        "Remove unsupported claim about 'embedded bank offerings' competition — not in evidence",
-        "Provide concrete visual evidence or transcribed copy comparisons between Oct 2020 and Jun 2026 snapshots. The article references specific copy but doesn't show side-by-side layout or design changes, w"
+        "Judge rerun recommendation: 01-intro — contains multiple unsupported factual claims and lacks H3 structure",
+        "Identified as weak section by final judge",
+        "Expand the 'sectionsIncluded' field: currently only '01-intro' and '07-business-context' are listed, suggesting major sections are missing (e.g., visual design, navigation, CTAs, headline analysis, se"
       ],
       "priority": "high",
       "source": "both"
     },
     {
-      "sectionId": "06-lessons-for-saas-teams",
+      "sectionId": "04-messaging-evolution",
       "reasons": [
-        "For SaaS teams building in regulated spend categories, the trade-off is clear: vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion ma",
-        "Add founder-facing takeaway after each analytical observation"
+        "Judge rerun recommendation: 07-business-context — contains the majority of unsupported claims (Series B details, acquisition details, competitor names, consolidation wave comment",
+        "The company's headline shifted from 'Automated spend management for all companies' to 'Voici à quoi devrait ressembler la gestion des dépenses' — a change that signals more than localization",
+        "when narrowing geography can strengthen positioning",
+        "signals more than localization — interpretation presented as fact without evidence of intent",
+        "when narrowing geography can strengthen positioning — outcome claim without conversion data",
+        "suggests the homepage now serves a narrower audience — causal claim without visitor behavior evidence",
+        "Medius may be serving non-French markets through separate domains — speculative claim about unobserved pages",
+        "Remove causation claims about company strategy: 'signals more than localization', 'assumes visitors already know', 'when narrowing geography can strengthen positioning'",
+        "Insert actual homepage screenshots or side-by-side visual comparisons at minimum before the intro section — the article claims to be a 'teardown' but provides only text-based analysis",
+        "Verify and fix the meta description: it is 156 characters (including spaces), exceeding the 155-character soft limit by one character"
       ],
-      "priority": "medium",
-      "source": "final-judge"
+      "priority": "high",
+      "source": "both"
     },
     {
-      "sectionId": "01-intro",
+      "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "Clarify the sectionsIncluded note—currently shows ['01-intro', '07-business-context'], suggesting missing sections. Either expand the article to include those sections or update metadata to reflect wh",
-        "The body text is very dense with long paragraphs (esp. the second section). Break up the three-sentence paragraphs into scannable chunks with bullets or shorter sentences to improve readability score."
+        "The old site offered a free trial and explained features to English-speaking prospects of any company size",
+        "is consistent with a shift away from self-serve trial motions toward deal-driven sales cycles — causation claim without sales motion data"
       ],
-      "priority": "low",
-      "source": "seo-audit"
+      "priority": "high",
+      "source": "final-judge"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "English-language players (Concur, Expensify, Divvy) competed on multi-geography automation",
+      "issue": "The new site assumes visitors already know what expense management should look like",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Between 2020 and 2026, the European fintech localization pattern",
+      "issue": "Expensya closed a $20M Series B in April 2021 to fund European expansion",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves",
+      "issue": "then integrated Swan payment cards in March 2023",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Why the homepage changed",
+      "issue": "Stockholm-based Medius acquired Expensya in July 2023 for over $100M",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Remove competitor names (Concur, Expensify, Divvy) — not in evidence",
+      "issue": "The French-only homepage suggests Medius may be serving non-French markets through separate domains or Medius-branded pages",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Remove conversion predictions about 'costs you pipeline', 'filters exploratory traffic', 'conversion math improves' — no data supports these",
+      "issue": "This maps to the broader SaaS spend consolidation wave: standalone expense tools like Expensya were absorbed by AP platforms (Medius, Coupa) or outcompeted by all-in-one challengers (Ramp, Brex, Navan",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Add H3 subheadings to 'Why the homepage changed' section to break down the analysis",
+      "issue": "when doing so will cost you pipeline",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Break 103-word paragraph (starts 'Between 2020 and 2026...') into shorter blocks",
+      "issue": "if you find zero, you may have overcorrected toward simplicity and lost discovery-stage filtering",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Break 128-word paragraph (starts 'This evolution maps...') into shorter blocks",
+      "issue": "07-business-context",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Add specific runnable test at end anchored to Expensya evidence (not generic 'trade-off' advice)",
+      "issue": "All analytical sections — missing H3 structure",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Rewrite final paragraph to anchor to Expensya-specific evidence rather than category-level generalization",
+      "issue": "The new site assumes visitors already know what expense management should look like — assertion about visitor knowledge not traceable to evidence",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Section 05-cta-navigation-evolution (low priority)",
+      "issue": "when doing so will cost you pipeline — conversion prediction without data",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "you may have overcorrected toward simplicity and lost discovery-stage filtering — outcome prediction without evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove all specific facts not in evidence: $20M Series B figure, April 2021 date, Swan integration March 2023 date, Stockholm location, July 2023 acquisition date, $100M acquisition price, competitor ",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove conversion predictions: 'when doing so will cost you pipeline', 'you may have overcorrected toward simplicity and lost discovery-stage filtering'",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add H3 subheadings to every analytical section — currently no H3 structure present in business-context section",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Anchor every analytical paragraph to specific evidence from Expensya — remove generic SaaS consolidation wave commentary",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Section 06-lessons-for-saas-teams (medium priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    },
+    {
+      "issue": "Section 03-visual-timeline (low priority)",
       "reason": "Exceeded --max-rerun-sections cap of 3"
     }
   ]

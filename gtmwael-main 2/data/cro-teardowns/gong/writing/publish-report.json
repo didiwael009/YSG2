@@ -1,20 +1,20 @@
 {
-  "publishedAt": "2026-06-11T17:04:46.986Z",
+  "publishedAt": "2026-06-12T08:29:39.867Z",
   "slug": "gong",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 45,
+    "finalJudgeScore": 62,
     "seoPass": false,
-    "seoScore": 71,
+    "seoScore": 74,
     "unsupportedClaims": [
-      "Gong entered as a conversation intelligence vendor in a sales tech landscape crowded with point solutions",
-      "By 2020, 'Revenue Intelligence' was still novel enough to warrant a dedicated navigation item",
-      "The early homepage served mid-funnel buyers discovering the category",
-      "once your category becomes RFP vocabulary, you graduate from educator to OS",
-      "Wait until discovery calls stop asking what your category means",
-      "premature infrastructure positioning confuses buyers still Googling '[category] + definition'"
+      "Gong raised $200 million at a $2.2 billion valuation in September 2020",
+      "$250 million at $7.25 billion just nine months later",
+      "By Q2 2021, the company had crossed 2,000 customers including three Fortune 20 accounts",
+      "Gong publicly announced the RightBound acquisition",
+      "Gartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025",
+      "Clari and Salesloft merged"
     ]
   },
   "consistencyCheck": {
@@ -25,12 +25,12 @@
     ]
   },
   "blockedReasons": [
-    "Final judge FAIL — score 45/100 (need ≥ 90)",
-    "6 unsupported claim(s): Gong entered as a conversation intelligence vendor in a sales tech landscape crowded with point solutions; By 2020, 'Revenue Intelligence' was still novel enough to warrant a dedicated navigation item",
-    "SEO audit FAIL — score 71/100 (need ≥ 80)"
+    "Final judge FAIL — score 62/100 (need ≥ 90)",
+    "6 unsupported claim(s): Gong raised $200 million at a $2.2 billion valuation in September 2020; $250 million at $7.25 billion just nine months later",
+    "SEO audit FAIL — score 74/100 (need ≥ 80)"
   ],
   "articlePath": "src/content/cro-teardown/articles/gong.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",

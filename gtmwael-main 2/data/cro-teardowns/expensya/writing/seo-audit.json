@@ -1,48 +1,54 @@
 {
-  "seoScore": 68,
+  "seoScore": 75,
   "pass": false,
   "titleScore": 12,
   "metaDescriptionScore": 13,
-  "headingStructureScore": 8,
-  "searchIntentScore": 14,
+  "headingStructureScore": 11,
+  "searchIntentScore": 16,
   "keywordUseScore": 7,
-  "readabilityScore": 11,
+  "readabilityScore": 13,
   "internalLinkingScore": 3,
   "internalLinkingSuggestions": [
-    "Link 'SaaS homepage CRO teardown' phrase to a foundational guide or index page listing other teardowns in the series",
-    "Link 'European fintech localization pattern' to a related article on geographic positioning strategy if one exists",
-    "Link 'spend management category' to a primer or resource on competitive landscape analysis",
-    "Add contextual link from 'A/B test analysis' mention to methodology or framework article explaining how teardowns are conducted"
+    "Link 'SaaS homepage' references to a guide on SaaS homepage best practices or CRO frameworks",
+    "Link 'Medius acquisition' context to articles on SaaS consolidation trends or acquihire patterns",
+    "Link 'free trial vs demo' positioning to conversion strategy content comparing trial-gating vs demo-booking",
+    "Link 'e-invoicing mandate' to regulatory compliance content for fintech/spend management",
+    "Add a CTA linking to other CRO teardowns in the series at the end of the article"
   ],
   "faqSuggestions": [
-    "Why did Expensya switch from 'Free trial' to 'Book a demo' as a CTA?",
-    "How does switching to French-language messaging affect international user acquisition for SaaS?",
-    "What is the geographic positioning trade-off between localization and exploratory traffic?",
-    "How do regulated categories like spend management differ in homepage positioning from unregulated SaaS?",
-    "When should a SaaS company remove company-size segmentation from its homepage navigation?"
+    "When should a SaaS company switch from a free trial to a demo-booking CTA?",
+    "How does geographic narrowing affect SaaS homepage conversion rates?",
+    "What does a homepage look like after acquisition by a larger platform?",
+    "How does regulatory change (like e-invoicing mandates) influence product positioning on a homepage?",
+    "Should multilingual SaaS companies maintain separate homepages per region or use one global site?",
+    "What are the signs your company is exiting a market through product changes?"
   ],
   "contentGapNotes": [
-    "The article mentions two snapshots but doesn't show actual visual or design comparisons—consider adding before/after imagery or side-by-side layout breakdowns",
-    "No data on conversion rate impact—while hard rules forbid certainty claims, the article could frame hypothesized friction points from the CTA change (free trial → demo booking)",
-    "Missing tactical details on how the section headings changed (what were the Oct 2020 section names?)—readers need concrete evidence to replicate the analysis",
-    "No mention of how Expensya's product scope or feature set may have evolved in parallel with messaging—positioning changes often correlate with product maturation",
-    "Absent competitive framing—how did Concur, Expensify, and Divvy's homepages evolve in the same period?",
-    "No discussion of traffic source mix—did the French-first approach shift organic search queries, paid keyword performance, or direct/referral channels?"
+    "Article lacks side-by-side visual comparison (screenshots or annotated images) of the Oct 2020 vs Jun 2026 homepage versions — this is a core teardown element and its absence weakens the SEO value for users expecting visual analysis",
+    "No data on Expensya's actual traffic/conversion impact from these changes — article acknowledges this is speculative reading of positioning but doesn't clearly frame limitations",
+    "Missing analysis of the navigation menu structure changes between the two versions",
+    "No discussion of mobile vs desktop changes, which are critical for homepage teardowns",
+    "Lacks discussion of trust signals (testimonials, security badges, customer logos) if they existed on either version",
+    "No mention of pricing/packaging visibility changes between versions (if applicable)",
+    "Article doesn't address what happened to non-French language variants or redirect strategy, which impacts SEO (hreflang, canonical path handling)"
   ],
   "requiredFixes": [
-    "Expand H2 and H3 hierarchy—currently only two H2s ('How the homepage changed' and implied sections) with no subheadings. Add at least 2–3 more logical sections (e.g., 'Headline evolution', 'CTA and navigation changes', 'Messaging implications') to improve scannability and keyword targeting.",
-    "Provide concrete visual evidence or transcribed copy comparisons between Oct 2020 and Jun 2026 snapshots. The article references specific copy but doesn't show side-by-side layout or design changes, which weakens credibility for a 'teardown' format.",
-    "Clarify the sectionsIncluded note—currently shows ['01-intro', '07-business-context'], suggesting missing sections. Either expand the article to include those sections or update metadata to reflect what's actually included.",
-    "The body text is very dense with long paragraphs (esp. the second section). Break up the three-sentence paragraphs into scannable chunks with bullets or shorter sentences to improve readability score."
+    "Add actual screenshots or high-quality visual comparisons of both homepage versions side-by-side — without this, the article is incomplete for a 'teardown' genre and will underperform search intent",
+    "Clarify in the intro that this analysis is based on available snapshots and market signals, not confirmed internal CRO data or analytics — avoid implying certainty about conversion impact",
+    "The H2 'Why Expensya abandoned English...' makes a strong claim ('abandoned') — soften language or provide more definitive proof of deliberate market exit vs natural consolidation",
+    "H3 'Quick test: does your homepage assume English-speaking international buyers?' is actionable but disconnected from Expensya's specific teardown — either move it to a separate 'Lessons learned' section or reframe it as a direct parallel to Expensya's shift",
+    "Expand the 'sectionsIncluded' metadata — currently only includes intro and business context, but article lacks detailed CRO changes section (headline copy, CTA wording, layout, visual changes)"
   ],
   "optionalImprovements": [
-    "Add a 'Key takeaways' section at the end summarizing the French localization trade-off for quick skimming",
-    "Include a 'What other SaaS teardowns reveal' link suggestion pointing to similar category-consolidation case studies",
-    "Strengthen keyword use by explicitly restating 'Expensya homepage CRO teardown' or 'homepage redesign' once more in the middle of the article body (currently concentrated in intro)",
-    "Add a brief methodology note explaining how snapshots were captured and why Oct 2020 and Jun 2026 were chosen as comparison points",
-    "Consider a small 'Lessons for your team' subsection that frames the Expensya pattern in terms of other regulated SaaS (fintech, healthcare, compliance tools) to broaden relevance"
+    "Add a brief 'Timeline' section showing key dates: Oct 2020 (snapshot 1), Mar 2023 (Swan partnership), 2023 (Medius acquisition announced), Jul 2024 (French e-invoicing mandate), Jun 2026 (snapshot 2) — helps readers connect business events to homepage changes",
+    "Include a 'Key CRO changes' table summarizing the before/after for: headline, primary CTA, target audience, product focus, value prop — improves scannability and SEO for featured snippets",
+    "Add 1–2 sentences on how Expensya's competitor set (Ramp, Brex, Spendesk, etc.) positioned their homepages during the same period — provides context and depth",
+    "Consider adding a 'What this means for your SaaS homepage' conclusion that directly ties back to primary keyword 'SaaS homepage CRO teardown'",
+    "Expand 'Expensya's homepage shifted from... to...' passages with actual quoted copy and visual annotations for clarity",
+    "Add internal links to any related content on acquisition-driven product pivots or geographic narrowing strategies",
+    "Include a note on methodology (web archive snapshots, manual analysis) to build credibility"
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.005452800000000008,
-  "generatedAt": "2026-06-11T16:47:51.817Z"
+  "costUsd": 0.007523200000000008,
+  "generatedAt": "2026-06-12T08:27:22.164Z"
 }

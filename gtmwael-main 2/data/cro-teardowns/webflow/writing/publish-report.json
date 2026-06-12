@@ -1,20 +1,20 @@
 {
-  "publishedAt": "2026-06-11T17:04:47.047Z",
+  "publishedAt": "2026-06-12T08:29:40.088Z",
   "slug": "webflow",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 45,
+    "finalJudgeScore": 58,
     "seoPass": false,
-    "seoScore": 76,
+    "seoScore": 71,
     "unsupportedClaims": [
-      "Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites",
-      "The period also saw AI-native search interfaces emerge as distribution channels",
-      "forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone",
-      "Webflow pivoted from capability positioning toward outcome-based enterprise messaging",
-      "elevating 'Contact Sales' to co-primary CTA",
-      "This maps to the broader SaaS category creation pattern: companies with proven product-market fit reposition into newly named categories to escape commoditization in saturated markets"
+      "raised over $330 million between 2021 and 2022, reaching a $4 billion valuation",
+      "reported enterprise revenue growth from $1 million to $8 million in 2021 alone",
+      "Framer captured designer mindshare",
+      "Wix launched Studio for agencies",
+      "The 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization",
+      "In 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development"
     ]
   },
   "consistencyCheck": {
@@ -23,12 +23,12 @@
     "warnings": []
   },
   "blockedReasons": [
-    "Final judge FAIL — score 45/100 (need ≥ 90)",
-    "6 unsupported claim(s): Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites; The period also saw AI-native search interfaces emerge as distribution channels",
-    "SEO audit FAIL — score 76/100 (need ≥ 80)"
+    "Final judge FAIL — score 58/100 (need ≥ 90)",
+    "6 unsupported claim(s): raised over $330 million between 2021 and 2022, reaching a $4 billion valuation; reported enterprise revenue growth from $1 million to $8 million in 2021 alone",
+    "SEO audit FAIL — score 71/100 (need ≥ 80)"
   ],
   "articlePath": "src/content/cro-teardown/articles/webflow.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",

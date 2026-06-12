@@ -1,55 +1,52 @@
 {
-  "seoScore": 76,
+  "seoScore": 71,
   "pass": false,
   "titleScore": 12,
   "metaDescriptionScore": 13,
-  "headingStructureScore": 11,
-  "searchIntentScore": 16,
+  "headingStructureScore": 9,
+  "searchIntentScore": 14,
   "keywordUseScore": 8,
-  "readabilityScore": 13,
+  "readabilityScore": 12,
   "internalLinkingScore": 3,
   "internalLinkingSuggestions": [
-    "Link 'category creation' to a guide on SaaS positioning or category strategy article within the blog",
-    "Link 'AI-native search interfaces' to a related teardown or post on AI distribution if one exists",
-    "Link 'sales-assisted team and department deals' to an article on enterprise SaaS go-to-market shifts",
-    "Add a CTA at the end linking to other SaaS homepage teardowns (Figma, Notion, etc.) for comparison",
-    "Link 'product-market fit' to a foundational SaaS resource or glossary entry"
+    "Link 'SaaS homepage strategy' mentions to related teardown articles or a guide on homepage messaging frameworks",
+    "Link the '2024 Intellimize acquisition' reference to a broader article on no-code platform consolidation or AI in SaaS, if available",
+    "Add a CTA link at the end pointing to related CRO teardowns (e.g., Framer, Wix Studio) to establish topical authority",
+    "Link 'viral bottom-up adoption' to an internal guide or framework on product-led growth vs. sales-led growth strategies"
   ],
   "faqSuggestions": [
-    "Why did Webflow change its homepage headline from 'Break the code barrier' to 'Make your website a growth engine'?",
-    "What is AEO (AI Engine Optimization) and why is Webflow promoting it on its homepage?",
-    "How does Webflow's homepage evolution reflect broader SaaS positioning trends?",
-    "What does 'repositioning upmarket' mean and how did Webflow do it?",
-    "Should SaaS companies always move from feature-focused to outcome-focused messaging?",
-    "How did Webflow balance self-serve and sales-assisted CTAs during its repositioning?"
+    "When should a SaaS company shift from 'free trial' CTAs to 'contact sales' on their homepage?",
+    "How do you know if your homepage messaging is selling capability instead of outcomes?",
+    "What does Webflow's headline change from 'Break the code barrier' to 'Make your website a growth engine' reveal about target audience shifts?",
+    "How did Webflow's $330 million funding round influence its homepage messaging strategy?",
+    "What is a Website Experience Platform, and why did Webflow adopt this positioning?"
   ],
   "contentGapNotes": [
-    "Article lacks specific visual/screenshot evidence — no before/after images, color changes, layout shifts, or CTA button placements shown. For a CRO teardown, visual evidence is essential.",
-    "No discussion of actual conversion metrics, traffic changes, or A/B test results — article analyzes positioning but offers no data on performance impact.",
-    "Missing competitive context — how do similar platforms (Wix, Squarespace, Adobe, Webflow alternatives) handle this same evolution? Brief comparison would strengthen analysis.",
-    "No segment-specific messaging analysis — article doesn't break down how Webflow tailors messaging for designers vs. agencies vs. enterprises within the same page.",
-    "Limited CTA analysis — article mentions 'Contact Sales' elevation but doesn't analyze button copy, placement, urgency signals, or multi-step conversions.",
-    "No mention of mobile optimization changes or responsive design implications across the 6-year span.",
-    "Missing navigation structure analysis — top menu, footer links, and information architecture changes not addressed.",
-    "Article lacks actionable takeaways — 'What can your team implement from this?' would strengthen practical value."
+    "The article references 2 snapshots (Jan 2020 and Jun 2026) but does not show the actual homepage screenshots, comparative visuals, or detailed before/after analysis of specific sections (navigation, hero, social proof, pricing placement, etc.). This weakens the 'teardown' credibility.",
+    "No discussion of traffic, conversion rate, or engagement metrics pre/post-change — important context for a CRO teardown, even if speculative.",
+    "Missing analysis of how secondary pages (product tour, pricing, case studies) may have evolved in parallel with the homepage shift.",
+    "No mention of Webflow's target persona evolution in detail — who specifically is the 2026 buyer vs. the 2020 user, and how does copy reflect this?",
+    "The 8% layoff and AI pivot are mentioned but not connected to specific homepage copy changes (e.g., which sections were removed, which were added to reflect AI features).",
+    "No analysis of competitor homepages (Framer, Wix Studio) mentioned in context — what messaging choices did they make differently?",
+    "Missing detail on the 'Contact Sales' CTA placement, prominence, and secondary CTAs — where did it appear and what was its conversion performance context?"
   ],
   "requiredFixes": [
-    "Expand H2 hierarchy: Article currently has only one content H2 ('Why the homepage changed') after the intro H1. Add at least 2–3 more structural H2s to cover: 'Headline Evolution', 'CTA & Navigation Changes', 'Messaging Themes', 'Lessons for SaaS Teams'.",
-    "Add visual evidence: Insert before/after screenshots or link to web archive snapshots. Without images, this reads as analysis essay, not teardown.",
-    "Clarify search intent match: Article analyzes *why* Webflow changed, but a searcher looking for 'Webflow homepage CRO teardown' may want to *see* the changes first. Restructure to lead with what changed, then explain why.",
-    "Strengthen keyword placement: Primary keyword 'Webflow homepage CRO teardown' appears only in title and meta description. Embed it naturally 1–2 times in body (e.g., 'This Webflow homepage CRO teardown reveals...').",
-    "Add data/evidence caveat: Article makes positioning claims (e.g., 'shift toward sales-assisted team deals') without citing conversion data or Webflow's public statements. Add a note clarifying these are inference-based observations, not confirmed metrics."
+    "Add actual homepage screenshots or detailed visual comparisons of the Jan 2020 and Jun 2026 versions. A CRO teardown without visuals is incomplete and reduces credibility with the target audience (growth/CRO practitioners).",
+    "Clarify the structure: The article says '2 snapshots' but only one full headline change is deeply analyzed. Expand section-by-section analysis to justify the 'teardown' format (hero, value props, social proof, CTAs, footer, etc.).",
+    "The article mentions 'sectionsIncluded: [\"01-intro\", \"07-business-context\"]' but the body only shows intro + business context. If other sections were planned (CRO insights, tactical lessons, metrics), publish them or remove the reference.",
+    "Define 'Website Experience Platform' inline or link to where this is explained — it's a claimed positioning shift but readers unfamiliar with Webflow may not understand the implication.",
+    "The '5-minute test' box at the end feels tacked on and is not connected back to Webflow's specific example. Either expand it with Webflow's own CTA audit or move it to a separate guide."
   ],
   "optionalImprovements": [
-    "Create a dedicated 'Key Changes at a Glance' table comparing Jan 2020 vs Jun 2026 (headline, primary CTA, subheading, navigation structure).",
-    "Add a 'Risks of This Repositioning' section — e.g., does upmarket messaging alienate existing self-serve customer base? Did pricing change align with messaging?",
-    "Expand 'Why the homepage changed' to include subsections: competitive landscape pressure, product evolution (AI features added?), market segment shift, or sales motion change.",
-    "Add a final 'Checklist for Your SaaS Homepage' — actionable questions teams should ask themselves if considering a similar pivot.",
-    "Consider adding a brief 'Webflow's Positioning in Timeline' sidebar noting product launches (AI tools, pricing tiers) that may have driven the homepage change.",
-    "Link secondary keywords more explicitly in body text (currently underused: 'Webflow messaging evolution', 'homepage A/B test analysis').",
-    "Strengthen opening with a hook question: 'Are you trapped in feature positioning? Here's how Webflow escaped.'"
+    "Expand the intro to explicitly state what readers will learn: 'You'll see how a $4B SaaS company trades viral adoption for enterprise revenue — and when that trade works.' This clarifies search intent upfront.",
+    "Add a brief comparison table (Jan 2020 vs. Jun 2026) with headline, primary CTA, secondary CTAs, and messaging pillar — makes it scannable.",
+    "Include a 'Key Insight' callout box highlighting the core finding: the shift from selling capability (code-free design) to outcomes (growth engine).",
+    "Add a 'How to apply this' section with 2–3 diagnostic questions for SaaS teams auditing their own homepages — ties the teardown to actionable takeaways.",
+    "Strengthen the meta description by testing inclusion of 'enterprise' or 'growth' — current version is good but could signal more urgency (e.g., '...how Webflow shifted from designer tool to enterprise platform in 6 years').",
+    "Add internal metadata: suggest related keywords like 'B2B SaaS homepage strategy,' 'conversion rate optimization case study,' and 'landing page messaging frameworks' to improve topical clustering.",
+    "Clarify the timeframe 'Jan 2020 to Jun 2026' in the H1 — it's 6+ years, which is noteworthy for a CRO study but readers may wonder if this is too old to be relevant."
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.00742799999999999,
-  "generatedAt": "2026-06-11T17:04:21.022Z"
+  "costUsd": 0.007503199999999988,
+  "generatedAt": "2026-06-12T08:22:29.789Z"
 }

@@ -226,5 +226,509 @@
     "ok": false,
     "detail": "score 76/100 — FAIL — $0.0074",
     "ts": "2026-06-11T17:04:21.025Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-5",
+    "ts": "2026-06-12T08:07:28.084Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift validation",
+    "ok": true,
+    "detail": "confidence: high",
+    "ts": "2026-06-12T08:07:59.056Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json saved",
+    "ok": true,
+    "detail": "$0.0243",
+    "ts": "2026-06-12T08:07:59.057Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:07:59.059Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": true,
+    "detail": "3 paragraphs — $0.0115",
+    "ts": "2026-06-12T08:08:08.223Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-12T08:08:08.225Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json saved",
+    "ok": true,
+    "detail": "keyword: \"Webflow homepage teardown\"  $0.0033",
+    "ts": "2026-06-12T08:08:15.918Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-target.json",
+    "ok": true,
+    "detail": "already exists — manual keyword preserved",
+    "ts": "2026-06-12T08:08:15.919Z"
+  },
+  {
+    "section": "_visual-analysis",
+    "step": "  Visual analyzer: analyzing 2 of 2 screenshots",
+    "ok": true,
+    "ts": "2026-06-12T08:08:15.920Z"
+  },
+  {
+    "section": "_visual-analysis",
+    "step": "  ✓ visual-analysis.json — growth-stage-to-enterprise-platform · $0.0030",
+    "ok": true,
+    "ts": "2026-06-12T08:08:27.232Z"
+  },
+  {
+    "section": "_context-research",
+    "step": "  Context researcher: researching Webflow (2020-01 → current)",
+    "ok": true,
+    "ts": "2026-06-12T08:08:27.234Z"
+  },
+  {
+    "section": "_context-research",
+    "step": "  ✓ business-context-research.json — 6 events, confidence: high · $0.3756",
+    "ok": true,
+    "ts": "2026-06-12T08:09:09.685Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Webflow",
+    "ok": true,
+    "ts": "2026-06-12T08:09:09.689Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded 11 prior theses",
+    "ok": true,
+    "ts": "2026-06-12T08:09:09.690Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  ✓ article-outline.json — angle: \"Webflow executed a coordinated repositioning from bottom-up viral desi…\" · $0.0251",
+    "ok": true,
+    "ts": "2026-06-12T08:09:25.449Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-12T08:09:25.451Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:09:25.452Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "07-business-context.evidence.json",
+    "ts": "2026-06-12T08:09:25.455Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:09:25.456Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3117 in / 181 out — $0.0128",
+    "ts": "2026-06-12T08:09:32.605Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3848 in / 331 out — $0.0172",
+    "ts": "2026-06-12T08:09:36.955Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.0420",
+    "ts": "2026-06-12T08:10:01.665Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": false,
+    "detail": "score 72/100 — did not reach 85",
+    "ts": "2026-06-12T08:10:01.666Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 62/100 — FAIL — $0.0536",
+    "ts": "2026-06-12T08:10:10.889Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-12T08:10:10.891Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "5478 in / 302 out — $0.0753",
+    "ts": "2026-06-12T08:10:19.942Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.1144",
+    "ts": "2026-06-12T08:10:54.063Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 72/100 — did not reach 85",
+    "ts": "2026-06-12T08:10:54.064Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-12T08:10:54.068Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": true,
+    "detail": "4 cards, 0 warning(s) — $0.0171",
+    "ts": "2026-06-12T08:11:08.698Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0171",
+    "ts": "2026-06-12T08:11:08.699Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-5]",
+    "ok": true,
+    "detail": "2 sections — calling API…",
+    "ts": "2026-06-12T08:11:08.701Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": true,
+    "detail": "added transition linking to prior analysis",
+    "ts": "2026-06-12T08:11:17.529Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "1 changed, 0 rejected — $0.0574",
+    "ts": "2026-06-12T08:11:17.531Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "2 sections, 397 words",
+    "ts": "2026-06-12T08:11:17.535Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Webflow homepage CRO teardown",
+    "ts": "2026-06-12T08:11:17.537Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:11:17.544Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 62/100 — FAIL — $0.0258",
+    "ts": "2026-06-12T08:11:38.263Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:11:38.265Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": false,
+    "detail": "score 76/100 — FAIL — $0.0065",
+    "ts": "2026-06-12T08:11:56.011Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-5",
+    "ts": "2026-06-12T08:19:00.395Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift validation",
+    "ok": true,
+    "detail": "confidence: high",
+    "ts": "2026-06-12T08:19:34.423Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json saved",
+    "ok": true,
+    "detail": "$0.0242",
+    "ts": "2026-06-12T08:19:34.425Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:19:34.427Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 2 is 74 words — must be ≤60",
+    "ts": "2026-06-12T08:19:43.894Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": false,
+    "detail": "3 paragraphs — $0.0116",
+    "ts": "2026-06-12T08:19:43.896Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-12T08:19:43.898Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json saved",
+    "ok": true,
+    "detail": "keyword: \"Webflow homepage teardown\"  $0.0031",
+    "ts": "2026-06-12T08:19:50.175Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-target.json",
+    "ok": true,
+    "detail": "already exists — manual keyword preserved",
+    "ts": "2026-06-12T08:19:50.176Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-12T08:19:50.180Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:19:50.181Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "07-business-context.evidence.json",
+    "ts": "2026-06-12T08:19:50.182Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:19:50.183Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3117 in / 206 out — $0.0132",
+    "ts": "2026-06-12T08:19:57.807Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3848 in / 279 out — $0.0164",
+    "ts": "2026-06-12T08:20:02.132Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0425",
+    "ts": "2026-06-12T08:20:23.738Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-12T08:20:23.739Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 62/100 — FAIL — $0.0522",
+    "ts": "2026-06-12T08:20:38.623Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-12T08:20:38.624Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "5432 in / 343 out — $0.0743",
+    "ts": "2026-06-12T08:20:53.038Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.1082",
+    "ts": "2026-06-12T08:21:23.827Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 78/100 — did not reach 85",
+    "ts": "2026-06-12T08:21:23.829Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-12T08:21:23.833Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards: ⚠",
+    "ok": false,
+    "detail": "card 2: body uses forbidden term \"category ownership\"",
+    "ts": "2026-06-12T08:21:40.198Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": false,
+    "detail": "4 cards, 1 warning(s) — $0.0162",
+    "ts": "2026-06-12T08:21:40.200Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0162",
+    "ts": "2026-06-12T08:21:40.201Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-5]",
+    "ok": true,
+    "detail": "2 sections — calling API…",
+    "ts": "2026-06-12T08:21:40.204Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": true,
+    "detail": "added transition linking to prior messaging analysis",
+    "ts": "2026-06-12T08:21:46.895Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "1 changed, 0 rejected — $0.0635",
+    "ts": "2026-06-12T08:21:46.896Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "2 sections, 439 words",
+    "ts": "2026-06-12T08:21:46.901Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Webflow homepage CRO teardown",
+    "ts": "2026-06-12T08:21:46.903Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-5]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:21:46.908Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 58/100 — FAIL — $0.0291",
+    "ts": "2026-06-12T08:22:12.416Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-12T08:22:12.418Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": false,
+    "detail": "score 71/100 — FAIL — $0.0075",
+    "ts": "2026-06-12T08:22:29.791Z"
   }
 ]

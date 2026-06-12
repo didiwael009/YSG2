@@ -3,24 +3,24 @@
     "number": "01",
     "title": "Webflow replaced \"Break the code barrier\" with \"Make your website a growth engine\"",
     "category": "Positioning",
-    "body": "The original headline positioned Webflow as a no-code tool for designers. The new headline positions it as a marketing platform for revenue-focused teams. This suggests the company is moving upmarket — targeting buyers who care about business outcomes, not creative freedom. The shift from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** is a filtering decision: it will read as more relevant to CMOs and less exciting to solo designers."
+    "body": "The original headline spoke to designers who wanted to build without code. The new headline speaks to marketers who want business outcomes. This suggests a shift from product capability to business value. The change likely signals that Webflow is targeting teams who control budget and measure ROI, not individual practitioners exploring tools."
   },
   {
     "number": "02",
-    "title": "\"Agentic web marketing platform\" appears in both the page title and the first H2",
+    "title": "\"Agentic web marketing platform\" appears three times — that's a category claim",
     "category": "Messaging",
-    "body": "Webflow now calls itself an **\"agentic web marketing platform\"** in the page title and again in the hero section. The term \"agentic\" is uncommon in mainstream marketing copy — it may signal a strategic bet on AI-native positioning. The repetition across title and H2 suggests the company wants search engines and skimmers to associate Webflow with automation and agent-driven workflows, not just visual design."
+    "body": "The new page title and opening H2 both use **\"agentic web marketing platform\"**. This phrase appears nowhere in the 2020 version. Webflow is naming a category that didn't exist six years ago. The repetition suggests this is deliberate positioning language, not a one-off experiment. It may indicate a play for category ownership in AI-era web tooling."
   },
   {
     "number": "03",
-    "title": "The new meta description mentions \"AI search\" and \"AEO\" — neither appeared in 2020",
+    "title": "The meta description now starts with \"Design, build, optimize, and rank in AI search\"",
     "category": "Strategy",
-    "body": "The updated meta description now includes **\"optimize, and rank in AI search\"** and references **\"AEO\"** (AI Engine Optimization). These terms did not exist in the 2020 version. This change likely reflects Webflow's response to the rise of AI-powered search engines like ChatGPT and Perplexed. The company is signaling to buyers that it solves a new category problem — not just SEO, but discoverability in LLM-mediated search results."
+    "body": "The old meta description led with **\"Build responsive websites in your browser\"** — a product description. The new version opens with verbs tied to business outcomes and ends with **\"Trusted by over 300k teams\"**. This is a shift from explaining what the tool does to asserting who uses it and why. It suggests confidence in brand recognition over feature education."
   },
   {
     "number": "04",
-    "title": "Webflow removed \"Get up and running fast\" and added \"From idea to impact, faster\"",
-    "category": "Brand",
-    "body": "The original section heading **\"Get up and running fast\"** emphasized ease of use and speed to first publish. The new heading **\"From idea to impact, faster\"** emphasizes speed to business outcome. This is a semantic shift: the old frame appealed to creators who wanted to launch quickly; the new frame appeals to marketers who want to measure results. The evolution points to a buyer who already knows what they want to build."
+    "title": "Webflow removed \"Who uses Webflow\" and added \"300,000+ brands move the needle\"",
+    "category": "Trust",
+    "body": "The section heading change is subtle but meaningful. The old phrasing invited exploration. The new phrasing asserts scale and outcome. Pairing the number with **\"move the needle\"** ties credibility to results, not just adoption. This likely signals a shift from attracting curious visitors to reassuring buyers who are already qualified and comparing platforms."
   }
 ]

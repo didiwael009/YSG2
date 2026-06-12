@@ -1,26 +1,26 @@
 [
   {
     "number": "01",
-    "title": "Expensya replaced \"Automated spend management for all companies\" with a French aspirational statement",
+    "title": "Expensya replaced \"Automated spend management for all companies\" with French-language messaging",
     "category": "Positioning",
-    "body": "The H1 shifted from **\"Automated spend management for all companies\"** to **\"Voici à quoi devrait ressembler la gestion des dépenses\"** (This is what expense management should look like). This is not a translation — it is a reframe. The original named the product category. The new version positions Expensya as the category ideal. The language switch suggests a market-specific roll-out, likely testing French messaging ahead of broader localisation."
+    "body": "The original headline **\"Automated spend management for all companies\"** positioned the product as a universal automation tool. The new French headline **\"Voici à quoi devrait ressembler la gestion des dépenses\"** (This is what expense management should look like) signals a geographic repositioning. This suggests Expensya may be prioritising French-speaking markets or filtering for buyers who prefer localised solutions over English-first SaaS competitors."
   },
   {
     "number": "02",
-    "title": "Expensya removed \"Free trial\" and added \"Réservez une démo\" as the primary CTA",
+    "title": "Removing \"Free trial\" from the CTA set is a sales-motion change, not simplification",
     "category": "Funnel",
-    "body": "The original homepage offered **\"Free trial\"** as a conversion path. The current version replaces it with **\"Réservez une démo\"** (Book a demo). This signals a sales-motion change — from self-serve product-led growth to rep-led qualification. Companies make this shift when average deal size increases or when they need higher-touch onboarding. The CTA now filters for buyers willing to talk before they try."
+    "body": "The primary CTA changed from **\"Free trial\"** to **\"Réservez une démo\"** (Book a demo). This shift moves the conversion path from self-serve trial to assisted sales. It likely indicates Expensya is targeting larger accounts or longer deal cycles where a demo qualifies intent better than a trial signup. The change filters out casual visitors and signals that buyers already know what category they need."
   },
   {
     "number": "03",
-    "title": "New section headings prioritise compliance and risk reduction over automation features",
+    "title": "\"Cartes de paiement & budgets\" and \"Politiques de dépenses\" are new H2s — the product expanded",
     "category": "Messaging",
-    "body": "Early section headings emphasised product completeness: **\"Equip yourself with the most comprehensive business spend and expense management solution\"** and **\"Expensya fully automates your business expenditure\"**. The current homepage leads with **\"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\"** This suggests the team is now targeting finance leaders who care about control and audit trails, not operations teams shopping for automation tools."
+    "body": "The new section headings **\"Cartes de paiement & budgets\"** (Payment cards & budgets) and **\"Politiques de dépenses\"** (Expense policies) did not appear in the 2020 version. These headings suggest Expensya added product capabilities beyond basic expense reporting. The prominence of these sections on the homepage indicates the team now views compliance and card issuance as core selling points, not secondary features."
   },
   {
     "number": "04",
-    "title": "14 new section headings added in 66 months points to a content architecture rebuild, not iteration",
+    "title": "14 new section headings and a full language shift point to a market-focus tightening",
     "category": "Strategy",
-    "body": "The diff shows 14 new H2s added and 7 removed. That volume of structural change is not incremental optimisation — it indicates a full homepage redesign. The new headings include feature categories like **\"Cartes de paiement & budgets\"** and outcome promises like **\"Fini le casse-tête administratif, place à la conformité.\"** This likely reflects a product expansion (payment cards launched) combined with a messaging reset to match evolved buyer expectations."
+    "body": "Expensya added 14 new section headings and removed 7 generic ones like **\"Equip yourself with the most comprehensive business spend and expense management solution\"**. The new headings are shorter, more specific, and entirely in French. This comprehensive content overhaul—paired with the CTA and headline changes—suggests the company decided to own a narrower market segment rather than pitch universal automation to all company sizes."
   }
 ]

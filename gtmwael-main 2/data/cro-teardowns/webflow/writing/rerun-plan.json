@@ -1,19 +1,21 @@
 {
-  "createdAt": "2026-06-11T17:04:21.030Z",
+  "createdAt": "2026-06-12T08:22:29.795Z",
   "slug": "webflow",
   "source": {
     "finalJudgePass": false,
     "seoPass": false,
-    "finalJudgeScore": 45,
-    "seoScore": 76
+    "finalJudgeScore": 58,
+    "seoScore": 71
   },
   "sectionsToRerun": [
     {
       "sectionId": "01-intro",
       "reasons": [
-        "Judge rerun recommendation: Rerun section '01-intro' — remove unsupported competitive claims, add H3 structure with Webflow-specific evidence anchors, add founder takeaways",
-        "Break paragraphs exceeding 60 words (the opening paragraph is 84 words, the second paragraph in 'Why the homepage changed' is 98 words, the final paragraph is 118 words)",
-        "Clarify search intent match: Article analyzes *why* Webflow changed, but a searcher looking for 'Webflow homepage CRO teardown' may want to *see* the changes first. Restructure to lead with what chang"
+        "Judge rerun recommendation: 01-intro — remove causal claim and forward-looking promise; anchor opening to specific evidence",
+        "The 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization",
+        "Identified as weak section by final judge",
+        "Remove forward-looking promise in intro ('After reading this teardown, you'll be able to identify...') — replace with description of what the evidence shows.",
+        "The article mentions 'sectionsIncluded: [\"01-intro\", \"07-business-context\"]' but the body only shows intro + business context. If other sections were planned (CRO insights, tactical lessons, metrics),"
       ],
       "priority": "high",
       "source": "both"
@@ -21,86 +23,65 @@
     {
       "sectionId": "04-messaging-evolution",
       "reasons": [
-        "Judge rerun recommendation: Rerun section '07-business-context' — remove generic SaaS category creation advice, anchor every claim to Webflow evidence, add runnable test",
-        "Webflow pivoted from capability positioning toward outcome-based enterprise messaging",
-        "Webflow pivoted from capability positioning toward outcome-based enterprise messaging — asserts company strategy without evidence",
-        "Remove all competitive landscape claims (WordPress VIP, Adobe Experience Manager, 'crowded no-code space') — none of this appears in the evidence",
-        "Remove AI-native search interfaces claim — not in evidence",
-        "Strengthen keyword placement: Primary keyword 'Webflow homepage CRO teardown' appears only in title and meta description. Embed it naturally 1–2 times in body (e.g., 'This Webflow homepage CRO teardow",
-        "Add data/evidence caveat: Article makes positioning claims (e.g., 'shift toward sales-assisted team deals') without citing conversion data or Webflow's public statements. Add a note clarifying these a"
+        "This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams). — causal claim",
+        "The messaging changes documented above didn't happen in a vacuum — they tracked a deliberate business transformation. — assertion of company intent without internal evidence",
+        "Remove all unsupported factual claims: funding amounts ($330 million, $4 billion valuation), revenue figures ($1M to $8M), layoff percentages (8%), competitor moves (Framer, Wix), acquisition details ",
+        "Rewrite intro to avoid causal claim about 'replacement of one growth model with another' — the evidence shows messaging changed, not that a growth model was replaced or that conversion patterns shifte",
+        "Add H3 subheadings to business context section to break up analytical claims.",
+        "Define 'Website Experience Platform' inline or link to where this is explained — it's a claimed positioning shift but readers unfamiliar with Webflow may not understand the implication."
       ],
-      "priority": "high",
+      "priority": "medium",
       "source": "both"
     },
     {
       "sectionId": "05-cta-navigation-evolution",
       "reasons": [
-        "Judge rerun recommendation: Generate missing analytical sections (headline analysis, meta description analysis, CTA evolution, section heading shift) with H3 subheadings and foun",
-        "elevating 'Contact Sales' to co-primary CTA",
-        "Remove the phrase 'elevating Contact Sales to co-primary CTA' — the evidence shows 'Contact Sales' was added, but contains no information about hierarchy or co-primary status",
-        "Add H3 subheadings analyzing specific evidence items: headline change mechanism, meta description vocabulary shift, section heading evolution",
-        "Expand H2 hierarchy: Article currently has only one content H2 ('Why the homepage changed') after the intro H1. Add at least 2–3 more structural H2s to cover: 'Headline Evolution', 'CTA & Navigation C"
+        "This points to prioritizing predictable enterprise contracts over viral designer adoption — a tradeoff visible in how the page now filters for buyers, not builders. — outcome claim about filtering wit",
+        "Replace business context section with analysis anchored ONLY to the compressed evidence: headline change, meta description change, CTA changes, H2 changes, H3 changes.",
+        "Ground every analytical paragraph in specific evidence from the compressed data — cite the exact headline, CTA label, H2 text, or meta description change being analyzed.",
+        "Clarify the structure: The article says '2 snapshots' but only one full headline change is deeply analyzed. Expand section-by-section analysis to justify the 'teardown' format (hero, value props, soci",
+        "The '5-minute test' box at the end feels tacked on and is not connected back to Webflow's specific example. Either expand it with Webflow's own CTA audit or move it to a separate guide."
       ],
-      "priority": "high",
+      "priority": "medium",
       "source": "both"
     }
   ],
   "skippedIssues": [
     {
-      "issue": "Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites",
+      "issue": "07-business-context — replace entire section with analysis anchored to compressed evidence only; remove all external facts",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "The period also saw AI-native search interfaces emerge as distribution channels",
+      "issue": "raised over $330 million between 2021 and 2022, reaching a $4 billion valuation",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone",
+      "issue": "reported enterprise revenue growth from $1 million to $8 million in 2021 alone",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "This maps to the broader SaaS category creation pattern: companies with proven product-market fit reposition into newly named categories to escape commoditization in saturated markets",
+      "issue": "Framer captured designer mindshare",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Why the homepage changed",
+      "issue": "Wix launched Studio for agencies",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "Entire article structure",
+      "issue": "In 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone — presents market dynamics as fact without evidence",
+      "issue": "07-business-context",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "suggests Webflow pivoted — slightly hedged but still asserts strategic intent",
+      "issue": "After reading this teardown, you'll be able to identify whether your own homepage is still selling capability when it should be selling outcomes — and when that shift becomes safe to make. — forward-l",
       "reason": "cannot map to a specific section — may require manual review"
     },
     {
-      "issue": "This maps to the broader SaaS category creation pattern — generic SaaS advice not anchored to Webflow evidence",
+      "issue": "That funding coincided with reported enterprise revenue growth — implies causation between funding and homepage changes",
       "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "If your brand still requires feature education, this move is premature — conversion prediction about timing",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Add H3 subheadings to the 'Why the homepage changed' section to break up the analytical wall of text",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Add a final section with a specific runnable test anchored to Webflow evidence",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Replace 'forcing website platforms to differentiate' with evidence-based observation about what Webflow's page now emphasizes",
-      "reason": "cannot map to a specific section — may require manual review"
-    },
-    {
-      "issue": "Section 06-lessons-for-saas-teams (medium priority)",
-      "reason": "Exceeded --max-rerun-sections cap of 3"
     },
     {
       "issue": "Section 03-visual-timeline (low priority)",

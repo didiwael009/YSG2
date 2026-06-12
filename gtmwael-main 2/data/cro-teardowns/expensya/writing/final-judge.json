@@ -1,51 +1,59 @@
 {
-  "overallScore": 52,
+  "overallScore": 42,
   "pass": false,
-  "evidenceAccuracy": 10,
+  "evidenceAccuracy": 5,
   "plainLanguage": 12,
-  "scannability": 0,
+  "scannability": 8,
   "searchableHeadings": 7,
-  "specificity": 10,
-  "rhythmAndOpening": 8,
-  "founderTakeaway": 0,
+  "specificity": 6,
+  "rhythmAndOpening": 3,
+  "founderTakeaway": 1,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "Why the homepage changed"
+    "01-intro",
+    "07-business-context"
   ],
   "unsupportedClaims": [
-    "English-language players (Concur, Expensify, Divvy) competed on multi-geography automation",
-    "Between 2020 and 2026, the European fintech localization pattern",
-    "SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings",
-    "vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves"
+    "Medius acquired it for over $100M",
+    "France's July 2024 e-invoicing mandate",
+    "The March 2023 Swan partnership added embedded corporate cards",
+    "Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale",
+    "competing against all-in-one challengers like Ramp, Brex, and Spendesk",
+    "Standalone expense tools like Expensya were being acquired by AP automation platforms during this period"
   ],
   "riskFlags": [
-    "By the end of this teardown, you will know when narrowing your positioning to a single geography strengthens conversion — and when it costs you pipeline",
-    "For SaaS teams building in regulated spend categories, the trade-off is clear: vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves"
+    "TITLE CLAIM: 'How a SaaS Company Exited the English-Speaking Market' — the evidence shows a homepage language change, not a verified market exit strategy. No evidence confirms Expensya stopped serving English customers or closed English acquisition channels.",
+    "OPENING CLAIM: 'This teardown shows how to read a homepage shift as a deliberate market exit' — presents interpretation as methodology without hedging. The evidence does not confirm deliberate exit; it shows a language change.",
+    "CAUSATION CLAIM: 'The homepage shift wasn't gradual drift — it followed a specific acquisition and regulatory timeline' — asserts causal relationship without evidence of company intent or verified timeline.",
+    "STRATEGIC INTENT CLAIM: 'Expensya was repositioned to serve a regulatory moment rather than continue competing as an international SaaS product' — presents company strategy as fact without evidence of internal decision-making.",
+    "STRATEGIC INTENT CLAIM: 'Medius could bundle AP and expense into a unified platform' — asserts company strategy without evidence.",
+    "CONVERSION PREDICTION: 'you may be diluting conversion by staying international when a focused market would convert better' — predicts conversion outcome without data."
   ],
   "requiredFixes": [
-    "Remove competitor names (Concur, Expensify, Divvy) — not in evidence",
-    "Remove 'European fintech localization pattern' claim — not in evidence",
-    "Remove conversion predictions about 'costs you pipeline', 'filters exploratory traffic', 'conversion math improves' — no data supports these",
-    "Remove unsupported claim about 'embedded bank offerings' competition — not in evidence",
-    "Add H3 subheadings to 'Why the homepage changed' section to break down the analysis",
-    "Break 103-word paragraph (starts 'Between 2020 and 2026...') into shorter blocks",
-    "Break 128-word paragraph (starts 'This evolution maps...') into shorter blocks",
-    "Add founder-facing takeaway after each analytical observation",
-    "Add specific runnable test at end anchored to Expensya evidence (not generic 'trade-off' advice)",
-    "Rewrite final paragraph to anchor to Expensya-specific evidence rather than category-level generalization"
+    "CRITICAL: Remove all acquisition details not in evidence (Medius acquisition amount, specific dates, Swan partnership timing, regulatory mandate dates). The evidence contains ZERO mentions of Medius, Swan, regulatory mandates, acquisition amounts, or 2023/2024 dates.",
+    "CRITICAL: Remove or heavily hedge the 'market exit' framing. Replace title and opening with observable evidence: 'Expensya switched from English to French homepage between Oct 2020 and Jun 2026.' The evidence shows language change only — no verified exit strategy.",
+    "CRITICAL: Remove competitor names (Ramp, Brex, Spendesk) — not in evidence.",
+    "CRITICAL: Remove industry consolidation claims ('expense tools were being acquired') — not in evidence.",
+    "CRITICAL: Remove all strategic intent claims about Medius or Expensya decisions. Replace with observable evidence: 'The homepage added cartes de paiement sections and removed free trial CTAs.'",
+    "CRITICAL: Rewrite section 07 to anchor every paragraph to specific evidence from the compressed data. Currently reads as business commentary with zero traceable claims.",
+    "Add H3 subheadings to business-context section (currently has none).",
+    "Break 78-word opening paragraph into two blocks.",
+    "Add founder takeaway to each subsection under 'Why Expensya abandoned English'.",
+    "Rewrite final 'Quick test' to anchor to specific Expensya evidence changes (e.g., 'Check if your CTAs shifted from 'Free trial' to 'Book a demo' — this signals ICP narrowing')."
   ],
   "optionalImprovements": [
-    "Add H3 subheading before 'That repositioning didn't happen in a vacuum' paragraph",
-    "Vary sentence rhythm — multiple long explanatory sentences without short punchy breaks",
-    "Opening paragraph could explain what 'setting the standard' means in CRO terms before applying"
+    "Add H3 structure to opening section to explain what a 'language-change-as-repositioning' pattern looks like before applying it.",
+    "Vary sentence rhythm in business-context section — currently all declarative statements of similar length.",
+    "Make ## heading more specific: 'Why Expensya's homepage switched from English to French after Oct 2020' — includes company name and observable change."
   ],
   "rerunRecommendations": [
-    "Why the homepage changed — rewrite to remove unsupported claims, add H3 structure, anchor to Expensya evidence only, add founder takeaway"
+    "01-intro — rewrite to remove market-exit framing and anchor to observable language/CTA changes only",
+    "07-business-context — regenerate entirely. Current version contains zero claims traceable to evidence. Every paragraph invents external facts (acquisition details, partnerships, competitors, regulatory mandates)."
   ],
   "model": "claude-sonnet-4-5",
-  "costUsd": 0.03542100000000001,
-  "generatedAt": "2026-06-11T16:47:40.089Z"
+  "costUsd": 0.031298999999999993,
+  "generatedAt": "2026-06-12T08:27:03.333Z"
 }

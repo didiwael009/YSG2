@@ -1,63 +1,99 @@
 {
   "slug": "webflow",
-  "generatedAt": "2026-06-11T17:04:21.031Z",
+  "generatedAt": "2026-06-12T08:22:29.795Z",
   "mode": "standard",
   "sections": [
     {
       "sectionId": "01-intro",
       "finalVersion": 1,
-      "finalScore": 88,
-      "passed": true,
+      "finalScore": 78,
+      "passed": false,
       "loopsUsed": 0,
-      "riskFlagCount": 1,
+      "riskFlagCount": 3,
       "riskFlags": [
-        "The phrase 'repositioned upmarket' is a mild strategic claim — the evidence shows CTA changes and enterprise-grade language, but does not include pricing tier data or ARR distribution to confirm upmarket movement as a completed outcome"
+        "HARD CAP TRIGGERED: Conversion outcome claim without data — 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no funnel data, conversion rate data, or customer acquisition data provided to support this claim. Total score capped at 60.",
+        "Causal claim without condition: 'The CTA shifted... to **\"Contact Sales\"** elevated to primary position.' — implies this shift caused or signals a specific business model change, but no conditional framing is attached.",
+        "Inference presented as fact: 'viral bottom-up adoption by practitioners' — the evidence does not contain data about adoption mechanics or viral coefficients."
       ],
-      "remainingIssueCount": 2,
+      "remainingIssueCount": 6,
       "remainingIssues": [
-        "The phrase 'signaling a shift toward category creation' introduces strategic interpretation not directly traceable to the evidence — the evidence shows AEO was added, but does not confirm the intent was category creation vs. SEO keyword targeting",
-        "The final clause 'what that means for SaaS companies deciding whether to follow a similar path' promises strategic analysis not yet delivered in the intro, creating a mild expectation gap"
+        "Conversion outcome claim without data: 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no evidence provided that the old model was 'viral bottom-up adoption' or that the new model is 'sales-assisted conversion of marketing teams'.",
+        "Causal claim without condition: 'The CTA shifted from **\"Get started — it's free\"** to **\"Contact Sales\"** elevated to primary position.' — no conditional framing (e.g., 'if this signals enterprise focus') to qualify the meaning of this shift.",
+        "Paragraph exceeds 90-word limit: The draft is a single 144-word paragraph (intro sections are capped at 90 words).",
+        "Generic closing sentence: 'After reading this teardown, you'll be able to identify whether your own homepage is still selling capability when it should be selling outcomes — and when that shift becomes safe to make.' — this is generic SaaS positioning advice and could appear in any teardown.",
+        "The phrase 'growth engine' appears twice without plain-language definition on second use (first in headline quote, then in the closing prediction).",
+        "Section does not achieve the stated goal: 'One paragraph that answers the search query in the first sentence. Names the company, the period, and the single biggest shift. Plain language only.' — the first sentence does not answer the search query ('how Webflow repositioned'); it states a fact ('Webflow replaced its entire homepage messaging'). The biggest shift is not named in the first sentence."
       ],
-      "sectionCostUsd": 0.0429825
+      "sectionCostUsd": 0.042490200000000006
+    },
+    {
+      "sectionId": "07-business-context",
+      "finalVersion": 2,
+      "finalScore": 78,
+      "passed": false,
+      "loopsUsed": 1,
+      "riskFlagCount": 3,
+      "riskFlags": [
+        "CAUSAL: 'This points to prioritizing predictable enterprise contracts over viral designer adoption' — the evidence shows CTA removal and addition, but does not prove causation or strategic intent",
+        "CAUSAL: 'a tradeoff visible in how the page now filters for buyers, not builders' — filtering is outcome language, but the evidence does not prove this was the intended tradeoff or that filtering occurred",
+        "IMPLIED OUTCOME: 'consistent with targeting marketing leaders rather than individual designers' — this is inference, not fact; the evidence shows headline change but does not prove target audience shift caused it"
+      ],
+      "remainingIssueCount": 9,
+      "remainingIssues": [
+        "H3 'Market entry context' paragraph is 62 words, exceeds 60-word limit",
+        "H3 'Product and competitive evolution' paragraph is 61 words, exceeds 60-word limit",
+        "The main section heading lacks company name (should be 'Why Webflow's homepage changed...' or similar)",
+        "Missing bold quotes around '$330 million', '$4 billion', '$1 million', '$8 million', 'Website Experience Platform', 'Intellimize' — these are verbatim facts/names from evidence requiring formatting",
+        "The phrase 'This points to' in the third H3 is causal language without an attached condition — should be 'This is consistent with' or conditional phrasing",
+        "The fourth H3 heading is not a strategic finding block — it's the five-minute test, which should not have its own H3 heading per standard teardown format",
+        "The opening sentence is generic funding news that could appear in any SaaS teardown — not anchored to what makes THIS shift interesting",
+        "The final test instruction ('you may be filtering out the buyers who actually arrive') is generic advice, not specific to Webflow's evidence",
+        "Section structure violates the stated goal: four H3 blocks instead of three short paragraphs"
+      ],
+      "sectionCostUsd": 0.10820640000000001
     }
   ],
-  "averageScore": 88,
-  "passCount": 1,
-  "failCount": 0,
-  "skippedCount": 1,
-  "totalRewriteLoops": 0,
-  "weakSections": [],
+  "averageScore": 78,
+  "passCount": 0,
+  "failCount": 2,
+  "skippedCount": 0,
+  "totalRewriteLoops": 1,
+  "weakSections": [
+    "01-intro",
+    "07-business-context"
+  ],
   "allRiskFlags": [
-    "The phrase 'repositioned upmarket' is a mild strategic claim — the evidence shows CTA changes and enterprise-grade language, but does not include pricing tier data or ARR distribution to confirm upmarket movement as a completed outcome"
+    "HARD CAP TRIGGERED: Conversion outcome claim without data — 'This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams).' — no funnel data, conversion rate data, or customer acquisition data provided to support this claim. Total score capped at 60.",
+    "Causal claim without condition: 'The CTA shifted... to **\"Contact Sales\"** elevated to primary position.' — implies this shift caused or signals a specific business model change, but no conditional framing is attached.",
+    "Inference presented as fact: 'viral bottom-up adoption by practitioners' — the evidence does not contain data about adoption mechanics or viral coefficients.",
+    "CAUSAL: 'This points to prioritizing predictable enterprise contracts over viral designer adoption' — the evidence shows CTA removal and addition, but does not prove causation or strategic intent",
+    "CAUSAL: 'a tradeoff visible in how the page now filters for buyers, not builders' — filtering is outcome language, but the evidence does not prove this was the intended tradeoff or that filtering occurred",
+    "IMPLIED OUTCOME: 'consistent with targeting marketing leaders rather than individual designers' — this is inference, not fact; the evidence shows headline change but does not prove target audience shift caused it"
   ],
   "sectionErrors": [],
-  "finalJudgeScore": 45,
+  "finalJudgeScore": 58,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Remove all competitive landscape claims (WordPress VIP, Adobe Experience Manager, 'crowded no-code space') — none of this appears in the evidence",
-    "Remove the phrase 'elevating Contact Sales to co-primary CTA' — the evidence shows 'Contact Sales' was added, but contains no information about hierarchy or co-primary status",
-    "Remove the entire SaaS category creation pattern paragraph — it is generic advice not anchored to Webflow-specific evidence",
-    "Add H3 subheadings to the 'Why the homepage changed' section to break up the analytical wall of text",
-    "Add H3 subheadings analyzing specific evidence items: headline change mechanism, meta description vocabulary shift, section heading evolution",
-    "Add founder takeaways to each analytical block",
-    "Add a final section with a specific runnable test anchored to Webflow evidence",
-    "Break paragraphs exceeding 60 words (the opening paragraph is 84 words, the second paragraph in 'Why the homepage changed' is 98 words, the final paragraph is 118 words)",
-    "Remove AI-native search interfaces claim — not in evidence",
-    "Replace 'forcing website platforms to differentiate' with evidence-based observation about what Webflow's page now emphasizes"
+    "Remove all unsupported factual claims: funding amounts ($330 million, $4 billion valuation), revenue figures ($1M to $8M), layoff percentages (8%), competitor moves (Framer, Wix), acquisition details (Intellimize, 'first acquisition', AI personalization claims).",
+    "Replace business context section with analysis anchored ONLY to the compressed evidence: headline change, meta description change, CTA changes, H2 changes, H3 changes.",
+    "Rewrite intro to avoid causal claim about 'replacement of one growth model with another' — the evidence shows messaging changed, not that a growth model was replaced or that conversion patterns shifted.",
+    "Remove forward-looking promise in intro ('After reading this teardown, you'll be able to identify...') — replace with description of what the evidence shows.",
+    "Add H3 subheadings to business context section to break up analytical claims.",
+    "Ground every analytical paragraph in specific evidence from the compressed data — cite the exact headline, CTA label, H2 text, or meta description change being analyzed."
   ],
-  "seoScore": 76,
+  "seoScore": 71,
   "seoPass": false,
   "seoRequiredFixes": [
-    "Expand H2 hierarchy: Article currently has only one content H2 ('Why the homepage changed') after the intro H1. Add at least 2–3 more structural H2s to cover: 'Headline Evolution', 'CTA & Navigation Changes', 'Messaging Themes', 'Lessons for SaaS Teams'.",
-    "Add visual evidence: Insert before/after screenshots or link to web archive snapshots. Without images, this reads as analysis essay, not teardown.",
-    "Clarify search intent match: Article analyzes *why* Webflow changed, but a searcher looking for 'Webflow homepage CRO teardown' may want to *see* the changes first. Restructure to lead with what changed, then explain why.",
-    "Strengthen keyword placement: Primary keyword 'Webflow homepage CRO teardown' appears only in title and meta description. Embed it naturally 1–2 times in body (e.g., 'This Webflow homepage CRO teardown reveals...').",
-    "Add data/evidence caveat: Article makes positioning claims (e.g., 'shift toward sales-assisted team deals') without citing conversion data or Webflow's public statements. Add a note clarifying these are inference-based observations, not confirmed metrics."
+    "Add actual homepage screenshots or detailed visual comparisons of the Jan 2020 and Jun 2026 versions. A CRO teardown without visuals is incomplete and reduces credibility with the target audience (growth/CRO practitioners).",
+    "Clarify the structure: The article says '2 snapshots' but only one full headline change is deeply analyzed. Expand section-by-section analysis to justify the 'teardown' format (hero, value props, social proof, CTAs, footer, etc.).",
+    "The article mentions 'sectionsIncluded: [\"01-intro\", \"07-business-context\"]' but the body only shows intro + business context. If other sections were planned (CRO insights, tactical lessons, metrics), publish them or remove the reference.",
+    "Define 'Website Experience Platform' inline or link to where this is explained — it's a claimed positioning shift but readers unfamiliar with Webflow may not understand the implication.",
+    "The '5-minute test' box at the end feels tacked on and is not connected back to Webflow's specific example. Either expand it with Webflow's own CTA audit or move it to a separate guide."
   ],
-  "articleWordCount": 358,
+  "articleWordCount": 439,
   "repetitionWarnings": [],
   "editorialWarnings": [
-    "[01-intro] Paragraph exceeds 90 words (~100w): \"Between January 2020 and June 2026, Webflow rewrote…\""
+    "[01-intro] Paragraph exceeds 90 words (~136w): \"Webflow replaced its entire homepage messaging between January…\""
   ],
   "overLengthWarning": null
 }

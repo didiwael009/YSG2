@@ -1,20 +1,20 @@
 {
   "primary_keyword": "Gong homepage teardown",
   "primary_intent": "informational",
-  "audience_description": "A SaaS founder, VP of Product, or growth marketer at a revenue intelligence or sales automation company who is studying how Gong repositioned from category educator to platform OS provider. They want to understand the strategic reasoning behind abandoning 'Revenue Intelligence' positioning in favor of 'Revenue AI OS' — and whether this shift is a template they should replicate or a cautionary tale to avoid.",
-  "recommended_h1_format": "How Gong Went From Revenue Intelligence Evangelist to Revenue AI OS: A [Year] Homepage Teardown",
+  "audience_description": "A SaaS founder, product lead, or growth marketer who is deciding whether to pivot their messaging from category education to AI-first positioning. They want to understand the risk/reward of abandoning explanatory content in favor of prediction-focused value props, and whether Gong's shift signals a broader market trend they should follow.",
+  "recommended_h1_format": "How Gong's Homepage Teardown Reveals the Shift from Revenue Intelligence Education to AI-First Positioning",
   "secondary_keywords": [
-    "Gong homepage redesign strategy",
-    "Revenue Intelligence to Revenue AI OS positioning shift",
-    "Gong CRO analysis category abandonment",
-    "How Gong repositioned its homepage for AI",
+    "Gong CRO teardown",
+    "how Gong repositioned its homepage",
+    "Gong Revenue AI OS positioning strategy",
+    "why Gong removed educational content from homepage",
     "Gong homepage evolution 2020-2026"
   ],
-  "content_angle": "Frame this as a high-stakes repositioning case study: Gong made a deliberate, category-defining choice to stop teaching buyers 'what Revenue Intelligence is' and instead claim ownership of the entire 'Revenue AI OS' category. Show the exact mechanics of how they did this (H1 swap, nav restructuring, social proof emphasis, infrastructure language), then critically examine WHY this works for Gong (category ownership, AI hype, platform lock-in narrative) but might backfire for smaller players (category confusion, loss of educational differentiation). The searcher wants to know: 'Should my company make a similar bet, and if so, how do we execute it without losing our core audience?'",
-  "what_the_searcher_wants": "A forensic breakdown of Gong's strategic reasoning, not just a visual before/after. They want to understand: (1) Why did Gong abandon category evangelism? (2) What signals suggest this is working (or failing)? (3) What are the risks of this playbook for companies at different stages? (4) Which specific elements of this homepage shift can be applied to their own product positioning?",
-  "what_to_avoid": "Do not treat this as a purely aesthetic redesign article ('they made the hero image bigger'). Avoid generic CRO advice ('social proof converts better'). Do not ignore the strategic bet underlying these changes — that Gong is shifting from selling 'visibility into customer conversations' to selling 'a full revenue engine powered by AI.' If you don't explain why they killed 'Reveal: The RI Podcast' and 'What is RI?' navigation, you've missed the entire story. Also avoid assuming this shift is universally 'better' — for companies without Gong's brand equity, this move could be a positioning disaster.",
+  "content_angle": "Focus on the STRATEGIC RISK of the pivot, not just the tactical changes. The searcher needs to understand: (1) Why Gong felt safe removing all educational onboarding content (market maturity signal); (2) What they gained (ownership of the AI narrative) and what they risked (lost SEO equity, alienated buyers still learning what RI is); (3) Whether this move worked (social proof, conversion signals) and for whom it would be safe to replicate. Frame it as 'the category education exit strategy' — useful for companies that successfully crossed the chasm.",
+  "what_the_searcher_wants": "A decision framework for whether to stop educating their market and start owning a higher-order narrative. They want proof that this trade-off can work, and clarity on what type of company (maturity, market position, brand strength) can afford to make it.",
+  "what_to_avoid": "Treating this as a pure design/copy audit. Do NOT focus on button colors, word choice tweaks, or CTAs without connecting them to the category exit thesis. Avoid praising the change as universally 'bold' — instead, show the prerequisites that made it viable for Gong (5,000+ customers, $3B+ valuation, 7-year category lead) that a smaller competitor would NOT have. Do not ignore the removed navigation items (Reveal podcast, Coaching Recommendations, Overview) — these were deliberate category-education scaffolding that got stripped.",
   "confidence_level": "high",
-  "generatedAt": "2026-06-11T17:02:53.786Z",
+  "generatedAt": "2026-06-12T08:19:35.875Z",
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.0036568
+  "costUsd": 0.003272
 }

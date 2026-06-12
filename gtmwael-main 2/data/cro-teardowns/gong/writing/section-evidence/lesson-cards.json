@@ -1,26 +1,26 @@
 [
   {
     "number": "01",
-    "title": "Gong replaced 'Revenue Intelligence' with 'Revenue AI OS' — that's a category ownership play",
-    "category": "Positioning",
-    "body": "The original H1 opened with **\"REVENUE INTELLIGENCE\"** — a product category frame. The current page title now reads **\"Gong - Revenue AI OS\"**. This shift suggests Gong is no longer competing within an established category — it's claiming ownership of a new one. The meta description now positions the platform as serving **\"your entire GTM organization\"**, not just sales teams. This signals a buyer expansion beyond sales leaders."
+    "title": "Gong replaced 'REVENUE INTELLIGENCE' with 'Revenue AI Built To Predict churn' — a use-case-first headline",
+    "category": "Messaging",
+    "body": "The original H1 named the product category (**\"REVENUE INTELLIGENCE\"**). The current version leads with a specific outcome: **\"Revenue AI Built To Predict churn\"**. This suggests Gong is targeting buyers who already understand their problem and are evaluating solutions, rather than prospects still learning what revenue intelligence means. The headline now filters for pipeline-stage fit."
   },
   {
     "number": "02",
-    "title": "The primary hero CTA changed from 'Watch Video' to 'See Gong in action' — filtering passive visitors",
+    "title": "The hero CTA changed from 'Watch Video' to 'See Gong in action' — a demo-intent signal",
     "category": "CRO",
-    "body": "The original CTA invited visitors to **\"Watch Video\"** — a low-commitment ask suitable for early-stage browsers. The current hero CTA reads **\"See Gong in action\"**, which suggests a demo or product tour. This likely filters out casual researchers and attracts buyers closer to evaluation. The removal of named testimonial CTAs like **\"Paul Santarelli VP of Sales\"** further suggests the page now prioritizes conversion depth over top-of-funnel volume."
+    "body": "Gong removed **\"Watch Video\"** and added **\"See Gong in action\"** as the primary above-the-fold CTA. The new phrasing signals a demo or product walkthrough, not passive content consumption. This likely reflects a shift toward buyers who are further along in evaluation — people ready to see the platform, not researchers watching explainer videos."
   },
   {
     "number": "03",
-    "title": "'Pitchbook is 10x more efficient with revenue AI' replaces generic feature sections",
+    "title": "'Trusted by 5,000+ customers' replaced 'So What Does this look like? Glad you asked.'",
     "category": "Trust",
-    "body": "The original page included section headings like **\"Revenue Intelligence helps you fuel:\"** and **\"So What Does this look like? Glad you asked.\"** — feature-led structure. The current page adds customer-outcome headings like **\"Pitchbook is 10x more efficient with revenue AI\"** and **\"Winning GTM organizations run revenue on Gong\"**. This shift moves proof earlier in the page hierarchy. It signals that Gong now assumes visitors arrive already knowing what revenue intelligence does — they need reassurance, not education."
+    "body": "The original homepage included a casual, explanatory section heading: **\"So What Does this look like? Glad you asked.\"** The current version leads with **\"Trusted by 5,000+ customers\"** — a proof-of-scale statement. This suggests Gong is leaning into category leadership and social proof, rather than educating first-time visitors about what the product does."
   },
   {
     "number": "04",
-    "title": "10 new section headings and 8 navigation items added — this is a funnel redesign, not polish",
-    "category": "Strategy",
-    "body": "The page added 10 new section headings and completely replaced 8 navigation items over six years. The meta description no longer mentions **\"sales conversations\"** — it now opens with **\"multimodal revenue signal processing, specialized AI agents\"**. This is not incremental messaging refinement. It suggests Gong's product roadmap expanded significantly, and the homepage evolved to reflect new buyer sophistication. The page now assumes visitors understand AI tooling and need differentiation, not category definition."
+    "title": "Gong's meta description now addresses 'your entire GTM organization' instead of 'sales teams'",
+    "category": "Positioning",
+    "body": "The original meta description targeted **\"sales optimization\"** and **\"sales conversations\"**. The current version says Gong **\"helps your entire GTM organization win\"** and references **\"multimodal revenue signal processing, specialized AI agents, and purpose-built applications\"**. This indicates an upmarket expansion — Gong may now be selling into revenue operations or cross-functional buying committees, not just sales leadership."
   }
 ]

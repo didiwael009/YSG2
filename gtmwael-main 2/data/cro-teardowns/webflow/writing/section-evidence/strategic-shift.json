@@ -1,47 +1,53 @@
 {
-  "central_thesis": "Webflow repositioned from a visual development tool for breaking the code barrier into an enterprise-grade agentic marketing platform by replacing its capability-focused H1 with outcome-driven 'growth engine' messaging, introducing AEO (AI Engine Optimization) as a category differentiator, and shifting CTAs from free-trial acquisition to sales-qualified lead generation.",
-  "old_positioning_frame": "A no-code design and development tool that removes technical barriers for building responsive websites",
-  "new_positioning_frame": "An enterprise marketing platform that delivers competitive business outcomes through AI search optimization and agentic automation",
-  "buyer_shift": "Designers, freelancers, and agencies seeking to build websites without code → Marketing teams and enterprises seeking to operationalize their website as a growth channel",
-  "funnel_shift": "Top-of-funnel awareness and free trial activation for individual practitioners → Mid-funnel enterprise evaluation and sales-assisted conversion for teams and departments",
+  "central_thesis": "Webflow repositioned from a no-code builder empowering designers to escape technical constraints into an enterprise marketing platform owning the AI search optimization category, replacing its 2020 H1 'Break the code barrier' with 'Make your website a growth engine' and introducing 'AEO' (AI Engine Optimization) as a proprietary capability while shifting its primary CTA from 'Get started — it's free' to 'Contact Sales'.",
+  "old_positioning_frame": "A website building tool that removes technical barriers for designers and businesses, emphasizing ease of use, visual design freedom, and free access until launch readiness.",
+  "new_positioning_frame": "An enterprise-grade 'agentic web platform' that positions websites as revenue-driving assets optimized for AI search engines, emphasizing scale, team collaboration, and proprietary technology ('AEO') trusted by 300,000+ brands.",
+  "buyer_shift": "Individual designers, freelancers, and small agencies needing to build without code → Marketing teams and enterprises needing growth infrastructure and AI search visibility",
+  "funnel_shift": "Early exploration stage (self-serve product education, free trial emphasis) → Late-stage enterprise consideration (sales-assisted, category ownership, social proof at scale)",
   "main_evidence": [
     {
       "element": "H1",
       "old": "Break the code barrier",
       "new": "Make your website a growth engine",
-      "meaning": "This shift suggests a repositioning from removing technical constraints (a capability statement) to delivering business outcomes (revenue, pipeline, performance), which is consistent with targeting economic buyers rather than end-users."
+      "meaning": "Signals a shift from solving a capability problem (designers can't code) to solving a business outcome problem (websites must drive measurable growth), which is consistent with targeting marketing leaders rather than individual practitioners."
     },
     {
       "element": "Meta description",
-      "old": "Build responsive websites in your browser, then launch with our world-class hosting or export your code.",
+      "old": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
       "new": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
-      "meaning": "The introduction of 'AEO' (AI Engine Optimization), 'enterprise-grade security', and the explicit '300k teams' social proof signals a move toward category creation and enterprise credibility rather than feature education."
+      "meaning": "The introduction of 'AEO' (AI Engine Optimization) as a named capability and 'rank in AI search' suggests an attempt to own a new product category around AI search optimization, while '300k teams' replaces feature descriptions with scale-based social proof typical of enterprise positioning."
     },
     {
       "element": "Primary CTAs",
       "old": "Get started — it's free",
       "new": "Contact Sales · Start for free",
-      "meaning": "Elevating 'Contact Sales' to co-primary CTA position alongside the free option suggests the company is prioritizing higher-ACV sales-assisted deals over self-serve volume, which typically indicates a shift toward enterprise revenue models."
+      "meaning": "Placing 'Contact Sales' before 'Start for free' (and the removal of 'it's free' qualifier from the primary CTA) points to prioritizing sales-assisted enterprise deals over self-serve acquisition, though the free option remains available."
     },
     {
       "element": "Section headings",
       "old": "Who uses Webflow · Get up and running fast · Free until you're ready to launch",
-      "new": "300,000+ brands move the needle with Webflow · From idea to impact, faster · Make your website your competitive edge",
-      "meaning": "Replacing usage-focused and time-to-value messaging with outcome language ('move the needle', 'competitive edge') and scale proof points indicates positioning for buyers who evaluate tools based on strategic business impact rather than ease of use."
+      "new": "300,000+ brands move the needle with Webflow · From idea to impact, faster · Everything marketing teams love about webflow · Make your website your competitive edge",
+      "meaning": "The replacement of 'Who uses Webflow' with '300,000+ brands move the needle' and the shift from 'free until launch' messaging to 'competitive edge' language suggests positioning the product as established infrastructure for serious businesses rather than an accessible tool for beginners."
     },
     {
       "element": "Page title",
       "old": "Responsive web design tool, CMS, and hosting platform | Webflow",
       "new": "Webflow: The agentic web platform for modern businesses",
-      "meaning": "Introducing 'agentic' as a descriptor and shifting from technical feature enumeration to business-focused category naming points to an attempt to own a new category rather than compete within the existing 'website builder' space."
+      "meaning": "The invention of 'agentic web platform' as a category term (replacing functional descriptors like 'design tool, CMS, and hosting') is consistent with attempting to create and own a new market category rather than compete within established ones."
+    },
+    {
+      "element": "Strategic navigation",
+      "old": "(none)",
+      "new": "Design · Edit content · Interactions · Collaboration · Page building · CMS · Hosting · Localization",
+      "meaning": "The addition of 'Collaboration' as a top-level navigation item alongside technical capabilities suggests emphasizing team workflows and multi-user scenarios typical of enterprise software buying criteria."
     }
   ],
-  "copy_this_if": "Your product has achieved sufficient market penetration that your brand name appears in RFPs for your original category, and you have 6+ enterprise case studies demonstrating measurable business outcomes beyond the original use case",
-  "do_not_copy_this_if": "Prospects still ask 'What does your product do?' or your sales cycles are under 30 days, indicating you are selling primarily on capability demonstration rather than strategic value",
-  "safer_version_for_early_stage_saas": "Test a split headline that bridges capability and outcome (e.g., 'Visual development that accelerates pipeline') while maintaining prominent free trial CTAs, and add one section headings that links your core capability to a measurable business metric relevant to economic buyers",
-  "risk_if_copied": "Prospects who need your original capability (visual development without code) will not recognize your product as solving their problem, and you will lose self-serve volume without having the sales infrastructure, case study library, or product depth to close enterprise deals at the velocity required to replace that revenue",
+  "copy_this_if": "Your product name is already strongly associated with a specific user persona or workflow in search results, and you need to expand upmarket while that legacy association limits deal size or buyer seniority.",
+  "do_not_copy_this_if": "Your primary conversion funnel still depends on self-serve trial signups from practitioners who need to experience the product before they can advocate for it internally, or if you lack the sales infrastructure to handle inbound 'Contact Sales' requests from enterprise prospects.",
+  "safer_version_for_early_stage_saas": "Test adding outcome-focused language to a secondary H2 or section heading (e.g., 'Turn your [product category] into a growth engine') while keeping your primary H1 and CTA focused on the practitioner problem you solve, then measure whether enterprise-profile signups increase without degrading total signup volume.",
+  "risk_if_copied": "Self-serve pipeline collapse if your product still requires hands-on trial to demonstrate value, or category confusion if you introduce proprietary terminology ('AEO', 'agentic') before you have the market presence to define it through content, community, and search volume.",
   "confidence_level": "high",
-  "generatedAt": "2026-06-11T17:02:33.307Z",
+  "generatedAt": "2026-06-12T08:19:34.424Z",
   "model": "claude-sonnet-4-5",
-  "costUsd": 0.020523
+  "costUsd": 0.024183000000000003
 }
