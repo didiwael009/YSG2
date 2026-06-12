@@ -108,7 +108,7 @@ These are legitimate references. Do **not** flag them as hallucinations.
 
 **V6 template restructure — all 11 changes implemented:**
 - Added `businessContext?: string` field to CroTeardownPost type
-- SECTION_ORDER reduced to `['01-intro', '07-business-context']`; prose sections 02-06 deleted
+- ~~SECTION_ORDER reduced to `['01-intro', '07-business-context']`; prose sections 02-06 deleted~~ **[CORRECTED 2026-06-13 audit: this was never applied or was reverted. Live `SECTION_ORDER` in `section-writer.ts:75` still has all 6 sections: `01-intro, 03-visual-timeline, 04-messaging-evolution, 05-cta-navigation-evolution, 07-business-context, 06-lessons-for-saas-teams`. Do not trust the original claim.]**
 - Created `generate-business-context.ts` — LLM generator for 3-paragraph business context (≤60 words each)
 - Updated `compose-all-sections.ts` to call business context generation after strategic shift detector
 - Fixed h2/h3 concatenation in `normalize-page-text.ts` — applied `cleanBodyText()` regex before filtering
@@ -177,7 +177,7 @@ These are legitimate references. Do **not** flag them as hallucinations.
 
 ## Current state (as of 2026-06-13)
 
-### Published CRO teardowns (13 total)
+### Published CRO teardowns (17 total — corrected by 2026-06-13 audit; was wrongly listed as 13)
 | Slug | Period | Snapshots | Notes |
 |------|--------|-----------|-------|
 | hootsuite | 2020–2026 | 2 | V1 pipeline |
@@ -193,6 +193,10 @@ These are legitimate references. Do **not** flag them as hallucinations.
 | expensya | 2020–2026 | 2 | V6, archive reconstructed from first run |
 | gong | 2020–2026 | 3 | V6, rate-limited capture |
 | webflow | 2020–2026 | 2 | V6, rate-limited capture |
+| apify | 2020–2026 | — | V6, only article with full rich lesson cards |
+| buffer | 2019–2026 | — | V6, added 2026-06-12 |
+| agorapulse | 2019–2026 | — | V6, added 2026-06-12 |
+| unbounce | 2019–2026 | 11 | V6, added 2026-06-12; NOT yet in sitemap/dist (audit P0) |
 
 ### Published blog articles (7 total)
 - /saas-marketing-plan
@@ -214,8 +218,10 @@ These are legitimate references. Do **not** flag them as hallucinations.
 
 | Issue | Status | Workaround |
 |-------|--------|------------|
-| V3 judge calibration gap — expects V5 article structure (6 H2 sections), misrates V6 articles (2 H2 + React components) | Open — `final-judge.ts` needs rewrite for V6 | Publish with `--force`; section scores (83–88/100) are reliable |
-| Judge/writer voice mismatch — `final-judge.ts` uses V3 criteria (mechanismQuality dimension) but V5 writer no longer requires mechanism naming; judge may penalize V5 articles for "missing mechanisms" | Open — judge needs V5 rewrite | Publish with `--force` until judge is updated |
+| ~~V3 judge calibration gap~~ / ~~Judge-writer voice mismatch~~ | **RESOLVED (confirmed 2026-06-13 audit)** — `final-judge.ts` is fully V5: 7 dimensions (evidenceAccuracy/plainLanguage/scannability/searchableHeadings/specificity/rhythmAndOpening/founderTakeaway), no `mechanismQuality`, pass ≥90. The need for `--force` is now real content quality (<90), not a broken rubric. | N/A |
+| Owned playbook sources flagged as hallucinations | **RESOLVED 2026-06-13** — judge + writer now whitelist Landing Page Playbook 2026 / Growth Playbook 2026 as first-party evidence (commit 6a67504) | N/A |
+| 02-quick-answer spec'd but dead — in `writing-config.ts` + `section-writer.ts` but absent from `SECTION_ORDER`, never runs | Open (audit B1) | Decide: activate or remove dead config |
+| Unbounce not in sitemap; dist stale (predates Unbounce, has phantom happi/loom routes) | Open (audit P0 E1/E2) | Rebuild + regen sitemap + redeploy |
 | 17 existing articles in V3 voice — no V5 backfill performed; regenerating with `--force` will rewrite in V5 plain-explainer voice | Open by design — V5 only applies to new articles going forward | Run compose `--force` per slug when ready to upgrade an article |
 | H2/H3 concatenation normalization — FIXED 2026-06-13 | Resolved — `cleanBodyText` now applied to h2/h3 in normalize-page-text.ts | N/A |
 | H1 concatenation normalization — FIXED 2026-06-13 | Resolved — `cleanBodyText` now applied to all 7 h1 extraction sites in article-blueprint.ts | N/A |
