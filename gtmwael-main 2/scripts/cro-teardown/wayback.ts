@@ -40,7 +40,47 @@ function daysInMonth(year: number, month: number): number {
   return new Date(year, month, 0).getDate();
 }
 
+// Build a CDX query URL for one URL variant + date window
+function buildCdxUrl(urlForCdx: string, fromDate: string, toDate: string): string {
+  return (
+    `https://web.archive.org/cdx/search/cdx` +
+    `?url=${encodeURIComponent(urlForCdx)}` +
+    `&output=json` +
+    `&fl=timestamp` +
+    `&from=${fromDate}` +
+    `&to=${toDate}` +
+    `&filter=statuscode:200` +
+    `&limit=500` +
+    `&collapse=timestamp:8`
+  );
+}
+
+// Fetch CDX with retries + exponential backoff
+async function fetchCdxWithRetry(
+  cdxUrl: string,
+  maxAttempts = 3,
+): Promise<string[][]> {
+  let lastErr: unknown;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const response = await fetch(cdxUrl, { signal: AbortSignal.timeout(45_000) });
+      if (!response.ok) throw new Error(`CDX API returned ${response.status}`);
+      const data = (await response.json()) as string[][];
+      return Array.isArray(data) ? data.slice(1) : [];
+    } catch (err) {
+      lastErr = err;
+      if (attempt < maxAttempts) {
+        const delay = 1500 * attempt; // 1.5s, 3s
+        log(`CDX attempt ${attempt} failed (${String(err)}), retrying in ${delay}ms…`);
+        await new Promise((r) => setTimeout(r, delay));
+      }
+    }
+  }
+  throw lastErr;
+}
+
 // Search the full [windowMonths]-month window starting at slotStart.
+// Tries exact URL first, then toggles www/non-www as fallback.
 // Picks the snapshot closest to the midpoint of the window.
 async function findSnapshotForSlot(
   url: string,
@@ -60,30 +100,23 @@ async function findSnapshotForSlot(
   const mid = addMonths(yearStr, monStr, Math.floor(windowMonths / 2));
   const midTarget = parseInt(`${mid.y}${String(mid.m).padStart(2, '0')}15`, 10);
 
-  // CDX API requires the URL without protocol prefix (e.g. "www.lemlist.com" not "https://www.lemlist.com")
-  const urlForCdx = url.replace(/^https?:\/\//, '');
-  const cdxUrl =
-    `https://web.archive.org/cdx/search/cdx` +
-    `?url=${encodeURIComponent(urlForCdx)}` +
-    `&output=json` +
-    `&fl=timestamp` +
-    `&from=${fromDate}` +
-    `&to=${toDate}` +
-    `&filter=statuscode:200` +
-    `&filter=mimetype:text/html` +
-    `&limit=500` +
-    `&collapse=timestamp:8`;
+  // Build candidate URL variants: exact URL + www/non-www toggle
+  const base = url.replace(/^https?:\/\//, '');
+  const altBase = base.startsWith('www.') ? base.slice(4) : `www.${base}`;
+  const candidates = [base, altBase];
 
-  log(`CDX query for slot ${slotStart} (window ${windowMonths}mo): ${cdxUrl}`);
+  let rows: string[][] = [];
 
-  const response = await fetch(cdxUrl, { signal: AbortSignal.timeout(20_000) });
-
-  if (!response.ok) {
-    throw new Error(`CDX API returned ${response.status}`);
+  for (const candidate of candidates) {
+    const cdxUrl = buildCdxUrl(candidate, fromDate, toDate);
+    log(`CDX query for slot ${slotStart} (window ${windowMonths}mo): ${cdxUrl}`);
+    try {
+      rows = await fetchCdxWithRetry(cdxUrl);
+      if (rows.length > 0) break; // found results — no need to try alt variant
+    } catch (err) {
+      log(`CDX query failed for ${candidate} slot ${slotStart}: ${String(err)}`);
+    }
   }
-
-  const data = (await response.json()) as string[][];
-  const rows = Array.isArray(data) ? data.slice(1) : [];
 
   if (rows.length === 0) {
     log(`No snapshot found for slot ${slotStart}`);
@@ -108,7 +141,7 @@ async function findSnapshotForSlot(
   return { timestamp: best, slotLabel: slotStart };
 }
 
-const CDX_DELAY_MS = 500; // sequential, polite
+const CDX_DELAY_MS = 1200; // polite — avoid Wayback rate-limit
 
 function slotEndMonth(slotStart: string, stepMonths: number): string {
   const [yearStr, monStr] = slotStart.split('-');

@@ -1,0 +1,44 @@
+{
+  "slug": "buffer",
+  "section": "07-business-context",
+  "calls": [
+    {
+      "model": "claude-opus-4-8",
+      "role": "cross-section",
+      "inputTokens": 4928,
+      "outputTokens": 4138,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0,
+      "inputCostUsd": 0.07392,
+      "outputCostUsd": 0.31035,
+      "totalCostUsd": 0.38427,
+      "timestamp": "2026-06-12T20:02:14.829Z"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "role": "final-judge",
+      "inputTokens": 8949,
+      "outputTokens": 1454,
+      "inputCostUsd": 0.026847000000000003,
+      "outputCostUsd": 0.02181,
+      "totalCostUsd": 0.048657000000000006,
+      "timestamp": "2026-06-12T20:02:47.039Z"
+    },
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "role": "seo-auditor",
+      "inputTokens": 3809,
+      "outputTokens": 1272,
+      "inputCostUsd": 0.0030472,
+      "outputCostUsd": 0.005088,
+      "totalCostUsd": 0.008135199999999999,
+      "timestamp": "2026-06-12T20:03:02.928Z"
+    }
+  ],
+  "totalInputTokens": 17686,
+  "totalOutputTokens": 6864,
+  "totalCostUsd": 0.4410622,
+  "budgetUsd": 3,
+  "budgetExceeded": false,
+  "generatedAt": "2026-06-12T20:03:02.932Z"
+}

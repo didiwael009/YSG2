@@ -1,0 +1,143 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Agorapulse",
+  "companyUrl": "https://www.agorapulse.com",
+  "articleTitle": "Agorapulse Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Agorapulse rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 7,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 7,
+    "h2Added": 7,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Agorapulse homepage teardown",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2019-01",
+      "label": "Jan 2019 — original state",
+      "period": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Social Media Management Simplified\" — direct product statement.",
+        "Visible section headings include: \"We support all of these networks.\", \"We are top rated by our users.\", \"Find out how Agorapulse works with the unique needs of your business.\".",
+        "Navigation includes: \"Features\" — product category framing.",
+        "Section headings later removed include: \"We support all of these networks.\" and \"We are top rated by our users.\"."
+      ]
+    },
+    {
+      "id": "analysis-2021-04",
+      "label": "Apr 2021 — mid-transition",
+      "period": "Apr 2021",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2021-04.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 96.3% — a moderate visual change.",
+        "H1 in this snapshot: \"Take Controlof Your Social Media\".",
+        "New section headings appearing: \"Over 31,000 social media managers use our tool daily\", \"One easy-to-use solution, loaded with powerful features.\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/current-live.webp",
+      "heading": "Today: platform-first positioning",
+      "annotations": [
+        "H1 now reads: \"Drive Real Impact on Social Media. From Engagement to ROI.\" — formal capability framing, consistent with platform-level positioning.",
+        "New section headings include: \"Over 31K+ social media managers use our tool daily\", \"Effective social media management with impactful business outcomes\", \"Features to boost efficiency and save time\".",
+        "CTAs no longer present include: \"Read on TrustRadius\", \"Read on G2 Crowd\", \"Read on GetApp\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Social Media Management Simplified",
+      "after": "Drive Real Impact on Social Media. From Engagement to ROI.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "An easy social media management tool that works with Facebook, Twitter, Instagram, LinkedIn, Google+, and YouTube. Start your free trial today!",
+      "after": "An easy to use Social Media Management Software that allows you to stay organized, save time, and easily manage your inbox, publishing, reporting, monitoring, and team collaboration tools.",
+      "note": "Free-trial urgency and exclamatory language removed. The new description reads as a neutral product category statement — more consistent with a platform positioning than a trial-conversion tool."
+    },
+    {
+      "element": "Page title",
+      "before": "Simple & Affordable Social Media Management | Agorapulse",
+      "after": "Social Media Management Software | Agorapulse"
+    }
+  ],
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2019-01",
+        "design_era": "early-startup",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Light blue sky-cloud background with centered headline 'Social Media Management Simplified', colorful floating social icons, and orange CTA button below.",
+        "proof_density": "low",
+        "primary_message_type": "category",
+        "visual_sophistication": 3,
+        "brand_maturity": "early"
+      },
+      {
+        "month": "2019-10",
+        "design_era": "early-startup",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Dark charcoal hero section with white headline 'Managing social media has never been easier', right-aligned product screenshot mockup, and orange CTA button on left.",
+        "proof_density": "low",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 3,
+        "brand_maturity": "early"
+      },
+      {
+        "month": "2020-04",
+        "design_era": "growth",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Dark charcoal hero with white headline, product screenshot centered, orange CTA, followed by feature-focused content sections below.",
+        "proof_density": "low",
+        "primary_message_type": "feature",
+        "visual_sophistication": 3,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2024-04",
+        "design_era": "growth",
+        "layout_type": "multi-column",
+        "above_fold_structure": "Purple header bar, white headline 'Take Control of Your Social Media', split layout with product UI mockup on right, left-side copy with orange CTA and testimonial below.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "current-live",
+        "design_era": "growth",
+        "layout_type": "multi-column",
+        "above_fold_structure": "Dark navy header with orange accent stripe, white headline 'Drive Real Impact on Social Media. From Engagement to ROI.', product UI screenshot on right with split-column layout, orange CTA on left.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from a playful cloud-based aesthetic with bright accent colors (2019) to a professional dark-mode hero with product-centric layout (2019–2020), then shifted to modern split-column layouts with stronger typography hierarchy and muted color palettes (2024–current). Visual sophistication increased through refined mockup presentation, cleaner spacing, and more disciplined use of accent colors.",
+    "design_evolution_label": "playful-startup-to-professional-saaS",
+    "generatedAt": "2026-06-12T19:53:36.071Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.006160799999999999
+  }
+}

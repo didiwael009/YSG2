@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Positioning shift",
+    "value": "Simplicity tool → ROI platform",
+    "note": "H1 swapped 'Simplified' for 'From Engagement to ROI' after the 2022 ROI dashboard launch"
+  },
+  {
+    "label": "Target buyer",
+    "value": "Solo manager → Team lead with budget",
+    "note": "Section headings replaced community sentiment ('Who loves us?') with stakeholder-grade outcome language"
+  },
+  {
+    "label": "Sales motion",
+    "value": "Review sites → Direct trial and demo",
+    "note": "TrustRadius, G2, and GetApp CTAs removed; 'Sign up!' and 'See a demo' elevated to primary nav"
+  },
+  {
+    "label": "Design shift",
+    "value": "Sky-blue startup to dark-navy SaaS",
+    "note": "Colour palette shift from playful cloud hero (2019) to professional navy split-column (current) mirrors ICP rebrand"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "Section 05 names 'See All Case Studies →' as a removed CTA — this DOES appear verbatim in ctaRemoved, so no penalty there. However, the draft claims 'The evidence does not name each item individually' about navigation removals, which is technically accurate but creates a hedge that weakens specificity.",
+    "The second H3 paragraph contains a causal/outcome claim — 'That removal signals social proof as a conversion tool… was deprioritized' — this is a causation-adjacent interpretation not directly traceable to evidence, though hedged. Borderline but flagged.",
+    "The phrase 'friction-to-commitment ratio' is not used, but 'freemium model' is used as a conclusion without evidence in the provided data confirming Buffer's pricing model is freemium — this is an unsupported factual claim.",
+    "Paragraph 3 of H3 block 1 ('The structure mirrors a freemium model…') exceeds 60 words check — approximate count is 42 words, acceptable. However the claim 'freemium model' is not evidenced in the provided data.",
+    "H3 block 2 body paragraph 2 ('That removal signals social proof…') has its finding buried — it does not lead with the practical takeaway in the first two sentences of the H3 block.",
+    "The final founder test is reasonably specific but slightly generic — 'count the CTAs on your own homepage' could appear in any CTA teardown. It does not anchor to Buffer's specific ratio of 1→5 CTAs or the exact product names added.",
+    "Paragraph starting 'Eight navigation items were also added' (~30 words) is fine for length, but it contradicts the rubric's FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula — it jumps to implication without example.",
+    "The section is approximately 310 words — within the 180–320 word limit, acceptable.",
+    "The 'Learn more about Mobile app', 'Learn more about Start page', and 'Learn more about AI assistant' CTAs that appear in ctaAdded are omitted from the narrative — this is acceptable as editorial selection, but the draft implies there are exactly 'five parallel calls to action' when the evidence shows 10 CTAs added, of which 5 are 'Learn more about [product]'. This is a minor misrepresentation.",
+    "The draft states 'five parallel calls to action' but the evidence shows 6 'Learn more about [product]' CTAs in ctaAdded (Publish, Create, Community, Analyze, Collaborate, Mobile app, Start page, AI assistant — actually 8). Listing only 5 while implying completeness is inaccurate without hedging."
+  ],
+  "requiredFixes": [
+    "Fix the claim 'five parallel calls to action' — the evidence shows 8 'Learn more about [product]' CTAs were added (Publish, Create, Community, Analyze, Collaborate, Mobile app, Start page, AI assistant). Either list all or say 'at least five' or 'across eight product areas' to avoid a miscount.",
+    "Remove or hedge the word 'freemium' — the provided evidence does not confirm Buffer's pricing model is freemium. Replace with a description grounded in the evidence, e.g. 'a multi-product model where each tool has its own entry point.'",
+    "Rewrite the H3 block 2 opening so the finding comes first. Currently the first sentence is throat-clearing ('Eight navigation items were removed across the period tracked'). Lead with the signal: what does the removal of 'See All Case Studies →' mean for Buffer's homepage strategy?",
+    "Make the founder test more specific to Buffer's evidence. Anchor it to the 1-to-8 CTA expansion and name the product tracks Buffer uses (e.g. 'Buffer went from 1 CTA to 8 product-specific ones — if your homepage has 1, write down which of your product use cases it excludes').",
+    "The paragraph 'The structure mirrors a freemium model…' tracks 3 ideas simultaneously (model type, visitor behaviour, product architecture) — split into two sentences or two paragraphs, each carrying one idea, to comply with the 2-ideas-max rule."
+  ],
+  "riskFlags": [
+    "'The structure mirrors a freemium model' — 'freemium' is not supported by the evidence provided. This is an invented factual claim about Buffer's pricing structure.",
+    "'That removal signals social proof as a conversion tool… was deprioritized' — causal/outcome interpretation not directly evidenced. Acceptable if softened further to 'may suggest' rather than 'signals'.",
+    "'The page appears to shift toward product exploration rather than third-party validation' — directional outcome claim; not traceable to data, only inferred. Needs hedge language.",
+    "Claiming exactly 'five' product-specific CTAs when the evidence lists 8 'Learn more about [product]' entries is a factual inaccuracy that could damage credibility with expert readers."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Buffer', 'CTAs', 'navigation', and date range '2019 and 2026' — strong for search targeting 'Buffer homepage CTA changes' or 'Buffer navigation evolution'.",
+    "H3 headings both contain 'Buffer' and topic terms ('CTAs', 'navigation') — good for featured snippet eligibility on specific queries.",
+    "The section uses verbatim CTA text in bold quotes (e.g. **'Get Started for Free →'**, **'Learn more about Publish'**) which supports entity recognition and quoted-phrase indexing.",
+    "Word count of ~310 is within range — not thin, not padded.",
+    "Missing opportunity: the removed CTA **'Click for sound'** and **'Browser Extension→'** are interesting signals (possibly indicating a video or browser tool was removed) that could attract search interest around 'Buffer product changes' — consider referencing at least one."
+  ],
+  "rewriteInstruction": "The section has three fixable problems. First, correct the CTA count: the evidence shows 8 product-specific 'Learn more about' CTAs were added, not 5 — either list all 8 or explicitly say 'across eight product areas' and note which you're highlighting. Second, strip the word 'freemium' — replace it with a description the evidence actually supports (multi-product homepage, each tool gets its own entry point). Third, restructure H3 block 2 to lead with the finding: start with what the removal of 'See All Case Studies →' signals, then explain why, then give the implication. The founder test at the end is close but needs one more anchor to Buffer's specific numbers — tell the founder to compare their CTA count against Buffer's 1-to-8 expansion and ask what product use cases their single CTA is silently excluding. Keep all bold quotes as-is — that formatting is correct throughout.",
+  "dimensionScores": {
+    "evidenceAccuracy": 16,
+    "specificity": 10,
+    "plainLanguage": 16,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

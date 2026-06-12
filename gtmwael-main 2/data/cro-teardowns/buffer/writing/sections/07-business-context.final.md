@@ -1,0 +1,7 @@
+## Why the homepage changed
+
+These page-level moves trace back to a shifting competitive landscape. Between 2019 and 2026, Buffer competed in a crowded social media scheduling category alongside tools like Hootsuite and Sprout Social, which were simultaneously targeting SMBs, agencies, and enterprise teams. Buffer's 2019 homepage positioned it squarely as a business scheduling tool — its page title read **"Social Media Management Platform | Buffer"** — signalling a category fight on functional, time-saving utility.
+
+Several shifts in the evidence suggest the competitive environment changed meaningfully. Removing **"Try Buffer for Business"**, **"Pricing"**, and **"Case Studies"** from navigation, while adding channel-specific paths like TikTok and Instagram, points to a de-emphasis of business-tier evaluation flows. The meta description's new mention of a **"forever free plan"** is consistent with Buffer responding to creator-economy platforms entering the scheduling space.
+
+This evolution maps to a broader SaaS pattern: multi-product companies retiring feature-comparison homepages in favour of brand-as-category positioning once their name achieves recognition. Buffer's shift to **"Social media management for everyone"** mirrors this consolidation move. For SaaS teams building in this space today, it suggests that freemium and creator audiences may now be the primary growth surface worth competing for.

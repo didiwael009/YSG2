@@ -1,0 +1,253 @@
+{
+  "slug": "buffer",
+  "companyName": "Buffer",
+  "companyUrl": "https://buffer.com",
+  "category": "CRO Teardown",
+  "title": "Buffer Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Buffer rewrote its homepage over 7 years",
+  "metaTitle": "Buffer Homepage CRO Teardown — Jan 2019 to Jun 2026",
+  "description": "A CRO teardown of Buffer's homepage from Jan 2019 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Buffer's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2019 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-12",
+  "readTime": "9 min read",
+  "featuredImage": "/cro-teardowns/buffer/selected/2019-01.webp",
+  "featuredImageAlt": "Buffer Jan 2019 homepage — 'Save time managing social media for your business'",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2019-01.webp"
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2024-07.webp"
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2025-01.webp"
+    },
+    {
+      "month": "2025-10",
+      "label": "Oct 2025",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2025-10.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/buffer/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "7 added · 12 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Save time managing social media for your business",
+      "after": "Buffer",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Buffer is an intuitive social media management platform trusted by brands, businesses, agencies, and individuals to help drive social media results.",
+      "after": "Use Buffer to manage your social media so that you can create and share your content everywhere, consistently. Try our forever free plan or upgrade for more.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Social Media Management Platform | Buffer",
+      "after": "Buffer: Social media management for everyone"
+    }
+  ],
+  "h2Added": [
+    "Buffer APIis here",
+    "Your social media workspace",
+    "Buffer is trusted by over 100,000 businesses and individuals",
+    "…and so much more!",
+    "Connect your favorite accounts",
+    "Whoever you are, we’ve got you covered",
+    "Grow your social presence with confidence"
+  ],
+  "h2Removed": [
+    "Find the plan that's right for you",
+    "Buffer for Business Pricing",
+    "Buffer makes it easy for businesses and marketing teams to schedule posts, analyze performance, and manage all their accounts in one place",
+    "Manage all your social accounts in one place",
+    "Schedule social media posts for your preferred times",
+    "Review your analytics to see how your posts are performing",
+    "Add multiple team members and set access levels",
+    "Try Buffer and see the difference.",
+    "Schedule content as you discover it",
+    "Schedule your posts directly to Instagram",
+    "You’re in good company",
+    "World Class Customer Support"
+  ],
+  "ctaAdded": [
+    "Get started for free",
+    "Learn more about Publish",
+    "Learn more about Create",
+    "Learn more about Community",
+    "Learn more about Analyze",
+    "Learn more about Collaborate",
+    "Learn more about Mobile app",
+    "Learn more about Start page",
+    "Learn more about AI assistant",
+    "Learn more about our global team"
+  ],
+  "ctaRemoved": [
+    "Get Started for Free →",
+    "Learn More",
+    "Learn More →",
+    "See All Case Studies →",
+    "Browser Extension→",
+    "Buffer for Android→",
+    "Buffer for iOS→",
+    "Click for sound"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2019-01",
+      "label": "Jan 2019 — original state",
+      "period": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2019-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Save time managing social media for your business\" — accessible benefit language aimed at a broad audience.",
+        "Visible section headings include: \"Find the plan that's right for you\", \"Buffer for Business Pricing\", \"Buffer makes it easy for businesses and marketing teams to schedule posts, analyze performance, and manage all their accounts in one place\".",
+        "Navigation includes: \"Pricing\", \"Blog\" — product category framing.",
+        "Section headings later removed include: \"Find the plan that's right for you\" and \"Buffer for Business Pricing\"."
+      ]
+    },
+    {
+      "id": "analysis-2024-07",
+      "label": "Jul 2024 — mid-transition",
+      "period": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2024-07.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 95.3% — a moderate visual change.",
+        "H1 in this snapshot: \"Buffer\".",
+        "New section headings appearing: \"Grow your audience on social and beyond\", \"Build a following without draining your time\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/buffer/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Buffer\" — updated value proposition.",
+        "New section headings include: \"Buffer APIis here\", \"Your social media workspace\", \"Buffer is trusted by over 100,000 businesses and individuals\".",
+        "CTAs no longer present include: \"Get Started for Free →\", \"Learn More\", \"Learn More →\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"Save time managing social media for your business\" to \"Buffer\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Blog\", \"Webinar\", \"Case Studies\" to \"Buffer\", \"Features\", \"Integrations\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "7 section headings were added and 12 removed between Jan 2019 and Jun 2026. New headings include \"Buffer APIis here\" and \"Your social media workspace\". Headings that disappeared include \"Find the plan that's right for you\" and \"Buffer for Business Pricing\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 5 snapshots spanning roughly 7 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "score": 79,
+  "pass": false,
+  "issues": [
+    "Section heading contains the company name and CTA-related terms but is 'clever-only' in structure — it narrates a specific action rather than being search-optimised (e.g. missing terms like 'CTA', 'navigation', 'homepage evolution').",
+    "The navigation H3 block does NOT deliver its practical takeaway in the first two sentences — the first sentence is an abstract framing statement ('The core finding lands here first'), not a finding about Agorapulse's specific change.",
+    "H3 for navigation changes: the opening sentence ('The core finding lands here first: Agorapulse's navigation moved away from passive category labels...') is meta-commentary about structure, not a plain finding. This violates the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula because the first sentence announces itself.",
+    "The navigation H3 body paragraph starting 'The core finding lands here first' is approximately 65 words — exceeds the 60-word limit for analytical paragraphs under H3 blocks.",
+    "'See all pricing' and 'Start my free trial now' are listed in ctaRemoved, NOT in navRemoved — the draft frames them as navigation items ('transactional exits — links that send visitors away from the page'), which is an unsupported categorisation not traceable to the evidence arrays.",
+    "The claim that removed CTAs sent visitors to 'comparison grids where Hootsuite and Sprout Social appear alongside Agorapulse' is not traceable to the provided evidence — no competitor names appear in the evidence at all. This is an invented fact.",
+    "The phrase 'if the visitor's intent on arrival supports skipping that step' is a hedged causal claim but uses the jargon concept 'intent' without a plain-language definition in the same sentence.",
+    "Word count is approximately 340 words — exceeds the 180–320 word cap.",
+    "The CTA H3 block's second paragraph contains a causal framing — 'This suggests the homepage no longer treats third-party review sites as a necessary stop' — without a stated condition, triggering a -3 penalty.",
+    "The founder test at the end is reasonably specific but references 'Features' or 'Solutions' as generic examples rather than being anchored to Agorapulse's specific removed nav items (e.g. 'Schedule Freely' or 'Learn more')."
+  ],
+  "requiredFixes": [
+    "Remove the invented claim about Hootsuite and Sprout Social appearing on comparison grids — this is not in the evidence. Replace with a factual observation that the removed CTAs directed visitors off-page to third-party review platforms.",
+    "Reframe 'See all pricing' and 'Start my free trial now' correctly: both appear in ctaRemoved, not navRemoved. Do not describe them as navigation items unless you can support that from the evidence. Either drop this framing or hedge it explicitly.",
+    "Trim the navigation H3 opening paragraph to under 60 words and restructure so the first sentence states the finding plainly (e.g. 'Agorapulse added 'Sign up!' directly into the top navigation bar — a conversion step visible before a visitor reads any copy.').",
+    "Rewrite the navigation H3 opening to eliminate the meta-commentary phrase 'The core finding lands here first' — state the finding directly, do not announce that you are about to state it.",
+    "Cut approximately 20–40 words from the section to bring total word count within the 180–320 word range.",
+    "Replace or define the word 'intent' in the CTA H3 block with plain language in the same sentence — e.g. 'if the visitor already knows what they want.'",
+    "Anchor the founder test more specifically to Agorapulse's evidence — reference one of Agorapulse's actual removed items (e.g. 'Learn more' or 'Schedule Freely') as a named example of a category label that was dropped.",
+    "Add a condition to the causal hedge in the CTA block — replace 'This suggests the homepage no longer treats third-party review sites as a necessary stop' with a version that specifies the condition under which this would be true or false."
+  ],
+  "riskFlags": [
+    "INVENTED FACT: 'comparison grids where Hootsuite and Sprout Social appear alongside Agorapulse' — no competitor names are present in the evidence. This fires the hard-cap condition for unsupported factual claims.",
+    "UNSUPPORTED CATEGORISATION: 'See all pricing' and 'Start my free trial now' are described as navigation items, but the evidence places them in ctaRemoved, not navRemoved.",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'This suggests the homepage no longer treats third-party review sites as a necessary stop' needs an explicit 'if [condition]' attached."
+  ],
+  "seoNotes": [
+    "The ## heading is long and narrative — search engines may truncate it. A shorter heading containing 'Agorapulse', 'CTA', 'navigation', and 'homepage' would perform better (e.g. 'Agorapulse Homepage CTA and Navigation Changes: What Shifted and Why').",
+    "Both H3 headings contain the company name and topic terms, which is good for internal anchor indexing.",
+    "The section references G2, TrustRadius, and GetApp by name — these are high-intent search terms for social media tool comparisons and add topical relevance."
+  ],
+  "rewriteInstruction": "Start by cutting the invented competitor claim (Hootsuite, Sprout Social) entirely — it is not in the evidence and fires a hard cap. Reclassify 'See all pricing' and 'Start my free trial now' as CTAs, not nav items, because that is what the evidence shows. Trim the total word count to under 320 words by shortening the navigation H3 block. Rewrite the navigation H3 opening so the first sentence states the actual finding plainly — remove all meta-commentary like 'The core finding lands here first.' Keep the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula: lead with what changed, then explain what it means, then point to a specific item from the evidence (e.g. 'Sign up!' added to the top bar), then state what a founder should do about it. Anchor the founder test to a named Agorapulse item that was removed — 'Learn more' or 'Schedule Freely' work well as examples of category-style labels. Define 'intent' in plain language the first time it appears. Update the ## heading to include searchable terms: 'CTA', 'navigation', and 'homepage'.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 11,
+    "plainLanguage": 16,
+    "scannability": 10,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

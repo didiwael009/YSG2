@@ -1,0 +1,52 @@
+{
+  "company_stage_start": "early-growth",
+  "company_stage_end": "growth",
+  "key_events": [
+    {
+      "period": "2019-Q3",
+      "type": "funding",
+      "summary": "Agorapulse reportedly closed its first and only institutional funding round — a Series B of approximately $18.3M–$18.4M — in September 2019, with investors including Cipio Partners, Hi Inov, and Entrepreneur Venture, according to public sources including Tracxn and CB Insights. This was the company's first significant external capital after reportedly being bootstrapped, and likely catalyzed subsequent hiring and product expansion."
+    },
+    {
+      "period": "2021-Q1",
+      "type": "hiring",
+      "summary": "Agorapulse reportedly hired Darryl Praill — a high-profile SaaS CMO and LinkedIn influencer — as its Chief Marketing Officer, according to public profiles and company event pages. This hire signaled a deliberate shift toward more aggressive content marketing, thought leadership positioning, and mid-market demand generation beyond the company's earlier organic, founder-led growth model."
+    },
+    {
+      "period": "2022-Q1",
+      "type": "product-launch",
+      "summary": "Agorapulse publicly announced a Social Media ROI feature in March 2022 at Social Media Marketing World, described by CEO Emeric Ernoult as 'a first in the industry,' according to a PR Newswire press release. This feature combined Google Analytics data with social activity to give marketers and agencies quantifiable proof of revenue driven by social media — a major positioning pivot from workflow management toward demonstrable business impact."
+    },
+    {
+      "period": "2022-Q4",
+      "type": "product-launch",
+      "summary": "Agorapulse reportedly integrated TikTok publishing into its platform in late 2022, according to public announcements on GlobeNewswire and company blog posts. This expanded its network coverage at a time when TikTok was rapidly becoming a mandatory channel for brand and agency social strategies, helping Agorapulse stay competitive as the platform landscape fragmented."
+    },
+    {
+      "period": "2022-2023",
+      "type": "competitor-move",
+      "summary": "Hootsuite, Agorapulse's largest competitor, reportedly underwent major restructuring between 2022 and 2023, including layoffs of approximately 30% of its global workforce in August 2022, followed by additional cuts, a CEO change in January 2023, and the elimination of its free plan in early 2023, according to Business in Vancouver and other public sources. This significant disruption among incumbent players is likely to have created market opportunity for Agorapulse to position itself as a stable, customer-first alternative."
+    },
+    {
+      "period": "2023-Q3",
+      "type": "product-launch",
+      "summary": "Agorapulse publicly launched two new product add-ons in 2023 — 'Advocacy' (employee and brand advocacy campaigns) and 'PulseLink in Bio' — alongside an AI-powered writing assistant integrated into its publishing composer, according to the company's own year-end recap. These launches reportedly broadened the platform's ICP beyond pure social media managers toward brand marketers, agencies managing influencers, and enterprise teams seeking measurable organic amplification."
+    }
+  ],
+  "category_context": "The social media management software market reportedly grew from approximately $2.8B in 2021 toward a projected $7B+ by 2028 at a ~14% CAGR, according to market research sources, driven by proliferation of social platforms, remote/digital marketing adoption post-COVID, and growing demand for analytics and ROI attribution. The 2022–2023 period saw notable consolidation pressure and pricing volatility among larger incumbents like Hootsuite, while AI-assisted content creation and social listening became expected baseline features by 2023–2024.",
+  "icp_evolution": "According to public sources, Agorapulse started the period primarily positioned for SMBs and agencies managing day-to-day social workflows at affordable price points; by 2023–2025, the company's messaging and product roadmap had reportedly shifted toward mid-market brands and agencies seeking provable business impact — reflected in the ROI dashboard launch, the Advocacy add-on targeting enterprise brand managers, and G2 positioning against legacy enterprise tools like Hootsuite, Sprout Social, Sprinklr, and Brandwatch.",
+  "notable_competitors": [
+    "Hootsuite",
+    "Sprout Social",
+    "Buffer",
+    "Sprinklr",
+    "Brandwatch",
+    "Later",
+    "Meltwater",
+    "SocialPilot"
+  ],
+  "confidence_level": "medium",
+  "generatedAt": "2026-06-12T19:54:19.450Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.43766700000000003
+}

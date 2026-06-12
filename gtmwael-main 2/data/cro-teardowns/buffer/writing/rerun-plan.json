@@ -1,0 +1,76 @@
+{
+  "createdAt": "2026-06-12T20:00:02.721Z",
+  "slug": "buffer",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": true,
+    "finalJudgeScore": 74,
+    "seoScore": 84
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: ## How Buffer's H1 went from 'Save time managing social media for your business' to just 'Buffer' — H3 block 'What Buffer's messaging shift signals ab",
+        "Judge rerun recommendation: ## Why the homepage changed — add H3 subheadings and replace the Dunford reference with a plain-language framing; anchor the generic SaaS pattern para",
+        "Judge rerun recommendation: ## What SaaS teams can study from Buffer's homepage positioning decisions — remove Dunford citation from the 'Pricing model as search differentiator' ",
+        "'visual sophistication score sat at 2 out of 5' — the evidence records this as '2' with no '/5' denominator stated; the fraction framing is an editorial addition, though low-risk",
+        "## How Buffer's H1 went from... — H3: 'What Buffer's messaging shift signals'",
+        "'if a rival has moved upmarket, naming your free tier in the meta description makes that contrast visible before the click' — presents a causal mechanism as fact without data anchor",
+        "'Buffer became the obvious alternative for displaced small businesses and solopreneurs' — this phrasing from business context is not cited in the article itself, but the article's claim that the meta ",
+        "'The removal of See All Case Studies → is the most pointed signal... it suggests the homepage may no longer be built to convince a skeptical visitor' — the word 'most pointed' is an unsupported rankin",
+        "Remove the reference to April Dunford's *Obviously Awesome* — no external citation appears in the evidence and its inclusion risks being read as an invented authority anchor; replace with a plain-lang",
+        "The visual sophistication framing ('2 out of 5', '3 out of 5', '4 out of 5') should note these are from a 5-point scale in the evidence — the article never states it is a 5-point scale, leaving reader"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "## How Buffer replaced its single conversion funnel... — H3: 'How Buffer's navigation changed'",
+        "The paragraph beginning 'Several shifts in the evidence suggest...' in '## Why the homepage changed' reads as generic SaaS pattern commentary — anchor it to at least one specific Buffer evidence item "
+      ],
+      "priority": "medium",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "01-intro",
+      "reasons": [
+        "Add explicit keyword anchors in the opening paragraph: the primary keyword 'Buffer homepage CRO teardown' appears in the title and H1 but not naturally in the first 100 words of body text — weave it i"
+      ],
+      "priority": "low",
+      "source": "seo-audit"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "'Grow your audience on social and beyond' and 'Build a following without draining your time' — these H2 headings do not appear in the evidence h2Added list",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "As Dunford describes in *Obviously Awesome* — no citation to this external reference exists in the evidence; this is an invented external authority anchor",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "## Why the homepage changed",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'this only holds if organic brand search volume is already doing that work before the visitor lands' — conditionally framed and allowed, but borders on causal assertion about Buffer's traffic mix with",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove or replace the two H2 headings cited as added — 'Grow your audience on social and beyond' and 'Build a following without draining your time' — these do not appear in the evidence h2Added list; ",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Add an H3 subheading to the '## Why the homepage changed' section — it contains multiple analytical paragraphs with no H3 structure, violating the scannability requirement",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Strengthen secondary keyword density: 'SaaS homepage CRO teardown' and 'homepage A/B test analysis' are listed as secondary keywords but appear only once or not at all in the body — integrate these te",
+      "reason": "cannot map to a specific section — may require manual review"
+    }
+  ]
+}

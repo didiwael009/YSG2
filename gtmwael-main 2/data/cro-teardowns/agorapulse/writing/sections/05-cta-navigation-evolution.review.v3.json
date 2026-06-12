@@ -1,0 +1,39 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The second paragraph of the CTA section contains a causal/outcome claim without a condition: 'This suggests the homepage no longer treats third-party review sites as a necessary stop' — this is a reasonable inference but is stated as a near-certainty rather than a conditional observation.",
+    "The navigation H3 body paragraph ('What was removed supports this...') runs to approximately 65 words — marginally over the 60-word cap.",
+    "The phrase 'category-style labels' is a mild expert shorthand used without a brief plain-language gloss in the same sentence — it is explained implicitly but not explicitly defined.",
+    "The opening sentence of the navigation H3 sub-block buries the takeaway: the practical implication ('sign up in the nav means the page expects pre-oriented visitors') comes after the factual statement rather than leading with it.",
+    "No word count risk: estimated ~290 words, within range.",
+    "'Schedule Freely' is present verbatim in the ctaRemoved array — correctly cited. All other named CTAs and nav items are traceable to the evidence arrays. No evidence-accuracy violations on named items."
+  ],
+  "requiredFixes": [
+    "Trim the navigation H3 body paragraph ('What was removed supports this...') to under 60 words — split into two sentences or cut the 'may have served a narrower audience' clause, which is speculative and untraceable to evidence.",
+    "Add a condition to the claim about third-party review sites: e.g., 'if visitors are arriving via paid or branded search, the page may no longer need to route them to external review sites first' — the conditional is half-present in the draft but needs to lead, not trail.",
+    "Reorder the navigation H3 opening: state the practical finding first ('Adding a sign-up button to the top nav is a bet that visitors already know what Agorapulse does before they land'), then give the factual support.",
+    "Add a one-phrase plain-language gloss for 'category-style labels' in the same sentence, e.g., 'category-style labels — links that point toward more reading rather than a next step'."
+  ],
+  "riskFlags": [
+    "'This suggests the homepage no longer treats third-party review sites as a necessary stop' — stated with mild confidence but is a causation-adjacent inference not supported by data; needs a hedging condition.",
+    "'a conversion step visible before a visitor reads any copy' — accurate observation but the implication that this signals visitor intent is an unsupported leap; flag for softening.",
+    "'may have served a narrower audience' re: Schedule Freely — speculative; no evidence in the provided data supports an audience-narrowing interpretation."
+  ],
+  "seoNotes": [
+    "The ## heading — 'Agorapulse CTA and navigation homepage changes: from third-party review links to on-page conversion' — contains the company name, 'CTA', 'navigation', and 'homepage', which is strong for long-tail search.",
+    "The H3 headings are descriptive and contain 'Agorapulse', 'CTA', and 'navigation' — good for in-page anchor discoverability.",
+    "The contrast framing ('third-party review links to on-page conversion') in the heading is a useful search differentiator and signals a before/after analysis, which matches user intent for teardown queries."
+  ],
+  "rewriteInstruction": "The draft is close to publishable. Four targeted fixes will push it over the threshold. First, trim the navigation body paragraph to under 60 words by cutting the speculative 'may have served a narrower audience' clause about Schedule Freely — it has no evidence support. Second, add a concrete condition to the third-party review site inference so it reads as an observation, not a conclusion: place the 'if visitors arrive via branded search' qualifier at the start of the sentence, not the end. Third, flip the navigation H3 so it opens with the practical finding (what the sign-up-in-nav decision signals to a founder) before giving the factual detail. Fourth, add a brief plain-language gloss to 'category-style labels' in the same sentence so both expert and founder readers get it without pausing. No structural overhaul needed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 17,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

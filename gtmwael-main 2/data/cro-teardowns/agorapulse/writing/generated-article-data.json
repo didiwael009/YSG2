@@ -1,0 +1,259 @@
+{
+  "slug": "agorapulse",
+  "companyName": "Agorapulse",
+  "companyUrl": "https://www.agorapulse.com",
+  "category": "CRO Teardown",
+  "title": "Agorapulse Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Agorapulse rewrote its homepage over 7 years",
+  "metaTitle": "Agorapulse Homepage CRO Teardown — Jan 2019 to Jun 2026",
+  "description": "A CRO teardown of Agorapulse's homepage from Jan 2019 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Agorapulse's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2019 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-12",
+  "readTime": "9 min read",
+  "featuredImage": "/cro-teardowns/agorapulse/selected/2019-01.webp",
+  "featuredImageAlt": "Agorapulse Jan 2019 homepage — 'Social Media Management Simplified'",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-01.webp"
+    },
+    {
+      "month": "2019-07",
+      "label": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-07.webp"
+    },
+    {
+      "month": "2019-10",
+      "label": "Oct 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-10.webp"
+    },
+    {
+      "month": "2020-04",
+      "label": "Apr 2020",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2020-04.webp"
+    },
+    {
+      "month": "2021-04",
+      "label": "Apr 2021",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2021-04.webp"
+    },
+    {
+      "month": "2024-04",
+      "label": "Apr 2024",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2024-04.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "7 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "7 added · 6 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Social Media Management Simplified",
+      "after": "Drive Real Impact on Social Media. From Engagement to ROI.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "An easy social media management tool that works with Facebook, Twitter, Instagram, LinkedIn, Google+, and YouTube. Start your free trial today!",
+      "after": "An easy to use Social Media Management Software that allows you to stay organized, save time, and easily manage your inbox, publishing, reporting, monitoring, and team collaboration tools.",
+      "note": "Free-trial urgency and exclamatory language removed. The new description reads as a neutral product category statement — more consistent with a platform positioning than a trial-conversion tool."
+    },
+    {
+      "element": "Page title",
+      "before": "Simple & Affordable Social Media Management | Agorapulse",
+      "after": "Social Media Management Software | Agorapulse"
+    }
+  ],
+  "h2Added": [
+    "Over 31K+ social media managers use our tool daily",
+    "Effective social media management with impactful business outcomes",
+    "Features to boost efficiency and save time",
+    "Works perfectly with your favorite tools and platforms",
+    "What makes Agorapulse great?",
+    "Frequently asked questions",
+    "Supercharge your social media goals with Agorapulse"
+  ],
+  "h2Removed": [
+    "We support all of these networks.",
+    "We are top rated by our users.",
+    "Find out how Agorapulse works with the unique needs of your business.",
+    "Features You'll Love",
+    "Who loves Agorapulse?",
+    "We are a people company."
+  ],
+  "ctaAdded": [
+    "Sign up!",
+    "Try for free now",
+    "Watch an On-Demand demo",
+    "Explore Inbox",
+    "Explore Publishing",
+    "Explore Listening",
+    "Explore Reporting",
+    "Explore ROI",
+    "Try for free",
+    "Book a demo"
+  ],
+  "ctaRemoved": [
+    "Read on TrustRadius",
+    "Read on G2 Crowd",
+    "Read on GetApp",
+    "Learn more",
+    "Schedule Freely",
+    "Read more",
+    "Read articles from our team",
+    "Start my free trial now",
+    "See all pricing",
+    "Reviews on G2CROWD"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2019-01",
+      "label": "Jan 2019 — original state",
+      "period": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Social Media Management Simplified\" — direct product statement.",
+        "Visible section headings include: \"We support all of these networks.\", \"We are top rated by our users.\", \"Find out how Agorapulse works with the unique needs of your business.\".",
+        "Navigation includes: \"Features\" — product category framing.",
+        "Section headings later removed include: \"We support all of these networks.\" and \"We are top rated by our users.\"."
+      ]
+    },
+    {
+      "id": "analysis-2021-04",
+      "label": "Apr 2021 — mid-transition",
+      "period": "Apr 2021",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2021-04.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 96.3% — a moderate visual change.",
+        "H1 in this snapshot: \"Take Controlof Your Social Media\".",
+        "New section headings appearing: \"Over 31,000 social media managers use our tool daily\", \"One easy-to-use solution, loaded with powerful features.\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/current-live.webp",
+      "heading": "Today: platform-first positioning",
+      "annotations": [
+        "H1 now reads: \"Drive Real Impact on Social Media. From Engagement to ROI.\" — formal capability framing, consistent with platform-level positioning.",
+        "New section headings include: \"Over 31K+ social media managers use our tool daily\", \"Effective social media management with impactful business outcomes\", \"Features to boost efficiency and save time\".",
+        "CTAs no longer present include: \"Read on TrustRadius\", \"Read on G2 Crowd\", \"Read on GetApp\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"Social Media Management Simplified\" to \"Drive Real Impact on Social Media. From Engagement to ROI.\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Features\", \"Free Tools\", \"Company\" to \"See a demo\", \"Top Features\", \"Learn More\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "7 section headings were added and 6 removed between Jan 2019 and Jun 2026. New headings include \"Over 31K+ social media managers use our tool daily\" and \"Effective social media management with impactful business outcomes\". Headings that disappeared include \"We support all of these networks.\" and \"We are top rated by our users.\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 7 snapshots spanning roughly 7 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

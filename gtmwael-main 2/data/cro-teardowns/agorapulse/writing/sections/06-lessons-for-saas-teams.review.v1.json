@@ -1,0 +1,47 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "H3 heading 3 uses 'ICP declaration' without an immediate plain-language definition in the same sentence — the definition arrives two sentences later, violating the 'immediate' requirement.",
+    "Paragraph 2 of H3-1 ('This matters because buyers who are mid-evaluation...') contains 2 ideas stacked but sits at ~38 words — borderline acceptable, but the finding is not stated in the first sentence; instead the first sentence is the example (the H1 swap), and the finding comes in paragraph 2. The FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula is partially inverted across paragraphs.",
+    "H3-1 sub-block: the practical takeaway is not in the first two sentences of the H3 block — it appears only in paragraph 3, violating the founder-takeaway placement rule.",
+    "H3-2 sub-block: the practical takeaway is buried in paragraph 3, not the first two sentences of the block.",
+    "H3-3 sub-block: the practical takeaway is buried in the final paragraph, not in the first two sentences of the block.",
+    "The claim 'The word ROI did not appear in the headline until the product could actually produce ROI reporting' is a causal/sequencing claim not directly traceable to the provided evidence — the evidence shows the headline changed, but does not confirm the product had an ROI dashboard at that specific moment, nor that the headline change was timed to a feature release.",
+    "H3-2 makes a Hormozi citation but the citation pattern in the evidence requires format 'Hormozi notes in $100M Offers that [observation about offer framing or value signal]' — the draft uses this correctly, but the cited claim ('the strongest offer removes the buyer's need to shop elsewhere') is a paraphrase not verbatim from the evidence's suggested citation pattern, and is an invented factual representation of Hormozi's content not verifiable from the provided evidence.",
+    "The section word count is approximately 430 words — this exceeds the 380-word upper limit.",
+    "H3-3 heading: 'Stripping affordability signals as an ICP declaration' uses the term 'ICP declaration' in the heading itself without any definition at that point, and while 'ICP' is defined in the body, the heading is potentially opaque to founders still learning.",
+    "The opening of H3-1 is structured as a factual recap ('Agorapulse changed its H1 from...') rather than leading with the finding or a more interesting entry point — the rhythm penalises template-default openings when more interesting entries were available."
+  ],
+  "requiredFixes": [
+    "Move the practical takeaway to the first two sentences of each H3 sub-block. Currently all three blocks bury the actionable insight in the final paragraph. Restructure each block as: FINDING (sentence 1) → brief evidence anchor (sentence 2) → explanation → runnable test.",
+    "Remove or reframe the claim 'The word ROI did not appear in the headline until the product could actually produce ROI reporting' — this causation/sequencing claim is not supported by the provided evidence. Replace with a hedged observation: e.g., 'Agorapulse's H1 shifted to ROI language only after [evidence-supported context], suggesting the messaging followed capability rather than leading it.'",
+    "Define 'ICP' (ideal customer profile) in the same sentence where it first appears — not two sentences later. The current draft defines it two sentences after use in the H3 heading, which violates the immediate-definition rule.",
+    "Trim the section to under 380 words. The draft is approximately 430 words. The Hormozi paragraph in H3-2 and the extended diagnostic in H3-3 are the most cuttable passages.",
+    "Rewrite the H3-1 opening sentence to lead with the finding rather than a factual recap. Instead of 'Agorapulse changed its H1 from X to Y', open with the insight: e.g., 'Don't claim an outcome your product cannot yet deliver — Agorapulse only moved to ROI headline language when [evidence anchor].'",
+    "Verify and reframe the Hormozi citation — the draft paraphrases Hormozi as saying 'the strongest offer removes the buyer's need to shop elsewhere', which is not in the provided citation context. Use only the citation pattern provided: 'Hormozi notes in $100M Offers that [observation about offer framing or value signal]' and tie it to an observation directly supported by the evidence."
+  ],
+  "riskFlags": [
+    "Causal/unsupported claim: 'The word ROI did not appear in the headline until the product could actually produce ROI reporting' — the evidence shows the headline changed but does not confirm product feature timing or that this was the reason for the timing.",
+    "Causal claim without condition: 'Outcome language that outruns the product loses credibility with exactly the buyer it is trying to reach' — stated as fact with no hedge or condition. Should be hedged: 'if [condition], this risks losing credibility.'",
+    "The Hormozi citation paraphrases content not verifiable from the evidence provided. The evidence only provides a citation pattern template, not the actual Hormozi quote — the draft invents the specific claim attributed to Hormozi.",
+    "H3-2 claim: 'This only works if buyers are already searching for Agorapulse by name' — framed as a hard rule; should carry a condition hedge."
+  ],
+  "seoNotes": [
+    "The ## section heading contains the company name 'Agorapulse' and the searchable term 'homepage' — strong for SEO.",
+    "H3 headings each name Agorapulse and a specific element ('G2', 'TrustRadius', 'Simple & Affordable', 'page title') — good for long-tail search and featured snippet eligibility.",
+    "The primary keyword 'Agorapulse homepage teardown' is not present in the section body — consider one natural inclusion if this section is crawled independently.",
+    "Verbatim CTAs and headlines are bolded correctly throughout — this aids both scannability and potential rich-result extraction."
+  ],
+  "rewriteInstruction": "Restructure all three H3 sub-blocks so the practical takeaway and the core finding appear in the first two sentences, not the last paragraph — readers who skim will currently miss every lesson. Remove the unsupported causal claim about ROI dashboard timing; replace it with a hedged observation tied strictly to the evidence (the headline change is observable; the product-feature timing is not confirmed). Define 'ICP' in the same sentence it first appears, not two sentences later. Cut the section to under 380 words — trim the Hormozi paragraph and the H3-3 diagnostic to their essential sentences. Rewrite the H3-1 opening to lead with the insight rather than a factual recap of the headline swap. Reframe or remove the Hormozi citation: the provided evidence gives only a citation pattern, not a verifiable quote, so either use the pattern with an evidence-grounded observation or omit the citation entirely. Add a condition hedge to the claim that removing review-site CTAs 'only works if buyers are already searching by name' — frame it as a conditional, not a rule.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 10,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

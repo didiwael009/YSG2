@@ -1,0 +1,143 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Buffer",
+  "companyUrl": "https://buffer.com",
+  "articleTitle": "Buffer Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Buffer rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 7,
+    "h2Removed": 12,
+    "ctaAdded": 10,
+    "ctaRemoved": 8,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Buffer homepage teardown",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2019-01",
+      "label": "Jan 2019 — original state",
+      "period": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2019-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Save time managing social media for your business\" — accessible benefit language aimed at a broad audience.",
+        "Visible section headings include: \"Find the plan that's right for you\", \"Buffer for Business Pricing\", \"Buffer makes it easy for businesses and marketing teams to schedule posts, analyze performance, and manage all their accounts in one place\".",
+        "Navigation includes: \"Pricing\", \"Blog\" — product category framing.",
+        "Section headings later removed include: \"Find the plan that's right for you\" and \"Buffer for Business Pricing\"."
+      ]
+    },
+    {
+      "id": "analysis-2024-07",
+      "label": "Jul 2024 — mid-transition",
+      "period": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2024-07.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 95.3% — a moderate visual change.",
+        "H1 in this snapshot: \"Buffer\".",
+        "New section headings appearing: \"Grow your audience on social and beyond\", \"Build a following without draining your time\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/buffer/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Buffer\" — updated value proposition.",
+        "New section headings include: \"Buffer APIis here\", \"Your social media workspace\", \"Buffer is trusted by over 100,000 businesses and individuals\".",
+        "CTAs no longer present include: \"Get Started for Free →\", \"Learn More\", \"Learn More →\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Save time managing social media for your business",
+      "after": "Buffer",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Buffer is an intuitive social media management platform trusted by brands, businesses, agencies, and individuals to help drive social media results.",
+      "after": "Use Buffer to manage your social media so that you can create and share your content everywhere, consistently. Try our forever free plan or upgrade for more.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Social Media Management Platform | Buffer",
+      "after": "Buffer: Social media management for everyone"
+    }
+  ],
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2019-01",
+        "design_era": "early-startup",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Centered headline with decorative scattered dot elements, tagline, blue CTA button, and horizontal logo lockups below",
+        "proof_density": "low",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 2,
+        "brand_maturity": "early"
+      },
+      {
+        "month": "2024-07",
+        "design_era": "growth",
+        "layout_type": "multi-column",
+        "above_fold_structure": "Left-aligned headline with email input and blue CTA, right-side product screenshot carousel, statistics row below, scattered colored dot accents",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 3,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2025-01",
+        "design_era": "growth",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Large centered headline with product screenshot on right, green CTA button, statistics row, scattered colored shape accents throughout",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 3,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2025-10",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Centered headline with green CTA and search input, product screenshot on right, statistics row, colored geometric accents and dot pattern",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "current-live",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Dark announcement bar at top, centered headline with green CTA and search input, product screenshot right-aligned, statistics row below, scattered colored dot accents",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from a simple centered layout with minimal graphic elements to a sophisticated full-bleed multi-column design featuring product screenshots, refined color blocking, and a cohesive system of decorative geometric accents. The visual complexity and polish increased substantially while maintaining a consistent color palette of green, blue, and pastel tones.",
+    "design_evolution_label": "early-startup-to-polished-saas",
+    "generatedAt": "2026-06-12T19:53:43.326Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0059896
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "slug": "buffer",
+  "companyName": "Buffer",
+  "companyUrl": "https://buffer.com",
+  "fromMonth": "2019-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-12T19:50:15.854Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2019-01.webp",
+      "timestamp": "20190215031052",
+      "originalUrl": "https://buffer.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2024-07.webp",
+      "timestamp": "20240815045242",
+      "originalUrl": "https://buffer.com",
+      "similarityToPrev": 0.9531,
+      "comparedTo": "2019-01"
+    },
+    {
+      "month": "2025-01",
+      "label": "Jan 2025",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2025-01.webp",
+      "timestamp": "20250215140935",
+      "originalUrl": "https://buffer.com",
+      "similarityToPrev": 0.9592,
+      "comparedTo": "2024-07"
+    },
+    {
+      "month": "2025-10",
+      "label": "Oct 2025",
+      "screenshotPath": "/cro-teardowns/buffer/selected/2025-10.webp",
+      "timestamp": "20251115005552",
+      "originalUrl": "https://buffer.com",
+      "similarityToPrev": 0.948,
+      "comparedTo": "2025-01"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/buffer/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://buffer.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Buffer APIis here",
+      "Your social media workspace",
+      "Buffer is trusted by over 100,000 businesses and individuals",
+      "…and so much more!",
+      "Connect your favorite accounts",
+      "Whoever you are, we’ve got you covered",
+      "Grow your social presence with confidence"
+    ],
+    "h2Removed": [
+      "Find the plan that's right for you",
+      "Buffer for Business Pricing",
+      "Buffer makes it easy for businesses and marketing teams to schedule posts, analyze performance, and manage all their accounts in one place",
+      "Manage all your social accounts in one place",
+      "Schedule social media posts for your preferred times",
+      "Review your analytics to see how your posts are performing",
+      "Add multiple team members and set access levels",
+      "Try Buffer and see the difference.",
+      "Schedule content as you discover it",
+      "Schedule your posts directly to Instagram",
+      "You’re in good company",
+      "World Class Customer Support"
+    ],
+    "ctaAdded": [
+      "Get started for free",
+      "Learn more about Publish",
+      "Learn more about Create",
+      "Learn more about Community",
+      "Learn more about Analyze",
+      "Learn more about Collaborate",
+      "Learn more about Mobile app",
+      "Learn more about Start page",
+      "Learn more about AI assistant",
+      "Learn more about our global team"
+    ],
+    "ctaRemoved": [
+      "Get Started for Free →",
+      "Learn More",
+      "Learn More →",
+      "See All Case Studies →",
+      "Browser Extension→",
+      "Buffer for Android→",
+      "Buffer for iOS→",
+      "Click for sound"
+    ],
+    "navAdded": [
+      "Buffer",
+      "Features",
+      "Integrations",
+      "Instagram",
+      "Facebook",
+      "TikTok",
+      "LinkedIn",
+      "X (Twitter)"
+    ],
+    "navRemoved": [
+      "Blog",
+      "Webinar",
+      "Case Studies",
+      "Culture Blog",
+      "Our Values",
+      "Transparency",
+      "Try Buffer for Business",
+      "Login"
+    ],
+    "headlines": [
+      {
+        "from": "Save time managing social media for your business",
+        "to": "Buffer",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Buffer is an intuitive social media management platform trusted by brands, businesses, agencies, and individuals to help drive social media results.",
+        "to": "Use Buffer to manage your social media so that you can create and share your content everywhere, consistently. Try our forever free plan or upgrade for more.",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

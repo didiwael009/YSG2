@@ -1,0 +1,59 @@
+{
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "design_era": "early-startup",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Centered headline with decorative scattered dot elements, tagline, blue CTA button, and horizontal logo lockups below",
+      "proof_density": "low",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 2,
+      "brand_maturity": "early"
+    },
+    {
+      "month": "2024-07",
+      "design_era": "growth",
+      "layout_type": "multi-column",
+      "above_fold_structure": "Left-aligned headline with email input and blue CTA, right-side product screenshot carousel, statistics row below, scattered colored dot accents",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 3,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2025-01",
+      "design_era": "growth",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Large centered headline with product screenshot on right, green CTA button, statistics row, scattered colored shape accents throughout",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 3,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2025-10",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Centered headline with green CTA and search input, product screenshot on right, statistics row, colored geometric accents and dot pattern",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    },
+    {
+      "month": "current-live",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Dark announcement bar at top, centered headline with green CTA and search input, product screenshot right-aligned, statistics row below, scattered colored dot accents",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    }
+  ],
+  "visual_shift_summary": "The design evolved from a simple centered layout with minimal graphic elements to a sophisticated full-bleed multi-column design featuring product screenshots, refined color blocking, and a cohesive system of decorative geometric accents. The visual complexity and polish increased substantially while maintaining a consistent color palette of green, blue, and pastel tones.",
+  "design_evolution_label": "early-startup-to-polished-saas",
+  "generatedAt": "2026-06-12T19:53:43.326Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0059896
+}

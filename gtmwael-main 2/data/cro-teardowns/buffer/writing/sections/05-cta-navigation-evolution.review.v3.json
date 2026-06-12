@@ -1,0 +1,48 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "The ## section heading is clever-only and excessively long; it contains no plain searchable term like 'CTA', 'navigation', or 'Buffer homepage' in a scannable form — the phrase 'five-product discovery menu' is not a searchable query anyone types.",
+    "The third analytical paragraph (starting 'Eight navigation items were removed') runs approximately 65 words — exceeds the 60-word paragraph cap and triggers a scannability penalty.",
+    "The opening of the second H3 block buries its takeaway: the first sentence names the signal ('See All Case Studies →' removal) but does not state the practical implication in the first two sentences — the implication ('may no longer be built to convince a skeptical visitor') arrives only after the signal is named, which is acceptable, but the second sentence is still inferential rather than actionable.",
+    "The phrase 'discovery menu' in the ## heading is jargon without a plain-language definition — it appears only in the heading so no second-use penalty fires, but it is used without definition, triggering a plainLanguage penalty.",
+    "The Founder Test is strong and specific but references 'self-select' — a term that is mildly jargon-adjacent; not penalised but flagged.",
+    "The closing sentence of the first H3 block ('Each tool gets its own path in, rather than funneling every visitor toward a single undifferentiated starting point') is abstract and does not follow FINDING → EXPLANATION → EXAMPLE → IMPLICATION cleanly — the implication is missing.",
+    "The word 'undifferentiated' in the first H3 block is a strategist-level abstraction stacked with 'single' and 'starting point' — borderline three-abstract-noun stack.",
+    "No causal outcome claims detected — good. All signals are hedged with 'suggests' or 'consistent with'.",
+    "Word count is approximately 295 words — within the 180–320 range.",
+    "All quoted CTAs and nav items appear verbatim in the evidence arrays — no invented CTA names detected.",
+    "'Get started for free' (lowercase in evidence 'added' array) is quoted in the Founder Test as part of context but the removed version 'Get Started for Free →' is used in the draft — this is the removed CTA, correctly attributed; no penalty.",
+    "The section achieves the stated goal of analysing CTA and nav changes and signalling sales motion shifts.",
+    "H3 subheadings are present — two blocks confirmed.",
+    "All verbatim quotes are in bold quotes — check passes."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## heading to include a plain searchable term: replace 'five-product discovery menu' with 'CTA and navigation changes' or similar — example: 'How Buffer's CTA and Navigation Changes Signal a New Growth Model (2019–2026)'.",
+    "Split or trim the paragraph beginning 'Eight navigation items were removed' — it runs ~65 words, exceeding the 60-word cap. Break it into two sentences or remove one idea.",
+    "Add an explicit implication sentence at the end of the first H3 block — the current closing sentence explains what Buffer did but not what a founder should infer. Add a one-sentence concrete implication (e.g. what the risk is if a single CTA is retained).",
+    "Define 'discovery menu' if it is kept anywhere in the article, or replace it with plain language ('a separate entry point for each product') in the heading.",
+    "Move the practical takeaway of the second H3 block into its first sentence — currently the first sentence names a removed element; the implication should be stated first, then the evidence cited."
+  ],
+  "riskFlags": [
+    "The claim 'the homepage may no longer be built to convince a skeptical visitor with third-party proof' is inferential from a single CTA removal — hedged with 'may', which is acceptable, but the causal chain from removing 'See All Case Studies →' to 'no longer needs to establish credibility' is a leap; a condition should be attached (e.g. 'if case studies moved to a dedicated page rather than being dropped entirely').",
+    "The claim that the CTA expansion 'suggests Buffer no longer expects visitors to arrive knowing which product fits' is plausible but unsupported by session or traffic data — correctly hedged with 'suggests', so no hard penalty, but flagged for transparency."
+  ],
+  "seoNotes": [
+    "The ## heading is too long and too clever for a featured snippet or search result — shorten to under 70 characters and front-load 'Buffer CTA' or 'Buffer navigation changes'.",
+    "H3 headings contain 'Buffer's CTAs' and 'Buffer's navigation' — good for internal anchor text and entity relevance.",
+    "The Founder Test paragraph includes specific product names (Publish, Create, Community, Analyze, Collaborate, Mobile app, Start page, AI assistant) — these are useful for long-tail entity coverage.",
+    "Primary keyword 'Buffer homepage teardown' does not appear in this section — consider one natural mention in the opening or closing sentence."
+  ],
+  "rewriteInstruction": "Shorten and de-jargon the ## heading so it contains 'Buffer', 'CTA', and 'navigation' as plain searchable terms — kill 'five-product discovery menu'. In the first H3 block, add a concrete implication sentence after the final line so the paragraph ends with an actionable point, not a description. In the second H3 block, flip the order: state the implication first ('Removing case studies from the nav suggests Buffer is no longer leading with social proof on the homepage'), then cite the evidence. Trim the paragraph starting 'Eight navigation items' to under 60 words by cutting one of the two ideas it carries — keep either the count observation or the 'arrive with enough context' inference, not both. All bold quotes and evidence citations are correct — do not change them.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 10,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

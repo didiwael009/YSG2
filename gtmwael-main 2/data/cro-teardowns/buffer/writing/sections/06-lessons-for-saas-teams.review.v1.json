@@ -1,0 +1,49 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section heading is missing the company name 'Buffer' and lacks a searchable topic term ('homepage', 'positioning', 'messaging', 'CTA', 'conversion') — it is clever-only.",
+    "The term 'discovery filter' in H3-1 is used without an immediate plain-language definition — an expert-adjacent term introduced without explanation.",
+    "Causal claim in H3-2: 'a visitor searching... converts better from a channel-specific page than from a generic case study' — this is an outcome/causation claim not traceable to the evidence; no conversion data is provided in the evidence.",
+    "Causal claim in H3-3: 'Missing any one of these conditions likely increases bounce rate and degrades paid search Quality Scores' — this is a causal statement, though it is hedged with 'likely'; the bounce rate/Quality Score link is not in the evidence and is an invented outcome claim.",
+    "The phrase 'structural moat' in H3-1 is an abstract business-jargon term used without a plain-language definition.",
+    "H3-1 analytical paragraph 2 ('This matters most when your market is commoditized...') introduces two ideas simultaneously — commoditization context AND Dunford citation — violating the one-idea-per-paragraph density rule.",
+    "H3-1 paragraph 2 (~47 words) closes with an abstract framing ('A permanent free tier is exactly that kind of structural moat') rather than a concrete or actionable closing sentence.",
+    "H3-2 analytical paragraph 1 exceeds 60 words (approximately 72 words) — scannability penalty triggered.",
+    "The Dunford citation in H3-1 says 'As Dunford describes in Obviously Awesome' without the author's first name — citation pattern from evidence specifies 'As Dunford describes in Obviously Awesome' which matches, but the reference to 'strongest positioning often comes from identifying a differentiator your competitors have made unavailable to themselves' is a paraphrase not directly traceable to a quote or claim in the provided evidence (citation is permitted by the citation-context block, so no hard penalty, but flagged as a stretch paraphrase).",
+    "H3-3 analytical paragraph 2 (~57 words) contains three distinct ideas the reader must track: the three preconditions (brand autocomplete, three product pillars, simple pricing) plus the dual consequence — this exceeds the two-idea density limit.",
+    "Word count is approximately 530 words — significantly over the 380-word cap stated in the required checks."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include 'Buffer' and at least one of: 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion' — e.g. 'Three Buffer homepage decisions SaaS teams can apply to their own positioning'.",
+    "Remove or replace the causal claim 'converts better from a channel-specific page than from a generic case study' — no conversion data supports this; reframe as 'the bet is that channel-specific pages serve higher-intent visitors' (which is already partially in the draft but immediately followed by the unsupported claim).",
+    "Soften or remove the bounce-rate-and-Quality-Score causation claim in H3-3 paragraph 2, or qualify it explicitly with 'if your brand has no prior search recognition' and mark it as a reasoned inference, not an observed outcome.",
+    "Define 'discovery filter' in plain language immediately on first use — e.g. 'a discovery filter (a signal that helps the right visitors self-select before they even click)'.",
+    "Define 'structural moat' in plain language or replace with plain language — e.g. 'a competitive advantage competitors can't easily copy without hurting their own pricing model'.",
+    "Split H3-1 paragraph 2 into two paragraphs: one for the commoditization/pricing-model context, one for the Dunford citation and its implication — each should carry one idea.",
+    "Cut H3-1 paragraph 2's closing sentence ('A permanent free tier is exactly that kind of structural moat') and replace with a concrete implication: e.g. 'If a competitor has raised prices, naming your free tier in the meta description is the fastest way to make that contrast visible before the click.'",
+    "Trim H3-2 analytical paragraph 1 to under 60 words — currently approximately 72 words.",
+    "Reduce total section word count to 380 words or fewer — the current draft is approximately 530 words and requires substantial cutting, likely by tightening each H3's explanation paragraph to a single sentence and removing redundant framing."
+  ],
+  "riskFlags": [
+    "Causal claim without data: 'a visitor searching... converts better from a channel-specific page than from a generic case study' — no conversion evidence provided.",
+    "Causal claim with hedge but still unsupported: 'Missing any one of these conditions likely increases bounce rate and degrades paid search Quality Scores — simultaneously, not separately' — bounce rate and Quality Score outcomes are not in the evidence.",
+    "Paraphrase of Dunford claim ('the strongest positioning often comes from identifying a differentiator your competitors have made unavailable to themselves') is not verbatim and not verifiable from the provided citation-context block — risk of misrepresentation."
+  ],
+  "seoNotes": [
+    "The ## section heading contains no searchable terms — 'SaaS teams can study' and 'widened its audience' will not rank for any query; inserting 'Buffer homepage' or 'Buffer positioning' into the heading would capture branded + teardown traffic.",
+    "Each H3 heading is specific and keyword-rich enough to serve as a standalone snippet — 'Buffer replaced its benefit headline with the single word Buffer' in particular is likely to be pulled as a featured snippet for branded teardown queries.",
+    "The meta description evidence is used well as an SEO angle in H3-1 — surfacing the 'forever free plan' as a click-through signal is a concrete SEO observation that serves both expert and founder readers."
+  ],
+  "rewriteInstruction": "Fix the ## heading first — add 'Buffer' and 'homepage' or 'positioning' so it is searchable. Then cut the total word count from ~530 to under 380 by trimming each H3's explanation paragraph to its sharpest single sentence; remove all redundant framing sentences. In H3-1, split the Dunford paragraph into two single-idea paragraphs and replace the abstract closing sentence with a concrete implication. In H3-2, trim the first analytical paragraph below 60 words and delete the unsupported 'converts better' causation claim — keep only the 'bet is that' framing that is already hedged. In H3-3, reduce the preconditions paragraph to two ideas maximum and soften the bounce-rate/Quality-Score claim to a reasoned inference clearly labelled as such. Add plain-language definitions immediately after 'discovery filter' and 'structural moat' on first use. Every other fix is secondary to the word count and the two unsupported causation claims.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 13,
+    "plainLanguage": 14,
+    "scannability": 9,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

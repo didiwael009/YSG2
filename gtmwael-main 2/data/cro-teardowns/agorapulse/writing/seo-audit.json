@@ -1,0 +1,51 @@
+{
+  "seoScore": 83,
+  "pass": true,
+  "titleScore": 12,
+  "metaDescriptionScore": 13,
+  "headingStructureScore": 14,
+  "searchIntentScore": 18,
+  "keywordUseScore": 8,
+  "readabilityScore": 14,
+  "internalLinkingScore": 4,
+  "internalLinkingSuggestions": [
+    "Link 'SaaS homepage design patterns' or 'homepage A/B testing' from the section on color palette and buyer signals to related teardown methodology articles",
+    "Link 'messaging framework for SaaS' from the headline evolution section to a dedicated guide on positioning language",
+    "Link 'CTA best practices for SaaS conversion' from the CTA changes section to a resource on button placement and copy optimization",
+    "Link 'buyer personas in SaaS marketing' from the 'Why the homepage changed' section to help readers segment their own audiences",
+    "Add a link to other completed CRO teardowns in the conclusion to encourage readers to study additional case studies"
+  ],
+  "faqSuggestions": [
+    "What is a CRO teardown and why does it matter for SaaS marketing?",
+    "How do you know when to shift from 'simplicity' messaging to 'ROI' messaging?",
+    "Should I remove third-party review links from my homepage navigation?",
+    "When should I drop affordability signals from my page title?",
+    "How do you decide whether your product is ready for outcome-based headlines?",
+    "What role does brand awareness play in removing external social proof links?",
+    "How can I test whether my messaging is written for the right buyer?"
+  ],
+  "contentGapNotes": [
+    "Article does not address quantitative evidence of the impact these changes had (conversion rate, click-through rate, trial signups, or deal size) — even a note that 'specific metrics are proprietary' would set expectations",
+    "No discussion of how Agorapulse's product roadmap may have enabled the messaging shift (e.g., when did ROI reporting features launch relative to the headline change?)",
+    "Missing guidance on how to audit whether your own product is ready for outcome language before making the messaging change",
+    "No section on how these changes may have affected organic search rankings or keyword positions over the 7-year period",
+    "Article does not address potential downside risk of removing affordability signals (e.g., loss of price-sensitive segment or SMB traffic)",
+    "Limited guidance on how to sequence these messaging changes — does headline shift come first, or product capability, or both in parallel?"
+  ],
+  "requiredFixes": [
+    "Add at least two internal links to related SaaS CRO teardown articles or methodology guides within the body copy (currently only one link type is suggested, with no actual anchor text or placement specified)",
+    "Clarify the evidence source for the 7 snapshots and whether they come from Wayback Machine archives, direct observation, or Agorapulse's own case study — this builds credibility and helps readers understand the methodology",
+    "Add a brief disclaimer or context note that this teardown observes correlation in messaging changes, not causation, and that Agorapulse's internal conversion data is proprietary"
+  ],
+  "optionalImprovements": [
+    "Consider adding a visual timeline or comparison table showing the headline, page title, and primary CTA side-by-side across all 7 snapshots — would enhance scannability",
+    "Add a subsection near the conclusion that directly addresses readers who work in non-SaaS categories (e.g., 'Does this apply to B2C or services?') to clarify scope",
+    "Include a call-to-action at the end of the 'What SaaS teams can study' section that asks readers to audit their own homepage using the rubrics provided (e.g., 'Try the founder tests on your site today')",
+    "Consider adding a short comparison section on how competitors (Hootsuite, Buffer) handled similar positioning shifts during the same period to provide market context",
+    "Add a 'Further reading' section at the bottom linking to related articles on messaging frameworks, buyer personas, or headline testing methodologies",
+    "Expand the 'Founder tests' subsections into their own micro-section with a clearer visual treatment (e.g., call-out box) to make them easier to action"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.007315200000000022,
+  "generatedAt": "2026-06-12T20:03:07.528Z"
+}

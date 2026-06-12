@@ -1,0 +1,64 @@
+{
+  "overallScore": 81,
+  "pass": false,
+  "evidenceAccuracy": 21,
+  "plainLanguage": 16,
+  "scannability": 11,
+  "searchableHeadings": 7,
+  "specificity": 12,
+  "rhythmAndOpening": 8,
+  "founderTakeaway": 4,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [
+    "07-business-context (Why the homepage changed)",
+    "05-cta-navigation-evolution (How Buffer replaced its single conversion funnel...)",
+    "Opening paragraph"
+  ],
+  "unsupportedClaims": [
+    "'visual sophistication score sat at 2 out of 5' — the evidence records this as a raw integer score (2) without a '/5' denominator label; the article upgrades this to a scored scale not explicitly stated as '/5' in the evidence",
+    "'visual sophistication score reached 3 out of 5' — same issue; the evidence gives integer values without a confirmed '/5' label",
+    "'visual sophistication score of 4 out of 5' — same issue",
+    "'Grow your audience on social and beyond' — this H2 phrase does not appear in the h2Added list in the evidence",
+    "'Build a following without draining your time' — this H2 phrase does not appear in the h2Added list in the evidence",
+    "'Pricing' listed as a removed navigation item — the evidence lists specific removed nav items and 'Pricing' is not among them"
+  ],
+  "riskFlags": [
+    "'pointing to a page built to move evaluators toward a decision' — asserts intent from page structure without hedging; should be 'may suggest' or 'appears designed to'",
+    "'These headings describe outcomes for the visitor rather than listing product features' — stated as fact, not interpretation; should be hedged as 'appear to describe' or 'read as'",
+    "'That expansion suggests Buffer no longer expects visitors to arrive knowing which product fits their situation' — while hedged with 'suggests', the causal chain from CTA count to visitor expectation model is a leap not anchored in traffic or session data",
+    "'That is a deliberate trade' — asserts intent ('deliberate') without evidence of Buffer's internal reasoning; rephrase as 'that is a visible trade'",
+    "'Buffer responded to creator-economy platforms entering the scheduling space' — asserts a reactive strategic intent not confirmed by the evidence",
+    "'makes that contrast visible before the click' — mild conversion-outcome implication without data; the compressed evidence flags this phrase in sectionRiskFlags and recommends softening to 'may make that contrast visible'"
+  ],
+  "requiredFixes": [
+    "Remove or replace the two invented H2 phrases ('Grow your audience on social and beyond' and 'Build a following without draining your time') — these do not appear in the evidence h2Added list; replace with only the H2s that are confirmed in the evidence",
+    "Remove 'Pricing' from the list of removed navigation items in the channel-intent navigation H3 — 'Pricing' does not appear in the navRemoved list in the evidence",
+    "Soften 'That is a deliberate trade' to 'That is a visible trade' or similar to remove the unsupported intent assertion",
+    "Soften 'Buffer responded to creator-economy platforms' to 'the changes are consistent with' or 'may reflect' to remove the unsupported strategic-intent claim",
+    "Clarify the visual sophistication score notation — the evidence records integer values (2, 3, 4) without an explicit '/5' denominator; either quote the raw numbers as given or note the scale is from the evidence classification system",
+    "Add an H3 subheading to the 'Why the homepage changed' section (07-business-context) — it is the only analytical section without internal H3 structure, making it a wall-of-text block",
+    "Soften the opening sentence 'By the end of this teardown, you will know exactly when dropping your value proposition is a smart bet' — the sectionRiskFlags in the evidence explicitly flag this as an overpromise; change to 'you will see the trade-offs'"
+  ],
+  "optionalImprovements": [
+    "The 'Why the homepage changed' section reads more like a business-context summary than a CRO analysis — consider adding a founder-facing takeaway at the end to match the pattern in other sections",
+    "The repetition of the 'widening audience' conclusion across three sections (messaging, CTAs, navigation) could be tightened — the insight is stated fully in the messaging section and then restated rather than built upon",
+    "The Dunford 'Obviously Awesome' reference in the lessons section introduces a third-party framework that is not anchored to any Buffer-specific evidence; it reads as generic positioning theory and could be cut or replaced with a Buffer-specific observation",
+    "The opening uses two consecutive short punchy sentences followed by a very long sentence — varying sentence rhythm more throughout the intro would improve reading pace",
+    "The '07-business-context' section is the longest prose block in the article with no H3 breaks and no founder takeaway — splitting it into two H3 sub-sections would improve scannability and consistency"
+  ],
+  "rerunRecommendations": [
+    "04-messaging-evolution — contains the two invented H2 phrases that must be removed or replaced",
+    "07-business-context — needs H3 subheadings, removal of intent assertions, and a founder-facing takeaway",
+    "05-cta-navigation-evolution — 'Pricing' navRemoved claim needs correction; 'deliberate trade' phrasing needs softening",
+    "01-intro — opening overpromise sentence needs softening per requiredFixes"
+  ],
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.048657000000000006,
+  "generatedAt": "2026-06-12T20:02:47.041Z",
+  "repetitionWarnings": [
+    "The conclusion that Buffer shifted from a business-evaluator audience to a broader self-serve/creator audience appears in the messaging section, the CTA section, the navigation section, AND the business context section — four separate restatements of the same finding without escalating the analysis each time"
+  ]
+}

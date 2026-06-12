@@ -1,0 +1,111 @@
+{
+  "angle": "Agorapulse's homepage evolution is the story of a company that outgrew its own audience — deliberately trading the solo social media manager it was built for in favour of the marketing team lead who must prove ROI to a CFO, a pivot made credible by a first-in-industry ROI dashboard and timed to catch Hootsuite's self-inflicted implosion.",
+  "distinct_from": [
+    "product-feature pivot timed to competitor collapse",
+    "ROI feature launch drove homepage rewrite",
+    "removed third-party review CTAs not free trial"
+  ],
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Hook on the sharpest tension: Agorapulse built its brand on being the 'simple, affordable' tool — then erased both words from its page title and H1 on purpose. Open with the headline swap ('Simplified' to 'From Engagement to ROI') and frame the teardown as the story of a company that fired its founding buyer persona from its homepage to court the budget-holder above them.",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning|icp"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Agorapulse homepage 2019–2025: from playful cloud hero to dark-navy ROI platform",
+      "goal": "Trace the five visual eras: (1) the 2019 sky-blue floating-icons hero that screamed 'friendly SMB tool', (2) the 2019-10 charcoal pivot that already hinted at seriousness, (3) the 2020 feature-screenshot centre stage, (4) the 2024 split-column with testimonial proof creeping in, and (5) the current dark-navy two-column layout where the product UI sits beside ROI headline copy. Emphasise that the colour palette alone — from sky blue to navy — is a visual rebrand of the ICP, not just a refresh.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Agorapulse's H1 retired 'Simplified' and replaced it with 'ROI' — and what that says about who it is selling to now",
+      "goal": "Unpack the three-layer messaging shift: (1) H1 from 'Social Media Management Simplified' to 'Drive Real Impact on Social Media. From Engagement to ROI.' — ease-of-use promise replaced by business-outcome promise; (2) page title stripping 'Simple & Affordable' — deliberate removal of price and effort anchors that would attract cost-sensitive SMB buyers; (3) section headings replacing sentiment ('Who loves Agorapulse?', 'people company') with scale proof ('31K+ social media managers') and outcome language ('impactful business outcomes'). Connect these shifts to the March 2022 Social Media ROI feature launch — the product created the permission to change the language.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Agorapulse removed TrustRadius and G2 from its homepage to own the evaluation process itself",
+      "goal": "Focus on the removal of review-site CTAs (TrustRadius, G2 Crowd, GetApp) as the most operationally significant CTA change — not merely a design choice but a sales-motion decision to pull prospects into a direct trial or on-demand demo rather than letting them drift to comparison grids where Hootsuite and Sprout Social also appear. Contrast old nav ('Features · Pricing · Free Tools') with new nav where 'Sign up!' and 'See a demo' are primary items and 'Agorapulse AI New!' is a named navigation signal. Frame this as Agorapulse betting that brand recognition is now strong enough to skip the third-party validation step.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## How a $18M Series B, a first-in-industry ROI dashboard, and Hootsuite's 30% layoffs created Agorapulse's repositioning window",
+      "goal": "Connect three external events to the homepage rewrite: (1) the 2019 Series B gave Agorapulse the resources to hire a high-profile CMO (Darryl Praill, 2021) and build toward enterprise product features; (2) the March 2022 Social Media ROI feature launch gave Agorapulse a credible product reason to use ROI language — the homepage copy change followed the product, not the other way around; (3) Hootsuite's 2022–2023 layoffs, free-plan elimination, and CEO change created a vacuum among mid-market buyers looking for a stable alternative, and Agorapulse's 'outcome and ROI' repositioning was timed to catch those displaced buyers before Sprout Social could.",
+      "word_target": 180,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "business-context-research"
+      ],
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Agorapulse's decision to erase 'Simple & Affordable' from its homepage",
+      "goal": "Deliver three specific, runnable patterns: (1) Let product features earn messaging permission — Agorapulse did not change its H1 to 'ROI' until it shipped a literal ROI dashboard; teams that adopt outcome language before the product supports it lose credibility with the mid-funnel buyer they are trying to reach. (2) Removing third-party review CTAs is a brand-confidence test — it only works if your brand name already surfaces in buyer shortlists organically; include a diagnostic test readers can apply to their own brand before cutting G2 or TrustRadius links. (3) Stripping affordability signals is an ICP declaration, not a price change — removing 'Simple & Affordable' from the page title does not mean raising prices; it means publicly choosing which buyer you are optimising the homepage for, and Agorapulse chose the team lead who justifies spend upward, not the solo manager who compares monthly fees.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|icp"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Simplicity tool → ROI platform",
+      "note": "H1 swapped 'Simplified' for 'From Engagement to ROI' after the 2022 ROI dashboard launch"
+    },
+    {
+      "label": "Target buyer",
+      "value": "Solo manager → Team lead with budget",
+      "note": "Section headings replaced community sentiment ('Who loves us?') with stakeholder-grade outcome language"
+    },
+    {
+      "label": "Sales motion",
+      "value": "Review sites → Direct trial and demo",
+      "note": "TrustRadius, G2, and GetApp CTAs removed; 'Sign up!' and 'See a demo' elevated to primary nav"
+    },
+    {
+      "label": "Design shift",
+      "value": "Sky-blue startup to dark-navy SaaS",
+      "note": "Colour palette shift from playful cloud hero (2019) to professional navy split-column (current) mirrors ICP rebrand"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T19:55:01.986Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.052578
+}

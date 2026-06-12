@@ -1,0 +1,37 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The final sentence ('By the end of this teardown, you will know exactly when that trade-off makes sense — and when copying it will cost you') is a mild causal/outcome claim without a stated condition. It is a preview promise rather than an evidence-backed claim, but it borders on overstatement.",
+    "The phrase 'the homepage stopped talking to the social media manager doing the work and started talking to the stakeholder who has to justify the spend' is a reasonable inference from the evidence but is stated as fact rather than as an observed signal. A light hedge ('the changes suggest') would make it evidence-safe.",
+    "Word count is approximately 105 words — above the 55–90 word ceiling specified in the required checks. This is a scannability and section-goal violation.",
+    "The section heading is a page-level H1 (single #), not a section H2 (##). The rubric references ## headings. Minor formatting inconsistency; no score penalty applied since the heading itself is compliant on content."
+  ],
+  "requiredFixes": [
+    "Trim the draft to 90 words or fewer. The current count is approximately 105. The final sentence ('By the end of this teardown…') is the most expendable — it is a meta-promise that belongs in a table of contents or section 02, not the intro.",
+    "Hedge the audience-shift inference: change 'the homepage stopped talking to the social media manager doing the work and started talking to the stakeholder who has to justify the spend' to something like 'the changes suggest the homepage shifted its address — away from the social media manager doing the work, toward the stakeholder who has to justify the spend.' This keeps it evidence-safe without weakening the insight.",
+    "If the final sentence is retained in any form, attach a condition: instead of 'when copying it will cost you', write 'when copying it will cost you pipeline if your brand is not yet on buyers shortlists without paid promotion' — which maps directly to the evidence's 'do_not_copy_this_if' field."
+  ],
+  "riskFlags": [
+    "'The homepage stopped talking to the social media manager… and started talking to the stakeholder' — stated as confirmed fact; the evidence labels this an inference ('can be read as', 'suggests'). Needs a hedge.",
+    "'Both changes point to the same move' — minor causation framing; defensible but could be softened to 'both changes are consistent with the same move'.",
+    "'copying it will cost you' — outcome claim without a condition attached. Evidence provides the condition ('if your brand is not yet on buyer shortlists'); it should be included."
+  ],
+  "seoNotes": [
+    "The H1 contains the primary keyword 'Agorapulse Homepage Teardown' verbatim — strong for the target search query.",
+    "The subtitle phrase 'From \"Simplified\" to \"ROI\" (2019–2026)' maps directly to secondary keywords ('Agorapulse homepage evolution 2019-2026', 'SaaS messaging pivot from features to outcomes Agorapulse') — good secondary keyword coverage.",
+    "The opening sentence is vivid and unconventional enough to reduce pogo-stick bounce if this ranks — it does not open with a generic 'In this article' structure.",
+    "Both verbatim headline quotes are in bold — correct formatting for SEO entity recognition and on-page scannability."
+  ],
+  "rewriteInstruction": "Trim to 90 words maximum by cutting or collapsing the final meta-promise sentence ('By the end of this teardown…') — that content belongs in a section preview, not the intro. Keep the strong opening and the two bolded quotes, which are the section's biggest assets. Add a single light hedge to the audience-shift sentence ('the changes suggest the homepage shifted its address — away from the practitioner, toward the budget-holder') so the inference stays evidence-safe. If you keep any version of the trade-off warning, attach the specific condition from the evidence: it only costs you pipeline if your brand is not yet on buyer shortlists independently.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 15,
+    "plainLanguage": 19,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

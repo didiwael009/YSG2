@@ -1,0 +1,48 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Section heading ends in '2025' but the evidence runs to Jun 2026 — factual mismatch with the article title and evidence labels.",
+    "The phrase 'framing the page around aspiration rather than features' introduces an unsupported causal/interpretive claim — the evidence does not confirm Buffer's intent was aspirational positioning.",
+    "The third H3 heading ('2025–present') does not match the evidence label 'Jun 2026 — current state'; the period is mislabelled.",
+    "'The page no longer pushes toward a single action' is a causal interpretation not directly supported by the evidence — the evidence states CTAs were removed but does not confirm intent.",
+    "The word 'aspiration' is used without a plain-language definition in the same sentence — it reads as an expert framing term dropped without explanation.",
+    "The paragraph beginning 'By July 2024, the layout had shifted...' contains at least 4 distinct ideas (layout shift, screenshot carousel, statistics row, proof density change) — exceeds the 2-idea limit.",
+    "The opening paragraph of the 2019 H3 block does not deliver a practical takeaway in the first two sentences — it describes layout mechanics instead.",
+    "The final test ('count how many calls to action appear above the fold...') is reasonably specific but is generic enough to apply to any SaaS homepage teardown, not anchored to Buffer's specific evidence.",
+    "Word count is approximately 340 words — over the 320-word cap.",
+    "The 2024 H3 block's analytical paragraph does not follow FINDING → EXPLANATION → EXAMPLE → IMPLICATION order; the finding (headline collapse to one word) is buried after layout description."
+  ],
+  "requiredFixes": [
+    "Fix the ## heading to read '2019–2026' (not '2025') to match the article title and evidence label 'Jun 2026'.",
+    "Remove or hedge 'framing the page around aspiration rather than features' — the evidence does not confirm Buffer's strategic intent; replace with an observation ('the new headings describe outcomes for the visitor rather than listing product features').",
+    "Split the 2024 paragraph into two: one covering the layout and visual changes, one covering the headline and new section headings — each paragraph should carry no more than 2 ideas.",
+    "Move the most interesting finding (the headline collapsing to a single word 'Buffer') to the first sentence of the 2024 H3 block, then explain the layout shift.",
+    "Replace 'The page no longer pushes toward a single action' with a factual observation tied to the evidence: the CTAs 'Get Started for Free →', 'Learn More', and 'Learn More →' were removed.",
+    "Add a plain-language gloss if keeping any interpretive framing: for example, define what 'aspiration' means in context ('language about what users want to achieve, rather than what the product does').",
+    "Trim approximately 20–30 words to bring the section within the 180–320 word limit.",
+    "Anchor the founder test more tightly to Buffer's evidence: for example, reference the specific CTAs that were removed ('Buffer removed 'Get Started for Free →' — check whether your own page still has a single dominant CTA or has quietly scattered them across sections')."
+  ],
+  "riskFlags": [
+    "'Framing the page around aspiration rather than features' — unsupported intent claim; the evidence shows new headings appeared but does not confirm the strategic rationale.",
+    "'The page no longer pushes toward a single action' — causal/intent interpretation not traceable to the evidence.",
+    "The heading '2025–present' misrepresents the evidence period, which runs to Jun 2026 — minor factual error but a credibility risk in a dated teardown article."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name 'Buffer', the word 'homepage', and date range — good for search.",
+    "H3 subheadings use year labels ('2019', '2024', '2025–present') which aid navigability but do not contain searchable topic terms like 'CTA', 'headline', or 'positioning' — consider adding one keyword per H3.",
+    "The primary keyword 'Buffer homepage teardown' does not appear in the body of this section — consider one natural mention.",
+    "The article title references Jan 2019 to Jun 2026; the section heading says 2019–2025 — this inconsistency could confuse search indexing and reader trust."
+  ],
+  "rewriteInstruction": "Open each H3 block with the single most interesting finding first — especially the 2024 block, which should lead with the headline shrinking to one word ('Buffer') before describing any layout changes. Split any paragraph carrying more than two ideas into two shorter paragraphs of under 60 words each. Remove all unsupported intent claims ('aspiration', 'no longer pushes toward a single action') and replace with factual observations tied to the evidence (specific headings that appeared or disappeared, specific CTAs that were removed). Fix the section heading and the 2025–present H3 label to reflect Jun 2026. Tighten the word count to under 320 words. Anchor the closing founder test to Buffer's specific removed CTAs so it cannot apply generically to any other teardown.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 11,
+    "plainLanguage": 14,
+    "scannability": 10,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 80
+}

@@ -12,5 +12,7 @@ export const TEARDOWN_CARD_META: Record<string, { label: string; title: string; 
   "/cro-teardowns/expensya":  { label: "CRO Teardown", title: "Expensya homepage teardown (2021–2026)", description: "Expense management positioning shift in a crowded fintech category." },
   "/cro-teardowns/gong":      { label: "CRO Teardown", title: "Gong homepage teardown (2020–2026)",     description: "From call recording to revenue intelligence — the category creation story." },
   "/cro-teardowns/webflow":   { label: "CRO Teardown", title: "Webflow homepage teardown (2020–2026)",  description: "Designer tool to enterprise growth platform — and a $140M Series B in between." },
-  "/cro-teardowns/apify":     { label: "CRO Teardown", title: "Apify homepage teardown (2020–2026)",    description: "From web scraping utility to AI agent marketplace — 6 years of homepage signals." },
+  "/cro-teardowns/apify":       { label: "CRO Teardown", title: "Apify homepage teardown (2020–2026)",       description: "From web scraping utility to AI agent marketplace — 6 years of homepage signals." },
+  "/cro-teardowns/buffer":      { label: "CRO Teardown", title: "Buffer homepage teardown (2019–2026)",      description: "How a social media scheduling tool evolved its messaging through the creator economy shift." },
+  "/cro-teardowns/agorapulse":  { label: "CRO Teardown", title: "Agorapulse homepage teardown (2019–2026)", description: "Social media management positioning evolution across 7 years of category change." },
 };

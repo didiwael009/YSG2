@@ -1,0 +1,44 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Paragraph 4 (the 'That shift is consistent...' paragraph) contains more than 2 distinct ideas simultaneously: buyer persona shift, page-wide realignment signal, and credibility-dependency of ROI language. It violates the 2-idea density rule and the FINDING-FIRST rule — the finding arrives at the end, not the opening sentence.",
+    "Paragraph 4 exceeds 60 words (approximately 87 words), triggering a scannability penalty. The hard cap threshold is 90 words, so no hard cap fires, but the penalty does apply.",
+    "The closing sentence of paragraph 4 — 'and here, the section headings do exactly that' — is abstract and self-referential rather than concrete or actionable, violating the rule that closing sentences must be concrete.",
+    "The meta description change is described ('the new one reads as a neutral category statement, listing features without urgency') but the actual new meta description text is never quoted in bold quotes, violating the bold-quote requirement for verbatim website copy.",
+    "The phrase 'impactful business outcomes' in paragraph 3 is quoted from a section heading but is presented inside regular bold without matching the verbatim text exactly — evidence shows the heading is 'Effective social media management with impactful business outcomes' which IS quoted correctly, but the partial re-use elsewhere risks misquotation; flagged for review.",
+    "The section has only 3 H3 sub-blocks where the third H3 block carries double the analytical load (two separate analytical paragraphs plus the founder test), making the structure uneven and burying the founder test below a long analytical paragraph.",
+    "The founder test at the end, while specific and runnable, is the only test in the section — it is not clearly marked as a separate sub-block or H3, meaning a skimmer may not find it easily.",
+    "Section word count is approximately 370 words — within the 200–380 limit, but near the ceiling.",
+    "The statement 'That removal may indicate a deliberate choice to stop attracting cost-sensitive buyers' is appropriately hedged, but 'suggests the page is now written for someone who has to justify the software spend to a manager' is a light causal inference not fully supported by the evidence note, which only says the shift 'may resonate with buyers who need to justify software investment internally.'"
+  ],
+  "requiredFixes": [
+    "Split paragraph 4 into two separate paragraphs, each carrying one idea only. First paragraph: the buyer persona inference (marketing professionals who report upward). Second paragraph: the page-wide alignment observation (ROI language in H1 is reinforced by section headings). Each paragraph must open with its finding.",
+    "Replace the abstract closing sentence 'and here, the section headings do exactly that' with a concrete observation — e.g., name one specific section heading that supports the ROI claim so the reader sees the evidence rather than a self-reference.",
+    "Add bold quotes around the verbatim new meta description text inside the meta description paragraph so all verbatim website copy is consistently formatted as **'bold quotes'**.",
+    "Move the founder test into its own clearly delimited block (either a fourth H3 or at minimum a visual separator) so skimmers can locate it without reading through the long analytical paragraph above it.",
+    "Trim paragraph 4 to under 60 words after splitting — each resulting paragraph must individually stay under 60 words."
+  ],
+  "riskFlags": [
+    "'suggests the page is now written for someone who has to justify the software spend to a manager' — slightly stronger causal inference than the evidence note supports; the evidence says this language 'may resonate with' such buyers, not that the page was written for them. Hedge to 'may now be written for...'",
+    "'may indicate a deliberate choice to stop attracting cost-sensitive buyers' — appropriately hedged, but 'stop attracting' implies intentional exclusion; soften to 'de-emphasise price-sensitivity as a primary draw' to stay within what the evidence supports.",
+    "'which suggests a full-page realignment rather than a one-off headline experiment' — this is an inference about intent not supported by any evidence item; flag as speculative and either remove or attach a condition."
+  ],
+  "seoNotes": [
+    "The ## section heading contains 'Agorapulse', 'Homepage', 'Messaging', and 'ROI' — strong keyword alignment with the primary keyword 'Agorapulse homepage teardown' and secondary keywords around messaging pivot.",
+    "All three H3 subheadings contain 'Agorapulse' plus a topic term (headline, page title/meta, target buyer) — good for long-tail search on specific sub-questions.",
+    "The section naturally contains quoted phrases that may surface in featured snippets for queries like 'Agorapulse homepage headline change' or 'Agorapulse messaging shift ROI'.",
+    "The founder test at the end could be reformatted as a numbered or bolded list item to improve featured-snippet eligibility for 'how to audit messaging' queries."
+  ],
+  "rewriteInstruction": "The draft is structurally sound and evidence-grounded, but paragraph 4 is doing too much work. Split it into two short paragraphs: one that states the buyer persona inference (first sentence = finding), and one that notes the page-wide alignment between H1 and section headings (first sentence = finding). Each must stay under 60 words. Replace the abstract closing sentence with a named, concrete example from the evidence — quote a specific section heading that reinforces the ROI frame. Add bold quotes around the verbatim new meta description text. Finally, ensure the founder test is visually separated from the analytical content above it so skimmers can find it immediately. No other structural changes are needed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 17,
+    "scannability": 9,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

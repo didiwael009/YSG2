@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "Save time managing social media for your business",
+    "after": "Buffer",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Buffer is an intuitive social media management platform trusted by brands, businesses, agencies, and individuals to help drive social media results.",
+    "after": "Use Buffer to manage your social media so that you can create and share your content everywhere, consistently. Try our forever free plan or upgrade for more.",
+    "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+  },
+  {
+    "element": "Page title",
+    "before": "Social Media Management Platform | Buffer",
+    "after": "Buffer: Social media management for everyone"
+  }
+]

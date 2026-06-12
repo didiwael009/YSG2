@@ -1,0 +1,70 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Agorapulse",
+  "companyUrl": "https://www.agorapulse.com",
+  "articleTitle": "Agorapulse Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Agorapulse rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 7,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 7,
+    "h2Added": 7,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Agorapulse homepage teardown",
+  "cta-changes": {
+    "added": [
+      "Sign up!",
+      "Try for free now",
+      "Watch an On-Demand demo",
+      "Explore Inbox",
+      "Explore Publishing",
+      "Explore Listening",
+      "Explore Reporting",
+      "Explore ROI",
+      "Try for free",
+      "Book a demo"
+    ],
+    "removed": [
+      "Read on TrustRadius",
+      "Read on G2 Crowd",
+      "Read on GetApp",
+      "Learn more",
+      "Schedule Freely",
+      "Read more",
+      "Read articles from our team",
+      "Start my free trial now",
+      "See all pricing",
+      "Reviews on G2CROWD"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Over 31K+ social media managers use our tool daily",
+      "Effective social media management with impactful business outcomes",
+      "Features to boost efficiency and save time",
+      "Works perfectly with your favorite tools and platforms",
+      "What makes Agorapulse great?",
+      "Frequently asked questions",
+      "Supercharge your social media goals with Agorapulse"
+    ],
+    "removed": [
+      "We support all of these networks.",
+      "We are top rated by our users.",
+      "Find out how Agorapulse works with the unique needs of your business.",
+      "Features You'll Love",
+      "Who loves Agorapulse?",
+      "We are a people company."
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The ## section heading is clever-only: 'How Buffer's H1 went from Save time managing social media for your business to just Buffer — and what that reveals about who they think is already listening' is very long and contains searchable terms, but the length makes it unwieldy for SEO and scanning — borderline on the searchable-heading rubric, noted but not penalised as it does contain 'Buffer' and 'H1'.",
+    "The third H3 ('What Buffer's messaging shift signals about who the page is now written for') carries two distinct ideas — the section heading shift AND the page title change — in one paragraph, slightly violating the two-ideas-per-paragraph rule.",
+    "The closing sentence of H3 block 3 ('The risk is real: if your brand name does not yet autocomplete...') is actionable but reads slightly abstract before the test — the implication is clear but the paragraph structure front-loads the finding less than ideal.",
+    "The paragraph beginning 'Section headings tell the same story' is approximately 82 words — over the 60-word paragraph limit for analytical sections, triggering a scannability penalty.",
+    "No explicit plain-language definition is given for 'mid-funnel evaluators' on first use in H3 block 3, though context makes meaning recoverable — minor flag.",
+    "The final test is strong and specific, but it is placed inside the body of the last H3 block rather than clearly demarcated as a standalone closing element — minor structural note."
+  ],
+  "requiredFixes": [
+    "Split the paragraph in H3 block 3 that begins 'Section headings tell the same story' into two shorter paragraphs: one covering the section heading changes, one covering the page title change. Each should be under 60 words.",
+    "Add a one-clause plain-language gloss for 'mid-funnel evaluators' on first use — e.g., 'mid-funnel evaluators (buyers actively comparing tools before making a purchase decision)'.",
+    "Shorten the ## section heading to something scannable and searchable, such as: '## Buffer Homepage Messaging Evolution: From Benefit Headline to Brand Name' — the current heading, while containing search terms, is too long for a reliable H2 anchor."
+  ],
+  "riskFlags": [
+    "'This only holds if organic brand search volume is already doing that work before the visitor lands' — this is appropriately hedged with a condition, no penalty.",
+    "'may increase bounce rate from cold or paid traffic' — outcome claim, but hedged with 'may', no hard cap triggered.",
+    "'language that may indicate a deliberate push to capture creators and solopreneurs' — hedged with 'may indicate', acceptable.",
+    "No financial figures, named events, or dates requiring hedge language appear in section 07 context — not applicable here."
+  ],
+  "seoNotes": [
+    "Primary keyword 'Buffer homepage teardown' does not appear in the ## heading — consider adding it or a close variant.",
+    "The H3 subheadings are descriptive and contain useful secondary keywords ('Buffer headline shift', 'meta description', 'messaging shift') — good for featured snippet capture.",
+    "The meta description quote is rendered verbatim and in bold — strong for E-E-A-T and quote-matching in search.",
+    "The section covers the headline, meta description, page title, and section headings — good topical completeness for the 'Buffer homepage evolution' cluster.",
+    "The closing test is a strong engagement hook that could reduce bounce rate if readers act on it."
+  ],
+  "rewriteInstruction": "The draft is close to publishable. Three targeted fixes will clear the threshold. First, split the overlong paragraph in H3 block 3 (the one beginning 'Section headings tell the same story') into two paragraphs under 60 words each — one on section heading changes, one on the page title change. Second, add a brief plain-English definition for 'mid-funnel evaluators' on its first use. Third, shorten the ## section heading to a scannable, keyword-bearing line such as 'Buffer Homepage Messaging Evolution: From Benefit Headline to Brand Name' — the current heading is too long to serve as a reliable SEO anchor even though it contains relevant terms. No structural rewrites needed; the FINDING → EXPLANATION → IMPLICATION flow is working, the evidence is correctly attributed and hedged, and the founder test is specific and runnable.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 15,
+    "plainLanguage": 16,
+    "scannability": 9,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,3 @@
+# Buffer Homepage Teardown: How Buffer Replaced Its Value Proposition With Its Own Name
+
+Buffer's biggest homepage change in seven years is also its most counterintuitive: the primary headline went from **"Save time managing social media for your business"** to just **"Buffer."** No benefit. No category explanation. No promise. At the same time, the page title shifted to **"Buffer: Social media management for everyone"** — swapping a business-focused pitch for a word that includes absolutely everybody. By the end of this teardown, you will know exactly when dropping your value proposition is a smart bet — and when it will hurt you.

@@ -1,0 +1,40 @@
+[
+  {
+    "id": "analysis-2019-01",
+    "label": "Jan 2019 — original state",
+    "period": "Jan 2019",
+    "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Social Media Management Simplified\" — direct product statement.",
+      "Visible section headings include: \"We support all of these networks.\", \"We are top rated by our users.\", \"Find out how Agorapulse works with the unique needs of your business.\".",
+      "Navigation includes: \"Features\" — product category framing.",
+      "Section headings later removed include: \"We support all of these networks.\" and \"We are top rated by our users.\"."
+    ]
+  },
+  {
+    "id": "analysis-2021-04",
+    "label": "Apr 2021 — mid-transition",
+    "period": "Apr 2021",
+    "screenshotPath": "/cro-teardowns/agorapulse/selected/2021-04.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: 96.3% — a moderate visual change.",
+      "H1 in this snapshot: \"Take Controlof Your Social Media\".",
+      "New section headings appearing: \"Over 31,000 social media managers use our tool daily\", \"One easy-to-use solution, loaded with powerful features.\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/agorapulse/selected/current-live.webp",
+    "heading": "Today: platform-first positioning",
+    "annotations": [
+      "H1 now reads: \"Drive Real Impact on Social Media. From Engagement to ROI.\" — formal capability framing, consistent with platform-level positioning.",
+      "New section headings include: \"Over 31K+ social media managers use our tool daily\", \"Effective social media management with impactful business outcomes\", \"Features to boost efficiency and save time\".",
+      "CTAs no longer present include: \"Read on TrustRadius\", \"Read on G2 Crowd\", \"Read on GetApp\"."
+    ]
+  }
+]

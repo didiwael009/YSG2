@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Positioning shift",
+    "value": "Scheduler → 'Everyone' workspace",
+    "note": "H1 dropped benefit copy entirely; section headings replaced feature lists with identity-inclusive language ('Whoever you are')"
+  },
+  {
+    "label": "Target buyer",
+    "value": "Business teams → creators + SMBs",
+    "note": "Meta description explicitly added 'forever free plan' and dropped 'trusted by agencies' as per-channel pricing made individual creators viable customers"
+  },
+  {
+    "label": "Sales motion",
+    "value": "Single funnel → product suite menu",
+    "note": "One primary CTA replaced by five parallel 'Learn more about [product]' CTAs; Pricing removed from navigation entirely"
+  },
+  {
+    "label": "Design shift",
+    "value": "Startup hero → polished multi-column",
+    "note": "Visual sophistication score rose from 2 to 4 across the period; product screenshots and statistics rows added as proof layer"
+  }
+]

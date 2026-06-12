@@ -1,0 +1,36 @@
+{
+  "slug": "buffer",
+  "generatedAt": "2026-06-12T20:03:02.932Z",
+  "mode": "standard",
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
+  "failCount": 0,
+  "skippedCount": 1,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [],
+  "sectionErrors": [],
+  "finalJudgeScore": 81,
+  "finalJudgePass": false,
+  "finalRequiredFixes": [
+    "Remove or replace the two invented H2 phrases ('Grow your audience on social and beyond' and 'Build a following without draining your time') — these do not appear in the evidence h2Added list; replace with only the H2s that are confirmed in the evidence",
+    "Remove 'Pricing' from the list of removed navigation items in the channel-intent navigation H3 — 'Pricing' does not appear in the navRemoved list in the evidence",
+    "Soften 'That is a deliberate trade' to 'That is a visible trade' or similar to remove the unsupported intent assertion",
+    "Soften 'Buffer responded to creator-economy platforms' to 'the changes are consistent with' or 'may reflect' to remove the unsupported strategic-intent claim",
+    "Clarify the visual sophistication score notation — the evidence records integer values (2, 3, 4) without an explicit '/5' denominator; either quote the raw numbers as given or note the scale is from the evidence classification system",
+    "Add an H3 subheading to the 'Why the homepage changed' section (07-business-context) — it is the only analytical section without internal H3 structure, making it a wall-of-text block",
+    "Soften the opening sentence 'By the end of this teardown, you will know exactly when dropping your value proposition is a smart bet' — the sectionRiskFlags in the evidence explicitly flag this as an overpromise; change to 'you will see the trade-offs'"
+  ],
+  "seoScore": 87,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "Add a disclaimer or caveat near the opening that states: 'This teardown analyzes visible design and messaging changes. Without access to Buffer's traffic, conversion, or engagement metrics, we cannot claim that these changes improved or harmed performance. The analysis suggests strategic intent; it does not prove results.' This prevents readers from treating observed changes as proven successes.",
+    "Clarify the timeline: the article title says '7 years' (2019–2026) but lists only 5 snapshots. If some years are missing, explain why (e.g., 'no major visible changes' or 'snapshots selected for strategic shifts'). If the timeline is inaccurate, correct it.",
+    "In the 'Why the homepage changed' section, add a note that the competitive context described (Hootsuite, Sprout Social moves) is inferred from design changes, not sourced from Buffer's public statements. Avoid implying direct causation without evidence."
+  ],
+  "articleWordCount": 1980,
+  "repetitionWarnings": [],
+  "editorialWarnings": [],
+  "overLengthWarning": "Article is 1980 words — exceeds 1900-word hard warning"
+}

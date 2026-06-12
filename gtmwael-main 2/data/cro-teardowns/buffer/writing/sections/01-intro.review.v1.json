@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The section goal requires naming the company, the period, and the single biggest shift in the first sentence. The period (Jan 2019 to Jun 2026) is not mentioned anywhere in the draft — only 'seven years' appears, which is imprecise and not the searchable framing.",
+    "The phrase 'By the end of this teardown, you will know exactly when dropping your value proposition is a smart bet — and when it will hurt you' makes an implicit outcome promise that reads as slightly causal without a condition attached, though it is framed as a reader-benefit statement rather than a factual claim.",
+    "Word count is approximately 95 words — slightly over the 90-word ceiling specified in the check. Needs trimming.",
+    "The page title shift is cited correctly, but the meta description change (which is arguably the richer SEO signal) is not referenced at all, leaving the intro thinner on evidence than it could be."
+  ],
+  "requiredFixes": [
+    "Add the explicit date range 'January 2019 to June 2026' (or 'Jan 2019 → Jun 2026') to the first or second sentence. 'Seven years' alone fails the section goal's period-naming requirement and loses the searchable date signal.",
+    "Trim the draft to under 90 words. The closing sentence ('By the end of this teardown...') is the easiest cut or can be shortened to one clause without losing the hook.",
+    "Consider adding one clause that references the meta description change alongside the headline change, since both are in evidence and together they make a stronger case for the scale of the repositioning."
+  ],
+  "riskFlags": [
+    "'By the end of this teardown, you will know exactly when dropping your value proposition is a smart bet — and when it will hurt you' implies a causation-and-outcome guarantee. Soften to 'you will see the trade-offs' or similar to avoid overpromising.",
+    "The draft does not hedge on why Buffer made these changes. The evidence notes 'No confirmed strategy is implied' — the intro should not imply it has the definitive answer either, even implicitly through its confident framing."
+  ],
+  "seoNotes": [
+    "The ## heading 'Buffer Homepage Teardown: How Buffer Replaced Its Value Proposition With Its Own Name' contains the company name and 'homepage teardown' — strong primary keyword match. Good.",
+    "The heading also contains the content angle ('replaced its value proposition with its own name') which aligns with secondary keywords like 'Buffer rebranding from scheduling tool to workspace' — positive.",
+    "Missing the date range in the heading or first sentence weakens ranking potential for queries like 'Buffer homepage evolution 2019 to 2026' — a secondary keyword listed in the evidence.",
+    "The bold-quoted headlines (**'Save time managing social media for your business'** and **'Buffer'**) are correctly formatted and match the evidence verbatim — good for E-E-A-T signals."
+  ],
+  "rewriteInstruction": "Keep the strong opening contrast and the bold-quoted headlines — they are the section's best asset. Make two targeted changes: (1) insert the explicit date range 'January 2019 to June 2026' in the opening sentence or sentence two, replacing or supplementing 'seven years', to satisfy the section goal and the secondary SEO keyword; (2) cut approximately 10 words from the closing sentence or remove it entirely — the section reads better ending on the page-title quote, which is the sharpest concrete detail. If you keep a closing hook, soften 'you will know exactly' to 'you will see the trade-offs' to avoid an unsupported outcome promise. Do not add the meta description detail unless you can do it in one short clause without pushing the word count back over 90.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 19,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 1
+  },
+  "effectivePassThreshold": 85
+}

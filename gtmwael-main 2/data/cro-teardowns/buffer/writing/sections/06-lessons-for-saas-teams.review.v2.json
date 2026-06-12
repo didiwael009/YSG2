@@ -1,0 +1,43 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "H3 heading for the first sub-block ('Pricing model as search differentiator') does not contain the company name 'Buffer' — the searchable heading penalty applies at the ## level but the H3s also lack company anchoring in two of three cases.",
+    "The third analytical paragraph in the meta-description block ('This matters most when a competitor has recently raised prices') is a conditional causal claim — it is hedged with 'when', which is acceptable, but 'makes that contrast visible before the click' implies a conversion outcome without data support. Minor risk flag.",
+    "The phrase 'discovery filter' in the first H3 block is defined inline ('a signal that helps the right visitors self-select before they even click'), which satisfies the plain-language rule, but 'discovery filter' itself is close to the forbidden term 'discovery-stage' and warrants a watch.",
+    "The second H3 block contains one paragraph that runs approximately 68 words ('Buffer's navigation removed... into dead ends') — this exceeds the 60-word cap and triggers a scannability penalty.",
+    "The Dunford citation in H3-1 is correctly formatted and sourced from the evidence; no invented citation found.",
+    "No paragraph in any H3 block exceeds 90 words, so the hard-cap scannability rule does not fire.",
+    "No forbidden jargon term appears more than once; all terms used are either defined inline or used only once.",
+    "The ## section heading contains 'Buffer', 'homepage', and 'positioning' — searchable heading requirement met.",
+    "Word count is approximately 370 words — within the 220–380 range.",
+    "All verbatim website quotes (headlines, CTAs, nav items, meta description text) appear in bold quotes — check passes.",
+    "Each H3 block delivers its practical takeaway within the first two sentences — check passes for H3-1 and H3-3; H3-2 opens with evidence description rather than a takeaway finding, which is a minor buried-finding penalty."
+  ],
+  "requiredFixes": [
+    "Split or trim the second H3 paragraph that begins 'Buffer's navigation removed...' — it runs approximately 68 words. Move the causal warning ('Build the nav links before the pages') into a separate sentence-length paragraph to stay under 60 words per paragraph.",
+    "Reorder the opening of H3-2 ('Channel-intent navigation') so the practical finding comes first. Currently the first sentence describes the evidence; the takeaway ('this only holds if those pages already exist and already rank') is buried in sentence three. Swap: lead with the finding, then cite the evidence.",
+    "The phrase 'discovery filter' in H3-1 is borderline jargon and its inline definition, while present, is parenthetical. Integrate the definition more naturally — e.g. 'naming your free tier in the meta description acts as a self-selection signal: the right visitors opt in before they even click' — so it reads as plain explanation rather than a bracketed gloss."
+  ],
+  "riskFlags": [
+    "'makes that contrast visible before the click' implies a conversion or click-through outcome without supporting data — reframe as 'may make that contrast visible' or 'signals that contrast to the searcher before the click'.",
+    "'If a rival has moved upmarket, naming your free tier in the meta description makes that contrast visible' — causal framing without evidence that Buffer's competitor had raised prices. This is a conditional generalisation, not a Buffer-specific finding. Flag as potentially generic SaaS commentary if not hedged."
+  ],
+  "seoNotes": [
+    "The ## heading ('What SaaS teams can study from Buffer's homepage positioning decisions') contains 'Buffer', 'homepage', and 'positioning' — strong keyword alignment with the primary keyword 'Buffer homepage teardown'.",
+    "Each H3 heading contains a named Buffer element (meta description, navigation, H1) plus a searchable concept — good internal heading SEO for long-tail queries.",
+    "The meta description shift evidence ('forever free plan') is correctly surfaced and contextualised — this is a strong SEO-relevant pattern that will resonate with readers searching for freemium positioning teardowns.",
+    "The Google Search Console call-to-action in H3-2 is platform-specific and actionable — likely to generate time-on-page engagement from founder readers."
+  ],
+  "rewriteInstruction": "The section is close to passing cleanly. Three targeted fixes will bring it to 90+. First, trim the long paragraph in H3-2 (the one beginning 'Buffer's navigation removed') to under 60 words by splitting the causal warning into its own short sentence or sentence-pair. Second, reorder H3-2's opening so the practical finding leads — currently the evidence description comes first and the finding is buried in the middle; swap them so the reader knows the implication before they read the proof. Third, smooth the inline definition of 'discovery filter' in H3-1 so it reads as plain English explanation embedded in the sentence rather than a parenthetical gloss — this removes the jargon-without-definition risk without cutting the concept. No structural changes needed; the three-pattern architecture, bold quotes, word count, and founder tests are all sound.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 11,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

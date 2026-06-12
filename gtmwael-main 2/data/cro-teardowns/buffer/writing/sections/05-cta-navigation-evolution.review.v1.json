@@ -1,0 +1,54 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "evidenceAccuracy: The navigation section claims 'Pricing' and 'Case Studies' were removed from the nav, but neither 'Pricing' nor 'Case Studies' appears in the navRemoved array in the evidence. The navRemoved array is not listed in the evidence at all — only ctaRemoved is provided. This is an invented factual claim about named nav items not traceable to the evidence.",
+    "evidenceAccuracy: The claim that 'channel-specific paths now appear in the nav, capturing visitors who arrive searching for Instagram or TikTok tools' is not traceable to any navAdded item in the evidence.",
+    "evidenceAccuracy: 'See All Case Studies →' is listed in ctaRemoved, so the CTA removal is supported — but framing it as a nav change in the navigation subhead is mislabeling.",
+    "evidenceAccuracy: The claim that 'each product has its own free entry point' is a causal/structural assertion not directly supported by the evidence provided.",
+    "evidenceAccuracy: The statement 'The CTA menu is the pricing model made visible' is an outcome/causation claim with no supporting evidence.",
+    "plainLanguage: 'discovery menu' in the ## heading is jargon-adjacent and is not explained; 'growth model' is abstract and unexplained.",
+    "plainLanguage: 'evaluation infrastructure' in the H3 heading is strategist jargon with no plain-language definition in the same sentence.",
+    "plainLanguage: 'top of the funnel, not the bottom' uses unexplained funnel jargon — the phrase appears without a definition for the founder-audience half.",
+    "scannability: The third paragraph in the first H3 block ('This structure only works because each product has its own free entry point...') is approximately 65 words — exceeds the 60-word limit.",
+    "searchableHeadings: The ## section heading contains no company name ('Buffer'), 'homepage', 'CTA', 'navigation', or 'conversion' as searchable terms — it is a clever-only heading.",
+    "founderTakeaway: The founder test references 'Pricing' as a top-level nav item, which is not verified in the evidence and risks misleading the reader with an invented premise.",
+    "founderTakeaway: The test is reasonably specific but hinges on the unverified 'Pricing' nav removal claim, undermining its credibility.",
+    "H3 check: Two H3 subheadings are present — 'How Buffer's CTAs changed: from one destination to five' and 'How Buffer's navigation changed: removing the evaluation infrastructure'. The nav H3 contains the jargon phrase 'evaluation infrastructure' without definition.",
+    "wordCount: Approximate word count is ~310 words — within the 180–320 range but at the upper boundary."
+  ],
+  "requiredFixes": [
+    "Remove or hedge all references to 'Pricing' and 'Case Studies' being removed from the navigation — these do not appear in the navRemoved evidence array. Either source them correctly or remove the claim entirely.",
+    "Remove or hedge the claim that 'channel-specific paths now appear in the nav' for Instagram or TikTok — no navAdded items in the evidence support this.",
+    "Replace the ## heading with one that contains the company name and at least one searchable term such as 'CTA', 'navigation', or 'homepage': e.g. '## How Buffer's CTAs and navigation changed from 2019 to 2026'.",
+    "Replace 'evaluation infrastructure' in the H3 with plain language — e.g. 'How Buffer's navigation changed: fewer pages for buyers who are comparing options'.",
+    "Define 'top of the funnel' on first use — add a parenthetical like '(visitors who are just starting to look, not ready to buy)'.",
+    "Trim the third paragraph of the first H3 block to under 60 words — it currently runs approximately 65 words.",
+    "Remove or soften the claim 'The CTA menu is the pricing model made visible' — this is an unsupported causal assertion. Replace with an observation: e.g. 'The CTA structure mirrors a freemium model where each product has its own entry point'.",
+    "Revise the founder test to remove the dependency on the unverified 'Pricing' nav removal. Anchor the test to what is actually evidenced: the shift from a single CTA to five product-specific CTAs."
+  ],
+  "riskFlags": [
+    "'Pricing' and 'Case Studies' removed from nav — not in evidence; invented claim",
+    "'Channel-specific paths now appear in the nav' — not traceable to navAdded evidence",
+    "'Each product has its own free entry point' — asserted without supporting evidence",
+    "'The CTA menu is the pricing model made visible' — causal/interpretive claim with no evidence backing",
+    "Founder test premise ('if Pricing is still a top-level nav item') rests on an unverified nav removal"
+  ],
+  "seoNotes": [
+    "The ## heading is clever-only and will not rank for 'Buffer CTA changes', 'Buffer navigation evolution', or 'Buffer homepage teardown' — a significant SEO miss for the article's primary keyword.",
+    "H3 headings contain 'Buffer's CTAs changed' and 'Buffer's navigation changed' — these are crawlable and provide reasonable secondary keyword support if the ## is fixed.",
+    "The phrase 'Buffer no longer expects visitors to arrive knowing which product they need' is a natural-language insight that could generate featured-snippet eligibility if the heading hierarchy is corrected.",
+    "Word count (~310) is within the target range and appropriate for a section-level piece."
+  ],
+  "rewriteInstruction": "Fix the two critical evidence failures before anything else: (1) remove all references to 'Pricing' and 'Case Studies' being removed from navigation — they are not in the navRemoved evidence array — and replace with claims that are actually supported; (2) remove the claim that channel-specific nav paths for Instagram and TikTok were added, as this also lacks evidence. Rewrite the ## heading to include 'Buffer', 'CTA', and 'navigation' as searchable terms — the current heading is clever but invisible to search. Replace 'evaluation infrastructure' in the H3 with plain language. Define 'top of the funnel' on first use with a parenthetical for the founder audience. Trim the third paragraph in the first H3 to under 60 words. Soften 'The CTA menu is the pricing model made visible' to an observation, not a causation claim. Finally, rewrite the founder test so it is anchored to the evidenced shift — from one CTA to five product-specific CTAs — rather than the unverified 'Pricing' nav removal.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 12,
+    "plainLanguage": 13,
+    "scannability": 11,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

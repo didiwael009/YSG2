@@ -69,6 +69,7 @@ interface PublishReport {
 const ALL_TEARDOWN_SLUGS: string[] = [
   'shopify', 'hootsuite', 'stripe', 'intercom', 'vercel', 'crisp',
   'clay', 'linear', 'lemlist', 'apollo', 'expensya', 'gong', 'webflow', 'apify',
+  'buffer', 'agorapulse',
 ];
 
 function getRelatedTeardownLinks(currentSlug: string): string[] {

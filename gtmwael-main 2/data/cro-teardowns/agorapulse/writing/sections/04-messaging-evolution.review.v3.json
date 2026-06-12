@@ -1,0 +1,44 @@
+{
+  "score": 79,
+  "pass": false,
+  "issues": [
+    "Section heading is clever-only: 'How Agorapulse's H1 retired Simplified and replaced it with ROI — and what that says about who it is selling to now' is a narrative headline with no searchable terms like 'messaging', 'positioning', 'homepage', or 'CTA'.",
+    "Third H3 block ('What Agorapulse's messaging shift signals about its target buyer') contains three distinct analytical paragraphs with no sub-structure — the block runs long and the practical takeaway is not in the first two sentences.",
+    "Paragraph beginning 'The outcome language in the H1 may now resonate most...' is a standalone paragraph with a single abstract idea that floats without an example or implication — it does not follow FINDING → EXPLANATION → EXAMPLE → IMPLICATION.",
+    "Paragraph beginning 'The H1 and the section headings point in the same direction...' ends with a conditional hedge ('if the rest of the evidence holds') that reads as abstract rather than concrete or actionable — violates the closing sentence rule.",
+    "The third H3 block contains more than 2 distinct ideas across its paragraphs (warmth-to-evidence shift, upward-reporting buyer persona, cross-element consistency) — should be split or tightened.",
+    "The meta description block in H3 two quotes the full meta description verbatim — at approximately 65 words that paragraph may be close to or over the 60-word limit depending on counting method; the H3 block body paragraph runs approximately 68 words and violates the 60-word rule.",
+    "Word count is approximately 370 words — within range but at the high end; the founder test is appended after the closing dashes suggesting it may not be counted as part of the section.",
+    "The founder test is reasonably specific but does not name a specific Agorapulse page element or evidence anchor — 'feeling words vs result words' is slightly generic and could appear in another teardown.",
+    "No hard-cap-triggering forbidden jargon terms detected, no outcome-causation claims detected, no unsupported financial figures detected."
+  ],
+  "requiredFixes": [
+    "Rewrite the ## section heading to include at least one searchable term — for example: 'Agorapulse Homepage Messaging Evolution: From Simplicity to ROI'.",
+    "Split the third H3 block into two separate H3 sub-blocks: one for the section-heading evidence (warmth vs evidence), one for the buyer-persona implication — each must open with its takeaway in the first sentence.",
+    "Rewrite the paragraph beginning 'The H1 and the section headings point in the same direction' so the closing sentence is concrete or actionable, not a conditional hedge ('if the rest of the evidence holds').",
+    "Check the paragraph quoting the full meta description in H3 two — trim it to under 60 words or split the quote into a callout and keep the analytical sentence separate.",
+    "Anchor the founder test more tightly to Agorapulse's specific evidence — for example: 'On Agorapulse's current homepage, tally every word in the H1, subheadline, and first section heading that describes a feeling versus a reportable result — then run the same count on your own homepage'."
+  ],
+  "riskFlags": [
+    "Phrase 'That removal may signal a de-emphasis of price-sensitivity as a primary draw' — appropriately hedged with 'may signal', acceptable.",
+    "Phrase 'consistent with a page-wide shift, not a single headline swap, if the rest of the evidence holds' — the conditional hedge salvages the causal risk but makes the sentence read as abstract rather than actionable.",
+    "Phrase 'may now resonate most with marketing professionals who report upward' — buyer-persona inference not directly traceable to evidence; hedged with 'may' which is acceptable, but the specific characterisation 'report upward' is an inference beyond the evidence note which says 'marketing professionals and team leads who must justify spend'."
+  ],
+  "seoNotes": [
+    "The ## section heading contains no searchable terms — this will hurt organic discovery for queries like 'Agorapulse messaging strategy' or 'Agorapulse homepage evolution'.",
+    "The H3 headings do contain 'Agorapulse' plus topic terms ('headline shift', 'page title', 'meta description', 'messaging shift') which are good secondary keyword anchors.",
+    "The section correctly names the primary keyword evidence elements (H1, meta description, page title) that match the article's SEO intent around 'Agorapulse homepage teardown'.",
+    "Quoting the exact before/after headlines and page titles verbatim is strong for long-tail query matching — keep this pattern."
+  ],
+  "rewriteInstruction": "Fix the ## heading first — replace the clever narrative title with one that includes 'Agorapulse', 'messaging', and a topic term such as 'homepage' or 'positioning'. Then split the third H3 block into two: the first covering the section-heading evidence (warmth-to-evidence shift with the specific quoted headings), the second covering the buyer implication (who the new language is written for). Each new H3 block must open with its takeaway in sentence one. Trim the meta description paragraph to under 60 words by separating the verbatim quote from the analysis. Rewrite the conditional closing sentence ('if the rest of the evidence holds') into a concrete observation — for example, note that the H1, section headings, and page title all drop ease-of-use language simultaneously, which makes this a structural shift rather than a single copy tweak. Finally, tighten the founder test by naming Agorapulse's specific elements as the reference point before asking the founder to apply the same count to their own page.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 16,
+    "scannability": 9,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

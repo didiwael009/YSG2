@@ -1,0 +1,80 @@
+{
+  "createdAt": "2026-06-12T20:00:23.853Z",
+  "slug": "agorapulse",
+  "source": {
+    "finalJudgePass": false,
+    "seoPass": true,
+    "finalJudgeScore": 72,
+    "seoScore": 83
+  },
+  "sectionsToRerun": [
+    {
+      "sectionId": "03-visual-timeline",
+      "reasons": [
+        "'a visual sophistication score of 4 out of 5 — described in the evidence as polished' — the score of 4 is in the evidence but '4 out of 5' as a denominator is not stated in the evidence",
+        "Rewrite '4 out of 5' phrasing to match evidence exactly: the evidence lists visual_sophistication as 4 (no denominator stated); add a note that this is the evidence's own scale descriptor"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    },
+    {
+      "sectionId": "04-messaging-evolution",
+      "reasons": [
+        "Judge rerun recommendation: ## Why the homepage changed — rerun to anchor generic SaaS-pattern claims to specific evidence events (Series B, ROI feature launch, Hootsuite disrupt",
+        "Hormozi notes in *$100M Offers* that a strong offer reduces the buyer's need to look elsewhere before deciding — this specific quote/paraphrase is an external claim not in the compressed evidence and ",
+        "### 2024 to today — split-column, navy, and ROI framing (visual sophistication score claim)",
+        "'This evolution maps to a broader SaaS pattern: as a category matures, winning vendors pivot from practitioner-facing simplicity messaging toward budget-holder-facing ROI language to defend and expand",
+        "Rewrite 'This evolution maps to a broader SaaS pattern... winning vendors pivot...' as a hedged interpretation, not a stated mechanism — e.g., 'This pattern appears in other maturing SaaS categories, ",
+        "Add a dedicated paragraph or callout clarifying that this teardown analyzes *observed changes* and does not claim causal links to traffic, conversion, or revenue — this is critical for avoiding SEO/CR"
+      ],
+      "priority": "high",
+      "source": "both"
+    },
+    {
+      "sectionId": "05-cta-navigation-evolution",
+      "reasons": [
+        "'Agorapulse AI New!' as named nav items — this specific label does not appear anywhere in the navAdded or navRemoved evidence",
+        "'teams that cannot demonstrate measurable business impact may struggle to retain accounts even when the product works well' — conversion/retention prediction not supported by data",
+        "'Navigation overhaul — elevating Sign up! and surfacing Agorapulse AI New! as named items — suggests growing confidence in brand recognition' — 'Agorapulse AI New!' is not in the evidence; the confide",
+        "Remove or rewrite the Hormozi /*$100M Offers* paragraph — it introduces an external authority claim and a conversion principle not grounded in the compressed evidence; replace with a hedged observatio",
+        "Soften or remove 'teams that cannot demonstrate measurable business impact may struggle to retain accounts' — this is a conversion/retention prediction with no data support; reframe as a conditional o"
+      ],
+      "priority": "high",
+      "source": "final-judge"
+    }
+  ],
+  "skippedIssues": [
+    {
+      "issue": "## Why the homepage changed",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Hormozi citation paragraph",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'That removal may signal a de-emphasis of price-sensitivity as a primary draw' — phrased as inference (hedged with 'may'), acceptable, but the broader paragraph concludes a buyer-intent shift as near-",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "'That consistency suggests the shift followed product capability rather than leading it' — asserts company sequencing/intent without evidence",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Remove 'Agorapulse AI New!' from the business context section — this label does not appear in the navAdded evidence and constitutes an invented specific fact",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "Verify the meta description is under 155 characters (current: 148 characters) — already compliant, but confirm it renders fully in search results on mobile.",
+      "reason": "metadata field in seo.json, not section content"
+    },
+    {
+      "issue": "Section 06-lessons-for-saas-teams (high priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    },
+    {
+      "issue": "Section 01-intro (low priority)",
+      "reason": "Exceeded --max-rerun-sections cap of 3"
+    }
+  ]
+}

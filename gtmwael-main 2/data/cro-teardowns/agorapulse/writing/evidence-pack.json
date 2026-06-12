@@ -1,0 +1,159 @@
+{
+  "slug": "agorapulse",
+  "companyName": "Agorapulse",
+  "companyUrl": "https://www.agorapulse.com",
+  "fromMonth": "2019-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-12T19:50:15.854Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-01.webp",
+      "timestamp": "20190213120018",
+      "originalUrl": "https://www.agorapulse.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2019-07",
+      "label": "Jul 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-07.webp",
+      "timestamp": "20190815045223",
+      "originalUrl": "https://www.agorapulse.com",
+      "similarityToPrev": 0.9638,
+      "comparedTo": "2019-01"
+    },
+    {
+      "month": "2019-10",
+      "label": "Oct 2019",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2019-10.webp",
+      "timestamp": "20191114144057",
+      "originalUrl": "https://www.agorapulse.com",
+      "similarityToPrev": 0.9814,
+      "comparedTo": "2019-07"
+    },
+    {
+      "month": "2020-04",
+      "label": "Apr 2020",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2020-04.webp",
+      "timestamp": "20200511085629",
+      "originalUrl": "https://www.agorapulse.com",
+      "similarityToPrev": 0.9825,
+      "comparedTo": "2019-10"
+    },
+    {
+      "month": "2021-04",
+      "label": "Apr 2021",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2021-04.webp",
+      "timestamp": "20210515165419",
+      "originalUrl": "https://www.agorapulse.com",
+      "similarityToPrev": 0.963,
+      "comparedTo": "2020-04"
+    },
+    {
+      "month": "2024-04",
+      "label": "Apr 2024",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/2024-04.webp",
+      "timestamp": "20240516213245",
+      "originalUrl": "https://www.agorapulse.com",
+      "similarityToPrev": 0.9869,
+      "comparedTo": "2021-04"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/agorapulse/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.agorapulse.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Over 31K+ social media managers use our tool daily",
+      "Effective social media management with impactful business outcomes",
+      "Features to boost efficiency and save time",
+      "Works perfectly with your favorite tools and platforms",
+      "What makes Agorapulse great?",
+      "Frequently asked questions",
+      "Supercharge your social media goals with Agorapulse"
+    ],
+    "h2Removed": [
+      "We support all of these networks.",
+      "We are top rated by our users.",
+      "Find out how Agorapulse works with the unique needs of your business.",
+      "Features You'll Love",
+      "Who loves Agorapulse?",
+      "We are a people company."
+    ],
+    "ctaAdded": [
+      "Sign up!",
+      "Try for free now",
+      "Watch an On-Demand demo",
+      "Explore Inbox",
+      "Explore Publishing",
+      "Explore Listening",
+      "Explore Reporting",
+      "Explore ROI",
+      "Try for free",
+      "Book a demo"
+    ],
+    "ctaRemoved": [
+      "Read on TrustRadius",
+      "Read on G2 Crowd",
+      "Read on GetApp",
+      "Learn more",
+      "Schedule Freely",
+      "Read more",
+      "Read articles from our team",
+      "Start my free trial now",
+      "See all pricing",
+      "Reviews on G2CROWD"
+    ],
+    "navAdded": [
+      "See a demo",
+      "Top Features",
+      "Learn More",
+      "Facebook",
+      "Instagram",
+      "X (Twitter)",
+      "LinkedIn",
+      "Pinterest"
+    ],
+    "navRemoved": [
+      "Features",
+      "Free Tools",
+      "Company",
+      "Contact",
+      "Meet the Team",
+      "Our Story",
+      "Our Customers",
+      "Press & Mentions"
+    ],
+    "headlines": [
+      {
+        "from": "Social Media Management Simplified",
+        "to": "Drive Real Impact on Social Media. From Engagement to ROI.",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "An easy social media management tool that works with Facebook, Twitter, Instagram, LinkedIn, Google+, and YouTube. Start your free trial today!",
+        "to": "An easy to use Social Media Management Software that allows you to stay organized, save time, and easily manage your inbox, publishing, reporting, monitoring, and team collaboration tools.",
+        "fromMonth": "2019-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

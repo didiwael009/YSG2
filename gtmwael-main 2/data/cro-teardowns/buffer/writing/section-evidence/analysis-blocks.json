@@ -1,0 +1,40 @@
+[
+  {
+    "id": "analysis-2019-01",
+    "label": "Jan 2019 — original state",
+    "period": "Jan 2019",
+    "screenshotPath": "/cro-teardowns/buffer/selected/2019-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Save time managing social media for your business\" — accessible benefit language aimed at a broad audience.",
+      "Visible section headings include: \"Find the plan that's right for you\", \"Buffer for Business Pricing\", \"Buffer makes it easy for businesses and marketing teams to schedule posts, analyze performance, and manage all their accounts in one place\".",
+      "Navigation includes: \"Pricing\", \"Blog\" — product category framing.",
+      "Section headings later removed include: \"Find the plan that's right for you\" and \"Buffer for Business Pricing\"."
+    ]
+  },
+  {
+    "id": "analysis-2024-07",
+    "label": "Jul 2024 — mid-transition",
+    "period": "Jul 2024",
+    "screenshotPath": "/cro-teardowns/buffer/selected/2024-07.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: 95.3% — a moderate visual change.",
+      "H1 in this snapshot: \"Buffer\".",
+      "New section headings appearing: \"Grow your audience on social and beyond\", \"Build a following without draining your time\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/buffer/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Buffer\" — updated value proposition.",
+      "New section headings include: \"Buffer APIis here\", \"Your social media workspace\", \"Buffer is trusted by over 100,000 businesses and individuals\".",
+      "CTAs no longer present include: \"Get Started for Free →\", \"Learn More\", \"Learn More →\"."
+    ]
+  }
+]

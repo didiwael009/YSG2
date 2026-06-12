@@ -1,0 +1,50 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section H3 heading 3 uses 'ICP' as a jargon term WITH an inline definition ('ICP means ideal customer profile') — this is compliant, but the definition is placed mid-paragraph rather than at first use, which slightly disrupts reading flow.",
+    "Paragraph 2 of H3-1 ('This matters if your buyers are mid-evaluation...') buries a causal risk claim — 'may cost credibility' — without attaching a named condition. The condition is loosely implied but not stated explicitly as required by the rubric.",
+    "H3-1, paragraph 2 contains approximately 38 words and is clean, but H3-1, paragraph 1 runs approximately 72 words — exceeding the 60-word cap for analytical paragraphs. This triggers a scannability penalty.",
+    "H3-3, paragraph 1 runs approximately 68 words — exceeding the 60-word cap. This triggers a second scannability penalty.",
+    "H3-3, paragraph 2 ('Every word you remove from a headline...') stacks two distinct ideas simultaneously: audience narrowing AND visitor reassurance. This violates the 'max 2 ideas per paragraph' rule — it is exactly at the limit but the second idea ('stop reassuring them if they arrive anyway') is an unsupported causal claim without a named condition, triggering an evidenceAccuracy deduction.",
+    "The ## section heading is partially searchable ('Agorapulse' present, 'homepage' present) but is borderline 'clever-only' in its framing ('erase Simple & Affordable') — however it does contain the company name and a topic signal, so no full penalty applies.",
+    "H3-2 references Hormozi's '$100M Offers' — permitted by citation context — but the application ('a strong offer reduces the buyer's need to look elsewhere') is a generalization applied causally to Agorapulse's specific CTA removal without hedging. The connection is framed as explanatory ('That principle may apply here') which is appropriately hedged.",
+    "The word 'may' is used correctly throughout to hedge causal claims, which is good practice — but the H3-1 risk claim 'may cost credibility with exactly the buyer it is trying to reach' is a mild causation claim. The attached condition ('if your buyers are mid-evaluation') makes it compliant but barely.",
+    "No forbidden jargon terms appear more than once. 'ICP' appears once with a definition. No hard caps fired on plainLanguage.",
+    "Section word count is approximately 430 words — exceeding the 220–380 word cap. This is a required fix.",
+    "H3-3's analytical paragraph does not follow FINDING → EXPLANATION → EXAMPLE → IMPLICATION cleanly: it opens with the finding but then mixes explanation and a second unsupported claim before reaching implication. Minor structural issue.",
+    "H3-2 paragraph 1 runs approximately 68 words — exceeding the 60-word cap. Third scannability violation.",
+    "The closing sentence of H3-3's second paragraph ('Removing affordability language may stop attracting cost-sensitive visitors — but it may also stop reassuring them if they arrive anyway') is abstract and not actionable. Penalised under plainLanguage closing-sentence rule.",
+    "The 'Sign up!' CTA appears in the navAdded array in evidence. 'Try for free now' and 'Watch an On-Demand demo' appear in ctaAdded. 'Read on TrustRadius', 'Read on G2 Crowd', 'Read on GetApp' appear in ctaRemoved. All named CTAs are verifiable — no evidenceAccuracy penalty on this dimension."
+  ],
+  "requiredFixes": [
+    "Trim the section to under 380 words — currently approximately 430 words. The most cuttable block is H3-1 paragraph 2, which repeats the H3-3 theme of buyer targeting.",
+    "Split H3-1 paragraph 1 (approximately 72 words) into two paragraphs: one stating the finding (H1 changed), one explaining the implication. Each must stay under 60 words.",
+    "Split H3-2 paragraph 1 (approximately 68 words) into two paragraphs to clear the 60-word cap.",
+    "Split H3-3 paragraph 1 (approximately 68 words). The finding (page title dropped 'Simple & Affordable') should be one sentence. The ICP definition and explanation should be a second paragraph.",
+    "Fix the closing sentence of H3-3 paragraph 2: replace the abstract double-clause ('may stop attracting... may also stop reassuring') with a concrete, actionable statement. For example: 'If your closed-won data skews toward team leads, those simplicity words are likely filtering in visitors you cannot convert anyway.'",
+    "Add an explicit named condition to the H3-1 risk statement. Currently 'may cost credibility with exactly the buyer it is trying to reach' needs a sharper if-clause: e.g., 'if the product cannot yet surface an ROI metric inside the trial.'"
+  ],
+  "riskFlags": [
+    "H3-1: 'outcome language that outpaces what the product can show may cost credibility' — causal claim. Condition is present but loosely implied, not stated explicitly as a named if-clause.",
+    "H3-3: 'Removing affordability language may stop reassuring them if they arrive anyway' — mild unsupported causal claim. No evidence in the provided data shows visitor reassurance was measured or changed.",
+    "H3-2 Hormozi citation: applying a general offer-design principle causally to Agorapulse's CTA removal is plausible but not directly evidenced. The hedge 'may apply here' keeps it compliant but reviewers should note this is an interpretation, not an observation."
+  ],
+  "seoNotes": [
+    "The ## heading contains 'Agorapulse', 'homepage', and 'Simple & Affordable' (a quoted phrase from the actual page title change) — strong for long-tail search intent around this specific teardown.",
+    "H3 subheadings are descriptive and contain named elements ('G2', 'TrustRadius', 'GetApp', 'H1', 'page title') — these may capture navigational search queries from readers looking for specific CRO tactics.",
+    "The Hormozi citation in H3-2 adds a named reference that may improve topical authority signals for readers arriving from business/marketing search queries.",
+    "Word count overage (~430 vs 380 cap) may dilute keyword density per section if the article is long — trimming to under 380 words would tighten relevance signals."
+  ],
+  "rewriteInstruction": "Trim the section to under 380 words by cutting H3-1 paragraph 2 (it repeats the buyer-targeting theme that H3-3 covers more specifically). Then split every paragraph over 60 words into two shorter ones — H3-1 opening, H3-2 opening, and H3-3 opening all violate this cap. Rewrite the closing sentence of H3-3 to be concrete and actionable rather than a double-hedged abstraction: give the founder one specific thing to do with their closed-won data. Finally, sharpen the H3-1 risk condition from a loose implication into an explicit if-clause so the causal claim is fully defended.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 6,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

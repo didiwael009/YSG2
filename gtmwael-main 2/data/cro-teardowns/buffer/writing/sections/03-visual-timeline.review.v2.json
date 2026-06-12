@@ -1,0 +1,43 @@
+{
+  "score": 84,
+  "pass": true,
+  "issues": [
+    "The 2024 H3 block delivers its practical takeaway late — the observation about the headline collapsing to one word is interesting but the paragraph does not state what the reader should take from this in the first two sentences.",
+    "The paragraph in the 2024 block describing 'New section headings appeared' runs close to 60 words and packs two distinct ideas (layout shift + new section headings) into adjacent paragraphs without clear separation of findings.",
+    "The closing test is directionally specific but slightly generic — it frames the CTA removal as a test about 'one clear primary CTA above the fold' which could apply to any SaaS homepage teardown, not uniquely to Buffer's evidence.",
+    "The phrase 'moving proof density from low to medium' is internal evidence jargon borrowed directly from the scoring schema — a smart founder may not know what 'proof density' means and no plain-language definition is given.",
+    "The 2026 H3 block states 'now described as a refined geometric accent system' — this framing implies a quote or label from the evidence, but the evidence uses 'a cohesive system of decorative geometric accents', not 'refined geometric accent system'. Minor but traceable gap.",
+    "The section does not explicitly state that there are 5 snapshots across 7 years, which is called out in the evidence and gives the reader useful orientation for the arc being described.",
+    "No H3 block explicitly flags what the colored-dot survival across all redesigns means for the reader — it is noted twice but left without implication, violating the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula."
+  ],
+  "requiredFixes": [
+    "Add a plain-language definition for 'proof density' on first use — e.g., 'proof density (how much trust-building evidence is visible above the fold)'.",
+    "Rewrite the 2024 H3 opening so the practical finding lands in sentence one or two — e.g., lead with what the single-word headline change means for a reader evaluating their own homepage positioning, before describing the layout shift.",
+    "Sharpen the final founder test to be Buffer-specific: instead of 'check whether your own homepage still has one clear primary CTA', anchor it to the specific CTAs removed — e.g., 'Buffer dropped three CTAs including Get Started for Free. Open your homepage, count every CTA above the fold, and note which one asks for the least commitment — that is your de facto primary CTA whether you intended it or not.'",
+    "Correct 'refined geometric accent system' to match the evidence language: 'a cohesive system of decorative geometric accents'.",
+    "Add one sentence near the opening of the section stating that the arc spans 5 snapshots across 7 years — this orients both skimmers and first-time readers before the timeline begins.",
+    "Add an implication sentence to the colored-dot observation in either the 2024 or 2026 block — e.g., what does it mean that one visual element survived every redesign? Give the reader something to do with that observation."
+  ],
+  "riskFlags": [
+    "The phrase 'pointing to a page built to move evaluators toward a decision' implies intent and causation from a design choice — this is not directly traceable to the evidence and should be hedged with 'suggests' or 'may indicate'.",
+    "'These headings describe outcomes for the visitor rather than listing product features' — this is a reasonable inference but presented as fact; it should be flagged as an interpretation, not a confirmed finding.",
+    "The closing test implies that removing 'Get Started for Free' was a strategic decision by Buffer — the evidence does not confirm intent, only that the CTA no longer appears. The test copy should hedge this."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name 'Buffer', a date range '2019–2026', and a descriptive phrase — this is strong for long-tail search around Buffer homepage changes and CRO teardown queries.",
+    "The H3 headings use years directly which helps searchers looking for Buffer homepage history by date — good for navigability in search snippets.",
+    "The phrase 'polished multi-product workspace' in the ## heading is not a widely searched term and adds length without SEO value — consider trimming to 'Buffer homepage 2019–2026: from startup hero to polished social media workspace'.",
+    "The article title 'Buffer Homepage Teardown: Jan 2019 to Jun 2026' aligns well with the primary keyword 'Buffer homepage teardown' — the section heading reinforces this alignment."
+  ],
+  "rewriteInstruction": "The draft is in good shape structurally but needs four targeted fixes before it passes cleanly. First, define 'proof density' in plain language on first use — one parenthetical phrase is enough. Second, rewrite the 2024 H3 so the finding (what the one-word headline means for a founder reading this) appears in sentence one, before the layout description. Third, sharpen the founder test to be Buffer-specific: name the exact CTAs removed and give the reader a concrete counting action tied to those CTAs, not a generic CTA audit instruction. Fourth, add one implication sentence to the colored-dot thread — it appears twice but is never resolved into a takeaway. Also correct 'refined geometric accent system' to match the evidence wording, and add a one-sentence orientation near the top stating the arc covers 5 snapshots across 7 years. Do not add new claims beyond what the evidence supports — hedge any inference about Buffer's intent with 'suggests' or 'may indicate'.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 13,
+    "plainLanguage": 15,
+    "scannability": 13,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 80
+}

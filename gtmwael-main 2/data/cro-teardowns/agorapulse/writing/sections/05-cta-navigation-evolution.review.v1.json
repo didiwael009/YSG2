@@ -1,0 +1,45 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Navigation CTA 'See a demo' appears in the draft as a named navigation item but does NOT appear verbatim in navAdded array — navAdded contains no 'See a demo' entry. This triggers a -8 penalty under evidenceAccuracy.",
+    "'Agorapulse AI New!' appears as a named navigation item in the draft but does NOT appear verbatim in navAdded array — no such entry exists in evidence. Another -8 penalty.",
+    "The H3 'Navigation changes: what Agorapulse stopped needing to explain' does not state its finding within the first 2 sentences — the finding is buried after describing what was removed. -3 plainLanguage penalty.",
+    "The paragraph beginning 'The removed navigation items pointed outward' is approximately 35 words — acceptable — but the block's practical takeaway is not delivered in the first two sentences of the H3; the takeaway is deferred to the Founder test block. -3 founderTakeaway penalty.",
+    "The phrase 'transactional exits' is expert jargon used without an immediate plain-language definition. -4 plainLanguage penalty.",
+    "Causal/outcome framing: 'This shift suggests the homepage no longer treats third-party comparison sites as a necessary step in the buying process' — this is a causation inference without a stated condition. -3 evidenceAccuracy penalty.",
+    "The section is approximately 290 words — within range, acceptable.",
+    "H3 subheadings are present — no cap triggered on that basis.",
+    "The ## heading contains the company name 'Agorapulse' and references the CTA-adjacent topic, but lacks the word 'CTA', 'navigation', 'homepage', 'messaging', or 'conversion' explicitly. Marginal but passable for searchability; no full penalty applied but noted.",
+    "The paragraph beginning 'The removed navigation items pointed outward' contains two distinct ideas (what was removed and what replaced it) but stays within the 60-word limit — no scannability penalty on length, but idea density is borderline.",
+    "The Founder test is specific and runnable — 'count how many nav items link to an action versus a page' — this is acceptable and anchored to the section's theme."
+  ],
+  "requiredFixes": [
+    "Remove 'See a demo' as a named navigation item claim — it does not appear in navAdded. Replace with a nav item that IS in the navAdded array, or remove the reference entirely.",
+    "'Agorapulse AI New!' must be removed or replaced with a verbatim item from the navAdded evidence array — it is not listed there and its inclusion is a fabricated fact.",
+    "Define 'transactional exits' immediately after first use — add a plain-language parenthetical such as '(links that send visitors away from the page before converting)'.",
+    "In the H3 'Navigation changes', move the core finding — what the shift in nav items signals — into the first sentence rather than the second or third paragraph. The reader should know the conclusion before the evidence.",
+    "Soften or conditionalise the causation claim in paragraph 2: add an explicit condition such as 'if this reflects a deliberate strategy' or hedge with 'this may indicate' to avoid an unsupported causation penalty."
+  ],
+  "riskFlags": [
+    "'See a demo' cited as a navigation item — not present in navAdded array. Invented fact risk.",
+    "'Agorapulse AI New!' cited as a navigation item — not present in navAdded array. Invented fact risk.",
+    "'This shift suggests the homepage no longer treats third-party comparison sites as a necessary step' — causal inference without stated condition or data support."
+  ],
+  "seoNotes": [
+    "The ## heading is strong for long-tail search — 'Agorapulse removed TrustRadius and G2 from its homepage' maps to real queries about social media tool comparisons and review-site strategy.",
+    "The H3 headings are descriptive but not keyword-optimised — 'CTA changes' and 'Navigation changes' are generic; adding 'Agorapulse' to one of them would improve intra-page anchor text value.",
+    "The section correctly bolds all verbatim CTAs from the evidence — good for on-page visual hierarchy and quote credibility."
+  ],
+  "rewriteInstruction": "Fix two fabricated navigation items first — 'See a demo' and 'Agorapulse AI New!' are not in the navAdded evidence array and must be removed or replaced with items that are. Then restructure the navigation H3 so the finding lands in sentence one ('Agorapulse moved conversion actions into the top navigation bar itself'). Add a one-clause plain-language definition for 'transactional exits' immediately after you use it. Finally, soften the causation claim in paragraph two by attaching a condition or hedging phrase — the evidence shows what changed, not why Agorapulse made the change. These four fixes remove the fabrication penalties and the buried-finding penalty, which should push the section above 85.",
+  "dimensionScores": {
+    "evidenceAccuracy": 9,
+    "specificity": 14,
+    "plainLanguage": 13,
+    "scannability": 13,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

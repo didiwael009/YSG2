@@ -1,0 +1,59 @@
+{
+  "snapshots": [
+    {
+      "month": "2019-01",
+      "design_era": "early-startup",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Light blue sky-cloud background with centered headline 'Social Media Management Simplified', colorful floating social icons, and orange CTA button below.",
+      "proof_density": "low",
+      "primary_message_type": "category",
+      "visual_sophistication": 3,
+      "brand_maturity": "early"
+    },
+    {
+      "month": "2019-10",
+      "design_era": "early-startup",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Dark charcoal hero section with white headline 'Managing social media has never been easier', right-aligned product screenshot mockup, and orange CTA button on left.",
+      "proof_density": "low",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 3,
+      "brand_maturity": "early"
+    },
+    {
+      "month": "2020-04",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Dark charcoal hero with white headline, product screenshot centered, orange CTA, followed by feature-focused content sections below.",
+      "proof_density": "low",
+      "primary_message_type": "feature",
+      "visual_sophistication": 3,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2024-04",
+      "design_era": "growth",
+      "layout_type": "multi-column",
+      "above_fold_structure": "Purple header bar, white headline 'Take Control of Your Social Media', split layout with product UI mockup on right, left-side copy with orange CTA and testimonial below.",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    },
+    {
+      "month": "current-live",
+      "design_era": "growth",
+      "layout_type": "multi-column",
+      "above_fold_structure": "Dark navy header with orange accent stripe, white headline 'Drive Real Impact on Social Media. From Engagement to ROI.', product UI screenshot on right with split-column layout, orange CTA on left.",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    }
+  ],
+  "visual_shift_summary": "The design evolved from a playful cloud-based aesthetic with bright accent colors (2019) to a professional dark-mode hero with product-centric layout (2019–2020), then shifted to modern split-column layouts with stronger typography hierarchy and muted color palettes (2024–current). Visual sophistication increased through refined mockup presentation, cleaner spacing, and more disciplined use of accent colors.",
+  "design_evolution_label": "playful-startup-to-professional-saaS",
+  "generatedAt": "2026-06-12T19:53:36.071Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.006160799999999999
+}

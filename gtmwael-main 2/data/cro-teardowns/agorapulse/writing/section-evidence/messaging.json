@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "Social Media Management Simplified",
+    "after": "Drive Real Impact on Social Media. From Engagement to ROI.",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "An easy social media management tool that works with Facebook, Twitter, Instagram, LinkedIn, Google+, and YouTube. Start your free trial today!",
+    "after": "An easy to use Social Media Management Software that allows you to stay organized, save time, and easily manage your inbox, publishing, reporting, monitoring, and team collaboration tools.",
+    "note": "Free-trial urgency and exclamatory language removed. The new description reads as a neutral product category statement — more consistent with a platform positioning than a trial-conversion tool."
+  },
+  {
+    "element": "Page title",
+    "before": "Simple & Affordable Social Media Management | Agorapulse",
+    "after": "Social Media Management Software | Agorapulse"
+  }
+]

@@ -1,0 +1,74 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Buffer",
+  "companyUrl": "https://buffer.com",
+  "articleTitle": "Buffer Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Buffer rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 7,
+    "h2Removed": 12,
+    "ctaAdded": 10,
+    "ctaRemoved": 8,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Buffer homepage teardown",
+  "cta-changes": {
+    "added": [
+      "Get started for free",
+      "Learn more about Publish",
+      "Learn more about Create",
+      "Learn more about Community",
+      "Learn more about Analyze",
+      "Learn more about Collaborate",
+      "Learn more about Mobile app",
+      "Learn more about Start page",
+      "Learn more about AI assistant",
+      "Learn more about our global team"
+    ],
+    "removed": [
+      "Get Started for Free →",
+      "Learn More",
+      "Learn More →",
+      "See All Case Studies →",
+      "Browser Extension→",
+      "Buffer for Android→",
+      "Buffer for iOS→",
+      "Click for sound"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Buffer APIis here",
+      "Your social media workspace",
+      "Buffer is trusted by over 100,000 businesses and individuals",
+      "…and so much more!",
+      "Connect your favorite accounts",
+      "Whoever you are, we’ve got you covered",
+      "Grow your social presence with confidence"
+    ],
+    "removed": [
+      "Find the plan that's right for you",
+      "Buffer for Business Pricing",
+      "Buffer makes it easy for businesses and marketing teams to schedule posts, analyze performance, and manage all their accounts in one place",
+      "Manage all your social accounts in one place",
+      "Schedule social media posts for your preferred times",
+      "Review your analytics to see how your posts are performing",
+      "Add multiple team members and set access levels",
+      "Try Buffer and see the difference.",
+      "Schedule content as you discover it",
+      "Schedule your posts directly to Instagram",
+      "You’re in good company",
+      "World Class Customer Support"
+    ]
+  }
+}

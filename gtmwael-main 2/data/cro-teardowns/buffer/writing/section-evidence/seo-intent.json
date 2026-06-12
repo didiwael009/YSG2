@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Buffer homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, product manager, or growth marketer who is repositioning their own tool or evaluating how to evolve from a feature-focused value prop to a category-owning brand positioning. They want to understand the strategic reasoning behind Buffer's shift from 'save time scheduling' to 'social media workspace' and whether that model works.",
+  "recommended_h1_format": "How [Company] Pivoted From a Scheduling Tool to a Workspace Platform: A 7-Year Homepage Evolution",
+  "secondary_keywords": [
+    "Buffer homepage evolution 2019 to 2026",
+    "Buffer CRO teardown positioning change",
+    "Buffer rebranding from scheduling tool to workspace",
+    "How Buffer changed its homepage messaging",
+    "Buffer category strategy homepage analysis"
+  ],
+  "content_angle": "Focus on the *strategic thesis* behind the pivot, not just the visual changes. The searcher needs to understand: (1) Why Buffer abandoned explicit outcome-language ('save time') and pricing visibility, (2) How the 'workspace' framing and product pillar structure (Publish, Create, Community, Analyze, Collaborate) enables expansion and category ownership, (3) Whether this shift was driven by competition, user behaviour, or market expansion, and (4) What signals indicate success or risk in this new positioning. Frame it as 'the trade-offs of repositioning': you gain market breadth and brand ownership but lose immediate relevance to the SMB time-saver segment.",
+  "what_the_searcher_wants": "A detailed walkthrough that explains *why* each change happened and whether it was a successful repositioning strategy they could learn from or replicate. They want to know if this is a cautionary tale or a playbook.",
+  "what_to_avoid": "Do not treat this as a visual redesign critique or a list of 'before/after' screenshots without strategic context. Avoid shallow observations like 'they made the H1 shorter' or 'they hid pricing.' Do not assume the shift was cosmetic—it represents a fundamental repositioning away from SMB utility to workspace category ownership. Do not ignore the removal of content pillars (Blog, Case Studies, Webinar, Culture Blog) from navigation; that signals a deprioritization of thought leadership in favour of product-first discovery. Avoid generic SaaS positioning advice; anchor every observation to Buffer's specific market position and competitive context.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T19:53:06.204Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0033704
+}

@@ -1,0 +1,7 @@
+## Why the homepage changed
+
+In 2019, Agorapulse was competing in a crowded social media management category alongside tools like Hootsuite and Buffer, where simplicity and price were standard differentiators. Its page title explicitly flagged **"Simple & Affordable Social Media Management"** and its meta description led with **"An easy social media management tool"** — positioning consistent with a market where individual practitioners were the primary buyers evaluating tools on ease and cost.
+
+The navigation overhaul — elevating **"Sign up!"** and surfacing **"Agorapulse AI New!"** as named items — suggests growing confidence in brand recognition and a response to AI becoming a competitive differentiator in the category. Swapping **"Social Media Management Simplified"** for **"Drive Real Impact on Social Media. From Engagement to ROI."** points to a buyer shift toward marketing leads who must justify software spend to stakeholders.
+
+This evolution maps to a broader SaaS pattern: as a category matures, winning vendors pivot from practitioner-facing simplicity messaging toward budget-holder-facing ROI language to defend and expand contract value. For SaaS teams building in social or marketing tooling today, this suggests the category is consolidating around outcome proof — teams that cannot demonstrate measurable business impact may struggle to retain accounts even when the product works well.

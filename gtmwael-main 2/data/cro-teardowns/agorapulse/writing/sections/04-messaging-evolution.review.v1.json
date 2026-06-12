@@ -1,0 +1,45 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "The March 2022 ROI feature launch claim is not present in the evidence — this is an invented fact that triggers a hard cap.",
+    "The final paragraph of section 03 contains two distinct ideas (scale-proof headings AND outcome-language headings AND the buyer inference), exceeding the 2-idea-per-paragraph limit.",
+    "The closing sentence of the third analytical paragraph ('You cannot credibly claim ROI in the headline if the product cannot measure it.') is abstract and detached from any evidence — it reads like a general SaaS maxim, not a finding anchored to Agorapulse.",
+    "The ## section heading is not searchable — it reads as clever-only ('retired Simplified and replaced it with ROI') and lacks a standard search term such as 'messaging', 'homepage', or 'positioning' in a way that matches likely search queries.",
+    "The third H3 block ('What Agorapulse's messaging shift signals about its target buyer') buries its practical takeaway — the takeaway (feel vs. result words) only appears in the founder test, not in the first two sentences of the H3 block body.",
+    "The invented March 2022 ROI feature claim triggers the evidenceAccuracy hard cap (total capped at 70).",
+    "Paragraph 3 body (the section heading paragraph) is approximately 80 words — exceeds the 60-word analytical paragraph limit, triggering a scannability penalty.",
+    "The paragraph beginning 'The March 2022 launch...' is a standalone paragraph that constitutes a factual claim with a specific date and named event not present in the evidence — triggers -5 financial/date/event penalty under evidenceAccuracy.",
+    "The FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula is not followed in H3 block 3: the paragraph opens with an example (section heading quotes), not the finding.",
+    "No verbatim bold-quote formatting issue detected — all quoted headlines and titles are in bold quotes, which is correct."
+  ],
+  "requiredFixes": [
+    "DELETE the entire sentence 'The March 2022 launch of Agorapulse's Social Media ROI feature likely gave the product the evidence to support this language.' — this named event and date do not appear in the evidence and invent a causal claim. Replace with a hedged observation drawn from the messaging evidence itself, e.g., that the ROI language in the headline is only credible if the product can support it — framed as a conditional, not a stated fact.",
+    "Rewrite the third H3 block opening so the finding appears in the first sentence: state plainly that Agorapulse replaced community-identity headings with scale-proof and outcome headings, then explain what that signals about the target buyer — do not open with the heading quotes.",
+    "Split the third analytical paragraph into two: one paragraph on the heading evidence (what changed), one on the buyer inference (what it signals). Each should stay under 60 words.",
+    "Revise the ## section heading to include at least one searchable term — 'messaging', 'homepage', or 'positioning' — while retaining the company name. Example: 'How Agorapulse's Homepage Messaging Shifted from Simplicity to ROI — and Who It Is Now Selling To'.",
+    "Replace the closing sentence of H3 block 3 ('You cannot credibly claim ROI...') with a concrete, evidence-anchored implication specific to Agorapulse — for example, noting that the shift to outcome language in section headings mirrors the same move made in the H1, suggesting a deliberate full-page alignment rather than a one-off headline test."
+  ],
+  "riskFlags": [
+    "INVENTED FACT: 'The March 2022 launch of Agorapulse's Social Media ROI feature' — not present in any evidence field. Hard cap triggered on evidenceAccuracy.",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'You cannot credibly claim ROI in the headline if the product cannot measure it' — framed as fact; should be conditional if retained.",
+    "OUTCOME IMPLICATION: The framing that the ROI feature 'gave the product the evidence to support this language' implies a causal relationship between a product launch and messaging — unsupported by evidence."
+  ],
+  "seoNotes": [
+    "The ## heading is not optimised for search — the phrase 'retired Simplified and replaced it with ROI' will not match informational queries. The heading should include 'Agorapulse homepage messaging' or 'Agorapulse positioning' to align with secondary keywords listed in the evidence.",
+    "H3 headings are well-structured for search: each contains 'Agorapulse' plus a topic term ('headline shift', 'page title and meta description', 'messaging shift'), which is good for featured-snippet eligibility.",
+    "The founder test at the end is specific enough to be quotable and shareable — this is an SEO asset if it appears in a pull-quote or summary box.",
+    "The section addresses the 'what to avoid' note from seo-intent evidence: it does not treat this as a simple before/after visual breakdown, which is positive alignment with the content brief."
+  ],
+  "rewriteInstruction": "The draft is structurally sound and well-anchored to evidence in H3 blocks 1 and 2, but fails on two issues that must be fixed before passing. First, delete the invented March 2022 ROI feature claim entirely — it fires the evidenceAccuracy hard cap and caps the total at 70. Replace it with a conditional observation about the headline-product alignment, hedged appropriately. Second, rewrite the third H3 block so the finding comes first (Agorapulse replaced identity/sentiment headings with scale and outcome language), followed by the quoted evidence, then the buyer inference. Split this block into two paragraphs to stay under 60 words each. Revise the ## heading to include a searchable term such as 'messaging' or 'homepage positioning'. The founder test is strong — keep it. The closing sentence of H3 block 3 ('You cannot credibly claim ROI...') reads like a generic SaaS maxim; replace it with a specific implication anchored to the Agorapulse evidence, such as noting that the full-page alignment of ROI language — from H1 to section headings — suggests a coordinated repositioning rather than a single headline experiment.",
+  "dimensionScores": {
+    "evidenceAccuracy": 12,
+    "specificity": 12,
+    "plainLanguage": 17,
+    "scannability": 9,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

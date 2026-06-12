@@ -1,0 +1,10 @@
+{
+  "name": "Agorapulse",
+  "slug": "agorapulse",
+  "url": "https://www.agorapulse.com",
+  "from": "2019-01",
+  "to": "2026-06",
+  "stepMonths": 3,
+  "createdAt": "2026-06-12T19:06:08.899Z",
+  "phase": 1
+}

@@ -1,0 +1,39 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "Minor causal overreach in H3-1: 'that consistency suggests the shift followed product capability rather than leading it' — this is an inference not traceable to the evidence, which only confirms messaging changes, not product development sequence.",
+    "H3-2 introduces a Hormozi citation mid-section which is permitted by the citation context, but the connection is asserted rather than explained — the sentence 'that principle may apply here' is hedged but still slightly abstract.",
+    "H3-3 closing paragraph is the longest in the section and edges toward 60 words — approximately 58 words, just within limit but dense.",
+    "The ## section heading is strong on searchability but slightly long; no hard penalty applies.",
+    "No forbidden jargon terms appear even once — clean pass.",
+    "Word count is approximately 430 words — this exceeds the 380-word cap flagged in the evaluation criteria."
+  ],
+  "requiredFixes": [
+    "WORD COUNT: The section is approximately 430 words, exceeding the 380-word maximum. Trim each H3 block by 15–20 words. The easiest cuts are the bridge sentences in H3-1 ('That consistency suggests...') and the Hormozi connector sentence in H3-2, which can be compressed.",
+    "EVIDENCE ACCURACY — H3-1: Remove or hedge the inference that 'the shift followed product capability rather than leading it.' The evidence shows messaging changes only; the product development sequence is not in the evidence. Replace with a conditional: 'If your product cannot yet surface a specific ROI metric inside the trial, outcome language in the headline may cost credibility...' (the conditional already exists — just delete the unsupported causation sentence above it).",
+    "SCANNABILITY — H3-1 analytical paragraph: The paragraph beginning 'That consistency suggests...' contains two distinct ideas (1: the shift was product-led, 2: risk of misaligned outcome language). Split into two sentences or fold the second idea into the runnable test to stay within the two-idea limit."
+  ],
+  "riskFlags": [
+    "'That consistency suggests the shift followed product capability rather than leading it' — product development sequence is not in the evidence. This is an invented causation claim and risks the evidenceAccuracy cap.",
+    "'may cost credibility with exactly the buyer it is trying to reach' — hedged with 'may', which is acceptable, but the claim has no data support. Keep the hedge; do not strengthen this language in revision.",
+    "Hormozi citation: the connection between '$100M Offers' offer-reduction principle and Agorapulse's CTA removal is inferential. The hedge 'may apply here — but only if' is appropriate and keeps this within bounds."
+  ],
+  "seoNotes": [
+    "## heading contains 'Agorapulse', 'homepage', and the specific phrase 'Simple & Affordable' — this is a strong long-tail searchable heading that mirrors the kind of query a researcher might type.",
+    "H3 headings are descriptive and contain named evidence elements ('G2', 'TrustRadius', 'GetApp', 'Simple & Affordable') — these will index well for branded comparison searches.",
+    "The section naturally surfaces 'Agorapulse homepage teardown' adjacent language through its anchored examples, supporting the primary keyword without keyword stuffing.",
+    "Including 'Social Media Management Software | Agorapulse' verbatim in the body text creates a secondary keyword anchor for title-tag SEO research queries."
+  ],
+  "rewriteInstruction": "The section passes but needs three targeted fixes before publishing. First, cut approximately 50 words to bring the total under 380 — prioritise trimming the causation sentence in H3-1 ('That consistency suggests the shift followed product capability rather than leading it') which is both unsupported and the easiest cut. Second, once that sentence is removed, the remaining conditional ('If your product cannot surface a specific ROI metric...') stands alone and is stronger for it. Third, check H3-1's second analytical paragraph — it carries two simultaneous ideas (product-led inference + credibility risk) which violates the two-idea-per-paragraph rule; after deleting the causation sentence, confirm the paragraph now tracks a single idea. No jargon fixes needed. No bold-quote fixes needed — all verbatim quotes are correctly formatted. The Hormozi citation is valid and well-hedged; leave it. The runnable tests in all three H3 blocks are specific and founder-friendly — do not genericise them.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 14,
+    "plainLanguage": 19,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,39 @@
+{
+  "publishedAt": "2026-06-12T20:15:12.192Z",
+  "slug": "buffer",
+  "dryRun": false,
+  "forced": true,
+  "qualityGates": {
+    "finalJudgePass": false,
+    "finalJudgeScore": 81,
+    "seoPass": true,
+    "seoScore": 87,
+    "unsupportedClaims": [
+      "'visual sophistication score sat at 2 out of 5' — the evidence records this as a raw integer score (2) without a '/5' denominator label; the article upgrades this to a scored scale not explicitly stated as '/5' in the evidence",
+      "'visual sophistication score reached 3 out of 5' — same issue; the evidence gives integer values without a confirmed '/5' label",
+      "'visual sophistication score of 4 out of 5' — same issue",
+      "'Grow your audience on social and beyond' — this H2 phrase does not appear in the h2Added list in the evidence",
+      "'Build a following without draining your time' — this H2 phrase does not appear in the h2Added list in the evidence",
+      "'Pricing' listed as a removed navigation item — the evidence lists specific removed nav items and 'Pricing' is not among them"
+    ]
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [
+    "Final judge FAIL — score 81/100 (need ≥ 90)",
+    "6 unsupported claim(s): 'visual sophistication score sat at 2 out of 5' — the evidence records this as a raw integer score (2) without a '/5' denominator label; the article upgrades this to a scored scale not explicitly stated as '/5' in the evidence; 'visual sophistication score reached 3 out of 5' — same issue; the evidence gives integer values without a confirmed '/5' label"
+  ],
+  "articlePath": "src/content/cro-teardown/articles/buffer.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/cro-teardowns/linear",
+    "/cro-teardowns/lemlist",
+    "/cro-teardowns/intercom"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

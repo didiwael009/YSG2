@@ -1,0 +1,3 @@
+# Agorapulse Homepage Teardown: From "Simplified" to "ROI" (2019–2026)
+
+Agorapulse deleted its founding promise from its homepage — and replaced it with the language of the person holding the budget. The headline shifted from **"Social Media Management Simplified"** to **"Drive Real Impact on Social Media. From Engagement to ROI."** The page title dropped **"Simple & Affordable"** entirely. Both changes point to the same move: the homepage stopped talking to the social media manager doing the work and started talking to the stakeholder who has to justify the spend. By the end of this teardown, you will know exactly when that trade-off makes sense — and when copying it will cost you.
