@@ -1,23 +1,17 @@
-# AGENTS.md
-
-## Role
-
-You are working as a senior full-stack developer on this project.
-
-Your job is to make small, safe, production-ready changes.
 # PROJECT_CONTEXT.md
+
+> **Start here:** Read `HANDOFF.md` first. It contains the full chronology, known issues, and owner contact. This file covers only the tech stack and folder structure.
+
+---
 
 ## Project
 
-Your SaaS Growth marketing website.
-
-This is Wael Aouididi's SaaS GTM / growth portfolio website for positioning, landing pages, cold email, SEO, Meta ads, case studies, blog content, and booking.
+Wael Aouididi's SaaS GTM / growth portfolio website.
+Covers: positioning, landing pages, cold email, SEO, Meta ads, case studies, blog content, and booking.
 
 ## Current folder structure
 
-The real app is inside:
-
-`gtmwael-main 2/`
+The real app is inside `gtmwael-main 2/`.
 
 The outer repository root contains a Vercel config that points into this folder.
 
@@ -37,7 +31,7 @@ Do not rename `gtmwael-main 2` unless deployment config is updated at the same t
 
 ## Package manager rule
 
-Use npm only.
+Use **npm only**.
 
 Do not use Bun for this project unless explicitly requested.
 
@@ -45,112 +39,24 @@ Do not edit `bun.lock` or `bun.lockb` unless the package manager strategy is cha
 
 ## Important commands
 
-Install dependencies:
-
 ```sh
+# Install dependencies
 npm install
-Do not rewrite the whole project unless explicitly requested.
 
-## First thing to do
+# Dev server
+npm run dev
 
-Before coding, always read:
+# Build
+npm run build
 
-1. PROJECT_CONTEXT.md
-2. TASKS.md
-3. The files directly related to the current task
-
-Do not scan the whole codebase unless necessary.
-
-## Main behavior
-
-- Make the smallest working change.
-- Preserve the existing architecture.
-- Preserve existing routes unless asked.
-- Reuse existing components before creating new ones.
-- Do not refactor unrelated files.
-- Do not rename files, folders, routes, or components unless required.
-- Do not install dependencies unless absolutely necessary.
-- If a dependency is needed, explain why before installing it.
-
-## Token and time control
-
-- Do not summarize the whole project.
-- Do not paste full files unless requested.
-- Do not explain basic concepts.
-- Do not keep polishing after the task is done.
-- Do not add extra features.
-- Stop when the requested task works.
-
-## Workflow
-
-For every task:
-
-1. Read PROJECT_CONTEXT.md and TASKS.md.
-2. Inspect only the relevant files.
-3. Give a short plan before editing.
-4. Make the smallest possible change.
-5. Run the relevant check: build, lint, or test.
-6. Fix only errors caused by your changes.
-7. Summarize the result.
-
-## Final response format
-
-At the end of every task, respond with:
-
-### Changed
-Short explanation of what changed.
-
-### Files
-List the files edited.
-
-### Test
-Explain how to test it.
-
-### Risks
-Mention any limitation or possible issue.
-
-### Next recommended task
-Suggest only one logical next step.
+# CRO teardown pipeline — see HANDOFF.md for full CLI reference
+npm run cro-teardown -- --name <Company> --url <url> --from YYYY-MM --to YYYY-MM
+npm run cro-teardown:select -- --slug <slug>
+npm run cro-teardown:generate-data -- --name <Company> --slug <slug>
+npm run cro-teardown:compose -- --slug <slug> [--force]
+npm run cro-teardown:publish -- --slug <slug> [--force]
+```
 
 ## SEO rules
 
 SEO standards are documented in `SEO_RULES.md`. Read it before editing SEO-critical pages, route metadata, blog posts, service pages, case studies, sitemap, robots.txt, structured data, or prerender scripts.
-
-For public marketing pages:
-
-- Avoid JS-only content.
-- Real text content should exist in page source.
-- Each important page should have one H1.
-- Use clear H2/H3 structure.
-- Add meta title and meta description.
-- Add canonical URL where relevant.
-- Add Open Graph and Twitter tags where relevant.
-- Add internal links.
-- Add JSON-LD when useful.
-- Keep sitemap and robots.txt aligned with public pages.
-
-## Design rules
-
-- Avoid generic AI-looking SaaS design.
-- Use clean hierarchy, white space, premium spacing, and strong visual rhythm.
-- Do not create dense text blocks.
-- Preserve the existing visual direction unless asked to redesign.
-- Do not redesign the whole site when only one section is requested.
-
-## Copy rules
-
-- Use direct, operator-style copy.
-- Avoid vague marketing fluff.
-- Prioritize problem, proof, mechanism, and CTA.
-- Make copy specific and conversion-focused.
-
-## Do not touch unless asked
-
-- Global architecture
-- Package manager setup
-- Authentication
-- Database schema
-- Routes
-- Global CSS
-- Design system
-- Deployment configuration

@@ -10,15 +10,18 @@ Do not rewrite the whole project unless explicitly requested.
 
 ## First thing to do
 
-Before coding, always read:
+Before coding, always read **in this order**:
 
-1. PROJECT_CONTEXT.md
-2. TASKS.md
-3. The files directly related to the current task
+1. **HANDOFF.md** — full project context, chronology, known issues, and owner contact. This is the source of truth for what has been built and why. Read it every session without exception.
+2. PROJECT_CONTEXT.md
+3. TASKS.md
+4. The files directly related to the current task
 
 If the task touches SEO, routing, blog, case studies, service pages, public pages, metadata, sitemap, robots.txt, canonical URLs, structured data, or prerendering, also read `SEO_RULES.md` before editing.
 
 Do not scan the whole codebase unless necessary.
+
+**After completing any task:** add an entry to the Chronology section of HANDOFF.md before closing the session. If you discover missing context, add it there too.
 
 ## Main behavior
 
