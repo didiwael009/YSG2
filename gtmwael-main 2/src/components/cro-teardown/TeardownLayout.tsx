@@ -76,9 +76,9 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
               {/* Main content */}
               <div className="min-w-0 space-y-16">
 
-                {/* 1. Summary cards */}
+                {/* 1. Summary cards — prefer marketing signal cards when available */}
                 <section id="summary" className="scroll-mt-28">
-                  <SummaryCards cards={post.summaryCards} />
+                  <SummaryCards cards={post.marketingSummaryCards ?? post.summaryCards} />
                 </section>
 
                 {/* 2. Visual timeline */}

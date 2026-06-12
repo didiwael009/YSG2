@@ -1,0 +1,7 @@
+## How Webflow chose enterprise infrastructure over viral showcase
+
+Webflow raised over $330 million between 2021 and 2022, reaching a $4 billion valuation and approximately $100 million ARR. That funding required proving enterprise revenue growth — which the company did, reportedly scaling enterprise revenue from $1 million to $8 million in 2021 alone. The homepage shift from **"Break the code barrier"** to **"Make your website a growth engine"** is consistent with this upmarket move.
+
+The 2024 Intellimize acquisition signals a deliberate repositioning from design tool to what Webflow called a "Website Experience Platform." The new meta description — **"Design, build, optimize, and rank in AI search — all in Webflow"** — points to marketing operations as the new buyer, not individual designers. Meanwhile, Framer captured the designer community Webflow originally owned, applying competitive pressure from below.
+
+This pattern maps to the broader no-code market's enterprise migration. Wix launched Studio for agencies, Notion targeted teams over individuals, and Airtable shifted from product enthusiasts to business operations. For SaaS companies in maturing categories, viral mechanics that built the brand often conflict with the revenue concentration enterprise buyers require.

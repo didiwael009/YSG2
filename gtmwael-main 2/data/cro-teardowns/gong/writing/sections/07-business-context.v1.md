@@ -1,0 +1,7 @@
+## How Gong's $7.25B valuation forced it to stop teaching and start platforming
+
+Gong spent 2020 and 2021 in hypergrowth: Series D at $2.2 billion in September 2020, then Series E at $7.25 billion just nine months later. The company crossed 2,000 customers including three Fortune 20 accounts. That velocity suggests the revenue intelligence category Gong created had reached maturity — buyers already knew what conversation intelligence meant.
+
+The homepage shift from **"REVENUE INTELLIGENCE"** to **"Revenue AI OS"** is consistent with investor pressure to prove platform economics rather than point-solution adoption. When your valuation jumps from $2.2B to $7.25B in under a year, you must show you can capture enterprise-wide budgets, not just departmental sales tools. The meta description change — from **"better sales conversations"** to **"multimodal revenue signal processing, specialized AI agents"** — points to a repositioning from explaining a category to owning infrastructure.
+
+Gong's shift mirrors what happened across SaaS: category leaders like Clari, Salesloft, and ZoomInfo consolidated through M&A while generative AI reshaped buyer expectations. Companies that won their category early now compete on platform breadth. For revenue AI vendors, this means the homepage can no longer assume the visitor needs education — it must filter for buyers ready to evaluate enterprise operating systems.

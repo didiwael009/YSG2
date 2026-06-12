@@ -1,0 +1,50 @@
+{
+  "company_stage_start": "growth",
+  "company_stage_end": "scale",
+  "key_events": [
+    {
+      "period": "2021-Q1",
+      "type": "funding",
+      "summary": "Webflow publicly announced a $140M Series B round led by Accel and Silversmith Capital Partners, reportedly valuing the company at $2.1 billion and making it a unicorn. According to public sources, stated motivation was to accelerate international expansion and enhance platform capabilities, and enterprise revenue reportedly grew 8x that year from $1M to $8M."
+    },
+    {
+      "period": "2022-Q1",
+      "type": "funding",
+      "summary": "Webflow publicly announced a $120M Series C at a $4B valuation led by Y Combinator Continuity, bringing total funding to over $330M and reaching approximately $100M ARR. According to the press release, the company explicitly stated intent to expand further into enterprise while also investing $10M in a community grant program."
+    },
+    {
+      "period": "2023-Q4",
+      "type": "rebrand",
+      "summary": "Webflow reportedly unveiled a major visual identity refresh at Webflow Conf 2023, introducing a new logo symbolizing the building blocks of the web (HTML, CSS, JavaScript), a custom typeface (WF Sans), and updated brand guidelines. According to public sources, this rebrand coincided with new product launches including localization, improved collaboration tools, and an expanded app marketplace — signaling a broader positioning shift toward enterprise and marketing teams."
+    },
+    {
+      "period": "2024-Q2",
+      "type": "product-launch",
+      "summary": "Webflow publicly announced the acquisition of Intellimize, an AI-driven website personalization and conversion rate optimization platform, reportedly for an eight-figure sum. According to TechCrunch and Webflow's own blog, this marked Webflow's first-ever acquisition and was framed as a pivotal step toward becoming the world's first 'Website Experience Platform (WXP),' explicitly expanding the ICP beyond designers to include marketing and growth leaders."
+    },
+    {
+      "period": "2024-Q3",
+      "type": "other",
+      "summary": "Webflow reportedly laid off approximately 8% of its workforce in July 2024, according to public sources, citing a strategic shift in priorities toward AI-first product development. The restructuring reportedly redirected resources toward its AI Site Builder, AI code generation tools, and personalization integrations."
+    },
+    {
+      "period": "2025-Q3",
+      "type": "product-launch",
+      "summary": "At Webflow Conference 2025, the company publicly announced a series of AI-first product updates including an AI Assistant for layout generation, AI-powered code generation for React components, and AI-powered SEO features, reportedly solidifying its self-described positioning as an 'AI-first, enterprise-ready ecosystem.' A strategic infrastructure partnership with Cloudflare was also announced."
+    }
+  ],
+  "category_context": "The no-code/low-code website builder market underwent significant maturation and competitive expansion from 2020 to 2026, with the global low-code/no-code market reportedly projected to grow from $28B in 2024 to $35B+ in 2025, according to public analyst estimates. Competitors intensified pressure on Webflow from multiple directions: Wix launched Editor X (later rebranded Wix Studio) in 2020 targeting design agencies, Framer emerged as a designer-friendly alternative capturing startup and marketing-site use cases, and enterprise DXP incumbents like Adobe Experience Manager continued competing at the high end — while AI-native website generation tools began disrupting the entire category from 2023 onward.",
+  "icp_evolution": "According to public sources, Webflow began the period with a core ICP of freelance web designers, design agencies, and prosumer builders — a self-serve community-driven model. By 2024-2026, the company had reportedly made a deliberate upmarket shift, targeting enterprise marketing teams, CMOs, and growth leaders at mid-market and large companies (evidenced by the Intellimize acquisition, enterprise pricing increases, and the 'Website Experience Platform' repositioning), though public pricing changes reportedly drew concern from the original freelancer and small-business base about platform affordability.",
+  "notable_competitors": [
+    "Framer",
+    "Wix Studio (Editor X)",
+    "WordPress",
+    "Squarespace",
+    "Adobe Experience Manager",
+    "Bubble"
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:09:09.684Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.375627
+}

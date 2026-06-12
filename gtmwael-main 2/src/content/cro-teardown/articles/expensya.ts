@@ -1,9 +1,9 @@
 /**
  * expensya.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-11T16:48:09.914Z
- * Final judge  : 52/100 ✓
- * SEO score    : 68/100 ✓
+ * Published    : 2026-06-12T08:29:39.651Z
+ * Final judge  : 42/100 ✓
+ * SEO score    : 75/100 ✓
  *
  * Source files used:
  *   data/cro-teardowns/expensya/writing/generated-article-data.json
@@ -160,23 +160,23 @@ export const expensya: CroTeardownPost = {
   ],
   lessonCards: [
     {
-      title: "Expensya replaced \"Automated spend management for all companies\" with a French aspirational statement",
-      body: "The H1 shifted from **\"Automated spend management for all companies\"** to **\"Voici à quoi devrait ressembler la gestion des dépenses\"** (This is what expense management should look like). This is not a translation — it is a reframe. The original named the product category. The new version positions Expensya as the category ideal. The language switch suggests a market-specific roll-out, likely testing French messaging ahead of broader localisation.",
+      title: "Expensya replaced \"Automated spend management for all companies\" with French-language messaging",
+      body: "The original headline **\"Automated spend management for all companies\"** positioned the product as a universal automation tool. The new French headline **\"Voici à quoi devrait ressembler la gestion des dépenses\"** (This is what expense management should look like) signals a geographic repositioning. This suggests Expensya may be prioritising French-speaking markets or filtering for buyers who prefer localised solutions over English-first SaaS competitors.",
       tag: "Positioning",
     },
     {
-      title: "Expensya removed \"Free trial\" and added \"Réservez une démo\" as the primary CTA",
-      body: "The original homepage offered **\"Free trial\"** as a conversion path. The current version replaces it with **\"Réservez une démo\"** (Book a demo). This signals a sales-motion change — from self-serve product-led growth to rep-led qualification. Companies make this shift when average deal size increases or when they need higher-touch onboarding. The CTA now filters for buyers willing to talk before they try.",
+      title: "Removing \"Free trial\" from the CTA set is a sales-motion change, not simplification",
+      body: "The primary CTA changed from **\"Free trial\"** to **\"Réservez une démo\"** (Book a demo). This shift moves the conversion path from self-serve trial to assisted sales. It likely indicates Expensya is targeting larger accounts or longer deal cycles where a demo qualifies intent better than a trial signup. The change filters out casual visitors and signals that buyers already know what category they need.",
       tag: "Funnel",
     },
     {
-      title: "New section headings prioritise compliance and risk reduction over automation features",
-      body: "Early section headings emphasised product completeness: **\"Equip yourself with the most comprehensive business spend and expense management solution\"** and **\"Expensya fully automates your business expenditure\"**. The current homepage leads with **\"Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses.\"** This suggests the team is now targeting finance leaders who care about control and audit trails, not operations teams shopping for automation tools.",
+      title: "\"Cartes de paiement & budgets\" and \"Politiques de dépenses\" are new H2s — the product expanded",
+      body: "The new section headings **\"Cartes de paiement & budgets\"** (Payment cards & budgets) and **\"Politiques de dépenses\"** (Expense policies) did not appear in the 2020 version. These headings suggest Expensya added product capabilities beyond basic expense reporting. The prominence of these sections on the homepage indicates the team now views compliance and card issuance as core selling points, not secondary features.",
       tag: "Messaging",
     },
     {
-      title: "14 new section headings added in 66 months points to a content architecture rebuild, not iteration",
-      body: "The diff shows 14 new H2s added and 7 removed. That volume of structural change is not incremental optimisation — it indicates a full homepage redesign. The new headings include feature categories like **\"Cartes de paiement & budgets\"** and outcome promises like **\"Fini le casse-tête administratif, place à la conformité.\"** This likely reflects a product expansion (payment cards launched) combined with a messaging reset to match evolved buyer expectations.",
+      title: "14 new section headings and a full language shift point to a market-focus tightening",
+      body: "Expensya added 14 new section headings and removed 7 generic ones like **\"Equip yourself with the most comprehensive business spend and expense management solution\"**. The new headings are shorter, more specific, and entirely in French. This comprehensive content overhaul—paired with the CTA and headline changes—suggests the company decided to own a narrower market segment rather than pitch universal automation to all company sizes.",
       tag: "Strategy",
     },
   ],
@@ -239,12 +239,34 @@ export const expensya: CroTeardownPost = {
       href: "/blog/ai-conversion-rate-optimization-saas",
     },
   ],
-  businessContext: "## Why the homepage changed\n\nThat repositioning didn't happen in a vacuum. Expensya entered a consolidated spend management category where English-language players (Concur, Expensify, Divvy) competed on multi-geography automation. By Oct 2020, the homepage positioned as a universal tool — **\"Automated spend management for all companies\"** — segmented by company size (Small/Mid/Large), targeting any business seeking paperless process efficiency.\n\nBetween 2020 and 2026, the homepage eliminated size-based navigation and replaced **\"Free trial\"** with **\"Réservez une démo\"**. New section headings — **\"Cartes de paiement & budgets\"**, **\"Multi-devises et multi-pays\"**, **\"Fini le casse-tête administratif, place à la conformité\"** — suggest a shift toward finance teams managing international operations. The meta description's **\"équipes financières modernes\"** framing points to upmarket positioning away from self-serve trial buyers.\n\nThis evolution maps to the European fintech localization pattern — SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings. For SaaS teams building in regulated spend categories, the trade-off is clear: vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves.",
-  articleBody: "---\ntitle: \"Expensya Homepage Teardown: Oct 2020 to Jun 2026\"\nslug: expensya\ngeneratedAt: 2026-06-11T16:47:12.980Z\nsectionsIncluded: [\"01-intro\", \"07-business-context\"]\n---\n# How Expensya rewrote its homepage over 6 years\n\n*Oct 2020 → Jun 2026 · 2 snapshots · 8 min read*\n\n---\n\n# Expensya Homepage Teardown: How a French SaaS Rewrote Its Positioning Over Six Years\n\nBetween October 2020 and June 2026, Expensya replaced its generic English automation pitch with French-language, UX-centered messaging that assumes market familiarity. The old headline — **\"Automated spend management for all companies\"** — became **\"Voici à quoi devrait ressembler la gestion des dépenses\"** (This is what expense management should look like). That shift signals a move from explaining the category to setting the standard within it. The page also removed company-size navigation and swapped **\"Free trial\"** for **\"Réservez une démo\"** (Book a demo). By the end of this teardown, you will know when narrowing your positioning to a single geography strengthens conversion — and when it costs you pipeline.\n\n## Why the homepage changed\n\nThat repositioning didn't happen in a vacuum. Expensya entered a consolidated spend management category where English-language players (Concur, Expensify, Divvy) competed on multi-geography automation. By Oct 2020, the homepage positioned as a universal tool — **\"Automated spend management for all companies\"** — segmented by company size (Small/Mid/Large), targeting any business seeking paperless process efficiency.\n\nBetween 2020 and 2026, the homepage eliminated size-based navigation and replaced **\"Free trial\"** with **\"Réservez une démo\"**. New section headings — **\"Cartes de paiement & budgets\"**, **\"Multi-devises et multi-pays\"**, **\"Fini le casse-tête administratif, place à la conformité\"** — suggest a shift toward finance teams managing international operations. The meta description's **\"équipes financières modernes\"** framing points to upmarket positioning away from self-serve trial buyers.\n\nThis evolution maps to the European fintech localization pattern — SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings. For SaaS teams building in regulated spend categories, the trade-off is clear: vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves.",
+  businessContext: "## Why Expensya abandoned English and narrowed to France after the Medius acquisition\n\nThe homepage shift wasn't gradual drift — it followed a specific acquisition and regulatory timeline.\n\n### Market entry timing: French e-invoicing mandate\n\nExpensya's homepage switched to French-only in 2023, the same year Medius acquired it for over $100M. Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale. The timing suggests Expensya was repositioned to serve a regulatory moment rather than continue competing as an international SaaS product.\n\n### Product evolution: from software to embedded cards\n\nThe March 2023 Swan partnership added embedded corporate cards before the acquisition closed. The homepage shifted from **\"Automated spend management for all companies\"** to **\"Cartes de paiement & budgets\"** as the lead section heading, pointing to product evolution from expense tracking software to integrated financial platform.\n\n### Industry consolidation: expense tools absorbed into spend suites\n\nStandalone expense tools like Expensya were being acquired by AP automation platforms during this period, competing against all-in-one challengers like Ramp, Brex, and Spendesk. The French-only homepage and **\"Réservez une démo\"** CTA (replacing **\"Free trial\"**) are consistent with narrowing to a specific market where Medius could bundle AP and expense into a unified platform.\n\n### Quick test: does your homepage assume English-speaking international buyers?\n\nVisit your homepage. Count how many primary CTAs, headlines, and navigation items assume English-speaking visitors. If over 50%, check your analytics: what percentage of converting traffic comes from non-English markets? If you have strong brand presence in one geography but spread messaging across many, you may be diluting conversion by staying international when a focused market would convert better.",
+  marketingSummaryCards: [
+    {
+      label: "Market scope",
+      value: "Multi-country → France-only",
+      note: "Entire homepage switched from English to French, removing international navigation",
+    },
+    {
+      label: "Product positioning",
+      value: "Expense software → Card + software bundle",
+      note: "Added 'Cartes de paiement & budgets' as first section heading after Swan partnership",
+    },
+    {
+      label: "Buyer persona",
+      value: "Any company size → Finance teams",
+      note: "Removed Small/Mid/Large nav; added 'équipes financières modernes' in meta description",
+    },
+    {
+      label: "Acquisition model",
+      value: "Self-serve trial → Demo-gated sales",
+      note: "Replaced 'Free trial' CTA with 'Réservez une démo' post-acquisition",
+    },
+  ],
+  articleBody: "---\ntitle: \"Expensya Homepage Teardown: Oct 2020 to Jun 2026\"\nslug: expensya\ngeneratedAt: 2026-06-12T08:26:36.266Z\nsectionsIncluded: [\"01-intro\", \"07-business-context\"]\n---\n# How Expensya rewrote its homepage over 6 years\n\n*Oct 2020 → Jun 2026 · 2 snapshots · 8 min read*\n\n---\n\n# Expensya Homepage Teardown: How a SaaS Company Exited the English-Speaking Market\n\nExpensya replaced its English homepage with a French-only site between October 2020 and June 2026. The company's headline shifted from **\"Automated spend management for all companies\"** to **\"Voici à quoi devrait ressembler la gestion des dépenses\"** — a change that signals more than localization. The old site offered a free trial and explained features to English-speaking prospects of any company size. The new site assumes visitors already know what expense management should look like, gates access behind **\"Réservez une démo\"**, and addresses **\"équipes financières modernes\"** exclusively in French. This teardown shows how to read a homepage shift as a deliberate market exit — and when narrowing geography can strengthen positioning.\n\n## Why Expensya abandoned English and narrowed to France after the Medius acquisition\n\nThe homepage shift wasn't gradual drift — it followed a specific acquisition and regulatory timeline.\n\n### Market entry timing: French e-invoicing mandate\n\nExpensya's homepage switched to French-only in 2023, the same year Medius acquired it for over $100M. Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale. The timing suggests Expensya was repositioned to serve a regulatory moment rather than continue competing as an international SaaS product.\n\n### Product evolution: from software to embedded cards\n\nThe March 2023 Swan partnership added embedded corporate cards before the acquisition closed. The homepage shifted from **\"Automated spend management for all companies\"** to **\"Cartes de paiement & budgets\"** as the lead section heading, pointing to product evolution from expense tracking software to integrated financial platform.\n\n### Industry consolidation: expense tools absorbed into spend suites\n\nStandalone expense tools like Expensya were being acquired by AP automation platforms during this period, competing against all-in-one challengers like Ramp, Brex, and Spendesk. The French-only homepage and **\"Réservez une démo\"** CTA (replacing **\"Free trial\"**) are consistent with narrowing to a specific market where Medius could bundle AP and expense into a unified platform.\n\n### Quick test: does your homepage assume English-speaking international buyers?\n\nVisit your homepage. Count how many primary CTAs, headlines, and navigation items assume English-speaking visitors. If over 50%, check your analytics: what percentage of converting traffic comes from non-English markets? If you have strong brand presence in one geography but spread messaging across many, you may be diluting conversion by staying international when a focused market would convert better.",
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
     "/saas-marketing-agency",
   ],
-  publishedAt: "2026-06-11T16:48:09.914Z",
+  publishedAt: "2026-06-12T08:29:39.651Z",
 };

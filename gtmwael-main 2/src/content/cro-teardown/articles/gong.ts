@@ -1,9 +1,9 @@
 /**
  * gong.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-11T17:04:46.986Z
- * Final judge  : 45/100 ✓
- * SEO score    : 71/100 ✓
+ * Published    : 2026-06-12T08:29:39.867Z
+ * Final judge  : 62/100 ✓
+ * SEO score    : 74/100 ✓
  *
  * Source files used:
  *   data/cro-teardowns/gong/writing/generated-article-data.json
@@ -153,24 +153,24 @@ export const gong: CroTeardownPost = {
   ],
   lessonCards: [
     {
-      title: "Gong replaced 'Revenue Intelligence' with 'Revenue AI OS' — that's a category ownership play",
-      body: "The original H1 opened with **\"REVENUE INTELLIGENCE\"** — a product category frame. The current page title now reads **\"Gong - Revenue AI OS\"**. This shift suggests Gong is no longer competing within an established category — it's claiming ownership of a new one. The meta description now positions the platform as serving **\"your entire GTM organization\"**, not just sales teams. This signals a buyer expansion beyond sales leaders.",
-      tag: "Positioning",
+      title: "Gong replaced 'REVENUE INTELLIGENCE' with 'Revenue AI Built To Predict churn' — a use-case-first headline",
+      body: "The original H1 named the product category (**\"REVENUE INTELLIGENCE\"**). The current version leads with a specific outcome: **\"Revenue AI Built To Predict churn\"**. This suggests Gong is targeting buyers who already understand their problem and are evaluating solutions, rather than prospects still learning what revenue intelligence means. The headline now filters for pipeline-stage fit.",
+      tag: "Messaging",
     },
     {
-      title: "The primary hero CTA changed from 'Watch Video' to 'See Gong in action' — filtering passive visitors",
-      body: "The original CTA invited visitors to **\"Watch Video\"** — a low-commitment ask suitable for early-stage browsers. The current hero CTA reads **\"See Gong in action\"**, which suggests a demo or product tour. This likely filters out casual researchers and attracts buyers closer to evaluation. The removal of named testimonial CTAs like **\"Paul Santarelli VP of Sales\"** further suggests the page now prioritizes conversion depth over top-of-funnel volume.",
+      title: "The hero CTA changed from 'Watch Video' to 'See Gong in action' — a demo-intent signal",
+      body: "Gong removed **\"Watch Video\"** and added **\"See Gong in action\"** as the primary above-the-fold CTA. The new phrasing signals a demo or product walkthrough, not passive content consumption. This likely reflects a shift toward buyers who are further along in evaluation — people ready to see the platform, not researchers watching explainer videos.",
       tag: "CRO",
     },
     {
-      title: "'Pitchbook is 10x more efficient with revenue AI' replaces generic feature sections",
-      body: "The original page included section headings like **\"Revenue Intelligence helps you fuel:\"** and **\"So What Does this look like? Glad you asked.\"** — feature-led structure. The current page adds customer-outcome headings like **\"Pitchbook is 10x more efficient with revenue AI\"** and **\"Winning GTM organizations run revenue on Gong\"**. This shift moves proof earlier in the page hierarchy. It signals that Gong now assumes visitors arrive already knowing what revenue intelligence does — they need reassurance, not education.",
+      title: "'Trusted by 5,000+ customers' replaced 'So What Does this look like? Glad you asked.'",
+      body: "The original homepage included a casual, explanatory section heading: **\"So What Does this look like? Glad you asked.\"** The current version leads with **\"Trusted by 5,000+ customers\"** — a proof-of-scale statement. This suggests Gong is leaning into category leadership and social proof, rather than educating first-time visitors about what the product does.",
       tag: "Trust",
     },
     {
-      title: "10 new section headings and 8 navigation items added — this is a funnel redesign, not polish",
-      body: "The page added 10 new section headings and completely replaced 8 navigation items over six years. The meta description no longer mentions **\"sales conversations\"** — it now opens with **\"multimodal revenue signal processing, specialized AI agents\"**. This is not incremental messaging refinement. It suggests Gong's product roadmap expanded significantly, and the homepage evolved to reflect new buyer sophistication. The page now assumes visitors understand AI tooling and need differentiation, not category definition.",
-      tag: "Strategy",
+      title: "Gong's meta description now addresses 'your entire GTM organization' instead of 'sales teams'",
+      body: "The original meta description targeted **\"sales optimization\"** and **\"sales conversations\"**. The current version says Gong **\"helps your entire GTM organization win\"** and references **\"multimodal revenue signal processing, specialized AI agents, and purpose-built applications\"**. This indicates an upmarket expansion — Gong may now be selling into revenue operations or cross-functional buying committees, not just sales leadership.",
+      tag: "Positioning",
     },
   ],
   toc: [
@@ -232,12 +232,34 @@ export const gong: CroTeardownPost = {
       href: "/blog/ai-conversion-rate-optimization-saas",
     },
   ],
-  businessContext: "## Why the homepage changed\n\nThe shifts documented above reflect a deliberate strategic repositioning. Gong entered as a conversation intelligence vendor in a sales tech landscape crowded with point solutions for call recording, coaching, and pipeline visibility. By 2020, **\"Revenue Intelligence\"** was still novel enough to warrant a dedicated navigation item (**\"What is RI?\"**) and a branded podcast. The early homepage served mid-funnel buyers discovering the category.\n\nBy 2026, Gong replaced **\"REVENUE INTELLIGENCE\"** with **\"Revenue AI Built To Predict churn\"** and removed all category education links. The meta description shift from **\"better sales conversations\"** to **\"multimodal revenue signal processing, specialized AI agents\"** suggests the company stopped teaching the category and started positioning as enterprise revenue infrastructure. The page title dropped **\"for Sales Teams\"** entirely.\n\nThis maps to the AI-era platform consolidation pattern: once your category becomes RFP vocabulary, you graduate from educator to OS. For SaaS teams, the lesson is timing—premature infrastructure positioning confuses buyers still Googling **\"[category] + definition.\"** Wait until discovery calls stop asking what your category means.",
-  articleBody: "---\ntitle: \"Gong Homepage Teardown: Jan 2020 to Jun 2026\"\nslug: gong\ngeneratedAt: 2026-06-11T17:03:40.943Z\nsectionsIncluded: [\"01-intro\", \"07-business-context\"]\n---\n# How Gong rewrote its homepage over 6 years\n\n*Jan 2020 → Jun 2026 · 3 snapshots · 8 min read*\n\n---\n\n# Gong Homepage Teardown: How the Company Shifted from Category Education to AI Platform\n\nBetween January 2020 and June 2026, Gong stopped teaching visitors what \"Revenue Intelligence\" means and started positioning itself as an operating system for revenue teams. The original homepage opened with the headline **\"REVENUE INTELLIGENCE\"** and dedicated navigation links to explaining the category (**\"What is RI?\"** and **\"Reveal: The RI Podcast\"**). By 2026, those elements were gone — replaced by **\"Revenue AI Built To Predict churn\"** and navigation focused on products and demos. This article walks through what changed in the headline, meta description, navigation, and section structure — and shows you how to test whether your own homepage is still explaining your category or assuming buyers already know it.\n\n## Why the homepage changed\n\nThe shifts documented above reflect a deliberate strategic repositioning. Gong entered as a conversation intelligence vendor in a sales tech landscape crowded with point solutions for call recording, coaching, and pipeline visibility. By 2020, **\"Revenue Intelligence\"** was still novel enough to warrant a dedicated navigation item (**\"What is RI?\"**) and a branded podcast. The early homepage served mid-funnel buyers discovering the category.\n\nBy 2026, Gong replaced **\"REVENUE INTELLIGENCE\"** with **\"Revenue AI Built To Predict churn\"** and removed all category education links. The meta description shift from **\"better sales conversations\"** to **\"multimodal revenue signal processing, specialized AI agents\"** suggests the company stopped teaching the category and started positioning as enterprise revenue infrastructure. The page title dropped **\"for Sales Teams\"** entirely.\n\nThis maps to the AI-era platform consolidation pattern: once your category becomes RFP vocabulary, you graduate from educator to OS. For SaaS teams, the lesson is timing—premature infrastructure positioning confuses buyers still Googling **\"[category] + definition.\"** Wait until discovery calls stop asking what your category means.",
+  businessContext: "## Why Gong's homepage changed\n\nThe messaging shifts visible on the homepage didn't happen in a vacuum — they tracked Gong's growth milestones.\n\n### Market entry context: Gong crossed 2,000 customers in 9 months\n\nGong raised $200 million at a $2.2 billion valuation in September 2020, then $250 million at $7.25 billion just nine months later. By Q2 2021, the company had crossed 2,000 customers including three Fortune 20 accounts. The removal of **\"What is RI?\"** and **\"Reveal: The RI Podcast\"** from navigation between 2020 and 2026 coincided with this period of rapid customer expansion.\n\n### Product evolution: From conversation intelligence to Revenue AI OS\n\nBetween 2021 and 2024, Gong publicly announced the RightBound acquisition and launched generative AI features including Call Spotlight and Deal Spotlight, according to press releases. The homepage shift from **\"REVENUE INTELLIGENCE\"** to **\"Revenue AI Built To Predict churn\"** and the meta description change from **\"better sales conversations\"** to **\"multimodal revenue signal processing, specialized AI agents\"** is consistent with a company that added platform capabilities beyond single-department tools.\n\n### Industry shift: Category consolidation and AI repositioning\n\nGartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025, the same period when Clari and Salesloft merged. Gong's homepage removed **\"Coaching Recommendations\"** and **\"Deal Visibility\"** from navigation while adding **\"Gong AI\"** and **\"Innovation\"**. Open your homepage navigation in an incognito window. Count how many nav items explain what your category is versus how many assume the visitor already knows. If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one and measuring bounce rate on the pricing page.",
+  marketingSummaryCards: [
+    {
+      label: "Category strategy",
+      value: "Evangelist → Infrastructure owner",
+      note: "Removed 'What is RI?' and all educational nav",
+    },
+    {
+      label: "Target buyer",
+      value: "VP Sales → CRO + GTM Org",
+      note: "Meta description shifted from 'sales optimization' to 'entire GTM organization'",
+    },
+    {
+      label: "Proof mechanism",
+      value: "Practitioner names → Case study CTAs",
+      note: "Removed individual VP testimonials; added quantified efficiency claims",
+    },
+    {
+      label: "Technical framing",
+      value: "Category term → Architecture stack",
+      note: "From 'Revenue Intelligence' to 'Revenue AI OS' with agent/signal terminology",
+    },
+  ],
+  articleBody: "---\ntitle: \"Gong Homepage Teardown: Jan 2020 to Jun 2026\"\nslug: gong\ngeneratedAt: 2026-06-12T08:27:08.368Z\nsectionsIncluded: [\"01-intro\", \"07-business-context\"]\n---\n# How Gong rewrote its homepage over 6 years\n\n*Jan 2020 → Jun 2026 · 3 snapshots · 8 min read*\n\n---\n\n# Gong Homepage Teardown: How the Revenue Intelligence Leader Abandoned Its Own Category\n\nGong's homepage between January 2020 and June 2026 tells the story of a company that stopped explaining what it does and started assuming you already know. The original H1 — **\"REVENUE INTELLIGENCE\"** — named the category Gong invented. The current H1 — **\"Revenue AI Built To Predict churn\"** — assumes the category is settled and leads with a specific capability instead. The navigation shift is even sharper: Gong removed **\"What is RI?\"** and **\"Reveal: The RI Podcast\"**, the two primary tools it used to teach the market what Revenue Intelligence meant. What replaced them? Infrastructure language: **\"Revenue AI OS\"**, **\"multimodal revenue signal processing\"**, and **\"specialized AI agents\"**. After reading this teardown, you will know how to test whether your own homepage is still teaching a category your buyers already understand — and what to replace the explanation with if they do.\n\n## Why Gong's homepage changed\n\nThe messaging shifts visible on the homepage didn't happen in a vacuum — they tracked Gong's growth milestones.\n\n### Market entry context: Gong crossed 2,000 customers in 9 months\n\nGong raised $200 million at a $2.2 billion valuation in September 2020, then $250 million at $7.25 billion just nine months later. By Q2 2021, the company had crossed 2,000 customers including three Fortune 20 accounts. The removal of **\"What is RI?\"** and **\"Reveal: The RI Podcast\"** from navigation between 2020 and 2026 coincided with this period of rapid customer expansion.\n\n### Product evolution: From conversation intelligence to Revenue AI OS\n\nBetween 2021 and 2024, Gong publicly announced the RightBound acquisition and launched generative AI features including Call Spotlight and Deal Spotlight, according to press releases. The homepage shift from **\"REVENUE INTELLIGENCE\"** to **\"Revenue AI Built To Predict churn\"** and the meta description change from **\"better sales conversations\"** to **\"multimodal revenue signal processing, specialized AI agents\"** is consistent with a company that added platform capabilities beyond single-department tools.\n\n### Industry shift: Category consolidation and AI repositioning\n\nGartner published its first Magic Quadrant for Revenue Action Orchestration in December 2025, the same period when Clari and Salesloft merged. Gong's homepage removed **\"Coaching Recommendations\"** and **\"Deal Visibility\"** from navigation while adding **\"Gong AI\"** and **\"Innovation\"**. Open your homepage navigation in an incognito window. Count how many nav items explain what your category is versus how many assume the visitor already knows. If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one and measuring bounce rate on the pricing page.",
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
     "/saas-marketing-agency",
   ],
-  publishedAt: "2026-06-11T17:04:46.986Z",
+  publishedAt: "2026-06-12T08:29:39.867Z",
 };

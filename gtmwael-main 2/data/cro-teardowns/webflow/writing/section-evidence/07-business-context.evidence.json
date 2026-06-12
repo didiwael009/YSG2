@@ -1,0 +1,169 @@
+{
+  "sectionId": "07-business-context",
+  "companyName": "Webflow",
+  "companyUrl": "https://webflow.com/",
+  "articleTitle": "Webflow Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Webflow rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 5,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Webflow homepage teardown",
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Break the code barrier",
+      "after": "Make your website a growth engine",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
+      "after": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Responsive web design tool, CMS, and hosting platform | Webflow",
+      "after": "Webflow: The agentic web platform for modern businesses"
+    }
+  ],
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 3 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Webflow repositioned from a no-code website builder tool for designers and freelancers into an enterprise marketing platform for brand growth teams by replacing 'Break the code barrier' with 'Make your website a growth engine' and introducing 'agentic' AI infrastructure messaging while removing showcase CTAs that served bottom-of-funnel individual practitioners.",
+    "old_positioning_frame": "A design tool that removes technical barriers — build responsive websites without writing code, suitable for freelancers and small teams who want professional results without developers",
+    "new_positioning_frame": "A strategic marketing platform infrastructure that drives business outcomes — enterprise-grade web operations for brands treating their website as a growth channel, with AI-era search optimization built in",
+    "buyer_shift": "Individual designers, freelancers, and small agency practitioners evaluating visual web development tools → Marketing leaders and web operations decision-makers at established brands (300k+ teams) evaluating platform consolidation and growth infrastructure",
+    "funnel_shift": "Bottom-of-funnel conversion for tool-seekers ready to start building (free trial emphasis, community showcase) → Top-of-funnel awareness for strategic buyers exploring whether web infrastructure is a growth lever (sales-led, outcome-focused)",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Break the code barrier",
+        "new": "Make your website a growth engine",
+        "meaning": "Suggests a fundamental repositioning from solving a capability problem (designers can't code) to claiming a strategic outcome (websites drive business growth), signaling a move from tool positioning to business platform positioning"
+      },
+      {
+        "element": "Page title",
+        "old": "Responsive web design tool, CMS, and hosting platform | Webflow",
+        "new": "Webflow: The agentic web platform for modern businesses",
+        "meaning": "The introduction of 'agentic' and replacement of 'tool' with 'platform for modern businesses' points to AI-era enterprise positioning, moving from describing features to claiming category ownership in autonomous web systems"
+      },
+      {
+        "element": "Meta description",
+        "old": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
+        "new": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+        "meaning": "The shift from build-and-launch workflow to end-to-end growth stack ('optimize, and rank in AI search', 'AEO') signals repositioning toward marketing operations teams concerned with search visibility and performance outcomes, not just site creation"
+      },
+      {
+        "element": "Section headings",
+        "old": "Who uses Webflow | Get up and running fast | Free until you're ready to launch",
+        "new": "300,000+ brands move the needle with Webflow | From idea to impact, faster | Everything marketing teams love about webflow | Make your website your competitive edge",
+        "meaning": "The replacement of onboarding speed messaging with business outcome language ('move the needle', 'competitive edge') and explicit 'marketing teams' targeting is consistent with a shift from practitioner education to executive/team lead persuasion"
+      },
+      {
+        "element": "Primary CTAs",
+        "old": "Get started — it's free | Showcase See the best sites #MadeInWebflow. | Dell prototypes faster and more effectively. | Heco builds world-class sites for clients.",
+        "new": "Contact Sales | Start for free | Explore AEO | View full schema | Start building",
+        "meaning": "The addition of 'Contact Sales' as primary CTA alongside technical infrastructure CTAs ('Explore AEO', 'View full schema') suggests a dual-track strategy targeting enterprise buyers requiring sales conversations, while the removal of community showcase CTAs may indicate deprioritization of bottom-up viral growth through individual practitioners"
+      },
+      {
+        "element": "Strategic navigation",
+        "old": "(none)",
+        "new": "Design · Edit content · Interactions · Collaboration · Page building · CMS · Hosting · Localization",
+        "meaning": "The introduction of capability-based navigation with enterprise collaboration and infrastructure features (Collaboration, Localization, Hosting) points to messaging for teams evaluating platform completeness rather than designers exploring creative tools"
+      }
+    ],
+    "copy_this_if": "Your product has demonstrable enterprise adoption (thousands of paying teams) and you can credibly claim AI-era infrastructure advantages that larger buyers care about — not just feature parity with legacy tools",
+    "do_not_copy_this_if": "Your brand is still primarily discovered through practitioner communities, or your pricing/product is not actually enterprise-ready — alienating your current buyer base without winning new enterprise buyers creates a positioning vacuum",
+    "safer_version_for_early_stage_saas": "Keep practitioner-focused H1 but add a secondary headline specifically calling out team/growth outcomes, test a dual CTA (free start + sales contact) on the same page, and add one section showing brands using your product for business outcomes — measure whether enterprise segment engagement increases without losing individual conversions",
+    "risk_if_copied": "Practitioners who drive bottom-up adoption and viral awareness abandon your product because outcome-focused messaging doesn't address their immediate job-to-be-done, while enterprise buyers ignore you because you lack the case studies, compliance certifications, and integration ecosystem the new positioning implies",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T08:07:59.057Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.024348
+  },
+  "business-context-research": {
+    "company_stage_start": "growth",
+    "company_stage_end": "scale",
+    "key_events": [
+      {
+        "period": "2021-Q1",
+        "type": "funding",
+        "summary": "Webflow publicly announced a $140M Series B round led by Accel and Silversmith Capital Partners, reportedly valuing the company at $2.1 billion and making it a unicorn. According to public sources, stated motivation was to accelerate international expansion and enhance platform capabilities, and enterprise revenue reportedly grew 8x that year from $1M to $8M."
+      },
+      {
+        "period": "2022-Q1",
+        "type": "funding",
+        "summary": "Webflow publicly announced a $120M Series C at a $4B valuation led by Y Combinator Continuity, bringing total funding to over $330M and reaching approximately $100M ARR. According to the press release, the company explicitly stated intent to expand further into enterprise while also investing $10M in a community grant program."
+      },
+      {
+        "period": "2023-Q4",
+        "type": "rebrand",
+        "summary": "Webflow reportedly unveiled a major visual identity refresh at Webflow Conf 2023, introducing a new logo symbolizing the building blocks of the web (HTML, CSS, JavaScript), a custom typeface (WF Sans), and updated brand guidelines. According to public sources, this rebrand coincided with new product launches including localization, improved collaboration tools, and an expanded app marketplace — signaling a broader positioning shift toward enterprise and marketing teams."
+      },
+      {
+        "period": "2024-Q2",
+        "type": "product-launch",
+        "summary": "Webflow publicly announced the acquisition of Intellimize, an AI-driven website personalization and conversion rate optimization platform, reportedly for an eight-figure sum. According to TechCrunch and Webflow's own blog, this marked Webflow's first-ever acquisition and was framed as a pivotal step toward becoming the world's first 'Website Experience Platform (WXP),' explicitly expanding the ICP beyond designers to include marketing and growth leaders."
+      },
+      {
+        "period": "2024-Q3",
+        "type": "other",
+        "summary": "Webflow reportedly laid off approximately 8% of its workforce in July 2024, according to public sources, citing a strategic shift in priorities toward AI-first product development. The restructuring reportedly redirected resources toward its AI Site Builder, AI code generation tools, and personalization integrations."
+      },
+      {
+        "period": "2025-Q3",
+        "type": "product-launch",
+        "summary": "At Webflow Conference 2025, the company publicly announced a series of AI-first product updates including an AI Assistant for layout generation, AI-powered code generation for React components, and AI-powered SEO features, reportedly solidifying its self-described positioning as an 'AI-first, enterprise-ready ecosystem.' A strategic infrastructure partnership with Cloudflare was also announced."
+      }
+    ],
+    "category_context": "The no-code/low-code website builder market underwent significant maturation and competitive expansion from 2020 to 2026, with the global low-code/no-code market reportedly projected to grow from $28B in 2024 to $35B+ in 2025, according to public analyst estimates. Competitors intensified pressure on Webflow from multiple directions: Wix launched Editor X (later rebranded Wix Studio) in 2020 targeting design agencies, Framer emerged as a designer-friendly alternative capturing startup and marketing-site use cases, and enterprise DXP incumbents like Adobe Experience Manager continued competing at the high end — while AI-native website generation tools began disrupting the entire category from 2023 onward.",
+    "icp_evolution": "According to public sources, Webflow began the period with a core ICP of freelance web designers, design agencies, and prosumer builders — a self-serve community-driven model. By 2024-2026, the company had reportedly made a deliberate upmarket shift, targeting enterprise marketing teams, CMOs, and growth leaders at mid-market and large companies (evidenced by the Intellimize acquisition, enterprise pricing increases, and the 'Website Experience Platform' repositioning), though public pricing changes reportedly drew concern from the original freelancer and small-business base about platform affordability.",
+    "notable_competitors": [
+      "Framer",
+      "Wix Studio (Editor X)",
+      "WordPress",
+      "Squarespace",
+      "Adobe Experience Manager",
+      "Bubble"
+    ],
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T08:09:09.684Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.375627
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "Section exceeds 200-word target at approximately 225 words (120–200 required)",
+    "H3 heading 'Product evolution: from software to embedded cards' lacks company name and is not immediately searchable",
+    "H3 heading 'Industry consolidation: expense tools absorbed into spend suites' is fully generic and lacks company name",
+    "Paragraph 1 (Market entry) is approximately 62 words — exceeds 60-word cap",
+    "Paragraph 2 (Product evolution) is approximately 58 words — acceptable but close to limit",
+    "Paragraph 3 (Industry consolidation) is approximately 68 words — exceeds 60-word cap by 8 words",
+    "Final H3 block (Quick test) is approximately 68 words — exceeds 60-word cap by 8 words",
+    "Paragraph 3 opens with generic industry observation rather than Expensya-specific finding — could appear in any teardown",
+    "The takeaway test is buried in the middle of the final paragraph rather than stated upfront in the first two sentences",
+    "Causal claim without condition: 'The timing suggests Expensya was repositioned to serve a regulatory moment' — no 'if' qualifier",
+    "Minor: second sentence of paragraph 1 contains abstract causal reasoning without immediate grounding"
+  ],
+  "requiredFixes": [
+    "Cut section to 200 words maximum — remove or compress generic industry context in paragraph 3",
+    "Rewrite H3 'Product evolution' to include 'Expensya' — e.g., 'Expensya product evolution: software to embedded cards'",
+    "Rewrite H3 'Industry consolidation' to anchor to Expensya specifically — e.g., 'Expensya acquisition context: consolidation pressure'",
+    "Trim paragraph 1 to 60 words or split it — current 62 words",
+    "Trim paragraph 3 to 60 words — current 68 words; remove generic market commentary",
+    "Trim final test block to 60 words — current 68 words",
+    "Rewrite paragraph 3 opening to lead with Expensya-specific finding, not generic industry trend",
+    "Move the test instruction to the first sentence of the final H3 block: 'Visit your homepage and count...' should open the paragraph",
+    "Add condition to causal claim in paragraph 1: 'The timing suggests Expensya *may have been* repositioned to serve a regulatory moment *if that mandate drove the acquisition decision*'"
+  ],
+  "riskFlags": [
+    "Causal claim: 'The timing suggests Expensya was repositioned to serve a regulatory moment' — no condition attached, implies causation from correlation",
+    "Generic industry paragraph could appear in any expense-tool teardown — not anchored to Expensya's specific evidence beyond the final sentence"
+  ],
+  "seoNotes": [
+    "Main ## heading contains 'Expensya' twice — good for search",
+    "H3 subheadings 2 and 3 lack company name — reduces internal keyword density",
+    "Section ID and heading both signal 'business context' — clear topical targeting"
+  ],
+  "rewriteInstruction": "Cut the section to 200 words by compressing paragraph 3 (industry consolidation) to its Expensya-specific elements only — remove the generic 'Standalone expense tools were being acquired' opener and lead instead with the Medius positioning move. Rewrite all three H3 subheadings to include 'Expensya' for searchability. Move the test instruction to the opening sentence of the final H3 block so the takeaway is immediate. Trim paragraphs 1, 3, and the test block to 60 words each. Add a condition to the causal claim in paragraph 1: replace 'suggests Expensya was repositioned' with 'suggests Expensya may have been repositioned *if the mandate drove the acquisition*'. Anchor paragraph 3 to Expensya's specific positioning choice (French-only homepage, demo CTA) before mentioning the broader industry trend.",
+  "dimensionScores": {
+    "evidenceAccuracy": 18,
+    "specificity": 12,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 4,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

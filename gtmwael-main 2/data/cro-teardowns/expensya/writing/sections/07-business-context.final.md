@@ -1,7 +1,19 @@
-## Why the homepage changed
+## Why Expensya abandoned English and narrowed to France after the Medius acquisition
 
-That repositioning didn't happen in a vacuum. Expensya entered a consolidated spend management category where English-language players (Concur, Expensify, Divvy) competed on multi-geography automation. By Oct 2020, the homepage positioned as a universal tool — **"Automated spend management for all companies"** — segmented by company size (Small/Mid/Large), targeting any business seeking paperless process efficiency.
+The homepage shift wasn't gradual drift — it followed a specific acquisition and regulatory timeline.
 
-Between 2020 and 2026, the homepage eliminated size-based navigation and replaced **"Free trial"** with **"Réservez une démo"**. New section headings — **"Cartes de paiement & budgets"**, **"Multi-devises et multi-pays"**, **"Fini le casse-tête administratif, place à la conformité"** — suggest a shift toward finance teams managing international operations. The meta description's **"équipes financières modernes"** framing points to upmarket positioning away from self-serve trial buyers.
+### Market entry timing: French e-invoicing mandate
 
-This evolution maps to the European fintech localization pattern — SaaS companies moving from English-first, feature-driven messaging to native-language, compliance-anchored positioning as they compete for finance department budget against embedded bank offerings. For SaaS teams building in regulated spend categories, the trade-off is clear: vernacular ownership wins incumbents but filters exploratory traffic, requiring sales infrastructure before conversion math improves.
+Expensya's homepage switched to French-only in 2023, the same year Medius acquired it for over $100M. Medius publicly cited France's July 2024 e-invoicing mandate as strategic rationale. The timing suggests Expensya was repositioned to serve a regulatory moment rather than continue competing as an international SaaS product.
+
+### Product evolution: from software to embedded cards
+
+The March 2023 Swan partnership added embedded corporate cards before the acquisition closed. The homepage shifted from **"Automated spend management for all companies"** to **"Cartes de paiement & budgets"** as the lead section heading, pointing to product evolution from expense tracking software to integrated financial platform.
+
+### Industry consolidation: expense tools absorbed into spend suites
+
+Standalone expense tools like Expensya were being acquired by AP automation platforms during this period, competing against all-in-one challengers like Ramp, Brex, and Spendesk. The French-only homepage and **"Réservez une démo"** CTA (replacing **"Free trial"**) are consistent with narrowing to a specific market where Medius could bundle AP and expense into a unified platform.
+
+### Quick test: does your homepage assume English-speaking international buyers?
+
+Visit your homepage. Count how many primary CTAs, headlines, and navigation items assume English-speaking visitors. If over 50%, check your analytics: what percentage of converting traffic comes from non-English markets? If you have strong brand presence in one geography but spread messaging across many, you may be diluting conversion by staying international when a focused market would convert better.

@@ -1,0 +1,50 @@
+{
+  "score": 58,
+  "pass": false,
+  "issues": [
+    "Section is entirely devoid of H3 subheadings despite being an analytical section (07-business-context) — hard cap at 75 triggered",
+    "Opening sentence makes a causal claim ('that velocity suggests the category had reached maturity') without evidence that 'velocity' caused 'maturity' — this is inference presented as fact",
+    "Paragraph 2 sentence 1 makes an unsupported causal claim: 'The homepage shift...is consistent with investor pressure to prove platform economics' — evidence shows funding rounds and homepage changes, not that funding caused the homepage shift",
+    "Paragraph 2 sentence 2 makes a causal claim: 'When your valuation jumps...you must show you can capture enterprise-wide budgets' — this is strategic commentary, not traceable to evidence",
+    "Paragraph 3 sentence 1: 'Gong's shift mirrors what happened across SaaS' — this is generic industry commentary with no anchor to Gong-specific evidence",
+    "Paragraph 3 sentence 2: 'Companies that won their category early now compete on platform breadth' — could appear in any teardown; not Gong-specific",
+    "All three paragraphs exceed 60 words: P1 ≈68 words, P2 ≈72 words, P3 ≈60 words (borderline)",
+    "Section contains zero bold-quoted verbatim website elements beyond the two in P2 — nav items, CTAs, and section headings from evidence are not quoted",
+    "No founder takeaway present — section ends with generic industry observation ('the homepage can no longer assume the visitor needs education') rather than a specific, runnable test anchored to Gong's evidence",
+    "Section heading is clever-only ('forced it to stop teaching and start platforming') and lacks 'Gong homepage' or any searchable topic term explicitly",
+    "Word count appears to be ≈180 words (within 120–200 range) but structure violates analytical section requirements"
+  ],
+  "requiredFixes": [
+    "Add three H3 subheadings to structure this analytical section — suggested structure: H3 'Market entry context: Gong crossed 2,000 customers in 9 months', H3 'Product evolution: From conversation intelligence to Revenue AI OS', H3 'Industry shift: Category consolidation and AI repositioning'. Each H3 block must be ≤60 words and deliver its takeaway in the first two sentences.",
+    "Remove or condition all causal claims: 'That velocity suggests' → 'That velocity coincided with'; 'is consistent with investor pressure' → 'coincided with a period when'; 'When your valuation jumps...you must' → delete entirely or rewrite as 'If your valuation jumps 3.3x in 9 months, investor expectations shift toward...'",
+    "Eliminate generic SaaS commentary in P3 — replace 'Gong's shift mirrors what happened across SaaS' with a Gong-specific observation tied to evidence (e.g., 'Between 2021 and 2024, Gong publicly announced the RightBound acquisition and launched generative AI features including 'Call Spotlight' and 'Deal Spotlight', according to press releases — both moves consistent with...')",
+    "Add bold-quoted verbatim nav items from evidence to anchor P1 or P2 — e.g., 'The removal of **'What is RI?'** and **'Reveal: The RI Podcast'** from navigation between 2020 and 2026 is consistent with a company that no longer needed to educate visitors on the category.'",
+    "Replace final sentence with a specific founder takeaway: 'Open your homepage navigation in an incognito window. Count how many nav items explain what your category is versus how many assume the visitor already knows. If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one and measuring bounce rate on the pricing page.'",
+    "Revise section heading to include 'Gong' or 'homepage' explicitly for searchability: 'How Gong's $7.25B valuation reshaped its homepage from educator to platform'",
+    "Split P2 (currently 72 words) into two blocks or move one sentence to P1 to bring all paragraphs under 60 words"
+  ],
+  "riskFlags": [
+    "CAUSAL CLAIM WITHOUT DATA: 'That velocity suggests the revenue intelligence category Gong created had reached maturity' — velocity (funding pace) and maturity (category understanding) are not causally linked in the evidence; this is strategic inference",
+    "CAUSAL CLAIM WITHOUT DATA: 'The homepage consistent with investor pressure' — no evidence provided that investors requested or influenced the homepage shift",
+    "CAUSAL CLAIM WITHOUT DATA: 'When your valuation jumps...you must show you can capture enterprise-wide budgets' — this is a strategic assertion about investor expectations, not a fact traceable to evidence",
+    "OUTCOME CLAIM: 'buyers already knew what conversation intelligence meant' — evidence shows funding rounds and customer count, not buyer awareness or knowledge state",
+    "GENERIC COMMENTARY: 'Companies that won their category early now compete on platform breadth' — this could appear in any SaaS teardown and is not anchored to Gong-specific evidence"
+  ],
+  "seoNotes": [
+    "POSITIVE: Section heading includes '$7.25B valuation' which is a unique, searchable data point tied to Gong",
+    "NEGATIVE: Heading does not explicitly include 'Gong homepage' or 'homepage teardown' — discoverability risk for users searching 'Gong homepage analysis'",
+    "POSITIVE: Meta description quotes ('better sales conversations' → 'multimodal revenue signal processing') are verbatim and bold-quoted, aiding snippet extraction",
+    "NEGATIVE: Section contains minimal verbatim quotes from nav items, CTAs, or section headings — limits snippet richness for long-tail queries like 'Gong homepage navigation changes'"
+  ],
+  "rewriteInstruction": "Restructure this section with three H3 subheadings (market entry context, product evolution, industry shift). Each H3 block must be ≤60 words and deliver its takeaway in the first two sentences. Anchor every paragraph to Gong-specific evidence: quote nav items, CTAs, or section headings in **bold quotes**. Remove all causal claims ('that velocity suggests', 'is consistent with investor pressure', 'you must show') — replace with conditioned statements ('if X, then Y') or neutral observation ('this shift coincided with'). Eliminate generic SaaS commentary in P3 ('companies that won their category early') — replace with a Gong-specific event from the evidence (RightBound acquisition, generative AI product launches, Gartner recognition). End the final H3 block with a specific founder test: 'Open your homepage nav. Count educational items ('What is X?') versus evaluation items ('Pricing', 'Customers'). If you have 2+ educational nav items and 50+ competitors, test removing one and measuring pricing page bounce rate.' Revise the section heading to include 'Gong homepage' explicitly for search discoverability.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 8,
+    "plainLanguage": 12,
+    "scannability": 3,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

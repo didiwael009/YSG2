@@ -1,0 +1,29 @@
+{
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Left-aligned headline 'Break the code barrier' with subtext and blue CTA button, paired with right-aligned isometric product imagery stack.",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "current-live",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Top navigation bar with logo and sign-in, followed by hero section with centered headline 'Make your website a growth engine' over full-width background imagery, with supporting subtext and blue CTA.",
+      "proof_density": "high",
+      "primary_message_type": "category",
+      "visual_sophistication": 5,
+      "brand_maturity": "enterprise-grade"
+    }
+  ],
+  "visual_shift_summary": "The design evolved from a balanced two-column hero layout with moderate proof density to a full-width, immersive hero experience with increased visual hierarchy, more prominent navigation, and significantly denser social proof through client logos and case study imagery throughout the page.",
+  "design_evolution_label": "growth-stage-to-enterprise-platform",
+  "generatedAt": "2026-06-12T08:08:27.231Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0029848
+}

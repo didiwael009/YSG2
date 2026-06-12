@@ -1,0 +1,47 @@
+{
+  "score": 78,
+  "pass": false,
+  "issues": [
+    "H3 'Market entry context' paragraph is 62 words, exceeds 60-word limit",
+    "H3 'Product and competitive evolution' paragraph is 61 words, exceeds 60-word limit",
+    "The main section heading lacks company name (should be 'Why Webflow's homepage changed...' or similar)",
+    "Missing bold quotes around '$330 million', '$4 billion', '$1 million', '$8 million', 'Website Experience Platform', 'Intellimize' — these are verbatim facts/names from evidence requiring formatting",
+    "The phrase 'This points to' in the third H3 is causal language without an attached condition — should be 'This is consistent with' or conditional phrasing",
+    "The fourth H3 heading is not a strategic finding block — it's the five-minute test, which should not have its own H3 heading per standard teardown format",
+    "The opening sentence is generic funding news that could appear in any SaaS teardown — not anchored to what makes THIS shift interesting",
+    "The final test instruction ('you may be filtering out the buyers who actually arrive') is generic advice, not specific to Webflow's evidence",
+    "Section structure violates the stated goal: four H3 blocks instead of three short paragraphs"
+  ],
+  "requiredFixes": [
+    "Trim 'Market entry context' to ≤60 words by removing either the valuation detail or the competitor sentence",
+    "Trim 'Product and competitive evolution' to ≤60 words by condensing the Intellimize description",
+    "Add company name 'Webflow' to the ## heading: 'Why Webflow's homepage changed from designer tool to enterprise platform'",
+    "Wrap all verbatim facts in **bold quotes**: **'$330 million'**, **'$4 billion'**, **'Website Experience Platform'**, **'Intellimize'**",
+    "Replace 'This points to prioritizing' with 'This is consistent with prioritizing' or add a condition: 'If enterprise contracts became the priority, removing showcase CTAs would filter for buyers, not builders'",
+    "Remove the H3 heading from the five-minute test — it should be a standalone closing paragraph, not a fourth H3 block",
+    "Restructure to match stated goal: exactly three H3 blocks (market entry, product evolution, industry shift), each ≤60 words, followed by the five-minute test as a plain closing paragraph",
+    "Rewrite the five-minute test to be specific to Webflow's evidence: 'Count primary CTAs above the fold. Webflow removed showcase links and added **Contact Sales**. If your homepage has 3+ enterprise CTAs but most traffic is self-serve, you are filtering like Webflow did — measure whether this matches your pipeline reality.'"
+  ],
+  "riskFlags": [
+    "CAUSAL: 'This points to prioritizing predictable enterprise contracts over viral designer adoption' — the evidence shows CTA removal and addition, but does not prove causation or strategic intent",
+    "CAUSAL: 'a tradeoff visible in how the page now filters for buyers, not builders' — filtering is outcome language, but the evidence does not prove this was the intended tradeoff or that filtering occurred",
+    "IMPLIED OUTCOME: 'consistent with targeting marketing leaders rather than individual designers' — this is inference, not fact; the evidence shows headline change but does not prove target audience shift caused it"
+  ],
+  "seoNotes": [
+    "Positive: Section heading contains 'homepage', 'Webflow', and both positioning terms ('designer tool', 'enterprise platform')",
+    "Positive: First H3 heading contains 'Webflow' implicitly through company context",
+    "Negative: The section heading reads slightly awkward for SEO — 'Why Webflow changed its homepage' would be more natural search phrasing",
+    "Positive: H3 headings contain searchable terms ('market entry', 'product evolution', 'industry shift')"
+  ],
+  "rewriteInstruction": "Restructure to exactly three H3 blocks as stated in the section goal, each ≤60 words. Trim Market entry context to 58 words by removing the Framer/Wix sentence. Trim Product evolution to 59 words by condensing Intellimize to 'acquired AI personalization platform Intellimize'. Add company name to the ## heading. Replace all causal 'points to' language with 'is consistent with' or add explicit conditions. Wrap all quoted facts ($330M, $4B, Website Experience Platform, Intellimize, Contact Sales, Break the code barrier, Make your website a growth engine) in **bold quotes**. Move the five-minute test outside the H3 structure as a plain closing paragraph. Rewrite the test to be Webflow-specific: 'Webflow removed showcase CTAs and added **Contact Sales**. Count your primary CTAs above the fold — if 3+ require sales contact but your traffic is self-serve, you are filtering like Webflow. Does your pipeline support that filter?' Open with a finding, not generic funding news — lead with the $1M→$8M enterprise revenue jump in one year, which is the most concrete signal of ICP shift.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 12,
+    "plainLanguage": 16,
+    "scannability": 9,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

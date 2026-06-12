@@ -1,0 +1,61 @@
+{
+  "angle": "Webflow executed a coordinated repositioning from bottom-up viral design tool to enterprise marketing infrastructure by introducing 'agentic' AI terminology and sales-led CTAs while simultaneously removing the community showcase that had powered practitioner adoption — a high-risk maneuver that trades viral growth mechanics for enterprise deal velocity.",
+  "distinct_from": [
+    "Only teardown where viral community showcase was removed",
+    "Introduction of 'agentic' AI category terminology",
+    "Explicit shift from practitioner to marketing team buyer"
+  ],
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Establish that Webflow's homepage evolution represents a deliberate trade-off between bottom-up viral adoption (removing showcase CTAs, practitioner messaging) and enterprise sales infrastructure (Contact Sales CTA, AI terminology, outcome messaging) — not just an upmarket expansion but a replacement of one growth engine with another.",
+      "word_target": 80,
+      "evidence_sources": [
+        "strategic-shift",
+        "messaging",
+        "summary-cards"
+      ],
+      "marketing_lens": "sales-motion"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## How Webflow chose enterprise infrastructure over viral showcase",
+      "goal": "Connect the removal of community showcase elements and practitioner CTAs to Webflow's documented business trajectory: the 2021-2022 unicorn funding rounds that required enterprise revenue proof, the 2024 Intellimize acquisition signaling Website Experience Platform ambitions, and the competitive pressure from Framer capturing the designer community Webflow originally owned — explaining why killing viral mechanics made strategic sense despite alienating the original ICP.",
+      "word_target": 180,
+      "evidence_sources": [
+        "business-context-research",
+        "strategic-shift",
+        "messaging",
+        "summary-cards"
+      ],
+      "marketing_lens": "icp"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Growth model",
+      "value": "Viral showcase → Sales-led platform",
+      "note": "Removed #MadeInWebflow showcase CTAs; added Contact Sales"
+    },
+    {
+      "label": "Target buyer",
+      "value": "Freelance designers → Marketing leaders",
+      "note": "From 'Who uses Webflow' to 'Everything marketing teams love'"
+    },
+    {
+      "label": "Category claim",
+      "value": "No-code tool → Agentic web platform",
+      "note": "Page title introduced 'agentic' terminology for AI-era positioning"
+    },
+    {
+      "label": "Outcome promise",
+      "value": "Break code barrier → Growth engine",
+      "note": "H1 shifted from capability unlock to business outcome delivery"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:09:25.448Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.025137
+}

@@ -1,0 +1,60 @@
+{
+  "angle": "Clay abandoned viral product-led growth mechanics (self-filling spreadsheet, template library, request-access waitlist) to pursue enterprise platform positioning, systematically removing every conversion path that attracted individual practitioners who could not authorize six-figure data infrastructure contracts.",
+  "distinct_from": [
+    "Killed PLG distribution despite it working",
+    "Category creation through job title invention",
+    "Template library as abandoned growth lever"
+  ],
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Establish that Clay's homepage evolution represents a strategic choice to sacrifice viral bottom-up adoption in favor of enterprise deal sizes, using the removal of template exploration and 'request access' CTAs as the opening proof point that this wasn't optimization but deliberate funnel narrowing.",
+      "word_target": 80,
+      "evidence_sources": [
+        "strategic-shift",
+        "messaging",
+        "summary-cards"
+      ],
+      "marketing_lens": "sales-motion"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## Why Clay killed the template library that made it go viral",
+      "goal": "Explain that Clay's January 2022 ICP pivot from multi-persona to sales-team-only focus, combined with the HubSpot-Clearbit acquisition creating a market vacuum, enabled Clay to abandon PLG template distribution in favor of inventing the 'GTM Engineer' persona as a category creation play that justified enterprise platform pricing.",
+      "word_target": 180,
+      "evidence_sources": [
+        "business-context-research",
+        "strategic-shift",
+        "messaging"
+      ],
+      "marketing_lens": "category"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Self-filling spreadsheet → GTM data infrastructure",
+      "note": "H1 replaced product mechanism with data platform framing"
+    },
+    {
+      "label": "Distribution model",
+      "value": "Template-driven virality → Demo-gated enterprise",
+      "note": "Navigation removed 'All templates' and 'Get template' CTAs entirely"
+    },
+    {
+      "label": "Buyer persona",
+      "value": "Individual practitioners → RevOps/GTM leadership",
+      "note": "Invented 'GTM Engineer' role to justify platform evaluation"
+    },
+    {
+      "label": "Category play",
+      "value": "Spreadsheet alternative → Full GTM operating system",
+      "note": "Avenue acquisition positioned Clay as workflow orchestration layer"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:06:19.253Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.023697
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Growth model",
+    "value": "Viral showcase → Sales-led platform",
+    "note": "Removed #MadeInWebflow showcase CTAs; added Contact Sales"
+  },
+  {
+    "label": "Target buyer",
+    "value": "Freelance designers → Marketing leaders",
+    "note": "From 'Who uses Webflow' to 'Everything marketing teams love'"
+  },
+  {
+    "label": "Category claim",
+    "value": "No-code tool → Agentic web platform",
+    "note": "Page title introduced 'agentic' terminology for AI-era positioning"
+  },
+  {
+    "label": "Outcome promise",
+    "value": "Break code barrier → Growth engine",
+    "note": "H1 shifted from capability unlock to business outcome delivery"
+  }
+]

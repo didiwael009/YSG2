@@ -1,0 +1,29 @@
+{
+  "snapshots": [
+    {
+      "month": "2021-07",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Left-aligned logo and nav, centered headline 'This spreadsheet fills itself' with descriptive subtext, two CTA buttons below, and a large product mockup image showing a spreadsheet interface on the right side.",
+      "proof_density": "low",
+      "primary_message_type": "feature",
+      "visual_sophistication": 3,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "current-live",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Left-aligned logo and nav, large centered headline 'Go to market with unique data — and the ability to act on it' with descriptive subtext, colorful geometric icon illustrations above the headline, and a prominent product screenshot showing data interface below.",
+      "proof_density": "low",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    }
+  ],
+  "visual_shift_summary": "The design has evolved from a feature-focused layout with product-first positioning to a more outcome-driven, visually enriched design featuring playful geometric illustrations, bolder typography, and increased use of color. The current version emphasizes business value over product mechanics.",
+  "design_evolution_label": "growth-to-polished-outcome-focus",
+  "generatedAt": "2026-06-12T08:05:07.134Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0029096
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Category strategy",
+    "value": "Evangelist → Infrastructure owner",
+    "note": "Removed 'What is RI?' and all educational nav"
+  },
+  {
+    "label": "Target buyer",
+    "value": "VP Sales → CRO + GTM Org",
+    "note": "Meta description shifted from 'sales optimization' to 'entire GTM organization'"
+  },
+  {
+    "label": "Proof mechanism",
+    "value": "Practitioner names → Case study CTAs",
+    "note": "Removed individual VP testimonials; added quantified efficiency claims"
+  },
+  {
+    "label": "Technical framing",
+    "value": "Category term → Architecture stack",
+    "note": "From 'Revenue Intelligence' to 'Revenue AI OS' with agent/signal terminology"
+  }
+]

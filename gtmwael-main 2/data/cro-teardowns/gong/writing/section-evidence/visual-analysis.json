@@ -1,0 +1,29 @@
+{
+  "snapshots": [
+    {
+      "month": "2020-01",
+      "design_era": "growth",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Full-bleed gradient background with large illustrated characters on right, bold headline 'REVENUE INTELLIGENCE' on left, small tagline and CTA button below.",
+      "proof_density": "none",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "current-live",
+      "design_era": "mature",
+      "layout_type": "multi-column",
+      "above_fold_structure": "Split layout with headline and CTA on left, interactive chat widget mockup on right, soft gradient background, navigation bar with logo and sign-in.",
+      "proof_density": "high",
+      "primary_message_type": "feature",
+      "visual_sophistication": 5,
+      "brand_maturity": "enterprise-grade"
+    }
+  ],
+  "visual_shift_summary": "The design evolved from a full-bleed cinematic hero with illustrated characters and bold messaging to a cleaner, more professional multi-column layout emphasizing product interface mockups and social proof through client logos. The visual language shifted from lifestyle imagery to product-centric UI demonstration.",
+  "design_evolution_label": "growth-to-enterprise-product-focus",
+  "generatedAt": "2026-06-12T08:08:18.256Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0032416
+}

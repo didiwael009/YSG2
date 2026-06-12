@@ -1173,23 +1173,23 @@ export const responsiveImageManifest = {
   },
   "2021-01": {
     "width": 1440,
-    "height": 8863,
-    "originalBytes": 465344,
+    "height": 6356,
+    "originalBytes": 484590,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2021-01-320.webp",
-        "bytes": 35526
+        "bytes": 31614
       },
       {
         "width": 640,
         "src": "/responsive/2021-01-640.webp",
-        "bytes": 103430
+        "bytes": 97052
       },
       {
         "width": 1024,
         "src": "/responsive/2021-01-1024.webp",
-        "bytes": 168576
+        "bytes": 157786
       }
     ]
   },
@@ -1327,23 +1327,23 @@ export const responsiveImageManifest = {
   },
   "2021-07": {
     "width": 1440,
-    "height": 11792,
-    "originalBytes": 449930,
+    "height": 6356,
+    "originalBytes": 484590,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2021-07-320.webp",
-        "bytes": 31980
+        "bytes": 31614
       },
       {
         "width": 640,
         "src": "/responsive/2021-07-640.webp",
-        "bytes": 97258
+        "bytes": 97052
       },
       {
         "width": 1024,
         "src": "/responsive/2021-07-1024.webp",
-        "bytes": 160704
+        "bytes": 157786
       }
     ]
   },
@@ -1410,6 +1410,50 @@ export const responsiveImageManifest = {
         "width": 1024,
         "src": "/responsive/2024-01-1024.webp",
         "bytes": 188260
+      }
+    ]
+  },
+  "2020-10": {
+    "width": 1440,
+    "height": 6356,
+    "originalBytes": 484590,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2020-10-320.webp",
+        "bytes": 31614
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2020-10-640.webp",
+        "bytes": 97052
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2020-10-1024.webp",
+        "bytes": 157786
+      }
+    ]
+  },
+  "2021-10": {
+    "width": 1440,
+    "height": 6356,
+    "originalBytes": 484590,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2021-10-320.webp",
+        "bytes": 31614
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2021-10-640.webp",
+        "bytes": 97052
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2021-10-1024.webp",
+        "bytes": 157786
       }
     ]
   },

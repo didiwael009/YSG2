@@ -1,0 +1,60 @@
+{
+  "angle": "Gong shifted from evangelizing a new category ('Revenue Intelligence') to claiming ownership of enterprise revenue infrastructure ('Revenue AI OS'), removing all educational scaffolding and assuming buyers arrive already convinced they need revenue AI — a move that trades addressable market breadth for deal size and platform lock-in among enterprises already committed to the category.",
+  "distinct_from": [
+    "Category creator becomes category infrastructure owner",
+    "From teaching what RI is to assuming you know",
+    "Educational nav removal signals category maturity assumption"
+  ],
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Establish that Gong's homepage evolution reveals a strategic bet that the 'Revenue Intelligence' category no longer needs explanation — the company removed 'What is RI?', podcast links, and practitioner testimonials, replacing them with infrastructure terminology ('Revenue AI OS', 'multimodal signal processing') that assumes technical evaluation rather than category education.",
+      "word_target": 80,
+      "evidence_sources": [
+        "strategic-shift",
+        "messaging",
+        "summary-cards"
+      ],
+      "marketing_lens": "category"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## How Gong's $7.25B valuation forced it to stop teaching and start platforming",
+      "goal": "Explain that Gong's 2020-2021 hypergrowth (Series D at $2.2B, Series E at $7.25B within 9 months) and rapid customer expansion to 2,000+ accounts including Fortune 20 companies created investor pressure to demonstrate platform economics rather than point-solution adoption — the company had to prove it could capture enterprise-wide budgets through infrastructure positioning rather than continuing to educate departmental buyers on a category it had already won, especially as competitors like Clari and ZoomInfo consolidated and category growth rates normalized post-pandemic.",
+      "word_target": 180,
+      "evidence_sources": [
+        "business-context-research",
+        "strategic-shift",
+        "messaging"
+      ],
+      "marketing_lens": "positioning"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Category strategy",
+      "value": "Evangelist → Infrastructure owner",
+      "note": "Removed 'What is RI?' and all educational nav"
+    },
+    {
+      "label": "Target buyer",
+      "value": "VP Sales → CRO + GTM Org",
+      "note": "Meta description shifted from 'sales optimization' to 'entire GTM organization'"
+    },
+    {
+      "label": "Proof mechanism",
+      "value": "Practitioner names → Case study CTAs",
+      "note": "Removed individual VP testimonials; added quantified efficiency claims"
+    },
+    {
+      "label": "Technical framing",
+      "value": "Category term → Architecture stack",
+      "note": "From 'Revenue Intelligence' to 'Revenue AI OS' with agent/signal terminology"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:09:22.479Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.025725
+}

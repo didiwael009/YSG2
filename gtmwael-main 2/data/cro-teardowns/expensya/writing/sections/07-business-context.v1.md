@@ -1,0 +1,7 @@
+## Why Expensya abandoned English and narrowed to France after the Medius acquisition
+
+In June 2023, Swedish AP automation provider Medius acquired Expensya for over $100M and publicly cited France's July 2024 e-invoicing mandate as strategic rationale. The acquisition reflected a broader industry shift: standalone expense tools were being absorbed into full spend management suites as companies like Ramp, Brex, and Spendesk raced to bundle corporate cards, travel, and AP into unified platforms.
+
+The homepage shifts — English to French, **"Automated spend management for all companies"** to **"Voici à quoi devrait ressembler la gestion des dépenses"**, and navigation pruned from Small/Mid/Large segmentation to **"Cartes de paiement & budgets"** — are consistent with repositioning from international SaaS product to France-focused spend platform. The March 2023 Swan partnership added embedded corporate cards, suggesting Expensya was evolving from software-only to integrated financial product before the acquisition.
+
+Post-acquisition, Expensya appears designed to integrate into Medius's AP suite rather than compete as a standalone international tool. The French-only homepage and **"Réservez une démo"** CTA (replacing **"Free trial"**) point to a narrower ICP: French mid-market finance teams evaluating AP-plus-expense bundles in a regulatory environment that now mandates e-invoicing compliance.

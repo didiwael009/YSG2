@@ -1,0 +1,61 @@
+{
+  "angle": "Expensya executed a French-market category consolidation play by abandoning international English-language positioning in favor of French-only messaging that bundles embedded payment cards with expense management, signaling a strategic retreat from global horizontal expansion to own a specific geographic vertical after its acquisition by Medius.",
+  "distinct_from": [
+    "Geographic localization as strategic contraction",
+    "Software-to-fintech product bundling",
+    "Post-acquisition positioning shift",
+    "Language change as ICP signal"
+  ],
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Establish that Expensya's homepage shift is not a typical localization play but a deliberate geographic market exit strategy, using the language change from English to French as the most visible signal of a broader strategic contraction from multi-market horizontal SaaS to French-only embedded finance platform.",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## Why Expensya abandoned English and narrowed to France after the Medius acquisition",
+      "goal": "Explain how the 2023 Medius acquisition, the Swan embedded card partnership, and the French e-invoicing regulatory mandate converged to transform Expensya from a multi-market expense reporting tool into a France-focused spend management platform designed to integrate into Medius's AP automation suite rather than compete as a standalone international product.",
+      "word_target": 180,
+      "evidence_sources": [
+        "business-context-research",
+        "strategic-shift",
+        "messaging"
+      ],
+      "marketing_lens": "category"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Market scope",
+      "value": "Multi-country → France-only",
+      "note": "Entire homepage switched from English to French, removing international navigation"
+    },
+    {
+      "label": "Product positioning",
+      "value": "Expense software → Card + software bundle",
+      "note": "Added 'Cartes de paiement & budgets' as first section heading after Swan partnership"
+    },
+    {
+      "label": "Buyer persona",
+      "value": "Any company size → Finance teams",
+      "note": "Removed Small/Mid/Large nav; added 'équipes financières modernes' in meta description"
+    },
+    {
+      "label": "Acquisition model",
+      "value": "Self-serve trial → Demo-gated sales",
+      "note": "Replaced 'Free trial' CTA with 'Réservez une démo' post-acquisition"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:09:01.821Z",
+  "model": "claude-sonnet-4-5",
+  "costUsd": 0.024228
+}

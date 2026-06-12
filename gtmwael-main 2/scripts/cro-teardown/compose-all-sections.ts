@@ -54,6 +54,10 @@ import { generateLessonCards }          from './generate-lesson-cards.js';
 import { generateBusinessContext }      from './generate-business-context.js';
 import { runStrategicShiftDetector }    from './strategic-shift-detector.js';
 import { runSeoIntentPlanner }          from './seo-intent-planner.js';
+import { runVisualAnalyzer }            from './visual-analyzer.js';
+import { runContextResearcher }         from './context-researcher.js';
+import { runOutlineGenerator, type ArticleOutline } from './outline-generator.js';
+import { runMarketingCardsGenerator }   from './marketing-cards-generator.js';
 import { runCrossSectionPass } from './cross-section-pass.js';
 import { assembleArticle } from './article-assembler.js';
 import { generateSeo } from './seo-generator.js';
@@ -81,6 +85,12 @@ interface CliArgs {
   writerModel: string | null;
   /** Max sections composed concurrently. Sections are independent (cohesion runs after), so >1 is safe. */
   concurrency: number;
+  /** Skip Layer 1.5 visual screenshot analysis. */
+  skipVisual: boolean;
+  /** Skip business context web research. */
+  skipResearch: boolean;
+  /** Skip Layer 3.5 custom outline generator. */
+  skipOutline: boolean;
 }
 
 function parseArgs(argv: string[]): CliArgs {
@@ -125,6 +135,9 @@ function parseArgs(argv: string[]): CliArgs {
     // keeps API concurrency modest while cutting wall-clock ~2–3×. Pass --concurrency 1
     // to fall back to the original fully-sequential behaviour.
     concurrency:      Math.max(1, parseInt(args['concurrency'] ?? '3', 10)),
+    skipVisual:       flags.has('skip-visual'),
+    skipResearch:     flags.has('skip-research'),
+    skipOutline:      flags.has('skip-outline'),
   };
 }
 
@@ -306,6 +319,9 @@ async function main(): Promise<void> {
   const skipped: string[] = [];
   const sectionErrors: Array<{ section: string; error: string }> = [];
 
+  // Article outline from Layer 3.5 (populated later in the pipeline)
+  let articleOutline: ArticleOutline | null = null;
+
   // Determine which sections to run
   const sectionsToRun: string[] = cli.onlySection
     ? [cli.onlySection]
@@ -429,6 +445,138 @@ async function main(): Promise<void> {
     }
   }
 
+  // ── Layer 1.5: Visual screenshot analysis ─────────────────────────────────────
+  // Analyzes first + last selected .webp screenshots via Claude vision.
+  // Output: section-evidence/visual-analysis.json
+  // Feeds: strategic-shift context, marketing cards Card 4, outline generator.
+  if (cli.mode !== 'draft' && !cli.onlySection && !cli.skipVisual) {
+    console.log(`\n${div}`);
+    console.log(`  Layer 1.5 — Visual screenshot analysis`);
+    try {
+      const visualLog = (msg: string): void => {
+        console.log(msg);
+        appendRunLog(logPath, { section: '_visual-analysis', step: msg, ok: true });
+      };
+      const visualResult = await runVisualAnalyzer({
+        slug:       cli.slug,
+        writingDir,
+        publicDir:  path.join(projectRoot, 'public'),
+        tracker,
+        force:      cli.force,
+        onLog:      visualLog,
+      });
+      if (visualResult.skipped) {
+        console.log(`  ↩ Skipping visual analysis — visual-analysis.json exists`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Visual analysis failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_visual-analysis', error: msg });
+      appendRunLog(logPath, { section: '_visual-analysis', step: 'VISUAL ANALYSIS ERROR', ok: false, detail: msg });
+    }
+  }
+
+  // ── Context researcher (business context web research) ─────────────────────────
+  // Researches company events, funding, category context during the teardown period.
+  // Output: section-evidence/business-context-research.json
+  // Feeds: Layer 3 (strategic shift), business context section writer, outline generator.
+  if (cli.mode !== 'draft' && !cli.onlySection && !cli.skipResearch) {
+    console.log(`\n${div}`);
+    console.log(`  Context researcher — business context research`);
+    try {
+      const researchLog = (msg: string): void => {
+        console.log(msg);
+        appendRunLog(logPath, { section: '_context-research', step: msg, ok: true });
+      };
+      const researchResult = await runContextResearcher({
+        slug:       cli.slug,
+        writingDir,
+        tracker,
+        force:      cli.force,
+        onLog:      researchLog,
+      });
+      if (researchResult.skipped) {
+        console.log(`  ↩ Skipping context research — business-context-research.json exists`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Context research failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_context-research', error: msg });
+      appendRunLog(logPath, { section: '_context-research', step: 'CONTEXT RESEARCH ERROR', ok: false, detail: msg });
+    }
+  }
+
+  // ── Layer 3.5: Custom outline generator ────────────────────────────────────────
+  // Generates a brand-specific article outline with custom H2s, goals, and
+  // marketing-signal "At a glance" cards. Uses all prior layer outputs as input.
+  // Output: article-outline.json
+  if (cli.mode !== 'draft' && !cli.onlySection && !cli.skipOutline) {
+    console.log(`\n${div}`);
+    console.log(`  Layer 3.5 — Custom outline generator`);
+    try {
+      const outlineLog = (msg: string): void => {
+        console.log(msg);
+        appendRunLog(logPath, { section: '_outline', step: msg, ok: true });
+      };
+      const outlineResult = await runOutlineGenerator({
+        slug:       cli.slug,
+        writingDir,
+        dataRoot:   path.join(projectRoot, 'data', 'cro-teardowns'),
+        tracker,
+        force:      cli.force,
+        onLog:      outlineLog,
+      });
+      if (outlineResult.skipped) {
+        console.log(`  ↩ Skipping outline — article-outline.json exists`);
+      }
+      articleOutline = outlineResult.outline;
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Outline generation failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_outline', error: msg });
+      appendRunLog(logPath, { section: '_outline', step: 'OUTLINE ERROR', ok: false, detail: msg });
+    }
+  } else {
+    // Load existing outline if available (e.g. --skip-outline on a resume run)
+    const outlinePath = path.join(writingDir, 'article-outline.json');
+    if (fs.existsSync(outlinePath)) {
+      try {
+        articleOutline = JSON.parse(fs.readFileSync(outlinePath, 'utf-8')) as ArticleOutline;
+      } catch {
+        // ignore malformed outline
+      }
+    }
+  }
+
+  // ── Marketing signal cards ──────────────────────────────────────────────────────
+  // Generates 4 marketing-lens "At a glance" cards from strategic-shift + evidence.
+  // When article-outline.json has at_a_glance_cards, those take precedence.
+  // Otherwise falls back to deterministic cards from marketing-cards-generator.
+  // Output: section-evidence/marketing-summary-cards.json
+  if (cli.mode !== 'draft' && !cli.onlySection) {
+    try {
+      if (articleOutline?.at_a_glance_cards?.length) {
+        // Outline generator already produced marketing cards — save them directly
+        const cardsPath = path.join(writingDir, 'section-evidence', 'marketing-summary-cards.json');
+        fs.mkdirSync(path.dirname(cardsPath), { recursive: true });
+        fs.writeFileSync(cardsPath, JSON.stringify(articleOutline.at_a_glance_cards, null, 2), 'utf-8');
+        console.log(`\n  ✓ marketing-summary-cards.json — ${articleOutline.at_a_glance_cards.length} cards (from outline)`);
+      } else {
+        const cardsResult = await runMarketingCardsGenerator({
+          slug:       cli.slug,
+          writingDir,
+          force:      cli.force,
+        });
+        if (!cardsResult.skipped) {
+          console.log(`\n  ✓ marketing-summary-cards.json — ${cardsResult.cards.length} cards (deterministic)`);
+        }
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Marketing cards generation failed (non-fatal): ${msg}`);
+    }
+  }
+
   // ── Section composition (parallel, bounded) ──────────────────────────────────
   // Sections are independent: each reads its own evidence and writes its own
   // .final.md. Whole-article cohesion is handled afterwards by cross-section-pass,
@@ -463,6 +611,7 @@ async function main(): Promise<void> {
     };
 
     try {
+      const outlineSec = articleOutline?.sections.find(s => s.id === sectionId);
       const result = await writeSectionLoop({
         sectionId,
         writingDir,
@@ -471,6 +620,7 @@ async function main(): Promise<void> {
         minScore:        CRITIC_PASS_SCORE,   // always use default in Phase 4C
         draftOnly:       cli.mode === 'draft',
         ...(cli.writerModel ? { writerModelOverride: cli.writerModel } : {}),
+        ...(outlineSec ? { outlineOverride: { customH2: outlineSec.custom_h2 ?? null, customGoal: outlineSec.goal } } : {}),
         tracker:         sectionTracker,
         onLog:           sectionLog,
       });

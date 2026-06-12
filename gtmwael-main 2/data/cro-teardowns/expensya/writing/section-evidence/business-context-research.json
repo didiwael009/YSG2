@@ -1,0 +1,50 @@
+{
+  "company_stage_start": "early-growth",
+  "company_stage_end": "scale",
+  "key_events": [
+    {
+      "period": "2021-Q1",
+      "type": "rebrand",
+      "summary": "According to public sources, Expensya publicly announced a new '360° spend management' strategic positioning and completed a permanent transition to a new web and mobile interface in March 2021, signaling a deliberate shift from pure expense reporting to a broader spend management narrative."
+    },
+    {
+      "period": "2021-Q2",
+      "type": "funding",
+      "summary": "Expensya reportedly closed a $20M Series B round in April 2021 led by MAIF Avenir and Silicon Badia, with existing investors ISAI and Seventure Partners also participating; according to public statements, the round was intended to accelerate R&D and international expansion across mainland Europe."
+    },
+    {
+      "period": "2021-Q2",
+      "type": "hiring",
+      "summary": "According to public announcements, Expensya hired a new CFO (Stéphanie Rogeau-Barré), Marketing Director, VP Sales, and Director of Partnerships in early 2021, and publicly committed to hiring over 100 additional employees over the following three years, signaling a significant scaling of its go-to-market function."
+    },
+    {
+      "period": "2023-Q1",
+      "type": "product-launch",
+      "summary": "According to public sources, Expensya partnered with embedded finance provider Swan in March 2023 to integrate virtual and physical corporate payment cards into its platform, reportedly aiming to cover the full spend management cycle from invoicing to reimbursement and targeting France, Spain, and Germany as primary markets."
+    },
+    {
+      "period": "2023-Q2",
+      "type": "other",
+      "summary": "Medius, a Stockholm-based accounts payable automation provider, publicly announced its intent to acquire Expensya in June 2023 for an undisclosed sum reportedly over $100M according to sources familiar with the deal; the acquisition was publicly completed on July 25, 2023, positioning Expensya as part of a broader indirect spend management suite targeting mid-market CFOs."
+    },
+    {
+      "period": "2023-Q3",
+      "type": "category-shift",
+      "summary": "According to public announcements, Medius explicitly cited the upcoming French e-invoicing mandate (due July 2024) and cross-sell opportunities in competitive European business application markets as strategic rationale for the Expensya acquisition, reflecting a broader industry consolidation trend in which pure expense management point solutions were being absorbed into full AP and spend suites."
+    }
+  ],
+  "category_context": "According to market research, the global SaaS-based expense management market was valued at approximately $3.7B in 2021 and projected to grow at a ~13.4% CAGR through 2031, accelerated by remote work adoption and AI-driven automation; the period saw intense consolidation as standalone expense tools (like Expensya) were acquired by AP automation platforms (Medius) or competed against well-funded all-in-one challengers like Ramp, Brex, Navan, and Spendesk racing to bundle corporate cards, travel, and AP into unified spend platforms.",
+  "icp_evolution": "According to public sources, Expensya began the period primarily targeting European mid-market companies (1,000–10,000 employees) across multiple countries with a SaaS expense reporting tool, but reportedly evolved its ICP toward CFO-level buyers at mid-size organizations seeking a unified indirect spend platform — culminating in positioning that, post-Medius acquisition, reportedly targets the 'Office of the CFO' seeking end-to-end AP-plus-expense automation across ERP-integrated enterprise environments.",
+  "notable_competitors": [
+    "Spendesk",
+    "Navan (formerly TripActions)",
+    "Ramp",
+    "Brex",
+    "SAP Concur",
+    "Expensify"
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:08:45.842Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.291747
+}

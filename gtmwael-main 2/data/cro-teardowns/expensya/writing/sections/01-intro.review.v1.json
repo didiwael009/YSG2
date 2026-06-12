@@ -1,32 +1,38 @@
 {
-  "score": 88,
-  "pass": true,
+  "score": 72,
+  "pass": false,
   "issues": [
-    "The phrase 'signals a move' in sentence 3 is borderline causal without an explicit condition — should be reframed as 'suggests' or paired with a conditional",
-    "Word count is 121 words, exceeding the 90-word cap for intro sections by 31 words",
-    "The final sentence introduces a promise ('when narrowing your positioning... strengthens conversion — and when it costs you pipeline') that sets up an outcome claim pattern; acceptable in intro but must be supported later"
+    "The headline contains an unsupported causal claim: 'Exited the English-Speaking Market' — the evidence shows a language switch but does not confirm market exit or abandonment of English-speaking customers.",
+    "Paragraph is 135 words, exceeding the 90-word cap for intro sections.",
+    "The phrase 'how to read a homepage shift as a deliberate market exit' makes a causal claim ('deliberate market exit') not supported by the evidence — the strategic-shift object uses conditional language ('suggests', 'may reflect') rather than confirming intent.",
+    "The closing sentence ('when narrowing geography can strengthen positioning') is a generic strategic principle that could appear in any teardown, not specific to Expensya's evidence.",
+    "The draft does not answer the search query in the first sentence as required by the section goal — the query is 'Expensya homepage teardown' and the first sentence leads with 'exited the English-speaking market', which is an interpretation, not a factual summary."
   ],
   "requiredFixes": [
-    "Reduce word count from 121 to 90 words maximum — consider removing the explanatory clause in sentence 2 ('This is what expense management should look like') and condensing the final sentence",
-    "Replace 'signals a move' in sentence 3 with 'suggests' or add explicit condition: 'signals a move [if the company has existing market awareness]'"
+    "Replace the ## heading 'How a SaaS Company Exited the English-Speaking Market' with a factual, searchable heading that contains 'Expensya' and 'homepage' — e.g. 'Expensya Homepage Teardown: Oct 2020 to Jun 2026'.",
+    "Rewrite the first sentence to answer the search query factually: state the company name, the period, and the single biggest observable change (language shift + messaging reframe) without claiming 'market exit'.",
+    "Cut the paragraph to 90 words or fewer — remove the closing generic principle ('when narrowing geography can strengthen positioning') and end with a specific finding anchored to Expensya's evidence.",
+    "Remove or reframe 'deliberate market exit' — the evidence supports 'language shift' and 'positioning change', but does not confirm that Expensya abandoned English-speaking customers or deliberately exited that market."
   ],
   "riskFlags": [
-    "The closing promise ('you will know when narrowing your positioning... strengthens conversion — and when it costs you pipeline') must be supported with evidence or conditions in later sections; unsupported outcome claims elsewhere would trigger hard cap"
+    "UNSUPPORTED CAUSAL CLAIM: 'Exited the English-Speaking Market' — no evidence confirms that Expensya stopped serving English-speaking customers, closed English-language acquisition channels, or announced a market exit strategy. The evidence shows a homepage language change, not a verified business strategy shift.",
+    "UNSUPPORTED CAUSAL CLAIM: 'deliberate market exit' — the strategic-shift object uses conditional language ('suggests', 'may reflect'), indicating hypothesis rather than confirmed strategy. The draft presents this as fact.",
+    "OUTCOME CLAIM WITHOUT DATA: 'when narrowing geography can strengthen positioning' — this is a strategic principle, not a finding traceable to Expensya's evidence."
   ],
   "seoNotes": [
-    "H1 contains company name (Expensya), topic term (Homepage Teardown), and geographic angle (French SaaS) — strong for search",
-    "Opening sentence answers the search query directly: company name, period, and the single biggest shift (English automation → French UX-centered messaging)",
-    "The phrase 'when narrowing your positioning to a single geography strengthens conversion' includes a high-value secondary keyword structure (positioning + geography + conversion)"
+    "NEGATIVE: The ## heading 'How a SaaS Company Exited the English-Speaking Market' does not contain the company name 'Expensya' or the primary keyword 'homepage teardown' — will underperform in search for the target query.",
+    "POSITIVE: The first sentence does name the company and the period, satisfying part of the search intent.",
+    "NEGATIVE: The angle ('exited the English-speaking market') is not supported by the evidence and may mislead searchers who want to understand the homepage evolution, not speculate on market exit."
   ],
-  "rewriteInstruction": "Cut 31 words to meet the 90-word cap. Remove the parenthetical translation in sentence 2 — the French quotes are already bolded and the meaning is clear from context. Condense the final sentence to: 'By the end, you will know when geographic narrowing strengthens conversion and when it filters out pipeline.' Change 'signals a move' to 'suggests' in sentence 3 to avoid unsupported causation. Verify all changes preserve the direct answer to the search query in the opening sentence.",
+  "rewriteInstruction": "Rewrite the intro to 90 words or fewer. Start with a factual first sentence that names Expensya, the period (Oct 2020 to Jun 2026), and the single biggest observable change: the homepage switched from English feature-focused messaging to French UX-vision language. Replace 'market exit' framing with 'language and positioning shift'. Use only findings traceable to the evidence: headline change, CTA shift (free trial → demo), audience narrowing (all companies → finance teams). End with a specific preview of what the teardown will show (how to spot a positioning shift in homepage evidence), not a generic strategic principle. Change the ## heading to include 'Expensya' and 'homepage teardown'.",
   "dimensionScores": {
-    "evidenceAccuracy": 23,
-    "specificity": 15,
-    "plainLanguage": 20,
-    "scannability": 10,
-    "searchableHeadings": 10,
-    "rhythmAndOpening": 10,
-    "founderTakeaway": 0
+    "evidenceAccuracy": 5,
+    "specificity": 12,
+    "plainLanguage": 18,
+    "scannability": 12,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
   },
   "effectivePassThreshold": 85
 }

@@ -1,0 +1,29 @@
+{
+  "snapshots": [
+    {
+      "month": "2020-10",
+      "design_era": "growth",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Large headline with subtext, isometric product illustration on right, green CTA button and secondary link below",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "current-live",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Hero section with female portrait image on right side, French headline text overlay, blue CTA button prominently positioned",
+      "proof_density": "medium",
+      "primary_message_type": "story",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    }
+  ],
+  "visual_shift_summary": "The design shifted from an isometric illustration-led approach with centered layout to a full-bleed photography-driven hero featuring a real person, moving from abstract product visualization to human-centric narrative storytelling.",
+  "design_evolution_label": "illustration-to-photography-personalization",
+  "generatedAt": "2026-06-12T08:08:12.235Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0026944
+}

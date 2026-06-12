@@ -21,6 +21,10 @@
     "cro-teardown:seo-target": "tsx scripts/cro-teardown/generate-seo-target.ts",
     "cro-teardown:seo-intent": "tsx scripts/cro-teardown/seo-intent-planner.ts",
     "cro-teardown:strategic-shift": "tsx scripts/cro-teardown/strategic-shift-detector.ts",
+    "cro-teardown:marketing-cards": "tsx scripts/cro-teardown/marketing-cards-generator.ts",
+    "cro-teardown:visual-analyze": "tsx scripts/cro-teardown/visual-analyzer.ts",
+    "cro-teardown:research": "tsx scripts/cro-teardown/context-researcher.ts",
+    "cro-teardown:outline": "tsx scripts/cro-teardown/outline-generator.ts",
     "cro-teardown:qa": "tsx scripts/cro-teardown/qa-validator.ts",
     "cro-teardown:fix-text": "tsx scripts/cro-teardown/fix-page-text-extraction.ts",
     "cro-teardown:rebuild-evidence": "tsx scripts/cro-teardown/rebuild-evidence.ts"

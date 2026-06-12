@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Market scope",
+    "value": "Multi-country → France-only",
+    "note": "Entire homepage switched from English to French, removing international navigation"
+  },
+  {
+    "label": "Product positioning",
+    "value": "Expense software → Card + software bundle",
+    "note": "Added 'Cartes de paiement & budgets' as first section heading after Swan partnership"
+  },
+  {
+    "label": "Buyer persona",
+    "value": "Any company size → Finance teams",
+    "note": "Removed Small/Mid/Large nav; added 'équipes financières modernes' in meta description"
+  },
+  {
+    "label": "Acquisition model",
+    "value": "Self-serve trial → Demo-gated sales",
+    "note": "Replaced 'Free trial' CTA with 'Réservez une démo' post-acquisition"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "company_stage_start": "growth",
+  "company_stage_end": "scale",
+  "key_events": [
+    {
+      "period": "2020-Q3",
+      "type": "funding",
+      "summary": "Gong reportedly raised $200 million in Series D funding at a $2.2 billion valuation, according to a public press release, led by Coatue with participation from Salesforce Ventures, Index Ventures, and Thrive Capital. According to public sources, the round was fueled by 2.5X revenue growth year-to-date in 2020 and heightened demand driven by the shift to remote selling during the pandemic."
+    },
+    {
+      "period": "2021-Q2",
+      "type": "funding",
+      "summary": "Gong publicly announced a $250 million Series E round led by Franklin Templeton at a $7.25 billion valuation, bringing total funding to approximately $584 million. According to the press release, the company had reportedly grown ARR 2.3X between Q1 2020 and Q1 2021, surpassed 2,000 customers including three Fortune 20 companies, and crossed 550 employees — signaling a rapid push upmarket toward enterprise."
+    },
+    {
+      "period": "2021-Q4",
+      "type": "rebrand",
+      "summary": "Gong reportedly unveiled an updated brand in October 2021 as enterprise momentum continued, according to a public PRNewswire release. Simultaneously, the company previewed expanded products including 'Gong Assist' for automated task management and 'Reality-Based Forecasting,' according to public analyst coverage, signaling a deliberate positioning shift from pure conversation intelligence toward a broader revenue platform."
+    },
+    {
+      "period": "2022-Q4",
+      "type": "category-shift",
+      "summary": "According to public sources, Gong and the broader revenue intelligence category experienced significant growth headwinds from 2022 into 2023, reportedly tied to widespread sales team downsizing across the SaaS industry, which pressured Gong's per-seat pricing model and led to declines in net dollar retention. Competitor ZoomInfo's acquisition of Chorus reportedly consolidated one competing platform while intensifying price-based competition."
+    },
+    {
+      "period": "2024-Q1",
+      "type": "product-launch",
+      "summary": "Gong reportedly rebranded and repositioned as 'Revenue AI,' launching generative AI capabilities including 'Call Spotlight,' 'Ask Gong Anything,' and 'Deal Spotlight,' according to public press releases and Forrester Wave recognition. According to public sources, the company publicly accelerated a strategic pivot from 'Revenue Intelligence Platform' to the 'Gong Revenue AI Operating System,' targeting a broader GTM audience beyond just sales reps and VPs of Sales."
+    },
+    {
+      "period": "2025-Q4",
+      "type": "other",
+      "summary": "Gong publicly announced the acquisition of RightBound, an AI prospecting platform, in December 2025, according to CBInsights and company blog posts. Separately, according to public sources, Gong reportedly conducted a ~$4.5 billion secondary transaction in early 2026 amid broader revenue-AI category consolidation, and surpassed $300 million ARR, reportedly growing 55%+ year-over-year as enterprise AI adoption accelerated."
+    }
+  ],
+  "category_context": "The revenue intelligence and conversation intelligence category matured significantly from 2020 to 2026, evolving from a niche sales coaching tool into a broader 'Revenue AI' or 'Revenue Action Orchestration' category, with Gartner publishing its first Magic Quadrant for Revenue Action Orchestration in December 2025 according to public sources. According to industry analysts, the market hit approximately $1.2 billion in 2024 and is growing at roughly 12.8% annually, with major consolidation events including the Clari-Salesloft merger (closed December 2025) reshaping competitive dynamics and raising the stakes for platform completeness.",
+  "icp_evolution": "According to public sources, Gong reportedly began its period primarily targeting VP of Sales and individual sales reps at mid-market SaaS and technology companies, using conversation intelligence as a coaching tool. By 2024-2026, Gong's positioning and product messaging had reportedly shifted to target CROs, RevOps leaders, and entire GTM organizations at enterprise accounts, with the company publicly stating a strategic push 'upmarket' toward enterprise-level demos and customers with the largest expansion potential.",
+  "notable_competitors": [
+    "Clari",
+    "Salesloft",
+    "Chorus (ZoomInfo)",
+    "Outreach",
+    "Apollo"
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:09:03.966Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.28798199999999996
+}

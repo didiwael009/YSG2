@@ -1,0 +1,42 @@
+{
+  "score": 73,
+  "pass": false,
+  "issues": [
+    "H2 section heading contains no searchable terms — 'Why Gong's homepage changed' lacks 'homepage teardown', 'positioning', 'messaging', 'CTA', or 'conversion' — reducing discoverability",
+    "Second paragraph (Product evolution) exceeds 60-word limit at approximately 68 words — violates scannability budget for analytical context sections",
+    "Third paragraph (Industry shift) exceeds 60-word limit at approximately 75 words when measured from 'Gartner published...' through '...bounce rate on the pricing page' — violates stated section goal of ≤60 words per paragraph",
+    "Founder takeaway test is buried at the end of the third paragraph (starts at word 55+) rather than delivered in the first two sentences of its H3 block — violates founderTakeaway rubric requirement",
+    "The third paragraph contains 3+ distinct ideas tracked simultaneously: (1) Gartner MQ publication + Clari-Salesloft merger as industry context, (2) Gong's specific nav changes as company response, (3) founder test instruction — violates readability density rule",
+    "Meta description quote in second paragraph is missing the opening portion — draft says 'multimodal revenue signal processing, specialized AI agents' but evidence shows the full quote as 'Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.' — partial quote creates traceability ambiguity",
+    "Causal statement in first paragraph lacks attached condition: 'The removal of navigation items... coincided with this period of rapid customer expansion' implies causation (nav changes happened because of customer growth) without stating the condition under which this relationship holds",
+    "Second H3 subheading uses abstract 'Product evolution' rather than a searchable, specific phrase like 'From conversation tool to Revenue AI platform' that would signal the nature of the change to skimmers"
+  ],
+  "requiredFixes": [
+    "Change H2 section heading from 'Why Gong's homepage changed' to 'Why Gong's homepage messaging shifted: category maturity and platform expansion' — adds searchable terms 'homepage' + 'messaging' + 'category' for SEO and clarity",
+    "Split the third paragraph (Industry shift) into two blocks: (1) Industry context (Gartner MQ + merger) as its own 45-word block, (2) Founder test as a separate H3 titled 'Test this: Audit your navigation for category education' with the test instruction in the first sentence",
+    "Trim second paragraph to 60 words maximum — remove either the RightBound acquisition reference or compress the AI features list to 'launched generative AI features including Call Spotlight according to press releases' (singular)",
+    "Add condition to first paragraph causal statement: change 'The removal... coincided with this period' to 'The removal... occurred during this period — a pattern consistent with companies that no longer need to educate inbound traffic on category basics'",
+    "Complete the meta description quote in second paragraph: use the full 'Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing...' OR bracket the ellipsis to show truncation: '...multimodal revenue signal processing, specialized AI agents...'",
+    "Change second H3 from 'Product evolution: From conversation intelligence to Revenue AI OS' to 'Product expansion: Gong added AI agents and cross-GTM features' — more concrete and searchable"
+  ],
+  "riskFlags": [
+    "First paragraph: 'The removal of nav items... coincided with this period of rapid customer expansion' — implies causal relationship (nav changes happened because of growth) without evidence that customer count drove the nav decision; safer phrasing: 'occurred during the same period' or 'is consistent with a company that...'",
+    "Third paragraph: 'If you have 2+ educational nav items and your category has 50+ funded competitors, test removing one' — the 50+ threshold is not anchored to Gong's evidence and appears invented; founder test should reference Gong's specific evidence (e.g., 'If your company crossed 2,000 customers like Gong did by 2021...')"
+  ],
+  "seoNotes": [
+    "NEGATIVE: H2 section heading 'Why Gong's homepage changed' contains company name but lacks any topic keyword ('homepage teardown', 'positioning', 'messaging', 'CTA') — pure clever framing with no search utility",
+    "POSITIVE: All three H3 subheadings contain context-rich phrases ('Market entry context', 'Product evolution', 'Industry shift') that could match long-tail searches",
+    "NEGATIVE: The founder test instruction at the end of the third paragraph is not broken into its own scannable block with a keyword-rich H3, reducing likelihood of featured snippet extraction"
+  ],
+  "rewriteInstruction": "Restructure the section into four H3 blocks instead of three, splitting the current third paragraph so the founder test becomes its own block titled 'Test this: Audit your navigation assumptions'. Trim the second paragraph to exactly 60 words by removing the RightBound acquisition mention. Change the H2 to 'Why Gong's homepage messaging shifted from 2020 to 2026' to add searchable terms. Remove the causal framing in paragraph one ('coincided with') and replace with 'occurred during the same period as' plus a condition ('a timing consistent with companies that no longer need to teach inbound visitors what their category means'). In the new fourth H3 block, open with the founder test in sentence one, then provide the Gong evidence anchor in sentence two. Complete the meta description quote in paragraph two or add ellipsis brackets to show intentional truncation. Ensure no paragraph exceeds 60 words and every H3 block delivers its takeaway in the first two sentences.",
+  "dimensionScores": {
+    "evidenceAccuracy": 17,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 6,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

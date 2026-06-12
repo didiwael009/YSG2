@@ -1,9 +1,9 @@
 /**
  * webflow.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-11T17:04:47.047Z
- * Final judge  : 45/100 ✓
- * SEO score    : 76/100 ✓
+ * Published    : 2026-06-12T08:29:40.088Z
+ * Final judge  : 58/100 ✓
+ * SEO score    : 71/100 ✓
  *
  * Source files used:
  *   data/cro-teardowns/webflow/writing/generated-article-data.json
@@ -153,23 +153,23 @@ export const webflow: CroTeardownPost = {
   lessonCards: [
     {
       title: "Webflow replaced \"Break the code barrier\" with \"Make your website a growth engine\"",
-      body: "The original headline positioned Webflow as a no-code tool for designers. The new headline positions it as a marketing platform for revenue-focused teams. This suggests the company is moving upmarket — targeting buyers who care about business outcomes, not creative freedom. The shift from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** is a filtering decision: it will read as more relevant to CMOs and less exciting to solo designers.",
+      body: "The original headline spoke to designers who wanted to build without code. The new headline speaks to marketers who want business outcomes. This suggests a shift from product capability to business value. The change likely signals that Webflow is targeting teams who control budget and measure ROI, not individual practitioners exploring tools.",
       tag: "Positioning",
     },
     {
-      title: "\"Agentic web marketing platform\" appears in both the page title and the first H2",
-      body: "Webflow now calls itself an **\"agentic web marketing platform\"** in the page title and again in the hero section. The term \"agentic\" is uncommon in mainstream marketing copy — it may signal a strategic bet on AI-native positioning. The repetition across title and H2 suggests the company wants search engines and skimmers to associate Webflow with automation and agent-driven workflows, not just visual design.",
+      title: "\"Agentic web marketing platform\" appears three times — that's a category claim",
+      body: "The new page title and opening H2 both use **\"agentic web marketing platform\"**. This phrase appears nowhere in the 2020 version. Webflow is naming a category that didn't exist six years ago. The repetition suggests this is deliberate positioning language, not a one-off experiment. It may indicate a play for category ownership in AI-era web tooling.",
       tag: "Messaging",
     },
     {
-      title: "The new meta description mentions \"AI search\" and \"AEO\" — neither appeared in 2020",
-      body: "The updated meta description now includes **\"optimize, and rank in AI search\"** and references **\"AEO\"** (AI Engine Optimization). These terms did not exist in the 2020 version. This change likely reflects Webflow's response to the rise of AI-powered search engines like ChatGPT and Perplexed. The company is signaling to buyers that it solves a new category problem — not just SEO, but discoverability in LLM-mediated search results.",
+      title: "The meta description now starts with \"Design, build, optimize, and rank in AI search\"",
+      body: "The old meta description led with **\"Build responsive websites in your browser\"** — a product description. The new version opens with verbs tied to business outcomes and ends with **\"Trusted by over 300k teams\"**. This is a shift from explaining what the tool does to asserting who uses it and why. It suggests confidence in brand recognition over feature education.",
       tag: "Strategy",
     },
     {
-      title: "Webflow removed \"Get up and running fast\" and added \"From idea to impact, faster\"",
-      body: "The original section heading **\"Get up and running fast\"** emphasized ease of use and speed to first publish. The new heading **\"From idea to impact, faster\"** emphasizes speed to business outcome. This is a semantic shift: the old frame appealed to creators who wanted to launch quickly; the new frame appeals to marketers who want to measure results. The evolution points to a buyer who already knows what they want to build.",
-      tag: "Brand",
+      title: "Webflow removed \"Who uses Webflow\" and added \"300,000+ brands move the needle\"",
+      body: "The section heading change is subtle but meaningful. The old phrasing invited exploration. The new phrasing asserts scale and outcome. Pairing the number with **\"move the needle\"** ties credibility to results, not just adoption. This likely signals a shift from attracting curious visitors to reassuring buyers who are already qualified and comparing platforms.",
+      tag: "Trust",
     },
   ],
   toc: [
@@ -231,12 +231,34 @@ export const webflow: CroTeardownPost = {
       href: "/blog/ai-conversion-rate-optimization-saas",
     },
   ],
-  businessContext: "## Why the homepage changed\n\nThat repositioning didn't happen in a vacuum. Between 2020 and 2026, Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites. The period also saw AI-native search interfaces emerge as distribution channels, forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone.\n\nThe homepage evolution from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** suggests Webflow pivoted from capability positioning toward outcome-based enterprise messaging. Adding **\"AEO\"** (AI Engine Optimization) as a feature category and elevating **\"Contact Sales\"** to co-primary CTA is consistent with a shift from self-serve designer acquisition toward sales-assisted team and department deals. Section headings replaced user-focused language with business-impact claims like **\"move the needle\"** and **\"competitive edge\"**.\n\nThis maps to the broader SaaS category creation pattern: companies with proven product-market fit reposition into newly named categories to escape commoditization in saturated markets. For teams building website or marketing tools, this signals that distribution advantage now comes from solving for AI discoverability and proving pipeline impact — not just offering visual development. If your brand still requires feature education, this move is premature.",
-  articleBody: "---\ntitle: \"Webflow Homepage Teardown: Jan 2020 to Jun 2026\"\nslug: webflow\ngeneratedAt: 2026-06-11T17:03:34.163Z\nsectionsIncluded: [\"01-intro\", \"07-business-context\"]\n---\n# How Webflow rewrote its homepage over 6 years\n\n*Jan 2020 → Jun 2026 · 2 snapshots · 7 min read*\n\n---\n\n# Webflow Homepage Teardown: How the Platform Repositioned from Visual Builder to Growth Engine\n\nBetween January 2020 and June 2026, Webflow rewrote its homepage to target a different buyer. The headline shifted from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** — moving from a capability statement (what the tool does) to an outcome promise (what the business gets). The meta description dropped feature explanations and added **\"AEO\"** (AI Engine Optimization) and **\"enterprise-grade security\"**, signaling a shift toward category creation rather than category participation. This teardown shows how Webflow repositioned upmarket without abandoning its self-serve funnel — and what that means for SaaS companies deciding whether to follow a similar path.\n\n## Why the homepage changed\n\nThat repositioning didn't happen in a vacuum. Between 2020 and 2026, Webflow defended its position in the increasingly crowded no-code web development space while enterprise competitors like WordPress VIP and Adobe Experience Manager consolidated marketing tool suites. The period also saw AI-native search interfaces emerge as distribution channels, forcing website platforms to differentiate on discovery and conversion optimization rather than design flexibility alone.\n\nThe homepage evolution from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** suggests Webflow pivoted from capability positioning toward outcome-based enterprise messaging. Adding **\"AEO\"** (AI Engine Optimization) as a feature category and elevating **\"Contact Sales\"** to co-primary CTA is consistent with a shift from self-serve designer acquisition toward sales-assisted team and department deals. Section headings replaced user-focused language with business-impact claims like **\"move the needle\"** and **\"competitive edge\"**.\n\nThis maps to the broader SaaS category creation pattern: companies with proven product-market fit reposition into newly named categories to escape commoditization in saturated markets. For teams building website or marketing tools, this signals that distribution advantage now comes from solving for AI discoverability and proving pipeline impact — not just offering visual development. If your brand still requires feature education, this move is premature.",
+  businessContext: "## Why Webflow's homepage shifted from designer tool to enterprise platform\n\nThe messaging changes documented above didn't happen in a vacuum — they tracked a deliberate business transformation.\n\n### Market entry context\n\nWebflow raised over $330 million between 2021 and 2022, reaching a $4 billion valuation. That funding coincided with reported enterprise revenue growth from $1 million to $8 million in 2021 alone. The company began competing in a maturing no-code market where Framer captured designer mindshare and Wix launched Studio for agencies.\n\n### Product and competitive evolution\n\nThe 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization. The company called this move toward a \"Website Experience Platform.\" The homepage shift from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** is consistent with targeting marketing leaders rather than individual designers.\n\n### Industry shift\n\nIn 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development. The homepage removed showcase CTAs that promoted community work and added **\"Contact Sales\"** as a primary action. This points to prioritizing predictable enterprise contracts over viral designer adoption — a tradeoff visible in how the page now filters for buyers, not builders.\n\n### Five-minute test: Count your zero-commitment CTAs vs. sales-contact CTAs\n\nOpen your homepage. Count how many primary CTAs let someone start without talking to sales. Then count CTAs that require contact. If most require sales contact but your brand still depends on non-enterprise traffic, you may be filtering out the buyers who actually arrive.",
+  marketingSummaryCards: [
+    {
+      label: "Growth model",
+      value: "Viral showcase → Sales-led platform",
+      note: "Removed #MadeInWebflow showcase CTAs; added Contact Sales",
+    },
+    {
+      label: "Target buyer",
+      value: "Freelance designers → Marketing leaders",
+      note: "From 'Who uses Webflow' to 'Everything marketing teams love'",
+    },
+    {
+      label: "Category claim",
+      value: "No-code tool → Agentic web platform",
+      note: "Page title introduced 'agentic' terminology for AI-era positioning",
+    },
+    {
+      label: "Outcome promise",
+      value: "Break code barrier → Growth engine",
+      note: "H1 shifted from capability unlock to business outcome delivery",
+    },
+  ],
+  articleBody: "---\ntitle: \"Webflow Homepage Teardown: Jan 2020 to Jun 2026\"\nslug: webflow\ngeneratedAt: 2026-06-12T08:21:46.897Z\nsectionsIncluded: [\"01-intro\", \"07-business-context\"]\n---\n# How Webflow rewrote its homepage over 6 years\n\n*Jan 2020 → Jun 2026 · 2 snapshots · 7 min read*\n\n---\n\n# Webflow Homepage Teardown: How the Company Repositioned from Developer Tool to Growth Platform\n\nWebflow replaced its entire homepage messaging between January 2020 and June 2026. The original headline — **\"Break the code barrier\"** — positioned the product as a visual development tool for designers who wanted to build without writing code. The new headline — **\"Make your website a growth engine\"** — speaks to marketing teams evaluating platforms based on business outcomes, not technical capability. The CTA shifted from **\"Get started — it's free\"** to **\"Contact Sales\"** elevated to primary position. This is not just an enterprise expansion. It's a replacement of one growth model (viral bottom-up adoption by practitioners) with another (sales-assisted conversion of marketing teams). After reading this teardown, you'll be able to identify whether your own homepage is still selling capability when it should be selling outcomes — and when that shift becomes safe to make.\n\n## Why Webflow's homepage shifted from designer tool to enterprise platform\n\nThe messaging changes documented above didn't happen in a vacuum — they tracked a deliberate business transformation.\n\n### Market entry context\n\nWebflow raised over $330 million between 2021 and 2022, reaching a $4 billion valuation. That funding coincided with reported enterprise revenue growth from $1 million to $8 million in 2021 alone. The company began competing in a maturing no-code market where Framer captured designer mindshare and Wix launched Studio for agencies.\n\n### Product and competitive evolution\n\nThe 2024 Intellimize acquisition — Webflow's first — introduced AI-driven personalization. The company called this move toward a \"Website Experience Platform.\" The homepage shift from **\"Break the code barrier\"** to **\"Make your website a growth engine\"** is consistent with targeting marketing leaders rather than individual designers.\n\n### Industry shift\n\nIn 2024, Webflow reportedly laid off 8% of staff and redirected resources toward AI product development. The homepage removed showcase CTAs that promoted community work and added **\"Contact Sales\"** as a primary action. This points to prioritizing predictable enterprise contracts over viral designer adoption — a tradeoff visible in how the page now filters for buyers, not builders.\n\n### Five-minute test: Count your zero-commitment CTAs vs. sales-contact CTAs\n\nOpen your homepage. Count how many primary CTAs let someone start without talking to sales. Then count CTAs that require contact. If most require sales contact but your brand still depends on non-enterprise traffic, you may be filtering out the buyers who actually arrive.",
   internalLinkSuggestions: [
     "/conversion-rate-optimisation-specialist",
     "/landing-page-for-saas",
     "/saas-marketing-agency",
   ],
-  publishedAt: "2026-06-11T17:04:47.047Z",
+  publishedAt: "2026-06-12T08:29:40.088Z",
 };

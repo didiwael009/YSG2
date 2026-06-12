@@ -425,6 +425,41 @@ moment they sense you are writing for other strategists.
 
    Confident, not reckless.
 
+10. MAX 2 IDEAS PER PARAGRAPH.
+
+   One analytical paragraph = one finding. State it in sentence 1. Explain why
+   in sentences 2–3. Draw the implication in sentence 4 at most. If you need
+   sentence 5, you have a second idea — start a new paragraph.
+
+   FORMULA: FINDING → EXPLANATION → EXAMPLE → IMPLICATION
+
+   BAD:  "The headline shifted from features to outcomes, which often signals an ICP
+          narrowing driven by competitive pressure, and this is consistent with the CTA
+          change and the navigation simplification, which together suggest a buyer
+          qualification shift, meaning the page is now filtering for a specific
+          company stage rather than welcoming all comers."
+          (4 ideas stacked; reader must hold everything at once.)
+
+   GOOD: "The headline stopped naming a category and started assuming the reader
+          already knows what the product does. That is a shift from explaining to
+          qualifying — the page now filters for buyers who arrive informed.
+          Test it: if your own headline still contains words like 'platform' or
+          'solution', it is probably still in explanation mode."
+          (One idea: headline-as-filter. Three sentences. Takeaway at the end.)
+
+─── STYLE REFERENCE — plain writing rules ───────────────────────────────────
+
+These rules apply to every section. Check your draft against them before submitting.
+
+  • Write like you are explaining to a smart client on a call — not drafting a report.
+  • Use short sentences. Use short paragraphs. Vary them.
+  • Start with the problem or finding. Do not build up to it.
+  • Every section answers one clear question. Do not cover two topics in one section.
+  • Use examples. A before/after quote or a concrete scenario beats an abstract claim.
+  • Be specific. "14 new headings added" is more useful than "significant structural change".
+  • Useful beats clever. If a sentence sounds smart but is hard to understand, rewrite it.
+  • Clarity wins. Simple converts better than complicated.
+
 ─── THE SELF-CHECK — RUN BEFORE YOU SUBMIT ──────────────────────────────────
 
 Before producing your final output, mentally walk this checklist on your own draft.
@@ -441,6 +476,12 @@ Rewrite any line that fails.
 
   [ ] Is any paragraph over 60 words?
       → If yes, split it. (Intro: 90-word cap. All other sections: 60-word cap.)
+
+  [ ] Does any paragraph contain more than 2 distinct ideas?
+      → If yes, split it. One paragraph = one finding.
+
+  [ ] Does each analytical paragraph state its finding within the first 2 sentences?
+      → If no, move the finding up. Do not build to it.
 
   [ ] Does the ## section heading contain at least one searchable term?
       → If no, rewrite it with company name, "homepage", or "positioning" in it.
@@ -500,6 +541,19 @@ SCORING RUBRIC — score each dimension, then sum to 100:
   PENALISE -4 if any expert term is used without an immediate plain-language definition.
   HARD CAP: if any forbidden term appears 3+ times → cap total at 65.
 
+  READABILITY RULES (density and structure — scored within this dimension):
+  PENALISE -3 if any analytical paragraph contains more than 2 distinct ideas
+    (concepts the reader must track simultaneously).
+  PENALISE -3 if an analytical paragraph does not state its finding within the
+    first 2 sentences — the finding must come first, not at the end.
+  PENALISE -3 if the section reads like a strategic memo or consultant report
+    rather than a plain explanation to a smart founder.
+  PENALISE -3 if the closing sentence of an analytical paragraph is abstract
+    ("this reflects a broader shift toward...") rather than concrete or actionable.
+  FORMULA CHECK: every analytical paragraph should follow
+    FINDING → EXPLANATION → EXAMPLE → IMPLICATION.
+    If a paragraph cannot be mapped to this formula, it likely needs to be split.
+
 • scannability (max 15)
   Section works for a Google reader who skims.
   PENALISE -4 per paragraph over 60 words (intro exempt, capped at 90).
@@ -550,6 +604,7 @@ rewriteInstruction must never be empty if score < 90.`;
 export function buildWriterPrompt(
   sectionId: string,
   evidence: Record<string, unknown>,
+  outlineOverride?: { customH2: string | null; customGoal: string } | null,
 ): string {
   const meta = getSectionMeta(sectionId);
   const forbiddenBlock =
@@ -557,9 +612,14 @@ export function buildWriterPrompt(
       ? `\nFORBIDDEN PHRASES — never use any of these, not even partially:\n${meta.forbiddenPhrases.map(p => `  • "${p}"`).join('\n')}`
       : '';
 
+  const effectiveGoal = outlineOverride?.customGoal ?? meta.goalDescription;
+  const h2Override = outlineOverride?.customH2
+    ? `\nOUTLINE H2 (use this exact heading, not the default): ${outlineOverride.customH2}`
+    : '';
+
   return `Write the ${meta.title} section for a CRO teardown article about ${String(evidence.companyName ?? 'the company')}.
 
-SECTION GOAL: ${meta.goalDescription}
+SECTION GOAL: ${effectiveGoal}${h2Override}
 WRITER INSTRUCTION:
 ${meta.writerInstruction}
 TARGET LENGTH: ${meta.wordRange.min}–${meta.wordRange.max} words${forbiddenBlock}
@@ -647,6 +707,7 @@ export function buildRewriterPrompt(
   currentDraft: string,
   criticResult: CriticResult,
   minScore: number,
+  outlineOverride?: { customH2: string | null; customGoal: string } | null,
 ): string {
   const meta = getSectionMeta(sectionId);
   const fixList = criticResult.requiredFixes.length > 0
@@ -677,13 +738,17 @@ or unsupported interpretation) that cannot be fixed by editing the existing text
 Treat the CURRENT DRAFT as a reference only — do not preserve its sentence structure.\n`
     : '';
 
+  const h2Override = outlineOverride?.customH2
+    ? `\nOUTLINE H2 (use this exact heading — do not revert to the default): ${outlineOverride.customH2}`
+    : '';
+
   return `Rewrite the ${meta.title} section to fix specific editorial issues.
 
 SECTION ID: ${sectionId}
 CRITIC SCORE: ${criticResult.score}/100 (needs ≥ ${minScore} to pass)
 ${structuralDirective}
 WRITER INSTRUCTION (follow this structure when doing a structural rewrite):
-${meta.writerInstruction}
+${meta.writerInstruction}${h2Override}
 TARGET LENGTH: ${meta.wordRange.min}–${meta.wordRange.max} words${forbiddenBlock}
 
 REQUIRED FIXES:
@@ -762,6 +827,15 @@ export interface WriteSectionOpts {
    * Sonnet instead of their default Opus). Critic model is unaffected.
    */
   writerModelOverride?: string;
+  /**
+   * Layer 3.5 outline override: custom H2 heading and goal for this section.
+   * When provided, the outline's brand-specific H2 and goal replace the
+   * generic SECTION_META defaults in the writer prompt.
+   */
+  outlineOverride?: {
+    customH2:   string | null;
+    customGoal: string;
+  };
   tracker: CostTracker;
   /** Called for each step so the caller controls console output and run-log. */
   onLog: (step: string, ok: boolean, detail?: string) => void;
@@ -797,7 +871,7 @@ export async function writeSectionLoop(
     () => callLLM({
       model: writerModel,
       system: WRITER_SYSTEM,
-      messages: [{ role: 'user', content: buildWriterPrompt(sectionId, evidence) }],
+      messages: [{ role: 'user', content: buildWriterPrompt(sectionId, evidence, opts.outlineOverride) }],
       maxTokens: 2048,
       cacheSystem: true,
     }),
@@ -886,7 +960,7 @@ export async function writeSectionLoop(
 
   while (!lastCritic.pass && !lastCritic.parseFailed && loopsUsed < effectiveMaxLoops) {
     const rewritePrompt = buildRewriterPrompt(
-      sectionId, evidence, currentDraft, lastCritic, minScore,
+      sectionId, evidence, currentDraft, lastCritic, minScore, opts.outlineOverride,
     );
     if (tracker.wouldExceedBudget(estimateTokens(rewritePrompt), rewriterModel)) {
       onLog('Budget cap — stopping rewrite', false, `$${tracker.totalCostUsd.toFixed(4)}`);

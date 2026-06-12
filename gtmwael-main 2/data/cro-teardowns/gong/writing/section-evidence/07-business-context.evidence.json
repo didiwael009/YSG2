@@ -1,0 +1,162 @@
+{
+  "sectionId": "07-business-context",
+  "companyName": "Gong",
+  "companyUrl": "https://www.gong.io/",
+  "articleTitle": "Gong Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Gong rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 4,
+    "ctaAdded": 5,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Gong homepage teardown",
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "REVENUE INTELLIGENCE",
+      "after": "Revenue AI Built To Predict churnPredict churn",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+      "after": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Revenue Intelligence Technology for Sales Teams | Gong.io",
+      "after": "Gong - Revenue AI OS"
+    }
+  ],
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "3 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "10 added · 4 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Gong moved from defining and owning the 'Revenue Intelligence' category for sales practitioners to positioning itself as the infrastructure layer ('Revenue AI OS') for entire go-to-market organizations, signaling a shift from departmental tool to enterprise platform play.",
+    "old_positioning_frame": "Educational evangelism for a new category ('Revenue Intelligence') focused on helping sales teams optimize conversations and generate more revenue through visibility into customer interactions.",
+    "new_positioning_frame": "Platform infrastructure ownership ('Revenue AI OS') that powers the entire GTM organization's revenue engine through multimodal signal processing, specialized AI agents, and purpose-built applications.",
+    "buyer_shift": "VP of Sales and sales practitioners seeking conversation intelligence and coaching tools → CRO/Chief Revenue Officer and GTM leadership seeking organization-wide revenue operating system.",
+    "funnel_shift": "Mid-funnel education (explaining what Revenue Intelligence is and why it matters) → Late-funnel platform evaluation (demonstrating enterprise-wide efficiency gains and ROI for organizations already convinced they need revenue AI).",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "REVENUE INTELLIGENCE",
+        "new": "Revenue AI Built To Predict churnPredict churn",
+        "meaning": "Suggests abandonment of category education in favor of specific capability claims; the shift from definitional term ('Revenue Intelligence') to technical architecture term ('Revenue AI') signals movement from creating a category to owning infrastructure within an established space."
+      },
+      {
+        "element": "Meta description",
+        "old": "Generate more revenue by having better sales conversations with the #1 revenue intelligence platform for sales optimization.",
+        "new": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
+        "meaning": "The replacement of practitioner outcome language ('better sales conversations', 'sales optimization') with infrastructure terminology ('OS', 'multimodal signal processing', 'specialized AI agents') and audience expansion ('entire GTM organization' vs 'sales') is consistent with a platform repositioning that requires technical architecture evaluation rather than departmental point solution buying."
+      },
+      {
+        "element": "Navigation",
+        "old": "What is RI? · Overview · Reveal: The RI Podcast · Product · Coaching Recommendations · Deal Visibility",
+        "new": "View Gong Labs Trends · Gong AI · Innovation · Contact · Pricing · Book a demo · Product Overview · Gong Engage",
+        "meaning": "The removal of 'What is RI?' and the podcast (educational content for category creation) alongside removal of feature-specific nav items ('Coaching Recommendations', 'Deal Visibility') in favor of 'Gong AI' and 'Innovation' suggests the company assumes buyers already understand the category and are evaluating platform breadth and technical sophistication rather than learning about basic capabilities."
+      },
+      {
+        "element": "Section headings",
+        "old": "Get powerful visibility into your customer interactions with · Revenue Intelligence helps you fuel: · So What Does this look like? Glad you asked.",
+        "new": "Winning GTM organizations run revenue on Gong · Pitchbook is 10x more efficient with revenue AI · Gong Revenue AI OS · Trusted by high-performing revenue teams in every industry",
+        "meaning": "The shift from explanatory language ('So What Does this look like? Glad you asked.') to efficiency proof points ('10x more efficient') and infrastructure framing ('run revenue on Gong') points to an assumption that visitors no longer need the category explained and are instead comparing enterprise platform alternatives based on quantified enterprise outcomes."
+      },
+      {
+        "element": "Primary CTAs",
+        "old": "Watch Video · Learn more · Paul Santarelli VP of Sales · Bevin Lyon VP, Customer Strategy · Tonni Bennett VP of Sales",
+        "new": "Learn more · Read the case study · Learn about our product · View more customer stories · Apply",
+        "meaning": "The removal of named sales practitioners from CTAs and replacement with case study/customer story CTAs suggests a move from peer-to-peer practitioner selling (where VP of Sales speaks to VP of Sales) to enterprise procurement processes that require documented ROI and cross-functional validation."
+      }
+    ],
+    "copy_this_if": "Your product category is now widely understood by your target buyers (prospects come inbound asking for your category by name), you have 1,000+ enterprise customers providing social proof, and your ACV has increased to the point where deals involve C-level sign-off rather than departmental budget holders.",
+    "do_not_copy_this_if": "You are still educating the market on why your category exists, your brand name does not yet autocomplete with a known category in buyer search behavior, or your typical deal size requires only a single department head's approval without cross-functional evaluation.",
+    "safer_version_for_early_stage_saas": "Keep the category education H1 but test adding a single sentence of concrete capability proof immediately below it (e.g., 'Revenue Intelligence: See which deals will close before your forecast call') to satisfy visitors at different awareness stages, rather than assuming all visitors understand the category and are ready for architecture evaluation.",
+    "risk_if_copied": "Visitors who are not yet familiar with your category or product type will lack the context to understand what 'AI OS' or infrastructure terminology means for their specific problem, leading to immediate bounce as they cannot connect abstract platform positioning to their concrete pain point—particularly dangerous if you lack Gong's brand recognition to command attention despite abstract messaging.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T08:07:51.314Z",
+    "model": "claude-sonnet-4-5",
+    "costUsd": 0.024537000000000003
+  },
+  "business-context-research": {
+    "company_stage_start": "growth",
+    "company_stage_end": "scale",
+    "key_events": [
+      {
+        "period": "2020-Q3",
+        "type": "funding",
+        "summary": "Gong reportedly raised $200 million in Series D funding at a $2.2 billion valuation, according to a public press release, led by Coatue with participation from Salesforce Ventures, Index Ventures, and Thrive Capital. According to public sources, the round was fueled by 2.5X revenue growth year-to-date in 2020 and heightened demand driven by the shift to remote selling during the pandemic."
+      },
+      {
+        "period": "2021-Q2",
+        "type": "funding",
+        "summary": "Gong publicly announced a $250 million Series E round led by Franklin Templeton at a $7.25 billion valuation, bringing total funding to approximately $584 million. According to the press release, the company had reportedly grown ARR 2.3X between Q1 2020 and Q1 2021, surpassed 2,000 customers including three Fortune 20 companies, and crossed 550 employees — signaling a rapid push upmarket toward enterprise."
+      },
+      {
+        "period": "2021-Q4",
+        "type": "rebrand",
+        "summary": "Gong reportedly unveiled an updated brand in October 2021 as enterprise momentum continued, according to a public PRNewswire release. Simultaneously, the company previewed expanded products including 'Gong Assist' for automated task management and 'Reality-Based Forecasting,' according to public analyst coverage, signaling a deliberate positioning shift from pure conversation intelligence toward a broader revenue platform."
+      },
+      {
+        "period": "2022-Q4",
+        "type": "category-shift",
+        "summary": "According to public sources, Gong and the broader revenue intelligence category experienced significant growth headwinds from 2022 into 2023, reportedly tied to widespread sales team downsizing across the SaaS industry, which pressured Gong's per-seat pricing model and led to declines in net dollar retention. Competitor ZoomInfo's acquisition of Chorus reportedly consolidated one competing platform while intensifying price-based competition."
+      },
+      {
+        "period": "2024-Q1",
+        "type": "product-launch",
+        "summary": "Gong reportedly rebranded and repositioned as 'Revenue AI,' launching generative AI capabilities including 'Call Spotlight,' 'Ask Gong Anything,' and 'Deal Spotlight,' according to public press releases and Forrester Wave recognition. According to public sources, the company publicly accelerated a strategic pivot from 'Revenue Intelligence Platform' to the 'Gong Revenue AI Operating System,' targeting a broader GTM audience beyond just sales reps and VPs of Sales."
+      },
+      {
+        "period": "2025-Q4",
+        "type": "other",
+        "summary": "Gong publicly announced the acquisition of RightBound, an AI prospecting platform, in December 2025, according to CBInsights and company blog posts. Separately, according to public sources, Gong reportedly conducted a ~$4.5 billion secondary transaction in early 2026 amid broader revenue-AI category consolidation, and surpassed $300 million ARR, reportedly growing 55%+ year-over-year as enterprise AI adoption accelerated."
+      }
+    ],
+    "category_context": "The revenue intelligence and conversation intelligence category matured significantly from 2020 to 2026, evolving from a niche sales coaching tool into a broader 'Revenue AI' or 'Revenue Action Orchestration' category, with Gartner publishing its first Magic Quadrant for Revenue Action Orchestration in December 2025 according to public sources. According to industry analysts, the market hit approximately $1.2 billion in 2024 and is growing at roughly 12.8% annually, with major consolidation events including the Clari-Salesloft merger (closed December 2025) reshaping competitive dynamics and raising the stakes for platform completeness.",
+    "icp_evolution": "According to public sources, Gong reportedly began its period primarily targeting VP of Sales and individual sales reps at mid-market SaaS and technology companies, using conversation intelligence as a coaching tool. By 2024-2026, Gong's positioning and product messaging had reportedly shifted to target CROs, RevOps leaders, and entire GTM organizations at enterprise accounts, with the company publicly stating a strategic push 'upmarket' toward enterprise-level demos and customers with the largest expansion potential.",
+    "notable_competitors": [
+      "Clari",
+      "Salesloft",
+      "Chorus (ZoomInfo)",
+      "Outreach",
+      "Apollo"
+    ],
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T08:09:03.966Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.28798199999999996
+  }
+}

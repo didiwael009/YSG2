@@ -1,0 +1,50 @@
+{
+  "company_stage_start": "seed",
+  "company_stage_end": "scale",
+  "key_events": [
+    {
+      "period": "2022-Q1",
+      "type": "product-launch",
+      "summary": "According to public sources, Clay made a decisive January 2022 pivot to focus exclusively on outbound sales and go-to-market teams, abandoning a broad multi-ICP approach. The platform reportedly launched on Product Hunt in February 2022, transitioning from near-zero revenue despite having raised ~$16M since founding."
+    },
+    {
+      "period": "2023-Q1",
+      "type": "funding",
+      "summary": "Clay reportedly closed a $13.5M Series A led by Sequoia Capital, according to public funding records. This followed 10x revenue growth in 2022 and validated the January 2022 pivot to sales-team focus, reportedly growing from ~120 to 1,000+ customers by year-end 2023."
+    },
+    {
+      "period": "2023-Q4",
+      "type": "competitor-move",
+      "summary": "HubSpot reportedly acquired data enrichment platform Clearbit in December 2023, rebranding it as Breeze Intelligence and locking it behind a HubSpot subscription. According to public sources, this consolidation move left non-HubSpot CRM users without a standalone enrichment solution and accelerated demand for CRM-agnostic enrichment platforms like Clay."
+    },
+    {
+      "period": "2023-Q4",
+      "type": "rebrand",
+      "summary": "According to multiple public analyses, Clay reportedly coined the 'GTM Engineer' role in late 2023 as a deliberate category-creation strategy, positioning their tool as the defining platform for a new technical profession rather than just another sales enrichment product. This messaging shift reportedly accompanied the transition from benefit-level homepage copy to identity-level positioning."
+    },
+    {
+      "period": "2024-Q2",
+      "type": "funding",
+      "summary": "Clay publicly announced a $46M Series B at a $500M valuation led by Meritech Capital, according to press releases. The company reportedly had 2,500+ customers and 100,000+ users at this point, with 6x revenue growth in 2024 cited as the primary driver."
+    },
+    {
+      "period": "2025-Q1",
+      "type": "product-launch",
+      "summary": "Clay reportedly acquired Avenue, a workflow automation tool focused on intent signals, according to public announcements around the January 2025 $40M Series B expansion at a $1.25B valuation. This acquisition, combined with a new 'GTM development environment' homepage framing, reportedly signaled a shift from data enrichment tool to full-stack GTM operating platform."
+    }
+  ],
+  "category_context": "The B2B sales intelligence and data enrichment category underwent rapid consolidation and AI-driven disruption between 2021 and 2025, including HubSpot acquiring Clearbit in December 2023 and incumbents like ZoomInfo and Apollo expanding from pure data into workflow automation. According to public market analyses, AI-powered personalization at scale shifted from a differentiator to a baseline expectation, pushing vendors toward platform positioning and category creation rather than point-solution feature competition.",
+  "icp_evolution": "According to public founder interviews and case studies, Clay reportedly began the period serving a broad, undefined ICP of engineers, recruiters, and general productivity users before pivoting in January 2022 to focus narrowly on cold email agencies and growth marketing teams doing outbound enrichment. By 2023-2025, the ICP reportedly expanded upmarket to include RevOps teams and technical GTM operators at high-growth SaaS companies — a newly invented persona Clay called the 'GTM Engineer' — while also adding enterprise logos like OpenAI, Anthropic, Canva, and Rippling.",
+  "notable_competitors": [
+    "Apollo.io",
+    "ZoomInfo",
+    "HubSpot Breeze Intelligence (formerly Clearbit)",
+    "Lusha",
+    "Persana AI",
+    "LinkedIn Sales Navigator"
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-12T08:05:53.293Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.301371
+}

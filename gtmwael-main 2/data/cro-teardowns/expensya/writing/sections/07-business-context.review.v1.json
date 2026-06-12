@@ -1,0 +1,45 @@
+{
+  "score": 62,
+  "pass": false,
+  "issues": [
+    "Section is missing all required H3 subheadings — this is an analytical section (07) and must have H3 sub-blocks per the rubric",
+    "Paragraph 1 exceeds 60 words (79 words counted)",
+    "Paragraph 2 exceeds 60 words (73 words counted)",
+    "Paragraph 3 exceeds 60 words (62 words counted)",
+    "Section goal requires three short paragraphs (≤60 words each) explaining market entry, product evolution, and industry shift — all three paragraphs violate the length constraint",
+    "No founder takeaway present — section must end with a specific, runnable test under 5 minutes",
+    "Causal claim in paragraph 3: 'Post-acquisition, Expensya appears designed to integrate into Medius's AP suite rather than compete as a standalone international tool' — this is a strategic intent claim not directly supported by homepage element evidence",
+    "The section reads like a business strategy memo rather than a plain explainer to a smart founder — tone violates plainLanguage rubric",
+    "Opening sentence stacks abstract concepts ('strategic rationale', 'broader industry shift', 'standalone expense tools') without grounding the reader in a concrete finding first",
+    "Section total word count is approximately 194 words, exceeding the stated 120–200 word target when combined with required H3 structure overhead"
+  ],
+  "requiredFixes": [
+    "Add required H3 subheadings — suggested structure: '### Market entry timing: French e-invoicing mandate', '### Product evolution: from software to embedded cards', '### Industry consolidation: expense tools absorbed into spend suites'",
+    "Trim all three paragraphs to ≤60 words each — current counts are 79, 73, and 62 words respectively",
+    "Add a fourth H3 block with a specific founder takeaway test, e.g. '### Quick test: does your homepage localize for regulation or product?' with a runnable 5-minute audit",
+    "Remove or condition the causal claim in paragraph 3 ('Post-acquisition, Expensya appears designed to integrate...') — replace with observable homepage evidence, e.g. 'The French-only homepage and demo CTA suggest...'",
+    "Rewrite opening sentence to lead with a concrete finding rather than background context — e.g. 'Expensya's homepage went French-only in 2023, the same year Medius acquired it for over $100M'",
+    "Simplify sentence structure in paragraph 1 — currently stacks three abstract ideas (acquisition rationale, industry shift, competitor bundling) in a single 79-word sentence"
+  ],
+  "riskFlags": [
+    "Causal claim: 'Post-acquisition, Expensya appears designed to integrate into Medius's AP suite rather than compete as a standalone international tool' — this is strategic intent inference, not observable homepage change",
+    "Outcome claim: 'The acquisition reflected a broader industry shift' — presented as fact but is interpretive framing, not traceable to Expensya's homepage evidence",
+    "The phrase 'are consistent with repositioning' in paragraph 2 is hedged but still implies causation without stating the condition under which this interpretation holds"
+  ],
+  "seoNotes": [
+    "Heading contains company name ('Expensya') and searchable terms ('homepage', 'Medius acquisition') — meets searchableHeadings requirement",
+    "No bold quotes applied to verbatim website elements in paragraph 2 — **'Automated spend management for all companies'**, **'Voici à quoi devrait ressembler la gestion des dépenses'**, **'Cartes de paiement & budgets'**, **'Réservez une démo'**, and **'Free trial'** are correctly bolded, so this is satisfied",
+    "Section includes specific company names (Medius, Ramp, Brex, Spendesk, Swan) which aids contextual search relevance"
+  ],
+  "rewriteInstruction": "Restructure into three H3 sub-blocks (market timing, product evolution, industry shift), each ≤60 words, followed by a fourth H3 with a 5-minute founder test. Lead each H3 block with its finding in the first sentence, not background. Remove all causal claims about Medius's strategic intent — describe only observable homepage changes (language switch, nav pruning, CTA shift) and attach any interpretation to a stated condition ('if Expensya intended to...'). Replace the opening background sentence with a concrete homepage finding that pulls the reader in (e.g. 'Expensya's homepage switched to French-only the same year it was acquired'). Simplify sentence structure — no paragraph should require the reader to track more than two ideas simultaneously. End with a specific test: 'Visit your homepage. Count how many primary CTAs assume English-speaking international buyers. If >50%, you may be over-indexed for discovery traffic you are not converting.' Ensure the section reads like a plain explainer to a founder, not a consultant memo to a VP of Strategy.",
+  "dimensionScores": {
+    "evidenceAccuracy": 15,
+    "specificity": 12,
+    "plainLanguage": 8,
+    "scannability": 0,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 5,
+    "founderTakeaway": 0
+  },
+  "effectivePassThreshold": 85
+}

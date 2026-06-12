@@ -381,6 +381,16 @@ async function main(): Promise<void> {
     }
   }
 
+  // ── Load marketing summary cards if available (Phase 4C marketing-cards-generator) ──
+  const marketingCardsPath = path.join(writingDir, 'section-evidence', 'marketing-summary-cards.json');
+  if (fs.existsSync(marketingCardsPath)) {
+    const mCards = JSON.parse(fs.readFileSync(marketingCardsPath, 'utf-8'));
+    if (Array.isArray(mCards) && mCards.length > 0) {
+      structuredData.marketingSummaryCards = mCards;
+      console.log(`✅  Loaded ${mCards.length} marketing signal cards from marketing-summary-cards.json`);
+    }
+  }
+
   // ── Decide what to override ─────────────────────────────────────────────────
   // Keep structured data description/excerpt as-is — they're the complete
   // versions. The seo.json metaDescription is SERP-truncated ("…" ending).
