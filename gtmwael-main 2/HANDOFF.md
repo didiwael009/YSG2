@@ -99,6 +99,14 @@ These are legitimate references. Do **not** flag them as hallucinations.
 - Task F: Sentence-length critic rule (-3 if >12% sentences >30 words) + writer 35-word hard cap
 - Task G: 3-variant CTA rotation by slug hash (`getCtaForSlug`, `getRelatedPostsForSlug`)
 
+### 2026-06-13 (latest) — Audit fixes executed
+
+- **P0 fixed**: clean `npm run build` regenerated sitemap (17 teardowns, Unbounce now included) + prerendered Unbounce SSR route; phantom happi/loom dist routes removed (dist is gitignored, deploy regenerates). Commit on `main`.
+- **HANDOFF reconciled**: article count 13→17, false SECTION_ORDER claim struck through with correction, judge-V5 + owned-source issues marked resolved in known-issues table.
+- **Hygiene**: discarded abandoned happi.com half-run (27 untracked files, user decision); deleted dead code `draft.ts` + `compose-section.ts` (orphaned, recoverable via git); removed superseded `PLAN-pipeline-optimization.md` (replaced by `AUDIT-2026-06-13.md`).
+- **Deferred**: `02-quick-answer` left as documented stub (user decision — not implemented, see known-issues).
+- **Not done** (remaining audit backlog): D2 businessContext backfill for 9 V1 articles; B2 SECTION_ORDER renumbering.
+
 ### 2026-06-13 (later) — Full system audit + owned-source fix
 
 - **Owned playbook sources fix** (commit 6a67504): `final-judge.ts` + `section-writer.ts` now treat Landing Page Playbook 2026 / Growth Playbook 2026 as valid first-party evidence. Judge no longer flags citations to them as hallucinations; writer must attribute any number from them in-sentence. (Unbounce's "20% / Wael Aouididi" flags were the book being cited correctly but judged as invented.)
@@ -220,7 +228,7 @@ These are legitimate references. Do **not** flag them as hallucinations.
 |-------|--------|------------|
 | ~~V3 judge calibration gap~~ / ~~Judge-writer voice mismatch~~ | **RESOLVED (confirmed 2026-06-13 audit)** — `final-judge.ts` is fully V5: 7 dimensions (evidenceAccuracy/plainLanguage/scannability/searchableHeadings/specificity/rhythmAndOpening/founderTakeaway), no `mechanismQuality`, pass ≥90. The need for `--force` is now real content quality (<90), not a broken rubric. | N/A |
 | Owned playbook sources flagged as hallucinations | **RESOLVED 2026-06-13** — judge + writer now whitelist Landing Page Playbook 2026 / Growth Playbook 2026 as first-party evidence (commit 6a67504) | N/A |
-| 02-quick-answer spec'd but dead — in `writing-config.ts` + `section-writer.ts` but absent from `SECTION_ORDER`, never runs | Open (audit B1) | Decide: activate or remove dead config |
+| 02-quick-answer is a STUB, not implemented — has an evidence-source mapping in `writing-config.ts` + one `isIntro` reference in `section-writer.ts`, but NO `SECTION_META` (no prompt/goal/word-target), NOT in `SECTION_ORDER`, no assembler/React handling. The HANDOFF claim it was "added" was overstated. | Deferred by decision 2026-06-13 — documented stub, left as-is | To activate later: write SECTION_META['02-quick-answer'] (≤75-word featured-snippet target), add to SECTION_ORDER + SECTION_HEADINGS, test one compose |
 | Unbounce not in sitemap; dist stale (predates Unbounce, has phantom happi/loom routes) | Open (audit P0 E1/E2) | Rebuild + regen sitemap + redeploy |
 | 17 existing articles in V3 voice — no V5 backfill performed; regenerating with `--force` will rewrite in V5 plain-explainer voice | Open by design — V5 only applies to new articles going forward | Run compose `--force` per slug when ready to upgrade an article |
 | H2/H3 concatenation normalization — FIXED 2026-06-13 | Resolved — `cleanBodyText` now applied to h2/h3 in normalize-page-text.ts | N/A |
