@@ -99,6 +99,11 @@ These are legitimate references. Do **not** flag them as hallucinations.
 - Task F: Sentence-length critic rule (-3 if >12% sentences >30 words) + writer 35-word hard cap
 - Task G: 3-variant CTA rotation by slug hash (`getCtaForSlug`, `getRelatedPostsForSlug`)
 
+### 2026-06-13 (later) — Full system audit + owned-source fix
+
+- **Owned playbook sources fix** (commit 6a67504): `final-judge.ts` + `section-writer.ts` now treat Landing Page Playbook 2026 / Growth Playbook 2026 as valid first-party evidence. Judge no longer flags citations to them as hallucinations; writer must attribute any number from them in-sentence. (Unbounce's "20% / Wael Aouididi" flags were the book being cited correctly but judged as invented.)
+- **Full read-only system audit** → see `AUDIT-2026-06-13.md`. Headline findings: P0 — Unbounce missing from sitemap + stale dist (built before Unbounce, has phantom happi/loom routes); P1 — HANDOFF's SECTION_ORDER "reduced to 2 sections" claim is false (code has 6), `02-quick-answer` is spec'd but dead (not in SECTION_ORDER). Positives: judge confirmed V5, article bodies clean, SSR structure healthy. Backlog ranked in the audit file; nothing fixed yet (report-only).
+
 ### 2026-06-13 — Template restructure V6 completion + 3 new teardowns + h1 normalization fix
 
 **V6 template restructure — all 11 changes implemented:**
