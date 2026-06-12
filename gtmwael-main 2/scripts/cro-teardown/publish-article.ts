@@ -358,6 +358,23 @@ async function main(): Promise<void> {
     ? (JSON.parse(fs.readFileSync(seoJsonPath, 'utf-8')) as Record<string, string>)
     : null;
 
+  // ── Override heroTitle and metaTitle from outline if available (Task D) ─────
+  const outlinePath = path.join(writingDir, 'article-outline.json');
+  if (fs.existsSync(outlinePath)) {
+    const outline = JSON.parse(fs.readFileSync(outlinePath, 'utf-8')) as {
+      h1?: string;
+      seo_title?: string;
+    };
+    if (outline.h1 && typeof outline.h1 === 'string') {
+      structuredData.heroTitle = outline.h1;
+      console.log(`✅  Overrode heroTitle from outline: "${outline.h1}"`);
+    }
+    if (outline.seo_title && typeof outline.seo_title === 'string') {
+      structuredData.metaTitle = outline.seo_title;
+      console.log(`✅  Overrode metaTitle from outline: "${outline.seo_title}"`);
+    }
+  }
+
   // ── Load business context section if available (Phase 4C V6) ───────────────
   // New articles have sections/07-business-context.final.md written by
   // generate-business-context.ts. Stored as `businessContext` for BusinessContextBlock.
@@ -461,8 +478,21 @@ async function main(): Promise<void> {
     console.log(`✅  Consistency validation passed`);
   }
 
+  // ── Preserve existing publishedAt — never overwrite to avoid date clustering ──
+  // If the article file already exists, extract and keep its publishedAt.
+  // Only set a fresh timestamp on first publish.
+  const articleOutputPath = path.join(contentDir, `${slug}.ts`);
+  let publishedAt = new Date().toISOString();
+  if (fs.existsSync(articleOutputPath)) {
+    const existingSrc = fs.readFileSync(articleOutputPath, 'utf-8');
+    const existingDate = existingSrc.match(/publishedAt:\s*"([^"]+)"/)?.[1];
+    if (existingDate) {
+      publishedAt = existingDate;
+      console.log(`ℹ️   Preserved existing publishedAt: ${publishedAt}`);
+    }
+  }
+
   // ── Generate TypeScript content ─────────────────────────────────────────────
-  const publishedAt = new Date().toISOString();
 
   const articleTs = generateArticleTs({
     varName,
@@ -475,7 +505,6 @@ async function main(): Promise<void> {
   });
 
   // ── Write article file ──────────────────────────────────────────────────────
-  const articleOutputPath = path.join(contentDir, `${slug}.ts`);
 
   if (dryRun) {
     console.log(`🔍  [dry-run] Would write: ${path.relative(projectRoot, articleOutputPath)}`);

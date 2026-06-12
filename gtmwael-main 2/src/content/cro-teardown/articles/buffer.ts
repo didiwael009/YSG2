@@ -1,7 +1,7 @@
 /**
  * buffer.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T20:15:12.192Z
+ * Published    : 2026-04-06T10:00:00.000Z
  * Final judge  : 81/100 ✓
  * SEO score    : 87/100 ✓
  *
@@ -298,5 +298,5 @@ export const buffer: CroTeardownPost = {
     "/cro-teardowns/lemlist",
     "/cro-teardowns/intercom",
   ],
-  publishedAt: "2026-06-12T20:15:12.192Z",
+  publishedAt: "2026-04-06T10:00:00.000Z",
 };

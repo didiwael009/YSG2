@@ -1,7 +1,7 @@
 /**
  * apollo.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:15.512Z
+ * Published    : 2026-06-01T08:44:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 84/100 ✓
  *
@@ -264,5 +264,5 @@ export const apollo: CroTeardownPost = {
     "/cro-teardowns/lemlist",
     "/cro-teardowns/intercom",
   ],
-  publishedAt: "2026-06-12T17:39:15.512Z",
+  publishedAt: "2026-06-01T08:44:00.000Z",
 };

@@ -1,7 +1,7 @@
 /**
  * clay.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:14.842Z
+ * Published    : 2026-02-09T10:10:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 84/100 ✓
  *
@@ -268,5 +268,5 @@ export const clay: CroTeardownPost = {
     "/cro-teardowns/vercel",
     "/cro-teardowns/shopify",
   ],
-  publishedAt: "2026-06-12T17:39:14.842Z",
+  publishedAt: "2026-02-09T10:10:00.000Z",
 };

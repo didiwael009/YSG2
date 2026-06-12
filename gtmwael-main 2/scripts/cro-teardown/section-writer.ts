@@ -629,6 +629,10 @@ moment they sense you are writing for other strategists.
 
    FORMULA: FINDING → EXPLANATION → EXAMPLE → IMPLICATION
 
+11. SENTENCE BUDGET: average sentence under 20 words. Hard cap 35 words.
+   If a sentence joins two clauses with "which", "and", or "that says", split it.
+   Long sentences bury the finding. Short sentences land the punch.
+
    BAD:  "The headline shifted from features to outcomes, which often signals an ICP
           narrowing driven by competitive pressure, and this is consistent with the CTA
           change and the navigation simplification, which together suggest a buyer
@@ -755,6 +759,9 @@ SCORING RUBRIC — score each dimension, then sum to 100:
   FORMULA CHECK: every analytical paragraph should follow
     FINDING → EXPLANATION → EXAMPLE → IMPLICATION.
     If a paragraph cannot be mapped to this formula, it likely needs to be split.
+  SENTENCE LENGTH:
+  PENALISE -3 if more than 12% of sentences in the section exceed 30 words.
+  PENALISE -2 if any single sentence exceeds 45 words.
 
 • scannability (max 15)
   Section works for a Google reader who skims.

@@ -1,7 +1,7 @@
 /**
  * gong.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:16.004Z
+ * Published    : 2026-02-12T10:17:00.000Z
  * Final judge  : 74/100 ✓
  * SEO score    : 83/100 ✓
  *
@@ -261,5 +261,5 @@ export const gong: CroTeardownPost = {
     "/cro-teardowns/clay",
     "/cro-teardowns/vercel",
   ],
-  publishedAt: "2026-06-12T17:39:16.004Z",
+  publishedAt: "2026-02-12T10:17:00.000Z",
 };

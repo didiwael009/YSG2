@@ -50,7 +50,7 @@ interface SnapshotRecord {
   screenshotPath: string | null;
   textPathJson: string | null;
   textPathTxt: string | null;
-  status: 'captured' | 'failed' | 'not_found';
+  status: 'captured' | 'failed' | 'not_found' | 'duplicate_content';
   qualityScore: null;
   usedInArticle: boolean;
   error: string | null;
@@ -89,7 +89,7 @@ function parseArgs(argv: string[]): CliArgs {
     process.exit(1);
   }
 
-  const concurrency = args['concurrency'] ? parseInt(args['concurrency'], 10) : 3;
+  const concurrency = args['concurrency'] ? parseInt(args['concurrency'], 10) : 2;
   if (isNaN(concurrency) || concurrency < 1 || concurrency > 6) {
     console.error('--concurrency must be a number between 1 and 6');
     process.exit(1);
@@ -144,8 +144,9 @@ async function main() {
   const totalSlots = discovered.length;
   const found = discovered.filter((s) => s.status === 'found').length;
   const notFound = discovered.filter((s) => s.status === 'not_found').length;
-  log(`Discovery complete: ${found} found, ${notFound} not_found out of ${totalSlots} slots`);
-  console.log(`Found ${found} / ${totalSlots} snapshots. Starting screenshots (concurrency: ${concurrency})...\n`);
+  const dupContent = discovered.filter((s) => s.status === 'duplicate_content').length;
+  log(`Discovery complete: ${found} found, ${dupContent} duplicate_content, ${notFound} not_found out of ${totalSlots} slots`);
+  console.log(`Found ${found} / ${totalSlots} snapshots (${dupContent} digest-identical skipped). Starting screenshots (concurrency: ${concurrency})...\n`);
 
   // ── Launch browser ──────────────────────────────────────────────────────
   const browser = await createBrowser();
@@ -157,27 +158,29 @@ async function main() {
   const toDataPath = (abs: string) =>
     '/' + path.relative(projectRoot, abs).replace(/\\/g, '/');
 
-  // "not_found" slots produce records immediately — no capture needed
-  const notFoundRecords: SnapshotRecord[] = discovered
-    .filter((s) => s.status === 'not_found')
+  // "not_found" and "duplicate_content" slots produce records immediately — no capture needed
+  const skippedRecords: SnapshotRecord[] = discovered
+    .filter((s) => s.status === 'not_found' || s.status === 'duplicate_content')
     .map((s) => ({
       month: s.month,
       slotStart: s.slotStart,
       slotEnd: s.slotEnd,
       stepMonths: s.stepMonths,
-      timestamp: null,
+      timestamp: s.timestamp ?? null,
       originalUrl: url,
-      waybackUrl: null,
+      waybackUrl: s.waybackUrl ?? null,
       screenshotPath: null,
       textPathJson: null,
       textPathTxt: null,
-      status: 'not_found' as const,
+      status: s.status as 'not_found' | 'duplicate_content',
       qualityScore: null,
       usedInArticle: false,
-      error: 'No Wayback snapshot found for this slot',
+      error: s.status === 'not_found'
+        ? 'No Wayback snapshot found for this slot'
+        : 'Identical content digest to previous snapshot — skipped',
     }));
 
-  // Only slots that actually have a wayback URL need capture
+  // Only slots with new content need capture
   const toCapture = discovered.filter((s) => s.status === 'found');
 
   let screenshotsSaved = 0;
@@ -377,12 +380,14 @@ async function main() {
     log('Browser closed');
   }
 
-  // Merge records in original slot order: not_found slots interleaved with captured ones
+  // Merge records in original slot order
   const recordsByMonth = new Map(capturedRecords.map((r) => [r.month, r]));
+  const skippedByMonth = new Map(skippedRecords.map((r) => [r.month, r]));
   const records: SnapshotRecord[] = [];
   for (const s of discovered) {
-    if (s.status === 'not_found') {
-      records.push(notFoundRecords.find((r) => r.month === s.month)!);
+    if (s.status === 'not_found' || s.status === 'duplicate_content') {
+      const r = skippedByMonth.get(s.month);
+      if (r) records.push(r);
     } else {
       const r = recordsByMonth.get(s.month);
       if (r) records.push(r);
@@ -408,6 +413,7 @@ Step:               every ${stepMonths} months
 Concurrency:        ${concurrency}
 Slots requested:    ${totalSlots}
 Snapshots found:    ${found}
+Digest-skipped:     ${dupContent}
 Screenshots saved:  ${screenshotsSaved}
 Failed captures:    ${capturesFailed}
 Not found:          ${notFound}

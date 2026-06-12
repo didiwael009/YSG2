@@ -1,7 +1,7 @@
 /**
  * hootsuite.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:13.600Z
+ * Published    : 2026-05-20T12:20:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 87/100 ✓
  *
@@ -284,5 +284,5 @@ export const hootsuite: CroTeardownPost = {
     "/cro-teardowns/stripe",
     "/cro-teardowns/gong",
   ],
-  publishedAt: "2026-06-12T17:39:13.600Z",
+  publishedAt: "2026-05-20T12:20:00.000Z",
 };

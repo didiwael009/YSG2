@@ -1,7 +1,7 @@
 /**
  * crisp.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:14.610Z
+ * Published    : 2026-02-23T13:37:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 82/100 ✓
  *
@@ -239,5 +239,5 @@ export const crisp: CroTeardownPost = {
     "/cro-teardowns/lemlist",
     "/cro-teardowns/intercom",
   ],
-  publishedAt: "2026-06-12T17:39:14.610Z",
+  publishedAt: "2026-02-23T13:37:00.000Z",
 };

@@ -1,7 +1,7 @@
 /**
  * apify.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:16.464Z
+ * Published    : 2026-05-14T09:08:00.000Z
  * Final judge  : 81/100 ✓
  * SEO score    : 83/100 ✓
  *
@@ -325,5 +325,5 @@ export const apify: CroTeardownPost = {
     "/cro-teardowns/lemlist",
     "/cro-teardowns/intercom",
   ],
-  publishedAt: "2026-06-12T17:39:16.464Z",
+  publishedAt: "2026-05-14T09:08:00.000Z",
 };

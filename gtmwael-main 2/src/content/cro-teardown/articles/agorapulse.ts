@@ -1,7 +1,7 @@
 /**
  * agorapulse.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T20:15:12.192Z
+ * Published    : 2026-04-01T12:51:00.000Z
  * Final judge  : 74/100 ✓
  * SEO score    : 83/100 ✓
  *
@@ -304,5 +304,5 @@ export const agorapulse: CroTeardownPost = {
     "/cro-teardowns/apollo",
     "/cro-teardowns/apify",
   ],
-  publishedAt: "2026-06-12T20:15:12.192Z",
+  publishedAt: "2026-04-01T12:51:00.000Z",
 };

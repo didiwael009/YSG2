@@ -1,7 +1,7 @@
 /**
  * stripe.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:13.879Z
+ * Published    : 2026-06-08T11:56:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 85/100 ✓
  *
@@ -258,5 +258,5 @@ export const stripe: CroTeardownPost = {
     "/cro-teardowns/expensya",
     "/cro-teardowns/linear",
   ],
-  publishedAt: "2026-06-12T17:39:13.879Z",
+  publishedAt: "2026-06-08T11:56:00.000Z",
 };

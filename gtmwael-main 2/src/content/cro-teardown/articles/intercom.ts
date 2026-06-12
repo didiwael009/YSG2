@@ -1,7 +1,7 @@
 /**
  * intercom.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:14.122Z
+ * Published    : 2026-05-12T12:04:00.000Z
  * Final judge  : 94/100 ✓
  * SEO score    : 85/100 ✓
  *
@@ -254,5 +254,5 @@ export const intercom: CroTeardownPost = {
     "/cro-teardowns/expensya",
     "/cro-teardowns/linear",
   ],
-  publishedAt: "2026-06-12T17:39:14.122Z",
+  publishedAt: "2026-05-12T12:04:00.000Z",
 };

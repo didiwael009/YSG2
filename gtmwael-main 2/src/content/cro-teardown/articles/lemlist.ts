@@ -1,7 +1,7 @@
 /**
  * lemlist.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:15.286Z
+ * Published    : 2026-03-05T12:00:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 84/100 ✓
  *
@@ -259,5 +259,5 @@ export const lemlist: CroTeardownPost = {
     "/cro-teardowns/expensya",
     "/cro-teardowns/linear",
   ],
-  publishedAt: "2026-06-12T17:39:15.286Z",
+  publishedAt: "2026-03-05T12:00:00.000Z",
 };

@@ -1,7 +1,7 @@
 /**
  * vercel.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:14.365Z
+ * Published    : 2026-06-01T15:43:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 85/100 ✓
  *
@@ -252,5 +252,5 @@ export const vercel: CroTeardownPost = {
     "/cro-teardowns/lemlist",
     "/cro-teardowns/intercom",
   ],
-  publishedAt: "2026-06-12T17:39:14.365Z",
+  publishedAt: "2026-06-01T15:43:00.000Z",
 };

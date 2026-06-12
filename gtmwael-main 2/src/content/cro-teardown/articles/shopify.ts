@@ -1,7 +1,7 @@
 /**
  * shopify.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:13.297Z
+ * Published    : 2026-02-25T09:43:00.000Z
  * Final judge  : 92/100 ✓
  * SEO score    : 84/100 ✓
  *
@@ -243,5 +243,5 @@ export const shopify: CroTeardownPost = {
     "/cro-teardowns/expensya",
     "/cro-teardowns/linear",
   ],
-  publishedAt: "2026-06-12T17:39:13.297Z",
+  publishedAt: "2026-02-25T09:43:00.000Z",
 };

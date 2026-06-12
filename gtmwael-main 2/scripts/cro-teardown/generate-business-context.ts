@@ -190,6 +190,30 @@ export async function generateBusinessContext(
     };
   }
 
+  // Determine heading: prefer outline's custom_h2 for 07-business-context,
+  // then company-specific fallback — never the generic "Why the homepage changed"
+  const outlinePath = path.join(writingDir, 'article-outline.json');
+  let businessContextH2 = `## The business context behind ${slug}'s redesign`;
+  if (fs.existsSync(outlinePath)) {
+    try {
+      const outline = JSON.parse(fs.readFileSync(outlinePath, 'utf-8')) as {
+        sections?: Array<{ id: string; custom_h2?: string | null }>;
+      };
+      const bcSection = outline.sections?.find(s => s.id === '07-business-context');
+      const candidate = bcSection?.custom_h2?.trim();
+      const GENERIC = ['why the homepage changed', 'the business context behind the redesign'];
+      const isGeneric = !candidate || GENERIC.some(g => candidate.toLowerCase().includes(g));
+      if (!isGeneric) businessContextH2 = candidate!.startsWith('##') ? candidate! : `## ${candidate}`;
+    } catch { /* fall back to default */ }
+  } else {
+    // Use company name from evidence for a cleaner fallback
+    try {
+      const gdPath = path.join(writingDir, 'generated-article-data.json');
+      const gd = JSON.parse(fs.readFileSync(gdPath, 'utf-8')) as { companyName?: string };
+      if (gd.companyName) businessContextH2 = `## The business context behind ${gd.companyName}'s redesign`;
+    } catch { /* ignore */ }
+  }
+
   const evidence = loadEvidence(writingDir, slug);
   onLog(`Business context [${model}]`, true, 'calling API…');
 
@@ -204,7 +228,7 @@ export async function generateBusinessContext(
   );
   tracker.add(computeCallCost(model, 'business-context', resp.inputTokens, resp.outputTokens));
 
-  const content = `## Why the homepage changed\n\n${resp.content.trim()}`;
+  const content = `${businessContextH2}\n\n${resp.content.trim()}`;
 
   const warnings = validateParagraphs(resp.content.trim());
   for (const w of warnings) onLog('Business context: ⚠', false, w);

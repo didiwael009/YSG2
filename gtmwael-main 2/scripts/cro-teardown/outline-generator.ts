@@ -39,6 +39,8 @@ export interface OutlineSection {
 export interface ArticleOutline {
   angle:            string;
   distinct_from:    string[];
+  h1?:              string;   // unique H1 for this article (replaces template default)
+  seo_title?:       string;   // unique <title> tag / metaTitle (≤60 chars)
   sections:         OutlineSection[];
   at_a_glance_cards: {
     label: string;
@@ -64,6 +66,8 @@ interface PublishedArticleSignals {
   slug:             string;
   central_thesis?:  string;
   angle?:           string;
+  h1?:              string;
+  seo_title?:       string;
   h2_headings:      string[];
   positioning_card?: string;
 }
@@ -89,16 +93,20 @@ function loadPublishedSignals(dataRoot: string, excludeSlug: string): PublishedA
         } catch { /* skip */ }
       }
 
-      // Outline angle + H2 headings (only available for V6 articles)
+      // Outline angle, H1, seo_title, and H2 headings (only available for V6 articles)
       const outlinePath = path.join(dataRoot, dir, 'writing', 'article-outline.json');
       if (fs.existsSync(outlinePath)) {
         try {
           const outline = JSON.parse(fs.readFileSync(outlinePath, 'utf-8')) as {
             angle?: string;
+            h1?: string;
+            seo_title?: string;
             sections?: Array<{ custom_h2?: string | null }>;
             at_a_glance_cards?: Array<{ label: string; value: string }>;
           };
-          if (outline.angle) entry.angle = outline.angle;
+          if (outline.angle)     entry.angle     = outline.angle;
+          if (outline.h1)        entry.h1        = outline.h1;
+          if (outline.seo_title) entry.seo_title = outline.seo_title;
           entry.h2_headings = (outline.sections ?? [])
             .map(s => s.custom_h2)
             .filter((h): h is string => typeof h === 'string' && h.length > 0);
@@ -107,6 +115,19 @@ function loadPublishedSignals(dataRoot: string, excludeSlug: string): PublishedA
           );
           if (posCard) entry.positioning_card = posCard.value;
         } catch { /* skip */ }
+      }
+      // Fallback: read H1 from published article .ts if no outline
+      if (!entry.h1) {
+        const articlePath = path.join(
+          dataRoot, '..', '..', 'src', 'content', 'cro-teardown', 'articles', `${dir}.ts`,
+        );
+        if (fs.existsSync(articlePath)) {
+          try {
+            const src = fs.readFileSync(articlePath, 'utf-8');
+            const h1Match = src.match(/heroTitle:\s*"([^"]+)"/);
+            if (h1Match) entry.h1 = h1Match[1];
+          } catch { /* skip */ }
+        }
       }
 
       if (entry.central_thesis || entry.angle || entry.h2_headings.length > 0) {
@@ -151,11 +172,13 @@ function buildUserPrompt(opts: {
       const parts: string[] = [`[${s.slug}]`];
       if (s.central_thesis) parts.push(`Thesis: ${s.central_thesis}`);
       if (s.angle)          parts.push(`Angle: ${s.angle}`);
+      if (s.h1)             parts.push(`H1: ${s.h1}`);
+      if (s.seo_title)      parts.push(`Title: ${s.seo_title}`);
       if (s.positioning_card) parts.push(`Positioning: ${s.positioning_card}`);
       if (s.h2_headings.length > 0) parts.push(`H2s used: ${s.h2_headings.join(' | ')}`);
       lines.push(parts.join(' — '));
     }
-    antiRepetitionBlock = `\nPREVIOUSLY PUBLISHED ARTICLES (do NOT repeat these theses, angles, or H2 patterns):\n${lines.map((l, i) => `  ${i + 1}. ${l}`).join('\n')}`;
+    antiRepetitionBlock = `\nPREVIOUSLY PUBLISHED ARTICLES (do NOT repeat these theses, angles, H1s, titles, or H2 patterns):\n${lines.map((l, i) => `  ${i + 1}. ${l}`).join('\n')}`;
   }
 
   return `Create a custom article outline for the ${company} CRO teardown (${fromLabel} → ${toLabel}).
@@ -187,6 +210,8 @@ Return this exact JSON shape (include ALL 6 sections in this order):
 {
   "angle": "1-2 sentences describing the specific story angle for this brand only",
   "distinct_from": ["in 5-8 words, what makes this different from prior teardowns"],
+  "h1": "Unique H1 headline for this article — must NOT follow 'How X rewrote its homepage over N years' — make it specific to this brand's defining story shift",
+  "seo_title": "Unique <title> tag ≤60 chars — must contain company name and a year range, but vary the phrasing from all prior titles",
   "sections": [
     {
       "id": "01-intro",
@@ -272,7 +297,20 @@ Rules for H2 headings:
 - Every custom_h2 (except 01-intro which is null) must mention the company name OR a specific mechanism
 - example good: "## Why Expensya abandoned English after the Medius acquisition"
 - example bad: "## Why the homepage changed" (too generic)
-- Do NOT reuse H2 patterns from the previously published articles listed above`;
+- Do NOT reuse H2 patterns from the previously published articles listed above
+
+Rules for h1:
+- Must be specific to THIS brand's defining story (not a template)
+- Must NOT follow the pattern "How {Company} rewrote its homepage over N years"
+- Example good: "Buffer's homepage stopped selling and started assuming — a 7-year arc"
+- Example good: "Agorapulse traded 'Simplified' for 'ROI' — and here's what the homepage shows"
+- Must be ≤80 characters
+
+Rules for seo_title:
+- Must contain the company name and a year range (e.g. "2019–2026")
+- Must be ≤60 characters
+- Must vary the phrasing from all previously listed titles
+- Example: "Buffer Homepage Evolution: 2019 to 2026 | CRO Teardown"`;
 }
 
 // ─── Runner ───────────────────────────────────────────────────────────────────
@@ -361,6 +399,8 @@ export async function runOutlineGenerator(opts: {
   const outline: ArticleOutline = {
     angle:              parsed.angle              ?? '',
     distinct_from:      parsed.distinct_from      ?? [],
+    ...(parsed.h1        ? { h1:        parsed.h1        } : {}),
+    ...(parsed.seo_title ? { seo_title: parsed.seo_title } : {}),
     sections:           parsed.sections           ?? [],
     at_a_glance_cards:  parsed.at_a_glance_cards  ?? [],
     confidence_level:   parsed.confidence_level   ?? 'medium',

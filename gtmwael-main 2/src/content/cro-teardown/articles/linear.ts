@@ -1,7 +1,7 @@
 /**
  * linear.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:15.068Z
+ * Published    : 2026-03-12T08:09:00.000Z
  * Final judge  : 94/100 ✓
  * SEO score    : 84/100 ✓
  *
@@ -286,5 +286,5 @@ export const linear: CroTeardownPost = {
     "/cro-teardowns/intercom",
     "/cro-teardowns/crisp",
   ],
-  publishedAt: "2026-06-12T17:39:15.068Z",
+  publishedAt: "2026-03-12T08:09:00.000Z",
 };

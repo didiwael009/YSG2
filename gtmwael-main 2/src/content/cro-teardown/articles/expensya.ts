@@ -1,7 +1,7 @@
 /**
  * expensya.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:15.759Z
+ * Published    : 2026-05-22T08:23:00.000Z
  * Final judge  : 81/100 ✓
  * SEO score    : 84/100 ✓
  *
@@ -268,5 +268,5 @@ export const expensya: CroTeardownPost = {
     "/cro-teardowns/apify",
     "/cro-teardowns/webflow",
   ],
-  publishedAt: "2026-06-12T17:39:15.759Z",
+  publishedAt: "2026-05-22T08:23:00.000Z",
 };

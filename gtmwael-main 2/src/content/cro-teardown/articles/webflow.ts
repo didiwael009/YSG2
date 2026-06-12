@@ -1,7 +1,7 @@
 /**
  * webflow.ts — Phase 4F published content file.
  *
- * Published    : 2026-06-12T17:39:16.237Z
+ * Published    : 2026-05-18T09:12:00.000Z
  * Final judge  : 81/100 ✓
  * SEO score    : 83/100 ✓
  *
@@ -260,5 +260,5 @@ export const webflow: CroTeardownPost = {
     "/cro-teardowns/expensya",
     "/cro-teardowns/linear",
   ],
-  publishedAt: "2026-06-12T17:39:16.237Z",
+  publishedAt: "2026-05-18T09:12:00.000Z",
 };

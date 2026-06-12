@@ -90,39 +90,121 @@ export const DEFAULT_AUTHOR_BIO =
 
 export const CATEGORY = 'CRO Teardown';
 
-// ─── CTA ──────────────────────────────────────────────────────────────────────
+// ─── CTA (3 rotating variants, selected deterministically by slug) ─────────────
 
-export const DEFAULT_CTA = {
-  title: 'Want your homepage audited like this?',
-  body: 'I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.',
-  button: 'Book a page audit',
-};
-
-// ─── Related posts (links into the existing blog) ─────────────────────────────
-
-export const DEFAULT_RELATED_POSTS = [
+const CTA_VARIANTS = [
   {
-    label: 'SaaS CRO',
-    title: "SaaS traffic but no signups? Here's why",
-    description:
-      'If your page is getting visits but not converting, the issue is usually message match — not traffic volume.',
-    href: '/blog/saas-traffic-but-no-signups',
+    title: 'Want your homepage audited like this?',
+    body: 'I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.',
+    button: 'Book a page audit',
   },
   {
-    label: 'Landing pages',
-    title: 'Landing page optimization best practices 2026',
-    description:
-      'The patterns that separate high-converting SaaS pages from the ones that bleed spend.',
-    href: '/blog/landing-page-optimization-best-practices-2026',
+    title: 'Is your homepage leaving pipeline on the table?',
+    body: 'I dig into your messaging fit, conversion path, and proof structure — and come back with a prioritised list of what to fix first.',
+    button: 'Get a homepage review',
   },
   {
-    label: 'CRO',
-    title: 'AI conversion rate optimization for SaaS',
-    description:
-      'How to use AI tools to identify conversion leaks without drowning in data.',
-    href: '/blog/ai-conversion-rate-optimization-saas',
+    title: 'Not sure why your page isn\'t converting?',
+    body: 'I map your visitor intent against your current messaging and CTA structure, then tell you exactly where the drop-off happens and how to fix it.',
+    button: 'Book a CRO audit',
   },
 ];
+
+/** Deterministic hash so the same slug always gets the same variant */
+function slugHash(s: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = (h * 0x01000193) >>> 0;
+  }
+  return h;
+}
+
+export const DEFAULT_CTA = CTA_VARIANTS[0]; // fallback
+
+export function getCtaForSlug(slug: string) {
+  return CTA_VARIANTS[slugHash(slug) % CTA_VARIANTS.length];
+}
+
+// ─── Related posts (3 rotating sets, selected deterministically by slug) ───────
+
+const RELATED_POST_SETS = [
+  [
+    {
+      label: 'SaaS CRO',
+      title: "SaaS traffic but no signups? Here's why",
+      description:
+        'If your page is getting visits but not converting, the issue is usually message match — not traffic volume.',
+      href: '/blog/saas-traffic-but-no-signups',
+    },
+    {
+      label: 'Landing pages',
+      title: 'Landing page optimization best practices 2026',
+      description:
+        'The patterns that separate high-converting SaaS pages from the ones that bleed spend.',
+      href: '/blog/landing-page-optimization-best-practices-2026',
+    },
+    {
+      label: 'CRO',
+      title: 'AI conversion rate optimization for SaaS',
+      description:
+        'How to use AI tools to identify conversion leaks without drowning in data.',
+      href: '/blog/ai-conversion-rate-optimization-saas',
+    },
+  ],
+  [
+    {
+      label: 'Messaging',
+      title: 'How to write a SaaS homepage headline that converts',
+      description:
+        'The difference between a headline that explains and one that qualifies — and how to know which one your page needs.',
+      href: '/blog/saas-homepage-headline',
+    },
+    {
+      label: 'SaaS CRO',
+      title: "SaaS traffic but no signups? Here's why",
+      description:
+        'Message match issues account for most of the conversion gap in early-stage SaaS pages.',
+      href: '/blog/saas-traffic-but-no-signups',
+    },
+    {
+      label: 'CRO',
+      title: 'AI conversion rate optimization for SaaS',
+      description:
+        'How AI tools surface the specific conversion leaks your analytics miss.',
+      href: '/blog/ai-conversion-rate-optimization-saas',
+    },
+  ],
+  [
+    {
+      label: 'Landing pages',
+      title: 'Landing page optimization best practices 2026',
+      description:
+        'From proof structure to CTA friction — the patterns that move the needle on SaaS landing pages.',
+      href: '/blog/landing-page-optimization-best-practices-2026',
+    },
+    {
+      label: 'CRO',
+      title: 'AI conversion rate optimization for SaaS',
+      description:
+        'Using AI to diagnose conversion drop-off without drowning in session recordings.',
+      href: '/blog/ai-conversion-rate-optimization-saas',
+    },
+    {
+      label: 'SaaS CRO',
+      title: "SaaS traffic but no signups? Here's why",
+      description:
+        'Traffic without conversions is a messaging problem, not a traffic problem.',
+      href: '/blog/saas-traffic-but-no-signups',
+    },
+  ],
+];
+
+export const DEFAULT_RELATED_POSTS = RELATED_POST_SETS[0]; // fallback
+
+export function getRelatedPostsForSlug(slug: string) {
+  return RELATED_POST_SETS[slugHash(slug) % RELATED_POST_SETS.length];
+}
 
 // ─── TOC structure — must stay in sync with TeardownLayout.tsx section IDs ────
 

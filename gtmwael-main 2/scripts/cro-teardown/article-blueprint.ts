@@ -26,10 +26,10 @@ import type { CroTeardownPost } from '../../src/content/cro-teardown/types.js';
 import {
   DEFAULT_AUTHOR,
   DEFAULT_AUTHOR_BIO,
-  DEFAULT_CTA,
-  DEFAULT_RELATED_POSTS,
   TOC_SECTIONS,
   CATEGORY,
+  getCtaForSlug,
+  getRelatedPostsForSlug,
   estimateReadTime,
   headlineChangeNote,
   metaDescChangeNote,
@@ -569,8 +569,8 @@ export function buildArticleBlueprint(pack: EvidencePack): ArticleBlueprint {
     analysisBlocks,
     lessonCards,
     toc: TOC_SECTIONS,
-    cta: DEFAULT_CTA,
-    relatedPosts: DEFAULT_RELATED_POSTS,
+    cta: getCtaForSlug(pack.slug),
+    relatedPosts: getRelatedPostsForSlug(pack.slug),
   };
 
   const sectionEvidence: SectionEvidence = {
