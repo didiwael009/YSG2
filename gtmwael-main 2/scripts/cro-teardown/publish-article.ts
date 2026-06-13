@@ -387,6 +387,17 @@ async function main(): Promise<void> {
     }
   }
 
+  // ── Load quick-answer section if available (Phase 4C, section 02-quick-answer) ──
+  // Featured-snippet TL;DR. Rendered by QuickAnswerBlock + mirrored into JSON-LD FAQ.
+  const qaPath = path.join(writingDir, 'sections', '02-quick-answer.final.md');
+  if (fs.existsSync(qaPath)) {
+    const qaContent = fs.readFileSync(qaPath, 'utf-8').trim().replace(/^##\s+.*\n+/, '').trim();
+    if (qaContent) {
+      structuredData.quickAnswer = qaContent;
+      console.log(`✅  Loaded quick answer from sections/02-quick-answer.final.md`);
+    }
+  }
+
   // ── Override excerpt with AI-written intro paragraph if available ────────
   // 01-intro.final.md is unique per brand — far better than the template excerpt
   // from article-blueprint.ts. Extract first real paragraph (after the # heading).

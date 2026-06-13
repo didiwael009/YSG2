@@ -15,6 +15,7 @@ import BusinessContextBlock from "./BusinessContextBlock";
 import LessonCards from "./LessonCards";
 import TeardownCTA from "./TeardownCTA";
 import ArticleBody from "./ArticleBody";
+import QuickAnswerBlock from "./QuickAnswerBlock";
 import { TEARDOWN_CARD_META } from "./teardownMeta";
 
 const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
@@ -75,6 +76,9 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
 
               {/* Main content */}
               <div className="min-w-0 space-y-16">
+
+                {/* 0. Quick answer — featured-snippet TL;DR (mirrors JSON-LD FAQ) */}
+                {post.quickAnswer && <QuickAnswerBlock post={post} />}
 
                 {/* 1. Summary cards — prefer marketing signal cards when available */}
                 <section id="summary" className="scroll-mt-28">
