@@ -74,6 +74,7 @@ export interface SectionMeta {
  */
 export const SECTION_ORDER: readonly string[] = [
   '01-intro',
+  '02-quick-answer',
   '03-visual-timeline',
   '04-messaging-evolution',
   '05-cta-navigation-evolution',
@@ -84,6 +85,7 @@ export const SECTION_ORDER: readonly string[] = [
 /** H2 heading fallback for the assembler. null = no heading (intro). Writer output takes precedence. */
 export const SECTION_HEADINGS: Record<string, string | null> = {
   '01-intro':                    null,
+  '02-quick-answer':             '## Quick answer',
   '03-visual-timeline':          '## Visual timeline',
   '04-messaging-evolution':      '## Messaging evolution',
   '05-cta-navigation-evolution': '## CTA and navigation changes',
@@ -128,6 +130,41 @@ RULES:
   • The keyword must read naturally — do not force it or repeat it.`,
     wordRange: { min: 55, max: 90 },
     maxRewriteLoops: 0,
+    criticMaxTokens: 4096,
+  },
+
+  '02-quick-answer': {
+    title: 'Quick Answer',
+    goalDescription:
+      'A single self-contained paragraph (≤75 words) that directly answers the search query, ' +
+      'written to win the Google featured snippet. Names the company, the single biggest change, ' +
+      'who the page now serves, and one condition where the move backfires.',
+    writerInstruction:
+`SECTION ROLE: Answer the core question completely in one short paragraph — this block is
+engineered to win the Google featured snippet (position zero) and the "People Also Ask" box.
+
+A featured snippet is lifted OUT of the page and shown alone at the top of search results.
+So this paragraph MUST stand on its own with zero surrounding context.
+
+STRUCTURE — one paragraph, 2 to 4 sentences:
+  • Sentence 1: Name the company and THE SINGLE biggest homepage change — pick the ONE most
+    important change and quote its before/after evidence (a headline swap) — bolded. State it
+    directly, no hedge. Do NOT list a second change; one change only.
+  • Sentence 2: Who the page now serves, and what it assumes the visitor already knows.
+  • Final sentence: ONE condition where copying this move backfires — start with "If your...".
+
+HARD RULES:
+  • Output ONLY the paragraph. Do NOT write any "#" or "##" heading line — the assembler
+    adds "## Quick answer" itself. Your first character must be the first word of the paragraph.
+  • ONE change only. Naming two changes (e.g. headline AND page title) fails this section.
+  • 45–75 words. HARD CAP. Count your words before finishing — over 75 will not be lifted by
+    Google as a featured snippet. If you are over, cut the least important clause and recount.
+  • No parentheticals, no em-dash asides explaining a term — they read like a memo and waste words.
+  • Plain language. No jargon, no expert terms — a stranger must understand it instantly.
+  • Self-contained: do not reference "this article", "below", or "as we'll see".
+  • Use only evidence provided. Quote real homepage text. Invent nothing.`,
+    wordRange: { min: 45, max: 75 },
+    maxRewriteLoops: 2,
     criticMaxTokens: 4096,
   },
 

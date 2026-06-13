@@ -1,176 +1,62 @@
 {
   "slug": "apify",
-  "generatedAt": "2026-06-12T13:53:47.512Z",
+  "generatedAt": "2026-06-13T00:39:52.825Z",
   "mode": "standard",
   "sections": [
     {
-      "sectionId": "01-intro",
+      "sectionId": "02-quick-answer",
       "finalVersion": 1,
-      "finalScore": 91,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 1,
-      "riskFlags": [
-        "'Competing on what its community has built' — the evidence shows third-party Actors and a marketplace framing, but the source of the 39,044 tools (community vs. internal vs. curated third-party) is not confirmed in the evidence. This is a mild unsupported attribution, not a hard cap trigger, but should be hedged."
-      ],
-      "remainingIssueCount": 2,
-      "remainingIssues": [
-        "The closing promise ('by the end you will have a concrete test') slightly overreaches for an intro section — the test belongs in a later section and promising it here creates a minor expectation-setting risk if the test feels generic when it arrives.",
-        "The phrase 'competing on what its community has built' implies a community-built ecosystem as established fact; the evidence supports 'third-party developers' and a marketplace model but does not explicitly confirm the tool count is community-sourced versus internally built."
-      ],
-      "sectionCostUsd": 0.0516465
-    },
-    {
-      "sectionId": "03-visual-timeline",
-      "finalVersion": 1,
-      "finalScore": 81,
-      "passed": true,
-      "loopsUsed": 0,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "'Social proof replaces simplicity' — causal claim not supported by evidence; evidence shows what changed, not why.",
-        "'Apify recedes' — intentionality claim; the evidence records a headline change, not a strategic retreat.",
-        "'The page no longer explains what Apify does; it displays what the platform contains' — interpretive causation without a supporting evidence note."
-      ],
-      "remainingIssueCount": 9,
-      "remainingIssues": [
-        "The section heading says '2020–2024' but the final snapshot discussed is Jul 2024 and the article covers to Jun 2026 — the heading date range is misleading and inconsistent with the article title.",
-        "The Jul 2024 snapshot is presented as 'Mid-2024' in the H3 label but the evidence labels it '2024-07' — minor mismatch.",
-        "The closing founder takeaway is not inside a named H3 sub-block — it floats after the last H3, which breaks the required H3 structure for analytical sections.",
-        "The Jan 2024 snapshot ('Build reliable web scrapers. Fast.') is present in the evidence but completely absent from the draft — a notable gap in the visual arc.",
-        "The causal framing 'social proof replaces simplicity' implies a deliberate strategic swap with no evidence that simplicity was intentionally removed; this is an interpretation presented as fact.",
-        "The phrase 'Proof density dropped from high to low' uses a data field from the evidence correctly, but presenting it without qualification ('according to the snapshot data') risks reading as an editorial judgment.",
-        "No bold-quote formatting on **'Browse all actors'** — the evidence notes this CTA was removed and it is referenced implicitly but not quoted.",
-        "The phrase 'Apify recedes' is a causal/intentional framing not traceable to evidence — the evidence says the headline changed, not that Apify intentionally stepped back.",
-        "The section word count is approximately 295 words — within range, but only just."
-      ],
-      "sectionCostUsd": 0.051663
-    },
-    {
-      "sectionId": "04-messaging-evolution",
-      "finalVersion": 2,
       "finalScore": 87,
       "passed": true,
-      "loopsUsed": 1,
+      "loopsUsed": 0,
       "riskFlagCount": 2,
       "riskFlags": [
-        "The claim 'the page is now written for buyers who think in AI infrastructure terms' is an interpretive inference — it is well-hedged by context but could be softened to 'reads as if written for...' to avoid any implied certainty about Apify's intent.",
-        "'That is an unusual move' (section headings block) is a mild unsupported comparative claim — no hard cap triggered, but adding 'among developer platforms' or a brief qualifier would strengthen it."
+        "'The page now serves AI developers' is a mild audience-identity claim not directly sourced to a stated audience change in the evidence — the evidence supports this as an inference from the H1 and nav changes, but the draft states it as fact. Soften to 'appears to target' or 'signals a shift toward'.",
+        "'dropping the scraping promise entirely' is slightly overstated — the meta description evidence shows Apify retained scraping keywords ('web scraping, browser automation') in the meta description, meaning the scraping promise was not dropped entirely, only de-prioritised in the H1."
       ],
-      "remainingIssueCount": 8,
+      "remainingIssueCount": 4,
       "remainingIssues": [
-        "The opening paragraph buries its finding slightly — the observation about 'AI system as end consumer' is clear but the headline change itself is introduced mid-paragraph rather than in the first sentence.",
-        "The H3 'How Apify's section headings reframe the platform identity' contains the finding in sentence one but the explanation runs slightly abstract — 'consistent with a platform repositioning rather than a product update' is a strategist-level close without a concrete implication for the founder.",
-        "The phrase 'AI infrastructure terms (the backend tools and data pipelines that power AI products)' is a good definition, but 'AI infrastructure' is used only once so no penalty — however 'supply-side strategy' in the final H3 heading is an expert term used without an inline plain-language definition.",
-        "Paragraph 2 (meta description H3) runs approximately 75 words — exceeds the 60-word cap for non-intro paragraphs.",
-        "The closing takeaway test is specific and anchored to Apify's evidence ('your AI', 'your scrapers', 'Publish Actors. Get paid.') — no penalty — but the test instruction is slightly over-explained and could tighten.",
-        "No causal outcome claims detected — all hedged with 'suggests', 'may be', 'is consistent with'. No hard cap triggered.",
-        "All verbatim quotes are in bold quotes — compliant.",
-        "Word count is approximately 370 words — within the 200–380 range, near the ceiling."
+        "The phrase 'foregrounding an AI tool ecosystem' uses abstract noun stacking ('AI tool ecosystem') that adds slight density for a non-expert reader.",
+        "The second sentence ('The page now serves AI developers who already understand what agents and automation tools are') contains two ideas — who the page serves AND the assumption it makes about prior knowledge — slightly exceeding the two-distinct-ideas limit for an analytical sentence at this length.",
+        "The section heading is not visible in the draft text; the rubric requires checking it contains the company name or a topic term — cannot confirm compliance from the draft alone.",
+        "Word count is approximately 82 words, which exceeds the stated SECTION GOAL cap of 75 words and the check-10 target range of 45–75 words."
       ],
-      "sectionCostUsd": 0.1306194
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "finalVersion": 3,
-      "finalScore": 72,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "'That is consistent with Apify running two parallel funnels' — inference presented without explicit condition; partially hedged but the hedge comes late.",
-        "'That volume of change signals a significant shift' — causation claim (change volume → intent signal) without supporting data.",
-        "'Placing that language prominently may signal exactly who the page is now written for' — acceptable hedge ('may signal') but verify that 'prominently' is supported by visual evidence not provided in the evidence object."
-      ],
-      "remainingIssueCount": 16,
-      "remainingIssues": [
-        "## section heading is not searchable: 'Free store' does not appear verbatim in the evidence arrays — the navRemoved array does not include 'Free store', and 'MCP Give your AI access to Actors' does not appear verbatim in ctaAdded or navAdded either. This triggers a -8 penalty under evidenceAccuracy for named CTA/nav items not appearing verbatim in the evidence.",
-        "The heading is also 'clever-only' in structure and does not contain 'homepage', 'CTA', 'navigation', or 'conversion' as searchable terms in a way a Google reader would use — it reads as a summary sentence, not a searchable heading.",
-        "Third paragraph of H3-1 exceeds 60 words (approx 62 words) — marginal violation.",
-        "The final founder test is partially generic: 'Look at your own navigation' is generic advice. It becomes specific only in the second sentence. The test should open with the specific Apify-anchored action.",
-        "Causal statement without condition in H3-1: 'That is consistent with Apify running two parallel funnels' — this is an inference presented as conclusion without a conditional hedge.",
-        "'signals a significant shift' in H3-2 is a causal/outcome claim without data to support it, triggering a -3 penalty.",
-        "The opening of H3-2 buries the finding: the paragraph opens with raw numbers ('Eight navigation items were added. Four were removed.') before stating what that means — violating the FINDING-FIRST rule.",
-        "The section is approximately 310 words — within the 180–320 word limit, but at the upper edge.",
-        "No forbidden jargon terms are used more than once — compliant.",
-        "All verbatim CTAs and nav items appear to be in bold quotes — compliant.",
-        "Both H3 subheadings are present — compliant.",
-        "'Contact sales' and 'Get a demo' both appear in ctaAdded — compliant.",
-        "'Browse all actors' appears in ctaRemoved as 'Browse all actors' (draft uses 'Browse all actors') — compliant.",
-        "'Find your Actor' and 'Browse Apify Store' both appear in ctaAdded — compliant.",
-        "'New MCP connectors are live' appears in ctaAdded — compliant.",
-        "'Read more customer stories' appears in ctaAdded — compliant."
-      ],
-      "sectionCostUsd": 0.1295802
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "finalVersion": 2,
-      "finalScore": 87,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "'The number signals a platform rather than a single product, suggesting scale that a newer competitor would need years to replicate' — causal/outcome claim not directly traceable to evidence; the evidence shows the headline change and the strategic thesis but does not confirm competitive replication timelines. Hedge with 'may signal' or 'is consistent with'.",
-        "'the specificity may hurt more than a vaguer claim would' — comparative outcome claim without data; should be flagged as conditional ('if the count appears stagnant or unverifiable') rather than stated as a general finding.",
-        "'If your sales team is not resourced to handle that volume separately, the second button may create a worse experience than none' — general SaaS advisory claim not anchored to Apify evidence; risks a specificity penalty."
-      ],
-      "remainingIssueCount": 7,
-      "remainingIssues": [
-        "Section heading '## What SaaS teams can learn from Apify's homepage repositioning' is functional but slightly generic — 'SaaS teams' is a broad term and the heading could be more specific to the homepage/CTA/positioning topic to maximise search value.",
-        "H3 for the dual CTA block defines 'call-to-action' mid-paragraph after already using the term in the heading — the plain-language definition should precede or accompany the first use, not arrive after a second use.",
-        "Paragraph 2 of the ecosystem-count block (~65 words) slightly exceeds the 60-word limit: 'This pattern is worth testing only if...' — approximate count is 62–65 words.",
-        "Paragraph 2 of the 'Not just a web scraping API' block (~60 words) is borderline — 'This move is worth testing only if...' sits at approximately 60–62 words, risking a scannability penalty.",
-        "The dual-CTA H3 opening does not immediately state the practical takeaway in the first two sentences — the finding is clear but the implication for the founder (that the structure only works if two distinct post-click journeys exist) arrives in sentence 3, not sentence 1 or 2.",
-        "No explicit paragraph in the section reads as generic SaaS boilerplate — all three patterns trace cleanly to named Apify evidence — but the final paragraph of the dual-CTA block ('If your sales team is not resourced...') edges toward generic advisory territory without a direct Apify anchor.",
-        "Word count is approximately 370 words — within the 220–380 range but near the ceiling; any additions would breach the limit."
-      ],
-      "sectionCostUsd": 0.11239079999999999
+      "sectionCostUsd": 0.039111599999999996
     }
   ],
-  "averageScore": 83.6,
-  "passCount": 4,
-  "failCount": 1,
-  "skippedCount": 1,
-  "totalRewriteLoops": 4,
-  "weakSections": [
-    "05-cta-navigation-evolution"
-  ],
+  "averageScore": 87,
+  "passCount": 1,
+  "failCount": 0,
+  "skippedCount": 0,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
   "allRiskFlags": [
-    "'Competing on what its community has built' — the evidence shows third-party Actors and a marketplace framing, but the source of the 39,044 tools (community vs. internal vs. curated third-party) is not confirmed in the evidence. This is a mild unsupported attribution, not a hard cap trigger, but should be hedged.",
-    "'Social proof replaces simplicity' — causal claim not supported by evidence; evidence shows what changed, not why.",
-    "'Apify recedes' — intentionality claim; the evidence records a headline change, not a strategic retreat.",
-    "'The page no longer explains what Apify does; it displays what the platform contains' — interpretive causation without a supporting evidence note.",
-    "The claim 'the page is now written for buyers who think in AI infrastructure terms' is an interpretive inference — it is well-hedged by context but could be softened to 'reads as if written for...' to avoid any implied certainty about Apify's intent.",
-    "'That is an unusual move' (section headings block) is a mild unsupported comparative claim — no hard cap triggered, but adding 'among developer platforms' or a brief qualifier would strengthen it.",
-    "'That is consistent with Apify running two parallel funnels' — inference presented without explicit condition; partially hedged but the hedge comes late.",
-    "'That volume of change signals a significant shift' — causation claim (change volume → intent signal) without supporting data.",
-    "'Placing that language prominently may signal exactly who the page is now written for' — acceptable hedge ('may signal') but verify that 'prominently' is supported by visual evidence not provided in the evidence object.",
-    "'The number signals a platform rather than a single product, suggesting scale that a newer competitor would need years to replicate' — causal/outcome claim not directly traceable to evidence; the evidence shows the headline change and the strategic thesis but does not confirm competitive replication timelines. Hedge with 'may signal' or 'is consistent with'.",
-    "'the specificity may hurt more than a vaguer claim would' — comparative outcome claim without data; should be flagged as conditional ('if the count appears stagnant or unverifiable') rather than stated as a general finding.",
-    "'If your sales team is not resourced to handle that volume separately, the second button may create a worse experience than none' — general SaaS advisory claim not anchored to Apify evidence; risks a specificity penalty."
+    "'The page now serves AI developers' is a mild audience-identity claim not directly sourced to a stated audience change in the evidence — the evidence supports this as an inference from the H1 and nav changes, but the draft states it as fact. Soften to 'appears to target' or 'signals a shift toward'.",
+    "'dropping the scraping promise entirely' is slightly overstated — the meta description evidence shows Apify retained scraping keywords ('web scraping, browser automation') in the meta description, meaning the scraping promise was not dropped entirely, only de-prioritised in the H1."
   ],
   "sectionErrors": [],
   "finalJudgeScore": 81,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Remove or qualify the attribution of 'The most powerful web scraping and automation platform' as the 2022 H1 — it is not in the evidence headlines array; either source it or replace with what the evidence does support (the 2022 snapshot description mentions a colorful gradient hero but gives no exact headline text)",
-    "Remove 'Hundreds of ready-to-use tools' as a cited section heading — it does not appear in h2Added; replace with a heading that does appear in the evidence",
-    "Remove 'Pricing' from the list of removed nav items — only 'Free store', 'Get quote', 'Docs', 'Sign in' are in navRemoved",
-    "Remove or correct 'Actors Build and run serverless programs' as a cited nav item — this string is not in navAdded; the evidence lists 'Product', 'Back', 'MCP Give your AI access to Actors', 'Proxy Rotate scraper IP addresses', 'Solutions', 'Enterprise', 'Get started', 'Log in'",
-    "Add H3 subheadings to the '## Why the homepage changed' section — it is a wall of analytical prose with no structural breaks",
-    "Add a founder-facing takeaway to the H3 block 'How Apify's CTA changes split one funnel into two' — the section ends with an observation but no actionable test for founders"
+    "Remove or hedge the claim that Apify competed against 'Scrapy, Octoparse, and various proxy services' — these competitors are not named in the evidence and their inclusion is an unsupported factual assertion.",
+    "Remove or replace the '2022 headline' quote 'The most powerful web scraping and automation platform' as a confirmed headline — it appears only in the visual snapshot description field, not in the evidence headlines array; either attribute it explicitly as a visual snapshot observation or remove it.",
+    "Remove 'Hundreds of ready-to-use tools' as a named section — this phrase does not appear in the h2Added, h2Removed, or h3 arrays in the evidence.",
+    "Remove or correct 'Actors Build and run serverless programs' as a quoted nav item — it does not appear in the navAdded array; replace with an item that is confirmed in the evidence.",
+    "Hedge 'competing on what its community has built' — the evidence does not confirm the source of the 39,044 tools; rewrite as 'appears to be built by or sourced from a third-party developer community' or similar conditional.",
+    "Remove or conditionalise the phrase 'a newer competitor would need years to replicate' — this is a competitive timeline prediction with no evidence basis; replace with 'may be difficult for newer entrants to match quickly' or remove the clause.",
+    "In section 05-cta-navigation-evolution, add at least one H3 subheading to the opening analytical block that precedes the existing H3s — the section opens with a paragraph block before the first H3, leaving an unsubheaded analytical section."
   ],
   "seoScore": 83,
   "seoPass": true,
   "seoRequiredFixes": [
-    "Primary keyword 'Apify homepage CRO teardown' appears only in title and meta description, not naturally in body text. Add 1–2 organic mentions in the intro or conclusion (e.g., 'This CRO teardown of Apify's homepage reveals...' or 'What this Apify homepage CRO teardown shows...').",
-    "Secondary keyword 'SaaS conversion optimisation case study' is not used anywhere in the article body. Either add it once naturally in the lessons section, or remove it from the secondary keyword list.",
-    "Meta description is 156 characters; it exceeds the 155-character soft limit by 1 character. Trim to: 'A CRO teardown of Apify's homepage from Jan 2020 to Jun 2026 — changes in headline, CTAs, navigation, and what SaaS teams can learn.'",
-    "H1 is buried after a secondary H2 ('Apify Homepage Teardown: From \"Extract Data\" to \"39,044 Tools for Your AI\"' appears below 'How Apify rewrote its homepage over 6 years'). The suggested excerpt should be the first H1 on the page, not the second. Restructure so the main H1 comes immediately after intro text."
+    "The meta description is 151 characters (just under 155 limit) but reads as a fragment rather than a complete thought. Restructure to: 'Apify's homepage evolved from \"Extract data\" to \"39,044 tools for your AI.\" See the 6-year CRO breakdown and lessons for SaaS teams.' (140 chars, more scannable).",
+    "Title is 50 characters but 'Apify Homepage Teardown' alone appears three times in the article headline/subheadline. Consider: 'Apify Homepage CRO Teardown: Data Extractor to AI Marketplace' (62 chars, stronger keyword anchor and differentiation).",
+    "The secondary keyword 'SaaS homepage CRO teardown' does not appear in the article body until the final section. Strengthen by adding it explicitly in the intro or quick-answer section as a self-referential framing statement (e.g., 'This SaaS homepage CRO teardown...').",
+    "Section 'Lessons for SaaS teams' lacks a clear intro sentence that ties back to the article's primary keyword or search intent. Add: 'Apify's homepage CRO teardown reveals three patterns your SaaS team can test immediately.'",
+    "The article uses 'founder test,' 'visit your homepage,' and 'test this on your own' as stand-alone callouts but does not signal them consistently (some bold, some not). Standardize formatting for scannability."
   ],
-  "articleWordCount": 1870,
+  "articleWordCount": 1968,
   "repetitionWarnings": [],
   "editorialWarnings": [],
-  "overLengthWarning": null
+  "overLengthWarning": "Article is 1968 words — exceeds 1900-word hard warning"
 }

@@ -1,0 +1,36 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The section does not name 'who the page now serves' with enough specificity — the evidence names 'entire GTM organization' and multi-stakeholder buyers, but the draft only says 'buyers who already know what Gong does', which is generic enough to appear in other teardowns.",
+    "The backfire condition is present but underdeveloped — it omits the specific mechanism from the evidence: that visitors still searching 'what is revenue intelligence' lose the scaffolding they need to justify the purchase internally. The draft gets close but drops the specificity.",
+    "The section heading is not present in the draft as supplied for evaluation, so searchableHeadings cannot be fully confirmed — assumed from context to be adequate.",
+    "Word count is approximately 90 words, which exceeds the 75-word section goal ceiling and the stated 45–75 word target.",
+    "The phrase 'removing that category explanation may leave visitors unable to justify the purchase internally' is a causal claim without an attached condition — the rubric requires 'if [condition]' framing, and while there is an implicit condition ('if your brand is not yet widely recognized'), it is separated from the consequence by several words and could be tightened."
+  ],
+  "requiredFixes": [
+    "Trim the section to 75 words or fewer — the current draft is approximately 90 words and violates the section goal ceiling. Cut or compress the middle sentence.",
+    "Replace the generic 'buyers who already know what Gong does' with a more evidence-anchored phrase such as 'buyers across the full GTM team — sales, customer success, and revenue operations' to reflect 'your entire GTM organization' from the meta description evidence.",
+    "Tighten the backfire condition so the if-clause and the consequence are in the same sentence: e.g., 'If your brand does not yet autocomplete with your category in search, removing the category explanation risks leaving buyers without the internal justification language they need.'"
+  ],
+  "riskFlags": [
+    "'removing that category explanation may leave visitors unable to justify the purchase internally' — this is a causal outcome claim. It is hedged with 'may' which is acceptable, but the condition ('if your brand is not yet widely recognized') is loosely attached. Tighten the conditional linkage.",
+    "The draft says Gong 'popularized' the Revenue Intelligence category — this is directionally supported by the evidence framing ('the category label Gong itself popularized') but the evidence uses 'self-coined' and 'invented', not 'popularized'. Minor framing drift — not a hard violation but worth aligning."
+  ],
+  "seoNotes": [
+    "The draft naturally contains 'Revenue Intelligence' and 'Revenue AI' in close proximity, which supports the primary keyword cluster 'Gong revenue intelligence to AI OS positioning change' identified in the evidence.",
+    "The featured-snippet format is correct — it opens with the company name and the single biggest change — but at ~90 words it exceeds Google's typical featured-snippet sweet spot of 40–60 words. Trimming would improve snippet eligibility.",
+    "The bold-quoted H1 strings (**'REVENUE INTELLIGENCE'** and **'Revenue AI Built To Predict churn'**) are correctly formatted and match the evidence verbatim, which strengthens E-E-A-T signals for this specific search query."
+  ],
+  "rewriteInstruction": "Trim the draft to 70 words or fewer while keeping three required elements: (1) Gong by name plus the verbatim H1 change in bold quotes, (2) a specific audience description anchored to the evidence — 'entire GTM organization' or equivalent — rather than the generic 'buyers who already know what Gong does', and (3) a one-sentence backfire condition written as a tight if-clause directly attached to its consequence. Remove or compress the middle sentence to hit the word count. Do not introduce any new claims beyond what the evidence supplies.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 11,
+    "plainLanguage": 18,
+    "scannability": 13,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

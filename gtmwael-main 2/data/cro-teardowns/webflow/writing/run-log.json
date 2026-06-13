@@ -1784,5 +1784,90 @@
     "ok": true,
     "detail": "score 83/100 — PASS ✓ — $0.0079",
     "ts": "2026-06-12T11:12:38.028Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:44:56.577Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:44:56.579Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3455 in / 120 out — $0.0129",
+    "ts": "2026-06-13T00:45:03.733Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0412",
+    "ts": "2026-06-13T00:45:28.839Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS",
+    "ts": "2026-06-13T00:45:28.842Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:45:28.846Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "0 changed, 0 rejected — $0.3954",
+    "ts": "2026-06-13T00:46:10.054Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 2017 words",
+    "ts": "2026-06-13T00:46:10.067Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Webflow homepage CRO teardown",
+    "ts": "2026-06-13T00:46:10.070Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:46:10.074Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 81/100 — FAIL — $0.0548",
+    "ts": "2026-06-13T00:46:47.885Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:46:47.889Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 82/100 — PASS ✓ — $0.0085",
+    "ts": "2026-06-13T00:47:03.918Z"
   }
 ]

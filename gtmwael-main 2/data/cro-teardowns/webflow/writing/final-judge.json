@@ -1,61 +1,67 @@
 {
   "overallScore": 81,
   "pass": false,
-  "evidenceAccuracy": 20,
+  "evidenceAccuracy": 21,
   "plainLanguage": 17,
   "scannability": 11,
   "searchableHeadings": 8,
   "specificity": 13,
-  "rhythmAndOpening": 8,
+  "rhythmAndOpening": 7,
   "founderTakeaway": 4,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "04-messaging-evolution",
-    "05-cta-navigation-evolution",
-    "07-business-context"
+    "07-business-context",
+    "03-visual-timeline (2020–2025 date error in heading)",
+    "04-messaging-evolution (cold visitor claim overstated)"
   ],
   "unsupportedClaims": [
-    "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this specific figure ($1M to $8M, 8x) appears in the business context research evidence and is acceptable as attributed to public sources; however the phrase 'from $1M to $8M' is repeated in the article without the 'reportedly' hedge present in the evidence. Low risk but noted.",
-    "'most visitors had likely never searched before' — a frequency/volume claim about visitor search behaviour with no evidence anchor.",
-    "'placing this CTA is a bet on creating demand rather than capturing it' — framed as a confirmed strategic diagnosis rather than a conditional interpretation; no evidence confirms Webflow's intent here.",
-    "'Its removal means that reassurance no longer exists anywhere visitors can see it' — the evidence does not confirm the line does not appear elsewhere on the site; presented as definitive fact."
+    "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — the $1M to $8M figure appears in the business context evidence hedged with 'reportedly', so this passes on sourcing, but the phrase 'in 2021 alone' adds a temporal precision not explicitly in the compressed evidence text which says 'that year' — marginal overprecision but noted",
+    "The heading '2020–2025' in the visual timeline section states a date range ending in 2025; the evidence explicitly states the period ends Jun 2026 — this is a factual date error not supported by the evidence"
   ],
   "riskFlags": [
-    "'the internal sign-off process may become shorter if buyers already recognise the name' — conversion-outcome prediction without data, even with 'may'; implies a mechanism not in evidence.",
-    "'promoting Contact Sales may generate a queue your team cannot convert' — conversion-outcome warning presented as a risk without any evidence anchor specific to Webflow.",
-    "'Webflow appears to be actively defining, not just borrowing from the market' — asserts company intent/strategy without evidence confirming this is Webflow's stated aim.",
-    "'That shift suggests Webflow is now writing for the buyer who approves the budget, not the one who builds the pages' — causal intent claim; the evidence shows a copy change, not confirmed intent. Needs 'may suggest' or similar hedge.",
-    "'The demotion is consistent with prioritising enterprise pipeline over trial volume' — causal framing that implies confirmed strategic intent; the hedge 'though the evidence does not confirm this directly' partially softens it but the primary clause still reads as an assertion.",
-    "'AEO... is a phrase Webflow appears to be actively defining' — strategy/intent claim not traceable to evidence; the evidence shows the CTA exists, not that Webflow is 'actively defining' the term."
+    "'Webflow's homepage stopped speaking to designers and started speaking to CMOs' — asserts confirmed intent/audience shift; evidence says 'No confirmed strategy is implied'; should be hedged to 'appears to have shifted its audience signal'",
+    "'The page stopped onboarding curious newcomers' — infers intent from removed headings without hedging; should read 'the page no longer surfaces onboarding-oriented headings'",
+    "'That is not a refinement. It is a different conversation with a different reader.' — presented as confirmed fact, not interpretation; needs 'suggests' or 'reads as'",
+    "'the internal sign-off process may become shorter if buyers already recognise the name' — causal claim without an attached condition clause; needs 'if buyers in your category already recognise the coined label' hedge",
+    "'A visitor who has never heard of Webflow may leave without knowing what they would actually use it to do' — stated as near-certainty rather than hedged inference; should use 'risks leaving' or 'may leave'",
+    "'suggests the page may now expect some visitors who have already cleared the affordability question' — soft causal claim with no condition clause",
+    "'Their removal suggests the page may no longer need to convince visitors that Webflow works in practice' — plausible inference but no evidence confirms visitor conviction levels changed",
+    "'forced Webflow to pick a buyer' in the ## section heading — implies direct causation between funding/acquisition/layoffs and homepage changes; evidence supports correlation and chronological proximity only, not confirmed causation",
+    "'Webflow's changes suggest a deliberate trade-off rather than a universal rule' — 'deliberate' implies confirmed internal intent not supported by evidence",
+    "'The demotion is consistent with prioritising enterprise pipeline over trial volume' — acceptable with the caveat that follows ('though the evidence does not confirm this directly'), but flagged for awareness",
+    "'suggests the page now expects visitors to arrive already informed' — stated as conclusion rather than interpretation in the persona narrowing section; needs hedging"
   ],
   "requiredFixes": [
-    "In the business context section, add 'reportedly' before 'from $1M to $8M' to match the hedged language in the evidence, or remove the specific dollar figures and retain only the '8x' framing with attribution.",
-    "Replace 'most visitors had likely never searched before' with a hedged structural observation ('a visitor arriving without prior brand exposure may not recognise the term') — no frequency claim is supported by the evidence.",
-    "'Webflow appears to be actively defining' must be reframed as a structural observation: 'the CTA uses a term not yet common in search, which places it in demand-creation rather than demand-capture territory' — remove the intent attribution.",
-    "'Its removal means that reassurance no longer exists anywhere visitors can see it' must be softened: 'its removal means that reassurance is no longer visible above the fold' or 'no longer visible on the homepage as captured in the evidence.'",
-    "Soften 'the internal sign-off process may become shorter' — remove this sentence entirely or reframe as a conditional ('some enterprise buyers may already recognise category language, which can shorten evaluation cycles — though the evidence does not confirm this for Webflow specifically').",
-    "Add a hedging condition to 'That shift suggests Webflow is now writing for the buyer who approves the budget' — change to 'That shift may suggest the page is now written for a buyer accountable to revenue rather than one blocked by a technical constraint.'"
+    "Fix the section heading date: '2020–2025' should read '2020–2026' to match the evidence period of Jan 2020 → Jun 2026",
+    "Soften the opening sentence: 'Webflow's homepage stopped speaking to designers and started speaking to CMOs' must be hedged — change to 'appears to have shifted its audience signal from designers toward CMOs' per the evidence warning",
+    "Hedge 'The page stopped onboarding curious newcomers' — rewrite as 'the page no longer surfaces onboarding-oriented headings' to avoid asserting intent",
+    "Add a condition clause to 'the internal sign-off process may become shorter if buyers already recognise the name' — append 'if buyers in your category are already familiar with the coined label'",
+    "Soften 'A visitor who has never heard of Webflow may leave without knowing what they would actually use it to do' — rewrite with 'risks leaving' rather than stating it flatly",
+    "Change '## How a $140M Series B, the Intellimize acquisition, and an 8% layoff forced Webflow to pick a buyer' — 'forced' implies confirmed causation; rewrite as 'How a $140M Series B, the Intellimize Acquisition, and an 8% Layoff Coincided with Webflow Narrowing Its Buyer Signal'",
+    "Remove or hedge 'deliberate trade-off' — replace with 'the page changes are consistent with a trade-off' to avoid asserting confirmed internal intent",
+    "Remove the duplicate H1/title block: the article opens with both '# How Webflow rewrote its homepage over 6 years' and '# Webflow Homepage Teardown: How It Repositioned From Developer Tool to Growth Engine' — two H1-level headings is a structural error; keep only one"
   ],
   "optionalImprovements": [
-    "The article has two H1-level headings at the top ('How Webflow rewrote its homepage over 6 years' and 'Webflow Homepage Teardown: How It Repositioned From Developer Tool to Growth Engine') — consolidate to one to avoid structural confusion.",
-    "The 'Founder test' in the messaging section ('Count the words in your H1...') is only loosely anchored to Webflow-specific evidence; consider replacing with a test derived directly from Webflow's observable headline word shift (capability words vs. outcome words as seen in the two actual headlines).",
-    "The repetition of the upmarket-shift thesis across the visual, messaging, CTA, and business-context sections is useful but could be tightened — each section restates the same conclusion ('the page now addresses enterprise buyers') without adding a new dimension of proof.",
-    "Consider adding a brief plain-language explanation of 'AEO' earlier in the article — it appears first in the CTA section heading before being defined, which may create friction for a cold reader.",
-    "The final runnable test in the persona-narrowing H3 ('highlight every line that reduces personal risk') is practical but generic; anchor it more tightly to Webflow by naming the specific removed phrases ('Free until you're ready to launch') as the diagnostic benchmark."
+    "The 'Quick answer' section reads as a standalone paragraph with no H3 subheading — adding one (e.g., '### The single biggest Webflow homepage change in six years') would improve scannability",
+    "The closing of the '03-visual-timeline' section buries the founder test at the end of a long narrative block — moving it to its own labelled callout would make it easier to scan",
+    "The business context section (07) has only two H3 subheadings for three analytical paragraphs — the third paragraph ('What Webflow's homepage changes mean for your own positioning') would benefit from its own H3",
+    "The sentence 'AEO (Answer Engine Optimization — getting your content surfaced in AI-generated answers, not just traditional search results)' is the only place AEO is defined — consider moving this definition earlier when the term first appears in the CTA section",
+    "Several paragraphs in the lessons section open with the same rhythm ('Now turn that same pressure...', 'One CTA went further still...') — varying the opening structure would improve rhythmAndOpening score",
+    "The repetition of the upmarket shift conclusion across three sections (messaging, CTA, business context) could be consolidated — noting it once thoroughly is stronger than echoing it across sections"
   ],
   "rerunRecommendations": [
-    "04-messaging-evolution — soften intent attributions and remove 'its removal means that reassurance no longer exists anywhere'",
-    "05-cta-navigation-evolution — reframe 'Webflow appears to be actively defining' and soften the 'Contact Sales queue' risk flag",
-    "07-business-context — add hedges to the $1M-to-$8M figure and remove the 'sign-off process may become shorter' conversion-outcome implication"
+    "03-visual-timeline — fix the 2020–2025 date error in the section heading and soften 'The page stopped onboarding curious newcomers'",
+    "01-intro — soften the opening causal sentence about designers vs CMOs and remove duplicate H1",
+    "07-business-context — rewrite the ## heading to remove 'forced', add a third H3 for the positioning paragraph, and replace 'deliberate trade-off' with a hedged equivalent"
   ],
   "model": "claude-sonnet-4-6",
-  "costUsd": 0.0505199999999999,
-  "generatedAt": "2026-06-12T11:12:23.472Z",
+  "costUsd": 0.05480400000000002,
+  "generatedAt": "2026-06-13T00:46:47.881Z",
   "repetitionWarnings": [
-    "The conclusion that 'the page now addresses enterprise buyers / CMOs rather than freelance designers' appears substantively in the visual-timeline section, the messaging section, the CTA section, and the business-context section — four of six analytical sections restate the same finding without adding new evidence dimensions.",
-    "The observation that removed sections ('Who uses Webflow', 'Free until you're ready to launch') signal a narrower audience is made in both the visual-timeline section and the persona-narrowing H3, with near-identical framing."
+    "The upmarket shift conclusion — 'the page now speaks to marketing leaders / CMOs / enterprise buyers rather than designers' — appears in the intro, messaging evolution section, visual timeline section, and business context section (4 instances); consolidate or vary the framing across sections",
+    "The observation that educational/onboarding content was removed appears in the visual timeline, the CTA section, and the lessons section — three separate appearances of essentially the same finding"
   ]
 }

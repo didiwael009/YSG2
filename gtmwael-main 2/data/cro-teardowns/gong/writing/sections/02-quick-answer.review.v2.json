@@ -1,0 +1,41 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Word count is approximately 95 words — exceeds the 75-word hard cap for this section type and the stated section goal of ≤75 words.",
+    "The section does NOT name ONE single biggest change — it names two changes (the H1 swap AND the page title shift), violating the section goal of identifying the single biggest change.",
+    "The phrase 'the market segment Gong itself named and built' is a parenthetical explanation that adds to word count and reads like strategic memo language rather than plain explanation.",
+    "The opening sentence is structured as a factual recitation rather than a sharp, interesting finding — the most interesting thing (Gong abandoned the category name it invented) is buried inside a parenthetical rather than leading.",
+    "The sentence 'The page now speaks to sales, customer success, marketing, and revenue operations leaders' is approximately 17 words and contains 4 stacked nouns (roles), making it dense for a quick-answer paragraph.",
+    "The condition clause ('If your company coined its category fewer than 18 months ago') is present — good — but it is attached to the third sentence, not cleanly following the single biggest change, which weakens its connection to the main claim.",
+    "No hard evidence that the page 'now speaks to' all four named functions is directly quoted — the meta description mentions 'entire GTM organization' but customer success and marketing are inferred, not verbatim."
+  ],
+  "requiredFixes": [
+    "Trim to ≤75 words — cut the page title sentence or merge it with the H1 sentence; the section goal allows only one change to be named as the biggest.",
+    "Choose ONE change as the 'single biggest change' — either the H1 or the page title. The evidence most directly supports the H1 as the primary signal; the page title can be cited as corroborating evidence within the same sentence.",
+    "Move the most interesting finding to sentence one: Gong dropped the category name it invented. The current opening buries this inside a neutral factual statement.",
+    "Replace 'sales, customer success, marketing, and revenue operations leaders' with the verbatim meta description phrase 'entire GTM organization' to keep the claim evidence-traceable and reduce word count.",
+    "Remove or compress the parenthetical '(the market segment Gong itself named and built)' — it adds 11 words and the surrounding sentence already implies this; if kept, it must not push the paragraph over 75 words."
+  ],
+  "riskFlags": [
+    "'The page now speaks to... customer success, marketing, and revenue operations leaders' — customer success and marketing are inferred from 'entire GTM organization' in the meta description; they are not verbatim-evidenced as named audiences on the page, risking a -5 evidence penalty.",
+    "The phrase 'skipping the explanation of what the category even is' implies intentional strategic decision — this is supported by the removal of 'What is RI?' nav item but the causal framing ('skipping') is slightly stronger than the evidence warrants without a hedge."
+  ],
+  "seoNotes": [
+    "The ## heading 'Gong Homepage Positioning: Quick Answer' contains both the company name and a topic term ('positioning') — passes searchableHeadings check.",
+    "Both verbatim headline changes are in bold quotes — correct formatting that reinforces featured snippet eligibility.",
+    "The paragraph is structured as a direct answer followed by a condition clause, which is the correct format for a Google featured snippet; trimming to ≤75 words would strengthen snippet eligibility further.",
+    "The primary keyword 'Gong homepage teardown' does not appear in the quick-answer paragraph itself — consider whether the heading alone is sufficient or whether one natural mention in the paragraph body would help."
+  ],
+  "rewriteInstruction": "Rewrite as a single paragraph of 60–75 words. Lead with the most interesting finding first: Gong abandoned the category name it invented. Name the H1 change as the single biggest change using bold quotes, then in the same sentence reference the page title as corroboration. Replace the list of four job titles with the verbatim phrase from the meta description — 'entire GTM organization' — to keep the claim evidence-traceable. Close with the backfire condition (the 18-month rule) in one tight sentence. Cut the parenthetical explanation of what a category is — it costs 11 words and the reader already understands from context.",
+  "dimensionScores": {
+    "evidenceAccuracy": 19,
+    "specificity": 13,
+    "plainLanguage": 16,
+    "scannability": 10,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 6,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

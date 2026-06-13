@@ -1918,5 +1918,217 @@
     "ok": true,
     "detail": "score 83/100 — PASS ✓ — $0.0089",
     "ts": "2026-06-12T11:04:55.193Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:27:51.623Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:27:51.625Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3422 in / 135 out — $0.0216",
+    "ts": "2026-06-13T00:27:56.421Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 78/100 — FAIL — $0.0625",
+    "ts": "2026-06-13T00:28:29.725Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 1/1]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-13T00:28:29.726Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4928 in / 150 out — $0.0803",
+    "ts": "2026-06-13T00:28:34.707Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 81/100 — FAIL — $0.1094",
+    "ts": "2026-06-13T00:28:59.661Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v2",
+    "ok": false,
+    "detail": "score 81/100 — did not reach 85",
+    "ts": "2026-06-13T00:28:59.663Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:28:59.667Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 03-visual-timeline",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~91w) after edit",
+    "ts": "2026-06-13T00:29:43.725Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~108w) after edit",
+    "ts": "2026-06-13T00:29:43.728Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 2 rejected — $0.4270",
+    "ts": "2026-06-13T00:29:43.729Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 2124 words",
+    "ts": "2026-06-13T00:29:43.738Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Gong homepage CRO teardown",
+    "ts": "2026-06-13T00:29:43.740Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:29:43.745Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 72/100 — FAIL — $0.0577",
+    "ts": "2026-06-13T00:30:27.912Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:30:27.914Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 82/100 — PASS ✓ — $0.0090",
+    "ts": "2026-06-13T00:30:45.169Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:33:16.156Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:33:16.157Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3536 in / 111 out — $0.0130",
+    "ts": "2026-06-13T00:33:20.444Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0404",
+    "ts": "2026-06-13T00:33:42.503Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS",
+    "ts": "2026-06-13T00:33:42.504Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:33:42.507Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~108w) after edit",
+    "ts": "2026-06-13T00:34:25.124Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "0 changed, 1 rejected — $0.4194",
+    "ts": "2026-06-13T00:34:25.125Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 2111 words",
+    "ts": "2026-06-13T00:34:25.131Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Gong homepage CRO teardown",
+    "ts": "2026-06-13T00:34:25.132Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:34:25.136Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 81/100 — FAIL — $0.0506",
+    "ts": "2026-06-13T00:35:00.863Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:35:00.865Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 82/100 — PASS ✓ — $0.0093",
+    "ts": "2026-06-13T00:35:18.673Z"
   }
 ]

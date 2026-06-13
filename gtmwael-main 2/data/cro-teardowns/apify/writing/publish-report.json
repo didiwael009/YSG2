@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-12T17:39:16.464Z",
+  "publishedAt": "2026-05-14T09:08:00.000Z",
   "slug": "apify",
   "dryRun": false,
   "forced": true,
@@ -9,10 +9,11 @@
     "seoPass": true,
     "seoScore": 83,
     "unsupportedClaims": [
-      "'The most powerful web scraping and automation platform' — attributed as the 2022 headline but the evidence does not list this as the 2022 H1; it does not appear in headlines[], pageTitles[], or any snapshot field in the compressed evidence",
-      "'Hundreds of ready-to-use tools' — cited as a new section heading but this string does not appear in h2Added or anywhere in the evidence",
-      "'Pricing' — listed as a removed nav item ('removing Free store and Pricing') but 'Pricing' does not appear in navRemoved; only 'Free store', 'Get quote', 'Docs', 'Sign in' are listed",
-      "'Actors Build and run serverless programs' — cited as an added nav item but this exact string does not appear in navAdded in the evidence"
+      "'The most powerful web scraping and automation platform' — article quotes this as the 2022 headline, but the evidence does not list this as a confirmed headline in the headlines array; it appears only in the visual snapshot description as an 'above_fold_structure' observation, not a confirmed headline change.",
+      "'Hundreds of ready-to-use tools' — article states this as a section name that 'signaled that the product library was growing' but this phrase does not appear anywhere in the evidence's h2Added, h2Removed, or h3 arrays.",
+      "'Competing on what its community has built' — the evidence records third-party Actors and a marketplace framing but does not confirm the source of the 39,044 tools as community-built; this is presented as fact rather than inference.",
+      "'Apify entered the period as a web scraping utility competing in a well-established data extraction category alongside tools like Scrapy, Octoparse, and various proxy services' — Scrapy and Octoparse are named as competitors but are not mentioned anywhere in the compressed evidence.",
+      "'Actors Build and run serverless programs' — article quotes this as a nav item but it does not appear in the navAdded array in the evidence."
     ]
   },
   "consistencyCheck": {
@@ -22,7 +23,7 @@
   },
   "blockedReasons": [
     "Final judge FAIL — score 81/100 (need ≥ 90)",
-    "4 unsupported claim(s): 'The most powerful web scraping and automation platform' — attributed as the 2022 headline but the evidence does not list this as the 2022 H1; it does not appear in headlines[], pageTitles[], or any snapshot field in the compressed evidence; 'Hundreds of ready-to-use tools' — cited as a new section heading but this string does not appear in h2Added or anywhere in the evidence"
+    "5 unsupported claim(s): 'The most powerful web scraping and automation platform' — article quotes this as the 2022 headline, but the evidence does not list this as a confirmed headline in the headlines array; it appears only in the visual snapshot description as an 'above_fold_structure' observation, not a confirmed headline change.; 'Hundreds of ready-to-use tools' — article states this as a section name that 'signaled that the product library was growing' but this phrase does not appear anywhere in the evidence's h2Added, h2Removed, or h3 arrays."
   ],
   "articlePath": "src/content/cro-teardown/articles/apify.ts",
   "indexUpdated": false,

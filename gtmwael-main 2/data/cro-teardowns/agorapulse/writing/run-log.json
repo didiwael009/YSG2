@@ -618,5 +618,104 @@
     "ok": true,
     "detail": "score 83/100 — PASS ✓ — $0.0073",
     "ts": "2026-06-12T20:03:07.530Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:36:04.277Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:36:04.278Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3462 in / 120 out — $0.0129",
+    "ts": "2026-06-13T00:36:09.101Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0381",
+    "ts": "2026-06-13T00:36:29.387Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-13T00:36:29.388Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:36:29.390Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": false,
+    "detail": "rejected — paragraph exceeds 90 words (~94w) after edit",
+    "ts": "2026-06-13T00:37:12.877Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": true,
+    "detail": "added transition referencing CTA/nav shift",
+    "ts": "2026-06-13T00:37:12.879Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "1 changed, 1 rejected — $0.3950",
+    "ts": "2026-06-13T00:37:12.879Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 1953 words",
+    "ts": "2026-06-13T00:37:12.891Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Agorapulse homepage CRO teardown",
+    "ts": "2026-06-13T00:37:12.893Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:37:12.897Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 81/100 — FAIL — $0.0418",
+    "ts": "2026-06-13T00:37:36.517Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:37:36.518Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 83/100 — PASS ✓ — $0.0088",
+    "ts": "2026-06-13T00:37:53.952Z"
   }
 ]

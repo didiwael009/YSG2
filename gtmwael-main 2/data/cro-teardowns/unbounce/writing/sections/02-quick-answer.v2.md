@@ -1,0 +1,3 @@
+## Unbounce homepage positioning shift: what changed and what it means
+
+Unbounce replaced its homepage headline from **"Convert More Leads and Sales From Your Ad Spend"** to **"Launch faster. Convert more."** — dropping a specific paid-ad ROI promise for a broader speed-and-conversion message. The page now appears built for agencies, ecommerce teams, SaaS companies, and small businesses evaluating a platform where they can build pages, run tests, and improve results in one place. If your primary traffic comes from paid search on high-intent keywords, removing that outcome-specific anchor may cost you ad-to-page relevance and drop your quality score.

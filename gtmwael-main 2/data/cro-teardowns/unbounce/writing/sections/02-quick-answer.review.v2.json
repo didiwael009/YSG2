@@ -1,0 +1,36 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The final causal claim — 'removing that outcome-specific anchor may cost you ad-to-page relevance and drop your quality score' — names a condition ('if your primary traffic comes from paid search on high-intent keywords') but 'drop your quality score' is still a direct outcome claim without data support. It should be hedged more explicitly ('could reduce Quality Score alignment') rather than stated as a near-certain consequence.",
+    "The phrase 'appears built for' is slightly hedged but the paragraph immediately lists audiences (agencies, ecommerce, SaaS, small businesses) as if confirmed — these are consistent with the navigation evidence but the framing should note these are navigation-inferred audiences rather than stated targets.",
+    "Word count is approximately 88 words — this exceeds the 75-word SECTION GOAL maximum and the 45–75 word check range flagged in the required checks.",
+    "The sentence 'The page now appears built for agencies, ecommerce teams, SaaS companies, and small businesses evaluating a platform where they can build pages, run tests, and improve results in one place' is 38 words — approaches the 45-word single-sentence limit and carries three distinct ideas (audience list, platform framing, use-case description) in one sentence."
+  ],
+  "requiredFixes": [
+    "Trim the section to 75 words or fewer — the draft is approximately 88 words and exceeds the stated SECTION GOAL and word-count check. Cut the audience list or collapse it into one phrase ('broader growth teams') to recover ~15 words.",
+    "Soften 'drop your quality score' to 'risk reducing Quality Score alignment' or 'could weaken ad-to-page message match' — as written it reads as a causal outcome claim without supporting data, which triggers an evidenceAccuracy penalty.",
+    "Add a brief attribution signal to the audience list — e.g. 'navigation now lists agencies, ecommerce, SaaS, and small businesses as named segments' — so it reads as evidence-grounded rather than editorially asserted."
+  ],
+  "riskFlags": [
+    "'drop your quality score' — stated as a near-certain outcome; no data in the evidence supports a confirmed Quality Score impact. Needs hedging.",
+    "'The page now appears built for agencies, ecommerce teams, SaaS companies, and small businesses' — these are inferred from navigation labels in the evidence, not a stated Unbounce strategy document. The inference is defensible but should be attributed to the navigation change."
+  ],
+  "seoNotes": [
+    "The ## heading 'Unbounce homepage positioning shift: what changed and what it means' contains the company name and 'homepage' — passes the searchableHeadings check cleanly.",
+    "The verbatim headline quotes are correctly formatted in **bold quotes** — this is good featured-snippet hygiene and helps Google identify the before/after comparison.",
+    "The section names the company, the single biggest change, and a backfire condition — three of the four SECTION GOAL requirements are met. The 'who the page now serves' element is present but over-long, which is what pushes the word count past 75.",
+    "The opening anchors immediately on the headline change — this is the right entry point for a featured snippet and for search intent around 'Unbounce homepage teardown'."
+  ],
+  "rewriteInstruction": "The draft is structurally sound and passes on evidence and specificity, but it is approximately 88 words — over the 75-word ceiling for this section. Trim by collapsing the audience list into a single short phrase tied explicitly to the navigation evidence (e.g. 'The navigation now names agencies, ecommerce teams, SaaS companies, and small businesses as distinct segments'). Also soften 'drop your quality score' to 'risk weakening ad-to-page message match' to remove the unsupported causal outcome. The four-part SECTION GOAL (company name, biggest change, who it now serves, backfire condition) is otherwise satisfied — do not restructure, only compress and hedge.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 14,
+    "plainLanguage": 19,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

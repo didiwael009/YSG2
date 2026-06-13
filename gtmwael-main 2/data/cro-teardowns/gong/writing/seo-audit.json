@@ -1,51 +1,52 @@
 {
-  "seoScore": 83,
+  "seoScore": 82,
   "pass": true,
   "titleScore": 12,
   "metaDescriptionScore": 13,
-  "headingStructureScore": 14,
+  "headingStructureScore": 13,
   "searchIntentScore": 18,
   "keywordUseScore": 8,
   "readabilityScore": 14,
   "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "Link 'SaaS homepage best practices' or 'homepage redesign case studies' when discussing Gong's shift from category to outcome messaging",
-    "Link to a guide on 'navigation optimization for SaaS' when discussing the removal of 'What is RI?' from navigation",
-    "Link to content on 'meta description optimization' or 'page title strategy' when analyzing Gong's title tag evolution",
-    "Link to a resource on 'CTA optimization' or 'conversion funnel design' when discussing the shift from named-person CTAs to content-driven CTAs",
-    "Link to content on 'customer social proof strategies' when discussing the replacement of individual testimonials with '5,000+ customers' proof"
+    "Link from 'SaaS homepage CRO teardown' section to other teardown articles in the blog series (e.g., competing products or similar-stage companies)",
+    "Link 'Revenue Operations' or 'RevOps' mention to a glossary or foundational article explaining GTM roles for readers unfamiliar with the terminology",
+    "Link 'Magic Quadrant' reference to Gartner methodology or competitive landscape content if available on the blog",
+    "Add a 'Related teardowns' section at the end linking to other SaaS homepage analyses that show similar messaging shifts (e.g., category maturity patterns)",
+    "Link from the CTA analysis section to a dedicated CRO resource on designing conversion paths for different buyer personas"
   ],
   "faqSuggestions": [
-    "When should you remove category education from your homepage navigation?",
-    "How do you know if your target buyer has shifted from individual contributors to buying committees?",
-    "What's the difference between 'Revenue Intelligence' and 'Revenue AI OS'—and why does it matter for your positioning?",
-    "How can you test whether your homepage is still written for the wrong buyer persona?",
-    "Should you remove explanatory content before you have proof content to replace it?",
-    "What does it mean when Google autocomplete stops needing your category keyword?",
-    "How many products or integrations do you need before claiming 'OS' or 'platform' status?"
+    "Why did Gong change its homepage headline from 'Revenue Intelligence' to 'Revenue AI'?",
+    "How do you know when it's time to remove educational content from your SaaS homepage?",
+    "What's the difference between a category explanation and an outcome-focused headline?",
+    "Should we rename our product category if competitors are using it differently?",
+    "How do I audit whether my homepage messaging still matches my target buyer's stage in the buying process?",
+    "What does 'OS' or 'platform' language signal to enterprise buyers, and when is it safe to use?",
+    "Why did Gong replace named-person testimonials with content CTAs on its homepage?"
   ],
   "contentGapNotes": [
-    "The article does not address how Gong's pricing model or packaging may have changed in relation to the shift from sales-team to GTM-organization messaging—yet the 'per-seat pricing pressure' is mentioned as a driver. A dedicated section on how pricing pages should evolve alongside homepage messaging could strengthen the applicability.",
-    "No discussion of how Gong's search demand or keyword strategy may have shifted in relation to the homepage changes. The article mentions 'search bar analytics' as a diagnostic but does not model what a SaaS team should expect to see in search trends when this transition is working.",
-    "The article does not cover the role of Gong's product demos, interactive elements (the 'chat widget mockup' is mentioned once), or video content in the transition from education to authority—despite these being visible on the homepage.",
-    "Limited exploration of what happens to mid-funnel or awareness-stage content when a homepage stops explaining the category. Does this traffic shift to blog, guides, or video content?",
-    "No analysis of how Gong's email nurture sequences, ad copy, or landing pages may have aligned (or diverged) from the homepage messaging shift to test the broader go-to-market coherence."
+    "The article references Gong's acquisition of RightBound but does not explain how product M&A validates or pressures homepage messaging changes—a connection that would help readers understand whether consolidation should trigger their own messaging audits.",
+    "The article mentions 'net dollar retention' decline but does not explore how retention pressure specifically influences homepage strategy (e.g., upsell messaging, platform positioning), leaving a gap for readers evaluating messaging during their own growth slowdowns.",
+    "No discussion of how Gong's pricing model changes (if any occurred) align with the shift from 'sales team' to 'GTM organization' positioning—useful context for readers whose pricing also evolved alongside audience shift.",
+    "The article does not address how Gong handled the transition period where both old and new messaging coexisted or whether A/B testing data informed the final shift—relevant for readers planning similar pivots.",
+    "Limited exploration of how Gong's content marketing (blog, guides, webinars) may have shifted in parallel with homepage messaging—a holistic CRO perspective would strengthen the analysis."
   ],
   "requiredFixes": [
-    "Increase primary keyword density: 'Gong homepage CRO teardown' appears only twice in the body text and zero times in subheadings. Add it to at least one H2 or strategic paragraph to improve keyword relevance signaling.",
-    "Strengthen secondary keyword integration: 'SaaS homepage CRO teardown' and 'homepage A/B test analysis' are listed as secondary keywords but do not appear in the article. Add at least one reference to 'SaaS homepage' patterns or 'A/B testing' methodology to justify their inclusion or remove them from the metadata.",
-    "Add explicit internal linking anchors: The article references 'founder test,' 'your test,' and 'audit your homepage' but does not link to any internal resources, tools, or frameworks. Add at least 2–3 contextual internal links before publication.",
-    "Clarify the scope limitation in the article: The text states 'The actual item names are not available in the source data' when discussing navigation changes. This transparency is good, but the article should more clearly signal upfront that some details are inferred rather than confirmed, to maintain credibility."
+    "Meta description character count: The provided meta description is approximately 166 characters (with ellipsis). Trim to under 155 characters to prevent truncation in SERPs. Current: 'A CRO teardown of Gong's homepage from Jan 2020 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from…' Suggested revision: 'See how Gong's homepage evolved from explaining Revenue Intelligence to claiming AI infrastructure. Lessons for SaaS CRO teams.'",
+    "Title tag optimization: The title 'Gong Homepage Teardown: Jan 2020 to Jun 2026' is 48 characters (good length), but could be slightly more keyword-forward. Current primary keyword 'Gong homepage CRO teardown' is present but title reads more as a date range than a CRO resource. Consider rephrasing to lead with 'CRO Teardown: Gong Homepage' or 'Gong CRO Teardown: Homepage Evolution Jan 2020–Jun 2026' to boost keyword prominence.",
+    "Primary keyword usage: The primary keyword 'Gong homepage CRO teardown' appears only 2–3 times in body text (title, opening, and sparingly in sections). Strengthen presence by using the full phrase or close variant (e.g., 'this CRO teardown of Gong's homepage') 1–2 more times in the intro or section headers without over-optimization.",
+    "H1 mismatch: The article opens with H1 'How Gong Rewrote Its Homepage Over 6 Years' but uses the same heading twice (line 1 and line 2 of main content). Remove or restructure the duplicate to avoid HTML/UX confusion."
   ],
   "optionalImprovements": [
-    "Consider repurposing the excerpt: The generated excerpt 'How Gong Rewrote Its Homepage Over 6 Years' is strong, but the meta description front-loads the promise without the payoff. Consider tweaking the meta description to highlight the actionable lesson: 'How Gong shifted from explaining a category to claiming infrastructure—and what your SaaS team can test.' This may improve click-through rate.",
-    "Add a summary table: A before/after matrix (2020 vs. 2026) showing headline, H1, meta description, primary CTA, and navigation structure side-by-side could improve scannability and make the teardown more actionable for readers skimming.",
-    "Expand the 'business context' section: The funding and market consolidation details are mentioned but brief. A dedicated subsection on 'Why Gong's competitive landscape forced a messaging reset' could strengthen the strategic framing and improve dwell time.",
-    "Add a downloadable checklist: A simple 'Homepage Messaging Readiness Checklist' (e.g., 'Is your category mature enough to drop?', 'Do you have 3+ proof points?', 'Has your buyer persona shifted?') could increase engagement and shareability.",
-    "Link the Gartner Magic Quadrant reference: The mention of the December 2025 Magic Quadrant for Revenue Action Orchestration could link to Gartner research or a summary, improving authority and providing an exit point for readers interested in competitive analysis.",
-    "Strengthen the call-to-action: The article ends with audit advice but no next step. Consider adding a final CTA: 'Ready to audit your homepage? Download our SaaS homepage CRO template' or 'See how your homepage messaging compares—view other SaaS teardowns.'"
+    "Add a 'Key Metrics' or 'Timeline Summary' callout box early in the article (after the intro) listing the 3 snapshots with dates and a 1-line insight for each—improves scannability and supports featured snippet eligibility.",
+    "Expand the 'Founder test' callout sections (3 instances) into a dedicated 'Self-audit checklist' near the end so readers can easily reference all recommendations in one place.",
+    "Include a screenshot comparison of the 2020 vs. 2026 Gong homepage hero sections to visualize the narrative—especially helpful for readers less familiar with Gong's design history.",
+    "Add a brief 'Not all categories mature the same way' disclaimer or section noting that retiring category explanations works for funded, brand-aware companies (like Gong) but may backfire for earlier-stage or less-recognized competitors.",
+    "Consider a 'Further reading' or 'Related frameworks' section linking to SaaS messaging frameworks (e.g., jobs-to-be-done, positioning canvas) that informed the teardown analysis.",
+    "Use bold or color callouts for the 'Before' and 'After' quoted copy to improve visual separation and make the contrast easier to scan.",
+    "Add a 'What we don't know' section acknowledging that without A/B test data or traffic/conversion reports, the analysis is directional—increases credibility by managing expectations about what the teardown can and cannot claim."
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.008928000000000047,
-  "generatedAt": "2026-06-12T11:04:55.189Z"
+  "costUsd": 0.009303999999999979,
+  "generatedAt": "2026-06-13T00:35:18.670Z"
 }

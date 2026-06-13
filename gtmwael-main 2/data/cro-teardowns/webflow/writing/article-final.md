@@ -1,8 +1,8 @@
 ---
 title: "Webflow Homepage Teardown: Jan 2020 to Jun 2026"
 slug: webflow
-generatedAt: 2026-06-12T11:11:47.784Z
-sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
+generatedAt: 2026-06-13T00:46:10.058Z
+sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
 ---
 # How Webflow rewrote its homepage over 6 years
 
@@ -13,6 +13,10 @@ sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "
 # Webflow Homepage Teardown: How It Repositioned From Developer Tool to Growth Engine
 
 Webflow's homepage stopped speaking to designers and started speaking to CMOs — and the evidence is sitting in the headline. In 2020, the page opened with **"Break the code barrier"**, a message built for someone frustrated by technical limits. By 2026, that became **"Make your website a growth engine"**, a message built for someone accountable to revenue. The page title shifted too: from **"Responsive web design tool, CMS, and hosting platform"** to **"Webflow: The agentic web platform for modern businesses."** This teardown tracks that Webflow homepage evolution — and shows you how to tell whether your own homepage is still talking to a buyer you've outgrown.
+
+## Quick answer
+
+Webflow's biggest homepage change between 2020 and 2026 is the primary headline swap: from **"Break the code barrier"** to **"Make your website a growth engine."** The page now speaks to marketing leaders and revenue-accountable teams who already know what Webflow does and want to know what it will deliver for their business. If your product still depends on first-time visitors discovering what it does, dropping the explanatory language before your brand is widely known may quietly kill the self-serve signups that keep your pipeline alive.
 
 ## Webflow homepage 2020–2025: from designer empowerment tool to enterprise growth platform
 

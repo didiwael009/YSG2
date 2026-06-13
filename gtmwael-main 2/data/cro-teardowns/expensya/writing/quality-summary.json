@@ -1,218 +1,62 @@
 {
   "slug": "expensya",
-  "generatedAt": "2026-06-12T10:57:43.537Z",
+  "generatedAt": "2026-06-13T00:44:54.955Z",
   "mode": "standard",
   "sections": [
     {
-      "sectionId": "01-intro",
-      "finalVersion": 1,
+      "sectionId": "02-quick-answer",
+      "finalVersion": 3,
       "finalScore": 88,
       "passed": true,
-      "loopsUsed": 0,
+      "loopsUsed": 2,
       "riskFlagCount": 2,
       "riskFlags": [
-        "'That is not a translation. It is a different company talking to a different buyer.' — stated as fact; the evidence supports this as a reasonable inference but no confirmed strategy is documented. Needs hedging per the evidence notes.",
-        "'Expensya's English homepage is gone' — stated as absolute fact; the evidence shows French is now primary but an 'Anglais' language toggle exists in the new nav, suggesting English access persists. This claim may be technically inaccurate."
+        "'this move risks collapsing trial volume' — softened by the condition clause, but still an outcome claim without supporting data. Rephrase to 'this move may reduce trial volume' or add 'according to the evidence pattern observed here'.",
+        "'The page now assumes visitors already know what expense management software is' — this is an inference about user cognition not directly traceable to the evidence. It is plausible but should be flagged as an interpretation, not a fact."
       ],
       "remainingIssueCount": 4,
       "remainingIssues": [
-        "The final sentence ('By the end of this teardown, you will know how to spot whether your own homepage is making the same trade') is a generic promise-of-value closer that could appear in almost any teardown intro — it does not anchor to Expensya's specific trade-off.",
-        "The word count is approximately 89 words — at the very top of the 55–90 word limit. One more clause would breach the cap.",
-        "The phrase 'That is not a translation. It is a different company talking to a different buyer.' makes a mild causal/interpretive leap presented as fact rather than as an observed signal — the evidence supports 'may suggest' language, not a declarative assertion.",
-        "No period label ('Oct 2020 to Jun 2026') appears in the intro. The section goal requires the period to be named."
+        "The final sentence ('If your site still draws cold, category-unaware traffic, this move risks collapsing trial volume') is a causal outcome claim. It is hedged with a condition ('if your site still draws cold traffic'), which satisfies the condition requirement, but 'risks collapsing trial volume' edges toward an outcome assertion without data. It survives the hard cap but should be softened.",
+        "The phrase 'sales-assisted funnel' is an expert term used without an immediate plain-language definition in the same sentence. The reader is expected to know what this means.",
+        "Word count is approximately 78 words — just over the 75-word section goal. This is a minor violation but worth flagging.",
+        "The section goal requires naming 'the single biggest change' — the draft names two changes (headline and CTA) rather than leading with one dominant change. This slightly dilutes the snippet candidacy."
       ],
-      "sectionCostUsd": 0.05491950000000001
-    },
-    {
-      "sectionId": "03-visual-timeline",
-      "finalVersion": 3,
-      "finalScore": 79,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "The claim that three CTAs 'disappeared' implies intentional removal — the evidence shows they are absent in the current snapshot but does not confirm deliberate removal versus page restructuring.",
-        "The phrase 'may reach a narrower audience' edges toward an outcome claim without a stated condition — add 'if no English alternative exists' or equivalent.",
-        "The section heading implies the page is now a 'French identity' play — this is an interpretation not directly confirmed by the evidence, which notes the language shift 'may reflect a regional focus, an SEO decision, or both'."
-      ],
-      "remainingIssueCount": 11,
-      "remainingIssues": [
-        "Section heading says '2020–2025' but the evidence clearly states the second snapshot is June 2026 — a factual error not traceable to evidence.",
-        "Section heading contains no searchable topic term beyond the company name and date range — 'homepage', 'positioning', 'messaging', or 'CTA' is absent.",
-        "Third H3 ('June 2026 — a polished page that may reach a narrower audience') repeats the CTAs already listed in the second H3, which causes the paragraph to carry more than 2 distinct ideas and buries the finding.",
-        "The third H3 body paragraph is approximately 75 words — exceeds the 60-word cap for H3 body paragraphs, triggering a scannability penalty.",
-        "The phrase 'narrowing' in the third H3 implies audience reduction as an outcome without an explicit condition ('if [condition]'), triggering a causal-without-condition penalty.",
-        "The current H1 is in French ('Voici à quoi devrait ressembler la gestion des dépenses.') and the article must serve English-language readers — the draft quotes it in bold but provides no translation, leaving the meaning opaque for non-French founders.",
-        "The meta description quote 'le logiciel intelligent de gestion des dépenses pour les équipes financières modernes' is also untranslated, same problem.",
-        "The finding in the third H3 ('a polished page that may reach a narrower audience') is not stated in the first two sentences — the first sentence lists removed CTAs again before arriving at the finding.",
-        "The closing sentence of H3 block 3 ('Whether that narrowing is intentional or incidental...') is abstract and inconclusive rather than concrete or actionable — violates the closing-sentence rule.",
-        "The second H3 block contains approximately 95 words across its paragraph — exceeds 60-word paragraph cap, which also risks triggering the 90-word scannability hard cap (check exact count).",
-        "Word count is approximately 310 words — within range but at the upper edge; the repeated CTA list inflates it unnecessarily."
-      ],
-      "sectionCostUsd": 0.159216
-    },
-    {
-      "sectionId": "04-messaging-evolution",
-      "finalVersion": 2,
-      "finalScore": 87,
-      "passed": true,
-      "loopsUsed": 1,
-      "riskFlagCount": 5,
-      "riskFlags": [
-        "The phrase 'may indicate the visitor Expensya now wants to attract already operates in a French-speaking context' is appropriately hedged — no hard risk.",
-        "The claim 'may indicate the page is now written for a finance director or CFO' is hedged — acceptable.",
-        "No financial figures, named events, or dates used without hedging.",
-        "No CTA or nav items named in section 05 context here — not applicable to this section.",
-        "The phrase 'Writing the headline in French suggests the page is no longer trying to speak to every market equally' is an inference from evidence, not a causation claim — acceptable as written."
-      ],
-      "remainingIssueCount": 7,
-      "remainingIssues": [
-        "Section 3 (synthesis paragraph) runs approximately 68 words — exceeds the 60-word paragraph cap and triggers a scannability penalty.",
-        "The paragraph beginning 'The page title moved from...' runs approximately 72 words — exceeds the 60-word cap.",
-        "The opening of H3 block 3 ('What Expensya's messaging shift signals about its target buyer') buries the takeaway — the first sentence is a conclusion but the second continues the conclusion rather than delivering an actionable implication, making the block feel like analysis rather than a founder-facing finding.",
-        "Minor: the phrase 'aspiration positioning' does not appear, but 'aspirational category definition' appears once in the evidence — this is not used in the draft, so no penalty. No forbidden jargon terms are used, which is positive.",
-        "The H3 heading 'What Expensya's messaging shift signals about its target buyer' is slightly abstract and borderline 'clever-only' — it contains 'messaging' and 'Expensya' so it passes the searchable heading check, but it could be more concrete.",
-        "No outcome/causation hard claims detected — causal language is appropriately hedged with 'suggests', 'may indicate', 'consistent with'. No hard cap triggered.",
-        "Word count is approximately 370 words — within the 200–380 word limit, though at the high end."
-      ],
-      "sectionCostUsd": 0.134178
-    },
-    {
-      "sectionId": "05-cta-navigation-evolution",
-      "finalVersion": 3,
-      "finalScore": 84,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — causal inference not directly supported by evidence; should be framed as 'consistent with' not 'suggests [intent]'.",
-        "'That pattern is consistent with the homepage now being built primarily for a French-language market' — reasonable inference but not directly confirmed by evidence; hedge is present ('consistent with') which is acceptable, but writer should not strengthen this claim in revision.",
-        "The ## heading phrase 'shifted its homepage CTA to a demo-first sales motion' implies a strategic decision was made — this is not confirmed by evidence and borders on an outcome claim; consider softening to 'replaced its self-serve CTAs with a demo request'."
-      ],
-      "remainingIssueCount": 11,
-      "remainingIssues": [
-        "Section heading contains the company name and 'CTA' — passes searchability — but 'shifted its homepage CTA to a demo-first sales motion' makes a mild causation claim that is not fully hedged.",
-        "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — this is an inference presented as a finding; it should be flagged as speculative.",
-        "The phrase 'sales motion — the sequence of steps a company uses to move a prospect toward a purchase' defines the term inline, which is good, but the term 'sales motion' is then used a second time in the Founder Takeaway without re-definition, creating a minor plain-language risk.",
-        "The nav H3 body paragraph 'Both point toward a visitor who arrives already speaking the language — literally and commercially — that Expensya now addresses' is abstract and metaphorical as a closing sentence rather than concrete or actionable — penalisable under plainLanguage readability rules.",
-        "Word count is approximately 310 words — within the 180–320 band, but tight.",
-        "The nav H3 block contains a closing sentence ('Both point toward a visitor who arrives already speaking the language — literally and commercially — that Expensya now addresses') that is abstract rather than concrete — violates the FINDING→EXPLANATION→EXAMPLE→IMPLICATION formula's final step.",
-        "The nav H3 block does not deliver its practical takeaway in the first two sentences — the first sentence is a data observation ('Eight navigation items were removed and eight added'), and the takeaway ('consistent with the homepage now being built primarily for a French-language market') arrives in the third sentence.",
-        "No paragraph exceeds 60 words on inspection, so no scannability hard cap fires — confirmed safe.",
-        "'Learn more about this provider' is listed in ctaAdded as 'Learn more about this provider' — this appears verbatim in the evidence, so no penalty.",
-        "CTA artefacts (Necessary 21, Cloudflare 12, etc.) are correctly identified and explained — this is a strength.",
-        "The closing founder test is specific and anchored to Expensya's named CTAs — passes founderTakeaway check."
-      ],
-      "sectionCostUsd": 0.137817
-    },
-    {
-      "sectionId": "07-business-context",
-      "finalVersion": 2,
-      "finalScore": 81,
-      "passed": false,
-      "loopsUsed": 1,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "Claim that Ramp, Brex, and Spendesk were 'bundling corporate cards and accounts payable into single platforms' is not directly traceable to the provided evidence — the evidence mentions them only as notable competitors.",
-        "'The market was consolidating fast' is a generic editorial assertion not anchored to a specific evidence node — could trigger a -5 specificity penalty if treated as a distinct generic paragraph.",
-        "The phrase 'consistent with the homepage shift toward compliance language, payment card sections, and a demo-request funnel replacing self-serve trials' chains three simultaneous ideas — borderline 3-abstract-noun stack but acceptable given each is a concrete page element."
-      ],
-      "remainingIssueCount": 15,
-      "remainingIssues": [
-        "Section goal requires three short paragraphs ≤60 words each with NO H3 subheadings — the draft instead uses H3 sub-blocks, which contradicts the section goal format (though the rubric penalises missing H3s in analytical sections, creating a tension; the SECTION GOAL is the authoritative spec here for format).",
-        "Paragraph 1 (H3 block 1 body) is approximately 65 words — exceeds the 60-word limit for non-intro paragraphs.",
-        "Paragraph 2 (H3 block 2 body) is approximately 68 words — exceeds the 60-word limit.",
-        "Paragraph 3 (H3 block 3 body) is approximately 62 words — marginally over the 60-word limit.",
-        "Total word count is approximately 215 words — exceeds the 120–200 word ceiling stated in the section goal check.",
-        "The competitor names Ramp, Brex, and Spendesk are cited in paragraph 1 as consolidating forces, but the evidence only names them as 'notable_competitors' — no evidence states they were bundling corporate cards into single platforms at this time in a way Expensya directly responded to; this is a borderline unsupported causal inference.",
-        "The phrase 'The market was consolidating fast' in paragraph 1 reads as generic SaaS commentary that could appear in a teardown of any expense-management competitor — not anchored exclusively to Expensya's evidence.",
-        "The opening of section H3-1 ('By early 2021, Expensya had already signalled its direction') is a moderate template entry — the evidence supports a more interesting paradox entry (a company that raised $20M and rebranded to 'global' and then retreated to French-first positioning).",
-        "No financial figures or named events lack hedge language — this is compliant.",
-        "The founder takeaway in H3-3 is specific and runnable — this is a strength.",
-        "The section heading is searchable and contains the company name and topic terms — compliant.",
-        "All verbatim website quotes appear in bold quotes — compliant.",
-        "Expert term 'ICP' does not appear; no forbidden jargon terms are used — compliant.",
-        "The claim that the Medius acquisition 'placed Expensya inside a suite targeting mid-market CFOs' is supported by evidence ('positioning Expensya as part of a broader indirect spend management suite targeting mid-market CFOs') — compliant.",
-        "Causal link 'consistent with the homepage shift toward compliance language' is correctly hedged with 'consistent with' — not a hard causation claim."
-      ],
-      "sectionCostUsd": 0.12956099999999998
-    },
-    {
-      "sectionId": "06-lessons-for-saas-teams",
-      "finalVersion": 3,
-      "finalScore": 78,
-      "passed": false,
-      "loopsUsed": 2,
-      "riskFlagCount": 3,
-      "riskFlags": [
-        "'French-market scale is unproven' — this is an editorial inference; the evidence shows the toggle was retained but does not state or imply scale is unproven.",
-        "'may collapse traffic from other regions' — causal framing without a named condition from the evidence; needs a conditional qualifier tied to a specific evidence element.",
-        "The implication that Expensya 'retained the Anglais toggle precisely because French-market scale is unproven' is a motivation claim; the evidence shows the toggle exists but does not explain why — this could be penalised as an unsupported causation claim."
-      ],
-      "remainingIssueCount": 9,
-      "remainingIssues": [
-        "Section 03 ('Preserving a re-entry route') has a paragraph exceeding 60 words: the second analytical paragraph ('Removing a trial CTA without a sales team...') runs approximately 65–70 words — scannability penalty applies.",
-        "The closing sentence of H3 block 01 ('that gap is worth investigating before your next homepage refresh') is abstract and forward-drifting rather than concrete or actionable — plainLanguage penalty applies.",
-        "H3 block 03 buries its practical takeaway: the first sentence is a prescriptive instruction ('When you narrow your market focus, preserve at least one route back...') that reads as a strategic memo opener rather than a finding anchored to Expensya's evidence — plainLanguage/founderTakeaway penalty applies.",
-        "H3 block 03 contains two distinct ideas in a single paragraph (the CTA removal AND the toggle retention as evidence of unproven French-market scale) — plainLanguage density penalty applies.",
-        "The ## section heading 'What SaaS teams can study from Expensya's market-retreat homepage strategy' is partially searchable (contains 'Expensya' and 'homepage') but lacks 'positioning', 'messaging', 'CTA', or 'conversion' as a topic anchor — partial searchableHeadings penalty.",
-        "H3 block 02 repeats the phrase 'Expensya's swap from automation breadth to' which re-introduces the quoted CTA in a way that breaks the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula — the finding is not stated in the first sentence.",
-        "The word count is approximately 410–420 words, exceeding the 380-word cap — flag for trim.",
-        "The causal statement 'may collapse traffic from other regions' in H3 block 01 is not attached to a named condition from the evidence — minor evidenceAccuracy penalty.",
-        "The claim 'French-market scale is unproven' in H3 block 03 is an inference not directly traceable to the evidence — the evidence only shows the toggle was retained, not that scale is unproven — evidenceAccuracy penalty."
-      ],
-      "sectionCostUsd": 0.184218
+      "sectionCostUsd": 0.13874580000000003
     }
   ],
-  "averageScore": 82.8,
-  "passCount": 2,
-  "failCount": 4,
+  "averageScore": 88,
+  "passCount": 1,
+  "failCount": 0,
   "skippedCount": 0,
-  "totalRewriteLoops": 8,
-  "weakSections": [
-    "03-visual-timeline",
-    "06-lessons-for-saas-teams"
-  ],
+  "totalRewriteLoops": 2,
+  "weakSections": [],
   "allRiskFlags": [
-    "'That is not a translation. It is a different company talking to a different buyer.' — stated as fact; the evidence supports this as a reasonable inference but no confirmed strategy is documented. Needs hedging per the evidence notes.",
-    "'Expensya's English homepage is gone' — stated as absolute fact; the evidence shows French is now primary but an 'Anglais' language toggle exists in the new nav, suggesting English access persists. This claim may be technically inaccurate.",
-    "The claim that three CTAs 'disappeared' implies intentional removal — the evidence shows they are absent in the current snapshot but does not confirm deliberate removal versus page restructuring.",
-    "The phrase 'may reach a narrower audience' edges toward an outcome claim without a stated condition — add 'if no English alternative exists' or equivalent.",
-    "The section heading implies the page is now a 'French identity' play — this is an interpretation not directly confirmed by the evidence, which notes the language shift 'may reflect a regional focus, an SEO decision, or both'.",
-    "The phrase 'may indicate the visitor Expensya now wants to attract already operates in a French-speaking context' is appropriately hedged — no hard risk.",
-    "The claim 'may indicate the page is now written for a finance director or CFO' is hedged — acceptable.",
-    "No financial figures, named events, or dates used without hedging.",
-    "No CTA or nav items named in section 05 context here — not applicable to this section.",
-    "The phrase 'Writing the headline in French suggests the page is no longer trying to speak to every market equally' is an inference from evidence, not a causation claim — acceptable as written.",
-    "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — causal inference not directly supported by evidence; should be framed as 'consistent with' not 'suggests [intent]'.",
-    "'That pattern is consistent with the homepage now being built primarily for a French-language market' — reasonable inference but not directly confirmed by evidence; hedge is present ('consistent with') which is acceptable, but writer should not strengthen this claim in revision.",
-    "The ## heading phrase 'shifted its homepage CTA to a demo-first sales motion' implies a strategic decision was made — this is not confirmed by evidence and borders on an outcome claim; consider softening to 'replaced its self-serve CTAs with a demo request'.",
-    "Claim that Ramp, Brex, and Spendesk were 'bundling corporate cards and accounts payable into single platforms' is not directly traceable to the provided evidence — the evidence mentions them only as notable competitors.",
-    "'The market was consolidating fast' is a generic editorial assertion not anchored to a specific evidence node — could trigger a -5 specificity penalty if treated as a distinct generic paragraph.",
-    "The phrase 'consistent with the homepage shift toward compliance language, payment card sections, and a demo-request funnel replacing self-serve trials' chains three simultaneous ideas — borderline 3-abstract-noun stack but acceptable given each is a concrete page element.",
-    "'French-market scale is unproven' — this is an editorial inference; the evidence shows the toggle was retained but does not state or imply scale is unproven.",
-    "'may collapse traffic from other regions' — causal framing without a named condition from the evidence; needs a conditional qualifier tied to a specific evidence element.",
-    "The implication that Expensya 'retained the Anglais toggle precisely because French-market scale is unproven' is a motivation claim; the evidence shows the toggle exists but does not explain why — this could be penalised as an unsupported causation claim."
+    "'this move risks collapsing trial volume' — softened by the condition clause, but still an outcome claim without supporting data. Rephrase to 'this move may reduce trial volume' or add 'according to the evidence pattern observed here'.",
+    "'The page now assumes visitors already know what expense management software is' — this is an inference about user cognition not directly traceable to the evidence. It is plausible but should be flagged as an interpretation, not a fact."
   ],
-  "sectionErrors": [
-    {
-      "section": "_seo-audit",
-      "error": "Could not extract JSON from SEO auditor response.\nFirst 500 chars:\n```json\n{\n  \"titleScore\": 12,\n  \"metaDescriptionScore\": 13,\n  \"headingStructureScore\": 14,\n  \"searchIntentScore\": 18,\n  \"keywordUseScore\": 8,\n  \"readabilityScore\": 14,\n  \"internalLinkingScore\": 4,\n  \"seoScore\": 83,\n  \"internalLinkingSuggestions\": [\n    \"Link from the 'Founder test' callouts to a related article on homepage messaging frameworks or CTA strategy — e.g., 'See how other SaaS teams tested CTA positioning' or 'Learn more about demo-first vs. self-serve funnels'.\",\n    \"Link from the 'b"
-    }
-  ],
-  "finalJudgeScore": 81,
+  "sectionErrors": [],
+  "finalJudgeScore": 74,
   "finalJudgePass": false,
   "finalRequiredFixes": [
-    "Fix the ## heading '2020–2025' to '2020–2026' to match the evidence endpoint of Jun 2026",
-    "Replace 'top 20% of revenue' with an un-quantified phrase such as 'the single country generating the majority of your revenue' — the 20% threshold has no evidence basis",
-    "Reframe 'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — remove 'precisely because' and replace with 'consistent with hedging against' or 'which may reflect uncertainty about'",
-    "Reframe 'This suggests Expensya now expects a visitor who is ready to commit time' — add explicit hedge: 'if the page is now targeting warmer inbound leads, this pattern suggests...'",
-    "The paragraph beginning 'Removing a trial CTA without a sales team...' in section 06 exceeds 60 words and contains two compound ideas — split into two paragraphs with a structural break"
+    "Opening paragraph (01-intro): Remove or hedge 'Expensya's English homepage is gone' — replace with 'Expensya's primary homepage is now in French, with English accessible via a toggle' to match evidence accuracy",
+    "Opening paragraph (01-intro): Hedge 'That is not a translation. It is a different company talking to a different buyer.' — add 'appears to be' or 'reads as' to prevent it being scored as an unsupported causation claim",
+    "07-business-context, paragraph 1: Remove the claim that Ramp, Brex, and Spendesk were 'bundling corporate cards and accounts payable into single platforms' or add 'according to public reports' — this specific product claim is not in the compressed evidence",
+    "06-lessons-for-saas-teams, final H3: Remove 'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — replace with 'the toggle's presence is consistent with preserving access for non-French visitors, though the reason it was retained is not confirmed by the evidence'",
+    "05-cta-navigation-evolution, H3 'What Expensya's CTA changes say...': Change 'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' to 'This is consistent with a page designed for visitors who are ready to commit time, not just explore' to remove intent attribution",
+    "03-visual-timeline: The section heading '...from isometric automation showcase to human-first French identity' implies a confirmed strategic identity decision — soften to 'from isometric automation showcase to a French-language, human-led layout'"
   ],
-  "articleWordCount": 1982,
+  "seoScore": 83,
+  "seoPass": true,
+  "seoRequiredFixes": [
+    "In the 'Quick Answer' section, soften the claim 'this move risks collapsing trial volume' — replace with 'this move may reduce self-serve trial volume' to avoid asserting a certainty",
+    "The section titled '5-minute check: can a non-French visitor still convert?' makes an implied claim that non-French visitors face barriers — clarify that this is a structural observation, not a measured finding",
+    "In the CTA analysis, the list 'Necessary 21, Cloudflare 12, Preferences 2' appears without context — either remove it or briefly explain why cookie/tracking artefacts are mentioned in a CRO teardown",
+    "The statement about Medius acquisition valuing Expensya at 'reportedly exceeding $100M' uses hedging language but is stated without a source footnote — either add a source or remove the claim to avoid appearing to cite unverified information"
+  ],
+  "articleWordCount": 2071,
   "repetitionWarnings": [],
   "editorialWarnings": [
     "[03-visual-timeline] Paragraph exceeds 90 words (~91w): \"The most visible change is the headline moving…\""
   ],
-  "overLengthWarning": "Article is 1982 words — exceeds 1900-word hard warning"
+  "overLengthWarning": "Article is 2071 words — exceeds 1900-word hard warning"
 }

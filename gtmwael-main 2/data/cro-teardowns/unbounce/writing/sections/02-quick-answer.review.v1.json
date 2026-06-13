@@ -1,0 +1,38 @@
+{
+  "score": 82,
+  "pass": false,
+  "issues": [
+    "The phrase 'growth teams and agencies who already know what a landing page builder does' is a reasonable inference but not a verbatim or directly traceable claim from the evidence — the evidence names specific verticals (Agencies, Ecommerce, SaaS, Small businesses, B2B marketing) but does not state the audience 'already knows' what a landing page builder does; this framing adds an unsupported assumption.",
+    "The final sentence contains a mild causal claim — 'removing that anchor may hurt both ad relevance and conversions' — without explicitly naming the condition trigger first; the condition is embedded mid-sentence rather than stated as the primary clause, which partially satisfies but does not cleanly satisfy the condition-first rule.",
+    "The section heading is not provided in the draft as written; scoring assumes a standard '## Quick Answer' or similar — if the heading is generic/clever-only with no searchable terms (company name, 'homepage', 'CTA', 'conversion', 'positioning'), a penalty applies.",
+    "Word count is approximately 88 words, which exceeds the 75-word SECTION GOAL maximum and the 45–75 word check range stated in the required checks.",
+    "The phrase 'build-test-optimize platform' uses a compound technical term without a plain-language gloss — although 'full' precedes it, a founder unfamiliar with CRO jargon may not parse this immediately."
+  ],
+  "requiredFixes": [
+    "Trim the draft to 75 words or fewer — currently approximately 88 words. Cut the mid-sentence aside ('who already know what a landing page builder does') and tighten the final condition sentence.",
+    "Reorder the final sentence so the condition comes first and the consequence follows: 'If [condition], then [risk]' — e.g., 'If your paid search depends on matching outcome language like ad spend ROI, removing that anchor risks dropping ad relevance and page-match quality.'",
+    "Replace or define 'build-test-optimize platform' with a plain-language equivalent on first use, e.g., 'a platform where teams build pages, run tests, and improve results in one place.'",
+    "Confirm the ## section heading contains at least one searchable term — 'Unbounce', 'homepage', 'positioning', 'CTA', 'conversion', or 'messaging' — and is not a clever-only label."
+  ],
+  "riskFlags": [
+    "'growth teams and agencies who already know what a landing page builder does' — the evidence shows audience segments in navigation (Agencies, Ecommerce, SaaS) but does not support the claim that these audiences have pre-existing product awareness; this is an inference presented as fact.",
+    "'removing that anchor may hurt both ad relevance and conversions' — this is a forward-looking causal claim; it is partially hedged with 'may' but the evidence only supports a risk hypothesis from the strategic-shift section, not a demonstrated outcome."
+  ],
+  "seoNotes": [
+    "The verbatim headline quotes are correctly bolded — **'Convert More Leads and Sales From Your Ad Spend'** and **'Launch faster. Convert more.'** — which strengthens featured-snippet eligibility.",
+    "The draft names the company (Unbounce), the single biggest change (headline rewrite), the new audience (growth teams and agencies), and one backfire condition — matching the four required featured-snippet elements.",
+    "The phrase 'speed-plus-conversion message' mirrors likely search language around Unbounce positioning, which is positive for snippet targeting.",
+    "At approximately 88 words, the paragraph is slightly too long for reliable featured-snippet extraction — Google typically pulls 40–60 word passages; trimming to under 75 words would improve snippet capture probability."
+  ],
+  "rewriteInstruction": "Trim the draft to 70 words or fewer while preserving all four required elements: company name, biggest change (with both verbatim headlines in bold quotes), new audience, and one backfire condition. Remove the unsupported audience-awareness assumption ('who already know what a landing page builder does') and replace it with the specific verticals named in the evidence (agencies, ecommerce teams, SaaS companies). Restructure the final sentence so the condition is the subject clause and the risk is the consequence — do not bury the condition mid-sentence. Define or replace 'build-test-optimize platform' with plain language in the same phrase.",
+  "dimensionScores": {
+    "evidenceAccuracy": 19,
+    "specificity": 13,
+    "plainLanguage": 16,
+    "scannability": 13,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -2,7 +2,7 @@
 
 ### Buffer's headline shift: from explaining the product to assuming you already know it
 
-That one-word headline carries a wager about its audience. The headline changed from **"Save time managing social media for your business"** to just **"Buffer"**. That is not a shortcut — it is a bet. It suggests Buffer believes enough visitors now arrive already knowing what the product does, making the orienting function of a benefit headline unnecessary. This only holds if organic brand search volume is already doing that work before the visitor lands.
+Behind that visible collapse to one word sits a wager about its audience. The headline changed from **"Save time managing social media for your business"** to just **"Buffer"**. That is not a shortcut — it is a bet. It suggests Buffer believes enough visitors now arrive already knowing what the product does, making the orienting function of a benefit headline unnecessary. This only holds if organic brand search volume is already doing that work before the visitor lands.
 
 ### How the meta description shift signals a wider, creator-inclusive audience
 

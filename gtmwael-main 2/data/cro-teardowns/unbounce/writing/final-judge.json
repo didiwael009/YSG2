@@ -1,54 +1,66 @@
 {
-  "overallScore": 72,
+  "overallScore": 74,
   "pass": false,
-  "evidenceAccuracy": 16,
+  "evidenceAccuracy": 17,
   "plainLanguage": 16,
   "scannability": 11,
-  "searchableHeadings": 8,
+  "searchableHeadings": 7,
   "specificity": 11,
-  "rhythmAndOpening": 8,
-  "founderTakeaway": 3,
+  "rhythmAndOpening": 7,
+  "founderTakeaway": 4,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "06-lessons-for-saas-teams — CTA hierarchy subsection",
-    "07-business-context — generic AI-era SaaS paragraph",
-    "05-cta-navigation-evolution — opening paragraph word count"
+    "05-cta-navigation-evolution",
+    "07-business-context",
+    "## How Unbounce replaced 'SEE THE PLANS' with product-specific entry points — and what that did to the sales motion"
   ],
   "unsupportedClaims": [
-    "'fewer than 20% of active accounts use two products together in the same month' — no such threshold exists in the evidence",
-    "'This is consistent with Wael Aouididi's framework in the Landing Page Playbook 2026' — named source and publication not in the evidence",
-    "'If fewer than 20% of active accounts use two products together in the same month' — invented metric threshold not in the evidence",
-    "'visual sophistication as a 3 out of 5' — the evidence states visual_sophistication: 3, but the article attributes this to an external scoring frame without noting it is the evidence's own label; however, '3 out of 5' phrasing is a direct citation so borderline; scored as minor"
+    "'See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages' — this H2 is listed in h2Removed in the evidence, but the article uses it as if Unbounce made this claim as a factual promise and implies it was a 'provable metric'; the claim itself originates in the evidence and is fine to cite, but the article states it was 'a specific, provable metric' without any evidence that it was validated or provable",
+    "'If fewer than 20% of active accounts use two products together in the same month, adding those products to the nav likely overpromises the platform experience' — the 20% threshold is not in the evidence and is not attributed to the Landing Page Playbook 2026 or any other owned source; this is an invented threshold",
+    "'Unbounce's original page ran three CTAs' — the evidence lists six removed CTAs (Learn More, PREVIEW THE LANDING PAGE BUILDER, SEE HOW UNBOUNCE CAN HELP ME, SHOW ME HOW, Browse Our Template Gallery, SEE THE PLANS); stating the original page ran exactly three is a specific count not supported by the evidence, which only shows what was removed, not the total original CTA count",
+    "'The current page runs six' — the evidence lists ten CTAs added; stating the current page runs exactly six CTAs is a specific count not traceable to the evidence"
   ],
   "riskFlags": [
-    "'that recognition gap may slow conversion for that audience' — mild conversion prediction without data; flagged but hedged with 'may'",
-    "'if the count is zero, you have made the same trade Unbounce made: broader appeal, but fewer instant confirmation signals' — presents a causal mechanism as near-certain without evidence",
-    "'This evolution maps to a recognizable AI-era SaaS pattern: incumbents in maturing feature categories absorbing AI capabilities to justify platform-tier pricing and resist commoditization' — asserts company strategic intent as a general pattern applied as fact to Unbounce without direct evidence",
-    "'The product navigation expanded from a single Preview the Builder entry point to discrete nodes including A/B testing, Smart Traffic, and AI Copywriting' — 'Smart Traffic' and 'AI Copywriting' appear in the evidence as nav nodes, but the framing as 'distinct products' and 'Unbounce shipped multiple distinct products' asserts internal product decisions not directly supported by the compressed evidence"
+    "'That single change signals a deliberate break from one specific type of buyer' — asserts confirmed intent from a headline change alone; the evidence note explicitly warns this cannot be confirmed as deliberate strategy",
+    "'That is a meaningful visual shift' — asserts significance without a condition or supporting data point; should be hedged as 'this suggests a shift'",
+    "'This was a page built to justify the product category' — implies confirmed authorial intent not traceable to the evidence; should be softened to 'the copy reads as though it was built to justify the category'",
+    "'The page looked less like a single tool and more like a suite' — implies confirmed strategic intent; should be hedged",
+    "'visitors scanning for that specific ROI signal may not find it quickly — and that recognition gap may slow conversion for that audience' — causal outcome claim without supporting data; needs a condition hedge such as 'if paid search is a primary acquisition channel'",
+    "'what that did to the sales motion' in the ## heading — implies confirmed causal outcome with no supporting data; should be rewritten to 'what these changes signal about the sales motion'",
+    "'This evolution maps to a recognizable AI-era SaaS pattern: incumbents in maturing feature categories absorbing AI capabilities to justify platform-tier pricing and resist commoditization' — this is a generic pattern assertion not anchored to specific Unbounce evidence; reads as consultant-speak",
+    "'that pattern suggests category ownership alone no longer closes deals — workflow integration does' — causal prediction not supported by evidence",
+    "'adding those products to the nav likely overpromises the platform experience before the product has earned it' — directional claim with an invented 20% threshold; speculative heuristic not labeled as such",
+    "'If the count is zero, you have made the same trade Unbounce made' — causal equivalence claim that overstates; a hedge is needed"
   ],
   "requiredFixes": [
-    "Remove the '20% of active accounts' threshold entirely — it is an invented metric with no basis in the evidence; replace with a qualitative observation about cross-product nav signals",
-    "Remove all references to 'Wael Aouididi' and 'Landing Page Playbook 2026' — this named source and publication do not appear in the evidence and constitute an unsupported factual claim; the point can stand without the citation",
-    "The CTA hierarchy subsection claims Unbounce 'grew from three CTAs to six' but the evidence shows 6 CTAs removed and 10 added — the article's count of 'three CTAs originally' and 'six CTAs now' does not match the evidence totals; reconcile or remove the specific count claims",
-    "The business context section asserts 'Unbounce shipped multiple distinct products and then reorganized its homepage' — reframe as an inference ('the nav additions suggest...') rather than a stated fact about internal decisions"
+    "Remove the '20% of active accounts' threshold entirely or attribute it explicitly to the Landing Page Playbook 2026 with a direct citation; it is an invented metric as currently written and fires the hard cap",
+    "Correct the claim that 'Unbounce's original page ran three CTAs' — the evidence does not confirm the total original CTA count, only what was removed; rewrite to reference only the specific removed CTAs listed in the evidence",
+    "Correct the claim that 'The current page runs six' CTAs — the evidence lists ten CTAs added, not six current; rewrite to reference only the specific added CTAs listed in the evidence",
+    "Rewrite the ## heading 'How Unbounce replaced SEE THE PLANS with product-specific entry points — and what that did to the sales motion' to remove the causal 'what that did to'; replace with 'what these changes signal about' or equivalent",
+    "Soften 'That single change signals a deliberate break' to 'This change is consistent with a shift away from' or equivalent hedged language; the evidence explicitly declines to confirm intent",
+    "Soften 'This was a page built to justify the product category' to 'the copy reads as though it was built to justify the category'",
+    "Add a condition hedge to 'that recognition gap may slow conversion for that audience' — append 'if paid search is a primary acquisition channel for Unbounce'",
+    "Remove or restructure the generic business-context closing paragraph ('category ownership alone no longer closes deals — workflow integration does') which reads as consultant-speak with no specific evidence anchor"
   ],
   "optionalImprovements": [
-    "The 2022 snapshot section is short and could benefit from one specific H2 or H3 from the evidence to anchor the analysis more tightly",
-    "The opening paragraph is strong but the second article title ('# Unbounce Homepage Teardown: From Ad Spend Tool to CRO Platform') duplicates the first heading — consider removing the duplicate",
-    "The business context section reads more like a narrative summary than an analytical section; adding one H3 subheading would improve scannability",
-    "The final runnable test in '06-lessons-for-saas-teams' (screenshot and count buttons) is practical but does not reference any Unbounce-specific CTA label — add one specific label from the evidence to anchor it"
+    "The business context section (07) would benefit from at least one H3 subheading to improve scannability; it currently runs as a wall of text",
+    "The 'Quick test: count the outcome signals' block could be strengthened by tying the test explicitly back to Unbounce's specific first-50-words change rather than leaving it as a generic exercise",
+    "The opening paragraph repeats the headline swap detail that is already covered in the quick-answer section immediately below; consider consolidating to avoid redundancy",
+    "The H3 'The removals are as telling as the additions' is generic framing that could appear in any teardown; replace with a company-specific label such as 'What Unbounce's removed discovery CTAs signal about assumed buyer awareness'",
+    "The 07-business-context section does not reference the specific nav items added (Agencies, Ecommerce, SaaS, Small businesses, B2B marketing, Service specialists, PPC, Social ads) in a structured way; listing them would improve specificity"
   ],
   "rerunRecommendations": [
-    "06-lessons-for-saas-teams — CTA hierarchy subsection (remove invented 20% threshold and Wael Aouididi citation, reconcile CTA count claims)",
-    "07-business-context — reframe intent assertions as hedged inferences"
+    "05-cta-navigation-evolution — requires correction of invented CTA counts (three original, six current) and removal of the sales-motion causal heading",
+    "06-lessons-for-saas-teams — requires removal or proper attribution of the 20% threshold claim in the product navigation expansion H3 block",
+    "07-business-context — requires removal of the generic AI-era SaaS pattern paragraph and the unsupported 'workflow integration closes deals' closing claim"
   ],
   "model": "claude-sonnet-4-6",
-  "costUsd": 0.04167300000000007,
-  "generatedAt": "2026-06-12T22:11:40.145Z",
+  "costUsd": 0.05562,
+  "generatedAt": "2026-06-13T00:51:00.966Z",
   "repetitionWarnings": [
-    "The observation that removing specific ROI language broadens appeal but reduces confirmation signals for high-intent visitors appears in the messaging evolution section, the CTA section, and the lessons section — consolidate or vary the framing across sections"
+    "The headline swap from 'Convert More Leads and Sales From Your Ad Spend' to 'Launch faster. Convert more.' is restated in full in the intro, the quick-answer section, and the messaging-evolution H3 — three separate sections repeat the same analytical conclusion about the paid-ad-to-platform shift without adding new evidence each time"
   ]
 }

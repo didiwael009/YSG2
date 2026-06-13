@@ -1,0 +1,37 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The section heading is not visible in the draft — cannot confirm whether it contains searchable terms (company name, 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'). Assumed absent or generic, applying partial penalty.",
+    "The backfire condition ('may quietly kill the self-serve signups') is causal without a named condition — the condition is implied but not explicitly stated as 'if [condition]'. The rubric requires an attached condition for causal statements. This is borderline compliant; the phrase 'if your product still depends on first-time visitors discovering what it does' does serve as the condition, so no full penalty applied, but the phrasing is slightly loose.",
+    "Word count is approximately 78 words — just over the 75-word section goal ceiling and the 45–75 word rubric check. This is a minor overrun but technically violates the stated goal.",
+    "The section does not name the new audience the page serves with a specific label drawn verbatim from the evidence (e.g., 'marketing teams' appears in evidence section headings). The draft uses 'marketing leaders and revenue-accountable teams' which is paraphrased rather than quoted — acceptable but a small specificity gap.",
+    "No explicit reference to the page title change ('The agentic web platform for modern businesses') or navigation overhaul (8 items added), which are among the strongest corroborating signals in the evidence. The section is slightly under-anchored given how much evidence is available."
+  ],
+  "requiredFixes": [
+    "Trim the section to 75 words or fewer — cut approximately 3–5 words without losing the backfire condition or the company name.",
+    "Confirm the ## section heading contains the company name ('Webflow') AND at least one of: 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'. If the heading is clever-only, rewrite it to include searchable terms.",
+    "Consider adding a second verbatim quoted element (e.g., the page title **'The agentic web platform for modern businesses'**) to deepen evidence anchoring and distinguish this from a generic repositioning summary — even a four-word insertion will sharpen specificity."
+  ],
+  "riskFlags": [
+    "The phrase 'may quietly kill the self-serve signups that keep your pipeline alive' implies a conversion outcome without data. It is partially hedged by 'may' but still implies directional causation. No hard cap triggered because it is conditional and hedged, but the claim is not traceable to a measured outcome in the evidence.",
+    "'The page now speaks to marketing leaders and revenue-accountable teams who already know what Webflow does' — the 'already know' claim is an inference from the evidence (consistent with the strategic-shift note) but is not a verbatim evidence statement. Low risk but worth flagging."
+  ],
+  "seoNotes": [
+    "The opening sentence names the company, the specific change, and the exact before/after headlines in bold quotes — this is well-structured for a Google featured snippet extraction.",
+    "The section answers the implicit search query ('what changed on Webflow's homepage and why does it matter') in a single paragraph, which is correct snippet architecture.",
+    "The backfire condition in the final sentence adds the nuance Google's helpful content signals reward — it signals genuine analysis rather than promotional framing.",
+    "The primary keyword 'Webflow homepage teardown' is not present in this section, but that is expected for a quick-answer paragraph rather than a heading — confirm the ## heading carries the keyword."
+  ],
+  "rewriteInstruction": "Trim to 75 words maximum — the current draft runs approximately 78 words and must come under the ceiling. The cleanest cut is in the final sentence: replace 'that keep your pipeline alive' with a shorter close. Also verify the ## section heading (not shown in the draft) contains 'Webflow' and 'homepage' or 'positioning' — if it is a clever label without searchable terms, rewrite it. Optionally insert a second verbatim quoted element, such as the new page title **'The agentic web platform for modern businesses'**, in a subordinate clause to strengthen evidence anchoring without breaking the snippet-friendly single-paragraph format.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 19,
+    "scannability": 13,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

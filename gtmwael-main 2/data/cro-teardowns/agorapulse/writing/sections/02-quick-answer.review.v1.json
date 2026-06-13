@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The backfire condition ('may cost you the visitors who needed that reassurance most') is slightly abstract — it names the risk but does not specify which trust signals were removed (review-site CTAs, simplicity/affordability language) that caused the vulnerability.",
+    "The section does not mention the page-title change ('Simple & Affordable' removed) or the nav overhaul, which are the strongest corroborating evidence for the central claim. A snippet competitor could challenge the completeness of the answer.",
+    "Word count is approximately 78 words — marginally over the 75-word section goal ceiling, though within the 45–75 word rubric check range. Flag as borderline.",
+    "The phrase 'not yet on buyers\\' shortlists' assumes a specific brand-awareness condition that is implied by the evidence but not stated verbatim — acceptable but should stay hedged."
+  ],
+  "requiredFixes": [
+    "Trim to 75 words or fewer to satisfy the section goal ceiling and improve snippet eligibility — cut 'and still needs to earn trust' (redundant with the shortlist condition) to reduce length without losing meaning.",
+    "Name at least one removed trust signal (e.g., 'removing review-site links like G2 and TrustRadius') in the backfire condition so the risk is concrete, not abstract — this also anchors the sentence to THIS company's evidence."
+  ],
+  "riskFlags": [
+    "'may cost you the visitors who needed that reassurance most' — causal risk claim. Acceptable because it is conditional ('if your brand is not yet on buyers\\' shortlists') but the mechanism is vague; recommend naming the removed signals (review CTAs, simplicity anchors) as the specific cause.",
+    "No outcome data exists in the evidence to confirm whether the repositioning succeeded or failed — the draft correctly avoids claiming it worked, which is good. No hard cap triggered."
+  ],
+  "seoNotes": [
+    "Both verbatim quotes are correctly formatted in bold quotes — strong for featured-snippet parsing.",
+    "The section names the company, the single biggest change, the new audience, and one backfire condition — matches the four required snippet elements closely.",
+    "The section heading is not visible in the draft but the article H1 ('How Agorapulse rewrote its homepage over 7 years') contains the company name and topic — acceptable for SEO context.",
+    "Adding the page-title change ('Social Media Management Software' replacing 'Simple & Affordable Social Media Management') as a supporting detail would give the snippet a second concrete anchor that competitors cannot replicate.",
+    "Primary keyword 'Agorapulse homepage teardown' does not appear in the draft paragraph — acceptable for a quick-answer section but worth noting for snippet competition."
+  ],
+  "rewriteInstruction": "Trim the paragraph to 72–75 words. Keep both bold quotes. In the backfire condition, replace the abstract 'dropping the simplicity message' with a concrete reference to at least one removed signal — specifically the removal of review-site CTAs (G2, TrustRadius) alongside simplicity language — so the risk sentence is anchored to Agorapulse's actual changes rather than a generic repositioning warning. Cut the redundant clause 'and still needs to earn trust' since it repeats what 'not yet on buyers\\' shortlists' already implies. No other structural changes needed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 19,
+    "scannability": 14,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

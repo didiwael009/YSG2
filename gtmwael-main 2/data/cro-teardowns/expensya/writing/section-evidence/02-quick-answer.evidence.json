@@ -1,0 +1,133 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "Expensya",
+  "companyUrl": "https://www.expensya.com/en/",
+  "articleTitle": "Expensya Homepage Teardown: Oct 2020 to Jun 2026",
+  "h1": "How Expensya rewrote its homepage over 6 years",
+  "fromLabel": "Oct 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 14,
+    "h2Removed": 7,
+    "ctaAdded": 10,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Expensya homepage teardown",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Oct 2020 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "14 added · 7 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Automated spend management for all companies",
+      "after": "Voici à quoi devrait ressembler la gestion des dépenses.",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
+      "after": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Automated spend management for all companies",
+      "after": "Gestion des dépenses des employés et cartes de paiement | Expensya"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Expensya shifted from broad, automation-led English-language positioning aimed at multi-segment global prospects to French-language compliance-and-control messaging aimed at finance teams in French-speaking markets — replacing the 'Free trial' self-serve funnel with a 'Réservez une démo' sales-assisted funnel, suggesting a deliberate retreat from wide top-of-funnel acquisition toward higher-intent, regionally concentrated demand.",
+    "old_positioning_frame": "Expensya presented itself as a universal, automation-first spend management platform for companies of all sizes, emphasising breadth of features, ecosystem integration, and the elimination of paperwork across the entire expense lifecycle — communicated in English to a globally undifferentiated audience.",
+    "new_positioning_frame": "Expensya appears to position itself as the intelligent, friction-eliminating spend management solution specifically for modern finance teams in French-speaking markets, foregrounding compliance, payment cards, multi-currency control, and policy enforcement rather than automation breadth — communicated exclusively in French.",
+    "buyer_shift": "Previously targeted: English-speaking SMB-to-enterprise buyers across Small / Mid / Large segments who could self-serve into a free trial. Now apparently targeted: French-speaking finance professionals and financial controllers who need compliance assurance, policy governance, and payment card management, and who are expected to enter a sales conversation rather than self-evaluate.",
+    "funnel_shift": "Before: mid-to-top-of-funnel exploration stage — 'Free trial', 'Discover our solutions', and 'Discover all integrations' CTAs served self-directed evaluation. Now: bottom-of-funnel intent stage — 'Réservez une démo' and 'Contacter un commercial' CTAs suggest the page is designed to convert already-aware buyers into sales conversations rather than introduce the product to cold prospects.",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Automated spend management for all companies",
+        "new": "Voici à quoi devrait ressembler la gestion des dépenses.",
+        "meaning": "The shift from a feature-descriptor headline in English ('automated', 'all companies') to a French aspirational-vision headline ('Here is what expense management should look like') suggests Expensya may be repositioning from capability-first messaging to experience-and-standard-setting messaging, consistent with targeting an audience already familiar with the category who need to be convinced of a superior approach rather than educated on what the product does."
+      },
+      {
+        "element": "CTA",
+        "old": "Free trial · Discover our solutions · Find out more · Discover all integrations",
+        "new": "Réservez une démo · Contacter un commercial",
+        "meaning": "Removing 'Free trial' and replacing it with 'Réservez une démo' and 'Contacter un commercial' signals a possible deliberate move away from product-led self-serve growth toward a sales-assisted motion, which may indicate higher average deal value targets or lower confidence that the product sells itself without human qualification."
+      },
+      {
+        "element": "Navigation",
+        "old": "Solutions · Small · Mid · Large · Features · Self-managed expenses · Secure dematerialization · Intelligent validation and control",
+        "new": "En savoir plus · Se connecter · Contacter un commercial · Expensya · Anglais · Solutions · Aperçu · Application mobile",
+        "meaning": "Removing the Small / Mid / Large segmentation nav suggests Expensya may no longer be trying to self-segment visitors by company size on the homepage, pointing to either a narrowed ICP or a decision to let sales handle qualification; adding 'Contacter un commercial' directly in the nav is consistent with prioritising sales-pipeline creation over self-serve exploration."
+      },
+      {
+        "element": "Section headings",
+        "old": "Expensya fully automates your business expenditure · A solution designed for every company · Features designed to transform your expense management · Integration with your infrastructure and ecosystem · Our customers recommend our solution",
+        "new": "Améliorez la conformité. Réduisez les risques. Obtenez une visibilité complète sur les dépenses. · Cartes de paiement & budgets · Politiques de dépenses · Multi-devises et multi-pays · Fini le casse-tête administratif, place à la conformité.",
+        "meaning": "The removal of 'every company' and 'fully automates' in favour of compliance, risk reduction, payment cards, and policy headings — all in French — suggests the homepage may now be speaking to finance-function buyers whose primary anxieties are regulatory conformity and spend visibility rather than operational efficiency or automation breadth."
+      },
+      {
+        "element": "Meta description",
+        "old": "From paperless invoices to reimbursement, Expensya software and mobile app automate every step of the spend management and expense reporting process.",
+        "new": "Remplacez le stress et les frictions liés à la gestion des dépenses et des notes de frais des employés par la clarté et la simplicité : voici Expensya, le logiciel intelligent de gestion des dépenses pour les équipes financières modernes.",
+        "meaning": "The pivot from a process-automation descriptor ('automate every step') to an emotional-relief narrative ('replace stress and friction with clarity and simplicity') targeting 'équipes financières modernes' (modern finance teams) is consistent with a strategy of narrowing the audience to finance professionals while using emotional resonance rather than feature enumeration to differentiate."
+      }
+    ],
+    "copy_this_if": "Your brand name already has strong aided recall in a specific regional or linguistic market, your sales team closes deals more reliably than your free trial converts to paid, and your product's competitive differentiation is better demonstrated in a guided demo than through self-exploration.",
+    "do_not_copy_this_if": "You are still building category awareness outside a home market, your primary growth lever is organic self-serve trial volume, or your product's value is immediately apparent without a sales conversation — switching to demo-only CTAs under these conditions is likely to collapse top-of-funnel throughput before your sales team can compensate.",
+    "safer_version_for_early_stage_saas": "Keep the 'Free trial' CTA as the primary conversion path but add a secondary 'Book a demo' CTA below the hero for visitors who scroll — A/B test whether adding compliance-specific language ('policy enforcement', 'audit-ready reports') in the H1 subheader increases qualified demo requests without reducing trial starts.",
+    "risk_if_copied": "Replacing a self-serve trial CTA with demo-only CTAs on a homepage that still receives cold, category-unaware traffic may dramatically increase cost-per-lead as low-intent visitors abandon rather than book a call, while simultaneously depriving the sales team of the warm, product-educated prospects that free trials tend to generate.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T10:50:47.887Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.030164999999999997
+  },
+  "seo-intent": {
+    "primary_keyword": "Expensya homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, growth marketer, or product strategist in the B2B expense management or fintech space who wants to understand how Expensya pivoted from a global self-serve GTM to a regional sales-assisted model — to evaluate whether a similar geographic/GTM specialization strategy would work for their own product.",
+    "recommended_h1_format": "How [Company] Shifted From Global Self-Serve to Regional Sales: A Homepage Teardown",
+    "secondary_keywords": [
+      "Expensya CRO strategy",
+      "Expensya homepage evolution",
+      "Expensya GTM pivot",
+      "expense management SaaS homepage examples",
+      "B2B SaaS sales-assisted vs self-serve positioning"
+    ],
+    "content_angle": "Focus on the STRATEGIC DECISION BEHIND the pivot — why retreat from English/global/free-trial positioning to French/regional/demo-only. The searcher is not looking for a surface-level 'what changed' list; they want to understand the market signals, customer feedback, or unit economics that likely drove Expensya to double down on French-speaking finance teams and replace self-serve with sales assistance. Emphasize the trade-offs: broader TAM vs. higher-intent conversion, brand accessibility vs. regional compliance expertise.",
+    "what_the_searcher_wants": "Validation or cautionary evidence for their own GTM narrowing decision. They want to know: Did Expensya's retreat from broad positioning actually work? What metrics or messaging cues suggest this was the right move? Would a similar play succeed in my own niche or geography?",
+    "what_to_avoid": "Treating this as a generic 'homepage before/after' comparison. Do NOT just list the HTML changes or describe the visual design differences. Avoid shallow observations like 'they added more French text' without explaining WHY (compliance, regulatory pressure, market saturation in English-speaking segments). Do NOT ignore the GTM funnel change (free trial → demo request) — this is the core insight and should anchor the entire analysis.",
+    "confidence_level": "medium",
+    "generatedAt": "2026-06-12T10:51:03.345Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0031663999999999998
+  }
+}

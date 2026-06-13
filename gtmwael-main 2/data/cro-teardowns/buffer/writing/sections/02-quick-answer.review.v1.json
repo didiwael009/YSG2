@@ -1,0 +1,36 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The causal claim 'dropping your value proposition headline will likely increase bounce rate, not conversions' is stated as near-certain outcome without a conditional anchor — the rubric requires a condition clause (e.g. 'if cold traffic is your primary acquisition channel'). A hedge like 'likely' softens it slightly but does not supply the required condition.",
+    "Word count is approximately 76 words — one word over the 75-word SECTION GOAL ceiling. Borderline but technically non-compliant with the stated goal.",
+    "The phrase 'broad, self-serve audience' contains light jargon ('self-serve') used without an inline plain-language gloss, though it is mild enough not to trigger a hard penalty.",
+    "The section does not explicitly name one specific backfire condition tied to the evidence (e.g. paid acquisition landing pages, Quality Score degradation) — it gestures at the condition but stays generic ('cold visitor')."
+  ],
+  "requiredFixes": [
+    "Add an explicit condition clause to the backfire sentence — e.g. 'If your homepage is your primary paid acquisition landing page and your brand name still needs a descriptor to make sense to a cold visitor, dropping your value proposition headline will likely increase bounce rate.' This satisfies the rubric's causal-condition requirement and anchors it to Buffer's own evidence.",
+    "Trim the draft to 75 words or fewer to meet the stated SECTION GOAL. The current ~76-word count is a one-word overage but the section goal is explicit.",
+    "Replace 'self-serve audience' with a plain-language alternative or add a two-word gloss — e.g. 'a broad audience who sign up without a sales call' — to keep the section fully accessible to founders still learning."
+  ],
+  "riskFlags": [
+    "'dropping your value proposition headline will likely increase bounce rate, not conversions' — this is a soft outcome claim. It is hedged with 'likely' but lacks a required condition clause. Not severe enough to trigger the hard cap, but it needs a conditional anchor before publish.",
+    "'assumes visitors already know what Buffer does' — this is a reasonable inference from the H1 evidence ('Buffer' as sole headline) but is stated as fact rather than as an observation. Consider 'appears to assume' or 'suggests Buffer believes'."
+  ],
+  "seoNotes": [
+    "The ## heading is not shown in the draft — if this section uses a heading like 'Quick Answer' with no searchable terms, it will lose up to 8 points on searchableHeadings in a full-section audit. Confirm the heading contains 'Buffer', 'homepage', or a topic term.",
+    "Both verbatim headline quotes are correctly formatted in **bold quotes** — this is good for featured snippet eligibility as Google can parse the before/after contrast cleanly.",
+    "The snippet structure (single paragraph, named company, single biggest change, audience served, one backfire condition) maps well to a featured snippet format. Fixing the word count to ≤75 words improves snippet candidacy.",
+    "The meta description evidence ('forever free plan', 'everyone' language) is not surfaced in the quick answer — not a required fix for this section, but the 'everyone' framing is a sharper, more quotable signal than 'broad audience' and could strengthen specificity."
+  ],
+  "rewriteInstruction": "Keep the structure — it is close to publishable. Make three targeted edits: (1) Trim to 74 words by cutting one redundant phrase (e.g. 'over seven years' is recoverable from context or can be compressed). (2) Rewrite the backfire sentence to include an explicit condition clause tied to Buffer's evidence — paid acquisition, cold organic traffic, or brand recognition — rather than the generic 'cold visitor' framing. (3) Replace 'self-serve audience' with a plain-language phrase so the sentence works for a founder who has never heard the term. Do not restructure the paragraph or add new claims beyond what the evidence supports.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 17,
+    "scannability": 15,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

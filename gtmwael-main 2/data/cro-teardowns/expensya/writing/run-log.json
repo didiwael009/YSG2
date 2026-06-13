@@ -1897,5 +1897,132 @@
     "ok": false,
     "detail": "Could not extract JSON from SEO auditor response.\nFirst 500 chars:\n```json\n{\n  \"titleScore\": 12,\n  \"metaDescriptionScore\": 13,\n  \"headingStructureScore\": 14,\n  \"searchIntentScore\": 18,\n  \"keywordUseScore\": 8,\n  \"readabilityScore\": 14,\n  \"internalLinkingScore\": 4,\n  \"seoScore\": 83,\n  \"internalLinkingSuggestions\": [\n    \"Link from the 'Founder test' callouts to a related article on homepage messaging frameworks or CTA strategy — e.g., 'See how other SaaS teams tested CTA positioning' or 'Learn more about demo-first vs. self-serve funnels'.\",\n    \"Link from the 'b",
     "ts": "2026-06-12T10:57:43.529Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:41:45.600Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:41:45.601Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3679 in / 132 out — $0.0138",
+    "ts": "2026-06-13T00:41:50.958Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 81/100 — FAIL — $0.0466",
+    "ts": "2026-06-13T00:42:20.844Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-13T00:42:20.845Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4991 in / 183 out — $0.0650",
+    "ts": "2026-06-13T00:42:26.115Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 79/100 — FAIL — $0.0956",
+    "ts": "2026-06-13T00:42:52.967Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-13T00:42:52.968Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "4908 in / 150 out — $0.1134",
+    "ts": "2026-06-13T00:42:59.016Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.1387",
+    "ts": "2026-06-13T00:43:19.522Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v3",
+    "ok": true,
+    "detail": "score 88/100 — PASS",
+    "ts": "2026-06-13T00:43:19.525Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:43:19.529Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "0 changed, 0 rejected — $0.4159",
+    "ts": "2026-06-13T00:44:02.927Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 2071 words",
+    "ts": "2026-06-13T00:44:02.937Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Expensya homepage CRO teardown",
+    "ts": "2026-06-13T00:44:02.940Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:44:02.945Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 74/100 — FAIL — $0.0550",
+    "ts": "2026-06-13T00:44:39.846Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:44:39.856Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 83/100 — PASS ✓ — $0.0082",
+    "ts": "2026-06-13T00:44:54.954Z"
   }
 ]

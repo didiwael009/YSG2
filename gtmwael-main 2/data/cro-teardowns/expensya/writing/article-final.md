@@ -1,8 +1,8 @@
 ---
 title: "Expensya Homepage Teardown: Oct 2020 to Jun 2026"
 slug: expensya
-generatedAt: 2026-06-12T10:56:56.153Z
-sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
+generatedAt: 2026-06-13T00:44:02.930Z
+sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
 ---
 # How Expensya rewrote its homepage over 6 years
 
@@ -13,6 +13,10 @@ sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "
 # Expensya Homepage Teardown: From Global Automation Pitch to French-Market Compliance Play
 
 Expensya's English homepage is gone — replaced by French-language messaging aimed squarely at finance teams who care about compliance. The old headline promised **"Automated spend management for all companies"**. The new one reads **"Voici à quoi devrait ressembler la gestion des dépenses"** — "Here is what expense management should look like." That is not a translation. It is a different company talking to a different buyer. By the end of this teardown, you will know how to spot whether your own homepage is making the same trade.
+
+## Expensya Homepage Positioning: Quick Answer
+
+Expensya replaced its English headline **"Automated spend management for all companies"** with **"Voici à quoi devrait ressembler la gestion des dépenses."** and swapped its **"Free trial"** CTA for **"Réservez une démo"** — shifting from a self-serve, globally open entry point to a sales-assisted funnel aimed at French-speaking finance teams. The page now assumes visitors already know what expense management software is and are ready to talk to sales. If your site still draws cold, category-unaware traffic, this move risks collapsing trial volume.
 
 ## Expensya homepage 2020–2025: from isometric automation showcase to human-first French identity
 

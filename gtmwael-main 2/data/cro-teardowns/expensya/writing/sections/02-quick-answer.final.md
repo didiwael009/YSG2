@@ -1,0 +1,3 @@
+## Expensya Homepage Positioning: Quick Answer
+
+Expensya replaced its English headline **"Automated spend management for all companies"** with **"Voici à quoi devrait ressembler la gestion des dépenses."** and swapped its **"Free trial"** CTA for **"Réservez une démo"** — shifting from a self-serve, globally open entry point to a sales-assisted funnel aimed at French-speaking finance teams. The page now assumes visitors already know what expense management software is and are ready to talk to sales. If your site still draws cold, category-unaware traffic, this move risks collapsing trial volume.

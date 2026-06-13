@@ -2,7 +2,7 @@
 
 ### 2019 — a single tool, a single promise
 
-The 2019 homepage was built around one idea: ad spend should convert. The headline said exactly that: **"Convert More Leads and Sales From Your Ad Spend"**. The layout was a centered hero with a blue gradient background, two outlined CTA buttons below the headline, and no social proof above the fold. The evidence describes the visual sophistication as a 3 out of 5 — a developing brand still explaining what it does.
+Behind that headline swap sits a six-year visual arc. The 2019 homepage was built around one idea: ad spend should convert. The headline said exactly that: **"Convert More Leads and Sales From Your Ad Spend"**. The layout was a centered hero with a blue gradient background, two outlined CTA buttons below the headline, and no social proof above the fold. The evidence describes the visual sophistication as a 3 out of 5 — a developing brand still explaining what it does.
 
 A section heading deeper on the page made the pitch more explicit: **"See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages"**. This was a page built to justify the product category, not to assume the reader already understood it.
 

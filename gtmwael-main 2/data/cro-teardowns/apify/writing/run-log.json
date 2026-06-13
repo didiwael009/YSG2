@@ -513,5 +513,97 @@
     "ok": true,
     "detail": "score 83/100 — PASS ✓ — $0.0079",
     "ts": "2026-06-12T13:53:47.508Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:37:55.540Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:37:55.541Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3670 in / 114 out — $0.0135",
+    "ts": "2026-06-13T00:37:59.971Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0391",
+    "ts": "2026-06-13T00:38:19.891Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS",
+    "ts": "2026-06-13T00:38:19.893Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:38:19.895Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 07-business-context",
+    "ok": true,
+    "detail": "added transition opener referencing nav shift",
+    "ts": "2026-06-13T00:38:59.028Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "1 changed, 0 rejected — $0.3756",
+    "ts": "2026-06-13T00:38:59.029Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 1968 words",
+    "ts": "2026-06-13T00:38:59.038Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Apify homepage CRO teardown",
+    "ts": "2026-06-13T00:38:59.040Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:38:59.046Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 81/100 — FAIL — $0.0551",
+    "ts": "2026-06-13T00:39:36.380Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:39:36.382Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 83/100 — PASS ✓ — $0.0087",
+    "ts": "2026-06-13T00:39:52.823Z"
   }
 ]

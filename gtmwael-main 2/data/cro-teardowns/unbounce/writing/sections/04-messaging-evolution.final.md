@@ -2,7 +2,7 @@
 
 ### Unbounce headline shift: from ad-spend ROI to speed-and-conversion promise
 
-In 2019, Unbounce led with **"Convert More Leads and Sales From Your Ad Spend"** — language aimed squarely at someone managing a paid media budget. The current H1 is **"Launch faster. Convert more."** Every channel-specific word is gone. This suggests the page is now written for a broader growth team evaluating a multi-product workflow, rather than a performance marketer justifying a single tool purchase.
+The visual maturity tracked a parallel shift in the words. In 2019, Unbounce led with **"Convert More Leads and Sales From Your Ad Spend"** — language aimed squarely at someone managing a paid media budget. The current H1 is **"Launch faster. Convert more."** Every channel-specific word is gone. This suggests the page is now written for a broader growth team evaluating a multi-product workflow, rather than a performance marketer justifying a single tool purchase.
 
 ### Unbounce meta description and section heading shift: from competitor swap to platform growth
 

@@ -1,0 +1,3 @@
+## Quick Answer
+
+Expensya replaced its English headline **"Automated spend management for all companies"** with **"Voici à quoi devrait ressembler la gestion des dépenses."** ("Here is what expense management should look like") — and simultaneously removed **"Free trial"** in favour of **"Réservez une démo"** ("Book a demo"). The page apparently now serves French-speaking finance teams who already know the category and are ready for a sales conversation, not English-speaking buyers exploring across Small, Mid, and Large segments. If your homepage still depends on **"Free trial"** or **"Discover our solutions"** to fill a self-serve pipeline, switching to demo-only CTAs may risk shrinking your top-of-funnel before your sales team can absorb the gap.

@@ -1,6 +1,6 @@
 ## Why the homepage changed
 
-Apify entered the period as a web scraping utility competing in a well-established data extraction category alongside tools like Scrapy, Octoparse, and various proxy services. The competitive frame was simple: how easily and reliably could a platform pull data from any website? The headline **"Extract data from any website"** and the page title **"Web Scraping, Data Extraction and Automation"** reflect that undifferentiated, task-defined market position.
+Those signals all point back to one cause. Apify entered the period as a web scraping utility competing in a well-established data extraction category alongside tools like Scrapy, Octoparse, and various proxy services. The competitive frame was simple: how easily and reliably could a platform pull data from any website? The headline **"Extract data from any website"** and the page title **"Web Scraping, Data Extraction and Automation"** reflect that undifferentiated, task-defined market position.
 
 The navigation shift — removing **"Free store"** and **"Pricing"** while adding **"MCP Give your AI access to Actors"** and **"Actors Build and run serverless programs"** — suggests Apify's competitive environment expanded beyond scraping vendors toward AI infrastructure providers. The new headline **"39,044 tools for your AI"** and section heading **"Not just a web scraping API"** point to deliberate repositioning away from the scraping-utility category and toward an AI tooling marketplace identity.
 

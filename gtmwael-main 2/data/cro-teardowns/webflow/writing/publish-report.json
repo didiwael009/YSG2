@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-12T17:39:16.237Z",
+  "publishedAt": "2026-05-18T09:12:00.000Z",
   "slug": "webflow",
   "dryRun": false,
   "forced": true,
@@ -7,12 +7,10 @@
     "finalJudgePass": false,
     "finalJudgeScore": 81,
     "seoPass": true,
-    "seoScore": 83,
+    "seoScore": 82,
     "unsupportedClaims": [
-      "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this specific figure ($1M to $8M, 8x) appears in the business context research evidence and is acceptable as attributed to public sources; however the phrase 'from $1M to $8M' is repeated in the article without the 'reportedly' hedge present in the evidence. Low risk but noted.",
-      "'most visitors had likely never searched before' — a frequency/volume claim about visitor search behaviour with no evidence anchor.",
-      "'placing this CTA is a bet on creating demand rather than capturing it' — framed as a confirmed strategic diagnosis rather than a conditional interpretation; no evidence confirms Webflow's intent here.",
-      "'Its removal means that reassurance no longer exists anywhere visitors can see it' — the evidence does not confirm the line does not appear elsewhere on the site; presented as definitive fact."
+      "'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — the $1M to $8M figure appears in the business context evidence hedged with 'reportedly', so this passes on sourcing, but the phrase 'in 2021 alone' adds a temporal precision not explicitly in the compressed evidence text which says 'that year' — marginal overprecision but noted",
+      "The heading '2020–2025' in the visual timeline section states a date range ending in 2025; the evidence explicitly states the period ends Jun 2026 — this is a factual date error not supported by the evidence"
     ]
   },
   "consistencyCheck": {
@@ -22,14 +20,14 @@
   },
   "blockedReasons": [
     "Final judge FAIL — score 81/100 (need ≥ 90)",
-    "4 unsupported claim(s): 'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — this specific figure ($1M to $8M, 8x) appears in the business context research evidence and is acceptable as attributed to public sources; however the phrase 'from $1M to $8M' is repeated in the article without the 'reportedly' hedge present in the evidence. Low risk but noted.; 'most visitors had likely never searched before' — a frequency/volume claim about visitor search behaviour with no evidence anchor."
+    "2 unsupported claim(s): 'enterprise revenue reportedly growing 8x in 2021 alone, from $1M to $8M' — the $1M to $8M figure appears in the business context evidence hedged with 'reportedly', so this passes on sourcing, but the phrase 'in 2021 alone' adds a temporal precision not explicitly in the compressed evidence text which says 'that year' — marginal overprecision but noted; The heading '2020–2025' in the visual timeline section states a date range ending in 2025; the evidence explicitly states the period ends Jun 2026 — this is a factual date error not supported by the evidence"
   ],
   "articlePath": "src/content/cro-teardown/articles/webflow.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/cro-teardowns/hootsuite",
     "/cro-teardowns/expensya",
-    "/cro-teardowns/linear"
+    "/cro-teardowns/buffer"
   ],
   "fieldsOverridden": [
     "metaTitle"

@@ -1,8 +1,8 @@
 ---
 title: "Buffer Homepage Teardown: Jan 2019 to Jun 2026"
 slug: buffer
-generatedAt: 2026-06-12T20:02:14.834Z
-sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
+generatedAt: 2026-06-13T00:41:08.140Z
+sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
 ---
 # How Buffer rewrote its homepage over 7 years
 
@@ -13,6 +13,10 @@ sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "
 # Buffer Homepage Teardown: How Buffer Replaced Its Value Proposition With Its Own Name
 
 Buffer's biggest homepage change in seven years is also its most counterintuitive: the primary headline went from **"Save time managing social media for your business"** to just **"Buffer."** No benefit. No category explanation. No promise. At the same time, the page title shifted to **"Buffer: Social media management for everyone"** — swapping a business-focused pitch for a word that includes absolutely everybody. By the end of this teardown, you will know exactly when dropping your value proposition is a smart bet — and when it will hurt you.
+
+## Quick answer
+
+In seven years, Buffer's biggest homepage change was replacing its benefit-led headline **"Save time managing social media for your business"** with the bare brand name **"Buffer"** as the sole H1. The page now serves a broad, self-serve audience — individual creators and businesses alike — and assumes visitors already know what Buffer does. If your brand name still needs a descriptor to make sense to a cold visitor, dropping your value proposition headline will likely increase bounce rate, not conversions.
 
 ## Buffer homepage 2019–2026: from scattered-dot startup hero to polished multi-product workspace
 
@@ -46,7 +50,7 @@ Three CTAs are gone from the current page: **"Get Started for Free →"**, **"Le
 
 ### Buffer's headline shift: from explaining the product to assuming you already know it
 
-Behind that visible collapse to one word sits a wager about its audience. The headline changed from **"Save time managing social media for your business"** to just **"Buffer"**. That is not a shortcut — it is a bet. It suggests Buffer believes enough visitors now arrive already knowing what the product does, making the orienting function of a benefit headline unnecessary. This only holds if organic brand search volume is already doing that work before the visitor lands.
+That visible collapse to one word sits on top of a wager about its audience. The headline changed from **"Save time managing social media for your business"** to just **"Buffer"**. That is not a shortcut — it is a bet. It suggests Buffer believes enough visitors now arrive already knowing what the product does, making the orienting function of a benefit headline unnecessary. This only holds if organic brand search volume is already doing that work before the visitor lands.
 
 ### How the meta description shift signals a wider, creator-inclusive audience
 

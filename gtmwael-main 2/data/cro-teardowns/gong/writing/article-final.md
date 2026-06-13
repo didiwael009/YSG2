@@ -1,8 +1,8 @@
 ---
 title: "Gong Homepage Teardown: Jan 2020 to Jun 2026"
 slug: gong
-generatedAt: 2026-06-12T11:03:53.784Z
-sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
+generatedAt: 2026-06-13T00:34:25.126Z
+sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
 ---
 # How Gong rewrote its homepage over 6 years
 
@@ -13,6 +13,10 @@ sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "
 # How Gong Rewrote Its Homepage Over 6 Years
 
 Gong built an entire product category around "Revenue Intelligence" — then quietly removed it from the top of its own homepage. The headline shifted from **"REVENUE INTELLIGENCE"** to **"Revenue AI Built To Predict churn"**, the page title changed from **"Revenue Intelligence Technology for Sales Teams | Gong.io"** to **"Gong - Revenue AI OS"**, and the navigation dropped **"What is RI?"** entirely. That is not a rebrand. It signals a deliberate move from explaining a category to claiming infrastructure ownership. By the end of this teardown, you will know whether that same move is available to your own product — or whether copying it will cost you the visitors who still need convincing.
+
+## Quick answer
+
+Gong's biggest homepage change was replacing its H1 from **"REVENUE INTELLIGENCE"** to **"Revenue AI Built To Predict churn"** — dropping the category label the company itself popularized and replacing it with a specific AI outcome claim. The page now speaks to buyers who already know what Gong does and need proof it delivers results, not an explanation of what revenue intelligence means. If your brand is not yet widely recognized, removing that category explanation may leave visitors unable to justify the purchase internally.
 
 ## Gong homepage 2020–2025: from cinematic category launch to enterprise product OS
 

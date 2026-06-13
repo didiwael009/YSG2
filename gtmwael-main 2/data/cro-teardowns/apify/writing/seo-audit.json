@@ -9,42 +9,45 @@
   "readabilityScore": 14,
   "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "Link from 'SaaS homepage CRO teardown' phrase to other teardowns in the series (e.g., Stripe, Figma, or Notion if available) to signal related case studies",
-    "Add internal link from 'ecosystem size, not feature depth' discussion to an article on platform flywheel strategy or marketplace metrics",
-    "Link from 'new-versus-returning visitor split' analytics discussion to internal guide on homepage segmentation strategies",
-    "Add contextual link from dual-CTA discussion to article on enterprise vs. self-serve homepage patterns"
+    "Link from 'SaaS homepage CRO teardown' discussion to a general SaaS homepage teardown collection or resource",
+    "Link from 'platform consolidation around AI agent infrastructure' to another teardown of an AI infrastructure SaaS (if available in library)",
+    "Link from the dual CTA pattern discussion to a dedicated article on CTA testing or dual-funnel homepage strategies",
+    "Link from 'ecosystem size as credibility signal' section to a resource on platform positioning or marketplace flywheel strategies"
   ],
   "faqSuggestions": [
-    "What changed in Apify's homepage from 2020 to 2026?",
-    "How did Apify shift from a scraping tool to an AI marketplace?",
-    "What is the 'MCP' reference in Apify's navigation?",
-    "Why did Apify replace 'Extract data from any website' with '39,044 tools for your AI'?",
-    "How should I test whether my ecosystem count belongs in my H1?",
-    "When is it safe to reference your old product identity on your homepage?",
-    "What's the risk of running dual CTAs in your hero section?"
+    "What is a CRO teardown and how can I apply it to my own homepage?",
+    "How do I know if my homepage headline is explaining my product or selling my ecosystem?",
+    "Should I lead my homepage with an ecosystem count like Apify does?",
+    "What is the right time to reposition a product homepage from utility to platform?",
+    "How do I test whether my new homepage identity confuses cold traffic?",
+    "What's the difference between 'Extract data from any website' and '39,044 tools for your AI' as positioning?",
+    "When should I remove 'Browse' language from navigation in favor of 'Find'?",
+    "Is dual call-to-action structure (self-serve + sales) effective for SaaS homepages?"
   ],
   "contentGapNotes": [
-    "Article does not address how Apify's visual design language evolved (color, typography, imagery) — only messaging and layout. A brief mention of design shifts could reinforce the positioning change.",
-    "No discussion of how Apify's value proposition shifted from speed/ease-of-use (implied by 'Extract data from any website') to scale/ecosystem (39,044 tools). Explicitly naming the value shift could strengthen the positioning analysis.",
-    "Missing analysis of what happened to conversion metrics or traffic patterns across these six snapshots — the article assumes the changes were successful but provides no measurement context.",
-    "No guidance on when a SaaS team should *not* center ecosystem count in the headline (e.g., if the ecosystem is nascent or third-party quality is inconsistent).",
-    "Limited discussion of how Apify's messaging changed for different traffic sources (organic vs. paid vs. social) — the teardown focuses on organic homepage only."
+    "The article does not address whether Apify tested the ecosystem-count headline before rolling it out, or what the performance impact was. This would strengthen search intent satisfaction for readers asking 'does this pattern work in practice?'",
+    "No discussion of how Apify handled the messaging transition period (if any) — did returning visitors see both versions, or was it a hard cutover? This gap matters for teams considering similar repositioning.",
+    "The article identifies the shift from scraping vendor to AI infrastructure provider but does not analyze competing homepages in the AI infrastructure space (e.g., Langchain, Hugging Face, or other agent platforms). Comparative analysis would deepen insights.",
+    "No mention of whether the 39,044 count is audited or self-reported, or whether that distinction matters to credibility — a detail that affects the 'ecosystem count as headline' recommendation.",
+    "The article does not discuss mobile viewport changes across the 6-year period — layout, CTA placement, and headline framing often differ significantly on mobile, and that evolution is unaddressed."
   ],
   "requiredFixes": [
-    "Primary keyword 'Apify homepage CRO teardown' appears only in title and meta description, not naturally in body text. Add 1–2 organic mentions in the intro or conclusion (e.g., 'This CRO teardown of Apify's homepage reveals...' or 'What this Apify homepage CRO teardown shows...').",
-    "Secondary keyword 'SaaS conversion optimisation case study' is not used anywhere in the article body. Either add it once naturally in the lessons section, or remove it from the secondary keyword list.",
-    "Meta description is 156 characters; it exceeds the 155-character soft limit by 1 character. Trim to: 'A CRO teardown of Apify's homepage from Jan 2020 to Jun 2026 — changes in headline, CTAs, navigation, and what SaaS teams can learn.'",
-    "H1 is buried after a secondary H2 ('Apify Homepage Teardown: From \"Extract Data\" to \"39,044 Tools for Your AI\"' appears below 'How Apify rewrote its homepage over 6 years'). The suggested excerpt should be the first H1 on the page, not the second. Restructure so the main H1 comes immediately after intro text."
+    "The meta description is 151 characters (just under 155 limit) but reads as a fragment rather than a complete thought. Restructure to: 'Apify's homepage evolved from \"Extract data\" to \"39,044 tools for your AI.\" See the 6-year CRO breakdown and lessons for SaaS teams.' (140 chars, more scannable).",
+    "Title is 50 characters but 'Apify Homepage Teardown' alone appears three times in the article headline/subheadline. Consider: 'Apify Homepage CRO Teardown: Data Extractor to AI Marketplace' (62 chars, stronger keyword anchor and differentiation).",
+    "The secondary keyword 'SaaS homepage CRO teardown' does not appear in the article body until the final section. Strengthen by adding it explicitly in the intro or quick-answer section as a self-referential framing statement (e.g., 'This SaaS homepage CRO teardown...').",
+    "Section 'Lessons for SaaS teams' lacks a clear intro sentence that ties back to the article's primary keyword or search intent. Add: 'Apify's homepage CRO teardown reveals three patterns your SaaS team can test immediately.'",
+    "The article uses 'founder test,' 'visit your homepage,' and 'test this on your own' as stand-alone callouts but does not signal them consistently (some bold, some not). Standardize formatting for scannability."
   ],
   "optionalImprovements": [
-    "Add 1–2 short paragraphs on why this teardown matters for the reader's own work (e.g., 'If your company is repositioning around AI infrastructure, this pattern is worth testing on your own homepage').",
-    "Include a 'Key takeaways' bullet list at the end to improve scannability and give readers a summary they can quickly reference.",
-    "Add URLs or footnotes to the competitor references ('Scrapy, Octoparse') so readers can understand the competitive landscape without leaving the page.",
-    "Consider adding a small visual timeline graphic showing the headline and section heading changes side-by-side — currently the five snapshots are described in text only.",
-    "Expand the 'Founder test' and similar callout boxes with a short actionable checklist (e.g., 'Checklist: Is your navigation catalogue-first or search-first?').",
-    "Add a brief note on the primary keyword: 'Apify homepage CRO teardown' may have lower search volume than 'Apify homepage redesign' or 'homepage CRO case study.' Consider a data-driven keyword rebalance if traffic is lower than expected."
+    "Add a 'snapshot comparison table' showing headline, H2, primary CTA, and nav items side-by-side for 2020, 2022, 2024, 2026. Tables improve SEO scannability and give readers a quick visual reference.",
+    "The meta description mentions '...and what SaaS teams can study from…' but cuts off. Complete this thought in the live meta: '...and what SaaS teams can study from their repositioning.' (Improves click intent clarity.)",
+    "Strengthen the 'Quick answer' section by explicitly restating the primary keyword: 'If your Apify homepage CRO teardown reveals an ecosystem-first strategy, consider whether your own tool library can support a similar shift.'",
+    "Consider adding a 'What competitors did instead' subsection under 'Why the homepage changed' — briefly name 1–2 other scraping vendors or AI infra platforms and their positioning. This strengthens competitive context without requiring deep analysis.",
+    "Add alt text guidance or a note about image optimization in the visual-timeline section (even if not applicable here, it signals SEO maturity).",
+    "Nest the 'Founder test' callouts under a consistent subheading like 'Test this on your homepage' to create an internal cross-reference pattern readers can anticipate.",
+    "The primary keyword 'Apify homepage CRO teardown' appears in title and H1 but not in any subheading. Consider adding it once more in the 'Lessons for SaaS teams' section as a linking phrase."
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.007885600000000048,
-  "generatedAt": "2026-06-12T13:53:47.506Z"
+  "costUsd": 0.008715199999999979,
+  "generatedAt": "2026-06-13T00:39:52.821Z"
 }

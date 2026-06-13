@@ -1,6 +1,6 @@
 ## How Agorapulse's H1 retired 'Simplified' and replaced it with 'ROI' — and what that says about who it is selling to now
 
-The palette signaled a new buyer; the words confirmed it.
+The palette told one story; the words tell the same one louder.
 
 ### Agorapulse's headline shift: from ease-of-use to business outcomes
 

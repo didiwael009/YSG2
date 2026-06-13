@@ -1,49 +1,50 @@
 {
-  "seoScore": 83,
+  "seoScore": 88,
   "pass": true,
-  "titleScore": 12,
+  "titleScore": 13,
   "metaDescriptionScore": 14,
-  "headingStructureScore": 13,
-  "searchIntentScore": 18,
-  "keywordUseScore": 8,
+  "headingStructureScore": 14,
+  "searchIntentScore": 19,
+  "keywordUseScore": 9,
   "readabilityScore": 14,
-  "internalLinkingScore": 4,
+  "internalLinkingScore": 5,
   "internalLinkingSuggestions": [
-    "Link from 'SaaS homepage CRO teardown' mention to other SaaS homepage teardown articles in the blog archive",
-    "Link from 'A/B testing' discussion to internal guide on A/B test setup or interpretation",
-    "Link from 'paid search Quality Score' mention to internal resource on SaaS paid marketing or Google Ads fundamentals",
-    "Link from 'category ownership' discussion to broader article on SaaS positioning or category strategy",
-    "Link from 'cross-product usage analytics' mention to internal guide on product analytics setup for SaaS teams"
+    "Link to a related article on SaaS homepage messaging strategy when discussing the headline shift from specific ROI to platform language",
+    "Link to a CRO best practices guide when introducing the CTA hierarchy section",
+    "Link to a quality score optimization article when discussing paid search relevance risk from category keyword removal",
+    "Link to another SaaS teardown (e.g., competitor or vertical peer) in the intro or conclusion to encourage exploration of similar case studies",
+    "Add an internal link to a guide on cross-product adoption metrics when discussing the 20% product-usage threshold"
   ],
   "faqSuggestions": [
-    "When should a SaaS company remove its category keyword from its homepage headline?",
-    "What does Unbounce's shift from 'landing page builder' to 'platform' messaging tell us about their target buyer change?",
-    "How many CTAs should a SaaS homepage have, and how should they be prioritized?",
-    "What's the relationship between organic ranking position and homepage keyword strategy?",
-    "How can SaaS teams test whether their product integration story is ready to feature in navigation?",
-    "Why did Unbounce replace specific ROI claims (like '70% cost-per-lead reduction') with platform promises?"
+    "When should a SaaS company remove category keywords from its homepage headline?",
+    "How does removing a channel-specific claim from your H1 affect paid search Quality Score?",
+    "What's the difference between a CTA expansion that helps conversion vs. one that confuses visitors?",
+    "How can you tell if your product navigation expansion is premature—before cross-product usage justifies it?",
+    "Should a homepage lead with a single dominant CTA or offer multiple entry points for different buyer personas?"
   ],
   "contentGapNotes": [
-    "The article does not address what conversion rate or traffic changes Unbounce may have observed after these redesigns (though hard rules prevent claiming causation, a note on whether the company disclosed performance impact would strengthen credibility)",
-    "No discussion of how Unbounce's target buyer persona shifted in documented interviews, customer research, or earnings calls — the inference is drawn from page changes alone",
-    "Limited coverage of whether the removal of specific ROI language ('70% cost-per-lead reduction') hurt or helped visitor-to-trial conversion in paid search channels where performance metrics drive decision-making",
-    "The article does not explore how Unbounce's navigation expansion to vertical segments (Agencies, Ecommerce, SaaS) may have affected SEO or discoverability for those buyer personas",
-    "No analysis of how the hero layout shift (from centered gradient to dark full-bleed with product mockup) may have affected mobile conversion or mobile-first indexing signals"
+    "The article references a visual sophistication score (e.g., '3 out of 5' in 2019, '4 out of 5' in 2024) but does not explain the scoring rubric or how that metric was derived. Defining the scale would strengthen credibility.",
+    "No discussion of mobile vs. desktop layout changes across the seven-year span. Homepage redesigns often reveal mobile-first or responsive shifts that matter for SEO and conversion.",
+    "The article mentions Unbounce added 'AI insights' and 'AI Copywriting' but does not address how AI keyword adoption may have changed SEO strategy or organic traffic targeting over this period.",
+    "No analysis of how Unbounce's navigation reorganization (from feature-focused to vertical-segment-focused) affects internal linking architecture or site structure from an SEO perspective.",
+    "The business context section references an 'AI-era SaaS pattern' but does not explore whether Unbounce's messaging shift correlates with category keyword volume changes or shifts in search intent.",
+    "No mention of how the meta description swap from 'best landing page builder' to 'Grow your leads and sales' may have affected click-through rate from search results—this is a testable claim worth addressing."
   ],
   "requiredFixes": [
-    "The primary keyword 'Unbounce homepage CRO teardown' appears only in the title and meta description — it should appear naturally at least once in the first 100 words of body text or in the opening H2 to strengthen keyword relevance signals",
-    "Secondary keyword 'SaaS homepage CRO teardown' is mentioned in the intro but not reinforced in the body — consider adding it once more in the 'What SaaS teams can study' section to improve topical authority",
-    "The article references 'Wael Aouididi's Landing Page Playbook 2026' but does not include a source link or publication date context — either add attribution detail or soften the reference to avoid unverified authority claims"
+    "In the 'Category keyword removal' section, clarify that the advice to remove category labels should only apply if the brand already ranks organically on page one for that keyword. Add a specific note that this is a high-risk move for brands without organic authority on the category term.",
+    "The article states 'Unbounce removed six CTAs and added ten across the period studied' but the 2019 examples list only three CTAs explicitly. Reconcile this number discrepancy or clarify the count methodology (e.g., primary vs. all on-page CTAs).",
+    "Remove or substantiate the reference to 'Wael Aouididi's framework in the Landing Page Playbook 2026'—if this is a real source, cite it properly; if not, remove the attribution to avoid credibility loss."
   ],
   "optionalImprovements": [
-    "Add a comparison table showing 2019 vs. 2024 headline, CTA count, and nav structure side-by-side for faster scanning",
-    "Include a screenshot or image carousel showing the three key homepage states (2019, 2022, 2024) — currently relying entirely on text description of visual changes",
-    "Expand the 'Quick test' and 'Founder test' callouts into a short checklist section at the end of the article to improve click-through to related tools or resources",
-    "Add a brief 'What this means for your SEO' note to the category keyword removal section — the current advice on Quality Score is sound, but tying it back to organic visibility would clarify why the trade-off matters beyond paid search",
-    "Consider adding a short paragraph on whether Unbounce's removal of specific metrics ('70% CPL reduction') signals a shift away from direct-response buyers toward brand-aware or bottom-funnel evaluators — the data supports the inference but explicit buyer stage language would sharpen the insight",
-    "Include a note on whether Unbounce's expanded product navigation (A/B testing, Smart Traffic, AI Copywriting) appears in the homepage nav for all visitor segments or only for logged-in users — this affects the SEO weight of those keywords"
+    "Add a visual mockup or side-by-side comparison table showing the 2019 vs. 2026 headlines, CTAs, and navigation to reinforce the narrative arc for visual learners.",
+    "Expand the 'Quick test' and 'Founder test' callout boxes with expected outcomes—e.g., 'If your count is above two same-level CTAs, consider running a test that demotes secondary options.'",
+    "In the business context section, add a line explaining why platform consolidation (landing pages + A/B testing + AI) became a narrative necessity in the 2022–2026 window—e.g., competitive pressure from Unbounce's direct competitors.",
+    "Include a brief note on how the removal of the cost-per-lead metric (70% CPL reduction claim) from the section heading may affect paid search ad group Quality Score if those ads still reference CPL savings.",
+    "Suggest a follow-up micro-conversion audit: ask readers to check whether Unbounce's new multi-entry-point CTA model actually improved their lead velocity or just distributed clicks across more endpoints without higher conversion intent.",
+    "Add a sentence acknowledging that without A/B test data, the article is descriptive (what changed) rather than prescriptive (whether the change worked)—this sets appropriate expectations for readers.",
+    "Consider adding a brief 'competitor context' subsection: what did competing landing page builders (Leadpages, Instapage, etc.) do during this same period? This would contextualize whether Unbounce's shift was category-wide or unique."
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.007592800000000066,
-  "generatedAt": "2026-06-12T22:11:55.031Z"
+  "costUsd": 0.008163999999999949,
+  "generatedAt": "2026-06-13T00:51:15.639Z"
 }

@@ -1,0 +1,36 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The final sentence ('If your site still draws cold, category-unaware traffic, this move risks collapsing trial volume') is a causal outcome claim. It is hedged with a condition ('if your site still draws cold traffic'), which satisfies the condition requirement, but 'risks collapsing trial volume' edges toward an outcome assertion without data. It survives the hard cap but should be softened.",
+    "The phrase 'sales-assisted funnel' is an expert term used without an immediate plain-language definition in the same sentence. The reader is expected to know what this means.",
+    "Word count is approximately 78 words — just over the 75-word section goal. This is a minor violation but worth flagging.",
+    "The section goal requires naming 'the single biggest change' — the draft names two changes (headline and CTA) rather than leading with one dominant change. This slightly dilutes the snippet candidacy."
+  ],
+  "requiredFixes": [
+    "Define 'sales-assisted funnel' in plain language immediately after the term — e.g., 'a sales-assisted funnel (meaning prospects must speak to a salesperson before they can try the product)'.",
+    "Trim to 75 words or fewer to meet the section goal and improve featured snippet eligibility.",
+    "Pick ONE primary change to lead with — the CTA swap from 'Free trial' to 'Réservez une démo' is the more consequential conversion signal; consider leading with it and treating the headline as supporting evidence."
+  ],
+  "riskFlags": [
+    "'this move risks collapsing trial volume' — softened by the condition clause, but still an outcome claim without supporting data. Rephrase to 'this move may reduce trial volume' or add 'according to the evidence pattern observed here'.",
+    "'The page now assumes visitors already know what expense management software is' — this is an inference about user cognition not directly traceable to the evidence. It is plausible but should be flagged as an interpretation, not a fact."
+  ],
+  "seoNotes": [
+    "The ## heading 'Expensya Homepage Positioning: Quick Answer' contains the company name and a topic term ('Homepage Positioning') — strong for searchable headings.",
+    "Both verbatim CTAs and the H1 are in bold quotes, which is correct and supports featured snippet formatting.",
+    "The section directly answers a likely search query ('what changed on Expensya homepage') in the first sentence — good snippet structure.",
+    "Leading with the French-language headline change is differentiated and memorable, but Google snippet extraction may favour the CTA sentence as the more universally legible claim given the non-English headline."
+  ],
+  "rewriteInstruction": "Trim the draft to 70–75 words. Add a brief plain-language gloss for 'sales-assisted funnel' (e.g., 'a model where prospects must book a call rather than try the product themselves'). Lead with the CTA change as the single biggest signal, then use the headline change as supporting evidence. Soften 'risks collapsing trial volume' to 'may reduce trial volume' to avoid an unsupported outcome claim. Keep all bold-quoted verbatim elements as they are — formatting is correct.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 16,
+    "scannability": 14,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

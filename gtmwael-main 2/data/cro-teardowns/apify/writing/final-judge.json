@@ -2,55 +2,68 @@
   "overallScore": 81,
   "pass": false,
   "evidenceAccuracy": 20,
-  "plainLanguage": 17,
+  "plainLanguage": 16,
   "scannability": 11,
   "searchableHeadings": 8,
   "specificity": 13,
   "rhythmAndOpening": 8,
-  "founderTakeaway": 4,
+  "founderTakeaway": 5,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid — 2022 section",
-    "## Why the homepage changed — missing H3 subheadings",
-    "## How Apify's navigation shift — 'Contact sales' / dual-CTA H3 missing founder takeaway"
+    "05-cta-navigation-evolution",
+    "07-business-context",
+    "Quick answer"
   ],
   "unsupportedClaims": [
-    "'The most powerful web scraping and automation platform' — attributed as the 2022 headline but the evidence does not list this as the 2022 H1; it does not appear in headlines[], pageTitles[], or any snapshot field in the compressed evidence",
-    "'Hundreds of ready-to-use tools' — cited as a new section heading but this string does not appear in h2Added or anywhere in the evidence",
-    "'Pricing' — listed as a removed nav item ('removing Free store and Pricing') but 'Pricing' does not appear in navRemoved; only 'Free store', 'Get quote', 'Docs', 'Sign in' are listed",
-    "'Actors Build and run serverless programs' — cited as an added nav item but this exact string does not appear in navAdded in the evidence"
+    "'The most powerful web scraping and automation platform' — article quotes this as the 2022 headline, but the evidence does not list this as a confirmed headline in the headlines array; it appears only in the visual snapshot description as an 'above_fold_structure' observation, not a confirmed headline change.",
+    "'Hundreds of ready-to-use tools' — article states this as a section name that 'signaled that the product library was growing' but this phrase does not appear anywhere in the evidence's h2Added, h2Removed, or h3 arrays.",
+    "'Competing on what its community has built' — the evidence records third-party Actors and a marketplace framing but does not confirm the source of the 39,044 tools as community-built; this is presented as fact rather than inference.",
+    "'Apify entered the period as a web scraping utility competing in a well-established data extraction category alongside tools like Scrapy, Octoparse, and various proxy services' — Scrapy and Octoparse are named as competitors but are not mentioned anywhere in the compressed evidence.",
+    "'Actors Build and run serverless programs' — article quotes this as a nav item but it does not appear in the navAdded array in the evidence."
   ],
   "riskFlags": [
-    "'A specific number may read as authority at 39,000 but as fragility at 300' — presents a conversion-behaviour threshold as fact without evidence",
-    "'If visitors sense the count is padded or stagnant, the specificity may hurt more than a vaguer claim would' — conversion prediction without data",
-    "'If both buttons lead to the same onboarding flow, the enterprise signal is decoration' — reasonable structural observation but edges toward asserting outcome ('decoration') as fact rather than risk"
+    "'Social proof replaces simplicity' — this section heading asserts a causal relationship (social proof replaced simplicity as a design choice) that the evidence does not support; the evidence records what changed, not why.",
+    "'Apify recedes' — the evidence records a headline change; asserting that 'Apify recedes' implies intentional strategic retreat that the evidence does not confirm.",
+    "'The page no longer explains what Apify does; it displays what the platform contains' — presented as a causal conclusion; the evidence supports observing what changed but not this interpretive causation.",
+    "'That volume of change signals a significant shift' — volume of nav changes is presented as a signal of intent without supporting data; this is inference stated as conclusion.",
+    "'The number signals a platform rather than a single product, suggesting scale that a newer competitor would need years to replicate' — the 'years to replicate' clause is an unsupported competitive timeline prediction not in the evidence.",
+    "'the specificity may hurt more than a vaguer claim would' — comparative outcome claim presented without any evidential anchor; should be conditional.",
+    "'If your sales team is not resourced to handle that volume separately, the second button may create a worse experience than none' — general SaaS advisory claim not anchored to any Apify-specific evidence.",
+    "'The broader pattern is platform consolidation around AI agent infrastructure' — market-level causal claim not traceable to the compressed evidence provided."
   ],
   "requiredFixes": [
-    "Remove or qualify the attribution of 'The most powerful web scraping and automation platform' as the 2022 H1 — it is not in the evidence headlines array; either source it or replace with what the evidence does support (the 2022 snapshot description mentions a colorful gradient hero but gives no exact headline text)",
-    "Remove 'Hundreds of ready-to-use tools' as a cited section heading — it does not appear in h2Added; replace with a heading that does appear in the evidence",
-    "Remove 'Pricing' from the list of removed nav items — only 'Free store', 'Get quote', 'Docs', 'Sign in' are in navRemoved",
-    "Remove or correct 'Actors Build and run serverless programs' as a cited nav item — this string is not in navAdded; the evidence lists 'Product', 'Back', 'MCP Give your AI access to Actors', 'Proxy Rotate scraper IP addresses', 'Solutions', 'Enterprise', 'Get started', 'Log in'",
-    "Add H3 subheadings to the '## Why the homepage changed' section — it is a wall of analytical prose with no structural breaks",
-    "Add a founder-facing takeaway to the H3 block 'How Apify's CTA changes split one funnel into two' — the section ends with an observation but no actionable test for founders"
+    "Remove or hedge the claim that Apify competed against 'Scrapy, Octoparse, and various proxy services' — these competitors are not named in the evidence and their inclusion is an unsupported factual assertion.",
+    "Remove or replace the '2022 headline' quote 'The most powerful web scraping and automation platform' as a confirmed headline — it appears only in the visual snapshot description field, not in the evidence headlines array; either attribute it explicitly as a visual snapshot observation or remove it.",
+    "Remove 'Hundreds of ready-to-use tools' as a named section — this phrase does not appear in the h2Added, h2Removed, or h3 arrays in the evidence.",
+    "Remove or correct 'Actors Build and run serverless programs' as a quoted nav item — it does not appear in the navAdded array; replace with an item that is confirmed in the evidence.",
+    "Hedge 'competing on what its community has built' — the evidence does not confirm the source of the 39,044 tools; rewrite as 'appears to be built by or sourced from a third-party developer community' or similar conditional.",
+    "Remove or conditionalise the phrase 'a newer competitor would need years to replicate' — this is a competitive timeline prediction with no evidence basis; replace with 'may be difficult for newer entrants to match quickly' or remove the clause.",
+    "In section 05-cta-navigation-evolution, add at least one H3 subheading to the opening analytical block that precedes the existing H3s — the section opens with a paragraph block before the first H3, leaving an unsubheaded analytical section."
   ],
   "optionalImprovements": [
-    "The 2022 snapshot paragraph could note the uncertainty about the exact headline text ('the visual analysis describes a colorful gradient hero — the exact headline is not captured in the evidence') rather than quoting an unverified string",
-    "The '## Why the homepage changed' section would benefit from 2–3 H3 subheadings to match the scannability pattern of other sections",
-    "The opening paragraph is strong but the second duplicate title ('# Apify Homepage Teardown: From Extract Data to 39,044 Tools for Your AI') creates a redundant H1 — consider removing one",
-    "The 'platform consolidation around AI agent infrastructure' observation in '## Why the homepage changed' reads slightly like generic market commentary; anchoring it to a specific evidence item (e.g., the MCP nav addition) would sharpen it"
+    "The '07-business-context' section (titled 'Why the homepage changed') reads more like general market narration than page-specific CRO analysis — consider anchoring every sentence more tightly to a specific headline, H2, or nav item change from the evidence.",
+    "The opening paragraph asserts 'competing on what its community has built' — softening to 'what its developer ecosystem appears to have built' would reduce risk without weakening the insight.",
+    "The H2 heading 'Quick answer' is generic — consider 'Apify homepage: the one-paragraph CRO summary' to improve searchability.",
+    "The 2022 section heading 'Social proof replaces simplicity' implies causation; consider renaming to 'Social proof and customer logos appear above the fold' to describe rather than interpret.",
+    "The phrase 'Apify recedes' in the mid-2024 section is evocative but implies intent; soften to 'the company name moves out of the headline' to stay within what the evidence supports.",
+    "Consider adding a brief plain-English definition of 'Model Context Protocol' earlier in the article — it is defined later ('a standard that lets AI agents call external tools') but used as a CTA label before it is explained.",
+    "The 'Why the homepage changed' section lacks H3 subheadings entirely — adding two or three would improve scannability and reduce the wall-of-text penalty risk.",
+    "The repetition of the 'parallel funnels' framing across sections 05 and 07 slightly dilutes its impact — consider consolidating to one section."
   ],
   "rerunRecommendations": [
-    "## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid — specifically the 2022 subsection to correct the unsupported headline quote and the 'Hundreds of ready-to-use tools' H2 citation",
-    "## How Apify's navigation shift from 'Free store' to 'MCP Give your AI access to Actors' redefined its sales motion — to correct the 'Pricing' nav-removed claim and the 'Actors Build and run serverless programs' nav-added claim",
-    "## Why the homepage changed — to add H3 subheadings and anchor the market-context paragraph more tightly to specific evidence items"
+    "05-cta-navigation-evolution — fix unsupported nav item quote ('Actors Build and run serverless programs') and add opening H3 before first analytical paragraph",
+    "07-business-context — remove Scrapy/Octoparse competitor names (not in evidence) and anchor every sentence to a specific page element change from the evidence",
+    "03-visual-timeline — fix the 2022 headline attribution (visual snapshot description vs. confirmed headline) and remove 'Hundreds of ready-to-use tools' section name",
+    "06-lessons-for-saas-teams — remove 'years to replicate' competitive timeline prediction and conditionalise the 'specificity may hurt' claim"
   ],
   "model": "claude-sonnet-4-6",
-  "costUsd": 0.043577999999999895,
-  "generatedAt": "2026-06-12T13:53:34.024Z",
+  "costUsd": 0.055095000000000005,
+  "generatedAt": "2026-06-13T00:39:36.375Z",
   "repetitionWarnings": [
-    "The 'two parallel conversations / two funnels' observation (buyers vs. builders) appears in the messaging-evolution section, the CTA-navigation section, and the business-context section — three distinct sections repeat the same analytical conclusion without adding new evidence each time"
+    "The 'two parallel funnels' / 'two parallel conversations' framing appears in sections 04-messaging-evolution, 05-cta-navigation-evolution, and 07-business-context — consolidate to one section for stronger impact.",
+    "The observation that the page 'no longer centers Apify, it centers the tools' is made in the visual timeline section and restated in the messaging evolution section without adding new evidence."
   ]
 }

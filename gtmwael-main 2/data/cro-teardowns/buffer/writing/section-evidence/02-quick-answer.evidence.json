@@ -1,0 +1,133 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "Buffer",
+  "companyUrl": "https://buffer.com",
+  "articleTitle": "Buffer Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How Buffer rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 5,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 5,
+    "h2Added": 7,
+    "h2Removed": 12,
+    "ctaAdded": 10,
+    "ctaRemoved": 8,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Buffer homepage teardown",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "5 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "7 added · 12 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Save time managing social media for your business",
+      "after": "Buffer",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Buffer is an intuitive social media management platform trusted by brands, businesses, agencies, and individuals to help drive social media results.",
+      "after": "Use Buffer to manage your social media so that you can create and share your content everywhere, consistently. Try our forever free plan or upgrade for more.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Social Media Management Platform | Buffer",
+      "after": "Buffer: Social media management for everyone"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Buffer replaced its outcome-and-business-focused scheduling tool positioning with a brand-name-as-headline, multi-product workspace identity — retiring explicit pricing and team-management signals in favour of universal 'everyone' inclusivity and a suite of named product pillars (Publish, Create, Community, Analyze, Collaborate), suggesting a deliberate pivot away from competing on SMB/agency time-saving utility toward owning a broader social media workspace category anchored by the Buffer brand name itself.",
+    "old_positioning_frame": "A time-saving social media scheduling platform for businesses and marketing teams, differentiated by multi-account management, post scheduling, analytics, and team access controls — with pricing and business use cases surfaced prominently on the homepage.",
+    "new_positioning_frame": "A multi-product social media workspace for 'everyone' — individuals, creators, and businesses alike — organised around named product pillars and channel-specific landing paths, with the Buffer brand name treated as sufficient standalone orientation rather than a descriptive tagline.",
+    "buyer_shift": "Business buyers and marketing teams evaluating a scheduling tool with clear pricing → a broad, self-serve audience including individual creators and solopreneurs alongside businesses, addressed collectively as 'whoever you are'",
+    "funnel_shift": "Mid-funnel evaluation stage (pricing comparison, feature checklist, case study review, team-tier consideration) → top-of-funnel brand discovery and product-suite orientation, with per-product 'Learn more' CTAs dispersing visitors into individual product tracks rather than funnelling toward a single conversion point",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Save time managing social media for your business",
+        "new": "Buffer",
+        "meaning": "Replacing a benefit-led, audience-specific headline with the bare brand name suggests Buffer may believe its name carries sufficient category recognition to anchor the page without a supporting value proposition — consistent with a brand maturity play rather than a direct-response acquisition strategy."
+      },
+      {
+        "element": "Meta description",
+        "old": "Buffer is an intuitive social media management platform trusted by brands, businesses, agencies, and individuals to help drive social media results.",
+        "new": "Use Buffer to manage your social media so that you can create and share your content everywhere, consistently. Try our forever free plan or upgrade for more.",
+        "meaning": "The shift from 'trusted by brands, businesses, agencies' to 'everyone' language and the explicit mention of a 'forever free plan' signals a possible move toward a broader, creator-inclusive audience and a freemium-led top-of-funnel growth model, rather than a business-tier or agency upsell motion."
+      },
+      {
+        "element": "Navigation",
+        "old": "Pricing · Webinar · Case Studies · Culture Blog · Our Values · Transparency · Try Buffer for Business · Buffer Publish",
+        "new": "Buffer · Features · Integrations · Instagram · Facebook · TikTok · LinkedIn · X (Twitter)",
+        "meaning": "Removing 'Pricing', 'Case Studies', 'Try Buffer for Business', and trust-building culture signals (Transparency, Our Values) in favour of channel-specific paths (Instagram, TikTok, LinkedIn) may indicate a de-prioritisation of the mid-funnel business evaluation journey and a shift toward channel-intent SEO traffic capture and product discovery by platform."
+      },
+      {
+        "element": "Section headings",
+        "old": "Find the plan that's right for you · Buffer for Business Pricing · Manage all your social accounts in one place · Schedule social media posts for your preferred times · Add multiple team members and set access levels",
+        "new": "Your social media workspace · Whoever you are, we've got you covered · Grow your social presence with confidence · Buffer is trusted by over 100,000 businesses and individuals",
+        "meaning": "Removing concrete feature and pricing headings in favour of identity-inclusive ('whoever you are') and aspiration-led ('grow with confidence') language is consistent with repositioning the homepage as a brand and audience breadth statement rather than a feature comparison resource for active evaluators."
+      },
+      {
+        "element": "CTA",
+        "old": "Get Started for Free → · Learn More → · See All Case Studies → · Browser Extension→ · Buffer for Android→",
+        "new": "Get started for free · Learn more about Publish · Learn more about Create · Learn more about Community · Learn more about Analyze · Learn more about Collaborate",
+        "meaning": "Replacing a single dominant conversion CTA and social-proof shortcuts (case studies) with five parallel product-exploration CTAs suggests the homepage may now serve as a product-suite menu rather than a single-conversion funnel — pointing to a multi-product company architecture being surfaced for the first time at homepage level."
+      }
+    ],
+    "copy_this_if": "Your brand name already autocompletes as the category answer in your target audience's search behaviour, you have shipped at least three distinct product pillars under one brand, and your primary growth constraint is product discovery across those pillars rather than top-of-funnel awareness of the core product.",
+    "do_not_copy_this_if": "Your homepage is still your primary paid acquisition landing page, your brand name requires a descriptor to be understood by cold traffic, or your revenue is concentrated in a single product tier where a clear pricing and feature narrative is the main conversion lever.",
+    "safer_version_for_early_stage_saas": "Keep a benefit-led H1 and single primary CTA, but add a secondary navigation row or tabbed section that lets visitors self-select by role or use case (e.g. 'I'm a creator · I'm a marketer · I'm an agency') — testing whether audience segmentation improves engagement without removing the conversion-oriented headline.",
+    "risk_if_copied": "A brand without Buffer's existing recognition that replaces its value-proposition headline with its own name risks a sharp increase in bounce rate from cold traffic, as visitors arriving from paid or organic search with no prior brand familiarity receive no immediate signal that the product solves their specific problem — potentially degrading both conversion rate and Quality Score on paid campaigns simultaneously.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T19:52:50.032Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.026484
+  },
+  "seo-intent": {
+    "primary_keyword": "Buffer homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, product manager, or growth marketer who is repositioning their own tool or evaluating how to evolve from a feature-focused value prop to a category-owning brand positioning. They want to understand the strategic reasoning behind Buffer's shift from 'save time scheduling' to 'social media workspace' and whether that model works.",
+    "recommended_h1_format": "How [Company] Pivoted From a Scheduling Tool to a Workspace Platform: A 7-Year Homepage Evolution",
+    "secondary_keywords": [
+      "Buffer homepage evolution 2019 to 2026",
+      "Buffer CRO teardown positioning change",
+      "Buffer rebranding from scheduling tool to workspace",
+      "How Buffer changed its homepage messaging",
+      "Buffer category strategy homepage analysis"
+    ],
+    "content_angle": "Focus on the *strategic thesis* behind the pivot, not just the visual changes. The searcher needs to understand: (1) Why Buffer abandoned explicit outcome-language ('save time') and pricing visibility, (2) How the 'workspace' framing and product pillar structure (Publish, Create, Community, Analyze, Collaborate) enables expansion and category ownership, (3) Whether this shift was driven by competition, user behaviour, or market expansion, and (4) What signals indicate success or risk in this new positioning. Frame it as 'the trade-offs of repositioning': you gain market breadth and brand ownership but lose immediate relevance to the SMB time-saver segment.",
+    "what_the_searcher_wants": "A detailed walkthrough that explains *why* each change happened and whether it was a successful repositioning strategy they could learn from or replicate. They want to know if this is a cautionary tale or a playbook.",
+    "what_to_avoid": "Do not treat this as a visual redesign critique or a list of 'before/after' screenshots without strategic context. Avoid shallow observations like 'they made the H1 shorter' or 'they hid pricing.' Do not assume the shift was cosmetic—it represents a fundamental repositioning away from SMB utility to workspace category ownership. Do not ignore the removal of content pillars (Blog, Case Studies, Webinar, Culture Blog) from navigation; that signals a deprioritization of thought leadership in favour of product-first discovery. Avoid generic SaaS positioning advice; anchor every observation to Buffer's specific market position and competitive context.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T19:53:06.204Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0033704
+  }
+}

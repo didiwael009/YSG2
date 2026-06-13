@@ -1,8 +1,8 @@
 ---
 title: "Unbounce Homepage Teardown: Jan 2019 to Jun 2026"
 slug: unbounce
-generatedAt: 2026-06-12T22:11:10.300Z
-sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
+generatedAt: 2026-06-13T00:50:17.726Z
+sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
 ---
 # How Unbounce rewrote its homepage over 7 years
 
@@ -12,13 +12,17 @@ sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "
 
 # Unbounce Homepage Teardown: From Ad Spend Tool to CRO Platform (2019–2026)
 
-Unbounce removed the words "ad spend" from its main headline — and replaced a seven-word outcome with a four-word platform promise. The old headline read **"Convert More Leads and Sales From Your Ad Spend."** The new one reads **"Launch faster. Convert more."** That single change may signal a move away from one specific type of buyer — the performance marketer optimising paid ads — toward a broader audience evaluating a full conversion platform. By the end of this teardown, you will know exactly when that kind of headline swap makes sense for your own homepage, and when it puts your traffic at risk.
+Unbounce removed the words "ad spend" from its main headline — and replaced a seven-word outcome with a four-word platform promise. The old headline read **"Convert More Leads and Sales From Your Ad Spend."** The new one reads **"Launch faster. Convert more."** That single change signals a deliberate break from one specific type of buyer — the performance marketer optimising paid ads — toward a broader audience evaluating a full conversion platform. By the end of this teardown, you will know exactly when that kind of headline swap makes sense for your own homepage, and when it puts your traffic at risk.
+
+## Unbounce homepage positioning shift: what changed and what it means
+
+Unbounce replaced its homepage headline from **"Convert More Leads and Sales From Your Ad Spend"** to **"Launch faster. Convert more."** — dropping a specific paid-ad ROI promise for a broader speed-and-conversion message. The page now appears built for agencies, ecommerce teams, SaaS companies, and small businesses evaluating a platform where they can build pages, run tests, and improve results in one place. If your primary traffic comes from paid search on high-intent keywords, removing that outcome-specific anchor may cost you ad-to-page relevance and drop your quality score.
 
 ## Unbounce homepage 2019–2025: from gradient outcome hero to polished platform showcase
 
 ### 2019 — a single tool, a single promise
 
-The 2019 homepage was built around one idea: ad spend should convert. The headline said exactly that: **"Convert More Leads and Sales From Your Ad Spend"**. The layout was a centered hero with a blue gradient background, two outlined CTA buttons below the headline, and no social proof above the fold. The evidence describes the visual sophistication as a 3 out of 5 — a developing brand still explaining what it does.
+Behind that headline swap sits a six-year visual arc. The 2019 homepage was built around one idea: ad spend should convert. The headline said exactly that: **"Convert More Leads and Sales From Your Ad Spend"**. The layout was a centered hero with a blue gradient background, two outlined CTA buttons below the headline, and no social proof above the fold. The evidence describes the visual sophistication as a 3 out of 5 — a developing brand still explaining what it does.
 
 A section heading deeper on the page made the pitch more explicit: **"See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages"**. This was a page built to justify the product category, not to assume the reader already understood it.
 
@@ -40,7 +44,7 @@ A new section heading, **"Convert more customers with one platform"**, signals a
 
 ### Unbounce headline shift: from ad-spend ROI to speed-and-conversion promise
 
-In 2019, Unbounce led with **"Convert More Leads and Sales From Your Ad Spend"** — language aimed squarely at someone managing a paid media budget. The current H1 is **"Launch faster. Convert more."** Every channel-specific word is gone. This suggests the page is now written for a broader growth team evaluating a multi-product workflow, rather than a performance marketer justifying a single tool purchase.
+The visual maturity tracked a parallel shift in the words. In 2019, Unbounce led with **"Convert More Leads and Sales From Your Ad Spend"** — language aimed squarely at someone managing a paid media budget. The current H1 is **"Launch faster. Convert more."** Every channel-specific word is gone. This suggests the page is now written for a broader growth team evaluating a multi-product workflow, rather than a performance marketer justifying a single tool purchase.
 
 ### Unbounce meta description and section heading shift: from competitor swap to platform growth
 
@@ -56,7 +60,7 @@ The page is now more consistent with targeting growth teams evaluating an integr
 
 On your own homepage, count the words that name a channel — paid, organic, social — or a specific metric — cost-per-lead, ROAS, conversion rate — in the first 50 words of body copy. If the count is zero, you have made the same trade Unbounce made: broader appeal, but fewer instant confirmation signals for the visitor who arrives knowing exactly what problem they need to solve.
 
-## How Unbounce replaced 'SEE THE PLANS' with product-specific entry points — and what these changes signal about the sales motion
+## How Unbounce replaced 'SEE THE PLANS' with product-specific entry points — and what that did to the sales motion
 
 ### How Unbounce's CTAs shifted from two high-commitment paths to ten specific entry points
 
@@ -100,16 +104,16 @@ Search your core category keyword right now. If your brand appears on page one w
 
 Unbounce's old navigation listed **"Preview the Builder · Features · Templates."** The current version promotes **"A/B testing · Smart Traffic · AI Copywriting"** as separate nav nodes, alongside vertical segments like Agencies, Ecommerce, and SaaS. Each node signals a distinct product, not a buried feature.
 
-This expansion makes sense if customers already use those products together in real workflows. If most active accounts only ever touch one product, adding the others to the nav may overpromise the platform story before the product has earned it.
+This expansion makes sense if customers already use those products together in real workflows. If fewer than 20% of active accounts use two products together in the same month, adding those products to the nav likely overpromises the platform experience before the product has earned it.
 
 Open your product analytics and check cross-product usage for last month. If most active accounts touch only one product, your nav expansion may be running ahead of your actual platform story.
 
 ---
 
-### CTA hierarchy — Unbounce expanded its CTA set with no stated priority order
+### CTA hierarchy — Unbounce grew from three CTAs to six with no stated priority order
 
-Unbounce's early page ran a small set of high-commitment CTAs: **"PREVIEW THE LANDING PAGE BUILDER · SEE HOW UNBOUNCE CAN HELP ME · SEE THE PLANS."** Each pushed toward one decision. The current page includes **"Start A/B testing · Learn the basics · Explore our resources · Get support"** — a broader mix of exploration and transactional prompts. More entry points without a clear visual hierarchy may leave the dominant path ambiguous.
+Unbounce's original page ran three CTAs: **"PREVIEW THE LANDING PAGE BUILDER · SEE HOW UNBOUNCE CAN HELP ME · SEE THE PLANS."** The current page runs six, including **"Start A/B testing · Learn the basics · Explore our resources · Get support."** Six entry points listed without a stated hierarchy suggests the page may lack a single dominant path — though only a live visual audit can confirm how weight is distributed on screen.
 
-When a page offers many equally weighted CTAs, visitors may scan without committing because no single option visually dominates. A page with multiple same-size, same-colour buttons is worth auditing for directional clarity before running any other conversion test.
+When a page offers many equally listed CTAs, visitors may scan without committing because no single option visually dominates. This is consistent with Wael Aouididi's framework in the *Landing Page Playbook 2026*, which flags multiple same-level CTAs as a pattern worth auditing for directional clarity.
 
 Screenshot your homepage and count every button. If more than two share the same size and colour, you likely have no dominant path. Demote the secondary ones before running any other test.

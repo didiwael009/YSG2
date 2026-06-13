@@ -1,71 +1,54 @@
 {
-  "overallScore": 74,
+  "overallScore": 81,
   "pass": false,
-  "evidenceAccuracy": 17,
-  "plainLanguage": 16,
+  "evidenceAccuracy": 20,
+  "plainLanguage": 17,
   "scannability": 11,
-  "searchableHeadings": 7,
-  "specificity": 12,
-  "rhythmAndOpening": 7,
+  "searchableHeadings": 8,
+  "specificity": 13,
+  "rhythmAndOpening": 8,
   "founderTakeaway": 4,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "04-messaging-evolution",
-    "07-business-context",
-    "opening-paragraph"
+    "07-business-context (Why the homepage changed)",
+    "03-visual-timeline H3 blocks missing founder takeaways",
+    "05-cta-navigation-evolution — nav changes H3 missing closing takeaway"
   ],
   "unsupportedClaims": [
-    "'Both changes point to the same move: the homepage stopped talking to the social media manager doing the work and started talking to the stakeholder who has to justify the spend' — stated as confirmed fact, not inference; the evidence explicitly notes this is an inference requiring a hedge.",
-    "'The colour shift from sky blue to navy is not a refresh. It signals a different buyer entirely.' — causation claim not traceable to evidence; the evidence note explicitly says 'No confirmed strategy is implied.'",
-    "'The palette change alone moved the page from playful to serious' — the word 'alone' is a causal attribution not supported by the evidence; the evidence supports observing that the palette change tracks a visible shift, not that it caused it.",
-    "'That consistency suggests the shift followed product capability rather than leading it' — the product development sequence is not in the evidence; this is an invented causation claim.",
-    "'a visual sophistication score of 4 out of 5' — the evidence uses a 0–5 scale and records the score as 4, not '4 out of 5'; minor but the denominator is inferred not stated.",
-    "The ## section heading references '2025' ('Agorapulse homepage 2019–2025') but the evidence period ends Jun 2026 and the final snapshot is labelled 'current-live'; no evidence snapshot is dated 2025.",
-    "'may have served a narrower audience' re: Schedule Freely — speculative audience-narrowing interpretation with no supporting evidence in the provided data.",
-    "'the category is consolidating around outcome proof — teams that cannot demonstrate measurable business impact may struggle to retain accounts even when the product works well' — a market prediction with no data anchor in the evidence.",
-    "'Hormozi notes in $100M Offers that a strong offer reduces the buyer's need to look elsewhere before deciding' — a specific citation to an external source and named book; no such source is in the compressed evidence."
+    "'Agorapulse AI New!' as named nav item — not present in the navAdded evidence list",
+    "Hormozi notes in *$100M Offers* that a strong offer reduces the buyer's need to look elsewhere before deciding — this is an external citation not in the compressed evidence and not from the two owned evidence sources (Landing Page Playbook 2026 / Growth Playbook 2026)"
   ],
   "riskFlags": [
-    "'when copying it will cost you' — outcome claim without the supporting condition attached; the evidence provides the condition ('if your brand is not yet on buyer shortlists') but the article omits it in the opening paragraph.",
-    "'It signals a different buyer entirely' — causation framing presented with confidence; should be softened to 'it may signal a different buyer' with a hedge.",
-    "'this suggests the homepage no longer treats third-party review sites as a necessary stop' — mild causation inference stated without a hedging condition.",
-    "'That removal signals a shift toward buyers who justify software spend to stakeholders' — 'signals' presented as confident assertion; should read 'may signal'.",
-    "'The navigation overhaul... suggests growing confidence in brand recognition' — intent attribution not traceable to evidence.",
-    "'Swapping... points to a buyer shift toward marketing leads who must justify software spend to stakeholders' — stated as a conclusion rather than a conditional inference.",
-    "Opening paragraph: 'Both changes point to the same move' — minor causation framing that could be softened to 'both changes are consistent with the same move'."
+    "'dropping the simplicity message may cost you the visitors who needed that reassurance most' — conversion prediction without data",
+    "'teams that cannot demonstrate measurable business impact may struggle to retain accounts even when the product works well' — outcome prediction presented as implication from observed page changes",
+    "'That consistency suggests the shift followed product capability rather than leading it' — asserts internal sequencing of strategy decisions not supported by evidence",
+    "'That removal signals a shift toward buyers who justify software spend to stakeholders' — asserts Agorapulse intent rather than hedging as observation",
+    "'the homepage stopped talking to the social media manager doing the work and started talking to the stakeholder who has to justify the spend' — asserts company strategy intent as fact, not hedged interpretation"
   ],
   "requiredFixes": [
-    "Fix the ## section date: change 'Agorapulse homepage 2019–2025' to 'Agorapulse homepage 2019–2026' to match the evidence period ending Jun 2026.",
-    "Hedge the opening paragraph claim: replace 'the homepage stopped talking to the social media manager... and started talking to the stakeholder' with 'the homepage appears to have shifted from addressing the social media manager... toward the stakeholder' — matching the evidence's explicit inference framing.",
-    "Remove or replace 'The colour shift from sky blue to navy... signals a different buyer entirely' — the evidence explicitly states no confirmed strategy is implied; rewrite as 'the colour shift from sky blue to navy may point toward a different buyer, though the evidence cannot confirm intent.'",
-    "Remove 'The palette change alone moved the page from playful to serious' — replace 'alone' with language that tracks observation, not causation: 'The palette change tracks a visible shift from playful to serious.'",
-    "Remove 'That consistency suggests the shift followed product capability rather than leading it' — the product development sequence is not in the evidence; replace with a conditional: 'If the product launched ROI features before the headline changed, that sequence would suggest messaging followed capability — worth checking against your own roadmap.'",
-    "Remove or hedge the Hormozi/$100M Offers citation — no external source is in the compressed evidence; either remove the citation name or reframe as 'a principle from offer design literature' without attributing it to a named book.",
-    "Remove the market prediction sentence: 'teams that cannot demonstrate measurable business impact may struggle to retain accounts even when the product works well' — this is a conversion/retention outcome prediction with no data anchor in the evidence.",
-    "Add a hedge to 'That removal signals a shift' in the page title section — change 'signals' to 'may signal' to match the evidence note which explicitly uses that hedge.",
-    "Remove 'may have served a narrower audience' re: Schedule Freely — no evidence supports audience-narrowing interpretation; replace with a plain observation: 'Schedule Freely was removed; no evidence in this data set explains the reason.'"
+    "Remove or replace the 'Agorapulse AI New!' nav reference — it does not appear in the navAdded evidence list and is an invented detail that triggers the hard cap",
+    "Remove or replace the Hormozi / $100M Offers citation — it is an external source not in the compressed evidence and not one of the two owned playbooks; replace with a hedged observation grounded in the CTA evidence alone",
+    "Rewrite the opening paragraph and the business-context section to use hedged language ('appears to', 'may suggest', 'the page changes are consistent with') wherever company intent or internal strategy is asserted as fact",
+    "Add H3 subheadings to the '2019 — the sky-blue starting point', '2019 to 2020 — the charcoal pivot', and '2024 to today' visual-timeline blocks that label what is being shown analytically, not just date ranges",
+    "Add a founder-facing takeaway at the close of the '2019 to 2020 — charcoal pivot' H3 block and the nav-changes H3 block — both are currently missing one"
   ],
   "optionalImprovements": [
-    "The 'Why the homepage changed' section (07-business-context) reads more like a summary than analysis — consider adding one H3 per business context event (ROI feature launch, Hootsuite disruption) with a specific evidence anchor for each.",
-    "The opening paragraph is dense and front-loads three conclusions at once; splitting into two shorter paragraphs would improve rhythm and scannability.",
-    "The meta description section heading 'Agorapulse's page title and meta description: removing the price and effort signals' is good but the H3 block does not end with a founder-facing takeaway — add one short actionable sentence.",
-    "The 'What makes Agorapulse's messaging shift signal' paragraph contains the phrase 'report upward' — the evidence note says 'justify spend'; align the language to the evidence.",
-    "Consider adding a brief plain-language definition of 'ICP narrowing' or 'procurement-stage framing' the first time an interpretive mechanism is used — the article uses these implicitly but never names or explains them for a founder audience.",
-    "The business context section uses the phrase 'maps to a broader SaaS pattern' — this is mild consultant-speak; replace with a plain declarative: 'Other SaaS tools in maturing categories have made this same shift.'"
+    "The business-context section ('Why the homepage changed') leans heavily on market-context narration that could apply to any social media tool — grounding each paragraph more tightly in specific Agorapulse evidence items (e.g., citing the exact H2s added or removed) would strengthen specificity",
+    "The repetition of the ROI-vs-simplicity trade-off across intro, messaging section, and lessons section is accurate but could be consolidated to avoid reader fatigue",
+    "The visual-timeline section could note the specific visual sophistication score shift (3 to 4) as a grounded detail rather than paraphrasing it loosely as 'polished'"
   ],
   "rerunRecommendations": [
-    "04-messaging-evolution — contains the unhedged 'homepage stopped talking to the social media manager' claim, the 'signals a different buyer entirely' causation claim, and the 'consistency suggests the shift followed product capability' invented causation; all three require rewrite.",
-    "07-business-context — contains the unanchored market prediction and the Hormozi citation; requires removal or replacement of both.",
-    "opening-paragraph (01-intro) — contains 'Both changes point to the same move' and the unhedged 'copying it will cost you' without the evidence-supported condition; requires hedging throughout."
+    "03-visual-timeline — add H3 labels and founder takeaways to each snapshot block",
+    "07-business-context — strip unhedged intent assertions and remove the unsupported 'Agorapulse AI New!' nav claim",
+    "06-lessons-for-saas-teams — remove Hormozi citation and rewrite the review-site CTA lesson using only the compressed evidence"
   ],
   "model": "claude-sonnet-4-6",
-  "costUsd": 0.05679899999999999,
-  "generatedAt": "2026-06-12T20:02:53.181Z",
+  "costUsd": 0.041823,
+  "generatedAt": "2026-06-13T00:37:36.514Z",
   "repetitionWarnings": [
-    "The conclusion that the homepage shifted from practitioner-facing simplicity to budget-holder ROI language appears in the opening paragraph, the messaging evolution section, the business context section, and the lessons section — four instances of the same analytical point with diminishing specificity each time.",
-    "The observation that 'Simple & Affordable' was removed from the page title is referenced in the opening, the meta/title H3 block, and the final lessons section — three repetitions without added depth on the third."
+    "The 'stopped talking to the practitioner, started talking to the budget-holder' interpretation appears in the intro, the messaging-evolution section, the business-context section, and the lessons section — four instances; consolidate or vary the framing"
   ]
 }

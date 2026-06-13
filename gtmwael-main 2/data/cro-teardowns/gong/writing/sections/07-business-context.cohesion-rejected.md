@@ -2,7 +2,7 @@
 
 ### Gong raised reportedly $450M while the category it built was maturing
 
-Those page-level changes tracked forces well beyond the homepage. Gong built its early identity around a category it invented. The page title read **"Revenue Intelligence Technology for Sales Teams | Gong.io"** — and that framing carried the company through a reportedly $200M Series D and a $250M Series E, reaching a reported $7.25 billion valuation by mid-2021. The category worked. Then the market caught up.
+Behind every page change sat a business pressure. Gong built its early identity around a category it invented. The page title read **"Revenue Intelligence Technology for Sales Teams | Gong.io"** — and that framing carried the company through a reportedly $200M Series D and a $250M Series E, reaching a reported $7.25 billion valuation by mid-2021. The category worked. Then the market caught up.
 
 ### The 2022–2023 SaaS downturn and competitor consolidation changed the calculus
 

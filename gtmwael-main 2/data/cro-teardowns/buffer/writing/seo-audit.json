@@ -9,41 +9,42 @@
   "readabilityScore": 14,
   "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "Link to a general 'SaaS homepage best practices' or 'CRO fundamentals' article when discussing benefit headlines vs. brand-name H1s in the final section",
-    "Link to a related teardown (e.g., another creator-economy SaaS or freemium competitor) when discussing Buffer's shift to a 'forever free plan' positioning",
-    "Link to a guide on meta description optimization when explaining how Buffer moved the freemium offer into the search snippet",
-    "Link to a case study or framework on 'multi-product homepage navigation' when discussing the eight product entry points"
+    "Link from 'multi-product companies retiring feature-comparison homepages' to a related article on homepage strategy for multi-product SaaS",
+    "Link from 'creator-economy platforms entering the scheduling space' to a guide on positioning against creator-focused competitors",
+    "Link from 'positioning' (citing Dunford's Obviously Awesome) to an internal resource on SaaS positioning frameworks",
+    "Link from 'Google Search Console' to an internal tutorial on filtering and interpreting search query data",
+    "Link from the CTA expansion section to a related article on multi-funnel vs. single-funnel homepage architecture"
   ],
   "faqSuggestions": [
-    "When is it safe to remove your value proposition from your homepage headline?",
-    "How does brand search volume influence homepage messaging decisions?",
-    "Should I add product-specific CTAs if my homepage currently has only one primary CTA?",
-    "How can I tell if my target audience is ready for a brand-name-only headline?",
-    "What's the difference between a homepage built for mid-funnel evaluators vs. self-serve visitors?",
-    "How should I structure navigation when targeting both creators and enterprise teams?"
+    "Why did Buffer remove its value proposition from the homepage H1?",
+    "When is it safe to use a brand name alone as your homepage headline?",
+    "What is the risk of removing case studies from a SaaS homepage?",
+    "How should I decide between a single CTA and multiple product-specific CTAs on my homepage?",
+    "Should I mention my free plan in the meta description?",
+    "What does Buffer's navigation shift from Pricing to platform channels tell us about creator growth?",
+    "How do you know when your brand name has achieved enough recognition to drop the benefit headline?"
   ],
   "contentGapNotes": [
-    "No discussion of how Buffer's visual design changes (layout shift from centered to multi-column, dark announcement bar, refined geometric accents) may have independently affected conversion or engagement — the article focuses on messaging and navigation but not visual hierarchy or design psychology",
-    "No mention of how organic search behavior may have shifted between 2019 and 2026 (e.g., rise of platform-specific searches, creator-focused keywords), which would explain why platform-specific nav links make sense now but wouldn't have in 2019",
-    "Limited coverage of mobile homepage changes — all snapshots appear desktop-focused; mobile layout decisions may differ meaningfully and deserve a separate section",
-    "No data on whether Buffer's actual conversion rate, bounce rate, or time-on-page changed with each redesign — the article infers intent from design changes but doesn't acknowledge the absence of outcome metrics",
-    "Missing context on Buffer's product roadmap or feature releases during this period — did the addition of eight products (Publish, Create, Community, Analyze, Collaborate, Mobile app, Start page, AI assistant) happen before or after the homepage redesign?",
-    "No discussion of how competitor actions (Hootsuite, Sprout Social pricing, new entrants in creator scheduling) may have triggered specific messaging changes — only general reference to 'crowded landscape'"
+    "No analysis of scroll depth or engagement metrics—article assumes visual changes drove conversion outcomes but offers no evidence of measurement",
+    "No discussion of how mobile viewport changes alongside the desktop layout evolution; hero redesign from centered to multi-column may have different mobile implications",
+    "No exploration of whether the shift to product-specific CTAs changed visitor distribution across product lines or overall conversion rate",
+    "Missing context on when Buffer made these changes relative to product launches (e.g., did the Create or Collaborate product launch precede the CTA expansion?)",
+    "No mention of test duration, statistical significance, or whether these were incremental changes or single large redesigns",
+    "Article does not address how the removal of case studies and business-tier messaging affects visitors who are already in evaluation mode (not first-time awareness)"
   ],
   "requiredFixes": [
-    "Add a disclaimer or caveat near the opening that states: 'This teardown analyzes visible design and messaging changes. Without access to Buffer's traffic, conversion, or engagement metrics, we cannot claim that these changes improved or harmed performance. The analysis suggests strategic intent; it does not prove results.' This prevents readers from treating observed changes as proven successes.",
-    "Clarify the timeline: the article title says '7 years' (2019–2026) but lists only 5 snapshots. If some years are missing, explain why (e.g., 'no major visible changes' or 'snapshots selected for strategic shifts'). If the timeline is inaccurate, correct it.",
-    "In the 'Why the homepage changed' section, add a note that the competitive context described (Hootsuite, Sprout Social moves) is inferred from design changes, not sourced from Buffer's public statements. Avoid implying direct causation without evidence."
+    "Add a disclaimer or caveat early in the article stating that observed changes do not necessarily indicate causation or confirmed wins—e.g., 'We cannot confirm these changes increased conversions without access to Buffer's internal metrics.' This aligns with the hard rule against claiming certainty.",
+    "Soften language in the 'Founder test' sections that imply causality—e.g., change 'If your homepage has one CTA, write down which of your product use cases it silently excludes' to 'Consider auditing which product use cases a single CTA might not serve.'"
   ],
   "optionalImprovements": [
-    "Expand the 'Founder test' callout boxes with actual SQL or GSC query examples (e.g., 'Filter Google Search Console for queries containing platform names like site:yourdomain.com Instagram') to make them immediately actionable",
-    "Add a visual comparison table showing the headline, H1, meta description, and primary CTA side-by-side across all five snapshots — currently readers must hunt through prose for exact changes",
-    "Include a subsection on 'what this means for paid ad landing pages' — many SaaS teams run different homepages for organic vs. paid audiences; Buffer's brand-name H1 may work differently depending on traffic source",
-    "Strengthen the secondary keyword 'SaaS homepage CRO teardown' by adding a sentence early in the intro that positions this article within a broader CRO teardown series or framework (e.g., 'This is the ninth in our SaaS homepage CRO teardown series')",
-    "In the final 'Brand name as H1' section, add a worked example: 'If your brand autocomplete shows [screenshot or example], your audience is ready for a brand-only H1. If it shows [other example], keep the benefit headline.' Concrete search results would strengthen this decision framework.",
-    "Consider adding a 'mistakes to avoid' sidebar when discussing removing 'Case Studies' from navigation — acknowledge that removing social proof elements can backfire for low-trust or new brands, even if Buffer could afford it"
+    "Expand the meta description score slightly by adding a subheading or callout box summarizing the three key insights (pricing model, channel navigation, brand H1) earlier in the article—currently the structure buries the takeaways until the lessons section",
+    "Add a data callout or comparison table showing the 2019 vs. 2026 headline, meta description, and CTA counts side-by-side for visual scanability",
+    "Include a brief paragraph on how to audit your own brand autocomplete before adopting Buffer's bare-name H1 strategy—currently the article mentions this test at the very end, after readers may have moved on",
+    "Link the 'Founder test' boxes to a downloadable audit template or checklist to improve CTA engagement and create a secondary conversion funnel",
+    "Consider adding a section on how Buffer's product expansion (from single product to eight products listed) correlates with the navigation and CTA changes—currently implied but not explicitly stated",
+    "Strengthen secondary keyword integration: 'homepage A/B test analysis' is listed but the article does not frame these changes as A/B test results; consider adding a sentence clarifying whether these are confirmed tests or observed iterations"
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.008135200000000009,
-  "generatedAt": "2026-06-12T20:03:02.929Z"
+  "costUsd": 0.007244000000000028,
+  "generatedAt": "2026-06-13T00:41:44.049Z"
 }

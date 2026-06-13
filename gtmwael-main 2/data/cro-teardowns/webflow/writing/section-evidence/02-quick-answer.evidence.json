@@ -1,0 +1,133 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "Webflow",
+  "companyUrl": "https://webflow.com/",
+  "articleTitle": "Webflow Homepage Teardown: Jan 2020 to Jun 2026",
+  "h1": "How Webflow rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2020",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 5,
+    "h2Removed": 3,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "primaryKeyword": "Webflow homepage teardown",
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2020 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "5 added · 3 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Break the code barrier",
+      "after": "Make your website a growth engine",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
+      "after": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Responsive web design tool, CMS, and hosting platform | Webflow",
+      "after": "Webflow: The agentic web platform for modern businesses"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Webflow replaced its 2020 'democratize code' positioning with an 'agentic web marketing platform' frame, pivoting the homepage from a tool that removes technical barriers for builders to an ROI-generating infrastructure for marketing-led growth teams — signalled most sharply by swapping 'Break the code barrier' for 'Make your website a growth engine' and adding a dedicated 'Contact Sales' CTA alongside AEO-specific navigation.",
+    "old_positioning_frame": "A browser-based design, CMS, and hosting tool that empowers users to build responsive websites without writing code — framed around removing a technical obstacle ('the code barrier') and offering a low-commitment entry point ('free until you're ready to launch').",
+    "new_positioning_frame": "An enterprise-grade 'agentic web platform' that transforms a company's website into a measurable growth asset, with built-in AI search optimization (AEO), CMS, hosting, and collaboration — framed around business outcomes and competitive advantage for marketing teams at scale ('300,000+ brands move the needle').",
+    "buyer_shift": "Individual designers, freelancers, and developers seeking to build without code (practitioner-led, bottom-up adoption) → marketing leaders and revenue-accountable teams at established companies seeking a platform that drives pipeline and ranks in AI search (team/org-led, top-down or sales-assisted purchase).",
+    "funnel_shift": "Mid-funnel product exploration for self-serve sign-ups ('Get started — it's free', 'free until you're ready to launch') → upper-funnel enterprise category consideration and sales pipeline initiation ('Contact Sales', 'Explore AEO'), with self-serve preserved as a secondary path ('Start for free').",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "Break the code barrier",
+        "new": "Make your website a growth engine",
+        "meaning": "The shift from 'barrier' (a problem framing centered on the builder's pain) to 'growth engine' (an outcome framing centered on business results) suggests Webflow is repositioning the hero message away from technical empowerment toward revenue impact — consistent with targeting a buyer who is accountable for marketing ROI rather than one seeking to remove a workflow obstacle."
+      },
+      {
+        "element": "Page title",
+        "old": "Responsive web design tool, CMS, and hosting platform | Webflow",
+        "new": "Webflow: The agentic web platform for modern businesses",
+        "meaning": "Dropping the enumeration of specific tool features ('design tool, CMS, and hosting') in favor of a category-ownership label ('agentic web platform') signals an attempt to define and lead a new product category rather than compete on feature comparison — this is consistent with a strategy targeting buyers who select platforms, not tools."
+      },
+      {
+        "element": "Meta description",
+        "old": "Build responsive websites in your browser, then launch with our world-class hosting or export your code. Discover the professional website platform built for your business.",
+        "new": "Design, build, optimize, and rank in AI search — all in Webflow. Enterprise-grade security, CMS, hosting, and AEO built in. Trusted by over 300k teams.",
+        "meaning": "The addition of 'rank in AI search', 'AEO built in', and 'Enterprise-grade security' — none of which appeared in the 2020 description — suggests Webflow is anchoring discoverability and credibility signals directly in its search snippet, which may indicate targeting a buyer who evaluates platforms against AI-era requirements and compliance benchmarks before engaging."
+      },
+      {
+        "element": "CTA",
+        "old": "Get started — it's free",
+        "new": "Contact Sales · Start for free · Get started · Explore AEO",
+        "meaning": "The promotion of 'Contact Sales' to a primary CTA position, alongside the addition of 'Explore AEO' as a named conversion path, points to a funnel architecture that now serves sales-assisted enterprise deals alongside self-serve — suggesting a deliberate expansion toward a higher-ACV buyer segment that requires human touchpoints."
+      },
+      {
+        "element": "Section headings",
+        "old": "Who uses Webflow · Get up and running fast · Free until you're ready to launch",
+        "new": "300,000+ brands move the needle with Webflow · From idea to impact, faster · Everything marketing teams love about webflow · Make your website your competitive edge",
+        "meaning": "Removing 'Free until you're ready to launch' (a risk-reduction message for budget-conscious individual buyers) and replacing it with 'competitive edge' and 'marketing teams' language is consistent with a shift toward addressing a buyer whose primary concern is organizational performance rather than personal cost or speed of onboarding."
+      }
+    ],
+    "copy_this_if": "Your brand name already appears in analyst reports or category comparison articles as a known player — meaning buyers arrive with some prior awareness — and your sales data shows that a meaningful portion of closed deals involve a marketing leader or VP-level stakeholder who was not the person who first signed up for the free tier.",
+    "do_not_copy_this_if": "Your product is still building initial awareness in a crowded category and relies on organic, word-of-mouth, or community-driven top-of-funnel — because dropping 'free' and practitioner-specific language before you have pull-through brand recognition may suppress the self-serve signups that currently sustain your pipeline.",
+    "safer_version_for_early_stage_saas": "Keep the 'free' CTA as primary but A/B test a secondary 'Talk to us' CTA in the hero — then instrument whether the cohort that clicks 'Talk to us' closes at a higher ACV, which gives you the data to justify a full CTA hierarchy reorder before you rewrite the H1.",
+    "risk_if_copied": "If the 'Contact Sales' CTA is promoted before inbound sales capacity and qualification workflows are in place, high-intent self-serve buyers who would have converted immediately may instead enter a sales queue and drop off — inflating cost-per-acquisition without the corresponding ACV lift that justifies the shift.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T11:05:59.086Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.026840999999999997
+  },
+  "seo-intent": {
+    "primary_keyword": "Webflow homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, growth marketer, or product strategist who wants to understand how Webflow repositioned itself from a no-code tool for builders to a marketing-platform infrastructure play—specifically to evaluate whether a similar positioning shift could work for their own product, or to learn the signals that indicate when a platform has outgrown its original audience.",
+    "recommended_h1_format": "[Company] Homepage Teardown: How It Shifted From No-Code Tool to Growth Engine",
+    "secondary_keywords": [
+      "Webflow CRO strategy 2024 2025",
+      "Webflow homepage evolution positioning change",
+      "How Webflow repositioned its platform",
+      "Webflow brand pivot no-code to marketing platform",
+      "Webflow agentic web marketing platform messaging"
+    ],
+    "content_angle": "Lead with the STRATEGIC SHIFT, not the visual changes. The searcher wants to understand the *why* behind Webflow's pivot from 'democratize code' to 'ROI engine for marketing teams'—what market signals forced this, what audience they were leaving behind, and what new audience they were chasing. Show how this repositioning cascaded through every element: H1, navigation, CTAs, social proof. The article should answer: 'When should I consider a positioning pivot this dramatic, and what are the early signals?'",
+    "what_the_searcher_wants": "A case study that reveals the decision-making logic behind a major repositioning, so they can apply similar thinking to their own product strategy or recognize when their market is telling them to pivot.",
+    "what_to_avoid": "Treating this as a cosmetic redesign teardown or a generic 'what changed' list. Do NOT focus on color, typography, or layout shifts. Do NOT write this as 'Webflow's new design is more modern'—that misses the entire point. The searcher will abandon immediately if the article doesn't explain the *market context* (why did Webflow need to pivot?) and the *business outcome* (who are they now selling to and why?).",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-12T11:06:13.289Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0030768
+  }
+}

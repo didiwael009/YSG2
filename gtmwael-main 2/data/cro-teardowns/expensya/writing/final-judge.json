@@ -1,58 +1,61 @@
 {
-  "overallScore": 81,
+  "overallScore": 74,
   "pass": false,
-  "evidenceAccuracy": 21,
-  "plainLanguage": 17,
+  "evidenceAccuracy": 17,
+  "plainLanguage": 16,
   "scannability": 11,
   "searchableHeadings": 8,
-  "specificity": 13,
-  "rhythmAndOpening": 8,
+  "specificity": 12,
+  "rhythmAndOpening": 7,
   "founderTakeaway": 4,
   "riskControl": 0,
   "croUsefulness": 0,
   "clarity": 0,
   "sectionCoherence": 0,
   "weakSections": [
-    "05-cta-navigation-evolution",
-    "03-visual-timeline — heading date error",
-    "06-lessons-for-saas-teams — third block lacks distinct H3 founder test"
+    "03-visual-timeline",
+    "06-lessons-for-saas-teams",
+    "01-intro (opening paragraph)"
   ],
   "unsupportedClaims": [
-    "'top 20% of revenue' — the phrase 'find which country drives your top 20% of revenue' introduces a specific percentage threshold not present in the evidence",
-    "'for a sum reportedly exceeding $100M, according to sources familiar with the deal' — the evidence states 'reportedly over $100M according to sources familiar with the deal' which is acceptable sourcing, but the article restates it as near-fact rather than hedged claim; marginal but flagged",
-    "'2020–2025' in the ## heading — the evidence states the period endpoint is Jun 2026, making '2025' a factual error"
+    "'Expensya's English homepage is gone' — the evidence shows French is now primary but an 'Anglais' language toggle exists in the new nav; this claim is stated as absolute fact in the opening paragraph",
+    "'That is not a translation. It is a different company talking to a different buyer.' — stated as a hard fact in the opening paragraph without hedging; the evidence supports this only as a reasonable inference",
+    "'The market was consolidating fast, with competitors like Ramp, Brex, and Spendesk bundling corporate cards and accounts payable into single platforms' — the evidence mentions these only as 'notable competitors'; the specific claim that they were 'bundling corporate cards and accounts payable into single platforms' is not traceable to the compressed evidence",
+    "'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — the evidence shows the toggle exists but states no reason why; assigning a precise cause is a motivation claim not supported by the evidence",
+    "'a reportedly $20M Series B' — this figure is present in the evidence as 'reportedly closed a $20M Series B round in April 2021'; the attribution hedge 'reportedly' is present so this is acceptable, but the claim 'The market was consolidating fast' in the same paragraph is a generic editorial assertion with no evidence anchor"
   ],
   "riskFlags": [
-    "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — asserts confirmed visitor intent from structural evidence only; should be hedged as 'this may suggest' or 'consistent with expecting'",
-    "'may cause a sharp drop in the stream of new leads entering your sales process, if self-serve volume was the primary source' — conditional framing is present but 'sharp drop' implies a specific outcome without supporting data; tighten to 'may reduce inbound volume'",
-    "'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — asserts company intent and strategic reasoning not confirmed in evidence; reframe as 'consistent with hedging against unproven French-market scale'",
-    "'whether that narrowing is intentional or incidental to a localisation decision' — acceptable hedge, not a flag",
-    "'That deadline may give buyers a concrete reason to act — rather than continue evaluating' — mild outcome prediction; acceptable with 'may' but noted"
+    "'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' — causal intent claim asserted without hedging; should read 'consistent with expecting' not 'suggests Expensya now expects'",
+    "'If self-serve volume was the primary source' — acceptable conditional, but the preceding sentence 'Removing a trial CTA without a sales team ready to convert demo requests may cause a sharp drop in the stream of new leads' edges toward a conversion outcome prediction",
+    "'That deal placed Expensya inside a suite targeting mid-market CFOs' — partially supported by evidence but stated as confirmed fact rather than inference from public statements",
+    "'Expensya replaced its self-serve path with a sales motion — the sequence of steps a company uses to move a prospect toward a purchase — that begins with a conversation, not a sign-up form. This suggests Expensya now expects a visitor who is ready to commit time' — the second sentence infers internal intent from a page element; should be framed as 'consistent with' not 'suggests [Expensya] expects'",
+    "The opening paragraph states 'By the end of this teardown, you will know how to spot whether your own homepage is making the same trade' — this is a conversion outcome promise for the reader that may overstate what two snapshots can establish"
   ],
   "requiredFixes": [
-    "Fix the ## heading '2020–2025' to '2020–2026' to match the evidence endpoint of Jun 2026",
-    "Replace 'top 20% of revenue' with an un-quantified phrase such as 'the single country generating the majority of your revenue' — the 20% threshold has no evidence basis",
-    "Reframe 'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — remove 'precisely because' and replace with 'consistent with hedging against' or 'which may reflect uncertainty about'",
-    "Reframe 'This suggests Expensya now expects a visitor who is ready to commit time' — add explicit hedge: 'if the page is now targeting warmer inbound leads, this pattern suggests...'",
-    "The paragraph beginning 'Removing a trial CTA without a sales team...' in section 06 exceeds 60 words and contains two compound ideas — split into two paragraphs with a structural break"
+    "Opening paragraph (01-intro): Remove or hedge 'Expensya's English homepage is gone' — replace with 'Expensya's primary homepage is now in French, with English accessible via a toggle' to match evidence accuracy",
+    "Opening paragraph (01-intro): Hedge 'That is not a translation. It is a different company talking to a different buyer.' — add 'appears to be' or 'reads as' to prevent it being scored as an unsupported causation claim",
+    "07-business-context, paragraph 1: Remove the claim that Ramp, Brex, and Spendesk were 'bundling corporate cards and accounts payable into single platforms' or add 'according to public reports' — this specific product claim is not in the compressed evidence",
+    "06-lessons-for-saas-teams, final H3: Remove 'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — replace with 'the toggle's presence is consistent with preserving access for non-French visitors, though the reason it was retained is not confirmed by the evidence'",
+    "05-cta-navigation-evolution, H3 'What Expensya's CTA changes say...': Change 'This suggests Expensya now expects a visitor who is ready to commit time, not just explore' to 'This is consistent with a page designed for visitors who are ready to commit time, not just explore' to remove intent attribution",
+    "03-visual-timeline: The section heading '...from isometric automation showcase to human-first French identity' implies a confirmed strategic identity decision — soften to 'from isometric automation showcase to a French-language, human-led layout'"
   ],
   "optionalImprovements": [
-    "The opening section uses two H1 tags — the article starts with '# How Expensya rewrote...' and immediately follows with another '# Expensya Homepage Teardown:' — consolidate to one H1 for document structure clarity",
-    "The visual sophistication score of 4 is cited implicitly via 'held at 4' in the evidence notes but not used directly in the article — if referenced, define the scale briefly",
-    "The 'Founder test' label in section 04 and the 'Founder test' label in section 05 use the same opening phrase — vary the label or sentence rhythm to reduce repetition",
-    "Section 03 note about only two snapshots available is good practice — consider moving it to the article introduction rather than burying it under the first ## heading",
-    "The cookie-consent CTA explanation ('Necessary 21', 'Cloudflare 12', etc.) is accurate and useful — consider adding a one-sentence note earlier that CTA lists from crawl tools often include tracker artefacts, so readers understand the caveat before the section"
+    "The 'Quick Answer' section (02) repeats the headline-change and CTA-change conclusions that appear verbatim in at least two later sections — consider making the Quick Answer a pure summary box rather than analytical prose to reduce repetition",
+    "The business-context section (07) opens with a paragraph about the 2021 rebrand and Series B but does not anchor these to a specific homepage element — link each business event explicitly to a page change (e.g., 'the rebrand to 360° spend management in 2021 may explain why...') to improve specificity",
+    "Several H3 founder-test paragraphs are strong but some exceed 60 words — tighten each to stay within the scannability limit",
+    "The visual-timeline section has four H3 blocks but only one explicit founder test — the second and third H3 blocks ('2020 to 2026' and 'June 2026') have no founder-facing takeaway; move the single '5-minute check' H3 to follow the third block and add a brief takeaway after the second",
+    "The phrase 'sales motion — the sequence of steps a company uses to move a prospect toward a purchase' is a good plain-language explanation; consider applying the same approach to 'ICP' if used elsewhere in a rerun"
   ],
   "rerunRecommendations": [
-    "03-visual-timeline — fix heading date and rerun to correct the '2020–2025' factual error",
-    "05-cta-navigation-evolution — rerun to soften intent assertions and apply conditional framing to the visitor-readiness claim",
-    "06-lessons-for-saas-teams — rerun third block to remove the 'precisely because' intent assertion and fix the over-60-word paragraph"
+    "01-intro: Rerun opening paragraph to remove absolute claim about English homepage being gone and to hedge the buyer-identity assertion",
+    "07-business-context: Rerun paragraph 1 to remove the unsupported competitor-bundling claim and replace 'The market was consolidating fast' with a specific evidence-anchored statement",
+    "06-lessons-for-saas-tears: Rerun the final H3 to remove the unsupported motivation claim about the Anglais toggle and add a conditional qualifier"
   ],
   "model": "claude-sonnet-4-6",
-  "costUsd": 0.04771499999999995,
-  "generatedAt": "2026-06-12T10:57:25.007Z",
+  "costUsd": 0.05496000000000001,
+  "generatedAt": "2026-06-13T00:44:39.838Z",
   "repetitionWarnings": [
-    "The observation that 'Free trial was removed and replaced by Réservez une démo' appears in the visual timeline section, the CTA section, and the lessons section — three separate repetitions of the same structural finding without additive framing in each instance",
-    "The observation that 'every removed navigation item was in English and every added item is in French' is made in the CTA/nav section and again implied in the messaging section and the business-context section — consolidate or vary the framing"
+    "The observation that the headline changed from English to French and implies a French-market focus appears in the intro, quick-answer, visual-timeline, messaging-evolution, CTA-navigation, and lessons sections — six distinct locations; consider consolidating the core observation and varying the angle in each section",
+    "The removed CTA list ('Free trial,' 'Discover our solutions,' 'Find out more') is reproduced verbatim in at least four separate analytical sections"
   ]
 }

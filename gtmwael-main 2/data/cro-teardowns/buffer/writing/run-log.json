@@ -569,5 +569,104 @@
     "ok": true,
     "detail": "score 87/100 — PASS ✓ — $0.0081",
     "ts": "2026-06-12T20:03:02.931Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:39:54.447Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:39:54.448Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3421 in / 104 out — $0.0126",
+    "ts": "2026-06-13T00:39:59.109Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0398",
+    "ts": "2026-06-13T00:40:24.607Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v1",
+    "ok": true,
+    "detail": "score 87/100 — PASS",
+    "ts": "2026-06-13T00:40:24.609Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:40:24.613Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 02-quick-answer",
+    "ok": true,
+    "detail": "varied opening to a number lead",
+    "ts": "2026-06-13T00:41:08.135Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": true,
+    "detail": "added transition referencing timeline",
+    "ts": "2026-06-13T00:41:08.138Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "2 changed, 0 rejected — $0.4009",
+    "ts": "2026-06-13T00:41:08.139Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 2066 words",
+    "ts": "2026-06-13T00:41:08.147Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Buffer homepage CRO teardown",
+    "ts": "2026-06-13T00:41:08.149Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:41:08.153Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 81/100 — FAIL — $0.0413",
+    "ts": "2026-06-13T00:41:31.461Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:41:31.463Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0072",
+    "ts": "2026-06-13T00:41:44.051Z"
   }
 ]

@@ -1,0 +1,36 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The phrase 'foregrounding an AI tool ecosystem' uses abstract noun stacking ('AI tool ecosystem') that adds slight density for a non-expert reader.",
+    "The second sentence ('The page now serves AI developers who already understand what agents and automation tools are') contains two ideas — who the page serves AND the assumption it makes about prior knowledge — slightly exceeding the two-distinct-ideas limit for an analytical sentence at this length.",
+    "The section heading is not visible in the draft text; the rubric requires checking it contains the company name or a topic term — cannot confirm compliance from the draft alone.",
+    "Word count is approximately 82 words, which exceeds the stated SECTION GOAL cap of 75 words and the check-10 target range of 45–75 words."
+  ],
+  "requiredFixes": [
+    "Trim the paragraph to 75 words or fewer. The second sentence can be shortened: cut 'who already understand what agents and automation tools are' and replace with a shorter qualifier, e.g. 'AI developers building agent workflows'.",
+    "Split the second sentence into two shorter ones to separate the audience-identity claim from the arrival-assumption claim — each idea should stand alone.",
+    "Confirm the ## section heading contains 'Apify' plus at least one of: 'homepage', 'positioning', 'messaging', 'CTA', or 'conversion'. If the heading is clever-only, rewrite it."
+  ],
+  "riskFlags": [
+    "'The page now serves AI developers' is a mild audience-identity claim not directly sourced to a stated audience change in the evidence — the evidence supports this as an inference from the H1 and nav changes, but the draft states it as fact. Soften to 'appears to target' or 'signals a shift toward'.",
+    "'dropping the scraping promise entirely' is slightly overstated — the meta description evidence shows Apify retained scraping keywords ('web scraping, browser automation') in the meta description, meaning the scraping promise was not dropped entirely, only de-prioritised in the H1."
+  ],
+  "seoNotes": [
+    "Both verbatim headline changes are in bold quotes — this is correct and supports featured-snippet extraction by search engines.",
+    "The paragraph names the company (Apify), the single biggest change (H1 rewrite), the new audience (AI developers), and one backfire condition (small tool library) — all four snippet criteria from the section goal are met.",
+    "The specific tool count '39,044' is quoted verbatim from evidence and adds numerical specificity that improves snippet candidacy.",
+    "The section is slightly over the 75-word target, which may cause Google to truncate the featured snippet — trimming to 70 words is recommended for snippet reliability."
+  ],
+  "rewriteInstruction": "Trim the paragraph to 70–75 words. Keep all four required elements: company name, the H1 change in bold quotes, the new audience, and the backfire condition. Fix the overstatement 'dropping the scraping promise entirely' — the evidence shows scraping language survived in the meta description, so use 'de-prioritising the scraping promise in the primary headline' instead. Split the second sentence so the audience identity and the arrival assumption are two separate short sentences. Ensure the ## heading contains 'Apify' plus a topic term.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 14,
+    "plainLanguage": 17,
+    "scannability": 14,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,23 +1,16 @@
 {
-  "publishedAt": "2026-06-12T20:15:12.192Z",
+  "publishedAt": "2026-04-01T12:51:00.000Z",
   "slug": "agorapulse",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 74,
+    "finalJudgeScore": 81,
     "seoPass": true,
     "seoScore": 83,
     "unsupportedClaims": [
-      "'Both changes point to the same move: the homepage stopped talking to the social media manager doing the work and started talking to the stakeholder who has to justify the spend' — stated as confirmed fact, not inference; the evidence explicitly notes this is an inference requiring a hedge.",
-      "'The colour shift from sky blue to navy is not a refresh. It signals a different buyer entirely.' — causation claim not traceable to evidence; the evidence note explicitly says 'No confirmed strategy is implied.'",
-      "'The palette change alone moved the page from playful to serious' — the word 'alone' is a causal attribution not supported by the evidence; the evidence supports observing that the palette change tracks a visible shift, not that it caused it.",
-      "'That consistency suggests the shift followed product capability rather than leading it' — the product development sequence is not in the evidence; this is an invented causation claim.",
-      "'a visual sophistication score of 4 out of 5' — the evidence uses a 0–5 scale and records the score as 4, not '4 out of 5'; minor but the denominator is inferred not stated.",
-      "The ## section heading references '2025' ('Agorapulse homepage 2019–2025') but the evidence period ends Jun 2026 and the final snapshot is labelled 'current-live'; no evidence snapshot is dated 2025.",
-      "'may have served a narrower audience' re: Schedule Freely — speculative audience-narrowing interpretation with no supporting evidence in the provided data.",
-      "'the category is consolidating around outcome proof — teams that cannot demonstrate measurable business impact may struggle to retain accounts even when the product works well' — a market prediction with no data anchor in the evidence.",
-      "'Hormozi notes in $100M Offers that a strong offer reduces the buyer's need to look elsewhere before deciding' — a specific citation to an external source and named book; no such source is in the compressed evidence."
+      "'Agorapulse AI New!' as named nav item — not present in the navAdded evidence list",
+      "Hormozi notes in *$100M Offers* that a strong offer reduces the buyer's need to look elsewhere before deciding — this is an external citation not in the compressed evidence and not from the two owned evidence sources (Landing Page Playbook 2026 / Growth Playbook 2026)"
     ]
   },
   "consistencyCheck": {
@@ -26,11 +19,11 @@
     "warnings": []
   },
   "blockedReasons": [
-    "Final judge FAIL — score 74/100 (need ≥ 90)",
-    "9 unsupported claim(s): 'Both changes point to the same move: the homepage stopped talking to the social media manager doing the work and started talking to the stakeholder who has to justify the spend' — stated as confirmed fact, not inference; the evidence explicitly notes this is an inference requiring a hedge.; 'The colour shift from sky blue to navy is not a refresh. It signals a different buyer entirely.' — causation claim not traceable to evidence; the evidence note explicitly says 'No confirmed strategy is implied.'"
+    "Final judge FAIL — score 81/100 (need ≥ 90)",
+    "2 unsupported claim(s): 'Agorapulse AI New!' as named nav item — not present in the navAdded evidence list; Hormozi notes in *$100M Offers* that a strong offer reduces the buyer's need to look elsewhere before deciding — this is an external citation not in the compressed evidence and not from the two owned evidence sources (Landing Page Playbook 2026 / Growth Playbook 2026)"
   ],
   "articlePath": "src/content/cro-teardown/articles/agorapulse.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/cro-teardowns/gong",
     "/cro-teardowns/apollo",

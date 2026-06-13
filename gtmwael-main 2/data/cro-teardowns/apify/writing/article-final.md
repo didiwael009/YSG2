@@ -1,8 +1,8 @@
 ---
 title: "Apify Homepage Teardown: Jan 2020 to Jun 2026"
 slug: apify
-generatedAt: 2026-06-12T13:53:01.943Z
-sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
+generatedAt: 2026-06-13T00:38:59.030Z
+sectionsIncluded: ["01-intro", "02-quick-answer", "03-visual-timeline", "04-messaging-evolution", "05-cta-navigation-evolution", "07-business-context", "06-lessons-for-saas-teams"]
 ---
 # How Apify rewrote its homepage over 6 years
 
@@ -13,6 +13,10 @@ sectionsIncluded: ["01-intro", "03-visual-timeline", "04-messaging-evolution", "
 # Apify Homepage Teardown: From "Extract Data" to "39,044 Tools for Your AI"
 
 Apify's homepage once promised to do something — **"Extract data from any website"** — and now promises to supply something: **"39,044 tools for your AI."** That single swap marks a shift from competing on what the product does to competing on what its community has built. This teardown covers five snapshots from January 2020 to June 2026, and by the end you will have a concrete test to check whether your own headline is still explaining your product or already selling your ecosystem.
+
+## Quick answer
+
+Apify's biggest homepage change was replacing its primary headline from **"Extract data from any website"** to **"39,044 tools for your AI"** — dropping the scraping promise entirely and foregrounding an AI tool ecosystem instead. The page now serves AI developers who already understand what agents and automation tools are, assuming visitors arrive knowing they need to feed an AI rather than scrape a website. If your tool library is small or unproven, leading with a specific count like this will highlight weakness rather than signal scale.
 
 ## Apify homepage 2020–2024: from bold utility hero to AI marketplace grid
 
@@ -74,7 +78,7 @@ Among the CTAs removed was **"Browse all actors"** — open-ended, catalogue-fir
 
 ## Why the homepage changed
 
-Apify entered the period as a web scraping utility competing in a well-established data extraction category alongside tools like Scrapy, Octoparse, and various proxy services. The competitive frame was simple: how easily and reliably could a platform pull data from any website? The headline **"Extract data from any website"** and the page title **"Web Scraping, Data Extraction and Automation"** reflect that undifferentiated, task-defined market position.
+Those signals all point back to one cause. Apify entered the period as a web scraping utility competing in a well-established data extraction category alongside tools like Scrapy, Octoparse, and various proxy services. The competitive frame was simple: how easily and reliably could a platform pull data from any website? The headline **"Extract data from any website"** and the page title **"Web Scraping, Data Extraction and Automation"** reflect that undifferentiated, task-defined market position.
 
 The navigation shift — removing **"Free store"** and **"Pricing"** while adding **"MCP Give your AI access to Actors"** and **"Actors Build and run serverless programs"** — suggests Apify's competitive environment expanded beyond scraping vendors toward AI infrastructure providers. The new headline **"39,044 tools for your AI"** and section heading **"Not just a web scraping API"** point to deliberate repositioning away from the scraping-utility category and toward an AI tooling marketplace identity.
 

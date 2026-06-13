@@ -5,14 +5,14 @@
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 72,
+    "finalJudgeScore": 74,
     "seoPass": true,
-    "seoScore": 83,
+    "seoScore": 88,
     "unsupportedClaims": [
-      "'fewer than 20% of active accounts use two products together in the same month' — no such threshold exists in the evidence",
-      "'This is consistent with Wael Aouididi's framework in the Landing Page Playbook 2026' — named source and publication not in the evidence",
-      "'If fewer than 20% of active accounts use two products together in the same month' — invented metric threshold not in the evidence",
-      "'visual sophistication as a 3 out of 5' — the evidence states visual_sophistication: 3, but the article attributes this to an external scoring frame without noting it is the evidence's own label; however, '3 out of 5' phrasing is a direct citation so borderline; scored as minor"
+      "'See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages' — this H2 is listed in h2Removed in the evidence, but the article uses it as if Unbounce made this claim as a factual promise and implies it was a 'provable metric'; the claim itself originates in the evidence and is fine to cite, but the article states it was 'a specific, provable metric' without any evidence that it was validated or provable",
+      "'If fewer than 20% of active accounts use two products together in the same month, adding those products to the nav likely overpromises the platform experience' — the 20% threshold is not in the evidence and is not attributed to the Landing Page Playbook 2026 or any other owned source; this is an invented threshold",
+      "'Unbounce's original page ran three CTAs' — the evidence lists six removed CTAs (Learn More, PREVIEW THE LANDING PAGE BUILDER, SEE HOW UNBOUNCE CAN HELP ME, SHOW ME HOW, Browse Our Template Gallery, SEE THE PLANS); stating the original page ran exactly three is a specific count not supported by the evidence, which only shows what was removed, not the total original CTA count",
+      "'The current page runs six' — the evidence lists ten CTAs added; stating the current page runs exactly six CTAs is a specific count not traceable to the evidence"
     ]
   },
   "consistencyCheck": {
@@ -21,11 +21,11 @@
     "warnings": []
   },
   "blockedReasons": [
-    "Final judge FAIL — score 72/100 (need ≥ 90)",
-    "4 unsupported claim(s): 'fewer than 20% of active accounts use two products together in the same month' — no such threshold exists in the evidence; 'This is consistent with Wael Aouididi's framework in the Landing Page Playbook 2026' — named source and publication not in the evidence"
+    "Final judge FAIL — score 74/100 (need ≥ 90)",
+    "4 unsupported claim(s): 'See How You Can Lower Cost-Per-Lead By Over 70% With Landing Pages' — this H2 is listed in h2Removed in the evidence, but the article uses it as if Unbounce made this claim as a factual promise and implies it was a 'provable metric'; the claim itself originates in the evidence and is fine to cite, but the article states it was 'a specific, provable metric' without any evidence that it was validated or provable; 'If fewer than 20% of active accounts use two products together in the same month, adding those products to the nav likely overpromises the platform experience' — the 20% threshold is not in the evidence and is not attributed to the Landing Page Playbook 2026 or any other owned source; this is an invented threshold"
   ],
   "articlePath": "src/content/cro-teardown/articles/unbounce.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/cro-teardowns/hootsuite",
     "/cro-teardowns/expensya",

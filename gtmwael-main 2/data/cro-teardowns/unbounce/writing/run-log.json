@@ -555,5 +555,125 @@
     "ok": true,
     "detail": "score 83/100 — PASS ✓ — $0.0076",
     "ts": "2026-06-12T22:11:55.033Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-13T00:48:37.447Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:48:37.448Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "3632 in / 122 out — $0.0135",
+    "ts": "2026-06-13T00:48:42.602Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 82/100 — FAIL — $0.0429",
+    "ts": "2026-06-13T00:49:07.494Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-13T00:49:07.496Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "4739 in / 150 out — $0.0601",
+    "ts": "2026-06-13T00:49:13.242Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v2",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0883",
+    "ts": "2026-06-13T00:49:35.864Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v2",
+    "ok": true,
+    "detail": "score 87/100 — PASS",
+    "ts": "2026-06-13T00:49:35.865Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-opus-4-8]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-13T00:49:35.869Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 03-visual-timeline",
+    "ok": true,
+    "detail": "added transition opener to first subsection",
+    "ts": "2026-06-13T00:50:17.721Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: 04-messaging-evolution",
+    "ok": true,
+    "detail": "added transition referencing visual arc",
+    "ts": "2026-06-13T00:50:17.723Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "2 changed, 0 rejected — $0.4039",
+    "ts": "2026-06-13T00:50:17.723Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 2029 words",
+    "ts": "2026-06-13T00:50:17.731Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Unbounce homepage CRO teardown",
+    "ts": "2026-06-13T00:50:17.733Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:50:17.739Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": false,
+    "detail": "score 74/100 — FAIL — $0.0556",
+    "ts": "2026-06-13T00:51:00.969Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-13T00:51:00.971Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 88/100 — PASS ✓ — $0.0082",
+    "ts": "2026-06-13T00:51:15.640Z"
   }
 ]

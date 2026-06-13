@@ -1,0 +1,3 @@
+## Gong Homepage Positioning: Quick Answer
+
+Gong's biggest homepage change was swapping its headline from **"REVENUE INTELLIGENCE"** to **"Revenue AI Built To Predict churn"**. The page title shifted from **"Revenue Intelligence Technology for Sales Teams"** to **"Gong - Revenue AI OS"**. The page now speaks to sales, customer success, marketing, and revenue operations leaders — skipping the explanation of what the category (the market segment Gong itself named and built) even is. If your company coined its category fewer than 18 months ago, making this same shift may remove the scaffolding buyers still need to justify the purchase internally.

@@ -1,17 +1,19 @@
 {
-  "publishedAt": "2026-06-12T17:39:15.759Z",
+  "publishedAt": "2026-05-22T08:23:00.000Z",
   "slug": "expensya",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 81,
+    "finalJudgeScore": 74,
     "seoPass": true,
-    "seoScore": 84,
+    "seoScore": 83,
     "unsupportedClaims": [
-      "'top 20% of revenue' — the phrase 'find which country drives your top 20% of revenue' introduces a specific percentage threshold not present in the evidence",
-      "'for a sum reportedly exceeding $100M, according to sources familiar with the deal' — the evidence states 'reportedly over $100M according to sources familiar with the deal' which is acceptable sourcing, but the article restates it as near-fact rather than hedged claim; marginal but flagged",
-      "'2020–2025' in the ## heading — the evidence states the period endpoint is Jun 2026, making '2025' a factual error"
+      "'Expensya's English homepage is gone' — the evidence shows French is now primary but an 'Anglais' language toggle exists in the new nav; this claim is stated as absolute fact in the opening paragraph",
+      "'That is not a translation. It is a different company talking to a different buyer.' — stated as a hard fact in the opening paragraph without hedging; the evidence supports this only as a reasonable inference",
+      "'The market was consolidating fast, with competitors like Ramp, Brex, and Spendesk bundling corporate cards and accounts payable into single platforms' — the evidence mentions these only as 'notable competitors'; the specific claim that they were 'bundling corporate cards and accounts payable into single platforms' is not traceable to the compressed evidence",
+      "'Expensya retained the Anglais toggle precisely because French-market scale is unproven' — the evidence shows the toggle exists but states no reason why; assigning a precise cause is a motivation claim not supported by the evidence",
+      "'a reportedly $20M Series B' — this figure is present in the evidence as 'reportedly closed a $20M Series B round in April 2021'; the attribution hedge 'reportedly' is present so this is acceptable, but the claim 'The market was consolidating fast' in the same paragraph is a generic editorial assertion with no evidence anchor"
     ]
   },
   "consistencyCheck": {
@@ -20,15 +22,15 @@
     "warnings": []
   },
   "blockedReasons": [
-    "Final judge FAIL — score 81/100 (need ≥ 90)",
-    "3 unsupported claim(s): 'top 20% of revenue' — the phrase 'find which country drives your top 20% of revenue' introduces a specific percentage threshold not present in the evidence; 'for a sum reportedly exceeding $100M, according to sources familiar with the deal' — the evidence states 'reportedly over $100M according to sources familiar with the deal' which is acceptable sourcing, but the article restates it as near-fact rather than hedged claim; marginal but flagged"
+    "Final judge FAIL — score 74/100 (need ≥ 90)",
+    "5 unsupported claim(s): 'Expensya's English homepage is gone' — the evidence shows French is now primary but an 'Anglais' language toggle exists in the new nav; this claim is stated as absolute fact in the opening paragraph; 'That is not a translation. It is a different company talking to a different buyer.' — stated as a hard fact in the opening paragraph without hedging; the evidence supports this only as a reasonable inference"
   ],
   "articlePath": "src/content/cro-teardown/articles/expensya.ts",
   "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/cro-teardowns/apollo",
     "/cro-teardowns/apify",
-    "/cro-teardowns/webflow"
+    "/cro-teardowns/agorapulse"
   ],
   "fieldsOverridden": [
     "metaTitle"

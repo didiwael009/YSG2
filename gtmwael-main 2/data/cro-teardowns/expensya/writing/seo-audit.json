@@ -1,5 +1,5 @@
 {
-  "seoScore": 84,
+  "seoScore": 83,
   "pass": true,
   "titleScore": 12,
   "metaDescriptionScore": 13,
@@ -7,42 +7,46 @@
   "searchIntentScore": 18,
   "keywordUseScore": 8,
   "readabilityScore": 14,
-  "internalLinkingScore": 5,
+  "internalLinkingScore": 4,
   "internalLinkingSuggestions": [
-    "Link from the CTA shift section to a related article on SaaS demo vs. free-trial strategy",
-    "Link from the messaging evolution section to content on buyer-role targeting or persona-driven homepage design",
-    "Link from the language/localization section to guidance on homepage language strategy or international SaaS positioning",
-    "Add internal CTA at the end directing readers to other CRO teardowns in the series (e.g., link to a general CRO teardown index or methodology article)"
+    "Link from 'SaaS homepage CRO teardown' discussion to a general guide on homepage structure principles for SaaS",
+    "Link from the Medius acquisition context to a related article on how acquisitions reshape product positioning (if one exists)",
+    "Link from 'demo-first sales motion' discussion to an internal resource on converting demo requests vs. trial signups",
+    "Link from the 'Founder test' sections to a related internal tool or guide on auditing your own homepage messaging",
+    "Link from the France e-invoicing context to any internal SaaS compliance-messaging strategy content"
   ],
   "faqSuggestions": [
-    "Should I remove my free trial CTA if I'm narrowing to a specific buyer persona?",
-    "How do I know if my homepage is written for the right buyer role?",
-    "What does it mean when a company switches its homepage to a single language?",
-    "How should I adjust my homepage when regulatory changes affect my market?",
-    "When should a SaaS homepage shift from self-serve to sales-assisted CTAs?",
-    "How does the Medius acquisition explain Expensya's homepage changes?"
+    "Why did Expensya switch from English to French on its homepage?",
+    "What happened to Expensya's free trial CTA, and why?",
+    "How did the Medius acquisition change Expensya's homepage strategy?",
+    "Is Expensya still accessible to non-French speakers?",
+    "What does the shift from 'automation' to 'compliance' messaging signal about Expensya's target buyer?",
+    "How can SaaS teams use language as a homepage positioning lever?",
+    "What is the risk of narrowing homepage CTAs to a sales-assisted motion?"
   ],
   "contentGapNotes": [
-    "Article does not address whether Expensya's French-only headline on the /en/ path resulted in measurable traffic or conversion changes—this outcome data would strengthen the lessons section",
-    "No discussion of how Expensya handled the transition period (e.g., did they A/B test the French headline, or was it a hard switch?) — testing methodology would add credibility to the strategic inferences",
-    "Article infers the Medius acquisition and e-invoicing mandate drove changes but does not cite any public statements from Expensya or Medius explaining the homepage rewrite — adding quoted rationale would clarify cause vs. correlation",
-    "No coverage of secondary navigation changes (e.g., footer links, resource pages, or mobile navigation) — these often reveal intent shifts alongside hero changes",
-    "Article does not analyze the removed section headings in detail (e.g., which integrations were de-emphasized, or what **'Small, Mid, Large'** segmentation was replaced with) — more granular comparison would support the persona-shift thesis"
+    "No analysis of how the shift from self-serve to demo-first CTAs likely affected Expensya's conversion funnel shape or cost-per-acquisition — the article suggests risk but does not address measurable outcomes or tradeoffs",
+    "Missing discussion of whether the French-language primary frame was tested incrementally or deployed as a full switch — this would help readers understand the confidence level behind the move",
+    "No mention of how Expensya's mobile experience changed between 2020 and 2026 — the article focuses on desktop layout and messaging",
+    "Limited discussion of secondary personas (e.g., procurement, IT, accounts payable teams) — the article focuses heavily on CFO/finance director buyer, but mid-market spend-management tools often serve multiple stakeholders",
+    "No analysis of how the removal of integration-focused CTAs ('Discover all integrations') may have affected developer or technical buyer inbound volume",
+    "Missing context on whether Expensya's French-market focus reflects a revenue/growth decision or a market-consolidation response to stronger competitors in other regions"
   ],
   "requiredFixes": [
-    "Primary keyword 'Expensya homepage CRO teardown' appears only twice in the article body (in the intro and once in the heading structure section). Distribute it naturally in 1–2 additional places (e.g., early in the business context section or in a lessons summary sentence) to reinforce topical relevance without over-optimization.",
-    "Secondary keyword 'SaaS homepage CRO teardown' is mentioned only once (in the final lessons section). Add it to at least one of the middle sections (e.g., 'This SaaS homepage CRO teardown reveals...') to improve keyword density for that secondary target.",
-    "The language/localization mismatch section flags a potential problem but does not recommend a specific test or fix. Replace the cautious framing ('may reflect', 'no confirmed strategy') with a concrete diagnostic: 'If you operate a localized /en/ path, test whether your hero headline language matches visitor intent by segmenting conversion data by language.'",
-    "Clarify the evidence scope: the article states '2 snapshots' but does not explicitly confirm whether these are actual Wayback Machine captures or reconstructed designs. Add a single sentence early in the visual timeline section (e.g., 'These snapshots were captured from [source] on [dates].') to establish credibility."
+    "In the 'Quick Answer' section, soften the claim 'this move risks collapsing trial volume' — replace with 'this move may reduce self-serve trial volume' to avoid asserting a certainty",
+    "The section titled '5-minute check: can a non-French visitor still convert?' makes an implied claim that non-French visitors face barriers — clarify that this is a structural observation, not a measured finding",
+    "In the CTA analysis, the list 'Necessary 21, Cloudflare 12, Preferences 2' appears without context — either remove it or briefly explain why cookie/tracking artefacts are mentioned in a CRO teardown",
+    "The statement about Medius acquisition valuing Expensya at 'reportedly exceeding $100M' uses hedging language but is stated without a source footnote — either add a source or remove the claim to avoid appearing to cite unverified information"
   ],
   "optionalImprovements": [
-    "The intro meta-line reads '*Oct 2020 → Jun 2026 · 2 snapshots · 8 min read*' — consider adding a brief summary bullet (e.g., 'Key shift: English global messaging → French compliance-focused positioning') to set reader expectations immediately after the date line.",
-    "The 'Founder test' callouts are valuable but inconsistently named. Standardize them as '**Your homepage test:**' or '**Quick audit:**' and apply the same formatting to all three (language check, compliance check, buyer-role check) to improve scannability.",
-    "The meta description in the metadata block is strong but the article itself does not explicitly state what specific CRO changes readers will learn. Add a single sentence early in the body (after the intro teardown statement) that mirrors the meta description language: 'This teardown explores what changed in headline, section headings, CTAs, navigation, and what your team can apply.'",
-    "In the final section ('What SaaS teams can study...'), add a 1-2 sentence transition explaining why these three lessons (language, compliance framing, CTA shift) are the most actionable. This helps readers prioritize what to test first.",
-    "Consider adding a small 'How to use this teardown' callout at the very end directing readers to apply each lesson to their own homepage (e.g., 'Audit your homepage language alignment this week. Test compliance framing next. Then review your CTA mix.'). This increases practical takeaway value."
+    "The article uses the phrase 'Founder test' three times as a subsection format — consider varying the label or adding a brief intro explaining why founder-level reflection is included",
+    "Add a visual timeline showing the Oct 2020 vs Jun 2026 headlines side-by-side at the top of the messaging evolution section for instant visual comparison",
+    "Consider adding a short table comparing the 2020 and 2026 navigation structures to make the 'eight removed, eight added' claim more scannable",
+    "The meta description in the metadata block is strong, but the article title 'How Expensya rewrote its homepage over 6 years' is more generic than the metadata title — consider aligning them or using the stronger title in the H1",
+    "Add a brief note explaining why only two snapshots exist (Oct 2020 and Jun 2026) rather than quarterly intervals — this would add credibility to the 'start state, end state' framing",
+    "The 'Founder test' reflection prompts would be stronger if each ended with a suggested next action (e.g., 'Run a 2-week A/B test on compliance language in your top section') rather than just diagnostic questions"
   ],
   "model": "claude-haiku-4-5-20251001",
-  "costUsd": 0.008165600000000106,
-  "generatedAt": "2026-06-12T10:26:42.890Z"
+  "costUsd": 0.00815279999999996,
+  "generatedAt": "2026-06-13T00:44:54.951Z"
 }

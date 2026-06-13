@@ -1,0 +1,40 @@
+{
+  "score": 79,
+  "pass": false,
+  "issues": [
+    "Section heading '## Quick Answer' contains neither the company name nor any searchable topic term (homepage, positioning, messaging, CTA, conversion) — it is a structural label, not a searchable heading.",
+    "Word count is approximately 110 words — well over the 75-word hard limit stated in the section goal and the 45–75 word check.",
+    "The section goal requires exactly one condition where the move backfires; the draft delivers a full warning paragraph that reads more like a strategic advisory than a snippet-optimised answer, pushing the word count over limit.",
+    "The phrase 'apparently now serves' introduces hedging that is appropriate, but the closing conditional — 'may risk shrinking your top-of-funnel before your sales team can absorb the gap' — is a causal outcome claim without explicit data support, even though it is hedged with 'may'.",
+    "The section is not self-contained as a snippet: at 110 words, Google's featured snippet window (typically 40–60 words) would truncate before the backfire condition, defeating the stated goal.",
+    "The CTA 'Discover our solutions' appears in the closing warning sentence — it is listed in the evidence ctaRemoved array, so this is acceptable, but its use in a conditional warning sentence slightly blurs evidence context.",
+    "No explicit plain-language definition is provided for implied expert framing ('top-of-funnel') — while this is common language, the rubric requires flagging any expert term used without an immediate plain-language definition."
+  ],
+  "requiredFixes": [
+    "Cut the section to ≤75 words. Merge the buyer-shift and backfire condition into one tight sentence each. Remove the extended advisory closing paragraph entirely — that content belongs in a later analytical section.",
+    "Replace '## Quick Answer' with a searchable heading that includes the company name and a topic term, e.g. '## Expensya Homepage Positioning: Quick Answer' or '## Expensya Homepage Teardown: The One-Paragraph Answer'.",
+    "Keep the backfire condition but express it in ≤15 words as a single clause appended to the main finding, not as a standalone sentence-and-a-half warning block.",
+    "If 'top-of-funnel' is retained, add a bracketed plain-language gloss immediately after first use, e.g. 'top-of-funnel (the pool of new visitors who haven't yet decided to buy)'."
+  ],
+  "riskFlags": [
+    "'switching to demo-only CTAs may risk shrinking your top-of-funnel before your sales team can absorb the gap' — this is a causal outcome prediction attached to a generalised condition; no data from the evidence supports the magnitude or directionality of this effect for Expensya specifically.",
+    "'The page apparently now serves French-speaking finance teams who already know the category and are ready for a sales conversation' — 'already know the category' is an inference not directly stated in the evidence; the evidence says the CTA and language changed, not that visitor awareness level was measured."
+  ],
+  "seoNotes": [
+    "The draft does quote the exact H1 before and after in bold quotes, which is strong for featured snippet eligibility on the query 'Expensya homepage teardown'.",
+    "The heading '## Quick Answer' will not rank for any secondary keyword; replacing it with a keyword-bearing heading improves on-page SEO without harming UX.",
+    "At 110 words, the paragraph is too long to be selected as a Google featured snippet — trimming to 55–65 words significantly improves snippet capture probability.",
+    "The primary keyword 'Expensya homepage teardown' does not appear in this section; adding it naturally (e.g. in the heading or first clause) reinforces topical relevance for the article's target query."
+  ],
+  "rewriteInstruction": "Rewrite this section as a single paragraph of 55–70 words maximum. Lead with Expensya's name and the single biggest observable change (H1 language shift + CTA swap from 'Free trial' to 'Réservez une démo'). Name the new apparent audience in one clause (French-speaking finance teams, sales-assisted funnel). Close with exactly one backfire condition in ≤15 words (e.g. 'this risks collapsing trial volume if cold, category-unaware traffic still dominates'). Use bold quotes for all verbatim CTAs and headlines. Change the ## heading to include 'Expensya' and at least one of: homepage, positioning, CTA, or conversion. Do not add advisory commentary or generalised SaaS guidance — that belongs in later sections.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 16,
+    "scannability": 10,
+    "searchableHeadings": 2,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

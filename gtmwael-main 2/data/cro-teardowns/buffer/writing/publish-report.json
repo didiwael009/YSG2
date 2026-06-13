@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-12T20:15:12.192Z",
+  "publishedAt": "2026-04-06T10:00:00.000Z",
   "slug": "buffer",
   "dryRun": false,
   "forced": true,
@@ -9,12 +9,9 @@
     "seoPass": true,
     "seoScore": 87,
     "unsupportedClaims": [
-      "'visual sophistication score sat at 2 out of 5' — the evidence records this as a raw integer score (2) without a '/5' denominator label; the article upgrades this to a scored scale not explicitly stated as '/5' in the evidence",
-      "'visual sophistication score reached 3 out of 5' — same issue; the evidence gives integer values without a confirmed '/5' label",
-      "'visual sophistication score of 4 out of 5' — same issue",
-      "'Grow your audience on social and beyond' — this H2 phrase does not appear in the h2Added list in the evidence",
-      "'Build a following without draining your time' — this H2 phrase does not appear in the h2Added list in the evidence",
-      "'Pricing' listed as a removed navigation item — the evidence lists specific removed nav items and 'Pricing' is not among them"
+      "'Grow your audience on social and beyond' and 'Build a following without draining your time' — these H2 headings are not present in the compressed evidence h2Added list",
+      "'As Dunford describes in Obviously Awesome' — this is a third-party source not listed in the owned evidence sources and not validated by the compressed evidence",
+      "'making it a discovery filter (a signal that helps the right visitors self-select before they even click)' — this definitional framing attributed implicitly to Dunford is fine as labeled interpretation, but the Dunford citation itself references an external book not in the evidence or owned sources list"
     ]
   },
   "consistencyCheck": {
@@ -24,10 +21,10 @@
   },
   "blockedReasons": [
     "Final judge FAIL — score 81/100 (need ≥ 90)",
-    "6 unsupported claim(s): 'visual sophistication score sat at 2 out of 5' — the evidence records this as a raw integer score (2) without a '/5' denominator label; the article upgrades this to a scored scale not explicitly stated as '/5' in the evidence; 'visual sophistication score reached 3 out of 5' — same issue; the evidence gives integer values without a confirmed '/5' label"
+    "3 unsupported claim(s): 'Grow your audience on social and beyond' and 'Build a following without draining your time' — these H2 headings are not present in the compressed evidence h2Added list; 'As Dunford describes in Obviously Awesome' — this is a third-party source not listed in the owned evidence sources and not validated by the compressed evidence"
   ],
   "articlePath": "src/content/cro-teardown/articles/buffer.ts",
-  "indexUpdated": true,
+  "indexUpdated": false,
   "internalLinkSuggestionsAdded": [
     "/cro-teardowns/linear",
     "/cro-teardowns/lemlist",

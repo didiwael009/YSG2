@@ -1,20 +1,20 @@
 {
-  "publishedAt": "2026-06-12T17:39:16.004Z",
+  "publishedAt": "2026-02-12T10:17:00.000Z",
   "slug": "gong",
   "dryRun": false,
   "forced": true,
   "qualityGates": {
     "finalJudgePass": false,
-    "finalJudgeScore": 74,
+    "finalJudgeScore": 81,
     "seoPass": true,
-    "seoScore": 83,
+    "seoScore": 82,
     "unsupportedClaims": [
-      "'the navigation dropped \"What is RI?\" entirely' — the evidence lists nav items added and removed, but 'What is RI?' does not appear in the navRemoved list; it is not confirmed in the evidence",
-      "'Gong built an entire product category around \"Revenue Intelligence\" — then quietly removed it from the top of its own homepage' — 'quietly' implies deliberate concealment; no evidence supports this framing",
-      "'Gong built its early identity around a category it invented' — 'a category it largely invented' / 'it invented' is not supported by the evidence; the evidence describes category-definition language and '#1 revenue intelligence platform' but does not confirm Gong invented the category",
-      "'reportedly led to declines in net dollar retention' — the evidence says 'pressured Gong's per-seat pricing model and led to declines in net dollar retention'; the article strips 'reportedly' and presents this as confirmed fact in the business context section",
-      "'reaching a reported $7.25 billion valuation by mid-2021' — the evidence cites this valuation for the Series E; the article states it without the sourcing qualifier 'reportedly' in the body text, presenting it as a direct fact rather than a reported figure",
-      "The claim that named-VP CTAs were 'just occupying space' — this phrase does not appear verbatim but the framing that these CTAs were replaced because they were underperforming is implied without any click or conversion data in the evidence"
+      "'reportedly led to declines in net dollar retention' — net dollar retention is not present in the compressed evidence; the evidence says only 'pressured Gong's per-seat pricing model and reportedly led to declines in net dollar retention' which is sourced from businessContextResearch but uses the specific metric label 'net dollar retention' as a named metric — this is borderline; however the evidence does include this language verbatim in businessContextResearch so it is VALID",
+      "'reportedly $450M in funding' in the section heading — the evidence cites $200M Series D and $250M Series E separately, totalling $450M, so this arithmetic is directly supported",
+      "'surpassed $300 million ARR, reportedly growing 55%+ year-over-year' — this phrase is in businessContextResearch so it is valid, but the article does NOT cite this figure at all, so no penalty applies",
+      "'Gong reportedly conducted a ~$4.5 billion secondary transaction in early 2026' — this is in businessContextResearch but the article does not cite this figure; no penalty",
+      "The article states 'eight navigation items were removed and eight were added' — the evidence confirms navAdded: 8 and navRemoved: 8, so this is supported",
+      "No unsupported specific metrics, percentages, or conversion rates were found that are absent from the compressed evidence"
     ]
   },
   "consistencyCheck": {
@@ -25,8 +25,8 @@
     ]
   },
   "blockedReasons": [
-    "Final judge FAIL — score 74/100 (need ≥ 90)",
-    "6 unsupported claim(s): 'the navigation dropped \"What is RI?\" entirely' — the evidence lists nav items added and removed, but 'What is RI?' does not appear in the navRemoved list; it is not confirmed in the evidence; 'Gong built an entire product category around \"Revenue Intelligence\" — then quietly removed it from the top of its own homepage' — 'quietly' implies deliberate concealment; no evidence supports this framing"
+    "Final judge FAIL — score 81/100 (need ≥ 90)",
+    "6 unsupported claim(s): 'reportedly led to declines in net dollar retention' — net dollar retention is not present in the compressed evidence; the evidence says only 'pressured Gong's per-seat pricing model and reportedly led to declines in net dollar retention' which is sourced from businessContextResearch but uses the specific metric label 'net dollar retention' as a named metric — this is borderline; however the evidence does include this language verbatim in businessContextResearch so it is VALID; 'reportedly $450M in funding' in the section heading — the evidence cites $200M Series D and $250M Series E separately, totalling $450M, so this arithmetic is directly supported"
   ],
   "articlePath": "src/content/cro-teardown/articles/gong.ts",
   "indexUpdated": false,

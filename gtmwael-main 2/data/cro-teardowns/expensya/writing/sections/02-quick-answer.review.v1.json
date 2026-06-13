@@ -1,0 +1,40 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "The section goal requires naming 'the single biggest change' — the draft leads with the headline shift, which is defensible, but the CTA change from 'Free trial' to 'Réservez une démo' is arguably the more strategically significant shift and goes unmentioned, leaving the snippet incomplete.",
+    "The section does not name who the page previously served (English-speaking, multi-segment buyers across Small/Mid/Large) — the contrast between old and new audience is only half-stated, which weakens the snippet's completeness.",
+    "The backfire condition is present but partially generic: 'cold, English-language search traffic' and 'self-serve trial funnel' describe many SaaS companies, not uniquely Expensya's situation. It needs one Expensya-specific anchor to avoid feeling transplantable.",
+    "Word count is approximately 88 words — exceeds the 75-word cap stated in the section goal and the 45–75-word check requirement. This is a flag.",
+    "The opening sentence is long (approximately 38 words) and front-loads a structural description ('biggest homepage change was its primary headline, which shifted from...') rather than a finding or contrast. A more interesting entry point exists in the evidence.",
+    "The French H1 is quoted in bold quotes correctly, but no plain-language translation is provided inline — a reader unfamiliar with French cannot parse the quote without scrolling or inferring, which undermines the snippet's self-containedness.",
+    "The section heading (not shown in draft but implied as ## Quick Answer or similar) is not visible — cannot confirm it contains the company name or a searchable term. Scored conservatively."
+  ],
+  "requiredFixes": [
+    "Trim the section to ≤75 words. Cut or compress the backfire condition sentence — it is the longest and most generic part.",
+    "Add an inline plain-English translation of the French H1 immediately after the bold quote, e.g. **'Voici à quoi devrait ressembler la gestion des dépenses.'** ('Here is what expense management should look like') — the snippet must be self-contained for an English-speaking reader.",
+    "Name the CTA shift — the removal of **'Free trial'** and replacement with **'Réservez une démo'** — even in a single clause. The section goal requires 'the single biggest change' and the CTA swap is at least co-equal to the headline shift according to the evidence.",
+    "Make the backfire condition Expensya-specific: tie it to the free-trial-to-demo funnel switch explicitly, not just 'self-serve trial funnel' generically. Reference the specific CTAs removed (**'Free trial'**, **'Discover our solutions'**) to anchor the risk.",
+    "Rewrite the opening sentence to lead with the finding or contrast, not with a structural description. Example entry: the paradox that Expensya narrowed its audience while expanding its content architecture (14 sections added) is more interesting than 'the biggest change was the headline.'"
+  ],
+  "riskFlags": [
+    "'copying this move may collapse your top-of-funnel' — this is a causal outcome claim. It is appropriately hedged with 'may' and has an attached condition ('if your homepage still depends on cold, English-language search traffic'), so it clears the rubric's conditional requirement. However, 'collapse' is a strong word unsupported by outcome data — consider softening to 'risk shrinking' or 'likely reduce'.",
+    "The claim that the page 'now speaks to French-speaking finance teams who already know what expense management software is' is an inference from the headline and meta description change — it is reasonable but not directly stated in the evidence. It should be framed as an apparent or suggested shift, not a confirmed fact."
+  ],
+  "seoNotes": [
+    "The draft does not include a visible ## section heading in the provided text — if the heading is 'Quick Answer' or similar clever-only label, it will lose searchableHeadings points. The heading should contain 'Expensya' and a topic term such as 'homepage' or 'positioning'.",
+    "The French H1 quote, if indexed, may help this page appear in searches for the French version of Expensya's positioning — a minor multilingual SEO benefit.",
+    "The snippet structure (company + change + audience + backfire condition) is well-aligned with featured snippet eligibility, but the word count overage (≈88 words) may cause Google to truncate the snippet at the backfire condition, which is the highest-value sentence. Trimming to ≤75 words protects the full snippet from truncation."
+  ],
+  "rewriteInstruction": "Rewrite the section as a single paragraph of 65–75 words. Lead with a finding or contrast — not a structural description. Name both the headline shift (with an inline English translation of the French quote) and the CTA shift (removal of **'Free trial'**, addition of **'Réservez une démo'**) as co-equal changes. State who the page previously served (English-speaking, multi-segment buyers) and who it now apparently serves (French-speaking finance teams). Close with a backfire condition that references the specific CTA removal, not just 'self-serve funnel' generically. Every verbatim quote must remain in bold quotes.",
+  "dimensionScores": {
+    "evidenceAccuracy": 21,
+    "specificity": 11,
+    "plainLanguage": 17,
+    "scannability": 13,
+    "searchableHeadings": 5,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

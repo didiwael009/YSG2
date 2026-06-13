@@ -1,44 +1,68 @@
 {
   "slug": "agorapulse",
-  "section": "07-business-context",
+  "section": "02-quick-answer",
   "calls": [
+    {
+      "model": "claude-sonnet-4-6",
+      "role": "writer",
+      "inputTokens": 3462,
+      "outputTokens": 120,
+      "cacheReadTokens": 2490,
+      "cacheCreationTokens": 0,
+      "inputCostUsd": 0.011132999999999999,
+      "outputCostUsd": 0.0018,
+      "totalCostUsd": 0.012932999999999998,
+      "timestamp": "2026-06-13T00:36:09.100Z"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "role": "critic-v1",
+      "inputTokens": 3745,
+      "outputTokens": 899,
+      "cacheReadTokens": 1502,
+      "cacheCreationTokens": 0,
+      "inputCostUsd": 0.0116856,
+      "outputCostUsd": 0.013484999999999999,
+      "totalCostUsd": 0.0251706,
+      "timestamp": "2026-06-13T00:36:29.379Z"
+    },
     {
       "model": "claude-opus-4-8",
       "role": "cross-section",
-      "inputTokens": 4832,
-      "outputTokens": 4030,
+      "inputTokens": 5036,
+      "outputTokens": 4260,
       "cacheReadTokens": 0,
       "cacheCreationTokens": 0,
-      "inputCostUsd": 0.07248,
-      "outputCostUsd": 0.30224999999999996,
-      "totalCostUsd": 0.37472999999999995,
-      "timestamp": "2026-06-12T20:02:11.690Z"
+      "inputCostUsd": 0.07554,
+      "outputCostUsd": 0.3195,
+      "totalCostUsd": 0.39504,
+      "timestamp": "2026-06-13T00:37:12.860Z"
     },
     {
       "model": "claude-sonnet-4-6",
       "role": "final-judge",
-      "inputTokens": 9193,
-      "outputTokens": 1948,
-      "inputCostUsd": 0.027579,
-      "outputCostUsd": 0.029220000000000003,
-      "totalCostUsd": 0.056799,
-      "timestamp": "2026-06-12T20:02:53.180Z"
+      "inputTokens": 8576,
+      "outputTokens": 1073,
+      "inputCostUsd": 0.025728,
+      "outputCostUsd": 0.016094999999999998,
+      "totalCostUsd": 0.041823,
+      "timestamp": "2026-06-13T00:37:36.512Z"
     },
     {
       "model": "claude-haiku-4-5-20251001",
       "role": "seo-auditor",
-      "inputTokens": 3894,
-      "outputTokens": 1050,
-      "inputCostUsd": 0.0031152000000000003,
-      "outputCostUsd": 0.0042,
-      "totalCostUsd": 0.0073152,
-      "timestamp": "2026-06-12T20:03:07.527Z"
+      "inputTokens": 4034,
+      "outputTokens": 1396,
+      "inputCostUsd": 0.0032272000000000004,
+      "outputCostUsd": 0.005584,
+      "totalCostUsd": 0.008811200000000002,
+      "timestamp": "2026-06-13T00:37:53.950Z"
     }
   ],
-  "totalInputTokens": 17919,
-  "totalOutputTokens": 7028,
-  "totalCostUsd": 0.43884419999999996,
+  "totalInputTokens": 24853,
+  "totalOutputTokens": 7748,
+  "totalCostUsd": 0.48377780000000004,
   "budgetUsd": 3,
   "budgetExceeded": false,
-  "generatedAt": "2026-06-12T20:03:07.532Z"
+  "generatedAt": "2026-06-13T00:37:53.955Z"
 }
