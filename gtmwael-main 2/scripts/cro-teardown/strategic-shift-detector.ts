@@ -191,13 +191,26 @@ function buildUserPrompt(evidence: {
   ctaRemoved:       string[];
   navAdded:         string[];
   navRemoved:       string[];
+  researchSummary?: string;
 }): string {
+  const researchBlock = evidence.researchSummary
+    ? `── BUSINESS CONTEXT (real-world research — use to interpret the changes correctly) ──
+
+${evidence.researchSummary}
+
+Use this context so you read the page changes correctly. For example, if the company
+started as an agency or services business and became a software product, say so plainly
+in the thesis rather than treating the early page as a product page.
+
+`
+    : '';
+
   return `Identify the single strongest strategic shift for ${evidence.companyName}.
 
 COMPANY: ${evidence.companyName} (${evidence.companyUrl})
 PERIOD:  ${evidence.fromLabel} → ${evidence.toLabel}
 
-── OBSERVED CHANGES (facts — do not invent beyond this data) ──────────────────
+${researchBlock}── OBSERVED CHANGES (facts — do not invent beyond this data) ──────────────────
 
 H1:
   Old: ${evidence.oldH1 || '(no H1 found)'}
@@ -363,6 +376,35 @@ export async function runStrategicShiftDetector(
     newTitle = titleChange?.after  ?? '';
   }
 
+  // ── Business context research (optional, runs BEFORE this step in the pipeline) ──
+  // Gives the thesis detector real-world grounding — e.g. that the company began as
+  // an agency before becoming a SaaS — so it doesn't misread the page changes.
+  let researchSummary = '';
+  const researchPath = path.join(sectionEvidenceDir, 'business-context-research.json');
+  if (fs.existsSync(researchPath)) {
+    try {
+      const r = JSON.parse(fs.readFileSync(researchPath, 'utf-8')) as {
+        company_stage_start?: string;
+        company_stage_end?:   string;
+        key_events?:          Array<{ period?: string; type?: string; summary?: string }>;
+        category_context?:    string;
+        icp_evolution?:       string;
+        confidence_level?:    string;
+      };
+      const events = (r.key_events ?? [])
+        .slice(0, 6)
+        .map(e => `  • [${e.period ?? '?'}] ${e.type ?? 'event'}: ${e.summary ?? ''}`)
+        .join('\n');
+      researchSummary = [
+        `Company stage: ${r.company_stage_start ?? 'unknown'} → ${r.company_stage_end ?? 'unknown'}`,
+        r.category_context ? `Category context: ${r.category_context}` : '',
+        r.icp_evolution    ? `ICP evolution: ${r.icp_evolution}` : '',
+        events ? `Key business events:\n${events}` : '',
+        `(research confidence: ${r.confidence_level ?? 'unknown'})`,
+      ].filter(Boolean).join('\n');
+    } catch { /* ignore malformed research */ }
+  }
+
   const ds = pack.diffSummary;
   const evidenceInput = {
     companyName:       pack.companyName,
@@ -387,6 +429,7 @@ export async function runStrategicShiftDetector(
     ctaRemoved:        ds.ctaRemoved ?? [],
     navAdded:          ds.navAdded   ?? [],
     navRemoved:        ds.navRemoved ?? [],
+    researchSummary,
   };
 
   // ── LLM call ──────────────────────────────────────────────────────────────

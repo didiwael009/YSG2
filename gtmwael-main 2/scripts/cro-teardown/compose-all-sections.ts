@@ -345,9 +345,72 @@ async function main(): Promise<void> {
   if (cli.rerunFailed)    console.log(`  Rerun mode : enabled (max ${cli.maxRerunSections} sections)`);
   console.log(div + '\n');
 
+  // ── Layer 1.5: Visual screenshot analysis ─────────────────────────────────────
+  // Runs FIRST so visual context is available to the strategic shift detector.
+  // Analyzes first + last selected .webp screenshots via Claude vision.
+  // Output: section-evidence/visual-analysis.json
+  // Feeds: strategic-shift context, marketing cards Card 4, outline generator.
+  if (cli.mode !== 'draft' && !cli.onlySection && !cli.skipVisual) {
+    console.log(`\n${div}`);
+    console.log(`  Layer 1.5 — Visual screenshot analysis`);
+    try {
+      const visualLog = (msg: string): void => {
+        console.log(msg);
+        appendRunLog(logPath, { section: '_visual-analysis', step: msg, ok: true });
+      };
+      const visualResult = await runVisualAnalyzer({
+        slug:       cli.slug,
+        writingDir,
+        publicDir:  path.join(projectRoot, 'public'),
+        tracker,
+        force:      cli.force,
+        onLog:      visualLog,
+      });
+      if (visualResult.skipped) {
+        console.log(`  ↩ Skipping visual analysis — visual-analysis.json exists`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Visual analysis failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_visual-analysis', error: msg });
+      appendRunLog(logPath, { section: '_visual-analysis', step: 'VISUAL ANALYSIS ERROR', ok: false, detail: msg });
+    }
+  }
+
+  // ── Context researcher (business context web research) ─────────────────────────
+  // Runs SECOND — before Layer 3 — so the strategic shift detector has real business
+  // context (funding, pivots, category shifts) before it determines the thesis.
+  // Output: section-evidence/business-context-research.json
+  // Feeds: Layer 3 (strategic shift), business context section writer, outline generator.
+  if (cli.mode !== 'draft' && !cli.onlySection && !cli.skipResearch) {
+    console.log(`\n${div}`);
+    console.log(`  Context researcher — business context research`);
+    try {
+      const researchLog = (msg: string): void => {
+        console.log(msg);
+        appendRunLog(logPath, { section: '_context-research', step: msg, ok: true });
+      };
+      const researchResult = await runContextResearcher({
+        slug:       cli.slug,
+        writingDir,
+        tracker,
+        force:      cli.force,
+        onLog:      researchLog,
+      });
+      if (researchResult.skipped) {
+        console.log(`  ↩ Skipping context research — business-context-research.json exists`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : String(err);
+      console.error(`  ⚠ Context research failed (non-fatal): ${msg}`);
+      sectionErrors.push({ section: '_context-research', error: msg });
+      appendRunLog(logPath, { section: '_context-research', step: 'CONTEXT RESEARCH ERROR', ok: false, detail: msg });
+    }
+  }
+
   // ── Layer 3: Strategic shift detector ────────────────────────────────────────
-  // Runs before the section writer loop so all six sections share a common thesis.
-  // Output: section-evidence/strategic-shift.json
+  // Runs after visual analysis + context research so it has full business context
+  // before determining the thesis. Output: section-evidence/strategic-shift.json
   // Skipped in draft mode, single-section runs, and when file already exists (unless --force).
   if (cli.mode !== 'draft' && !cli.onlySection) {
     console.log(`\n${div}`);
@@ -459,67 +522,6 @@ async function main(): Promise<void> {
       sectionErrors.push({ section: '_seo-intent', error: msg });
       appendRunLog(logPath, { section: '_seo-intent', step: 'SEO INTENT ERROR', ok: false, detail: msg });
       // Non-fatal: section writers fall back to evidence-pack keywords as before.
-    }
-  }
-
-  // ── Layer 1.5: Visual screenshot analysis ─────────────────────────────────────
-  // Analyzes first + last selected .webp screenshots via Claude vision.
-  // Output: section-evidence/visual-analysis.json
-  // Feeds: strategic-shift context, marketing cards Card 4, outline generator.
-  if (cli.mode !== 'draft' && !cli.onlySection && !cli.skipVisual) {
-    console.log(`\n${div}`);
-    console.log(`  Layer 1.5 — Visual screenshot analysis`);
-    try {
-      const visualLog = (msg: string): void => {
-        console.log(msg);
-        appendRunLog(logPath, { section: '_visual-analysis', step: msg, ok: true });
-      };
-      const visualResult = await runVisualAnalyzer({
-        slug:       cli.slug,
-        writingDir,
-        publicDir:  path.join(projectRoot, 'public'),
-        tracker,
-        force:      cli.force,
-        onLog:      visualLog,
-      });
-      if (visualResult.skipped) {
-        console.log(`  ↩ Skipping visual analysis — visual-analysis.json exists`);
-      }
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
-      console.error(`  ⚠ Visual analysis failed (non-fatal): ${msg}`);
-      sectionErrors.push({ section: '_visual-analysis', error: msg });
-      appendRunLog(logPath, { section: '_visual-analysis', step: 'VISUAL ANALYSIS ERROR', ok: false, detail: msg });
-    }
-  }
-
-  // ── Context researcher (business context web research) ─────────────────────────
-  // Researches company events, funding, category context during the teardown period.
-  // Output: section-evidence/business-context-research.json
-  // Feeds: Layer 3 (strategic shift), business context section writer, outline generator.
-  if (cli.mode !== 'draft' && !cli.onlySection && !cli.skipResearch) {
-    console.log(`\n${div}`);
-    console.log(`  Context researcher — business context research`);
-    try {
-      const researchLog = (msg: string): void => {
-        console.log(msg);
-        appendRunLog(logPath, { section: '_context-research', step: msg, ok: true });
-      };
-      const researchResult = await runContextResearcher({
-        slug:       cli.slug,
-        writingDir,
-        tracker,
-        force:      cli.force,
-        onLog:      researchLog,
-      });
-      if (researchResult.skipped) {
-        console.log(`  ↩ Skipping context research — business-context-research.json exists`);
-      }
-    } catch (err) {
-      const msg = err instanceof Error ? err.message : String(err);
-      console.error(`  ⚠ Context research failed (non-fatal): ${msg}`);
-      sectionErrors.push({ section: '_context-research', error: msg });
-      appendRunLog(logPath, { section: '_context-research', step: 'CONTEXT RESEARCH ERROR', ok: false, detail: msg });
     }
   }
 
