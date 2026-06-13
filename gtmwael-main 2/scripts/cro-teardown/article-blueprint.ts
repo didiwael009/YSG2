@@ -214,11 +214,15 @@ function buildAnalysisBlocks(pack: EvidencePack): AnalysisBlock[] {
     const baselineAnnotations: string[] = [];
 
     if (fromH1) {
+      const h1IsBenefit = /grow|reach|get more|save time|easy|simple/i.test(fromH1);
+      const h1IsAgency  = /\bwe\b|\bour\b|agency|studio|\bpractice\b|hire us|design house|portfolio/i.test(fromH1);
       baselineAnnotations.push(
         `H1 opens with: "${fromH1}" — ` +
-        (/grow|reach|get more|save time|easy|simple/i.test(fromH1)
+        (h1IsBenefit
           ? 'accessible benefit language aimed at a broad audience.'
-          : 'direct product statement.'),
+          : h1IsAgency
+            ? 'a first-person identity statement, not a product or outcome claim.'
+            : 'a direct product statement.'),
       );
     }
 
@@ -231,11 +235,16 @@ function buildAnalysisBlocks(pack: EvidencePack): AnalysisBlock[] {
 
     const fromNavSample = diff.fromText.navLinks?.slice(0, 5).filter(s => s.length <= 35) ?? [];
     if (fromNavSample.length > 0) {
+      const navJoined   = fromNavSample.join(' ');
+      const navWorkflow = /publish|engage|monitor|advertise|analyze/i.test(navJoined);
+      const navAgency   = /services|hire|our work|portfolio|disciplines|about us|case stud/i.test(navJoined);
       baselineAnnotations.push(
         `Navigation includes: "${fromNavSample.slice(0, 4).join('", "')}" — ` +
-        (/publish|engage|monitor|advertise|analyze/i.test(fromNavSample.join(' '))
+        (navWorkflow
           ? 'workflow-action framing.'
-          : 'product category framing.'),
+          : navAgency
+            ? 'agency-service framing.'
+            : 'product category framing.'),
       );
     }
 
@@ -253,7 +262,13 @@ function buildAnalysisBlocks(pack: EvidencePack): AnalysisBlock[] {
       period: fromLabel,
       screenshotPath: fromSnap.screenshotPath,
       heading: fromH1
-        ? `The original: ${/grow|reach|get more/i.test(fromH1) ? 'growth-outcome' : 'product-led'} messaging`
+        ? `The original: ${
+            /grow|reach|get more/i.test(fromH1)
+              ? 'growth-outcome'
+              : /\bwe\b|\bour\b|agency|studio|\bpractice\b|hire us|design house|portfolio/i.test(fromH1)
+                ? 'agency identity'
+                : 'product-led'
+          } messaging`
         : `The original state — ${fromLabel}`,
       annotations: baselineAnnotations,
     });

@@ -1437,23 +1437,23 @@ export const responsiveImageManifest = {
   },
   "2024-07": {
     "width": 1440,
-    "height": 13174,
-    "originalBytes": 557798,
+    "height": 11891,
+    "originalBytes": 628494,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2024-07-320.webp",
-        "bytes": 35764
+        "bytes": 42952
       },
       {
         "width": 640,
         "src": "/responsive/2024-07-640.webp",
-        "bytes": 111836
+        "bytes": 119286
       },
       {
         "width": 1024,
         "src": "/responsive/2024-07-1024.webp",
-        "bytes": 190454
+        "bytes": 206396
       }
     ]
   },
@@ -1613,23 +1613,23 @@ export const responsiveImageManifest = {
   },
   "2022-07": {
     "width": 1440,
-    "height": 9572,
-    "originalBytes": 484132,
+    "height": 11635,
+    "originalBytes": 518788,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2022-07-320.webp",
-        "bytes": 35220
+        "bytes": 38216
       },
       {
         "width": 640,
         "src": "/responsive/2022-07-640.webp",
-        "bytes": 106776
+        "bytes": 114562
       },
       {
         "width": 1024,
         "src": "/responsive/2022-07-1024.webp",
-        "bytes": 176974
+        "bytes": 189236
       }
     ]
   },
@@ -1701,23 +1701,23 @@ export const responsiveImageManifest = {
   },
   "2025-01": {
     "width": 1440,
-    "height": 13246,
-    "originalBytes": 557126,
+    "height": 11852,
+    "originalBytes": 633394,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2025-01-320.webp",
-        "bytes": 35850
+        "bytes": 42484
       },
       {
         "width": 640,
         "src": "/responsive/2025-01-640.webp",
-        "bytes": 111884
+        "bytes": 118956
       },
       {
         "width": 1024,
         "src": "/responsive/2025-01-1024.webp",
-        "bytes": 191166
+        "bytes": 207928
       }
     ]
   },
@@ -1745,23 +1745,23 @@ export const responsiveImageManifest = {
   },
   "2023-01": {
     "width": 1440,
-    "height": 12539,
-    "originalBytes": 530512,
+    "height": 11960,
+    "originalBytes": 574022,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2023-01-320.webp",
-        "bytes": 33014
+        "bytes": 42056
       },
       {
         "width": 640,
         "src": "/responsive/2023-01-640.webp",
-        "bytes": 90102
+        "bytes": 119080
       },
       {
         "width": 1024,
         "src": "/responsive/2023-01-1024.webp",
-        "bytes": 142022
+        "bytes": 202790
       }
     ]
   },

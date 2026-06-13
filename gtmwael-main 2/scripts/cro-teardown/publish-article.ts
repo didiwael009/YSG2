@@ -183,8 +183,8 @@ function generateArticleTs(opts: {
  * ${varName}.ts — Phase 4F published content file.
  *
  * Published    : ${publishedAt}
- * Final judge  : ${finalJudgeScore}/100 ✓
- * SEO score    : ${seoScore}/100 ✓
+ * Final judge  : ${finalJudgeScore}/100 ${finalJudgeScore >= 90 ? '✓' : '✗'}
+ * SEO score    : ${seoScore}/100 ${seoScore >= 80 ? '✓' : '✗'}
  *
  * Source files used:
  *   data/cro-teardowns/${slug}/writing/generated-article-data.json
