@@ -105,7 +105,8 @@ These are legitimate references. Do **not** flag them as hallucinations.
 - **HANDOFF reconciled**: article count 13→17, false SECTION_ORDER claim struck through with correction, judge-V5 + owned-source issues marked resolved in known-issues table.
 - **Hygiene**: discarded abandoned happi.com half-run (27 untracked files, user decision); deleted dead code `draft.ts` + `compose-section.ts` (orphaned, recoverable via git); removed superseded `PLAN-pipeline-optimization.md` (replaced by `AUDIT-2026-06-13.md`).
 - **Deferred**: `02-quick-answer` left as documented stub (user decision — not implemented, see known-issues).
-- **Not done** (remaining audit backlog): D2 businessContext backfill for 9 V1 articles; B2 SECTION_ORDER renumbering.
+- **D2 DONE**: backfilled businessContext into all 9 V1 articles (apollo, clay, crisp, intercom, lemlist, linear, shopify, stripe, vercel) — all 17 teardowns now render a business-context block. Added standalone CLI `cro-teardown:business-context` (generate-business-context.ts was the only Layer generator missing one). Per-article blast radius was +businessContext only; judge 92-94. Verified rendering in SSR HTML.
+- **B2 SKIPPED (justified)**: renumbering SECTION_ORDER IDs would touch 410 data files + 10 source files for cosmetic gain, zero user benefit. Not worth it. Audit backlog now clear.
 
 ### 2026-06-13 (later) — Full system audit + owned-source fix
 
