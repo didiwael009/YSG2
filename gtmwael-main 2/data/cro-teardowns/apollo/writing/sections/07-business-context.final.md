@@ -1,0 +1,7 @@
+## The business context behind apollo's redesign
+
+Apollo entered the period as a player in the crowded sales engagement and intelligence category, competing against established platforms on promises of pipeline growth and team-wide revenue acceleration. Its original page title — **"Sales Revenue & Engagement Acceleration Platform"** — suggests it was positioning against tools that offered either data or engagement sequences, but rarely both in one place.
+
+By the mid-period, navigation shifted from feature taxonomy (**"Database · Targeting · Scoring Engine · Sequences"**) toward job-to-be-done framing (**"Outbound — Turn hours of prospecting into minutes"** and **"Inbound — Qualify and act on inbound leads in seconds"**). The simultaneous addition of **"Sign up for free"** and OAuth CTAs alongside **"Get a demo"** points to a dual-funnel expansion, consistent with a product-led growth layer being added to an existing sales-led motion.
+
+This evolution maps to a broad SaaS pattern: incumbent tools retooling as AI-native platforms once "AI" became a search-driven buying signal rather than a differentiator. Apollo's H1 shift to **"The AI sales platform for smarter, faster revenue growth"** reflects that race to own category search terms. For SaaS teams in this space, the practical implication is that generic AI framing only compounds distribution advantages already in place — it rarely creates them.

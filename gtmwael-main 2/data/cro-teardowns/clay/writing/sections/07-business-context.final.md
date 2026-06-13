@@ -1,0 +1,7 @@
+## Why Clay killed the template library that made it go viral
+
+Clay entered the sales intelligence and prospecting automation category around 2021, when the market was crowded with point solutions for data enrichment, outreach sequencing, and lead sourcing. The original page title **"This spreadsheet fills itself"** positioned Clay against manual workflows rather than against established vendors — suggesting early distribution relied on practitioner curiosity rather than competing directly with enterprise data platforms.
+
+By the mid-period, the evidence points to a competitive environment where buyers began evaluating consolidated GTM data infrastructure rather than single-purpose tools. The shift to **"Access 150+ premium data sources and AI research agents in one platform"** and the addition of **"Backed by enterprise-grade security and scale"** suggests Clay moved to compete against data vendors and revenue operations platforms, not spreadsheet alternatives.
+
+This evolution is consistent with the broader SaaS pattern of PLG-to-enterprise expansion, where AI capabilities became table stakes for justifying platform pricing to GTM leadership. The addition of **"Read more about Clay Enterprise"** as a navigation endpoint points to this exact motion. For SaaS teams in this space, it suggests that AI feature parity alone may not differentiate — enterprise governance and data breadth claims are becoming the new moat.

@@ -1,0 +1,7 @@
+## The business context behind Crisp's redesign
+
+In mid-2022, Crisp competed in a crowded business messaging category targeting startups and SMBs — a space where tools like Intercom and Drift had already staked large claims. Crisp's differentiation was emotional rather than technical: **"Give your customer experience a human touch"** positioned it as the warmer, more accessible alternative for smaller teams evaluating all-in-one support platforms.
+
+By 2026, the evidence suggests Crisp read a category-level shift in buyer intent. The page title change from **"#1 Business Messaging Platform For Startups & SMB's"** to **"The AI Customer Support Platform for Every Business"** points to both audience broadening and category narrowing simultaneously. Adding **"Build your perfect AI Agent in 4 steps"** as a primary section heading is consistent with AI agent deployment becoming the dominant buyer entry point.
+
+This maps to a recognizable pattern in SaaS: when a category develops a dominant AI use case, challengers often pivot to own that specific AI subcategory rather than defend a broader platform position. For SaaS teams building in messaging or support tooling today, this suggests that **"AI [category]"** search intent may now be large enough to justify dedicated positioning — but only if the underlying product can fulfill that promise at activation.

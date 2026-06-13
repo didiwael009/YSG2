@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-12T17:39:14.122Z",
+  "publishedAt": "2026-05-12T12:04:00.000Z",
   "slug": "intercom",
   "dryRun": false,
   "forced": false,
@@ -21,7 +21,7 @@
   "internalLinkSuggestionsAdded": [
     "/cro-teardowns/hootsuite",
     "/cro-teardowns/expensya",
-    "/cro-teardowns/linear"
+    "/cro-teardowns/buffer"
   ],
   "fieldsOverridden": [
     "metaTitle"

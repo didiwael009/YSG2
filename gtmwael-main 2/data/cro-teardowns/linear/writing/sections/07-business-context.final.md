@@ -1,0 +1,7 @@
+## The business context behind Linear's redesign
+
+Linear entered the project management and issue-tracking market competing against established tools like Jira and GitHub Issues. In 2020, that category rewarded challengers who offered a faster, more elegant experience — the competitive logic was tool-level differentiation. Linear's early positioning as **"The issue tracking tool you'll enjoy using"** reflects a market where UX quality alone could win enterprise developers.
+
+The product's evolution suggests a deliberate category exit. Replacing **"issue tracking tool"** with **"product development system for teams and agents"** points to repositioning away from head-to-head UX comparisons. Section headings shifting from **"Built to be lightning fast"** to **"Make product operations self-driving"** and **"Review PRs and agent output"** is consistent with targeting buyers who already assume AI agents participate in their development workflow.
+
+This maps to a broader SaaS pattern: incumbents own functional categories, so challengers claim emergent ones before competitors arrive. Linear's move is consistent with the AI-native platform grab happening across productivity software in 2025–2026. For SaaS teams building in this space, the practical implication is that waiting for AI workflows to mature before repositioning may mean ceding category language to whoever moves first.

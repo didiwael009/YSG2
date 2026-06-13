@@ -18,6 +18,7 @@
 
 import * as fs   from 'node:fs';
 import * as path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 import { callLLM }                        from './llm/anthropic-client.js';
 import { getModel }                        from './llm/model-router.js';
@@ -251,4 +252,52 @@ export async function generateBusinessContext(
     generatedAt: new Date().toISOString(),
     skipped: false,
   };
+}
+
+// ─── CLI ──────────────────────────────────────────────────────────────────────
+// Standalone entry so business context can be backfilled into older articles
+// without a full recompose. Mirrors outline-generator.ts / context-researcher.ts.
+
+const isMain = process.argv[1] &&
+  path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url));
+
+if (isMain) {
+  const args  = process.argv.slice(2);
+  let slug    = '';
+  let force   = false;
+
+  for (let i = 0; i < args.length; i++) {
+    if (args[i] === '--slug' && args[i + 1]) { slug = args[++i]; }
+    else if (args[i] === '--force') { force = true; }
+  }
+
+  if (!slug) {
+    console.error('Usage: generate-business-context.ts --slug <slug> [--force]');
+    process.exit(1);
+  }
+
+  const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+  const writingDir  = path.join(projectRoot, 'data', 'cro-teardowns', slug, 'writing');
+  const sectionsDir = path.join(writingDir, 'sections');
+
+  if (!fs.existsSync(writingDir)) {
+    console.error(`❌  Writing directory not found: ${writingDir}`);
+    process.exit(1);
+  }
+  fs.mkdirSync(sectionsDir, { recursive: true });
+
+  const tracker = new CostTracker();
+  const onLog = (step: string, ok: boolean, detail?: string) =>
+    console.log(`${ok ? '✓' : '✗'} ${step}${detail ? ` — ${detail}` : ''}`);
+
+  generateBusinessContext({ slug, writingDir, sectionsDir, tracker, force, onLog })
+    .then(r => {
+      if (r.skipped) {
+        console.log(`⏭  Skipped (cached). Use --force to regenerate.`);
+      } else {
+        console.log(`✅  Business context written → ${path.relative(projectRoot, r.outputPath)}`);
+        console.log(`   Cost: $${r.costUsd.toFixed(4)}`);
+      }
+    })
+    .catch(err => { console.error('❌', err); process.exit(1); });
 }

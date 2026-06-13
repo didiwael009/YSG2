@@ -1,5 +1,5 @@
 {
-  "publishedAt": "2026-06-12T17:39:13.879Z",
+  "publishedAt": "2026-06-08T11:56:00.000Z",
   "slug": "stripe",
   "dryRun": false,
   "forced": false,
@@ -21,7 +21,7 @@
   "internalLinkSuggestionsAdded": [
     "/cro-teardowns/hootsuite",
     "/cro-teardowns/expensya",
-    "/cro-teardowns/linear"
+    "/cro-teardowns/buffer"
   ],
   "fieldsOverridden": [
     "metaTitle"

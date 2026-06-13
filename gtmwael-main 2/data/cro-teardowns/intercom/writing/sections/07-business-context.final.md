@@ -1,0 +1,7 @@
+## The business context behind Intercom's redesign
+
+Intercom entered 2023 competing in a crowded customer engagement market spanning support, marketing, and sales tooling. Its page title then read **"Making Internet Business Personal"** — brand philosophy language consistent with a platform selling across multiple buyer personas. The competitive set included multi-channel engagement tools and traditional helpdesks, with no single "AI Agent" category yet visible in the evidence.
+
+Between 2023 and 2026, the product and messaging narrowed significantly. Navigation items like **"Custom Bots"**, **"Mobile apps"**, and **"E-commerce"** disappeared, replaced by a single branded product: **"Fin"**. Section headings dropped **"marketing and sales"** entirely. This points to a deliberate surface-area reduction — consistent with consolidating around one flagship capability rather than competing as a broad toolkit.
+
+The broader pattern is classic AI-era category creation: incumbents reframe existing products as purpose-built for a new architectural reality rather than competing on features. Intercom's shift from **"personalized conversations"** to **"the only helpdesk with a natively integrated AI Agent"** maps directly to this playbook. For SaaS teams building now, this suggests "only" claims require defensible architectural differentiation — not feature parity with an AI wrapper.

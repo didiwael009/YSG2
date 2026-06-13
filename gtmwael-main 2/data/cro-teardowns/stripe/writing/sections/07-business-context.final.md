@@ -1,0 +1,7 @@
+## The business context behind Stripe's redesign
+
+During this period, Stripe was competing in a payments infrastructure category that had matured significantly, with alternatives like Adyen, Braintree, and Checkout.com narrowing the developer-experience gap that Stripe had historically owned. The original positioning — **"Payment Processing Platform for the Internet"** — reflected a market where being the best API for developers was a sufficient competitive moat.
+
+Changes in section headings point to a deliberate de-emphasis of developer identity. Removing **"Designed for developers"** and adding **"Flexible solutions for every business model"** suggests Stripe was pursuing buyers with broader financial operations authority. The navigation overhaul — replacing product links like **"Checkout"** and **"Radar"** with audience paths like **"Stripe for enterprises"** — is consistent with moving upmarket toward larger contract values.
+
+This evolution maps to a recognizable SaaS pattern: platform consolidation, where a category leader trades bottom-funnel technical precision for top-funnel executive relevance once brand recognition is sufficient to carry the load. For SaaS teams in this space, it suggests that generic "financial infrastructure" framing only works when your name already answers the credibility question before the visitor reads the headline.

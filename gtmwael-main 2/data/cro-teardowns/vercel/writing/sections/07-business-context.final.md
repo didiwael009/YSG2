@@ -1,0 +1,7 @@
+## The business context behind Vercel's redesign
+
+Vercel entered the five-year window as a frontend deployment platform competing in a crowded developer infrastructure market alongside Netlify, AWS Amplify, and similar services. Its positioning centered on the developer workflow loop captured by **"Develop. Preview. Ship."** — shorthand for a CI/CD-adjacent value proposition aimed squarely at frontend engineering teams building conventional web projects.
+
+The shift to **"Build and deploy on the AI Cloud"** and the updated meta description — **"frameworks, workflows, and infrastructure to build a faster, more personalized web"** — suggests the competitive frame expanded beyond deployment speed. Dropping the **"best frontend teams"** qualifier from the page title points to a broader intended audience, consistent with targeting platform buyers rather than individual developers alone.
+
+This maps to a pattern visible across developer tooling: the AI infrastructure pivot, where hosting and deployment vendors reframe their platforms as AI-native runtimes to capture spend shifting toward inference workloads and personalization pipelines. For SaaS teams building in this space, the pattern suggests that positioning around workflow alone is increasingly insufficient without an explicit AI infrastructure narrative.

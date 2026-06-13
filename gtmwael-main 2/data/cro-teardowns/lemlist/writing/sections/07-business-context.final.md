@@ -1,0 +1,7 @@
+## The business context behind lemlist's redesign
+
+lemlist entered the cold email tools market in 2019 as a crowded, feature-competitive space where point solutions competed on ease of use and reply rates. Its early positioning — **"Send cold emails that get replies"** — reflects a market where individual sales reps and small teams were the primary buyers, and winning meant promising fast, measurable outcomes faster than rivals.
+
+The homepage evolution points to a significant product expansion. Navigation shifted from **"Product · Features · Success stories · Pricing"** to a capability inventory listing **"650 M+ Lead Database · Multichannel Sequences · LinkedIn Prospecting · In-app Calling · SMS Campaigns · WhatsApp Prospecting"**. Added demo CTAs alongside a lengthened trial period suggests lemlist began targeting sales leaders evaluating platforms, not practitioners seeking a quick setup.
+
+This trajectory is consistent with the broader SaaS pattern of AI-era platform consolidation, where point-solution vendors reposition as orchestration infrastructure before larger CRMs absorb their category. The new H1 — **"The AI Outbound Platform for Relevant Outreach at Every Scale"** — names that pattern directly. For SaaS teams in adjacent outreach categories, this signals that single-channel positioning may increasingly struggle to justify standalone pricing against expanding platform suites.
