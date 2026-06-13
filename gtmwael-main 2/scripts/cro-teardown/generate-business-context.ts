@@ -138,7 +138,7 @@ function loadEvidence(writingDir: string, slug: string): Evidence {
   for (const src of ['messaging', 'summary-cards', 'strategic-shift']) {
     const p = path.join(evDir, `${src}.json`);
     if (fs.existsSync(p)) {
-      try { evidence[src] = JSON.parse(fs.readFileSync(p, 'utf-8')); } catch {}
+      try { evidence[src] = JSON.parse(fs.readFileSync(p, 'utf-8')); } catch { /* skip malformed evidence file */ }
     }
   }
   return evidence;

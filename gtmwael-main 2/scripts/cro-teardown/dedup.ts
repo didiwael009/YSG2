@@ -1,4 +1,4 @@
-// @ts-ignore — sharp is a devDependency without bundled types in this project
+// @ts-expect-error — sharp is a devDependency without bundled types in this project
 import sharp from 'sharp';
 
 const FP_SIZE = 32; // 32×32 = 1024 grayscale values per image

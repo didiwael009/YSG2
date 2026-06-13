@@ -253,7 +253,7 @@ function appendRunLog(
 ): void {
   let existing: unknown[] = [];
   if (fs.existsSync(logPath)) {
-    try { existing = JSON.parse(fs.readFileSync(logPath, 'utf-8')) as unknown[]; } catch {}
+    try { existing = JSON.parse(fs.readFileSync(logPath, 'utf-8')) as unknown[]; } catch { /* start fresh on corrupt log */ }
   }
   existing.push({ ...entry, ts: new Date().toISOString() });
   fs.writeFileSync(logPath, JSON.stringify(existing, null, 2), 'utf-8');

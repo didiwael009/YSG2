@@ -185,7 +185,7 @@ async function main() {
 
   let screenshotsSaved = 0;
   let capturesFailed = 0;
-  let capturedRecords: SnapshotRecord[] = [];
+  const capturedRecords: SnapshotRecord[] = [];
 
   try {
     if (concurrency === 1) {

@@ -1,7 +1,7 @@
 import * as path from 'node:path';
 import * as fs from 'node:fs';
 import type { Browser, BrowserContext } from 'playwright';
-// @ts-ignore — sharp is a devDependency without bundled types in this project
+// @ts-expect-error — sharp is a devDependency without bundled types in this project
 import sharp from 'sharp';
 import { createContext } from './utils/browser.js';
 import { saveJson, saveText } from './utils/files.js';

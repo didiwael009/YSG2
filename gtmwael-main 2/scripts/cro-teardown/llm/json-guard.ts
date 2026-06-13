@@ -45,7 +45,7 @@ function extractJsonString(text: string): string | null {
   try {
     JSON.parse(text.trim());
     return text.trim();
-  } catch {}
+  } catch { /* probe — invalid JSON, try next strategy */ }
 
   // 2. Extract from ```json ... ``` or ``` ... ``` code block
   const blockMatch = text.match(/```(?:json)?\s*\n?([\s\S]*?)\n?```/);
@@ -53,7 +53,7 @@ function extractJsonString(text: string): string | null {
     try {
       JSON.parse(blockMatch[1].trim());
       return blockMatch[1].trim();
-    } catch {}
+    } catch { /* probe */ }
   }
 
   // 3. Find the outermost { ... } span
@@ -64,7 +64,7 @@ function extractJsonString(text: string): string | null {
     try {
       JSON.parse(candidate);
       return candidate;
-    } catch {}
+    } catch { /* probe */ }
   }
 
   return null;

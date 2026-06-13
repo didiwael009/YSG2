@@ -67,14 +67,14 @@ export interface SeoAuditResult {
 // ─── JSON extractor ───────────────────────────────────────────────────────────
 
 function extractJson(text: string): string | null {
-  try { JSON.parse(text.trim()); return text.trim(); } catch {}
+  try { JSON.parse(text.trim()); return text.trim(); } catch { /* probe */ }
   const block = text.match(/```(?:json)?\s*\n?([\s\S]*?)\n?```/);
-  if (block) { try { JSON.parse(block[1].trim()); return block[1].trim(); } catch {} }
+  if (block) { try { JSON.parse(block[1].trim()); return block[1].trim(); } catch { /* probe */ } }
   const first = text.indexOf('{');
   const last  = text.lastIndexOf('}');
   if (first !== -1 && last > first) {
     const c = text.slice(first, last + 1);
-    try { JSON.parse(c); return c; } catch {}
+    try { JSON.parse(c); return c; } catch { /* probe */ }
   }
   return null;
 }
