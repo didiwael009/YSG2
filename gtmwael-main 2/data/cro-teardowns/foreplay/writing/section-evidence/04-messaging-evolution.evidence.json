@@ -1,0 +1,198 @@
+{
+  "sectionId": "04-messaging-evolution",
+  "companyName": "Foreplay",
+  "companyUrl": "foreplay.co",
+  "articleTitle": "Foreplay Homepage Teardown: Jan 2021 to Jan 2026",
+  "h1": "How Foreplay rewrote its homepage over 5 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Jan 2026",
+  "snapshotCount": 9,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 9,
+    "h2Added": 8,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Foreplay homepage teardown",
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "We practice dope design & Sell Sh*t Online",
+      "after": "The Complete Winning Ad Workflow",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Foreplay is a D2C creative advertising agency. We help brands grow through products, services and software.",
+      "after": "From advertising inspiration to creative analytics. The best way to save ads from TikTok, and Facebook Ad Library, organize and share with your team.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Foreplay | D2C Creative Advertising Agency",
+      "after": "Foreplay | The Complete Winning Ad Workflow - Save ads from Ad Libraries"
+    }
+  ],
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2021 → Jan 2026",
+      "note": "9 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "8 added · 0 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 4 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "strategic-shift": {
+    "central_thesis": "Foreplay abandoned its identity as a D2C creative advertising agency offering bespoke client work and repositioned as a self-serve SaaS platform owning the 'complete winning ad workflow' category — replacing portfolio-style proof of craft with a multi-product suite narrative and trial-first conversion logic.",
+    "old_positioning_frame": "A creative agency that does dope design and sells products online for D2C brand clients, discoverable via a portfolio of named client work (Strike, OwnersBox, Healthy Crunch) and hireable on a services basis.",
+    "new_positioning_frame": "A complete end-to-end ad workflow platform — covering inspiration, competitive research, creative analytics, briefing, and reporting — built for in-house performance and creative teams who want to find, save, analyze, and replicate winning ads at scale.",
+    "buyer_shift": "D2C brand founders and marketing managers seeking an agency to outsource creative production → in-house performance marketers, creative strategists, and media buyers at e-commerce, retail, and agency teams who want a self-service toolset to systematize their ad research and creative process.",
+    "funnel_shift": "Bottom-of-funnel 'hire us' conversion page serving prospects who had already evaluated the agency and were ready to purchase a service → top-to-mid-funnel product-led growth entry point designed to capture exploratory users with a free trial and nurture them through product discovery across a multi-feature suite.",
+    "main_evidence": [
+      {
+        "element": "H1",
+        "old": "We practice dope design & Sell Sh*t Online",
+        "new": "The Complete Winning Ad Workflow",
+        "meaning": "The shift from a first-person agency voice to a category-defining product label suggests Foreplay is no longer selling craft or personality but attempting to own a workflow category — signals a move from relationship-based service selling to category-ownership SaaS positioning."
+      },
+      {
+        "element": "Page title",
+        "old": "Foreplay | D2C Creative Advertising Agency",
+        "new": "Foreplay | The Complete Winning Ad Workflow - Save ads from Ad Libraries",
+        "meaning": "Removing 'Agency' from the title and appending a specific use-case descriptor ('Save ads from Ad Libraries') may indicate a deliberate SEO and perception shift — signals the company no longer wants to be discovered or evaluated as a service provider, and is instead targeting high-intent tool-seekers with a concrete job-to-be-done."
+      },
+      {
+        "element": "Navigation",
+        "old": "Work · Services · Play Haus · Snipe, save, tag and share your competitors ads. · Hire Us",
+        "new": "Swipe FileSave & share creative inspiration. · DiscoveryAd search engine with over 100M ads. · LensAdvertising analytics for creative teams. · BriefsTurn inspiration into actionable briefs. · Chrome ExtensionSave ads from anywhere. · Mobile AppSave ads from your phone. · APILeverage Foreplay data. · E-Commerce & Retail",
+        "meaning": "The complete removal of 'Work', 'Services', and 'Hire Us' nav items — replaced by a multi-product suite with named features (Swipe File, Discovery, Lens, Briefs) and audience verticals (E-Commerce & Retail, Agencies) — is consistent with a full pivot from agency to SaaS, and points to a strategy of expanding surface area across buyer roles rather than funneling visitors toward a single hire-us conversion."
+      },
+      {
+        "element": "Primary CTAs",
+        "old": "View Project · Continue to Checkout · AdTrax · A time-saving music library for ads and micro content. · Increase your ROAS with measurably better video ads. · Snipe, save, tag and share your competitors ads.",
+        "new": "Start Free Trial · Get Free Trial · Learn More · Build & Share Reports · Compare Winning Themes · Start For Free",
+        "meaning": "Removing 'Continue to Checkout' and 'View Project' — which suggest a transactional service purchase and portfolio browsing — in favor of repeated 'Start Free Trial' and 'Start For Free' CTAs suggests a shift to a product-led growth motion where low-friction trial entry is the primary conversion goal, not a sales-assisted or agency proposal process."
+      },
+      {
+        "element": "Meta description",
+        "old": "Foreplay is a D2C creative advertising agency. We help brands grow through products, services and software.",
+        "new": "From advertising inspiration to creative analytics. The best way to save ads from TikTok, and Facebook Ad Library, organize and share with your team.",
+        "meaning": "The old description positions the company as a service entity across three broad offerings; the new description names two specific third-party platforms (TikTok, Facebook Ad Library) and two concrete actions (save, organize and share) — signals a shift toward tool-utility messaging aimed at searchers with an active, specific workflow problem rather than brand-growth buyers evaluating agency partners."
+      },
+      {
+        "element": "Section headings",
+        "old": "(none recorded)",
+        "new": "Your new secret weapon for ads · Spark creative genius and crush competitors. · Identify winning patterns and replicate success. · Bringing performance & creative teams together. · Beautifully present wins and opportunities",
+        "meaning": "The emergence of outcome-oriented and competitive-framing section headings — particularly 'Identify winning patterns and replicate success' and 'Bringing performance & creative teams together' — suggests the page is now structured to walk multiple buyer personas (performance marketers, creative directors) through a benefit narrative, consistent with a SaaS homepage architecture rather than an agency capabilities page."
+      }
+    ],
+    "copy_this_if": "Your brand name already has meaningful organic search volume for a specific tool-based use case (e.g. 'save Facebook ads', 'ad inspiration tool') even though your homepage still leads with agency or services framing — meaning the market is pulling you toward product before your positioning has caught up.",
+    "do_not_copy_this_if": "Your recurring revenue from the SaaS product has not yet exceeded your services revenue, because removing agency social proof (named client work, portfolio, 'Hire Us') before the product can carry acquisition on its own may eliminate your highest-converting inbound channel before the replacement is validated.",
+    "safer_version_for_early_stage_saas": "Keep the existing agency or portfolio navigation intact but add a parallel 'Try the Tool Free' CTA in the hero alongside your existing primary CTA — A/B test whether the trial entry point generates more qualified pipeline than the 'Hire Us' path without dismantling your current conversion architecture.",
+    "risk_if_copied": "Brands that replicate the 'Complete Workflow' category-ownership framing without having all named product features at parity risk visitors clicking into empty or underdeveloped product areas (e.g. an 'Analytics' nav item with thin functionality), producing a trust collapse that is harder to recover from than modest positioning — particularly damaging if competitors have already built stronger feature depth in one of the claimed workflow stages.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-13T08:47:48.374Z",
+    "model": "claude-sonnet-4-6",
+    "costUsd": 0.030405
+  },
+  "seo-intent": {
+    "primary_keyword": "Foreplay homepage teardown",
+    "primary_intent": "informational",
+    "audience_description": "A SaaS founder, growth marketer, or product strategist who is considering a major repositioning from services/agency to self-serve SaaS, and wants to understand how Foreplay executed this transition — specifically how they signaled the shift to their existing audience without losing credibility.",
+    "recommended_h1_format": "How [Company] Pivoted from Agency to SaaS: A 5-Year Homepage Teardown",
+    "secondary_keywords": [
+      "Foreplay CRO teardown agency to SaaS",
+      "Foreplay positioning shift homepage analysis",
+      "how Foreplay repositioned as SaaS platform",
+      "Foreplay homepage evolution D2C to software",
+      "Foreplay winning ad workflow messaging strategy"
+    ],
+    "content_angle": "Lead with the STRATEGIC RISK of the pivot — going from 'we do the work for you' to 'you do it with our software' is a positioning death trap for most agencies. Show how Foreplay used their homepage to reframe proof of work (portfolio → product features), rebuild trust (founder voice → system authority), and justify the higher perceived price (bespoke service → category ownership). The searcher isn't interested in design criticism; they want to know: 'Did this risky move work, and what were the signal decisions that made it work?'",
+    "what_the_searcher_wants": "Patterns and decision logic they can apply to their own services-to-SaaS transition — specifically how to migrate an audience from 'hiring us' to 'using our software' without looking like you abandoned them.",
+    "what_to_avoid": "Treating this as a simple design refresh or describing the changes as surface-level. The searcher will see through generic 'we added a product nav and changed the headline' analysis. Avoid missing the fundamental repositioning logic: Foreplay removed 'Hire Us' and replaced it with 'Start Free Trial' — that's not a CTA change, it's a business model change. Also avoid crediting the shift to aesthetics alone; the real story is that they moved from selling expertise to selling a system, which required completely different messaging architecture.",
+    "confidence_level": "high",
+    "generatedAt": "2026-06-13T08:48:02.887Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.0031224
+  },
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2021-01",
+        "design_era": "early-startup",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Bold white sans-serif headline 'WE PRACTICE DOPE DESIGN & SELL SH*T ONLINE' centered on black background with minimal navigation header.",
+        "proof_density": "none",
+        "primary_message_type": "category",
+        "visual_sophistication": 3,
+        "brand_maturity": "early"
+      },
+      {
+        "month": "2022-07",
+        "design_era": "growth",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Dark hero section with serif headline 'The Winning Ad Workflow' paired with abstract product imagery on right, CTA button below, navigation bar top.",
+        "proof_density": "low",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2023-07",
+        "design_era": "growth",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Dark hero with serif headline 'The Complete Winning Ad Workflow' overlaid on product showcase images, prominent blue CTA, client logo row below fold.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2024-07",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Dark hero with serif 'The Complete Winning Ad Workflow' headline, multi-image product carousel, blue CTA button, navigation with logo top-left.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "2026-01",
+        "design_era": "enterprise",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Serif headline 'The Complete Winning Ad Workflow' on light background with integrated product screenshots, structured navigation header, gradient accent elements.",
+        "proof_density": "high",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 5,
+        "brand_maturity": "enterprise-grade"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from a stark minimalist black hero (2021) with raw typography into a sophisticated full-bleed layout with serif hierarchy, integrated product imagery, and progressive color sophistication (2026). The brand shifted from bold statement-making to outcome-focused credibility with polish and visual density increasing steadily.",
+    "design_evolution_label": "startup-statement-to-enterprise-workflow",
+    "generatedAt": "2026-06-13T08:48:15.647Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.005419200000000001
+  }
+}

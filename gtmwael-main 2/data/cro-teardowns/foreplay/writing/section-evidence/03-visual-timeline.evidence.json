@@ -1,0 +1,141 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Foreplay",
+  "companyUrl": "foreplay.co",
+  "articleTitle": "Foreplay Homepage Teardown: Jan 2021 to Jan 2026",
+  "h1": "How Foreplay rewrote its homepage over 5 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Jan 2026",
+  "snapshotCount": 9,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 9,
+    "h2Added": 8,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Foreplay homepage teardown",
+  "analysis-blocks": [
+    {
+      "id": "analysis-2021-01",
+      "label": "Jan 2021 — original state",
+      "period": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2021-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"We practice dope design & Sell Sh*t Online\" — direct product statement.",
+        "Visible section headings include: \"Play haus\", \"Work\", \"Disciplines\".",
+        "Navigation includes: \"Work\", \"Services\", \"Play Haus\" — product category framing."
+      ]
+    },
+    {
+      "id": "analysis-2022-01",
+      "label": "Jan 2022 — mid-transition",
+      "period": "Jan 2022",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2022-01.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 36.2% — one of the larger layout changes in the dataset.",
+        "H1 in this snapshot: \"Get the Job donein 90 seconds or less.*foreplay Required\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jan 2026 — current state",
+      "period": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2026-01.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"The Complete Winning Ad Workflow\" — updated value proposition.",
+        "New section headings include: \"Your new secret weapon for ads\", \"Spark creative genius and crush competitors.\", \"Identify winning patterns and replicate success.\".",
+        "CTAs no longer present include: \"Continue to Checkout\", \"View Project\", \"Strike Launching a Pre-Workout\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "We practice dope design & Sell Sh*t Online",
+      "after": "The Complete Winning Ad Workflow",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Foreplay is a D2C creative advertising agency. We help brands grow through products, services and software.",
+      "after": "From advertising inspiration to creative analytics. The best way to save ads from TikTok, and Facebook Ad Library, organize and share with your team.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Foreplay | D2C Creative Advertising Agency",
+      "after": "Foreplay | The Complete Winning Ad Workflow - Save ads from Ad Libraries"
+    }
+  ],
+  "visual-analysis": {
+    "snapshots": [
+      {
+        "month": "2021-01",
+        "design_era": "early-startup",
+        "layout_type": "centered-hero",
+        "above_fold_structure": "Bold white sans-serif headline 'WE PRACTICE DOPE DESIGN & SELL SH*T ONLINE' centered on black background with minimal navigation header.",
+        "proof_density": "none",
+        "primary_message_type": "category",
+        "visual_sophistication": 3,
+        "brand_maturity": "early"
+      },
+      {
+        "month": "2022-07",
+        "design_era": "growth",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Dark hero section with serif headline 'The Winning Ad Workflow' paired with abstract product imagery on right, CTA button below, navigation bar top.",
+        "proof_density": "low",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2023-07",
+        "design_era": "growth",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Dark hero with serif headline 'The Complete Winning Ad Workflow' overlaid on product showcase images, prominent blue CTA, client logo row below fold.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "developing"
+      },
+      {
+        "month": "2024-07",
+        "design_era": "mature",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Dark hero with serif 'The Complete Winning Ad Workflow' headline, multi-image product carousel, blue CTA button, navigation with logo top-left.",
+        "proof_density": "medium",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 4,
+        "brand_maturity": "polished"
+      },
+      {
+        "month": "2026-01",
+        "design_era": "enterprise",
+        "layout_type": "full-bleed",
+        "above_fold_structure": "Serif headline 'The Complete Winning Ad Workflow' on light background with integrated product screenshots, structured navigation header, gradient accent elements.",
+        "proof_density": "high",
+        "primary_message_type": "outcome",
+        "visual_sophistication": 5,
+        "brand_maturity": "enterprise-grade"
+      }
+    ],
+    "visual_shift_summary": "The design evolved from a stark minimalist black hero (2021) with raw typography into a sophisticated full-bleed layout with serif hierarchy, integrated product imagery, and progressive color sophistication (2026). The brand shifted from bold statement-making to outcome-focused credibility with polish and visual density increasing steadily.",
+    "design_evolution_label": "startup-statement-to-enterprise-workflow",
+    "generatedAt": "2026-06-13T08:48:15.647Z",
+    "model": "claude-haiku-4-5-20251001",
+    "costUsd": 0.005419200000000001
+  }
+}

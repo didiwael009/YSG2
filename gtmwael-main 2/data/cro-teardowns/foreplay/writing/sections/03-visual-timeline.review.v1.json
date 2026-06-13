@@ -1,0 +1,45 @@
+{
+  "score": 84,
+  "pass": true,
+  "issues": [
+    "The 2022 H1 quote in the draft reads 'Get the Job done in 90 seconds or less.*foreplay Required' but the evidence annotation reads 'Get the Job donein 90 seconds or less.*foreplay Required' — the draft silently corrects a typo that may be meaningful to reproduce verbatim for accuracy.",
+    "The claim 'The shift from agency identity to software product happened visibly around mid-2022' is a causation-adjacent framing — the evidence only confirms a large layout change (36.2% similarity delta), not a confirmed strategic shift from agency to software.",
+    "The phrase 'Agency personality is gone entirely' in the final paragraph of the last H3 is a strong unsupported conclusion — the evidence describes design as enterprise-grade but does not confirm the absence of agency personality.",
+    "The meta description partial quote **'From advertising inspiration to creative analytics.'** in the final H3 is only the opening fragment of the full meta — quoting it as a standalone may mislead the reader about what the full meta says.",
+    "Paragraph 3 (2024–2026 block) runs approximately 95 words — exceeds the 60-word paragraph cap for analytical sections, triggering a scannability penalty.",
+    "The mid-2022 H3 paragraph runs approximately 85 words — also over the 60-word cap.",
+    "The 2021 H3 paragraph runs approximately 90 words — borderline over the 60-word cap.",
+    "The sentence 'The tone shifted from identity statement to outcome claim' is abstract as a closing sentence — it names the shift but gives no implication or action for the reader.",
+    "No hard caps fired, but the 36.2% similarity figure is used correctly and sourced — no issue there.",
+    "The founder test at the end is reasonably specific but references 'agency-statement mode' which is a coined term not defined earlier — minor clarity gap."
+  ],
+  "requiredFixes": [
+    "Split the 2024–2026 paragraph into two: one sentence on 2024 proof density and carousel, one on the 2026 light-background/enterprise-grade shift. Each must stay under 60 words.",
+    "Split or trim the mid-2022 paragraph to under 60 words — cut the explanation of the 36.2% metric OR move it to a parenthetical clause.",
+    "Replace the closing sentence 'Agency personality is gone entirely' with a concrete observation tied to the evidence — e.g. reference the removal of 'Play Haus' from navigation or the page title change from 'D2C Creative Advertising Agency' to 'The Complete Winning Ad Workflow'.",
+    "Hedge the framing of the mid-2022 shift — change 'The shift from agency identity to software product happened visibly around mid-2022' to something like 'The visual evidence suggests a near-complete redesign around mid-2022' to avoid implying confirmed strategic intent.",
+    "Define 'agency-statement mode' in the founder test sentence or replace it with plain language — e.g. 'still reads like a creative studio portfolio rather than a software product page'."
+  ],
+  "riskFlags": [
+    "'The shift from agency identity to software product happened visibly around mid-2022' — frames a layout change as a confirmed strategic pivot; evidence only supports a large visual delta (36.2%), not intent.",
+    "'Agency personality is gone entirely' — unsupported conclusion; evidence confirms enterprise-grade visual scoring but does not confirm complete removal of agency personality.",
+    "Quoting only the first clause of the 2026 meta description (**'From advertising inspiration to creative analytics.'**) without the rest of the meta may misrepresent the full message — the full meta is available in evidence and should be quoted completely or flagged as partial."
+  ],
+  "seoNotes": [
+    "The ## heading 'Foreplay homepage 2021–2026: from black-hero agency statement to enterprise workflow platform' contains the company name and 'homepage' — strong for the primary keyword 'Foreplay homepage teardown'.",
+    "H3 headings use years prominently (2021, mid-2022, 2024–2026) — good for readers scanning for timeline context but weak for topical search queries; consider adding a topic word to each H3 (e.g. 'Foreplay 2021 homepage: agency statement phase').",
+    "The section title mirrors the article title keyword pattern ('Foreplay homepage') — good internal keyword consistency.",
+    "The meta description change from 'D2C Creative Advertising Agency' to 'From advertising inspiration to creative analytics' is highlighted — this is a strong SEO angle that could be surfaced more explicitly as a keyword-intent signal for readers."
+  ],
+  "rewriteInstruction": "The section is structurally sound and passes, but three paragraphs exceed the 60-word analytical paragraph cap — split each offending paragraph so no single analytical paragraph exceeds 60 words. The mid-2022 and 2024–2026 blocks are the main offenders. Also soften the causal framing around the mid-2022 shift (evidence shows a layout change, not a confirmed strategic decision) and replace 'Agency personality is gone entirely' with a concrete, evidence-anchored observation such as the disappearance of 'Play Haus' from navigation or the page title reframe. Every closing sentence in an H3 block must be concrete or actionable — not an abstract summary. Finally, define 'agency-statement mode' in plain language inside the founder test, or replace the coined term with a description any founder would immediately understand.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 14,
+    "plainLanguage": 17,
+    "scannability": 8,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 80
+}

@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "Foreplay homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS founder, growth marketer, or product strategist who is considering a major repositioning from services/agency to self-serve SaaS, and wants to understand how Foreplay executed this transition — specifically how they signaled the shift to their existing audience without losing credibility.",
+  "recommended_h1_format": "How [Company] Pivoted from Agency to SaaS: A 5-Year Homepage Teardown",
+  "secondary_keywords": [
+    "Foreplay CRO teardown agency to SaaS",
+    "Foreplay positioning shift homepage analysis",
+    "how Foreplay repositioned as SaaS platform",
+    "Foreplay homepage evolution D2C to software",
+    "Foreplay winning ad workflow messaging strategy"
+  ],
+  "content_angle": "Lead with the STRATEGIC RISK of the pivot — going from 'we do the work for you' to 'you do it with our software' is a positioning death trap for most agencies. Show how Foreplay used their homepage to reframe proof of work (portfolio → product features), rebuild trust (founder voice → system authority), and justify the higher perceived price (bespoke service → category ownership). The searcher isn't interested in design criticism; they want to know: 'Did this risky move work, and what were the signal decisions that made it work?'",
+  "what_the_searcher_wants": "Patterns and decision logic they can apply to their own services-to-SaaS transition — specifically how to migrate an audience from 'hiring us' to 'using our software' without looking like you abandoned them.",
+  "what_to_avoid": "Treating this as a simple design refresh or describing the changes as surface-level. The searcher will see through generic 'we added a product nav and changed the headline' analysis. Avoid missing the fundamental repositioning logic: Foreplay removed 'Hire Us' and replaced it with 'Start Free Trial' — that's not a CTA change, it's a business model change. Also avoid crediting the shift to aesthetics alone; the real story is that they moved from selling expertise to selling a system, which required completely different messaging architecture.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-13T08:48:02.887Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.0031224
+}

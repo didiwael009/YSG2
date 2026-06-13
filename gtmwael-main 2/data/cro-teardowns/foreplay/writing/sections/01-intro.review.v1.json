@@ -1,0 +1,46 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "WORD COUNT VIOLATION: The single paragraph is approximately 110 words, exceeding the 90-word hard cap for intro sections and the 55–90 word target range.",
+    "CAUSAL CLAIM WITHOUT DATA: 'will cost you the pipeline you need to survive' is an outcome/causation claim with no supporting data — penalised under evidenceAccuracy (-10).",
+    "CAUSAL CLAIM WITHOUT CONDITION: 'removing your highest-converting proof before the replacement is validated will cost you the pipeline' lacks an explicit condition clause — penalised (-3).",
+    "BOLD QUOTE MISSING: The CTA 'Hire Us' is correctly bolded but is not presented in bold-quote format with surrounding double quotes as a verbatim element — it appears as **'Hire Us'** (single quotes internally), which is borderline; however the format is inconsistent with the other bolded quotes in the draft.",
+    "SECTION GOAL PARTIALLY MET: The first sentence names no period ('Jan 2021 to Jan 2026') and does not name the single biggest shift plainly — it opens with a dramatic editorial statement rather than directly answering the search query.",
+    "DENSITY VIOLATION: The single paragraph contains more than 2 distinct ideas — (1) Foreplay deleted its origin story, (2) the headline/CTA changed, (3) this is a business model change, (4) a forward-looking promise about when the trade-off is worth it — penalised under plainLanguage (-3).",
+    "FINDING NOT IN FIRST TWO SENTENCES: The actual finding (this is a business model change, not a headline refresh) appears as the fourth sentence, not the first or second — penalised under plainLanguage (-3).",
+    "ABSTRACT/PUNCHY CLOSING THAT TEASES RATHER THAN LANDS: The closing sentence is a promise ('you will know exactly when...') rather than a concrete or actionable statement — penalised under plainLanguage (-3).",
+    "SCANNABILITY: The paragraph exceeds 60 words (approx 110 words) — the 90-word hard cap on any single paragraph fires, capping scannability at 5.",
+    "RHYTHM: The opening sentence ('Foreplay deleted its own origin story — and that is the riskiest move a growing software company can make') is a strong editorial hook but is generic enough to apply to any agency-to-SaaS pivot — not uniquely anchored to Foreplay's specific evidence in the opening beat.",
+    "UNSUPPORTED CAUSAL FRAMING: 'That is a business model change executed on a live page' is stated as definitive fact; the evidence notes the page title and H1 changed, but the evidence explicitly states 'No confirmed strategy is implied' — this framing is stronger than the evidence supports."
+  ],
+  "requiredFixes": [
+    "Trim the paragraph to under 90 words (ideally 70–85). Remove the forward-looking promise sentence ('By the end of this teardown, you will know...') — it adds ~30 words and belongs in a separate meta-section, not the intro.",
+    "Move the core finding into the first sentence: name the company, the period (Jan 2021 to Jan 2026), and the single biggest shift plainly — e.g. 'Between January 2021 and January 2026, Foreplay rewrote its homepage from a D2C creative agency pitch to a self-serve SaaS product suite.'",
+    "Replace 'will cost you the pipeline you need to survive' with a hedged conditional — e.g. 'risks eliminating your highest-converting inbound channel before the product replacement is validated.' This removes the unsupported outcome claim.",
+    "Reduce the paragraph to a maximum of 2 ideas. Currently it carries 4 distinct concepts. Split or cut.",
+    "Add the time period ('Jan 2021 to Jan 2026' or '5 years') explicitly into the first sentence to satisfy the SECTION GOAL requirement that the intro names the period."
+  ],
+  "riskFlags": [
+    "'will cost you the pipeline you need to survive' — outcome claim with no data support; evidence only shows CTA and nav changes, not pipeline impact.",
+    "'That is a business model change executed on a live page' — stated as definitive fact; the evidence notes 'No confirmed strategy is implied' and 'The change in framing may reflect a positioning adjustment' — the draft is more certain than the evidence warrants.",
+    "'removing your highest-converting proof before the replacement is validated' — implies the old portfolio/hire-us path was the highest-converting channel, which is not stated in the evidence."
+  ],
+  "seoNotes": [
+    "POSITIVE: The H1 tag ('Foreplay Homepage Teardown: How a Chrome Extension Outgrew an Agency in 5 Years') contains the primary keyword 'Foreplay homepage teardown' and a descriptive phrase — strong for search intent.",
+    "RISK: 'Chrome Extension' in the H1 is not directly supported as a framing device by the evidence — the evidence does mention a Chrome Extension as a product feature, but the article is about the homepage repositioning, not specifically the Chrome Extension. This framing may confuse searchers expecting the full pivot story.",
+    "POSITIVE: The draft body correctly bolds the verbatim H1 quotes from the evidence ('We practice dope design & Sell Sh*t Online' and 'The Complete Winning Ad Workflow'), which supports snippet eligibility.",
+    "SUGGESTION: The secondary keywords ('Foreplay CRO teardown agency to SaaS', 'how Foreplay repositioned as SaaS platform') are not served by the current intro — the word 'agency' and 'SaaS' do not appear in the body paragraph, only implied. Consider adding one of these terms naturally."
+  ],
+  "rewriteInstruction": "Rewrite the intro as a single paragraph of 70–85 words. Open with a plain factual statement that names Foreplay, the period (Jan 2021 to Jan 2026), and the single biggest observable shift — the move from a D2C creative agency homepage to a self-serve SaaS product suite. Then add one sentence of concrete evidence (the H1 change and the removal of 'Hire Us'). Close with one sentence that frames the stakes as a conditional risk, not a certainty — hedge the pipeline claim. Strip the forward-looking promise sentence entirely. Maximum 2 ideas in the paragraph. Every verbatim quote in **'bold quotes'** format.",
+  "dimensionScores": {
+    "evidenceAccuracy": 10,
+    "specificity": 12,
+    "plainLanguage": 11,
+    "scannability": 5,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

@@ -17,9 +17,10 @@ import { apify } from "./articles/apify";
 import { agorapulse } from "./articles/agorapulse";
 import { buffer } from "./articles/buffer";
 import { unbounce } from "./articles/unbounce";
+import { foreplay } from "./articles/foreplay";
 export type { CroTeardownPost, SnapshotEntry, MessagingChange, AnalysisBlock, LessonCard, SummaryCard } from "./types";
 
-export const croTeardownPosts: CroTeardownPost[] = [hootsuite, stripe, intercom, shopify, vercel, crisp, clay, linear, lemlist, apollo, expensya, gong, webflow, apify, agorapulse, buffer, unbounce];
+export const croTeardownPosts: CroTeardownPost[] = [hootsuite, stripe, intercom, shopify, vercel, crisp, clay, linear, lemlist, apollo, expensya, gong, webflow, apify, agorapulse, buffer, unbounce, foreplay];
 
 export const getCroTeardownBySlug = (slug: string) =>
   croTeardownPosts.find((post) => post.slug === slug);

@@ -1,0 +1,42 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The opening section heading is a compound clever/searchable hybrid but runs very long — over 20 words — which may truncate in search results and weakens scannability.",
+    "Second H3 block contains a causal claim: 'any visitor who clicked found an underdeveloped product' — this is not traceable to evidence; the evidence only shows the nav item appeared, not what state Lens was in at launch.",
+    "The Dunford citation sentence ('Visitors who arrive expecting parity leave with a negative impression that sticks') is a generic consequence claim not anchored to Foreplay-specific evidence — it reads like it could appear in any teardown.",
+    "Second H3 analytical paragraph exceeds 60 words (approximately 68 words) — scannability penalty applies.",
+    "The sentence 'That is two conversion paths removed at once, with no reported test validating the replacement' contains a mild unsupported causal implication — 'no reported test' is not confirmed by evidence, only inferred from absence.",
+    "Third H3 block's analytical paragraph is approximately 62 words — marginally over the 60-word limit.",
+    "No hard caps triggered, but the Dunford citation paragraph is the one paragraph most at risk of being generic SaaS commentary rather than Foreplay-anchored."
+  ],
+  "requiredFixes": [
+    "Remove or rewrite the sentence 'Visitors who arrive expecting parity leave with a negative impression that sticks' — it is not anchored to Foreplay evidence and reads as generic SaaS commentary. Replace with a Foreplay-specific observation, e.g. noting that Lens appeared alongside Swipe File and Discovery in the same nav overhaul, compressing the trust risk.",
+    "Soften 'any visitor who clicked found an underdeveloped product' to reflect what the evidence actually supports: 'If Lens was underdeveloped at the time the nav item launched, any visitor who clicked would have encountered a gap the page had already promised to fill.' Do not assert the underdevelopment as fact.",
+    "Trim the second H3 analytical paragraph to under 60 words — split the Dunford citation into its own sentence and cut the generic follow-on sentence.",
+    "Trim the third H3 analytical paragraph to under 60 words — the explanation of 'what this approach lets you do' can be cut by one sentence without losing meaning.",
+    "Hedge 'with no reported test validating the replacement' to 'with no publicly documented test' or restructure as a conditional: 'If no parallel test was run...' to avoid asserting an absence of evidence as evidence of absence."
+  ],
+  "riskFlags": [
+    "'any visitor who clicked found an underdeveloped product' — causation claim not traceable to evidence; the evidence shows Lens appeared in nav but does not confirm its development state at that moment.",
+    "'with no reported test validating the replacement' — absence-of-evidence inference, not confirmed by the evidence object.",
+    "Dunford citation paragraph closes with 'Visitors who arrive expecting parity leave with a negative impression that sticks' — outcome claim with no supporting data, and not Foreplay-specific."
+  ],
+  "seoNotes": [
+    "The ## section heading contains both the company name ('Foreplay') and a topic signal ('agency', 'SaaS') — searchable, though the heading length (~18 words) risks truncation in SERPs.",
+    "The third H3 heading explicitly references the SEO page title as a mechanism — this is a searchable, specific subhead that may attract long-tail queries around SaaS page title optimisation.",
+    "The article-level primary keyword 'Foreplay homepage teardown' is not used in this section — consider a single natural mention in the opening paragraph to reinforce keyword density without forcing it.",
+    "All three H3 headings contain either 'Foreplay' or a concrete topic signal ('CTA', 'navigation', 'SEO page title') — positive for internal anchor text and scannability."
+  ],
+  "rewriteInstruction": "The section is close to passing cleanly. Three targeted fixes will clear the remaining issues. First, rewrite the Dunford citation paragraph to close with a Foreplay-specific observation rather than a generic consequence claim — the paragraph currently ends in abstract territory that could appear in any teardown. Second, soften the two unsupported assertions ('no reported test', 'found an underdeveloped product') into conditional framings — the evidence supports the inference but not the declaration. Third, trim both the second and third H3 analytical paragraphs to under 60 words each by cutting their closing generic sentences; the practical takeaways are strong and do not need abstract reinforcement. Do not change the CTA evidence, the page title evidence, or the nav evidence — those are correctly quoted and well-anchored. The opening H3 is the strongest of the three; use its structure (evidence → conditional risk → specific test) as the model for the other two.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 11,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

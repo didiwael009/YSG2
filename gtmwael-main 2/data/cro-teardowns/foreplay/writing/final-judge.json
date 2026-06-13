@@ -1,0 +1,63 @@
+{
+  "overallScore": 72,
+  "pass": false,
+  "evidenceAccuracy": 16,
+  "plainLanguage": 16,
+  "scannability": 11,
+  "searchableHeadings": 8,
+  "specificity": 12,
+  "rhythmAndOpening": 7,
+  "founderTakeaway": 4,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [
+    "02-quick-answer",
+    "03-visual-timeline (mid-2022 snapshot)",
+    "05-cta-navigation-evolution (nav changes H3)",
+    "07-business-context",
+    "06-lessons-for-saas-teams (category claims H3)"
+  ],
+  "unsupportedClaims": [
+    "'Visual similarity between the 2022 snapshot and the one before it measured 36.2%' — no percentage figure appears in the evidence",
+    "'Get the Job done in 90 seconds or less.*foreplay Required' — this headline text does not appear anywhere in the compressed evidence",
+    "early navigation referenced 'Snipe, save, tag and share your competitors ads' — this phrase does not appear in the compressed evidence",
+    "named product features like 'Discovery', 'Lens', and 'Briefs' — 'Briefs' is not listed in any evidence field; 'Discovery' is not listed as a named product in the evidence",
+    "'LensAdvertising analytics for creative teams' listed as a named product in the nav — Lens is mentioned only in the businessContextResearch key_events, not as a nav item in the evidence",
+    "Dunford reference: 'As Dunford describes in Obviously Awesome, positioning that outruns the product creates a trust problem that features alone cannot fix' — no citation to the Landing Page Playbook 2026, Growth Playbook 2026, or the compressed evidence; this is an externally introduced claim not traceable to the evidence"
+  ],
+  "riskFlags": [
+    "'Removing agency social proof before a trial funnel is validated may eliminate your highest-converting inbound channel before the replacement can carry the load' — asserts a conversion outcome without data",
+    "'If named client campaigns were the page's primary proof for first-time visitors, removing them before a replacement trust signal is in place may leave a gap that free-trial messaging alone does not yet fill' — predicts a conversion gap without supporting data",
+    "'By the end of this teardown, you will know exactly when that trade-off is worth making — and when removing your highest-converting proof before the replacement is validated will cost you the pipeline you need to survive' — predicts pipeline impact without data",
+    "'That is a business model change executed on a live page' — asserts company intent as fact rather than as an observation"
+  ],
+  "requiredFixes": [
+    "Remove the '36.2%' visual similarity figure entirely — it has no source in the evidence; replace with an observation about the magnitude of the layout change based on what the snapshots describe",
+    "Remove or replace the headline 'Get the Job done in 90 seconds or less.*foreplay Required' — this copy is not in the evidence; if this appeared in a snapshot it must be traceable to the evidence to be cited",
+    "Remove the 'Snipe, save, tag and share your competitors ads' quote from the business context section — it does not appear in the compressed evidence",
+    "Remove 'Briefs' as a named product feature — it is not in the evidence; keep only Lens which appears in businessContextResearch",
+    "Remove or reattribute the Dunford / Obviously Awesome reference — this is an external source not in the evidence; replace with a plain observation about the structural mismatch between nav claims and product depth, anchored to the Foreplay-specific nav items in the evidence",
+    "Rewrite the opening paragraph to remove 'cost you the pipeline you need to survive' — this is an unsupported conversion prediction; replace with a conditional observation",
+    "The nav changes H3 ('Foreplay's navigation changes: eight items added, four removed') contradicts the evidence: navAdded lists 8 specific items and navRemoved lists 4 specific items — these ARE named in the evidence and should be cited explicitly rather than claiming they are 'not individually named in the evidence'"
+  ],
+  "optionalImprovements": [
+    "The 'Quick Answer' section could be shortened to 3–4 sentences; it currently repeats the intro too closely",
+    "The business context section would benefit from an H3 subheading structure to match the rest of the article",
+    "The 'category claims must match feature depth' H3 leans generic after the Dunford reference is removed — anchor it more tightly to the specific nav items added (e.g., 'API Leverage Foreplay data', 'Solutions') from the evidence",
+    "Add a founder takeaway at the end of the 'messaging shift suggests who the page is now written for' H3 — it closes with analysis but no direct action",
+    "The repetition of the 'services revenue vs SaaS revenue' point across the quick-answer, CTA, and lessons sections could be consolidated into one section with cross-references"
+  ],
+  "rerunRecommendations": [
+    "03-visual-timeline — remove the 36.2% figure and the unverified headline copy; rebuild the mid-2022 section from snapshot descriptions only",
+    "07-business-context — remove the unverified 'Snipe, save, tag and share' quote and the 'Briefs' product name; tighten to evidence-traceable claims",
+    "06-lessons-for-saas-teams (category claims H3) — remove the Dunford reference entirely and rewrite using Foreplay-specific nav evidence"
+  ],
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.04672199999999993,
+  "generatedAt": "2026-06-13T08:54:28.304Z",
+  "repetitionWarnings": [
+    "The warning that removing services proof before the SaaS funnel is validated risks losing the highest-converting channel appears in the quick-answer section, the CTA changes H3, and the first lessons H3 — three separate occurrences with near-identical phrasing"
+  ]
+}

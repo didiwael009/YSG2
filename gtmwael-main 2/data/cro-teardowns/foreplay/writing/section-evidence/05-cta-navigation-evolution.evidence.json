@@ -1,0 +1,64 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Foreplay",
+  "companyUrl": "foreplay.co",
+  "articleTitle": "Foreplay Homepage Teardown: Jan 2021 to Jan 2026",
+  "h1": "How Foreplay rewrote its homepage over 5 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Jan 2026",
+  "snapshotCount": 9,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 9,
+    "h2Added": 8,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Foreplay homepage teardown",
+  "cta-changes": {
+    "added": [
+      "Start Free Trial",
+      "Get Free Trial",
+      "Learn More",
+      "Compare Winning Themes",
+      "Start For Free",
+      "Download App",
+      "Save & Organize",
+      "Automate Transcription",
+      "Easily Share & Collaborate",
+      "24/7 Ad Library Scraper"
+    ],
+    "removed": [
+      "Continue to Checkout",
+      "View Project",
+      "Strike Launching a Pre-Workout",
+      "OwnersBox Drew Brees' Fantasy Hotline",
+      "Healthy Crunch Sling'n Snacks",
+      "More Work",
+      "Our Work",
+      "Hire Us",
+      "AdTrax Premium Music for your Ads",
+      "AdFlow Video Ads for your Brand"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Your new secret weapon for ads",
+      "Spark creative genius and crush competitors.",
+      "Identify winning patterns and replicate success.",
+      "Bringing performance & creative teams together.",
+      "Beautifully present wins and opportunities",
+      "Miles beyond the status quo",
+      "Ready to ship more winning ads?",
+      "Can’t find what you’re looking for?"
+    ],
+    "removed": []
+  }
+}

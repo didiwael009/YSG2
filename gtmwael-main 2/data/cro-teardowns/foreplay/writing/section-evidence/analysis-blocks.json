@@ -1,0 +1,38 @@
+[
+  {
+    "id": "analysis-2021-01",
+    "label": "Jan 2021 — original state",
+    "period": "Jan 2021",
+    "screenshotPath": "/cro-teardowns/foreplay/selected/2021-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"We practice dope design & Sell Sh*t Online\" — direct product statement.",
+      "Visible section headings include: \"Play haus\", \"Work\", \"Disciplines\".",
+      "Navigation includes: \"Work\", \"Services\", \"Play Haus\" — product category framing."
+    ]
+  },
+  {
+    "id": "analysis-2022-01",
+    "label": "Jan 2022 — mid-transition",
+    "period": "Jan 2022",
+    "screenshotPath": "/cro-teardowns/foreplay/selected/2022-01.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: 36.2% — one of the larger layout changes in the dataset.",
+      "H1 in this snapshot: \"Get the Job donein 90 seconds or less.*foreplay Required\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jan 2026 — current state",
+    "period": "Jan 2026",
+    "screenshotPath": "/cro-teardowns/foreplay/selected/2026-01.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"The Complete Winning Ad Workflow\" — updated value proposition.",
+      "New section headings include: \"Your new secret weapon for ads\", \"Spark creative genius and crush competitors.\", \"Identify winning patterns and replicate success.\".",
+      "CTAs no longer present include: \"Continue to Checkout\", \"View Project\", \"Strike Launching a Pre-Workout\"."
+    ]
+  }
+]

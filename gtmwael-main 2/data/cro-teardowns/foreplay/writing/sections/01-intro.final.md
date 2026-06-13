@@ -1,0 +1,3 @@
+# Foreplay Homepage Teardown: How a Chrome Extension Outgrew an Agency in 5 Years
+
+Foreplay deleted its own origin story — and that is the riskiest move a growing software company can make. The homepage went from **"We practice dope design & Sell Sh\*t Online"** to **"The Complete Winning Ad Workflow"**, and the **"Hire Us"** button disappeared entirely. That is not a headline refresh. That is a business model change executed on a live page. By the end of this teardown, you will know exactly when that trade-off is worth making — and when removing your highest-converting proof before the replacement is validated will cost you the pipeline you need to survive.

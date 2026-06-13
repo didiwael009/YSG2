@@ -1,0 +1,36 @@
+{
+  "publishedAt": "2026-06-13T12:37:55.733Z",
+  "slug": "foreplay",
+  "dryRun": false,
+  "forced": true,
+  "qualityGates": {
+    "finalJudgePass": false,
+    "finalJudgeScore": 72,
+    "seoPass": false,
+    "seoScore": 0,
+    "unsupportedClaims": [
+      "'Visual similarity between the 2022 snapshot and the one before it measured 36.2%' — no percentage figure appears in the evidence",
+      "'Get the Job done in 90 seconds or less.*foreplay Required' — this headline text does not appear anywhere in the compressed evidence",
+      "early navigation referenced 'Snipe, save, tag and share your competitors ads' — this phrase does not appear in the compressed evidence",
+      "named product features like 'Discovery', 'Lens', and 'Briefs' — 'Briefs' is not listed in any evidence field; 'Discovery' is not listed as a named product in the evidence",
+      "'LensAdvertising analytics for creative teams' listed as a named product in the nav — Lens is mentioned only in the businessContextResearch key_events, not as a nav item in the evidence",
+      "Dunford reference: 'As Dunford describes in Obviously Awesome, positioning that outruns the product creates a trust problem that features alone cannot fix' — no citation to the Landing Page Playbook 2026, Growth Playbook 2026, or the compressed evidence; this is an externally introduced claim not traceable to the evidence"
+    ]
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [
+    "Final judge FAIL — score 72/100 (need ≥ 90)",
+    "6 unsupported claim(s): 'Visual similarity between the 2022 snapshot and the one before it measured 36.2%' — no percentage figure appears in the evidence; 'Get the Job done in 90 seconds or less.*foreplay Required' — this headline text does not appear anywhere in the compressed evidence",
+    "seo-audit.json not found — run Phase 4D first"
+  ],
+  "articlePath": "src/content/cro-teardown/articles/foreplay.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "We practice dope design & Sell Sh*t Online",
+    "after": "The Complete Winning Ad Workflow",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Foreplay is a D2C creative advertising agency. We help brands grow through products, services and software.",
+    "after": "From advertising inspiration to creative analytics. The best way to save ads from TikTok, and Facebook Ad Library, organize and share with your team.",
+    "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+  },
+  {
+    "element": "Page title",
+    "before": "Foreplay | D2C Creative Advertising Agency",
+    "after": "Foreplay | The Complete Winning Ad Workflow - Save ads from Ad Libraries"
+  }
+]

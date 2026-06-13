@@ -1,0 +1,261 @@
+{
+  "slug": "foreplay",
+  "companyName": "Foreplay",
+  "companyUrl": "foreplay.co",
+  "category": "CRO Teardown",
+  "title": "Foreplay Homepage Teardown: Jan 2021 to Jan 2026",
+  "h1": "How Foreplay rewrote its homepage over 5 years",
+  "metaTitle": "Foreplay Homepage CRO Teardown — Jan 2021 to Jan 2026",
+  "description": "A CRO teardown of Foreplay's homepage from Jan 2021 to Jan 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Foreplay's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2021 and Jan 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-13",
+  "readTime": "9 min read",
+  "featuredImage": "/cro-teardowns/foreplay/selected/2021-01.webp",
+  "featuredImageAlt": "Foreplay Jan 2021 homepage — 'We practice dope design & Sell Sh*t Online'",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Jan 2026",
+  "snapshots": [
+    {
+      "month": "2021-01",
+      "label": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2021-01.webp"
+    },
+    {
+      "month": "2022-01",
+      "label": "Jan 2022",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2022-01.webp"
+    },
+    {
+      "month": "2022-07",
+      "label": "Jul 2022",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2022-07.webp"
+    },
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2023-01.webp"
+    },
+    {
+      "month": "2023-07",
+      "label": "Jul 2023",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2023-07.webp"
+    },
+    {
+      "month": "2024-01",
+      "label": "Jan 2024",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2024-01.webp"
+    },
+    {
+      "month": "2024-07",
+      "label": "Jul 2024",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2024-07.webp"
+    },
+    {
+      "month": "2025-07",
+      "label": "Jul 2025",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2025-07.webp"
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2026-01.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2021 → Jan 2026",
+      "note": "9 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "8 added · 0 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 4 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "We practice dope design & Sell Sh*t Online",
+      "after": "The Complete Winning Ad Workflow",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Foreplay is a D2C creative advertising agency. We help brands grow through products, services and software.",
+      "after": "From advertising inspiration to creative analytics. The best way to save ads from TikTok, and Facebook Ad Library, organize and share with your team.",
+      "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+    },
+    {
+      "element": "Page title",
+      "before": "Foreplay | D2C Creative Advertising Agency",
+      "after": "Foreplay | The Complete Winning Ad Workflow - Save ads from Ad Libraries"
+    }
+  ],
+  "h2Added": [
+    "Your new secret weapon for ads",
+    "Spark creative genius and crush competitors.",
+    "Identify winning patterns and replicate success.",
+    "Bringing performance & creative teams together.",
+    "Beautifully present wins and opportunities",
+    "Miles beyond the status quo",
+    "Ready to ship more winning ads?",
+    "Can’t find what you’re looking for?"
+  ],
+  "h2Removed": [],
+  "ctaAdded": [
+    "Start Free Trial",
+    "Get Free Trial",
+    "Learn More",
+    "Compare Winning Themes",
+    "Start For Free",
+    "Download App",
+    "Save & Organize",
+    "Automate Transcription",
+    "Easily Share & Collaborate",
+    "24/7 Ad Library Scraper"
+  ],
+  "ctaRemoved": [
+    "Continue to Checkout",
+    "View Project",
+    "Strike Launching a Pre-Workout",
+    "OwnersBox Drew Brees' Fantasy Hotline",
+    "Healthy Crunch Sling'n Snacks",
+    "More Work",
+    "Our Work",
+    "Hire Us",
+    "AdTrax Premium Music for your Ads",
+    "AdFlow Video Ads for your Brand"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2021-01",
+      "label": "Jan 2021 — original state",
+      "period": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2021-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"We practice dope design & Sell Sh*t Online\" — direct product statement.",
+        "Visible section headings include: \"Play haus\", \"Work\", \"Disciplines\".",
+        "Navigation includes: \"Work\", \"Services\", \"Play Haus\" — product category framing."
+      ]
+    },
+    {
+      "id": "analysis-2022-01",
+      "label": "Jan 2022 — mid-transition",
+      "period": "Jan 2022",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2022-01.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: 36.2% — one of the larger layout changes in the dataset.",
+        "H1 in this snapshot: \"Get the Job donein 90 seconds or less.*foreplay Required\".",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jan 2026 — current state",
+      "period": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/foreplay/selected/2026-01.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"The Complete Winning Ad Workflow\" — updated value proposition.",
+        "New section headings include: \"Your new secret weapon for ads\", \"Spark creative genius and crush competitors.\", \"Identify winning patterns and replicate success.\".",
+        "CTAs no longer present include: \"Continue to Checkout\", \"View Project\", \"Strike Launching a Pre-Workout\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"We practice dope design & Sell Sh*t Online\" to \"The Complete Winning Ad Workflow\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Work\", \"Services\", \"Play Haus\" to \"Product\", \"API Leverage Foreplay data.\", \"Solutions\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "8 section headings were added and 0 removed between Jan 2021 and Jan 2026. New headings include \"Your new secret weapon for ads\" and \"Spark creative genius and crush competitors.\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 9 snapshots spanning roughly 5 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Want your homepage audited like this?",
+    "body": "I review your traffic sources, message match, CTA path, proof structure, and mobile experience — then give you a specific list of what to change and why.",
+    "button": "Book a page audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "If your page is getting visits but not converting, the issue is usually message match — not traffic volume.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    },
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "The patterns that separate high-converting SaaS pages from the ones that bleed spend.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "How to use AI tools to identify conversion leaks without drowning in data.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    }
+  ]
+}

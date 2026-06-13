@@ -1,0 +1,113 @@
+{
+  "angle": "Foreplay's homepage evolution is the story of a founder who shipped a Chrome extension for himself, then had to erase every trace of the agency that funded it — systematically stripping client work, portfolio proof, and 'Hire Us' from the page as a bootstrapped SaaS product outgrew the services business that kept the lights on.",
+  "distinct_from": [
+    "agency-to-SaaS pivot erasing own origin story",
+    "bootstrapped founder killing services to own a category",
+    "portfolio proof replaced by workflow category claim"
+  ],
+  "h1": "Foreplay deleted its agency to launch a SaaS — the homepage shows every step",
+  "seo_title": "Foreplay Homepage Evolution 2021–2026: CRO Teardown",
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Open with the tension that makes Foreplay's story unique: a founder-built Chrome extension that accidentally outgrew an agency, forcing the homepage to erase its own origin — 'dope design' and named client work — before the SaaS could fully stand on its own. Hook the reader on the specific CRO risk of dismantling your highest-converting inbound channel before the replacement is validated.",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning|sales-motion|brand"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Foreplay homepage 2021–2026: from black-hero agency statement to enterprise workflow platform",
+      "goal": "Walk through five distinct visual eras — the stark black 'DOPE DESIGN' minimalism of 2021, the emerging dark serif 'Winning Ad Workflow' hero of mid-2022, the medium-proof product carousel of 2023–2024, and the light-background enterprise polish of 2026 — showing how visual sophistication tracked directly against the SaaS product's feature expansion and away from the agency's personality-led brand.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design|brand|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Foreplay's H1 went from 'Dope Design' to 'Complete Winning Ad Workflow' — and what that erased",
+      "goal": "Dissect the specific language shift across H1, page title, meta description, and section headings — showing how first-person agency voice ('We practice', 'D2C Creative Advertising Agency') was replaced by a category-ownership claim, and how the meta description's pivot from 'products, services and software' to naming TikTok and Facebook Ad Library as specific workflow contexts signals a move from brand-growth buyer to high-intent tool-seeker. Connect the section heading emergence ('Identify winning patterns', 'Bringing performance and creative teams together') to a deliberate multi-persona SaaS architecture.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning|icp|category"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Foreplay replaced 'Hire Us' and 'View Project' with a four-product nav and a free trial funnel",
+      "goal": "Analyze the complete removal of 'Work', 'Services', 'Hire Us', 'View Project', and 'Continue to Checkout' from the navigation and CTAs — and what it cost and gained. Show how the replacement of a single purchase-intent conversion path with four named product entry points (Swipe File, Discovery, Lens, Briefs) plus audience verticals (E-Commerce, Agencies) signals a product-led growth motion targeting multiple buyer roles simultaneously. Flag the specific CRO risk: removing named client proof (Strike, OwnersBox, Healthy Crunch) before trial conversion data could validate the replacement.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## How a bootstrapped Chrome extension, the GetSpyder acquisition, and a 3-year wait for analytics forced Foreplay's homepage identity crisis",
+      "goal": "Explain the specific business events that drove each homepage phase: the 2021 founder-built Chrome extension origin, the 2023 GetSpyder acquisition adding competitive intelligence, the June 2023 v2.0 Product Hunt launch expanding from swipe file to full workflow, the 2024 LinkedIn Ad Library expansion broadening the ICP to B2B, and the May 2025 Lens launch as the analytics piece that finally completed the 'complete workflow' claim the homepage had been making since 2022. Emphasize the founder's public statement that Lens was deliberately delayed — making it the last proof point needed to stop the headline from over-promising.",
+      "word_target": 180,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "business-context-research"
+      ],
+      "marketing_lens": "positioning|category|product"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Foreplay's decision to kill its agency before the SaaS was ready",
+      "goal": "Deliver three specific, runnable patterns: (1) The 'parallel CTA test before portfolio removal' pattern — Foreplay's risk was removing named client proof and 'Hire Us' in a single sweep; the safer version is A/B testing a 'Try Free' CTA alongside the existing services path before dismantling it. (2) The 'category claim must lag feature parity, not lead it' pattern — Foreplay named 'analytics' in its workflow claim years before Lens shipped; teams should audit whether every named nav item has defensible feature depth before publishing the claim. (3) The 'SEO title as ICP signal' pattern — adding 'Save ads from Ad Libraries' to the page title was a specific, high-intent job-to-be-done that attracted tool-seekers before the full platform was built, showing how a subtitle can pivot audience perception without changing the hero headline.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|icp"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Agency craft → Workflow category",
+      "note": "H1 moved from 'We practice dope design' to 'The Complete Winning Ad Workflow' — erasing first-person voice entirely"
+    },
+    {
+      "label": "Target buyer",
+      "value": "Brand founders → In-house media buyers",
+      "note": "Nav replaced 'Hire Us' with audience verticals (E-Commerce, Agencies) targeting self-serve performance teams"
+    },
+    {
+      "label": "Sales motion",
+      "value": "Service purchase → Free trial PLG",
+      "note": "'Continue to Checkout' and 'View Project' removed; 'Start Free Trial' appears as the dominant repeated CTA"
+    },
+    {
+      "label": "Category play",
+      "value": "Swipe file → Full ad workflow suite",
+      "note": "Four named products (Swipe File, Discovery, Lens, Briefs) replaced a single Chrome extension identity across 2021–2026"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-13T08:49:40.810Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0.055422
+}

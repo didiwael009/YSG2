@@ -1,0 +1,43 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "Section 03 (multi-buyer-roles H3) contains a paragraph exceeding 60 words — the block starting 'Eight section headings were added...' runs approximately 65 words.",
+    "The H3 heading 'Foreplay's new page structure targets multiple buyer roles at once' buries the takeaway — the first sentence describes the conclusion rather than stating the actionable finding in plain terms first.",
+    "The closing 'practical test' paragraph is not a standalone H3 sub-block — it is appended to the final analytical paragraph, making it hard to scan as a separate actionable element.",
+    "The phrase 'the category — meaning they want every ad team to think of Foreplay first' introduces a causal/intentional claim ('they want') that is not directly traceable to the evidence; the evidence note says 'No confirmed strategy is implied.'",
+    "Minor: the opening H3 block contains a sentence — 'If the rest of the page delivers on that framing, this positions Foreplay as the default workflow tool rather than a service provider: the category — meaning they want every ad team to think of Foreplay first when they need a workflow tool, not just one feature.' — which exceeds 45 words (approximately 52 words), triggering a sentence-length penalty.",
+    "The ## heading is creative-only in structure ('went from Dope Design to Complete Winning Ad Workflow') but does contain quoted evidence terms and the company name — borderline acceptable but the topic term 'messaging' or 'positioning' is absent from the heading.",
+    "No explicit plain-language definition is given for 'category' when first used as a strategic term ('positions Foreplay as the default workflow tool... the category'). The dash explanation attempts it but is embedded mid-sentence, not a clean plain-language gloss.",
+    "Word count is approximately 370 words — within the 200–380 limit but near the ceiling."
+  ],
+  "requiredFixes": [
+    "Split the final H3 block: move the 'practical test' paragraph into its own H3 subheading (e.g. '### Try this on your own homepage in under 5 minutes') so it scans as a distinct, runnable action — not a paragraph tail.",
+    "Trim the paragraph starting 'Eight section headings were added...' to under 60 words by cutting or splitting the final explanatory sentence.",
+    "Replace 'they want every ad team to think of Foreplay first' with hedged language such as 'consistent with a strategy of...' or 'suggests Foreplay is positioning itself as...' — the evidence explicitly notes no confirmed strategy is implied.",
+    "Break the 52-word sentence in the first H3 block into two sentences at the colon. The plain-language definition of 'category' should be a clean standalone sentence, not a parenthetical mid-clause.",
+    "Add 'messaging' or 'positioning' to the ## section heading so it contains a searchable topic term alongside the company name — e.g. '## How Foreplay's messaging shifted from Dope Design to Complete Winning Ad Workflow.'"
+  ],
+  "riskFlags": [
+    "'they want every ad team to think of Foreplay first' — this is an intent/strategy claim not supported by the evidence; the evidence note explicitly states 'No confirmed strategy is implied.'",
+    "'this positions Foreplay as the default workflow tool' — slightly causal without a condition; should be 'this is consistent with positioning Foreplay as...' to reflect the hedged evidence.",
+    "The phrase 'consistent with a multi-seat SaaS product' in the final analytical paragraph is inferential and unanchored to a specific evidence item — flag as unsupported extrapolation unless hedged."
+  ],
+  "seoNotes": [
+    "The ## heading quotes the actual headline text verbatim, which is a strong SEO signal for searchers looking up Foreplay's messaging history.",
+    "The meta description H3 names TikTok and Facebook Ad Library — both high-search-volume terms that may pull long-tail traffic to the article.",
+    "The secondary keyword 'Foreplay positioning shift homepage analysis' aligns well with the H3 structure — each H3 addresses a distinct positioning signal (headline, meta, page structure).",
+    "Missing the term 'messaging' in the ## heading is a minor SEO gap; adding it would strengthen relevance for queries like 'Foreplay homepage messaging evolution.'"
+  ],
+  "rewriteInstruction": "Keep the three-H3 structure — it works. Make four targeted changes: (1) Add 'messaging' or 'positioning' to the ## heading. (2) In H3-1, split the 52-word sentence at the colon into two clean sentences and remove 'they want' in favour of 'consistent with a strategy of.' (3) Trim the second paragraph of H3-3 to under 60 words. (4) Promote the practical test into its own H3 sub-block with a scannable heading like '### Test this on your own page right now' — the test itself is strong and specific, it just needs to stand alone so skimmers can find it. No structural rewrite needed; this is a polish pass.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 14,
+    "plainLanguage": 15,
+    "scannability": 11,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,48 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "Section exceeds 320 words — approximate count is 420–440 words, violating the 180–320 word hard limit.",
+    "Navigation changes paragraph makes an unsupported causal claim: 'every CTA that disappeared carried agency-era language' — the removed nav items are explicitly stated as 'not individually named in the data', so attributing agency-era language to them is invented.",
+    "Paragraph 3 (named client campaigns / trust signal gap) makes a causation claim without data: 'If those campaigns were the primary reason a skeptical visitor converted, their absence creates a gap' — this is speculative outcome framing and needs a stronger hedge or removal.",
+    "Paragraph 3 contains 3+ distinct ideas: (1) campaigns as proof, (2) removal timing, (3) free-trial messaging gap — violates the 2-idea-per-paragraph rule.",
+    "Paragraph 3 states its finding at the END rather than within the first 2 sentences — violates FINDING-first rule.",
+    "The navigation H3 block ('what the page stopped needing to explain') is clever-only framing and its body paragraphs bury the finding (that 8 nav items were added and 4 removed) rather than leading with it.",
+    "Second navigation paragraph ('What arrived instead points toward a product with distinct tools') is generic — it could appear in any SaaS teardown about a product pivot and is not anchored to specific named nav items.",
+    "The navigation section admits 'The removed items are not individually named in the data' but then draws confident conclusions about them — this is an evidence accuracy violation.",
+    "Word count is significantly over the 320-word cap, making scannability penalties unavoidable.",
+    "Paragraph 5 (navigation, first body paragraph) is approximately 65 words — exceeds 60-word limit.",
+    "Paragraph 6 (navigation, second body paragraph) is approximately 45 words — borderline but acceptable.",
+    "The closing founder test is specific and actionable — this is a strength, but it references 'four nav items — likely labels tied to agency work' which hedges correctly yet still implies content not confirmed in evidence."
+  ],
+  "requiredFixes": [
+    "Cut the section to under 320 words. The navigation H3 is the easiest place to compress — the two body paragraphs there can be merged into one tight paragraph of under 60 words.",
+    "Remove or fully hedge the claim that removed nav items 'carried agency-era language' — the evidence does not name the removed nav items, so no characterisation of their content is permissible. Rewrite to say only that 4 unnamed nav items were removed.",
+    "Rewrite paragraph 3 (trust signal gap) to lead with the finding in sentence 1, cut it to a single idea, and replace causal language ('their absence creates a gap') with conditional hedging: 'If named campaigns were the page's primary proof, removing them before a replacement is in place may leave a trust gap for first-time visitors.'",
+    "Split paragraph 3 into two paragraphs of one idea each, or cut the trust-signal speculation entirely if it cannot be evidenced.",
+    "Rewrite the first navigation body paragraph to lead with the finding: state upfront that 4 nav items were removed and 8 were added, and that the removed items are unnamed in the evidence, before drawing any inference."
+  ],
+  "riskFlags": [
+    "'every CTA that disappeared carried agency-era language' — the removed nav items are not named in the evidence; this is an invented characterisation.",
+    "'their absence creates a gap that free-trial messaging alone may not fill' — this is an outcome claim without data; must be hedged as conditional or removed.",
+    "'Named client campaigns provided proof — real brands, real results' — 'real results' is not evidenced; only the existence of named campaigns is confirmed.",
+    "'This suggests the page is now addressing more than one type of user rather than a single buyer' — reasonable inference but stated as near-fact; should be flagged as interpretation."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name and the words 'nav' and 'free trial' — searchable and specific, which is a strength.",
+    "Both H3 headings contain 'Foreplay' and topic terms ('CTA changes', 'navigation changes') — good for internal anchor SEO.",
+    "At 420+ words the section is over-length for a scannable web section; trimming to 300 words will improve dwell-time signals without losing the key findings.",
+    "The founder test at the end is a natural long-tail hook ('how to audit nav items for agency framing') that could earn organic traffic from founder-audience queries."
+  ],
+  "rewriteInstruction": "Rewrite the section to under 320 words across both H3 blocks. In the CTA block, lead paragraph 1 with the finding (agency CTAs replaced by self-serve trial CTAs), keep it under 60 words, then add one short paragraph on the job-specific CTAs — one idea only. Cut the trust-signal-gap paragraph entirely OR reduce it to two sentences with strong conditional hedging ('may leave a gap if...'), leading with the finding. In the navigation block, open the first body paragraph by stating plainly that 4 nav items were removed and 8 added, and immediately note that the removed items are unnamed in the evidence — do not characterise their content. Merge both navigation body paragraphs into one paragraph under 60 words. Keep the founder test as written — it is the strongest element — but remove the phrase 'likely labels tied to agency work' since the removed nav items are unnamed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 14,
+    "specificity": 11,
+    "plainLanguage": 16,
+    "scannability": 7,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

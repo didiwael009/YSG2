@@ -1,0 +1,49 @@
+{
+  "score": 74,
+  "pass": false,
+  "issues": [
+    "The ## heading contains the company name and topic terms ('Hire Us', 'View Project', 'nav', 'free trial') but the clever-only framing ('replaced X with Y') weakens searchability — it lacks the word 'CTA', 'navigation', or 'homepage' explicitly.",
+    "The second H3 block ('navigation changes') admits twice that named items 'are not individually named in the evidence' — this is accurate but hollow; the two paragraphs under this H3 add almost no insight and could appear in any teardown.",
+    "The navigation H3 block delivers no practical takeaway in its first two sentences — both opening sentences state what the evidence does NOT contain, rather than what the evidence DOES show.",
+    "The closing paragraph of the navigation H3 ('The eight items added are not listed individually...') is entirely generic — it could appear word-for-word in a teardown of any SaaS company that expanded its nav.",
+    "The navigation section paragraphs are borderline generic: 'a net expansion — from a lighter nav to one that needs to orient visitors across multiple areas of the product' is a boilerplate observation.",
+    "The navAdded and navRemoved arrays in the evidence are not empty — the rubric penalises -8 per named CTA or navigation item that does NOT appear verbatim in the evidence arrays. However, the draft does NOT name any specific nav items (it correctly notes they are unlisted), so no direct fabrication penalty applies. But the nav H3 is almost contentless as a result.",
+    "Paragraph 3 under the first H3 ('If named client campaigns were the page's primary proof...') contains a causal/conditional claim — 'removing them before a replacement trust signal is in place may leave a gap' — this is hedged with 'may' so it is borderline acceptable, but the condition is slightly vague.",
+    "The founder test names 'four unnamed nav items' — this is accurate per evidence but weakens specificity of the test.",
+    "Word count is approximately 310 words — within the 180–320 range, acceptable.",
+    "No forbidden jargon terms detected beyond first use — clean on that front.",
+    "The opening sentence of the first H3 is a finding-first structure — this is good.",
+    "The second H3 block fails the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula entirely — it is two admissions of missing data followed by a weak inference.",
+    "The closing sentence of the navigation H3 block ('the total count signals the company now expects visitors to need more orientation, not less') is abstract and not actionable.",
+    "Paragraph over 60 words: the first paragraph under H3 one is approximately 85 words — this triggers a scannability penalty."
+  ],
+  "requiredFixes": [
+    "Rewrite the navigation H3 block to lead with what IS knowable from the evidence: the net count change (4 removed, 8 added), the pattern this reveals (expansion of orientation surface), and how the job-specific CTAs added ('Save & Organize', 'Automate Transcription', 'Easily Share & Collaborate', '24/7 Ad Library Scraper') function as navigational signals even if formal nav labels are unlisted. Do not open with what the evidence lacks.",
+    "Split the first paragraph under the CTA H3 — it runs approximately 85 words and contains at least 3 distinct ideas (old CTA logic, list of removed CTAs, new CTA logic). Break into two paragraphs: one on what was removed and what it signals, one on what replaced it.",
+    "Replace the abstract closing sentence of the navigation H3 ('the total count signals the company now expects visitors to need more orientation, not less') with a concrete, actionable observation tied to Foreplay's specific evidence — for example, how the shift from service-transaction nav to multi-feature orientation maps to the new H2s added.",
+    "Update the ## heading to include the word 'CTA' or 'navigation' explicitly for searchability — e.g. 'How Foreplay's CTAs and navigation shifted from agency transactions to self-serve free trial'.",
+    "Ensure the navigation H3 delivers its practical takeaway in the first two sentences — currently both opening sentences describe absent evidence rather than surfacing a finding."
+  ],
+  "riskFlags": [
+    "Claim: 'If named client campaigns were the page's primary proof for first-time visitors, removing them before a replacement trust signal is in place may leave a gap' — this is a conditional causal claim. The condition ('if they were the primary proof') is not established by the evidence. Hedge further or remove.",
+    "Claim: 'Each targets a different task, which suggests the page is now built for more than one type of user' — 'suggests' is appropriately hedged, but 'different type of user' is an inference not directly supported by evidence. Flag as speculative.",
+    "The navigation expansion analysis ('the company now expects visitors to need more orientation') is a motivational inference about Foreplay's intent — not supported by the evidence, only by counting."
+  ],
+  "seoNotes": [
+    "The ## heading is readable and specific but does not contain the primary keyword 'Foreplay homepage teardown' or the words 'CTA' or 'navigation' — adding one of these would improve crawlability for section-level anchor searches.",
+    "H3 headings both contain 'Foreplay' and a topic term ('CTA changes', 'navigation changes') — these are well-formed for internal anchor SEO.",
+    "The use of verbatim CTA strings in bold (e.g. 'Start Free Trial', 'Hire Us') creates natural long-tail keyword surface for branded + feature searches.",
+    "The founder test at the end contains actionable language that could attract featured-snippet treatment if the section were indexed standalone."
+  ],
+  "rewriteInstruction": "Keep the first H3 block's structure but split its opening paragraph at the 85-word mark — put the removed CTAs and their agency-transaction logic in one paragraph, and the replacement free-trial CTAs in a separate paragraph. For the navigation H3 block, abandon the 'evidence does not name these' framing entirely: lead instead with what IS visible — a net doubling of nav surface (4 out to 8 in), then connect the job-specific CTAs ('Save & Organize', 'Automate Transcription', 'Easily Share & Collaborate', '24/7 Ad Library Scraper') as the functional navigation layer that replaced service-era labels, and close with a concrete implication for Foreplay specifically (e.g. a visitor now self-routes by task rather than being routed by an account manager). Update the ## heading to include the word 'CTA' or 'navigation' for search. Every paragraph must open with its finding, not with a caveat about missing data.",
+  "dimensionScores": {
+    "evidenceAccuracy": 20,
+    "specificity": 9,
+    "plainLanguage": 16,
+    "scannability": 7,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 3
+  },
+  "effectivePassThreshold": 85
+}

@@ -1,0 +1,37 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The section heading is not provided in the draft — the ## heading cannot be evaluated for searchability. If the heading is clever-only with no searchable terms, a -5 penalty applies.",
+    "The word count is approximately 90 words, which exceeds the 75-word cap stated in the section goal and the 45–75 word range required check. This is a required fix.",
+    "The opening leads with the headline change, which is accurate but slightly template-feeling ('biggest homepage change was its headline'). The more interesting entry point per the evidence is the business model shift — removing 'Hire Us' and replacing it with 'Start Free Trial' — which the SEO evidence explicitly flags as the real story.",
+    "The phrase 'self-serve software tool' is adequate plain language, but 'performance marketers and media buyers' are used as assumed-known terms without a brief gloss for the founder-learner half of the audience.",
+    "The backfire condition is present and appropriately hedged ('may eliminate'), which is good. However, it references 'services revenue' without naming the specific evidence anchor — the removal of 'Hire Us' from navigation — which would make it more concrete and defensible."
+  ],
+  "requiredFixes": [
+    "Trim the section to 75 words or fewer. The current draft is approximately 90 words, exceeding the snippet and section goal limit. Cut the final sentence to its core condition or merge ideas.",
+    "Add a one-clause gloss after 'performance marketers and media buyers' so the founder-learner audience is not left behind — e.g. 'in-house performance marketers and media buyers (the people who run and test ads day-to-day)'.",
+    "Strengthen the opening by leading with the business model signal rather than the headline swap — the removal of 'Hire Us' from the nav in favour of 'Start Free Trial' is the sharpest evidence of the shift and makes a more compelling snippet hook."
+  ],
+  "riskFlags": [
+    "The phrase 'copying this move may eliminate your highest-converting channel' is a conditional outcome claim. It is appropriately hedged with 'may' and attached to the condition 'if your SaaS product revenue has not yet overtaken your services revenue', so it clears the rubric bar — but only just. Confirm this framing is retained in any rewrite.",
+    "The draft says the headline shift 'signals a full move away from an agency' — 'signals' is correctly cautious language, but 'full move away' is a stronger claim than the evidence note, which says 'can be read as a deliberate update' and 'no confirmed strategy is implied.' Consider softening to 'points toward' or 'is consistent with'."
+  ],
+  "seoNotes": [
+    "Both verbatim headline changes are in bold quotes, which is correct for snippet formatting and matches the required check.",
+    "The section names the company (Foreplay), the single biggest change (headline rewrite), the new audience (in-house performance marketers and media buyers), and one backfire condition — hitting all four required snippet elements.",
+    "The primary keyword 'Foreplay homepage teardown' does not appear in the body text of this section. For a featured snippet, Google typically requires the query term to appear at least once in the passage. Adding 'Foreplay homepage' early would strengthen snippet eligibility.",
+    "The section heading is not shown in the draft. If it contains 'Foreplay' plus a topic term such as 'homepage', 'positioning', or 'messaging', the searchableHeadings score holds. If it is clever-only, apply -5."
+  ],
+  "rewriteInstruction": "Rewrite to under 75 words. Lead with the sharpest business-model signal from the evidence: Foreplay removed 'Hire Us' from navigation and replaced primary CTAs with 'Start Free Trial' — frame the headline change as one part of that larger move, not the whole story. Add a brief gloss for 'performance marketers and media buyers' so founder-learners are not lost. Keep both bold-quoted verbatim phrases. Retain the hedged backfire condition but anchor it explicitly to the 'Hire Us' removal rather than a generic 'services revenue' reference. Soften 'full move away' to language consistent with the evidence note ('consistent with', 'points toward'). Include 'Foreplay homepage' once in the body text to strengthen featured snippet eligibility.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 16,
+    "scannability": 13,
+    "searchableHeadings": 7,
+    "rhythmAndOpening": 7,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

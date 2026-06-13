@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Foreplay dropped 'D2C Creative Advertising Agency' and replaced it with 'The Complete Winning Ad Workflow'",
+    "category": "Positioning",
+    "body": "In 2021 the page title read **\"Foreplay | D2C Creative Advertising Agency\"** — a label that describes what the company is. By 2026 it reads **\"Foreplay | The Complete Winning Ad Workflow - Save ads from Ad Libraries\"** — a label that describes what the user gets. That shift suggests Foreplay moved from selling its identity as an agency to selling a repeatable outcome, likely to attract teams who already know they need an ad research tool rather than a creative partner."
+  },
+  {
+    "number": "02",
+    "title": "Foreplay removed 'Hire Us' and added 'Start Free Trial' — the hero CTA now filters for self-serve users",
+    "category": "Funnel",
+    "body": "The removed CTAs — **\"Hire Us\"**, **\"Our Work\"**, **\"View Project\"** — are the language of an agency pitching prospective clients. The added CTAs — **\"Start Free Trial\"**, **\"Get Free Trial\"**, **\"Start For Free\"** — point toward a self-serve software product. Running three near-identical free-trial CTAs at once suggests the team was testing copy variants rather than committing to a single phrase, which may indicate the conversion path is still being refined."
+  },
+  {
+    "number": "03",
+    "title": "Foreplay added 8 new H2s and removed 0 — every new heading is a capability claim, not a category label",
+    "category": "Messaging",
+    "body": "The original headings — **\"Play haus\"**, **\"Work\"**, **\"Disciplines\"** — organised the site like a portfolio. The eight headings added by 2026, including **\"Spark creative genius and crush competitors\"** and **\"Identify winning patterns and replicate success\"**, read as feature benefit statements aimed at performance marketers. Adding eight and removing none suggests the team expanded the page rather than editing it, which may mean the structure still has room to tighten."
+  },
+  {
+    "number": "04",
+    "title": "Foreplay's full evolution — from agency portfolio to 'Your new secret weapon for ads' — looks like a company that rebuilt its audience, not just its product",
+    "category": "Strategy",
+    "body": "The 2021 site showed client case studies (**\"Strike Launching a Pre-Workout\"**, **\"OwnersBox Drew Brees' Fantasy Hotline\"**) and a checkout flow. The 2026 site shows no client work and leads with **\"The Complete Winning Ad Workflow\"**. Across nine snapshots the shift appears gradual rather than a single relaunch, which points to the business model changing incrementally — agency revenue phased out as software revenue scaled up — rather than a clean pivot moment."
+  }
+]

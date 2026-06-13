@@ -1,0 +1,51 @@
+{
+  "score": 72,
+  "pass": false,
+  "issues": [
+    "EVIDENCE ACCURACY — The draft names four removed nav items: 'Work', 'Services', 'Hire Us', and 'one additional removed item the evidence records but does not name.' The evidence navRemoved array lists 4 items but does not supply their names; the draft invents 'Work' and 'Services' as specific nav labels. These do not appear verbatim in navRemoved. Penalty: -8 (two named nav items not in evidence arrays) plus risk of hard cap.",
+    "EVIDENCE ACCURACY — The sentence 'the page may now convert at a lower rate' is a causation/outcome claim without data. No conversion data is supplied in the evidence. This triggers the -10 causation penalty and the hard cap at 60 unless offset.",
+    "EVIDENCE ACCURACY — The draft uses 'Save & Organize', 'Automate Transcription', 'Easily Share & Collaborate', and '24/7 Ad Library Scraper' as navigation changes, but the evidence places these in ctaAdded, not navAdded. Attributing them to navigation is a factual misclassification. Penalty: -5 per misattributed claim.",
+    "PLAIN LANGUAGE — No forbidden jargon terms are used more than once. No hard cap fires here.",
+    "PLAIN LANGUAGE — The phrase 'multiple buyer roles are being addressed simultaneously rather than one purchase decision' stacks three abstract nouns ('buyer roles', 'purchase decision', 'simultaneously') without a concrete example to anchor it. Penalty: -3.",
+    "PLAIN LANGUAGE — 'self-serve product entry' is strategist shorthand with no plain-language definition offered. Penalty: -4.",
+    "SCANNABILITY — H3 subheadings are present. Both analytical sub-blocks have headings. No hard cap fires.",
+    "SCANNABILITY — The paragraph beginning 'The specific CRO risk...' runs approximately 52 words — within limit, but leads with a label ('The specific CRO risk') rather than its finding. Takeaway is not in the first sentence.",
+    "SCANNABILITY — The paragraph beginning 'What replaced them...' runs approximately 62 words. Exceeds 60-word limit. Penalty: -4.",
+    "SEARCHABLE HEADING — The ## heading contains the company name ('Foreplay') and 'nav', but does not contain 'homepage', 'CTA', 'positioning', 'messaging', or 'conversion'. The phrase 'four-product nav' is semi-searchable but 'CTA' would strengthen it. Minor risk only — company name is present.",
+    "SPECIFICITY — The founder test ('if any item requires a conversation before the visitor understands what it means') is a generic heuristic that could appear in any SaaS teardown. It is not anchored to Foreplay's specific removed items or added CTAs. Penalty: -5.",
+    "FOUNDER TAKEAWAY — The final test ('Pull up your own nav...') is generic and not anchored to Foreplay's specific evidence (e.g., the named removed items or the specific added trial CTAs). It fails the specificity requirement for a runnable test. Penalty: -3.",
+    "WORD COUNT — Approximate word count is 290 words. Within the 180–320 range. No penalty.",
+    "BOLD QUOTES — All verbatim CTA and nav labels appear in bold quotes. No penalty.",
+    "RHYTHM — Opening sentence is strong and specific. No penalty. Sentence lengths vary adequately."
+  ],
+  "requiredFixes": [
+    "Remove the invented nav labels 'Work' and 'Services' — they do not appear verbatim in the navRemoved evidence array. Replace with: the evidence records four removed navigation items but does not name them individually; what is observable is that all items associated with an agency relationship were cleared.",
+    "Remove or heavily hedge the conversion rate claim. 'The page may now convert at a lower rate' is an unsupported outcome prediction. Replace with a conditional framing: 'If those case-study campaigns were the primary trust signal for cold visitors, their removal creates a proof gap that free-trial messaging alone may not fill — until social proof or usage data replaces them.'",
+    "Correct the misattribution of 'Save & Organize', 'Automate Transcription', 'Easily Share & Collaborate', and '24/7 Ad Library Scraper' as navigation changes. The evidence places these in ctaAdded, not navAdded. Reframe them as added CTAs that each describe a specific job-to-be-done, not as nav items.",
+    "Replace 'self-serve product entry' with plain language: for example, 'visitors can sign up and use the product themselves, without talking to anyone at Foreplay first.'",
+    "Rewrite the founder test so it is anchored to Foreplay's specific evidence: for example, 'Foreplay removed four nav items — likely agency-era labels — and replaced them with job-specific CTAs like 'Save & Organize' and 'Automate Transcription'. Count how many of your own nav items describe what you do for a client versus what the visitor can do themselves right now. Any client-service label is agency framing in disguise.'",
+    "Split or trim the 'What replaced them...' paragraph — it exceeds 60 words and contains two distinct ideas (nav removal signals + CTA job-framing). Each idea should be its own short paragraph.",
+    "Move the finding to the first sentence of the 'CRO risk' paragraph. It currently begins with a label. Rewrite to lead with the observable gap: 'Named client campaigns provided proof. Removing them before a replacement trust signal was in place leaves cold visitors with no evidence of real-world results.'"
+  ],
+  "riskFlags": [
+    "'the page may now convert at a lower rate' — unsupported outcome claim. No conversion data exists in the evidence. This triggers the -10 causation penalty and risks the hard cap at 60.",
+    "'Work' and 'Services' named as removed nav items — neither appears in the navRemoved evidence array. Invented specificity is worse than acknowledged ambiguity.",
+    "'Save & Organize', 'Automate Transcription', 'Easily Share & Collaborate', '24/7 Ad Library Scraper' described as navigation changes — evidence places all four in ctaAdded, not navAdded."
+  ],
+  "seoNotes": [
+    "The ## heading contains the company name 'Foreplay' and a specific action ('replaced... with a free trial funnel'), which is crawlable and topic-relevant. Adding 'CTA' explicitly would strengthen keyword alignment with the article's primary keyword 'Foreplay homepage teardown'.",
+    "H3 headings ('CTA changes: from hire us to start free trial' and 'Navigation changes: what Foreplay stopped needing to explain') are specific and contain searchable terms. The first H3 is particularly strong for long-tail queries about SaaS pivot CTAs.",
+    "The named client campaigns ('Strike Launching a Pre-Workout', 'OwnersBox Drew Brees' Fantasy Hotline', 'Healthy Crunch Sling'n Snacks') are unique proper nouns that could attract niche search traffic from people researching those brands. This is an accidental SEO asset worth preserving."
+  ],
+  "rewriteInstruction": "The section has three concrete problems to fix before it can pass. First, remove the two invented nav labels ('Work' and 'Services') and replace them with an honest acknowledgement that the evidence records four removals without naming them — then reason from what is known (agency-era CTAs disappeared) rather than what is invented. Second, cut or reframe the conversion rate prediction entirely; no data supports it, and the hard-cap rule fires on unsupported outcome claims. Replace it with a conditional gap statement: if the named client campaigns were the primary trust signal, their removal creates a proof gap. Third, correct the misattribution of the four job-description CTAs — they are in ctaAdded, not navAdded; the navigation sub-block should address what the nav removals signal, while the job-specific CTAs belong in the CTA sub-block. Once those three fixes are made, also: define 'self-serve product entry' in plain language on first use, trim the 'What replaced them' paragraph below 60 words by splitting its two ideas, move the finding to sentence one in every analytical paragraph, and rewrite the founder test so it names Foreplay's specific removed items and added CTAs rather than offering a generic nav audit heuristic.",
+  "dimensionScores": {
+    "evidenceAccuracy": 7,
+    "specificity": 8,
+    "plainLanguage": 13,
+    "scannability": 9,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

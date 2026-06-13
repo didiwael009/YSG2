@@ -1,0 +1,45 @@
+{
+  "score": 81,
+  "pass": false,
+  "issues": [
+    "H3 heading 'What the messaging shift signals about who the page is now written for' is clever-framing only — it lacks a searchable company or topic term and buries the finding; the takeaway (multi-role SaaS page) does not appear in the first two sentences of that block.",
+    "The fourth analytical paragraph (section headings block) contains three distinct ideas the reader must track simultaneously: the section heading count, what the headings say, and what that implies about buyer roles — exceeds the two-idea-per-paragraph limit.",
+    "The fourth paragraph is 74 words, exceeding the 60-word cap for non-intro paragraphs.",
+    "The closing sentence of the third H3 block ('That is a homepage built for a multi-seat SaaS product, not a services pitch to a single decision-maker') arrives at the end of the paragraph rather than within the first two sentences — finding is buried.",
+    "The phrase 'That shift suggests Foreplay stopped selling a relationship and started claiming to own a category' is a causal/outcome framing without an explicit condition attached — no hedge like 'if the rest of the page follows through' or equivalent.",
+    "The term 'category' (as in 'category ownership') appears functionally three times as an expert concept without a plain-language definition attached on first use — 'claiming to own a category' is used but never defined for the founder audience.",
+    "The practical test in the final block is reasonably specific but anchored to a generic 'we vs. outcome' audit rather than directly to Foreplay's own evidence (e.g. counting 'we' in the old H1/meta vs. the new versions the reader just read).",
+    "No bold-quote formatting issue found — all verbatim quotes are in **'bold quotes'** format. (Positive check.)",
+    "Word count is approximately 360 words — within the 200–380 range. (Positive check.)",
+    "All three H3 subheadings are present. (Positive check.)"
+  ],
+  "requiredFixes": [
+    "Split the fourth paragraph into two: one paragraph covering what the section headings say (the count and the quoted text), and a separate paragraph covering what they imply about multi-role buyer targeting — each under 60 words.",
+    "Move the finding to the first sentence of the third H3 block: state immediately that the page title and section headings together confirm the buyer has shifted from a single decision-maker to multiple in-house roles, then explain and evidence.",
+    "Add a plain-language definition for 'category' on its first use — e.g. 'claiming to own a category (meaning they want every ad team to think of Foreplay first when they need a workflow tool, not just one feature).'",
+    "Attach a condition to the causal claim in H3-1: change 'Foreplay stopped selling a relationship and started claiming to own a category' to something like 'if the rest of the page delivers on it, this framing positions Foreplay as the default workflow tool rather than a service provider.'",
+    "Rewrite the third H3 subheading to front-load the finding and include a searchable term — e.g. 'Foreplay's new page structure targets multiple buyer roles at once' — so it serves both skimmers and search."
+  ],
+  "riskFlags": [
+    "'That shift suggests Foreplay stopped selling a relationship and started claiming to own a category' — causal framing without a condition; evidence supports the observation but not the mechanism.",
+    "'That is consistent with targeting someone who already has a specific workflow problem' — slightly over-interpreted; the evidence (meta description change) is consistent with this but does not confirm it.",
+    "The section heading count ('Eight section headings were added') is used as evidence of multi-role targeting — this is a reasonable inference but presented as a near-conclusion without flagging it as inference."
+  ],
+  "seoNotes": [
+    "The ## section heading contains both the company name ('Foreplay') and the topic terms ('H1', 'Complete Winning Ad Workflow') — strong for long-tail search on the headline change specifically.",
+    "The meta description analysis directly quotes the before/after text, which gives the article a chance to rank for searches on Foreplay's old and new positioning language.",
+    "The page title evidence ('Save ads from Ad Libraries') echoes a secondary keyword from the evidence file — good organic alignment.",
+    "The final 'practical test' paragraph adds light how-to value that could attract snippet eligibility if the section is expanded slightly."
+  ],
+  "rewriteInstruction": "The draft is structurally sound and evidence-grounded — the three H3 blocks map cleanly to the three messaging elements. Fix four things: (1) Split the fourth paragraph so no single paragraph carries more than two ideas and stays under 60 words. (2) In the third H3 block, move the finding ('the page now speaks to multiple buyer roles simultaneously') to sentence one — do not save it for the end. (3) Define 'category' in plain language on first use so a founder who has never read a positioning framework understands what it means in practice. (4) Add a condition to the causal claim in H3-1 — the evidence supports the inference, not the mechanism, so hedge it with 'if' or 'this is consistent with.' The final test is good but make it tighter by referencing the specific before/after Foreplay copy the reader just read, rather than asking them to audit their own page in the abstract.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 14,
+    "plainLanguage": 14,
+    "scannability": 10,
+    "searchableHeadings": 8,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

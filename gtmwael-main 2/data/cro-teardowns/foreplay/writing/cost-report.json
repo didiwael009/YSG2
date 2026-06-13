@@ -1,0 +1,11 @@
+{
+  "slug": "foreplay",
+  "section": "_judge",
+  "calls": [],
+  "totalInputTokens": 0,
+  "totalOutputTokens": 0,
+  "totalCostUsd": 0,
+  "budgetUsd": 3,
+  "budgetExceeded": false,
+  "generatedAt": "2026-06-13T08:59:35.501Z"
+}

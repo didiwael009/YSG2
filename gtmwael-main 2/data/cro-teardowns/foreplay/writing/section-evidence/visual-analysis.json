@@ -1,0 +1,59 @@
+{
+  "snapshots": [
+    {
+      "month": "2021-01",
+      "design_era": "early-startup",
+      "layout_type": "centered-hero",
+      "above_fold_structure": "Bold white sans-serif headline 'WE PRACTICE DOPE DESIGN & SELL SH*T ONLINE' centered on black background with minimal navigation header.",
+      "proof_density": "none",
+      "primary_message_type": "category",
+      "visual_sophistication": 3,
+      "brand_maturity": "early"
+    },
+    {
+      "month": "2022-07",
+      "design_era": "growth",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Dark hero section with serif headline 'The Winning Ad Workflow' paired with abstract product imagery on right, CTA button below, navigation bar top.",
+      "proof_density": "low",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2023-07",
+      "design_era": "growth",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Dark hero with serif headline 'The Complete Winning Ad Workflow' overlaid on product showcase images, prominent blue CTA, client logo row below fold.",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "developing"
+    },
+    {
+      "month": "2024-07",
+      "design_era": "mature",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Dark hero with serif 'The Complete Winning Ad Workflow' headline, multi-image product carousel, blue CTA button, navigation with logo top-left.",
+      "proof_density": "medium",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 4,
+      "brand_maturity": "polished"
+    },
+    {
+      "month": "2026-01",
+      "design_era": "enterprise",
+      "layout_type": "full-bleed",
+      "above_fold_structure": "Serif headline 'The Complete Winning Ad Workflow' on light background with integrated product screenshots, structured navigation header, gradient accent elements.",
+      "proof_density": "high",
+      "primary_message_type": "outcome",
+      "visual_sophistication": 5,
+      "brand_maturity": "enterprise-grade"
+    }
+  ],
+  "visual_shift_summary": "The design evolved from a stark minimalist black hero (2021) with raw typography into a sophisticated full-bleed layout with serif hierarchy, integrated product imagery, and progressive color sophistication (2026). The brand shifted from bold statement-making to outcome-focused credibility with polish and visual density increasing steadily.",
+  "design_evolution_label": "startup-statement-to-enterprise-workflow",
+  "generatedAt": "2026-06-13T08:48:15.647Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0.005419200000000001
+}

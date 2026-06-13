@@ -1,0 +1,47 @@
+{
+  "score": 79,
+  "pass": false,
+  "issues": [
+    "H3 heading 'How Foreplay's meta description and page title signals a different kind of searcher' uses 'signals' (verb-agreement error) — minor but affects professionalism.",
+    "Paragraph 2 of the headline section contains a causal claim without sufficient condition: 'That shift is consistent with a strategy of positioning Foreplay as the default workflow tool' — acceptable as hedged, but the follow-on sentence introduces 'Category ownership' as an expert term WITHOUT an immediate plain-language definition before explaining it abstractly.",
+    "'Category ownership' is used without a plain-language definition attached in the same sentence — the definition arrives in the following sentence, not inline.",
+    "Paragraph 2 in the headline block has two distinct ideas packed together (the strategic reading of the H1 shift + a definition of category ownership), violating the max-2-ideas-per-paragraph rule and the FINDING → EXPLANATION → EXAMPLE → IMPLICATION formula (no example, no implication).",
+    "The meta description H3 block body paragraph ('The old version names three broad offerings...') buries the finding — the finding (different searcher type) comes last, not in the first two sentences.",
+    "The final H3 ('Test this on your own homepage right now') is moderately specific but the 'count how many times we appears' test is partially generic — it is not anchored to Foreplay's specific evidence (e.g. referencing the exact before/after word count of 'we' in Foreplay's two headlines), reducing founder takeaway specificity.",
+    "The third analytical H3 ('What Foreplay's messaging shift suggests about who the page is now written for') paragraph 2 exceeds 60 words — approximate count: 65 words. Scannability penalty applies.",
+    "No verbatim quote violations detected — all quoted text uses bold-quote formatting correctly.",
+    "Word count is approximately 370 words — within the 200–380 range, near ceiling.",
+    "The closing sentence of the headline H3 block ('Category ownership means buyers think of your product first when a specific job arises — not just one feature among many') is abstract and generic — it could appear in any SaaS teardown and does not reference Foreplay's specific evidence."
+  ],
+  "requiredFixes": [
+    "Define 'category ownership' inline in the same sentence it first appears — e.g. 'category ownership (meaning buyers reach for your product first whenever a specific job comes up, the way people reach for Google when they need to search)' — then remove the follow-on sentence that currently does this job awkwardly.",
+    "Move the finding to the first sentence of the meta description H3 block. Currently the paragraph builds to the finding at the end. Rewrite so the first sentence states: 'The new meta description targets someone with a specific workflow problem already in mind — not a buyer evaluating agency partners.' Then explain why with the old/new comparison.",
+    "Split the headline H3 block paragraph 2 into two paragraphs: one that states the strategic reading of the H1 shift (the finding), and one that explains what category ownership means with a Foreplay-specific example.",
+    "Replace the closing sentence of the headline H3 block ('Category ownership means buyers think of your product first...') with a Foreplay-specific, concrete implication — e.g. reference the removal of 'We' and 'Hire Us' as the mechanism that makes the category claim credible rather than hollow.",
+    "Trim the second paragraph of the third H3 block to under 60 words — currently ~65 words. Remove or compress the explanation of the two named roles.",
+    "Make the founder test in the final H3 more specific to Foreplay's evidence — e.g. 'Open your homepage headline and meta description side by side with Foreplay's 2021 versions above. Count the first-person words (we, our, us). If your headline still leads with one, your page is selling your identity before the buyer's problem — exactly where Foreplay was in 2021.'"
+  ],
+  "riskFlags": [
+    "'That shift is consistent with a strategy of positioning Foreplay as the default workflow tool' — hedged correctly with 'consistent with', acceptable.",
+    "'This is consistent with targeting someone who already has a specific workflow problem' — hedged, acceptable.",
+    "No outcome/causation claims detected that are unhedged.",
+    "'Category ownership' introduced as a concept without inline definition — not a factual risk but a plain-language compliance risk."
+  ],
+  "seoNotes": [
+    "The ## heading contains both the company name ('Foreplay') and a searchable topic signal ('messaging') plus quoted keyword phrases — strong for search.",
+    "All three H3 headings contain 'Foreplay' — good for internal anchor text and potential featured snippet targeting.",
+    "The meta description evidence is quoted verbatim and the framing ('names two specific platforms') gives the section a useful hook for people searching 'Foreplay positioning shift' or 'Foreplay messaging strategy'.",
+    "The section does not use the primary keyword 'Foreplay homepage teardown' in body copy — one natural inclusion in the third H3 or the founder test block would reinforce the primary keyword without keyword stuffing."
+  ],
+  "rewriteInstruction": "The draft is structurally sound and evidence-grounded, but three fixable issues are dragging the score below 85. First, define 'category ownership' inline the moment you use it — one parenthetical phrase is enough, then cut the follow-on definition sentence. Second, move findings to the first sentence of every H3 body block — the meta description paragraph currently builds to its finding at the end, which fails the FINDING-FIRST rule. Third, tighten the third H3's second paragraph to under 60 words and replace the generic closing sentence in the headline block with a Foreplay-specific implication that references the removal of 'Hire Us' or the disappearance of 'We' as the mechanism. Finally, anchor the founder test to Foreplay's specific before/after evidence rather than leaving it as a generic 'count your we's' instruction — tell the founder exactly which Foreplay headline to hold up as the comparison point.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 13,
+    "scannability": 11,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 2
+  },
+  "effectivePassThreshold": 85
+}

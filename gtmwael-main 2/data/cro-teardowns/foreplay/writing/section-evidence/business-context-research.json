@@ -1,0 +1,43 @@
+{
+  "company_stage_start": "seed",
+  "company_stage_end": "early-growth",
+  "key_events": [
+    {
+      "period": "2021",
+      "type": "other",
+      "summary": "Founder Zachary Murray previously ran Nomadic Fabrics, a D2C home-decor brand; the messy weekly process of surfacing competitor ads from the Facebook Ad Library reportedly inspired Foreplay. After selling that brand he founded Foreplay in Toronto."
+    },
+    {
+      "period": "2021",
+      "type": "rebrand",
+      "summary": "Foreplay reportedly began as a creative advertising agency (the early homepage positioned it as a 'D2C Creative Advertising Agency') before evolving into a self-serve SaaS product — explaining the agency-to-software shift visible on the page over time."
+    },
+    {
+      "period": "2022",
+      "type": "product-launch",
+      "summary": "Foreplay shipped its core Swipe File product and a Chrome extension that lets users save ads from the Facebook and TikTok ad libraries in one click — the first clearly software-led positioning."
+    },
+    {
+      "period": "2023",
+      "type": "product-launch",
+      "summary": "Foreplay expanded into a multi-product workflow: Discovery (a community-curated ad library that has since grown to 200M+ ads) and Spyder, a competitor ad-tracking tool. Public sources also indicate a GetSpyder.com acquisition around early 2023 tied to the Spyder product line."
+    },
+    {
+      "period": "2024-2025",
+      "type": "category-shift",
+      "summary": "Foreplay scaled to 30,000+ users — including brands like Lululemon and Paramount — while remaining fully bootstrapped, reaching a reported $1.2M ARR with roughly 11 employees and no outside venture funding."
+    },
+    {
+      "period": "2025-2026",
+      "type": "product-launch",
+      "summary": "Foreplay shipped Spyder 2.0 and an Ad Library MCP endpoint exposing competitor creative data to AI agents, consistent with the 2026 homepage's 'advertising inspiration to creative analytics' framing."
+    }
+  ],
+  "category_context": "Ad creative / swipe-file tooling emerged as a distinct SaaS niche from 2021-2025, driven by the explosion of performance creative on Meta and TikTok and the need for DTC brands and agencies to systematically research, save, and analyze competitor ads. The category shifted from simple ad-saving toward full creative workflow and analytics platforms.",
+  "icp_evolution": "Foreplay started serving individual DTC ecommerce marketers, media buyers, and small agencies who manually researched competitor ads. It broadened to performance-marketing teams and creative strategists at larger brands wanting an end-to-end ad workflow rather than a single saving tool - reflected in the move from agency-personality copy to 'The Complete Winning Ad Workflow'.",
+  "notable_competitors": ["Motion", "MagicBrief", "AdSpy", "BigSpy", "Minea"],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-13T09:30:00.000Z",
+  "model": "claude-code-websearch (subscription, $0 metered API)",
+  "costUsd": 0
+}

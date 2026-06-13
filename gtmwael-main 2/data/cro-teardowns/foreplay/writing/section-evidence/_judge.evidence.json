@@ -1,0 +1,25 @@
+{
+  "sectionId": "_judge",
+  "companyName": "Foreplay",
+  "companyUrl": "foreplay.co",
+  "articleTitle": "Foreplay Homepage Teardown: Jan 2021 to Jan 2026",
+  "h1": "How Foreplay rewrote its homepage over 5 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Jan 2026",
+  "snapshotCount": 9,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 9,
+    "h2Added": 8,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 4,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "primaryKeyword": "Foreplay homepage teardown"
+}
