@@ -213,7 +213,7 @@ These are legitimate references. Do **not** flag them as hallucinations.
 | apify | 2020–2026 | — | V6, only article with full rich lesson cards |
 | buffer | 2019–2026 | — | V6, added 2026-06-12 |
 | agorapulse | 2019–2026 | — | V6, added 2026-06-12 |
-| unbounce | 2019–2026 | 11 | V6, added 2026-06-12; NOT yet in sitemap/dist (audit P0) |
+| unbounce | 2019–2026 | 11 | V6, added 2026-06-12; sitemap + SSR fixed 2026-06-13 |
 
 ### Published blog articles (7 total)
 - /saas-marketing-plan
