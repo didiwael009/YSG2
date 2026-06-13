@@ -108,6 +108,14 @@ These are legitimate references. Do **not** flag them as hallucinations.
 - **D2 DONE**: backfilled businessContext into all 9 V1 articles (apollo, clay, crisp, intercom, lemlist, linear, shopify, stripe, vercel) — all 17 teardowns now render a business-context block. Added standalone CLI `cro-teardown:business-context` (generate-business-context.ts was the only Layer generator missing one). Per-article blast radius was +businessContext only; judge 92-94. Verified rendering in SSR HTML.
 - **B2 SKIPPED (justified)**: renumbering SECTION_ORDER IDs would touch 410 data files + 10 source files for cosmetic gain, zero user benefit. Not worth it. Audit backlog now clear.
 
+### 2026-06-13 (latest+1) — 02-quick-answer fully implemented
+
+- **Restored the section**: `SECTION_META['02-quick-answer']` (≤75-word featured-snippet spec), `SECTION_HEADINGS` entry, re-added to `SECTION_ORDER` pos 2. Future articles auto-generate it. Tuned after a gong proof run (maxRewriteLoops 1→2, enforce ONE change, no inline heading) → all backfills passed critic 87–88 first try.
+- **Backfilled all 17**: the 6 missing (gong, agorapulse, apify, buffer, expensya, webflow) + unbounce via `compose --only-section 02-quick-answer` + publish.
+- **Discovered + fixed a D2 side-effect**: `TeardownLayout` only renders the legacy `ArticleBody` (which held the quick-answer markdown) when `!businessContext`. Since D2 gave all 17 a businessContext, the quick-answer rendered ONLY in JSON-LD FAQ, never visibly. (No content lost — structured components render everything; ArticleBody was the legacy fallback.)
+- **Added visible rendering**: new `quickAnswer?: string` field + `QuickAnswerBlock.tsx` + `publish-article.ts` loader (reads `sections/02-quick-answer.final.md`). Renders a "Quick answer" callout at the top of every teardown. Republished all 17. Verified: snippet now appears 2× in SSR HTML (visible block + JSON-LD FAQ). New CLI: `cro-teardown:business-context` also added earlier.
+- **Known minor gap**: quick-answer not in `post.toc` sidebar (block is at the very top, so no link needed). Deploy still pending (commits local only).
+
 ### 2026-06-13 (later) — Full system audit + owned-source fix
 
 - **Owned playbook sources fix** (commit 6a67504): `final-judge.ts` + `section-writer.ts` now treat Landing Page Playbook 2026 / Growth Playbook 2026 as valid first-party evidence. Judge no longer flags citations to them as hallucinations; writer must attribute any number from them in-sentence. (Unbounce's "20% / Wael Aouididi" flags were the book being cited correctly but judged as invented.)
