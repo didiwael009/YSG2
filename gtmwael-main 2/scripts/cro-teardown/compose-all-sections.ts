@@ -728,8 +728,10 @@ async function main(): Promise<void> {
         sectionsDir,
         sectionOrder: [...SECTION_ORDER],
         tracker,
-        // Opus by default; --writer-model forces it down (e.g. sonnet-only runs).
-        model: cli.writerModel ?? getModel('judge'),
+        // Sonnet by default: this pass only adds transitions + varies duplicated
+        // openings — Opus output ($75/Mtok) is overkill and was ~5× the cost for
+        // no quality gain. --writer-model still overrides (e.g. sonnet-only runs).
+        model: cli.writerModel ?? getModel('rewriter'),
         onLog: crossLog,
       });
       for (const w of crossResult.integrityWarnings) {
