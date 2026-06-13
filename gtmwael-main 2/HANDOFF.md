@@ -114,7 +114,8 @@ These are legitimate references. Do **not** flag them as hallucinations.
 - **Backfilled all 17**: the 6 missing (gong, agorapulse, apify, buffer, expensya, webflow) + unbounce via `compose --only-section 02-quick-answer` + publish.
 - **Discovered + fixed a D2 side-effect**: `TeardownLayout` only renders the legacy `ArticleBody` (which held the quick-answer markdown) when `!businessContext`. Since D2 gave all 17 a businessContext, the quick-answer rendered ONLY in JSON-LD FAQ, never visibly. (No content lost — structured components render everything; ArticleBody was the legacy fallback.)
 - **Added visible rendering**: new `quickAnswer?: string` field + `QuickAnswerBlock.tsx` + `publish-article.ts` loader (reads `sections/02-quick-answer.final.md`). Renders a "Quick answer" callout at the top of every teardown. Republished all 17. Verified: snippet now appears 2× in SSR HTML (visible block + JSON-LD FAQ). New CLI: `cro-teardown:business-context` also added earlier.
-- **Known minor gap**: quick-answer not in `post.toc` sidebar (block is at the very top, so no link needed). Deploy still pending (commits local only).
+- **Known minor gap**: quick-answer not in `post.toc` sidebar (block is at the very top, so no link needed).
+- **Deploy pending**: all commits are local only (not pushed to Vercel). Live site does not yet reflect: Unbounce in sitemap, businessContext on V1 articles, or QuickAnswerBlock on all 17 teardowns.
 
 ### 2026-06-13 (later) — Full system audit + owned-source fix
 
@@ -237,8 +238,8 @@ These are legitimate references. Do **not** flag them as hallucinations.
 |-------|--------|------------|
 | ~~V3 judge calibration gap~~ / ~~Judge-writer voice mismatch~~ | **RESOLVED (confirmed 2026-06-13 audit)** — `final-judge.ts` is fully V5: 7 dimensions (evidenceAccuracy/plainLanguage/scannability/searchableHeadings/specificity/rhythmAndOpening/founderTakeaway), no `mechanismQuality`, pass ≥90. The need for `--force` is now real content quality (<90), not a broken rubric. | N/A |
 | Owned playbook sources flagged as hallucinations | **RESOLVED 2026-06-13** — judge + writer now whitelist Landing Page Playbook 2026 / Growth Playbook 2026 as first-party evidence (commit 6a67504) | N/A |
-| 02-quick-answer is a STUB, not implemented — has an evidence-source mapping in `writing-config.ts` + one `isIntro` reference in `section-writer.ts`, but NO `SECTION_META` (no prompt/goal/word-target), NOT in `SECTION_ORDER`, no assembler/React handling. The HANDOFF claim it was "added" was overstated. | Deferred by decision 2026-06-13 — documented stub, left as-is | To activate later: write SECTION_META['02-quick-answer'] (≤75-word featured-snippet target), add to SECTION_ORDER + SECTION_HEADINGS, test one compose |
-| Unbounce not in sitemap; dist stale (predates Unbounce, has phantom happi/loom routes) | Open (audit P0 E1/E2) | Rebuild + regen sitemap + redeploy |
+| 02-quick-answer stub | **RESOLVED 2026-06-13** — full `SECTION_META` spec (≤75-word featured-snippet), added to `SECTION_ORDER` + `SECTION_HEADINGS`, all 17 backfilled, `QuickAnswerBlock.tsx` renders visibly + JSON-LD FAQ. 2× in SSR HTML confirmed. | N/A |
+| Unbounce not in sitemap; dist stale | **RESOLVED 2026-06-13** — sitemap regenerated (17 teardowns incl. Unbounce), SSR prerendered, phantom happi/loom dist routes removed | N/A |
 | 17 existing articles in V3 voice — no V5 backfill performed; regenerating with `--force` will rewrite in V5 plain-explainer voice | Open by design — V5 only applies to new articles going forward | Run compose `--force` per slug when ready to upgrade an article |
 | H2/H3 concatenation normalization — FIXED 2026-06-13 | Resolved — `cleanBodyText` now applied to h2/h3 in normalize-page-text.ts | N/A |
 | H1 concatenation normalization — FIXED 2026-06-13 | Resolved — `cleanBodyText` now applied to all 7 h1 extraction sites in article-blueprint.ts | N/A |
@@ -291,13 +292,14 @@ Default threshold 0.96 is often too aggressive — use `--threshold 0.99` for mo
 | `scripts/cro-teardown/section-writer.ts` | Writer + critic loop per section — V5 voice (plain explainer, H3 sub-blocks, 6-section order incl. 02-quick-answer) |
 | `scripts/cro-teardown/generate-lesson-cards.ts` | LLM-powered "Patterns worth borrowing" cards — per-company titles, validated output, writes lesson-cards.json |
 | `scripts/cro-teardown/final-judge.ts` | Article judge — V3 criteria; mechanismQuality dimension conflicts with V5 voice; needs rewrite |
-| `scripts/cro-teardown/publish-article.ts` | Writes .ts article file + registers it + loads businessContext |
+| `scripts/cro-teardown/publish-article.ts` | Writes .ts article file + registers it + loads businessContext + quickAnswer |
 | `scripts/cro-teardown/backfill-publish-dates.ts` | One-time backfill of publishedAt dates |
 | `scripts/cro-teardown/config/writing-config.ts` | CTA variants, related post sets, slug hash, SECTION_ORDER |
 | `scripts/cro-teardown/normalize-page-text.ts` | Layer 1 — h1/h2/h3 concatenation normalization via `cleanBodyText()` |
 | `scripts/cro-teardown/article-blueprint.ts` | Phase 4A — builds CroTeardownPost shape + applies h1 normalization |
 | `src/content/cro-teardown/index.ts` | Article registry |
-| `src/content/cro-teardown/types.ts` | CroTeardownPost type definition (includes businessContext field) |
+| `src/content/cro-teardown/types.ts` | CroTeardownPost type definition (includes businessContext + quickAnswer fields) |
+| `src/components/cro-teardown/QuickAnswerBlock.tsx` | Renders ≤75-word featured-snippet TL;DR at top of teardown (orange callout box + JSON-LD source) |
 | `src/components/cro-teardown/BusinessContextBlock.tsx` | Renders 3-paragraph businessContext in styled box (new V6) |
 | `src/components/cro-teardown/TeardownLayout.tsx` | 8-section layout with dark eyebrow lessons section (new V6) |
 | `src/components/cro-teardown/CtaEvolutionTable.tsx` | Dual-mode table: mode='cta' or mode='headings' + empty state |
