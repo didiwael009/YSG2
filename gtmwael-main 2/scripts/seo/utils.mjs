@@ -158,11 +158,11 @@ const parseFaqFromArticleBody = (articleBody, companyName, fromLabel, toLabel) =
 
 /**
  * Converts CRO teardown posts to SeoRoute objects for the build pipeline.
- * Article pages use /cro-teardowns/:slug/ (trailing slash canonical).
+ * No trailing slash — must match getCanonicalUrl in src/lib/seo.ts which strips them.
  */
 export const createCroTeardownSeoRoutes = (posts) =>
   posts.map((post) => ({
-    path: `/cro-teardowns/${post.slug}/`,
+    path: `/cro-teardowns/${post.slug}`,
     title: post.metaTitle,
     socialTitle: post.title,
     description: post.description,
@@ -174,7 +174,7 @@ export const createCroTeardownSeoRoutes = (posts) =>
     dateModified: post.publishedAt ?? post.datePublished,
     breadcrumbs: [
       { name: "CRO Teardowns", path: "/cro-teardowns" },
-      { name: post.companyName, path: `/cro-teardowns/${post.slug}/` },
+      { name: post.companyName, path: `/cro-teardowns/${post.slug}` },
     ],
     excerpt: post.excerpt,
     schemaType: "Article",

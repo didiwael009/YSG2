@@ -147,9 +147,12 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
           </div>
         </div>
 
-        <div className="pt-10 mt-10 border-t border-border text-center">
+        <div className="pt-10 mt-10 border-t border-border text-center space-y-1">
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} Wael Aouididi. All rights reserved.
+          </p>
+          <p className="text-muted-foreground/60 text-xs">
+            Services provided by Growapp Ltd · Registered in England and Wales
           </p>
         </div>
       </div>

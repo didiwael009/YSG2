@@ -912,7 +912,7 @@ const blogPostToSeoRoute = (post: (typeof blogPosts)[number]): SeoRoute => ({
 });
 
 const croTeardownToSeoRoute = (post: CroTeardownPost): SeoRoute => ({
-  path: `/cro-teardowns/${post.slug}/`,
+  path: `/cro-teardowns/${post.slug}`,
   title: post.metaTitle,
   socialTitle: post.title,
   description: post.description,
@@ -924,7 +924,7 @@ const croTeardownToSeoRoute = (post: CroTeardownPost): SeoRoute => ({
   dateModified: post.publishedAt ?? post.datePublished,
   breadcrumbs: [
     { name: "CRO Teardowns", path: "/cro-teardowns" },
-    { name: post.companyName, path: `/cro-teardowns/${post.slug}/` },
+    { name: post.companyName, path: `/cro-teardowns/${post.slug}` },
   ],
   excerpt: post.excerpt,
   schemaType: "Article",
