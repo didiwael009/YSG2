@@ -132,6 +132,8 @@ interface NormalizedText {
     h1?: string[];
     h2?: string[];
     h3?: string[];
+    ctas?: string[];
+    navLinks?: string[];
   };
 }
 
@@ -196,21 +198,40 @@ function buildCompressedEvidence(writingDir: string): Record<string, unknown> {
     // Page title changes — writers see this via normalized-page-text; judge must too
     pageTitles,
 
-    // Structural changes (counts + top examples)
-    h2Added:      ds?.h2Added?.slice(0, 10) ?? [],
-    h2AddedTotal: ds?.h2Added?.length ?? 0,
-    h2Removed:    ds?.h2Removed?.slice(0, 10) ?? [],
-    h2RemovedTotal: ds?.h2Removed?.length ?? 0,
+    // Structural changes — full arrays, no truncation
+    h2Added:      ds?.h2Added   ?? [],
+    h2Removed:    ds?.h2Removed ?? [],
 
-    ctaAdded:     ds?.ctaAdded?.slice(0, 10) ?? [],
-    ctaRemoved:   ds?.ctaRemoved?.slice(0, 10) ?? [],
+    ctaAdded:     ds?.ctaAdded   ?? [],
+    ctaRemoved:   ds?.ctaRemoved ?? [],
 
-    navAdded:     ds?.navAdded?.slice(0, 8) ?? [],
-    navRemoved:   ds?.navRemoved?.slice(0, 8) ?? [],
+    navAdded:     ds?.navAdded   ?? [],
+    navRemoved:   ds?.navRemoved ?? [],
 
     // H3 snapshot (structural context writers have)
-    h3From: norm?.from?.raw?.h3?.slice(0, 8) ?? [],
-    h3To:   norm?.to?.raw?.h3?.slice(0, 8)   ?? [],
+    h3From: norm?.from?.raw?.h3 ?? [],
+    h3To:   norm?.to?.raw?.h3   ?? [],
+
+    // Full structured page content from both versions.
+    // Writers have access to ALL of this. The judge must see the same
+    // to correctly verify copy citations (navLinks, ctas, product names)
+    // before calling them unsupported.
+    pageContentFrom: norm?.from?.raw ? {
+      title:    norm.from.raw.title,
+      h1:       norm.from.raw.h1,
+      h2:       norm.from.raw.h2,
+      h3:       norm.from.raw.h3,
+      ctas:     norm.from.raw.ctas,
+      navLinks: norm.from.raw.navLinks,
+    } : null,
+    pageContentTo: norm?.to?.raw ? {
+      title:    norm.to.raw.title,
+      h1:       norm.to.raw.h1,
+      h2:       norm.to.raw.h2,
+      h3:       norm.to.raw.h3,
+      ctas:     norm.to.raw.ctas,
+      navLinks: norm.to.raw.navLinks,
+    } : null,
 
     // Data quality
     dataQuality: bp.dataQuality ?? null,
@@ -427,6 +448,17 @@ SCORING RUBRIC — score each dimension, then give a holistic overallScore (0–
   PENALISE -1 per H3 block with no founder-facing takeaway.
   PENALISE -2 if the final runnable test is generic ("test your CTA") with no evidence anchor.
 
+PAGE CONTENT IS VERIFIED EVIDENCE:
+pageContentFrom and pageContentTo contain the complete structured text extracted from both page
+versions — every headline, CTA, nav item, product name, and H2/H3 heading that appeared on
+the actual pages. BEFORE flagging any phrase as an unsupportedClaim, check whether it appears
+verbatim or near-verbatim in navLinks, ctas, h1, h2, h3, or title of either pageContent object.
+If it is there, it is verified — do NOT flag it. The navLinks field in particular contains
+product names and sub-nav descriptions (e.g. "DiscoveryAd search engine with over 100M ads")
+that writers cite by their short-form names ("Discovery", "Lens", "Briefs") — these are verified.
+The businessContextResearch.key_events summaries are also valid sources for product names and
+company milestones that appear there.
+
 MECHANISM NAMES ARE NOT UNSUPPORTED CLAIMS:
 Named interpretive frameworks applied to the evidence are ALLOWED and REQUIRED by the writing system:
   "qualification filter," "category claim," "ICP narrowing," "aspiration positioning,"
@@ -506,7 +538,10 @@ ${articleText}
 Score each V5 rubric dimension. Apply pass logic: overallScore >= 90 AND unsupportedClaims empty.
 
 EVIDENCE CHECK — answer before scoring:
-1. Is any specific metric, percentage threshold, or conversion rate cited that is NOT in the evidence above? List the exact phrase.
+IMPORTANT: Before flagging any copy phrase, product name, CTA, or nav text as unsupported,
+search for it in pageContentFrom.navLinks, pageContentFrom.ctas, pageContentTo.navLinks,
+pageContentTo.ctas, and the h2/h3 arrays. If it appears there, it is verified — skip it.
+1. Is any specific metric, percentage threshold, or conversion rate cited that is NOT in the evidence above AND NOT in pageContentFrom/pageContentTo? List the exact phrase.
 2. Does any sentence predict a conversion outcome ("trial-start volume will...", "this will cost you pipeline") without data? List the exact phrase.
 3. Does any sentence assert company intent or internal strategy ("Shopify decided to...", "their strategy was...")? List the exact phrase.
 
