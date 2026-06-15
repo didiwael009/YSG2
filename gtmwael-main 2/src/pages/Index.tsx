@@ -8,12 +8,16 @@ import TestimonialSection from "@/components/TestimonialSection";
 import GTMSystemSection from "@/components/GTMSystemSection";
 import ServicesSection from "@/components/ServicesSection";
 import Footer from "@/components/Footer";
+import CroTeardownPromo from "@/components/CroTeardownPromo";
 
 const Index = () => {
   return (
     <main className="min-h-screen bg-background overflow-x-hidden">
       <Navigation />
       <HeroSection />
+      <SectionDivider variant="curve-to-light" />
+      <CroTeardownPromo />
+      <SectionDivider variant="curve-to-dark" />
       <SectionDivider variant="glow" />
       <DeferredSection fallbackHeight={760} idleDelay={8000}>
         <ExperienceSection />
