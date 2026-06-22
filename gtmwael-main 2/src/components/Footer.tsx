@@ -42,7 +42,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
   const socials = [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/aouididi-wael-81b7037a/", icon: <Linkedin className="w-4 h-4" /> },
     { label: "Behance", href: "https://www.behance.net/waelaouididi/", icon: <BehanceIcon /> },
-    { label: "Upwork", href: "https://www.upwork.com/freelancers/~0141da0e8c48042461", icon: <UpworkIcon /> },
+    { label: "Upwork", href: "https://www.upwork.com/freelancers/~0172dd07fc1cdd655c", icon: <UpworkIcon /> },
   ];
 
   return (

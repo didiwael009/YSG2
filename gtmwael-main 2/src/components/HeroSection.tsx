@@ -43,7 +43,7 @@ const HeroSection = () => {
             <div className="relative z-[2] text-center lg:text-left order-2 lg:order-1 max-w-xl lg:max-w-lg">
                {/* Top Rated Upwork badge */}
                <a
-                 href="https://www.upwork.com/freelancers/~0141da0e8c48042461"
+                 href="https://www.upwork.com/freelancers/~0172dd07fc1cdd655c"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full mb-4 md:animate-fade-up md:opacity-0 group hover:brightness-110 transition-all"

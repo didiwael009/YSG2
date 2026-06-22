@@ -106,7 +106,7 @@ const SeoManager = () => {
           sameAs: [
             "https://www.linkedin.com/in/aouididi-wael-81b7037a/",
             "https://www.behance.net/waelaouididi/",
-            "https://www.upwork.com/freelancers/~0141da0e8c48042461",
+            "https://www.upwork.com/freelancers/~0172dd07fc1cdd655c",
           ],
         },
         {

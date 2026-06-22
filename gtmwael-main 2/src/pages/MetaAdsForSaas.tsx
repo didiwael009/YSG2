@@ -532,7 +532,7 @@ export default function MetaAdsForSaas() {
                 <div className="flex items-center justify-between">
                   <p className="text-xs text-muted-foreground font-medium">— Verified Upwork client</p>
                   <a
-                    href="https://www.upwork.com/freelancers/~0141da0e8c48042461"
+                    href="https://www.upwork.com/freelancers/~0172dd07fc1cdd655c"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-xs text-primary hover:underline flex items-center gap-1"

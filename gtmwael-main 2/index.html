@@ -32,12 +32,23 @@
           })(window, document, "clarity", "script", "w6e41wrf43");
         }
 
+        function loadCrisp() {
+          if (window.$crisp) return;
+          window.$crisp = [];
+          window.CRISP_WEBSITE_ID = "e9727d7f-3999-4e3a-b72a-f7de8c03969d";
+          var s = document.createElement('script');
+          s.src = 'https://client.crisp.chat/l.js';
+          s.async = 1;
+          document.head.appendChild(s);
+        }
+
         function loadAnalytics() {
           events.forEach(function(e){
             window.removeEventListener(e, loadAnalytics);
           });
           loadGTM();
           loadClarity();
+          loadCrisp();
         }
 
         function scheduleDelayedLoad() {
@@ -103,6 +114,8 @@
       .bg-hero-gradient{background:linear-gradient(180deg,hsl(240 30% 4%) 0%,hsl(260 35% 10%) 50%,hsl(240 30% 4%) 100%)}
       .min-h-screen{min-height:100vh}
       .container{width:100%;margin-left:auto;margin-right:auto;max-width:1280px}
+      /* Hide SEO prerender skeleton — React replaces it; crawlers still read the HTML source */
+      [data-prerender-home]{display:none}
       /* Fade-up animation */
       @keyframes fade-up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
       .animate-fade-up{animation:fade-up 0.5s ease-out forwards}
