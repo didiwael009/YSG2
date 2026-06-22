@@ -114,12 +114,7 @@ const Book = () => {
           <p className="mt-5 md:mt-6 text-base md:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">
             I fix messaging, landing pages, and tracking before you scale ads.
           </p>
-          <p className="mt-4 text-sm md:text-base font-semibold text-foreground">
-            <span className="text-primary">4×</span> revenue growth
-            <span className="mx-2 text-muted-foreground">·</span>
-            <span className="text-primary">+300%</span> conversion lift
-          </p>
-          <p className="mt-5 text-sm text-muted-foreground">
+          <p className="mt-6 text-sm text-muted-foreground">
             Calendar not loading?{" "}
             <a
               href={CALENDLY_URL}
