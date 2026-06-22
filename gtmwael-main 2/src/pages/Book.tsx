@@ -119,6 +119,33 @@ const Book = () => {
             <span className="mx-2 text-muted-foreground">·</span>
             <span className="text-primary">+300%</span> conversion lift
           </p>
+          <p className="mt-5 text-sm text-muted-foreground">
+            Calendar not loading?{" "}
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 font-semibold text-primary transition-colors hover:text-primary/80"
+            >
+              Open it in a new tab
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden
+              >
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+            </a>
+          </p>
         </div>
       </section>
 
@@ -188,37 +215,6 @@ const Book = () => {
               </button>
             )}
           </div>
-
-          {/* Prominent fallback — shown once the widget area is loading, so anyone
-              looking at a slow/empty calendar can escape to the full-page booker. */}
-          {loaded && (
-            <div className="mt-4 flex flex-col items-center gap-1.5">
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-5 py-2.5 text-sm font-semibold text-primary transition-colors hover:bg-primary/20"
-              >
-                Calendar not loading? Open it in a new tab
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="15"
-                  height="15"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden
-                >
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                  <polyline points="15 3 21 3 21 9" />
-                  <line x1="10" y1="14" x2="21" y2="3" />
-                </svg>
-              </a>
-            </div>
-          )}
 
           {/* Reassurance */}
           <ul className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-8 text-sm text-muted-foreground">
