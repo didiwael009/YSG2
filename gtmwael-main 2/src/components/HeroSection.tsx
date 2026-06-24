@@ -63,18 +63,18 @@ const HeroSection = () => {
                   style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
                 >
                   <span className="absolute inset-0 bg-[hsl(260_50%_45%/0.2)] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110" />
-                  Not enough signups?
+                  Your SaaS growth team.
                 </span>
-                <span 
+                <span
                   className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-gradient leading-[1] mt-1.5 md:animate-fade-up md:opacity-0 cursor-default"
                   style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}
                 >
-                  I find what's broken — and fix it.
+                  Without hiring 3 people.
                 </span>
               </h1>
-              
+
               <p className="text-sm md:text-base text-muted-foreground mb-4 leading-[1.45] max-w-[55ch] md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
-                I help SaaS teams fix unclear positioning, rebuild key pages, and improve conversion before scaling traffic.
+                Positioning, conversion, SEO, outreach &amp; paid creative — run by one ex-SaaS operator at the speed of AI, for a fraction of a full-time team.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-2.5 md:animate-fade-up md:opacity-0" style={{ animationDelay: '350ms', animationFillMode: 'forwards' }}>
@@ -91,41 +91,52 @@ const HeroSection = () => {
                 {[
                   { stat: "4×", desc: "Revenue growth", tag: "ZEMBRA · B2B" },
                   { stat: "+300%", desc: "CVR lift", tag: "LANDING · CRO" },
-                  { stat: "2×", desc: "SaaS founder", tag: "BUILT FROM ZERO" },
+                  { stat: "Built & sold", desc: "SaaS founder", tag: "ON APPSUMO" },
                 ].map((card, i) => (
                   <div key={i} className="border border-border/30 rounded-lg px-2.5 py-1.5 flex items-center gap-2">
-                    <p className="text-lg font-bold text-primary flex-shrink-0 whitespace-nowrap">{card.stat}</p>
+                    <p className={`${card.stat.length > 4 ? "text-sm leading-tight" : "text-lg whitespace-nowrap"} font-bold text-primary flex-shrink-0`}>{card.stat}</p>
                     <div className="min-w-0">
-                      <p className="text-xs text-foreground/80 leading-tight truncate">{card.desc}</p>
-                      <p className="text-[9px] text-primary/70 uppercase tracking-wider mt-0.5 truncate">{card.tag}</p>
+                      <p className="text-xs text-foreground/80 leading-tight">{card.desc}</p>
+                      <p className="text-[9px] text-primary/70 uppercase tracking-wider mt-0.5">{card.tag}</p>
                     </div>
                   </div>
                 ))}
               </div>
 
-              {/* Logo strip */}
-              <div className="mt-8 md:animate-fade-up md:opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
-                <p className="text-[10px] text-muted-foreground/60 uppercase tracking-widest mb-3">Trusted by founders at</p>
-                <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8 md:gap-10 overflow-x-auto scrollbar-hide pb-2 -mb-2">
-                  {logos.map((logo, index) => (
-                    <button
-                      key={index}
-                      onClick={() => handleLogoClick(logo.scrollTo)}
-                      className="group flex-shrink-0 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
-                      aria-label={`View ${logo.alt} case study`}
-                    >
-                      <img 
-                        src={logo.src} 
-                        alt={logo.alt} 
-                        width={80}
-                        height={22}
-                        loading="lazy"
-                        style={{ height: `calc(${logo.height} * 0.85)` }}
-                        className={`w-auto opacity-50 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 sm:scale-100 ${logo.invert ? 'brightness-0 invert grayscale group-hover:grayscale-0' : 'grayscale group-hover:grayscale-0'}`}
-                      />
-                    </button>
-                  ))}
+              {/* Logo strip + testimonial */}
+              <div className="mt-8 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 md:animate-fade-up md:opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
+                <div>
+                  <p className="text-[10px] text-muted-foreground/60 uppercase tracking-widest mb-3">Trusted by founders at</p>
+                  <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8 md:gap-10 overflow-x-auto scrollbar-hide pb-2 -mb-2">
+                    {logos.map((logo, index) => (
+                      <button
+                        key={index}
+                        onClick={() => handleLogoClick(logo.scrollTo)}
+                        className="group flex-shrink-0 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+                        aria-label={`View ${logo.alt} case study`}
+                      >
+                        <img
+                          src={logo.src}
+                          alt={logo.alt}
+                          width={80}
+                          height={22}
+                          loading="lazy"
+                          style={{ height: `calc(${logo.height} * 0.85)` }}
+                          className={`w-auto opacity-50 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 sm:scale-100 ${logo.invert ? 'brightness-0 invert grayscale group-hover:grayscale-0' : 'grayscale group-hover:grayscale-0'}`}
+                        />
+                      </button>
+                    ))}
+                  </div>
                 </div>
+
+                <blockquote className="border-l-2 border-primary pl-4 lg:pl-5 text-left max-w-xs">
+                  <p className="text-sm text-foreground/90 leading-snug">
+                    "Shipped more in two weeks than our last full-time hire did in a quarter."
+                  </p>
+                  <footer className="text-xs text-muted-foreground mt-1.5">
+                    — Khoubeib, Founder of Zembra
+                  </footer>
+                </blockquote>
               </div>
             </div>
 
