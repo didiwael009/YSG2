@@ -73,7 +73,7 @@ const HeroSection = () => {
                 </span>
               </h1>
 
-              <p className="text-sm md:text-base text-muted-foreground mb-4 leading-[1.45] max-w-[55ch] md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
+              <p className="text-sm md:text-base text-muted-foreground mb-4 leading-[1.45] max-w-[55ch] text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
                 Positioning, conversion, SEO, outreach &amp; paid creative — run by one ex-SaaS operator at the speed of AI, for a fraction of a full-time team.
               </p>
               
