@@ -77,10 +77,15 @@ const HeroSection = () => {
                 Positioning, conversion, SEO, outreach &amp; paid creative — run by one ex-SaaS operator at the speed of AI, for a fraction of a full-time team.
               </p>
               
-              <div className="flex flex-col sm:flex-row items-center gap-2.5 md:animate-fade-up md:opacity-0" style={{ animationDelay: '350ms', animationFillMode: 'forwards' }}>
-                <PrimaryCTA href="/book">
-                  Book a 20-min GTM Audit
-                </PrimaryCTA>
+              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2.5 md:animate-fade-up md:opacity-0" style={{ animationDelay: '350ms', animationFillMode: 'forwards' }}>
+                <div className="flex flex-col items-center">
+                  <PrimaryCTA href="/book">
+                    Book a free 20-min GTM audit
+                  </PrimaryCTA>
+                  <p className="hidden sm:block text-xs text-muted-foreground mt-2 whitespace-nowrap">
+                    Free · no commitment
+                  </p>
+                </div>
                 <SecondaryCTA href="/pricing">
                   See Offers
                 </SecondaryCTA>
