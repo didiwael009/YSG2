@@ -93,9 +93,11 @@ const HeroSection = () => {
                   { stat: "+300%", desc: "CVR lift", tag: "LANDING · CRO" },
                   { stat: "Built & sold", desc: "SaaS founder", tag: "ON APPSUMO" },
                 ].map((card, i) => (
-                  <div key={i} className="border border-border/30 rounded-lg px-2.5 py-1.5 flex items-center gap-2">
-                    <p className={`${card.stat.length > 4 ? "text-sm leading-tight" : "text-lg whitespace-nowrap"} font-bold text-primary flex-shrink-0`}>{card.stat}</p>
-                    <div className="min-w-0">
+                  <div key={i} className="border border-border/40 bg-foreground/[0.02] rounded-lg flex items-stretch overflow-hidden">
+                    <div className="flex items-center justify-center sm:justify-start w-[104px] sm:w-auto flex-shrink-0 px-3 py-2.5 sm:px-2.5">
+                      <p className={`${card.stat.length > 6 ? "text-sm leading-none text-center" : "text-lg whitespace-nowrap"} font-bold text-primary`}>{card.stat}</p>
+                    </div>
+                    <div className="flex flex-col justify-center min-w-0 border-l border-border/40 px-3 py-2 sm:px-2.5">
                       <p className="text-xs text-foreground/80 leading-tight">{card.desc}</p>
                       <p className="text-[9px] text-primary/70 uppercase tracking-wider mt-0.5">{card.tag}</p>
                     </div>
