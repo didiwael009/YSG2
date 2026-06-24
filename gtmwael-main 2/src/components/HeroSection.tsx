@@ -21,6 +21,7 @@ const HeroSection = () => {
   };
 
   return (
+    <>
     <section className="relative min-h-screen flex items-center justify-center bg-hero-gradient" style={{ overflow: 'visible' }}>
 
       {/* Noise texture overlay */}
@@ -34,13 +35,13 @@ const HeroSection = () => {
       {/* Background glow - z-0 */}
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[hsl(260_60%_50%/0.12)] rounded-full blur-[120px] animate-pulse-glow z-0" />
       
-      <div className="container relative px-4 py-20 md:py-28 lg:py-0 lg:min-h-screen lg:flex lg:items-center lg:justify-center" style={{ overflow: 'visible' }}>
+      <div className="container relative px-4 pt-16 pb-8 md:py-28 lg:py-0 lg:min-h-screen lg:flex lg:items-center lg:justify-center" style={{ overflow: 'visible' }}>
         <div className="w-full max-w-5xl mx-auto" style={{ overflow: 'visible' }}>
           {/* Editorial overlap composition */}
           <div className="relative flex flex-col lg:flex-row items-center lg:items-end justify-center gap-8 lg:gap-0" style={{ overflow: 'visible' }}>
             
             {/* Text column - z-2 */}
-            <div className="relative z-[2] text-center lg:text-left order-2 lg:order-1 max-w-xl lg:max-w-lg">
+            <div className="relative z-[2] text-center lg:text-left order-2 lg:order-1 max-w-xl">
                {/* Top Rated Upwork badge */}
                <a
                  href="https://www.upwork.com/freelancers/~0172dd07fc1cdd655c"
@@ -57,7 +58,7 @@ const HeroSection = () => {
                  </span>
                </a>
 
-               <h1 className="font-display font-bold tracking-[-0.03em] mb-4 text-left">
+               <h1 className="font-display font-bold tracking-[-0.03em] mb-3 text-left">
                <span 
                   className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-foreground leading-[1] md:animate-fade-up md:opacity-0 cursor-default transition-all duration-300 ease-out hover:tracking-[-0.01em] hover:brightness-110 relative group"
                   style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
@@ -73,7 +74,7 @@ const HeroSection = () => {
                 </span>
               </h1>
 
-              <p className="text-sm md:text-base text-muted-foreground mb-4 leading-[1.45] max-w-[55ch] text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
+              <p className="text-sm md:text-base text-muted-foreground mb-3 leading-[1.45] max-w-[55ch] text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
                 Positioning, conversion, SEO, outreach &amp; paid creative — run by one ex-SaaS operator at the speed of AI, for a fraction of a full-time team.
               </p>
               
@@ -92,7 +93,7 @@ const HeroSection = () => {
               </div>
 
               {/* Proof cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-6 md:animate-fade-up md:opacity-0" style={{ animationDelay: '450ms', animationFillMode: 'forwards' }}>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-4 md:animate-fade-up md:opacity-0" style={{ animationDelay: '450ms', animationFillMode: 'forwards' }}>
                 {[
                   { stat: "4×", desc: "Revenue growth", tag: "ZEMBRA · B2B" },
                   { stat: "+300%", desc: "CVR lift", tag: "LANDING · CRO" },
@@ -110,46 +111,35 @@ const HeroSection = () => {
                 ))}
               </div>
 
-              {/* Logo strip + testimonial */}
-              <div className="mt-8 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 md:animate-fade-up md:opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
-                <div className="text-center lg:text-left">
-                  <p className="text-[10px] text-muted-foreground/60 uppercase tracking-widest mb-3">Trusted by founders at</p>
-                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-3 sm:gap-x-8 md:gap-x-10">
-                    {logos.map((logo, index) => (
-                      <button
-                        key={index}
-                        onClick={() => handleLogoClick(logo.scrollTo)}
-                        className="group flex-shrink-0 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
-                        aria-label={`View ${logo.alt} case study`}
-                      >
-                        <img
-                          src={logo.src}
-                          alt={logo.alt}
-                          width={80}
-                          height={22}
-                          loading="lazy"
-                          style={{ height: `calc(${logo.height} * 0.85)` }}
-                          className={`w-auto opacity-50 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 sm:scale-100 ${logo.invert ? 'brightness-0 invert grayscale group-hover:grayscale-0' : 'grayscale group-hover:grayscale-0'}`}
-                        />
-                      </button>
-                    ))}
-                  </div>
+              {/* Logo strip */}
+              <div className="mt-5 text-center lg:text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
+                <p className="text-[10px] text-muted-foreground/60 uppercase tracking-widest mb-3">Trusted by founders at</p>
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-3 sm:gap-x-8 md:gap-x-10">
+                  {logos.map((logo, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleLogoClick(logo.scrollTo)}
+                      className="group flex-shrink-0 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+                      aria-label={`View ${logo.alt} case study`}
+                    >
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        width={80}
+                        height={22}
+                        loading="lazy"
+                        style={{ height: `calc(${logo.height} * 0.85)` }}
+                        className={`w-auto opacity-50 group-hover:opacity-100 transition-all duration-300 group-hover:scale-105 sm:scale-100 ${logo.invert ? 'brightness-0 invert grayscale group-hover:grayscale-0' : 'grayscale group-hover:grayscale-0'}`}
+                      />
+                    </button>
+                  ))}
                 </div>
-
-                <blockquote className="border-l-2 border-primary pl-4 lg:pl-5 text-left max-w-xs">
-                  <p className="text-sm text-foreground/90 leading-snug">
-                    "Shipped more in two weeks than our last full-time hire did in a quarter."
-                  </p>
-                  <footer className="text-xs text-muted-foreground mt-1.5">
-                    — Khoubeib, Founder of Zembra
-                  </footer>
-                </blockquote>
               </div>
             </div>
 
             {/* Founder image - z-3, free-floating with editorial overlap */}
             <div 
-              className="order-1 lg:order-2 relative z-[3] flex-shrink-0 md:animate-fade-up md:opacity-0 lg:-ml-16"
+              className="order-1 lg:order-2 relative z-[3] flex-shrink-0 md:animate-fade-up md:opacity-0 lg:ml-2"
               style={{ animationDelay: '150ms', animationFillMode: 'forwards', overflow: 'visible' }}
             >
               {/* Purple radial glow behind head */}
@@ -190,6 +180,21 @@ const HeroSection = () => {
       {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
     </section>
+
+    {/* Testimonial — slim band directly below the hero */}
+    <section className="relative bg-background border-y border-border/40">
+      <div className="container px-4 py-8 md:py-10">
+        <blockquote className="max-w-3xl mx-auto border-l-2 border-primary pl-5 text-left">
+          <p className="text-base md:text-lg text-foreground/90 leading-snug">
+            "Shipped more in two weeks than our last full-time hire did in a quarter."
+          </p>
+          <footer className="text-sm text-muted-foreground mt-2">
+            — Khoubeib, Founder of Zembra
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+    </>
   );
 };
 
