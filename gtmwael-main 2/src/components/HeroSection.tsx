@@ -105,9 +105,9 @@ const HeroSection = () => {
 
               {/* Logo strip + testimonial */}
               <div className="mt-8 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 md:animate-fade-up md:opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
-                <div>
+                <div className="text-center lg:text-left">
                   <p className="text-[10px] text-muted-foreground/60 uppercase tracking-widest mb-3">Trusted by founders at</p>
-                  <div className="flex items-center justify-center lg:justify-start gap-6 sm:gap-8 md:gap-10 overflow-x-auto scrollbar-hide pb-2 -mb-2">
+                  <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-3 sm:gap-x-8 md:gap-x-10">
                     {logos.map((logo, index) => (
                       <button
                         key={index}
