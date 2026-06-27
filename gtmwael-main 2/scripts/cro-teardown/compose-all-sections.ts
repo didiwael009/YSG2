@@ -596,6 +596,28 @@ async function main(): Promise<void> {
     }
   }
 
+  // ── Cross-article theses (anti-repetition context) ───────────────────────────
+  // Scan all OTHER slugs in data/cro-teardowns/ and collect their central_thesis
+  // from strategic-shift.json. Passed to the critic so it can flag if this
+  // article's sections echo conclusions already published for another brand.
+  const crossArticleTheses: string[] = [];
+  try {
+    const dataRoot = path.resolve(writingDir, '..', '..');
+    const entries = fs.readdirSync(dataRoot, { withFileTypes: true });
+    for (const entry of entries) {
+      if (!entry.isDirectory() || entry.name === cli.slug) continue;
+      const shiftPath = path.join(dataRoot, entry.name, 'writing', 'section-evidence', 'strategic-shift.json');
+      if (!fs.existsSync(shiftPath)) continue;
+      try {
+        const shift = JSON.parse(fs.readFileSync(shiftPath, 'utf-8')) as { central_thesis?: string };
+        if (shift.central_thesis) crossArticleTheses.push(`[${entry.name}] ${shift.central_thesis}`);
+      } catch { /* skip malformed file */ }
+    }
+  } catch { /* non-fatal — directory may not exist yet */ }
+  if (crossArticleTheses.length > 0) {
+    console.log(`\n  ✓ Cross-article anti-repetition: loaded ${crossArticleTheses.length} published theses`);
+  }
+
   // ── Section composition (parallel, bounded) ──────────────────────────────────
   // Sections are independent: each reads its own evidence and writes its own
   // .final.md. Whole-article cohesion is handled afterwards by cross-section-pass,
@@ -640,6 +662,7 @@ async function main(): Promise<void> {
         draftOnly:       cli.mode === 'draft',
         ...(cli.writerModel ? { writerModelOverride: cli.writerModel } : {}),
         ...(outlineSec ? { outlineOverride: { customH2: outlineSec.custom_h2 ?? null, customGoal: outlineSec.goal } } : {}),
+        ...(crossArticleTheses.length > 0 ? { crossArticleTheses } : {}),
         tracker:         sectionTracker,
         onLog:           sectionLog,
       });

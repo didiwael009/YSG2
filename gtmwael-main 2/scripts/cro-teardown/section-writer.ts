@@ -850,6 +850,17 @@ SCORING RUBRIC — score each dimension, then sum to 100:
   PENALISE -3 if the final test is generic ("audit your CTAs") instead of specific
     ("count how many primary CTAs above the fold require zero commitment").
 
+• redundancy (max 5)
+  The section does not repeat conclusions already made earlier in the article or
+  in other published teardowns. There are two types of repetition:
+    CALLBACK = references a prior conclusion and adds NEW information or a NEW angle → KEEP, score full marks
+    REDUNDANT = restates a prior conclusion without adding anything new → penalise
+  PENALISE -3 per REDUNDANT conclusion (same insight, different words, no new context).
+  PENALISE -2 per paragraph that could be the conclusion paragraph of a DIFFERENT article
+    in the same series (i.e. the insight is so generic it applies to any SaaS brand).
+  IMPORTANT: Cross-section callbacks are GOOD. Restatements that add no value are BAD.
+  If no ESTABLISHED CONCLUSIONS are listed below, score this dimension at full marks.
+
 HARD CAPS:
   Any conversion outcome claim without data → cap total at 60
   Section is missing H3 subheads (analytical sections only) → cap total at 75
@@ -905,6 +916,10 @@ export function buildCriticPrompt(
   evidence: Record<string, unknown>,
   draft: string,
   minScore: number,
+  opts?: {
+    /** Conclusions already stated in previously published teardown articles. */
+    crossArticleTheses?: string[];
+  },
 ): string {
   const meta = getSectionMeta(sectionId);
   const isIntro = sectionId === '01-intro' || sectionId === '02-quick-answer';
@@ -932,6 +947,14 @@ REQUIRED CHECKS — answer each before scoring:
 8. FOUNDER TAKEAWAY: ${analyticalSection ? `Does each H3 sub-block deliver its practical takeaway in the first two sentences? Is the final H3 block a specific, runnable test (under five minutes), anchored to this company's evidence?` : 'Not applicable for intro/quick-answer.'}
 9. BOLD QUOTES: Is every verbatim website quote (headlines, CTAs, nav items, section headings, meta descriptions) in **"bold quotes"**? Plain quotes only = required fix.
 10. WORD COUNT: Is the section within ${meta.wordRange.min}–${meta.wordRange.max} words? State approximate count. Flag if over.
+11. REDUNDANCY CHECK: For each analytical conclusion in this section, classify it:
+    CALLBACK = references a prior point AND adds new information or a different angle → acceptable, keep
+    REDUNDANT = restates a prior conclusion without adding new value → flag as required fix
+    Generic insight = the conclusion could appear in ANY teardown article → -2 specificity AND flag${
+      (opts?.crossArticleTheses?.length ?? 0) > 0
+        ? `\n    CROSS-ARTICLE THESES TO AVOID (already published — do not repeat these as this article's central conclusion):\n${opts!.crossArticleTheses!.map((t, i) => `    ${i + 1}. ${t}`).join('\n')}`
+        : '\n    No cross-article theses loaded for this run.'
+    }
 
 SECTION EVIDENCE (ground truth):
 ${JSON.stringify(evidence, null, 2)}
@@ -961,7 +984,8 @@ Output the JSON object now. Required shape:
     "searchableHeadings": <0–10>,
     "specificity": <0–15>,
     "rhythmAndOpening": <0–10>,
-    "founderTakeaway": <0–5>
+    "founderTakeaway": <0–5>,
+    "redundancy": <0–5>
   }
 }`;
 }
@@ -1101,6 +1125,12 @@ export interface WriteSectionOpts {
     customH2:   string | null;
     customGoal: string;
   };
+  /**
+   * Central theses from all previously published teardown articles.
+   * Injected into the critic's redundancy check so the critic can flag if this
+   * section's conclusion echoes a thesis already published for another brand.
+   */
+  crossArticleTheses?: string[];
   tracker: CostTracker;
   /** Called for each step so the caller controls console output and run-log. */
   onLog: (step: string, ok: boolean, detail?: string) => void;
@@ -1183,7 +1213,7 @@ export async function writeSectionLoop(
       () => callLLM({
         model: criticModel,
         system: CRITIC_SYSTEM,
-        messages: [{ role: 'user', content: buildCriticPrompt(sectionId, evidence, draft, minScore) }],
+        messages: [{ role: 'user', content: buildCriticPrompt(sectionId, evidence, draft, minScore, { crossArticleTheses: opts.crossArticleTheses }) }],
         maxTokens: criticMaxTokens, // Rec 3: per-section override (lightweight: 4096, analytical: 8192)
         cacheSystem: true,
       }),

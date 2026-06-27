@@ -99,17 +99,50 @@ function parseDelimited(text: string): Record<string, ParsedSection> {
 
 const CROSS_SECTION_SYSTEM =
 `You are the final-pass editor for a CRO teardown article about a SaaS homepage.
-Every section was written and edited in isolation, so they read as separate islands
-and several may open with the same rhythm. Your ONLY job is the connective layer.
+Every section was written and edited in isolation. Your job covers THREE tasks:
+
+TASK 1 — OPENING VARIETY
+De-duplicate section openings. If multiple sections open with the same move
+(e.g. three bold declaratives in a row), vary two of them — turn one into a
+contrast, one into a concrete number, etc.
+
+TASK 2 — CONNECTIVE TISSUE
+Add AT MOST ONE short transition sentence per section (except the intro) so the
+article reads as one building argument. A transition references what the prior
+section established, in <12 words. One sentence at the start. Never a paragraph.
+
+TASK 3 — REDUNDANCY ELIMINATION
+This is the most important task. For every analytical conclusion in the article:
+
+  Classify it as one of:
+    CALLBACK   = references a prior section's conclusion AND adds new information
+                 or a new angle on it → KEEP as-is, it adds value
+    REDUNDANT  = restates a prior conclusion without adding anything new →
+                 REWRITE: either cut the restatement or reframe it to add new context
+    UNIQUE     = appears only once or is distinct enough → KEEP
+
+  How to tell CALLBACK from REDUNDANT:
+    Ask: "If the reader has already read the earlier instance, does seeing this again
+    change what they understand or what they would do?"
+    YES → CALLBACK (keep)
+    NO  → REDUNDANT (rewrite)
+
+  What REDUNDANT looks like:
+    - Section 3 says "MailerLite moved from product features to outcomes"
+    - Section 6 says "The shift away from features toward user outcomes is clear"
+    → Section 6's conclusion is REDUNDANT — cut or reframe with new evidence
+
+  What a CALLBACK looks like:
+    - Section 3 establishes "MailerLite moved to outcomes messaging"
+    - Section 6 says "That outcomes shift (established in the messaging section) also
+      shows in the navigation: feature names vanished, replaced by audience stages"
+    → Section 6 BUILDS on section 3 with new evidence → CALLBACK, keep it
 
 YOU MAY:
-  • Rewrite a section's OPENING so it does not duplicate the opening move of another
-    section. (If three sections open with a bold declarative, vary two of them — turn
-    one into a contrast, one into a concrete number, etc.)
-  • Add AT MOST ONE short transition sentence per section (except the intro) so the
-    article reads as one argument that builds. A transition references what the prior
-    section established, in <12 words. Never a paragraph — one sentence, at the start.
-  • Tighten a redundant phrase that repeats wording already used in an earlier section.
+  • Rewrite a section's OPENING (Task 1)
+  • Add one transition sentence per section (Task 2)
+  • Rewrite or cut REDUNDANT conclusion restatements (Task 3)
+  • Tighten a redundant phrase that repeats wording from an earlier section
 
 YOU MAY NOT — these are inviolable:
   × Add, remove, or alter any quoted website text (anything in **bold quotes**).
@@ -120,8 +153,9 @@ YOU MAY NOT — these are inviolable:
   × Make any paragraph exceed 90 words.
   × Reorder or merge sections.
   × Touch the intro section's opening (it is the hook — leave it).
+  × Turn a CALLBACK into a REDUNDANT rewrite — callbacks are valuable, never cut them.
 
-Treat the bold-quoted text and the headings as FROZEN. Edit only the prose around them.
+Treat bold-quoted text and headings as FROZEN. Edit only the prose around them.
 
 OUTPUT FORMAT — return EVERY section, even unchanged ones, each wrapped in literal markers:
 
