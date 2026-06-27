@@ -5,10 +5,13 @@
  * The key is NEVER hardcoded.
  */
 
-import Anthropic from '@anthropic-ai/sdk';
+// Type-only import — erased at runtime, so this module loads even when the SDK
+// is not installed (e.g. no-API manual mode). The value is imported lazily in getClient().
+import type Anthropic from '@anthropic-ai/sdk';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import * as process from 'node:process';
+import { isManualMode, resolveManual } from './manual-provider.js';
 
 /**
  * Reads ANTHROPIC_API_KEY from a .env file in the project root.
@@ -39,7 +42,7 @@ function tryLoadDotEnv(): void {
 
 let _client: Anthropic | null = null;
 
-function getClient(): Anthropic {
+async function getClient(): Promise<Anthropic> {
   if (!_client) {
     if (!process.env.ANTHROPIC_API_KEY) tryLoadDotEnv();
 
@@ -49,10 +52,13 @@ function getClient(): Anthropic {
         'ANTHROPIC_API_KEY is not set.\n\n' +
         'Create a file called  .env  in the root of the project and add this line:\n\n' +
         '  ANTHROPIC_API_KEY=sk-ant-your-key-here\n\n' +
-        'Save the file and run the command again.',
+        'Save the file and run the command again.\n\n' +
+        '(Or run in no-API mode: set CRO_MANUAL=<slug> to fulfil agent calls manually.)',
       );
     }
-    _client = new Anthropic({ apiKey: apiKey.trim() });
+    // Lazy import so the SDK is only required when an actual API call is made.
+    const { default: AnthropicSDK } = await import('@anthropic-ai/sdk');
+    _client = new AnthropicSDK({ apiKey: apiKey.trim() });
   }
   return _client;
 }
@@ -81,7 +87,13 @@ export async function callLLM(opts: {
    */
   cacheSystem?: boolean;
 }): Promise<LLMResponse> {
-  const client = getClient();
+  // No-API multi-agent mode: fulfil this call from a file written by Claude Code
+  // (or a Writer/Critic sub-agent) instead of hitting the paid API. See manual-provider.ts.
+  if (isManualMode()) {
+    return resolveManual({ model: opts.model, system: opts.system, messages: opts.messages });
+  }
+
+  const client = await getClient();
 
   const system = opts.cacheSystem
     ? [{ type: 'text' as const, text: opts.system, cache_control: { type: 'ephemeral' as const } }]

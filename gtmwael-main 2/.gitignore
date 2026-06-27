@@ -31,3 +31,6 @@ dist-ssr
 # CRO teardown pipeline — archive screenshots are pipeline inputs, not website assets
 # The website only serves /selected/*.webp — archive-monthly is never referenced by the frontend
 public/cro-teardowns/*/archive-monthly/
+
+# CRO teardown no-API manual mode — local agent prompt/response working files
+manual/

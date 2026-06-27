@@ -62,6 +62,7 @@ import { callLLM }            from './llm/anthropic-client.js';
 import { getModel }            from './llm/model-router.js';
 import { CostTracker, computeCallCost } from './llm/token-cost.js';
 import { withRetry }           from './llm/retry.js';
+import { CRO_PRINCIPLES }       from './cro-principles.js';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -164,7 +165,9 @@ and section headings.
 
 6. SAFER VERSION
    • A concrete, actionable alternative for a company that cannot yet take the same risk.
-   • Must include a specific element to change or test.`;
+   • Must include a specific element to change or test.
+
+${CRO_PRINCIPLES}`;
 
 // ─── User prompt builder ──────────────────────────────────────────────────────
 

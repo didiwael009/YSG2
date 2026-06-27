@@ -27,6 +27,7 @@ import { callLLM } from './llm/anthropic-client.js';
 import { getModel } from './llm/model-router.js';
 import { CostTracker, computeCallCost } from './llm/token-cost.js';
 import { withRetry } from './llm/retry.js';
+import { CRO_PRINCIPLES } from './cro-principles.js';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -174,7 +175,15 @@ Walk this checklist on your own draft before submitting:
       → If not, fix the formatting.
 
   [ ] Did I claim any outcome ("this increased X", "this caused Y")?
-      → If yes, rewrite as observation with a hedged inference.`;
+      → If yes, rewrite as observation with a hedged inference.
+
+  [ ] Does at least ONE card name the mechanism via a CRO framework (awareness
+      ladder, 7 Levels, category ladder, VoC) AND state what the move cost?
+      → A card that only narrates the change ("the headline got broader") is V1.
+        A card that names the trade-off ("broader headline = wider reach but lower
+        relevance — the wedge competitors can't copy is now below the fold") is V2.
+
+${CRO_PRINCIPLES}`;
 
 // ─── User prompt builder ─────────────────────────────────────────────────────
 

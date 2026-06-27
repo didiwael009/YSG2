@@ -48,6 +48,8 @@ export type CroTeardownPost = {
   category: string;
   title: string;
   h1: string;
+  /** Optional outline-driven hero headline; overrides h1 in the hero when present (Phase 4F). */
+  heroTitle?: string;
   metaTitle: string;
   description: string;
   excerpt: string;

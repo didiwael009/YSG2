@@ -30,9 +30,11 @@
     "cro-teardown:outline": "tsx scripts/cro-teardown/outline-generator.ts",
     "cro-teardown:qa": "tsx scripts/cro-teardown/qa-validator.ts",
     "cro-teardown:fix-text": "tsx scripts/cro-teardown/fix-page-text-extraction.ts",
-    "cro-teardown:rebuild-evidence": "tsx scripts/cro-teardown/rebuild-evidence.ts"
+    "cro-teardown:rebuild-evidence": "tsx scripts/cro-teardown/rebuild-evidence.ts",
+    "cro-teardown:manual": "node scripts/cro-teardown/manual-driver.mjs"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.106.0",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-label": "^2.1.7",
@@ -66,9 +68,11 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^15.15.0",
     "lovable-tagger": "^1.1.13",
+    "playwright": "^1.61.1",
     "postcss": "^8.5.6",
     "sharp": "^0.34.5",
     "tailwindcss": "^3.4.17",
+    "tsx": "^4.22.4",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19",
