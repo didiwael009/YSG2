@@ -1,0 +1,59 @@
+{
+  "sectionId": "04-messaging-evolution",
+  "companyName": "CrowdAnalyzer",
+  "companyUrl": "https://crowdanalyzer.com",
+  "articleTitle": "CrowdAnalyzer Homepage Teardown: Jul 2016 to Jun 2026",
+  "h1": "How CrowdAnalyzer rewrote its homepage over 10 years",
+  "fromLabel": "Jul 2016",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 29,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 5,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform",
+      "after": "Empowering Growth Through Data-Driven Insights",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Page title",
+      "before": "Crowd Analyzer | The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform",
+      "after": "Home - Crowd Analyzer"
+    }
+  ],
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2016 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "29 added · 0 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}

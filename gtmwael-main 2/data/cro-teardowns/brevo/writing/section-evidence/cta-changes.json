@@ -1,0 +1,20 @@
+{
+  "added": [
+    "Sign up free",
+    "Learn more",
+    "Explore Brevo for SMBs",
+    "Get a demo",
+    "Reject All",
+    "Email marketing",
+    "SMS marketing",
+    "WhatsApp campaigns",
+    "Push notifications",
+    "Mobile Wallet"
+  ],
+  "removed": [
+    "Get Brevo",
+    "Read customer stories",
+    "See all integrations",
+    "Why Brevo?"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "slug": "brevo",
+  "companyName": "Brevo",
+  "companyUrl": "https://www.brevo.com/",
+  "fromMonth": "2023-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-27T07:55:12.392Z",
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "snapshots": [
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/brevo/selected/2023-01.webp",
+      "timestamp": "20230504110254",
+      "originalUrl": "https://www.brevo.com/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/brevo/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://www.brevo.com/",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 1,
+    "titleChanges": 1,
+    "h2Added": [
+      "Join 600,000+ customers around the world who trust Brevo",
+      "Engage your audience your way",
+      "AI agents that work with you, and for you",
+      "Built for every business — from the first send to enterprise",
+      "Awarded for excellence",
+      "Real stories, real success",
+      "Brevo connects to the tools you already use",
+      "Ready to grow with Brevo?",
+      "Privacy Preferences Center"
+    ],
+    "h2Removed": [
+      "Wide reachClose connection",
+      "Everyone can grow with Brevo"
+    ],
+    "ctaAdded": [
+      "Sign up free",
+      "Learn more",
+      "Explore Brevo for SMBs",
+      "Get a demo",
+      "Reject All",
+      "Email marketing",
+      "SMS marketing",
+      "WhatsApp campaigns",
+      "Push notifications",
+      "Mobile Wallet"
+    ],
+    "ctaRemoved": [
+      "Get Brevo",
+      "Read customer stories",
+      "See all integrations",
+      "Why Brevo?"
+    ],
+    "navAdded": [
+      "Platform",
+      "Email",
+      "SMS",
+      "WhatsApp",
+      "Web & mobile push",
+      "Wallet",
+      "Phone",
+      "Solutions"
+    ],
+    "navRemoved": [
+      "Products",
+      "Features",
+      "Email marketing",
+      "SMS marketing",
+      "WhatsApp campaigns",
+      "Automation",
+      "Signup forms",
+      "Facebook ads"
+    ],
+    "headlines": [
+      {
+        "from": "Connections that spark growth",
+        "to": "Turn Every EmailSMSOrderInteraction into a Lifetime Customer",
+        "fromMonth": "2023-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [
+      {
+        "from": "Brevo helps you grow your business. Build customer relationships across email, SMS, chat, and more. Use the tools you need, when you need them. Try it for free.",
+        "to": "Brevo is the most intuitive all-in-one customer engagement platform: email and SMS marketing, automation, CRM, live chat, and transactional email. Try it free.",
+        "fromMonth": "2023-01",
+        "toMonth": "current"
+      }
+    ],
+    "visualOnly": false
+  }
+}

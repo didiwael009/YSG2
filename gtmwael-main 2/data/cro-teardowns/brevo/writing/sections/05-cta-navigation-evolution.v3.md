@@ -1,0 +1,9 @@
+## How Brevo's CTAs and navigation changed the sales motion
+
+### CTA changes: removing "Why Brevo?" is the most important signal
+
+In January 2023, Brevo's CTAs included **"Get Brevo," "Read customer stories," "See all integrations,"** and **"Why Brevo?"** — a set that assumes visitors need to be persuaded of the brand before they act. **"Get Brevo"** is a brand call, not a product call; it assumes the visitor does not yet know what they are signing up for. **"Why Brevo?"** is an explicit acknowledgment that the brand needs justification. By 2026, these CTAs have been removed. The replacements are **"Sign up free," "Get a demo," "Learn more,"** and **"Explore Brevo for SMBs"** — all oriented around actions, not brand explanations. The removal of **"Why Brevo?"** is a measurable brand-recall milestone: it means Brevo judged (or A/B tested) that visitors no longer need the brand justified in the CTA set.
+
+### Navigation changes: "Platform" replaces "Products" and channels become nav items
+
+In 2023, Brevo's navigation contained: **"Products | Features | Email marketing | SMS marketing | WhatsApp campaigns | Automation | Signup forms | Facebook ads."** By 2026, this became: **"Platform | Email | SMS | WhatsApp | Web & mobile push | Wallet | Phone | Solutions."** Three changes stand out. First, renaming **"Products"** to **"Platform"** is a category-level claim — platforms are infrastructure, products are features. Second, removing **"Facebook ads"** from the navigation suggests that channel was not generating meaningful traffic from the nav. Third, adding **"Wallet"** and **"Phone"** as channel nav items signals Brevo is competing on omnichannel breadth — every channel a customer might interact on has a dedicated nav entry. Visit your navigation and ask whether each nav item is a product name or a channel name — the distinction tells you whether you are positioning as a feature suite or as infrastructure.

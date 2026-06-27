@@ -1,0 +1,21 @@
+{
+  "score": 92,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Leads with the primary change and quotes both H1 versions verbatim — strong featured-snippet candidate under 75 words."
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 14,
+    "plainLanguage": 19,
+    "scannability": 14,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

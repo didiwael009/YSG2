@@ -1,0 +1,48 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "MailerLite",
+  "companyUrl": "https://www.mailerlite.com",
+  "articleTitle": "MailerLite Homepage Teardown: Jul 2015 to Jan 2026",
+  "h1": "How MailerLite rewrote its homepage over 11 years",
+  "fromLabel": "Jul 2015",
+  "toLabel": "Jan 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": false,
+    "snapshotCount": 4,
+    "h2Added": 4,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 0,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "cta-changes": {
+    "added": [
+      "Sign up free",
+      "Watch demo",
+      "Read more stories",
+      "Explore all templates",
+      "Nutt Labs",
+      "Notion VIP",
+      "All integrations",
+      "Landing pages",
+      "Preview template",
+      "This is how we keep it Lite"
+    ],
+    "removed": []
+  },
+  "h2-changes": {
+    "added": [
+      "You're in good company",
+      "Customer support is always here to help you",
+      "Templates that work",
+      "Keeping it Lite"
+    ],
+    "removed": []
+  }
+}

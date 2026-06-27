@@ -1,0 +1,9 @@
+## How MailerLite's CTAs and navigation shifted the sales motion
+
+### CTA changes: from no observed entry to a dual-motion setup
+
+No CTAs were preserved in the earliest Wayback captures. By January 2026, the page has two primary CTAs: **"Sign up free"** and **"Watch demo."** These are not alternatives — they serve different buyer intents. "Sign up free" assumes the visitor is ready to try the product immediately, which is a product-led, self-serve assumption. "Watch demo" assumes the visitor wants to understand the platform before committing — consistent with a buyer evaluating the tool for a team or business decision, not a personal signup. The presence of both on the same page suggests MailerLite is serving two visitor types without forcing a choice at the top of the page: the individual creator who will sign up now, and the small business owner who needs to evaluate first.
+
+### Navigation changes: eight items added, including two audience segments
+
+Between the earliest captured state and January 2026, eight navigation items were added: **"Features," "Pricing," "Gallery," "Templates," "Newsletters," "Websites," "Solopreneurs,"** and **"Small business."** The last two are the most unusual. Most SaaS navigation names products or features — "Newsletters" and "Websites" fit that pattern. But "Solopreneurs" and "Small business" are audience segments, not product categories. Putting buyer types in the nav signals that MailerLite believes differentiation lives in who they serve, not just what they offer. A solopreneur building a paid newsletter and a small business owner sending promotional emails have different questions. Segment navigation lets each find their path without reading the whole page. Visit your navigation today and ask whether your nav items tell a visitor who the product is for — or only what it does.

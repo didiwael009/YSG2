@@ -1,0 +1,355 @@
+{
+  "title": "Brevo (formerly Sendinblue) | CRM Suite",
+  "metaDescription": "Brevo helps you grow your business. Build customer relationships across email, SMS, chat, and more. Use the tools you need, when you need them. Try it for free.",
+  "h1": [
+    "Connections that spark growth"
+  ],
+  "h2": [
+    "Wide reachClose connection",
+    "Everyone can grow with Brevo"
+  ],
+  "h3": [
+    "Sendinblue is now Brevo!",
+    "Over 500,000+ customers trust Brevo",
+    "Awards",
+    "Brevo connects to the tools you already use",
+    "Ready to get started?"
+  ],
+  "ctas": [
+    "Get Brevo",
+    "Why Brevo?",
+    "SMBs",
+    "Startups",
+    "Agencies",
+    "Ecommerce",
+    "Enterprise",
+    "Read customer stories",
+    "See all integrations"
+  ],
+  "navLinks": [
+    "Products",
+    "Marketing PlatformCreate brilliant campaigns with email, SMS, automation, and more",
+    "Sales PlatformKeep a sharp eye on people, pipelines, leads, and deals",
+    "Brevo +A bespoke all-in-one digital marketing solution tailored to your needs",
+    "Transactional EmailSend thousands of emails right on cue with our powerful API",
+    "ConversationsBe there for your customers with our one-on-one chat tools",
+    "Features",
+    "Email marketing",
+    "SMS marketing",
+    "WhatsApp campaigns",
+    "Live chat",
+    "Chatbot",
+    "Automation",
+    "Signup forms",
+    "Facebook ads",
+    "Landing pages",
+    "Meetings",
+    "Deal pipelines",
+    "Email API",
+    "Pricing",
+    "Resources",
+    "Why Brevo?",
+    "Brevo Academy",
+    "Brevo Events",
+    "Press Room",
+    "Customer Stories",
+    "Help Center",
+    "Brevo API",
+    "Partners",
+    "Integrations",
+    "Platform Status",
+    "Product Releases",
+    "Read Our Blog"
+  ],
+  "bodyText": "ProductsOur productsMarketing PlatformCreate brilliant campaigns with email, SMS, automation, and moreSales PlatformKeep a sharp eye on people, pipelines, leads, and dealsBrevo +A bespoke all-in-one digital marketing solution tailored to your needsTransactional EmailSend thousands of emails right on cue with our powerful APIConversationsBe there for your customers with our one-on-one chat toolsFeaturesCommunicateEmail marketingSMS marketingWhatsApp campaignsLive chatChatbotEngageAutomationSignup formsFacebook adsLanding pagesManageMeetingsDeal pipelinesEmail APIPricingResourcesCommunityWhy Brevo?Brevo AcademyBrevo EventsPress RoomCustomer StoriesSupportHelp CenterBrevo APIPartnersIntegrationsPlatform StatusProduct ReleasesWhat is Email Marketing? Strategies & Tools to Get StartedRead Our Blog Connections that spark growthSay hello to Brevo — the platform that helps you build customer relationships across email, SMS, chat, and more.Get Brevo Wide reachClose connectionThe complete toolkit to turn one-time browsers into long-term customers.MARKETING PLATFORMSmart campaigns, lasting relationshipsEmail, SMS, WhatsApp – Brevo lets you create brilliant campaigns of all shapes and sizes.Find out moreSALES PLATFORMFollow your leads, close more dealsNever miss a window. Know who your leads are and where the opportunity lies.Find out moreCONVERSATIONSReal talk, in real timeStrike up meaningful conversations with personalized chat tools, from Instagram and WhatsApp to live chat.Find out moreTRANSACTIONAL EMAILTriggered emails, delivered at speedOur ultra-reliable email API processes millions of emails every day with a delivery rate of 99%.Find out moreNEWSSendinblue is now Brevo!New name, new look. Discover the story behind Sendinblue's rebranding.Why Brevo?Everyone can grow with BrevoSMBsStartupsAgenciesEcommerceEnterpriseRead customer stories\"Brevo is fantastic for keeping clients informed of upcoming shoots and the status of portrait collections. Plus, it offers great deliverability!\"Danie Wigzell, Owner at Pop-Up PortraitsSMBsRead customer storiesOver 500,000+ customers trust BrevoBusinesses across industries and around the world have built better customer relationships with Brevo.4.53700+ reviews4.51600+ reviews4.51600+ reviewsAwardsBrevo connects to the tools you already useBrevo runs alongside more than 150 leading digital tools, from CRM to CMS, ecommerce, and more.See all integrationsReady to get started?Create your free account, no credit card needed.Get BrevoABOUT USWhy Brevo?Brevo CareersPress RoomCarbon FootprintGDPRSecurityPRODUCTSMarketing PlatformConversationsSales PlatformTransactional EmailBrevo+COMMUNITYBlogEventsPartnersCustomer StoriesBrevo AcademySUPPORTHelp CenterContact usBrevo APIPlatform StatusProduct UpdatesIntegrationsCookie SettingsAnti-spamPrivacyUser AgreementLegal NoticeResponsible Disclosure© Brevo 2023. All rights reserved",
+  "elements": [
+    {
+      "text": "Products",
+      "type": "nav_link"
+    },
+    {
+      "text": "Marketing Platform Create brilliant campaigns with email, SMS, automation, and more",
+      "type": "nav_link"
+    },
+    {
+      "text": "Sales Platform Keep a sharp eye on people, pipelines, leads, and deals",
+      "type": "nav_link"
+    },
+    {
+      "text": "Brevo + A bespoke all-in-one digital marketing solution tailored to your needs",
+      "type": "nav_link"
+    },
+    {
+      "text": "Transactional Email Send thousands of emails right on cue with our powerful API",
+      "type": "nav_link"
+    },
+    {
+      "text": "Conversations Be there for your customers with our one-on-one chat tools",
+      "type": "nav_link"
+    },
+    {
+      "text": "Features",
+      "type": "nav_link"
+    },
+    {
+      "text": "Email marketing",
+      "type": "nav_link"
+    },
+    {
+      "text": "SMS marketing",
+      "type": "nav_link"
+    },
+    {
+      "text": "WhatsApp campaigns",
+      "type": "nav_link"
+    },
+    {
+      "text": "Live chat",
+      "type": "nav_link"
+    },
+    {
+      "text": "Chatbot",
+      "type": "nav_link"
+    },
+    {
+      "text": "Automation",
+      "type": "nav_link"
+    },
+    {
+      "text": "Signup forms",
+      "type": "nav_link"
+    },
+    {
+      "text": "Facebook ads",
+      "type": "nav_link"
+    },
+    {
+      "text": "Landing pages",
+      "type": "nav_link"
+    },
+    {
+      "text": "Meetings",
+      "type": "nav_link"
+    },
+    {
+      "text": "Deal pipelines",
+      "type": "nav_link"
+    },
+    {
+      "text": "Email API",
+      "type": "nav_link"
+    },
+    {
+      "text": "Pricing",
+      "type": "nav_link"
+    },
+    {
+      "text": "Resources",
+      "type": "nav_link"
+    },
+    {
+      "text": "Why Brevo?",
+      "type": "nav_link"
+    },
+    {
+      "text": "Brevo Academy",
+      "type": "nav_link"
+    },
+    {
+      "text": "Brevo Events",
+      "type": "nav_link"
+    },
+    {
+      "text": "Press Room",
+      "type": "nav_link"
+    },
+    {
+      "text": "Customer Stories",
+      "type": "nav_link"
+    },
+    {
+      "text": "Help Center",
+      "type": "nav_link"
+    },
+    {
+      "text": "Brevo API",
+      "type": "nav_link"
+    },
+    {
+      "text": "Partners",
+      "type": "nav_link"
+    },
+    {
+      "text": "Integrations",
+      "type": "nav_link"
+    },
+    {
+      "text": "Platform Status",
+      "type": "nav_link"
+    },
+    {
+      "text": "Product Releases",
+      "type": "nav_link"
+    },
+    {
+      "text": "Read Our Blog",
+      "type": "nav_link"
+    },
+    {
+      "text": "Get Brevo",
+      "type": "hero_cta"
+    },
+    {
+      "text": "Why Brevo?",
+      "type": "body_cta"
+    },
+    {
+      "text": "SMBs",
+      "type": "body_cta"
+    },
+    {
+      "text": "Startups",
+      "type": "body_cta"
+    },
+    {
+      "text": "Agencies",
+      "type": "body_cta"
+    },
+    {
+      "text": "Ecommerce",
+      "type": "body_cta"
+    },
+    {
+      "text": "Enterprise",
+      "type": "body_cta"
+    },
+    {
+      "text": "Read customer stories",
+      "type": "body_cta"
+    },
+    {
+      "text": "Read customer stories",
+      "type": "body_cta"
+    },
+    {
+      "text": "See all integrations",
+      "type": "body_cta"
+    },
+    {
+      "text": "Get Brevo",
+      "type": "body_cta"
+    },
+    {
+      "text": "Why Brevo?",
+      "type": "footer_link"
+    },
+    {
+      "text": "Brevo Careers",
+      "type": "footer_link"
+    },
+    {
+      "text": "Press Room",
+      "type": "footer_link"
+    },
+    {
+      "text": "Carbon Footprint",
+      "type": "footer_link"
+    },
+    {
+      "text": "GDPR",
+      "type": "footer_link"
+    },
+    {
+      "text": "Security",
+      "type": "footer_link"
+    },
+    {
+      "text": "Marketing Platform",
+      "type": "footer_link"
+    },
+    {
+      "text": "Conversations",
+      "type": "footer_link"
+    },
+    {
+      "text": "Sales Platform",
+      "type": "footer_link"
+    },
+    {
+      "text": "Transactional Email",
+      "type": "footer_link"
+    },
+    {
+      "text": "Brevo+",
+      "type": "footer_link"
+    },
+    {
+      "text": "Blog",
+      "type": "footer_link"
+    },
+    {
+      "text": "Events",
+      "type": "footer_link"
+    },
+    {
+      "text": "Partners",
+      "type": "footer_link"
+    },
+    {
+      "text": "Customer Stories",
+      "type": "footer_link"
+    },
+    {
+      "text": "Brevo Academy",
+      "type": "footer_link"
+    },
+    {
+      "text": "Help Center",
+      "type": "footer_link"
+    },
+    {
+      "text": "Contact us",
+      "type": "footer_link"
+    },
+    {
+      "text": "Brevo API",
+      "type": "footer_link"
+    },
+    {
+      "text": "Platform Status",
+      "type": "footer_link"
+    },
+    {
+      "text": "Product Updates",
+      "type": "footer_link"
+    },
+    {
+      "text": "Integrations",
+      "type": "footer_link"
+    },
+    {
+      "text": "Cookie Settings",
+      "type": "footer_link"
+    },
+    {
+      "text": "Anti-spam",
+      "type": "footer_link"
+    },
+    {
+      "text": "Privacy",
+      "type": "footer_link"
+    },
+    {
+      "text": "User Agreement",
+      "type": "footer_link"
+    },
+    {
+      "text": "Legal Notice",
+      "type": "footer_link"
+    },
+    {
+      "text": "Responsible Disclosure",
+      "type": "footer_link"
+    }
+  ]
+}

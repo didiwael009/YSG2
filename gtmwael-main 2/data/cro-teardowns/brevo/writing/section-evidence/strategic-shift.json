@@ -1,0 +1,47 @@
+{
+  "central_thesis": "Brevo spent its first year as a rebranded company explaining itself ('Connections that spark growth', 'Why Brevo?') and then rewrote its homepage in 2024–2026 to claim the customer lifetime-value category, replacing brand-building language with an outcome-specific H1 — 'Turn Every Email SMS Order Interaction into a Lifetime Customer' — that names every channel and positions Brevo as the infrastructure for repeat revenue, not acquisition.",
+  "old_positioning_frame": "Relationship-building across channels — a new brand (formerly Sendinblue) introducing itself and emphasizing flexibility ('Use the tools you need, when you need them'). The CTA 'Get Brevo' and the section 'Why Brevo?' signal a company still building brand recognition.",
+  "new_positioning_frame": "Omnichannel customer engagement platform optimized for lifetime customer value. The meta description now names specific products ('email and SMS marketing, automation, CRM, live chat, and transactional email') and the H1 names the outcome of every channel interaction: 'Lifetime Customer'. The CTA 'Get a demo' alongside 'Sign up free' signals a sales-assisted path for enterprise buyers.",
+  "buyer_shift": "SMB teams who needed simple multi-channel tools ('everyone can grow with Brevo') → a broader range from SMB to enterprise ('from the first send to enterprise'), with AI-powered automation as the differentiator for mid-market buyers.",
+  "funnel_shift": "Brand-awareness stage visitors who knew Sendinblue but needed to understand the new Brevo identity → product-aware visitors who already know what Brevo does and are comparing it against Klaviyo, HubSpot, and Mailchimp on breadth and AI capability.",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "Connections that spark growth",
+      "new": "Turn Every EmailSMSOrderInteraction into a Lifetime Customer",
+      "meaning": "The old H1 is aspirational and brand-level — it names a feeling ('spark'), not a product or outcome. The new H1 lists every channel (Email, SMS, Order) and names the specific business outcome (Lifetime Customer). This shift is consistent with a brand that has established recognition and can now speak to buyers who are comparing outcomes rather than evaluating brand identity."
+    },
+    {
+      "element": "Meta description",
+      "old": "Brevo helps you grow your business. Build customer relationships across email, SMS, chat, and more. Use the tools you need, when you need them. Try it for free.",
+      "new": "Brevo is the most intuitive all-in-one customer engagement platform: email and SMS marketing, automation, CRM, live chat, and transactional email. Try it free.",
+      "meaning": "The old meta description hedges product specificity ('and more', 'the tools you need') — consistent with a company still discovering its ICP. The new version lists every product explicitly and names the category ('customer engagement platform'). This suggests Brevo has committed to a category definition and believes the buyer is comparing on product breadth, not brand story."
+    },
+    {
+      "element": "CTA",
+      "old": "Get Brevo | Read customer stories | See all integrations | Why Brevo?",
+      "new": "Sign up free | Get a demo | Learn more | Explore Brevo for SMBs",
+      "meaning": "Removing 'Why Brevo?' is the most significant signal — the company no longer needs to justify the rebrand. The addition of 'Get a demo' alongside 'Sign up free' is consistent with a hybrid PLG + sales-assisted motion that MailerLite also adopted. 'Explore Brevo for SMBs' is an unusual CTA — it segments by buyer size directly in the CTA label, suggesting mid-market and enterprise visitors exist on the same page."
+    },
+    {
+      "element": "Navigation",
+      "old": "Products | Features | Email marketing | SMS marketing | WhatsApp campaigns | Automation | Signup forms | Facebook ads",
+      "new": "Platform | Email | SMS | WhatsApp | Web & mobile push | Wallet | Phone | Solutions",
+      "meaning": "Renaming 'Products' to 'Platform' is a category-level claim — platforms have more strategic weight than product suites. Adding 'Wallet' and 'Phone' as channel nav items suggests Brevo is competing on channel breadth rather than feature depth. Removing 'Facebook ads' from nav suggests that channel was not converting as a nav entry point."
+    },
+    {
+      "element": "Section headings",
+      "old": "Wide reachClose connection | Everyone can grow with Brevo",
+      "new": "AI agents that work with you, and for you | Built for every business — from the first send to enterprise | Join 600,000+ customers around the world who trust Brevo",
+      "meaning": "The headline 'AI agents that work with you, and for you' was not present at rebrand — it was added as AI became a category differentiator. 'Built for every business — from the first send to enterprise' signals upmarket expansion without abandoning SMBs. The customer count growth (500,000 → 600,000) is used as a social proof heading — quantified trust rather than aspiration."
+    }
+  ],
+  "copy_this_if": "You have completed a rebrand and have 12+ months of data confirming the new brand is recognized by your target buyers — you can now shift your homepage from identity-building to outcome-claiming.",
+  "do_not_copy_this_if": "You have just rebranded and your visitors still search by your old name — naming outcomes before you have built brand recall means visitors cannot connect the outcome claim to a company they know.",
+  "safer_version_for_early_stage_saas": "Instead of removing 'Why [Company]?' from the navigation, add a social proof number beside it: 'Why Brevo? — trusted by 600,000 teams.' Test whether the reassurance reduces the click-away rate from the nav link before removing the entire entry point.",
+  "risk_if_copied": "The omnichannel H1 ('Turn Every Email SMS Order Interaction into a Lifetime Customer') only works if every channel is fully built and live. If visitors click through to WhatsApp campaigns or Wallet features and find thin product pages, the LTV claim collapses into marketing copy — and the conversion rate on the demo CTA will reflect that.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-27T07:59:52.297Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

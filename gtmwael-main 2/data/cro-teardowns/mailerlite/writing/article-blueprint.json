@@ -1,0 +1,28 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": false,
+    "snapshotCount": 4,
+    "h2Added": 4,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 0,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [],
+  "generatedAt": "2026-06-27T07:35:11.201Z",
+  "postSummary": {
+    "title": "MailerLite Homepage Teardown: Jul 2015 to Jan 2026",
+    "h1": "How MailerLite rewrote its homepage over 11 years",
+    "readTime": "7 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 1,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 2,
+    "snapshotCount": 4
+  }
+}

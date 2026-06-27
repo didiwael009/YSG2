@@ -1,0 +1,54 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "MailerLite",
+  "companyUrl": "https://www.mailerlite.com",
+  "articleTitle": "MailerLite Homepage Teardown: Jul 2015 to Jan 2026",
+  "h1": "How MailerLite rewrote its homepage over 11 years",
+  "fromLabel": "Jul 2015",
+  "toLabel": "Jan 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": false,
+    "snapshotCount": 4,
+    "h2Added": 4,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 0,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2015 → Jan 2026",
+      "note": "4 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "4 added · 0 removed",
+      "note": "Minor structure adjustments"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "503 Service Unavailable",
+      "after": "Create email marketing automations landing pages signup forms websites your audience will love",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    }
+  ]
+}

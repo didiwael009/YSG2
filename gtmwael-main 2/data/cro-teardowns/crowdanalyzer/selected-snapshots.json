@@ -1,0 +1,32 @@
+[
+  {
+    "month": "2016-07",
+    "slotStart": "2016-07",
+    "slotEnd": "2016-12",
+    "timestamp": "20161020085117",
+    "originalUrl": "https://crowdanalyzer.com",
+    "screenshotPath": "/cro-teardowns/crowdanalyzer/archive-monthly/2016-07.webp",
+    "selectedPath": "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "current",
+    "slotStart": "current",
+    "slotEnd": "current",
+    "timestamp": null,
+    "originalUrl": "https://crowdanalyzer.com",
+    "screenshotPath": "/cro-teardowns/crowdanalyzer/archive-monthly/current-live.webp",
+    "selectedPath": "/cro-teardowns/crowdanalyzer/selected/current-live.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  }
+]

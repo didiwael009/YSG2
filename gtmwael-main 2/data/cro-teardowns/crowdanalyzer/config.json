@@ -1,0 +1,10 @@
+{
+  "name": "CrowdAnalyzer",
+  "slug": "crowdanalyzer",
+  "url": "https://crowdanalyzer.com",
+  "from": "2016-01",
+  "to": "2026-06",
+  "stepMonths": 6,
+  "createdAt": "2026-06-26T21:27:43.662Z",
+  "phase": 1
+}

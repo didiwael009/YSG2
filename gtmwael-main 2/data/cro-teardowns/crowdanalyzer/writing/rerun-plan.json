@@ -1,0 +1,12 @@
+{
+  "createdAt": "2026-06-27T00:17:39.204Z",
+  "slug": "crowdanalyzer",
+  "source": {
+    "finalJudgePass": true,
+    "seoPass": true,
+    "finalJudgeScore": 91,
+    "seoScore": 87
+  },
+  "sectionsToRerun": [],
+  "skippedIssues": []
+}

@@ -1,0 +1,3 @@
+# MailerLite Homepage Teardown: How a Simple Email Tool Became a Creator Marketing Platform
+
+Over 11 years, MailerLite turned its homepage from a single-product email pitch into a five-product platform headline — **"Create email marketing automations landing pages signup forms websites your audience will love"** — while keeping "Lite" in the brand and adding a section called **"Keeping it Lite"** to pre-empt the obvious objection. This teardown walks through what changed in the navigation, CTAs, and headings between 2015 and 2026, and what the pattern means if you're running a simple tool that's quietly becoming a suite.

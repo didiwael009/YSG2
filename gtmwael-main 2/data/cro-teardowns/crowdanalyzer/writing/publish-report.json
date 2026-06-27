@@ -1,0 +1,25 @@
+{
+  "publishedAt": "2026-06-26T23:17:39.775Z",
+  "slug": "crowdanalyzer",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 91,
+    "seoPass": true,
+    "seoScore": 87,
+    "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/crowdanalyzer.ts",
+  "indexUpdated": false,
+  "internalLinkSuggestionsAdded": [],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

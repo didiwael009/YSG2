@@ -1,0 +1,63 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "CrowdAnalyzer",
+  "companyUrl": "https://crowdanalyzer.com",
+  "articleTitle": "CrowdAnalyzer Homepage Teardown: Jul 2016 to Jun 2026",
+  "h1": "How CrowdAnalyzer rewrote its homepage over 10 years",
+  "fromLabel": "Jul 2016",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 29,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 5,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "analysis-blocks": [
+    {
+      "id": "analysis-2016-07",
+      "label": "Jul 2016 — original state",
+      "period": "Jul 2016",
+      "screenshotPath": "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform\" — a direct product statement."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/crowdanalyzer/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Empowering Growth Through Data-Driven Insights\" — updated value proposition.",
+        "New section headings include: \"See our story​\", \"Get in touch\", \"Visit the newsroom​\".",
+        "Navigation now includes product categories like: \"Media Intelligence\", \"Advertisements Intelligence\".",
+        "Third-party validation visible in section headings: \"Gain valuable knowledge on emerging trends, analytics best practices, and success strategies to elevate your brand\".",
+        "CTAs no longer present include: \"Request a Demo\", \"Product Tour\", \"Login\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform",
+      "after": "Empowering Growth Through Data-Driven Insights",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Page title",
+      "before": "Crowd Analyzer | The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform",
+      "after": "Home - Crowd Analyzer"
+    }
+  ]
+}

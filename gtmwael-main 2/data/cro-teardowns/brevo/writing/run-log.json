@@ -1,0 +1,2087 @@
+[
+  {
+    "step": "Build evidence pack",
+    "ok": true,
+    "detail": "2 snapshots, diff computed",
+    "ts": "2026-06-27T07:55:12.397Z"
+  },
+  {
+    "step": "Build article blueprint",
+    "ok": true,
+    "detail": "2 analysis blocks, 4 lessons",
+    "ts": "2026-06-27T07:55:12.398Z"
+  },
+  {
+    "step": "Validate CroTeardownPost shape",
+    "ok": true,
+    "detail": "all required fields present",
+    "ts": "2026-06-27T07:55:12.398Z"
+  },
+  {
+    "step": "Save evidence-pack.json",
+    "ok": true,
+    "ts": "2026-06-27T07:55:12.399Z"
+  },
+  {
+    "step": "Save article-blueprint.json",
+    "ok": true,
+    "ts": "2026-06-27T07:55:12.399Z"
+  },
+  {
+    "step": "Save section-evidence/",
+    "ok": true,
+    "detail": "6 files (incl. normalized-page-text.json)",
+    "ts": "2026-06-27T07:55:12.400Z"
+  },
+  {
+    "step": "Save generated-article-data.json",
+    "ok": true,
+    "detail": "full CroTeardownPost object",
+    "ts": "2026-06-27T07:55:12.400Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-6",
+    "ts": "2026-06-27T07:56:02.830Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "STRATEGIC SHIFT ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/strategic-shift.7296b2bb42de.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/strategic-shift.7296b2bb42de.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.833Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.833Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "BUSINESS CONTEXT ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/business-context.77c00fa976dc.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/business-context.77c00fa976dc.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.834Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-27T07:56:02.835Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "SEO INTENT ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-intent.e64b3bf4e7fe.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-intent.e64b3bf4e7fe.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.835Z"
+  },
+  {
+    "section": "_outline",
+    "step": "OUTLINE ERROR",
+    "ok": false,
+    "detail": "strategic-shift.json not found for slug \"brevo\". Run Layer 3 first:\n  npm run cro-teardown:strategic-shift -- --slug brevo",
+    "ts": "2026-06-27T07:56:02.835Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-27T07:56:02.837Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.837Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-27T07:56:02.838Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.838Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-27T07:56:02.839Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.839Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-27T07:56:02.840Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.841Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-27T07:56:02.842Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.842Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "07-business-context.evidence.json",
+    "ts": "2026-06-27T07:56:02.843Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.843Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-27T07:56:02.844Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:56:02.844Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.01-intro.e787e2c08b49.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.01-intro.e787e2c08b49.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.845Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.02-quick-answer.186a3c6ddc18.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.02-quick-answer.186a3c6ddc18.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.845Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.03-visual-timeline.eaab439a1a02.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.03-visual-timeline.eaab439a1a02.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.845Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.04-messaging-evolution.daccdaa5698f.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.04-messaging-evolution.daccdaa5698f.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.846Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.05-cta-navigation-evolution.9dee0ad1dedf.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.05-cta-navigation-evolution.9dee0ad1dedf.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.846Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.07-business-context.d477735f2d28.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.07-business-context.d477735f2d28.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.846Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.06-lessons-for-saas-teams.71d52c25c8db.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.06-lessons-for-saas-teams.71d52c25c8db.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.846Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-27T07:56:02.847Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "LESSON CARDS ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.8360dc6355c0.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.8360dc6355c0.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:56:02.848Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "01-intro.final.md not found — skipping",
+    "ts": "2026-06-27T07:56:02.848Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "02-quick-answer.final.md not found — skipping",
+    "ts": "2026-06-27T07:56:02.848Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "03-visual-timeline.final.md not found — skipping",
+    "ts": "2026-06-27T07:56:02.848Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "04-messaging-evolution.final.md not found — skipping",
+    "ts": "2026-06-27T07:56:02.849Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "05-cta-navigation-evolution.final.md not found — skipping",
+    "ts": "2026-06-27T07:56:02.849Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "07-business-context.final.md not found — skipping",
+    "ts": "2026-06-27T07:56:02.849Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "06-lessons-for-saas-teams.final.md not found — skipping",
+    "ts": "2026-06-27T07:56:02.849Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "only 0 section(s) — skipped (needs ≥2)",
+    "ts": "2026-06-27T07:56:02.849Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "0 sections, 39 words",
+    "ts": "2026-06-27T07:56:02.850Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T07:56:02.850Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "Running strategic shift detector",
+    "ok": true,
+    "detail": "model: claude-sonnet-4-6",
+    "ts": "2026-06-27T07:59:52.294Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift validation",
+    "ok": true,
+    "detail": "confidence: high",
+    "ts": "2026-06-27T07:59:52.297Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json saved",
+    "ok": true,
+    "detail": "$0.0000",
+    "ts": "2026-06-27T07:59:52.297Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.299Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "BUSINESS CONTEXT ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/business-context.5fbd65ee200f.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/business-context.5fbd65ee200f.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.300Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-27T07:59:52.300Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "SEO INTENT ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-intent.4b7f7a798a25.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-intent.4b7f7a798a25.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.301Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Brevo",
+    "ok": true,
+    "ts": "2026-06-27T07:59:52.309Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded signals from 19 prior articles",
+    "ok": true,
+    "ts": "2026-06-27T07:59:52.309Z"
+  },
+  {
+    "section": "_outline",
+    "step": "OUTLINE ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.310Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-27T07:59:52.312Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.312Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-27T07:59:52.313Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.313Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-27T07:59:52.314Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.314Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:52.315Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:52.315Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:52.316Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-27T07:59:52.316Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.317Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-27T07:59:52.317Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.318Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "07-business-context.evidence.json",
+    "ts": "2026-06-27T07:59:52.318Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.319Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:52.320Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:52.320Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:52.321Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-27T07:59:52.322Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:52.322Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:52.322Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.01-intro.89b80feea433.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.01-intro.89b80feea433.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.323Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.02-quick-answer.feed70d7f6f3.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.02-quick-answer.feed70d7f6f3.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.323Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.03-visual-timeline.08fe0d7ab1b0.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.03-visual-timeline.08fe0d7ab1b0.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.323Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.04-messaging-evolution.490acb2fb435.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.04-messaging-evolution.490acb2fb435.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.324Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.05-cta-navigation-evolution.1096d6d21da8.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.05-cta-navigation-evolution.1096d6d21da8.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.324Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.07-business-context.9cf98ab341b8.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.07-business-context.9cf98ab341b8.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.324Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.06-lessons-for-saas-teams.c85c9e63d67d.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.06-lessons-for-saas-teams.c85c9e63d67d.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:52.324Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "4 cards — calling API…",
+    "ts": "2026-06-27T07:59:52.325Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards: ⚠",
+    "ok": false,
+    "detail": "card 2: title lacks company name, quote, or number — likely generic",
+    "ts": "2026-06-27T07:59:52.326Z"
+  },
+  {
+    "section": "_lesson-cards",
+    "step": "Lesson cards",
+    "ok": false,
+    "detail": "4 cards, 1 warning(s) — $0.0000",
+    "ts": "2026-06-27T07:59:52.327Z"
+  },
+  {
+    "step": "lesson-cards done",
+    "ok": true,
+    "detail": "4 cards — $0.0000",
+    "ts": "2026-06-27T07:59:52.327Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "01-intro.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:52.328Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "02-quick-answer.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:52.328Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "03-visual-timeline.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:52.328Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "04-messaging-evolution.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:52.329Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "05-cta-navigation-evolution.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:52.329Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "07-business-context.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:52.329Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "06-lessons-for-saas-teams.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:52.329Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": false,
+    "detail": "only 0 section(s) — skipped (needs ≥2)",
+    "ts": "2026-06-27T07:59:52.330Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "0 sections, 39 words",
+    "ts": "2026-06-27T07:59:52.331Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T07:59:52.331Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:53.445Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:53.447Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 1 is 71 words — must be ≤60",
+    "ts": "2026-06-27T07:59:53.448Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 2 is 94 words — must be ≤60",
+    "ts": "2026-06-27T07:59:53.448Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context: ⚠",
+    "ok": false,
+    "detail": "Paragraph 3 is 91 words — must be ≤60",
+    "ts": "2026-06-27T07:59:53.449Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": false,
+    "detail": "3 paragraphs — $0.0000",
+    "ts": "2026-06-27T07:59:53.449Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "Running SEO intent planner",
+    "ok": true,
+    "detail": "model: claude-haiku-4-5-20251001",
+    "ts": "2026-06-27T07:59:53.450Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json saved",
+    "ok": true,
+    "detail": "keyword: \"Brevo homepage teardown\"  $0.0000",
+    "ts": "2026-06-27T07:59:53.450Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-target.json written",
+    "ok": true,
+    "detail": "\"Brevo homepage teardown\" (auto — override with --keyword)",
+    "ts": "2026-06-27T07:59:53.450Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Brevo",
+    "ok": true,
+    "ts": "2026-06-27T07:59:53.454Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded signals from 19 prior articles",
+    "ok": true,
+    "ts": "2026-06-27T07:59:53.454Z"
+  },
+  {
+    "section": "_outline",
+    "step": "OUTLINE ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:53.455Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:53.456Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "01-intro.evidence.json",
+    "ts": "2026-06-27T07:59:53.456Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:53.457Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-27T07:59:53.457Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:53.458Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-27T07:59:53.458Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:53.458Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:53.459Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:53.460Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:53.461Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:53.462Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:53.462Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:53.463Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "Final v1",
+    "ok": false,
+    "detail": "score 0/100 — did not reach 85",
+    "ts": "2026-06-27T07:59:53.463Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:53.463Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:53.464Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-27T07:59:53.465Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:53.465Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:53.466Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-27T07:59:53.466Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:53.467Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-27T07:59:53.467Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:53.468Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:53.468Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:53.469Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:53.469Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:53.469Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:53.470Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:53.471Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:53.471Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:53.472Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.02-quick-answer.d313599140e7.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.02-quick-answer.d313599140e7.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:53.472Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.03-visual-timeline.ef0c5e1fc866.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.03-visual-timeline.ef0c5e1fc866.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:53.473Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.04-messaging-evolution.87f42d12a994.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.04-messaging-evolution.87f42d12a994.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:53.473Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.05-cta-navigation-evolution.1c83b3c93b86.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.05-cta-navigation-evolution.1c83b3c93b86.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:53.473Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.06-lessons-for-saas-teams.f8b3f94c199b.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/rewriter.06-lessons-for-saas-teams.f8b3f94c199b.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:53.474Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "02-quick-answer.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:53.474Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "03-visual-timeline.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:53.475Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "04-messaging-evolution.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:53.475Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "05-cta-navigation-evolution.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:53.476Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section: missing",
+    "ok": false,
+    "detail": "06-lessons-for-saas-teams.final.md not found — skipping",
+    "ts": "2026-06-27T07:59:53.476Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "2 sections — calling API…",
+    "ts": "2026-06-27T07:59:53.476Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "CROSS-SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/cross-section.01-intro.4e717153c03a.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/cross-section.01-intro.4e717153c03a.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:53.478Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "2 sections, 410 words",
+    "ts": "2026-06-27T07:59:53.479Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T07:59:53.480Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:54.529Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": true,
+    "detail": "skipped — 07-business-context.final.md exists",
+    "ts": "2026-06-27T07:59:54.531Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:54.531Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Brevo",
+    "ok": true,
+    "ts": "2026-06-27T07:59:54.534Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded signals from 19 prior articles",
+    "ok": true,
+    "ts": "2026-06-27T07:59:54.535Z"
+  },
+  {
+    "section": "_outline",
+    "step": "OUTLINE ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:54.536Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:54.537Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:54.537Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "02-quick-answer.evidence.json",
+    "ts": "2026-06-27T07:59:54.538Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:54.538Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "03-visual-timeline.evidence.json",
+    "ts": "2026-06-27T07:59:54.539Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:54.539Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "04-messaging-evolution.evidence.json",
+    "ts": "2026-06-27T07:59:54.540Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:54.541Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.542Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.542Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.543Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.544Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.545Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.545Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:54.546Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:54.546Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:54.547Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.548Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.548Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.549Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.549Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.550Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.550Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-27T07:59:54.551Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-27T07:59:54.551Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-27T07:59:54.552Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.553Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.553Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.554Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.555Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.555Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.556Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 0/100 — did not reach 85",
+    "ts": "2026-06-27T07:59:54.556Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 0/100 — did not reach 80",
+    "ts": "2026-06-27T07:59:54.557Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 0/100 — did not reach 85",
+    "ts": "2026-06-27T07:59:54.557Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "05-cta-navigation-evolution.evidence.json",
+    "ts": "2026-06-27T07:59:54.558Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:54.558Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Evidence",
+    "ok": true,
+    "detail": "06-lessons-for-saas-teams.evidence.json",
+    "ts": "2026-06-27T07:59:54.559Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:54.559Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.560Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Writer → v1",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.561Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.562Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v1",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.563Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:54.563Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter [loop 1/2]",
+    "ok": true,
+    "detail": "→ v2",
+    "ts": "2026-06-27T07:59:54.564Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.564Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter → v2",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.565Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.566Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v2",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.566Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-27T07:59:54.567Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter [loop 2/2]",
+    "ok": true,
+    "detail": "→ v3",
+    "ts": "2026-06-27T07:59:54.567Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.568Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Rewriter → v3",
+    "ok": true,
+    "detail": "0 in / 0 out — $0.0000",
+    "ts": "2026-06-27T07:59:54.569Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.569Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Critic v3",
+    "ok": false,
+    "detail": "score 0/100 — FAIL — $0.0000",
+    "ts": "2026-06-27T07:59:54.570Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 0/100 — did not reach 85",
+    "ts": "2026-06-27T07:59:54.570Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "Final v3",
+    "ok": false,
+    "detail": "score 0/100 — did not reach 85",
+    "ts": "2026-06-27T07:59:54.571Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-27T07:59:54.572Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "CROSS-SECTION ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/cross-section.01-intro.dab539d6485b.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/cross-section.01-intro.dab539d6485b.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:54.573Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 1987 words",
+    "ts": "2026-06-27T07:59:54.574Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T07:59:54.575Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:54.577Z"
+  },
+  {
+    "step": "final judge",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/judge.01-intro.ceec133efae7.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/judge.01-intro.ceec133efae7.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:54.578Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:54.579Z"
+  },
+  {
+    "step": "seo audit",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.01-intro.48ec86d65c19.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/seo-audit.01-intro.48ec86d65c19.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:54.580Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:55.620Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": true,
+    "detail": "skipped — 07-business-context.final.md exists",
+    "ts": "2026-06-27T07:59:55.622Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:55.623Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Brevo",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.627Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded signals from 19 prior articles",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.628Z"
+  },
+  {
+    "section": "_outline",
+    "step": "OUTLINE ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:55.630Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.631Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.631Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.632Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.632Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.633Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.633Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:55.634Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-27T07:59:55.635Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "0 changed, 0 rejected — $0.0000",
+    "ts": "2026-06-27T07:59:55.636Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 1987 words",
+    "ts": "2026-06-27T07:59:55.638Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T07:59:55.638Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:55.639Z"
+  },
+  {
+    "step": "final judge",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/judge.02-quick-answer.eee59fb6ec24.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/judge.02-quick-answer.eee59fb6ec24.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:55.640Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:55.641Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0000",
+    "ts": "2026-06-27T07:59:55.642Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:56.670Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": true,
+    "detail": "skipped — 07-business-context.final.md exists",
+    "ts": "2026-06-27T07:59:56.671Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:56.672Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Brevo",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.675Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded signals from 19 prior articles",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.676Z"
+  },
+  {
+    "section": "_outline",
+    "step": "OUTLINE ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:56.678Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.679Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.679Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.680Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.680Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.681Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.682Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:56.682Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-27T07:59:56.683Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "0 changed, 0 rejected — $0.0000",
+    "ts": "2026-06-27T07:59:56.684Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 1987 words",
+    "ts": "2026-06-27T07:59:56.686Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T07:59:56.687Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:56.688Z"
+  },
+  {
+    "step": "final judge",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/judge.01-intro.f8ae9ad4d11e.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/judge.01-intro.f8ae9ad4d11e.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:56.689Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:56.689Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0000",
+    "ts": "2026-06-27T07:59:56.690Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:57.730Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": true,
+    "detail": "skipped — 07-business-context.final.md exists",
+    "ts": "2026-06-27T07:59:57.731Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T07:59:57.732Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Brevo",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.735Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded signals from 19 prior articles",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.736Z"
+  },
+  {
+    "section": "_outline",
+    "step": "OUTLINE ERROR",
+    "ok": false,
+    "detail": "\n──────────────────────────────────────────────────────────────\nMANUAL AGENT CALL — no API was used.\n1. Open the prompt:   /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.prompt.md\n2. Write the agent's answer into:  /Users/waela/Documents/Playground 3/gtmwael-main 2/manual/brevo/outline.01-intro.bf41ec7b3027.response.md\n3. Re-run the SAME command — it resumes from here.\n──────────────────────────────────────────────────────────────\n",
+    "ts": "2026-06-27T07:59:57.737Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.738Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.739Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.739Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.740Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.740Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.741Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T07:59:57.742Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-27T07:59:57.743Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "0 changed, 0 rejected — $0.0000",
+    "ts": "2026-06-27T07:59:57.744Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 1987 words",
+    "ts": "2026-06-27T07:59:57.747Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T07:59:57.747Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:57.749Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 91/100 — PASS ✓ — $0.0000",
+    "ts": "2026-06-27T07:59:57.750Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T07:59:57.750Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0000",
+    "ts": "2026-06-27T07:59:57.751Z"
+  },
+  {
+    "section": "_strategic-shift",
+    "step": "strategic-shift.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T08:00:41.795Z"
+  },
+  {
+    "section": "_business-context",
+    "step": "Business context",
+    "ok": true,
+    "detail": "skipped — 07-business-context.final.md exists",
+    "ts": "2026-06-27T08:00:41.799Z"
+  },
+  {
+    "section": "_seo-intent",
+    "step": "seo-intent.json",
+    "ok": true,
+    "detail": "exists — skipped (pass --force to regenerate)",
+    "ts": "2026-06-27T08:00:41.800Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Outline generator: building custom outline for Brevo",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.814Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  Anti-repetition: loaded signals from 19 prior articles",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.815Z"
+  },
+  {
+    "section": "_outline",
+    "step": "  ✓ article-outline.json — angle: \"Brevo's homepage tells the story of a rebrand paying off — measured by…\" · $0.0000",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.817Z"
+  },
+  {
+    "section": "01-intro",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.818Z"
+  },
+  {
+    "section": "02-quick-answer",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.818Z"
+  },
+  {
+    "section": "03-visual-timeline",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.819Z"
+  },
+  {
+    "section": "04-messaging-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.819Z"
+  },
+  {
+    "section": "05-cta-navigation-evolution",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.820Z"
+  },
+  {
+    "section": "07-business-context",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.821Z"
+  },
+  {
+    "section": "06-lessons-for-saas-teams",
+    "step": "skipped (final exists)",
+    "ok": true,
+    "ts": "2026-06-27T08:00:41.821Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "7 sections — calling API…",
+    "ts": "2026-06-27T08:00:41.824Z"
+  },
+  {
+    "section": "_cross-section",
+    "step": "Cross-section pass",
+    "ok": true,
+    "detail": "0 changed, 0 rejected — $0.0000",
+    "ts": "2026-06-27T08:00:41.825Z"
+  },
+  {
+    "step": "assemble article-final.md",
+    "ok": true,
+    "detail": "7 sections, 1987 words",
+    "ts": "2026-06-27T08:00:41.828Z"
+  },
+  {
+    "step": "generate seo.json",
+    "ok": true,
+    "detail": "Brevo homepage CRO teardown",
+    "ts": "2026-06-27T08:00:41.829Z"
+  },
+  {
+    "step": "Final judge [claude-sonnet-4-6]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T08:00:41.830Z"
+  },
+  {
+    "step": "Final judge",
+    "ok": true,
+    "detail": "score 91/100 — PASS ✓ — $0.0000",
+    "ts": "2026-06-27T08:00:41.832Z"
+  },
+  {
+    "step": "SEO auditor [claude-haiku-4-5-20251001]",
+    "ok": true,
+    "detail": "calling API…",
+    "ts": "2026-06-27T08:00:41.834Z"
+  },
+  {
+    "step": "SEO audit",
+    "ok": true,
+    "detail": "score 87/100 — PASS ✓ — $0.0000",
+    "ts": "2026-06-27T08:00:41.835Z"
+  }
+]

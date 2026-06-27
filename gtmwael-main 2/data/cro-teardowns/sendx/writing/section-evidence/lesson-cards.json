@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Drop the adjective list — SendX removed \"Feature-Rich\" before simplifying the entire H1",
+    "category": "Messaging",
+    "body": "SendX's 2021 H1 dropped \"Feature-Rich\" from **\"Intuitive, Feature-Rich, Affordable.\"** By 2026, the entire adjective list was replaced with two outcome sentences: **\"Send unlimited emails. Land in the inbox. That's it.\"** The progression — remove one adjective, test, commit to simplification — is more testable than a full H1 rewrite. Count your H1 adjectives. If they outnumber outcome words, that's a test."
+  },
+  {
+    "number": "02",
+    "title": "Proof denominators make deliverability claims credible — \"4.4 billion emails\" is not marketing",
+    "category": "Trust",
+    "body": "SendX's meta description leads with **\"95–98% inbox placement across 4.4 billion emails sent.\"** The percentage alone is a general claim every email tool makes. The denominator — 4.4 billion emails — is the proof that the percentage is real, not a sample of 1,000 test sends. If you have a deliverability advantage, pairing the rate with a volume proof is what makes the claim believable rather than aspirational."
+  },
+  {
+    "number": "03",
+    "title": "Competitor-migration H2 — \"Ready to make email work again?\" is built into the page",
+    "category": "Positioning",
+    "body": "SendX added **\"Ready to make email work again?\"** as a section heading — not in ad copy, but on the homepage. It implies the visitor's current tool is broken. It does not name a competitor. It appeals to anyone experiencing inbox placement problems, and signals to those visitors that SendX is specifically designed as the alternative. This is a migration message that runs without naming the competition."
+  },
+  {
+    "number": "04",
+    "title": "Remove the demo CTA when your product can sell itself — SendX dropped \"Book a Demo\" entirely",
+    "category": "Funnel",
+    "body": "SendX removed **\"Book a Demo Now\"** from its primary CTA set between 2019 and 2026. What replaced it: a specific-duration free trial (**\"Start Free 14 Day Trial\"**) and feature-exploration CTAs (**\"Explore Newsletter Campaigns\"**). This suggests the demo path was lower-converting than the self-serve trial. If you are a sub-$100/month product with a strong free trial, testing the removal of the demo CTA may simplify the conversion path."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Remove \"Why [Company]?\" only when brand recall is measured, not assumed",
+    "category": "Brand",
+    "body": "Brevo launched its 2023 rebrand with **\"Why Brevo?\"** in the navigation. By 2026, it was gone. This removal is a measurable brand milestone: the company waited until visitors no longer needed the brand justified before removing the explanation CTA. If you track \"Why [Company]?\" click rate, a drop to near zero tells you when you can remove it safely."
+  },
+  {
+    "number": "02",
+    "title": "Replace hedges with a full product list once your suite is built",
+    "category": "Messaging",
+    "body": "Brevo's 2023 meta description said \"email, SMS, chat, and more.\" By 2026 it listed every product: **\"email and SMS marketing, automation, CRM, live chat, and transactional email.\"** Removing \"and more\" is a category commitment — it invites direct comparison. This move is only safe when each named product has a full working page behind it. Hedges hide gaps; product lists reveal them."
+  },
+  {
+    "number": "03",
+    "title": "Rename \"Products\" to \"Platform\" when you want to compete on category, not features",
+    "category": "Positioning",
+    "body": "Brevo changed its primary nav label from **\"Products\"** to **\"Platform\"** between 2023 and 2026. Platform implies infrastructure — something companies build on — while Products implies a suite to compare. If your competitive differentiation is breadth and integration across channels, \"Platform\" sets a different expectation than \"Products\" before a visitor even clicks."
+  },
+  {
+    "number": "04",
+    "title": "Tie every channel in your H1 to one business outcome, not a list of features",
+    "category": "CRO",
+    "body": "Brevo's 2026 H1 — **\"Turn Every Email SMS Order Interaction into a Lifetime Customer\"** — names four channels and ties them to one outcome. This is a category claim disguised as a headline. It only works because Brevo has the products behind each channel. For teams with gaps, naming channels you can't fully deliver on will surface those gaps faster than any competitor analysis."
+  }
+]

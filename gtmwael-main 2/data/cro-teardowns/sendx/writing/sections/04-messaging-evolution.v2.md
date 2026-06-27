@@ -1,0 +1,13 @@
+## How SendX's homepage messaging shifted from feature breadth to inbox placement proof
+
+### The headline shift: three adjectives become two outcome sentences
+
+In January 2019, SendX's H1 was **"Intuitive, Feature-Rich, Affordable Email Marketing Software."** Three adjectives describe what the product is. By 2026, the H1 is **"Send unlimited emails. Land in the inbox. That's it."** Two sentences describe what the product does — and a third sentence ("That's it") signals deliberate simplification rather than feature breadth. The word "unlimited" addresses a specific pricing objection (per-email billing anxiety on Mailchimp). "Land in the inbox" names a specific deliverability outcome. "That's it" is a brand statement: we have chosen not to list 7 capabilities. This shift is consistent with a company that has identified its primary win reason from churned users and is building the entire homepage around that signal.
+
+### Meta description: from feature list to deliverability proof
+
+The 2019 meta description reads: **"Email marketing software that helps you with email campaigns, drip marketing, list growth, landing pages, web forms, email popups and automation."** It lists 7 features. The 2026 meta description reads: **"SendX delivers 95–98% inbox placement across 4.4 billion emails sent. Unlimited sends, AI reputation management, and 24/7 live support. Trusted by 3,000+ businesses. Rated 4.6/5 on G2 and Capterra. Free 14-day trial — no credit card needed."** The feature list is gone. Every sentence is either a deliverability claim, a proof point, or a friction-reducer. The specific number — **"4.4 billion emails"** — is the most important element: it makes the deliverability claim verifiable rather than aspirational.
+
+### What the messaging shift signals about the target buyer
+
+The 2026 page is speaking to a visitor who has already tried email marketing tools and had a problem — specifically, a deliverability problem. The section heading **"Ready to make email work again?"** is the clearest signal of this. It assumes the visitor's email is currently not working — and offers SendX as the fix. This is a problem-aware buyer at the solution-exploration stage: they know they have a problem, they know what category of tool they need, and they are comparing on the one dimension they most care about. Visit your homepage and ask: what problem does my buyer already know they have? If your H1 names your product attributes rather than their problem, you may be speaking to problem-unaware visitors and missing the buyers most likely to convert.

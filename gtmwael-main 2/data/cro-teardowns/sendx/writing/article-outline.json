@@ -1,0 +1,105 @@
+{
+  "angle": "SendX's homepage evolution is a study in what happens when a challenger tool in a crowded category runs out of room to differentiate on features and price — and bets everything on one defensible metric: inbox placement. The defining moment is not the H1 rewrite but the 2021 removal of 'Feature-Rich' that preceded it.",
+  "distinct_from": [
+    "deliverability-as-moat with proof denominator",
+    "competitor-migration H2 on homepage",
+    "H1 adjective reduction as a testable progression"
+  ],
+  "h1": "SendX Homepage Teardown: How an Email Tool Stopped Listing Features and Started Proving Inbox Placement",
+  "seo_title": "SendX Homepage Teardown: 2019–2026",
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Open with the H1 contrast: 'Intuitive, Feature-Rich, Affordable' → 'Send unlimited emails. Land in the inbox. That's it.' Name the proof point (95–98% inbox placement, 4.4B emails) in the intro. Tell the reader they will learn what drives a company to simplify rather than expand.",
+      "word_target": 90,
+      "evidence_sources": [
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## SendX's homepage arc 2019–2026: from feature catalogue to inbox-placement proof",
+      "goal": "Show three phases: 2019 feature-catalogue H2s (Send Campaigns, Build List, Automate); 2021 quiet H1 simplification (Feature-Rich removed); 2026 deliverability-first with proof denominator. The progression shows the simplification was deliberate, not sudden.",
+      "word_target": 300,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How SendX's homepage messaging shifted from feature breadth to inbox placement proof",
+      "goal": "Analyze: H1 shift (adjectives→outcomes), meta description shift (feature list→deliverability proof with denominator), and H2 'Ready to make email work again?' as a competitor-migration signal. Explain what each change assumes about the visitor's awareness of their deliverability problem.",
+      "word_target": 300,
+      "evidence_sources": [
+        "messaging",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How SendX's CTAs and navigation changed the sales motion",
+      "goal": "Analyze: demo CTA removal (self-serve bet), 'START FREE TRIAL NOW' all-caps → 'Start Free 14 Day Trial' (urgency → specificity), feature 'Explore' CTAs as product-led discovery. Nav expansion from minimal (HOME, Book DEMO) to product-indexed. End with nav test.",
+      "word_target": 260,
+      "evidence_sources": [
+        "cta-changes"
+      ],
+      "marketing_lens": "sales-motion"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## Why SendX stopped competing on features and started competing on inbox placement",
+      "goal": "Explain the Mailchimp acquisition/upmarket move, Klaviyo's ecommerce claim, Brevo's SMB CRM claim — and how deliverability became the last defensible differentiator. Explain what 'Ready to make email work again?' implies about the target buyer (churned from Mailchimp).",
+      "word_target": 200,
+      "evidence_sources": [
+        "messaging",
+        "strategic-shift"
+      ],
+      "marketing_lens": "category"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from SendX's homepage evolution",
+      "goal": "3 patterns: (1) adjective-removal as a testable path to H1 simplification; (2) proof denominators making specific claims credible; (3) competitor-migration section heading. Each must have a specific runnable test.",
+      "word_target": 380,
+      "evidence_sources": [
+        "strategic-shift",
+        "messaging",
+        "cta-changes"
+      ],
+      "marketing_lens": "strategy"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Feature-rich → Deliverability-first",
+      "note": "H1 went from 3 adjectives to 2 outcome sentences"
+    },
+    {
+      "label": "Proof point",
+      "value": "95–98% inbox / 4.4B emails",
+      "note": "Meta description leads with specific, verifiable claim"
+    },
+    {
+      "label": "Migration signal",
+      "value": "\"Make email work again\"",
+      "note": "Competitor-migration H2 built into page structure"
+    },
+    {
+      "label": "Sales motion",
+      "value": "Self-serve only",
+      "note": "Demo CTA removed; 14-day free trial + Explore CTAs"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-27T08:07:49.890Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

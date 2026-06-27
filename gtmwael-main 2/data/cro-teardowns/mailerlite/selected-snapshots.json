@@ -1,0 +1,62 @@
+[
+  {
+    "month": "2015-07",
+    "slotStart": "2015-07",
+    "slotEnd": "2015-12",
+    "timestamp": "20151001065654",
+    "originalUrl": "https://www.mailerlite.com",
+    "screenshotPath": "/cro-teardowns/mailerlite/archive-monthly/2015-07.webp",
+    "selectedPath": "/cro-teardowns/mailerlite/selected/2015-07.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "2019-01",
+    "slotStart": "2019-01",
+    "slotEnd": "2019-06",
+    "timestamp": "20190402062422",
+    "originalUrl": "https://www.mailerlite.com",
+    "screenshotPath": "/cro-teardowns/mailerlite/archive-monthly/2019-01.webp",
+    "selectedPath": "/cro-teardowns/mailerlite/selected/2019-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "2022-07",
+    "slotStart": "2022-07",
+    "slotEnd": "2022-12",
+    "timestamp": "20221001003938",
+    "originalUrl": "https://www.mailerlite.com",
+    "screenshotPath": "/cro-teardowns/mailerlite/archive-monthly/2022-07.webp",
+    "selectedPath": "/cro-teardowns/mailerlite/selected/2022-07.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "2026-01",
+    "slotStart": "2026-01",
+    "slotEnd": "2026-06",
+    "timestamp": "20260401185539",
+    "originalUrl": "https://www.mailerlite.com",
+    "screenshotPath": "/cro-teardowns/mailerlite/archive-monthly/2026-01.webp",
+    "selectedPath": "/cro-teardowns/mailerlite/selected/2026-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  }
+]

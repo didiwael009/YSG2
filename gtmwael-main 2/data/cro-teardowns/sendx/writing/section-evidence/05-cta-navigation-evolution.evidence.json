@@ -1,0 +1,73 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "SendX",
+  "companyUrl": "https://www.sendx.io/",
+  "articleTitle": "SendX Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How SendX rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 7,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 2,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "cta-changes": {
+    "added": [
+      "Start Free 14 Day Trial",
+      "Explore Newsletter Campaigns",
+      "Explore Visual Workflows",
+      "Explore Landing Pages",
+      "Explore Popups",
+      "Explore Segmentation",
+      "Explore Email Analytics",
+      "Explore Addon: Transactional Email",
+      "Explore Email API",
+      "Explore Email Personalisation"
+    ],
+    "removed": [
+      "START FREE TRIAL NOW",
+      "Book a Demo Now",
+      "Book a Demo",
+      "Log In",
+      "View Details →",
+      "WordPress Plugin",
+      "JS API",
+      "SendX Affiliate Program",
+      "About Us",
+      "Terms & Conditions"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "The complete email platform",
+      "Email that reach inboxes",
+      "From the Blog",
+      "Email marketing that drives ecommerce revenue",
+      "What customers are saying...",
+      "Email marketing for every industry",
+      "Simple, honest pricing.",
+      "Frequently asked questions",
+      "Recognized by G2",
+      "Ready to make email work again?"
+    ],
+    "removed": [
+      "Send Unlimited Email CampaignsBuild Your Email ListAutomate Advanced Email Sequences",
+      "Send Email Campaigns",
+      "Build Your Email List",
+      "Automate Email Sequences",
+      "Design with Drag & Drop Email Editor",
+      "Users in 93+ countries",
+      "Award Winning Support"
+    ]
+  }
+}

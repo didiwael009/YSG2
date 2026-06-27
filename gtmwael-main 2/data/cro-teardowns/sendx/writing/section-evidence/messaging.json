@@ -1,0 +1,19 @@
+[
+  {
+    "element": "Primary headline (H1)",
+    "before": "Intuitive, Feature-Rich, Affordable Email Marketing Software",
+    "after": "Send unlimited emails.Land in the inbox. That's it.",
+    "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+  },
+  {
+    "element": "Meta description",
+    "before": "Email marketing software that helps you with email campaigns, drip marketing, list growth, landing pages, web forms, email popups and automation. Create your email marketing account and start a free trial now.",
+    "after": "SendX delivers 95–98% inbox placement across 4.4 billion emails sent. Unlimited sends, AI reputation management, and 24/7 live support. Trusted by 3,000+ businesses. Rated 4.6/5 on G2 and Capterra. Free 14-day trial — no credit card needed.",
+    "note": "Meta description updated. The change in framing may reflect a positioning adjustment or an SEO update."
+  },
+  {
+    "element": "Page title",
+    "before": "Email Marketing Software - SendX",
+    "after": "SendX: Email Marketing Software | Unlimited Sends, AI Deliverability"
+  }
+]

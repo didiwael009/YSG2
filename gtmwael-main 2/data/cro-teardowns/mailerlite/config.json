@@ -1,0 +1,10 @@
+{
+  "name": "MailerLite",
+  "slug": "mailerlite",
+  "url": "https://www.mailerlite.com",
+  "from": "2015-01",
+  "to": "2026-06",
+  "stepMonths": 6,
+  "createdAt": "2026-06-27T00:27:14.360Z",
+  "phase": 1
+}

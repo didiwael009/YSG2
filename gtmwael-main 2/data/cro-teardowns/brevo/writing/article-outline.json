@@ -1,0 +1,107 @@
+{
+  "angle": "Brevo's homepage tells the story of a rebrand paying off — measured by when 'Why Brevo?' disappeared from the nav. The article tracks the specific homepage signals that mark each phase: explanation → brand-recall → category ownership.",
+  "distinct_from": [
+    "rebrand patience measured by nav signal",
+    "LTV outcome H1 vs aspiration H1",
+    "channel-name nav vs feature-name nav"
+  ],
+  "h1": "Brevo Homepage Teardown: How a Rebranded Company Stopped Explaining Itself and Started Owning a Category",
+  "seo_title": "Brevo Homepage Teardown: 2023–2026",
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Open with the Sendinblue → Brevo rebrand context and the single homepage signal that shows the rebrand succeeded: the removal of 'Why Brevo?' from navigation. Name the period, the H1 shift, and what the reader will be able to test on their own post-rebrand homepage.",
+      "word_target": 90,
+      "evidence_sources": [
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "brand"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Brevo's homepage arc 2023–2026: from rebrand introduction to customer-lifetime-value platform",
+      "goal": "Show three distinct phases: (1) Jan 2023 — new brand introducing itself with 'Why Brevo?' and 'Get Brevo' CTA; (2) mid-period evidence of brand settling (if available); (3) 2026 — category ownership mode with LTV H1 and demo CTA. Anchor to page title and CTA evidence.",
+      "word_target": 300,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "cta-changes"
+      ],
+      "marketing_lens": "brand"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Brevo's homepage messaging shifted from brand introduction to lifetime customer ownership",
+      "goal": "Analyze the H1 shift ('Connections that spark growth' → 'Turn Every Email SMS Order Interaction into a Lifetime Customer') and the meta description hedge removal ('and more' → full product list). Explain what each change signals about the visitor's assumed awareness level.",
+      "word_target": 300,
+      "evidence_sources": [
+        "messaging",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How Brevo's CTAs and navigation changed the sales motion",
+      "goal": "Analyze: (1) CTA shift from 'Get Brevo'/'Why Brevo?' (brand-building) to 'Sign up free'/'Get a demo' (action-oriented); (2) nav rename 'Products' → 'Platform'; (3) addition of channel nav items (Wallet, Phone). End with a test about nav item names.",
+      "word_target": 280,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## Why Brevo renamed itself and then rewrote its entire homepage",
+      "goal": "Explain the Sendinblue brand equity problem, the 2023 competitive context (Klaviyo IPO, HubSpot expansion, Mailchimp/Intuit), and why 'customer engagement platform' was the right category to claim. End with the timeline implication: 2–3 years from rebrand to category ownership.",
+      "word_target": 200,
+      "evidence_sources": [
+        "messaging",
+        "strategic-shift"
+      ],
+      "marketing_lens": "category"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from Brevo's homepage evolution",
+      "goal": "3 patterns: (1) 'Why [Company]?' removal as a measurable brand-recall milestone; (2) replacing meta-description hedges with a full product list; (3) omnichannel H1 as a category claim. Each must end with a specific test the reader can run.",
+      "word_target": 380,
+      "evidence_sources": [
+        "strategic-shift",
+        "cta-changes",
+        "messaging"
+      ],
+      "marketing_lens": "strategy"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Brand intro → Category owner",
+      "note": "H1 moved from aspiration to LTV outcome"
+    },
+    {
+      "label": "Rebrand signal",
+      "value": "\"Why Brevo?\" removed",
+      "note": "Nav explanation CTA dropped once recall established"
+    },
+    {
+      "label": "Sales motion",
+      "value": "PLG + demo path",
+      "note": "\"Sign up free\" + \"Get a demo\" dual CTA added"
+    },
+    {
+      "label": "AI positioning",
+      "value": "\"AI agents\" section",
+      "note": "Competitive differentiator added as section heading"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-27T08:00:41.816Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

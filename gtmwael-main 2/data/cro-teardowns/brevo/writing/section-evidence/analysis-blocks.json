@@ -1,0 +1,28 @@
+[
+  {
+    "id": "analysis-2023-01",
+    "label": "Jan 2023 — original state",
+    "period": "Jan 2023",
+    "screenshotPath": "/cro-teardowns/brevo/selected/2023-01.webp",
+    "heading": "The original: growth-outcome messaging",
+    "annotations": [
+      "H1 opens with: \"Connections that spark growth\" — accessible benefit language aimed at a broad audience.",
+      "Visible section headings include: \"Wide reachClose connection\", \"Everyone can grow with Brevo\".",
+      "Navigation includes: \"Products\" — product category framing.",
+      "Section headings later removed include: \"Wide reachClose connection\" and \"Everyone can grow with Brevo\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/brevo/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Turn Every EmailSMSOrder Interaction into a Lifetime Customer\" — updated value proposition.",
+      "New section headings include: \"Join 600,000+ customers around the world who trust Brevo\", \"Engage your audience your way\", \"AI agents that work with you, and for you\".",
+      "Third-party validation visible in section headings: \"Awarded for excellence\".",
+      "CTAs no longer present include: \"Get Brevo\", \"Read customer stories\", \"See all integrations\"."
+    ]
+  }
+]

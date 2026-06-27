@@ -1,0 +1,214 @@
+{
+  "slug": "brevo",
+  "companyName": "Brevo",
+  "companyUrl": "https://www.brevo.com/",
+  "category": "CRO Teardown",
+  "title": "Brevo Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Brevo rewrote its homepage over 3 years",
+  "metaTitle": "Brevo Homepage CRO Teardown — Jan 2023 to Jun 2026",
+  "description": "A CRO teardown of Brevo's homepage from Jan 2023 to Jun 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "Brevo's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jan 2023 and Jun 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-27",
+  "readTime": "8 min read",
+  "featuredImage": "/cro-teardowns/brevo/selected/2023-01.webp",
+  "featuredImageAlt": "Brevo Jan 2023 homepage — 'Connections that spark growth'",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshots": [
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/brevo/selected/2023-01.webp"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/brevo/selected/current-live.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "9 added · 2 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Connections that spark growth",
+      "after": "Turn Every EmailSMSOrderInteraction into a Lifetime Customer",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Brevo helps you grow your business. Build customer relationships across email, SMS, chat, and more. Use the tools you need, when you need them. Try it for free.",
+      "after": "Brevo is the most intuitive all-in-one customer engagement platform: email and SMS marketing, automation, CRM, live chat, and transactional email. Try it free.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Brevo (formerly Sendinblue) | CRM Suite",
+      "after": "Brevo: Email & SMS Marketing, CRM & Automation Platform"
+    }
+  ],
+  "h2Added": [
+    "Join 600,000+ customers around the world who trust Brevo",
+    "Engage your audience your way",
+    "AI agents that work with you, and for you",
+    "Built for every business — from the first send to enterprise",
+    "Awarded for excellence",
+    "Real stories, real success",
+    "Brevo connects to the tools you already use",
+    "Ready to grow with Brevo?",
+    "Privacy Preferences Center"
+  ],
+  "h2Removed": [
+    "Wide reachClose connection",
+    "Everyone can grow with Brevo"
+  ],
+  "ctaAdded": [
+    "Sign up free",
+    "Learn more",
+    "Explore Brevo for SMBs",
+    "Get a demo",
+    "Reject All",
+    "Email marketing",
+    "SMS marketing",
+    "WhatsApp campaigns",
+    "Push notifications",
+    "Mobile Wallet"
+  ],
+  "ctaRemoved": [
+    "Get Brevo",
+    "Read customer stories",
+    "See all integrations",
+    "Why Brevo?"
+  ],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2023-01",
+      "label": "Jan 2023 — original state",
+      "period": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/brevo/selected/2023-01.webp",
+      "heading": "The original: growth-outcome messaging",
+      "annotations": [
+        "H1 opens with: \"Connections that spark growth\" — accessible benefit language aimed at a broad audience.",
+        "Visible section headings include: \"Wide reachClose connection\", \"Everyone can grow with Brevo\".",
+        "Navigation includes: \"Products\" — product category framing.",
+        "Section headings later removed include: \"Wide reachClose connection\" and \"Everyone can grow with Brevo\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jun 2026 — current state",
+      "period": "Jun 2026",
+      "screenshotPath": "/cro-teardowns/brevo/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Turn Every EmailSMSOrder Interaction into a Lifetime Customer\" — updated value proposition.",
+        "New section headings include: \"Join 600,000+ customers around the world who trust Brevo\", \"Engage your audience your way\", \"AI agents that work with you, and for you\".",
+        "Third-party validation visible in section headings: \"Awarded for excellence\".",
+        "CTAs no longer present include: \"Get Brevo\", \"Read customer stories\", \"See all integrations\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"Connections that spark growth\" to \"Turn Every EmailSMSOrder Interaction into a Lifetime Custome...\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Navigation is a positioning statement",
+      "body": "Navigation items changed from \"Products\", \"Features\", \"Email marketing\" to \"Platform\", \"Email\", \"SMS\". The labels your navigation uses reveal what you think your visitor is trying to decide — and who that visitor is.",
+      "tag": "Navigation"
+    },
+    {
+      "title": "Section headings reveal what the team thinks buyers care about",
+      "body": "9 section headings were added and 2 removed between Jan 2023 and Jun 2026. New headings include \"Join 600,000+ customers around the world who trust Brevo\" and \"Engage your audience your way\". Headings that disappeared include \"Wide reachClose connection\" and \"Everyone can grow with Brevo\". The pattern of what gets added and removed is one of the clearest signals of how a team is re-prioritizing its value proposition.",
+      "tag": "CRO"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 2 snapshots spanning roughly 3 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Not sure why your page isn't converting?",
+    "body": "I map your visitor intent against your current messaging and CTA structure, then tell you exactly where the drop-off happens and how to fix it.",
+    "button": "Book a CRO audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "From proof structure to CTA friction — the patterns that move the needle on SaaS landing pages.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "Using AI to diagnose conversion drop-off without drowning in session recordings.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    },
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "Traffic without conversions is a messaging problem, not a traffic problem.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    }
+  ]
+}

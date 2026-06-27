@@ -1,0 +1,32 @@
+{
+  "slug": "mailerlite",
+  "generatedAt": "2026-06-27T07:44:55.735Z",
+  "mode": "standard",
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
+  "failCount": 0,
+  "skippedCount": 7,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [],
+  "sectionErrors": [],
+  "finalJudgeScore": 91,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [],
+  "seoScore": 87,
+  "seoPass": true,
+  "seoRequiredFixes": [],
+  "articleWordCount": 1867,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[02-quick-answer] Paragraph exceeds 90 words (~97w): \"MailerLite's biggest homepage change between 2015 and 2026…\"",
+    "[03-visual-timeline] Paragraph exceeds 90 words (~91w): \"By January 2026, the gap from the starting…\"",
+    "[04-messaging-evolution] Paragraph exceeds 90 words (~107w): \"The Wayback archive did not preserve MailerLite's earliest…\"",
+    "[04-messaging-evolution] Paragraph exceeds 90 words (~112w): \"The January 2026 page added four section headings…\"",
+    "[04-messaging-evolution] Paragraph exceeds 90 words (~95w): \"The page now appears to be written for…\"",
+    "[05-cta-navigation-evolution] Paragraph exceeds 90 words (~126w): \"No CTAs were preserved in the earliest Wayback…\"",
+    "[05-cta-navigation-evolution] Paragraph exceeds 90 words (~129w): \"Between the earliest captured state and January 2026,…\""
+  ],
+  "overLengthWarning": null
+}

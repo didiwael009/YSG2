@@ -1,0 +1,28 @@
+[
+  {
+    "id": "analysis-2019-01",
+    "label": "Jan 2019 — original state",
+    "period": "Jan 2019",
+    "screenshotPath": "/cro-teardowns/sendx/selected/2019-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Intuitive, Feature-Rich, Affordable Email Marketing Software\" — a direct product statement.",
+      "Visible section headings include: \"Send Unlimited Email CampaignsBuild Your Email ListAutomate Advanced Email Sequences\", \"Send Email Campaigns\", \"Build Your Email List\".",
+      "Navigation includes: \"HOME\", \"Pricing\", \"Book DEMO\", \"Blog\" — product category framing.",
+      "Section headings later removed include: \"Send Unlimited Email CampaignsBuild Your Email ListAutomate Advanced Email Sequences\" and \"Send Email Campaigns\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jun 2026 — current state",
+    "period": "Jun 2026",
+    "screenshotPath": "/cro-teardowns/sendx/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Send unlimited emails.Land in the inbox. That's it.\" — updated value proposition.",
+      "New section headings include: \"The complete email platform\", \"Email that reach inboxes\", \"From the Blog\".",
+      "Third-party validation visible in section headings: \"Recognized by G2\".",
+      "CTAs no longer present include: \"START FREE TRIAL NOW\", \"Book a Demo Now\", \"Book a Demo\"."
+    ]
+  }
+]

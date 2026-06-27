@@ -1,0 +1,3 @@
+## Quick answer
+
+CrowdAnalyzer's biggest homepage change was replacing its H1 — **"The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform"** — with the generic **"Empowering Growth Through Data-Driven Insights."** The page moved from naming its category and its Arabic wedge to claiming a broad outcome, expanding its navigation into a full intelligence suite. The differentiator buyers search for now sits below the fold instead of in the headline.

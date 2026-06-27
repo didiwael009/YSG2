@@ -1,0 +1,110 @@
+{
+  "slug": "crowdanalyzer",
+  "companyName": "CrowdAnalyzer",
+  "companyUrl": "https://crowdanalyzer.com",
+  "fromMonth": "2016-07",
+  "toMonth": "current",
+  "fromLabel": "Jul 2016",
+  "toLabel": "Jun 2026",
+  "generatedAt": "2026-06-26T21:43:25.846Z",
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "snapshots": [
+    {
+      "month": "2016-07",
+      "label": "Jul 2016",
+      "screenshotPath": "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
+      "timestamp": "20161020085117",
+      "originalUrl": "https://crowdanalyzer.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/crowdanalyzer/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://crowdanalyzer.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 0,
+    "titleChanges": 1,
+    "h2Added": [
+      "See our story​",
+      "Get in touch",
+      "Visit the newsroom​",
+      "Learn about our family",
+      "Don't Miss an Update",
+      "Trusted by Industry Leaders",
+      "A Full Smart Suite to Drive Your Success",
+      "Unlock your competitive edge with",
+      "Deep Insights, Real Impact",
+      "The Premier Arabic-Focused Social Media Monitoring Platform",
+      "Interpret, act, and grow",
+      "Innovative Tech to Track, Analyze & Elevate Your Brand",
+      "Unmatched Accuracy and Insights",
+      "Advanced AI and NLP for Superior Performance",
+      "Deeper understanding & Cultural Awareness​",
+      "Global Language Understanding with NLP & Advanced AI",
+      "The Evolution of Free Spins Promotions in South Africa",
+      "Betzoid’s Role in Reviewing and Standardizing Offers",
+      "Trends and Developments in Seventy Free Spins Offers",
+      "Discover the Delightful Experiences Shared by Satisfied Customers",
+      "Take your next big step now",
+      "let's discuss how Crowd Analyzer can transform your business",
+      "Stay Ahead with Our Expert-Driven Content",
+      "Gain valuable knowledge on emerging trends, analytics best practices, and success strategies to elevate your brand",
+      "What makes Crowd Analyzer unique?",
+      "Who are we",
+      "Life at Crowd Analyzer",
+      "Stay eager to",
+      "Our Knowledge Hub"
+    ],
+    "h2Removed": [],
+    "ctaAdded": [
+      "Start Now",
+      "Download it Now",
+      "Request Demo",
+      "Request a Free Demo",
+      "Read More",
+      "Get Started",
+      "Download Report",
+      "Download Guide",
+      "Read Article",
+      "Request Free Demo"
+    ],
+    "ctaRemoved": [
+      "Request a Demo",
+      "Product Tour",
+      "Login",
+      "Take a tour",
+      "Who we are"
+    ],
+    "navAdded": [
+      "Our Suite",
+      "Media Intelligence",
+      "Advertisements Intelligence",
+      "Research Insights",
+      "Data Integration",
+      "By Need",
+      "By Industry",
+      "Government and Consulting"
+    ],
+    "navRemoved": [],
+    "headlines": [
+      {
+        "from": "The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform",
+        "to": "Empowering Growth Through Data-Driven Insights",
+        "fromMonth": "2016-07",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [],
+    "visualOnly": false
+  }
+}

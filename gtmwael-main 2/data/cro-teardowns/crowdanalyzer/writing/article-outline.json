@@ -1,0 +1,111 @@
+{
+  "angle": "CrowdAnalyzer moved its Arabic-language wedge out of the headline as it climbed from a niche monitoring tool to a broad intelligence suite — trading five-second relevance for category reach.",
+  "distinct_from": [
+    "wedge demotion plus platform-suite expansion"
+  ],
+  "h1": "CrowdAnalyzer buried 'Arabic Focused' to claim the platform category",
+  "seo_title": "CrowdAnalyzer Homepage Teardown: 2016–2026",
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Set up the wedge-demotion-plus-platform-climb story and promise the reader a verdict on whether the move fits their own page",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## CrowdAnalyzer homepage 2016–2026: from category claim to platform claim",
+      "goal": "Show the arc from a single Arabic-monitoring product to a multi-module enterprise suite",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How CrowdAnalyzer's headline moved down the awareness ladder",
+      "goal": "Show how the H1 shift from category-name to generic outcome changes who the page speaks to",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "icp"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How CrowdAnalyzer's CTA and navigation signal a platform play",
+      "goal": "Show how nav expansion and new self-serve CTAs reframe the sales motion toward enterprise",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## Why CrowdAnalyzer's homepage grew from a tool into a platform",
+      "goal": "Explain the niche-to-platform pull and the competitive cost of a generic headline",
+      "word_target": 180,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "business-context-research"
+      ],
+      "marketing_lens": "category"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from CrowdAnalyzer's homepage evolution",
+      "goal": "Three runnable patterns: wedge demotion, category climb, CTA hierarchy",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Arabic niche → intelligence platform",
+      "note": "H1 went from 'The 1st Arabic Focused… Platform' to 'Empowering Growth Through Data-Driven Insights'"
+    },
+    {
+      "label": "Target buyer",
+      "value": "MENA marketers → enterprise & government",
+      "note": "Nav added 'By Industry' and 'Government and Consulting'"
+    },
+    {
+      "label": "Sales motion",
+      "value": "Demo-only → demo + self-serve",
+      "note": "Added 'Start Now', 'Get Started', 'Download it Now' beside 'Request a Free Demo'"
+    },
+    {
+      "label": "Category play",
+      "value": "Point tool → four-module suite",
+      "note": "Added Media Intelligence, Advertisements Intelligence, Research Insights, Data Integration"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-06-26T22:51:22.239Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

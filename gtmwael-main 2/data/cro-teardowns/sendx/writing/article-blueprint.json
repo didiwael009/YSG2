@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 7,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 2,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "generatedAt": "2026-06-27T08:01:57.164Z",
+  "postSummary": {
+    "title": "SendX Homepage Teardown: Jan 2019 to Jun 2026",
+    "h1": "How SendX rewrote its homepage over 7 years",
+    "readTime": "8 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 2,
+    "lessonCardCount": 4,
+    "snapshotCount": 3
+  }
+}

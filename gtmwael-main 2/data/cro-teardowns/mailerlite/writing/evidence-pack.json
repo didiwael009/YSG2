@@ -1,0 +1,95 @@
+{
+  "slug": "mailerlite",
+  "companyName": "MailerLite",
+  "companyUrl": "https://www.mailerlite.com",
+  "fromMonth": "2015-07",
+  "toMonth": "2026-01",
+  "fromLabel": "Jul 2015",
+  "toLabel": "Jan 2026",
+  "generatedAt": "2026-06-27T07:35:11.188Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2015-07",
+      "label": "Jul 2015",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2015-07.webp",
+      "timestamp": "20151001065654",
+      "originalUrl": "https://www.mailerlite.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2019-01.webp",
+      "timestamp": "20190402062422",
+      "originalUrl": "https://www.mailerlite.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2022-07",
+      "label": "Jul 2022",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2022-07.webp",
+      "timestamp": "20221001003938",
+      "originalUrl": "https://www.mailerlite.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2026-01.webp",
+      "timestamp": "20260401185539",
+      "originalUrl": "https://www.mailerlite.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 0,
+    "titleChanges": 0,
+    "h2Added": [
+      "You're in good company",
+      "Customer support is always here to help you",
+      "Templates that work",
+      "Keeping it Lite"
+    ],
+    "h2Removed": [],
+    "ctaAdded": [
+      "Sign up free",
+      "Watch demo",
+      "Read more stories",
+      "Explore all templates",
+      "Nutt Labs",
+      "Notion VIP",
+      "All integrations",
+      "Landing pages",
+      "Preview template",
+      "This is how we keep it Lite"
+    ],
+    "ctaRemoved": [],
+    "navAdded": [
+      "Features",
+      "Pricing",
+      "Gallery",
+      "Templates",
+      "Newsletters",
+      "Websites",
+      "Landing pages",
+      "Pop-ups"
+    ],
+    "navRemoved": [],
+    "headlines": [
+      {
+        "from": "503 Service Unavailable",
+        "to": "Create email marketing automations landing pages signup forms websites your audience will love",
+        "fromMonth": "2015-07",
+        "toMonth": "2026-01"
+      }
+    ],
+    "metaDescs": [],
+    "visualOnly": false
+  }
+}

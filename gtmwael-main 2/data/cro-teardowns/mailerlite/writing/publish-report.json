@@ -1,0 +1,27 @@
+{
+  "publishedAt": "2026-06-27T07:45:02.797Z",
+  "slug": "mailerlite",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 91,
+    "seoPass": true,
+    "seoScore": 87,
+    "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "H1 quote missing: old H1 \"503 Service Unavailable\" does not appear in article-final.md. The article should quote the old headline."
+    ]
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/mailerlite.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

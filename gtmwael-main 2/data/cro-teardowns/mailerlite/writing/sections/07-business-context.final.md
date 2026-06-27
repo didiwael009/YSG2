@@ -1,0 +1,7 @@
+## The business context behind MailerLite's redesign
+
+MailerLite launched around 2010 as a deliberately simpler, cheaper alternative to Mailchimp. The name was the product promise: lighter tooling, faster setup, and a free tier that let small businesses and bloggers start without a credit card. The email marketing category in 2010–2015 rewarded exactly this positioning — most competitors had grown bloated chasing enterprise.
+
+Between 2017 and 2022, MailerLite added landing pages, a website builder, automations, digital product sales, and paid newsletter subscriptions. The homepage reflects this: the H1 now lists five product categories, and the navigation adds "Solopreneurs" as an explicit audience segment. These moves are consistent with a deliberate pivot toward the creator economy — independent creators who need to build an audience and monetize it without switching between five different tools.
+
+The broader industry shift is the bifurcation of email marketing into two tracks: enterprise automation (HubSpot, Klaviyo) and creator monetization (Kit, Beehiiv, Ghost). MailerLite's "Keeping it Lite" section heading suggests it chose the second track and knew the risk: adding five products while keeping "Lite" in the brand requires the product to actually stay simple to use. For SaaS teams in adjacent categories, the question is not whether to add features but which track to commit to — the homepage must reflect that choice clearly.

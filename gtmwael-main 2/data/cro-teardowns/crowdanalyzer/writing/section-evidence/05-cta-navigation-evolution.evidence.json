@@ -1,0 +1,79 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "CrowdAnalyzer",
+  "companyUrl": "https://crowdanalyzer.com",
+  "articleTitle": "CrowdAnalyzer Homepage Teardown: Jul 2016 to Jun 2026",
+  "h1": "How CrowdAnalyzer rewrote its homepage over 10 years",
+  "fromLabel": "Jul 2016",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 29,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 5,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "cta-changes": {
+    "added": [
+      "Start Now",
+      "Download it Now",
+      "Request Demo",
+      "Request a Free Demo",
+      "Read More",
+      "Get Started",
+      "Download Report",
+      "Download Guide",
+      "Read Article",
+      "Request Free Demo"
+    ],
+    "removed": [
+      "Request a Demo",
+      "Product Tour",
+      "Login",
+      "Take a tour",
+      "Who we are"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "See our story​",
+      "Get in touch",
+      "Visit the newsroom​",
+      "Learn about our family",
+      "Don't Miss an Update",
+      "Trusted by Industry Leaders",
+      "A Full Smart Suite to Drive Your Success",
+      "Unlock your competitive edge with",
+      "Deep Insights, Real Impact",
+      "The Premier Arabic-Focused Social Media Monitoring Platform",
+      "Interpret, act, and grow",
+      "Innovative Tech to Track, Analyze & Elevate Your Brand",
+      "Unmatched Accuracy and Insights",
+      "Advanced AI and NLP for Superior Performance",
+      "Deeper understanding & Cultural Awareness​",
+      "Global Language Understanding with NLP & Advanced AI",
+      "The Evolution of Free Spins Promotions in South Africa",
+      "Betzoid’s Role in Reviewing and Standardizing Offers",
+      "Trends and Developments in Seventy Free Spins Offers",
+      "Discover the Delightful Experiences Shared by Satisfied Customers",
+      "Take your next big step now",
+      "let's discuss how Crowd Analyzer can transform your business",
+      "Stay Ahead with Our Expert-Driven Content",
+      "Gain valuable knowledge on emerging trends, analytics best practices, and success strategies to elevate your brand",
+      "What makes Crowd Analyzer unique?",
+      "Who are we",
+      "Life at Crowd Analyzer",
+      "Stay eager to",
+      "Our Knowledge Hub"
+    ],
+    "removed": []
+  }
+}

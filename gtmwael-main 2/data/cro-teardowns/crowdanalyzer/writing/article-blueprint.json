@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 29,
+    "h2Removed": 0,
+    "ctaAdded": 10,
+    "ctaRemoved": 5,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "generatedAt": "2026-06-26T21:43:25.854Z",
+  "postSummary": {
+    "title": "CrowdAnalyzer Homepage Teardown: Jul 2016 to Jun 2026",
+    "h1": "How CrowdAnalyzer rewrote its homepage over 10 years",
+    "readTime": "8 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 2,
+    "analysisBlockCount": 2,
+    "lessonCardCount": 4,
+    "snapshotCount": 2
+  }
+}

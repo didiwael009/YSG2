@@ -1,0 +1,27 @@
+{
+  "recommendedCitations": [
+    {
+      "id": "SRC-005",
+      "title": "AI SaaS Founder Playbook",
+      "author": "Operator field reports 2025–2026",
+      "domain": "AI SaaS GTM",
+      "citationPattern": "The AI SaaS Founder Playbook describes this pattern as [observation about AI positioning or platform moat]."
+    },
+    {
+      "id": "SRC-012",
+      "title": "Crossing the Chasm",
+      "author": "Geoffrey Moore",
+      "domain": "Market development",
+      "citationPattern": "Moore's whole-product model in Crossing the Chasm describes [observation about category or market expansion]."
+    },
+    {
+      "id": "SRC-001",
+      "title": "Obviously Awesome",
+      "author": "April Dunford",
+      "domain": "Positioning",
+      "citationPattern": "As Dunford describes in Obviously Awesome, [observation about positioning shift]."
+    }
+  ],
+  "usageInstruction": "Use 1-2 of these citations naturally — embedded in a sentence, not listed separately. Format: \"As [Author] notes in [Title], ...\" or \"This is consistent with [Author]'s framework in [Title].\" Never invent citations. Only cite sources listed here.",
+  "generatedAt": "2026-06-27T07:59:52.298Z"
+}

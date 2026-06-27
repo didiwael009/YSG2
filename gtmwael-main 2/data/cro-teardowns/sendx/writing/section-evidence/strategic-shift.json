@@ -1,0 +1,41 @@
+{
+  "central_thesis": "SendX replaced a feature-breadth homepage that claimed to do everything ('Intuitive, Feature-Rich, Affordable Email Marketing Software') with a deliverability-first homepage that makes one specific promise — 'Send unlimited emails. Land in the inbox. That's it.' — backed by a concrete proof point ('95–98% inbox placement across 4.4 billion emails sent'), positioning against the email deliverability problems that are the primary reason users churn from Mailchimp and its competitors.",
+  "old_positioning_frame": "A capable, affordable email marketing suite for small businesses — positioned on feature breadth (campaigns, drip, list growth, landing pages, popups, automation) and price. The H1 leads with three descriptors ('Intuitive, Feature-Rich, Affordable') that describe the product rather than the outcome.",
+  "new_positioning_frame": "The email marketing tool that actually delivers to the inbox. The H1 is a two-sentence promise: unlimited sends and inbox placement. The meta description leads with a specific deliverability proof point ('95–98% inbox placement across 4.4 billion emails sent') and closes with social proof (G2, Capterra) and a no-friction trial offer. The positioning is aimed at buyers who have had deliverability problems with their current tool.",
+  "buyer_shift": "SMBs evaluating email tools for the first time, comparing feature lists → businesses that have been burned by deliverability problems on Mailchimp, Sendinblue, or Klaviyo and are actively looking for a tool whose primary differentiator is inbox placement.",
+  "funnel_shift": "Problem-unaware visitors who needed a feature comparison to evaluate email marketing tools → problem-aware visitors who already know they have a deliverability problem and are searching for an alternative. The H2 'Ready to make email work again?' is an explicit signal for this stage.",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "Intuitive, Feature-Rich, Affordable Email Marketing Software",
+      "new": "Send unlimited emails.Land in the inbox. That's it.",
+      "meaning": "The old H1 lists three product attributes in one sentence — a typical feature-comparison frame. The new H1 is two sentences with a deliberate 'That's it' ending, which signals radical focus rather than breadth. 'Land in the inbox' names a specific pain point (deliverability) rather than a feature. This shift suggests SendX has identified deliverability as the primary reason it wins against Mailchimp and is now positioning explicitly around that advantage."
+    },
+    {
+      "element": "Meta description",
+      "old": "Email marketing software that helps you with email campaigns, drip marketing, list growth, landing pages, web forms, email popups and automation. Create your email marketing account and start a free trial now.",
+      "new": "SendX delivers 95–98% inbox placement across 4.4 billion emails sent. Unlimited sends, AI reputation management, and 24/7 live support. Trusted by 3,000+ businesses. Rated 4.6/5 on G2 and Capterra. Free 14-day trial — no credit card needed.",
+      "meaning": "The old meta description is a feature list — it names 7 product capabilities. The new meta description leads with a specific, verifiable proof point ('95–98% inbox placement across 4.4 billion emails') and adds proof at every level: volume proof (4.4B emails), AI capability (reputation management), social proof (G2, Capterra ratings), and a no-friction trial offer. This shift is consistent with a company that has identified its strongest differentiator and is building the entire messaging hierarchy around it."
+    },
+    {
+      "element": "Section headings",
+      "old": "Send Unlimited Email Campaigns | Build Your Email List | Automate Email Sequences | Design with Drag & Drop Email Editor | Users in 93+ countries | Award Winning Support",
+      "new": "The complete email platform | Email that reach inboxes | Email marketing that drives ecommerce revenue | Ready to make email work again? | Simple, honest pricing.",
+      "meaning": "The old H2s are feature process steps — they tell the visitor what they will do with the tool. The new H2s are outcome-based ('drives ecommerce revenue', 'reach inboxes') and competitor-poaching ('make email work again' implies current tools are broken). 'Simple, honest pricing' suggests a competitor positioning against tools with opaque pricing tiers."
+    },
+    {
+      "element": "CTA",
+      "old": "START FREE TRIAL NOW | Book a Demo Now | Book a Demo",
+      "new": "Start Free 14 Day Trial | Explore Newsletter Campaigns | Explore Visual Workflows | Explore Landing Pages",
+      "meaning": "Removing 'Book a Demo Now' is significant — demo-gating is typically an enterprise or high-ACV sales motion. SendX removing it suggests the product is either fully self-serve or the demo conversion rate was low enough to drop. The old all-caps 'START FREE TRIAL NOW' urgency framing has been replaced by 'Start Free 14 Day Trial' — more specific (14 days) and less pressured. Feature 'Explore' CTAs suggest a product-led discovery motion."
+    }
+  ],
+  "copy_this_if": "Your email tool has measurable deliverability advantages (inbox placement rates, dedicated IP infrastructure, or AI reputation management) that you can back with specific numbers — and your primary competitor-win reason is that customers are migrating from tools where email goes to spam.",
+  "do_not_copy_this_if": "You cannot substantiate the deliverability claim with a specific, provable number. 'Land in the inbox' without a proof point like '95–98% inbox placement across 4.4 billion emails' is a generic claim that will not differentiate you — it is what every email tool claims.",
+  "safer_version_for_early_stage_saas": "Instead of leading with deliverability as the H1, add one line below your current H1 that names your deliverability advantage specifically: 'Avg. 96% inbox placement — we show you the proof.' Test whether the specific number reduces free trial churn better than a general claim.",
+  "risk_if_copied": "Deliverability claims invite deliverability audits. If a prospect A/B tests SendX against Mailchimp on their own list and does not see 95–98% inbox placement, the claim collapses into false advertising. This positioning only works if the infrastructure genuinely delivers and the number is testable.",
+  "confidence_level": "high",
+  "generatedAt": "2026-06-27T08:07:01.985Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

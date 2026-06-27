@@ -1,0 +1,46 @@
+{
+  "sectionId": "06-lessons-for-saas-teams",
+  "companyName": "SendX",
+  "companyUrl": "https://www.sendx.io/",
+  "articleTitle": "SendX Homepage Teardown: Jan 2019 to Jun 2026",
+  "h1": "How SendX rewrote its homepage over 7 years",
+  "fromLabel": "Jan 2019",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 3,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 3,
+    "h2Added": 10,
+    "h2Removed": 7,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 2,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2019 → Jun 2026",
+      "note": "3 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "10 added · 7 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 2 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}

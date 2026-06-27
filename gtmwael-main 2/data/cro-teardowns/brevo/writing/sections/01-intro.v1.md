@@ -1,0 +1,3 @@
+# Brevo Homepage Teardown: From Rebrand Introduction to Lifetime Customer Ownership (2023–2026)
+
+When Sendinblue rebranded to Brevo in 2023, its homepage spent the first year explaining itself — **"Connections that spark growth"** as the H1, **"Why Brevo?"** in the navigation. By 2026, those identity-building elements are gone. The headline now reads **"Turn Every Email SMS Order Interaction into a Lifetime Customer"** and the navigation no longer needs to justify the brand. This teardown tracks exactly how Brevo's homepage moved from new-name introduction to category ownership in under three years — and what the removal of "Why Brevo?" signals about when a rebrand stops costing and starts compounding.

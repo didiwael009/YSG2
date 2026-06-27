@@ -1,0 +1,10 @@
+{
+  "name": "Brevo",
+  "slug": "brevo",
+  "url": "https://www.brevo.com/",
+  "from": "2015-01",
+  "to": "2026-01",
+  "stepMonths": 6,
+  "createdAt": "2026-06-27T07:49:00.323Z",
+  "phase": 1
+}

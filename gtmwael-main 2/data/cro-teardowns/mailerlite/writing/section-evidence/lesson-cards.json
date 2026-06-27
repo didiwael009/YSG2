@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Name your buyer in the nav, not just your product",
+    "category": "Navigation",
+    "body": "MailerLite added **\"Solopreneurs\"** and **\"Small business\"** as navigation items — audience segments sitting alongside product categories. This signals that who you serve can be as navigable as what you sell. If your product serves two distinct buyer types, an audience-segment nav item may reduce the time a visitor spends searching for their use case."
+  },
+  {
+    "number": "02",
+    "title": "Pre-empt the complexity objection with a named section",
+    "category": "Messaging",
+    "body": "As MailerLite's H1 expanded to list five products, the page added a section heading: **\"Keeping it Lite.\"** This is an on-page objection response — addressing \"is this still simple?\" before the visitor has to ask. When your product expands, adding a named section that explicitly restates your core promise may retain buyers who chose you for simplicity."
+  },
+  {
+    "number": "03",
+    "title": "A five-product H1 works only when the brand already has trust",
+    "category": "Positioning",
+    "body": "MailerLite's current H1 lists five categories: **\"email marketing automations landing pages signup forms websites.\"** This breadth claim works because the brand is recognized. For a newer product, listing five capabilities in the H1 before establishing a primary use case likely dilutes the message. Breadth signals platform maturity — use it only when visitors already know your name."
+  },
+  {
+    "number": "04",
+    "title": "Dual CTA pairing: self-serve entry + demo path on the same page",
+    "category": "Funnel",
+    "body": "MailerLite pairs **\"Sign up free\"** with **\"Watch demo\"** as co-primary CTAs. This serves two buyer intents simultaneously: the individual ready to try now, and the team buyer who needs to evaluate before committing. If your product is crossing from individual use to team purchases, adding a demo path alongside your free trial may capture the second segment without replacing the first."
+  }
+]

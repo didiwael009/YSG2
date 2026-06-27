@@ -1,0 +1,196 @@
+{
+  "slug": "mailerlite",
+  "companyName": "MailerLite",
+  "companyUrl": "https://www.mailerlite.com",
+  "category": "CRO Teardown",
+  "title": "MailerLite Homepage Teardown: Jul 2015 to Jan 2026",
+  "h1": "How MailerLite rewrote its homepage over 11 years",
+  "metaTitle": "MailerLite Homepage CRO Teardown — Jul 2015 to Jan 2026",
+  "description": "A CRO teardown of MailerLite's homepage from Jul 2015 to Jan 2026 — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it.",
+  "excerpt": "MailerLite's homepage didn't just get updated. The headline, section headings, CTAs, navigation all shifted in a consistent direction between Jul 2015 and Jan 2026. This teardown maps what changed, when, and what the patterns may suggest.",
+  "author": "Wael Aouididi",
+  "authorBio": "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
+  "datePublished": "2026-06-27",
+  "readTime": "7 min read",
+  "featuredImage": "/cro-teardowns/mailerlite/selected/2015-07.webp",
+  "featuredImageAlt": "MailerLite Jul 2015 homepage — '503 Service Unavailable'",
+  "fromLabel": "Jul 2015",
+  "toLabel": "Jan 2026",
+  "snapshots": [
+    {
+      "month": "2015-07",
+      "label": "Jul 2015",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2015-07.webp"
+    },
+    {
+      "month": "2019-01",
+      "label": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2019-01.webp"
+    },
+    {
+      "month": "2022-07",
+      "label": "Jul 2022",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2022-07.webp"
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2026-01.webp"
+    }
+  ],
+  "summaryCards": [
+    {
+      "label": "Period covered",
+      "value": "Jul 2015 → Jan 2026",
+      "note": "4 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "4 added · 0 removed",
+      "note": "Minor structure adjustments"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messagingChanges": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "503 Service Unavailable",
+      "after": "Create email marketing automations landing pages signup forms websites your audience will love",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    }
+  ],
+  "h2Added": [
+    "You're in good company",
+    "Customer support is always here to help you",
+    "Templates that work",
+    "Keeping it Lite"
+  ],
+  "h2Removed": [],
+  "ctaAdded": [
+    "Sign up free",
+    "Watch demo",
+    "Read more stories",
+    "Explore all templates",
+    "Nutt Labs",
+    "Notion VIP",
+    "All integrations",
+    "Landing pages",
+    "Preview template",
+    "This is how we keep it Lite"
+  ],
+  "ctaRemoved": [],
+  "analysisBlocks": [
+    {
+      "id": "analysis-2015-07",
+      "label": "Jul 2015 — original state",
+      "period": "Jul 2015",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2015-07.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"503 Service Unavailable\" — a direct product statement."
+      ]
+    },
+    {
+      "id": "analysis-2019-01",
+      "label": "Jan 2019 — mid-transition",
+      "period": "Jan 2019",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2019-01.webp",
+      "heading": "Mid-period: signs of a structural shift",
+      "annotations": [
+        "Visual similarity to the previous snapshot: unknown — a moderate visual change.",
+        "Changes across this period appear incremental rather than a single redesign event."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Jan 2026 — current state",
+      "period": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/mailerlite/selected/2026-01.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Create email marketing automations landing pages signup forms websites your audience will love\" — updated value proposition.",
+        "New section headings include: \"You're in good company\", \"Customer support is always here to help you\", \"Templates that work\"."
+      ]
+    }
+  ],
+  "lessonCards": [
+    {
+      "title": "Your H1 signals which buyer you are targeting",
+      "body": "The headline changed from \"503 Service Unavailable\" to \"Create email marketing automations landing pages signup form...\". The framing of your H1 is one of the clearest signals of which buyer you are targeting and what you expect them to do next.",
+      "tag": "Messaging"
+    },
+    {
+      "title": "Incremental changes compound into a brand shift",
+      "body": "Across 4 snapshots spanning roughly 11 years, no single update here was a dramatic overhaul. The end state looks very different from the start because small, consistent changes in the same direction accumulate. This is worth studying if your own homepage has been drifting without a clear direction.",
+      "tag": "Strategy"
+    }
+  ],
+  "toc": [
+    {
+      "label": "Quick summary",
+      "id": "summary"
+    },
+    {
+      "label": "Visual timeline",
+      "id": "timeline"
+    },
+    {
+      "label": "Screenshot analysis",
+      "id": "analysis"
+    },
+    {
+      "label": "Messaging evolution",
+      "id": "messaging"
+    },
+    {
+      "label": "Section heading changes",
+      "id": "headings"
+    },
+    {
+      "label": "CTA evolution",
+      "id": "cta-evolution"
+    },
+    {
+      "label": "Why it changed",
+      "id": "business-context"
+    },
+    {
+      "label": "What SaaS teams can study",
+      "id": "lessons"
+    }
+  ],
+  "cta": {
+    "title": "Not sure why your page isn't converting?",
+    "body": "I map your visitor intent against your current messaging and CTA structure, then tell you exactly where the drop-off happens and how to fix it.",
+    "button": "Book a CRO audit"
+  },
+  "relatedPosts": [
+    {
+      "label": "Landing pages",
+      "title": "Landing page optimization best practices 2026",
+      "description": "From proof structure to CTA friction — the patterns that move the needle on SaaS landing pages.",
+      "href": "/blog/landing-page-optimization-best-practices-2026"
+    },
+    {
+      "label": "CRO",
+      "title": "AI conversion rate optimization for SaaS",
+      "description": "Using AI to diagnose conversion drop-off without drowning in session recordings.",
+      "href": "/blog/ai-conversion-rate-optimization-saas"
+    },
+    {
+      "label": "SaaS CRO",
+      "title": "SaaS traffic but no signups? Here's why",
+      "description": "Traffic without conversions is a messaging problem, not a traffic problem.",
+      "href": "/blog/saas-traffic-but-no-signups"
+    }
+  ]
+}

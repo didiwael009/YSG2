@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 9,
+    "h2Removed": 2,
+    "ctaAdded": 10,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "generatedAt": "2026-06-27T07:55:12.399Z",
+  "postSummary": {
+    "title": "Brevo Homepage Teardown: Jan 2023 to Jun 2026",
+    "h1": "How Brevo rewrote its homepage over 3 years",
+    "readTime": "8 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 3,
+    "analysisBlockCount": 2,
+    "lessonCardCount": 4,
+    "snapshotCount": 2
+  }
+}

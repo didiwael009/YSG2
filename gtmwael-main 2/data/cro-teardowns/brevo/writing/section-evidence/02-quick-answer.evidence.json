@@ -1,0 +1,65 @@
+{
+  "sectionId": "02-quick-answer",
+  "companyName": "Brevo",
+  "companyUrl": "https://www.brevo.com/",
+  "articleTitle": "Brevo Homepage Teardown: Jan 2023 to Jun 2026",
+  "h1": "How Brevo rewrote its homepage over 3 years",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Jun 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": true,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 9,
+    "h2Removed": 2,
+    "ctaAdded": 10,
+    "ctaRemoved": 4,
+    "navAdded": 8,
+    "navRemoved": 8,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Jun 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "9 added · 2 removed",
+      "note": "Major content architecture overhaul"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 8 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Connections that spark growth",
+      "after": "Turn Every EmailSMSOrderInteraction into a Lifetime Customer",
+      "note": "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied."
+    },
+    {
+      "element": "Meta description",
+      "before": "Brevo helps you grow your business. Build customer relationships across email, SMS, chat, and more. Use the tools you need, when you need them. Try it for free.",
+      "after": "Brevo is the most intuitive all-in-one customer engagement platform: email and SMS marketing, automation, CRM, live chat, and transactional email. Try it free.",
+      "note": "The new description is shorter and more neutral in tone. Whether this is intentional de-emphasis or a simplification pass is not determinable from text alone."
+    },
+    {
+      "element": "Page title",
+      "before": "Brevo (formerly Sendinblue) | CRM Suite",
+      "after": "Brevo: Email & SMS Marketing, CRM & Automation Platform"
+    }
+  ]
+}

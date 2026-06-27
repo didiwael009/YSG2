@@ -1,0 +1,27 @@
+{
+  "publishedAt": "2026-06-27T08:00:51.764Z",
+  "slug": "brevo",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 91,
+    "seoPass": true,
+    "seoScore": 87,
+    "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "H1 quote missing: new H1 \"Turn Every EmailSMSOrderInteraction into a Lifetime Customer\" does not appear in article-final.md. The article should quote the current headline."
+    ]
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/brevo.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

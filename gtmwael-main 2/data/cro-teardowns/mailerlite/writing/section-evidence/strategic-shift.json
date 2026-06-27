@@ -1,0 +1,41 @@
+{
+  "central_thesis": "MailerLite expanded from a single-product email newsletter tool to a five-product digital marketing suite for creators and solopreneurs, while using the section heading 'Keeping it Lite' as an explicit anti-complexity brand promise to stay differentiated from Mailchimp and ActiveCampaign.",
+  "old_positioning_frame": "Affordable, simple email marketing for small businesses — a product-first, feature-minimal framing consistent with early-stage SaaS that needs to justify its existence against free alternatives.",
+  "new_positioning_frame": "All-in-one digital marketing platform covering email, automations, landing pages, signup forms, and websites — with 'Keeping it Lite' as the promise that platform breadth does not mean platform complexity.",
+  "buyer_shift": "Small business owners sending email newsletters → solopreneurs and independent creators who need to build an audience, sell digital products, and run paid newsletter subscriptions.",
+  "funnel_shift": "Discovery-stage visitors who needed to understand what email marketing was → solution-aware visitors who already know they need a marketing suite and are comparing tools on simplicity versus feature depth.",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "503 Service Unavailable (Wayback archive did not preserve the original headline — visual screenshots exist but HTML text was not captured for early snapshots)",
+      "new": "Create email marketing automations landing pages signup forms websites your audience will love",
+      "meaning": "The new H1 lists five distinct product categories in a single sentence, suggesting the company has repositioned from email-only to a multi-product platform. The phrase 'your audience will love' signals an outcome-first, creator-economy framing rather than a tool-first framing."
+    },
+    {
+      "element": "Section headings",
+      "old": "(none captured)",
+      "new": "You're in good company | Customer support is always here to help you | Templates that work | Keeping it Lite",
+      "meaning": "'Keeping it Lite' is the most strategically significant heading — it explicitly names the brand's anti-complexity position, suggesting MailerLite is aware that listing five products risks a 'too complex' perception and is pre-empting that objection directly on the homepage."
+    },
+    {
+      "element": "Navigation",
+      "old": "(none captured)",
+      "new": "Features | Pricing | Gallery | Templates | Newsletters | Websites | Solopreneurs | Small business",
+      "meaning": "The inclusion of 'Solopreneurs' as a navigation segment signals an explicit ICP choice toward the creator economy. The product-category nav items (Newsletters, Websites) suggest the company is driving visitors to product pages rather than a single signup funnel."
+    },
+    {
+      "element": "CTA",
+      "old": "(none captured)",
+      "new": "Sign up free | Watch demo",
+      "meaning": "The dual CTA pairing — 'Sign up free' (product-led self-serve) alongside 'Watch demo' (sales-assisted) — is consistent with a hybrid motion: PLG entry for solopreneurs, with a demo path available for small businesses buying on behalf of a team."
+    }
+  ],
+  "copy_this_if": "Your product started as a single-use tool and has expanded into adjacent categories that serve the same user — and your brand name itself functions as a positioning signal (e.g. 'Lite', 'Simple', 'Easy') that you want to protect as you expand.",
+  "do_not_copy_this_if": "You are repositioning upmarket to enterprise buyers — listing five products in the H1 and naming 'solopreneurs' in nav will repel procurement teams who expect vertical specialization, not horizontal breadth.",
+  "safer_version_for_early_stage_saas": "Add one H2 that directly names the complexity objection your target buyer has about your category (e.g. 'Email marketing that doesn't require a developer') — test whether addressing the objection as a section heading reduces bounce more than adding a second product to your pitch.",
+  "risk_if_copied": "The five-product H1 pattern works only if each product is already built and discoverable. If a visitor clicks 'Websites' in the nav and lands on a waitlist or shallow page, the credibility of the 'all-in-one' claim collapses. The breadth claim must be fully backed by the product.",
+  "confidence_level": "medium",
+  "generatedAt": "2026-06-27T07:40:05.937Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

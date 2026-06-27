@@ -1,0 +1,3 @@
+# SendX Homepage Teardown: How a Feature-Rich Email Tool Became a Deliverability-First Platform (2019–2026)
+
+Over 7 years, SendX stripped its homepage down from a three-adjective pitch — **"Intuitive, Feature-Rich, Affordable Email Marketing Software"** — to a two-sentence promise: **"Send unlimited emails. Land in the inbox. That's it."** The rewrite is backed by one specific proof point: **"95–98% inbox placement across 4.4 billion emails."** This teardown shows what changed in the headline, meta description, H2s, and CTAs between 2019 and 2026, and what it means when an email marketing tool stops competing on feature breadth and starts competing on a single deliverable outcome.

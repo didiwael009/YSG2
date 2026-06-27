@@ -1,0 +1,34 @@
+[
+  {
+    "id": "analysis-2015-07",
+    "label": "Jul 2015 — original state",
+    "period": "Jul 2015",
+    "screenshotPath": "/cro-teardowns/mailerlite/selected/2015-07.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"503 Service Unavailable\" — a direct product statement."
+    ]
+  },
+  {
+    "id": "analysis-2019-01",
+    "label": "Jan 2019 — mid-transition",
+    "period": "Jan 2019",
+    "screenshotPath": "/cro-teardowns/mailerlite/selected/2019-01.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: unknown — a moderate visual change.",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Jan 2026 — current state",
+    "period": "Jan 2026",
+    "screenshotPath": "/cro-teardowns/mailerlite/selected/2026-01.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Create email marketing automations landing pages signup forms websites your audience will love\" — updated value proposition.",
+      "New section headings include: \"You're in good company\", \"Customer support is always here to help you\", \"Templates that work\"."
+    ]
+  }
+]

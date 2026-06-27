@@ -1,0 +1,21 @@
+{
+  "score": 91,
+  "pass": true,
+  "issues": [],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "Searchable H2 names the company and mechanism; evidence quoted verbatim."
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 14,
+    "plainLanguage": 18,
+    "scannability": 14,
+    "searchableHeadings": 9,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 80
+}
