@@ -40,7 +40,6 @@ export const crowdanalyzer: CroTeardownPost = {
       month: "2016-07",
       label: "Jul 2016",
       screenshotPath: "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
-      screenshotMissing: true,
     },
     {
       month: "current",
@@ -140,7 +139,6 @@ export const crowdanalyzer: CroTeardownPost = {
       label: "Jul 2016 — original state",
       period: "Jul 2016",
       screenshotPath: "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
-      screenshotMissing: true,
       heading: "The original: product-led messaging",
       annotations: [
         "H1 opens with: \"The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform\" — a direct product statement.",

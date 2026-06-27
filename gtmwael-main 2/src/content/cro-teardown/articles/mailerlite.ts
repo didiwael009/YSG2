@@ -55,7 +55,6 @@ export const mailerlite: CroTeardownPost = {
       month: "2026-01",
       label: "Jan 2026",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2026-01.webp",
-      screenshotMissing: true,
     },
   ],
   summaryCards: [
@@ -135,7 +134,6 @@ export const mailerlite: CroTeardownPost = {
       label: "Jan 2026 — current state",
       period: "Jan 2026",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2026-01.webp",
-      screenshotMissing: true,
       heading: "Today: updated positioning",
       annotations: [
         "H1 now reads: \"Create email marketing automations landing pages signup forms websites your audience will love\" — updated value proposition.",
