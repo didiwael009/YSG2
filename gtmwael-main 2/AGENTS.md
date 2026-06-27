@@ -19,6 +19,10 @@ Before coding, always read **in this order**:
 
 If the task touches SEO, routing, blog, case studies, service pages, public pages, metadata, sitemap, robots.txt, canonical URLs, structured data, or prerendering, also read `SEO_RULES.md` before editing.
 
+If the task touches **CRO teardown screenshots or Wayback captures**, read `docs/screenshot-engine.md` first.  
+If the task touches **SEO prerendering, structured data, or article slugs**, read `docs/seo-engine.md` first.  
+If the task is **adding or republishing a teardown article**, read `docs/publish-pipeline.md` first.
+
 Do not scan the whole codebase unless necessary.
 
 **After completing any task:** add an entry to the Chronology section of HANDOFF.md before closing the session. If you discover missing context, add it there too.

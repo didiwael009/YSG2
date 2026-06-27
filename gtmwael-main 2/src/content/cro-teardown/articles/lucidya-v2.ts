@@ -9,7 +9,7 @@
 import type { CroTeardownPost } from "../types";
 
 export const lucidyaV2: CroTeardownPost = {
-  slug: "lucidya-v2",
+  slug: "lucidya",
   companyName: "Lucidya",
   companyUrl: "https://www.lucidya.com/",
   category: "CRO Teardown",

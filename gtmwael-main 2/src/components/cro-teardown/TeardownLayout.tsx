@@ -62,15 +62,18 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                   <div className="mb-3 text-[11px] font-black uppercase tracking-[0.08em] text-[#777287]">
                     In this teardown
                   </div>
-                  {post.toc.map((item) => (
-                    <a
-                      key={item.id}
-                      href={`#${item.id}`}
-                      className="block border-t border-[#11111f]/10 py-2.5 text-[13px] font-semibold text-[#554f63] transition-colors hover:text-primary"
-                    >
-                      {item.label}
-                    </a>
-                  ))}
+                  <ul className="m-0 list-none p-0">
+                    {post.toc.map((item) => (
+                      <li key={item.id} className="border-t border-[#11111f]/10">
+                        <a
+                          href={`#${item.id}`}
+                          className="block py-2.5 text-[13px] font-semibold text-[#554f63] transition-colors hover:text-primary"
+                        >
+                          {item.label}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
                 </nav>
               </aside>
 
