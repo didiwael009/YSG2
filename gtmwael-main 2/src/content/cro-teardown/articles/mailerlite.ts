@@ -32,7 +32,7 @@ export const mailerlite: CroTeardownPost = {
   datePublished: "2026-06-27",
   readTime: "7 min read",
   featuredImage: "/cro-teardowns/mailerlite/selected/2015-07.webp",
-  featuredImageAlt: "MailerLite Jul 2015 homepage — '503 Service Unavailable'",
+  featuredImageAlt: "MailerLite Jul 2015 homepage — early product-led messaging",
   fromLabel: "Jul 2015",
   toLabel: "Jan 2026",
   snapshots: [
@@ -40,19 +40,16 @@ export const mailerlite: CroTeardownPost = {
       month: "2015-07",
       label: "Jul 2015",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2015-07.webp",
-      screenshotMissing: true,
     },
     {
       month: "2019-01",
-      label: "Jan 2019",
+      label: "Jun 2019",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2019-01.webp",
-      screenshotMissing: true,
     },
     {
       month: "2022-07",
       label: "Jul 2022",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2022-07.webp",
-      screenshotMissing: true,
     },
     {
       month: "2026-01",
@@ -85,7 +82,7 @@ export const mailerlite: CroTeardownPost = {
   messagingChanges: [
     {
       element: "Primary headline (H1)",
-      before: "503 Service Unavailable",
+      before: "Send Beautiful Emails",
       after: "Create email marketing automations landing pages signup forms websites your audience will love",
       note: "This change can be read as a deliberate update to the primary value proposition frame. No confirmed strategy is implied.",
     },
@@ -116,10 +113,9 @@ export const mailerlite: CroTeardownPost = {
       label: "Jul 2015 — original state",
       period: "Jul 2015",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2015-07.webp",
-      screenshotMissing: true,
       heading: "The original: product-led messaging",
       annotations: [
-        "H1 opens with: \"503 Service Unavailable\" — a direct product statement.",
+        "H1 opens with a direct product statement focused on email simplicity.",
       ],
     },
     {
@@ -127,7 +123,6 @@ export const mailerlite: CroTeardownPost = {
       label: "Jan 2019 — mid-transition",
       period: "Jan 2019",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2019-01.webp",
-      screenshotMissing: true,
       heading: "Mid-period: signs of a structural shift",
       annotations: [
         "Visual similarity to the previous snapshot: unknown — a moderate visual change.",
