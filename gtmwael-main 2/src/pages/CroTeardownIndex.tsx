@@ -46,7 +46,7 @@ const ArticleCard = ({ post }: { post: CroTeardownPost }) => {
 
   return (
     <Link
-      to={`/cro-teardowns/${post.slug}/`}
+      to={`/cro-teardowns/${post.slug}`}
       className="group flex flex-col rounded-[24px] border border-[#11111f]/10 bg-[#fbfbfe] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)]"
     >
       {/* Category chip */}

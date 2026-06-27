@@ -286,6 +286,72 @@ if (croArrayMatch) {
         );
       }
     }
+
+    // ── Content quality gates ───────────────────────────────────────────────
+    // Gate 1: H1 must not use the generic rewrite-duration formula.
+    // Good H1 names the SPECIFIC strategic shift, not the number of years.
+    // (warning until all articles are updated — will become an error after backfill)
+    if (/^how .+ rewrote its homepage over \d+ years?$/i.test((post.h1 ?? "").trim())) {
+      addWarning(post,
+        `h1 uses generic template "How X rewrote its homepage over N years" — ` +
+        `rewrite to name the specific strategic shift`
+      );
+    }
+
+    // Gate 2: title must not use the "Brand Homepage Teardown: DATE to DATE" date-range-only formula.
+    if (/Homepage Teardown: \w+ \d{4} to \w+ \d{4}$/.test((post.title ?? "").trim())) {
+      addWarning(post,
+        `title uses generic date-range formula "Homepage Teardown: DATE to DATE" — ` +
+        `rewrite to include the specific positioning shift (≤60 chars)`
+      );
+    }
+
+    // Gate 3: meta description must not use the shared template sentence.
+    const TEMPLATE_DESC_PATTERN = /A CRO teardown of .+'s homepage from .+ — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it\./;
+    if (TEMPLATE_DESC_PATTERN.test(post.description ?? "")) {
+      addWarning(post,
+        `description uses the shared template sentence — ` +
+        `write a unique 1–2 sentence summary of the specific positioning shift (≤160 chars)`
+      );
+    }
+
+    // Gate 4: featuredImageAlt must be descriptive (>30 chars) and not end with just a date.
+    const alt = (post.featuredImageAlt ?? "").trim();
+    if (alt.length < 30) {
+      addWarning(post, `featuredImageAlt is too short (${alt.length} chars) — describe the specific content of the screenshot`);
+    } else if (/— \w+ \d{4}$/.test(alt) && alt.length < 60) {
+      addWarning(post, `featuredImageAlt ends with just a date label — add what the screenshot shows`);
+    }
+
+    // Gate 5: brand name casing — companyName must start with uppercase.
+    // Exception: intentionally lowercase brands (lemlist, etc.) must be explicitly allowed below.
+    const ALLOWED_LOWERCASE_BRANDS = new Set(["lemlist"]);
+    if (
+      post.companyName &&
+      post.companyName[0] !== post.companyName[0].toUpperCase() &&
+      !ALLOWED_LOWERCASE_BRANDS.has(post.companyName)
+    ) {
+      errors.push(`${post.slug}: companyName "${post.companyName}" starts with lowercase — use proper brand casing (or add to ALLOWED_LOWERCASE_BRANDS if intentional)`);
+    }
+  }
+
+  // Gate 6: duplicate H1s across articles — each article must have a unique H1 (error, not warning).
+  const h1Map = new Map();
+  for (const name of croPostNames) {
+    const filename = croImportMap.get(name);
+    if (!filename) continue;
+    const articleSource = read(`src/content/cro-teardown/articles/${filename}.ts`);
+    const articleMatch = articleSource.match(/export const \w+(?:: CroTeardownPost)? = ([\s\S]*?)\s*;\s*$/);
+    if (!articleMatch) continue;
+    let post;
+    try { post = Function(`"use strict"; return (${articleMatch[1]});`)(); } catch { continue; }
+    if (!post.h1) continue;
+    const normalized = post.h1.trim().toLowerCase();
+    if (h1Map.has(normalized)) {
+      errors.push(`${post.slug}: h1 is identical to ${h1Map.get(normalized)} — H1s must be unique across articles`);
+    } else {
+      h1Map.set(normalized, post.slug);
+    }
   }
 }
 
