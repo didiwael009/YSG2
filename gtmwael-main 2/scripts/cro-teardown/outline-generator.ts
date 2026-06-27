@@ -41,6 +41,7 @@ export interface ArticleOutline {
   distinct_from:    string[];
   h1?:              string;   // unique H1 for this article (replaces template default)
   seo_title?:       string;   // unique <title> tag / metaTitle (≤60 chars)
+  description?:     string;   // meta description ≤155 chars — specific to this shift
   sections:         OutlineSection[];
   at_a_glance_cards: {
     label: string;
@@ -212,6 +213,7 @@ Return this exact JSON shape (include ALL 6 sections in this order):
   "distinct_from": ["in 5-8 words, what makes this different from prior teardowns"],
   "h1": "Unique H1 headline for this article — must NOT follow 'How X rewrote its homepage over N years' — make it specific to this brand's defining story shift",
   "seo_title": "Unique <title> tag ≤60 chars — must contain company name and a year range, but vary the phrasing from all prior titles",
+  "description": "Meta description ≤155 chars — must describe THIS brand's specific positioning shift using concrete terms, not the generic 'A CRO teardown of X from DATE to DATE — what changed' template",
   "sections": [
     {
       "id": "01-intro",
@@ -399,8 +401,9 @@ export async function runOutlineGenerator(opts: {
   const outline: ArticleOutline = {
     angle:              parsed.angle              ?? '',
     distinct_from:      parsed.distinct_from      ?? [],
-    ...(parsed.h1        ? { h1:        parsed.h1        } : {}),
-    ...(parsed.seo_title ? { seo_title: parsed.seo_title } : {}),
+    ...(parsed.h1          ? { h1:          parsed.h1          } : {}),
+    ...(parsed.seo_title   ? { seo_title:   parsed.seo_title   } : {}),
+    ...(parsed.description ? { description: parsed.description } : {}),
     sections:           parsed.sections           ?? [],
     at_a_glance_cards:  parsed.at_a_glance_cards  ?? [],
     confidence_level:   parsed.confidence_level   ?? 'medium',

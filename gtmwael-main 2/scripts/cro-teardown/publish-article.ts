@@ -358,20 +358,26 @@ async function main(): Promise<void> {
     ? (JSON.parse(fs.readFileSync(seoJsonPath, 'utf-8')) as Record<string, string>)
     : null;
 
-  // ── Override heroTitle and metaTitle from outline if available (Task D) ─────
+  // ── Override h1 / title / metaTitle / description from outline if available ──
   const outlinePath = path.join(writingDir, 'article-outline.json');
   if (fs.existsSync(outlinePath)) {
     const outline = JSON.parse(fs.readFileSync(outlinePath, 'utf-8')) as {
       h1?: string;
       seo_title?: string;
+      description?: string;
     };
     if (outline.h1 && typeof outline.h1 === 'string') {
-      structuredData.heroTitle = outline.h1;
-      console.log(`✅  Overrode heroTitle from outline: "${outline.h1}"`);
+      structuredData.h1 = outline.h1;
+      console.log(`✅  Overrode h1 from outline: "${outline.h1}"`);
     }
     if (outline.seo_title && typeof outline.seo_title === 'string') {
+      structuredData.title     = outline.seo_title;
       structuredData.metaTitle = outline.seo_title;
-      console.log(`✅  Overrode metaTitle from outline: "${outline.seo_title}"`);
+      console.log(`✅  Overrode title/metaTitle from outline: "${outline.seo_title}"`);
+    }
+    if (outline.description && typeof outline.description === 'string') {
+      structuredData.description = outline.description;
+      console.log(`✅  Overrode description from outline: "${outline.description.slice(0, 60)}…"`);
     }
   }
 
