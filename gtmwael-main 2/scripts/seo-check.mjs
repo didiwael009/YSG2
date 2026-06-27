@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -289,38 +289,27 @@ if (croArrayMatch) {
 
     // ── Content quality gates ───────────────────────────────────────────────
     // Gate 1: H1 must not use the generic rewrite-duration formula.
-    // Good H1 names the SPECIFIC strategic shift, not the number of years.
-    // (warning until all articles are updated — will become an error after backfill)
     if (/^how .+ rewrote its homepage over \d+ years?$/i.test((post.h1 ?? "").trim())) {
-      addWarning(post,
-        `h1 uses generic template "How X rewrote its homepage over N years" — ` +
-        `rewrite to name the specific strategic shift`
-      );
+      errors.push(`${post.slug}: h1 uses generic template "How X rewrote its homepage over N years" — rewrite to name the specific strategic shift`);
     }
 
     // Gate 2: title must not use the "Brand Homepage Teardown: DATE to DATE" date-range-only formula.
     if (/Homepage Teardown: \w+ \d{4} to \w+ \d{4}$/.test((post.title ?? "").trim())) {
-      addWarning(post,
-        `title uses generic date-range formula "Homepage Teardown: DATE to DATE" — ` +
-        `rewrite to include the specific positioning shift (≤60 chars)`
-      );
+      errors.push(`${post.slug}: title uses generic date-range formula "Homepage Teardown: DATE to DATE" — rewrite to include the specific positioning shift (≤60 chars)`);
     }
 
     // Gate 3: meta description must not use the shared template sentence.
     const TEMPLATE_DESC_PATTERN = /A CRO teardown of .+'s homepage from .+ — what changed in headline, section headings, CTAs, navigation, and what SaaS teams can study from it\./;
     if (TEMPLATE_DESC_PATTERN.test(post.description ?? "")) {
-      addWarning(post,
-        `description uses the shared template sentence — ` +
-        `write a unique 1–2 sentence summary of the specific positioning shift (≤160 chars)`
-      );
+      errors.push(`${post.slug}: description uses the shared template sentence — write a unique 1–2 sentence summary of the specific positioning shift (≤160 chars)`);
     }
 
     // Gate 4: featuredImageAlt must be descriptive (>30 chars) and not end with just a date.
     const alt = (post.featuredImageAlt ?? "").trim();
     if (alt.length < 30) {
-      addWarning(post, `featuredImageAlt is too short (${alt.length} chars) — describe the specific content of the screenshot`);
+      errors.push(`${post.slug}: featuredImageAlt is too short (${alt.length} chars) — describe the specific content of the screenshot`);
     } else if (/— \w+ \d{4}$/.test(alt) && alt.length < 60) {
-      addWarning(post, `featuredImageAlt ends with just a date label — add what the screenshot shows`);
+      errors.push(`${post.slug}: featuredImageAlt ends with just a date label — add what the screenshot shows`);
     }
 
     // Gate 5: brand name casing — companyName must start with uppercase.
@@ -332,6 +321,31 @@ if (croArrayMatch) {
       !ALLOWED_LOWERCASE_BRANDS.has(post.companyName)
     ) {
       errors.push(`${post.slug}: companyName "${post.companyName}" starts with lowercase — use proper brand casing (or add to ALLOWED_LOWERCASE_BRANDS if intentional)`);
+    }
+
+    // Gate 7: slug must match the article filename to prevent lucidya-v2 / lucidya style mismatches.
+    if (post.slug && filename && post.slug !== filename) {
+      errors.push(`${post.slug}: slug "${post.slug}" does not match article filename "${filename}.ts" — rename the file or fix the slug`);
+    }
+
+    // Gate 8: public/cro-teardowns/[slug]/ directory must exist — catches slug/directory mismatches.
+    const screenshotDir = path.join(projectRoot, "public", "cro-teardowns", post.slug ?? "");
+    if (post.slug && !existsSync(screenshotDir)) {
+      errors.push(`${post.slug}: public/cro-teardowns/${post.slug}/ directory missing — screenshot directory must match the article slug`);
+    }
+
+    // Gate 9: businessContext must be non-empty — ensures "Why it changed" section was written.
+    if (!post.businessContext || String(post.businessContext).trim().length < 50) {
+      addWarning(post, `businessContext is missing or too short — run context-researcher and re-publish to add the "Why it changed" section`);
+    }
+
+    // Gate 10: screenshotMissing: true items are flagged — forces eventual resolution.
+    const missingScreenshots = [
+      ...(post.snapshots ?? []),
+      ...(post.analysisBlocks ?? []),
+    ].filter(item => item.screenshotMissing === true);
+    if (missingScreenshots.length > 0) {
+      addWarning(post, `${missingScreenshots.length} screenshot(s) marked screenshotMissing: true (${missingScreenshots.map(i => i.month ?? i.id ?? "?").join(", ")}) — recapture or remove these snapshots`);
     }
   }
 

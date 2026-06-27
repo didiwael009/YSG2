@@ -18,7 +18,7 @@ import { agorapulse } from "./articles/agorapulse";
 import { buffer } from "./articles/buffer";
 import { unbounce } from "./articles/unbounce";
 import { foreplay } from "./articles/foreplay";
-import { lucidyaV2 } from "./articles/lucidya-v2";
+import { lucidyaV2 } from "./articles/lucidya";
 import { crowdanalyzer } from "./articles/crowdanalyzer";
 import { mailerlite } from "./articles/mailerlite";
 import { brevo } from "./articles/brevo";

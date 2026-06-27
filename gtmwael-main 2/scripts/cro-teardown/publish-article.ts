@@ -241,7 +241,7 @@ function updateIndexTs(opts: {
     const [, prefix, content, suffix] = arrayMatch;
     const existing = content.split(',').map(s => s.trim()).filter(Boolean);
     if (!existing.includes(varName)) {
-      const updated = [...existing, varName].join(', ');
+      const updated = [varName, ...existing].join(', ');
       src = src.replace(arrayMatch[0], `${prefix}${updated}${suffix}`);
       modified = true;
     }
@@ -379,6 +379,12 @@ async function main(): Promise<void> {
       structuredData.description = outline.description;
       console.log(`✅  Overrode description from outline: "${outline.description.slice(0, 60)}…"`);
     }
+  } else {
+    console.warn(
+      `⚠️   No article-outline.json found — h1/title/description will use blueprint template values.\n` +
+      `    Run outline-generator first: npm run cro-teardown:outline -- --slug ${slug}\n` +
+      `    Or pass --skip-outline explicitly if you intend to skip it.`,
+    );
   }
 
   // ── Load business context section if available (Phase 4C V6) ───────────────
