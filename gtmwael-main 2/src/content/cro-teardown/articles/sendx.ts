@@ -31,8 +31,8 @@ export const sendx: CroTeardownPost = {
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
   datePublished: "2026-06-27",
   readTime: "8 min read",
-  featuredImage: "/cro-teardowns/sendx/selected/2019-01.webp",
-  featuredImageAlt: "SendX Jan 2019 homepage — 'Intuitive, Feature-Rich, Affordable Email Marketing Software'",
+  featuredImage: "/cro-teardowns/sendx/selected/current-live.webp",
+  featuredImageAlt: "SendX current homepage — 'Send unlimited emails. Land in the inbox. That's it.'",
   fromLabel: "Jan 2019",
   toLabel: "Jun 2026",
   snapshots: [
@@ -40,11 +40,13 @@ export const sendx: CroTeardownPost = {
       month: "2019-01",
       label: "Jan 2019",
       screenshotPath: "/cro-teardowns/sendx/selected/2019-01.webp",
+      screenshotMissing: true,
     },
     {
       month: "2021-01",
       label: "Jan 2021",
       screenshotPath: "/cro-teardowns/sendx/selected/2021-01.webp",
+      screenshotMissing: true,
     },
     {
       month: "current",
@@ -144,6 +146,7 @@ export const sendx: CroTeardownPost = {
       label: "Jan 2019 — original state",
       period: "Jan 2019",
       screenshotPath: "/cro-teardowns/sendx/selected/2019-01.webp",
+      screenshotMissing: true,
       heading: "The original: product-led messaging",
       annotations: [
         "H1 opens with: \"Intuitive, Feature-Rich, Affordable Email Marketing Software\" — a direct product statement.",

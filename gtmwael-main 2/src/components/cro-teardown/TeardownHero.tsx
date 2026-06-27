@@ -6,8 +6,10 @@ const formatDate = (date: string) =>
   );
 
 const TeardownHero = ({ post }: { post: CroTeardownPost }) => {
-  const firstSnapshot = post.snapshots[0];
   const lastSnapshot = post.snapshots[post.snapshots.length - 1];
+  // Use the first snapshot that has a real screenshot; fall back to last if all are missing
+  const firstSnapshot =
+    post.snapshots.find((s) => !s.screenshotMissing) ?? lastSnapshot;
 
   return (
     <header className="bg-[radial-gradient(circle_at_15%_0%,rgba(124,60,255,0.28),transparent_30%),radial-gradient(circle_at_85%_5%,rgba(255,91,31,0.22),transparent_30%),linear-gradient(135deg,#090713_0%,#170920_46%,#070711_100%)] pb-16 pt-32 md:pb-20 md:pt-36">
@@ -51,11 +53,14 @@ const TeardownHero = ({ post }: { post: CroTeardownPost }) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
-          {[
-            { snap: firstSnapshot, label: post.fromLabel, accent: false },
-            { snap: lastSnapshot, label: post.toLabel, accent: true },
-          ].map(({ snap, label, accent }) => (
+        <div className={`grid gap-3 ${firstSnapshot === lastSnapshot ? "grid-cols-1" : "grid-cols-2"}`}>
+          {(firstSnapshot === lastSnapshot
+            ? [{ snap: lastSnapshot, label: post.toLabel, accent: true }]
+            : [
+                { snap: firstSnapshot, label: post.fromLabel, accent: false },
+                { snap: lastSnapshot, label: post.toLabel, accent: true },
+              ]
+          ).map(({ snap, label, accent }) => (
             <figure
               key={snap.month}
               className="overflow-hidden rounded-[20px] border border-white/10 bg-white/[0.06] p-2 shadow-[0_20px_60px_rgba(0,0,0,0.35)]"
