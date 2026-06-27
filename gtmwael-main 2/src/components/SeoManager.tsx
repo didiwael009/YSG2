@@ -83,6 +83,8 @@ const SeoManager = () => {
     setMeta('meta[property="og:type"]', "content", route.type === "case-study" || route.type === "article" ? "article" : "website");
     setMeta('meta[property="og:url"]', "content", canonical);
     setMeta('meta[property="og:image"]', "content", image);
+    setMeta('meta[property="og:image:width"]', "content", "1200");
+    setMeta('meta[property="og:image:height"]', "content", "630");
     setMeta('meta[property="og:site_name"]', "content", BRAND_NAME);
     setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
     setMeta('meta[name="twitter:title"]', "content", socialTitle);
@@ -113,8 +115,16 @@ const SeoManager = () => {
           "@type": "WebSite",
           name: BRAND_NAME,
           url: SITE_URL,
-          description: "SaaS GTM strategy, conversion, cold email, SEO, Meta ads, and growth execution by Wael Aouididi.",
+          description: route.description,
           publisher: publisherOrganization,
+          potentialAction: {
+            "@type": "SearchAction",
+            target: {
+              "@type": "EntryPoint",
+              urlTemplate: `${SITE_URL}/cro-teardowns?q={search_term_string}`,
+            },
+            "query-input": "required name=search_term_string",
+          },
         }
       );
     }

@@ -39,16 +39,16 @@ const ArticleCard = ({ post }: { post: CroTeardownPost }) => {
   const formattedDate = publishedAt
     ? new Date(publishedAt).toLocaleDateString("en-GB", {
         year: "numeric",
-        month: "short",
-        day: "numeric",
+        month: "2-digit",
+        day: "2-digit",
       })
     : post.datePublished;
 
+  const fromYear = post.fromLabel?.split(" ").pop() ?? post.fromLabel;
+  const toYear   = post.toLabel?.split(" ").pop()   ?? post.toLabel;
+
   return (
-    <Link
-      to={`/cro-teardowns/${post.slug}`}
-      className="group flex flex-col rounded-[24px] border border-[#11111f]/10 bg-[#fbfbfe] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)]"
-    >
+    <article className="group relative flex flex-col rounded-[24px] border border-[#11111f]/10 bg-[#fbfbfe] p-6 transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)]">
       {/* Category chip */}
       <small className="mb-3 block text-[11px] font-black uppercase tracking-[0.08em] text-primary">
         CRO Teardown
@@ -58,9 +58,10 @@ const ArticleCard = ({ post }: { post: CroTeardownPost }) => {
       <div className="mb-1 flex items-baseline gap-2">
         <h2 className="font-display text-[22px] font-bold leading-tight text-[#11101a] group-hover:text-primary transition-colors">
           {post.companyName}
+          <span className="sr-only"> homepage teardown</span>
         </h2>
-        <span className="text-[13px] text-[#9390a0]">
-          {post.fromLabel} → {post.toLabel}
+        <span className="text-[13px] text-[#9390a0]" aria-hidden="true">
+          {fromYear} → {toYear}
         </span>
       </div>
 
@@ -85,11 +86,15 @@ const ArticleCard = ({ post }: { post: CroTeardownPost }) => {
         <span className="text-[12px] text-[#9390a0]">{formattedDate}</span>
       </div>
 
-      <div className="mt-3 flex items-center gap-1.5 text-[13px] font-semibold text-primary">
+      <Link
+        to={`/cro-teardowns/${post.slug}`}
+        aria-label={`Read ${post.companyName} homepage teardown`}
+        className="mt-3 flex items-center gap-1.5 text-[13px] font-semibold text-primary after:absolute after:inset-0 after:rounded-[24px]"
+      >
         Read teardown
         <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-0.5" strokeWidth={2.5} />
-      </div>
-    </Link>
+      </Link>
+    </article>
   );
 };
 
@@ -101,7 +106,7 @@ const CroTeardownIndex = () => {
     <div className="min-h-screen bg-[#070711] text-white">
       <Navigation />
 
-      <main>
+      <main id="main">
         {/* Hero */}
         <section className="mx-auto max-w-[1320px] px-6 pb-16 pt-24 md:pt-32">
           <div className="max-w-[660px]">

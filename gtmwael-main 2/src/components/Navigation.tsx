@@ -153,7 +153,9 @@ const Navigation = () => {
   };
 
   return (
+    <header>
     <nav
+      aria-label="Primary navigation"
       className="fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 opacity-100 translate-y-0 max-w-[calc(100vw-16px)]"
     >
       <div
@@ -388,6 +390,7 @@ const Navigation = () => {
         </div>
       </div>
     </nav>
+    </header>
   );
 };
 

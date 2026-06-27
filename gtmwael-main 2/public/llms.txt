@@ -1,0 +1,25 @@
+# Your SaaS Growth — llms.txt
+
+> B2B SaaS growth systems by Wael Aouididi: positioning, landing pages, cold email, SEO, Meta ads, and GTM execution.
+
+## About
+
+Your SaaS Growth is a GTM strategy and growth consulting practice for B2B SaaS companies. Founder: Wael Aouididi.
+
+## Content
+
+- /cro-teardowns — Evidence-based SaaS homepage teardowns showing how messaging, trust, CTAs, and conversion paths evolve before scaling traffic.
+- /blog — Articles on SaaS positioning, cold email, landing page CRO, and GTM strategy.
+- /case-studies — Portfolio of SaaS growth work: Shipzzer, Screenplay, Zembra, Pubrella, and more.
+
+## Services
+
+- Cold email for SaaS (/cold-email-for-saas)
+- Meta ads for SaaS (/meta-ads-for-saas)
+- Landing page conversion (/landing-page-for-saas)
+- CRO diagnosis (/conversion-rate-optimisation-specialist)
+
+## Contact
+
+- Site: https://www.yoursaasgrowth.com
+- LinkedIn: https://www.linkedin.com/in/aouididi-wael-81b7037a/

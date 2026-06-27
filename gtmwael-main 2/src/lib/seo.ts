@@ -875,7 +875,7 @@ export const seoRoutes: SeoRoute[] = [
     path: "/cro-teardowns",
     title: "SaaS CRO Teardowns | Homepage Conversion Analysis",
     socialTitle: "SaaS CRO Teardowns | YourSaaSGrowth",
-    description: "Evidence-based SaaS homepage teardowns showing how messaging, trust, CTA structure, and conversion paths change before scaling traffic.",
+    description: "Evidence-based SaaS homepage teardowns: how messaging, trust, CTAs, and conversion paths evolve before scaling traffic.",
     type: "website",
     priority: 0.7,
     changefreq: "weekly",
