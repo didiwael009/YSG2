@@ -2,6 +2,8 @@ export type SnapshotEntry = {
   month: string;
   label: string;
   screenshotPath: string;
+  /** True when the Wayback archive returned a 503/blank page — shows "Archive unavailable" placeholder */
+  screenshotMissing?: boolean;
 };
 
 export type MessagingChange = {
@@ -18,6 +20,8 @@ export type AnalysisBlock = {
   screenshotPath: string;
   heading: string;
   annotations: string[];
+  /** True when the Wayback archive returned a 503/blank page — omits the screenshot from the block */
+  screenshotMissing?: boolean;
 };
 
 export type LessonCard = {

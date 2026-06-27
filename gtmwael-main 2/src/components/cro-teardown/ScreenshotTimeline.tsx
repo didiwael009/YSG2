@@ -21,35 +21,44 @@ const ScreenshotTimeline = ({ snapshots, companyName }: { snapshots: SnapshotEnt
             className="flex-none"
             style={{ scrollSnapAlign: "start", width: "200px" }}
           >
-            <a
-              href={snap.screenshotPath}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block"
-            >
-              <div className="relative overflow-hidden rounded-[14px] border border-[#11111f]/10 bg-[#f0eef8] shadow-[0_4px_20px_rgba(7,7,17,0.07)] transition-shadow duration-200 group-hover:shadow-[0_8px_32px_rgba(7,7,17,0.14)]">
-                <img
-                  src={snap.screenshotPath}
-                  alt={`${companyName} homepage — ${snap.label}`}
-                  width={1440}
-                  height={900}
-                  loading="lazy"
-                  decoding="async"
-                  className="h-[260px] w-full object-cover object-top"
-                />
-                {(index === 0 || index === snapshots.length - 1) && (
-                  <div
-                    className={`absolute left-2.5 top-2.5 rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.06em] ${
-                      index === 0
-                        ? "bg-[#11111f] text-white"
-                        : "bg-primary text-white"
-                    }`}
-                  >
-                    {index === 0 ? "Start" : "Latest"}
-                  </div>
-                )}
+            {snap.screenshotMissing ? (
+              <div className="relative overflow-hidden rounded-[14px] border border-[#11111f]/10 bg-[#f5f4f9] shadow-[0_4px_20px_rgba(7,7,17,0.07)]">
+                <div className="flex h-[260px] w-full flex-col items-center justify-center gap-2 text-center">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-[#c5bfd3]"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+                  <span className="px-3 text-[11px] font-semibold leading-tight text-[#9990a8]">Archive unavailable</span>
+                </div>
               </div>
-            </a>
+            ) : (
+              <a
+                href={snap.screenshotPath}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="relative overflow-hidden rounded-[14px] border border-[#11111f]/10 bg-[#f0eef8] shadow-[0_4px_20px_rgba(7,7,17,0.07)] transition-shadow duration-200 group-hover:shadow-[0_8px_32px_rgba(7,7,17,0.14)]">
+                  <img
+                    src={snap.screenshotPath}
+                    alt={`${companyName} homepage — ${snap.label}`}
+                    width={1440}
+                    height={900}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-[260px] w-full object-cover object-top"
+                  />
+                  {(index === 0 || index === snapshots.length - 1) && (
+                    <div
+                      className={`absolute left-2.5 top-2.5 rounded-full px-2.5 py-1 text-[10px] font-black uppercase tracking-[0.06em] ${
+                        index === 0
+                          ? "bg-[#11111f] text-white"
+                          : "bg-primary text-white"
+                      }`}
+                    >
+                      {index === 0 ? "Start" : "Latest"}
+                    </div>
+                  )}
+                </div>
+              </a>
+            )}
             <div className="mt-2.5 text-center">
               <span className="text-[13px] font-bold text-[#2c2635]">{snap.label}</span>
             </div>

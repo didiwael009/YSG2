@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -245,6 +245,48 @@ for (const post of blogPosts) {
 
   if (!html.includes("fetchpriority=\"high\"")) addWarning(post, "featured image is not marked fetchpriority=high");
   if (!html.includes("decoding=\"async\"")) addWarning(post, "featured image is not marked decoding=async");
+}
+
+// CRO teardown screenshot validation
+// Screenshots under 20KB are blank 503/error pages and must be explicitly marked screenshotMissing
+const SCREENSHOT_MIN_BYTES = 20 * 1024;
+const croIndexSource = read("src/content/cro-teardown/index.ts");
+const croImportEntries = [...croIndexSource.matchAll(/import \{ (\w+) \} from "\.\/articles\/([^"]+)";/g)].map(
+  ([, exportName, filename]) => ({ exportName, filename })
+);
+const croArrayMatch = croIndexSource.match(/export const croTeardownPosts: CroTeardownPost\[\] = \[([\s\S]*?)\];/);
+if (croArrayMatch) {
+  const croImportMap = new Map(croImportEntries.map((e) => [e.exportName, e.filename]));
+  const croPostNames = [...croArrayMatch[1].matchAll(/(\w+),/g)].map(([, name]) => name);
+  for (const name of croPostNames) {
+    const filename = croImportMap.get(name);
+    if (!filename) continue;
+    const articleSource = read(`src/content/cro-teardown/articles/${filename}.ts`);
+    const articleMatch = articleSource.match(/export const \w+(?:: CroTeardownPost)? = ([\s\S]*?)\s*;\s*$/);
+    if (!articleMatch) continue;
+    let post;
+    try { post = Function(`"use strict"; return (${articleMatch[1]});`)(); } catch { continue; }
+    const allScreenshots = [
+      ...(post.snapshots ?? []),
+      ...(post.analysisBlocks ?? []),
+    ];
+    for (const item of allScreenshots) {
+      if (!item.screenshotPath) continue;
+      const filePath = path.join(projectRoot, "public", item.screenshotPath);
+      if (!existsSync(filePath)) {
+        if (!item.screenshotMissing) {
+          errors.push(`${post.slug}: screenshot file not found: ${item.screenshotPath}`);
+        }
+        continue;
+      }
+      const fileSize = statSync(filePath).size;
+      if (fileSize < SCREENSHOT_MIN_BYTES && !item.screenshotMissing) {
+        errors.push(
+          `${post.slug}: screenshot ${item.screenshotPath} is ${fileSize} bytes (likely a blank/503 page) — add screenshotMissing: true to suppress`
+        );
+      }
+    }
+  }
 }
 
 for (const warning of warnings) console.warn(`SEO warning: ${warning}`);

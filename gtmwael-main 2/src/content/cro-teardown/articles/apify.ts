@@ -55,6 +55,7 @@ export const apify: CroTeardownPost = {
       month: "2024-07",
       label: "Jul 2024",
       screenshotPath: "/cro-teardowns/apify/selected/2024-07.webp",
+      screenshotMissing: true,
     },
     {
       month: "current",

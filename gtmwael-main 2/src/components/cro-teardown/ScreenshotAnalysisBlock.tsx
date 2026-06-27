@@ -9,29 +9,31 @@ const ScreenshotAnalysisBlock = ({ block }: { block: AnalysisBlock }) => (
       {block.heading}
     </h3>
 
-    <div className="grid gap-6 lg:grid-cols-[1fr_380px] lg:items-start">
-      <a
-        href={block.screenshotPath}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
-        aria-label={`View full screenshot — ${block.label}`}
-      >
-        <div className="overflow-hidden rounded-[18px] border border-[#11111f]/10 shadow-[0_8px_40px_rgba(7,7,17,0.10)] transition-shadow duration-200 group-hover:shadow-[0_12px_50px_rgba(7,7,17,0.16)]">
-          <img
-            src={block.screenshotPath}
-            alt={`Homepage screenshot — ${block.label}`}
-            width={1440}
-            height={900}
-            loading="lazy"
-            decoding="async"
-            className="h-[420px] w-full object-cover object-top md:h-[520px]"
-          />
-        </div>
-        <p className="mt-2 text-center text-[12px] text-[#9990a8]">
-          Click to view full screenshot
-        </p>
-      </a>
+    <div className={`grid gap-6 lg:items-start ${block.screenshotMissing ? "" : "lg:grid-cols-[1fr_380px]"}`}>
+      {!block.screenshotMissing && (
+        <a
+          href={block.screenshotPath}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group block"
+          aria-label={`View full screenshot — ${block.label}`}
+        >
+          <div className="overflow-hidden rounded-[18px] border border-[#11111f]/10 shadow-[0_8px_40px_rgba(7,7,17,0.10)] transition-shadow duration-200 group-hover:shadow-[0_12px_50px_rgba(7,7,17,0.16)]">
+            <img
+              src={block.screenshotPath}
+              alt={`Homepage screenshot — ${block.label}`}
+              width={1440}
+              height={900}
+              loading="lazy"
+              decoding="async"
+              className="h-[420px] w-full object-cover object-top md:h-[520px]"
+            />
+          </div>
+          <p className="mt-2 text-center text-[12px] text-[#9990a8]">
+            Click to view full screenshot
+          </p>
+        </a>
+      )}
 
       <div className="rounded-[18px] border border-[#11111f]/10 bg-[#fafafe] p-5">
         <div className="mb-4 text-[11px] font-black uppercase tracking-[0.08em] text-primary">

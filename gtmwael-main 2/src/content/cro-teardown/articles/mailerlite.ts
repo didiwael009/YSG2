@@ -40,16 +40,19 @@ export const mailerlite: CroTeardownPost = {
       month: "2015-07",
       label: "Jul 2015",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2015-07.webp",
+      screenshotMissing: true,
     },
     {
       month: "2019-01",
       label: "Jan 2019",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2019-01.webp",
+      screenshotMissing: true,
     },
     {
       month: "2022-07",
       label: "Jul 2022",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2022-07.webp",
+      screenshotMissing: true,
     },
     {
       month: "2026-01",
@@ -113,6 +116,7 @@ export const mailerlite: CroTeardownPost = {
       label: "Jul 2015 — original state",
       period: "Jul 2015",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2015-07.webp",
+      screenshotMissing: true,
       heading: "The original: product-led messaging",
       annotations: [
         "H1 opens with: \"503 Service Unavailable\" — a direct product statement.",
@@ -123,6 +127,7 @@ export const mailerlite: CroTeardownPost = {
       label: "Jan 2019 — mid-transition",
       period: "Jan 2019",
       screenshotPath: "/cro-teardowns/mailerlite/selected/2019-01.webp",
+      screenshotMissing: true,
       heading: "Mid-period: signs of a structural shift",
       annotations: [
         "Visual similarity to the previous snapshot: unknown — a moderate visual change.",
