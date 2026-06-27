@@ -40,6 +40,7 @@ export const brevo: CroTeardownPost = {
       month: "2023-01",
       label: "Jan 2023",
       screenshotPath: "/cro-teardowns/brevo/selected/2023-01.webp",
+      screenshotMissing: true,
     },
     {
       month: "current",
@@ -127,6 +128,7 @@ export const brevo: CroTeardownPost = {
       label: "Jan 2023 — original state",
       period: "Jan 2023",
       screenshotPath: "/cro-teardowns/brevo/selected/2023-01.webp",
+      screenshotMissing: true,
       heading: "The original: growth-outcome messaging",
       annotations: [
         "H1 opens with: \"Connections that spark growth\" — accessible benefit language aimed at a broad audience.",

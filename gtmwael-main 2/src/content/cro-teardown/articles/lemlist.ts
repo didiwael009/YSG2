@@ -55,6 +55,7 @@ export const lemlist: CroTeardownPost = {
       month: "2023-07",
       label: "Jul 2023",
       screenshotPath: "/cro-teardowns/lemlist/selected/2023-07.webp",
+      screenshotMissing: true,
     },
     {
       month: "current",
