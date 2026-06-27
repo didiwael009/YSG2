@@ -40,11 +40,13 @@ export const sendx: CroTeardownPost = {
       month: "2019-01",
       label: "Jan 2019",
       screenshotPath: "/cro-teardowns/sendx/selected/2019-01.webp",
+      screenshotMissing: true,
     },
     {
       month: "2021-01",
       label: "Jan 2021",
       screenshotPath: "/cro-teardowns/sendx/selected/2021-01.webp",
+      screenshotMissing: true,
     },
     {
       month: "current",
@@ -144,6 +146,7 @@ export const sendx: CroTeardownPost = {
       label: "Jan 2019 — original state",
       period: "Jan 2019",
       screenshotPath: "/cro-teardowns/sendx/selected/2019-01.webp",
+      screenshotMissing: true,
       heading: "The original: product-led messaging",
       annotations: [
         "H1 opens with: \"Intuitive, Feature-Rich, Affordable Email Marketing Software\" — a direct product statement.",

@@ -28,13 +28,14 @@ import { CostTracker, computeCallCost } from './llm/token-cost.js';
 
 export interface VisualSnapshot {
   month:                string;
-  design_era:           'early-startup' | 'growth' | 'mature' | 'enterprise';
-  layout_type:          'centered-hero' | 'multi-column' | 'full-bleed' | 'minimal' | 'other';
-  above_fold_structure: string;
-  proof_density:        'none' | 'low' | 'medium' | 'high';
-  primary_message_type: 'feature' | 'outcome' | 'category' | 'story' | 'credibility';
-  visual_sophistication: 1 | 2 | 3 | 4 | 5;
-  brand_maturity:       'early' | 'developing' | 'polished' | 'enterprise-grade';
+  render_quality:       'ok' | 'broken';
+  design_era:           'early-startup' | 'growth' | 'mature' | 'enterprise' | null;
+  layout_type:          'centered-hero' | 'multi-column' | 'full-bleed' | 'minimal' | 'other' | null;
+  above_fold_structure: string | null;
+  proof_density:        'none' | 'low' | 'medium' | 'high' | null;
+  primary_message_type: 'feature' | 'outcome' | 'category' | 'story' | 'credibility' | null;
+  visual_sophistication: 1 | 2 | 3 | 4 | 5 | null;
+  brand_maturity:       'early' | 'developing' | 'polished' | 'enterprise-grade' | null;
 }
 
 export interface VisualAnalysis {
@@ -106,13 +107,23 @@ const SYSTEM_PROMPT =
 Your job: analyze each screenshot on its visual design qualities — not guess business strategy.
 Only describe what is visually observable. Do not invent claims.
 
+IMPORTANT: Before analyzing design quality, check if the page is properly rendered.
+A broken/unstyled page shows: blue hyperlinks with no layout, plain black text on white,
+image alt-text as plain text instead of actual images, no background colors or CSS styling.
+If you see this, set render_quality to "broken" — do NOT score design as if it were a real render.
+
 Output ONLY valid JSON. No markdown, no text before or after.
 JSON SAFETY: use single quotes inside string values if quoting text.`;
 
 function buildUserPrompt(months: string[]): string {
   return `Analyze these ${months.length} homepage screenshot(s): [${months.join(', ')}].
 
-For EACH screenshot, provide:
+For EACH screenshot, first check render quality:
+- render_quality: "ok" if the page is properly rendered (has CSS, colors, images, layout)
+                  "broken" if it is unstyled HTML (blue links, plain text, alt-text instead of images, no CSS)
+
+If render_quality is "broken", skip the remaining fields and set them to null.
+If render_quality is "ok", provide:
 - design_era: one of "early-startup" | "growth" | "mature" | "enterprise"
 - layout_type: one of "centered-hero" | "multi-column" | "full-bleed" | "minimal" | "other"
 - above_fold_structure: plain 1-sentence description of the above-fold layout (headline, image, CTA arrangement)
@@ -122,7 +133,7 @@ For EACH screenshot, provide:
 - brand_maturity: one of "early" | "developing" | "polished" | "enterprise-grade"
 
 Then provide:
-- visual_shift_summary: 1–2 plain sentences describing the most visible design change between first and last screenshot. If only one screenshot, describe its visual character.
+- visual_shift_summary: 1–2 plain sentences describing the most visible design change between first and last screenshot. If only one screenshot, describe its visual character. If a screenshot was broken, note it was an unstyled capture.
 - design_evolution_label: a short label (3–6 words) for the design arc, e.g. "startup-to-platform", "minimal-to-rich", "rebrand-simplification", "early-to-enterprise"
 
 Return this exact JSON shape:
@@ -130,6 +141,7 @@ Return this exact JSON shape:
   "snapshots": [
     {
       "month": "2021-07",
+      "render_quality": "ok",
       "design_era": "early-startup",
       "layout_type": "centered-hero",
       "above_fold_structure": "...",
@@ -254,6 +266,10 @@ export async function runVisualAnalyzer(opts: {
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   fs.writeFileSync(outputPath, JSON.stringify(analysis, null, 2), 'utf-8');
 
+  const brokenSnaps = analysis.snapshots.filter(s => s.render_quality === 'broken');
+  if (brokenSnaps.length > 0) {
+    onLog(`  ⚠ visual-analyzer: ${brokenSnaps.length} screenshot(s) are unstyled/broken Wayback captures (${brokenSnaps.map(s => s.month).join(', ')}) — recapture from archive`);
+  }
   onLog(`  ✓ visual-analysis.json — ${analysis.design_evolution_label} · $${costUsd.toFixed(4)}`);
 
   return { analysis, skipped: false, costUsd, outputPath };
