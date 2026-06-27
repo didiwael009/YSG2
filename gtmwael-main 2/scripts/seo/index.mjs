@@ -43,7 +43,7 @@ const prerenderRoutes = new Set([
   ...blogPosts.map((post) => post.path),
   // CRO teardown hub and individual article pages — full React SSR required
   "/cro-teardowns",
-  ...croTeardownPosts.map((post) => `/cro-teardowns/${post.slug}/`),
+  ...croTeardownPosts.map((post) => `/cro-teardowns/${post.slug}`),
 ]);
 const restoreConsole = suppressKnownSsrNoise();
 
