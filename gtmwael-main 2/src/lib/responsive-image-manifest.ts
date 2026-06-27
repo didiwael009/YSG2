@@ -1744,24 +1744,24 @@ export const responsiveImageManifest = {
     ]
   },
   "2015-07": {
-    "width": 1440,
-    "height": 900,
-    "originalBytes": 7414,
+    "width": 1280,
+    "height": 800,
+    "originalBytes": 50934,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2015-07-320.webp",
-        "bytes": 580
+        "bytes": 4356
       },
       {
         "width": 640,
         "src": "/responsive/2015-07-640.webp",
-        "bytes": 1732
+        "bytes": 12442
       },
       {
         "width": 1024,
         "src": "/responsive/2015-07-1024.webp",
-        "bytes": 3552
+        "bytes": 21276
       }
     ]
   },
