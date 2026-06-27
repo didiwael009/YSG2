@@ -25,7 +25,7 @@ export const gong: CroTeardownPost = {
   title: "Gong Teardown: From Revenue Intelligence to Revenue AI OS",
   h1: "Gong Homepage Teardown: From Revenue Intelligence to Revenue AI OS",
   metaTitle: "Gong Teardown: From Revenue Intelligence to Revenue AI OS",
-  description: "Gong replaced its self-coined 'Revenue Intelligence' category frame with 'Revenue AI OS' — trading a single-team analytics identity for a cross-functional operating system claim aimed at entire GTM orgs.",
+  description: "Gong replaced its 'Revenue Intelligence' category frame with 'Revenue AI OS' — trading a single-team analytics tool for a cross-team AI revenue platform.",
   excerpt: "Gong built an entire product category around \"Revenue Intelligence\" — then quietly removed it from the top of its own homepage. The headline shifted from \"REVENUE INTELLIGENCE\" to \"Revenue AI Built To Predict churn\", the page title changed from \"Revenue Intelligence Technology for Sales Teams | Gong.io\" to \"Gong - Revenue AI OS\", and the navigation dropped \"What is RI?\" entirely. That is not a rebrand. It signals a deliberate move from explaining a category to claiming infrastructure ownership. By the end of this teardown, you will know whether that same move is available to your own product — or whether copying it will cost you the visitors who still need convincing.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",

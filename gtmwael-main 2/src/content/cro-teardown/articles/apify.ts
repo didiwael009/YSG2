@@ -25,7 +25,7 @@ export const apify: CroTeardownPost = {
   title: "Apify Teardown: From Web Scraper to AI Tooling Marketplace",
   h1: "Apify Homepage Teardown: From Web Scraper to AI Tooling Marketplace",
   metaTitle: "Apify Teardown: From Web Scraper to AI Tooling Marketplace",
-  description: "Apify replaced 'Extract data from any website' with '39,044 tools for your AI' — repositioning from a data engineering utility to a supply-side AI infrastructure platform competing for AI budget.",
+  description: "Apify replaced 'Extract data from any website' with '39,044 tools for your AI' — repositioning from a data utility to an AI infrastructure platform.",
   excerpt: "Apify's homepage once promised to do something — \"Extract data from any website\" — and now promises to supply something: \"39,044 tools for your AI.\" That single swap marks a shift from competing on what the product does to competing on what its community has built. This teardown covers five snapshots from January 2020 to June 2026, and by the end you will have a concrete test to check whether your own headline is still explaining your product or already selling your ecosystem.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",

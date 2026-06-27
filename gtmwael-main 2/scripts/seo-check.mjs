@@ -339,6 +339,18 @@ if (croArrayMatch) {
       addWarning(post, `businessContext is missing or too short — run context-researcher and re-publish to add the "Why it changed" section`);
     }
 
+    // Gate 11: title/metaTitle must be ≤60 chars.
+    const titleForLen = post.metaTitle || post.title || '';
+    if (titleForLen.length > 60) {
+      addWarning(post, `title is ${titleForLen.length} chars (limit 60, SERP truncates at ~60): "${titleForLen}" — shorten to ≤60 chars`);
+    }
+
+    // Gate 12: description must be ≤160 chars.
+    const descForLen = String(post.description || '');
+    if (descForLen.length > 160) {
+      addWarning(post, `description is ${descForLen.length} chars (limit 160, Google truncates at ~160): shorten to ≤155 chars`);
+    }
+
     // Gate 10: screenshotMissing: true items are flagged — forces eventual resolution.
     const missingScreenshots = [
       ...(post.snapshots ?? []),

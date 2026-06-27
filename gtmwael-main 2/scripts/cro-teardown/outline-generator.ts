@@ -398,12 +398,24 @@ export async function runOutlineGenerator(opts: {
     );
   }
 
+  // Enforce hard character limits — truncation at source prevents seo-check gate failures
+  const rawTitle = parsed.seo_title ?? '';
+  const rawDesc  = parsed.description ?? '';
+  if (rawTitle.length > 60) {
+    onLog(`  ⚠ seo_title too long (${rawTitle.length} chars) — truncating to 60`);
+  }
+  if (rawDesc.length > 155) {
+    onLog(`  ⚠ description too long (${rawDesc.length} chars) — truncating to 155`);
+  }
+  const clampedTitle = rawTitle.length > 60 ? rawTitle.slice(0, 57) + '…' : rawTitle;
+  const clampedDesc  = rawDesc.length  > 155 ? rawDesc.slice(0, 152) + '…' : rawDesc;
+
   const outline: ArticleOutline = {
     angle:              parsed.angle              ?? '',
     distinct_from:      parsed.distinct_from      ?? [],
     ...(parsed.h1          ? { h1:          parsed.h1          } : {}),
-    ...(parsed.seo_title   ? { seo_title:   parsed.seo_title   } : {}),
-    ...(parsed.description ? { description: parsed.description } : {}),
+    ...(clampedTitle       ? { seo_title:   clampedTitle       } : {}),
+    ...(clampedDesc        ? { description: clampedDesc        } : {}),
     sections:           parsed.sections           ?? [],
     at_a_glance_cards:  parsed.at_a_glance_cards  ?? [],
     confidence_level:   parsed.confidence_level   ?? 'medium',

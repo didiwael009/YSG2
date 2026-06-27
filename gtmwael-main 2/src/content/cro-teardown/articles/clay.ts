@@ -25,7 +25,7 @@ export const clay: CroTeardownPost = {
   title: "Clay Teardown: From Viral Tool to Enterprise GTM Platform",
   h1: "Clay Homepage Teardown: From Viral 'Spreadsheet' Tool to Enterprise GTM",
   metaTitle: "Clay Teardown: From Viral Tool to Enterprise GTM Platform",
-  description: "Clay evolved from 'the spreadsheet that fills itself' to enterprise GTM infrastructure — replacing product mechanism messaging with outcomes positioning and adding demo-gated sales motions.",
+  description: "Clay evolved from 'the spreadsheet that fills itself' to enterprise GTM infrastructure — replacing product mechanism messaging with GTM workflow positioning.",
   excerpt: "Between July 2021 and June 2026, Clay replaced its product mechanism headline — \"This spreadsheet fills itself\" — with an outcome-focused platform message: \"Go to market with unique data — and the ability to act on it.\" The company removed template exploration CTAs and added \"Get a demo\" and \"Clay Enterprise\" calls-to-action, signaling a shift from viral self-serve distribution to sales-assisted enterprise conversion. This teardown walks through the messaging, navigation, and funnel changes that accompany a move from individual practitioner tool to department-level data infrastructure — and when that shift makes sense for your own product.",
   author: "Wael Aouididi",
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
