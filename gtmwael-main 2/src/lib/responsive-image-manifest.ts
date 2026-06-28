@@ -1084,24 +1084,24 @@ export const responsiveImageManifest = {
     ]
   },
   "2019-01": {
-    "width": 1455,
-    "height": 8015,
-    "originalBytes": 372274,
+    "width": 1440,
+    "height": 11941,
+    "originalBytes": 381010,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2019-01-320.webp",
-        "bytes": 24736
+        "bytes": 22872
       },
       {
         "width": 640,
         "src": "/responsive/2019-01-640.webp",
-        "bytes": 70810
+        "bytes": 76180
       },
       {
         "width": 1024,
         "src": "/responsive/2019-01-1024.webp",
-        "bytes": 121564
+        "bytes": 136774
       }
     ]
   },
@@ -1348,24 +1348,24 @@ export const responsiveImageManifest = {
     ]
   },
   "2023-07": {
-    "width": 1452,
+    "width": 1451,
     "height": 16000,
-    "originalBytes": 726528,
+    "originalBytes": 726756,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2023-07-320.webp",
-        "bytes": 39726
+        "bytes": 39492
       },
       {
         "width": 640,
         "src": "/responsive/2023-07-640.webp",
-        "bytes": 117068
+        "bytes": 121852
       },
       {
         "width": 1024,
         "src": "/responsive/2023-07-1024.webp",
-        "bytes": 222918
+        "bytes": 221036
       }
     ]
   },
