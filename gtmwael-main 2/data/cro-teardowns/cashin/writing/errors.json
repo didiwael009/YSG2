@@ -1,0 +1,13 @@
+{
+  "errors": [
+    {
+      "section": "_visual-analysis",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeQ21BQfzXkj6RfyMiBd6\"}"
+    },
+    {
+      "section": "_context-research",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeQ22KEzZpzGyqswxmWRG\"}"
+    }
+  ],
+  "count": 2
+}

@@ -1,0 +1,44 @@
+{
+  "slug": "cashin",
+  "section": "all",
+  "calls": [
+    {
+      "model": "claude-sonnet-4-6",
+      "role": "cross-section",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0,
+      "inputCostUsd": 0,
+      "outputCostUsd": 0,
+      "totalCostUsd": 0,
+      "timestamp": "2026-08-25T19:28:02.458Z"
+    },
+    {
+      "model": "claude-sonnet-4-6",
+      "role": "final-judge",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "inputCostUsd": 0,
+      "outputCostUsd": 0,
+      "totalCostUsd": 0,
+      "timestamp": "2026-08-25T19:28:02.468Z"
+    },
+    {
+      "model": "claude-haiku-4-5-20251001",
+      "role": "seo-auditor",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "inputCostUsd": 0,
+      "outputCostUsd": 0,
+      "totalCostUsd": 0,
+      "timestamp": "2026-08-25T19:28:02.470Z"
+    }
+  ],
+  "totalInputTokens": 0,
+  "totalOutputTokens": 0,
+  "totalCostUsd": 0,
+  "budgetUsd": 3,
+  "budgetExceeded": false,
+  "generatedAt": "2026-08-25T19:28:02.473Z"
+}

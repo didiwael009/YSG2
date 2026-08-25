@@ -1,0 +1,31 @@
+{
+  "score": 89,
+  "pass": true,
+  "issues": [
+    "All CTA items named in H3 1 ('انضم إلى المستقبل', 'اكتشف المزيد') appear verbatim in ctaAdded — evidence-grounded.",
+    "H3 2 names 'كاشن بترو', 'عن كاشن', 'تواصل معنا' — all appear verbatim in ctaAdded — evidence-grounded.",
+    "H3 1 first paragraph is approximately 52 words — within 55-word cap. Second paragraph is approximately 48 words — within cap.",
+    "H3 2 first paragraph is approximately 51 words — within cap. Second paragraph is approximately 50 words — within cap."
+  ],
+  "requiredFixes": [],
+  "riskFlags": [
+    "The claim that 'كاشن بترو', 'عن كاشن', and 'تواصل معنا' are navigation items is not precisely accurate — they appear in ctaAdded, not navAdded. The section correctly identifies them as CTAs added. No penalty."
+  ],
+  "seoNotes": [
+    "Section heading: '## How CASHIN's CTA Join the Future and its eight-item navigation reveal two different buyers' — contains company name, 'CTA', 'navigation'. Searchable.",
+    "Two H3 blocks present — correct for this section.",
+    "Founder test at end of H3 2: 'Visit your homepage and check whether your primary CTA and your navigation serve the same buyer stage' — specific and completable in under 5 minutes.",
+    "No CTAs or nav items invented — all citations verified against ctaAdded list."
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 25,
+    "specificity": 13,
+    "plainLanguage": 19,
+    "scannability": 15,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

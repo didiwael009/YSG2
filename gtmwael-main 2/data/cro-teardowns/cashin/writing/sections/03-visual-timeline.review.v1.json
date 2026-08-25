@@ -1,0 +1,32 @@
+{
+  "score": 85,
+  "pass": true,
+  "issues": [
+    "H3 2 paragraph is approximately 64 words — 4 words over the 60-word cap. Minor violation.",
+    "The section heading correctly uses 'CASHIN homepage' and a time span — searchable.",
+    "The H3 2 heading says 'Jul 2025' but the analysis-block label is 'Jul 2025 — mid-transition' and the capture timestamp is November 2025. The text correctly says 'By November 2025' in the body — the H3 heading says 'Jul 2025' which is the slot label. Minor inconsistency but not factually wrong."
+  ],
+  "requiredFixes": [
+    "Trim H3 2 paragraph by 4 words to bring it under the 60-word cap. Remove 'The evidence suggests changes were incremental rather than a single redesign event.' — this adds a conclusion that is already implicit in the word 'incremental' used earlier."
+  ],
+  "riskFlags": [
+    "The 86.3% similarity figure is cited correctly from the analysis-blocks evidence — no penalty.",
+    "The mention of 'استكشف الخدمات' as a heading in H3 2 appears in the analysis-blocks annotations — evidence-grounded."
+  ],
+  "seoNotes": [
+    "Section heading: '## CASHIN homepage 2023–2026: from offline archive to compliance-certified fuel automation platform' — contains company name, 'homepage', time span. Searchable.",
+    "Three H3 sub-blocks present — correct structure for visual-timeline section.",
+    "Each H3 ends with a finding or a concrete observation. H3 3 ends with a specific founder test."
+  ],
+  "rewriteInstruction": "Trim H3 2 paragraph by removing the sentence 'The evidence suggests changes were incremental rather than a single redesign event.' — the paragraph will then be approximately 55 words and the point is already made in the preceding sentences. No other changes needed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 12,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 8,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 80
+}

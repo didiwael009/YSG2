@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": false,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 2,
+    "h2Removed": 0,
+    "ctaAdded": 6,
+    "ctaRemoved": 0,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "warnings": [
+    "No headline or meta description changes detected. The generated article will focus on structural changes only."
+  ],
+  "generatedAt": "2026-08-25T19:00:22.189Z",
+  "postSummary": {
+    "title": "CASHIN Homepage Teardown: Jan 2023 to Aug 2026",
+    "h1": "CASHIN homepage changes: what shifted between Jan 2023 and Aug 2026",
+    "readTime": "7 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 1,
+    "analysisBlockCount": 3,
+    "lessonCardCount": 1,
+    "snapshotCount": 4
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "score": 87,
+  "pass": true,
+  "issues": [
+    "The section cites 'eight new navigation items' — consistent with navAdded: 8 in the evidence.",
+    "The Arabic quote 'مرخصين ومتوافقين مع' is bolded and translated immediately — good.",
+    "The final condition sentence ('If your buyers do not operate under government compliance requirements') is specific and actionable."
+  ],
+  "requiredFixes": [],
+  "riskFlags": [],
+  "seoNotes": [
+    "No heading written — correct per section instruction ('do not write any heading line').",
+    "Word count: approximately 72 words — within the 45–75 hard cap.",
+    "Self-contained: does not reference 'this article' or 'below'. Suitable for featured snippet extraction.",
+    "Names one change only (compliance section addition with 8 nav items) — follows the one-change rule."
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 24,
+    "specificity": 13,
+    "plainLanguage": 19,
+    "scannability": 15,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

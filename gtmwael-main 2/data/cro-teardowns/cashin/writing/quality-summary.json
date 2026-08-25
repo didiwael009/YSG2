@@ -1,0 +1,33 @@
+{
+  "slug": "cashin",
+  "generatedAt": "2026-08-25T19:28:02.473Z",
+  "mode": "standard",
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
+  "failCount": 0,
+  "skippedCount": 7,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [],
+  "sectionErrors": [
+    {
+      "section": "_visual-analysis",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeQ21BQfzXkj6RfyMiBd6\"}"
+    },
+    {
+      "section": "_context-research",
+      "error": "400 {\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.\"},\"request_id\":\"req_011CeQ22KEzZpzGyqswxmWRG\"}"
+    }
+  ],
+  "finalJudgeScore": 91,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [],
+  "seoScore": 84,
+  "seoPass": true,
+  "seoRequiredFixes": [],
+  "articleWordCount": 1486,
+  "repetitionWarnings": [],
+  "editorialWarnings": [],
+  "overLengthWarning": null
+}

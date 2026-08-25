@@ -1,0 +1,34 @@
+[
+  {
+    "id": "analysis-2023-01",
+    "label": "Jan 2023 — original state",
+    "period": "Jan 2023",
+    "screenshotPath": "/cro-teardowns/cashin/selected/2023-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Temporarily Offline\" — a direct product statement."
+    ]
+  },
+  {
+    "id": "analysis-2025-07",
+    "label": "Jul 2025 — mid-transition",
+    "period": "Jul 2025",
+    "screenshotPath": "/cro-teardowns/cashin/selected/2025-07.webp",
+    "heading": "Mid-period: signs of a structural shift",
+    "annotations": [
+      "Visual similarity to the previous snapshot: 86.3% — one of the larger layout changes in the dataset.",
+      "New section headings appearing: \"أتمتة محطات الوقود من الخزان الى المصرف\", \"استكشف الخدمات\".",
+      "Changes across this period appear incremental rather than a single redesign event."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Aug 2026 — current state",
+    "period": "Aug 2026",
+    "screenshotPath": "/cro-teardowns/cashin/selected/current-live.webp",
+    "heading": "Current state — Aug 2026",
+    "annotations": [
+      "New section headings include: \"أتمتة محطات الوقود من الخزان الى المصرف\", \"مرخصين ومتوافقين مع\"."
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "publishedAt": "2026-08-25T19:28:12.551Z",
+  "slug": "cashin",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 91,
+    "seoPass": true,
+    "seoScore": 84,
+    "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/cashin.ts",
+  "indexUpdated": true,
+  "internalLinkSuggestionsAdded": [
+    "/cro-teardowns/linear",
+    "/cro-teardowns/lemlist",
+    "/cro-teardowns/intercom"
+  ],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

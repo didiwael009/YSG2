@@ -1,0 +1,3 @@
+# CASHIN Homepage Teardown: How an Arabic-First Fuel Station SaaS Leads With Compliance
+
+This CASHIN homepage teardown covers the period from Jan 2023 to Aug 2026. The most striking signal is not a headline rewrite — it is the addition of a compliance certification block alongside eight new navigation items, suggesting the page is built primarily for buyers who must satisfy procurement and regulatory requirements before saying yes. By the end of this article, you will know how to check whether your own homepage is doing the same.

@@ -1,0 +1,28 @@
+{
+  "score": 88,
+  "pass": true,
+  "issues": [
+    "The phrase 'procurement and regulatory requirements' uses 'procurement' — a term on the discouraged list — but only once, so no penalty applies. The term has a plain-language companion ('regulatory requirements') in the same sentence.",
+    "The closing sentence ('you will know how to check whether your own homepage is doing the same') is slightly generic — it does not name a specific check, only a general promise."
+  ],
+  "requiredFixes": [],
+  "riskFlags": [
+    "The claim about 'compliance certification block' traces to the H2 change 'مرخصين ومتوافقين مع' in the broader article evidence (not the intro evidence JSON directly) — acceptable since it is documented in the overall evidence pack."
+  ],
+  "seoNotes": [
+    "The H1 contains 'CASHIN Homepage Teardown' — primary keyword present and natural.",
+    "First sentence names company, period, and biggest observable shift. Passes featured-snippet test.",
+    "Word count: approximately 74 words — within 55–90 target."
+  ],
+  "rewriteInstruction": "",
+  "dimensionScores": {
+    "evidenceAccuracy": 23,
+    "specificity": 13,
+    "plainLanguage": 19,
+    "scannability": 15,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 4
+  },
+  "effectivePassThreshold": 85
+}

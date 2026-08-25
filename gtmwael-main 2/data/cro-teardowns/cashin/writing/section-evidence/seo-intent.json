@@ -1,0 +1,20 @@
+{
+  "primary_keyword": "CASHIN homepage teardown",
+  "primary_intent": "informational",
+  "audience_description": "A SaaS marketer or founder building a B2B product for a regulated vertical — particularly in the MENA region — who wants to understand how an Arabic-first vertical SaaS positions itself to compliance-sensitive buyers and what homepage structure supports that sales motion.",
+  "recommended_h1_format": "CASHIN Homepage Teardown: How a Saudi Fuel-Station SaaS Leads With Compliance",
+  "secondary_keywords": [
+    "CASHIN CRO teardown",
+    "CASHIN homepage analysis",
+    "vertical SaaS homepage positioning MENA",
+    "Arabic-first SaaS landing page strategy",
+    "B2B compliance-led homepage design"
+  ],
+  "content_angle": "Frame the teardown around the design decisions CASHIN made when launching a regulated-sector SaaS into a market where trust signals and compliance certification may matter more than feature headlines — useful for founders building in fintech, energy, or health verticals in the MENA region.",
+  "what_the_searcher_wants": "To understand what a successful vertical B2B SaaS homepage looks like in a regulated, Arabic-language market — and which specific elements (compliance block, CTA language, navigation structure) might be worth replicating or testing.",
+  "what_to_avoid": "Generic CRO advice about 'simplifying your CTA' or 'adding social proof' — the value is in the sector-specific and language-specific context, not universal best practices that apply to any SaaS homepage.",
+  "confidence_level": "low",
+  "generatedAt": "2026-08-25T19:05:35.089Z",
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0
+}

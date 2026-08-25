@@ -1,0 +1,34 @@
+{
+  "score": 86,
+  "pass": true,
+  "issues": [
+    "H3 2 paragraph starts with 'The page title changed from no presence to...' — the evidence confirms the title changed from 'Internet Archive: Temporarily Offline' to 'CASHIN | Leading Digital Transformation...' — evidence-grounded.",
+    "H3 3 paragraph: 'The messaging suggests a buyer who already operates fuel stations' — this is hedged inference, acceptable.",
+    "Second paragraph of H3 2 mentions 'no H1 tag visible in the captured page text' — this is drawn from the page text analysis outside the section evidence JSON. Minor evidence traceability concern.",
+    "H3 1 paragraph is approximately 58 words — within cap.",
+    "H3 2 first paragraph is approximately 55 words — within cap. Second paragraph is approximately 50 words — within cap.",
+    "H3 3 paragraph is approximately 57 words — within cap."
+  ],
+  "requiredFixes": [
+    "H3 2 second paragraph claims 'There is no H1 tag visible in the captured page text' — this observation comes from the page text analysis rather than the section evidence JSON. Hedge this more explicitly: 'No H1 was found in the page text captured for this period.'"
+  ],
+  "riskFlags": [
+    "The claim about no H1 being present comes from page text analysis, not the section evidence JSON — acceptable as it was captured as part of the pipeline."
+  ],
+  "seoNotes": [
+    "Section heading: '## How CASHIN's homepage headline from tank to bank positions against point solutions' — contains company name, 'homepage', 'headline'. Searchable.",
+    "Three H3 blocks present — correct structure.",
+    "Ends with a specific founder test: 'does your H1 explain what you do, or does it assume the reader already understands the problem?' — specific and completable."
+  ],
+  "rewriteInstruction": "In H3 2, second paragraph, change 'There is no H1 tag visible in the captured page text' to 'No H1 tag was found in the captured page text for this period' — adds a qualifier that this is what was observed, not a universal claim about the site structure. No other changes needed.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

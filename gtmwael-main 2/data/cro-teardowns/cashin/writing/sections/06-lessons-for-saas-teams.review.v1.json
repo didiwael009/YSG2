@@ -1,0 +1,36 @@
+{
+  "score": 86,
+  "pass": true,
+  "issues": [
+    "Pattern 3 references 'the category ladder framework' — this is a framework name used in the system prompt. It is explained in plain language ('aspirational CTAs reach a wider audience but may lose the buyer who is ready to act') — acceptable.",
+    "Each H3 has 3 short paragraphs — correct structure.",
+    "Pattern 1 body: approximately 54 words — within 55-word cap.",
+    "Pattern 2 body: approximately 52 words across 3 paragraphs — within cap.",
+    "Pattern 3 body: approximately 53 words across 3 paragraphs — within cap.",
+    "Pattern 3 test: 'add a second CTA below the primary one with a specific action... Measure whether the explicit CTA gets more clicks from returning visitors' — specific and completable."
+  ],
+  "requiredFixes": [
+    "Pattern 3 references 'the category ladder framework' — this framework is not named in the evidence and is introduced from the system prompt knowledge. Rewrite as: 'When your primary CTA is aspirational rather than specific...' to remove the framework reference and stay grounded in the observed evidence."
+  ],
+  "riskFlags": [
+    "Pattern 3 says the aspirational CTA 'may cost you the people who were closest to converting' — hedged with 'may', acceptable.",
+    "Pattern 2 founder test: 'does every item in the headline have a corresponding place in the navigation' — specific and actionable, no causation claimed."
+  ],
+  "seoNotes": [
+    "Section heading: '## What SaaS teams can study from CASHIN's homepage evolution' — contains company name. Searchable.",
+    "Three H3 blocks with 3 short paragraphs each — correct structure per section instruction.",
+    "The citation of 'Landing Page Playbook 2026' is not present in this section — the section instruction allowed it but did not require it. No penalty for omitting it.",
+    "Each pattern H3 names CASHIN explicitly or quotes the company's text."
+  ],
+  "rewriteInstruction": "In Pattern 3, replace the sentence referencing 'the category ladder framework' with: 'When your primary CTA is aspirational rather than specific — as with CASHIN's **\"انضم إلى المستقبل\"** — visitors who are ready to take action may not find a path forward.' This keeps the insight without introducing an external framework name.",
+  "dimensionScores": {
+    "evidenceAccuracy": 22,
+    "specificity": 13,
+    "plainLanguage": 18,
+    "scannability": 13,
+    "searchableHeadings": 10,
+    "rhythmAndOpening": 9,
+    "founderTakeaway": 5
+  },
+  "effectivePassThreshold": 85
+}

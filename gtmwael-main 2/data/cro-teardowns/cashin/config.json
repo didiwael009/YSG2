@@ -1,0 +1,10 @@
+{
+  "name": "CASHIN",
+  "slug": "cashin",
+  "url": "https://cashin.sa/ar",
+  "from": "2021-01",
+  "to": "2026-08",
+  "stepMonths": 6,
+  "createdAt": "2026-08-25T18:33:40.095Z",
+  "phase": 1
+}

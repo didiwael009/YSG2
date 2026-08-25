@@ -1,0 +1,42 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "CASHIN",
+  "companyUrl": "https://cashin.sa/ar",
+  "articleTitle": "CASHIN Homepage Teardown: Jan 2023 to Aug 2026",
+  "h1": "CASHIN homepage changes: what shifted between Jan 2023 and Aug 2026",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Aug 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": false,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 2,
+    "h2Removed": 0,
+    "ctaAdded": 6,
+    "ctaRemoved": 0,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "cta-changes": {
+    "added": [
+      "انضم إلى المستقبل",
+      "اكتشف المزيد",
+      "كاشن بترو",
+      "عن كاشن",
+      "تواصل معنا",
+      "920023389 920035567"
+    ],
+    "removed": []
+  },
+  "h2-changes": {
+    "added": [
+      "أتمتة محطات الوقود من الخزان الى المصرف",
+      "مرخصين ومتوافقين مع"
+    ],
+    "removed": []
+  }
+}

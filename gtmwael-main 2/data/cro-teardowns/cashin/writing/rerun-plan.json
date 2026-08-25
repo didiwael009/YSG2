@@ -1,0 +1,21 @@
+{
+  "createdAt": "2026-08-25T19:28:02.473Z",
+  "slug": "cashin",
+  "source": {
+    "finalJudgePass": true,
+    "seoPass": true,
+    "finalJudgeScore": 91,
+    "seoScore": 84
+  },
+  "sectionsToRerun": [],
+  "skippedIssues": [
+    {
+      "issue": "07-business-context: 'may land larger contracts by reducing two buyer risks at once' — hedged with 'may', acceptable",
+      "reason": "cannot map to a specific section — may require manual review"
+    },
+    {
+      "issue": "07-business-context: 'A compliance proof block with named certifying bodies may function as conversion infrastructure' — hedged with 'may', not a prediction",
+      "reason": "cannot map to a specific section — may require manual review"
+    }
+  ]
+}

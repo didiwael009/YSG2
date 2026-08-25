@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Positioning shift",
+    "value": "No presence → Full-stack vertical SaaS",
+    "note": "Jan 2023 Wayback captured an offline page; Nov 2025 shows a structured Arabic homepage"
+  },
+  {
+    "label": "Primary trust lever",
+    "value": "Compliance certification block",
+    "note": "Homepage includes 'مرخصين ومتوافقين مع' (Licensed and compliant with) as a section heading"
+  },
+  {
+    "label": "CTA gap",
+    "value": "Aspiration without a next step",
+    "note": "'Join the Future' does not name what the visitor is committing to"
+  },
+  {
+    "label": "Nav structure",
+    "value": "Ecosystem: hardware + software + sub-product",
+    "note": "Eight nav items separate CASHIN Petro, hardware, custom solutions, and installation support"
+  }
+]

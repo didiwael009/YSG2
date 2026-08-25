@@ -1,0 +1,30 @@
+{
+  "overallScore": 91,
+  "pass": true,
+  "evidenceAccuracy": 24,
+  "plainLanguage": 19,
+  "scannability": 14,
+  "searchableHeadings": 7,
+  "specificity": 14,
+  "rhythmAndOpening": 10,
+  "founderTakeaway": 5,
+  "riskControl": 0,
+  "croUsefulness": 0,
+  "clarity": 0,
+  "sectionCoherence": 0,
+  "weakSections": [],
+  "unsupportedClaims": [],
+  "riskFlags": [
+    "07-business-context: 'may land larger contracts by reducing two buyer risks at once' — hedged with 'may', acceptable",
+    "07-business-context: 'A compliance proof block with named certifying bodies may function as conversion infrastructure' — hedged with 'may', not a prediction"
+  ],
+  "requiredFixes": [],
+  "optionalImprovements": [
+    "'## Quick answer' heading is generic — does not contain the company name. Consider 'What changed on CASHIN's homepage between 2023 and 2026?' for better question-intent coverage",
+    "The article has no internal links to related teardowns — one contextual link from the lessons section would improve cross-article discoverability"
+  ],
+  "rerunRecommendations": [],
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0,
+  "generatedAt": "2026-08-25T19:28:02.468Z"
+}

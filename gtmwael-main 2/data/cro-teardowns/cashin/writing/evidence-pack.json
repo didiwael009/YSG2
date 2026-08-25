@@ -1,0 +1,82 @@
+{
+  "slug": "cashin",
+  "companyName": "CASHIN",
+  "companyUrl": "https://cashin.sa/ar",
+  "fromMonth": "2023-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Aug 2026",
+  "generatedAt": "2026-08-25T19:00:22.173Z",
+  "warnings": [],
+  "snapshots": [
+    {
+      "month": "2023-01",
+      "label": "Jan 2023",
+      "screenshotPath": "/cro-teardowns/cashin/selected/2023-01.webp",
+      "timestamp": "20230326193652",
+      "originalUrl": "https://cashin.sa/ar",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "2025-07",
+      "label": "Jul 2025",
+      "screenshotPath": "/cro-teardowns/cashin/selected/2025-07.webp",
+      "timestamp": "20251114054517",
+      "originalUrl": "https://cashin.sa/ar",
+      "similarityToPrev": 0.8627,
+      "comparedTo": "2023-01"
+    },
+    {
+      "month": "2026-01",
+      "label": "Jan 2026",
+      "screenshotPath": "/cro-teardowns/cashin/selected/2026-01.webp",
+      "timestamp": "20260418072402",
+      "originalUrl": "https://cashin.sa/ar",
+      "similarityToPrev": 0.8627,
+      "comparedTo": "2025-07"
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/cashin/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://cashin.sa/ar",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 0,
+    "metaDescChanges": 0,
+    "titleChanges": 1,
+    "h2Added": [
+      "أتمتة محطات الوقود من الخزان الى المصرف",
+      "مرخصين ومتوافقين مع"
+    ],
+    "h2Removed": [],
+    "ctaAdded": [
+      "انضم إلى المستقبل",
+      "اكتشف المزيد",
+      "كاشن بترو",
+      "عن كاشن",
+      "تواصل معنا",
+      "920023389 920035567"
+    ],
+    "ctaRemoved": [],
+    "navAdded": [
+      "الرئيسية",
+      "عن كاشن",
+      "حلولنا",
+      "كاشن بترو",
+      "الأنظمة الداعمة",
+      "الأجهزة",
+      "حلول مخصصة",
+      "التركيب والدعم"
+    ],
+    "navRemoved": [],
+    "headlines": [],
+    "metaDescs": [],
+    "visualOnly": false
+  }
+}

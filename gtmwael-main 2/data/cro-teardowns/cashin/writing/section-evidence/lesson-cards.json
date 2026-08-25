@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "CASHIN leads with 'مرخصين ومتوافقين مع' — and that section heading may be doing more conversion work than the CTA",
+    "category": "Trust",
+    "body": "CASHIN added a compliance section heading — **'مرخصين ومتوافقين مع'** (Licensed and compliant with) — as one of only two new section headings across the entire observed period. In a government-regulated sector, a compliance block may function as the primary conversion gate: buyers cannot proceed without it. The trade-off is real estate — a compliance section above the fold serves the evaluating buyer but may slow down the visitor who is still learning what the product does."
+  },
+  {
+    "number": "02",
+    "title": "CASHIN's hero CTA is 'انضم إلى المستقبل' — aspirational language that does not name what the visitor joins",
+    "category": "CTA",
+    "body": "Six CTAs were added across the period. The primary hero CTA is **'انضم إلى المستقبل'** (Join the Future) — a brand aspiration, not a next step. Under the One Primary Action framework, a CTA that does not name a commitment (demo, trial, call) may leave the visitor who is ready to buy without a clear path. The secondary CTA, **'اكتشف المزيد'** (Discover More), points toward feature exploration rather than a sales conversation."
+  },
+  {
+    "number": "03",
+    "title": "CASHIN added 8 navigation items and 0 were removed — a structure built for the evaluating buyer",
+    "category": "Navigation",
+    "body": "Eight navigation items were added — none removed. The structure separates a branded sub-product (**'كاشن بترو'**), company information (**'عن كاشن'**), and a direct contact path (**'تواصل معنا'**). This signals a navigation built for buyers doing vendor due diligence, not for visitors still exploring whether they have a problem. The structural tension: the primary CTA targets awareness-stage visitors; the navigation targets evaluation-stage buyers. Both exist on the same page."
+  },
+  {
+    "number": "04",
+    "title": "CASHIN's heading 'from tank to bank' names both endpoints — a positioning approach that works only when the product actually covers both",
+    "category": "Positioning",
+    "body": "The primary section heading — **'أتمتة محطات الوقود من الخزان الى المصرف'** (automate fuel stations from tank to bank) — names the full operational chain. On the awareness ladder (Eugene Schwartz), this targets a solution-aware buyer who already understands the problem and is comparing full-stack options against point tools. The risk: if any part of the chain is missing from the product, a buyer who investigates will find the gap quickly."
+  }
+]

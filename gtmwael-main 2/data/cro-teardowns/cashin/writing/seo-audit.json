@@ -1,0 +1,35 @@
+{
+  "seoScore": 84,
+  "pass": true,
+  "titleScore": 13,
+  "metaDescriptionScore": 13,
+  "headingStructureScore": 13,
+  "searchIntentScore": 18,
+  "keywordUseScore": 9,
+  "readabilityScore": 12,
+  "internalLinkingScore": 6,
+  "internalLinkingSuggestions": [
+    "Add a contextual internal link from the business-context section to any published article about vertical SaaS or compliance-led positioning",
+    "Add a contextual internal link from the lessons section to any published article about CTA clarity or button microcopy"
+  ],
+  "faqSuggestions": [
+    "What does CASHIN do?",
+    "How did CASHIN's homepage change between 2023 and 2026?",
+    "What is the ZATCA e-invoicing mandate and how does it affect SaaS homepages in Saudi Arabia?",
+    "Why does CASHIN use Arabic on its homepage?",
+    "What should a B2B SaaS homepage include in a regulated market?"
+  ],
+  "contentGapNotes": [
+    "The article covers what changed but does not address the Arabic-first language choice — an observable positioning signal not analyzed",
+    "The article cites the compliance section heading but does not name the certifying bodies listed — a content gap if those names are available in the evidence"
+  ],
+  "requiredFixes": [],
+  "optionalImprovements": [
+    "The 'Quick answer' H2 heading is generic — 'What changed on CASHIN's homepage between 2023 and 2026?' would better match question-intent searches",
+    "The article has no internal links — even one link to a related teardown would improve cross-article SEO",
+    "The meta description is exactly 155 characters — trimming by 5 characters reduces truncation risk on mobile SERPs"
+  ],
+  "model": "claude-haiku-4-5-20251001",
+  "costUsd": 0,
+  "generatedAt": "2026-08-25T19:28:02.471Z"
+}

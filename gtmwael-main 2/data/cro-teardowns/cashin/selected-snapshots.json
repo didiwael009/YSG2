@@ -1,0 +1,62 @@
+[
+  {
+    "month": "2023-01",
+    "slotStart": "2023-01",
+    "slotEnd": "2023-06",
+    "timestamp": "20230326193652",
+    "originalUrl": "https://cashin.sa/ar",
+    "screenshotPath": "/cro-teardowns/cashin/archive-monthly/2023-01.webp",
+    "selectedPath": "/cro-teardowns/cashin/selected/2023-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  },
+  {
+    "month": "2025-07",
+    "slotStart": "2025-07",
+    "slotEnd": "2025-12",
+    "timestamp": "20251114054517",
+    "originalUrl": "https://cashin.sa/ar",
+    "screenshotPath": "/cro-teardowns/cashin/archive-monthly/2025-07.webp",
+    "selectedPath": "/cro-teardowns/cashin/selected/2025-07.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": false,
+    "similarityToPrev": 0.8627,
+    "comparedTo": "2023-01",
+    "mode": "auto"
+  },
+  {
+    "month": "2026-01",
+    "slotStart": "2026-01",
+    "slotEnd": "2026-06",
+    "timestamp": "20260418072402",
+    "originalUrl": "https://cashin.sa/ar",
+    "screenshotPath": "/cro-teardowns/cashin/archive-monthly/2026-01.webp",
+    "selectedPath": "/cro-teardowns/cashin/selected/2026-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": false,
+    "similarityToPrev": 0.8627,
+    "comparedTo": "2025-07",
+    "mode": "auto"
+  },
+  {
+    "month": "current",
+    "slotStart": "current",
+    "slotEnd": "current",
+    "timestamp": null,
+    "originalUrl": "https://cashin.sa/ar",
+    "screenshotPath": "/cro-teardowns/cashin/archive-monthly/current-live.webp",
+    "selectedPath": "/cro-teardowns/cashin/selected/current-live.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  }
+]

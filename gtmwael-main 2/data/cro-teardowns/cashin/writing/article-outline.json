@@ -1,0 +1,114 @@
+{
+  "angle": "CASHIN's homepage tells the story of a regulated-sector vertical SaaS that launched with compliance certification front and center — rather than features or pricing — signaling that in Saudi Arabia's fuel station automation market, trust infrastructure may matter more than product differentiation.",
+  "distinct_from": [
+    "first Arabic-first regulated-sector teardown",
+    "no before/after messaging shift — full launch analysis",
+    "compliance block as primary CRO lever"
+  ],
+  "h1": "CASHIN built its homepage for Saudi regulators, not SaaS buyers",
+  "seo_title": "CASHIN Homepage Teardown: 2023–2026",
+  "description": "How CASHIN structured its Arabic-first homepage to win Saudi fuel station operators: compliance-first trust blocks, a full-stack nav, and an aspirational…",
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "Open by naming what makes CASHIN unusual: an Arabic-first B2B SaaS in a government-regulated market, where the homepage leads with compliance certification rather than product outcomes — and what that reveals about who actually needs to approve the purchase.",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## CASHIN homepage 2023–2026: from offline archive to compliance-certified fuel automation platform",
+      "goal": "Walk the reader through the captured snapshots chronologically — acknowledge that the Jan 2023 capture returned a Wayback error (no public web presence), then show how the Nov 2025 and current captures reveal a fully structured Arabic homepage with a three-zone product architecture (Innovation Zone, Execution Zone, Monitoring Zone) and a compliance trust block.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging",
+        "visual-analysis"
+      ],
+      "marketing_lens": "design"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How CASHIN's homepage headline 'from tank to bank' positions against point solutions",
+      "goal": "Analyze the current homepage's messaging choices: the H2 'أتمتة محطات الوقود من الخزان الى المصرف' (automate fuel stations from tank to bank) as a full-value-chain claim; the title tag's category aspiration ('Leading Digital Transformation in Fuel & Energy Stations Sector'); and the gap between the category claim and the lack of a specific H1. Examine what these choices signal about the intended buyer and where the messaging could sharpen.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "seo-intent",
+        "visual-analysis"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## How CASHIN's CTA 'Join the Future' and its eight-item navigation reveal two different buyers",
+      "goal": "Examine the CTA 'انضم إلى المستقبل' (Join the Future) against the One Primary Action framework — it is aspirational but does not name what the visitor is joining. Contrast with the navigation, which separates hardware, software, a branded sub-product (CASHIN Petro), and custom installation — suggesting a complex sales motion that serves multiple buyer roles. Flag the structural tension: the CTA is written for awareness-stage visitors; the navigation is built for evaluation-stage buyers.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## Why CASHIN leads with compliance: the ZATCA mandate and vertical SaaS in Saudi Arabia",
+      "goal": "Explain the market context that makes CASHIN's compliance-first positioning plausible: Saudi Arabia's mandatory e-invoicing rollout (ZATCA), pressure on fuel station operators to digitize, and the absence of a dominant Arabic-language SaaS incumbent in this category. Establish that compliance certification on the homepage is likely a procurement requirement, not a trust afterthought.",
+      "word_target": 180,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift",
+        "business-context-research"
+      ],
+      "marketing_lens": "category"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## What SaaS teams can study from CASHIN's homepage evolution",
+      "goal": "Three patterns: (1) In regulated verticals, a compliance proof block may outperform a feature list as a conversion lever — but only if certification logos are named and visible, not implied. (2) A full-stack value-chain headline ('from X to Y') positions against point solutions and signals vertical ownership, but requires the navigation to deliver on the promise — CASHIN's nav does this well. (3) Aspirational CTAs ('Join the Future') work for brand-building but lose intent at decision stage — a second, specific CTA anchored to the next step (demo, site visit, call) is likely needed for the evaluation buyer the nav is already serving.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "No presence → Full-stack vertical SaaS",
+      "note": "Jan 2023 Wayback captured an offline page; Nov 2025 shows a structured Arabic homepage"
+    },
+    {
+      "label": "Primary trust lever",
+      "value": "Compliance certification block",
+      "note": "Homepage includes 'مرخصين ومتوافقين مع' (Licensed and compliant with) as a section heading"
+    },
+    {
+      "label": "CTA gap",
+      "value": "Aspiration without a next step",
+      "note": "'Join the Future' does not name what the visitor is committing to"
+    },
+    {
+      "label": "Nav structure",
+      "value": "Ecosystem: hardware + software + sub-product",
+      "note": "Eight nav items separate CASHIN Petro, hardware, custom solutions, and installation support"
+    }
+  ],
+  "confidence_level": "medium",
+  "generatedAt": "2026-08-25T19:05:35.125Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

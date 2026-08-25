@@ -1,0 +1,46 @@
+{
+  "sectionId": "06-lessons-for-saas-teams",
+  "companyName": "CASHIN",
+  "companyUrl": "https://cashin.sa/ar",
+  "articleTitle": "CASHIN Homepage Teardown: Jan 2023 to Aug 2026",
+  "h1": "CASHIN homepage changes: what shifted between Jan 2023 and Aug 2026",
+  "fromLabel": "Jan 2023",
+  "toLabel": "Aug 2026",
+  "snapshotCount": 4,
+  "dataQuality": {
+    "headlineChanged": false,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 4,
+    "h2Added": 2,
+    "h2Removed": 0,
+    "ctaAdded": 6,
+    "ctaRemoved": 0,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": true
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2023 → Aug 2026",
+      "note": "4 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Unchanged",
+      "note": "Same H1 text across the period"
+    },
+    {
+      "label": "Section headings",
+      "value": "2 added · 0 removed",
+      "note": "Minor structure adjustments"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}
