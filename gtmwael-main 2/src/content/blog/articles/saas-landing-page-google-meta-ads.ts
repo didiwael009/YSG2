@@ -57,7 +57,9 @@ export const saasLandingPageGoogleMetaAds: BlogPost = {
         label: "Core principle",
         headline: "Build trust before traffic. Traffic sent to a broken foundation is burned budget.",
         paragraphs: [
-          "The most common Google Ads vs Meta Ads for SaaS mistake is not the channel choice — it is what happens after the click. A founder launches both campaigns and sends them to the same [SaaS landing page](/landing-page-for-saas). On paper, it looks efficient: one offer, one page, one conversion path. In reality, it usually creates a post-click mismatch.",
+          "The most common Google Ads vs Meta Ads for SaaS mistake is not the channel choice — it is what happens after the click.",
+          "A founder launches both campaigns and sends them to the same [SaaS landing page](/landing-page-for-saas). On paper, it looks efficient: one offer, one page, one conversion path.",
+          "In reality, it usually creates a post-click mismatch.",
         ],
       },
       {

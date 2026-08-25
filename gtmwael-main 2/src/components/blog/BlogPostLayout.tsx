@@ -97,7 +97,7 @@ const renderBlock = (block: BlogBlock, index: number) => {
             {block.headline}
           </p>
           {block.paragraphs.map((paragraph) => (
-            <p key={paragraph} className="mb-0 max-w-none text-xl font-bold leading-[1.55] text-[#211b31]">
+            <p key={paragraph} className="mb-4 max-w-none text-xl font-bold leading-[1.55] text-[#211b31] last:mb-0">
               {renderInlineText(paragraph)}
             </p>
           ))}
