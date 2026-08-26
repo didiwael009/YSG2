@@ -35,7 +35,13 @@ function escapeHtml(s: string): string {
 function inlineMarkdown(s: string): string {
   return escapeHtml(s)
     .replace(/\*\*([^*<>]+)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*([^*<>]+)\*/g, "<em>$1</em>");
+    .replace(/\*([^*<>]+)\*/g, "<em>$1</em>")
+    // Internal paths only — the source is escaped above, so a leading "/" is
+    // the sole accepted form and external/javascript: URLs never match.
+    .replace(
+      /\[([^\]]+)\]\((\/[A-Za-z0-9\-/]*)\)/g,
+      '<a href="$2" class="font-medium text-primary underline underline-offset-2 hover:no-underline">$1</a>',
+    );
 }
 
 // ─── Block-level HTML renderer ─────────────────────────────────────────────────

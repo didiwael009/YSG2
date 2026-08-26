@@ -28,8 +28,15 @@ const BusinessContextBlock = ({ post }: { post: CroTeardownPost }) => {
     .map((b) => b.trim())
     .filter(Boolean);
 
+  // Only internal paths (leading "/") are linkable — this output goes through
+  // dangerouslySetInnerHTML, so external and javascript: URLs are not accepted.
   const renderHtml = (text: string) =>
-    text.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    text
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      .replace(
+        /\[([^\]]+)\]\((\/[A-Za-z0-9\-/]*)\)/g,
+        '<a href="$2" class="font-medium text-primary underline underline-offset-2 hover:no-underline">$1</a>',
+      );
 
   return (
     <section id="business-context" className="scroll-mt-28">
