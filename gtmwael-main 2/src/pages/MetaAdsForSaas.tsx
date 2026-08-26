@@ -584,6 +584,44 @@ export default function MetaAdsForSaas() {
               <div className="space-y-6">
 
                 <div className="border-b border-border pb-6">
+                  <h3 className="font-semibold text-foreground mb-2">Should B2B SaaS Meta Ads send traffic to a pricing page or a demo page?</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Neither by default — it depends on whether your pricing is self-serve or sales-led. If pricing is public and a buyer can start without talking to sales, the pricing page converts better because it answers the question the ad just created. If pricing is sales-led or enterprise, the pricing page adds friction and a demo page with a specific outcome promise works better. The more common failure is sending cold Meta traffic to either one: both assume the visitor already knows what you do. For cold audiences, a dedicated landing page that restates the ad's promise usually beats both. See{" "}
+                    <Link to="/landing-page-for-saas" className="text-primary hover:underline">SaaS landing page</Link>
+                    {" "}for how those are built.
+                  </p>
+                </div>
+
+                <div className="border-b border-border pb-6">
+                  <h3 className="font-semibold text-foreground mb-2">How do you optimise the post-click experience for B2B SaaS Meta Ads traffic?</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    The post-click experience fails when the landing page resets the context the ad created. Match the headline to the ad's exact language, carry the same visual across (if the ad showed a product screenshot, show it above the fold), and size the ask to the temperature of the traffic — cold Meta traffic rarely converts on a demo request. Judge the page on whether visitors reach a first meaningful action, not on bounce rate. This is the same discipline as{" "}
+                    <Link to="/conversion-rate-optimisation-specialist" className="text-primary hover:underline">SaaS conversion rate optimisation</Link>, applied to paid traffic.
+                  </p>
+                </div>
+
+                <div className="border-b border-border pb-6">
+                  <h3 className="font-semibold text-foreground mb-2">Should B2B SaaS Meta Ads use Meta lead forms or send traffic to landing pages?</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Lead forms produce more leads at lower cost and lower qualification; landing pages produce fewer, better-qualified ones. For B2B SaaS the decision usually comes down to sales capacity. If the team can work volume and disqualify quickly, lead forms fill the pipeline faster. If sales time is scarce, the friction of a landing page does the qualifying for you. A common middle path is lead forms for warm retargeting audiences and landing pages for cold prospecting.
+                  </p>
+                </div>
+
+                <div className="border-b border-border pb-6">
+                  <h3 className="font-semibold text-foreground mb-2">How do you A/B test landing pages for B2B SaaS Meta Ads campaigns?</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Test the page and the ad as one unit rather than separately. Meta reallocates budget continuously, so a page test running underneath an optimising campaign is confounded — the traffic mix shifts while the test is live. Either freeze the campaign structure for the duration of the test, or run it against a fixed audience with manual bidding. And test something that changes the argument — headline, offer, or CTA — not button colours.
+                  </p>
+                </div>
+
+                <div className="border-b border-border pb-6">
+                  <h3 className="font-semibold text-foreground mb-2">When does it make sense for a B2B SaaS to bring Meta Ads in-house?</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    When creative production becomes the bottleneck rather than strategy. An external partner is efficient at setup, account structure, and diagnosis. Once the account is stable and the constraint is shipping enough creative variations each week, in-house usually wins because the feedback loop with product and customer support is shorter. Before that point, bringing it in-house typically means one person learning on live budget.
+                  </p>
+                </div>
+
+                <div className="border-b border-border pb-6">
                   <h3 className="font-semibold text-foreground mb-2">Do Meta Ads work for B2B SaaS?</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Yes, but with conditions. Meta Ads work for B2B SaaS when the product solves a problem a specific audience recognises, the ACV justifies paid acquisition costs, the landing page and tracking are ready, and there is a lower-friction entry point beyond a cold demo request. Without these conditions, the channel produces data on why it is not working — not pipeline. For a full comparison, see{" "}
@@ -626,7 +664,7 @@ export default function MetaAdsForSaas() {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     They are the same problem viewed from different angles. Paid traffic exposes conversion problems faster because every non-converting visitor has a direct cost. A{" "}
                     <Link to="/conversion-rate-optimisation-specialist" className="text-primary hover:underline">SaaS conversion rate optimisation</Link>
-                    {" "}audit and a Meta Ads setup often need to happen together.
+                    {" "}audit and a Meta Ads setup often need to happen together — fixing the ads without fixing the page leaves most of the opportunity on the table.
                   </p>
                 </div>
 
@@ -635,7 +673,7 @@ export default function MetaAdsForSaas() {
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Not usually at early stage.{" "}
                     <Link to="/cold-email-for-saas" className="text-primary hover:underline">Cold email for SaaS</Link>
-                    {" "}reaches a specific named ICP directly and can generate pipeline with a small, well-targeted list. Meta Ads require more infrastructure and produce results more slowly. Most founders benefit from running both as part of a connected acquisition system.
+                    {" "}reaches a specific named ICP directly and can generate pipeline with a small, well-targeted list. Meta Ads require more infrastructure and produce results more slowly. Most B2B SaaS founders benefit from running both as part of a connected acquisition system.
                   </p>
                 </div>
 
