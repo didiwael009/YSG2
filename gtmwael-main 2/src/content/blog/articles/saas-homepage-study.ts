@@ -65,7 +65,7 @@ export const saasHomepageStudy: BlogPost = {
       type: "section",
       id: "what-we-measured",
       label: "The dataset",
-      title: "What we measured",
+      title: "What we measured on 54 SaaS homepages",
       paragraphs: [
         "Every homepage in this study was read from Wayback Machine captures, one per year where the archive held one, from each company's earliest usable capture through a live read in 2026. That produced 542 usable snapshots across 54 companies, spanning 2015 to 2026.",
         "For each snapshot we extracted the page title, meta description, H1, every H2 and H3, all clickable elements, and navigation links. The companies range from Stripe, Slack, and Datadog to Linear, Supabase, and Vanta. They were chosen for recognisability and archive depth, which matters for the limitations section at the end.",
@@ -118,13 +118,13 @@ export const saasHomepageStudy: BlogPost = {
         "The 2021 homepage sold a workflow in three words. The current one sells a category that did not exist when the first was written. Both are competent pages. What changed is the thing the company decided a visitor needed to know first.",
       ],
       before: {
-        src: "/cro-teardowns/vercel/selected/2021-07.webp",
+        src: "/study-crops/vercel-2021-07.webp",
         alt: "Vercel homepage in July 2021, headlined Develop. Preview. Ship.",
         caption: "Vercel, July 2021",
         quote: "\"Develop. Preview. Ship.\" The product's own workflow, named in three words.",
       },
       after: {
-        src: "/cro-teardowns/vercel/selected/current-live.webp",
+        src: "/study-crops/vercel-current-live.webp",
         alt: "Vercel homepage in 2026, headlined Build and deploy on the AI Cloud",
         caption: "Vercel, 2026",
         quote: "\"Build and deploy on the AI Cloud.\" A category claim rather than a workflow.",
@@ -171,13 +171,13 @@ export const saasHomepageStudy: BlogPost = {
         "This is the largest CTA increase in the sample. Look at it as an orientation problem rather than a discipline problem: every button is aimed at a different visitor, and the question the page has to answer is which one it expects most.",
       ],
       before: {
-        src: "/cro-teardowns/lemlist/selected/2019-07.webp",
+        src: "/study-crops/lemlist-2019-07.webp",
         alt: "lemlist homepage in July 2019 with a small number of calls to action",
         caption: "lemlist, July 2019: 3 action CTAs",
         quote: "One dominant path, aimed at a visitor who already knows what cold email is.",
       },
       after: {
-        src: "/cro-teardowns/lemlist/selected/current-live.webp",
+        src: "/study-crops/lemlist-current-live.webp",
         alt: "lemlist homepage in 2026 with many competing calls to action",
         caption: "lemlist, 2026: 10 action CTAs",
         quote: "Ten routes, serving several awareness levels at once. Whether they are ranked is what decides if it works.",
@@ -220,13 +220,13 @@ export const saasHomepageStudy: BlogPost = {
         "The quoted example from the section above, as it actually appeared. The later headline is longer and abandons the category word entirely. A visitor who does not already know what Linear is gets less help. A visitor evaluating it for an AI-assisted team gets considerably more.",
       ],
       before: {
-        src: "/cro-teardowns/linear/selected/2020-01.webp",
+        src: "/study-crops/linear-2020-01.webp",
         alt: "Linear homepage in January 2020, headlined The issue tracking tool you will enjoy using",
         caption: "Linear, January 2020",
         quote: "\"The issue tracking tool you'll enjoy using.\" Names the category in the first six words.",
       },
       after: {
-        src: "/cro-teardowns/linear/selected/current-live.webp",
+        src: "/study-crops/linear-current-live.webp",
         alt: "Linear homepage in 2026, headlined The product development system for teams and agents",
         caption: "Linear, 2026",
         quote: "\"The product development system for teams and agents.\" Names a job and an audience, and never says issue tracker.",
@@ -237,7 +237,7 @@ export const saasHomepageStudy: BlogPost = {
       type: "numbered-list",
       id: "what-to-do",
       label: "Application",
-      title: "What to do with this on your own homepage",
+      title: "What to do with this on your own SaaS homepage",
       paragraphs: [
         "None of the above is a prescription. A trend across 54 companies tells you what the market did, not what your page should do, and half of these companies are probably wrong. What the findings are useful for is deciding which question to ask first. That is the part most homepage rewrites skip.",
         "Three checks, in this order. Each takes under an hour and none of them requires a redesign.",

@@ -396,17 +396,18 @@ const renderBlock = (block: BlogBlock, index: number) => {
           <div className="my-9 grid gap-5 md:grid-cols-2">
             {[block.before, block.after].map((shot, shotIndex) => (
               <figure key={shot.src} className="m-0">
-                {/* Sources are full-page captures up to 10,000px tall and of wildly
-                    different heights. Crop both to the same hero-height window so the
-                    comparison is like-for-like, and declare a ratio so nothing shifts. */}
+                {/* Sources are pre-cropped to a 4:3 hero window (see public/study-crops).
+                    The originals are full-page captures up to 10,000px tall and of wildly
+                    different heights, so serving them raw would ship ~1.4MB to render a
+                    thumbnail. The ratio is declared here so nothing shifts on load. */}
                 <div className="aspect-[4/3] overflow-hidden rounded-[18px] border border-[#11111f]/10 bg-white shadow-[0_18px_50px_rgba(7,7,17,0.13)]">
                   <img
                     src={shot.src}
                     alt={shot.alt}
                     loading="lazy"
                     decoding="async"
-                    width={1440}
-                    height={1080}
+                    width={1100}
+                    height={825}
                     className="block h-full w-full object-cover object-top"
                   />
                 </div>
