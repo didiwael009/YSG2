@@ -1084,24 +1084,24 @@ export const responsiveImageManifest = {
     ]
   },
   "2019-01": {
-    "width": 1440,
-    "height": 11941,
-    "originalBytes": 381010,
+    "width": 1455,
+    "height": 8015,
+    "originalBytes": 372274,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2019-01-320.webp",
-        "bytes": 22872
+        "bytes": 24736
       },
       {
         "width": 640,
         "src": "/responsive/2019-01-640.webp",
-        "bytes": 76180
+        "bytes": 70810
       },
       {
         "width": 1024,
         "src": "/responsive/2019-01-1024.webp",
-        "bytes": 136774
+        "bytes": 121564
       }
     ]
   },
@@ -1348,24 +1348,24 @@ export const responsiveImageManifest = {
     ]
   },
   "2023-07": {
-    "width": 1451,
+    "width": 1452,
     "height": 16000,
-    "originalBytes": 726756,
+    "originalBytes": 726528,
     "variants": [
       {
         "width": 320,
         "src": "/responsive/2023-07-320.webp",
-        "bytes": 39492
+        "bytes": 39726
       },
       {
         "width": 640,
         "src": "/responsive/2023-07-640.webp",
-        "bytes": 121852
+        "bytes": 117068
       },
       {
         "width": 1024,
         "src": "/responsive/2023-07-1024.webp",
-        "bytes": 221036
+        "bytes": 222918
       }
     ]
   },
@@ -1938,6 +1938,28 @@ export const responsiveImageManifest = {
         "width": 1024,
         "src": "/responsive/2017-07-1024.webp",
         "bytes": 3552
+      }
+    ]
+  },
+  "2026-07": {
+    "width": 1440,
+    "height": 900,
+    "originalBytes": 32294,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/2026-07-320.webp",
+        "bytes": 2494
+      },
+      {
+        "width": 640,
+        "src": "/responsive/2026-07-640.webp",
+        "bytes": 7304
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/2026-07-1024.webp",
+        "bytes": 13476
       }
     ]
   },
