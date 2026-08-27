@@ -112,6 +112,34 @@ export type BlogBlock =
       }[];
     }
   | {
+      /** Horizontal bar chart for a measured series. `value` drives bar width; `display` is the printed label. */
+      type: "data-chart";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      caption: string;
+      rows: {
+        label: string;
+        value: number;
+        display: string;
+        muted?: boolean;
+      }[];
+      footnote?: string;
+    }
+  | {
+      /** Generic N-column data table. `align` marks columns that should be right-aligned. */
+      type: "data-table";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      columns: string[];
+      rows: string[][];
+      align?: number[];
+      footnote?: string;
+    }
+  | {
       type: "mid-cta";
       title: string;
       body: string;

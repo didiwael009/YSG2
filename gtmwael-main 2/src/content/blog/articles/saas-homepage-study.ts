@@ -1,0 +1,256 @@
+import type { BlogPost } from "../types";
+
+export const saasHomepageStudy: BlogPost = {
+  slug: "saas-homepage-study",
+  path: "/blog/saas-homepage-study",
+  category: "Original Research",
+  title: "SaaS Homepage Study: 54 Homepages, 2015–2026",
+  h1: "We read 54 SaaS homepages across 11 years. Here is what actually changed.",
+  metaTitle: "SaaS Homepage Study: 54 Homepages, 2015–2026",
+  description:
+    "Original research: 542 archived captures of 54 SaaS homepages, 2015–2026. AI language, CTA counts, and headline length measured year by year.",
+  searchIntent:
+    "Founders, product marketers, and CRO practitioners looking for evidence about how SaaS homepage design and messaging have actually changed over the last decade.",
+  excerpt:
+    "AI language appeared in a heading on 0% of these homepages in 2018 and 61% by 2026. Meanwhile the median homepage went from one call to action to four, and headlines got longer — both against the direction conversion advice usually recommends.",
+  author: "Wael Aouididi",
+  authorBio:
+    "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
+  datePublished: "2026-08-27",
+  dateModified: "2026-08-27",
+  schemaType: "Article",
+  schemaHeadline: "SaaS Homepage Study: What Changed on 54 Homepages, 2015-2026",
+  schemaDescription:
+    "A longitudinal study of 54 SaaS homepages across 542 Wayback Machine captures, measuring AI language adoption, call-to-action counts, and headline length from 2015 to 2026.",
+  schemaDateModified: "2026-08-27",
+  schemaIncludeGlobal: false,
+  schemaBreadcrumbs: [
+    { name: "Blog", path: "/blog" },
+    { name: "SaaS Homepage Study", path: "/blog/saas-homepage-study" },
+  ],
+  readTime: "11 min read",
+  ogImage: "/og-default.png",
+  featuredImage: "/og-default.png",
+  featuredImageAlt: "SaaS homepage study: 54 homepages measured from 2015 to 2026",
+  primaryKeyword: "saas homepage",
+  secondaryKeywords: [
+    "saas homepage design",
+    "saas homepage examples",
+    "saas homepage study",
+    "how saas homepages changed",
+    "saas homepage cta",
+    "ai messaging saas homepage",
+  ],
+  toc: [
+    { label: "What we measured", id: "what-we-measured" },
+    { label: "AI language", id: "ai-language" },
+    { label: "Calls to action", id: "calls-to-action" },
+    { label: "Headline length", id: "headline-length" },
+    { label: "Method", id: "method" },
+    { label: "What this does not show", id: "limitations" },
+  ],
+  blocks: [
+    {
+      type: "intro",
+      id: "short-answer",
+      label: "Short answer",
+      headline:
+        "Three things changed on SaaS homepages between 2015 and 2026, and two of them run against standard conversion advice.",
+      paragraphs: [
+        "AI language went from absent to a majority. The median homepage went from one call to action to four. Headlines got longer, not shorter. All three are measured from archived captures, not recalled — and if you are auditing your own [SaaS landing page](/landing-page-for-saas), the second and third findings are the ones worth arguing with.",
+      ],
+    },
+    {
+      type: "section",
+      id: "what-we-measured",
+      label: "The dataset",
+      title: "What we measured",
+      paragraphs: [
+        "Every homepage in this study was read from Wayback Machine captures — one per year where the archive held one — from each company's earliest usable capture through a live read in 2026. That produced **542 usable snapshots across 54 companies**, spanning 2015 to 2026.",
+        "For each snapshot we extracted the page title, meta description, H1, every H2 and H3, all clickable elements, and navigation links. The companies range from Stripe, Slack, and Datadog to Linear, Supabase, and Vanta — chosen for recognisability and archive depth, which matters for the limitations section at the end.",
+        "Everything below counts what was on the page. Nothing below is evidence that any change improved conversion, because none of these companies published what happened next.",
+      ],
+    },
+    {
+      type: "data-chart",
+      id: "ai-language",
+      label: "Finding 01",
+      title: "AI language went from absent to a majority in three years",
+      paragraphs: [
+        "In 2018, not one homepage in this sample mentioned AI, agents, or intelligence in a heading. By 2026, most of them do. This is the cleanest signal in the dataset — **27 companies adopted the language and exactly one dropped it**.",
+      ],
+      caption: "Share of homepages with AI language in a heading, by year of capture",
+      rows: [
+        { label: "2015", value: 0, display: "0%", muted: true },
+        { label: "2016", value: 0, display: "0%", muted: true },
+        { label: "2017", value: 0, display: "0%", muted: true },
+        { label: "2018", value: 0, display: "0%", muted: true },
+        { label: "2019", value: 7.1, display: "7%" },
+        { label: "2020", value: 11.1, display: "11%" },
+        { label: "2021", value: 5.3, display: "5%" },
+        { label: "2022", value: 6.0, display: "6%" },
+        { label: "2023", value: 15.3, display: "15%" },
+        { label: "2024", value: 15.0, display: "15%" },
+        { label: "2025", value: 31.6, display: "32%" },
+        { label: "2026", value: 61.2, display: "61%" },
+      ],
+      footnote:
+        "AI language is defined as a heading matching: AI as a standalone word, agent, intelligence, LLM, GPT, or copilot. Each year's figure is the share of that year's captures containing at least one such heading.",
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
+        "Two things stand out in the shape of that curve. The first movement is **2019 to 2020, well before ChatGPT** — a small group of data and analytics companies already used the word, mostly to describe modelling rather than generative features. The curve then flattens for two full years.",
+        "The real inflection is **2023**, and the steep part is 2025 to 2026. Between those two years the share nearly doubles.",
+        "The honest caveat: this measures what homepages say, not what products do. A heading is cheap. Whether the underlying software changed as fast as the copy did is not a question an archived page can answer.",
+      ],
+    },
+    {
+      type: "data-table",
+      id: "calls-to-action",
+      label: "Finding 02",
+      title: "Homepages did not simplify. They quadrupled their calls to action.",
+      paragraphs: [
+        "The most repeated instruction in conversion advice is to reduce choice — one page, one goal, one button. Measured across a decade, these companies did the opposite. **The median homepage went from one action CTA to four.**",
+      ],
+      columns: ["Direction of change", "Companies", "Share"],
+      rows: [
+        ["Added action CTAs", "35", "65%"],
+        ["Removed action CTAs", "12", "22%"],
+        ["No change", "7", "13%"],
+      ],
+      align: [1, 2],
+      footnote:
+        "An action CTA is clickable text of 3–40 characters containing one of: demo, trial, sign up, get started, start, try, contact sales, talk to, book, request, free, buy, subscribe, create account, join — deduplicated per snapshot. Navigation labels such as \"Product\" or \"Resources\" are captured by the extractor but excluded here, because they are not calls to action.",
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
+        "Nearly three companies added CTAs for every one that removed them. The reading is not \"add more buttons.\"",
+        "It is that the homepage stopped being a single funnel entrance and became a routing layer — self-serve here, sales-assisted there, documentation for the evaluator who is ready for neither. That is a plausible response to buyers arriving at genuinely different stages, and it is also what a page looks like when nobody can agree on the primary action.",
+        "This data cannot tell you which of those two it is for any given company. If you are running paid traffic into a page like that, the question is worth settling deliberately rather than by accretion — which is the practical overlap with [conversion rate optimisation](/conversion-rate-optimisation-specialist) work.",
+      ],
+    },
+    {
+      type: "data-table",
+      id: "headline-length",
+      label: "Finding 03",
+      title: "Headlines and meta descriptions both got longer",
+      paragraphs: [
+        "The advice to cut hero copy and say it in five words is close to universal. These pages went the other way — and so did their meta descriptions, which most SEO guidance assumes have been compressing.",
+      ],
+      columns: ["Element", "Got longer", "Got shorter", "Median words"],
+      rows: [
+        ["Primary headline (H1)", "28", "10", "5 → 6"],
+        ["Meta description", "24", "12", "21 → 22"],
+      ],
+      align: [1, 2, 3],
+      footnote:
+        "Headline figures cover the 42 companies with a readable H1 at both ends of their range; meta description figures cover the 40 with a description at both ends.",
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
+        "The medians move barely at all, which is the honest way to report it. What is lopsided is the direction: roughly three companies lengthened for every one that trimmed, on both elements.",
+        "A plausible explanation sits in the added words themselves. Headlines moved from naming a product category to naming a job and an audience. **\"The issue tracking tool you'll enjoy using\"** is shorter than **\"The product development system for teams and agents\"** — but it says less about who the page is for.",
+      ],
+    },
+    {
+      type: "takeaway",
+      id: "method",
+      label: "Method",
+      title: "Three data errors were found while producing this study",
+      paragraphs: [
+        "Each of these changed a number that had already been written down, so all three are reported here rather than quietly fixed. A study that shows none of its own corrections is usually a study that did not look.",
+      ],
+      subheading: "What went wrong, and what it changed",
+      checklist: [
+        "**A storage cap that manufactured a finding.** The first CTA count came from published article files that store at most ten per list. Twenty-two of twenty-five companies sat at exactly ten. The resulting \"net +54 CTAs\" was an artefact of that ceiling, and it was about to be published as a confident, contrarian headline. Finding 02 was recomputed from untruncated snapshot records.",
+        "**Failed archive captures that faked growth.** About one capture in five returns the Wayback Machine's own error page instead of the archived site. A company whose earliest capture failed appears to start from zero CTAs, inventing an increase. Every company with a failed capture at either end of its range was removed from the analysis.",
+        "**A parser bug that silently discarded pages.** The collector's navigation pattern had no capture group, so it threw on any page containing a nav element — which is to say, on every substantial page — and the error was logged as \"capture unavailable\". Yield went from 45% to 100% once fixed, and the sample more than doubled.",
+      ],
+    },
+    {
+      type: "takeaway",
+      id: "limitations",
+      label: "Limitations",
+      title: "What this study does not show",
+      paragraphs: [
+        "The findings above are counts of what appeared on archived pages. They are not evidence about performance, and the sample was not drawn at random.",
+      ],
+      subheading: "Read the numbers with these five constraints",
+      checklist: [
+        "**This is a convenience sample.** The 54 companies were chosen for recognisability and archive depth. They skew toward B2B SaaS with a long public web presence. Nothing here generalises to SaaS as a whole.",
+        "**Sample sizes differ per finding.** Findings 01 and 02 cover all 54 companies; Finding 03 covers 42 pairs for headlines and 40 for meta descriptions.",
+        "**The CTA and AI definitions are English-only.** Non-English homepages in the sample are undercounted on both measures.",
+        "**Captures are snapshots, not continuous history.** A change that appeared and reverted between two captures is invisible here.",
+        "**Nothing here measures whether any change worked.** No company in the sample published what happened to its conversion rate. Correlation with the calendar is not evidence of effect.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      question: "How many SaaS homepages were analysed in this study?",
+      answer:
+        "54 companies, read across 542 usable Wayback Machine captures spanning 2015 to 2026. Companies with a failed archive capture at either end of their range were excluded, because a failed first capture makes a homepage appear to start from zero and manufactures a false increase.",
+    },
+    {
+      question: "What share of SaaS homepages mention AI?",
+      answer:
+        "In this sample, 61% of 2026 captures contain AI, agent, intelligence, LLM, GPT, or copilot in a heading, against 0% in 2018. Measured per company on first versus latest capture, the figure moves from 4% to 52%: 27 companies adopted the language and one dropped it.",
+    },
+    {
+      question: "Do SaaS homepages have more or fewer CTAs than they used to?",
+      answer:
+        "More. The median homepage in this sample went from one action CTA to four. 35 of 54 companies added action CTAs, 12 removed them, and 7 were unchanged. This runs against the common advice to reduce choice on a homepage, though the data cannot say whether the added CTAs helped or hurt conversion.",
+    },
+    {
+      question: "Should SaaS homepage headlines be short?",
+      answer:
+        "The companies in this sample did not act as though they should. 28 lengthened the headline against 10 that shortened it, with the median moving from 5 words to 6. The added words tend to name an audience or a job rather than a product category, which is a trade of brevity for specificity.",
+    },
+    {
+      question: "Does this study prove these homepage changes improved conversion?",
+      answer:
+        "No. It measures what changed on the page, never why and never with what result. None of the companies published conversion data for these periods, so no claim in the study should be read as evidence that a change worked.",
+    },
+  ],
+  source: {
+    label: "Data source",
+    url: "https://web.archive.org/",
+    body:
+      "All historical page data comes from Internet Archive Wayback Machine captures. Live 2026 figures were read directly from each company's homepage. Three companies originally in the sample — Typeform, Loom, and Miro — are excluded from the Wayback Machine and could not be included.",
+  },
+  cta: {
+    title: "Want your homepage read the same way?",
+    body: "I run this analysis on a single homepage — yours or a competitor's — and turn it into a testable list rather than a trend report.",
+    button: "Book a 15-minute call",
+  },
+  internalLinks: [
+    { href: "/landing-page-for-saas", label: "SaaS landing page" },
+    { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
+    { href: "/meta-ads-for-saas", label: "Meta Ads for SaaS" },
+    { href: "/cro-teardowns", label: "SaaS homepage teardowns" },
+  ],
+  relatedPosts: [
+    {
+      label: "Landing pages",
+      title: "Landing page optimization best practices 2026",
+      description: "What to fix on a SaaS landing page before spending more on traffic.",
+      href: "/blog/landing-page-optimization-best-practices-2026",
+    },
+    {
+      label: "Diagnosis",
+      title: "SaaS traffic but no signups? Here's why",
+      description: "The gap between arriving and converting, and how to find where it opens.",
+      href: "/blog/saas-traffic-but-no-signups",
+    },
+    {
+      label: "CRO",
+      title: "AI conversion rate optimization for SaaS",
+      description: "Where AI genuinely helps a conversion programme, and where it does not.",
+      href: "/blog/ai-conversion-rate-optimization-saas",
+    },
+  ],
+  pillarPage: "/landing-page-for-saas",
+};

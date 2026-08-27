@@ -341,6 +341,108 @@ const renderBlock = (block: BlogBlock, index: number) => {
         </section>
       );
 
+    case "data-chart": {
+      const max = Math.max(...block.rows.map((r) => r.value), 1);
+      return (
+        <section key={block.id} id={block.id} className="mt-16 scroll-mt-28">
+          <SectionLabel>{block.label}</SectionLabel>
+          <h2 className="mb-5 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[46px]">
+            {block.title}
+          </h2>
+          <Paragraphs paragraphs={block.paragraphs} />
+          <figure className="my-9 max-w-full overflow-hidden rounded-[24px] border border-[#11111f]/10 bg-white p-6 shadow-[0_24px_70px_rgba(7,7,17,0.16)] md:p-8">
+            <figcaption className="mb-6 text-[11px] font-black uppercase tracking-[0.08em] text-primary">
+              {block.caption}
+            </figcaption>
+            <div>
+              {block.rows.map((row) => (
+                <div
+                  key={row.label}
+                  className="grid grid-cols-[3.4rem_1fr_3rem] items-center gap-3 border-b border-[#11111f]/10 py-2 last:border-b-0"
+                >
+                  <span className="text-right font-mono text-[13px] tabular-nums text-[#4d4658]">
+                    {row.label}
+                  </span>
+                  <span className="flex h-4 items-center">
+                    <span
+                      className={`h-full rounded-sm ${row.muted ? "bg-[#c9c5d4]" : "bg-primary"}`}
+                      style={{ width: `${Math.max((row.value / max) * 100, 0.8)}%` }}
+                    />
+                  </span>
+                  <span className="text-right font-mono text-[13px] font-semibold tabular-nums text-[#15121f]">
+                    {row.display}
+                  </span>
+                </div>
+              ))}
+            </div>
+            {block.footnote ? (
+              <p className="mb-0 mt-6 border-t border-[#11111f]/10 pt-4 text-[14px] leading-[1.6] text-[#6c6579]">
+                {renderInlineText(block.footnote)}
+              </p>
+            ) : null}
+          </figure>
+        </section>
+      );
+    }
+
+    case "data-table":
+      return (
+        <section key={block.id} id={block.id} className="mt-16 scroll-mt-28">
+          <SectionLabel>{block.label}</SectionLabel>
+          <h2 className="mb-5 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[46px]">
+            {block.title}
+          </h2>
+          <Paragraphs paragraphs={block.paragraphs} />
+          <div className="my-9 max-w-full overflow-hidden rounded-[24px] border border-[#11111f]/10 shadow-[0_24px_70px_rgba(7,7,17,0.16)]">
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse bg-white text-[15px]">
+                <thead>
+                  <tr>
+                    {block.columns.map((col, colIndex) => (
+                      <th
+                        key={col}
+                        className={`break-words bg-[#11111f] p-4 text-[11px] font-black uppercase tracking-[0.08em] text-white ${
+                          block.align?.includes(colIndex) ? "text-right" : "text-left"
+                        }`}
+                      >
+                        {col}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {block.rows.map((row) => (
+                    <tr key={row.join("|")}>
+                      {row.map((cell, cellIndex) => (
+                        <td
+                          key={cellIndex}
+                          className={`break-words border-t border-[#11111f]/10 p-4 align-top text-[#494353] ${
+                            block.align?.includes(cellIndex)
+                              ? "text-right font-mono tabular-nums text-[#15121f]"
+                              : ""
+                          }`}
+                        >
+                          {cellIndex === 0 ? (
+                            <strong className="text-[#15121f]">{renderInlineText(cell)}</strong>
+                          ) : (
+                            renderInlineText(cell)
+                          )}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+          {block.footnote ? (
+            <p className="max-w-[760px] text-[14px] leading-[1.6] text-[#6c6579]">
+              {renderInlineText(block.footnote)}
+            </p>
+          ) : null}
+        </section>
+      );
+
     case "mid-cta":
       return (
         <div

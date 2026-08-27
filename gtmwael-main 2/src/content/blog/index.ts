@@ -4,6 +4,7 @@ import { saasTrafficButNoSignups } from "./articles/saas-traffic-but-no-signups"
 import { aiConversionRateOptimizationSaas } from "./articles/ai-conversion-rate-optimization-saas";
 import { landingPageOptimizationBestPractices2026 } from "./articles/landing-page-optimization-best-practices-2026";
 import { saasProductVideo } from "./articles/saas-product-video";
+import { saasHomepageStudy } from "./articles/saas-homepage-study";
 
 export type { BlogBlock, BlogFaq, BlogPost, InternalLink, RelatedPost } from "./types";
 
@@ -13,6 +14,7 @@ export const blogPosts: BlogPost[] = [
   aiConversionRateOptimizationSaas,
   landingPageOptimizationBestPractices2026,
   saasProductVideo,
+  saasHomepageStudy,
 ];
 
 export const getBlogPostBySlug = (slug: string) =>
