@@ -46,6 +46,7 @@ export const saasHomepageStudy: BlogPost = {
     { label: "AI language", id: "ai-language" },
     { label: "Calls to action", id: "calls-to-action" },
     { label: "Headline length", id: "headline-length" },
+    { label: "What to do with this", id: "what-to-do" },
     { label: "Method", id: "method" },
     { label: "What this does not show", id: "limitations" },
   ],
@@ -103,6 +104,8 @@ export const saasHomepageStudy: BlogPost = {
         "Two things stand out in the shape of that curve. The first movement is **2019 to 2020, well before ChatGPT** — a small group of data and analytics companies already used the word, mostly to describe modelling rather than generative features. The curve then flattens for two full years.",
         "The real inflection is **2023**, and the steep part is 2025 to 2026. Between those two years the share nearly doubles.",
         "The honest caveat: this measures what homepages say, not what products do. A heading is cheap. Whether the underlying software changed as fast as the copy did is not a question an archived page can answer.",
+        "**The strategic consequence is uncomfortable for anyone writing a homepage right now.** Radical differentiation works by finding the dominant convention in a market and doing the opposite. At 61%, AI language *is* the dominant convention. A claim that more than half your category makes is not a differentiator — it is table stakes, and table stakes are what buyers stop reading.",
+        "That does not mean removing it. It means the differentiation has to sit somewhere else: in what the AI is pointed at, in the proof, in the specific job it does for a specific buyer. If your headline could be pasted onto a competitor's site without anyone noticing, the 61% has already absorbed you.",
       ],
     },
     {
@@ -129,6 +132,8 @@ export const saasHomepageStudy: BlogPost = {
         "Nearly three companies added CTAs for every one that removed them. The reading is not \"add more buttons.\"",
         "It is that the homepage stopped being a single funnel entrance and became a routing layer — self-serve here, sales-assisted there, documentation for the evaluator who is ready for neither. That is a plausible response to buyers arriving at genuinely different stages, and it is also what a page looks like when nobody can agree on the primary action.",
         "This data cannot tell you which of those two it is for any given company. If you are running paid traffic into a page like that, the question is worth settling deliberately rather than by accretion — which is the practical overlap with [conversion rate optimisation](/conversion-rate-optimisation-specialist) work.",
+        "**There is a reason the one-CTA rule fits landing pages better than homepages, and it is worth naming.** Eugene Schwartz's five awareness levels — unaware, problem aware, solution aware, product aware, most aware — describe how ready a visitor is to act. A landing page inherits its awareness level from the ad that sent the visitor, so one CTA can match it. A homepage receives all five levels at once, from branded search, a podcast mention, a competitor comparison, and a returning evaluator, in the same hour.",
+        "Read through that lens, the CTA growth in this data is not indiscipline. It is a page trying to solve an **orientation** problem — the third of the seven levels of conversion, after relevance and trust — with the only instrument a homepage has. The failure mode is not having four CTAs. It is having four CTAs of equal visual weight, which leaves every awareness level equally unserved.",
       ],
     },
     {
@@ -153,6 +158,32 @@ export const saasHomepageStudy: BlogPost = {
       paragraphs: [
         "The medians move barely at all, which is the honest way to report it. What is lopsided is the direction: roughly three companies lengthened for every one that trimmed, on both elements.",
         "A plausible explanation sits in the added words themselves. Headlines moved from naming a product category to naming a job and an audience. **\"The issue tracking tool you'll enjoy using\"** is shorter than **\"The product development system for teams and agents\"** — but it says less about who the page is for.",
+        "**The advice these pages are breaking is not the advice most people think it is.** The rule from conversion research is that a visitor should understand what you do within five seconds, and that specificity beats generality. Neither of those is a word count. Brevity became the proxy for clarity because it is easier to measure, and a five-word category label can fail the five-second test far more badly than a nine-word sentence that names a buyer.",
+        "The test worth running on your own headline is not \"can I cut two words.\" It is the five-second test: show it to someone outside your company, take it away, and ask what the product does and who it is for. Length is only a problem when it buys nothing.",
+      ],
+    },
+    {
+      type: "numbered-list",
+      id: "what-to-do",
+      label: "Application",
+      title: "What to do with this on your own homepage",
+      paragraphs: [
+        "None of the above is a prescription. A trend across 54 companies tells you what the market did, not what your page should do — and half of these companies are probably wrong. What the findings are useful for is deciding **which question to ask first**, which is the part most homepage rewrites skip.",
+        "Three checks, in this order. Each takes under an hour and none of them requires a redesign.",
+      ],
+      items: [
+        {
+          title: "Count the awareness levels your homepage actually serves",
+          body: "Open your analytics and split last month's homepage traffic by source: branded search, non-branded search, paid, referral, direct. Each of those arrives at a different awareness level. Then count your CTAs. If you have one CTA and four distinct sources, you are serving one of them and taxing the rest. If you have four CTAs of identical visual weight, you are serving none. The fix is hierarchy — one dominant action, the others clearly subordinate — not a smaller number.",
+        },
+        {
+          title: "Run the five-second test on your headline before you shorten it",
+          body: "Show your H1 to five people outside your company for five seconds, take it away, and ask two questions: what does this company do, and who is it for. If they can answer both, length is not your problem and cutting words will cost you. If they can answer neither, the fix is specificity — naming the job and the buyer — which usually makes the headline longer, exactly as it did for the companies in this sample.",
+        },
+        {
+          title: "Check whether your AI claim still differentiates anything",
+          body: "Paste your homepage headline into a document next to three competitors' headlines, with the company names removed. If a colleague cannot tell which is yours, the AI language is doing no work. That does not mean deleting it — it means moving the differentiation to the layer underneath: the specific workflow it changes, the proof that it does, the buyer it does it for. At 61% adoption, the claim itself is no longer information.",
+        },
       ],
     },
     {
