@@ -106,6 +106,7 @@ export const saasHomepageStudy: BlogPost = {
         "The honest caveat: this measures what homepages say, not what products do. A heading is cheap. Whether the underlying software changed as fast as the copy did is not a question an archived page can answer.",
         "**The strategic consequence is uncomfortable for anyone writing a homepage right now.** Radical differentiation works by finding the dominant convention in a market and doing the opposite. At 61%, AI language *is* the dominant convention. A claim that more than half your category makes is not a differentiator — it is table stakes, and table stakes are what buyers stop reading.",
         "That does not mean removing it. It means the differentiation has to sit somewhere else: in what the AI is pointed at, in the proof, in the specific job it does for a specific buyer. If your headline could be pasted onto a competitor's site without anyone noticing, the 61% has already absorbed you.",
+        "This is the move I made with [Screenplay Performance Studio](/case-study/screenplay), which arrived positioned as an AI audio tool. The product worked; the framing did not, because \"AI audio tool\" told a visitor nothing about where to start or what they would end up with. We reframed it as a specific screenplay performance workflow — upload, casting, perform, export — and the AI stayed in the product rather than in the pitch. The label was the least differentiating thing it had.",
       ],
     },
     {
@@ -134,6 +135,8 @@ export const saasHomepageStudy: BlogPost = {
         "This data cannot tell you which of those two it is for any given company. If you are running paid traffic into a page like that, the question is worth settling deliberately rather than by accretion — which is the practical overlap with [conversion rate optimisation](/conversion-rate-optimisation-specialist) work.",
         "**There is a reason the one-CTA rule fits landing pages better than homepages, and it is worth naming.** Eugene Schwartz's five awareness levels — unaware, problem aware, solution aware, product aware, most aware — describe how ready a visitor is to act. A landing page inherits its awareness level from the ad that sent the visitor, so one CTA can match it. A homepage receives all five levels at once, from branded search, a podcast mention, a competitor comparison, and a returning evaluator, in the same hour.",
         "Read through that lens, the CTA growth in this data is not indiscipline. It is a page trying to solve an **orientation** problem — the third of the seven levels of conversion, after relevance and trust — with the only instrument a homepage has. The failure mode is not having four CTAs. It is having four CTAs of equal visual weight, which leaves every awareness level equally unserved.",
+        "**The boundary between the two cases is worth being precise about, because I have been on the other side of it.** On [Pubrella](/case-study/pubrella) the CTAs competed with each other, and cutting the competing paths down to one clear route with progressive disclosure was part of an overhaul that tripled visit-to-signup conversion. That was a landing page — a page whose visitors all arrived through the same door, at the same awareness level.",
+        "Collapsing a homepage to a single path the same way would stand a decent chance of stranding four audiences to serve one. The instruction that transfers between the two is not \"one CTA.\" It is **one unmistakable hierarchy** — which on a landing page usually means one button, and on a homepage usually does not.",
       ],
     },
     {
@@ -160,6 +163,7 @@ export const saasHomepageStudy: BlogPost = {
         "A plausible explanation sits in the added words themselves. Headlines moved from naming a product category to naming a job and an audience. **\"The issue tracking tool you'll enjoy using\"** is shorter than **\"The product development system for teams and agents\"** — but it says less about who the page is for.",
         "**The advice these pages are breaking is not the advice most people think it is.** The rule from conversion research is that a visitor should understand what you do within five seconds, and that specificity beats generality. Neither of those is a word count. Brevity became the proxy for clarity because it is easier to measure, and a five-word category label can fail the five-second test far more badly than a nine-word sentence that names a buyer.",
         "The test worth running on your own headline is not \"can I cut two words.\" It is the five-second test: show it to someone outside your company, take it away, and ask what the product does and who it is for. Length is only a problem when it buys nothing.",
+        "[Zembra](/case-study/zembra) is the version of this I have watched up close. The site described a review-scraping API and listed endpoints — accurate, compact, and useless to the AI and ML teams who were the actual buyers, because it named the mechanism instead of the outcome. Repositioning it around data intelligence meant longer, less technical language on nearly every line. The rebrand, site rebuild, and outbound revamp ran together over eight months, so no single element gets the credit — but nothing about that engagement pointed toward fewer words.",
       ],
     },
     {
@@ -216,6 +220,7 @@ export const saasHomepageStudy: BlogPost = {
         "**The CTA and AI definitions are English-only.** Non-English homepages in the sample are undercounted on both measures.",
         "**Captures are snapshots, not continuous history.** A change that appeared and reverted between two captures is invisible here.",
         "**Nothing here measures whether any change worked.** No company in the sample published what happened to its conversion rate. Correlation with the calendar is not evidence of effect.",
+        "**The three client cases referenced above are illustrations, not evidence.** Pubrella, Screenplay, and Zembra were full engagements — positioning, copy, structure, and in one case outbound, all moving at once — so no single element can be credited with the outcome, and none of them was a controlled test of anything measured in this study. They are here because they show the reasoning being applied, not because they validate it.",
       ],
     },
   ],
@@ -262,6 +267,8 @@ export const saasHomepageStudy: BlogPost = {
     { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
     { href: "/meta-ads-for-saas", label: "Meta Ads for SaaS" },
     { href: "/cro-teardowns", label: "SaaS homepage teardowns" },
+    { href: "/case-study/pubrella", label: "Pubrella: 3x landing page conversion" },
+    { href: "/case-study/zembra", label: "Zembra: repositioning an API as a platform" },
   ],
   relatedPosts: [
     {
