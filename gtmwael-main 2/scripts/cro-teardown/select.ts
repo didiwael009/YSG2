@@ -52,20 +52,27 @@ interface CliArgs {
   name: string;
   threshold: number;
   manual: string[] | null;
+  forceSelect: boolean;
 }
 
 function parseArgs(argv: string[]): CliArgs {
   const args: Record<string, string> = {};
+  const flags = new Set<string>();
   for (let i = 0; i < argv.length; i++) {
-    if (argv[i].startsWith('--') && i + 1 < argv.length) {
-      args[argv[i].slice(2)] = argv[i + 1];
-      i++;
+    if (argv[i].startsWith('--')) {
+      const key = argv[i].slice(2);
+      if (i + 1 < argv.length && !argv[i + 1].startsWith('--')) {
+        args[key] = argv[i + 1];
+        i++;
+      } else {
+        flags.add(key);
+      }
     }
   }
 
   if (!args.name) {
     console.error('Missing required argument: --name');
-    console.error('Usage: npm run cro-teardown:select -- --name <name> [--threshold 0.96] [--manual month1,month2]');
+    console.error('Usage: npm run cro-teardown:select -- --name <name> [--threshold 0.96] [--manual month1,month2] [--force-select]');
     process.exit(1);
   }
 
@@ -80,7 +87,7 @@ function parseArgs(argv: string[]): CliArgs {
     ? args.manual.split(',').map(m => m.trim() === 'current-live' ? 'current' : m.trim()).filter(Boolean)
     : null;
 
-  return { name: args.name, threshold, manual };
+  return { name: args.name, threshold, manual, forceSelect: flags.has('force-select') };
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -97,7 +104,8 @@ function absImagePath(projectRoot: string, webPath: string): string {
 // ─── Main ────────────────────────────────────────────────────────────────────
 
 async function main() {
-  const { name, threshold, manual } = parseArgs(process.argv.slice(2));
+  const { name, threshold, manual, forceSelect } = parseArgs(process.argv.slice(2));
+  const args = { forceSelect };
   const mode: 'auto' | 'manual' = manual !== null ? 'manual' : 'auto';
   const slug = slugify(name);
 
@@ -127,6 +135,35 @@ async function main() {
   if (captured.length === 0) {
     console.error('No captured screenshots found. Run Phase 1 first.');
     process.exit(1);
+  }
+
+  // Early gate: count how many captures are likely styled (>60KB).
+  // Modern SaaS SPAs (Next.js/React) often render as blank 30–50KB files in Wayback.
+  // If fewer than 2 styled captures exist, there is not enough visual history for
+  // an evolution article — warn loudly and exit so the operator doesn't waste time.
+  const STYLED_MIN_BYTES = 60_000;
+  const STYLED_MIN_COUNT = 2;
+  const styledCaptures = captured.filter(e => {
+    try {
+      const abs = path.join(projectRoot, 'public', e.screenshotPath!);
+      return fs.statSync(abs).size >= STYLED_MIN_BYTES;
+    } catch { return false; }
+  });
+  if (styledCaptures.length < STYLED_MIN_COUNT) {
+    console.error(
+      `\n❌  Insufficient styled captures: only ${styledCaptures.length}/${captured.length} screenshots exceed ${Math.round(STYLED_MIN_BYTES / 1024)}KB.`,
+    );
+    console.error(
+      `    This site's Wayback captures are likely unstyled (CSS/JS bundle did not replay).`,
+    );
+    console.error(
+      `    A CRO evolution article requires ≥${STYLED_MIN_COUNT} distinct styled snapshots.`,
+    );
+    console.error(`    Options: choose a different slug, or use --force-select to continue anyway.`);
+    if (!args.forceSelect) process.exit(1);
+    console.warn(`\n⚠️  --force-select passed — continuing with ${styledCaptures.length} styled captures.\n`);
+  } else {
+    log(`${styledCaptures.length}/${captured.length} captures are styled (≥${Math.round(STYLED_MIN_BYTES / 1024)}KB)`);
   }
 
   log(`${captured.length} captured entries loaded`);

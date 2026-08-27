@@ -38,7 +38,13 @@ export interface CaptureResult {
   textPathJson: string | null;
   textPathTxt: string | null;
   error: string | null;
+  /** True when the saved WebP is suspiciously small — likely an unstyled/blank Wayback render */
+  likelyUnstyled?: boolean;
 }
+
+// WebP files below this size (bytes) are almost certainly blank or CSS-less Wayback renders.
+// A real styled page is typically 100KB+; blank/error pages come back as 30–55KB.
+const UNSTYLED_SIZE_THRESHOLD = 60_000;
 
 // CSS injected into every page to hide Wayback toolbar and common overlays
 const HIDE_WAYBACK_CSS = `
@@ -229,9 +235,10 @@ function pageTextToPlain(text: PageText): string {
   return lines.join('\n');
 }
 
-// Retry delays: if attempt fails with a network error, wait then try again.
-// On retry, attemptCapture will use a fresh context since the shared one was recycled.
-const CAPTURE_RETRY_DELAYS_MS = [5_000, 12_000];
+// Retry delays for transient network errors (ERR_CONNECTION_REFUSED, ERR_CONNECTION_RESET).
+// Wayback Machine rate-limits concurrent requests — longer backoffs help clear the queue.
+// Three retries: 8s → 25s → 55s (exponential-ish, caps under 1 min each).
+const CAPTURE_RETRY_DELAYS_MS = [8_000, 25_000, 55_000];
 
 async function capturePage(
   browser: Browser,
@@ -290,19 +297,21 @@ async function attemptCapture(
   try {
     log(`Navigating to: ${targetUrl}`);
 
-    // 'load' waits for all resources (images, fonts, scripts) — reduces missing elements
+    // Wayback Machine replays are slow: each asset (CSS, JS, font) is fetched from
+    // archive.org's servers one by one. A modern SaaS site may have 50-100 assets,
+    // taking 60-120 seconds to fully render. We use 'domcontentloaded' so we can
+    // start the networkidle wait immediately, then give a long settle for Wayback.
     await page.goto(targetUrl, {
-      waitUntil: 'load',
-      timeout: 60_000,
+      waitUntil: 'domcontentloaded',
+      timeout: 120_000,
     });
 
-    // After load, wait for the network to go quiet so lazy-loaded content finishes
-    await page.waitForLoadState('networkidle', { timeout: 15_000 }).catch(() => {
-      // networkidle may never fire on pages with persistent connections — that's fine
-    });
+    // Wait for all assets to finish loading — critical for Wayback replays.
+    // Live pages settle in ~5s; Wayback pages can take 60s+.
+    await page.waitForLoadState('networkidle', { timeout: isWayback ? 60_000 : 20_000 }).catch(() => {});
 
-    // Final settle for CSS animations / web fonts to render
-    await page.waitForTimeout(isWayback ? 2000 : 1000);
+    // Extra settle: Wayback pages often still render JS components after networkidle
+    await page.waitForTimeout(isWayback ? 6_000 : 2_000);
 
     if (isWayback) {
       await hideWaybackToolbar(page);
@@ -342,7 +351,35 @@ async function attemptCapture(
       fs.unlinkSync(pngPath);
     }
 
-    log(`Screenshot saved to ${screenshotDest}`);
+    let fileSizeBytes = fs.statSync(screenshotDest).size;
+
+    // If screenshot is suspiciously small, the page may still be rendering.
+    // Wait up to 2 extra rounds (15s each) and retake — Wayback pages can be very slow.
+    if (isWayback && fileSizeBytes < UNSTYLED_SIZE_THRESHOLD) {
+      for (const extraWait of [15_000, 20_000]) {
+        log(`Screenshot only ${Math.round(fileSizeBytes / 1024)}KB — waiting ${extraWait / 1000}s more for Wayback assets…`);
+        await page.waitForTimeout(extraWait);
+        await page.screenshot({ path: pngPath, fullPage: true, type: 'png' });
+        if (!isPng) {
+          await sharp(pngPath)
+            .resize({ height: 16_000, fit: 'inside', withoutEnlargement: true })
+            .webp({ quality: 85 })
+            .toFile(screenshotDest);
+          fs.unlinkSync(pngPath);
+        }
+        fileSizeBytes = fs.statSync(screenshotDest).size;
+        if (fileSizeBytes >= UNSTYLED_SIZE_THRESHOLD) break;
+      }
+    }
+
+    const likelyUnstyled = fileSizeBytes < UNSTYLED_SIZE_THRESHOLD;
+    if (likelyUnstyled) {
+      logError(
+        `⚠️  Likely unstyled capture: ${screenshotDest} is only ${Math.round(fileSizeBytes / 1024)}KB — CSS/JS may not have loaded`,
+      );
+    }
+
+    log(`Screenshot saved to ${screenshotDest} (${Math.round(fileSizeBytes / 1024)}KB${likelyUnstyled ? ' — UNSTYLED?' : ''})`);
 
     return {
       success: true,
@@ -350,6 +387,7 @@ async function attemptCapture(
       textPathJson,
       textPathTxt,
       error: null,
+      likelyUnstyled,
     };
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);
@@ -436,7 +474,7 @@ async function attemptCaptureWithContext(
   textTxtDest: string,
   isWayback: boolean,
 ): Promise<CaptureResult> {
-  const RETRY_DELAYS_MS = [5_000, 12_000];
+  const RETRY_DELAYS_MS = [8_000, 25_000, 55_000];
   let lastError = '';
 
   for (let attempt = 0; attempt <= RETRY_DELAYS_MS.length; attempt++) {
@@ -449,9 +487,9 @@ async function attemptCaptureWithContext(
     const page = await ctx.newPage();
     try {
       log(`Navigating to: ${targetUrl}`);
-      await page.goto(targetUrl, { waitUntil: 'load', timeout: 60_000 });
-      await page.waitForLoadState('networkidle', { timeout: 15_000 }).catch(() => {});
-      await page.waitForTimeout(isWayback ? 2000 : 1000);
+      await page.goto(targetUrl, { waitUntil: 'domcontentloaded', timeout: 120_000 });
+      await page.waitForLoadState('networkidle', { timeout: isWayback ? 60_000 : 20_000 }).catch(() => {});
+      await page.waitForTimeout(isWayback ? 6_000 : 2_000);
 
       if (isWayback) {
         await hideWaybackToolbar(page);
@@ -485,8 +523,33 @@ async function attemptCaptureWithContext(
         fs.unlinkSync(pngPath);
       }
 
-      log(`Screenshot saved to ${screenshotDest}`);
-      return { success: true, screenshotPath: screenshotDest, textPathJson, textPathTxt, error: null };
+      let fileSizeBytes = fs.statSync(screenshotDest).size;
+
+      if (isWayback && fileSizeBytes < UNSTYLED_SIZE_THRESHOLD) {
+        for (const extraWait of [15_000, 20_000]) {
+          log(`Screenshot only ${Math.round(fileSizeBytes / 1024)}KB — waiting ${extraWait / 1000}s more for Wayback assets…`);
+          await page.waitForTimeout(extraWait);
+          const pngPath2 = isPng ? screenshotDest : screenshotDest.replace(/\.webp$/, '.png');
+          await page.screenshot({ path: pngPath2, fullPage: true, type: 'png' });
+          if (!isPng) {
+            await sharp(pngPath2)
+              .resize({ height: 16_000, fit: 'inside', withoutEnlargement: true })
+              .webp({ quality: 85 })
+              .toFile(screenshotDest);
+            fs.unlinkSync(pngPath2);
+          }
+          fileSizeBytes = fs.statSync(screenshotDest).size;
+          if (fileSizeBytes >= UNSTYLED_SIZE_THRESHOLD) break;
+        }
+      }
+
+      const likelyUnstyled = fileSizeBytes < UNSTYLED_SIZE_THRESHOLD;
+      if (likelyUnstyled) {
+        logError(`⚠️  Likely unstyled capture: ${screenshotDest} is only ${Math.round(fileSizeBytes / 1024)}KB — CSS/JS may not have loaded`);
+      }
+
+      log(`Screenshot saved to ${screenshotDest} (${Math.round(fileSizeBytes / 1024)}KB${likelyUnstyled ? ' — UNSTYLED?' : ''})`);
+      return { success: true, screenshotPath: screenshotDest, textPathJson, textPathTxt, error: null, likelyUnstyled };
     } catch (err) {
       const message = err instanceof Error ? err.message : String(err);
       logError(`Capture failed for ${targetUrl}: ${message}`);

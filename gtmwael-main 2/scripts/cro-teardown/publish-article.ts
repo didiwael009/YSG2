@@ -353,7 +353,7 @@ async function main(): Promise<void> {
   }
 
   const structuredData = JSON.parse(fs.readFileSync(dataPath, 'utf-8')) as Record<string, unknown>;
-  const articleBody    = fs.readFileSync(articlePath, 'utf-8');
+  let   articleBody    = fs.readFileSync(articlePath, 'utf-8');
   const seoData        = fs.existsSync(seoJsonPath)
     ? (JSON.parse(fs.readFileSync(seoJsonPath, 'utf-8')) as Record<string, string>)
     : null;
@@ -368,6 +368,8 @@ async function main(): Promise<void> {
     };
     if (outline.h1 && typeof outline.h1 === 'string') {
       structuredData.h1 = outline.h1;
+      // Keep articleBody H1 in sync — replace the first `# ...` heading line
+      articleBody = articleBody.replace(/^# .+$/m, `# ${outline.h1}`);
       console.log(`✅  Overrode h1 from outline: "${outline.h1}"`);
     }
     if (outline.seo_title && typeof outline.seo_title === 'string') {
@@ -477,6 +479,60 @@ async function main(): Promise<void> {
     internalLinkingScore < INTERNAL_LINK_SCORE_THRESHOLD
       ? getRelatedTeardownLinks(slug)
       : [];
+
+  // ── Layer 1.5: Paragraph length check (V5 — 60-word cap) ────────────────────
+  // Scan articleBody directly so the publisher catches long paragraphs even on
+  // re-publish without re-running the assembler. Blocks unless --force.
+  // Sections exempt from the 60-word paragraph cap. Matching is done by
+  // checking whether the section heading (lowercased) includes the token,
+  // OR the token includes the section heading substring. "preamble" covers the
+  // article body before the first H2; "quick answer" / "quick-answer" cover
+  // the featured-snippet block which is intentionally one dense paragraph.
+  const PARA_EXEMPT_SECTIONS = ['preamble', 'quick answer', 'quick-answer', 'intro'];
+  const paragraphErrors: string[] = [];
+  {
+    // Parse article body into rough sections by H2 heading
+    const lines = articleBody.split('\n');
+    let currentSection = 'preamble';
+    let paraBuffer: string[] = [];
+
+    const checkBuffer = () => {
+      const text = paraBuffer.join(' ').replace(/\*\*/g, '').trim();
+      if (!text || text.startsWith('#')) return;
+      const words = text.split(/\s+/).filter(Boolean).length;
+      const isExempt = PARA_EXEMPT_SECTIONS.some(
+        k => currentSection.includes(k) || k.includes(currentSection),
+      );
+      if (!isExempt && words > 60) {
+        const preview = text.split(/\s+/).slice(0, 8).join(' ');
+        paragraphErrors.push(`[${currentSection}] ~${words}w: "${preview}…"`);
+      }
+    };
+
+    for (const line of lines) {
+      if (line.startsWith('## ')) {
+        checkBuffer();
+        paraBuffer = [];
+        currentSection = line.replace(/^## /, '').toLowerCase().slice(0, 40);
+      } else if (line.trim() === '') {
+        if (paraBuffer.length > 0) { checkBuffer(); paraBuffer = []; }
+      } else {
+        paraBuffer.push(line);
+      }
+    }
+    checkBuffer();
+  }
+
+  if (paragraphErrors.length > 0) {
+    console.warn('\n⚠️   V5 paragraph length violations (>60 words):');
+    for (const e of paragraphErrors) console.warn(`    • ${e}`);
+    if (!force) {
+      console.error('\n❌  Paragraph length check failed — split long paragraphs or run with --force.');
+      process.exit(1);
+    } else {
+      console.warn('⚠️   --force: publishing despite paragraph length violations above.');
+    }
+  }
 
   // ── Layer 2: Data consistency validation ─────────────────────────────────────
   // Checks that count claims in article-final.md match diff JSON ground truth.

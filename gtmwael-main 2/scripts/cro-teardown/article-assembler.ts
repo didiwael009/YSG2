@@ -130,6 +130,23 @@ export function assembleArticle(opts: AssemblerOpts): AssemblerResult {
     meta = JSON.parse(fs.readFileSync(gdPath, 'utf-8')) as Partial<ArticleMetadata>;
   }
 
+  // ── Load outline custom_h2 overrides (article-outline.json) ────────────────
+  // Outline custom_h2 always wins over what the section writer generated.
+  const outlinePath = path.join(writingDir, 'article-outline.json');
+  const outlineCustomH2s: Record<string, string> = {};
+  if (fs.existsSync(outlinePath)) {
+    try {
+      const outline = JSON.parse(fs.readFileSync(outlinePath, 'utf-8')) as {
+        sections?: Array<{ id: string; custom_h2?: string | null }>;
+      };
+      for (const sec of outline.sections ?? []) {
+        if (sec.id && sec.custom_h2) {
+          outlineCustomH2s[sec.id] = sec.custom_h2;
+        }
+      }
+    } catch { /* ignore malformed outline */ }
+  }
+
   const h1           = meta.h1 ?? meta.title ?? `${meta.companyName ?? slug} Homepage Teardown`;
   const fromLabel    = meta.fromLabel ?? '';
   const toLabel      = meta.toLabel ?? '';
@@ -174,6 +191,20 @@ export function assembleArticle(opts: AssemblerOpts): AssemblerResult {
       const rawHeading = SECTION_HEADINGS[sectionId];
       heading = rawHeading === undefined ? `## ${sectionId}` : rawHeading;
     }
+
+    // Strip accidental H1 from section body — writers prompted to include the # H1 in
+    // their intro output, but the assembler owns the article H1 in the header block.
+    // Any `# heading` line at the start of body is a duplicate and must be removed.
+    if (body.startsWith('# ')) {
+      const nlIdx = body.indexOf('\n');
+      body = nlIdx >= 0 ? body.slice(nlIdx + 1).trimStart() : '';
+    }
+
+    // Outline custom_h2 overrides whatever heading the writer generated.
+    if (outlineCustomH2s[sectionId]) {
+      heading = outlineCustomH2s[sectionId];
+    }
+
     const block = heading ? `${heading}\n\n${body}` : body;
     blocks.push(block);
     sectionsIncluded.push(sectionId);
@@ -237,15 +268,21 @@ export function assembleArticle(opts: AssemblerOpts): AssemblerResult {
   const repetitionWarnings = detectRepetition(sectionBodies);
 
   const editorialWarnings: string[] = [];
-  // Check for over-long paragraphs (>90 words) in any section
-  for (const [sectionId, body] of Object.entries(sectionBodies)) {
-    const paragraphs = body.split(/\n\n+/);
+  // V5 rule: no paragraph may exceed 60 words. Sections 01-intro and 02-quick-answer
+  // are exempt (they are designed as single short blocks).
+  const PARA_EXEMPT = new Set(['01-intro', '02-quick-answer']);
+  const PARA_HARD_LIMIT = 60;
+  for (const [sectionId, sectionBody] of Object.entries(sectionBodies)) {
+    if (PARA_EXEMPT.has(sectionId)) continue;
+    const paragraphs = sectionBody.split(/\n\n+/);
     for (const para of paragraphs) {
+      // Skip heading lines — they are not paragraphs
+      if (para.startsWith('#')) continue;
       const paraWords = para.split(/\s+/).filter(Boolean).length;
-      if (paraWords > 90) {
+      if (paraWords > PARA_HARD_LIMIT) {
         const preview = para.split(/\s+/).slice(0, 8).join(' ');
         editorialWarnings.push(
-          `[${sectionId}] Paragraph exceeds 90 words (~${paraWords}w): "${preview}…"`,
+          `[${sectionId}] Paragraph exceeds ${PARA_HARD_LIMIT} words (~${paraWords}w): "${preview}…"`,
         );
       }
     }

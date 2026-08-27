@@ -408,7 +408,14 @@ export async function runOutlineGenerator(opts: {
     onLog(`  ⚠ description too long (${rawDesc.length} chars) — truncating to 155`);
   }
   const clampedTitle = rawTitle.length > 60 ? rawTitle.slice(0, 57) + '…' : rawTitle;
-  const clampedDesc  = rawDesc.length  > 155 ? rawDesc.slice(0, 152) + '…' : rawDesc;
+  // Truncate description at word boundary, not mid-word
+  function truncateAtWord(text: string, max: number): string {
+    if (text.length <= max) return text;
+    const cut = text.slice(0, max - 1);
+    const lastSpace = cut.lastIndexOf(' ');
+    return (lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut) + '…';
+  }
+  const clampedDesc  = rawDesc.length > 155 ? truncateAtWord(rawDesc, 155) : rawDesc;
 
   const outline: ArticleOutline = {
     angle:              parsed.angle              ?? '',

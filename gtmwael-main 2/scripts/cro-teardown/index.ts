@@ -185,6 +185,7 @@ async function main() {
 
   let screenshotsSaved = 0;
   let capturesFailed = 0;
+  let likelyUnstyledCount = 0;
   const capturedRecords: SnapshotRecord[] = [];
 
   try {
@@ -207,6 +208,7 @@ async function main() {
 
         if (result.success) {
           screenshotsSaved++;
+          if (result.likelyUnstyled) likelyUnstyledCount++;
           capturedRecords.push({
             month: snapshot.month,
             slotStart: snapshot.slotStart,
@@ -223,7 +225,7 @@ async function main() {
             usedInArticle: false,
             error: null,
           });
-          process.stdout.write(' done\n');
+          process.stdout.write(result.likelyUnstyled ? ' done ⚠️ unstyled?\n' : ' done\n');
         } else {
           capturesFailed++;
           capturedRecords.push({
@@ -415,6 +417,7 @@ Slots requested:    ${totalSlots}
 Snapshots found:    ${found}
 Digest-skipped:     ${dupContent}
 Screenshots saved:  ${screenshotsSaved}
+Likely unstyled:    ${likelyUnstyledCount}${likelyUnstyledCount > 0 ? ' ⚠️  (Wayback CSS failed to load — recapture or skip)' : ''}
 Failed captures:    ${capturesFailed}
 Not found:          ${notFound}
 

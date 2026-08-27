@@ -61,7 +61,14 @@ function slotMidpoint(slotStart: string, stepMonths: number): number {
 /**
  * ONE bulk CDX query for the full date range.
  * Returns [timestamp, digest] rows (header row already stripped).
- * Tries exact URL first; if 0 rows, toggles www/non-www as fallback.
+ *
+ * Candidate expansion strategy (tried in order, first non-empty wins):
+ *   1. Exact URL as given (e.g. domain.com)
+ *   2. www-toggled variant (www.domain.com ↔ domain.com)
+ *   3. Common locale/language suffixes: /en, /en-ae, /en-us, /en-sa, /en-gb
+ *   4. www + locale suffix variants of the above
+ *
+ * This covers Next.js / i18n sites that only archive localised paths, not /.
  */
 async function fetchAllSnapshots(
   url: string,
@@ -70,7 +77,16 @@ async function fetchAllSnapshots(
 ): Promise<Array<{ timestamp: string; digest: string }>> {
   const base    = url.replace(/^https?:\/\//, '').replace(/\/$/, '');
   const altBase = base.startsWith('www.') ? base.slice(4) : `www.${base}`;
-  const candidates = [base, altBase];
+
+  // Locale suffixes to probe when the bare domain has no snapshots
+  const LOCALE_SUFFIXES = ['/en', '/en-ae', '/en-us', '/en-sa', '/en-gb', '/en-kw'];
+
+  const candidates: string[] = [
+    base,
+    altBase,
+    ...LOCALE_SUFFIXES.map(s => `${base}${s}`),
+    ...LOCALE_SUFFIXES.map(s => `${altBase}${s}`),
+  ];
 
   for (const candidate of candidates) {
     const cdxUrl =
@@ -98,7 +114,7 @@ async function fetchAllSnapshots(
           log(`Bulk CDX: ${rows.length} rows for ${candidate}`);
           return rows.map(r => ({ timestamp: r[0], digest: r[1] ?? '' }));
         }
-        break; // empty result — try alt candidate
+        break; // empty result — try next candidate
       } catch (err) {
         lastErr = err;
         if (attempt < 3) {
