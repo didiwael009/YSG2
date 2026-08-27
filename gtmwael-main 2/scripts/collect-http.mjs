@@ -13,6 +13,7 @@ import { writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
 
 const TARGETS = [
+  ['CASHIN','https://cashin.sa/',2021],
   ['Notion','https://www.notion.so/',2019],      ['Figma','https://www.figma.com/',2017],
   ['Slack','https://slack.com/',2015],           ['Airtable','https://airtable.com/',2016],
   ['Asana','https://asana.com/',2015],           ['Monday','https://monday.com/',2017],

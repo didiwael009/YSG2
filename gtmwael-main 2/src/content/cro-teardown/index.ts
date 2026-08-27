@@ -24,10 +24,9 @@ import { mailerlite } from "./articles/mailerlite";
 import { brevo } from "./articles/brevo";
 import { sendx } from "./articles/sendx";
 import { preply } from "./articles/preply";
-import { cashin } from "./articles/cashin";
 export type { CroTeardownPost, SnapshotEntry, MessagingChange, AnalysisBlock, LessonCard, SummaryCard } from "./types";
 
-export const croTeardownPosts: CroTeardownPost[] = [cashin, preply, sendx, brevo, mailerlite, crowdanalyzer, lucidyaV2, foreplay, unbounce, buffer, apify, agorapulse, webflow, gong, expensya, linear, lemlist, apollo, vercel, shopify, crisp, clay, intercom, stripe, hootsuite];
+export const croTeardownPosts: CroTeardownPost[] = [preply, sendx, brevo, mailerlite, crowdanalyzer, lucidyaV2, foreplay, unbounce, buffer, apify, agorapulse, webflow, gong, expensya, linear, lemlist, apollo, vercel, shopify, crisp, clay, intercom, stripe, hootsuite];
 
 export const getCroTeardownBySlug = (slug: string) =>
   croTeardownPosts.find((post) => post.slug === slug);
