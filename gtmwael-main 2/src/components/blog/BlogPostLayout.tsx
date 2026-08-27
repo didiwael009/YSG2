@@ -385,6 +385,52 @@ const renderBlock = (block: BlogBlock, index: number) => {
       );
     }
 
+    case "image-compare":
+      return (
+        <section key={block.id} id={block.id} className="mt-16 scroll-mt-28">
+          <SectionLabel>{block.label}</SectionLabel>
+          <h2 className="mb-5 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[46px]">
+            {block.title}
+          </h2>
+          <Paragraphs paragraphs={block.paragraphs} />
+          <div className="my-9 grid gap-5 md:grid-cols-2">
+            {[block.before, block.after].map((shot, shotIndex) => (
+              <figure key={shot.src} className="m-0">
+                {/* Sources are full-page captures up to 10,000px tall and of wildly
+                    different heights. Crop both to the same hero-height window so the
+                    comparison is like-for-like, and declare a ratio so nothing shifts. */}
+                <div className="aspect-[4/3] overflow-hidden rounded-[18px] border border-[#11111f]/10 bg-white shadow-[0_18px_50px_rgba(7,7,17,0.13)]">
+                  <img
+                    src={shot.src}
+                    alt={shot.alt}
+                    loading="lazy"
+                    decoding="async"
+                    width={1440}
+                    height={1080}
+                    className="block h-full w-full object-cover object-top"
+                  />
+                </div>
+                <figcaption className="mt-3">
+                  <span className="block text-[11px] font-black uppercase tracking-[0.08em] text-primary">
+                    {shotIndex === 0 ? "Before" : "After"} \u00b7 {shot.caption}
+                  </span>
+                  {shot.quote ? (
+                    <span className="mt-1 block text-[15px] leading-[1.55] text-[#4d4658]">
+                      {renderInlineText(shot.quote)}
+                    </span>
+                  ) : null}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+          {block.footnote ? (
+            <p className="max-w-[760px] text-[14px] leading-[1.6] text-[#6c6579]">
+              {renderInlineText(block.footnote)}
+            </p>
+          ) : null}
+        </section>
+      );
+
     case "data-table":
       return (
         <section key={block.id} id={block.id} className="mt-16 scroll-mt-28">

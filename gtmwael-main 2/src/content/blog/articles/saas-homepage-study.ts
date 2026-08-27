@@ -110,6 +110,29 @@ export const saasHomepageStudy: BlogPost = {
       ],
     },
     {
+      type: "image-compare",
+      id: "ai-language-example",
+      label: "What the shift looks like",
+      title: "Vercel, before and after the AI line arrived",
+      paragraphs: [
+        "The 2021 homepage sold a workflow in three words. The current one sells a category that did not exist when the first was written. Both are competent pages — the change is what the company decided the visitor needed to know first.",
+      ],
+      before: {
+        src: "/cro-teardowns/vercel/selected/2021-07.webp",
+        alt: "Vercel homepage in July 2021, headlined Develop. Preview. Ship.",
+        caption: "Vercel, July 2021",
+        quote: "**\"Develop. Preview. Ship.\"** — the product's own workflow, named in three words.",
+      },
+      after: {
+        src: "/cro-teardowns/vercel/selected/current-live.webp",
+        alt: "Vercel homepage in 2026, headlined Build and deploy on the AI Cloud",
+        caption: "Vercel, 2026",
+        quote: "**\"Build and deploy on the AI Cloud\"** — a category claim rather than a workflow.",
+      },
+      footnote:
+        "Both captures are from the Wayback Machine archive used throughout this study, cropped to the top of the page so the two are comparable. Full history: [Vercel homepage teardown](/cro-teardowns/vercel).",
+    },
+    {
       type: "data-table",
       id: "calls-to-action",
       label: "Finding 02",
@@ -140,6 +163,28 @@ export const saasHomepageStudy: BlogPost = {
       ],
     },
     {
+      type: "image-compare",
+      id: "cta-example",
+      label: "What the shift looks like",
+      title: "lemlist went from three action CTAs to ten",
+      paragraphs: [
+        "This is the largest CTA increase in the sample. Look at it as an orientation problem rather than a discipline problem: every button is aimed at a different visitor, and the question the page has to answer is which one it expects most.",
+      ],
+      before: {
+        src: "/cro-teardowns/lemlist/selected/2019-07.webp",
+        alt: "lemlist homepage in July 2019 with a small number of calls to action",
+        caption: "lemlist, July 2019 — 3 action CTAs",
+        quote: "One dominant path, aimed at a visitor who already knows what cold email is.",
+      },
+      after: {
+        src: "/cro-teardowns/lemlist/selected/current-live.webp",
+        alt: "lemlist homepage in 2026 with many competing calls to action",
+        caption: "lemlist, 2026 — 10 action CTAs",
+        quote: "Ten routes, serving several awareness levels at once. Whether they are ranked is the whole question.",
+      },
+      footnote: "Cropped to the top of each page. Full history: [lemlist homepage teardown](/cro-teardowns/lemlist).",
+    },
+    {
       type: "data-table",
       id: "headline-length",
       label: "Finding 03",
@@ -165,6 +210,28 @@ export const saasHomepageStudy: BlogPost = {
         "The test worth running on your own headline is not \"can I cut two words.\" It is the five-second test: show it to someone outside your company, take it away, and ask what the product does and who it is for. Length is only a problem when it buys nothing.",
         "[Zembra](/case-study/zembra) is the version of this I have watched up close. The site described a review-scraping API and listed endpoints — accurate, compact, and useless to the AI and ML teams who were the actual buyers, because it named the mechanism instead of the outcome. Repositioning it around data intelligence meant longer, less technical language on nearly every line. The rebrand, site rebuild, and outbound revamp ran together over eight months, so no single element gets the credit — but nothing about that engagement pointed toward fewer words.",
       ],
+    },
+    {
+      type: "image-compare",
+      id: "headline-example",
+      label: "What the shift looks like",
+      title: "Linear traded a category for an audience",
+      paragraphs: [
+        "The quoted example from the section above, as it actually appeared. The later headline is longer and abandons the category word entirely — a visitor who does not already know what Linear is gets less help, and a visitor evaluating it for an AI-assisted team gets considerably more.",
+      ],
+      before: {
+        src: "/cro-teardowns/linear/selected/2020-01.webp",
+        alt: "Linear homepage in January 2020, headlined The issue tracking tool you will enjoy using",
+        caption: "Linear, January 2020",
+        quote: "**\"The issue tracking tool you'll enjoy using\"** — names the category in the first six words.",
+      },
+      after: {
+        src: "/cro-teardowns/linear/selected/current-live.webp",
+        alt: "Linear homepage in 2026, headlined The product development system for teams and agents",
+        caption: "Linear, 2026",
+        quote: "**\"The product development system for teams and agents\"** — names a job and an audience, and never says issue tracker.",
+      },
+      footnote: "Cropped to the top of each page. Full history: [Linear homepage teardown](/cro-teardowns/linear).",
     },
     {
       type: "numbered-list",

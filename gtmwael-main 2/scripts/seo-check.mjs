@@ -37,9 +37,19 @@ if (!routeMatch) throw new Error("Could not read seoRoutes from src/lib/seo.ts")
 
 const blogPosts = readBlogPosts();
 const staticRoutes = Function(`"use strict"; return (${routeMatch[1]});`)();
+// CRO teardown pages are real destinations but are not in seoRoutes — they are
+// generated from the article index at build time. Without them, any internal
+// link to a teardown is reported as broken.
+const teardownSlugs = [
+  ...read("src/content/cro-teardown/index.ts").matchAll(
+    /import \{ (\w+) \} from "\.\/articles\/([^"]+)"/g
+  ),
+].map(([, , filename]) => filename);
+
 const allRoutes = new Set([
   ...staticRoutes.map((route) => route.path),
   ...blogPosts.map((post) => post.path),
+  ...teardownSlugs.map((slug) => `/cro-teardowns/${slug}`),
   "/wael-growth-playbook-2026.pdf",
   "/wael-landing-page-playbook-2026.pdf",
 ]);

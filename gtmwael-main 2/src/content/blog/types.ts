@@ -128,6 +128,17 @@ export type BlogBlock =
       footnote?: string;
     }
   | {
+      /** Side-by-side before/after screenshots with per-image captions. */
+      type: "image-compare";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      before: { src: string; alt: string; caption: string; quote?: string };
+      after: { src: string; alt: string; caption: string; quote?: string };
+      footnote?: string;
+    }
+  | {
       /** Generic N-column data table. `align` marks columns that should be right-aligned. */
       type: "data-table";
       id: string;
