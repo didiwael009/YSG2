@@ -1,0 +1,9 @@
+{
+  "name": "Notion",
+  "slug": "notion",
+  "url": "https://www.notion.so/",
+  "from": "2019-06",
+  "to": "2026-06",
+  "method": "http-only",
+  "createdAt": "2026-08-27T15:58:30.528Z"
+}

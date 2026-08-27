@@ -1,0 +1,9 @@
+{
+  "name": "Canva",
+  "slug": "canva",
+  "url": "https://www.canva.com/",
+  "from": "2015-06",
+  "to": "2026-06",
+  "method": "http-only",
+  "createdAt": "2026-08-27T16:03:43.532Z"
+}

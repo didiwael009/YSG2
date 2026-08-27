@@ -1,0 +1,9 @@
+{
+  "name": "Ramp",
+  "slug": "ramp",
+  "url": "https://ramp.com/",
+  "from": "2020-06",
+  "to": "2026-06",
+  "method": "http-only",
+  "createdAt": "2026-08-27T16:06:50.895Z"
+}

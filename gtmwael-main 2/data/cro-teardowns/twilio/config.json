@@ -1,0 +1,9 @@
+{
+  "name": "Twilio",
+  "slug": "twilio",
+  "url": "https://www.twilio.com/",
+  "from": "2015-06",
+  "to": "2026-06",
+  "method": "http-only",
+  "createdAt": "2026-08-27T16:04:25.001Z"
+}

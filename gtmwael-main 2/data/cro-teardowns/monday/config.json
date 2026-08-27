@@ -1,0 +1,9 @@
+{
+  "name": "Monday",
+  "slug": "monday",
+  "url": "https://monday.com/",
+  "from": "2017-06",
+  "to": "2026-06",
+  "method": "http-only",
+  "createdAt": "2026-08-27T16:00:22.321Z"
+}

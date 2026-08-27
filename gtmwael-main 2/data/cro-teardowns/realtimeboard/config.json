@@ -1,0 +1,9 @@
+{
+  "name": "RealtimeBoard",
+  "slug": "realtimeboard",
+  "url": "https://realtimeboard.com/",
+  "from": "2014-06",
+  "to": "2026-06",
+  "method": "http-only",
+  "createdAt": "2026-08-27T16:11:19.404Z"
+}

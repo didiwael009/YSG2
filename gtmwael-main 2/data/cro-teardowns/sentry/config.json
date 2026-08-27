@@ -1,0 +1,9 @@
+{
+  "name": "Sentry",
+  "slug": "sentry",
+  "url": "https://sentry.io/",
+  "from": "2016-06",
+  "to": "2026-06",
+  "method": "http-only",
+  "createdAt": "2026-08-27T16:12:46.059Z"
+}
