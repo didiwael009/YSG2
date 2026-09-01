@@ -1,0 +1,16 @@
+TITLE: Checking your browser...
+META DESCRIPTION: 
+
+H1:
+  - Checking your browser
+
+H2:
+
+H3:
+
+CTAS / BUTTONS:
+
+NAV LINKS:
+
+BODY TEXT:
+Checking your browserThis will only take a few seconds...

@@ -1,0 +1,7 @@
+## Why Preply's homepage changed: business context
+
+In January 2021, Preply's homepage served a consumer audience still deciding whether online tutoring was the right approach for them. The headline **"Prepare to speak confidently with the best online tutors"** and section headings like **"Make the world your comfort zone"** are consistent with awareness-stage positioning — messaging written for someone who has not yet chosen a tutor, and may not have decided they want one.
+
+By August 2026, the observed evidence suggests a shift in assumed visitor state. The headline became **"Learn faster with your best language tutor."** The addition of **"Book a demo"** as a CTA is consistent with a second buyer segment emerging: corporate or team language training, where a procurement decision-maker — not an individual learner — is the visitor. Adding tutor counts (**"Chinese tutors 5,253 teachers"**) is consistent with serving a visitor who is already comparing providers.
+
+A pattern common as learning marketplaces scale: aspirational messaging that drives early consumer adoption gives way to efficiency and proof as the buyer mix shifts toward comparison-stage visitors and enterprise buyers. For SaaS teams building in any marketplace category, this is a useful signal — when your traffic increasingly includes visitors who already know they want your category, your homepage should reflect that shift before your competitors' does.

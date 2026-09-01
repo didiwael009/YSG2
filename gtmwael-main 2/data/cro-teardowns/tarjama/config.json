@@ -1,0 +1,10 @@
+{
+  "name": "Tarjama",
+  "slug": "tarjama",
+  "url": "https://tarjama.com",
+  "from": "2020-01",
+  "to": "2026-08",
+  "stepMonths": 6,
+  "createdAt": "2026-08-25T14:06:12.381Z",
+  "phase": 1
+}

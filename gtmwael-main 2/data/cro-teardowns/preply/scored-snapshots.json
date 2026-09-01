@@ -1,0 +1,62 @@
+[
+  {
+    "month": "2021-01",
+    "slotStart": "2021-01",
+    "slotEnd": "2021-06",
+    "timestamp": "20210410135815",
+    "originalUrl": "https://preply.com",
+    "screenshotPath": "/cro-teardowns/preply/archive-monthly/2021-01.webp",
+    "selectedPath": "/cro-teardowns/preply/selected/2021-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "2022-07",
+    "slotStart": "2022-07",
+    "slotEnd": "2022-12",
+    "timestamp": "20221001172648",
+    "originalUrl": "https://preply.com",
+    "screenshotPath": "/cro-teardowns/preply/archive-monthly/2022-07.webp",
+    "selectedPath": null,
+    "selected": false,
+    "duplicate": false,
+    "forceKept": false,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "2023-07",
+    "slotStart": "2023-07",
+    "slotEnd": "2023-12",
+    "timestamp": "20231001143628",
+    "originalUrl": "https://preply.com",
+    "screenshotPath": "/cro-teardowns/preply/archive-monthly/2023-07.webp",
+    "selectedPath": null,
+    "selected": false,
+    "duplicate": false,
+    "forceKept": false,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  },
+  {
+    "month": "current",
+    "slotStart": "current",
+    "slotEnd": "current",
+    "timestamp": null,
+    "originalUrl": "https://preply.com",
+    "screenshotPath": "/cro-teardowns/preply/archive-monthly/current-live.webp",
+    "selectedPath": "/cro-teardowns/preply/selected/current-live.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "manual"
+  }
+]

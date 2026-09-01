@@ -1,0 +1,110 @@
+{
+  "angle": "Preply's homepage evolution is the story of a consumer tutoring marketplace that quietly added a corporate sales motion — 'Book a demo' — without removing its individual-learner paths, suggesting the company decided to serve two buyer types from one page rather than pick one. The headline shift from 'speak confidently' to 'learn faster' is the visible version of a less visible strategic bet.",
+  "distinct_from": [
+    "consumer marketplace adding B2B CTA without removing consumer paths",
+    "dual-audience signal on a single homepage",
+    "efficiency vs aspiration trade-off in EdTech"
+  ],
+  "h1": "Preply added 'Book a demo' to a consumer homepage — and kept the student paths too",
+  "seo_title": "Preply Homepage Teardown: 2021 to 2026",
+  "description": "How Preply shifted from 'speak confidently' to 'learn faster' — and added a B2B demo CTA alongside individual learner paths.",
+  "sections": [
+    {
+      "id": "01-intro",
+      "custom_h2": null,
+      "goal": "State in the first sentence that Preply added a B2B signal to a consumer homepage — the most specific and unexpected finding in the evidence. Then name the headline change and end with the reader's takeaway.",
+      "word_target": 80,
+      "evidence_sources": [
+        "summary-cards",
+        "messaging",
+        "strategic-shift",
+        "seo-intent"
+      ],
+      "marketing_lens": "positioning"
+    },
+    {
+      "id": "03-visual-timeline",
+      "custom_h2": "## Preply homepage visual timeline: Jan 2021 to Aug 2026",
+      "goal": "Show the visual arc: confidence-aspiration in 2021, efficiency-proof in 2026. Use the analysis-blocks annotations to describe what was on the page at each snapshot. End with a founder test.",
+      "word_target": 250,
+      "evidence_sources": [
+        "analysis-blocks",
+        "messaging"
+      ],
+      "marketing_lens": "design|positioning"
+    },
+    {
+      "id": "04-messaging-evolution",
+      "custom_h2": "## How Preply's homepage messaging shifted from confidence to speed",
+      "goal": "Show the headline before/after in bold quotes, explain what the word swap signals about the target buyer. Cover page title change — urgency dropped, platform breadth added. End with a founder test.",
+      "word_target": 280,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|icp"
+    },
+    {
+      "id": "05-cta-navigation-evolution",
+      "custom_h2": "## Preply CTA and navigation changes: from discovery to decision",
+      "goal": "Name the CTAs added and removed in bold quotes. Highlight 'Book a demo' as the B2B signal. Show tutor counts added to category links. Note 8 nav additions with zero removals. End with founder test.",
+      "word_target": 240,
+      "evidence_sources": [
+        "cta-changes",
+        "h2-changes"
+      ],
+      "marketing_lens": "sales-motion|icp"
+    },
+    {
+      "id": "07-business-context",
+      "custom_h2": "## Why Preply's homepage changed: business context",
+      "goal": "Three paragraphs: (1) 2021 consumer awareness-stage positioning; (2) the shift to efficiency + B2B signal; (3) broader EdTech marketplace maturation pattern. Each paragraph ≤60 words.",
+      "word_target": 180,
+      "evidence_sources": [
+        "messaging",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|category"
+    },
+    {
+      "id": "06-lessons-for-saas-teams",
+      "custom_h2": "## Lessons from Preply's homepage evolution for SaaS teams",
+      "goal": "Three patterns: (1) headline aspiration-to-efficiency reframe when buyers stop needing convincing; (2) adding specific counts to existing category links as low-effort proof; (3) dual-audience CTA strategy. Each with a runnable founder test.",
+      "word_target": 280,
+      "evidence_sources": [
+        "lesson-cards",
+        "summary-cards",
+        "strategic-shift"
+      ],
+      "marketing_lens": "positioning|sales-motion|icp"
+    }
+  ],
+  "at_a_glance_cards": [
+    {
+      "label": "Positioning shift",
+      "value": "Aspiration → Efficiency",
+      "note": "H1 changed from 'speak confidently' to 'learn faster'"
+    },
+    {
+      "label": "Audience signal",
+      "value": "Consumer + B2B demo",
+      "note": "'Book a demo' CTA added alongside individual learner paths"
+    },
+    {
+      "label": "Proof signals added",
+      "value": "5 tutor count CTAs",
+      "note": "Category links gained specific teacher counts (5,253; 3,651; 2,902)"
+    },
+    {
+      "label": "Structure change",
+      "value": "6 H2s removed · 4 added",
+      "note": "Lifestyle headings out; outcome and process headings in"
+    }
+  ],
+  "confidence_level": "high",
+  "generatedAt": "2026-08-25T01:50:03.224Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "preply",
+  "generatedAt": "2026-08-25T01:50:03.245Z",
+  "mode": "standard",
+  "sections": [],
+  "averageScore": null,
+  "passCount": 0,
+  "failCount": 0,
+  "skippedCount": 7,
+  "totalRewriteLoops": 0,
+  "weakSections": [],
+  "allRiskFlags": [],
+  "sectionErrors": [],
+  "finalJudgeScore": 91,
+  "finalJudgePass": true,
+  "finalRequiredFixes": [],
+  "seoScore": 87,
+  "seoPass": true,
+  "seoRequiredFixes": [],
+  "articleWordCount": 1646,
+  "repetitionWarnings": [],
+  "editorialWarnings": [
+    "[04-messaging-evolution] Paragraph exceeds 90 words (~93w): \"In January 2021, the headline read **\"Prepare to…\"",
+    "[04-messaging-evolution] Paragraph exceeds 90 words (~95w): \"Together, the headline and title changes point to…\"",
+    "[05-cta-navigation-evolution] Paragraph exceeds 90 words (~137w): \"In January 2021, the primary action buttons were…\""
+  ],
+  "overLengthWarning": null
+}

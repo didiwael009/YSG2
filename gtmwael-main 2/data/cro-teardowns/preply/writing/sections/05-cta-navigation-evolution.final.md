@@ -1,0 +1,13 @@
+## Preply CTA and navigation changes: from discovery to decision
+
+### CTA changes: two different kinds of buyers on the same page
+
+In January 2021, the primary action buttons were **"Start learning"** and **"Find a tutor"** — both addressed someone at the beginning of their journey. By August 2026, both were removed.
+
+In their place: **"Book a demo"**, **"Find your tutor"**, and **"Learn Japanese online"** — alongside language-specific buttons with tutor counts: **"Chinese tutors 5,253 teachers"**, **"Arabic tutors 3,651 teachers"**, **"Japanese tutors 2,902 teachers"**. The counts add scale proof where generic links existed before — relevant to a visitor comparing providers.
+
+**"Book a demo"** is a separate signal. It is a B2B CTA, indicating that corporate buyers or HR teams are now part of the page's intended audience alongside individual students. The evidence does not tell us whether this dual-audience approach works — only that the decision was made.
+
+### Navigation changes: 8 additions, zero removals
+
+Navigation expanded by 8 items with no items removed — which means the page added paths without closing any old ones. This is consistent with a marketplace broadening its audience rather than narrowing it. More entry points, not fewer. Visit your own homepage navigation and count how many items help a visitor who already knows what they want versus items that help someone who is still exploring. If the split is roughly even, your navigation may be attempting to serve two different audience stages without committing clearly to either.

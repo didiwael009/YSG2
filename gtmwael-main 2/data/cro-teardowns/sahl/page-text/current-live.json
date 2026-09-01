@@ -1,0 +1,97 @@
+{
+  "title": "Sahl",
+  "metaDescription": "Sahl Home Page",
+  "h1": [],
+  "h2": [
+    "Everything You Need to Pay… In One App"
+  ],
+  "h3": [
+    "Our Partners",
+    "Charge Anytime/Anywhere",
+    "All Your Payments in One Place",
+    "Track Your Payment Trend",
+    "Convenient Customer Service",
+    "Join over 20 companies revolutionizing their financial processes.",
+    "Frequently Asked Questions"
+  ],
+  "ctas": [
+    "Download App",
+    "Our Services",
+    "Home",
+    "About Us",
+    "Companies",
+    "Services",
+    "Join Us",
+    "Privacy Policy",
+    "Terms&conditions"
+  ],
+  "navLinks": [
+    "About us",
+    "Services",
+    "Companies",
+    "Careers"
+  ],
+  "bodyText": "About usServicesCompaniesCareersEverything You Need to Pay… In One AppRecharge your electricity, gas, and water cards with NFC, pay your bills, and settle your installments, all from your phone, in seconds.Our PartnersCharge Anytime/AnywhereAll Sahl services are accessible 24 hours a day, 7 days a week, for all users across EgyptDownload AppAll Your Payments in One PlaceYou can pay for all your services in one place with any payment method you prefer (Visa, MasterCard, Meeza, Wallets)Our ServicesTrack Your Payment TrendPayment trends can be tracked by accessing and reviewing your old receiptsDownload AppConvenient Customer ServiceOur customer support team strive to give customers a prompt and satisfactory experienceDownload AppJoin over 20 companies revolutionizing their financial processes.Frequently Asked QuestionsHow much does the service cost?I cannot read the card on the phoneI charged, but the charge was not transferred to the cardHomeAbout UsCompaniesServicesJoin UsPrivacy PolicyTerms&conditionsFollow us onCopyrights © 2024. All rights reserved by SahlpaySelect LanguageEnglishArabicEnglish",
+  "elements": [
+    {
+      "text": "About us",
+      "type": "nav_link"
+    },
+    {
+      "text": "Services",
+      "type": "nav_link"
+    },
+    {
+      "text": "Companies",
+      "type": "nav_link"
+    },
+    {
+      "text": "Careers",
+      "type": "nav_link"
+    },
+    {
+      "text": "Download App",
+      "type": "body_cta"
+    },
+    {
+      "text": "Our Services",
+      "type": "body_cta"
+    },
+    {
+      "text": "Download App",
+      "type": "body_cta"
+    },
+    {
+      "text": "Download App",
+      "type": "body_cta"
+    },
+    {
+      "text": "Home",
+      "type": "body_cta"
+    },
+    {
+      "text": "About Us",
+      "type": "body_cta"
+    },
+    {
+      "text": "Companies",
+      "type": "body_cta"
+    },
+    {
+      "text": "Services",
+      "type": "body_cta"
+    },
+    {
+      "text": "Join Us",
+      "type": "body_cta"
+    },
+    {
+      "text": "Privacy Policy",
+      "type": "body_cta"
+    },
+    {
+      "text": "Terms&conditions",
+      "type": "body_cta"
+    }
+  ]
+}

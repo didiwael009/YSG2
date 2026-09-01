@@ -1,0 +1,63 @@
+{
+  "sectionId": "03-visual-timeline",
+  "companyName": "Preply",
+  "companyUrl": "https://preply.com",
+  "articleTitle": "Preply Homepage Teardown: Jan 2021 to Aug 2026",
+  "h1": "How Preply rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Aug 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 4,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "analysis-blocks": [
+    {
+      "id": "analysis-2021-01",
+      "label": "Jan 2021 — original state",
+      "period": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/preply/selected/2021-01.webp",
+      "heading": "The original: product-led messaging",
+      "annotations": [
+        "H1 opens with: \"Prepare to speak confidentlywith the best online tutors\" — a direct product statement.",
+        "Visible section headings include: \"Make the world your comfort zone\", \"Focus on the skills you need\", \"Request a private tutor\".",
+        "Section headings later removed include: \"Make the world your comfort zone\" and \"Focus on the skills you need\"."
+      ]
+    },
+    {
+      "id": "analysis-current",
+      "label": "Aug 2026 — current state",
+      "period": "Aug 2026",
+      "screenshotPath": "/cro-teardowns/preply/selected/current-live.webp",
+      "heading": "Today: updated positioning",
+      "annotations": [
+        "H1 now reads: \"Learn faster with your best language tutor.\" — updated value proposition.",
+        "New section headings include: \"Progress starts with the right tutor\", \"How Preply works:\", \"Lessons you’ll love. Guaranteed.\".",
+        "CTAs no longer present include: \"Start learning\", \"Find a tutor\", \"Russian tutors\"."
+      ]
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Prepare to speak confidentlywith the best online tutors",
+      "after": "Learn faster with your best language tutor.",
+      "note": "The addition of a superlative claim can be read as a bid for category leadership rather than feature parity. This is interpretation based on observed text changes."
+    },
+    {
+      "element": "Page title",
+      "before": "Learn languages with expert online tutors. Book your lesson today!",
+      "after": "Preply: Learn with the best online language tutors on app & web"
+    }
+  ]
+}

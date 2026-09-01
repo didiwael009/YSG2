@@ -1,0 +1,46 @@
+{
+  "sectionId": "06-lessons-for-saas-teams",
+  "companyName": "Preply",
+  "companyUrl": "https://preply.com",
+  "articleTitle": "Preply Homepage Teardown: Jan 2021 to Aug 2026",
+  "h1": "How Preply rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Aug 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 4,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2021 → Aug 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "4 added · 6 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ]
+}

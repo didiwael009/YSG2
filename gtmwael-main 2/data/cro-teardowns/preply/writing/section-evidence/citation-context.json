@@ -1,0 +1,27 @@
+{
+  "recommendedCitations": [
+    {
+      "id": "SRC-001",
+      "title": "Obviously Awesome",
+      "author": "April Dunford",
+      "domain": "Positioning",
+      "citationPattern": "As Dunford describes in Obviously Awesome, [observation about positioning shift]."
+    },
+    {
+      "id": "SRC-004",
+      "title": "The Sales Acceleration Formula",
+      "author": "Mark Roberge",
+      "domain": "Sales + demand gen",
+      "citationPattern": "Roberge's Sales Acceleration Formula identifies [observation about sales motion or funnel change]."
+    },
+    {
+      "id": "SRC-008",
+      "title": "Landing Page Playbook 2026",
+      "author": "Wael Aouididi",
+      "domain": "CRO",
+      "citationPattern": "The Landing Page Playbook benchmark data shows [observation about CTA structure or conversion pattern]."
+    }
+  ],
+  "usageInstruction": "Use 1-2 of these citations naturally — embedded in a sentence, not listed separately. Format: \"As [Author] notes in [Title], ...\" or \"This is consistent with [Author]'s framework in [Title].\" Never invent citations. Only cite sources listed here.",
+  "generatedAt": "2026-08-25T01:48:40.032Z"
+}

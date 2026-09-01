@@ -1,0 +1,26 @@
+[
+  {
+    "number": "01",
+    "title": "Preply swapped 'speak confidently' for 'learn faster' — the same product, a different buyer assumption",
+    "category": "Messaging",
+    "body": "Between 2021 and 2026, the H1 changed from **\"Prepare to speak confidently with the best online tutors\"** to **\"Learn faster with your best language tutor.\"** This suggests the page now addresses visitors who have already decided they want a tutor — not someone imagining what language learning could give them. Aspiration and efficiency speak to different stages of the buyer journey."
+  },
+  {
+    "number": "02",
+    "title": "Preply added '5,253 teachers' to a link that used to say 'Chinese tutors' — same link, one number added",
+    "category": "Trust",
+    "body": "The original language category buttons had no counts: **\"Chinese tutors\"**, **\"Arabic tutors\"**. The updated versions added specific numbers: **\"Chinese tutors 5,253 teachers\"**, **\"Arabic tutors 3,651 teachers\"**. The same links, with proof appended. Adding a real count to an existing feature or category link is one of the lowest-effort trust signals available — it requires no redesign, just a number that is true and specific."
+  },
+  {
+    "number": "03",
+    "title": "'Book a demo' appears on Preply's consumer homepage — a B2B CTA alongside individual-learner paths",
+    "category": "Funnel",
+    "body": "Preply added **\"Book a demo\"** — a corporate sales CTA — to a homepage that still serves individual learners. The original consumer CTAs (**\"Start learning\"**, **\"Find a tutor\"**) were removed, but the new set includes both self-serve (**\"Find your tutor\"**) and enterprise (**\"Book a demo\"**). This is consistent with a dual-audience move. What is observable is the decision to address both audiences from one page."
+  },
+  {
+    "number": "04",
+    "title": "Preply removed 6 section headings including 'Make the world your comfort zone' and added 4 outcome-focused replacements",
+    "category": "Navigation",
+    "body": "Headings removed included **\"Make the world your comfort zone\"** and **\"100% Satisfaction Guarantee\"**. Headings added included **\"Progress starts with the right tutor\"** and **\"Lessons you'll love. Guaranteed.\"** The net change is fewer lifestyle frames, more process and outcome signals. This suggests Preply decided its audience no longer needed the homepage to make the emotional case for language learning — only to explain how Preply delivers it."
+  }
+]

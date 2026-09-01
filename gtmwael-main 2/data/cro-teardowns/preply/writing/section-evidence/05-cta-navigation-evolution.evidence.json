@@ -1,0 +1,66 @@
+{
+  "sectionId": "05-cta-navigation-evolution",
+  "companyName": "Preply",
+  "companyUrl": "https://preply.com",
+  "articleTitle": "Preply Homepage Teardown: Jan 2021 to Aug 2026",
+  "h1": "How Preply rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Aug 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 4,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "cta-changes": {
+    "added": [
+      "Book a demo",
+      "Learn Japanese online",
+      "Join us",
+      "Find your tutor",
+      "Chinese tutors 5,253 teachers",
+      "Arabic tutors 3,651 teachers",
+      "Japanese tutors 2,902 teachers",
+      "Show less Show more",
+      "Polish tutors 362 teachers",
+      "Dutch tutors 234 teachers"
+    ],
+    "removed": [
+      "Start learning",
+      "Find a tutor",
+      "Russian tutors",
+      "Arabic tutors",
+      "Japanese tutors",
+      "Chinese tutors",
+      "Polish tutors",
+      "Dutch tutors",
+      "Urdu tutors",
+      "Greek tutors"
+    ]
+  },
+  "h2-changes": {
+    "added": [
+      "Progress starts with the right tutor",
+      "How Preply works:",
+      "Lessons you’ll love. Guaranteed.",
+      "Become a tutor"
+    ],
+    "removed": [
+      "Make the world your comfort zone",
+      "Focus on the skills you need",
+      "Request a private tutor",
+      "How Preply works",
+      "100% Satisfaction Guarantee",
+      "Tutor with Preply"
+    ]
+  }
+}

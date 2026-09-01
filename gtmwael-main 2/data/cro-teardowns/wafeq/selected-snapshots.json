@@ -1,0 +1,32 @@
+[
+  {
+    "month": "2022-01",
+    "slotStart": "2022-01",
+    "slotEnd": "2022-06",
+    "timestamp": "20220411203344",
+    "originalUrl": "https://www.wafeq.com/en",
+    "screenshotPath": "/cro-teardowns/wafeq/archive-monthly/2022-01.webp",
+    "selectedPath": "/cro-teardowns/wafeq/selected/2022-01.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  },
+  {
+    "month": "current",
+    "slotStart": "current",
+    "slotEnd": "current",
+    "timestamp": null,
+    "originalUrl": "https://www.wafeq.com/en",
+    "screenshotPath": "/cro-teardowns/wafeq/archive-monthly/current-live.webp",
+    "selectedPath": "/cro-teardowns/wafeq/selected/current-live.webp",
+    "selected": true,
+    "duplicate": false,
+    "forceKept": true,
+    "similarityToPrev": null,
+    "comparedTo": null,
+    "mode": "auto"
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "central_thesis": "Preply moved its homepage from aspirational lifestyle positioning — 'Make the world your comfort zone', 'Prepare to speak confidently' — to outcome-first messaging anchored in speed and scale proof, suggesting the company began addressing visitors who are already comparing tutors rather than still imagining the benefit of language learning.",
+  "old_positioning_frame": "Language learning as personal transformation and confidence — identity-driven, aspirational, lifestyle framing.",
+  "new_positioning_frame": "Fast, matched-tutor progress with visible scale proof — efficiency-driven, with enterprise signal ('Book a demo') alongside the individual learner path.",
+  "buyer_shift": "Self-motivated learners seeking confidence and life transformation → outcome-focused learners comparing providers on speed and tutor fit; plus a visible B2B/team-learning audience ('Book a demo').",
+  "funnel_shift": "Awareness-stage visitors who need to be convinced language learning will help them → solution-aware visitors who know they want a tutor and are evaluating which platform delivers it fastest.",
+  "main_evidence": [
+    {
+      "element": "H1",
+      "old": "Prepare to speak confidently with the best online tutors",
+      "new": "Learn faster with your best language tutor.",
+      "meaning": "The shift from 'speak confidently' to 'Learn faster' suggests a move toward solution-aware buyers who are past the aspiration stage. 'Your best tutor' (possessive, singular) is consistent with addressing a visitor who already knows they want a tutor, not someone still exploring the category."
+    },
+    {
+      "element": "Section headings removed",
+      "old": "Make the world your comfort zone | Focus on the skills you need | Request a private tutor",
+      "new": "(removed from page)",
+      "meaning": "Removing 'Make the world your comfort zone' is consistent with dropping identity and lifestyle framing in favor of functional value. 'Request a private tutor' (request = supply-constrained, high-friction) suggests a move toward self-serve browsing rather than mediated matching."
+    },
+    {
+      "element": "CTA added",
+      "old": "(not present)",
+      "new": "Book a demo",
+      "meaning": "A 'Book a demo' CTA on a consumer tutoring homepage is the strongest enterprise-motion signal in the evidence. It suggests Preply is serving or testing team and corporate language learning alongside the individual learner segment — a meaningful expansion of audience scope."
+    },
+    {
+      "element": "CTA — tutor counts",
+      "old": "Chinese tutors | Arabic tutors | Japanese tutors | Polish tutors | Dutch tutors",
+      "new": "Chinese tutors 5,253 teachers | Arabic tutors 3,651 teachers | Japanese tutors 2,902 teachers | Polish tutors 362 teachers | Dutch tutors 234 teachers",
+      "meaning": "Adding explicit tutor counts to language category links is consistent with shifting from awareness-stage messaging to solution-aware proof. A visitor who is comparing providers benefits from seeing scale; a visitor who is still learning the category is unlikely to need it."
+    }
+  ],
+  "copy_this_if": "Your brand name already appears in searches without requiring a category explanation — visitors arrive knowing what you do, and need you to show them why you are the right provider, not what the category is.",
+  "do_not_copy_this_if": "Your audience is still learning that their problem has a solution. Efficiency copy ('learn faster', 'ship faster') does not land with someone who has not yet decided to solve the problem at all.",
+  "safer_version_for_early_stage_saas": "",
+  "risk_if_copied": "",
+  "confidence_level": "high",
+  "generatedAt": "2026-08-25T01:48:40.031Z",
+  "model": "claude-sonnet-4-6",
+  "costUsd": 0
+}

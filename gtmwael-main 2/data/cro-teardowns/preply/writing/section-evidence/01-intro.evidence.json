@@ -1,0 +1,59 @@
+{
+  "sectionId": "01-intro",
+  "companyName": "Preply",
+  "companyUrl": "https://preply.com",
+  "articleTitle": "Preply Homepage Teardown: Jan 2021 to Aug 2026",
+  "h1": "How Preply rewrote its homepage over 6 years",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Aug 2026",
+  "snapshotCount": 2,
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 4,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "summary-cards": [
+    {
+      "label": "Period covered",
+      "value": "Jan 2021 → Aug 2026",
+      "note": "2 visual snapshots compared"
+    },
+    {
+      "label": "Primary headline",
+      "value": "Fully rewritten",
+      "note": "Audience signal changed"
+    },
+    {
+      "label": "Section headings",
+      "value": "4 added · 6 removed",
+      "note": "Significant structure changes"
+    },
+    {
+      "label": "Navigation",
+      "value": "8 added · 0 removed",
+      "note": "Navigation overhauled"
+    }
+  ],
+  "messaging": [
+    {
+      "element": "Primary headline (H1)",
+      "before": "Prepare to speak confidentlywith the best online tutors",
+      "after": "Learn faster with your best language tutor.",
+      "note": "The addition of a superlative claim can be read as a bid for category leadership rather than feature parity. This is interpretation based on observed text changes."
+    },
+    {
+      "element": "Page title",
+      "before": "Learn languages with expert online tutors. Book your lesson today!",
+      "after": "Preply: Learn with the best online language tutors on app & web"
+    }
+  ]
+}

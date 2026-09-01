@@ -1,0 +1,10 @@
+{
+  "name": "Sahl",
+  "slug": "sahl",
+  "url": "https://sahlpay.app",
+  "from": "2020-01",
+  "to": "2026-08",
+  "stepMonths": 6,
+  "createdAt": "2026-08-25T14:12:00.265Z",
+  "phase": 1
+}

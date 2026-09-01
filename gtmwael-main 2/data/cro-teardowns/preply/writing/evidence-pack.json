@@ -1,0 +1,97 @@
+{
+  "slug": "preply",
+  "companyName": "Preply",
+  "companyUrl": "https://preply.com",
+  "fromMonth": "2021-01",
+  "toMonth": "current",
+  "fromLabel": "Jan 2021",
+  "toLabel": "Aug 2026",
+  "generatedAt": "2026-08-25T01:31:39.793Z",
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "snapshots": [
+    {
+      "month": "2021-01",
+      "label": "Jan 2021",
+      "screenshotPath": "/cro-teardowns/preply/selected/2021-01.webp",
+      "timestamp": "20210410135815",
+      "originalUrl": "https://preply.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    },
+    {
+      "month": "current",
+      "label": "Today",
+      "screenshotPath": "/cro-teardowns/preply/selected/current-live.webp",
+      "timestamp": null,
+      "originalUrl": "https://preply.com",
+      "similarityToPrev": null,
+      "comparedTo": null
+    }
+  ],
+  "diffSummary": {
+    "headlineChanges": 1,
+    "metaDescChanges": 0,
+    "titleChanges": 1,
+    "h2Added": [
+      "Progress starts with the right tutor",
+      "How Preply works:",
+      "Lessons you’ll love. Guaranteed.",
+      "Become a tutor"
+    ],
+    "h2Removed": [
+      "Make the world your comfort zone",
+      "Focus on the skills you need",
+      "Request a private tutor",
+      "How Preply works",
+      "100% Satisfaction Guarantee",
+      "Tutor with Preply"
+    ],
+    "ctaAdded": [
+      "Book a demo",
+      "Learn Japanese online",
+      "Join us",
+      "Find your tutor",
+      "Chinese tutors 5,253 teachers",
+      "Arabic tutors 3,651 teachers",
+      "Japanese tutors 2,902 teachers",
+      "Show less Show more",
+      "Polish tutors 362 teachers",
+      "Dutch tutors 234 teachers"
+    ],
+    "ctaRemoved": [
+      "Start learning",
+      "Find a tutor",
+      "Russian tutors",
+      "Arabic tutors",
+      "Japanese tutors",
+      "Chinese tutors",
+      "Polish tutors",
+      "Dutch tutors",
+      "Urdu tutors",
+      "Greek tutors"
+    ],
+    "navAdded": [
+      "Find tutors",
+      "For business",
+      "Become a tutor",
+      "Proven Progress",
+      "Bahasa Indonesia",
+      "Deutsch",
+      "Español",
+      "Français"
+    ],
+    "navRemoved": [],
+    "headlines": [
+      {
+        "from": "Prepare to speak confidently with the best online tutors",
+        "to": "Learn faster with your best language tutor.",
+        "fromMonth": "2021-01",
+        "toMonth": "current"
+      }
+    ],
+    "metaDescs": [],
+    "visualOnly": false
+  }
+}

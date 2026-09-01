@@ -1,0 +1,30 @@
+{
+  "title": "Internet Archive: Temporarily Offline",
+  "metaDescription": "",
+  "h1": [
+    "Temporarily Offline"
+  ],
+  "h2": [],
+  "h3": [],
+  "ctas": [
+    "Twitter/X",
+    "Bluesky",
+    "Mastodon"
+  ],
+  "navLinks": [],
+  "bodyText": "Temporarily Offline Internet Archive services are temporarily offline. Please check our official accounts, including Twitter/X, Bluesky or Mastodon for the latest information. We apologize for the inconvenience.",
+  "elements": [
+    {
+      "text": "Twitter/X",
+      "type": "body_cta"
+    },
+    {
+      "text": "Bluesky",
+      "type": "body_cta"
+    },
+    {
+      "text": "Mastodon",
+      "type": "body_cta"
+    }
+  ]
+}

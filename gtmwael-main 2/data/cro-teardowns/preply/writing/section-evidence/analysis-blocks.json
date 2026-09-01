@@ -1,0 +1,26 @@
+[
+  {
+    "id": "analysis-2021-01",
+    "label": "Jan 2021 — original state",
+    "period": "Jan 2021",
+    "screenshotPath": "/cro-teardowns/preply/selected/2021-01.webp",
+    "heading": "The original: product-led messaging",
+    "annotations": [
+      "H1 opens with: \"Prepare to speak confidently with the best online tutors\" — a direct product statement.",
+      "Visible section headings include: \"Make the world your comfort zone\", \"Focus on the skills you need\", \"Request a private tutor\".",
+      "Section headings later removed include: \"Make the world your comfort zone\" and \"Focus on the skills you need\"."
+    ]
+  },
+  {
+    "id": "analysis-current",
+    "label": "Aug 2026 — current state",
+    "period": "Aug 2026",
+    "screenshotPath": "/cro-teardowns/preply/selected/current-live.webp",
+    "heading": "Today: updated positioning",
+    "annotations": [
+      "H1 now reads: \"Learn faster with your best language tutor.\" — updated value proposition.",
+      "New section headings include: \"Progress starts with the right tutor\", \"How Preply works:\", \"Lessons you’ll love. Guaranteed.\".",
+      "CTAs no longer present include: \"Start learning\", \"Find a tutor\", \"Russian tutors\"."
+    ]
+  }
+]

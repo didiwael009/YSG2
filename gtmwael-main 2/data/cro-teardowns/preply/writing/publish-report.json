@@ -1,0 +1,25 @@
+{
+  "publishedAt": "2026-08-25T01:50:20.383Z",
+  "slug": "preply",
+  "dryRun": false,
+  "forced": false,
+  "qualityGates": {
+    "finalJudgePass": true,
+    "finalJudgeScore": 91,
+    "seoPass": true,
+    "seoScore": 87,
+    "unsupportedClaims": []
+  },
+  "consistencyCheck": {
+    "valid": true,
+    "errors": [],
+    "warnings": []
+  },
+  "blockedReasons": [],
+  "articlePath": "src/content/cro-teardown/articles/preply.ts",
+  "indexUpdated": false,
+  "internalLinkSuggestionsAdded": [],
+  "fieldsOverridden": [
+    "metaTitle"
+  ]
+}

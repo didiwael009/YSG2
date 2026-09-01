@@ -1,0 +1,30 @@
+{
+  "dataQuality": {
+    "headlineChanged": true,
+    "metaChanged": false,
+    "titleChanged": true,
+    "snapshotCount": 2,
+    "h2Added": 4,
+    "h2Removed": 6,
+    "ctaAdded": 10,
+    "ctaRemoved": 10,
+    "navAdded": 8,
+    "navRemoved": 0,
+    "visualOnly": false,
+    "hasMidTransition": false
+  },
+  "warnings": [
+    "Only 2 snapshots available — no mid-transition analysis block will be generated."
+  ],
+  "generatedAt": "2026-08-25T01:31:39.819Z",
+  "postSummary": {
+    "title": "Preply Homepage Teardown: Jan 2021 to Aug 2026",
+    "h1": "How Preply rewrote its homepage over 6 years",
+    "readTime": "7 min read",
+    "summaryCardCount": 4,
+    "messagingChangeCount": 2,
+    "analysisBlockCount": 2,
+    "lessonCardCount": 3,
+    "snapshotCount": 2
+  }
+}

@@ -1,0 +1,3 @@
+# How Preply rewrote its homepage over 6 years
+
+Between January 2021 and August 2026, Preply replaced aspirational lifestyle messaging with an efficiency promise — and added a B2B signal that suggests the audience expanded. The headline once read **"Prepare to speak confidently with the best online tutors."** Today it reads **"Learn faster with your best language tutor."** After this teardown, you will know how to tell whether your own homepage is still speaking to visitors who need convincing, or buyers who are already comparing.
