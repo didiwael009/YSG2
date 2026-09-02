@@ -1,441 +1,213 @@
-# HANDOFF.md — Full Project Context
+# Handoff — moving to the new Mac
 
-> **Rule for every AI session:** Read this file before starting any task.
-> If you find a gap in the chronology or a decision that is not documented here, add it before closing the session.
+Written 28 Aug 2026. Repo clean at `aeffb3b`, local and remote in sync.
 
----
-
-## Owner
-
-**Wael Aouididi**
-Email: wael.aouididi@gmail.com
-Role: SaaS GTM consultant / growth marketer
-Site: gtmwael.com (deployed on Vercel)
-GitHub user: didiwael009
+Everything committed is on GitHub and needs no transfer. This covers the six
+things that live outside git, the order to restore them in, and where the work
+stands when you pick it up.
 
 ---
 
-## What this project is
+## Status
 
-A personal SaaS GTM / growth portfolio website.
-Serves as: positioning page, lead generation, content hub, and proof of expertise.
-
-Stack: Vite + React + TypeScript + Tailwind + shadcn/ui + Supabase + Vercel. Package manager: **npm only**.
-
-The real app lives inside `gtmwael-main 2/`. The outer repo root has a Vercel config pointing into it. Do not rename this folder.
-
----
-
-## Books and owned assets on the site
-
-- `public/wael-landing-page-playbook-2026.pdf` — Wael's real published playbook. Valid citation target in articles.
-- `public/wael-growth-playbook-2026.pdf` — second published playbook. Valid citation target.
-
-These are legitimate references. Do **not** flag them as hallucinations.
+| | |
+|---|---|
+| Uncommitted changes | 0 |
+| Migration bundle | `~/Desktop/ysg-mac-migration.zip`, 77 MB |
+| Homepage study | live at `/blog/saas-homepage-study` |
+| Companies with bad capture data | 8 |
+| Published teardowns | 25 |
+| Blog articles | 6 |
+| Companies with collected data | 62 |
 
 ---
 
-## Chronology
+## What git does not protect
 
-### 2026-04-26 — Site launch
-- Initial Vercel deployment. Case studies site, prelaunch SEO infrastructure, Supabase env guard.
+`git clone git@github.com:didiwael009/YSG2.git` restores all code, content, and
+the teardown dataset. The bundle only fills these gaps.
 
-### 2026-04-27 to 2026-05-06 — SEO batch + blog foundation
-- Image optimization, LCP, favicon, global footer use-cases, mobile hero.
-- First blog articles added: SaaS landing page article, cold email, LinkedIn outreach.
-- Blog system wired up with structured data and SEO guardrails.
+| Outside git | Size | If lost |
+|---|---|---|
+| `.env` | 1 KB | The Google OAuth flow has to be redone by hand. The other keys are re-issuable from their consoles. |
+| `~/.ssh/id_ed25519` | — | No pushes to GitHub until a new key is registered. |
+| `~/.claude/skills/` | 584 KB | 13 skills gone: seo-expert, cro-expert, growth-marketing, ppc-expert, ai-marketing, icp-discovery-engine, graphify and others. |
+| `~/.claude/*/memory/` | 380 KB | Writing rules, conventions, and project decisions across 12 projects. |
+| `manual/` | 5.7 MB | CRO_MANUAL agent responses. Reproducible only by re-running the slow manual loop. |
+| `public/cro-teardowns/*/archive-monthly/` | 77 MB | Raw Wayback screenshots. **Treat as permanent** — see the capture warning below. |
 
-### 2026-05-07 to 2026-05-08
-- Blog SEO publishing guardrails documented.
-- Removed unsourced Meta Ads social KPIs from articles.
-- Landing Page Optimization Best Practices 2026 article added.
+### The bundle holds secrets in plain text
 
-### 2026-05-16
-- SEO optimization system built. Blog split.
+`secrets/env.backup` carries the Anthropic API key, the Google refresh token,
+and the Supabase keys. `secrets/id_ed25519` is a private SSH key. Keep the
+bundle off unencrypted cloud storage and delete it once the new machine works.
 
-### 2026-05-21 to 2026-05-22
-- Codex marketing skills: SEO and service page internal links.
-- Google Search Console feedback applied.
-
-### 2026-06-06 to 2026-06-07
-- Portfolio service pages restored in navigation.
-- Mobile navigation drawer added.
-- Performance, a11y, SEO, and dependency cleanup.
-
-### 2026-06-08 — CRO teardown engine V1 + SSR
-- First two CRO teardown articles: Hootsuite and Stripe.
-- SSR prerendering added for teardown pages.
-- Phase 4M writing depth system built.
-- Third blog post + new content optimization system.
-
-### 2026-06-09 — CRO teardown engine scaling
-- 4-layer pipeline added: normalization, consistency validator, strategic shift detector, SEO intent planner.
-- New teardowns: Clay, Linear, Crisp, Vercel, Shopify, Apollo, Expensya + 2 more.
-- Final judge (final-judge.ts) written — **NOTE: still V3, 4 dimensions hardcoded to 0, caps scores at ~81**.
-- Ubersuggest SEO integration.
-
-### 2026-06-10 to 2026-06-11
-- Linear and Clay teardowns refined.
-- Fable model runs (fable1, fable2, fable3) for article quality experiments.
-- Expensya and Apollo teardowns finalized.
-- 2 additional blog posts published.
-
-### 2026-06-12 — V6 pipeline + 3 new teardowns + pipeline optimization
-
-**V6 convergence (commit 461c76c, 4dfdfc2):**
-- Visual analyzer added (Claude vision on .webp screenshots → `visual-analysis.json`)
-- Context researcher added (web search on brand → `business-context-research.json`)
-- Custom outline generator added (Layer 3.5 → `article-outline.json` with unique angle + custom H2s)
-- Marketing summary cards added (4 marketing-signal cards replacing technical "At a glance")
-- All 14 existing articles regenerated through V6 pipeline
-- UI redesign applied across all teardown pages
-
-**Pipeline speed optimization (commit 672f774) — 7 tasks:**
-- Task A: Wayback CDX bulk query (one request instead of 31 sequential) → `wayback.ts` rewritten
-- Task B: Phase 1 concurrency 3→2, `duplicate_content` status added
-- Task C: publishedAt never-overwrite + backfill script (16 articles spread Feb–Jun 2026, FNV-1a hash)
-- Task D: Unique H1 + seo_title per article from outline (not template defaults)
-- Task E: Business context H2 reads outline's `custom_h2`, not hardcoded "Why the homepage changed"
-- Task F: Sentence-length critic rule (-3 if >12% sentences >30 words) + writer 35-word hard cap
-- Task G: 3-variant CTA rotation by slug hash (`getCtaForSlug`, `getRelatedPostsForSlug`)
-
-### 2026-06-13 (latest) — Audit fixes executed
-
-- **P0 fixed**: clean `npm run build` regenerated sitemap (17 teardowns, Unbounce now included) + prerendered Unbounce SSR route; phantom happi/loom dist routes removed (dist is gitignored, deploy regenerates). Commit on `main`.
-- **HANDOFF reconciled**: article count 13→17, false SECTION_ORDER claim struck through with correction, judge-V5 + owned-source issues marked resolved in known-issues table.
-- **Hygiene**: discarded abandoned happi.com half-run (27 untracked files, user decision); deleted dead code `draft.ts` + `compose-section.ts` (orphaned, recoverable via git); removed superseded `PLAN-pipeline-optimization.md` (replaced by `AUDIT-2026-06-13.md`).
-- **Deferred**: `02-quick-answer` left as documented stub (user decision — not implemented, see known-issues).
-- **D2 DONE**: backfilled businessContext into all 9 V1 articles (apollo, clay, crisp, intercom, lemlist, linear, shopify, stripe, vercel) — all 17 teardowns now render a business-context block. Added standalone CLI `cro-teardown:business-context` (generate-business-context.ts was the only Layer generator missing one). Per-article blast radius was +businessContext only; judge 92-94. Verified rendering in SSR HTML.
-- **B2 SKIPPED (justified)**: renumbering SECTION_ORDER IDs would touch 410 data files + 10 source files for cosmetic gain, zero user benefit. Not worth it. Audit backlog now clear.
-
-### 2026-06-13 (latest+1) — 02-quick-answer fully implemented
-
-- **Restored the section**: `SECTION_META['02-quick-answer']` (≤75-word featured-snippet spec), `SECTION_HEADINGS` entry, re-added to `SECTION_ORDER` pos 2. Future articles auto-generate it. Tuned after a gong proof run (maxRewriteLoops 1→2, enforce ONE change, no inline heading) → all backfills passed critic 87–88 first try.
-- **Backfilled all 17**: the 6 missing (gong, agorapulse, apify, buffer, expensya, webflow) + unbounce via `compose --only-section 02-quick-answer` + publish.
-- **Discovered + fixed a D2 side-effect**: `TeardownLayout` only renders the legacy `ArticleBody` (which held the quick-answer markdown) when `!businessContext`. Since D2 gave all 17 a businessContext, the quick-answer rendered ONLY in JSON-LD FAQ, never visibly. (No content lost — structured components render everything; ArticleBody was the legacy fallback.)
-- **Added visible rendering**: new `quickAnswer?: string` field + `QuickAnswerBlock.tsx` + `publish-article.ts` loader (reads `sections/02-quick-answer.final.md`). Renders a "Quick answer" callout at the top of every teardown. Republished all 17. Verified: snippet now appears 2× in SSR HTML (visible block + JSON-LD FAQ). New CLI: `cro-teardown:business-context` also added earlier.
-- **Known minor gap**: quick-answer not in `post.toc` sidebar (block is at the very top, so no link needed).
-- **Deploy pending**: all commits are local only (not pushed to Vercel). Live site does not yet reflect: Unbounce in sitemap, businessContext on V1 articles, or QuickAnswerBlock on all 17 teardowns.
-
-### 2026-06-13 (later) — Full system audit + owned-source fix
-
-- **Owned playbook sources fix** (commit 6a67504): `final-judge.ts` + `section-writer.ts` now treat Landing Page Playbook 2026 / Growth Playbook 2026 as valid first-party evidence. Judge no longer flags citations to them as hallucinations; writer must attribute any number from them in-sentence. (Unbounce's "20% / Wael Aouididi" flags were the book being cited correctly but judged as invented.)
-- **Full read-only system audit** → see `AUDIT-2026-06-13.md`. Headline findings: P0 — Unbounce missing from sitemap + stale dist (built before Unbounce, has phantom happi/loom routes); P1 — HANDOFF's SECTION_ORDER "reduced to 2 sections" claim is false (code has 6), `02-quick-answer` is spec'd but dead (not in SECTION_ORDER). Positives: judge confirmed V5, article bodies clean, SSR structure healthy. Backlog ranked in the audit file; nothing fixed yet (report-only).
-
-### 2026-06-27 — No-API workflow optimized (driver + accurate labels + schema hints)
-
-The first manual article was slow because ~85% of the effort was harness friction, not writing:
-timestamp-hash loop (now fixed), schema discovery, wrong placeholder responses (generic critic
-JSON gave seo-audit 0/100), role mislabeling (seo-auditor labeled "critic"), and ~18 manual
-compose re-runs. Fixes:
-
-- **`manual-provider.ts` — accurate labels + schema hints.** `roleLabel(system, userMsg)` now
-  distinguishes `seo-audit`, `judge`, `cross-section`, `outline`, `business-context`, etc.
-  Filenames include the section id (`writer.04-messaging-evolution.<id>.response.md`). Each prompt
-  file now opens with a **RESPONSE FORMAT** header (JSON vs prose + the extracted expected schema),
-  so the operator never opens a file to learn what it wants.
-- **`scripts/cro-teardown/manual-driver.mjs` (+ `npm run cro-teardown:manual`).** Runs the compose
-  loop, auto-fills the only purely-mechanical step (cross-section passthrough), and prints a grouped
-  checklist of remaining prompts (role · section · JSON|prose · path). `--loop` keeps going;
-  `--auto-evals` ALSO auto-passes critic/judge/seo-audit (use only when you trust your drafts — it
-  bypasses the real evaluation, so default keeps the multi-agent separation).
-  Verified: `node scripts/cro-teardown/manual-driver.mjs crowdanalyzer --auto-evals --loop` → judge
-  91, seo 87 → publish (no force) ✓.
-- **Process tip:** if a gate looks stale (e.g. seo-audit stuck at an old score), delete its
-  `writing/<gate>.json` and re-run the driver — compose regenerates it from the response file.
-
-### 2026-06-27 — No-API mode hardened (timestamp-stable hash) + first manual article (CrowdAnalyzer)
-
-**Root-cause fix in `manual-provider.ts`:** the manual-mode call hash included volatile
-`generatedAt` ISO timestamps that the judge + seo-audit prompts embed fresh on every run, so
-those calls got a NEW hash each run and could never be fulfilled (infinite loop / required
-`--force`). Added `normalizeForHash()` — strips ISO date-times and `"generatedAt":"…"` before
-hashing (bare `YYYY-MM` snapshot months are preserved). Now judge/seo-audit resolve once and stay
-resolved. **Do not `--force` to dodge a churning manual call — that means a volatile token leaked
-into the hash; add it to `normalizeForHash` instead.**
-
-**First full article produced with ZERO API: `crowdanalyzer`** (CrowdAnalyzer, 2016→2026).
-- Flow: capture (Playwright) → select `--manual 2016-07,current` → generate-data → `CRO_MANUAL=crowdanalyzer compose --skip-visual --skip-research` → publish (NO --force).
-- I (Claude Code) fulfilled every agent: strategic-shift, outline, 7 section writers, critics,
-  lesson-cards, business-context, seo-intent, **final-judge (91/100)**, **seo-audit (87/100)**.
-- Published cleanly: `Final judge 91/100 ✓  SEO 87/100 ✓` — no force. Renders at `/cro-teardowns/crowdanalyzer`.
-- Story (same pattern as Lucidya, framework-grounded): H1 went from "The 1st Arabic Focused…
-  Social Media Monitoring Platform" → generic "Empowering Growth Through Data-Driven Insights";
-  the Arabic wedge slipped to a lower line; nav expanded into a 4-module suite.
-- `--skip-visual --skip-research` are REQUIRED in manual mode (those two use the SDK directly /
-  vision + web_search, not fulfillable via file prompts). `@anthropic-ai/sdk` was installed this
-  session so modules load; manual mode still makes zero API calls.
-- Helper files used during the manual fill live in `manual/crowdanalyzer/_canonical/` + `_fill.py`
-  (gitignored). For future articles the operator fills the prompt files (or reuses that pattern).
-
-### 2026-06-26 — Skills-grounded analysis (V2) + CRO_PRINCIPLES injection + Lucidya capture
-
-**Context / decision:** Owner decided the teardown system should produce "V2" output going
-forward — analysis grounded in named CRO frameworks (the `cro-expert` CXL skill), not the
-model's generic CRO intuition. The interactive skill is NOT reachable by the headless
-pipeline (`tsx` scripts calling the Anthropic API directly cannot invoke Claude Code skills),
-so the frameworks had to be embedded as a file the scripts can import.
-
-**New: `scripts/cro-teardown/cro-principles.ts`** — exports `CRO_PRINCIPLES`, a compact
-distillation of CXL frameworks (Awareness ladder/Schwartz, 7 Levels of Conversion,
-category ladder feature→benefit→category, VoC, specificity, one-primary-action). This is
-the "bridge" that lets the headless pipeline reason with named frameworks.
-
-**Injected into two generators** (system prompts now end with `${CRO_PRINCIPLES}`):
-- `strategic-shift-detector.ts` — thesis now anchors to a named framework + states the trade-off.
-- `generate-lesson-cards.ts` — added a self-check requiring ≥1 card to name the mechanism via a
-  framework AND state what the move cost (V1 narrates the diff; V2 names the trade-off + fix).
-- No schema changes; output shape identical. Both typecheck clean (`tsconfig.node.json`).
-
-**Lucidya captured (Phase 1) as the V1-vs-V2 proof case:**
-- `npm run cro-teardown -- --name Lucidya --url https://www.lucidya.com --from 2019-01 --to 2026-06 --step-months 6`
-- 10/15 snapshots captured; **only 2019-07 and 2020-07 are usable** — every snapshot 2022+ is an
-  archived `503 Service Unavailable` (Lucidya blocks the crawler later, like Loom). Current-live
-  capture timed out (60s) → owner supplied a manual full-page screenshot; converted via `sharp`
-  (2880×15094 PNG → 1440×7547 webp, 407KB) to `public/cro-teardowns/lucidya/selected/current-live.webp`.
-- Real evolution: 2019 "Arabic-Focused Social Media Listening Tool" → 2020 "Grow Your Brand &
-  — with Social Insights" → 2026 "unified, AI-native CX intelligence platform." The moat
-  (30 Arabic dialects @ 90% sentiment accuracy) fell from the H1 to ~7th section.
-- **HALLUCINATION CAUGHT:** the fast WebFetch summary claimed "15 dialects / 92%" — the real page
-  (owner screenshot) says **30 dialects / 90%**. V2 uses the verified numbers. Lesson: trust the
-  captured screenshot/page-text, not the WebFetch summarizer, for specific figures.
-
-**`articles/lucidya-v2.ts`** — kept as the canonical **reference example** of V2 (skills) output.
-Registered in `content/cro-teardown/index.ts`, slug `lucidya-v2`, renders via real `TeardownLayout`.
-NOT in sitemap, NOT production-published. `lucidya-v1.ts` (plain pipeline demo) was created then
-**deleted** after the comparison — V2 is the keeper.
-
-**Dependency fix:** this checkout's `package.json` was missing `tsx` and `playwright` (imported by
-`utils/browser.ts`) — the pipeline's capture step could not run here until `npm install -D tsx
-playwright` was run. Browsers were already cached in `~/Library/Caches/ms-playwright`. Declared now.
-
-**NO-API MULTI-AGENT MODE (owner decision — stop spending on the paid API):**
-Going forward the pipeline runs with **zero Anthropic API calls**. The multi-agent structure
-(writer / critic / judge / strategic-shift / lesson-cards) is preserved, but each agent call is
-fulfilled by **Claude Code** (the human-launched session or its Writer/Critic/Judge sub-agents),
-not by `callLLM` hitting the API.
-
-- **New `scripts/cro-teardown/llm/manual-provider.ts`** — file-based request/response, resumable.
-- **`llm/anthropic-client.ts` changes:** (a) `callLLM` routes to `resolveManual()` when `CRO_MANUAL`
-  is set, BEFORE touching the SDK; (b) the \`Anthropic\` import is now \`import type\` + a **lazy
-  \`await import('@anthropic-ai/sdk')\`** inside \`getClient()\`, so the pipeline loads and runs in
-  manual mode even though **\`@anthropic-ai/sdk\` is NOT installed in this checkout** (same
-  incomplete-install as tsx/playwright). The SDK is only needed if someone actually wants API mode.
-- **How to run a teardown with no API:**
-  \`\`\`
-  CRO_MANUAL=<slug> npm run cro-teardown:compose -- --slug <slug>
-  \`\`\`
-  Each unanswered agent call writes \`manual/<slug>/<role>.<id>.prompt.md\` and stops. Claude Code
-  reads it, writes \`<role>.<id>.response.md\` (JSON for strategic-shift/lesson-cards/critic/judge;
-  prose for writer), and re-runs the SAME command — it resumes to the next call. Deterministic
-  steps (capture/normalize/evidence/assemble/publish) never used the LLM and run free as always.
-- \`manual/\` is gitignored. Round-trip verified (prompt written → response filled → resolves at
-  0 tokens / 0 cost). Typecheck clean.
-
-**Pending / not done:** (1) lucidya-v2 not promoted to a production `lucidya` slug or sitemap;
-(2) the CRO_PRINCIPLES injection + manual mode have NOT yet been run on a FULL compose (would need
-to walk ~dozens of agent files for one article — do it on the next real teardown);
-(3) consider injecting `CRO_PRINCIPLES` into `section-writer.ts` critic too;
-(4) `@anthropic-ai/sdk`, `tsx`, `playwright` are absent from this checkout's node_modules — `tsx`
-+ `playwright` were installed this session; the SDK is intentionally left out (manual mode needs it
-not). If API mode is ever wanted again, `npm i @anthropic-ai/sdk`. Nothing pushed.
-
-### 2026-06-13 — Template restructure V6 completion + 3 new teardowns + h1 normalization fix
-
-**V6 template restructure — all 11 changes implemented:**
-- Added `businessContext?: string` field to CroTeardownPost type
-- ~~SECTION_ORDER reduced to `['01-intro', '07-business-context']`; prose sections 02-06 deleted~~ **[CORRECTED 2026-06-13 audit: this was never applied or was reverted. Live `SECTION_ORDER` in `section-writer.ts:75` still has all 6 sections: `01-intro, 03-visual-timeline, 04-messaging-evolution, 05-cta-navigation-evolution, 07-business-context, 06-lessons-for-saas-teams`. Do not trust the original claim.]**
-- Created `generate-business-context.ts` — LLM generator for 3-paragraph business context (≤60 words each)
-- Updated `compose-all-sections.ts` to call business context generation after strategic shift detector
-- Fixed h2/h3 concatenation in `normalize-page-text.ts` — applied `cleanBodyText()` regex before filtering
-- Added `CtaEvolutionTable` mode prop (`'cta' | 'headings' | 'both'`) for dual-section layout
-- Fixed CtaEvolutionTable empty state with "None in this period" italic placeholder
-- Created `BusinessContextBlock.tsx` — renders 3-paragraph prose in styled box
-- Rewrote `TeardownLayout.tsx` with 8-section order + dark eyebrow for lessons
-- Updated `publish-article.ts` to load businessContext from `07-business-context.final.md`
-- Updated `article-blueprint.ts` featuredImageAlt to include H1 quote
-
-**H1 concatenation fix:**
-- Bug: Gong's current H1 came in as `"Revenue AI Built To Predict churnPredict churn"` (camelCase concat)
-- Root cause: h1 arrays were not running through `cleanBodyText()` (regex split on camelCase)
-- Fix: Added `cleanBodyText` import to `article-blueprint.ts`, applied to 7 h1 extraction sites (lines 211, 278-279, 307, 372-373, 462-463, 532)
-- Prevents future articles from inheriting scraper concatenation bugs
-
-**New teardowns published (3 total):**
-- **Expensya** (article #11): Oct 2020 → Jun 2026. Phase 1 archive-snapshots.json reconstructed from first run log (2020-10, 2021-01, 2021-07, 2021-10, current); Phase 2 selected 2020-10 vs current; 14 H2 added, 7 removed; intro 88/100, published with --force
-- **Gong** (article #12): Jan 2020 → Jun 2026. Phase 1 found 7 snapshots, captured 3 (2020-01, 2021-10, current) due to rate limiting; intro 83/100; published with --force
-- **Webflow** (article #13): Jan 2020 → Jun 2026. Phase 1 found 13 snapshots, captured 2 (2020-01, current) due to rate limiting; intro 88/100, passed critic; published with --force
-
-**Loom attempt:**
-- Tested: loom.com + www.loom.com across all path variants + Wayback availability API
-- Result: Zero archives exist — Loom blocks Wayback Machine crawler (noarchive directives). Cannot produce teardown.
-
-**TypeScript validation:** All changes pass `npx tsc --noEmit` with zero errors.
-
-**V3 writer/critic system integration (same session):**
-- `WRITER_SYSTEM` replaced with CRE Win Report voice: 6 entry types (finding/paradox/practitioner/objection/contrast/mechanism), mechanism naming required, tradeoff + founder test woven as prose content (no "**So what?**" / "The tradeoff:" labels)
-- `CRITIC_SYSTEM` replaced with V3 rubric: evidenceAccuracy(25), riskControl(10), specificity(15), entryPointOriginality(15), mechanismNaming(10), founderSharpness(15), clarity(10)
-- `json-guard.ts` DimensionScores updated for V3 (added entryPointOriginality, mechanismNaming, founderSharpness)
-
-**final-judge.ts V3 rewrite (resolved long-standing calibration gap):**
-- JUDGE_SYSTEM replaced with V3 criteria: 6 dimensions — evidenceAccuracy(20), riskControl(15), mechanismQuality(15), founderSharpness(20), clarity(15), sectionCoherence(15)
-- Root cause of ~81/100 cap: 4 judge dimensions were hardcoded to 0 in old version
-- Critical fix: added "MECHANISM NAMES ARE NOT UNSUPPORTED CLAIMS" block — judge was flagging "qualification filter," "aspiration positioning" etc. as unsupported claims when they are required interpretive labels in V3
-- Pass logic updated: `overallScore >= 85 AND evidenceAccuracy >= 15 AND riskControl >= 11 AND unsupportedClaims empty`
-- `parseJudgeResponse` updated: removed v2 hard gates (analysisDepth, founderUsefulness, concision)
-
-**LessonCards.tsx hardcoded company name leak (root cause fix):**
-- Bug: `LessonCards.tsx` had `"Hootsuite"` hardcoded in disclaimer text — visible on every article
-- Fix: added `companyName` prop; `TeardownLayout.tsx` now passes `post.companyName`
-
-**Shopify article V3 rewrite:**
-- Full rewrite Sonnet-only (`--writer-model claude-sonnet-4-5`), judge 91/100 PASS
-- Manual content fixes applied directly in `*.final.md` (no API reruns) to resolve risk violations: removed invented metrics (60%/40% → "a significant share"), removed intent attribution ("deliberate" friction), removed conversion prediction, hedged ICP narrowing claim
-
-**V5 plain-explainer system — active for all new articles from this point:**
-- Voice change: CRE Win Report → plain explainer for SEO/Google traffic (dual audience: advanced marketers + founders learning the vocabulary)
-- `WRITER_SYSTEM` → V5: 9 rules, forbidden jargon list (procurement-stage, discovery-stage, qualification filter, category ownership, aspiration positioning, identity recruitment, intent signal, working memory, ICP narrowing, buyer-stage mismatch, friction-to-commitment ratio), 60-word paragraph cap, H3 sub-block requirement per analytical section, searchable heading rule
-- **6-section architecture**: `02-quick-answer` added between intro and belief shift — 3-sentence Google featured snippet target (≤75 words)
-- `SECTION_META` canonical entries (01-intro, 03-06) replaced with V5 versions; each analytical section (03/04/05/06) has prescribed H3 sub-blocks (e.g. ### What changed / ### Why it matters / ### What it costs); `writerModel: 'claude-opus-4-5'` removed (Sonnet sufficient for plain explainer)
-- `CRITIC_SYSTEM` → V5: 7 dimensions summing to 100 — evidenceAccuracy(25), plainLanguage(20), scannability(15), searchableHeadings(10), specificity(15), rhythmAndOpening(10), founderTakeaway(5)
-- `json-guard.ts` DimensionScores updated for V5 (removed riskControl/entryPointOriginality/mechanismNaming/founderSharpness/clarity; added plainLanguage/scannability/searchableHeadings/rhythmAndOpening/founderTakeaway)
-- `writing-config.ts` SECTION_EVIDENCE_SOURCES: `02-quick-answer` mapped to `[summary-cards, messaging]`
-
-**generate-lesson-cards.ts — LLM-powered lesson cards module:**
-- New file at `scripts/cro-teardown/generate-lesson-cards.ts`
-- Replaces hardcoded 4-card "Patterns worth borrowing" block (had identical generic titles every article) with per-company LLM call
-- Title validation: each card must name the company, quote the site verbatim, or cite a specific number; 4 banned generic title patterns enforced
-- Body validation: 50–70 words, ≥3 different categories, 10 forbidden jargon terms checked post-generation
-- Output: `section-evidence/lesson-cards.json` — same schema as before; no React template changes needed downstream
-- Wired into `compose-all-sections.ts` after section loop, before cross-section pass; resume-aware (skips if file exists unless `--force`); non-fatal on failure (pipeline continues with existing cards)
+A private key that has travelled between machines is a key worth rotating.
+Generating a fresh one on the new Mac and registering it with GitHub is the
+cleaner move; the copied key is there so you are not locked out while you do it.
 
 ---
 
-## Current state (as of 2026-06-13)
+## Restore, in order
 
-### Published CRO teardowns (17 total — corrected by 2026-06-13 audit; was wrongly listed as 13)
-| Slug | Period | Snapshots | Notes |
-|------|--------|-----------|-------|
-| hootsuite | 2020–2026 | 2 | V1 pipeline |
-| stripe | 2022–2026 | 2 | V1 pipeline |
-| intercom | 2023–2026 | 2 | V1 pipeline |
-| shopify | 2021–2026 | 2 | V1 pipeline |
-| vercel | 2021–2026 | 2 | V1 pipeline |
-| crisp | 2020–2026 | 2 | V1 pipeline |
-| clay | 2022–2026 | 2 | V1 pipeline |
-| linear | 2020–2026 | 2 | V1 pipeline |
-| lemlist | 2019–2026 | 2 | V1 pipeline |
-| apollo | 2019–2026 | 2 | V6, fixed empty "Added" panel |
-| expensya | 2020–2026 | 2 | V6, archive reconstructed from first run |
-| gong | 2020–2026 | 3 | V6, rate-limited capture |
-| webflow | 2020–2026 | 2 | V6, rate-limited capture |
-| apify | 2020–2026 | — | V6, only article with full rich lesson cards |
-| buffer | 2019–2026 | — | V6, added 2026-06-12 |
-| agorapulse | 2019–2026 | — | V6, added 2026-06-12 |
-| unbounce | 2019–2026 | 11 | V6, added 2026-06-12; sitemap + SSR fixed 2026-06-13 |
+Step 1 comes first because the clone in step 2 fails without it.
 
-### Published blog articles (7 total)
-- /saas-marketing-plan
-- /optimize-saas-landing-page
-- /google-ads-vs-meta-ads-saas
-- /saas-cold-email-strategy
-- /b2b-saas-marketing-strategy
-- /landing-page-for-lead-generation
-- /linkedin-outreach-for-saas
-- /blog/saas-landing-page-google-meta-ads
-- /blog/saas-traffic-but-no-signups
-- /blog/ai-conversion-rate-optimization-saas
-- /blog/landing-page-optimization-best-practices-2026
-- /blog/saas-product-video
+### 1. SSH key and permissions
 
----
-
-## Known open issues
-
-| Issue | Status | Workaround |
-|-------|--------|------------|
-| ~~V3 judge calibration gap~~ / ~~Judge-writer voice mismatch~~ | **RESOLVED (confirmed 2026-06-13 audit)** — `final-judge.ts` is fully V5: 7 dimensions (evidenceAccuracy/plainLanguage/scannability/searchableHeadings/specificity/rhythmAndOpening/founderTakeaway), no `mechanismQuality`, pass ≥90. The need for `--force` is now real content quality (<90), not a broken rubric. | N/A |
-| Owned playbook sources flagged as hallucinations | **RESOLVED 2026-06-13** — judge + writer now whitelist Landing Page Playbook 2026 / Growth Playbook 2026 as first-party evidence (commit 6a67504) | N/A |
-| 02-quick-answer stub | **RESOLVED 2026-06-13** — full `SECTION_META` spec (≤75-word featured-snippet), added to `SECTION_ORDER` + `SECTION_HEADINGS`, all 17 backfilled, `QuickAnswerBlock.tsx` renders visibly + JSON-LD FAQ. 2× in SSR HTML confirmed. | N/A |
-| Unbounce not in sitemap; dist stale | **RESOLVED 2026-06-13** — sitemap regenerated (17 teardowns incl. Unbounce), SSR prerendered, phantom happi/loom dist routes removed | N/A |
-| 17 existing articles in V3 voice — no V5 backfill performed; regenerating with `--force` will rewrite in V5 plain-explainer voice | Open by design — V5 only applies to new articles going forward | Run compose `--force` per slug when ready to upgrade an article |
-| H2/H3 concatenation normalization — FIXED 2026-06-13 | Resolved — `cleanBodyText` now applied to h2/h3 in normalize-page-text.ts | N/A |
-| H1 concatenation normalization — FIXED 2026-06-13 | Resolved — `cleanBodyText` now applied to all 7 h1 extraction sites in article-blueprint.ts | N/A |
-| V6 SEO structure weak on H2/H3 hierarchy — only 2 content H2s after intro H1 | Open — by design (React components handle visual/CTA/lesson sections) | SEO audit flags thin structure (68–76/100); consider adding 2–3 more H2 sections in markdown |
-| Happi data directories untracked in git | Unresolved — origin unclear | Commit or delete |
-| Evidence hallucination guard — LLM invents specific metrics | Open | Manual review before publish |
-| Loom unarchivable — blocks Wayback Machine crawler | Confirmed 2026-06-13 — no workaround | Skip Loom teardowns |
-
----
-
-## CRO teardown pipeline — CLI reference
+Git refuses a private key with loose permissions, so the `chmod` is not optional.
 
 ```bash
-# Phase 1: screenshots
-npm run cro-teardown -- --name <Company> --url <url> --from YYYY-MM --to YYYY-MM --step-months 3
-
-# Phase 2: select snapshots
-npm run cro-teardown:select -- --slug <slug> [--threshold 0.99]
-
-# Phase 4A: generate article data
-npm run cro-teardown:generate-data -- --name <Company> --slug <slug>
-
-# Phase 4C: compose + write article
-npm run cro-teardown:compose -- --slug <slug> [--force]
-
-# Phase 4F: publish
-npm run cro-teardown:publish -- --slug <slug> [--force]
-
-# Standalone sub-commands
-npm run cro-teardown:visual-analyze -- --slug <slug>
-npm run cro-teardown:research -- --slug <slug>
-npm run cro-teardown:outline -- --slug <slug>
+mkdir -p ~/.ssh
+cp secrets/id_ed25519 secrets/id_ed25519.pub ~/.ssh/
+chmod 600 ~/.ssh/id_ed25519
+chmod 644 ~/.ssh/id_ed25519.pub
+ssh -T git@github.com          # expect: Hi didiwael009!
 ```
 
-Default threshold 0.96 is often too aggressive — use `--threshold 0.99` for most sites.
+### 2. Clone, then drop in the environment
+
+The repo root sits one level above the app folder, which is why the paths below
+look doubled. That is correct.
+
+```bash
+cd ~/Documents
+git clone git@github.com:didiwael009/YSG2.git
+cp secrets/env.backup "YSG2/gtmwael-main 2/.env"
+```
+
+### 3. Claude configuration and memory
+
+```bash
+cp -R claude/skills ~/.claude/skills
+cp claude/settings.json ~/.claude/settings.json
+cp claude/CLAUDE-global.md ~/.claude/CLAUDE.md
+cp claude/CLAUDE-home.md ~/CLAUDE.md
+
+for d in claude/memory/*; do
+  mkdir -p ~/.claude/projects/$(basename "$d")
+  cp -R "$d" ~/.claude/projects/$(basename "$d")/memory
+done
+```
+
+### 4. Untracked project files
+
+```bash
+cd "YSG2/gtmwael-main 2"
+cp -R ../../project/manual ./manual
+cp ../../project/launch.json .claude/launch.json
+
+for d in ../../project/archive-monthly/*; do
+  cp -R "$d" "public/cro-teardowns/$(basename "$d")/archive-monthly"
+done
+```
+
+### 5. Install and verify
+
+The GSC check is the real test: it proves the refresh token survived the move.
+
+```bash
+npm install
+node scripts/gsc.mjs top-pages 5     # should print live Search Console data
+npm run build                         # ends with "SEO check passed"
+```
 
 ---
 
-## Key files
+## Where the work stands
 
-| File | Purpose |
-|------|---------|
-| `scripts/cro-teardown/wayback.ts` | Bulk CDX snapshot discovery + digest dedup |
-| `scripts/cro-teardown/index.ts` | Phase 1 orchestrator (screenshots) |
-| `scripts/cro-teardown/compose-all-sections.ts` | Phase 4C orchestrator (all layers) |
-| `scripts/cro-teardown/outline-generator.ts` | Layer 3.5 — unique angle + custom H2s |
-| `scripts/cro-teardown/visual-analyzer.ts` | Claude vision analysis of .webp screenshots |
-| `scripts/cro-teardown/context-researcher.ts` | Web research on brand events + category |
-| `scripts/cro-teardown/generate-business-context.ts` | 3-paragraph business context generator (new V6) |
-| `scripts/cro-teardown/section-writer.ts` | Writer + critic loop per section — V5 voice (plain explainer, H3 sub-blocks, 6-section order incl. 02-quick-answer) |
-| `scripts/cro-teardown/generate-lesson-cards.ts` | LLM-powered "Patterns worth borrowing" cards — per-company titles, validated output, writes lesson-cards.json. Injects `CRO_PRINCIPLES` (2026-06-26) so ≥1 card names the framework + trade-off |
-| `scripts/cro-teardown/cro-principles.ts` | **Framework bridge (2026-06-26)** — exports `CRO_PRINCIPLES` (CXL 7 Levels, Awareness ladder, category ladder, VoC). Imported into strategic-shift + lesson-cards system prompts. The headless pipeline's substitute for the unreachable `cro-expert` skill |
-| `scripts/cro-teardown/llm/manual-provider.ts` | **No-API mode (2026-06-26)** — when `CRO_MANUAL=<slug>` is set, agent calls are fulfilled by Claude Code via `manual/<slug>/<role>.<id>.{prompt,response}.md` files instead of the API. Resumable, 0 cost. Preserves writer/critic/judge separation |
-| `scripts/cro-teardown/llm/anthropic-client.ts` | `callLLM` wrapper. Routes to manual-provider when `CRO_MANUAL` set; SDK import is lazy (`import type` + dynamic `import()`) so the pipeline runs without `@anthropic-ai/sdk` installed |
-| `scripts/cro-teardown/final-judge.ts` | Article judge — V3 criteria; mechanismQuality dimension conflicts with V5 voice; needs rewrite |
-| `scripts/cro-teardown/publish-article.ts` | Writes .ts article file + registers it + loads businessContext + quickAnswer |
-| `scripts/cro-teardown/backfill-publish-dates.ts` | One-time backfill of publishedAt dates |
-| `scripts/cro-teardown/config/writing-config.ts` | CTA variants, related post sets, slug hash, SECTION_ORDER |
-| `scripts/cro-teardown/normalize-page-text.ts` | Layer 1 — h1/h2/h3 concatenation normalization via `cleanBodyText()` |
-| `scripts/cro-teardown/article-blueprint.ts` | Phase 4A — builds CroTeardownPost shape + applies h1 normalization |
-| `src/content/cro-teardown/index.ts` | Article registry |
-| `src/content/cro-teardown/types.ts` | CroTeardownPost type definition (includes businessContext + quickAnswer fields) |
-| `src/components/cro-teardown/QuickAnswerBlock.tsx` | Renders ≤75-word featured-snippet TL;DR at top of teardown (orange callout box + JSON-LD source) |
-| `src/components/cro-teardown/BusinessContextBlock.tsx` | Renders 3-paragraph businessContext in styled box (new V6) |
-| `src/components/cro-teardown/TeardownLayout.tsx` | 8-section layout with dark eyebrow lessons section (new V6) |
-| `src/components/cro-teardown/CtaEvolutionTable.tsx` | Dual-mode table: mode='cta' or mode='headings' + empty state |
-| `src/components/cro-teardown/teardownMeta.ts` | Card metadata per slug |
-| `TASKS.md` | Active task list |
-| `SEO_RULES.md` | SEO standards |
+| What | State | Detail |
+|---|---|---|
+| Homepage study | **Live** | 3,215 words, 54 companies, 542 captures |
+| Broken deploy | **Fixed** | An untracked `preply.ts` was breaking every Vercel build; production had been serving a stale bundle |
+| FAQ on Meta Ads page | **Live** | 5 entries taken verbatim from queries the page already ranks 1st and 8th for |
+| Editorial internal links | **Live** | 13 ranking teardowns now pass authority to money pages in body copy, not just nav |
+| Search Console access | **Permanent** | Refresh token in `.env`; no more pasting hourly tokens |
+| CASHIN teardown | **Unpublished** | Its central claim was false — see traps |
+| `og-default.png` | **Rebuilt** | Was rendering with a black wedge across 21 pages |
 
 ---
 
-## Instructions for AI filling this document
+## Open
 
-If you are an AI agent reading this at the start of a session:
+**The study earns nothing until it is distributed.** It was built to attract
+backlinks that lift `/meta-ads-for-saas` from position 30 to page one. A link
+asset attracts no links passively. Prospecting and outreach is the work that
+activates everything built this week; skipping it wastes the build.
 
-1. Read this file fully before touching any code.
-2. If you complete work in this session, **add an entry to the Chronology section** before closing.
-3. If you discover a decision or context that is missing from this file, add it.
-4. If you are picking up from a prior session summary, reconcile the summary against this file and update any gaps.
-5. Never assume a context you don't see documented here — ask the user.
+| Next | Score | Blocked on |
+|---|---|---|
+| Distribute the study — prospecting list and outreach | — | Nothing |
+| Question page: pricing page vs demo page | 12/27 | Nothing. Already ranks 8.2 on 132 impressions |
+| Merge the four landing-page / CRO pages | 18/27 | **Your call** which URL survives |
+| Extend `/meta-ads-for-saas` to ~5,000 words | 18/27 | **Your campaign data** |
+| Rebuild CASHIN from the corrected captures | — | Nothing. Real data is in place |
+| Re-collect 8 companies with failed captures | — | Nothing. Use `scripts/collect-http.mjs` |
+
+---
+
+## Traps
+
+These four fail silently. Nobody will rediscover them without this note.
+
+### The browser capture path against Wayback is broken
+
+Phase 1 loads every asset from web.archive.org, which trips their load shedding
+and returns "Temporarily Offline" instead of the page. Measured at roughly 89%
+failure. It is not a timeout and not your concurrency — a single request per
+page works fine, a browser making dozens does not.
+
+Use `scripts/collect-http.mjs` for data. It fetches archived HTML in one request
+and succeeded 100% where the browser failed. It produces no screenshots, so
+publishing a full teardown still depends on the broken path.
+
+### Roughly one capture in five in the existing corpus is an error page
+
+Still affected: `sahl` 12/13, `tarjama` 11/12, `wafeq` 8/10, `signit` 6/7,
+`unifyapps` 6/7, `vennre` 6/7, `fortis` 2/3, `stitch` 1/2. None has a published
+article, so nothing is live on bad data — but any analysis touching them needs
+the same exclusion the study used.
+
+CASHIN was the one that reached production. Its article said the company went
+"from no public web presence" to a structured platform. The archive holds 38
+real captures from 2021 showing an active site. The real story existed and was
+different. Unpublished rather than patched, because the snapshots, counts, and
+prose all descended from the error pages.
+
+### Two site conventions that fail silently
+
+`**bold**` in blog prose renders as literal asterisks. `renderInlineText` in
+`BlogPostLayout.tsx` supports links only. No other article uses bold, which is
+why the gap never surfaced.
+
+Tailwind opacity steps like `/12` and `/8` do not exist in this config and
+resolve to transparent. That made a chart's zero-value bars invisible with no
+error anywhere.
+
+### Writing style is a hard rule
+
+Measured against the site's five existing articles: 2 em-dashes across 10,763
+words. A first draft of the study carried 46 in 2,990. Em-dashes and bold are
+banned from site content; the house voice is short declarative sentences. Saved
+in memory as `feedback_no_ai_writing_style`.
+
+---
+
+## Reference
+
+```bash
+# Search Console (refresh token, no manual auth)
+node scripts/gsc.mjs top-pages 30
+node scripts/gsc.mjs top-queries 50
+node scripts/gsc.mjs page-queries https://www.yoursaasgrowth.com/meta-ads-for-saas
+node scripts/gsc.mjs all-teardowns
+
+# Wayback data collection, HTTP only, no screenshots
+node scripts/collect-http.mjs --only slug1,slug2 --concurrency 3
+
+# Build and SEO gates
+npm run build
+node scripts/seo-check.mjs
+```
+
+Web version of this document:
+https://claude.ai/code/artifact/c60d6221-008c-4cdc-9bc3-b1d6c60253d1
