@@ -2,3 +2,6 @@
 .claude/worktrees/
 
 .vercel
+
+# Machine-migration bundle: contains private SSH key and .env secrets. Never commit.
+ysg-mac-migration/

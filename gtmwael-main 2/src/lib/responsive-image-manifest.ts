@@ -2267,5 +2267,137 @@ export const responsiveImageManifest = {
         "bytes": 14486
       }
     ]
+  },
+  "lemlist-2019-07": {
+    "width": 1100,
+    "height": 825,
+    "originalBytes": 34366,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/lemlist-2019-07-320.webp",
+        "bytes": 3810
+      },
+      {
+        "width": 640,
+        "src": "/responsive/lemlist-2019-07-640.webp",
+        "bytes": 10588
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/lemlist-2019-07-1024.webp",
+        "bytes": 19546
+      }
+    ]
+  },
+  "lemlist-current-live": {
+    "width": 1100,
+    "height": 825,
+    "originalBytes": 34698,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/lemlist-current-live-320.webp",
+        "bytes": 3936
+      },
+      {
+        "width": 640,
+        "src": "/responsive/lemlist-current-live-640.webp",
+        "bytes": 11142
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/lemlist-current-live-1024.webp",
+        "bytes": 19490
+      }
+    ]
+  },
+  "linear-2020-01": {
+    "width": 1100,
+    "height": 825,
+    "originalBytes": 19158,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/linear-2020-01-320.webp",
+        "bytes": 2434
+      },
+      {
+        "width": 640,
+        "src": "/responsive/linear-2020-01-640.webp",
+        "bytes": 6750
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/linear-2020-01-1024.webp",
+        "bytes": 11258
+      }
+    ]
+  },
+  "linear-current-live": {
+    "width": 1100,
+    "height": 825,
+    "originalBytes": 41636,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/linear-current-live-320.webp",
+        "bytes": 4340
+      },
+      {
+        "width": 640,
+        "src": "/responsive/linear-current-live-640.webp",
+        "bytes": 12948
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/linear-current-live-1024.webp",
+        "bytes": 23632
+      }
+    ]
+  },
+  "vercel-2021-07": {
+    "width": 1100,
+    "height": 825,
+    "originalBytes": 23844,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/vercel-2021-07-320.webp",
+        "bytes": 3984
+      },
+      {
+        "width": 640,
+        "src": "/responsive/vercel-2021-07-640.webp",
+        "bytes": 8738
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/vercel-2021-07-1024.webp",
+        "bytes": 14436
+      }
+    ]
+  },
+  "vercel-current-live": {
+    "width": 1100,
+    "height": 825,
+    "originalBytes": 28646,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/vercel-current-live-320.webp",
+        "bytes": 3564
+      },
+      {
+        "width": 640,
+        "src": "/responsive/vercel-current-live-640.webp",
+        "bytes": 9816
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/vercel-current-live-1024.webp",
+        "bytes": 17506
+      }
+    ]
   }
 } as const satisfies Record<string, ResponsiveImageEntry>;
