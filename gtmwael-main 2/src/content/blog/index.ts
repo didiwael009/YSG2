@@ -6,6 +6,7 @@ import { landingPageOptimizationBestPractices2026 } from "./articles/landing-pag
 import { saasProductVideo } from "./articles/saas-product-video";
 import { saasHomepageStudy } from "./articles/saas-homepage-study";
 import { claudeConnectorCustomerAcquisition } from "./articles/claude-connector-customer-acquisition";
+import { aiNews20261106 } from "./articles/ai-news-2026-11-06";
 
 export type { BlogBlock, BlogFaq, BlogPost, InternalLink, RelatedPost } from "./types";
 
@@ -17,6 +18,7 @@ export const blogPosts: BlogPost[] = [
   saasProductVideo,
   saasHomepageStudy,
   claudeConnectorCustomerAcquisition,
+  aiNews20261106,
 ];
 
 export const getBlogPostBySlug = (slug: string) =>
