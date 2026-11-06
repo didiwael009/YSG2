@@ -32,7 +32,7 @@ export const cashin: CroTeardownPost = {
   datePublished: "2026-08-25",
   readTime: "7 min read",
   featuredImage: "/cro-teardowns/cashin/selected/2023-01.webp",
-  featuredImageAlt: "CASHIN Jan 2023 homepage — 'Temporarily Offline'",
+  featuredImageAlt: "CASHIN 2023 homepage in Arabic, headline 'دائماً كاشن' (Always CASHIN)",
   fromLabel: "Jan 2023",
   toLabel: "Aug 2026",
   snapshots: [
@@ -50,6 +50,7 @@ export const cashin: CroTeardownPost = {
       month: "2026-01",
       label: "Jan 2026",
       screenshotPath: "/cro-teardowns/cashin/selected/2026-01.webp",
+      screenshotMissing: true,
     },
     {
       month: "current",

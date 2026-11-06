@@ -28,23 +28,8 @@ const GENERIC_BANNER = "/og-default.png";
 export const coverSources = (cover: Cover): string[] =>
   cover.kind === "pair" ? [cover.before.src, cover.after.src] : cover.kind === "type" ? [] : [cover.src];
 
-/**
- * Captures saved while the Wayback Machine was down: they show the archive's
- * "Temporarily Offline" page, not the company's homepage. Never used as covers.
- */
-const ARCHIVE_OFFLINE_CAPTURES = new Set([
-  "/cro-teardowns/brevo/selected/2023-01.webp",
-  "/cro-teardowns/cashin/selected/2023-01.webp",
-  "/cro-teardowns/cashin/selected/2026-01.webp",
-  "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
-  "/cro-teardowns/lemlist/selected/2023-07.webp",
-  "/cro-teardowns/mailerlite/selected/2026-01.webp",
-  "/cro-teardowns/sendx/selected/2019-01.webp",
-  "/cro-teardowns/wafeq/selected/2022-01.webp",
-]);
-
 const teardownCover = (post: CroTeardownPost): Cover => {
-  const usable = post.snapshots.filter((s) => !s.screenshotMissing && !ARCHIVE_OFFLINE_CAPTURES.has(s.screenshotPath));
+  const usable = post.snapshots.filter((s) => !s.screenshotMissing);
   if (usable.length === 0) return { kind: "type" };
   const first = usable[0];
   const last = usable[usable.length - 1];

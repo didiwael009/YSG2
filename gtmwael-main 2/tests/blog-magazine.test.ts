@@ -166,6 +166,25 @@ describe("cards", () => {
     expect(hits).toEqual([]);
   }, 30000);
 
+  it("no image shown in a teardown article is the Internet Archive offline page", async () => {
+    const print = async (file: string) =>
+      sharp(file).extract({ left: 0, top: 0, width: 800, height: 300 }).resize(80, 30).grayscale().raw().toBuffer();
+    const offline = await print(join(dirname(fileURLToPath(import.meta.url)), "fixtures", "archive-offline.webp"));
+    const shown = new Set<string>();
+    for (const t of croTeardownPosts) {
+      if (t.featuredImage) shown.add(t.featuredImage);
+      for (const s of t.snapshots) if (!s.screenshotMissing) shown.add(s.screenshotPath);
+      for (const b of t.analysisBlocks ?? []) if (!b.screenshotMissing) shown.add(b.screenshotPath);
+    }
+    const hits: string[] = [];
+    for (const src of [...shown].filter((s) => s.endsWith(".webp") || s.endsWith(".png"))) {
+      const p = await print(join(publicDir, src));
+      const diff = p.reduce((sum, v, i) => sum + Math.abs(v - offline[i]), 0) / p.length;
+      if (diff < 12) hits.push(src);
+    }
+    expect(hits).toEqual([]);
+  }, 60000);
+
   it("a teardown with one usable capture shows it alone, none falls back to type", () => {
     const one = { ...croTeardownPosts[0], snapshots: [croTeardownPosts[0].snapshots[0]] };
     expect(toCard(one).cover.kind).toBe("shot");

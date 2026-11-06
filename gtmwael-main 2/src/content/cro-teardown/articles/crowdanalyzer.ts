@@ -31,8 +31,8 @@ export const crowdanalyzer: CroTeardownPost = {
   authorBio: "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders diagnose landing page, CRO, positioning, and analytics leaks before scaling traffic.",
   datePublished: "2026-06-26",
   readTime: "8 min read",
-  featuredImage: "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
-  featuredImageAlt: "CrowdAnalyzer Jul 2016 homepage — 'The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform'",
+  featuredImage: "/cro-teardowns/crowdanalyzer/selected/current-live.webp",
+  featuredImageAlt: "CrowdAnalyzer homepage today, with the generic data headline that replaced the Arabic social listening claim",
   fromLabel: "Jul 2016",
   toLabel: "Jun 2026",
   snapshots: [
@@ -40,6 +40,7 @@ export const crowdanalyzer: CroTeardownPost = {
       month: "2016-07",
       label: "Jul 2016",
       screenshotPath: "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
+      screenshotMissing: true,
     },
     {
       month: "current",
@@ -139,6 +140,7 @@ export const crowdanalyzer: CroTeardownPost = {
       label: "Jul 2016 — original state",
       period: "Jul 2016",
       screenshotPath: "/cro-teardowns/crowdanalyzer/selected/2016-07.webp",
+      screenshotMissing: true,
       heading: "The original: product-led messaging",
       annotations: [
         "H1 opens with: \"The 1st Arabic Focused Internationally Recognized Social Media Monitoring Platform\" — a direct product statement.",
