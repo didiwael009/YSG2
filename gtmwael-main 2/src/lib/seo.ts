@@ -69,8 +69,8 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/blog",
-    title: "SaaS Growth Blog | Your SaaS Growth",
-    description: "Practical SaaS growth articles on landing pages, paid ads strategy, conversion optimization, cold email, and GTM execution.",
+    title: "Growth, AI and Content Blog | Your SaaS Growth",
+    description: "AI news every few days, growth guides and teardowns of real SaaS homepages, for digital businesses and agencies relaunching a site or scaling content.",
     type: "blog",
     priority: 0.8,
     changefreq: "weekly",

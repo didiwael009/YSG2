@@ -34,3 +34,6 @@ public/cro-teardowns/*/archive-monthly/
 
 # CRO teardown no-API manual mode — local agent prompt/response working files
 manual/
+
+# brainstorm mockups
+.superpowers/

@@ -81,15 +81,15 @@ export const routeContent = {
     ],
   },
   "/blog": {
-    intro: "Practical SaaS growth articles on landing pages, paid ads strategy, conversion optimization, cold email, and GTM execution.",
+    intro: "AI news every few days, growth guides and teardowns of real SaaS homepages, for digital businesses and agencies relaunching a site or scaling content.",
     sections: [
       {
-        heading: "Latest SaaS growth article",
-        body: "The first article explains why Google Ads and Meta Ads traffic should not usually be sent to the same SaaS landing page, because the visitor intent and trust path are different.",
+        heading: "What the blog covers",
+        body: "Three kinds of posts: AI News issues built from Reddit threads and developer forums, growth and conversion guides, and teardowns of real SaaS homepages across several years.",
       },
       {
         heading: "Topics covered",
-        body: "The blog focuses on SaaS landing pages, paid traffic, conversion optimization, demand creation, demand capture, and practical founder decisions before scaling acquisition.",
+        body: "Landing pages, paid traffic, conversion optimization, AI tools for content and growth, and the decisions to make before relaunching a site or scaling acquisition.",
       },
     ],
     links: [

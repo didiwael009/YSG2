@@ -164,6 +164,18 @@ export type BlogBlock =
       paragraphs: string[];
       subheading: string;
       checklist: string[];
+    }
+  | {
+      type: "news-item";
+      id: string;
+      rubrique: string;
+      title: string;
+      text: string[];
+      image: string;
+      imageAlt: string;
+      limit: string;
+      sourceLabel: string;
+      sourceUrl: string;
     };
 
 export type BlogPost = {
@@ -193,12 +205,12 @@ export type BlogPost = {
   ogImage: string;
   featuredImage: string;
   featuredImageAlt: string;
-  primaryKeyword: string;
+  primaryKeyword?: string;
   secondaryKeywords: string[];
   toc: { label: string; id: string }[];
   blocks: BlogBlock[];
-  faq: BlogFaq[];
-  source: {
+  faq?: BlogFaq[];
+  source?: {
     label: string;
     url: string;
     body: string;
@@ -208,7 +220,11 @@ export type BlogPost = {
     body: string;
     button: string;
   };
-  internalLinks: InternalLink[];
-  relatedPosts: RelatedPost[];
+  internalLinks?: InternalLink[];
+  relatedPosts?: RelatedPost[];
   pillarPage?: string;
+  /** Pins this guide as the lead story on /blog. */
+  featured?: boolean;
+  /** Home-card image; featuredImage and ogImage stay unchanged. */
+  cardImage?: string;
 };

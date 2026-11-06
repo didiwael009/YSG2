@@ -244,7 +244,9 @@ for (const post of blogPosts) {
       addError(post, "FAQ schema item does not match visible FAQ copy");
     }
   }
-  if (!html.includes(`alt="${post.featuredImageAlt}"`)) addError(post, "featured image alt not rendered");
+  // The generic site banner is never shown as an article cover (blog redesign), so only a real cover must render its alt.
+  const hasCover = post.featuredImage !== "/og-default.png";
+  if (hasCover && !html.includes(`alt="${post.featuredImageAlt}"`)) addError(post, "featured image alt not rendered");
   if (/\[[^\]]+\]\(\/[^)]+\)/.test(articleHtml)) addError(post, "raw markdown internal link rendered in article HTML");
 
   const sitemapLoc = `<loc>${canonicalFor(post)}</loc>`;
@@ -254,7 +256,7 @@ for (const post of blogPosts) {
   if (sitemap.includes(`https://yoursaasgrowth.com/blog/${post.slug}`)) addError(post, "non-www URL in sitemap");
 
   if (!html.includes("fetchpriority=\"high\"")) addWarning(post, "featured image is not marked fetchpriority=high");
-  if (!html.includes("decoding=\"async\"")) addWarning(post, "featured image is not marked decoding=async");
+  if (hasCover && !html.includes("decoding=\"async\"")) addWarning(post, "featured image is not marked decoding=async");
 }
 
 // CRO teardown screenshot validation

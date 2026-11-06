@@ -87,7 +87,7 @@ const caseStudies = [
   },
 ];
 
-const Navigation = () => {
+const Navigation = ({ variant = "default" }: { variant?: "default" | "blog" }) => {
   const location = useLocation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
@@ -96,6 +96,12 @@ const Navigation = () => {
   const [caseStudiesOpen, setCaseStudiesOpen] = useState(false);
 
   const isInternalPage = location.pathname !== "/";
+  // The blog runs on ivory: a flat, full-width bar instead of the floating dark pill.
+  const light = variant === "blog";
+  const idle = light ? "text-body-light-strong hover:text-heading-light" : "text-muted-foreground hover:text-foreground";
+  const idleIcon = light ? "text-body-light-strong hover:text-primary" : "text-muted-foreground hover:text-primary";
+  const activeTone = light ? "text-heading-light" : "text-foreground";
+  const sep = light ? "bg-border-light" : "bg-border/50";
 
   // Close mobile drawer on route change
   useEffect(() => {
@@ -162,25 +168,33 @@ const Navigation = () => {
     <header>
     <nav
       aria-label="Primary navigation"
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 opacity-100 translate-y-0 max-w-[calc(100vw-16px)]"
+      className={
+        light
+          ? "fixed inset-x-0 top-0 z-50 border-b border-border-light bg-background-light/95 backdrop-blur"
+          : "fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-500 opacity-100 translate-y-0 max-w-[calc(100vw-16px)]"
+      }
     >
       <div
-        className={`flex items-center bg-card/80 backdrop-blur-xl rounded-full px-2 py-2 border border-border/50 shadow-lg shadow-background/30 ${
-          isScrolled ? "bg-card/90" : ""
-        }`}
+        className={
+          light
+            ? "mx-auto flex h-14 max-w-[1240px] items-center px-2 sm:px-4"
+            : `flex items-center bg-card/80 backdrop-blur-xl rounded-full px-2 py-2 border border-border/50 shadow-lg shadow-background/30 ${
+                isScrolled ? "bg-card/90" : ""
+              }`
+        }
       >
         {/* Home button for internal pages */}
         {isInternalPage && (
           <>
             <Link
               to="/"
-              className="px-3 py-1.5 text-muted-foreground hover:text-primary transition-colors"
+              className={`px-3 py-1.5 ${idleIcon} transition-colors`}
               aria-label="Home"
             >
               <Home className="w-4 h-4" />
               <span className="sr-only">Home</span>
             </Link>
-            <div className="w-px h-4 bg-border/50 mx-1" />
+            <div className={`w-px h-4 ${sep} mx-1`} />
           </>
         )}
 
@@ -191,8 +205,8 @@ const Navigation = () => {
               <NavigationMenuTrigger
                 className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium bg-transparent hover:bg-transparent data-[state=open]:bg-transparent ${
                   activeSection === "services"
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? activeTone
+                    : idle
                 }`}
               >
                 Services
@@ -225,7 +239,7 @@ const Navigation = () => {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="w-px h-4 bg-border/50 mx-1" />
+        <div className={`w-px h-4 ${sep} mx-1`} />
 
         {/* Case Studies Dropdown — desktop */}
         <NavigationMenu>
@@ -234,8 +248,8 @@ const Navigation = () => {
               <NavigationMenuTrigger
                 className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium bg-transparent hover:bg-transparent data-[state=open]:bg-transparent ${
                   location.pathname.startsWith("/case-study") || location.pathname === "/case-studies"
-                    ? "text-foreground"
-                    : "text-muted-foreground hover:text-foreground"
+                    ? activeTone
+                    : idle
                 }`}
               >
                 Case Studies
@@ -270,29 +284,44 @@ const Navigation = () => {
 
         {/* Blog / Pricing / Folio — desktop only */}
         <div className="hidden sm:flex items-center">
-          <div className="w-px h-4 bg-border/50 mx-1" />
-          {navLinks.map((link, index) => (
+          <div className={`w-px h-4 ${sep} mx-1`} />
+          {navLinks.map((link, index) => {
+            const active =
+              location.pathname === link.href ||
+              location.pathname.startsWith(`${link.href}/`) ||
+              (light && link.href === "/blog");
+            return (
             <div key={link.href} className="flex items-center">
               <Link
                 to={link.href}
-                className="px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium transition-all duration-300 text-muted-foreground hover:text-primary whitespace-nowrap"
+                aria-current={active ? "page" : undefined}
+                className={`px-3 sm:px-4 py-1.5 text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                  active
+                    ? light
+                      ? "text-heading-light underline decoration-primary decoration-2 underline-offset-[6px]"
+                      : "text-foreground"
+                    : light
+                      ? idleIcon
+                      : "text-muted-foreground hover:text-primary"
+                }`}
               >
                 {link.label}
               </Link>
               {index < navLinks.length - 1 && (
-                <div className="w-px h-4 bg-border/50 mx-1" />
+                <div className={`w-px h-4 ${sep} mx-1`} />
               )}
             </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* Hamburger — mobile only */}
         <div className="sm:hidden flex items-center">
-          <div className="w-px h-4 bg-border/50 mx-1" />
+          <div className={`w-px h-4 ${sep} mx-1`} />
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger asChild>
               <button
-                className="px-3 py-1.5 text-muted-foreground hover:text-primary transition-colors"
+                className={`px-3 py-1.5 ${idleIcon} transition-colors`}
                 aria-label="Open navigation menu"
               >
                 <Menu className="w-4 h-4" />

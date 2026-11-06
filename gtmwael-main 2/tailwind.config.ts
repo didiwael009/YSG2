@@ -17,6 +17,7 @@ export default {
       fontFamily: {
         display: ['Sora', 'sans-serif'],
         body: ['Inter', 'sans-serif'],
+        serif: ['Georgia', '"Times New Roman"', 'serif'],
       },
       fontSize: {
         'base': ['1rem', { lineHeight: '1.7' }],

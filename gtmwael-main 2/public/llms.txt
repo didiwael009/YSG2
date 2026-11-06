@@ -9,7 +9,7 @@ Your SaaS Growth is a GTM strategy and growth consulting practice for B2B SaaS c
 ## Content
 
 - /cro-teardowns — Evidence-based SaaS homepage teardowns showing how messaging, trust, CTAs, and conversion paths evolve before scaling traffic.
-- /blog — Articles on SaaS positioning, cold email, landing page CRO, and GTM strategy.
+- /blog — AI news issues, growth and conversion guides, and homepage teardowns.
 - /case-studies — Portfolio of SaaS growth work: Shipzzer, Screenplay, Zembra, Pubrella, and more.
 
 ## Services
