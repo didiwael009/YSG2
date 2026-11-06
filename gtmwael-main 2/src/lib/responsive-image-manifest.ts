@@ -296,6 +296,28 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "content-automation-reference": {
+    "width": 1732,
+    "height": 908,
+    "originalBytes": 115892,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/content-automation-reference-320.webp",
+        "bytes": 6892
+      },
+      {
+        "width": 640,
+        "src": "/responsive/content-automation-reference-640.webp",
+        "bytes": 19380
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/content-automation-reference-1024.webp",
+        "bytes": 36920
+      }
+    ]
+  },
   "founder": {
     "width": 1024,
     "height": 1024,
@@ -695,6 +717,18 @@ export const responsiveImageManifest = {
         "width": 640,
         "src": "/responsive/saas-video-cover-640.webp",
         "bytes": 10602
+      }
+    ]
+  },
+  "sambalingo-phone": {
+    "width": 400,
+    "height": 543,
+    "originalBytes": 31420,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/sambalingo-phone-320.webp",
+        "bytes": 14726
       }
     ]
   },

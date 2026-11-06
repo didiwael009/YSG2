@@ -20,7 +20,7 @@ const DeferredSection = ({
     if (shouldRender) return;
 
     const render = () => setShouldRender(true);
-    const scrollEvents = ["scroll", "wheel", "touchmove", "keydown"];
+    const scrollEvents = ["scroll", "wheel", "touchmove", "keydown", "pointerdown"];
 
     if (typeof window === "undefined") {
       setShouldRender(true);

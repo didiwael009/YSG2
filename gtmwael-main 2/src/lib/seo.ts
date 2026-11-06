@@ -759,6 +759,15 @@ export const seoRoutes: SeoRoute[] = [
     breadcrumbs: [{ name: "Pricing", path: "/pricing" }],
   },
   {
+    path: "/content-automation",
+    title: "Content Automation with Claude Code | Your SaaS Growth",
+    description: "Content systems for digital businesses: videos, songs, animations and posts in three languages, made with Claude Code and AI tools. You approve every piece.",
+    type: "service",
+    priority: 0.8,
+    changefreq: "monthly",
+    breadcrumbs: [{ name: "Content Automation", path: "/content-automation" }],
+  },
+  {
     path: "/creative",
     title: "Creative Folio for SaaS Growth | Your SaaS Growth",
     description: "A creative portfolio of SaaS landing pages, ad creatives, social content, video assets, and conversion-focused visual systems.",

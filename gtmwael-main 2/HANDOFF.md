@@ -211,3 +211,12 @@ node scripts/seo-check.mjs
 
 Web version of this document:
 https://claude.ai/code/artifact/c60d6221-008c-4cdc-9bc3-b1d6c60253d1
+
+## Chronology
+
+### 2026-11-06
+
+Added a dark content automation section below the homepage hero and testimonial,
+following Wael's visual reference. The section shows the SambaLingo feed
+illustration, a collect/create/publish pipeline, and expandable workflow
+examples for SambaLingo, CRO Teardowns, and AI News.

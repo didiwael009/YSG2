@@ -35,11 +35,13 @@ const CaseStudyBottlenexus = lazy(() => import("./pages/CaseStudyBottlenexus"));
 const CaseStudyICCenter = lazy(() => import("./pages/CaseStudyICCenter"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Creative = lazy(() => import("./pages/Creative"));
+const ContentAutomation = lazy(() => import("./pages/ContentAutomation"));
 const Resume = lazy(() => import("./pages/Resume"));
 const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
 const CroTeardownIndex = lazy(() => import("./pages/CroTeardownIndex"));
 const CroTeardownArticle = lazy(() => import("./pages/CroTeardownArticle"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const HeroTest = lazy(() => import("./pages/HeroTest"));
 
 /** Redirects /cro-teardown/:slug → /cro-teardowns/:slug (legacy singular → plural) */
 const RedirectSlug = ({ prefix }: { prefix: string }) => {
@@ -56,6 +58,7 @@ export const AppRoutes = () => (
     <Routes>
       <Route path="/" element={<Index />} />
       <Route path="/creative" element={lazyRoute(<Creative />)} />
+      <Route path="/content-automation" element={lazyRoute(<ContentAutomation />)} />
       <Route path="/services/cold-email" element={lazyRoute(<ColdEmail />)} />
       <Route path="/services/meta-ads" element={lazyRoute(<MetaAds />)} />
       <Route path="/case-studies" element={lazyRoute(<CaseStudies />)} />
@@ -93,6 +96,7 @@ export const AppRoutes = () => (
       <Route path="/cro-teardown" element={<Navigate to="/cro-teardowns" replace />} />
       <Route path="/cro-teardown/:slug" element={<RedirectSlug prefix="/cro-teardowns" />} />
       {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+      <Route path="/test/hero" element={lazyRoute(<HeroTest />)} />
       <Route path="*" element={lazyRoute(<NotFound />)} />
     </Routes>
 );

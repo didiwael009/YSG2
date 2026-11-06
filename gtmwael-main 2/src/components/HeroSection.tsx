@@ -41,7 +41,7 @@ const HeroSection = () => {
           <div className="relative flex flex-col lg:flex-row items-center lg:items-end justify-center gap-8 lg:gap-0" style={{ overflow: 'visible' }}>
             
             {/* Text column - z-2 */}
-            <div className="relative z-[2] text-center lg:text-left order-2 lg:order-1 max-w-xl">
+            <div className="relative z-[2] text-center lg:text-left order-2 lg:order-1 max-w-xl lg:max-w-[620px]">
                {/* Top Rated Upwork badge */}
                <a
                  href="https://www.upwork.com/freelancers/~0172dd07fc1cdd655c"
@@ -60,28 +60,27 @@ const HeroSection = () => {
 
                <h1 className="font-display font-bold tracking-[-0.03em] mb-3 text-left">
                <span 
-                  className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-foreground leading-[1] md:animate-fade-up md:opacity-0 cursor-default transition-all duration-300 ease-out hover:tracking-[-0.01em] hover:brightness-110 relative group"
+                  className="block text-balance text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-foreground leading-[1] md:animate-fade-up md:opacity-0"
                   style={{ animationDelay: '100ms', animationFillMode: 'forwards' }}
                 >
-                  <span className="absolute inset-0 bg-[hsl(260_50%_45%/0.2)] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10 scale-110" />
-                  Your SaaS growth team.
+                  Automated growth for SaaS.
                 </span>
                 <span
-                  className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-gradient leading-[1] mt-1.5 md:animate-fade-up md:opacity-0 cursor-default"
+                  className="block text-[1.8rem] md:text-[2.25rem] lg:text-[2.7rem] text-gradient leading-[1] mt-1.5 md:animate-fade-up md:opacity-0"
                   style={{ animationDelay: '150ms', animationFillMode: 'forwards' }}
                 >
-                  Without hiring 3 people.
+                  One operator. AI agents.
                 </span>
               </h1>
 
-              <p className="text-sm md:text-base text-muted-foreground mb-3 leading-[1.45] max-w-[55ch] text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
-                Positioning, conversion, SEO, outreach &amp; paid creative — run by one ex-SaaS operator at the speed of AI, for a fraction of a full-time team.
+              <p className="text-sm md:text-base text-muted-foreground mb-3 leading-[1.45] max-w-[60ch] text-pretty text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '250ms', animationFillMode: 'forwards' }}>
+                I improve your landing pages, automate content production and run your ads.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center sm:items-start gap-2.5 md:animate-fade-up md:opacity-0" style={{ animationDelay: '350ms', animationFillMode: 'forwards' }}>
                 <div className="flex flex-col items-center">
                   <PrimaryCTA href="/book">
-                    Book a free 20-min GTM audit
+                    Book a free 20-min audit
                   </PrimaryCTA>
                   <p className="hidden sm:block text-xs text-muted-foreground mt-2 whitespace-nowrap">
                     Free · no commitment
@@ -92,28 +91,37 @@ const HeroSection = () => {
                 </SecondaryCTA>
               </div>
 
-              {/* Proof cards */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-4 md:animate-fade-up md:opacity-0" style={{ animationDelay: '450ms', animationFillMode: 'forwards' }}>
+              {/* Two doors: Convert and Produce */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 mt-5 text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '450ms', animationFillMode: 'forwards' }}>
                 {[
-                  { stat: "4×", desc: "Revenue growth", tag: "ZEMBRA · B2B" },
-                  { stat: "+300%", desc: "CVR lift", tag: "LANDING · CRO" },
-                  { stat: "Built & sold", desc: "SaaS founder", tag: "ON APPSUMO" },
-                ].map((card, i) => (
-                  <div key={i} className="border border-border/40 bg-foreground/[0.02] rounded-lg flex items-stretch overflow-hidden">
-                    <div className="flex items-center justify-center sm:justify-start w-[104px] sm:w-auto flex-shrink-0 px-3 py-2.5 sm:px-2.5">
-                      <p className={`${card.stat.length > 6 ? "text-sm leading-none text-center" : "text-lg whitespace-nowrap"} font-bold text-primary`}>{card.stat}</p>
-                    </div>
-                    <div className="flex flex-col justify-center min-w-0 border-l border-border/40 px-3 py-2 sm:px-2.5">
-                      <p className="text-xs text-foreground/80 leading-tight">{card.desc}</p>
-                      <p className="text-[9px] text-primary/70 uppercase tracking-wider mt-0.5">{card.tag}</p>
-                    </div>
-                  </div>
+                  { label: "Convert", line: "CRO, outbound, ads", stats: [["4×", "revenue"], ["3×", "CVR"]], href: "#experience", accent: "text-purple-300", bar: "bg-purple-500" },
+                  { label: "Produce", line: "Content at scale", stats: [["134", "posts"], ["3", "languages"]], href: "#creative-workflow", accent: "text-orange-400", bar: "bg-orange-500" },
+                ].map((door) => (
+                  <a
+                    key={door.label}
+                    href={door.href}
+                    className="group relative overflow-hidden rounded-xl border border-border/40 bg-foreground/[0.03] px-4 pb-3 pt-3.5 transition-colors hover:border-foreground/30 hover:bg-foreground/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  >
+                    <span className={`absolute inset-y-0 left-0 w-1 ${door.bar}`} aria-hidden="true" />
+                    <span className="flex items-baseline justify-between gap-3">
+                      <span className="font-display text-lg font-bold text-foreground">{door.label}</span>
+                      <span className="text-xs text-muted-foreground transition-colors group-hover:text-foreground">{door.line} ↓</span>
+                    </span>
+                    <span className="mt-2 flex gap-5">
+                      {door.stats.map(([value, unit]) => (
+                        <span key={unit} className="flex items-baseline gap-1.5 text-xs text-muted-foreground">
+                          <span className={`font-display text-2xl font-bold leading-none ${door.accent}`}>{value}</span>
+                          {unit}
+                        </span>
+                      ))}
+                    </span>
+                  </a>
                 ))}
               </div>
 
               {/* Logo strip */}
               <div className="mt-5 text-center lg:text-left md:animate-fade-up md:opacity-0" style={{ animationDelay: '550ms', animationFillMode: 'forwards' }}>
-                <p className="text-[10px] text-muted-foreground/60 uppercase tracking-widest mb-3">Trusted by founders at</p>
+                <p className="text-xs text-muted-foreground uppercase tracking-widest mb-3">Trusted by founders at</p>
                 <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-3 sm:gap-x-8 md:gap-x-10">
                   {logos.map((logo, index) => (
                     <button
@@ -161,7 +169,7 @@ const HeroSection = () => {
                 src={founderImage} 
                 srcSet={heroSrcSet}
                 sizes={heroSizes}
-                alt="Wael Aouididi, fractional growth lead for b2b companies" 
+                alt="Wael Aouididi, growth operator for SaaS companies" 
                 width={420}
                 height={520}
                 {...({ fetchpriority: "high" } as Record<string, string>)}
@@ -189,7 +197,7 @@ const HeroSection = () => {
             "Shipped more in two weeks than our last full-time hire did in a quarter."
           </p>
           <footer className="text-sm text-muted-foreground mt-2">
-            — Khoubeib, Founder of Zembra
+            Khoubeib, Founder of Zembra
           </footer>
         </blockquote>
       </div>

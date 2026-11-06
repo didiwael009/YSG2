@@ -9,13 +9,23 @@ import pubrellaScreenshot from "@/assets/pubrella-screenshot.jpg";
 import landingScreenplay from "@/assets/screenplay-hero-screenshot.png";
 import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
 import icCenterHero from "@/assets/ic-center-hero.png";
+import sambalingoThumb from "@/assets/casestudy-sambalingo.webp";
 
 const caseStudies = [
+  {
+    id: "sambalingo",
+    client: "SambaLingo",
+    achievement: "134 posts",
+    description: "Videos, songs and posts made by one content system. I check every piece, the client approves it.",
+    image: sambalingoThumb,
+    link: "/content-automation",
+    tags: ["Content", "Claude Code", "Video"],
+  },
   {
     id: "zembra",
     client: "Zembra",
     achievement: "4× Revenue",
-    description: "Full GTM system that quadrupled revenue in 6 months",
+    description: "Revenue 4× in the 8 months I led marketing",
     image: landingZembra,
     link: "/case-study/zembra",
     tags: ["GTM", "Funnel", "Ads"],
@@ -24,7 +34,7 @@ const caseStudies = [
     id: "pubrella",
     client: "Pubrella",
     achievement: "3× CVR",
-    description: "Landing page & funnel redesign tripling conversion rate",
+    description: "Landing page and funnel redesign. Visit to signup conversion up about 3×.",
     image: pubrellaScreenshot,
     link: "/case-study/pubrella",
     tags: ["Landing Page", "CRO"],
@@ -32,8 +42,8 @@ const caseStudies = [
   {
     id: "shipzzer",
     client: "Shipzzer",
-    achievement: "50% Open · 7% Reply",
-    description: "Cold email system hitting elite engagement benchmarks",
+    achievement: "7% Reply",
+    description: "Cold email aimed at buying triggers, 7% reply rate",
     image: landingShipzzer,
     link: "/case-study/shipzzer",
     tags: ["Cold Email", "Outbound"],
@@ -42,7 +52,7 @@ const caseStudies = [
     id: "screenplay",
     client: "Screenplay",
     achievement: "GTM Launch",
-    description: "Performance studio landing page delivering wow in 3 seconds",
+    description: "Landing page for a performance studio",
     image: landingScreenplay,
     link: "/case-study/screenplay",
     tags: ["Landing Page", "UI/UX"],
@@ -51,7 +61,7 @@ const caseStudies = [
     id: "bottlenexus",
     client: "BottleNexus",
     achievement: "Full GTM",
-    description: "Complete go-to-market system for wine marketplace platform",
+    description: "Brand, site and weekly content for a wine marketplace",
     image: landingBottlenexus,
     link: "/case-study/bottlenexus",
     tags: ["GTM", "Landing Page"],

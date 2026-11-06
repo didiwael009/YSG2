@@ -306,3 +306,11 @@
     margin: 0;
   }
 }
+
+/* Track Record: cards stack only where the viewport is tall enough to show a whole card */
+@media (min-width: 768px) and (min-height: 720px) {
+  .stack-card {
+    position: sticky;
+    top: var(--stack-top);
+  }
+}

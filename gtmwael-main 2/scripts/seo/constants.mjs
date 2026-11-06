@@ -23,6 +23,7 @@ export const prerenderRoutePaths = [
   "/case-studies",
   "/case-study/shipzzer",
   "/creative",
+  "/content-automation",
   "/resume",
   "/case-study/screenplay",
   "/case-study/bottlenexus",
@@ -368,6 +369,23 @@ export const routeContent = {
     links: [
       { label: "Compare relevant case studies", path: "/case-studies" },
       { label: "Book a GTM audit before choosing a package", path: "/book" },
+    ],
+  },
+  "/content-automation": {
+    intro: "Content systems for digital businesses: animated videos, songs, voiceovers and posts in English, French and Arabic, made with Claude Code and a stack of AI tools.",
+    sections: [
+      {
+        heading: "How the system works",
+        body: "A script collects the stories worth a post every morning. Claude Code agents write and render each piece, then a check pulls frames from every video before anything is published.",
+      },
+      {
+        heading: "Running today",
+        body: "SambaLingo published 134 posts in its first month. AI News runs every day in three languages. The CRO teardowns are written and published by the same system.",
+      },
+    ],
+    links: [
+      { label: "Read the CRO teardowns", path: "/cro-teardowns" },
+      { label: "Book a call", path: "/book" },
     ],
   },
   "/creative": {

@@ -4,8 +4,28 @@
     {
       "name": "dev",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "gtmwael-main 2", "run", "dev"],
+      "runtimeArgs": [
+        "--prefix",
+        "gtmwael-main 2",
+        "run",
+        "dev"
+      ],
       "port": 8080
+    },
+    {
+      "name": "dev-8081",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "gtmwael-main 2",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "8081",
+        "--strictPort"
+      ],
+      "port": 8081
     }
   ]
 }

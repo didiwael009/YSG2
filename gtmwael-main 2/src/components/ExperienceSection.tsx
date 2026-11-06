@@ -1,207 +1,178 @@
-import { ArrowRight } from "lucide-react";
+import type { CSSProperties } from "react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import growappLogo from "@/assets/growapp-logo.jpeg";
 import zembraLogo from "@/assets/zembra-logo.svg";
 import bottlenexusLogo from "@/assets/bottlenexus-logo-white.svg";
 import shipzzerLogoWhite from "@/assets/shipzzer-logo-white.png";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-const experiences = [{
-  company: "GrowApp",
-  location: "UK",
-  role: "Founder & CMO",
-  headline: "$30K+ MRR",
-  tags: ["Bootstrapped SaaS", "AppSumo Launch"],
-  description: "Built and scaled my own B2B SaaS from zero to $30K+ MRR. End-to-end ownership—positioning, pricing, outreach, and an AppSumo launch—proving I can turn a raw idea into repeatable revenue. Not a client gig—my product.",
-  bulletPoints: [],
-  links: [{
-    label: "View AppSumo Listing",
-    url: "https://appsumo.com/products/growapp/",
-    superscript: "1"
-  }],
-  logo: growappLogo,
-  logoClass: "h-8 w-8 rounded-md",
-  isTextualLogo: false,
-  gradientFrom: "from-orange-500",
-  gradientTo: "to-amber-400",
-  accentColor: "text-orange-400"
-}, {
-  company: "Zembra",
-  location: "US",
-  role: "Marketing Lead",
-  headline: "4× Revenue",
-  tags: ["8 Months", "4X Revenue"],
-  description: "Led the full SaaS rebrand and outbound revamp for data/AI buyers; rebuilt narrative, site, offers, and SDR enablement. Outcomes: 4× revenue in 8 months with consistent outbound messaging aligned to how technical buyers actually evaluate.",
-  bulletPoints: [],
-  links: [{
-    label: "Read Press Release",
-    url: "https://www.einpresswire.com/article/689256436/zembra-unveils-new-logo-and-website-expands-services-to-empower-individuals-with-data-and-ai",
-    superscript: "2"
-  }],
-  logo: zembraLogo,
-  logoClass: "h-7 w-auto",
-  isTextualLogo: true,
-  gradientFrom: "from-purple-500",
-  gradientTo: "to-pink-500",
-  accentColor: "text-purple-400"
-}, {
-  company: "Bottle Nexus",
-  location: "US",
-  role: "Head of Creative",
-  headline: "Full Rebrand",
-  tags: ["New Landing Page", "Creative Ops"],
-  description: "Delivered a full rebrand from brand foundations to live content, then ran ongoing creative ops. From Sept '24 → Feb '25, built the identity, site system, and a weekly content engine (reels, reports, decks) that ships on-brand.",
-  bulletPoints: ["Visual identity & brand system", "Website & content engine", "Ongoing creative execution"],
-  links: [{
-    label: "See Live Brand & Content",
-    url: "https://www.instagram.com/bottlenexus/",
-    superscript: "3"
-  }, {
-    label: "B2B Design Content",
-    url: "https://www.behance.net/gallery/234607371/Saas-B2B-Content-Creation",
-    superscript: "4"
-  }],
-  logo: bottlenexusLogo,
-  logoClass: "h-6 w-auto",
-  isTextualLogo: true,
-  gradientFrom: "from-cyan-500",
-  gradientTo: "to-teal-400",
-  accentColor: "text-cyan-400"
-}, {
-  company: "Shipzzer",
-  location: "US",
-  role: "GTM Strategist",
-  headline: "Top-3 Google",
-  tags: ["50% Open Rate", "7% Reply Rate"],
-  description: "Designed GTM around buyer intent: positioning, SEO content, and outbound assets SDRs use. Achieved Top-3 Google rankings, 50% open rate, and 7% reply rate, aligning search and outreach with what buyers actually look for.",
-  bulletPoints: ["SEO content systems", "High-intent outbound flows", "Demand capture strategy"],
-  links: [{
-    label: "See Live Google Ranking",
-    url: "https://www.google.com/search?q=yard+depot+systems",
-    superscript: "3"
-  }, {
-    label: "See Apollo Screenshot",
-    url: "https://www.upwork.com/freelancers/waelaouididi?p=1993524023080235008",
-    superscript: "4"
-  }],
-  logo: shipzzerLogoWhite,
-  logoClass: "h-6 w-auto",
-  isTextualLogo: true,
-  gradientFrom: "from-blue-500",
-  gradientTo: "to-purple-500",
-  accentColor: "text-blue-400"
-}];
-const ExperienceCard = ({
-  exp,
-  index
-}: {
-  exp: typeof experiences[0];
-  index: number;
-}) => <div className="relative bg-card border border-border/50 rounded-2xl p-6 hover:border-border transition-all duration-300 animate-fade-up opacity-0 overflow-hidden h-full" style={{
-  animationDelay: `${(index + 2) * 100}ms`,
-  animationFillMode: 'forwards'
-}}>
-    {/* Header with company logo */}
-    <div className="mb-2">
-      <div className="flex items-center gap-3">
-        <img src={exp.logo} alt={`${exp.company} logo`} loading="lazy" width={32} height={32} className={`${exp.logoClass} ${exp.isTextualLogo ? 'brightness-0 invert' : ''}`} />
-        <div className="flex items-center gap-2">
-          {!exp.isTextualLogo && <h3 className="font-display text-xl font-semibold text-foreground">
-              {exp.company}
-            </h3>}
-          <span className="text-muted-foreground text-sm">({exp.location})</span>
-        </div>
+
+type Experience = {
+  company: string;
+  location: string;
+  role: string;
+  metric: string;
+  metricLabel: string;
+  sentence: string;
+  caseStudy: string;
+  proofs: { label: string; url: string }[];
+  logo: string;
+  logoClass: string;
+  textualLogo: boolean;
+  gradient: string;
+  bar: string;
+};
+
+const experiences: Experience[] = [
+  {
+    company: "GrowApp",
+    location: "UK",
+    role: "Founder and CMO",
+    metric: "$30K+",
+    metricLabel: "MRR on my own SaaS",
+    sentence: "I built it from zero. Positioning, pricing, outreach, then an AppSumo launch.",
+    caseStudy: "/case-study/growapp",
+    proofs: [{ label: "AppSumo listing", url: "https://appsumo.com/products/growapp/" }],
+    logo: growappLogo,
+    logoClass: "h-8 w-8 rounded-lg",
+    textualLogo: false,
+    gradient: "from-orange-500 to-amber-300",
+    bar: "from-orange-500 to-amber-400",
+  },
+  {
+    company: "Zembra",
+    location: "US",
+    role: "Marketing Lead",
+    metric: "4×",
+    metricLabel: "revenue in 8 months",
+    sentence: "New brand, new site and an outbound rebuilt for data and AI buyers.",
+    caseStudy: "/case-study/zembra",
+    proofs: [
+      {
+        label: "Press release",
+        url: "https://www.einpresswire.com/article/689256436/zembra-unveils-new-logo-and-website-expands-services-to-empower-individuals-with-data-and-ai",
+      },
+    ],
+    logo: zembraLogo,
+    logoClass: "h-8 w-auto",
+    textualLogo: true,
+    gradient: "from-purple-400 to-pink-400",
+    bar: "from-purple-500 to-pink-500",
+  },
+  {
+    company: "Bottle Nexus",
+    location: "US",
+    role: "Head of Creative",
+    metric: "Rebrand",
+    metricLabel: "from brand foundations to weekly content",
+    sentence: "Identity, website and a weekly content engine. Reels, reports and decks, Sept 2024 to Feb 2025.",
+    caseStudy: "/case-study/bottlenexus",
+    proofs: [
+      { label: "Instagram", url: "https://www.instagram.com/bottlenexus/" },
+      { label: "Behance", url: "https://www.behance.net/gallery/234607371/Saas-B2B-Content-Creation" },
+    ],
+    logo: bottlenexusLogo,
+    logoClass: "h-7 w-auto",
+    textualLogo: true,
+    gradient: "from-cyan-400 to-teal-300",
+    bar: "from-cyan-500 to-teal-400",
+  },
+  {
+    company: "Shipzzer",
+    location: "US",
+    role: "GTM Strategist",
+    metric: "Top 3",
+    metricLabel: 'on Google for "yard depot systems"',
+    sentence: "SEO pages and outbound built on buyer intent. 7% reply rate on cold email.",
+    caseStudy: "/case-study/shipzzer",
+    proofs: [{ label: "Live Google ranking", url: "https://www.google.com/search?q=yard+depot+systems" }],
+    logo: shipzzerLogoWhite,
+    logoClass: "h-7 w-auto",
+    textualLogo: true,
+    gradient: "from-blue-400 to-purple-400",
+    bar: "from-blue-500 to-purple-500",
+  },
+];
+
+const focusStyle =
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-orange-400";
+
+const ExperienceSection = () => (
+  <section id="experience" aria-labelledby="experience-title" className="section-padding relative scroll-mt-24">
+    <div className="container px-4">
+      <div className="mx-auto mb-14 max-w-5xl md:mb-20">
+        <p className="mb-4 text-sm font-medium uppercase tracking-widest text-primary">Track Record</p>
+        <h2 id="experience-title" className="font-display font-bold">
+          <span className="block text-5xl md:text-6xl lg:text-7xl">Four companies.</span>
+          <span className="block text-gradient text-6xl md:text-7xl lg:text-8xl">One result each.</span>
+        </h2>
       </div>
-      <p className={`text-sm mt-1 ${exp.accentColor}`}>{exp.role}</p>
-    </div>
-    
-    {/* Large headline */}
-    <h4 className={`font-display text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r ${exp.gradientFrom} ${exp.gradientTo} bg-clip-text text-transparent`}>
-      {exp.headline}
-    </h4>
-    
-    {/* Tags */}
-    <div className="flex flex-wrap gap-2 mb-4">
-      {exp.tags.map((tag, i) => <span key={i} className="px-3 py-1 text-xs font-medium bg-muted text-muted-foreground border border-border rounded-md">
-          {tag}
-        </span>)}
-    </div>
-    
-    {/* Description */}
-    <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-      {exp.description}
-    </p>
-    
-    {/* Bullet points */}
-    {exp.bulletPoints.length > 0 && (
-      <ul className="space-y-2 mb-4">
-        {exp.bulletPoints.map((point, i) => (
-          <li key={i} className="flex items-center gap-2 text-sm text-muted-foreground">
-            <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-            {point}
+
+      <ol className="mx-auto max-w-5xl" aria-label="Results with four companies">
+        {experiences.map((exp, index) => (
+          <li
+            key={exp.company}
+            className="stack-card mb-6 last:mb-0 md:mb-8"
+            style={{ "--stack-top": `calc(5.5rem + ${index * 3.5}rem)` } as CSSProperties}
+          >
+            <article className="relative flex flex-col overflow-hidden rounded-3xl border border-white/10 bg-[#17111f] px-6 pb-7 pt-5 shadow-[0_-16px_40px_-20px_#000b] md:min-h-[400px] md:px-12 md:pb-10">
+              <div className={`absolute inset-x-0 top-0 h-1.5 bg-gradient-to-r ${exp.bar}`} aria-hidden="true" />
+
+              <div className="flex min-h-8 flex-wrap items-center gap-x-4 gap-y-2">
+                <h3 className="flex items-center gap-3 font-display text-2xl font-semibold">
+                  <img
+                    src={exp.logo}
+                    alt={exp.textualLogo ? exp.company : ""}
+                    loading="lazy"
+                    width={32}
+                    height={32}
+                    className={`${exp.logoClass} ${exp.textualLogo ? "brightness-0 invert" : ""}`}
+                  />
+                  {!exp.textualLogo && exp.company}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {exp.role} · {exp.location}
+                </p>
+              </div>
+
+              <div className="my-auto py-8 md:py-6">
+                <p
+                  className={`bg-gradient-to-r ${exp.gradient} bg-clip-text font-display font-bold leading-[0.9] tracking-tight text-transparent text-[clamp(3rem,12vw,8rem)]`}
+                >
+                  {exp.metric}
+                </p>
+                <p className="mt-3 text-xl text-foreground/90 md:text-3xl">{exp.metricLabel}</p>
+              </div>
+
+              <div className="flex flex-col gap-5 border-t border-white/10 pt-6 md:flex-row md:items-end md:justify-between">
+                <p className="max-w-[46ch] text-base leading-relaxed text-muted-foreground">{exp.sentence}</p>
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+                  {exp.proofs.map((proof) => (
+                    <a
+                      key={proof.url}
+                      href={proof.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`inline-flex items-center gap-1 rounded-sm text-sm text-muted-foreground hover:text-foreground ${focusStyle}`}
+                    >
+                      {proof.label}
+                      <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                    </a>
+                  ))}
+                  <Link
+                    to={exp.caseStudy}
+                    className={`inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-[#17111f] hover:bg-white/85 ${focusStyle}`}
+                  >
+                    Case study
+                    <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                </div>
+              </div>
+            </article>
           </li>
         ))}
-      </ul>
-    )}
-    
-    {/* Links */}
-    <div className="flex flex-wrap gap-4">
-      {exp.links.map((link, i) => <a key={i} href={link.url} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-1 text-sm ${exp.accentColor} hover:opacity-80 transition-colors`}>
-          {link.label}<sup className="text-[10px]">{link.superscript}</sup>
-          <ArrowRight className="w-3.5 h-3.5" />
-        </a>)}
+      </ol>
     </div>
-    
-    {/* Gradient bottom border */}
-    <div className={`absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r ${exp.gradientFrom} ${exp.gradientTo}`} />
-  </div>;
-const ExperienceSection = () => {
-  return <section id="experience" className="section-padding relative">
-      <div className="container px-4">
-        <div className="text-center mb-20 animate-fade-up opacity-0" style={{
-        animationDelay: '100ms',
-        animationFillMode: 'forwards'
-      }}>
-          <p className="text-primary font-medium text-sm uppercase tracking-widest mb-4">
-            Track Record
-          </p>
-          <h2 className="font-display font-bold mb-6">
-            <span className="block text-5xl md:text-6xl lg:text-7xl">Real SaaS experience.</span>
-            <span className="block text-6xl md:text-7xl lg:text-8xl text-gradient">Real growth delivered.</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            I Don't Just Talk Strategy — I've Built It, Launched It, and Scaled It.
-          </p>
-          <p className="text-muted-foreground mt-3">
-            From scrappy B2B launches to multi-country rebrands, here's what I've done with real SaaS companies.
-          </p>
-        </div>
-        
-        {/* Mobile Carousel */}
-        <div className="md:hidden">
-          <Carousel opts={{
-          align: "start",
-          loop: true
-        }} className="w-full">
-            <CarouselContent className="-ml-4">
-              {experiences.map((exp, index) => <CarouselItem key={exp.company} className="pl-4 basis-[85%]">
-                  <ExperienceCard exp={exp} index={index} />
-                </CarouselItem>)}
-            </CarouselContent>
-            
-            {/* Dots indicator */}
-            <div className="flex justify-center gap-2 mt-6">
-              {experiences.map((_, index) => <div key={index} className="w-2 h-2 rounded-full bg-primary/30" />)}
-            </div>
-          </Carousel>
-          <p className="text-center text-sm text-muted-foreground mt-4">
-            Swipe to explore →
-          </p>
-        </div>
+  </section>
+);
 
-        {/* Desktop Grid */}
-        <div className="hidden md:grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {experiences.map((exp, index) => <ExperienceCard key={exp.company} exp={exp} index={index} />)}
-        </div>
-      </div>
-    </section>;
-};
 export default ExperienceSection;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Mail, Target, FileText, Users, Home, BriefcaseBusiness, Search, Workflow, Repeat, BarChart3, Menu, ChevronDown } from "lucide-react";
+import { Mail, Target, FileText, Users, Home, BriefcaseBusiness, Search, Workflow, Repeat, BarChart3, Menu, ChevronDown, Sparkles } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -16,6 +16,12 @@ import {
 } from "@/components/ui/sheet";
 
 const services = [
+  {
+    title: "Content Automation",
+    description: "Videos, songs and posts in three languages, made with Claude Code. You approve every piece.",
+    icon: Sparkles,
+    href: "/content-automation",
+  },
   {
     title: "Cold Email for SaaS",
     description: "Portfolio service page with outreach references, workflows, and execution examples.",
