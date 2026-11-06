@@ -182,3 +182,33 @@ describe("magazine home (redesign)", () => {
     expect(html).toMatch(/<div class="bg-background text-foreground"><footer/);
   });
 });
+
+import { renderBlock, renderInlineText } from "@/components/blog/blocks";
+
+describe("article formatting", () => {
+  it("renders <mark> spans as highlights, keeping links inside the same text", () => {
+    const html = render(<p>{renderInlineText("See <mark>the usage rank</mark> and [docs](https://claude.com/docs).")}</p>);
+    expect(html).toMatch(/<mark[^>]*>the usage rank<\/mark>/);
+    expect(html).toContain('href="https://claude.com/docs"');
+    expect(html).not.toContain("&lt;mark");
+  });
+
+  it("renders a list block, ordered or not, with inline formatting", () => {
+    const ul = render(<>{renderBlock({ type: "list", items: ["One <mark>hi</mark>", "Two"] }, 0)}</>);
+    expect(ul).toMatch(/<ul[^>]*>.*<li[^>]*>One <mark[^>]*>hi<\/mark><\/li>.*<\/ul>/);
+    const ol = render(<>{renderBlock({ type: "list", ordered: true, items: ["A", "B"] }, 0)}</>);
+    expect(ol).toMatch(/<ol[^>]*>.*<li[^>]*>A<\/li><li[^>]*>B<\/li><\/ol>/);
+  });
+
+  it("renders a callout block with its label and bullet items", () => {
+    const html = decode(render(<>{renderBlock({ type: "callout", label: "Key takeaways", items: ["First", "Second"] }, 0)}</>));
+    expect(html).toContain("Key takeaways");
+    expect(html).toMatch(/<li[^>]*>First<\/li><li[^>]*>Second<\/li>/);
+  });
+
+  it("renders a data table without a heading when it sits inside a section", () => {
+    const html = render(<>{renderBlock({ type: "data-table", columns: ["Period", "Sign-ups"], rows: [["Since", "250 a day"]] }, 0)}</>);
+    expect(html).not.toMatch(/<h2/);
+    expect(html).toContain("250 a day");
+  });
+});

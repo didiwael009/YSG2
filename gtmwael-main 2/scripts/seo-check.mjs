@@ -236,7 +236,7 @@ for (const post of blogPosts) {
   }
   if (visibleFaq && !faqSchema) addError(post, "visible FAQ but no FAQPage schema");
   if (faqSchema && !visibleFaq) addError(post, "FAQPage schema exists but visible FAQ does not match");
-  if (faqSchema?.mainEntity?.length !== (post.faq?.length ?? 0)) addError(post, "FAQPage schema item count does not match visible FAQ");
+  if ((faqSchema?.mainEntity?.length ?? 0) !== (post.faq?.length ?? 0)) addError(post, "FAQPage schema item count does not match visible FAQ");
   for (const [index, item] of (faqSchema?.mainEntity ?? []).entries()) {
     if (!item.name || !item.acceptedAnswer?.text) addError(post, "FAQ schema item missing Question or acceptedAnswer text");
     const visibleItem = post.faq?.[index];

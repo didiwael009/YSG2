@@ -30,6 +30,18 @@ export type BlogBlock =
       dropcap?: boolean;
     }
   | {
+      /** Bullet or numbered list inside the text column. */
+      type: "list";
+      items: string[];
+      ordered?: boolean;
+    }
+  | {
+      /** Boxed summary, e.g. "Key takeaways" under the opening image. */
+      type: "callout";
+      label: string;
+      items: string[];
+    }
+  | {
       type: "quote";
       text: string;
     }
@@ -139,12 +151,12 @@ export type BlogBlock =
       footnote?: string;
     }
   | {
-      /** Generic N-column data table. `align` marks columns that should be right-aligned. */
+      /** Generic N-column data table. `align` marks columns that should be right-aligned. Without a title it sits inside the surrounding section. */
       type: "data-table";
-      id: string;
-      label: string;
-      title: string;
-      paragraphs: string[];
+      id?: string;
+      label?: string;
+      title?: string;
+      paragraphs?: string[];
       columns: string[];
       rows: string[][];
       align?: number[];

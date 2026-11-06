@@ -21,7 +21,7 @@ export const SectionLabel = ({ children }: { children: ReactNode }) => (
   </span>
 );
 
-export const renderInlineText = (text: string) => {
+const renderLinks = (text: string, keyPrefix: string) => {
   const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
 
   return parts.map((part, index) => {
@@ -29,24 +29,37 @@ export const renderInlineText = (text: string) => {
     if (!match) return part;
 
     const [, label, href] = match;
+    const key = `${keyPrefix}-${href}-${index}`;
     const className =
       "text-heading-light underline decoration-primary/40 decoration-2 underline-offset-4 hover:text-primary";
 
     if (href.startsWith("/")) {
       return (
-        <Link key={`${href}-${index}`} to={href} className={className}>
+        <Link key={key} to={href} className={className}>
           {label}
         </Link>
       );
     }
 
     return (
-      <a key={`${href}-${index}`} href={href} target="_blank" rel="noopener noreferrer" className={className}>
+      <a key={key} href={href} target="_blank" rel="noopener noreferrer" className={className}>
         {label}
       </a>
     );
   });
 };
+
+/** Inline markup in article copy: [label](href) links and <mark>…</mark> highlights. */
+export const renderInlineText = (text: string) =>
+  text.split(/(<mark>[\s\S]*?<\/mark>)/g).flatMap((part, index) => {
+    const mark = part.match(/^<mark>([\s\S]*?)<\/mark>$/);
+    if (!mark) return renderLinks(part, `t${index}`);
+    return [
+      <mark key={`m${index}`} className="rounded-sm bg-primary/15 px-1 text-heading-light [box-decoration-break:clone]">
+        {renderLinks(mark[1], `m${index}`)}
+      </mark>,
+    ];
+  });
 
 const Paragraphs = ({
   paragraphs,
@@ -104,6 +117,29 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
             </p>
           ))}
         </section>
+      );
+
+    case "list": {
+      const ListTag = block.ordered ? "ol" : "ul";
+      return (
+        <ListTag className={`mb-6 mt-0 pl-6 ${BODY} ${block.ordered ? "list-decimal" : "list-disc"} marker:text-primary`}>
+          {block.items.map((item) => (
+            <li key={item} className="mb-2 pl-1">{renderInlineText(item)}</li>
+          ))}
+        </ListTag>
+      );
+    }
+
+    case "callout":
+      return (
+        <aside className="my-10 rounded-r-lg border-l-[3px] border-primary bg-primary/[0.06] px-7 py-6">
+          <SectionLabel>{block.label}</SectionLabel>
+          <ul className="m-0 list-disc pl-5 font-serif text-[19px] leading-[1.55] text-heading-light marker:text-primary">
+            {block.items.map((item) => (
+              <li key={item} className="mb-2 last:mb-0">{renderInlineText(item)}</li>
+            ))}
+          </ul>
+        </aside>
       );
 
     case "paragraphs":
@@ -330,11 +366,13 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
 
     case "data-table":
       return (
-        <section id={block.id} className="mt-16 scroll-mt-20">
-          <Heading label={block.label} title={block.title} />
-          <div className="max-w-[680px]">
-            <Paragraphs paragraphs={block.paragraphs} />
-          </div>
+        <section id={block.id} className={block.title ? "mt-16 scroll-mt-20" : "scroll-mt-20"}>
+          {block.title ? <Heading label={block.label ?? ""} title={block.title} /> : null}
+          {block.paragraphs?.length ? (
+            <div className="max-w-[680px]">
+              <Paragraphs paragraphs={block.paragraphs} />
+            </div>
+          ) : null}
           <div className={`my-9 max-w-full overflow-hidden rounded-xl border ${RULE}`}>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse text-[15px]">
