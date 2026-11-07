@@ -35,6 +35,11 @@
       ],
       "destination": "https://www.yoursaasgrowth.com/$1",
       "permanent": true
+    },
+    {
+      "source": "/blog/ai-news-2026-11-06",
+      "destination": "/blog?type=news",
+      "permanent": true
     }
   ]
 }
