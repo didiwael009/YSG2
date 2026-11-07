@@ -92,6 +92,15 @@ describe("article layout", () => {
     expect(html).not.toContain(PROFILE_COPY);
   });
 
+  it("a figure block renders its chart with alt text, size and caption", () => {
+    const post = blogPosts.find((p) => p.slug === "ai-video-script-skills-benchmark")!;
+    const html = decode(render(<BlogPostLayout post={post} />, post.path));
+    expect(html).toContain('src="/ai-video-script-skills-three-trials.webp"');
+    expect(html).toContain('width="1500"');
+    expect(html).toContain("Dots: the three trials. Black bar: the mean.");
+    expect(html).not.toContain("—");
+  });
+
   it("no dark page shell", () => {
     for (const post of [issueFixture, ...blogPosts]) {
       expect(render(<BlogPostLayout post={post} />, post.path)).not.toContain("bg-[#070711]");

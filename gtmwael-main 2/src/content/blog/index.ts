@@ -11,6 +11,7 @@ import { aiNewsClaudeCodeEmailUserAgent } from "./articles/claude-code-email-use
 import { aiNewsFreeOpenSourceSaasClone } from "./articles/free-open-source-saas-clone-no-users";
 import { aiNewsAiWrittenReadmes } from "./articles/ai-written-readmes";
 import { aiNewsGpt6CyberLinuxKernelFlaws } from "./articles/gpt-6-cyber-linux-kernel-flaws";
+import { aiVideoScriptSkillsBenchmark } from "./articles/ai-video-script-skills-benchmark";
 
 export type { BlogBlock, BlogFaq, BlogPost, InternalLink, RelatedPost } from "./types";
 
@@ -27,6 +28,7 @@ export const blogPosts: BlogPost[] = [
   aiNewsFreeOpenSourceSaasClone,
   aiNewsAiWrittenReadmes,
   aiNewsGpt6CyberLinuxKernelFlaws,
+  aiVideoScriptSkillsBenchmark,
 ];
 
 export const getBlogPostBySlug = (slug: string) =>

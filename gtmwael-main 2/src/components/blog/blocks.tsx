@@ -152,6 +152,22 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
         </blockquote>
       );
 
+    case "figure":
+      return (
+        <figure className="my-10">
+          <img
+            src={block.src}
+            alt={block.alt}
+            loading="lazy"
+            decoding="async"
+            width={block.width}
+            height={block.height}
+            className={`block h-auto w-full rounded-lg border ${RULE}`}
+          />
+          <figcaption className={`mt-3 ${MUTED}`}>{renderInlineText(block.caption)}</figcaption>
+        </figure>
+      );
+
     case "section":
       return (
         <section id={block.id} className="mt-16 scroll-mt-20">

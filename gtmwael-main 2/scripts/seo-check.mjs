@@ -84,7 +84,7 @@ const blockText = (block) => {
   if (!block || typeof block !== "object") return "";
   const parts = [];
   for (const [key, value] of Object.entries(block)) {
-    if (["id", "type", "label"].includes(key)) continue;
+    if (["id", "type", "label", "src"].includes(key)) continue;
     if (typeof value === "string") parts.push(value);
     if (Array.isArray(value)) {
       for (const item of value) {

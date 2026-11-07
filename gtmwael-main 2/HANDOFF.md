@@ -214,6 +214,13 @@ https://claude.ai/code/artifact/c60d6221-008c-4cdc-9bc3-b1d6c60253d1
 
 ## Chronology
 
+### 2026-11-07
+
+Published the blog post `/blog/ai-video-script-skills-benchmark` (15 AI video
+script skills scored blind; luck mostly wins), translated from Wael's French
+article. Added a `figure` block (image + caption inside the text column) for
+its two charts, and the SEO check now ignores image `src` when collecting links.
+
 ### 2026-11-06
 
 Added a dark content automation section below the homepage hero and testimonial,

@@ -140,6 +140,15 @@ export type BlogBlock =
       footnote?: string;
     }
   | {
+      /** One image (chart, screenshot) inside the text column, with a caption. */
+      type: "figure";
+      src: string;
+      alt: string;
+      caption: string;
+      width: number;
+      height: number;
+    }
+  | {
       /** Side-by-side before/after screenshots with per-image captions. */
       type: "image-compare";
       id: string;
