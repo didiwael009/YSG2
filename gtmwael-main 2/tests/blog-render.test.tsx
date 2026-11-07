@@ -72,6 +72,18 @@ describe("article layout", () => {
     expect(html).not.toContain("Frequently Asked Questions");
   });
 
+  it("a single news article shows its title and image once", () => {
+    for (const post of blogPosts.filter((p) => p.category === "AI News")) {
+      const html = decode(render(<BlogPostLayout post={post} />, post.path));
+      const item = post.blocks.find((b) => b.type === "news-item")!;
+      if (item.type !== "news-item") continue;
+      expect(html.split(`>${item.title}<`).length - 1, post.slug).toBe(1);
+      expect(html.split(`src="${item.image}"`).length - 1, post.slug).toBe(1);
+      expect(html, post.slug).toContain("Limit:");
+      expect(html, post.slug).toContain(`href="${item.sourceUrl}"`);
+    }
+  });
+
   it("guide keeps its FAQ and title", () => {
     const post = blogPosts.find((p) => p.slug === "saas-traffic-but-no-signups")!;
     const html = decode(render(<BlogPostLayout post={post} />, post.path));

@@ -52,13 +52,14 @@ export function getNewsItems(posts: BlogPost[]): CardRef[] {
   return posts
     .filter(isNewsIssue)
     .sort(byDateDesc)
-    .flatMap((post) =>
-      post.blocks.flatMap((block) =>
+    .flatMap((post) => {
+      const single = post.blocks.filter((b) => b.type === "news-item").length === 1;
+      return post.blocks.flatMap((block) =>
         block.type === "news-item"
           ? [
               {
                 title: block.title,
-                href: `${post.path}#${block.id}`,
+                href: single ? post.path : `${post.path}#${block.id}`,
                 date: post.datePublished,
                 label: block.rubrique,
                 image: block.image,
@@ -67,8 +68,8 @@ export function getNewsItems(posts: BlogPost[]): CardRef[] {
               },
             ]
           : [],
-      ),
-    );
+      );
+    });
 }
 
 export const getGuides = (posts: BlogPost[]) =>

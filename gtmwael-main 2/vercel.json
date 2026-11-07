@@ -26,6 +26,11 @@
   ],
   "redirects": [
     {
+      "source": "/blog/ai-news-2026-11-06",
+      "destination": "/blog?type=news",
+      "statusCode": 301
+    },
+    {
       "source": "/cro-teardowns/lucidya-v2",
       "destination": "/cro-teardowns/lucidya",
       "statusCode": 301

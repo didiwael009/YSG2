@@ -66,10 +66,20 @@ describe("getNewsItems", () => {
   it("returns newest issue first, items in issue order, anchored hrefs", () => {
     const posts = [issue("nov2", "2026-11-02", ["a", "b"]), issue("nov6", "2026-11-06", ["c"])];
     expect(getNewsItems(posts).map((i) => i.href)).toEqual([
-      "/blog/nov6#c",
+      "/blog/nov6",
       "/blog/nov2#a",
       "/blog/nov2#b",
     ]);
+  });
+
+  it("links a single-item news article to its own page, without an anchor", () => {
+    const posts = [issue("opus", "2026-11-06", ["x"]), issue("readmes", "2026-11-06", ["y"])];
+    expect(getNewsItems(posts).map((i) => i.href)).toEqual(["/blog/opus", "/blog/readmes"]);
+  });
+
+  it("every live news card opens a different page", () => {
+    const hrefs = getNewsItems(blogPosts).map((i) => i.href.split("#")[0]);
+    expect(new Set(hrefs).size).toBe(hrefs.length);
   });
 
   it("returns nothing when there is no issue", () => {

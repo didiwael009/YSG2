@@ -425,9 +425,10 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
     case "news-item":
       return (
         <section id={block.id} className={`scroll-mt-20 border-t ${RULE} pt-10 first:border-t-0 first:pt-0 [&:not(:first-child)]:mt-12`}>
-          <SectionLabel>{block.rubrique}</SectionLabel>
-          <h2 className={H2}>{block.title}</h2>
+          {!block.standalone && <SectionLabel>{block.rubrique}</SectionLabel>}
+          {!block.standalone && <h2 className={H2}>{block.title}</h2>}
           <Paragraphs paragraphs={block.text} />
+          {!block.standalone && (
           <figure className="my-6">
             <a href={block.sourceUrl} target="_blank" rel="noopener noreferrer" className="block">
               <img
@@ -439,6 +440,7 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
               />
             </a>
           </figure>
+          )}
           <p className={`border-l-2 border-primary pl-4 ${MUTED}`}>
             Limit: {block.limit} Source:{" "}
             <a

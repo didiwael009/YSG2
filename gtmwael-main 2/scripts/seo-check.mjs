@@ -202,7 +202,9 @@ for (const post of blogPosts) {
   if (canonicalTags[0] !== canonicalFor(post)) addError(post, `canonical mismatch: ${canonicalTags[0] || "missing"}`);
   if (/noindex/i.test(firstMatch(html, /<meta name="robots" content="([^"]*)"/i))) addError(post, "blog post has noindex");
   if (countMatches(html, /<h1\b/gi) !== 1) addError(post, `expected one H1, found ${countMatches(html, /<h1\b/gi)}`);
-  if (stripTags(articleHtml).split(/\s+/).filter(Boolean).length < 250) addError(post, "no substantial article body in prerendered HTML");
+  // AI News posts are one sourced brief each, short by design; guides keep the 250-word floor.
+  const minWords = post.category === "AI News" ? 150 : 250;
+  if (stripTags(articleHtml).split(/\s+/).filter(Boolean).length < minWords) addError(post, "no substantial article body in prerendered HTML");
 
   ["og:title", "og:description", "og:type", "og:url", "og:image"].forEach((property) => {
     if (!html.includes(`property="${property}"`)) addError(post, `missing ${property}`);

@@ -188,6 +188,7 @@ export type BlogBlock =
       limit: string;
       sourceLabel: string;
       sourceUrl: string;
+      standalone?: boolean;
     };
 
 export type BlogPost = {
