@@ -18,10 +18,10 @@ export const saasProductVideo: BlogPost = {
   authorBio:
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-05-18",
-  dateModified: "2026-05-18",
+  dateModified: "2026-11-07",
   schemaType: "Article",
   schemaHeadline: "SaaS Product Video: How to Test Your Product Moment Before Production",
-  schemaDateModified: "2026-05-19",
+  schemaDateModified: "2026-11-07",
   schemaIncludeGlobal: false,
   schemaBreadcrumbs: [
     { name: "Blog", path: "/blog" },
@@ -320,6 +320,15 @@ export const saasProductVideo: BlogPost = {
             "CapCut handles background removal without requiring editing experience.",
           ],
         },
+      ],
+    },
+    {
+      type: "callout",
+      label: "Update, November 7, 2026",
+      items: [
+        "New since this guide was written: on November 4, 2026, Viggle published on Hugging Face the open weights of Viggle Remake, a model built on MiniMax H3 that replaces the people in an existing video and keeps the motion.",
+        "For a UGC hook, one recorded take can become several presenters to test, without a reshoot. One user who ran it locally says it swaps characters better than almost anything, but loses some of the identity fidelity MiniMax H3 is known for.",
+        "Limit: hardware needs are not stated, and recasting someone else's video raises a rights question. Recast only takes you own. Source: [r/StableDiffusion, November 5, 2026](https://www.reddit.com/r/StableDiffusion/comments/1xnui9u/viggle_remake_open_weights_for_recasting_editing/).",
       ],
     },
     {

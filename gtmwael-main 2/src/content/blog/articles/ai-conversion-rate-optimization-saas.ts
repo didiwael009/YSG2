@@ -18,12 +18,12 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
     authorBio:
       "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS founders fix positioning, landing pages, onboarding, and conversion leaks before scaling acquisition.",
     datePublished: "2026-05-06",
-    dateModified: "2026-05-18",
+    dateModified: "2026-11-07",
     schemaType: "Article",
     schemaHeadline: "AI Conversion Rate Optimization for SaaS: What Actually Works",
     schemaDescription:
       "Learn where AI conversion rate optimization helps SaaS funnels, where it fails, and what to fix before adding AI personalization, chatbots, or funnel tools.",
-    schemaDateModified: "2026-05-19",
+    schemaDateModified: "2026-11-07",
     schemaIncludeGlobal: false,
     schemaBreadcrumbs: [
       { name: "Blog", path: "/blog" },
@@ -206,6 +206,15 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
             body:
               "Without pre-AI conversion data, the team cannot tell whether the tool helped, hurt, or made no difference.",
           },
+        ],
+      },
+      {
+        type: "callout",
+        label: "Update, November 7, 2026",
+        items: [
+          "This week a thread on r/ClaudeAI asked for Claude Code projects that do not look AI-generated. It drew 833 upvotes and 927 comments and turned into a mass \"roast my app\": the pages that stood out got the praise, the template-looking apps got roasted.",
+          "The most upvoted advice (211 votes): design the main page in Figma first, then give Claude the mockup as a reference instead of describing the style in words. Same rule as above: AI scales what you have decided, it does not decide for you.",
+          "Limit: the thread gives no conversion data, and we do not know how many of the sites cited were built without a human designer. Source: [r/ClaudeAI, November 5, 2026](https://www.reddit.com/r/ClaudeAI/comments/1xnnqkg/show_me_claude_code_projects_that_dont_look/).",
         ],
       },
       {

@@ -17,13 +17,13 @@ export const saasHomepageStudy: BlogPost = {
   authorBio:
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-08-27",
-  dateModified: "2026-08-27",
+  dateModified: "2026-11-07",
   featured: true,
   schemaType: "Article",
   schemaHeadline: "SaaS Homepage Study: What Changed on 54 Homepages, 2015-2026",
   schemaDescription:
     "A longitudinal study of 54 SaaS homepages across 542 Wayback Machine captures, measuring AI language adoption, call-to-action counts, and headline length from 2015 to 2026.",
-  schemaDateModified: "2026-08-27",
+  schemaDateModified: "2026-11-07",
   schemaIncludeGlobal: false,
   schemaBreadcrumbs: [
     { name: "Blog", path: "/blog" },
@@ -108,6 +108,15 @@ export const saasHomepageStudy: BlogPost = {
         "The consequence is uncomfortable for anyone writing a homepage right now. Radical differentiation works by finding the dominant convention in a market and doing the opposite. At 61%, AI language is the dominant convention. A claim that more than half your category makes is not a differentiator. It is table stakes, and table stakes are what buyers stop reading.",
         "That does not mean removing it. It means the differentiation has to sit somewhere else: in what the AI is pointed at, in the proof, in the specific job it does for a specific buyer. If your headline could be pasted onto a competitor's site without anyone noticing, the 61% has already absorbed you.",
         "This is the move I made with [Screenplay Performance Studio](/case-study/screenplay), which arrived positioned as an AI audio tool. The product worked. The framing did not, because \"AI audio tool\" told a visitor nothing about where to start or what they would end up with. We reframed it as a specific screenplay performance workflow: upload, casting, perform, export. The AI stayed in the product rather than in the pitch. The label was the least differentiating thing it had.",
+      ],
+    },
+    {
+      type: "callout",
+      label: "Update, November 7, 2026",
+      items: [
+        "A sign from this week: the top Hacker News thread on November 4, 2026 (1,494 points, 485 comments) was about Postman installing its AI plugin into developers' coding agents without asking. The most visible comments were about leaving for Insomnia.",
+        "That is not homepage copy, but it shows the other side of the 61%: for part of the audience, AI pushed at them is now a reason to leave, not a reason to buy. Lead with the job the product does and let the AI show up inside it.",
+        "Limit: one thread, about a product feature rather than a headline, and Postman had not answered publicly when I checked. Source: [Hacker News, November 4, 2026](https://news.ycombinator.com/item?id=50354960).",
       ],
     },
     {

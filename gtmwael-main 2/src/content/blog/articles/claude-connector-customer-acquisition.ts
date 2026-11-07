@@ -18,12 +18,12 @@ export const claudeConnectorCustomerAcquisition: BlogPost = {
   authorBio:
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-11-06",
-  dateModified: "2026-11-06",
+  dateModified: "2026-11-07",
   schemaType: "Article",
   schemaHeadline: "Can a Claude connector bring you customers?",
   schemaDescription:
     "How Anthropic's connector directory suggests connectors inside Claude conversations, what one founder reports from it, which SaaS products it suits, and a one-week test plan.",
-  schemaDateModified: "2026-11-06",
+  schemaDateModified: "2026-11-07",
   schemaIncludeGlobal: false,
   schemaBreadcrumbs: [
     { name: "Blog", path: "/blog" },
@@ -280,6 +280,15 @@ export const claudeConnectorCustomerAcquisition: BlogPost = {
       ],
     },
     {
+      type: "callout",
+      label: "Update, November 7, 2026",
+      items: [
+        "The other way into AI assistants: a GitHub issue that reached the top of Hacker News (1,494 points, 485 comments, November 4) accuses Postman of installing its AI plugin into developers' coding agents without asking. Postman's own documentation does describe an installer that adds the plugin to every coding agent it detects on the machine.",
+        "The most visible comments talk about leaving for Insomnia. <mark>The directory works because the user chooses to link your product.</mark> Getting in without that choice turns the same channel into a reason to leave.",
+        "Limit: Postman had not answered publicly when I checked, and the claim that it tries to share all API data comes from the issue's author. Source: [Hacker News, November 4, 2026](https://news.ycombinator.com/item?id=50354960).",
+      ],
+    },
+    {
       type: "section",
       id: "in-practice",
       label: "Checklist",
@@ -300,7 +309,7 @@ export const claudeConnectorCustomerAcquisition: BlogPost = {
       id: "sources",
       label: "Sources",
       title: "Sources",
-      paragraphs: ["Everything above comes from these seven pages, read on November 6, 2026."],
+      paragraphs: ["Everything above comes from these eight pages, read on November 6 and 7, 2026."],
     },
     {
       type: "list",
@@ -312,6 +321,7 @@ export const claudeConnectorCustomerAcquisition: BlogPost = {
         "Refusals and the rules on tool descriptions: [Anthropic, review criteria](https://claude.com/docs/connectors/building/review-criteria)",
         "The dashboard and the health thresholds: [Anthropic, managing your listing](https://claude.com/docs/connectors/building/managing-your-listing)",
         "Publication after approval at OpenAI: [OpenAI, Apps SDK submission](https://developers.openai.com/apps-sdk/deploy/submission)",
+        "Postman and the coding agents: [Hacker News thread, November 4, 2026](https://news.ycombinator.com/item?id=50354960)",
       ],
     },
     {
