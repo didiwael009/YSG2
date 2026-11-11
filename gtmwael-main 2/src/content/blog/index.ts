@@ -13,6 +13,7 @@ import { aiNewsAiWrittenReadmes } from "./articles/ai-written-readmes";
 import { aiNewsGpt6CyberLinuxKernelFlaws } from "./articles/gpt-6-cyber-linux-kernel-flaws";
 import { aiVideoScriptSkillsBenchmark } from "./articles/ai-video-script-skills-benchmark";
 import { aiAnimationStylesBenchmark } from "./articles/ai-animation-styles-benchmark";
+import { aiBlogWritingSkillsBenchmark } from "./articles/ai-blog-writing-skills-benchmark";
 
 export type { BlogBlock, BlogFaq, BlogPost, InternalLink, RelatedPost } from "./types";
 
@@ -31,6 +32,7 @@ export const blogPosts: BlogPost[] = [
   aiNewsGpt6CyberLinuxKernelFlaws,
   aiVideoScriptSkillsBenchmark,
   aiAnimationStylesBenchmark,
+  aiBlogWritingSkillsBenchmark,
 ];
 
 export const getBlogPostBySlug = (slug: string) =>

@@ -1051,6 +1051,28 @@ export const responsiveImageManifest = {
       }
     ]
   },
+  "ai-blog-writing-skills-benchmark": {
+    "width": 1200,
+    "height": 630,
+    "originalBytes": 33274,
+    "variants": [
+      {
+        "width": 320,
+        "src": "/responsive/ai-blog-writing-skills-benchmark-320.webp",
+        "bytes": 4010
+      },
+      {
+        "width": 640,
+        "src": "/responsive/ai-blog-writing-skills-benchmark-640.webp",
+        "bytes": 9518
+      },
+      {
+        "width": 1024,
+        "src": "/responsive/ai-blog-writing-skills-benchmark-1024.webp",
+        "bytes": 16214
+      }
+    ]
+  },
   "b2b-saas-marketing-strategy-framework-wael-aouididi": {
     "width": 1376,
     "height": 768,
