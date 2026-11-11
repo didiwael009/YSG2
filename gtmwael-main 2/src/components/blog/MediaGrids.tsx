@@ -6,7 +6,7 @@ type VideoGridBlock = Extract<BlogBlock, { type: "video-grid" }>;
 type StyleGridBlock = Extract<BlogBlock, { type: "style-grid" }>;
 
 const LABEL = "mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary";
-const H2 = "mb-4 mt-0 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]";
+const H2 = "mb-4 mt-0 font-display text-[22px] font-bold leading-[1.25] text-[#242424] md:text-[24px]";
 const BODY = "mb-5 text-[17px] leading-[1.65] text-[#3d3849] md:text-[18px]";
 const CARD = "overflow-hidden rounded-[20px] border border-[#11111f]/10 bg-[#fbfbfe]";
 const CHIP = "rounded-full border px-3 py-1.5 text-xs font-extrabold transition-colors";

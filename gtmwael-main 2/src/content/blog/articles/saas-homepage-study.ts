@@ -18,7 +18,6 @@ export const saasHomepageStudy: BlogPost = {
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-08-27",
   dateModified: "2026-11-07",
-  featured: true,
   schemaType: "Article",
   schemaHeadline: "SaaS Homepage Study: What Changed on 54 Homepages, 2015-2026",
   schemaDescription:

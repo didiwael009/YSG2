@@ -183,12 +183,12 @@ describe("article template (redesign)", () => {
 describe("magazine home (redesign)", () => {
   const html = render(<Blog />, "/blog");
 
-  it("the study is the entry point with its own cover", () => {
-    expect(html).toMatch(/>54</);
-    expect(html).toContain("SaaS homepages");
-    expect(html).toContain("2015\u20132026");
-    expect(html).toContain("/study-crops/vercel-2021-07.webp");
-    expect(html).toContain("/study-crops/vercel-current-live.webp");
+  it("the lead story is the newest guide, not a pinned older one", () => {
+    const newest = [...blogPosts]
+      .filter((p) => p.category !== "AI News")
+      .sort((a, b) => b.datePublished.localeCompare(a.datePublished))[0];
+    expect(getLeadGuide(blogPosts)!.datePublished).toBe(newest.datePublished);
+    expect(decode(html)).toContain(getLeadGuide(blogPosts)!.title);
   });
 
   it("no generic banner, compact Latest list, 3 column grids", () => {
@@ -232,5 +232,61 @@ describe("article formatting", () => {
     const html = render(<>{renderBlock({ type: "data-table", columns: ["Period", "Sign-ups"], rows: [["Since", "250 a day"]] }, 0)}</>);
     expect(html).not.toMatch(/<h2/);
     expect(html).toContain("250 a day");
+  });
+});
+
+import BenchmarkLayout from "@/components/blog/BenchmarkLayout";
+
+describe("benchmark side CTA", () => {
+  it("the side CTA button wraps inside its 210px card instead of overflowing", () => {
+    const post = blogPosts.find((p) => p.slug === "ai-animation-styles-benchmark")!;
+    const html = render(<BenchmarkLayout post={post} />, post.path);
+    const asides = html.match(/<aside class="hidden lg:block">[\s\S]*?<\/aside>/g) ?? [];
+    const aside = asides.find((a) => decode(a).includes(post.cta!.title));
+    expect(aside).toBeDefined();
+    const link = aside!.match(/<a [^>]*class="([^"]*)"/);
+    expect(link![1]).toContain("w-full");
+    expect(link![1]).toContain("whitespace-normal");
+  });
+});
+
+describe("benchmark reading typography (Medium-style)", () => {
+  const post = blogPosts.find((p) => p.slug === "ai-blog-writing-skills-benchmark")!;
+  const html = render(<BenchmarkLayout post={post} />, post.path);
+  const body = html.match(/<div class="(\[&amp;_\.font-serif\][^"]*)"/)?.[1] ?? "";
+
+  it("body paragraphs use the reading serif at 20px/32px in #242424", () => {
+    expect(body).toContain("[&amp;_p.mb-5]:font-reading");
+    expect(body).toContain("md:[&amp;_p.mb-5]:text-[20px]");
+    expect(body).toContain("md:[&amp;_p.mb-5]:leading-[32px]");
+    expect(body).toContain("[&amp;_p.mb-5]:text-[#242424]");
+  });
+
+  it("paragraphs are spaced like Medium (about 34px)", () => {
+    expect(body).toContain("md:[&amp;_p.mb-5]:mb-[34px]");
+  });
+
+  it("section headings are about 24px instead of 38px", () => {
+    expect(body).toContain("md:[&amp;_h2.font-serif]:text-[24px]");
+    expect(body).not.toContain("text-[38px]");
+  });
+
+  it("the reading serif is loaded from Google Fonts", () => {
+    const index = readFileSync(resolve(__dirname, "../index.html"), "utf8");
+    expect(index).toContain("Source+Serif+4");
+  });
+});
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+
+describe("benchmark media grid headings", () => {
+  it("the animation benchmark section headings are about 24px, not 38px", () => {
+    const post = blogPosts.find((p) => p.slug === "ai-animation-styles-benchmark")!;
+    const html = render(<BenchmarkLayout post={post} />, post.path);
+    const h2s = html.match(/<h2 class="[^"]*"/g) ?? [];
+    const grid = h2s.find((h) => h.includes("mb-4 mt-0"));
+    expect(grid).toBeDefined();
+    expect(grid).toContain("md:text-[24px]");
+    expect(grid).not.toContain("text-[38px]");
   });
 });

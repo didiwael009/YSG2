@@ -17,11 +17,15 @@ const CHIP = "rounded-full border border-white/10 bg-white/[0.055] px-3 py-2 tex
 
 /**
  * The shared blog blocks are written for the serif blog look. Inside the teardown body,
- * headings switch to Sora, copy to Inter and section labels to the teardown kicker.
+ * headings switch to Sora, prose to the reading serif and section labels to the teardown kicker.
  */
 const TEARDOWN_TEXT = [
   "[&_.font-serif]:font-body",
-  "[&_h2.font-serif]:font-display [&_h2.font-serif]:font-bold [&_h2.font-serif]:leading-[1.02] [&_h2.font-serif]:text-[#11101a] [&_h2.font-serif]:text-[31px] md:[&_h2.font-serif]:text-[38px]",
+  "[&_h2.font-serif]:font-display [&_h2.font-serif]:font-bold [&_h2.font-serif]:leading-[1.25] [&_h2.font-serif]:text-[#242424] [&_h2.font-serif]:text-[22px] md:[&_h2.font-serif]:text-[24px]",
+  // Running prose reads like Medium: serif, 20px on 32px, near-black, wider gaps between paragraphs.
+  "[&_p.mb-5]:font-reading [&_p.mb-5]:text-[18px] [&_p.mb-5]:leading-[30px] [&_p.mb-5]:text-[#242424] [&_p.mb-5]:mb-[26px]",
+  "md:[&_p.mb-5]:text-[20px] md:[&_p.mb-5]:leading-[32px] md:[&_p.mb-5]:mb-[34px]",
+  "[&_ul.font-serif]:font-reading [&_ul.font-serif]:text-[#242424] md:[&_ul.font-serif]:text-[20px] md:[&_ul.font-serif]:leading-[32px]",
   "[&_h3.font-serif]:font-display [&_h3.font-serif]:font-bold [&_h3.font-serif]:text-[#11101a]",
   "[&_span.font-mono]:font-body [&_span.font-mono]:font-black [&_span.font-mono]:tracking-[0.09em]",
 ].join(" ");
@@ -143,7 +147,7 @@ const BenchmarkLayout = ({ post }: { post: BlogPost }) => {
                 {faq.length > 0 ? (
                   <section id="faq" className="scroll-mt-28">
                     <span className="mb-3 inline-block text-[11px] font-black uppercase tracking-[0.09em] text-primary">FAQ</span>
-                    <h2 className="mb-5 font-display text-[31px] font-bold leading-[1.02] text-[#11101a] md:text-[38px]">Frequently Asked Questions</h2>
+                    <h2 className="mb-5 font-display text-[22px] font-bold leading-[1.25] text-[#242424] md:text-[24px]">Frequently Asked Questions</h2>
                     <div className="space-y-3">
                       {faq.map((item, index) => (
                         <details key={item.question} open={index === 0} className="rounded-[20px] border border-[#11111f]/10 bg-[#fbfbfe] p-5">
@@ -206,7 +210,7 @@ const BenchmarkLayout = ({ post }: { post: BlogPost }) => {
               <aside className="hidden lg:block">
                 <div className="sticky top-24 rounded-[20px] bg-[#11111f] p-5 text-white shadow-[0_24px_70px_rgba(7,7,17,0.22)]">
                   <strong className="mb-2 block text-[15px] leading-tight">{post.cta.title}</strong>
-                  <Button variant="hero" size="sm" asChild>
+                  <Button variant="hero" size="sm" className="h-auto w-full whitespace-normal py-2.5 text-center leading-tight" asChild>
                     <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
                       {post.cta.button}
                     </a>
