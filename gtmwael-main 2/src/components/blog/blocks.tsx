@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import type { BlogBlock } from "@/content/blog/types";
 import { CALENDLY_URL } from "@/lib/constants";
+import { StyleGrid, VideoGrid } from "./MediaGrids";
 
 /** Blocks that may break out of the 680 px text column, up to 900 px. */
-export const WIDE_BLOCKS = new Set<BlogBlock["type"]>(["data-table", "comparison-table", "image-compare", "data-chart"]);
+export const WIDE_BLOCKS = new Set<BlogBlock["type"]>(["data-table", "comparison-table", "image-compare", "data-chart", "video-grid", "style-grid"]);
 
 const H2 = "mb-5 mt-0 font-serif text-[28px] font-medium leading-[1.15] text-heading-light md:text-[34px]";
 const H3 = "mb-2 mt-0 font-serif text-[21px] font-medium leading-tight text-heading-light";
@@ -38,6 +39,14 @@ const renderLinks = (text: string, keyPrefix: string) => {
         <Link key={key} to={href} className={className}>
           {label}
         </Link>
+      );
+    }
+
+    if (href.startsWith("#")) {
+      return (
+        <a key={key} href={href} className={className}>
+          {label}
+        </a>
       );
     }
 
@@ -438,6 +447,10 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
         </section>
       );
 
+    case "video-grid":
+      return <VideoGrid key={index} block={block} />;
+    case "style-grid":
+      return <StyleGrid key={index} block={block} />;
     case "news-item":
       return (
         <section id={block.id} className={`scroll-mt-20 border-t ${RULE} pt-10 first:border-t-0 first:pt-0 [&:not(:first-child)]:mt-12`}>

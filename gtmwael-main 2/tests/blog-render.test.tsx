@@ -102,7 +102,8 @@ describe("article layout", () => {
   });
 
   it("no dark page shell", () => {
-    for (const post of [issueFixture, ...blogPosts]) {
+    // Benchmark pages opt into the teardown layout, which is dark by design.
+    for (const post of [issueFixture, ...blogPosts].filter((p) => p.layout !== "teardown")) {
       expect(render(<BlogPostLayout post={post} />, post.path)).not.toContain("bg-[#070711]");
     }
   });
@@ -159,7 +160,7 @@ describe("article template (redesign)", () => {
 
   it("only the core principle block is tinted, no white fills", () => {
     expect(b2b.match(/bg-primary\/\[0\.06\]/g)).toHaveLength(1);
-    for (const post of blogPosts) {
+    for (const post of blogPosts.filter((p) => p.layout !== "teardown")) {
       expect(render(<BlogPostLayout post={post} />, post.path)).not.toContain("bg-white");
     }
     expect(b2b).not.toContain("bg-white");

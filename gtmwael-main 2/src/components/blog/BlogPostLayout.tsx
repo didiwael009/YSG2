@@ -9,6 +9,7 @@ import { CALENDLY_URL } from "@/lib/constants";
 import { isNewsIssue } from "@/content/blog/magazine";
 import { DARK_BAND } from "./WaelProfile";
 import { SectionLabel, WIDE_BLOCKS, renderBlock } from "./blocks";
+import BenchmarkLayout from "./BenchmarkLayout";
 
 const formatDate = (date: string) =>
   new Intl.DateTimeFormat("en", {
@@ -36,7 +37,7 @@ const TocList = ({ items }: { items: BlogPost["toc"] }) => (
 // fetchpriority is not in this React version's types.
 const HIGH_PRIORITY = { fetchpriority: "high" } as Record<string, string>;
 
-const BlogPostLayout = ({ post }: { post: BlogPost }) => {
+const ClassicLayout = ({ post }: { post: BlogPost }) => {
   const progressRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -205,5 +206,8 @@ const BlogPostLayout = ({ post }: { post: BlogPost }) => {
     </div>
   );
 };
+
+const BlogPostLayout = ({ post }: { post: BlogPost }) =>
+  post.layout === "teardown" ? <BenchmarkLayout post={post} /> : <ClassicLayout post={post} />;
 
 export default BlogPostLayout;

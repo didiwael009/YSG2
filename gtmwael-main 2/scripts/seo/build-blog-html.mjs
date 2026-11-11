@@ -98,7 +98,8 @@ export const createHtmlBuilder = ({
     }
     return stripHeadSeo(template)
       .replace("</head>", `${buildHead({ route, ...headContext })}\n  </head>`)
-      .replace(/<div id="root">[\s\S]*<\/div>\s*<\/body>/, `<div id="root">${rootContent}</div>\n  </body>`);
+      // A function replacement keeps "$&", "$'" etc. in article text (e.g. "bn$&quot;") literal.
+      .replace(/<div id="root">[\s\S]*<\/div>\s*<\/body>/, () => `<div id="root">${rootContent}</div>\n  </body>`);
   };
 
   const buildNotFoundHtml = () => {

@@ -187,6 +187,70 @@ export type BlogBlock =
       checklist: string[];
     }
   | {
+      /** Grid of short videos, each with its skill, a meta line and the full voice-over text. */
+      type: "video-grid";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs: string[];
+      items: {
+        id: string;
+        title: string;
+        meta: string;
+        about: string;
+        transcriptLabel: string;
+        transcript: string[];
+        src: string;
+        poster: string;
+      }[];
+      closing?: string[];
+    }
+  | {
+      /** Filterable grid of style test videos (family chips, saved picks, muted play-all). */
+      type: "style-grid";
+      id: string;
+      label: string;
+      title: string;
+      paragraphs?: string[];
+      families: { key: string; label: string }[];
+      ui: {
+        all: string;
+        saved: string;
+        playAll: string;
+        stopAll: string;
+        hint: string;
+        empty: string;
+        count: string;
+        saveLabel: string;
+        motion: string;
+        time: string;
+        flowImages: string;
+        allCode: string;
+        subtitles: string;
+        unseen: string;
+      };
+      items: {
+        id: string;
+        n: string;
+        families: string[];
+        familyLabel: string;
+        name: string;
+        repo: string;
+        url?: string;
+        look: string;
+        motion: string;
+        flow: boolean;
+        sound: string;
+        subtitles: string;
+        subtitlesOff?: boolean;
+        time: string;
+        flaws: string[];
+        unseen?: boolean;
+        src: string;
+        poster: string;
+      }[];
+    }
+  | {
       type: "news-item";
       id: string;
       rubrique: string;
@@ -245,6 +309,8 @@ export type BlogPost = {
   internalLinks?: InternalLink[];
   relatedPosts?: RelatedPost[];
   pillarPage?: string;
+  /** "teardown" renders the post in the CRO teardown look (dark hero, white body, side cards). */
+  layout?: "teardown";
   /** Pins this guide as the lead story on /blog. */
   featured?: boolean;
   /** Home-card image; featuredImage and ogImage stay unchanged. */
