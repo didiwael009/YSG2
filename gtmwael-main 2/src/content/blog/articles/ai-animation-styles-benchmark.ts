@@ -6,22 +6,22 @@ export const aiAnimationStylesBenchmark: BlogPost = {
   layout: "teardown",
   category: "Original Research",
   breadcrumbTitle: "AI Animation Styles Benchmark",
-  title: "AI Animation Styles Benchmark: 20 Video Tests Side by Side",
-  h1: "AI animation styles benchmark",
-  metaTitle: "AI Animation Styles Benchmark: 20 Video Tests Side by Side",
+  title: "20 AI Animation Styles, One 15-Second Voice: From 10 Minutes to 7 h 30",
+  h1: "I made 20 AI animation styles from one voice: 10 minutes to 7 h 30",
+  metaTitle: "20 AI Animation Styles, One Voice: 10 Minutes to 7 h 30",
   description:
-    "20 short test videos, each made with a different AI animation skill on the same 15-second voice. Watch them, filter by family and star the styles to keep.",
+    "20 test videos, each made with an AI animation skill on the same 15-second voice. Compare build time and flaws, filter by family, star the styles to keep.",
   searchIntent:
     "Marketers and SaaS founders who make short videos with AI and want to compare animation skills and graphic styles side by side before choosing one.",
   excerpt:
-    '20 test videos, each made with an animation skill on a 15-second voice. 00 to 13 tell the "Google −500 bn$" news story, F1 to F4 (including two variants, F1b and F1c) the "Fable 5.2 at Opus level for half the price" story. Play the videos, filter by family, then star the styles worth keeping.',
+    'I turned one 15-second voice into 20 test videos, each made with an AI animation skill, from about 10 minutes of writing to about 7 h 30 including waits. 00 to 13 tell the "Google −500 bn$" news story, F1 to F4 (including two variants, F1b and F1c) the "Fable 5.2 at Opus level for half the price" story. Play the videos, filter by family, then star the styles worth keeping.',
   author: "Wael Aouididi",
   authorBio:
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-11-11",
   dateModified: "2026-11-11",
   schemaType: "Article",
-  schemaHeadline: "AI animation styles benchmark",
+  schemaHeadline: "I made 20 AI animation styles from one voice: 10 minutes to 7 h 30",
   schemaDescription:
     "20 short test videos made with Claude animation skills and local skills on the same 15-second voice, compared by look, motion, sound, subtitles, time spent and visible flaws.",
   schemaDateModified: "2026-11-11",
@@ -45,13 +45,42 @@ export const aiAnimationStylesBenchmark: BlogPost = {
     "ai explainer video style",
     "short form animation ai",
   ],
-  toc: [{ id: "tests", label: "The 20 tests" }],
+  toc: [
+    { id: "flaws", label: "Even the 7 h 30 style has flaws" },
+    { id: "tests", label: "Filter and star the 20 tests" },
+    { id: "next", label: "Which styles would you keep?" },
+  ],
   blocks: [
+    {
+      type: "paragraphs",
+      lead: true,
+      paragraphs: [
+        "I turned one 15-second news voice into 20 test videos, each made with an AI animation skill. The work behind them ran from about 10 minutes of writing to about 7 h 30 including waits.",
+        "Those are the two ends of these 20 AI animation styles, and every video except the reference lists visible flaws.",
+        "The slowest was the motion choreographer. The fastest was the Claude animation skill from Hanif, just ahead of the Skill Stack risograph style at about 15 minutes.",
+      ],
+    },
+    {
+      type: "section",
+      id: "flaws",
+      label: "Flaws",
+      title: "Even the 7 h 30 style leaves visible flaws, and so do the quick ones",
+      paragraphs: [
+        'The motion choreographer chains impacts: the curve hits the stack of bills, the coins spray out, the AI star crushes the bar. Its flaws are still listed, with the curve running through the "29 OCT." title and small text in scene 2 next to the microphone.',
+        'The quick builds have their own. In the OpenMontage Saul Bass test, a lightning bolt hides "Google" and "−500" for half a second, and in the Educational video creator a coin passes over "−500 Md$" and over the subtitle.',
+        "Sound is the other split. Most videos carry the voice alone or the voice with sound effects, while 08, 12 and F4 add music on top of both.",
+        "Only 00, 03, 10 and 12 use Flow images. The others are all in code.",
+      ],
+    },
     {
       type: "style-grid",
       id: "tests",
       label: "Benchmark",
-      title: "The 20 tests",
+      title: "Filter the 20 tests by family and star the styles worth keeping",
+      paragraphs: [
+        'Videos 00 to 13 tell the "Google −500 bn$" news story, and F1 to F4, including the two variants F1b and F1c, tell the "Fable 5.2 at Opus level for half the price" story. Video 00, the Vox-style paper collage scheduled as a Reel on November 11, is the point of comparison.',
+        "Each card gives the look, the motion, the sound, the subtitles, the time spent and the visible flaws. Only one video plays at a time with sound, and your stars stay in this browser.",
+      ],
       families: [
         { key: "paper", label: "Paper and collage" },
         { key: "graphic", label: "Graphic and type" },
@@ -523,6 +552,16 @@ export const aiAnimationStylesBenchmark: BlogPost = {
           src: "/ai-animation-styles/t17.mp4",
           poster: "/ai-animation-styles/t17.jpg",
         },
+      ],
+    },
+    {
+      type: "section",
+      id: "next",
+      label: "Next step",
+      title: "Which of these styles would you keep for your own videos?",
+      paragraphs: [
+        "Star the styles that fit your story, then check each card's time spent and visible flaws before you pick one.",
+        "Which of the 20 would you star first?",
       ],
     },
   ],

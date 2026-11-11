@@ -6,9 +6,9 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
   layout: "teardown",
   category: "Original Research",
   breadcrumbTitle: "AI Video Script Skills Benchmark",
-  title: "I Tested 15 AI Video Script Skills: Luck Mostly Wins",
-  h1: "I tested 15 AI video script skills. Luck mostly wins.",
-  metaTitle: "I Tested 15 AI Video Script Skills: Luck Mostly Wins",
+  title: "I Tested 15 AI Video Script Skills: The Same Model Swung 1.50 Points",
+  h1: "I tested 15 AI video script skills. The same model swung 1.50 points.",
+  metaTitle: "15 AI Video Script Skills Tested: Same Prompt, 1.50 Points Apart",
   description:
     "15 Claude skills and Custom GPTs wrote the same Reel voice-over, scored blind by two AI judges. The best tool exists, but reruns matter more.",
   searchIntent:
@@ -21,7 +21,8 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
   datePublished: "2026-11-07",
   dateModified: "2026-11-11",
   schemaType: "Article",
-  schemaHeadline: "I tested 15 AI video script skills. Luck mostly wins.",
+  schemaHeadline:
+    "I tested 15 AI video script skills. The same model swung 1.50 points.",
   schemaDescription:
     "A blind benchmark of 15 Claude skills, skill chains and Custom GPTs writing the same short-video voice-over, with three trials per finalist and a no-skill control.",
   schemaDateModified: "2026-11-11",
@@ -47,16 +48,34 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
     "best ai script writer",
   ],
   toc: [
-    { label: "What I tested", id: "method" },
-    { label: "Why one run proves nothing", id: "one-run" },
-    { label: "The verdict after 3 trials", id: "verdict" },
-    { label: "The 8 finalists on video", id: "videos" },
-    { label: "What separates a good script", id: "good-script" },
-    { label: "What I would do this week", id: "this-week" },
-    { label: "What we still do not know", id: "unknowns" },
+    { label: "Same prompt, three scores from 6.36 to 7.86", id: "one-run" },
+    {
+      label: "Vyral is the only tool both on top and consistent",
+      id: "verdict",
+    },
+    { label: "Two AI judges scored every script blind", id: "method" },
+    {
+      label: "All 8 videos share one look, so only the script differs",
+      id: "videos",
+    },
+    {
+      label: "Every skill beat the control by 0.7 to 1.3 points",
+      id: "good-script",
+    },
+    { label: "Another news story could change the order", id: "unknowns" },
+    { label: "Generate three versions and keep the best", id: "this-week" },
     { label: "Sources and tools tested", id: "sources" },
   ],
   blocks: [
+    {
+      type: "paragraphs",
+      paragraphs: [
+        "I tested 15 AI video script skills, and the number that surprised me is 1.50.",
+        "The same model, given the same prompt three times, swung by 1.50 points out of 10. The gap between all 15 tools was 1.71. A best tool exists, but the gap between tools is barely wider than the gap between two runs of the same model.",
+        "Vyral was the only tool that was both on top and consistent after three trials, with no factual error. Generating three versions and keeping the best one is the strongest lever I measured.",
+        "Here is how the luck shows up in the numbers.",
+      ],
+    },
     {
       type: "callout",
       label: "Key takeaways",
@@ -69,37 +88,12 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
     },
     {
       type: "section",
-      id: "method",
-      label: "Method",
-      title: "What I tested, and how",
-      paragraphs: [
-        "The starting point is a story from my daily AI news watch. On r/ClaudeAI, a developer had Claude Code build a sailing simulator, then handed the helm to four models: Opus, GPT-6 Astra, Gemini 4 Argon and a small Qwen. According to him, Argon wins at $0.78 per race, against $3.58 for Astra. But Argon only finishes one run out of two.",
-        "I asked each tool for the same deliverable: a French Reel voice-over, built from the same sheet of checked facts. Each Claude trial ran in a fresh Opus 5.5 session, with tools turned off and the skill's method given as text. The Custom GPTs got the same brief inside ChatGPT.",
-        "Two judges, Opus 5.5 and Fable 5.1, scored the scripts without knowing who wrote them, on 7 criteria out of 10: clarity, accuracy, hook, retention, how natural it sounds spoken, stakes and ending. A factual error caps accuracy at 3. There were three judging passes, then a final round where the 7 best tools wrote 3 scripts each, next to Opus alone, with no skill, as a control.",
-      ],
-    },
-    {
-      type: "data-table",
-      columns: ["What was measured", "Value"],
-      rows: [
-        [
-          "Tools tested",
-          "15 (13 Claude skills or chains, 2 Custom GPTs), plus Opus alone and 3 runs of Fable alone as controls",
-        ],
-        [
-          "Scripts judged",
-          "19 in the first rounds, then 24 in the three-trial round",
-        ],
-        ["Judging cost per pass", "about $1.10"],
-      ],
-    },
-    {
-      type: "section",
       id: "one-run",
       label: "The trap",
-      title: "Why a single run proves nothing",
+      title: "The same model and prompt scored 6.36, 7.86 and 6.93",
       paragraphs: [
-        "In the first rounds, Melvynx came first with 8.57 and Vyral second with 8.32. A clean ranking. Except that I had also run Fable alone three times, with exactly the same prompt. Its three scripts scored 6.36, 7.86 and 6.93.",
+        "In the first rounds, Melvynx came first with 8.57 and Vyral second with 8.32. A clean ranking.",
+        "Except that I had also run Fable alone three times, with exactly the same prompt. Its three scripts scored 6.36, 7.86 and 6.93.",
       ],
     },
     {
@@ -113,7 +107,9 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
     {
       type: "paragraphs",
       paragraphs: [
-        "In other words, the same model with the same prompt moves from last place to sixth depending on the draw. <mark>The gap between its runs (1.50 points) is almost as wide as the gap between all the tools (1.71 points on combined scores).</mark> The judges add their own noise too: the same script, judged again, moves by about 0.24 points.",
+        "In other words, the same model with the same prompt moves from last place to sixth depending on the draw.",
+        "<mark>The gap between its runs (1.50 points) is almost as wide as the gap between all the tools (1.71 points on combined scores).</mark>",
+        "The judges add their own noise too: the same script, judged again, moves by about 0.24 points.",
         "A ranking built on one run per tool measures luck as much as method. That is why I reran the finalists three times each.",
       ],
     },
@@ -121,8 +117,10 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
       type: "section",
       id: "verdict",
       label: "Results",
-      title: "The verdict after three trials per tool",
-      paragraphs: [],
+      title: "Vyral is the only tool both on top and consistent",
+      paragraphs: [
+        "In the final round, the 7 best tools wrote 3 scripts each, next to Opus alone, with no skill, as a control.",
+      ],
     },
     {
       type: "figure",
@@ -206,18 +204,34 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
     {
       type: "paragraphs",
       paragraphs: [
-        "Three things stand out. Vyral is the only tool that is both on top and consistent, with no factual error. Melvynx, first on a single run, drops to fifth on average: its scripts range from 5.79 to 7.79. And from 2nd to 7th place, everything fits within 0.36 points, less than the gap between two runs of the same tool. <mark>Those places are not settled.</mark>",
+        "Three things stand out. Vyral is the only tool that is both on top and consistent, with no factual error.",
+        "Melvynx, first on a single run, drops to fifth on average: its scripts range from 5.79 to 7.79. And from 2nd to 7th place, everything fits within 0.36 points, less than the gap between two runs of the same tool. <mark>Those places are not settled.</mark>",
         "Scores in this round are lower than in earlier passes, because the judges were comparing 24 very similar scripts. Compare the ranks, not the numbers, from one round to the next.",
+      ],
+    },
+    {
+      type: "section",
+      id: "method",
+      label: "Method",
+      title: "Two AI judges scored every script blind",
+      paragraphs: [
+        "The starting point is a story from my daily AI news watch. On r/ClaudeAI, a developer had Claude Code build a sailing simulator, then handed the helm to four models: Opus, GPT-6 Astra, Gemini 4 Argon and a small Qwen.",
+        "According to him, Argon wins at $0.78 per race, against $3.58 for Astra. But Argon only finishes one run out of two.",
+        "I asked each tool for the same deliverable: a French Reel voice-over, built from the same sheet of checked facts. Each Claude trial ran in a fresh Opus 5.5 session, with tools turned off and the skill's method given as text. The Custom GPTs got the same brief inside ChatGPT.",
+        "Two judges, Opus 5.5 and Fable 5.1, scored the scripts without knowing who wrote them, on 7 criteria out of 10: clarity, accuracy, hook, retention, how natural it sounds spoken, stakes and ending. A factual error caps accuracy at 3. There were three judging passes, then the three-trial round above.",
+        "In all, I tested 15 tools: 13 Claude skills or chains and 2 Custom GPTs, plus Opus alone and 3 runs of Fable alone as controls. The judges scored 19 scripts in the first rounds, then 24 in the three-trial round. Judging cost about $1.10 per pass.",
       ],
     },
     {
       type: "video-grid",
       id: "videos",
       label: "On video",
-      title: "The 8 finalists on video",
+      title: "All 8 videos share one look, so only the script differs",
       paragraphs: [
         "To see what each method gives once edited, I made a real video from start to finish with each of the 8 finalists, on another news story from my watch list: Google's $500 billion stock market drop on October 29. Each video was made in a separate session that could not see the others' work, with the same fact sheet.",
-        'The skills marked "installed" ran as real Claude Code skills. The "not installed" ones were read from their GitHub repository, without installing them. The voice (text-to-speech) and the image tool are the same everywhere, so every video has the same paper-collage look: what changes from one video to the next is the script. These videos were not scored by the judges; they show the result, they do not change the ranking above.',
+        'The skills marked "installed" ran as real Claude Code skills. The "not installed" ones were read from their GitHub repository, without installing them.',
+        "The voice (text-to-speech) and the image tool are the same everywhere, so every video has the same paper-collage look: what changes from one video to the next is the script.",
+        "These videos were not scored by the judges; they show the result, they do not change the ranking above.",
       ],
       items: [
         {
@@ -403,17 +417,19 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
         },
       ],
       closing: [
-        'What you hear watching them one after another: Vyral, Chain B and Chain C make clear that the 500 billion is stock market value, not money lost. Chain B turns the news into a check of a headline ("half true"). claude-youtube ends on a sentence cut off on purpose, which loops back to the opening. The no-skill control is the longest (132 words) and the only one to use the formal "vous". All of them end on the same concrete action: look for the nosnippet tag in your pages, except Chain B, which stops at the verdict.',
+        'What you hear watching them one after another: Vyral, Chain B and Chain C make clear that the 500 billion is stock market value, not money lost. Chain B turns the news into a check of a headline ("half true"). claude-youtube ends on a sentence cut off on purpose, which loops back to the opening.',
+        'The no-skill control is the longest (132 words) and the only one to use the formal "vous". All of them end on the same concrete action: look for the nosnippet tag in your pages, except Chain B, which stops at the verdict.',
       ],
     },
     {
       type: "section",
       id: "good-script",
       label: "Quality",
-      title: "What separates a good script from an average one",
+      title: "Every skill beat the control by 0.7 to 1.3 points",
       paragraphs: [
         "Skills clearly beat the control. Opus alone finishes last, at 6.10, and makes an error in each of its three runs. Every tool does better by 0.7 to 1.3 points. A serious skill is worth having, even if picking the best skill matters less than rerunning.",
-        'The most common error is the same almost everywhere: writing that "the cheapest one wins". The fact sheet gives no price for Opus or for Qwen, so nothing proves Gemini is the cheapest of the four. Other slips: promising "the rematch" when a commenter had only suggested it, or writing that Gemini "wins one race out of two".',
+        'The most common error is the same almost everywhere: writing that "the cheapest one wins".',
+        'The fact sheet gives no price for Opus or for Qwen, so nothing proves Gemini is the cheapest of the four. Other slips: promising "the rematch" when a commenter had only suggested it, or writing that Gemini "wins one race out of two".',
         "Here is the opening of Vyral's best script, scored 7.57 (translated from French):",
       ],
     },
@@ -424,14 +440,30 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
     {
       type: "paragraphs",
       paragraphs: [
-        'A concrete tension, credited to its source, and a promise the rest of the script keeps. Both judges only faulted its length. The control\'s worst script, scored 5.64, opens with no stakes ("Four AIs at the helm of a sailboat, and none of them gets advice") and states the $1.56 cost per finish as a fact, when it assumes every run is paid at the same rate.',
+        "A concrete tension, credited to its source, and a promise the rest of the script keeps. Both judges only faulted its length.",
+        'The control\'s worst script, scored 5.64, opens with no stakes ("Four AIs at the helm of a sailboat, and none of them gets advice").',
+        "It also states the $1.56 cost per finish as a fact, when it assumes every run is paid at the same rate.",
+      ],
+    },
+    {
+      type: "section",
+      id: "unknowns",
+      label: "Open questions",
+      title: "Another news story could change the order of the tools",
+      paragraphs: [
+        "This test covers a single news story, in French, for a single format. Another topic could change the order of the tools.",
+        "The judges are two AIs from the same family as the script writers, and my own blind scores are not in the calculation yet.",
+        "The videos above run 30 to 40 seconds, but they cover a different news story and nobody has measured one-listen comprehension yet.",
+        "Costs do not separate the tools either.",
+        "In the last round, a single run cost $0.04 to $2.24, and Melvynx alone $0.05 to $0.73, depending on whether the cache was already built. It will take more runs to compare prices.",
+        "Next: voice the top 3, measure duration and comprehension, then rerun the test on a second news story before choosing a production tool.",
       ],
     },
     {
       type: "section",
       id: "this-week",
       label: "What I would do",
-      title: "What I would do this week",
+      title: "Generate three versions of each script and keep the best",
       paragraphs: [
         "For a team that makes short videos with AI, the test gives a method more than a winner.",
       ],
@@ -447,14 +479,8 @@ export const aiVideoScriptSkillsBenchmark: BlogPost = {
       ],
     },
     {
-      type: "section",
-      id: "unknowns",
-      label: "Open questions",
-      title: "What we still do not know",
+      type: "paragraphs",
       paragraphs: [
-        "This test covers a single news story, in French, for a single format. Another topic could change the order of the tools. The judges are two AIs from the same family as the script writers, and my own blind scores are not in the calculation yet. The videos above run 30 to 40 seconds, but they cover a different news story and nobody has measured one-listen comprehension yet.",
-        "Costs do not separate the tools either. In the last round, a single run cost $0.04 to $2.24, and Melvynx alone $0.05 to $0.73, depending on whether the cache was already built. It will take more runs to compare prices.",
-        "Next: voice the top 3, measure duration and comprehension, then rerun the test on a second news story before choosing a production tool.",
         "And you: how many versions do you generate before you keep a script?",
       ],
     },

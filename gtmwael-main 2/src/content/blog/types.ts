@@ -126,11 +126,14 @@ export type BlogBlock =
   | {
       /** Horizontal bar chart for a measured series. `value` drives bar width; `display` is the printed label. */
       type: "data-chart";
-      id: string;
-      label: string;
-      title: string;
-      paragraphs: string[];
+      /** Without a title the chart sits inline in the surrounding section, with no heading of its own. */
+      id?: string;
+      label?: string;
+      title?: string;
+      paragraphs?: string[];
       caption: string;
+      /** "wide" gives the row labels room for tool names instead of short years. */
+      labelWidth?: "wide";
       rows: {
         label: string;
         value: number;

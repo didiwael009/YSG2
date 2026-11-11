@@ -6,9 +6,9 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
   layout: "teardown",
   category: "Original Research",
   breadcrumbTitle: "AI Blog Writing Skills Benchmark",
-  title: "I Tested 25 AI Blog Writing Skills: No Clear Winner",
+  title: "I Tested 25 AI Blog Writing Skills and Found No Clear Winner",
   h1: "I tested 25 AI blog writing skills. The judges could not separate the best ones.",
-  metaTitle: "I Tested 25 AI Blog Writing Skills: No Clear Winner",
+  metaTitle: "I Tested 25 AI Blog Writing Skills and Found No Clear Winner",
   description:
     "25 Claude skills, skill chains and Custom GPTs wrote the same blog article, scored blind by AI judges. Most gaps sit below judge noise.",
   searchIntent:
@@ -49,20 +49,28 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
     "best ai article writer",
   ],
   toc: [
-    { label: "What every tool had to write", id: "brief" },
-    { label: "How the judging worked", id: "judging" },
-    { label: "Counting the 25 tools", id: "tools" },
-    { label: "Round 1", id: "round-1" },
-    { label: "Round 2", id: "round-2" },
-    { label: "Humanizer and anti-AI passes", id: "humanizer" },
-    { label: "Round 3", id: "round-3" },
-    { label: "The final", id: "final" },
+    { label: "Every tool wrote the same article", id: "brief" },
+    { label: "Blind judges, and errors cost the most", id: "judging" },
+    { label: "Round 1: Blog Prose leads inside the noise", id: "round-1" },
+    { label: "Round 2: a chain wins", id: "round-2" },
+    { label: "Humanizers lowered scores or changed nothing", id: "humanizer" },
+    { label: "Round 3: none above Blog Prose", id: "round-3" },
+    { label: "The final: no clear winner", id: "final" },
     { label: "blog-prose-1 is an outlier", id: "outlier" },
-    { label: "What I would do this week", id: "this-week" },
     { label: "What this cannot tell you", id: "limits" },
+    { label: "What I would do this week", id: "this-week" },
     { label: "Sources and tools tested", id: "sources" },
   ],
   blocks: [
+    {
+      type: "paragraphs",
+      paragraphs: [
+        "I wanted to know whether the skill you load before asking Claude for an article changes the article enough to matter.",
+        "So between 6 and 11 November 2026, I gave 25 AI blog writing tools the same job: write one blog article from the same folder of facts. Two AI judges scored the results without knowing who wrote what.",
+        "The short answer: one method came out on top more often than the others, but the differences between the leaders are smaller than the noise in the judging.",
+        "This is the companion to my [benchmark of AI video script skills](/blog/ai-video-script-skills-benchmark), and the lesson is similar.",
+      ],
+    },
     {
       type: "callout",
       label: "Key takeaways",
@@ -74,76 +82,51 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
       ],
     },
     {
-      type: "paragraphs",
-      paragraphs: [
-        "Between 6 and 11 November 2026, I gave 25 AI writing tools the same job: write one blog article from the same folder of facts. Claude skills from GitHub, chains of two or three skills, and two Custom GPTs. Two AI judges scored the results without knowing who wrote what.",
-        "I wanted to know whether the skill you load before asking Claude for an article changes the article enough to matter. This is the companion to my [benchmark of AI video script skills](/blog/ai-video-script-skills-benchmark), and the short answer is similar: one method came out on top more often than the others, but the differences between the leaders are smaller than the noise in the judging.",
-      ],
-    },
-    {
       type: "section",
       id: "brief",
       label: "Method",
-      title: "What every tool had to write",
+      title: "Every tool wrote the same article from the same facts",
       paragraphs: [
-        "Every tool got the same brief and the same dossier. The task was a detailed French blog article, in Markdown, for marketers curious about AI, explaining my video script benchmark: the comparison, the protocol, the final results, how they differed from the first ranking, the role of luck, the errors, the limits and what to do with it. The brief asked for clickable sources, the images from the dossier where they helped, and every number traceable to the dossier. Tools could not look up the published version.",
+        "Every tool got the same brief and the same dossier.",
+        "The task was a detailed French blog article, in Markdown, for marketers curious about AI. It had to explain my video script benchmark: the comparison, the protocol, the final results, how they differed from the first ranking, the role of luck, the errors, the limits and what to do with it.",
+        "The brief asked for clickable sources, the images from the dossier where they helped, and every number traceable to the dossier. Tools could not look up the published version.",
         "So each tool wrote about the same benchmark, from the same raw material. Whatever changed between articles came from the method, or from chance.",
-        "For the Claude entries, the writer was always Opus 5.5. Each trial ran in one session with the skill's instructions pasted in as text and tools turned off. That means I tested each skill's method, not its installation or its web research. The two Custom GPTs ran in a fresh ChatGPT chat with the full dossier. As a control, I ran Opus 5.5 with the dossier and no skill at all. I call that the control below.",
+        "The tools were Claude skills from GitHub, chains of two or three skills, and two Custom GPTs. For the Claude entries, the writer was always Opus 5.5.",
+        "Each trial ran in one session with the skill's instructions pasted in as text and tools turned off. That means I tested each skill's method, not its installation or its web research.",
+        "The two Custom GPTs ran in a fresh ChatGPT chat with the full dossier. As a control, I ran Opus 5.5 with the dossier and no skill at all. I call that the control below.",
+        "I count a tool as anything a reader could pick and use: a single skill, a fixed chain of skills, or a Custom GPT. That makes 25: 18 single skills, 5 chains and 2 Custom GPTs.",
+        "Round 1 tested 6 of them (2 skills, 2 chains, 2 Custom GPTs). Round 2, on 7 November, added 8 (5 skills, 3 chains), with Blog Prose back as a reference. Round 3, on 11 November, added 11 skills from a new inventory.",
+        "I do not count the Opus control or a reference article Codex wrote in round 1, since neither is a tool you would install.",
       ],
     },
     {
       type: "section",
       id: "judging",
       label: "Judging",
-      title: "How the judging worked",
+      title: "Blind judges scored seven criteria, and errors cost the most",
       paragraphs: [
         "The judges scored each article from 0 to 10 on seven criteria with equal weight:",
       ],
     },
     {
-      type: "data-table",
-      columns: ["Criterion", "What the judge checks"],
-      rows: [
-        ["Clarity", "The topic, the two phases and the results make sense on a first read"],
-        ["Accuracy", "Numbers, quotes, attribution and limits match the dossier"],
-        ["Hook", "Title and opening give a precise reason to keep reading"],
-        ["Progression", "Sections answer each other, tables and images serve the argument"],
-        ["Natural French", "Rhythm, precise wording, a credible voice"],
-        ["Stakes", "The article explains the decisions the results allow"],
-        ["Ending", "A concrete, proportionate consequence or next step"],
+      type: "list",
+      items: [
+        "Clarity: the topic, the two phases and the results make sense on a first read.",
+        "Accuracy: numbers, quotes, attribution and limits match the dossier.",
+        "Hook: title and opening give a precise reason to keep reading.",
+        "Progression: sections answer each other, tables and images serve the argument.",
+        "Natural French: rhythm, precise wording, a credible voice.",
+        "Stakes: the article explains the decisions the results allow.",
+        "Ending: a concrete, proportionate consequence or next step.",
       ],
     },
     {
       type: "paragraphs",
       paragraphs: [
-        "One rule matters more than the others. If an article states something that contradicts the dossier, or presents as established a fact the dossier does not support, the judge must quote the sentence and cap accuracy at 3. One wrong number costs far more than a weak hook.",
-        "The judges never saw the author. Each judge family read the same articles in two fresh sessions, in a different order each time, and an article's score is the average of those passes. In round 1 the two families were Fable 5.1 and GPT. From round 2 on, they were Fable 5.1 and Opus 5.5.",
-      ],
-    },
-    {
-      type: "section",
-      id: "tools",
-      label: "The field",
-      title: "Counting the 25 tools",
-      paragraphs: [
-        "I count a tool as anything a reader could pick and use: a single skill, a fixed chain of skills, or a Custom GPT. I do not count the Opus control or a reference article Codex wrote in round 1, since neither is a tool you would install.",
-      ],
-    },
-    {
-      type: "data-table",
-      columns: ["Round", "New tools tested", "Detail"],
-      align: [1],
-      rows: [
-        ["Round 1", "6", "2 skills, 2 chains, 2 Custom GPTs"],
-        ["Round 2 (7 Nov)", "8", "5 skills, 3 chains (Blog Prose came back as a reference)"],
-        ["Round 3 (11 Nov)", "11", "11 skills from a new inventory"],
-        ["Total", "25", "18 single skills, 5 chains, 2 Custom GPTs"],
-      ],
-    },
-    {
-      type: "paragraphs",
-      paragraphs: [
-        "Two of the round 3 entries, stop-slop and ce-noslop, did not write from scratch. They are editing skills, so I had them revise the best existing article (blog-prose-1) instead.",
+        "One rule matters more than the others.",
+        "If an article states something that contradicts the dossier, or presents as established a fact the dossier does not support, the judge must quote the sentence and cap accuracy at 3. One wrong number costs far more than a weak hook.",
+        "The judges never saw the author. Each judge family read the same articles in two fresh sessions, in a different order each time. An article's score is the average of those passes.",
+        "In round 1 the two families were Fable 5.1 and GPT. From round 2 on, they were Fable 5.1 and Opus 5.5.",
       ],
     },
     {
@@ -152,53 +135,77 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
       label: "Round 1",
       title: "Round 1: Blog Prose takes the lead by less than the noise",
       paragraphs: [
-        "In the first selection, one article per tool, the top tool article was blog-prose-1 at 8.36. Only the Codex reference article scored higher, at 8.39. The editorial chain (Content Research Writer, then Blog Prose, then Avoid AI Writing) came next at 8.18. The two Custom GPTs finished at 7.25 and 6.71.",
+        "In the first selection, one article per tool, the top tool article was blog-prose-1 at 8.36. Only the Codex reference article scored higher, at 8.39.",
+        "The editorial chain (Content Research Writer, then Blog Prose, then Avoid AI Writing) came next at 8.18. The two Custom GPTs finished at 7.25 and 6.71.",
         "The two best methods then went to a final with three new articles each, next to three new articles from the control.",
       ],
     },
     {
-      type: "data-table",
-      columns: ["Method", "Average", "Article 1", "Article 2", "Article 3", "Spread"],
-      align: [1, 2, 3, 4, 5],
+      type: "data-chart",
+      caption: "Round 1 final · average of three new articles, out of 10",
+      labelWidth: "wide",
       rows: [
-        ["Blog Prose", "7.74", "6.96", "8.21", "8.04", "1.25"],
-        ["Editorial chain", "7.63", "7.89", "7.57", "7.43", "0.46"],
-        ["Opus alone (control)", "7.55", "7.43", "7.54", "7.68", "0.25"],
+        { label: "Blog Prose", value: 7.74, display: "7.74" },
+        { label: "Editorial chain", value: 7.63, display: "7.63" },
+        {
+          label: "Opus alone (control)",
+          value: 7.55,
+          display: "7.55",
+          muted: true,
+        },
       ],
+      footnote:
+        "Three articles each: Blog Prose 6.96 / 8.21 / 8.04 (spread 1.25), editorial chain 7.89 / 7.57 / 7.43 (spread 0.46), control 7.43 / 7.54 / 7.68 (spread 0.25).",
     },
     {
       type: "paragraphs",
       paragraphs: [
-        "Blog Prose won by 0.11 over the chain and 0.19 over the control. In the same final, the same article judged twice by the same family moved by 0.37 points on average, and the two judge families disagreed by 0.55 points on average. <mark>A lead of 0.11 does not survive that.</mark> Blog Prose also had the widest spread of the three: its worst article was the lowest score in the final.",
-        'Every one of the nine final articles had at least one factual error flagged by at least one judge. With a stricter threshold, at least two evaluations flagging the same article, Blog Prose had errors in 2 of 3 articles and the other two methods in 3 of 3. A typical confirmed error: one article from the chain said the batch contained "four skills alone" when the protocol had three.',
+        "Blog Prose won by 0.11 over the chain and 0.19 over the control.",
+        "In the same final, the same article judged twice by the same family moved by 0.37 points on average. The two judge families disagreed by 0.55 points on average. <mark>A lead of 0.11 does not survive that.</mark>",
+        "Blog Prose also had the widest spread of the three: its worst article was the lowest score in the final.",
+        "Every one of the nine final articles had at least one factual error flagged by at least one judge. With a stricter threshold, at least two evaluations flagging the same article, Blog Prose had errors in 2 of 3 articles and the other two methods in 3 of 3.",
+        'A typical confirmed error: one article from the chain said the batch contained "four skills alone" when the protocol had three.',
       ],
     },
     {
       type: "section",
       id: "round-2",
       label: "Round 2",
-      title: "Round 2: a chain wins, and humanizer passes cost points",
+      title: "Round 2: a chain wins, and plain Opus ties the second-best skill",
       paragraphs: [
-        "Round 2 ran through the Anthropic API with GitHub skills only, no Custom GPTs. In the selection (one article each), LangChain's deepagents blog-post skill scored highest at 8.71. Behind it, three entries tied at 8.46: technical-blog-writing, a chain of blog-writing-specialist then avoid-ai-writing, and one of the control's three runs.",
+        "Round 2 ran through the Anthropic API with GitHub skills only, no Custom GPTs.",
+        "In the selection (one article each), LangChain's deepagents blog-post skill scored highest at 8.71. Behind it, three entries tied at 8.46: technical-blog-writing, a chain of blog-writing-specialist then avoid-ai-writing, and one of the control's three runs.",
         "That tie is the useful part. The control, the same model with no skill, scored 7.54, 8.07 and 8.46 across its three runs. A single draw from plain Opus tied the second-best skill.",
         "The four best went to a final with three articles each:",
       ],
     },
     {
-      type: "data-table",
-      columns: ["Rank", "Tool", "Average", "Three articles", "Spread", "Articles with an error"],
-      align: [0, 2, 4, 5],
+      type: "data-chart",
+      caption: "Round 2 final · average of three articles, out of 10",
+      labelWidth: "wide",
       rows: [
-        ["1", "blog-writing-specialist, then avoid-ai-writing", "8.18", "8.00 / 8.14 / 8.39", "0.39", "0 of 3"],
-        ["2", "deepagents blog-post", "8.05", "7.71 / 7.75 / 8.68", "0.97", "2 of 3"],
-        ["3", "technical-blog-writing", "7.74", "7.39 / 7.39 / 8.43", "1.04", "2 of 3"],
-        ["4", "Opus alone (control)", "7.68", "7.18 / 7.54 / 8.32", "1.14", "2 of 3"],
+        {
+          label: "blog-writing-specialist, then avoid-ai-writing",
+          value: 8.18,
+          display: "8.18",
+        },
+        { label: "deepagents blog-post", value: 8.05, display: "8.05" },
+        { label: "technical-blog-writing", value: 7.74, display: "7.74" },
+        {
+          label: "Opus alone (control)",
+          value: 7.68,
+          display: "7.68",
+          muted: true,
+        },
       ],
+      footnote:
+        "Three articles each, with spread and articles with an error: the chain 8.00 / 8.14 / 8.39 (0.39, 0 of 3), deepagents 7.71 / 7.75 / 8.68 (0.97, 2 of 3), technical-blog-writing 7.39 / 7.39 / 8.43 (1.04, 2 of 3), control 7.18 / 7.54 / 8.32 (1.14, 2 of 3).",
     },
     {
       type: "paragraphs",
       paragraphs: [
-        "Here, an article counts as having an error when at least two passes flagged one. The chain was the only entry that was both consistent and error-free. Its lead over deepagents was 0.13, under the judge noise. All three tools beat the control on average, by 0.06 to 0.50 points.",
+        "Here, an article counts as having an error when at least two passes flagged one.",
+        "The chain was the only entry that was both consistent and error-free. Its lead over deepagents was 0.13, under the judge noise. All three tools beat the control on average, by 0.06 to 0.50 points.",
         "deepagents repeated something I saw with the video scripts: first on a single article, second over three. Its best article and its worst were almost a point apart.",
       ],
     },
@@ -206,9 +213,10 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
       type: "section",
       id: "humanizer",
       label: "Humanizers",
-      title: "What the humanizer and anti-AI passes did",
+      title: "Humanizer passes lowered the score or changed nothing",
       paragraphs: [
-        'A common habit is to write a draft with one tool, then run it through a "humanizer" to strip AI tells. I tested that directly, and on these data it mostly did not help.',
+        'A common habit is to write a draft with one tool, then run it through a "humanizer" to strip AI tells.',
+        "I tested that directly, and on these data it mostly did not help.",
       ],
     },
     {
@@ -221,7 +229,8 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
     {
       type: "paragraphs",
       paragraphs: [
-        "There is one exception. The round 2 winner ends with avoid-ai-writing, and in the selection that chain scored 8.46 against 7.89 for blog-writing-specialist alone. My guess is that an anti-AI pass helps a weaker draft and hurts a strong one, but I only have one case on each side, so treat that as a hypothesis.",
+        "There is one exception. The round 2 winner ends with avoid-ai-writing, and in the selection that chain scored 8.46 against 7.89 for blog-writing-specialist alone.",
+        "My guess is that an anti-AI pass helps a weaker draft and hurts a strong one. I only have one case on each side, so treat that as a hypothesis.",
       ],
     },
     {
@@ -230,7 +239,9 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
       label: "Round 3",
       title: "Round 3: eleven new skills, none above Blog Prose",
       paragraphs: [
-        "On 11 November I built an inventory of blog writing skills on GitHub and ran 11 I had not tested. The writer was again Opus 5.5 with the skill pasted as text. To keep the scores comparable, I mixed the new articles with older ones I had already scored (I call these anchors), and judged them in two batches of 12.",
+        "On 11 November I built an inventory of blog writing skills on GitHub and ran 11 I had not tested. The writer was again Opus 5.5 with the skill pasted as text.",
+        "To keep the scores comparable, I mixed the new articles with older ones I had already scored. I call these anchors. I judged them in two batches of 12.",
+        "Two of the entries, stop-slop and ce-noslop, did not write from scratch. They are editing skills, so I had them revise the best existing article (blog-prose-1) instead.",
       ],
     },
     {
@@ -257,22 +268,66 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
     {
       type: "paragraphs",
       paragraphs: [
-        "No new skill scored above blog-prose-1. The most stable newcomer was Corey Haines's copywriting skill, at 7.96 and 7.89, but it stayed below the Opus control article in both batches.",
-        "The anchors also show how much the batch itself moves a score. rezvani content-production went from 8.29 to 7.64. One of the Blog Prose final articles went from 8.50 to 7.68. Same text, same grid, different neighbours. <mark>On this evidence, one judging session cannot separate two tools that are less than about half a point apart.</mark>",
+        "No new skill scored above blog-prose-1.",
+        "The most stable newcomer was Corey Haines's copywriting skill, at 7.96 and 7.89. It still stayed below the Opus control article in both batches.",
+        "The anchors also show how much the batch itself moves a score. Same text, same grid, different neighbours:",
+      ],
+    },
+    {
+      type: "data-chart",
+      caption: "Same article, two judging sessions · score out of 10",
+      labelWidth: "wide",
+      rows: [
+        {
+          label: "rezvani content-production, batch 1",
+          value: 8.29,
+          display: "8.29",
+        },
+        {
+          label: "rezvani content-production, batch 2",
+          value: 7.64,
+          display: "7.64",
+          muted: true,
+        },
+        {
+          label: "A Blog Prose final article, first session",
+          value: 8.5,
+          display: "8.50",
+        },
+        {
+          label: "The same article, second session",
+          value: 7.68,
+          display: "7.68",
+          muted: true,
+        },
+      ],
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
+        "<mark>On this evidence, one judging session cannot separate two tools that are less than about half a point apart.</mark>",
       ],
     },
     {
       type: "section",
       id: "final",
       label: "Final",
-      title: "The final: Corey Haines against Blog Prose",
+      title: "The final: Corey Haines leads by 0.28, inside the noise",
       paragraphs: [
-        "Corey Haines's skill and Blog Prose each wrote three new articles, this time with Opus subagents in Claude Code rather than the API. I judged them blind next to two anchors: four passes (Fable twice, Opus twice), four different orders.",
+        "Corey Haines's skill and Blog Prose each wrote three new articles, this time with Opus subagents in Claude Code rather than the API.",
+        "I judged them blind next to two anchors: four passes (Fable twice, Opus twice), four different orders.",
       ],
     },
     {
       type: "data-table",
-      columns: ["Rank", "Article", "Average", "Fable", "Opus", "Errors per pass"],
+      columns: [
+        "Rank",
+        "Article",
+        "Average",
+        "Fable",
+        "Opus",
+        "Errors per pass",
+      ],
       align: [0, 2, 3, 4, 5],
       rows: [
         ["1", "blog-prose-1 (anchor)", "8.43", "8.43", "8.43", "0.0"],
@@ -288,8 +343,10 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
     {
       type: "paragraphs",
       paragraphs: [
-        "Over its three new articles, Corey Haines averaged 7.67, with 0.68 points between its best and worst. Blog Prose averaged 7.39, with a spread of 0.21. Corey's articles had 0.67 flagged errors each on average, Blog Prose's 1.0.",
-        "The gap is 0.28 points, below the roughly 0.5 points the judges move on their own. I do not call that a win. Corey Haines wrote the best new article, and Blog Prose was more consistent. <mark>Neither method's average beat the Opus control anchor.</mark>",
+        "Over its three new articles, Corey Haines averaged 7.67, with 0.68 points between its best and worst. Blog Prose averaged 7.39, with a spread of 0.21.",
+        "Corey's articles had 0.67 flagged errors each on average, Blog Prose's 1.0.",
+        "The gap is 0.28 points, below the roughly 0.5 points the judges move on their own. I do not call that a win.",
+        "Corey Haines wrote the best new article, and Blog Prose was more consistent. <mark>Neither method's average beat the Opus control anchor.</mark>",
       ],
     },
     {
@@ -298,35 +355,38 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
       label: "The outlier",
       title: "blog-prose-1 is an outlier, not the method's average",
       paragraphs: [
-        "The most stable result in the whole benchmark is a single article. blog-prose-1 was written once, with Blog Prose, in round 1. On 11 November it went through three separate judging sessions: second by 0.03 points in batch 1, then first in batch 2 and first in the final, with no factual error flagged in any pass.",
-        "The earlier rounds are less clean. Round 1 judges did flag an error in it, and the Blog Prose entry carried into round 2 as a reference finished fifth there, with errors in 2 of 4 passes. And none of the six new articles in the final reached it: the Blog Prose articles written for the final scored 7.25 to 7.46.",
+        "The most stable result in the whole benchmark is a single article.",
+        "blog-prose-1 was written once, with Blog Prose, in round 1. On 11 November it went through three separate judging sessions: second by 0.03 points in batch 1, then first in batch 2 and first in the final, with no factual error flagged in any pass.",
+        "The earlier rounds are less clean. Round 1 judges did flag an error in it. The Blog Prose entry carried into round 2 as a reference finished fifth there, with errors in 2 of 4 passes.",
+        "And none of the six new articles in the final reached it: the Blog Prose articles written for the final scored 7.25 to 7.46.",
         "So the method that produced the best article does not reliably produce articles that good. That is the same lesson as the [video benchmark](/blog/ai-video-script-skills-benchmark): the draw matters as much as the tool.",
-        "It is also worth knowing where Blog Prose comes from. When I read the GitHub API on 11 November, [sjmoran/claude-blog-prose](https://github.com/sjmoran/claude-blog-prose) had one star, and it is mine. Corey Haines's [marketingskills](https://github.com/coreyhaines31/marketingskills) repository had 59,710, and Anthropic's knowledge-work-plugins had 35,437. Popularity told me nothing about how the skills would score here.",
+        "It is also worth knowing where Blog Prose comes from. When I read the GitHub API on 11 November, the repositories looked like this:",
       ],
     },
     {
-      type: "section",
-      id: "this-week",
-      label: "What I would do",
-      title: "What I would do this week",
-      paragraphs: [
-        "If you write blog content with Claude, these are the changes I would make based on this benchmark:",
+      type: "data-chart",
+      caption: "GitHub stars on 11 November 2026 · whole repository",
+      labelWidth: "wide",
+      rows: [
+        {
+          label: "coreyhaines31/marketingskills",
+          value: 59710,
+          display: "59,710",
+        },
+        {
+          label: "anthropics/knowledge-work-plugins",
+          value: 35437,
+          display: "35,437",
+        },
+        { label: "sjmoran/claude-blog-prose", value: 1, display: "1" },
       ],
-    },
-    {
-      type: "list",
-      ordered: true,
-      items: [
-        "Paste one method skill into your prompt, then stop adding layers. Blog Prose and Corey Haines's copywriting skill reached the last final. Neither beat the plain Opus anchor on average there, so expect a modest effect, not a transformation.",
-        "Generate three drafts and keep the best one. The spread between three runs of the same method reached 1.25 points, wider than the gap between most tools. I did not test best-of-three as a method, but the spreads suggest it is a cheaper lever than switching skills.",
-        "Skip the humanizer on a draft you already like. In four of the five tests here, a humanizer or anti-AI pass on a finished draft lowered the score or changed nothing.",
-        "Check every number against your source before publishing. In round 1, every final article had at least one error flagged. Errors were the costliest defect in the grid, and no skill removed them reliably.",
-      ],
+      footnote:
+        "The one star on [sjmoran/claude-blog-prose](https://github.com/sjmoran/claude-blog-prose) is mine. Corey Haines's skill lives in [marketingskills](https://github.com/coreyhaines31/marketingskills).",
     },
     {
       type: "paragraphs",
       paragraphs: [
-        "If you run your own comparison, judge each article at least twice, with two different models, in a shuffled order. One pass misranked the same text by up to 0.82 points here.",
+        "Popularity told me nothing about how the skills would score here.",
       ],
     },
     {
@@ -350,6 +410,34 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
       type: "paragraphs",
       paragraphs: [
         "Running it cost little. Round 2 came to about $22 (writing $8.89, judging $13.26), round 3 to $16.98 (writing $4.92, judging $12.06).",
+      ],
+    },
+    {
+      type: "section",
+      id: "this-week",
+      label: "What I would do",
+      title:
+        "What I would do this week: one skill, three drafts, every number checked",
+      paragraphs: [
+        "If you write blog content with Claude, these are the changes I would make based on this benchmark:",
+      ],
+    },
+    {
+      type: "list",
+      ordered: true,
+      items: [
+        "Paste one method skill into your prompt, then stop adding layers. Blog Prose and Corey Haines's copywriting skill reached the last final. Neither beat the plain Opus anchor on average there, so expect a modest effect, not a transformation.",
+        "Generate three drafts and keep the best one. The spread between three runs of the same method reached 1.25 points, wider than the gap between most tools. I did not test best-of-three as a method, but the spreads suggest it is a cheaper lever than switching skills.",
+        "Skip the humanizer on a draft you already like. In four of the five tests here, a humanizer or anti-AI pass on a finished draft lowered the score or changed nothing.",
+        "Check every number against your source before publishing. In round 1, every final article had at least one error flagged. Errors were the costliest defect in the grid, and no skill removed them reliably.",
+      ],
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
+        "If you run your own comparison, judge each article at least twice, with two different models, in a shuffled order. One pass misranked the same text by up to 0.82 points here.",
+        "The next thing I want to run is the same final with a human panel scoring alongside the AI judges.",
+        "Would people rank blog-prose-1 first too?",
       ],
     },
     {
@@ -392,7 +480,6 @@ export const aiBlogWritingSkillsBenchmark: BlogPost = {
       type: "paragraphs",
       paragraphs: [
         "Star counts come from the GitHub API on 11 November 2026 and measure the whole repository, not the writing skill alone.",
-        "The next thing I want to run is the same final with a human panel scoring alongside the AI judges, to see whether people rank blog-prose-1 first too.",
         "Wael Aouididi, yoursaasgrowth",
       ],
     },

@@ -316,12 +316,8 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
 
     case "data-chart": {
       const max = Math.max(...block.rows.map((r) => r.value), 1);
-      return (
-        <section id={block.id} className="mt-16 scroll-mt-20">
-          <Heading label={block.label} title={block.title} />
-          <div className="max-w-[680px]">
-            <Paragraphs paragraphs={block.paragraphs} />
-          </div>
+      const cols = block.labelWidth === "wide" ? "grid-cols-[minmax(0,12rem)_1fr_3rem]" : "grid-cols-[3.4rem_1fr_3rem]";
+      const chart = (
           <figure className={`my-9 max-w-full overflow-hidden rounded-lg border ${RULE} p-6 md:p-8`}>
             <figcaption className="mb-6 font-mono text-[11px] uppercase tracking-[0.08em] text-primary">
               {block.caption}
@@ -330,7 +326,7 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
               {block.rows.map((row) => (
                 <div
                   key={row.label}
-                  className={`grid grid-cols-[3.4rem_1fr_3rem] items-center gap-3 border-b ${RULE} py-2 last:border-b-0`}
+                  className={`grid ${cols} items-center gap-3 border-b ${RULE} py-2 last:border-b-0`}
                 >
                   <span className="text-right font-mono text-[13px] tabular-nums text-body-light">{row.label}</span>
                   <span className="flex h-4 items-center">
@@ -347,6 +343,15 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
               <p className={`mb-0 mt-6 border-t ${RULE} pt-4 ${MUTED}`}>{renderInlineText(block.footnote)}</p>
             ) : null}
           </figure>
+      );
+      if (!block.title) return chart;
+      return (
+        <section id={block.id} className="mt-16 scroll-mt-20">
+          <Heading label={block.label ?? ""} title={block.title} />
+          <div className="max-w-[680px]">
+            <Paragraphs paragraphs={block.paragraphs ?? []} />
+          </div>
+          {chart}
         </section>
       );
     }

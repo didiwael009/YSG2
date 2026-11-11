@@ -290,3 +290,26 @@ describe("benchmark media grid headings", () => {
     expect(grid).not.toContain("text-[38px]");
   });
 });
+
+describe("inline data chart (no section heading, long labels)", () => {
+  const block = {
+    type: "data-chart" as const,
+    caption: "Final average out of 10",
+    labelWidth: "wide" as const,
+    rows: [
+      { label: "Blog Prose", value: 7.74, display: "7.74" },
+      { label: "Opus alone (control)", value: 7.55, display: "7.55", muted: true },
+    ],
+  };
+  const html = decode(render(<>{renderBlock(block, 0)}</>));
+
+  it("renders no h2 when the chart has no title", () => {
+    expect(html).not.toContain("<h2");
+    expect(html).toContain("Final average out of 10");
+  });
+
+  it("gives long tool names a wide label column", () => {
+    expect(html).toContain("grid-cols-[minmax(0,12rem)_1fr_3rem]");
+    expect(html).toContain("Opus alone (control)");
+  });
+});
