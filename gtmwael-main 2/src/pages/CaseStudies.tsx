@@ -52,6 +52,16 @@ const caseStudies = [
     href: "/case-study/pubrella",
     icon: BarChart3,
   },
+  {
+    client: "Write Your Book",
+    title: "Meta Ads case study: £0.22 per landing page view",
+    description:
+      "How a creative angle change cut Write Your Book’s cost per landing page view to £0.22 and lifted CTR to 2.86%.",
+    metric: "£0.22",
+    label: "cost per landing page view",
+    href: "/case-study/write-your-book",
+    icon: BarChart3,
+  },
 ];
 
 const CaseStudies = () => {

@@ -17,6 +17,7 @@ import TeardownCTA from "./TeardownCTA";
 import ArticleBody from "./ArticleBody";
 import QuickAnswerBlock from "./QuickAnswerBlock";
 import { TEARDOWN_CARD_META } from "./teardownMeta";
+import { croTeardownPosts } from "@/content/cro-teardown";
 
 const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
   const progressRef = useRef<HTMLDivElement>(null);
@@ -197,6 +198,27 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                     </div>
                   </section>
                 )}
+
+                {/* Every other teardown, so each one is linked from all the others */}
+                <nav aria-label="All CRO teardowns">
+                  <h3 className="mb-4 font-display text-[22px] font-bold text-[#11111f]">
+                    All CRO teardowns
+                  </h3>
+                  <ul className="flex flex-wrap gap-2">
+                    {croTeardownPosts
+                      .filter((other) => other.slug !== post.slug)
+                      .map((other) => (
+                        <li key={other.slug}>
+                          <Link
+                            to={`/cro-teardowns/${other.slug}`}
+                            className="inline-block rounded-full border border-[#11111f]/10 bg-[#fbfbfe] px-3 py-1.5 text-sm text-[#3a3446] transition-colors hover:border-primary hover:text-primary"
+                          >
+                            {other.companyName}
+                          </Link>
+                        </li>
+                      ))}
+                  </ul>
+                </nav>
               </div>
 
               {/* Right sidebar — audit CTA */}

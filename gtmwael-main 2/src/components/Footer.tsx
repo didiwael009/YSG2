@@ -33,11 +33,23 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
     { label: "Resume", to: "/resume" },
   ];
 
+  const guides = [
+    { label: "CRO Teardowns", to: "/cro-teardowns" },
+    { label: "SaaS Marketing Plan", to: "/saas-marketing-plan" },
+    { label: "B2B SaaS Marketing Strategy", to: "/b2b-saas-marketing-strategy" },
+    { label: "SaaS Cold Email Strategy", to: "/saas-cold-email-strategy" },
+    { label: "LinkedIn Outreach for SaaS", to: "/linkedin-outreach-for-saas" },
+    { label: "Optimise a SaaS Landing Page", to: "/optimize-saas-landing-page" },
+    { label: "Landing Page for Lead Generation", to: "/landing-page-for-lead-generation" },
+    { label: "Google Ads vs Meta Ads for SaaS", to: "/google-ads-vs-meta-ads-saas" },
+  ];
+
   const useCases = [
     { label: "Shipzzer", to: "/case-study/shipzzer" },
     { label: "Screenplay", to: "/case-study/screenplay" },
     { label: "Zembra", to: "/case-study/zembra" },
     { label: "Pubrella", to: "/case-study/pubrella" },
+    { label: "Write Your Book", to: "/case-study/write-your-book" },
   ];
 
   const socials = [
@@ -66,7 +78,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
           </div>
         )}
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-10 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-10 max-w-6xl mx-auto">
           {/* Services */}
           <div>
             <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Services</h3>
@@ -89,6 +101,20 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
                 <li key={p.to}>
                   <Link to={p.to} className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Guides */}
+          <div>
+            <h3 className="text-sm font-semibold text-foreground uppercase tracking-wider mb-4">Guides</h3>
+            <ul className="space-y-2.5">
+              {guides.map((g) => (
+                <li key={g.to}>
+                  <Link to={g.to} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                    {g.label}
                   </Link>
                 </li>
               ))}
