@@ -51,6 +51,11 @@
       "statusCode": 301
     },
     {
+      "source": "/blog/saas-landing-page-google-meta-ads",
+      "destination": "/google-ads-vs-meta-ads-saas",
+      "statusCode": 301
+    },
+    {
       "source": "/(.+)/",
       "has": [{ "type": "host", "value": "yoursaasgrowth.com" }],
       "destination": "https://www.yoursaasgrowth.com/$1",

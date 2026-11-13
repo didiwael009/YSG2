@@ -93,31 +93,9 @@ export const routeContent = {
       },
     ],
     links: [
-      { label: "Read the SaaS landing page article", path: "/blog/saas-landing-page-google-meta-ads" },
+      { label: "Read the SaaS landing page article", path: "/google-ads-vs-meta-ads-saas" },
       { label: "Review landing page conversion service", path: "/landing-page-for-saas" },
       { label: "Explore SaaS case studies", path: "/case-studies" },
-    ],
-  },
-  "/blog/saas-landing-page-google-meta-ads": {
-    intro: "Google Ads captures demand. Meta Ads creates demand. SaaS founders should match the landing page to the visitor's intent instead of sending both channels to one generic page.",
-    sections: [
-      {
-        heading: "Google Ads captures demand",
-        body: "Search visitors already know they have a problem and are actively comparing solutions, so the page should confirm intent quickly, show proof, and make the next step easy.",
-      },
-      {
-        heading: "Meta Ads creates demand",
-        body: "Social visitors are interrupted while scrolling, so the page needs more context, problem education, proof, objection handling, and often a softer call to action.",
-      },
-      {
-        heading: "Founder takeaway",
-        body: "A paid ads strategy does not end at the click. The landing page has to finish the job by matching the visitor's state of mind before more ad spend is added.",
-      },
-    ],
-    links: [
-      { label: "SaaS landing page strategy", path: "/landing-page-for-saas" },
-      { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
-      { label: "Book a landing page audit", path: "/book" },
     ],
   },
   "/cold-email-for-saas": {

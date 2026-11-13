@@ -582,7 +582,7 @@ const LandingPageForSaas = () => {
                     {item.question === "Should I fix the landing page before running ads?" ? (
                       <>
                         Yes, in almost every case. Paid traffic amplifies what is already on the page. If the page has weak messaging, vague proof, or friction in the demo flow, more ad spend makes those problems more expensive — not less visible. Fix the page first, then scale the channel. For a detailed comparison of how Google Ads and Meta Ads need different landing page approaches, see the{" "}
-                        <Link to="/blog/saas-landing-page-google-meta-ads" className="text-primary hover:underline">Google Ads vs Meta Ads SaaS landing page article</Link>.
+                        <Link to="/google-ads-vs-meta-ads-saas" className="text-primary hover:underline">Google Ads vs Meta Ads SaaS landing page article</Link>.
                       </>
                     ) : (
                       item.answer

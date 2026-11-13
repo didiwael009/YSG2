@@ -63,6 +63,35 @@ const landingPageRequirements = [
   "There is basic conversion tracking in place so you know what is working",
 ];
 
+const googlePageChecklist = [
+  { title: "Use a keyword-matched headline", body: "If someone searches for CRM software for small teams, your headline should feel close to that phrase. Not clever. Not abstract. Clear." },
+  { title: "Show the value proposition quickly", body: "Within the first screen, explain who the product is for, what problem it solves, why it is different, and what the user should do next." },
+  { title: "Keep the page short", body: "Google traffic usually does not need a full education journey. Help a ready buyer take the next step." },
+  { title: "Put trust signals above the fold", body: "Customer logos, a short testimonial, a review rating, a security note, or a relevant case study result can reduce doubt before the visitor scrolls." },
+  { title: "Make the CTA visible fast", body: "For high-intent traffic, the user should not need to scroll for 30 seconds to book a demo or start a trial." },
+  { title: "Remove unnecessary navigation", body: "Paid traffic needs focus. Full navigation, blog links, social icons, footer distractions, and five CTAs create leaks." },
+  { title: "Prioritize fast loading speed", body: "Slow pages kill paid ads strategy. Speed is part of trust, especially when CPCs are high." },
+];
+
+const metaPageChecklist = [
+  { title: "Keep visual continuity from ad to page", body: "If your ad uses a specific message, creative, pain point, or visual style, the landing page should continue it." },
+  { title: "Educate the visitor on the problem", body: "Meta traffic often needs problem awareness. Before selling the product, explain the pain clearly." },
+  { title: "Use more storytelling", body: "Explain the old way, why it breaks, what changes with your product, what the better workflow looks like, and how teams use it in real life." },
+  { title: "Add more social proof", body: "Cold traffic needs specific proof: testimonials, screenshots, short customer stories, founder credibility, before-and-after workflows, and use cases." },
+  { title: "Handle objections", body: "Answer doubts about setup, team adoption, company size, trials, and implementation before the sales call." },
+  { title: "Use a softer CTA", body: "A smaller first step like See the Workflow, Watch the Demo, or Get the Free Checklist can create a better path to pipeline for colder visitors." },
+];
+
+const pageComparisonRows = [
+  { label: "Main job", google: "Confirm intent quickly", meta: "Create interest and trust" },
+  { label: "Headline", google: "Keyword-matched", meta: "Problem or story-driven" },
+  { label: "Page length", google: "Shorter and direct", meta: "Longer and educational" },
+  { label: "CTA", google: "Direct demo or trial", meta: "Softer CTA or staged action" },
+  { label: "Social proof", google: "Above the fold", meta: "Repeated throughout page" },
+  { label: "Form placement", google: "Visible early", meta: "After education or proof" },
+  { label: "Content style", google: "Clear, concise, comparison-ready", meta: "Contextual, narrative, trust-building" },
+];
+
 const faq = [
   {
     question: "Is Google Ads or Meta Ads better for B2B SaaS?",
@@ -83,8 +112,16 @@ const faq = [
     question: "What landing page do I need for Google Ads vs Meta Ads?",
     answer:
       "They are different. A Google Ads landing page should confirm the search query intent immediately, move fast to the CTA, and keep the page short and direct. A Meta Ads landing page needs to build context, educate the visitor about the problem, and use a softer first ask. The same page rarely serves both well.",
-    link: "/blog/saas-landing-page-google-meta-ads",
-    linkLabel: "full breakdown of landing page strategy by channel",
+  },
+  {
+    question: "What should a Google Ads landing page include for SaaS?",
+    answer:
+      "A Google Ads landing page should include a keyword-matched headline. It should also show a clear value proposition, trust signals, fast-loading design, limited navigation, and a visible CTA or form.",
+  },
+  {
+    question: "What should a Meta Ads landing page include for SaaS?",
+    answer:
+      "A Meta Ads landing page should build belief before asking for action. It should include visual continuity from the ad, problem education, storytelling, social proof, objection handling, and a softer CTA.",
   },
 ];
 
@@ -131,7 +168,7 @@ export default function GoogleAdsVsMetaAdsSaas() {
                     </a>
                   </Button>
                   <Button variant="outline" size="lg" asChild>
-                    <Link to="/blog/saas-landing-page-google-meta-ads">Read landing page breakdown</Link>
+                    <a href="#landing-page-by-channel">Read landing page breakdown</a>
                   </Button>
                 </div>
               </div>
@@ -255,9 +292,9 @@ export default function GoogleAdsVsMetaAdsSaas() {
 
                 <p className="mt-10 max-w-4xl border-t border-[#ded9d1] pt-6 text-base leading-8 text-[#514b5d]">
                   For a deeper breakdown of how landing page structure changes between Google and Meta traffic, see the{" "}
-                  <Link to="/blog/saas-landing-page-google-meta-ads" className="font-medium text-primary underline-offset-4 hover:underline">
-                    full breakdown of landing page strategy by channel
-                  </Link>
+                  <a href="#landing-page-by-channel" className="font-medium text-primary underline-offset-4 hover:underline">
+                    landing page strategy by channel
+                  </a>
                   .
                 </p>
               </div>
@@ -374,6 +411,85 @@ export default function GoogleAdsVsMetaAdsSaas() {
           </div>
         </section>
 
+        <section id="landing-page-by-channel" className="border-y border-[#ded9d1] bg-[#faf9f6] py-20 text-[#11101a] md:py-24">
+          <div className="container px-4">
+            <AnimateIn>
+              <div className="mx-auto max-w-6xl">
+                <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
+                  <div>
+                    <p className="mb-3 text-xs font-semibold uppercase tracking-[0.24em] text-primary">Landing page by channel</p>
+                    <h2 className="font-display text-4xl font-bold leading-tight tracking-[-0.035em] text-[#11101a] md:text-5xl">
+                      Why one SaaS landing page fails across Google and Meta
+                    </h2>
+                  </div>
+                  <div className="space-y-4 text-lg leading-8 text-[#514b5d]">
+                    <p>One landing page cannot serve two different levels of intent equally well. You can keep the same product, the same design system, and the same brand, but the order of information has to change.</p>
+                    <p>A Google visitor wants speed because they already raised their hand. A Meta visitor needs context because you interrupted them.</p>
+                  </div>
+                </div>
+
+                <div className="mt-12 grid gap-12 lg:grid-cols-2">
+                  <div>
+                    <h3 className="font-display text-2xl font-bold text-[#11101a]">What a Google Ads landing page should do for SaaS</h3>
+                    <p className="mt-4 text-base leading-7 text-[#514b5d]">
+                      A strong Google Ads landing page should be clear, fast, and tightly matched to the search query. The visitor has intent. Do not make them work too hard.
+                    </p>
+                    <div className="mt-6 border-y border-[#ded9d1]">
+                      {googlePageChecklist.map((item, index) => (
+                        <div key={item.title} className="grid gap-4 border-b border-[#ded9d1] py-5 last:border-b-0 sm:grid-cols-[2.5rem_1fr]">
+                          <span className="font-display text-lg font-bold text-primary">{String(index + 1).padStart(2, "0")}</span>
+                          <div>
+                            <p className="font-semibold leading-7 text-[#11101a]">{item.title}</p>
+                            <p className="mt-1 text-sm leading-7 text-[#514b5d]">{item.body}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="rounded-3xl bg-[#0f0d19] p-7 text-white md:p-9">
+                    <h3 className="font-display text-2xl font-bold">What a Meta Ads landing page should do for SaaS</h3>
+                    <p className="mt-4 text-base leading-7 text-white/72">
+                      A Meta Ads landing page needs more patience. The visitor did not search for you, so the page has to earn attention before it can ask for action.
+                    </p>
+                    <div className="mt-6 space-y-5">
+                      {metaPageChecklist.map((item) => (
+                        <div key={item.title} className="flex gap-4 border-t border-white/15 pt-5">
+                          <Check className="mt-1 h-4 w-4 shrink-0 text-primary" />
+                          <div>
+                            <p className="text-sm font-semibold leading-7">{item.title}</p>
+                            <p className="text-sm leading-7 text-white/72">{item.body}</p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <h3 className="mt-16 font-display text-2xl font-bold text-[#11101a]">Google Ads landing page vs Meta Ads landing page</h3>
+                <div className="mt-6 overflow-hidden rounded-2xl border border-[#ded9d1] bg-white">
+                  <div className="grid grid-cols-[0.8fr_1fr_1fr] border-b border-[#ded9d1] bg-[#f3f1ec] text-sm font-semibold text-[#11101a]">
+                    <div className="p-4">Page element</div>
+                    <div className="p-4">Google Ads</div>
+                    <div className="p-4">Meta Ads</div>
+                  </div>
+                  {pageComparisonRows.map((row) => (
+                    <div key={row.label} className="grid grid-cols-1 border-b border-[#ded9d1] last:border-b-0 md:grid-cols-[0.8fr_1fr_1fr]">
+                      <div className="bg-[#faf9f6] p-4 font-semibold text-[#11101a]">{row.label}</div>
+                      <div className="p-4 text-sm leading-7 text-[#514b5d]">{row.google}</div>
+                      <div className="p-4 text-sm leading-7 text-[#514b5d]">{row.meta}</div>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="mt-10 max-w-4xl border-t border-[#d8d2c9] pt-6 text-base leading-8 text-[#514b5d]">
+                  Before you rebuild the full funnel, audit the page sequence. Most leaks come from the wrong headline, proof order, CTA timing, or traffic-source mismatch. If your Google traffic converts and Meta traffic dies, do not blame Meta first. Check the landing page message match.
+                </p>
+              </div>
+            </AnimateIn>
+          </div>
+        </section>
+
         <section className="bg-white py-20 text-[#11101a] md:py-24">
           <div className="container px-4">
             <AnimateIn>
@@ -412,15 +528,6 @@ export default function GoogleAdsVsMetaAdsSaas() {
                       <h3 className="font-display text-xl font-bold text-foreground">{item.question}</h3>
                       <p className="mt-3 text-sm leading-7 text-muted-foreground">
                         {item.answer}
-                        {item.link ? (
-                          <>
-                            {" "}
-                            <Link to={item.link} className="font-medium text-primary underline-offset-4 hover:underline">
-                              {item.linkLabel}
-                            </Link>
-                            .
-                          </>
-                        ) : null}
                       </p>
                     </div>
                   ))}

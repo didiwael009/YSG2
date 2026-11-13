@@ -76,7 +76,7 @@ export const seoRoutes: SeoRoute[] = [
     changefreq: "weekly",
     breadcrumbs: [{ name: "Blog", path: "/blog" }],
     links: [
-      { label: "SaaS landing page article", path: "/blog/saas-landing-page-google-meta-ads" },
+      { label: "SaaS landing page article", path: "/google-ads-vs-meta-ads-saas" },
       { label: "Landing page conversion service", path: "/landing-page-for-saas" },
       { label: "Meta ads service", path: "/meta-ads-for-saas" },
     ],
@@ -527,6 +527,16 @@ export const seoRoutes: SeoRoute[] = [
         answer:
           "They are different. A Google Ads landing page should confirm the search query intent immediately, move fast to the CTA, and keep the page short and direct. A Meta Ads landing page needs to build context, educate the visitor about the problem, and use a softer first ask. The same page rarely serves both well.",
       },
+      {
+        question: "What should a Google Ads landing page include for SaaS?",
+        answer:
+          "A Google Ads landing page should include a keyword-matched headline. It should also show a clear value proposition, trust signals, fast-loading design, limited navigation, and a visible CTA or form.",
+      },
+      {
+        question: "What should a Meta Ads landing page include for SaaS?",
+        answer:
+          "A Meta Ads landing page should build belief before asking for action. It should include visual continuity from the ad, problem education, storytelling, social proof, objection handling, and a softer CTA.",
+      },
     ],
     priority: 0.7,
     changefreq: "monthly",
@@ -535,7 +545,7 @@ export const seoRoutes: SeoRoute[] = [
     links: [
       { label: "Meta Ads for SaaS", path: "/meta-ads-for-saas" },
       { label: "Landing page for SaaS", path: "/landing-page-for-saas" },
-      { label: "Landing page strategy by channel", path: "/blog/saas-landing-page-google-meta-ads" },
+      { label: "Landing page strategy by channel", path: "/google-ads-vs-meta-ads-saas" },
       { label: "Conversion rate optimisation specialist", path: "/conversion-rate-optimisation-specialist" },
     ],
   },

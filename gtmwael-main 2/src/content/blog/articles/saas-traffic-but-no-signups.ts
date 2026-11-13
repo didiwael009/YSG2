@@ -463,7 +463,7 @@ export const saasTrafficButNoSignups: BlogPost = {
       { href: "/conversion-rate-optimisation-specialist", label: "SaaS conversion rate optimisation" },
       { href: "/saas-marketing-plan", label: "SaaS marketing plan" },
       { href: "/b2b-saas-marketing-strategy", label: "B2B SaaS marketing strategy" },
-      { href: "/blog/saas-landing-page-google-meta-ads", label: "Google Ads vs Meta Ads landing pages" },
+      { href: "/google-ads-vs-meta-ads-saas", label: "Google Ads vs Meta Ads landing pages" },
       { href: "/case-studies", label: "SaaS growth case studies" },
     ],
     relatedPosts: [
@@ -474,10 +474,10 @@ export const saasTrafficButNoSignups: BlogPost = {
         href: "/landing-page-for-saas",
       },
       {
-        label: "Blog",
+        label: "Guide",
         title: "Google Ads vs Meta Ads landing pages",
         description: "Learn why paid traffic needs different post-click pages by channel intent.",
-        href: "/blog/saas-landing-page-google-meta-ads",
+        href: "/google-ads-vs-meta-ads-saas",
       },
       {
         label: "Case studies",

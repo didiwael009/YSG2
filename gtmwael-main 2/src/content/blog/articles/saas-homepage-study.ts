@@ -17,12 +17,12 @@ export const saasHomepageStudy: BlogPost = {
   authorBio:
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-08-27",
-  dateModified: "2026-11-07",
+  dateModified: "2026-11-13",
   schemaType: "Article",
   schemaHeadline: "SaaS Homepage Study: What Changed on 54 Homepages, 2015-2026",
   schemaDescription:
     "A longitudinal study of 54 SaaS homepages across 542 Wayback Machine captures, measuring AI language adoption, call-to-action counts, and headline length from 2015 to 2026.",
-  schemaDateModified: "2026-11-07",
+  schemaDateModified: "2026-11-13",
   schemaIncludeGlobal: false,
   schemaBreadcrumbs: [
     { name: "Blog", path: "/blog" },
@@ -62,13 +62,22 @@ export const saasHomepageStudy: BlogPost = {
       ],
     },
     {
+      type: "callout",
+      label: "Key takeaways",
+      items: [
+        "<mark>AI language in a heading went from 0% of homepages in 2018 to 61% in 2026.</mark>",
+        "The median homepage went from 1 action CTA to 4.",
+        "The median H1 went from 5 to 6 words.",
+      ],
+    },
+    {
       type: "section",
       id: "what-we-measured",
       label: "The dataset",
       title: "What we measured on 54 SaaS homepages",
       paragraphs: [
         "Every homepage in this study was read from Wayback Machine captures, one per year where the archive held one, from each company's earliest usable capture through a live read in 2026. That produced 542 usable snapshots across 54 companies, spanning 2015 to 2026.",
-        "For each snapshot we extracted the page title, meta description, H1, every H2 and H3, all clickable elements, and navigation links. The companies range from Stripe, Slack, and Datadog to Linear, Supabase, and Vanta. They were chosen for recognisability and archive depth, which matters for the limitations section at the end.",
+        "For each snapshot we extracted the page title, meta description, H1, every H2 and H3, all clickable elements, and navigation links. The companies range from [Stripe](/cro-teardowns/stripe), Slack, and Datadog to Linear, Supabase, and Vanta. They were chosen for recognisability and archive depth, which matters for the limitations section at the end.",
         "Everything below counts what was on the page. Nothing below is evidence that any change improved conversion, because none of these companies published what happened next.",
       ],
     },
@@ -103,6 +112,7 @@ export const saasHomepageStudy: BlogPost = {
       paragraphs: [
         "Two things stand out in the shape of that curve. The first movement is 2019 to 2020, well before ChatGPT. A small group of data and analytics companies already used the word, mostly to describe modelling rather than generative features. The curve then flattens for two full years.",
         "The real inflection is 2023, and the steep part is 2025 to 2026. Between those two years the share nearly doubles.",
+        "The teardown series shows the same move one company at a time. [Apollo](/cro-teardowns/apollo) now calls itself \"The AI sales platform for smarter, faster revenue growth.\" [Gong](/cro-teardowns/gong) replaced \"Revenue Intelligence\" with \"Revenue AI OS.\" [Crisp](/cro-teardowns/crisp) swapped \"Give your customer experience a human touch\" for an AI positioning statement. [Shopify](/cro-teardowns/shopify) replaced \"The platform commerce is built on\" with \"Be the next AI all-star.\" [Apify](/cro-teardowns/apify) went from \"Extract data from any website\" to \"39,044 tools for your AI.\" [Webflow](/cro-teardowns/webflow) now describes itself as an \"agentic web platform\" in its page title.",
         "This measures what homepages say, not what products do. A heading is cheap. Whether the underlying software changed as fast as the copy did is not a question an archived page can answer.",
         "The consequence is uncomfortable for anyone writing a homepage right now. Radical differentiation works by finding the dominant convention in a market and doing the opposite. At 61%, AI language is the dominant convention. A claim that more than half your category makes is not a differentiator. It is table stakes, and table stakes are what buyers stop reading.",
         "That does not mean removing it. It means the differentiation has to sit somewhere else: in what the AI is pointed at, in the proof, in the specific job it does for a specific buyer. If your headline could be pasted onto a competitor's site without anyone noticing, the 61% has already absorbed you.",
@@ -163,10 +173,11 @@ export const saasHomepageStudy: BlogPost = {
       type: "paragraphs",
       paragraphs: [
         "Nearly three companies added CTAs for every one that removed them. The reading is not \"add more buttons.\"",
+        "The teardowns show what that routing looks like up close. [Shopify](/cro-teardowns/shopify) removed 10 \"Explore\" and \"Start your business\" CTAs and added 10 \"Start for free\" and feature-specific ones. [Agorapulse](/cro-teardowns/agorapulse) replaced its review-site links with \"Book a demo\" and five \"Explore\" CTAs. [Preply](/cro-teardowns/preply) added \"Book a demo\" to a consumer homepage. [Apify](/cro-teardowns/apify) added \"Find your Actor\" and \"Get a demo\". [Intercom](/cro-teardowns/intercom) went the other way and removed its download and demo CTAs.",
         "It is that the homepage stopped being a single funnel entrance and became a routing layer: self-serve here, sales-assisted there, documentation for the evaluator who is ready for neither. That is a plausible response to buyers arriving at genuinely different stages, and it is also what a page looks like when nobody can agree on the primary action.",
         "This data cannot tell you which of those two it is for any given company. If you are running paid traffic into a page like that, the question is worth settling deliberately rather than by accretion. That is the practical overlap with [conversion rate optimisation](/conversion-rate-optimisation-specialist) work.",
         "There is a reason the one-CTA rule fits landing pages better than homepages. Eugene Schwartz's five awareness levels, from unaware through problem aware, solution aware, product aware, to most aware, describe how ready a visitor is to act. A landing page inherits its awareness level from the ad that sent the visitor, so one CTA can match it. A homepage receives all five levels at once, from branded search, a podcast mention, a competitor comparison, and a returning evaluator, in the same hour.",
-        "Read through that lens, the CTA growth in this data is not indiscipline. It is a page trying to solve an orientation problem, the third of the seven levels of conversion, with the only instrument a homepage has. The problem is not having four CTAs. It is having four CTAs of equal visual weight, which leaves every awareness level equally unserved.",
+        "Read through that lens, the CTA growth in this data is not indiscipline. It is a page trying to solve an orientation problem. Orientation is the third of the seven levels of conversion in the CXL framework (Relevance, Trust, Orientation, Stimulance, Security, Convenience, Confirmation), and the [Lucidya teardown](/cro-teardowns/lucidya) scores a live page on all seven. A homepage has only one instrument to answer it: the call to action. The problem is not having four CTAs. It is having four CTAs of equal visual weight, which leaves every awareness level equally unserved.",
         "I have been on the other side of this. On [Pubrella](/case-study/pubrella) the CTAs competed with each other, and cutting the competing paths down to one clear route with progressive disclosure was part of an overhaul that tripled visit-to-signup conversion. That was a landing page. Its visitors all arrived through the same door, at the same awareness level.",
         "Collapsing a homepage to a single path the same way would stand a decent chance of stranding four audiences to serve one. The instruction that transfers between the two is not \"one CTA.\" It is one unmistakable hierarchy. On a landing page that usually means one button. On a homepage it usually does not.",
       ],
@@ -217,6 +228,7 @@ export const saasHomepageStudy: BlogPost = {
         "A plausible explanation sits in the added words themselves. Headlines moved from naming a product category to naming a job and an audience. \"The issue tracking tool you'll enjoy using\" is shorter than \"The product development system for teams and agents,\" but it says less about who the page is for.",
         "The advice these pages are breaking is not the advice most people think it is. The rule from conversion research is that a visitor should understand what you do within five seconds, and that specificity beats generality. Neither of those is a word count. Brevity became the proxy for clarity because it is easier to measure, and a five-word category label can fail the five-second test far more badly than a nine-word sentence that names a buyer.",
         "The test worth running on your own headline is not \"can I cut two words.\" It is the five-second test: show it to someone outside your company, take it away, and ask what the product does and who it is for. Length is only a problem when it buys nothing.",
+        "Two teardowns show the length trade in practice. [Stripe](/cro-teardowns/stripe) replaced \"Global Payments\" with a long value proposition. [Agorapulse](/cro-teardowns/agorapulse) replaced \"Social Media Management Simplified\" with \"Drive Real Impact on Social Media. From Engagement to ROI.\"",
         "[Zembra](/case-study/zembra) is the version of this I have watched up close. The site described a review-scraping API and listed endpoints. Accurate, compact, and useless to the AI and ML teams who were the actual buyers, because it named the mechanism instead of the outcome. Repositioning it around data intelligence meant longer, less technical language on nearly every line. The rebrand, site rebuild, and outbound revamp ran together over eight months, so no single element gets the credit. But nothing about that engagement pointed toward fewer words.",
       ],
     },
@@ -289,7 +301,7 @@ export const saasHomepageStudy: BlogPost = {
       paragraphs: [
         "The findings above are counts of what appeared on archived pages. They are not evidence about performance, and the sample was not drawn at random.",
       ],
-      subheading: "Read the numbers with these five constraints",
+      subheading: "Read the numbers with these six constraints",
       checklist: [
         "This is a convenience sample. The 54 companies were chosen for recognisability and archive depth. They skew toward B2B SaaS with a long public web presence. Nothing here generalises to SaaS as a whole.",
         "Sample sizes differ per finding. Findings 01 and 02 cover all 54 companies; Finding 03 covers 42 pairs for headlines and 40 for meta descriptions.",
@@ -309,7 +321,7 @@ export const saasHomepageStudy: BlogPost = {
     {
       question: "What share of SaaS homepages mention AI?",
       answer:
-        "In this sample, 61% of 2026 captures contain AI, agent, intelligence, LLM, GPT, or copilot in a heading, against 0% in 2018. Measured per company on first versus latest capture, the figure moves from 4% to 52%: 27 companies adopted the language and one dropped it.",
+        "In this sample, 61% of 2026 captures contain AI, agent, intelligence, LLM, GPT, or copilot in a heading, against 0% in 2018. Measured per company, 27 companies adopted the language and one dropped it.",
     },
     {
       question: "Do SaaS homepages have more or fewer CTAs than they used to?",

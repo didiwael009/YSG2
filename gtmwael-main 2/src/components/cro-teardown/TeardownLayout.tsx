@@ -199,6 +199,22 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                   </section>
                 )}
 
+                {/* Back-link to the dataset study (same box on every teardown) */}
+                <Link
+                  to="/blog/saas-homepage-study"
+                  className="block rounded-[20px] border border-[#11111f]/10 bg-[#fbfbfe] p-5 transition duration-200 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(7,7,17,0.09)]"
+                >
+                  <small className="text-[11px] font-black uppercase tracking-[0.08em] text-primary">
+                    Original research
+                  </small>
+                  <strong className="my-2 block leading-tight text-[#11111f]">
+                    See the dataset behind these teardowns
+                  </strong>
+                  <span className="text-sm text-[#6b6475]">
+                    542 homepage captures across 54 SaaS companies, 2015 to 2026.
+                  </span>
+                </Link>
+
                 {/* Every other teardown, so each one is linked from all the others */}
                 <nav aria-label="All CRO teardowns">
                   <h3 className="mb-4 font-display text-[22px] font-bold text-[#11111f]">

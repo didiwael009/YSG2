@@ -18,10 +18,10 @@ export const saasProductVideo: BlogPost = {
   authorBio:
     "SaaS Growth Marketer and fractional growth lead. I help B2B SaaS teams fix positioning, landing pages, outreach, and conversion before they scale traffic.",
   datePublished: "2026-05-18",
-  dateModified: "2026-11-07",
+  dateModified: "2026-11-13",
   schemaType: "Article",
   schemaHeadline: "SaaS Product Video: How to Test Your Product Moment Before Production",
-  schemaDateModified: "2026-11-07",
+  schemaDateModified: "2026-11-13",
   schemaIncludeGlobal: false,
   schemaBreadcrumbs: [
     { name: "Blog", path: "/blog" },
@@ -44,19 +44,20 @@ export const saasProductVideo: BlogPost = {
   ],
   toc: [
     { label: "Short answer", id: "short-answer" },
-    { label: "Definition", id: "what-is-a-saas-product-video" },
-    { label: "Why videos fail", id: "why-most-saas-product-videos-fail" },
-    { label: "Validate first", id: "validate-first-produce-second" },
-    { label: "Product moment", id: "define-the-product-moment" },
-    { label: "HTML demo", id: "build-a-saas-product-demo" },
-    { label: "OBS recording", id: "record-the-demo-with-obs" },
-    { label: "Sound and captions", id: "add-sound-and-captions" },
-    { label: "UGC hook", id: "add-a-ugc-hook" },
-    { label: "Landing page match", id: "match-video-to-landing-page" },
-    { label: "Measurement", id: "measure-saas-product-video" },
-    { label: "Mistakes", id: "common-saas-product-video-mistakes" },
-    { label: "Script framework", id: "script-framework" },
-    { label: "Production", id: "when-to-invest-in-production" },
+    { label: "One before-and-after, not a feature list", id: "what-is-a-saas-product-video" },
+    { label: "The message fails, not the production", id: "why-most-saas-product-videos-fail" },
+    { label: "Validate first, produce second", id: "validate-first-produce-second" },
+    { label: "Step 1: the product moment", id: "define-the-product-moment" },
+    { label: "Step 2: the HTML demo", id: "build-a-saas-product-demo" },
+    { label: "Step 3: OBS recording", id: "record-the-demo-with-obs" },
+    { label: "Step 4: sound and captions", id: "add-sound-and-captions" },
+    { label: "Step 5: the UGC hook", id: "add-a-ugc-hook" },
+    { label: "Step 6: landing page match", id: "match-video-to-landing-page" },
+    { label: "Four signals before polish", id: "measure-saas-product-video" },
+    { label: "Message, sequence and placement mistakes", id: "common-saas-product-video-mistakes" },
+    { label: "Five-part script", id: "script-framework" },
+    { label: "Evidence becomes the brief", id: "when-to-invest-in-production" },
+    { label: "What I would do this week", id: "this-week" },
     { label: "FAQ", id: "faq" },
   ],
   blocks: [
@@ -75,21 +76,32 @@ export const saasProductVideo: BlogPost = {
       lead: true,
       dropcap: true,
       paragraphs: [
-        "Most SaaS product videos fail before they hit an audience.",
-        "Not because the production is bad. Because the message was never tested.",
-        "Teams invest in motion design, voiceover, and brand-aligned UI before they know which product moment the market actually responds to. By the time the video is done, it is built around an assumption, and if that assumption is wrong, rebuilding costs as much as the original.",
+        "I built this workflow from running [Meta Ads for SaaS](/meta-ads-for-saas) creative, and from watching what failed in the first creative iteration and what changed in the second. One of those campaigns was for [One Great Book](https://www.onegreatbook.app/), an AI SaaS tool that helps founders write business books.",
+        "Most SaaS product videos fail before they hit an audience. Not because the production is bad, but because the message was never tested.",
+        "Teams invest in motion design, voiceover, and brand-aligned UI before they know which product moment the market actually responds to.",
+        "By the time the video is done, it is built around an assumption. If that assumption is wrong, rebuilding costs as much as the original.",
         "This article explains a different sequence: validate the product moment first using a GPT prompt, a browser, and OBS. If it works, you now have a brief for polished production. If it does not, you spent two minutes instead of two weeks finding out.",
-        "The workflow here is built from running [Meta Ads for SaaS](/meta-ads-for-saas) creative, specifically from watching what failed in the first creative iteration and what changed in the second. One of those campaigns was for [One Great Book](https://www.onegreatbook.app/), an AI SaaS tool that helps founders write business books.",
+      ],
+    },
+    {
+      type: "callout",
+      label: "Key takeaways",
+      items: [
+        "<mark>A SaaS product video should prove one product moment, a before-and-after a stranger can grasp, before you spend on polished production.</mark>",
+        "Most videos fail on the message, not the production: they lead with features, show the wow moment too late, or never match the landing page.",
+        "A GPT-built HTML demo recorded in OBS lets you test the product moment in two minutes instead of two weeks.",
+        "Read hook rate, hold rate, CTR and landing page message match before you edit the polish. The validated concept then becomes the brief for production.",
       ],
     },
     {
       type: "section",
       id: "what-is-a-saas-product-video",
       label: "Definition",
-      title: "What Is a SaaS Product Video?",
+      title: "A SaaS product video proves one before-and-after, not a feature list",
       paragraphs: [
         "A SaaS product video is a short video that shows your product solving a specific problem. Not a feature tour. Not a brand reel. A specific before-and-after that a cold audience can understand without context.",
-        "There are three formats you will encounter in practice: a demo video that shows the product being used, an explainer video that names the problem and mechanism, and a product demo ad that combines the product moment with a hook designed for Meta, Instagram, or YouTube.",
+        "There are three formats you will encounter in practice:",
+        "A demo video shows the product being used. An explainer video names the problem and mechanism. A product demo ad combines the product moment with a hook designed for Meta, Instagram, or YouTube.",
         "All three fail for the same reason: the team builds them before deciding what the video is supposed to prove.",
       ],
     },
@@ -97,7 +109,7 @@ export const saasProductVideo: BlogPost = {
       type: "dark-checklist",
       id: "why-most-saas-product-videos-fail",
       label: "Failure pattern",
-      title: "Why Most SaaS Product Videos Fail",
+      title: "Most SaaS product videos fail on the message, not the production",
       paragraphs: [
         "A SaaS team decides they need a product video. They brief a designer or video editor. The brief says: show our product, make it look polished, explain the main features. The video comes back looking clean. It performs poorly. Nobody knows why.",
         "The reason is almost always one of these:",
@@ -129,7 +141,7 @@ export const saasProductVideo: BlogPost = {
       type: "numbered-list",
       id: "validate-first-produce-second",
       label: "Sequence",
-      title: "The Better Sequence: Validate First, Produce Second",
+      title: "Validate the product moment first, then pay for production",
       paragraphs: [
         "The correct order is simple. Choose the product moment, build a quick prototype, record it, test it, then invest in polish only after the signal is real.",
         "This costs almost nothing, moves fast, and gives you evidence before you spend on production instead of intuition after production.",
@@ -176,7 +188,7 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "define-the-product-moment",
       label: "Step 1",
-      title: "Step 1: Define the Product Moment",
+      title: "Step 1: The product moment is a before-and-after a stranger grasps in five seconds",
       paragraphs: [
         "Before you open GPT, answer one question: What is the smallest visible transformation your product creates?",
         "That is the product moment. It is not a feature description. It is a before-and-after that a stranger can grasp in under five seconds.",
@@ -209,15 +221,25 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "build-a-saas-product-demo",
       label: "Step 2",
-      title: "Step 2: Build a SaaS Product Demo With GPT and HTML",
+      title: "Step 2: A GPT-built HTML demo shows only the transformation",
       paragraphs: [
         "The HTML demo is the core of this workflow. It is not a mockup or a slide. It is a functional browser interface that shows the before state, the action, and the after state, recorded directly and turned into a video.",
-        "Why HTML instead of screen recording the real product? Your actual product UI often has noise: navigation menus, notification dots, empty states, loading indicators, unrelated features. The HTML demo strips all of that and shows only the product moment. For ad testing, that clarity is more important than authenticity.",
+        "Why HTML instead of screen recording the real product? Your actual product UI often has noise: navigation menus, notification dots, empty states, loading indicators, unrelated features.",
+        "The HTML demo strips all of that and shows only the product moment. For ad testing, that clarity is more important than authenticity.",
+        "If you want the demo to move beyond a plain HTML page, I tested [20 AI animation styles built from one 15-second voice](/blog/ai-animation-styles-benchmark), from 10 minutes to 7 h 30 of build time.",
       ],
     },
     {
       type: "quote",
       text: "Prompt: Create a single HTML page for a 1920x1080 viewport, formatted as a SaaS product demo. On the left side, show disorganized meeting notes. In the center, place a large button labeled Generate Report. When clicked, animate the right panel filling with a clean client report: headline, three sections, action items, and next steps. Use large typography, dark background, white text, no navigation, no branding, no small labels. Just the before state, the action, and the after state.",
+    },
+    {
+      type: "figure",
+      src: "/saas-product-video-html-demo-obs-workflow.webp",
+      alt: "Split-screen SaaS product demo showing before-and-after states recorded with OBS for ad testing",
+      caption: "The before state, the action and the after state in one browser page, recorded with OBS.",
+      width: 1200,
+      height: 630,
     },
     {
       type: "visual-break",
@@ -257,7 +279,7 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "record-the-demo-with-obs",
       label: "Step 3",
-      title: "Step 3: Record the Demo With OBS",
+      title: "Step 3: OBS records the demo, and the wow moment stays out of the platform edges",
       paragraphs: [
         "Open [OBS](https://obsproject.com/) and set the capture source to your browser window.",
         "For vertical Meta placements, set output to 1080x1920. For horizontal or split-screen formats, set output to 1920x1080.",
@@ -269,7 +291,7 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "add-sound-and-captions",
       label: "Step 4",
-      title: "Step 4: Add Sound and Captions",
+      title: "Step 4: Sound and captions are focus cues, not decoration",
       paragraphs: [
         "This step is skipped by most SaaS teams. It is a measurable error.",
         "Sound directs attention. A typing sound under the before state tells the viewer something is happening. A clean click at the button press signals the transition. A subtle reveal sound as the after state appears punctuates the wow moment. These sounds are not decoration; they are focus cues.",
@@ -281,11 +303,14 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "add-a-ugc-hook",
       label: "Step 5",
-      title: "Step 5: Add a UGC Hook",
+      title: "Step 5: A human hook gives recognition before the demo gives proof",
       paragraphs: [
         "A screen recording demo is testable. A screen recording demo combined with a human hook is stronger.",
         "The human element creates emotional recognition before the product moment creates logical validation. The format looks like this: a talking-head clip in the top half of the frame names the problem. The HTML demo in the bottom half shows the solution.",
-        "From a real campaign: this is the format used in Meta Ads for One Great Book across two iterations. The first iteration used a simpler UI with a looser product moment. The second iteration tightened the demo to match the hook and made the transformation more visually distinct. The structure, human hook above and product demo below, stayed consistent because it worked.",
+        "From a real campaign: this is the format used in Meta Ads for One Great Book across two iterations.",
+        // TODO(wael): One Great Book hook rate / hold rate / CTR iteration 1 vs 2
+        "The first iteration used a simpler UI with a looser product moment. The second iteration tightened the demo to match the hook and made the transformation more visually distinct. The structure, human hook above and product demo below, stayed consistent because it worked.",
+        "If you write the hook or voice-over with AI, my [benchmark of 15 AI video script skills](/blog/ai-video-script-skills-benchmark) shows how far the same model swung from one run to the next: 1.50 points.",
       ],
     },
     {
@@ -307,9 +332,9 @@ export const saasProductVideo: BlogPost = {
           ],
         },
         {
-          title: "Use Veo 3 for the visual",
+          title: "Use Veo for the visual",
           bullets: [
-            "For longer clips, audio quality can degrade.",
+            "With Veo 3, audio quality could degrade on longer clips.",
             "Generate the visual, then record or generate a clean voiceover and sync it in post.",
           ],
         },
@@ -335,11 +360,12 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "match-video-to-landing-page",
       label: "Step 6",
-      title: "Step 6: Match the Video to the Landing Page",
+      title: "Step 6: The landing page must repeat the video's promise in the same words",
       paragraphs: [
         "This is where most SaaS ad funnels break silently, and it is directly relevant if you are using the demo on a landing page or linking an ad to a product page.",
         "If the video says: Turn messy meeting notes into client-ready reports in thirty seconds, the landing page headline should say exactly that, not AI-powered productivity for modern teams.",
-        "The visitor clicked because they recognized the product moment. When the landing page does not continue that same promise in the same language, they experience a gap. Most of them leave. The ad looks like it failed. The actual failure is the message disconnect.",
+        "The visitor clicked because they recognized the product moment. When the landing page does not continue that same promise in the same language, they experience a gap.",
+        "Most of them leave. The ad looks like it failed. The actual failure is the message disconnect.",
         "Same transformation. Same language. Same visual proof, with more detail.",
         "This is one of the most common conversion leaks in SaaS paid acquisition. The ad creative does its job. The landing page undoes it.",
         "If you are working on this problem, where traffic is arriving but not converting, the [SaaS landing page optimization service](/landing-page-for-saas) and [conversion rate optimization work](/conversion-rate-optimisation-specialist) are where most of this gets fixed.",
@@ -349,9 +375,11 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "measure-saas-product-video",
       label: "Measurement",
-      title: "How to Measure Whether a SaaS Product Video Is Working",
+      title: "Read four signals before you polish anything",
       paragraphs: [
-        "These are practical signals, not universal benchmarks. Use them as directional guides, not hard rules. The 25% hook rate threshold is consistent with multi-account studies from practitioners tracking Meta video performance; [Vaizle's 2025 review](https://insights.vaizle.com/hook-rate-hold-rate/) of Meta video ads puts 20-25% as a solid baseline, with top performers exceeding 30%.",
+        "These are practical signals, not universal benchmarks. Use them as directional guides, not hard rules.",
+        "The 25% hook rate is in line with [Vaizle's review](https://insights.vaizle.com/hook-rate-hold-rate/) of Meta video ads, which puts 20-25% as a solid baseline, with top performers exceeding 30%.",
+        "The 20% hold rate at 10 seconds and the 0.8% CTR are the thresholds I use, my own rules of thumb rather than published benchmarks.",
       ],
     },
     {
@@ -368,14 +396,14 @@ export const saasProductVideo: BlogPost = {
         {
           title: "Hold rate at 10 seconds",
           bullets: [
-            "Directional target: at least 20%.",
+            "The threshold I use: at least 20%.",
             "If below target, tighten the demo and move the wow moment earlier.",
           ],
         },
         {
           title: "CTR after 10K impressions",
           bullets: [
-            "Directional target: at least 0.8%.",
+            "The threshold I use: at least 0.8%.",
             "If below target, replace the angle, not just the execution.",
           ],
         },
@@ -392,9 +420,9 @@ export const saasProductVideo: BlogPost = {
       type: "dark-checklist",
       id: "common-saas-product-video-mistakes",
       label: "Mistakes",
-      title: "Common SaaS Product Video Mistakes",
+      title: "Most SaaS product video mistakes are message, sequence and placement problems",
       paragraphs: [
-        "Most SaaS product video problems are not production problems. They are message, sequence, and placement problems.",
+        "Seven mistakes come up again and again. None of them is fixed by a bigger production budget.",
       ],
       items: [
         {
@@ -438,7 +466,7 @@ export const saasProductVideo: BlogPost = {
       type: "numbered-list",
       id: "script-framework",
       label: "Framework",
-      title: "SaaS Product Video Script Framework",
+      title: "Five parts carry a product video script",
       paragraphs: [
         "A simple five-part structure works across demo ads, landing page videos, and explainer formats.",
         "This structure works because it mirrors how buyers actually think. They are not looking for features. They are looking for evidence that the problem they have right now will be solved.",
@@ -475,13 +503,34 @@ export const saasProductVideo: BlogPost = {
       type: "section",
       id: "when-to-invest-in-production",
       label: "Production",
-      title: "When to Invest in Polished Production",
+      title: "Once the numbers clear, the evidence becomes the brief for polished production",
       paragraphs: [
         "Once the numbers clear the thresholds above, you have something more valuable than a polished video: you have evidence that the product moment works.",
         "That evidence is the brief for polished production.",
-        "The brief becomes simple: same before state, same action, same after state, with production quality that reflects the brand. The motion designer or video editor does not need to invent the concept. Their job is to make the validated concept look its best.",
-        "This is the correct order. It is also the reverse of how most SaaS teams approach it. They produce first and validate second, which means most polished SaaS product videos are built on untested assumptions about what the market cares about.",
+        "The brief becomes simple: same before state, same action, same after state, with production quality that reflects the brand.",
+        "The motion designer or video editor does not need to invent the concept. Their job is to make the validated concept look its best.",
+        "This is the correct order. It is also the reverse of how most SaaS teams approach it. They produce first and validate second, so most polished SaaS product videos are built on untested assumptions about what the market cares about.",
         "If the bigger issue is channel order, use the [SaaS marketing plan](/saas-marketing-plan) and [B2B SaaS marketing strategy](/b2b-saas-marketing-strategy) pages to map where video belongs in the wider growth system.",
+      ],
+    },
+    {
+      type: "section",
+      id: "this-week",
+      label: "Next step",
+      title: "What I would do this week",
+      paragraphs: [
+        "Run one product moment through the sequence before you brief anyone.",
+      ],
+    },
+    {
+      type: "list",
+      ordered: true,
+      items: [
+        "Write the product moment as one before-and-after sentence a stranger could grasp in five seconds.",
+        "Ask GPT for a single HTML page with the before state, the action and the after state, in large text.",
+        "Record it in OBS under sixty seconds, with the wow moment in the center of the frame.",
+        "Run it, then read hook rate, hold rate, CTR and landing page message match.",
+        "Brief polished production only after the signals clear.",
       ],
     },
     {
@@ -528,7 +577,7 @@ export const saasProductVideo: BlogPost = {
     label: "Vaizle hook rate and hold rate review",
     url: "https://insights.vaizle.com/hook-rate-hold-rate/",
     body:
-      "Hook rate and hold rate targets in this article are directional testing signals, supported by practitioner benchmark reporting from Vaizle.",
+      "The hook rate target in this article is a directional testing signal, in line with practitioner benchmark reporting from Vaizle. The hold rate and CTR thresholds are my own rules of thumb.",
   },
   cta: {
     title: "Need a SaaS product video that matches the funnel?",
@@ -543,8 +592,24 @@ export const saasProductVideo: BlogPost = {
     { href: "/saas-marketing-plan", label: "SaaS marketing plan" },
     { href: "/b2b-saas-marketing-strategy", label: "B2B SaaS marketing strategy" },
     { href: "/saas-marketing-agency", label: "SaaS GTM strategy and positioning" },
+    { href: "/blog/ai-video-script-skills-benchmark", label: "AI video script skills benchmark" },
+    { href: "/blog/ai-animation-styles-benchmark", label: "AI animation styles benchmark" },
   ],
   relatedPosts: [
+    {
+      label: "Original Research",
+      title: "I tested 15 AI video script skills. The same model swung 1.50 points.",
+      description:
+        "15 Claude skills and Custom GPTs wrote the same Reel voice-over, scored blind by two AI judges. The best tool exists, but reruns matter more.",
+      href: "/blog/ai-video-script-skills-benchmark",
+    },
+    {
+      label: "Original Research",
+      title: "I made 20 AI animation styles from one voice: 10 minutes to 7 h 30",
+      description:
+        "20 test videos, each made with an AI animation skill on the same 15-second voice. Compare build time and flaws, filter by family, star the styles to keep.",
+      href: "/blog/ai-animation-styles-benchmark",
+    },
     {
       label: "Landing Pages",
       title: "SaaS Landing Page Optimization Best Practices 2026",
@@ -554,10 +619,10 @@ export const saasProductVideo: BlogPost = {
     },
     {
       label: "Paid Acquisition",
-      title: "Google Ads vs Meta Ads for SaaS Landing Pages",
+      title: "Google Ads vs Meta Ads for SaaS",
       description:
-        "How to match paid traffic source, buyer intent, creative, and landing page structure for SaaS campaigns.",
-      href: "/blog/saas-landing-page-google-meta-ads",
+        "Which channel fits your stage, and how the landing page should change for each one.",
+      href: "/google-ads-vs-meta-ads-saas",
     },
     {
       label: "Conversion",

@@ -161,7 +161,7 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
           {
             title: "Personalized landing pages match the message to the visitor",
             body:
-              "A SaaS landing page with one blended conversion rate across all traffic may hide major differences by segment. AI personalization can detect source, firmographic signals, or behavior and adjust the headline, proof point, and CTA. Tools like [Mutiny](https://www.mutinyhq.com/) are often used for this kind of website personalization. The base page still needs clear positioning first; the logic is similar to the intent split in [Google Ads vs Meta Ads landing pages](/blog/saas-landing-page-google-meta-ads).",
+              "A SaaS landing page with one blended conversion rate across all traffic may hide major differences by segment. AI personalization can detect source, firmographic signals, or behavior and adjust the headline, proof point, and CTA. Tools like [Mutiny](https://www.mutinyhq.com/) are often used for this kind of website personalization. The base page still needs clear positioning first; the logic is similar to the intent split in [Google Ads vs Meta Ads landing pages](/google-ads-vs-meta-ads-saas).",
           },
           {
             title: "AI sales qualification routes the right leads faster",
@@ -404,7 +404,7 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
       { href: "/b2b-saas-marketing-strategy", label: "B2B SaaS marketing strategy" },
       { href: "/case-studies", label: "SaaS growth case studies" },
       { href: "/case-study/growapp", label: "Growapp Meta ads case study" },
-      { href: "/blog/saas-landing-page-google-meta-ads", label: "Google Ads vs Meta Ads landing pages" },
+      { href: "/google-ads-vs-meta-ads-saas", label: "Google Ads vs Meta Ads landing pages" },
     ],
     relatedPosts: [
       {
@@ -420,10 +420,10 @@ export const aiConversionRateOptimizationSaas: BlogPost = {
         href: "/blog/saas-traffic-but-no-signups",
       },
       {
-        label: "Blog",
+        label: "Guide",
         title: "Google Ads vs Meta Ads landing pages",
         description: "Learn why paid traffic needs different post-click pages by channel intent.",
-        href: "/blog/saas-landing-page-google-meta-ads",
+        href: "/google-ads-vs-meta-ads-saas",
       },
     ],
     pillarPage: "/landing-page-for-saas",
