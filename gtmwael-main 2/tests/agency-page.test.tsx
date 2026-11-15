@@ -55,6 +55,9 @@ describe("/agency page", () => {
   it("shows Fedi's photo", () => {
     expect(html).toMatch(/<img [^>]*src="[^"]*fedi-portrait[^"]*"[^>]*alt="Fedi Amami"/);
   });
+  it("shows Sirine's photo", () => {
+    expect(html).toMatch(/<img [^>]*src="[^"]*sirine-portrait[^"]*"[^>]*alt="Sirine Aouididi"/);
+  });
   it("shows Wael's own selected projects, internal ones as site links", () => {
     const work = html.slice(html.indexOf('<section id="work"'));
     expect(work).toContain("Wael Aouididi");

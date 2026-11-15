@@ -9,6 +9,7 @@ import fediTunisair from "@/assets/agency/fedi-tunisair.webp";
 import fediAbida from "@/assets/agency/fedi-abida.webp";
 import fediKitkat from "@/assets/agency/fedi-kitkat.webp";
 import fediPortrait from "@/assets/agency/fedi-portrait.webp";
+import sirinePortrait from "@/assets/agency/sirine-portrait.webp";
 import waelInTheLoop from "@/assets/agency/wael-intheloop.webp";
 import waelSambalingo from "@/assets/casestudy-sambalingo.webp";
 import waelPubrella from "@/assets/landing-pubwrite.jpg";
@@ -62,6 +63,7 @@ export const AGENCY_TEAM: { eyebrow: string; line1: string; line2: string; peopl
       short: "Sirine",
       role: "Creative director, designer",
       initials: "SA",
+      photo: sirinePortrait,
       bio: "CEO of N°619 Studio. She builds brand identities, like Pilau swimwear. Works in Arabic, French, English and Italian.",
       link: { label: "Portfolio on Figma", href: SIRINE_FIGMA },
     },
