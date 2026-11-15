@@ -1,6 +1,6 @@
 import { memo } from "react";
 import { ArrowRight } from "lucide-react";
-import waelNew from "@/assets/wael-new.webp";
+import waelPhoto from "@/assets/wael-standing-bw.webp";
 import { CALENDLY_URL } from "@/lib/constants";
 import { CREATIVE2_COPY } from "@/content/creative2";
 import { L, PHOTO_H, PHOTO_W } from "./heroLayout";
@@ -21,7 +21,7 @@ const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ b
 /** Style A ("cream magazine") version of the hero. Same layout and blocks as the SaaS layer. */
 const CreativeHeroLayer = () => {
   const c = CREATIVE2_COPY.hero;
-  const mask = `url(${waelNew}) center bottom/contain no-repeat`;
+  const mask = `url(${waelPhoto}) center bottom/contain no-repeat`;
   return (
     <div data-layer="creative" className="relative font-body" style={{ background: "#f4f3ee", color: INK }}>
       <section className={L.section}>
@@ -145,7 +145,7 @@ const CreativeHeroLayer = () => {
                   />
                 ))}
                 <img
-                  src={waelNew}
+                  src={waelPhoto}
                   alt="Wael Aouididi"
                   width={PHOTO_W}
                   height={PHOTO_H}

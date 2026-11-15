@@ -3,7 +3,7 @@ import { PrimaryCTA, SecondaryCTA } from "@/components/HeroCTA";
 import zembraLogo from "@/assets/zembra-logo.svg";
 import bottlenexusLogo from "@/assets/bottlenexus-logo-white.svg";
 import shipzzerLogoWhite from "@/assets/shipzzer-logo-white.png";
-import waelNew from "@/assets/wael-new.webp";
+import waelPhoto from "@/assets/wael-standing-color.webp";
 import { L, PHOTO_H, PHOTO_W } from "./heroLayout";
 
 const UPWORK_PATH =
@@ -100,7 +100,7 @@ const SaasHeroLayer = () => (
                 }}
               />
               <img
-                src={waelNew}
+                src={waelPhoto}
                 alt=""
                 width={PHOTO_W}
                 height={PHOTO_H}

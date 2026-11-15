@@ -22,6 +22,6 @@ export const L = {
   photo: "relative z-[1] w-64 md:w-72 lg:w-[420px] h-auto block select-none",
 } as const;
 
-// wael-new.webp is 840x973; at 420px wide the box is 420x486.
+// wael-standing-*.webp are 840x973; at 420px wide the box is 420x486.
 export const PHOTO_W = 420;
 export const PHOTO_H = 486;
