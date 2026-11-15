@@ -9,6 +9,7 @@ import C2Process from "@/components/creative2/C2Process";
 import { CREATIVE2_COPY } from "@/content/creative2";
 import { videoProjects } from "@/lib/video-data";
 import { rebrandingProjects } from "@/lib/rebrand-data";
+import { adSamples, postSamples, appSamples } from "@/lib/creative-samples";
 
 const render = (el: JSX.Element) => renderToString(<MemoryRouter>{el}</MemoryRouter>);
 
@@ -31,6 +32,33 @@ describe("creative-2 sections", () => {
     for (const v of videoProjects) expect(html).toContain(v.title);
     for (const r of rebrandingProjects) expect(html).toContain(r.title);
     expect(html).toContain('id="creative-workflow"');
+  });
+  it("work shows the ads, the posts and the apps, each linked to its source", () => {
+    const html = render(<C2Work />);
+    expect(adSamples).toHaveLength(9);
+    expect(postSamples).toHaveLength(6);
+    for (const s of [...adSamples, ...postSamples]) {
+      expect(html).toContain(`src="${s.src}"`);
+      expect(s.alt.length).toBeGreaterThan(10);
+    }
+    expect(html).toContain('href="https://www.behance.net/gallery/234607371/Saas-B2B-Content-Creation"');
+    expect(html).toContain('href="https://www.behance.net/gallery/219845367/Social-Media-contents"');
+    expect(appSamples.map((a) => a.name)).toEqual(["GymVoice", "SambaLingo"]);
+    for (const a of appSamples) {
+      expect(html).toContain(a.name);
+      expect(html).toContain(`src="${a.icon}"`);
+      for (const sc of a.screens) expect(html).toContain(`src="${sc.src}"`);
+    }
+    expect(html).toContain('href="https://sambalingo.app"');
+    expect(html).not.toContain("on the way");
+  });
+  it("work keeps the look-alike brand pages apart", () => {
+    const html = render(<C2Work />);
+    const brands = html.slice(html.indexOf('id="c2-brands-title"'));
+    const at = (t: string) => brands.indexOf(`>${t}<`);
+    const order = ["Pubrella", "Zembra", "Shipzzer", "BottleNexus", "Clarrio.ai"];
+    for (const t of order) expect(at(t)).toBeGreaterThan(-1);
+    expect(order.map(at)).toEqual([...order.map(at)].sort((a, b) => a - b));
   });
   it("testimonials keep the homepage id", () => {
     const html = render(<C2Testimonials />);

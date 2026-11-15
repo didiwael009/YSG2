@@ -4,6 +4,7 @@ import AnimateIn from "@/components/AnimateIn";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
+import { AdsRow, LandingPagesGrid } from "@/components/WorkShowcase";
 import { BOOKING_URL } from "@/lib/constants";
 
 const faqItems = [
@@ -426,6 +427,11 @@ const SaasMarketingAgency = () => {
                 </div>
               </AnimateIn>
             ))}
+          </div>
+
+          <div className="max-w-6xl mx-auto mb-12 space-y-14">
+            <AdsRow tone="light" id="agency-ads-title" />
+            <LandingPagesGrid tone="light" id="agency-pages-title" />
           </div>
 
           <AnimateIn delay={500} className="text-center">

@@ -104,7 +104,7 @@ export const CREATIVE2_COPY = {
     {
       title: "Carousels and posts",
       line: "Carousels and posts in English, French and Arabic. Written, not translated.",
-      hasSamples: false,
+      hasSamples: true,
     },
     {
       title: "Brand identity and pages",
@@ -114,17 +114,25 @@ export const CREATIVE2_COPY = {
     {
       title: "Product videos and ads",
       line: "Product stories and ads cut for each channel.",
-      hasSamples: false,
+      hasSamples: true,
     },
   ] as C2Service[],
   work: {
     eyebrow: "Selected work",
-    titleLine1: "Videos",
+    titleLine1: "Videos, ads",
     titleLine2: "and brands",
-    intro: "Video projects and the brand projects I led.",
+    intro: "Videos, ads, social posts, the apps I built and the brand projects I led.",
     videosLabel: "Videos",
+    adsLabel: "SaaS ads",
+    postsLabel: "Social media posts",
+    behanceLink: "See more on Behance",
+    // App lines: from Wael's screenshots, to be checked by Wael.
+    appsLabel: "Apps I built",
+    appLines: {
+      GymVoice: "My iPhone app for my AI agents: podcasts, music, chat and the decisions I approve.",
+      SambaLingo: "An app to learn Brazilian Portuguese with short sessions and songs.",
+    } as Record<string, string>,
     brandsLabel: "Brand projects",
-    samplesPending: "Carousel and ad examples are on the way.",
   },
   testimonials: {
     eyebrow: "What clients say",

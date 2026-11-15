@@ -1,4 +1,5 @@
-import { Sparkles, ExternalLink, Play, Palette } from "lucide-react";
+import { Sparkles, ExternalLink, Play, Palette, Megaphone } from "lucide-react";
+import { AdsRow } from "@/components/WorkShowcase";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -112,6 +113,22 @@ const Creative = () => {
               </a>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* SaaS Ads */}
+      <section className="pb-20 relative">
+        <div className="container mx-auto px-6">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
+              <Megaphone className="w-6 h-6 text-primary" />
+            </div>
+            <div>
+              <h2 id="folio-ads-title" className="text-2xl md:text-3xl font-display font-bold text-foreground">SaaS Ads</h2>
+              <p className="text-muted-foreground">Product ads for SaaS and B2B brands</p>
+            </div>
+          </div>
+          <AdsRow tone="dark" id="folio-ads-title" showLabel={false} />
         </div>
       </section>
 

@@ -27,9 +27,9 @@ describe("creative-2 copy", () => {
     const nums = (text.match(/\b\d+\b/g) ?? []).filter((n) => !ALLOWED.includes(n));
     expect(nums).toEqual([]);
   });
-  it("lists the 4 services, carousels and ads without samples", () => {
+  it("lists the 4 services, each with samples", () => {
     expect(CREATIVE2_COPY.services).toHaveLength(4);
-    expect(CREATIVE2_COPY.services.filter((s) => !s.hasSamples)).toHaveLength(2);
+    expect(CREATIVE2_COPY.services.filter((s) => !s.hasSamples)).toHaveLength(0);
   });
   it("brand project count matches the data", () => expect(rebrandingProjects).toHaveLength(5));
 });
