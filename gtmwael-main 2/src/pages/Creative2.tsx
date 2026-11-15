@@ -5,6 +5,9 @@ import { useNewsreader } from "@/components/creative2/useNewsreader";
 import SliderHero from "@/components/creative2/SliderHero";
 import C2Experience from "@/components/creative2/C2Experience";
 import C2Services from "@/components/creative2/C2Services";
+import C2Work from "@/components/creative2/C2Work";
+import C2Testimonials from "@/components/creative2/C2Testimonials";
+import C2Process from "@/components/creative2/C2Process";
 
 const Creative2 = () => {
   useNewsreader();
@@ -17,11 +20,11 @@ const Creative2 = () => {
       <SectionDivider variant="curve-to-light" />
       <C2Services />
       <SectionDivider variant="curve-to-dark" />
-      <section id="creative-workflow" />
+      <C2Work />
       <SectionDivider variant="curve-to-light" />
-      <section id="proof" />
+      <C2Testimonials />
       <SectionDivider variant="curve-to-dark" />
-      <section id="how-it-works" />
+      <C2Process />
       <Footer />
     </main>
   );
