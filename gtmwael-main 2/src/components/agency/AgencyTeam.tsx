@@ -7,8 +7,8 @@ import { CREAM, HEAVY, INK, LIME, SectionHeading } from "./style";
 const AgencyTeam = () => {
   const t = AGENCY_TEAM;
   return (
-    <section id="team" aria-labelledby="agency-team-title" className="py-20 md:py-24" style={{ background: INK, color: CREAM }}>
-      <div className="container px-4">
+    <section id="team" aria-labelledby="agency-team-title" className="px-5 py-20 sm:px-10 md:py-24" style={{ background: INK, color: CREAM }}>
+      <div className="mx-auto max-w-[1200px]">
         <SectionHeading eyebrow={t.eyebrow} line1={t.line1} line2={t.line2} id="agency-team-title" align="left" tone="dark" />
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {t.people.map((p) => {

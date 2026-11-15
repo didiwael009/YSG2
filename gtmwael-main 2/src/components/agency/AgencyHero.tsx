@@ -9,8 +9,8 @@ const HALFTONE = "radial-gradient(#111 1.1px, transparent 1.6px) 0 0/5px 5px";
 const AgencyHero = () => {
   const h = AGENCY_HERO;
   return (
-    <section id="top" aria-labelledby="agency-title" className="container px-4 pt-28 pb-16 md:pt-32 md:pb-20">
-      <div className="flex flex-wrap items-center gap-12 lg:gap-14">
+    <section id="top" aria-labelledby="agency-title" className="px-5 pt-28 pb-16 sm:px-10 md:pt-32 md:pb-20">
+      <div className="mx-auto flex max-w-[1200px] flex-wrap items-center gap-12 lg:gap-14">
         <div className="min-w-0 flex-[1_1_520px]">
           <span className="inline-block px-3.5 py-2 text-xs font-bold uppercase tracking-wide" style={{ background: LIME, color: INK }}>
             {h.badge}

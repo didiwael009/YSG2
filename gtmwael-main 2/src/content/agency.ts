@@ -8,6 +8,10 @@ import fediOoredoo from "@/assets/agency/fedi-ooredoo.webp";
 import fediTunisair from "@/assets/agency/fedi-tunisair.webp";
 import fediAbida from "@/assets/agency/fedi-abida.webp";
 import fediKitkat from "@/assets/agency/fedi-kitkat.webp";
+import fediPortrait from "@/assets/agency/fedi-portrait.webp";
+import waelInTheLoop from "@/assets/agency/wael-intheloop.webp";
+import waelSambalingo from "@/assets/casestudy-sambalingo.webp";
+import waelPubrella from "@/assets/landing-pubwrite.jpg";
 
 export type AgencyPerson = {
   id: "sirine" | "fedi" | "wael";
@@ -23,7 +27,8 @@ export type AgencyPerson = {
 export type AgencyProject = {
   title: string;
   label: string;
-  href: string;
+  /** External URL, a site path starting with "/", or none (card without link). */
+  href?: string;
   image: string;
   alt: string;
 };
@@ -66,6 +71,7 @@ export const AGENCY_TEAM: { eyebrow: string; line1: string; line2: string; peopl
       short: "Fedi",
       role: "Art director, graphic designer",
       initials: "FA",
+      photo: fediPortrait,
       bio: "Based in Fribourg, Switzerland. Art director at Kyubi in Tunisia. Projects for Ooredoo Tunisie, Tunisair, Kitkat and ABIDA.",
       link: { label: "Portfolio on Behance", href: FEDI_BEHANCE },
     },
@@ -105,6 +111,12 @@ export const AGENCY_WORK = {
     { title: "Tunisair", label: "Campaign", href: "https://www.behance.net/gallery/46196829/Tunisair", image: fediTunisair, alt: "" },
     { title: "ABIDA", label: "Rebranding", href: "https://www.behance.net/gallery/95050249/Rebranding-ABIDA", image: fediAbida, alt: "" },
     { title: "Kitkat", label: "The game", href: "https://www.behance.net/gallery/47905535/Kitkat-The-game", image: fediKitkat, alt: "" },
+  ] as AgencyProject[],
+  waelTitle: "selected projects",
+  waelProjects: [
+    { title: "SambaLingo", label: "Content system", href: "/content-automation", image: waelSambalingo, alt: "" },
+    { title: "InTheLoop", label: "iPhone app design", image: waelInTheLoop, alt: "" },
+    { title: "Pubrella", label: "Full SaaS rebrand", href: "/case-study/pubrella", image: waelPubrella, alt: "" },
   ] as AgencyProject[],
 };
 

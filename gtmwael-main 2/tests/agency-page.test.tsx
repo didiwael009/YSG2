@@ -45,6 +45,23 @@ describe("/agency page", () => {
   it("hides the site footer's generic CTA, the page has its own", () => {
     expect(html).not.toContain("Ready to");
   });
+  it("gives the hero, team and work sections real side padding", () => {
+    for (const id of ["top", "team", "work"]) {
+      const tag = html.match(new RegExp(`<section id="${id}"[^>]*>\\s*(<div[^>]*>)?`))?.[0] ?? "";
+      expect(tag, id).toMatch(/sm:px-10/);
+      expect(tag, id).not.toMatch(/\bpx-4\b/);
+    }
+  });
+  it("shows Fedi's photo", () => {
+    expect(html).toMatch(/<img [^>]*src="[^"]*fedi-portrait[^"]*"[^>]*alt="Fedi Amami"/);
+  });
+  it("shows Wael's own selected projects, internal ones as site links", () => {
+    const work = html.slice(html.indexOf('<section id="work"'));
+    expect(work).toContain("Wael Aouididi");
+    for (const s of ["SambaLingo", "InTheLoop", "Pubrella"]) expect(work).toContain(s);
+    for (const href of ["/content-automation", "/case-study/pubrella"]) expect(work).toMatch(new RegExp(`<a [^>]*href="${href}"`));
+    expect(work).not.toMatch(/<a [^>]*href="\/(content-automation|case-study\/pubrella)"[^>]*target="_blank"/);
+  });
   it("has no em-dash", () => {
     expect(html).not.toContain("—");
   });

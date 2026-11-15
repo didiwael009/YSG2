@@ -1,15 +1,53 @@
 import { ArrowUpRight } from "lucide-react";
-import { AGENCY_WORK } from "@/content/agency";
+import { AGENCY_WORK, type AgencyProject } from "@/content/agency";
 import { ExternalLink } from "./ExternalLink";
 import { CREAM, HEAVY, INK, LIME, SERIF, SectionHeading } from "./style";
 
-/** Dark work section: Pilau as a cream stack card, then Fedi's four Behance projects. */
+const CARD = "group block h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04]";
+
+/** One person's row of project cards; a card without href is shown without a link. */
+const ProjectRow = ({ name, title, projects }: { name: string; title: string; projects: AgencyProject[] }) => (
+  <>
+    <h3 className="mb-6 mt-16 text-[28px]" style={HEAVY}>
+      {name} <span style={SERIF}>{title}</span>
+    </h3>
+    <ul className={`grid gap-5 sm:grid-cols-2 ${projects.length === 3 ? "lg:grid-cols-3" : "lg:grid-cols-4"}`}>
+      {projects.map((proj) => {
+        const body = (
+          <>
+            <img src={proj.image} alt={proj.alt} width={900} height={704} loading="lazy" className="block h-[190px] w-full object-cover" />
+            <span className="flex items-start justify-between gap-3 px-5 py-[18px]">
+              <span>
+                <span className="block text-lg" style={HEAVY}>{proj.title}</span>
+                <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.14em] text-white/60">{proj.label}</span>
+              </span>
+              {proj.href && (
+                <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
+              )}
+            </span>
+          </>
+        );
+        return (
+          <li key={proj.title}>
+            {proj.href ? (
+              <ExternalLink href={proj.href} className={`${CARD} hover:border-white/30`} style={{ color: CREAM }}>{body}</ExternalLink>
+            ) : (
+              <div className={CARD} style={{ color: CREAM }}>{body}</div>
+            )}
+          </li>
+        );
+      })}
+    </ul>
+  </>
+);
+
+/** Dark work section: Pilau as a cream stack card, then Fedi's and Wael's project rows. */
 const AgencyWork = () => {
   const w = AGENCY_WORK;
   const p = w.pilau;
   return (
-    <section id="work" aria-labelledby="agency-work-title" className="pb-20 pt-6 md:pb-24" style={{ background: INK, color: CREAM }}>
-      <div className="container px-4">
+    <section id="work" aria-labelledby="agency-work-title" className="px-5 pb-20 pt-6 sm:px-10 md:pb-24" style={{ background: INK, color: CREAM }}>
+      <div className="mx-auto max-w-[1200px]">
         <SectionHeading eyebrow={w.eyebrow} line1={w.line1} line2={w.line2} id="agency-work-title" align="left" tone="dark" />
 
         <article className="relative mt-12 overflow-hidden rounded-3xl px-5 pb-8 pt-6 sm:px-11 sm:pb-10" style={{ background: CREAM, color: INK }}>
@@ -46,29 +84,8 @@ const AgencyWork = () => {
           </div>
         </article>
 
-        <h3 className="mb-6 mt-16 text-[28px]" style={HEAVY}>
-          Fedi Amami <span style={SERIF}>{w.fediTitle}</span>
-        </h3>
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {w.fediProjects.map((proj) => (
-            <li key={proj.href}>
-              <ExternalLink
-                href={proj.href}
-                className="group block overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:border-white/30"
-                style={{ color: CREAM }}
-              >
-                <img src={proj.image} alt={proj.alt} width={900} height={704} loading="lazy" className="block h-[190px] w-full object-cover" />
-                <span className="flex items-start justify-between gap-3 px-5 py-[18px]">
-                  <span>
-                    <span className="block text-lg" style={HEAVY}>{proj.title}</span>
-                    <span className="mt-1 block text-xs font-semibold uppercase tracking-[0.14em] text-white/60">{proj.label}</span>
-                  </span>
-                  <ArrowUpRight className="mt-1 h-4 w-4 shrink-0 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
-                </span>
-              </ExternalLink>
-            </li>
-          ))}
-        </ul>
+        <ProjectRow name="Fedi Amami" title={w.fediTitle} projects={w.fediProjects} />
+        <ProjectRow name="Wael Aouididi" title={w.waelTitle} projects={w.waelProjects} />
       </div>
     </section>
   );
