@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate, useParams } from "react-router-
 import ScrollToTop from "./components/ScrollToTop";
 import SeoManager from "./components/SeoManager";
 // Homepage is eager so the prerender hydration has no async boundary
-import Index from "./pages/Index";
+import Creative2 from "./pages/Creative2";
 
 // All other pages are lazy — code-split per route
 const Blog = lazy(() => import("./pages/Blog"));
@@ -35,7 +35,6 @@ const CaseStudyBottlenexus = lazy(() => import("./pages/CaseStudyBottlenexus"));
 const CaseStudyICCenter = lazy(() => import("./pages/CaseStudyICCenter"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Creative = lazy(() => import("./pages/Creative"));
-const Creative2 = lazy(() => import("./pages/Creative2"));
 const Creative2Full = lazy(() => import("./pages/Creative2Full"));
 const Agency = lazy(() => import("./pages/Agency"));
 const ContentAutomation = lazy(() => import("./pages/ContentAutomation"));
@@ -59,9 +58,9 @@ const lazyRoute = (element: ReactNode) => (
 
 export const AppRoutes = () => (
     <Routes>
-      <Route path="/" element={<Index />} />
+      <Route path="/" element={<Creative2 />} />
       <Route path="/creative" element={lazyRoute(<Creative />)} />
-      <Route path="/creative-2" element={lazyRoute(<Creative2 />)} />
+      <Route path="/creative-2" element={<Navigate to="/" replace />} />
       <Route path="/creative-2-full" element={lazyRoute(<Creative2Full />)} />
       <Route path="/agency" element={lazyRoute(<Agency />)} />
       <Route path="/content-automation" element={lazyRoute(<ContentAutomation />)} />
