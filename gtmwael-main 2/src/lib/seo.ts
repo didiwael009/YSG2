@@ -99,6 +99,16 @@ export const seoRoutes: SeoRoute[] = [
     schemaIncludeGlobal: false,
   },
   {
+    path: "/agency",
+    title: "We create. I scale it. | Your SaaS Growth",
+    description: "Sirine Aouididi, Fedi Amami and Wael Aouididi design the look of your brand. Then Wael turns it into a content system that ships at volume.",
+    type: "portfolio",
+    priority: 0.1,
+    changefreq: "monthly",
+    noindex: true,
+    schemaIncludeGlobal: false,
+  },
+  {
     path: "/services/meta-ads",
     title: "Meta Ads Portfolio Service | Your SaaS Growth",
     description: "Meta Ads portfolio page showing Wael Aouididi's creative testing references, paid social skills, dashboards, and campaign examples.",

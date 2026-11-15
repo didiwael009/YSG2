@@ -37,6 +37,7 @@ const Pricing = lazy(() => import("./pages/Pricing"));
 const Creative = lazy(() => import("./pages/Creative"));
 const Creative2 = lazy(() => import("./pages/Creative2"));
 const Creative2Full = lazy(() => import("./pages/Creative2Full"));
+const Agency = lazy(() => import("./pages/Agency"));
 const ContentAutomation = lazy(() => import("./pages/ContentAutomation"));
 const Resume = lazy(() => import("./pages/Resume"));
 const CommunityManagement = lazy(() => import("./pages/CommunityManagement"));
@@ -62,6 +63,7 @@ export const AppRoutes = () => (
       <Route path="/creative" element={lazyRoute(<Creative />)} />
       <Route path="/creative-2" element={lazyRoute(<Creative2 />)} />
       <Route path="/creative-2-full" element={lazyRoute(<Creative2Full />)} />
+      <Route path="/agency" element={lazyRoute(<Agency />)} />
       <Route path="/content-automation" element={lazyRoute(<ContentAutomation />)} />
       <Route path="/services/cold-email" element={lazyRoute(<ColdEmail />)} />
       <Route path="/services/meta-ads" element={lazyRoute(<MetaAds />)} />

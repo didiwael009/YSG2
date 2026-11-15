@@ -23,6 +23,7 @@ export const prerenderRoutePaths = [
   "/case-studies",
   "/case-study/shipzzer",
   "/creative",
+  "/agency",
   "/content-automation",
   "/resume",
   "/case-study/screenplay",
