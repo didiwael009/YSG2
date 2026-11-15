@@ -71,7 +71,7 @@ const SliderHero = () => {
         {/* Handle: a 2px line with a round knob; the knob is the slider control. */}
         <div className="absolute inset-y-0 z-20 w-0 pointer-events-none" style={{ left: "var(--p)" }}>
           <div className="absolute inset-y-0 -left-px w-0.5 bg-white" style={{ boxShadow: "0 0 0 1px rgba(0,0,0,0.25)" }} />
-          <div className="absolute top-[38%] lg:top-1/2 left-0 -translate-x-1/2 -translate-y-1/2">
+          <div className="absolute top-[250px] md:top-[280px] lg:top-1/2 left-0 -translate-x-1/2 -translate-y-1/2">
             <span className="absolute right-full top-1/2 -translate-y-1/2 mr-2.5 rounded-full bg-[#0e0e0e] px-2.5 py-1 text-[11px] font-bold tracking-[0.12em] text-orange-400">SAAS</span>
             <div
               role="slider"
