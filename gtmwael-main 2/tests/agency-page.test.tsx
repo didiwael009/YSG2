@@ -28,6 +28,10 @@ describe("/agency page", () => {
     expect(html).toContain("Swimwear");
     for (const id of ["46196185", "46196829", "95050249", "47905535"]) expect(html).toContain(`behance.net/gallery/${id}/`);
   });
+  it("shows the automation proof and the three steps", () => {
+    for (const s of ["One system.", "134 posts.", "01", "02", "03", "They set the look", "I build the system", "Content ships at volume", "Get the look. Then the volume."]) expect(html).toContain(s);
+    expect(html.match(/href="\/book"/g)?.length ?? 0).toBeGreaterThanOrEqual(2);
+  });
   it("has no em-dash", () => {
     expect(html).not.toContain("—");
   });
