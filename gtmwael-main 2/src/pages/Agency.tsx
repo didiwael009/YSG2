@@ -4,6 +4,7 @@ import { CREAM, INK } from "@/components/agency/style";
 import { useNewsreader } from "@/components/agency/useNewsreader";
 import AgencyHero from "@/components/agency/AgencyHero";
 import AgencyTeam from "@/components/agency/AgencyTeam";
+import AgencyWork from "@/components/agency/AgencyWork";
 
 /** Hidden page (noindex, not linked): Sirine and Fedi create, Wael automates. */
 const Agency = () => {
@@ -14,6 +15,7 @@ const Agency = () => {
       <main>
         <AgencyHero />
         <AgencyTeam />
+        <AgencyWork />
       </main>
       <Footer />
     </div>

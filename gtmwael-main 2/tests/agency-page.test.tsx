@@ -24,6 +24,10 @@ describe("/agency page", () => {
   it("gives every image an alt attribute", () => {
     for (const img of html.match(/<img [^>]*>/g) ?? []) expect(img).toMatch(/ alt="/);
   });
+  it("shows Pilau and Fedi's four Behance projects", () => {
+    expect(html).toContain("Swimwear");
+    for (const id of ["46196185", "46196829", "95050249", "47905535"]) expect(html).toContain(`behance.net/gallery/${id}/`);
+  });
   it("has no em-dash", () => {
     expect(html).not.toContain("—");
   });
