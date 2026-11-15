@@ -12,7 +12,7 @@ describe("/agency prerender", () => {
     render("/agency");
     await new Promise((r) => setTimeout(r, 400));
     const html = render("/agency");
-    expect(html).toContain("They create.");
+    expect(html).toContain("We create.");
     expect(html).toContain("Sirine Aouididi");
   });
 });

@@ -100,8 +100,8 @@ export const seoRoutes: SeoRoute[] = [
   },
   {
     path: "/agency",
-    title: "They create. I automate. | Your SaaS Growth",
-    description: "Sirine Aouididi and Fedi Amami design the look of your brand. Wael Aouididi turns it into a content system that ships at volume.",
+    title: "We create. I scale it. | Your SaaS Growth",
+    description: "Sirine Aouididi, Fedi Amami and Wael Aouididi design the look of your brand. Then Wael turns it into a content system that ships at volume.",
     type: "portfolio",
     priority: 0.1,
     changefreq: "monthly",

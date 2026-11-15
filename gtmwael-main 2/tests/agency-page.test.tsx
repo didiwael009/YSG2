@@ -8,7 +8,10 @@ const html = renderToString(<MemoryRouter initialEntries={["/agency"]}><Agency /
 
 describe("/agency page", () => {
   it("shows the headline and the three people", () => {
-    for (const s of ["They create.", "I automate.", "Sirine Aouididi", "Fedi Amami", "Wael Aouididi"]) expect(html).toContain(s);
+    for (const s of ["We create.", "I scale it.", "Three designers.", "Designer, automation", "Design graduate.", "Sirine Aouididi", "Fedi Amami", "Wael Aouididi"]) expect(html).toContain(s);
+  });
+  it("does not cut Wael down to automation only", () => {
+    for (const s of ["They create.", "I automate.", "Two creatives."]) expect(html).not.toContain(s);
   });
   it("links to /book", () => {
     expect(html).toContain('href="/book"');
@@ -29,7 +32,7 @@ describe("/agency page", () => {
     for (const id of ["46196185", "46196829", "95050249", "47905535"]) expect(html).toContain(`behance.net/gallery/${id}/`);
   });
   it("shows the automation proof and the three steps", () => {
-    for (const s of ["One system.", "134 posts.", "01", "02", "03", "They set the look", "I build the system", "Content ships at volume", "Get the look. Then the volume."]) expect(html).toContain(s);
+    for (const s of ["One system.", "134 posts.", "01", "02", "03", "We set the look", "I build the system", "Content ships at volume", "Get the look. Then the volume."]) expect(html).toContain(s);
     expect(html.match(/href="\/book"/g)?.length ?? 0).toBeGreaterThanOrEqual(2);
   });
   it("keeps pill links at least 44px tall and clears the fixed nav", () => {
@@ -38,6 +41,9 @@ describe("/agency page", () => {
     expect(pills.length).toBeGreaterThanOrEqual(5);
     for (const a of pills) expect(a).toMatch(/min-h-\[(44|52)px\]/);
     expect(main).toMatch(/<section id="top"[^>]*class="[^"]*\bpt-28\b/);
+  });
+  it("hides the site footer's generic CTA, the page has its own", () => {
+    expect(html).not.toContain("Ready to");
   });
   it("has no em-dash", () => {
     expect(html).not.toContain("—");

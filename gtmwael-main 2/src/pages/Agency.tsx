@@ -8,7 +8,7 @@ import AgencyWork from "@/components/agency/AgencyWork";
 import AgencyAutomation from "@/components/agency/AgencyAutomation";
 import AgencyProcess from "@/components/agency/AgencyProcess";
 
-/** Hidden page (noindex, not linked): Sirine and Fedi create, Wael automates. */
+/** Hidden page (noindex, not linked): Sirine, Fedi and Wael design, Wael scales it. */
 const Agency = () => {
   useNewsreader();
   return (
@@ -21,7 +21,7 @@ const Agency = () => {
         <AgencyAutomation />
         <AgencyProcess />
       </main>
-      <Footer />
+      <Footer hideCTA />
     </div>
   );
 };

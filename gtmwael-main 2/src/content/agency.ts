@@ -33,9 +33,9 @@ const FEDI_BEHANCE = "https://www.behance.net/amamifedi";
 
 export const AGENCY_HERO = {
   badge: "Creative team + automation",
-  line1: "They create.",
-  line2: "I automate.",
-  sub: "Sirine and Fedi design the look of your brand. I turn that look into a system that makes and publishes content at volume.",
+  line1: "We create.",
+  line2: "I scale it.",
+  sub: "Sirine, Fedi and I design the look of your brand. Then I turn that look into a system that makes and publishes content at volume.",
   clientsLabel: "Their work for",
   clients: ["Pilau", "Ooredoo", "Tunisair", "ABIDA", "Kitkat"],
   frameCaption: "Pilau, by Sirine Aouididi",
@@ -48,7 +48,7 @@ export const AGENCY_HERO_IMAGE = {
 
 export const AGENCY_TEAM: { eyebrow: string; line1: string; line2: string; people: AgencyPerson[] } = {
   eyebrow: "The team",
-  line1: "Two creatives.",
+  line1: "Three designers.",
   line2: "One production line.",
   people: [
     {
@@ -73,10 +73,10 @@ export const AGENCY_TEAM: { eyebrow: string; line1: string; line2: string; peopl
       id: "wael",
       name: "Wael Aouididi",
       short: "Wael",
-      role: "Automation",
+      role: "Designer, automation",
       initials: "WA",
       photo: "/hero-portrait-256.webp",
-      bio: "Builds content systems with Claude Code and a stack of AI tools. Top Rated on Upwork.",
+      bio: "Design graduate. Builds content systems with Claude Code and a stack of AI tools. Top Rated on Upwork.",
       link: { label: "His creative work", href: "/creative" },
     },
   ],
@@ -124,7 +124,7 @@ export const AGENCY_PROCESS = {
   line1: "One look,",
   line2: "made a hundred times",
   steps: [
-    { title: "They set the look", body: "Sirine and Fedi design the identity, the art direction and the templates every post starts from." },
+    { title: "We set the look", body: "Sirine, Fedi and I design the identity, the art direction and the templates every post starts from." },
     { title: "I build the system", body: "I turn those templates into a pipeline of AI tools and scripts that makes new pieces in the same look." },
     { title: "Content ships at volume", body: "Posts, videos and visuals, in several languages. I check every piece. You approve it before it goes live." },
   ],
