@@ -1,6 +1,8 @@
 # Agency page: a virtual agency, they create, Wael automates
 
-Date: 2026-11-15. Status: draft, waiting for Wael's approval. Nothing is built yet.
+Date: 2026-11-15. Status: approved by Wael on 2026-11-15 (mockup v3, creative homepage style). Nothing is built yet.
+
+Mockup: Design canvas https://claude.ai/artifact/DkiAkFRyAaJahhmT9QQrK5, board "v3, creative homepage style".
 
 ## Why
 
@@ -59,34 +61,50 @@ These are facts from their public portfolios. The page copy is drafted from thes
 
 ## Approaches
 
-- A. The site's own style (picked by Wael). Dark and light sections alternating like the homepage, reusing `Navigation`, `Footer`, `SectionDivider`, `AnimateIn` and the `/book` flow. The creative work sits in a light section so the cream and colour of the portfolios read well. Cheapest to build, consistent, easy to delete. It looks more like the rest of the site than like a creative studio.
-- B. An editorial studio look inspired by Sirine's Figma (cream background, wide letter-spaced type, stripes). Feels like a real creative agency. More design work, overlaps with the creative-2 redesign in progress, and clashes with the site for SaaS prospects.
-- C. A section inside an existing page. Rejected: `/creative` is locked by another session, and the homepage would change public positioning during a test.
+- A. The site's own style (dark and light SaaS sections, reusing the homepage components). Wael picked it first, then rejected the mockup: "je valide pas l'aspect SaaS que j'écris pour l'agence créa".
+- B. Two new creative directions, "Editorial" (cream, Fraunces serif, Pilau stripes) and "Studio" (black, condensed caps, lime). Wael did not pick either.
+- C. The style of the creative homepage on the `creative-2` branch (`/creative-2`, "Style A, cream magazine"). Picked by Wael ("comme la homepage axée créa") and approved on mockup v3.
+- D. A section inside an existing page. Rejected: `/creative` is locked by another session, and the homepage would change public positioning during a test.
 
-Wael picked A: the test is about the team's work, not the page's styling.
+Wael picked C: the agency page should look like the creative homepage, not like the SaaS pages.
 
-## Page structure (proposal, Wael to confirm with the copy)
+## Visual style (from `creative-2:src/components/creative2/style.ts`)
 
-Sketch, top to bottom:
+- Colours: ink `#0e0e0e`, cream `#f4f3ee`, lime `#c6f432`.
+- Type: Inter 800 for heavy headings, Newsreader italic 500 for the second line of each heading. Newsreader is loaded on this page only, the way `useNewsreader.ts` does it on creative-2 (a `<link>` added at mount, `index.html` unchanged).
+- Section heading: lime eyebrow (small, bold, uppercase, wide tracking), then a heavy line and a larger Newsreader italic line (leading 0.95, tracking -0.03em).
+- Dark sections: ink background, cream text, body text white at 75%. Dark cards: rounded-2xl, border white/10, background white/[0.04].
+- Cream "stack card" for a featured project, like `C2Experience.tsx`: cream card on ink, rounded-3xl, a 6px lime bar on top, a big heavy word, an italic serif line, a bottom row with a sentence and a black pill link.
+- Numbered steps "01 02 03" in heavy lime, like `C2Process.tsx`.
+- Buttons: black rounded "Book a call" with an arrow and an outlined "See the work" in the hero; a lime rounded-full pill at the end; "Free · no commitment" in italic under each.
+- Hero frame: halftone dot halo, thin black frame and a corner bracket, like the portrait in `CreativeHeroLayer.tsx`.
+
+`creative-2` is not merged into `main`, so the page cannot import `src/components/creative2/*`. The builder copies the few tokens it needs into the agency files (builder's call). Nothing on the `creative-2` branch is touched.
+
+## Page structure (as in mockup v3)
 
 ```
-[Nav]
-DARK   Hero: headline, one line, [Book a call] [See the work ↓]
-DARK   Team: 3 cards (photo, name, role, one line, link to portfolio)
-LIGHT  How it works: 3 steps
-       1 They set the look   2 I build the system   3 Content ships at volume
-LIGHT  Work: Sirine (Pilau) · Fedi (selected projects, link to Behance)
-DARK   Automation: reuse CreativeWorkflowSection (variant "teaser")
-DARK   CTA block: headline, one line, [Book a call] -> /book
-[Footer]
+[Nav, the site's Navigation]
+CREAM  Hero: lime badge "Creative team + automation"
+       "They create." / "I automate." (italic)
+       one line, [Book a call ->] [See the work], "Free · no commitment"
+       three name cards (Sirine, Fedi, Wael) and a "Their work for" client line
+       right: Pilau campaign image in the halftone frame
+INK    Team: "Two creatives." / "One production line." 3 dark cards
+       (initials or photo, name, role, one paragraph, pill link to portfolio)
+INK    Work: "Brands they" / "already shaped"
+       cream stack card for Pilau (Sirine), 3 images, link to Figma
+       "Fedi Amami selected projects": 4 dark cards linking to Behance
+CREAM  Automation: badge, "One system." / "134 posts.", one paragraph,
+       stat cards 134 posts and 3 languages, phone image on the right
+INK    How it works: "One look," / "made a hundred times", steps 01 02 03
+       then "Get the look. Then the volume." (italic) and the lime Book a call pill
+[Footer, the site's Footer]
 ```
 
-- Hero. The working headline comes from Wael's own phrase, "ils créent, j'automatise", which gives "They create. I automate." in English.
-- Team. Wael's card uses his existing portrait (`/hero-portrait-*.webp`). Each collaborator links out to their portfolio (Figma or Behance, or another link they prefer).
-- How it works. Three steps that describe the "look + volume" offer. The step text comes from Wael.
-- Work. Grouped by person, so a prospect sees who did what. Images come from the collaborators' portfolios.
-- Automation. `src/components/CreativeWorkflowSection.tsx` already has `variant="teaser"` (the homepage uses it) and is not one of the locked files. Reuse it as is, with no edit to the shared component (my call: the homepage depends on it). If its heading reads wrong on this page, the builder tells Wael.
-- CTA. A simple block like the one at the end of `Creative.tsx`, linking to `/book`. `BookingSection` is not reused because its copy is about a "GTM audit".
+- The automation section is built on this page in the new style. It does not reuse `CreativeWorkflowSection` (its SaaS look is what Wael rejected). The phone image is one the site already uses for the SambaLingo feed; the builder picks it from the existing assets. The "3 languages" stat must match a source on the site, otherwise the builder drops it and tells Wael.
+- "His creative work" on Wael's card links to the site's existing creative work page (`/creative`), builder's call.
+- Every "Book a call" goes to `/book`.
 
 ## Content (decided by Wael on 2026-11-15)
 
@@ -103,5 +121,6 @@ DARK   CTA block: headline, one line, [Book a call] -> /book
 - File layout. Suggested: `src/pages/Agency.tsx` for the page, `src/content/agency.ts` for all copy and team data, images in `src/assets/agency/`. Keeping copy in one data file makes Wael's edits and a later removal simple.
 - Image handling. Use plain optimised `.webp` images with width and height set. Do not generate responsive variants into `public/responsive/` or touch the responsive manifest.
 - Tests (vitest, in `tests/`): the page renders the three people and a `/book` link; the agency copy has no em-dash and no bold markup; the `/agency` SEO route is `noindex`.
+- Mobile layout: the mockup uses auto-fit grids and flex-wrap; the builder keeps that or uses Tailwind breakpoints. Headings scale down with `clamp()` or responsive text sizes.
 - Mobile layout: cards stack, images keep their aspect ratio.
 - Removal: deleting the page should only mean removing the route, the `seoRoutes` entry and the agency files.
