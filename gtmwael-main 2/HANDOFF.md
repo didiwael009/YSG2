@@ -214,6 +214,14 @@ https://claude.ai/code/artifact/c60d6221-008c-4cdc-9bc3-b1d6c60253d1
 
 ## Chronology
 
+### 2026-11-15
+
+Added the hidden `/agency` page (Sirine and Fedi create, Wael automates), in the
+creative homepage style: noindex, not in the nav or the sitemap. All copy lives in
+`src/content/agency.ts`. To remove it: the route in `src/App.tsx`, the `/agency`
+entry in `src/lib/seo.ts`, `src/pages/Agency.tsx`, `src/components/agency/`,
+`src/content/agency.ts`, `src/assets/agency/` and the three `tests/agency-*` files.
+
 ### 2026-11-07
 
 Published the blog post `/blog/ai-video-script-skills-benchmark` (15 AI video
