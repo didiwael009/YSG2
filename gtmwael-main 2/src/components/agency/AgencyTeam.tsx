@@ -44,7 +44,7 @@ const AgencyTeam = () => {
                 <p className="text-white/75">{p.bio}</p>
                 <ExternalLink
                   href={p.link.href}
-                  className="mt-auto inline-flex items-center gap-1.5 self-start rounded-full px-4 py-2.5 text-sm font-semibold hover:brightness-95"
+                  className="mt-auto inline-flex min-h-[44px] items-center gap-1.5 self-start rounded-full px-4 py-2.5 text-sm font-semibold hover:brightness-95"
                   style={{ background: isWael ? LIME : CREAM, color: INK }}
                 >
                   {p.link.label}

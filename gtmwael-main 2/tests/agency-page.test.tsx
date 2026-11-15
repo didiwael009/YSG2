@@ -32,6 +32,13 @@ describe("/agency page", () => {
     for (const s of ["One system.", "134 posts.", "01", "02", "03", "They set the look", "I build the system", "Content ships at volume", "Get the look. Then the volume."]) expect(html).toContain(s);
     expect(html.match(/href="\/book"/g)?.length ?? 0).toBeGreaterThanOrEqual(2);
   });
+  it("keeps pill links at least 44px tall and clears the fixed nav", () => {
+    const main = html.slice(html.indexOf("<main"), html.indexOf("</main>"));
+    const pills = [...main.matchAll(/<a [^>]*class="[^"]*rounded-full[^"]*"[^>]*>/g)].map((m) => m[0]);
+    expect(pills.length).toBeGreaterThanOrEqual(5);
+    for (const a of pills) expect(a).toMatch(/min-h-\[(44|52)px\]/);
+    expect(main).toMatch(/<section id="top"[^>]*class="[^"]*\bpt-28\b/);
+  });
   it("has no em-dash", () => {
     expect(html).not.toContain("—");
   });
