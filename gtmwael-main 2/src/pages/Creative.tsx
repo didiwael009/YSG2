@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import VideoGrid from "@/components/VideoGrid";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { videoProjects } from "@/lib/video-data";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { rebrandingProjects } from "@/lib/rebrand-data";
 
 const Creative = () => {
@@ -143,7 +143,7 @@ const Creative = () => {
               Let's discuss your next project and create something that drives real results.
             </p>
             <Button asChild variant="hero" size="lg">
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book a Call
               </a>
             </Button>

@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 interface CalendlyCTAProps {
   label?: string;
@@ -23,7 +23,7 @@ const CalendlyCTA = ({
     className={`group ${fullWidth ? "w-full" : ""} ${className ?? ""}`}
     asChild
   >
-    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
       {label}
       <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
     </a>

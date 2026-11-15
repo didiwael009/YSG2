@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import TeardownCTA from "@/components/cro-teardown/TeardownCTA";
 import type { BlogPost } from "@/lib/blog";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { renderBlock } from "./blocks";
 
 const formatDate = (date: string) =>
@@ -211,7 +211,7 @@ const BenchmarkLayout = ({ post }: { post: BlogPost }) => {
                 <div className="sticky top-24 rounded-[20px] bg-[#11111f] p-5 text-white shadow-[0_24px_70px_rgba(7,7,17,0.22)]">
                   <strong className="mb-2 block text-[15px] leading-tight">{post.cta.title}</strong>
                   <Button variant="hero" size="sm" className="h-auto w-full whitespace-normal py-2.5 text-center leading-tight" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                       {post.cta.button}
                     </a>
                   </Button>

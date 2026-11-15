@@ -3,7 +3,7 @@ import { ArrowRight, BarChart3, Mail, Route, Sparkles } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 const stats = [
   { value: "4", label: "international SaaS projects" },
@@ -86,7 +86,7 @@ const CaseStudies = () => {
 
             <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Button variant="hero" size="lg" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   Book a 20-min GTM Audit
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </a>

@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 import metaAdsDashboard from "@/assets/meta-ads-dashboard.png";
 import adCreative1 from "@/assets/ad-creative-1.jpg";
@@ -108,7 +108,7 @@ export default function MetaAdsForSaas() {
               </div>
 
               <Button variant="hero" size="lg" className="group" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   Book a 15-minute Meta Ads diagnosis
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </a>
@@ -247,7 +247,7 @@ export default function MetaAdsForSaas() {
               </div>
 
               <Button variant="hero" size="lg" className="group" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   Book a 15-minute Meta Ads diagnosis
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </a>
@@ -698,7 +698,7 @@ export default function MetaAdsForSaas() {
                 In 15 minutes, you will know whether the issue is the offer angle, the creative, the landing page, the tracking, or the retargeting path — and what to fix first. Bring your current ad account, your landing page URL, and your cost-per-result numbers.
               </p>
               <Button variant="hero" size="lg" className="group" asChild>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   Book a 15-minute Meta Ads diagnosis
                   <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                 </a>

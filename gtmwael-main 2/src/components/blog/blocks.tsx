@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import type { BlogBlock } from "@/content/blog/types";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { StyleGrid, VideoGrid } from "./MediaGrids";
 
 /** Blocks that may break out of the 680 px text column, up to 900 px. */
@@ -107,7 +107,7 @@ const Footnote = ({ text }: { text?: string }) =>
 
 const CtaButton = ({ label }: { label: string }) => (
   <Button variant="hero" size="sm" asChild>
-    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
       {label}
     </a>
   </Button>

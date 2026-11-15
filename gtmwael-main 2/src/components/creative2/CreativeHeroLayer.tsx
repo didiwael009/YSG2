@@ -1,7 +1,7 @@
 import { memo } from "react";
 import { ArrowRight } from "lucide-react";
 import waelPhoto from "@/assets/wael-standing-bw.webp";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { CREATIVE2_COPY } from "@/content/creative2";
 import { L, PHOTO_H, PHOTO_W } from "./heroLayout";
 import { HERO_LOGOS } from "./SaasHeroLayer";
@@ -55,7 +55,7 @@ const CreativeHeroLayer = () => {
                 <div data-block="ctas" className={L.ctas}>
                   <div className="flex flex-col items-center">
                     <a
-                      href={CALENDLY_URL}
+                      href={BOOKING_URL}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`${L.cta} group rounded-xl font-bold text-white transition-transform hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`}

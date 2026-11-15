@@ -4,7 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { ArrowRight, Check, X } from "lucide-react";
 
 type Metric = { value: string; label: string };
@@ -291,7 +291,7 @@ const GrowthCaseStudyPage = ({
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </Link>
               ) : (
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                   {ctaLabel}
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </a>

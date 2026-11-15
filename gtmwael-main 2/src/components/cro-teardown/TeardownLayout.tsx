@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import type { CroTeardownPost } from "@/lib/cro-teardown";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import TeardownHero from "./TeardownHero";
 import SummaryCards from "./SummaryCards";
 import ScreenshotTimeline from "./ScreenshotTimeline";
@@ -247,7 +247,7 @@ const TeardownLayout = ({ post }: { post: CroTeardownPost }) => {
                     I review the traffic source, message match, proof, CTA path, and mobile speed.
                   </p>
                   <Button variant="hero" size="sm" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                       Book audit
                     </a>
                   </Button>

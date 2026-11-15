@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import type { BlogPost } from "@/lib/blog";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { isNewsIssue } from "@/content/blog/magazine";
 import { DARK_BAND } from "./WaelProfile";
 import { SectionLabel, WIDE_BLOCKS, renderBlock } from "./blocks";
@@ -170,7 +170,7 @@ const ClassicLayout = ({ post }: { post: BlogPost }) => {
                   <h2 className="mb-3 mt-0 font-serif text-[26px] font-medium leading-[1.15] text-white md:text-[32px]">{post.cta.title}</h2>
                   <p className="mb-6 max-w-[560px] text-base leading-[1.65] text-white/80">{post.cta.body}</p>
                   <Button variant="hero" size="lg" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                       {post.cta.button}
                       <ArrowRight className="ml-1 h-4 w-4" />
                     </a>

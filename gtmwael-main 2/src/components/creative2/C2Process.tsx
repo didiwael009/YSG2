@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { CREATIVE2_COPY } from "@/content/creative2";
 import { CREAM, HEAVY, INK, LIME, SERIF } from "./style";
 
@@ -37,7 +37,7 @@ const C2Process = () => {
         <div className="mt-16 flex flex-col items-center md:mt-20">
           <p className="mb-6 max-w-md text-center text-xl" style={SERIF}>{cta.line}</p>
           <a
-            href={CALENDLY_URL}
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex min-h-12 items-center gap-2 rounded-full px-7 py-3 text-base font-bold hover:brightness-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c6f432]"

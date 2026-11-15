@@ -4,7 +4,7 @@ import AnimateIn from "@/components/AnimateIn";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 const preSendChecks = [
   {
@@ -163,7 +163,7 @@ export default function SaasColdEmailStrategy() {
 
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                   <Button variant="hero" size="lg" className="group" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                       Book a 20-min Cold Email Diagnosis
                       <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </a>
@@ -365,7 +365,7 @@ export default function SaasColdEmailStrategy() {
                       </p>
                     </div>
                     <Button variant="hero" size="lg" className="group" asChild>
-                      <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                      <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                         Book diagnosis
                         <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                       </a>
@@ -466,7 +466,7 @@ export default function SaasColdEmailStrategy() {
                 </p>
                 <div className="mt-9">
                   <Button variant="hero" size="lg" className="group" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                       Book a 20-min Cold Email Diagnosis
                       <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </a>

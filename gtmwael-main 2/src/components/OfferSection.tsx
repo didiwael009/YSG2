@@ -1,6 +1,6 @@
 import { Check, Zap, Target, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import SectionHeader from "./SectionHeader";
 import AnimateIn from "./AnimateIn";
 
@@ -90,7 +90,7 @@ const OfferSection = () => {
                 variant="hero" 
                 size="xl"
                 className="w-full sm:w-auto"
-                onClick={() => window.open(CALENDLY_URL, '_blank')}
+                onClick={() => window.open(BOOKING_URL, '_blank')}
               >
                 Book a 20-min GTM Audit
               </Button>

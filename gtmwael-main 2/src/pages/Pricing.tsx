@@ -4,7 +4,7 @@ import SectionDivider from "@/components/SectionDivider";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown, Check } from "lucide-react";
 import { useState } from "react";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import AnimateIn from "@/components/AnimateIn";
 
 /* ── Data ─────────────────────────────────────────── */
@@ -160,7 +160,7 @@ function OfferCard({ offer }: { offer: Offer }) {
           className="w-full group"
           asChild
         >
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
             {offer.cta}
             <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
           </a>
@@ -246,7 +246,7 @@ const Pricing = () => {
           </AnimateIn>
           <AnimateIn delay={200}>
             <Button variant="hero" size="xl" className="group" asChild>
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book a 20-Minute Fit Call
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>

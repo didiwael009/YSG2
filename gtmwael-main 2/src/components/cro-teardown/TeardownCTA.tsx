@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 const TeardownCTA = ({
   title,
@@ -20,7 +20,7 @@ const TeardownCTA = ({
     </h2>
     <p className="mx-auto mb-6 max-w-[520px] text-base leading-[1.65] text-[#d0cad9]">{body}</p>
     <Button variant="hero" size="lg" asChild>
-      <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+      <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
         {button}
         <ArrowRight className="ml-1 h-4 w-4" />
       </a>

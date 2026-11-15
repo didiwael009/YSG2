@@ -1,6 +1,6 @@
 import { ArrowRight, Linkedin, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 
 const BehanceIcon = () => (
@@ -70,7 +70,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
               Let's build a GTM system that actually converts.
             </p>
             <Button variant="hero" size="lg" className="group" asChild>
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book a Call
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>
@@ -166,7 +166,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
                 </Link>
               </li>
               <li>
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Book a Call
                 </a>
               </li>

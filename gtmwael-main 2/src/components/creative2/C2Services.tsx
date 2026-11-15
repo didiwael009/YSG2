@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
 import { ArrowRight, ArrowDown } from "lucide-react";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import { CREATIVE2_COPY } from "@/content/creative2";
 
 const INK = "#0e0e0e";
@@ -65,7 +65,7 @@ const C2Services = () => {
         <div className="mx-auto mt-14 flex max-w-6xl flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-lg" style={SERIF}>{cta.line}</p>
           <a
-            href={CALENDLY_URL}
+            href={BOOKING_URL}
             target="_blank"
             rel="noopener noreferrer"
             className={`inline-flex min-h-12 items-center gap-2 rounded-full px-6 py-3 text-sm font-bold hover:brightness-95 ${focusStyle}`}

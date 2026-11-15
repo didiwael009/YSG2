@@ -4,7 +4,7 @@ import AnimateIn from "@/components/AnimateIn";
 import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 const ruleItems = [
   {
@@ -171,7 +171,7 @@ export default function OptimizeSaasLandingPage() {
 
                 <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                   <Button variant="hero" size="lg" className="group" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                       Book a 20-min SaaS Landing Page Audit
                       <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </a>
@@ -313,7 +313,7 @@ export default function OptimizeSaasLandingPage() {
                   </p>
                 </div>
                 <Button variant="hero" size="lg" className="group shrink-0" asChild>
-                  <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                  <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                     Book a 20-min SaaS Landing Page Audit
                     <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </a>
@@ -453,7 +453,7 @@ export default function OptimizeSaasLandingPage() {
                 </p>
                 <div className="mt-8">
                   <Button variant="hero" size="lg" className="group" asChild>
-                    <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+                    <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                       Book a 20-min SaaS Landing Page Audit
                       <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </a>

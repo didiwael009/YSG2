@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import landingBottlenexus from "@/assets/landing-bottlenexus.jpg";
 import bottlenexusLogo from "@/assets/bottlenexus-logo.svg";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 const CaseStudyBottlenexus = () => {
   return (
@@ -159,7 +159,7 @@ const CaseStudyBottlenexus = () => {
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book a Call
               </a>
             </Button>

@@ -1,15 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-
-const CALENDLY_URL = "https://calendly.com/waelaouididi/30min";
-const CALENDLY_PARAMS =
-  "hide_gdpr_banner=1&background_color=1a1530&text_color=ffffff&primary_color=ff6a2c";
+import { BOOKING_URL, CAL_LINK } from "@/lib/constants";
+import { getCal } from "@/lib/calEmbed";
 
 const Book = () => {
   const [loaded, setLoaded] = useState(false);
   const widgetRef = useRef<HTMLDivElement>(null);
 
   // Warm up the connection on idle so the click-to-load feels instant,
-  // without blocking the initial render with Calendly's heavy bundle.
+  // without blocking the initial render with the embed bundle.
   useEffect(() => {
     const addLink = (rel: string, href: string, crossorigin = false) => {
       if (document.head.querySelector(`link[rel="${rel}"][href="${href}"]`)) return;
@@ -20,9 +18,8 @@ const Book = () => {
       document.head.appendChild(link);
     };
     const warm = () => {
-      addLink("preconnect", "https://assets.calendly.com", true);
-      addLink("preconnect", "https://calendly.com", true);
-      addLink("dns-prefetch", "https://assets.calendly.com");
+      addLink("preconnect", "https://app.cal.com", true);
+      addLink("dns-prefetch", "https://app.cal.com");
     };
     const idle =
       (window as unknown as { requestIdleCallback?: (cb: () => void) => number })
@@ -37,60 +34,37 @@ const Book = () => {
     };
   }, []);
 
-  // Calendly event tracking → dataLayer (attached only after the widget loads)
+  // Once the box is on screen, mount the Cal.com calendar inside it and send its events to dataLayer.
   useEffect(() => {
-    if (!loaded) return;
-    const handleMessage = (e: MessageEvent) => {
-      if (
-        typeof e.data === "object" &&
-        e.data?.event &&
-        typeof e.data.event === "string" &&
-        e.data.event.indexOf("calendly") === 0
-      ) {
+    if (!loaded || !widgetRef.current) return;
+    const cal = getCal("book");
+    cal("inline", {
+      elementOrSelector: widgetRef.current,
+      calLink: CAL_LINK,
+      config: { layout: "month_view", theme: "dark" },
+    });
+    cal("ui", {
+      theme: "dark",
+      layout: "month_view",
+      cssVarsPerTheme: { dark: { "cal-brand": "#ff6a2c" }, light: { "cal-brand": "#ff6a2c" } },
+    });
+    cal("on", {
+      action: "*",
+      callback: (e: CustomEvent<{ type?: string; data?: unknown }>) => {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         const w = window as any;
         w.dataLayer = w.dataLayer || [];
-        w.dataLayer.push({
-          event: "calendly_interaction",
-          calendlyEvent: e.data.event,
-          payload: e.data.payload ?? null,
-        });
-        if (e.data.event === "calendly.event_scheduled") {
+        const type = e.detail?.type ?? "";
+        w.dataLayer.push({ event: "cal_interaction", calEvent: type, payload: e.detail?.data ?? null });
+        if (type.includes("bookingSuccessful")) {
           w.dataLayer.push({ event: "booking_completed", value: 1 });
         }
-      }
-    };
-    window.addEventListener("message", handleMessage);
-    return () => window.removeEventListener("message", handleMessage);
+      },
+    });
   }, [loaded]);
 
-  const loadCalendly = () => {
-    if (loaded) return;
-    setLoaded(true);
-
-    const inject = () => {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const Calendly = (window as any).Calendly;
-      if (Calendly && widgetRef.current) {
-        Calendly.initInlineWidget({
-          url: `${CALENDLY_URL}?${CALENDLY_PARAMS}`,
-          parentElement: widgetRef.current,
-        });
-      }
-    };
-
-    const existing = document.querySelector<HTMLScriptElement>(
-      'script[src="https://assets.calendly.com/assets/external/widget.js"]'
-    );
-    if (existing) {
-      inject();
-    } else {
-      const script = document.createElement("script");
-      script.src = "https://assets.calendly.com/assets/external/widget.js";
-      script.async = true;
-      script.onload = inject;
-      document.body.appendChild(script);
-    }
+  const loadCalendar = () => {
+    if (!loaded) setLoaded(true);
   };
 
   return (
@@ -117,7 +91,7 @@ const Book = () => {
           <p className="mt-6 text-sm text-muted-foreground">
             Calendar not loading?{" "}
             <a
-              href={CALENDLY_URL}
+              href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 font-semibold text-primary transition-colors hover:text-primary/80"
@@ -151,15 +125,14 @@ const Book = () => {
             {loaded ? (
               <div
                 ref={widgetRef}
-                className="calendly-inline-widget"
-                style={{ minWidth: "320px", height: "720px" }}
+                style={{ minWidth: "320px", height: "720px", overflow: "auto" }}
               />
             ) : (
               <button
                 type="button"
-                onClick={loadCalendly}
-                onMouseEnter={loadCalendly}
-                onTouchStart={loadCalendly}
+                onClick={loadCalendar}
+                onMouseEnter={loadCalendar}
+                onTouchStart={loadCalendar}
                 className="group w-full flex flex-col items-center justify-center gap-5 px-6 py-20 md:py-28 text-center cursor-pointer"
                 style={{ minHeight: "420px" }}
                 aria-label="Load the booking calendar"

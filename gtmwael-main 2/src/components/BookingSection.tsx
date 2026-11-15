@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import AnimateIn from "./AnimateIn";
 
 const benefits = [
@@ -45,7 +45,7 @@ const BookingSection = () => {
           
           <AnimateIn delay={600}>
             <Button variant="hero" size="xl" className="group" asChild>
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
                 Book a 20-min GTM Audit
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </a>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import ResponsiveImage from "@/components/ResponsiveImage";
 import icCenterHero from "@/assets/ic-center-hero.png";
 import icCenterFullLanding from "@/assets/ic-center-full-landing.png";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 
 const CaseStudyICCenter = () => {
   return (
@@ -165,7 +165,7 @@ const CaseStudyICCenter = () => {
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Want a landing page like this?</h2>
           <p className="text-muted-foreground mb-8">Book a free diagnostic call and let's craft your conversion machine.</p>
-          <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
             <Button variant="hero" size="xl">Book a Call</Button>
           </a>
         </div>

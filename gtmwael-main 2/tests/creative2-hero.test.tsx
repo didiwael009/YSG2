@@ -24,5 +24,5 @@ describe("slider hero", () => {
     expect(html).toMatch(/class="absolute inset-0 z-10[^"]*"[^>]*><div data-layer="creative"/);
   });
   it("marks both text columns for width sync", () => expect(html.split("data-col").length - 1).toBe(2));
-  it("creative CTA opens the booking link", () => expect(html).toMatch(/calendly\.com/));
+  it("creative CTA opens the booking link", () => expect(html).toContain("cal.com/aouididi-wael-4jw03z/30min"));
 });

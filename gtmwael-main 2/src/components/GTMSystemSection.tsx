@@ -1,6 +1,6 @@
 import { Shield, Zap, LineChart, ArrowRight, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/lib/constants";
+import { BOOKING_URL } from "@/lib/constants";
 import AnimateIn from "./AnimateIn";
 import {
   Accordion,
@@ -159,7 +159,7 @@ const GTMSystemSection = () => {
             Ready to build a growth system that compounds?
           </p>
           <Button variant="hero" size="lg" className="group" asChild>
-            <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer">
+            <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
               Book a 20-min GTM Audit
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
