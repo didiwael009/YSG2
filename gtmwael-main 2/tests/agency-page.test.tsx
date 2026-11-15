@@ -58,6 +58,12 @@ describe("/agency page", () => {
   it("shows Sirine's photo", () => {
     expect(html).toMatch(/<img [^>]*src="[^"]*sirine-portrait[^"]*"[^>]*alt="Sirine Aouididi"/);
   });
+  it("gives each of the three team cards a Top Rated badge", () => {
+    const team = html.slice(html.indexOf('<section id="team"'), html.indexOf('<section id="work"'));
+    const cards = team.split("<article").slice(1);
+    expect(cards).toHaveLength(3);
+    for (const c of cards) expect(c).toMatch(/<span [^>]*>(<svg[\s\S]*?<\/svg>)?Top Rated<\/span>/);
+  });
   it("shows Wael's own selected projects, internal ones as site links", () => {
     const work = html.slice(html.indexOf('<section id="work"'));
     expect(work).toContain("Wael Aouididi");

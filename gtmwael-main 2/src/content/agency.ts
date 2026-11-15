@@ -52,10 +52,11 @@ export const AGENCY_HERO_IMAGE = {
   alt: "Pilau summer campaign by Sirine Aouididi",
 };
 
-export const AGENCY_TEAM: { eyebrow: string; line1: string; line2: string; people: AgencyPerson[] } = {
+export const AGENCY_TEAM: { eyebrow: string; line1: string; line2: string; badge: string; people: AgencyPerson[] } = {
   eyebrow: "The team",
   line1: "Three designers.",
   line2: "One production line.",
+  badge: "Top Rated",
   people: [
     {
       id: "sirine",
