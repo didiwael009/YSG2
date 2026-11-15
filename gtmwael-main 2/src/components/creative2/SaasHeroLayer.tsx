@@ -17,9 +17,9 @@ export const HERO_LOGOS = [
 
 export { UPWORK_PATH };
 
-/** The homepage SaaS hero, redrawn with the new photo. Hidden from assistive tech. */
+/** The homepage SaaS hero, redrawn with the new photo. Hidden from assistive tech; its links stay clickable where this side shows. */
 const SaasHeroLayer = () => (
-  <div data-layer="saas" aria-hidden="true" {...({ inert: "" } as Record<string, string>)} className="relative bg-hero-gradient">
+  <div data-layer="saas" aria-hidden="true" className="relative bg-hero-gradient">
     <section className={L.section}>
       <div className="absolute top-[30%] left-1/2 -translate-x-1/2 w-[800px] max-w-full h-[500px] bg-[hsl(260_60%_50%/0.12)] rounded-full blur-[120px] z-0" />
       <div className={L.container}>

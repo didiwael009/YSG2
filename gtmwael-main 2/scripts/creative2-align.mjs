@@ -94,17 +94,26 @@ const hits = await page.evaluate(() => {
   const heroBox = document.querySelector('section[aria-label="Hero"]').getBoundingClientRect();
   const ctas = document.querySelector('[data-layer="creative"] [data-block="ctas"]').getBoundingClientRect();
   const y = ctas.top + ctas.height / 2;
-  const at = (fx) => {
-    const el = document.elementFromPoint(heroBox.left + heroBox.width * fx, y);
-    // The SaaS layer is inert, and Chrome leaves inert nodes out of hit testing, so a
-    // click there lands on the layer's own wrapper: count that wrapper as the layer.
-    const layer = el?.closest("[data-layer]") ?? el?.querySelector(":scope > [data-layer]");
-    return layer?.getAttribute("data-layer") ?? "none";
-  };
-  return { left: at(0.25), right: at(0.75) };
+  const at = (fx) => document.elementFromPoint(heroBox.left + heroBox.width * fx, y);
+  const layerOf = (el) => el?.closest("[data-layer]")?.getAttribute("data-layer") ?? "none";
+  const left = at(0.25);
+  // The visible SaaS button must take the click: a hit on a link inside the SaaS layer.
+  return { left: left?.closest('[data-layer="saas"] a') ? "saas link" : layerOf(left), right: layerOf(at(0.75)) };
 });
-check(hits.left === "saas", `25% inside ctas hits ${hits.left}`);
+check(hits.left === "saas link", `25% inside ctas hits ${hits.left}`);
 check(hits.right === "creative", `75% inside ctas hits ${hits.right}`);
+
+// Tab from the handle back to the creative primary CTA: the handle must move so it shows.
+await toFifty(page, knob);
+await page.locator('[data-layer="creative"] [data-block="ctas"] a').first().focus();
+await settle(page);
+const shown = await page.evaluate(() => {
+  const a = document.querySelector('[data-layer="creative"] [data-block="ctas"] a').getBoundingClientRect();
+  const hero = document.querySelector('section[aria-label="Hero"]').getBoundingClientRect();
+  const p = Number(document.querySelector('[role="slider"]').getAttribute("aria-valuenow"));
+  return { ok: a.left >= hero.left + (hero.width * p) / 100, p };
+});
+check(shown.ok, `focused creative CTA visible (handle ${shown.p})`);
 
 if (SHOT_DIR) {
   for (const w of WIDTHS) {

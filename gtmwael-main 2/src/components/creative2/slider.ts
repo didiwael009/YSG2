@@ -30,3 +30,17 @@ export function maxHeights(a: Record<string, number>, b: Record<string, number>)
   for (const [k, v] of Object.entries(b)) out[k] = Math.max(out[k] ?? 0, v);
   return out;
 }
+
+/** Gap kept between a revealed control and the handle, in px. */
+export const REVEAL_MARGIN = 16;
+
+/**
+ * When keyboard focus lands on a creative control hidden under the SaaS side
+ * (left of the handle), the handle percent that shows it; null if already visible.
+ */
+export function revealPercent(p: number, el: { left: number }, rect: { left: number; width: number }): number | null {
+  if (rect.width <= 0) return null;
+  const handleX = rect.left + (rect.width * p) / 100;
+  if (el.left >= handleX) return null;
+  return clampPercent(((el.left - REVEAL_MARGIN - rect.left) / rect.width) * 100);
+}

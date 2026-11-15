@@ -10,15 +10,15 @@ describe("slider hero", () => {
       expect(html.split(`data-block="${b}"`).length - 1).toBe(2);
     }
   });
-  it("hides the SaaS layer from assistive tech", () => {
+  it("hides the SaaS layer from assistive tech but keeps its buttons clickable", () => {
     expect(html).toMatch(/data-layer="saas"[^>]*aria-hidden="true"/);
-    expect(html).toMatch(/data-layer="saas"[^>]*inert/);
+    expect(html).not.toMatch(/data-layer="saas"[^>]*inert/);
   });
   it("has an accessible handle starting at 50", () => {
     expect(html).toContain('role="slider"');
     expect(html).toContain('aria-valuenow="50"');
   });
-  it("lets vertical swipes scroll the page", () => expect(html).toContain("touch-action:pan-y"));
+  it("lets vertical swipes scroll the page and keeps pinch-zoom", () => expect(html).toContain("touch-action:pan-y pinch-zoom"));
   it("stacks the creative layer above the SaaS layer", () => {
     expect(html).toMatch(/class="isolate"[^>]*><div data-layer="saas"/);
     expect(html).toMatch(/class="absolute inset-0 z-10[^"]*"[^>]*><div data-layer="creative"/);

@@ -1,8 +1,8 @@
-import { useCallback, useRef, useState, type CSSProperties, type KeyboardEvent, type PointerEvent } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type FocusEvent, type KeyboardEvent, type PointerEvent } from "react";
 import { CREATIVE2_COPY } from "@/content/creative2";
 import SaasHeroLayer from "./SaasHeroLayer";
 import CreativeHeroLayer from "./CreativeHeroLayer";
-import { START_PERCENT, nextPercentForKey, percentFromPointer } from "./slider";
+import { START_PERCENT, nextPercentForKey, percentFromPointer, revealPercent } from "./slider";
 import { useSyncedBlocks } from "./useSyncedBlocks";
 import { useNewsreader } from "./useNewsreader";
 
@@ -18,6 +18,12 @@ const SliderHero = () => {
   const creative = useRef<HTMLDivElement>(null);
   const dragging = useRef(false);
   useSyncedBlocks(saas, creative);
+
+  // The SaaS layer stays clickable where it shows, but out of the tab order:
+  // keyboard users reach the same actions on the creative layer.
+  useEffect(() => {
+    saas.current?.querySelectorAll("a, button").forEach((el) => el.setAttribute("tabindex", "-1"));
+  }, []);
 
   const fromPointer = useCallback((clientX: number) => {
     const el = box.current;
@@ -43,14 +49,22 @@ const SliderHero = () => {
     setP(next);
   };
 
+  // Keyboard focus on a creative control hidden under the SaaS side moves the handle to show it.
+  const onCreativeFocus = (e: FocusEvent<HTMLDivElement>) => {
+    const el = box.current;
+    if (!el) return;
+    const next = revealPercent(p, e.target.getBoundingClientRect(), el.getBoundingClientRect());
+    if (next !== null) setP(next);
+  };
+
   const band = CREATIVE2_COPY.band;
   return (
     <>
-      <section aria-label="Hero" ref={box} className="relative overflow-hidden" style={{ touchAction: "pan-y", "--p": `${p}%` } as CSSProperties}>
+      <section aria-label="Hero" ref={box} className="relative overflow-hidden" style={{ touchAction: "pan-y pinch-zoom", "--p": `${p}%` } as CSSProperties}>
         <div ref={saas} className="isolate">
           <SaasHeroLayer />
         </div>
-        <div ref={creative} className="absolute inset-0 z-10 isolate" style={{ clipPath: "inset(0 0 0 var(--p))" }}>
+        <div ref={creative} onFocus={onCreativeFocus} className="absolute inset-0 z-10 isolate" style={{ clipPath: "inset(0 0 0 var(--p))" }}>
           <CreativeHeroLayer />
         </div>
 

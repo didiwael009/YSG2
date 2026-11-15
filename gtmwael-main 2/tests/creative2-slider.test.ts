@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { clampPercent, percentFromPointer, nextPercentForKey, maxHeights, START_PERCENT } from "@/components/creative2/slider";
+import { clampPercent, percentFromPointer, nextPercentForKey, maxHeights, revealPercent, START_PERCENT } from "@/components/creative2/slider";
 
 describe("creative2 slider", () => {
   it("starts at 50", () => expect(START_PERCENT).toBe(50));
@@ -21,6 +21,12 @@ describe("creative2 slider", () => {
     expect(nextPercentForKey(40, "Home")).toBe(0);
     expect(nextPercentForKey(40, "End")).toBe(100);
     expect(nextPercentForKey(40, "a")).toBeNull();
+  });
+  it("moves the handle left of a focused control hidden under the SaaS side", () => {
+    const box = { left: 100, width: 800 };
+    expect(revealPercent(50, { left: 600 }, box)).toBeNull();
+    expect(revealPercent(50, { left: 216 }, box)).toBe(12.5);
+    expect(revealPercent(50, { left: 105 }, box)).toBe(0);
   });
   it("keeps the taller height of each block", () => {
     expect(maxHeights({ title: 80, cards: 120 }, { title: 96, cards: 100, logos: 40 }))
