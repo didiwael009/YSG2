@@ -3,6 +3,8 @@ import SectionDivider from "@/components/SectionDivider";
 import Footer from "@/components/Footer";
 import { useNewsreader } from "@/components/creative2/useNewsreader";
 import SliderHero from "@/components/creative2/SliderHero";
+import C2Experience from "@/components/creative2/C2Experience";
+import C2Services from "@/components/creative2/C2Services";
 
 const Creative2 = () => {
   useNewsreader();
@@ -11,9 +13,9 @@ const Creative2 = () => {
       <Navigation />
       <SliderHero />
       <SectionDivider variant="glow" />
-      <section id="experience" />
+      <C2Experience />
       <SectionDivider variant="curve-to-light" />
-      <section id="services" />
+      <C2Services />
       <SectionDivider variant="curve-to-dark" />
       <section id="creative-workflow" />
       <SectionDivider variant="curve-to-light" />
