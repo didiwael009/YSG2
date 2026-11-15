@@ -34,7 +34,7 @@ const CreativeHeroLayer = () => {
                     href={UPWORK_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`${L.badge} text-xs font-bold uppercase tracking-[0.02em] hover:brightness-95`}
+                    className={`${L.badge} rounded-full text-xs font-bold uppercase tracking-[0.02em] hover:brightness-95`}
                     style={{ background: "#c6f432", color: INK }}
                   >
                     {c.badge}
