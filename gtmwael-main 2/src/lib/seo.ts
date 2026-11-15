@@ -797,6 +797,16 @@ export const seoRoutes: SeoRoute[] = [
     schemaIncludeGlobal: false,
   },
   {
+    path: "/creative-2-full",
+    title: "Creative Studio: Videos, Carousels, Brands, Ads | Your SaaS Growth",
+    description: "Short animated videos, carousels, brand identity and product ads by Wael Aouididi.",
+    type: "portfolio",
+    priority: 0.3,
+    changefreq: "monthly",
+    noindex: true,
+    schemaIncludeGlobal: false,
+  },
+  {
     path: "/resume",
     title: "Wael Aouididi Resume | SaaS GTM Strategist",
     description: "Resume and experience for Wael Aouididi, SaaS founder and GTM strategist focused on B2B growth, funnels, and acquisition.",
