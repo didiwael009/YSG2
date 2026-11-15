@@ -33,3 +33,13 @@ describe("agency content", () => {
     expect(agency.AGENCY_PROCESS.steps).toHaveLength(3);
   });
 });
+
+describe("agency hero image", () => {
+  it("is big enough for the 4:5 hero frame, not a blown-up thumbnail", async () => {
+    const sharp = (await import("sharp")).default;
+    const { width = 0, height = 0 } = await sharp("src/assets/agency/pilau-campaign.webp").metadata();
+    expect(width).toBeGreaterThanOrEqual(600);
+    expect(height).toBeGreaterThanOrEqual(750);
+    expect(Math.abs(width / height - 0.8)).toBeLessThan(0.02);
+  });
+});
