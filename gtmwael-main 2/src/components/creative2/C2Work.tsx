@@ -93,7 +93,7 @@ const AppsRow = ({ label, lines }: { label: string; lines: Record<string, string
  * Homepage CreativeWorkflowSection (teaser) + CaseStudyBar positions, style A:
  * the real video projects, ads, social posts and apps, then the brand projects row.
  */
-const C2Work = () => {
+const C2Work = ({ showBrands = true }: { showBrands?: boolean }) => {
   const c = CREATIVE2_COPY.work;
   return (
     <>
@@ -156,6 +156,7 @@ const C2Work = () => {
       </section>
 
       {/* Brand projects row, in the CaseStudyBar position. */}
+      {showBrands && (
       <section aria-labelledby="c2-brands-title" className="py-16 font-body md:py-20" style={{ background: INK, color: CREAM }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h3 id="c2-brands-title" className="mb-8 text-2xl md:text-3xl" style={HEAVY}>{c.brandsLabel}</h3>
@@ -192,6 +193,7 @@ const C2Work = () => {
           </ul>
         </div>
       </section>
+      )}
     </>
   );
 };

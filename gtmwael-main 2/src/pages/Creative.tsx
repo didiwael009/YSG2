@@ -1,172 +1,155 @@
-import { Sparkles, ExternalLink, Play, Palette, Megaphone } from "lucide-react";
-import { AdsRow } from "@/components/WorkShowcase";
-import { Button } from "@/components/ui/button";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import VideoGrid from "@/components/VideoGrid";
 import ResponsiveImage from "@/components/ResponsiveImage";
-import { videoProjects } from "@/lib/video-data";
+import C2Work from "@/components/creative2/C2Work";
+import { CREAM, HEAVY, INK, LIME, SERIF } from "@/components/creative2/style";
 import { BOOKING_URL } from "@/lib/constants";
 import { rebrandingProjects } from "@/lib/rebrand-data";
 
+const focusStyle =
+  "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c6f432]";
+
+/** "Full SaaS rebrand — Led complete..." → ["Full SaaS rebrand", "Led complete..."], shown without the dash. */
+const splitDescription = (d: string) => {
+  const [kicker, ...rest] = d.split(" — ");
+  return rest.length ? { kicker, text: rest.join(" ") } : { kicker: "", text: d };
+};
+
 const Creative = () => {
+  const [featured, ...others] = rebrandingProjects;
+  const f = splitDescription(featured.description);
+
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen overflow-x-clip font-body" style={{ background: INK }}>
       <Navigation />
 
-      {/* Hero */}
-      <section className="pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent" />
-        
-        <div className="container relative z-10 mx-auto px-6 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Creative Portfolio</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-foreground mb-6">
-            Work That
-            <span className="block bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
-              Speaks For Itself
+      <main id="main">
+        {/* Hero, in the homepage creative style: cream, lime badge, heavy line + italic serif line. */}
+        <section className="relative pb-16 pt-32 md:pb-24 md:pt-40" style={{ background: CREAM, color: INK }}>
+          <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+            <span
+              className="mb-6 inline-block rounded-full px-3 py-1.5 text-xs font-bold uppercase tracking-[0.04em]"
+              style={{ background: LIME, color: INK }}
+            >
+              Creative Portfolio
             </span>
-          </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            From viral videos to high-converting landing pages — creative assets engineered for attention and action.
-          </p>
-        </div>
-      </section>
-
-      {/* Rebranding Section */}
-      <section className="py-20 relative">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center gap-3 mb-12">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-              <Palette className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">Rebranding & Landing Pages</h2>
-              <p className="text-muted-foreground">Full brand transformations and conversion-optimized pages</p>
-            </div>
+            <h1 className="leading-[0.95] tracking-[-0.035em]">
+              <span className="block text-6xl md:text-8xl lg:text-9xl" style={HEAVY}>Work That</span>
+              <span className="mt-2 block text-6xl md:text-8xl lg:text-9xl" style={SERIF}>Speaks For Itself</span>
+            </h1>
+            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-black/70 md:text-xl">
+              From viral videos to high-converting landing pages. Creative assets engineered for attention and action.
+            </p>
           </div>
+        </section>
 
-          {/* Featured Pubwrite */}
-          <a 
-            href={rebrandingProjects[0].link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group block mb-8"
-          >
-            <div className="relative aspect-[16/9] rounded-3xl overflow-hidden bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20">
-              <ResponsiveImage
-                src={rebrandingProjects[0].cover} 
-                alt={rebrandingProjects[0].title}
-                loading="lazy"
-                decoding="async"
-                sizes="100vw"
-                className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
-              <div className="absolute inset-0 p-8 md:p-12 flex flex-col justify-end">
-                <span className="inline-block w-fit px-3 py-1 rounded-full bg-primary text-xs font-semibold text-primary-foreground mb-4">
-                  {rebrandingProjects[0].role}
-                </span>
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-3">{rebrandingProjects[0].title}</h3>
-                <p className="text-lg text-white/80 max-w-2xl">{rebrandingProjects[0].description}</p>
+        {/* Brand projects: one featured case, then the others, with their real pages. */}
+        <section aria-labelledby="folio-brands-title" style={{ background: INK, color: CREAM }}>
+          <div className="mx-auto max-w-7xl px-5 pb-6 pt-16 sm:px-8 lg:px-10 lg:pt-24">
+            <div className="mb-10 flex flex-col gap-6 md:mb-14 md:flex-row md:items-end md:justify-between">
+              <div>
+                <p className="mb-4 text-sm font-bold uppercase tracking-widest" style={{ color: LIME }}>Brand projects</p>
+                <h2 id="folio-brands-title" className="leading-[0.95] tracking-[-0.03em]">
+                  <span className="block text-5xl md:text-6xl lg:text-7xl" style={HEAVY}>Rebranding &amp;</span>
+                  <span className="block text-5xl md:text-6xl lg:text-7xl" style={SERIF}>Landing Pages</span>
+                </h2>
               </div>
-              <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
-                <ExternalLink className="w-6 h-6 text-white" />
+              <p className="max-w-sm text-base leading-relaxed text-white/75">Full brand transformations and conversion-optimized pages</p>
+            </div>
+
+            <a
+              href={featured.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group grid overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] hover:border-white/30 lg:grid-cols-[1.6fr_1fr] ${focusStyle}`}
+            >
+              <div className="aspect-[16/10] overflow-hidden lg:aspect-auto lg:min-h-[460px]">
+                <ResponsiveImage
+                  src={featured.cover}
+                  alt={`${featured.title} landing page`}
+                  sizes="(min-width: 1024px) 60vw, 100vw"
+                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
               </div>
-            </div>
-          </a>
+              <div className="flex flex-col justify-end p-6 md:p-10">
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/60">
+                  {featured.category} · {featured.role}
+                </p>
+                <p className="mt-3 flex items-start justify-between gap-3 text-4xl leading-none md:text-5xl" style={HEAVY}>
+                  {featured.title}
+                  <ArrowUpRight className="mt-1 h-6 w-6 flex-shrink-0" aria-hidden="true" />
+                </p>
+                {f.kicker && <p className="mt-5 text-2xl" style={{ ...SERIF, color: LIME }}>{f.kicker}</p>}
+                <p className="mt-3 text-base leading-relaxed text-white/75">{f.text}</p>
+              </div>
+            </a>
 
-          {/* Other Rebranding Projects Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {rebrandingProjects.slice(1).map((page, index) => (
-              <a 
-                key={index}
-                href={page.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group"
-              >
-                <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-card border border-border/50 hover:border-primary/50 transition-all duration-500 hover:shadow-xl mb-4">
-                  <ResponsiveImage
-                    src={page.cover} 
-                    alt={page.title}
-                    loading="lazy"
-                    decoding="async"
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/20" />
-                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                    <span className="inline-block w-fit px-2 py-0.5 rounded-full bg-white/20 backdrop-blur-sm text-xs font-medium text-white mb-2">
-                      {page.role}
-                    </span>
-                    <h3 className="text-2xl font-semibold text-white">{page.title}</h3>
-                  </div>
-                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <ExternalLink className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors">{page.description}</p>
-              </a>
-            ))}
+            <ul className="mt-6 grid gap-6 md:grid-cols-2">
+              {others.map((r) => {
+                const d = splitDescription(r.description);
+                return (
+                  <li key={r.title}>
+                    <a
+                      href={r.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`group block h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:border-white/30 ${focusStyle}`}
+                    >
+                      <div className="aspect-[16/10] overflow-hidden">
+                        <ResponsiveImage
+                          src={r.cover}
+                          alt={`${r.title} landing page`}
+                          sizes="(min-width: 768px) 50vw, 100vw"
+                          className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                        />
+                      </div>
+                      <div className="p-5 md:p-6">
+                        <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/60">
+                          {r.category} · {r.role}
+                        </p>
+                        <p className="mt-2 flex items-start justify-between gap-3 text-2xl" style={HEAVY}>
+                          {r.title}
+                          <ArrowUpRight className="mt-1 h-5 w-5 flex-shrink-0" aria-hidden="true" />
+                        </p>
+                        {d.kicker && <p className="mt-2 text-lg" style={{ ...SERIF, color: LIME }}>{d.kicker}</p>}
+                        <p className="mt-1 text-sm leading-relaxed text-white/75">{d.text}</p>
+                      </div>
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* SaaS Ads */}
-      <section className="pb-20 relative">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center gap-3 mb-8">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-              <Megaphone className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h2 id="folio-ads-title" className="text-2xl md:text-3xl font-display font-bold text-foreground">SaaS Ads</h2>
-              <p className="text-muted-foreground">Product ads for SaaS and B2B brands</p>
-            </div>
-          </div>
-          <AdsRow tone="dark" id="folio-ads-title" showLabel={false} />
-        </div>
-      </section>
+        {/* Videos, ads, social posts and apps, as on the homepage. */}
+        <C2Work showBrands={false} />
 
-      {/* Content Creation / Video Section */}
-      <section className="py-20 relative bg-section-light">
-        <div className="container mx-auto px-6">
-          <div className="flex items-center gap-3 mb-12">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-              <Play className="w-6 h-6 text-primary" />
-            </div>
-            <div>
-              <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground">Content Creation</h2>
-              <p className="text-muted-foreground">Scroll-stopping video content that captures attention</p>
-            </div>
-          </div>
-
-          <VideoGrid projects={videoProjects} />
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 relative">
-        <div className="container mx-auto px-6">
-          <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 via-accent/10 to-primary/20 border border-primary/20 p-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4">
-              Need Creative That Converts?
+        {/* Closing call, in the homepage creative style. */}
+        <section aria-labelledby="folio-cta-title" className="pb-24 pt-8 md:pb-32" style={{ background: INK, color: CREAM }}>
+          <div className="mx-auto flex max-w-3xl flex-col items-center px-5 text-center">
+            <h2 id="folio-cta-title" className="leading-[0.95] tracking-[-0.03em]">
+              <span className="block text-5xl md:text-6xl lg:text-7xl" style={HEAVY}>Need Creative</span>
+              <span className="block text-5xl md:text-6xl lg:text-7xl" style={SERIF}>That Converts?</span>
             </h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/75">
               Let's discuss your next project and create something that drives real results.
             </p>
-            <Button asChild variant="hero" size="lg">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                Book a Call
-              </a>
-            </Button>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group mt-8 inline-flex min-h-12 items-center gap-2 rounded-full px-7 py-3 text-base font-bold hover:brightness-95 ${focusStyle}`}
+              style={{ background: LIME, color: INK }}
+            >
+              Book a Call
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </a>
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
+
       <Footer />
     </div>
   );
