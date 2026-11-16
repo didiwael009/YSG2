@@ -20,3 +20,14 @@ describe("filled orange buttons pass WCAG AA with white text", () => {
     expect(html).not.toMatch(/(^|\s|")bg-primary(\s|")/);
   });
 });
+
+import { MemoryRouter } from "react-router-dom";
+import { AppRoutes } from "@/App";
+
+describe("desktop nav links stay readable over the light half of the hero", () => {
+  it("uses a 95% opaque pill so grey links keep 4.5:1 even over white", () => {
+    const html = renderToString(<MemoryRouter initialEntries={["/"]}><AppRoutes /></MemoryRouter>);
+    expect(html).toMatch(/class="[^"]*bg-card\/95[^"]*rounded-full/);
+    expect(html).not.toMatch(/bg-card\/80 backdrop-blur-xl rounded-full/);
+  });
+});

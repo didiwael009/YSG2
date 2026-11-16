@@ -89,7 +89,6 @@ const caseStudies = [
 
 const Navigation = ({ variant = "default" }: { variant?: "default" | "blog" }) => {
   const location = useLocation();
-  const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
@@ -107,27 +106,6 @@ const Navigation = ({ variant = "default" }: { variant?: "default" | "blog" }) =
   useEffect(() => {
     setMobileOpen(false);
   }, [location.pathname]);
-
-  useEffect(() => {
-    let ticking = false;
-    let lastScrolled = window.scrollY > 50;
-    setIsScrolled(lastScrolled);
-
-    const handleScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const nextScrolled = window.scrollY > 50;
-        if (nextScrolled !== lastScrolled) {
-          lastScrolled = nextScrolled;
-          setIsScrolled(nextScrolled);
-        }
-        ticking = false;
-      });
-    };
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   useEffect(() => {
     if (location.pathname !== "/" || !("IntersectionObserver" in window)) return;
@@ -178,9 +156,7 @@ const Navigation = ({ variant = "default" }: { variant?: "default" | "blog" }) =
         className={
           light
             ? "mx-auto flex h-14 max-w-[1240px] items-center px-2 sm:px-4"
-            : `flex items-center bg-card/80 backdrop-blur-xl rounded-full px-2 py-2 border border-border/50 shadow-lg shadow-background/30 ${
-                isScrolled ? "bg-card/90" : ""
-              }`
+            : `flex items-center bg-card/95 backdrop-blur-xl rounded-full px-2 py-2 border border-border/50 shadow-lg shadow-background/30`
         }
       >
         {/* Home button for internal pages */}
