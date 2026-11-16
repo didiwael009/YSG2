@@ -31,8 +31,8 @@ export const remotionClaudeCode: BlogPost = {
     { name: "Remotion and Claude Code", path: "/blog/remotion-claude-code" },
   ],
   readTime: "9 min read",
-  ogImage: "/og-default.png",
-  featuredImage: "/og-default.png",
+  ogImage: "/remotion-claude-code-cover.webp",
+  featuredImage: "/remotion-claude-code-cover.webp",
   featuredImageAlt:
     "Remotion and Claude Code workflow: code-drawn motion graphics rendered frame by frame.",
   primaryKeyword: "remotion and claude code",
