@@ -87,13 +87,24 @@ export const claudeConnectorCustomerAcquisition: BlogPost = {
       ],
     },
     {
-      type: "data-table",
-      columns: ["Period", "Reported sign-ups"],
+      type: "data-chart",
+      caption: "Sign-ups per day reported by the founder · not checked",
+      labelWidth: "wide",
       rows: [
-        ["Two weeks \"trending\"", "up to 1,500 a day"],
-        ["Since then", "about 250 a day"],
-        ["Total, no ads", "24,000 accounts"],
+        {
+          label: "2 weeks trending, peak",
+          value: 1500,
+          display: "1,500",
+        },
+        {
+          label: "Since then, about",
+          value: 250,
+          display: "250",
+          muted: true,
+        },
       ],
+      footnote:
+        "Total reported, no ads: 24,000 accounts. Source: the founder's post on r/mcp, November 4.",
     },
     {
       type: "paragraphs",
