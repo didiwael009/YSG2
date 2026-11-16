@@ -16,9 +16,13 @@ const splitDescription = (d: string) => {
   return rest.length ? { kicker, text: rest.join(" ") } : { kicker: "", text: d };
 };
 
+/** The brand projects kept on this page, in this order. */
+const SHOWN = ["Shipzzer", "Zembra", "BottleNexus"];
+
 const Creative = () => {
-  const [featured, ...others] = rebrandingProjects;
-  const f = splitDescription(featured.description);
+  const shown = SHOWN.map((t) => rebrandingProjects.find((r) => r.title === t)).filter(
+    (r): r is (typeof rebrandingProjects)[number] => Boolean(r),
+  );
 
   return (
     <div className="min-h-screen overflow-x-clip font-body" style={{ background: INK }}>
@@ -44,7 +48,7 @@ const Creative = () => {
           </div>
         </section>
 
-        {/* Brand projects: one featured case, then the others, with their real pages. */}
+        {/* Brand projects: three cases, with their real pages. */}
         <section aria-labelledby="folio-brands-title" style={{ background: INK, color: CREAM }}>
           <div className="mx-auto max-w-7xl px-5 pb-6 pt-16 sm:px-8 lg:px-10 lg:pt-24">
             <div className="mb-10 flex flex-col gap-6 md:mb-14 md:flex-row md:items-end md:justify-between">
@@ -58,68 +62,67 @@ const Creative = () => {
               <p className="max-w-sm text-base leading-relaxed text-white/75">Full brand transformations and conversion-optimized pages</p>
             </div>
 
-            <a
-              href={featured.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`group grid overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] hover:border-white/30 lg:grid-cols-[1.6fr_1fr] ${focusStyle}`}
-            >
-              <div className="aspect-[16/10] overflow-hidden lg:aspect-auto lg:min-h-[460px]">
-                <ResponsiveImage
-                  src={featured.cover}
-                  alt={`${featured.title} landing page`}
-                  sizes="(min-width: 1024px) 60vw, 100vw"
-                  className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
-              <div className="flex flex-col justify-end p-6 md:p-10">
-                <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/60">
-                  {featured.category} · {featured.role}
-                </p>
-                <p className="mt-3 flex items-start justify-between gap-3 text-4xl leading-none md:text-5xl" style={HEAVY}>
-                  {featured.title}
-                  <ArrowUpRight className="mt-1 h-6 w-6 flex-shrink-0" aria-hidden="true" />
-                </p>
-                {f.kicker && <p className="mt-5 text-2xl" style={{ ...SERIF, color: LIME }}>{f.kicker}</p>}
-                <p className="mt-3 text-base leading-relaxed text-white/75">{f.text}</p>
-              </div>
-            </a>
-
-            <ul className="mt-6 grid gap-6 md:grid-cols-2">
-              {others.map((r) => {
+            {/* Stacked case cards: on large screens each one sticks and the next slides over it. */}
+            <ol className="space-y-8 pb-10 lg:space-y-16">
+              {shown.map((r, i) => {
                 const d = splitDescription(r.description);
+                const host = new URL(r.link).hostname.replace(/^www\./, "");
                 return (
-                  <li key={r.title}>
+                  <li key={r.title} className="lg:sticky" style={{ top: `${96 + i * 28}px` }}>
                     <a
                       href={r.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`group block h-full overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] hover:border-white/30 ${focusStyle}`}
+                      className={`group grid overflow-hidden rounded-[28px] border border-white/10 bg-[#171717] shadow-[0_-24px_60px_rgba(0,0,0,0.45)] hover:border-white/25 lg:grid-cols-[1fr_1.5fr] ${focusStyle}`}
                     >
-                      <div className="aspect-[16/10] overflow-hidden">
-                        <ResponsiveImage
-                          src={r.cover}
-                          alt={`${r.title} landing page`}
-                          sizes="(min-width: 768px) 50vw, 100vw"
-                          className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                        />
+                      <div className="flex flex-col justify-between gap-10 p-6 md:p-10">
+                        <div className="flex items-start justify-between gap-4">
+                          <span className="text-6xl leading-none md:text-7xl" style={{ ...SERIF, color: LIME }}>
+                            {String(i + 1).padStart(2, "0")}
+                          </span>
+                          <span className="rounded-full border border-white/15 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-white/70">
+                            {r.category}
+                          </span>
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/55">{r.role}</p>
+                          <p className="mt-3 text-4xl leading-none md:text-5xl" style={HEAVY}>{r.title}</p>
+                          {d.kicker && <p className="mt-4 text-2xl" style={{ ...SERIF, color: LIME }}>{d.kicker}</p>}
+                          <p className="mt-3 max-w-sm text-base leading-relaxed text-white/75">{d.text}</p>
+                          <span
+                            className="mt-8 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold transition-transform group-hover:translate-x-1"
+                            style={{ background: LIME, color: INK }}
+                          >
+                            View project
+                            <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
+                          </span>
+                        </div>
                       </div>
-                      <div className="p-5 md:p-6">
-                        <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/60">
-                          {r.category} · {r.role}
-                        </p>
-                        <p className="mt-2 flex items-start justify-between gap-3 text-2xl" style={HEAVY}>
-                          {r.title}
-                          <ArrowUpRight className="mt-1 h-5 w-5 flex-shrink-0" aria-hidden="true" />
-                        </p>
-                        {d.kicker && <p className="mt-2 text-lg" style={{ ...SERIF, color: LIME }}>{d.kicker}</p>}
-                        <p className="mt-1 text-sm leading-relaxed text-white/75">{d.text}</p>
+
+                      {/* The real page, in a browser window. */}
+                      <div className="order-first flex items-center p-3 md:p-6 lg:order-none lg:pl-0">
+                        <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-[#0b0b0b] transition-transform duration-500 group-hover:-translate-y-1 group-hover:rotate-[-0.6deg]">
+                          <div className="flex items-center gap-2 border-b border-white/10 px-4 py-3" aria-hidden="true">
+                            <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
+                            <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
+                            <span className="h-2.5 w-2.5 rounded-full bg-white/20" />
+                            <span className="ml-3 truncate rounded-full bg-white/[0.06] px-3 py-1 text-xs text-white/55">{host}</span>
+                          </div>
+                          <div className="aspect-[1920/996] overflow-hidden">
+                            <ResponsiveImage
+                              src={r.cover}
+                              alt={`${r.title} landing page`}
+                              sizes="(min-width: 1024px) 55vw, 100vw"
+                              className="h-full w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.03]"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </a>
                   </li>
                 );
               })}
-            </ul>
+            </ol>
           </div>
         </section>
 
