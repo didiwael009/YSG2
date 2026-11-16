@@ -30,6 +30,7 @@
     /* Orange/coral CTA primary - boosted lightness for WCAG AA contrast */
     --primary: 16 90% 50%;
     --primary-foreground: 0 0% 100%;
+    --primary-button: 16 90% 42%;
 
     /* Purple-tinted secondary for glass effects */
     --secondary: 260 25% 18%;
@@ -92,6 +93,7 @@
     --popover-foreground: 0 0% 98%;
     --primary: 16 90% 55%;
     --primary-foreground: 0 0% 100%;
+    --primary-button: 16 90% 42%;
     --secondary: 260 25% 18%;
     --secondary-foreground: 0 0% 98%;
     --muted: 260 20% 20%;
