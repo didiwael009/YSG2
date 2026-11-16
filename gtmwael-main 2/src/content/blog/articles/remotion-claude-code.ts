@@ -35,7 +35,7 @@ export const remotionClaudeCode: BlogPost = {
   featuredImage: "/og-default.png",
   featuredImageAlt:
     "Remotion and Claude Code workflow: code-drawn motion graphics rendered frame by frame.",
-  primaryKeyword: "remotion claude code",
+  primaryKeyword: "remotion and claude code",
   secondaryKeywords: [
     "claude code remotion",
     "claude remotion",
