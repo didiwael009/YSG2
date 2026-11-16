@@ -87,7 +87,61 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
         "The pattern is a different reader, not better wording.",
         "[Intercom](/cro-teardowns/intercom) moved from \"Support customers at exactly the right moment\" to \"The only helpdesk designed for the AI Agent era\". The teardown reads the first as written for the person running support, and the second for the person choosing a vendor.",
         "That teardown also gives the catch. \"The only\" answers a shortlist question. A visitor who has not yet decided they need the product will not find the claim meaningful.",
+      ],
+    },
+    {
+      type: "image-compare",
+      id: "intercom-headline",
+      label: "What the shift looks like",
+      title: "Intercom, from the support moment to the vendor shortlist",
+      paragraphs: [
+        "The 2023 hero describes the work a support lead does every day. The 2026 hero compares Intercom with every other helpdesk, and the first button changed from \"Get started\" to \"Start free trial\".",
+      ],
+      before: {
+        src: "/study-crops/intercom-2023-01.webp",
+        alt: "Intercom homepage in January 2023, headlined Support customers at exactly the right moment",
+        caption: "Intercom, January 2023",
+        quote: "\"Support customers at exactly the right moment.\" Written for the person running support.",
+      },
+      after: {
+        src: "/study-crops/intercom-current-live.webp",
+        alt: "Intercom homepage in 2026, headlined The only helpdesk designed for the AI Agent era",
+        caption: "Intercom, 2026",
+        quote: "\"The only helpdesk designed for the AI Agent era.\" Written for the person choosing a vendor.",
+      },
+      footnote: "Cropped to the top of each page. Full history: [Intercom homepage teardown](/cro-teardowns/intercom).",
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
         "[Gong](/cro-teardowns/gong) shows the same shift in its headings. The 2020 page used \"Skyrocket your success today\". The 2026 page uses \"Winning GTM organizations run revenue on Gong\".",
+      ],
+    },
+    {
+      type: "image-compare",
+      id: "gong-headline",
+      label: "What the shift looks like",
+      title: "Gong, from a category name to an AI operating system",
+      paragraphs: [
+        "The hero moved the same way as the headings. In 2020 it named the category Gong was building. In 2026 the first line is a ranking claim about AI.",
+      ],
+      before: {
+        src: "/study-crops/gong-2020-01.webp",
+        alt: "Gong homepage in January 2020, headlined Revenue Intelligence",
+        caption: "Gong, January 2020",
+        quote: "\"Get powerful visibility into your customer interactions with Revenue Intelligence.\"",
+      },
+      after: {
+        src: "/study-crops/gong-current-live.webp",
+        alt: "Gong homepage in 2026, headlined Revenue AI built to predict churn, under the line #1 AI OS for Revenue Teams",
+        caption: "Gong, 2026",
+        quote: "\"#1 AI OS for Revenue Teams.\" The headline below it reads \"Revenue AI built to predict churn.\"",
+      },
+      footnote: "Cropped to the top of each page. Full history: [Gong homepage teardown](/cro-teardowns/gong).",
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
         "So the first landing page question is not whether the headline is short or clever. It is which buyer the page is written for, and whether your traffic is that buyer.",
       ],
     },
@@ -200,6 +254,33 @@ export const landingPageOptimizationBestPractices2026: BlogPost = {
         "[Gong](/cro-teardowns/gong) replaced named VP testimonials with headings like \"Trusted by 5,000+ customers\" and \"Pitchbook is 10x more efficient with revenue AI\".",
         "CrowdAnalyzer's 2026 page surfaces \"3B Crawled Data\", \"6 Awards\" and \"70+ Team Members\", which its early page did not lead with.",
         "[SendX](/cro-teardowns/sendx) pairs a rate with its volume: \"95 to 98% inbox placement across 4.4 billion emails sent\". Its teardown says the denominator is what makes the percentage believable.",
+      ],
+    },
+    {
+      type: "image-compare",
+      id: "sendx-proof",
+      label: "What the shift looks like",
+      title: "SendX moved its numbers into the first paragraph",
+      paragraphs: [
+        "Both heroes carry the same customer count. The 2026 one adds the volume and the inbox rate, right under the headline.",
+      ],
+      before: {
+        src: "/study-crops/sendx-2021-01.webp",
+        alt: "SendX homepage in January 2021, headlined Affordable and Intuitive Email Marketing Software",
+        caption: "SendX, January 2021",
+        quote: "\"3000+ companies trust us with their Email Marketing.\" One number, no denominator.",
+      },
+      after: {
+        src: "/study-crops/sendx-current-live.webp",
+        alt: "SendX homepage in 2026, headlined Send unlimited emails. Land in the inbox. That's it.",
+        caption: "SendX, 2026",
+        quote: "\"Over 4.4 billion emails\" and \"95–98% inbox placement rates\", in the paragraph under the headline.",
+      },
+      footnote: "Cropped to the top of each page. Full history: [SendX homepage teardown](/cro-teardowns/sendx).",
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
         "My reading for a landing page: a number without its denominator is a claim. Put the number and what it was measured on where the visitor decides.",
       ],
     },

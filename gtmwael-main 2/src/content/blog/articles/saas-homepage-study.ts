@@ -113,11 +113,83 @@ export const saasHomepageStudy: BlogPost = {
         "Two things stand out in the shape of that curve. The first movement is 2019 to 2020, well before ChatGPT. A small group of data and analytics companies already used the word, mostly to describe modelling rather than generative features. The curve then flattens for two full years.",
         "The real inflection is 2023, and the steep part is 2025 to 2026. Between those two years the share nearly doubles.",
         "The teardown series shows the same move one company at a time. [Apollo](/cro-teardowns/apollo) now calls itself \"The AI sales platform for smarter, faster revenue growth.\" [Gong](/cro-teardowns/gong) replaced \"Revenue Intelligence\" with \"Revenue AI OS.\" [Crisp](/cro-teardowns/crisp) swapped \"Give your customer experience a human touch\" for an AI positioning statement. [Shopify](/cro-teardowns/shopify) replaced \"The platform commerce is built on\" with \"Be the next AI all-star.\" [Apify](/cro-teardowns/apify) went from \"Extract data from any website\" to \"39,044 tools for your AI.\" [Webflow](/cro-teardowns/webflow) now describes itself as an \"agentic web platform\" in its page title.",
+      ],
+    },
+    {
+      type: "image-compare",
+      id: "gong-example",
+      label: "What the shift looks like",
+      title: "Gong, from a category name to an AI operating system",
+      paragraphs: [
+        "In 2020 the hero named the category Gong was building and the visibility it gave a sales team. In 2026 the first line on the page is a ranking claim about AI, and the page title reads \"Revenue AI OS.\"",
+      ],
+      before: {
+        src: "/study-crops/gong-2020-01.webp",
+        alt: "Gong homepage in January 2020, headlined Revenue Intelligence",
+        caption: "Gong, January 2020",
+        quote: "\"Get powerful visibility into your customer interactions with Revenue Intelligence.\"",
+      },
+      after: {
+        src: "/study-crops/gong-current-live.webp",
+        alt: "Gong homepage in 2026, headlined Revenue AI built to predict churn, under the line #1 AI OS for Revenue Teams",
+        caption: "Gong, 2026",
+        quote: "\"#1 AI OS for Revenue Teams.\" The headline below it reads \"Revenue AI built to predict churn.\"",
+      },
+      footnote: "Cropped to the top of each page. Full history: [Gong homepage teardown](/cro-teardowns/gong).",
+    },
+    {
+      type: "image-compare",
+      id: "apify-example",
+      label: "What the shift looks like",
+      title: "Apify, from a job to a count of AI tools",
+      paragraphs: [
+        "The 2020 page told a visitor what they could do: extract data from any website. The 2026 page leads with a number and an audience that did not exist on the first one. The scraping job is still there, one line down, as a marketplace of tools for AI.",
+      ],
+      before: {
+        src: "/study-crops/apify-2020-01.webp",
+        alt: "Apify homepage in January 2020, headlined Extract data from any website",
+        caption: "Apify, January 2020",
+        quote: "\"Extract data from any website.\" The job, in five words.",
+      },
+      after: {
+        src: "/study-crops/apify-current-live.webp",
+        alt: "Apify homepage in 2026, headlined 39,044 tools for your AI",
+        caption: "Apify, 2026",
+        quote: "\"39,044 tools for your AI.\" A count, and an AI buyer.",
+      },
+      footnote:
+        "Cropped to the top of each page. The cookie banner on the 2026 capture is part of the page as archived. Full history: [Apify homepage teardown](/cro-teardowns/apify).",
+    },
+    {
+      type: "paragraphs",
+      paragraphs: [
         "This measures what homepages say, not what products do. A heading is cheap. Whether the underlying software changed as fast as the copy did is not a question an archived page can answer.",
         "The consequence is uncomfortable for anyone writing a homepage right now. Radical differentiation works by finding the dominant convention in a market and doing the opposite. At 61%, AI language is the dominant convention. A claim that more than half your category makes is not a differentiator. It is table stakes, and table stakes are what buyers stop reading.",
         "That does not mean removing it. It means the differentiation has to sit somewhere else: in what the AI is pointed at, in the proof, in the specific job it does for a specific buyer. If your headline could be pasted onto a competitor's site without anyone noticing, the 61% has already absorbed you.",
         "This is the move I made with [Screenplay Performance Studio](/case-study/screenplay), which arrived positioned as an AI audio tool. The product worked. The framing did not, because \"AI audio tool\" told a visitor nothing about where to start or what they would end up with. We reframed it as a specific screenplay performance workflow: upload, casting, perform, export. The AI stayed in the product rather than in the pitch. The label was the least differentiating thing it had.",
       ],
+    },
+    {
+      type: "image-compare",
+      id: "screenplay-example",
+      label: "From a client engagement",
+      title: "Screenplay, from an AI label to a question the writer already has",
+      paragraphs: [
+        "The first page led with the product name and an AI promise in the body copy. The rebuilt page opens on the question a screenwriter asks about their own draft, and shows a sample scene being directed on the right.",
+      ],
+      before: {
+        src: "/study-crops/screenplay-before.webp",
+        alt: "Screenplay Performance Studio landing page before the rebuild, headlined with the product name and Your Script. Performed. Directed by You.",
+        caption: "Screenplay, before",
+        quote: "\"Your Script. Performed. Directed by You.\" The body copy opens on \"Standard AI reads words.\"",
+      },
+      after: {
+        src: "/study-crops/screenplay-after.webp",
+        alt: "Screenplay Performance Studio landing page after the rebuild, headlined Does your dialogue actually work when spoken?",
+        caption: "Screenplay, after",
+        quote: "\"Does your dialogue actually work when spoken?\" The writer's question, then a sample performance.",
+      },
+      footnote: "Screenshots from the engagement. Full story: [Screenplay case study](/case-study/screenplay).",
     },
     {
       type: "callout",
@@ -253,6 +325,28 @@ export const saasHomepageStudy: BlogPost = {
         quote: "\"The product development system for teams and agents.\" Names a job and an audience, and never says issue tracker.",
       },
       footnote: "Cropped to the top of each page. Full history: [Linear homepage teardown](/cro-teardowns/linear).",
+    },
+    {
+      type: "image-compare",
+      id: "agorapulse-example",
+      label: "What the shift looks like",
+      title: "Agorapulse traded a three-word label for an outcome",
+      paragraphs: [
+        "The second teardown from the paragraph above. The 2019 headline is short and names the category. The 2026 one is more than twice as long and ends on ROI.",
+      ],
+      before: {
+        src: "/study-crops/agorapulse-2019-01.webp",
+        alt: "Agorapulse homepage in January 2019, headlined Social Media Management Simplified",
+        caption: "Agorapulse, January 2019",
+        quote: "\"Social Media Management Simplified.\" Category plus one adjective.",
+      },
+      after: {
+        src: "/study-crops/agorapulse-current-live.webp",
+        alt: "Agorapulse homepage in 2026, headlined Drive Real Impact on Social Media. From Engagement to ROI.",
+        caption: "Agorapulse, 2026",
+        quote: "\"Drive Real Impact on Social Media. From Engagement to ROI.\" An outcome the buyer reports on.",
+      },
+      footnote: "Cropped to the top of each page. Full history: [Agorapulse homepage teardown](/cro-teardowns/agorapulse).",
     },
     {
       type: "numbered-list",

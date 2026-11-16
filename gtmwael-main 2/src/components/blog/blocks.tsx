@@ -164,15 +164,30 @@ export const renderBlock = (block: BlogBlock, index: number): ReactNode => {
     case "figure":
       return (
         <figure className="my-10">
-          <img
-            src={block.src}
-            alt={block.alt}
-            loading="lazy"
-            decoding="async"
-            width={block.width}
-            height={block.height}
-            className={`block h-auto w-full rounded-lg border ${RULE}`}
-          />
+          {block.video ? (
+            <video
+              src={block.video}
+              poster={block.src}
+              aria-label={block.alt}
+              controls
+              muted
+              playsInline
+              preload="none"
+              width={block.width}
+              height={block.height}
+              className={`mx-auto block h-auto max-h-[80vh] w-auto max-w-full rounded-lg border ${RULE}`}
+            />
+          ) : (
+            <img
+              src={block.src}
+              alt={block.alt}
+              loading="lazy"
+              decoding="async"
+              width={block.width}
+              height={block.height}
+              className={`block h-auto w-full rounded-lg border ${RULE}`}
+            />
+          )}
           <figcaption className={`mt-3 ${MUTED}`}>{renderInlineText(block.caption)}</figcaption>
         </figure>
       );

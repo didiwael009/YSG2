@@ -101,6 +101,32 @@ describe("article layout", () => {
     expect(html).not.toContain("—");
   });
 
+  it("a figure with a video plays it inline, muted, with the image as poster", () => {
+    const post: BlogPost = {
+      ...issueFixture,
+      blocks: [
+        {
+          type: "figure",
+          src: "/clip.jpg",
+          video: "/clip.mp4",
+          alt: "A clip",
+          caption: "The clip.",
+          width: 720,
+          height: 1280,
+        },
+      ],
+    };
+    const html = decode(render(<BlogPostLayout post={post} />, post.path));
+    const video = html.match(/<video([^>]*)>/)?.[1] ?? "";
+    expect(video).toContain('src="/clip.mp4"');
+    expect(video).toContain('poster="/clip.jpg"');
+    expect(video).toContain("controls");
+    expect(video).toContain("muted");
+    expect(video).toMatch(/playsinline/i);
+    expect(video).toContain('aria-label="A clip"');
+    expect(html).toContain("The clip.");
+  });
+
   it("no dark page shell", () => {
     // Benchmark pages opt into the teardown layout, which is dark by design.
     for (const post of [issueFixture, ...blogPosts].filter((p) => p.layout !== "teardown")) {

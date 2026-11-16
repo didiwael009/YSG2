@@ -122,6 +122,29 @@ export const saasTrafficButNoSignups: BlogPost = {
         ],
       },
       {
+        type: "image-compare",
+        id: "brevo-hero",
+        label: "What the shift looks like",
+        title: "Brevo, from a slogan to an outcome with proof under the button",
+        paragraphs: [
+          "Run the five questions on Brevo's hero in 2023 and in 2026. The 2023 headline answers none of them on its own. The 2026 hero names the outcome, lists the channels, and puts a rating under the first button.",
+        ],
+        before: {
+          src: "/study-crops/brevo-2023-01.webp",
+          alt: "Brevo homepage in January 2023, headlined Connections that spark growth",
+          caption: "Brevo, January 2023",
+          quote: "\"Connections that spark growth.\" No audience, no problem, no outcome a buyer can check.",
+        },
+        after: {
+          src: "/study-crops/brevo-current-live.webp",
+          alt: "Brevo homepage in 2026, headlined Turn every interaction into a Lifetime Customer, with a Sign up free button and a 4.5 rating",
+          caption: "Brevo, 2026",
+          quote: "\"Turn Every Email, SMS, Order, Interaction into a Lifetime Customer.\" Outcome, channels, then proof.",
+        },
+        footnote:
+          "Cropped to the top of each page. The 2026 headline rotates through Email, SMS, Order and Interaction, so the word is blank in the capture, and a cookie banner covers the lower part. Full history: [Brevo homepage teardown](/cro-teardowns/brevo).",
+      },
+      {
         type: "inline-cta",
         title: "Quick clarity test",
         body:

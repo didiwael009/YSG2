@@ -145,7 +145,10 @@ export type BlogBlock =
   | {
       /** One image (chart, screenshot) inside the text column, with a caption. */
       type: "figure";
+      /** Image, or the poster frame when `video` is set. */
       src: string;
+      /** Optional short MP4, played inline with controls, muted. */
+      video?: string;
       alt: string;
       caption: string;
       width: number;
