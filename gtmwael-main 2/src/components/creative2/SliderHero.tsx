@@ -4,14 +4,12 @@ import SaasHeroLayer from "./SaasHeroLayer";
 import CreativeHeroLayer from "./CreativeHeroLayer";
 import { START_PERCENT, nextPercentForKey, percentFromPointer, revealPercent } from "./slider";
 import { useSyncedBlocks } from "./useSyncedBlocks";
-import { useNewsreader } from "./useNewsreader";
 
 /**
  * Before/after hero: the SaaS hero below, the creative (style A) hero on top,
  * clipped from the left at --p. Drag the handle, or use the arrow keys on it.
  */
 const SliderHero = () => {
-  useNewsreader();
   const [p, setP] = useState(START_PERCENT);
   const box = useRef<HTMLDivElement>(null);
   const saas = useRef<HTMLDivElement>(null);

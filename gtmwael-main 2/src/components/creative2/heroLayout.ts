@@ -25,3 +25,7 @@ export const L = {
 // wael-standing-*.webp are 840x973; at 420px wide the box is 420x486.
 export const PHOTO_W = 420;
 export const PHOTO_H = 486;
+
+// Rendered photo width per breakpoint (w-64 / md:w-72 / lg:w-[420px]); phones get the 480w file.
+export const PHOTO_SIZES = "(min-width: 1024px) 420px, (min-width: 768px) 288px, 256px";
+export const photoSrcSet = (small: string, full: string) => `${small} 480w, ${full} 840w`;

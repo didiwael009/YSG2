@@ -4,7 +4,8 @@ import zembraLogo from "@/assets/zembra-logo.svg";
 import bottlenexusLogo from "@/assets/bottlenexus-logo-white.svg";
 import shipzzerLogoWhite from "@/assets/shipzzer-logo-white.png";
 import waelPhoto from "@/assets/wael-standing-color.webp";
-import { L, PHOTO_H, PHOTO_W } from "./heroLayout";
+import waelPhoto480 from "@/assets/wael-standing-color-480.webp";
+import { L, PHOTO_H, PHOTO_SIZES, PHOTO_W, photoSrcSet } from "./heroLayout";
 
 const UPWORK_PATH =
   "M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.214-1.832-2.148-4.032-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z";
@@ -32,10 +33,10 @@ const SaasHeroLayer = () => (
                   <span className="text-xs font-semibold text-white">Top Rated on Upwork</span>
                 </span>
               </div>
-              <h1 data-block="title" className={`${L.h1} font-display`}>
+              <p data-block="title" className={`${L.h1} font-display`}>
                 <span className={`${L.titleSize} text-foreground`}>Automated growth for SaaS.</span>
                 <span className={`${L.titleSize} text-gradient mt-1.5`}>One operator. AI agents.</span>
-              </h1>
+              </p>
               <p data-block="subtitle" className={`${L.subtitle} text-muted-foreground`}>
                 I improve your landing pages, automate content production and run your ads.
               </p>
@@ -101,9 +102,12 @@ const SaasHeroLayer = () => (
               />
               <img
                 src={waelPhoto}
+                srcSet={photoSrcSet(waelPhoto480, waelPhoto)}
+                sizes={PHOTO_SIZES}
                 alt=""
                 width={PHOTO_W}
                 height={PHOTO_H}
+                {...({ fetchpriority: "high" } as Record<string, string>)}
                 decoding="async"
                 className={L.photo}
                 style={{ filter: "drop-shadow(0 40px 60px rgba(0, 0, 0, 0.45)) drop-shadow(0 15px 25px rgba(0, 0, 0, 0.25))" }}

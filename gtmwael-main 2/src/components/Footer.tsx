@@ -179,7 +179,7 @@ const Footer = ({ hideCTA = false }: { hideCTA?: boolean }) => {
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} Wael Aouididi. All rights reserved.
           </p>
-          <p className="text-muted-foreground/60 text-xs">
+          <p className="text-muted-foreground text-xs">
             Services provided by Growapp Ltd · Registered in England and Wales
           </p>
         </div>

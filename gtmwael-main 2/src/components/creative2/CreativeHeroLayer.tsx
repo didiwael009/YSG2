@@ -1,9 +1,10 @@
 import { memo } from "react";
 import { ArrowRight } from "lucide-react";
 import waelPhoto from "@/assets/wael-standing-bw.webp";
+import waelPhoto480 from "@/assets/wael-standing-bw-480.webp";
 import { BOOKING_URL } from "@/lib/constants";
 import { CREATIVE2_COPY } from "@/content/creative2";
-import { L, PHOTO_H, PHOTO_W } from "./heroLayout";
+import { L, PHOTO_H, PHOTO_SIZES, PHOTO_W, photoSrcSet } from "./heroLayout";
 import { HERO_LOGOS } from "./SaasHeroLayer";
 
 const UPWORK_URL = "https://www.upwork.com/freelancers/~0172dd07fc1cdd655c";
@@ -21,7 +22,8 @@ const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ b
 /** Style A ("cream magazine") version of the hero. Same layout and blocks as the SaaS layer. */
 const CreativeHeroLayer = () => {
   const c = CREATIVE2_COPY.hero;
-  const mask = `url(${waelPhoto}) center bottom/contain no-repeat`;
+  // The halos only need the outline, so the small file is enough (and is the one phones already load).
+  const mask = `url(${waelPhoto480}) center bottom/contain no-repeat`;
   return (
     <div data-layer="creative" className="relative font-body" style={{ background: "#f4f3ee", color: INK }}>
       <section className={L.section}>
@@ -146,6 +148,8 @@ const CreativeHeroLayer = () => {
                 ))}
                 <img
                   src={waelPhoto}
+                  srcSet={photoSrcSet(waelPhoto480, waelPhoto)}
+                  sizes={PHOTO_SIZES}
                   alt="Wael Aouididi"
                   width={PHOTO_W}
                   height={PHOTO_H}

@@ -1,7 +1,6 @@
 import Navigation from "@/components/Navigation";
 import SectionDivider from "@/components/SectionDivider";
 import Footer from "@/components/Footer";
-import { useNewsreader } from "@/components/creative2/useNewsreader";
 import SliderHero from "@/components/creative2/SliderHero";
 import C2Experience from "@/components/creative2/C2Experience";
 import C2Services from "@/components/creative2/C2Services";
@@ -10,9 +9,8 @@ import C2Testimonials from "@/components/creative2/C2Testimonials";
 import C2Process from "@/components/creative2/C2Process";
 
 const Creative2 = () => {
-  useNewsreader();
   return (
-    <main className="min-h-screen bg-background overflow-x-clip">
+    <main id="main" className="min-h-screen bg-background overflow-x-clip">
       <Navigation />
       <SliderHero />
       <SectionDivider variant="glow" />

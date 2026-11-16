@@ -3,6 +3,7 @@ import { renderToString } from "react-dom/server";
 import { MemoryRouter } from "react-router-dom";
 import SliderHero from "@/components/creative2/SliderHero";
 import standingBw from "@/assets/wael-standing-bw.webp";
+import standingBw480 from "@/assets/wael-standing-bw-480.webp";
 import standingColor from "@/assets/wael-standing-color.webp";
 
 const layerImg = (html: string, layer: "saas" | "creative") => {
@@ -18,6 +19,6 @@ describe("creative-2 hero photo", () => {
   });
   it("draws the halftone halos from the black and white photo's outline", () => {
     const html = renderToString(<MemoryRouter><SliderHero /></MemoryRouter>);
-    expect(html.split('data-layer="creative"')[1]).toContain(`url(${standingBw}) center bottom/contain`);
+    expect(html.split('data-layer="creative"')[1]).toContain(`url(${standingBw480}) center bottom/contain`);
   });
 });
