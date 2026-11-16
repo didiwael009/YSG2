@@ -386,9 +386,9 @@ export const remotionClaudeCode: BlogPost = {
         "On November 12, three short videos used 19.65 M, 22.29 M and 20.15 M tokens, cache reads included. Claude Code reported $9.42, $11.24 and $10.42 for those sessions.",
     },
     {
-      question: "Why does my Remotion render hang on \"Waiting for root component\"?",
+      question: "Why does my Remotion render hang on “Waiting for root component”?",
       answer:
-        "On Remotion 4.0.539 I hit this with the bundled Chrome. Rendering with the Mac's own Chrome, via --browser-executable and --chrome-mode=chrome-for-testing, fixed it.",
+        "On Remotion 4.0.539 I hit this with the bundled Chrome. Rendering with the Mac’s own Chrome, via --browser-executable and --chrome-mode=chrome-for-testing, fixed it.",
     },
   ],
   cta: {
