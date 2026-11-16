@@ -23,7 +23,7 @@ const Creative2 = () => {
       <C2Testimonials />
       <SectionDivider variant="curve-to-dark" />
       <C2Process />
-      <Footer />
+      <Footer hideCTA />
     </main>
   );
 };

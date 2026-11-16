@@ -153,7 +153,7 @@ const Creative = () => {
         </section>
       </main>
 
-      <Footer />
+      <Footer hideCTA />
     </div>
   );
 };
