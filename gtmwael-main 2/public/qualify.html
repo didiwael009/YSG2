@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>3 quick questions</title>
+<style>
+  body{font-family:Arial,sans-serif;background:#fafafa;color:#111;margin:0;padding:24px}
+  main{max-width:480px;margin:40px auto;background:#fff;border:1px solid #e5e5e5;border-radius:14px;padding:28px}
+  h1{font-size:22px;margin:0 0 6px} p.sub{color:#555;margin:0 0 22px}
+  label{display:block;font-weight:600;margin:18px 0 6px}
+  input[type=number]{width:100%;box-sizing:border-box;padding:10px;font-size:16px;border:1px solid #ccc;border-radius:8px}
+  input[type=range]{width:100%}
+  .bud{font-size:20px;font-weight:700;margin-top:6px}
+  .ticks{display:flex;justify-content:space-between;font-size:12px;color:#666}
+  button{margin-top:24px;width:100%;background:#111;color:#fff;border:0;border-radius:8px;padding:14px;font-size:16px;cursor:pointer}
+  button:disabled{opacity:.5} #msg{margin-top:14px}
+</style>
+</head>
+<body>
+<main>
+  <h1 id="title">3 quick questions</h1>
+  <p class="sub">Takes one minute and helps me prepare our call.</p>
+  <form id="f">
+    <label for="u">How many active users do you have?</label>
+    <input id="u" type="number" min="0" inputmode="numeric" required>
+    <label for="c">How many customers have you validated product-market fit with?</label>
+    <input id="c" type="number" min="0" inputmode="numeric" required>
+    <label for="b">Estimated monthly marketing budget</label>
+    <input id="b" type="range" min="0" max="3" step="1" value="1">
+    <div class="ticks"><span>$100</span><span>$1k</span><span>$2k</span><span>$3k</span><span>$5k</span></div>
+    <div class="bud" id="bv"></div>
+    <button id="s" type="submit">Send</button>
+    <div id="msg"></div>
+  </form>
+</main>
+<script>
+  var BUDGETS=["$100 – $1,000","$1,000 – $2,000","$2,000 – $3,000","$3,000 – $5,000"];
+  var q=new URLSearchParams(location.search);
+  var b=document.getElementById("b"),bv=document.getElementById("bv"),msg=document.getElementById("msg");
+  function show(){bv.textContent=BUDGETS[b.value]+" / month"} b.oninput=show; show();
+  document.getElementById("f").onsubmit=function(e){
+    e.preventDefault();
+    var s=document.getElementById("s");s.disabled=true;msg.textContent="";
+    fetch("/api/qualify",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({
+      email:q.get("e"),name:q.get("n"),token:q.get("t"),
+      activeUsers:document.getElementById("u").value,pmfClients:document.getElementById("c").value,budget:b.value
+    })}).then(function(r){
+      if(!r.ok)throw new Error();
+      document.getElementById("f").innerHTML="<p><b>Thank you!</b> I will read your answers before our call.</p>";
+    }).catch(function(){s.disabled=false;msg.textContent="Something went wrong. Please reply to my email instead."});
+  };
+</script>
+</body>
+</html>

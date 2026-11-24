@@ -14,8 +14,8 @@ const files = (dir: string): string[] =>
 
 describe("booking on Cal.com", () => {
   it("points every booking link at the Cal.com 30-min event", () => {
-    expect(CAL_LINK).toBe("aouididi-wael-4jw03z/30min");
-    expect(BOOKING_URL).toBe("https://cal.com/aouididi-wael-4jw03z/30min");
+    expect(CAL_LINK).toBe("aouididi-wael-1oybm9/15min");
+    expect(BOOKING_URL).toBe("https://cal.com/aouididi-wael-1oybm9/15min");
   });
 
   it("leaves no Calendly link or script in the source", () => {

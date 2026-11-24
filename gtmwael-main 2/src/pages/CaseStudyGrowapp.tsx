@@ -325,7 +325,7 @@ const CaseStudyGrowapp = () => {
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <a href="https://cal.com/aouididi-wael-4jw03z/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://cal.com/aouididi-wael-1oybm9/15min" target="_blank" rel="noopener noreferrer">
                 Book a Call
               </a>
             </Button>

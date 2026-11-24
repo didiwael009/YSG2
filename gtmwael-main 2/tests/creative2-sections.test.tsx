@@ -68,6 +68,6 @@ describe("creative-2 sections", () => {
   it("process ends on the booking link", () => {
     const html = render(<C2Process />);
     expect(html).toContain('id="how-it-works"');
-    expect(html).toContain("cal.com/aouididi-wael-4jw03z/30min");
+    expect(html).toContain("cal.com/aouididi-wael-1oybm9/15min");
   });
 });
