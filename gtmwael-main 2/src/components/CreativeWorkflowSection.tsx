@@ -1,4 +1,5 @@
-import { ArrowDown, ArrowRight, Clapperboard, Globe2, Music2 } from "lucide-react";
+import { useState } from "react";
+import { ArrowDown, ArrowRight, Clapperboard, Globe2, Music2, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 import sambalingoPhone from "@/assets/sambalingo-phone.webp";
 import sampleVideo from "@/assets/content-sample-video.webp";
@@ -119,6 +120,48 @@ const FormatThumb = ({ index }: { index: number }) => {
 
 type Props = { variant?: "teaser" | "full" };
 
+const SHOWCASE_ID = "TVedsBTxMsE";
+const SHOWCASE_TITLE = "AI workflow showcase";
+
+// Click-to-play: only the thumbnail loads until the visitor presses play.
+const VideoShowcase = () => {
+  const [playing, setPlaying] = useState(false);
+  return (
+    <div className="relative aspect-video overflow-hidden rounded-xl bg-[#0d0817] ring-1 ring-purple-200/15 shadow-[0_20px_60px_#0009]">
+      {playing ? (
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${SHOWCASE_ID}?autoplay=1&rel=0`}
+          title={SHOWCASE_TITLE}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          className="absolute inset-0 h-full w-full border-0"
+        />
+      ) : (
+        <button
+          type="button"
+          onClick={() => setPlaying(true)}
+          aria-label={`Play the video: ${SHOWCASE_TITLE}`}
+          className={`group absolute inset-0 h-full w-full ${focusStyle}`}
+        >
+          <img
+            src={`https://i.ytimg.com/vi/${SHOWCASE_ID}/maxresdefault.jpg`}
+            alt=""
+            width={1280}
+            height={720}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover opacity-90 transition-opacity group-hover:opacity-100"
+          />
+          <span className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-orange-500 text-[#170c20] shadow-[0_6px_24px_#f9731660] transition-transform group-hover:scale-105 sm:h-20 sm:w-20">
+            <Play className="ml-1 h-7 w-7 fill-current sm:h-8 sm:w-8" aria-hidden="true" />
+          </span>
+        </button>
+      )}
+    </div>
+  );
+};
+
 const CreativeWorkflowSection = ({ variant = "full" }: Props) => {
   const full = variant === "full";
   const Heading = full ? "h1" : "h2";
@@ -203,7 +246,21 @@ const CreativeWorkflowSection = ({ variant = "full" }: Props) => {
 
       {full && (
         <>
-      {/* 2. The pipeline, shown with real artifacts from one week of AI News */}
+      {/* 2. The showcase video: the formats the system makes, in motion */}
+      <div id="content-showcase" className="mt-16 scroll-mt-24 border-t border-purple-200/15 pt-12 lg:mt-20 lg:pt-14">
+        <div className="max-w-[62ch]">
+          <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">See what it makes</h3>
+          <p className="mt-3 text-base leading-relaxed text-[#d7c8e6]">
+            A showcase of the video styles this workflow produces: 2D characters in 3D worlds, retro TV motion design and more.
+          </p>
+        </div>
+        <figure className="mx-auto mt-8 max-w-4xl">
+          <VideoShowcase />
+          <figcaption className="mt-2 text-xs text-purple-200/70">AI workflow showcase, on the SambaLingo YouTube channel.</figcaption>
+        </figure>
+      </div>
+
+      {/* 3. The pipeline, shown with real artifacts from one week of AI News */}
       <div id="content-pipeline" className="mt-16 scroll-mt-24 border-t border-purple-200/15 pt-12 lg:mt-20 lg:pt-14">
         <div className="max-w-[62ch]">
           <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">How the system works</h3>
@@ -262,7 +319,7 @@ const CreativeWorkflowSection = ({ variant = "full" }: Props) => {
         </p>
       </div>
 
-      {/* 3. What you can order: real samples, three plain columns */}
+      {/* 4. What you can order: real samples, three plain columns */}
       <div className="mt-14">
         <h3 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">What I can produce for you</h3>
         <ul className="mt-6 grid gap-10 sm:grid-cols-3 sm:gap-8 lg:gap-10">
