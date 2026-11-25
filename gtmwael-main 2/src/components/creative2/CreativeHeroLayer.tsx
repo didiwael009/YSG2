@@ -46,7 +46,7 @@ const CreativeHeroLayer = () => {
                   <span className={L.titleSize} style={{ fontWeight: 800 }}>{c.titleLine1}</span>
                   <span
                     className={`${L.titleSize} mt-1.5`}
-                    style={{ fontFamily: "Newsreader, Georgia, serif", fontStyle: "italic", fontWeight: 500, fontSize: "1.09em", letterSpacing: "-0.02em" }}
+                    style={{ fontFamily: "Newsreader, Georgia, serif", fontStyle: "italic", fontWeight: 500, letterSpacing: "-0.02em", maxWidth: "12ch" }}
                   >
                     {c.titleLine2}
                   </span>
