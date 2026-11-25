@@ -19,7 +19,7 @@ const Index = () => {
       <SectionDivider variant="curve-to-light" />
       <ServicesSection />
       <SectionDivider variant="curve-to-dark" />
-      <CreativeWorkflowSection variant="teaser" />
+      <CreativeWorkflowSection />
       <CaseStudyBar />
       <SectionDivider variant="curve-to-light" />
       <TestimonialSection />

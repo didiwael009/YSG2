@@ -118,7 +118,7 @@ const FullPageCompare = () => {
         <Pair name="d2"><SectionDivider variant="curve-to-light" /></Pair>
         <Pair name="services"><ServicesSection /></Pair>
         <Pair name="d3"><SectionDivider variant="curve-to-dark" /></Pair>
-        <Pair name="work"><CreativeWorkflowSection variant="teaser" /><CaseStudyBar /></Pair>
+        <Pair name="work"><CreativeWorkflowSection /><CaseStudyBar /></Pair>
         <Pair name="d4"><SectionDivider variant="curve-to-light" /></Pair>
         <Pair name="proof"><TestimonialSection /></Pair>
         <Pair name="d5"><SectionDivider variant="curve-to-dark" /></Pair>
