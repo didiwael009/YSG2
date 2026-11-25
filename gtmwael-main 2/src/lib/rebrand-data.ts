@@ -17,7 +17,7 @@ export const rebrandingProjects = [
   {
     title: "BottleNexus",
     description: "Alcohol DTC technology — Oversaw rebrand and page design direction",
-    link: "https://www.behance.net/gallery/211674227/Landing-Page",
+    link: "https://bottlenexus.com/",
     category: "E-commerce",
     role: "Project Lead",
     cover: landingBottlenexus,

@@ -36,6 +36,8 @@ describe("creative-2 copy", () => {
     expect(CREATIVE2_COPY.services.filter((s) => !s.hasSamples)).toHaveLength(0);
   });
   it("brand project count matches the data", () => expect(rebrandingProjects).toHaveLength(5));
+  it("BottleNexus card opens the live site", () =>
+    expect(rebrandingProjects.find((b) => b.title === "BottleNexus")?.link).toBe("https://bottlenexus.com/"));
   it("never puts two blue or purple brand covers side by side", () => {
     const dark = ["Pubrella", "Zembra", "Clarrio.ai"];
     const titles = brandsSpaced.map((b) => b.title);
