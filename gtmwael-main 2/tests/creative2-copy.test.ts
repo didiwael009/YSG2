@@ -16,9 +16,9 @@ describe("creative-2 copy", () => {
     expect(all).not.toContain("**");
   });
   it("hero matches the spec", () => {
-    expect(CREATIVE2_COPY.hero.titleLine1).toBe("Videos. Carousels.");
-    expect(CREATIVE2_COPY.hero.titleLine2).toBe("Brands. Ads.");
-    expect(CREATIVE2_COPY.hero.subtitle).toBe("Short animated videos, carousels, brand identity and product ads.");
+    expect(CREATIVE2_COPY.hero.titleLine1).toBe("A content machine");
+    expect(CREATIVE2_COPY.hero.titleLine2).toBe("that grows your reach.");
+    expect(CREATIVE2_COPY.hero.subtitle).toBe("I build it for your brand with Claude Code. Short videos, carousels and ads, cut for each channel. I check every piece, and nothing goes out without your yes.");
     expect(CREATIVE2_COPY.hero.badge).toBe("Top Rated on Upwork");
     expect(CREATIVE2_COPY.hero.primaryCta).toBe("Book a call");
     expect(CREATIVE2_COPY.hero.secondaryCta).toBe("See the work");

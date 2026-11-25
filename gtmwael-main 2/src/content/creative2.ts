@@ -29,9 +29,9 @@ export type C2Step = { title: string; body: string };
 export const CREATIVE2_COPY = {
   hero: {
     badge: "Top Rated on Upwork",
-    titleLine1: "Videos. Carousels.",
-    titleLine2: "Brands. Ads.",
-    subtitle: "Short animated videos, carousels, brand identity and product ads.",
+    titleLine1: "A content machine",
+    titleLine2: "that grows your reach.",
+    subtitle: "I build it for your brand with Claude Code. Short videos, carousels and ads, cut for each channel. I check every piece, and nothing goes out without your yes.",
     primaryCta: "Book a call",
     secondaryCta: "See the work",
     freeNote: "Free · no commitment",
