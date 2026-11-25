@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
 import { CREATIVE2_COPY } from "@/content/creative2";
-import { rebrandingProjects } from "@/lib/rebrand-data";
+import { brandsSpaced, rebrandingProjects } from "@/lib/rebrand-data";
 
 const all = JSON.stringify(CREATIVE2_COPY);
 // Visible text only: link targets (ids inside URLs) are not figures.
@@ -36,4 +36,9 @@ describe("creative-2 copy", () => {
     expect(CREATIVE2_COPY.services.filter((s) => !s.hasSamples)).toHaveLength(0);
   });
   it("brand project count matches the data", () => expect(rebrandingProjects).toHaveLength(5));
+  it("never puts two blue or purple brand covers side by side", () => {
+    const dark = ["Pubrella", "Zembra", "Clarrio.ai"];
+    const titles = brandsSpaced.map((b) => b.title);
+    titles.slice(1).forEach((t, i) => expect(dark.includes(t) && dark.includes(titles[i])).toBe(false));
+  });
 });

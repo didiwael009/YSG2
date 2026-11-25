@@ -48,8 +48,8 @@ export const rebrandingProjects = [
   },
 ];
 
-// Pubrella and BottleNexus are both purple, Zembra and Clarrio both blue: keep each pair apart.
-const SPACED_ORDER = ["Pubrella", "Zembra", "Shipzzer", "BottleNexus", "Clarrio.ai"];
+// Pubrella, Zembra and Clarrio are purple or blue; Shipzzer and BottleNexus are light: alternate them.
+const SPACED_ORDER = ["Pubrella", "Shipzzer", "Zembra", "BottleNexus", "Clarrio.ai"];
 export const brandsSpaced = [...rebrandingProjects].sort(
   (a, b) => SPACED_ORDER.indexOf(a.title) - SPACED_ORDER.indexOf(b.title),
 );

@@ -56,7 +56,7 @@ describe("creative-2 sections", () => {
     const html = render(<C2Work />);
     const brands = html.slice(html.indexOf('id="c2-brands-title"'));
     const at = (t: string) => brands.indexOf(`>${t}<`);
-    const order = ["Pubrella", "Zembra", "Shipzzer", "BottleNexus", "Clarrio.ai"];
+    const order = ["Pubrella", "Shipzzer", "Zembra", "BottleNexus", "Clarrio.ai"];
     for (const t of order) expect(at(t)).toBeGreaterThan(-1);
     expect(order.map(at)).toEqual([...order.map(at)].sort((a, b) => a - b));
   });

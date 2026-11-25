@@ -27,7 +27,7 @@ describe("work showcase on the agency page and the Folio", () => {
   it("agency page keeps the look-alike landing pages apart", () => {
     const html = render("/saas-marketing-agency", <SaasMarketingAgency />);
     const pages = html.slice(html.indexOf('id="agency-pages-title"'));
-    const order = ["Pubrella", "Zembra", "Shipzzer", "BottleNexus", "Clarrio.ai"];
+    const order = ["Pubrella", "Shipzzer", "Zembra", "BottleNexus", "Clarrio.ai"];
     const at = order.map((t) => pages.indexOf(`>${t}<`));
     for (const i of at) expect(i).toBeGreaterThan(-1);
     expect(at).toEqual([...at].sort((a, b) => a - b));
