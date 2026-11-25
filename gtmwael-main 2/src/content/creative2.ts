@@ -1,6 +1,6 @@
 // Copy for /creative-2. Draft for Wael's approval.
 // Sources: hero copy from docs/superpowers/specs/2026-11-15-creative-2-design.md;
-// figures 134 / 3 / 5 confirmed by Wael; experience and work from
+// figures 134 / 3 / 5 confirmed by Wael; 60K views in a month and 8 channels from Wael (25 Nov 2026); experience and work from
 // src/lib/video-data.ts, src/lib/rebrand-data.ts and src/components/ExperienceSection.tsx;
 // testimonials verbatim from src/components/TestimonialSection.tsx.
 
@@ -36,7 +36,7 @@ export const CREATIVE2_COPY = {
     secondaryCta: "See the work",
     freeNote: "Free · no commitment",
     cards: [
-      { label: "Produce", line: "Content at scale", stats: [["134", "posts"], ["3", "languages"]] },
+      { label: "Produce", line: "Content at scale", stats: [["60K", "views in a month"], ["8", "channels"]] },
       { label: "Rebrand", line: "Identity and pages", stats: [["5", "brand projects"]] },
     ] as C2HeroCard[],
     trustedBy: "Trusted by founders at",

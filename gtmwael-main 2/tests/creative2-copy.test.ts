@@ -7,8 +7,9 @@ const all = JSON.stringify(CREATIVE2_COPY);
 const text = all.replace(/https?:\/\/[^"]+/g, "");
 
 // Figures allowed in the copy. 134, 3, 5: hero figures confirmed by Wael.
+// 60K views in a month, 8 channels: Produce card analytics, from Wael (25 Nov 2026).
 // 2024: date in Khoubeib Bouthour's testimonial role (src/components/TestimonialSection.tsx).
-const ALLOWED = ["134", "3", "5", "2024"];
+const ALLOWED = ["134", "3", "5", "8", "2024"];
 
 describe("creative-2 copy", () => {
   it("has no em-dash and no markdown bold", () => {
@@ -22,6 +23,9 @@ describe("creative-2 copy", () => {
     expect(CREATIVE2_COPY.hero.badge).toBe("Top Rated on Upwork");
     expect(CREATIVE2_COPY.hero.primaryCta).toBe("Book a call");
     expect(CREATIVE2_COPY.hero.secondaryCta).toBe("See the work");
+  });
+  it("Produce card shows the analytics", () => {
+    expect(CREATIVE2_COPY.hero.cards[0].stats).toEqual([["60K", "views in a month"], ["8", "channels"]]);
   });
   it("only uses approved figures", () => {
     const nums = (text.match(/\b\d+\b/g) ?? []).filter((n) => !ALLOWED.includes(n));
