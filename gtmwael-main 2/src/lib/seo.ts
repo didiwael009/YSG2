@@ -990,7 +990,7 @@ const croTeardownToSeoRoute = (post: CroTeardownPost): SeoRoute => ({
   changefreq: "monthly",
   image: post.featuredImage,
   datePublished: post.datePublished,
-  dateModified: post.publishedAt ?? post.datePublished,
+  dateModified: post.dateModified ?? post.publishedAt ?? post.datePublished,
   breadcrumbs: [
     { name: "CRO Teardowns", path: "/cro-teardowns" },
     { name: post.companyName, path: `/cro-teardowns/${post.slug}` },
@@ -1000,7 +1000,7 @@ const croTeardownToSeoRoute = (post: CroTeardownPost): SeoRoute => ({
   schemaHeadline: post.h1,
   schemaDescription: post.description,
   schemaDatePublished: post.datePublished,
-  schemaDateModified: post.publishedAt ?? post.datePublished,
+  schemaDateModified: post.dateModified ?? post.publishedAt ?? post.datePublished,
   schemaIncludeGlobal: true,
 });
 
