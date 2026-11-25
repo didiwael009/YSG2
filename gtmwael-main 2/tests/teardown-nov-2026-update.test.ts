@@ -30,3 +30,18 @@ describe("Nov 2026 teardown updates (hootsuite, gong, lemlist)", () => {
     });
   }
 });
+
+describe("build-time SEO routes (scripts/seo) carry dateModified", () => {
+  it("sitemap and schema dates for hootsuite, gong, lemlist are 2026-11-25", async () => {
+    // @ts-expect-error plain .mjs build script, no types
+    const { readCroTeardownPosts, createCroTeardownSeoRoutes } = await import("../scripts/seo/utils.mjs");
+    const routes = createCroTeardownSeoRoutes(await readCroTeardownPosts());
+    for (const slug of SLUGS) {
+      const r = routes.find((x: { path: string }) => x.path === `/cro-teardowns/${slug}`);
+      expect(r.dateModified).toBe("2026-11-25");
+      expect(r.schemaDateModified).toBe("2026-11-25");
+    }
+    const preply = routes.find((x: { path: string }) => x.path === "/cro-teardowns/preply");
+    expect(preply.dateModified).toBe("2026-08-25T01:50:20.383Z");
+  });
+});
