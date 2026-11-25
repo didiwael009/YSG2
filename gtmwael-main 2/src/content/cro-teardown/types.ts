@@ -106,4 +106,6 @@ export type CroTeardownPost = {
   internalLinkSuggestions?: string[];
   /** ISO timestamp when Phase 4F published this article. */
   publishedAt?: string;
+  /** Last time the content was re-checked and updated (YYYY-MM-DD). Feeds Article schema and sitemap lastmod. */
+  dateModified?: string;
 };
