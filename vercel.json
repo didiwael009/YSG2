@@ -4,6 +4,16 @@
   "outputDirectory": "gtmwael-main 2/dist",
   "redirects": [
     {
+      "source": "/blog/saas-landing-page-google-meta-ads",
+      "destination": "/google-ads-vs-meta-ads-saas",
+      "permanent": true
+    },
+    {
+      "source": "/cro-teardowns/lucidya-v2",
+      "destination": "/cro-teardowns/lucidya",
+      "permanent": true
+    },
+    {
       "source": "/(.+)/",
       "has": [
         {
