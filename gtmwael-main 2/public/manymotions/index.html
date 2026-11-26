@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <base href="/manymotions/">
 <meta name="robots" content="noindex, nofollow">
-<title>A 30-day growth plan for ManyMotions</title>
+<title>A scale plan for ManyMotions</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@1,500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   html { -webkit-text-size-adjust:100%; }
   body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.55 Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; }
   .wrap { max-width:1040px; margin:0 auto; padding:0 16px; }
-  h1,h2,h3,.big { font-family:Sora,Inter,sans-serif; letter-spacing:-0.025em; }
+  h1,h2,h3 { font-family:Sora,Inter,sans-serif; letter-spacing:-0.025em; }
   .serif { font-family:Newsreader,Georgia,serif; font-style:italic; font-weight:500; letter-spacing:0; }
   p { margin:0 0 12px; }
   .tag { display:inline-block; background:var(--lime); color:var(--ink); font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:6px 14px; border-radius:999px; }
@@ -35,7 +35,7 @@
   h1 { font-size:clamp(44px,9vw,92px); line-height:.98; font-weight:800; margin:20px 0 24px; }
   .by { display:flex; align-items:center; gap:12px; color:var(--muted); font-size:15px; }
   .by img { width:44px; height:44px; border-radius:50%; object-fit:cover; }
-  .by strong { color:var(--ink); }
+  .by .name { color:var(--ink); font-weight:700; }
   .portrait { border-radius:24px; overflow:hidden; background:#e8e6dc; box-shadow:0 30px 60px -30px rgba(0,0,0,.35); max-width:340px; }
   .portrait img { display:block; width:100%; }
   @media (max-width:759px){ .portrait { display:none; } }
@@ -55,8 +55,6 @@
   .bar.mm .t { color:var(--lime); font-weight:700; }
   .src { font-size:14px; margin-top:20px; }
 
-  .steps { display:grid; gap:14px; margin-top:8px; }
-  @media (min-width:760px){ .steps { grid-template-columns:1fr 1.3fr 1fr; } }
   .step { background:var(--ink); color:var(--cream); border-radius:20px; padding:24px 22px; }
   .step .n { display:inline-block; background:var(--lime); color:var(--ink); font:700 12px Inter,sans-serif; letter-spacing:.06em; text-transform:uppercase; padding:5px 12px; border-radius:999px; margin-bottom:16px; }
   .step h3 { font-size:22px; margin:0 0 8px; }
@@ -71,16 +69,11 @@
   .offer-card { background:var(--ink); color:var(--cream); border-radius:28px; padding:40px 28px; box-shadow:0 40px 80px -40px rgba(0,0,0,.5); }
   .offer-card .label { color:var(--lime); }
   .offer-card h2 { color:var(--cream); font-size:clamp(28px,5vw,44px); }
-  .price { font:800 clamp(56px,13vw,112px)/1 Sora,sans-serif; letter-spacing:-0.04em; color:var(--lime); margin:0 0 8px; }
-  .price span { font-size:.32em; color:var(--cream); font-weight:600; letter-spacing:0; }
-  .terms { font-size:20px; margin:0 0 28px; }
   .incl { list-style:none; padding:0; margin:0 0 20px; display:grid; gap:10px; }
   @media (min-width:760px){ .incl { grid-template-columns:1fr 1fr; gap:12px 32px; } }
   .incl li { padding-left:30px; position:relative; }
   .incl li::before { content:""; position:absolute; left:0; top:.35em; width:18px; height:18px; border-radius:50%; background:var(--lime); }
   .ads { color:var(--dmuted); font-size:15px; }
-  .first { margin-top:24px; background:var(--lime); color:var(--ink); border-radius:16px; padding:18px 20px; font-size:18px; font-weight:600; }
-  .first b { font-weight:800; }
 
   .start { text-align:center; padding:56px 0 88px; }
   .btn { display:inline-block; background:var(--ink); color:var(--cream); text-decoration:none; font:700 20px Sora,sans-serif; padding:18px 64px; border-radius:10px; }
@@ -94,9 +87,6 @@
   .ref .what { color:var(--dmuted); font-size:15px; margin:0 0 16px; }
   .ref blockquote { margin:16px 0 0; padding-left:14px; border-left:3px solid var(--lime); font-size:15px; color:#d2d1c8; }
   .ref blockquote cite { display:block; margin-top:6px; font-style:normal; font-size:13px; color:var(--dmuted); }
-  .ref .vid { display:block; position:relative; border-radius:14px; overflow:hidden; margin:0 0 4px; max-width:360px; }
-  .ref .vid img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; }
-  .ref .vid span { position:absolute; left:12px; bottom:12px; background:var(--lime); color:var(--ink); font:700 12px Inter,sans-serif; letter-spacing:.06em; text-transform:uppercase; padding:6px 12px; border-radius:999px; }
 
   .embed { width:200px; aspect-ratio:9/16; border-radius:14px; overflow:hidden; background:#000; }
   .embed iframe { width:100%; height:100%; border:0; display:block; }
@@ -111,6 +101,15 @@
   .minicard cite { display:block; font-style:normal; color:var(--muted); font-size:12px; margin-top:4px; }
   .minicard a { color:var(--ink); }
   .vlink { display:none; }
+
+  .scale { border-top:1px solid #d6d4c9; }
+  .axes { display:grid; gap:14px; margin-top:8px; }
+  @media (min-width:760px){ .axes { grid-template-columns:1fr 1fr; } }
+  .promise { background:var(--lime); border-radius:20px; padding:24px 22px; font-size:18px; margin-top:24px; }
+  .promise .serif { font-size:clamp(24px,4vw,34px); display:block; margin-top:6px; }
+  .plist { margin:0; padding-left:20px; max-width:760px; }
+  .plist li { margin:0 0 8px; }
+
   @media print {
     body { background:#fff; }
     .embed { display:none; }
@@ -120,25 +119,33 @@
     .vlink { display:block; font-size:12px; margin-top:4px; }
     .vlink a { color:var(--lime); word-break:break-all; }
     * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-    section, .ref, .minicard, .step, .offer-card, .chart { break-inside:avoid; }
+    .ref, .minicard, .step, .offer-card, .chart, .big-card, .promise, .videos { break-inside:avoid; }
+    @page { size:A4; margin:0; }
+    body { font-size:14px; }
+    header { padding:36px 0 40px; }
+    .light, .dark { padding:40px 0; }
+    .wrap { padding:0 32px; }
+    h1 { font-size:60px; }
+    h2 { font-size:38px; }
+    .head { break-inside:avoid; break-after:avoid; }
+    header.light { min-height:296mm; display:flex; align-items:center; break-after:page; }
+    header .row { width:100%; }
+    header + section { break-inside:avoid; }
+    .head { grid-template-columns:1.2fr 1fr; gap:32px; align-items:end; margin-bottom:22px; }
+    .charts, .refs, .mini, .axes, .incl { grid-template-columns:1fr 1fr; }
+    .videos { grid-template-columns:repeat(5,1fr); }
+    .offer-card { padding:28px 24px; box-shadow:none; }
+    .start { padding:28px 0 40px; }
   }
-
-  .sched { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:0 0 28px; }
-  @media (min-width:760px){ .sched { grid-template-columns:repeat(4,1fr); } }
-  .sched div { border:1px solid #3a3a3a; border-radius:14px; padding:14px 16px; }
-  .sched span { display:block; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--dmuted); }
-  .sched b { font:800 28px Sora,sans-serif; color:var(--cream); }
-  .sched div:first-child { border-color:var(--lime); }
-  .sched div:first-child b { color:var(--lime); }
 </style>
 </head>
 <body>
 <header class="light">
   <div class="wrap row">
     <div>
-      <span class="tag">Private offer</span>
-      <h1>A 30-day growth plan <span class="serif">for ManyMotions.</span></h1>
-      <div class="by"><img src="hero-portrait-256.webp" alt="" width="44" height="44"><span>Prepared by <strong>Wael Aouididi</strong> &middot; 2026-11-25</span></div>
+      <span class="tag">Private scale plan</span>
+      <h1>Six ways to scale <span class="serif">ManyMotions.</span></h1>
+      <div class="by"><img src="hero-portrait-256.webp" alt="" width="44" height="44"><span>Prepared by <span class="name">Wael Aouididi</span> &middot; 2026-11-26</span></div>
     </div>
     <div class="portrait"><img src="hero-portrait-420.webp" alt="Wael Aouididi" width="340"></div>
   </div>
@@ -162,13 +169,83 @@
 <section class="light">
   <div class="wrap">
     <div class="head">
-      <div><p class="label">The plan</p><h2>30 days, <span class="serif">one reel a day.</span></h2></div>
+      <div><p class="label">Positioning</p><h2>One promise, <span class="serif">said everywhere.</span></h2></div>
+      <p class="lead">Every axis below repeats the same message, so it comes first. It is built from five parts, filled in with what your best customers say.</p>
     </div>
-    <div class="steps">
-      <div class="step"><span class="n">Week 1</span><h3>Set up</h3><p>Create the Instagram and TikTok accounts. Set 3 reel formats: prompt to finished ad, template showcase, before/after of a product ad.</p></div>
-      <div class="step"><span class="n">Weeks 2 to 4</span><h3>Publish and cut</h3><p>One reel a day, 30 in total. Keep the 2 formats that get the most views and drop the rest.</p></div>
-      <div class="step"><span class="n">Alongside</span><h3>Meta Ads</h3><p>Use the organic winners as the creative for Meta Ads.</p></div>
+    <ol class="plist">
+      <li>Best customers: the clients who buy fast, spend most and stay longest. Your billing data already holds them.</li>
+      <li>The change: what is now possible that was not before, and why it matters to them today.</li>
+      <li>The villain: the thing they want to leave behind. A thing, not a feeling. Your own site already points at the brief and the shoot.</li>
+      <li>The promised land: the state they reach with ManyMotions, not a list of features.</li>
+      <li>The simple promise: one sentence a client can repeat to a colleague from memory.</li>
+    </ol>
+    <div class="promise">Working direction, to be confirmed with your customers:<span class="serif">Lead with the finished ad, not the clip, and with the tool that works inside Claude and ChatGPT.</span></div>
+  </div>
+</section>
+
+<section class="light scale">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">The scale plan</p><h2>Six axes <span class="serif">to grow on.</span></h2></div>
+      <p class="lead">Proof comes first, because every other axis uses it. The rest build on channels you already have or can enter early.</p>
     </div>
+    <div class="axes">
+      <div class="step"><span class="n">Axis 1</span><h3>Proof from your clients</h3><p>You have about 1,000 clients. Turn the ones who measure their ad results into case studies: the result first, then how they made ads before, why they chose ManyMotions, how they use it, and what comes next.</p></div>
+      <div class="step"><span class="n">Axis 2</span><h3>Inside AI assistants</h3><p>The MCP server, the Claude connector, the ChatGPT apps and the API are already live. Write each app and MCP description like a landing page, add one case study of a client who makes ads from Claude or ChatGPT, and measure this channel apart from the website.</p></div>
+      <div class="step"><span class="n">Axis 3</span><h3>Search and content</h3><p>Own one topic: how to make a product ad with AI. Your blog already leans that way, and the 101+ templates can each anchor a group of pages. Once the English pages show which ones convert, copy them into the languages the product already speaks. Each output becomes a clip, a blog section and a carousel.</p></div>
+      <div class="step"><span class="n">Axis 4</span><h3>Your own audience</h3><p>Grow the email list from trials and signups first. Then open an Instagram account and post what the product makes. Track list growth, direct traffic, branded search and return visitors.</p></div>
+      <div class="step"><span class="n">Axis 5</span><h3>Agencies</h3><p>A pilot on a short list of 25 to 100 agencies that look like your best Agency clients, run over 90 days. Personal outreach by email and LinkedIn, one owner per account, and the goals set before launch. One opener: make their client's ad from a product link, live, on the first call.</p></div>
+      <div class="step"><span class="n">Axis 6</span><h3>Community</h3><p>Start with 25 to 50 hand-picked members from your most active clients. Give them a recurring challenge as a reason to meet, and thank the early contributors in public.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="light scale">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">Ideas to think about</p><h2>Four ways to get <span class="serif">more ads made.</span></h2></div>
+    </div>
+    <div class="mini">
+      <div class="minicard"><h3>Affiliate program</h3><p>Clients and creators earn a share of the revenue they bring. The commission and how long it runs depend on your margin on credits.</p></div>
+      <div class="minicard"><h3>Creator sponsorship</h3><p>Sponsor smaller creators whose audience matches your best customers: sellers, marketers, agencies. Each sponsored post shows a video made on ManyMotions.</p></div>
+      <div class="minicard"><h3>The 100 creators test</h3><p>Hire 100 freelancers, for example on Upwork. Each one gets free credits and $100 to make one concept. Before launch, decide what counts as a win (views, shares or signups) and give all 100 the same brief. The winners become the formats you scale.</p></div>
+      <div class="minicard"><h3>The contest</h3><p>Same budget, other shape: one $10,000 prize at the end. Anyone can enter with a video made on ManyMotions, so each entry is a new person trying the product. You get public reach and one winner, with less control than the 100 creators test.</p><p>Higgsfield already runs this play. Its Talent Contest offers $1,000,000 in cash prizes across 20 awards, and every AI image and video in an entry must be made on Higgsfield. It also runs an &ldquo;Adathon&rdquo;, with $50,000 for first place.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="light scale">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">Order of work</p><h2>Who first, <span class="serif">then the rest.</span></h2></div>
+    </div>
+    <ol class="plist">
+      <li>Find your best customers in the data and talk to them.</li>
+      <li>Write the positioning and the promise from what they say.</li>
+      <li>Put it in their words on the site and test the copy.</li>
+      <li>Publish the first case studies.</li>
+      <li>Build the AI ads pages, then add languages.</li>
+      <li>Grow the audience: email list, Instagram, community, creators.</li>
+      <li>Take a baseline before the first campaign, then measure every quarter.</li>
+    </ol>
+    <p class="src" style="color:var(--muted)">The agency pilot and the assistant channel can start as soon as the promise is written, since both use channels that already exist.</p>
+  </div>
+</section>
+
+<section class="light scale">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">Next steps for your team</p><h2>Talk to <span class="serif">6 to 10 clients.</span></h2></div>
+      <p class="lead">One conversation each, not a survey. The goal is their exact sentences, which become your copy.</p>
+    </div>
+    <p>Before the calls, pull from your billing and product data which plan your longest-retained clients are on, which product they use most, and what business they are in. Then ask:</p>
+    <ol class="plist">
+      <li>What did you type into Google before you found ManyMotions?</li>
+      <li>What did you use for your ads before, and why did you switch?</li>
+      <li>What made you sign up when you did?</li>
+      <li>How do you describe the problem to a client or a partner?</li>
+      <li>What would you lose if ManyMotions disappeared?</li>
+    </ol>
   </div>
 </section>
 
@@ -211,16 +288,8 @@
 <section class="light">
   <div class="wrap">
     <div class="offer-card">
-      <p class="label">The offer</p>
-      <h2>Monthly growth retainer</h2>
-      <p class="price">$3,800 <span>/ month on average</span></p>
-      <p class="terms">No minimum commitment.</p>
-      <div class="sched">
-        <div><span>Month 1</span><b>$4,800</b></div>
-        <div><span>Month 2</span><b>$3,800</b></div>
-        <div><span>Month 3</span><b>$2,800</b></div>
-        <div><span>From month 4</span><b>$3,800</b></div>
-      </div>
+      <p class="label">What I can run for you</p>
+      <h2>The work I would <span class="serif">take on.</span></h2>
       <ul class="incl">
         <li>Content and brand system</li>
         <li>Rebranding</li>
@@ -233,11 +302,10 @@
         <li>Paid creative testing using organic winners</li>
       </ul>
       <p class="ads">Advertising spend is paid directly to Meta.</p>
-      <p class="first"><b>The first 3 months total $11,400</b>, an average of $3,800 a month.</p>
     </div>
     <div class="start">
-      <a class="btn" href="mailto:wael.aouididi@gmail.com?subject=ManyMotions%3A%20let's%20start">Start</a>
-      <p>Reply to confirm and I will send the first week's content plan.</p>
+      <a class="btn" href="mailto:wael@yoursaasgrowth.com?subject=ManyMotions%3A%2030-minute%20call">Book a 30-minute call</a>
+      <p>Scope and budget are discussed on the call.</p>
     </div>
   </div>
 </section>
