@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="/manymotions/">
+<meta name="robots" content="noindex, nofollow">
+<title>A 30-day growth plan for ManyMotions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@1,500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#0e0e0e; --cream:#f4f3ee; --lime:#c6f432; --muted:#5d5d57; --dmuted:#a9a8a0; --card:#1a1a1a; --cardline:#2c2c2c; }
+  * { box-sizing:border-box; }
+  html { -webkit-text-size-adjust:100%; }
+  body { margin:0; background:var(--cream); color:var(--ink); font:17px/1.55 Inter,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 16px; }
+  h1,h2,h3,.big { font-family:Sora,Inter,sans-serif; letter-spacing:-0.025em; }
+  .serif { font-family:Newsreader,Georgia,serif; font-style:italic; font-weight:500; letter-spacing:0; }
+  p { margin:0 0 12px; }
+  .tag { display:inline-block; background:var(--lime); color:var(--ink); font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:6px 14px; border-radius:999px; }
+  .label { font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; margin:0 0 14px; }
+  h2 { font-size:clamp(32px,6vw,56px); line-height:1.02; font-weight:800; margin:0 0 20px; }
+  .lead { font-size:18px; max-width:560px; }
+  .light { padding:72px 0; }
+  .dark { background:var(--ink); color:var(--cream); padding:72px 0; }
+  .dark .label { color:var(--lime); }
+  .dark .lead, .dark .src { color:var(--dmuted); }
+  .head { display:grid; gap:8px; margin-bottom:32px; }
+  @media (min-width:760px){ .head { grid-template-columns:1.2fr 1fr; gap:48px; align-items:end; } }
+
+  header { padding:64px 0 72px; }
+  header .row { display:grid; gap:32px; align-items:center; }
+  @media (min-width:760px){ header .row { grid-template-columns:1.3fr 1fr; gap:48px; } }
+  h1 { font-size:clamp(44px,9vw,92px); line-height:.98; font-weight:800; margin:20px 0 24px; }
+  .by { display:flex; align-items:center; gap:12px; color:var(--muted); font-size:15px; }
+  .by img { width:44px; height:44px; border-radius:50%; object-fit:cover; }
+  .by strong { color:var(--ink); }
+  .portrait { border-radius:24px; overflow:hidden; background:#e8e6dc; box-shadow:0 30px 60px -30px rgba(0,0,0,.35); max-width:340px; }
+  .portrait img { display:block; width:100%; }
+  @media (max-width:759px){ .portrait { display:none; } }
+
+  .big-card { background:var(--lime); color:var(--ink); border-radius:24px; padding:32px 28px; margin-bottom:16px; }
+  .big-card .num { font:800 clamp(52px,12vw,120px)/1 Sora,sans-serif; letter-spacing:-0.04em; }
+  .big-card p { margin:8px 0 0; font-size:clamp(18px,3vw,26px); }
+  .charts { display:grid; gap:16px; }
+  @media (min-width:760px){ .charts { grid-template-columns:1fr 1fr; } }
+  .chart { background:var(--card); border:1px solid var(--cardline); border-radius:20px; padding:24px 22px; }
+  .chart h3 { font-size:20px; margin:0 0 20px; font-weight:700; }
+  .bar { margin:0 0 14px; }
+  .bar .t { display:flex; justify-content:space-between; font-size:15px; gap:8px; }
+  .bar .t b { font-weight:700; font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .bar .track { height:9px; background:#2e2e2e; border-radius:9px; margin-top:6px; overflow:hidden; }
+  .bar .fill { height:9px; background:var(--lime); border-radius:9px; min-width:4px; }
+  .bar.mm .t { color:var(--lime); font-weight:700; }
+  .src { font-size:14px; margin-top:20px; }
+
+  .steps { display:grid; gap:14px; margin-top:8px; }
+  @media (min-width:760px){ .steps { grid-template-columns:1fr 1.3fr 1fr; } }
+  .step { background:var(--ink); color:var(--cream); border-radius:20px; padding:24px 22px; }
+  .step .n { display:inline-block; background:var(--lime); color:var(--ink); font:700 12px Inter,sans-serif; letter-spacing:.06em; text-transform:uppercase; padding:5px 12px; border-radius:999px; margin-bottom:16px; }
+  .step h3 { font-size:22px; margin:0 0 8px; }
+  .step p { margin:0; font-size:15px; color:#d2d1c8; }
+
+  .videos { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (min-width:760px){ .videos { grid-template-columns:repeat(5,1fr); } }
+  .videos figure { margin:0; }
+  .videos video { width:100%; aspect-ratio:9/16; background:#000; display:block; border-radius:16px; }
+  .videos figcaption { font-size:13px; line-height:1.4; margin-top:10px; color:var(--dmuted); }
+
+  .offer-card { background:var(--ink); color:var(--cream); border-radius:28px; padding:40px 28px; box-shadow:0 40px 80px -40px rgba(0,0,0,.5); }
+  .offer-card .label { color:var(--lime); }
+  .offer-card h2 { color:var(--cream); font-size:clamp(28px,5vw,44px); }
+  .price { font:800 clamp(56px,13vw,112px)/1 Sora,sans-serif; letter-spacing:-0.04em; color:var(--lime); margin:0 0 8px; }
+  .price span { font-size:.32em; color:var(--cream); font-weight:600; letter-spacing:0; }
+  .terms { font-size:20px; margin:0 0 28px; }
+  .incl { list-style:none; padding:0; margin:0 0 20px; display:grid; gap:10px; }
+  @media (min-width:760px){ .incl { grid-template-columns:1fr 1fr; gap:12px 32px; } }
+  .incl li { padding-left:30px; position:relative; }
+  .incl li::before { content:""; position:absolute; left:0; top:.35em; width:18px; height:18px; border-radius:50%; background:var(--lime); }
+  .ads { color:var(--dmuted); font-size:15px; }
+  .first { margin-top:24px; background:var(--lime); color:var(--ink); border-radius:16px; padding:18px 20px; font-size:18px; font-weight:600; }
+  .first b { font-weight:800; }
+
+  .start { text-align:center; padding:56px 0 88px; }
+  .btn { display:inline-block; background:var(--ink); color:var(--cream); text-decoration:none; font:700 20px Sora,sans-serif; padding:18px 64px; border-radius:10px; }
+  .start p { margin:18px 0 0; color:var(--muted); font-size:15px; }
+
+  .refs { display:grid; gap:16px; }
+  @media (min-width:760px){ .refs { grid-template-columns:1fr 1fr; } }
+  .ref { border-radius:20px; padding:28px 24px; background:var(--ink); color:var(--cream); }
+  .ref .n { font:800 clamp(56px,10vw,88px)/1 Sora,sans-serif; letter-spacing:-0.04em; color:var(--lime); }
+  .ref h3 { font-size:22px; margin:0 0 6px; }
+  .ref .what { color:var(--dmuted); font-size:15px; margin:0 0 16px; }
+  .ref blockquote { margin:16px 0 0; padding-left:14px; border-left:3px solid var(--lime); font-size:15px; color:#d2d1c8; }
+  .ref blockquote cite { display:block; margin-top:6px; font-style:normal; font-size:13px; color:var(--dmuted); }
+  .ref .vid { display:block; position:relative; border-radius:14px; overflow:hidden; margin:0 0 4px; max-width:360px; }
+  .ref .vid img { display:block; width:100%; aspect-ratio:16/9; object-fit:cover; }
+  .ref .vid span { position:absolute; left:12px; bottom:12px; background:var(--lime); color:var(--ink); font:700 12px Inter,sans-serif; letter-spacing:.06em; text-transform:uppercase; padding:6px 12px; border-radius:999px; }
+
+  .embed { width:200px; aspect-ratio:9/16; border-radius:14px; overflow:hidden; background:#000; }
+  .embed iframe { width:100%; height:100%; border:0; display:block; }
+  .printonly { display:none; }
+  .mini { display:grid; gap:12px; margin-top:16px; }
+  @media (min-width:760px){ .mini { grid-template-columns:1fr 1fr; } }
+  .minicard { border:1px solid #cfcdc2; border-radius:16px; padding:18px 18px; font-size:14px; }
+  .minicard h3 { font-size:17px; margin:0; }
+  .minicard .k { font-size:12px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); margin:2px 0 8px; }
+  .minicard p { margin:0 0 8px; }
+  .minicard blockquote { margin:8px 0 0; padding-left:12px; border-left:3px solid var(--lime); }
+  .minicard cite { display:block; font-style:normal; color:var(--muted); font-size:12px; margin-top:4px; }
+  .minicard a { color:var(--ink); }
+  .vlink { display:none; }
+  @media print {
+    body { background:#fff; }
+    .embed { display:none; }
+    .printonly { display:block; }
+    .printonly img { width:260px; border-radius:10px; display:block; }
+    .printonly a { color:#fff; }
+    .vlink { display:block; font-size:12px; margin-top:4px; }
+    .vlink a { color:var(--lime); word-break:break-all; }
+    * { -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+    section, .ref, .minicard, .step, .offer-card, .chart { break-inside:avoid; }
+  }
+
+  .sched { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin:0 0 28px; }
+  @media (min-width:760px){ .sched { grid-template-columns:repeat(4,1fr); } }
+  .sched div { border:1px solid #3a3a3a; border-radius:14px; padding:14px 16px; }
+  .sched span { display:block; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--dmuted); }
+  .sched b { font:800 28px Sora,sans-serif; color:var(--cream); }
+  .sched div:first-child { border-color:var(--lime); }
+  .sched div:first-child b { color:var(--lime); }
+</style>
+</head>
+<body>
+<header class="light">
+  <div class="wrap row">
+    <div>
+      <span class="tag">Private offer</span>
+      <h1>A 30-day growth plan <span class="serif">for ManyMotions.</span></h1>
+      <div class="by"><img src="hero-portrait-256.webp" alt="" width="44" height="44"><span>Prepared by <strong>Wael Aouididi</strong> &middot; 2026-11-25</span></div>
+    </div>
+    <div class="portrait"><img src="hero-portrait-420.webp" alt="Wael Aouididi" width="340"></div>
+  </div>
+</header>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">What I found</p><h2>Small where the others <span class="serif">are loud.</span></h2></div>
+      <p class="lead">ManyMotions is indexed in English only, and I could not find an Instagram account. Here is where the competitors stand.</p>
+    </div>
+    <div class="big-card"><div class="num">about 260</div><p class="serif">indexed pages for ManyMotions. Pippit has about 239,000.</p></div>
+    <div class="charts">
+      <div class="chart"><h3>Indexed pages</h3><div class="bar"><div class="t"><span>Pippit</span><b>about 239,000</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div><div class="bar"><div class="t"><span>Magic Hour</span><b>about 21,000</b></div><div class="track"><div class="fill" style="width:8.8%"></div></div></div><div class="bar"><div class="t"><span>Topview</span><b>about 17,600</b></div><div class="track"><div class="fill" style="width:7.4%"></div></div></div><div class="bar"><div class="t"><span>Creatify</span><b>about 5,000</b></div><div class="track"><div class="fill" style="width:2.1%"></div></div></div><div class="bar mm"><div class="t"><span>ManyMotions</span><b>about 260</b></div><div class="track"><div class="fill" style="width:0.11%"></div></div></div></div>
+      <div class="chart"><h3>Average views per Instagram reel</h3><div class="bar"><div class="t"><span>Pippit</span><b>1.14M</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div><div class="bar"><div class="t"><span>Magic Hour</span><b>852K</b></div><div class="track"><div class="fill" style="width:74.7%"></div></div></div><div class="bar"><div class="t"><span>Higgsfield</span><b>459K</b></div><div class="track"><div class="fill" style="width:40.3%"></div></div></div><div class="bar"><div class="t"><span>Arcads</span><b>159K</b></div><div class="track"><div class="fill" style="width:13.9%"></div></div></div><div class="bar"><div class="t"><span>Topview</span><b>40K</b></div><div class="track"><div class="fill" style="width:3.5%"></div></div></div><div class="bar"><div class="t"><span>Creatify</span><b>800</b></div><div class="track"><div class="fill" style="width:0.07%"></div></div></div><div class="bar mm"><div class="t"><span>ManyMotions</span><b>no account</b></div></div></div>
+    </div>
+    <p class="src">Source: competitor sitemaps and Instagram profiles, read on 2026-11-25. Page counts for Higgsfield and Arcads were not measured.</p>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">The plan</p><h2>30 days, <span class="serif">one reel a day.</span></h2></div>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">Week 1</span><h3>Set up</h3><p>Create the Instagram and TikTok accounts. Set 3 reel formats: prompt to finished ad, template showcase, before/after of a product ad.</p></div>
+      <div class="step"><span class="n">Weeks 2 to 4</span><h3>Publish and cut</h3><p>One reel a day, 30 in total. Keep the 2 formats that get the most views and drop the rest.</p></div>
+      <div class="step"><span class="n">Alongside</span><h3>Meta Ads</h3><p>Use the organic winners as the creative for Meta Ads.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">My content creation</p><h2>Five short videos <span class="serif">I made.</span></h2></div>
+      <p class="lead">All five are for SambaLingo, my own app, and all of it is one month of work: 134 posts, and 71,222 views across four accounts in the last 30 days (counted 25 November 2026). Tap a video to play it.</p>
+    </div>
+    <div class="videos"><figure><video controls preload="none" playsinline poster="v1.jpg" src="v1.mp4"></video><figcaption>Two pug characters teach a Portuguese phrase and its French meaning.<span class="vlink"><a href="v1.mp4">Watch video 1</a></span></figcaption></figure><figure><video controls preload="none" playsinline poster="v2.jpg" src="v2.mp4"></video><figcaption>A song-style short on how to say thank you in Portuguese.<span class="vlink"><a href="v2.mp4">Watch video 2</a></span></figcaption></figure><figure><video controls preload="none" playsinline poster="v3.jpg" src="v3.mp4"></video><figcaption>A cartoon short about the stars on the Brazilian flag.<span class="vlink"><a href="v3.mp4">Watch video 3</a></span></figcaption></figure><figure><video controls preload="none" playsinline poster="v4.jpg" src="v4.mp4"></video><figcaption>A pug presents 5 Carioca slang words.<span class="vlink"><a href="v4.mp4">Watch video 4</a></span></figcaption></figure><figure><video controls preload="none" playsinline poster="v5.jpg" src="v5.mp4"></video><figcaption>A pug on a sofa acts out 4 English phrases for everyday reactions.<span class="vlink"><a href="v5.mp4">Watch video 5</a></span></figcaption></figure></div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="label">References</p><h2>Work I did <span class="serif">for SaaS founders.</span></h2></div>
+    </div>
+    <div class="refs">
+      <div class="ref">
+        <div class="n">3&times;</div>
+        <h3>Pubrella</h3>
+        <p class="what">Positioning and copy, then Meta Ads with clean tracking, then analytics-led conversion work. Visit to signup conversion improved by about 3&times;.</p>
+        <blockquote>&ldquo;With this trust-traffic-analytics approach and a refreshed landing, our visit&rarr;signup conversion improved by about 3&times;.&rdquo;<cite>Felix W, Founder, Pubrella.com</cite></blockquote>
+      </div>
+      <div class="ref">
+        <h3>One Great Book</h3>
+        <p class="what">An AI SaaS tool that helps founders write business books. I made the Meta Ads creative, across two iterations. This UGC-style video is the reference.</p>
+        <div class="embed"><iframe src="https://www.youtube-nocookie.com/embed/775cuQpyzd8" title="One Great Book UGC ad" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+        <div class="printonly"><img src="https://img.youtube.com/vi/775cuQpyzd8/hqdefault.jpg" alt="One Great Book UGC ad"><p>Watch: <a href="https://youtube.com/shorts/775cuQpyzd8">youtube.com/shorts/775cuQpyzd8</a></p></div>
+      </div>
+    </div>
+    <div class="mini">
+      <div class="minicard"><h3>Zembra</h3><p class="k">Cold email outreach and rebrand</p><p>Built the outbound email engine and the new positioning for a B2B data SaaS.</p><blockquote>&ldquo;Instrumental in driving our revenue growth at Zembra through his expertise in email outreach automation and strategic rebranding.&rdquo;<cite>CEO, Zembra, May 2024</cite></blockquote></div>
+      <div class="minicard"><h3>Shipzzer</h3><p class="k">SEO architecture</p><p>Built the SEO structure by buyer intent, as part of a full go-to-market rebuild: positioning, SEO and a cold email system.</p><p><a href="https://www.yoursaasgrowth.com/case-study/shipzzer">Read the case study</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <div class="wrap">
+    <div class="offer-card">
+      <p class="label">The offer</p>
+      <h2>Monthly growth retainer</h2>
+      <p class="price">$3,800 <span>/ month on average</span></p>
+      <p class="terms">No minimum commitment.</p>
+      <div class="sched">
+        <div><span>Month 1</span><b>$4,800</b></div>
+        <div><span>Month 2</span><b>$3,800</b></div>
+        <div><span>Month 3</span><b>$2,800</b></div>
+        <div><span>From month 4</span><b>$3,800</b></div>
+      </div>
+      <ul class="incl">
+        <li>Content and brand system</li>
+        <li>Rebranding</li>
+        <li>Ongoing SEO optimization</li>
+        <li>30 short-form videos per month</li>
+        <li>Instagram and TikTok management</li>
+        <li>Weekly performance reporting</li>
+        <li>Creative testing and format optimization</li>
+        <li>Meta Ads campaign management</li>
+        <li>Paid creative testing using organic winners</li>
+      </ul>
+      <p class="ads">Advertising spend is paid directly to Meta.</p>
+      <p class="first"><b>The first 3 months total $11,400</b>, an average of $3,800 a month.</p>
+    </div>
+    <div class="start">
+      <a class="btn" href="mailto:wael.aouididi@gmail.com?subject=ManyMotions%3A%20let's%20start">Start</a>
+      <p>Reply to confirm and I will send the first week's content plan.</p>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
