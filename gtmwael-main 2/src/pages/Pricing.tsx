@@ -1,11 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import SectionDivider from "@/components/SectionDivider";
-import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown, Check } from "lucide-react";
 import { useState } from "react";
 import { BOOKING_URL } from "@/lib/constants";
 import AnimateIn from "@/components/AnimateIn";
+import { CREAM, HEAVY, INK, LIME, SERIF } from "@/components/creative2/style";
+import { focusDark, focusLight } from "@/components/creative2/kit";
 
 /* ── Data ─────────────────────────────────────────── */
 
@@ -94,16 +94,18 @@ const faqs = [
 function FaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
-    <div className="border-b border-border/30">
+    <div className="border-b border-black/15">
       <button
+        type="button"
         onClick={() => setOpen(!open)}
-        className="w-full flex items-center justify-between py-5 text-left group"
+        aria-expanded={open}
+        className={`group flex w-full items-center justify-between gap-4 rounded-sm py-5 text-left ${focusLight}`}
       >
-        <span className="text-base font-medium text-foreground group-hover:text-primary transition-colors">{q}</span>
-        <ChevronDown className={`w-5 h-5 text-muted-foreground flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
+        <span className="text-lg font-semibold group-hover:underline group-hover:underline-offset-4">{q}</span>
+        <ChevronDown className={`h-5 w-5 flex-shrink-0 transition-transform duration-200 ${open ? "rotate-180" : ""}`} aria-hidden="true" />
       </button>
-      <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-40 opacity-100 pb-5" : "max-h-0 opacity-0"}`}>
-        <p className="text-sm text-muted-foreground leading-relaxed">{a}</p>
+      <div className={`overflow-hidden transition-all duration-300 ${open ? "max-h-40 pb-5 opacity-100" : "max-h-0 opacity-0"}`}>
+        <p className="text-base leading-relaxed" style={{ color: "#333" }}>{a}</p>
       </div>
     </div>
   );
@@ -114,58 +116,59 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 function OfferCard({ offer }: { offer: Offer }) {
   const isFeatured = "featured" in offer && offer.featured === true;
   return (
-    <div className={`rounded-2xl p-6 md:p-8 flex flex-col h-full transition-all duration-300 relative ${
-      isFeatured
-        ? "glass-card border-primary/40 hover:border-primary/60"
-        : "glass-card hover:border-primary/30"
-    }`}>
+    <div
+      className={`relative flex h-full flex-col overflow-hidden rounded-2xl p-6 md:p-8 ${
+        isFeatured ? "bg-white shadow-[0_30px_60px_-30px_#0006]" : "border border-black/10 bg-white/60"
+      }`}
+      style={isFeatured ? { border: `2px solid ${INK}` } : undefined}
+    >
+      <span className="absolute inset-x-0 top-0 h-1.5" style={{ background: isFeatured ? LIME : INK }} aria-hidden="true" />
+
       {/* Step badge */}
-      <div className="flex items-center gap-3 mb-5">
-        <span className="text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 border border-primary/20 rounded-full px-3 py-1">
+      <div className="mb-5 flex items-center gap-3">
+        <span
+          className="rounded-full px-3 py-1 text-xs font-bold uppercase tracking-widest"
+          style={isFeatured ? { background: LIME, color: INK } : { background: INK, color: CREAM }}
+        >
           Step {offer.step}
         </span>
       </div>
 
-      <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground mb-2">{offer.title}</h3>
-      <p className="text-muted-foreground mb-6 leading-relaxed text-sm">{offer.tagline}</p>
+      <h2 className="mb-2 text-2xl tracking-tight md:text-3xl" style={HEAVY}>{offer.title}</h2>
+      <p className="mb-6 text-base leading-snug" style={{ color: "#333" }}>{offer.tagline}</p>
 
       {/* Price */}
-      <div className="mb-1">
-        <span className="text-4xl md:text-5xl font-bold text-primary">{offer.price}</span>
-      </div>
-      <p className="text-sm text-muted-foreground mb-1">{offer.priceSub}</p>
-      <p className="text-sm font-medium text-primary mb-6">{offer.timeline}</p>
+      <p className="mb-1 text-5xl tracking-tight md:text-6xl" style={HEAVY}>{offer.price}</p>
+      <p className="mb-1 text-sm" style={{ color: "#555" }}>{offer.priceSub}</p>
+      <p className="mb-6 text-xl" style={SERIF}>{offer.timeline}</p>
 
       {/* Bullets */}
-      <ul className="space-y-3 mb-6">
-        {offer.bullets.map((b, i) => (
-          <li key={i} className="flex items-start gap-3 text-sm text-foreground/80">
-            <span className="text-primary mt-0.5">→</span>
+      <ul className="mb-6 space-y-3">
+        {offer.bullets.map((b) => (
+          <li key={b} className="flex items-start gap-3 text-sm">
+            <Check className="mt-0.5 h-4 w-4 flex-shrink-0" aria-hidden="true" />
             <span>{b}</span>
           </li>
         ))}
       </ul>
 
       {/* For you */}
-      <div className="border-t border-border/30 pt-4 mb-6">
-        <p className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-1">Right for you if</p>
-        <p className="text-sm text-foreground/70 italic">{offer.forYou}</p>
+      <div className="mb-6 border-t border-black/10 pt-4">
+        <p className="mb-1 text-xs font-bold uppercase tracking-widest" style={{ color: "#555" }}>Right for you if</p>
+        <p className="text-lg leading-snug" style={SERIF}>{offer.forYou}</p>
       </div>
 
       {/* CTA */}
-      <div className="mt-auto">
-        <Button
-          variant={isFeatured ? "default" : "outline"}
-          size="lg"
-          className="w-full group"
-          asChild
-        >
-          <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-            {offer.cta}
-            <ArrowRight className="w-4 h-4 ml-1 transition-transform group-hover:translate-x-1" />
-          </a>
-        </Button>
-      </div>
+      <a
+        href={BOOKING_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`group mt-auto inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl px-6 py-3 font-bold transition-transform hover:-translate-y-0.5 ${focusLight}`}
+        style={isFeatured ? { background: INK, color: "#fff" } : { border: `1.5px solid ${INK}` }}
+      >
+        {offer.cta}
+        <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+      </a>
     </div>
   );
 }
@@ -174,88 +177,93 @@ function OfferCard({ offer }: { offer: Offer }) {
 
 const Pricing = () => {
   return (
-    <main className="min-h-screen bg-background overflow-x-hidden">
+    <main className="min-h-screen overflow-x-clip" style={{ background: INK }}>
       <Navigation />
 
-      {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-20 relative overflow-hidden">
-        <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[700px] h-[400px] bg-[hsl(260_60%_50%/0.1)] rounded-full blur-[120px]" />
-        <div className="container px-4 relative z-10 max-w-4xl mx-auto text-center">
-          <AnimateIn delay={50}>
-            <span className="text-muted-foreground font-medium text-xs uppercase tracking-[0.2em]">Pricing</span>
-          </AnimateIn>
-          <AnimateIn delay={100}>
-            <h1 className="font-display font-extrabold text-4xl md:text-6xl lg:text-7xl leading-[0.95] tracking-[-0.03em] mt-4 mb-6">
-              Three offers.<br />
-              <span className="text-primary">One path to pipeline.</span>
-            </h1>
-          </AnimateIn>
-          <AnimateIn delay={170}>
-            <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
-              Diagnose the blockers. Fix conversion. Build a channel that runs every month.
-            </p>
-          </AnimateIn>
-        </div>
-      </section>
-
-      {/* 3 Offer Cards */}
-      <section className="pb-20 md:pb-28 relative">
-        <div className="container px-4 max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6">
-            {offers.map((offer) => (
-              <AnimateIn key={offer.step} delay={100 + parseInt(offer.step) * 100}>
-                <OfferCard offer={offer} />
-              </AnimateIn>
-            ))}
+      <div className="font-body" style={{ background: CREAM, color: INK }}>
+        {/* Hero */}
+        <section aria-labelledby="pricing-title" className="pb-14 pt-32 md:pb-16 md:pt-40">
+          <div className="container mx-auto max-w-4xl px-4 text-center">
+            <AnimateIn delay={50}>
+              <p
+                className="mb-6 inline-flex rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-[0.06em]"
+                style={{ background: LIME, color: INK }}
+              >
+                Pricing
+              </p>
+            </AnimateIn>
+            <AnimateIn delay={100}>
+              <h1 id="pricing-title" className="tracking-[-0.03em]">
+                <span className="block text-[clamp(3rem,7vw,5.75rem)] leading-[0.95]" style={HEAVY}>Three offers.</span>{" "}
+                <span className="mt-2 block text-[clamp(2.4rem,5.2vw,4.75rem)] leading-[1.02]" style={SERIF}>One path to pipeline.</span>
+              </h1>
+            </AnimateIn>
+            <AnimateIn delay={170}>
+              <p className="mx-auto mt-7 max-w-2xl text-lg leading-relaxed md:text-xl" style={{ color: "#333" }}>
+                Diagnose the blockers. Fix conversion. Build a channel that runs every month.
+              </p>
+            </AnimateIn>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <SectionDivider variant="curve-to-light" />
-
-      {/* FAQ */}
-      <section className="py-16 md:py-24 relative bg-section-light">
-        <div className="container px-4 max-w-3xl mx-auto">
-          <AnimateIn delay={50}>
-            <h2 className="font-display text-3xl md:text-4xl font-bold mb-10 text-heading-light text-center">
-              Common questions
-            </h2>
-          </AnimateIn>
-          <div>
-            {faqs.map((faq, i) => (
-              <FaqItem key={i} q={faq.q} a={faq.a} />
-            ))}
+        {/* 3 Offer Cards */}
+        <section aria-label="Offers" className="pb-20 md:pb-28">
+          <div className="container mx-auto max-w-7xl px-4">
+            <div className="grid gap-6 md:grid-cols-3">
+              {offers.map((offer) => (
+                <AnimateIn key={offer.step} delay={100 + parseInt(offer.step) * 100} className="h-full">
+                  <OfferCard offer={offer} />
+                </AnimateIn>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <SectionDivider variant="curve-to-dark" />
+        {/* FAQ */}
+        <section aria-labelledby="pricing-faq-title" className="border-t border-black/10 py-16 md:py-24">
+          <div className="container mx-auto max-w-3xl px-4">
+            <AnimateIn delay={50}>
+              <h2 id="pricing-faq-title" className="mb-10 text-center text-4xl leading-[1.05] tracking-[-0.03em] md:text-6xl">
+                <span className="text-4xl md:text-6xl" style={HEAVY}>Common</span>{" "}
+                <span className="text-4xl md:text-6xl" style={SERIF}>questions</span>
+              </h2>
+            </AnimateIn>
+            <div>
+              {faqs.map((faq) => (
+                <FaqItem key={faq.q} q={faq.q} a={faq.a} />
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
 
       {/* Bottom CTA */}
-      <section className="py-16 md:py-24 relative">
-        <div className="container px-4 max-w-3xl mx-auto text-center">
+      <section aria-labelledby="pricing-cta-title" className="section-padding-sm font-body" style={{ background: INK, color: CREAM }}>
+        <div className="container mx-auto max-w-3xl px-4 text-center">
           <AnimateIn delay={50}>
-            <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <h2 id="pricing-cta-title" className="mb-4 text-4xl leading-tight md:text-5xl" style={SERIF}>
               Not sure where<br />to start?
             </h2>
           </AnimateIn>
           <AnimateIn delay={100}>
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
+            <p className="mx-auto mb-8 max-w-xl text-lg text-white/75">
               Book a 20-minute fit call. No pitch. We'll identify which offer matches your current situation.
             </p>
           </AnimateIn>
           <AnimateIn delay={200}>
-            <Button variant="hero" size="xl" className="group" asChild>
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
-                Book a 20-Minute Fit Call
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group inline-flex min-h-12 items-center gap-2 rounded-full px-7 py-3 text-base font-bold hover:brightness-95 ${focusDark}`}
+              style={{ background: LIME, color: INK }}
+            >
+              Book a 20-Minute Fit Call
+              <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </a>
           </AnimateIn>
         </div>
       </section>
-
-      <SectionDivider variant="curve-to-light" />
 
       <Footer hideCTA />
     </main>
